@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_HASACCELERATOR (COMmctrl. h)
-description: Recupera un conteggio dei pulsanti della barra degli strumenti con il carattere di accelerazione specificato.
+title: TB_HASACCELERATOR messaggio (Commctrl.h)
+description: Recupera un conteggio dei pulsanti della barra degli strumenti con il carattere di tasto di scelta rapida specificato.
 ms.assetid: 41167815-fb64-4203-a32c-b2a88ce7bce1
 keywords:
-- Controlli di Windows Message TB_HASACCELERATOR
+- TB_HASACCELERATOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2544eae629876e4527ea4e47477b50ea59b796c8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 420f06e71c6920c266c96d8b2580549fa0eaace2bd3abdd37524502d4039aa7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078285"
 ---
-# <a name="tb_hasaccelerator-message"></a>TB \_ HASACCELERATOR messaggio
+# <a name="tb_hasaccelerator-message"></a>Messaggio \_ HASACCELERATOR DA TB
 
-\[Progettato per uso interno; sconsigliato per l'utilizzo nelle applicazioni. Questo messaggio potrebbe non essere supportato nelle versioni future di Windows.\]
+\[Destinato all'uso interno; non consigliato per l'uso nelle applicazioni. Questo messaggio potrebbe non essere supportato nelle versioni future di Windows.\]
 
-Recupera un conteggio dei pulsanti della barra degli strumenti con il carattere di accelerazione specificato.
+Recupera un conteggio dei pulsanti della barra degli strumenti con il carattere di tasto di scelta rapida specificato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,14 +34,14 @@ Recupera un conteggio dei pulsanti della barra degli strumenti con il carattere 
 *wParam* 
 </dt> <dd>
 
-Oggetto **WCHAR** che rappresenta il carattere dell'acceleratore di input da testare.
+WCHAR **che rappresenta** il carattere del tasto di scelta rapida di input da testare.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a un valore **int** che riceve il numero di pulsanti con il carattere di accelerazione.
+Puntatore a **un valore int** che riceve il numero di pulsanti con il carattere di scelta rapida.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ L'uso di questo messaggio potrebbe compromettere la sicurezza del programma.
 
 ## <a name="remarks"></a>Commenti
 
-Innanzitutto, il sistema esegue una query su tutti i pulsanti della barra degli strumenti per individuare gli acceleratori corrispondenti Se non viene trovata alcuna corrispondenza, il sistema invia la notifica [TBN \_ MAPACCELERATOR](tbn-mapaccelerator.md) alla finestra padre, richiedendo l'indice del pulsante con il carattere di accelerazione specificato. Se l'elemento padre fornisce un indice, il conteggio viene impostato su 1.
+In primo luogo, il sistema esegue una query su tutti i pulsanti della barra degli strumenti per trovare i tasti di scelta rapida corrispondenti. Se non viene trovata alcuna corrispondenza, il sistema invia la notifica [ \_ MAPACCELERATOR TBN](tbn-mapaccelerator.md) alla finestra padre, richiedendo l'indice del pulsante con il carattere di tasto di scelta rapida specificato. Se l'elemento padre fornisce un indice, il conteggio viene impostato su 1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Innanzitutto, il sistema esegue una query su tutti i pulsanti della barra degli 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

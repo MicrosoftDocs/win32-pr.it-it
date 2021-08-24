@@ -4,8 +4,8 @@ description: Lingua per l'istanza corrente di SQL Server.
 ms.assetid: 70ab1e8f-aff0-4a1e-ab2c-676a77b0c229
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di linguaggio MS-SQL
-- Schema AD dell'attributo di linguaggio mS-SQL
+- Schema AD dell'attributo MS-SQL-Language
+- Schema AD dell'attributo mS-SQL-Language
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd9a4fb6ede4e656b7cebbfe7c5c920e19d9123
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: badc9f8a59df2727bcff304044666f2f6751dbcd7797d3178813a1dd5f289319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705450"
 ---
 # <a name="ms-sql-language-attribute"></a>Attributo MS-SQL-Language
 
@@ -29,13 +29,13 @@ Lingua per l'istanza corrente di SQL Server.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-linguaggio                             |
-| LDAP-Display-Name | mS-SQL-linguaggio                             |
+| CN                | Lingua ms-SQL                             |
+| Ldap-Display-Name | mS-SQL-Language                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
-| Frequenza di aggiornamento  | Durante l'installazione del sistema.                            |
+| Aggiorna privilegio  | Amministratore di dominio                        |
+| Frequenza di aggiornamento  | Al momento dell'installazione del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1389                     |
-| System-ID-GUID    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Lingua per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> |
 
 
 

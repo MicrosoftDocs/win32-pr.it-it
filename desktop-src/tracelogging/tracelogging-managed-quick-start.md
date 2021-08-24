@@ -1,5 +1,5 @@
 ---
-title: Codice gestito TraceLogging Avvio rapido
+title: TraceLogging Managed Avvio rapido
 description: La sezione seguente descrive i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
 ms.assetid: E144214D-8DCC-4263-8232-9F468C1A3CC0
 ms.topic: article
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119589241"
 ---
-# <a name="tracelogging-managed-quick-start"></a>Codice gestito TraceLogging Avvio rapido
+# <a name="tracelogging-managed-quick-start"></a>TraceLogging Managed Avvio rapido
 
 La sezione seguente descrive i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
 
@@ -26,7 +26,7 @@ La sezione seguente descrive i passaggi di base necessari per aggiungere TraceLo
 
 ### <a name="simpletraceloggingexamplecs"></a>SimpleTraceLoggingExample.cs
 
-In questo esempio viene illustrato come registrare eventi Tracelogging senza la necessità di creare manualmente un file XML del manifesto della strumentazione separato.
+Questo esempio illustra come registrare gli eventi tracelogging senza la necessità di creare manualmente un file XML manifesto di strumentazione separato.
 
 
 ```CSharp
@@ -72,9 +72,9 @@ Prima di poter registrare gli eventi, è necessario creare un'istanza della clas
 
 L'istanza è statica perché nell'applicazione deve essere presente una sola istanza di un provider specifico alla volta.
 
-### <a name="log-tracelogging-events"></a>Registrare eventi Tracelogging
+### <a name="log-tracelogging-events"></a>Eventi di log tracelogging
 
-Dopo aver creato il provider, il codice seguente dell'esempio precedente registra un evento semplice.
+Dopo la creazione del provider, il codice seguente dell'esempio precedente registra un evento semplice.
 
 
 ```CSharp
@@ -83,7 +83,7 @@ Dopo aver creato il provider, il codice seguente dell'esempio precedente registr
 
 
 
-### <a name="log-structured-event-payload-data"></a>Registrare i dati di payload degli eventi strutturati
+### <a name="log-structured-event-payload-data"></a>Registrare i dati del payload degli eventi strutturati
 
 È possibile definire dati di payload strutturati registrati con l'evento . Fornire dati di payload strutturati come tipo anonimo o come istanza di una classe annotata con l'attributo , come `[EventData]` illustrato nell'esempio seguente.
 
@@ -111,7 +111,7 @@ Dopo aver creato il provider, il codice seguente dell'esempio precedente registr
 
 
 
-L'attributo sostituisce la necessità di creare manualmente un file manifesto per descrivere i dati dell'evento. A questo punto è necessario passare un'istanza della classe al metodo EventSource.Write() per registrare l'evento e i dati di payload corrispondenti.
+L'attributo sostituisce la necessità di creare manualmente un file manifesto per descrivere i dati dell'evento. A questo punto è necessario passare un'istanza della classe al metodo EventSource.Write() per registrare l'evento e i dati del payload corrispondenti.
 
 ## <a name="summary-and-next-steps"></a>Riepilogo e passaggi successivi
 

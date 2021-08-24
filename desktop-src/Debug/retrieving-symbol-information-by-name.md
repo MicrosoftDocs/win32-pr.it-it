@@ -1,19 +1,19 @@
 ---
-description: Nel codice seguente viene illustrato come chiamare la funzione SymFromName.
+description: Il codice seguente illustra come chiamare la funzione SymFromName.
 ms.assetid: d3a9d73e-fb77-4be3-a881-c258bcc587fe
-title: Recupero delle informazioni sui simboli per nome
+title: Recupero di informazioni sui simboli in base al nome
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f5f4477be4f494383c7d9c1ca462f3beb69690
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 76ec0a04ef2cac9dcd8256f8d00ff59b00bec449cdb4b5661566e7087e782cdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076365"
 ---
-# <a name="retrieving-symbol-information-by-name"></a>Recupero delle informazioni sui simboli per nome
+# <a name="retrieving-symbol-information-by-name"></a>Recupero di informazioni sui simboli in base al nome
 
-Nel codice seguente viene illustrato come chiamare la funzione [**SymFromName**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromname) . Questa funzione compila una struttura di [**\_ informazioni sui simboli**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) . Poiché il nome è di lunghezza variabile, è necessario specificare un buffer sufficientemente grande da mantenere il nome archiviato alla fine della struttura delle informazioni sui **simboli \_** . Inoltre, il membro **MaxNameLen** deve essere impostato sul numero di byte riservati per il nome. In questo esempio, szSymbolName è un buffer che archivia il nome del simbolo richiesto. Nell'esempio si presuppone che sia stato inizializzato il gestore di simboli utilizzando il codice nell' [inizializzazione del gestore di simboli](initializing-the-symbol-handler.md).
+Il codice seguente illustra come chiamare la [**funzione SymFromName.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromname) Questa funzione inserisce una struttura [**SYMBOL \_ INFO.**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) Poiché la lunghezza del nome è variabile, è necessario specificare un buffer sufficientemente grande da contenere il nome archiviato alla fine della **struttura SYMBOL \_ INFO.** Inoltre, il **membro MaxNameLen** deve essere impostato sul numero di byte riservati per il nome. In questo esempio szSymbolName è un buffer che archivia il nome del simbolo richiesto. Nell'esempio si presuppone che sia stato inizializzato il gestore dei simboli usando il codice in [Inizializzazione del gestore dei simboli](initializing-the-symbol-handler.md).
 
 
 ```C++
@@ -42,7 +42,7 @@ else
 
 
 
-Se un'applicazione dispone di un modulo o di un nome di file di origine e di informazioni sul numero di riga, può utilizzare [**SymGetLineFromName64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromname) per recuperare un indirizzo di codice virtuale. Questa funzione richiede un puntatore a una struttura [**Imagehlp \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) per ricevere l'indirizzo del codice virtuale. Si noti che il gestore di simboli può recuperare informazioni sul numero di riga solo quando \_ \_ l'opzione SYMOPT Load Lines viene impostata tramite la funzione [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) . È necessario impostare questa opzione prima di caricare il modulo. Il parametro szModuleName contiene il nome del modulo di origine; è facoltativo e può essere **null**. Il parametro szFileName deve contenere il nome del file di origine e il parametro dwLineNumber deve contenere il numero di riga per il quale verrà recuperato l'indirizzo virtuale.
+Se un'applicazione ha un nome di modulo o di file di origine e informazioni sul numero di riga, può usare [**SymGetLineFromName64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromname) per recuperare un indirizzo di codice virtuale. Questa funzione richiede un puntatore a una [**struttura IMAGEHLP \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) per ricevere l'indirizzo del codice virtuale. Si noti che il gestore dei simboli può recuperare le informazioni sul numero di riga solo quando l'opzione SYMOPT LOAD LINES è impostata usando \_ \_ la funzione [**SymSetOptions.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) Questa opzione deve essere impostata prima di caricare il modulo. Il parametro szModuleName contiene il nome del modulo di origine. è facoltativo e può essere **NULL.** Il parametro szFileName deve contenere il nome del file di origine e il parametro dwLineNumber deve contenere il numero di riga per cui verrà recuperato l'indirizzo virtuale.
 
 
 ```C++

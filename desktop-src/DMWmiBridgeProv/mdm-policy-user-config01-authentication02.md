@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_Authentication02
-description: La \_ classe del criterio MDM \_ utente \_ Config01 \_ Authentication02 rappresenta i criteri di gestione dell'autenticazione disponibili.
+title: MDM_Policy_User_Config01_Authentication02 classe
+description: La classe Mdm \_ Policy \_ User \_ Config01 \_ Authentication02 rappresenta i criteri di gestione dell'autenticazione disponibili.
 ms.assetid: 66d94f97-07ea-4025-95f9-d55282df3661
 keywords:
-- Classe MDM_Policy_User_Config01_Authentication02
-- Classe MDM_Policy_User_Config01_Authentication02, descritta
+- MDM_Policy_User_Config01_Authentication02 classe
+- MDM_Policy_User_Config01_Authentication02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d278ad679f97047d0a4cf7e95eeb2eee0695e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db9b794127f6085c44568b1671607f54dd58dd16a4af0a4756b6e913e39ca493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694211"
 ---
-# <a name="mdm_policy_user_config01_authentication02-class"></a>\_Utente criteri \_ MDM \_ Config01 \_ classe Authentication02
+# <a name="mdm_policy_user_config01_authentication02-class"></a>Classe \_ Mdm Policy User \_ \_ Config01 \_ Authentication02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe del **\_ criterio MDM \_ utente \_ Config01 \_ Authentication02** rappresenta i criteri di gestione dell'autenticazione disponibili.
+La **classe Mdm Policy User \_ \_ \_ Config01 \_ Authentication02** rappresenta i criteri di gestione dell'autenticazione disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Config01_Authentication02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Config01 \_ Authentication02 dell'utente dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy User \_ \_ \_ Config01 \_ Authentication02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Config01 \_ Authentication02 dell'utente dei criteri MDM** ha queste proprietà.
+La **classe Mdm Policy User \_ \_ \_ Config01 \_ Authentication02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La **classe \_ \_ \_ Config01 \_ Authentication02 dell'utente dei criteri MDM** 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,7 +70,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -79,14 +79,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Authentication".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Authentication".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,7 +95,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./User/Vendor/MSFT/Policy/Config"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./User/Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -105,10 +105,10 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

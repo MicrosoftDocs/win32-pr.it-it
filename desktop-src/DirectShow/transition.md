@@ -14,13 +14,13 @@ ms.locfileid: "119072255"
 # <a name="transition"></a>Transizione
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L'oggetto transizione crea una transizione video tra tracce o composizione. Per creare questo oggetto, chiamare il [**metodo IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
+L'oggetto di transizione crea una transizione video tra tracce o composizioni. Per creare questo oggetto, chiamare il [**metodo IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-L'oggetto transition espone le interfacce seguenti:
+L'oggetto di transizione espone le interfacce seguenti:
 
 -   [**IAMTimelineObj**](iamtimelineobj.md)
 -   [**IAMTimelineSplittable**](iamtimelinesplittable.md)

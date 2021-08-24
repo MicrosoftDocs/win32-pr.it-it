@@ -1,7 +1,7 @@
 ---
-description: Metriche della velocità effettiva per informazioni sulla comprensione delle prestazioni di un'applicazione.
+description: Metriche della velocità effettiva per comprendere le prestazioni di un'applicazione.
 ms.assetid: c0bcf060-a0ed-4c85-9554-398ffe4b4235
-title: Struttura D3DDEVINFO_D3D9BANDWIDTHTIMINGS (D3D9Types. h)
+title: D3DDEVINFO_D3D9BANDWIDTHTIMINGS struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 3bfb98045e645f20fa77cf8523040b995f6c254a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f9c92a3eae10ef289e53764c7568f826640edf66c3351edaadf3d922515a3eda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565031"
 ---
-# <a name="d3ddevinfo_d3d9bandwidthtimings-structure"></a>\_Struttura D3DDEVINFO D3D9BANDWIDTHTIMINGS
+# <a name="d3ddevinfo_d3d9bandwidthtimings-structure"></a>Struttura D3DDEVINFO \_ D3D9BANDWIDTHTIMINGS
 
-Metriche della velocità effettiva per informazioni sulla comprensione delle prestazioni di un'applicazione.
+Metriche della velocità effettiva per comprendere le prestazioni di un'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,55 +46,55 @@ typedef struct D3DDEVINFO_D3D9BANDWIDTHTIMINGS {
 **MaxBandwidthUtilized**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-La velocità massima di trasferimento dati o la larghezza di banda dalla CPU dell'host alla GPU. Si tratta in genere della larghezza di banda del bus PCI o AGP che connette la CPU e la GPU.
+Larghezza di banda o velocità massima di trasferimento dei dati dalla CPU host alla GPU. Si tratta in genere della larghezza di banda del bus PCI o AGP che connette la CPU e la GPU.
 
 </dd> <dt>
 
 **FrontEndUploadMemoryUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale di memoria utilizzata durante il caricamento dei dati dalla CPU dell'host alla GPU.
+Percentuale di utilizzo della memoria durante il caricamento dei dati dalla CPU host alla GPU.
 
 </dd> <dt>
 
 **VertexRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale di velocità effettiva vertice. Questo è il numero di vertici elaborati rispetto alla velocità di elaborazione dei vertici massima teorica.
+Percentuale di velocità effettiva dei vertici. Si tratta del numero di vertici elaborati rispetto alla velocità di elaborazione massima teorica dei vertici.
 
 </dd> <dt>
 
 **TriangleSetupRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale di velocità effettiva di configurazione del triangolo. Questo è il numero di triangoli configurati per la rasterizzazione rispetto alla velocità di configurazione massima teorica del triangolo.
+Percentuale di velocità effettiva di configurazione del triangolo. Si tratta del numero di triangoli impostati per la rasterizzazione rispetto alla velocità massima teorica di configurazione del triangolo.
 
 </dd> <dt>
 
 **FillRateUtilizedPercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale di velocità effettiva di riempimento pixel. Il numero di pixel compilati rispetto al riempimento teorico dei pixel.
+Percentuale di velocità effettiva di riempimento pixel. Si tratta del numero di pixel riempiti rispetto al riempimento teorico in pixel.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Percentuale di velocità effettiva di riempimento pixel. Il numero di pixel comp
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

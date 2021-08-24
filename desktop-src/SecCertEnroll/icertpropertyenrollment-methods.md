@@ -4,16 +4,16 @@ ms.assetid: 9314565A-6503-41CE-AEC9-A2D2989B2CD4
 title: Metodi ICertPropertyEnrollment
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8679562c196b34a83ea397160f2b0d4f0deefdd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e77f26893bd51377350e70a9524406d905e3c610ecde3f0ec3c8d8e3d0162a42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669481"
 ---
 # <a name="icertpropertyenrollment-methods"></a>Metodi ICertPropertyEnrollment
 
-L'interfaccia [**ICertPropertyEnrollment**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyenrollment) espone i metodi seguenti.
+[**L'interfaccia ICertPropertyEnrollment**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyenrollment) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

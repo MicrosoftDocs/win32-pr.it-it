@@ -1,11 +1,11 @@
 ---
 title: AxWindowsMediaPlayer.openState - proprietà
-description: La proprietà openState ottiene un valore di enumerazione che indica lo stato dell'origine del contenuto.
+description: La proprietà openState ottiene un valore di enumerazione che indica lo stato dell'origine di contenuto.
 ms.assetid: 7a76814a-649f-4516-a92a-5f536fb1b147
 keywords:
-- Proprietà openState Windows Media Player
-- Proprietà openState Windows Media Player , classe AxWindowsMediaPlayer
-- La classe AxWindowsMediaPlayer Windows Media Player , proprietà openState
+- proprietà openState Windows Media Player
+- proprietà openState Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , proprietà openState
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "119573571"
 ---
 # <a name="axwindowsmediaplayeropenstate-property"></a>AxWindowsMediaPlayer.openState - proprietà
 
-La proprietà openState ottiene un valore di enumerazione che indica lo stato dell'origine del contenuto.
+La proprietà openState ottiene un valore di enumerazione che indica lo stato dell'origine di contenuto.
 
 Questa proprietà è di sola lettura.
 
@@ -52,7 +52,7 @@ Valore di enumerazione WMPLib.WMPOpenState.
 
 ## <a name="remarks"></a>Commenti
 
-Windows Media Player non è garantito che gli stati si verifichino in un ordine particolare. Inoltre, non tutti gli stati si verificano necessariamente durante una sequenza di eventi. È consigliabile non scrivere codice che si basa sull'ordine di stato.
+Windows Media Player non è garantito che gli stati si verifichino in un ordine specifico. Inoltre, non tutti gli stati si verificano necessariamente durante una sequenza di eventi. Non è consigliabile scrivere codice che si basa sull'ordine di stato.
 
 ## <a name="requirements"></a>Requisiti
 

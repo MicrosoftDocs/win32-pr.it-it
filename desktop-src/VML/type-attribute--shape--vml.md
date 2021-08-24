@@ -1,32 +1,32 @@
 ---
-title: Attributo Type (Shape) (la)
-description: Attributo Type (Shape) (la)
+title: Attributo type (Shape)(VML)
+description: Attributo type (Shape)(VML)
 ms.assetid: 41f0d1d3-3a2c-47cf-b2ec-d983b14aea87
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46e53b275d6b6327b3d3783704dbd06156e643f6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 82b20f663f8a403acca03ff8ab516a86dc91f7dd8d478eadedaa6be8b919ad48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513151"
 ---
-# <a name="type-attribute-shapevml"></a>Attributo Type (Shape) (la)
+# <a name="type-attribute-shapevml"></a>Attributo type (Shape)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce un riferimento all'ID di un elemento [TipoForma](msdn-online-vml-shapetype-element.md) . Proprietà di lettura/scrittura. **Stringa**.
+Definisce un riferimento all'ID di un [elemento ShapeType.](msdn-online-vml-shapetype-element.md) Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
 ``` syntax
 <v:
@@ -47,15 +47,15 @@ expression=element .type
 
 **Osservazioni:**
 
-Se l'attributo **Type** fa riferimento all'ID di un elemento **TipoForma** , i riempimenti, i percorsi e i tratti di **TipoForma** vengono usati come modelli per creare la forma. I valori derivati da **TipoForma** possono essere sottoposti a override dai singoli valori della forma.
+Se **l'attributo Type** fa riferimento all'ID di un **elemento ShapeType,** i riempimenti, i percorsi e i tratti di **ShapeType** vengono usati come modelli per creare la forma. I valori derivati da **ShapeType** possono essere sostituiti da singoli valori di forma.
 
-Se usato nei tag, il valore della stringa deve iniziare con un simbolo di cancelletto ( \# ).
+Se usato nei tag, il valore stringa deve iniziare con un simbolo di simbolo di \# numero ( ).
 
-**Attributo standard la**
+**Attributo standard VML**
 
 **Esempio**
 
-Una forma **TipoForma** viene creata con "MyType" come ID.
+Viene creata una forma **ShapeType** con "mytype" come ID.
 
 
 ```HTML
@@ -68,7 +68,7 @@ Una forma **TipoForma** viene creata con "MyType" come ID.
 
 
 
-Se quindi si crea una forma usando i valori **TipoForma** , la forma avrà gli attributi di "MyType" **TipoForma**; ovvero "shape01" avrà un riempimento rosso con un tratto blu.
+Quindi, se si crea una forma usando i **valori ShapeType,** la forma avrà gli attributi di **ShapeType "mytype".** cio, "shape01" avrà un riempimento rosso con un tratto blu.
 
 
 ```HTML
@@ -79,7 +79,7 @@ Se quindi si crea una forma usando i valori **TipoForma** , la forma avrà gli a
 
 
 
-È possibile eseguire l'override dei valori ereditati, ad esempio, modificando il colore in verde.
+È possibile eseguire l'override dei valori ereditati, ad esempio modificando il colore in verde.
 
 
 ```HTML
@@ -91,8 +91,8 @@ Se quindi si crea una forma usando i valori **TipoForma** , la forma avrà gli a
 
 
 
-[Esempio di attributo Type](/previous-versions/bb264099(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo Type](/previous-versions/bb264099(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

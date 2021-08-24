@@ -1,7 +1,7 @@
 ---
-description: Il metodo AlignUp Arrotonda un valore fino a un limite di allineamento specificato. Nota rimossa in Windows 7. .
+description: Il metodo AlignUp arrotonda un valore fino a un limite di allineamento specificato. Nota Rimossa in Windows 7. .
 ms.assetid: fa2a6567-3eb1-4aa9-b966-2e88b15c67b1
-title: Metodo CPullPin. AlignUp (Pullpin. h)
+title: Metodo CPullPin.AlignUp (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4f33ae2b7434d90d909315edda4d49e07d8adab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 34c45fe4a34e21647cd976adbf29dfe6723e4216d58166e7d1599d4c8d64d47e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687761"
 ---
-# <a name="cpullpinalignup-method"></a>CPullPin. AlignUp, metodo
+# <a name="cpullpinalignup-method"></a>Metodo CPullPin.AlignUp
 
-Il metodo **AlignUp** Arrotonda un valore fino a un limite di allineamento specificato.
+Il **metodo AlignUp** arrotonda un valore fino a un limite di allineamento specificato.
 
 > [!Note]  
-> Rimosso in Windows 7.
+> Rimozione in Windows 7.
 
  
 
@@ -69,7 +69,7 @@ Restituisce il risultato allineato.
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Questo metodo può causare un overflow numerico se *ll* + (*lAlign* -1) si verifica in overflow.
+> Questo metodo può causare un overflow numerico in caso di overflow *di ll* + (*lAlign* - 1).
 
  
 
@@ -79,8 +79,8 @@ Restituisce il risultato allineato.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -3,24 +3,24 @@ title: Recupero di una stringa che descrive un filtro
 description: Recupero di una stringa che descrive un filtro
 ms.assetid: 47390448-eaa6-4bea-bd90-549fa37e739a
 keywords:
-- Gestione compressione audio (ACM), recupero di stringhe che descrivono i filtri
-- ACM (Gestione compressione audio), recupero di stringhe che descrivono i filtri
+- Gestione compressione audio,recupero di stringhe che descrivono i filtri
+- ACM (Audio Compression Manager), recupero di stringhe che descrivono i filtri
 - Esempi di ACM, recupero di stringhe che descrivono i filtri
 - recupero di stringhe che descrivono i filtri
-- acmFilterTagDetails (funzione)
-- acmFilterDetails (funzione)
+- Funzione acmFilterTagDetails
+- Funzione acmFilterDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641f2b9993d9c916113d14eaf92925e916409619
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84bf182846da280f4810c84c75a02e76baaae9082ecaf2df8ea1797fd867e8b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689131"
 ---
 # <a name="retrieving-a-string-that-describes-a-filter"></a>Recupero di una stringa che descrive un filtro
 
-Un'applicazione deve spesso visualizzare una stringa che descrive il formato corrente. Questa attività può essere eseguita facilmente con le funzioni [**acmFilterTagDetails**](/windows/desktop/api/Msacm/nf-msacm-acmfiltertagdetails) e [**acmFilterDetails**](/windows/desktop/api/Msacm/nf-msacm-acmfilterdetails) . Queste funzioni devono essere chiamate con il filtro o il tag di filtro appropriato. Nell'esempio seguente viene illustrato come utilizzare queste funzioni.
+Un'applicazione deve spesso visualizzare una stringa che descrive il formato corrente. Questa attività può essere eseguita facilmente con le [**funzioni acmFilterTagDetails**](/windows/desktop/api/Msacm/nf-msacm-acmfiltertagdetails) [**e acmFilterDetails.**](/windows/desktop/api/Msacm/nf-msacm-acmfilterdetails) Queste funzioni devono essere chiamate con il filtro o il tag di filtro appropriato. L'esempio seguente illustra come usare queste funzioni.
 
 
 ```C++
@@ -114,9 +114,9 @@ BOOL GetFilterDescription
 
 
 
- 
+ 
 
- 
+ 
 
 
 

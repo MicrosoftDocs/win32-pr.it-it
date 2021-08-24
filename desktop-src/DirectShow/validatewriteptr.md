@@ -65,7 +65,7 @@ Questa macro non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa macro viene ignorata a meno che non venga definito DEBUG, DEBUG o VFWROBUST quando DirectShow file di intestazione della classe \_ base è incluso. Questa macro può avere un costo significativo in termini di prestazioni.
+Questa macro viene ignorata a meno che non venga definito DEBUG, DEBUG o VFWROBUST quando viene DirectShow file di intestazione della classe \_ base. Questa macro può avere un costo significativo per le prestazioni.
 
 ## <a name="requirements"></a>Requisiti
 

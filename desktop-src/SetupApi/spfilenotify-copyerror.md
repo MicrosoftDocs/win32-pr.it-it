@@ -1,19 +1,19 @@
 ---
-description: "\\_Quando si verifica un errore durante un'operazione di copia file, viene inviata la notifica SPFILENOTIFY COPYERROR alla routine di callback."
+description: La notifica SPFILENOTIFY COPYERROR viene inviata alla routine di callback se si verifica \_ un errore durante un'operazione di copia di file.
 ms.assetid: d6096954-c6a5-44d4-a358-c1320c50730a
-title: Messaggio SPFILENOTIFY_COPYERROR (Setupapi. h)
+title: SPFILENOTIFY_COPYERROR messaggio (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6cd44daabd6a4aed5e61a716bab3df44f35fc0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80160af9d8053a90c1848d397da6bbb9bf41f2793756e1d5491fb0d6f5e39abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665151"
 ---
-# <a name="spfilenotify_copyerror-message"></a>\_Messaggio SPFILENOTIFY COPYERROR
+# <a name="spfilenotify_copyerror-message"></a>MESSAGGIO SPFILENOTIFY \_ COPYERROR
 
-Quando si verifica un errore durante un'operazione di copia file, viene inviata la notifica **SPFILENOTIFY \_ COPYERROR** alla routine di callback.
+La **notifica SPFILENOTIFY \_ COPYERROR** viene inviata alla routine di callback se si verifica un errore durante un'operazione di copia di file.
 
 
 ```C++
@@ -32,14 +32,14 @@ SPFILENOTIFY_COPYERROR
 *Param1* 
 </dt> <dd>
 
-Puntatore a una struttura [**FILEpaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) .
+Puntatore a una [**struttura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Puntatore a un buffer, con dimensioni MASSIMe dei \_ caratteri di percorso, in cui sono archiviate le nuove informazioni sul percorso specificate dall'utente.
+Puntatore a un buffer, di dimensioni massime caratteri PATH, in cui \_ sono archiviate le nuove informazioni sul percorso specificate dall'utente.
 
 </dd> </dl>
 
@@ -51,10 +51,10 @@ Il callback deve restituire uno dei valori seguenti.
 
 | Codice restituito                                                                                    | Descrizione                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_interruzione FILEOP**</dt> </dl>   | L'elaborazione della coda deve essere annullata. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) restituisce zero e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce informazioni estese sull'errore, ad esempio errore \_ annullato (se l'utente è stato annullato) o errore di \_ \_ memoria insufficiente \_ .<br/> |
-| <dl> <dt>**\_NEWPATH FILEOP**</dt> </dl> | Ripetere l'operazione di copia utilizzando il percorso della funzione di callback posizionata nel buffer a cui punta il parametro *param2* . La routine di callback deve garantire che il percorso non superi le dimensioni del buffer di una matrice TCHAR di \_ elementi di percorso max.<br/>                |
-| <dl> <dt>**FILEOP \_ nuovo tentativo**</dt> </dl>   | L'utente sta tentando di eseguire di nuovo l'operazione di copia.<br/>                                                                                                                                                                                                                   |
-| <dl> <dt>**\_Ignora FILEOP**</dt> </dl>    | L'utente sta ignorando l'operazione di copia del file.<br/>                                                                                                                                                                                                                      |
+| <dl> <dt>**INTERRUZIONE \_ FILEOP**</dt> </dl>   | L'elaborazione della coda deve essere annullata. [**SetupCommitFileQueue restituisce**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) zero e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce informazioni estese sull'errore, ad esempio ERROR CANCELLED (se l'utente ha annullato) o \_ ERROR NOT ENOUGH \_ \_ \_ MEMORY.<br/> |
+| <dl> <dt>**FILEOP \_ NEWPATH**</dt> </dl> | Ripetere l'operazione di copia usando il percorso della funzione di callback inserita nel buffer a cui punta *il parametro Param2.* La routine di callback deve garantire che il percorso non eserciti l'overflow delle dimensioni del buffer di una matrice TCHAR di elementi MAX \_ PATH.<br/>                |
+| <dl> <dt>**NUOVO TENTATIVO DI \_ FILEOP**</dt> </dl>   | L'utente sta tentando di eseguire nuovamente l'operazione di copia.<br/>                                                                                                                                                                                                                   |
+| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>    | L'utente sta ignorando l'operazione di copia del file.<br/>                                                                                                                                                                                                                      |
 
 
 
@@ -66,9 +66,9 @@ Il callback deve restituire uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Il callback deve restituire uno dei valori seguenti.
 [Notifications](notifications.md)
 </dt> <dt>
 
-[**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
+[**Filepaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 </dt> <dt>
 
 [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea)

@@ -1,10 +1,10 @@
 ---
-title: Attributo Query-Filter
-description: Attributo di filtro query.
+title: Query-Filter attributo
+description: Attributo del filtro di query.
 ms.assetid: 0b98688b-d4b1-4283-a57b-f5851ec43d91
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Query-Filter attribute
+- Query-Filter schema AD dell'attributo
 - Schema AD dell'attributo queryFilter
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 309d412f1bc5eec6e5433d728854c2b7e1e243c6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bc342e4d79dacf4ee0896dc3651bfea52774cac2ed888ec0e442cb1d5c845bb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646921"
 ---
-# <a name="query-filter-attribute"></a>Attributo Query-Filter
+# <a name="query-filter-attribute"></a>Query-Filter attributo
 
-Attributo di filtro query.
+Attributo del filtro di query.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Query-Filter                                |
-| LDAP-Display-Name | queryFilter                                 |
+| Ldap-Display-Name | queryFilter                                 |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1355                     |
-| System-ID-GUID    | cbf70a26-7e78-11d2-9921-0000f87a57d4        |
+| System-Id-Guid    | cbf70a26-7e78-11d2-9921-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Attributo di filtro query.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 

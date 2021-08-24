@@ -1,7 +1,7 @@
 ---
 description: Restituisce un valore booleano che indica se l'estensione EKU è contrassegnata come critica.
 ms.assetid: f6d2a2e0-512b-44f2-a7d9-9ad661398aa8
-title: Proprietà ExtendedKeyUsage. Critical
+title: ExtendedKeyUsage.IsCritical - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 5331922567af3b9a34517ab5059fa03ad9904270
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5e5b52d0901222ae3dbf7daac87be2d59a90152c9aa4e0a78f023af1a6848a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007389"
 ---
-# <a name="extendedkeyusageiscritical-property"></a>Proprietà ExtendedKeyUsage. Critical
+# <a name="extendedkeyusageiscritical-property"></a>ExtendedKeyUsage.IsCritical - proprietà
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) nello spazio dei nomi [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-La proprietà **ipocrita** restituisce un valore booleano che indica se l'estensione EKU è contrassegnata come critica.
+La **proprietà IsCritical** restituisce un valore booleano che indica se l'estensione EKU è contrassegnata come critica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,7 +37,7 @@ ExtendedKeyUsage.IsCritical As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se **true**, l'estensione EKU è contrassegnata come critica.
+Se **true,** l'estensione EKU è contrassegnata come critica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Se **true**, l'estensione EKU è contrassegnata come critica.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_SETHOTDIVIDER (COMmctrl. h)
-description: Modifica il colore di un divisore tra gli elementi di intestazione per indicare la destinazione di un'operazione di trascinamento e rilascio esterna. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro SetHotDivider dell'intestazione.
+title: HDM_SETHOTDIVIDER messaggio (Commctrl.h)
+description: Modifica il colore di un divisore tra gli elementi dell'intestazione per indicare la destinazione di un'operazione di trascinamento della selezione esterna. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header SetHotDivider.
 ms.assetid: 56f6e5c6-1df3-4b4d-9ad8-97fb168c5462
 keywords:
-- Controlli di Windows Message HDM_SETHOTDIVIDER
+- HDM_SETHOTDIVIDER di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: feb894100878e9b3ee85e8e8367a4b81a022a0a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eedfca7a6f0d10651984efb63c4db63116c4a53d2b9f9b85905c93fc12e6ca16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544751"
 ---
-# <a name="hdm_sethotdivider-message"></a>\_Messaggio HDM SETHOTDIVIDER
+# <a name="hdm_sethotdivider-message"></a>Messaggio \_ HDM SETHOTDIVIDER
 
-Modifica il colore di un divisore tra gli elementi di intestazione per indicare la destinazione di un'operazione di trascinamento e rilascio esterna. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ SetHotDivider dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_sethotdivider) .
+Modifica il colore di un divisore tra gli elementi dell'intestazione per indicare la destinazione di un'operazione di trascinamento della selezione esterna. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header SetHotDivider.**](/windows/desktop/api/Commctrl/nf-commctrl-header_sethotdivider)
 
 ## <a name="parameters"></a>Parametri
 
@@ -38,8 +38,8 @@ Tipo di valore rappresentato da *lParam*. I valori validi sono i seguenti:
 
 | Valore                                                                                                                                    | Significato                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE * * * *</dt> </dl>    | Indica che *lParam* include le coordinate client del puntatore.<br/> |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE * * * *</dt> </dl> | Indica che *lParam* utilizza un valore di indice del divisore.<br/>                 |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE****</dt> </dl>    | Indica che *lParam contiene* le coordinate client del puntatore.<br/> |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE****</dt> </dl> | Indica che *lParam* contiene un valore di indice divisore.<br/>                 |
 
 
 
@@ -50,11 +50,11 @@ Tipo di valore rappresentato da *lParam*. I valori validi sono i seguenti:
 *lParam* 
 </dt> <dd>
 
-Un valore contenuto in *lParam* viene interpretato in base al valore di *wParam*.
+Un valore in *lParam* viene interpretato a seconda del valore di *wParam*.
 
-Se *wParam* è **true**, *lParam* rappresenta le coordinate x e y del puntatore. La coordinata x si trova nella parola bassa e la coordinata y si trova nella parola alta. Quando il controllo intestazione riceve il messaggio, evidenzia il separatore appropriato in base alle coordinate *lParam* .
+Se *wParam* è **TRUE,** *lParam* rappresenta le coordinate x e y del puntatore. La coordinata x è nella parola bassa e la coordinata y è nella parola alta. Quando il controllo intestazione riceve il messaggio, evidenzia il divisore appropriato in base alle coordinate *lParam.*
 
-Se *wParam* è **false**, *lParam* rappresenta l'indice Integer del divisore da evidenziare.
+Se *wParam* è **FALSE,** *lParam* rappresenta l'indice intero del divisore da evidenziare.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Restituisce un valore uguale all'indice del divisore evidenziato dal controllo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio crea un effetto che un controllo intestazione produce automaticamente quando dispone dello stile [**\_ DragDrop di HDS**](header-control-styles.md) . Il messaggio **HDM \_ SETHOTDIVIDER** deve essere usato quando il proprietario del controllo gestisce manualmente le operazioni di trascinamento della selezione.
+Questo messaggio crea un effetto generato automaticamente da un controllo intestazione quando ha lo [**stile \_ HDS DRAGDROP.**](header-control-styles.md) Il **messaggio HDM \_ SETHOTDIVIDER** deve essere usato quando il proprietario del controllo gestisce manualmente le operazioni di trascinamento della selezione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Questo messaggio crea un effetto che un controllo intestazione produce automatic
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

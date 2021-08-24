@@ -1,8 +1,8 @@
 ---
-description: Rappresenta l'occorrenza di un evento che viene eliminato. Un evento eliminato è un evento che non viene recapitato a un consumer di eventi.
+description: Rappresenta l'occorrenza di un evento eliminato. Un evento eliminato è un evento che non viene recapitato a un consumer di eventi.
 ms.assetid: fae267a9-e0ec-43fa-a3c3-d50345775a1d
 ms.tgt_platform: multiple
-title: Classe __EventDroppedEvent
+title: __EventDroppedEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 4e9f68328a3c5c455c98e85a65d53156da6eeada
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 695381a3471dcc744cae10622ee9e7935b2770941a770bd0e4e4e93e591a9220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051089"
 ---
 # <a name="__eventdroppedevent-class"></a>\_\_Classe EventDroppedEvent
 
-La classe di sistema **\_ \_ EventDroppedEvent** rappresenta l'occorrenza di un evento che viene eliminato. Un evento eliminato è un evento che non viene recapitato a un consumer di eventi.
+La **\_ \_ classe di sistema EventDroppedEvent** rappresenta l'occorrenza di un evento eliminato. Un evento eliminato è un evento che non viene recapitato a un consumer di eventi.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,26 +45,26 @@ class __EventDroppedEvent : __SystemEvent
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ EventDroppedEvent** dispone di questi tipi di membri:
+La **\_ \_ classe EventDroppedEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ EventDroppedEvent** dispone di queste proprietà.
+La **\_ \_ classe EventDroppedEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **Event**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **\_ \_ evento**
+Tipo di dati: **\_ \_ Evento**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Evento che viene eliminato.
+Evento eliminato.
 
 </dd> <dt>
 
@@ -77,41 +77,41 @@ Tipo di dati: **\_ \_ EventConsumer**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riferimento a un'istanza di [**\_ \_ EventConsumer**](--eventconsumer.md) che rappresenta l'utente permanente identificato per la ricezione di un evento. Diversi consumer permanenti che sottoscrivono un evento possono continuare a ricevere l'evento.
+Riferimento a un'istanza di [**\_ \_ EventConsumer**](--eventconsumer.md) che rappresenta il consumer permanente identificato per ricevere un evento. I diversi consumer permanenti che sottoscriveno un evento possono continuare a ricevere l'evento.
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato da un provider di eventi per determinare gli utenti che possono ricevere un evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Descrittore utilizzato da un provider di eventi per determinare gli utenti che possono ricevere un evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui viene generato un evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time). Questa proprietà viene ereditata dall' [**\_ \_ evento**](--event.md).
+Valore univoco che indica l'ora in cui viene generato un evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC). Questa proprietà viene ereditata [**\_ \_ dall'evento**](--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ EventDroppedEvent** deriva da [**\_ \_ SystemEvent**](--systemevent.md).
+La **\_ \_ classe EventDroppedEvent** è derivata da [**\_ \_ SystemEvent**](--systemevent.md).
 
 ## <a name="requirements"></a>Requisiti
 

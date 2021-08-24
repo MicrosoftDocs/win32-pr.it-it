@@ -1,7 +1,7 @@
 ---
-description: Questa classe rappresenta un processo dell'operazione di migrazione creato per la migrazione dell'archiviazione o del sistema virtuale da parte del servizio di migrazione del sistema virtuale.
+description: Questa classe rappresenta un processo di operazione di migrazione creato per l'archiviazione o la migrazione del sistema virtuale dal servizio di migrazione del sistema virtuale.
 ms.assetid: ea9437c4-a34c-4bb1-b2b0-d701fb5796e9
-title: Classe Msvm_MigrationJob
+title: Msvm_MigrationJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -60,18 +60,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ddecf34148e3ef07dc78af9b4f2dd45950644cfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba979953a9e7a17df70247cdb176cba2f5782d4f9f6fc13d8f4addc161bbaf50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521201"
 ---
-# <a name="msvm_migrationjob-class"></a>\_Classe MSVM MigrationJob
+# <a name="msvm_migrationjob-class"></a>Classe Msvm \_ MigrationJob
 
-Questa classe rappresenta un processo dell'operazione di migrazione creato per la migrazione dell'archiviazione o del sistema virtuale da parte del servizio di migrazione del sistema virtuale.
+Questa classe rappresenta un processo di operazione di migrazione creato per l'archiviazione o la migrazione del sistema virtuale dal servizio di migrazione del sistema virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -130,23 +130,23 @@ class Msvm_MigrationJob : CIM_ConcreteJob
 
 ## <a name="members"></a>Members
 
-La **classe \_ MigrationJob di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ MigrationJob** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ MigrationJob di MSVM** dispone di questi metodi.
+La **classe Msvm \_ MigrationJob** include questi metodi.
 
 
 
 | Metodo                                                             | Descrizione                                                                                |
 |:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
-| [**GetError**](geterror-msvm-migrationjob.md)                     | Recupera l'oggetto errore per il processo di migrazione, se disponibile.<br/>                |
+| [**GetError**](geterror-msvm-migrationjob.md)                     | Recupera l'oggetto errore per il processo di migrazione, se presente.<br/>                |
 | [**GetErrorEx**](geterrorex-msvm-migrationjob.md)                 | Recupera gli oggetti errore per il processo di migrazione, se presenti.<br/>                |
 | **KillJob**                                                        | Questo metodo non è supportato.<br/>                                                   |
-| [**RequestStateChange**](requeststatechange-msvm-migrationjob.md) | Richiede che lo stato del processo di migrazione venga modificato nello stato specificato.<br/> |
+| [**RequestStateChange**](requeststatechange-msvm-migrationjob.md) | Richiede che lo stato del processo di migrazione sia cambiato nello stato specificato.<br/> |
 
 
 
@@ -154,14 +154,14 @@ La **classe \_ MigrationJob di MSVM** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MigrationJob di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ MigrationJob** ha queste proprietà.
 
 <dl> <dt>
 
-**Annullabili**
+**Annullabile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -174,143 +174,143 @@ Indica se il processo può essere annullato. Il valore di questa proprietà non 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la possibilità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **DeleteOnCompletion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se il processo deve essere eliminato automaticamente al termine dell'operazione. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Specifica se il processo deve essere eliminato automaticamente al completamento. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DestinationHost**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome host della piattaforma di virtualizzazione di destinazione in cui viene eseguita la migrazione del sistema virtuale. Questa operazione sarà **null** per la migrazione dell'archiviazione.
+Nome host della piattaforma di virtualizzazione di destinazione a cui il sistema virtuale sta eseguendo la migrazione. Sarà Null per **la migrazione** dell'archiviazione.
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Aggiunge un complimento alla proprietà **PrimaryStatus** con ulteriori dettagli sullo stato. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Completa la **proprietà PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intervallo di tempo durante il quale il processo è stato eseguito o il tempo di esecuzione totale se il processo è stato completato. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Intervallo di tempo in cui è stato eseguito il processo o tempo di esecuzione totale se il processo è stato completato. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Codice di errore specifico del fornitore. Se il processo è stato completato senza errori, il valore deve essere impostato su zero. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Codice di errore specifico del fornitore. Il valore deve essere impostato su zero se il processo è stato completato senza errori. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che contiene la descrizione dell'errore del fornitore. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Stringa contenente la descrizione dell'errore del fornitore. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **ErrorSummaryDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ processo CIM**](cim-job.md).**ErrorCode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Processo CIM \_**](cim-job.md).**ErrorCode**")
 </dt> </dl>
 
 Descrizione di riepilogo dell'errore, se presente.
@@ -320,33 +320,33 @@ Descrizione di riepilogo dell'errore, se presente.
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente dell'elemento. Questo attributo esprime lo stato di integrità di questo elemento ma non necessariamente dei relativi sottocomponenti. I valori possibili sono compresi tra 0 e 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento è completamente non funzionale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ed è sempre impostata su 5.
+Integrità corrente dell'elemento. Questo attributo esprime l'integrità di questo elemento, ma non necessariamente quella dei relativi sottocomponenti. I valori possibili sono da 0 a 30, dove 5 indica che l'elemento è completamente integro e 30 indica che l'elemento è completamente non funzionante. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e viene sempre impostata su 5.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora di creazione della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Data e ora di creazione della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -355,48 +355,48 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **null**.
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su **Null.**
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di volte in cui il processo deve essere eseguito. Il valore 1 indica che il processo non è ricorrente, mentre un valore diverso da zero indica un limite al numero di volte che il processo ricorrerà. Zero indica che non esiste alcun limite per il numero di volte in cui il processo può essere elaborato, ma verrà terminato dopo il raggiungimento di **UntilTime** o se il processo viene terminato manualmente. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Numero di volte in cui deve essere eseguito il processo. Il valore 1 indica che il processo non è ricorrente, mentre qualsiasi valore diverso da zero indica un limite al numero di volte in cui il processo si ripeterà. Zero indica che non esiste alcun limite al numero di volte in cui il processo può essere elaborato, ma verrà terminato dopo che è stato raggiunto **UntilTime** o il processo è stato terminato manualmente. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**JobState** è un'enumerazione Integer che indica lo stato operativo di un processo. Può inoltre indicare transizioni tra questi Stati, ad esempio, "chiusura in corso" e "avvio". Questa proprietà viene ereditata da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+**JobState** è un'enumerazione integer che indica lo stato operativo di un processo. Può anche indicare transizioni tra questi stati, ad esempio "Arresto in corso" e "Avvio". Questa proprietà viene ereditata da [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 
 
 | Valore                                                                                                                                                                                                                                                                 | Significato                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="New"></span><span id="new"></span><span id="NEW"></span><dl> <dt>**Nuovo**</dt> <dt>2</dt> </dl>                                                           | Il processo non è mai stato avviato.<br/>                                                                                                                                                                                                         |
-| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**A partire**</dt> da <dt>3</dt> </dl>                                       | Il processo viene spostato dagli stati 2 (nuovo), 5 (sospeso) o 11 (servizio) nello stato 4 (in esecuzione).<br/>                                                                                                                                    |
-| <span id="Running"></span><span id="running"></span><span id="RUNNING"></span><dl> <dt>**Esecuzione**</dt> di <dt>4</dt> </dl>                                           | Il processo è in esecuzione.<br/>                                                                                                                                                                                                                     |
-| <span id="Suspended"></span><span id="suspended"></span><span id="SUSPENDED"></span><dl> <dt>**Sospeso**</dt> <dt>5</dt> </dl>                                   | Il processo è stato interrotto, ma può essere riavviato in modo uniforme.<br/>                                                                                                                                                                       |
-| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Chiusura**</dt> di <dt>6</dt> </dl>                   | Il processo viene spostato in uno stato 7 (completato), 8 (terminato) o 9 (terminato).<br/>                                                                                                                                                              |
+| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**A partire**</dt> <dt>da 3</dt> </dl>                                       | Il processo si sposta dallo stato 2 (Nuovo), 5 (Sospeso) o 11 (Servizio) allo stato 4 (In esecuzione).<br/>                                                                                                                                    |
+| <span id="Running"></span><span id="running"></span><span id="RUNNING"></span><dl> <dt>**Esecuzione**</dt> <dt>di 4</dt> </dl>                                           | Il processo è in esecuzione.<br/>                                                                                                                                                                                                                     |
+| <span id="Suspended"></span><span id="suspended"></span><span id="SUSPENDED"></span><dl> <dt>**Sospeso**</dt> <dt>5</dt> </dl>                                   | Il processo viene arrestato, ma può essere riavviato in modo semplice.<br/>                                                                                                                                                                       |
+| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Arresto 6**</dt> <dt></dt> </dl>                   | Il processo sta passando a uno stato 7 (Completato), 8 (Terminato) o 9 (Terminato).<br/>                                                                                                                                                              |
 | <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span><dl> <dt>**Completato**</dt> <dt>7</dt> </dl>                                   | Il processo è stato completato normalmente.<br/>                                                                                                                                                                                                         |
-| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Terminato**</dt> <dt>8</dt> </dl>                               | Il processo è stato interrotto da una richiesta di modifica dello stato "Terminate". Il processo e tutti i processi sottostanti sono terminati e possono essere riavviati solo come nuovo processo. Il requisito che il processo venga riavviato solo come nuovo processo è specifico del processo.<br/> |
-| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**Ucciso**</dt> <dt>9</dt> </dl>                                               | Il processo è stato interrotto da una richiesta di modifica dello stato "Kill". È possibile che i processi sottostanti siano ancora in esecuzione e che sia necessario eseguire una pulizia per liberare risorse.<br/>                                                                            |
-| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Eccezione**</dt> <dt>10</dt> </dl>                                  | Il processo è in uno stato anomalo che potrebbe essere indicativo di una condizione di errore. Lo stato effettivo del processo potrebbe essere disponibile tramite oggetti specifici del processo.<br/>                                                                           |
-| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Servizio**</dt> <dt>11</dt> </dl>                                          | Il processo è in uno stato specifico del fornitore che supporta l'individuazione o la risoluzione dei problemi o entrambi.<br/>                                                                                                                                          |
+| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Terminato 8**</dt> <dt></dt> </dl>                               | Il processo è stato arrestato da una richiesta di modifica dello stato "Terminate". Il processo e tutti i processi sottostanti vengono terminati e possono essere riavviati solo come nuovo processo. Il requisito che il processo venga riavviato solo come nuovo processo è specifico del processo.<br/> |
+| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**9**</dt> <dt>anni di vita</dt> </dl>                                               | Il processo è stato arrestato da una richiesta di modifica dello stato "Kill". I processi sottostanti potrebbero essere ancora in esecuzione e potrebbe essere necessaria una pulizia per liberare risorse.<br/>                                                                            |
+| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Eccezione**</dt> <dt>10</dt> </dl>                                  | Il processo si trova in uno stato anomalo che potrebbe essere indicativo di una condizione di errore. Lo stato effettivo del processo potrebbe essere disponibile tramite oggetti specifici del processo.<br/>                                                                           |
+| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Servizio**</dt> <dt>11</dt> </dl>                                          | Il processo si trova in uno stato specifico del fornitore che supporta l'individuazione dei problemi, la risoluzione o entrambi.<br/>                                                                                                                                          |
 | <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF riservato**</dt> <dt>12 32767</dt> </dl>            | Riservato.<br/>                                                                                                                                                                                                                               |
 | <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span><dl> <dt>**Fornitore riservato**</dt> <dt>32768 65535</dt> </dl> | Riservato.<br/>                                                                                                                                                                                                                               |
 
@@ -409,26 +409,26 @@ Tipo di accesso: sola lettura
 **Stato processo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che rappresenta lo stato del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Stringa che rappresenta lo stato del processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il tipo di processo rilevato da questo oggetto.
+Indica il tipo di processo monitorato da questo oggetto.
 
 <dt>
 
@@ -441,56 +441,56 @@ Indica il tipo di processo rilevato da questo oggetto.
 
 <span id="Creating_Remote_Virtual_Machine"></span><span id="creating_remote_virtual_machine"></span><span id="CREATING_REMOTE_VIRTUAL_MACHINE"></span>
 
-**Creazione della macchina virtuale remota** (300)
+**Creazione di una macchina virtuale** remota (300)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Virtual_Machine_Compatibility"></span><span id="checking_virtual_machine_compatibility"></span><span id="CHECKING_VIRTUAL_MACHINE_COMPATIBILITY"></span>
 
-**Verifica della compatibilità della macchina virtuale** (301)
+**Verifica della compatibilità delle macchine virtuali** (301)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Virtual_Machine_and_Storage_Compatibility"></span><span id="checking_virtual_machine_and_storage_compatibility"></span><span id="CHECKING_VIRTUAL_MACHINE_AND_STORAGE_COMPATIBILITY"></span>
 
-**Verifica della compatibilità della macchina virtuale e dello spazio di archiviazione** (302)
+**Verifica della compatibilità delle macchine Archiviazione virtuale** (302)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Storage_Compatibility"></span><span id="checking_storage_compatibility"></span><span id="CHECKING_STORAGE_COMPATIBILITY"></span>
 
-**Verifica della compatibilità di archiviazione** (303)
+**Verifica Archiviazione compatibilità** (303)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Storage_Migration"></span><span id="checking_storage_migration"></span><span id="CHECKING_STORAGE_MIGRATION"></span>
 
-**Verifica della migrazione dell'archiviazione** (304)
+**Controllo Archiviazione migrazione** (304)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Moving_Virtual_Machine"></span><span id="moving_virtual_machine"></span><span id="MOVING_VIRTUAL_MACHINE"></span>
 
-**Trasferimento della macchina virtuale** (305)
+**Spostamento di una macchina** virtuale (305)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Moving_Virtual_Machine_and_Storage"></span><span id="moving_virtual_machine_and_storage"></span><span id="MOVING_VIRTUAL_MACHINE_AND_STORAGE"></span>
 
-**Trasferimento di macchine virtuali e archiviazione** (306)
+**Spostamento di macchine virtuali e Archiviazione** (306)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Moving_Storage"></span><span id="moving_storage"></span><span id="MOVING_STORAGE"></span>
 
-**Trasferimento dello spazio di archiviazione** (307)
+**Spostamento Archiviazione** (307)
 
 
 </dt> <dd></dd> </dl>
@@ -500,22 +500,22 @@ Indica il tipo di processo rilevato da questo oggetto.
 **LocalOrUtcTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
-Indica se le ore rappresentate nelle proprietà **RunStartInterval** e **UntilTime** rappresentano le ore locali o l'ora UTC.
+Indica se le ore rappresentate nelle **proprietà RunStartInterval** e **UntilTime** rappresentano ora locale o ora UTC.
 
 <dl> <dt>
 
 <span id="Local_Time"></span><span id="local_time"></span><span id="LOCAL_TIME"></span>**Ora locale** (1)
 </dt> <dt>
 
-<span id="UTC_Time_"></span><span id="utc_time_"></span><span id="UTC_TIME_"></span>**Ora UTC** (2)
+<span id="UTC_Time_"></span><span id="utc_time_"></span><span id="UTC_TIME_"></span>**Ora UTC** (2 )
 </dt> </dl>
 
 </dd> <dt>
@@ -523,182 +523,182 @@ Indica se le ore rappresentate nelle proprietà **RunStartInterval** e **UntilTi
 **MigrationType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**MSVM \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md).**MigrationType**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md).**MigrationType**")
 </dt> </dl>
 
-Tipo di migrazione rappresentato da questo oggetto processo. Si tratta di uno dei valori definiti per la proprietà **MigrationType** della classe [**MSVM \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) .
+Tipo di migrazione rappresentato da questo oggetto processo. Questo sarà uno dei valori definiti per la **proprietà MigrationType** della [**classe Msvm \_ VirtualSystemMigrationSettingData.**](msvm-virtualsystemmigrationsettingdata.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome visualizzato per questa istanza di un processo. Inoltre, il nome visualizzato può essere utilizzato come proprietà per una ricerca o una query. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Nome visualizzato per questa istanza di un processo. Inoltre, il nome visualizzato può essere usato come proprietà per una ricerca o una query. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **NewResourceSettingData**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Per una migrazione in tempo reale, questo valore sarà sempre impostato su **null**.
+Per una migrazione in tempo reale, questa proprietà verrà sempre impostata su **Null.**
 
-Per una migrazione dell'archiviazione, se il **valore è null**, non verrà spostato alcun disco rigido virtuale (VHD) della macchina virtuale. In caso contrario, conterrà una matrice di istanze incorporate della classe [**MSVM \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) che rappresentano i VHD da spostare. Nella proprietà di **connessione** di queste istanze viene specificato il percorso di destinazione del disco rigido virtuale.
+Per una migrazione di archiviazione, se è **Null,** nessuno dei dischi rigidi virtuali (VHD) della macchina virtuale verrà spostato. In caso contrario, conterrà una matrice di istanze incorporate della [**classe Msvm \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) che rappresentano i dischi rigidi virtuali da spostare. La **proprietà Connection** di queste istanze specificherà il percorso di destinazione del disco rigido virtuale.
 
 </dd> <dt>
 
 **NewSystemSettingData**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Per una migrazione in tempo reale, questo valore sarà sempre impostato su **null**.
+Per una migrazione in tempo reale, questa proprietà verrà sempre impostata su **Null.**
 
-Per una migrazione dell'archiviazione, se è **null**, le radici dei dati della macchina virtuale non vengono spostate. In caso contrario, conterrà un'istanza incorporata della classe [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) , in cui le proprietà **ExternalDataRoot**, **SnapshotDataRoot** e **SwapFileDataRoot** specificano le nuove radici di dati.
+Per una migrazione di archiviazione, se **è Null,** le radici dati della macchina virtuale non vengono trasferite. In caso contrario, conterrà un'istanza incorporata della classe [**Msvm \_ VirtualSystemSettingData,**](msvm-virtualsystemsettingdata.md) in cui le proprietà **ExternalDataRoot**, **SnapshotDataRoot** e **SwapFileDataRoot** specificano le nuove radici dati.
 
 </dd> <dt>
 
 **Notificare**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Utente che riceve una notifica al completamento o all'esito negativo del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Utente che viene notificato al completamento o all'errore del processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere utilizzato per fornire maggiori dettagli rispetto al valore della proprietà **EnabledState** . Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere usato per fornire maggiori dettagli rispetto al valore della **proprietà EnabledState.** Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stati correnti dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e ogni elemento della matrice è sempre impostato su 2 (OK).
+Stati correnti dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e ogni elemento della matrice viene sempre impostato su 2 (OK).
 
 </dd> <dt>
 
 **OtherRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive l'azione di ripristino quando la proprietà **RecoveryAction** dell'istanza è 1 (other). Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Stringa che descrive l'azione di ripristino quando la **proprietà RecoveryAction** dell'istanza è 1 (Altro). Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **Proprietario**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Utente che ha inviato il processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Utente che ha inviato il processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **MinValue** (0), **MaxValue** (100), **unità** ("percentuale")
+Qualificatori: **MinValue** ( 0 ), **MaxValue** ( 100 ), **Units** ( "Percent" )
 </dt> </dl>
 
-Percentuale di completamento del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Percentuale di completamento del processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere utilizzata in combinazione con la proprietà **DetailedStatus** per fornire lo stato di integrità di livello elevato e dettagliato dell'elemento e dei relativi sottocomponenti. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni di alto livello sullo stato. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire lo stato di integrità generale e dettagliato dell'elemento e dei relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **Priorità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Importanza dell'esecuzione di un processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Importanza dell'esecuzione di un processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrive l'azione di ripristino da eseguire per un processo non riuscito. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Descrive l'azione di ripristino da eseguire per un processo eseguito senza esito positivo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
@@ -711,13 +711,13 @@ Descrive l'azione di ripristino da eseguire per un processo non riuscito. Questa
 <span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>**Non continuare** (2)
 </dt> <dt>
 
-<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continua con il processo successivo** (3)
+<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continua con processo successivo** (3)
 </dt> <dt>
 
-<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Esegui di nuovo il processo** (4)
+<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Eseguire di nuovo il processo** (4)
 </dt> <dt>
 
-<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Esegui processo di ripristino** (5)
+<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Esegui processo di ripristino** (5 )
 </dt> </dl>
 
 </dd> <dt>
@@ -731,18 +731,18 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **MinValue** (-31), **MaxValue** (31)
+Qualificatori: **MinValue** ( -31 ), **MaxValue** ( 31 )
 </dt> </dl>
 
-Giorno del mese in cui deve essere elaborato il processo. Sono disponibili diverse interpretazioni per questa proprietà, a seconda del valore di **RunDayOfWeek**.
+Giorno del mese in cui deve essere elaborato il processo. Esistono interpretazioni diverse per questa proprietà, a seconda del valore di **RunDayOfWeek.**
 
-Quando **RunDayOfWeek** è 0 e **RunDay** è un valore positivo, **RunDay** definisce il giorno del mese in cui viene elaborato il processo. Ad esempio, se **RunDayOfWeek** è 0 e **RunDay** è 12, il processo verrà elaborato <sup>il giorno 12</sup> del mese.
+Quando **RunDayOfWeek** è 0 e **RunDay** è positivo, **RunDay** definisce il giorno del mese in cui viene elaborato il processo. Ad esempio, se **RunDayOfWeek** è 0 e **RunDay** è 12, il processo verrà elaborato il 12° giorno del mese.<sup></sup>
 
-Quando **RunDayOfWeek** è 0 e **RunDay** è negativo, **RunDay** definisce il numero di giorni prima dell'ultimo giorno del mese in cui viene elaborato il processo.  1 indica l'ultimo giorno del mese, 2 indica un giorno prima dell'ultimo giorno del mese e così via. Se, ad esempio, **RunDayOfWeek** è 0 e **RunDay** è 1, il processo verrà elaborato l'ultimo giorno del mese.
+Quando **RunDayOfWeek** è 0 e **RunDay** è negativo, **RunDay** definisce il numero di giorni prima dell'ultimo giorno del mese in cui viene elaborato il processo.  1 indica l'ultimo giorno del mese, 2 indica un giorno prima dell'ultimo giorno del mese e così via. Ad esempio, se **RunDayOfWeek** è 0 e **RunDay** è 1, il processo verrà elaborato l'ultimo giorno del mese.
 
-Quando **RunDayOfWeek** è diverso da 0, **RunDayOfWeek** è il giorno della settimana in cui verrà elaborato il processo, relativo a **RunDay**. Se, ad esempio, **RunDay** è 15 e **RunDayOfWeek** è 7 (+ sabato), il processo verrà elaborato il primo sabato il o dopo il 15 <sup>°</sup> giorno del mese. Se **RunDay** è 20 e **RunDayOfWeek** è 7 (sabato), il processo verrà elaborato il primo sabato il o prima del 20 <sup>°</sup> giorno del mese. Se **RunDay** è 1 e **RunDayOfWeek** è 1 (domenica), il processo verrà elaborato l'ultima domenica del mese.
+Quando **RunDayOfWeek** non è 0, **RunDayOfWeek** è il giorno della settimana in cui verrà elaborato il processo, relativo a **RunDay**. Ad esempio, se **RunDay** è 15 e **RunDayOfWeek** è 7 (+sabato), il processo verrà elaborato il primo sabato il giorno o dopo il 15° giorno del mese.<sup></sup> Se **RunDay** è 20 e **RunDayOfWeek** è 7 (sabato), il processo verrà elaborato il primo sabato il giorno o prima del 20° giorno del mese.<sup></sup> Se **RunDay** è 1 e **RunDayOfWeek** è 1 ( domenica), il processo verrà elaborato l'ultima domenica del mese.
 
-Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -755,29 +755,29 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intero positivo o negativo utilizzato insieme a **RunDay** per indicare il giorno della settimana o il mese in cui viene elaborato il processo. Per ulteriori informazioni, vedere la descrizione della proprietà **RunDay** . Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Intero positivo o negativo utilizzato in combinazione con **RunDay** per indicare il giorno della settimana o del mese in cui viene elaborato il processo. Per altre informazioni, vedere la descrizione della proprietà **RunDay.** Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
-<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Sabato** (7)
+<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Saturday** (7)
 </dt> <dt>
 
-<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Venerdì** (6)
+<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Friday** (6)
 </dt> <dt>
 
-<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Giovedi** (5)
+<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Giovedì** ( 5)
 </dt> <dt>
 
-<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Mercoledì** (4)
+<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Mercoledì** ( 4)
 </dt> <dt>
 
-<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Martedì** (3)
+<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Tuesday** (3)
 </dt> <dt>
 
-<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Lunedì** (2)
+<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Monday** (2)
 </dt> <dt>
 
-<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Domenica** (1)
+<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Sunday** (1)
 </dt> <dt>
 
 <span id="ExactDayOfMonth"></span><span id="exactdayofmonth"></span><span id="EXACTDAYOFMONTH"></span>**ExactDayOfMonth** (0)
@@ -795,13 +795,13 @@ Intero positivo o negativo utilizzato insieme a **RunDay** per indicare il giorn
 <span id="Wednesday"></span><span id="wednesday"></span><span id="WEDNESDAY"></span>**Mercoledì** (4)
 </dt> <dt>
 
-<span id="Thursday"></span><span id="thursday"></span><span id="THURSDAY"></span>**Giovedi** (5)
+<span id="Thursday"></span><span id="thursday"></span><span id="THURSDAY"></span>**Giovedì** (5)
 </dt> <dt>
 
 <span id="Friday"></span><span id="friday"></span><span id="FRIDAY"></span>**Venerdì** (6)
 </dt> <dt>
 
-<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sabato** (7)
+<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sabato** (7 )
 </dt> </dl>
 
 </dd> <dt>
@@ -809,13 +809,13 @@ Intero positivo o negativo utilizzato insieme a **RunDay** per indicare il giorn
 **RunMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Mese durante il quale deve essere elaborato il processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Mese durante il quale deve essere elaborato il processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
@@ -852,7 +852,7 @@ Mese durante il quale deve essere elaborato il processo. Questa proprietà viene
 <span id="November"></span><span id="november"></span><span id="NOVEMBER"></span>**Novembre** (10)
 </dt> <dt>
 
-<span id="December_"></span><span id="december_"></span><span id="DECEMBER_"></span>**Dicembre** (11)
+<span id="December_"></span><span id="december_"></span><span id="DECEMBER_"></span>**Dicembre** (11 )
 </dt> </dl>
 
 </dd> <dt>
@@ -860,124 +860,124 @@ Mese durante il quale deve essere elaborato il processo. Questa proprietà viene
 **RunStartInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intervallo di tempo dopo la mezzanotte di elaborazione del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Intervallo di tempo dopo la mezzanotte in cui deve essere elaborato il processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **ScheduledStartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora di inizio pianificata per il processo, se applicabile. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Ora di inizio pianificata per il processo, se applicabile. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora di inizio del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Ora di inizio del processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ma non viene usata.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringhe che descrivono i vari valori della matrice **OperationalStatus** . Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e ogni elemento della matrice è sempre impostato su "OK".
+Stringhe che descrivono i vari **valori della matrice OperationalStatus.** Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e ogni elemento della matrice è sempre impostato su "OK".
 
 </dd> <dt>
 
 **TimeBeforeRemoval**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Quantità di tempo, in minuti, durante la quale il processo viene mantenuto dopo il completamento dell'esecuzione, ovvero esito positivo o negativo dell'esecuzione. Il processo deve rimanere in esistenza per un certo periodo di tempo indipendentemente dal valore della proprietà **DeleteOnCompletion** . Il valore predefinito è 5 minuti. Questa proprietà viene ereditata da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))ed è sempre impostata su 00000000000500.000000:000.
+Periodo di tempo, in minuti, in cui il processo viene mantenuto dopo il termine dell'esecuzione, con esito positivo o negativo dell'esecuzione. Il processo deve rimanere in esecuzione per un certo periodo di tempo, indipendentemente dal valore della **proprietà DeleteOnCompletion.** Il valore predefinito è 5 minuti. Questa proprietà viene ereditata da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))ed è sempre impostata su 00000000000500.000000:000.
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data o ora dell'Ultima modifica apportata allo stato del processo. Se lo stato del processo non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo 0. Se è stata richiesta una modifica di stato, ma è stata rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata. Questa proprietà viene ereditata da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Data o ora dell'ultima modifica dello stato del processo. Se lo stato del processo non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo pari a 0. Se una modifica dello stato è stata richiesta, ma rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata. Questa proprietà viene ereditata da [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> <dt>
 
 **TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora di invio del processo. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Ora di invio del processo. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-L'ora in cui il processo non è valido o deve essere arrestato. Questa proprietà viene ereditata [**dal \_ processo CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Ora in cui il processo non è valido o deve essere arrestato. Questa proprietà viene ereditata dal [**processo CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **VirtualSystemName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -993,10 +993,10 @@ Nome univoco del sistema virtuale interessato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

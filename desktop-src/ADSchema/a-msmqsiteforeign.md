@@ -58,7 +58,7 @@ Valore booleano che indica se si tratta di un sito MSMQ estraneo.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -79,7 +79,7 @@ Valore booleano che indica se si tratta di un sito MSMQ estraneo.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |
@@ -100,7 +100,7 @@ Valore booleano che indica se si tratta di un sito MSMQ estraneo.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| A valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                      |

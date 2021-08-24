@@ -1,6 +1,6 @@
 ---
 title: Generated-Connection attributo
-description: True se la connessione è stata creata dalla generazione automatica della topologia.
+description: True se la connessione è stata creata dalla generazione della topologia automatica.
 ms.assetid: aec351d4-b17d-49e6-bbc1-787703fd600b
 ms.tgt_platform: multiple
 keywords:
@@ -23,16 +23,16 @@ ms.locfileid: "119323281"
 ---
 # <a name="generated-connection-attribute"></a>Generated-Connection attributo
 
-**True** se la connessione è stata creata dalla generazione automatica della topologia.
+**True** se la connessione è stata creata dalla generazione della topologia automatica.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Generated-Connection                 |
-| Ldap-Display-Name | connessione generata                  |
+| Ldap-Display-Name | generatedConnection                  |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.41                |
 | System-Id-Guid    | bf96797a-0de6-11d0-a285-00aa003049e2 |
@@ -59,7 +59,7 @@ ms.locfileid: "119323281"
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -67,7 +67,7 @@ ms.locfileid: "119323281"
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -80,7 +80,7 @@ ms.locfileid: "119323281"
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -88,7 +88,7 @@ ms.locfileid: "119323281"
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -101,7 +101,7 @@ ms.locfileid: "119323281"
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| A valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
@@ -109,7 +109,7 @@ ms.locfileid: "119323281"
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 

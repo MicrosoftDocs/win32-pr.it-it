@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni utilizzate per testare la connettività di rete di una macchina virtuale.
 ms.assetid: d719d9c9-7ca9-40a0-ada8-185b8cd44c22
-title: Classe Msvm_NetworkConnectionDiagnosticSettingData
+title: Msvm_NetworkConnectionDiagnosticSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec0df1957df6c925cf12ce363c89a0bdad52d3e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da7774e2cf9f36460b1f153d1b498e0c2fa18a19078442ffd5226b9d2dcdb174
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521011"
 ---
-# <a name="msvm_networkconnectiondiagnosticsettingdata-class"></a>\_Classe MSVM NetworkConnectionDiagnosticSettingData
+# <a name="msvm_networkconnectiondiagnosticsettingdata-class"></a>Classe Msvm \_ NetworkConnectionDiagnosticSettingData
 
-Rappresenta le impostazioni utilizzate per testare la connettività di rete di una macchina virtuale. Utilizzato dal metodo [**DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md) della classe [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Rappresenta le impostazioni utilizzate per testare la connettività di rete di una macchina virtuale. Usato dal [**metodo DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md) della [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -51,49 +51,49 @@ class Msvm_NetworkConnectionDiagnosticSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ NetworkConnectionDiagnosticSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ NetworkConnectionDiagnosticSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ NetworkConnectionDiagnosticSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ NetworkConnectionDiagnosticSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **IsolationId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-ID isolamento.
+ID di isolamento.
 
 </dd> <dt>
 
 **IsSender**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se questo metodo viene richiamato al mittente o al ricevitore.
+Indica se questo metodo viene richiamato al mittente o al destinatario.
 
 </dd> <dt>
 
 **PayloadSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Dimensioni del payload.
@@ -103,49 +103,49 @@ Dimensioni del payload.
 **ReceiverIP**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indirizzo IP del destinatario.
+Indirizzo IP del ricevitore.
 
 </dd> <dt>
 
 **ReceiverMac**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indirizzo MAC del destinatario.
+Indirizzo MAC del ricevitore.
 
 </dd> <dt>
 
 **SenderIP**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Indirizzo IP del mittente.
 
 </dd> <dt>
 
-**SequenceNumber**
+**Sequencenumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Numero di sequenza.
@@ -158,10 +158,10 @@ Numero di sequenza.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -170,7 +170,7 @@ Numero di sequenza.
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

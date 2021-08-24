@@ -1,6 +1,6 @@
 ---
 title: readonly (attributo)
-description: L'attributo \ ReadOnly \ impedisce l'assegnazione a una variabile.
+description: L'attributo \ readonly\ impedisce l'assegnazione a una variabile.
 ms.assetid: b81064e6-e788-48d1-9958-203f1e3c7e4d
 keywords:
 - attributo di sola lettura MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b4ef4ca5f32b96146ed5ab0ec085d32b24dca3a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4d0d534efe8df1f4d05cd0b536a78094f903870d896114ee8b614511e067025b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103963034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013679"
 ---
 # <a name="readonly-attribute"></a>readonly (attributo)
 
-L'attributo **\[ ReadOnly \]** impedisce l'assegnazione a una variabile.
+**\[ L'attributo \] readonly** impedisce l'assegnazione a una variabile.
 
 ``` syntax
 [readonly [, optional-attributes]] data-type identifier
@@ -31,7 +31,7 @@ L'attributo **\[ ReadOnly \]** impedisce l'assegnazione a una variabile.
 
 <dl> <dt>
 
-*facoltativo-attributi* 
+*attributi facoltativi* 
 </dt> <dd>
 
 Zero o più attributi MIDL.
@@ -41,24 +41,24 @@ Zero o più attributi MIDL.
 *tipo di dati* 
 </dt> <dd>
 
-Tipo di dati contenuti in base all' *identificatore*.
+Tipo dei dati contenuti *nell'identificatore*.
 
 </dd> <dt>
 
 *identifier* 
 </dt> <dd>
 
-Nome con cui il software può fare riferimento al percorso di archiviazione dei dati.
+Nome con cui il software può fare riferimento alla posizione di archiviazione dei dati.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ ReadOnly \]** impedisce l'assegnazione a una variabile. **\[ ReadOnly \]** è supportato solo a livello di parametro, non a livello di metodo.
+**\[ L'attributo \] readonly** impedisce l'assegnazione a una variabile. **\[ readonly \]** è supportato solo a livello di parametro, non a livello di metodo.
 
 ### <a name="flags"></a>Flags
 
-\_FREADONLY VARFLAG
+VARFLAG \_ FREADONLY
 
 ## <a name="examples"></a>Esempi
 
@@ -73,15 +73,15 @@ HRESULT Method3([in, readonly] int iMmutable);
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

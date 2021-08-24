@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-Group
+title: Attributo rpc-Ns-Group
 description: Riferimento a una voce del server RPC o a un altro gruppo RPC.
 ms.assetid: d497b58d-28b6-4b31-a784-5df79ebc81bd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-Group
+- Schema AD dell'attributo rpc-Ns-Group
 - Schema AD dell'attributo rpcNsGroup
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e5e577f929ea31ed0c4affeb9585674a23f1d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53bfe60da4d61628ac4a9ed48ece35d96f8546aaf43209c4d3525cc5d76d569f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646551"
 ---
-# <a name="rpc-ns-group-attribute"></a>attributo RPC-NS-Group
+# <a name="rpc-ns-group-attribute"></a>Attributo rpc-Ns-Group
 
 Riferimento a una voce del server RPC o a un altro gruppo RPC.
 
@@ -29,13 +29,13 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | RPC-gruppo NS                                |
-| LDAP-Display-Name | rpcNsGroup                                  |
+| CN                | rpc-Ns-Group                                |
+| Ldap-Display-Name | rpcNsGroup                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.114                      |
-| System-ID-GUID    | bf967a24-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a24-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento a una voce del server RPC o a un altro gruppo RPC.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Gruppo RPC**](c-rpcgroup.md)<br/> |
+| Classi usate in        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 

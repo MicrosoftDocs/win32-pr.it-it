@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckRequest controlla se è presente una richiesta di thread senza blocco.
+description: Il metodo CheckRequest controlla se è presente una richiesta di thread, senza blocco.
 ms.assetid: b4691dde-abec-4671-bea6-0f22cc4e7c61
-title: Metodo CSourceStream. CheckRequest (source. h)
+title: Metodo CSourceStream.CheckRequest (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3100d449d2f29b2080541c5968cad6abc5643b26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bb77358ec579415439c2832b00255e7ffeb3c7eba0e387bfa0522a4a5109669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073315"
 ---
-# <a name="csourcestreamcheckrequest-method"></a>CSourceStream. CheckRequest, metodo
+# <a name="csourcestreamcheckrequest-method"></a>Metodo CSourceStream.CheckRequest
 
-Il `CheckRequest` metodo verifica se è presente una richiesta di thread senza blocco.
+Il `CheckRequest` metodo controlla se è presente una richiesta di thread, senza blocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +42,20 @@ BOOL CheckRequest(
 
 <dl> <dt>
 
-*MOCF* 
+*pCom* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve il valore passato nell'ultima chiamata al metodo [**CAMThread:: CallWorker**](camthread-callworker.md) .
+Puntatore a una variabile che riceve il valore passato nell'ultima chiamata al [**metodo CAMThread::CallWorker.**](camthread-callworker.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se è presente una richiesta in sospeso; in caso contrario, **false** .
+Restituisce **TRUE se** è presente una richiesta in sospeso oppure FALSE in **caso** contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CAMThread:: CheckRequest**](camthread-checkrequest.md) per eseguire il controllo dei tipi. La classe **CSourceStream** definisce il tipo enumerato seguente per il parametro *MOCF* :
+Questo metodo esegue l'override [**del metodo CAMThread::CheckRequest**](camthread-checkrequest.md) per eseguire il controllo del tipo. La **classe CSourceStream** definisce il tipo enumerato seguente per il *parametro pCom:*
 
 
 ```C++
@@ -70,8 +70,8 @@ enum Command {CMD_INIT, CMD_PAUSE, CMD_RUN, CMD_STOP, CMD_EXIT};
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

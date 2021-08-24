@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0081b4cec45ed4cac5b4f0883032631983824cec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e7d136b5b3bbdcd8a6b21fcbd9f854de7a78a91be87a199c990e294ce8b28fb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640481"
 ---
 # <a name="cbasefiltergetpincount-method"></a>Metodo CBaseFilter.GetPinCount
 
-Il `GetPinCount` metodo recupera il numero di pin.
+Il `GetPinCount` metodo recupera il numero di segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di pin.
+Restituisce il numero di segnaposto.
 
 ## <a name="remarks"></a>Commenti
 
-La classe derivata deve implementare questo metodo virtuale puro. Restituisce il numero di pin attualmente disponibili per questo filtro. I filtri possono creare o eliminare in modo dinamico i pin.
+La classe derivata deve implementare questo metodo virtuale puro. Restituisce il numero di segnaposto attualmente disponibili in questo filtro. I filtri possono creare o eliminare in modo dinamico i segnaposto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ La classe derivata deve implementare questo metodo virtuale puro. Restituisce il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

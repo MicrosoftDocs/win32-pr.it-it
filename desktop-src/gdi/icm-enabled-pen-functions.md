@@ -1,21 +1,21 @@
 ---
-description: Microsoft Image Color Management (ICM) assicura che un'immagine di colore, un elemento grafico o un oggetto testo venga sottoposto al rendering il più vicino possibile alla finalità originale su qualsiasi dispositivo, nonostante le differenze nelle tecnologie di imaging e nelle funzionalità cromatiche tra i dispositivi.
+description: Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi.
 ms.assetid: 55452048-aacd-4772-9345-3efcf0350ce6
-title: Funzioni di ICM-Enabled Pen
+title: ICM-Enabled Pen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ec35b11a46646a6f7588443ac7a66aee23aae10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: b90e5c27c1c71ae2e38a201a39484573a7bd69f813b16aa759f8f5bfe6e42749
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558691"
 ---
-# <a name="icm-enabled-pen-functions"></a>Funzioni di ICM-Enabled Pen
+# <a name="icm-enabled-pen-functions"></a>ICM-Enabled Pen
 
-Microsoft Image Color Management (ICM) assicura che un'immagine di colore, un elemento grafico o un oggetto testo venga sottoposto al rendering il più vicino possibile alla finalità originale su qualsiasi dispositivo, nonostante le differenze nelle tecnologie di imaging e nelle funzionalità cromatiche tra i dispositivi. Se si sta eseguendo la scansione di un'immagine o di un altro elemento grafico su uno scanner di colori, il download su Internet, la visualizzazione o la modifica sullo schermo o l'output su carta, film o altri supporti, ICM versione 2,0 consente di garantire la coerenza e l'accuratezza dei colori. Per ulteriori informazioni su ICM, vedere [sistema colori Windows](/previous-versions//dd372446(v=vs.85))
+Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più vicino possibile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi. Se si esegue la scansione di un'immagine o di un altro elemento grafico in uno scanner a colori, scaricarla su Internet, visualizzarla o modificarla sullo schermo o generarla su carta, film o altri supporti, ICM versione 2.0 consente di mantenere i colori coerenti e accurati. Per altre informazioni sui ICM, vedere Windows [Color System](/previous-versions//dd372446(v=vs.85))
 
-Sono disponibili varie funzioni nell'interfaccia GDI (Graphics Device Interface) che usano o operano sui dati di colore. Le funzioni di penna seguenti sono abilitate per l'uso con ICM:
+Nell'interfaccia GDI (Graphics Device Interface) sono disponibili varie funzioni che usano o operano sui dati dei colori. Le funzioni penna seguenti sono abilitate per l'uso con ICM:
 
 -   [**CreatePen**](/windows/desktop/api/Wingdi/nf-wingdi-createpen)
 -   [**ExtCreatePen**](/windows/desktop/api/Wingdi/nf-wingdi-extcreatepen)

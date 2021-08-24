@@ -4,12 +4,12 @@ ms.assetid: 1f2ba2a1-0170-4434-88fd-a5d1ca8b67c4
 title: ICE40
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17617fe5748fcba5ae0edab414ad1bc83c2e5c22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 077c44154413d9aa9e75b1c13fe2f2f80ccb52fee6459888c7bc9678ea0e935f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528431"
 ---
 # <a name="ice40"></a>ICE40
 
@@ -19,9 +19,9 @@ ICE40 esegue la convalida varie.
 
 ICE40 invia avvisi sugli elementi seguenti:
 
--   La proprietà [**REINSTALLMODE**](reinstallmode.md) è stata sottoposta a override.
--   La [tabella RemoveIniFile](removeinifile-table.md) include una voce Delete tag senza valore.
--   Nel file con estensione msi manca la [tabella degli errori](error-table.md) e la proprietà di [**Riepilogo dei conteggi delle pagine**](page-count-summary.md) è minore o uguale a 100. Questo avviso di ghiaccio è obsoleto perché per Windows Installer non è necessario che il pacchetto includa una tabella degli errori. È possibile recuperare i messaggi di errore utilizzando Msimsg.dll.
+-   La [**proprietà REINSTALLMODE**](reinstallmode.md) è stata sottoposta a override.
+-   La [tabella RemoveIniFile](removeinifile-table.md) include una voce Delete Tag senza valore.
+-   Nel .msi manca la tabella [Error](error-table.md) e [**la proprietà Page Count Summary**](page-count-summary.md) è minore o uguale a 100. Questo avviso ICE è obsoleto perché Windows programma di installazione non richiede che il pacchetto abbia una tabella Di errore. I messaggi di errore possono essere recuperati usando Msimsg.dll.
 
 ## <a name="example"></a>Esempio
 
@@ -51,15 +51,15 @@ ICE40 invia avvisi sugli elementi seguenti:
 
 ## <a name="results"></a>Risultati
 
-ICE40 segnala i seguenti errori.
+ICE40 segnala gli errori seguenti.
 
 
 
 | Errore ICE40                                                                                           | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**REINSTALLMODE**](reinstallmode.md) è definito nella tabella delle proprietà. Questo può causare problemi. | La definizione della proprietà [**REINSTALLMODE**](reinstallmode.md) nel file con estensione msi può causare un comportamento imprevisto. Per correggere l'errore, non definire questa proprietà.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| La voce RemoveIniFile Remove1 deve avere un valore, perché l'azione è "Delete tag" (4).                | È presente un'azione Elimina tag nella colonna RemoveIniFile della [tabella RemoveIniFile](removeinifile-table.md) senza specificare un tag da eliminare nella colonna valore.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Tabella degli errori mancante. Verranno generati solo i messaggi di errore numerici.                              | Questo avviso di ghiaccio è obsoleto perché per Windows Installer non è necessario che il pacchetto includa una [tabella degli errori](error-table.md). È possibile recuperare i messaggi di errore utilizzando Msimsg.dll.<br/> Questo avviso indica che nel file con estensione msi manca la [tabella degli errori](error-table.md) e che la proprietà di [**Riepilogo dei conteggi delle pagine**](page-count-summary.md) è minore o uguale a 100. <br/> Per correggere l'errore, utilizzare una versione corrente del Windows Installer oppure aggiungere una tabella degli errori al pacchetto di installazione e creare modelli di formattazione nella colonna messaggio per i messaggi di errore.<br/> |
+| [**REINSTALLMODE**](reinstallmode.md) è definito nella tabella Property. Ciò può causare difficoltà. | La definizione della [**proprietà REINSTALLMODE**](reinstallmode.md) nel file .msi può causare un comportamento imprevisto. Per correggere l'errore, non definire questa proprietà.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| La voce RemoveIniFile Remove1 deve avere un valore perché Action è "Delete Tag" (4).                | È presente un'azione Elimina tag nella colonna RemoveIniFile della tabella [RemoveIniFile](removeinifile-table.md) senza specificare un tag da eliminare nella colonna Valore.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Tabella degli errori mancante. Verranno generati solo messaggi di errore numerici.                              | Questo avviso ICE è obsoleto perché Windows programma di installazione non richiede che il pacchetto abbia una [tabella Di errore](error-table.md). I messaggi di errore possono essere recuperati usando Msimsg.dll.<br/> Questo avviso indica che nel file .msi manca la tabella [Error](error-table.md) e [**che la proprietà Page Count Summary**](page-count-summary.md) è minore o uguale a 100. <br/> Per correggere l'errore, usare una versione corrente del programma di installazione di Windows oppure aggiungere una tabella Errore al pacchetto di installazione e creare modelli di formattazione nella colonna Messaggio per i messaggi di errore.<br/> |
 
 
 
@@ -69,7 +69,7 @@ ICE40 segnala i seguenti errori.
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

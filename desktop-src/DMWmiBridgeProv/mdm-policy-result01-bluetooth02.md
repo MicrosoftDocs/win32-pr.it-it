@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_Bluetooth02
-description: La \_ classe Bluetooth02 dei criteri MDM \_ Result01 \_ rappresenta i criteri di gestione Bluetooth disponibili.
+title: MDM_Policy_Result01_Bluetooth02 classe
+description: La classe MDM \_ Policy \_ Result01 \_ Bluetooth02 rappresenta i Bluetooth di gestione dei dispositivi mobili disponibili.
 ms.assetid: 629f2323-f6f6-4d4f-8558-9553f4dbe871
 keywords:
-- Classe MDM_Policy_Result01_Bluetooth02
-- Classe MDM_Policy_Result01_Bluetooth02, descritta
+- MDM_Policy_Result01_Bluetooth02 classe
+- MDM_Policy_Result01_Bluetooth02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3ceb0a3b7a3d2440f9769fde72c01ce4d68c34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 029c008f2e27e4f9107d484a3a14e963f3805064b5548d9625221860b3974029
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587881"
 ---
-# <a name="mdm_policy_result01_bluetooth02-class"></a>\_ \_ Classe Result01 Bluetooth02 di criteri \_ MDM
+# <a name="mdm_policy_result01_bluetooth02-class"></a>Classe Mdm \_ Policy \_ Result01 \_ Bluetooth02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ Bluetooth02 dei criteri MDM Result01** rappresenta i criteri di gestione Bluetooth disponibili.
+La **classe MDM Policy \_ \_ Result01 \_ Bluetooth02** rappresenta i Bluetooth di gestione dei dispositivi mobili disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -50,13 +50,13 @@ class MDM_Policy_Result01_Bluetooth02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ Bluetooth02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ Bluetooth02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Bluetooth02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ Bluetooth02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ La **classe \_ \_ \_ Bluetooth02 dei criteri MDM Result01** ha queste proprietà
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -77,7 +77,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -88,7 +88,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -96,53 +96,53 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Bluetooth".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Bluetooth".
 
 </dd> <dt>
 
 [LocalDeviceName](/windows/client-management/mdm/policy-csp-bluetooth#bluetooth-localdevicename)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> <dt>
 
 [ServicesAllowedList](/windows/client-management/mdm/policy-csp-bluetooth#bluetooth-servicesallowedlist)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -153,10 +153,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -165,7 +165,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

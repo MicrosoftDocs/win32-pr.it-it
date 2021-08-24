@@ -1,11 +1,11 @@
 ---
-title: Codice di esempio per Ranging con IDirectoryObject
-description: L'esempio di codice seguente usa ranging per recuperare i membri di un gruppo usando l'interfaccia IDirectoryObject.
+title: Codice di esempio per ranging con IDirectoryObject
+description: Nell'esempio di codice seguente viene utilizzato ranging per recuperare i membri di un gruppo usando l'interfaccia IDirectoryObject.
 ms.assetid: 659b4c28-6534-45d2-80ee-14184433390d
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per Ranging con ADSI IDirectoryObject
-- Recupero di intervalli ADSI , codice di esempio, uso di IDirectoryObject
+- Codice di esempio per Ranging con IDirectoryObject ADSI
+- Recupero di intervalli ADSI, codice di esempio, uso di IDirectoryObject
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a0d049d629c347f0d85d8a4585436f4d7bbddf88b20186890643f7770070843a
@@ -15,9 +15,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119082635"
 ---
-# <a name="example-code-for-ranging-with-idirectoryobject"></a>Codice di esempio per Ranging con IDirectoryObject
+# <a name="example-code-for-ranging-with-idirectoryobject"></a>Codice di esempio per ranging con IDirectoryObject
 
-L'esempio di codice seguente usa ranging per recuperare i membri di un gruppo usando [**l'interfaccia IDirectoryObject.**](/windows/desktop/api/Iads/nn-iads-idirectoryobject)
+Nell'esempio di codice seguente viene utilizzato ranging per recuperare i membri di un gruppo usando [**l'interfaccia IDirectoryObject.**](/windows/desktop/api/Iads/nn-iads-idirectoryobject)
 
 
 ```C++

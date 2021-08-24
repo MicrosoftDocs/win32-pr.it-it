@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DPICHANGED (WinUser. h)
-description: Inviato quando viene modificato il valore dpi (punti per pollice) effettivo per una finestra.
+title: WM_DPICHANGED messaggio (WinUser.h)
+description: Inviato quando i punti per pollice (dpi) effettivi per una finestra vengono modificati.
 ms.assetid: 97C458F2-89CD-45FF-ABEE-F158A3BCE0B8
 keywords:
-- Messaggio WM_DPICHANGED alto DPI
+- WM_DPICHANGED messaggio High DPI
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aafbce1e784e1f205f0d32e045785125c1fb5aaa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d77a7d7608e9facc1e0fc6973b19a3d9db36900fa8d550896cc3058389f367bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666381"
 ---
-# <a name="wm_dpichanged-message"></a>\_Messaggio DPICHANGED WM
+# <a name="wm_dpichanged-message"></a>Messaggio WM \_ DPICHANGED
 
-Inviato quando viene modificato il valore dpi (punti per pollice) effettivo per una finestra. Il valore DPI è il fattore di scala per una finestra. Sono presenti più eventi che possono causare la modifica del valore DPI. Nell'elenco seguente sono indicate le possibili cause della modifica in DPI.
+Inviato quando i punti per pollice (dpi) effettivi per una finestra vengono modificati. Il valore DPI è il fattore di scala per una finestra. Esistono più eventi che possono causare la modifica del valore DPI. L'elenco seguente indica le possibili cause della modifica in DPI.
 
--   La finestra viene spostata in un nuovo monitor con un valore DPI diverso.
--   Viene modificato il valore DPI del monitoraggio che ospita la finestra.
+-   La finestra viene spostata in un nuovo monitoraggio con un valore DPI diverso.
+-   Il valore DPI del monitoraggio che ospita la finestra cambia.
 
-Il valore DPI corrente per una finestra è sempre uguale all'ultimo valore DPI inviato da **WM \_ DPICHANGED**. Questo è il fattore di scala che la finestra deve ridimensionare per i thread che sono consapevoli delle modifiche DPI.
+Il valore DPI corrente per una finestra è sempre uguale all'ultimo valore DPI inviato da **WM \_ DPICHANGED.** Questo è il fattore di scala che la finestra deve ridimensionare per i thread che sono consapevoli delle modifiche DPI.
 
 
 ```C++
@@ -44,30 +44,30 @@ Il valore DPI corrente per una finestra è sempre uguale all'ultimo valore DPI i
 *wParam* 
 </dt> <dd>
 
-Il [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) del *wParam* contiene il valore dell'asse Y del nuovo dpi della finestra. Il [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) del *wParam* contiene il valore dell'asse X del nuovo valore dpi della finestra. Ad esempio, 96, 120, 144 o 192. I valori dell'asse X e l'asse Y sono identici per le app di Windows.
+La [**parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) *di wParam* contiene il valore dell'asse Y del nuovo dpi della finestra. La [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) di *wParam* contiene il valore dell'asse X del nuovo valore DPI della finestra. Ad esempio, 96, 120, 144 o 192. I valori dell'asse X e dell'asse Y sono identici per Windows app.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/windows/desktop/api/windef/ns-windef-rect) che fornisce le dimensioni suggerite e la posizione della finestra corrente ridimensionata per il nuovo valore dpi. Si prevede che le app riposizionano e ridimensionano le finestre in base ai suggerimenti forniti da *lParam* durante la gestione di questo messaggio.
+Puntatore a una [**struttura RECT**](/windows/desktop/api/windef/ns-windef-rect) che fornisce una dimensione e una posizione suggerite della finestra corrente ridimensionata per il nuovo valore DPI. L'aspettativa è che le app riposizionano e ridimensionano le finestre in base ai suggerimenti forniti da *lParam* durante la gestione di questo messaggio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio è pertinente solo per le applicazioni con **\_ \_ \_ \_ riconoscimento dpi del monitor** o per la **consapevolezza dpi per thread \_ \_ \_ \_ compatibili con monitoraggio** . È possibile che venga ricevuta in determinate modifiche DPI se la finestra di primo livello o il processo è in esecuzione con compatibilità **dpi** o **compatibile con DPI di sistema**, ma in tali situazioni può essere tranquillamente ignorato. Per ulteriori informazioni sui diversi tipi di riconoscimento, vedere [**processo \_ dpi \_ Awareness**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) e [**dpi \_ Awareness**](/windows/desktop/api/windef/ne-windef-dpi_awareness). Le versioni precedenti di Windows richiedevano il riconoscimento DPI per essere associato al livello di un'applicazione. Queste app usano **la \_ \_ consapevolezza dpi del processo**. Attualmente, la consapevolezza DPI è associata a thread e singole finestre anziché all'intera applicazione. Queste app usano **la \_ consapevolezza dpi**.
+Questo messaggio è pertinente solo per le applicazioni **\_ \_ \_ DPI \_ AWARE PROCESS PER MONITOR** o per i **thread DPI AWARENESS PER \_ MONITOR \_ \_ \_ AWARE.** Può essere ricevuto in determinate modifiche DPI se la finestra o il processo di primo livello è in esecuzione come **DPI** inconsapevole o in grado di riconoscere **DPI** di sistema, ma in tali situazioni può essere tranquillamente ignorato. Per altre informazioni sui diversi tipi di consapevolezza, vedere [**PROCESS \_ DPI \_ AWARENESS**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) e [**DPI \_ AWARENESS**](/windows/desktop/api/windef/ne-windef-dpi_awareness). Le versioni precedenti Windows necessario che la consapevolezza DPI sia associata al livello di un'applicazione. Queste app usano **PROCESS \_ DPI \_ AWARENESS**. Attualmente, la consapevolezza DPI è associata a thread e singole finestre anziché all'intera applicazione. Queste app usano **DPI \_ AWARENESS**.
 
-È sufficiente usare l'asse X o il valore dell'asse Y durante il ridimensionamento dell'applicazione perché sono uguali.
+È necessario usare solo l'asse X o il valore dell'asse Y quando si ridimensiona l'applicazione perché sono uguali.
 
-Per gestire correttamente questo messaggio, sarà necessario ridimensionare e riposizionare la finestra in base ai suggerimenti forniti da *lParam* e usando [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos). Se non si esegue questa operazione, la finestra aumenterà o verrà ridotta rispetto a tutti gli altri elementi del nuovo monitor. Se, ad esempio, un utente utilizza più monitoraggi e trascina la finestra da un monitor 96 DPI a un monitor 192 DPI, la finestra apparirà la metà delle dimensioni rispetto ad altri elementi del monitor 192 DPI.
+Per gestire correttamente questo messaggio, è necessario ridimensionare e riposizionare la finestra in base ai suggerimenti forniti da *lParam* e usando [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos). Se non si esegue questa operazione, la finestra aumenta o si riduce rispetto a tutti gli altri elementi del nuovo monitoraggio. Ad esempio, se un utente usa più monitor e trascina la finestra da un monitor da 96 DPI a un monitor DPI da 192, la finestra apparirà metà grande rispetto ad altri elementi nel monitoraggio DPI da 192.
 
-Il valore di base di DPI è definito **come \_ \_ \_ DPI dello schermo predefinito dell'utente** , che è impostato su 96. Per determinare il fattore di scalabilità per un monitoraggio, impostare il valore DPI e dividere in base a **\_ \_ \_ DPI dello schermo predefinito dell'utente**. Nella tabella seguente vengono forniti alcuni valori DPI di esempio e i fattori di scala associati.
+Il valore di base di DPI è definito come **USER \_ DEFAULT SCREEN \_ \_ DPI,** che è impostato su 96. Per determinare il fattore di scala per un monitoraggio, prendere il valore DPI e dividere per **USER \_ DEFAULT SCREEN \_ \_ DPI**. Nella tabella seguente vengono forniti alcuni valori DPI di esempio e i fattori di scala associati.
 
 
 
@@ -105,7 +105,7 @@ Nell'esempio seguente viene fornito un gestore delle modifiche DPI di esempio.
 
 
 
-Il codice seguente consente di ridimensionare in modo lineare un valore da 100% (96 DPI) a un valore DPI arbitrario definito da *g \_ dpi*.
+Il codice seguente ridimensiona in modo lineare un valore dal 100% (96 DPI) a un valore DPI arbitrario definito da *g \_ dpi*.
 
 
 ```C++
@@ -132,9 +132,9 @@ Un modo alternativo per ridimensionare un valore consiste nel convertire il valo
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 
@@ -142,10 +142,10 @@ Un modo alternativo per ridimensionare un valore consiste nel convertire il valo
 
 <dl> <dt>
 
-[**\_riconoscimento dpi**](/windows/desktop/api/windef/ne-windef-dpi_awareness)
+[**CONSAPEVOLEZZA DPI \_**](/windows/desktop/api/windef/ne-windef-dpi_awareness)
 </dt> <dt>
 
-[**\_riconoscimento dpi \_ processo**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness)
+[**ELABORARE \_ LA CONSAPEVOLEZZA DPI \_**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness)
 </dt> </dl>
 
  

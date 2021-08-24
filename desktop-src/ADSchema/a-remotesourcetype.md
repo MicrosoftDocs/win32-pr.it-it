@@ -1,10 +1,10 @@
 ---
 title: Attributo Remote-Source-Type
-description: Tipo di puntatore a oggetto esterno.
+description: Tipo di puntatore a un oggetto estraneo.
 ms.assetid: 9d0c2624-4f46-4155-83f5-0c163d03a257
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo del tipo di origine remoto
+- Schema AD dell'attributo Remote-Source-Type
 - Schema AD dell'attributo remoteSourceType
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef8e54ab72294f426275a5873bc6a60beafd5cbc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4678a8edba83bbaeeb81756e3043d46f90c0d39e868680255ba2c9570cdcee2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646941"
 ---
 # <a name="remote-source-type-attribute"></a>Attributo Remote-Source-Type
 
-Tipo di puntatore a oggetto esterno.
+Tipo di puntatore a un oggetto estraneo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Tipo di origine remoto                   |
-| LDAP-Display-Name | remoteSourceType                     |
+| CN                | Remote-Source-Type                   |
+| Ldap-Display-Name | remoteSourceType                     |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.108               |
-| System-ID-GUID    | bf967a15-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a15-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tipo di puntatore a oggetto esterno.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 

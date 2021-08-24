@@ -44,7 +44,7 @@ Puntatore all'handle di un oggetto Windows registro eventi.
 
 </dd> <dt>
 
-**HANDLE DI PROPRIETÀ DELLA \_ \_ MATRICE DI \_ OGGETTI \_ EVT**
+**HANDLE DI PROPRIETÀ DELLA MATRICE DI OGGETTI EVT \_ \_ \_ \_**
 </dt> <dd>
 
 Handle per una matrice di oggetti Windows log eventi.

@@ -15,7 +15,7 @@ ms.locfileid: "119692811"
 
 Il Windows installer può usare firme digitali per rilevare le risorse danneggiate. Un certificato del firmatario può essere confrontato con il certificato del firmatario di una risorsa esterna che deve essere installato dal pacchetto. Per altre informazioni sull'uso di firme digitali, certificati digitali e [](https://msdn.microsoft.com/library/cc527452.aspx) [**WinVerifyTrust,**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust)vedere la sezione Sicurezza di Microsoft Windows Software Development Kit (SDK).
 
-Con Windows installer, le firme digitali possono essere usate con Windows, trasformazioni, patch, moduli unione e file cab esterni del programma di installazione. Windows Il programma di installazione è integrato con Criteri di restrizione software in Microsoft Windows XP. È possibile creare criteri per consentire o impedire le installazioni in base a criteri diversi, tra cui un certificato o un editore del firmatario specifico. Il Windows installer può eseguire la convalida della firma di file cab esterni in tutte le piattaforme in cui è installato CryptoAPI versione 2.0.
+Con Windows installer, le firme digitali possono essere usate con Windows, trasformazioni, patch, moduli unione e file cab esterni del programma di installazione. Windows Il programma di installazione è integrato con Criteri di restrizione software in Microsoft Windows XP. È possibile creare criteri per consentire o impedire le installazioni in base a criteri diversi, tra cui un certificato o un editore del firmatario specifico. Il Windows installer può eseguire la convalida della firma di file CAB esterni in tutte le piattaforme in cui è installato CryptoAPI versione 2.0.
 
 Si noti che l'esempio Setup.exe bootstrap fornito con Windows Installer SDK esegue un controllo della firma in un pacchetto di Windows Installer prima di avviare l'installazione.
 
@@ -25,7 +25,7 @@ L'applicazione di una patch a un'installazione amministrativa rimuove anche la f
 
 A partire da Windows Installer versione 3.0, l'applicazione di patch al controllo [dell'account](user-account-control--uac--patching.md) utente consente agli utenti non amministratori di applicare patch alle applicazioni installate nel contesto per computer. L'applicazione di patch del controllo dell'account utente viene abilitata fornendo un certificato del firmatario nella tabella [MsiPatchCertificate](msipatchcertificate-table.md) e firmando le patch con lo stesso certificato.
 
-Per altre informazioni, vedere Firme digitali e file CAB esterni [,](digital-signatures-and-external-cabinet-files.md)Programma di installazione [di Windows](windows-installer-and-software-restriction-policy.md)e Criteri di restrizione software [,](authoring-a-fully-verified-signed-installation.md)Creazione di un'installazione firmata completamente verificata e Esempio di installazione del programma di installazione di Windows basato su [URL](a-url-based-windows-installer-installation-example.md).
+Per altre informazioni, vedere Firme digitali e file CAB esterni [,](digital-signatures-and-external-cabinet-files.md)Programma di installazione [di Windows](windows-installer-and-software-restriction-policy.md)e Criteri di restrizione software [,](authoring-a-fully-verified-signed-installation.md)Creazione di un'installazione firmata completamente verificata e Esempio di installazione del programma di installazione Windows basato su [URL](a-url-based-windows-installer-installation-example.md).
 
  
 

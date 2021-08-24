@@ -1,35 +1,35 @@
 ---
-description: In Windows Server 2003, WinHTTP viene implementato come assembly affiancato e deve essere collegato a tale scopo. Si noti che questa operazione non si applica a Windows Vista e versioni successive.
+description: In Windows Server 2003, WinHTTP viene implementato come assembly side-by-side e deve essere collegato a come tale. Si noti che questo non si applica Windows Vista e versioni successive.
 ms.assetid: 524d926d-4d8a-4576-96fd-c533517ba28e
-title: Uso di WinHTTP come assembly affiancato
+title: Uso di WinHTTP come assembly side-by-side
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a74a0e5cf842fdd1e20c6d6d271de482e361c4af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c8c6312fb57f210e0324c1ae89bb785fd5b51bcb2b1ea4ba1a4959a3d0fd540
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614091"
 ---
-# <a name="using-winhttp-as-a-side-by-side-assembly"></a>Uso di WinHTTP come assembly affiancato
+# <a name="using-winhttp-as-a-side-by-side-assembly"></a>Uso di WinHTTP come assembly side-by-side
 
-In Windows Server 2003, WinHTTP viene implementato come assembly affiancato e deve essere collegato a tale scopo. Si noti che questa operazione non si applica a Windows Vista e versioni successive.
+In Windows Server 2003, WinHTTP viene implementato come assembly side-by-side e deve essere collegato a come tale. Si noti che questo non si applica Windows Vista e versioni successive.
 
-## <a name="side-by-side-assemblies"></a>Assembly affiancati
+## <a name="side-by-side-assemblies"></a>Assembly side-by-side
 
-A partire da Microsoft Windows XP, è stato fornito un meccanismo di assembly affiancati per controllare il collegamento della fase di esecuzione per evitare conflitti di controllo delle versioni delle librerie a collegamento dinamico (DLL). Per informazioni sugli assembly affiancati, vedere [informazioni sulle applicazioni isolate e gli assembly affiancati](/windows/desktop/SbsCs/about-isolated-applications-and-side-by-side-assemblies).
+A partire da Microsoft Windows XP, è stato fornito un meccanismo di assembly side-by-side per controllare il collegamento in fase di esecuzione per evitare conflitti di controllo delle versioni della libreria a collegamento dinamico (DLL). Per informazioni sugli assembly side-by-side, vedere Informazioni sulle applicazioni isolate e sugli [assembly side-by-side](/windows/desktop/SbsCs/about-isolated-applications-and-side-by-side-assemblies).
 
-Per usare questo meccanismo per il collegamento a WinHTTP versione 5,1 in Windows Server 2003, un'applicazione deve incorporare un manifesto che specifichi WinHTTP come assembly dipendente. Per ulteriori informazioni su come eseguire questa operazione, vedere [utilizzo degli assembly affiancati](/windows/desktop/SbsCs/using-side-by-side-assemblies) .
+Per usare questo meccanismo per il collegamento a WinHTTP versione 5.1 in Windows Server 2003, un'applicazione deve incorporare un manifesto che specifica WinHTTP come assembly dipendente. Per altre informazioni su come eseguire questa operazione, vedere Uso di assembly [side-by-side.](/windows/desktop/SbsCs/using-side-by-side-assemblies)
 
 ## <a name="a-sample-winhttp-application-manifest"></a>Manifesto dell'applicazione WinHTTP di esempio
 
 Il manifesto di esempio seguente illustra un manifesto dell'applicazione che può essere usato per il collegamento a WinHTTP.
 
-Tutti gli attributi tranne "Type" di " <assembly> <assemblyIdentity> " devono essere modificati in modo appropriato per l'applicazione specifica. Lo stesso vale per il contenuto dell'elemento " &lt; Description &gt; ".
+Tutti gli attributi ad eccezione di "type" di <assembly> <assemblyIdentity> " " devono essere modificati in base alle esigenze dell'applicazione specifica. Lo stesso vale per il contenuto dell'elemento " &lt; description &gt; ".
 
-Assicurarsi inoltre che l'attributo "processorArchitecture" di " <dependentAssembly> <assemblyIdentity> " corrisponda all'attributo "ProcessorArchitecture" di " <assembly> <assemblyIdentity> ". Di seguito, ad esempio, entrambi sono impostati su "x86".
+Assicurarsi inoltre che l'attributo "processorArchitecture" di " " corrisponda all'attributo <dependentAssembly> <assemblyIdentity> "processorArchitecture" di " <assembly> <assemblyIdentity> ". Di seguito, ad esempio, entrambi sono impostati su "x86".
 
-Tutti i valori non specifici dell'applicazione dovrebbero avere i moduli mostrati di seguito.
+Tutti i valori non specifici dell'applicazione devono assumere i formati illustrati di seguito.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

@@ -1,6 +1,6 @@
 ---
 title: Win32_TSPublishedApplication classe
-description: Definisce le applicazioni rese disponibili per l'uso remoto tramite Windows Server 2008 R2 RemoteApp.
+description: Definisce le applicazioni rese disponibili per l'uso remoto tramite Windows RemoteApp di Server 2008 R2.
 ms.assetid: 5b9cb36b-3d8d-4105-acea-c79440d977fe
 ms.tgt_platform: multiple
 keywords:
@@ -40,9 +40,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119137664"
 ---
-# <a name="win32_tspublishedapplication-class"></a>Classe \_ Win32 TSPublishedApplication
+# <a name="win32_tspublishedapplication-class"></a>Classe \_ TSPublishedApplication Win32
 
-Definisce le applicazioni rese disponibili per l'uso remoto tramite Windows Server 2008 R2 RemoteApp.
+Definisce le applicazioni rese disponibili per l'uso remoto tramite Windows RemoteApp di Server 2008 R2.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,7 +71,7 @@ class Win32_TSPublishedApplication : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ Win32 TSPublishedApplication** include questi tipi di membri:
+La **classe Win32 \_ TSPublishedApplication** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -84,23 +84,23 @@ La **classe Win32 \_ TSPublishedApplication** ha queste proprietà.
 **Alias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: **Chiave**
+Qualificatori: **chiave**
 </dt> </dl>
 
-Alias dell'applicazione. L'alias è un identificatore univoco per il programma che per impostazione predefinita è il nome file del programma (senza l'estensione ).
+Alias dell'applicazione. L'alias è un identificatore univoco per il programma che per impostazione predefinita è il nome file del programma (senza l'estensione).
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -109,7 +109,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa di una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -121,7 +121,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Impostazione degli argomenti della riga di comando per l'applicazione. Sono possibili i valori seguenti.
@@ -145,7 +145,7 @@ Consente qualsiasi argomento della riga di comando.
 2
 </dt> <dd>
 
-Usare sempre gli argomenti obbligatori della riga di comando (specificati in **RequiredCommandLine**).
+Usare sempre gli argomenti della riga di comando necessari (specificati in **RequiredCommandLine**).
 
 </dd> </dl>
 
@@ -154,7 +154,7 @@ Usare sempre gli argomenti obbligatori della riga di comando (specificati in **R
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -185,7 +185,7 @@ Contenuto in byte dell'icona che corrisponde all'applicazione.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Indice o ID dell'icona.
@@ -195,10 +195,10 @@ Indice o ID dell'icona.
 **IconPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Percorso dell'icona dell'applicazione.
@@ -214,7 +214,7 @@ Tipo di dati: **datetime**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
+Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
@@ -226,7 +226,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -241,10 +241,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Percorso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Percorso dell'applicazione.
@@ -264,13 +264,13 @@ Indica se il percorso dell'applicazione è valido.
 
 </dd> <dt>
 
-**CONTENUTO RDPFileContents**
+**RDPFileContents**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Contenuto del file RDP che corrisponde all'applicazione.
@@ -280,10 +280,10 @@ Contenuto del file RDP che corrisponde all'applicazione.
 **RequiredCommandLine**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Argomenti della riga di comando necessari per l'applicazione.
@@ -293,10 +293,10 @@ Argomenti della riga di comando necessari per l'applicazione.
 **SecurityDescriptor**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Descrittore di sicurezza che controlla l'accesso all'applicazione, in formato SDDL. Una stringa vuota implica consentire tutti gli accessi. Questo descrittore di sicurezza non supporta le ACE DENY o le voci ACE che fanno riferimento a utenti o gruppi non di dominio.
@@ -309,17 +309,17 @@ Descrittore di sicurezza che controlla l'accesso all'applicazione, in formato SD
 Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se l'applicazione deve essere visualizzata in Servizi Desktop Accesso Web.
+Indica se l'applicazione deve essere visualizzata nell'Accesso Web.
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -328,7 +328,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -350,7 +350,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 
 
 
- ("Degraded")
+ ("Danneggiato")
 
 
 </dt> <dd></dd> <dt>
@@ -420,7 +420,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows wmi (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

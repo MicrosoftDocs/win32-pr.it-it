@@ -4,8 +4,8 @@ description: Il metodo StopService arresta il server DNS.
 ms.assetid: 80637d5b-e43a-4710-b3ab-eec246587788
 keywords:
 - DNS del metodo StopService
-- DNS del metodo StopService, classe MicrosoftDNS_Server
-- Classe MicrosoftDNS_Server DNS, metodo StopService
+- Metodo StopService DNS, MicrosoftDNS_Server classe
+- MicrosoftDNS_Server classe DNS , metodo StopService
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f811533c66185304c5c674fdfff2eda8cf5bef69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d42a443e22d382dd6e7f6ec9d528d0a1f57c6062ba0e03742033c494b75cd8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076745"
 ---
-# <a name="stopservice-method-of-the-microsoftdns_server-class"></a>Metodo StopService della \_ classe server MicrosoftDNS
+# <a name="stopservice-method-of-the-microsoftdns_server-class"></a>Metodo StopService della classe Server \_ MicrosoftDNS
 
-Il metodo **StopService** arresta il server DNS.
+Il **metodo StopService** arresta il server DNS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-ERRORE \_ indica che il servizio è stato arrestato correttamente. Qualsiasi altro valore è un codice di errore.
+ERROR \_ SUCCESS indica che il servizio è stato arrestato correttamente. Qualsiasi altro valore è un codice di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ ERRORE \_ indica che il servizio è stato arrestato correttamente. Qualsiasi alt
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,16 +61,16 @@ ERRORE \_ indica che il servizio è stato arrestato correttamente. Qualsiasi alt
 
 <dl> <dt>
 
-[**\_Server MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Metodo StartService della \_ classe server MicrosoftDNS**](microsoftdns-server-startservice.md)
+[**Metodo StartService della classe server \_ MicrosoftDNS**](microsoftdns-server-startservice.md)
 </dt> <dt>
 
-[**Metodo StartScavenging della \_ classe server MicrosoftDNS**](microsoftdns-server-startscavenging.md)
+[**Metodo StartScavenging della classe server \_ MicrosoftDNS**](microsoftdns-server-startscavenging.md)
 </dt> <dt>
 
-[**Metodo getdistinguishname della \_ classe server MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Metodo GetDistinguishedName della classe server \_ MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

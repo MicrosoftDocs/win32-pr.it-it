@@ -1,17 +1,17 @@
 ---
 description: Specifica il sistema di protezione multimediale da utilizzare per il contenuto.
 ms.assetid: D0380C89-872A-4863-983F-A52FBACEF4FD
-title: Proprietà MFPKEY_MediaProtectionSystemId
+title: MFPKEY_MediaProtectionSystemId proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9817cccca002cceaf72463482aecea69aaf1ce25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cace6ccf4cff4cd197d090584821779a0b1fe7eaceef526dd29389a9b179654f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555441"
 ---
-# <a name="mfpkey_mediaprotectionsystemid-property"></a>\_Proprietà MediaProtectionSystemId di MFPKEY
+# <a name="mfpkey_mediaprotectionsystemid-property"></a>MFPKEY \_ MediaProtectionSystemId - proprietà
 
 Specifica il sistema di protezione multimediale da utilizzare per il contenuto.
 
@@ -19,13 +19,13 @@ Specifica il sistema di protezione multimediale da utilizzare per il contenuto.
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 **GUID** (**CLSID** \* )
 
-\_CLSID VT
+VT \_ CLSID
 
 **puuid**
 
@@ -41,7 +41,7 @@ Il valore di questa proprietà è un GUID che identifica il sistema di protezion
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Il valore di questa proprietà è un GUID che identifica il sistema di protezion
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

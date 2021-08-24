@@ -1,7 +1,7 @@
 ---
-description: Determina se un file di disco rigido virtuale è valido.
+description: Determina se un file del disco rigido virtuale è valido.
 ms.assetid: 5F7C99DB-0C81-46D5-A965-B6D87647ABF6
-title: Metodo ValidateVirtualHardDisk della classe Msvm_ImageManagementService
+title: Metodo ValidateVirtualHardDisk della Msvm_ImageManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 50c00dc4336e3e85b7db8ffd334de8868054c997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1108c0c1624d26855e872b7e6e0087b304b0e63ae39cf2b0b9b14156a9810972
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068301"
 ---
-# <a name="validatevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ValidateVirtualHardDisk della classe MSVM \_ servizio
+# <a name="validatevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Metodo ValidateVirtualHardDisk della classe Msvm \_ ImageManagementService
 
-Determina se un file di disco rigido virtuale è valido.
+Determina se un file del disco rigido virtuale è valido.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,16 +40,16 @@ uint32 ValidateVirtualHardDisk(
 
 <dl> <dt>
 
-*Percorso* \[ in\]
+*Percorso* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
 Percorso completo che specifica il percorso del file del disco rigido virtuale.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
@@ -60,16 +60,16 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo può restituire uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -81,25 +81,25 @@ Questo metodo può restituire uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -108,18 +108,18 @@ Il **sistema è in uso** (32774)
 **File non trovato** (32779)
 </dt> <dt>
 
-**Rilevato ciclo della catena di differenze VHD** (32787)
+**Rilevato ciclo della catena di differenze dei dischi rigidi virtuali** (32787)
 </dt> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se il disco rigido virtuale è un disco differenze, viene aperta l'intera catena di dischi virtuali. Se il collegamento viene rotto nella catena di dischi, viene restituito un oggetto processo con l'errore appropriato inizializzato e le proprietà figlio e padre vengono inizializzate nel percorso in cui il collegamento è danneggiato.
+Se il disco rigido virtuale è un disco differenze, viene aperta l'intera catena di dischi virtuali. Se il collegamento viene interrotto nella catena di dischi, viene restituito un oggetto processo con l'errore appropriato inizializzato e le proprietà figlio e padre vengono inizializzate nel percorso in cui il collegamento è interrotto.
 
-L'accesso alla [**classe \_ servizio di MSVM**](msvm-imagemanagementservice.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio C# seguente viene convalidata un'immagine del disco rigido virtuale. Le utilità a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+L'esempio C# seguente convalida un'immagine del disco rigido virtuale. Le utilità a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -157,10 +157,10 @@ public static void ValidateVirtualHardDisk(string vhdPath)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -172,10 +172,10 @@ public static void ValidateVirtualHardDisk(string vhdPath)
 [**ValidateVirtualHardDisk (V1)**](/previous-versions/windows/desktop/virtual/validatevirtualharddisk-msvm-imagemanagementservice)
 </dt> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[**\_Servizio MSVM**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

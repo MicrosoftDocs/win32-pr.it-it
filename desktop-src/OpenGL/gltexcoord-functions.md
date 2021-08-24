@@ -3,22 +3,22 @@ title: Funzioni glTexCoord
 description: Queste funzioni impostano le coordinate di trama correnti.
 ms.assetid: 71eb39f1-e1ad-4b97-83e0-d2670f5a7545
 keywords:
-- OpenGL, funzioni glTexCoord
-- Riferimento OpenGL, funzioni glTexCoord
-- informazioni di riferimento per le funzioni OpenGL, glTexCoord
-- funzioni glTexCoord
+- Funzioni OpenGL,glTexCoord
+- Informazioni di riferimento su OpenGL, funzioni glTexCoord
+- informazioni di riferimento per le funzioni OpenGL,glTexCoord
+- Funzioni glTexCoord
 - OpenGL, funzioni di trama
-- Guida di riferimento a OpenGL, funzioni di trama
+- Informazioni di riferimento su OpenGL, funzioni di trama
 - informazioni di riferimento per OpenGL, funzioni di trama
-- funzioni di trama
+- Funzioni di trama
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e9db3aa5a8aa62ba1e581d8a005c1ea6fa72d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: efcfbd28098ec81e6518273f222f6b04c13cb8a0c0ecfcec97f039de8074e162
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491471"
 ---
 # <a name="gltexcoord-functions"></a>Funzioni glTexCoord
 
@@ -56,9 +56,9 @@ Queste funzioni impostano le coordinate di trama correnti:
 -   [**glTexCoord4iv**](gltexcoord4iv.md)
 -   [**glTexCoord4sv**](gltexcoord4sv.md)
 
- 
+ 
 
- 
+ 
 
 
 

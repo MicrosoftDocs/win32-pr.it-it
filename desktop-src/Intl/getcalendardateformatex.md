@@ -1,7 +1,7 @@
 ---
 description: Deprecato.
 ms.assetid: eb2622bc-a98d-42bd-ab59-7a849000d79d
-title: GetCalendarDateFormatEx (funzione)
+title: Funzione GetCalendarDateFormatEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,19 +15,19 @@ api_location:
 - Kernel32.dll
 - API-MS-Win-Core-calendar-l1-1-0.dll
 - kernel32legacy.dll
-ms.openlocfilehash: b0130bf62c742d0565b1c98c138ac8c71ddf7a67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db6bf4fc20c24e91a0af29dc8ee81f7a77ef5cb1c0f0e0f6c5a0a792e52eb903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068221"
 ---
-# <a name="getcalendardateformatex-function"></a>GetCalendarDateFormatEx (funzione)
+# <a name="getcalendardateformatex-function"></a>Funzione GetCalendarDateFormatEx
 
-Deprecato. Recupera una stringa di data formattata correttamente per le impostazioni locali specificate utilizzando la data e il calendario specificati. L'utente può specificare il formato di data breve, il formato di data estesa, il formato dell'anno mese o un modello di formato personalizzato.
+Deprecato. Recupera una stringa di data formattata correttamente per le impostazioni locali specificate usando la data e il calendario specificati. L'utente può specificare il formato di data breve, il formato di data lunga, il formato del mese dell'anno o un modello di formato personalizzato.
 
 > [!Note]  
-> Questa funzione può recuperare i dati che cambiano tra le versioni, ad esempio, a causa di impostazioni locali personalizzate. Se l'applicazione deve persistere o trasmettere dati, vedere [utilizzo di dati locali permanenti](using-persistent-locale-data.md).
+> Questa funzione può recuperare i dati che cambiano tra le versioni, ad esempio a causa di impostazioni locali personalizzate. Se l'applicazione deve rendere persistenti o trasmettere dati, vedere [Uso dei dati delle impostazioni locali permanenti](using-persistent-locale-data.md).
 
  
 
@@ -51,31 +51,31 @@ BOOL GetCalendarDateFormatEx(
 
 <dl> <dt>
 
-*lpszLocale* \[ in\]
+*lpszLocale* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un nome delle impostazioni locali o uno dei seguenti valori predefiniti.
+Puntatore a un nome di impostazioni locali o a uno dei valori predefiniti seguenti.
 
--   [nome delle impostazioni locali \_ \_ invariante](locale-name-constants.md)
--   [impostazioni locali \_ nome \_ sistema \_ predefinito](locale-name-constants.md)
--   [\_ \_ impostazione predefinita utente nome impostazioni locali \_](locale-name-constants.md)
+-   [\_ \_ INVARIANTE DEL NOME DELLE IMPOSTAZIONI LOCALI](locale-name-constants.md)
+-   [IMPOSTAZIONI LOCALI \_ NOME \_ SISTEMA \_ PREDEFINITO](locale-name-constants.md)
+-   [NOME \_ IMPOSTAZIONI LOCALI IMPOSTAZIONE PREDEFINITA \_ \_ DELL'UTENTE](locale-name-constants.md)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag che specificano le opzioni relative al formato della data. Se *lpFormat* non è impostato su **null**, questo parametro deve essere impostato su 0. Se *lpFormat* è impostato su **null**, l'applicazione può specificare una combinazione dei valori seguenti e delle [impostazioni locali \_ NOUSEROVERRIDE](locale-nouseroverride.md).
+Flag che specificano le opzioni di formato della data. Se *lpFormat* non è impostato su **NULL,** questo parametro deve essere impostato su 0. Se *lpFormat è* impostato su **NULL,** l'applicazione può specificare una combinazione dei valori seguenti e [LOCALE \_ NOUSEROVERRIDE](locale-nouseroverride.md).
 
 
 
 | Valore                                                                                                                                                               | Significato                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DATE_SHORTDATE"></span><span id="date_shortdate"></span><dl> <dt>**Data \_ SHORTDATE**</dt> </dl>    | Usare il formato di data breve. Questo è il valore predefinito. Questo valore non può essere usato con la data \_ LONGDATE o la data \_ YEARMONTH. <br/> |
-| <span id="DATE_LONGDATE"></span><span id="date_longdate"></span><dl> <dt>**Data \_ LONGDATE**</dt> </dl>       | Usare il formato di data estesa. Questo valore non può essere usato con la data \_ shortdate o la data \_ YEARMONTH. <br/>                      |
-| <span id="DATE_YEARMONTH"></span><span id="date_yearmonth"></span><dl> <dt>**Data \_ YEARMONTH**</dt> </dl>    | Usare il formato anno/mese. Questo valore non può essere usato con la data \_ shortdate o la data \_ LONGDATE.<br/>                       |
-| <span id="DATE_LTRREADING"></span><span id="date_ltrreading"></span><dl> <dt>**Data \_ LTRREADING**</dt> </dl> | Aggiungere i contrassegni per il layout di lettura da sinistra a destra. Questo valore non può essere usato con la data \_ RTLREADING.<br/>                       |
-| <span id="DATE_RTLREADING"></span><span id="date_rtlreading"></span><dl> <dt>**Data \_ RTLREADING**</dt> </dl> | Aggiungere contrassegni per il layout di lettura da destra a sinistra. Non è possibile usare questo valore con DATE \_ LTRREADING<br/>                        |
+| <span id="DATE_SHORTDATE"></span><span id="date_shortdate"></span><dl> <dt>**DATE \_ SHORTDATE**</dt> </dl>    | Usare il formato di data breve. Questo è il valore predefinito. Questo valore non può essere usato con DATE \_ LONGDATE o DATE \_ YEARMONTH. <br/> |
+| <span id="DATE_LONGDATE"></span><span id="date_longdate"></span><dl> <dt>**DATE \_ LONGDATE**</dt> </dl>       | Usare il formato di data lunga. Questo valore non può essere usato con DATE \_ SHORTDATE o DATE \_ YEARMONTH. <br/>                      |
+| <span id="DATE_YEARMONTH"></span><span id="date_yearmonth"></span><dl> <dt>**DATE \_ YEARMONTH**</dt> </dl>    | Usare il formato anno/mese. Questo valore non può essere usato con DATE \_ SHORTDATE o DATE \_ LONGDATE.<br/>                       |
+| <span id="DATE_LTRREADING"></span><span id="date_ltrreading"></span><dl> <dt>**DATA \_ LTRREADING**</dt> </dl> | Aggiungere contrassegni per il layout di lettura da sinistra a destra. Questo valore non può essere usato con DATE \_ RTLREADING.<br/>                       |
+| <span id="DATE_RTLREADING"></span><span id="date_rtlreading"></span><dl> <dt>**DATA \_ RTLREADING**</dt> </dl> | Aggiungere contrassegni per il layout di lettura da destra a sinistra. Questo valore non può essere usato con DATE \_ LTRREADING<br/>                        |
 
 
 
@@ -83,52 +83,52 @@ Flag che specificano le opzioni relative al formato della data. Se *lpFormat* no
 
 </dd> <dt>
 
-*lpCalDateTime* \[ in\]
+*lpCalDateTime* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**CALDATETIME**](caldatetime.md) che contiene le informazioni sulla data e sul calendario da formattare.
+Puntatore a una [**struttura CALDATETIME**](caldatetime.md) che contiene le informazioni sulla data e sul calendario da formattare.
 
 </dd> <dt>
 
-*lpFormat* \[ in\]
+*lpFormat* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa di immagine del formato utilizzata per formare la stringa di data. I valori possibili per la stringa dell'immagine di formato sono definiti nelle [Immagini del formato giorno, mese, anno ed era](day--month--year--and-era-format-pictures.md).
+Puntatore a una stringa dell'immagine di formato utilizzata per formare la stringa di data. I valori possibili per la stringa di formato dell'immagine sono definiti in [Day, Month, Year ed Era Format Pictures](day--month--year--and-era-format-pictures.md).
 
-La stringa di formato dell'immagine deve essere con terminazione null. La funzione utilizza le impostazioni locali solo per le informazioni non specificate nella stringa dell'immagine di formato, ad esempio i nomi dei giorni e dei mesi per le impostazioni locali. Se la funzione usa il formato di data delle impostazioni locali specificate, l'applicazione imposta questo parametro su **null** .
+La stringa dell'immagine di formato deve essere con terminazione Null. La funzione usa le impostazioni locali solo per le informazioni non specificate nella stringa dell'immagine di formato, ad esempio i nomi dei giorni e dei mesi per le impostazioni locali. L'applicazione imposta questo parametro su **NULL** se la funzione deve usare il formato di data delle impostazioni locali specificate.
 
 </dd> <dt>
 
-*lpDateStr* \[ out\]
+*lpDateStr* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un buffer in cui questa funzione riceve la stringa di data formattata.
 
 </dd> <dt>
 
-*cchDate* \[ in\]
+*cchDate* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in caratteri, del buffer *lpDateStr* . In alternativa, l'applicazione può impostare questo parametro su 0. In questo caso, la funzione restituisce il numero di caratteri necessari per conservare la stringa di data formattata e il parametro *lpDateStr* non viene utilizzato.
+Dimensione, in caratteri, del buffer *lpDateStr.* In alternativa, l'applicazione può impostare questo parametro su 0. In questo caso, la funzione restituisce il numero di caratteri necessari per contenere la stringa di data formattata e il *parametro lpDateStr* non viene usato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di caratteri scritti nel buffer *lpDateStr* in caso di esito positivo. Se il parametro *cchDate* è impostato su 0, la funzione restituisce il numero di caratteri necessari per conservare la stringa di data formattata, incluso il carattere null di terminazione.
+Restituisce il numero di caratteri scritti nel buffer *lpDateStr* in caso di esito positivo. Se il *parametro cchDate* è impostato su 0, la funzione restituisce il numero di caratteri necessari per contenere la stringa di data formattata, incluso il carattere Null di terminazione.
 
-Questa funzione restituisce 0 in caso di esito negativo. Per ottenere informazioni estese sull'errore, l'applicazione può chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), che può restituire uno dei codici di errore seguenti:
+Questa funzione restituisce 0 se non ha esito positivo. Per ottenere informazioni estese sull'errore, l'applicazione può chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), che può restituire uno dei codici di errore seguenti:
 
--   \_Data di errore non \_ compresa nell' \_ \_ intervallo. La data specificata non è compresa nell'intervallo.
--   ERRORE \_ \_ nel buffer insufficiente. Una dimensione del buffer specificata non è sufficientemente grande oppure è stata impostata erroneamente su **null**.
--   flag di errore \_ non validi \_ . I valori specificati per i flag non sono validi.
--   ERRORE \_ parametro non valido \_ . Uno dei valori di parametro non è valido.
+-   DATA \_ DI ERRORE NON COMPRESO \_ \_ \_ NELL'INTERVALLO. La data specificata non è in intervallo.
+-   ERRORE \_ BUFFER \_ INSUFFICIENTE. Le dimensioni del buffer specificate non erano sufficienti o non erano impostate in modo errato su **NULL.**
+-   ERRORE \_ FLAG NON \_ VALIDI. I valori forniti per i flag non sono validi.
+-   ERRORE \_ PARAMETRO \_ NON VALIDO. Uno dei valori dei parametri non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-La data meno recente supportata da questa funzione è il 1 gennaio 1601.
+La data meno recente supportata da questa funzione è il 1° gennaio 1601.
 
-A questa funzione non è associato un file di intestazione o un file di libreria. L'applicazione può chiamare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome della DLL (Kernel32.dll) per ottenere un handle del modulo. Può quindi chiamare [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con tale handle del modulo e il nome di questa funzione per ottenere l'indirizzo della funzione.
+A questa funzione non è associato un file di intestazione o un file di libreria. L'applicazione può chiamare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con il nome dll (Kernel32.dll) per ottenere un handle del modulo. Può quindi chiamare [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con l'handle del modulo e il nome di questa funzione per ottenere l'indirizzo della funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -136,8 +136,8 @@ A questa funzione non è associato un file di intestazione o un file di libreria
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl> |
 
 
@@ -146,16 +146,16 @@ A questa funzione non è associato un file di intestazione o un file di libreria
 
 <dl> <dt>
 
-[Supporto per lingua nazionale](national-language-support.md)
+[Supporto linguistico nazionale](national-language-support.md)
 </dt> <dt>
 
-[Funzioni di supporto del linguaggio nazionale](national-language-support-functions.md)
+[Funzioni di supporto linguistico nazionale](national-language-support-functions.md)
 </dt> <dt>
 
-[Immagini del formato giorno, mese, anno ed era](day--month--year--and-era-format-pictures.md)
+[Immagini in formato giorno, mese, anno ed era](day--month--year--and-era-format-pictures.md)
 </dt> <dt>
 
-[NLS: esempio di API basate su nome](nls--name-based-apis-sample.md)
+[NLS: Esempio di API basate sui nomi](nls--name-based-apis-sample.md)
 </dt> <dt>
 
 [**EnumDateFormatsExEx**](/windows/desktop/api/Winnls/nf-winnls-enumdateformatsexex)

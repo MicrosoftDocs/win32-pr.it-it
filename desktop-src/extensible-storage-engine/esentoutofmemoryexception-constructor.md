@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentOutOfMemoryException
+description: 'Altre informazioni su: Costruttore EsentOutOfMemoryException'
 title: Costruttore EsentOutOfMemoryException
 TOCTitle: 'EsentOutOfMemoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOutOfMemoryException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "119619891"
 
 Inizializza una nuova istanza della classe EsentOutOfMemoryException.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

@@ -1,10 +1,10 @@
 ---
-title: Set di proprietà Domain-other-Parameters
+title: Set di proprietà Domain-Other-Parameters
 description: Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 ms.assetid: 66c935c4-38cf-468a-b6e9-94541047c5e8
 ms.tgt_platform: multiple
 keywords:
-- Proprietà Domain-other-Parameters impostare AD schema
+- Domain-Other-Parameters property set AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9d5a7af10a2ade5ef4408c14c117678cd87a36b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c46c98e3077d2284a3143bb569ae706b3d81fa37439b1bf19d815d75eaca152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532431"
 ---
-# <a name="domain-other-parameters-property-set"></a>Set di proprietà Domain-other-Parameters
+# <a name="domain-other-parameters-property-set"></a>Set di proprietà Domain-Other-Parameters
 
 Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
@@ -28,8 +28,8 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |--------------|------------------------------------------|
-| CN           | Domain-other-Parameters                  |
-| Display-Name | Altri parametri di dominio (usati da SAM) |
+| CN           | Altri parametri di dominio                  |
+| Display-Name | Altri parametri di dominio (per l'uso da parte di SAM) |
 | Rights-GUID  | b8119fd0-04f6-4762-ab7a-4986c76b3f9a     |
 
 
@@ -48,9 +48,9 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localization-display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membri del set di proprietà    | [**Dominio-replica**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Modificato-conteggio**](a-modifiedcount.md)<br/> [**OEM-informazioni**](a-oeminformation.md)<br/> [**Ruolo server**](a-serverrole.md)<br/> [**Stato del server**](a-serverstate.md)<br/> [**UAS-compat**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membri del set di proprietà    | [**Replica di dominio**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Numero di modifiche**](a-modifiedcount.md)<br/> [**Informazioni OEM**](a-oeminformation.md)<br/> [**Ruolo del server**](a-serverrole.md)<br/> [**Stato server**](a-serverstate.md)<br/> [**Compatibilità UAS**](a-uascompat.md)<br/> |
 
 
 
@@ -60,9 +60,9 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localization-display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membri del set di proprietà    | [**Dominio-replica**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Modificato-conteggio**](a-modifiedcount.md)<br/> [**OEM-informazioni**](a-oeminformation.md)<br/> [**Ruolo server**](a-serverrole.md)<br/> [**Stato del server**](a-serverstate.md)<br/> [**UAS-compat**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membri del set di proprietà    | [**Replica di dominio**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Numero di modifiche**](a-modifiedcount.md)<br/> [**Informazioni OEM**](a-oeminformation.md)<br/> [**Ruolo del server**](a-serverrole.md)<br/> [**Stato server**](a-serverstate.md)<br/> [**Compatibilità UAS**](a-uascompat.md)<br/> |
 
 
 
@@ -72,9 +72,9 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localization-display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membri del set di proprietà    | [**Dominio-replica**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Modificato-conteggio**](a-modifiedcount.md)<br/> [**OEM-informazioni**](a-oeminformation.md)<br/> [**Ruolo server**](a-serverrole.md)<br/> [**Stato del server**](a-serverstate.md)<br/> [**UAS-compat**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membri del set di proprietà    | [**Replica di dominio**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Numero di modifiche**](a-modifiedcount.md)<br/> [**Informazioni OEM**](a-oeminformation.md)<br/> [**Ruolo del server**](a-serverrole.md)<br/> [**Stato server**](a-serverstate.md)<br/> [**Compatibilità UAS**](a-uascompat.md)<br/> |
 
 
 
@@ -84,9 +84,9 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localization-display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membri del set di proprietà    | [**Dominio-replica**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Modificato-conteggio**](a-modifiedcount.md)<br/> [**OEM-informazioni**](a-oeminformation.md)<br/> [**Ruolo server**](a-serverrole.md)<br/> [**Stato del server**](a-serverstate.md)<br/> [**UAS-compat**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membri del set di proprietà    | [**Replica di dominio**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Numero di modifiche**](a-modifiedcount.md)<br/> [**Informazioni OEM**](a-oeminformation.md)<br/> [**Ruolo del server**](a-serverrole.md)<br/> [**Stato server**](a-serverstate.md)<br/> [**Compatibilità UAS**](a-uascompat.md)<br/> |
 
 
 
@@ -96,9 +96,9 @@ Set di proprietà che consente il controllo a un elenco di attributi di dominio.
 
 | Voce | Valore |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localization-display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membri del set di proprietà    | [**Dominio-replica**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Modificato-conteggio**](a-modifiedcount.md)<br/> [**OEM-informazioni**](a-oeminformation.md)<br/> [**Ruolo server**](a-serverrole.md)<br/> [**Stato del server**](a-serverstate.md)<br/> [**UAS-compat**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membri del set di proprietà    | [**Replica di dominio**](a-domainreplica.md)<br/> [**Forza disconnessione**](a-forcelogoff.md)<br/> [**Numero di modifiche**](a-modifiedcount.md)<br/> [**Informazioni OEM**](a-oeminformation.md)<br/> [**Ruolo del server**](a-serverrole.md)<br/> [**Stato server**](a-serverstate.md)<br/> [**Compatibilità UAS**](a-uascompat.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Prev-site-Gates
-description: L'attributo MSMQ-Prev-site-Gates contiene informazioni in modalità mista MSMQ.
+title: Attributo MSMQ-Prev-Site-Gates
+description: L'attributo MSMQ-Prev-Site-Gates contiene informazioni in modalità mista MSMQ.
 ms.assetid: 117a4f7a-78dd-4efe-81fa-81fdc4eb5ce2
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-prec-site-Gates attributo AD schema
+- Schema AD dell'attributo MSMQ-Prev-Site-Gates
 - Schema AD dell'attributo mSMQPrevSiteGates
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30dca1c597e26d315ac3abd95eca578f65a0349d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcbd58cfdcb66a7d4d82270f071c1333f97e2982787f685d17d9eff615d3c7b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081825"
 ---
-# <a name="msmq-prev-site-gates-attribute"></a>Attributo MSMQ-Prev-site-Gates
+# <a name="msmq-prev-site-gates-attribute"></a>Attributo MSMQ-Prev-Site-Gates
 
-L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MSMQ.
+**L'attributo MSMQ-Prev-Site-Gates** contiene informazioni in modalità mista MSMQ.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-prec-site-Gates                    |
-| LDAP-Display-Name | mSMQPrevSiteGates                       |
+| CN                | MSMQ-Prev-Site-Gates                    |
+| Ldap-Display-Name | mSMQPrevSiteGates                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1225                 |
-| System-ID-GUID    | 2df90d75-009f-11d2-aa4c-00c04fd7d83a    |
+| System-Id-Guid    | 2df90d75-009f-11d2-aa4c-00c04fd7d83a    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **MSMQ-Prev-site-Gates** contiene informazioni in modalità mista MS
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

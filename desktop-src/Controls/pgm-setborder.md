@@ -1,9 +1,9 @@
 ---
-title: Messaggio PGM_SETBORDER (COMmctrl. h)
-description: Imposta la dimensione corrente del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro pager di pager \_ .
+title: PGM_SETBORDER messaggio (Commctrl.h)
+description: Imposta le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Pager SetBorder.
 ms.assetid: 073a1f9e-f05b-4203-9035-8106e87e55cd
 keywords:
-- Controlli di Windows Message PGM_SETBORDER
+- PGM_SETBORDER di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a987246a56da213098ba8632044af97ae51462df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c44433189c9d791aba1d50372176309682c1361c5b0efe31b11aaa99e9b322b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540531"
 ---
-# <a name="pgm_setborder-message"></a>\_Messaggio di DEBORDO PGM
+# <a name="pgm_setborder-message"></a>Messaggio PGM \_ SETBORDER
 
-Imposta la dimensione corrente del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o [**usare \_ la macro pager di pager**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setborder) .
+Imposta le dimensioni correnti del bordo per il controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Pager SetBorder.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_setborder)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Imposta la dimensione corrente del bordo per il controllo pager. È possibile in
 *lParam* 
 </dt> <dd>
 
-Nuove dimensioni del bordo, in pixel. Il valore non deve essere maggiore del pulsante cercapersone o minore di zero. Se *lParam* è troppo grande, il bordo verrà disegnato con le stesse dimensioni del pulsante. Se *lParam* è negativo, la dimensione del bordo verrà impostata su zero.
+Nuova dimensione del bordo, in pixel. Questo valore non deve essere maggiore del pulsante del pager o minore di zero. Se *lParam* è troppo grande, il bordo verrà disegnato con le stesse dimensioni del pulsante. Se *lParam* è negativo, le dimensioni del bordo verranno impostate su zero.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Restituisce un valore INT che contiene le dimensioni del bordo precedenti, in pi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

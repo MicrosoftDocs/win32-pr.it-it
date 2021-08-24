@@ -1,11 +1,11 @@
 ---
-title: Metodo getinclusion IWMDRMLicense (wmdrmsdk. h)
-description: Il metodo getinclusivion recupera l'intero elenco di inclusione per la licenza o la catena di licenze corrente.
+title: Metodo IWMDRMLicense GetInclusionList (Wmdrmsdk.h)
+description: Il metodo GetInclusionList recupera l'intero elenco di inclusione per la licenza o la catena di licenze corrente.
 ms.assetid: a3cb70c5-7d20-413c-aeb8-66c9233b384e
 keywords:
-- Formato di Windows Media (metodo getinclusiont)
-- Metodo getincludent Windows Media Format, interfaccia IWMDRMLicense
-- Interfaccia IWMDRMLicense-formato Windows Media, metodo getinclusivion
+- Metodo GetInclusionList per Windows Media Format
+- Metodo GetInclusionList windows Media Format , interfaccia IWMDRMLicense
+- Interfaccia IWMDRMLicense windows Media Format, metodo GetInclusionList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f0d2837a4bb84c07214cce3e4fbc3d4d96b9583
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6389ac30d5bffeb6ad354ec6c7e83f2834921fe8fb83c1abe2bca2d0c2f43bfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705241"
 ---
-# <a name="iwmdrmlicensegetinclusionlist-method"></a>Metodo IWMDRMLicense:: getinclusivion
+# <a name="iwmdrmlicensegetinclusionlist-method"></a>Metodo IWMDRMLicense::GetInclusionList
 
-Il metodo **Getinclusivion** recupera l'intero elenco di inclusione per la licenza o la catena di licenze corrente.
+Il **metodo GetInclusionList** recupera l'intero elenco di inclusione per la licenza o la catena di licenze corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,29 +44,29 @@ HRESULT GetInclusionList(
 
 <dl> <dt>
 
-*ppGuids* \[ out\]
+*ppGuids* \[ Cambio\]
 </dt> <dd>
 
-Riceve una matrice di GUID che identifica le tecnologie incluse.
+Riceve una matrice di GUID che identificano le tecnologie incluse.
 
 </dd> <dt>
 
-*pcGuids* \[ out\]
+*pcGuids* \[ Cambio\]
 </dt> <dd>
 
-Riceve il numero di elementi nella matrice *ppGuids* . La matrice viene allocata usando **CoTaskMemAlloc**. Al termine dell'elenco, rilasciare la memoria chiamando **CoTaskMemFree**.
+Riceve il numero di elementi nella *matrice ppGuids.* La matrice viene allocata usando **CoTaskMemAlloc.** Al termine dell'elenco, rilasciare la memoria chiamando **CoTaskMemFree.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -74,7 +74,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-L'emittente della licenza può specificare altri sistemi di protezione in cui è possibile convertire il contenuto crittografato. L'elenco di GUID recuperato da questo metodo identifica i sistemi di protezione consentiti. Quando si immette in un contratto di licenza con Microsoft per ottenere la libreria stub, si riceverà un elenco dei sistemi di protezione attualmente supportati e i GUID usati per identificarli.
+L'emittente della licenza può specificare altri sistemi di protezione in cui è possibile convertire il contenuto crittografato. L'elenco di GUID recuperati da questo metodo identifica i sistemi di protezione consentiti. Quando si entra in un contratto di licenza con Microsoft per ottenere la libreria stub, si riceverà un elenco dei sistemi di protezione attualmente supportati e dei GUID usati per identificarli.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ L'emittente della licenza può specificare altri sistemi di protezione in cui è
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ L'emittente della licenza può specificare altri sistemi di protezione in cui è
 
 <dl> <dt>
 
-[**Elenchi di inclusione e autorizzazione esplicita**](explicit-authorization-and-inclusion-lists.md)
+[**Elenchi di autorizzazione e inclusione espliciti**](explicit-authorization-and-inclusion-lists.md)
 </dt> <dt>
 
 [**Interfaccia IWMDRMLicense**](iwmdrmlicense.md)

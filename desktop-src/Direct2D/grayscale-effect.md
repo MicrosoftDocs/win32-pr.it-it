@@ -1,5 +1,5 @@
 ---
-title: Effetto scala di grigi
+title: Effetto Gradazioni di grigio
 description: Converte un'immagine in grigio monocromatico.
 ms.assetid: 4e0b26ed-ba71-5f8f-db1e-f1b4e28fbd11
 ms.topic: article
@@ -11,24 +11,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119075336"
 ---
-# <a name="grayscale-effect"></a>Effetto scala di grigi
+# <a name="grayscale-effect"></a>Effetto Gradazioni di grigio
 
 Converte un'immagine in grigio monocromatico.
 
-Scala di grigi usa l'effetto matrice di colori per la conversione in scala di grigi, usando la matrice seguente:
+La scala di grigi usa l'effetto matrice di colori per la conversione in scala di grigi, usando la matrice seguente:
 
 ![matrice di conversione](images/grayscale-effect-matrix.png)
 
 Il CLSID per questo effetto è CLSID \_ D2D1Grayscale.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà dell'effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![Esempio di output dell'effetto](images/grayscale-effect.png)
+![esempio di output dell'effetto](images/grayscale-effect.png)
 
 ## <a name="effect-properties"></a>Proprietà degli effetti
 
@@ -40,8 +40,8 @@ Questo effetto non ha proprietà.
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
-| Server minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
 | Intestazione                   | d2d1effects \_ 2.h                                  |
 | Libreria                  | d2d1.lib, dxguid.lib                              |
 

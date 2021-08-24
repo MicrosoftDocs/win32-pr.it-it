@@ -1,7 +1,7 @@
 ---
-description: Specifica se uno stile non colore presenta lo stile corsivo.
+description: Specifica se uno stile non a colori ha lo stile corsivo.
 ms.assetid: 4295c0b1-6e37-4fa9-9015-68bcc4784cda
-title: FItalicIMEStyle (funzione)
+title: Funzione FItalicIMEStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 828e701773d666830473e92afc73f80ccdae3bc3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8160edf46b97544ef27558bf15a8a58e447e78a0e0709432aea840f4567bc0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076115"
 ---
-# <a name="fitalicimestyle-function"></a>FItalicIMEStyle (funzione)
+# <a name="fitalicimestyle-function"></a>Funzione FItalicIMEStyle
 
-Specifica se uno stile non colore presenta lo stile corsivo.
+Specifica se uno stile non a colori ha lo stile corsivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ BOOL __cdecl FItalicIMEStyle(
 
 <dl> <dt>
 
-*pimestyle* \[ in\]
+*pimestyle* \[ Pollici\]
 </dt> <dd>
 
-Struttura **IMESTYLE** restituita dalla funzione [**PIMEStyleFromAttr**](pimestylefromattr.md) .
+Struttura **IMESTYLE** restituita dalla [**funzione PIMEStyleFromAttr.**](pimestylefromattr.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se lo stile ha lo stile corsivo.
+**TRUE** se lo stile ha lo stile corsivo.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

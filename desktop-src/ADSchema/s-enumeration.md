@@ -4,7 +4,7 @@ description: Sintassi di enumerazione (meccanismo di recapito). | Sintassi di en
 ms.assetid: 26779fc3-de38-42c4-9e8a-21af6f01f123
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD della sintassi di enumerazione
+- Sintassi di enumerazione - Schema DI ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af3fea99075399dcea2afa7ace40f0dbae57b01f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71967dec6415e08de6534be547cad039aa2ba8182d428f50346c6398f1583516
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104530637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530691"
 ---
 # <a name="enumeration-syntax"></a>Sintassi di enumerazione
 
@@ -30,17 +30,17 @@ Sintassi di enumerazione (meccanismo di recapito).
 |--------------|---------------------------------------------------------------------------|
 | Nome         | Enumerazione                                                               |
 | ID sintassi    | 2.5.5.9                                                                   |
-| ID OM        | 10                                                                        |
+| OM ID        | 10                                                                        |
 | Tipo MAPI    | LONG                                                                      |
-| Tipo di annunci     | ADSTYPE \_ Integer                                                          |
-| Tipo Variant | VT \_ I4                                                                    |
+| Tipo ADS     | ADSTYPE \_ INTEGER                                                          |
+| Tipo variant | VT \_ I4                                                                    |
 | Tipo SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Definito da ITU. Active Directory lo considera come un numero intero.
+Definito dall'ITU. Active Directory lo considera come un numero intero.
 
 ## <a name="see-also"></a>Vedi anche
 

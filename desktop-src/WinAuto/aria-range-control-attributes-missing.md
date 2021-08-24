@@ -1,23 +1,23 @@
 ---
-title: Attributi controllo intervallo ARIA mancanti
-description: Attributi controllo intervallo ARIA mancanti
+title: Attributi di controllo dell'intervallo ARIA mancanti
+description: Attributi di controllo dell'intervallo ARIA mancanti
 ms.assetid: B79F6277-5339-406A-B5FC-A3657BFC5034
 keywords:
 - AriaRangeControlAttributesAbsentId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f8cd32a7a4807f06c26bd013ee3fd294d33cc57
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: b44e4e5c69ea6971846ed9ef5f3a6108bb488c6effb21a6cbc75953ed1bb780e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104047529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645120"
 ---
-# <a name="aria-range-control-attributes-missing"></a>Attributi controllo intervallo ARIA mancanti
+# <a name="aria-range-control-attributes-missing"></a>Attributi di controllo dell'intervallo ARIA mancanti
 
 ## <a name="text"></a>Testo
 
-L'elemento ha un ruolo **ProgressBar** o **Slider** ma non espone gli attributi **aria-valuemin** , **aria-valuemax** e **aria-valuenow** corrispondenti.
+L'elemento ha  **il ruolo** di indicatore di stato o dispositivo di scorrimento, ma non espone gli attributi **aria-valuemin** , **aria-valuemax** e **aria-valuenow** corrispondenti.
 
 ## <a name="type"></a>Tipo
 
@@ -25,11 +25,11 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Questo errore si applica a elementi con un [**ruolo**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implicito o esplicito) uguale a **ProgressBar**, **Slider** o **SpinButton**.
+Questo errore si applica agli elementi con un [**ruolo**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implicito o esplicito) uguale all'indicatore di stato **,** al dispositivo di **scorrimento** o al pulsante **di selezione**.
 
-Secondo le specifiche delle applicazioni Internet (WAI-ARIA) accessibili per Web Accessibility Initiative, gli elementi che hanno il ruolo **ProgressBar**, **Slider** o **SpinButton** devono esporre gli attributi [**aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) .
+In base alla specifica WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications), gli elementi con il ruolo indicatore di **stato,** dispositivo di scorrimento o **pulsante** di selezione devono esporre gli attributi [**aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow.**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)
 
-Per correggere l'errore, impostare gli [**attributi aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) e mantenere dinamicamente il valore **aria-valuenow** per assicurarsi che il valore corrente venga esposto. È anche necessario impostare l'attributo [**aria-ValueText**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) per aggiungere altro significato al valore **aria-valuenow** esposto.
+Per correggere l'errore, impostare gli attributi [**aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) e mantenere dinamicamente il valore **aria-valuenow** per assicurarsi che il valore corrente sia esposto. È anche necessario impostare [**l'attributo aria-valuetext**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) per aggiungere più significato al **valore aria-valuenow** esposto.
 
 ## <a name="example"></a>Esempio
 
@@ -56,12 +56,12 @@ Per correggere l'errore, impostare gli [**attributi aria-valuemax**](https://dev
 
 <dl> <dt>
 
-[Attributi di controllo intervallo ARIA incompatibili](aria-range-control-attribute-out-of-range.md)
+[Attributi di controllo dell'intervallo ARIA incompatibili](aria-range-control-attribute-out-of-range.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

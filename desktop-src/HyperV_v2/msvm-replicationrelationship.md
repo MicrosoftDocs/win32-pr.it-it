@@ -1,7 +1,7 @@
 ---
-description: Rappresenta lo stato della replica per una relazione di replica.
+description: Rappresenta lo stato di replica per una relazione di replica.
 ms.assetid: F11EFF86-5CC9-4310-8254-B310C54B561D
-title: Classe Msvm_ReplicationRelationship
+title: Msvm_ReplicationRelationship classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 04665f96f4ec77501ee0b161d816c84943ca2c98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8ff905475863df11c6fb6529f030f73a4f1b785792be4c5fe8c7ce1142096c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068481"
 ---
-# <a name="msvm_replicationrelationship-class"></a>\_Classe MSVM ReplicationRelationship
+# <a name="msvm_replicationrelationship-class"></a>Classe Msvm \_ ReplicationRelationship
 
-Rappresenta lo stato della replica per una relazione di replica. Poiché è possibile avere più repliche per ogni macchina virtuale di replica, è possibile usare questa classe per identificare ogni relazione di replica.
+Rappresenta lo stato di replica per una relazione di replica. Poiché è possibile avere più repliche per ogni macchina virtuale di replica, è possibile usare questa classe per identificare ogni relazione di replica.
 
 La sintassi seguente è semplificata dal codice MOF e include queste proprietà ereditate.
 
@@ -53,20 +53,20 @@ class Msvm_ReplicationRelationship : CIM_ManagedSystemElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ ReplicationRelationship di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ReplicationRelationship** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ReplicationRelationship di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ReplicationRelationship** ha queste proprietà.
 
 <dl> <dt>
 
 **FailedOverReplicationType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -92,7 +92,7 @@ Tipo di failover eseguito per la relazione di replica.
 
 <span id="Application_consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-**Coerente** con l'applicazione (2)
+**Coerente con l'applicazione** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -109,68 +109,68 @@ Tipo di failover eseguito per la relazione di replica.
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceId")
+Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
-Identifica la relazione di replica. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica la relazione di replica. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
-Il formato di questa proprietà è il seguente:
+Questa proprietà ha il formato seguente:
 
 **Microsoft: <vmid> \\ HVR \\<0/1>**
 
-0 indica primario e 1 indica la [replica estesa](#extended-replication).
+0 indica la replica primaria e 1 indica [la replica estesa.](#extended-replication)
 
 </dd> <dt>
 
 **LastApplicationConsistentReplicationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora in cui l'ultima replica coerente con l'applicazione viene ricevuta durante il ripristino per la relazione di replica.
+Data e ora in cui l'ultima replica coerente dell'applicazione viene ricevuta al ripristino per la relazione di replica.
 
 </dd> <dt>
 
 **LastApplyTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora in cui l'ultima replica viene applicata al recupero per la relazione di replica.
+Data e ora in cui viene applicata l'ultima replica al ripristino per la relazione di replica.
 
 </dd> <dt>
 
 **LastReplicationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora in cui l'ultima replica viene ricevuta durante il ripristino per la relazione di replica.
+Data e ora in cui viene ricevuta l'ultima replica al momento del ripristino per la relazione di replica.
 
 </dd> <dt>
 
 **LastReplicationType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -196,7 +196,7 @@ Tipo dell'ultima replica ricevuta per la relazione di replica.
 
 <span id="Application_consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-**Coerente** con l'applicazione (2)
+**Coerente con l'applicazione** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -210,10 +210,10 @@ Tipo dell'ultima replica ricevuta per la relazione di replica.
 
 </dd> <dt>
 
-**ReplicationHealth**
+**Replicationhealth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -232,7 +232,7 @@ Integrità della replica per la relazione di replica.
 
 <span id="Ok"></span><span id="ok"></span><span id="OK"></span>
 
-**OK** (1)
+**Ok** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -256,13 +256,13 @@ Integrità della replica per la relazione di replica.
 **ReplicationState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di replica per la relazione di replica.
+Stato della replica per la relazione di replica.
 
 <dt>
 
@@ -289,7 +289,7 @@ Stato di replica per la relazione di replica.
 
 <span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>
 
-<span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>**Replica** in corso (3)
+<span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>**Replica** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -303,14 +303,14 @@ Stato di replica per la relazione di replica.
 
 <span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>
 
-<span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>**Ripristino** (5)
+<span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>**Recuperato** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-<span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>**Commit eseguito** (6)
+<span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>**Commit** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -331,7 +331,7 @@ Stato di replica per la relazione di replica.
 
 <span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>
 
-<span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>**In attesa dell'avvio della risincronizzazione** (9)
+<span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>**In attesa di avviare la risincronizzazione** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -379,7 +379,7 @@ Stato di replica per la relazione di replica.
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -393,7 +393,7 @@ Stato di replica per la relazione di replica.
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -407,7 +407,7 @@ Stato di replica per la relazione di replica.
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -415,13 +415,13 @@ Stato di replica per la relazione di replica.
 
 <span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>
 
-<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Riutilizzo della replica in corso** (18)
+<span id="Repurpose_replication_in_progress"></span><span id="repurpose_replication_in_progress"></span><span id="REPURPOSE_REPLICATION_IN_PROGRESS"></span>**Riuso della replica in corso** (18)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -435,7 +435,7 @@ Stato di replica per la relazione di replica.
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -443,13 +443,13 @@ Stato di replica per la relazione di replica.
 
 <span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>
 
-<span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>**Preparato per la replica inversa del gruppo** (20)
+<span id="Prepared_for_group_reverse_replication"></span><span id="prepared_for_group_reverse_replication"></span><span id="PREPARED_FOR_GROUP_REVERSE_REPLICATION"></span>**Preparato per la replica inversa di** gruppo (20)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -457,13 +457,13 @@ Stato di replica per la relazione di replica.
 
 <span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>
 
-<span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>**FireDrill in corso** (21)
+<span id="Firedrill_in_progress"></span><span id="firedrill_in_progress"></span><span id="FIREDRILL_IN_PROGRESS"></span>**Firedrill in corso** (21)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -475,9 +475,9 @@ Stato di replica per la relazione di replica.
 
 ### <a name="extended-replication"></a>Replica estesa
 
-La funzionalità di replica Hyper-V in Windows 8 consente la replica efficiente delle macchine virtuali in esecuzione in un server Hyper-V nel sito primario in un altro server Hyper-V nel sito secondario.
+La funzionalità di replica Hyper-V in Windows 8 consente alle macchine virtuali eseguite in un server Hyper-V nel sito primario di essere replicate in modo efficiente in un altro server Hyper-V nel sito secondario.
 
-La funzionalità di replica Hyper-V in Windows 8.1 consente a un utente di estendere la relazione di replica dal sito secondario a un terzo sito. Il terzo sito può essere un host Hyper-V di cui è stato eseguito il pre-provisioning come un server di ripristino o un provider di replica esterno.
+La funzionalità di replica Hyper-V in Windows 8.1 consente a un utente di estendere la relazione di replica dal sito secondario in poi a un terzo sito. Il terzo sito può essere un host Hyper-V di cui è stato eseguito il pre-provisioning come server di ripristino o provider di replica esterno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -485,10 +485,10 @@ La funzionalità di replica Hyper-V in Windows 8.1 consente a un utente di esten
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -497,10 +497,10 @@ La funzionalità di replica Hyper-V in Windows 8.1 consente a un utente di esten
 
 <dl> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](cim-managedsystemelement.md)
+[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md)
 </dt> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+[**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 </dt> </dl>
 
  

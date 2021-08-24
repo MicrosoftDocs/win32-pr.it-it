@@ -1,5 +1,5 @@
 ---
-description: Il Metodo IsEnabled della \_ classe TPM Win32 indica se il dispositivo è abilitato. Questo valore può essere modificato dai metodi Enable e Disable.
+description: Il metodo IsEnabled della classe \_ Win32 Tpm indica se il dispositivo è abilitato. Questo valore può essere modificato dai metodi Enable e Disable.
 ms.assetid: e1d5513f-33eb-49e3-9582-d6c103ca5d03
 title: Metodo IsEnabled della classe Win32_Tpm
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: d808bb68e53b1a24ff668d1b7a9680b5d57b5e9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d61c96d9c80ae77f9869261905fb93461530b452deaf7a4709b394623a3dfab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667501"
 ---
-# <a name="isenabled-method-of-the-win32_tpm-class"></a>Metodo IsEnabled della \_ classe TPM Win32
+# <a name="isenabled-method-of-the-win32_tpm-class"></a>Metodo IsEnabled della classe \_ Win32 Tpm
 
-Il metodo **IsEnabled** della classe [**\_ TPM Win32**](win32-tpm.md) indica se il dispositivo è abilitato. Questo valore può essere modificato dai metodi [**Enable**](enable-win32-tpm.md) e [**Disable**](disable-win32-tpm.md) .
+Il **metodo IsEnabled** della [**classe Win32 \_ Tpm**](win32-tpm.md) indica se il dispositivo è abilitato. Questo valore può essere modificato dai [**metodi Enable**](enable-win32-tpm.md) [**e Disable.**](disable-win32-tpm.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ uint32 IsEnabled(
 
 <dl> <dt>
 
-*IsEnabled* \[ out\]
+*IsEnabled* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Se **true**, il dispositivo è abilitato.
+Se **true,** il dispositivo è abilitato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici dei servizi di base TPM.
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi di base TPM.
 
 I codici restituiti comuni sono elencati di seguito.
 
@@ -68,33 +68,33 @@ I codici restituiti comuni sono elencati di seguito.
 
 ## <a name="remarks"></a>Commenti
 
-In base alla specifica Trusted Computing Group (TCG) v 1.2 sono disponibili solo i comandi seguenti quando il dispositivo è in uno stato disattivato.
+In base alla specifica Trusted Computing Group (TCG) v1.2, sono disponibili solo i comandi seguenti quando il dispositivo è in stato disattivato.
 
--   \_CONTINUESELFTEST TPM
--   \_DSAP TPM
--   \_FLUSHSPECIFIC TPM
--   Getfunzionalità TPM \_
--   \_GETTESTRESULT TPM
--   \_Init TPM
--   \_OIAP TPM
--   \_OSAP TPM
--   \_OWNERSETDISABLE TPM
--   \_Reimpostazione PCR TPM \_
--   \_PHYSICALDISABLE TPM
--   \_PHYSICALENABLE TPM
--   \_PHYSICALSETDEACTIVATED TPM
--   \_Ripristino TPM
--   \_SAVESTATE TPM
--   \_SELFTESTFULL TPM
--   Funzionalità del TPM \_
--   \_SHA1COMPLETE TPM
--   \_SHA1START TPM
--   \_SHA1UPDATE TPM
--   \_Avvio TPM
--   \_TAKEOWNERSHIP TPM
--   \_Handle di terminazione TPM \_
+-   TPM \_ ContinueSelfTest
+-   TPM \_ DSAP
+-   TPM \_ FlushSpecific
+-   TPM \_ GetCapability
+-   TPM \_ GetTestResult
+-   TPM \_ Init
+-   TPM \_ OIAP
+-   TPM \_ OSAP
+-   OwnerSetDisable del TPM \_
+-   Reimpostazione PCR TPM \_ \_
+-   TPM \_ PhysicalDisable
+-   TPM \_ PhysicalEnable
+-   TPM \_ PhysicalSetDeactivated
+-   Reimpostazione \_ TPM
+-   TPM \_ SaveState
+-   TPM \_ SelfTestFull
+-   TPM \_ SetCapability
+-   TPM \_ SHA1Complete
+-   TPM \_ SHA1Start
+-   TPM \_ SHA1Update
+-   Avvio \_ TPM
+-   Proprietà \_ TakeOwnership TPM
+-   Handle di terminazione TPM \_ \_
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,11 +102,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                            |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                      |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> <dt>
 
 [**Disabilita**](disable-win32-tpm.md)

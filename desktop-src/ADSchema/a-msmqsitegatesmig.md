@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-site-Gates-MIG
-description: In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
+title: Attributo MSMQ-Site-Gates-Mig
+description: In modalità mista MSMQ, valore precedente di mSMQSiteGates.
 ms.assetid: d9a89b2d-c400-45ea-a063-7c615228b8e5
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-site-Gates-schema AD dell'attributo MIG
+- Schema AD dell'attributo MSMQ-Site-Gates-Mig
 - Schema AD dell'attributo mSMQSiteGatesMig
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73b8afdee3c1e96f171651c454fd0b29bfbefbd5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7b71c43cc954c34dbc5500d4f39bef15c0dbd12f64ca33998cdb1eb7f955a379
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582291"
 ---
-# <a name="msmq-site-gates-mig-attribute"></a>Attributo MSMQ-site-Gates-MIG
+# <a name="msmq-site-gates-mig-attribute"></a>Attributo MSMQ-Site-Gates-Mig
 
-In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
+In modalità mista MSMQ, valore precedente di mSMQSiteGates.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-site-Gates-MIG                     |
-| LDAP-Display-Name | mSMQSiteGatesMig                        |
+| CN                | MSMQ-Site-Gates-Mig                     |
+| Ldap-Display-Name | mSMQSiteGatesMig                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1310                 |
-| System-ID-GUID    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
+| System-Id-Guid    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ In modalità mista MSMQ, il valore precedente di mSMQSiteGates.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

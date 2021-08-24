@@ -1,7 +1,7 @@
 ---
-description: Gestisce le funzionalità dell'istanza CIM \_ ResourcePoolConfigurationService per un oggetto CIM \_ ResourcePool.
+description: Gestisce le funzionalità dell'istanza di CIM \_ ResourcePoolConfigurationService per un oggetto \_ CiM ResourcePool.
 ms.assetid: bd2eb4da-8ecd-4adb-b657-837c8da4dcdc
-title: Classe CIM_ResourcePoolConfigurationCapabilities
+title: CIM_ResourcePoolConfigurationCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 967b307049fa9c5f81b8deb6da96bcaa3be9acc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61d4154f6400c94827b5b8561e70e547235b59502a51a03e9bd9cfdb83515fa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561841"
 ---
-# <a name="cim_resourcepoolconfigurationcapabilities-class"></a>CIM \_ ResourcePoolConfigurationCapabilities (classe)
+# <a name="cim_resourcepoolconfigurationcapabilities-class"></a>Classe CIM \_ ResourcePoolConfigurationCapabilities
 
-Gestisce le funzionalità dell'istanza [**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md) per un oggetto [**CIM \_ ResourcePool**](cim-resourcepool.md) .
+Gestisce le funzionalità [**dell'istanza di CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md) per un [**oggetto \_ CiM ResourcePool.**](cim-resourcepool.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ class CIM_ResourcePoolConfigurationCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ResourcePoolConfigurationCapabilities** presenta questi tipi di membri:
+La **classe CIM \_ ResourcePoolConfigurationCapabilities** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ResourcePoolConfigurationCapabilities** dispone di queste proprietà.
+La **classe CIM \_ ResourcePoolConfigurationCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,14 +106,14 @@ Metodi del servizio di configurazione supportati per le operazioni asincrone.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -123,7 +123,7 @@ Metodi del servizio di configurazione supportati per le operazioni asincrone.
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt32**
+Tipo di dati: **matrice uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -177,14 +177,14 @@ Metodi del servizio di configurazione supportati per le operazioni sincrone.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Fornitore riservato** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -198,9 +198,9 @@ Metodi del servizio di configurazione supportati per le operazioni sincrone.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -209,7 +209,7 @@ Metodi del servizio di configurazione supportati per le operazioni sincrone.
 
 <dl> <dt>
 
-[**\_Funzionalità CIM**](cim-capabilities.md)
+[**Funzionalità \_ CIM**](cim-capabilities.md)
 </dt> </dl>
 
  

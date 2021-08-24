@@ -1,5 +1,5 @@
 ---
-description: La classe CIM ConnectedTo rappresenta un'associazione che indica che due o più \_ connettori fisici sono connessi.
+description: La classe CIM \_ ConnectedTo rappresenta un'associazione che indica che due o più connettori fisici sono connessi.
 ms.assetid: fedd9227-8a3b-461a-995b-08cbceb81181
 ms.tgt_platform: multiple
 title: CIM_ConnectedTo classe
@@ -28,7 +28,7 @@ ms.locfileid: "119080845"
 La **classe CIM \_ ConnectedTo** rappresenta un'associazione che indica che due o più connettori fisici sono connessi.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -91,11 +91,11 @@ Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dip
 
 ## <a name="remarks"></a>Commenti
 
-La **classe CIM \_ ConnectedTo** viene ereditata da [**CIM \_ Dependency**](cim-dependency.md).
+La **classe CIM \_ ConnectedTo** viene ereditata dalla [**dipendenza CIM \_**](cim-dependency.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

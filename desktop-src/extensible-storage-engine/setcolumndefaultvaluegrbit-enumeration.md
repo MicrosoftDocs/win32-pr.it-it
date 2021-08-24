@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione SetColumnDefaultValueGrbit'
+description: Altre informazioni sull'enumerazione SetColumnDefaultValueGrbit
 title: Enumerazione SetColumnDefaultValueGrbit
 TOCTitle: SetColumnDefaultValueGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SetColumnDefaultValueGrbit
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 33a84328c95feda50bb7a3b4b04bb9b61eb86632
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5cecc11f578253392c4b4fcec9bd5247b918bb3f38e1e1856c8c093e40c86f95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107255"
 ---
 # <a name="setcolumndefaultvaluegrbit-enumeration"></a>Enumerazione SetColumnDefaultValueGrbit
 
-Opzioni per [JetSetColumnDefaultValue (JET_SESID, JET_DBID, String, String, \[ \] , Int32, SetColumnDefaultValueGrbit)](./api.jetsetcolumndefaultvalue-method.md).
+Opzioni per [JetSetColumnDefaultValue(JET_SESID, JET_DBID, String, String, \[ \] , Int32, SetColumnDefaultValueGrbit)](./api.jetsetcolumndefaultvalue-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,4 +81,4 @@ public enum SetColumnDefaultValueGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

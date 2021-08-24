@@ -1,21 +1,21 @@
 ---
 title: Come ottenere l'ultimo set di intestazioni HTTP ricevute per ogni file in un processo di download BITS
-description: Questo esempio illustra come usare il nuovo metodo GetProperty dell'interfaccia IBackgroundCopyJob5 per ottenere le ultime intestazioni HTTP del set ricevute per ogni file in un processo di download Servizio trasferimento intelligente in background (BITS).
+description: Questo esempio illustra come usare il nuovo metodo GetProperty dell'interfaccia IBackgroundCopyJob5 per ottenere le ultime intestazioni HTTP impostate ricevute per ogni file in un processo di download Servizio trasferimento intelligente in background (BITS).
 ms.assetid: 38808AB2-0D7A-46C6-A666-F3E0DB8A3009
 keywords:
-- download BITS, intestazione HTTP
+- download di BITS, intestazione HTTP
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 0b7858d5b2467f52681b325e2bfbe65b96889e0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92e9fe2c1671d26854da119938b426bc662324fe701d7f24d1885ff7b88e2df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528530"
 ---
 # <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a>Come ottenere l'ultimo set di intestazioni HTTP ricevute per ogni file in un processo di download BITS
 
-Questo esempio illustra come usare il nuovo metodo [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) dell'interfaccia [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) per ottenere le ultime intestazioni HTTP del set ricevute per ogni file in un processo di download servizio trasferimento intelligente in background (BITS). Le informazioni contenute nell'intestazione HTTP possono essere utilizzate, ad esempio, per determinare il tipo di file o la data dell'Ultima modifica nel server. Prima di Windows 8 e Windows Server 2012, BITS non forniva un mezzo tramite il quale l'applicazione poteva recuperare e controllare le intestazioni di risposta HTTP di un download completato. Questo esempio illustra come usare l'API BITS per creare un processo BITS con più URL da scaricare, elencare gli URL in un processo e recuperare le intestazioni di risposta HTTP per ogni URL.
+Questo esempio illustra come usare il nuovo metodo [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) dell'interfaccia [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) per ottenere le ultime intestazioni HTTP impostate ricevute per ogni file in un processo di download Servizio trasferimento intelligente in background (BITS). Le informazioni nell'intestazione HTTP possono essere utilizzate, ad esempio, per determinare il tipo di file o l'ultima modifica nel server. Prima di Windows 8 e Windows Server 2012, BITS non offriva un modo in cui l'applicazione poteva recuperare e controllare le intestazioni di risposta HTTP di un download completato. Questo esempio illustra come usare l'API BITS per creare un processo BITS con più URL da scaricare, elencare gli URL in un processo e recuperare le intestazioni di risposta HTTP per ogni URL.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
@@ -27,9 +27,9 @@ Questo esempio illustra come usare il nuovo metodo [**GetProperty**](/windows/de
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-include-the-required-bits-header-files"></a>Passaggio 1: includere i file di intestazione BITS necessari
+### <a name="step-1-include-the-required-bits-header-files"></a>Passaggio 1: Includere i file di intestazione BITS necessari
 
-Inserire le direttive header seguenti all'inizio del file di origine.
+Inserire le direttive di intestazione seguenti all'inizio del file di origine.
 
 
 ```C++
@@ -38,9 +38,9 @@ Inserire le direttive header seguenti all'inizio del file di origine.
 
 
 
-### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Passaggio 2: inizializzare COM e creare un'istanza di un'interfaccia dell'oggetto gestione copia in background BITS
+### <a name="step-2-initialize-com-and-instantiate-a-bits-background-copy-manager-object-interface"></a>Passaggio 2: Inizializzare COM e creare un'istanza di un'interfaccia oggetto di Gestione copia in background BITS
 
-Prima di creare un'istanza dell'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (utilizzata per creare un processo BITS), è necessario inizializzare com e impostare il modello di threading COM desiderato.
+Prima di creare un'istanza dell'interfaccia [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) (usata per creare un processo BITS), è necessario inizializzare COM e impostare il modello di threading COM desiderato.
 
 
 ```C++
@@ -60,7 +60,7 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="step-3-create-the-bits-job"></a>Passaggio 3: creare il processo BITS
+### <a name="step-3-create-the-bits-job"></a>Passaggio 3: Creare il processo BITS
 
 Solo l'utente che crea il processo o un utente con privilegi di amministratore può aggiungere file al processo e modificare le proprietà del processo.
 
@@ -77,9 +77,9 @@ hr = pManager->CreateJob(L"TransferPolicy",
 
 
 
-### <a name="step-4-add-the-files-to-the-bits-job"></a>Passaggio 4: aggiungere i file al processo BITS
+### <a name="step-4-add-the-files-to-the-bits-job"></a>Passaggio 4: Aggiungere i file al processo BITS
 
-Nell'esempio seguente vengono scaricati i documenti disponibili pubblicamente dall'area download Microsoft. Sarà necessario modificare questi valori per l'ambiente specifico.
+L'esempio seguente scarica i documenti disponibili pubblicamente dall'Area download Microsoft. Sarà necessario modificare questi valori per l'ambiente specifico.
 
 
 ```C++
@@ -114,9 +114,9 @@ for (int i=0; i < ARRAY_LENGTH(FileList); ++i)
 
 
 
-### <a name="step-5-start-the-bits-job"></a>Passaggio 5: avviare il processo BITS
+### <a name="step-5-start-the-bits-job"></a>Passaggio 5: Avviare il processo BITS
 
-Dopo aver configurato il processo BITS, chiamare la funzione [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) dell'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) per avviare o continuare il download.
+Dopo aver impostato il processo BITS, chiamare la funzione [**Resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) dell'interfaccia [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) per avviare o continuare il download.
 
 
 ```C++
@@ -126,9 +126,9 @@ hr = pBackgroundJob->Resume();
 
 
 
-### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a>Passaggio 6: monitorare e visualizzare lo stato del processo BITS
+### <a name="step-6-monitor-and-display-the-bits-jobs-progress"></a>Passaggio 6: Monitorare e visualizzare lo stato del processo BITS
 
-La `MonitorJobProgress` funzione helper accetta un oggetto [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) come unico parametro e esegue il polling del processo per uno stato ogni 500 millisecondi. Questa funzione non viene restituita finché il processo non è stato completato o non è stato annullato.
+La `MonitorJobProgress` funzione helper accetta un oggetto [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) come unico parametro ed esegue il polling del processo per uno stato ogni 500 millisecondi. Questa funzione non restituisce un valore finché il processo non viene completato o annullato.
 
 
 ```C++
@@ -233,9 +233,9 @@ VOID DisplayProgress(__in IBackgroundCopyJob *Job)
 
 
 
-### <a name="step-7-display-the-downloaded-file-headers"></a>Passaggio 7: visualizzare le intestazioni dei file scaricati
+### <a name="step-7-display-the-downloaded-file-headers"></a>Passaggio 7: Visualizzare le intestazioni del file scaricato
 
-La `DisplayFileHeaders` funzione helper enumera i processi definiti per un oggetto [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+La `DisplayFileHeaders` funzione helper enumera i processi definiti per un oggetto [**IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
 
 ```C++
@@ -305,7 +305,7 @@ HRESULT DisplayFileHeaders(__in IBackgroundCopyJob *Job)
 
 ## <a name="example"></a>Esempio
 
-L'esempio di codice seguente è un'applicazione console completamente funzionante che Mostra come usare l'API BITS per creare un processo BITS con più URL da scaricare, elencare gli URL in un processo e recuperare le intestazioni di risposta HTTP per ogni URL.
+L'esempio di codice seguente è un'applicazione console completamente funzionante che illustra come usare l'API BITS per creare un processo BITS con più URL da scaricare, elencare gli URL in un processo e recuperare le intestazioni di risposta HTTP per ogni URL.
 
 
 ```C++
@@ -730,9 +730,9 @@ VOID DisplayError(__in IBackgroundCopyJob *Job)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

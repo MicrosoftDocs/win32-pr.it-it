@@ -1,7 +1,7 @@
 ---
 description: Archivia le informazioni chiave su un'interfaccia LAN wireless gestita dal servizio di configurazione wireless.
 ms.assetid: 5e689fd0-27d9-48eb-8983-96d7918be1cd
-title: Struttura INTF_KEY_ENTRY (wzcsapi. h)
+title: INTF_KEY_ENTRY struttura (Wzcsapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wzcsapi.h
-ms.openlocfilehash: 91f25708e79be4f85c4200bd690404ff39f567d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d14c65d49d7ed28e2756c2a690cb4a7efa9000417e896a206710bf4365f8cd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065151"
 ---
-# <a name="intf_key_entry-structure"></a>Struttura della voce della \_ chiave INTF \_
+# <a name="intf_key_entry-structure"></a>Struttura INTF \_ KEY \_ ENTRY
 
-\[**INTF \_ La \_ voce chiave** non è più supportata a partire da Windows Vista e windows Server 2008. Usare invece l' [API WiFi nativa](native-wifi-reference.md), che fornisce funzionalità simili. Per ulteriori informazioni, vedere [informazioni sull'API WiFi nativa](about-the-native-wifi-api.md).\]
+\[**INTF \_ KEY \_ ENTRY** non è più supportato a Windows Vista e Windows Server 2008. Usare invece [l'API Wi-Fi nativa](native-wifi-reference.md), che fornisce funzionalità simili. Per altre informazioni, vedere [Informazioni sull'API Wi-Fi nativa.](about-the-native-wifi-api.md)\]
 
-La struttura della **\_ \_ voce della chiave INTF** archivia le informazioni chiave su un'interfaccia LAN wireless gestita dal servizio di configurazione wireless.
+La **struttura INTF \_ KEY \_ ENTRY** archivia le informazioni chiave su un'interfaccia LAN wireless gestita dal servizio di configurazione wireless.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ typedef struct {
 **wszGuid**
 </dt> <dd>
 
-Puntatore al GUID dell'interfaccia rappresentato come stringa Unicode nel formato seguente: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}".
+Puntatore al GUID dell'interfaccia rappresentato come stringa Unicode nel formato seguente: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}".
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione *wzcsapi. h* non è disponibile nel Windows SDK.
+> Il file *di intestazione Wzcsapi.h* non è disponibile in Windows SDK.
 
  
 
@@ -61,11 +61,11 @@ Puntatore al GUID dell'interfaccia rappresentato come stringa Unicode nel format
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                 |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                 |
 | Fine del supporto client<br/>    | Windows XP con SP3<br/>                                                       |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Puntatore al GUID dell'interfaccia rappresentato come stringa Unicode nel format
 
 <dl> <dt>
 
-[**\_tabella della chiave INTFS \_**](intfs-key-table.md)
+[**TABELLA DELLE CHIAVI INTFS \_ \_**](intfs-key-table.md)
 </dt> <dt>
 
 [**WZCEnumInterfaces**](wzcenuminterfaces.md)

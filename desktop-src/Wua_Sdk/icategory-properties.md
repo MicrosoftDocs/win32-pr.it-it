@@ -22,7 +22,7 @@ ms.locfileid: "119049459"
 | [**Idcategoria**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_categoryid)   | Ottiene l'identificatore della categoria.                                                              |
 | [**Children**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children)       | Ottiene una raccolta di interfacce che contiene le categorie figlio di questa categoria.                 |
 | [**Descrizione**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_description) | Ottiene la descrizione della categoria.                                                             |
-| [**Immagine**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_image)             | Ottiene un'interfaccia che contiene informazioni sull'immagine associata alla categoria. |
+| [**Immagine**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_image)             | Ottiene un'interfaccia contenente informazioni sull'immagine associata alla categoria. |
 | [**Nome**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_name)               | Ottiene il nome localizzato della categoria.                                                          |
 | [**JSON**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_order)             | Ottiene l'ordine di visualizzazione consigliato di questa categoria tra le categorie di pari livello.                 |
 | [**Padre**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_parent)           | Ottiene un'interfaccia che descrive la categoria padre di questa categoria.                            |

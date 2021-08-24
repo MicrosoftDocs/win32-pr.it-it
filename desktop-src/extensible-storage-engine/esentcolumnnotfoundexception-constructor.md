@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentColumnNotFoundException'
+description: Altre informazioni sul costruttore EsentColumnNotFoundException
 title: Costruttore EsentColumnNotFoundException
 TOCTitle: 'EsentColumnNotFoundException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnNotFoundException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f643bfa0619d78331623747c8691945448fbbf68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7182f73c5fd049f243bdcef389b14e7dcbfe80ed78414fe026145b1b2a7eebab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621911"
 ---
 # <a name="esentcolumnnotfoundexception-constructor"></a>Costruttore EsentColumnNotFoundException
 
 Inizializza una nuova istanza della classe EsentColumnNotFoundException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentColumnNotFoundException()
 
 [Membri di EsentColumnNotFoundException](./esentcolumnnotfoundexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

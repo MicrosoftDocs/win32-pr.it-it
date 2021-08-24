@@ -1,21 +1,21 @@
 ---
-description: Quando il sistema operativo, o anche un'applicazione, è impostato per l'utilizzo di una lingua e delle impostazioni locali specifiche, sono interessate molte impostazioni.
+description: Quando il sistema operativo, o anche un'applicazione, è impostato per l'uso di una lingua e di impostazioni locali specifiche, sono interessate molte impostazioni.
 ms.assetid: cec164d1-125f-483c-9d74-0e24b8215157
-title: Impostazioni locali documento e sistema
+title: Documenti e impostazioni locali del sistema Impostazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9408093a8583a4b17566b5fcd118b30439c0ebda
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed43ae52d7626b759563069b05fe4ae03649feb63fd1af8dab1b80cfd4d558a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594781"
 ---
-# <a name="document-and-system-locale-settings"></a>Impostazioni locali documento e sistema
+# <a name="document-and-system-locale-settings"></a>Documenti e impostazioni locali del sistema Impostazioni
 
-Quando il sistema operativo, o anche un'applicazione, è impostato per l'utilizzo di una lingua e delle impostazioni locali specifiche, sono interessate molte impostazioni. Queste impostazioni includono formato numerico, formato data, formato valuta, mapping maiuscolo e minuscolo, ordinamento dizionario, token e altro. Anche se queste impostazioni consentono a Windows Search di fornire un supporto localizzato eccellente, possono verificarsi risultati imprevisti quando viene eseguita una ricerca nei documenti di un'impostazione locale usando un sistema impostato su altre impostazioni locali.
+Quando il sistema operativo, o anche un'applicazione, è impostato per l'uso di una lingua e di impostazioni locali specifiche, sono interessate molte impostazioni. Queste impostazioni includono formato numerico, formato di data, formato di valuta, mapping di maiuscole e minuscole, ordinamento del dizionario, tokenizzazione e altro ancora. Anche se queste impostazioni consentono Windows ricerca offre un eccellente supporto localizzato, possono verificarsi risultati imprevisti quando la ricerca viene eseguita nei documenti di una delle impostazioni locali usando un sistema impostato su un'altra impostazione locale.
 
-Quando l'oggetto [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) elabora le proprietà e il contenuto di testo di un documento, segnala la lingua del documento all'indicizzatore di contenuto. Utilizzando queste informazioni, Windows Search può applicare il Word breaker appropriato.
+Quando [**l'oggetto IFilter**](/windows/win32/api/filter/nn-filter-ifilter) elabora le proprietà di testo e il contenuto di un documento, segnala la lingua del documento all'indicizzatore di contenuto. Usando queste informazioni, Windows ricerca può applicare il word breaker appropriato.
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Caricare i dati di primo livello da un file con estensione x.
 ms.assetid: 0270b923-d524-46c5-bd1a-44c782722635
-title: 'Metodo ID3DXLoadUserData:: LoadTopLevelData (D3dx9anim. h)'
+title: Metodo ID3DXLoadUserData::LoadTopLevelData (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f52d6853b12b666ab64602711a42c3698d6d8032
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ba0ed668657fb0195da7a54bad14d996c06c8fba8f81306491e7be4ce0d97b01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629491"
 ---
-# <a name="id3dxloaduserdataloadtopleveldata-method"></a>Metodo ID3DXLoadUserData:: LoadTopLevelData
+# <a name="id3dxloaduserdataloadtopleveldata-method"></a>Metodo ID3DXLoadUserData::LoadTopLevelData
 
 Caricare i dati di primo livello da un file con estensione x.
 
@@ -40,12 +40,12 @@ HRESULT LoadTopLevelData(
 
 <dl> <dt>
 
-*pXofChildData* \[ in\]
+*pXofChildData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILEDATA**](id3dxfiledata.md)**
 
-Puntatore a una struttura di dati del file con estensione x. Questa operazione è definita in dxfile. h.
+Puntatore a una struttura di dati di file con estensione x. Questo valore è definito in Dxfile.h.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a una struttura di dati del file con estensione x. Questa operazione �
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da D3DERR o D3DXERR, in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da D3DERR o D3DXERR, perché anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
