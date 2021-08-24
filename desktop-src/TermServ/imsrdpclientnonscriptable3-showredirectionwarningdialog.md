@@ -1,26 +1,26 @@
 ---
-title: Proprietà ShowRedirectionWarningDialog di IMsRdpClientNonScriptable3
-description: Specifica o recupera un valore che indica se deve essere visualizzata la finestra di dialogo di avviso del reindirizzamento.
+title: Proprietà IMsRdpClientNonScriptable3 ShowRedirectionWarningDialog
+description: Specifica o recupera se deve essere visualizzata la finestra di dialogo di avviso di reindirizzamento.
 ms.assetid: 7ed37288-77c3-4551-a553-1ca679e1047a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
-- Servizi Desktop remoto proprietà ShowRedirectionWarningDialog, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà , ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , ShowRedirectionWarningDialog
+- Proprietà ShowRedirectionWarningDialog Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , ShowRedirectionWarningDialog
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 468e1721de3395067ca570c2051f3906df626071
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1f8145712a4e29c0ef16ca4f3da6e2ba3870389896434669aa5134e7b037da9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771481"
 ---
-# <a name="imsrdpclientnonscriptable3showredirectionwarningdialog-property"></a>Proprietà IMsRdpClientNonScriptable3:: ShowRedirectionWarningDialog
+# <a name="imsrdpclientnonscriptable3showredirectionwarningdialog-property"></a>Proprietà IMsRdpClientNonScriptable3::ShowRedirectionWarningDialog
 
-Specifica o recupera un valore che indica se deve essere visualizzata la finestra di dialogo di avviso del reindirizzamento.
+Specifica o recupera se deve essere visualizzata la finestra di dialogo di avviso di reindirizzamento.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -74,7 +74,7 @@ HRESULT get_ShowRedirectionWarningDialog(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Specifica se deve essere visualizzata la finestra di dialogo di avviso del reindirizzamento.
+Specifica se deve essere visualizzata la finestra di dialogo di avviso di reindirizzamento.
 
 ## <a name="requirements"></a>Requisiti
 

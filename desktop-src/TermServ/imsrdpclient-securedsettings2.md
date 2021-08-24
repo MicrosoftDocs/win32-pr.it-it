@@ -1,30 +1,30 @@
 ---
-title: Proprietà SecuredSettings2 di IMsRdpClient
-description: Recupera un puntatore all'interfaccia IMsRdpClientSecuredSettings. Questa interfaccia può essere utilizzata per impostare impostazioni protette per il controllo client.
+title: Proprietà IMsRdpClient SecuredSettings2
+description: Recupera un puntatore all'interfaccia IMsRdpClientSecuredSettings. Questa interfaccia può essere usata per impostare le impostazioni protette per il controllo client.
 ms.assetid: f570a3f6-70ae-45fd-ba20-75c9f4d2f5ca
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà SecuredSettings2
-- Servizi Desktop remoto proprietà SecuredSettings2, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà SecuredSettings2
+- Proprietà SecuredSettings2 Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto , proprietà SecuredSettings2
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39e26d9d7a7b2ac776166c251e5a2ab9923297f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea0dff321eed8da198cafeb2fd58cf37661f100b08fbc52ac7c90be9c2575c7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771781"
 ---
-# <a name="imsrdpclientsecuredsettings2-property"></a>Proprietà IMsRdpClient:: SecuredSettings2
+# <a name="imsrdpclientsecuredsettings2-property"></a>Proprietà IMsRdpClient::SecuredSettings2
 
-Recupera un puntatore all'interfaccia [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) . Questa interfaccia può essere utilizzata per impostare impostazioni protette per il controllo client.
+Recupera un puntatore [**all'interfaccia IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Questa interfaccia può essere usata per impostare le impostazioni protette per il controllo client.
 
 Questa proprietà è di sola lettura.
 
@@ -80,17 +80,17 @@ HRESULT get_SecuredSettings2(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore di interfaccia [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) .
+Puntatore [**a interfaccia IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md)
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se il metodo ha esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni, vedere l'interfaccia [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) e [fornire la sicurezza del client RDP](providing-for-rdp-client-security.md).
+Per altre informazioni, vedere [**l'interfaccia IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) e [Providing for RDP Client Security](providing-for-rdp-client-security.md).
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient è definito come 92b4a539-7115-4B7C-a5a9-e5d9efc2780a<br/>        |
+| IID<br/>                      | IMsRdpClient IID è definito come \_ 92b4a539-7115-4b7c-a5a9-e5d9efc2780a<br/>        |
 
 
 

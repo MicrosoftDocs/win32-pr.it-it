@@ -1,7 +1,7 @@
 ---
-description: Calcola la luminosità di origine risultante da un singolo rimbalzo della luce con riflesso. Questo metodo può essere usato per qualsiasi scena illuminata, incluso un modello PRT (precomputed Radiance Transfer) basato su SH (sferica).
+description: Calcola la luminosità di origine risultante da un singolo rimbalzo di luce interreflected. Questo metodo può essere usato per qualsiasi scena illuminata, incluso un modello PRT (Precomputed Radiance Transfer) sferico armonico (SH).
 ms.assetid: 91a6b503-acd2-459b-9d60-de68c879c61b
-title: 'Metodo ID3DXPRTEngine:: ComputeBounce (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ComputeBounce (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d40d4b2686087864cad17df0feb99dbc890033b0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc4f362555c8cc86857733ecc3e75279dc68cc6b339f641f70c592f0e3576a96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847421"
 ---
-# <a name="id3dxprtenginecomputebounce-method"></a>Metodo ID3DXPRTEngine:: ComputeBounce
+# <a name="id3dxprtenginecomputebounce-method"></a>Metodo ID3DXPRTEngine::ComputeBounce
 
-Calcola la luminosità di origine risultante da un singolo rimbalzo della luce con riflesso. Questo metodo può essere usato per qualsiasi scena illuminata, incluso un modello PRT (precomputed Radiance Transfer) basato su SH (sferica).
+Calcola la luminosità di origine risultante da un singolo rimbalzo di luce interreflected. Questo metodo può essere usato per qualsiasi scena illuminata, incluso un modello PRT (Precomputed Radiance Transfer) sferico armonico (SH).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT ComputeBounce(
 
 <dl> <dt>
 
-*pDataIn* \[ in\]
+*pDataIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input che rappresenta l'oggetto 3D del rimbalzo della luce precedente. Questo buffer di input deve avere il numero appropriato di canali di colore allocati per la simulazione.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) di input che rappresenta l'oggetto 3D dal rimbalzo della luce precedente. Questo buffer di input deve avere il numero corretto di canali di colore allocati per la simulazione.
 
 </dd> <dt>
 
-*pDataOut* \[ in uscita\]
+*pDataOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella un singolo rimbalzo della luce con riflesso. Questo buffer di output deve avere il numero appropriato di canali di colore allocati per la simulazione.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) di output che modella un singolo rimbalzo della luce interreflected. Questo buffer di output deve avere il numero corretto di canali di colore allocati per la simulazione.
 
 </dd> <dt>
 
-*pDataTotal* \[ in uscita\]
+*pDataTotal* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che corrisponde alla somma in corso di tutti gli output pDataOut precedenti. Può essere **null**.
+Puntatore a un [**oggetto ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che rappresenta la somma in esecuzione di tutti gli output pDataOut precedenti. Può essere **NULL.**
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a un oggetto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) facoltativo che c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Usare la sequenza chiamante seguente per modellare più rimbalzi luce con illuminazione diretta.
+Usare la sequenza di chiamata seguente per modellare più rimbalzi di luce con illuminazione diretta.
 
 
 ```
@@ -97,7 +97,7 @@ hr = m_pPRTEngine->ComputeBounce( pDataB, pDataA, pDataC ); // fourth bounce
 
 
 
-Usare la sequenza chiamante seguente per modellare più rimbalzi luce con la dispersione della superficie.
+Usare la sequenza di chiamata seguente per modellare più rimbalzi di luce con dispersione sottosurface.
 
 
 ```
@@ -119,9 +119,9 @@ hr = m_pPRTEngine->ComputeSS    ( pDataA, pDataB, pDataC );
 
 
 
-L'output di questo metodo non include l'albedo e solo la luce in ingresso è integrata nel simulatore. Se non si moltiplica l'albedo, è possibile modellare la variazione dell'albedo a una scala più sottile rispetto alla luminosità di origine, ottenendo così risultati più accurati dalla compressione.
+L'output di questo metodo non include albedo e solo la luce in ingresso è integrata nel simulatore. Non moltiplicando l'albedo, è possibile modellare la variazione di albedo su una scala più fine rispetto alla luminosità di origine, producendo risultati più accurati dalla compressione.
 
-Chiamare [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md) per moltiplicare ogni vettore PRT per l'albedo.
+Chiamare [**ID3DXPRTEngine::MultiplyAlbedo per**](id3dxprtengine--multiplyalbedo.md) moltiplicare ogni vettore PRT per albedo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -129,8 +129,8 @@ Chiamare [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -141,7 +141,7 @@ Chiamare [**ID3DXPRTEngine:: MultiplyAlbedo**](id3dxprtengine--multiplyalbedo.md
 [ID3DXPRTEngine](id3dxprtengine.md)
 </dt> <dt>
 
-[**ID3DXPRTEngine::ComputeSS**](id3dxprtengine--computess.md)
+[**ID3DXPRTEngine::Computess**](id3dxprtengine--computess.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END (UIAnimation. h)
-description: Indica che l'intervallo tra due fotogrammi chiave in uno storyboard deve ripetersi per un tempo illimitato fino a quando il ciclo del fotogramma chiave termina sul fotogramma chiave finale quando viene chiamato il metodo IUIAnimationStoryboard terminate.
+title: UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END (UIAnimation.h)
+description: Indica che l'intervallo tra due fotogrammi chiave in uno storyboard deve ripetersi indefinitamente fino a quando il ciclo del fotogramma chiave termina sul fotogramma chiave finale quando viene chiamato il metodo Conclude IUIAnimationStoryboard.
 ms.assetid: DB333A87-C969-4B47-AAE3-898B052F00F3
 topic_type:
 - apiref
@@ -12,22 +12,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6452305342fcebf802183c5de2d1992aa0bfbcde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0354710d5857d8250419fe9c8f0f4b0154051f62dc31b1e2649ce800350c8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768701"
 ---
-# <a name="ui_animation_repeat_indefinitely_conclude_at_end"></a>la ripetizione dell'animazione dell'interfaccia utente si \_ \_ \_ \_ conclude \_ a \_ oltranza
+# <a name="ui_animation_repeat_indefinitely_conclude_at_end"></a>\_RIPETIZIONE \_ \_ INDEFINITA DELL'ANIMAZIONE DELL'INTERFACCIA \_ \_ UTENTE ALLA \_ FINE
 
-Indica che l'intervallo tra due fotogrammi chiave in uno storyboard deve essere ripetuto per un tempo illimitato fino a quando il ciclo del fotogramma chiave termina sul fotogramma chiave finale quando viene chiamato il metodo [**IUIAnimationStoryboard:: terminate**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude) .
+Indica che l'intervallo tra due fotogrammi chiave in uno storyboard deve ripetersi indefinitamente fino a quando il ciclo del fotogramma chiave termina sul fotogramma chiave finale quando viene chiamato il metodo [**IUIAnimationStoryboard::Conclude.**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-conclude)
 
 
 
 | Costante/valore                                                                                                                                                                                                                                                                                                                      | Descrizione      |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
-| <span id="UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END"></span><span id="ui_animation_repeat_indefinitely_conclude_at_end"></span><dl> <dt>**Interfaccia utente \_ \_La ripetizione \_ dell'animazione si \_ conclude \_ a oltranza a \_ fine**</dt> <dt>1</dt> </dl> | INT32<br/> |
+| <span id="UI_ANIMATION_REPEAT_INDEFINITELY_CONCLUDE_AT_END"></span><span id="ui_animation_repeat_indefinitely_conclude_at_end"></span><dl> <dt>**Interfaccia utente \_ RIPETIZIONE \_ \_ DELL'ANIMAZIONE TERMINA INDEFINITAMENTE \_ ALLA \_ \_ FINE**</dt> <dt>-1</dt> </dl> | INT32<br/> |
 
 
 
@@ -37,10 +37,10 @@ Indica che l'intervallo tra due fotogrammi chiave in uno storyboard deve essere 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8, Windows 7 e aggiornamento della piattaforma solo per le \[ app desktop Windows 7\]<br/>    |
+| Client minimo supportato<br/> | Windows 8, Windows 7 e Aggiornamento piattaforma solo per Windows 7 \[ app desktop\]<br/>    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
-| Intestazione<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 

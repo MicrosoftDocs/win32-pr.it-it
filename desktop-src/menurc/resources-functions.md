@@ -4,12 +4,12 @@ description: Funzioni delle risorse (menu e altre risorse)
 ms.assetid: dfeaaf01-f947-453e-946e-65ad9ec40958
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee066a6a111c911dd704997eeb7ed1c89ae1f417
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: e271b3d01f78f17d55e5f0b182bad52ac232d220fba21a787394f392e71a3b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111550003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847001"
 ---
 # <a name="resource-functions-menus-and-other-resources"></a>Funzioni delle risorse (menu e altre risorse)
 

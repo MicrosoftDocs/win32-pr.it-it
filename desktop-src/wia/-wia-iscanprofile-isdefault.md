@@ -1,7 +1,7 @@
 ---
 description: Ottiene un valore che indica se il profilo è il profilo di analisi predefinito di un dispositivo IWiaItem2 associato.
 ms.assetid: 32ca3b9f-6235-4eec-aa94-bf20f15a9a16
-title: 'Metodo IScanProfile:: IsDefault (scanprofile. h)'
+title: Metodo IScanProfile::IsDefault (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 245d36d3f6c907260e3e4858a5873309d2638530
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f763286a6db8430514cd70bc05eb160935e0fdc7ae8b5c452e8c09a113c0af5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882411"
 ---
-# <a name="iscanprofileisdefault-method"></a>Metodo IScanProfile:: IsDefault
+# <a name="iscanprofileisdefault-method"></a>Metodo IScanProfile::IsDefault
 
-Ottiene un valore che indica se il profilo è il profilo di analisi predefinito di un dispositivo [**IWiaItem2**](-wia-iwiaitem2.md) associato.
+Ottiene un valore che indica se il profilo è il profilo di analisi predefinito di un [**dispositivo IWiaItem2**](-wia-iwiaitem2.md) associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,34 +39,34 @@ HRESULT IsDefault(
 
 <dl> <dt>
 
-*pbDefault* \[ out\]
+*pbDefault* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **bool \** _
+Tipo: **BOOL \***
 
-Puntatore a _ * BOOL * *.
+Puntatore a un **oggetto BOOL.**
 
 <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**TRUE**
+<span id="TRUE"></span><span id="true"></span>**Vero**
 
 
 </dt> <dd>
 
-Il profilo è il valore predefinito.
+Il profilo è l'impostazione predefinita.
 
 </dd> <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**FALSE**
+<span id="FALSE"></span><span id="false"></span>**False**
 
 
 </dt> <dd>
 
-Il profilo non è il valore predefinito.
+Il profilo non è quello predefinito.
 
 </dd> </dl> </dd> </dl>
 
@@ -74,11 +74,11 @@ Il profilo non è il valore predefinito.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-*pbDefault* è **true** se il profilo contiene un `<Default>` elemento. È **false** se tale elemento non è presente. L'elemento non ha alcun valore.
+*pbDefault* è **TRUE** se il profilo contiene un `<Default>` elemento . È **FALSE se** tale elemento non è presente. L'elemento non ha alcun valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,10 +86,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

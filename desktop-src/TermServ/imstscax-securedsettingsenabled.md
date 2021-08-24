@@ -1,30 +1,30 @@
 ---
-title: Proprietà SecuredSettingsEnabled di IMsTscAx
-description: Indica se l'interfaccia IMsTscSecuredSettings è disponibile. Ovvero se la pagina Web contenente il controllo si trova attualmente in una delle aree di sicurezza URL Internet Explorer consentite.
+title: IMsTscAx SecuredSettingsEnabled - proprietà
+description: Indica se l'interfaccia IMsTscSecuredSettings è disponibile. In altre informazioni, indica se la pagina Web contenente il controllo si trova attualmente in una delle aree di sicurezza Internet Explorer URL consentite.
 ms.assetid: 0747eab0-9d62-4c10-b02d-fc65ca2f752e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
-- Servizi Desktop remoto proprietà SecuredSettingsEnabled, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
+- Proprietà SecuredSettingsEnabled Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , SecuredSettingsEnabled
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0601ac64ab0ca55f3d92ec460861a4347f70b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc03fb9cff3a99d77006989b7adade40a15ad4bb4d63e6f940092b765b1e250f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771061"
 ---
-# <a name="imstscaxsecuredsettingsenabled-property"></a>Proprietà IMsTscAx:: SecuredSettingsEnabled
+# <a name="imstscaxsecuredsettingsenabled-property"></a>Proprietà IMsTscAx::SecuredSettingsEnabled
 
-Indica se l'interfaccia [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) è disponibile. Ovvero se la pagina Web contenente il controllo si trova attualmente in una delle aree di sicurezza URL Internet Explorer consentite.
+Indica se [**l'interfaccia IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) è disponibile. In altre informazioni, indica se la pagina Web contenente il controllo si trova attualmente in una delle aree di sicurezza Internet Explorer URL consentite.
 
 Questa proprietà è di sola lettura.
 
@@ -80,19 +80,19 @@ HRESULT get_SecuredSettingsEnabled(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questo parametro è **true** se l'interfaccia è disponibile e **false** in caso contrario.
+Il valore di questo parametro è **TRUE se** l'interfaccia è disponibile e FALSE **in caso** contrario.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo per eseguire una query per verificare se l'interfaccia [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) è disponibile prima di recuperare la proprietà [**SecuredSettings**](imstscax-securedsettings.md) .
+Usare questo metodo per verificare se [**l'interfaccia IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) è disponibile prima di recuperare la [**proprietà SecuredSettings.**](imstscax-securedsettings.md)
 
-Per un elenco di aree di sicurezza con URL limitati, vedere la pagina [relativa a come fornire la sicurezza del client RDP](providing-for-rdp-client-security.md) .
+Per un elenco di aree di sicurezza url con restrizioni, vedere Fornire la sicurezza client [RDP.](providing-for-rdp-client-security.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,6 +1,6 @@
 ---
 title: Prefissi URI
-description: Il prefisso dell'URI della risorsa è diverso a seconda del XML Schema che descrive la risorsa.
+description: Il prefisso URI della risorsa è diverso a seconda dello schema XML che descrive la risorsa.
 ms.assetid: 47c32da6-98c9-4f66-82ac-647976127cb7
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,30 +10,30 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e73de4d6d1762e87aa05e72b6cb6b3fbb228b80d
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: b44744d7ac7d158bd7d00423396681fef1499c94d61b5cb74a1dee48dad5c784
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103873089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898671"
 ---
 # <a name="uri-prefixes"></a>Prefissi URI
 
-Il prefisso dell' [*URI della risorsa*](windows-remote-management-glossary.md) è diverso a seconda del XML Schema che descrive la risorsa.
+Il [*prefisso URI della*](windows-remote-management-glossary.md) risorsa è diverso a seconda dello schema XML che descrive la risorsa.
 
 ## <a name="prefixes"></a>Prefissi
 
-Se si accede a una classe [*cim*](windows-remote-management-glossary.md) 2,1, ad esempio file di file [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-datafile), il prefisso dell'URI differisce dal prefisso di una classe CIM 2,9, ad esempio **CIM \_ AdminDomain**. Le classi CIM 2,1 sono documentate nella sezione [classi CIM](/windows/desktop/WmiSdk/cimclas) di Strumentazione gestione Windows (WMI).
+Se si accede a una classe [*CIM*](windows-remote-management-glossary.md) 2.1, ad esempio [**CIM \_ DataFile,**](/windows/desktop/CIMWin32Prov/cim-datafile)il prefisso dell'URI è diverso dal prefisso per una classe CIM 2.9, ad esempio **CIM \_ AdminDomain.** Le classi CIM 2.1 sono documentate nella sezione [Classi CIM](/windows/desktop/WmiSdk/cimclas) di Windows Management Instrumentation (WMI).
 
-La maggior parte delle [classi WMI](/windows/desktop/WmiSdk/wmi-classes) si trova nello spazio dei nomi WMI **\\ CIMV2 radice** . Le classi per il provider Microsoft Intelligent Platform Management Interface ([IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)) si trovano nell' **\\ hardware radice**.
+La [maggior parte delle classi WMI](/windows/desktop/WmiSdk/wmi-classes) è nello spazio dei nomi WMI **\\ cimv2** radice. Le classi per il provider [IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)(Microsoft Intelligent Platform Management Interface) sono **\\ nell'hardware radice.**
 
-Nell'elenco seguente sono inclusi i prefissi URI delle risorse per questi schemi:
+L'elenco seguente contiene i prefissi URI delle risorse per questi schemi:
 
--   Classi WMI o CIM 2,1 nello spazio dei nomi **\\ CIMV2 radice**
+-   Classi WMI o CIM 2.1 nello spazio **dei \\ nomi radice cimv2**
 
     "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/"
 
--   Classi CIM 2,9 o classi IPMI
+-   Classi CIM 2.9 o classi IPMI
 
     "https://schemas.dmtf.org/wbem/wscim/1/cim-schema/2"
 
@@ -41,15 +41,15 @@ Nell'elenco seguente sono inclusi i prefissi URI delle risorse per questi schemi
 
     "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/hardware/"
 
-Per altre informazioni, vedere [URI di risorsa](resource-uris.md) e [stringhe URLPrefix](/windows/desktop/Http/urlprefix-strings). Per ulteriori informazioni sulla generazione di un URI per una classe o un metodo WMI, vedere [gestione remota Windows e WMI](windows-remote-management-and-wmi.md).
+Per altre informazioni, vedere [URI delle risorse e](resource-uris.md) stringhe [UrlPrefix.](/windows/desktop/Http/urlprefix-strings) Per altre informazioni sulla generazione di un URI per una classe o un metodo WMI, Windows [gestione remota e WMI.](windows-remote-management-and-wmi.md)
 
 ## <a name="prefix-aliases"></a>Alias di prefisso
 
-Un alias di prefisso è un tasto di scelta rapida che rappresenta il prefisso dell'URI di risorsa lungo. È anche possibile usare gli alias nella riga di comando di **WinRM** . Per visualizzare un elenco di alias disponibili, digitare gli **alias della Guida WinRM**.
+Un alias di prefisso è un collegamento che rappresenta il prefisso URI di risorsa lungo. È anche possibile usare gli alias nella **riga di comando di Winrm.** Per visualizzare un elenco degli alias disponibili, digitare **Winrm help aliases**.
 
-Tenere presente che un alias non può essere usato in un riferimento all'endpoint (EPR) quando si specifica un URI di risorsa. Gestione remota Windows non è in grado di espandere l'alias quando è incorporato in XML.
+Tenere presente che non è possibile usare un alias all'interno di un riferimento all'endpoint (EPR) quando si specifica un URI di risorsa. Windows Gestione remota non è in grado di espandere l'alias quando è incorporato in XML.
 
-Nell'esempio di codice seguente, l'alias WinRM viene usato in un EPR anziché nell'URI completo della risorsa, ovvero `http://schemas.microsoft.com/wbem/wsman/1/config/Listener` . In questo caso, WinRM restituisce un errore che indica che il servizio non è in grado di elaborare la richiesta.
+Nell'esempio di codice seguente l'alias winrm viene usato in una EPR anziché nell'URI completo della risorsa, ovvero `http://schemas.microsoft.com/wbem/wsman/1/config/Listener` . In questo caso, WinRM restituisce un errore che indica che il servizio non è in grado di elaborare la richiesta.
 
 
 ```XML
@@ -63,11 +63,11 @@ ResponseStr = Session.Get(ResourceLocator, 0)
 
 
 
-Di seguito sono elencati gli alias definiti e gli URI delle risorse per i quali sostituiscono.
+Di seguito sono elencati gli alias definiti e gli URI delle risorse per i quali vengono sostituiti.
 
 <dl> <dt>
 
-<span id="wmi"></span><span id="WMI"></span>WMI
+<span id="wmi"></span><span id="WMI"></span>Wmi
 </dt> <dd>
 
 `http://schemas.microsoft.com/wbem/wsman/1/wmi`
@@ -81,28 +81,28 @@ Di seguito sono elencati gli alias definiti e gli URI delle risorse per i quali 
 
 </dd> <dt>
 
-<span id="cimv2"></span><span id="CIMV2"></span>CIMV2
+<span id="cimv2"></span><span id="CIMV2"></span>cimv2
 </dt> <dd>
 
 `https://schemas.dmtf.org/wbem/wscim/1/cim-schema/2`
 
 </dd> <dt>
 
-<span id="winrm"></span><span id="WINRM"></span>WinRM
+<span id="winrm"></span><span id="WINRM"></span>Winrm
 </dt> <dd>
 
 `http://schemas.microsoft.com/wbem/wsman/1`
 
 </dd> <dt>
 
-<span id="wsman"></span><span id="WSMAN"></span>WSMan
+<span id="wsman"></span><span id="WSMAN"></span>wsman
 </dt> <dd>
 
 `http://schemas.microsoft.com/wbem/wsman/1`
 
 </dd> <dt>
 
-<span id="shell"></span><span id="SHELL"></span>Shell
+<span id="shell"></span><span id="SHELL"></span>Guscio
 </dt> <dd>
 
 `http://schemas.microsoft.com/wbem/wsman/1/windows/shell`
@@ -113,10 +113,10 @@ Di seguito sono elencati gli alias definiti e gli URI delle risorse per i quali 
 
 <dl> <dt>
 
-[Informazioni su Gestione remota Windows](about-windows-remote-management.md)
+[Informazioni Windows gestione remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Gestione remota Windows e WMI](windows-remote-management-and-wmi.md)
+[Windows Gestione remota e WMI](windows-remote-management-and-wmi.md)
 </dt> <dt>
 
 [URI risorse](resource-uris.md)

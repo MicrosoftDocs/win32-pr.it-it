@@ -4,12 +4,12 @@ ms.assetid: faa2d610-cf85-42d0-833c-a46fb7fe3dbf
 title: LPD3DXFILL2D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c341ccfcbcc566d65e7139813c676e2286e25cf
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 3b6d1407d5b6ebad18f748d5e4ba78953ad6ca543aa6df7b798aa242658a0512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846490"
 ---
 # <a name="lpd3dxfill2d"></a>LPD3DXFILL2D
 
@@ -45,7 +45,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Assicurarsi di specificare la convenzione [**di chiamata dei tipi di dati Windows**](../winprog/windows-data-types.md) quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
+Assicurarsi di specificare la convenzione Windows di chiamata [**dei tipi di**](../winprog/windows-data-types.md) dati quando si dichiara la funzione di callback. In caso contrario, possono verificarsi overflow dello stack.
 
 
 

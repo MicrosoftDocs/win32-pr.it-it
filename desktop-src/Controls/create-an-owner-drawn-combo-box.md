@@ -1,40 +1,40 @@
 ---
-title: Come creare una casella combinata Owner-Drawn
-description: In questo argomento viene illustrato come utilizzare una casella combinata creata dal proprietario.
+title: Come creare una Owner-Drawn casella combinata
+description: In questo argomento viene illustrato come utilizzare una casella combinata disegnata dal proprietario.
 ms.assetid: D866DE82-9734-4E8A-A366-5870C25B7C7B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5355dd33fe0067165308e9e6e5885b76edbe7ceb
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e90d82192e485e4f833157a1c3ab75e8e39446e1e80f7f9cc27baf5444b4e0bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826467"
 ---
-# <a name="how-to-create-an-owner-drawn-combo-box"></a>Come creare una casella combinata Owner-Drawn
+# <a name="how-to-create-an-owner-drawn-combo-box"></a>Come creare una Owner-Drawn casella combinata
 
-In questo argomento viene illustrato come utilizzare una casella combinata creata dal proprietario. L'esempio di codice C++ usa una casella di riepilogo a discesa creata dal proprietario per visualizzare i quattro gruppi di alimenti, ognuno rappresentato da una bitmap e un nome. Se si seleziona un gruppo di alimenti, i cibi del gruppo verranno visualizzati in un elenco.
+In questo argomento viene illustrato come utilizzare una casella combinata disegnata dal proprietario. L'esempio di codice C++ usa una casella di riepilogo a discesa disegnata dal proprietario per visualizzare i quattro gruppi di alimenti, ognuno rappresentato da una bitmap e da un nome. La selezione di un gruppo di alimenti fa sì che gli alimenti in tale gruppo vengano visualizzati in un elenco.
 
-![cattura di schermata che mostra una finestra di dialogo con una casella di riepilogo e una casella di riepilogo a discesa espansa che mostra un'icona e un'etichetta per ogni elemento](images/cscbx-01.png)
+![Screenshot che mostra una finestra di dialogo con una casella di riepilogo e una casella di riepilogo a discesa espansa che mostra un'icona e un'etichetta per ogni elemento](images/cscbx-01.png)
 
-La finestra di dialogo contiene anche una casella di riepilogo (IDLIST) e due pulsanti: **OK** (IDOK) e **Cancel** (IDCANCEL). Le costanti IDOK e IDCANCEL sono definite dai file di intestazione dell'SDK. La costante IDLIST è definita nel file di intestazione dell'applicazione, così come l'identificatore del controllo, IDCOMBO. Per ulteriori informazioni sulle finestre di dialogo, vedere finestre di [dialogo](/windows/desktop/dlgbox/dialog-boxes).
+La finestra di dialogo contiene anche una casella di riepilogo (IDLIST) e due pulsanti: **OK** (IDOK) **e Annulla** (IDCANCEL). Le costanti IDOK e IDCANCEL sono definite dai file di intestazione dell'SDK. La costante IDLIST è definita nel file di intestazione dell'applicazione, così come l'identificatore di controllo IDCOMBO. Per altre informazioni sulle finestre di dialogo, vedere [Finestre di dialogo.](/windows/desktop/dlgbox/dialog-boxes)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-the-owner-drawn-dialog-box"></a>Passaggio 1: creare la finestra di dialogo Owner-Drawn
+### <a name="step-1-create-the-owner-drawn-dialog-box"></a>Passaggio 1: Creare la finestra Owner-Drawn di dialogo
 
-Nell'esempio di codice viene utilizzata la funzione [**DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa) per creare una finestra di dialogo modale. Il modello della finestra di dialogo, IDD \_ SQMEAL, definisce gli stili della finestra, i pulsanti e gli identificatori di controllo per la casella combinata. Nella casella combinata in questo esempio vengono usati gli stili [**CBS \_ DropDownList**](combo-box-styles.md), [**CBS \_ OwnerDrawFixed**](combo-box-styles.md), CBS [**\_ Sort**](combo-box-styles.md), [**CBS \_ HASSTRINGS**](combo-box-styles.md), [**WS \_ VSCROLL**](/windows/desktop/winmsg/window-styles)e [**WS \_ TABSTOP**](/windows/desktop/winmsg/window-styles) .
+L'esempio di codice usa [**la funzione DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa) per creare una finestra di dialogo modale. Il modello di finestra di dialogo IDD SQMEAL definisce gli stili, i pulsanti e gli identificatori di controllo della finestra per \_ la casella combinata. La casella combinata in questo esempio usa gli stili [**CBS \_ DROPDOWNLIST**](combo-box-styles.md), [**CBS \_ OWNERDRAWFIXED**](combo-box-styles.md), [**CBS \_ SORT**](combo-box-styles.md), [**CBS \_ HASSTRINGS,**](combo-box-styles.md) [**WS \_ VSCROLL**](/windows/desktop/winmsg/window-styles)e [**WS \_ TABSTOP.**](/windows/desktop/winmsg/window-styles)
 
 
 ```C++
@@ -44,13 +44,13 @@ DialogBox(hInst, MAKEINTRESOURCE(IDD_SQMEAL),
 
 
 
-### <a name="step-2-process-the-wm_initdialog-and-wm_destroy-messages-in-a-dialog-box"></a>Passaggio 2: elaborare i \_ messaggi WM INITDIALOG e WM \_ Destroy in una finestra di dialogo.
+### <a name="step-2-process-the-wm_initdialog-and-wm_destroy-messages-in-a-dialog-box"></a>Passaggio 2: Elaborare i messaggi \_ WM INITDIALOG e WM \_ DESTROY in una finestra di dialogo.
 
-Quando si usa una casella combinata in una finestra di dialogo, in genere si risponde a un messaggio [**WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) inizializzando la casella combinata. L'applicazione carica le bitmap utilizzate per la casella combinata creata dal proprietario, quindi chiama la funzione definita dall'applicazione `InitGroupList` per inizializzare la casella combinata. Seleziona anche il primo elemento dell'elenco nella casella combinata e quindi chiama la funzione definita dall'applicazione `InitFoodList` per inizializzare la casella di riepilogo.
+Quando si usa una casella combinata in una finestra di dialogo, in genere si risponde a un messaggio [**\_ WM INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) inizializzando la casella combinata. L'applicazione carica le bitmap usate per la casella combinata disegnata dal proprietario e quindi chiama la funzione definita dall'applicazione `InitGroupList` per inizializzare la casella combinata. Seleziona anche il primo elemento dell'elenco nella casella combinata e quindi chiama la funzione definita `InitFoodList` dall'applicazione per inizializzare la casella di riepilogo.
 
-Nell'esempio, la casella combinata creata dal proprietario è un elenco a discesa contenente i nomi di ognuno dei quattro gruppi di alimenti. `InitGroupList` aggiunge il nome di ogni gruppo di alimenti e usa il messaggio [**CB \_ SETITEMDATA**](cb-setitemdata.md) per associare un handle bitmap a ogni elemento dell'elenco che identifica un gruppo di alimenti.
+Nell'esempio la casella combinata disegnata dal proprietario è una casella di riepilogo a discesa che contiene i nomi di ognuno dei quattro gruppi di alimenti. `InitGroupList` aggiunge il nome di ogni gruppo di alimenti e usa il messaggio [**\_ CB SETITEMDATA**](cb-setitemdata.md) per associare un handle bitmap a ogni elemento dell'elenco che identifica un gruppo di alimenti.
 
-La casella di riepilogo nell'esempio contiene i nomi degli alimenti nel gruppo di alimenti selezionato. **InitFoodList** Reimposta il contenuto della casella di riepilogo, quindi aggiunge i nomi della selezione corrente del cibo nella casella di riepilogo a discesa gruppo di alimenti corrente.
+La casella di riepilogo nell'esempio contiene i nomi degli alimenti nel gruppo di alimenti selezionato. **InitFoodList** reimposta il contenuto della casella di riepilogo, quindi aggiunge i nomi della selezione di cibo corrente nella casella di riepilogo a discesa del gruppo di alimenti corrente.
 
 
 ```C++
@@ -76,7 +76,7 @@ case WM_INITDIALOG:
 
 
 
-Quando riceve il messaggio [**WM \_ Destroy**](/windows/desktop/winmsg/wm-destroy) , l'applicazione elimina le bitmap nella casella combinata creata dal proprietario.
+Quando riceve il messaggio [**WM \_ DESTROY,**](/windows/desktop/winmsg/wm-destroy) l'applicazione elimina le bitmap nella casella combinata disegnata dal proprietario.
 
 
 ```C++
@@ -89,11 +89,11 @@ case WM_DESTROY:
 
 
 
-### <a name="step-3-process-the-wm_measureitem-message"></a>Passaggio 3: elaborare il \_ messaggio WM MeasureItem.
+### <a name="step-3-process-the-wm_measureitem-message"></a>Passaggio 3: Elaborare il messaggio \_ MEASUREITEM di WM.
 
-Una casella combinata creata dal proprietario Invia il messaggio [**WM \_ MeasureItem**](wm-measureitem.md) alla finestra padre o alla routine della finestra di dialogo in modo che l'applicazione possa impostare le dimensioni di ogni elemento dell'elenco. Poiché la casella combinata di esempio ha lo stile [**CBS \_ OwnerDrawFixed**](combo-box-styles.md) , il sistema invia il messaggio **WM \_ MeasureItem** una sola volta. Le caselle combinate con lo stile [**\_ OwnerDrawVariable CBS**](combo-box-styles.md) inviano un messaggio **WM \_ MeasureItem** per ogni elemento dell'elenco.
+Una casella combinata disegnata dal proprietario invia il messaggio [**\_ MEASUREITEM WM**](wm-measureitem.md) alla finestra padre o alla routine della finestra di dialogo in modo che l'applicazione possa impostare le dimensioni di ogni elemento dell'elenco. Poiché la casella combinata di esempio ha [**lo stile CBS \_ OWNERDRAWFIXED,**](combo-box-styles.md) il sistema invia il messaggio **WM \_ MEASUREITEM** una sola volta. Le caselle combinate [**con lo stile \_ CBS OWNERDRAWVARIABLE**](combo-box-styles.md) inviano un **messaggio \_ MEASUREITEM WM** per ogni elemento dell'elenco.
 
-Il parametro *lParam* è un puntatore a una struttura [**MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) che identifica il controllo e l'elemento dell'elenco. Contiene anche le dimensioni predefinite dell'elemento dell'elenco. Nell'esempio viene modificato il membro della struttura **ItemHeight** per assicurarsi che le voci dell'elenco siano sufficientemente elevate da contenere le bitmap del gruppo di alimenti.
+Il *parametro lParam* è un puntatore a una [**struttura MEASUREITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-measureitemstruct) che identifica il controllo e l'elemento dell'elenco. Contiene anche le dimensioni predefinite dell'elemento dell'elenco. Nell'esempio viene modificato il membro della struttura **itemHeight** per assicurarsi che gli elementi dell'elenco siano sufficientemente elevati da contenere le bitmap del gruppo di alimenti.
 
 
 ```C++
@@ -111,13 +111,13 @@ case WM_MEASUREITEM:
 
 
 
-### <a name="step-4-process-the-wm_drawitem-message"></a>Passaggio 4: elaborare il \_ messaggio WM DrawItem.
+### <a name="step-4-process-the-wm_drawitem-message"></a>Passaggio 4: Elaborare il messaggio WM \_ DRAWITEM.
 
-Una casella combinata creata dal proprietario Invia il messaggio [**WM \_ DrawItem**](wm-drawitem.md) alla finestra padre o alla relativa routine della finestra di dialogo ogni volta che l'applicazione deve ridisegnare un elemento dell'elenco. Il parametro *lParam* è un puntatore a una struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) che identifica il controllo e l'elemento dell'elenco. Contiene inoltre le informazioni necessarie per disegnare l'elemento.
+Una casella combinata disegnata dal proprietario invia il messaggio [**WM \_ DRAWITEM**](wm-drawitem.md) alla finestra padre o alla routine della finestra di dialogo ogni volta che l'applicazione deve ridisegnare un elemento dell'elenco. Il *parametro lParam* è un puntatore a una [**struttura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) che identifica il controllo e l'elemento dell'elenco. Contiene anche le informazioni necessarie per disegnare l'elemento.
 
-Nell'applicazione di esempio vengono visualizzati il testo della voce di elenco e la bitmap associata al gruppo di alimenti. Se l'elemento ha lo stato attivo, viene anche disegnato un rettangolo di attivazione. Prima di visualizzare il testo, nell'esempio vengono impostati i colori di primo piano e di sfondo in base all'elemento selezionato. Poiché la casella combinata ha lo stile [**CBS \_ HASSTRINGS**](combo-box-styles.md) , la casella combinata mantiene il testo per ogni elemento dell'elenco che può essere recuperato usando il messaggio [**CB \_ GETLBTEXT**](cb-getlbtext.md) .
+L'applicazione di esempio visualizza il testo dell'elemento elenco e la bitmap associata al gruppo di alimenti. Se l'elemento ha lo stato attivo, disegna anche un rettangolo di attivazione. Prima di visualizzare il testo, l'esempio imposta i colori di primo piano e di sfondo in base all'elemento selezionato. Poiché la casella combinata ha lo stile [**\_ CBS HASSTRINGS,**](combo-box-styles.md) la casella combinata mantiene il testo per ogni elemento dell'elenco che può essere recuperato utilizzando il [**messaggio \_ CB GETLBTEXT.**](cb-getlbtext.md)
 
-Le bitmap utilizzate per l'elemento elenco dipendono dal gruppo di alimenti. `InitGroupList` Usa il messaggio [**CB \_ SETITEMDATA**](cb-setitemdata.md) per associare un handle bitmap a ogni elemento dell'elenco. La routine della finestra Recupera l'handle bitmap dal membro **ItemData** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) . Il sistema usa due bitmap per ogni simbolo del gruppo di alimenti: una bitmap monocromatica con l'operazione SRCAND raster per cancellare l'area irregolare dietro l'immagine e una bitmap di colore con l'operazione raster SRCPAINT per disegnare l'immagine.
+Le bitmap usate per l'elemento dell'elenco dipendono dal gruppo di alimenti. `InitGroupList` usa il [**messaggio \_ CB SETITEMDATA**](cb-setitemdata.md) per associare un handle di bitmap a ogni elemento dell'elenco. La routine della finestra recupera l'handle della bitmap dal **membro itemData** della [**struttura DRAWITEMSTRUCT.**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) Il sistema usa due bitmap per ogni simbolo del gruppo di alimenti: una bitmap monocromatica con l'operazione raster SRCAND per cancellare l'area irregolare dietro l'immagine e una bitmap di colore con l'operazione raster SRCPAINT per disegnare l'immagine.
 
 
 ```C++
@@ -196,17 +196,17 @@ case WM_DRAWITEM:
 
 
 
-### <a name="step-5-process-the-wm_command-message"></a>Passaggio 5: elaborare il \_ messaggio di comando WM.
+### <a name="step-5-process-the-wm_command-message"></a>Passaggio 5: Elaborare il messaggio WM \_ COMMAND.
 
-Quando si verifica un evento in un controllo finestra di dialogo, il controllo Invia una notifica alla routine della finestra di dialogo per mezzo di un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) . Nell'esempio vengono elaborati i messaggi di notifica della casella combinata, della casella di riepilogo e del pulsante **OK** . L'identificatore di controllo si trova nella parola più bassa di *wParam* e il codice di notifica si trova nella parola più significativa di *wParam*.
+Quando si verifica un evento in un controllo della finestra di dialogo, il controllo invia una notifica alla routine della finestra di dialogo tramite un [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) L'esempio elabora i messaggi di notifica dalla casella combinata, dalla casella di riepilogo e dal **pulsante OK.** L'identificatore di controllo è nella parola di ordine più basso di *wParam* e il codice di notifica è nella parola di ordine superiore *di wParam*.
 
-Se l'identificatore di controllo è IDCOMBO, si è verificato un evento nella casella combinata. In risposta, la routine della finestra di dialogo Ignora tutti gli altri eventi della casella combinata eccetto [**CBN \_ SELENDOK**](cbn-selendok.md), che indica che è stata effettuata una selezione, la casella di riepilogo a discesa è stata chiusa e le modifiche apportate devono essere accettate. La routine della finestra di dialogo chiama `InitFoodList` per reimpostare il contenuto della casella di riepilogo e per aggiungere i nomi delle selezioni correnti nella casella di riepilogo a discesa.
+Se l'identificatore del controllo è IDCOMBO, si è verificato un evento nella casella combinata. In risposta, la procedura della finestra di dialogo ignora tutti gli altri eventi della casella combinata ad eccezione di [**CBN \_ SELENDOK,**](cbn-selendok.md)che indica che è stata effettuata una selezione, che la casella di riepilogo a discesa è stata chiusa e che le modifiche apportate devono essere accettate. La routine della finestra di dialogo chiama per reimpostare il contenuto della casella di riepilogo e per aggiungere i nomi delle selezioni correnti nella casella `InitFoodList` di riepilogo a discesa.
 
-Se l'identificatore di controllo è IDLIST, si è verificato un evento nella casella di riepilogo. In questo modo, la routine della finestra di dialogo ignorerà tutti gli eventi della casella di riepilogo ad eccezione di [**LBN \_ DBLCLK**](lbn-dblclk.md), che indica che l'utente ha fatto doppio clic su un elemento dell'elenco. Questo evento viene elaborato nello stesso modo in cui è stato scelto un pulsante **OK** .
+Se l'identificatore del controllo è IDLIST, si è verificato un evento nella casella di riepilogo. In questo modo la routine della finestra di dialogo ignora tutti gli eventi della casella di riepilogo ad eccezione di [**LBN \_ DBLCLK,**](lbn-dblclk.md)che indica che l'utente ha fatto doppio clic su un elemento dell'elenco. Questo evento viene elaborato come se fosse stato scelto un pulsante **OK.**
 
-Se l'identificatore di controllo è IDOK, l'utente ha scelto il pulsante **OK** . In risposta, la routine della finestra di dialogo inserisce il nome del cibo selezionato nel controllo di modifica a più righe dell'applicazione, quindi chiama la funzione [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) per chiudere la finestra di dialogo.
+Se l'identificatore del controllo è IDOK, l'utente ha scelto **il pulsante OK.** In risposta, la routine della finestra di dialogo inserisce il nome dell'alimento selezionato nel controllo di modifica su più righe dell'applicazione, quindi chiama la [**funzione EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) per chiudere la finestra di dialogo.
 
-Se l'identificatore di controllo è IDCANCEL, l'utente ha fatto clic sul pulsante **Annulla** . In risposta, la routine della finestra di dialogo chiama [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) per chiudere la finestra di dialogo.
+Se l'identificatore del controllo è IDCANCEL, l'utente ha fatto clic sul **pulsante** Annulla. In risposta, la routine della finestra di dialogo chiama [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) per chiudere la finestra di dialogo.
 
 
 ```C++
@@ -256,7 +256,7 @@ case WM_COMMAND:
 
 ## <a name="complete-example"></a>Esempio completo
 
-Di seguito sono riportate la routine della finestra di dialogo e le funzioni di supporto per la finestra di dialogo **quadrato pasto** .
+Di seguito è riportata la procedura della finestra di dialogo e le funzioni di supporto per la finestra di dialogo **Square Meal.**
 
 
 ```C++
@@ -586,9 +586,9 @@ void DeleteIconBitmaps(void)
 
 <dl> <dt>
 
-[Uso di caselle combinate](using-combo-boxes.md)
+[Uso delle caselle combinate](using-combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

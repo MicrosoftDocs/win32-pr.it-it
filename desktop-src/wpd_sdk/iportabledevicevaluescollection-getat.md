@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2ad10a7b9cc3c252a0cee4cb71df05cb108e0a18
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 089c6c5c523b6f05f91efb5524904c942a539a7ebbb3cd863c1c07d413cdf1a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704631"
 ---
 # <a name="iportabledevicevaluescollectiongetat-method"></a>Metodo IPortableDeviceValuesCollection::GetAt
 
@@ -48,16 +48,16 @@ HRESULT GetAt(
 
 </dd> <dt>
 
-*valori ppValues* \[ Cambio\]
+*ppValues* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) dalla raccolta. Il chiamante è responsabile della chiamata **di Release** su questa interfaccia al termine dell'operazione.
+Indirizzo di una variabile che riceve un puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) dalla raccolta. Il chiamante è responsabile della chiamata **a Release** su questa interfaccia al termine dell'operazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -65,8 +65,8 @@ Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma no
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                                                 |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | L'indice in base zero passato non è compreso nell'intervallo.<br/>             |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>                             |
-| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | La raccolta contiene un **puntatore** **NULL IPortableDeviceValues.**<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | Un argomento del puntatore obbligatorio era **NULL.**<br/>                             |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl> | La raccolta contiene un **puntatore** **NULL IPortableDeviceValues.**<br/> |
 
 
 

@@ -1,37 +1,37 @@
 ---
-description: Il broker di autenticazione Web si basa sulle stesse tecnologie di Internet Explorer in Windows.
+description: Web Authentication Broker si basa sulle stesse tecnologie che si basano Internet Explorer in Windows.
 ms.assetid: 4BBAE30F-63AB-4AB0-9C99-016EF05220E8
 title: Considerazioni relative allo sviluppo di pagine Web
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbe7e738616589afc4f7ba4f03d92a12207d189c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22932f40d5268059fc30e97817de0b3671cee7447974b038ea4be12eedd76ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883278"
 ---
 # <a name="considerations-for-the-web-page-development"></a>Considerazioni relative allo sviluppo di pagine Web
 
-Il broker di autenticazione Web si basa sulle stesse tecnologie di Internet Explorer in Windows. Tuttavia, a causa di uno scopo speciale di questo componente alcune funzionalità di Internet Explorer sono state disabilitate o bloccate a una configurazione specifica. Inoltre, il broker di autenticazione Web fornisce un canale di registrazione eventi dedicato per facilitare la risoluzione dei problemi relativi alle pagine elaborate.
+Web Authentication Broker si basa sulle stesse tecnologie che si basano Internet Explorer in Windows. Tuttavia, a causa di uno scopo molto speciale di questo componente, alcune funzionalità del Internet Explorer sono state disabilitate o bloccate a una configurazione specifica. Il Gestore autenticazione Web fornisce anche un canale di registrazione eventi dedicato per la risoluzione dei problemi relativi alle pagine che elabora.
 
-## <a name="internet-explorer-10-standard-document-mode"></a>Modalità documento standard di Internet Explorer 10
+## <a name="internet-explorer-10-standard-document-mode"></a>Internet Explorer 10 documento standard
 
-Il broker di autenticazione Web Visualizza tutte le pagine in "modalità standard IE10". È possibile utilizzare gli strumenti di sviluppo di Internet Explorer per vedere il funzionamento della pagina in modalità documento diverse. Per ulteriori informazioni sulla compatibilità con Internet Explorer 10, vedere gli argomenti MSDN per [Internet Explorer](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh673527(v=vs.85)).
+Il Gestore autenticazione Web visualizza tutte le pagine in "Modalità standard IE10". È possibile usare gli strumenti di sviluppo in Internet Explorer per vedere il funzionamento della pagina in modalità documento diverse. Per altre informazioni sulla compatibilità Internet Explorer 10, vedere gli argomenti MSDN per [Internet Explorer](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/hh673527(v=vs.85)).
 
 ## <a name="disabled-and-locked-down-features"></a>Funzionalità disabilitate e bloccate
 
-Diverse funzionalità di Internet Explorer sono completamente disabilitate o bloccate in base a valori specifici che non possono essere modificati nelle opzioni Internet del sistema operativo.
+Diverse funzionalità di Internet Explorer sono completamente disabilitate o bloccate su valori specifici che non possono essere modificati in Opzioni Internet del sistema operativo.
 
 
 
 | Funzionalità                            | Stato                                                                                                                                                                                                          |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API della cache dell'applicazione ("AppCache") | Disabled                                                                                                                                                                                                        |
-| Cronologia collegamenti                       | Disabled                                                                                                                                                                                                        |
-| File temporanei                    | Abilitato                                                                                                                                                                                                         |
-| Cookie                            | I cookie di sessione sono abilitati. I cookie salvati in modo permanente sono consentiti, ma sono soggetti a pulizia automatica, a meno che il broker di autenticazione Web non sia in modalità SSO. Per ulteriori informazioni, vedere la sezione Single Sign-on. |
-| DATABASE di indice                           | Disabled                                                                                                                                                                                                        |
+| API cache dell'applicazione ("AppCache") | Disabled                                                                                                                                                                                                        |
+| Cronologia dei collegamenti                       | Disabled                                                                                                                                                                                                        |
+| File temporanei                    | Attivato                                                                                                                                                                                                         |
+| Cookie                            | I cookie di sessione sono abilitati. I cookie persistenti sono consentiti, ma sono soggetti alla pulizia automatica a meno che Web Authentication Broker non sia in modalità SSO. Per altre informazioni, vedere la sezione Single Sign-On. |
+| Index DB                           | Disabled                                                                                                                                                                                                        |
 | Archiviazione DOM                        | Disabled                                                                                                                                                                                                        |
 | ActiveX                            | Disabled                                                                                                                                                                                                        |
 | Download di file                     | Disabled                                                                                                                                                                                                        |
@@ -44,23 +44,23 @@ Diverse funzionalità di Internet Explorer sono completamente disabilitate o blo
 
 Il primo URL che un'applicazione userà per comunicare con il provider online deve essere HTTPS.
 
-## <a name="dimension-for-different-window-sizes"></a>Dimensione per diverse dimensioni della finestra
+## <a name="dimension-for-different-window-sizes"></a>Dimensione per dimensioni di finestra diverse
 
-Un'app di Windows 8 può essere visualizzata in diverse dimensioni, ad esempio a schermo intero, a una finestra ridimensionata o all'interno di un fascino, ad esempio l'accesso alla condivisione. A seconda del layout della finestra in cui viene visualizzato il broker di autenticazione Web, le dimensioni con cui le pagine Web devono funzionare potrebbero essere diverse. Per ulteriori informazioni, vedere l'argomento [linee guida per il ridimensionamento in layout ristretti](/previous-versions/windows/hh465371(v=win.10)) e le [linee guida per la condivisione del contenuto](/previous-versions/windows/hh465251(v=win.10)) .
+Un Windows 8 app può essere visualizzata in diverse dimensioni, ad esempio schermo intero, finestra ridimensionata o all'interno di un accesso, ad esempio Condividi accesso. A seconda del layout della finestra visualizzato da Web Authentication Broker, le dimensioni con cui devono funzionare le pagine Web potrebbero essere diverse. Per altre informazioni, vedere [l'argomento Guidelines for resizing to narrow layouts](/previous-versions/windows/hh465371(v=win.10)) (Linee guida per il ridimensionamento per limitare i layout) e [Guidelines for sharing content (Linee guida per la condivisione di contenuto).](/previous-versions/windows/hh465251(v=win.10))
 
-La pagina Web deve usare le query per supporti CSS per verificare le dimensioni necessarie per l'uso e il lay-out di conseguenza. La pagina, tuttavia, non deve essere progettata in base ai pixel esatti documentati in questo articolo e deve essere in grado di ridimensionare le diverse dimensioni. Le dimensioni specificate in questo documento sono soggette a modifiche nelle versioni future del sistema operativo.
+La pagina Web deve usare le query di supporto CSS per verificare le dimensioni con cui deve funzionare e disponersi di conseguenza. Tuttavia, la pagina non deve essere progettata in base ai pixel esatti documentati qui e deve essere in grado di ridimensionarsi a dimensioni diverse. Le dimensioni specificate in questo documento sono soggette a modifiche nelle versioni future del sistema operativo.
 
-Se una pagina non può contenere tutte le informazioni nello spazio assegnato, ad esempio un lungo elenco di autorizzazioni richieste da un'applicazione, il broker di autenticazione Web fornirà barre di scorrimento per consentire all'utente di scorrere la pagina in base alle esigenze. Lo zoom è fornito anche da Pinch zoom per i dispositivi basati su tocco e CTRL + rotellina del mouse per PC desktop e portatili.
+Se una pagina non può contenere tutte le informazioni nello spazio assegnato (ad esempio, un lungo elenco di autorizzazioni richieste da un'applicazione), Il Gestore autenticazione Web fornirà barre di scorrimento per consentire all'utente di scorrere la pagina in base alle esigenze. Lo zoom è disponibile anche avvicinando le dita per i dispositivi basati sul tocco e premendo CTRL+rotellina del mouse per PC desktop e portatili.
 
-Per testare diversi fattori di scalabilità, usare l' [app di esempio Web Authentication broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker) caricata in Microsoft Visual Studio Professional 2012, che consente di simulare lo schermo intero e gli stati ridimensionati.
+Per testare diversi fattori di ridimensionamento, usare l'app di esempio [Web Authentication Broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker) caricata in Microsoft Visual Studio Professional 2012, che consente di simulare lo schermo intero e gli stati ridimensionati.
 
-Oltre ai diversi layout documentati in precedenza, assicurarsi di testare la pagina in modo diverso, ad esempio verticale e orizzontale, con diverse impostazioni locali e lingue, nonché con funzionalità di accessibilità come l'opzione "Rendi tutto più grande" attivata.
+Oltre ai diversi layout documentati in precedenza, assicurarsi di testare la pagina con un orientamento dello schermo diverso (ad esempio verticale e orizzontale), impostazioni locali e lingue diverse, nonché con funzionalità di accessibilità come l'opzione "Aumenta le dimensioni" attivata.
 
 I layout disponibili sono:
 
 -   [Schermo intero](#full-screen)
 -   [Finestra ridimensionata](#resized)
--   [Visualizzazione Charm](#charm-view)
+-   [Visualizzazione Accessi](#charm-view)
 -   [Visualizzazione selezione file](#file-picker-view)
 
 ### <a name="full-screen"></a>Schermo intero
@@ -68,54 +68,54 @@ I layout disponibili sono:
 Per il layout a schermo intero, le dimensioni della pagina Web sono:
 
 -   Larghezza: 566 pixel
--   Height: altezza dello schermo (dipende dalla risoluzione dello schermo)
+-   Altezza: altezza dello schermo (dipende dalla risoluzione dello schermo)
 
-Nell'esempio seguente viene illustrata l'interfaccia utente di broker di autenticazione Web nel layout a schermo intero.
+L'esempio seguente mostra l'interfaccia utente del broker di autenticazione Web nel layout a schermo intero.
 
-![esempio di interfaccia utente di broker di autenticazione Web nel layout a schermo intero](images/wab-figure2.png)
+![un esempio di interfaccia utente del broker di autenticazione Web nel layout a schermo intero](images/wab-figure2.png)
 
-### <a name="resized"></a>Ridimensionata
+### <a name="resized"></a>Ridimensionato
 
 Per una finestra ridimensionata, le dimensioni della pagina Web possono essere:
 
 -   Larghezza: 260 pixel
--   Height: altezza dello schermo (dipende dalla risoluzione dello schermo)
+-   Altezza: altezza dello schermo (dipende dalla risoluzione dello schermo)
 
-Nell'esempio seguente viene illustrata l'interfaccia utente di broker di autenticazione Web in una finestra ridimensionata nella pagina Web XBox. Si noti che l'interfaccia utente di broker di autenticazione Web si trova solo sul lato destro dell'acquisizione dello schermo.
+L'esempio seguente mostra l'interfaccia utente di Web Authentication Broker in una finestra ridimensionata nella pagina Web XBox. Si noti che l'interfaccia utente di Web Authentication Broker si trova solo sul lato destro della schermata.
 
-![esempio di interfaccia utente di broker di autenticazione Web in una finestra ridimensionata](images/wab-figure3.png)
+![esempio di interfaccia utente del broker di autenticazione Web in una finestra ridimensionata](images/wab-figure3.png)
 
-### <a name="charm-view"></a>Visualizzazione Charm
+### <a name="charm-view"></a>Visualizzazione Accessi
 
-Per la visualizzazione Charm, le dimensioni della pagina Web sono:
+Per la visualizzazione Accessi, le dimensioni della pagina Web sono:
 
 -   Larghezza: 566 pixel
--   Height: altezza dello schermo (dipende dalla risoluzione dello schermo)
+-   Altezza: altezza dello schermo (dipende dalla risoluzione dello schermo)
 
-Nell'esempio seguente viene illustrata l'interfaccia utente di broker di autenticazione Web nella visualizzazione Charm.
+L'esempio seguente mostra l'interfaccia utente di Web Authentication Broker nella visualizzazione Accessi.
 
-![un esempio mostra l'interfaccia utente di broker di autenticazione Web nella visualizzazione Charm](images/wab-figure4.png)
+![un esempio mostra l'interfaccia utente del broker di autenticazione Web nella visualizzazione accessi](images/wab-figure4.png)
 
 ### <a name="file-picker-view"></a>Visualizzazione selezione file
 
 Per la visualizzazione selezione file, le dimensioni della pagina Web sono:
 
 -   Larghezza: 566 pixel
--   Height: altezza dello schermo (dipende dalla risoluzione dello schermo)
+-   Altezza: altezza dello schermo (dipende dalla risoluzione dello schermo)
 
-Nell'esempio seguente viene illustrata l'interfaccia utente di broker di autenticazione Web nella visualizzazione di selezione file.
+L'esempio seguente mostra l'interfaccia utente di Web Authentication Broker nella visualizzazione selezione file.
 
-![un esempio mostra l'interfaccia utente di broker di autenticazione Web nella visualizzazione selezione file](images/wab-figure5.png)
+![un esempio mostra l'interfaccia utente del broker di autenticazione Web nella visualizzazione selezione file](images/wab-figure5.png)
 
 ## <a name="no-new-windows-by-default"></a>Nessuna nuova finestra per impostazione predefinita
 
-Per impostazione predefinita, nessun URL provocherà l'apertura di una nuova finestra, ma verrà invece visualizzata nella finestra gestore di autenticazione Web. Questo include il metodo JavaScript Window. Open, l'attributo "target" dei collegamenti ipertestuali oppure quando l'utente usa il meccanismo CTRL + clic per forzare l'apertura di una nuova finestra. L'eccezione a questa regola si verifica quando una pagina Web dichiara un collegamento come sicuro per spostarsi in un browser, come descritto nella pagina relativa alla personalizzazione della destinazione dei collegamenti ipertestuali.
+Per impostazione predefinita, nessun URL comporta l'apertura di una nuova finestra, ma verrà invece visualizzato all'interno della finestra Gestore autenticazione Web. Sono inclusi il metodo JavaScript window.open, l'attributo "target" dei collegamenti ipertestuali o quando l'utente usa il meccanismo CTRL+clic per forzare l'apertura di una nuova finestra. L'eccezione a questa regola si verifica quando una pagina Web dichiara un collegamento come sicuro da esplorare in un browser, come descritto in Personalizzazione della destinazione dei collegamenti ipertestuali.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[App di esempio SDK Web Authentication broker](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
+[App di esempio Web Authentication Broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
 </dt> <dt>
 
 [**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)

@@ -1,24 +1,24 @@
 ---
-title: Attributo CropRight di la
-description: Attributo CropRight di la
+title: Attributo CropRight di VML
+description: Attributo CropRight di VML
 ms.assetid: 1e2bd8e8-3d56-435d-bfaf-fb07f6b6fba6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21604fb341840847690e9e086386d46f7124908a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d695bb3fd9e88c3357343860dcbbff820e5a49a22100d59fe46c502b642e31d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796301"
 ---
-# <a name="vml-cropright-attribute"></a>Attributo CropRight di la
+# <a name="vml-cropright-attribute"></a>Attributo CropRight di VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce la percentuale di rimozione dell'immagine dal lato destro. Proprietà di lettura/scrittura. **VgNumber**.
 
@@ -26,25 +26,25 @@ Definisce la percentuale di rimozione dell'immagine dal lato destro. Proprietà 
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* CropRight = " *Expression* " >
+<v: *element* cropright=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . CropRight = "*Expression*"
+*element* .cropright="*expression*"
 
-*espressione* = *elemento*. CropRight
+*expression* = *elemento*.cropright
 
 **Osservazioni:**
 
-La quantità di ritaglio può variare da-1,0 a 1,0. Il valore predefinito è 0. Si noti che il valore 1 non visualizza alcuna immagine. I valori negativi comportano la compressione dell'immagine verso l'interno dal bordo che viene ritagliato (lo spazio vuoto tra l'immagine e il bordo ritagliato verrà riempito con il colore di riempimento della forma). I valori positivi minori di 1 comportano l'estensione dell'immagine rimanente per adattarla alla forma.
+La quantità di ritaglio può variare da -1.0 a 1.0. Il valore predefinito è 0. Si noti che il valore 1 non visualizza alcuna immagine. I valori negativi comporteranno che l'immagine venga compressa verso l'interno dal bordo ritagliato (lo spazio vuoto tra l'immagine e il bordo ritagliato verrà riempito dal colore di riempimento della forma). I valori positivi minori di 1 comportano l'estensione dell'immagine rimanente per adattarla alla forma.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-L'immagine verrà compressa dal lato destro del 20% della larghezza. Lo spazio vuoto tra l'immagine e il bordo destro sarà riempito dal colore di riempimento della forma.
+L'immagine verrà compressa dal lato destro del 20% della larghezza. Lo spazio vuoto tra l'immagine e il bordo destro verrà riempito dal colore di riempimento della forma.
 
 
 ```HTML
@@ -61,6 +61,6 @@ L'immagine verrà compressa dal lato destro del 20% della larghezza. Lo spazio v
 
 
 
- 
+ 
 
- 
+ 

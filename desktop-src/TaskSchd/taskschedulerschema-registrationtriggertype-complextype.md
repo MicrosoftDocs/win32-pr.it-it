@@ -3,7 +3,7 @@ title: Tipo complesso registrationTriggerType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento RegistrationTrigger.
 ms.assetid: 3663c015-67cf-4775-a1a6-4429cce93b96
 keywords:
-- Utilità di pianificazione di tipo complesso registrationTriggerType
+- Tipo complesso registrationTriggerType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2ddb55436a0a6980a8909da636a02ca59244ca85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2dab91ecc0eed065a4ce3eea9d64bebae2e10560a43ab57308ea68e82dc17dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772281"
 ---
 # <a name="registrationtriggertype-complex-type"></a>Tipo complesso registrationTriggerType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento RegistrationTrigger.**](taskschedulerschema-registrationtrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="registrationTriggerType">
@@ -48,13 +48,13 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Elemento                                                                    | Tipo     | Descrizione                                                                                               |
 |----------------------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
-| [**Ritardo**](taskschedulerschema-delay-registrationtriggertype-element.md) | duration | Specifica l'intervallo di tempo tra il momento in cui l'attività viene registrata e l'avvio dell'attività.<br/> |
+| [**Ritardo**](taskschedulerschema-delay-registrationtriggertype-element.md) | duration | Specifica l'intervallo di tempo tra la registrazione dell'attività e l'avvio dell'attività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Oltre agli elementi figlio definiti in questa sezione, l'elemento [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) usa anche elementi figlio definiti dal tipo complesso [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) .
+Oltre agli elementi figlio definiti qui, [**l'elemento RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) usa anche gli elementi figlio definiti dal [**tipo complesso triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Oltre agli elementi figlio definiti in questa sezione, l'elemento [**Registratio
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Oltre agli elementi figlio definiti in questa sezione, l'elemento [**Registratio
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

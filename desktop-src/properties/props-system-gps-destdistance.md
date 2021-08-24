@@ -1,19 +1,19 @@
 ---
-description: Indica la distanza al punto di destinazione.
+description: Indica la distanza dal punto di destinazione.
 ms.assetid: 69e868bf-72ab-4c5e-8305-bb2b0a6ba088
-title: System. GPS. DestDistance
+title: System.GPS.DestDistance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ebd7b95c300dad46f6706cc3ad8e991233b28c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff21d530e9d402503b7707724d4455ea6fbcb43815c1879d71ea7f474f910cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845011"
 ---
-# <a name="systemgpsdestdistance"></a>System. GPS. DestDistance
+# <a name="systemgpsdestdistance"></a>System.GPS.DestDistance
 
-Indica la distanza al punto di destinazione. Calcolato da PKEY \_ GPS \_ DESTDISTANCENUMERATOR e PKEY \_ GPS \_ DestDistanceDenominator.
+Indica la distanza dal punto di destinazione. Calcolato da PKEY \_ GPS \_ DestDistanceNumerator e PKEY \_ GPS \_ DestDistanceDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

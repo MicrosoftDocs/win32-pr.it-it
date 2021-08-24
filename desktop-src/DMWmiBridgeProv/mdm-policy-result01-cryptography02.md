@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_Cryptography02
-description: La \_ \_ classe Result01 Cryptography02 dei criteri MDM rappresenta i \_ criteri correlati alla crittografia.
+title: MDM_Policy_Result01_Cryptography02 classe
+description: La classe MDM \_ \_ Policy Result01 \_ Cryptography02 rappresenta i criteri correlati alla crittografia.
 ms.assetid: 3ab41bb4-920d-4647-8f05-f6938f51c409
 keywords:
-- Classe MDM_Policy_Result01_Cryptography02
-- Classe MDM_Policy_Result01_Cryptography02, descritta
+- MDM_Policy_Result01_Cryptography02 classe
+- MDM_Policy_Result01_Cryptography02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6beb62d7d9fdba320220c9bb4de5074fce416ac2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db82a5a338762991a0222a20fad10f94bfa4784f70db09ac05d46277c57d91d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796371"
 ---
-# <a name="mdm_policy_result01_cryptography02-class"></a>\_ \_ Classe Result01 Cryptography02 di criteri \_ MDM
+# <a name="mdm_policy_result01_cryptography02-class"></a>Classe \_ Mdm Policy \_ Result01 \_ Cryptography02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Result01 \_ Cryptography02 dei criteri MDM** rappresenta i criteri correlati alla crittografia.
+La **classe MDM Policy \_ \_ Result01 \_ Cryptography02** rappresenta i criteri correlati alla crittografia.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Result01_Cryptography02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ Cryptography02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ Cryptography02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Cryptography02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ Cryptography02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **classe \_ \_ \_ Cryptography02 dei criteri MDM Result01** ha queste proprie
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -71,42 +71,42 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Cryptography".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Cryptography"
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> <dt>
 
 [TLSCipherSuites](/windows/client-management/mdm/policy-csp-cryptography#cryptography-tlsciphersuites)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -129,7 +129,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

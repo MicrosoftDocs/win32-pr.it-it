@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsPhysicalPresenceHardwareEnabled della \_ classe TPM Win32 indica se è possibile impostare la presenza fisica sulla piattaforma con un segnale hardware.
+description: Il metodo IsPhysicalPresenceHardwareEnabled della classe Tpm Win32 indica se la presenza fisica nella piattaforma può essere impostata \_ con un segnale hardware.
 ms.assetid: 65dabfa9-bfbe-4b9b-8e80-02269895c7ad
-title: Metodo IsPhysicalPresenceHardwareEnabled della classe Win32_Tpm
+title: Metodo IsPhysicalPresenceHardwareEnabled della Win32_Tpm
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 674dcaa733d8ec70af172359e3dcde0578955dfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 499ec39741b23583b599407ef43696ab82164f365626c8042586b6b6e4b56deb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797041"
 ---
-# <a name="isphysicalpresencehardwareenabled-method-of-the-win32_tpm-class"></a>Metodo IsPhysicalPresenceHardwareEnabled della \_ classe TPM Win32
+# <a name="isphysicalpresencehardwareenabled-method-of-the-win32_tpm-class"></a>Metodo IsPhysicalPresenceHardwareEnabled della classe Tpm Win32 \_
 
-Il metodo **IsPhysicalPresenceHardwareEnabled** della classe [**\_ TPM Win32**](win32-tpm.md) indica se è possibile impostare la presenza fisica sulla piattaforma con un segnale hardware. Questo valore viene configurato dal produttore della piattaforma in base alla progettazione della piattaforma. La documentazione del produttore della piattaforma può fornire ulteriori informazioni.
+Il **metodo IsPhysicalPresenceHardwareEnabled** della classe [**\_ Tpm Win32**](win32-tpm.md) indica se la presenza fisica nella piattaforma può essere impostata con un segnale hardware. Questo valore viene configurato dal produttore della piattaforma in base alla progettazione della piattaforma. La documentazione del produttore della piattaforma può fornire informazioni aggiuntive.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ uint32 IsPhysicalPresenceHardwareEnabled(
 
 <dl> <dt>
 
-*IsPhysicalPresenceHardwareEnabled* \[ out\]
+*IsPhysicalPresenceHardwareEnabled* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Se **true**, la presenza fisica sulla piattaforma può essere impostata con un segnale hardware.
+Se **true,** la presenza fisica nella piattaforma può essere impostata con un segnale hardware.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-È possibile restituire tutti gli errori del TPM, nonché gli errori specifici dei servizi di base TPM.
+È possibile restituire tutti gli errori TPM e gli errori specifici dei servizi di base TPM.
 
 I codici restituiti comuni sono elencati di seguito.
 
@@ -68,7 +68,7 @@ I codici restituiti comuni sono elencati di seguito.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,11 +76,11 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftTpm<br/>                                            |
-| MOF<br/>                      | <dl> <dt>\_TPM Win32. mof</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                      |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TPM Win32**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> </dl>
 
  

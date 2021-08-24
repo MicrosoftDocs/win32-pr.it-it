@@ -1,7 +1,7 @@
 ---
 description: Ottiene i valori di scala, rotazione e traslazione del set di animazioni.
 ms.assetid: 84fc56f3-15bf-4e27-ad06-57fab94f3a33
-title: 'Metodo ID3DXAnimationSet:: GetSRT (D3dx9anim. h)'
+title: Metodo ID3DXAnimationSet::GetSRT (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b70243dd9aa2f304d80eaff2e2cc7695dad43379
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: baa1b882972a91626b19194f83655ea1839877943f7463be8991167eb72d17fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791071"
 ---
-# <a name="id3dxanimationsetgetsrt-method"></a>Metodo ID3DXAnimationSet:: GetSRT
+# <a name="id3dxanimationsetgetsrt-method"></a>Metodo ID3DXAnimationSet::GetSRT
 
 Ottiene i valori di scala, rotazione e traslazione del set di animazioni.
 
@@ -44,48 +44,48 @@ HRESULT GetSRT(
 
 <dl> <dt>
 
-*PeriodicPosition* \[ in\]
+*PeriodicPosition* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **Double**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Posizione del set di animazioni. La posizione può essere ottenuta chiamando [**ID3DXAnimationSet:: GetPeriodicPosition**](id3dxanimationset--getperiodicposition.md).
+Posizione del set di animazioni. La posizione può essere ottenuta chiamando [**ID3DXAnimationSet::GetPeriodicPosition**](id3dxanimationset--getperiodicposition.md).
 
 </dd> <dt>
 
-*Animazione* \[ di in\]
+*Animazione* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice di animazione.
+Indice dell'animazione.
 
 </dd> <dt>
 
-*pScale* \[ out\]
+*pScale* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore al vettore [**D3DXVECTOR3**](d3dxvector3.md) che descrive la scala del set di animazioni.
+Puntatore al [**vettore D3DXVECTOR3**](d3dxvector3.md) che descrive la scala del set di animazioni.
 
 </dd> <dt>
 
-*protazione* \[ out\]
+*pRotation* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore al quaternione [**D3DXQUATERNION**](d3dxquaternion.md) che descrive la rotazione del set di animazioni.
+Puntatore al [**quaternione D3DXQUATERNION**](d3dxquaternion.md) che descrive la rotazione del set di animazioni.
 
 </dd> <dt>
 
-*pTranslation* \[ out\]
+*pTranslation* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore al vettore [**D3DXVECTOR3**](d3dxvector3.md) che descrive la traduzione del set di animazioni.
+Puntatore al [**vettore D3DXVECTOR3**](d3dxvector3.md) che descrive la traslazione del set di animazioni.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Puntatore al vettore [**D3DXVECTOR3**](d3dxvector3.md) che descrive la traduzion
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md).
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR.**](./d3dxerr.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Risorsa RCDATA
-description: Definisce una risorsa di dati non elaborati per un'applicazione. Le risorse dei dati non elaborati consentono l'inclusione di dati binari direttamente nel file eseguibile.
+description: Definisce una risorsa dati non elaborati per un'applicazione. Le risorse dati non elaborati consentono l'inclusione di dati binari direttamente nel file eseguibile.
 ms.assetid: 7535cb06-858b-4726-aaa5-43519f84d0e4
 keywords:
-- Menu risorse RCDATA e altre risorse
+- Menu delle risorse RCDATA e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44de0e71e3ba744f668535950224129b91bc3653
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 62f813bde1195d8adcad708c40857cc11b1e7b70f696455168e174a4bf2f6cf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103956004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847041"
 ---
 # <a name="rcdata-resource"></a>Risorsa RCDATA
 
-Definisce una risorsa di dati non elaborati per un'applicazione. Le risorse dei dati non elaborati consentono l'inclusione di dati binari direttamente nel file eseguibile.
+Definisce una risorsa dati non elaborati per un'applicazione. Le risorse dati non elaborati consentono l'inclusione di dati binari direttamente nel file eseguibile.
 
 ``` syntax
 nameID RCDATA  [optional-statements] {raw-data  ...}
@@ -31,48 +31,48 @@ nameID RCDATA  [optional-statements] {raw-data  ...}
 
 <dl> <dt>
 
-<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*nameID*
+<span id="nameID"></span><span id="nameid"></span><span id="NAMEID"></span>*Nameid*
 </dt> <dd>
 
-Nome univoco o valore Unsigned Integer a 16 bit che identifica la risorsa.
+Nome univoco o valore intero senza segno a 16 bit che identifica la risorsa.
 
 </dd> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*facoltativo-istruzioni*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*istruzioni facoltative*
 </dt> <dd>
 
-Questo parametro può essere costituito da zero o più delle istruzioni seguenti.
+Questo parametro può essere zero o più delle istruzioni seguenti.
 
 
 
 | Istruzione                                                        | Descrizione                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Caratteristiche**](characteristics-statement.md) *DWORD*     | Informazioni definite dall'utente su una risorsa che possono essere usate da strumenti per la lettura e la scrittura di file di risorse. Per ulteriori informazioni, vedere [**caratteristiche**](characteristics-statement.md). |
-| [](language-statement.md) *Lingua* lingua, *lingua* | Lingua per la risorsa. Per ulteriori informazioni, vedere [**Language**](language-statement.md).                                                                                            |
-| [](version-statement.md) *DWORD* versione                     | Numero di versione definito dall'utente per la risorsa che può essere usato da strumenti che leggono e scrivono file di risorse. Per ulteriori informazioni, vedere [**Version**](version-statement.md).              |
+| [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Informazioni definite dall'utente su una risorsa che possono essere usate dagli strumenti che leggono e scrivono file di risorse. Per altre informazioni, vedere [**CHARACTERISTICS.**](characteristics-statement.md) |
+| [**LINGUA**](language-statement.md) *,* *sottolinguaggio* | Lingua per la risorsa. Per altre informazioni, vedere [**LANGUAGE**](language-statement.md).                                                                                            |
+| [**VERSION**](version-statement.md) *dword*                     | Numero di versione definito dall'utente per la risorsa che può essere usato dagli strumenti che leggono e scrivono file di risorse. Per altre informazioni, vedere [**VERSION.**](version-statement.md)              |
 
 
 
- 
+ 
 
 </dd> <dt>
 
 <span id="raw-data"></span><span id="RAW-DATA"></span>*dati non elaborati*
 </dt> <dd>
 
-Dati non elaborati costituiti da uno o più numeri interi o stringhe di caratteri. I numeri interi possono essere specificati in formato decimale, ottale o esadecimale. Per essere compatibile con Windows a 16 bit, i numeri interi vengono archiviati come valori di **Word** . È possibile archiviare un valore integer come valore **DWORD** qualificando l'Integer con il suffisso "L".
+Dati non elaborati costituiti da uno o più numeri interi o stringhe di caratteri. I numeri interi possono essere specificati in formato decimale, ottale o esadecimale. Per essere compatibili con le versioni a 16 bit Windows, i numeri interi vengono archiviati come **valori WORD.** È possibile archiviare un numero intero **come valore DWORD** qualificando l'intero con il suffisso "L".
 
-Le stringhe sono racchiuse tra virgolette. RC non aggiunge automaticamente un carattere di terminazione null a una stringa. Ogni stringa è una sequenza dei caratteri ANSI specificati, a meno che non venga qualificata come stringa di caratteri wide con il prefisso L.
+Le stringhe sono racchiuse tra virgolette. RC non aggiunge automaticamente un carattere Null di terminazione a una stringa. Ogni stringa è una sequenza dei caratteri ANSI specificati, a meno che non venga qualificata come stringa di caratteri wide con il prefisso L.
 
-Il blocco di dati inizia in un limite **DWORD** e RC non esegue la spaziatura interna o l'allineamento dei dati all'interno del blocco di *dati non elaborati* . È responsabilità dell'utente assicurare l'allineamento corretto dei dati all'interno del blocco.
+Il blocco di dati inizia su un limite **DWORD** e RC non esegue la spaziatura interna o l'allineamento dei dati all'interno del *blocco di dati non* elaborati. È responsabilità dell'utente garantire il corretto allineamento dei dati all'interno del blocco.
 
 </dd> </dl>
 
-Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [attributi di risorse comuni](common-resource-attributes.md).
+Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [Attributi comuni delle risorse.](common-resource-attributes.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo dell'istruzione **RCDATA** :
+Nell'esempio seguente viene illustrato l'utilizzo **dell'istruzione RCDATA:**
 
 ``` syntax
 resname RCDATA
@@ -90,27 +90,27 @@ resname RCDATA
 
 <dl> <dt>
 
-[**ACCELERATORI**](accelerators-resource.md)
+[**Acceleratori**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARATTERISTICHE**](characteristics-statement.md)
+[**Caratteristiche**](characteristics-statement.md)
 </dt> <dt>
 
-[**LINGUAGGIO**](language-statement.md)
+[**Lingua**](language-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menu**](menu-resource.md)
 </dt> <dt>
 
-[**UN'STRINGTABLE**](stringtable-resource.md)
+[**Stringtable**](stringtable-resource.md)
 </dt> <dt>
 
 [**Versione**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

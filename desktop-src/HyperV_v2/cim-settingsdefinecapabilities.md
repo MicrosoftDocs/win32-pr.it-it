@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra le proprietà di un' \_ istanza CIM SettingData e un' \_ istanza di funzionalità CIM.
+description: Rappresenta un'associazione tra le proprietà di un'istanza \_ CiM SettingData e un'istanza di \_ Funzionalità CIM.
 ms.assetid: f3364779-baeb-4b84-a0e6-b2a60d1661bd
-title: Classe CIM_SettingsDefineCapabilities
+title: CIM_SettingsDefineCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d3c36e7c24702578704e849820abf2b1769c91c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b53f0e72e21b73932c144602308ee599c523ea755b45dae12774109f6a9e010f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899661"
 ---
-# <a name="cim_settingsdefinecapabilities-class"></a>CIM \_ SettingsDefineCapabilities (classe)
+# <a name="cim_settingsdefinecapabilities-class"></a>Classe CIM \_ SettingsDefineCapabilities
 
-Rappresenta un'associazione tra le proprietà di un'istanza [**CIM \_ SettingData**](cim-settingdata.md) e un'istanza di [**\_ funzionalità CIM**](cim-capabilities.md) .
+Rappresenta un'associazione tra le proprietà di [**un'istanza \_ CiM SettingData**](cim-settingdata.md) e [**un'istanza di \_ Funzionalità CIM.**](cim-capabilities.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,29 +45,29 @@ class CIM_SettingsDefineCapabilities : CIM_Component
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SettingsDefineCapabilities** presenta questi tipi di membri:
+La **classe CIM \_ SettingsDefineCapabilities** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SettingsDefineCapabilities** dispone di queste proprietà.
+La **classe CIM \_ SettingsDefineCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ funzionalità CIM**
+Tipo di dati: **funzionalità \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Aggregate,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Riferimento all'istanza di [**\_ funzionalità CIM**](cim-capabilities.md) .
+Riferimento [**all'istanza \_ di Funzionalità CIM.**](cim-capabilities.md)
 
 </dd> <dt>
 
@@ -83,23 +83,23 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Riferimento all'istanza di [**CIM \_ SettingData**](cim-settingdata.md) usata per definire l'istanza [**di \_ funzionalità CIM**](cim-capabilities.md) .
+Riferimento [**all'istanza di CIM \_ SettingData**](cim-settingdata.md) usata per definire l'istanza [**delle funzionalità CIM. \_**](cim-capabilities.md)
 
 </dd> <dt>
 
 **PropertyPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**required**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**ValueRole**","**CIM \_ SettingsDefineCapabilities**.**ValueRange**")
+Qualificatori: [**obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**ValueRole**", "**CIM \_ SettingsDefineCapabilities**.**ValueRange**")
 </dt> </dl>
 
-Indica se le proprietà non null e non chiave dell'istanza [**\_ SettingData CIM**](cim-settingdata.md) associata vengono gestite in modo indipendente o come set correlato. Ad esempio, un set indipendente di proprietà massime può essere definito quando non esiste alcuna relazione tra ogni proprietà. Al contrario, potrebbe essere necessario definire diversi set correlati di proprietà massime quando i valori massimi di ciascuno dipendono da altri.
+Indica se le proprietà non null non chiave dell'istanza [**\_ CIM SettingData**](cim-settingdata.md) associata vengono considerate in modo indipendente o come set correlato. Ad esempio, un set indipendente di proprietà massime potrebbe essere definito quando non esiste alcuna relazione tra ogni proprietà. Al contrario, potrebbe essere necessario definire diversi set correlati di proprietà massime quando i valori massimi di ogni sono dipendenti da alcune delle altre.
 
 <dt>
 
@@ -119,7 +119,7 @@ Indica se le proprietà non null e non chiave dell'istanza [**\_ SettingData CIM
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -129,16 +129,16 @@ Indica se le proprietà non null e non chiave dell'istanza [**\_ SettingData CIM
 **ValueRange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**PropertyPolicy**","**CIM \_ SettingsDefineCapabilities**.**ValueRole**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**PropertyPolicy**", "**CIM \_ SettingsDefineCapabilities**.**ValueRole**")
 </dt> </dl>
 
-Indica il tipo di intervallo di valori utilizzato dalle proprietà delle proprietà non null e non chiave dell'istanza [**\_ SettingData CIM**](cim-settingdata.md) .
+Indica il tipo di intervallo di valori usato dalle proprietà delle proprietà non null e non chiave [**dell'istanza \_ CiM SettingData.**](cim-settingdata.md)
 
 <dt>
 
@@ -151,7 +151,7 @@ Indica il tipo di intervallo di valori utilizzato dalle proprietà delle proprie
 
 <span id="Minimums"></span><span id="minimums"></span><span id="MINIMUMS"></span>
 
-**Minime** (1)
+**Valori minimi** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -172,38 +172,38 @@ Indica il tipo di intervallo di valori utilizzato dalle proprietà delle proprie
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ValueRole**
+**Ruolo valore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**PropertyPolicy**","**CIM \_ SettingsDefineCapabilities**.**ValueRange**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SettingsDefineCapabilities**.**PropertyPolicy**", "**CIM \_ SettingsDefineCapabilities**.**ValueRange**")
 </dt> </dl>
 
-Semantica aggiuntiva per l'interpretazione delle proprietà non null e non chiave dell'istanza di [**\_ SettingData CIM**](cim-settingdata.md) .
+Semantica aggiuntiva per l'interpretazione delle proprietà non null e non chiave [**dell'istanza \_ CiM SettingData.**](cim-settingdata.md)
 
-"Default" indica che i valori delle proprietà dell'istanza di SettingData del componente verranno usati come valori predefiniti, quando viene creata una nuova istanza di SettingData per gli elementi le cui funzionalità sono definite dall'istanza delle funzionalità associate.
+"Default" indica che i valori delle proprietà dell'istanza settingData del componente verranno usati come valori predefiniti quando viene creata una nuova istanza di SettingData per gli elementi le cui funzionalità sono definite dall'istanza capabilities associata.
 
-Nelle istanze di SettingData, per determinate proprietà aventi lo stesso scopo semantico, è necessario specificare al massimo una tale istanza di SettingData come valore predefinito.
+In tutte le istanze di settingdata, per particolari proprietà con lo stesso scopo semantico, al massimo un'istanza di settingdata di questo tipo deve essere specificata come predefinita.
 
-"Optimal" indica che l'istanza di SettingData rappresenta i valori delle impostazioni ottimali per gli elementi associati all'istanza delle funzionalità associate. Più istanze di SettingData del componente possono essere dichiarate come ottimali. " Mean "indica che le proprietà numeriche non null, non chiave, non enumerate, non booleane dell'istanza di SettingData associata rappresentano un punto medio lungo una certa dimensione. Per diverse combinazioni di proprietà SettingData, è possibile che più istanze di SettingData del componente siano dichiarate come "Mean". "Supported" indica che le proprietà non null e non chiave dell'istanza di SettingData del componente rappresentano un set di valori di proprietà supportati che non sono altrimenti qualificati.
+"Optimal" indica che l'istanza settingData rappresenta valori di impostazione ottimali per gli elementi associati all'istanza di funzionalità associata. Più istanze settingData del componente possono essere dichiarate come ottimali." Mean" indica che le proprietà numeriche non Null, non chiave, non enumerate, non booleane dell'istanza di SettingData associata rappresentano un punto medio lungo una dimensione. Per diverse combinazioni di proprietà SettingData, più istanze di SettingData del componente possono essere dichiarate come "Mean". "Supported" indica che le proprietà non null e non chiave dell'istanza Component SettingData rappresentano un set di valori di proprietà supportati che non sono altrimenti qualificati.
 
 <dt>
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Valore predefinito** (0)
+**Impostazione** predefinita (0)
 
 
 </dt> <dd></dd> <dt>
@@ -231,7 +231,7 @@ Nelle istanze di SettingData, per determinate proprietà aventi lo stesso scopo 
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -246,8 +246,8 @@ Nelle istanze di SettingData, per determinate proprietà aventi lo stesso scopo 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -256,7 +256,7 @@ Nelle istanze di SettingData, per determinate proprietà aventi lo stesso scopo 
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

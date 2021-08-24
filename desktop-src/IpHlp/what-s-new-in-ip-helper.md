@@ -4,12 +4,12 @@ ms.assetid: fa9d72d0-2f9c-433d-b05a-8423664b2e3e
 title: Novità dell'helper IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2c1a6eebb3e9e785e8988b822df0b2a80ae6eba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3141797e96442f34a94c2d2afc37585ce6dbc944e7fb35cf9b4602afa042c95a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897621"
 ---
 # <a name="whats-new-in-ip-helper"></a>Novità dell'helper IP
 
@@ -17,19 +17,19 @@ ms.locfileid: "104349016"
 
 Le funzionalità seguenti sono state aggiunte alle API helper IP in Windows 8 e Windows Server 2012.
 
-Funzione che recupera le stime della larghezza di banda cronologica per una connessione di rete. Per altre informazioni, vedere:
+Funzione che recupera stime cronologiche della larghezza di banda per una connessione di rete. Per altre informazioni, vedere:
 
 -   [**GetIpNetworkConnectionBandwidthEstimates**](/windows/desktop/api/Netioapi/nf-netioapi-getipnetworkconnectionbandwidthestimates)
 
-Struttura che contiene informazioni sulle stime della larghezza di banda disponibili e la varianza associata come determinato dallo stack TCP/IP. Per altre informazioni, vedere:
+Struttura che contiene informazioni sulle stime della larghezza di banda disponibili e sulla varianza associata, come determinato dallo stack TCP/IP. Per altre informazioni, vedere:
 
--   [**\_informazioni sulla larghezza di banda nl \_**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
+-   [**INFORMAZIONI SULLA LARGHEZZA \_ DI BANDA \_ NL**](/windows/desktop/api/Nldef/ns-nldef-nl_bandwidth_information)
 
 ## <a name="windows-7-and-windows-server-2008-r2"></a>Windows 7 e Windows Server 2008 R2
 
 Le funzionalità seguenti sono state aggiunte alle API helper IP in Windows 7 e Windows Server 2008 R2.
 
-Funzioni che convertono un indirizzo Ethernet tra un formato binario e un formato di stringa per l'indirizzo MAC Ethernet. Per altre informazioni, vedere:
+Funzioni che convertono un indirizzo Ethernet tra un formato binario e un formato stringa per l'indirizzo MAC Ethernet. Per altre informazioni, vedere:
 
 -   [**RtlEthernetAddressToString**](/windows/desktop/api/ip2string/nf-ip2string-rtlethernetaddresstostringa)
 -   [**RtlEthernetStringToAddress**](/windows/desktop/api/ip2string/nf-ip2string-rtlethernetstringtoaddressa)
@@ -38,13 +38,13 @@ Funzioni che convertono un indirizzo Ethernet tra un formato binario e un format
 
 Le funzioni seguenti sono state aggiunte alle API helper IP in Windows Server 2008 e Windows Vista con Service Pack 1 (SP1).
 
-Funzione che funziona con IPv4 e il Internet Control Message Protocol (ICMP). Per altre informazioni, vedere:
+Funzione che funziona con IPv4 e Internet Control Message Protocol (ICMP). Per altre informazioni, vedere:
 
 -   [**IcmpSendEcho2Ex**](/windows/desktop/api/Icmpapi/nf-icmpapi-icmpsendecho2ex)
 
 ## <a name="windows-vista"></a>Windows Vista
 
-Sono stati aggiunti i seguenti gruppi di funzioni alle API helper IP in Windows Vista e versioni successive.
+I gruppi di funzioni seguenti sono stati aggiunti alle API helper IP Windows Vista e versioni successive.
 
 Funzioni che funzionano con IPv6 e IPv4 per la conversione dell'interfaccia. Per altre informazioni, vedere:
 
@@ -57,8 +57,8 @@ Funzioni che funzionano con IPv6 e IPv4 per la conversione dell'interfaccia. Per
 -   [**ConvertInterfaceLuidToNameW**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/desktop/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**Se \_ indextoname**](/windows/desktop/api/Netioapi/nf-netioapi-if_indextoname)
--   [**Se \_ nametoindex**](/windows/desktop/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**if \_ indextoname**](/windows/desktop/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**if \_ nametoindex**](/windows/desktop/api/Netioapi/nf-netioapi-if_nametoindex)
 
 Funzioni che funzionano con IPv6 e IPv4 per la gestione dell'interfaccia. Per altre informazioni, vedere:
 
@@ -88,11 +88,11 @@ Funzioni che funzionano con IPv6 e IPv4 per la gestione degli indirizzi IP. Per 
 -   [**NotifyStableUnicastIpAddressTable**](/windows/desktop/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 -   [**SetUnicastIpAddressEntry**](/windows/desktop/api/Netioapi/nf-netioapi-setunicastipaddressentry)
 
-Funzione che funziona sia con IPv6 sia con IPv4 per la gestione della memoria della tabella IP. Per altre informazioni, vedere:
+Funzione che funziona con IPv6 e IPv4 per la gestione della memoria delle tabelle IP. Per altre informazioni, vedere:
 
 -   [**FreeMibTable**](/windows/desktop/api/Netioapi/nf-netioapi-freemibtable)
 
-Funzioni che funzionano con IPv6 e IPv4 per la gestione indirizzi IP adiacenti. Per altre informazioni, vedere:
+Funzioni che funzionano sia con IPv6 che con IPv4 per la gestione degli indirizzi adiacenti IP. Per altre informazioni, vedere:
 
 -   [**CreateIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -103,7 +103,7 @@ Funzioni che funzionano con IPv6 e IPv4 per la gestione indirizzi IP adiacenti. 
 -   [**ResolveNeighbor**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-resolveneighbor)
 -   [**SetIpNetEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-setipnetentry2)
 
-Funzioni che funzionano con IPv6 e IPv4 per la gestione dei percorsi IP. Per altre informazioni, vedere:
+Funzioni che funzionano con IPv6 e IPv4 per la gestione del percorso IP. Per altre informazioni, vedere:
 
 -   [**FlushIpPathTable**](/windows/desktop/api/Netioapi/nf-netioapi-flushippathtable)
 -   [**GetIpPathEntry**](/windows/desktop/api/Netioapi/nf-netioapi-getippathentry)
@@ -120,7 +120,7 @@ Funzioni che funzionano con IPv6 e IPv4 per la gestione delle route IP. Per altr
 -   [**SetIpForwardEntry2**](/windows/desktop/api/Netioapi/nf-netioapi-setipforwardentry2)
 -   [**SetIpStatisticsEx**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-setipstatisticsex)
 
-Funzioni che funzionano con IPv6 e IPv4 per la notifica. Per altre informazioni, vedere:
+Funzioni che funzionano sia con IPv6 che con IPv4 per la notifica. Per altre informazioni, vedere:
 
 -   [**CancelMibChangeNotify2**](/windows/desktop/api/Netioapi/nf-netioapi-cancelmibchangenotify2)
 -   [**NotifyIpInterfaceChange**](/windows/desktop/api/Netioapi/nf-netioapi-notifyipinterfacechange)
@@ -141,20 +141,20 @@ Funzioni che funzionano con Transmission Control Protocol (TCP) e UDP (User Data
 -   [**GetTcpTable2**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-gettcptable2)
 -   [**GetUdp6Table**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getudp6table)
 
-Funzioni che funzionano con Transmission Control Protocol (TCP) per recuperare le statistiche TCP estese in una connessione. Per altre informazioni, vedere:
+Funzioni che funzionano con Transmission Control Protocol (TCP) per recuperare statistiche TCP estese in una connessione. Per altre informazioni, vedere:
 
 -   [**GetPerTcp6ConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getpertcp6connectionestats)
 -   [**GetPerTcpConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getpertcpconnectionestats)
 -   [**SetPerTcp6ConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-setpertcp6connectionestats)
 -   [**SetPerTcpConnectionEStats**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-setpertcpconnectionestats)
 
-Nuove funzioni che funzionano per la gestione client IPv6 Teredo. Per altre informazioni, vedere:
+Nuove funzioni che funzionano per la Teredo client IPv6. Per altre informazioni, vedere:
 
 -   [**GetTeredoPort**](/windows/desktop/api/Netioapi/nf-netioapi-getteredoport)
 -   [**NotifyTeredoPortChange**](/windows/desktop/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/desktop/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-Funzioni di utilità che forniscono conversioni tra gli indirizzi IP e le rappresentazioni di stringa degli indirizzi IP. Per altre informazioni, vedere:
+Funzioni di utilità che forniscono conversioni tra indirizzi IP e rappresentazioni di stringa di indirizzi IP. Per altre informazioni, vedere:
 
 -   [**RtlIpv4AddressToString**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv4addresstostringa)
 -   [**RtlIpv4AddressToStringEx**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv4addresstostringexw)
@@ -165,7 +165,7 @@ Funzioni di utilità che forniscono conversioni tra gli indirizzi IP e le rappre
 -   [**RtlIpv6StringToAddress**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/desktop/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-Funzioni che forniscono prenotazioni permanenti per un blocco consecutivo di porte TCP o UDP nel computer locale. Per altre informazioni, vedere:
+Funzioni che forniscono prenotazioni persistenti per un blocco consecutivo di porte TCP o UDP nel computer locale. Per altre informazioni, vedere:
 
 -   [**CreatePersistentTcpPortReservation**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-createpersistenttcpportreservation)
 -   [**CreatePersistentUdpPortReservation**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-createpersistentudpportreservation)

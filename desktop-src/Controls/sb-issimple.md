@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_ISSIMPLE (COMmctrl. h)
+title: SB_ISSIMPLE messaggio (Commctrl.h)
 description: Controlla un controllo barra di stato per determinare se è in modalità semplice.
 ms.assetid: f4362bc3-1852-4569-af9b-96d2da4f0606
 keywords:
-- Controlli di Windows Message SB_ISSIMPLE
+- SB_ISSIMPLE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a5c523bef45065b103051962d7f147816c505d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e983da6ebec42131800b9faa168c0d2cb6c247da936951a8eb933f8b80af03f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825891"
 ---
-# <a name="sb_issimple-message"></a>\_Messaggio SB semplice
+# <a name="sb_issimple-message"></a>Messaggio \_ SB ISSIMPLE
 
 Controlla un controllo barra di stato per determinare se è in modalità semplice.
 
@@ -37,7 +37,7 @@ Controlla un controllo barra di stato per determinare se è in modalità semplic
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se il controllo barra di stato è in modalità semplice o zero in caso contrario.
+Restituisce un valore diverso da zero se il controllo barra di stato è in modalità semplice oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore diverso da zero se il controllo barra di stato è in modal
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -3,36 +3,36 @@ title: Per recuperare esempi di supporti con il lettore sincrono
 description: Per recuperare esempi di supporti con il lettore sincrono
 ms.assetid: 7e228a0b-e29d-485e-b2ef-81c0311ca828
 keywords:
-- Formato di sistemi avanzati (ASF), recupero di esempi di supporti
+- Advanced Systems Format (ASF), recupero di esempi di supporti
 - ASF (Advanced Systems Format), recupero di esempi di supporti
+- Advanced Systems Format (ASF), lettori sincroni
 - ASF (Advanced Systems Format), lettori sincroni
-- ASF (formato avanzato dei sistemi), lettori sincroni
 - lettori sincroni, recupero di esempi di supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1fd341ea9616b18a5e65cfa8c1134e0f1be44b5
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 2e1ec4fc7e8a894de304ea828cef9d8e019f4cdedfd2fbd851a427382ba741a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807431"
 ---
 # <a name="to-retrieve-media-samples-with-the-synchronous-reader"></a>Per recuperare esempi di supporti con il lettore sincrono
 
-È necessario richiedere ogni campione uno alla volta dal lettore sincrono. In questo modo si ottiene un maggiore controllo sugli esempi ricevuti e quando vengono ricevuti.
+È necessario richiedere ogni esempio uno alla volta dal lettore sincrono. In questo modo si ha maggiore controllo sui campioni ricevuti e su quando vengono ricevuti.
 
-Usare il metodo [**IWMSyncReader:: GetNextSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample) per recuperare un esempio. È necessario passare per lo più i puntatori alle variabili che verranno compilate con informazioni sull'esempio recuperato come parametri. L'unico parametro di input è *wStreamNum*. Se si passa un numero di flusso, **GetNextSample** recupererà l'esempio successivo con il numero di flusso specificato. Se si passa zero per *wStreamNum*, viene recuperato il seguente esempio che si verifica in ordine cronologico nel file.
+Usare il [**metodo IWMSyncReader::GetNextSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample) per recuperare un esempio. È necessario passare principalmente puntatori a variabili che verranno riempite con informazioni sull'esempio recuperato come parametri. L'unico parametro di input è *wStreamNum*. Se si passa un numero di flusso, **GetNextSample** recupererà l'esempio successivo con il numero di flusso specificato. Se si passa zero per *wStreamNum,* viene recuperato l'esempio successivo che si verifica in ordine cronologico nel file.
 
-Per impostazione predefinita, il lettore sincrono recupera tutti gli esempi dagli output in un file in ordine cronologico. Se si chiama **GetNextSample** e non sono disponibili altri esempi da ottenere, viene restituito NS \_ e \_ nessun \_ altro \_ campione, ovvero un codice di errore non riuscito. Quando si esegue la codifica, è possibile semplicemente scorrere gli esempi fino a quando il metodo non ha esito negativo.
+Per impostazione predefinita, il lettore sincrono recupera tutti gli esempi dagli output in un file in ordine cronologico. Se si chiama **GetNextSample** e non sono disponibili altri esempi da ottenere, restituirà NS E NO MORE SAMPLES, che è un codice \_ di errore non \_ \_ \_ riuscito. Quando si codifica pertanto, è possibile eseguire semplicemente un ciclo di esempi fino a quando il metodo non ha esito negativo.
 
 > [!Note]  
-> Per assicurarsi che il lettore sincrono fornisca durate di esempio corrette per i flussi video, è necessario innanzitutto configurare l'output del flusso. Chiamare il metodo [**IWMSyncReader:: SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputsetting) per impostare l' \_ impostazione g wszVideoSampleDurations su **true**.
+> Per assicurarsi che il lettore sincrono consegnerà le durate di campionamento corrette per i flussi video, è prima necessario configurare l'output del flusso. Chiamare il [**metodo IWMSyncReader::SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputsetting) per impostare g \_ wszVideoSampleDurations su **TRUE.**
 
- 
+ 
 
 Codice di esempio
 
-Nell'esempio di codice seguente viene illustrato come utilizzare **GetNextSample** per recuperare tutti gli esempi in un file.
+Il codice di esempio seguente illustra come usare **GetNextSample** per recuperare tutti gli esempi in un file.
 
 
 ```C++
@@ -76,9 +76,9 @@ while (SUCCEEDED(hr));
 [**Lettura di file con il lettore sincrono**](reading-files-with-the-synchronous-reader.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,25 +3,25 @@ title: Uso di attributi di metadati complessi
 description: Uso di attributi di metadati complessi
 ms.assetid: 8269efe4-331f-4b4b-b888-66b45c638153
 keywords:
-- Windows Media Format SDK, attributi di metadati complessi
+- Windows MEDIA Format SDK, attributi di metadati complessi
 - Advanced Systems Format (ASF), attributi di metadati complessi
 - ASF (Advanced Systems Format), attributi di metadati complessi
 - metadati, attributi complessi
 - attributi di metadati complessi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cd03c656a8cba5342d21e41932365455daa8bfa
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8245d2fbc07878a73e304cfc573e05e93b605185ece93655dae7a8bdeff0d9d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104336337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807251"
 ---
 # <a name="using-complex-metadata-attributes"></a>Uso di attributi di metadati complessi
 
-Windows Media Format SDK supporta attributi di metadati complessi, ovvero attributi con valori rappresentati da una struttura. Poiché tutti gli attributi devono avere un tipo di dati definito nell'enumerazione [**WMT \_ attr \_ DataType**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) , tutti gli attributi di metadati complessi vengono considerati **\_ \_ binari di tipo WMT**. Quando si scrive un attributo complesso, eseguire il cast del puntatore alla struttura come puntatore di byte. Quando si recupera un attributo complesso, eseguire il cast della matrice di byte impostata da [**IWMHeaderInfo3:: GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) come struttura appropriata.
+L Windows Media Format SDK supporta attributi di metadati complessi, ovvero attributi con valori rappresentati da una struttura . Poiché tutti gli attributi devono avere un tipo di dati definito nell'enumerazione [**WMT \_ ATTR \_ DATATYPE,**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) tutti gli attributi di metadati complessi vengono considerati **come WMT \_ TYPE \_ BINARY.** Quando si scrive un attributo complesso, eseguire il cast del puntatore alla struttura come puntatore di byte. Quando si recupera un attributo complesso, eseguire il cast della matrice di byte impostata da [**IWMHeaderInfo3::GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) come struttura appropriata.
 
-Negli esempi di codice seguenti viene illustrato come impostare e recuperare un attributo di metadati complessi. La prima funzione aggiunge un attributo di testo utente, la seconda funzione ne recupera una. Per ulteriori informazioni sull'utilizzo di questi esempi, vedere [utilizzo degli esempi di codice](using-the-code-examples.md).
+Negli esempi di codice seguenti viene illustrato come impostare e recuperare un attributo di metadati complesso. La prima funzione aggiunge un attributo di testo utente, la seconda funzione ne recupera uno. Per altre informazioni su come usare questi esempi, vedere [Uso degli esempi di codice.](using-the-code-examples.md)
 
 
 ```C++
@@ -133,12 +133,12 @@ Exit:
 
 <dl> <dt>
 
-[**Utilizzo dei metadati**](working-with-metadata.md)
+[**Uso dei metadati**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

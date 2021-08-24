@@ -1,7 +1,7 @@
 ---
 description: Recupera i parametri della superficie di rendering.
 ms.assetid: 4f46a4c6-7c50-479c-b2f5-24edff590c57
-title: 'Metodo ID3DXRenderToSurface:: getdesc (D3dx9core. h)'
+title: Metodo ID3DXRenderToSurface::GetDesc (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 00824c6b418a3e6707ebfd588d8d32d4e38f173d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7dd6787ad8a81491e92af2a5ec1a16253af4cd0a0f8cb075dde01461b0010d45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790481"
 ---
-# <a name="id3dxrendertosurfacegetdesc-method"></a>Metodo ID3DXRenderToSurface:: getdesc
+# <a name="id3dxrendertosurfacegetdesc-method"></a>Metodo ID3DXRenderToSurface::GetDesc
 
 Recupera i parametri della superficie di rendering.
 
@@ -40,12 +40,12 @@ HRESULT GetDesc(
 
 <dl> <dt>
 
-*pParameters* \[ out\]
+*pParameters* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **D3DXRTS \_ desc**](d3dxrts-desc.md)\***
+Tipo: **[ **D3DXRTS \_ DESC**](d3dxrts-desc.md)\***
 
-Puntatore a una struttura [**D3DXRTS \_ desc**](d3dxrts-desc.md) , che descrive i parametri della superficie di rendering.
+Puntatore a [**una struttura \_ DESC D3DXRTS,**](d3dxrts-desc.md) che descrive i parametri della superficie di rendering.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

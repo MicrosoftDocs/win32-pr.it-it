@@ -1,17 +1,17 @@
 ---
 description: Tipo di lettore di smart card.
 ms.assetid: 380599cb-da28-4f64-8c72-13b79a18d0e0
-title: System. Devices. SmartCards. ReaderKind
+title: System.Devices.SmartCards.ReaderKind
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 519f9ad2ae61bd9c6fc046f24881e03e7484caac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6450f909a5fb815928dffa2a5aacbd7b4e429e24e4f2ed9e710cb2023b57167
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845356"
 ---
-# <a name="systemdevicessmartcardsreaderkind"></a>System. Devices. SmartCards. ReaderKind
+# <a name="systemdevicessmartcardsreaderkind"></a>System.Devices.SmartCards.ReaderKind
 
 Tipo di lettore di smart card.
 
@@ -108,13 +108,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -123,13 +123,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -138,13 +138,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

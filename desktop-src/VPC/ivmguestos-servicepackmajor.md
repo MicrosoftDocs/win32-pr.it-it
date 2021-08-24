@@ -1,11 +1,11 @@
 ---
-title: Proprietà IVMGuestOS ServicePackMajor (VPCCOMInterfaces. h)
-description: La versione principale del Service Pack del sistema operativo guest in esecuzione nella macchina virtuale.
+title: Proprietà ServicePackMajor IVMGuestOS (VPCCOMInterfaces.h)
+description: Versione principale del Service Pack del sistema operativo guest in esecuzione nella macchina virtuale.
 ms.assetid: 87dbc4cc-8a8d-468f-9a29-e5047029b032
 keywords:
 - Proprietà ServicePackMajor Virtual PC
 - Proprietà ServicePackMajor Virtual PC, interfaccia IVMGuestOS
-- Interfaccia IVMGuestOS Virtual PC, Proprietà ServicePackMajor
+- Interfaccia IVMGuestOS Virtual PC, proprietà ServicePackMajor
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d1fa89b51e26354ce2983ad42025b1b9a3922d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1e1ba5ac5e1829084b9a6257dc84adfa98553b16f92575e1b0741f1dd17a6cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768221"
 ---
-# <a name="ivmguestosservicepackmajor-property"></a>Proprietà IVMGuestOS:: ServicePackMajor
+# <a name="ivmguestosservicepackmajor-property"></a>Proprietà IVMGuestOS::ServicePackMajor
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-La versione principale del Service Pack del sistema operativo guest in esecuzione nella macchina virtuale.
+Versione principale del Service Pack del sistema operativo guest in esecuzione nella macchina virtuale.
 
 Questa proprietà è di sola lettura.
 
@@ -45,7 +45,7 @@ HRESULT get_ServicePackMajor(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il numero di versione principale del Service Pack più recente installato.
+Numero di versione principale del Service Pack più recente installato.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,10 +54,10 @@ Il numero di versione principale del Service Pack più recente installato.
 | Nome/valore                                                                                                                                                                       | Significato                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                          | L'operazione è stata completata.<br/>                        |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>                            | Il parametro è **null**.<br/>                           |
-| <dl> <dt>Macchina virtuale \_ \_VM E \_ non \_ in esecuzione</dt> <dt>0xA0040206</dt> </dl>               | La macchina virtuale non è in esecuzione.<br/>                               |
-| <dl> <dt>Macchina virtuale \_ E \_ funzionalità aggiuntive \_ \_ non \_ disponibili</dt> <dt>0xA0040505</dt> </dl> | I componenti di integrazione non sono installati in questa macchina virtuale.<br/> |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl>                    | Si è verificato un errore imprevisto.<br/>                    |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>                            | Il parametro è **NULL.**<br/>                           |
+| <dl> <dt>Macchina virtuale \_ E \_ MACCHINA VIRTUALE NON IN \_ \_ ESECUZIONE</dt> <dt>0xA0040206</dt> </dl>               | La macchina virtuale non è in esecuzione.<br/>                               |
+| <dl> <dt>Macchina virtuale \_ FUNZIONALITÀ \_ DELLE AGGIUNTE E NON \_ \_ \_ 0XA0040505</dt> <dt></dt> </dl> | I componenti di integrazione non sono installati in questa macchina virtuale.<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl>                    | Si è verificato un errore imprevisto.<br/>                    |
 
 
 
@@ -67,12 +67,12 @@ Il numero di versione principale del Service Pack più recente installato.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMGuestOS è definito come 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

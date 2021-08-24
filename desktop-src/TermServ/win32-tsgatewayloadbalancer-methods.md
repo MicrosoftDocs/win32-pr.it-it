@@ -1,20 +1,20 @@
 ---
-title: Metodi di Win32_TSGatewayLoadBalancer
-description: La \_ classe Win32 TSGatewayLoadBalancer espone i metodi seguenti.
+title: metodi Win32_TSGatewayLoadBalancer
+description: La classe \_ Win32 TSGatewayLoadBalancer espone i metodi seguenti.
 ms.assetid: 869AA5ED-4C93-45B9-BD57-FE4B98A9BD87
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7adc6c9aab2d0a8dd0b5bb853f9481c0846efceb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b268bded9ccf2b80290ce7fca8ed5bba4af321a0983cc9e95e9220e67136b4cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769881"
 ---
-# <a name="win32_tsgatewayloadbalancer-methods"></a>\_Metodi Win32 TSGatewayLoadBalancer
+# <a name="win32_tsgatewayloadbalancer-methods"></a>Metodi di \_ TSGatewayLoadBalancer Win32
 
-La classe [**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md) espone i metodi seguenti.
+La [**classe \_ Win32 TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,11 +22,11 @@ La classe [**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md) e
 -   [**Metodo DeleteAllServers**](deleteallservers-win32-tsgatewayloadbalancer.md)
 -   [**Metodo DeleteServers**](deleteservers-win32-tsgatewayloadbalancer.md)
 -   [**Metodo IsLoadBalancingServer**](win32-tsgatewayloadbalancer-isloadbalancingserver.md)
--   [**Metodo seservers**](setservers-win32-tsgatewayloadbalancer.md)
+-   [**Metodo SetServers**](setservers-win32-tsgatewayloadbalancer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,49 +1,49 @@
 ---
-title: Informazioni di riferimento sull'API di reindirizzamento dei supporti RemoteFX
-description: L'API di reindirizzamento dei supporti RemoteFX viene usata da terze parti per implementare i requisiti lato server per supportare un canale virtuale RemoteFX.
+title: RemoteFX Informazioni di riferimento sulle API di reindirizzamento dei supporti
+description: L RemoteFX'API Di reindirizzamento multimediale viene usata da terze parti per implementare i requisiti sul lato server per supportare un canale RemoteFX virtuale.
 ms.assetid: 927b3c17-4ac3-4640-8042-648a283abe64
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b23612d0ca417783837bdf95e3d22f34052ff6a6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 13c89f89f10b88b9b92ab2f561ce8771c2d8148d3a13d08265257cdedd06c008
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865748"
 ---
-# <a name="remotefx-media-redirection-api-reference"></a>Informazioni di riferimento sull'API di reindirizzamento dei supporti RemoteFX
+# <a name="remotefx-media-redirection-api-reference"></a>RemoteFX Informazioni di riferimento sulle API di reindirizzamento dei supporti
 
-L'API di reindirizzamento dei supporti RemoteFX viene usata da terze parti per implementare i requisiti lato server per supportare un canale virtuale RemoteFX. Per altre informazioni, vedere i seguenti argomenti:
+L RemoteFX'API Di reindirizzamento multimediale viene usata da terze parti per implementare i requisiti sul lato server per supportare un canale RemoteFX virtuale. Per altre informazioni, vedere i seguenti argomenti:
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 <dl> <dt>
 
-[Funzioni API di reindirizzamento supporti RemoteFX](remotefx-media-redirection-api-functions.md)
+[RemoteFX Funzioni dell'API Di reindirizzamento multimediale](remotefx-media-redirection-api-functions.md)
 </dt> <dd>
 
-L'API di reindirizzamento dei supporti RemoteFX supporta le funzioni seguenti.
+L RemoteFX'API di reindirizzamento dei supporti supporta le funzioni seguenti.
 
 </dd> <dt>
 
-[Interfacce API per il reindirizzamento dei supporti RemoteFX](remotefx-media-redirection-api-interfaces.md)
+[RemoteFX Interfacce api di reindirizzamento dei supporti](remotefx-media-redirection-api-interfaces.md)
 </dt> <dd>
 
-L'API di reindirizzamento dei supporti RemoteFX supporta le interfacce seguenti.
+L RemoteFX'API di reindirizzamento dei supporti supporta le interfacce seguenti.
 
 </dd> <dt>
 
-[Strutture API per il reindirizzamento dei supporti RemoteFX](remotefx-media-redirection-api-structures.md)
+[RemoteFX Strutture dell'API Di reindirizzamento multimediale](remotefx-media-redirection-api-structures.md)
 </dt> <dd>
 
-L'API di reindirizzamento dei supporti RemoteFX definisce le strutture seguenti.
+L RemoteFX'API di reindirizzamento dei supporti definisce le strutture seguenti.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

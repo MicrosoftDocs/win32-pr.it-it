@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_PACKED_MIP_INFO (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di \_ una \_ struttura di informazioni MIP compresso D3D12 \_ .
+title: CD3DX12_PACKED_MIP_INFO struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura D3D12 \_ PACKED \_ MIP \_ INFO.
 ms.assetid: B3549D78-C354-48FC-A012-1F835DBD585E
 keywords:
-- Struttura CD3DX12_PACKED_MIP_INFO
+- CD3DX12_PACKED_MIP_INFO struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4565bbac6189cffc5358213437463b4abc0322
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b32a4b0516560ac553b3ce6acb6972def5d0e3f84a2eb84026a0635f779a2c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752161"
 ---
-# <a name="cd3dx12_packed_mip_info-structure"></a>\_Struttura di \_ informazioni MIP compresso \_ CD3DX12
+# <a name="cd3dx12_packed_mip_info-structure"></a>Struttura CD3DX12 \_ PACKED \_ MIP \_ INFO
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura di [**\_ \_ \_ informazioni MIP compresso D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura D3D12 \_ PACKED \_ MIP \_ INFO.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,39 +44,39 @@ struct CD3DX12_PACKED_MIP_INFO  : public D3D12_PACKED_MIP_INFO{
 
 <dl> <dt>
 
-**\_ \_ Informazioni MIP compresse CD3DX12 \_ ()**
+**CD3DX12 \_ PACKED \_ MIP \_ INFO()**
 </dt> <dd>
 
-Crea un'istanza nuova, non inizializzata, di un CD3DX12 \_ di \_ informazioni MIP compresso \_ .
+Crea una nuova istanza non inizializzata di un'informazione MIP CON PACCHETTO CD3DX12. \_ \_ \_
 
 </dd> <dt>
 
-**informazioni sul \_ MIP compresse CD3DX12 esplicite \_ \_ (const D3D12- \_ \_ informazioni MIP compresse \_ &o)**
+**EXPLICIT CD3DX12 \_ PACKED \_ MIP \_ INFO(const D3D12 \_ PACKED \_ MIP \_ INFO &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un' \_ \_ informazione MIP compressa CD3DX12 \_ , inizializzata con il contenuto di un'altra struttura di [**\_ \_ \_ informazioni MIP compresso D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info) .
+Crea una nuova istanza di una struttura CD3DX12 PACKED MIP INFO, inizializzata con il contenuto di un'altra struttura \_ \_ \_ [**D3D12 \_ PACKED \_ MIP \_ INFO.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 
 </dd> <dt>
 
-**\_ \_ Informazioni MIP compresse CD3DX12 \_ (UINT8 NumStandardMips, Uint8 NumPackedMips, UINT NumTilesForPackedMips, uint startTileIndexInOverallResource)**
+**CD3DX12 \_ PACKED \_ MIP \_ INFO(UINT8 numStandardMips, UINT8 numPackedMips, UINT numTilesForPackedMips, UINT startTileIndexInOverallResource)**
 </dt> <dd>
 
-Crea una nuova istanza di un CD3DX12 \_ di \_ dati MIP compresso \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di UN'INFORMAZIONE MIP PACCHETTO CD3DX12, \_ \_ \_ inizializzando i parametri seguenti:
 
-NumStandardMips UINT8
+UINT8 numStandardMips
 
-NumPackedMips UINT8
+UINT8 numPackedMips
 
-NumTilesForPackedMips UINT
+UINT numTilesForPackedMips
 
-StartTileIndexInOverallResource UINT
+UINT startTileIndexInOverallResource
 
 </dd> <dt>
 
-**operator const D3D12 \_ compresse di \_ \_ informazioni& () const**
+**operator const D3D12 \_ PACKED \_ MIP \_ INFO&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_ \_ Informazioni MIP compresse \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
+[**D3D12 \_ PACKED \_ MIP \_ INFO**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_packed_mip_info)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

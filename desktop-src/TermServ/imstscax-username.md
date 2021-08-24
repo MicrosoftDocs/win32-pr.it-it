@@ -1,30 +1,30 @@
 ---
-title: Proprietà nome utente IMsTscAx
-description: Specifica le credenziali di accesso al nome utente.
+title: Proprietà IMsTscAx UserName
+description: Specifica le credenziali di accesso del nome utente.
 ms.assetid: 9be25003-b9aa-41bb-a5a9-512546175114
 ms.tgt_platform: multiple
 keywords:
 - Proprietà UserName Servizi Desktop remoto
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà UserName
-- Servizi Desktop remoto proprietà UserName, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , UserName
+- Proprietà UserName Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , UserName
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a94a7f7d9fe5d6532de55f36a50094205fe1d4ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 609619a012c9eea865a275bc6ee86cfc06c798ba27902636f9d5f792b8cb0dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770881"
 ---
-# <a name="imstscaxusername-property"></a>Proprietà IMsTscAx:: UserName
+# <a name="imstscaxusername-property"></a>Proprietà IMsTscAx::UserName
 
-Specifica le credenziali di accesso al nome utente.
+Specifica le credenziali di accesso del nome utente.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,17 +98,17 @@ Nuovo nome utente.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà **username** è facoltativa. Se non viene specificato, l'utente può specificare un nome utente quando viene visualizzata la finestra di dialogo di accesso di Windows durante la connessione.
+L'impostazione **della proprietà UserName** è facoltativa. Se non viene specificato, l'utente può specificare un nome utente quando viene visualizzata la finestra Windows di dialogo Accesso remoto durante la connessione.
 
-Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Restituisce **e ha \_ esito negativo** se viene chiamato quando il controllo è connesso. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la proprietà [**connessa**](imstscax-connected.md) .
+Questa proprietà può essere impostata solo se il controllo non si trova nello stato connesso. Restituisce **E \_ FAIL** se viene chiamato quando il controllo è connesso. È possibile controllare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la [**proprietà Connected.**](imstscax-connected.md)
 
-Il metodo della proprietà **get \_ username** alloca la memoria necessaria per il buffer a cui punta il parametro *pVersion* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Il **metodo della proprietà get \_ UserName** alloca la memoria necessaria per il buffer a cui punta il *parametro pVersion.* La chiamata alle applicazioni C/C++ deve liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i client Visual Basic e di scripting.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

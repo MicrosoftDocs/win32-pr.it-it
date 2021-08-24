@@ -4,9 +4,9 @@ description: Il metodo SetSessionDirectoryActive imposta la proprietà SessionDi
 ms.assetid: b2175d1a-b62f-4bdf-9122-76e85233fba4
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetSessionDirectoryActive
-- Metodo SetSessionDirectoryActive Servizi Desktop remoto, classe Win32_TSSessionDirectory
-- Classe Win32_TSSessionDirectory Servizi Desktop remoto, metodo SetSessionDirectoryActive
+- Metodo SetSessionDirectoryActive Servizi Desktop remoto
+- Metodo SetSessionDirectoryActive Servizi Desktop remoto , Win32_TSSessionDirectory classe
+- Win32_TSSessionDirectory classe Servizi Desktop remoto, metodo SetSessionDirectoryActive
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ca8709028ee90db549c7cdeb053b04dc88b52ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ae44c471c653a3fcdfbab33ab70178b53c95715cce7cfba63defa9c96c1ab23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769351"
 ---
-# <a name="setsessiondirectoryactive-method-of-the-win32_tssessiondirectory-class"></a>Metodo SetSessionDirectoryActive della \_ classe TSSessionDirectory Win32
+# <a name="setsessiondirectoryactive-method-of-the-win32_tssessiondirectory-class"></a>Metodo SetSessionDirectoryActive della classe \_ Win32 TSSessionDirectory
 
-Il metodo **SetSessionDirectoryActive** imposta la proprietà **SessionDirectoryActive** .
+Il **metodo SetSessionDirectoryActive** imposta la **proprietà SessionDirectoryActive.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,12 +43,12 @@ uint32 SetSessionDirectoryActive(
 
 <dl> <dt>
 
-*SessionDirectoryActive* \[ in\]
+*SessionDirectoryActive* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Flag che disabilita o Abilita il servizio directory di sessione.
+Flag che disabilita o abilita il servizio directory di sessione.
 
 <dt>
 
@@ -76,13 +76,13 @@ Abilitare il servizio directory di sessione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,7 +93,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -102,7 +102,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSSessionDirectory Win32**](win32-tssessiondirectory.md)
+[**Win32 \_ TSSessionDirectory**](win32-tssessiondirectory.md)
 </dt> </dl>
 
  

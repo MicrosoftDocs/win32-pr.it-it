@@ -1,38 +1,38 @@
 ---
 title: Registrazione di un callback
-description: Se l'applicazione richiede una notifica quando il valore di una variabile di stato cambia o l'istanza del servizio che rappresenta diventa non disponibile, l'applicazione deve registrare una funzione di callback.
+description: Se l'applicazione richiede una notifica quando il valore di una variabile di stato cambia o l'istanza del servizio che rappresenta non è più disponibile, l'applicazione deve registrare una funzione di callback.
 ms.assetid: 881e71f7-39e6-4847-bdf2-78e54d1750cb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9095ab4b5b2d43a12f7e806eabc24b174a0311
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5a3dca603e6226d3171aed920311bafcf6844ec9fab5c7aa05deafee7a13fd8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768531"
 ---
 # <a name="registering-a-callback"></a>Registrazione di un callback
 
-Se l'applicazione richiede una notifica quando il valore di una variabile di stato cambia o l'istanza del servizio che rappresenta diventa non disponibile, l'applicazione deve registrare una funzione di callback. Per registrare una funzione di callback per l'oggetto servizio da richiamare, usare il metodo [**IUPnPService:: AddCallback**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) . Questo metodo può essere utilizzato per registrare più di un callback.
+Se l'applicazione richiede una notifica quando il valore di una variabile di stato cambia o l'istanza del servizio che rappresenta non è più disponibile, l'applicazione deve registrare una funzione di callback. Per registrare una funzione di callback per l'oggetto servizio da richiamare, usare il [**metodo IUPnPService::AddCallback.**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) Questo metodo può essere usato per registrare più callback.
 
 Gli sviluppatori non devono annullare un'operazione asincrona all'interno di un callback asincrono.
 
 > [!Note]  
-> L'aggiunta di un callback in Visual Basic è diversa dal metodo utilizzato in VBScript. La funzione **GetRef** utilizzata in VBScript non è disponibile in Visual Basic. Pertanto, uno sviluppatore deve creare un oggetto [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con la funzione di callback come metodo predefinito. Vedere [registrazione di un callback in Visual Basic](registering-a-callback-in-visual-basic.md).
+> L'aggiunta di un callback Visual Basic è diversa dal metodo usato in VBScript. La **funzione GetRef** usata in VBScript non è disponibile in Visual Basic. Pertanto, uno sviluppatore deve creare un [**oggetto IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con la funzione di callback come metodo predefinito. Vedere [Registrazione di un callback in Visual Basic](registering-a-callback-in-visual-basic.md).
 
- 
+ 
 
 ## <a name="vbscript-example"></a>Esempio di VBScript
 
-Nel codice VBScript seguente viene definita la funzione di callback **serviceChangeCallback**, da richiamare quando i valori delle variabili di stato cambiano o quando l'istanza del servizio non è più disponibile. La funzione ha quattro argomenti.
+Il codice VBScript seguente definisce la funzione di callback **serviceChangeCallback** da richiamare quando i valori delle variabili di stato cambiano o quando l'istanza del servizio non è più disponibile. La funzione ha quattro argomenti.
 
 Il primo argomento della funzione specifica il motivo per cui viene richiamato il callback. Viene richiamato perché una variabile di stato è stata modificata o perché l'istanza del servizio non è più disponibile.
 
-Il secondo argomento è l'oggetto servizio per il quale viene richiamato il callback. Se il callback viene richiamato per una modifica di variabile di stato, alla funzione vengono passati due argomenti aggiuntivi: il nome della variabile modificata e il nuovo valore.
+Il secondo argomento è l'oggetto Service per il quale viene richiamato il callback. Se il callback viene richiamato per una modifica della variabile di stato, alla funzione vengono passati due argomenti aggiuntivi: il nome della variabile modificata e il nuovo valore.
 
-In questo esempio, il callback Visualizza semplicemente una finestra di messaggio che mostra il nome della variabile modificata e il nuovo valore e se il callback è stato richiamato per una modifica della variabile di stato. In caso contrario, viene visualizzato un messaggio che indica che l'istanza del servizio non è più disponibile.
+In questo esempio, il callback visualizza semplicemente una finestra di messaggio che mostra il nome della variabile modificata e il relativo nuovo valore e se il callback è stato richiamato per una modifica della variabile di stato. In caso contrario, viene visualizzato un messaggio che indica che l'istanza del servizio non è più disponibile.
 
-Nell'ultima parte del frammento di codice viene illustrato come registrare la funzione di callback utilizzando il metodo [**AddCallback**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) . Si presuppone che le variabili dell'oggetto servizio, *Appservice* e *xportService* , siano state inizializzate come illustrato in [acquisizione degli oggetti servizio](obtaining-service-objects.md).
+L'ultima parte del frammento di codice mostra come registrare la funzione di callback usando il [**metodo AddCallback.**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) Si presuppone che le variabili *dell'oggetto* servizio appService e *xportService* siano state inizializzate come illustrato in [Recupero di oggetti servizio.](obtaining-service-objects.md)
 
 
 ```VB
@@ -188,6 +188,6 @@ HRESULT AddCallbackToService(IUPnPService* pUPnPService)
 
 
 
- 
+ 
 
- 
+ 

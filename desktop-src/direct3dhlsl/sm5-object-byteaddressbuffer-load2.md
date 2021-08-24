@@ -1,9 +1,9 @@
 ---
-title: 'Funzione ByteAddressBuffer:: load2 (uint)'
-description: 'Ottiene due valori. | Funzione ByteAddressBuffer:: load2 (uint)'
+title: Funzione ByteAddressBuffer::Load2(uint)
+description: Ottiene due valori. | Funzione ByteAddressBuffer::Load2(uint)
 ms.assetid: 696ce310-4d65-4382-97ec-046160197c67
 keywords:
-- Funzione load2 HLSL
+- HLSL della funzione Load2
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78204fc3d41daf07a54974fbf103685e718ab79d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fac3b1cd0fffca1a68089c3c21bfd5d6aea5f270493319b044a0bbe290d88a5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845731"
 ---
-# <a name="byteaddressbufferload2uint-function"></a>Funzione ByteAddressBuffer:: load2 (uint)
+# <a name="byteaddressbufferload2uint-function"></a>Funzione ByteAddressBuffer::Load2(uint)
 
 Ottiene due valori.
 
@@ -36,7 +36,7 @@ uint2 Load2(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -69,10 +69,10 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi load2](byteaddressbuffer-load2.md)
+[Metodi Load2](byteaddressbuffer-load2.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

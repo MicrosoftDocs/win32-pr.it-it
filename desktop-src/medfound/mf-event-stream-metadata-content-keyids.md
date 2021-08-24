@@ -1,23 +1,23 @@
 ---
-description: Specifica gli ID della chiave simmetrica.
+description: Specifica gli ID chiave contenuto.
 ms.assetid: 886127A1-7612-40FE-8BE7-EA90708E41DA
-title: Attributo MF_EVENT_STREAM_METADATA_CONTENT_KEYIDS (Mfapi. h)
+title: MF_EVENT_STREAM_METADATA_CONTENT_KEYIDS attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc59a0f864da884e668df69d4fb29d71bc2eb134
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0391bc56261dbfd66133b02b224001639669aede3822be9734abb136a8b8acb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826641"
 ---
-# <a name="mf_event_stream_metadata_content_keyids-attribute"></a>\_ \_ \_ \_ Attributo KEYIDS del contenuto dei metadati del flusso di eventi MF \_
+# <a name="mf_event_stream_metadata_content_keyids-attribute"></a>Attributo \_ \_ KEYIDS DEL CONTENUTO DEI METADATI DEL FLUSSO DI EVENTI \_ \_ \_ MF
 
-Specifica gli ID della chiave simmetrica.
+Specifica gli ID chiave contenuto.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**BLOB**
+**Blob**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,9 +25,9 @@ Specifica gli ID della chiave simmetrica.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica gli ID della chiave simmetrica.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

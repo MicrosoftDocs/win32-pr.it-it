@@ -1,21 +1,21 @@
 ---
-description: Codice di esempio che illustra come aggiungere un nuovo utente a un file crittografato esistente tramite la funzione AddUsersToEncryptedFile.
+description: Codice di esempio che illustra come aggiungere un nuovo utente a un file crittografato esistente usando la funzione AddUsersToEncryptedFile.
 ms.assetid: 39260882-dc02-4f08-9d9b-f170c1e391df
 title: Aggiunta di utenti a un file crittografato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e211b0b2052e9f170d1392773d65091a0625815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f697fbbc16c9f05516229120f8ed41c7e732b519ddfdeeab0ce192cd28a41cf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766291"
 ---
 # <a name="adding-users-to-an-encrypted-file"></a>Aggiunta di utenti a un file crittografato
 
-L'esempio di codice in questo argomento aggiunge un nuovo utente a un file crittografato esistente tramite la funzione [**AddUsersToEncryptedFile**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) . Richiede che il certificato dell'utente Encrypting File System (EFS) (dal Active Directory) esista nell'archivio certificati utente attendibili.
+L'esempio di codice in questo argomento aggiunge un nuovo utente a un file crittografato esistente usando la [**funzione AddUsersToEncryptedFile.**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) È necessario che il certificato Encrypting File System (EFS) dell'utente (da Active Directory) esista nell'archivio certificati utente persone attendibili.
 
-Questo esempio aggiunge un nuovo campo di ripristino dei dati al file crittografato. Di conseguenza, l'utente appena aggiunto può decrittografare il file crittografato. Il chiamante deve già avere accesso al file crittografato, come proprietario originale, agente recupero dati o come utente aggiunto in precedenza al file crittografato.
+Questo esempio aggiunge un nuovo campo di recupero dati al file crittografato. Di conseguenza, l'utente appena aggiunto può decrittografare il file crittografato. Il chiamante deve avere già accesso al file crittografato, come proprietario originale, come agente di recupero dati o come utente aggiunto in precedenza al file crittografato.
 
 
 ```C++
@@ -250,7 +250,7 @@ VOID ErrorExit(LPWSTR wszErrorMessage, DWORD dwErrorCode)
 [Crittografia file](file-encryption.md)
 </dt> <dt>
 
-[**LookupAccountName**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea)
+[**Lookupaccountname**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea)
 </dt> </dl>
 
  

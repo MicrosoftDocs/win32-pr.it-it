@@ -4,9 +4,9 @@ description: PingLicenseServer non è più disponibile.
 ms.assetid: d2a9f273-1ff9-4391-889b-a3b9c9f95c3b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo PingLicenseServer
-- Metodo PingLicenseServer Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo PingLicenseServer
+- Metodo PingLicenseServer Servizi Desktop remoto
+- Metodo PingLicenseServer Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto , metodo PingLicenseServer
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fe7277b3130c88c1aec7716c1a3bf560b81db64
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e5a52268073a076c5dada44b7f34c6a6b3e0c820c0b9819f65d23081f4f6c37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866101"
 ---
-# <a name="pinglicenseserver-method-of-the-win32_terminalservicesetting-class"></a>Metodo PingLicenseServer della \_ classe TerminalServiceSetting Win32
+# <a name="pinglicenseserver-method-of-the-win32_terminalservicesetting-class"></a>Metodo PingLicenseServer della classe TerminalServiceSetting Win32 \_
 
-\[**PingLicenseServer** non è più disponibile per l'uso a partire da Windows Server 2008 R2.\]
+\[**PingLicenseServer** non è più disponibile per l'uso a Windows Server 2008 R2.\]
 
-**Windows Server 2008:** Effettua il ping del server licenze per determinare se si tratta di un server licenze valido.
+**Windows Server 2008:** Esegue il ping del server licenze per determinare se si tratta di un server licenze valido.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ uint32 PingLicenseServer(
 
 <dl> <dt>
 
-*Nomeserver* \[ in\]
+*NomeServer* \[ Pollici\]
 </dt> <dd>
 
 Nome del server licenze.
@@ -56,14 +56,14 @@ Nome del server licenze.
 
 <dl> <dt>
 
-**\_OK**
+**S \_ OK**
 </dt> <dd>
 
 Il server è un server licenze valido.
 
 </dd> <dt>
 
-**S \_ false**
+**S \_ FALSE**
 </dt> <dd>
 
 Il server licenze non è valido.
@@ -72,7 +72,7 @@ Il server licenze non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                               |
 | Fine del supporto server<br/>    | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -94,7 +94,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

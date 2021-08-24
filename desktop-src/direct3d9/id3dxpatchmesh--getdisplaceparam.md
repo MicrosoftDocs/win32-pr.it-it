@@ -1,7 +1,7 @@
 ---
 description: Ottiene i parametri di spostamento della geometria mesh.
 ms.assetid: 155724ba-71be-4e9f-8c84-bb04f8eec578
-title: 'Metodo ID3DXPatchMesh:: GetDisplaceParam (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::GetDisplaceParam (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3ce6891af8a15aa8f4af5c85312f124db6c05321
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f079e66f20bfd9b2fab673a0f8c2310a9fd85d84fe4e7d0b8c5ad59d1d61e9e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847451"
 ---
-# <a name="id3dxpatchmeshgetdisplaceparam-method"></a>Metodo ID3DXPatchMesh:: GetDisplaceParam
+# <a name="id3dxpatchmeshgetdisplaceparam-method"></a>Metodo ID3DXPatchMesh::GetDisplaceParam
 
 Ottiene i parametri di spostamento della geometria mesh.
 
@@ -45,7 +45,7 @@ HRESULT GetDisplaceParam(
 
 <dl> <dt>
 
-*Trama* \[ in\]
+*Trama* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)\***
@@ -54,48 +54,48 @@ Trama contenente i dati di spostamento.
 
 </dd> <dt>
 
-*MinFilter* \[ in\]
+*Filtro minimo* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)\***
 
-Livello minification. Per ulteriori informazioni, vedere [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Livello di minimità. Per altre informazioni, vedere [**D3DTEXTUREFILTERTYPE.**](./d3dtexturefiltertype.md)
 
 </dd> <dt>
 
-*MagFilter* \[ in\]
+*MagFilter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)\***
 
-Livello di ingrandimento. Per ulteriori informazioni, vedere [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Livello di ingrandimento. Per altre informazioni, vedere [**D3DTEXTUREFILTERTYPE.**](./d3dtexturefiltertype.md)
 
 </dd> <dt>
 
-*MipFilter* \[ in\]
+*Filtro mip* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md)\***
 
-Livello di filtro MIP. Per ulteriori informazioni, vedere [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md).
+Livello di filtro Mip. Per altre informazioni, vedere [**D3DTEXTUREFILTERTYPE.**](./d3dtexturefiltertype.md)
 
 </dd> <dt>
 
-A *capo automatico* \[ in\]
+*Eseguire il wrapping* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DTEXTUREADDRESS**](./d3dtextureaddress.md)\***
 
-Modalità di wrapping degli indirizzi della trama. Per ulteriori informazioni, vedere [**D3DTEXTUREADDRESS**](./d3dtextureaddress.md).
+Modalità di ritorno a capo dell'indirizzo della trama. Per altre informazioni, vedere [**D3DTEXTUREADDRESS.**](./d3dtextureaddress.md)
 
 </dd> <dt>
 
-*dwLODBias* \[ in\]
+*dwLODBias* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Livello del valore di distorsione del dettaglio.
+Valore di distorsione del livello di dettaglio.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Livello del valore di distorsione del dettaglio.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Le mappe di spostamento possono essere solo trame 2D. Mapping MIP viene ignorato per lo schema a mosaico non adattivo.
+Le mappe di spostamento possono essere solo trame 2D. L'applicazione mipm viene ignorata per lo schema a tessitura non adatta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,8 +115,8 @@ Le mappe di spostamento possono essere solo trame 2D. Mapping MIP viene ignorato
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

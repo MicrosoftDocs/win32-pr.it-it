@@ -1,7 +1,7 @@
 ---
 description: Si verifica quando uno stilo rientra nell'intervallo di rilevamento del digitalizzatore.
 ms.assetid: 22be233a-fc33-4a8f-91b6-28b2f2910b69
-title: 'Metodo ITabletEventSink:: CursorInRange'
+title: Metodo ITabletEventSink::CursorInRange
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: eec2b4f309480ecaecd50de2120d701c916b6fff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c9878b4c3cd28727c5d54e59a52f3fe85a44832203f70b6ff042c6beeb579dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883481"
 ---
-# <a name="itableteventsinkcursorinrange-method"></a>Metodo ITabletEventSink:: CursorInRange
+# <a name="itableteventsinkcursorinrange-method"></a>Metodo ITabletEventSink::CursorInRange
 
 Si verifica quando uno stilo rientra nell'intervallo di rilevamento del digitalizzatore.
 
@@ -41,17 +41,17 @@ HRESULT CursorInRange(
 
 <dl> <dt>
 
-*TCID* \[ in\]
+*tcid* \[ Pollici\]
 </dt> <dd>
 
-Identificatore dell'oggetto Tablet che ha rilevato lo stilo.
+Identificatore dell'oggetto tablet che ha rilevato lo stilo.
 
 </dd> <dt>
 
-*CID* 
+*Cid* 
 </dt> <dd>
 
-Identificatore dell'oggetto stilo che rientra nell'intervallo del digitalizzatore.
+Identificatore dell'oggetto stilo compreso nell'intervallo del digitalizzatore.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

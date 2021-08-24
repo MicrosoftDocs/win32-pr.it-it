@@ -1,6 +1,6 @@
 ---
-title: CND-PS
-description: Sceglie in modo condizionale tra src1 e src2, in base al confronto src0 0,5.
+title: cnd - ps
+description: Sceglie in modo condizionale tra src1 e src2, in base al confronto src0 0.5.
 ms.assetid: 7a3b49e9-d146-47dc-99a8-4f336db7d0d5
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1fd3a14e2ac4bd283a4e67724fbb42ac965ea707
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cb31c873bf3a4e38048f57d75a30cec70021716d2aab43b683cb29aef25f7f23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104117197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726961"
 ---
-# <a name="cnd---ps"></a>CND-PS
+# <a name="cnd---ps"></a>cnd - ps
 
-Sceglie in modo condizionale tra src1 e src2, in base al confronto src0 > 0,5.
+Sceglie in modo condizionale tra src1 e src2, in base al confronto src0 > 0.5.
 
 ## <a name="syntax"></a>Sintassi
 
 
 
-| CND DST, src0, src1, src2 |
+| cnd dst, src0, src1, src2 |
 |---------------------------|
 
 
 
- 
+ 
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 -   src2 è un registro di origine.
@@ -42,15 +42,15 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni dei pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| CND                   | x    | x    | x    | x    |      |      |       |      |       |
+| Cnd                   | x    | x    | x    | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
-Per le versioni da 1 \_ a 1 \_ 3, src0 deve essere R0. a.
+Per le versioni \_ da 1 a 1 \_ 3, src0 deve essere r0.a.
 
 
 ```
@@ -63,7 +63,7 @@ else
 
 
 
-La versione 1 \_ 4 confronta ogni canale separatamente.
+La versione \_ 1 4 confronta ogni canale separatamente.
 
 
 ```
@@ -78,7 +78,7 @@ for each component in src0
 
 
 
-In questi esempi viene illustrato un confronto a quattro canali eseguito in uno \_ shader versione 1 4, nonché un confronto a canale singolo possibile in uno shader della versione 1 \_ .
+Questi esempi mostrano un confronto a quattro canali eseguito in uno shader versione 1 4, nonché un confronto a canale singolo possibile \_ in uno shader versione \_ 1 1.
 
 
 ```
@@ -96,7 +96,7 @@ cnd r1, c0, c1, c2   // r0 contains 1,1,1,0 because
 
 
 
-La versione 1 \_ 1 a 1 \_ 3 viene confrontata solo con il canale alfa replicato di R0.
+La versione \_ 1 da 1 a 1 3 viene confrontata solo con il canale alfa replicato \_ di r0.
 
 
 ```
@@ -111,7 +111,7 @@ cnd r1, r0.a, c1, c2   // r1 gets assigned 0,0,0,0 because
 
 
 
-In questo esempio vengono confrontati due valori, A e B. Nell'esempio si presuppone che un sia caricato in V0 e B sia caricato nella versione 1. Sia a che B devono essere compresi nell'intervallo da-1 a + 1 e, poiché i registri colori (VN) sono definiti come compresi tra 0 e 1, in questo esempio la restrizione viene soddisfatta.
+In questo esempio vengono confrontati due valori, A e B. L'esempio presuppone che A sia caricato in v0 e che B sia caricato in v1. Sia A che B devono essere compresi nell'intervallo compreso tra -1 e +1 e poiché i registri colori (vn) sono definiti come compresi tra 0 e 1, la restrizione viene soddisfatta in questo esempio.
 
 
 ```
@@ -128,12 +128,12 @@ cnd r0, r0.a, c0, c1  // r0 = ( A > B ? c0 : c1 )
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

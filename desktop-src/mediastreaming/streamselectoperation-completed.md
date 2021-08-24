@@ -1,11 +1,11 @@
 ---
-title: Proprietà StreamSelectOperation. Completed
-description: Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da SelectBestStreamAsync.
+title: StreamSelectOperation.Completed - proprietà
+description: Ottiene o imposta un gestore eventi richiamato quando viene completata l'operazione asincrona avviata da SelectBestStreamAsync.
 ms.assetid: 693CC002-2D91-4656-954D-8A556480155C
 keywords:
-- API di streaming multimediale delle proprietà completate
-- API di streaming multimediale delle proprietà completa, interfaccia StreamSelectOperation
-- API di streaming multimediale dell'interfaccia StreamSelectOperation, proprietà Completed
+- Proprietà Completata API Streaming multimediale
+- Proprietà Completata API Streaming multimediale, interfaccia StreamSelectOperation
+- Interfaccia StreamSelectOperation API Streaming multimediale, proprietà Completed
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74cfdf1a3db4f6843a5f12522b688e889e156f33
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 554874c19054f4b2ee46fbfe29fb4dfb8149e476ff96d040ffdbdd9b39de4612
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847581"
 ---
-# <a name="streamselectoperationcompleted-property"></a>Proprietà StreamSelectOperation. Completed
+# <a name="streamselectoperationcompleted-property"></a>StreamSelectOperation.Completed - proprietà
 
-Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**SelectBestStreamAsync**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85)) .
+Ottiene o imposta un gestore eventi richiamato quando viene completata l'operazione asincrona avviata da [**SelectBestStreamAsync.**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85))
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -33,11 +33,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ```C++
 HRESULT put_Completed(
-  [in]  IStreamSelectCompletedHandler *value
+  [in]  IStreamSelectCompletedHandler *value
 );
 
 HRESULT get_Completed(
-  [out] IStreamSelectCompletedHandler **value
+  [out] IStreamSelectCompletedHandler **value
 );
 ```
 
@@ -54,6 +54,6 @@ Gestore eventi.
 [**StreamSelectOperation**](streamselectoperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

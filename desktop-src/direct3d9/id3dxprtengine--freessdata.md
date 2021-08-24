@@ -1,7 +1,7 @@
 ---
-description: Libera la memoria usata per i dati di simulazione della luce della sottosuperficie temporanea.
+description: Libera la memoria usata per i dati temporanei della simulazione di dispersione della luce sottosurface.
 ms.assetid: c85643bf-4a6d-452a-9cd8-17f919123307
-title: 'Metodo ID3DXPRTEngine:: FreeSSData (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::FreeSSData (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e3f21bf178bae4493f66eef4053f3b1892ff8224
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ffebcecd4c2e9476fa5232ddd3483e27a8738059eb9dae33223341c9353b921b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847351"
 ---
-# <a name="id3dxprtenginefreessdata-method"></a>Metodo ID3DXPRTEngine:: FreeSSData
+# <a name="id3dxprtenginefreessdata-method"></a>Metodo ID3DXPRTEngine::FreeSSData
 
-Libera la memoria usata per i dati di simulazione della luce della sottosuperficie temporanea.
+Libera la memoria usata per i dati temporanei della simulazione di dispersione della luce sottosurface.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Il valore restituito è D3D \_ OK.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
