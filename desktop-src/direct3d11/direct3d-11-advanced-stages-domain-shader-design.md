@@ -1,23 +1,23 @@
 ---
-title: Come progettare un Domain shader
-description: In questo argomento viene illustrato come progettare un Domain shader.
+title: Come progettare uno shader di dominio
+description: Questo argomento illustra come progettare uno shader di dominio.
 ms.assetid: 329d4eb9-8886-401d-8fb4-39e06886998f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a01d6b006c5ffe3afa355abe5e662cb96aa1391
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 46733bc9147f67cf33a127d8254f16c5813d8ebc2f0cb96c2071ae15589e34bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566181"
 ---
-# <a name="how-to-design-a-domain-shader"></a>Procedura: progettare un Domain shader
+# <a name="how-to-design-a-domain-shader"></a>Procedura: Progettare uno shader di dominio
 
-Un Domain shader è il terzo di tre fasi che interagiscono per implementare lo [schema a mosaico](direct3d-11-advanced-stages-tessellation.md). Il Domain shader genera la geometria della superficie dai punti di controllo trasformati da uno scafo dello shader e dalle coordinate UV. In questo argomento viene illustrato come progettare un Domain shader.
+Uno shader di dominio è il terzo di tre fasi che funzionano insieme per implementare la [funzionalità a più livelli.](direct3d-11-advanced-stages-tessellation.md) Il domain shader genera la geometria della superficie dai punti di controllo trasformati da uno shader con scafo e dalle coordinate UV. Questo argomento illustra come progettare uno shader di dominio.
 
-Un Domain shader viene richiamato una volta per ogni punto generato dalla funzione fissa mosaico. Gli input sono le \[ coordinate UV W \] del punto della patch, nonché tutti i dati di output dello scafo shader, inclusi i punti di controllo e le costanti di patch. L'output è un vertice definito nel modo desiderato. Se l'output viene inviato al pixel shader, l'output deve includere una posizione (indicata con una \_ semantica di posizione SV).
+Uno shader di dominio viene richiamato una volta per ogni punto generato dal tessellatore di funzioni fisse. Gli input sono le coordinate UV W del punto sulla patch, nonché tutti i dati di output dello hull shader, inclusi i punti di controllo e le \[ \] costanti patch. L'output è un vertice definito nel modo desiderato. Se l'output viene inviato al pixel shader, l'output deve includere una posizione (con una semantica SV \_ Position).
 
-**Per progettare un Domain shader**
+**Per progettare uno shader di dominio**
 
 1.  Definire l'attributo di dominio.
 
@@ -29,13 +29,13 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
     Il dominio è definito per una patch quad.
 
-2.  Dichiarare il percorso sullo scafo con il valore del sistema del [percorso del dominio](/windows/desktop/direct3dhlsl/sv-domainlocation) .
+2.  Dichiarare la posizione sulla carena con il [valore del sistema di posizione](/windows/desktop/direct3dhlsl/sv-domainlocation) del dominio.
 
-    -   Per una patch quad, usare un float2.
-    -   Per una patch Tri, usare float3 (per le coordinate baricentrica)
-    -   Per un, usare un float2.
+    -   Per una patch quad, usare float2.
+    -   Per una tri patch, usare float3 (per le coordinate barycentriche)
+    -   Per un'isolinea, usare float2.
 
-    Il percorso del dominio per una patch Quad è pertanto simile al seguente:
+    Di conseguenza, il percorso del dominio per una patch quad è simile al seguente:
 
     ```
     float2 UV : SV_DomainLocation
@@ -45,9 +45,9 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
 3.  Definire gli altri input.
 
-    Gli altri input provengono dallo scafo dello shader e sono definiti dall'utente. Sono inclusi i punti di controllo di input per la patch, tra i quali possono essere presenti da 1 a 32 punti e i dati costanti della patch di input.
+    Gli altri input provengono dallo shader hull e sono definiti dall'utente. Sono inclusi i punti di controllo di input per patch, di cui possono essere presenti da 1 a 32 punti, e i dati costanti della patch di input.
 
-    I punti di controllo sono definiti dall'utente, in genere con una struttura come questa (definita in [procedura: progettare uno scafo shader](direct3d-11-advanced-stages-hull-shader-design.md)):
+    I punti di controllo sono definiti dall'utente, in genere con una struttura come questa (definita in [How To: Design a Hull Shader](direct3d-11-advanced-stages-hull-shader-design.md)):
 
     ```
     const OutputPatch<BEZIER_CONTROL_POINT, 16> bezpatch
@@ -55,7 +55,7 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
     
 
-    Anche i dati delle costanti patch sono definiti dall'utente e possono avere un aspetto simile al seguente (definito in [procedura: progettare uno scafo shader](direct3d-11-advanced-stages-hull-shader-design.md)):
+    Anche i dati delle costanti di patch sono definiti dall'utente e potrebbero essere simili a questo (definito in [Procedura: Progettare uno shader con struttura):](direct3d-11-advanced-stages-hull-shader-design.md)
 
     ```
     HS_CONSTANT_DATA_OUTPUT input
@@ -63,9 +63,9 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
     
 
-4.  Aggiungere codice definito dall'utente per calcolare gli output; Ciò costituisce il corpo dello shader del dominio.
+4.  Aggiungere codice definito dall'utente per calcolare gli output. che costituisce il corpo dello shader del dominio.
 
-    Questa struttura contiene output di Domain shader definiti dall'utente.
+    Questa struttura contiene output di shader di dominio definiti dall'utente.
 
     ```
     struct DS_OUTPUT
@@ -81,7 +81,7 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
     
 
-    La funzione accetta ogni UV di input (mosaico) e valuta la patch di Bezier in questa posizione.
+    La funzione accetta ogni uve di input (dal tessellatore) e valuta la patch di Bézier in questa posizione.
 
     ```
     [domain("quad")]
@@ -99,11 +99,11 @@ Un Domain shader viene richiamato una volta per ogni punto generato dalla funzio
 
     
 
-    La funzione viene richiamata una volta per ogni punto generato dalla funzione fissa mosaico. Poiché in questo esempio viene usata una patch quad, il percorso del dominio di input ([SV \_ DomainLocation](/windows/desktop/direct3dhlsl/sv-domainlocation)) è un float2 (UV). una patch Tri avrà un percorso di input float3 (UVW baricentrica coordinate) e un percorso di dominio float2 input.
+    La funzione viene richiamata una volta per ogni punto generato dal tessellatore di funzioni fisse. Poiché questo esempio usa una patch quad, la posizione del dominio di input ([SV \_ DomainLocation](/windows/desktop/direct3dhlsl/sv-domainlocation)) è float2 (UV); una patch tri avrebbe una posizione di input float3 (coordinate UVW barycentric) e una isoline avrebbe una posizione di dominio di input float2.
 
-    Gli altri input per la funzione provengono direttamente dallo scafo dello shader. In questo esempio si tratta di 16 punti di controllo ognuno dei quali è un **\_ \_ punto di controllo Bezier**, nonché i dati delle costanti patch (**\_ \_ \_ output di dati costanti HS**). L'output è un vertice che contiene i dati desiderati, in questo esempio l' **\_ output di DS** .
+    Gli altri input per la funzione provengono direttamente dallo hull shader. In questo esempio si tratta di 16 punti di controllo ognuno dei quali è un PUNTO DI CONTROLLO **BEZIER \_ \_**, nonché di dati costanti di patch (**HS \_ CONSTANT DATA \_ \_ OUTPUT**). L'output è un vertice contenente tutti i dati desiderati, **\_ output DS** in questo esempio.
 
-Dopo aver progettato un Domain shader, vedere [procedura: creare un Domain shader](direct3d-11-advanced-stages-domain-shader-create.md).
+Dopo aver progettato uno shader di dominio, [vedere Procedura: Creare un domain shader.](direct3d-11-advanced-stages-domain-shader-create.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -112,9 +112,9 @@ Dopo aver progettato un Domain shader, vedere [procedura: creare un Domain shade
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> <dt>
 
-[Panoramica dello schema a mosaico](direct3d-11-advanced-stages-tessellation.md)
+[Cenni preliminari sull'a tessellazione](direct3d-11-advanced-stages-tessellation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

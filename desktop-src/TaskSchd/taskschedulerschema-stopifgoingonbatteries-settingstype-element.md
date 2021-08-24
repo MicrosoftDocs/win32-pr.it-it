@@ -1,9 +1,9 @@
 ---
 title: Elemento StopIfGoingOnBatteries (settingsType)
-description: Specifica che l'attività verrà arrestata se il computer sta per accedere alle batterie.
+description: Specifica che l'attività verrà arrestata se il computer sta caricando batterie.
 ms.assetid: 0d772dbb-a552-45ed-9dc0-7159f6ef12ed
 keywords:
-- Utilità di pianificazione elemento StopIfGoingOnBatteries
+- Elemento StopIfGoingOnBatteries Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e7de57cde928760c15dd671010880e824c8979f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50b92be11400d1dbb223115f11334e2a596e94e9df1fd018ce16e4a646c84825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516100"
 ---
 # <a name="stopifgoingonbatteries-settingstype-element"></a>Elemento StopIfGoingOnBatteries (settingsType)
 
-Specifica che l'attività verrà arrestata se il computer sta per accedere alle batterie.
+Specifica che l'attività verrà arrestata se il computer sta caricando batterie.
 
 ``` syntax
 <xs:element name="StopIfGoingOnBatteries"
@@ -32,7 +32,7 @@ Specifica che l'attività verrà arrestata se il computer sta per accedere alle 
  />
 ```
 
-L'elemento **StopIfGoingOnBatteries** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento StopIfGoingOnBatteries** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,15 +46,15 @@ L'elemento **StopIfGoingOnBatteries** è definito dal tipo complesso [**settings
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione predefinita per questo elemento è false. Si noti che il valore predefinito è stato modificato rispetto alle versioni precedenti di Utilità di pianificazione.
+L'impostazione predefinita per questo elemento è False. Si noti che il valore predefinito è stato modificato rispetto alle versioni precedenti di Utilità di pianificazione.
 
-Per lo sviluppo di script, questa impostazione viene specificata tramite la proprietà [**TaskSettings. StopIfGoingOnBatteries**](tasksettings-stopifgoingonbatteries.md) .
+Per lo sviluppo di script, questa impostazione viene specificata tramite la [**proprietà TaskSettings.StopIfGoingOnBatteries.**](tasksettings-stopifgoingonbatteries.md)
 
-Per lo sviluppo in C++, questa impostazione viene specificata tramite la proprietà [**ITaskSettings:: StopIfGoingOnBatteries**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_stopifgoingonbatteries) .
+Per lo sviluppo C++, questa impostazione viene specificata usando la [**proprietà ITaskSettings::StopIfGoingOnBatteries.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_stopifgoingonbatteries)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che consente la terminazione rigida dell'attività.
+Il codice XML seguente definisce un elemento settings che consente una terminazione hard dell'attività.
 
 
 ```XML
@@ -71,8 +71,8 @@ Nel codice XML seguente viene definito un elemento Settings che consente la term
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -80,7 +80,7 @@ Nel codice XML seguente viene definito un elemento Settings che consente la term
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Sintassi String (numeric)
+title: Sintassi String(Numeric)
 description: Stringa che contiene cifre.
 ms.assetid: cf440092-8777-460c-a3a2-6cc7bd3075b8
 ms.tgt_platform: multiple
 keywords:
-- Sintassi stringa (numeric) AD schema
+- Schema AD della sintassi String(Numeric)
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa90dce532e750f9d51f4203a8f90b4c505dccf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4d2be2f89961ff1b1a646adcb6716c0b4c62cbfc74be2642630e23084bc8d29f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580176"
 ---
-# <a name="stringnumeric-syntax"></a>Sintassi String (numeric)
+# <a name="stringnumeric-syntax"></a>Sintassi String(Numeric)
 
 Stringa che contiene cifre.
 
@@ -30,10 +30,10 @@ Stringa che contiene cifre.
 |--------------|------------------------------------------------------------------------|
 | Nome         | String(Numeric)                                                        |
 | ID sintassi    | 2.5.5.6                                                                |
-| ID OM        | 18                                                                     |
+| OM ID        | 18                                                                     |
 | Tipo MAPI    | TSTRING                                                                |
-| Tipo di annunci     | \_stringa numerica ADSTYPE \_                                               |
-| Tipo Variant | \_BSTR VT                                                               |
+| Tipo di ADS     | STRINGA NUMERICA \_ ADSTYPE \_                                               |
+| Tipo variant | VT \_ BSTR                                                               |
 | Tipo SDS     | [System.String](/dotnet/api/system.string) |
 
 

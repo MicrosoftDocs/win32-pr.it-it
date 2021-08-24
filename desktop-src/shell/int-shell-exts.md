@@ -1,37 +1,37 @@
 ---
-description: Gran parte dell'implementazione di un oggetto gestore dell'estensione della shell è determinata dal tipo. Esistono, tuttavia, alcuni elementi comuni. Questo argomento descrive gli aspetti dell'implementazione condivisi da tutti i gestori di estensioni della shell.
+description: Gran parte dell'implementazione di un oggetto gestore dell'estensione Shell è determinata dal tipo. Esistono tuttavia alcuni elementi comuni. Questo argomento illustra gli aspetti dell'implementazione condivisi da tutti i gestori di estensioni shell.
 ms.assetid: ce21ca0f-157c-4f69-bcf9-dc259c3bac80
-title: Inizializzazione di gestori estensioni della shell
+title: Inizializzazione dei gestori dell'estensione della shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6a27b6273c5e342dc4caf545fb3593cdad66261
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82f83a47400cff5d0fa4628f6f6f9d9ba74b158947c7843f61831d54f62c7a6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661221"
 ---
-# <a name="initializing-shell-extension-handlers"></a>Inizializzazione di gestori estensioni della shell
+# <a name="initializing-shell-extension-handlers"></a>Inizializzazione dei gestori dell'estensione della shell
 
-Gran parte dell'implementazione di un oggetto gestore dell'estensione della shell è determinata dal tipo. Esistono, tuttavia, alcuni elementi comuni. Questo argomento descrive gli aspetti dell'implementazione condivisi da tutti i gestori di estensioni della shell.
+Gran parte dell'implementazione di un oggetto gestore dell'estensione Shell è determinata dal tipo. Esistono tuttavia alcuni elementi comuni. Questo argomento illustra gli aspetti dell'implementazione condivisi da tutti i gestori di estensioni shell.
 
-Tutti i gestori di estensioni della shell sono oggetti Component Object Model (COM) in-process. È necessario assegnare un GUID e registrarlo come descritto in [Registering Shell Extension Handler](handlers.md). Vengono implementate come dll ed è necessario esportare le funzioni standard seguenti:
+Tutti i gestori dell'estensione shell sono oggetti Component Object Model (COM) in-process. Devono essere assegnati a un GUID e registrati come descritto in [Registrazione dei gestori delle estensioni della shell](handlers.md). Vengono implementate come DLL e devono esportare le funzioni standard seguenti:
 
--   [**DllMain**](../dlls/dllmain.md). Il punto di ingresso standard della DLL.
--   [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject). Espone la class factory dell'oggetto.
--   [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow). COM chiama questa funzione per determinare se l'oggetto serve qualsiasi client. In caso contrario, il sistema può scaricare la DLL e liberare la memoria associata.
+-   [**DllMain**](../dlls/dllmain.md). Punto di ingresso standard per la DLL.
+-   [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject). Espone l'oggetto class factory.
+-   [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow). COM chiama questa funzione per determinare se l'oggetto sta servendo client. In caso contrario, il sistema può scaricare la DLL e liberare la memoria associata.
 
-Come tutti gli oggetti COM, i gestori di estensioni della shell devono implementare un'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e un [class factory](../com/implementing-iclassfactory.md). La maggior parte deve implementare anche un'interfaccia [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) o [**ISHELLEXTINIT**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) in Windows XP o versioni precedenti. Questi sono stati sostituiti da [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) e [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile) in Windows Vista. La shell usa queste interfacce per inizializzare il gestore.
+Come tutti gli oggetti COM, i gestori delle estensioni shell devono implementare [**un'interfaccia IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e un [class factory](../com/implementing-iclassfactory.md). La maggior parte deve anche implementare [**un'interfaccia IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) o [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) in Windows XP o versioni precedenti. Sono stati sostituiti [**da IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) e [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile) in Windows Vista. Shell usa queste interfacce per inizializzare il gestore.
 
-L'interfaccia [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) deve essere implementata dai seguenti elementi:
+[**L'interfaccia IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) deve essere implementata dagli elementi seguenti:
 
 -   Gestori di icone
--   Gestori di dati
--   Gestori di rilascio
+-   Gestori dati
+-   Gestori di eliminazione
 
-L'interfaccia [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) deve essere implementata dai seguenti elementi:
+[**L'interfaccia IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) deve essere implementata dagli elementi seguenti:
 
--   Gestori dei menu di scelta rapida
+-   Gestori del menu di scelta rapida
 -   Gestori di trascinamento della selezione
 -   Gestori della finestra delle proprietà
 
@@ -39,16 +39,16 @@ Gli argomenti seguenti sono descritti nella parte restante di questo argomento:
 
 -   [Implementazione di IPersistFile](#implementing-ipersistfile)
 -   [Implementazione di IShellExtInit](#implementing-ishellextinit)
--   [Personalizzazione di infotip](#infotip-customization)
+-   [Personalizzazione del suggerimento](#infotip-customization)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="implementing-ipersistfile"></a>Implementazione di IPersistFile
 
-L'interfaccia [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) è progettata per consentire il caricamento o il salvataggio di un oggetto in un file su disco. Sono disponibili sei metodi, oltre a [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown), cinque dei propri e il metodo [**GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) che eredita da [**IPersist**](/windows/win32/api/objidl/nn-objidl-ipersist). Con le estensioni della shell, **IPersist** viene usato solo per inizializzare un oggetto gestore dell'estensione della shell. Poiché in genere non è necessario leggere o scrivere sul disco, solo i metodi **GetClassID** e [**Load**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) richiedono un'implementazione non token.
+[**L'interfaccia IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) è progettata per consentire il caricamento o il salvataggio di un oggetto in un file su disco. Sono disponibili sei metodi oltre a [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown), cinque di per sé e il [**metodo GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) ereditato da [**IPersist**](/windows/win32/api/objidl/nn-objidl-ipersist). Con le estensioni shell, **IPersist** viene usato solo per inizializzare un oggetto gestore dell'estensione shell. Poiché in genere non è necessario leggere o scrivere sul disco, solo i **metodi GetClassID** e [**Load**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) richiedono un'implementazione nontoken.
 
-La shell chiama prima [**GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) e la funzione restituisce l'identificatore di classe (CLSID) dell'oggetto gestore di estensione. La shell chiama quindi [**Load**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) e passa due valori. Il primo, *pszFile*, è una stringa Unicode con il nome del file o della cartella su cui la Shell sta per operare. Il secondo è *dwMode*, che indica la modalità di accesso ai file. Poiché in genere non è necessario accedere ai file, *dwMode* è in genere pari a zero. Il metodo archivia questi valori in base alle esigenze per un riferimento successivo.
+Shell chiama [**prima GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) e la funzione restituisce l'identificatore di classe (CLSID) dell'oggetto gestore estensioni. Shell chiama quindi [**Load**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) e passa due valori. Il primo, *pszFile*, è una stringa Unicode con il nome del file o della cartella su cui Shell sta per operare. Il secondo è *dwMode*, che indica la modalità di accesso ai file. Poiché in genere non è necessario accedere ai file, *dwMode* è in genere zero. Il metodo archivia questi valori in base alle esigenze per riferimenti successivi.
 
-Nel frammento di codice seguente viene illustrato il modo in cui un tipico gestore dell'estensione della shell implementa i metodi [**GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) e [**Load**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) . È progettato per gestire ANSI o Unicode. CLSID \_ SampleExtHandler è il GUID dell'oggetto gestore dell'estensione e CSampleShellExtension è il nome della classe utilizzata per implementare l'interfaccia. Le variabili **m \_ szFileName** e **m \_ dwMode** sono variabili private utilizzate per archiviare i flag di accesso e il nome del file.
+Il frammento di codice seguente illustra come un tipico gestore di estensioni shell implementa i [**metodi GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) [**e Load.**](/windows/win32/api/objidl/nf-objidl-ipersistfile-load) È progettato per gestire ANSI o Unicode. CLSID SampleExtHandler è il GUID dell'oggetto gestore di estensioni e CSampleShellExtension è il nome della classe usata per \_ implementare l'interfaccia. Le **variabili m \_ szFileName** e **m \_ dwMode** sono variabili private usate per archiviare il nome del file e i flag di accesso.
 
 
 ```C++
@@ -79,13 +79,13 @@ IFACEMETHODIMP CSampleShellExtension::Load(PCWSTR pszFile, DWORD dwMode)
 
 ## <a name="implementing-ishellextinit"></a>Implementazione di IShellExtInit
 
-L'interfaccia [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) ha un solo metodo, [**IShellExtInit:: Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize), oltre a [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Il metodo dispone di tre parametri che la shell può usare per passare vari tipi di informazioni. I valori passati dipendono dal tipo di gestore e altri possono essere impostati su **null**.
+[**L'interfaccia IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) ha un solo metodo, [**IShellExtInit::Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize), oltre a [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Il metodo dispone di tre parametri che shell può usare per passare vari tipi di informazioni. I valori passati dipendono dal tipo di gestore e alcuni possono essere impostati su **NULL.**
 
--   *pidlFolder* include il puntatore di una cartella a un elenco di identificatori di elemento (PIDL). Si tratta di un PIDL assoluto. Per le estensioni della finestra delle proprietà, questo valore è **null**. Per le estensioni del menu di scelta rapida, è il PIDL della cartella che contiene l'elemento di cui viene visualizzato il menu di scelta rapida. Per i gestori di trascinamento della selezione non predefiniti, è il PIDL della cartella di destinazione.
--   *pDataObject* include un puntatore all'interfaccia [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) di un oggetto dati. L'oggetto dati include uno o più nomi di file nel formato [CF \_ HDROP](dragdrop.md) .
--   *hRegKey* include una chiave del registro di sistema per l'oggetto file o il tipo di cartella.
+-   *pidlFolder contiene* il puntatore di una cartella a un elenco di identificatori di elemento (PIDL). Si tratta di un FILE PIDL assoluto. Per le estensioni della finestra delle proprietà, questo valore è **NULL.** Per le estensioni del menu di scelta rapida, è il file PIDL della cartella che contiene l'elemento di cui viene visualizzato il menu di scelta rapida. Per i gestori di trascinamento della selezione non predefiniti, si tratta del FILE PIDL della cartella di destinazione.
+-   *pDataObject contiene* un puntatore all'interfaccia [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) di un oggetto dati. L'oggetto dati contiene uno o più nomi di file in [ \_ formato CF HDROP.](dragdrop.md)
+-   *hRegKey contiene* una chiave del Registro di sistema per l'oggetto file o il tipo di cartella.
 
-Il metodo [**IShellExtInit:: Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) archivia il nome file, il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) e la chiave del registro di sistema in base alle esigenze per un uso successivo. Nel frammento di codice seguente viene illustrata un'implementazione di **IShellExtInit:: Initialize**. Per semplicità, in questo esempio si presuppone che l'oggetto dati contenga un solo file. In generale, l'oggetto dati potrebbe contenere più file, ognuno dei quali dovrà essere estratto.
+Il [**metodo IShellExtInit::Initialize**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) archivia il nome file, il puntatore [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) e la chiave del Registro di sistema in base alle esigenze per un uso successivo. Il frammento di codice seguente illustra un'implementazione di **IShellExtInit::Initialize**. Per semplicità, questo esempio presuppone che l'oggetto dati contenga un solo file. In generale, l'oggetto dati potrebbe contenere più file, ognuno dei quali dovrà essere estratto.
 
 
 ```C++
@@ -171,11 +171,11 @@ IFACEMETHODIMP CSampleShellExtension::Initialize(__in_opt PCIDLIST_ABSOLUTE pidl
 
 
 
-## <a name="infotip-customization"></a>Personalizzazione di infotip
+## <a name="infotip-customization"></a>Personalizzazione del suggerimento
 
-Esistono due modi per personalizzare infotip. Un modo consiste nell'implementare un oggetto che supporta [**IQueryInfo**](/windows/win32/api/shlobj_core/nn-shlobj_core-iqueryinfo) e quindi registrare l'oggetto sotto la sottochiave corretta nel registro di sistema (vedere di seguito). In alternativa, è possibile specificare una stringa fissa o un elenco di determinate proprietà di file da visualizzare.
+Esistono due modi per personalizzare le infotip. Un modo è implementare un oggetto che supporta [**IQueryInfo**](/windows/win32/api/shlobj_core/nn-shlobj_core-iqueryinfo) e quindi registrare l'oggetto nella sottochiave appropriata nel Registro di sistema (vedere di seguito). In alternativa, è possibile specificare una stringa fissa o un elenco di determinate proprietà di file da visualizzare.
 
-Per visualizzare una stringa fissa per un'estensione dello spazio dei nomi, creare una sottochiave denominata **infotip** sotto la chiave CLSID dell'estensione dello spazio dei nomi. Impostare i dati della sottochiave in modo che siano la stringa che si desidera visualizzare.
+Per visualizzare una stringa fissa per un'estensione dello spazio dei nomi, creare una sottochiave denominata **InfoTip** sotto la chiave CLSID dell'estensione dello spazio dei nomi. Impostare i dati di tale sottochiave come stringa da visualizzare.
 
 ```
 HKEY_CLASSES_ROOT
@@ -184,7 +184,7 @@ HKEY_CLASSES_ROOT
          InfoTip = InfoTip string for your namespace extension
 ```
 
-Per visualizzare una stringa fissa per un tipo di file, creare una sottochiave denominata **infotip** sotto la chiave **ProgID** del tipo di file per cui si vuole specificare infotip. Impostare i dati della sottochiave in modo che siano la stringa che si desidera visualizzare.
+Per visualizzare una stringa fissa per un tipo di file, creare una sottochiave denominata **InfoTip** sotto la chiave **ProgID** del tipo di file per cui si vogliono specificare i suggerimenti. Impostare i dati di tale sottochiave come stringa da visualizzare.
 
 ```
 HKEY_CLASSES_ROOT
@@ -192,7 +192,7 @@ HKEY_CLASSES_ROOT
       InfoTip = InfoTip string for all files of this type
 ```
 
-Se si vuole che la shell mostri determinate proprietà del file in infotip per un tipo di file specifico, creare una sottochiave denominata **infotip** sotto la chiave **ProgID** del tipo di file. Impostare i dati di tale sottochiave come un elenco delimitato da punti e virgola di nomi di proprietà canonici o {fmtid}, coppie PID dove *propName* è un nome di proprietà canonico e *{fmtid}, PID* è una [**coppia fmtid/PID**](./objects.md).
+Se si vuole che Shell mostri determinate proprietà del file nel suggerimento per un tipo di file specifico, creare una sottochiave denominata **InfoTip** sotto la chiave **ProgID** di tale tipo di file. Impostare i dati di tale sottochiave come elenco delimitato da punto e virgola di nomi di proprietà canonici o {fmtid}, coppie pid dove *propname* è un nome di proprietà canonico e *{fmtid}, pid* è una coppia [**FMTID/PID**](./objects.md).
 
 ```
 HKEY_CLASSES_ROOT
@@ -200,35 +200,35 @@ HKEY_CLASSES_ROOT
       InfoTip = propname;propname;{fmtid},pid;{fmtid},pid
 ```
 
-È possibile utilizzare i nomi di proprietà seguenti.
+È possibile usare i nomi di proprietà seguenti.
 
 
 
 | Nome proprietà    | Descrizione                   | Recuperato da                                                                            |
 |------------------|-------------------------------|-------------------------------------------------------------------------------------------|
-| Autore           | Autore del documento        | [**autore di PIDSI \_**](../stg/the-summary-information-property-set.md)                             |
-| Titolo            | Titolo del documento         | [**\_titolo PIDSI**](../stg/the-summary-information-property-set.md)                              |
-| Oggetto          | Riepilogo oggetto               | [**\_oggetto PIDSI**](../stg/the-summary-information-property-set.md)                            |
-| Commento          | Commenti del documento             | [**PIDSI \_ Proprietà commento**](../stg/the-summary-information-property-set.md) o cartella/unità |
-| PageCount        | Numero di pagine               | [**\_PageCount PIDSI**](../stg/the-summary-information-property-set.md)                          |
+| Autore           | Autore del documento        | [**AUTORE \_ PIDSI**](../stg/the-summary-information-property-set.md)                             |
+| Titolo            | Titolo del documento         | [**TITOLO \_ PIDSI**](../stg/the-summary-information-property-set.md)                              |
+| Oggetto          | Riepilogo dell'oggetto               | [**SOGGETTO \_ PIDSI**](../stg/the-summary-information-property-set.md)                            |
+| Commento          | Commenti del documento             | [**PIDSI \_ PROPRIETÀ COMMENT**](../stg/the-summary-information-property-set.md) o cartella/unità |
+| PageCount        | Numero di pagine               | [**PIDSI \_ PAGECOUNT**](../stg/the-summary-information-property-set.md)                          |
 | Nome             | Nome descrittivo                 | Visualizzazione cartelle standard                                                                      |
-| OriginalLocation | Percorso del file originale     | Cartella valigetta e cartella Cestino                                                   |
-| DateDeleted      | Il file di data è stato eliminato         | Cartella Cestino                                                                        |
-| Tipo             | Tipo di file                  | Visualizzazione Dettagli cartella standard                                                              |
-| Dimensione             | Dimensioni del file                  | Visualizzazione Dettagli cartella standard                                                              |
+| OriginalLocation | Percorso del file originale     | Cartella di valigetta e Cestino cartella                                                   |
+| DateDeleted      | Data di eliminazione del file         | Cestino cartella                                                                        |
+| Tipo             | Tipo di file                  | Visualizzazione dei dettagli della cartella standard                                                              |
+| Dimensione             | Dimensioni del file                  | Visualizzazione dei dettagli della cartella standard                                                              |
 | SyncCopyIn       | Uguale a OriginalLocation      | Uguale a OriginalLocation                                                                  |
-| Ultima modifica         | Data ultima modifica            | Visualizzazione Dettagli cartella standard                                                              |
-| Data di creazione          | Data creazione                  | Visualizzazione Dettagli cartella standard                                                              |
-| Accedere         | Data ultimo accesso            | Visualizzazione Dettagli cartella standard                                                              |
-| InCartella         | Directory che contiene il file | Risultati della ricerca nei documenti                                                                   |
-| Classifica             | Qualità della corrispondenza di ricerca       | Risultati della ricerca nei documenti                                                                   |
+| Ultima modifica         | Data ultima modifica            | Visualizzazione dei dettagli della cartella standard                                                              |
+| Data di creazione          | Data creazione                  | Visualizzazione dei dettagli della cartella standard                                                              |
+| Accedere         | Data dell'ultimo accesso            | Visualizzazione dei dettagli della cartella standard                                                              |
+| InFolder         | Directory contenente il file | Documentare i risultati della ricerca                                                                   |
+| Classifica             | Qualità della corrispondenza di ricerca       | Documentare i risultati della ricerca                                                                   |
 | FreeSpace        | Spazio di archiviazione disponibile       | Unità disco                                                                               |
 | NumberOfVisits   | Numero di visite              | Cartella Preferiti                                                                          |
-| Attributi       | Attributi file               | Visualizzazione Dettagli cartella standard                                                              |
-| Company          | Nome azienda                  | [**\_società PIDDSI**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md)   |
-| Category         | Categoria documento             | [**\_categoria PIDDSI**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md)  |
-| Copyright        | Copyright del supporto               | [**\_Copyright PIDMSI**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md) |
-| HTMLInfoTipFile  | File InfoTip HTML             | File Desktop.ini per la cartella                                                               |
+| Attributi       | Attributi file               | Visualizzazione dei dettagli della cartella standard                                                              |
+| Company          | Nome azienda                  | [**SOCIETÀ PIDDSI \_**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md)   |
+| Category         | Categoria di documenti             | [**CATEGORIA \_ PIDDSI**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md)  |
+| Copyright        | Copyright multimediale               | [**PIDMSI \_ COPYRIGHT**](../stg/the-documentsummaryinformation-and-userdefined-property-sets.md) |
+| HTMLInfoTipFile  | File di suggerimento informazioni HTML             | Desktop.ini file per la cartella                                                               |
 
 
 
@@ -238,7 +238,7 @@ HKEY_CLASSES_ROOT
 
 <dl> <dt>
 
-[Registrazione di gestori estensioni della shell](reg-shell-exts.md)
+[Registrazione dei gestori di estensioni della shell](reg-shell-exts.md)
 </dt> </dl>
 
  

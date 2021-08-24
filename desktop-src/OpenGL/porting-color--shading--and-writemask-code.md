@@ -1,48 +1,48 @@
 ---
-title: Porting di colori, ombreggiatura e codice Writemask
-description: Porting di colori, ombreggiatura e codice Writemask
+title: Porting color, shading e writemask Code
+description: Porting color, shading e writemask Code
 ms.assetid: ffcf33b2-c3b8-4e89-9c2f-085b98cbb496
 keywords:
-- Porting di IRIS GL, colore
-- porting da IRIS GL, color
-- porting in OpenGL da IRIS GL, colore
+- Porting IRIS GL, colore
+- porting da IRIS GL, colore
+- porting a OpenGL da IRIS GL, colore
 - Porting OpenGL da IRIS GL, colore
-- Porting di IRIS GL, ombreggiatura
+- Porting IRIS GL, ombreggiatura
 - porting da IRIS GL, ombreggiatura
 - porting in OpenGL da IRIS GL, ombreggiatura
 - Porting OpenGL da IRIS GL, ombreggiatura
-- Porting di IRIS GL, writemask
+- Porting IRIS GL, maschera di scrittura
 - porting da IRIS GL, writemask
 - porting in OpenGL da IRIS GL, writemask
 - Porting OpenGL da IRIS GL, writemask
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f8bc35986bc0f9d7076411fecbd9c1fa5d7bfbc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b9d3fcb9cf47b45b4b1174cb20e3259dbb883c2fd0414d255a418c52b50fa28e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485781"
 ---
-# <a name="porting-color-shading-and-writemask-code"></a>Porting di colori, ombreggiatura e codice Writemask
+# <a name="porting-color-shading-and-writemask-code"></a>Porting color, shading e writemask Code
 
-Quando si portano il codice di colore, ombreggiatura e writemask in OpenGL, tenere presente quanto segue:
+Quando si esegue la porting di codice a colori, ombreggiatura e writemask in OpenGL, tenere presente quanto segue:
 
--   Sebbene sia possibile impostare gli indici mappa colori con la funzione OpenGL [glIndex](glindex-functions.md) , OpenGL non dispone di una funzione per il caricamento degli indici mappa colori.
--   I valori dei colori vengono normalizzati in base al tipo di dati. Per informazioni sui valori dei colori, vedere [glColor](glcolor-functions.md).
--   Non esiste un equivalente semplice per **CPack**.
--   Potrebbe essere necessario tradurre il codice che include le funzioni **c** o **color** in [**glClearColor**](glclearcolor.md) o [**glClearIndex**](glclearindex.md) anziché **glColor** o **glIndex**.
--   Il writemask RGBA viene applicato a ogni componente, ma non a ogni bit.
--   IRIS GL fornisce costanti di colore definite: nero, blu, rosso, verde, MAGENTA, ciano, giallo e bianco. OpenGL non fornisce queste costanti.
+-   Anche se è possibile impostare gli indici della mappa colori con la funzione OpenGL [glIndex,](glindex-functions.md) OpenGL non dispone di una funzione per il caricamento degli indici della mappa colori.
+-   I valori dei colori vengono normalizzati al tipo di dati. Per informazioni sui valori dei colori, vedere [glColor](glcolor-functions.md).
+-   Non esiste un equivalente semplice per **cpack**.
+-   Potrebbe essere necessario convertire il codice che include le funzioni **c** o **color** in [**glClearColor**](glclearcolor.md) o [**glClearIndex**](glclearindex.md) anziché **glColor** **o glIndex**.
+-   La maschera di scrittura RGBA si applica a ogni componente, ma non a ogni bit.
+-   IRIS GL fornisce costanti di colore definite: BLACK, BLUE, RED, GREEN, MAGENTA, CYAN, YELLOW e WHITE. OpenGL non fornisce queste costanti.
 
-Questo argomento include informazioni sui seguenti elementi.
+Questo argomento include informazioni sugli argomenti seguenti.
 
--   [Chiamate di colore di porting](porting-color-calls.md)
+-   [Porting di chiamate a colori](porting-color-calls.md)
 -   [Porting di modelli di ombreggiatura](porting-shading-models.md)
 
- 
+ 
 
- 
+ 
 
 
 

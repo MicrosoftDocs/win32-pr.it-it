@@ -1,6 +1,6 @@
 ---
-title: attributo msRADIUSFramedIPAddress
-description: L'attributo msRADIUSFramedIPAddress viene utilizzato internamente.
+title: Attributo msRADIUSFramedIPAddress
+description: L'attributo msRADIUSFramedIPAddress viene usato internamente.
 ms.assetid: 4c976dae-92af-42e0-8c05-c98ba238272a
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d15949319700179edfa982f7d41b5a83ba77f62
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4da294b0ba249ed92284f7555d76ced459a81a4fd0d79f311250fbb3477b8c12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119542669"
 ---
-# <a name="msradiusframedipaddress-attribute"></a>attributo msRADIUSFramedIPAddress
+# <a name="msradiusframedipaddress-attribute"></a>Attributo msRADIUSFramedIPAddress
 
-L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modificare direttamente questo valore.
+**L'attributo msRADIUSFramedIPAddress** viene usato internamente. Non modificare direttamente questo valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | msRADIUSFramedIPAddress              |
-| LDAP-Display-Name | msRADIUSFramedIPAddress              |
+| Ldap-Display-Name | msRADIUSFramedIPAddress              |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1153              |
-| System-ID-GUID    | db0c90a4-c1f2-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | db0c90a4-c1f2-11d1-nette5-0080c76670c0 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ L'attributo **msRADIUSFramedIPAddress** viene utilizzato internamente. Non modif
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

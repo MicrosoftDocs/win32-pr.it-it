@@ -1,10 +1,10 @@
 ---
-title: Sintassi Object (DN-String)
-description: Stringa di ottetto che contiene un valore stringa e un DN.
+title: Sintassi Object(DN-String)
+description: Stringa ottetto che contiene un valore stringa e un DN.
 ms.assetid: 7a5ce9f3-ac97-4936-868a-6b18f202972f
 ms.tgt_platform: multiple
 keywords:
-- Sintassi dell'oggetto (DN-String) AD schema
+- Schema AD della sintassi di Object(DN-String)
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 823da21325abdc426d5f58df4cdf04de19fc68b6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18222343a5c10b7231d174021c8d4238ba075b66b648d99a704f4e1d1d651e2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580251"
 ---
-# <a name="objectdn-string-syntax"></a>Sintassi Object (DN-String)
+# <a name="objectdn-string-syntax"></a>Sintassi Object(DN-String)
 
-Stringa di ottetto che contiene un valore stringa e un DN.
+Stringa ottetto che contiene un valore stringa e un DN.
 
 
 
@@ -30,11 +30,11 @@ Stringa di ottetto che contiene un valore stringa e un DN.
 |--------------|------------------------------------------------------------------------------------|
 | Nome         | Object(DN-String)                                                                  |
 | ID sintassi    | 2.5.5.14                                                                           |
-| ID OM        | 127                                                                                |
+| OM ID        | 127                                                                                |
 | Tipo MAPI    | \-                                                                                 |
-| Tipo di annunci     | \_DN ADSTYPE \_ con \_ stringa                                                          |
-| Tipo Variant | \_invio VT                                                                       |
-| Tipo SDS     | Oggetto COM di cui è possibile eseguire il cast a un [**IADsDNWithString**](/windows/desktop/api/iads/nn-iads-iadsdnwithstring). |
+| Tipo ADS     | ADSTYPE \_ DN \_ WITH \_ STRING                                                          |
+| Tipo variant | VT \_ DISPATCH                                                                       |
+| Tipo SDS     | Oggetto COM di cui è possibile eseguire il cast a [**un oggetto IADsDNWithString.**](/windows/desktop/api/iads/nn-iads-iadsdnwithstring) |
 
 
 
@@ -46,7 +46,7 @@ Un valore con questa sintassi ha il formato seguente:
 S:<char count>:<string value>:<object DN>
 ```
 
-dove " &lt; char count &gt; " è il numero di caratteri nella stringa " &lt; Value String &gt; " e " &lt; Object DN &gt; " è un nome distinto di un oggetto in Active Directory. Active Directory aggiorna il DN se l'oggetto a cui fa riferimento è stato spostato o rinominato.
+dove " char count " è il numero di caratteri nella stringa " string value " e " object DN " è il nome distinto di un oggetto &lt; &gt; in Active &lt; &gt; &lt; &gt; Directory. Active Directory aggiorna il DN se l'oggetto a cui fa riferimento viene spostato o rinominato.
 
 ## <a name="see-also"></a>Vedi anche
 

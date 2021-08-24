@@ -1,33 +1,33 @@
 ---
-description: La \_ categoria Sensor \_ All rappresenta il set di tutte le categorie di sensori definite dalla piattaforma.
+description: La categoria SENSOR CATEGORY ALL rappresenta il set di tutte le categorie di sensori \_ \_ definite dalla piattaforma.
 ms.assetid: e2d9fe6d-450a-446b-968b-0924116af6fe
-title: SENSOR_CATEGORY_ALL (Sensors. h)
+title: SENSOR_CATEGORY_ALL (Sensors.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a2e5641e51dde130cc51d9b2fc35fcc1e158ea6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b4254de58903d664f7a285890dae50202eca49c2a07e100460eab2a2ef81209
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666871"
 ---
-# <a name="sensor_category_all"></a>\_categoria sensore \_ tutti
+# <a name="sensor_category_all"></a>CATEGORIA \_ SENSORE \_ ALL
 
-La \_ categoria Sensor \_ All rappresenta il set di tutte le categorie di sensori definite dalla piattaforma.
+La categoria SENSOR CATEGORY ALL rappresenta il set di tutte le categorie di sensori \_ \_ definite dalla piattaforma.
 
 **Chiavi di proprietà definite dalla piattaforma**
 
-Le chiavi delle proprietà definite dalla piattaforma per questa categoria sono basate \_ sul \_ GUID comune del tipo di dati del sensore \_ \_ :
+Le chiavi di proprietà definite dalla piattaforma per questa categoria si basano sul GUID COMUNE SENSOR \_ DATA \_ \_ \_ TYPE:
 
 {DB5E0CF2-CF1F-4C18-B46C-D86011D62150}
 
-Nella tabella seguente vengono descritti i campi dati definiti dalla piattaforma.
+La tabella seguente descrive i campi dati definiti dalla piattaforma.
 
 
 
 | Nome del campo dati e PID                                                                                                                                                                                                                                                 | Descrizione                                                                                                                                                                        |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="SENSOR_DATA_TYPE_TIMESTAMP"></span><span id="sensor_data_type_timestamp"></span><dl> <dt>**Sensore \_ di \_ \_ Timestamp del tipo di dati**</dt> <dt>(PID = 2)</dt> </dl> | **FILETIME VT \_**<br/> Obbligatorio per tutti i report di dati. Contrassegna ogni report dei dati con l'ora in cui è stato creato il report dati nel formato UTC (Coordinated Universal Time).<br/> |
+| <span id="SENSOR_DATA_TYPE_TIMESTAMP"></span><span id="sensor_data_type_timestamp"></span><dl> <dt>**SENSORE \_ \_DATA TYPE \_ TIMESTAMP**</dt> <dt>(PID = 2 )</dt> </dl> | **VT \_ FILETIME**<br/> Obbligatorio per tutti i report di dati. Contrassegna ogni report di dati con l'ora in cui è stato creato il report Coordinated Universal Time (UTC).<br/> |
 
 
 
@@ -37,9 +37,9 @@ Nella tabella seguente vengono descritti i campi dati definiti dalla piattaforma
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                            |
-| Intestazione<br/>                   | <dl> <dt>Sensori. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Sensors.h</dt> </dl> |
 
 
 

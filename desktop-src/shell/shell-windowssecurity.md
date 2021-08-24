@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Shell.WindowsSecurity: visualizza la Sicurezza di Windows di dialogo.'
+description: 'Metodo Shell.WindowsSecurity : visualizza la Sicurezza di Windows finestra di dialogo.'
 title: Metodo Shell.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 94916E29-5960-4010-B2C6-0FAA1E4BF72D
-ms.openlocfilehash: 2c6e18ba2388909390b856deb03b65b078f810d9
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 327855763220fd2ea1c2e0e6b93538c16fa27cf35cd65cba06888879580259c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592001"
 ---
 # <a name="shellwindowssecurity-method"></a>Metodo Shell.WindowsSecurity
 
@@ -57,10 +57,10 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo visualizza la finestra di dialogo visualizzata dopo aver premuto CTRL+ALT+CANC o usando l'opzione di sicurezza nel menu **Start.**
+Questo metodo visualizza la finestra di dialogo visualizzata dopo la pressione di CTRL+ALT+CANC o l'uso dell'opzione di sicurezza nel menu **Start.**
 
 > [!Note]  
-> Questo metodo può essere usato solo quando è connesso da una sessione terminal a Microsoft Terminal Server.
+> Questo metodo può essere usato solo quando si è connessi da una sessione terminal a Microsoft Terminal Server.
 
  
 
@@ -68,7 +68,7 @@ Questo metodo visualizza la finestra di dialogo visualizzata dopo aver premuto C
 
 Gli esempi seguenti illustrano l'uso di **WindowsSecurity** per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -122,8 +122,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

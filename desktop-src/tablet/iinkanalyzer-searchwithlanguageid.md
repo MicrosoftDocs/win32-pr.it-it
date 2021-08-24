@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 201469933da10b0d68a4d3a50e63c42f8d01d2dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 922cbd2110149ac27041be41ccd24a601e87b5355351e0774a80eb636461c21f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590351"
 ---
 # <a name="iinkanalyzersearchwithlanguageid-method"></a>Metodo IInkAnalyzer::SearchWithLanguageId
 
@@ -75,7 +75,7 @@ Puntatore a una matrice del numero di tratti in ogni risultato della ricerca.
 *pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Numero di ID tratto in *ppulStrokeIds.*
+Numero di ID di tratto in *ppulStrokeIds.*
 
 </dd> <dt>
 
@@ -88,15 +88,15 @@ Puntatore a una matrice di ID tratto che rappresenta un set di tratti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa ricerca trova sottostringhe di più parole e singole parole. Vengono cercati sia i risultati di riconoscimento alternativi che le segmentazioni alternative.
+Questa ricerca trova sottostringhe di più parole e singole parole. Vengono cercati sia i risultati del riconoscimento alternativo che le segmentazioni alternative.
 
-Tutte le stringhe in ingresso verranno convertite in un'unica distinzione tra maiuscole e minuscole per il confronto utilizzando l'LCID del thread corrente per eseguire questa conversione per rispettare le convenzioni relative alle maiuscole e minuscole relative alle impostazioni cultura.
+Tutte le stringhe in ingresso verranno convertite in una singola distinzione tra maiuscole e minuscole per il confronto utilizzando l'LCID del thread corrente per eseguire questa conversione per rispettare le convenzioni relative alle maiuscole e minuscole relative alle impostazioni cultura.
 
-La stringa passata viene considerata come una frase. Le parole e i caratteri devono essere visualizzati negli alterante per i tratti nell'ordine specificato. La prima e l'ultima parola della frase possono essere abbinate come sottostringhe (la prima parola visualizzata alla fine di un'alternativa e l'ultima parola visualizzata all'inizio di una frase), ma qualsiasi altra parola (quelle all'interno della frase) deve essere visualizzata come parole intere.
+La stringa passata viene considerata come una frase. Le parole e i caratteri devono essere visualizzati negli alterante per i tratti nell'ordine specificato. La prima e l'ultima parola della frase possono essere abbinate come sottostringhe (la prima parola visualizzata alla fine di un'alternativa e l'ultima parola visualizzata all'inizio della frase), ma tutte le altre parole (quelle all'interno della frase) devono essere visualizzate come parole intere.
 
 Se la stringa passata non contiene spazi vuoti tra i caratteri, la sottostringa può essere trovata in qualsiasi punto all'interno di una singola parola in un'alternativa.
 
@@ -110,7 +110,7 @@ La ricerca non genera eventi PopulateContextNode. Verranno cercati solo i tratti
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |

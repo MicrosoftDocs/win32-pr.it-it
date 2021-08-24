@@ -1,32 +1,32 @@
 ---
-title: Traffico di broadcast/multicast ALE
-description: Viene eseguito il mapping di tutto il traffico in ingresso multicast e broadcast a livello di applicazione (ALE) a un flusso di ALE globale.
+title: Traffico multicast/broadcast ALE
+description: Tutto il traffico multicast e broadcast in ingresso ai livelli application layer enforcement (ALE) viene mappato a un flusso alE globale.
 ms.assetid: b10b9758-8fce-4256-a25d-917e01336456
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f30b56a6e2a27a209baf66d34948b704ae321644
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2849f7277cc9ada580bca22fa5a4fdf618d959d255b442607963047dd2a37bba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315611"
 ---
-# <a name="ale-multicastbroadcast-traffic"></a>Traffico di broadcast/multicast ALE
+# <a name="ale-multicastbroadcast-traffic"></a>Traffico multicast/broadcast ALE
 
-Viene eseguito il mapping di tutto il traffico in ingresso multicast e broadcast a livello di applicazione (ALE) a un [flusso di ale](ale-stateful-filtering.md)globale. Il traffico di risposta per i pacchetti multicast e broadcast in ingresso è Classificato al livello [**FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V {4 \| 6}**](management-filtering-layer-identifiers-.md) e vengono creati flussi ale distinti per ogni risposta.
+Tutto il traffico multicast e broadcast in ingresso ai livelli application layer enforcement (ALE) viene mappato a un flusso [ALE globale.](ale-stateful-filtering.md) Il traffico di risposta per i pacchetti multicast e broadcast in ingresso viene classificato al livello [**FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}**](management-filtering-layer-identifiers-.md) e per ogni risposta vengono creati flussi ALE separati.
 
-Il traffico multicast e broadcast in uscita a livello di ALE crea un flusso ALE di 4 secondi. Per impostazione predefinita, l'autorizzazione di un pacchetto multicast o broadcast in uscita consentirà il traffico in ingresso, sia unicast, multicast o broadcast, da qualsiasi indirizzo remoto per un massimo di 4 secondi. Questo flusso di ALE può essere aggiornato o mantenuto attivo solo dal traffico in uscita successivo corrispondente al flusso ALE.
+Il traffico multicast e broadcast in uscita ai livelli ALE crea un flusso ALE di 4 secondi. Per impostazione predefinita, l'autorizzazione di un pacchetto ALE multicast o broadcast in uscita consente il traffico in ingresso, che sia unicast, multicast o broadcast, da qualsiasi indirizzo remoto per un massimo di 4 secondi. Tale flusso ALE può essere aggiornato o mantenuto attivo solo dal traffico in uscita successivo che corrisponde al flusso ALE.
 
 > [!Note]  
-> Il ciclo di vita di 4 secondi viene specificato dalle opzioni di callout FWPM del callout predefinite di [**\_ \_ \_ \_ auth \_ Connect \_ Layer \_ V {4 \| 6}**](built-in-callout-identifiers.md). Per modificare la durata predefinita di 4 secondi, aggiungere un filtro che faccia riferimento **alle \_ Opzioni del set di callout FWPM autenticazione di \_ \_ \_ \_ \_ livello \_ V {4 \| 6}** callout. Per ulteriori informazioni, vedere [personalizzazione del flusso di ale](ale-flow-customization.md) .
+> La durata di 4 secondi viene specificata dal callout [**predefinito FWPM \_ CALLOUT \_ SET OPTIONS \_ \_ AUTH CONNECT LAYER \_ \_ \_ V{4 \| 6}**](built-in-callout-identifiers.md). Per modificare la durata predefinita di 4 secondi, aggiungere un filtro che faccia riferimento al callout **FWPM \_ CALLOUT \_ SET OPTIONS \_ \_ AUTH CONNECT LAYER \_ \_ \_ V{4 \| 6}.** Per [altre informazioni, Flow ale.](ale-flow-customization.md)
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Application Layer Enforcement (ALE)](application-layer-enforcement--ale-.md)
+[Applicazione del livello applicazione (ALE)](application-layer-enforcement--ale-.md)
 </dt> <dt>
 
 [Livelli ALE](ale-layers.md)
@@ -38,12 +38,12 @@ Il traffico multicast e broadcast in uscita a livello di ALE crea un flusso ALE 
 [Riautorizzazione ALE](ale-re-authorization.md)
 </dt> <dt>
 
-[Personalizzazione del flusso di ALE](ale-flow-customization.md)
+[Personalizzazione dei Flow ale](ale-flow-customization.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

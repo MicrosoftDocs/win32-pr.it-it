@@ -1,41 +1,41 @@
 ---
-description: È possibile utilizzare l'opzione di disinstallazione patch azione personalizzata per specificare che il programma di installazione esegue l'azione personalizzata solo quando viene disinstallata una patch.
+description: È possibile usare l'opzione Custom Action Patch Uninstall per specificare che il programma di installazione deve eseguire l'azione personalizzata solo quando viene disinstallata una patch.
 ms.assetid: c741aa40-ba4c-459e-936a-19c002620c30
-title: Patch disinstallare azioni personalizzate
+title: Azioni personalizzate di disinstallazione patch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b90cfffbdb37f1f2fab046b794010a790e9a5212
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f69077337b80177984ff43f12038edb1daa48215f92c627f4ed22ea2f69c876b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145424"
 ---
-# <a name="patch-uninstall-custom-actions"></a>Patch disinstallare azioni personalizzate
+# <a name="patch-uninstall-custom-actions"></a>Azioni personalizzate di disinstallazione patch
 
-È possibile utilizzare l' [opzione di disinstallazione patch azione personalizzata](custom-action-patch-uninstall-option.md) per specificare che il programma di installazione esegue l'azione personalizzata solo quando viene disinstallata una patch.
+È possibile usare [l'opzione Custom Action Patch Uninstall](custom-action-patch-uninstall-option.md) per specificare che il programma di installazione deve eseguire l'azione personalizzata solo quando viene disinstallata una patch.
 
-**Windows Installer 4,5 e versioni successive:** È possibile utilizzare l' [opzione di disinstallazione patch azione personalizzata](custom-action-patch-uninstall-option.md) per specificare che il programma di installazione esegue l'azione personalizzata solo quando viene disinstallata una patch.
+**Windows Installer 4.5 e versioni successive:** È possibile usare [l'opzione custom action patch uninstall per](custom-action-patch-uninstall-option.md) specificare che il programma di installazione esegue l'azione personalizzata solo quando viene disinstallata una patch.
 
-**[Windows Installer 4,0 e versioni precedenti](not-supported-in-windows-installer-4-0.md): * *
+**[Windows Installer 4.0 e versioni precedenti](not-supported-in-windows-installer-4-0.md): **
 
-L' [opzione di disinstallazione patch azione personalizzata](custom-action-patch-uninstall-option.md) non è disponibile. Non esiste alcun metodo per contrassegnare un' [azione personalizzata](custom-actions.md) all'interno di un pacchetto di patch da eseguire quando la patch viene disinstallata perché il programma di installazione non applica i pacchetti di patch da disinstallare.
+[L'opzione Custom Action Patch Uninstall (Disinstallazione patch](custom-action-patch-uninstall-option.md) azione personalizzata) non è disponibile. Non esiste alcun metodo [](custom-actions.md) per contrassegnare un'azione personalizzata all'interno di un pacchetto di patch da eseguire quando la patch viene disinstallata perché il programma di installazione non applica i pacchetti di patch da disinstallare.
 
-Per eseguire un' [azione personalizzata](custom-actions.md) quando viene disinstallata una patch particolare, è necessario che l'azione personalizzata sia presente nell'applicazione originale o che si trovi in una patch per il prodotto che viene sempre applicato.
+Per eseguire [un'azione](custom-actions.md) personalizzata quando viene disinstallata una determinata patch, l'azione personalizzata deve essere presente nell'applicazione originale o essere in una patch per il prodotto che viene sempre applicata.
 
-Gli sviluppatori possono utilizzare la proprietà [**MsiPatchRemovalList**](msipatchremovallist.md) per creare un pacchetto di Windows Installer o una patch che esegue [azioni personalizzate](custom-actions.md) sulla rimozione di una patch. L'azione personalizzata può essere creata nel pacchetto di installazione originale, una patch che è già stata applicata al pacchetto o una patch che non è una [patch non installabile](uninstallable-patches.md). L'azione personalizzata può essere condizionata nella proprietà **MsiPatchRemovalList** delle tabelle di sequenza. Per ulteriori informazioni sulle azioni conditionalizing, vedere [utilizzo delle proprietà nelle istruzioni condizionali](using-properties-in-conditional-statements.md) .
+Gli sviluppatori possono usare la [**proprietà MsiPatchRemovalList**](msipatchremovallist.md) per creare un [](custom-actions.md) pacchetto Windows Installer o una patch che esegue azioni personalizzate sulla rimozione di una patch. È possibile creare l'azione personalizzata nel pacchetto di installazione originale, in una patch già applicata al pacchetto o in una patch che non è una [patch disinstallabile.](uninstallable-patches.md) L'azione personalizzata può essere condizionale nella **proprietà MsiPatchRemovalList** nelle tabelle di sequenza. Per [altre informazioni sulla condizionalizzazione delle azioni,](using-properties-in-conditional-statements.md) vedere Uso delle proprietà nelle istruzioni condizionali.
 
-L'azione personalizzata può ottenere i GUID delle patch da rimuovere dal valore della proprietà [**MsiPatchRemovalList**](msipatchremovallist.md) . L'azione personalizzata può determinare se lo stato di installazione della patch è applicato, obsoleto o sostituito chiamando il [**MsiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa) o la proprietà [**PatchProperty**](patch-patchproperty.md) dell' [oggetto patch](patch-object.md).
+L'azione personalizzata può ottenere i GUID delle patch rimosse dal valore della [**proprietà MsiPatchRemovalList.**](msipatchremovallist.md) L'azione personalizzata può determinare se lo stato di installazione della patch viene applicato, obsoleto o sostituito chiamando [**msiGetPatchInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa) o la [**proprietà PatchProperty**](patch-patchproperty.md) dell'oggetto [Patch](patch-object.md).
 
-Se l'azione personalizzata richiede metadati speciali dalla patch, la patch deve contenere un'azione personalizzata che scrive i metadati in un percorso del registro di sistema o di file quando viene applicata la patch. L'azione personalizzata nell'applicazione originale o una patch che viene sempre applicata può ottenere le informazioni necessarie per rimuovere le modifiche apportate alla patch.
+Se l'azione personalizzata richiede metadati speciali dalla patch, la patch deve contenere un'azione personalizzata che scrive i metadati in un registro o in un percorso di file quando viene applicata la patch. L'azione personalizzata nell'applicazione originale o in una patch sempre applicata può ottenere le informazioni necessarie per rimuovere le modifiche della patch.
 
-Le patch che apportano modifiche difficili da annullare correttamente non devono essere contrassegnate come [patch non installabili](uninstallable-patches.md).
+Le patch che apportano modifiche difficili da annullare correttamente non devono essere contrassegnate come [patch disinstallabili.](uninstallable-patches.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Sequenza di patch](sequencing-patches.md)
+[Sequenziazione delle patch](sequencing-patches.md)
 </dt> <dt>
 
 [Rimozione di patch](removing-patches.md)
@@ -44,7 +44,7 @@ Le patch che apportano modifiche difficili da annullare correttamente non devono
 [Patch disinstallabili](uninstallable-patches.md)
 </dt> <dt>
 
-[Disinstallazione di patch](uninstalling-patches.md)
+[Disinstallazione delle patch](uninstalling-patches.md)
 </dt> <dt>
 
 [**MSIPATCHREMOVE**](msipatchremove.md)

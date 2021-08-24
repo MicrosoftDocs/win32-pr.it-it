@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_CellularIdentities01_01
-description: La \_ classe MDM DeviceStatus \_ CellularIdentities01 \_ 01 consente di eseguire una query per verificare se i dispositivi sono conformi ai criteri di crittografia dell'organizzazione.
+title: MDM_DeviceStatus_CellularIdentities01_01 classe
+description: La classe \_ MDM DeviceStatus \_ CellularIdentities01 01 consente di verificare se il dispositivo è conforme ai \_ criteri di crittografia aziendali.
 ms.assetid: e117ff72-48c0-4b25-8b09-c096851c18ac
 keywords:
-- Classe MDM_DeviceStatus_CellularIdentities01_01
-- Classe MDM_DeviceStatus_CellularIdentities01_01, descritta
+- MDM_DeviceStatus_CellularIdentities01_01 classe
+- MDM_DeviceStatus_CellularIdentities01_01 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3d9d3fab514fbfb56d132fc20ba98ef8c2565eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8ee53bb06be0cf5bce11cdcc26be49d86b15f3bb79aa58237ce258f8ee1a05c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655691"
 ---
-# <a name="mdm_devicestatus_cellularidentities01_01-class"></a>\_Classe MDM DeviceStatus \_ CellularIdentities01 \_ 01
+# <a name="mdm_devicestatus_cellularidentities01_01-class"></a>Classe \_ Mdm DeviceStatus \_ CellularIdentities01 \_ 01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** consente di eseguire una query per verificare se i dispositivi sono conformi ai criteri di crittografia dell'organizzazione.
+La **classe \_ MDM DeviceStatus \_ CellularIdentities01 \_ 01** consente di verificare se il dispositivo è conforme ai criteri di crittografia aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -51,23 +51,23 @@ class MDM_DeviceStatus_CellularIdentities01_01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** presenta questi tipi di membri:
+La **classe \_ MDM DeviceStatus \_ CellularIdentities01 \_ 01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** presenta queste proprietà.
+La **classe \_ MDM DeviceStatus \_ CellularIdentities01 \_ 01** ha queste proprietà.
 
 <dl> <dt>
 
-[CommercializationOperator](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-commercializationoperator)
+[CommercializzazioneOperator](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-commercializationoperator)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,21 +75,21 @@ Tipo di accesso: lettura/scrittura
 [ICCID](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-iccid)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[IMSI](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-imsi)
+[Imsi](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-imsi)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -97,42 +97,42 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nodo per le query sulle schede SIM.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/DeviceStatus"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/DeviceStatus"
 
 </dd> <dt>
 
 [PhoneNumber](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-phonenumber)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -140,21 +140,21 @@ Tipo di accesso: lettura/scrittura
 [RoamingCompliance](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-roamingcompliance)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[RoamingStatus](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-roamingstatus)
+[Stato roaming](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-roamingstatus)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -165,10 +165,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -177,7 +177,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI BootConfiguration Win32 rappresenta la configurazione di avvio di un sistema di computer che esegue Windows.
+description: La classe \_ WMI Win32 BootConfiguration rappresenta la configurazione di avvio di un computer che esegue Windows.
 ms.assetid: c2db28dd-3feb-44bb-a532-c91cab980ba3
 ms.tgt_platform: multiple
-title: Classe Win32_BootConfiguration
+title: Win32_BootConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 556688d7c80038f04dd5b94b7c61c5d6dfef3199
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: db18b6ebbd7ccc9e87bffb06cd2b40647e4a9509edc1c27779a0b55efc36b7e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546516"
 ---
-# <a name="win32_bootconfiguration-class"></a>Win32 \_ BootConfiguration (classe)
+# <a name="win32_bootconfiguration-class"></a>Classe BootConfiguration Win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ BootConfiguration Win32** rappresenta la configurazione di avvio di un sistema di computer che esegue Windows.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Win32 BootConfiguration** rappresenta la configurazione di avvio di un computer che esegue Windows.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,26 +56,26 @@ class Win32_BootConfiguration : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ BootConfiguration** presenta questi tipi di membri:
+La **classe Win32 \_ BootConfiguration** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ BootConfiguration** dispone di queste proprietà.
+La **classe Win32 \_ BootConfiguration** ha queste proprietà.
 
 <dl> <dt>
 
 **BootDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
 </dt> </dl>
 
 Percorso dei file di sistema necessari per l'avvio del sistema.
@@ -87,41 +87,41 @@ Esempio: "C: \\ Windows"
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **ConfigurationPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Process and Thread Functions \| [**GetEnvironmentVariable**](/windows/desktop/api/winbase/nf-winbase-getenvironmentvariable) \| WinBootDir")
 </dt> </dl>
 
-Percorso dei file di configurazione. Questo valore può essere simile al valore nella proprietà **BootDirectory** .
+Percorso dei file di configurazione. Questo valore può essere simile al valore nella **proprietà BootDirectory.**
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -129,20 +129,20 @@ Tipo di accesso: sola lettura
 
 Descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
-**LastDrive**
+**Lastdrive**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| file functions \| GetDriveType")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funzioni del file Win32API \| \| GetDriveType")
 </dt> </dl>
 
 Ultima lettera di unità a cui è assegnata un'unità fisica.
@@ -154,13 +154,13 @@ Esempio: "E:"
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
 Nome della configurazione di avvio. Si tratta di un identificatore per la configurazione di avvio.
@@ -170,64 +170,64 @@ Nome della configurazione di avvio. Si tratta di un identificatore per la config
 **ScratchDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| file functions \| GetTempPath")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funzioni file Win32API \| \| GetTempPath")
 </dt> </dl>
 
-Directory in cui possono risiedere i file temporanei in fase di avvio.
+Directory in cui possono risiedere i file temporanei durante l'avvio.
 
 </dd> <dt>
 
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificatore con cui è noto l'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **TempDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| file functions \| GetTempPath")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Funzioni file Win32API \| \| GetTempPath")
 </dt> </dl>
 
-Directory in cui vengono archiviati i file temporanei.
+Directory in cui sono archiviati i file temporanei.
 
-Esempio: "C: \\ Temp"
+Esempio: "C: \\ TEMP"
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ BootConfiguration** deriva dall' [**\_ impostazione CIM**](cim-setting.md).
+La **classe Win32 \_ BootConfiguration** deriva dall'impostazione [**CIM \_**](cim-setting.md).
 
 ## <a name="examples"></a>Esempio
 
-L' [elenco delle proprietà di configurazione di avvio di un esempio di computer](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) Perl restituisce le informazioni di configurazione di avvio per un computer.
+[L'esempio Elenca le proprietà di configurazione di](https://Gallery.TechNet.Microsoft.Com/55c35de3-bb6a-47f0-89f9-d2c49ab4cf19) avvio di un computer Perl restituisce le informazioni di configurazione di avvio per un computer.
 
-Nell'esempio VBScript seguente vengono restituite informazioni sulla configurazione di avvio per un computer.
+L'esempio VBScript seguente restituisce le informazioni di configurazione di avvio per un computer.
 
 
 ```VB
@@ -253,7 +253,7 @@ Next
 
 
 
-Nell'esempio di codice seguente viene illustrato l'utilizzo della classe WMI **Win32 \_ BootConfiguration** .
+L'esempio di codice seguente illustra l'uso della **classe WMI \_ Win32 BootConfiguration.**
 
 
 ```PowerShell
@@ -294,7 +294,7 @@ Temp Directory     : C:\WINDOWS\system32\config\systemprofile\Local Settings\Tem
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -303,7 +303,7 @@ Temp Directory     : C:\WINDOWS\system32\config\systemprofile\Local Settings\Tem
 
 <dl> <dt>
 
-[**\_Impostazione CIM**](cim-setting.md)
+[**Impostazione \_ CIM**](cim-setting.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

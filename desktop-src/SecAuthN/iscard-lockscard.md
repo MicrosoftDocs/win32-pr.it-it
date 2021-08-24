@@ -1,7 +1,7 @@
 ---
-description: Il metodo LockSCard rivendica l'accesso esclusivo alla smart card.
+description: Il metodo LockSCard dichiara l'accesso esclusivo al smart card.
 ms.assetid: 70af7c5a-ebe7-48ee-8a76-dfea7f73f45e
-title: 'Metodo IsValid:: LockSCard (Scardmgr. h)'
+title: Metodo ISCard::LockSCard (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: d5b834afec339aa4c3a4eee42f9817409fabb917
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bdb9e531013836bb193719faa7bcd9d73581e83a3599bd51439be27c44ba1e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482171"
 ---
-# <a name="iscardlockscard-method"></a>Metodo IsValid:: LockSCard
+# <a name="iscardlockscard-method"></a>Metodo ISCard::LockSCard
 
-\[Il metodo **LockSCard** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo LockSCard** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **LockSCard** rivendica l'accesso esclusivo alla [*Smart Card*](../secgloss/s-gly.md).
+Il **metodo LockSCard** dichiara l'accesso esclusivo [*al smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                          | Descrizione                                  |
 |--------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Operazione completata correttamente.<br/> |
 
 
 
@@ -55,13 +55,13 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre al codice di errore COM elencato sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre al codice di errore COM elencato in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
-Per sbloccare la smart card, chiamare il metodo IsValid [**:: UnlockSCard**](iscard-unlockscard.md) .
+Per sbloccare smart card, chiamare il [**metodo ISCard::UnlockSCard.**](iscard-unlockscard.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come acquisire l'accesso esclusivo alla smart card.
+L'esempio seguente illustra l'acquisizione dell'accesso esclusivo al smart card.
 
 
 ```C++
@@ -85,14 +85,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID \_ ISCard è definito come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -100,7 +100,7 @@ if (FAILED(hr))
 
 <dl> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
 [**UnlockSCard**](iscard-unlockscard.md)

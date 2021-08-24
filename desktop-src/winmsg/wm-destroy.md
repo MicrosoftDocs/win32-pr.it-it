@@ -1,23 +1,23 @@
 ---
-description: Inviato quando una finestra viene distrutta. Viene inviata alla routine della finestra che viene distrutta dopo la rimozione della finestra dallo schermo.
+description: Inviato quando una finestra viene distrutta. Viene inviato alla routine della finestra che viene eliminata definitivamente dopo che la finestra è stata rimossa dallo schermo.
 ms.assetid: 089c0645-199b-4a90-9cbc-740f0cf3267d
-title: Messaggio WM_DESTROY (winuser. h)
+title: WM_DESTROY messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db195c22c38759146fb76e98edf4ca7f605a1c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7acff03f01e9bf0c8021f8324411f646341a29a5b3b6dc1f9b3493ec89010c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587451"
 ---
-# <a name="wm_destroy-message"></a>\_Messaggio WM Destroy
+# <a name="wm_destroy-message"></a>Messaggio WM \_ DESTROY
 
-Inviato quando una finestra viene distrutta. Viene inviata alla routine della finestra che viene distrutta dopo la rimozione della finestra dallo schermo.
+Inviato quando una finestra viene distrutta. Viene inviato alla routine della finestra che viene eliminata definitivamente dopo che la finestra è stata rimossa dallo schermo.
 
-Questo messaggio viene inviato prima alla finestra distrutta e quindi alle finestre figlio (se presenti) distrutte. Durante l'elaborazione del messaggio, è possibile presupporre che tutte le finestre figlio esistano ancora.
+Questo messaggio viene inviato prima alla finestra in fase di eliminazione e quindi alle finestre figlio (se presenti) quando vengono distrutte. Durante l'elaborazione del messaggio, si può presumere che tutte le finestre figlio esistano ancora.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -48,11 +48,11 @@ Questo parametro non viene usato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Se la finestra distrutta fa parte della catena del visualizzatore degli Appunti (impostata chiamando la funzione [**SetClipboardViewer**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) ), la finestra deve rimuovere se stessa dalla catena elaborando la funzione [**ChangeClipboardChain**](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) prima di restituire il messaggio **WM \_ Destroy** .
+Se la finestra da eliminare fa parte della catena del visualizzatore appunti (impostata chiamando la funzione [**SetClipboardViewer),**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) la finestra deve rimuovere se stessa dalla catena elaborando la funzione [**ChangeClipboardChain**](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) prima di restituire il messaggio **WM \_ DESTROY.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Se la finestra distrutta fa parte della catena del visualizzatore degli Appunti 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Se la finestra distrutta fa parte della catena del visualizzatore degli Appunti 
 [**ChangeClipboardChain**](/windows/win32/api/winuser/nf-winuser-changeclipboardchain)
 </dt> <dt>
 
-[**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
+[**Destroywindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
 </dt> <dt>
 
 [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage)
@@ -85,7 +85,7 @@ Se la finestra distrutta fa parte della catena del visualizzatore degli Appunti 
 [**SetClipboardViewer**](/windows/win32/api/winuser/nf-winuser-setclipboardviewer)
 </dt> <dt>
 
-[**\_chiusura WM**](wm-close.md)
+[**WM \_ CLOSE**](wm-close.md)
 </dt> <dt>
 
 **Informazioni concettuali**

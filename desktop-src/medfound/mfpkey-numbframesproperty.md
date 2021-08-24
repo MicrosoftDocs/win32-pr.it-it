@@ -1,19 +1,19 @@
 ---
-description: Specifica il numero di frame predittivi bidirezionali (fotogrammi B).
+description: Specifica il numero di fotogrammi predittivi bidirezionali (fotogrammi B).
 ms.assetid: 8bd95baa-c130-4616-8ab7-7d902162e4ed
-title: Proprietà MFPKEY_NUMBFRAMES (Wmcodecdsp. h)
+title: MFPKEY_NUMBFRAMES proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3b0655a4a5e24b92f9699b198f10232de8edf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfcf103da1d629c90209aef4badd604651d73af3e9101cac0f613b47c82883e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555420"
 ---
-# <a name="mfpkey_numbframes-property"></a>\_Proprietà NUMBFRAMES di MFPKEY
+# <a name="mfpkey_numbframes-property"></a>Proprietà MFPKEY \_ NUMBFRAMES
 
-Specifica il numero di frame predittivi bidirezionali (fotogrammi B).
+Specifica il numero di fotogrammi predittivi bidirezionali (fotogrammi B).
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -29,13 +29,13 @@ VT-I4
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, Windows Media Video 9 utilizza solo i fotogrammi (I-frame), noti anche come fotogrammi chiave o frame di ancoraggio, che sono frame completamente codificati e frame predittivi (fotogrammi P), che vengono codificati come differenza rispetto al frame I precedente. I frame B sono diversi dai fotogrammi P perché archiviano le differenze rispetto al frame precedente e le differenze rispetto al frame seguente.
+Per impostazione predefinita, Windows Media Video 9 usa solo intraframe (fotogrammi I), noti anche come fotogrammi chiave o fotogrammi di ancoraggio, che sono fotogrammi completamente codificati, e fotogrammi predittivi (fotogrammi P), che vengono codificati come differenza rispetto al fotogramma I precedente. I frame B sono diversi dai frame P perché archiviano sia le differenze rispetto al frame precedente che le differenze rispetto al frame seguente.
 
-Quando si configura il codec per l'utilizzo di fotogrammi B, verrà utilizzato il numero specificato di fotogrammi B tra ogni coppia di frame del tipo I o P.
+Quando si configura il codec per l'uso di fotogrammi B, verrà utilizzato il numero specificato di fotogrammi B tra ogni coppia di fotogrammi di tipo I o P.
 
-Se, ad esempio, una sequenza di frame senza fotogrammi B è "IPPPPPPPPI", la stessa codifica di sequenza con due fotogrammi B sarà "IBBPBBPBBI".
+Ad esempio, se una sequenza di frame senza frame B è "IPPPPPPPPI", la stessa codifica di sequenza con due frame B sarà "IBBPBBPBBI".
 
-Per la maggior parte del contenuto, uno o due fotogrammi B sono appropriati. Con una frequenza dati più elevata, un frame B è in genere la scelta ottimale. Sono raramente utili tre o più.
+Per la maggior parte del contenuto sono appropriati uno o due frame B. A velocità di dati più elevate, un frame B è in genere la scelta ottimale. Tre o più sono raramente utili.
 
 L'intervallo valido di valori per questa proprietà è compreso tra 0 e 7.
 
@@ -45,9 +45,9 @@ L'intervallo valido di valori per questa proprietà è compreso tra 0 e 7.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ L'intervallo valido di valori per questa proprietà è compreso tra 0 e 7.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteFontFace GetGdiCompatibleMetrics
-description: Ottiene le unità di progettazione e le metriche comuni per il tipo di carattere. Queste metriche sono applicabili a tutti i glifi all'interno di una fontFace e vengono usate dalle applicazioni per i calcoli di layout.
+description: Ottiene le unità di progettazione e le metriche comuni per il viso del tipo di carattere. Queste metriche sono applicabili a tutti i glifi all'interno di un carattere tipo di carattere e vengono usate dalle applicazioni per i calcoli del layout.
 ms.assetid: 9e132ec0-64cb-4681-b079-02a0047badd5
 keywords:
-- Scrittura diretta metodo GetGdiCompatibleMetrics
-- Metodo GetGdiCompatibleMetrics scrittura diretta, interfaccia IDWriteFontFace
-- IDWriteFontFace interface Direct Write, metodo GetGdiCompatibleMetrics
+- Metodo GetGdiCompatibleMetrics Direct Write
+- Metodo GetGdiCompatibleMetrics Direct Write, interfaccia IDWriteFontFace
+- Interfaccia IDWriteFontFace Direct Write, metodo GetGdiCompatibleMetrics
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b1c00c872352c984c87ee84f7eaed5baffafd3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fce5080edc44501290672bf0db0ebac69ef4856ec0b7163821cf60ac63d384ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290711"
 ---
-# <a name="idwritefontfacegetgdicompatiblemetrics-method"></a>Metodo IDWriteFontFace:: GetGdiCompatibleMetrics
+# <a name="idwritefontfacegetgdicompatiblemetrics-method"></a>Metodo IDWriteFontFace::GetGdiCompatibleMetrics
 
-Ottiene le unità di progettazione e le metriche comuni per il tipo di carattere. Queste metriche sono applicabili a tutti i glifi all'interno di una fontFace e vengono usate dalle applicazioni per i calcoli di layout.
+Ottiene le unità di progettazione e le metriche comuni per il viso del tipo di carattere. Queste metriche sono applicabili a tutti i glifi all'interno di un carattere tipo di carattere e vengono usate dalle applicazioni per i calcoli del layout.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,36 +48,36 @@ virtual HRESULT GetGdiCompatibleMetrics(
 *emSize* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Dimensioni logiche del tipo di carattere in unità DIP.
+Dimensione logica del tipo di carattere in unità DIP.
 
 </dd> <dt>
 
 *pixelsPerDip* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Il numero di pixel fisici per DIP.
+Numero di pixel fisici per DIP.
 
 </dd> <dt>
 
 *trasformazione* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const [**DWrite \_ Matrix**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Trasformazione facoltativa applicata ai glifi e alle rispettive posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e da *pixelsPerDip*.
+Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e *pixelPerDip*.
 
 </dd> <dt>
 
-*fontFaceMetrics* \[ out\]
+*fontFaceMetrics* \[ Cambio\]
 </dt> <dd>
 
-Tipo: metrica del tipo di **[ **\_ carattere \_ DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)\***
+Tipo: **[ **DWRITE \_ FONT \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)\***
 
-Puntatore a una struttura [**della \_ \_ metrica del tipo di carattere DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)da compilare. Le metriche restituite da questa funzione sono in unità di progettazione dei tipi di carattere.
+Puntatore a una [**struttura DWRITE \_ FONT \_ METRIC**](/windows/win32/api/dwrite/ns-dwrite-dwrite_font_metrics)S da compilare. Le metriche restituite da questa funzione sono in unità di progettazione dei tipi di carattere.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Codice di errore HRESULT standard.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>DWrite. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Crea un dispositivo di decodificatore DirectX Video Acceleration (DXVA).
+description: Crea un dispositivo decodificatore DirectX Video Acceleration (DXVA).
 ms.assetid: aeebf65f-1bde-4a33-87cd-25c62dcc0248
-title: 'Metodo IDirect3DVideoDevice9:: CreateDXVADevice (DXVA. h)'
+title: Metodo IDirect3DVideoDevice9::CreateDXVADevice (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: 50ce7cee350479f4286921b6cdf69b319033c721
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f70f976487db270145c8587107499f3c4e84ad85dacf99bec21050a2684b723
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555731"
 ---
-# <a name="idirect3dvideodevice9createdxvadevice-method"></a>Metodo IDirect3DVideoDevice9:: CreateDXVADevice
+# <a name="idirect3dvideodevice9createdxvadevice-method"></a>Metodo IDirect3DVideoDevice9::CreateDXVADevice
 
-Crea un dispositivo di decodificatore DirectX Video Acceleration (DXVA).
+Crea un dispositivo decodificatore DirectX Video Acceleration (DXVA).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,34 +53,34 @@ Puntatore a un GUID che specifica il dispositivo da creare.
 *pUncompData* 
 </dt> <dd>
 
-Puntatore a una struttura [**DXVAUncompDataInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvauncompdatainfo) che specifica il formato dell'immagine non compressa.
+Puntatore a [**una struttura DXVAUncompDataInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvauncompdatainfo) che specifica il formato dell'immagine non compressa.
 
 </dd> <dt>
 
 *pData* 
 </dt> <dd>
 
-Puntatore a una struttura **DXVA \_ ConnectMode** che specifica la modalità DXVA e il profilo con restrizioni.
+Puntatore a **una struttura DXVA \_ ConnectMode** che specifica la modalità DXVA e il profilo con restrizioni.
 
 </dd> <dt>
 
 *DataSize* 
 </dt> <dd>
 
-Dimensione della struttura **\_ ConnectMode di DXVA** in byte.
+Dimensioni della **struttura DXVA \_ ConnectMode,** in byte.
 
 </dd> <dt>
 
 *ppDXVADevice* 
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IDirect3DDXVADevice9**](idirect3ddxvadevice9.md) . Il chiamante deve rilasciare l'interfaccia.
+Riceve un puntatore [**all'interfaccia IDirect3DDXVADevice9.**](idirect3ddxvadevice9.md) Il chiamante deve rilasciare l'interfaccia .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,9 +88,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

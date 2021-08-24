@@ -1,10 +1,10 @@
 ---
 title: Attributo LDAP-IPDeny-List
-description: Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un server LDAP.
+description: Contiene un elenco di indirizzi IP binari a cui viene negato l'accesso a un server LDAP.
 ms.assetid: 7d554d49-8934-4d71-b32f-8e59c22faf8c
 ms.tgt_platform: multiple
 keywords:
-- LDAP-IPDeny-list-schema AD attributo
+- Schema AD dell'attributo LDAP-IPDeny-List
 - Schema AD dell'attributo lDAPIPDenyList
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43246b5bb5786eefafc8598e9d729d9a2f308e08
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f3c7a759e72680927a1143435e48940b88b7611f803c275ccdc65342f1ff4e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302140"
 ---
 # <a name="ldap-ipdeny-list-attribute"></a>Attributo LDAP-IPDeny-List
 
-Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un server LDAP.
+Contiene un elenco di indirizzi IP binari a cui viene negato l'accesso a un server LDAP.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | LDAP-IPDeny-List                                      |
-| LDAP-Display-Name | lDAPIPDenyList                                        |
+| Ldap-Display-Name | lDAPIPDenyList                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.844                                |
-| System-ID-GUID    | 7359a353-90f7-11d1-aebc-0000f80367c1                  |
+| System-Id-Guid    | 7359a353-90f7-11d1-aebc-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Include un elenco di indirizzi IP binari a cui viene negato l'accesso a un serve
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La proprietà ACTION può essere impostata sui valori seguenti.
+description: La proprietà ACTION può essere impostata su questi valori.
 ms.assetid: f2c436b6-ebd9-4ac4-8609-f54129023ca7
-title: Proprietà ACTION
+title: ACTION - proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 901061f953ffaed030ff6d3a94f440eada25fc59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14b4f17c7bd08b2e366fa23a55ad2b8044ce845ac4df04d0164ba34ad6dff32b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145994"
 ---
-# <a name="action-property"></a>Proprietà ACTION
+# <a name="action-property"></a>ACTION - proprietà
 
-La proprietà **Action** può essere impostata sui valori seguenti.
+La **proprietà ACTION** può essere impostata su questi valori.
 
 ## <a name="value"></a>Valore
 
@@ -21,15 +21,15 @@ La proprietà **Action** può essere impostata sui valori seguenti.
 
 | Valore                                                                                                                                            | Significato                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <span id="INSTALL"></span><span id="install"></span><dl> <dt>**INSTALLARE**</dt> </dl>       | [Azione di installazione](install-action.md)<br/>     |
-| <span id="ADVERTISE"></span><span id="advertise"></span><dl> <dt>**PUBBLICIZZARE**</dt> </dl> | [Pubblicizza azione](advertise-action.md)<br/> |
-| <span id="ADMIN"></span><span id="admin"></span><dl> <dt>**ADMIN**</dt> </dl>             | [Azione di amministrazione](admin-action.md)<br/>         |
+| <span id="INSTALL"></span><span id="install"></span><dl> <dt>**Installare**</dt> </dl>       | [Azione INSTALL](install-action.md)<br/>     |
+| <span id="ADVERTISE"></span><span id="advertise"></span><dl> <dt>**Pubblicizzare**</dt> </dl> | [AZIONE ADVERTISE](advertise-action.md)<br/> |
+| <span id="ADMIN"></span><span id="admin"></span><dl> <dt>**Admin**</dt> </dl>             | [Azione ADMIN](admin-action.md)<br/>         |
 
 
 
  
 
-La proprietà **Action** determina l'azione da eseguire se viene fornito un nome di azione null a [**MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o al [**Metodo DoAction**](session-doaction.md). Se non viene definito alcun valore per la proprietà **Action** , il programma di installazione chiama l' [azione di installazione](install-action.md).
+La **proprietà ACTION** determina l'azione da eseguire se viene fornito un nome di azione Null a [**MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o al metodo [**DoAction**](session-doaction.md). Se non è definito alcun valore per la **proprietà ACTION,** il programma di installazione chiama l'azione [INSTALL](install-action.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ La proprietà **Action** determina l'azione da eseguire se viene fornito un nome
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack minimo Windows richiesto da una versione Windows Installer.<br/> |
 
 
 

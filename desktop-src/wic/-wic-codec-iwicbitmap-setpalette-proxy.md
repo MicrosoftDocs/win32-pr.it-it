@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: fc8d6181cf9fe9313755fd52d54319f266f4cae6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: da6f77db1b1a776783145a7c710de3d34a799c9f9c5e9f97708601113c490b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592571"
 ---
 # <a name="iwicbitmap_setpalette_proxy-function"></a>Funzione proxy IWICBitmap \_ SetPalette \_
 
@@ -73,8 +73,8 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, solo app desktop di Windows Vista \[\]<br/>                                                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                                                                             |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

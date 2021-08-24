@@ -1,7 +1,7 @@
 ---
 description: Il metodo WriteIPortableDeviceValuesToBuffer serializza un'interfaccia IPortableDeviceValues in una matrice di byte allocata dal chiamante.
 ms.assetid: 4d0108f1-563e-42df-897b-7cc0e9ff5b3a
-title: 'Metodo IWpdSerializer:: WriteIPortableDeviceValuesToBuffer (PortableDeviceTypes. h)'
+title: Metodo IWpdSerializer::WriteIPortableDeviceValuesToBuffer (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f2a8f8b374f967f7231881d9e0eca6434e9c57e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db86953e2e08c0a66f6e497c1fcd2350cc726be8852803cf8f4d64bfff523500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657741"
 ---
-# <a name="iwpdserializerwriteiportabledevicevaluestobuffer-method"></a>Metodo IWpdSerializer:: WriteIPortableDeviceValuesToBuffer
+# <a name="iwpdserializerwriteiportabledevicevaluestobuffer-method"></a>Metodo IWpdSerializer::WriteIPortableDeviceValuesToBuffer
 
-Il metodo **WriteIPortableDeviceValuesToBuffer** serializza un'interfaccia **IPortableDeviceValues** in una matrice di byte allocata dal chiamante.
+Il **metodo WriteIPortableDeviceValuesToBuffer** serializza **un'interfaccia IPortableDeviceValues** in una matrice di byte allocata dal chiamante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,45 +43,45 @@ HRESULT WriteIPortableDeviceValuesToBuffer(
 
 <dl> <dt>
 
-*dwOutputBufferLength* \[ in\]
+*dwOutputBufferLength* \[ Pollici\]
 </dt> <dd>
 
-**DWORD** che specifica la dimensione di *pbuffer* in byte.
+**DWORD** che specifica le dimensioni di *pBuffer*, in byte.
 
 </dd> <dt>
 
-*pResults* \[ in\]
+*pResults* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) da serializzare.
+Puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) da serializzare.
 
 </dd> <dt>
 
-*pbuffer* \[ out\]
+*pBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer allocato dal chiamante. Per informazioni sulle dimensioni del buffer necessario, chiamare **GetSerializedSize**.
+Puntatore a un buffer allocato dal chiamante. Per informazioni sulle dimensioni del buffer richiesto, chiamare **GetSerializedSize**.
 
 </dd> <dt>
 
-*pdwBytesWritten* \[ out\]
+*pdwBytesWritten* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** che indica il numero di byte effettivamente scritti nel buffer allocato dal chiamante.
+Puntatore a **un valore DWORD** che indica il numero di byte effettivamente scritti nel buffer allocato dal chiamante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                                               |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                          |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un argomento obbligatorio del puntatore è **null**.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Il buffer fornito dal chiamante non era sufficientemente grande.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                          |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Un argomento del puntatore obbligatorio era **NULL.**<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Il buffer fornito dal chiamante non era sufficientemente grande.<br/> |
 
 
 
@@ -89,7 +89,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo copia un'interfaccia **IPortableDeviceValues** in un buffer esistente. Se si desidera allocare un nuovo buffer, utilizzare [**GetBufferFromIPortableDeviceValues**](iwpdserializer-getbufferfromiportabledevicevalues.md).
+Questo metodo copia **un'interfaccia IPortableDeviceValues** in un buffer esistente. Se si vuole allocare un nuovo buffer, usare [**GetBufferFromIPortableDeviceValues**](iwpdserializer-getbufferfromiportabledevicevalues.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Questo metodo copia un'interfaccia **IPortableDeviceValues** in un buffer esiste
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

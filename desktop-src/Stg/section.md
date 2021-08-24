@@ -4,12 +4,12 @@ description: La sezione è la terza parte del flusso del set di proprietà e con
 ms.assetid: cb392072-116e-4dca-bd70-5f82f86d8c98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6f51891d14a9690e295379b7bcf619fe0fbe19
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71796bca5dd2801e437ecfffe663f2702abc4c202d721ecbda8a9b95656e40a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682801"
 ---
 # <a name="section"></a>Sezione
 
@@ -17,13 +17,13 @@ La sezione è la terza parte del flusso del set di proprietà e contiene i valor
 
 Una sezione contiene:
 
--   Conteggio dei byte per la sezione che include il numero di byte stesso.
--   Matrice di coppie ID/offset di proprietà a 32 bit.
--   Matrice di coppie di indicatori di tipo di proprietà/valore.
+-   Numero di byte per la sezione inclusiva del conteggio dei byte stesso.
+-   Matrice di coppie ID proprietà/offset a 32 bit.
+-   Matrice di coppie di indicatori di tipo/valore della proprietà.
 
-Gli offset sono la distanza dall'inizio della sezione all'inizio della coppia di proprietà (tipo, valore). Ciò consente la copia di una sezione come matrice di byte senza alcuna conversione della struttura interna.
+Gli offset sono la distanza dall'inizio della sezione all'inizio della coppia di proprietà (tipo, valore). In questo modo una sezione può essere copiata come matrice di byte senza alcuna conversione della struttura interna.
 
-Le pseudo strutture seguenti illustrano il formato di una sezione.
+Le pseudo-strutture seguenti illustrano il formato di una sezione.
 
 ``` syntax
 typedef struct tagPROPERTYSECTIONHEADER 
@@ -45,9 +45,9 @@ typedef struct tagSERIALIZEDPROPERTYVALUE
 } SERIALIZEDPROPERTYVALUE ;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

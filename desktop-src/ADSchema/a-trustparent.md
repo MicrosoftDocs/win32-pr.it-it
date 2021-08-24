@@ -1,10 +1,10 @@
 ---
-title: Attributo Trust-Parent
+title: Trust-Parent attributo
 description: Elemento padre nella gerarchia di trust KERBEROS.
 ms.assetid: 738cf509-42a2-40b6-a525-6df34c02d0f0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Trust-Parent attribute
+- Trust-Parent schema AD dell'attributo
 - Schema AD dell'attributo trustParent
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1d8be971c7597b14daf7a694e41c9d67714e5f0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: efc5416bb8c3cb4f61c420c9711a42e853b82ff78e0a0b49367b83fa0cfc4546
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644861"
 ---
-# <a name="trust-parent-attribute"></a>Attributo Trust-Parent
+# <a name="trust-parent-attribute"></a>Trust-Parent attributo
 
 Elemento padre nella gerarchia di trust KERBEROS.
 
@@ -30,12 +30,12 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Trust-Parent                            |
-| LDAP-Display-Name | trustParent                             |
+| Ldap-Display-Name | trustParent                             |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | Quando viene creato un dominio figlio.         |
 | Attribute-Id      | 1.2.840.113556.1.4.471                  |
-| System-ID-GUID    | b000ea7a-a086-11d0-afdd-00c04fd930c9    |
+| System-Id-Guid    | b000ea7a-a086-11d0-afdd-00c04fd930c9    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Elemento padre nella gerarchia di trust KERBEROS.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elemento padre nella gerarchia di trust KERBEROS.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Vero                                       |
+| Is-Single-Valued       | Vero                                       |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 

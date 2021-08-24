@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di raccolta Texture2DArray:: Texture2DArray'
-description: Campiona un Texture2DArray e restituisce tutti e quattro i componenti.
+title: Metodi Gather texture2DArray::Texture2DArray
+description: Campiota un oggetto Texture2DArray e restituisce tutti e quattro i componenti.
 ms.assetid: eea1dd00-0061-4601-a218-979eb0ecd36d
 keywords:
-- Metodi gather HLSL
+- Raccogliere i metodi HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: cd10959490a85583cab01814f9cdb012859317a4
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4b973060e30385087c653e47c692ac4d44e3eb63f528eb4e6f2ced65431100c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104981023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485211"
 ---
-# <a name="texture2darraygather-methods"></a>Metodi Texture2DArray:: Gather
+# <a name="texture2darraygather-methods"></a>Metodi Texture2DArray::Gather
 
-Restituisce i quattro valori Texel di un [**Texture2DArray**](sm5-object-texture2darray.md) che verrebbero usati in un'operazione di filtro bi-lineare.
+Restituisce i quattro valori texel di [**un oggetto Texture2DArray**](sm5-object-texture2darray.md) che verrebbero usati in un'operazione di filtro bi-lineare.
 
-Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, vedere la documentazione su [gather4](./gather4--sm5---asm-.md) .
+Per altre informazioni sull'istruzione DXBC sottostante, vedere la documentazione di [gather4.](./gather4--sm5---asm-.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -31,8 +31,8 @@ Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, v
 
 | Metodo                                                                | Descrizione                                                                                                               |
 |:----------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| [**Raccolta (S, float, int)**](sm5-object-texture2darray-gather.md)        | Restituisce i quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
-| [**Raccolta (S, float, int, uint)**](t2darray-gather-s-float-int-uint-.md)  | Restituisce i quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**Gather(S,float,int)**](sm5-object-texture2darray-gather.md)        | Restituisce i quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
+| [**Gather(S,float,int,uint)**](t2darray-gather-s-float-int-uint-.md)  | Restituisce i quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo Setup-Command
+title: Setup-Command attributo
 description: Questo attributo indica se è necessario un comando di installazione per configurare l'applicazione.
 ms.assetid: f6292605-b392-4de2-b0a0-cae3f0551184
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Setup-Command attribute
-- Schema AD dell'attributo setupCommand
+- Setup-Command schema AD dell'attributo
+- Attributo setupCommand Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1acea4a714c4175b77812e05880e8d9e78ca6645
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fefb6adb546063e7158aacdd41ab73a75c34c13907287526fb8d0d648a0dec97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645951"
 ---
-# <a name="setup-command-attribute"></a>Attributo Setup-Command
+# <a name="setup-command-attribute"></a>Setup-Command attributo
 
 Questo attributo indica se è necessario un comando di installazione per configurare l'applicazione.
 
@@ -30,12 +30,12 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Setup-Command                               |
-| LDAP-Display-Name | setupCommand                                |
+| Ldap-Display-Name | setupCommand                                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.325                      |
-| System-ID-GUID    | 7d6c0e97-7e20-11d0-afd6-00c04fd930c9        |
+| System-Id-Guid    | 7d6c0e97-7e20-11d0-afd6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo indica se è necessario un comando di installazione per configu
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

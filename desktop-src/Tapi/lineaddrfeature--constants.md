@@ -1,123 +1,123 @@
 ---
-description: Le \_ costanti LINEADDRFEATURE elencano le operazioni che possono essere richiamate su un indirizzo.
+description: Le costanti LINEADDRFEATURE elencano le operazioni che \_ possono essere richiamate su un indirizzo.
 ms.assetid: dedeee7b-578b-4b19-8b99-5cd23779d661
-title: Costanti LINEADDRFEATURE_ (TAPI. h)
+title: LINEADDRFEATURE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 825902c2943806d1d495e14a0f0a5042f2949796
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4bb545bdf0195d9fd8ed35833150b9cfd1f6b10bfbd3d1ead7e8ebff65c93132
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682220"
 ---
-# <a name="lineaddrfeature_-constants"></a>\_Costanti LINEADDRFEATURE
+# <a name="lineaddrfeature_-constants"></a>Costanti LINEADDRFEATURE \_
 
-Le **costanti \_ LINEADDRFEATURE** elencano le operazioni che possono essere richiamate su un indirizzo.
+Le **costanti LINEADDRFEATURE \_** elencano le operazioni che possono essere richiamate su un indirizzo.
 
 <dl> <dt>
 
-<span id="LINEADDRFEATURE_FORWARD"></span><span id="lineaddrfeature_forward"></span>**LINEADDRFEATURE \_ in futuro**
+<span id="LINEADDRFEATURE_FORWARD"></span><span id="lineaddrfeature_forward"></span>**LINEADDRFEATURE \_ FORWARD**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo può essere inviato.
+L'indirizzo può essere inoltrato.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_MAKECALL"></span><span id="lineaddrfeature_makecall"></span>**\_MAKECALL LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_MAKECALL"></span><span id="lineaddrfeature_makecall"></span>**LINEADDRFEATURE \_ MAKECALL**
 </dt> <dd> <dl> <dt>
 
 
 
-È possibile inserire una chiamata in uscita sull'indirizzo.
+Una chiamata in uscita può essere inserita nell'indirizzo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUP"></span><span id="lineaddrfeature_pickup"></span>**LINEADDRFEATURE \_ pickup**
+<span id="LINEADDRFEATURE_PICKUP"></span><span id="lineaddrfeature_pickup"></span>**RITIRO LINEADDRFEATURE \_**
 </dt> <dd> <dl> <dt>
 
 
 
-È possibile prelevare una chiamata all'indirizzo.
+Una chiamata può essere prelevata all'indirizzo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUPDIRECT"></span><span id="lineaddrfeature_pickupdirect"></span>**\_PICKUPDIRECT LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_PICKUPDIRECT"></span><span id="lineaddrfeature_pickupdirect"></span>**LINEADDRFEATURE \_ PICKUPDIRECT**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) può essere usata per prelevare una chiamata su un indirizzo specifico.
+La [**funzione linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) può essere usata per prelevare una chiamata su un indirizzo specifico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUPGROUP"></span><span id="lineaddrfeature_pickupgroup"></span>**\_PICKUPGROUP LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_PICKUPGROUP"></span><span id="lineaddrfeature_pickupgroup"></span>**LINEADDRFEATURE \_ PICKUPGROUP**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) può essere usata per selezionare una chiamata nel gruppo.
+La [**funzione linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) può essere usata per prelevare una chiamata nel gruppo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUPHELD"></span><span id="lineaddrfeature_pickupheld"></span>**\_PICKUPHELD LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_PICKUPHELD"></span><span id="lineaddrfeature_pickupheld"></span>**LINEADDRFEATURE \_ PICKUPHELD**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con un indirizzo di destinazione **null** ) può essere usata per selezionare una chiamata mantenuta sull'indirizzo. Questa operazione viene in genere usata solo in una disposizione con bridging esclusivo.
+La [**funzione linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con un indirizzo di destinazione **Null)** può essere usata per prelevare una chiamata che viene mantenuta sull'indirizzo. In genere viene usato solo in una disposizione esclusiva con bridge.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_PICKUPWAITING"></span><span id="lineaddrfeature_pickupwaiting"></span>**\_PICKUPWAITING LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_PICKUPWAITING"></span><span id="lineaddrfeature_pickupwaiting"></span>**LINEADDRFEATURE \_ PICKUPWAITING**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con un indirizzo di destinazione **null** ) può essere usata per selezionare una chiamata in attesa. Si noti che questo non indica necessariamente che è effettivamente presente una chiamata in attesa, perché spesso è impossibile per un dispositivo di telefonia rilevare automaticamente tale chiamata; viene tuttavia indicato che la funzione hook-Flash verrà richiamata per tentare di passare a una chiamata di questo tipo.
+La [**funzione linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup) (con un indirizzo di destinazione **Null)** può essere usata per prelevare una chiamata in attesa di chiamata. Si noti che ciò non indica necessariamente che una chiamata in attesa è effettivamente presente, perché spesso non è possibile che un dispositivo di telefonia rilevi automaticamente tale chiamata; indica tuttavia che la funzione hook-flash verrà richiamata per tentare di passare a tale chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_SETMEDIACONTROL"></span><span id="lineaddrfeature_setmediacontrol"></span>**\_SETMEDIACONTROL LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_SETMEDIACONTROL"></span><span id="lineaddrfeature_setmediacontrol"></span>**LINEADDRFEATURE \_ SETMEDIACONTROL**
 </dt> <dd> <dl> <dt>
 
 
 
-Il controllo multimediale può essere impostato su questo indirizzo.
+Il controllo dei supporti può essere impostato su questo indirizzo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_SETTERMINAL"></span><span id="lineaddrfeature_setterminal"></span>**LINEADDRFEATURE \_**
+<span id="LINEADDRFEATURE_SETTERMINAL"></span><span id="lineaddrfeature_setterminal"></span>**LINEADDRFEATURE \_ SETTERMINALE**
 </dt> <dd> <dl> <dt>
 
 
 
-È possibile impostare le modalità Terminal per questo indirizzo.
+È possibile impostare le modalità terminale per questo indirizzo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_SETUPCONF"></span><span id="lineaddrfeature_setupconf"></span>**\_SETUPCONF LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_SETUPCONF"></span><span id="lineaddrfeature_setupconf"></span>**LINEADDRFEATURE \_ SETUPCONF**
 </dt> <dd> <dl> <dt>
 
 
 
-A questo indirizzo è possibile configurare una chiamata di conferenza con una chiamata iniziale **null** .
+A questo indirizzo è possibile configurare una **conferenza** telefonica con una chiamata iniziale NULL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_UNCOMPLETECALL"></span><span id="lineaddrfeature_uncompletecall"></span>**\_UNCOMPLETECALL LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_UNCOMPLETECALL"></span><span id="lineaddrfeature_uncompletecall"></span>**LINEADDRFEATURE \_ UNCOMPLETECALL**
 </dt> <dd> <dl> <dt>
 
 
@@ -127,40 +127,40 @@ Le richieste di completamento delle chiamate possono essere annullate a questo i
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_UNPARK"></span><span id="lineaddrfeature_unpark"></span>**LINEADDRFEATURE \_ UNpark**
+<span id="LINEADDRFEATURE_UNPARK"></span><span id="lineaddrfeature_unpark"></span>**LINEADDRFEATURE \_ UNPARK**
 </dt> <dd> <dl> <dt>
 
 
 
-È possibile deparcheggiare le chiamate usando questo indirizzo.
+Le chiamate possono essere scollegate usando questo indirizzo.
 
 > [!Note]  
-> Se nessuno dei nuovi bit "PICKUP" modificati è impostato nel membro **dwAddressFeatures** in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) ma \_ è impostato il bit di prelievo LINEADDRFEATURE, è possibile che una qualsiasi delle modalità di prelievo funzioni. il provider di servizi non ha specificato semplicemente quelli.
+> Se nessuno dei nuovi bit "PICKUP" modificati è impostato nel membro **dwAddressFeatures** in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) ma il bit LINEADDRFEATURE PICKUP è impostato, è possibile che una delle modalità di ritiro funzioni. Il provider di servizi non ha semplicemente specificato \_ quali.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_FORWARDDND"></span><span id="lineaddrfeature_forwarddnd"></span>**\_FORWARDDND LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_FORWARDDND"></span><span id="lineaddrfeature_forwarddnd"></span>**LINEADDRFEATURE \_ FORWARDDND**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) (con un indirizzo di destinazione vuoto) può essere usata per attivare la funzionalità non disturbare sull'indirizzo. \_Verrà impostato anche LINEADDRFEATURE in futuro.
+La [**funzione lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) (con un indirizzo di destinazione vuoto) può essere usata per attivare la funzionalità Non disturbare sull'indirizzo. Verrà impostata anche LINEADDRFEATURE \_ FORWARD.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRFEATURE_FORWARDFWD"></span><span id="lineaddrfeature_forwardfwd"></span>**\_FORWARDFWD LINEADDRFEATURE**
+<span id="LINEADDRFEATURE_FORWARDFWD"></span><span id="lineaddrfeature_forwardfwd"></span>**LINEADDRFEATURE \_ FORWARDFWD**
 </dt> <dd> <dl> <dt>
 
 
 
-La funzione [**lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) può essere usata per inviare chiamate sull'indirizzo ad altri numeri. \_Verrà impostato anche LINEADDRFEATURE in futuro.
+La [**funzione lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) può essere usata per inoltrare chiamate sull'indirizzo ad altri numeri. Verrà impostata anche LINEADDRFEATURE \_ FORWARD.
 
 > [!Note]  
-> Se nessuno dei nuovi bit "in" modificati è impostato nel membro **dwAddressFeatures** in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) ma \_ viene impostato il bit di avanzamento LINEADDRFEATURE, è possibile che una qualsiasi delle modalità di avanzamento funzioni. il provider di servizi non ha specificato semplicemente quelli.
+> Se nessuno dei nuovi bit "FORWARD" modificati è impostato nel membro **dwAddressFeatures** in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) ma il bit LINEADDRFEATURE FORWARD è impostato, è possibile che una delle modalità di inoltro funzioni. Il provider di servizi non ha semplicemente specificato \_ quali.
 
  
 
@@ -169,9 +169,9 @@ La funzione [**lineForward**](/windows/desktop/api/Tapi/nf-tapi-lineforward) pu�
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
-Questa costante viene usata sia in [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) (restituito da [**lineGetAddressCaps**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps)) che in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) (restituito da [**lineGetAddressStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetaddressstatus)). **LINEADDRESSCAPS** segnala la disponibilità delle funzionalità degli indirizzi da parte del provider di servizi (principalmente il Commuti) per un determinato indirizzo. Un'applicazione determina questa decisione quando Inizializza. La struttura [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) segnala, per un determinato indirizzo, le funzionalità che possono essere effettivamente richiamate mentre l'indirizzo si trova nello stato corrente. Un'applicazione rende questa determinazione dinamicamente dopo le modifiche dello stato dell'indirizzo, in genere dovute alle attività relative alle chiamate sull'indirizzo.
+Questa costante viene usata sia in [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) (restituito da [**lineGetAddressCaps**](/windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps)) che in [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) (restituito da [**lineGetAddressStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetaddressstatus)). **LINEADDRESSCAPS indica** la disponibilità delle funzionalità degli indirizzi da parte del provider di servizi (principalmente l'opzione ) per un determinato indirizzo. Un'applicazione determina questa determinazione quando viene inizializzata. La [**struttura LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus) segnala, per un determinato indirizzo, quali funzionalità di indirizzo possono essere effettivamente richiamate mentre l'indirizzo è nello stato corrente. Un'applicazione effettua questa determinazione in modo dinamico dopo le modifiche dello stato dell'indirizzo, in genere causate da attività correlate alle chiamate nell'indirizzo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -179,8 +179,8 @@ Questa costante viene usata sia in [**LINEADDRESSCAPS**](/windows/desktop/api/Ta
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

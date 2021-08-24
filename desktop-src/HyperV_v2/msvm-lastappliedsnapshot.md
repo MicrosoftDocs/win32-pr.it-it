@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un sistema virtuale e i dati di impostazione dello snapshot che è stato applicato più di recente al sistema virtuale.
+description: Rappresenta un'associazione tra un sistema virtuale e i dati di impostazione dello snapshot applicato più di recente al sistema virtuale.
 ms.assetid: 9231b441-20c4-468b-905f-5baabc32a8cc
-title: Classe Msvm_LastAppliedSnapshot
+title: Msvm_LastAppliedSnapshot classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 48854d7b5aaaa6f8026f8dec14745545b0c58806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e34260e0bfe77b847437e9b3d49794334b3897d8425981fecb2032098e24fa7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521921"
 ---
-# <a name="msvm_lastappliedsnapshot-class"></a>\_Classe MSVM LastAppliedSnapshot
+# <a name="msvm_lastappliedsnapshot-class"></a>Classe Msvm \_ LastAppliedSnapshot
 
-Rappresenta un'associazione tra un sistema virtuale e i dati di impostazione dello snapshot che è stato applicato più di recente al sistema virtuale.
+Rappresenta un'associazione tra un sistema virtuale e i dati di impostazione dello snapshot applicato più di recente al sistema virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF (Simplified Managed Object Format) e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,13 +41,13 @@ class Msvm_LastAppliedSnapshot : CIM_LastAppliedSnapshot
 
 ## <a name="members"></a>Members
 
-La **classe \_ LastAppliedSnapshot di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ LastAppliedSnapshot** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ LastAppliedSnapshot di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ LastAppliedSnapshot** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,10 +60,10 @@ Tipo di dati: **CIM \_ VirtualSystemSettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **override**, **min** (0), **Max** (1)
+Qualificatori: **Override**, **Min** ( 0 ), **Max** ( 1 )
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot del sistema virtuale che è stato applicato per ultimo al sistema virtuale. Questa proprietà viene ereditata **dalla \_ dipendenza CIM**.
+Riferimento a un'istanza della [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta lo snapshot del sistema virtuale applicato per ultimo al sistema virtuale. Questa proprietà viene ereditata dalla **dipendenza CIM. \_**
 
 </dd> <dt>
 
@@ -76,10 +76,10 @@ Tipo di dati: **CIM \_ ComputerSystem**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **override**, **min** (0), **Max** (1)
+Qualificatori: **Override**, **Min** ( 0 ), **Max** ( 1 )
 </dt> </dl>
 
-Riferimento a un'istanza della classe [**\_ ComputerSystem MSVM**](msvm-computersystem.md) che rappresenta il sistema virtuale su cui è stato applicato più di recente lo snapshot del sistema virtuale rappresentato dalla proprietà **precedente** . Questa proprietà viene ereditata **dalla \_ dipendenza CIM**.
+Riferimento a un'istanza della [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) che rappresenta il sistema virtuale su cui è stato applicato più di recente lo snapshot del sistema virtuale rappresentato dalla proprietà **Antecedent.** Questa proprietà viene ereditata dalla **dipendenza CIM. \_**
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Riferimento a un'istanza della classe [**\_ ComputerSystem MSVM**](msvm-computer
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,11 +1,11 @@
 ---
-title: MSMQ-destinatario-FormatName (attributo)
+title: Attributo MSMQ-Recipient-FormatName
 description: Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recipient.
 ms.assetid: 26ee4cec-4e69-412e-914b-437f2f4cd88e
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-destinatario-FormatName attributo AD schema
-- msMQ-destinatario-FormatName attributo AD schema
+- Schema AD dell'attributo MSMQ-Recipient-FormatName
+- Attributo msMQ-Recipient-FormatName Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c57fbeee49ddf0c734212bc91926e5c848a9e8d1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13251682e006f493fe0caa04aa5dab03bb602e62f2bea0774295c878beb6d549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582711"
 ---
-# <a name="msmq-recipient-formatname-attribute"></a>MSMQ-destinatario-FormatName (attributo)
+# <a name="msmq-recipient-formatname-attribute"></a>Attributo MSMQ-Recipient-FormatName
 
 Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recipient.
 
@@ -30,12 +30,12 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MSMQ-Recipient-FormatName                   |
-| LDAP-Display-Name | msMQ-Recipient-FormatName                   |
-| Dimensione              | da 1 a 255 caratteri.                        |
-| Privilegio aggiornamento  | Proprietario della coda.                            |
+| Ldap-Display-Name | msMQ-Recipient-FormatName                   |
+| Dimensione              | Da 1 a 255 caratteri.                        |
+| Aggiorna privilegio  | Proprietario della coda.                            |
 | Frequenza di aggiornamento  | Solo dopo lo spostamento della coda esterna.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1695                     |
-| System-ID-GUID    | 3bfe6748-b544-485a-b067-1b310c4334bf        |
+| System-Id-Guid    | 3bfe6748-b544-485a-b067-1b310c4334bf        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | 1                                                                   |
 | Range-Upper            | 255                                                                 |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MSMQ-personalizzato-destinatario**](c-msmq-custom-recipient.md)<br/> |
+| Classi usate in        | [**MSMQ-Custom-Recipient**](c-msmq-custom-recipient.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | 1                                                                   |
 | Range-Upper            | 255                                                                 |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MSMQ-personalizzato-destinatario**](c-msmq-custom-recipient.md)<br/> |
+| Classi usate in        | [**MSMQ-Custom-Recipient**](c-msmq-custom-recipient.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | 1                                                                   |
 | Range-Upper            | 255                                                                 |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MSMQ-personalizzato-destinatario**](c-msmq-custom-recipient.md)<br/> |
+| Classi usate in        | [**MSMQ-Custom-Recipient**](c-msmq-custom-recipient.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | 1                                                                   |
 | Range-Upper            | 255                                                                 |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MSMQ-personalizzato-destinatario**](c-msmq-custom-recipient.md)<br/> |
+| Classi usate in        | [**MSMQ-Custom-Recipient**](c-msmq-custom-recipient.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Utilizzato come nome del formato del destinatario nella classe MSMQ-Custom-Recip
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | 1                                                                   |
 | Range-Upper            | 255                                                                 |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**MSMQ-personalizzato-destinatario**](c-msmq-custom-recipient.md)<br/> |
+| Classi usate in        | [**MSMQ-Custom-Recipient**](c-msmq-custom-recipient.md)<br/> |
 
 
 

@@ -1,22 +1,22 @@
 ---
 title: Classi comuni di esempio
-description: È possibile utilizzare gli esempi di codice in questo argomento come punto di partenza per molte applicazioni Servizio trasferimento intelligente in background (BITS) che eseguono l'inizializzazione COM, necessitano di gestione degli errori e ricevono notifiche di callback.
+description: È possibile usare gli esempi di codice in questo argomento come punto di partenza per molte applicazioni Servizio trasferimento intelligente in background (BITS) che eseguono l'inizializzazione COM, necessitano della gestione degli errori e ricevono notifiche di callback.
 ms.assetid: 8fe722a3-fbab-4843-b298-1ea11f54d7a5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 864fe4aa8d7af5bb6a248364b0e2c636e1c250a6
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: e3948bbfd783691a170ea2b55c267384371691d61cb3fc86ee56737a89a56395
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103734847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579381"
 ---
 # <a name="example-common-classes"></a>Esempio: classi comuni
 
-È possibile utilizzare gli esempi di codice in questo argomento come punto di partenza per molte applicazioni Servizio trasferimento intelligente in background (BITS) che eseguono l'inizializzazione COM, necessitano di gestione degli errori e ricevono notifiche di callback.
+È possibile usare gli esempi di codice in questo argomento come punto di partenza per molte applicazioni Servizio trasferimento intelligente in background (BITS) che eseguono l'inizializzazione COM, necessitano della gestione degli errori e ricevono notifiche di callback.
 
 
-Nell'esempio di codice seguente viene definita una classe Exception per la gestione degli errori.
+Nell'esempio di codice seguente viene definita una classe di eccezioni per gestire gli errori.
 
 
 ```C++
@@ -34,10 +34,10 @@ public:
 
 
 
-La classe deexception è una classe di eccezione generica che accetta un codice HRESULT e una stringa di errore.
+La classe MyException è una classe di eccezione generica che accetta un codice HRESULT e una stringa di errore.
 
 
-Nell'esempio di codice seguente viene definita una classe helper di acquisizione delle risorse per la funzione [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) .
+L'esempio di codice seguente definisce una classe helper di acquisizione delle risorse per la [funzione CoInitializeEx.](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
 
 
 ```C++
@@ -62,7 +62,7 @@ public:
 
 
 
-La classe CCoInitializer gestisce l'allocazione delle risorse e la deallocazione per l'inizializzazione COM. Questa classe consente di chiamare il distruttore quando la classe esce dall'ambito. Questa classe elimina la necessità di chiamare il metodo [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) dopo ogni blocco di eccezioni.
+La classe CCoInitializer gestisce l'allocazione e la deallocazione delle risorse per l'inizializzazione COM. Questa classe consente di chiamare il distruttore quando la classe esce dall'ambito. Questa classe elimina la necessità di chiamare il [metodo CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) dopo ogni blocco di eccezioni.
 
 
 L'esempio di codice seguente è la dichiarazione dell'interfaccia di callback CNotifyInterface.
@@ -100,14 +100,14 @@ private:
 
 
 
-Classe CNotifyInterface derivata dall'interfaccia [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) . La classe CNotifyInterface implementa l'interfaccia IUnknown. Per ulteriori informazioni, vedere [IUnknown]( /windows/win32/api/unknwn/nn-unknwn-iunknown).
+Classe CNotifyInterface derivata [**dall'interfaccia IBackgroundCopyCallback.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) La classe CNotifyInterface implementa l'interfaccia IUnknown. Per altre informazioni, vedere [IUnknown.]( /windows/win32/api/unknwn/nn-unknwn-iunknown)
 
-CNotifyInterface usa i metodi seguenti per ricevere una notifica che indica che un processo è stato completato, è stato modificato o è in uno stato di errore: [**JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred), [**JobModification**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)e [**JobError**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror). Tutti questi metodi accettano un oggetto processo [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+CNotifyInterface usa i metodi seguenti per ricevere la notifica che un processo è stato completato, modificato o si trova in uno stato di errore: [**JobTransferred**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobtransferred), [**JobModification**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-jobmodification)e [**JobError**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopycallback-joberror). Tutti questi metodi accettano un [**oggetto processo IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
-Questo esempio usa [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) per liberare risorse di memoria.
+Questo esempio usa [CoTaskMemFree per](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) liberare risorse di memoria.
 
 
-L'esempio di codice seguente è l'implementazione dell'interfaccia di callback [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback) .
+L'esempio di codice seguente è l'implementazione dell'interfaccia di callback [**IBackgroundCopyCallback.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback)
 
 
 ```C++
@@ -410,7 +410,7 @@ HRESULT CNotifyInterface::JobError(IBackgroundCopyJob* pJob, IBackgroundCopyErro
 [**IBackgroundCopyCallback**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopycallback)
 </dt> <dt>
 
-[**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
+[**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 </dt> <dt>
 
 [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)

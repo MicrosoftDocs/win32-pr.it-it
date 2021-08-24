@@ -1,7 +1,7 @@
 ---
-description: 'Metodo RemoveResourceSettings della classe CIM_VirtualSystemManagementService : rimuove le impostazioni delle risorse virtuali da una configurazione di sistema virtuale.'
+description: 'Metodo RemoveResourceSettings della classe CIM_VirtualSystemManagementService: rimuove le impostazioni delle risorse virtuali da una configurazione del sistema virtuale.'
 ms.assetid: 7934a5e4-f54c-43fd-9ec3-d1fc1aad0acd
-title: Metodo RemoveResourceSettings della CIM_VirtualSystemManagementService classe
+title: Metodo RemoveResourceSettings della classe CIM_VirtualSystemManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e5c7daabcdcd732c3a5693664e1768ebf66668d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a3b94ff6ecd42ea362cc5caec91bdbd6c7f484acc687dc52d22acf4c1047f09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682720"
 ---
 # <a name="removeresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo RemoveResourceSettings della classe CIM \_ VirtualSystemManagementService
 
-Rimuove le impostazioni delle risorse virtuali da una configurazione di sistema virtuale.
+Rimuove le impostazioni delle risorse virtuali da una configurazione del sistema virtuale.
 
-Se applicato a parti di una configurazione di sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere rimosse.
+Se applicato a parti di una configurazione del sistema virtuale "corrente", come effetto collaterale le risorse del sistema virtuale attivo possono essere rimosse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,24 +45,24 @@ uint32 RemoveResourceSettings(
 *ResourceSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di riferimenti a istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) in cui ogni istanza rappresenta le impostazioni di una risorsa virtuale all'interno di una configurazione di sistema virtuale che devono essere rimosse.
+Matrice di riferimenti a istanze della classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) in cui ogni istanza rappresenta le impostazioni di una risorsa virtuale all'interno di una configurazione del sistema virtuale che devono essere rimosse.
 
 </dd> <dt>
 
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un [**processo \_ ConcreteJob CIM**](cim-concretejob.md) che rappresenta il processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito [**un processo CIM \_ ConcreteJob**](cim-concretejob.md) che rappresenta il processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -74,16 +74,16 @@ Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, re
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
 </dt> <dt>
 
-**DmTF Reserved** (..)
+**DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Metodo riservato** (4097..32767)
@@ -99,7 +99,7 @@ Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, re
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

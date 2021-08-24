@@ -1,8 +1,8 @@
 ---
-description: La \_ relazione CIM DeviceSoftware identifica il software associato a un dispositivo, ad esempio i driver, la configurazione o il software dell'applicazione o il firmware.
+description: La relazione CIM DeviceSoftware identifica il software associato a un dispositivo, ad esempio driver, software di configurazione o \_ software applicativo o firmware.
 ms.assetid: 831d0014-2a01-49f4-9642-fae5682f0388
 ms.tgt_platform: multiple
-title: Classe CIM_DeviceSoftware
+title: CIM_DeviceSoftware classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,23 +18,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 467fa670e8bb3f7d6ee967e6dd422102a2026a57
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 483490c35066457b3c640ef934b6543a737bc52bd31e5178aee837b2a7abc321
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321581"
 ---
-# <a name="cim_devicesoftware-class"></a>CIM \_ DeviceSoftware (classe)
+# <a name="cim_devicesoftware-class"></a>Classe CIM \_ DeviceSoftware
 
-La relazione **CIM \_ DeviceSoftware** identifica il software associato a un dispositivo, ad esempio i driver, la configurazione o il software dell'applicazione o il firmware.
+La **relazione CIM \_ DeviceSoftware** identifica il software associato a un dispositivo, ad esempio driver, software di configurazione o software applicativo o firmware.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM DMTF (Distributed Management Task Force) (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,13 +51,13 @@ class CIM_DeviceSoftware : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DeviceSoftware** presenta questi tipi di membri:
+La **classe \_ CIM DeviceSoftware** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DeviceSoftware** dispone di queste proprietà.
+La **classe CIM \_ DeviceSoftware** ha queste proprietà.
 
 <dl> <dt>
 
@@ -70,10 +70,10 @@ Tipo di dati: **CIM \_ SoftwareElement**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Oggetto [**CIM \_ SoftwareElement**](cim-softwareelement.md) che descrive l'elemento software.
+Oggetto [**CiM \_ SoftwareElement**](cim-softwareelement.md) che descrive l'elemento software.
 
 </dd> <dt>
 
@@ -86,17 +86,17 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ LogicalDevice CIM**](cim-logicaldevice.md) che descrive il dispositivo logico che richiede o utilizza il software.
+[**LogicalDevice \_ CIM**](cim-logicaldevice.md) che descrive il dispositivo logico che richiede o usa il software.
 
 </dd> <dt>
 
 **Scopo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -105,7 +105,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DeviceSoftware**.**PurposeDescription**")
 </dt> </dl>
 
-Ruolo che il software prende in considerazione sul dispositivo associato.
+Ruolo che il software assume in relazione al dispositivo associato.
 
 <dt>
 
@@ -138,7 +138,7 @@ Altro.
 
 </dt> <dd>
 
-Driver.
+autista.
 
 </dd> <dt>
 
@@ -193,13 +193,13 @@ Firmware.
 
 </dt> <dd>
 
-BIOS.
+Bios.
 
 </dd> <dt>
 
 <span id="Boot_ROM"></span><span id="boot_rom"></span><span id="BOOT_ROM"></span>
 
-<span id="Boot_ROM"></span><span id="boot_rom"></span><span id="BOOT_ROM"></span>**ROM di avvio** (8)
+<span id="Boot_ROM"></span><span id="boot_rom"></span><span id="BOOT_ROM"></span>**ROM di** avvio (8)
 
 
 </dt> <dd>
@@ -213,7 +213,7 @@ ROM di avvio.
 **PurposeDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -222,7 +222,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DeviceSoftware**.**Scopo**")
 </dt> </dl>
 
-Stringa in formato libero che fornisce ulteriori informazioni per la proprietà **purpose** , ad esempio "software dell'applicazione".
+Stringa in formato libero che fornisce altre informazioni per la **proprietà Purpose,** ad esempio "Application Software".
 
 </dd> </dl>
 
@@ -230,9 +230,9 @@ Stringa in formato libero che fornisce ulteriori informazioni per la proprietà 
 
 WMI non implementa questa classe.
 
-La classe **CIM \_ DeviceSoftware** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe CIM \_ DeviceSoftware** è derivata dalla [**dipendenza CIM \_**](cim-dependency.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -243,7 +243,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -252,7 +252,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

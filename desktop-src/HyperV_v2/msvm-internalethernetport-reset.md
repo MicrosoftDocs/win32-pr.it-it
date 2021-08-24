@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 13d683639dc9bb10428f7b33970ad47e868785e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fdf32719cfd12aa5418208c5c09e0b09eaba833bc9ad6c406c9ed451b2d594d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522411"
 ---
 # <a name="reset-method-of-the-msvm_internalethernetport-class"></a>Metodo Reset della classe Msvm \_ InternalEthernetPort
 
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

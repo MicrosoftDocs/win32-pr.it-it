@@ -1,40 +1,40 @@
 ---
-description: Specifica l'incremento di basso livello quando il decodificatore esegue il controllo dinamico degli intervalli su un flusso audio Dolby AC-3.
+description: Specifica la priorità di basso livello quando il decodificatore esegue il controllo dinamico dell'intervallo in un flusso audio Dolby AC-3.
 ms.assetid: d723c825-f2f1-4ba0-a667-8285009764fd
-title: Proprietà AVDecDDDynamicRangeScaleLow (codecapis. h)
+title: Proprietà AVDecDDDynamicRangeScaleLow (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b68b1d4376d9ba15859be943ded23458fe16d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91773eb20f3d0714223877acba4f26b01503202fc87f9f7b97dcde60ab99512e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104049046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586741"
 ---
-# <a name="avdecdddynamicrangescalelow-property"></a>Proprietà AVDecDDDynamicRangeScaleLow
+# <a name="avdecdddynamicrangescalelow-property"></a>AVDecDDDynamicRangeScaleLow - proprietà
 
-Specifica l'incremento di basso livello quando il decodificatore esegue il controllo dinamico degli intervalli su un flusso audio Dolby AC-3.
+Specifica la priorità di basso livello quando il decodificatore esegue il controllo dinamico dell'intervallo in un flusso audio Dolby AC-3.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVDecDDDynamicRangeScaleLow**
+**CODECAPI \_ AVDecDDDynamicRangeScaleLow**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà presenta l'intervallo seguente.
+Il valore di questa proprietà ha l'intervallo seguente.
 
 
 
 | Valore | Descrizione                                                    |
 |-------|----------------------------------------------------------------|
-| 0     | Nessuna compressione dell'intervallo dinamico. Mantenere l'intervallo dinamico completo. |
-| 100   | Applicare la compressione dell'intervallo dinamico completo.                          |
+| 0     | Nessuna compressione di intervallo dinamico. Mantenere l'intervallo dinamico completo. |
+| 100   | Applicare la compressione a intervalli dinamici completi.                          |
 
 
 
@@ -42,7 +42,7 @@ Il valore di questa proprietà presenta l'intervallo seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà si applica solo quando il valore della proprietà [**AVDecDDOperationalMode**](avdecddoperationalmode-property.md) è eAVDecDDOperationalMode \_ line.
+Questa proprietà si applica solo quando il valore della proprietà [**AVDecDDOperationalMode**](avdecddoperationalmode-property.md) è eAVDecDDOperationalMode \_ LINE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Questa proprietà si applica solo quando il valore della proprietà [**AVDecDDOp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows app desktop di Windows 2000 Server \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Questa proprietà si applica solo quando il valore della proprietà [**AVDecDDOp
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

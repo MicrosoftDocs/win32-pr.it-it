@@ -1,7 +1,7 @@
 ---
 description: Il metodo TransitionsEnabled determina se le transizioni sono abilitate.
 ms.assetid: c961d8d7-4509-444b-a49f-6ab79fc31f7e
-title: 'Metodo IAMTimeline:: TransitionsEnabled (qedit. h)'
+title: Metodo IAMTimeline::TransitionsEnabled (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7116ccf4ff2015934c9071f4ce2ef073656b89c5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36d22fa1c19c6a90faa033e6a8ccf100b5042cd2aeeabf9b012ee42f13cd57da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316471"
 ---
-# <a name="iamtimelinetransitionsenabled-method"></a>Metodo IAMTimeline:: TransitionsEnabled
+# <a name="iamtimelinetransitionsenabled-method"></a>Metodo IAMTimeline::TransitionsEnabled
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il metodo **TransitionsEnabled** determina se le transizioni sono abilitate.
+Il **metodo TransitionsEnabled** determina se le transizioni sono abilitate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,23 +48,23 @@ HRESULT TransitionsEnabled(
 *pfEnabled* 
 </dt> <dd>
 
-Riceve un valore booleano. Se **true**, le transizioni sono abilitate. In caso contrario, le transizioni sono disabilitate.
+Riceve un valore booleano. Se **TRUE,** le transizioni sono abilitate. In caso contrario, le transizioni sono disabilitate.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

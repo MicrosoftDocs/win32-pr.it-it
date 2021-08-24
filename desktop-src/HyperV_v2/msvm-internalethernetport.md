@@ -78,18 +78,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a1441055fc7b86b97c69a40758236261b20f75c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8c9e9d9d5ffe969ce24b6060b57045d6b738a26dcc434b6634382cd0141d666
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522291"
 ---
-# <a name="msvm_internalethernetport-class"></a>\_Classe MSVM InternalEthernetPort
+# <a name="msvm_internalethernetport-class"></a>Classe Msvm \_ InternalEthernetPort
 
 Rappresenta una porta Ethernet interna (scheda di rete). Questo tipo di porta Ethernet consente alle macchine virtuali di accedere al server di virtualizzazione che esegue il software di rete. Le schede di rete interne consentono di instradare o filtrare il traffico di rete delle macchine virtuali prima di uscire dal sistema fisico.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -161,14 +161,14 @@ class Msvm_InternalEthernetPort : CIM_EthernetPort
 
 ## <a name="members"></a>Members
 
-La **classe \_ InternalEthernetPort di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ InternalEthernetPort** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ InternalEthernetPort di MSVM** dispone di questi metodi.
+La **classe Msvm \_ InternalEthernetPort** dispone di questi metodi.
 
 
 
@@ -179,7 +179,7 @@ La **classe \_ InternalEthernetPort di MSVM** dispone di questi metodi.
 | **QuiesceDevice**                                                          | Questo metodo non è supportato.<br/> |
 | [**RequestStateChange**](msvm-internalethernetport-requeststatechange.md) | Richiede una modifica dello stato.<br/>      |
 | [**Reset**](msvm-internalethernetport-reset.md)                           | Reimposta il dispositivo virtuale.<br/>    |
-| **RestoreProperties**                                                      | Questo metodo non è supportato.<br/> |
+| **Proprietà di ripristino**                                                      | Questo metodo non è supportato.<br/> |
 | **SaveProperties**                                                         | Questo metodo non è supportato.<br/> |
 | **SetPowerState**                                                          | Questo metodo non è supportato.<br/> |
 
@@ -189,87 +189,87 @@ La **classe \_ InternalEthernetPort di MSVM** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ InternalEthernetPort di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ InternalEthernetPort** ha queste proprietà.
 
 <dl> <dt>
 
 **ActiveMaximumTransmissionUnit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Unità di trasmissione massima (MTU) attiva o negoziata che può essere supportata. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+L'unità massima di trasmissione attiva o negoziata (MTU) che può essere supportata. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Eventuali ulteriori disponibilità e stato del dispositivo, oltre a quello specificato nella proprietà **Availability** . Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Qualsiasi disponibilità e stato aggiuntivi del dispositivo, oltre a quello specificato nella **proprietà Availability.** Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
-**Rilevamento automatico**
+**AutoSense**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la porta di rete è in grado di determinare automaticamente la velocità o altre caratteristiche di comunicazione del supporto di rete collegato. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Indica se la porta di rete è in grado di determinare automaticamente la velocità o altre caratteristiche di comunicazione del supporto di rete collegato. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
 **Disponibilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Disponibilità e stato primari del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Disponibilità e stato primari del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica i valori possibili per il parametro *RequestedState* del metodo [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usato per avviare una modifica di stato. I valori elencati saranno un subset dei valori contenuti nella proprietà **RequestedStatesSupported** dell'istanza associata di **CIM \_ EnabledLogicalElementCapabilities**, dove i valori selezionati sono una funzione dello stato corrente dell'oggetto [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) . Questa proprietà può essere diversa da **null** se un'implementazione è in grado di annunciare il set di valori possibili come funzione dello stato corrente. Questa proprietà sarà **null** se un'implementazione non è in grado di determinare il set di valori possibili come funzione dello stato corrente.
+Indica i valori possibili per il *parametro RequestedState* del metodo [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usato per avviare una modifica dello stato. I valori elencati saranno un subset dei valori contenuti nella proprietà **RequestedStatesSupported** dell'istanza associata di **CIM \_ EnabledLogicalElementCapabilities,** dove i valori selezionati sono una funzione dello stato corrente dell'oggetto [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85)) Questa proprietà può essere non **Null se** un'implementazione è in grado di annunciare il set di valori possibili come funzione dello stato corrente. Questa proprietà sarà **Null se** un'implementazione non è in grado di determinare il set di valori possibili come funzione dello stato corrente.
 
-Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), ma non viene utilizzata.
+Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement,**](/previous-versions//cc136818(v=vs.85))ma non viene usata.
 
 </dd> <dt>
 
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Funzionalità della porta Ethernet. Se sono elencate le funzionalità di failover o bilanciamento del carico, è necessario definire anche un [**\_ SpareGroup CIM**](/windows/desktop/CIMWin32Prov/cim-sparegroup) (failover) o [**CIM \_ ExtraCapacityGroup**](/windows/desktop/CIMWin32Prov/cim-extracapacitygroup) (bilanciamento del carico) per descrivere completamente la funzionalità. Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Funzionalità della porta Ethernet. Se sono elencate funzionalità di failover o bilanciamento del carico, è necessario definire anche un gruppo di riserva [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-sparegroup) (failover) o [**CIM \_ ExtraCapacityGroup**](/windows/desktop/CIMWin32Prov/cim-extracapacitygroup) (bilanciamento del carico) per descrivere completamente la funzionalità. Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 <dl> <dt>
 
@@ -285,10 +285,10 @@ Funzionalità della porta Ethernet. Se sono elencate le funzionalità di failove
 <span id="WakeOnLan"></span><span id="wakeonlan"></span><span id="WAKEONLAN"></span>**WakeOnLan** (3)
 </dt> <dt>
 
-<span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>**Failover** (4)
+<span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>**FailOver** (4)
 </dt> <dt>
 
-<span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>**Loadbalancing** (5)
+<span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>**LoadBalancing** (5)
 </dt> </dl>
 
 </dd> <dt>
@@ -296,117 +296,117 @@ Funzionalità della porta Ethernet. Se sono elencate le funzionalità di failove
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe in formato libero che fornisce spiegazioni più dettagliate per tutte le funzionalità della porta Ethernet indicate nell'array delle **funzionalità** . Si noti che ogni voce di questa matrice è correlata alla voce nella matrice delle **funzionalità** che si trova nello stesso indice. Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Matrice di stringhe in formato libero che fornisce spiegazioni più dettagliate per qualsiasi funzionalità della porta Ethernet indicata nella matrice **Capabilities.** Si noti che ogni voce di questa matrice è correlata alla voce nella matrice **Capabilities** che si trova in corrispondenza dello stesso indice. Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacità della strumentazione di comunicare con l'elemento gestito sottostante. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe o della sottoclasse utilizzata per la creazione di un'istanza di. Se utilizzata con le altre proprietà chiave di questa classe, questa proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nome della classe o della sottoclasse utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave di questa classe, questa proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Integra la proprietà **PrimaryStatus** con ulteriori dettagli sullo stato. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Integra la proprietà **PrimaryStatus** con dettagli aggiuntivi sullo stato. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Un indirizzo o altre informazioni di identificazione utilizzate per assegnare un nome univoco al dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su "Microsoft:*GUID* \\ *Device-Specific Data*".
+Indirizzo o altre informazioni di identificazione utilizzate per assegnare un nome univoco al dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ed è impostata su "Microsoft:*GUID* \\ *device-specific data".*
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà consente a ogni istanza di definire un nome visualizzato oltre alle relative proprietà chiave, dati di identità e informazioni sulla descrizione. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) e viene generata in base alla scheda di interfaccia di rete presente nell'host.
+Nome visualizzato per l'oggetto . Questa proprietà consente a ogni istanza di definire un nome visualizzato oltre alle proprietà chiave, ai dati di identità e alle informazioni di descrizione. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) e viene generata in base alla scheda di interfaccia di rete presente nell'host.
 
 </dd> <dt>
 
 **EnabledCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica quali funzionalità sono abilitate dall'elenco di tutti quelli supportati, definiti nella matrice delle **funzionalità** . Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Specifica le funzionalità abilitate dall'elenco di tutte le funzionalità supportate, definite nella **matrice Capabilities.** Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 <dl> <dt>
 
@@ -422,157 +422,157 @@ Specifica quali funzionalità sono abilitate dall'elenco di tutti quelli support
 <span id="WakeOnLan"></span><span id="wakeonlan"></span><span id="WAKEONLAN"></span>**WakeOnLan** (3)
 </dt> <dt>
 
-<span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>**Failover** (4)
+<span id="FailOver"></span><span id="failover"></span><span id="FAILOVER"></span>**FailOver** (4)
 </dt> <dt>
 
-<span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>**Loadbalancing** (5)
+<span id="LoadBalancing"></span><span id="loadbalancing"></span><span id="LOADBALANCING"></span>**LoadBalancing** (5)
 </dt> </dl>
 
 </dd> <dt>
 
-**EnabledDefault**
+**Impostazione predefinita abilitata**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Configurazione predefinita o di avvio di un amministratore per lo stato abilitato di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Configurazione predefinita o di avvio di un amministratore per lo stato abilitato di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stati abilitati e disabilitati di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Stati abilitati e disabilitati di un elemento. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se l'errore riportato nella proprietà **LastErrorCode** è ora cancellato. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Indica se l'errore segnalato nella **proprietà LastErrorCode** è ora cancellato. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che fornisce ulteriori informazioni sull'errore registrato nella proprietà **LastErrorCode** e informazioni sulle azioni correttive che possono essere eseguite. Questa proprietà viene ereditata dalla proprietà [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Stringa che fornisce ulteriori informazioni sull'errore registrato nella proprietà **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite. Questa proprietà viene ereditata dalla [**proprietà \_ CiM LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **FullDuplex**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la porta funziona in modalità full duplex. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Indica se la porta funziona in modalità full duplex. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente dell'elemento. Questo attributo esprime lo stato di integrità di questo elemento ma non necessariamente dei relativi sottocomponenti. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Integrità corrente dell'elemento. Questo attributo esprime l'integrità di questo elemento, ma non necessariamente dei relativi sottocomponenti. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe in formato libero che fornisce spiegazioni e dettagli dietro le voci nella matrice di proprietà **OtherIdentifyingInfo** . Ogni voce di questa matrice è correlata alla voce nella matrice di proprietà **OtherIdentifyingInfo** che si trova nello stesso indice. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Matrice di stringhe in formato libero che fornisce spiegazioni e dettagli sulle voci nella matrice di proprietà **OtherIdentifyingInfo.** Ogni voce di questa matrice è correlata alla voce nella matrice di proprietà **OtherIdentifyingInfo** che si trova in corrispondenza dello stesso indice. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore **DateTime** che indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Valore **datetime** che indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ultimo codice di errore segnalato dal dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Ultimo codice di errore segnalato dal dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **LinkTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipi di collegamenti. Quando è impostata su 1 (other), la proprietà correlata **OtherLinkTechnology** contiene una descrizione di stringa del tipo di collegamento. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Tipi di collegamenti. Se impostata su 1 (Altro), la proprietà correlata **OtherLinkTechnology** contiene una descrizione stringa del tipo di collegamento. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 
 
@@ -589,210 +589,210 @@ Tipi di collegamenti. Quando è impostata su 1 (other), la proprietà correlata 
 **MaxDataSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dimensione massima del campo INFO (non MAC) che verrà ricevuto o trasmesso. Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Dimensione massima del campo INFO (non MAC) che verrà ricevuto o trasmesso. Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-La proprietà è stata deprecata. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+La proprietà è stata deprecata. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
-**MaxSpeed**
+**Maxspeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Larghezza di banda massima della porta, in bit al secondo. Questa proprietà viene ereditata da [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+Larghezza di banda massima della porta, in bit al secondo. Questa proprietà viene ereditata da [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
-**NetworkAddresses**
+**Indirizzi di rete**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Gli indirizzi MAC Ethernet/802.3 formattati come dodici cifre esadecimali, ad esempio "010203040506", con ogni coppia che rappresenta uno dei sei ottetti dell'indirizzo MAC in ordine di bit canonico (il bit dell'indirizzo del gruppo viene trovato nel bit di ordine inferiore del primo carattere della stringa). Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Indirizzi MAC Ethernet/802.3 formattati come dodici cifre esadecimali (ad esempio, "010203040506"), con ogni coppia che rappresenta uno dei sei ottetti dell'indirizzo MAC in ordine di bit canonico (il bit dell'indirizzo di gruppo si trova nel bit di ordine più basso del primo carattere della stringa). Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere utilizzato per fornire maggiori dettagli rispetto al valore della proprietà **EnabledState** . Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni sullo stato corrente per la condizione operativa dell'elemento e può essere usato per fornire maggiori dettagli rispetto al valore della **proprietà EnabledState.** Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente dell'elemento. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Stati correnti dell'elemento. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OtherEnabledCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe in formato libero che fornisce spiegazioni più dettagliate per qualsiasi funzionalità abilitata specificata come 1 (other). Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Matrice di stringhe in formato libero che fornisce spiegazioni più dettagliate per qualsiasi funzionalità abilitata specificata come 1 (Altro). Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 </dd> <dt>
 
 **OtherEnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la proprietà **EnabledState** è impostata su 1 (other). Questa proprietà deve essere impostata su **null** se la proprietà **EnabledState** è un valore qualsiasi diverso da 1. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Stringa che descrive lo stato abilitato o disabilitato dell'elemento quando la **proprietà EnabledState** è impostata su 1 (Altro). Questa proprietà deve essere impostata **su Null** quando la **proprietà EnabledState** è un valore diverso da 1. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tutti i dati, oltre alle informazioni sull'ID del dispositivo, che possono essere usati per identificare un dispositivo logico. Ad esempio, è possibile usare questa proprietà per conservare il nome visualizzato del sistema operativo per il dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Tutti i dati, oltre alle informazioni sull'ID dispositivo, che possono essere usati per identificare un dispositivo logico. Ad esempio, è possibile usare questa proprietà per contenere il nome visualizzato del sistema operativo per il dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **OtherLinkTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore stringa che descrive la proprietà **LinkTechnology** quando è impostata su 1 (other). Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Valore stringa che descrive la **proprietà LinkTechnology** quando è impostata su 1 (Altro). Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
 **OtherNetworkPortType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Questa proprietà è deprecata. Utilizzare la proprietà **portType** . Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Questa proprietà è deprecata. Usare la **proprietà PortType.** Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
-Deprecated Description: tipo di modulo, quando la proprietà **portType** è impostata su 1 (other).
+Descrizione deprecata: tipo di modulo, quando la **proprietà PortType** è impostata su 1 (Altro).
 
 </dd> <dt>
 
 **OtherPortType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di modulo, quando la proprietà **portType** è impostata su 1 (other). Questa proprietà viene ereditata da [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)) .
+Tipo di modulo, quando la **proprietà PortType** è impostata su 1 (Altro). Questa proprietà viene ereditata da [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
 **PermanentAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo di rete hardcoded in una porta. Questo indirizzo può essere modificato usando un aggiornamento del firmware o una configurazione software. Quando questa modifica viene apportata, il campo deve essere aggiornato nello stesso momento. Questa operazione deve essere lasciata vuota se per la scheda di rete non esiste alcun indirizzo hardcoded. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Indirizzo di rete hardcoded in una porta. Questo indirizzo può essere modificato usando un aggiornamento del firmware o una configurazione software. Quando viene apportata questa modifica, il campo deve essere aggiornato contemporaneamente. Questo campo deve essere lasciato vuoto se non esiste alcun indirizzo hardcoded per la scheda di rete. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
-**NumeroPorta**
+**Portnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Le porte di rete spesso sono numerate in relazione a un modulo logico o a un elemento di rete. Questo valore è 1 per le NIC emulate, 0 per tutti gli altri. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Le porte di rete sono spesso numerate in relazione a un modulo logico o a un elemento di rete. Questo valore è 1 per le schede di interfaccia di rete emulate, 0 per tutte le altre. Questa proprietà viene ereditata da [**CIM \_ NetworkPort.**](/previous-versions/windows/desktop/iscsitarg/cim-networkport)
 
 </dd> <dt>
 
-**PortType**
+**Porttype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Modalità specifica attualmente abilitata per la porta. Quando è impostata su 1 (other), la proprietà correlata **OtherPortType** contiene una descrizione di stringa del tipo di porta. Questa proprietà viene ereditata da [**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport).
+Modalità specifica attualmente abilitata per la porta. Se impostata su 1 (Altro), la proprietà **correlata OtherPortType** contiene una descrizione stringa del tipo di porta. Questa proprietà viene ereditata da [**CIM \_ EthernetPort.**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 
 <dl> <dt>
 
@@ -802,7 +802,7 @@ Modalità specifica attualmente abilitata per la porta. Quando è impostata su 1
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Altro** (1)
 </dt> <dt>
 
-<span id="__50_Copper_10BaseT"></span><span id="__50_copper_10baset"></span><span id="__50_COPPER_10BASET"></span>**50 rame 10BaseT** (50)
+<span id="__50_Copper_10BaseT"></span><span id="__50_copper_10baset"></span><span id="__50_COPPER_10BASET"></span>**//50 Rame 10BaseT** (50)
 </dt> <dt>
 
 <span id="10-100BaseT"></span><span id="10-100baset"></span><span id="10-100BASET"></span>**10-100BaseT** (51)
@@ -820,43 +820,43 @@ Modalità specifica attualmente abilitata per la porta. Quando è impostata su 1
 <span id="10GBaseT"></span><span id="10gbaset"></span><span id="10GBASET"></span>**10GBaseT** (55)
 </dt> <dt>
 
-<span id="10GBase-CX4"></span><span id="10gbase-cx4"></span><span id="10GBASE-CX4"></span>**10GBASE-CX4** (56)
+<span id="10GBase-CX4"></span><span id="10gbase-cx4"></span><span id="10GBASE-CX4"></span>**10GBase-CX4** (56)
 </dt> <dt>
 
-<span id="__100_Fibre_100Base-FX"></span><span id="__100_fibre_100base-fx"></span><span id="__100_FIBRE_100BASE-FX"></span>**100 fibre 100BASE-FX** (100)
+<span id="__100_Fibre_100Base-FX"></span><span id="__100_fibre_100base-fx"></span><span id="__100_FIBRE_100BASE-FX"></span>**//100 Fibre 100Base-FX** (100)
 </dt> <dt>
 
-<span id="100Base-SX"></span><span id="100base-sx"></span><span id="100BASE-SX"></span>**100BASE-SX** (101)
+<span id="100Base-SX"></span><span id="100base-sx"></span><span id="100BASE-SX"></span>**100Base-SX** (101)
 </dt> <dt>
 
-<span id="1000Base-SX"></span><span id="1000base-sx"></span><span id="1000BASE-SX"></span>**1000BASE-SX** (102)
+<span id="1000Base-SX"></span><span id="1000base-sx"></span><span id="1000BASE-SX"></span>**1000Base-SX** (102)
 </dt> <dt>
 
-<span id="1000Base-LX"></span><span id="1000base-lx"></span><span id="1000BASE-LX"></span>**1000BASE-LX** (103)
+<span id="1000Base-LX"></span><span id="1000base-lx"></span><span id="1000BASE-LX"></span>**1000Base-LX** (103)
 </dt> <dt>
 
-<span id="1000Base-CX"></span><span id="1000base-cx"></span><span id="1000BASE-CX"></span>**1000BASE-CX** (104)
+<span id="1000Base-CX"></span><span id="1000base-cx"></span><span id="1000BASE-CX"></span>**1000Base-CX** (104)
 </dt> <dt>
 
-<span id="10GBase-SR"></span><span id="10gbase-sr"></span><span id="10GBASE-SR"></span>**10GBASE-SR** (105)
+<span id="10GBase-SR"></span><span id="10gbase-sr"></span><span id="10GBASE-SR"></span>**10GBase-SR** (105)
 </dt> <dt>
 
-<span id="10GBase-SW"></span><span id="10gbase-sw"></span><span id="10GBASE-SW"></span>**10GBASE-SW** (106)
+<span id="10GBase-SW"></span><span id="10gbase-sw"></span><span id="10GBASE-SW"></span>**10GBase-SW** (106)
 </dt> <dt>
 
-<span id="10GBase-LX4"></span><span id="10gbase-lx4"></span><span id="10GBASE-LX4"></span>**10GBASE-LX4** (107)
+<span id="10GBase-LX4"></span><span id="10gbase-lx4"></span><span id="10GBASE-LX4"></span>**10GBase-LX4** (107)
 </dt> <dt>
 
-<span id="10GBase-LR"></span><span id="10gbase-lr"></span><span id="10GBASE-LR"></span>**10GBASE-LR** (108)
+<span id="10GBase-LR"></span><span id="10gbase-lr"></span><span id="10GBASE-LR"></span>**10GBase-LR** (108)
 </dt> <dt>
 
-<span id="10GBase-LW"></span><span id="10gbase-lw"></span><span id="10GBASE-LW"></span>**10GBASE-LW** (109)
+<span id="10GBase-LW"></span><span id="10gbase-lw"></span><span id="10GBASE-LW"></span>**10GBase-LW** (109)
 </dt> <dt>
 
-<span id="10GBase-ER"></span><span id="10gbase-er"></span><span id="10GBASE-ER"></span>**10GBASE-ER** (110)
+<span id="10GBase-ER"></span><span id="10gbase-er"></span><span id="10GBASE-ER"></span>**10GBase-ER** (110)
 </dt> <dt>
 
-<span id="10GBase-EW"></span><span id="10gbase-ew"></span><span id="10GBASE-EW"></span>**10GBASE-EW** (111)
+<span id="10GBase-EW"></span><span id="10gbase-ew"></span><span id="10GBASE-EW"></span>**10GBase-EW** (111)
 </dt> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (16000 65535)
@@ -867,218 +867,218 @@ Modalità specifica attualmente abilitata per la porta. Quando è impostata su 1
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Funzionalità di risparmio energia del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Funzionalità di risparmio energia del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il dispositivo può essere gestito da energia elettrica. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Indica se il dispositivo può essere gestito dall'alimentazione. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di ore consecutive in cui il dispositivo è stato alimentato, dall'ultimo ciclo di alimentazione. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Numero di ore consecutive di alimentazione del dispositivo, dall'ultimo ciclo di alimentazione. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Fornisce informazioni sullo stato di alto livello. Questa proprietà deve essere utilizzata insieme alla proprietà **DetailedStatus** per fornire informazioni dettagliate sullo stato di integrità per l'elemento e i relativi sottocomponenti. Un valore **null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornisce informazioni di alto livello sullo stato. Questa proprietà deve essere usata insieme alla proprietà **DetailedStatus** per fornire informazioni dettagliate sullo stato di integrità per l'elemento e i relativi sottocomponenti. Un **valore Null** indica che questa proprietà non è implementata. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **RequestedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Larghezza di banda richiesta della porta, in bit al secondo. La larghezza di banda effettiva viene segnalata nella proprietà **velocità** . Questa proprietà viene ereditata da [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+Larghezza di banda richiesta della porta, in bit al secondo. La larghezza di banda effettiva viene segnalata nella **proprietà Speed.** Questa proprietà viene ereditata da [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ultimo stato richiesto o desiderato per il servizio di gestione. Quando la proprietà **EnabledState** è impostata su 5 (non applicabile), questa proprietà non ha alcun significato. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Ultimo stato richiesto o desiderato per il servizio di gestione. Quando la **proprietà EnabledState** è impostata su 5 (Non applicabile), questa proprietà non ha alcun significato. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **Velocità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **override**, **unità** ("bit al secondo")
+Qualificatori: **Override**, **Unità** ("Bit al secondo")
 </dt> </dl>
 
-Larghezza di banda corrente della porta in bit al secondo. Per le porte che variano a seconda della larghezza di banda o per quelle in cui non è possibile effettuare una stima accurata, questa proprietà deve contenere la larghezza di banda nominale. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Larghezza di banda corrente della porta in bit al secondo. Per le porte che variano in larghezza di banda o per quelle in cui non è possibile eseguire stime accurate, questa proprietà deve contenere la larghezza di banda nominale. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato corrente dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), ma non viene utilizzata.
+Stato corrente dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)ma non viene usata.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringhe che descrivono i vari valori della matrice **OperationalStatus** . Le voci in questa matrice sono correlate a quelle nello stesso indice di matrice in **OperationalStatus**. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Stringhe che descrivono i vari valori della matrice **OperationalStatus.** Le voci in questa matrice sono correlate a quelle nello stesso indice di matrice in **OperationalStatus**. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Stato del dispositivo logico. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
 **SupportedMaximumTransmissionUnit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Unità di trasmissione massima (MTU) che può essere supportata. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
+Unità massima di trasmissione (MTU) che può essere supportata. Questa proprietà viene ereditata da [**CIM \_ NetworkPort**](/previous-versions/windows/desktop/iscsitarg/cim-networkport).
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), ma non è supportata
+Nome della classe di creazione del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)ma non è supportata
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nome del sistema di ambito. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data o ora dell'Ultima modifica apportata alla proprietà **EnabledState** dell'elemento. Se lo stato dell'elemento non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo 0. Se è stata richiesta una modifica di stato, ma è stata rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) e non viene utilizzata.
+Data o ora dell'ultima modifica della proprietà **EnabledState** dell'elemento. Se lo stato dell'elemento non è stato modificato e questa proprietà viene popolata, è necessario impostarla su un valore di intervallo pari a 0. Se è stata richiesta una modifica dello stato, ma è stata rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) e non viene usata.
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero totale di ore in cui il dispositivo è stato alimentato. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene utilizzata.
+Numero totale di ore di alimentazione del dispositivo. Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) e non viene usata.
 
 </dd> <dt>
 
-**TransitioningToState**
+**Transizione a Uno stato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica lo stato di destinazione a cui è in corso la transizione dell'istanza. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), ma non viene utilizzata.
+Indica lo stato di destinazione a cui l'istanza è in fase di transizione. Questa proprietà viene ereditata da [**CIM \_ EnabledLogicalElement,**](/previous-versions//cc136818(v=vs.85))ma non viene usata.
 
 </dd> <dt>
 
 **UsageRestriction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1100,11 +1100,11 @@ In alcuni casi, una porta logica potrebbe essere identificabile come porta front
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ InternalEthernetPort di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ InternalEthernetPort** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.md).
+Vedere [Esecuzione di query sugli oggetti di rete](querying-networking-objects.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1112,10 +1112,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1124,10 +1124,10 @@ Vedere [esecuzione di query sugli oggetti di rete](querying-networking-objects.m
 
 <dl> <dt>
 
-[**\_ETHERNETPORT CIM**](cim-ethernetport.md)
+[**CIM \_ EthernetPort**](cim-ethernetport.md)
 </dt> <dt>
 
-[**\_ETHERNETPORT CIM**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
+[**CIM \_ EthernetPort**](/previous-versions/windows/desktop/iscsitarg/cim-ethernetport)
 </dt> </dl>
 
  

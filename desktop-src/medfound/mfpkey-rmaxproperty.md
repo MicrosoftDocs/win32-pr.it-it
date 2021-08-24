@@ -1,19 +1,19 @@
 ---
-description: Specifica la velocità in bit del picco, in bit al secondo, usata per la riproduzione con frequenza in bit (VBR) a 2 passaggi vincolata.
+description: Specifica la velocità in bit massima, in bit al secondo, usata per la riproduzione con velocità in bit variabile a 2 passi vincolata.
 ms.assetid: 51f161d2-f832-48d5-8f16-861e2a98a7f7
-title: Proprietà MFPKEY_RMAX (Wmcodecdsp. h)
+title: MFPKEY_RMAX proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3568e0a3ee506640200413a5dc222c7cccec2215
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e80f679d0ed1213a54a4f22bc5d8bfc79f41b93fa05c446c8b6ed0f589183b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119398401"
 ---
-# <a name="mfpkey_rmax-property"></a>\_Proprietà Rmax di MFPKEY
+# <a name="mfpkey_rmax-property"></a>Proprietà MFPKEY \_ RMAX
 
-Specifica la velocità in bit del picco, in bit al secondo, usata per la riproduzione con frequenza in bit (VBR) a 2 passaggi vincolata.
+Specifica la velocità in bit massima, in bit al secondo, usata per la riproduzione con velocità in bit variabile a 2 passi vincolata.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -29,9 +29,9 @@ Nessuna impostazione predefinita.
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore rappresenta la velocità in bit massima per la riproduzione. Il valore di [MFPKEY \_ BMAX](mfpkey-bmaxproperty.md) viene usato per descrivere il buffer in base a questa velocità in bit. in effetti, il formato VBR vincolato è simile alla velocità in bit costante (CBR) che usa questo valore come velocità in bit. Tuttavia, un flusso VBR vincolato può essere riprodotto a una velocità in bit inferiore, a condizione che il buffer venga aumentato.
+Questo valore rappresenta la velocità in bit massima per la riproduzione. Il valore [di MFPKEY \_ BMAX](mfpkey-bmaxproperty.md) viene usato per descrivere il buffer in termini di velocità in bit. In effetti, vbr vincolato è simile alla velocità in bit costante (CBR) usando questo valore come velocità in bit. Tuttavia, un flusso VBR vincolato può essere riprodotto a una velocità in bit inferiore, purché il buffer sia aumentato.
 
-È necessario impostare questo valore per la codifica VBR a due passaggi con vincoli di picco. Dopo aver iniziato l'elaborazione degli esempi, non è necessario eseguire una query per questo valore fino a quando non si termina la codifica del flusso. Il codificatore interpreta una richiesta di questo valore come segnale del superamento della sessione di codifica. L'esempio successivo elaborato viene considerato come l'inizio di una nuova sessione.
+È necessario impostare questo valore per la codifica VBR a due passi con limiti di picco. Dopo aver iniziato l'elaborazione degli esempi, è necessario eseguire una query per questo valore solo dopo aver completato la codifica del flusso. Il codificatore interpreta una richiesta per questo valore come un segnale che la sessione di codifica è stata consa. L'esempio successivo che si elabora viene considerato come l'inizio di una nuova sessione.
 
 In genere, questo valore è da due a tre volte maggiore del valore di [MFPKEY \_ RAVG](mfpkey-ravgproperty.md).
 
@@ -41,9 +41,9 @@ In genere, questo valore è da due a tre volte maggiore del valore di [MFPKEY \_
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ In genere, questo valore è da due a tre volte maggiore del valore di [MFPKEY \_
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

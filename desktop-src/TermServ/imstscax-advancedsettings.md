@@ -1,30 +1,30 @@
 ---
 title: Proprietà AdvancedSettings di IMsTscAx
-description: Recupera un puntatore all'interfaccia IMsTscAdvancedSettings.
+description: Recupera un puntatore a interfaccia IMsTscAdvancedSettings.
 ms.assetid: 1c0e2216-0c65-48ad-b0f6-3a766c8fa44e
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà AdvancedSettings
-- Servizi Desktop remoto proprietà AdvancedSettings, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà , AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà AdvancedSettings
+- Proprietà AdvancedSettings Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà AdvancedSettings
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98bb6b1d581704a0638a47310004777f020ce9bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46fa39bd56c33d35b96cf98b1756e13e0de1796bff12ad3cc32f99a341068e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657291"
 ---
-# <a name="imstscaxadvancedsettings-property"></a>Proprietà IMsTscAx:: AdvancedSettings
+# <a name="imstscaxadvancedsettings-property"></a>Proprietà IMsTscAx::AdvancedSettings
 
-Recupera un puntatore all'interfaccia [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .
+Recupera un [**puntatore a interfaccia IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)
 
 Questa proprietà è di sola lettura.
 
@@ -80,15 +80,15 @@ HRESULT get_AdvancedSettings(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore di interfaccia [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) .
+Puntatore [**a interfaccia IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md)
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

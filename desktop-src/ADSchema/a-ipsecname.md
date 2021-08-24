@@ -1,11 +1,11 @@
 ---
-title: Attributo Ipsec-Name
-description: L'attributo Ipsec-Name è solo per uso interno.
+title: Ipsec-Name attributo
+description: LIpsec-Name attributo è solo per uso interno.
 ms.assetid: dee1ab24-e5bd-4608-b2fb-d17f1c0b77c0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Ipsec-Name attribute
-- Schema AD dell'attributo ipsecname
+- Ipsec-Name schema AD dell'attributo
+- Attributo ipsecName Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73ac8a70c99f804f71a6977975b229f240552406
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d7b25bacfbf9aa430a996e7fdae3df0765291e73c89b62015535bb6519a4eafc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322511"
 ---
-# <a name="ipsec-name-attribute"></a>Attributo Ipsec-Name
+# <a name="ipsec-name-attribute"></a>Ipsec-Name attributo
 
-L'attributo **IPSec-Name** è solo per uso interno.
+**L'attributo Ipsec-Name** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Ipsec-Name                                  |
-| LDAP-Display-Name | ipsecname                                   |
+| Ldap-Display-Name | ipsecName                                   |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.620                      |
-| System-ID-GUID    | b40ff81c-427a-11d1-a9c2-0000f80367c1        |
+| System-Id-Guid    | b40ff81c-427a-11d1-a9c2-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPSec-Name** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 

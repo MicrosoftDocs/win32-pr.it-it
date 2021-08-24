@@ -3,7 +3,7 @@ title: Tipo complesso namedValues
 description: Definisce una coppia nome-valore in cui il nome è associato al valore.
 ms.assetid: 07c512fd-3eab-4238-8d75-83827a958a1e
 keywords:
-- Utilità di pianificazione di tipo complesso namedValues
+- Tipi complessi namedValues Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5f18c9fddab58f33ffc724a3e8df7bd65583cb88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d54e7c33d0b7ab2e5be3c4de6f3f648398a7e65670c0379f5621ae9e8a8bd46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513937"
 ---
 # <a name="namedvalues-complex-type"></a>Tipo complesso namedValues
 
@@ -52,8 +52,8 @@ Definisce una coppia nome-valore in cui il nome è associato al valore.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

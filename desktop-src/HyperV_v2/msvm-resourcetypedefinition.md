@@ -1,7 +1,7 @@
 ---
-description: Definisce un mapping di un tipo di risorsa alle relative classi di implementazione.
+description: Definisce un mapping di un tipo di risorsa alle classi di implementazione.
 ms.assetid: 0911454D-2494-49D5-8480-212E9ADD1B45
-title: Classe Msvm_ResourceTypeDefinition
+title: Msvm_ResourceTypeDefinition classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: edfbf2ec9772fa710df5fc0d024abfcad6d826d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b2cbc70b6139d3b9fd12d1bedcf2400c3aa0c612844c04aa37959038a157b3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520761"
 ---
-# <a name="msvm_resourcetypedefinition-class"></a>\_Classe MSVM ResourceTypeDefinition
+# <a name="msvm_resourcetypedefinition-class"></a>Classe Msvm \_ ResourceTypeDefinition
 
-Definisce un mapping di un tipo di risorsa alle relative classi di implementazione.
+Definisce un mapping di un tipo di risorsa alle classi di implementazione.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF).
+La sintassi seguente è semplificata Managed Object Format (MOF).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,20 +46,20 @@ class Msvm_ResourceTypeDefinition
 
 ## <a name="members"></a>Members
 
-La **classe \_ ResourceTypeDefinition di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ResourceTypeDefinition** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ResourceTypeDefinition di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ResourceTypeDefinition** ha queste proprietà.
 
 <dl> <dt>
 
 **LogicalDeviceClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -72,7 +72,7 @@ Nome della classe derivata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,14 +81,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e **ResourceType** ha il valore 1 (other). Esiste una corrispondenza con la proprietà **OtherResourceType** di [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Stringa che descrive il tipo di risorsa quando non è disponibile un valore ben definito e **ResourceType** ha il valore 1 (Altro). Esiste una corrispondenza con la **proprietà OtherResourceType** di [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -97,14 +97,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Stringa che descrive un sottotipo specifico dell'implementazione per questa risorsa. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa. Esiste una corrispondenza con la proprietà **ResourceSubType** di [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Stringa che descrive un sottotipo specifico di implementazione per questa risorsa. Ad esempio, può essere usato per distinguere modelli diversi dello stesso tipo di risorsa. Esiste una corrispondenza con la **proprietà ResourceSubType** di [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -113,7 +113,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una corrispondenza con la proprietà **ResourceType** di [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Tipo di risorsa rappresentato da questa impostazione di allocazione. Esiste una corrispondenza con la **proprietà ResourceType** di [**CIM \_ ResourceAllocationSettingData.**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata)
 
 <dl> <dt>
 
@@ -135,10 +135,10 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una 
 <span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>**HBA SCSI parallelo** (6)
 </dt> <dt>
 
-<span id="FC_HBA"></span><span id="fc_hba"></span>**HBA FC** (7)
+<span id="FC_HBA"></span><span id="fc_hba"></span>**FC HBA** (7)
 </dt> <dt>
 
-<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**HBA iSCSI** (8)
+<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**ISCSI HBA** (8)
 </dt> <dt>
 
 <span id="IB_HCA"></span><span id="ib_hca"></span>**IB HCA** (9)
@@ -147,13 +147,13 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una 
 <span id="Ethernet_Adapter"></span><span id="ethernet_adapter"></span><span id="ETHERNET_ADAPTER"></span>**Scheda Ethernet** (10)
 </dt> <dt>
 
-<span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>**Altra scheda di rete** (11)
+<span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>**Altra scheda di** rete (11)
 </dt> <dt>
 
-<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot I/O** (12)
+<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot di I/O** (12)
 </dt> <dt>
 
-<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo I/O** (13)
+<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo di I/O** (13)
 </dt> <dt>
 
 <span id="Floppy_Drive"></span><span id="floppy_drive"></span><span id="FLOPPY_DRIVE"></span>**Unità floppy** (14)
@@ -174,10 +174,10 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una 
 <span id="USB_Controller"></span><span id="usb_controller"></span><span id="USB_CONTROLLER"></span>**Controller USB** (19)
 </dt> <dt>
 
-<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controller grafica** (20)
+<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controller grafico** (20)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extent di archiviazione** (21)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Archiviazione extent** (21)
 </dt> <dt>
 
 <span id="Disk"></span><span id="disk"></span><span id="DISK"></span>**Disco** (22)
@@ -186,10 +186,10 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una 
 <span id="Tape"></span><span id="tape"></span><span id="TAPE"></span>**Nastro** (23)
 </dt> <dt>
 
-<span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Altro dispositivo di archiviazione** (24)
+<span id="Other_storage_device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Altro dispositivo di** archiviazione (24)
 </dt> <dt>
 
-<span id="Firewire_Controller"></span><span id="firewire_controller"></span><span id="FIREWIRE_CONTROLLER"></span>**Controller FireWire** (25)
+<span id="Firewire_Controller"></span><span id="firewire_controller"></span><span id="FIREWIRE_CONTROLLER"></span>**Controller Firewire** (25)
 </dt> <dt>
 
 <span id="Partitionable_Unit"></span><span id="partitionable_unit"></span><span id="PARTITIONABLE_UNIT"></span>**Unità partizionabile** (26)
@@ -215,7 +215,7 @@ Tipo di risorsa rappresentata da questa impostazione di allocazione. Esiste una 
 **SettingDataClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -227,7 +227,7 @@ Nome della classe derivata da [**CIM \_ ResourceAllocationSettingData**](/previo
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ ResourceTypeDefinition di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ ResourceTypeDefinition** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -235,12 +235,12 @@ L'accesso alla **classe \_ ResourceTypeDefinition di MSVM** potrebbe essere limi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
 | Fine del supporto client<br/>    | Windows 8.1<br/>                                                                                  |
-| Fine del supporto server<br/>    | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Fine del supporto server<br/>    | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

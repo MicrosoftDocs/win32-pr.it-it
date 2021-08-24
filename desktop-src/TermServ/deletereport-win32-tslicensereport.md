@@ -1,12 +1,12 @@
 ---
 title: Metodo DeleteReport della classe Win32_TSLicenseReport
-description: Elimina un oggetto report nel server licenze Desktop remoto. Non si tratta di un metodo statico.
+description: Elimina un oggetto report nel server Desktop remoto licenze. Non si tratta di un metodo statico.
 ms.assetid: cc70526c-7ce5-4d55-b72e-8a5e8799b1d8
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo DeleteReport
-- Metodo DeleteReport Servizi Desktop remoto, classe Win32_TSLicenseReport
-- Classe Win32_TSLicenseReport Servizi Desktop remoto, metodo DeleteReport
+- Metodo DeleteReport Servizi Desktop remoto
+- Metodo DeleteReport Servizi Desktop remoto , Win32_TSLicenseReport classe
+- Win32_TSLicenseReport classe Servizi Desktop remoto , metodo DeleteReport
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a96c8626e4ecc1f89d0f2fcefa69845fec4df8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67449da66612368fe5991b43a94037cf4d413f5009af64c51dca58c646ee1d44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513485"
 ---
-# <a name="deletereport-method-of-the-win32_tslicensereport-class"></a>Metodo DeleteReport della \_ classe TSLicenseReport Win32
+# <a name="deletereport-method-of-the-win32_tslicensereport-class"></a>Metodo DeleteReport della classe \_ TSLicenseReport Win32
 
-Elimina un oggetto report nel server licenze Desktop remoto. Non si tratta di un metodo statico.
+Elimina un oggetto report nel server Desktop remoto licenze. Non si tratta di un metodo statico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,15 +43,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Non si tratta di un metodo statico. Questo metodo deve essere chiamato da un oggetto report utilizzo licenze per utente.
+Non si tratta di un metodo statico. Questo metodo deve essere chiamato da un oggetto report sull'utilizzo delle licenze per utente.
 
 Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> </dl>
 
  

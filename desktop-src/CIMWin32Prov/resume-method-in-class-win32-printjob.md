@@ -1,5 +1,5 @@
 ---
-description: Il metodo Resume WMI class continua un processo di stampa in pausa.
+description: Il metodo resume della classe WMI continua un processo di stampa sospeso.
 ms.assetid: acfbca2b-19af-4339-bbca-834db50c3d8d
 ms.tgt_platform: multiple
 title: Metodo Resume della classe Win32_PrintJob
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f8ca1602eb29e1e18d83d2e8b79760d13f63e101
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1dfc86b9b42c4373467fca89a46b2b4d8f42074e64836c554b325c8aebddf915
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588211"
 ---
-# <a name="resume-method-of-the-win32_printjob-class"></a>Metodo Resume della classe Win32 \_ PrintJob
+# <a name="resume-method-of-the-win32_printjob-class"></a>Metodo Resume della classe PrintJob Win32 \_
 
-Il metodo **Resume** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) continua un processo di stampa in pausa.
+Il **metodo resume** della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) continua un processo di stampa sospeso.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ Accesso negato
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente vengono ripresi tutti i processi di stampa in un computer.
+L'esempio di codice VBScript seguente riprende tutti i processi di stampa in un computer.
 
 
 ```VB
@@ -89,7 +89,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ Printer. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -98,10 +98,10 @@ Next
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PrintJob Win32**](win32-printjob.md)
+[**Win32 \_ PrintJob**](win32-printjob.md)
 </dt> </dl>
 
  
