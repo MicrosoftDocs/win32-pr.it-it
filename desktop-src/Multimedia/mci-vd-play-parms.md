@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VD_PLAY_PARMS (Mciapi. h)
-description: La \_ struttura MCI VD \_ Play \_ parametri contiene informazioni sulla posizione e sulla velocità del \_ comando MCI Play per i dispositivi videodisco.
+title: MCI_VD_PLAY_PARMS struttura (Mciapi.h)
+description: La struttura MCI VD PLAY PARMS contiene informazioni sulla posizione e sulla velocità per il \_ \_ comando \_ MCI PLAY per i dispositivi \_ videodisc.
 ms.assetid: 9fa8418f-3f69-4a9c-b23e-7d2e2c75c7af
 keywords:
-- Struttura MCI_VD_PLAY_PARMS di Windows Multimedia
+- MCI_VD_PLAY_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3ab04ba5cf0a2b507370a4b777c19fd60a05c30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c2aef6915d1e3cc325d5b9f8e1c7fe176a878c2d84080b5f8a77eaf034afc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783866"
 ---
-# <a name="mci_vd_play_parms-structure"></a>\_Struttura parametri di MCI VD \_ Play \_
+# <a name="mci_vd_play_parms-structure"></a>Struttura MCI \_ VD \_ PLAY \_ PARMS
 
-La struttura **MCI \_ VD \_ Play \_ parametri** contiene informazioni sulla posizione e sulla velocità del comando [**MCI \_ Play**](mci-play.md) per i dispositivi videodisco.
+La **struttura MCI \_ VD PLAY \_ \_ PARMS** contiene informazioni sulla posizione e sulla velocità per il [**comando MCI \_ PLAY**](mci-play.md) per i dispositivi videodisc.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwFrom**
 </dt> <dd>
 
-Posizione da cui riprodurre.
+Posizione da cui eseguire la riproduzione.
 
 </dd> <dt>
 
@@ -67,15 +67,15 @@ Posizione in cui eseguire la riproduzione.
 **dwSpeed**
 </dt> <dd>
 
-Velocità di riproduzione in frame al secondo.
+Velocità di riproduzione in fotogrammi al secondo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
-È possibile usare la struttura [**MCI \_ Play \_ parametri**](mci-play-parms.md) anziché **MCI \_ VD \_ Play \_ parametri** se non si usano i membri dati estesi.
+Se non si usano i membri dati estesi, è possibile usare la struttura [**MCI \_ PLAY \_ PARMS**](mci-play-parms.md) anziché **\_ MCI VD \_ PLAY \_ PARMS.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -93,16 +93,16 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_riproduzione MCI**](mci-play.md)
+[**MCI \_ PLAY**](mci-play.md)
 </dt> <dt>
 
-[**parametri di MCI \_ Play \_**](mci-play-parms.md)
+[**MCI \_ PLAY \_ PARMS**](mci-play-parms.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,24 +1,24 @@
 ---
-title: Attributo Opacity (Shadow) (la)
-description: Attributo Opacity (Shadow) (la)
+title: Attributo di opacità (ombreggiatura)(VML)
+description: Attributo di opacità (ombreggiatura)(VML)
 ms.assetid: 394d755c-72cf-46f5-a258-1844b07a97bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d09ca038a187c4a4ed1f914f5d05bcfd63e4a4a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 43287a4bb6de9f2dd0d9d2b0af97d971314ab7e93ab2c4fae58b666ee1a94124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680621"
 ---
-# <a name="opacity-attribute-shadowvml"></a>Attributo Opacity (Shadow) (la)
+# <a name="opacity-attribute-shadowvml"></a>Attributo di opacità (ombreggiatura)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina la trasparenza di un'ombreggiatura. Proprietà di lettura/scrittura. [VgFraction](msdn-online-vml-vgfraction-data-type.md) .
 
@@ -26,25 +26,25 @@ Determina la trasparenza di un'ombreggiatura. Proprietà di lettura/scrittura. [
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Opacity = " *Expression* " >
+<v: *element* opacity=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Opacity = "*Expression*"
+*element* .opacity="*expression*"
 
-*espressione* = *elemento*. Opacity
+*expression* = *opacità* dell'elemento
 
 **Osservazioni:**
 
-Il valore predefinito è 1. Il valore 0 renderà un'ombreggiatura completamente trasparente.
+Il valore predefinito è 1. Il valore 0 crea un'ombreggiatura completamente trasparente.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La forma presenta un'ombreggiatura trasparente al 50%.
+La forma ha un'ombreggiatura trasparente al 50%.
 
 
 ```HTML
@@ -59,6 +59,6 @@ La forma presenta un'ombreggiatura trasparente al 50%.
 
 
 
- 
+ 
 
- 
+ 

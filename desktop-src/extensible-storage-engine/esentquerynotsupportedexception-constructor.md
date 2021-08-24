@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentQueryNotSupportedException'
+description: Altre informazioni sul costruttore EsentQueryNotSupportedException
 title: Costruttore EsentQueryNotSupportedException
 TOCTitle: 'EsentQueryNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentQueryNotSupportedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ae84639cdcd0205c00c5412bac5f3c55b17b96f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb0bc04ae000f1f1aaeb24ed9db0d8f426da5f9bf047925291e0e724aac51880
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119722371"
 ---
 # <a name="esentquerynotsupportedexception-constructor"></a>Costruttore EsentQueryNotSupportedException
 
 Inizializza una nuova istanza della classe EsentQueryNotSupportedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentQueryNotSupportedException()
 
 [Membri di EsentQueryNotSupportedException](./esentquerynotsupportedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

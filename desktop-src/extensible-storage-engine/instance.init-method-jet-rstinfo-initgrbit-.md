@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Instance.Init (JET_RSTINFO, InitGrbit)'
-title: Metodo Instance.Init (JET_RSTINFO, InitGrbit)
+description: 'Altre informazioni su: Instance.Inimetodo t (JET_RSTINFO, InitGrbit)'
+title: Instance.Inimetodo t (JET_RSTINFO, InitGrbit)
 TOCTitle: Init method (JET_RSTINFO, InitGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.Init(Microsoft.Isam.Esent.Interop.JET_RSTINFO,Microsoft.Isam.Esent.Interop.InitGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.init(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1945b0119053a2759b57b8781b86cf682b3a364c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e2a9975c42383c4ba0d58fb1a41dfeb1df07f81cebfd9b028bd54240bfb6b47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834441"
 ---
-# <a name="instanceinit-method-jet_rstinfo-initgrbit"></a>Metodo Instance.Init (JET_RSTINFO, InitGrbit)
+# <a name="instanceinit-method-jet_rstinfo-initgrbit"></a>Instance.Inimetodo t (JET_RSTINFO, InitGrbit)
 
-Inizializzare il JET_INSTANCE. Questa API richiede almeno la versione vista di ESENT.
+Inizializzare il JET_INSTANCE. Questa API richiede almeno la versione Vista di ESENT.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,9 +62,9 @@ public void Init(
 #### <a name="parameters"></a>Parametri
 
   - recoveryOptions  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
     
-    Parametri di ripristino aggiuntivi per la modifica del mapping dei database durante il ripristino, posizione in cui arrestare il ripristino o stato di ripristino.
+    Parametri di ripristino aggiuntivi per il mapping dei database durante il ripristino, posizione in cui arrestare il ripristino o stato di ripristino.
 
 <!-- end list -->
 
@@ -77,10 +77,10 @@ public void Init(
 
 #### <a name="reference"></a>Riferimento
 
-[Classe dell'istanza](./instance-class.md)
+[Classe di istanza](./instance-class.md)
 
-[Membri di istanza](./instance-members.md)
+[Membri dell'istanza](./instance-members.md)
 
 [Overload init](./instance.init-method2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

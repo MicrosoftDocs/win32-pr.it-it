@@ -1,7 +1,7 @@
 ---
 description: Scrive i dati del filtro nel flusso specificato.
 ms.assetid: 1b405050-6cfd-4b69-b449-f00a6ecfac6a
-title: Metodo CPersistStream. WriteToStream (pStream. h)
+title: Metodo CPersistStream.WriteToStream (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 893d58986db92e50cbafefe74676481162808abf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 139818d1434163255c62dd5cb109dbf505cea03b5876de14eb2aa4a0636f072f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813291"
 ---
-# <a name="cpersiststreamwritetostream-method"></a>CPersistStream. WriteToStream, metodo
+# <a name="cpersiststreamwritetostream-method"></a>Metodo CPersistStream.WriteToStream
 
 Scrive i dati del filtro nel flusso specificato.
 
@@ -45,17 +45,17 @@ virtual HRESULT WriteToStream(
 *pStream* 
 </dt> <dd>
 
-Puntatore a un'interfaccia **IStream** che specifica il flusso di destinazione dei dati del filtro.
+Puntatore a **un'interfaccia IStream** che specifica il flusso di destinazione dei dati del filtro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK. La classe derivata deve restituire un valore **HRESULT** valido.
+Restituisce S \_ OK. La classe derivata deve restituire un valore **HRESULT** valido.
 
 ## <a name="remarks"></a>Commenti
 
-La versione predefinita non scrive nulla; è possibile eseguirne l'override per scrivere i dati specifici della classe.
+La versione predefinita non scrive nulla. può essere sottoposto a override per scrivere dati specifici per la classe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ La versione predefinita non scrive nulla; è possibile eseguirne l'override per 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

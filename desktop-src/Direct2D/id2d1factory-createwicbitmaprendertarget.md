@@ -30,16 +30,16 @@ Crea una destinazione di rendering di cui viene eseguito il rendering in una bit
 
 | Metodo                                                                                                                                                                                                                            | Descrizione                                                                                            |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
-| [**CreateWicBitmapRenderTarget(IWICBitmap \* ,D2D1 \_ RENDER TARGET \_ \_ \* PROPERTIES,ID2D1RenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createwicbitmaprendertarget(iwicbitmap_constd2d1_render_target_properties_id2d1rendertarget)) | Crea una destinazione di rendering di cui viene eseguito il rendering in una bitmap di Microsoft Windows Imaging Component (WIC).<br/> |
+| [**CreateWicBitmapRenderTarget(IWICBitmap,D2D1 \* \_ RENDER TARGET \_ \_ \* PROPERTIES,ID2D1RenderTarget) \* \***](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createwicbitmaprendertarget(iwicbitmap_constd2d1_render_target_properties_id2d1rendertarget)) | Crea una destinazione di rendering di cui viene eseguito il rendering in una bitmap di Microsoft Windows Imaging Component (WIC).<br/> |
 | [**CreateWicBitmapRenderTarget(IWICBitmap \* ,D2D1 \_ RENDER TARGET PROPERTIES \_ \_&,ID2D1RenderTarget \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createwicbitmaprendertarget(iwicbitmap_constd2d1_render_target_properties__id2d1rendertarget))  | Crea una destinazione di rendering di cui viene eseguito il rendering in una bitmap di Microsoft Windows Imaging Component (WIC).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve creare le destinazioni di rendering una sola volta e tenerle per tutta la durata dell'applicazione o fino a quando non viene ricevuto l'errore [**D2DERR \_ RECREATE \_ TARGET.**](direct2d-error-codes.md) Quando viene visualizzato questo errore, è necessario ricreare la destinazione di rendering (e tutte le risorse create).
+L'applicazione deve creare le destinazioni di rendering una sola volta e tenerle per tutta la durata dell'applicazione o fino a quando non viene ricevuto l'errore [**D2DERR \_ RECREATE \_ TARGET.**](direct2d-error-codes.md) Quando viene visualizzato questo errore, è necessario ricreare la destinazione di rendering e le risorse create.
 
-**Nota:**   Questo metodo non è supportato in Windows Phone e avrà esito negativo quando viene chiamato in un dispositivo con codice di errore 0x8899000b ( Non è disponibile alcun dispositivo di rendering hardware per questa operazione). Poiché il Windows Phone Emulator supporta il rendering WARP, questo metodo avrà esito negativo quando viene chiamato sull'emulatore con un codice di errore diverso, 0x88982f80 (wincodec \_ err \_ unsupportedpixelformat).
+**Nota**   Questo metodo non è supportato in Windows Phone e avrà esito negativo quando viene chiamato in un dispositivo con codice di errore 0x8899000b ( Non è disponibile alcun dispositivo di rendering hardware per questa operazione). Poiché il Windows Phone Emulator supporta il rendering WARP, questo metodo avrà esito negativo quando viene chiamato sull'emulatore con un codice di errore diverso, 0x88982f80 (wincodec \_ err \_ unsupportedpixelformat).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -4,24 +4,24 @@ ms.assetid: 4ce2db4b-c901-43a5-b905-7d6d923c940b
 title: Fornire un allocatore personalizzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e85a8d133ee5b686e25bc0d7d4a3e2444cb2791
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 79b2f36f269ff30545d648c5df22e3070ec5588bcc2fa8791852fe9b6a59215c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747911"
 ---
 # <a name="providing-a-custom-allocator"></a>Fornire un allocatore personalizzato
 
-In questa sezione viene descritto come fornire un allocatore personalizzato per un filtro. Sono descritte solo le connessioni [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) , ma i passaggi per una connessione [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) sono simili.
+Questa sezione descrive come fornire un allocatore personalizzato per un filtro. Vengono [**descritte solo le connessioni IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) ma i passaggi per una [**connessione IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) sono simili.
 
-Definire innanzitutto una classe C++ per l'allocatore. L'allocatore può derivare da una delle classi di allocatore standard, [**CBaseAllocator**](cbaseallocator.md) o [**CMemAllocator**](cmemallocator.md), oppure è possibile creare una classe allocator completamente nuova. Se si crea una nuova classe, deve esporre l'interfaccia [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) .
+Definire prima di tutto una classe C++ per l'allocatore. L'allocatore può derivare da una delle classi di allocatore standard, [**CBaseAllocator**](cbaseallocator.md) o [**CMemAllocator**](cmemallocator.md), oppure è possibile creare una classe allocatore completamente nuova. Se si crea una nuova classe, deve esporre [**l'interfaccia IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator)
 
-I passaggi rimanenti variano a seconda che l'allocatore appartenga a un pin di input o a un pin di output sul filtro. I pin di input svolgono un ruolo diverso rispetto ai pin di output durante la fase di negoziazione dell'allocatore, perché il pin di output seleziona infine l'allocatore.
+I passaggi rimanenti dipendono dal fatto che l'allocatore appartenga a un pin di input o a un pin di output nel filtro. I pin di input svolgono un ruolo diverso rispetto ai pin di output durante la fase di negoziazione dell'allocatore, perché il pin di output seleziona infine l'allocatore.
 
 **Fornire un allocatore personalizzato per un pin di input**
 
-Per fornire un allocatore per un pin di input, eseguire l'override del metodo [**CBaseInputPin:: Getallocator**](cbaseinputpin-getallocator.md) del PIN di input. All'interno di questo metodo, controllare la variabile membro **\_ pAllocator m** . Se questa variabile è non **null**, significa che l'allocatore è già stato selezionato per questa connessione, quindi il metodo **getallocator** deve restituire un puntatore a tale allocatore. Se **m \_ PAllocator** è **null**, significa che l'allocatore non è stato selezionato, quindi il metodo **getallocator** deve restituire un puntatore all'allocatore preferito del PIN di input. In tal caso, creare un'istanza dell'allocatore personalizzato e restituire il relativo puntatore [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) . Il codice seguente illustra come implementare il metodo **Getallocator** :
+Per fornire un allocatore per un pin di input, eseguire l'override del metodo [**CBaseInputPin::GetAllocator**](cbaseinputpin-getallocator.md) del pin di input. All'interno di questo metodo controllare la **variabile membro \_ m pAllocator.** Se questa variabile non è **NULL,** significa che l'allocatore è già stato selezionato per questa connessione, quindi il **metodo GetAllocator** deve restituire un puntatore a tale allocatore. Se **m \_ pAllocator** è **NULL,** significa che l'allocatore non è stato selezionato, quindi il **metodo GetAllocator** deve restituire un puntatore all'allocatore preferito del pin di input. In tal caso, creare un'istanza dell'allocatore personalizzato e restituire il relativo [**puntatore IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) Il codice seguente illustra come implementare il **metodo GetAllocator:**
 
 
 ```C++
@@ -57,11 +57,11 @@ STDMETHODIMP CMyInputPin::GetAllocator(IMemAllocator **ppAllocator)
 
 
 
-Quando il filtro upstream seleziona un allocatore, chiama il metodo [**IMemInputPin:: NotifyAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) del PIN di input. Eseguire l'override del metodo [**CBaseInputPin:: NotifyAllocator**](cbaseinputpin-notifyallocator.md) per verificare le proprietà dell'allocatore. In alcuni casi, il pin di input potrebbe rifiutare l'allocatore se non è l'allocatore personalizzato, sebbene ciò possa causare un errore dell'intera connessione del PIN.
+Quando il filtro upstream seleziona un allocatore, chiama il metodo [**IMemInputPin::NotifyAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) del pin di input. Eseguire [**l'override del metodo CBaseInputPin::NotifyAllocator**](cbaseinputpin-notifyallocator.md) per controllare le proprietà dell'allocatore. In alcuni casi, il pin di input potrebbe rifiutare l'allocatore se non è l'allocatore personalizzato, anche se ciò potrebbe causare l'esito negativo dell'intera connessione del pin.
 
 **Fornire un allocatore personalizzato per un pin di output**
 
-Per fornire un allocatore per un pin di output, eseguire l'override del metodo [**CBaseOutputPin:: InitAllocator**](cbaseoutputpin-initallocator.md) per creare un'istanza dell'allocatore:
+Per fornire un allocatore per un pin di output, eseguire l'override del metodo [**CBaseOutputPin::InitAllocator**](cbaseoutputpin-initallocator.md) per creare un'istanza dell'allocatore:
 
 
 ```C++
@@ -87,13 +87,13 @@ HRESULT MyOutputPin::InitAllocator(IMemAllocator **ppAllocator)
 
 
 
-Per impostazione predefinita, la classe [**CBaseOutputPin**](cbaseoutputpin.md) richiede innanzitutto un allocatore dal pin di input. Se l'allocatore non è adatto, il pin di output crea il proprio allocatore. Per forzare la connessione a usare l'allocatore personalizzato, eseguire l'override del metodo [**CBaseOutputPin::D ecideallocator**](cbaseoutputpin-decideallocator.md) . Tuttavia, tenere presente che questo può impedire la connessione del PIN di output con determinati filtri, perché l'altro filtro potrebbe richiedere anche un allocatore personalizzato. Una terza opzione consiste nel modificare l'ordine: provare prima l'allocatore personalizzato e quindi eseguire il fallback all'allocatore dell'altro filtro.
+Per impostazione predefinita, la [**classe CBaseOutputPin**](cbaseoutputpin.md) richiede prima un allocatore dal pin di input. Se l'allocatore non è adatto, il pin di output crea il proprio allocatore. Per forzare la connessione a usare l'allocatore personalizzato, eseguire l'override del metodo [**CBaseOutputPin::D ecideAllocator.**](cbaseoutputpin-decideallocator.md) Tenere tuttavia presente che ciò può impedire al pin di output di connettersi a determinati filtri, perché anche l'altro filtro può richiedere un allocatore personalizzato. Una terza opzione consiste nel cambiare l'ordine: provare prima l'allocatore personalizzato e quindi eseguire il fall back all'allocatore dell'altro filtro.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Negozi di allocatori](negotiating-allocators.md)
+[Negoziazione degli allocatori](negotiating-allocators.md)
 </dt> </dl>
 
  

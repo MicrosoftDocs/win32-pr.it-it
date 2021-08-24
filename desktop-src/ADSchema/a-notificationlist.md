@@ -1,11 +1,11 @@
 ---
-title: Attributo Notification-List
-description: L'attributo Notification-List non è attualmente in uso.
+title: Notification-List attributo
+description: LNotification-List attributo non è attualmente usato.
 ms.assetid: 50def826-a4bb-4235-a2b6-ea7da2600d17
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Notification-List attribute
-- Schema AD dell'attributo Notification
+- Notification-List schema AD dell'attributo
+- Schema AD dell'attributo notificationList
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 124da60f881621863afa41977d2e3991152c8243
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62f760cd2a691633aa5b3fd1112480acb611d0794e3f6f5a44dac7c185dc9643
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703081"
 ---
-# <a name="notification-list-attribute"></a>Attributo Notification-List
+# <a name="notification-list-attribute"></a>Notification-List attributo
 
-L'attributo **Notification-List** non è attualmente in uso.
+**L'attributo Notification-List** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Notification-List                       |
-| LDAP-Display-Name | notifica                        |
+| Ldap-Display-Name | notificationList                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.303                  |
-| System-ID-GUID    | 19195a56-6da0-11d0-afd3-00c04fd930c9    |
+| System-Id-Guid    | 19195a56-6da0-11d0-afd3-00c04fd930c9    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ L'attributo **Notification-List** non è attualmente in uso.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ L'attributo **Notification-List** non è attualmente in uso.
 | ID collegamento                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| È a valore singolo       | Vero                                                                                                                                                                         |
+| Is-Single-Valued       | Vero                                                                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                                                                        |
 | Nel catalogo globale      | Falso                                                                                                                                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classi utilizzate in        | [**Impostazioni applicazione**](c-applicationsettings.md)<br/> [**Applicazione-sito-impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Applicazione-Impostazioni**](c-applicationsettings.md)<br/> [**Application-Site-Impostazioni**](c-applicationsitesettings.md)<br/> [**Sito**](c-site.md)<br/> |
 
 
 

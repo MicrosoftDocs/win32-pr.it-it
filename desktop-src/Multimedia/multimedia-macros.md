@@ -3,23 +3,23 @@ title: Macro multimediali
 description: Macro multimediali
 ms.assetid: 4b0d1f92-6e79-496b-ba35-7fc17a5127d4
 keywords:
-- Multimedia di Windows, macro
-- Multimedia, macro
-- riferimenti multimediali, macro
-- informazioni di riferimento per Multimedia, macro
+- Windows multimediali, macro
+- multimediali, macro
+- informazioni di riferimento sul contenuto multimediale, macro
+- informazioni di riferimento per i contenuti multimediali, macro
 - macro multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef29d18fc53d46e96de2a13d6e9e39e75e4dc6b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d9cdad8be1acfb92db2f58762fb5debe834dd52f7b5519f3ed4ed4d43d55cbd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806761"
 ---
 # <a name="multimedia-macros"></a>Macro multimediali
 
-Le macro seguenti vengono usate con i contenuti multimediali.
+Le macro seguenti vengono usate con i dati multimediali.
 
 -   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
@@ -98,14 +98,14 @@ Le macro seguenti vengono usate con i contenuti multimediali.
 -   [**capSetUserData**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata)
 -   [**capSetVideoFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetvideoformat)
 -   [**DrawDibUpdate**](/windows/desktop/api/Vfw/nf-vfw-drawdibupdate)
--   [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout)
+-   [**Informazioni su IC**](/windows/desktop/api/Vfw/nf-vfw-icabout)
 -   [**ICCompressBegin**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin)
 -   [**ICCompressEnd**](/windows/desktop/api/Vfw/nf-vfw-iccompressend)
 -   [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat)
 -   [**ICCompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformatsize)
 -   [**ICCompressGetSize**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetsize)
 -   [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery)
--   [**ICConfigure**](/windows/desktop/api/Vfw/nf-vfw-icconfigure)
+-   [**Configurazione IC**](/windows/desktop/api/Vfw/nf-vfw-icconfigure)
 -   [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin)
 -   [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 -   [**ICDecompressExEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexend)
@@ -137,20 +137,20 @@ Le macro seguenti vengono usate con i contenuti multimediali.
 -   [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout)
 -   [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure)
 -   [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate)
--   [**Max**](max.md)
--   [**ora di MCI \_ \_**](mci-hms-hour.md)
--   [**\_minuto dell'ottavo MCI \_**](mci-hms-minute.md)
--   [**\_secondo MCI \_**](mci-hms-second.md)
--   [**MCI \_ make \_ HMS**](mci-make-hms.md)
--   [**MCI \_ make \_ MSF**](mci-make-msf.md)
--   [**MCI \_ make \_ TMSF**](mci-make-tmsf.md)
--   [**\_frame MSF di MCI \_**](/previous-versions//dd743438(v=vs.85))
--   [**\_minuto MSF di MCI \_**](mci-msf-minute.md)
--   [**\_secondo MSF di MCI \_**](mci-msf-second.md)
--   [**\_frame TMSF \_ MCI**](mci-tmsf-frame.md)
--   [**\_TMSF \_ minuto MCI**](mci-tmsf-minute.md)
--   [**\_secondo TMSF \_ MCI**](mci-tmsf-second.md)
--   [**\_traccia TMSF \_ MCI**](mci-tmsf-track.md)
+-   [**Massimo**](max.md)
+-   [**MCI \_ HMS \_ HOUR**](mci-hms-hour.md)
+-   [**MINUTO \_ MCI HMS \_**](mci-hms-minute.md)
+-   [**MCI \_ HMS \_ SECOND**](mci-hms-second.md)
+-   [**MCI \_ MAKE \_ HMS**](mci-make-hms.md)
+-   [**MCI \_ MAKE \_ MSF**](mci-make-msf.md)
+-   [**MCI \_ MAKE \_ TMSF**](mci-make-tmsf.md)
+-   [**MCI \_ MSF \_ FRAME**](/previous-versions//dd743438(v=vs.85))
+-   [**MCI \_ MSF \_ MINUTE**](mci-msf-minute.md)
+-   [**MCI \_ MSF \_ SECOND**](mci-msf-second.md)
+-   [**MCI \_ TMSF \_ FRAME**](mci-tmsf-frame.md)
+-   [**MCI \_ TMSF \_ MINUTE**](mci-tmsf-minute.md)
+-   [**MCI \_ TMSF \_ SECOND**](mci-tmsf-second.md)
+-   [**MCI \_ TMSF \_ TRACK**](mci-tmsf-track.md)
 -   [**MCIWndCanConfig**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanconfig)
 -   [**MCIWndCanEject**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject)
 -   [**MCIWndCanPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay)
@@ -220,8 +220,8 @@ Le macro seguenti vengono usate con i contenuti multimediali.
 -   [**MCIWndUseFrames**](/windows/desktop/api/Vfw/nf-vfw-mciwnduseframes)
 -   [**MCIWndUseTime**](/windows/desktop/api/Vfw/nf-vfw-mciwndusetime)
 -   [**MCIWndValidateMedia**](/windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia)
--   [**\_EVENTPARM MEVT**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
--   [**MEVT \_ eventType**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
+-   [**MEVT \_ EVENTPARM**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
+-   [**MEVT \_ EVENTTYPE**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
 -   [**min**](min.md)
 -   [**mmioFOURCC**](/windows/win32/api/vfw/nf-vfw-mmiofourcc)
 -   [**sndAlias**](/previous-versions//dd798675(v=vs.85))
@@ -230,9 +230,9 @@ Le macro seguenti vengono usate con i contenuti multimediali.
 
 <dl> <dt>
 
-[Riferimenti multimediali](multimedia-reference.md)
+[Informazioni di riferimento sul contenuto multimediale](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

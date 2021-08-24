@@ -1,10 +1,10 @@
 ---
-title: Set di proprietà Domain-Password
-description: Set di proprietà contenente tutti gli attributi di blocco e di validità della password per l'account utente.
+title: Domain-Password proprietà
+description: Set di proprietà contenente tutti gli attributi correlati al blocco e all'età della password nell'account utente.
 ms.assetid: 2333754d-4b80-4794-9af0-12244b209312
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD Domain-Password set di proprietà
+- Domain-Password set di proprietà ad Active Directory Schema
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afdf3f3f92e472ba31f8b7b04d18c5a61c1c2d71
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 498551b13a57b2e241dd700120e253117883a13e27ad4ab857313e13ad77ab2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801451"
 ---
-# <a name="domain-password-property-set"></a>Set di proprietà Domain-Password
+# <a name="domain-password-property-set"></a>Domain-Password proprietà
 
-Set di proprietà contenente tutti gli attributi di blocco e di validità della password per l'account utente.
+Set di proprietà contenente tutti gli attributi correlati al blocco e all'età della password nell'account utente.
 
 
 
@@ -50,8 +50,8 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Dominio**](c-domain.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Pwd-Properties**](a-pwdproperties.md)<br/> |
 
 
 
@@ -61,9 +61,9 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio**](c-domain.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Applies-To              | [**Dominio**](c-domain.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Pwd-Properties**](a-pwdproperties.md)<br/> |
 
 
 
@@ -73,9 +73,9 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio**](c-domain.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Applies-To              | [**Dominio**](c-domain.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Pwd-Properties**](a-pwdproperties.md)<br/> |
 
 
 
@@ -85,9 +85,9 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio**](c-domain.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Applies-To              | [**Dominio**](c-domain.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Pwd-Properties**](a-pwdproperties.md)<br/> |
 
 
 
@@ -97,9 +97,9 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio**](c-domain.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Applies-To              | [**Dominio**](c-domain.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Proprietà Pwd**](a-pwdproperties.md)<br/> |
 
 
 
@@ -109,9 +109,9 @@ Set di proprietà contenente tutti gli attributi di blocco e di validità della 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio**](c-domain.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
-| Localization-display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Membri del set di proprietà    | [**Lock-out-osservazione-finestra**](a-lockoutobservationwindow.md)<br/> [**Blocco-durata**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-pwd-Age**](a-maxpwdage.md)<br/> [**Min-pwd-Age**](a-minpwdage.md)<br/> [**Min-pwd-length**](a-minpwdlength.md)<br/> [**Pwd-cronologia-lunghezza**](a-pwdhistorylength.md)<br/> [**Pwd-proprietà**](a-pwdproperties.md)<br/> |
+| Applies-To              | [**Dominio**](c-domain.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                |
+| Localization-Display-ID | 7                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Membri del set di proprietà    | [**Lock-Out-Observation-Window**](a-lockoutobservationwindow.md)<br/> [**Lockout-Duration (Durata blocco)**](a-lockoutduration.md)<br/> [**Soglia di blocco**](a-lockoutthreshold.md)<br/> [**Max-Pwd-Age**](a-maxpwdage.md)<br/> [**Min-Pwd-Age**](a-minpwdage.md)<br/> [**Min-Pwd-Length**](a-minpwdlength.md)<br/> [**Pwd-History-Length**](a-pwdhistorylength.md)<br/> [**Proprietà Pwd**](a-pwdproperties.md)<br/> |
 
 
 

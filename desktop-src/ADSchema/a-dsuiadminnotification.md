@@ -1,10 +1,10 @@
 ---
-title: Attributo DS-UI-admin-Notification
-description: Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di callback che DSAdmin chiama quando si verifica un'azione su un oggetto tramite l'interfaccia utente.
+title: Attributo DS-UI-Admin-Notification
+description: Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di callback che DSAdmin chiama quando si è verificata un'azione su un oggetto tramite l'interfaccia utente.
 ms.assetid: 4845c221-087f-49f5-a95d-71f58a4e8819
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-admin-schema AD dell'attributo di notifica
+- Schema AD dell'attributo DS-UI-Admin-Notification
 - Schema AD dell'attributo dSUIAdminNotification
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7082d7a8fd751fa001ac796d2a86b60a28463e8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2465796ed1e0069206539a5d4b6b17080e5f751f5c9b79198c668316c6dec26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656561"
 ---
-# <a name="ds-ui-admin-notification-attribute"></a>Attributo DS-UI-admin-Notification
+# <a name="ds-ui-admin-notification-attribute"></a>Attributo DS-UI-Admin-Notification
 
-Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di callback che DSAdmin chiama quando si verifica un'azione su un oggetto tramite l'interfaccia utente.
+Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di callback che DSAdmin chiama quando si è verificata un'azione su un oggetto tramite l'interfaccia utente.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | DS-UI-admin-notifica                    |
-| LDAP-Display-Name | dSUIAdminNotification                       |
+| CN                | Notifica DS-UI-Admin                    |
+| Ldap-Display-Name | dSUIAdminNotification                       |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1343                     |
-| System-ID-GUID    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
+| System-Id-Guid    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**Interfaccia utente DS-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Si tratta di un elenco di GUID di oggetti COM che supportano un'interfaccia di c
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Falso                                               |
+| Is-Single-Valued       | Falso                                               |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**DS-interfaccia utente-impostazioni**](c-dsuisettings.md)<br/> |
+| Classi usate in        | [**DS-UI-Impostazioni**](c-dsuisettings.md)<br/> |
 
 
 

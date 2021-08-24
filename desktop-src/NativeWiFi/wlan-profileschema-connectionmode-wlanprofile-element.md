@@ -1,5 +1,5 @@
 ---
-description: Indica se la connessione a una LAN wireless deve essere automatica o avviata dall'utente.
+description: Indica se la connessione a una rete LAN wireless deve essere automatica o avviata dall'utente.
 ms.assetid: 0fad8392-3053-494b-9b30-1db85408a437
 title: Elemento connectionMode (WLANProfile)
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 3dafb9561bf8b5e3c5c66eb23bd5e286cbd38118
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6ef18eff8ba27a3169399f1f10e0707c4e0b3c010d54830ad8f8f997c5e1b50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684441"
 ---
 # <a name="connectionmode-wlanprofile-element"></a>Elemento connectionMode (WLANProfile)
 
-L'elemento connectionMode (WLANProfile) indica se la connessione a una LAN wireless deve essere automatica o avviata dall'utente.
+L'elemento connectionMode (WLANProfile) indica se la connessione a una rete LAN wireless deve essere automatica o avviata dall'utente.
 
-Se [**ConnectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) è impostato su ESS, questo valore può essere automatico o manuale. Se questo elemento è assente, il valore predefinito è auto.
+Se [**connectionType è**](wlan-profileschema-connectiontype-wlanprofile-element.md) impostato su ESS, questo valore può essere automatico o manuale. Il valore predefinito è auto se questo elemento è assente.
 
-Se [**ConnectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) è impostato su IBSS, questo valore deve essere manuale.
+Se [**connectionType è**](wlan-profileschema-connectiontype-wlanprofile-element.md) impostato su IBSS, questo valore deve essere manuale.
 
 ``` syntax
 <xs:element name="connectionMode">
@@ -44,7 +44,7 @@ Se [**ConnectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md
 </xs:element>
 ```
 
-L'elemento **ConnectionMode** è definito dall'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+**L'elemento connectionMode** è definito dall'elemento [**WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -54,8 +54,8 @@ Nella tabella seguente vengono descritti i valori di enumerazione.
 
 | Valore  | Descrizione                                                                                                |
 |--------|------------------------------------------------------------------------------------------------------------|
-| auto   | La connessione alla rete wireless deve essere avviata automaticamente ogni volta che la rete è compresa nell'intervallo. |
-| manual | La connessione alla rete wireless è avviate da solo sulla richiesta esplicita di un utente.               |
+| auto   | La connessione alla rete wireless deve essere avviata automaticamente ogni volta che la rete è in intervallo. |
+| manual | La connessione alla rete wireless viene stabilita solo su richiesta esplicita di un utente.               |
 
 
 
@@ -63,7 +63,7 @@ Nella tabella seguente vengono descritti i valori di enumerazione.
 
 ## <a name="examples"></a>Esempio
 
-Per visualizzare i profili di esempio che usano l'elemento **ConnectionMode** , vedere esempi di profili [wireless](wireless-profile-samples.md).
+Per visualizzare i profili di esempio che usano **l'elemento connectionMode,** vedere [Esempi di profili wireless](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Per visualizzare i profili di esempio che usano l'elemento **ConnectionMode** , 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                 |
 
 

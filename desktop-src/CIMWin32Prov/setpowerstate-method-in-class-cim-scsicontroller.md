@@ -23,7 +23,7 @@ ms.locfileid: "119700361"
 ---
 # <a name="setpowerstate-method-of-the-cim_scsicontroller-class"></a>Metodo SetPowerState della classe CIM \_ SCSIController
 
-Il **metodo SetPowerState** della classe CIM SCSIController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere \_ inserito in tale stato. In una sottoclasse, il set di possibili codici restituiti deve essere specificato usando un **qualificatore ValueMap** nel metodo . Le stringhe in cui vengono **convertiti i contenuti di ValueMap** devono essere specificate anche nella sottoclasse come qualificatore di matrice **Values.** Questo metodo viene ereditato da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Il **metodo SetPowerState** della classe CIM SCSIController imposta lo stato di alimentazione desiderato per un dispositivo logico e quando un dispositivo deve essere \_ inserito in tale stato. In una sottoclasse, il set di possibili codici restituiti deve essere specificato usando un **qualificatore ValueMap** nel metodo . Le stringhe in cui vengono **convertiti i contenuti di ValueMap** devono essere specificate anche nella sottoclasse come qualificatore di matrice **Values.** Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
 > Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).

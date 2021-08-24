@@ -1,132 +1,132 @@
 ---
 title: Flussi di pacchetti TCP
-description: Ordine in cui i livelli del motore di filtro della piattaforma filtro Windows (WFP) vengono attraversati durante una tipica sessione TCP.
+description: L'ordine in cui i livelli del motore di filtro Windows Filtering Platform (WFP) vengono attraversati durante una tipica sessione TCP.
 ms.assetid: 75319c91-f77b-4dec-b94f-36772f1f1d53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2203ccb4b2793983bd5b1052d53c2700d3033a4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 47d4836da7a1912a6e39358b54e2a3086dd80efe844d6a301d079014d4a5b209
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746631"
 ---
 # <a name="tcp-packet-flows"></a>Flussi di pacchetti TCP
 
-In questa sezione viene descritto l'ordine in cui i livelli del motore di filtro della piattaforma filtro Windows (WFP) vengono attraversati durante una tipica sessione TCP.
+Questa sezione descrive l'ordine in cui i livelli del motore di filtro Windows Filtering Platform (WFP) vengono attraversati durante una tipica sessione TCP.
 
 > [!Note]  
 > I flussi di pacchetti TCP per IPv6 seguono lo stesso modello di IPv4.
 
- 
+ 
 
 > [!Note]  
-> I flussi di pacchetti non TCP seguono lo stesso modello dei [flussi di pacchetti UDP](udp-packet-flows.md).
+> I flussi di pacchetti non TCP seguono lo stesso modello dei [flussi di pacchetti UDP.](udp-packet-flows.md)
 
- 
+ 
 
-## <a name="tcp-connection-establishment"></a>Creazione connessione TCP
+## <a name="tcp-connection-establishment"></a>Stabilire una connessione TCP
 
 <dl> Il server (ricevitore) esegue l'apertura passiva
 
--   Binding: FWPM \_ Layer \_ ale \_ binding \_ Redirect \_ V4 (solo windows 7/Windows Server 2008 R2)
--   Binding: \_ assegnazione di risorse FWPM livello \_ ale \_ \_ \_ V4
--   ascolto: FWPM \_ Layer \_ ale \_ auth \_ Listen \_ V4
+-   bind: FWPM \_ LAYER \_ ALE \_ BIND REDIRECT \_ \_ V4 (solo Windows 7/Windows Server 2008 R2)
+-   bind: FWPM \_ LAYER \_ ALE \_ RESOURCE ASSIGNMENT \_ \_ V4
+-   listen: FWPM \_ LAYER \_ ALE \_ AUTH \_ LISTEN \_ V4
 
   
 Il client (mittente) esegue l'apertura attiva
 
--   Binding: FWPM \_ Layer \_ ale \_ binding \_ Redirect \_ V4 (solo windows 7/Windows Server 2008 R2)
--   Binding: \_ assegnazione di risorse FWPM livello \_ ale \_ \_ \_ V4
--   Connetti: FWPM \_ Layer \_ ale \_ Connect \_ Redirect \_ V4 (solo windows 7/Windows Server 2008 R2)
--   connessione: FWPM \_ Layer \_ ale \_ auth \_ Connect \_ V4
--   SYN: FWPM \_ livello di \_ trasporto in uscita \_ \_ V4
--   SYN: FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V4
+-   bind: FWPM \_ LAYER \_ ALE \_ BIND REDIRECT \_ \_ V4 (solo Windows 7/Windows Server 2008 R2)
+-   bind: FWPM \_ LAYER \_ ALE \_ RESOURCE ASSIGNMENT \_ \_ V4
+-   connect: FWPM \_ LAYER \_ ALE \_ CONNECT REDIRECT \_ \_ V4 (solo Windows 7/Windows Server 2008 R2)
+-   connect: FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V4
+-   SYN: FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V4
+-   SYN: FWPM \_ LAYER \_ OUTBOUND \_ IPPACKET \_ V4
 
   
 Server
 
--   SYN: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   SYN: FWPM \_ livello di \_ trasporto in ingresso \_ \_ V4
--   SYN: FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ accetta \_ V4
--   SYN-ACK: \_ trasporto in \_ uscita livello FWPM \_ \_ V4
--   SYN-ACK: FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V4
+-   SYN: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   SYN: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   SYN: FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V4
+-   SYN-ACK: FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V4
+-   SYN-ACK: \_ \_ IPPACKET \_ V4 IN USCITA DEL LIVELLO FWPM \_
 
   
 Client
 
--   SYN-ACK: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   SYN-ACK: FWPM \_ livello di \_ trasporto in ingresso \_ \_ V4
--   FWPM \_ Layer \_ ale \_ ha \_ stabilito \_ V4
--   ACK: \_ trasporto in \_ uscita livello FWPM \_ \_ V4
--   ACK: FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V4
+-   SYN-ACK: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   SYN-ACK: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   FWPM \_ LAYER \_ ALE \_ FLOW \_ ESTABLISHED \_ V4
+-   ACK: FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V4
+-   ACK: FWPM \_ LAYER \_ OUTBOUND \_ IPPACKET \_ V4
 
   
 Server
 
--   ACK: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   ACK: FWPM \_ Layer \_ trasporto in \_ ingresso \_ V4
--   FWPM \_ Layer \_ ale \_ ha \_ stabilito \_ V4
--   Ascolto completato. Il server può eseguire un'accettazione.
+-   ACK: FWPM \_ LAYER \_ INBOUND \_ IPPACKET \_ V4
+-   ACK: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   FWPM \_ LAYER \_ ALE \_ FLOW \_ ESTABLISHED \_ V4
+-   L'ascolto è stato completato. Il server può eseguire un'accettazione.
 
   
 </dl>
 
-## <a name="tcp-syn-received-with-no-one-listening-on-the-port-or-protocol"></a>TCP SYN ricevuto senza un ascolto sulla porta o sul protocollo
+## <a name="tcp-syn-received-with-no-one-listening-on-the-port-or-protocol"></a>TCP SYN ricevuto senza nessuno in ascolto sulla porta o sul protocollo
 
 Server (ricevitore)
 
--   SYN: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   SYN: FWPM \_ Layer \_ trasporto in \_ ingresso \_ V4 \_ Elimina
--   RST: \_ trasporto in uscita del livello FWPM \_ \_ \_ V4
--   RST: FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V4
+-   SYN: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   SYN: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4 \_ DISCARD
+-   RST: FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V4
+-   RST: \_ \_ IPPACKET \_ V4 IN USCITA DEL LIVELLO FWPM \_
 
 > [!Note]  
-> Il protocollo SYN TCP senza endpoint è indicato al momento dell'eliminazione del trasporto con una condizione di errore specifica. Blocca questo pacchetto all'eliminazione del trasporto per evitare che lo stack invii l'evento corrispondente (RST). Per un esempio di filtro in modalità Stealth, vedere [Impedisci l'analisi delle porte](preventing-port-scanning.md).
+> TCP SYN senza endpoint è indicato in TRANSPORT discard con una condizione di errore specifica. Blocca questo pacchetto in transport discard per fare in modo che lo stack non invii l'evento corrispondente (RST). Per un esempio di filtro in modalità mascheramento, vedere [Prevenzione dell'analisi delle porte.](preventing-port-scanning.md)
 
- 
+ 
 
 ## <a name="data-transmitted-over-a-tcp-connection"></a>Dati trasmessi tramite una connessione TCP
 
 <dl> Client (mittente)
 
 -   trasmissione
--   dati: \_ flusso di livello FWPM \_ \_ V4
--   Segmenti TCP: \_ trasporto in uscita del livello FWPM \_ \_ \_ V4
--   IP datagrammi: FWPM \_ Layer in \_ uscita \_ IPPACKET \_ V4
+-   data: FWPM \_ LAYER \_ STREAM \_ V4
+-   Segmenti TCP: FWPM \_ LAYER \_ OUTBOUND TRANSPORT \_ \_ V4
+-   Datagrammi IP: FWPM \_ LAYER \_ OUTBOUND \_ IPPACKET \_ V4
 
   
 Server (ricevitore)
 
--   IP datagrammi: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   Segmenti TCP: \_ trasporto in \_ ingresso FWPM layer \_ \_ V4
--   dati: \_ flusso di livello FWPM \_ \_ V4
+-   Datagrammi IP: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   Segmenti TCP: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   data: FWPM \_ LAYER \_ STREAM \_ V4
 -   I dati sono disponibili per la lettura.
 
   
 </dl>
 
-## <a name="successful-reauthorization-of-a-tcp-packet"></a>Ricreazione di un pacchetto TCP riuscita
+## <a name="successful-reauthorization-of-a-tcp-packet"></a>Riautorizzazione riuscita di un pacchetto TCP
 
 Server (ricevitore)
 
--   IP datagrammi: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   Segmento TCP: \_ trasporto in \_ ingresso FWPM layer \_ \_ V4
--   Segmento TCP: FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ Accept \_ V4
--   dati: \_ flusso di livello FWPM \_ \_ V4 (in ingresso)
+-   Datagrammi IP: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   Segmento TCP: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   Segmento TCP: FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V4
+-   data: FWPM \_ LAYER \_ STREAM \_ V4(INBOUND)
 
-## <a name="failed-reauthorization-of-a-tcp-packet"></a>Non è stato possibile riautorizzare un pacchetto TCP
+## <a name="failed-reauthorization-of-a-tcp-packet"></a>Riautorizzazione non riuscita di un pacchetto TCP
 
 Server (ricevitore)
 
--   IP datagrammi: FWPM \_ Layer in \_ ingresso \_ IPPACKET \_ V4
--   Segmento TCP: \_ trasporto in \_ ingresso FWPM layer \_ \_ V4
--   Segmento TCP: FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ Accept \_ V4
--   Segmento TCP: FWPM \_ Layer \_ ale \_ auth \_ ricezione \_ Accept \_ V4 \_ scartate
+-   Datagrammi IP: LIVELLO FWPM \_ \_ IN INGRESSO \_ IPPACKET \_ V4
+-   Segmento TCP: FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V4
+-   Segmento TCP: FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V4
+-   Segmento TCP: FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV \_ ACCEPT \_ V4 \_ DISCARD
 
-## <a name="tcp-connection-termination"></a>Terminazione connessione TCP
+## <a name="tcp-connection-termination"></a>Terminazione della connessione TCP
 
-La chiusura della connessione TCP non è indicata a nessun livello di Pam.
+La terminazione della connessione TCP non è indicata a nessun livello WFP.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -135,12 +135,12 @@ La chiusura della connessione TCP non è indicata a nessun livello di Pam.
 [Riautorizzazione ALE](ale-re-authorization.md)
 </dt> <dt>
 
-[**Filtraggio degli identificatori del livello**](management-filtering-layer-identifiers-.md)
+[**Filtro degli identificatori dei livelli**](management-filtering-layer-identifiers-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: opzione/client
-description: L'opzione/client indica al compilatore MIDL di generare file di origine C sul lato client per un'interfaccia RPC.
+title: Opzione /client
+description: L'opzione /client indica al compilatore MIDL di generare file di origine C sul lato client per un'interfaccia RPC.
 ms.assetid: bce5af72-2201-4b42-9348-cb97f08b7fdf
 keywords:
-- /client switch MIDL
+- Opzione /client MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbf7e17e1893b918d926cd94a93eb8b1c372ee75
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8361a41aa0e7c87c42eb41508fee0973d6fd4dd821e2008aa2148c8460fc63ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764361"
 ---
-# <a name="client-switch"></a>opzione/client
+# <a name="client-switch"></a>Opzione /client
 
-L'opzione **/client** indica al compilatore MIDL di generare file di origine C sul lato client per un'interfaccia RPC.
+**L'opzione /client** indica al compilatore MIDL di generare file di origine C sul lato client per un'interfaccia RPC.
 
 ``` syntax
 midl /client { stub | none }
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 <dl> <dt>
 
@@ -38,7 +38,7 @@ midl /client { stub | none }
 
 <span id="stub"></span><span id="STUB"></span>
 
-<span id="stub"></span><span id="STUB"></span>Stub * * * *
+<span id="stub"></span><span id="STUB"></span>stub****
 
 
 </dt> <dd>
@@ -49,26 +49,26 @@ Genera i file sul lato client.
 
 <span id="none"></span><span id="NONE"></span>
 
-<span id="none"></span><span id="NONE"></span>nessuno * * * *
+<span id="none"></span><span id="NONE"></span>none****
 
 
 </dt> <dd>
 
-Non genera alcun file lato client.
+Non genera file sul lato client.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando l'opzione **/client** non è specificata, il compilatore MIDL genera il file stub del client. Questa opzione non influisce sulle interfacce OLE.
+Quando **l'opzione /client** non è specificata, il compilatore MIDL genera il file stub client. Questa opzione non influisce sulle interfacce OLE.
 
-L'opzione **/client** ha la precedenza sull'opzione [**/cstub**](-cstub.md) .
+**L'opzione /client** ha la precedenza [**sull'opzione /cstub.**](-cstub.md)
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/client None nomefile. idl**
+**midl /client none filename.idl**
 
-**nome file stub MIDL/client. idl**
+**midl /client stub filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -77,15 +77,15 @@ L'opzione **/client** ha la precedenza sull'opzione [**/cstub**](-cstub.md) .
 [**/cstub**](-cstub.md)
 </dt> <dt>
 
-[**/Server**](-server.md)
+[**/server**](-server.md)
 </dt> <dt>
 
 [Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

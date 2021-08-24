@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRendererActionInformation IsStopAvailable
-description: Recupera un valore che indica se ricevitore sta attualmente accettando il Metodo StopAsync.
+description: Recupera un valore che indica se la dmr accetta attualmente il metodo StopAsync.
 ms.assetid: 6EE8F56D-2A5A-49B0-A9B2-0A7EE57D03FD
 keywords:
-- API di streaming multimediale del metodo IsStopAvailable
-- API di streaming multimediale del metodo IsStopAvailable, interfaccia IMediaRendererActionInformation
-- API di streaming multimediale dell'interfaccia IMediaRendererActionInformation, metodo IsStopAvailable
+- Metodo IsStopAvailable API Streaming multimediale
+- Metodo IsStopAvailable API Streaming multimediale, interfaccia IMediaRendererActionInformation
+- Metodo IsStopAvailable dell'interfaccia IMediaRendererActionInformation
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e0a031bafc9a755dfec2498f4e2a52cdd9ef5b1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c177c46c62309525d9362f985075cec293105a80678b3b857eafa0524179d17e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712891"
 ---
-# <a name="imediarendereractioninformationisstopavailable-method"></a>Metodo IMediaRendererActionInformation:: IsStopAvailable
+# <a name="imediarendereractioninformationisstopavailable-method"></a>Metodo IMediaRendererActionInformation::IsStopAvailable
 
-Recupera un valore che indica se ricevitore sta attualmente accettando il metodo [**StopAsync**](imediarenderer-stopasync.md) .
+Recupera un valore che indica se la dmr accetta attualmente il [**metodo StopAsync.**](imediarenderer-stopasync.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT IsStopAvailable(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Valore booleano che è **true** se ricevitore sta attualmente accettando il metodo [**StopAsync**](imediarenderer-stopasync.md) e **false** in caso contrario.
+Valore booleano che è **True** se la dmr accetta attualmente il metodo [**StopAsync**](imediarenderer-stopasync.md) e **False** in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

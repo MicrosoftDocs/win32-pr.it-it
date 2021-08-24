@@ -1,5 +1,5 @@
 ---
-description: L'arresto&\# 8194; Il metodo della classe WMI Scarica i programmi e le dll fino a quando non è sicuro disattivare il computer.
+description: Arresto del&\# 8194; Il metodo della classe WMI scarica programmi e DLL finché non è sicuro spegnere il computer.
 ms.assetid: 3f069699-810c-49bc-b77e-3fe43acc3dd5
 ms.tgt_platform: multiple
 title: Metodo Shutdown della classe Win32_OperatingSystem
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: af80442087a0498849388f0da10946b08e282712
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 068551ee013634bde9a42584764c36f255bf322bedb97e6ebb3a5075c113e742
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800841"
 ---
-# <a name="shutdown-method-of-the-win32_operatingsystem-class"></a>Metodo Shutdown della classe Win32 \_ OperatingSystem
+# <a name="shutdown-method-of-the-win32_operatingsystem-class"></a>Metodo Shutdown della classe OperatingSystem Win32 \_
 
-Il metodo **Shutdown** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) Scarica i programmi e le dll fino a quando non è sicuro disattivare il computer.
+Il **metodo della** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Shutdown scarica programmi e DLL fino a quando non è sicuro spegnere il computer.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per i codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indica un errore. Per i codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Altro** (1 4294967295)
@@ -54,9 +54,9 @@ Restituisce zero (0) per indicare l'esito positivo. Qualsiasi altro numero indic
 
 ## <a name="remarks"></a>Commenti
 
-Occasionalmente, i computer devono essere rimossi dalla rete, ad esempio per la manutenzione pianificata, perché il computer non funziona correttamente o per completare un processo di configurazione. Se, ad esempio, un server DHCP distribuisce indirizzi IP errati, potrebbe essere necessario arrestare il computer fino a quando non è possibile inviare un tecnico del servizio per risolvere il problema. Se si ritiene che si sia verificata una violazione della sicurezza, potrebbe essere necessario arrestare determinati server per assicurarsi che non sia possibile accedervi fino a quando il problema di sicurezza non è stato risolto. Per alcune operazioni di configurazione, ad esempio la modifica del nome di un computer, è necessario riavviare il computer prima che la modifica abbia effetto.
+I computer talvolta devono essere rimossi dalla rete, ad esempio per la manutenzione pianificata, perché il computer non funziona correttamente o per completare un processo di configurazione. Ad esempio, se un server DHCP sta inviare indirizzi IP erro, potrebbe essere necessario arrestare il computer fino a quando non sarà possibile inviare un tecnico del servizio per risolvere il problema. Se si sospetta che si sia verificata una violazione della sicurezza, potrebbe essere necessario arrestare alcuni server per assicurarsi che non sia possibile accedervi fino a quando il problema di sicurezza non è stato risolto. Alcune operazioni di configurazione, ad esempio la modifica del nome di un computer, richiedono il riavvio del computer prima che la modifica venga attivata.
 
-Questo metodo arresta immediatamente il computer, se possibile. Il sistema arresta tutti i processi in esecuzione, Scarica tutti i buffer di file sul disco e quindi spegne il sistema. Il processo chiamante deve avere il privilegio **se \_ Shutdown \_ Name** , come descritto nell'esempio seguente.
+Questo metodo arresta immediatamente il computer, se possibile. Il sistema arresta tutti i processi in esecuzione, scarica tutti i buffer di file sul disco e quindi arresta il sistema. Il processo chiamante deve avere **il edizione Standard \_ SHUTDOWN \_ NAME,** come descritto nell'esempio seguente.
 
 
 ```VB
@@ -65,14 +65,14 @@ Set OpSysSet = GetObject("winmgmts:{(Shutdown)}//./root/cimv2").ExecQuery("selec
 
 
 
-Per ulteriori informazioni sull'impostazione di un privilegio, vedere [esecuzione di operazioni con privilegi](/windows/desktop/WmiSdk/executing-privileged-operations) ed esecuzione di [operazioni con privilegi tramite VBScript](/windows/desktop/WmiSdk/executing-privileged-operations-using-vbscript). Per altre opzioni di arresto, ad esempio una disconnessione o un arresto forzato, vedere il metodo [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) .
+Per altre informazioni sull'impostazione di un privilegio, vedere [Esecuzione di operazioni con](/windows/desktop/WmiSdk/executing-privileged-operations) privilegi ed Esecuzione di operazioni con privilegi tramite [VBScript.](/windows/desktop/WmiSdk/executing-privileged-operations-using-vbscript) Per altre opzioni di arresto, ad esempio una disconnessione o un arresto forzato, vedi il [**metodo Win32Shutdown.**](win32shutdown-method-in-class-win32-operatingsystem.md)
 
 ## <a name="examples"></a>Esempio
 
 Il codice VBScript seguente arresta il computer locale.
 
 > [!Note]  
-> È necessario disporre del privilegio shutdown per richiamare correttamente il metodo Shutdown.
+> Per richiamare correttamente il metodo Shutdown, è necessario disporre del privilegio Shutdown.
 
  
 
@@ -90,7 +90,7 @@ next
 Il codice Perl seguente arresta il computer locale.
 
 > [!Note]  
-> È necessario disporre del privilegio shutdown per richiamare correttamente il metodo Shutdown.
+> Per richiamare correttamente il metodo Shutdown, è necessario disporre del privilegio Shutdown.
 
  
 
@@ -124,10 +124,10 @@ else
 
 
 
-Il codice VBScript seguente arresta il computer remoto specificato. Immettere il *\_ \_ nome del sistema remoto* con il nome del sistema remoto da arrestare.
+Il codice VBScript seguente arresta il computer remoto specificato. Compilare *REMOTE SYSTEM NAME \_ \_ con* il nome del sistema remoto da arrestare.
 
 > [!Note]  
-> Per richiamare correttamente il metodo **Shutdown** , è necessario avere il privilegio RemoteShutdown.
+> Per richiamare correttamente il metodo **Shutdown,** è necessario disporre del privilegio RemoteShutdown.
 
  
 
@@ -151,7 +151,7 @@ next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -163,10 +163,10 @@ next
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_OperatingSystem Win32**](win32-operatingsystem.md)
+[**Sistema operativo \_ Win32**](win32-operatingsystem.md)
 </dt> <dt>
 
-[Attività WMI: gestione desktop](/windows/desktop/WmiSdk/wmi-tasks--desktop-management)
+[Attività WMI: Gestione desktop](/windows/desktop/WmiSdk/wmi-tasks--desktop-management)
 </dt> <dt>
 
 [Esecuzione di operazioni con privilegi tramite VBScript](/windows/desktop/WmiSdk/executing-privileged-operations-using-vbscript)

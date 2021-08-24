@@ -1,11 +1,11 @@
 ---
-title: Attributo Context-Menu
-description: Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
+title: Context-Menu attributo
+description: Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto .
 ms.assetid: 7a62c900-4bd5-443a-8714-0fc6a2920e01
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Context-Menu attribute
-- Schema AD dell'attributo contextMenu
+- Context-Menu schema AD dell'attributo
+- Attributo contextMenu Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01682881f142e6a764ab291822545728e8573293
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b3bc5c21a5a47932f78260589b2a37db51e4ec942608cc4d28417c860cdc8a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805321"
 ---
-# <a name="context-menu-attribute"></a>Attributo Context-Menu
+# <a name="context-menu-attribute"></a>Context-Menu attributo
 
-Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
+Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto .
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Context-Menu                                |
-| LDAP-Display-Name | contextMenu                                 |
+| Ldap-Display-Name | Contextmenu                                 |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore schema                        |
+| Aggiorna privilegio  | Amministratore dello schema                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.499                      |
-| System-ID-GUID    | 4d8601ee-ac85-11d0-afe3-00c04fd930c9        |
+| System-Id-Guid    | 4d8601ee-ac85-11d0-afe3-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero di ordine e GUID del menu di scelta rapida da utilizzare per un oggetto.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**Display-specifier**](c-displayspecifier.md)<br/> |
+| Classi usate in        | [**Identificatore di visualizzazione**](c-displayspecifier.md)<br/> |
 
 
 

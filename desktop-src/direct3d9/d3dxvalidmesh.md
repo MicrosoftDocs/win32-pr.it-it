@@ -1,7 +1,7 @@
 ---
 description: Convalida una mesh.
 ms.assetid: e5bec2f3-e914-4677-8114-77c71b8a586e
-title: Funzione D3DXValidMesh (D3DX9Mesh. h)
+title: Funzione D3DXValidMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 469b9b32072107885417266266f804a955301668
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 299092700b015840376f3e4b297d7825366b6083e1458155f5963e1b5b1f4d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749671"
 ---
-# <a name="d3dxvalidmesh-function"></a>D3DXValidMesh (funzione)
+# <a name="d3dxvalidmesh-function"></a>Funzione D3DXValidMesh
 
 Convalida una mesh.
 
@@ -42,30 +42,30 @@ HRESULT D3DXValidMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ in\]
+*pMeshIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh da testare.
+Puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh da testare.
 
 </dd> <dt>
 
-*pAdjacency* \[ in\]
+*pAdjacency* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntatore a una matrice di tre DWORD per ogni volto che specifica i tre elementi adiacenti per ogni viso nella mesh da testare.
+Puntatore a una matrice di tre DWORD per viso che specificano i tre elementi adiacenti per ogni viso nella mesh da testare.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ out\]
+*ppErrorsAndWarnings* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente una stringa di errori e avvisi che illustra i problemi rilevati nella mesh.
+Restituisce un buffer contenente una stringa di errori e avvisi che illustrano i problemi rilevati nella mesh.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Restituisce un buffer contenente una stringa di errori e avvisi che illustra i p
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo convalida la mesh controllando la presenza di indici non validi. Le informazioni sull'errore sono disponibili nell'output del debugger.
+Questo metodo convalida la mesh controllando la presenza di indici non validi. Le informazioni sugli errori sono disponibili nell'output del debugger.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Questo metodo convalida la mesh controllando la presenza di indici non validi. L
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

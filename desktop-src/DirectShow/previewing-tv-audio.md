@@ -4,34 +4,34 @@ ms.assetid: 25da8bcc-51c1-49f0-b4b5-885ff4f254d8
 title: Anteprima dell'audio TV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1cc63583c946d47ed744eacd51f0939ec852d53
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8e6b67e33ffd6f051363e8851afbc31b9f38bed17790687db615b679f6a80a63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748316"
 ---
 # <a name="previewing-tv-audio"></a>Anteprima dell'audio TV
 
-Per visualizzare l'anteprima audio della TV, instradare il pin del decodificatore audio sul filtro della barra traversa al pin del sintonizzatore audio. Per disattivare l'audio, instradare il pin del decodificatore audio a-1, come illustrato nella figura seguente. (I filtri traversa sono descritti in [utilizzo delle barre](working-with-crossbars.md).)
+Per visualizzare l'anteprima dell'audio TV, instradare il pin del decodificatore audio sul filtro barra incrociata al pin del siner audio. Per disattivare l'audio, instradare il pin del decodificatore audio a -1, come illustrato nel diagramma seguente. I filtri barra incrociata sono descritti in [Uso delle barre incrociate.](working-with-crossbars.md)
 
 ![routing del pin del decodificatore audio](images/vidcap07.png)
 
 L'approccio di base è il seguente:
 
-1.  Usare il metodo [**ICaptureGraphBuilder2:: FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) per individuare il filtro traversa.
-2.  Usare il metodo [**IAMCrossbar:: Get \_ CrossbarPinInfo**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-get_crossbarpininfo) per enumerare i pin di input e di output del filtro traversa. Cercare un pin di output del decodificatore audio e un pin di input del sintonizzatore audio.
-3.  Se si trovano i pin corretti, chiamare [**IAMCrossbar:: Route**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-route) per indirizzare i pin. In caso contrario, controllare upstream per un'altra traversa e ripetere il processo.
-4.  Per disattivare l'audio, indirizzare il pin del decodificatore audio a-1.
+1.  Usare il [**metodo ICaptureGraphBuilder2::FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) per individuare il filtro della barra incrociata.
+2.  Usare il [**metodo IAMCrossbar::get \_ CrossbarPinInfo**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-get_crossbarpininfo) per enumerare i pin di input e output del filtro barra incrociata. Cercare un pin di output del decodificatore audio e un pin di input del siner audio.
+3.  Se si trovano i pin corretti, chiamare [**IAMCrossbar::Route**](/windows/desktop/api/Strmif/nf-strmif-iamcrossbar-route) per instradare i pin. In caso contrario, cercare a monte un'altra barra incrociata e ripetere il processo.
+4.  Per disattivare l'audio, instradare il pin del decodificatore audio a -1.
 
-La maggior parte dei sintonizzatori TV usa un solo filtro traversa, ma alcuni usano due filtri traversa. Pertanto, potrebbe essere necessario cercare una seconda traversa se il primo ha esito negativo.
+La maggior parte dei sintonizzatori TV usa un singolo filtro barra incrociata, ma alcuni usano due filtri barra incrociata. Pertanto, potrebbe essere necessario cercare una seconda barra incrociata se la prima non riesce.
 
 > [!Note]  
-> Contrariamente a quanto ci si potrebbe aspettare, per visualizzare in anteprima l'audio non è necessario alcun filtro di acquisizione audio o renderer audio, perché esiste una connessione fisica tra la scheda Tuner e la scheda audio.
+> Diversamente da quanto ci si potrebbe aspettare, non è necessario alcun filtro di acquisizione audio o renderer audio per visualizzare in anteprima l'audio, perché esiste una connessione fisica tra la scheda siner e la scheda audio.
 
  
 
-Il codice seguente illustra questi passaggi in modo più dettagliato. Per prima cosa, ecco una funzione helper che esegue la ricerca di un filtro barra di traversa per un tipo di PIN specificato:
+Il codice seguente illustra questi passaggi in modo più dettagliato. Prima di tutto, ecco una funzione helper che cerca un filtro barra incrociata per un tipo di pin specificato:
 
 
 ```C++
@@ -69,7 +69,7 @@ HRESULT FindCrossbarPin(
 
 
 
-La funzione successiva tenta di attivare o disattivare l'audio, a seconda del valore del parametro *bActivate* . Esegue la ricerca dei pin richiesti nel filtro della barra di traversa specificato. Se non riesce a trovarle, restituisce un codice di errore.
+La funzione successiva tenta di attivare o disattivare l'audio, a seconda del valore del *parametro bActivate.* Cerca i segnaposti necessari nel filtro della barra incrociata specificato. Se non riesce a trovarli, restituisce un codice di errore.
 
 
 ```C++
@@ -103,7 +103,7 @@ HRESULT ConnectAudio(IAMCrossbar *pXBar, BOOL bActivate)
 
 
 
-La funzione Next Cerca nel grafico del filtro un filtro traversa. Se ne trova uno, tenta di attivare o disattivare l'audio (usando la funzione precedente). Se l'operazione ha esito negativo, il metodo esegue la ricerca a Monte per una seconda traversa e riprova. Per un approccio più generalizzato alla gestione di più filtri traversa in un grafico, vedere la classe CCrossbar nell'applicazione di esempio AmCap.
+La funzione successiva cerca un filtro barra incrociata nel grafico dei filtri. Se ne trova uno, tenta di attivare o disattivare l'audio (usando la funzione precedente). Se l'operazione non riesce, il metodo cerca a monte una seconda barra incrociata e riprova. Per un approccio più generalizzato alla gestione di più filtri barra incrociata in un grafico, vedere la classe CCrossbar nell'applicazione di esempio AmCap.
 
 
 ```C++
@@ -157,16 +157,16 @@ hr = ActivateAudio(pBuild, pCap, FALSE);
 
 
 
-Si noti che queste funzioni di esempio ripetono molte delle stesse chiamate di funzione. Ad esempio, enumerano i pin della traversa ogni volta. In un'applicazione reale, è possibile memorizzare nella cache alcune di queste informazioni.
+Si noti che queste funzioni di esempio ripetono molte delle stesse chiamate di funzione. Ad esempio, enumerano i segnaposto della barra incrociata ogni volta. In un'applicazione reale è possibile memorizzare nella cache alcune di queste informazioni.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Audio TV analogico](analog-television-audio.md)
+[Audio televisivo analogico](analog-television-audio.md)
 </dt> <dt>
 
-[Uso di maniglie](working-with-crossbars.md)
+[Uso delle barre incrociate](working-with-crossbars.md)
 </dt> </dl>
 
  

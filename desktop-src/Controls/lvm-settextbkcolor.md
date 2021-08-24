@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETTEXTBKCOLOR (COMmctrl. h)
-description: Imposta il colore di sfondo del testo in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetTextBkColor di ListView.
+title: LVM_SETTEXTBKCOLOR messaggio (Commctrl.h)
+description: Imposta il colore di sfondo del testo in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView SetTextBkColor.
 ms.assetid: e51d6914-0e98-47f8-b2d8-4c2404b98242
 keywords:
-- Controlli di Windows Message LVM_SETTEXTBKCOLOR
+- LVM_SETTEXTBKCOLOR dei messaggi Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2247dfd04d90c2b9eacadcb1c38608f519540fd6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d9acdc193609f39fb81aa88263724a507695f15dcb8ba0c789df5c2a4f4d128
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656231"
 ---
-# <a name="lvm_settextbkcolor-message"></a>\_Messaggio SETTEXTBKCOLOR LVM
+# <a name="lvm_settextbkcolor-message"></a>Messaggio LVM \_ SETTEXTBKCOLOR
 
-Imposta il colore di sfondo del testo in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetTextBkColor di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextbkcolor) .
+Imposta il colore di sfondo del testo in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView SetTextBkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextbkcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta il colore di sfondo del testo in un controllo visualizzazione elenco. È
 *lParam* 
 </dt> <dd>
 
-Nuovo colore di sfondo del testo. Può essere CLR \_ None per nessun colore di sfondo.
+Nuovo colore di sfondo del testo. Può essere CLR \_ NONE per nessun colore di sfondo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

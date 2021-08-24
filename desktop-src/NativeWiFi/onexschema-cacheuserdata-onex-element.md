@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 8650bb2e5899e96f921d57460c8ba49ffab0ea66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7f4663153fa9aff176180387ebaf0321ab3d48ec2c382e9e84c0f524d6e0ee1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800871"
 ---
 # <a name="cacheuserdata-onex-element"></a>Elemento cacheUserData (OneX)
 
-L'elemento cacheUserData (OneX) specifica se le credenziali utente vengono memorizzate nella cache per le connessioni successive. Quando cacheUserData è TRUE, le credenziali vengono memorizzate nella cache. Quando cacheUserData è FALSE, le credenziali non vengono memorizzate nella cache e all'utente potrebbero essere richieste le credenziali per i successivi tentativi di connessione.
+L'elemento cacheUserData (OneX) specifica se le credenziali utente vengono memorizzate nella cache per le connessioni successive. Quando cacheUserData è TRUE, le credenziali vengono memorizzate nella cache. Quando cacheUserData è FALSE, le credenziali non vengono memorizzate nella cache e all'utente potrebbero essere richieste le credenziali nei tentativi di connessione successivi.
 
-Questo elemento è facoltativo. Quando cacheUserData non viene specificato in un profilo, le credenziali utente vengono memorizzate nella cache.
+Questo elemento è facoltativo. Quando cacheUserData non è specificato in un profilo, le credenziali utente vengono memorizzate nella cache.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento verrà ignorato se è presente in un profilo.
 
@@ -33,7 +33,7 @@ Questo elemento è facoltativo. Quando cacheUserData non viene specificato in un
  />
 ```
 
-L'elemento **cacheUserData** è definito dall'elemento [**Onex**](onexschema-onex-element.md) .
+**L'elemento cacheUserData** è definito dall'elemento [**OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,8 +41,8 @@ L'elemento **cacheUserData** è definito dall'elemento [**Onex**](onexschema-one
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -53,13 +53,13 @@ L'elemento **cacheUserData** è definito dall'elemento [**Onex**](onexschema-one
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
-[**OneX**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

@@ -1,42 +1,42 @@
 ---
-title: Per configurare il VBR non vincolato
-description: Per configurare il VBR non vincolato
+title: Per configurare vbr senza vincoli
+description: Per configurare vbr senza vincoli
 ms.assetid: 69ef951f-d08b-401b-a285-2ffdf43ea35d
 keywords:
 - flussi, configurazione di flussi VBR
-- flussi, velocità in bit variabile (VBR)
+- flussi,velocità in bit variabile (VBR)
 - velocità in bit variabile (VBR), flussi
 - VBR (velocità in bit variabile), flussi
-- flussi, configurazione di VBR non vincolato
-- velocità in bit variabile (VBR), configurazione non vincolata
-- VBR (velocità in bit variabile), configurazione non vincolata
-- profili, configurazione di VBR non vincolato
+- flussi, configurazione di VBR senza vincoli
+- velocità in bit variabile (VBR), configurazione senza vincoli
+- VBR (velocità in bit variabile), configurazione senza vincoli
+- profili, configurazione di vbr senza vincoli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b24c022c79bb38414ab201db11abd0cf260dfafe
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 5ff73a0aac8d13f015175080aac6eb580fc9686c67d892b14e4714746c8cea34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104117450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807761"
 ---
-# <a name="to-configure-unconstrained-vbr"></a>Per configurare il VBR non vincolato
+# <a name="to-configure-unconstrained-vbr"></a>Per configurare vbr senza vincoli
 
-È possibile utilizzare la codifica della velocità in bit variabile (VBR) non vincolata in un flusso per specificare una velocità in bit media che verrà mantenuta nel contenuto codificato. Il VBR non vincolato è diverso da quello normale in quanto la varianza nella velocità in bit nel flusso può essere maggiore.
+È possibile usare la codifica VBR (Variable Bit Rate) senza vincoli in un flusso per specificare una velocità in bit media che verrà mantenuta nel contenuto codificato. VbR non vincolato differisce dal normale CBR in modo che la varianza in bit rate in tutto il flusso può essere maggiore.
 
-La velocità in bit del flusso, impostata con [**IWMStreamConfig:: bitrate**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbitrate), viene utilizzata come velocità in bit media desiderata. Quando la codifica del flusso è completa, è possibile usare [**IWMPropertyVault:: GetPropertyByName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-getpropertybyname) per recuperare due proprietà aggiuntive: **g \_ wszVBRPeak** e **g \_ wszBufferAverage**. Queste proprietà descrivono rispettivamente la velocità in bit massima del contenuto codificato e la finestra media del buffer del contenuto.
+La velocità in bit del flusso, impostata con [**IWMStreamConfig::SetBitrate,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbitrate)viene usata come velocità in bit media desiderata. Al termine della codifica del flusso, è possibile usare [**IWMPropertyVault::GetPropertyByName**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-getpropertybyname) per recuperare due proprietà aggiuntive: **g \_ wszVBRPeak** e **g \_ wszBufferAverage**. Queste proprietà descrivono rispettivamente la velocità in bit di picco del contenuto codificato e la finestra media del buffer del contenuto.
 
-È necessario usare il VBR non vincolato insieme alla codifica a due passaggi. La codifica a due passaggi non è impostata nel profilo. È necessario configurare il writer per eseguire un passaggio di pre-elaborazione prima di scrivere il flusso. Per ulteriori informazioni sull'utilizzo della codifica a due passaggi, vedere [utilizzo della codifica Two-Pass](using-two-pass-encoding.md).
+VbR senza vincoli deve essere usato insieme alla codifica a due passi. La codifica a due passi non è impostata nel profilo. È necessario configurare il writer per eseguire un passaggio di pre-elaborazione prima di scrivere il flusso. Per altre informazioni sull'uso della codifica a due passi, vedere [Using Two-Pass Encoding](using-two-pass-encoding.md).
 
-Per configurare un flusso in un profilo da codificare con VBR non vincolato, seguire questa procedura:
+Per configurare un flusso in un profilo da codificare con VBR senza vincoli, seguire questa procedura:
 
-1.  Creare un oggetto di gestione del profilo chiamando la funzione [**WMCreateProfileManager**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager) .
-2.  Aprire un profilo esistente a cui si desidera aggiungere il supporto per VBR. Per ulteriori informazioni sull'apertura di profili, vedere [utilizzo dei profili](working-with-profiles.md).
-3.  Ottenere un oggetto di configurazione del flusso per il flusso che si vuole usare chiamando [**IWMProfile:: GetStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-getstream) o [**IWMProfile:: GetStreamByNumber**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofile-getstreambynumber).
-4.  Ottenere un puntatore all'interfaccia [**IWMPropertyVault**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault) dell'oggetto di configurazione del flusso chiamando **IWMStreamConfig:: QueryInterface**.
-5.  Abilitare la codifica VBR per il flusso chiamando [**IWMPropertyVault:: SetProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty) per la proprietà **g \_ wszVBREnabled** .
-6.  Impostare **g \_ wszVBRBitrateMax** e **g \_ wszVBRBufferWindowMax** su zero con **IWMPropertyVault:: SetProperty**.
-7.  Salvare le modifiche apportate al flusso chiamando [**IWMProfile:: ReconfigStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-reconfigstream).
+1.  Creare un oggetto di gestione profili chiamando la [**funzione WMCreateProfileManager.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager)
+2.  Aprire un profilo esistente a cui si vuole aggiungere il supporto vbr. Per altre informazioni sull'apertura dei profili, vedere [Uso dei profili](working-with-profiles.md).
+3.  Ottenere un oggetto di configurazione del flusso per il flusso da usare chiamando [**IWMProfile::GetStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-getstream) o [**IWMProfile::GetStreamByNumber**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofile-getstreambynumber).
+4.  Ottenere un puntatore [**all'interfaccia IWMPropertyVault**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault) dell'oggetto di configurazione del flusso chiamando **IWMStreamConfig::QueryInterface**.
+5.  Abilitare la codifica VBR per il flusso chiamando [**IWMPropertyVault::SetProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty) per la **proprietà g \_ wszVBREnabled.**
+6.  Impostare **g \_ wszVBRBitrateMax** e **g \_ wszVBRBufferWindowMax** su zero con **IWMPropertyVault::SetProperty**.
+7.  Salvare le modifiche apportate al flusso chiamando [**IWMProfile::ReconfigStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-reconfigstream).
 8.  Salvare il profilo o passarlo all'oggetto writer.
 9.  Configurare il writer per eseguire un passaggio di pre-elaborazione.
 
@@ -44,12 +44,12 @@ Per configurare un flusso in un profilo da codificare con VBR non vincolato, seg
 
 <dl> <dt>
 
-[**Configurazione di flussi VBR**](configuring-vbr-streams.md)
+[**Configurazione di VBR Flussi**](configuring-vbr-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

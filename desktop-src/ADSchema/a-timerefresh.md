@@ -1,10 +1,10 @@
 ---
-title: Attributo Time-Refresh
-description: Questo attributo ha l'intervallo durante il quale un record di risorse contenuto in una Active Directory zona integrata deve essere aggiornato per il server DNS. L'intervallo predefinito è 7 giorni.
+title: Time-Refresh attributo
+description: Questo attributo ha l'intervallo durante il quale un record di risorse contenuto in una zona integrata di Active Directory deve essere aggiornato per il server DNS. L'intervallo predefinito è 7 giorni.
 ms.assetid: 9e473c29-7fcf-4d6d-8a7c-2791c7822c7d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Time-Refresh attribute
+- Time-Refresh schema AD dell'attributo
 - Schema AD dell'attributo timeRefresh
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87bc360686b1692d2dbda1ee23ad6351e69d3afe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 27705c55e3d16003bc40bfb72c3bf9d0b06260e239aa0c83dbd4e05a484dbc1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704071"
 ---
-# <a name="time-refresh-attribute"></a>Attributo Time-Refresh
+# <a name="time-refresh-attribute"></a>Time-Refresh attributo
 
-Questo attributo ha l'intervallo durante il quale un record di risorse contenuto in una Active Directory zona integrata deve essere aggiornato per il server DNS. L'intervallo predefinito è 7 giorni.
+Questo attributo ha l'intervallo durante il quale un record di risorse contenuto in una zona integrata di Active Directory deve essere aggiornato per il server DNS. L'intervallo predefinito è 7 giorni.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Time-Refresh                         |
-| LDAP-Display-Name | timeRefresh                          |
+| Ldap-Display-Name | timeRefresh                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.503               |
-| System-ID-GUID    | ddac0cf1-af8f-11d0-afeb-00c04fd930c9 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | ddac0cf1-af8f-11d0-afeb-00c04fd930c9 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo ha l'intervallo durante il quale un record di risorse contenuto
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

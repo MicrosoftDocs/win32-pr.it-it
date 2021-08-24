@@ -1,9 +1,9 @@
 ---
 title: MM_MIM_DATA messaggio (Mmsystem.h)
-description: Il messaggio MM \_ MIM \_ DATA viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
+description: Il messaggio MM MIM DATA viene inviato a una finestra quando un dispositivo di input MIDI riceve un messaggio \_ \_ MIDI completo.
 ms.assetid: 9c580e48-78f3-4914-bdea-393823fb8482
 keywords:
-- MM_MIM_DATA messaggio Windows Multimedia
+- MM_MIM_DATA di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2a79a5a4ab6b0422705fe737ba3da4a6fd4f923
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 4309149c8b69fd4396de3a4e67ab18c49008dd7051ed52d4fe992867d1262fe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807381"
 ---
-# <a name="mm_mim_data-message"></a>Messaggio MM \_ MIM \_ DATA
+# <a name="mm_mim_data-message"></a>MESSAGGIO MM \_ MIM \_ DATA
 
-Il **messaggio MM \_ MIM \_ DATA** viene inviato a una finestra quando un messaggio MIDI completo viene ricevuto da un dispositivo di input MIDI.
+Il **messaggio MM MIM \_ \_ DATA** viene inviato a una finestra quando un dispositivo di input MIDI riceve un messaggio MIDI completo.
 
 
 ```C++
@@ -55,9 +55,9 @@ Messaggio MIDI ricevuto. Il messaggio viene inserito in un valore doubleword com
 | Requisito | Valore | Descrizione |
 |-----------|-----------------|-----------------------------------------------------|
 | Parola alta | Byte di ordine elevato | Non usato.                                           |
-|           | Byte in ordine ridotto  | Contiene un secondo byte di dati MIDI (quando necessario).  |
-| Parola bassa  | Byte di ordine elevato | Contiene il primo byte di dati MIDI (se necessario). |
-|           | Byte in ordine ridotto  | Contiene lo stato MIDI.                           |
+|           | Byte di ordine ridotto  | Contiene un secondo byte di dati MIDI (quando necessario).  |
+| Parola bassa  | Byte di ordine elevato | Contiene il primo byte dei dati MIDI (quando necessario). |
+|           | Byte di ordine ridotto  | Contiene lo stato MIDI.                           |
 
 
 
@@ -89,11 +89,11 @@ Questo messaggio non viene inviato quando viene ricevuto un messaggio esclusivo 
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[Instrument Digital Interface (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

@@ -1,24 +1,24 @@
 ---
 title: Funzioni NDF
-description: Le funzioni seguenti consentono agli sviluppatori di software di usare la funzionalità fornita dal framework di diagnostica di rete (NDF).
+description: Le funzioni seguenti consentono agli sviluppatori di software di usare le funzionalità fornite da Network Diagnostic Framework (NDF).
 ms.assetid: c2774e05-82f4-4d40-a80c-ad773bb03ca7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d3a039768b77d69072111f814cb871115bcca24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 23a46ef79627583efd4d5fb0e0b63dd8e7283c1889e942197679037be38754e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802351"
 ---
 # <a name="ndf-functions"></a>Funzioni NDF
 
-Le funzioni seguenti consentono agli sviluppatori di software di usare la funzionalità fornita dal framework di diagnostica di rete (NDF). Quando si verificano problemi di rete, NDF è in grado di diagnosticare la causa radice e gestire correttamente la risoluzione necessaria, talvolta anche eseguendo le riparazioni necessarie.
+Le funzioni seguenti consentono agli sviluppatori di software di usare le funzionalità fornite da Network Diagnostic Framework (NDF). Quando si verificano problemi di rete, la funzione definita dall'utente può diagnosticare la causa radice e gestire normalmente la risoluzione necessaria, talvolta anche eseguendo le operazioni di ripristino necessarie.
 
 > [!Note]  
-> Queste funzioni sono destinate agli sviluppatori che implementano la funzionalità NDF di base nelle proprie applicazioni.
+> Queste funzioni sono per gli sviluppatori che implementano funzionalità NDF di base nelle proprie applicazioni.
 
- 
+ 
 
 -   [**CopyHelperAttribute**](copyhelperattribute.md)
 -   [**CopyRepairInfo**](copyrepairinfo.md)
@@ -26,7 +26,7 @@ Le funzioni seguenti consentono agli sviluppatori di software di usare la funzio
 -   [**FreeRepairInfoExs**](freerepairinfoexs.md)
 -   [**FreeRepairInfos**](freerepairinfos.md)
 -   [**FreeRootCauseInfos**](freerootcauseinfos.md)
--   [**FreeHelperAttributes**](freehelperattributes.md)
+-   [**Attributi FreeHelperAttributes**](freehelperattributes.md)
 -   [**FreeUiInfo**](freeuiinfo.md)
 -   [**NdfCancelIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcancelincident)
 -   [**NdfCloseIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfcloseincident)
@@ -49,9 +49,9 @@ Le funzioni seguenti consentono agli sviluppatori di software di usare la funzio
 -   [**UtilLoadStringWithAlloc**](utilloadstringwithalloc.md)
 -   [**UtilStringCopyWithAlloc**](utilstringcopywithalloc.md)
 
- 
+ 
 
- 
+ 
 
 
 

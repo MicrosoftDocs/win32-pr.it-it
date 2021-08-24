@@ -1,6 +1,6 @@
 ---
-title: 'Funzione TextureCubeArray:: GatherCmpRed (S, float, float, uint)'
-description: "Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente rosso e un valore di confronto insieme allo stato del mapping dei riquadri. | Funzione TextureCubeArray:: GatherCmpRed (S, float, float, uint)"
+title: Funzione TextureCubeArray::GatherCmpRed(S,float,float,uint)
+description: Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il componente rosso e un valore di confronto insieme allo stato del mapping delle sezioni. | Funzione TextureCubeArray::GatherCmpRed(S,float,float,uint)
 ms.assetid: 2474ECF6-DA85-406F-8212-D71AD90730FD
 keywords:
 - Funzione GatherCmpRed HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b64c32a5525faf3484715871b4fc0c4fb6470886
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5f9e291eb762d93c21cd0f75ec47da4f5666f5ba0f80afc8a69d2be6a25d586d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726261"
 ---
-# <a name="texturecubearraygathercmpredsfloatfloatuint-function"></a>Funzione TextureCubeArray:: GatherCmpRed (S, float, float, uint)
+# <a name="texturecubearraygathercmpredsfloatfloatuint-function"></a>Funzione TextureCubeArray::GatherCmpRed(S,float,float,uint)
 
-Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente rosso e un valore di confronto insieme allo stato del mapping dei riquadri.
+Per quattro valori texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il componente rosso e un valore di confronto insieme allo stato del mapping delle sezioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,16 +51,16 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -69,12 +69,12 @@ Valore da confrontare con ogni valore campionato.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE** se tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati prelevati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **FALSE.**
 
 </dd> </dl>
 
@@ -82,17 +82,17 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato; passar
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

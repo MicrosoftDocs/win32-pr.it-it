@@ -1,23 +1,23 @@
 ---
-title: dcl_hs_join_phase_instance_count (SM5-ASM)
-description: Dichiarare il numero di istanze della fase di join in una fase di join Hull shader.
+title: dcl_hs_join_phase_instance_count (sm5 - asm)
+description: Dichiarare il numero di istanze della fase di join in una fase di join di hull shader.
 ms.assetid: 9951B849-0537-4D08-9ADE-8CF6FF51A193
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34c3acc7074170ab4561a54e67668698d58b7ac1
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 22747202b5ef0f165914567a5d3f5c6e1b31d26132365a4896a9959cc03b2d3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104398310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726831"
 ---
-# <a name="dcl_hs_join_phase_instance_count-sm5---asm"></a>\_ \_ \_ conteggio istanze fase join DCL HS \_ \_ (SM5-ASM)
+# <a name="dcl_hs_join_phase_instance_count-sm5---asm"></a>dcl \_ hs \_ join phase instance \_ count \_ \_ (sm5 - asm)
 
-Dichiarare il numero di istanze della fase di join in una fase di join Hull shader.
+Dichiarare il numero di istanze della fase di join in una fase di join di hull shader.
 
 
 
-| \_ \_ numero di istanze della fase join di DCL HS \_ \_ \_ {1... max 32 bit uint} |
+| dcl \_ hs \_ join phase instance \_ count \_ \_ {1... max 32-bit UINT} |
 |--------------------------------------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare il numero di istanze della fase di join in una fase di join Hull shad
 
 | Elemento                                                   | Descrizione                           |
 |--------------------------------------------------------|---------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/> | \[nel \] conteggio delle istanze.<br/> |
+| <span id="N"></span><span id="n"></span>*N*<br/> | \[in \] Numero di istanze.<br/> |
 
 
 
@@ -36,11 +36,11 @@ Dichiarare il numero di istanze della fase di join in una fase di join Hull shad
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,20 +48,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -71,7 +71,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

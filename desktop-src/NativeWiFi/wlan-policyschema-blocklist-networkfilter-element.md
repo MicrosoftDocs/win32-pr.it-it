@@ -1,7 +1,7 @@
 ---
 description: Specifica l'elenco di reti LAN wireless a cui un computer non deve connettersi.
 ms.assetid: 01db3f7e-1e27-4378-9c42-bc38192f9507
-title: Elemento Blocker (networkFilter)
+title: Elemento blockList (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: e852286d00d93904bd185fef6c2f3444bb5987f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c5bd795ee9f5fc21dc205c24306820b4dec7f074638aa0e4f11ba3acde68cd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684421"
 ---
-# <a name="blocklist-networkfilter-element"></a>Elemento Blocker (networkFilter)
+# <a name="blocklist-networkfilter-element"></a>Elemento blockList (networkFilter)
 
-L'elemento Blocker (networkFilter) specifica l'elenco di reti LAN wireless a cui un computer non deve connettersi.
+L'elemento blockList (networkFilter) specifica l'elenco di reti LAN wireless a cui un computer non deve connettersi.
 
 ``` syntax
 <xs:element name="blockList">
@@ -42,7 +42,7 @@ L'elemento Blocker (networkFilter) specifica l'elenco di reti LAN wireless a cui
 </xs:element>
 ```
 
-L'elemento **Blocker** è definito dall'elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+**L'elemento blockList** è definito dall'elemento [**networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -50,7 +50,7 @@ L'elemento **Blocker** è definito dall'elemento [**networkFilter**](wlan-policy
 
 | Elemento                                                        | Tipo                                                                     | Descrizione                      |
 |----------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------|
-| [**network**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Rete bloccata. <br/> |
+| [**Rete**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Rete bloccata. <br/> |
 
 
 
@@ -60,8 +60,8 @@ L'elemento **Blocker** è definito dall'elemento [**networkFilter**](wlan-policy
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

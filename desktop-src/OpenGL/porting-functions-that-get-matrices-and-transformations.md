@@ -1,55 +1,55 @@
 ---
-title: Funzioni di porting che ottengono matrici e trasformazioni
-description: La tabella seguente elenca le funzioni di IRIS GL che ottengono lo stato delle matrici e delle trasformazioni e dei rispettivi equivalenti OpenGL.
+title: Funzioni di portabilità che ottengono matrici e trasformazioni
+description: La tabella seguente elenca le funzioni IRIS GL che ottengono lo stato delle matrici e delle trasformazioni e i relativi equivalenti OpenGL.
 ms.assetid: 53546bc0-ce1d-47e0-ab5e-5d6789c6db2a
 keywords:
-- Porting di IRIS GL, matrici
-- porting da IRIS GL, matrici
-- porting in OpenGL da IRIS GL, matrici
-- Porting OpenGL da IRIS GL, matrici
+- portabilità IRIS GL, matrici
+- porting from IRIS GL,matrici
+- porting to OpenGL from IRIS GL,matrici
+- Portabilità OpenGL da IRIS GL, matrici
 - matrici
-- Porting, trasformazioni di IRIS GL
-- porting da IRIS GL, trasformazioni
-- porting in OpenGL da IRIS GL, trasformazioni
+- portabilità IRIS GL, trasformazioni
+- porting from IRIS GL,transformations
+- porting to OpenGL from IRIS GL,transformations
 - Porting OpenGL da IRIS GL, trasformazioni
 - trasformazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93b32ab017e81c9875666785786b29d9c94c7fd1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 68eed8722d982d8d93f47f4d2dc02b8f0f97d9c58512400353ab068015455e13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776971"
 ---
-# <a name="porting-functions-that-get-matrices-and-transformations"></a>Funzioni di porting che ottengono matrici e trasformazioni
+# <a name="porting-functions-that-get-matrices-and-transformations"></a>Funzioni di portabilità che ottengono matrici e trasformazioni
 
-La tabella seguente elenca le funzioni di IRIS GL che ottengono lo stato delle matrici e delle trasformazioni e dei rispettivi equivalenti OpenGL.
+La tabella seguente elenca le funzioni IRIS GL che ottengono lo stato delle matrici e delle trasformazioni e i relativi equivalenti OpenGL.
 
 
 
-| Query matrice GL IRIS                  | Query della matrice glGet OpenGL         | Significato                                                         |
+| Query matrice IRIS GL                  | Query matrice GlGet OpenGL         | Significato                                                         |
 |---------------------------------------|-----------------------------------|-----------------------------------------------------------------|
-| **getmmode**                          | \_modalità matrice \_ GL                  | Restituisce la modalità della matrice corrente.                                |
-| **getMatrix** in modalità **MVIEWING**    | \_matrice GL MODELVIEW \_             | Restituisce una copia della matrice di visualizzazione modello corrente.                |
-| **getMatrix** in modalità **MPROJECTION** | \_matrice di proiezione GL \_            | Restituisce una copia della matrice di proiezione corrente.                |
-| **getMatrix** in modalità **MTEXTURE**    | \_matrice di trama GL \_               | Restituisce una copia della matrice di trama corrente.                   |
-| Non applicabile.                       | \_ \_ \_ profondità dello stack MODELVIEW max per GL \_  | Restituisce la profondità massima supportata dello stack della matrice di visualizzazione del modello. |
-| Non applicabile.                       | \_ \_ \_ profondità dello stack di proiezione max GL \_ | Restituisce la profondità massima supportata dello stack della matrice di proiezione. |
-| Non applicabile.                       | \_ \_ \_ profondità stack trama massimo \_ GL    | Restituisce la profondità massima supportata dello stack della matrice di trame.    |
-| Non applicabile.                       | \_ \_ profondità dello stack MODELVIEW GL \_       | Restituisce il numero di matrici nello stack della visualizzazione del modello.             |
-| Non applicabile.                       | \_ \_ profondità dello stack di proiezione GL \_      | Restituisce il numero di matrici nello stack di proiezione.             |
-| Non applicabile.                       | \_ \_ profondità dello stack di trama GL \_         | Restituisce il numero di matrici nello stack di trame.                |
+| **getmmode**                          | MODALITÀ MATRICE GL \_ \_                  | Restituisce la modalità matrice corrente.                                |
+| **getmatrix** in **modalità MVIEWING**    | MATRICE \_ DI MODELVIEW \_ GL             | Restituisce una copia della matrice di visualizzazione del modello corrente.                |
+| **getmatrix** in **modalità MPROJECTION** | MATRICE DI \_ \_ PROIEZIONE GL            | Restituisce una copia della matrice di proiezione corrente.                |
+| **getmatrix** in **modalità MTEXTURE**    | MATRICE DI TRAMA GL \_ \_               | Restituisce una copia della matrice di trama corrente.                   |
+| Non applicabile.                       | GL \_ MAX \_ MODELVIEW \_ STACK \_ DEPTH  | Restituisce la profondità massima supportata dello stack della matrice di visualizzazione del modello. |
+| Non applicabile.                       | GL \_ MAX \_ PROJECTION \_ STACK \_ DEPTH | Restituisce la profondità massima supportata dello stack della matrice di proiezione. |
+| Non applicabile.                       | GL \_ MAX \_ TEXTURE \_ STACK \_ DEPTH    | Restituisce la profondità massima supportata dello stack della matrice di trame.    |
+| Non applicabile.                       | GL \_ MODELVIEW \_ STACK \_ DEPTH       | Restituisce il numero di matrici nello stack di visualizzazione del modello.             |
+| Non applicabile.                       | GL \_ PROJECTION \_ STACK \_ DEPTH      | Restituisce il numero di matrici nello stack di proiezione.             |
+| Non applicabile.                       | GL \_ TEXTURE \_ STACK \_ DEPTH         | Restituisce il numero di matrici nello stack di trame.                |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

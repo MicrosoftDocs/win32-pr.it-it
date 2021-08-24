@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: Archivio2'
+title: Funzione RWByteAddressBuffer::Store2
 description: Imposta due valori.
 ms.assetid: 7b32c84c-9ea2-47ae-a0f3-df6d95249163
 keywords:
-- Funzione Archivio2 HLSL
+- HLSL della funzione Store2
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 574ad7fd59921767308e980e645bac966be87709
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 723c2f895790618a14d6603acacb7e106a936ad5262696ef553dafa72c1332c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104045984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853311"
 ---
-# <a name="store2-function"></a>Archivio2 (funzione)
+# <a name="store2-function"></a>Funzione Store2
 
 Imposta due valori.
 
@@ -28,8 +28,8 @@ Imposta due valori.
 
 ``` syntax
 void Store2(
-  in uint address,
-  in uint2 values
+  in uint address,
+  in uint2 values
 );
 ```
 
@@ -37,7 +37,7 @@ void Store2(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ Indirizzo di input in byte, che deve essere un multiplo di 4.
 
 </dd> <dt>
 
-*valori* \[ di in\]
+*valori* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint2**
@@ -65,13 +65,13 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -80,12 +80,12 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

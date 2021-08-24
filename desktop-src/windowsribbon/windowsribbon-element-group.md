@@ -3,7 +3,7 @@ title: Group - elemento
 description: Rappresenta un controllo Group che funziona come contenitore per un gruppo di elementi.
 ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
 keywords:
-- Elemento Group della barra multifunzione di Windows
+- Elemento Group Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1162055491f61ae6feffa385bbc5015e4f1b66f0
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2ca9d138e18296bc801fd37931a3b8066761abd3dd697d360513983ad5288dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810611"
 ---
 # <a name="group-element"></a>Group - elemento
 
@@ -59,14 +59,14 @@ Rappresenta un [controllo Group](windowsribbon-controls-group.md) che funziona c
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa contenente un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>SizeDefinition</strong><br/></td>
@@ -87,7 +87,7 @@ Rappresenta un [controllo Group](windowsribbon-controls-group.md) che funziona c
 | Elemento                                                                             | Descrizione                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                           | Può verificarsi una o più volte<br/> <br/> |
-| [**Casella**](windowsribbon-element-checkbox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Può verificarsi una o più volte<br/> <br/> |
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               | Può verificarsi una o più volte<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Può verificarsi una o più volte<br/> <br/> |
@@ -109,7 +109,7 @@ Rappresenta un [controllo Group](windowsribbon-controls-group.md) che funziona c
 
 | Elemento                                             |
 |-----------------------------------------------------|
-| [**Scheda**](windowsribbon-element-tab.md)<br/> |
+| [**TAB**](windowsribbon-element-tab.md)<br/> |
 
 
 
@@ -119,13 +119,13 @@ facoltativo.
 
 Può verificarsi una o più volte per ogni [**elemento Tab.**](windowsribbon-element-tab.md)
 
-[**Tab**](windowsribbon-element-tab.md) supporta le [modalità dell'applicazione](ribbon-applicationmodes.md).
+[**La scheda**](windowsribbon-element-tab.md) supporta le [modalità dell'applicazione](ribbon-applicationmodes.md).
 
 Il markup della barra multifunzione è valido solo quando gli elementi figlio di **Group** corrispondono al modello specificato per *SizeDefinition.*
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato l'utilizzo di un modello personalizzato in un **oggetto Group.**
+Nell'esempio di codice seguente viene illustrato l'uso di un modello personalizzato in un **oggetto Group**.
 
 
 ```
@@ -150,7 +150,7 @@ Nell'esempio di codice seguente viene illustrato l'utilizzo di un modello person
 [Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> <dt>
 
-[Controllo Group](windowsribbon-controls-group.md)
+[Controllo Gruppo](windowsribbon-controls-group.md)
 </dt> <dt>
 
 [**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)

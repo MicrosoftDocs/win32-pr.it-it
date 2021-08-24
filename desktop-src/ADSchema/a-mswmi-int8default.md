@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-int8Default
-description: Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
+title: Attributo ms-WMI-int8Default
+description: Valore predefinito per gli oggetti parametro Integer a 64 bit WMI.
 ms.assetid: de8c4178-0d27-440f-88ab-a86f34400f3a
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-int8Default
-- msWMI-schema AD attributo Int8Default
+- Schema AD dell'attributo msWMI-Int8Default
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f78ca22a3fc32df5edf65a47a6fda05c8daf914
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f200bb8625fe0ef126bfd8b6c0b5b23af5e3407c0d4a774ca02b27eda296338
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760761"
 ---
-# <a name="ms-wmi-int8default-attribute"></a>attributo ms-WMI-int8Default
+# <a name="ms-wmi-int8default-attribute"></a>Attributo ms-WMI-int8Default
 
-Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
+Valore predefinito per gli oggetti parametro Integer a 64 bit WMI.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-int8Default                   |
-| LDAP-Display-Name | msWMI-Int8Default                    |
+| CN                | ms-WMI-int8Default                   |
+| Ldap-Display-Name | msWMI-Int8Default                    |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo           |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore           |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1632              |
-| System-ID-GUID    | f4d8085a-8c5b-4785-959b-dc585566e445 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | f4d8085a-8c5b-4785-959b-dc585566e445 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -57,15 +57,15 @@ Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Valore predefinito per gli oggetti parametro integer WMI a 64 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_WIM_CLOSE (mmsystem. h)
-description: Il \_ \_ messaggio di chiusura Wim mm viene inviato a una finestra quando viene chiuso un dispositivo di input audio e di forma d'onda. L'handle del dispositivo non è più valido dopo l'invio di questo messaggio.
+title: MM_WIM_CLOSE messaggio (Mmsystem.h)
+description: Il messaggio MM \_ WIM CLOSE viene inviato a una finestra quando un dispositivo di \_ input waveform-audio viene chiuso. L'handle del dispositivo non è più valido dopo l'invio del messaggio.
 ms.assetid: 4ea35b66-6bfa-41f0-9d52-a8cf2b0a69dd
 keywords:
-- MM_WIM_CLOSE messaggi multimediali di Windows
+- MM_WIM_CLOSE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90d9934ef7045debbcac2f5baf1c2f750d22dad5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 506311f9938198e2ceb99646670c954eaa433825855e31c036241df6be1b2491
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807111"
 ---
-# <a name="mm_wim_close-message"></a>\_Messaggio di \_ chiusura Wim mm
+# <a name="mm_wim_close-message"></a>Messaggio \_ DI CHIUSURA DI MM WIM \_
 
-Il messaggio di **\_ \_ chiusura Wim mm** viene inviato a una finestra quando viene chiuso un dispositivo di input audio e di forma d'onda. L'handle del dispositivo non è più valido dopo l'invio di questo messaggio.
+Il **messaggio MM \_ WIM \_ CLOSE** viene inviato a una finestra quando un dispositivo di input waveform-audio viene chiuso. L'handle del dispositivo non è più valido dopo l'invio del messaggio.
 
 
 ```C++
@@ -41,20 +41,20 @@ lParam = reserved
 <span id="hInputDev"></span><span id="hinputdev"></span><span id="HINPUTDEV"></span>*hInputDev*
 </dt> <dd>
 
-Handle per il dispositivo di input della forma d'onda-audio che è stato chiuso.
+Handle per il dispositivo di input waveform-audio chiuso.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Questo messaggio non restituisce alcun valore.
 
 <dl> <dt>
 
-[Audio Waveform](waveform-audio.md)
+[Waveform Audio](waveform-audio.md)
 </dt> <dt>
 
-[Messaggi di forma d'onda](waveform-messages.md)
+[Messaggi waveform](waveform-messages.md)
 </dt> </dl>
 
  

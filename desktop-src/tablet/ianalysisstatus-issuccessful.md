@@ -1,7 +1,7 @@
 ---
 description: Recupera un riepilogo booleano dei risultati dell'operazione di analisi.
 ms.assetid: 9bc690f4-fb5f-449e-bde0-bd2277c4573b
-title: 'Metodo IAnalysisStatus:: isvalidful (IACom. h)'
+title: Metodo IAnalysisStatus::IsSuccessful (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: daf7ec801773d855f0ed85a795bc492ef673a74e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0028b94042aa9397aea8e0164d57d0d647a75f37e3f5e2fd9d7b3982b5d57031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713831"
 ---
-# <a name="ianalysisstatusissuccessful-method"></a>Metodo IAnalysisStatus:: con esito positivo
+# <a name="ianalysisstatusissuccessful-method"></a>Metodo IAnalysisStatus::IsSuccessful
 
 Recupera un riepilogo booleano dei risultati dell'operazione di analisi.
 
@@ -39,20 +39,20 @@ HRESULT IsSuccessful(
 
 <dl> <dt>
 
-*pfSuccessful* \[ out\]
+*pfSuccessful* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se l'operazione di analisi è stata completata senza avvisi oppure **Variant \_ false** se si è verificato almeno un avviso.
+**VARIANT \_ TRUE** se l'operazione di analisi è stata completata senza avvisi oppure **VARIANT \_ FALSE** se si è verificato almeno un avviso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una struttura di un gestore eventi per l'evento [**\_ IAnalysisEvents:: results**](-ianalysisevents-results.md) . Il gestore verifica **IAnalysisStatus:: con esito positivo**. Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di oggetti [**IAnalysisWarning**](ianalysiswarning.md) .
+L'esempio seguente mostra una struttura di un gestore eventi per [**\_ l'evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) Il gestore controlla **IAnalysisStatus::IsSuccessful.** Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di [**oggetti IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -139,9 +139,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -153,7 +153,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisStatus**](ianalysisstatus.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  
