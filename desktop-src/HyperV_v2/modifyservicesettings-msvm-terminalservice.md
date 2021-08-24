@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 930b29c5c07c755b493a0aabad88ae776c0803e0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4e77cb68e1052cc91cd5b1ef459051fdde108ac3a044a6c8dcc6251ad57baca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693891"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_terminalservice-class"></a>Metodo ModifyServiceSettings della classe Msvm \_ TerminalService
 
-Modifica i dati delle impostazioni per il servizio.
+Modifica i dati di impostazione per il servizio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -105,8 +105,8 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

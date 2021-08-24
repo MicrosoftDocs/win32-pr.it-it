@@ -4,12 +4,12 @@ ms.assetid: 7fe0249c-c43d-498b-9029-cf5969201d96
 title: Evento InkOverlay.SelectionResizing (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b5577f83c14ccc2e998fb4257344729e2219a2d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 260ac01f303b7f6ced5f38c77bc2d490d1e99aa53382ebe7d2daf52f986ccf40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712681"
 ---
 # <a name="inkoverlayselectionresizing-event"></a>Evento InkOverlay.SelectionResizing
 
@@ -56,7 +56,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverla
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

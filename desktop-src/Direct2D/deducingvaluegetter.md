@@ -1,9 +1,9 @@
 ---
-title: DeducingValueGetter (D2d1effecthelpers. h)
-description: Deduce la classe e gli argomenti e quindi chiama un callback del Getter della proprietà membro-funzione per una proprietà di tipo valore.
+title: DeducingValueGetter (D2d1effecthelpers.h)
+description: Deduce la classe e gli argomenti e quindi chiama un callback del metodo get della proprietà della funzione membro per una proprietà di tipo valore.
 ms.assetid: E2E5CCC3-B112-4D3C-8840-121A55C4F1A2
 keywords:
-- Direct2D DeducingValueGetter
+- DeducingValueGetter Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6332dd6eac823457882513f97557939db884efcf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 743c4e457c9dc3f6e29c4bfc78e539256869a2d30a055168384d287911ca4d4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652951"
 ---
 # <a name="deducingvaluegetter"></a>DeducingValueGetter
 
-Deduce la classe e gli argomenti e quindi chiama un callback del Getter della proprietà membro-funzione per una proprietà di tipo valore.
+Deduce la classe e gli argomenti e quindi chiama un callback del metodo get della proprietà della funzione membro per una proprietà di tipo valore.
 
 > [!Note]  
 > DeducingValueGetter non deve essere chiamato direttamente.
@@ -47,7 +47,7 @@ HRESULT DeducingValueGetter(
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

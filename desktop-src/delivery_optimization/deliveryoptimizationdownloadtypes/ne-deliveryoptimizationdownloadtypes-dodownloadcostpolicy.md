@@ -1,6 +1,6 @@
 ---
 title: Enumerazione DODownloadCostPolicy
-description: Specifica l'ID delle opzioni dei criteri di costo associate alla proprietà **DODownloadProperty_CostPolicy** .
+description: Specifica l'ID delle opzioni dei criteri di costo associate **alla DODownloadProperty_CostPolicy** proprietà .
 keywords:
 - Enumerazione DODownloadCostPolicy, DODownloadCostPolicy
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/02/2019
-ms.openlocfilehash: c70384f7c7da1633b910db36c42a335d1c463bae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 763042ed6d0df6fa287fbe66d23528a199a73041cb3500c6a2812e6db86cb698
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119677881"
 ---
 # <a name="dodownloadcostpolicy-enumeration"></a>Enumerazione DODownloadCostPolicy
 
-L'enumerazione **DODownloadCostPolicy** specifica l'ID delle opzioni dei criteri di costo associate alla proprietà **DODownloadProperty_CostPolicy** .
+**L'enumerazione DODownloadCostPolicy** specifica l'ID delle opzioni dei criteri di costo associate alla **DODownloadProperty_CostPolicy** proprietà .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,16 +44,16 @@ typedef enum _DODownloadCostPolicy
 | Requisito | Valore |
 |-|-|
 | DODownloadCostPolicy_Always | Il download viene eseguito indipendentemente dal costo. |
-| DODownloadCostPolicy_Unrestricted | Il download viene eseguito solo se impone costi o limiti di traffico. |
-| DODownloadCostPolicy_Standard | Il download viene eseguito a meno che non sia soggetto a un sovrapprezzo né a un esaurimento. |
-| DODownloadCostPolicy_NoRoaming | Il download viene eseguito a meno che la connettività non sia soggetta a sovrapprezzi in roaming. |
+| DODownloadCostPolicy_Unrestricted | Il download viene eseguito a meno che non imposizioni di costi o limiti di traffico. |
+| DODownloadCostPolicy_Standard | Il download viene eseguito a meno che non sia soggetto a un supplemento o a un esaurimento quasi. |
+| DODownloadCostPolicy_NoRoaming | Il download viene eseguito a meno che la connettività non sia soggetta a costi di roaming. |
 | DODownloadCostPolicy_NoSurcharge | Il download viene eseguito a meno che non sia soggetto a un supplemento. |
-| DODownloadCostPolicy_NoCellular | Il download viene eseguito a meno che la rete non sia attiva. |
+| DODownloadCostPolicy_NoCellular | Il download viene eseguito a meno che la rete non sia nella rete cellulare. |
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | DeliveryOptimizationDownloadTypes. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | DeliveryOptimizationDownloadTypes.h |

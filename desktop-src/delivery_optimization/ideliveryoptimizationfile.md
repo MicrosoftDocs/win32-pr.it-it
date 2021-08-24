@@ -16,26 +16,26 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b86434f4be2f7d14ae46f4af92784c1be4fd1aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 880cc982d32e2a81b4263c3cba55331ea5524643adfc8483ed96465154d47cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635741"
 ---
 # <a name="ideliveryoptimizationfile-interface"></a>Interfaccia IDeliveryOptimizationFile
 
-Implementare l'interfaccia **IDeliveryOptimizationFile** per identificare lo stato di un file specifico.
+Implementare **l'interfaccia IDeliveryOptimizationFile** per identificare lo stato di un file specifico.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDeliveryOptimizationFile** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IDeliveryOptimizationFile** dispone anche di questi tipi di membri:
+**L'interfaccia IDeliveryOptimizationFile** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDeliveryOptimizationFile** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDeliveryOptimizationFile** dispone di questi metodi.
+**L'interfaccia IDeliveryOptimizationFile** include questi metodi.
 
 
 
@@ -47,10 +47,10 @@ L'interfaccia **IDeliveryOptimizationFile** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------|----------------------------------------------------------------------------------|
-| Client minimo supportato      | Solo app desktop Windows 10 versione 1709 \[\]                                   |
-| Server minimo supportato      | Windows Server, versione 1709 \[ solo per le app desktop\]                               |
-| Intestazione                        | Deliveryoptimization. h                                                           |
-| IDL                           | DeliveryOptimization. idl                                                         |
-| Libreria                       | Dosvc. lib                                                                        |
+| Client minimo supportato      | Windows 10, solo app desktop versione 1709 \[\]                                   |
+| Server minimo supportato      | Windows Server, solo app desktop versione 1709 \[\]                               |
+| Intestazione                        | Deliveryoptimization.h                                                           |
+| Idl                           | DeliveryOptimization.idl                                                         |
+| Libreria                       | Dosvc.lib                                                                        |
 | DLL                           | Dosvc.dll                                                                        |
-| IID                           | IID_IDeliveryOptimizationFile viene definito come B76B9699-E99E-4101-803F-A20E325D93E2 |
+| IID                           | IID_IDeliveryOptimizationFile è definito come B76B9699-E99E-4101-803F-A20E325D93E2 |

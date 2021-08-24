@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 api_location:
 - ntetw.h
-ms.openlocfilehash: 5ea3de0dba842544b0ffacc785fb138bdda571a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1fd25931e6a58b97e052ecd7da43bd651688d2bf726d8b5ba2acd84ce820be7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653430"
 ---
-# <a name="etweventwritefull-function"></a>EtwEventWriteFull (funzione)
+# <a name="etweventwritefull-function"></a>Funzione EtwEventWriteFull
 
 [La funzione EtwEventWriteFull e le strutture restituite sono interne al sistema operativo e soggette a modifiche da una versione di Windows a un'altra.]
 
@@ -52,7 +52,7 @@ RegHandle per il provider.
 
 </dd> <dt>
 
-*EventDescriptor* 
+*Eventdescriptor* 
 </dt> <dd>
 
 Descrittore dell'evento da registrare.
@@ -100,14 +100,14 @@ Codice di errore Win32.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione EtwEventWriteFull e le strutture restituite sono interne al sistema operativo e sono soggette a modifiche da una versione di Windows a un'altra. Per mantenere la compatibilità dell'applicazione, è preferibile usare invece le funzioni pubbliche.
+La funzione EtwEventWriteFull e le strutture restituite sono interne al sistema operativo e soggette a modifiche da una versione di Windows a un'altra. Per mantenere la compatibilità dell'applicazione, è meglio usare le funzioni pubbliche.
 
 
 ## <a name="requirements"></a>Requisiti
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Piattaforma di destinazione** | Windows |
-| **Intestazione** | ntetw. h |
+| **Intestazione** | ntetw.h |
 
 ## <a name="see-also"></a>Vedi anche
 

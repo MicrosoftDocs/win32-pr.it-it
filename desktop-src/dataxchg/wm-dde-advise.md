@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_DDE_ADVISE (DDE. h)
-description: Un'applicazione client di Dynamic Data Exchange (DDE) Invia il \_ \_ messaggio di notifica DDE di WM a un'applicazione server DDE per richiedere al server di fornire un aggiornamento per un elemento di dati ogni volta che l'elemento viene modificato.
+title: WM_DDE_ADVISE messaggio (Dde.h)
+description: Un'applicazione client Dynamic Data Exchange (DDE) invia il messaggio WM DDE ADVISE a un'applicazione server DDE per richiedere al server di fornire un aggiornamento per un elemento di dati ogni volta che l'elemento \_ \_ viene modificato.
 ms.assetid: b00db740-36a7-4487-abbf-d74b12f5212a
 keywords:
-- Scambio di dati del messaggio WM_DDE_ADVISE
+- WM_DDE_ADVISE messaggio Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 832c6991169b71955c0ab21b59d2b55b0b54fc9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c651144b4f09cf53f07c0f1860625cab8277e5c8a9532ee864b9ec1b1c927323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636221"
 ---
-# <a name="wm_dde_advise-message"></a>\_Messaggio di avviso DDE di WM \_
+# <a name="wm_dde_advise-message"></a>Messaggio WM \_ DDE \_ ADVISE
 
-Un'applicazione client di Dynamic Data Exchange (DDE) Invia il messaggio di **\_ \_ notifica DDE di WM** a un'applicazione server DDE per richiedere al server di fornire un aggiornamento per un elemento di dati ogni volta che l'elemento viene modificato.
+Un'applicazione client Dynamic Data Exchange (DDE) invia il messaggio **WM \_ DDE \_ ADVISE** a un'applicazione server DDE per richiedere al server di fornire un aggiornamento per un elemento di dati ogni volta che l'elemento viene modificato.
 
-Per pubblicare questo messaggio, chiamare la funzione [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con i parametri seguenti.
+Per pubblicare questo messaggio, chiamare [**la funzione PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con i parametri seguenti.
 
 
 ```C++
@@ -41,40 +41,40 @@ Per pubblicare questo messaggio, chiamare la funzione [**PostMessage**](/windows
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra client che invia il messaggio.
+Handle per la finestra client che pubblica il messaggio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore è un handle per un oggetto memoria globale contenente una struttura [**DDEAdvise**](/windows/desktop/api/Dde/ns-dde-ddeadvise) che specifica la modalità di invio dei dati.
+La parola di ordine più basso è un handle per un oggetto memoria globale contenente una [**struttura DDEADVISE**](/windows/desktop/api/Dde/ns-dde-ddeadvise) che specifica come devono essere inviati i dati.
 
-La parola più ordinata contiene un Atom che identifica l'elemento di dati richiesto.
+La parola di ordine elevato contiene un atom che identifica l'elemento di dati richiesto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se un'applicazione client supporta più di un formato degli Appunti per un singolo argomento ed elemento, può inserire più messaggi di **\_ \_ notifica DDE di WM** per l'argomento e l'elemento, specificando un formato degli Appunti diverso a ogni messaggio. Si noti che un server può supportare più formati solo per i collegamenti dati ad accesso frequente, non per i collegamenti dati caldi.
+Se un'applicazione client supporta più di un formato degli Appunti per un singolo argomento ed elemento, può pubblicare più messaggi **WM \_ DDE \_ ADVISE** per l'argomento e l'elemento, specificando un formato diverso per gli Appunti con ogni messaggio. Si noti che un server può supportare più formati solo per i collegamenti dati ad accesso remoto, non per i collegamenti dati ad accesso più caldo.
 
 ### <a name="posting"></a>Distacco
 
-L'applicazione client invia il messaggio di **\_ \_ notifica DDE di WM** chiamando la funzione [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) , non la funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) .
+L'applicazione client pubblica **il messaggio ADVISE di WM \_ DDE \_** chiamando la funzione [**PostMessage,**](/windows/desktop/api/winuser/nf-winuser-postmessagea) non la [**funzione SendMessage.**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 
-L'applicazione client alloca l'oggetto memoria globale usando la funzione [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) . Alloca il Atom usando la funzione [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+L'applicazione client alloca l'oggetto memoria globale usando la [**funzione GlobalAlloc.**](/windows/desktop/api/winbase/nf-winbase-globalalloc) Alloca l'atom usando [**la funzione GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
-L'applicazione client deve creare o riutilizzare il parametro *lParam* del **\_ \_ Consiglio DDE di WM** chiamando la funzione [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam) .
+L'applicazione client deve creare o riutilizzare il parametro *lParam* **WM \_ DDE \_ ADVISE** chiamando la funzione [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o [**la funzione ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
-Se l'applicazione ricevente (Server) risponde con un messaggio [**di \_ \_ ACK DDE di WM**](wm-dde-ack.md) negativo, l'applicazione di pubblicazione deve eliminare l'oggetto.
+Se l'applicazione ricevente (server) risponde con un messaggio [**\_ \_ ACK WM DDE**](wm-dde-ack.md) negativo, l'applicazione di pubblicazione deve eliminare l'oggetto.
 
-Il flag **fRelease** non viene usato nei messaggi di **\_ \_ notifica DDE di WM** , ma il comportamento di liberazione dei dati è simile a quello dei [**\_ \_ dati DDE**](wm-dde-data.md) di WM e dei messaggi [**\_ \_ poke DDE di WM**](wm-dde-poke.md) in cui **fRelease** è **true**.
+Il flag **fRelease** non viene usato nei messaggi **WM \_ DDE \_ ADVISE,** ma il relativo comportamento di liberamento dei dati è simile a quello dei messaggi [**WM \_ DDE \_ DATA**](wm-dde-data.md) e [**\_ \_ POKE WM DDE**](wm-dde-poke.md) in cui **fRelease** è **TRUE.**
 
 ### <a name="receiving"></a>Ricezione
 
-L'applicazione server inserisce il [**messaggio \_ \_ ACK DDE di WM**](wm-dde-ack.md) per rispondere in modo positivo o negativo. Quando si invia un **\_ \_ ACK DDE di WM**, l'applicazione può riutilizzare l'Atom o eliminarlo e crearne uno nuovo. Se il **messaggio \_ \_ ACK DDE WM** è positivo, l'applicazione deve eliminare l'oggetto memoria globale; in caso contrario, l'applicazione non deve eliminare l'oggetto.
+L'applicazione server pubblica [**il messaggio \_ WM DDE \_ ACK**](wm-dde-ack.md) per rispondere in modo positivo o negativo. Quando si pubblica **WM \_ DDE \_ ACK,** l'applicazione può riutilizzare l'atom o eliminarlo e crearne uno nuovo. Se il **messaggio WM \_ DDE \_ ACK** è positivo, l'applicazione deve eliminare l'oggetto memoria globale. In caso contrario, l'applicazione non deve eliminare l'oggetto.
 
-Il server deve creare o riutilizzare il parametro *lParam* del [**\_ \_ ACK DDE WM**](wm-dde-ack.md) chiamando la funzione [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam) .
+Il server deve creare o riutilizzare il parametro *lParam* ACK di [**WM \_ DDE \_**](wm-dde-ack.md) chiamando la funzione [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o [**la funzione ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Il server deve creare o riutilizzare il parametro *lParam* del [**\_ \_ ACK DDE 
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>DDE. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Dde.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -116,25 +116,25 @@ Il server deve creare o riutilizzare il parametro *lParam* del [**\_ \_ ACK DDE 
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+[**DisimballareDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_ACK DDE \_ WM**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-[**\_dati DDE di WM \_**](wm-dde-data.md)
+[**DATI \_ WM DDE \_**](wm-dde-data.md)
 </dt> <dt>
 
-[**\_poke DDE \_ WM**](wm-dde-poke.md)
+[**WM \_ DDE \_ POKE**](wm-dde-poke.md)
 </dt> <dt>
 
-[**\_richiesta DDE \_ WM**](wm-dde-request.md)
+[**RICHIESTA \_ WM DDE \_**](wm-dde-request.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Informazioni su Dynamic Data Exchange](about-dynamic-data-exchange.md)
+[Informazioni Dynamic Data Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

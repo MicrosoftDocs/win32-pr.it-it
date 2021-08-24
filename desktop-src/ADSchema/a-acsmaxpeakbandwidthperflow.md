@@ -1,11 +1,11 @@
 ---
-title: Attributo ACS-max-Peak-Bandwidth-per-Flow
+title: Attributo ACS-Max-Peak-Bandwidth-Per-Flow
 description: Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 ms.assetid: 7506a90f-d968-4b69-a8fe-a1515418a1d4
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-max-Peak-Bandwidth-per-Flow
-- Schema AD dell'attributo aCSMaxPeakBandwidthPerFlow
+- Schema AD dell'attributo ACS-Max-Peak-Bandwidth-Per-Flow
+- Attributo aCSMaxPeakBandwidthPerFlow Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 828ac63dc64dad00edf26922e554c71b9be79227
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcb9f06ea1f8b71229bcc379805771544e75bda1736a9284b4cbe3c3aa904efc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104048808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753941"
 ---
-# <a name="acs-max-peak-bandwidth-per-flow-attribute"></a>Attributo ACS-max-Peak-Bandwidth-per-Flow
+# <a name="acs-max-peak-bandwidth-per-flow-attribute"></a>Attributo ACS-Max-Peak-Bandwidth-Per-Flow
 
 Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 
@@ -29,14 +29,14 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-max-picco-larghezza di banda per flusso      |
-| LDAP-Display-Name | aCSMaxPeakBandwidthPerFlow           |
+| CN                | ACS-Max-Peak-Bandwidth-Per-Flow      |
+| Ldap-Display-Name | aCSMaxPeakBandwidthPerFlow           |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.759               |
-| System-ID-GUID    | 7f56127c-5301-11d1-a9c5-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 7f56127c-5301-11d1-a9c5-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| A valore singolo       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Larghezza di banda massima che può essere utilizzata da qualsiasi flusso.
 | ID collegamento                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| È a valore singolo       | Vero                                                                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                                                                    |
 | Indicizzato             | Falso                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> [**Limite di risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-subnet**](c-acssubnet.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> [**Limiti delle risorse ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

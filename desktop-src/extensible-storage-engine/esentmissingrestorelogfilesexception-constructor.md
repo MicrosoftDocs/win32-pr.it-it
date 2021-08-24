@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMissingRestoreLogFilesException'
+description: Altre informazioni sul costruttore EsentMissingRestoreLogFilesException
 title: Costruttore EsentMissingRestoreLogFilesException
 TOCTitle: 'EsentMissingRestoreLogFilesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMissingRestoreLogFilesException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f7aae7942fb70c2e1d59c265292d30ca96b91d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd02f59a528260f4c67459a56327297dc7fb9a4e2803a9abcd405dbfbb0682f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734167"
 ---
 # <a name="esentmissingrestorelogfilesexception-constructor"></a>Costruttore EsentMissingRestoreLogFilesException
 
 Inizializza una nuova istanza della classe EsentMissingRestoreLogFilesException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMissingRestoreLogFilesException()
 
 [Membri di EsentMissingRestoreLogFilesException](./esentmissingrestorelogfilesexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

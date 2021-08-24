@@ -1,19 +1,19 @@
 ---
-description: Si verifica prima che i tratti vengano eliminati dalla proprietà Ink.
+description: Si verifica prima dell'eliminazione dei tratti dalla proprietà Ink.
 ms.assetid: 09468416-ad08-48ea-aa4a-3af0fe553f3d
-title: Evento InkOverlay. StrokesDeleting (Msinkaut. h)
+title: Evento InkOverlay.StrokesDeleting (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64422e61869c633514c3e219e3d090476a693dd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b85e01eabc46e8e9cc4ca844ae8f5efa8b58e83fdee2724792a3856445b7dbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712671"
 ---
-# <a name="inkoverlaystrokesdeleting-event"></a>Evento InkOverlay. StrokesDeleting
+# <a name="inkoverlaystrokesdeleting-event"></a>Evento InkOverlay.StrokesDeleting
 
-Si verifica prima che i tratti vengano eliminati dalla proprietà [**Ink**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink) .
+Si verifica prima dell'eliminazione dei tratti dalla [**proprietà Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,10 +30,10 @@ void StrokesDeleting(
 
 <dl> <dt>
 
-*Tratti* \[ in\]
+*Tratti* \[ Pollici\]
 </dt> <dd>
 
-Raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) eliminata quando viene generato l'evento **StrokesDeleting** .
+Raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) eliminata quando viene generato l'evento **StrokesDeleting.**
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ IInkPictureEvents dispatch-only (dispinterfaces) con ID DISPID \_ IOEStrokesDeleting.
+Questo metodo di evento è definito nelle interfacce \_ dispatch (dispatchinterface) IInkOverlayEvents e \_ IInkPictureEvents con ID DISPID \_ IOEStrokesDeleting.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -62,10 +62,10 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
-[**\[Classe InkCollector/InkOverLay della proprietà Ink\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink)
+[**Classe \[ InkCollector/InkOverLay della proprietà Ink\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_ink)
 </dt> </dl>
 
  

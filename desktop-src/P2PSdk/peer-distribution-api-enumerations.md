@@ -1,26 +1,26 @@
 ---
-description: Il servizio di distribuzione peer Microsoft supporta le enumerazioni seguenti.
+description: Il servizio Distribuzione peer Microsoft supporta le enumerazioni seguenti.
 ms.assetid: 6d63d1d9-18e9-457a-a1b5-930d85cd26e3
-title: Enumerazioni API distribuzione peer
+title: Enumerazioni dell'API di distribuzione peer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b56e2a2e2916b7b7cf55b41543a5075fb8a082d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 329006a6927a9cffa5fe4f2c86f7c694a76e36a73b16e4b6375dadad686a3060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776061"
 ---
-# <a name="peer-distribution-api-enumerations"></a>Enumerazioni API distribuzione peer
+# <a name="peer-distribution-api-enumerations"></a>Enumerazioni dell'API di distribuzione peer
 
-Il servizio di distribuzione peer Microsoft supporta le enumerazioni seguenti.
+Il servizio Distribuzione peer Microsoft supporta le enumerazioni seguenti.
 
 
 
 | Enumerazione                                                                               | Descrizione                                                          |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [**PEERDIST \_ \_ info client \_ per \_ \_ classe handle**](/windows/desktop/api/peerdist/ne-peerdist-peerdist_client_info_by_handle_class) | Definisce i possibili valori delle informazioni client.                      |
-| [**\_stato PEERDIST**](/windows/desktop/api/peerdist/ne-peerdist-peerdist_status)                                               | Definisce i possibili valori di stato del servizio di distribuzione peer. |
+| [**INFORMAZIONI CLIENT PEERDIST \_ \_ PER CLASSE \_ \_ HANDLE \_**](/windows/desktop/api/peerdist/ne-peerdist-peerdist_client_info_by_handle_class) | Definisce i possibili valori delle informazioni client.                      |
+| [**STATO \_ PEERDIST**](/windows/desktop/api/peerdist/ne-peerdist-peerdist_status)                                               | Definisce i possibili valori Di stato del servizio Distribuzione peer. |
 
 
 
@@ -30,7 +30,7 @@ Il servizio di distribuzione peer Microsoft supporta le enumerazioni seguenti.
 
 <dl> <dt>
 
-[\_Riferimento all'API di distribuzione peer](peer-distribution-api-reference.md)
+[Informazioni \_ di riferimento sulle API di distribuzione peer](peer-distribution-api-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Ottiene il numero specificato successivo di provider nella sequenza di enumerazione.
+description: Ottiene il successivo numero specificato di provider nella sequenza di enumerazione.
 ms.assetid: 9ef8d330-6f78-4063-825c-9cf5b4f283cf
-title: 'Metodo IEnumPStoreProviders:: Next (PStore. h)'
+title: Metodo IEnumPStoreProviders::Next (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: f468d29682c4e3767d4d8fe7d59e60976f103484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad35f76622abd61c6830f338a670c42a2c2f9178d0d6692044eec62621617976
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691291"
 ---
-# <a name="ienumpstoreprovidersnext-method"></a>IEnumPStoreProviders:: Next (metodo)
+# <a name="ienumpstoreprovidersnext-method"></a>Metodo IEnumPStoreProviders::Next
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
-Ottiene il numero specificato successivo di provider nella sequenza di enumerazione.
+Ottiene il successivo numero specificato di provider nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,21 +43,21 @@ HRESULT Next(
 
 <dl> <dt>
 
-*celt* \[ in\]
+*celt* \[ Pollici\]
 </dt> <dd>
 
 Numero di tipi di provider richiesti.
 
 </dd> <dt>
 
-*rgelt* \[ out\]
+*rgelt* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una stringa in cui restituire il nome del tipo di provider.
 
 </dd> <dt>
 
-*pceltFetched* \[ in uscita\]
+*pceltFetched* \[ in, out\]
 </dt> <dd>
 
 Puntatore al numero di tipi di provider effettivamente forniti.
@@ -66,7 +66,7 @@ Puntatore al numero di tipi di provider effettivamente forniti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT** .
+Il valore restituito è un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Il valore restituito è un valore **HRESULT** .
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl>    |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

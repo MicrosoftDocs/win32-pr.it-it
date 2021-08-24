@@ -3,7 +3,7 @@ title: printf (funzione)
 description: Invia un messaggio shader personalizzato alla coda di informazioni.
 ms.assetid: 0c6c15fc-1da5-4a26-ade0-5a0489e4f564
 keywords:
-- funzione printf HLSL
+- Funzione printf HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74492cc613e22f335eace684300f0380e5751a95
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 47131cacef436572f519b394a02b4aaa357a426dd80a192868712cb3d7779e24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103956008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672521"
 ---
 # <a name="printf-function"></a>printf (funzione)
 
@@ -28,8 +28,8 @@ Invia un messaggio shader personalizzato alla coda di informazioni.
 
 ``` syntax
 void printf(
-   string format,
-    argument ...
+   string format,
+    argument ...
 );
 ```
 
@@ -44,7 +44,7 @@ Stringa di formato.
 
 </dd> <dt>
 
-*argomento...* 
+*discussione...* 
 </dt> <dd>
 
 Argomenti facoltativi.
@@ -57,9 +57,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione non esegue alcuna operazione nei dispositivi che non lo supportano.
+Questa operazione non esegue alcuna operazione nei dispositivi che non la supportano.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -71,7 +71,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -80,9 +80,9 @@ Questa funzione è supportata nei modelli shader seguenti.
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

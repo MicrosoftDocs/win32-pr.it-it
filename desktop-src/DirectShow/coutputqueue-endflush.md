@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 37701526de66c8cd679f6849703c4eb2a1feb3ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d9a283867036254b7a13b45ba152c3f16ecccbdb59d4d59e98c8d1dae7480e13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634221"
 ---
 # <a name="coutputqueueendflush-method"></a>Metodo COutputQueue.EndFlush
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'oggetto usa un thread, questo metodo attende l'evento [**COutputQueue::m \_ evFlushComplete.**](coutputqueue-m-evflushcomplete.md) Il thread segnala questo evento dopo aver liberato eventuali campioni in sospeso. Se l'oggetto non usa un thread, questo metodo chiama il [**metodo COutputQueue::FreeSamples.**](coutputqueue-freesamples.md) Il metodo `EndFlush` chiama quindi il metodo [**IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) sul pin di input.
+Se l'oggetto usa un thread, questo metodo attende [**l'evento COutputQueue::m \_ evFlushComplete.**](coutputqueue-m-evflushcomplete.md) Il thread segnala questo evento dopo aver liberato eventuali esempi in sospeso. Se l'oggetto non usa un thread, questo metodo chiama il metodo [**COutputQueue::FreeSamples.**](coutputqueue-freesamples.md) Il metodo `EndFlush` chiama quindi il metodo [**IPin::EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) sul pin di input.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Se l'oggetto usa un thread, questo metodo attende l'evento [**COutputQueue::m \_
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a98576477df5285dd1682f256da1c875893df5c8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9a5349dc9c9a72a4c3da2fb6e7f3debd617e3921adbf2f11dae00132d38933a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675031"
 ---
 # <a name="id3dxprtbufferistexture-method"></a>Metodo ID3DXPRTBuffer::IsTexture
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **TRUE se** il buffer contiene una trama. restituisce **FALSE in caso contrario.**
+Restituisce **TRUE se** il buffer contiene una trama. restituisce **FALSE in caso** contrario.
 
 ## <a name="requirements"></a>Requisiti
 

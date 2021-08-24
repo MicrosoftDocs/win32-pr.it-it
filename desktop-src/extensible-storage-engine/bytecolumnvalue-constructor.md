@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore ByteColumnValue'
+description: Altre informazioni sul costruttore ByteColumnValue
 title: Costruttore ByteColumnValue
 TOCTitle: 'ByteColumnValue constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ByteColumnValue.#ctor
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d740bf3d315e79b57ca49eec59a5d5bd5088c621
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a50efd9f214632ca6123f434f47fa4390b133bffc9a32bd94b12056a77188c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670051"
 ---
 # <a name="bytecolumnvalue-constructor"></a>Costruttore ByteColumnValue
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,4 +58,4 @@ public ByteColumnValue()
 
 [Membri di ByteColumnValue](./bytecolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

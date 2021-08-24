@@ -1,17 +1,17 @@
 ---
 description: Determina la lunghezza, in caratteri, del testo associato a una finestra.
 ms.assetid: 9e185435-a624-4380-adfd-be4f3645ee5d
-title: Messaggio WM_GETTEXTLENGTH (winuser. h)
+title: WM_GETTEXTLENGTH messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efc058033f9c4939137414d305d0717b54bef54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bc01f6f7a2b74df41e97a84bb4d7e17d9c3e21966215fcbcca04222d1d5537f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710391"
 ---
-# <a name="wm_gettextlength-message"></a>\_Messaggio GETTEXTLENGTH WM
+# <a name="wm_gettextlength-message"></a>Messaggio \_ WM GETTEXTLENGTH
 
 Determina la lunghezza, in caratteri, del testo associato a una finestra.
 
@@ -29,14 +29,14 @@ Determina la lunghezza, in caratteri, del testo associato a una finestra.
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> </dl>
 
@@ -44,17 +44,17 @@ Questo parametro non viene utilizzato e deve essere zero.
 
 Tipo: **LRESULT**
 
-Il valore restituito è la lunghezza del testo in caratteri, escluso il carattere null di terminazione.
+Il valore restituito è la lunghezza del testo in caratteri, senza includere il carattere Null di terminazione.
 
 ## <a name="remarks"></a>Commenti
 
-Per un controllo di modifica, il testo da copiare è il contenuto del controllo di modifica. Per una casella combinata, il testo è il contenuto della parte del controllo di modifica (o del testo statico) della casella combinata. Per un pulsante, il testo è il nome del pulsante. Per le altre finestre, il testo è il titolo della finestra. Per determinare la lunghezza di un elemento in una casella di riepilogo, un'applicazione può usare il messaggio [**\_ GETTEXTLEN lb**](../controls/lb-gettextlen.md) .
+Per un controllo di modifica, il testo da copiare è il contenuto del controllo di modifica. Per una casella combinata, il testo è il contenuto della parte del controllo di modifica (o testo statico) della casella combinata. Per un pulsante, il testo è il nome del pulsante. Per le altre finestre, il testo è il titolo della finestra. Per determinare la lunghezza di un elemento in una casella di riepilogo, un'applicazione può usare il messaggio [**\_ LB GETTEXTLEN.**](../controls/lb-gettextlen.md)
 
-Quando viene inviato il messaggio **WM \_ GETTEXTLENGTH** , la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) restituisce la lunghezza, in caratteri, del testo. In determinate condizioni, la funzione **DefWindowProc** restituisce un valore maggiore della lunghezza effettiva del testo. Questa situazione si verifica con determinate combinazioni di ANSI e Unicode ed è causata dal sistema che consente la presenza di caratteri DBCS (Double-byte character set) all'interno del testo. Il valore restituito, tuttavia, sarà sempre almeno uguale alla lunghezza effettiva del testo; è pertanto possibile utilizzarlo sempre per guidare l'allocazione del buffer. Questo comportamento può verificarsi quando un'applicazione utilizza funzioni ANSI e finestre di dialogo comuni che utilizzano Unicode.
+Quando viene **inviato il messaggio WM \_ GETTEXTLENGTH,** la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) restituisce la lunghezza, in caratteri, del testo. In determinate condizioni, **la funzione DefWindowProc** restituisce un valore maggiore della lunghezza effettiva del testo. Ciò si verifica con determinate combinazioni di ANSI e Unicode ed è dovuto al sistema che consente la possibile esistenza di caratteri DBCS (Double Byte Character Set) all'interno del testo. Il valore restituito, tuttavia, sarà sempre almeno quanto la lunghezza effettiva del testo. È quindi sempre possibile usarlo per guidare l'allocazione del buffer. Questo comportamento può verificarsi quando un'applicazione utilizza funzioni ANSI e dialoghe comuni, che usano Unicode.
 
-Per ottenere la lunghezza esatta del testo, usare i messaggi [**WM \_ gettext**](wm-gettext.md), [**lb \_ gettext**](../controls/lb-gettext.md)o [**CB \_ GETLBTEXT**](../controls/cb-getlbtext.md) oppure la funzione [**GetWindowText**](/windows/win32/api/winuser/nf-winuser-getwindowtexta) .
+Per ottenere la lunghezza esatta del testo, usare i messaggi [**WM \_ GETTEXT**](wm-gettext.md), [**LB \_ GETTEXT**](../controls/lb-gettext.md)o [**\_ CB GETLBTEXT**](../controls/cb-getlbtext.md) o la [**funzione GetWindowText.**](/windows/win32/api/winuser/nf-winuser-getwindowtexta)
 
-L'invio di un messaggio **WM \_ GETTEXTLENGTH** a un controllo statico non di testo, ad esempio una bitmap statica o un'icona statica controlc, non restituisce un valore stringa. Viene invece restituito zero.
+L'invio di un messaggio **WM \_ GETTEXTLENGTH** a un controllo statico non di testo, ad esempio una bitmap statica o un controllo icona statica, non restituisce un valore stringa. Restituisce invece zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ L'invio di un messaggio **WM \_ GETTEXTLENGTH** a un controllo statico non di te
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ L'invio di un messaggio **WM \_ GETTEXTLENGTH** a un controllo statico non di te
 [**GetWindowTextLength**](/windows/win32/api/winuser/nf-winuser-getwindowtextlengtha)
 </dt> <dt>
 
-[**WM \_ GETtext**](wm-gettext.md)
+[**WM \_ GETTEXT**](wm-gettext.md)
 </dt> <dt>
 
 **Informazioni concettuali**
@@ -99,10 +99,10 @@ L'invio di un messaggio **WM \_ GETTEXTLENGTH** a un controllo statico non di te
 [**CB \_ GETLBTEXT**](../controls/cb-getlbtext.md)
 </dt> <dt>
 
-[**GetText LB \_**](../controls/lb-gettext.md)
+[**LB \_ GETTEXT**](../controls/lb-gettext.md)
 </dt> <dt>
 
-[**\_GETTEXTLEN lb**](../controls/lb-gettextlen.md)
+[**LB \_ GETTEXTLEN**](../controls/lb-gettextlen.md)
 </dt> </dl>
 
  

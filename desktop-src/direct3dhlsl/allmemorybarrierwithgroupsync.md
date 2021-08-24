@@ -1,6 +1,6 @@
 ---
-title: AllMemoryBarrierWithGroupSync (funzione)
-description: Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria non sono stati completati e tutti i thread del gruppo non hanno raggiunto questa chiamata.
+title: Funzione AllMemoryBarrierWithGroupSync
+description: Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria non sono stati completati e tutti i thread nel gruppo non hanno raggiunto questa chiamata.
 ms.assetid: 831830e7-19ce-41d0-b555-44a083b67cdc
 keywords:
 - Funzione AllMemoryBarrierWithGroupSync HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1fc005545485b7f894729ab6c7d7975acfd5b6d4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 69d3c146ff04597b7eca13dd5cbef93dc1c79f81709353bf5b4fa1a993a8da22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626691"
 ---
-# <a name="allmemorybarrierwithgroupsync-function"></a>AllMemoryBarrierWithGroupSync (funzione)
+# <a name="allmemorybarrierwithgroupsync-function"></a>Funzione AllMemoryBarrierWithGroupSync
 
-Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria non sono stati completati e tutti i thread del gruppo non hanno raggiunto questa chiamata.
+Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi alla memoria non sono stati completati e tutti i thread nel gruppo non hanno raggiunto questa chiamata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Una barriera di memoria garantisce il completamento delle operazioni di memoria in attesa. I thread sono sincronizzati alle barriere GroupSync. Questo potrebbe bloccare un thread o thread se sono in corso operazioni di memoria.
+Una barriera di memoria garantisce il completamento delle operazioni di memoria in sospeso. I thread vengono sincronizzati in base alle barriere di GroupSync. Ciò può bloccare uno o più thread se sono in corso operazioni di memoria.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -50,23 +50,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -75,12 +75,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

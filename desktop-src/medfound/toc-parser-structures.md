@@ -1,26 +1,26 @@
 ---
-description: Strutture dei parser del sommario
+description: Strutture del parser sommario
 ms.assetid: 7438b09e-e649-462d-9a36-fb19e0817d75
-title: Strutture dei parser del sommario
+title: Strutture del parser sommario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c4b5129c0418970050886bf65d8f1da4f9cb76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e9346b52d7f3a4836473b2b2356cafd4fc9121f6a42dec90a17e9d90167ae0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119599851"
 ---
-# <a name="table-of-contents-parser-structures"></a>Strutture dei parser del sommario
+# <a name="table-of-contents-parser-structures"></a>Strutture del parser sommario
 
-Le strutture seguenti vengono usate dal parser di sommario.
+Le strutture seguenti vengono usate dal parser sommario.
 
 
 
 | Struttura                                              | Descrizione                                                        |
 |--------------------------------------------------------|--------------------------------------------------------------------|
-| [**\_descrittore Sommario**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_descriptor)              | Contiene informazioni descrittive per un sommario.             |
-| [**\_descrittore voce Sommario \_**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_entry_descriptor) | Contiene informazioni descrittive per una voce in un sommario. |
+| [**DESCRITTORE \_ DEL SOMMARIO**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_descriptor)              | Contiene informazioni descrittive per un sommario.             |
+| [**DESCRITTORE VOCE \_ \_ SOMMARIO**](/windows/desktop/api/wmcodecdsp/ns-wmcodecdsp-toc_entry_descriptor) | Contiene informazioni descrittive per una voce in un sommario. |
 
 
 
@@ -30,7 +30,7 @@ Le strutture seguenti vengono usate dal parser di sommario.
 
 <dl> <dt>
 
-[Guida di riferimento al parser Sommario](toc-parser-reference.md)
+[Informazioni di riferimento sul parser sommario](toc-parser-reference.md)
 </dt> </dl>
 
  

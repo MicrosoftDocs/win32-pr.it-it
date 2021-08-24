@@ -1,7 +1,7 @@
 - name: Licenze per sviluppatori
   href: developer-licensing-portal.md
   items:
-    - name: API licenze per sviluppatori
+    - name: API di licenza per sviluppatori
       href: developer-license-apis.md
       items:
         - name: CheckDeveloperLicense

@@ -1,15 +1,15 @@
 ---
-description: Il metodo DVDAdm. SaveParentalCountry Salva il nuovo paese/area padre dell'applicazione nel registro di sistema.
+description: Il metodo DVDAdm.SaveParentalCountry salva il nuovo paese/area genitori dell'applicazione nel Registro di sistema.
 ms.assetid: 2185ad7d-c7c1-4d8b-82e7-5ed5fffaff26
-title: Metodo SaveParentalCountry (Segment. h)
+title: Metodo SaveParentalCountry (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ca47a6ca10f25298b4eb10fdcf532c8d764b96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9d5391982129c799e6a565da362837a557765cf46604653f4f702ed38dcb910e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651211"
 ---
 # <a name="saveparentalcountry-method"></a>Metodo SaveParentalCountry
 
@@ -18,7 +18,7 @@ ms.locfileid: "106328609"
 
  
 
-Il `DVDAdm.SaveParentalCountry` metodo salva il nuovo paese/area padre dell'applicazione nel registro di sistema.
+Il `DVDAdm.SaveParentalCountry` metodo salva il nuovo paese/area genitori dell'applicazione nel Registro di sistema.
 
 ``` syntax
 DVD.DVDAdm.SaveParentalCountry(iCountry, sUserName, sPassword)
@@ -31,21 +31,21 @@ DVD.DVDAdm.SaveParentalCountry(iCountry, sUserName, sPassword)
 <span id="iCountry"></span><span id="icountry"></span><span id="ICOUNTRY"></span>*iCountry*
 </dt> <dd>
 
-Specifica il paese/area padre come intero.
+Specifica il paese/area geografica del padre come integer.
 
 </dd> <dt>
 
 <span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
 </dt> <dd>
 
-Specifica il nome utente sotto forma di stringa. (Attualmente ignorata).
+Specifica il nome utente come stringa. (Attualmente ignorato).
 
 </dd> <dt>
 
 <span id="sPassword"></span><span id="spassword"></span><span id="SPASSWORD"></span>*sPassword*
 </dt> <dd>
 
-Specifica la password sotto forma di stringa.
+Specifica la password come stringa.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo consente a un utente che conosce la password corrente di salvare una nuova impostazione del paese padre/area geografica nel registro di sistema. Come per tutti i metodi di **MSDVDAdm**, questo metodo non influisce sul livello corrente del lettore. modifica solo l'impostazione del registro di sistema, in modo che la volta successiva che viene creato l'oggetto MSWebDVD verrà aperto con il nuovo paese/area geografica. Per modificare il paese padre/area geografica nel lettore, chiamare [**SelectParentalCountry**](selectparentalcountry-method.md), che non modifica l'impostazione del registro di sistema.
+Questo metodo consente a un utente che conosce la password corrente di salvare una nuova impostazione del paese/area geografica dei genitori nel Registro di sistema. Come per tutti i metodi di **MSDVDAdm,** questo metodo non influisce sul livello corrente nel lettore. modifica solo l'impostazione del Registro di sistema, in modo che alla successiva creazione dell'oggetto MSWebDVD, si aprirà con il nuovo paese/area geografica. Per modificare il paese/area geografica del lettore, chiamare [**SelectParentalCountry**](selectparentalcountry-method.md), che non modifica l'impostazione del Registro di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Questo metodo consente a un utente che conosce la password corrente di salvare u
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

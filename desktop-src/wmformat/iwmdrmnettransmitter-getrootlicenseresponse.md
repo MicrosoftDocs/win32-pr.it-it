@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMNetTransmitter GetRootLicenseResponse (wmdrmsdk. h)
-description: Il metodo GetRootLicenseResponse genera un messaggio di risposta di licenza radice.
+title: Metodo IWMDRMNetTransmitter GetRootLicenseResponse (Wmdrmsdk.h)
+description: Il metodo GetRootLicenseResponse genera un messaggio di risposta della licenza radice.
 ms.assetid: c735ee52-f0e0-4404-881b-18ee9a7fa9f9
 keywords:
-- Metodo GetRootLicenseResponse Windows Media Format
-- Metodo GetRootLicenseResponse Windows Media Format, interfaccia IWMDRMNetTransmitter
-- Interfaccia IWMDRMNetTransmitter-formato Windows Media, metodo GetRootLicenseResponse
+- Metodo GetRootLicenseResponse in formato Windows Media
+- Metodo GetRootLicenseResponse windows Media Format , interfaccia IWMDRMNetTransmitter
+- IWMDRMNetTransmitter interface windows Media Format , Metodo GetRootLicenseResponse
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3497a3eaedb872b7d2c9eb5d7782d01f8b35462
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de89389163a9eae66a0dcda14dd6b9699d3db9650140cceac6498b2ab77a4e44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707931"
 ---
-# <a name="iwmdrmnettransmittergetrootlicenseresponse-method"></a>Metodo IWMDRMNetTransmitter:: GetRootLicenseResponse
+# <a name="iwmdrmnettransmittergetrootlicenseresponse-method"></a>Metodo IWMDRMNetTransmitter::GetRootLicenseResponse
 
-Il metodo **GetRootLicenseResponse** genera un messaggio di risposta di licenza radice.
+Il **metodo GetRootLicenseResponse** genera un messaggio di risposta della licenza radice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ HRESULT GetRootLicenseResponse(
 
 <dl> <dt>
 
-*bstrKID* \[ in\]
+*bstrKID* \[ Pollici\]
 </dt> <dd>
 
-Identificatore di chiave con codifica base64 da usare per la nuova licenza radice. L'identificatore di chiave deve essere un valore GUID generato in modo casuale.
+Identificatore di chiave con codifica Base64 da usare per la nuova licenza radice. L'identificatore di chiave deve essere un valore GUID generato in modo casuale.
 
 </dd> <dt>
 
-*ppbLicenseResponse* \[ out\]
+*ppbLicenseResponse* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di una variabile che riceve l'indirizzo della risposta di licenza generata. Al termine di questi dati, è necessario rilasciare la memoria chiamando **CoTaskMemFree**.
 
 </dd> <dt>
 
-*pcbLicenseResponse* \[ out\]
+*pcbLicenseResponse* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve le dimensioni della risposta di licenza, in byte.
+Indirizzo di una variabile che riceve le dimensioni della risposta della licenza, in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM di DRM \_ \_ troppo \_ piccoli**</dt> </dl> | È necessario un elenco di revoche di contenuti aggiornato.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
+| <dl> <dt>**NS \_ E \_ DRM RIV TROPPO \_ \_ \_ PICCOLO**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
 
 
 
@@ -82,11 +82,11 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-La licenza radice generata viene creata usando le informazioni dei dati di richiesta della licenza, elaborati per l'interfaccia chiamando [**SetLicenseChallenge**](iwmdrmnettransmitter-setlicensechallenge.md).
+La licenza radice generata viene creata usando le informazioni dei dati di richiesta di licenza, elaborate per l'interfaccia chiamando [**SetLicenseChallenge**](iwmdrmnettransmitter-setlicensechallenge.md).
 
-La licenza radice viene utilizzata per la generazione di licenze foglia, che viene eseguita chiamando il metodo [**GetLeafLicenseResponse**](iwmdrmnettransmitter-getleaflicenseresponse.md) . L'interfaccia **IWMDRMNetTransmitter** gestisce una copia della licenza radice per tale uso.
+La licenza radice viene usata nella generazione di licenze foglia, che viene eseguita chiamando il [**metodo GetLeafLicenseResponse.**](iwmdrmnettransmitter-getleaflicenseresponse.md) **L'interfaccia IWMDRMNetTransmitter** mantiene una copia della licenza radice per tale uso.
 
-La licenza radice creata chiamando questo metodo non dispone di alcun criterio ed è configurata in modo che non possa essere resa persistente nel dispositivo di destinazione.
+La licenza radice creata chiamando questo metodo non dispone di criteri e viene configurata in modo che non possa essere resa persistente nel dispositivo ricevente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ La licenza radice creata chiamando questo metodo non dispone di alcun criterio e
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: QuadReadAcrossX (funzione)
+title: Funzione QuadReadAcrossX
 description: Restituisce il valore locale specificato letto dall'altra corsia in questo quad nella direzione X.
 ms.assetid: 7A7E0623-30EC-4167-90A5-D79E10A394CC
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cd41b0bd84861d23153f02ba6328d17b70287866
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 86a2f525a79fa2458e4f7e0ef44379053e03128782d2625e1bdceb23ec518b16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104118662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672441"
 ---
-# <a name="quadreadacrossx-function"></a>QuadReadAcrossX (funzione)
+# <a name="quadreadacrossx-function"></a>Funzione QuadReadAcrossX
 
 Restituisce il valore locale specificato letto dall'altra corsia in questo quad nella direzione X.
 
@@ -49,9 +49,9 @@ Valore locale specificato. Se la corsia di origine è inattiva, i risultati non 
 
 ## <a name="remarks"></a>Commenti
 
-Per altre informazioni sui quad, vedere [Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md).
+Per altre informazioni sui quad, vedere [Panoramica del modello shader 6.](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 
-Questa funzione è supportata dal modello di shader 6,0 solo in pixel e compute shader.
+Questa funzione è supportata dal modello di shader 6.0 solo in pixel e compute shader.
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 173a8e0c1b3130a399152187eb52288a0306051c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b719e1b40c3e8cd04ca0750e69c68bbd4a0a59394c3334818f091900606311af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634781"
 ---
 # <a name="d3dx10computenormalmap-function"></a>Funzione D3DX10ComputeNormalMap
 
@@ -76,7 +76,7 @@ Un flag CHANNEL D3DX \_ che specifica l'origine delle informazioni sull'altezza.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Moltiplicatore di valori costante che aumenta (o diminuisce) i valori nella mappa normale. I valori più elevati in genere rendono le dossi più visibili, i valori più bassi in genere rendono le dossi meno visibili.
+Moltiplicatore di valori costanti che aumenta o diminuisce i valori nella mappa normale. I valori più alti in genere rendono più visibili i rilievi, i valori più bassi in genere rendono i rilievi meno visibili.
 
 </dd> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: 'Proprietà LocationDisp.CivicAddressReportFactory.Status : stato del report corrente.'
+description: 'Proprietà LocationDisp.CivicAddressReportFactory.Status: stato del report corrente.'
 ms.assetid: 3aae0b61-cdaa-4131-b6e1-406813bb1848
-title: LocationDisp.CivicAddressReportFactory.Status - proprietà
+title: Proprietà LocationDisp.CivicAddressReportFactory.Status
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119693121"
 ---
-# <a name="locationdispcivicaddressreportfactorystatus-property"></a>LocationDisp.CivicAddressReportFactory.Status - proprietà
+# <a name="locationdispcivicaddressreportfactorystatus-property"></a>Proprietà LocationDisp.CivicAddressReportFactory.Status
 
 \[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
-Stato del report corrente.
+Stato corrente del report.
 
 Questa proprietà è di sola lettura.
 
@@ -56,7 +56,7 @@ Questa proprietà è un numero di sola **lettura** (unsigned long).
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questa proprietà, vedere [Listening for Civic Address Report Events](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questa proprietà, vedere [Ascolto di eventi del report degli indirizzi civici](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisiti
 

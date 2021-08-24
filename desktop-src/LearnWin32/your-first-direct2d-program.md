@@ -1,23 +1,23 @@
 ---
-title: Primo programma Direct2D
-description: Viene ora creato il primo programma Direct2D. Il programma non esegue alcuna operazione, \ 8212; disegna semplicemente un cerchio che riempie l'area client della finestra. Questo programma introduce tuttavia molti concetti di Direct2D essenziali.
+title: Il primo programma Direct2D
+description: Si creerà ora il primo programma Direct2D. Il programma non esegue alcun'operazione di fantasia \ 8212; disegna semplicemente un cerchio che riempie l'area client della finestra. Questo programma introduce tuttavia molti concetti essenziali di Direct2D.
 ms.assetid: 940cc5e4-2952-4714-bf32-c611a965f819
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d445f98c5dc6a6e5d1aa91d913010cb406a67992
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3cb7b9b4a81b9e3767f9d53d0c5872b170772c1cb60b4a74c599401de342ee05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754391"
 ---
-# <a name="your-first-direct2d-program"></a>Primo programma Direct2D
+# <a name="your-first-direct2d-program"></a>Il primo programma Direct2D
 
-Viene ora creato il primo programma Direct2D. Il programma non esegue alcuna operazione, bensì disegna semplicemente un cerchio che riempie l'area client della finestra. Questo programma introduce tuttavia molti concetti di Direct2D essenziali.
+Si creerà ora il primo programma Direct2D. Il programma non esegue nulla di sofisticato, ma disegna semplicemente un cerchio che riempie l'area client della finestra. Questo programma introduce tuttavia molti concetti essenziali di Direct2D.
 
-![screenshot del programma Circle.](images/graphics08.png)
+![screenshot del programma circle.](images/graphics08.png)
 
-Ecco il listato di codice per il programma Circle. Il programma usa nuovamente la `BaseWindow` classe definita nell'argomento [gestione dello stato dell'applicazione](managing-application-state-.md). Negli argomenti successivi il codice viene esaminato in dettaglio.
+Ecco l'elenco di codice per il programma Circle. Il programma usa nuovamente la `BaseWindow` classe definita nell'argomento Gestione dello stato [dell'applicazione](managing-application-state-.md). Negli argomenti successivi il codice verrà esaminato in dettaglio.
 
 
 ```C++
@@ -204,17 +204,17 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
-È possibile scaricare il progetto di Visual Studio completo dall' [esempio del cerchio Direct2D](direct2d-circle-sample.md).
+È possibile scaricare il progetto completo Visual Studio da [Direct2D Circle Sample](direct2d-circle-sample.md).
 
 ## <a name="the-d2d1-namespace"></a>Spazio dei nomi D2D1
 
-Lo spazio dei nomi **d2d1** contiene le funzioni e le classi helper. Che non fanno parte dell'API Direct2D: è possibile programmare Direct2D senza utilizzarle, ma consentono di semplificare il codice. Lo spazio dei nomi **d2d1** contiene:
+Lo **spazio dei nomi D2D1** contiene funzioni e classi helper. Non fanno esclusivamente parte dell'API Direct2D, è possibile programmare Direct2D senza usarle, ma consentono di semplificare il codice. Lo **spazio dei nomi D2D1** contiene:
 
 -   Classe [**ColorF**](/windows/desktop/api/d2d1helper/nl-d2d1helper-colorf) per la costruzione di valori di colore.
--   [**Matrix3x2F**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) per la costruzione di matrici di trasformazione.
+-   [**Matrice3x2F per**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) la costruzione di matrici di trasformazione.
 -   Set di funzioni per inizializzare le strutture Direct2D.
 
-In questo modulo vengono visualizzati esempi dello spazio dei nomi **d2d1** .
+In questo modulo verranno visualizzati esempi dello spazio dei **nomi D2D1.**
 
 ## <a name="next"></a>Prossima
 
@@ -227,6 +227,6 @@ In questo modulo vengono visualizzati esempi dello spazio dei nomi **d2d1** .
 [Esempio di cerchio Direct2D](direct2d-circle-sample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
 title: Metodo ChangeProductKeyMethod della classe MDM_WindowsLicensing
-description: Questo metodo installa un codice Product Key per i dispositivi Windows 10 desktop. Il punto non viene riavviato. Vedere anche ChangeProductKey.
+description: Questo metodo installa un codice Product Key per i Windows 10 desktop. Punto non riavvio. Vedere anche ChangeProductKey.
 ms.assetid: 1d9e3243-2ca4-427b-bda2-d33e1e70c80d
 keywords:
 - Metodo ChangeProductKeyMethod
-- Metodo ChangeProductKeyMethod, classe MDM_WindowsLicensing
-- Classe MDM_WindowsLicensing, metodo ChangeProductKeyMethod
+- Metodo ChangeProductKeyMethod, MDM_WindowsLicensing classe
+- MDM_WindowsLicensing classe, metodo ChangeProductKeyMethod
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e00345fb0e23655b457e0540c70289a169c54ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c164a97061b5e558a199a7d7e19a6bf26d7efc5d2a82c0a00e3831985c1a1cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693351"
 ---
-# <a name="changeproductkeymethod-method-of-the-mdm_windowslicensing-class"></a>Metodo ChangeProductKeyMethod della classe MDM \_ WindowsLicensing
+# <a name="changeproductkeymethod-method-of-the-mdm_windowslicensing-class"></a>Metodo ChangeProductKeyMethod della classe \_ MDM WindowsLicensing
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Questo metodo installa un codice Product Key per i dispositivi Windows 10 desktop. Il punto non viene riavviato. Vedere anche [ChangeProductKey](/windows/client-management/mdm/windowslicensing-csp)
+Questo metodo installa un codice Product Key per i Windows 10 desktop. Punto non riavvio. Vedere anche [ChangeProductKey](/windows/client-management/mdm/windowslicensing-csp)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ uint32 ChangeProductKeyMethod(
 
 <dl> <dt>
 
-*param* \[ in\]
+*param* \[ Pollici\]
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -53,10 +53,10 @@ uint32 ChangeProductKeyMethod(
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -65,7 +65,7 @@ uint32 ChangeProductKeyMethod(
 
 <dl> <dt>
 
-[**\_WINDOWSLICENSING MDM**](mdm-windowslicensing.md)
+[**Windows \_ MDMLicensing**](mdm-windowslicensing.md)
 </dt> </dl>
 
  

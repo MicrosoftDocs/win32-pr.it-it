@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. TooltipTitle
-description: Rappresenta il titolo di una descrizione comandi.
+title: Command.TooltipTitle - proprietà
+description: Rappresenta un titolo della descrizione comando.
 ms.assetid: b06a7a6a-fbdd-464b-b804-e62912d6e176
 keywords:
-- Barra multifunzione di Windows Command. TooltipTitle
+- Proprietà Command.TooltipTitle Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60f4ddea77fbf88a15d5d27e90ca5660bc0edb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f9050c97980b0ffa2c2c4828a8ac1d85dfbd1a40ed8330d144db2c0d3802524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710551"
 ---
-# <a name="commandtooltiptitle-property"></a>Proprietà Command. TooltipTitle
+# <a name="commandtooltiptitle-property"></a>Command.TooltipTitle - proprietà
 
-Rappresenta il titolo di una descrizione comandi.
+Rappresenta un titolo della descrizione comando.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -61,27 +61,27 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-**Command. TooltipTitle** può contenere un valore di tipo *xs: String* vincolato a qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.
+**Command.TooltipTitle** può contenere un valore di tipo *xs:string* vincolato a qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.
 
 > [!Note]  
-> Usare il riferimento al carattere XML UCS (Universal Character Set) `&#xA;` per specificare un'interruzioni di riga.
+> Usare il riferimento ai caratteri XML del set di caratteri universali (UCS) `&#xA;` per specificare un'interruzione di riga.
 
  
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
-Se non viene specificato alcun valore per **Command. TooltipTitle**, l'elemento figlio [**stringa**](windowsribbon-element-string.md) è obbligatorio.
+Se non viene specificato alcun valore per **Command.TooltipTitle**, [**l'elemento**](windowsribbon-element-string.md) figlio String è obbligatorio.
 
 > [!Note]  
-> Se **Command. TooltipTitle** contiene sia un elemento Value che un elemento figlio [**String**](windowsribbon-element-string.md) , la **stringa** avrà la precedenza.
+> Se **Command.TooltipTitle contiene** sia un valore che un elemento figlio [**String,**](windowsribbon-element-string.md) **String** ha la precedenza.
 
  
 
-**Command. TooltipTitle** supporta solo l'allineamento a sinistra.
+**Command.TooltipTitle** supporta solo l'allineamento a sinistra.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](windowsribbon-element-command.md) con una Dichiarazione **Command. TooltipTitle** .
+L'esempio seguente illustra il markup per un [**elemento Command**](windowsribbon-element-command.md) con una **dichiarazione Command.TooltipTitle.**
 
 
 ```XML
@@ -111,8 +111,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -120,7 +120,7 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 <dl> <dt>
 
-[Interfaccia utente \_ pkey \_ TooltipTitle](windowsribbon-reference-properties-uipkey-tooltiptitle.md)
+[UI \_ PKEY \_ TooltipTitle](windowsribbon-reference-properties-uipkey-tooltiptitle.md)
 </dt> </dl>
 
  

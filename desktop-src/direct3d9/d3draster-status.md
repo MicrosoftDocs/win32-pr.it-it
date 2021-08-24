@@ -1,7 +1,7 @@
 ---
 description: Descrive lo stato raster.
 ms.assetid: f7b5b714-8fc8-47b8-adec-1089b8d07081
-title: Struttura D3DRASTER_STATUS (D3D9Types. h)
+title: D3DRASTER_STATUS struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e77ab0e6ee164eadae862ed03df5652c21ba7040
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fc8a1e2995a9353a02df120b109eb32ad0914821e5690440c7228fbc8e7b6c8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676401"
 ---
-# <a name="d3draster_status-structure"></a>\_Struttura di stato D3DRASTER
+# <a name="d3draster_status-structure"></a>Struttura D3DRASTER \_ STATUS
 
 Descrive lo stato raster.
 
@@ -43,24 +43,24 @@ typedef struct D3DRASTER_STATUS {
 **InVBlank**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-**True** se il raster è nel periodo vuoto verticale. **False** se il raster non è nel periodo di blanking verticale.
+**TRUE** se il raster si trova nel punto vuoto verticale. **FALSE** se il raster non si trova nel punto vuoto verticale.
 
 </dd> <dt>
 
 **ScanLine**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se InVBlank è **false**, questo valore è un Integer approssimativamente corrispondente alla riga di analisi corrente disegnata dal raster. Le righe di analisi sono numerate nello stesso modo delle coordinate di superficie Direct3D: 0 è la parte superiore della superficie primaria, estendendo al valore (altezza della superficie-1) nella parte inferiore dello schermo.
+Se InVBlank è **FALSE,** questo valore è un numero intero approssimativamente corrispondente alla linea di analisi corrente disegnata dal raster. Le linee di digitalizzazione sono numerate nello stesso modo delle coordinate della superficie Direct3D: 0 è la parte superiore della superficie primaria, che si estende fino al valore (altezza della superficie - 1) nella parte inferiore dello schermo.
 
-Se InVBlank è **true**, questo valore è impostato su zero e può essere ignorato.
+Se InVBlank è **TRUE,** questo valore è impostato su zero e può essere ignorato.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Se InVBlank è **true**, questo valore è impostato su zero e può essere ignora
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

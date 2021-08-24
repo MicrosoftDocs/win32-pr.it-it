@@ -1,9 +1,9 @@
 ---
-title: DVD. dominio
-description: La proprietà del dominio recupera il dominio corrente del DVD.
+title: DVD.domain
+description: La proprietà domain recupera il dominio corrente del DVD.
 ms.assetid: 74f4a6a3-8518-48c7-b023-f0255a3a62fd
 keywords:
-- DVD. dominio Windows Media Player
+- DVD.domain Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db4a2af92abe533fed7a13e48cb7c0724223bbc1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0db8e6e212fec11de5f3619c2c1f97a90f579b34515983b0384d0d08ab0ff60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651171"
 ---
-# <a name="dvddomain"></a>DVD. dominio
+# <a name="dvddomain"></a>DVD.domain
 
-La proprietà del **dominio** Recupera il dominio corrente del DVD.
+La **proprietà** domain recupera il dominio corrente del DVD.
 
 ``` syntax
 player.dvd.domain
@@ -32,18 +32,18 @@ player.dvd.domain
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura contenente uno dei valori seguenti.
+Questa proprietà è una stringa di sola **lettura** contenente uno dei valori seguenti.
 
 
 
 | string            | Descrizione                                                                                                                           |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | firstPlay         | Esecuzione dell'inizializzazione predefinita di un disco DVD.                                                                                      |
-| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come menu di scelta rapida per Windows Media Player. Comunemente chiamato menu titolo o menu in alto. |
+| videoManagerMenu  | Visualizzazione dei menu per l'intero disco. Noto anche come topMenu per Windows Media Player. Comunemente chiamato menu del titolo o menu superiore. |
 | videoTitleSetMenu | Visualizzazione dei menu per il set di titoli corrente. Noto anche come titleMenu per Windows Media Player. Comunemente chiamato menu radice.              |
 | title             | In genere viene visualizzato il titolo corrente.                                                                                                 |
-| stop              | Il navigatore DVD si trova nel dominio di arresto DVD.                                                                                          |
-| Non definito         | Il lettore non è in nessun dominio DVD.                                                                                                      |
+| stop              | Lo strumento di spostamento DVD si trova nel dominio DVD Stop.                                                                                          |
+| Non definito         | Il lettore non si trova in alcun dominio DVD.                                                                                                      |
 
 
 
@@ -61,8 +61,8 @@ Ogni DVD viene creato in modo diverso. Alcuni DVD non contengono i domini firstP
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
 | Versione<br/>                  | Windows Media Player per Windows XP o versione successiva<br/>                            |
 | DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 

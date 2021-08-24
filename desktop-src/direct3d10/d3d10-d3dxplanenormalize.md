@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8b3499297a008b0d8f5dc705080bbd1d5bbe3af4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cf4429e324a5ce1554c5c37c929625153c74764cb9d03618f633f35ecd416748
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754151"
 ---
 # <a name="d3dxplanenormalize-function-d3dx10mathh"></a>Funzione D3DXPlaneNormalize (D3DX10Math.h)
 

@@ -1,7 +1,7 @@
 ---
 description: Imposta la matrice di offset dell'osso.
 ms.assetid: f8ac1117-510d-42af-a6bf-422cbaaf6b74
-title: 'Metodo ID3DXSkinInfo:: SetBoneOffsetMatrix (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::SetBoneOffsetMatrix (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 283d36bb68e33cfa0e2349bab304b0cdde7ef77e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d5daf20697777cfbf1b72d4ab18936f81c262ba9b23379d6089bffca8b9a516
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103761920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119674711"
 ---
-# <a name="id3dxskininfosetboneoffsetmatrix-method"></a>Metodo ID3DXSkinInfo:: SetBoneOffsetMatrix
+# <a name="id3dxskininfosetboneoffsetmatrix-method"></a>Metodo ID3DXSkinInfo::SetBoneOffsetMatrix
 
 Imposta la matrice di offset dell'osso.
 
@@ -41,16 +41,16 @@ HRESULT SetBoneOffsetMatrix(
 
 <dl> <dt>
 
-*Osso* \[ in\]
+*Osso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero osso.
+Numero di osso.
 
 </dd> <dt>
 
-*pBoneTransform* \[ in\]
+*pBoneTransform* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-I nomi di osso vengono restituiti da [**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md).
+I nomi delle ossee vengono restituiti da [**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ I nomi di osso vengono restituiti da [**D3DXLoadMeshFromXof**](d3dxloadmeshfromx
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

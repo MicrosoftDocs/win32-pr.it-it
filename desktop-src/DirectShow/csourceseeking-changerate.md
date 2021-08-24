@@ -1,7 +1,7 @@
 ---
 description: Il metodo ChangeRate viene chiamato quando cambia la velocità di riproduzione.
 ms.assetid: c4f1f9d0-6c09-4cab-8a37-dd1ff3f5619f
-title: Metodo CSourceSeeking. ChangeRate (Ctlutil. h)
+title: Metodo CSourceSeeking.ChangeRate (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 02fab05d65929233b97f7d53e497bae6593c472a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee74c8eb39fbebab1e58442c3b12f8342610ed792f4eb80ee70e5f44c3cca236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633941"
 ---
-# <a name="csourceseekingchangerate-method"></a>CSourceSeeking. ChangeRate (metodo)
+# <a name="csourceseekingchangerate-method"></a>Metodo CSourceSeeking.ChangeRate
 
-Il `ChangeRate` metodo viene chiamato quando viene modificata la velocità di riproduzione.
+Il `ChangeRate` metodo viene chiamato quando cambia la velocità di riproduzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CSourceSeeking::**](csourceseeking-setrate.md) SetValue chiama questo metodo, che deve essere implementato dalla classe derivata. Il metodo **serate** aggiorna la variabile membro [**CSourceSeeking:: m \_ dRateSeeking**](csourceseeking-m-drateseeking.md) , ma non convalida il nuovo valore. Una frequenza pari a zero deve essere sempre rifiutata. La velocità inferiore a zero indica una riproduzione negativa. La maggior parte dei filtri non supporta frequenze negative.
+Il [**metodo CSourceSeeking::SetRate**](csourceseeking-setrate.md) chiama questo metodo, che deve essere implementato dalla classe derivata. Il **metodo SetRate** aggiorna la variabile membro [**CSourceSeeking::m \_ dRateSeeking,**](csourceseeking-m-drateseeking.md) ma non convalida il nuovo valore. Una frequenza pari a zero deve sempre essere rifiutata. Le percentuali minori di zero indicano una riproduzione negativa. La maggior parte dei filtri non supporta i tassi negativi.
 
-Nell'esempio seguente viene illustrata una possibile implementazione:
+L'esempio seguente illustra una possibile implementazione:
 
 
 ```C++
@@ -74,8 +74,8 @@ HRESULT CMyStream::ChangeRate( )
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

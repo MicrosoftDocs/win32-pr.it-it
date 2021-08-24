@@ -1,19 +1,19 @@
 ---
-description: ID annuncio dei servizi diretti Wi-Fi.
+description: Wi-Fi dell'annuncio di Direct Services.
 ms.assetid: 7c2d2f9a-9dde-4d37-ad05-d69e8073b290
-title: System. Devices. WiFiDirectServices. AdvertisementId
+title: System.Devices.WiFiDirectServices.AdvertisementId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a802d342744e0c63623d762cbbce2d9a2178e57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90f47f10c9c4ee2718a42c7aaef32ffccb7787792441c7f30221bdf4a6c821ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775381"
 ---
-# <a name="systemdeviceswifidirectservicesadvertisementid"></a>System. Devices. WiFiDirectServices. AdvertisementId
+# <a name="systemdeviceswifidirectservicesadvertisementid"></a>System.Devices.WiFiDirectServices.AdvertisementId
 
-ID annuncio dei servizi diretti Wi-Fi
+Wi-Fi dell'annuncio di Direct Services
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,7 +1,7 @@
 ---
-description: La funzione PdhVbCreateCounterPathList Visualizza la finestra di dialogo esplorazione dei contatori delle prestazioni, che consente all'utente di selezionare diversi contatori delle prestazioni. Ogni percorso del contatore selezionato deve quindi essere letto utilizzando la funzione PdhVbGetCounterPathFromList.
+description: La funzione PdhVbCreateCounterPathList visualizza la finestra di dialogo di esplorazione dei contatori delle prestazioni, che consente all'utente di selezionare diversi contatori delle prestazioni. Ogni percorso del contatore selezionato deve quindi essere letto usando la funzione PdhVbGetCounterPathFromList.
 ms.assetid: 8dda528f-2e06-4726-89a0-095781a2f80d
-title: PdhVbCreateCounterPathList (funzione)
+title: Funzione PdhVbCreateCounterPathList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: bef484846507bf68d8ccfc0ad3ea10a250b83133
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6471fe3baee14fa1853810b66a804974b05ca84d0db9bc4e7dd805085ad5c0c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775551"
 ---
-# <a name="pdhvbcreatecounterpathlist-function"></a>PdhVbCreateCounterPathList (funzione)
+# <a name="pdhvbcreatecounterpathlist-function"></a>Funzione PdhVbCreateCounterPathList
 
-La funzione **PdhVbCreateCounterPathList** Visualizza la finestra di dialogo esplorazione dei contatori delle prestazioni, che consente all'utente di selezionare diversi contatori delle prestazioni. Ogni percorso del contatore selezionato deve quindi essere letto utilizzando la funzione [**PdhVbGetCounterPathFromList**](pdhvbgetcounterpathfromlist.md) .
+La **funzione PdhVbCreateCounterPathList** visualizza la finestra di dialogo di esplorazione dei contatori delle prestazioni, che consente all'utente di selezionare diversi contatori delle prestazioni. Ogni percorso del contatore selezionato deve quindi essere letto usando la [**funzione PdhVbGetCounterPathFromList.**](pdhvbgetcounterpathfromlist.md)
 
 > [!IMPORTANT]
-> La funzione descritta in questo argomento può essere modificata o non disponibile in futuro. Microsoft consiglia invece di utilizzare le funzioni descritte in [funzioni dei contatori delle prestazioni](performance-counters-functions.md).
+> La funzione descritta in questo argomento potrebbe essere modificata o non disponibile in futuro. Microsoft consiglia invece di usare le funzioni descritte in [Funzioni dei contatori delle prestazioni](performance-counters-functions.md).
 
-Funzione PdhVbCreateCounterPathList ( \_ ByVal DetailLevel Long, \_ ByVal CaptionString As String \_ ) Long
+Funzione PdhVbCreateCounterPathList( \_ ByVal DetailLevel As Long, \_ ByVal CaptionString as String \_ ) As Long
 
 ## <a name="parameters"></a>Parametri
 
@@ -42,10 +42,10 @@ Tipi di contatori da visualizzare nella finestra di dialogo. Usare uno dei valor
 
 | Valore                                                                                                                                                                               | Significato                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**\_dettaglio prestazioni \_ avanzato**</dt> </dl> | Contatori che l'utente avanzato è in grado di comprendere, oltre ai contatori degli utenti meno esperti.<br/>                                            |
-| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**\_esperto Dettagli \_ prestazioni**</dt> </dl>       | Contatori che l'utente esperto e lo sviluppatore di software possono conoscere, oltre ai contatori per gli utenti principianti e avanzati.<br/> |
-| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**dettaglio prestazioni- \_ \_ novizio**</dt> </dl>       | Solo i contatori che è probabile che l'utente del novizio possa comprendere.<br/>                                                                                  |
-| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**\_ \_ procedura guidata Dettagli prestazioni**</dt> </dl>       | Tutti i contatori nel sistema.<br/>                                                                                                                  |
+| <span id="PERF_DETAIL_ADVANCED"></span><span id="perf_detail_advanced"></span><dl> <dt>**PERF \_ DETAIL \_ ADVANCED**</dt> </dl> | Contatori che è probabile che l'utente avanzato comprendi, oltre ai contatori per utenti principianti.<br/>                                            |
+| <span id="PERF_DETAIL_EXPERT"></span><span id="perf_detail_expert"></span><dl> <dt>**ESPERTO DEI DETTAGLI DI PERF \_ \_**</dt> </dl>       | Contatori che l'utente esperto e lo sviluppatore di software probabilmente comprenderanno, oltre ai contatori per gli utenti principianti e avanzati.<br/> |
+| <span id="PERF_DETAIL_NOVICE"></span><span id="perf_detail_novice"></span><dl> <dt>**NOVIZIO DETTAGLI \_ \_ PERF**</dt> </dl>       | Solo i contatori che l'utente alle prime informazioni è probabilmente in grado di comprendere.<br/>                                                                                  |
+| <span id="PERF_DETAIL_WIZARD"></span><span id="perf_detail_wizard"></span><dl> <dt>**PROCEDURA GUIDATA DETTAGLI \_ PERF \_**</dt> </dl>       | Tutti i contatori nel sistema.<br/>                                                                                                                  |
 
 
 
@@ -56,13 +56,13 @@ Tipi di contatori da visualizzare nella finestra di dialogo. Usare uno dei valor
 *CaptionString* 
 </dt> <dd>
 
-Variabile di stringa che contiene il testo che verrà visualizzato nella barra del titolo della finestra di dialogo.
+Variabile stringa che contiene il testo che verrà visualizzato nella barra della didascalia della finestra di dialogo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce il numero di percorsi del contatore selezionati dall'utente.
+La funzione restituisce il numero di percorsi dei contatori selezionati dall'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ La funzione restituisce il numero di percorsi del contatore selezionati dall'ute
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Libreria<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Libreria<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

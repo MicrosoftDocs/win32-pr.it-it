@@ -4,12 +4,12 @@ ms.assetid: fe9dc266-5b12-479d-85cb-50cc6bb9d580
 title: Metodo Play (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f62323c9c86be476a35977dadf554bbfca3bca91
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 97d4cea7dc53afc6a116ad052da9a4ca0d52c2e8687d99bde854d3f89fa60a9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633561"
 ---
 # <a name="play-method-directshow"></a>Metodo Play (DirectShow)
 
@@ -30,7 +30,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Se la riproduzione viene sospesa o arrestata e [**EnableResetOnStop**](enableresetonstop-property.md) è true, la chiamata di **Play** riprende la riproduzione alla velocità normale nella posizione corrente. Se la riproduzione viene interrotta e **EnableResetOnStop** è false, la chiamata a **Play** provocherà la riproduzione del disco all'inizio del primo titolo.
+Se la riproduzione viene sospesa o arrestata e [**EnableResetOnStop**](enableresetonstop-property.md) è true, la chiamata a **Play** riprenderà la riproduzione alla velocità normale nella posizione corrente. Se la riproduzione viene arrestata e **EnableResetOnStop** è false, la chiamata a **Play** causerà l'avvio della riproduzione del disco all'inizio del primo titolo.
 
 ## <a name="see-also"></a>Vedi anche
 

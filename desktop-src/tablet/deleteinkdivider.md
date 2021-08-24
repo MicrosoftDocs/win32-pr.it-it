@@ -1,7 +1,7 @@
 ---
 description: Elimina un oggetto InkDivider e rilascia le risorse associate.
 ms.assetid: adf772e0-2829-4410-83c4-45a24bf3a848
-title: DeleteInkDivider (funzione)
+title: Funzione DeleteInkDivider
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 8338d179b0bd57232463c794feca96885ee006fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 526186dd2a867f8fb3ee9201ca13df6afd43cb02f8361da202a036dde8e9fb56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709521"
 ---
-# <a name="deleteinkdivider-function"></a>DeleteInkDivider (funzione)
+# <a name="deleteinkdivider-function"></a>Funzione DeleteInkDivider
 
-Elimina un oggetto [**InkDivider**](inkdivider-class.md) e rilascia le risorse associate.
+Elimina un [**oggetto InkDivider**](inkdivider-class.md) e rilascia le risorse associate.
 
 Questa funzione non deve essere usata dal codice dell'applicazione.
 
@@ -42,10 +42,10 @@ HRESULT WINAPI DeleteInkDivider(
 
 <dl> <dt>
 
-*hDivider* \[ in\]
+*hDivider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto [**InkDivider**](inkdivider-class.md) .
+Handle per [**l'oggetto InkDivider.**](inkdivider-class.md)
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Questa funzione può restituire uno di questi valori.
 
 | Codice restituito                                                                                  | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Il metodo è riuscito.<br/>                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *hDivider* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Il metodo è riuscito.<br/>                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro hDivider* non è valido.<br/> |
 
 
 
@@ -70,7 +70,7 @@ Questa funzione può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

@@ -2,7 +2,7 @@
 description: La proprietà Count dell'oggetto SWbemMethodSet definisce il numero di elementi nella raccolta. Questa proprietà è di sola lettura.
 ms.assetid: 492dabef-f417-4b1e-bc3a-8d39d8f7ee35
 ms.tgt_platform: multiple
-title: Proprietà SWbemMethodSet. Count (wbemdisp. h)
+title: Proprietà SWbemMethodSet.Count (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 106e032efc4930d41be2562510f353351a5216e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d21cb3b939f48a433bb87347de352433e086a563fa4cdb04ae48026d8e14a5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732681"
 ---
-# <a name="swbemmethodsetcount-property"></a>Proprietà SWbemMethodSet. Count
+# <a name="swbemmethodsetcount-property"></a>SWbemMethodSet.Count - proprietà
 
-La proprietà **count** dell'oggetto [**SWbemMethodSet**](swbemmethodset.md) definisce il numero di elementi nella raccolta. Questa proprietà è di sola lettura.
+La **proprietà Count** dell'oggetto [**SWbemMethodSet**](swbemmethodset.md) definisce il numero di elementi nella raccolta. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemMethodSet.Count As Integer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMMETHODSET CLSID<br/>                                                        |
-| IID<br/>                      | \_ISWBEMMETHODSET IID<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemMethodSet<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemMethodSet<br/>                                                         |
 
 
 

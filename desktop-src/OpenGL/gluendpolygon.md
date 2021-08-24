@@ -1,9 +1,9 @@
 ---
-title: funzione gluEndPolygon (Glu. h)
-description: Le funzioni gluBeginPolygon e gluEndPolygon delimitano una descrizione del poligono. | funzione gluEndPolygon (Glu. h)
+title: Funzione gluEndPolygon (Glu.h)
+description: Le funzioni gluBeginPolygon e gluEndPolygon delimitano una descrizione del poligono. | Funzione gluEndPolygon (Glu.h)
 ms.assetid: fdb8cc73-c6c3-4377-aa5b-36a79791e7a9
 keywords:
-- funzione gluEndPolygon OpenGL
+- Funzione gluEndPolygon OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbf69bfb16f9c83462bbe6b53c86f319b3d09623
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b12d3565938dbc963a720333bbbba23a42d0d2e775297af4de3c2f2c1362760e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675391"
 ---
-# <a name="gluendpolygon-function"></a>gluEndPolygon (funzione)
+# <a name="gluendpolygon-function"></a>Funzione gluEndPolygon
 
-\[La funzione **gluEndPolygon** è obsoleta e viene fornita solo per compatibilità con le versioni precedenti. La funzione **gluEndPolygon** è mappata a **GluTessEndPolygon** seguito da **gluTessEndContour**.\]
+\[La **funzione gluEndPolygon** è obsoleta e viene fornita solo per la compatibilità con le versioni precedenti. La **funzione gluEndPolygon** viene mappata a **gluTessEndPolygon** seguita da **gluTessEndContour**.\]
 
-Le funzioni [**gluBeginPolygon**](glubeginpolygon.md) e **gluEndPolygon** delimitano una descrizione del poligono.
+Le [**funzioni gluBeginPolygon**](glubeginpolygon.md) **e gluEndPolygon delimitano** una descrizione del poligono.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void gluEndPolygon(
 *Tess* 
 </dt> <dd>
 
-Oggetto a mosaico creato con [**gluNewTess**](glunewtess.md).
+Oggetto a tassellamento (creato con [**gluNewTess).**](glunewtess.md)
 
 </dd> </dl>
 
@@ -55,13 +55,13 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Usare [**gluBeginPolygon**](glubeginpolygon.md) e **gluEndPolygon** per delimitare la definizione di un poligono non convesso.
+Usare [**gluBeginPolygon**](glubeginpolygon.md) e **gluEndPolygon** per delimitare la definizione di un poligono non convenzionale.
 
 1.  Chiamare **gluBeginPolygon**.
 2.  Definire i contorni del poligono chiamando [**gluTessVertex**](glutessvertex.md) per ogni vertice e [**gluNextContour**](glunextcontour.md) per avviare ogni nuovo contorno.
 3.  Chiamare **gluEndPolygon** per segnalare la fine della definizione.
 
-    Una volta chiamato **gluEndPolygon** , il poligono è tassellati e i triangoli risultanti vengono descritti tramite callback. Per le descrizioni delle funzioni di callback, vedere [*gluTessCallback*](glutess.md).
+    Dopo **aver chiamato gluEndPolygon,** il poligono viene a tessellato e i triangoli risultanti vengono descritti tramite callback. Per le descrizioni delle funzioni di callback, [*vedere gluTessCallback*](glutess.md).
 
 ## <a name="examples"></a>Esempio
 
@@ -88,8 +88,8 @@ gluEndPolygon(tess);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

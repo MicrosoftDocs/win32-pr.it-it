@@ -1,5 +1,5 @@
 ---
-description: 'Proprietà LocationDisp.CivicAddressReportFactory.DesiredAccuracy : valore corrente di accuratezza desiderata.'
+description: 'Proprietà LocationDisp.CivicAddressReportFactory.DesiredAccuracy: valore di accuratezza desiderato corrente.'
 ms.assetid: 296164cf-a8ed-4277-bb4c-83ac09e63291
 title: Proprietà LocationDisp.CivicAddressReportFactory.DesiredAccuracy
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3a18a363c2f24e9b17e16064b7375a4f075a1a8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ca2d4f4a7be4afa800cfe81b5df7396be579197e7f997019f4ece3a39598c975
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693131"
 ---
 # <a name="locationdispcivicaddressreportfactorydesiredaccuracy-property"></a>Proprietà LocationDisp.CivicAddressReportFactory.DesiredAccuracy
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
-Valore corrente di accuratezza desiderata.
+Valore di accuratezza desiderato corrente.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -54,7 +54,7 @@ Questa proprietà è un ULONG di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo valore è una richiesta al provider di posizione. Il provider di posizione non è necessario per fornire l'accuratezza richiesta. Leggere il valore di questa proprietà per individuare l'impostazione di accuratezza reale.
+Questo valore è una richiesta al provider di posizione. Il provider di località non è necessario per fornire l'accuratezza richiesta. Leggere il valore di questa proprietà per individuare l'impostazione di accuratezza vera.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questo valore è una richiesta al provider di posizione. Il provider di posizion
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

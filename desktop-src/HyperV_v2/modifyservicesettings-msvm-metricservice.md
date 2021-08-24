@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 088aec001dd63de7344256fd9e114b6ff73e4425
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 51af98d230433687d9a16cb3ab858fd746b7ff1ca4e17eaf0b36cce16e92c875
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693911"
 ---
 # <a name="modifyservicesettings-method-of-the-msvm_metricservice-class"></a>Metodo ModifyServiceSettings della classe Msvm \_ MetricService
 
@@ -43,7 +43,7 @@ uint32 ModifyServiceSettings(
 *Impostazione dei dati* \[ Pollici\]
 </dt> <dd>
 
-Contiene un'istanza incorporata [**della classe Msvm \_ MetricServiceSettingData**](msvm-metricservicesettingdata.md) che contiene i dati delle impostazioni modificate per il servizio.
+Contiene un'istanza incorporata della [**classe Msvm \_ MetricServiceSettingData**](msvm-metricservicesettingdata.md) che contiene i dati delle impostazioni modificate per il servizio.
 
 </dd> <dt>
 
@@ -86,9 +86,9 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

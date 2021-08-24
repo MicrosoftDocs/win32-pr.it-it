@@ -1,24 +1,24 @@
 ---
-title: Per attribuire (riga) (la)
-description: Per attribuire (riga) (la)
+title: To Attribute (Line)(VML)
+description: To Attribute (Line)(VML)
 ms.assetid: e4d2afb9-0cad-469d-a388-c1b824d14c04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79246936e4885025d43dfe1fc8cc3b2f144403a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e2d1e47261daf76103717476a84eea3bed99ddb0b514192df8a74cd0b69572a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654451"
 ---
-# <a name="to-attribute-linevml"></a>Per attribuire (riga) (la)
+# <a name="to-attribute-linevml"></a>To Attribute (Line)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il punto finale di una linea. Proprietà di lettura/scrittura. **VgVector2D**.
 
@@ -26,25 +26,25 @@ Definisce il punto finale di una linea. Proprietà di lettura/scrittura. **VgVec
 
 [Linea](msdn-online-vml-line-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* a = " *Expression* " >
+<v: *element* to=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . to = "*Expression*"
+*element* .to="*expression*"
 
-*espressione* = *elemento*. to
+*expression* = *elemento*.to
 
 **Osservazioni:**
 
-Definisce il punto finale della riga nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è un elemento la, l' [unità](msdn-online-vml-units.md) predefinita è un pixel, ma è possibile specificare anche in cm, mm, PT, PC. Il valore predefinito è 10, 10.
+Definisce il punto finale della linea nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è [](msdn-online-vml-units.md) un elemento VML, l'unità predefinita è un pixel (ma è possibile specificare anche in, cm, mm, pt, pc). Il valore predefinito è 10,10.
 
-**Attributo standard la**
+**Attributo VML Standard**
 
 **Esempio**
 
-La riga termina in una posizione 100 punta verso il basso e 100 punta a destra dell'angolo superiore sinistro dello spazio padre.
+La linea termina in corrispondenza di una posizione di 100 punti verso il basso e di 100 punti a destra dell'angolo superiore sinistro dello spazio padre.
 
 
 ```HTML
@@ -55,6 +55,6 @@ La riga termina in una posizione 100 punta verso il basso e 100 punta a destra d
 
 
 
- 
+ 
 
- 
+ 

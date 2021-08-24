@@ -1,38 +1,38 @@
 ---
 title: Come elaborare i messaggi di notifica
-description: Una finestra delle proprietà Invia \_ messaggi WM Notify per recuperare le informazioni dalle pagine e per notificare le pagine delle azioni dell'utente.
+description: Una finestra delle proprietà invia messaggi WM NOTIFY per recuperare informazioni dalle pagine e \_ per notificare alle pagine le azioni dell'utente.
 ms.assetid: 82768E43-97BA-451A-9373-D5B8FD06ABED
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2c544910e44e0c865e738427285d7488147b9c1
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 9baf0c58fdbcbe5378dd46e828a2d29a7c91832174c9564660a82c5ab70997a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103724275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575481"
 ---
 # <a name="how-to-process-notification-messages"></a>Come elaborare i messaggi di notifica
 
-Una finestra delle proprietà Invia messaggi [**WM \_ Notify**](wm-notify.md) per recuperare le informazioni dalle pagine e per notificare le pagine delle azioni dell'utente.
+Una finestra delle proprietà invia [**messaggi WM \_ NOTIFY**](wm-notify.md) per recuperare informazioni dalle pagine e per notificare alle pagine le azioni dell'utente.
 
-Il parametro *lParam* del messaggio è l'indirizzo di una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) , che contiene l'handle per la finestra di dialogo della finestra delle proprietà, l'handle per la finestra di dialogo della pagina e un codice di notifica. La pagina deve rispondere ad alcuni messaggi di notifica impostando il \_ valore DWL MSGRESULT della pagina su **true** o **false**.
+Il *parametro lParam* del messaggio è l'indirizzo di una struttura [**NMHDR,**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene l'handle per la finestra delle proprietà, l'handle per la finestra di dialogo della pagina e un codice di notifica. La pagina deve rispondere ad alcuni messaggi di notifica impostando il valore MSGRESULT DWL della pagina \_ su **TRUE** o **FALSE.**
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="process-notification-messages"></a>Elaborare i messaggi di notifica
 
-Nell'esempio seguente è riportato un frammento di codice della routine della finestra di dialogo per una pagina. Viene illustrato come elaborare il codice di notifica della [ \_ Guida di PSN](psn-help.md) .
+L'esempio seguente è un frammento di codice della routine della finestra di dialogo per una pagina. Illustra come elaborare il codice [di notifica della \_ Guida di PSN.](psn-help.md)
 
 
 ```C++
@@ -64,15 +64,15 @@ case WM_NOTIFY:
 
 <dl> <dt>
 
-[Utilizzo delle finestre delle proprietà](using-property-sheets.md)
+[Uso delle finestre delle proprietà](using-property-sheets.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demo di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

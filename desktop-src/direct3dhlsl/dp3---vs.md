@@ -1,6 +1,6 @@
 ---
-title: DP3-vs
-description: Calcola il prodotto del punto a tre componenti dei registri di origine. | DP3-vs
+title: dp3 - vs
+description: Calcola il prodotto del punto a tre componenti dei registri di origine. | dp3 - vs
 ms.assetid: a5263a18-ed53-41eb-85ca-2cff872e03d8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 81580401f25ddcf7ce1c1d53475d0c3beba74a89
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bf65f77a60ea7ac19ef5ea204f916387c65c3bee08c89ea274e800f650ef241d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673871"
 ---
-# <a name="dp3---vs"></a>DP3-vs
+# <a name="dp3---vs"></a>dp3 - vs
 
 Calcola il prodotto del punto a tre componenti dei registri di origine.
 
@@ -24,7 +24,7 @@ Calcola il prodotto del punto a tre componenti dei registri di origine.
 
 
 
-| DP3 DST, src0, src1 |
+| dp3 dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Calcola il prodotto del punto a tre componenti dei registri di origine.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | dp3                    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Il frammento di codice seguente mostra le operazioni eseguite:
+Il frammento di codice seguente illustra le operazioni eseguite:
 
 
 ```
@@ -63,7 +63,7 @@ dest.x = dest.y = dest.z = dest.w;
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

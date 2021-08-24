@@ -1,7 +1,7 @@
 ---
-description: Ottenere il numero di vertici in ID3DX10SkinInfo.
+description: Ottiene il numero di vertici in ID3DX10SkinInfo.
 ms.assetid: c4e6542b-807f-41df-9940-6899ad8f8eb9
-title: 'Metodo ID3DX10SkinInfo:: GetNumVertices (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::GetNumVertices (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 366b958f09d0571ef6345ae020e66f321ebb9331
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e14fbd289a728bb0eeb3e4a384ffab483b3eba70bfa84d7309dc9c09a3630e9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634271"
 ---
-# <a name="id3dx10skininfogetnumvertices-method"></a>Metodo ID3DX10SkinInfo:: GetNumVertices
+# <a name="id3dx10skininfogetnumvertices-method"></a>Metodo ID3DX10SkinInfo::GetNumVertices
 
-Ottenere il numero di vertici in ID3DX10SkinInfo.
+Ottiene il numero di vertici in ID3DX10SkinInfo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di vertici in ID3DX10SkinInfo.
 
@@ -50,8 +50,8 @@ Numero di vertici in ID3DX10SkinInfo.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

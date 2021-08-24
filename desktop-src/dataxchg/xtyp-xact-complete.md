@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_XACT_COMPLETE (DDEML. h)
-description: Una funzione di callback client di Dynamic Data Exchange (DDE), DdeCallback, riceve \_ la \_ transazione XTYP XACT complete quando una transazione asincrona, avviata da una chiamata alla funzione DdeClientTransaction, è stata completata.
+title: XTYP_XACT_COMPLETE transazione (Ddeml.h)
+description: Una funzione di callback client Dynamic Data Exchange (DDE), DdeCallback, riceve la transazione XTYP XACT COMPLETE al completamento di una transazione asincrona, avviata da una chiamata alla funzione \_ \_ DdeClientTransaction.
 ms.assetid: d34a6fab-0e3c-44fe-b25f-7011228fe261
 keywords:
-- Scambio di dati delle transazioni XTYP_XACT_COMPLETE
+- XTYP_XACT_COMPLETE transazione dati Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03a81869270a771836c4dd5c1a6b300f148ea13d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d3833207371bbfab059f67ecb5bdb72b77334ef3ffc73618e013ce137835c6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678011"
 ---
-# <a name="xtyp_xact_complete-transaction"></a>\_ \_ Transazione completa XTYP XACT
+# <a name="xtyp_xact_complete-transaction"></a>Transazione \_ XTYP XACT \_ COMPLETE
 
-Una funzione di callback client di Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve la transazione **XTYP \_ XACT \_ complete** quando una transazione asincrona, avviata da una chiamata alla funzione [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) , è stata completata.
+Una funzione di callback client Dynamic Data Exchange [*(DDE), DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), riceve la transazione **\_ XTYP XACT \_ COMPLETE** al completamento di una transazione asincrona, avviata da una chiamata alla funzione [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ Tipo di transazione.
 *uFmt* 
 </dt> <dd>
 
-Il formato dei dati associati alla transazione completata (se applicabile) o **null** se non è stato scambiato alcun dato durante la transazione.
+Formato dei dati associati alla transazione completata (se applicabile) o **NULL** se non è stato scambiato alcun dato durante la transazione.
 
 </dd> <dt>
 
@@ -61,21 +61,21 @@ Handle per la conversazione.
 *hsz1* 
 </dt> <dd>
 
-Handle per il nome dell'argomento necessario per la transazione completata.
+Handle per il nome dell'argomento coinvolto nella transazione completata.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-Handle per il nome dell'elemento richiesto nella transazione completata.
+Handle per il nome dell'elemento coinvolto nella transazione completata.
 
 </dd> <dt>
 
 *hdata* 
 </dt> <dd>
 
-Handle per i dati necessari nella transazione completata, se applicabile. Se la transazione ha avuto esito positivo, ma non sono presenti dati, questo parametro è **true**. Questo parametro è **null** se la transazione ha avuto esito negativo.
+Handle per i dati coinvolti nella transazione completata, se applicabile. Se la transazione ha avuto esito positivo ma non ha coinvolto dati, questo parametro è **TRUE.** Questo parametro è **NULL se** la transazione ha avuto esito negativo.
 
 </dd> <dt>
 
@@ -89,13 +89,13 @@ Identificatore della transazione completata.
 *dwData2* 
 </dt> <dd>
 
-Eventuali flag di stato **DDE \_** applicabili nella parola bassa. Questo parametro fornisce supporto per le applicazioni che dipendono da bit **\_ APPSTATUS DDE** . Si consiglia di non usare più questi bit per le applicazioni che potrebbero non essere supportate nelle versioni future del DDEML.
+Tutti i flag di stato **DDE \_** applicabili nella parola bassa. Questo parametro fornisce il supporto per le applicazioni dipendenti dai bit **\_ APPSTATUS DDE.** È consigliabile che le applicazioni non usino più questi bit che potrebbero non essere supportati nelle versioni future di DDEML.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione non deve liberare l'handle di dati ottenuto durante la transazione. Un'applicazione, tuttavia, deve copiare i dati associati all'handle di dati se l'applicazione deve elaborare i dati dopo la restituzione della funzione di callback. Un'applicazione può usare la funzione [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) per copiare i dati.
+Un'applicazione non deve liberare l'handle di dati ottenuto durante questa transazione. Un'applicazione deve tuttavia copiare i dati associati all'handle di dati se l'applicazione deve elaborare i dati dopo la funzione di callback. Un'applicazione può usare [**la funzione DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) per copiare i dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,7 +105,7 @@ Un'applicazione non deve liberare l'handle di dati ottenuto durante la transazio
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Un'applicazione non deve liberare l'handle di dati ottenuto durante la transazio
 **Riferimento**
 </dt> <dt>
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
+[**Ddeclienttransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 </dt> <dt>
 
 [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata)
@@ -125,7 +125,7 @@ Un'applicazione non deve liberare l'handle di dati ottenuto durante la transazio
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Modificatori di istruzioni (riferimento HLSL)
-description: I modificatori di istruzione influiscono sul risultato dell'istruzione prima che venga scritto nel registro. Shader Model 4 e Shader Model 4,1 supportano i modificatori di istruzioni seguenti.
+title: Modificatori di istruzione (riferimenti HLSL)
+description: I modificatori di istruzione influiscono sul risultato dell'istruzione prima che venga scritta nel registro. Shader Model 4 e Shader Model 4.1 supportano i modificatori di istruzione seguenti.
 ms.assetid: 2CA956BE-3D5E-48E0-B7F8-CA1A6E3B59F4
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2ac641663a182a87ae41a91ce366923df64ef69b
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 3de542ef65dafb5420b2adf3a3e1997e42e61c76f85015b4ec58bf873c946b9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "103719546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672691"
 ---
-# <a name="instruction-modifiers-hlsl-reference"></a>Modificatori di istruzioni (riferimento HLSL)
+# <a name="instruction-modifiers-hlsl-reference"></a>Modificatori di istruzione (riferimenti HLSL)
 
-I modificatori di istruzione influiscono sul risultato dell'istruzione prima che venga scritto nel registro. Shader Model 4 e Shader Model 4,1 supportano i modificatori di istruzioni seguenti.
+I modificatori di istruzione influiscono sul risultato dell'istruzione prima che venga scritta nel registro. Shader Model 4 e Shader Model 4.1 supportano i modificatori di istruzione seguenti.
 
-## <a name="source-operand-modifiers"></a>Modificatori dell'operando di origine
+## <a name="source-operand-modifiers"></a>Modificatori di operando di origine
 
 -   [Valore assoluto](absolute-value.md)
 -   [Negare](negate.md)
 
-## <a name="instruction-result-modifiers"></a>Modificatori risultato istruzione
+## <a name="instruction-result-modifiers"></a>Modificatori del risultato dell'istruzione
 
 -   [Saturazione](saturate.md)
 
@@ -33,12 +33,12 @@ I modificatori di istruzione influiscono sul risultato dell'istruzione prima che
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

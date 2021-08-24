@@ -1,5 +1,5 @@
 ---
-description: Il filtro Sample Grabber consente di recuperare gli esempi mentre passano attraverso il grafico dei filtri.
+description: Il filtro Grabber di esempio consente di recuperare gli esempi mentre passano attraverso il grafico dei filtri.
 ms.assetid: 3c2fb52f-2b44-449a-ae96-3cf35a0a401d
 title: Filtro Grabber di esempio (Qedit.h)
 ms.topic: reference
@@ -13,31 +13,31 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: f0b0ddffe2bc769b7c2371ef93091d8c1daf379c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 286348ec102a93697aa413ecfd1886879e7361b54eca48276b5e868be78eee03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633511"
 ---
 # <a name="sample-grabber-filter"></a>Filtro Grabber di esempio
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il filtro Sample Grabber consente di recuperare gli esempi mentre passano attraverso il grafico dei filtri. Si tratta di un filtro di trasformazione con un pin di input e un pin di output. Passa tutti i campioni a valle senza modifiche, quindi è possibile inserirli in un grafico di filtro senza modificare il flusso di dati. L'applicazione può quindi recuperare singoli esempi dal filtro chiamando i metodi [**nell'interfaccia ISampleGrabber.**](isamplegrabber.md)
+Il filtro Grabber di esempio consente di recuperare gli esempi mentre passano attraverso il grafico dei filtri. Si tratta di un filtro di trasformazione con un pin di input e un pin di output. Passa tutti i campioni a valle senza modifiche, in modo da poterlo inserire in un grafico di filtro senza modificare il flusso di dati. L'applicazione può quindi recuperare singoli esempi dal filtro chiamando i metodi [**nell'interfaccia ISampleGrabber.**](isamplegrabber.md)
 
-Per recuperare gli esempi senza eseguire il rendering dei dati, connettere il filtro Sample Grabber al filtro [**Renderer**](null-renderer-filter.md) Null.
+Per recuperare gli esempi senza eseguire il rendering dei dati, connettere il filtro Grabber di esempio al filtro [**Renderer Null.**](null-renderer-filter.md)
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfacce di filtro                        | [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [ **ISampleGrabber**](isamplegrabber.md)                                                                       |
 | Tipi di supporti pin di input                    | Qualsiasi tipo di supporto.                                                                                                                                    |
-| Interfacce pin di input                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
+| Interfacce pin di input                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                             |
 | Tipi di supporti pin di output                   | Qualsiasi tipo di supporto. Corrisponde al tipo di supporto di input.                                                                                                          |
 | Interfacce pin di output                    | [**IMediaPosition,**](/windows/desktop/api/Control/nn-control-imediaposition) [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
 | Filtro CLSID                             | CLSID \_ SampleGrabber                                                                                                                               |
@@ -62,7 +62,7 @@ Il filtro presenta le limitazioni seguenti per i formati video:
 -   Non supporta la struttura di [**formato VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) (tipo di formato uguale a **FORMAT \_ VideoInfo2**).
 -   Rifiuta qualsiasi tipo di video in cui lo stride della superficie non corrisponde alla larghezza del video.
 
-Di conseguenza, Sample Grabber non si connetterà al renderer di combinazione di video per alcuni tipi di video.
+Di conseguenza, Sample Grabber non si connetterà al renderer di combinazione video (VMR) per alcuni tipi di video.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,10 +78,10 @@ Di conseguenza, Sample Grabber non si connetterà al renderer di combinazione di
 
 <dl> <dt>
 
-[DirectShow Editing Services Objects](directshow-editing-services-objects.md)
+[DirectShow Modifica di oggetti di Servizi](directshow-editing-services-objects.md)
 </dt> <dt>
 
-[Uso del grabber di esempio](using-the-sample-grabber.md)
+[Uso di Grabber di esempio](using-the-sample-grabber.md)
 </dt> </dl>
 
  

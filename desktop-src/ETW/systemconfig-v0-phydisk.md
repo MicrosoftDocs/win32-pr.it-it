@@ -25,12 +25,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fdb12fac8b2b902f21258fd4c7cfe9846d0456eb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1bfa7b994bfe0950ccc7a97b19fbd705838950d7461712b114a16f62e7ad0aec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754761"
 ---
 # <a name="systemconfig_v0_phydisk-class"></a>Classe SystemConfig \_ V0 \_ PhyDisk
 
@@ -132,7 +132,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (1)
 </dt> </dl>
 
-Numero di indice del disco contenente la partizione.
+Numero di indice del disco contenente questa partizione.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (11)
 </dt> </dl>
 
-Numero di partizioni in questa unità disco fisica riconosciute dal sistema operativo.
+Numero di partizioni in questa unità disco fisico riconosciute dal sistema operativo.
 
 </dd> <dt>
 
@@ -287,7 +287,7 @@ True se la cache di scrittura è abilitata.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

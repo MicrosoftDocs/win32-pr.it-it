@@ -1,7 +1,7 @@
 ---
 description: Flag specifici del tipo. Il significato di questa variabile membro dipende dal tipo di supporto dell'esempio.
 ms.assetid: 3aca168e-b253-468e-a1a1-3c213f710dfd
-title: 'Membro CMediaSample:: m_dwTypeSpecificFlags (Amfilter. h)'
+title: Membro CMediaSample::m_dwTypeSpecificFlags (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5cbe44c15d9d14eb7a31fc5378ca2f66e03fe150
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d85f1629906206013ddffde721f9eb213008412b899678c88f2a40efba25d323
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634611"
 ---
-# <a name="cmediasamplem_dwtypespecificflags-member"></a>Membro dwTypeSpecificFlags di CMediaSample:: m \_
+# <a name="cmediasamplem_dwtypespecificflags-member"></a>Membro CMediaSample::m \_ dwTypeSpecificFlags
 
 Flag specifici del tipo. Il significato di questa variabile membro dipende dal tipo di supporto dell'esempio.
 
@@ -42,8 +42,8 @@ DWORD m_dwTypeSpecificFlags;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

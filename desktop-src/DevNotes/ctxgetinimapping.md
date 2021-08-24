@@ -1,7 +1,7 @@
 ---
-description: Determina se l'Terminal Server è in modalità di installazione (solo in Windows Terminal Server 4,0).
+description: Determina se Terminal Server è in modalità INSTALL (solo in Terminale Windows Server 4.0).
 ms.assetid: f6cb7971-d4f5-49ca-938a-9c280028764a
-title: CtxGetIniMapping (funzione)
+title: Funzione CtxGetIniMapping
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 17093303cf0ea74e7efc6a3070c48660083bc491
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7085e595b1f9c1fb8ea36e59aae4a90c816b508c92bcd33a99fe5051f2b722d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654211"
 ---
-# <a name="ctxgetinimapping-function"></a>CtxGetIniMapping (funzione)
+# <a name="ctxgetinimapping-function"></a>Funzione CtxGetIniMapping
 
-\[Questa funzione non è supportata e non deve essere utilizzata. Potrebbe cambiare o scomparire completamente senza preavviso. Usare invece **VerifyVersionInfo**.\]
+\[Questa funzione non è supportata e non deve essere usata. Può cambiare o scomparire completamente senza preavviso. Usare invece **VerifyVersionInfo.**\]
 
-Determina se l'Terminal Server è in modalità di installazione (solo in Windows Terminal Server 4,0).
+Determina se Terminal Server è in modalità INSTALL (solo in Terminale Windows Server 4.0).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **false** se il Terminal Server è in modalità di installazione, **true** se è in modalità di esecuzione.
+Questa funzione restituisce **FALSE** se Terminal Server è in modalità INSTALL, **TRUE** se è in modalità EXECUTE.
 
 ## <a name="requirements"></a>Requisiti
 

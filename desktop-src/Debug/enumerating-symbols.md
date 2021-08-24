@@ -1,19 +1,19 @@
 ---
-description: Il codice seguente consente di visualizzare il nome, l'indirizzo e le dimensioni di ogni simbolo caricato nel modulo specificato.
+description: Il codice seguente visualizza il nome, l'indirizzo e le dimensioni di ogni simbolo caricato nel modulo specificato.
 ms.assetid: 6ecdbd1e-406a-453e-9037-707ceb72074a
 title: Enumerazione dei simboli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f9a98f37ca5ef2249f68ffa9b8ef73198de242
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 041768d46fec2aada74ebef37fdf5ffbb719b7c691a5e037a0f2f0532390d54e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692031"
 ---
 # <a name="enumerating-symbols"></a>Enumerazione dei simboli
 
-Il codice seguente consente di visualizzare il nome, l'indirizzo e le dimensioni di ogni simbolo caricato nel modulo specificato. La funzione [**SymEnumSymbols**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsymbols) richiede una funzione di callback, che viene chiamata una volta per ogni modulo caricato. In questo esempio, EnumSymProc è un'implementazione della funzione di callback.
+Il codice seguente visualizza il nome, l'indirizzo e le dimensioni di ogni simbolo caricato nel modulo specificato. La [**funzione SymEnumSymbols**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsymbols) richiede una funzione di callback, che viene chiamata una volta per ogni modulo caricato. In questo esempio EnumSymProc è un'implementazione della funzione di callback.
 
 
 ```C++

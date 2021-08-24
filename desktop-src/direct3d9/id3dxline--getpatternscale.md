@@ -1,7 +1,7 @@
 ---
-description: Ottiene il valore della scala del pattern stipple.
+description: Ottiene il valore di scala dello schema stipple.
 ms.assetid: cf80ae8c-493d-4f35-b4f9-5981e64cc842
-title: 'Metodo ID3DXLine:: GetPatternScale (D3dx9core. h)'
+title: Metodo ID3DXLine::GetPatternScale (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 14a9919ede81eb64b844e1882725e37359ad6738
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3799901d071da08ee1bb0de4994ed330fabe2d8fedf3b59ce556105f0a280e3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675143"
 ---
-# <a name="id3dxlinegetpatternscale-method"></a>Metodo ID3DXLine:: GetPatternScale
+# <a name="id3dxlinegetpatternscale-method"></a>Metodo ID3DXLine::GetPatternScale
 
-Ottiene il valore della scala del pattern stipple.
+Ottiene il valore di scala dello schema stipple.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Restituisce il valore usato per ridimensionare il pattern stipple. 1,0 f è il valore predefinito e non rappresenta alcun ridimensionamento. Un valore inferiore a 1,0 f compatta il criterio e un valore maggiore di 1,0 estende il modello.
+Restituisce il valore utilizzato per ridimensionare lo schema stipple. 1,0f è il valore predefinito e non rappresenta alcun ridimensionamento. Un valore minore di 1,0f riduce il modello e un valore maggiore di 1,0 estende il modello.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore usato per ridimensionare il pattern stipple. 1,0 f è il v
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Il metodo ClearPendingSample rilascia l'esempio corrente.
 ms.assetid: 55cb8eed-3ae5-4f45-a87e-e6da8ada5cf5
-title: Metodo CBaseRenderer. ClearPendingSample (Renbase. h)
+title: Metodo CBaseRenderer.ClearPendingSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 359d3cb7d7cd62d209c309ef4339651ee6cd852a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2368ada89245d35d58e34162e7e5cf07db815f6969e8c7579a91509275651c77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635151"
 ---
-# <a name="cbaserendererclearpendingsample-method"></a>CBaseRenderer. ClearPendingSample, metodo
+# <a name="cbaserendererclearpendingsample-method"></a>Metodo CBaseRenderer.ClearPendingSample
 
 Il `ClearPendingSample` metodo rilascia l'esempio corrente.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce \_ OK.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
