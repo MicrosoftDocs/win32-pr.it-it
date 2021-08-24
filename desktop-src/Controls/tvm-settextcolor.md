@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SETTEXTCOLOR (COMmctrl. h)
-description: Imposta il colore del testo del controllo. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetTextColor di TreeView.
+title: TVM_SETTEXTCOLOR messaggio (Commctrl.h)
+description: Imposta il colore del testo del controllo. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro TreeView SetTextColor.
 ms.assetid: eb57dfd5-3e7b-4cda-a659-be9e03470a44
 keywords:
-- Controlli di Windows Message TVM_SETTEXTCOLOR
+- TVM_SETTEXTCOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da0049c2666faccce7879146c78ddecc70825e8b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41559abd6724ee9c8ce9f86cfcff092ad13d949a80a55d45ff996f36b284932d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503611"
 ---
-# <a name="tvm_settextcolor-message"></a>\_Messaggio SETTEXTCOLOR TVM
+# <a name="tvm_settextcolor-message"></a>Messaggio TVM \_ SETTEXTCOLOR
 
-Imposta il colore del testo del controllo. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetTextColor di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_settextcolor) .
+Imposta il colore del testo del controllo. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ TreeView SetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_settextcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta il colore del testo del controllo. È possibile inviare questo messaggio
 *lParam* 
 </dt> <dd>
 
-Valore di [**COLORREF**](/windows/desktop/gdi/colorref) che contiene il nuovo colore del testo. Se questo argomento è-1, il controllo verrà ripristinato utilizzando il colore di sistema per il colore del testo.
+[**Valore COLORREF**](/windows/desktop/gdi/colorref) che contiene il nuovo colore del testo. Se questo argomento è -1, il controllo tornerà a usare il colore di sistema per il colore del testo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **COLORREF** che rappresenta il colore del testo precedente. Se questo valore è-1, il controllo Usa il colore di sistema per il colore del testo.
+Restituisce un **valore COLORREF** che rappresenta il colore del testo precedente. Se questo valore è -1, il controllo usava il colore di sistema per il colore del testo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore **COLORREF** che rappresenta il colore del testo precedent
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Restituisce un valore **COLORREF** che rappresenta il colore del testo precedent
 
 <dl> <dt>
 
-[**\_GETTEXTCOLOR TVM**](tvm-gettextcolor.md)
+[**TVM \_ GETTEXTCOLOR**](tvm-gettextcolor.md)
 </dt> </dl>
 
  

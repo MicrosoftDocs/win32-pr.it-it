@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un elemento del pool di risorse della piattaforma Microsoft Windows Hyper-V.
 ms.assetid: DF48E8A6-240F-44E9-9DA3-1E6694396F10
-title: Classe Msvm_ResourcePoolComponent
+title: Msvm_ResourcePoolComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a0cf64a9e01d904aa4e6c6ec263fdeec92eb7c94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 470317d3afd961ad74eb788ebdb70e67617749446fa4a432f40f00f43214cd92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535611"
 ---
-# <a name="msvm_resourcepoolcomponent-class"></a>\_Classe MSVM ResourcePoolComponent
+# <a name="msvm_resourcepoolcomponent-class"></a>Classe Msvm \_ ResourcePoolComponent
 
 Rappresenta un elemento del pool di risorse della piattaforma Microsoft Windows Hyper-V.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,72 +56,72 @@ class Msvm_ResourcePoolComponent : Msvm_VirtualizationComponent
 
 ## <a name="members"></a>Members
 
-La **classe \_ ResourcePoolComponent di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ResourcePoolComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ResourcePoolComponent di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ResourcePoolComponent** ha queste proprietà.
 
 <dl> <dt>
 
 **AllocationCapabilitiesClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe derivata da [**CIM \_ AllocationCapabilities**](/previous-versions/windows/desktop/clushyperv/cim-allocationcapabilities) che descrive le funzionalità di allocazione del pool di risorse.
+Nome della classe derivata da [**CIM \_ AllocationCapabilities**](/previous-versions/windows/desktop/clushyperv/cim-allocationcapabilities) che descrive le funzionalità di allocazione di questo pool di risorse.
 
 </dd> <dt>
 
-**CLSID**
+**Clsid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**GUID** che rappresenta l'identificatore di classe dell'oggetto com del servizio. Questa proprietà viene ereditata da [**MSVM \_ VirtualizationComponent**](msvm-virtualizationcomponent.md).
+GUID **che** rappresenta l'identificatore di classe dell'oggetto COM del servizio. Questa proprietà viene ereditata da [**Msvm \_ VirtualizationComponent.**](msvm-virtualizationcomponent.md)
 
 </dd> <dt>
 
 **Contesto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Contesto in cui viene eseguito l'oggetto appena creato. Questo valore viene passato al parametro *dwClsContext* a **CoCreateInstance**. Questa proprietà viene ereditata da [**MSVM \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)ed è sempre impostata su 1.
+Contesto in cui verrà eseguito l'oggetto appena creato. Questo valore viene passato nel *parametro dwClsContext* a **CoCreateInstance.** Questa proprietà viene ereditata da [**Msvm \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)ed è sempre impostata su 1.
 
 </dd> <dt>
 
 **Enabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se questa istanza è abilitata e può essere utilizzata per completare le richieste del client. in caso contrario, **false**. Questa proprietà viene ereditata da [**MSVM \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)ed è sempre impostata su **true**.
+**True** se questa istanza è abilitata e può essere utilizzata per completare le richieste client. in caso contrario, **False.** Questa proprietà viene ereditata da [**Msvm \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)ed è sempre impostata su **True.**
 
 </dd> <dt>
 
 **MaxParentPools**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -134,74 +134,74 @@ Numero massimo di pool di risorse padre supportati da un pool figlio.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Stringa indipendente dal linguaggio che identifica in modo univoco l'elemento. Per evitare conflitti di denominazione, è consigliabile il formato seguente: \| " \| versione componente fornitore". Questo nome rappresenta ad esempio la versione 1,0 del componente della porta di rete emulata Microsoft: "Microsoft \| EmulatedNetworkPortComponent \| v 1.0". Questa proprietà viene ereditata da [**MSVM \_ VirtualizationComponent**](msvm-virtualizationcomponent.md).
+Stringa indipendente dalla lingua che identifica in modo univoco l'elemento. Per evitare conflitti di denominazione, è consigliabile utilizzare il formato seguente: "versione \| del componente \| del fornitore". Ad esempio, questo nome rappresenta la versione 1.0 del componente porta di rete emulata Microsoft: "Microsoft \| EmulatedNetworkPortComponent \| V1.0". Questa proprietà viene ereditata da [**Msvm \_ VirtualizationComponent.**](msvm-virtualizationcomponent.md)
 
 </dd> <dt>
 
 **PhysicalDeviceClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe derivata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) che implementa il dispositivo fisico da cui questo pool alloca le risorse. Questa proprietà può essere **null** se la classe del dispositivo virtuale allocata da questo pool è la stessa della classe del dispositivo fisico.
+Nome della classe derivata da [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice) che implementa il dispositivo fisico da cui il pool alloca le risorse. Questa proprietà può essere **Null** se la classe di dispositivi virtuali allocata da questo pool corrisponde alla classe di dispositivi fisici.
 
 </dd> <dt>
 
 **ResourcePoolClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe derivata da [**\_ ResourcePool CIM**](/previous-versions//cc136903(v=vs.85)) che implementa il pool di risorse.
+Nome della classe derivata da [**CIM \_ ResourcePool che**](/previous-versions//cc136903(v=vs.85)) implementa il pool di risorse.
 
 </dd> <dt>
 
 **ResourcePoolSettingDataClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome della classe derivata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) che descrive le impostazioni non correlate all'allocazione del pool di risorse.
+Nome della classe derivata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)) che descrive le impostazioni correlate alla non allocazione del pool di risorse.
 
 </dd> <dt>
 
 **WmiFactoryCLSID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**GUID** che rappresenta l'identificatore di classe della factory dell'oggetto WMI del componente.
+GUID **che** rappresenta l'identificatore di classe dell'object factory WMI del componente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ ResourcePoolComponent di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ ResourcePoolComponent** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -209,12 +209,12 @@ L'accesso alla **classe \_ ResourcePoolComponent di MSVM** potrebbe essere limit
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
 | Fine del supporto client<br/>    | Windows 8.1<br/>                                                                                  |
-| Fine del supporto server<br/>    | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Fine del supporto server<br/>    | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -223,10 +223,10 @@ L'accesso alla **classe \_ ResourcePoolComponent di MSVM** potrebbe essere limit
 
 <dl> <dt>
 
-[**\_VirtualizationComponent MSVM**](/windows/desktop/HyperV_v2/msvm-virtualizationcomponent)
+[**Msvm \_ VirtualizationComponent**](/windows/desktop/HyperV_v2/msvm-virtualizationcomponent)
 </dt> <dt>
 
-[**\_VirtualizationComponent MSVM**](msvm-virtualizationcomponent.md)
+[**Msvm \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)
 </dt> </dl>
 
  

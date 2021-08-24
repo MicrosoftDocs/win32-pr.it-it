@@ -1,7 +1,7 @@
 ---
-description: Descrive un set di classi con le proprietà e i metodi richiesti, necessari per gestire un'entità reale o per supportare uno scenario di utilizzo, in modo interoperativo.
+description: Descrive un set di classi con proprietà e metodi obbligatori, necessari per gestire un'entità reale o per supportare uno scenario di utilizzo, in modo interoperabile.
 ms.assetid: 75644856-3B47-43B8-835C-783A6BEE7251
-title: Classe Msvm_RegisteredProfile
+title: Msvm_RegisteredProfile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a7014687355524fbe10ff01869cac6c3fd35a894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0773ad1b7c992211e8bc578ac2cf2bea7706313918581ef2da9df8e2887b536d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535771"
 ---
-# <a name="msvm_registeredprofile-class"></a>\_Classe MSVM RegisteredProfile
+# <a name="msvm_registeredprofile-class"></a>Classe Msvm \_ RegisteredProfile
 
-Descrive un set di classi con le proprietà e i metodi richiesti, necessari per gestire un'entità reale o per supportare uno scenario di utilizzo, in modo interoperativo.
+Descrive un set di classi con proprietà e metodi obbligatori, necessari per gestire un'entità reale o per supportare uno scenario di utilizzo, in modo interoperabile.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,49 +56,49 @@ class Msvm_RegisteredProfile : CIM_RegisteredProfile
 
 ## <a name="members"></a>Members
 
-La **classe \_ RegisteredProfile di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ RegisteredProfile** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ RegisteredProfile di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ RegisteredProfile** ha queste proprietà.
 
 <dl> <dt>
 
 **AdvertiseTypeDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe che fornisce informazioni aggiuntive correlate alla proprietà **AdvertiseType** . Una descrizione deve essere specificata quando **AdvertiseType** è 1 (other). Una voce in questa matrice corrisponde allo stesso indice nella matrice **AdvertiseTypes** . Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Matrice di stringhe che fornisce informazioni aggiuntive correlate alla **proprietà AdvertiseType.** È necessario specificare una descrizione quando **AdvertiseType** è 1 (Altro). Una voce in questa matrice corrisponde allo stesso indice nella **matrice AdvertiseTypes.** Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 </dd> <dt>
 
 **AdvertiseTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica l'annuncio per le informazioni sul profilo. Viene usato dai servizi pubblicitari dell'infrastruttura WBEM per determinare gli elementi da pubblicizzare, attraverso i meccanismi. La proprietà è una matrice in modo che sia possibile annunciare il profilo utilizzando diversi meccanismi. Se questa proprietà è **null**, equivale a specificare il valore 2 (non annunciato). Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Specifica l'annuncio per le informazioni sul profilo. Viene usato dai servizi pubblicitari dell'infrastruttura WBEM per determinare gli elementi da annunciare tramite i meccanismi. La proprietà è una matrice in modo che il profilo possa essere annunciato usando diversi meccanismi. Se questa proprietà è **Null,** equivale a specificare il valore 2 (Non annunciato). Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 <dl> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Altro** (1)
 </dt> <dt>
 
-<span id="Not_Advertised"></span><span id="not_advertised"></span><span id="NOT_ADVERTISED"></span>**Non pubblicizzato** (2)
+<span id="Not_Advertised"></span><span id="not_advertised"></span><span id="NOT_ADVERTISED"></span>**Non annunciato** (2)
 </dt> <dt>
 
-<span id="SLP_"></span><span id="slp_"></span>**SLP** (3)
+<span id="SLP_"></span><span id="slp_"></span>**SLP** (3 )
 </dt> </dl>
 
 </dd> <dt>
@@ -106,100 +106,100 @@ Specifica l'annuncio per le informazioni sul profilo. Viene usato dai servizi pu
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**, **sostituzione**
+Qualificatori: **chiave**, **override**
 </dt> </dl>
 
-Stringa che identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Stringa che identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **OtherRegisteredOrganization**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (256)
+Qualificatori: **MaxLen** ( 256 )
 </dt> </dl>
 
-Stringa che fornisce una descrizione dell'organizzazione quando **RegisteredOrganization** contiene 1 (other). Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Stringa che fornisce una descrizione dell'organizzazione quando **RegisteredOrganization** contiene 1 (Altro). Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 </dd> <dt>
 
-**Registratore**
+**RegisteredName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (256)
+Qualificatori: **MaxLen** ( 256 )
 </dt> </dl>
 
-Nome del profilo registrato. Poiché possono esistere più versioni per lo stesso **registratore**, la combinazione di **registeredname**, **RegisteredOrganization** e **RegisteredVersion** deve identificare in modo univoco il profilo registrato nell'ambito dell'organizzazione. Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Nome del profilo registrato. Poiché possono esistere più versioni per lo stesso **RegisteredName,** la combinazione di **RegisteredName**, **RegisteredOrganization** e **RegisteredVersion** deve identificare in modo univoco il profilo registrato nell'ambito dell'organizzazione. Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 </dd> <dt>
 
-**RegisteredOrganization**
+**Registeredorganization**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Organizzazione che definisce questo profilo. Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Organizzazione che definisce questo profilo. Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 <dl> <dt>
 
@@ -212,16 +212,16 @@ Organizzazione che definisce questo profilo. Questa proprietà viene ereditata d
 <span id="CompTIA"></span><span id="comptia"></span><span id="COMPTIA"></span>**CompTIA** (3)
 </dt> <dt>
 
-<span id="Consortium_for_Service_Innovation"></span><span id="consortium_for_service_innovation"></span><span id="CONSORTIUM_FOR_SERVICE_INNOVATION"></span>**Consorzio per l'innovazione dei servizi** (4)
+<span id="Consortium_for_Service_Innovation"></span><span id="consortium_for_service_innovation"></span><span id="CONSORTIUM_FOR_SERVICE_INNOVATION"></span>**Consortium for Service Innovation** (4)
 </dt> <dt>
 
-<span id="FAST"></span><span id="fast"></span>**Veloce** (5)
+<span id="FAST"></span><span id="fast"></span>**FAST** (5)
 </dt> <dt>
 
-<span id="GGF"></span><span id="ggf"></span>**Ggf** (6)
+<span id="GGF"></span><span id="ggf"></span>**GGF** (6)
 </dt> <dt>
 
-<span id="INTAP"></span><span id="intap"></span>**Intap** (7)
+<span id="INTAP"></span><span id="intap"></span>**INTAP** (7)
 </dt> <dt>
 
 <span id="itSMF"></span><span id="itsmf"></span><span id="ITSMF"></span>**itSMF** (8)
@@ -230,7 +230,7 @@ Organizzazione che definisce questo profilo. Questa proprietà viene ereditata d
 <span id="NAC"></span><span id="nac"></span>**NAC** (9)
 </dt> <dt>
 
-<span id="__10___________Northwest_Energy_Efficiency_Alliance"></span><span id="__10___________northwest_energy_efficiency_alliance"></span><span id="__10___________NORTHWEST_ENERGY_EFFICIENCY_ALLIANCE"></span>**//10 alleanza di efficienza energetica Northwest** (10)
+<span id="__10___________Northwest_Energy_Efficiency_Alliance"></span><span id="__10___________northwest_energy_efficiency_alliance"></span><span id="__10___________NORTHWEST_ENERGY_EFFICIENCY_ALLIANCE"></span>**//10 Northwest Energy Efficiency Alliance** (10)
 </dt> <dt>
 
 <span id="SNIA"></span><span id="snia"></span>**SNIA** (11)
@@ -239,7 +239,7 @@ Organizzazione che definisce questo profilo. Questa proprietà viene ereditata d
 <span id="TM_Forum"></span><span id="tm_forum"></span><span id="TM_FORUM"></span>**Forum TM** (12)
 </dt> <dt>
 
-<span id="The_Open_Group"></span><span id="the_open_group"></span><span id="THE_OPEN_GROUP"></span>**Gruppo aperto** (13)
+<span id="The_Open_Group"></span><span id="the_open_group"></span><span id="THE_OPEN_GROUP"></span>**The Open Group** (13)
 </dt> <dt>
 
 <span id="ANSI"></span><span id="ansi"></span>**ANSI** (14)
@@ -251,7 +251,7 @@ Organizzazione che definisce questo profilo. Questa proprietà viene ereditata d
 <span id="IETF"></span><span id="ietf"></span>**IETF** (16)
 </dt> <dt>
 
-<span id="INCITS"></span><span id="incits"></span>**Inci** (17)
+<span id="INCITS"></span><span id="incits"></span>**INCITS** (17)
 </dt> <dt>
 
 <span id="ISO"></span><span id="iso"></span>**ISO** (18)
@@ -260,33 +260,33 @@ Organizzazione che definisce questo profilo. Questa proprietà viene ereditata d
 <span id="W3C"></span><span id="w3c"></span>**W3C** (19)
 </dt> <dt>
 
-<span id="__20___________OGF"></span><span id="__20___________ogf"></span>**OGF 20** (20)
+<span id="__20___________OGF"></span><span id="__20___________ogf"></span>**//20 OGF** (20)
 </dt> <dt>
 
 <span id="The_Green_Grid"></span><span id="the_green_grid"></span><span id="THE_GREEN_GRID"></span>**Griglia verde** (21)
 </dt> <dt>
 
-<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF riservato** (.. )
+<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DmTF Reserved** (.. )
 </dt> </dl>
 
 </dd> <dt>
 
-**RegisteredVersion**
+**Versione registrata**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione di questo profilo. Il formato della stringa deve essere: "*M*. *N*. *U*"dove:
+Versione di questo profilo. La stringa deve essere nel formato: "*M*. *N*. *U*" Where:
 
 -   *M* è la versione principale (in formato numerico) che descrive la creazione o l'ultima modifica del profilo.
 -   *N* è la versione secondaria (in formato numerico) che descrive la creazione o l'ultima modifica del profilo.
 -   *U* è l'aggiornamento (in formato numerico) che descrive la creazione o l'ultima modifica del profilo.
 
-Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)).
+Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile.**](/previous-versions//ee309375(v=vs.85))
 
 </dd> </dl>
 
@@ -296,10 +296,10 @@ Questa proprietà viene ereditata da [**CIM \_ RegisteredProfile**](/previous-ve
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Interoperabilità radice<br/>                                                                                |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Interoperabilità \\ radice<br/>                                                                                |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

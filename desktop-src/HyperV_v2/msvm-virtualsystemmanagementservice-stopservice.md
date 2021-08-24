@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9ca47b0133944763bff2474a6511b7981b4c1884
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 500ebe5a0f353639ddfd5071ade7127eac5d30a058e950542845a9c670401d14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383391"
 ---
 # <a name="stopservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo StopService della classe Msvm \_ VirtualSystemManagementService
 
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

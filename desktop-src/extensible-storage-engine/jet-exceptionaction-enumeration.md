@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_ExceptionAction'
-title: Enumerazione JET_ExceptionAction
+description: Altre informazioni sull'enumerazione JET_ExceptionAction'
+title: JET_ExceptionAction enumerazione
 TOCTitle: JET_ExceptionAction enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_ExceptionAction
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_exceptionaction(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0cba09666308ab55ae4327a9f9a683734aa28f41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cfd19fdbddfb169e1f12fcb4ca3d0f54df361bde5fb065378f5cb1af726cd25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119362351"
 ---
-# <a name="jet_exceptionaction-enumeration"></a>Enumerazione JET_ExceptionAction
+# <a name="jet_exceptionaction-enumeration"></a>JET_ExceptionAction enumerazione
 
-Costanti da utilizzare con JET_paramExceptionAction.
+Costanti da usare con JET_paramExceptionAction.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -69,12 +69,12 @@ public enum JET_ExceptionAction
 <tr class="odd">
 <td></td>
 <td>MsgBox</td>
-<td>Visualizza la finestra di messaggio in eccezione.</td>
+<td>Visualizza la finestra di messaggio in base all'eccezione.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>nessuno</td>
-<td>Non gestire le eccezioni. Generarle al chiamante.</td>
+<td>Nessuno</td>
+<td>Non gestire le eccezioni. Generarli al chiamante.</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ public enum JET_ExceptionAction
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

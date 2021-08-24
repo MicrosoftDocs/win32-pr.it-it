@@ -1,19 +1,19 @@
 ---
-description: 'Archiviazione del dispositivo: notifica completa.'
+description: Notifica di archiviazione completa del dispositivo.
 ms.assetid: 6b8d0801-14e6-4aff-8815-81d884955488
-title: System. Devices. Notifications. StorageFull
+title: System.Devices.Notifications.StorageFull
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a882cf4abce08abec012eb96b7303d697efbfe6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe39999e1ea3ef9cfe0c8fdbe6323ae48a89b7f410e8d3543b41e68ecf50f5be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119353201"
 ---
-# <a name="systemdevicesnotificationsstoragefull"></a>System. Devices. Notifications. StorageFull
+# <a name="systemdevicesnotificationsstoragefull"></a>System.Devices.Notifications.StorageFull
 
-Archiviazione del dispositivo: notifica completa.
+Notifica di archiviazione completa del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -63,7 +63,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -93,7 +93,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

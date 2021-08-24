@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetPaletteVersion recupera la versione della tavolozza corrente.
+description: Il metodo GetPaletteVersion recupera la versione corrente della tavolozza.
 ms.assetid: 9f97a810-04a4-4ea3-8918-416e9cd8e5e4
-title: Metodo CDrawImage. GetPaletteVersion (Winutil. h)
+title: Metodo CDrawImage.GetPaletteVersion (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c86f1a0dad8d33913a52962dfe2ec09b7b8244db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14cc4df95507a0c28bd61ec6db405f01353f9228419d0da84c4fc9fc35ca6b55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537291"
 ---
-# <a name="cdrawimagegetpaletteversion-method"></a>CDrawImage. GetPaletteVersion, metodo
+# <a name="cdrawimagegetpaletteversion-method"></a>Metodo CDrawImage.GetPaletteVersion
 
-Il `GetPaletteVersion` metodo recupera la versione della tavolozza corrente.
+Il `GetPaletteVersion` metodo recupera la versione corrente della tavolozza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore della variabile **membro \_ PaletteVersion m** .
+Restituisce il valore della variabile **\_ membro m PaletteVersion.**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito da questo metodo si applica solo quando l'allocatore è un oggetto [**CImageAllocator**](cimageallocator.md) .
+Il valore restituito da questo metodo si applica solo quando l'allocatore è un [**oggetto CImageAllocator.**](cimageallocator.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il valore restituito da questo metodo si applica solo quando l'allocatore è un 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

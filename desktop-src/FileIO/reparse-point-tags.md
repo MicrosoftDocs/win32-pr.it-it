@@ -1,27 +1,27 @@
 ---
-description: Ogni reparse point ha un Tag Identifier che consente di distinguere in modo efficiente tra i diversi tipi di punti di analisi, senza dover esaminare i dati definiti dall'utente nel reparse point.
+description: Ogni reparse point ha un tag identificatore in modo che sia possibile distinguere in modo efficiente tra i diversi tipi di reparse point, senza dover esaminare i dati definiti dall'utente nel reparse point.
 ms.assetid: d02a2f50-d374-4149-bc04-49b7db052f62
-title: Tag di reparse point
+title: Tag dei punti di analisi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a53b65034347e2a2c07afcd6c1f03e31f73cef7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b31d4a1765266295b85c95c0955ae9c51faeb34ae07f3af48288a17a50f2166
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015189"
 ---
-# <a name="reparse-point-tags"></a>Tag di reparse point
+# <a name="reparse-point-tags"></a>Tag dei punti di analisi
 
-Ogni reparse point ha un Tag Identifier che consente di distinguere in modo efficiente tra i diversi tipi di punti di analisi, senza dover esaminare i dati definiti dall'utente nel reparse point. Il sistema usa un set di tag predefiniti e un intervallo di tag riservati per Microsoft. Se si usa uno dei tag riservati quando si imposta un punto di analisi, l'operazione non riesce. I tag non inclusi in questi intervalli non sono riservati e sono disponibili per l'applicazione.
+Ogni reparse point ha un tag identificatore in modo che sia possibile distinguere in modo efficiente tra i diversi tipi di reparse point, senza dover esaminare i dati definiti dall'utente nel reparse point. Il sistema usa un set di tag predefiniti e un intervallo di tag riservati a Microsoft. Se si usa uno dei tag riservati durante l'impostazione di un reparse point, l'operazione ha esito negativo. I tag non inclusi in questi intervalli non sono riservati e sono disponibili per l'applicazione.
 
-Quando si imposta un reparse point, è necessario contrassegnare i dati da inserire nel punto di analisi. Una volta stabilita la reparse point, una nuova operazione set ha esito negativo se il tag per i nuovi dati non corrisponde al tag per i dati esistenti. Se i tag corrispondono, l'operazione di impostazione sovrascrive il reparse point esistente.
+Quando si imposta un reparse point, è necessario contrassegnare i dati da inserire nel reparse point. Dopo aver stabilito il reparse point, una nuova operazione set ha esito negativo se il tag per i nuovi dati non corrisponde al tag per i dati esistenti. Se i tag corrispondono, l'operazione set sovrascrive il reparse point esistente.
 
-Per recuperare il tag reparse point, usare la funzione [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) . Se il membro **dwFileAttributes** include l' **attributo \_ file \_ reparse \_ Point** , il membro **dwReserved0** specifica il reparse point.
+Per recuperare il tag del reparse point, usare la [**funzione FindFirstFile.**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea) Se il **membro dwFileAttributes** include l'attributo **FILE ATTRIBUTE \_ \_ REPARSE \_ POINT,** il **membro dwReserved0** specifica il reparse point.
 
-## <a name="tag-contents"></a>Contenuto del tag
+## <a name="tag-contents"></a>Contenuto dei tag
 
-I tag di reparse vengono archiviati come valori **DWORD** . I bit definiscono determinati attributi, come illustrato nel diagramma seguente.
+I tag di analisi vengono archiviati **come valori DWORD.** I bit definiscono determinati attributi, come illustrato nel diagramma seguente.
 
 ``` syntax
    3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
@@ -31,28 +31,28 @@ I tag di reparse vengono archiviati come valori **DWORD** . I bit definiscono de
   +-+-+-+-+-----------------------+-------------------------------+
 ```
 
-I 16 bit bassi determinano il tipo di reparse point. I 16 bit alti hanno 12 bit riservati per un uso futuro e 4 bit che indicano attributi specifici dei tag e i dati rappresentati dal punto di analisi. Nella tabella seguente vengono descritti questi bit.
+I 16 bit bassi determinano il tipo di reparse point. I 16 bit alti hanno 12 bit riservati per un uso futuro e 4 bit che indicano attributi specifici dei tag e dei dati rappresentati dal reparse point. Nella tabella seguente vengono descritti questi bit.
 
 
 
 | bit | Descrizione                                                                                                  |
 |-----|--------------------------------------------------------------------------------------------------------------|
-| M   | Microsoft bit. Se questo bit è impostato, il tag è di proprietà di Microsoft. Tutti gli altri tag devono usare zero per questo bit. |
-| R   | Riservati deve essere zero per tutti i tag non Microsoft.                                                           |
-| N   | Nome surrogato bit. Se questo bit è impostato, il file o la directory rappresenta un'altra entità denominata nel sistema. |
+| M   | Bit Microsoft. Se questo bit è impostato, il tag è di proprietà di Microsoft. Tutti gli altri tag devono usare zero per questo bit. |
+| R   | Riservato; deve essere zero per tutti i tag non Microsoft.                                                           |
+| N   | Bit surrogato del nome. Se questo bit è impostato, il file o la directory rappresenta un'altra entità denominata nel sistema. |
 
 
 
  
 
-Sono disponibili le macro seguenti per semplificare il test dei tag:
+Per facilitare il test dei tag sono disponibili le macro seguenti:
 
 -   [**IsReparseTagMicrosoft**](/windows/desktop/api/Winnt/nf-winnt-isreparsetagmicrosoft)
 -   [**IsReparseTagNameSurrogate**](/windows/desktop/api/Winnt/nf-winnt-isreparsetagnamesurrogate)
 
 Ogni macro restituisce un valore diverso da zero se il bit associato è impostato.
 
-Di seguito sono riportati i valori di tag di reparse predefiniti di Microsoft; sono definiti in WinNT. h:
+Di seguito sono riportati i valori dei tag di reparse predefiniti di Microsoft. sono definiti in WinNT.h:
 
 -   **IO_REPARSE_TAG_AF_UNIX**
 -   **IO_REPARSE_TAG_APPEXECLINK**
@@ -98,7 +98,7 @@ Di seguito sono riportati i valori di tag di reparse predefiniti di Microsoft; s
 -   **IO_REPARSE_TAG_WIM**
 -   **IO_REPARSE_TAG_WOF**
 
-Per garantire l'univocità dei tag, Microsoft fornisce un meccanismo per distribuire i nuovi tag. Per ulteriori informazioni, vedere il [Kit Installable File System (IFS)](https://www.microsoft.com/whdc/devtools/ifskit/reparse.mspx).
+Per garantire l'univocità dei tag, Microsoft fornisce un meccanismo per distribuire nuovi tag. Per altre informazioni, vedere [Installable File System (IFS) Kit](https://www.microsoft.com/whdc/devtools/ifskit/reparse.mspx).
 
  
 

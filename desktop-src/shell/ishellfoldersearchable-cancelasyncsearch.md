@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5c920dca-fbca-48e1-9dce-38713cf1fcef
-ms.openlocfilehash: 3146fea4f6c8d8547c8c86096b434cbaea5b5926
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: cb5c6e324e657962a4a0bbbfa64cb45fefa7d37a3ca5ce21cd25e072fc1a6594
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119223371"
 ---
 # <a name="ishellfoldersearchablecancelasyncsearch-method"></a>Metodo IShellFolderSearchable::CancelAsyncSearch
 
@@ -45,7 +45,7 @@ HRESULT CancelAsyncSearch(
 
 Tipo: **LPCITEMIDLIST**
 
-Puntatore a un [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) per la ricerca.
+Puntatore a un [**ELEMENTO ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) per la ricerca.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Puntatore a un [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidli
 
 Tipo: **DWORD \***
 
-Non è attualmente definito alcun flag. impostato su **NULL.**
+Nessun flag è attualmente definito. impostato su **NULL.**
 
 </dd> </dl>
 

@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_BKLOGTIME'
-title: Proprietà JET_BKLOGTIME
+description: 'Altre informazioni su: JET_BKLOGTIME proprietà'
+title: JET_BKLOGTIME proprietà
 TOCTitle: JET_BKLOGTIME properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_BKLOGTIME
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_bklogtime_properties(v=EXCHG.10)
 ms:contentKeyID: 39515257
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6639e919b1665ba7b1301db0b877b1c84d52599c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53bc69a86809031791af1268b4f78e800adb0d2a502ab12eb84517c5d4a1bd17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104553426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475881"
 ---
-# <a name="jet_bklogtime-properties"></a>Proprietà JET_BKLOGTIME
+# <a name="jet_bklogtime-properties"></a>JET_BKLOGTIME proprietà
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_BKLOGTIME](./jet-bklogtime-structure2.md) espone i membri seguenti.
+Il [JET_BKLOGTIME](./jet-bklogtime-structure2.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -34,18 +34,18 @@ Il tipo di [JET_BKLOGTIME](./jet-bklogtime-structure2.md) espone i membri seguen
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="hh565692(v=exchg.10).md">HasValue</a></td>
-<td>Ottiene un valore che indica se il JET_BKLOGTIME ha un valore null.</td>
+<td><a href="hh565692(v=exchg.10).md">Hasvalue</a></td>
+<td>Ottiene un valore che indica se l'JET_BKLOGTIME ha un valore Null.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh596158(v=exchg.10).md">IsSnapshot</a></td>
-<td>Ottiene un valore che indica se l'JET_BKLOGTIME è per un backup di snapshot.</td>
+<td>Ottiene un valore che indica se la JET_BKLOGTIME è per un backup di snapshot.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="hh564416(v=exchg.10).md">IsUtc</a></td>
-<td>Ottiene un valore che indica se il JET_BKLOGTIME è in formato UTC.</td>
+<td>Ottiene un valore che indica se la JET_BKLOGTIME è in formato UTC.</td>
 </tr>
 </tbody>
 </table>
@@ -57,6 +57,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME struttura](./jet-bklogtime-structure2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

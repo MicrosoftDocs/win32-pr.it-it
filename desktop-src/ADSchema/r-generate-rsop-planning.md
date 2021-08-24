@@ -1,10 +1,10 @@
 ---
-title: Generate-RSoP-pianificazione estesa a destra
-description: L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà generare dati RSoP in modalità di pianificazione per gli utenti o i computer all'interno dell'unità organizzativa.
+title: Diritto esteso Generate-RSoP-Planning
+description: L'utente che dispone dei diritti per un'unità organizzativa o un dominio sarà in grado di generare dati RSoP in modalità pianificazione per gli utenti o i computer all'interno dell'unità organizzativa.
 ms.assetid: 4a874e47-c88b-4945-912b-7d4a2dd799df
 ms.tgt_platform: multiple
 keywords:
-- Generate-RSoP-pianificazione dello schema AD a destra esteso
+- Schema AD esteso generate-RSoP-Planning
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f20b7d3a6431dcc19e83f95c594fd0332e35eb2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e00e8365f032559484d9c4dc1790586493dc5bb1b897e96dafb118c2c77c23a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531871"
 ---
-# <a name="generate-rsop-planning-extended-right"></a>Generate-RSoP-pianificazione estesa a destra
+# <a name="generate-rsop-planning-extended-right"></a>Diritto esteso Generate-RSoP-Planning
 
-L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà generare dati RSoP in modalità di pianificazione per gli utenti o i computer all'interno dell'unità organizzativa.
+L'utente che dispone dei diritti per un'unità organizzativa o un dominio sarà in grado di generare dati RSoP in modalità pianificazione per gli utenti o i computer all'interno dell'unità organizzativa.
 
 
 
@@ -48,8 +48,8 @@ L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 55                                                                                                          |
+| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -59,8 +59,8 @@ L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 55                                                                                                          |
+| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -70,8 +70,8 @@ L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 55                                                                                                          |
+| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -81,8 +81,8 @@ L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 55                                                                                                          |
+| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 
@@ -92,8 +92,8 @@ L'utente che dispone dei diritti per un'unità organizzativa o un dominio potrà
 
 | Voce | Valore |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Domain-DNS**](c-domaindns.md)<br/> |
-| Localization-display-ID | 55                                                                                                          |
+| Applies-To              | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**DNS di dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 55                                                                                                          |
 
 
 

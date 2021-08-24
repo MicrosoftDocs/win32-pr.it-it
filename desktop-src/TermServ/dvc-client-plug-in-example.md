@@ -1,20 +1,20 @@
 ---
 title: Esempio di plug-in client DVC
-description: Esempio di codice C++ in cui viene illustrato come creare un plug-in del canale virtuale dinamico (DVC) client di Connessione Desktop remoto (RDC).
+description: Esempio di codice C++ che illustra come creare un plug-in DVC (Dynamic Virtual Channel) del client Connessione Desktop remoto (RDC).
 ms.assetid: ecc673ec-1bea-4e7c-b1b5-a2342445f6cf
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85f843200e2a4ab92a3763d86ba4b6711737938c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eb8b8d79df4156f90c7480296a89685be1bc77f70afb10c3feb2fdded28eff7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119285601"
 ---
 # <a name="dvc-client-plug-in-example"></a>Esempio di plug-in client DVC
 
-Nell'esempio di codice C++ riportato di seguito viene fornito un esempio di creazione di un plug-in di un canale virtuale dinamico (DVC) client Connessione Desktop remoto (RDC).
+L'esempio di codice C++ seguente fornisce un esempio di come creare un plug-in DVC (Dynamic Virtual Channel) del client Connessione Desktop remoto (RDC).
 
 
 ```C++
@@ -204,9 +204,9 @@ HRESULT
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,18 +6,18 @@ keywords:
 - AriaRoleErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df04ad94d68ae1e8e2e8d3352aa349834a2389fa
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 51c0fcef639a54bcd805bcb3f239e8d42cfeda8c5111d128c5f54157db75d7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "106300631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134014"
 ---
 # <a name="aria-role-error"></a>Errore del ruolo ARIA
 
 ## <a name="text"></a>Testo
 
-L'elemento ha un ruolo WAI-ARIA non valido.
+Il ruolo WAI-ARIA dell'elemento non è valido.
 
 ## <a name="type"></a>Tipo
 
@@ -25,9 +25,9 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Questo errore si applica a tutti gli elementi che hanno l'attributo [**Role**](https://developer.mozilla.org/docs/Web/HTML/Reference) . Indica che l'attributo **Role** non è un valore di ruolo di Web Accessibility Initiative (Wai-aria) accessibile per Internet, come definito dalla specifica Wai-aria. L'impostazione di un ruolo valido consente di garantire che l'elemento venga interpretato correttamente dalle utilità per la lettura dello schermo e da altri strumenti di Assistive Technology.
+Questo errore si applica a tutti gli elementi con [**l'attributo role.**](https://developer.mozilla.org/docs/Web/HTML/Reference) Indica che l'attributo **role** non è un valore di ruolo WAI-ARIA (Web Accessibility Initiative - Accessible Rich Internet Applications) valido, come definito dalla specifica WAI-ARIA. L'impostazione di un ruolo valido garantisce che l'elemento venga interpretato correttamente dalle utilità per la lettura dello schermo e da assistive technology strumenti.
 
-Per correggere l'errore, impostare l'attributo [**Role**](https://developer.mozilla.org/docs/Web/HTML/Reference) su un valore del ruolo Wai-aria valido. Si noti che i ruoli di WAI-ARIA astratti non sono validi.
+Per correggere l'errore, impostare [**l'attributo role**](https://developer.mozilla.org/docs/Web/HTML/Reference) su un valore di ruolo WAI-ARIA valido. Si noti che i ruoli WAI-ARIA astratti non sono validi.
 
 ## <a name="example"></a>Esempio
 
@@ -46,12 +46,12 @@ Per correggere l'errore, impostare l'attributo [**Role**](https://developer.mozi
 
 <dl> <dt>
 
-[Errore del ruolo del contenitore ARIA](aria-container-role.md)
+[Errore del ruolo contenitore ARIA](aria-container-role.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

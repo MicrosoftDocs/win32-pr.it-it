@@ -3,9 +3,9 @@ title: Proprietà RedirectByDefault di IMsRdpCameraRedirConfigCollection
 description: Specifica se una nuova fotocamera viene reindirizzata per impostazione predefinita.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectByDefault
-- Servizi Desktop remoto proprietà RedirectByDefault, interfaccia IMsRdpCameraRedirConfigCollection
-- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto, proprietà RedirectByDefault
+- Proprietà RedirectByDefault Servizi Desktop remoto
+- Proprietà RedirectByDefault Servizi Desktop remoto, interfaccia IMsRdpCameraRedirConfigCollection
+- Interfaccia IMsRdpCameraRedirConfigCollection Servizi Desktop remoto , proprietà RedirectByDefault
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 810af200eefee0008aea21af684c02b6d31325eb
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 8c95431132acf5e3c08ede859520c844c4cae542f6b07dcb8e5781726078e754
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104123285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475871"
 ---
-# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>Proprietà IMsRdpCameraRedirConfigCollection:: RedirectByDefault
+# <a name="imsrdpcameraredirconfigcollectionredirectbydefault-property"></a>Proprietà IMsRdpCameraRedirConfigCollection::RedirectByDefault
 
 Specifica se una nuova fotocamera viene reindirizzata per impostazione predefinita.
 
@@ -54,7 +54,7 @@ Valore che indica se una nuova fotocamera viene reindirizzata per impostazione p
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-aaab-4504-B681-649D6073A37A          |
+| IID                      | IID \_ IMsRdpCameraRedirConfigCollection è definito come AE45252B-AAAB-4504-B681-649D6073A37A          |
 
 ## <a name="see-also"></a>Vedi anche
 

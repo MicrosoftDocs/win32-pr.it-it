@@ -1,12 +1,12 @@
 - name: Mobile Broadband
   href: mobile-broadband-networks-portal.md
   items:
-    - name: Procedure consigliate per l'API broadband mobile
+    - name: Procedure consigliate per l'API Mobile Broadband
       href: mobile-broadband-best-practices.md
-    - name: Informazioni di riferimento sulle API broadband mobile
+    - name: Informazioni di riferimento sulle API Mobile Broadband
       href: mobile-broadband-networks-api-reference.md
       items:
-        - name: Enumerazioni API broadband mobile
+        - name: Enumerazioni dell'API Mobile Broadband
           href: mobile-broadband-networks-api-enumerations.md
           items:
             - name: MBN_ACTIVATION_STATE
@@ -79,15 +79,15 @@
               href: /windows/desktop/api/mbnapi/ne-mbnapi-mbn_voice_call_state
             - name: MBN_VOICE_CLASS
               href: /windows/desktop/api/mbnapi/ne-mbnapi-mbn_voice_class
-        - name: Interfacce API broadband mobile
+        - name: Interfacce API Mobile Broadband
           href: mobile-broadband-networks-api-interfaces.md
           items:
             - name: IMbnConnection
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnconnection
               items:
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnection-connect
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnection-disconnect
                 - name: Metodo GetActivationNetworkError
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnection-getactivationnetworkerror
@@ -129,7 +129,7 @@
               items:
                 - name: Metodo GetConnection
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionmanager-getconnection
-                - name: Metodo GetConnection
+                - name: Metodo GetConnections
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionmanager-getconnections
             - name: IMbnConnectionManagerEvents
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionmanagerevents
@@ -145,7 +145,7 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofile-delete
                 - name: Metodo GetProfileXmlData
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofile-getprofilexmldata
-                - name: Metodo updateprofile in
+                - name: Metodo UpdateProfile
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofile-updateprofile
             - name: IMbnConnectionProfileEvents
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofileevents
@@ -177,7 +177,7 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-opencommandsession
                 - name: Metodo CloseCommandSession
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-closecommandsession
-                - name: Metodo secommand
+                - name: Metodo SetCommand
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-setcommand
                 - name: Metodo QueryCommand
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-querycommand
@@ -187,13 +187,13 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-closedatasession
                 - name: Metodo WriteData
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-writedata
-                - name: Proprietà IsDataSessionOpen
+                - name: IsDataSessionOpen - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-get_isdatasessionopen
-                - name: Proprietà InterfaceID
+                - name: InterfaceID - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-get_interfaceid
-                - name: Proprietà DeviceServiceID
+                - name: DeviceServiceID - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-get_deviceserviceid
-                - name: Proprietà IsCommandSessionOpen
+                - name: IsCommandSessionOpen - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservice-get_iscommandsessionopen
             - name: IMbnDeviceServicesContext
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservicescontext
@@ -202,9 +202,9 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservicescontext-enumeratedeviceservices
                 - name: Metodo GetDeviceService
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservicescontext-getdeviceservice
-                - name: Proprietà MaxCommandSize
+                - name: MaxCommandSize - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservicescontext-get_maxcommandsize
-                - name: Proprietà MaxDataSize
+                - name: MaxDataSize - proprietà
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservicescontext-get_maxdatasize
             - name: IMbnDeviceServicesEvents
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservicesevents
@@ -236,7 +236,7 @@
               items:
                 - name: Metodo GetDeviceServicesContext
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbndeviceservicesmanager-getdeviceservicescontext
-            - name: IMbnInterface
+            - name: Interfaccia IMbn
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbninterface
               items:
                 - name: Metodo GetConnection
@@ -327,9 +327,9 @@
               items:
                 - name: Cambia metodo
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-change
-                - name: Disable (metodo)
+                - name: Metodo Disable
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-disable
-                - name: Enable (metodo)
+                - name: Metodo Enable
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-enable
                 - name: Metodo Enter
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-enter
@@ -403,7 +403,7 @@
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnregistration-getpacketattachnetworkerror
                 - name: Metodo GetProviderID
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnregistration-getproviderid
-                - name: GetProviderName (metodo)
+                - name: Metodo GetProviderName
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnregistration-getprovidername
                 - name: Metodo GetRegisterMode
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnregistration-getregistermode
@@ -509,7 +509,7 @@
             - name: IMbnSmsReadMsgTextCdma
               href: /windows/desktop/api/mbnapi/nn-mbnapi-imbnsmsreadmsgtextcdma
               items:
-                - name: Address (proprietà)
+                - name: Proprietà Address
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_address
                 - name: Proprietà EncodingID
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnsmsreadmsgtextcdma-get_encodingid
@@ -546,7 +546,7 @@
               items:
                 - name: Metodo SetVendorSpecific
                   href: /windows/desktop/api/mbnapi/nf-mbnapi-imbnvendorspecificoperation-setvendorspecific
-        - name: Strutture API broadband mobile
+        - name: Strutture dell'API Mobile Broadband
           href: mobile-broadband-networks-api-structures.md
           items:
             - name: MBN_CONTEXT
@@ -565,13 +565,13 @@
               href: /windows/desktop/api/mbnapi/ns-mbnapi-mbn_sms_filter
             - name: MBN_SMS_STATUS_INFO
               href: /windows/desktop/api/mbnapi/ns-mbnapi-mbn_sms_status_info
-    - name: Riferimento allo schema del profilo broadband mobile
+    - name: Riferimento allo schema del profilo Mobile Broadband
       href: schema-schema.md
       items:
-        - name: Schema profilo broadband mobile V1
+        - name: Schema del profilo Mobile Broadband v1
           href: mobile-broadband-profile-schema.md
           items:
-            - name: Elementi del profilo di Mobile Broadband schema v1
+            - name: Elementi dello schema del profilo Mobile Broadband v1
               href: schema-elements.md
               items:
                 - name: Elemento AccessString (contextType)
@@ -584,11 +584,11 @@
                   href: schema-compression-contexttype-element.md
                 - name: Elemento ConnectionMode (MBNProfile)
                   href: schema-connectionmode-mbnprofile-element.md
-                - name: Elemento context (MBNProfile)
+                - name: Elemento Context (MBNProfile)
                   href: schema-context-mbnprofile-element.md
                 - name: Elemento DataRoamingPartners (MBNProfile)
                   href: schema-dataroamingpartners-mbnprofile-element.md
-                - name: Description (MBNProfile)-elemento
+                - name: Elemento Description (MBNProfile)
                   href: schema-description-mbnprofile-element.md
                 - name: Elemento HomeProviderName (MBNProfile)
                   href: schema-homeprovidername-mbnprofile-element.md
@@ -602,11 +602,11 @@
                   href: schema-mbnprofile-element.md
                 - name: Elemento Name (MBNProfile)
                   href: schema-name-mbnprofile-element.md
-                - name: Password (UserLogonCred)-elemento
+                - name: Elemento Password (UserLogonCred)
                   href: schema-password-userlogoncred-element.md
                 - name: Elemento ProfileCreationType (MBNProfile)
                   href: schema-profilecreationtype-mbnprofile-element.md
-                - name: Elemento provider (DataRoamingPartners)
+                - name: Elemento Provider (DataRoamingPartners)
                   href: schema-provider-dataroamingpartners-element.md
                 - name: Elemento ProviderID (providerType)
                   href: schema-providerid-providertype-element.md
@@ -620,10 +620,10 @@
                   href: schema-userlogoncred-contexttype-element.md
                 - name: Elemento UserName (UserLogonCred)
                   href: schema-username-userlogoncred-element.md
-            - name: Tipi semplici dello schema profilo a banda larga mobile V1
+            - name: Tipi semplici dello schema del profilo Mobile Broadband v1
               href: schema-simple-types.md
               items:
-                - name: Tipo semplice iconFileType
+                - name: iconFileType Simple Type
                   href: schema-iconfiletype-simpletype.md
                 - name: Tipo semplice nameType
                   href: schema-nametype-simpletype.md
@@ -635,35 +635,35 @@
                   href: schema-simiccidtype-simpletype.md
                 - name: Tipo semplice subscriberIdType
                   href: schema-subscriberidtype-simpletype.md
-            - name: Tipi complessi dello schema profilo broadband mobile V1
+            - name: Tipi complessi dello schema del profilo Mobile Broadband v1
               href: schema-complex-types.md
               items:
                 - name: Tipo complesso contextType
                   href: schema-contexttype-complextype.md
                 - name: Tipo complesso providerType
                   href: schema-providertype-complextype.md
-        - name: Schema del profilo broadband mobile V2
+        - name: Schema del profilo Mobile Broadband v2
           href: mobile-broadband-profile-schema-v2.md
           items:
-            - name: Elementi del profilo Mobile Broadband schema V2
+            - name: Elementi dello schema del profilo Mobile Broadband v2
               href: mobile-broadband-profile-schema-v2-elements.md
               items:
                 - name: DisplayProviderName
                   href: element-displayprovidername.md
                 - name: IsPurchaseProfile
                   href: element-ispurchaseprofile.md
-        - name: Schema profilo a banda larga mobile V3
+        - name: Schema del profilo Mobile Broadband v3
           href: mobile-broadband-profile-schema-v3.md
           items:
-            - name: Elementi dello schema del profilo broadband mobile V3
+            - name: Elementi dello schema del profilo Mobile Broadband v3
               href: mobile-broadband-profile-schema-v3-elements.md
               items:
                 - name: IsAdditionalPdpContextProfile
                   href: element-isadditionalpdpcontextprofile.md
-        - name: Schema del profilo broadband mobile V4
+        - name: Schema del profilo Mobile Broadband v4
           href: schema-root.md
           items:
-            - name: Elementi del profilo Mobile Broadband schema V4
+            - name: Elementi dello schema del profilo Mobile Broadband v4
               href: root-elements.md
               items:
                 - name: MBNProfileExt
@@ -685,7 +685,7 @@
                       href: element-simiccid.md
                     - name: HomeProviderName
                       href: element-homeprovidername.md
-                    - name: AutoConnectOnInternet
+                    - name: Connessione automaticaOnInternet
                       href: element-autoconnectoninternet.md
                     - name: ConnectionMode
                       href: element-connectionmode.md
@@ -724,11 +724,11 @@
                       items:
                         - name: CellularClass
                           href: element-cellularclass.md
-                        - name: RATApplicability
+                        - name: APPLICAZIONE DI BASEApplicità
                           href: element-ratapplicability.md
                         - name: RoamApplicability
                           href: element-roamapplicability.md
-                        - name: IMSI
+                        - name: Imsi
                           href: element-imsi.md
                         - name: IwlanApplicability
                           href: element-iwlanapplicability.md
@@ -792,14 +792,14 @@
                       href: element-1-adminroamcontrol.md
                     - name: ProfileCreationType
                       href: element-1-profilecreationtype.md
-            - name: Tipi semplici del profilo Mobile Broadband schema V4
+            - name: Schema del profilo Mobile Broadband v4 Tipi semplici
               href: simple-types.md
               items:
                 - name: Tipo semplice guidType
                   href: simpletype-guidtype.md
                 - name: Tipo semplice iwlanApplicabilityType
                   href: simpletype-iwlanapplicabilitytype.md
-                - name: Tipo semplice roamApplicabilityType
+                - name: tipo semplice roamApplicabilityType
                   href: simpletype-roamapplicabilitytype.md
                 - name: Tipo semplice roamControlType
                   href: simpletype-roamcontroltype.md

@@ -1,7 +1,7 @@
 ---
-description: La funzione LoadOLEAut32 carica la libreria a collegamento dinamico (OleAut32.dll) di automazione.
+description: La funzione LoadOLEAut32 carica la libreria a collegamento dinamico di Automazione (OleAut32.dll).
 ms.assetid: af907341-1e2c-4c63-bf4e-d6c49b4f6a6e
-title: Funzione LoadOLEAut32 (ComBase. h)
+title: Funzione LoadOLEAut32 (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b23bad7e445eebc78ecf8a849ddde8fc23746131
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0ca5832246e90e1df207754dc33380547b8193829394d81e6b2b757fccf79a91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502311"
 ---
-# <a name="loadoleaut32-function"></a>LoadOLEAut32 (funzione)
+# <a name="loadoleaut32-function"></a>Funzione LoadOLEAut32
 
-La funzione **LoadOLEAut32** carica la libreria a collegamento dinamico (OleAut32.dll) di automazione.
+La **funzione LoadOLEAut32** carica la libreria a collegamento dinamico di Automazione (OleAut32.dll).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un handle a un'istanza di DLL di automazione.
+Restituisce un handle a un'istanza della DLL di automazione.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il distruttore [**CBaseObject**](cbaseobject.md) Elimina l'oggetto che ha caricato OleAut32.dll, la libreria verrà scaricata se ancora caricata.
+Quando il [**distruttore CBaseObject**](cbaseobject.md) elimina l'oggetto caricato OleAut32.dll, scarica la libreria se è ancora caricata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Quando il distruttore [**CBaseObject**](cbaseobject.md) Elimina l'oggetto che ha
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>ComBase. h (Includi Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

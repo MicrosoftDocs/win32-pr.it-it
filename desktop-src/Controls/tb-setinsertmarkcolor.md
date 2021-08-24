@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETINSERTMARKCOLOR (COMmctrl. h)
-description: Imposta il colore utilizzato per creare il segno di inserimento per la barra degli strumenti.
+title: TB_SETINSERTMARKCOLOR messaggio (Commctrl.h)
+description: Imposta il colore utilizzato per disegnare il segno di inserimento per la barra degli strumenti.
 ms.assetid: 09a04449-9a1f-4f9a-b09f-9f22f930d735
 keywords:
-- Controlli di Windows Message TB_SETINSERTMARKCOLOR
+- TB_SETINSERTMARKCOLOR dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 954654d71a3e3b7bba9af287d3e92fb2362e8711
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 466c9bfe27462b11cc0c6cf3a183328ddedb1b422b4d0c07b4496c7a90f83890
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540041"
 ---
-# <a name="tb_setinsertmarkcolor-message"></a>TB \_ SETINSERTMARKCOLOR messaggio
+# <a name="tb_setinsertmarkcolor-message"></a>TB \_ MESSAGGIO SETINSERTMARKCOLOR
 
-Imposta il colore utilizzato per creare il segno di inserimento per la barra degli strumenti.
+Imposta il colore utilizzato per disegnare il segno di inserimento per la barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta il colore utilizzato per creare il segno di inserimento per la barra deg
 *lParam* 
 </dt> <dd>
 
-Valore di **COLORREF** che contiene il nuovo colore del segno di inserimento.
+**Valore COLORREF** che contiene il nuovo colore del segno di inserimento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **COLORREF** che contiene il colore del segno di inserimento precedente.
+Restituisce un **valore COLORREF** che contiene il colore del segno di inserimento precedente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore **COLORREF** che contiene il colore del segno di inserimen
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

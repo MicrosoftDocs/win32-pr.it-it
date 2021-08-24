@@ -1,9 +1,9 @@
 ---
 title: Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer
-description: L'evento CurrentPlaylistChange si verifica quando viene apportata una modifica all'interno della playlist corrente. | Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer
+description: L'evento CurrentPlaylistChange si verifica quando viene modificato un elemento all'interno della playlist corrente. | Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer
 ms.assetid: 1f9c99a4-7d10-48bf-b5ff-b1c1d6753b20
 keywords:
-- Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f99f34f0e02d03352a61bbfca6767295d63d59a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07ff3c076f9b670e3cd234a53b93f3ea9c0963d2dea1f12a3963f12300e9532e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136144"
 ---
 # <a name="currentplaylistchange-event-of-the-axwindowsmediaplayer-object"></a>Evento CurrentPlaylistChange dell'oggetto AxWindowsMediaPlayer
 
-L'evento CurrentPlaylistChange si verifica quando viene apportata una modifica all'interno della playlist corrente.
+L'evento CurrentPlaylistChange si verifica quando viene modificato un elemento all'interno della playlist corrente.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_CurrentPlaylistChange(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_CurrentPlaylistChangeEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentPlaylistChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentPlaylistChangeEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentPlaylistChangeEvent**, che contiene la proprietà seguente correlata a questo evento.
 
 
 
 | Proprietà | Descrizione                                                                                                                   |
 |----------|-------------------------------------------------------------------------------------------------------------------------------|
-| change (modifica)   | Valore di enumerazione WMPLib. WMPPlaylistChangeEventTypeAn che indica il tipo di modifica apportata alla playlist.<br/> |
+| change (modifica)   | Valore di enumerazione WMPLib.WMPPlaylistChangeEventTypeAn che indica il tipo di modifica apportata alla playlist.<br/> |
 
 
 
@@ -59,7 +59,7 @@ Questo evento non si verifica quando una playlist diversa diventa la playlist co
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono visualizzati i nomi di tutti gli elementi multimediali nella playlist corrente in risposta all'evento CurrentPlaylistChange. L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente vengono visualizzati i nomi di tutti gli elementi multimediali nella playlist corrente in risposta all'evento CurrentPlaylistChange. L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -144,7 +144,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -157,10 +157,10 @@ End Sub
 [**Oggetto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. currentPlaylist (VB e C#)**](axwmplib-axwindowsmediaplayer-currentplaylist--vb-and-c.md)
+[**AxWindowsMediaPlayer.currentPlaylist (VB e C#)**](axwmplib-axwindowsmediaplayer-currentplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. PlaylistChange (VB e C#)**](axwmplib-axwindowsmediaplayer-playlistchange.md)
+[**Evento AxWindowsMediaPlayer.PlaylistChange (VB e C#)**](axwmplib-axwindowsmediaplayer-playlistchange.md)
 </dt> <dt>
 
 [**WMPPlaylistChangeEventType**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpplaylistchangeeventtype)

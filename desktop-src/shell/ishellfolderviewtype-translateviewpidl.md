@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 3b7fa6c4-3d02-44ed-b63d-80a799e4017a
-ms.openlocfilehash: 537a77e7ffffb462e0031ea0959f60cd695f7d99
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 00d419d05a21c9328d29c23ee4c6475254cc6635594cc20e989144361caab3dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443281"
 ---
 # <a name="ishellfolderviewtypetranslateviewpidl-method"></a>Metodo IShellFolderViewType::TranslateViewPidl
 
@@ -46,7 +46,7 @@ HRESULT TranslateViewPidl(
 
 Tipo: **PCUIDLIST \_ RELATIVE**
 
-Matrice di ID elemento relativi alla cartella radice.
+Matrice di ID elemento relativa alla cartella radice.
 
 </dd> <dt>
 

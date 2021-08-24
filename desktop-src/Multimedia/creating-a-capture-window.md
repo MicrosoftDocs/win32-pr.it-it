@@ -3,19 +3,19 @@ title: Creazione di una finestra di acquisizione
 description: Creazione di una finestra di acquisizione
 ms.assetid: a727ce14-9b12-4f21-bab4-fa2eb245dce7
 keywords:
-- capCreateCaptureWindow (funzione)
+- Funzione capCreateCaptureWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28375da063839d3120ca60bdabd5ca997fa31b02
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 49d44e7701900d090a8d73b226039d468e2da817e9c0f9746fc10eaa13578d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144774"
 ---
 # <a name="creating-a-capture-window"></a>Creazione di una finestra di acquisizione
 
-Nell'esempio seguente viene creata una finestra di acquisizione tramite la funzione [**capCreateCaptureWindow**](/windows/desktop/api/Vfw/nf-vfw-capcreatecapturewindowa) .
+L'esempio seguente crea una finestra di acquisizione usando la [**funzione capCreateCaptureWindow.**](/windows/desktop/api/Vfw/nf-vfw-capcreatecapturewindowa)
 
 
 ```C++
@@ -33,12 +33,12 @@ hWndC = capCreateCaptureWindow (
 
 <dl> <dt>
 
-[Uso di acquisizione video](using-video-capture.md)
+[Uso dell'acquisizione video](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

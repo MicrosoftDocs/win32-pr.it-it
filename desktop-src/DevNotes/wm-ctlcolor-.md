@@ -1,22 +1,22 @@
 ---
-description: Il \_ messaggio WM CTLCOLOR viene usato nelle versioni di Windows a 16 bit per modificare la combinazione di colori delle caselle di riepilogo, le caselle di riepilogo di caselle combinate, le finestre di messaggio, i controlli pulsante, i controlli di modifica, i controlli statici e le finestre di dialogo. Nota per informazioni correlate a questo messaggio e alle versioni a 32 bit di Windows, vedere la sezione Osservazioni.
+description: Il messaggio WM CTLCOLOR viene usato nelle versioni a 16 bit di Windows per modificare la combinazione di colori delle caselle di riepilogo, le caselle di riepilogo delle caselle combinate, le caselle di messaggio, i controlli pulsante, i controlli di modifica, i controlli statici e le finestre \_ di dialogo. Nota Per informazioni relative a questo messaggio e alle versioni a 32 bit Windows, vedere la sezione Osservazioni.
 ms.assetid: e654cf48-550f-4210-9952-20470b9a397a
-title: Messaggio WM_CTLCOLOR (WindowsX. h)
+title: WM_CTLCOLOR messaggio (WindowsX.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8166979c17b7d2eef50af062e5df13712e9d32ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c53f18bc42737e44a2137e0c9763dfc41de44f65661ca4754915f7a21317641
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119343291"
 ---
-# <a name="wm_ctlcolor-message"></a>\_Messaggio CTLCOLOR WM
+# <a name="wm_ctlcolor-message"></a>Messaggio \_ WM CTLCOLOR
 
-Il messaggio **WM \_ CTLCOLOR** viene usato nelle versioni di Windows a 16 bit per modificare la combinazione di colori delle caselle di riepilogo, le caselle di riepilogo di caselle combinate, le finestre di messaggio, i controlli pulsante, i controlli di modifica, i controlli statici e le finestre di dialogo.
+Il messaggio **WM \_ CTLCOLOR** viene usato nelle versioni a 16 bit di Windows per modificare la combinazione di colori delle caselle di riepilogo, le caselle di riepilogo delle caselle combinate, le caselle di messaggio, i controlli pulsante, i controlli di modifica, i controlli statici e le finestre di dialogo.
 
 > [!Note]  
-> Per informazioni correlate a questo messaggio e alle versioni a 32 bit di Windows, vedere la sezione Osservazioni.
+> Per informazioni relative a questo messaggio e alle versioni a 32 bit Windows, vedere la sezione Osservazioni.
 
  
 
@@ -35,7 +35,7 @@ Il messaggio **WM \_ CTLCOLOR** viene usato nelle versioni di Windows a 16 bit p
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra di destinazione.
@@ -45,31 +45,31 @@ Handle per la finestra di destinazione.
 *wParam* 
 </dt> <dd>
 
-Handle per un contesto di visualizzazione (DC).
+Handle per un contesto di visualizzazione.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Handle per una finestra figlio (controllo).
+Handle per una finestra figlio (controllo ).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, restituisce un handle a un pennello. Il sistema utilizza il pennello per disegnare lo sfondo del controllo.
+Se un'applicazione elabora questo messaggio, restituisce un handle a un pennello. Il sistema usa il pennello per disegnare lo sfondo del controllo.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **WM \_ CTLCOLOR** di Windows a 16 bit è stato sostituito da notifiche più specifiche. Queste sostituzioni includono quanto segue:
+Il **messaggio \_ WM CTLCOLOR** da un Windows a 16 bit è stato sostituito da notifiche più specifiche. Queste sostituzioni includono quanto segue:
 
--   [**\_CTLCOLORBTN WM**](../controls/wm-ctlcolorbtn.md)
--   [**\_CTLCOLOREDIT WM**](../controls/wm-ctlcoloredit.md)
--   [**\_CTLCOLORDLG WM**](../dlgbox/wm-ctlcolordlg.md)
--   [**\_CTLCOLORLISTBOX WM**](../controls/wm-ctlcolorlistbox.md)
--   [**\_CTLCOLORSCROLLBAR WM**](../controls/wm-ctlcolorscrollbar.md)
--   [**\_CTLCOLORSTATIC WM**](../controls/wm-ctlcolorstatic.md)
+-   [**WM \_ CTLCOLORBTN**](../controls/wm-ctlcolorbtn.md)
+-   [**WM \_ CTLCOLOREDIT**](../controls/wm-ctlcoloredit.md)
+-   [**WM \_ CTLCOLORDLG**](../dlgbox/wm-ctlcolordlg.md)
+-   [**WM \_ CTLCOLORLISTBOX**](../controls/wm-ctlcolorlistbox.md)
+-   [**WM \_ CTLCOLORSCROLLBAR**](../controls/wm-ctlcolorscrollbar.md)
+-   [**WM \_ CTLCOLORSTATIC**](../controls/wm-ctlcolorstatic.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Il messaggio **WM \_ CTLCOLOR** di Windows a 16 bit è stato sostituito da notif
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WindowsX. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>WindowsX.h</dt> </dl> |
 
 
 

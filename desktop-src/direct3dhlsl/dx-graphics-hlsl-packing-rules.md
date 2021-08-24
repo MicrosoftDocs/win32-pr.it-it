@@ -1,6 +1,6 @@
 ---
-title: Regole di compressione per variabili costanti
-description: Le regole di compressione stabiliscono il modo in cui i dati possono essere disposti quando vengono archiviati.
+title: Regole di packing per le variabili costanti
+description: Le regole di packing determinano la modalità di disposta dei dati quando vengono archiviati.
 ms.assetid: 5c399342-06e1-47d2-8ecf-e093ed04be50
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d85566083dc9ead93a1a9e73fb06051b62178114
-ms.sourcegitcommit: 004d7881dc9ff92ea394cd2331774e13b1e7f13c
+ms.openlocfilehash: 49b10f6383344821c7659ac40b367a77e0421d33be68a374c59920a62d37697c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "103724367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120085"
 ---
-# <a name="packing-rules-for-constant-variables"></a>Regole di compressione per variabili costanti
+# <a name="packing-rules-for-constant-variables"></a>Regole di packing per le variabili costanti
 
-Le regole di compressione stabiliscono il modo in cui i dati possono essere disposti quando vengono archiviati. HLSL implementa le regole di compressione per i dati di output di Visual Studio, i dati di input e output GS e i dati di input e output di PS. I dati non vengono compressi per gli input VS perché la fase IA non può decomprimere i dati.
+Le regole di packing determinano la modalità di disposta dei dati quando vengono archiviati. HLSL implementa le regole di pacchetto per i dati di output di Visual Studio, i dati di input e output di GS e i dati di input e output PS. I dati non sono compressi per gli input di Visual Studio perché la fase IA non può decomprimere i dati.
 
-Le regole di compressione di HLSL sono simili all'esecuzione di un **\# pragma pack 4** con Visual Studio, che consente di impacchettare i dati in limiti di 4 byte. Inoltre, HLSL comprime i dati in modo che non superino un limite di 16 byte. Le variabili vengono compresse in un vettore a quattro componenti specificato fino a quando la variabile non sarà a cavalcioni di un limite di 4 vettori; le variabili successive verranno rimbalzate sul vettore a quattro componenti successivo.
+Le regole di pacchetto HLSL sono simili all'esecuzione di un **\# pragma pack 4** con Visual Studio, che racchiude i dati in limiti a 4 byte. Inoltre, HLSL esegue il pack dei dati in modo che non attraversi un limite di 16 byte. Le variabili vengono suddivise in un determinato vettore a quattro componenti fino a quando la variabile non si eserciterà su un limite a 4 vettori. le variabili seguenti verranno restituite al vettore a quattro componenti successivo.
 
-Ogni struttura impone che la variabile successiva venga avviata sul vettore successivo a quattro componenti. Questa operazione genera talvolta la spaziatura interna per le matrici di strutture. Le dimensioni risultanti di qualsiasi struttura sono sempre divisibili in modo uniforme per **sizeof**(*vettore a quattro componenti*).
+Ogni struttura forza l'avvio della variabile successiva sul vettore a quattro componenti successivo. In alcuni casi viene generata la spaziatura interna per le matrici di strutture. Le dimensioni risultanti di qualsiasi struttura saranno sempre divisibile in modo uniforme in base **a sizeof**(*vettore a quattro componenti*).
 
-Per impostazione predefinita, le matrici non vengono compresse in HLSL. Per evitare di forzare lo shader a eseguire un sovraccarico ALU per i calcoli di offset, ogni elemento in una matrice viene archiviato in un vettore a quattro componenti. Si noti che è possibile ottenere la compressione per le matrici (e incorrere nei calcoli di indirizzamento) usando il cast.
+Le matrici non vengono imballate in HLSL per impostazione predefinita. Per evitare di forzare l'overhead ALU dello shader per i calcoli di offset, ogni elemento di una matrice viene archiviato in un vettore a quattro componenti. Si noti che è possibile ottenere la creazione di un pacchetto per le matrici (e incorrere nei calcoli di indirizzamento) usando il cast.
 
-Di seguito sono riportati alcuni esempi di strutture e le relative dimensioni compresse corrispondenti (dato: un **float1** occupa 4 byte):
+Di seguito sono riportati esempi di strutture e delle dimensioni compresse corrispondenti (dato che un **valore float1** occupa 4 byte):
 
 
 ```
@@ -130,9 +130,9 @@ cbuffer IE
 
 
 
-## <a name="more-aggressive-packing"></a>Compressione più aggressiva
+## <a name="more-aggressive-packing"></a>Creazione di un pacchetto più aggressivo
 
-È possibile comprimere una matrice in modo più aggressivo. Ad esempio, data una matrice di variabili float:
+È possibile creare un pacchetto di una matrice in modo più aggressivo. Ad esempio, data una matrice di variabili float:
 
 
 ```
@@ -141,7 +141,7 @@ float4 array[16];
 
 
 
-È possibile scegliere di comprimere il pacchetto in modo analogo al seguente, senza spazi nella matrice:
+È possibile scegliere di creare un pacchetto simile al seguente, senza spazi nella matrice:
 
 
 ```
@@ -150,18 +150,18 @@ static float2 aggressivePackArray[32] = (float2[32])array;
 
 
 
-La compressione più stretta è un compromesso rispetto alla necessità di istruzioni aggiuntive dello shader per il calcolo degli indirizzi.
+La compattazione più stretta è un compromesso rispetto alla necessità di istruzioni shader aggiuntive per il calcolo degli indirizzi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Modello Shader 4](dx-graphics-hlsl-sm4.md)
+[Modello shader 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

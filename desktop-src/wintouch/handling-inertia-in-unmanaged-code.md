@@ -1,10 +1,10 @@
 ---
 title: Gestione dell'inerzia nel codice non gestito
-description: In questa sezione viene illustrato come utilizzare l'interfaccia IInertiaProcessor per la gestione dell'inerzia nel codice non gestito.
+description: Questa sezione illustra come usare l'interfaccia IInertiaProcessor per gestire l'inerzia nel codice non gestito.
 ms.assetid: 3261b461-add2-4e92-9a51-b2d46630fb4f
 keywords:
-- Windows Touch, inerzia
-- Windows Touch, processore di manipolazione
+- Windows Tocco, inerzia
+- Windows Tocco, processore di manipolazione
 - inerzia, codice non gestito
 - inerzia, interfaccia IInertiaProcessor
 - inerzia, processore di manipolazione
@@ -12,24 +12,24 @@ keywords:
 - Interfaccia IInertiaProcessor, codice non gestito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3de56d06547f426de252a89ef5172df3fe4ca439
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e112605b1f998b850c3a04a045166b376fc3a12d98615b9c2af72e756a1c1b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346501"
 ---
 # <a name="handling-inertia-in-unmanaged-code"></a>Gestione dell'inerzia nel codice non gestito
 
-In questa sezione viene illustrato come utilizzare l'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) per la gestione dell'inerzia nel codice non gestito.
+Questa sezione illustra come usare [**l'interfaccia IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) per gestire l'inerzia nel codice non gestito.
 
 ## <a name="overview"></a>Panoramica
 
-Per utilizzare l'inerzia nel codice non gestito, è necessario implementare sink di evento sia per il processore di manipolazione che per il processore di inerzia. Per iniziare, aggiungere il supporto per la manipolazione all'applicazione, come descritto nella sezione [aggiunta del supporto per la manipolazione a codice non gestito](adding-manipulation-support-in-unmanaged-code.md). Si noti che per il supporto della manipolazione è necessario usare i messaggi di tocco anziché i messaggi di movimento per inviare i dati degli eventi al processore di manipolazione. Al termine della manipolazione, è necessario implementare anche un secondo sink di evento per gli eventi che verranno generati dall'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) o che dovranno modificare il sink di evento esistente per supportare gli eventi generati dalle interfacce **IInertiaProcessor** e [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Ai fini di questo esempio, è più semplice iniziare dal sink di evento creato per la sezione aggiunta del supporto per la manipolazione al codice non gestito e aggiungere un secondo costruttore che funziona con il processore di inerzia invece che con il processore di manipolazione. In questo modo, l'implementazione del sink di evento può funzionare sia per il processore di manipolazione che per il processore di inerzia. Oltre ad aggiungere un secondo costruttore, il sink di evento avrà una variabile che indica se eseguirà le operazioni in base all'input di inerzia anziché all'input di manipolazione.
+Per usare l'inerzia nel codice non gestito, è necessario implementare sink di evento sia per il processore di manipolazione che per il processore di inerzia. Per iniziare, aggiungere il supporto della manipolazione all'applicazione come descritto nella sezione Aggiunta del supporto [della manipolazione al codice non gestito](adding-manipulation-support-in-unmanaged-code.md). Si noti che il supporto della manipolazione richiede l'uso di messaggi di tocco anziché di movimenti per inviare i dati degli eventi al processore di manipolazione. Dopo aver modificato il funzionamento, è necessario implementare anche un secondo sink di evento per gli eventi generati dall'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) o modificare il sink di evento esistente per supportare sia gli eventi generati dalle interfacce **IInertiaProcessor** che [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Ai fini di questo esempio, è più semplice iniziare dal sink di evento creato per la sezione Aggiunta del supporto di manipolazione al codice non gestito e aggiungere un secondo costruttore che funzioni con il processore di inerzia anziché con il processore di manipolazione. In questo modo, l'implementazione del sink di evento può funzionare per il processore di manipolazione o il processore di inerzia. Oltre ad aggiungere un secondo costruttore, il sink di evento avrà una variabile che indica se eseguirà le operazioni in base all'input di inerzia anziché all'input di manipolazione.
 
-### <a name="add-inertia-support-to-a-manipulation-processor-event-sink"></a>Aggiungere il supporto dell'inerzia a un sink di evento del processore di manipolazione
+### <a name="add-inertia-support-to-a-manipulation-processor-event-sink"></a>Aggiungere il supporto per l'inerzia a un sink di evento del processore di manipolazione
 
-Il codice seguente mostra il nuovo costruttore di sink di evento, le nuove variabili membro per un'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) e un flag che indica se il sink sta estrapolando l'inerzia.
+Il codice seguente illustra il nuovo costruttore del sink di evento, le nuove variabili membro per [**un'interfaccia IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) e un flag che indica se il sink sta estrapolando per l'inerzia.
 
 
 ```C++
@@ -47,7 +47,7 @@ Il codice seguente mostra il nuovo costruttore di sink di evento, le nuove varia
 
 
 
-Quando l'intestazione della classe include i nuovi costruttori e un flag che indica se si sta estrapolando, è possibile implementare il sink di evento per avere blocchi di gestione distinti per gli eventi [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . Il costruttore che accetta un **IManipulationProcessor** e un **IInertiaProcessor** deve impostare il flag **fExtrapolating** su false, che indica che si tratta di un gestore eventi **IManipulationProcessor** . Il codice seguente illustra come implementare il costruttore per un sink di evento che usa **IManipulationProcessor** .
+Dopo che l'intestazione della classe ha i nuovi costruttori e un flag che indica se si sta estrapolando, è possibile implementare il sink di evento per avere blocchi di gestione separati per gli eventi [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) Il costruttore che accetta **un IManipulationProcessor** e **un IInertiaProcessor** deve impostare il flag **fExtrapolating** su false, che indica che si tratta di un gestore eventi **IManipulationProcessor.** Il codice seguente illustra come può essere implementato il costruttore per un sink di evento che usa **IManipulationProcessor.**
 
 
 ```C++
@@ -100,7 +100,7 @@ CManipulationEventSink::CManipulationEventSink(IManipulationProcessor *pManip, I
 
 
 
-Il codice seguente illustra come implementare il costruttore per un sink di evento che usa [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . Questo costruttore imposta il flag **fExtrapolating** su true, a indicare che questa istanza della classe sink di evento eseguirà l'estrapolazione e eseguirà tutte le operazioni di spostamento eseguite in precedenza dagli eventi del processore di manipolazione.
+Il codice seguente illustra come può essere implementato il costruttore per un sink di evento che usa [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) Questo costruttore imposta il flag **fExtrapolating** su true, a indicare che questa istanza della classe di sink di evento eseguirà l'estrapolazione e eseguirà tutte le operazioni di spostamento eseguite in precedenza dagli eventi del processore di manipolazione.
 
 
 ```C++
@@ -147,18 +147,18 @@ CManipulationEventSink::CManipulationEventSink(IInertiaProcessor *pInert, HWND h
 
 
 > [!Note]  
-> L'implementazione della classe sink di evento dal sink di evento del processore di manipolazione viene riutilizzata come sink di evento per il processore di inerzia.
+> L'implementazione della classe di sink di evento dal sink di evento del processore di manipolazione viene riutilizzata come sink di evento per il processore di inerzia.
 
- 
+ 
 
-A questo punto, quando si costruisce questa classe, **CManipulationEventSink**, può essere costruita come sink di evento per un processore di manipolazione o come sink di evento per un processore di inerzia. Quando viene costruito come sink di evento del processore di inerzia, il flag **fExtrapolating** è impostato su true, a indicare che è necessario estrapolare gli eventi di manipolazione.
+Ora, quando si costruisce questa classe, **CManipulationEventSink**, può essere costruita come sink di evento per un processore di manipolazione o come sink di evento per un processore di inerzia. Quando viene costruito come sink di evento del processore di inerzia, il flag **fExtrapolating** sarà impostato su true, a indicare che gli eventi di manipolazione devono essere estrapolati.
 
 > [!Note]  
-> [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted) verrà generato dalle interfacce [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) .
+> [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted) verrà generato dalle interfacce [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)
 
- 
+ 
 
-Quando viene avviata la manipolazione, vengono impostate le proprietà dell'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . Nel codice seguente viene illustrato il modo in cui viene gestito l'evento avviato.
+All'avvio della manipolazione, vengono impostate le [**proprietà dell'interfaccia IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) Il codice seguente illustra come viene gestito l'evento started.
 
 
 ```C++
@@ -204,7 +204,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationStarted(
 
 
 
-In questo esempio vengono usate le Delta di manipolazione per spostare la finestra intorno. Nel codice seguente viene illustrato il modo in cui viene gestito l'evento Delta.
+In questo esempio vengono usati delta di manipolazione per spostare la finestra. Il codice seguente illustra come viene gestito l'evento delta.
 
 
 ```C++
@@ -245,7 +245,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
 
 
 
-In questo esempio, gli eventi di manipolazione completata avviano o arrestano un timer che chiamerà il [**processo**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) sull'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) . Nel codice seguente viene illustrato il modo in cui viene gestito l'evento di manipolazione completato.
+In questo esempio, gli eventi di manipolazione completata avviano o arrestano un timer che chiamerà [**Process**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) sull'interfaccia [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) Il codice seguente illustra come viene gestito l'evento di manipolazione completato.
 
 
 ```C++
@@ -301,7 +301,7 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationCompleted(
 
 
 
-Il codice seguente illustra come è possibile interpretare i messaggi del **\_ timer WM** in **WndProc** per eseguire chiamate da [**elaborare**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) sull'interfaccia [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor) .
+Il codice seguente illustra come interpretare i **messaggi WM \_ TIMER** in **WndProc** per eseguire chiamate a [**Process**](/windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process) sull'interfaccia [**IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)
 
 
 ```C++
@@ -315,9 +315,9 @@ case WM_TIMER:
 
 
 
-### <a name="coinitialize-the-inertia-processor-and-manipulation-processor-and-initialize-the-event-sinks"></a>Coinizializzare il processore di inerzia e il processore di manipolazione e inizializzare i sink di evento
+### <a name="coinitialize-the-inertia-processor-and-manipulation-processor-and-initialize-the-event-sinks"></a>Reinizializzare il processore di inerzia e il processore di manipolazione e inizializzare i sink di evento
 
-Dopo aver modificato il sink di evento per supportare [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) e [**IInertiaProcessor**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor), è possibile inizializzare i sink di evento e configurarli per l'esecuzione dall'applicazione. Il codice seguente mostra come vengono allocati i puntatori di interfaccia.
+Dopo aver modificato il sink di evento per supportare [**sia IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) che [**IInertiaProcessor,**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)è possibile inizializzare i sink di evento e configurarli per l'esecuzione dall'applicazione. Il codice seguente illustra come vengono allocati i puntatori a interfaccia.
 
 
 ```C++
@@ -357,7 +357,7 @@ Nell'esempio di codice seguente viene illustrato come creare un'istanza delle in
 
 
 
-Nell'esempio di codice seguente viene illustrato come costruire i sink di evento in base ai puntatori dell'interfaccia e registrare la finestra per l'input tocco.
+Nell'esempio di codice seguente viene illustrato come costruire i sink di evento dati i puntatori a interfaccia e registrare la finestra per l'input tocco.
 
 
 ```C++
@@ -377,9 +377,9 @@ Nell'esempio di codice seguente viene illustrato come costruire i sink di evento
 [Inerzia](getting-started-with-inertia.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

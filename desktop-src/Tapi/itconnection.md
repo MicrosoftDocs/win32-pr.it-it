@@ -1,55 +1,55 @@
 ---
 description: La funzionalità dell'interfaccia ITConnection è illustrata di seguito.
 ms.assetid: 44dc39cf-3222-41ed-b29c-df2d32615500
-title: Interfaccia ITConnection (sdpblb. h)
+title: Interfaccia ITConnection (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a00da80631c0ef4e8186aa36425f18e4d2a62bfc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a64758f6a5cf7bcd9106504412f4cf7f39e6fb7ca0b76e35b38e19dc3f815ccf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140344"
 ---
 # <a name="itconnection-interface"></a>Interfaccia ITConnection
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-L'interfaccia **ITConnection** fornisce le funzionalità seguenti:
+**L'interfaccia ITConnection** offre le funzionalità seguenti:
 
--   Consente di accedere alle informazioni relative all'indirizzo e alla durata (TTL) per la sessione.
--   Consente di accedere alle informazioni sulla larghezza di banda.
--   Abilita la manipolazione della chiave di crittografia.
+-   Fornisce l'accesso alle informazioni relative all'indirizzo e alla durata (TTL) per la sessione.
+-   Fornisce l'accesso alle informazioni sulla larghezza di banda.
+-   Consente la manipolazione della chiave di crittografia.
 
-L'interfaccia **ITConnection** viene creata chiamando **QueryInterface** in [**ITConferenceBlob**](itconferenceblob.md).
+**L'interfaccia ITConnection** viene creata chiamando **QueryInterface** [**in ITConferenceBlob.**](itconferenceblob.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITConnection** eredita dall'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . **ITConnection** dispone anche di questi tipi di membri:
+**L'interfaccia ITConnection** eredita dall'interfaccia [**IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **ITConnection** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITConnection** dispone di questi metodi.
+**L'interfaccia ITConnection** include questi metodi.
 
 
 
 | Metodo                                                               | Descrizione                                                                                                                                    |
 |:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ottenere \_ AddressType**](itconnection-get-addresstype.md)             | Ottiene il tipo di indirizzo.<br/>                                                                                                              |
-| [**ottenere la \_ larghezza di banda**](itconnection-get-bandwidth.md)                 | Ottiene il valore della larghezza di banda.<br/>                                                                                                               |
-| [**ottenere \_ BandwidthModifier**](itconnection-get-bandwidthmodifier.md) | Ottiene il modificatore della larghezza di banda.<br/>                                                                                                        |
-| [**ottenere \_ NetworkType**](itconnection-get-networktype.md)             | Ottiene il tipo di rete.<br/>                                                                                                              |
-| [**ottenere \_ NumAddresses**](itconnection-get-numaddresses.md)           | Ottiene il numero di indirizzi da utilizzare per la sessione.<br/>                                                                            |
-| [**ottenere \_ STARTADDRESS**](itconnection-get-startaddress.md)           | Ottiene il primo indirizzo da utilizzare per la sessione.<br/>                                                                                  |
-| [**ottenere la durata ( \_ TTL)**](itconnection-get-ttl.md)                             | Ottiene l'ambito TTL ( [*time to Live*](t-tapgloss.md) ) per le trasmissioni sugli indirizzi.<br/> |
+| [**get \_ AddressType**](itconnection-get-addresstype.md)             | Ottiene il tipo di indirizzo.<br/>                                                                                                              |
+| [**get \_ bandwidth**](itconnection-get-bandwidth.md)                 | Ottiene il valore della larghezza di banda.<br/>                                                                                                               |
+| [**get \_ BandwidthModifier**](itconnection-get-bandwidthmodifier.md) | Ottiene il modificatore della larghezza di banda.<br/>                                                                                                        |
+| [**get \_ NetworkType**](itconnection-get-networktype.md)             | Ottiene il tipo di rete.<br/>                                                                                                              |
+| [**get \_ NumAddresses**](itconnection-get-numaddresses.md)           | Ottiene il numero di indirizzi da utilizzare per la sessione.<br/>                                                                            |
+| [**get \_ StartAddress**](itconnection-get-startaddress.md)           | Ottiene il primo indirizzo da utilizzare per la sessione.<br/>                                                                                  |
+| [**get \_ Ttl**](itconnection-get-ttl.md)                             | Ottiene [*l'ambito*](t-tapgloss.md) TTL (Time To Live) per le trasmissioni sugli indirizzi.<br/> |
 | [**GetEncryptionKey**](itconnection-getencryptionkey.md)            | Ottiene la chiave di crittografia.<br/>                                                                                                            |
-| [**Inserisci \_ AddressType**](itconnection-put-addresstype.md)             | Imposta il tipo di indirizzo.<br/>                                                                                                              |
-| [**Inserisci \_ NetworkType**](itconnection-put-networktype.md)             | Imposta il tipo di rete.<br/>                                                                                                              |
+| [**put \_ AddressType**](itconnection-put-addresstype.md)             | Imposta il tipo di indirizzo.<br/>                                                                                                              |
+| [**put \_ NetworkType**](itconnection-put-networktype.md)             | Imposta il tipo di rete.<br/>                                                                                                              |
 | [**SetAddressInfo**](itconnection-setaddressinfo.md)                | Imposta le informazioni sull'indirizzo.<br/>                                                                                                           |
 | [**SetBandwidthInfo**](itconnection-setbandwidthinfo.md)            | Imposta il valore della larghezza di banda.<br/>                                                                                                           |
-| [**SetEncryptionKey**](itconnection-setencryptionkey.md)            | Imposta la chiave di crittografia necessaria per decrittografare la sessione o un'indicazione in un meccanismo per ottenere una chiave utilizzabile per mezzo esterno.<br/>     |
+| [**SetEncryptionKey**](itconnection-setencryptionkey.md)            | Imposta la chiave di crittografia necessaria per decrittografare la sessione o un'indicazione di un meccanismo per ottenere una chiave utilizzabile con mezzi esterni.<br/>     |
 
 
 
@@ -61,9 +61,9 @@ L'interfaccia **ITConnection** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

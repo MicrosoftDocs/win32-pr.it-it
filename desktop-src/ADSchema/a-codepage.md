@@ -1,11 +1,11 @@
 ---
-title: Attributo Code-Page
-description: Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non viene utilizzato da Windows 2000.
+title: Code-Page attributo
+description: Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non viene usato da Windows 2000.
 ms.assetid: f98e6fbe-0c9a-4ee0-8158-3eaaca359675
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Code-Page attribute
-- Schema AD dell'attributo codepage
+- Code-Page schema AD dell'attributo
+- Schema AD dell'attributo codePage
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c3e9858ba387b98d5556c6010490c024be836b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ff90ba0413288ff09c5793cf582a64d88e1de32ac4a3eeaba3b6ae688bf6f8eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442711"
 ---
-# <a name="code-page-attribute"></a>Attributo Code-Page
+# <a name="code-page-attribute"></a>Code-Page attributo
 
-Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non viene utilizzato da Windows 2000.
+Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non viene usato da Windows 2000.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Code-Page                                             |
-| LDAP-Display-Name | codePage                                              |
+| Ldap-Display-Name | Codepage                                              |
 | Dimensione              | 4 byte                                               |
-| Privilegio aggiornamento  | Amministratore di dominio                                  |
+| Privilegio di aggiornamento  | Amministratore di dominio                                  |
 | Frequenza di aggiornamento  | Quando l'utente desidera modificare la lingua predefinita. |
 | Attribute-Id      | 1.2.840.113556.1.4.16                                 |
-| System-ID-GUID    | bf967938-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967938-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                  |
 
 
@@ -58,15 +58,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica la tabella codici per la lingua scelta dall'utente. Questo valore non 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 65535                             |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

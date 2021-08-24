@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9adc36e4d34909481c61d1c62e4233a1f6f92a87
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e1099038cee9f1a334f50ac15eeee5091dd7aec070cf2020e0e3eb26a039ff42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121803"
 ---
 # <a name="id3dxbasemeshgetnumfaces-method"></a>Metodo ID3DXBaseMesh::GetNumFaces
 

@@ -1,63 +1,63 @@
 ---
-description: Le applicazioni WMI scritte in C++ possono eseguire chiamate asincrone utilizzando molti dei metodi dell'interfaccia COM IWbemServices.
+description: Le applicazioni WMI scritte in C++ possono effettuare chiamate asincrone usando molti dei metodi dell'interfaccia COM IWbemServices.
 ms.assetid: 5179969f-bc7d-4408-84ef-7b003950a59f
 ms.tgt_platform: multiple
 title: Esecuzione di una chiamata asincrona con C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7f093aef4b1a1b4dbede53333e77d737f8efd69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcd988382399f3fc377476c486b363cf51db6c4d9ef559c787236e41bb74117a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131193"
 ---
 # <a name="making-an-asynchronous-call-with-c"></a>Esecuzione di una chiamata asincrona con C++
 
-Le applicazioni WMI scritte in C++ possono eseguire chiamate asincrone utilizzando molti dei metodi dell'interfaccia com [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) . Tuttavia, la procedura consigliata per chiamare un metodo [*WMI*](gloss-w.md) o un [*metodo del provider*](gloss-p.md) consiste nell'utilizzare chiamate semisincrono perché le chiamate semisincrono sono più sicure delle chiamate asincrone. Per ulteriori informazioni, vedere [creazione di una chiamata semisincrono con C++](making-a-semisynchronous-call-with-c--.md) e [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+Le applicazioni WMI scritte in C++ possono effettuare chiamate asincrone usando molti dei metodi dell'interfaccia COM [**IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) Tuttavia, la procedura consigliata per chiamare un metodo [*WMI*](gloss-w.md) o un metodo [*provider*](gloss-p.md) è l'uso di chiamate semisincronose perché le chiamate semisincrone sono più sicure delle chiamate asincrone. Per altre informazioni, vedere Esecuzione di una chiamata [semisincrona con C++](making-a-semisynchronous-call-with-c--.md) e [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
-Nella procedura riportata di seguito viene descritto come eseguire una chiamata asincrona utilizzando il sink nel processo.
+La procedura seguente descrive come effettuare una chiamata asincrona usando il sink nel processo.
 
-**Per eseguire una chiamata asincrona con C++**
+**Per effettuare una chiamata asincrona usando C++**
 
-1.  Implementare l'interfaccia [**IWbemObjectSink**](iwbemobjectsink.md) .
+1.  Implementare [**l'interfaccia IWbemObjectSink.**](iwbemobjectsink.md)
 
-    Tutte le applicazioni che effettuano chiamate asincrone devono implementare [**IWbemObjectSink**](iwbemobjectsink.md). I consumer di eventi temporanei implementano anche **IWbemObjectSink** per ricevere la notifica degli eventi.
+    Tutte le applicazioni che effettuano chiamate asincrone devono implementare [**IWbemObjectSink**](iwbemobjectsink.md). I consumer di eventi temporanei implementano **anche IWbemObjectSink** per ricevere la notifica degli eventi.
 
 2.  Accedere allo spazio dei nomi WMI di destinazione.
 
-    Le applicazioni devono sempre chiamare la funzione COM [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) durante la fase di inizializzazione. In caso contrario prima di effettuare una chiamata asincrona, WMI rilascia il sink dell'applicazione senza completare la chiamata asincrona. Per ulteriori informazioni, vedere [inizializzazione di com per un'applicazione WMI](initializing-com-for-a-wmi-application.md).
+    Le applicazioni devono sempre chiamare la funzione COM [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) durante la fase di inizializzazione. Se non lo fanno prima di effettuare una chiamata asincrona, WMI rilascia il sink dell'applicazione senza completare la chiamata asincrona. Per altre informazioni, vedere [Inizializzazione di COM per un'applicazione WMI.](initializing-com-for-a-wmi-application.md)
 
 3.  Impostare la sicurezza per il sink.
 
-    Le chiamate asincrone creano una serie di problemi di sicurezza che potrebbe essere necessario gestire, ad esempio, per consentire l'accesso WMI all'applicazione. Per ulteriori informazioni, vedere [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+    Le chiamate asincrone creano un'ampia gamma di problemi di sicurezza che potrebbe essere necessario gestire, ad esempio consentire l'accesso WMI all'applicazione. Per altre informazioni, vedere [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
-4.  Eseguire la chiamata asincrona.
+4.  Effettuare la chiamata asincrona.
 
-    Il metodo restituisce immediatamente il codice **di \_ \_ \_ Errore WBEM** . L'applicazione può procedere con altre attività durante l'attesa del completamento dell'operazione. WMI segnala all'applicazione chiamando i metodi nell'implementazione [**IWbemObjectSink**](iwbemobjectsink.md) dell'applicazione.
+    Il metodo restituisce immediatamente con il **codice di esito positivo WBEM S NO \_ \_ \_ ERROR.** L'applicazione può procedere con altre attività durante l'attesa del completamento dell'operazione. WMI restituisce all'applicazione chiamando i metodi [**nell'implementazione IWbemObjectSink**](iwbemobjectsink.md) dell'applicazione.
 
 5.  Se necessario, controllare periodicamente l'implementazione per gli aggiornamenti.
 
-    Le applicazioni possono ricevere notifiche dello stato intermedio impostando il parametro *è* nella chiamata asincrona **allo \_ \_ \_ stato di invio del flag WBEM**. WMI segnala lo stato della chiamata impostando il parametro *è* di [**IWbemObjectSink**](iwbemobjectsink.md) **\_ sullo stato di stato \_ WBEM**.
+    Le applicazioni possono ricevere una notifica dello stato intermedio impostando il *parametro lFlags* nella chiamata asincrona a **WBEM \_ FLAG SEND \_ \_ STATUS**. WMI segnala lo stato della chiamata impostando il *parametro lFlags* di [**IWbemObjectSink**](iwbemobjectsink.md) su **WBEM \_ STATUS \_ PROGRESS**.
 
-6.  Se necessario, è possibile annullare la chiamata prima di completare l'elaborazione di WMI chiamando il metodo [**IWbemServices:: CancelCallAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) .
+6.  Se necessario, è possibile annullare la chiamata prima del completamento dell'elaborazione di WMI chiamando il metodo [**IWbemServices::CancelCallAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall)
 
-    Il metodo [**CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) Annulla l'elaborazione asincrona rilasciando immediatamente il puntatore all'interfaccia [**IWbemObjectSink**](iwbemobjectsink.md) e garantisce che il puntatore venga rilasciato prima della restituzione di **CancelAsyncCall** .
+    Il [**metodo CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) annulla l'elaborazione asincrona rilasciando immediatamente il puntatore all'interfaccia [**IWbemObjectSink**](iwbemobjectsink.md) e garantisce che il puntatore venga rilasciato prima del ritorno **di CancelAsyncCall.**
 
-    Se si usa un oggetto wrapper che implementa l'interfaccia **IUnsecured** per ospitare [**IWbemObjectSink**](iwbemobjectsink.md), è possibile riscontrare alcune complicazioni aggiuntive. Poiché l'applicazione deve passare lo stesso puntatore a [**CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) passato nella chiamata asincrona originale, l'applicazione deve mantenere l'oggetto wrapper fino a quando non diventa chiaro che l'annullamento non è necessario. Per ulteriori informazioni, vedere [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+    Se si usa un oggetto wrapper che implementa **l'interfaccia IUnsecured** per ospitare [**IWbemObjectSink,**](iwbemobjectsink.md)potrebbero verificarsi altre complicazioni. Poiché l'applicazione deve passare lo stesso puntatore a [**CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) passato nella chiamata asincrona originale, l'applicazione deve mantenere l'oggetto wrapper fino a quando non diventa chiaro che l'annullamento non è necessario. Per altre informazioni, vedere [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
 7.  Al termine, pulire i puntatori e arrestare l'applicazione.
 
-    WMI fornisce la chiamata di stato finale tramite il metodo [**sestatus**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinitsink-setstatus) .
+    WMI fornisce la chiamata di stato finale tramite il [**metodo SetStatus.**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinitsink-setstatus)
 
     > [!Note]  
-    > Dopo l'invio dell'aggiornamento dello stato finale, WMI rilascia il sink di oggetto chiamando il metodo **Release** per la classe che implementa l'interfaccia [**IWbemObjectSink**](iwbemobjectsink.md) . Nell'esempio precedente si tratta del metodo **QuerySink:: Release** . Se si desidera controllare la durata dell'oggetto sink, è possibile implementare il sink con un conteggio dei riferimenti iniziale pari a uno (1).
+    > Dopo aver inviato l'aggiornamento dello stato finale, WMI rilascia il sink di oggetto chiamando il **metodo Release** per la classe che implementa l'interfaccia [**IWbemObjectSink.**](iwbemobjectsink.md) Nell'esempio precedente si tratta del **metodo QuerySink::Release.** Se si vuole avere il controllo sulla durata dell'oggetto sink, è possibile implementare il sink con un conteggio dei riferimenti iniziale di uno (1).
 
      
 
-    Se un'applicazione client passa la stessa interfaccia di sink in due diverse chiamate asincrone sovrapposte, WMI non garantisce l'ordine di callback. Un'applicazione client che esegue chiamate asincrone sovrapposte deve passare oggetti sink diversi o serializzare le chiamate.
+    Se un'applicazione client passa la stessa interfaccia sink in due diverse chiamate asincrone sovrapposte, WMI non garantisce l'ordine del callback. Un'applicazione client che effettua chiamate asincrone sovrapposte deve passare oggetti sink diversi o serializzare le chiamate.
 
-Nell'esempio seguente sono richieste le seguenti istruzioni Reference e \# include.
+L'esempio seguente richiede le istruzioni reference e \# include seguenti.
 
 
 ```C++
@@ -69,7 +69,7 @@ using namespace std;
 
 
 
-Nell'esempio seguente viene descritto come eseguire una query asincrona utilizzando il metodo [**ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) , ma non vengono create impostazioni di sicurezza o viene rilasciato l'oggetto [**IWbemObjectSink**](iwbemobjectsink.md) . Per ulteriori informazioni, vedere [impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md).
+L'esempio seguente descrive come eseguire una query asincrona usando il metodo [**ExecQueryAsync,**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) ma non crea impostazioni di sicurezza né rilascia [**l'oggetto IWbemObjectSink.**](iwbemobjectsink.md) Per altre informazioni, vedere [Impostazione della sicurezza in una chiamata asincrona.](setting-security-on-an-asynchronous-call.md)
 
 
 ```C++
@@ -103,7 +103,7 @@ if (hRes)
 
 
 > [!Note]  
-> Il codice precedente non viene compilato senza errori perché la classe **QuerySink** non è stata definita. Per ulteriori informazioni su **QuerySink**, vedere [**IWbemObjectSink**](iwbemobjectsink.md).
+> Il codice precedente non viene compilato senza errori perché la **classe QuerySink** non è stata definita. Per altre informazioni su **QuerySink,** vedere [**IWbemObjectSink**](iwbemobjectsink.md).
 
  
 
@@ -111,7 +111,7 @@ if (hRes)
 
 <dl> <dt>
 
-[Chiamata a un metodo](calling-a-method.md)
+[Chiamata di un metodo](calling-a-method.md)
 </dt> </dl>
 
  

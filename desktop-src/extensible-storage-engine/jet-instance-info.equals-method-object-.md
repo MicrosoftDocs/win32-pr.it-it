@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca19f5886d9950a5d185de8e91687ec984e9db95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a067043df54722a86f2385043d96cc0ce590653eda437c8379536e494a2eece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473911"
 ---
 # <a name="jet_instance_infoequals-method-object"></a>JET_INSTANCE_INFO. Metodo Equals (Object)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Oggetto da confrontare con l'istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INSTANCE_INFO](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO classe](./jet-instance-info-class.md)
 
-[Membri JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO membri](./jet-instance-info-members.md)
 
 [Confronta l'overload](./jet-instance-info.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

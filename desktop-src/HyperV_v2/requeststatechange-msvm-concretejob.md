@@ -1,5 +1,5 @@
 ---
-description: Richiede che lo stato del processo venga modificato nello stato specificato.
+description: Richiede che lo stato del processo sia stato modificato nello stato specificato.
 ms.assetid: 5D7D7D20-4BB9-4375-BBBF-7AA64FEE6D13
 title: Metodo RequestStateChange della classe Msvm_ConcreteJob
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0e7abf5f4bf78ac469e528ab72bb5786130e9cf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 579ad52bd83bd43dc3071f704914eb7b5f9cae4f0be89f018e56b9608b1c12be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501131"
 ---
-# <a name="requeststatechange-method-of-the-msvm_concretejob-class"></a>Metodo RequestStateChange della classe MSVM \_ ConcreteJob
+# <a name="requeststatechange-method-of-the-msvm_concretejob-class"></a>Metodo RequestStateChange della classe Msvm \_ ConcreteJob
 
-Richiede che lo stato del processo venga modificato nello stato specificato. Richiamando il metodo **RequestStateChange** più volte è possibile che le richieste precedenti vengano sovrascritte o perse. Se viene restituito 0, l'attività è stata completata correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
+Richiede che lo stato del processo sia stato modificato nello stato specificato. La chiamata del **metodo RequestStateChange** più volte può comportare la sovrascrittura o la perdita di richieste precedenti. Se viene restituito 0, l'attività è stata completata correttamente. Qualsiasi altro codice restituito indica una condizione di errore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ in\]
+*RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **UInt16**
+Tipo: **uint16**
 
 Nuovo stato di un processo.
 
@@ -51,12 +51,12 @@ Nuovo stato di un processo.
 
 <span id="Start"></span><span id="start"></span><span id="START"></span>
 
-<span id="Start"></span><span id="start"></span><span id="START"></span>**Avvio** (2)
+<span id="Start"></span><span id="start"></span><span id="START"></span>**Inizio** (2)
 
 
 </dt> <dd>
 
-Imposta lo stato su "Running".
+Modifica lo stato in "In esecuzione".
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Imposta lo stato su "Running".
 
 </dt> <dd>
 
-Arresta temporaneamente il processo. Lo scopo è quello di riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "servizio" mentre è sospeso. (Si tratta di un processo specifico).
+Arresta temporaneamente il processo. L'intenzione è riavviare successivamente il processo con "Start". Potrebbe essere possibile immettere lo stato "Servizio" durante la sospensione. Si tratta di un processo specifico.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Arresta temporaneamente il processo. Lo scopo è quello di riavviare successivam
 
 </dt> <dd>
 
-Arresta il processo in modo corretto, salvando i dati, mantenendo lo stato e chiudendo tutti i processi sottostanti in modo ordinato.
+Arresta il processo in modo pulito, salvando i dati, mantenendo lo stato e arrestando tutti i processi sottostanti in modo ordinato.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Arresta il processo in modo corretto, salvando i dati, mantenendo lo stato e chi
 
 </dt> <dd>
 
-Termina immediatamente il processo senza alcuna necessità di salvare i dati o mantenere lo stato.
+Termina immediatamente il processo senza alcun requisito per salvare i dati o mantenere lo stato.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Inserisce il processo in uno stato del servizio specifico del fornitore. Potrebb
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato**
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF riservato**
 
 
 </dt> <dd>
@@ -126,18 +126,18 @@ Riservato.
 
 </dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ in\]
+*TimeoutPeriod* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **DateTime**
+Tipo: **datetime**
 
-Periodo di timeout che specifica la quantità massima di tempo per cui il client prevede che la transizione al nuovo stato venga eseguita. Per specificare il periodo di timeout, è necessario utilizzare il formato intervallo. Il valore 0 o **null** indica che il client non dispone di requisiti temporali per la transizione. Se questa proprietà non contiene 0 o **null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (utilizzo del parametro timeout non supportato).
+Periodo di timeout che specifica la quantità massima di tempo prevista dal client per la transizione al nuovo stato. Il formato dell'intervallo deve essere usato per specificare il periodo di timeout. Il valore 0 o **Null** indica che il client non ha requisiti di tempo per la transizione. Se questa proprietà non contiene 0 o **Null** e l'implementazione non supporta questo parametro, deve essere restituito un codice restituito 4098 (utilizzo del parametro di timeout non supportato).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei valori seguenti.
 
@@ -152,13 +152,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Errore sconosciuto/non specificato** (2)
 </dt> <dt>
 
-**Non può essere completato entro il periodo di timeout** (3)
+**Impossibile completare entro il periodo di timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
-**Parametro non valido** (5)
+**Parametro non** valido (5)
 </dt> <dt>
 
 **In uso** (6)
@@ -167,13 +167,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **DMTF riservato** (7 4095)
 </dt> <dt>
 
-**Parametri del metodo controllati-transizione avviata** (4096)
+**Parametri del metodo controllati - Transizione avviata** (4096)
 </dt> <dt>
 
-**Transizione di stato non valida** (4097)
+**Transizione di stato non** valida (4097)
 </dt> <dt>
 
-**Utilizzo del parametro timeout non supportato** (4098)
+**Uso del parametro di timeout non supportato** (4098)
 </dt> <dt>
 
 **Occupato** (4099)
@@ -182,12 +182,12 @@ Questo metodo restituisce uno dei valori seguenti.
 **Metodo riservato** (4100 32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768 65535)
+**Specifico del** fornitore (32768 65535)
 </dt> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe \_ ConcreteJob di MSVM**](msvm-concretejob.md) potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla [**classe Msvm \_ ConcreteJob**](msvm-concretejob.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -195,10 +195,10 @@ L'accesso alla [**classe \_ ConcreteJob di MSVM**](msvm-concretejob.md) potrebbe
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -207,7 +207,7 @@ L'accesso alla [**classe \_ ConcreteJob di MSVM**](msvm-concretejob.md) potrebbe
 
 <dl> <dt>
 
-[**\_ConcreteJob MSVM**](msvm-concretejob.md)
+[**Processo \_ concreto msvm**](msvm-concretejob.md)
 </dt> </dl>
 
  

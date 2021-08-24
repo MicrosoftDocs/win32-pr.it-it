@@ -1,7 +1,7 @@
 ---
 description: Dimensioni di ogni buffer.
 ms.assetid: 2f3b6409-6858-4975-98b8-c0c29cb14b90
-title: 'Membro CBaseAllocator:: m_lSize (Amfilter. h)'
+title: Membro CBaseAllocator::m_lSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea8b1b81c5b6b324bc2fe5efda6ad36ad2fb3e48
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 476255140540743c9a24fab558f196364474bb38efba49c1312c0133424f1d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119257261"
 ---
-# <a name="cbaseallocatorm_lsize-member"></a>Membro lSize di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lsize-member"></a>Membro CBaseAllocator::m \_ lSize
 
 Dimensioni di ogni buffer.
 
@@ -42,8 +42,8 @@ long m_lSize;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

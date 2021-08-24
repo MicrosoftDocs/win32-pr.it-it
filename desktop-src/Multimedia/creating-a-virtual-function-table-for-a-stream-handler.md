@@ -4,16 +4,16 @@ description: Creazione di una tabella di funzioni virtuali per un gestore di flu
 ms.assetid: 8f43b0d4-6710-4175-8da0-aafd6b6d753a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c6398c34182218b902f276f98e513ce296f394
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8281cee5a385a6a37e03e657facf4790fed504b18e38fb7b1825a2dce5690fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144724"
 ---
 # <a name="creating-a-virtual-function-table-for-a-stream-handler"></a>Creazione di una tabella di funzioni virtuali per un gestore di flusso
 
-Nell'esempio seguente (scritto in C) viene illustrato come un'applicazione (AVIBall) crea la tabella delle funzioni virtuali utilizzata per fare riferimento ai relativi servizi.
+L'esempio seguente (scritto in C) illustra come un'applicazione (AVIBall) crea la tabella di funzioni virtuali usata per fare riferimento ai relativi servizi.
 
 
 ```C++
@@ -62,11 +62,11 @@ IAVIStreamVtbl AVIBallHandler = {
 
 
 
-I gestori di file usano una procedura simile, con la differenza che usano una definizione diversa per la tabella delle funzioni virtuali.
+I gestori di file usano una procedura simile, ma usano una definizione diversa per la tabella delle funzioni virtuali.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CAMEvent.CAMEvent : metodo del costruttore.'
+description: 'Costruttore CAMEvent.CAMEvent : metodo costruttore.'
 ms.assetid: 35c9ac07-8756-42b1-beeb-5f0e79466742
 title: Costruttore CAMEvent.CAMEvent (Wxutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cdd37ba72d9467c16d46b2aec3ec40c206466eaf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0fd5895ada4bbbd1bf4ad24710f7782fdfb9c932f2d9446ff0d992335437da9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540556"
 ---
 # <a name="cameventcamevent-constructor"></a>Costruttore CAMEvent.CAMEvent
 
@@ -71,7 +71,7 @@ Con un evento di reimpostazione automatica, il [**metodo CAMEvent::Wait**](camev
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil.h (include Streams.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

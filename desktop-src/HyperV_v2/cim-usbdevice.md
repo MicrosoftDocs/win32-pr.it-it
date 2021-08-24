@@ -1,7 +1,7 @@
 ---
 description: Caratteristiche di gestione di un dispositivo USB.
 ms.assetid: c0589346-7683-49c6-bd34-5ee38d71d00e
-title: Classe CIM_USBDevice (gestione Hyper-V)
+title: CIM_USBDevice classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -29,14 +29,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4b43c57d69f0f9eb92293aa8fa1ff1aa1ebe96c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3766d6c2fdc46b36350e9259e0e988f3a276cee6376d02de349abbe83bf8031b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119427731"
 ---
-# <a name="cim_usbdevice-class-hyper-v-management"></a>Classe CIM_USBDevice (gestione Hyper-V)
+# <a name="cim_usbdevice-class-hyper-v-management"></a>CIM_USBDevice classe (gestione Hyper-V)
 
 Caratteristiche di gestione di un dispositivo USB.
 
@@ -67,14 +67,14 @@ class CIM_USBDevice : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ usbdevice** presenta questi tipi di membri:
+La **classe CIM \_ USBDevice** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CIM \_ usbdevice** presenta questi metodi.
+La **classe CIM \_ USBDevice** include questi metodi.
 
 
 
@@ -88,20 +88,20 @@ La classe **CIM \_ usbdevice** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ usbdevice** dispone di queste proprietà.
+La **classe CIM \_ USBDevice** ha queste proprietà.
 
 <dl> <dt>
 
 **ClassCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bDeviceClass")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bDeviceClass")
 </dt> </dl>
 
 Codice della classe USB.
@@ -111,42 +111,42 @@ Codice della classe USB.
 **CommandTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Intervallo di timeout configurabile dalle applicazioni di gestione che supportano il reindirizzamento USB. Quando il servizio di reindirizzamento reindirizza un comando del dispositivo USB a un dispositivo remoto e il dispositivo remoto non risponde prima dell'intervallo di timeout, il servizio di reindirizzamento emula un evento di espulsione del supporto. Il servizio può inoltre provare di nuovo a eseguire il comando o di ristabilire la connessione al dispositivo remoto.
+Intervallo di timeout configurabile dalle applicazioni di gestione che supportano il reindirizzamento USB. Quando il servizio di reindirizzamento reindirizza un comando del dispositivo USB a un dispositivo remoto e il dispositivo remoto non risponde prima dell'intervallo di timeout, il servizio di reindirizzamento emulerà un evento di espulsione dei supporti. Inoltre, il servizio può provare nuovamente il comando o provare a ristabilire la connessione al dispositivo remoto.
 
 </dd> <dt>
 
 **CurrentAlternateSettings**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ usbdevice**.**CurrentConfigValue**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ USBDevice**.**CurrentConfigValue**")
 </dt> </dl>
 
-Matrice che contiene le impostazioni alternative per ogni interfaccia nella configurazione corrente del dispositivo.
+Matrice contenente le impostazioni alternative per ogni interfaccia nella configurazione corrente del dispositivo.
 
 </dd> <dt>
 
 **CurrentConfigValue**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ usbdevice**.**CurrentAlternateSettings**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ USBDevice**.**CurrentAlternateSettings**")
 </dt> </dl>
 
 Configurazione attualmente selezionata per il dispositivo. Se questo valore è zero, il dispositivo non è configurato.
@@ -156,29 +156,29 @@ Configurazione attualmente selezionata per il dispositivo. Se questo valore è z
 **DeviceReleaseNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bcdDevice")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bcdDevice")
 </dt> </dl>
 
-Numero di rilascio del dispositivo in formato BCD.
+Numero di versione del dispositivo in formato BCD.
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| iManufacturer")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| iManufacturer")
 </dt> </dl>
 
 Stringa del produttore del dispositivo.
@@ -188,61 +188,61 @@ Stringa del produttore del dispositivo.
 **MaxPacketSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bMaxPacketSize")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bMaxPacketSize")
 </dt> </dl>
 
-Dimensioni massime del pacchetto per l'endpoint USB zero.
+Dimensione massima del pacchetto per l'endpoint USB zero.
 
 </dd> <dt>
 
 **NumberOfConfigs**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bNumConfigurations")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bNumConfigurations")
 </dt> </dl>
 
-Il numero di configurazioni del dispositivo definite per il dispositivo.
+Numero di configurazioni del dispositivo definite per il dispositivo.
 
 </dd> <dt>
 
 **Prodotto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| IProduct")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| iProduct")
 </dt> </dl>
 
-Stringa di prodotto del dispositivo.
+Stringa del prodotto del dispositivo.
 
 </dd> <dt>
 
 **ProductID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| idProduct")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| idProduct")
 </dt> </dl>
 
 ID prodotto assegnato al dispositivo dal produttore.
@@ -252,29 +252,29 @@ ID prodotto assegnato al dispositivo dal produttore.
 **ProtocolCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bDeviceProtocol")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bDeviceProtocol")
 </dt> </dl>
 
 Codice del protocollo USB.
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| iSerialNumber")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| iSerialNumber")
 </dt> </dl>
 
 Numero di serie del dispositivo.
@@ -284,13 +284,13 @@ Numero di serie del dispositivo.
 **SubclassCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bDeviceSubClass")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bDeviceSubClass")
 </dt> </dl>
 
 Codice della sottoclasse USB.
@@ -300,45 +300,45 @@ Codice della sottoclasse USB.
 **USBVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione USB più recente supportata dal dispositivo USB. La proprietà è espressa come un valore decimale (BCD) con codifica binaria che contiene un separatore decimale compreso tra il secondo e il terzo. Ad esempio, il valore 0x201 indica che la versione 2,01 è supportata.
+Versione USB più recente supportata dal dispositivo USB. La proprietà è espressa come decimale a codice binario (BCD) che contiene un separatore decimale compreso tra la seconda e la terza cifra. Ad esempio, il valore 0x201 indica che è supportata la versione 2.01.
 
 </dd> <dt>
 
 **USBVersionInBCD**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| bcdUSB")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| bcdUSB")
 </dt> </dl>
 
-Il numero di specifica USB a cui è conforme il dispositivo. Questa proprietà è formattata con il formato BCD.
+Numero di specifica USB conforme al dispositivo. Questa proprietà è formattata con il formato BCD.
 
 </dd> <dt>
 
 **VendorID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification. USB-se il \| descrittore di dispositivo standard \| idVendor")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Universal Serial Bus Specification.USB-IF \| Standard Device Descriptor \| idVendor")
 </dt> </dl>
 
-ID del fornitore assegnato al dispositivo da USB.org.
+ID del fornitore assegnato al dispositivo dal USB.org.
 
 </dd> </dl>
 
@@ -349,9 +349,9 @@ ID del fornitore assegnato al dispositivo da USB.org.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -360,7 +360,7 @@ ID del fornitore assegnato al dispositivo da USB.org.
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

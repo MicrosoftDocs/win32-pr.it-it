@@ -1,25 +1,25 @@
 ---
-title: Sezione Marquee di esempio
-description: Sezione Marquee di esempio
+title: Sezione del rettangolo di esempio
+description: Sezione del rettangolo di esempio
 ms.assetid: 44ed3257-2e1a-4b8d-9d55-a13b0400422d
 keywords:
-- Interfacce di Windows Media Player Mobile, Marquees
-- interfacce, Marquee
-- riferimento per Skin, Marquees
-- Marquees in Skins, sezione Marquee
+- Windows Media Player Skin per dispositivi mobili, controlli di selezione
+- skins, marquees
+- informazioni di riferimento su skin, marquees
+- marquees in skins,sezione Marquee
 - file di definizione dell'interfaccia, sezione Marquee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f66588d81b22051a9289a80c8733d5cfe154bed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70f8a3e013bb3a09a06f03715f0e7c4914e8e8d344c55843a643d5b8a9bf0479
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508121"
 ---
-# <a name="sample-marquee-section"></a>Sezione Marquee di esempio
+# <a name="sample-marquee-section"></a>Sezione del rettangolo di esempio
 
-Le righe seguenti mostrano una sezione di selezione tipica di un file di definizione dell'interfaccia personalizzata:
+Le righe seguenti mostrano una tipica sezione Marquee di un file di definizione dell'interfaccia:
 
 
 ```C++
@@ -34,7 +34,7 @@ Le righe seguenti mostrano una sezione di selezione tipica di un file di definiz
 
 
 
-Definisce una casella di visualizzazione Marquee che mostra il titolo e l'autore se sono definiti entrambi, il titolo se è stato definito solo il titolo o il nome dell'autore se è definito solo l'autore. Se non viene definito alcun elemento, non verrà visualizzato nulla.
+In questo modo viene definita una casella di visualizzazione del riquadro di selezione che mostra il titolo e l'autore se sono definiti entrambi, il titolo se è definito solo Title o il nome dell'autore se è definito solo Author. Se nessuno dei due elementi è definito, non verrà visualizzato nulla.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -43,9 +43,9 @@ Definisce una casella di visualizzazione Marquee che mostra il titolo e l'autore
 [**Testo scorrevole**](marquee.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

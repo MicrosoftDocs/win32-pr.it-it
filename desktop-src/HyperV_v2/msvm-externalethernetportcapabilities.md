@@ -1,7 +1,7 @@
 ---
-description: Descrive le funzionalità del ExternalEthernetPort MSVM associato \_ .
+description: Descrive le funzionalità dell'oggetto \_ Msvm ExternalEthernetPort associato.
 ms.assetid: 63731b62-b1c7-4dd9-b906-03225bbc3154
-title: Classe Msvm_ExternalEthernetPortCapabilities
+title: Msvm_ExternalEthernetPortCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 748b207151fb1d11b013af7c736de52bbe5bec8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fffc2bde5ec6a0fcef176e61438d7997b71998890dc4b7b1db44e9b49300bdc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531301"
 ---
-# <a name="msvm_externalethernetportcapabilities-class"></a>\_Classe MSVM ExternalEthernetPortCapabilities
+# <a name="msvm_externalethernetportcapabilities-class"></a>Classe Msvm \_ ExternalEthernetPortCapabilities
 
-Descrive le funzionalità del [**\_ ExternalEthernetPort MSVM**](msvm-externalethernetport.md)associato.
+Descrive le funzionalità dell'oggetto [**\_ Msvm ExternalEthernetPort associato.**](msvm-externalethernetport.md)
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,94 +49,94 @@ class Msvm_ExternalEthernetPortCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Members
 
-La **classe \_ ExternalEthernetPortCapabilities di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ExternalEthernetPortCapabilities** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ExternalEthernetPortCapabilities di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ExternalEthernetPortCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Port Capabilities".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Port Capabilities".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "descrive le funzionalità della porta Ethernet esterna Microsoft".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Descrive le funzionalità della porta Ethernet esterna Microsoft".
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Port Capabilities".
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Port Capabilities".
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IOVSupport**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore booleano che indica se la virtualizzazione I/O (IOV) è supportata dalla scheda di rete. Se il valore è **true**, IOV è supportato dalla scheda di rete e la proprietà **IOVSupportReasons** sarà vuota. In caso contrario, la proprietà **IOVSupportReasons** avrà i motivi per cui non è possibile supportare IOV.
+Valore booleano che indica se I/O Virtualization (IOV) è supportato dalla scheda di rete. Se il valore è **True,** IOV è supportato dalla scheda di rete e la **proprietà IOVSupportReasons** sarà vuota. In caso **contrario, la proprietà IOVSupportReasons** avrà i motivi per cui IOV non può essere supportato.
 
 </dd> <dt>
 
 **IOVSupportReasons**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di stringhe che indica i possibili motivi per cui IOV non è supportato. Se il valore di **IOVSupport** è **true**, questa matrice sarà vuota.
+Matrice di stringhe che indica i possibili motivi per cui IOV non è supportato. Se il valore di **IOVSupport** **è True,** questa matrice sarà vuota.
 
 </dd> </dl>
 
@@ -146,10 +146,10 @@ Matrice di stringhe che indica i possibili motivi per cui IOV non è supportato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,7 +1,7 @@
 ---
 description: La funzione StringFromResource carica una stringa da un file di risorse con l'identificatore di risorsa specificato.
 ms.assetid: 26b40905-db16-46d1-8621-9aa8cb8e7232
-title: Funzione StringFromResource (Wxutil. h)
+title: Funzione StringFromResource (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a9bb13944f281d528ff95a7856ebc8a0a2374c6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a12bffb3659bd18f630ce3ff06435a701ed77f8fba2af79b20df6d6b2574ad8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329651"
 ---
-# <a name="stringfromresource-function"></a>StringFromResource (funzione)
+# <a name="stringfromresource-function"></a>Funzione StringFromResource
 
 La `StringFromResource` funzione carica una stringa da un file di risorse con l'identificatore di risorsa specificato.
 
@@ -59,11 +59,11 @@ Identificatore di risorsa della stringa da recuperare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la stessa stringa di *pbuffer*. Se la funzione ha esito negativo, restituisce una stringa null.
+Restituisce la stessa stringa di *pBuffer*. Se la funzione non ha esito positivo, restituisce una stringa Null.
 
 ## <a name="remarks"></a>Commenti
 
-Il buffer *pbuffer* deve essere almeno di \_ lunghezza massima di Str \_ byte.
+Il *buffer pBuffer* deve essere almeno STR \_ MAX LENGTH \_ byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Il buffer *pbuffer* deve essere almeno di \_ lunghezza massima di Str \_ byte.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Il buffer *pbuffer* deve essere almeno di \_ lunghezza massima di Str \_ byte.
 
 <dl> <dt>
 
-[Funzioni di supporto della pagina delle proprietà](property-page-helper-functions.md)
+[Funzioni helper pagina delle proprietà](property-page-helper-functions.md)
 </dt> </dl>
 
  

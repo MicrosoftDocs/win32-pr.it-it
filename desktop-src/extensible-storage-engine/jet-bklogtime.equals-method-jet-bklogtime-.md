@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 07b9fe3383331aaa91e26589dd0768bbee56869d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f37530888bd26099513ace346ceed3214adce585e11fd19c33edab724e3dca8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475781"
 ---
 # <a name="jet_bklogtimeequals-method-jet_bklogtime"></a>JET_BKLOGTIME. Metodo Equals (JET_BKLOGTIME)
 
 Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_BKLOGTIME](./jet-bklogtime-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_BKLOGTIME](./jet-bklogtime-structure2.md)  
     
     Istanza di da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IEquatable \<T\> . Uguale a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME struttura](./jet-bklogtime-structure2.md)
 
-[Membri JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME membri](./jet-bklogtime-members.md)
 
 [Confronta l'overload](./jet-bklogtime.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

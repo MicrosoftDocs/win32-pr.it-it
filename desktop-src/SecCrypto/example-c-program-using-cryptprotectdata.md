@@ -1,28 +1,28 @@
 ---
-description: Nell'esempio seguente viene crittografato e decrittografato un BLOB di dati tramite CryptProtectData e CryptUnprotectData.
+description: L'esempio seguente crittografa e decrittografa un BLOB di dati usando CryptProtectData e CryptUnprotectData.
 ms.assetid: 51607aad-9fa8-4db6-bd2a-3821dce619e7
 title: 'Esempio di programma C: uso di CryptProtectData'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87359bf6e4d90c4e46140aa9e114ffabf0a5ad80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6639bc3f0dbabc3b82c41aaa858d9ad1c8a5b9e7b10661a3a53f7b1730baad40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140772"
 ---
 # <a name="example-c-program-using-cryptprotectdata"></a>Esempio di programma C: uso di CryptProtectData
 
-Nell'esempio seguente viene crittografato e decrittografato un [*BLOB*](../secgloss/b-gly.md) di dati tramite [**CryptProtectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata).
+L'esempio seguente crittografa e decrittografa un [*BLOB*](../secgloss/b-gly.md) di dati [**usando CryptProtectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata).
 
-In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Questo esempio illustra le attività seguenti e le funzioni CryptoAPI:
 
--   Inizializzazione di una struttura di dati [**CRYPTPROTECT \_ PROMPTSTRUCT**](/windows/desktop/api/Dpapi/ns-dpapi-cryptprotect_promptstruct) .
--   Uso di [**CryptProtectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) per crittografare un BLOB di dati.
--   Utilizzo di [**CryptUnprotectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata) per decrittografare i dati.
--   Utilizzo di [**LocalFree**](/windows/win32/api/winbase/nf-winbase-localfree) per rilasciare la memoria allocata.
+-   Inizializzazione di una [**struttura di dati CRYPTPROTECT \_ PROMPTSTRUCT.**](/windows/desktop/api/Dpapi/ns-dpapi-cryptprotect_promptstruct)
+-   Uso [**di CryptProtectData per**](/windows/desktop/api/Dpapi/nf-dpapi-cryptprotectdata) crittografare un BLOB di dati.
+-   Uso [**di CryptUnprotectData**](/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata) per decrittografare i dati.
+-   Uso [**di LocalFree per rilasciare**](/windows/win32/api/winbase/nf-winbase-localfree) la memoria allocata.
 
-In questo esempio viene utilizzata la funzione [**MyHandleError**](myhandleerror.md) . Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata [**la funzione MyHandleError.**](myhandleerror.md) Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
 Nell'esempio seguente viene illustrata la protezione dei dati.
 

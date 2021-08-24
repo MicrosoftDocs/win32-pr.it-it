@@ -1,8 +1,8 @@
 ---
-description: La proprietà Name dell'oggetto SWbemNamedValue è una stringa univoca che non fa distinzione tra maiuscole e minuscole usata quando si recupera un elemento SWbemNamedValue. Questa proprietà è di sola lettura.
+description: La proprietà Name dell'oggetto SWbemNamedValue è una stringa univoca senza distinzione tra maiuscole e minuscole usata quando si riceve un elemento SWbemNamedValue. Questa proprietà è di sola lettura.
 ms.assetid: c1e97326-b963-44e7-9af4-7fa6a7a3bf63
 ms.tgt_platform: multiple
-title: Proprietà SWbemNamedValue.Name (wbemdisp. h)
+title: SWbemNamedValue.Name proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 45da1e7d40b216aa2afb6bfbc73cb1e2d991f5c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 672d82da01bec3e069b2468065fe17cc3c1df0173fa2018f23fba1f24044ce0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119284061"
 ---
-# <a name="swbemnamedvaluename-property"></a>Proprietà SWbemNamedValue.Name
+# <a name="swbemnamedvaluename-property"></a>SWbemNamedValue.Name proprietà
 
-La proprietà **Name** dell'oggetto [**SWbemNamedValue**](swbemnamedvalue.md) è una stringa univoca che non fa distinzione tra maiuscole e minuscole usata quando si recupera un elemento **SWbemNamedValue** . Questa proprietà è di sola lettura.
+La **proprietà Name** dell'oggetto [**SWbemNamedValue**](swbemnamedvalue.md) è una stringa univoca senza distinzione tra maiuscole e minuscole usata quando si riceve un **elemento SWbemNamedValue.** Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemNamedValue.Name As String
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMNAMEDVALUE CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMNAMEDVALUE IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemNamedValue<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemNamedValue<br/>                                                        |
 
 
 

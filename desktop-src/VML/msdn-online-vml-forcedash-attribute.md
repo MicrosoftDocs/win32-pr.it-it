@@ -1,44 +1,44 @@
 ---
-title: Attributo ForceDash di la
-description: Attributo ForceDash di la
+title: Attributo VML ForceDash
+description: Attributo VML ForceDash
 ms.assetid: 659e99bb-16d9-425a-97b1-7767c065ec41
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5bcec4a694a6449412aa07ec69aa9a817aa917c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e162f95c4760c8a499f690c600fd651259694bae5c7fcc81ed2b2ee0d65bcb09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119396066"
 ---
-# <a name="vml-forcedash-attribute"></a>Attributo ForceDash di la
+# <a name="vml-forcedash-attribute"></a>Attributo VML ForceDash
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina se un contorno tratteggiato viene utilizzato per disegnare una forma quando una forma non ha linea o riempimento. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se un contorno tratteggiato viene usato per disegnare una forma quando una forma non ha linee o riempimento. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* o:forcedash = " *Expression* " >
+<v: *elemento* o:forcedash=" *espressione* ">
 
 **Osservazioni:**
 
-Utilizzato dai segnaposto di Microsoft PowerPoint per disegnare un contorno tratteggiato quando non è presente alcuna riga e nessun riempimento per una forma. L'impostazione predefinita è **False**. Se **true**, viene usato un contorno tratteggiato per indicare un segnaposto.
+Usato da Microsoft PowerPoint segnaposto per disegnare un contorno tratteggiato quando non è presente alcuna linea e nessun riempimento per una forma. L'impostazione predefinita è **False**. Se **True,** verrà usato un contorno tratteggiato per indicare un segnaposto.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
 **Esempio**
 
-Una linea tratteggiata verrà utilizzata per eseguire il rendering della forma se non è presente alcuna linea o riempimento.
+Verrà usata una linea tratteggiata per eseguire il rendering della forma se non è presente alcuna linea o riempimento.
 
 
 ```HTML
@@ -49,6 +49,6 @@ Una linea tratteggiata verrà utilizzata per eseguire il rendering della forma s
 
 
 
- 
+ 
 
- 
+ 

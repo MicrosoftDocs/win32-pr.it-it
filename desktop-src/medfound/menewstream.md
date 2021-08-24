@@ -1,37 +1,37 @@
 ---
-description: Generato da un'origine multimediale quando avvia un nuovo flusso.
+description: Generato da un'origine multimediale all'avvio di un nuovo flusso.
 ms.assetid: 1bc8b265-b7a1-4068-89f7-c0da03dfb874
-title: Evento MENewStream (Mfobjects. h)
+title: Evento MENewStream (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60394d442b24dcdc234ada2dd3fd418e6ab7b54c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 499b7899c499e87a45e9b7f043db94724b41d729d3b836e7c9f8d71d83616841
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119228771"
 ---
-# <a name="menewstream-event"></a>Evento MENewStream
+# <a name="menewstream-event"></a>EVENTO MENewStream
 
-Generato da un'origine multimediale quando avvia un nuovo flusso.
+Generato da un'origine multimediale all'avvio di un nuovo flusso.
 
-Quando il metodo [**IMFMediaSource:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) viene chiamato su un'origine multimediale, l'origine multimediale Invia un evento per ogni flusso selezionato:
+Quando il [**metodo IMFMediaSource::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) viene chiamato su un'origine multimediale, l'origine multimediale invia un evento per ogni flusso selezionato:
 
--   L'origine invia l'evento MENewStream se il flusso non è stato selezionato nella precedente chiamata a [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start)oppure si tratta della prima chiamata **iniziale** a questa origine multimediale.
+-   L'origine invia l'evento MENewStream se il flusso non è stato selezionato nella chiamata precedente a [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start)o se si tratta della prima chiamata a **Start** su questa origine multimediale.
 
--   L'origine invia l'evento [MEUpdatedStream](meupdatedstream.md) se il flusso è già stato selezionato nella precedente chiamata a [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start).
+-   L'origine invia [l'evento MEUpdatedStream](meupdatedstream.md) se il flusso è già stato selezionato nella chiamata precedente a [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start).
 
 Non viene inviato alcun evento per i flussi non selezionati.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE                | Descrizione                                                                                                   |
 |------------------------|---------------------------------------------------------------------------------------------------------------|
-| VT \_ sconosciuto<br/> | Contiene un puntatore all'interfaccia [**IMFMediaStream**](/windows/desktop/api/mfidl/nn-mfidl-imfmediastream) del flusso.<br/> <br/> |
+| VT \_ UNKNOWN<br/> | Contiene un puntatore [**all'interfaccia IMFMediaStream del**](/windows/desktop/api/mfidl/nn-mfidl-imfmediastream) flusso.<br/> <br/> |
 
 
 
@@ -41,9 +41,9 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

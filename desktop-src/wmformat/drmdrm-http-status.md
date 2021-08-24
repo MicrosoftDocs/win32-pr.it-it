@@ -1,10 +1,10 @@
 ---
-title: Enumerazione DRM_HTTP_STATUS (wmdrmsdk. h)
-description: Il \_ \_ tipo di enumerazione stato http DRM definisce un intervallo di stati http per una richiesta DRM.
+title: DRM_HTTP_STATUS enumerazione (Wmdrmsdk.h)
+description: Il tipo di enumerazione \_ DRM HTTP \_ STATUS definisce un intervallo di stati HTTP per una richiesta DRM.
 ms.assetid: 09183ef9-4832-4469-a960-dbeb67381949
 keywords:
-- Formato Windows Media enumerazione DRM_HTTP_STATUS
-- Enumerazione formato Windows Media
+- DRM_HTTP_STATUS enumerazione windows Media Format
+- enumerazione windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 367c5a40af45fd573f7f5033b9be3b037079cb30
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 385a52811cc8deb7e1c221737bd97391122160de065ca28111132ee6c5e4a859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447761"
 ---
-# <a name="drm_http_status-enumeration-wmdrmsdkh"></a>Enumerazione DRM_HTTP_STATUS (wmdrmsdk. h)
+# <a name="drm_http_status-enumeration-wmdrmsdkh"></a>DRM_HTTP_STATUS enumerazione (Wmdrmsdk.h)
 
-Il tipo di enumerazione **\_ \_ stato http DRM** definisce un intervallo di stati http per una richiesta DRM.
+Il **tipo di enumerazione \_ DRM HTTP \_ STATUS** definisce un intervallo di stati HTTP per una richiesta DRM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,35 +45,35 @@ typedef enum DRM_HTTP_STATUS {
 
 <dl> <dt>
 
-<span id="HTTP_NOTINITIATED"></span><span id="http_notinitiated"></span>**\_NOTINITIATED http**
+<span id="HTTP_NOTINITIATED"></span><span id="http_notinitiated"></span>**HTTP \_ NON AVVIATO**
 </dt> <dd>
 
 Le operazioni HTTP non sono state avviate.
 
 </dd> <dt>
 
-<span id="HTTP_CONNECTING"></span><span id="http_connecting"></span>**\_connessione http**
+<span id="HTTP_CONNECTING"></span><span id="http_connecting"></span>**CONNESSIONE \_ HTTP**
 </dt> <dd>
 
-Viene stabilita la connessione.
+È in corso la connessione.
 
 </dd> <dt>
 
-<span id="HTTP_REQUESTING"></span><span id="http_requesting"></span>**\_richiesta http**
+<span id="HTTP_REQUESTING"></span><span id="http_requesting"></span>**RICHIESTA \_ HTTP**
 </dt> <dd>
 
-I dati sono richiesti.
+È in corso la richiesta dei dati.
 
 </dd> <dt>
 
-<span id="HTTP_RECEIVING"></span><span id="http_receiving"></span>**\_ricezione http**
+<span id="HTTP_RECEIVING"></span><span id="http_receiving"></span>**RICEZIONE \_ HTTP**
 </dt> <dd>
 
-Sono in corso la ricezione dei dati.
+È in corso la ricezione dei dati.
 
 </dd> <dt>
 
-<span id="HTTP_COMPLETED"></span><span id="http_completed"></span>**HTTP \_ completato**
+<span id="HTTP_COMPLETED"></span><span id="http_completed"></span>**HTTP \_ COMPLETATO**
 </dt> <dd>
 
 Le operazioni HTTP sono state completate.
@@ -82,7 +82,7 @@ Le operazioni HTTP sono state completate.
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione viene utilizzata dalla struttura [**di \_ \_ stato di personalizzazione WM**](drmwm-individualize-status.md) .
+Questa enumerazione viene utilizzata dalla [**struttura WM \_ INDIVIDUALIZE \_ STATUS.**](drmwm-individualize-status.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Questa enumerazione viene utilizzata dalla struttura [**di \_ \_ stato di person
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: SHUFFLEBUTTON
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | SHUFFLEBUTTON
+description: Si tratta di un elemento BUTTON predefinito con i valori predefiniti seguenti. | SHUFFLEBUTTON
 ms.assetid: 45b3c985-81fb-4af3-89a7-e68ee9724f09
 keywords:
-- Media Player Windows SHUFFLEBUTTON
+- SHUFFLEBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8edd90d916c13a16429a69b2ec1d07718c474364
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d85f87a7aec54fd229d6c19aa3101eb0acc44c8ac3c71db604f8edd842b19eb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833143"
 ---
 # <a name="shufflebutton"></a>SHUFFLEBUTTON
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **elemento BUTTON predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.settings.setMode('shuffle',down);"
@@ -34,7 +34,7 @@ sticky="true"
 
 ## <a name="remarks"></a>Commenti
 
-Viene creato un controllo **Button** che attiva o disattiva la riproduzione casuale. Le descrizioni comandi sono localizzate. Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+Verrà creato un **controllo BUTTON** che attiva e disattiva l'opzione Shuffle. Le descrizioni comandi sono localizzate. È possibile eseguire l'override di tutte le proprietà di **questo** pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Viene creato un controllo **Button** che attiva o disattiva la riproduzione casu
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

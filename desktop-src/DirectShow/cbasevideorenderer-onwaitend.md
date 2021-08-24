@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnWaitEnd viene chiamato al termine di un tempo di attesa.
 ms.assetid: 283627bb-599c-4711-abc4-b5f92dfd29a5
-title: Metodo CBaseVideoRenderer. OnWaitEnd (Renbase. h)
+title: Metodo CBaseVideoRenderer.OnWaitEnd (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 36377565556a759c9268ef1bf31ff7774933ccc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b130bf38833951cad4f82fd559c0299d2aea86854ca0ab5545f3f2794ab9b4b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432471"
 ---
-# <a name="cbasevideorendereronwaitend-method"></a>CBaseVideoRenderer. OnWaitEnd, metodo
+# <a name="cbasevideorendereronwaitend-method"></a>Metodo CBaseVideoRenderer.OnWaitEnd
 
 Il metodo OnWaitEnd viene chiamato al termine di un tempo di attesa.
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro esegue solo la registrazione delle prestazioni. Viene chiamato quando il thread viene risvegliato dall'attesa nella finestra o quando l'esempio successivo è dovuto al rendering. Potrebbe essere usato per raccogliere informazioni che controllano la sincronizzazione.
+Questa funzione membro esegue solo la registrazione delle prestazioni. Viene chiamato quando il thread viene svegliato dall'attesa nella finestra o quando è necessario eseguire il rendering dell'esempio successivo. Potrebbe infine essere usato per raccogliere informazioni che controllano la sincronizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questa funzione membro esegue solo la registrazione delle prestazioni. Viene chi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

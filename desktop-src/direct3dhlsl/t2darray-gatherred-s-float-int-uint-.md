@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GatherRed (S, float, int, uint)'
-description: "Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, oltre allo stato di mapping dei riquadri. | Funzione Texture2DArray:: GatherRed (S, float, int, uint)"
+title: Funzione Texture2DArray::GatherRed(S,float,int,uint)
+description: Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri. | Funzione Texture2DArray::GatherRed(S,float,int,uint)
 ms.assetid: 9FAFB594-5844-4A2D-9B45-7973B5F85E13
 keywords:
 - Funzione GatherRed HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7fdd250cb25f6085100bb88204cae6e67a3fc0b3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d9cd35a50c11a4e00e4ba9582ea94be49602ec17c5e2922063a323e16510e010
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276441"
 ---
-# <a name="texture2darraygatherredsfloatintuint-function"></a>Funzione Texture2DArray:: GatherRed (S, float, int, uint)
+# <a name="texture2darraygatherredsfloatintuint-function"></a>Funzione Texture2DArray::GatherRed(S,float,int,uint)
 
-Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, oltre allo stato di mapping dei riquadri.
+Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,30 +51,30 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Offset applicato alle coordinate di trama prima del campionamento.
+Offset applicato alle coordinate della trama prima del campionamento.
 
 </dd> <dt>
 
-*Stato* \[ di out\]
+*Stato* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Stato dell'operazione. Non è possibile accedere direttamente allo stato; passare invece lo stato alla funzione intrinseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** restituisce **true** se tutti i valori dell'operazione di **campionamento**, **raccolta** o **caricamento** corrispondente hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata](/windows/desktop/direct3d11/direct3d-11-2-features). Se sono stati ricavati valori da un riquadro non mappato, **CheckAccessFullyMapped** restituisce **false**.
+Stato dell'operazione. Non è possibile accedere direttamente allo stato. passare invece lo stato alla [**funzione intrinseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** restituisce **TRUE se** tutti i valori dell'operazione **Sample**, **Gather** o **Load** corrispondenti hanno eseguito l'accesso ai riquadri mappati in una [risorsa affiancata.](/windows/desktop/direct3d11/direct3d-11-2-features) Se sono stati presi valori da un riquadro non mappato, **CheckAccessFullyMapped restituisce** **FALSE.**
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Stato dell'operazione. Non è possibile accedere direttamente allo stato; passar
 
 Tipo: **TemplateType**
 
-Valore a quattro componenti il cui tipo corrisponde al tipo di modello.
+Valore a quattro componenti il cui tipo è uguale al tipo di modello.
 
 ## <a name="remarks"></a>Commenti
 
@@ -92,7 +92,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
