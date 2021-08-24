@@ -4,12 +4,12 @@ ms.assetid: 57ef75f6-411c-4b1f-b0dc-ac293ebc0b9c
 title: Filtro decodificatore CC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d93995207e4f1a397db28f743d1f972b871b0553
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a5feab764883754407030f2b4f72f794d049f5a394efb107ac149b10125da8d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757401"
 ---
 # <a name="cc-decoder-filter"></a>Filtro decodificatore CC
 
@@ -18,24 +18,24 @@ ms.locfileid: "103965540"
 
  
 
-Il decodificatore CC VBI è un filtro della classe del flusso in modalità kernel. Viene visualizzato in GraphEdit sotto la categoria "WDM Streaming VBI codecs". Accetta le forme d'onda di esempio fornite da un filtro di acquisizione e recapita i dati decodificati per la didascalia al [decodificatore della riga 21](line-21-decoder-filter.md) e/o alle applicazioni interessate.
+Cc VBI Decoder è un filtro di classe di flusso in modalità kernel. Viene visualizzato in GraphEdit nella categoria "Codec VBI di streaming WDM". Accetta forme d'onda di esempio recapitate da un filtro di acquisizione e recapita i dati codificati codificati al decodificatore [Line 21](line-21-decoder-filter.md) e/o alle applicazioni interessate.
 
-Questo filtro ha due pin di input, VBI e HWCC. Il pin VBI viene usato per i dati VBI non elaborati e il pin HWCC viene usato quando la decodifica VBI viene eseguita nell'hardware dal filtro di acquisizione. Quando i dati vengono ricevuti sul pin HWCC, il decodificatore CC funziona in modalità "pass-through" e invia i dati direttamente al decodificatore della riga 21 senza elaborarli in alcun modo. Se il filtro di acquisizione espone un pin HWCC, deve essere connesso direttamente al pin corrispondente sul decoder CC. La categoria pin è **PINNAME \_ video \_ CC \_ Capture**.
+Questo filtro ha due pin di input, VBI e HWCC. Il pin VBI viene usato per i dati VBI non elaborati e il pin HWCC viene usato quando la decodifica VBI viene eseguita nell'hardware dal filtro di acquisizione. Quando i dati vengono ricevuti sul pin HWCC, il decodificatore CC opera in modalità "pass-through" e invia i dati direttamente al decodificatore Line 21 senza elaborarlo in alcun modo. Se il filtro di acquisizione espone un pin HWCC, deve essere connesso direttamente al pin corrispondente sul decodificatore CC. La categoria pin è **PINNAME \_ VIDEO CC \_ \_ CAPTURE.**
 
-Il decodificatore CC dispone di un massimo di otto pin di output, ognuno dei quali può selezionare le proprie righe e sottoflussi. Il primo pin di output è connesso al decodificatore line-21.
+Il decodificatore CC dispone di un massimo di otto pin di output, ognuno dei quali può selezionare le proprie linee e sottostream. Il primo pin di output è connesso al decodificatore Line-21.
 
-Il filtro del decodificatore CC viene visualizzato nella categoria di filtro "WDM Streaming VBI codecs" (**am \_ KSCATEGORY \_ VBICODEC**).
+Il filtro CC Decoder viene visualizzato nella categoria di filtro "Codec VBI di streaming WDM" (**AM \_ KSCATEGORY \_ VBICODEC**).
 
-Poiché si tratta di un filtro in modalità kernel, le applicazioni non possono crearlo direttamente tramite **CoCreateInstance**. Usare invece l' [enumeratore di dispositivo di sistema](system-device-enumerator.md). Per ulteriori informazioni, vedere [creazione di filtri Kernel-Mode](creating-kernel-mode-filters.md).
+Poiché si tratta di un filtro in modalità kernel, le applicazioni non possono crearlo direttamente usando **CoCreateInstance**. Usare invece [l'enumeratore del dispositivo di sistema](system-device-enumerator.md). Per altre informazioni, vedere [Creazione di Kernel-Mode filtri](creating-kernel-mode-filters.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> <dt>
 
-[Visualizzazione di didascalie chiuse](viewing-closed-captions.md)
+[Visualizzazione di sottotitoli codificati](viewing-closed-captions.md)
 </dt> </dl>
 
  

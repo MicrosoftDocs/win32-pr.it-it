@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d171fa1afc129dd1d13c1d9d12d71c4370cba9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e79453ee2d69a0c6b227006416e49b4d4c24b99b3b02dd2bd00cd3bafafc5b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734841"
 ---
-# <a name="iwmpnetworksetproxyport-method"></a>Metodo IWMPNetwork:: setProxyPort
+# <a name="iwmpnetworksetproxyport-method"></a>Metodo IWMPNetwork::setProxyPort
 
-Il metodo **setProxyPort** specifica la porta proxy da usare.
+Il **metodo setProxyPort** specifica la porta proxy da usare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPNetwork.setProxyPort
 
 <dl> <dt>
 
-*bstrProtocol* \[ in\]
+*bstrProtocol* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+Oggetto **System.String** che rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
 
 </dd> <dt>
 
-*lProxyPort* \[ in\]
+*lProxyPort* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che rappresenta la porta proxy da usare.
+Oggetto **System.Int32** che rappresenta la porta proxy da usare.
 
 </dd> </dl>
 
@@ -75,13 +75,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non ha alcun effetto a meno che il valore recuperato da **IWMPNetwork. getProxySettings** sia 2 (usare le impostazioni manuali).
+Questo metodo non ha alcun effetto a meno che il valore recuperato da **IWMPNetwork.getProxySettings non** sia 2 (usare le impostazioni manuali).
 
 Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in esecuzione nel computer locale o nella Intranet.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene usato **setProxyPort** per specificare il numero di porta del proxy di Windows Media Player per il protocollo MMS. Il numero di porta viene recuperato da una casella di testo quando si fa clic su un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio di codice seguente **viene utilizzato setProxyPort** per specificare il Windows Media Player porta proxy per il protocollo MMS. Il numero di porta viene recuperato da una casella di testo quando si fa clic su un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -138,7 +138,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -151,10 +151,10 @@ End Sub
 [**Interfaccia IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxyPort (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyport--vb-and-c.md)
+[**IWMPNetwork.getProxyPort (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxyport--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

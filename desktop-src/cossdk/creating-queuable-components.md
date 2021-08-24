@@ -1,42 +1,42 @@
 ---
-description: Un componente con almeno un'interfaccia accodabile è un componente accodabile.
+description: Un componente con almeno un'interfaccia di accodamento è un componente a cui è possibile eseguire query.
 ms.assetid: 8183f640-4bf3-4555-8837-90a26130c618
-title: Creazione di componenti accodabili
+title: Creazione di componenti accodamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03533168a24da1e1f7279a6f2108e25717054103
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9d8ca7b4717da44145121508ed3e8b208e8401a240f1a2ceb858be299bf2b32f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637841"
 ---
-# <a name="creating-queuable-components"></a>Creazione di componenti accodabili
+# <a name="creating-queuable-components"></a>Creazione di componenti accodamento
 
-Un componente con almeno un'interfaccia accodabile è un *componente accodabile*. Affinché un componente venga richiamato da una coda, le interfacce devono essere contrassegnate come accodabili e il componente deve essere installato in un'applicazione in coda. Un componente accodabile, tuttavia, può essere un componente di un'applicazione non accodata.
+Un componente con almeno un'interfaccia di accodamento è un componente a cui è *possibile eseguire l'accodamento.* Perché un componente sia richiamato da una coda, le interfacce devono essere contrassegnate come accodamentabili e il componente deve essere installato in un'applicazione in coda. Tuttavia, un componente accodabile può essere un componente di un'applicazione non in coda.
 
-Un'interfaccia accodabile deve contenere solo parametri in, senza parametri out e valori restituiti. Queste caratteristiche vengono verificate analizzando le informazioni sul tipo durante l'installazione del componente. Se l'interfaccia non è accodabile, non è possibile attivare la coda dell'applicazione contenente il componente.
+Un'interfaccia di accodamento deve contenere solo parametri, ovvero nessun parametro out e nessun valore restituito. Queste caratteristiche vengono verificate analizzando le informazioni sul tipo durante l'installazione del componente. Se non è possibile eseguire query sull'interfaccia, non è possibile attivare la coda dell'applicazione contenente il componente.
 
-Per specificare un'interfaccia COM+ come accodabile, attenersi alla procedura seguente:
+Per specificare un'interfaccia COM+ come accodamento, seguire questa procedura:
 
-1.  Nell'albero della console dello strumento di amministrazione Servizi componenti, in **Servizi componenti**, aprire la cartella **applicazioni com+** associata al computer che si desidera gestire.
+1.  Nell'albero della console dello strumento di amministrazione Servizi componenti, in Servizi componenti **aprire** la cartella **Applicazioni COM+** associata al computer da gestire.
 
-2.  Aprire la cartella **interfacce** del componente dell'applicazione com+ che si desidera rendere accodabile.
+2.  Aprire la **cartella Interfacce** del componente dell'applicazione COM+ che si vuole rendere accodamentabile.
 
-3.  Fare clic con il pulsante destro del mouse sull'interfaccia che si desidera contrassegnare come accodabile, quindi scegliere **Proprietà**.
+3.  Fare clic con il pulsante destro del mouse sull'interfaccia che si desidera contrassegnare come accodamento, quindi scegliere **Proprietà**.
 
-4.  Selezionare la scheda **Accodamento** nella finestra di dialogo Proprietà.
+4.  Selezionare la **scheda Accodamento** nella finestra di dialogo delle proprietà.
 
-5.  Attivare la casella di controllo con l'etichetta **accodata**.
+5.  Attivare la casella di controllo **queued**.
 
     > [!Note]  
-    > Se la casella di controllo in **coda** è disabilitata, l'interfaccia non soddisfa i vincoli accodabili descritti in precedenza.
+    > Se la **casella di controllo** In coda è disattivata, l'interfaccia non soddisfa i vincoli di accodamento descritti in precedenza.
 
      
 
 6.  Fare clic su **OK**.
 
-    È possibile identificare un componente accodabile aggiungendo la macro dell'attributo QUEUEable alla sezione Interface del file di origine IDL (Interface Definition Language) per tutte le interfacce che sono accodabili.
+    Un componente di accodamento può essere identificato come tale aggiungendo la macro dell'attributo QUEUEABLE alla sezione Interface del file di origine IDL (Interface Definition Language) per tutte le interfacce di cui è possibile eseguire la query.
 
     ``` syntax
 #include "mtxattr.h"

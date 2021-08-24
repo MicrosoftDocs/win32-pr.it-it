@@ -1,7 +1,7 @@
 ---
-description: Il metodo inattivo viene chiamato quando lo stato viene impostato su arrestato.
+description: Il metodo Inactive viene chiamato quando lo stato passa all'arresto.
 ms.assetid: 2bad81ef-d2a4-4c20-a49b-e40e5097b430
-title: Metodo CBaseRenderer. Inactive (Renbase. h)
+title: Metodo CBaseRenderer.Inactive (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ac328c772b740a0d7ab05be4c6ea9f2a24f852e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e84afd1d4e4ffb013a2029f7d56a223f0aef2f019bc3beb11bd7bd6c202b88d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652401"
 ---
-# <a name="cbaserendererinactive-method"></a>Metodo CBaseRenderer. Inactive
+# <a name="cbaserendererinactive-method"></a>Metodo CBaseRenderer.Inactive
 
-Il `Inactive` metodo viene chiamato quando lo stato viene impostato come arrestato.
+Il `Inactive` metodo viene chiamato quando lo stato passa all'arresto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Il pin di input chiama questo metodo dal proprio metodo [**CRendererInputPin:: inactive**](crendererinputpin-inactive.md) . Il filtro chiama il metodo [**CBaseRenderer:: ClearPendingSample**](cbaserenderer-clearpendingsample.md) per rilasciare l'esempio più recente.
+Il pin di input chiama questo metodo dal proprio [**metodo CRendererInputPin::Inactive.**](crendererinputpin-inactive.md) Il filtro chiama il [**metodo CBaseRenderer::ClearPendingSample**](cbaserenderer-clearpendingsample.md) per rilasciare l'esempio più recente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il pin di input chiama questo metodo dal proprio metodo [**CRendererInputPin:: i
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

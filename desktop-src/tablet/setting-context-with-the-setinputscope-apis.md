@@ -1,30 +1,30 @@
 ---
-description: La tecnica di programmazione consigliata per l'impostazione di contesti in un'applicazione che non è abilitata per l'input penna consiste nell'utilizzare le funzioni SetInputScope per associare il contesto ai campi nell'applicazione.
+description: La tecnica a livello di codice consigliata per l'impostazione di contesti in un'applicazione non abilitata per l'input penna consiste nell'usare le funzioni SetInputScope per associare il contesto ai campi nell'applicazione.
 ms.assetid: 95b93804-8079-4b97-b1b0-dfc0138c94e8
 title: Impostazione del contesto con le API SetInputScope
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74c1b507b1719bea8c04288dca9214ad5675f8a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0abe9992e4a4ee81190fdee022b11f443592e05d7c99f9a5e69d0a200f63ecbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708151"
 ---
 # <a name="setting-context-with-the-setinputscope-apis"></a>Impostazione del contesto con le API SetInputScope
 
-La tecnica di programmazione consigliata per l'impostazione di contesti in un'applicazione che non è abilitata per l'input penna consiste nell'utilizzare le funzioni [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) per associare il contesto ai campi nell'applicazione.
+La tecnica a livello di codice consigliata per l'impostazione di contesti in un'applicazione non abilitata per l'input penna consiste nell'usare le [**funzioni SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) per associare il contesto ai campi nell'applicazione.
 
-Microsoft Windows XP Tablet PC Edition Development Kit 1,7 è stata la prima versione di Microsoft Windows a offrire [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope). Windows Vista fornisce anche il supporto per queste funzioni. Le definizioni **SetInputScope** sono dichiarate in InputScope. idl e InputScope. h. Per altre informazioni, vedere [Framework di servizi di testo](../tsf/text-services-framework.md).
+Microsoft Windows XP Tablet PC Edition Development Kit 1.7 è stata la prima versione di Microsoft Windows per offrire [**SetInputScope.**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) Windows Vista fornisce anche il supporto per queste funzioni. Le **definizioni SetInputScope** sono dichiarate in InputScope.idl e InputScope.h. Per altre informazioni, [vedere](../tsf/text-services-framework.md)Framework servizi di testo .
 
-Le funzioni [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) rappresentano la modalità consigliata per impostare il contesto per i controlli e le applicazioni che non sono abilitati per l'input penna.
+Le [**funzioni SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) sono il modo consigliato per impostare il contesto per i controlli e le applicazioni non abilitate per l'input penna.
 
 ## <a name="common-input-scopes"></a>Ambiti di input comuni
 
-Utilizzando le funzioni [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) e il set definito di ambiti di input comuni descritti nell'enumerazione [**InputScope**](/windows/win32/api/inputscope/ne-inputscope-inputscope) , è possibile migliorare l'accuratezza del riconoscimento dei riconoscitori della grafia Microsoft.
+Usando le [**funzioni SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope) e il set definito di ambiti di input comuni descritti nell'enumerazione [**InputScope,**](/windows/win32/api/inputscope/ne-inputscope-inputscope) è possibile migliorare l'accuratezza del riconoscimento della grafia Microsoft.
 
 > [!Note]  
-> I riconoscitori per la lingua inglese (Stati Uniti), inglese (Regno Unito), tedesco, francese, italiano, spagnolo, olandese e portoghese attualmente supportano l'utilizzo degli ambiti di input comuni con [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope).
+> I riconoscitori per inglese (Stati Uniti), inglese (Regno Unito), tedesco, francese, italiano, spagnolo, olandese e portoghese attualmente supportano l'uso degli ambiti di input comuni con [**SetInputScope**](/windows/win32/api/inputscope/nf-inputscope-setinputscope).
 
  
 

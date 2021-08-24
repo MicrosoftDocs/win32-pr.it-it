@@ -3,7 +3,7 @@ title: Valore di enumerazione D1115 non valido
 description: Valore di enumerazione D1115 non valido
 ms.assetid: cfffd2b8-a7d3-4a60-8586-81d8435936a6
 keywords:
-- Valore di enumerazione D1115 non valido Direct2D
+- Valore di enumerazione D1115 non valido direct2D
 topic_type:
 - apiref
 api_name:
@@ -12,39 +12,39 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edcfe70c67e61a3b8bfc435adfdaa017a1c62b22
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 11800acaae350b5289b339738448300c91db32a16c0d3f3d9224f08b6079fba2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "106334277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758121"
 ---
-# <a name="d1115-enumeration-value-not-valid"></a>D1115: valore di enumerazione non valido
+# <a name="d1115-enumeration-value-not-valid"></a>D1115: Valore di enumerazione non valido
 
-Il parametro Parameter con valore Value \[  \] \[  \] per *Interface*::*Method* non è un valore di enumerazione valido.
+Il parametro \[ *del parametro* \] con valore value \[ *per* \] il *metodo* dell'interfaccia :: non è un valore di enumerazione valido.
 
 ## <a name="placeholders"></a>Segnaposto
 
 <dl> <dt>
 
-<span id="parameter"></span><span id="PARAMETER"></span>*parametro*
+<span id="parameter"></span><span id="PARAMETER"></span>*Parametro*
 </dt> <dd>
 
 Nome del parametro che ha ricevuto il tipo imprevisto.
 
 </dd> <dt>
 
-<span id="value"></span><span id="VALUE"></span>*valore*
+<span id="value"></span><span id="VALUE"></span>*Valore*
 </dt> <dd>
 
 Valore di enumerazione non valido.
 
 </dd> <dt>
 
-<span id="interface"></span><span id="INTERFACE"></span>*interfaccia*
+<span id="interface"></span><span id="INTERFACE"></span>*Interfaccia*
 </dt> <dd>
 
-Nome dell'interfaccia a cui appartiene il *Metodo* .
+Nome dell'interfaccia a cui appartiene *il* metodo.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Nome del metodo che ha ricevuto il valore di enumerazione non valido.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene specificato un valore di enumerazione del [**\_ tipo di \_ destinazione \_ di rendering d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type) pari a 30, che non è compreso nell'intervallo previsto.
+Nell'esempio seguente viene specificato un valore di enumerazione [**D2D1 \_ RENDER TARGET \_ \_ TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type) pari a 30, che non rientra nell'intervallo previsto.
 
 
 ```C++
@@ -75,7 +75,7 @@ Nell'esempio seguente viene specificato un valore di enumerazione del [**\_ tipo
 
 
 
-Questo esempio produce il seguente messaggio di debug:
+In questo esempio viene generato il messaggio di debug seguente:
 
 ``` syntax
 D2D DEBUG ERROR - The parameter [renderTargetProperties->type] with value [30] 
@@ -84,7 +84,7 @@ for ID2D1Factory::CreateHwndRenderTarget is not a valid enumeration value.
 
 ## <a name="possible-causes"></a>Possibili cause
 
-Un parametro usava un valore di enumerazione non valido.
+Un parametro ha usato un valore di enumerazione non valido.
 
 ## <a name="fixes"></a>Correzioni
 

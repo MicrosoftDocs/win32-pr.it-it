@@ -1,19 +1,19 @@
 ---
-description: Specifica il parametro di quantizzazione minima (QP) per la codifica video.
+description: Specifica il parametro di quantizzazione minimo (QP) per la codifica video.
 ms.assetid: C9004A40-ECC9-45C3-BBDE-0A179B838AFE
-title: Proprietà CODECAPI_AVEncVideoMinQP (codecapit. h)
+title: CODECAPI_AVEncVideoMinQP proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 778371bf271a5efa1c3d302493b8e3f10254285e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7c54694552e41c45830e3f16b77d0d1b4d671c478409b651bdacaa396cd52ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606281"
 ---
-# <a name="codecapi_avencvideominqp-property"></a>Proprietà AVEncVideoMinQP di codecapi \_
+# <a name="codecapi_avencvideominqp-property"></a>PROPRIETÀ CODECAPI \_ AVEncVideoMinQP
 
-Specifica il parametro di quantizzazione minima (QP) per la codifica video.
+Specifica il parametro di quantizzazione minimo (QP) per la codifica video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,11 +21,11 @@ Specifica il parametro di quantizzazione minima (QP) per la codifica video.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoMinQP**
+**CODECAPI \_ AVEncVideoMinQP**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore è il numero minimo di QP usato nella codifica Variable-QP.
+Il valore è il QP minimo usato nella codifica variabile-QP.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Il valore è il numero minimo di QP usato nella codifica Variable-QP.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Il valore è il numero minimo di QP usato nella codifica Variable-QP.
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

@@ -1,27 +1,27 @@
 ---
-description: PKEY \_ AudioEndpoint \_ supporta la \_ proprietà della \_ modalità EventDriven indica se l'endpoint supporta la modalità guidata dagli eventi.
+description: La proprietà PKEY \_ AudioEndpoint \_ Supports EventDriven Mode indica se \_ l'endpoint supporta la modalità guidata da \_ eventi.
 ms.assetid: 9cffd9ae-710b-4d41-aa02-3ab1a065e544
-title: PKEY_AudioEndpoint_Supports_EventDriven_Mode (mmdeviceapi. h)
+title: PKEY_AudioEndpoint_Supports_EventDriven_Mode (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2707de83721d546040ac878b337faea12f533bb6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 280be65d4ae8e0b557bd96320ea31f67ba75657ecb5b685608bd2c314e10836d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758921"
 ---
-# <a name="pkey_audioendpoint_supports_eventdriven_mode"></a>PKEY \_ AudioEndpoint \_ supporta \_ la \_ modalità EventDriven
+# <a name="pkey_audioendpoint_supports_eventdriven_mode"></a>PKEY \_ AudioEndpoint \_ supporta la modalità \_ EventDriven \_
 
-**Pkey AudioEndpoint supporta la proprietà della \_ \_ \_ \_ modalità EventDriven** indica se l'endpoint supporta la modalità guidata dagli eventi.
+La **proprietà PKEY \_ AudioEndpoint \_ Supports \_ EventDriven \_ Mode** indica se l'endpoint supporta la modalità guidata da eventi.
 
-Il membro **VT** della struttura **PROPVARIANT** è impostato su VT \_ UI4.
+Il **membro vt** della **struttura PROPVARIANT** è impostato su VT \_ UI4.
 
-Il membro **uintVal** della struttura **PROPVARIANT** è un **valore DWORD** che indica se l'endpoint supporta la modalità guidata dagli eventi.
+Il **membro uintVal** della **struttura PROPVARIANT** è un **valore DWORD** che indica se l'endpoint supporta la modalità basata su eventi.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questa proprietà viene popolato da un OEM audio in un file con estensione inf per indicare che l'hardware HDAudio supporta la modalità guidata dagli eventi in base al requisito WHQL.
+Questo valore della proprietà viene popolato da un OEM audio in un file con estensione inf per indicare che l'hardware HDAudio supporta la modalità basata su eventi in base al requisito WHQL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Il valore di questa proprietà viene popolato da un OEM audio in un file con est
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
@@ -39,10 +39,10 @@ Il valore di questa proprietà viene popolato da un OEM audio in un file con est
 
 <dl> <dt>
 
-[**Proprietà endpoint audio**](audio-endpoint-properties.md)
+[**Proprietà dell'endpoint audio**](audio-endpoint-properties.md)
 </dt> <dt>
 
-[Proprietà audio principali](core-audio-properties.md)
+[Proprietà audio di base](core-audio-properties.md)
 </dt> </dl>
 
  

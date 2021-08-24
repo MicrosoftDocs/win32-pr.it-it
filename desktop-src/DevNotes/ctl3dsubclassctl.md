@@ -1,7 +1,7 @@
 ---
-description: Sottoclassi di un singolo controllo a meno che il controllo non venga visualizzato in una finestra di dialogo.
+description: Sottoclassi di un singolo controllo, a meno che il controllo non venga visualizzato in una finestra di dialogo.
 ms.assetid: 07a2bce1-4c69-4f8d-bb24-b17351f5e771
-title: Ctl3dSubclassCtl (funzione)
+title: Funzione Ctl3dSubclassCtl
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 0ff6c6744c4ddda203149981218b8143fb78bce7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1d25bdc189ad80f1976ee76cc7f9909d099f34c8a88b83771ebf3f297c78934
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654481"
 ---
-# <a name="ctl3dsubclassctl-function"></a>Ctl3dSubclassCtl (funzione)
+# <a name="ctl3dsubclassctl-function"></a>Funzione Ctl3dSubclassCtl
 
-Sottoclassi di un singolo controllo a meno che il controllo non venga visualizzato in una finestra di dialogo.
+Sottoclassi di un singolo controllo, a meno che il controllo non venga visualizzato in una finestra di dialogo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,20 +39,20 @@ BOOL Ctl3dSubclassCtl(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Handle per la finestra del controllo.
+Handle per la finestra di controllo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il controllo è sottoclassato correttamente; in caso contrario, restituisce **false**.
+Restituisce **TRUE se** il controllo è sottoclassato correttamente; In caso contrario, restituisce **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

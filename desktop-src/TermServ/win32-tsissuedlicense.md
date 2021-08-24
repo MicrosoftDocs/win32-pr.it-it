@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSIssuedLicense
-description: Descrive le istanze di Servizi Desktop remoto licenze di accesso client per dispositivo (RDS \ 160; Licenze CAL per dispositivo rilasciate da un server licenze Desktop remoto.
+title: Win32_TSIssuedLicense classe
+description: Descrive le istanze di Servizi Desktop remoto licenze di accesso client per dispositivo (Servizi Desktop remoto \ 160; Licenze CAL per dispositivo) rilasciate da un server Desktop remoto licenze.
 ms.assetid: 15825dc5-9ada-4c11-ac77-beb681e9b33c
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSIssuedLicense Servizi Desktop remoto
-- Classe Win32_TSIssuedLicense Servizi Desktop remoto, descritta
+- Win32_TSIssuedLicense classe Servizi Desktop remoto
+- Win32_TSIssuedLicense classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3d08a68ddcc15a912de4c674403928211a297e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b76127d41c6a571b6bc75bc74378b21f76f4b38c05f0a223d36e979dccf89a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656161"
 ---
-# <a name="win32_tsissuedlicense-class"></a>Win32 \_ TSIssuedLicense (classe)
+# <a name="win32_tsissuedlicense-class"></a>Classe \_ TSIssuedLicense Win32
 
-Vengono descritte le istanze delle licenze CAL per dispositivo Servizi Desktop remoto per dispositivo che vengono rilasciate da un server licenze Desktop remoto.
+Vengono descritte le istanze Servizi Desktop remoto licenze CAL Per Dispositivo rilasciate da un server licenze Desktop remoto per dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,20 +54,20 @@ class Win32_TSIssuedLicense
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSIssuedLicense** presenta questi tipi di membri:
+La **classe Win32 \_ TSIssuedLicense** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSIssuedLicense** presenta questi metodi.
+La **classe Win32 \_ TSIssuedLicense** dispone di questi metodi.
 
 
 
 | Metodo                                         | Descrizione                                                                                               |
 |:-----------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Revoke**](revoke-win32-tsissuedlicense.md) | Revoca le licenze CAL per dispositivo di Servizi Desktop remoto rappresentate dall'oggetto **Win32 \_ TSIssuedLicense** .<br/> |
+| [**Revocare**](revoke-win32-tsissuedlicense.md) | Revoca le licenze CAL Per Dispositivo di Servizi Desktop remoto rappresentate dall'oggetto **\_ TSIssuedLicense Win32.**<br/> |
 
 
 
@@ -75,14 +75,14 @@ La classe **Win32 \_ TSIssuedLicense** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSIssuedLicense** dispone di queste proprietà.
+La **classe Win32 \_ TSIssuedLicense** ha queste proprietà.
 
 <dl> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,20 +95,20 @@ Identifica la data di scadenza della licenza.
 **IssueDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica la data di rilascio della licenza.
+Identifica la data di emissione della licenza.
 
 </dd> <dt>
 
 **KeyPackId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -117,14 +117,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il Key Pack di Servizi Desktop remoto License.
+Identifica il key pack Servizi Desktop remoto licenza.
 
 </dd> <dt>
 
 **LicenseId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -140,7 +140,7 @@ Identificatore univoco per questa licenza.
 **LicenseStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -174,7 +174,7 @@ La licenza è attiva.
 3
 </dt> <dd>
 
-La licenza è una licenza per l'aggiornamento.
+La licenza è una licenza di aggiornamento.
 
 </dd> <dt>
 
@@ -204,47 +204,47 @@ La licenza è una licenza simultanea.
 **sHardwareId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore hardware per il quale è stata emessa la licenza.
+Identificatore hardware per cui è stata rilasciata la licenza.
 
 </dd> <dt>
 
 **sIssuedToComputer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del computer per cui è stata emessa la licenza.
+Nome computer per cui è stata rilasciata la licenza.
 
 </dd> <dt>
 
 **sIssuedToUser**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome utente per cui è stata emessa la licenza.
+Nome utente per cui è stata rilasciata la licenza.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per utilizzare questa classe, è necessario essere membri del gruppo Administrators.
+Per usare questa classe, è necessario essere membri del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -255,7 +255,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -264,16 +264,16 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseReportEntry Win32**](win32-tslicensereportentry.md)
+[**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

@@ -1,38 +1,38 @@
 ---
-title: Emit (SM4-ASM)
+title: emit (sm4 - asm)
 description: Creare un vertice.
 ms.assetid: FDD18CCD-8088-46BD-897C-434B77FF81E6
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b17711b6f9cf5d707fb8eae3465100a78620c0c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ce90ed4ea87c74c09c6f45d590e8bc7a70bbb8178988b059c2b3a79726aabcb2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673081"
 ---
-# <a name="emit-sm4---asm"></a>Emit (SM4-ASM)
+# <a name="emit-sm4---asm"></a>emit (sm4 - asm)
 
 Creare un vertice.
 
 
 
-| Emit |
+| Emettere |
 |------|
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Commenti
 
-**Emit** causa la lettura da parte di Geometry shader di tutti i registri o dichiarati per \# generare un vertice.
+**emit** fa in modo che tutti i registri o dichiarati \# siano letti da Geometry Shader per generare un vertice.
 
-Quando vengono emesse più chiamate **Emit** , vengono generate le primitive.
+Quando vengono **emesse** più chiamate di emissione, vengono generate primitive.
 
-**Emit** può apparire un numero qualsiasi di volte in un geometry shader, incluso all'interno del controllo di flusso.
+**emit** può essere visualizzato un numero qualsiasi di volte in un Geometry Shader, incluso il controllo di flusso.
 
-Se i flussi sono stati dichiarati, è necessario usare il [ \_ flusso di emissione](emit-stream--sm5---asm-.md).
+Se i flussi sono stati dichiarati, è necessario usare [il flusso emit \_ ](emit-stream--sm5---asm-.md).
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -44,9 +44,9 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
- 
+ 
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -54,27 +54,27 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

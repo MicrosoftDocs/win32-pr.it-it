@@ -1,7 +1,7 @@
 ---
-description: Percentuale del tempo di elaborazione dei dati nella pipeline.
+description: Percentuale di tempo di elaborazione dei dati nella pipeline.
 ms.assetid: eb9dec27-2e45-4897-92af-8415c8fa08d4
-title: Struttura D3DDEVINFO_D3D9PIPELINETIMINGS (D3D9Types. h)
+title: D3DDEVINFO_D3D9PIPELINETIMINGS struttura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 627eec0ea93181b14c308ab229ed603412511a91
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4d938fd2e1ca0f52d2ea7787f54b430a84907ad5f04f066bc90f0867825745a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676741"
 ---
-# <a name="d3ddevinfo_d3d9pipelinetimings-structure"></a>\_Struttura D3DDEVINFO D3D9PIPELINETIMINGS
+# <a name="d3ddevinfo_d3d9pipelinetimings-structure"></a>Struttura D3DDEVINFO \_ D3D9PIPELINETIMINGS
 
-Percentuale del tempo di elaborazione dei dati nella pipeline.
+Percentuale di tempo di elaborazione dei dati nella pipeline.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ typedef struct D3DDEVINFO_D3D9PIPELINETIMINGS {
 **VertexProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Percentuale di tempo impiegato per l'esecuzione di vertex shader.
 **PixelProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,28 +67,28 @@ Percentuale di tempo impiegato per l'esecuzione di pixel shader.
 **OtherGPUProcessingTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale di tempo impiegato per eseguire altre operazioni di elaborazione.
+Percentuale di tempo impiegato per altre operazioni di elaborazione.
 
 </dd> <dt>
 
 **GPUIdleTimePercent**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Percentuale del tempo che non elabora alcun elemento.
+Percentuale di tempo in cui non viene elaborata nulla.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere prestazioni ottimali, è consigliabile un carico bilanciato.
+Per prestazioni ottimali, è consigliabile un carico bilanciato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,7 +96,7 @@ Per ottenere prestazioni ottimali, è consigliabile un carico bilanciato.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

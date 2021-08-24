@@ -1,29 +1,29 @@
 ---
-description: La Network Monitor parte della piattaforma Software Development Kit (SDK) estende le funzionalità di Network Monitor grazie alla creazione di esperti personalizzati, parser di protocollo e provider di pacchetti di rete (centrali).
+description: La Network Monitor di Platform Software Development Kit (SDK) estende le funzionalità di Network Monitor consentendo di creare esperti personalizzati, parser di protocollo e provider di pacchetti di rete( NPP).
 ms.assetid: d9a61ad7-aa85-4b18-90df-7a8051ff80bc
-title: Introduzione a Network Monitor
+title: Network Monitor introduttiva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbf3deda734c3e4c54982356427c3d541f2a71d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e29142d2beeb42b9eb89635a8902a090b93fae86599a711bdbe063408562ea50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778171"
 ---
-# <a name="network-monitor-introduction"></a>Introduzione a Network Monitor
+# <a name="network-monitor-introduction"></a>Network Monitor introduttiva
 
-La Network Monitor parte della piattaforma Software Development Kit (SDK) estende le funzionalità di Network Monitor grazie alla creazione di esperti personalizzati, parser di protocollo e provider di pacchetti di rete (centrali). Questa sezione include la documentazione seguente:
+La Network Monitor di Platform Software Development Kit (SDK) estende le funzionalità di Network Monitor consentendo di creare esperti personalizzati, parser di protocollo e provider di pacchetti di rete( NPP). Questa sezione include la documentazione seguente:
 
--   Argomenti di programmazione necessari per creare esperti e parser. Vengono inoltre illustrate le procedure per scrivere un filtro di acquisizione e utilizzare BLOB e centrali.
--   Informazioni di riferimento relative all'API su esperti, parser, BLOB e centrali.
--   Glossario dei termini utilizzati nella documentazione Network Monitor.
+-   Argomenti di programmazione necessari per creare esperti e parser. Queste informazioni illustrano anche come scrivere un filtro di acquisizione e usare BLOB e criteri di rete.
+-   Informazioni di riferimento relative alle API su esperti, parser, BLOB e criteri di rete.
+-   Glossario dei termini usati Network Monitor documentazione.
 
-Gli argomenti secondari seguenti sono forniti per facilitare l'ottenimento e l'installazione di Network Monitor.
+Gli argomenti secondari seguenti sono forniti per facilitare l'acquisizione e l'installazione Network Monitor.
 
 -   [System Requirements](system-requirements.md)
--   [Acquisizione di Network Monitor 2,1](obtaining-network-monitor-2-1.md)
--   [Installazione dei file di Network Monitor](installing-network-monitor-files.md)
+-   [Come ottenere Network Monitor 2.1](obtaining-network-monitor-2-1.md)
+-   [Installazione di Network Monitor file](installing-network-monitor-files.md)
 
  
 

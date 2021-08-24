@@ -3,9 +3,9 @@ title: Metodo IDeviceBroker OpenDeviceFromInterfacePath
 description: Tenta di aprire un'istanza dell'interfaccia del dispositivo per conto di un client. IID 8604b268-34A6-4b1A-A59F-CDBD8379FD98.
 ms.assetid: 5ADDB994-3AAB-49B2-8B83-F71883AFD854
 keywords:
-- API broker Access Device Method OpenDeviceFromInterfacePath
-- API gestore di accesso ai dispositivi del metodo OpenDeviceFromInterfacePath, interfaccia IDeviceBroker
-- API del broker di accesso ai dispositivi dell'interfaccia IDeviceBroker, metodo OpenDeviceFromInterfacePath
+- Metodo OpenDeviceFromInterfacePath API gestore accesso dispositivo
+- Metodo OpenDeviceFromInterfacePath API device access broker, interfaccia IDeviceBroker
+- Interfaccia IDeviceBroker API Device Access Broker , metodo OpenDeviceFromInterfacePath
 topic_type:
 - apiref
 api_name:
@@ -16,17 +16,17 @@ ms.topic: article
 ms.date: 02/11/2020
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5363600455ee1ba5c1c86cb12690afd242f68118
-ms.sourcegitcommit: 01a4383738056cf3de4f45f36d98ef73d4dc694d
+ms.openlocfilehash: 4d9bd4e03b489a899e182c86207e11ae9ec0fb66cc6c917584d83dcc0aa97918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104398522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635331"
 ---
-# <a name="idevicebrokeropendevicefrominterfacepath-method"></a>Metodo IDeviceBroker:: OpenDeviceFromInterfacePath
+# <a name="idevicebrokeropendevicefrominterfacepath-method"></a>Metodo IDeviceBroker::OpenDeviceFromInterfacePath
 
 > [!Important]  
-> Queste interfacce non sono supportate e non devono essere usate. Usare invece le API nella Guida di riferimento per la [programmazione di API di accesso ai dispositivi](device-access-api-c---programming-reference.md) .
+> Queste interfacce non sono supportate e non devono essere usate. In alternativa, usare le API nella [API di accesso al dispositivo di programmazione C++.](device-access-api-c---programming-reference.md)
 
 Tenta di aprire un'istanza dell'interfaccia del dispositivo per conto di un client. IID = 8604b268-34A6-4b1A-A59F-CDBD8379FD98.
 
@@ -34,11 +34,11 @@ Tenta di aprire un'istanza dell'interfaccia del dispositivo per conto di un clie
 
 ```C++
 HRESULT OpenDeviceFromInterfacePath(
-  [in]  PCWSTR pszDeviceInterfacePath,
-  [in]  DWORD  desiredAccess,
-  [in]  DWORD  shareMode,
-  [in]  DWORD  flagsAndAttributes,
-  [out] Handle *phDevice
+  [in]  PCWSTR pszDeviceInterfacePath,
+  [in]  DWORD  desiredAccess,
+  [in]  DWORD  shareMode,
+  [in]  DWORD  flagsAndAttributes,
+  [out] Handle *phDevice
 );
 ```
 
@@ -46,38 +46,38 @@ HRESULT OpenDeviceFromInterfacePath(
 
 <dl> <dt>
 
-*pszDeviceInterfacePath* \[ in\]
+*pszDeviceInterfacePath* \[ Pollici\]
 </dt> <dd>
 
 Istanza dell'interfaccia del dispositivo da aprire.
 
 </dd> <dt>
 
-*desiredAccess* \[ in\]
+*desiredAccess* \[ Pollici\]
 </dt> <dd>
 
-Accesso desiderato da passare a Open.
+Accesso desiderato da passare all'apertura.
 
 </dd> <dt>
 
-*shareMode* \[ in\]
+*shareMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di condivisione da passare a Open.
+Modalità di condivisione da passare all'apertura.
 
 </dd> <dt>
 
-*flagsAndAttributes* \[ in\]
+*flagsAndAttributes* \[ Pollici\]
 </dt> <dd>
 
-Flag e attributi da passare a Open.
+Flag e attributi da passare per l'apertura.
 
 </dd> <dt>
 
-*\* phDevice* \[\]
+*\* phDevice* \[ out\]
 </dt> <dd>
 
-Handle risultante se l'apertura è stata completata.
+Handle risultante se l'apertura ha avuto esito positivo.
 
 </dd> </dl>
 

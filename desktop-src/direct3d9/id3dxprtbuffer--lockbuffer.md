@@ -1,7 +1,7 @@
 ---
-description: Blocca un intervallo di dati di esempio vertici o Texel e ottiene un puntatore alla posizione nella memoria del buffer.
+description: Blocca un intervallo di dati di esempio vertice o texel e ottiene un puntatore alla posizione nella memoria buffer.
 ms.assetid: 8de2725f-507e-41ee-828d-2fb19cc2252c
-title: 'Metodo ID3DXPRTBuffer:: LockBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTBuffer::LockBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a2da8cb5a6a2e036fb7b495a129a5ef29d9ff749
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d8e3b6310951a5784af99b913298c20d5556baa10b012926f3b68e44d402dbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606891"
 ---
-# <a name="id3dxprtbufferlockbuffer-method"></a>Metodo ID3DXPRTBuffer:: LockBuffer
+# <a name="id3dxprtbufferlockbuffer-method"></a>Metodo ID3DXPRTBuffer::LockBuffer
 
-Blocca un intervallo di dati di esempio vertici o Texel e ottiene un puntatore alla posizione nella memoria del buffer.
+Blocca un intervallo di dati di esempio vertice o texel e ottiene un puntatore alla posizione nella memoria buffer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT LockBuffer(
 
 <dl> <dt>
 
-*Inizio* \[ in\]
+*Avvio* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice del campione di dati vertex o Texel.
+Indice del campione di dati vertice o texel.
 
 </dd> <dt>
 
-*NumSamples valore* \[ in\]
+*NumSamples* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di vertici (o Texel) campionati.
+Numero di vertici (o texel) campionati.
 
 </dd> <dt>
 
-*ppData* \[ out\]
+*ppData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\*\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\*\***
 
-Puntatore alla posizione in memoria in cui inizia l'esempio di avvio. Il layout della memoria dei dati del buffer è il seguente:
+Puntatore alla posizione in memoria in cui inizia l'esempio Start. Il layout della memoria dei dati del buffer è:
 
 
 ```
@@ -80,7 +80,7 @@ float fData[NumberSamples][NumberChannels][NumberCoefficients]
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente:
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente:
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -90,8 +90,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo GetThumbnail ISearchResult
-description: Riservato. | Metodo GetThumbnail ISearchResult
+title: Metodo ISearchResult GetThumbnail
+description: Riservato. | Metodo ISearchResult GetThumbnail
 ms.assetid: e9102d4f-140e-42f1-991a-38a6ef3e71a4
 keywords:
-- Funzionalità dell'ambiente Windows legacy del metodo GetThumbnail
-- Funzionalità dell'ambiente Windows legacy del metodo GetThumbnail, Interfaccia ISearchResult
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia ISearchResult, metodo GetThumbnail
+- Metodo GetThumbnail Funzionalità dell'Windows legacy
+- Metodo GetThumbnail Legacy Windows Environment Features , interfaccia ISearchResult
+- Interfaccia ISearchResult Legacy Windows Environment Features , Metodo GetThumbnail
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dd6602e14b8534b56aa7ed8cee9a9cd2a494ea1d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3ce4addacd63541f5dd3907a4cb5b5c84fcfe4e7f38cf98be599e9f2e8546ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716761"
 ---
-# <a name="isearchresultgetthumbnail-method"></a>Metodo ISearchResult:: GetThumbnail
+# <a name="isearchresultgetthumbnail-method"></a>Metodo ISearchResult::GetThumbnail
 
 Questo metodo non è implementato.
 

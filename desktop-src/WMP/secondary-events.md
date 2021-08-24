@@ -3,50 +3,50 @@ title: Eventi secondari
 description: Eventi secondari
 ms.assetid: cc9eb382-82ca-4416-a04e-1572e4c69c90
 keywords:
-- Windows Media Player Skin, eventi secondari
-- interfacce, eventi secondari
-- eventi, secondari
-- scrittura di codice per interfacce, eventi secondari
+- Windows Media Player, eventi secondari
+- interfaccia, eventi secondari
+- eventi, secondario
+- scrittura di codice per le interfaccia, eventi secondari
 - eventi secondari
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e04785a7468353665083287ac1b74bce5cbf0f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 35fd121330a99c73ed7a52def712bb53949113745a8af0f4c01ded8f9aeaea4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735781"
 ---
 # <a name="secondary-events"></a>Eventi secondari
 
-È possibile determinare gli altri eventi che avvengono quando viene attivato un evento specifico. Ad esempio, quando si fa clic su un pulsante del mouse, è possibile che si desideri sapere se il tasto ALT è stato disattivato nello stesso momento.
+È possibile determinare quali altri eventi si verificano quando viene attivato un evento specifico. Ad esempio, quando si fa clic su un pulsante del mouse, è possibile sapere se il tasto ALT era premuto contemporaneamente.
 
 ## <a name="event-attributes"></a>Attributi dell'evento
 
-Per le interfacce sono supportati gli attributi di evento seguenti:
+Per le interfaccia sono supportati gli attributi degli eventi seguenti:
 
 -   **altKey**
--   **pulsante**
+-   **Pulsante**
 -   **clientX**
 -   **clientY**
--   **ctrlKey**
+-   **CTRLKEY**
 -   **fromElement**
 -   **offsetX**
--   **offsetY**
+-   **Offsety**
 -   **screenX**
 -   **screenY**
--   **shiftKey**
+-   **maiuscKey**
 -   **srcElement**
 -   **toElement**
 -   **x**
 -   **y**
--   **keyCode**
+-   **Keycode**
 
-Per ulteriori informazioni su questi attributi, vedere la Guida di riferimento per la [programmazione dell'interfaccia](skin-programming-reference.md).
+Per altre informazioni su questi attributi, vedere Le informazioni [di riferimento sulla programmazione dell'interfaccia](skin-programming-reference.md).
 
 ## <a name="using-secondary-events"></a>Uso di eventi secondari
 
-È possibile elaborare solo gli attributi di evento nel codice JScript. È necessario utilizzare la sintassi seguente:
+È possibile elaborare solo gli attributi degli eventi JScript codice. È necessario usare la sintassi seguente:
 
 
 ```C++
@@ -55,7 +55,7 @@ event.eventattributename
 
 
 
-*eventattributename* è il nome dell'attributo dell'evento. Per determinare, ad esempio, se il tasto ALT è stato premuto durante un evento di clic, è possibile utilizzare le righe seguenti nel codice JScript:
+*eventattributename è* il nome dell'attributo dell'evento. Ad esempio, per determinare se il tasto ALT è stato premuto durante un evento Click, è possibile usare le righe seguenti nel JScript seguente:
 
 
 ```C++
@@ -75,9 +75,9 @@ if (wasAlt = true)
 [**Gestione degli eventi**](handling-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

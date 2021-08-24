@@ -4,18 +4,18 @@ description: Modello a oggetti dell'agente
 ms.assetid: 4ec6ec3f-9772-4e29-9482-b9860092f053
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a97bcc104cb7835c3335b22bcfd185b152b1c290
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 430e63bd0f0ddf3d412ff5fa731972caeb2ff90b11f8257775d5583b0ab7e2b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104556690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715846"
 ---
 # <a name="the-agent-object-model"></a>Modello a oggetti dell'agente
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Il modello a oggetti di Microsoft Agent è costituito dagli oggetti seguenti:
+Il modello a oggetti di Microsoft Agent è costituito dai seguenti oggetti:
 
 -   Richiesta
 -   Agent (controllo)
@@ -27,12 +27,12 @@ Il modello a oggetti di Microsoft Agent è costituito dagli oggetti seguenti:
 -   AnimationNames (raccolta)
 -   SpeechInput
 -   AudioOutput
--   CommandsWindow
--   PropertySheet
+-   ComandiWindow
+-   Propertysheets
 
-Questi oggetti sono organizzati nella seguente gerarchia. La linea tratteggiata che segue un oggetto indica che possono esistere più oggetti.
+Questi oggetti sono organizzati nella gerarchia seguente. La linea tratteggiata che segue un oggetto indica che possono esistere più oggetti.
 
-![Diagramma che mostra la gerarchia degli oggetti, a partire da' request '.](images/pro358.gif)
+![Diagramma che mostra la gerarchia degli oggetti, a partire da 'Request'.](images/pro358.gif)
 
  
 

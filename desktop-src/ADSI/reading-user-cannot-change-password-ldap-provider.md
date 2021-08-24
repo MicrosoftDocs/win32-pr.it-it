@@ -1,33 +1,33 @@
 ---
-title: Lettura dell'utente che non può modificare la password (provider LDAP)
-description: Informazioni su come determinare se un utente è autorizzato a modificare una password per il provider LDAP. La possibilità di un utente di modificare una password può essere concessa o negata.
+title: Lettura dell'utente non è possibile modificare la password (provider LDAP)
+description: Informazioni su come determinare se un utente ha l'autorizzazione per modificare una password per il provider LDAP. La possibilità di un utente di modificare una password può essere concessa o negata.
 ms.assetid: d0d95d20-dcdb-453a-9d15-c386217927c8
 ms.tgt_platform: multiple
 keywords:
-- Lettura dell'utente non è in grado di modificare la password (provider LDAP) ADSI
+- Lettura dell'utente non è possibile modificare la password (provider LDAP) ADSI
 - L'utente non può modificare la password (provider LDAP) ADSI , lettura
-- Provider LDAP ADSI, esempi di gestione degli utenti, modifica della password all'accesso successivo, lettura
+- Provider LDAP ADSI, esempi di gestione utenti, Modifica password all'accesso successivo, lettura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4ebbccc3147ffb1e29c0081d6e19ef1a615b7020cdc7e246fea294df7d2d38c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637581"
 ---
-# <a name="reading-user-cannot-change-password-ldap-provider"></a>Lettura dell'utente che non può modificare la password (provider LDAP)
+# <a name="reading-user-cannot-change-password-ldap-provider"></a>Lettura dell'utente non è possibile modificare la password (provider LDAP)
 
-La possibilità di modificare la password di un utente è un'autorizzazione che può essere concessa o negata.
+La possibilità di un utente di modificare la password è un'autorizzazione che può essere concessa o negata.
 
 **Per determinare se l'autorizzazione per la modifica della password viene concessa o negata**
 
 1.  Eseguire l'associazione all'oggetto utente.
 2.  Ottenere [**l'oggetto IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) dalla **proprietà ntSecurityDescriptor** dell'oggetto utente.
-3.  Ottenere [**un'interfaccia IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) per il descrittore di sicurezza [**dalla proprietà IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)
-4.  Enumerare le voci di controllo di accesso (ACE) per l'oggetto e cercare le voci ACE con il GUID della password di modifica ({AB721A53-1E2F-11D0-9819-00)AA0040529B}) per le entità di sicurezza note [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) e "Everyone" o "NT AUTHORITY SELF" per la proprietà \\ **IADsAccessControlEntry.Trustee.**
+3.  Ottenere [**un'interfaccia IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) per il descrittore di sicurezza dalla [**proprietà IADsSecurityDescriptor.DiscretionaryAcl.**](iadssecuritydescriptor-property-methods.md)
+4.  Enumerare le voci di controllo di accesso (ACE) per l'oggetto e cercare le voci ACE che hanno il GUID della password di modifica ({AB721A53-1E2F-11D0-9819-00) AA0040529B}) per la proprietà [**IADsAccessControlEntry.ObjectType**](iadsaccesscontrolentry-property-methods.md) e le entità di sicurezza note "Everyone" o "NT AUTHORITY SELF" per la proprietà \\ **IADsAccessControlEntry.Trustee.**
     > [!Note]  
-    > Le stringhe "Everyone" e "NT AUTHORITY SELF" vengono localizzate in base alla lingua del primo controller di \\ dominio nel dominio. Pertanto, le stringhe non devono essere usate direttamente. I nomi degli account devono essere ottenuti in fase di esecuzione chiamando la funzione [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con il SID per le entità di sicurezza note "Everyone" ("S-1-1-0") e "NT AUTHORITY \\ SELF" ("S-1-5-10"). Gli esempi di codice self-code **GetSidAccountName**, **GetSidAccountName \_ Everyone** e **GetSidAccountName \_** di C++ illustrano come eseguire questa operazione.
+    > Le stringhe "Everyone" e "NT AUTHORITY SELF" vengono localizzate in base alla lingua del primo controller di \\ dominio nel dominio. Pertanto, le stringhe non devono essere usate direttamente. I nomi degli account devono essere ottenuti in fase di esecuzione chiamando la funzione [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) con il SID per le entità di sicurezza note "Everyone" ("S-1-1-0") e "NT AUTHORITY \\ SELF" ("S-1-5-10"). Gli esempi di codice Self **GetSidAccountName,** **GetSidAccountName \_ Everyone** e **GetSidAccountName \_** seguenti illustrano come eseguire questa operazione.
 
      
 
@@ -35,7 +35,7 @@ La possibilità di modificare la password di un utente è un'autorizzazione che 
 
 ## <a name="example-code"></a>Codice di esempio
 
-Nell'esempio di codice seguente viene illustrato come determinare se l'utente non può modificare l'autorizzazione per la password usando il provider LDAP.
+Nell'esempio di codice seguente viene illustrato come determinare se l'utente non può modificare l'autorizzazione password usando il provider LDAP.
 
 
 ```C++
@@ -414,10 +414,10 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszUserDN,
 
 
 
-Nell'esempio di codice seguente viene illustrato come determinare l'autorizzazione User Cannot Change Password utilizzando il provider LDAP.
+Nell'esempio di codice seguente viene illustrato come determinare l'autorizzazione User Cannot Change Password usando il provider LDAP.
 
 > [!Note]  
-> L'esempio di codice seguente funziona solo per i domini in cui la lingua principale è l'inglese, perché le stringhe "Everyone" e "NT AUTHORITY SELF" sono localizzate in base alla lingua del primo controller di dominio nel \\ dominio. Non è possibile ottenere Visual Basic account per un'entità di sicurezza nota senza chiamare la [**funzione LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Se si Visual Basic, è consigliabile usare il provider WinNT per determinare l'autorizzazione Impossibile modificare la password come illustrato in Lettura dell'utente non è possibile modificare la [password (provider WinNT).](reading-user-cannot-change-password-winnt-provider.md)
+> L'esempio di codice seguente funziona solo per i domini in cui la lingua principale è l'inglese, perché le stringhe "Everyone" e "NT AUTHORITY SELF" sono localizzate in base alla lingua del primo controller di dominio nel \\ dominio. Non è possibile ottenere Visual Basic account per un'entità di sicurezza nota senza chiamare la [**funzione LookupAccountSid.**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) Se si Visual Basic, è consigliabile usare il provider WinNT per determinare l'autorizzazione Non è possibile modificare la password, come illustrato in Lettura dell'utente non è possibile modificare [la password (provider WinNT).](reading-user-cannot-change-password-winnt-provider.md)
 
  
 

@@ -3,35 +3,35 @@ title: Attributi per tipo
 description: Attributi per tipo
 ms.assetid: 52216e11-9369-4036-9c16-e3e9db63efcf
 keywords:
-- Windows Media Format SDK, attributi
-- ASF (Advanced Systems Format), attributi
-- ASF (formato avanzato dei sistemi), attributi
+- Windows SDK formato multimediale,attributi
+- Advanced Systems Format (ASF), attributi
+- ASF (Advanced Systems Format),attributi
 - attributi, tipi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfdcfeeb40b5404c453e4b80a0855893e86f1d02
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c15c2db016f35ca60b799c88eb4194af0f23a5bce4823e9cf6c7d9503298553d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709501"
 ---
 # <a name="attributes-by-type"></a>Attributi per tipo
 
-Per praticità, in questa sezione sono elencati alcuni degli attributi di metadati ordinati per tipo. In alcuni casi vengono fornite informazioni aggiuntive sul tipo. Sono elencati i raggruppamenti seguenti.
+Per praticità, in questa sezione vengono elencati alcuni degli attributi dei metadati ordinati per tipo. In alcuni casi vengono fornite informazioni aggiuntive sul tipo. Sono elencati i raggruppamenti seguenti.
 
 
 
 | Tipo di attributo                                                   | Descrizione                                                           |
 |------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Attributi per i file musicali](attributes-for-music-files.md)     | Elenca i suggerimenti per gli attributi da usare con i file musicali.             |
+| [Attributi per Musica file](attributes-for-music-files.md)     | Elenca i suggerimenti per gli attributi da usare con i file musicali.             |
 | [Attributi per i file video](attributes-for-video-files.md)     | Elenca i suggerimenti per gli attributi da usare con i file video.             |
 | [Elenco attributi DRM](drm-attribute-list.md)                     | Elenca gli attributi di Digital Rights Management.                       |
-| [Attributi della stazione multicast](multicast-station-attributes.md) | Elenca gli attributi sovrapposti sul file da una stazione multicast. |
+| [Attributi di stazione multicast](multicast-station-attributes.md) | Elenca gli attributi sovrapposti al file da una stazione multicast. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -40,9 +40,9 @@ Per praticità, in questa sezione sono elencati alcuni degli attributi di metada
 [**Attributi**](attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

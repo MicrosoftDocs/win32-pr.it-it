@@ -1,19 +1,19 @@
 ---
-description: Principali tipi di supporti
+description: Tipi di supporti principali
 ms.assetid: 1cca3539-a920-4938-93b9-ae41e1c0a287
-title: Principali tipi di supporti
+title: Tipi di supporti principali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56553ac635f0e767e43e057b2a468027dcefb730
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ec660dcb86cfd1da5a80bef106ee8ddd17cf1e89899fea6b824fba5ab9be04e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715301"
 ---
-# <a name="major-media-types"></a>Principali tipi di supporti
+# <a name="major-media-types"></a>Tipi di supporti principali
 
-In un tipo di supporto, *il tipo principale* descrive la categoria complessiva dei dati, ad esempio audio o video. Il *sottotipo*, se presente, perfeziona ulteriormente il tipo principale. Ad esempio, se il tipo principale è video, il sottotipo potrebbe essere un video RGB a 32 bit. I sottotipi distinguono anche i formati codificati, ad esempio i video H.264, dai formati non compressi.
+In un tipo di supporto, *il tipo principale* descrive la categoria complessiva dei dati, ad esempio audio o video. Il *sottotipo*, se presente, perfeziona ulteriormente il tipo principale. Ad esempio, se il tipo principale è video, il sottotipo potrebbe essere un video RGB a 32 bit. I sottotipi distinguono anche i formati codificati, ad esempio il video H.264, dai formati non compressi.
 
 Il tipo principale e il sottotipo sono identificati dai GUID e archiviati negli attributi seguenti:
 
@@ -36,16 +36,16 @@ Vengono definiti i tipi principali seguenti.
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | **MFMediaType \_ Audio**        | Audio.                                                                                                                                                     | [GUID del sottotipo audio](audio-subtype-guids.md).      |
 | **Binario MFMediaType \_**       | Flusso binario.                                                                                                                                             | Nessuno.                                                |
-| **MFMediaType \_ FileTransfer** | Flusso che contiene i file di dati.                                                                                                                         | Nessuno.                                                |
+| **File MFMediaType \_ FileTransfer** | Flusso che contiene file di dati.                                                                                                                         | Nessuno.                                                |
 | **MFMediaType \_ HTML**         | Flusso HTML.                                                                                                                                               | Nessuno.                                                |
 | **Immagine \_ MFMediaType**        | Flusso di immagini ancora.                                                                                                                                        | [GUID WIC e CLSID](../wic/-wic-guids-clsids.md).       |
 | **Metadati di \_ MFMediaType**        | Flusso di metadati.                                                                                                                                        | Nessuno.       |
 | **MFMediaType \_ Protected**    | Supporti protetti.                                                                                                                                           | Il sottotipo specifica lo schema di protezione del contenuto. |
-| **Percezione di MFMediaType \_**   | Flussi da un sensore di fotocamera o da un'unità di elaborazione che causa e comprende i dati video non elaborati e fornisce informazioni sull'ambiente o sugli esseri umani in esso contenuti. | Nessuno.                                                |
+| **Percezione di MFMediaType \_**   | Flussi da un sensore di fotocamera o da un'unità di elaborazione che motivi e comprendi i dati video non elaborati e fornisce informazioni sull'ambiente o sugli esseri umani in esso contenuti. | Nessuno.                                                |
 | **MFMediaType \_ SAMI**         | Didascalie SAMI (Accessible Media Interchange) sincronizzate.                                                                                                 | Nessuno.                                                |
 | **MFMediaType \_ Script**       | Flusso di script.                                                                                                                                             | Nessuno.                                                |
 | **Flusso \_ MFMediaType**       | Flusso multiplexed o flusso elementare.                                                                                                                   | [GUID del sottotipo di flusso](stream-subtype-guids.md)     |
-| **Video su MFMediaType \_**        | Video.                                                                                                                                                     | [GUID del sottotipo video.](video-subtype-guids.md)      |
+| **Video di MFMediaType \_**        | Video.                                                                                                                                                     | [GUID del sottotipo video](video-subtype-guids.md).      |
 
 
 

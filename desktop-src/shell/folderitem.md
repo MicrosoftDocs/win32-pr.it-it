@@ -1,5 +1,5 @@
 ---
-description: Rappresenta un elemento in una cartella shell. Questo oggetto contiene proprietà e metodi che consentono di recuperare informazioni sull'elemento.
+description: Rappresenta un elemento in una cartella Shell. Questo oggetto contiene proprietà e metodi che consentono di recuperare informazioni sull'elemento.
 title: Oggetto FolderItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 38c0e049-2f9f-43bc-8bf2-1b7becf16e66
-ms.openlocfilehash: a8b9309e7bd1c8cbcc05360c076db085d0f8b991
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: f6744441c051d65bd24f2db888f9bc8d71e66cedcf50c097094beee8ae5a96a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715371"
 ---
 # <a name="folderitem-object"></a>Oggetto FolderItem
 
-Rappresenta un elemento in una cartella shell. Questo oggetto contiene proprietà e metodi che consentono di recuperare informazioni sull'elemento.
+Rappresenta un elemento in una cartella Shell. Questo oggetto contiene proprietà e metodi che consentono di recuperare informazioni sull'elemento.
 
 ## <a name="members"></a>Membri
 
@@ -55,13 +55,13 @@ Rappresenta un elemento in una cartella shell. Questo oggetto contiene propriet�
 | Proprietà                                                   | Tipo di accesso           | Descrizione                                                                                                                                                                                                        |
 |:-----------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Applicazione**](folderitem-application.md)<br/>   | Sola lettura<br/>  | Contiene [**l'oggetto Application**](folderitem-application.md) dell'elemento cartella.<br/>                                                                                                                   |
-| [**GetFolder**](folderitem-getfolder.md)<br/>       | Sola lettura<br/>  | Contiene l'oggetto [**Folder**](folder.md) dell'elemento, se l'elemento è una cartella.<br/>                                                                                                                           |
-| [**GetLink**](folderitem-getlink.md)<br/>           | Sola lettura<br/>  | Contiene l'oggetto [**ShellLinkObject dell'elemento,**](shelllinkobject-object.md) se l'elemento è un collegamento.<br/>                                                                                                |
-| [**IsBrowsable**](folderitem-isbrowsable.md)<br/>   | Sola lettura<br/>  | Indica se l'elemento può essere ospitato all'interno di un browser o Esplora risorse frame.<br/>                                                                                                                         |
+| [**GetFolder**](folderitem-getfolder.md)<br/>       | Sola lettura<br/>  | Contiene l'oggetto [**Folder dell'elemento,**](folder.md) se l'elemento è una cartella.<br/>                                                                                                                           |
+| [**GetLink**](folderitem-getlink.md)<br/>           | Sola lettura<br/>  | Contiene l'oggetto [**ShellLinkObject**](shelllinkobject-object.md) dell'elemento, se l'elemento è un collegamento.<br/>                                                                                                |
+| [**IsBrowsable**](folderitem-isbrowsable.md)<br/>   | Sola lettura<br/>  | Indica se l'elemento può essere ospitato all'interno di un browser o Windows Explorer.<br/>                                                                                                                         |
 | [**IsFileSystem**](folderitem-isfilesystem.md)<br/> | Sola lettura<br/>  | Indica se l'elemento fa parte del file system.<br/>                                                                                                                                                       |
 | [**IsFolder**](folderitem-isfolder.md)<br/>         | Sola lettura<br/>  | Indica se l'elemento è una cartella.<br/>                                                                                                                                                                      |
 | [**IsLink**](folderitem-islink.md)<br/>             | Sola lettura<br/>  | Indica se l'elemento è un collegamento.<br/>                                                                                                                                                               |
-| [**ModifyDate**](folderitem-modifydate.md)<br/>     | Lettura/Scrittura<br/> | Imposta o ottiene la data e l'ora dell'ultima modifica di un file. [**ModifyDate**](folderitem-modifydate.md) può essere usato per recuperare la data e l'ora dell'ultima modifica di una cartella, ma non è possibile impostarla.<br/> |
+| [**ModifyDate**](folderitem-modifydate.md)<br/>     | Lettura/Scrittura<br/> | Imposta o ottiene la data e l'ora dell'ultima modifica di un file. [**ModifyDate**](folderitem-modifydate.md) può essere usato per recuperare la data e l'ora dell'ultima modifica di una cartella, ma non può impostarla.<br/> |
 | [**Nome**](folderitem-name.md)<br/>                 | Lettura/Scrittura<br/> | Imposta o ottiene il nome dell'elemento.<br/>                                                                                                                                                                           |
 | [**Padre**](folderitem-parent.md)<br/>             | Sola lettura<br/>  | Ottiene un oggetto che rappresenta l'elemento padre dell'elemento.<br/>                                                                                                                                                  |
 | [**Percorso**](folderitem-path.md)<br/>                 | Sola lettura<br/>  | Contiene il percorso completo e il nome dell'elemento.<br/>                                                                                                                                                                 |
@@ -78,7 +78,7 @@ Rappresenta un elemento in una cartella shell. Questo oggetto contiene propriet�
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

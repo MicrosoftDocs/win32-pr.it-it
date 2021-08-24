@@ -1,5 +1,5 @@
 ---
-description: Fornisce la possibilità di restituire un elenco filtrato di \_ istanze di BASEMETRICVALUE CIM.
+description: Consente di restituire un elenco filtrato di istanze \_ baseMetricValue CIM.
 ms.assetid: c207a0ef-11f1-42c4-af77-3dcf3fbff8a7
 title: Metodo GetMetricValues della classe CIM_MetricService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3c84ae9f5128edecfd3dd4cb591f811fdbd86010
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d010128bdef9bec4ce7df5fb3b1021a80a6ac99bdfbaf797958a76b27a812479
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695001"
 ---
-# <a name="getmetricvalues-method-of-the-cim_metricservice-class"></a>Metodo GetMetricValues della classe CIM \_ MetricService
+# <a name="getmetricvalues-method-of-the-cim_metricservice-class"></a>Metodo GetMetricValues della classe \_ CIM MetricService
 
-Fornisce la possibilità di restituire un elenco filtrato di istanze di [**\_ BaseMetricValue CIM**](cim-basemetricvalue.md) .
+Consente di restituire un elenco filtrato di [**istanze \_ baseMetricValue CIM.**](cim-basemetricvalue.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ uint32 GetMetricValues(
 
 <dl> <dt>
 
-*Definizione* \[ di in\]
+*Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica un [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) per cui verranno restituite le metriche.
+Identifica un [**oggetto CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) per il quale verranno restituite le metriche.
 
 </dd> <dt>
 
-*Intervallo* \[ in\]
+*Intervallo* \[ Pollici\]
 </dt> <dd>
 
-Identifica la modalità di selezione delle istanze. L'algoritmo per l'ordinamento delle istanze di valore è specifico della definizione metrica.
+Identifica la modalità di selezione delle istanze. L'algoritmo per l'ordinamento delle istanze di valore è specifico della definizione delle metriche.
 
 <dt>
 
@@ -79,44 +79,44 @@ Identifica la modalità di selezione delle istanze. L'algoritmo per l'ordinament
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Numero* \[ di in\]
+*Conteggio* \[ Pollici\]
 </dt> <dd>
 
-Identifica il numero massimo di istanze che devono essere restituite dal metodo.
+Identifica il numero massimo di istanze restituite dal metodo .
 
 </dd> <dt>
 
-*Valori* \[ di out\]
+*Valori* \[ Cambio\]
 </dt> <dd>
 
-Al completamento del metodo, contiene riferimenti a istanze di [**CIM \_ BaseMetricValue**](cim-basemetricvalue.md), filtrate in base ai valori dei parametri di input.
+Al termine del metodo, contiene riferimenti a istanze di [**CIM \_ BaseMetricValue,**](cim-basemetricvalue.md)filtrate in base ai valori dei parametri di input.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Metodo riservato** (..)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -126,9 +126,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -137,7 +137,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_METRICSERVICE CIM**](cim-metricservice.md)
+[**CIM \_ MetricService**](cim-metricservice.md)
 </dt> </dl>
 
  

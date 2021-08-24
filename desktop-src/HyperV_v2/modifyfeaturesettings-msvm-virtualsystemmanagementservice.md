@@ -1,5 +1,5 @@
 ---
-description: Modifica le impostazioni correnti della funzionalità di una connessione Ethernet della macchina virtuale.
+description: Modifica le impostazioni delle funzionalità correnti di una connessione Ethernet della macchina virtuale.
 ms.assetid: 3caa810f-0444-45cf-88a4-e93d04accb46
 title: Metodo ModifyFeatureSettings della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c376158008c5ad0e611d3a05c7e73d2e7d1b44cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be963ee0bc57ddc0a9570c3ac9b35b1d8dadaeca48d295b45f0134b6c05f632a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694071"
 ---
-# <a name="modifyfeaturesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyFeatureSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="modifyfeaturesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo ModifyFeatureSettings della classe Msvm \_ VirtualSystemManagementService
 
-Modifica le impostazioni correnti della funzionalità di una connessione Ethernet della macchina virtuale.
+Modifica le impostazioni delle funzionalità correnti di una connessione Ethernet della macchina virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ uint32 ModifyFeatureSettings(
 
 <dl> <dt>
 
-*FeatureSettings* \[ in\]
+*FeatureSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe che contengono un'istanza incorporata di una classe derivata dalla classe [**MSVM \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md) , che descrive le modifiche apportate alle impostazioni della funzionalità corrente di una connessione Ethernet esistente. La proprietà **InstanceID** di ognuna di queste istanze identifica le impostazioni della funzionalità da modificare.
+Matrice di stringhe che contengono un'istanza incorporata di una classe derivata dalla classe [**Msvm \_ EthernetSwitchFeatureSettingData,**](msvm-ethernetswitchfeaturesettingdata.md) che descrive le modifiche alle impostazioni delle funzionalità correnti di una connessione Ethernet esistente. La **proprietà InstanceID** di ognuna di queste istanze identifica le impostazioni della funzionalità da modificare.
 
 </dd> <dt>
 
-*ResultingFeatureSettings* \[ out\]
+*ResultingFeatureSettings* \[ Cambio\]
 </dt> <dd>
 
-Matrice di riferimenti a istanze della classe [**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md) che rappresentano le impostazioni delle funzionalità modificate.
+Matrice di riferimenti a istanze della [**classe Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md) che rappresentano le impostazioni delle funzionalità modificate.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -74,13 +74,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -92,13 +92,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -107,10 +107,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -119,7 +119,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Protocolli di routing
 ms.assetid: 85302ad2-77f9-474e-a20f-ae64bfd3b45c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 836c6bcaddafc22243367a4dec98a0faac886ee6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6e0e330e12e30328326b3ae55f8983ebb0bdeb27fdd001082d172d60f960e6d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672681"
 ---
 # <a name="routing-protocols"></a>Protocolli di routing
 
@@ -23,11 +23,11 @@ Le API di routing sono progettate per l'uso da parte dei programmatori C/C++. I 
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
-I protocolli di routing sono una tecnologia basata su server. Tutte le funzionalità dei protocolli di routing sono incorporate in Windows Server 2008, Windows Server 2003 e Windows 2000 Server. Le applicazioni di routing non possono essere eseguite nei sistemi operativi client, ad esempio Windows XP o Windows Vista. Per informazioni più specifiche sui sistemi operativi che supportano una particolare funzione, vedere le sezioni Requisiti della documentazione.
+I protocolli di routing sono una tecnologia basata su server. Tutte le funzionalità dei protocolli di routing sono incorporate in Windows Server 2008, Windows Server 2003 e Windows 2000 Server. Le applicazioni di routing non possono essere eseguite nei sistemi operativi client, ad esempio Windows XP o Windows Vista. Per informazioni più specifiche sui sistemi operativi che supportano una particolare funzione, vedere le sezioni Requisiti nella documentazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Gestione gruppi multicast](about-multicast-group-manager.md)
+-   [Multicast Group Manager](about-multicast-group-manager.md)
 -   [Interfaccia del protocollo di routing](about-routing-protocol-interface.md)
 -   [Gestione tabelle di routing versione 1](about-routing-table-manager-version-1.md)
 -   [Gestione tabelle di routing versione 2](about-routing-table-manager-version-2.md)

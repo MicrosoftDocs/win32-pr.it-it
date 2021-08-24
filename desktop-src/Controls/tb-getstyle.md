@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETSTYLE (COMmctrl. h)
-description: Recupera gli stili attualmente in uso per un controllo Toolbar.
+title: TB_GETSTYLE messaggio (Commctrl.h)
+description: Recupera gli stili attualmente in uso per un controllo barra degli strumenti.
 ms.assetid: 6fbe8733-79df-462e-acb6-6568105e5058
 keywords:
-- Controlli di Windows Message TB_GETSTYLE
+- TB_GETSTYLE dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14f8de0addae729a4a8c641d21fd1771137d8c8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0704e1cb886bb8a684ab4a1a1e827218fc5f57d4d90778e859e5224ef5f129e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696171"
 ---
-# <a name="tb_getstyle-message"></a>TB- \_ messaggio GETstyle
+# <a name="tb_getstyle-message"></a>MESSAGGIO \_ GETSTYLE DA TB
 
-Recupera gli stili attualmente in uso per un controllo Toolbar.
+Recupera gli stili attualmente in uso per un controllo barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera gli stili attualmente in uso per un controllo Toolbar.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **DWORD** costituito da una combinazione di [stili del controllo Toolbar](toolbar-control-and-button-styles.md).
+Restituisce un **valore DWORD che** è una combinazione di stili di controllo della [barra degli strumenti.](toolbar-control-and-button-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore **DWORD** costituito da una combinazione di [stili del con
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

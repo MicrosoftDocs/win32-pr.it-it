@@ -1,19 +1,19 @@
 ---
-description: Nome di un file con estensione exe o dll archiviato in una sezione di risorse all'interno di tale file.
+description: Nome di un file .exe o .dll archiviato in una sezione di risorse all'interno di tale file.
 ms.assetid: a521f727-b024-44ef-98ae-98986254857f
-title: System. InternalName
+title: System.InternalName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07a1ed9063d19aa0bd2735c6c59626de483173c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75aa55edafe0f66faf6ed5474617738e6a02a01d00e434254514c44c8b7a352f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716781"
 ---
-# <a name="systeminternalname"></a>System. InternalName
+# <a name="systeminternalname"></a>System.InternalName
 
-Nome di un file con estensione exe o dll archiviato in una sezione di risorse all'interno di tale file.
+Nome di un file .exe o .dll archiviato in una sezione di risorse all'interno di tale file.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,15 +32,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Storicamente, queste informazioni venivano spesso visualizzate nella pagina della finestra delle proprietà della **versione** XP di Windows. In Windows Vista le informazioni sono state spostate nella scheda **Dettagli** . Questa particolare proprietà, tuttavia, non è stata resa pubblica in Windows Vista fino al Service Pack 1 (SP1).
+In genere, queste informazioni vengono spesso visualizzate nella  Windows delle proprietà versione XPÂ. In Windows Vista le informazioni sono stati spostati nella **scheda** Dettagli. Tuttavia, questa particolare proprietà non è stata resa pubblica in Windows Vista fino a Service Pack 1 (SP1).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -49,13 +49,13 @@ Storicamente, queste informazioni venivano spesso visualizzate nella pagina dell
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -64,13 +64,13 @@ Storicamente, queste informazioni venivano spesso visualizzate nella pagina dell
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

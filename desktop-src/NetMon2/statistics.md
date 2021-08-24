@@ -1,7 +1,7 @@
 ---
-description: La struttura delle statistiche fornisce le statistiche per l'acquisizione. Alcune di queste statistiche vengono generate da Network Monitor, mentre altre vengono generate dalla scheda di interfaccia di rete a cui è connessa l'oggetto NPP.
+description: La struttura STATISTICS fornisce statistiche per l'acquisizione. Alcune di queste statistiche vengono generate da Network Monitor, mentre altre dall'interfaccia di rete a cui è connesso il NPP.
 ms.assetid: 5e30ae30-d8ad-4336-9e4d-fa10ceefc966
-title: Struttura STATISTICs (Netmon. h)
+title: Struttura STATISTICS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a3798f32f7341722432441272eded7d7605cf8a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 273e6ba9e32337cc65b3dce979d2ff407b904595237b60025e42fc58e57d9823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778281"
 ---
-# <a name="statistics-structure"></a>Struttura STATISTICs
+# <a name="statistics-structure"></a>Struttura STATISTICS
 
-La struttura delle **statistiche** fornisce le statistiche per l'acquisizione. Alcune di queste statistiche vengono generate da Network Monitor, mentre altre vengono generate dalla scheda di interfaccia di rete a cui è connessa l'oggetto NPP.
+La **struttura STATISTICS** fornisce statistiche per l'acquisizione. Alcune di queste statistiche vengono generate da Network Monitor, mentre altre dall'interfaccia di rete a cui è connesso il NPP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,28 +68,28 @@ Tempo trascorso, in microsecondi.
 **TotalFramesCaptured**
 </dt> <dd>
 
-Numero totale di frame attualmente archiviati. Questo numero è limitato dalle dimensioni del file di acquisizione o del buffer utilizzato per archiviare i frame.
+Numero totale di frame attualmente archiviati. Questo numero è limitato dalle dimensioni del file o del buffer di acquisizione utilizzato per archiviare i frame.
 
 </dd> <dt>
 
 **TotalBytesCaptured**
 </dt> <dd>
 
-Numero totale di byte attualmente archiviati. Questo numero è limitato dalle dimensioni del file di acquisizione o del buffer utilizzato per archiviare i frame.
+Numero totale di byte attualmente archiviati. Questo numero è limitato dalle dimensioni del file o del buffer di acquisizione utilizzato per archiviare i frame.
 
 </dd> <dt>
 
 **TotalFramesFiltered**
 </dt> <dd>
 
-Numero totale di frame passati tramite il filtro di acquisizione corrente. Se non si utilizza un filtro, questo valore corrisponde a **TotalFramesSeen**.
+Numero totale di frame passati attraverso il filtro di acquisizione corrente. Se non viene usato un filtro, questo valore corrisponde a **TotalFramesSeen.**
 
 </dd> <dt>
 
 **TotalBytesFiltered**
 </dt> <dd>
 
-Numero totale di frame passati tramite il filtro di acquisizione corrente. Se non si utilizza un filtro, questo valore corrisponde a **TotalBytesSeen**.
+Numero totale di frame passati attraverso il filtro di acquisizione corrente. Se non viene usato un filtro, questo valore corrisponde a **TotalBytesSeen.**
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Questo membro è obsoleto.
 **TotalFramesDropped**
 </dt> <dd>
 
-Numero totale di frame eliminati (frame che hanno superato il filtro ma non salvati).
+Numero totale di frame eliminati (frame che hanno superato il filtro ma non sono stati salvati).
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Numero di frame eliminati dal file o dal buffer di acquisizione. Quando il buffe
 **MacFramesReceived**
 </dt> <dd>
 
-Numero di frame ricevuti dalla scheda di interfaccia di rete.
+Numero di frame che la scheda di interfaccia di rete segnala di aver ricevuto.
 
 </dd> <dt>
 
@@ -166,35 +166,35 @@ Numero di errori CRC segnalati dalla scheda di interfaccia di rete.
 **MacBytesReceivedEx**
 </dt> <dd>
 
-Numero di byte ricevuti dalla scheda di interfaccia di rete.
+Numero di byte che la scheda di interfaccia di rete segnala di aver ricevuto.
 
 </dd> <dt>
 
-**MacFramesDropped \_ Nobuffers**
+**MacFramesDropped \_ NoBuffers**
 </dt> <dd>
 
-Numero di frame rilasciati dalla scheda di interfaccia di rete a causa della mancanza di spazio del buffer.
+Numero di frame segnalati dalla scheda di interfaccia di rete eliminati a causa della mancanza di spazio nel buffer.
 
 </dd> <dt>
 
 **MacMulticastsReceived**
 </dt> <dd>
 
-Numero di multicast ricevuti dai report della scheda di interfaccia di rete.
+Numero di multicast ricevuti dalla scheda di interfaccia di rete.
 
 </dd> <dt>
 
 **MacBroadcastsReceived**
 </dt> <dd>
 
-Numero di trasmissioni ricevute dai report NIC.
+Numero di trasmissioni ricevute dai report della scheda di interfaccia di rete.
 
 </dd> <dt>
 
-**\_HwError MacFramesDropped**
+**MacFramesDropped \_ HwError**
 </dt> <dd>
 
-Numero di fotogrammi segnalati dalla scheda di interfaccia di rete come eliminati a causa di errori hardware.
+Numero di frame che la scheda di interfaccia di rete segnala come eliminati a causa di errori hardware.
 
 </dd> </dl>
 
@@ -202,7 +202,7 @@ Numero di fotogrammi segnalati dalla scheda di interfaccia di rete come eliminat
 
 Questa struttura viene utilizzata per recuperare le [*statistiche totali*](t.md)e per sospendere o arrestare l'acquisizione corrente.
 
-Non è possibile recuperare le statistiche totali quando si usa l'interfaccia [IESP](iesp.md) NPP.
+Non è possibile recuperare le statistiche totali quando si usa l'interfaccia NPP [IESP.](iesp.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -212,7 +212,7 @@ Non è possibile recuperare le statistiche totali quando si usa l'interfaccia [I
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -223,10 +223,10 @@ Non è possibile recuperare le statistiche totali quando si usa l'interfaccia [I
 [IDelaydC::GetTotalStatistics](idelaydc-gettotalstatistics.md)
 </dt> <dt>
 
-[IRTC:: GetTotalStatistics](irtc-gettotalstatistics.md)
+[IRTC::GetTotalStatistics](irtc-gettotalstatistics.md)
 </dt> <dt>
 
-[IStats:: GetTotalStatistics](istats-gettotalstatistics.md)
+[IStats::GetTotalStatistics](istats-gettotalstatistics.md)
 </dt> <dt>
 
 [IDelaydC::P ause](idelaydc-pause.md)
@@ -241,16 +241,16 @@ Non è possibile recuperare le statistiche totali quando si usa l'interfaccia [I
 [IStats::P ause](istats-pause.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> <dt>
 
-[IESP:: Stop](iesp-stop.md)
+[IESP::Stop](iesp-stop.md)
 </dt> <dt>
 
-[IRTC:: Stop](irtc-stop.md)
+[IRTC::Stop](irtc-stop.md)
 </dt> <dt>
 
-[IStatsC:: Stop](istats-stop.md)
+[IStatsC::Stop](istats-stop.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetLangFromLangID recupera una stringa leggibile quando viene specificato un ID di lingua primario.
+description: Il metodo GetLangFromLangID recupera una stringa leggibile dall'utente quando viene specificato un ID lingua primario.
 ms.assetid: 73cff3df-bfcd-4e51-bd41-51545ed82f09
 title: Metodo GetLangFromLangID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23afddf746852028c26732eb658e786588f7e9ec
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6041f12c82f0e659928db9f5aa02fd916d3ff9907bf3114eb40c525b8b1d8d2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756751"
 ---
 # <a name="getlangfromlangid-method"></a>Metodo GetLangFromLangID
 
@@ -18,7 +18,7 @@ ms.locfileid: "103876542"
 
  
 
-Il `GetLangFromLangID` metodo recupera una stringa leggibile quando viene specificato un ID di lingua primario.
+Il metodo recupera una stringa leggibile quando viene `GetLangFromLangID` specificato un ID lingua primario.
 
 ``` syntax
 [ sLanguage = ] MSWebDVD.GetLangFromLangID(iPrimaryLangID)
@@ -31,17 +31,17 @@ Il `GetLangFromLangID` metodo recupera una stringa leggibile quando viene specif
 <span id="iPrimaryLangID"></span><span id="iprimarylangid"></span><span id="IPRIMARYLANGID"></span>*iPrimaryLangID*
 </dt> <dd>
 
-Specifica l'ID della lingua primaria come intero.
+Specifica l'ID della lingua primaria come integer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce una rappresentazione di stringa del linguaggio che può essere visualizzato nell'interfaccia utente dell'applicazione.
+Restituisce una rappresentazione di stringa della lingua che può essere visualizzata nell'interfaccia utente dell'applicazione.
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene questo metodo sia denominato `GetLangFromLangID` , il parametro passato è in realtà l'ID della lingua primaria, non l'ID della lingua.
+Anche se questo metodo è denominato , il parametro passato è in realtà `GetLangFromLangID` l'ID della lingua primaria, non l'ID lingua.
 
 ## <a name="see-also"></a>Vedi anche
 

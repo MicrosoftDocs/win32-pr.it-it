@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'utente rilascia un pulsante del mouse mentre il mouse si trova sul controllo InkEdit.
+description: Si verifica quando l'utente rilascia un pulsante del mouse mentre il mouse è sul controllo InkEdit.
 ms.assetid: 3c9e0229-c7e2-4b5c-9532-18fbf8a3667d
-title: Evento InkEdit. MouseUp (inchiostrata. h)
+title: Evento InkEdit.MouseUp (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c331ec5dd0dd6a39ec956eda6980ee02cddd298e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 483333b246e84d2a9ed6f354198ebce5cd147ddb4fd3ccb5e2834d1802a0b744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712661"
 ---
-# <a name="inkeditmouseup-event"></a>Evento InkEdit. MouseUp
+# <a name="inkeditmouseup-event"></a>Evento InkEdit.MouseUp
 
-Si verifica quando l'utente rilascia un pulsante del mouse mentre il mouse si trova sul controllo [InkEdit](inkedit-control-reference.md) .
+Si verifica quando l'utente rilascia un pulsante del mouse mentre il mouse è sul [controllo InkEdit.](inkedit-control-reference.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,16 +36,16 @@ HRESULT MouseUp(
 *Button* 
 </dt> <dd>
 
-Membro dell'enumerazione [**MouseButton**](/windows/desktop/api/inked/ne-inked-mousebutton) che indica quali pulsanti del mouse sono stati rilasciati.
+Membro [**dell'enumerazione MouseButton**](/windows/desktop/api/inked/ne-inked-mousebutton) che indica quali pulsanti del mouse sono stati rilasciati.
 
 
 
 | Valore                                                                                                                                                            | Significato                                           |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <span id="NO_BUTTON_"></span><span id="no_button_"></span><dl> <dt>**No \_ PULSANTE**</dt> </dl>             | Valore predefinito. Non è stato premuto alcun pulsante del mouse. <br/> |
-| <span id="LEFT_BUTTON_"></span><span id="left_button_"></span><dl> <dt>A **sinistra \_ PULSANTE**</dt> </dl>       | È stato premuto il pulsante sinistro del mouse. <br/>    |
-| <span id="RIGHT_BUTTON_"></span><span id="right_button_"></span><dl> <dt>A **destra \_ PULSANTE**</dt> </dl>    | È stato premuto il pulsante destro del mouse. <br/>   |
-| <span id="MIDDLE_BUTTON_"></span><span id="middle_button_"></span><dl> <dt>Al **centro \_ PULSANTE**</dt> </dl> | È stato premuto il pulsante centrale del mouse. <br/>  |
+| <span id="NO_BUTTON_"></span><span id="no_button_"></span><dl> <dt>**NO \_ PULSANTE**</dt> </dl>             | Valore predefinito. Non è stato premuto alcun pulsante del mouse. <br/> |
+| <span id="LEFT_BUTTON_"></span><span id="left_button_"></span><dl> <dt>**SINISTRA \_ PULSANTE**</dt> </dl>       | È stato premuto il pulsante sinistro del mouse. <br/>    |
+| <span id="RIGHT_BUTTON_"></span><span id="right_button_"></span><dl> <dt>**RIGHT \_ PULSANTE**</dt> </dl>    | È stato premuto il pulsante destro del mouse. <br/>   |
+| <span id="MIDDLE_BUTTON_"></span><span id="middle_button_"></span><dl> <dt>**MIDDLE \_ PULSANTE**</dt> </dl> | È stato premuto il pulsante centrale del mouse. <br/>  |
 
 
 
@@ -53,18 +53,18 @@ Membro dell'enumerazione [**MouseButton**](/windows/desktop/api/inked/ne-inked-m
 
 </dd> <dt>
 
-*ShiftKey* 
+*MaiuscKey* 
 </dt> <dd>
 
-Membro dell'enumerazione [**InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica i tasti di modifica che vengono depressi al momento dell'evento.
+Membro [**dell'enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica quali tasti di modifica vengono premuto al momento dell'evento.
 
 
 
 | Valore                                                                                                                                                                                     | Significato                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**IKM \_ Shift**</dt> </dl>             | Specifica che il tasto MAIUSC è stato utilizzato come modificatore. <br/> |
-| <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Controllo** di</dt> </dl> | Specifica che il tasto CTRL è stato utilizzato come modificatore. <br/>  |
-| <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ Alt**</dt> </dl>                 | Specifica che il tasto ALT è stato utilizzato come modificatore. <br/>   |
+| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**Spostamento \_ IKM**</dt> </dl>             | Specifica che il tasto MAIUSC è stato usato come modificatore. <br/> |
+| <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Controllo**</dt> </dl> | Specifica che il tasto CTRL è stato usato come modificatore. <br/>  |
+| <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ ALT**</dt> </dl>                 | Specifica che il tasto ALT è stato usato come modificatore. <br/>   |
 
 
 
@@ -88,15 +88,15 @@ Coordinata y corrente, in pixel, del puntatore del mouse.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'evento ha esito positivo, viene restituito **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo evento ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Se viene premuto un pulsante del mouse mentre il puntatore è posizionato su un controllo [InkEdit](inkedit-control-reference.md) , il controllo acquisisce il mouse e riceve tutti gli eventi del mouse fino a includere l'ultimo evento **MouseUp** . Ciò implica che le coordinate del puntatore del mouse (x, y) restituite da un evento del mouse potrebbero non trovarsi sempre nell'area interna dell'oggetto che li riceve.
+Se viene premuto un pulsante del mouse mentre il puntatore è su un controllo [InkEdit,](inkedit-control-reference.md) il controllo acquisisce il mouse e riceve tutti gli eventi del mouse fino all'ultimo **evento MouseUp** incluso. Ciò implica che le coordinate (x, y) del puntatore del mouse restituite da un evento del mouse potrebbero non essere sempre nell'area interna dell'oggetto che le riceve.
 
-Se i pulsanti del mouse vengono premuti in successione, l'oggetto che acquisisce il mouse dopo la prima pressione riceve tutti gli eventi del mouse fino a quando non vengono rilasciati tutti i pulsanti.
+Se i pulsanti del mouse vengono premuti in successione, l'oggetto che acquisisce il mouse dopo la prima pressione riceve tutti gli eventi del mouse fino al rilascio di tutti i pulsanti.
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'interfaccia **\_ IInkEditEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IeeMouseUp.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_ L'interfaccia IInkEditEvents** implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IeeMouseUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,9 +104,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Inchiostrato. h (richiede anche il \_ . c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Inked.h (richiede anche \_ l'input penna i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -115,7 +115,7 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'i
 
 <dl> <dt>
 
-[InkEdit](inkedit-control-reference.md)
+[Inkedit](inkedit-control-reference.md)
 </dt> <dt>
 
 [**Enumerazione InkMouseButton**](/windows/desktop/api/msinkaut/ne-msinkaut-inkmousebutton)
@@ -124,10 +124,10 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'i
 [**Enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
 </dt> <dt>
 
-[**\[Controllo InkEdit evento MouseDown\]**](inkedit-mousedown.md)
+[**Controllo \[ InkEdit dell'evento MouseDown\]**](inkedit-mousedown.md)
 </dt> <dt>
 
-[**\[Controllo InkEdit evento MouseMove\]**](inkedit-mousemove.md)
+[**Controllo \[ InkEdit dell'evento MouseMove\]**](inkedit-mousemove.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere il codice XML più leggibile.
 ms.assetid: 955f4785-5657-4a89-9728-bce99a0a4234
-title: Elemento preferredPrefix
+title: elemento preferredPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98fa0310872a43811ceb626ae0684fa45a2f6666
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 934e82caf0558ff3ffc1079d3773453673bcbe916a518f6196670f37744fdf8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756871"
 ---
-# <a name="preferredprefix-element"></a>Elemento preferredPrefix
+# <a name="preferredprefix-element"></a>elemento preferredPrefix
 
 Definisce il prefisso a cui deve essere eseguito il mapping dello spazio dei nomi per rendere il codice XML più leggibile.
 
@@ -35,13 +35,13 @@ Non ci sono elementi figlio.
 
 | Elemento                                   | Descrizione                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione del codice.<br/> <br/> |
+| [**Namespace**](namespace.md)<br/> | Spazio dei nomi da utilizzare per la generazione di codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento esegue l'override del prefisso URI predefinito usato per il codice generato. Ad esempio, uno spazio dei nomi correlato ai supporti potrebbe avere il prefisso preferito "av" (per audio/oggetto visivo).
+Questo elemento esegue l'override del prefisso URI predefinito usato per il codice generato. Ad esempio, uno spazio dei nomi correlato ai file multimediali potrebbe avere il prefisso preferito "av" (per audio/oggetto visivo).
 
 Per impostazione predefinita, il codice generato crea un prefisso preferito dall'URI.
 
@@ -49,7 +49,7 @@ Per impostazione predefinita, il codice generato crea un prefisso preferito dall
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

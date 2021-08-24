@@ -31,7 +31,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119694711"
 ---
-# <a name="cim_networkport-class"></a>Classe CIM \_ NetworkPort
+# <a name="cim_networkport-class"></a>Classe \_ CiM NetworkPort
 
 Rappresentazione logica di una porta di rete in un dispositivo di rete.
 
@@ -57,13 +57,13 @@ class CIM_NetworkPort : CIM_LogicalPort
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ NetworkPort** ha questi tipi di membri:
+La **classe \_ CiM NetworkPort** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe CIM \_ NetworkPort** ha queste proprietà.
+La **classe \_ CiM NetworkPort** ha queste proprietà.
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), **PUnit** ("byte")
 </dt> </dl>
 
-L'unità di trasmissione massima attiva o negoziata (MTU) supportata dalla porta.
+L'unità massima di trasmissione attiva o negoziata (MTU) supportata dalla porta.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se la porta può determinare automaticamente la velocità o altre caratteristiche di comunicazione del supporto di rete collegato; in caso contrario, **false**.
+**true** se la porta può determinare automaticamente la velocità o altre caratteristiche di comunicazione del supporto di rete collegato; in caso contrario, **false.**
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se la porta funziona in modalità full duplex; in caso contrario, **false**.
+**true** se la porta funziona in modalità full duplex; in caso contrario, **false.**
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ NetworkPort**.**OtherLinkTechnology**")
 </dt> </dl>
 
-Tecnologia di collegamento usata dalla porta. Se impostata su "1" (altro), la **proprietà OtherLinkTechnology** contiene una descrizione del tipo di collegamento.
+Tecnologia di collegamento utilizzata dalla porta. Se impostata su "1" (altro), la **proprietà OtherLinkTechnology** contiene una descrizione del tipo di collegamento.
 
 <dt>
 
@@ -169,14 +169,14 @@ Tecnologia di collegamento usata dalla porta. Se impostata su "1" (altro), la **
 
 <span id="ATM"></span><span id="atm"></span>
 
-**ATM** (6)
+**Bancomat** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Token_Ring"></span><span id="token_ring"></span><span id="TOKEN_RING"></span>
 
-**Token Ring** (7)
+**Token ring** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -190,7 +190,7 @@ Tecnologia di collegamento usata dalla porta. Se impostata su "1" (altro), la **
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**A infrarossi** (9)
+**A lor** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -211,7 +211,7 @@ Tecnologia di collegamento usata dalla porta. Se impostata su "1" (altro), la **
 
 </dd> <dt>
 
-**NetworkAddresses**
+**Indirizzi di rete**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **matrice di** stringhe
@@ -220,17 +220,17 @@ Tipo di dati: **matrice di** stringhe
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Network Adapter 802 Port \| 001.3")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Network Adapter 802 Port \| 001.3")
 </dt> </dl>
 
-Matrice contenente gli indirizzi di rete per la porta.
+Matrice che contiene gli indirizzi di rete per la porta.
 
 </dd> <dt>
 
 **OtherLinkTechnology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -246,13 +246,13 @@ Tecnologia di collegamento quando **LinkTechnology** è impostato su "1", (altro
 **OtherNetworkPortType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**CIM \_ NetworkPort**.**OtherPortType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalPort**](cim-logicalport.md).**PortType ")**
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**CIM \_ NetworkPort**.**OtherPortType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ LogicalPort**](cim-logicalport.md).**PortType**")
 </dt> </dl>
 
 > [!Note]  
@@ -260,20 +260,20 @@ Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) 
 
  
 
-Questa proprietà è deprecata. È invece consigliabile usare la **proprietà PortType** nella [**classe \_ CIM LogicalPort.**](cim-logicalport.md)
+Questa proprietà è deprecata. È invece consigliabile usare **la proprietà PortType** nella [**classe \_ CiM LogicalPort.**](cim-logicalport.md)
 
 </dd> <dt>
 
 **PermanentAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Network Adapter 802 Port \| 001.2")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Network Adapter 802 Port \| 001.2")
 </dt> </dl>
 
 Indirizzo di rete hardcoded in una porta. L'indirizzo hardcoded può essere modificato usando un aggiornamento del firmware o una configurazione software. Quando viene apportata questa modifica, questa proprietà deve essere aggiornata contemporaneamente. **PermanentAddress** deve essere lasciato vuoto se l'indirizzo non esiste.
@@ -289,7 +289,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di porta della porta di rete. Le porte di rete sono spesso numerate rispetto a un modulo logico o a un elemento di rete.
+Numero di porta della porta di rete. Le porte di rete sono spesso numerate in relazione a un modulo logico o a un elemento di rete.
 
 </dd> <dt>
 
@@ -305,7 +305,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Speed"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits per Second"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| MIB-II.ifSpeed", "MIF. DmTF \| Network Adapter 802 Port \| 001.5"), **PUnit** ("bit/second")
 </dt> </dl>
 
-Larghezza di banda corrente della porta in bit al secondo. Per le porte che variano in larghezza di banda o per quelle in cui non è possibile eseguire stime accurate, questa proprietà deve contenere la larghezza di banda nominale.
+Larghezza di banda corrente della porta in bit al secondo. Per le porte che variano in larghezza di banda o per quelle in cui non è possibile eseguire una stima accurata, questa proprietà deve contenere la larghezza di banda nominale.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), **PUnit** ("byte")
 </dt> </dl>
 
-Unità di trasmissione massima (MTU) supportata dalla porta.
+Unità massima di trasmissione (MTU) supportata dalla porta.
 
 </dd> </dl>
 

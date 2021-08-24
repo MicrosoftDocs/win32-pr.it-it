@@ -1,40 +1,40 @@
 ---
-description: Quando si descrive il debug, vengono utilizzati i termini seguenti.
+description: Quando si descrive il debug, vengono usati i termini seguenti.
 ms.assetid: 580f2787-d944-4350-a2c2-c00816b3f515
-title: Terminologia di debug
+title: Terminologia relativa al debug
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa12e24a6c763f9cda983ad961ba85a41c63cec
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: feb8de5035887f3d3c19cca1e8475ff17cb930b1142c712481e096e0e612ea81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692071"
 ---
-# <a name="debugging-terminology"></a>Terminologia di debug
+# <a name="debugging-terminology"></a>Terminologia relativa al debug
 
-Quando si descrive il debug, vengono utilizzati i termini seguenti.
+Quando si descrive il debug, vengono usati i termini seguenti.
 
 <dl> <dt>
 
 <span id="Blue_screen"></span><span id="blue_screen"></span><span id="BLUE_SCREEN"></span>Schermata blu
 </dt> <dd>
 
-Quando il sistema rileva un problema hardware, un'incoerenza dei dati o un errore simile, può visualizzare una schermata blu contenente informazioni che possono essere utilizzate per determinare la causa dell'errore. Queste informazioni includono il codice di arresto e se è stato creato un file di dump di arresto anomalo del sistema. Può inoltre includere un elenco di driver caricati e una traccia dello stack.
+Quando il sistema rileva un problema hardware, un'incoerenza dei dati o un errore simile, può essere visualizzata una schermata blu contenente informazioni che possono essere usate per determinare la causa dell'errore. Queste informazioni includono il codice STOP e indica se è stato creato un file di dump di arresto anomalo del sistema. Può anche includere un elenco di driver caricati e un'analisi dello stack.
 
 </dd> <dt>
 
-<span id="Crash_dump_file"></span><span id="crash_dump_file"></span><span id="CRASH_DUMP_FILE"></span>File di dump di arresto anomalo
+<span id="Crash_dump_file"></span><span id="crash_dump_file"></span><span id="CRASH_DUMP_FILE"></span>File di dump di arresto anomalo del sistema
 </dt> <dd>
 
-È possibile configurare il sistema per la scrittura di informazioni in un file di dump di arresto anomalo sul disco rigido ogni volta che viene generato un codice di arresto. Il file contiene informazioni che il debugger può utilizzare per analizzare l'errore. Questo file può essere molto grande della memoria fisica contenuta nel computer.
+È possibile configurare il sistema per scrivere informazioni in un file di dump di arresto anomalo del sistema sul disco rigido ogni volta che viene generato un codice STOP. Il file contiene informazioni che il debugger può usare per analizzare l'errore. Questo file può essere grande quanto la memoria fisica contenuta nel computer.
 
 </dd> <dt>
 
 <span id="Debugger"></span><span id="debugger"></span><span id="DEBUGGER"></span>Debugger
 </dt> <dd>
 
-Programma progettato per consentire di rilevare, individuare e correggere gli errori in un altro programma. Consente allo sviluppatore di scorrere l'esecuzione del processo e dei relativi thread, monitorando la memoria, le variabili e altri elementi del contesto del processo e del thread.
+Programma progettato per rilevare, individuare e correggere gli errori in un altro programma. Consente allo sviluppatore di eseguire il processo e i relativi thread, monitorando la memoria, le variabili e altri elementi del contesto del processo e del thread.
 
 </dd> <dt>
 
@@ -48,11 +48,11 @@ Modalità del processore in cui vengono eseguiti i servizi di sistema e i driver
 <span id="Minidump_file"></span><span id="minidump_file"></span><span id="MINIDUMP_FILE"></span>File minidump
 </dt> <dd>
 
-Le applicazioni possono produrre file minidump in modalità utente che contengono un subset utile delle informazioni contenute in un file di dump di arresto anomalo del sistema. Per altre informazioni, vedere [file di minidump](minidump-files.md).
+Le applicazioni possono produrre file di minidump in modalità utente, che contengono un utile subset delle informazioni contenute in un file di dump di arresto anomalo del sistema. Per altre informazioni, vedere [Minidump Files](minidump-files.md).
 
 </dd> <dt>
 
-<span id="STOP_code"></span><span id="stop_code"></span><span id="STOP_CODE"></span>INTERROMPi codice
+<span id="STOP_code"></span><span id="stop_code"></span><span id="STOP_CODE"></span>Codice STOP
 </dt> <dd>
 
 Codice di errore che identifica l'errore che ha impedito al kernel di sistema di continuare l'esecuzione.
@@ -62,7 +62,7 @@ Codice di errore che identifica l'errore che ha impedito al kernel di sistema di
 <span id="Symbol_files"></span><span id="symbol_files"></span><span id="SYMBOL_FILES"></span>File di simboli
 </dt> <dd>
 
-Tutte le applicazioni di sistema, i driver e le dll sono compilati in modo tale che le informazioni di debug si trovino in file distinti noti come file di simboli. Pertanto, il sistema è più piccolo e più veloce, ma è comunque possibile eseguirne il debug se i file di simboli sono installati. Per ulteriori informazioni, vedere [file di simboli](symbol-files.md).
+Tutte le applicazioni di sistema, i driver e le DLL vengono compilati in modo che le informazioni di debug risiedano in file separati noti come file di simboli. Di conseguenza, il sistema è più piccolo e più veloce, ma è comunque possibile eseguirne il debug se i file di simboli sono installati. Per altre informazioni, vedere [File di simboli.](symbol-files.md)
 
 </dd> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_NCMOUSELEAVE (winuser. h)
-description: Inserito in una finestra quando il cursore esce dall'area non client della finestra specificata in una chiamata precedente a TrackMouseEvent.
+title: WM_NCMOUSELEAVE messaggio (Winuser.h)
+description: Inviato a una finestra quando il cursore esce dall'area non client della finestra specificata in una chiamata precedente a TrackMouseEvent.
 ms.assetid: b3ada6db-93ce-45d7-b408-d08692328aeb
 keywords:
-- Input della tastiera e del mouse WM_NCMOUSELEAVE messaggio
+- WM_NCMOUSELEAVE messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf7f9d0931c2623d2e92010abfca96f391107b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 141c4f1f2483e1cbd725a70454b1df1be12c46ec1970c052938181fb511ed248
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778451"
 ---
-# <a name="wm_ncmouseleave-message"></a>\_Messaggio NCMOUSELEAVE WM
+# <a name="wm_ncmouseleave-message"></a>Messaggio \_ WM NCMOUSELEAVE
 
-Inserito in una finestra quando il cursore esce dall'area non client della finestra specificata in una chiamata precedente a [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent).
+Inviato a una finestra quando il cursore esce dall'area non client della finestra specificata in una chiamata precedente a [**TrackMouseEvent.**](/windows/win32/api/winuser/nf-winuser-trackmouseevent)
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,24 +41,24 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato e deve essere zero.
+Questo parametro non viene usato e deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i tracciati richiesti da [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) vengono annullati quando viene generato questo messaggio. L'applicazione deve chiamare **TrackMouseEvent** quando il mouse riimmette la finestra se è necessario un ulteriore rilevamento del comportamento del passaggio del mouse.
+Tutto il rilevamento richiesto [**da TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) viene annullato quando viene generato questo messaggio. L'applicazione deve chiamare **TrackMouseEvent** quando il mouse consente di reimerire la finestra se richiede un ulteriore rilevamento del comportamento del passaggio del mouse.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Tutti i tracciati richiesti da [**TrackMouseEvent**](/windows/win32/api/winuser/
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -85,16 +85,16 @@ Tutti i tracciati richiesti da [**TrackMouseEvent**](/windows/win32/api/winuser/
 [**TRACKMOUSEEVENT**](/windows/win32/api/winuser/ns-winuser-trackmouseevent)
 </dt> <dt>
 
-[**\_SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
-[**MOUSELEAVE di WM \_**](wm-mouseleave.md)
+[**WM \_ MOUSELEAVE**](wm-mouseleave.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Input del mouse](mouse-input.md)
+[Mouse Input](mouse-input.md)
 </dt> </dl>
 
  

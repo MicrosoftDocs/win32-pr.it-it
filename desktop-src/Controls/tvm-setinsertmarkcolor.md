@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SETINSERTMARKCOLOR (COMmctrl. h)
-description: Imposta il colore utilizzato per creare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetInsertMarkColor di TreeView.
+title: TVM_SETINSERTMARKCOLOR messaggio (Commctrl.h)
+description: Imposta il colore utilizzato per disegnare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro TreeView SetInsertMarkColor.
 ms.assetid: c82304a8-3726-42c0-81e7-90d8f8205ead
 keywords:
-- Controlli di Windows Message TVM_SETINSERTMARKCOLOR
+- TVM_SETINSERTMARKCOLOR controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92668b1137b089f9a09cc9a34d63d472742bce4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05d5fd9984b77c99a13e1c7eab24c231e0ce7f601ecb79f8747cdf7ea3011327
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636761"
 ---
-# <a name="tvm_setinsertmarkcolor-message"></a>\_Messaggio SETINSERTMARKCOLOR TVM
+# <a name="tvm_setinsertmarkcolor-message"></a>Messaggio \_ TVM SETINSERTMARKCOLOR
 
-Imposta il colore utilizzato per creare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetInsertMarkColor di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor) .
+Imposta il colore utilizzato per disegnare il segno di inserimento per la visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TreeView SetInsertMarkColor.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setinsertmarkcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta il colore utilizzato per creare il segno di inserimento per la visualizz
 *lParam* 
 </dt> <dd>
 
-Valore di [**COLORREF**](/windows/desktop/gdi/colorref) che contiene il nuovo colore del segno di inserimento.
+[**Valore COLORREF**](/windows/desktop/gdi/colorref) che contiene il nuovo colore del segno di inserimento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **COLORREF** che contiene il colore del segno di inserimento precedente.
+Restituisce un **valore COLORREF** che contiene il colore del segno di inserimento precedente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore **COLORREF** che contiene il colore del segno di inserimen
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Restituisce un valore **COLORREF** che contiene il colore del segno di inserimen
 
 <dl> <dt>
 
-[**\_GETINSERTMARKCOLOR TVM**](tvm-getinsertmarkcolor.md)
+[**TVM \_ GETINSERTMARKCOLOR**](tvm-getinsertmarkcolor.md)
 </dt> </dl>
 
  

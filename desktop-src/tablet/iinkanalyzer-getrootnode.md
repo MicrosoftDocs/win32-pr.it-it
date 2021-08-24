@@ -1,7 +1,7 @@
 ---
-description: Ottiene il IContextNode radice dell'albero del contesto dell'oggetto IInkAnalyzer.
+description: Ottiene l'oggetto IContextNode radice dell'albero del contesto dell'oggetto IInkAnalyzer.
 ms.assetid: 6c073952-7962-4f38-89ae-f543e64e904f
-title: 'Metodo IInkAnalyzer:: GetRootNode (IACom. h)'
+title: Metodo IInkAnalyzer::GetRootNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 280c1907558372d247f25a0f760990d7c3c53a07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff2181eacd3df1d2815448a0c2d7cafce4d521fa0abbc7b26492d9c078982dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713421"
 ---
-# <a name="iinkanalyzergetrootnode-method"></a>Metodo IInkAnalyzer:: GetRootNode
+# <a name="iinkanalyzergetrootnode-method"></a>Metodo IInkAnalyzer::GetRootNode
 
-Ottiene il [**IContextNode**](icontextnode.md) radice dell'albero del contesto dell'oggetto [**IInkAnalyzer**](iinkanalyzer.md) .
+Ottiene [**l'oggetto IContextNode radice**](icontextnode.md) dell'albero del contesto dell'oggetto [**IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,32 +39,32 @@ HRESULT GetRootNode(
 
 <dl> <dt>
 
-*ppRootNode* \[ out\]
+*ppRootNode* \[ Cambio\]
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) radice dell'albero del contesto dell'oggetto [**IInkAnalyzer**](iinkanalyzer.md) .
+Oggetto [**IContextNode radice**](icontextnode.md) dell'albero del contesto dell'oggetto [**IInkAnalyzer.**](iinkanalyzer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppRootNode* quando non è più necessario usare il nodo radice.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su *ppRootNode* quando non è più necessario usare il nodo radice.
 
  
 
-[**IInkAnalyzer**](iinkanalyzer.md) gestisce un albero di oggetti [**IContextNode**](icontextnode.md) . Questi oggetti contengono sia l'input per l'analisi che i risultati dell'analisi. Quando i tratti vengono inizialmente aggiunti a **IInkAnalyzer**, **IInkAnalyzer** li assegna a un **IContextNode** di tipo UnclassifiedInk (vedere i tipi di [nodo](context-node-types.md) [**IContextNode:: GetType**](icontextnode-gettype.md) e context). Una volta analizzati i tratti, **IInkAnalyzer** li assegna agli oggetti **IContextNode** appropriati nell'albero. Per altre informazioni sull'uso di **IInkAnalyzer** per analizzare l'input penna, vedere [Cenni preliminari sull'analisi dell'input penna](ink-analysis-overview.md).
+[**IInkAnalyzer**](iinkanalyzer.md) gestisce un albero di [**oggetti IContextNode.**](icontextnode.md) Questi oggetti contengono sia input per l'analisi che i risultati dell'analisi. Quando i tratti vengono aggiunti inizialmente a **IInkAnalyzer,** **IInkAnalyzer** li assegna a **un IContextNode** di tipo UnclassifiedInk (vedere [**IContextNode::GetType**](icontextnode-gettype.md) e Tipi di nodo [di contesto).](context-node-types.md) Dopo l'analisi dei tratti, **IInkAnalyzer** li assegna agli oggetti **IContextNode** appropriati nell'albero. Per altre informazioni sull'uso di **IInkAnalyzer** per analizzare l'input penna, vedere [Panoramica dell'analisi dell'input penna](ink-analysis-overview.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che esamina l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore di input penna. Se il IInkAnlyzer non sta attualmente eseguendo l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
+L'esempio seguente illustra un metodo che illustra l'albero dei risultati [**IContextNode**](icontextnode.md) dell'analizzatore input penna. Se IInkAnlyzer attualmente non esegue l'analisi dell'input penna, il metodo esegue le operazioni seguenti.
 
--   Ottiene la stringa di riconoscimento superiore.
--   Ottiene il nodo radice dell'analizzatore di input penna.
+-   Ottiene la prima stringa di riconoscimento.
+-   Ottiene il nodo radice dell'analizzatore input penna.
 -   Chiama un metodo helper, `ExploreContextNode` , per esaminare il nodo radice e i relativi nodi figlio.
 
 
@@ -127,9 +127,9 @@ HRESULT CMyClass::ExploreAnalysisResults(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -147,7 +147,7 @@ HRESULT CMyClass::ExploreAnalysisResults(
 [Tipi di nodo di contesto](context-node-types.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

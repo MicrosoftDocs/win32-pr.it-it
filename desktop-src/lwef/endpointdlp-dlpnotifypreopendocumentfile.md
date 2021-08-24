@@ -1,5 +1,5 @@
 ---
-description: Fornisce al sistema informazioni su un file di documento prima che venga avviata un'operazione di apertura.
+description: Fornisce al sistema informazioni su un file di documento prima dell'avvio di un'operazione di apertura.
 title: Funzione DlpNotifyPreOpenDocumentFile (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 12caf5230d8affce195a63da155ed6b6ca409b72
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: f2be797d0f4045f17e753031247797406f332afa2fcc47b3ca83973527d99216
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778231"
 ---
 # <a name="dlpnotifypreopendocumentfile-function"></a>Funzione DlpNotifyPreOpenDocumentFile
 
-Fornisce al sistema informazioni su un file di documento prima che venga avviata un'operazione di apertura.
+Fornisce al sistema informazioni su un file di documento prima dell'avvio di un'operazione di apertura.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ void WINAPI DlpNotifyPreOpenDocumentFile(_In_ const PDLP_DOCUMENT_INFO DocumentI
 *DocumentInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) struttura contenente informazioni sul documento da aprire.
+Puntatore a una [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) contenente informazioni sul documento da aprire.
 
 </dd> </dl>
 

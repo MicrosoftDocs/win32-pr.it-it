@@ -1,11 +1,11 @@
 ---
-title: Oggetto ConnectionOptions (WSManDisp. h)
+title: Oggetto ConnectionOptions (WSManDisp.h)
 description: L'oggetto ConnectionOptions viene passato al metodo CreateSession per fornire il nome utente e la password associati all'account locale nel computer remoto.
 ms.assetid: 7a87a5f7-78ed-452c-9b9f-ad48811a3339
 ms.tgt_platform: multiple
 keywords:
-- Gestione remota Windows oggetto ConnectionOptions
-- Oggetto ConnectionOptions Gestione remota Windows, descritto
+- Oggetto ConnectionOptions Windows gestione remota
+- Oggetto ConnectionOptions Windows Gestione remota , descritto
 topic_type:
 - apiref
 api_name:
@@ -16,26 +16,26 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 164eb886ce98266cab3109e773b731e002d1abac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8665dc3a5be91fddb4332be3512ec9eec5c483495a21b95b641ec26e4e9e111
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734091"
 ---
 # <a name="connectionoptions-object"></a>Oggetto ConnectionOptions
 
-L'oggetto **ConnectionOptions** viene passato al metodo [**CreateSession**](wsman-createsession.md) per fornire il nome utente e la password associati all'account locale nel computer remoto. Se non viene fornito alcun parametro, le credenziali dell'account che esegue lo script vengono impostate sui valori predefiniti.
+**L'oggetto ConnectionOptions** viene passato al [**metodo CreateSession**](wsman-createsession.md) per fornire il nome utente e la password associati all'account locale nel computer remoto. Se non viene specificato alcun parametro, le credenziali dell'account che esegue lo script vengono impostate sui valori predefiniti.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **ConnectionOptions** dispone di questi tipi di membri:
+**L'oggetto ConnectionOptions** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **ConnectionOptions** dispone di queste proprietà.
+**L'oggetto ConnectionOptions** ha queste proprietà.
 
 
 
@@ -50,15 +50,15 @@ L'oggetto **ConnectionOptions** dispone di queste proprietà.
 
 ## <a name="remarks"></a>Commenti
 
-L'oggetto **ConnectionOptions** corrisponde all'interfaccia [**IWSManConnectionOptions**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanconnectionoptions) .
+**L'oggetto ConnectionOptions** corrisponde all'interfaccia [**IWSManConnectionOptions.**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanconnectionoptions)
 
-Se un'applicazione client Gestione remota Windows viene eseguita con la rappresentazione, si verifica un errore se si imposta la proprietà [**password**](connectionoptions-password.md) . Un'applicazione client è uno script o un altro programma che invia una richiesta a WinRM nel computer locale o remoto. È possibile che l'applicazione client sia in esecuzione con la rappresentazione perché è stata chiamata funzione come [**ImpersonateClient**](/previous-versions/windows/desktop/legacy/aa375494(v=vs.85)). Una pagina Active Server (ASP) o un servizio non può richiedere un nome utente e una password se il processo ASP viene eseguito con un account che rappresenta un client.
+Se un Windows'applicazione client di gestione remota è in esecuzione sotto rappresentazione, si verifica un errore se si imposta la [**proprietà Password.**](connectionoptions-password.md) Un'applicazione client è uno script o un altro programma che invia una richiesta a Gestione remota Windows nel computer locale o remoto. L'applicazione client potrebbe essere in esecuzione sotto la rappresentazione perché ha chiamato una funzione come [**ImpersonateClient.**](/previous-versions/windows/desktop/legacy/aa375494(v=vs.85)) Un Active Server asp (ASP) o un servizio non può richiedere un nome utente e una password se il processo ASP viene eseguito con un account che rappresenta un client.
 
-Il flag **WSManFlagCredUserNamePassword** deve essere impostato sulla chiamata [**WSMan. CreateSession**](wsman-createsession.md) quando si usano il [**nome utente**](connectionoptions-username.md) e la [**password**](connectionoptions-password.md) per l'autenticazione.
+Il flag **WSManFlagCredUserNamePassword** deve essere impostato nella chiamata [**WSman.CreateSession**](wsman-createsession.md) quando si usano [**UserName**](connectionoptions-username.md) e [**Password**](connectionoptions-password.md) per l'autenticazione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene illustrato come creare un oggetto **ConnectionOptions** , impostare le proprietà per l'account nel computer remoto e utilizzarlo per creare un oggetto [**sessione**](session.md) .
+Nell'esempio di codice VBScript seguente viene illustrato come creare un oggetto **ConnectionOptions,** impostare le proprietà per l'account nel computer remoto e usarlo nella creazione di un [**oggetto Session.**](session.md)
 
 
 ```VB
@@ -84,9 +84,9 @@ strResource = objSession.Get("winrm/config")
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -95,19 +95,19 @@ strResource = objSession.Get("winrm/config")
 
 <dl> <dt>
 
-[Autenticazione per le connessioni remote](authentication-for-remote-connections.md)
+[Autenticazione per connessioni remote](authentication-for-remote-connections.md)
 </dt> <dt>
 
-[API di scripting WinRM](winrm-scripting-api.md)
+[WinRM Scripting API](winrm-scripting-api.md)
 </dt> <dt>
 
-[Informazioni su Gestione remota Windows](about-windows-remote-management.md)
+[Informazioni Windows gestione remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Utilizzo di Gestione remota Windows](using-windows-remote-management.md)
+[Uso Windows gestione remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Creazione di script in Gestione remota Windows](scripting-in-windows-remote-management.md)
+[Creazione di script Windows gestione remota](scripting-in-windows-remote-management.md)
 </dt> <dt>
 
 [Recupero di dati dal computer locale](obtaining-data-from-the-local-computer.md)

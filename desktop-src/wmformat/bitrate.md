@@ -1,9 +1,9 @@
 ---
 title: Bitrate
-description: L'attributo bitrate è un attributo a livello di file contenente la velocità in bit del file in bit al secondo.
+description: L'attributo Bitrate è un attributo a livello di file contenente la velocità in bit del file in bit al secondo.
 ms.assetid: 35da0735-db39-4463-8dad-451a77a171b6
 keywords:
-- Formato Windows Media bitrate
+- Formato multimediale Windows a velocità in bit
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5a4711c6fa694735a298f5a884e21120eedd5c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: dcc2f5b3db2f2b0b331a5cae071f40e64d47464401a9093d79eaf228ca29a241
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709331"
 ---
 # <a name="bitrate"></a>Bitrate
 
-L'attributo **bitrate** è un attributo a livello di file contenente la velocità in bit del file in bit al secondo.
+**L'attributo Bitrate** è un attributo a livello di file contenente la velocità in bit del file in bit al secondo.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,13 +29,13 @@ g \_ wszWMBitrate
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WMT \_ tipo \_ DWORD**
+**DWORD \_ DI \_ TIPO WMT**
 
 ## <a name="remarks"></a>Commenti
 
 Si tratta di un attributo codificato.
 
-Questo attributo non può essere duplicato a livello di file. Se questo attributo viene utilizzato per un singolo flusso, verrà considerato come metadati personalizzati e non verrà trasmesso il significato normale agli oggetti di Windows Media Format SDK.
+Questo attributo non può essere duplicato a livello di file. Se questo attributo viene usato per un singolo flusso, verrà considerato come metadati personalizzati e non trasmetterà il significato normale agli oggetti di Windows Media Format SDK.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -44,9 +44,9 @@ Questo attributo non può essere duplicato a livello di file. Se questo attribut
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Valori degli errori di registrazione MDM (MDMRegistration.h)
-description: I valori di errore seguenti si verificano con la registrazione MDM.
+title: Valori di errore di registrazione MDM (MDMRegistration.h)
+description: I valori di errore seguenti sono relativi alla registrazione MDM.
 ms.assetid: 1f42ed5e-e221-47ec-a019-ed06c05d55d0
 topic_type:
 - apiref
@@ -68,20 +68,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb62977a48400866e9fa8829696c884e58e54325
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 2ff5c73941b0235788772522f5551f73faea30d06e91e582dcdbe97433ca85c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638461"
 ---
 # <a name="mdm-registration-error-values"></a>Valori di errore di registrazione MDM
 
-I valori di errore seguenti si verificano con la registrazione MDM.
+I valori di errore seguenti sono relativi alla registrazione MDM.
 
 <dl> <dt>
 
-<span id="E_DATATYPE_MISMATCH"></span><span id="e_datatype_mismatch"></span>**E \_ DATATYPE \_ MISMATCH**
+<span id="E_DATATYPE_MISMATCH"></span><span id="e_datatype_mismatch"></span>**E \_ DATATYPE \_ NON CORRISPONDENTE**
 </dt> <dd> <dl> <dt>
 
 0x8007065d
@@ -102,7 +102,7 @@ Il tipo di dati non corrisponde al tipo di dati previsto.
 
 
 
-Schema non valido, errore di formato del messaggio dal server.
+Schema non valido, Errore di formato messaggio dal server.
 
 
 </dt> </dl> </dd> <dt>
@@ -115,14 +115,14 @@ Schema non valido, errore di formato del messaggio dal server.
 
 
 
-Schema non valido, errore di formato del messaggio dal server.
+Schema non valido, Errore di formato messaggio dal server.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="mregister_e_device_authentication_error"></span>**ERRORE DI \_ AUTENTICAZIONE DEL DISPOSITIVO MREGISTER \_ \_ \_ E**
+<span id="MREGISTER_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="mregister_e_device_authentication_error"></span>**MREGISTER \_ E \_ DEVICE \_ AUTHENTICATION \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x80190002
@@ -135,7 +135,7 @@ Il server non è riuscito ad autenticare l'utente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="menroll_e_device_authentication_error"></span>**ERRORE DI AUTENTICAZIONE DI MENROLL \_ E \_ \_ \_ DEVICE**
+<span id="MENROLL_E_DEVICE_AUTHENTICATION_ERROR"></span><span id="menroll_e_device_authentication_error"></span>**ERRORE DI \_ AUTENTICAZIONE DEL DISPOSITIVO MENROLL E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80180002
@@ -150,7 +150,7 @@ Il server non è riuscito ad autenticare l'utente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="mregister_e_device_authorization_error"></span>**MREGISTER \_ E \_ DEVICE \_ AUTHORIZATION \_ ERROR**
+<span id="MREGISTER_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="mregister_e_device_authorization_error"></span>**ERRORE DI \_ AUTORIZZAZIONE DEL \_ DISPOSITIVO \_ \_ MREGISTER E**
 </dt> <dd> <dl> <dt>
 
 0x80190003
@@ -234,7 +234,7 @@ Si è verificato un errore nel server di gestione, ad esempio un errore di acces
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="mregister_e_device_internalservice_error"></span>**ERRORE INTERNO DEL DISPOSITIVO MREGISTER \_ \_ \_ \_ E**
+<span id="MREGISTER_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="mregister_e_device_internalservice_error"></span>**MREGISTER \_ E \_ DEVICE \_ INTERNALSERVICE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x80190006
@@ -247,7 +247,7 @@ Si è verificata un'eccezione non gestita nel server.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**ERRORE INTERNO DEL DISPOSITIVO MENROLL \_ \_ \_ \_ E**
+<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**ERRORE INTERNO DEL DISPOSITIVO MENROLL \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80180006
@@ -275,7 +275,7 @@ Si è verificata un'eccezione non gestita nel server.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**MENROLL \_ E \_ DEVICE \_ INVALIDSECURITY \_ ERROR**
+<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**MENROLL \_ E ERRORE DI \_ \_ INVALIDSECURITY DEL \_ DISPOSITIVO**
 </dt> <dd> <dl> <dt>
 
 0x80180007
@@ -290,7 +290,7 @@ Si è verificata un'eccezione non gestita nel server.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_UNKNOWN_ERROR"></span><span id="mregister_e_device_unknown_error"></span>**ERRORE MREGISTER \_ E \_ DISPOSITIVO \_ \_ SCONOSCIUTO**
+<span id="MREGISTER_E_DEVICE_UNKNOWN_ERROR"></span><span id="mregister_e_device_unknown_error"></span>**MREGISTER \_ E \_ DEVICE \_ UNKNOWN \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x80190008
@@ -303,7 +303,7 @@ Errore del server sconosciuto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_UNKNOWN_ERROR"></span><span id="menroll_e_device_unknown_error"></span>**ERRORE SCONOSCIUTO DEL DISPOSITIVO MENROLL \_ \_ \_ \_ E**
+<span id="MENROLL_E_DEVICE_UNKNOWN_ERROR"></span><span id="menroll_e_device_unknown_error"></span>**ERRORE SCONOSCIUTO DEL DISPOSITIVO MENROLL \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80180008
@@ -444,14 +444,14 @@ Non più utilizzata.
 
 
 
-Durante l'individuazione la data del certificato al secondo non è valida.
+Durante l'individuazione la data del certificato sec non è valida.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DISCOVERY_FAILED"></span><span id="mregister_e_discovery_failed"></span>**MREGISTER \_ E \_ DISCOVERY \_ FAILED**
+<span id="MREGISTER_E_DISCOVERY_FAILED"></span><span id="mregister_e_discovery_failed"></span>**INDIVIDUAZIONE MREGISTER \_ E \_ NON \_ RIUSCITA**
 </dt> <dd> <dl> <dt>
 
 0x8019000E
@@ -489,7 +489,7 @@ Non più utilizzata.
 
 
 
-Si è verificato un errore durante la registrazione WAB.
+Si è verificato un errore durante la registrazione wab.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -549,7 +549,7 @@ Il certificato SSL non è valido.
 
 
 
-L'utente ha già registrato troppi dispositivi. Eliminare o annullare la registrazione di quelli precedenti per correggere l'errore. Si noti che l'utente può risolvere l'errore senza assistenza dell'amministratore.
+L'utente ha già registrato troppi dispositivi. Eliminare o annullare la registrazione di quelli precedenti per correggere l'errore. Si noti che l'utente può risolvere l'errore senza l'assistenza dell'amministratore.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -564,7 +564,7 @@ L'utente ha già registrato troppi dispositivi. Eliminare o annullare la registr
 
 
 
-Una piattaforma o una versione specifica (ad esempio Windows) non è supportata. La correzione generale per questo errore è l'aggiornamento del dispositivo.
+Una piattaforma o una versione specifica (ad Windows) non è supportata. La correzione generale per questo errore è l'aggiornamento del dispositivo.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -624,7 +624,7 @@ L'account è in manutenzione. Riprovare più tardi. L'utente può riprovare in u
 
 
 
-La licenza dell'utente è in uno stato non valido che blocca la registrazione. l'utente dovrà chiamare l'amministratore.
+La licenza dell'utente è in uno stato non valido che blocca la registrazione. L'utente dovrà chiamare l'amministratore.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -661,7 +661,7 @@ Il server ha richiesto HTTP anziché HTTPS, ma non è stato accettato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**STATO \_ ERRATO DELLA PIATTAFORMA MENROLL \_ \_ \_ E**
+<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**MENROLL \_ E \_ PLATFORM \_ WRONG \_ STATE**
 </dt> <dd> <dl> <dt>
 
 0x8018001B
@@ -669,14 +669,14 @@ Il server ha richiesto HTTP anziché HTTPS, ma non è stato accettato.
 
 
 
-È stata tentata un'operazione non valida, ad esempio il tentativo di registrare due volte lo stesso dispositivo o annullare la registrazione di un dispositivo sconosciuto.
+È stata tentata un'operazione non valida, ad esempio il tentativo di registrare lo stesso dispositivo due volte o annullare la registrazione di un dispositivo sconosciuto.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**ERRORE DI \_ LICENZA \_ DELLA \_ PIATTAFORMA MENROLL E \_**
+<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**ERRORE DI LICENZA DI MENROLL \_ E \_ \_ \_ PLATFORM**
 </dt> <dd> <dl> <dt>
 
 0x8018001C
@@ -759,7 +759,7 @@ Provisioning non riuscito in un provider di servizi di configurazione del client
 
 
 
-Provisioning non riuscito in un CSP Passport for Work.
+Provisioning non riuscito in un provider di servizi di configurazione Passport for Work.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -789,7 +789,7 @@ Provisioning non riuscito in un provider di servizi di configurazione non elenca
 
 
 
-Il provisioning non è riuscito, ma non viene indicato un provider di servizi di configurazione specifico.
+Il provisioning non è riuscito, ma non è indicato un provider di servizi di configurazione specifico.
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -804,7 +804,7 @@ Il provisioning non è riuscito, ma non viene indicato un provider di servizi di
 
 
 
-Quando si tenta di associare il certificato pubblico o la chiave privata, il certificato pubblico non è stato trovato: durante il tentativo di associare il certificato pubblico o la chiave privata o durante la ricerca del payload di provisioning (ad esempio l'archivio errato).
+Quando si tenta di associare il certificato pubblico o la chiave privata, il certificato pubblico non è stato trovato: durante il tentativo di associare il certificato pubblico/chiave privata o durante la ricerca del payload di provisioning (ad esempio l'archivio errato).
 
 **Windows 8.1:** Questa costante non è disponibile prima di Windows 10.
 
@@ -837,7 +837,7 @@ Provisioning non riuscito nel provider di servizi di configurazione EnterpriseAp
 
 
 
-La gestione dei dispositivi mobili (MDM) è stata bloccata, probabilmente Criteri di gruppo o [**dalla funzione SetManagedExternally.**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally)
+Gestione dei dispositivi mobili (MDM) è stata bloccata, probabilmente Criteri di gruppo o dalla [**funzione SetManagedExternally.**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally)
 
 > [!Note]  
 > Questa costante non è disponibile prima Windows 10 versione 1709.
@@ -847,7 +847,7 @@ La gestione dei dispositivi mobili (MDM) è stata bloccata, probabilmente Criter
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_CERTPOLICY_PRIVATEKEYCREATION_FAILED"></span><span id="menroll_e_certpolicy_privatekeycreation_failed"></span>**MENROLL \_ E \_ CERTPOLICY \_ PRIVATEKEYCREATION \_ FAILED**
+<span id="MENROLL_E_CERTPOLICY_PRIVATEKEYCREATION_FAILED"></span><span id="menroll_e_certpolicy_privatekeycreation_failed"></span>**MENROLL \_ E \_ CERTPOLICY \_ PRIVATEKEYCREATION \_ NON RIUSCITA**
 </dt> <dd> <dl> <dt>
 
 0x80180027
@@ -883,7 +883,7 @@ Impossibile creare la chiave privata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_EMPTY_MESSAGE"></span><span id="menroll_e_empty_message"></span>**MENROLL \_ E \_ EMPTY \_ MESSAGE**
+<span id="MENROLL_E_EMPTY_MESSAGE"></span><span id="menroll_e_empty_message"></span>**MENROLL \_ E \_ MESSAGGIO \_ VUOTO**
 </dt> <dd> <dl> <dt>
 
 0x80180029
@@ -901,7 +901,7 @@ Il server ha risposto con HTTP 200, ma il messaggio era vuoto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_USER_CANCELED_"></span><span id="menroll_e_user_canceled_"></span>**MENROLL \_ E \_ USER \_ CANCELED** 
+<span id="MENROLL_E_USER_CANCELED_"></span><span id="menroll_e_user_canceled_"></span>**UTENTE DI MENROLL \_ E \_ \_ ANNULLATO** 
 </dt> <dd> <dl> <dt>
 
 0x80180030

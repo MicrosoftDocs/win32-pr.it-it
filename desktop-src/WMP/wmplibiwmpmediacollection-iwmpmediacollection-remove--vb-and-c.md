@@ -1,11 +1,11 @@
 ---
-title: Metodo Remove IWMPMediaCollection
-description: Il metodo Remove rimuove un elemento specificato dall'insieme di supporti.
+title: Metodo remove IWMPMediaCollection
+description: Il metodo remove rimuove un elemento specificato dalla raccolta di supporti.
 ms.assetid: 2ed45159-0a92-4353-8bf1-1d20de404bf7
 keywords:
-- rimuovere il metodo Windows Media Player
-- Metodo Remove Media Player Windows, interfaccia IWMPMediaCollection
-- Interfaccia IWMPMediaCollection Windows Media Player, Remove (metodo)
+- Metodo remove Windows Media Player
+- Metodo remove Windows Media Player, interfaccia IWMPMediaCollection
+- Interfaccia IWMPMediaCollection Windows Media Player , metodo remove
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d341f8974255dab5e3cdce356a9b221eddff193c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 771ae8be7a8a4586c132cb29b3af4d5d9180398d7db7d05e66c6e84b5a013b48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735001"
 ---
-# <a name="iwmpmediacollectionremove-method"></a>Metodo IWMPMediaCollection:: Remove
+# <a name="iwmpmediacollectionremove-method"></a>Metodo IWMPMediaCollection::remove
 
-Il `remove` metodo rimuove un elemento specificato dall'insieme di supporti.
+Il `remove` metodo rimuove un elemento specificato dalla raccolta di supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPMediaCollection.remove
 
 <dl> <dt>
 
-*pItem* \[ in\]
+*pItem* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPMedia** che identifica l'elemento da rimuovere.
+Interfaccia **WMPLib.IWMPMedia** che identifica l'elemento da rimuovere.
 
 </dd> <dt>
 
-*varfDeleteFile* \[ in\]
+*varfDeleteFile* \[ Pollici\]
 </dt> <dd>
 
-Valore **System. Boolean** che specifica se il metodo deve rimuovere l'elemento specificato dalla libreria.
+Valore **System.Boolean** che specifica se il metodo deve rimuovere l'elemento specificato dalla libreria.
 
 </dd> </dl>
 
@@ -77,11 +77,11 @@ Questo metodo non restituisce valori.
 
 Questo metodo elimina un elemento dalla libreria. Questo metodo non elimina i file dal computer dell'utente.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente, dopo la richiesta all'utente, viene eliminato definitivamente il primo elemento multimediale della raccolta di supporti usando `remove` . L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente, dopo aver richiesto all'utente, elimina in modo permanente il primo elemento multimediale nella raccolta di supporti usando `remove` . L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -149,7 +149,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -165,7 +165,7 @@ End If
 [**Interfaccia IWMPMediaCollection (VB e C#)**](iwmpmediacollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection. Add (VB e C#)**](wmplibiwmpmediacollection-iwmpmediacollection-add--vb-and-c.md)
+[**IWMPMediaCollection.add (VB e C#)**](wmplibiwmpmediacollection-iwmpmediacollection-add--vb-and-c.md)
 </dt> </dl>
 
  
