@@ -1,7 +1,7 @@
 ---
-description: La classe CCritSec fornisce un blocco thread.
+description: La classe CCritSec fornisce un blocco del thread.
 ms.assetid: ecc60afe-15d0-4780-8133-1dfc558c6325
-title: Classe CCritSec (Wxutil. h)
+title: Classe CCritSec (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,29 +16,29 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8db0243ecfecd47655f547d40390e602c04d5b88
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb57004935a85392057120c0ec369d19217148780079ab4be83088dd3de3ea8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872191"
 ---
 # <a name="ccritsec-class"></a>Classe CCritSec
 
-La classe **CCritSec** fornisce un blocco thread.
+La **classe CCritSec** fornisce un blocco del thread.
 
-Questa classe è un wrapper sottile per un oggetto **\_ sezione critica** di Windows. È possibile bloccare e sbloccare il thread chiamando il metodo [**CCritSec:: Lock**](ccritsec-lock.md) e [**CCritSec:: Unlock**](ccritsec-unlock.md) . Tuttavia, è più sicuro usare questa classe insieme alla classe [**CAutoLock**](cautolock.md) . Quando la classe **CAutoLock** esce dall'ambito, sblocca automaticamente l'oggetto **CCritSec** . Inoltre, viene compilato in codice inline efficiente.
+Questa classe è un thin wrapper per un Windows **CRITICAL \_ SECTION.** È possibile bloccare e sbloccare il thread chiamando i metodi [**CCritSec::Lock**](ccritsec-lock.md) e [**CCritSec::Unlock.**](ccritsec-unlock.md) Tuttavia, è più sicuro usare questa classe in combinazione con la [**classe CAutoLock.**](cautolock.md) Quando la **classe CAutoLock** esce dall'ambito, sblocca automaticamente **l'oggetto CCritSec.** Inoltre, viene compilato in codice inline efficiente.
 
 
 
-| Variabili membro pubblico                            | Descrizione                                              |
+| Variabili membro pubbliche                            | Descrizione                                              |
 |----------------------------------------------------|----------------------------------------------------------|
-| [**\_currentOwner m**](ccritsec-m-currentowner.md) | Identificatore del thread proprietario.                  |
-| [**\_lockCount m**](ccritsec-m-lockcount.md)       | Numero di blocchi in attesa su questo oggetto.              |
-| [**\_fTrace m**](ccritsec-m-ftrace.md)             | Valore booleano che specifica se tracciare il blocco. |
+| [**m \_ currentOwner**](ccritsec-m-currentowner.md) | Identificatore di thread del thread proprietario.                  |
+| [**m \_ lockCount**](ccritsec-m-lockcount.md)       | Numero di blocchi in sospeso su questo oggetto.              |
+| [**m \_ fTrace**](ccritsec-m-ftrace.md)             | Valore booleano che specifica se tracciare questo blocco. |
 | Metodi pubblici                                     | Descrizione                                              |
 | [**CCritSec**](ccritsec-ccritsec.md)              | Metodo del costruttore.                                      |
-| [**~ CCritSec**](ccritsec--ccritsec.md)            | Metodo del distruttore.                                       |
+| [**~CCritSec**](ccritsec--ccritsec.md)            | Metodo del distruttore.                                       |
 | [**Lock**](ccritsec-lock.md)                      | Blocca l'oggetto sezione critica.                       |
 | [**Sblocca**](ccritsec-unlock.md)                  | Sblocca l'oggetto sezione critica.                     |
 
@@ -52,8 +52,8 @@ Questa classe è un wrapper sottile per un oggetto **\_ sezione critica** di Win
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Questa classe è un wrapper sottile per un oggetto **\_ sezione critica** di Win
 [Oggetti sezione critica](/windows/desktop/Sync/critical-section-objects)
 </dt> <dt>
 
-[Riferimento alla classe base DirectShow](base-class-reference.md)
+[DirectShow Informazioni di riferimento sulla classe base](base-class-reference.md)
 </dt> </dl>
 
  

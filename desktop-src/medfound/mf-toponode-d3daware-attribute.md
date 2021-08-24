@@ -1,19 +1,19 @@
 ---
-description: Specifica se la trasformazione associata a un nodo della topologia supporta l'accelerazione video DirectX (DXVA).
+description: Specifica se la trasformazione associata a un nodo della topologia supporta DirectX Video Acceleration (DXVA).
 ms.assetid: b9e393be-0bc0-4cf6-be44-e9e95339c434
-title: Attributo MF_TOPONODE_D3DAWARE (Mfidl. h)
+title: MF_TOPONODE_D3DAWARE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d94d06f2834092159fb813ecffd69ec8a157c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e49735a1178cc521efd152f4fa11ab7c84069b07d0e5001f0f0e8e38bec940ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607151"
 ---
-# <a name="mf_toponode_d3daware-attribute"></a>\_Attributo MF TOPONODE \_ D3DAWARE
+# <a name="mf_toponode_d3daware-attribute"></a>Attributo MF \_ TOPONODE \_ D3DAWARE
 
-Specifica se la trasformazione associata a un nodo della topologia supporta l'accelerazione video DirectX (DXVA).
+Specifica se la trasformazione associata a un nodo della topologia supporta DirectX Video Acceleration (DXVA).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,11 +23,11 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di trasformazione (**\_ nodo di \_ trasformazione \_ della topologia MF**).
+Questo attributo si applica ai nodi di trasformazione (**MF \_ TOPOLOGY \_ TRANSFORM \_ NODE**).
 
-Le applicazioni in genere non utilizzano direttamente questo attributo. La sessione multimediale imposta questo attributo su un nodo di trasformazione se la trasformazione Media Foundation sottostante dispone dell'attributo in grado di riconoscere la tecnologia [**MF \_ sa \_ D3D \_**](mf-sa-d3d-aware-attribute.md) .
+Le applicazioni in genere non usano questo attributo direttamente. La sessione multimediale imposta questo attributo in un nodo di trasformazione se la trasformazione Media Foundation ha l'attributo [**MF \_ SA \_ D3D \_ AWARE.**](mf-sa-d3d-aware-attribute.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,13 +45,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

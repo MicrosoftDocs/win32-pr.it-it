@@ -1,10 +1,10 @@
 ---
-title: Desktop remoto ActiveX interfacce di controllo
+title: Desktop remoto ActiveX di controllo
 description: Interfacce che è possibile usare per creare e distribuire canali virtuali gestibili tramite script all'interno Servizi Desktop remoto applicazioni Web.
 ms.assetid: 8258411e-eef6-4dcf-a7a2-7d04b0ea3744
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto Servizi Desktop remoto , Remote Desktop Protocol (RDP)
+- Servizi Desktop remoto Servizi Desktop remoto interfacce , Remote Desktop Protocol (RDP)
 - Remote Desktop Protocol (RDP) Servizi Desktop remoto interfacce ,
 ms.topic: reference
 ms.date: 05/31/2018
@@ -15,9 +15,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119988671"
 ---
-# <a name="remote-desktop-activex-control-interfaces"></a>Desktop remoto ActiveX interfacce di controllo
+# <a name="remote-desktop-activex-control-interfaces"></a>Desktop remoto ActiveX di controllo
 
-Il Desktop remoto ActiveX supporta le interfacce seguenti, che supportano script e non possono essere script, raggruppate in base alla gerarchia di ereditarietà.
+Il Desktop remoto ActiveX supporta le interfacce seguenti che supportano script e non supportano script, raggruppate in base alla gerarchia di ereditarietà.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -194,14 +194,14 @@ Include metodi per recuperare e impostare le proprietà del controllo Desktop re
 [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md)
 </dt> <dd>
 
-Definisce proprietà aggiuntive del controllo Desktop remoto ActiveX che sono limitate a specifiche Internet Explorer di sicurezza URL.
+Definisce proprietà aggiuntive del controllo Desktop remoto ActiveX che sono limitate a specifiche aree Internet Explorer di sicurezza URL.
 
 </dd> <dt>
 
 [**IMsRdpClientShell**](imsrdpclientshell.md)
 </dt> <dd>
 
-Connessione Desktop remoto client (RDC) usate per avviare il client da Desktop remoto Accesso Web (rd Accesso Web) o da altri portali Web.
+Connessione Desktop remoto client (RDC) usate per avviare il client da Desktop remoto Accesso Web (Accesso Web Desktop remoto) o da altri portali Web.
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Sink di input del desktop remoto.
 [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md)
 </dt> <dd>
 
-Fornisce una proprietà per controllare l'utilizzo di un server di reindirizzamento.
+Fornisce una proprietà per controllare l'uso di un server di reindirizzamento.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Include metodi che ricevono informazioni dal server correlate agli eventi di con
 [**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
 </dt> <dd>
 
-Contiene proprietà e metodi correlati all'applicazione di una password al Desktop remoto ActiveX controllo .
+Contiene proprietà e metodi correlati all'applicazione di una password Desktop remoto ActiveX controllo .
 
 </dd> <dt>
 
@@ -355,7 +355,7 @@ Fornisce i metodi usati per interagire con il controllo client del contenitore d
 [**IRemoteDesktopClientEvents**](iremotedesktopclientevents.md)
 </dt> <dd>
 
-Fornisce metodi che ricevono informazioni dal server correlate agli eventi del controllo client.
+Fornisce metodi che ricevono informazioni dal server correlate agli eventi di controllo client.
 
 </dd> <dt>
 

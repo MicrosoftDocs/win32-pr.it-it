@@ -1,22 +1,22 @@
 ---
-title: Esempio di codice C/C++ durante il recupero dei parametri delle attività
-description: In questo esempio viene recuperata la stringa di parametro eseguita durante l'esecuzione dell'attività e visualizzata tale stringa sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+title: Esempio di codice C/C++ recupero di parametri di attività
+description: In questo esempio viene recuperata la stringa di parametro che viene eseguita quando viene eseguita l'attività e tale stringa viene visualizzata sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 ms.assetid: fefa668e-803f-4e05-8097-b75231ee8f72
 keywords:
 - recupero dei parametri dell'attività Utilità di pianificazione
-- recupero delle proprietà dell'attività Utilità di pianificazione, parametri
+- recupero di proprietà di attività Utilità di pianificazione parametri ,
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6adff7baeb4d4151c06ab192e336712716fb9d80
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e18df24eee8f2de6d7a796aeb11febad8d9e79e95be6dd47bcd9be0a5392078d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738751"
 ---
-# <a name="cc-code-example-retrieving-task-parameters"></a>Esempio di codice C/C++: recupero dei parametri delle attività
+# <a name="cc-code-example-retrieving-task-parameters"></a>Esempio di codice C/C++: recupero di parametri di attività
 
-In questo esempio viene recuperata la stringa di parametro eseguita durante l'esecuzione dell'attività e visualizzata tale stringa sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
+In questo esempio viene recuperata la stringa di parametro che viene eseguita quando viene eseguita l'attività e tale stringa viene visualizzata sullo schermo. In questo esempio si presuppone che l'attività e l'attività di test esistano già nel computer locale.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

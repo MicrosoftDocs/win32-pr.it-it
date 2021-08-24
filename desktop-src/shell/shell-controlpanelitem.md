@@ -1,5 +1,5 @@
 ---
-description: Esegue l'applicazione Pannello di controllo \* (.cpl) specificata.
+description: Esegue l'Pannello di controllo \* (.cpl) specificata.
 title: Metodo Shell.ControlPanelItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 54979bbd-b36b-4b5b-a8a0-5f63e9526fa5
-ms.openlocfilehash: 04d2493f5d0ec5b86d19689cb8e7c2a02a82e536
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: d78cb161f8d89de53d491d113f141d63c28ae58ab359cc0198ff4aaa54e6062f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709801"
 ---
 # <a name="shellcontrolpanelitem-method"></a>Metodo Shell.ControlPanelItem
 
-Esegue l'applicazione Pannello di controllo \* (.cpl) specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione.
+Esegue l'Pannello di controllo \* (.cpl) specificata. Se l'applicazione è già aperta, attiverà l'istanza in esecuzione.
 
 > [!Note]  
-> A causa di Windows Vista, la maggior Pannello di controllo applicazioni sono elementi della shell e non possono essere aperte con questa funzione. Per aprire queste Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:
+> A Windows Vista, la maggior parte Pannello di controllo applicazioni sono elementi della shell e non possono essere aperti con questa funzione. Per aprire tali Pannello di controllo applicazioni, passare il nome canonico a control.exe. Ad esempio:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -63,7 +63,7 @@ Shell.ControlPanelItem( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Nome Pannello di controllo file dell'applicazione. Tutte Pannello di controllo applicazioni hanno l'estensione .cpl.
+Nome Pannello di controllo file dell'applicazione. Tutte Pannello di controllo applicazioni hanno l'.cpl predefinita.
 
 </dd> </dl>
 
@@ -79,9 +79,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente usa **ControlPanelItem** per eseguire  l'Pannello di controllo'Proprietà dello schermo elemento. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa ControlPanelItem** per eseguire l'Pannello di controllo dell'Proprietà dello schermo elemento.  Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -137,7 +137,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

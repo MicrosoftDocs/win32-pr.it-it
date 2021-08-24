@@ -1,7 +1,7 @@
 ---
-description: Contiene diverse impostazioni di sicurezza utilizzate dai fornitori di hardware indipendenti.
+description: Contiene varie impostazioni di sicurezza usate da fornitori di hardware indipendenti.
 ms.assetid: 237c5d98-3f3c-4279-b2ad-b0d05df041f9
-title: Security (IHV)-elemento
+title: Elemento security (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6ace1bb0ca31f40fdc9d10fba13832797d8d4306
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4baeadc5e53dc53d0a526b62c4905da1a778a1015f58321ae8b96e4aa52dfcc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912751"
 ---
-# <a name="security-ihv-element"></a>Security (IHV)-elemento
+# <a name="security-ihv-element"></a>Elemento security (IHV)
 
-L'elemento Security (IHV) contiene diverse impostazioni di sicurezza utilizzate dai fornitori di hardware indipendenti.
+L'elemento security (IHV) contiene varie impostazioni di sicurezza usate dai fornitori di hardware indipendenti.
 
-Le impostazioni di sicurezza di Microsoft e le impostazioni di sicurezza di IHV si escludono a vicenda. Se entrambi i set di impostazioni di sicurezza sono presenti nello stesso profilo, il profilo non è valido.
+Le impostazioni di sicurezza Microsoft e le impostazioni di sicurezza IHV si escludono a vicenda. Se entrambi i set di impostazioni di sicurezza sono presenti nello stesso profilo, il profilo non è valido.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -40,7 +40,7 @@ Le impostazioni di sicurezza di Microsoft e le impostazioni di sicurezza di IHV 
 </xs:element>
 ```
 
-L'elemento **Security** è definito dall'elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+**L'elemento** di sicurezza è definito [**dall'elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ L'elemento **Security** è definito dall'elemento [**IHV**](wlan-profileschema-i
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -60,7 +60,7 @@ L'elemento **Security** è definito dall'elemento [**IHV**](wlan-profileschema-i
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**IHV**](wlan-profileschema-ihv-wlanprofile-element.md)
+[**Ihv**](wlan-profileschema-ihv-wlanprofile-element.md)
 </dt> <dt>
 
 **Possibile elemento padre immediato nell'istanza dello schema**

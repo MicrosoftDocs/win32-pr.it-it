@@ -1,31 +1,31 @@
 ---
-title: Documento ServiceInfo di esempio per un negozio online di tipo 2
-description: Documento ServiceInfo di esempio per un negozio online di tipo 2
+title: Esempio di documento ServiceInfo per un negozio online di tipo 2
+description: Esempio di documento ServiceInfo per un negozio online di tipo 2
 ms.assetid: d9bbce89-15b4-495f-8995-24dda99a4f40
 keywords:
-- Windows Media Player Online Stores, esempio di documento ServiceInfo
-- archivi online, documento ServiceInfo di esempio
-- digitare 2 negozi online, esempio di documento ServiceInfo
-- Windows Media Player Online Stores, documento ServiceInfo
-- archivi online, documento ServiceInfo
-- digitare 2 archivi online, documento ServiceInfo
-- Windows Media Player Online Stores, esempio di codice
+- Windows Media Player negozi online, esempio di documento ServiceInfo
+- negozi online, documento ServiceInfo di esempio
+- Tipo 2 di negozi online, esempio di documento ServiceInfo
+- Windows Media Player negozi online, documento ServiceInfo
+- negozi online, documento ServiceInfo
+- Tipo 2 negozi online, documento ServiceInfo
+- Windows Media Player negozi online, esempio di codice
 - negozi online, esempio di codice
-- digitare 2 negozi online, esempio di codice
-- documento ServiceInfo di esempio
+- Tipo 2 di negozi online, esempio di codice
+- Esempio di documento ServiceInfo
 - Documento ServiceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02214b9d7180296fa11bb877f978c6bde85f3a4e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7962f7548f8c880e60320d3a7fb071e2a076ffafdac9a56b4cf6d8aa41b5d60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650121"
 ---
-# <a name="example-serviceinfo-document-for-a-type-2-online-store"></a>Documento ServiceInfo di esempio per un negozio online di tipo 2
+# <a name="example-serviceinfo-document-for-a-type-2-online-store"></a>Esempio di documento ServiceInfo per un negozio online di tipo 2
 
-Nell'esempio di codice seguente viene illustrato un documento di ServiceInfo.xml completo. È possibile usare questo codice XML come punto di partenza per il proprio documento ServiceInfo.
+L'esempio di codice seguente illustra un documento ServiceInfo.xml completo. È possibile usare questo codice XML come punto di partenza per il documento ServiceInfo.
 
 
 ```C++
@@ -81,15 +81,15 @@ Nell'esempio di codice seguente viene illustrato un documento di ServiceInfo.xml
 [**Guida per programmatori per i negozi online di tipo 2**](programming-guide-for-type-2-online-stores.md)
 </dt> <dt>
 
-[**Documento ServiceInfo per un negozio online di tipo 2**](serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo per un Negozio online di tipo 2**](serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

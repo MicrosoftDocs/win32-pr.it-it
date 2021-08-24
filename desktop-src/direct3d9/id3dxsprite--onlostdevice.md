@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXSprite::OnLostDevice: usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti gli blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima di reimpostare un dispositivo.'
+description: 'Metodo ID3DXSprite::OnLostDevice: usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti i blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima della reimpostazione di un dispositivo.'
 ms.assetid: 60028f18-21fe-428b-9bee-d5359671da81
 title: Metodo ID3DXSprite::OnLostDevice (D3dx9core.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119985200"
 ---
 # <a name="id3dxspriteonlostdevice-method"></a>Metodo ID3DXSprite::OnLostDevice
 
-Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti gli blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima di reimpostare un dispositivo.
+Usare questo metodo per rilasciare tutti i riferimenti alle risorse di memoria video ed eliminare tutti i blocchi di stato. Questo metodo deve essere chiamato ogni volta che un dispositivo viene perso o prima della reimpostazione di un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset.**](/windows/desktop/api) Anche se il dispositivo non è stato effettivamente perso, **ID3DXSprite::OnLostDevice** è responsabile del rilascio degli blocchi di stato e di altre risorse che potrebbero dover essere rilasciate prima della reimpostazione del dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e [**quindi ID3DXSprite::OnResetDevice**](id3dxsprite--onresetdevice.md).
+Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset**](/windows/desktop/api). Anche se il dispositivo non è stato effettivamente perso, **ID3DXSprite::OnLostDevice** è responsabile della liberazione di blocchi di stato e altre risorse che potrebbero dover essere rilasciate prima di reimpostare il dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e quindi [**ID3DXSprite::OnResetDevice**](id3dxsprite--onresetdevice.md).
 
 ## <a name="requirements"></a>Requisiti
 

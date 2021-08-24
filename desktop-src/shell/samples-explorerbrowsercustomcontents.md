@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come implementare un browser personalizzato di Esplora risorse per l'applicazione.
+description: Illustra come implementare una finestra di esplorazione personalizzata per l'applicazione.
 title: Esempio di contenuti personalizzati del browser Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: a7caab18e673ceaedb68819c756c9e9755a8af59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8731494a0ec5e9c7df1344ef8f586142c4672a373a862bd475d10e8a693e220a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820392"
 ---
 # <a name="explorer-browser-custom-contents-sample"></a>Esempio di contenuti personalizzati del browser Explorer
 
-Viene illustrato come implementare un browser personalizzato di Esplora risorse per l'applicazione.
+Illustra come implementare una finestra di esplorazione personalizzata per l'applicazione.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio ExplorerBrowserCustomContents](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents) |
+| GitHub  | [Esempio di ExplorerBrowserCustomContents](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

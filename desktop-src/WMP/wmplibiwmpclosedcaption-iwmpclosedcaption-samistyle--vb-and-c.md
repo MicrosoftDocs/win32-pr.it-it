@@ -1,11 +1,11 @@
 ---
-title: Proprietà SAMIStyle di IWMPClosedCaption
-description: La proprietà SAMIStyle Ottiene o imposta lo stile dei sottotitoli codificati.
+title: Proprietà IWMPClosedCaption SAMIStyle
+description: La proprietà SAMIStyle ottiene o imposta lo stile di sottotitoli codificati.
 ms.assetid: 0b1f92c6-b659-4ade-90c8-62a06e475f5c
 keywords:
-- Finestra delle proprietà di SAMIStyle Media Player
-- Proprietà di SAMIStyle Media Player Windows, interfaccia IWMPClosedCaption
-- Interfaccia IWMPClosedCaption Windows Media Player, proprietà SAMIStyle
+- Proprietà SAMIStyle Windows Media Player
+- Proprietà SAMIStyle Windows Media Player, interfaccia IWMPClosedCaption
+- Interfaccia IWMPClosedCaption Windows Media Player , proprietà SAMIStyle
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bd0b48fc1807d6ca1854651c7f222183a845be3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2cede8964636073c393cb34bfa1be22855467f4cb243834bd1e11a4ffc492665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031421"
 ---
-# <a name="iwmpclosedcaptionsamistyle-property"></a>Proprietà IWMPClosedCaption:: SAMIStyle
+# <a name="iwmpclosedcaptionsamistyle-property"></a>Proprietà IWMPClosedCaption::SAMIStyle
 
-La proprietà **SAMIStyle** Ottiene o imposta lo stile dei sottotitoli codificati.
+La **proprietà SAMIStyle** ottiene o imposta lo stile di sottotitoli codificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Public Property SAMIStyle As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che rappresenta il nome specificato nell'identificatore di stile di un file Sami.
+Oggetto **System.String** che rappresenta il nome specificato nell'identificatore di stile di un file SAMI.
 
 ## <a name="remarks"></a>Commenti
 
-Un file SAMI può contenere diverse definizioni di stile del formato. Gli stili SAMI sono definiti tra i tag <STYLE> e </STYLE> nel file Sami. Uno stile viene definito con una stringa di testo preceduta da un \# carattere. Ad esempio:
+Un file SAMI può contenere diverse definizioni di stile di formato. Gli stili SAMI vengono definiti tra <STYLE> i tag e </STYLE> nel file SAMI. Uno stile viene definito con una stringa di testo preceduta da un \# carattere. Esempio:
 
 
 ```
@@ -71,7 +71,7 @@ Se non viene specificato alcuno stile SAMI, per impostazione predefinita viene u
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -81,7 +81,7 @@ Se non viene specificato alcuno stile SAMI, per impostazione predefinita viene u
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati ai supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaccia IWMPClosedCaption (VB e C#)**](iwmpclosedcaption--vb-and-c.md)

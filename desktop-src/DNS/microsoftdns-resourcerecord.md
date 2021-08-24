@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_ResourceRecord
-description: La \_ classe MicrosoftDNS ResourceRecord rappresenta le proprietà generali di un RR DNS. La sintassi seguente è semplificata dal codice MOF.
+title: MicrosoftDNS_ResourceRecord classe
+description: La classe MicrosoftDNS \_ ResourceRecord rappresenta le proprietà generali di un dns RR. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 84d6d106-fcc9-44ae-8db2-181c60489aec
 keywords:
-- DNS della classe MicrosoftDNS_ResourceRecord
-- MicrosoftDNS_ResourceRecord della classe DNS, descritta
+- MicrosoftDNS_ResourceRecord DNS della classe
+- MicrosoftDNS_ResourceRecord classe DNS , descritto
 topic_type:
 - apiref
 api_name:
@@ -26,16 +26,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abe546ceabb5590ccd4907448af5efd5e2d4fe2f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8b54d23ae522291a2a38ad5d3f046fc444efdefd4d270519fbc3a2ee5739ba47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874801"
 ---
-# <a name="microsoftdns_resourcerecord-class"></a>\_Classe MicrosoftDNS ResourceRecord
+# <a name="microsoftdns_resourcerecord-class"></a>Classe \_ ResourceRecord MicrosoftDNS
 
-La classe **MicrosoftDNS \_ ResourceRecord** rappresenta le proprietà generali di un RR DNS.
+La **classe MicrosoftDNS \_ ResourceRecord** rappresenta le proprietà generali di un dns RR.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -58,21 +58,21 @@ class MicrosoftDNS_ResourceRecord : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ ResourceRecord di MicrosoftDNS** dispone di questi tipi di membri:
+La **classe MicrosoftDNS \_ ResourceRecord** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ ResourceRecord di MicrosoftDNS** dispone di questi metodi.
+La **classe MicrosoftDNS \_ ResourceRecord** include questi metodi.
 
 
 
 | Metodo                                   | Descrizione                                                                                                                                                                                                                                                            |
 |:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromTextRepresentation** | Analizza l'RR nella stringa TextRepresentation e con i nomi del server e del contenitore DNS di input, definisce e crea un'istanza di un oggetto ResourceRecord. Il metodo restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: nessuno<br/> |
-| **GetObjectByTextRepresentation**        | Recupera un'istanza esistente della \_ sottoclasse MicrosoftDns ResourceRecord, rappresentata dalla stringa TextRepresentation insieme al server DNS e al nome del contenitore. <br/> Qualificatori: nessuno<br/>                                                        |
+| **CreateInstanceFromTextRepresentation** | Analizza il RR nella stringa TextRepresentation e con i nomi dei server e dei contenitori DNS di input definisce e crea un'istanza di un oggetto ResourceRecord. Il metodo restituisce un riferimento al nuovo oggetto come parametro di output. <br/> Qualificatori: nessuno<br/> |
+| **GetObjectByTextRepresentation**        | Recupera un'istanza esistente della sottoclasse MicrosoftDns ResourceRecord, rappresentata dalla stringa TextRepresentation insieme al server DNS e al nome \_ del contenitore. <br/> Qualificatori: nessuno<br/>                                                        |
 
 
 
@@ -80,72 +80,72 @@ La **classe \_ ResourceRecord di MicrosoftDNS** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ResourceRecord di MicrosoftDNS** dispone di queste proprietà.
+La **classe MicrosoftDNS \_ ResourceRecord** ha queste proprietà.
 
 <dl> <dt>
 
-**ContainerName**
+**Containername**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene l'RR.
+Indica il nome del contenitore per l'istanza di Zona, Cache o RootHints che contiene il RR.
 
 </dd> <dt>
 
 **DnsServerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il nome di dominio completo o l'indirizzo IP del server DNS che contiene l'RR.
+Indica l'FQDN o l'indirizzo IP del server DNS che contiene il RR.
 
 </dd> <dt>
 
-**NomeDominio**
+**Domainname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Rappresenta il nome FQDN del dominio che contiene l'RR. Questa proprietà può contenere le stringhe \\ . Cache \\ o \\ .. RootHints \\ se la cache interna o RootHints contengono rispettivamente l'RR.
+Rappresenta il nome di dominio completo del dominio che contiene il RR. Questa proprietà può contenere le stringhe \\ . Cache \\ o \\ . RootHints \\ se la cache interna o RootHints contengono rispettivamente il RR.
 
 </dd> <dt>
 
 **OwnerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per il RR.
 
 </dd> <dt>
 
-**RecordClass = 1**
+**RecordClass=1**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-* * Windows Server 2003: * *
+**Windows Server 2003: **
 
 Questa stringa rappresenta la classe del record di risorse. I valori validi includono:
 
@@ -155,14 +155,14 @@ Questa stringa rappresenta la classe del record di risorse. I valori validi incl
 
 3: CH (CHAOS)
 
-4: HS (Esiodo)
+4: HS (Hesiod)
 
 </dd> <dt>
 
 **RecordData**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -175,7 +175,7 @@ Dati del record di risorse.
 **TextRepresentation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -185,29 +185,29 @@ Rappresentazione testuale dell'intero RR.
 
 </dd> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora dell'ultimo aggiornamento dell'RR, espressa in ore trascorse dal 1 gennaio 1601, ora di Greenwich (GMT).
+Ora dell'ultimo aggiornamento del RR, espresso in ore trascorse dal 1° gennaio 1601, ora media di Greenwich (GMT).
 
 </dd> <dt>
 
 **TTL**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un [*resolver*](r-gly.md)DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un [*resolver*](r-gly.md)DNS.
 
 </dd> </dl>
 
@@ -220,7 +220,7 @@ Tempo, in secondi, che l'RR può memorizzare nella cache da un [*resolver*](r-gl
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -228,10 +228,10 @@ Tempo, in secondi, che l'RR può memorizzare nella cache da un [*resolver*](r-gl
 
 <dl> <dt>
 
-[**Metodo CreateInstanceFromTextRepresentation della classe MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord-createinstancefromtextrepresentation.md)
+[**Metodo CreateInstanceFromTextRepresentation della classe ResourceRecord MicrosoftDNS \_**](microsoftdns-resourcerecord-createinstancefromtextrepresentation.md)
 </dt> <dt>
 
-[**Metodo GetObjectByTextRepresentation della classe MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord-getobjectbytextrepresentation.md)
+[**Metodo GetObjectByTextRepresentation della classe ResourceRecord MicrosoftDNS \_**](microsoftdns-resourcerecord-getobjectbytextrepresentation.md)
 </dt> </dl>
 
  

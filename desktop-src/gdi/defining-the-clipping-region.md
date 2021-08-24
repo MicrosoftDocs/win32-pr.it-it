@@ -1,19 +1,19 @@
 ---
-description: Quando l'utente fa clic su Definisci area di ritaglio, il sistema emette un \_ messaggio di comando WM.
+description: Quando l'utente fa clic su Definisci area di ritaglio, il sistema visualizza un messaggio WM \_ COMMAND.
 ms.assetid: 4b20f310-98c0-42c1-b3b3-eadf9bb2003c
-title: Definizione dell'area di visualizzazione
+title: Definizione dell'area di ritaglio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e49693c0e94ab9b43af817f80985af98ae2ede
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: caa56c2eb036430b90e3c8f7b6fc0894abdc37306edef77438afae796cb1cc04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115311"
 ---
-# <a name="defining-the-clipping-region"></a>Definizione dell'area di visualizzazione
+# <a name="defining-the-clipping-region"></a>Definizione dell'area di ritaglio
 
-Quando l'utente fa clic su Definisci area di ritaglio, il sistema emette un messaggio di [**\_ comando WM**](../menurc/wm-command.md) . Il parametro *wParam* di questo messaggio contiene una costante definita dall'applicazione, IDM \_ define, che indica che l'utente ha selezionato questa opzione dal menu. L'applicazione elabora questo input impostando un flag booleano, fDefineRegion, come illustrato nell'esempio di codice seguente.
+Quando l'utente fa clic su Definisci area di ritaglio, il sistema visualizza un [**messaggio WM \_ COMMAND.**](../menurc/wm-command.md) Il *parametro wParam* di questo messaggio contiene una costante definita dall'applicazione, IDM DEFINE, che indica che l'utente ha selezionato questa \_ opzione dal menu. L'applicazione elabora questo input impostando un flag booleano, fDefineRegion, come illustrato nell'esempio di codice seguente.
 
 
 ```C++
@@ -28,9 +28,9 @@ case WM_COMMAND:
 
 
 
-Dopo aver fatto clic su **Definisci area di ritaglio** , l'utente può iniziare a disegnare il rettangolo facendo clic e trascinando il mouse mentre il cursore si trova nell'area client dell'applicazione.
+Dopo aver fatto **clic su Definisci** area di ritaglio , l'utente può iniziare a disegnare il rettangolo facendo clic e trascinando il mouse mentre il cursore si trova nell'area client dell'applicazione.
 
-Quando l'utente preme il pulsante sinistro, il sistema emette un messaggio [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) . Il parametro *lParam* di questo messaggio contiene le coordinate del cursore, che corrispondono all'angolo superiore sinistro di un rettangolo utilizzato per definire l'area di visualizzazione. L'applicazione elabora il messaggio **WM \_ LBUTTONDOWN** , come indicato di seguito.
+Quando l'utente preme il pulsante sinistro, il sistema invia un [**messaggio \_ WM LBUTTONDOWN.**](../inputdev/wm-lbuttondown.md) Il *parametro lParam* di questo messaggio contiene le coordinate del cursore, che corrispondono all'angolo superiore sinistro di un rettangolo usato per definire l'area di ritaglio. L'applicazione elabora il **messaggio \_ WM LBUTTONDOWN,** come indicato di seguito.
 
 
 ```C++
@@ -108,7 +108,7 @@ switch (message)
 
 
 
-Quando l'utente trascina il mouse, il sistema rilascia i messaggi di [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) e archivia le nuove coordinate del cursore nel parametro *lParam* . Ogni volta che l'applicazione riceve un nuovo messaggio di **WM \_ MOUSEMOVE** , cancella il rettangolo precedente (se ne esiste uno) e disegna il nuovo rettangolo chiamando la funzione [**polilinea**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) , passando le coordinate dei quattro angoli del rettangolo. L'applicazione esegue le operazioni seguenti.
+Quando l'utente trascina il mouse, il sistema rilascia messaggi [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) e archivia le nuove coordinate del cursore nel *parametro lParam.* Ogni volta che l'applicazione riceve un nuovo messaggio **WM \_ MOUSEMOVE,** cancella il rettangolo precedente (se presente) e disegna il nuovo rettangolo chiamando la funzione [**Polyline,**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) passando le coordinate dei quattro angoli del rettangolo. L'applicazione esegue le attività seguenti.
 
 
 ```C++

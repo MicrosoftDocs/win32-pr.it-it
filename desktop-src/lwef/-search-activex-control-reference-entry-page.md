@@ -1,20 +1,20 @@
 ---
-title: Interfacce di controllo ActiveX di WDS 2.x
-description: Interfacce di controllo ActiveX di WDS 2.x
+title: Interfacce di controllo ActiveX WDS 2.x
+description: Interfacce di controllo ActiveX WDS 2.x
 ms.assetid: dec40a14-46eb-4370-adc8-c1d8aec7bfee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf3f0426325fac2be0e3c576485dff7bd6f389b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bed6bb68024c549e5878d65fc05e9b7f155eb4b0839630b4adf09e027cc5440c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114991"
 ---
-# <a name="wds-2x-activex-control-interfaces"></a>Interfacce di controllo ActiveX di WDS 2.x
+# <a name="wds-2x-activex-control-interfaces"></a>Interfacce di controllo ActiveX WDS 2.x
 
 > [!NOTE]
-> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive, usare [Windows Search.](../search/-search-3x-wds-overview.md)
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [Windows ricerca.](../search/-search-3x-wds-overview.md)
 
 
 [**IPropertyFilter**](-search-2x-ipropertyfilter.md)

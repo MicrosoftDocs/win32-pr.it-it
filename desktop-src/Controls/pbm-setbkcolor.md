@@ -3,7 +3,7 @@ title: PBM_SETBKCOLOR messaggio (Commctrl.h)
 description: Imposta il colore di sfondo nell'indicatore di stato.
 ms.assetid: e28af958-babb-4c2e-9202-89b608c22f8e
 keywords:
-- PBM_SETBKCOLOR di controllo Windows messaggio
+- PBM_SETBKCOLOR dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119986181"
 ---
-# <a name="pbm_setbkcolor-message"></a>Messaggio \_ SETBKCOLOR PBM
+# <a name="pbm_setbkcolor-message"></a>Messaggio PBM \_ SETBKCOLOR
 
 Imposta il colore di sfondo nell'indicatore di stato.
 
@@ -57,8 +57,8 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

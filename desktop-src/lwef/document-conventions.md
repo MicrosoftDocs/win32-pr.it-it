@@ -22,7 +22,7 @@ Questa documentazione usa le convenzioni tipografiche seguenti:
 | Convenzione                       | Descrizione                                                                    |
 |----------------------------------|--------------------------------------------------------------------------------|
 | **Sub, Visible, Caption**        | Le parole in grassetto con lettera iniziale in maiuscolo indicano parole chiave.               |
-| *agent, String, Now*             | Le parole corsivo indicano segnaposto per le informazioni fornite.                 |
+| *agent, String, Now*             | Le parole in corsivo indicano segnaposto per le informazioni fornite.                 |
 | INVIO, F1                        | Le parole in lettere maiuscole indicano nomi di file, nomi di chiave e sequenze di tasti. |
 | `Agent1.Commands.Enabled = True` | Il testo in questo tipo di carattere indica esempi di codice.                                       |
 | `' This is a comment`            | Un apostrofo ( `'` ) indica un commento di codice.                                  |

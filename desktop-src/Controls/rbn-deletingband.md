@@ -1,9 +1,9 @@
 ---
-title: RBN_DELETINGBAND di notifica (Commctrl.h)
-description: Inviato da un controllo Rebar quando una banda sta per essere eliminata. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
+title: RBN_DELETINGBAND codice di notifica (Commctrl.h)
+description: Inviato da un controllo rebar quando una banda sta per essere eliminata. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 92840cb1-375e-4c37-bde4-7ba02a1ff4f1
 keywords:
-- RBN_DELETINGBAND del codice di notifica Windows controlli
+- RBN_DELETINGBAND codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119985071"
 ---
 # <a name="rbn_deletingband-notification-code"></a>Codice di notifica RBN \_ DELETINGBAND
 
-Inviato da un controllo Rebar quando una banda sta per essere eliminata. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
+Inviato da un controllo rebar quando una banda sta per essere eliminata. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntatore a [**una struttura NMREBAR**](/windows/win32/api/commctrl/ns-commctrl-
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questa notifica non viene utilizzato.
+Il valore restituito per questa notifica non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

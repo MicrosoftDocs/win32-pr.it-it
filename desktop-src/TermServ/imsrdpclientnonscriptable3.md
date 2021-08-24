@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c799fe96da433e09a5cb472887b9bcf992db0b2f3b423f5f99758bb68d164c97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f65756224134392629a11cc0bbe2ef35f8d687cc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117941557"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474557"
 ---
 # <a name="imsrdpclientnonscriptable3-interface"></a>Interfaccia IMsRdpClientNonScriptable3
 
@@ -39,82 +39,21 @@ Fornisce l'accesso alle proprietà non scriptable della sessione remota di un cl
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Proprietà</th>
-<th style="text-align: left;">Tipo di accesso</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-connectionbartext.md"><strong>ConnectionBarText</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Stringa di testo da visualizzare per la barra di connessione.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-devicecollection.md"><strong>DeviceCollection</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Raccolta di dispositivi PnP disponibili per il reindirizzamento.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-drivecollection.md"><strong>Raccolta di unità</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Raccolta di unità disco disponibile per il reindirizzamento.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>EnableCredSspSupport</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se CredSSP è abilitato per questa connessione.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-negotiatesecuritylayer.md"><strong>NegotiateSecurityLayer</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se l'impostazione NegotiateSecurityLayer è supportata per questa connessione.<br/>
-<blockquote>
-[!Note]<br />
-Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> è abilitato e presente nel client o quando Secure Sockets Layer (SSL) è abilitato con l'autenticazione utente, NegotiateSecurityLayer viene ignorato.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-promptforcredentials.md"><strong>PromptForCredentials</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se deve essere visualizzata la finestra di dialogo di richiesta delle credenziali.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-redirectdynamicdevices.md"><strong>RedirectDynamicDevices</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se i dispositivi PnP collegati dinamicamente enumerati durante una sessione sono disponibili per il reindirizzamento.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-redirectdynamicdrives.md"><strong>RedirectDynamicDrives</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se le unità PnP collegate dinamicamente enumerate durante una sessione sono disponibili per il reindirizzamento.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-showredirectionwarningdialog.md"><strong>ShowRedirectionWarningDialog</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se la finestra di dialogo di avviso di sicurezza di reindirizzamento deve essere visualizzata prima di avviare una sessione.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-warnaboutclipboardredirection.md"><strong>WarnAboutClipboardRedirection</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se la finestra di dialogo di avviso di sicurezza deve includere un avviso sul reindirizzamento degli Appunti prima di avviare una sessione.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-warnaboutsendingcredentials.md"><strong>WarnAboutSendingCredentials</strong></a><br/></td>
-<td style="text-align: left;">Lettura/Scrittura<br/></td>
-<td style="text-align: left;">Specifica se l'avviso di sicurezza deve includere un avviso sull'invio di credenziali al server remoto prima di avviare una sessione.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Proprietà | Tipo di accesso | Descrizione | 
+|----------|-------------|-------------|
+| <a href="imsrdpclientnonscriptable3-connectionbartext.md"><strong>ConnectionBarText</strong></a><br /> | Lettura/Scrittura<br /> | Stringa di testo da visualizzare per la barra di connessione.<br /> | 
+| <a href="imsrdpclientnonscriptable3-devicecollection.md"><strong>DeviceCollection</strong></a><br /> | Sola lettura<br /> | Raccolta di dispositivi PnP disponibili per il reindirizzamento.<br /> | 
+| <a href="imsrdpclientnonscriptable3-drivecollection.md"><strong>Raccolta di unità</strong></a><br /> | Sola lettura<br /> | Raccolta di unità disco disponibile per il reindirizzamento.<br /> | 
+| <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>EnableCredSspSupport</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se CredSSP è abilitato per questa connessione.<br /> | 
+| <a href="imsrdpclientnonscriptable3-negotiatesecuritylayer.md"><strong>NegotiateSecurityLayer</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se l'impostazione NegotiateSecurityLayer è supportata per questa connessione.<br /><blockquote>[!Note]<br />Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> è abilitato e presente nel client o quando Secure Sockets Layer (SSL) è abilitato con l'autenticazione utente, NegotiateSecurityLayer viene ignorato.</blockquote><br /> | 
+| <a href="imsrdpclientnonscriptable3-promptforcredentials.md"><strong>PromptForCredentials</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se deve essere visualizzata la finestra di dialogo di richiesta delle credenziali.<br /> | 
+| <a href="imsrdpclientnonscriptable3-redirectdynamicdevices.md"><strong>RedirectDynamicDevices</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se i dispositivi PnP collegati dinamicamente enumerati durante una sessione sono disponibili per il reindirizzamento.<br /> | 
+| <a href="imsrdpclientnonscriptable3-redirectdynamicdrives.md"><strong>RedirectDynamicDrives</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se le unità PnP collegate dinamicamente enumerate durante una sessione sono disponibili per il reindirizzamento.<br /> | 
+| <a href="imsrdpclientnonscriptable3-showredirectionwarningdialog.md"><strong>ShowRedirectionWarningDialog</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se la finestra di dialogo di avviso di sicurezza di reindirizzamento deve essere visualizzata prima di avviare una sessione.<br /> | 
+| <a href="imsrdpclientnonscriptable3-warnaboutclipboardredirection.md"><strong>WarnAboutClipboardRedirection</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se la finestra di dialogo di avviso di sicurezza deve includere un avviso sul reindirizzamento degli Appunti prima di avviare una sessione.<br /> | 
+| <a href="imsrdpclientnonscriptable3-warnaboutsendingcredentials.md"><strong>WarnAboutSendingCredentials</strong></a><br /> | Lettura/Scrittura<br /> | Specifica se l'avviso di sicurezza deve includere un avviso sull'invio di credenziali al server remoto prima di avviare una sessione.<br /> | 
+
 
 
 
@@ -124,7 +63,7 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -148,7 +87,7 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 [**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
 </dt> <dt>
 
-[Connessione Web Desktop remoto di riferimento](remote-desktop-web-connection-reference.md)
+[Connessione Web Desktop remoto informazioni di riferimento](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Desktop remoto gateway di rete
-description: L Desktop remoto API Gateway Desktop remoto supporta le strutture seguenti.
+title: Desktop remoto di gateway
+description: L'API Desktop remoto Gateway Desktop remoto supporta le strutture seguenti.
 ms.assetid: fac5c23b-7efd-4b9d-b94d-e24ab1feffdf
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119988741"
 ---
-# <a name="remote-desktop-gateway-structures"></a>Desktop remoto gateway di rete
+# <a name="remote-desktop-gateway-structures"></a>Desktop remoto di gateway
 
-L Desktop remoto API Gateway Desktop remoto supporta le strutture seguenti.
+L'API Desktop remoto Gateway Desktop remoto supporta le strutture seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

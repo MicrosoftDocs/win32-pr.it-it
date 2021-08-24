@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7d24e19d49a8a96f91847892f519ef6c06d25ef5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dc609e742a4f780f3cb8c34e4dbc4cc40842ee51
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114438"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473657"
 ---
 # <a name="d3dxgetpixelshaderprofile-function"></a>Funzione D3DXGetPixelShaderProfile
 
@@ -45,7 +45,7 @@ LPCSTR D3DXGetPixelShaderProfile(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore al dispositivo. Vedere [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9).
+Puntatore al dispositivo. Vedere [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)
 
 </dd> </dl>
 
@@ -63,76 +63,30 @@ Un profilo shader specifica la versione dell'assembly shader da usare e le funzi
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Profilo shader</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ps_1_1</td>
-<td>Eseguire la compilazione ps_1_1 versione.</td>
-</tr>
-<tr class="even">
-<td>ps_1_2</td>
-<td>Compilare per ps_1_2 versione.</td>
-</tr>
-<tr class="odd">
-<td>ps_1_3</td>
-<td>Compilare per ps_1_3 versione.</td>
-</tr>
-<tr class="even">
-<td>ps_1_4</td>
-<td>Eseguire la compilazione ps_1_4 versione.</td>
-</tr>
-<tr class="odd">
-<td>ps_2_0</td>
-<td>Eseguire la compilazione ps_2_0 versione.</td>
-</tr>
-<tr class="even">
-<td>ps_2_a</td>
-<td>Uguale al profilo ps_2_0, con le funzionalità aggiuntive seguenti disponibili per il compilatore come destinazione:
-<ul>
-<li>Il numero di registri temporanei (r#) è maggiore o uguale a 22.</li>
-<li>Swizzle di origine arbitrario.</li>
-<li>Istruzioni per la sfumatura: dsx, dsy.</li>
-<li>Predicazione.</li>
-<li>Nessun limite di lettura della trama dipendente.</li>
-<li>Nessun limite per il numero di istruzioni di trama.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>ps_2_b</td>
-<td>Uguale al profilo ps_2_0, con le funzionalità aggiuntive seguenti disponibili per il compilatore come destinazione:
-<ul>
-<li>Il numero di registri temporanei (r#) è maggiore o uguale a 32.</li>
-<li>Nessun limite per il numero di istruzioni di trama.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>ps_3_0</td>
-<td>Compilare per ps_3_0 versione.</td>
-</tr>
-</tbody>
-</table>
+
+| Profilo shader | Descrizione | 
+|----------------|-------------|
+| ps_1_1 | Compilare per ps_1_1 versione. | 
+| ps_1_2 | Compilare per ps_1_2 versione. | 
+| ps_1_3 | Compilare per ps_1_3 versione. | 
+| ps_1_4 | Compilare per ps_1_4 versione. | 
+| ps_2_0 | Compilare per ps_2_0 versione. | 
+| ps_2_a | Uguale al profilo ps_2_0, con le funzionalità aggiuntive seguenti disponibili per il compilatore come destinazione:<ul><li>Il numero di registri temporanei (r#) è maggiore o uguale a 22.</li><li>Scorrimento arbitrario dell'origine.</li><li>Istruzioni sfumatura: dsx, dsy.</li><li>Predicazione.</li><li>Nessun limite di lettura trame dipendente.</li><li>Nessun limite per il numero di istruzioni di trama.</li></ul> | 
+| ps_2_b | Uguale al profilo ps_2_0, con le funzionalità aggiuntive seguenti disponibili per il compilatore come destinazione:<ul><li>Il numero di registri temporanei (r#) è maggiore o uguale a 32.</li><li>Nessun limite per il numero di istruzioni di trama.</li></ul> | 
+| ps_3_0 | Compilare per ps_3_0 versione. | 
+
 
 
 
  
 
-Per altre informazioni sulle differenze tra le versioni dello shader, vedere [Differenze di pixel shader.](../direct3dhlsl/dx9-graphics-reference-asm-ps-differences.md)
+Per altre informazioni sulle differenze tra le versioni dello shader, vedere [Differenze dei pixel shader.](../direct3dhlsl/dx9-graphics-reference-asm-ps-differences.md)
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |--------------------|------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
 | Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |

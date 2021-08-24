@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0771bb1dffc006abf8e02e6c391278f7d0b03f11
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4ebba4d72b7bc79f2aaefccfa2d71e57abd82aa06efb09abc2e83cebdb513f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033531"
 ---
 # <a name="csymboltype-simple-type-performance-counters"></a>Tipo semplice CSymbolType (contatori delle prestazioni)
 
@@ -46,8 +46,8 @@ Il **tipo semplice CSymbolType** è **un tipo xs:string** limitato dal modello s
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

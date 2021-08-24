@@ -1,19 +1,19 @@
 ---
-description: Le funzioni seguenti vengono utilizzate nella gestione strutturata delle eccezioni.
+description: Le funzioni seguenti vengono usate nella gestione strutturata delle eccezioni.
 ms.assetid: 61cf055b-eb9a-4e56-9d36-21fc95adea77
 title: Funzioni di gestione delle eccezioni strutturate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c70b431be2961a55bba28bdfe07723e93b95ac69
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 947cde636051e6d51428b1d75b7d299ce196b0f4335e096f99d6da6a277ae259
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815501"
 ---
 # <a name="structured-exception-handling-functions"></a>Funzioni di gestione delle eccezioni strutturate
 
-Le funzioni seguenti vengono utilizzate nella gestione strutturata delle eccezioni.
+Le funzioni seguenti vengono usate nella gestione strutturata delle eccezioni.
 
 -   [**AbnormalTermination**](abnormaltermination.md)
 
@@ -25,7 +25,7 @@ Le funzioni seguenti vengono utilizzate nella gestione strutturata delle eccezio
 
 -   [**AddVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler)
 
-    Registra un gestore di eccezioni vettoriale.
+    Registra un gestore eccezioni vettoriale.
 
 -   [**GetExceptionCode**](getexceptioncode.md)
 
@@ -33,7 +33,7 @@ Le funzioni seguenti vengono utilizzate nella gestione strutturata delle eccezio
 
 -   [**GetExceptionInformation**](getexceptioninformation.md)
 
-    Recupera una descrizione indipendente dal computer di un'eccezione e le informazioni sullo stato del computer esistente per il thread quando si è verificata l'eccezione.
+    Recupera una descrizione indipendente dal computer di un'eccezione e informazioni sullo stato del computer esistenti per il thread quando si è verificata l'eccezione.
 
 -   [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
 
@@ -45,33 +45,33 @@ Le funzioni seguenti vengono utilizzate nella gestione strutturata delle eccezio
 
 -   [**RemoveVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredexceptionhandler)
 
-    Annulla la registrazione di un gestore di eccezioni vettoriale.
+    Annulla la registrazione di un gestore eccezioni vettoriale.
 
 -   [**RtlAddGrowableFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtladdgrowablefunctiontable)
 
-    Informa il sistema di una tabella di funzioni dinamiche che rappresenta un'area di memoria contenente il codice.
+    Informa il sistema di una tabella di funzioni dinamiche che rappresenta un'area di memoria contenente codice.
 
 -   [**RtlDeleteGrowableFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtldeletegrowablefunctiontable)
 
-    Informa il sistema che una tabella di funzioni dinamiche segnalata in precedenza non è più utilizzata.
+    Informa il sistema che una tabella di funzioni dinamiche segnalata in precedenza non è più in uso.
 
 -   [**RtlGrowFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtlgrowfunctiontable)
 
-    Segnala che una tabella di funzioni dinamiche è aumentata di dimensioni.
+    Segnala che le dimensioni di una tabella di funzioni dinamiche sono aumentate.
 
 -   [**SetUnhandledExceptionFilter**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)
 
-    Consente a un'applicazione di sostituire il gestore di eccezioni di primo livello di ogni thread e processo.
+    Consente a un'applicazione di sostituisce il gestore eccezioni di primo livello di ogni thread e processo.
 
 -   [**UnhandledExceptionFilter**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter)
 
-    Passa le eccezioni non gestite al debugger, se è in corso il debug del processo.
+    Passa le eccezioni non gestite al debugger, se il processo è in fase di debug.
 
 -   [**VectoredHandler**](/windows/desktop/api/WinNT/nc-winnt-pvectored_exception_handler)
 
-    Funzione definita dall'applicazione che funge da gestore di eccezioni vettoriale.
+    Funzione definita dall'applicazione che funge da gestore di eccezioni vettoriali.
 
-Le funzioni seguenti vengono utilizzate solo in Windows a 64 bit.
+Le funzioni seguenti vengono usate solo in Windows a 64 bit.
 
 -   [**RtlAddFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtladdfunctiontable)
 
@@ -83,7 +83,7 @@ Le funzioni seguenti vengono utilizzate solo in Windows a 64 bit.
 
 -   [**RtlDeleteFunctionTable**](/windows/desktop/api/WinNT/nf-winnt-rtldeletefunctiontable)
 
-    Rimuove una tabella di funzioni dinamiche dall'elenco tabella di funzioni dinamiche.
+    Rimuove una tabella di funzioni dinamiche dall'elenco di tabelle di funzioni dinamiche.
 
 -   [**RtlInstallFunctionTableCallback**](/windows/desktop/api/WinNT/nf-winnt-rtlinstallfunctiontablecallback)
 

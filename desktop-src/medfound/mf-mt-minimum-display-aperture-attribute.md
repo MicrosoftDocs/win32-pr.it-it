@@ -1,5 +1,5 @@
 ---
-description: Definisce l'apertura di visualizzazione, ovvero l'area di un fotogramma video che contiene dati di immagine validi.
+description: Definisce l'apertura dello schermo, ovvero l'area di un fotogramma video che contiene dati di immagine validi.
 ms.assetid: 86a7509b-c690-49c2-bbe4-8b02d64c307c
 title: MF_MT_MINIMUM_DISPLAY_APERTURE attributo (Mfapi.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "120012941"
 ---
 # <a name="mf_mt_minimum_display_aperture-attribute"></a>Attributo \_ MF MT \_ MINIMUM \_ DISPLAY \_ APERTURE
 
-Definisce l'apertura di visualizzazione, ovvero l'area di un fotogramma video che contiene dati di immagine validi.
+Definisce l'apertura dello schermo, ovvero l'area di un fotogramma video che contiene dati di immagine validi.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Matrice di byte
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dell'attributo è [**una struttura MFVideoArea.**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea)
+Il valore dell'attributo è una [**struttura MFVideoArea.**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea)
 
 L'apertura minima dello schermo è l'area che contiene la parte valida del segnale. I pixel all'esterno dell'apertura contengono dati non validi e non devono essere visualizzati.
 

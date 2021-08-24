@@ -1,9 +1,9 @@
 ---
-title: Funzione RasAdminPortGetInfo (rassapi. h)
-description: La funzione RasAdminPortGetInfo recupera le informazioni su una porta specificata in un server specificato.
+title: Funzione RasAdminPortGetInfo (Rassapi.h)
+description: La funzione RasAdminPortGetInfo recupera informazioni su una porta specificata in un server specificato.
 ms.assetid: 22837685-62a4-4e55-b88f-11019d5d4154
 keywords:
-- RAS funzione RasAdminPortGetInfo
+- RasAdminPortGetInfo (funzione RAS)
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8d80c55b3182ec930732344cb7857f99c0dc411
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e633b663e9c4b35810585a2ac738c79ae2d39be06d7b91be0df75fd0455a5213
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028511"
 ---
-# <a name="rasadminportgetinfo-function"></a>RasAdminPortGetInfo (funzione)
+# <a name="rasadminportgetinfo-function"></a>Funzione RasAdminPortGetInfo
 
-\[Questa funzione viene fornita solo per compatibilità con le versioni precedenti di Windows NT Server 4,0. Restituisce la \_ chiamata \_ di errore non \_ implementata in Windows Server 2003. Le applicazioni devono utilizzare la funzione [**MprAdminPortGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo) .\]
+\[Questa funzione viene fornita solo per la compatibilità con Windows NT Server 4.0. Restituisce ERROR \_ CALL NOT IMPLEMENTED in Windows Server \_ \_ 2003. Le applicazioni devono usare [**la funzione MprAdminPortGetInfo.**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo)\]
 
-La funzione **RasAdminPortGetInfo** recupera le informazioni su una porta specificata in un server specificato.
+La **funzione RasAdminPortGetInfo** recupera informazioni su una porta specificata in un server specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,59 +46,59 @@ DWORD RasAdminPortGetInfo(
 
 <dl> <dt>
 
-*lpszServer* \[ in\]
+*lpszServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome del server RAS. Specificare il nome con i \\ \\ caratteri "" iniziali nel formato: \\ \\ *ServerName*.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome del server RAS. Specificare il nome con caratteri \\ \\ " " iniziali, nel formato: \\ \\ *nomeserver*.
 
 </dd> <dt>
 
-*lpszPort* \[ in\]
+*lpszPort* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode con terminazione null che specifica il nome della porta nel server.
+Puntatore a una stringa Unicode con terminazione Null che specifica il nome della porta nel server.
 
 </dd> <dt>
 
-*pRasPort1* \[ out\]
+*pRasPort1* \[ Cambio\]
 </dt> <dd>
 
-Puntatore alla struttura [**della \_ porta RAS \_ 1**](ras-port-1-str.md) che la funzione compila con informazioni sullo stato della porta.
+Puntatore alla [**struttura RAS \_ PORT \_ 1**](ras-port-1-str.md) compilata dalla funzione con informazioni sullo stato della porta.
 
 </dd> <dt>
 
-*pRasStats* \[ out\]
+*pRasStats* \[ Cambio\]
 </dt> <dd>
 
-Puntatore alla struttura [**delle \_ \_ statistiche della porta RAS**](ras-port-statistics-str.md) che la funzione compila con le statistiche sulla porta.
+Puntatore alla [**struttura RAS \_ PORT \_ STATISTICS**](ras-port-statistics-str.md) compilata dalla funzione con statistiche sulla porta.
 
 </dd> <dt>
 
-*ppRasParams* \[ out\]
+*ppRasParams* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di strutture di [**\_ parametri RAS**](ras-parameters-str.md) . Ogni struttura contiene il nome di una chiave specifica del supporto, ad esempio MAXCONNECTBPS, e il relativo valore associato. Al termine dell'applicazione, liberare la memoria chiamando la funzione [**RasAdminFreeBuffer**](rasadminfreebuffer.md) .
+Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di [**strutture \_ PARAMETERS RAS.**](ras-parameters-str.md) Ogni struttura contiene il nome di una chiave specifica del supporto, ad esempio MAXCONNECTBPS, e il relativo valore associato. Al termine dell'applicazione, liberare la memoria chiamando la [**funzione RasAdminFreeBuffer.**](rasadminfreebuffer.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
-Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti codici di errore.
+Se la funzione ha esito negativo, il valore restituito può essere uno dei codici di errore seguenti.
 
 
 
 | Valore                                                                                                     | Significato                                                                          |
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <dl> <dt>**ERRORE \_ dev \_ non \_ esiste**</dt> </dl>     | La porta specificata non è valida.<br/>                                        |
-| <dl> <dt>**ERRORE \_ di \_ memoria insufficiente \_**</dt> </dl> | Memoria insufficiente per allocare un buffer per la matrice *ppRasParams* .<br/> |
+| <dl> <dt>**ERRORE \_ DEV \_ \_ INESISTENTE**</dt> </dl>     | La porta specificata non è valida.<br/>                                        |
+| <dl> <dt>**MEMORIA \_ INSUFFICIENTE \_ PER \_ L'ERRORE**</dt> </dl> | Memoria insufficiente per allocare un buffer per *la matrice ppRasParams.*<br/> |
 
 
 
  
 
-Non sono disponibili informazioni estese sull'errore per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Non sono disponibili informazioni sugli errori estesi per questa funzione. non chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,8 +108,8 @@ Non sono disponibili informazioni estese sull'errore per questa funzione. non ch
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/> | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
-| Libreria<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
+| Intestazione<br/>                | <dl> <dt>Rassapi.h</dt> </dl>   |
+| Libreria<br/>               | <dl> <dt>Rassapi.lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 
 
@@ -124,13 +124,13 @@ Non sono disponibili informazioni estese sull'errore per questa funzione. non ch
 [Funzioni di amministrazione del server RAS](ras-server-administration-functions.md)
 </dt> <dt>
 
-[**\_parametri RAS**](ras-parameters-str.md)
+[**PARAMETRI \_ RAS**](ras-parameters-str.md)
 </dt> <dt>
 
-[**\_Porta RAS \_ 1**](ras-port-1-str.md)
+[**PORTA \_ RAS \_ 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_statistiche porta \_ RAS**](ras-port-statistics-str.md)
+[**STATISTICHE \_ PORTA \_ RAS**](ras-port-statistics-str.md)
 </dt> <dt>
 
 [**RasAdminFreeBuffer**](rasadminfreebuffer.md)

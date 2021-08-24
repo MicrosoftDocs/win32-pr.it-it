@@ -1,75 +1,75 @@
 ---
-description: Questa sezione contiene un elenco alfabetico delle costanti del dispositivo linea TAPI.
+description: Questa sezione contiene un elenco alfabetico delle costanti dispositivo linea TAPI.
 ms.assetid: 422643a6-90a5-4e95-b5aa-946b7fbf53bc
-title: Costanti del dispositivo linea
+title: Costanti dispositivo linea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd797da867ceb8eec9c8d6d98fe11b7d511e989
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd1987e0db8e19664b4c115f32f9c9e319ceabff61c0cd222f67eba09e1fbd72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873491"
 ---
-# <a name="line-device-constants"></a>Costanti del dispositivo linea
+# <a name="line-device-constants"></a>Costanti dispositivo linea
 
-Questa sezione contiene un elenco alfabetico delle costanti del dispositivo linea TAPI seguenti:
+Questa sezione contiene un elenco alfabetico delle costanti dispositivo linea TAPI seguenti:
 
--   [\_Costanti LINEADDRCAPFLAGS](lineaddrcapflags--constants.md)
--   [\_Costanti LINEADDRESSMODE](lineaddressmode--constants.md)
--   [\_Costanti LINEADDRESSSHARING](lineaddresssharing--constants.md)
--   [\_Costanti LINEADDRESSSTATE](lineaddressstate--constants.md)
--   [\_Costanti LINEADDRFEATURE](lineaddrfeature--constants.md)
--   [\_Costanti LINEANSWERMODE](lineanswermode--constants.md)
--   [\_Costanti LINEBEARERMODE](linebearermode--constants.md)
--   [\_Costanti LINEBUSYMODE](linebusymode--constants.md)
--   [\_Costanti LINECALLCOMPLCOND](linecallcomplcond--constants.md)
--   [\_Costanti LINECALLCOMPLMODE](linecallcomplmode--constants.md)
--   [\_Costanti LINECALLFEATURE](linecallfeature--constants.md)
--   [\_Costanti LINECALLFEATURE2](linecallfeature2--constants.md)
--   [\_Costanti LINECALLHUBTRACKING](linecallhubtracking--constants.md)
--   [\_Costanti LINECALLINFOSTATE](linecallinfostate--constants.md)
--   [\_Costanti LINECALLORIGIN](linecallorigin--constants.md)
--   [\_Costanti LINECALLPARAMFLAGS](linecallparamflags--constants.md)
--   [\_Costanti LINECALLPARTYID](linecallpartyid--constants.md)
--   [\_Costanti LINECALLPRIVILEGE](linecallprivilege--constants.md)
--   [\_Costanti LINECALLREASON](linecallreason--constants.md)
--   [\_Costanti LINECALLTREATMENT](linecalltreatment--constants.md)
--   [\_Costanti LINECALLSELECT](linecallselect--constants.md)
--   [\_Costanti LINECALLSTATE](linecallstate--constants.md)
--   [\_Costanti LINECARDOPTION](linecardoption--constants.md)
--   [\_Costanti LINECONNECTEDMODE](lineconnectedmode--constants.md)
--   [\_Costanti LINEDEVCAPFLAGS](linedevcapflags--constants.md)
--   [\_Costanti LINEDEVSTATE](linedevstate--constants.md)
--   [\_Costanti LINEDEVSTATUSFLAGS](linedevstatusflags--constants.md)
--   [\_Costanti LINEDIALTONEMODE](linedialtonemode--constants.md)
--   [\_Costanti LINEDIGITMODE](linedigitmode--constants.md)
--   [\_Costanti LINEDISCONNECTMODE](linedisconnectmode--constants.md)
--   [\_Costanti LINEERR](lineerr--constants.md)
--   [\_Costanti LINEFEATURE](linefeature--constants.md)
--   [\_Costanti LINEFORWARDMODE](lineforwardmode--constants.md)
--   [\_Costanti LINEGATHERTERM](linegatherterm--constants.md)
--   [\_Costanti LINEGENERATETERM](linegenerateterm--constants.md)
--   [\_Costanti LINELOCATIONOPTION](linelocationoption--constants.md)
--   [\_Costanti LINEINITIALIZEEXOPTION](lineinitializeexoption--constants.md)
--   [\_Costanti LINEMEDIACONTROL](linemediacontrol--constants.md)
--   [\_Costanti LINEMEDIAMODE](linemediamode--constants.md)
--   [\_Costanti LINEOFFERINGMODE](lineofferingmode--constants.md)
--   [\_Costanti LINEOPENOPTION](lineopenoption--constants.md)
--   [\_Costanti LINEPARKMODE](lineparkmode--constants.md)
--   [\_Costanti LINEREMOVEFROMCONF](lineremovefromconf--constants.md)
--   [\_Costanti LINEREQUESTMODE](linerequestmode--constants.md)
--   [\_Costanti LINEROAMMODE](lineroammode--constants.md)
--   [\_Costanti LINESPECIALINFO](linespecialinfo--constants.md)
--   [\_Costanti LINETERMDEV](linetermdev--constants.md)
--   [\_Costanti LINETERMMODE](linetermmode--constants.md)
--   [\_Costanti LINETERMSHARING](linetermsharing--constants.md)
--   [\_Costanti LINETOLLLISTOPTION](linetolllistoption--constants.md)
--   [\_Costanti LINETONEMODE](linetonemode--constants.md)
--   [\_Costanti LINETRANSFERMODE](linetransfermode--constants.md)
--   [\_Costanti LINETRANSLATEOPTION](linetranslateoption--constants.md)
--   [\_Costanti LINETRANSLATERESULT](linetranslateresult--constants.md)
--   [\_Costanti LINETSPIOPTION](linetspioption--constants.md)
+-   [Costanti LINEADDRCAPFLAGS \_](lineaddrcapflags--constants.md)
+-   [Costanti \_ LINEADDRESSMODE](lineaddressmode--constants.md)
+-   [Costanti \_ LINEADDRESSSHARING](lineaddresssharing--constants.md)
+-   [Costanti \_ LINEADDRESSSTATE](lineaddressstate--constants.md)
+-   [Costanti LINEADDRFEATURE \_](lineaddrfeature--constants.md)
+-   [Costanti LINEANSWERMODE \_](lineanswermode--constants.md)
+-   [Costanti LINEBEARERMODE \_](linebearermode--constants.md)
+-   [Costanti LINEBUSYMODE \_](linebusymode--constants.md)
+-   [Costanti LINECALLCOMPLCOND \_](linecallcomplcond--constants.md)
+-   [Costanti LINECALLCOMPLMODE \_](linecallcomplmode--constants.md)
+-   [Costanti LINECALLFEATURE \_](linecallfeature--constants.md)
+-   [Costanti LINECALLFEATURE2 \_](linecallfeature2--constants.md)
+-   [Costanti LINECALLHUBTRACKING \_](linecallhubtracking--constants.md)
+-   [Costanti LINECALLINFOSTATE \_](linecallinfostate--constants.md)
+-   [Costanti LINECALLORIGIN \_](linecallorigin--constants.md)
+-   [Costanti LINECALLPARAMFLAGS \_](linecallparamflags--constants.md)
+-   [Costanti LINECALLPARTYID \_](linecallpartyid--constants.md)
+-   [Costanti LINECALLPRIVILEGE \_](linecallprivilege--constants.md)
+-   [Costanti \_ LINECALLREASON](linecallreason--constants.md)
+-   [Costanti LINECALLTREATMENT \_](linecalltreatment--constants.md)
+-   [Costanti \_ LINECALLSELECT](linecallselect--constants.md)
+-   [Costanti \_ LINECALLSTATE](linecallstate--constants.md)
+-   [Costanti \_ LINECARDOPTION](linecardoption--constants.md)
+-   [Costanti LINECONNECTEDMODE \_](lineconnectedmode--constants.md)
+-   [Costanti LINEDEVCAPFLAGS \_](linedevcapflags--constants.md)
+-   [Costanti \_ LINEDEVSTATE](linedevstate--constants.md)
+-   [Costanti LINEDEVSTATUSFLAGS \_](linedevstatusflags--constants.md)
+-   [Costanti LINEDIAGNOEMODE \_](linedialtonemode--constants.md)
+-   [Costanti LINEDIGITMODE \_](linedigitmode--constants.md)
+-   [Costanti LINEDISCONNECTMODE \_](linedisconnectmode--constants.md)
+-   [Costanti \_ LINEERR](lineerr--constants.md)
+-   [Costanti \_ LINEFEATURE](linefeature--constants.md)
+-   [Costanti LINEFORWARDMODE \_](lineforwardmode--constants.md)
+-   [Costanti LINEGATHERTERM \_](linegatherterm--constants.md)
+-   [Costanti LINEGENERATETERM \_](linegenerateterm--constants.md)
+-   [Costanti \_ LINELOCATIONOPTION](linelocationoption--constants.md)
+-   [Costanti LINEINITIALIZEEXOPTION \_](lineinitializeexoption--constants.md)
+-   [Costanti \_ LINEMEDIACONTROL](linemediacontrol--constants.md)
+-   [Costanti \_ LINEMEDIAMODE](linemediamode--constants.md)
+-   [Costanti LINEOFFERINGMODE \_](lineofferingmode--constants.md)
+-   [Costanti LINEOPENOPTION \_](lineopenoption--constants.md)
+-   [Costanti \_ LINEPARKMODE](lineparkmode--constants.md)
+-   [Costanti LINEREMOVEFROMCONF \_](lineremovefromconf--constants.md)
+-   [Costanti \_ LINEREQUESTMODE](linerequestmode--constants.md)
+-   [Costanti LINEROAMMODE \_](lineroammode--constants.md)
+-   [Costanti LINESPECIALINFO \_](linespecialinfo--constants.md)
+-   [Costanti \_ LINETERMDEV](linetermdev--constants.md)
+-   [Costanti \_ LINETERMMODE](linetermmode--constants.md)
+-   [Costanti \_ LINETERMSHARING](linetermsharing--constants.md)
+-   [Costanti LINETOLLLISTOPTION \_](linetolllistoption--constants.md)
+-   [Costanti LINETONEMODE \_](linetonemode--constants.md)
+-   [Costanti LINETRANSFERMODE \_](linetransfermode--constants.md)
+-   [Costanti LINETRANSLATEOPTION \_](linetranslateoption--constants.md)
+-   [Costanti LINETRANSLATERESULT \_](linetranslateresult--constants.md)
+-   [Costanti LINETSPIOPTION \_](linetspioption--constants.md)
 
  
 

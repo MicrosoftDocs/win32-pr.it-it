@@ -1,5 +1,5 @@
 ---
-title: attributo shadowMax
+title: Attributo shadowMax
 description: Contiene il numero massimo di giorni per cui una password può essere valida.
 ms.assetid: 66a5f9d3-8a61-42eb-9d39-50c305844ba3
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa97b49bd55e0d509784eee744ee5cd032941df6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5e0bc2207571865a8c0b7683c94de79c93866d1070e480e7c764580af3b5c12f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836561"
 ---
-# <a name="shadowmax-attribute"></a>attributo shadowMax
+# <a name="shadowmax-attribute"></a>Attributo shadowMax
 
 Contiene il numero massimo di giorni per cui una password può essere valida.
 
@@ -29,12 +29,12 @@ Contiene il numero massimo di giorni per cui una password può essere valida.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | shadowMax                            |
-| LDAP-Display-Name | shadowMax                            |
+| Ldap-Display-Name | shadowMax                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.7                      |
-| System-ID-GUID    | f285c952-50dd-449e-9160-3b880d99988d |
+| System-Id-Guid    | f285c952-50dd-449e-9160-3b880d99988d |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene il numero massimo di giorni per cui una password può essere valida.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il numero massimo di giorni per cui una password può essere valida.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il numero massimo di giorni per cui una password può essere valida.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene il numero massimo di giorni per cui una password può essere valida.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000000                                          |
-| Classi utilizzate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
+| Classi usate in        | [**shadowAccount**](c-shadowaccount.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Proprietà QuickAccessToolbar. ApplicationDefaults
-description: Rappresenta un contenitore per i comandi predefiniti nella barra di accesso rapido (QAT).
+title: QuickAccessToolbar.ApplicationDefaults - proprietà
+description: Rappresenta un contenitore per i comandi predefiniti nella barra di accesso rapido.
 ms.assetid: 8f44d7c0-1a39-4a88-ae01-7d7d1bb6bf7e
 keywords:
-- Barra multifunzione di Windows QuickAccessToolbar. ApplicationDefaults
+- Proprietà QuickAccessToolbar.ApplicationDefaults Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 084ea334441cb0cf545adaa3d1016f7d02da1b88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 701a7c72e40b1efe9104d6794fa739c556b0fb4b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301189"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473747"
 ---
-# <a name="quickaccesstoolbarapplicationdefaults-property"></a>Proprietà QuickAccessToolbar. ApplicationDefaults
+# <a name="quickaccesstoolbarapplicationdefaults-property"></a>QuickAccessToolbar.ApplicationDefaults - proprietà
 
-Rappresenta un contenitore per i comandi predefiniti nella [barra di accesso rapido (QAT)](windowsribbon-controls-quickaccesstoolbar.md).
+Rappresenta un contenitore per i comandi predefiniti nella barra [di accesso rapido .](windowsribbon-controls-quickaccesstoolbar.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -39,68 +39,17 @@ Non ci sono attributi.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="windowsribbon-element-button.md"><strong>Button</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-element-checkbox.md"><strong>Casella</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/> <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-element-combobox.md"><strong>ComboBox</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/>
-<blockquote>
-[!Note]<br />
-Windows 8 e versioni successive.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-element-dropdowngallery.md"><strong>DropDownGallery</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/>
-<blockquote>
-[!Note]<br />
-Windows 8 e versioni successive.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-element-inribbongallery.md"><strong>Inribbongallery</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/>
-<blockquote>
-[!Note]<br />
-Windows 8 e versioni successive.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-element-splitbuttongallery.md"><strong>SplitButtonGallery</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/>
-<blockquote>
-[!Note]<br />
-Windows 8 e versioni successive.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-element-togglebutton.md"><strong>ToggleButton</strong></a><br/></td>
-<td>È necessaria almeno una occorrenza.<br/> <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descrizione | 
+|---------|-------------|
+| <a href="windowsribbon-element-button.md"><strong>Button</strong></a><br /> | È necessaria almeno una occorrenza.<br /><br /> | 
+| <a href="windowsribbon-element-checkbox.md"><strong>CheckBox</strong></a><br /> | È necessaria almeno una occorrenza.<br /><br /> | 
+| <a href="windowsribbon-element-combobox.md"><strong>ComboBox</strong></a><br /> | È necessaria almeno una occorrenza.<br /><blockquote>[!Note]<br />Windows 8 e più recente.</blockquote><br /><br /> | 
+| <a href="windowsribbon-element-dropdowngallery.md"><strong>DropDownGallery</strong></a><br /> | È necessaria almeno una occorrenza.<br /><blockquote>[!Note]<br />Windows 8 e più recente.</blockquote><br /><br /> | 
+| <a href="windowsribbon-element-inribbongallery.md"><strong>InRibbonGallery</strong></a><br /> | È necessaria almeno una occorrenza.<br /><blockquote>[!Note]<br />Windows 8 e più recente.</blockquote><br /><br /> | 
+| <a href="windowsribbon-element-splitbuttongallery.md"><strong>SplitButtonGallery</strong></a><br /> | È necessaria almeno una occorrenza.<br /><blockquote>[!Note]<br />Windows 8 e più recente.</blockquote><br /><br /> | 
+| <a href="windowsribbon-element-togglebutton.md"><strong>ToggleButton</strong></a><br /> | È necessaria almeno una occorrenza.<br /><br /> | 
+
 
 
 
@@ -118,7 +67,7 @@ Windows 8 e versioni successive.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**QuickAccessToolBar**](windowsribbon-element-quickaccesstoolbar.md).
+Può verificarsi al massimo una volta per [**ogni QuickAccessToolbar**](windowsribbon-element-quickaccesstoolbar.md).
 
 È necessario specificare almeno un elemento figlio.
 
@@ -126,9 +75,9 @@ Può essere presente al massimo una volta per ogni [**QuickAccessToolBar**](wind
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [**QuickAccessToolBar**](windowsribbon-element-quickaccesstoolbar.md).
+Nell'esempio seguente viene illustrato il markup di base per [**QuickAccessToolbar**](windowsribbon-element-quickaccesstoolbar.md).
 
-Questa sezione di codice mostra la dichiarazione di controllo **QuickAccessToolBar. ApplicationDefaults** .
+Questa sezione di codice illustra la dichiarazione del controllo **QuickAccessToolbar.ApplicationDefaults.**
 
 
 ```XML
@@ -150,10 +99,10 @@ Questa sezione di codice mostra la dichiarazione di controllo **QuickAccessToolB
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -161,7 +110,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **QuickAccessToolB
 
 <dl> <dt>
 
-[Controllo della barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md)
+[Controllo Barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md)
 </dt> </dl>
 
  

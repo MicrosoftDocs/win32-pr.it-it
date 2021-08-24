@@ -1,45 +1,45 @@
 ---
-description: Un dispositivo telefonico è un dispositivo che supporta la classe del dispositivo telefonico e che include hookswitches, Handset, vivavoce e auricolari.
+description: Un dispositivo telefono è un dispositivo che supporta la classe di dispositivi telefonici e che include hookswitch, ricevitori, viva voce e visori.
 ms.assetid: c2660d77-0265-49d4-bd04-1cddd674b760
-title: Elementi telefono dispositivo
+title: Telefono Elementi del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5744967dc738a65d7632dc1a1f6126bfbc9887
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71c882e7f9ebe279d0ee6622708f8b735b68f4c37a2f93dffe2a870271d556cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774171"
 ---
-# <a name="phone-device-elements"></a>Elementi telefono dispositivo
+# <a name="phone-device-elements"></a>Telefono Elementi del dispositivo
 
-Un dispositivo telefonico è un dispositivo che supporta la classe del dispositivo telefonico e che include alcuni o tutti gli elementi seguenti:
+Un dispositivo telefono è un dispositivo che supporta la classe del dispositivo telefonico e che include alcuni o tutti gli elementi seguenti:
 
--   **Hookswitch/trasduttore**: si tratta di un mezzo per l'input e l'output audio. Un dispositivo telefonico può avere diversi trasduttori, che possono essere attivati e disattivati (Offhook o inseriti OnHook) in un'applicazione o in un controllo utente manuale.
+-   **Hookswitch/trasduttore:** si tratta di un mezzo per l'input e l'output audio. Un dispositivo telefono può avere diversi trasduttori, che possono essere attivati e disattivati (offhook o posizionati in onhook) sotto il controllo utente manuale o dell'applicazione.
 
-    Telefonia identifica tre tipi di dispositivi hookswitch comuni a molti set di telefono:
+    La telefonia identifica tre tipi di dispositivi hookswitch comuni a molti set di telefoni:
 
-     **Handset**: la combinazione di parti orale e ear tradizionale che deve essere sollevata manualmente da una culla e mantenuta sull'orecchio dell'utente.  
-    **Vivavoce**: consente all'utente di effettuare chiamate gratuite. Il vivavoce può essere interno o esterno al dispositivo telefonico. La parte speaker di un vivavoce consente più listener.  
-    **Auricolare**: consente all'utente di effettuare chiamate senza intervento.  
+     **Ricevitore:** la tradizionale combinazione di bocche e orecchini che deve essere sollevata manualmente da una culla e mantenuta sull'udito dell'utente.  
+    **Speakerphone**: consente all'utente di eseguire chiamate hands-free. La voce voce può essere interna o esterna al dispositivo telefonico. La parte speaker di un altoparlante consente più listener.  
+    **Visore:** consente all'utente di eseguire chiamate hands-free.  
     
 
-    Hookswitch deve essere Offhook per consentire l'invio e/o la ricezione di dati audio da parte del trasduttore corrispondente.
+    Un hookswitch deve essere offhook per consentire l'invio e/o la ricezione dei dati audio dal trasduttore corrispondente.
 
--   Controllo del volume/controllo di guadagno/mute: ogni dispositivo hookswitch è l'associazione di un altoparlante e di un componente Microphone. L'API fornisce il controllo del volume e il muting dei componenti del altoparlante e per ottenere il controllo o la muting dei componenti del microfono.
--   [Ringer](ring.md): consente di avvisare gli utenti, in genere tramite un campanello. Un dispositivo telefonico può essere in grado di squillare in diversi modi o modelli.
--   [Display](display.md): meccanismo per la presentazione visiva dei messaggi all'utente. Una visualizzazione telefono è caratterizzata dal numero di righe e colonne.
--   [Pulsanti di telefono](phone-buttons.md): una matrice di pulsanti. Ogni volta che l'utente preme un pulsante del set di telefono, l'API segnala che è stato premuto il pulsante corrispondente. Gli identificatori della lampada Button identificano una coppia di pulsanti e lampade. Naturalmente, è possibile che le coppie pulsante-lampada siano senza pulsante o nessuna lampada. Gli identificatori della lampada da pulsante sono valori integer compresi tra 0 e il numero massimo di lampade di pulsanti disponibili sul dispositivo telefonico, meno uno. Ogni pulsante appartiene a una classe Button. Le classi includono pulsanti per l'aspetto delle chiamate, pulsanti delle funzionalità, pulsanti del tastierino e pulsanti locali.
--   [Lampade](lamps.md): una matrice di lampade, ad esempio LED, controllabile singolarmente dall'API. Le lampade possono essere illuminate in modalità diverse variando la frequenza di accensione e spegnimento. L'identificatore della lampada pulsante identifica la lampada.
--   [Aree dati](data-areas.md): aree di memoria del dispositivo telefonico in cui è possibile scaricare e/o caricare i dati o il codice di istruzione da. Le informazioni scaricate influiscono sul comportamento (o, in altre parole, programma) sul dispositivo telefonico.
+-   Controllo volume/Controllo del guadagno/Disattivazione del microfono: ogni dispositivo hookswitch è l'associazione di un altoparlante e di un componente microfono. L'API fornisce il controllo del volume e la disattivazione dei componenti del parlante e per ottenere il controllo o la disattivazione dei componenti del microfono.
+-   [Ringer:](ring.md)un mezzo per avvisare gli utenti, in genere tramite una campana. Un dispositivo telefono può essere in grado di eseguire il ring in un'ampia gamma di modalità o modelli.
+-   [Display](display.md): meccanismo per la presentazione visiva dei messaggi all'utente. La visualizzazione di un telefono è caratterizzata dal numero di righe e colonne.
+-   [Telefono pulsanti:](phone-buttons.md)matrice di pulsanti. Ogni volta che l'utente preme un pulsante sul set di telefoni, l'API segnala che è stato premuto il pulsante corrispondente. Gli identificatori a forma di pulsante identificano una coppia di pulsanti e lampioni. Naturalmente, è possibile avere coppie pulsante-lampe con nessun pulsante o nessuna lampadina. Gli identificatori della lampadina dei pulsanti sono valori interi che vanno da 0 al numero massimo di pulsanti-lampe disponibili nel dispositivo telefonico, meno uno. Ogni pulsante appartiene a una classe di pulsanti. Le classi includono i pulsanti di aspetto delle chiamate, i pulsanti delle funzionalità, i pulsanti del tastierino numerico e i pulsanti locali.
+-   [Lamps](lamps.md): matrice di lampadine (ad esempio LED) controllabili singolarmente dall'API. Le lampadine possono essere accese in modalità diverse variando la frequenza di on e off. L'identificatore della lampadina del pulsante identifica la lampadina.
+-   [Aree dati:](data-areas.md)aree di memoria nel dispositivo telefonico da cui è possibile scaricare e/o caricare dati o codice di istruzione. Le informazioni scaricate influiranno sul comportamento (o, in altre parole, sul programma) del dispositivo telefonico.
 
-TAPI consente a un'applicazione di monitorare e controllare gli elementi del dispositivo telefonico. Gli elementi più utili per un'applicazione sono i dispositivi hookswitch. Il set di telefono può fungere da dispositivo di I/O audio (nel computer) con controllo del volume, ottenere il controllo e il silenziamento, un suoneria (per avvisare l'utente), aree dati (per la programmazione del telefono) ed eventualmente una visualizzazione, sebbene la visualizzazione del computer sia più idonea. Il writer di applicazioni è sconsigliato per il controllo diretto o l'uso di lampade telefoniche o pulsanti telefonici, perché le funzionalità LAMP e Button possono variare notevolmente tra set di telefono e le applicazioni possono essere rapidamente personalizzate su set di telefoni specifici.
+TAPI consente a un'applicazione di monitorare e controllare gli elementi del dispositivo telefonico. Gli elementi più utili per un'applicazione sono i dispositivi hookswitch. Il set di telefoni può fungere da dispositivo di I/O audio (al computer) con controllo del volume, controllo e disattivazione dell'audio, una suoneria (per avvisare l'utente), aree dati (per la programmazione del telefono) e, forse, uno schermo, anche se lo schermo del computer è più in grado di. L'autore dell'applicazione è sconsigliato dal controllo diretto o dall'uso di lampadine o pulsanti del telefono, perché le funzionalità delle lampadine e dei pulsanti possono variare notevolmente tra i set di telefoni e le applicazioni possono diventare rapidamente personalizzate per set di telefoni specifici.
 
-Non è disponibile un set di servizi di base garantito supportato da tutti i dispositivi telefonici, come per i dispositivi lineari (i servizi di telefonia Basic). Pertanto, prima che un'applicazione possa usare un dispositivo telefonico, l'applicazione deve innanzitutto determinare le funzionalità esatte del dispositivo telefonico. Le funzionalità di telefonia variano in base alla configurazione (client/client/server), all'hardware telefonico e al software del provider di servizi. Le applicazioni non devono presupporre che siano disponibili funzionalità di telefonia. Un'applicazione determina le funzionalità del dispositivo di un dispositivo telefonico chiamando la funzione [**phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) . Le funzionalità del dispositivo del telefono indicano quali di questi elementi esistono per ogni dispositivo telefonico presente nel sistema e quali sono le rispettive funzionalità. Sebbene sia fortemente orientato verso i set di telefoni reali, questa astrazione può fornire un'implementazione significativa (o un sottoinsieme) per altri dispositivi. Prendere come esempio un auricolare separato direttamente connesso e controllabile dal computer e utilizzato come dispositivo telefonico. Le modifiche apportate a hookswitch possono essere attivate dal rilevamento di energia vocale (Offhook) o da un periodo di silenzio (OnHook); la suoneria può essere emulata dalla generazione di un segnale acustico nell'auricolare; una visualizzazione può essere emulata tramite la conversione da sintesi vocale.
+Non esiste alcun set di servizi di base garantito supportato da tutti i dispositivi telefonici, come per i dispositivi line (i servizi Telefonia di base). Pertanto, prima che un'applicazione possa usare un dispositivo telefono, l'applicazione deve determinare le funzionalità esatte del dispositivo. La funzionalità di telefonia varia a seconda della configurazione (client e client/server), dell'hardware telefonico e del software del provider di servizi. Le applicazioni non devono presunzioni sulle funzionalità di telefonia disponibili. Un'applicazione determina le funzionalità del dispositivo di un dispositivo telefono chiamando la [**funzione phoneGetDevCaps.**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) Le funzionalità del dispositivo di un telefono indicano quali di questi elementi esistono per ogni dispositivo telefono presente nel sistema e quali sono le relative funzionalità. Sebbene fortemente orientata verso i set di telefoni reali, questa astrazione può fornire un'implementazione significativa (o subset) anche per altri dispositivi. Si consideri come esempio un visore separato direttamente connesso e controllabile dal computer e gestito come dispositivo telefonico. Le modifiche del hookswitch possono essere attivate dal rilevamento dell'energia vocale (offhook) o da un periodo di silenzio (onhook); il ringing può essere emulato dalla generazione di un segnale udibile nel visore; una visualizzazione può essere emulata tramite la conversione da testo a voce.
 
-Non è necessario realizzare un dispositivo telefonico nell'hardware, ma è possibile emularlo nel software utilizzando un'interfaccia di comando grafica basata su mouse o tastiera e l'altoparlante del computer o il sistema acustico. Un "telefono soft" può essere un'applicazione che usa TAPI. Può anche essere un provider di servizi, che può essere elencato come un dispositivo telefonico disponibile per altre applicazioni tramite l'API e, in quanto tale, viene assegnato un identificatore del dispositivo telefonico.
+Un dispositivo telefono non deve essere realizzato nell'hardware, ma può essere emulato nel software usando un'interfaccia grafica basata su mouse o tastiera e il sistema audio o altoparlante del computer. Un "telefono soft" può essere un'applicazione che usa TAPI. Può anche essere un provider di servizi, che può essere elencato come dispositivo telefonico disponibile per altre applicazioni tramite l'API e di conseguenza viene assegnato un identificatore di dispositivo telefono.
 
-A seconda dell'ambiente e della configurazione, i set di telefono possono essere dispositivi condivisi tra l'applicazione e l'opzione. Nell'API viene effettuato un piccolo provisioning, in cui l'opzione può sospendere temporaneamente il controllo dell'API di un dispositivo telefonico.
+A seconda dell'ambiente e della configurazione, i set di telefoni possono essere dispositivi condivisi tra l'applicazione e il commutatore. Viene effettuato un provisioning secondario nell'API in cui il commutatore può sospendere temporaneamente il controllo dell'API di un dispositivo telefono.
 
  
 

@@ -1,20 +1,20 @@
 ---
-description: La \_ classe Win32 BaseService espone i metodi seguenti.
+description: La classe \_ Win32 BaseService espone i metodi seguenti.
 ms.assetid: 30CBACF4-F2E0-4FBD-BB81-ABDDADF0740D
 ms.tgt_platform: multiple
-title: Metodi di Win32_BaseService
+title: metodi Win32_BaseService
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80dc74f1e67fa1944547abe047597302a32fc7ab
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9cd100d8499a26d5ad15d6118214e77ccd91cfb100e5e38b47b6ddd24b672b35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918001"
 ---
-# <a name="win32_baseservice-methods"></a>\_Metodi Win32 BaseService
+# <a name="win32_baseservice-methods"></a>Metodi Win32 \_ BaseService
 
-La classe [**Win32 \_ BaseService**](win32-baseservice.md) espone i metodi seguenti.
+La [**classe \_ Win32 BaseService**](win32-baseservice.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ La classe [**Win32 \_ BaseService**](win32-baseservice.md) espone i metodi segue
 -   [**Metodo ChangeStartMode**](changestartmode-method-in-class-win32-baseservice.md)
 -   [**Metodo di creazione**](create-method-in-class-win32-baseservice.md)
 -   [**Delete (metodo)**](delete-method-in-class-win32-baseservice.md)
--   [**Metodo InterrogateService**](interrogateservice-method-in-class-win32-baseservice.md)
+-   [**Metodo InterrogaeService**](interrogateservice-method-in-class-win32-baseservice.md)
 -   [**Metodo PauseService**](pauseservice-method-in-class-win32-baseservice.md)
 -   [**Metodo ResumeService**](resumeservice-method-in-class-win32-baseservice.md)
 -   [**Metodo StartService**](startservice-method-in-class-win32-baseservice.md)

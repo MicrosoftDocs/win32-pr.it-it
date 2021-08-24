@@ -1,28 +1,28 @@
 ---
-description: Questo argomento è il passaggio 7 dell'esercitazione come riprodurre file multimediali con Media Foundation.
+description: Questo argomento è il passaggio 7 dell'esercitazione Come riprodurre file multimediali con Media Foundation.
 ms.assetid: c31444df-8717-4ca8-a9ec-72cbb0ee4125
-title: 'Passaggio 7: arrestare la sessione multimediale'
+title: 'Passaggio 7: Arrestare la sessione multimediale'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae9fd11cde51b06d932b212f4effabf315deecb7
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aa1eec6e798ee260c83fc1532c2012aed8a53625b12195848ac00fcdcf8fae3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104132187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721946"
 ---
-# <a name="step-7-shut-down-the-media-session"></a>Passaggio 7: arrestare la sessione multimediale
+# <a name="step-7-shut-down-the-media-session"></a>Passaggio 7: Arrestare la sessione multimediale
 
-Questo argomento è il passaggio 7 dell'esercitazione [come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'esempio relativo alla [riproduzione della sessione multimediale](media-session-playback-example.md).
+Questo argomento è il passaggio 7 dell'esercitazione [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'argomento [Esempio di riproduzione di sessioni multimediali](media-session-playback-example.md).
 
-Per arrestare la [sessione multimediale](media-session.md), seguire questa procedura:
+Per arrestare la [sessione multimediale,](media-session.md)seguire questa procedura:
 
-1.  Chiamare [**IMFMediaSession:: Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) per chiudere la presentazione corrente.
-2.  Attendere l'evento [MESessionClosed](mesessionclosed.md) . Questo evento è sicuramente l'ultimo evento della sessione multimediale.
-3.  Chiamare [**IMFMediaSession:: Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown). Questo metodo fa sì che le sessioni multimediali rilascino le risorse.
-4.  Chiamare [**IMFMediaSource:: Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) sull'origine multimediale corrente.
+1.  Chiamare [**IMFMediaSession::Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) per chiudere la presentazione corrente.
+2.  Attendere [l'evento MESessionClosed.](mesessionclosed.md) Questo evento è garantito come ultimo evento della sessione multimediale.
+3.  Chiamare [**IMFMediaSession::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown). Questo metodo fa in modo che le sessioni multimediali rilascino le risorse.
+4.  Chiamare [**IMFMediaSource::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) sull'origine multimediale corrente.
 
-Il metodo seguente arresta la sessione multimediale. Usa un handle di evento (*m \_ hCloseEvent*) per attendere l'evento [MESessionClosed](mesessionclosed.md) . Vedere [passaggio 5: gestire gli eventi della sessione multimediale](step-5--handle-media-session-events.md).
+Il metodo seguente arresta la sessione multimediale. Usa un handle di evento (*m \_ hCloseEvent*) per attendere l'evento [MESessionClosed.](mesessionclosed.md) Vedere [Passaggio 5: Gestire gli eventi della sessione multimediale](step-5--handle-media-session-events.md).
 
 
 ```C++
@@ -83,7 +83,7 @@ HRESULT CPlayer::CloseSession()
 
 
 
-Prima di uscire dall'applicazione, arrestare la sessione multimediale e chiamare [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la piattaforma Microsoft Media Foundation.
+Prima che l'applicazione venga chiusa, arrestare la sessione multimediale e quindi chiamare [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la Microsoft Media Foundation piattaforma.
 
 
 ```C++

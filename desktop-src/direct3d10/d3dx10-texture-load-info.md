@@ -1,7 +1,7 @@
 ---
 description: Descrive i parametri usati per caricare una trama da un'altra trama.
 ms.assetid: dee693ce-afa7-479b-a76a-00816e30d5cf
-title: Struttura D3DX10_TEXTURE_LOAD_INFO (D3DX10Tex. h)
+title: D3DX10_TEXTURE_LOAD_INFO struttura (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: d3a689bb2104ee4cb419eb1483619d1fcf71d7e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 144475b4b4967ff0a1fd130a658b8276af5d8897cc043000d150417aa01b227e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753471"
 ---
-# <a name="d3dx10_texture_load_info-structure"></a>\_Struttura delle \_ informazioni di caricamento della trama d3dx10 \_
+# <a name="d3dx10_texture_load_info-structure"></a>Struttura D3DX10 \_ TEXTURE \_ LOAD \_ INFO
 
 Descrive i parametri usati per caricare una trama da un'altra trama.
 
@@ -51,62 +51,62 @@ typedef struct _D3DX10_TEXTURE_LOAD_INFO {
 **pSrcBox**
 </dt> <dd>
 
-Tipo: **[ **D3D10 \_ Box**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)\***
+Tipo: **[ **D3D10 \_ BOX**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)\***
 
 </dd> <dd>
 
-Casella trama di origine (vedere [**D3D10 \_ Box**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)).
+Casella trama di origine (vedere [**D3D10 \_ BOX**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)).
 
 </dd> <dt>
 
 **pDstBox**
 </dt> <dd>
 
-Tipo: **[ **D3D10 \_ Box**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)\***
+Tipo: **[ **D3D10 \_ BOX**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)\***
 
 </dd> <dd>
 
-Casella trama di destinazione (vedere [**D3D10 \_ Box**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)).
+Casella trama di destinazione (vedere [**D3D10 \_ BOX**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_box)).
 
 </dd> <dt>
 
 **SrcFirstMip**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Livello di mipmap trama di origine. per altre informazioni, vedere [**D3D10CalcSubresource**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource) .
+Livello mipmap della trama di origine, vedere [**D3D10CalcSubresource**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource) per altri dettagli.
 
 </dd> <dt>
 
 **DstFirstMip**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Livello di mipmap della trama di destinazione. per altre informazioni, vedere [**D3D10CalcSubresource**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource) .
+Livello mipmap della trama di destinazione. Per altre informazioni, vedere [**D3D10CalcSubresource.**](/windows/desktop/api/D3D10/nf-d3d10-d3d10calcsubresource)
 
 </dd> <dt>
 
 **NumMips**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di livelli di mipmap nella trama di origine.
+Numero di livelli mipmap nella trama di origine.
 
 </dd> <dt>
 
 **SrcFirstElement**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -117,7 +117,7 @@ Primo elemento della trama di origine.
 **DstFirstElement**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -128,7 +128,7 @@ Primo elemento della trama di destinazione.
 **NumElements**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -139,28 +139,28 @@ Numero di elementi da caricare.
 **Filter**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Opzioni di filtro durante il ricampionamento (vedere [**\_ \_ flag di filtro d3dx10**](d3dx10-filter-flag.md)).
+Opzioni di filtro durante il ricampionamento (vedere [**D3DX10 \_ FILTER \_ FLAG**](d3dx10-filter-flag.md)).
 
 </dd> <dt>
 
 **MipFilter**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Opzioni di filtro durante la generazione di livelli MIP (vedere [**\_ \_ flag di filtro d3dx10**](d3dx10-filter-flag.md)).
+Opzioni di filtro durante la generazione di livelli mip (vedere [**D3DX10 \_ FILTER \_ FLAG**](d3dx10-filter-flag.md)).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata in una chiamata a [**D3DX10LoadTextureFromTexture**](d3dx10loadtexturefromtexture.md).
+Questa struttura viene usata in una chiamata a [**D3DX10LoadTextureFromTexture**](d3dx10loadtexturefromtexture.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -168,7 +168,7 @@ Questa struttura viene utilizzata in una chiamata a [**D3DX10LoadTextureFromText
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Tex.h</dt> </dl> |
 
 
 

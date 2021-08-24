@@ -1,23 +1,23 @@
 ---
-title: Definizione di attività e OpCode
-description: I provider utilizzano attività e codici operativi per raggruppare logicamente gli eventi. Gli eventi di raggruppamento consentono agli utenti di eseguire query solo sugli eventi che contengono combinazioni di attività e codici operativi specifici.
+title: Definizione di attività e opcode
+description: I provider usano attività e opcode per raggruppare gli eventi in modo logico. Il raggruppamento degli eventi consente ai consumer di eseguire query solo per gli eventi che contengono combinazioni di attività e codice operativo specifiche.
 ms.assetid: 6a872517-14de-423e-a7ff-7edb9a29b22d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3257166a34c167d076fec39ac6997d12dc785450
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 3cb576251edf4de14c564c6e468209ece93e5840da9e0d821c20b132794f48ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104516690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032471"
 ---
-# <a name="defining-tasks-and-opcodes"></a>Definizione di attività e OpCode
+# <a name="defining-tasks-and-opcodes"></a>Definizione di attività e opcode
 
-I provider utilizzano attività e codici operativi per raggruppare logicamente gli eventi. Gli eventi di raggruppamento consentono agli utenti di eseguire query solo sugli eventi che contengono combinazioni di attività e codici operativi specifici. In genere, è possibile utilizzare le attività per identificare un componente principale del provider, ad esempio il componente di rete o di database. È quindi possibile utilizzare i codici operativi per identificare le operazioni eseguite dal componente, ad esempio le operazioni di invio e ricezione per un componente di rete. Se si dispone di un solo componente, è possibile utilizzare l'attività per riflettere un'operazione principale nel componente, ad esempio Connect o Disconnect, e utilizzare Opcode per riflettere un'attività all'interno dell'operazione, ad esempio la lettura del registro di sistema. È anche possibile usare opcode senza specificare un'attività. Il modo in cui si usano le attività e i codici operativi per raggruppare gli eventi per il consumer è completamente attivo.
+I provider usano attività e opcode per raggruppare gli eventi in modo logico. Il raggruppamento degli eventi consente ai consumer di eseguire query solo per gli eventi che contengono combinazioni di attività e codice operativo specifiche. In genere, si usano le attività per identificare un componente principale del provider, ad esempio il componente di rete o di database. È quindi possibile usare i codici operativo per identificare le operazioni eseguite dal componente, ad esempio le operazioni di invio e ricezione per un componente di rete. Se si ha un solo componente, è possibile usare l'attività per riflettere un'operazione principale nel componente, ad esempio la connessione o la disconnessione, e usare il codice operativo per riflettere un'attività all'interno dell'operazione, ad esempio la lettura del Registro di sistema. È anche possibile usare il codice operativo senza specificare un'attività. La modalità di utilizzo di task e opcode per raggruppare gli eventi per il consumer è completamente all'utente.
 
-Per definire un'attività, usare l'elemento **Task** . Per definire un codice operativo, usare l'elemento **OpCode** . È possibile specificare fino a 228 codici operativi. Il **valore** dell'attività deve essere maggiore di 0. I codici operativi devono essere compresi tra 11 e 239. Il file Winmeta.xml definisce le operazioni comuni che è possibile usare anziché definire i propri.
+Per definire un'attività, usare **l'elemento** task. Per definire un codice operativo, usare **l'elemento opcode.** È possibile specificare fino a 228 codici operativo. Il valore **dell'attività** deve essere maggiore di 0. I codici operativo devono essere nell'intervallo compreso tra 11 e 239. Il Winmeta.xml file definisce operazioni comuni che è possibile usare invece di definirne di proprie.
 
-Nell'esempio seguente viene illustrato come definire diverse attività e codici operativi.
+L'esempio seguente illustra come definire diverse attività e opcode.
 
 ```XML
 <instrumentationManifest

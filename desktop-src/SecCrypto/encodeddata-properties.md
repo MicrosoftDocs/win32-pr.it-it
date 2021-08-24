@@ -1,19 +1,19 @@
 ---
 description: L'oggetto EncodedData espone le proprietà seguenti.
 ms.assetid: 159F6918-7A02-4326-9911-D78F4FE5A667
-title: Proprietà di EncodedData
+title: Proprietà EncodedData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 665e8af0d5fce0f2a0b83f647c2957a4e092ddc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45b8d0549eb83afc8afb236634baa854a3a3d912ea69b2ed5c280883d6d09e81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874831"
 ---
-# <a name="encodeddata-properties"></a>Proprietà di EncodedData
+# <a name="encodeddata-properties"></a>Proprietà EncodedData
 
-L'oggetto [**EncodedData**](encodeddata.md) espone le proprietà seguenti.
+[**L'oggetto EncodedData**](encodeddata.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

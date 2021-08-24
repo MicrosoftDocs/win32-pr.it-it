@@ -6,9 +6,9 @@ keywords:
 - Windows Media Player, playlist di sincronizzazione
 - Windows Media Player a oggetti, playlist di sincronizzazione
 - modello a oggetti, playlist di sincronizzazione
-- Windows Media Player dispositivi mobili, playlist di sincronizzazione
+- Windows Media Player Dispositivi mobili, playlist di sincronizzazione
 - Windows Media Player ActiveX controllo, playlist di sincronizzazione
-- Windows Media Player controllo di ActiveX per dispositivi mobili, playlist di sincronizzazione
+- Windows Media Player Controllo ActiveX per dispositivi mobili, playlist di sincronizzazione
 - ActiveX, playlist di sincronizzazione
 - playlist, sincronizzazione
 - playlist di metafile, sincronizzazione
@@ -27,7 +27,7 @@ ms.locfileid: "119650911"
 ---
 # <a name="enumerating-the-media-items"></a>Enumerazione degli elementi multimediali
 
-Nel codice seguente vengono visualizzati gli elementi multimediali contenuti in una singola playlist. Questo codice viene eseguito quando l'utente fa clic su una playlist nel controllo ListView identificato da IDC \_ PLVIEW.
+Il codice seguente visualizza gli elementi multimediali contenuti in una singola playlist. Questo codice viene eseguito quando l'utente fa clic su una playlist nel controllo ListView identificato da IDC \_ PLVIEW.
 
 
 ```C++
@@ -147,7 +147,7 @@ STDMETHODIMP CSyncSettings::ShowMedia(long lIndex)
 
 
 
-Per l'implementazione della funzione GetPartnershipSyncState, vedere [Determining Playlist Synchronization State](determining-playlist-synchronization-state.md).
+Per l'implementazione della funzione GetPartnershipSyncState, vedere Determinare lo stato di [sincronizzazione della playlist.](determining-playlist-synchronization-state.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

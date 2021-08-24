@@ -1,12 +1,12 @@
 ---
-title: Metodo SetPriority della Win32_SessionDirectoryVMMPlugin classe
+title: Metodo SetPriority della classe Win32_SessionDirectoryVMMPlugin
 description: Imposta la priorità del plug-in.
 ms.assetid: ddcf30cd-b87c-4869-80fc-ec92092e0df3
 ms.tgt_platform: multiple
 keywords:
 - Metodo SetPriority Servizi Desktop remoto
 - Metodo SetPriority Servizi Desktop remoto , Win32_SessionDirectoryVMMPlugin classe
-- Win32_SessionDirectoryVMMPlugin classe Servizi Desktop remoto, metodo SetPriority
+- Win32_SessionDirectoryVMMPlugin classe Servizi Desktop remoto metodo SetPriority
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119987741"
 ---
-# <a name="setpriority-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo SetPriority della classe \_ SessionDirectoryVMMPlugin Win32
+# <a name="setpriority-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo SetPriority della classe \_ Win32 SessionDirectoryVMMPlugin
 
 Imposta la priorità del plug-in.
 
@@ -46,13 +46,13 @@ uint32 SetPriority(
 *Priorità* \[ Pollici\]
 </dt> <dd>
 
-Priorità del plug-in. Maggiore è il valore, maggiore sarà la priorità del plug-in. La priorità è zero per impostazione predefinita.
+Priorità del plug-in. Maggiore è il valore, maggiore è la priorità del plug-in. La priorità è zero per impostazione predefinita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codic
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                               |
 | MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 

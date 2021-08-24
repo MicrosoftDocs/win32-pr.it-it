@@ -1,29 +1,29 @@
 ---
-description: Il numero di volte in cui l'origine di rete tenta di riconnettersi al server e riprendere lo streaming in caso di perdita della connessione.
+description: Numero di tentativi di riconnessione al server da parte dell'origine di rete e ripresa dello streaming se la connessione viene persa.
 ms.assetid: 185e15c6-910b-4e27-9087-cfe30a174194
-title: Proprietà MFNETSOURCE_AUTORECONNECTLIMIT (Mfidl. h)
+title: MFNETSOURCE_AUTORECONNECTLIMIT proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dac2a81cb4d47d8113059924877670458ac22ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f526e9ff0274438b696996c1143620ec367fa7b086a479a066d0ba9c283f95a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604541"
 ---
-# <a name="mfnetsource_autoreconnectlimit-property"></a>\_Proprietà AUTORECONNECTLIMIT di MFNETSOURCE
+# <a name="mfnetsource_autoreconnectlimit-property"></a>Proprietà MFNETSOURCE \_ AUTORECONNECTLIMIT
 
-Il numero di volte in cui l'origine di rete tenta di riconnettersi al server e riprendere lo streaming in caso di perdita della connessione.
+Numero di tentativi di riconnessione al server da parte dell'origine di rete e ripresa dello streaming se la connessione viene persa.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**DWORD** (archiviato come **Long**)
+**DWORD** (archiviato come **LONG**)
 
 VT \_ I4
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ AUTORECONNECTLIMIT** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ AUTORECONNECTLIMIT** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un oggetto **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **oggetto IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[Funzionalità di origine della rete](network-source-features.md)
+[Funzionalità dell'origine di rete](network-source-features.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)

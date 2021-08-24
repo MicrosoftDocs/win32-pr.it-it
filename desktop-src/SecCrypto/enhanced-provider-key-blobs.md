@@ -1,27 +1,27 @@
 ---
-description: Il provider di base, il provider sicuro e il provider migliorato utilizzano gli stessi BLOB di chiavi.
+description: Il provider di base, il provider sicuro e il provider avanzato usano gli stessi BLOB delle chiavi.
 ms.assetid: f1bd347b-33bd-40bc-9a9b-c06f264f1af4
-title: BLOB chiave provider avanzati
+title: BLOB delle chiavi del provider avanzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f693fd469a1df2e76078e61bb69c90ea5d5041d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1098ec45f73183f31cb91d15e2957dcc5964591bd8c6de4e30616df0808ade6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874441"
 ---
-# <a name="enhanced-provider-key-blobs"></a>BLOB chiave provider avanzati
+# <a name="enhanced-provider-key-blobs"></a>BLOB delle chiavi del provider avanzato
 
-Il provider di base, il provider sicuro e il provider migliorato utilizzano gli stessi [*BLOB di chiavi*](../secgloss/k-gly.md).
+Il provider di base, il provider sicuro e il provider avanzato usano gli stessi [*BLOB delle chiavi.*](../secgloss/k-gly.md)
 
--   [BLOB di chiavi pubbliche](#public-key-blobs)
--   [BLOB di chiavi private](#private-key-blobs)
+-   [BLOB di chiave pubblica](#public-key-blobs)
+-   [BLOB di chiave privata](#private-key-blobs)
 -   [BLOB di chiavi semplici](#simple-key-blobs)
 
-## <a name="public-key-blobs"></a>BLOB di chiavi pubbliche
+## <a name="public-key-blobs"></a>BLOB di chiave pubblica
 
-I [*BLOB di chiave pubblica*](../secgloss/p-gly.md), digitare **PublicKeyBlob**, vengono usati per archiviare le [*chiavi pubbliche*](../secgloss/p-gly.md) all'esterno di un [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP). I BLOB di chiavi pubbliche del provider esteso hanno il formato seguente.
+[*I BLOB con chiave pubblica,*](../secgloss/p-gly.md)di tipo **PUBLICKEYBLOB,** vengono usati per archiviare le chiavi pubbliche all'esterno di un [*provider*](../secgloss/c-gly.md) del servizio di crittografia (CSP). [](../secgloss/p-gly.md) I BLOB con chiave pubblica del provider esteso hanno il formato seguente.
 
 ``` syntax
 PUBLICKEYSTRUC  publickeystruc;
@@ -29,28 +29,28 @@ RSAPUBKEY rsapubkey;
 BYTE modulus[rsapubkey.bitlen/8];
 ```
 
-Nella tabella seguente viene descritto ogni componente di chiave pubblica. Tutti i valori sono in formato [*Little-Endian*](../secgloss/l-gly.md) .
+Nella tabella seguente viene descritto ogni componente di chiave pubblica. Tutti i valori sono in [*formato little-endian.*](../secgloss/l-gly.md)
 
 
 
 | Campo          | Descrizione                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| modulo        | I dati del modulo della chiave pubblica si trovano immediatamente dopo la struttura [**RSAPUBKEY**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) . Le dimensioni di questi dati variano a seconda delle dimensioni della chiave pubblica. Il numero di byte può essere determinato dividendo il valore del campo **RSAPUBKEY bitlen** di otto. |
-| publickeystruc | Struttura [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) .                                                                                                                                                                                                                                 |
-| rsapubkey      | Struttura [**RSAPUBKEY**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) . Il membro **Magic** deve essere impostato su 0x31415352. Questo valore esadecimale è la codifica [*ASCII*](../secgloss/a-gly.md) di rsa1.                                                                         |
+| modulo        | I dati del modulo di chiave pubblica si trovano direttamente dopo la [**struttura RSAPUBKEY.**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) Le dimensioni di questi dati variano a seconda delle dimensioni della chiave pubblica. Il numero di byte può essere determinato dividendo il valore del **campo bitlen RSAPUBKEY** per otto. |
+| publickeystruc | Struttura [**PUBLICKEYSTRUC.**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc)                                                                                                                                                                                                                                 |
+| rsapubkey      | Struttura [**RSAPUBKEY.**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) Il **membro magic** deve essere impostato su 0x31415352. Questo valore esadecimale è la [*codifica ASCII*](../secgloss/a-gly.md) di RSA1.                                                                         |
 
 
 
  
 
 > [!Note]  
-> I BLOB di chiavi pubbliche non sono crittografati. Contengono chiavi pubbliche in formato [*testo non crittografato*](../secgloss/p-gly.md) .
+> I BLOB con chiave pubblica non vengono crittografati. Contengono chiavi pubbliche in [*formato testo non*](../secgloss/p-gly.md) crittografato.
 
  
 
-## <a name="private-key-blobs"></a>BLOB di chiavi private
+## <a name="private-key-blobs"></a>BLOB di chiave privata
 
-I [*BLOB di chiavi private*](../secgloss/p-gly.md), digitare **PRIVATEKEYBLOB**, vengono usati per archiviare [*chiavi private*](../secgloss/p-gly.md) all'esterno di un CSP. I BLOB di chiavi private del provider esteso hanno il formato seguente.
+[*I BLOB della chiave privata,*](../secgloss/p-gly.md)di tipo **PRIVATEKEYBLOB,** vengono usati per [*archiviare le chiavi private*](../secgloss/p-gly.md) all'esterno di un provider di servizi di configurazione. I BLOB con chiave privata del provider esteso hanno il formato seguente.
 
 ``` syntax
 PUBLICKEYSTRUC  publickeystruc;
@@ -67,7 +67,7 @@ BYTE privateExponent[rsapubkey.bitlen/8];
 Nella tabella seguente viene descritto il componente BLOB della chiave privata.
 
 > [!Note]  
-> Questi campi corrispondono ai campi descritti nella sezione 7,2 di [*Public Key Cryptography Standards*](../secgloss/p-gly.md) (PKCS) \# 1 con differenze minime.
+> Questi campi corrispondono ai campi descritti nella sezione 7.2 di [*Public Key Cryptography Standards*](../secgloss/p-gly.md) (PKCS) \# 1 con differenze minime.
 
  
 
@@ -75,40 +75,40 @@ Nella tabella seguente viene descritto il componente BLOB della chiave privata.
 
 | Campo           | Descrizione                                                                                                                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| coefficiente     | Coefficiente. Il valore numerico è (inverso di q) mod p.                                                                                                                                                |
-| exponent1       | Esponente 1. Il valore numerico è d mod (p-1).                                                                                                                                                        |
-| exponent2       | Esponente 2. Il valore numerico è d mod (q-1).                                                                                                                                                        |
-| Modulus         | Modulo. Il valore è *Prime1*×*prime2* ed è spesso noto come n.                                                                                                                                   |
+| Coefficiente     | Coefficiente. Ha un valore numerico (inverso di q) mod p.                                                                                                                                                |
+| esponente1       | Esponente 1. Il valore numerico è d mod (p - 1).                                                                                                                                                        |
+| esponente2       | Esponente 2. Il valore numerico è d mod (q - 1).                                                                                                                                                        |
+| Modulus         | Modulo. Il valore è *Prime1*×*Prime2* ed è spesso noto come n.                                                                                                                                   |
 | prime1          | Numero primo 1, spesso noto come p.                                                                                                                                                                             |
 | prime2          | Numero primo 2, spesso noto come q.                                                                                                                                                                             |
 | privateExponent | Esponente privato, spesso noto come d.                                                                                                                                                                           |
-| publickeystruc  | Struttura [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) .                                                                                                                                                         |
-| rsapubkey       | Struttura [**RSAPUBKEY**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) . Il membro **Magic** deve essere impostato su 0x32415352. Questo valore esadecimale è la codifica [*ASCII*](../secgloss/a-gly.md) di rsa2. |
+| publickeystruc  | Struttura [**PUBLICKEYSTRUC.**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc)                                                                                                                                                         |
+| rsapubkey       | Struttura [**RSAPUBKEY.**](/windows/desktop/api/Wincrypt/ns-wincrypt-rsapubkey) Il **membro magic** deve essere impostato su 0x32415352. Questo valore esadecimale è la [*codifica ASCII*](../secgloss/a-gly.md) di RSA2. |
 
 
 
  
 
 > [!Note]  
-> I BLOB di chiavi private non sono crittografati. Contengono chiavi private in formato testo non crittografato.
+> I BLOB della chiave privata non vengono crittografati. Contengono chiavi private in formato testo non crittografato.
 
  
 
-Quando si chiama [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey), lo sviluppatore può scegliere se crittografare la chiave. **PRIVATEKEYBLOB** viene crittografato se il parametro *hExpKey* contiene un handle valido per una chiave di sessione. Tutto tranne la parte [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) del BLOB è crittografata.
+Quando si [**chiama CryptExportKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey)lo sviluppatore può scegliere se crittografare la chiave. **PRIVATEKEYBLOB viene** crittografato se il *parametro hExpKey* contiene un handle valido per una chiave di sessione. Tutti gli elementi, a parte la parte [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) del BLOB, sono crittografati.
 
 > [!Note]  
-> L'algoritmo di crittografia e i parametri della chiave di crittografia non vengono archiviati insieme al BLOB della chiave privata. L'applicazione deve gestire e archiviare queste informazioni. Se viene passato zero per *hExpKey*, la chiave privata verrà esportata senza crittografia.
+> L'algoritmo di crittografia e i parametri della chiave di crittografia non vengono archiviati insieme al BLOB della chiave privata. L'applicazione deve gestire e archiviare queste informazioni. Se per *hExpKey* viene passato zero, la chiave privata verrà esportata senza crittografia.
 
  
 
 > [!Caution]  
-> È pericoloso esportare le chiavi private senza crittografia perché sono quindi vulnerabili all'intercettazione e all'uso da entità non autorizzate.
+> È pericoloso esportare chiavi private senza crittografia perché sono quindi vulnerabili all'intercettazione e all'uso da parte di entità non autorizzate.
 
  
 
 ## <a name="simple-key-blobs"></a>BLOB di chiavi semplici
 
-I [*BLOB di chiavi semplici*](../secgloss/s-gly.md), digitare **SIMPLEBLOB**, vengono usati per archiviare e trasportare chiavi di sessione all'esterno di un CSP. I BLOB di chiavi semplici del provider esteso sono sempre crittografati con una [*chiave pubblica di scambio delle chiavi*](../secgloss/k-gly.md). Il membro **pbData** di **SIMPLEBLOB** è una sequenza di byte nel formato seguente.
+[*I BLOB di chiavi semplici,*](../secgloss/s-gly.md)di tipo **SIMPLEBLOB,** vengono usati per archiviare e trasportare le chiavi di sessione all'esterno di un provider di servizi di configurazione. I BLOB con chiave semplice del provider esteso vengono sempre crittografati con una [*chiave pubblica di scambio di chiave*](../secgloss/k-gly.md). Il **membro pbData** di **SIMPLEBLOB** è una sequenza di byte nel formato seguente.
 
 ``` syntax
 PUBLICKEYSTRUC  publickeystruc;
@@ -116,21 +116,21 @@ ALG_ID algid;
 BYTE encryptedkey[rsapubkey.bitlen/8];
 ```
 
-Nella tabella seguente viene descritto ogni componente del membro **pbData** di **SIMPLEBLOB**.
+Nella tabella seguente viene descritto ogni componente del **membro pbData** di **SIMPLEBLOB.**
 
 
 
 | Campo          | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| algido          | Struttura [**di \_ ID ALG**](alg-id.md) che specifica l'algoritmo di crittografia utilizzato per crittografare i dati della chiave della sessione. Questo ha in genere il valore CALG \_ RSA \_ KEYX, che indica che i dati della chiave della sessione sono stati crittografati con una chiave pubblica di scambio delle chiavi usando l' [*algoritmo di chiave pubblica RSA*](../secgloss/r-gly.md).                                                                                                                           |
-| EncryptedKey   | Sequenza di **byte** che rappresenta i dati della chiave della sessione crittografata sotto forma di un \# blocco di crittografia PKCS 1, Type 2. Per informazioni su questo formato dati, vedere la pagina relativa a Public Key Cryptography Standards (PKCS) \# 1, pubblicata da RSA Data Security, Inc. Questi dati hanno sempre le stesse dimensioni del modulo della chiave pubblica. Ad esempio, le chiavi pubbliche generate dal provider di base Microsoft RSA possono avere una lunghezza di 512 bit (64 byte), quindi anche i dati della chiave della sessione crittografata sono sempre 512 bit (64 byte).<br/> |
-| publickeystruc | Struttura [**PUBLICKEYSTRUC**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc) .                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| algid          | Struttura [**ID ALG \_**](alg-id.md) che specifica l'algoritmo di crittografia usato per crittografare i dati della chiave di sessione. In genere il valore è CALG RSA KEYX, che indica che i dati della chiave di sessione sono stati crittografati con una chiave pubblica di scambio di chiave usando \_ \_ [*l'algoritmo RSA Public Key*](../secgloss/r-gly.md).                                                                                                                           |
+| Encryptedkey   | Sequenza **BYTE** che rappresenta i dati della chiave di sessione crittografati sotto forma di blocco di crittografia PKCS \# 1 di tipo 2. Per informazioni su questo formato di dati, vedere Public Key Cryptography Standards (PKCS) \# 1, pubblicato da RSA Data Security, Inc. Questi dati hanno sempre le stesse dimensioni del modulo della chiave pubblica. Ad esempio, le chiavi pubbliche generate dal provider microsoft RSA Base possono avere una lunghezza di 512 bit (64 byte), quindi anche i dati della chiave di sessione crittografati sono sempre a 512 bit (64 byte).<br/> |
+| publickeystruc | Struttura [**PUBLICKEYSTRUC.**](/windows/desktop/api/Wincrypt/ns-wincrypt-publickeystruc)                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
  
 
-Per informazioni sui BLOB di chiavi del provider di base e del provider esteso, vedere [BLOB chiave](base-provider-key-blobs.md)del provider di base.
+Per informazioni sui BLOB delle chiavi del provider di base e del provider esteso, vedere BLOB delle [chiavi del provider di base](base-provider-key-blobs.md).
 
  
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2d2392f2240ca9ca61525b27993e16bcab979a97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08b9ea7e483f6580e3f896a6a3f54a65e9117597538564889df8a5afb2fe795f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033481"
 ---
 # <a name="hexint32type-simple-type-performance-counters"></a>Tipo semplice HexInt32Type (contatori delle prestazioni)
 
@@ -34,11 +34,11 @@ Definisce un tipo esadecimale a 4 byte.
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **HexInt32Type** è **xs: String** limitato dal modello seguente:
+Il **tipo semplice HexInt32Type** è **un tipo xs:string** limitato dal modello seguente:
 
 -   `0[xX][0-9A-Fa-f]{1,8}`
 
-    Il valore può contenere da uno a otto caratteri esadecimali, ad esempio 0xA o 0xac7bd361.
+    Il valore può contenere da uno a otto caratteri esadecimali(ad esempio, 0xa o 0xac7bd361).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il tipo semplice **HexInt32Type** è **xs: String** limitato dal modello seguent
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

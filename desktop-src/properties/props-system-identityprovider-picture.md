@@ -1,17 +1,17 @@
 ---
 description: Immagine per il provider di identità.
 ms.assetid: 68da1d13-9067-47c8-96a0-22c55984088a
-title: System. IdentityProvider. Picture
+title: System.IdentityProvider.Picture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce9e38a35909324940bd92c3ac20815da4359aeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7450a09fcdf508a7cf4b5579b1082803715c5e293a9559292ee31c3e46b6c47c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844721"
 ---
-# <a name="systemidentityproviderpicture"></a>System. IdentityProvider. Picture
+# <a name="systemidentityproviderpicture"></a>System.IdentityProvider.Picture
 
 Immagine per il provider di identità.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

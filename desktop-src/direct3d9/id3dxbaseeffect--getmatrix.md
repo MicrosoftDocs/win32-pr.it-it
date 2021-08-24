@@ -1,7 +1,7 @@
 ---
-description: Ottiene una matrice nontransposed.
+description: Ottiene una matrice non trasposta.
 ms.assetid: d507c82c-b1a5-4e83-8921-5d45f52faba0
-title: 'Metodo ID3DXBaseEffect:: getMatrix (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetMatrix (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 17d59700d8752526f3f4c48efeaf7f3e6bd985bb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f7733f37ae5db4bfdaf504f5e0925b89cea7a8f2e54f4546feb4141fddd246ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118861"
 ---
-# <a name="id3dxbaseeffectgetmatrix-method"></a>Metodo ID3DXBaseEffect:: getMatrix
+# <a name="id3dxbaseeffectgetmatrix-method"></a>Metodo ID3DXBaseEffect::GetMatrix
 
-Ottiene una matrice nontransposed.
+Ottiene una matrice non trasposta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT GetMatrix(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pmatrix* \[ out\]
+*pMatrix* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Restituisce una matrice nontransposed. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
+Restituisce una matrice non trasposta. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice nontransposed contiene dati principali della riga; ovvero ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali della riga. ciò significa che ogni vettore è contenuto in una riga.
 
 Se la matrice di destinazione è più grande della matrice di origine, verranno riempiti solo i componenti in alto a sinistra della matrice di destinazione e i componenti rimanenti verranno impostati su zero.
 
@@ -77,8 +77,8 @@ Se la matrice di destinazione è più grande della matrice di origine, verranno 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -89,7 +89,7 @@ Se la matrice di destinazione è più grande della matrice di origine, verranno 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**Sematrix**](id3dxbaseeffect--setmatrix.md)
+[**SetMatrix**](id3dxbaseeffect--setmatrix.md)
 </dt> </dl>
 
  

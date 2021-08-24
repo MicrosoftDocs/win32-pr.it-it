@@ -1,27 +1,27 @@
 ---
-title: Definizione di canali
-description: Gli eventi possono essere scritti nei canali del log eventi, nei file di log di traccia eventi o in entrambi. Un canale è fondamentalmente un sink che raccoglie gli eventi.
+title: Definizione dei canali
+description: Gli eventi possono essere scritti nei canali del registro eventi, nei file di log di traccia eventi o in entrambi. Un canale è fondamentalmente un sink che raccoglie eventi.
 ms.assetid: 3c2f39ee-fbc0-40ae-8279-566905250f47
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab3c73697aa11e7b63ace0ece33be23ca7a1b883
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 89c2f932616a131e478c100996fd0b76034b3cccdebf4e3714fd5b9b38ba9678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104117471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032481"
 ---
-# <a name="defining-channels"></a>Definizione di canali
+# <a name="defining-channels"></a>Definizione dei canali
 
-Gli eventi possono essere scritti nei canali del log eventi, nei file di log di traccia eventi o in entrambi. Un canale è fondamentalmente un sink che raccoglie gli eventi. Se i destinatari per gli eventi utilizzano consumer di eventi quali Windows Visualizzatore eventi, è necessario definire nuovi canali per raccogliere gli eventi o importare un canale esistente definito da un altro provider.
+Gli eventi possono essere scritti nei canali del registro eventi, nei file di log di traccia eventi o in entrambi. Un canale è fondamentalmente un sink che raccoglie eventi. Se il pubblico di destinazione per gli eventi usa consumer di eventi come il Windows Visualizzatore eventi, è necessario definire nuovi canali per raccogliere gli eventi o importare un canale esistente definito da un altro provider.
 
-Per definire canali personalizzati, usare l'elemento **Channel** . Per definire un canale importato, usare l'elemento **importChannel** . È possibile specificare fino a otto canali in qualsiasi combinazione di canali o canali importati definiti.
+Per definire canali personalizzati, usare **l'elemento channel.** Per definire un canale importato, usare **l'elemento importChannel.** È possibile specificare fino a otto canali in qualsiasi combinazione di canali importati o canali definiti.
 
-Il canale deve essere di uno dei quattro tipi seguenti: amministratore, operativo, analitico e debug. Ogni tipo di canale ha un pubblico desiderato, che determina il tipo di eventi scritti sul canale. Per una descrizione di ogni tipo, vedere il tipo complesso [**ChannelType**](eventmanifestschema-channeltype-complextype.md) .
+Il canale deve essere di uno dei quattro tipi: Admin, Operational, Analytic e Debug. Ogni tipo di canale ha un pubblico previsto, che determina il tipo di eventi che si scrivono nel canale. Per una descrizione di ogni tipo, vedere il [**tipo complesso ChannelType.**](eventmanifestschema-channeltype-complextype.md)
 
-Per specificare il canale in cui viene scritto un evento, impostare l'attributo del **canale** della definizione dell'evento sullo stesso valore dell'attributo **figlio** della definizione del canale. Gli eventi possono essere scritti in un solo canale alla volta, ma possono essere raccolti anche fino a 7 altre sessioni ETW nello stesso momento.
+Per specificare il canale in cui viene scritto un  evento, impostare l'attributo channel della definizione di evento sullo stesso valore dell'attributo **chid della definizione del** canale. Gli eventi possono essere scritti in un solo canale alla volta, ma possono essere raccolti anche da un massimo di 7 altre sessioni ETW contemporaneamente.
 
-Nell'esempio seguente viene illustrato come importare un canale. È necessario impostare gli attributi **figlio** e **Name** . L'attributo **figlio** identifica in modo univoco il canale. ogni identificatore del canale nell'elenco dei canali deve essere univoco. Impostare l'attributo **Name** sullo stesso nome utilizzato dal provider durante la definizione del canale.
+L'esempio seguente illustra come importare un canale. È necessario impostare gli **attributi chid** **e name.** **L'attributo chid** identifica in modo univoco il canale. Ogni identificatore di canale nell'elenco di canali deve essere univoco. Impostare **l'attributo** name sullo stesso nome usato dal provider quando ha definito il canale.
 
 
 ```XML
@@ -64,9 +64,9 @@ Nell'esempio seguente viene illustrato come importare un canale. È necessario i
 </instrumentationManifest>
 ```
 
-Anche se Winmeta.xml definisce i canali legacy che è possibile importare, è consigliabile non utilizzarli a meno che non si supportino i consumer legacy che utilizzano gli eventi dei canali legacy (ad esempio, applicazione o sistema). Il file di Winmeta.xml è incluso nel Windows SDK.
+Anche Winmeta.xml definisce canali legacy che è possibile importare, non è consigliabile usarli a meno che non si supportino consumer legacy che utilizzano eventi dai canali legacy (ad esempio, applicazione o sistema). Il Winmeta.xml file è incluso in Windows SDK.
 
-Nell'esempio seguente viene illustrato come definire un canale. È necessario impostare gli attributi **figlio**, **Name** e **Type** . L'attributo **figlio** identifica in modo univoco il canale. ogni identificatore del canale nell'elenco dei canali deve essere univoco. Impostare l'attributo **figlio** su un valore univoco per i canali elencati dal provider. si fa riferimento all'identificatore del canale in una o più definizioni di evento. La convenzione per la denominazione del canale consiste nell'usare il nome del provider e il tipo di canale nel formato *providerName* / *channelType*.
+L'esempio seguente illustra come definire un canale. È necessario impostare gli **attributi chid**, **name** e **type.** **L'attributo chid** identifica in modo univoco il canale. Ogni identificatore di canale nell'elenco di canali deve essere univoco. Impostare **l'attributo chid** su un valore univoco per i canali elencati dal provider. Viene fatto riferimento all'identificatore di canale in una o più definizioni di evento. La convenzione per la denominazione del canale è usare il nome del provider e il tipo di canale nel formato *providername* / *channeltype*.
 
 ```XML
 <instrumentationManifest

@@ -1,12 +1,12 @@
 ---
 title: Metodo RdvSetupVMPermissions della classe Win32_RdvhManagement
-description: Imposta le autorizzazioni in una macchina virtuale per l'utente corrente.
+description: Imposta le autorizzazioni per una macchina virtuale per l'utente corrente.
 ms.assetid: 6ac45983-d468-4a3b-875f-48717ba23ed0
 ms.tgt_platform: multiple
 keywords:
 - Metodo RdvSetupVMPermissions Servizi Desktop remoto
 - Metodo RdvSetupVMPermissions Servizi Desktop remoto , Win32_RdvhManagement classe
-- Win32_RdvhManagement classe Servizi Desktop remoto, metodo RdvSetupVMPermissions
+- Win32_RdvhManagement classe Servizi Desktop remoto , metodo RdvSetupVMPermissions
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119988811"
 ---
-# <a name="rdvsetupvmpermissions-method-of-the-win32_rdvhmanagement-class"></a>Metodo RdvSetupVMPermissions della classe \_ Win32 RdvhManagement
+# <a name="rdvsetupvmpermissions-method-of-the-win32_rdvhmanagement-class"></a>Metodo RdvSetupVMPermissions della classe \_ RdvhManagement Win32
 
-Imposta le autorizzazioni in una macchina virtuale per l'utente corrente.
+Imposta le autorizzazioni per una macchina virtuale per l'utente corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +46,13 @@ uint32 RdvSetupVMPermissions(
 *VmName* \[ Pollici\]
 </dt> <dd>
 
-Nome della macchina virtuale per cui impostare le autorizzazioni.
+Nome della macchina virtuale su cui impostare le autorizzazioni.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto codici di errore del provider WMI,](terminal-services-wmi-provider-error-codes.md) vedere .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codic
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                             |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                   |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                   |
 | MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 

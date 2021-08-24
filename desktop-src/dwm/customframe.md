@@ -1,11 +1,11 @@
 ---
-title: Cornice della finestra personalizzata mediante DWM
-description: In questo argomento viene illustrato come utilizzare le API di Gestione finestre desktop (DWM) per creare frame di finestra personalizzati per l'applicazione.
+title: Cornice di finestra personalizzata con DWM
+description: Questo argomento illustra come usare le API Gestione finestre desktop (DWM) per creare frame di finestra personalizzati per l'applicazione.
 ms.assetid: 7f7dc902-40d3-44e9-adc2-05a39c634eb3
 keywords:
-- Gestione finestre desktop (DWM), frame di finestra personalizzati
-- DWM (Gestione finestre desktop), frame di finestra personalizzati
-- frame di finestra personalizzati
+- Gestione finestre desktop (DWM), riquadri finestra personalizzati
+- DWM (Gestione finestre desktop), riquadri finestra personalizzati
+- riquadri di finestra personalizzati
 - rimozione di frame standard
 - estensione di frame client
 - Gestione finestre desktop (DWM), estensione di frame client
@@ -20,44 +20,44 @@ keywords:
 - DWM (Gestione finestre desktop), hit testing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a27a9b71dd2dd91cb000a352ef039de2a71cd9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0b440f475dfacc610354ce151ab0be42dbbe3069390b1efa211195252f7a3914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741453"
 ---
-# <a name="custom-window-frame-using-dwm"></a>Cornice della finestra personalizzata mediante DWM
+# <a name="custom-window-frame-using-dwm"></a>Cornice di finestra personalizzata con DWM
 
-In questo argomento viene illustrato come utilizzare le API di Gestione finestre desktop (DWM) per creare frame di finestra personalizzati per l'applicazione.
+Questo argomento illustra come usare le API Gestione finestre desktop (DWM) per creare frame di finestra personalizzati per l'applicazione.
 
 -   [Introduzione](#introduction)
 -   [Estensione del frame client](#extending-the-client-frame)
 -   [Rimozione del frame standard](#removing-the-standard-frame)
 -   [Disegno nella finestra cornice estesa](#drawing-in-the-extended-frame-window)
 -   [Abilitazione dell'hit testing per il frame personalizzato](#enabling-hit-testing-for-the-custom-frame)
--   [Appendice A: procedura della finestra di esempio](#appendix-a-sample-window-procedure)
--   [Appendice B: disegno del titolo della didascalia](#appendix-b-painting-the-caption-title)
--   [Appendice C: funzione HitTestNCA](#appendix-c-hittestnca-function)
+-   [Appendice A: Procedura della finestra di esempio](#appendix-a-sample-window-procedure)
+-   [Appendice B: Disegno del titolo della didascalia](#appendix-b-painting-the-caption-title)
+-   [Appendice C: Funzione HitTestNCA](#appendix-c-hittestnca-function)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="introduction"></a>Introduzione
 
-In Windows Vista e versioni successive, l'aspetto delle aree non client delle finestre dell'applicazione (la barra del titolo, l'icona, il bordo della finestra e i pulsanti della didascalia) sono controllati da DWM. Utilizzando le API di DWM, è possibile modificare il modo in cui DWM esegue il rendering del frame di una finestra.
+In Windows Vista e versioni successive, l'aspetto delle aree non client delle finestre dell'applicazione (la barra del titolo, l'icona, il bordo della finestra e i pulsanti della didascalia) è controllato da DWM. Usando le API DWM, è possibile modificare il modo in cui DWM esegue il rendering del frame di una finestra.
 
-Una funzionalità delle API di DWM è la possibilità di estendere il frame dell'applicazione nell'area client. In questo modo è possibile integrare un elemento dell'interfaccia utente client, ad esempio una barra degli strumenti, nel frame, fornendo ai controlli dell'interfaccia utente una posizione più evidente nell'interfaccia utente dell'applicazione. Windows Internet Explorer 7 in Windows Vista, ad esempio, integra la barra di spostamento nella cornice della finestra estendendo la parte superiore del frame, come illustrato nello screenshot seguente.
+Una funzionalità delle API DWM è la possibilità di estendere il frame dell'applicazione nell'area client. Ciò consente di integrare un elemento dell'interfaccia utente client, ad esempio una barra degli strumenti, nel frame, offrendo ai controlli dell'interfaccia utente una posizione più importante nell'interfaccia utente dell'applicazione. Ad esempio, Windows Internet Explorer 7 in Windows Vista integra la barra di spostamento nella cornice della finestra estendendo la parte superiore del frame, come illustrato nello screenshot seguente.
 
 ![barra di spostamento integrata nella cornice della finestra.](images/ie7-extendedborder-boxed.png)
 
-La possibilità di estendere la cornice della finestra consente anche di creare frame personalizzati mantenendo l'aspetto della finestra. Ad esempio, Microsoft Office Word 2007 disegna il pulsante di Office e la barra di accesso rapido all'interno del frame personalizzato, fornendo i pulsanti di riduzione a icona standard, Ingrandisci e Chiudi, come illustrato nello screenshot seguente.
+La possibilità di estendere la cornice della finestra consente anche di creare fotogrammi personalizzati mantenendo l'aspetto della finestra. Ad esempio, Microsoft Office Word 2007 disegna il pulsante Office e la barra degli strumenti Accesso rapido all'interno della cornice personalizzata fornendo i pulsanti standard riduci a icona, ingrandisce e chiudi i pulsanti didascalia, come illustrato nello screenshot seguente.
 
-![pulsante di Office e barra di accesso rapido in Word 2007](images/word2007-customborder-boxed.png)
+![Pulsante office e barra degli strumenti di accesso rapido in Word 2007](images/word2007-customborder-boxed.png)
 
 ## <a name="extending-the-client-frame"></a>Estensione del frame client
 
-La funzionalità per estendere il frame nell'area client viene esposta dalla funzione [**DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) . Per estendere il frame, passare l'handle della finestra di destinazione insieme ai valori di inserimento dei margini a **DwmExtendFrameIntoClientArea**. I valori di inserimento dei margini determinano la distanza per estendere il frame nei quattro lati della finestra.
+La funzionalità per estendere il frame nell'area client viene esposta dalla [**funzione DwmExtendFrameIntoClientArea.**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) Per estendere il frame, passare l'handle della finestra di destinazione insieme ai valori dell'inset margin a **DwmExtendFrameIntoClientArea**. I valori iniziali del margine determinano fino a che punto estendere il frame sui quattro lati della finestra.
 
-Il codice seguente illustra l'uso di [**DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) per estendere il frame.
+Il codice seguente illustra l'uso [**di DwmExtendFrameIntoClientArea**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmextendframeintoclientarea) per estendere il frame.
 
 
 ```
@@ -86,25 +86,25 @@ if (message == WM_ACTIVATE)
 
 
 
-Si noti che l'estensione del frame viene eseguita all'interno del messaggio di [**\_ attivazione WM**](/windows/desktop/inputdev/wm-activate) invece che del messaggio [**WM \_ create**](/windows/desktop/winmsg/wm-create) . Ciò garantisce che l'estensione del frame venga gestita correttamente quando la finestra è con le dimensioni predefinite e quando viene ingrandita.
+Si noti che l'estensione del frame viene eseguita all'interno [**del messaggio WM \_ ACTIVATE**](/windows/desktop/inputdev/wm-activate) anziché del [**messaggio WM \_ CREATE.**](/windows/desktop/winmsg/wm-create) Ciò garantisce che l'estensione del frame venga gestita correttamente quando la finestra ha le dimensioni predefinite e quando viene ingrandita.
 
-Nell'immagine seguente viene mostrata una cornice di finestra standard (a sinistra) e la stessa cornice della finestra estesa (a destra). Il frame viene esteso usando l'esempio di codice precedente e lo sfondo predefinito Microsoft Visual Studio [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) ( \_ finestra dei colori + 1).
+L'immagine seguente mostra una cornice di finestra standard (a sinistra) e la stessa cornice di finestra estesa (a destra). Il frame viene esteso usando l'esempio di codice precedente e l'Microsoft Visual Studio [**sfondo WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) predefinito (COLOR \_ WINDOW +1).
 
-![Screenshot di uno standard (a sinistra) e di un frame esteso (a destra) con sfondo bianco](images/white-sidebyside.png)
+![Screenshot di un frame standard (a sinistra) e esteso (a destra) con sfondo bianco](images/white-sidebyside.png)
 
-La differenza visiva tra queste due finestre è molto sottile. L'unica differenza tra i due è che il bordo della linea nera sottile dell'area client nella finestra a sinistra non è presente nella finestra a destra. Il motivo di questo bordo mancante è che è incorporato nel frame esteso, ma il resto dell'area client non lo è. Affinché i frame estesi siano visibili, le aree sottostanti ogni lato dei frame estesi devono contenere dati pixel con un valore alfa pari a 0. Il bordo nero intorno all'area client presenta dati pixel in cui tutti i valori di colore (rosso, verde, blu e alfa) vengono impostati su 0. Il resto dello sfondo non ha il valore alfa impostato su 0, quindi il resto del frame esteso non è visibile.
+La differenza visiva tra queste due finestre è molto sottile. L'unica differenza tra i due è che il bordo sottile della linea nera dell'area client nella finestra a sinistra non è presente nella finestra a destra. Il motivo di questo bordo mancante è che è incorporato nel frame esteso, ma il resto dell'area client non lo è. Perché i fotogrammi estesi siano visibili, le aree sottostanti a ogni lato del frame esteso devono avere dati in pixel con valore alfa pari a 0. Il bordo nero intorno all'area client contiene dati in pixel in cui tutti i valori di colore (rosso, verde, blu e alfa) sono impostati su 0. Il resto dello sfondo non ha il valore alfa impostato su 0, quindi il resto del frame esteso non è visibile.
 
-Il modo più semplice per garantire la visibilità dei frame estesi consiste nel disegnare l'intero nero dell'area client. A tale scopo, inizializzare il membro *hbrBackground* della struttura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) o [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) sull'handle del pennello nero azionario \_ . La figura seguente mostra lo stesso frame standard (a sinistra) e il frame esteso (a destra) mostrati in precedenza. Questa volta, tuttavia, *hbrBackground* è impostato sull'handle di \_ pennello nero ottenuto dalla funzione [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) .
+Il modo più semplice per garantire che i frame estesi siano visibili è disegnare l'intera area client in nero. A tale scopo, inizializzare il membro *hbrBackground* della struttura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) o [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) sull'handle del pennello BLACK \_ predefinito. L'immagine seguente mostra lo stesso frame standard (a sinistra) e il frame esteso (a destra) mostrato in precedenza. Questa volta, tuttavia, *hbrBackground* è impostato sull'handle BLACK \_ BRUSH ottenuto dalla funzione [**GetStockObject.**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject)
 
-![Screenshot di uno standard (a sinistra) e di un frame esteso (a destra) con sfondo nero](images/standard-extended-sidebyside.png)
+![Screenshot di un frame standard (a sinistra) ed esteso (a destra) con sfondo nero](images/standard-extended-sidebyside.png)
 
 ## <a name="removing-the-standard-frame"></a>Rimozione del frame standard
 
-Dopo aver esteso il frame dell'applicazione e averlo reso visibile, è possibile rimuovere il frame standard. La rimozione del frame standard consente di controllare la larghezza di ogni lato del frame anziché semplicemente di estendere il frame standard.
+Dopo aver esteso il frame dell'applicazione e reso visibile, è possibile rimuovere il frame standard. La rimozione del frame standard consente di controllare la larghezza di ogni lato del frame anziché semplicemente estendere il frame standard.
 
-Per rimuovere la cornice della finestra standard, è necessario gestire il messaggio [**WM \_ NCCALCSIZE**](/windows/desktop/winmsg/wm-nccalcsize) , in particolare quando il valore *wParam* è **true** e il valore restituito è 0. In questo modo, l'applicazione usa l'intera area della finestra come area client, rimuovendo il frame standard.
+Per rimuovere il frame della finestra standard, è necessario gestire il messaggio [**WM \_ NCCALCSIZE,**](/windows/desktop/winmsg/wm-nccalcsize) in particolare quando il relativo *valore wParam* è **TRUE** e il valore restituito è 0. In questo modo, l'applicazione usa l'intera area della finestra come area client, rimuovendo il frame standard.
 
-I risultati della gestione del messaggio [**WM \_ NCCALCSIZE**](/windows/desktop/winmsg/wm-nccalcsize) non sono visibili fino a quando non è necessario ridimensionare l'area client. Fino a quel momento, la visualizzazione iniziale della finestra viene visualizzata con il frame standard e i bordi estesi. Per ovviare a questo problema, è necessario ridimensionare la finestra o eseguire un'azione che avvii un messaggio **WM \_ NCCALCSIZE** al momento della creazione della finestra. Questa operazione può essere eseguita tramite la funzione [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) per spostare la finestra e ridimensionarla. Il codice seguente illustra una chiamata a **SetWindowPos** che impone l'invio di un messaggio **WM \_ NCCALCSIZE** usando gli attributi Rectangle della finestra corrente e il \_ flag FRAMECHANGED di SWP.
+I risultati della gestione del [**messaggio WM \_ NCCALCSIZE**](/windows/desktop/winmsg/wm-nccalcsize) non sono visibili fino a quando non è necessario ridimensionare l'area client. Fino a quel momento, la visualizzazione iniziale della finestra viene visualizzata con il frame standard e i bordi estesi. Per risolvere questo problema, è necessario ridimensionare la finestra o eseguire un'azione che avvia un messaggio **WM \_ NCCALCSIZE** al momento della creazione della finestra. Questa operazione può essere eseguita usando la [**funzione SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) per spostare la finestra e ridimensionarla. Il codice seguente illustra una chiamata a **SetWindowPos** che forza l'invio di un messaggio **WM \_ NCCALCSIZE** usando gli attributi del rettangolo della finestra corrente e il flag SWP \_ FRAMECHANGED.
 
 
 ```
@@ -128,34 +128,34 @@ if (message == WM_CREATE)
 
 
 
-La figura seguente mostra il frame standard (a sinistra) e il frame appena esteso senza il frame standard (Right).
+L'immagine seguente mostra il frame standard (a sinistra) e il frame appena esteso senza il frame standard (a destra).
 
 ![Screenshot di un frame standard (a sinistra) e di un frame personalizzato (a destra)](images/standard-custom-sidebyside.png)
 
 ## <a name="drawing-in-the-extended-frame-window"></a>Disegno nella finestra cornice estesa
 
-Rimuovendo il frame standard, si perde il disegno automatico dell'icona e del titolo dell'applicazione. Per aggiungerli nuovamente all'applicazione, è necessario crearli manualmente. A tale scopo, esaminare prima di tutto la modifica apportata all'area client.
+Rimuovendo il frame standard, si perde il disegno automatico dell'icona e del titolo dell'applicazione. Per aggiungerli di nuovo all'applicazione, è necessario disegnarli manualmente. A tale scopo, esaminare innanzitutto la modifica apportata all'area client.
 
-Con la rimozione del frame standard, l'area client è ora costituita dall'intera finestra, incluso il frame esteso. Che include l'area in cui vengono disegnati i pulsanti della didascalia. Nel confronto affiancato riportato di seguito, l'area client sia per il frame standard che per il frame esteso personalizzato viene evidenziata in rosso. L'area client per la finestra cornice standard (a sinistra) è l'area nera. Nella finestra cornice estesa (a destra) l'area client è l'intera finestra.
+Con la rimozione del frame standard, l'area client è ora costituita dall'intera finestra, incluso il frame esteso. Include l'area in cui vengono disegnati i pulsanti della didascalia. Nel confronto side-by-side seguente l'area client sia per il frame standard che per il frame esteso personalizzato è evidenziata in rosso. L'area client per la finestra cornice standard (a sinistra) è l'area nera. Nella finestra cornice estesa (a destra), l'area client è l'intera finestra.
 
-![Screenshot di un'area client evidenziata in rosso nel frame standard e personalizzato](images/clientarea-sidebyside.png)
+![Screenshot di un'area client evidenziata di colore rosso nel frame standard e personalizzato](images/clientarea-sidebyside.png)
 
-Poiché l'intera finestra è l'area client, è possibile creare semplicemente gli elementi desiderati nel frame esteso. Per aggiungere un titolo all'applicazione, è sufficiente creare un testo nell'area appropriata. La figura seguente mostra il testo con tema disegnato nel frame della didascalia personalizzata. Il titolo viene disegnato usando la funzione [**DrawThemeTextEx**](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) . Per visualizzare il codice che dipinge il titolo, vedere [Appendice B: disegno del titolo della didascalia](#appendix-b-painting-the-caption-title).
+Poiché l'intera finestra è l'area client, è sufficiente disegnare ciò che si vuole nel frame esteso. Per aggiungere un titolo all'applicazione, è sufficiente disegnare testo nell'area appropriata. L'immagine seguente mostra il testo a sfondo disegnato sulla cornice della didascalia personalizzata. Il titolo viene disegnato usando la [**funzione DrawThemeTextEx.**](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) Per visualizzare il codice che disegna il titolo, vedere [Appendice B: Disegno del titolo della didascalia](#appendix-b-painting-the-caption-title).
 
 ![Screenshot di un frame personalizzato con titolo](images/custom-caption-title.png)
 
 > [!Note]  
-> Quando si disegna nel frame personalizzato, prestare attenzione quando si posizionano i controlli dell'interfaccia utente. Poiché l'intera finestra è l'area client, è necessario regolare la posizione del controllo dell'interfaccia utente per ogni larghezza del frame se non si desidera che vengano visualizzate in o nel frame esteso.
+> Quando si disegna nel frame personalizzato, prestare attenzione quando si posizionano i controlli dell'interfaccia utente. Poiché l'intera finestra è l'area client, è necessario modificare il posizionamento del controllo dell'interfaccia utente per ogni larghezza del frame se non si vuole che vengano visualizzati in o nel frame esteso.
 
- 
+ 
 
 ## <a name="enabling-hit-testing-for-the-custom-frame"></a>Abilitazione dell'hit testing per il frame personalizzato
 
-Un effetto collaterale della rimozione del frame standard è la perdita del comportamento predefinito di ridimensionamento e di trasferimento. Affinché l'applicazione possa emulare correttamente il comportamento della finestra standard, è necessario implementare la logica per gestire l'hit test del pulsante della didascalia e il ridimensionamento del frame o lo stato di trasferimento.
+Un effetto collaterale della rimozione del frame standard è la perdita del comportamento di ridimensionamento e spostamento predefinito. Perché l'applicazione emuli correttamente il comportamento della finestra standard, è necessario implementare la logica per gestire l'hit testing del pulsante della didascalia e il ridimensionamento/spostamento dei frame.
 
-Per l'hit test del pulsante della didascalia, DWM fornisce la funzione [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) . Per eseguire correttamente il test dei pulsanti della didascalia negli scenari di frame personalizzati, i messaggi devono essere prima passati a **DwmDefWindowProc** per la gestione. **DwmDefWindowProc** restituisce **true** se un messaggio viene gestito e **false** in caso contrario. Se il messaggio non viene gestito da **DwmDefWindowProc**, l'applicazione deve gestire il messaggio stesso o passare il messaggio su [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
+Per l'hit testing del pulsante della didascalia, DWM [**fornisce la funzione DwmDefWindowProc.**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) Per eseguire correttamente l'hit test dei pulsanti della didascalia negli scenari di frame personalizzati, i messaggi devono prima essere passati a **DwmDefWindowProc** per la gestione. **DwmDefWindowProc restituisce** **TRUE se** un messaggio viene gestito e **FALSE** in caso contrario. Se il messaggio non viene gestito da **DwmDefWindowProc,** l'applicazione deve gestire il messaggio stesso o passare il messaggio a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
 
-Per il ridimensionamento e lo stato del frame, l'applicazione deve fornire la logica di hit testing e gestire i messaggi di hit test del frame. I messaggi di hit test del frame vengono inviati all'utente tramite il messaggio [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) , anche se l'applicazione crea un frame personalizzato senza il frame standard. Il codice seguente illustra la gestione del messaggio **WM \_ NCHITTEST** quando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) non la gestisce. Per visualizzare il codice della funzione chiamata `HitTestNCA` , vedere [Appendice C: HitTestNCA Function](#appendix-c-hittestnca-function).
+Per il ridimensionamento e lo spostamento dei frame, l'applicazione deve fornire la logica di hit testing e gestire i messaggi di hit test dei frame. I messaggi di hit test dei frame vengono inviati all'utente tramite il messaggio [**WM \_ NCHITTEST,**](/windows/desktop/inputdev/wm-nchittest) anche se l'applicazione crea un frame personalizzato senza frame standard. Il codice seguente illustra la gestione **del messaggio \_ WM NCHITTEST** quando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) non lo gestisce. Per visualizzare il codice della funzione `HitTestNCA` chiamata, vedere [Appendice C: Funzione HitTestNCA](#appendix-c-hittestnca-function).
 
 
 ```
@@ -173,9 +173,9 @@ if ((message == WM_NCHITTEST) && (lRet == 0))
 
 
 
-## <a name="appendix-a-sample-window-procedure"></a>Appendice A: procedura della finestra di esempio
+## <a name="appendix-a-sample-window-procedure"></a>Appendice A: Procedura della finestra di esempio
 
-Nell'esempio di codice riportato di seguito viene illustrata una routine della finestra e le funzioni di lavoro di supporto utilizzate per creare un'applicazione cornice personalizzata.
+L'esempio di codice seguente illustra una routine della finestra e le relative funzioni di lavoro di supporto usate per creare un'applicazione frame personalizzata.
 
 
 ```
@@ -350,9 +350,9 @@ LRESULT AppWinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-## <a name="appendix-b-painting-the-caption-title"></a>Appendice B: disegno del titolo della didascalia
+## <a name="appendix-b-painting-the-caption-title"></a>Appendice B: Disegno del titolo della didascalia
 
-Il codice seguente illustra come disegnare un titolo di didascalia nel frame esteso. Questa funzione deve essere chiamata dall'interno delle chiamate a [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) e [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) .
+Il codice seguente illustra come disegnare un titolo della didascalia sul frame esteso. Questa funzione deve essere chiamata dall'interno delle chiamate [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) [**ed EndPaint.**](/windows/desktop/api/winuser/nf-winuser-endpaint)
 
 
 ```
@@ -436,9 +436,9 @@ void PaintCustomCaption(HWND hWnd, HDC hdc)
 
 
 
-## <a name="appendix-c-hittestnca-function"></a>Appendice C: funzione HitTestNCA
+## <a name="appendix-c-hittestnca-function"></a>Appendice C: Funzione HitTestNCA
 
-Il codice seguente illustra la `HitTestNCA` funzione usata nell' [Abilitazione dell'hit testing per il frame personalizzato](#enabling-hit-testing-for-the-custom-frame). Questa funzione gestisce la logica di hit testing per [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) quando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) non gestisce il messaggio.
+Il codice seguente illustra la `HitTestNCA` funzione usata [nell'abilitazione dell'hit testing per il frame personalizzato](#enabling-hit-testing-for-the-custom-frame). Questa funzione gestisce la logica di hit testing per [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) quando [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) non gestisce il messaggio.
 
 
 ```
@@ -503,6 +503,6 @@ LRESULT HitTestNCA(HWND hWnd, WPARAM wParam, LPARAM lParam)
 [Cenni preliminari di Gestione finestre desktop](dwm-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

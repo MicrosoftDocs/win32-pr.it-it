@@ -1,33 +1,33 @@
 ---
-description: In questo argomento viene descritto come scrivere testo in un OM XPS.
+description: Questo argomento descrive come scrivere testo in un sistema operativo XPS.
 ms.assetid: 5552b7b0-1c95-43fa-ad06-c167c69c5a56
-title: Scrivere testo in un OM XPS
+title: Scrivere testo in un sistema operativo XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cca953d5281620cf7b7d9b7b07c133bee0d4de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff2c77106649960982888d7ee8d6e4b679bd62e44be1e0dc9786206261b62bbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718531"
 ---
-# <a name="write-text-to-an-xps-om"></a>Scrivere testo in un OM XPS
+# <a name="write-text-to-an-xps-om"></a>Scrivere testo in un sistema operativo XPS
 
-In questo argomento viene descritto come scrivere testo in un OM XPS.
+Questo argomento descrive come scrivere testo in un sistema operativo XPS.
 
-Il testo viene inserito in un OM XPS creando e formattando un'interfaccia [**IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) e quindi aggiungendo l'interfaccia **IXpsOMGlyphs** all'elenco di oggetti visivi della pagina o dell'area di disegno. Ogni interfaccia **IXpsOMGlyphs** rappresenta un'esecuzione del glifo, ovvero un'esecuzione continua di caratteri che condividono un formato comune. Quando viene modificato un elemento del formato carattere (ad esempio tipo di carattere o dimensione) o quando una riga si interrompe, è necessario creare una nuova interfaccia **IXpsOMGlyphs** e aggiungerla all'elenco degli oggetti visivi.
+Il testo viene inserito in un OM XPS creando e formattazione [**un'interfaccia IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) e quindi aggiungendo l'interfaccia **IXpsOMGlyphs** all'elenco di oggetti visivi della pagina o dell'area di disegno. Ogni **interfaccia IXpsOMGlyphs** rappresenta un'esecuzione di glifi, ovvero un'esecuzione continua di caratteri che condividono un formato comune. Quando un elemento di formato carattere (ad esempio il tipo di carattere o la dimensione) cambia o quando si interrompe una riga, è necessario creare e aggiungere una nuova interfaccia **IXpsOMGlyphs** all'elenco di oggetti visivi.
 
-Alcune delle proprietà di un'esecuzione di glifo possono essere impostate usando i metodi dell'interfaccia [**IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) . Alcune proprietà, tuttavia, interagiscono con altri e devono essere impostate tramite un'interfaccia [**IXpsOMGlyphsEditor**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphseditor) .
+Alcune delle proprietà di un'esecuzione di glifi possono essere impostate usando i metodi [**dell'interfaccia IXpsOMGlyphs.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) Alcune proprietà, tuttavia, interagiscono con altre e devono essere impostate tramite [**un'interfaccia IXpsOMGlyphsEditor.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphseditor)
 
-Prima di usare gli esempi di codice seguenti nel programma, leggere la dichiarazione di non responsabilità nelle [attività comuni di programmazione dei documenti XPS](common-xps-document-tasks.md).
+Prima di usare gli esempi di codice seguenti nel programma, leggere la dichiarazione di non responsabilità in [Common XPS Document Programming Tasks](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Esempio di codice
 
-### <a name="create-a-glyph-run-from-a-string"></a>Creare un'icona eseguita da una stringa
+### <a name="create-a-glyph-run-from-a-string"></a>Creare un'esecuzione di glifi da una stringa
 
-Un'esecuzione di glifo viene in genere creata in diversi passaggi che includono il caricamento delle risorse del tipo di carattere utilizzate dall'esecuzione del glifo, l'impostazione di un pennello di riempimento, la specifica delle dimensioni del carattere e della posizione iniziale e l'impostazione della stringa Unicode.
+Un'esecuzione di glifi viene in genere creata in diversi passaggi che includono il caricamento delle risorse del tipo di carattere usate dall'esecuzione del glifo, l'impostazione di un pennello di riempimento, la specifica delle dimensioni del carattere e della posizione iniziale e l'impostazione della stringa Unicode.
 
-La sezione seguente dell'esempio di codice contiene una routine che accetta alcune variabili, incluse le dimensioni del carattere, il colore e la posizione e i caratteri da scrivere. Il codice crea quindi un'esecuzione del glifo e la aggiunge a una pagina. Nell'esempio di codice si presuppone che l'inizializzazione descritta in [Initialize an XPS om](xps-object-model-initialization.md) sia stata eseguita e che il documento includa almeno una pagina. Per altre informazioni sulla creazione di un OM XPS vuoto, vedere [creare un OM XPS vuoto](create-a-blank-xps-om.md).
+La sezione seguente dell'esempio di codice contiene una routine che accetta alcune variabili, tra cui la dimensione del carattere, il colore e la posizione, e i caratteri da scrivere. Il codice crea quindi un'esecuzione del glifo e quindi lo aggiunge a una pagina. L'esempio di codice presuppone che si sia verificata l'inizializzazione descritta in Inizializzare un sistema operativo [XPS](xps-object-model-initialization.md) e che il documento abbia almeno una pagina. Per altre informazioni sulla creazione di un sistema operativo XPS vuoto, vedere Creare un sistema operativo [XPS vuoto.](create-a-blank-xps-om.md)
 
 
 ```C++
@@ -88,7 +88,7 @@ WriteText_AddTextToPage(
 
 ### <a name="load-and-create-resources"></a>Caricare e creare risorse
 
-La creazione di un'interfaccia [**IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) richiede una risorsa del tipo di carattere. In molti casi, un blocco di testo usa lo stesso tipo di carattere e colore. Questa sezione dell'esempio di codice creerà quindi le interfacce delle risorse dei tipi di carattere che verranno usate nelle chiamate che collocano il testo nella pagina.
+La creazione di [**un'interfaccia IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs) richiede una risorsa tipo di carattere. In molti casi, un blocco di testo usa lo stesso tipo di carattere e lo stesso colore. Di conseguenza, questa sezione dell'esempio di codice creerà le interfacce delle risorse del tipo di carattere che verranno usate nelle chiamate che posizionano il testo nella pagina.
 
 
 ```C++
@@ -162,9 +162,9 @@ La creazione di un'interfaccia [**IXpsOMGlyphs**](/windows/desktop/api/xpsobject
 
 
 
-### <a name="draw-text-in-a-page"></a>Creare il testo in una pagina
+### <a name="draw-text-in-a-page"></a>Disegnare testo in una pagina
 
-Nella sezione finale dell'esempio di codice vengono create le esecuzioni del glifo per ogni esecuzione di testo formattato in modo simile. Per eseguire il codice in questa sezione finale, sono necessarie l'interfaccia **xpsFactory** , nonché la risorsa del tipo di carattere e un pennello per i colori del testo, che devono essere state create e inizializzate. In questo esempio, la funzione descritta nella prima sezione viene usata per creare le esecuzioni del glifo e per aggiungerle alla pagina.
+La sezione finale dell'esempio di codice crea le esecuzioni di glifi per ogni esecuzione di testo formattato in modo simile. Per eseguire il codice in questa sezione finale, sono necessari l'interfaccia **xpsFactory,** nonché la risorsa carattere e un pennello per il colore del testo e devono essere state create e inizializzate istanze. In questo esempio la funzione descritta nella prima sezione viene usata per creare le esecuzioni del glifo e aggiungerle alla pagina.
 
 
 ```C++
@@ -223,19 +223,19 @@ Nella sezione finale dell'esempio di codice vengono create le esecuzioni del gli
 **Passaggi successivi**
 </dt> <dt>
 
-[Esplorare XPS OM](navigate-the-xps-om.md)
+[Esplorare il sistema operativo XPS](navigate-the-xps-om.md)
 </dt> <dt>
 
-[Creare grafica in un OM XPS](draw-graphics-in-an-xps-om.md)
+[Disegnare grafica in un sistema operativo XPS](draw-graphics-in-an-xps-om.md)
 </dt> <dt>
 
-[Inserire immagini in un OM XPS](place-images-in-an-xps-om.md)
+[Inserire immagini in un sistema operativo XPS](place-images-in-an-xps-om.md)
 </dt> <dt>
 
-[Scrivere un OM XPS in un documento XPS](write-an-xps-om-to-an-xps-document.md)
+[Scrivere un file OM XPS in un documento XPS](write-an-xps-om-to-an-xps-document.md)
 </dt> <dt>
 
-[Stampare un OM XPS](print-an-xps-om.md)
+[Stampare un sistema operativo XPS](print-an-xps-om.md)
 </dt> <dt>
 
 **Usato in questa sezione**
@@ -268,13 +268,13 @@ Nella sezione finale dell'esempio di codice vengono create le esecuzioni del gli
 [**IXpsOMVisualCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualcollection)
 </dt> <dt>
 
-**Per ulteriori informazioni**
+**Per altre informazioni**
 </dt> <dt>
 
-[Inizializzare un OM XPS](xps-object-model-initialization.md)
+[Inizializzare un sistema operativo XPS](xps-object-model-initialization.md)
 </dt> <dt>
 
-[Informazioni di riferimento sulle API documento XPS](xps-programming-reference.md)
+[Informazioni di riferimento sulle API dei documenti XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

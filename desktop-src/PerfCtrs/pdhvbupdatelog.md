@@ -1,7 +1,7 @@
 ---
-description: La funzione PdhVbUpdateLog Function aggiorna la query corrente e scrive nuovi dati nel file di log. Questa funzione chiama PdhUpdateLog.
+description: La funzione PdhVbUpdateLog aggiorna la query corrente e scrive nuovi dati nel file di log. Questa funzione chiama PdhUpdateLog.
 ms.assetid: a7a3ad18-2d61-448e-9764-ba363398e804
-title: PdhVbUpdateLog (funzione)
+title: Funzione PdhVbUpdateLog
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,37 +13,37 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: c02e533f57481004b0a7de9f779399b20bddc0af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7bf8af71d3a0f5cd20a84ef0f1532806e3d3e8d268bd2d322d617534b533cc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033611"
 ---
-# <a name="pdhvbupdatelog-function"></a>PdhVbUpdateLog (funzione)
+# <a name="pdhvbupdatelog-function"></a>Funzione PdhVbUpdateLog
 
-La funzione **PdhVbUpdateLog** Function aggiorna la query corrente e scrive nuovi dati nel file di log. Questa funzione chiama [**PdhUpdateLog**](/windows/desktop/api/Pdh/nf-pdh-pdhupdateloga).
+La **funzione PdhVbUpdateLog** aggiorna la query corrente e scrive nuovi dati nel file di log. Questa funzione chiama [**PdhUpdateLog**](/windows/desktop/api/Pdh/nf-pdh-pdhupdateloga).
 
 > [!IMPORTANT]
-> La funzione descritta in questo argomento può essere modificata o non disponibile in futuro. Microsoft consiglia invece di utilizzare le funzioni descritte in [funzioni dei contatori delle prestazioni](performance-counters-functions.md).
+> La funzione descritta in questo argomento potrebbe essere modificata o non disponibile in futuro. È invece consigliabile usare le funzioni descritte in [Funzioni dei contatori delle prestazioni.](performance-counters-functions.md)
 
-Funzione PdhVbUpdateLog ( \_ ByVal numero As PDH \_ numero, \_ ByVal szUserString As LPCTSTR \_ )
+Function PdhVbUpdateLog( \_ ByVal hLog As PDH \_ HLOG, \_ ByVal szUserString As LPCTSTR \_ )
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*numero* \[ in\]
+*hLog* \[ Pollici\]
 </dt> <dd>
 
-Handle per il file di log da aggiornare. Questo handle viene restituito dalla funzione [**PdhVbOpenLog**](pdhvbopenlog.md) .
+Handle per il file di log da aggiornare. Questo handle viene restituito dalla [**funzione PdhVbOpenLog.**](pdhvbopenlog.md)
 
 </dd> <dt>
 
-*szUserString* \[ in\]
+*szUserString* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa che specifica i dati da aggiungere al file di log. Questa operazione viene in genere utilizzata per i commenti nel file di log.
+Puntatore a una stringa che specifica i dati da aggiungere al file di log. Viene in genere usato per i commenti all'interno del file di log.
 
 </dd> </dl>
 
@@ -51,17 +51,17 @@ Puntatore a una stringa che specifica i dati da aggiungere al file di log. Quest
 
 Se la funzione ha esito positivo, restituisce 0.
 
-Se la funzione ha esito negativo, il valore restituito è un [codice di errore di sistema](/windows/desktop/Debug/system-error-codes) o un codice di [errore PDH](pdh-error-codes.md). Di seguito sono riportati i valori possibili.
+Se la funzione ha esito negativo, il valore restituito è un codice [di errore di sistema](/windows/desktop/Debug/system-error-codes) o un codice di errore [PDH](pdh-error-codes.md). Di seguito sono riportati i valori possibili.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                                                                            |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_buffer insufficiente PDH \_**</dt> </dl>   | I dati richiesti sono maggiori del buffer fornito. Impossibile restituire i dati richiesti.<br/> |
-| <dl> <dt>**\_argomento PDH non valido \_**</dt> </dl>      | La dimensione di uno o più buffer di stringa non è corretta.<br/>                                  |
-| <dl> <dt>**\_handle PDH non valido \_**</dt> </dl>        | L'handle non è un oggetto PDH valido.<br/>                                                       |
-| <dl> <dt>**\_errore di \_ apertura del file di registro PDH \_ \_**</dt> </dl> | Impossibile aprire il file di log specificato.<br/>                                                      |
-| <dl> <dt>**il \_ file PDH non è stato \_ \_ trovato**</dt> </dl>       | Impossibile trovare il file specificato.<br/>                                                          |
+| <dl> <dt>**BUFFER PDH \_ \_ INSUFFICIENTE**</dt> </dl>   | I dati richiesti sono più grandi del buffer fornito. Impossibile restituire i dati richiesti.<br/> |
+| <dl> <dt>**ARGOMENTO PDH \_ NON \_ VALIDO**</dt> </dl>      | Uno o più buffer di stringa non hanno le dimensioni corrette.<br/>                                  |
+| <dl> <dt>**HANDLE PDH \_ NON \_ VALIDO**</dt> </dl>        | L'handle non è un oggetto PDH valido.<br/>                                                       |
+| <dl> <dt>**ERRORE DI APERTURA \_ \_ DEL FILE DI LOG \_ PDH \_**</dt> </dl> | Impossibile aprire il file di log specificato.<br/>                                                      |
+| <dl> <dt>**FILE PDH \_ \_ NON \_ TROVATO**</dt> </dl>       | Impossibile trovare il file specificato.<br/>                                                          |
 
 
 
@@ -69,7 +69,7 @@ Se la funzione ha esito negativo, il valore restituito è un [codice di errore d
 
 ## <a name="remarks"></a>Commenti
 
-È necessario che sia presente una query attualmente aperta ed è necessario aggiungervi i contatori desiderati prima di chiamare questa funzione.
+Deve essere presente una query attualmente aperta e i contatori desiderati devono essere aggiunti alla query prima che venga chiamata questa funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,9 +77,9 @@ Se la funzione ha esito negativo, il valore restituito è un [codice di errore d
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Libreria<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Libreria<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

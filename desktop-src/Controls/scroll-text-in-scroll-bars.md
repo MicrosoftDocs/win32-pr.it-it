@@ -1,60 +1,60 @@
 ---
 title: Come scorrere il testo
-description: In questa sezione vengono descritte le modifiche che è possibile apportare alla routine della finestra principale di un'applicazione per consentire a un utente di scorrere il testo.
+description: Questa sezione descrive le modifiche che è possibile apportare alla procedura della finestra principale di un'applicazione per consentire a un utente di scorrere il testo.
 ms.assetid: ACB4FF34-38EF-4F3D-9395-D48D58A72C0B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ef9a2eea9490beac7b6ff5048b70de61eb635f
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d2139ac1bff3d197d63011e6a6e76c861b984c5e20b5c54ceab8871678d31a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103872974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914221"
 ---
 # <a name="how-to-scroll-text"></a>Come scorrere il testo
 
-In questa sezione vengono descritte le modifiche che è possibile apportare alla routine della finestra principale di un'applicazione per consentire a un utente di scorrere il testo. L'esempio in questa sezione Crea e visualizza una matrice di stringhe di testo ed elabora i messaggi della barra di scorrimento [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md) in modo che l'utente possa scorrere il testo in senso verticale e orizzontale.
+Questa sezione descrive le modifiche che è possibile apportare alla procedura della finestra principale di un'applicazione per consentire a un utente di scorrere il testo. L'esempio in questa sezione crea e visualizza una matrice di stringhe di testo ed elabora i messaggi della barra di scorrimento [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md) in modo che l'utente possa scorrere il testo sia verticalmente che orizzontalmente.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="processing-the-wm_create-message"></a>Elaborazione del \_ messaggio di creazione WM
+### <a name="processing-the-wm_create-message"></a>Elaborazione del messaggio WM \_ CREATE
 
-Le unità di scorrimento vengono in genere impostate durante l'elaborazione del messaggio [**WM \_ create**](/windows/desktop/winmsg/wm-create) . È consigliabile basare le unità di scorrimento sulle dimensioni del tipo di carattere associato al contesto di dispositivo (DC) della finestra. Per recuperare le dimensioni del carattere per un controller di dominio specifico, usare la funzione [**GetTextMetrics**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics) .
+Le unità di scorrimento vengono in genere impostate durante l'elaborazione [**del messaggio WM \_ CREATE.**](/windows/desktop/winmsg/wm-create) È utile basare le unità di scorrimento sulle dimensioni del tipo di carattere associato al contesto di dispositivo (DC) della finestra. Per recuperare le dimensioni del carattere per un controller di dominio specifico, usare la [**funzione GetTextMetrics.**](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics)
 
-Nell'esempio riportato in questa sezione, un'unità di scorrimento verticale equivale all'altezza di una cella di tipo carattere, più all'esterno. Un'unità di scorrimento orizzontale equivale alla larghezza media di una cella di tipo carattere. Le posizioni di scorrimento orizzontale, quindi, non corrispondono ai caratteri effettivi, a meno che il tipo di carattere dello schermo non sia a larghezza fissa.
+Nell'esempio di questa sezione, un'unità di scorrimento verticale equivale all'altezza di una cella di caratteri e all'interlinea esterna. Un'unità di scorrimento orizzontale equivale alla larghezza media di una cella di caratteri. Le posizioni di scorrimento orizzontale, pertanto, non corrispondono ai caratteri effettivi, a meno che il tipo di carattere dello schermo non sia a larghezza fissa.
 
-### <a name="processing-the-wm_size-message"></a>Elaborazione del \_ messaggio dimensioni WM
+### <a name="processing-the-wm_size-message"></a>Elaborazione del messaggio WM \_ SIZE
 
-Quando si elabora il messaggio di [**\_ dimensioni WM**](/windows/desktop/winmsg/wm-size) , è opportuno regolare l'intervallo di scorrimento e la posizione di scorrimento in modo da riflettere le dimensioni dell'area client, nonché il numero di righe di testo che verranno visualizzate.
+Quando si elabora il messaggio [**WM \_ SIZE,**](/windows/desktop/winmsg/wm-size) è utile regolare l'intervallo di scorrimento e la posizione di scorrimento in modo da riflettere le dimensioni dell'area client e il numero di righe di testo che verranno visualizzate.
 
-La funzione [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) imposta i valori di posizione minimo e massimo, le dimensioni della pagina e la posizione di scorrimento per una barra di scorrimento.
+La [**funzione SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) imposta i valori di posizione minima e massima, le dimensioni della pagina e la posizione di scorrimento per una barra di scorrimento.
 
-### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Elaborazione dei \_ messaggi WM HSCROLL e WM \_ VSCROLL
+### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Elaborazione dei messaggi \_ WM HSCROLL e WM \_ VSCROLL
 
-La barra di scorrimento invia messaggi [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md) alla routine della finestra ogni volta che l'utente fa clic sulla barra di scorrimento o trascina la casella di scorrimento. Le parole meno significative di **WM \_ VSCROLL** e **WM \_ HSCROLL** contengono ciascuno un codice di richiesta che indica la direzione e la grandezza dell'azione di scorrimento.
+La barra di scorrimento invia [**messaggi WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md) alla routine della finestra ogni volta che l'utente fa clic sulla barra di scorrimento o trascina la casella di scorrimento. Le parole di ordine basso di **WM \_ VSCROLL** e **WM \_ HSCROLL** contengono ognuna un codice di richiesta che indica la direzione e la grandezza dell'azione di scorrimento.
 
-Quando vengono elaborati i messaggi [**WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL**](wm-vscroll.md) , viene esaminato il codice della richiesta della barra di scorrimento e viene calcolato l'incremento dello scorrimento. Dopo che l'incremento è stato applicato alla posizione di scorrimento corrente, la finestra viene spostata nella nuova posizione utilizzando la funzione [**ScrollWindowEx**](/windows/desktop/api/Winuser/nf-winuser-scrollwindowex) e la posizione della casella di scorrimento viene regolata utilizzando la funzione [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) .
+Quando vengono [**elaborati i messaggi WM \_ HSCROLL**](wm-hscroll.md) e [**WM \_ VSCROLL,**](wm-vscroll.md) viene esaminato il codice della richiesta della barra di scorrimento e viene calcolato l'incremento dello scorrimento. Dopo che l'incremento è stato applicato alla posizione di scorrimento corrente, la finestra viene scorre fino alla nuova posizione usando la funzione [**ScrollWindowEx**](/windows/desktop/api/Winuser/nf-winuser-scrollwindowex) e la posizione della casella di scorrimento viene regolata usando la [**funzione SetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
 
-Dopo lo scorrimento di una finestra, parte dell'area client viene resa non valida. Per assicurarsi che l'area non valida venga aggiornata, viene usata la funzione [**UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) per generare un messaggio di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) .
+Dopo lo scorrimento di una finestra, parte della relativa area client non è più valida. Per assicurarsi che l'area non valida sia aggiornata, la [**funzione UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) viene usata per generare un [**messaggio WM \_ PAINT.**](/windows/desktop/gdi/wm-paint)
 
-### <a name="processing-the-wm_paint-message"></a>Elaborazione del \_ messaggio di disegno WM
+### <a name="processing-the-wm_paint-message"></a>Elaborazione del messaggio \_ WM PAINT
 
-Quando si elabora il messaggio di [**\_ disegno WM**](/windows/desktop/gdi/wm-paint) , è consigliabile disegnare le righe di testo che si desidera visualizzare nella parte non valida della finestra. Nell'esempio seguente vengono usate la posizione di scorrimento corrente e le dimensioni dell'area non valida per determinare l'intervallo di righe all'interno dell'area non valida per visualizzarle.
+Quando si elabora [**il messaggio WM \_ PAINT,**](/windows/desktop/gdi/wm-paint) è utile disegnare le righe di testo da visualizzare nella parte non valida della finestra. Nell'esempio seguente vengono utilizzate la posizione di scorrimento corrente e le dimensioni dell'area non valida per determinare l'intervallo di righe all'interno dell'area non valida per visualizzarle.
 
 ## <a name="example-of-scrolling-text"></a>Esempio di scorrimento del testo
 
-Nell'esempio seguente viene illustrata una procedura di finestra per una finestra che Visualizza il testo nella relativa area client. Nell'esempio viene illustrato come scorrere il testo in risposta all'input dalle barre di scorrimento orizzontale e verticale.
+L'esempio seguente è una routine finestra per una finestra che visualizza testo nella relativa area client. Nell'esempio viene illustrato come scorrere il testo in risposta all'input dalle barre di scorrimento orizzontale e verticale.
 
 
 ```C++
@@ -326,9 +326,9 @@ switch (uMsg)
 [Uso delle barre di scorrimento](using-scroll-bars.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

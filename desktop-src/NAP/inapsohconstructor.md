@@ -1,10 +1,10 @@
 ---
-title: Interfaccia INapSoHConstructor (NapProtocol. h)
-description: Vengono usati da SHAs per costruire SoHRequests e SHV per costruire SoHResponses.
+title: Interfaccia INapSoHConstructor (NapProtocol.h)
+description: Vengono usati da SHAs per costruire SoHRequests e da SHV per costruire SoHResponses.
 ms.assetid: ad79c80a-3003-4465-b350-77890c217d63
 keywords:
-- NAP interfaccia INapSoHConstructor
-- Interfaccia NAP di INapSoHConstructor, descrizione
+- Interfaccia INapSoHConstructor NAP
+- Interfaccia INapSoHConstructor NAP , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,40 +15,40 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 546a6d3b4ec262fdd725af24211338e848b2b848
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ceb9e927e1ac65f21a3ff457922e1bd475b8327ac2525b2af7afefa6cb173f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037851"
 ---
 # <a name="inapsohconstructor-interface"></a>Interfaccia INapSoHConstructor
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-**INapSoHConstructor** fornisce i metodi usati da Shas per costruire [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh) e SHV per costruire **SoHResponses**.
+**INapSoHConstructor** fornisce metodi usati dagli SHA per costruire [**SoHRequests**](/windows/win32/api/naptypes/ns-naptypes-soh) e da SHV per costruire **SoHResponses**.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **INapSoHConstructor** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapSoHConstructor** dispone anche di questi tipi di membri:
+**L'interfaccia INapSoHConstructor** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSoHConstructor** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **INapSoHConstructor** dispone di questi metodi.
+**L'interfaccia INapSoHConstructor** include questi metodi.
 
 
 
 | Metodo                                                                                   | Descrizione                                         |
 |:-----------------------------------------------------------------------------------------|:----------------------------------------------------|
-| [**INapSoHConstructor:: AppendAttribute**](inapsohconstructor-appendattribute-method.md) | Aggiunge un TLV alla fine del buffer del rapporto di integrità.<br/> |
+| [**INapSoHConstructor::AppendAttribute**](inapsohconstructor-appendattribute-method.md) | Aggiunge un TLV alla fine del buffer SoH.<br/> |
 | [**INapSoHConstructor::GetSoH**](inapsohconstructor-getsoh-method.md)                   | Recupera il pacchetto SoH costruito.<br/>    |
-| [**INapSoHConstructor:: Initialize**](inapsohconstructor-initialize-method.md)           | Inizializza il pacchetto SoH.<br/>              |
-| [**INapSoHConstructor:: Validate**](inapsohconstructor-validate-method.md)               | Verifica la validità del pacchetto SoH.<br/>   |
+| [**INapSoHConstructor::Initialize**](inapsohconstructor-initialize-method.md)           | Inizializza il pacchetto SoH.<br/>              |
+| [**INapSoHConstructor::Validate**](inapsohconstructor-validate-method.md)               | Verifica la validità del pacchetto SoH.<br/>   |
 
 
 
@@ -60,10 +60,10 @@ L'interfaccia **INapSoHConstructor** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 
@@ -72,10 +72,10 @@ L'interfaccia **INapSoHConstructor** dispone di questi metodi.
 
 <dl> <dt>
 
-[Interfacce NAP](nap-interfaces.md)
+[Interfacce di Protezione accesso alla rete](nap-interfaces.md)
 </dt> <dt>
 
-[Riferimento NAP](nap-reference.md)
+[Informazioni di riferimento su Protezione accesso alla rete](nap-reference.md)
 </dt> </dl>
 
  

@@ -1,45 +1,45 @@
 ---
-title: Registrazione per il ripristino dell'applicazione
+title: Registrazione per Application Recovery
 ms.assetid: 2940b1b2-a0ca-4f81-a576-ae6d53ffd4a8
-description: 'Altre informazioni su: registrazione per il ripristino delle applicazioni'
+description: 'Altre informazioni su: Registrazione per Application Recovery'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 056232bc2a8a10857ff07900ce261d95ed719b81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ce2a67a36b26895fdc16652dd271b3b244d0860c14c268144c1357fa3cf51c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024588"
 ---
-# <a name="registering-for-application-recovery"></a>Registrazione per il ripristino dell'applicazione
+# <a name="registering-for-application-recovery"></a>Registrazione per Application Recovery
 
-In questa sezione vengono fornite informazioni dettagliate sull'implementazione di una funzionalità di ripristino nell'applicazione. È consigliabile implementare questa funzionalità per gestire i casi seguenti:
+Questa sezione fornisce informazioni dettagliate sull'implementazione di una funzionalità di ripristino nell'applicazione. È consigliabile implementare questa funzionalità per gestire i casi seguenti:
 
--   [Ripristino quando si verifica un'eccezione non gestita in un'applicazione o si interrompe la risposta](#recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding)
+-   [Recupero quando un'applicazione rileva un'eccezione non gestita o smette di rispondere](#recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding)
 
     Impedisce la perdita di dati quando l'applicazione smette di funzionare in modo imprevisto.
 
--   [Salvataggio dei dati e dello stato dell'applicazione durante la chiusura dell'applicazione a causa di un aggiornamento software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
+-   [Salvataggio dei dati e dello stato dell'applicazione quando l'applicazione viene chiusa a causa di un aggiornamento software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
 
-    Consente a un utente di ottenere facilmente i dati dell'applicazione quando l'applicazione viene chiusa a causa di un'installazione dell'aggiornamento software, che può verificarsi senza concedere all'utente la possibilità di salvare i dati.
+    Consente a un utente di ottenere facilmente i dati dell'applicazione quando l'applicazione viene chiusa a causa di un'installazione dell'aggiornamento software (che potrebbe verificarsi senza dare all'utente la possibilità di salvare i dati).
 
-## <a name="recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding"></a>Ripristino quando si verifica un'eccezione non gestita in un'applicazione o si interrompe la risposta
+## <a name="recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding"></a>Recupero quando un'applicazione rileva un'eccezione non gestita o smette di rispondere
 
-Per registrare un callback di ripristino, chiamare la funzione [**RegisterApplicationRecoveryCallback**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) . [Segnalazione errori Windows (WER)](/windows/desktop/wer/windows-error-reporting) chiama il callback di ripristino prima che l'applicazione venga chiusa a causa di un'eccezione non gestita o se l'applicazione non risponde.
+Per registrare un callback di ripristino, [**chiamare la funzione RegisterApplicationRecoveryCallback.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) [Segnalazione errori Windows (WER)](/windows/desktop/wer/windows-error-reporting) chiama il callback di ripristino prima che l'applicazione venga chiusa a causa di un'eccezione non gestita o del fatto che l'applicazione non risponde.
 
-Usare il callback di ripristino per provare a salvare i dati e le informazioni sullo stato prima del termine dell'applicazione. È quindi possibile usare i dati salvati e le informazioni sullo stato al riavvio dell'applicazione.
+Usare il callback di ripristino per provare a salvare i dati e le informazioni sullo stato prima che l'applicazione venga terminata. È quindi possibile usare i dati salvati e le informazioni sullo stato al riavvio dell'applicazione.
 
-Durante il processo di ripristino, è necessario chiamare la funzione [**ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) entro l'intervallo di ping specificato. in caso contrario, il processo di ripristino viene terminato. La chiamata a **ApplicationRecoveryInProgress** consente di tenere presente che è ancora in corso il ripristino dei dati. Al termine del processo di ripristino, chiamare la funzione [**ApplicationRecoveryFinished**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) . Si noti che la funzione **ApplicationRecoveryFinished** deve essere l'ultima chiamata apportata prima di uscire perché la funzione termina immediatamente l'applicazione.
+Durante il processo di ripristino, è necessario chiamare la [**funzione ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) entro l'intervallo di ping specificato. In caso contrario, il processo di ripristino viene terminato. La **chiamata di ApplicationRecoveryInProgress** consente a WeR di sapere che i dati sono ancora in corso di ripristino. Al termine del processo di ripristino, chiamare [**la funzione ApplicationRecoveryFinished.**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) Si noti che **la funzione ApplicationRecoveryFinished** deve essere l'ultima chiamata che si effettua prima di uscire perché la funzione termina immediatamente l'applicazione.
 
-Si consiglia di salvare periodicamente le copie temporanee dei dati e delle informazioni sullo stato durante il normale svolgimento del processo dell'applicazione. Il salvataggio periodico dei dati può ridurre il tempo necessario per il processo di ripristino.
+È consigliabile salvare periodicamente copie temporanee dei dati e delle informazioni sullo stato durante il normale processo dell'applicazione. Il salvataggio periodico dei dati può risparmiare tempo nel processo di ripristino.
 
-## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Salvataggio dei dati e dello stato dell'applicazione durante la chiusura dell'applicazione a causa di un aggiornamento software
+## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Salvataggio dei dati e dello stato dell'applicazione quando l'applicazione viene chiusa a causa di un aggiornamento software
 
-Se è possibile aggiornare un'applicazione Windows, l'applicazione deve elaborare anche i messaggi [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e [**WM \_ ENDSESSION**](/windows/desktop/Shutdown/wm-endsession) . Il programma di installazione invia questi messaggi quando il programma di installazione richiede che l'applicazione venga arrestata per completare l'installazione o quando è necessario riavviare il computer per completare l'installazione. Si noti che in questo caso l'applicazione ha meno tempo per eseguire il ripristino. Ad esempio, l'applicazione deve rispondere a ogni messaggio entro cinque secondi.
+Se è Windows possibile aggiornare un'applicazione, l'applicazione deve elaborare anche i messaggi [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) [**e WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession) Il programma di installazione invia questi messaggi quando il programma di installazione richiede l'arresto dell'applicazione per completare l'installazione o quando è necessario un riavvio per completare l'installazione. Si noti che in questo caso, l'applicazione ha meno tempo per eseguire il ripristino. Ad esempio, l'applicazione deve rispondere a ogni messaggio entro cinque secondi.
 
-Per le applicazioni console che possono essere aggiornate, è consigliabile considerare la gestione delle notifiche degli eventi di CTRL \_ C \_ . Per un esempio, vedere la pagina [relativa alla registrazione per il riavvio dell'applicazione](registering-for-application-restart.md). Il programma di installazione invia questa notifica quando è necessario che l'applicazione venga arrestata per completare l'aggiornamento. L'applicazione ha 30 secondi per gestire la notifica.
+Per le applicazioni console che possono essere aggiornate, è consigliabile gestire le notifiche degli eventi CTRL \_ \_ C. Per un esempio, vedere [Registrazione per il riavvio dell'applicazione.](registering-for-application-restart.md) Il programma di installazione invia questa notifica quando è necessario arrestare l'applicazione per completare l'aggiornamento. L'applicazione ha 30 secondi per gestire la notifica.
 
-Nell'esempio seguente viene illustrato come eseguire la registrazione per il ripristino, un'implementazione di callback di ripristino semplice e come elaborare i messaggi [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e [**WM \_ ENDSESSION**](/windows/desktop/Shutdown/wm-endsession) .
+L'esempio seguente illustra come eseguire la registrazione per il ripristino, un'implementazione di callback di recupero semplice e come elaborare i messaggi [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e [**WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession)
 
 
 ```C++
@@ -556,7 +556,7 @@ BOOL IsRestartSelected()
 
 
 
-Di seguito è riportato il file di inclusione Recover. h per l'esempio di ripristino.
+Di seguito è riportato il file di inclusione recover.h per l'esempio di ripristino.
 
 
 ```C++
@@ -567,7 +567,7 @@ Di seguito è riportato il file di inclusione Recover. h per l'esempio di ripris
 
 
 
-Di seguito è riportato il file di risorse Recover. RC per l'esempio di ripristino.
+Di seguito è riportato il file di risorse recover.rc per l'esempio di ripristino.
 
 
 ```C++
@@ -657,7 +657,7 @@ END
 
 
 
-Di seguito è riportato il file di inclusione Resource. h per l'esempio di ripristino.
+Di seguito è riportato il file di inclusione resource.h per l'esempio di ripristino.
 
 
 ```C++

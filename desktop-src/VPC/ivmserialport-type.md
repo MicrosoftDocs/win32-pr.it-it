@@ -1,5 +1,5 @@
 ---
-title: Proprietà Type IVMSerialPort (VPCCOMInterfaces.h)
+title: Proprietà IVMSerialPort Type (VPCCOMInterfaces.h)
 description: Recupera il tipo della porta seriale.
 ms.assetid: 0ec9c9d7-9387-458e-befe-42d58c38df35
 keywords:
@@ -45,7 +45,7 @@ HRESULT get_Type(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Tipo di porta seriale. Per un elenco di valori, vedere [**VMSerialPortType.**](vmserialporttype.md)
+Tipo di porta seriale. Per un elenco di valori, vedere [**VMSerialPortType**](vmserialporttype.md).
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -56,7 +56,7 @@ Tipo di porta seriale. Per un elenco di valori, vedere [**VMSerialPortType.**](v
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>                            |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è NULL.<br/>                                   |
 | <dl> <dt>Macchina virtuale \_ E \_ MACCHINA \_ VIRTUALE SCONOSCIUTA</dt> <dt>0xA0040207</dt> </dl> | La configurazione per questa macchina virtuale non è valida.<br/> |
-| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/>                        |
 
 
 
@@ -71,7 +71,7 @@ Tipo di porta seriale. Per un elenco di valori, vedere [**VMSerialPortType.**](v
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMSerialPort è definito come 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
+| IID<br/>                      | IID IVMSerialPort è definito come \_ 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
 
 
 
