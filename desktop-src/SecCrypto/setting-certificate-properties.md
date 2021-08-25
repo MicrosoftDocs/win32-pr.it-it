@@ -1,25 +1,25 @@
 ---
-description: "Usare il metodo ICertServerPolicy:: SetCertificateProperty per impostare le proprietà dell'oggetto di un certificato."
+description: Usare il metodo ICertServerPolicy::SetCertificateProperty per impostare le proprietà del soggetto di un certificato.
 ms.assetid: 93e4b05d-0230-4562-8052-4e118fd92057
 title: Impostazione delle proprietà del certificato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f33534792e65c95e24125968a61cf6ac1ad27039
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfe131190b10b431427162e628004d8b21053a099015a68184196b7218967222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117974569"
 ---
 # <a name="setting-certificate-properties"></a>Impostazione delle proprietà del certificato
 
-Usare il metodo [**ICertServerPolicy:: SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) per impostare le proprietà dell'oggetto di un certificato. Le proprietà dell'oggetto sono proprietà correlate al proprietario del certificato o alla persona che ha richiesto il certificato. Per un elenco delle proprietà dell'oggetto, vedere [proprietà del nome](name-properties.md).
+Usare il [**metodo ICertServerPolicy::SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) per impostare le proprietà del soggetto di un certificato. Le proprietà del soggetto sono proprietà correlate al proprietario del certificato o all'utente che ha richiesto il certificato. Per un elenco delle proprietà dell'oggetto, vedere [Proprietà del nome.](name-properties.md)
 
-È anche possibile usare il metodo [**SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) per impostare le proprietà del certificato NotBefore e NotAfter. Per una descrizione delle proprietà del certificato NotBefore e NotAfter, vedere [Proprietà](certificate-properties.md)del certificato.
+È anche possibile usare il [**metodo SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) per impostare le proprietà del certificato NotBefore e NotAfter. Per una descrizione delle proprietà del certificato NotBefore e NotAfter, vedere [Proprietà del certificato.](certificate-properties.md)
 
-Usare il metodo [**ICertServerPolicy:: SetCertificateExtension**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateextension) per aggiungere un numero qualsiasi di estensioni al certificato. È possibile utilizzare le estensioni per aggiungere al certificato informazioni aggiuntive sull'oggetto o sull'utilizzo. Per altre informazioni, vedere [gestori di estensioni](extension-handlers.md).
+Usare il [**metodo ICertServerPolicy::SetCertificateExtension**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateextension) per aggiungere un numero qualsiasi di estensioni al certificato. È possibile usare le estensioni per aggiungere informazioni supplementari sul soggetto o sull'utilizzo al certificato. Per altre informazioni, vedere [Gestori di estensioni.](extension-handlers.md)
 
-Nell'esempio seguente vengono impostate una proprietà e un'estensione del certificato in un certificato. È possibile chiamare i metodi [**SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) e [**SetCertificateExtension**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateextension) nell'implementazione di [**ICertPolicy2:: VerifyRequest**](/windows/desktop/api/Certpol/nf-certpol-icertpolicy-verifyrequest) . L'esempio non è un'implementazione **VerifyRequest** completa; Nell'esempio non viene mostrata la logica di verifica.
+Nell'esempio seguente vengono impostate una proprietà del certificato e un'estensione per un certificato. Chiamare i metodi [**SetCertificateProperty**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateproperty) e [**SetCertificateExtension**](/windows/desktop/api/Certif/nf-certif-icertserverpolicy-setcertificateextension) nell'implementazione [**di ICertPolicy2::VerifyRequest.**](/windows/desktop/api/Certpol/nf-certpol-icertpolicy-verifyrequest) L'esempio non è un'implementazione **VerifyRequest** completa. Nell'esempio non viene illustrata la logica di verifica.
 
 
 ```C++

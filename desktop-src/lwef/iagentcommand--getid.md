@@ -30,7 +30,7 @@ Recupera l'ID per un [**oggetto Command.**](/windows/desktop/lwef/the-command-ob
 <span id="pdwID"></span><span id="pdwid"></span><span id="PDWID"></span>*pdwID*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve l'ID di un [**oggetto Command**](/windows/desktop/lwef/the-command-object).
+Indirizzo di una variabile che riceve l'ID di un [**comando**](/windows/desktop/lwef/the-command-object).
 
 </dd> </dl>
 

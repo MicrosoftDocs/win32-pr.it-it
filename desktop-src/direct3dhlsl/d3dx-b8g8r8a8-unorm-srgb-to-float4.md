@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4
-description: Decomprime \_ \_ \_ i dati di DXGI Format B8G8R8A8 UNORM \_ sRGB shader in un XMFLOAT4. | Funzione D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4
+title: D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 funzione
+description: Decomprime i dati dello shader DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM \_ SRGB in XMFLOAT4. | D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 funzione
 ms.assetid: f6ce6125-c67e-4545-b25e-3400c0fc62b1
 keywords:
-- Funzione D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 HLSL
+- D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4 funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91311bb83aa034410361bea631aa79f86737ff65
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3620823a572b7eb23f05bdda83866aae982f326dfb70ca6856309abc9d96f05b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516597"
 ---
-# <a name="d3dx_b8g8r8a8_unorm_srgb_to_float4-function"></a>D3DX \_ B8G8R8A8 \_ UNORM \_ sRGB \_ to \_ float4 Function
+# <a name="d3dx_b8g8r8a8_unorm_srgb_to_float4-function"></a>Funzione DA D3DX \_ B8G8R8A8 \_ UNORM \_ SRGB \_ a \_ FLOAT4
 
-Decomprime \_ \_ \_ i dati di DXGI Format B8G8R8A8 UNORM \_ sRGB shader in un XMFLOAT4.
+Decomprime i dati dello shader DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM \_ SRGB in XMFLOAT4.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ XMFLOAT4 D3DX_B8G8R8A8_UNORM_SRGB_to_FLOAT4(
 *packedInput* 
 </dt> <dd>
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Dati dello shader decompressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader decompressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

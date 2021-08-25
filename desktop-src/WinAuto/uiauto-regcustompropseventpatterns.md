@@ -33,9 +33,9 @@ ms.locfileid: "118564057"
 ---
 # <a name="register-custom-properties-events-and-control-patterns"></a>Registrare proprietà, eventi e pattern di controllo personalizzati
 
-Prima di poter utilizzare una proprietà, un evento o un pattern di controllo personalizzato, sia il provider che il client devono registrare la proprietà, l'evento o il pattern di controllo in fase di esecuzione. La registrazione è effettiva a livello globale all'interno di un processo dell'applicazione e rimane effettiva fino alla chiusura del processo o al rilascio dell'ultimo oggetto elemento di Microsoft Automazione interfaccia utente ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) o [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)) all'interno del processo.
+Prima di poter utilizzare una proprietà, un evento o un pattern di controllo personalizzato, sia il provider che il client devono registrare la proprietà, l'evento o il pattern di controllo in fase di esecuzione. La registrazione è effettiva a livello globale all'interno di un processo dell'applicazione e rimane effettiva fino alla chiusura del processo o al rilascio dell'ultimo oggetto elemento microsoft Automazione interfaccia utente ([**IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) o [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple)) all'interno del processo.
 
-L'organizzazione prevede il passaggio di un GUID Automazione interfaccia utente, insieme a informazioni dettagliate sulla proprietà personalizzata, sull'evento o sul pattern di controllo. Il tentativo di registrare lo stesso GUID una seconda volta con le stesse informazioni avrà esito positivo, ma il tentativo di registrare lo stesso GUID una seconda volta, ma con informazioni diverse (ad esempio, una proprietà personalizzata di un tipo diverso) avrà esito negativo. In futuro, se la specifica personalizzata viene accettata e integrata nel core di Automazione interfaccia utente, Automazione interfaccia utente convaliderà le informazioni di registrazione personalizzate e userà il codice già registrato anziché l'implementazione "ufficiale" del framework, riducendo così al minimo i problemi di compatibilità delle applicazioni. Non è possibile rimuovere proprietà, eventi o pattern di controllo già registrati.
+L'operazione prevede il passaggio di un GUID Automazione interfaccia utente, insieme a informazioni dettagliate sulla proprietà personalizzata, sull'evento o sul pattern di controllo. Il tentativo di registrare lo stesso GUID una seconda volta con le stesse informazioni avrà esito positivo, ma il tentativo di registrare lo stesso GUID una seconda volta, ma con informazioni diverse (ad esempio, una proprietà personalizzata di un tipo diverso) avrà esito negativo. In futuro, se la specifica personalizzata viene accettata e integrata nel core di Automazione interfaccia utente, Automazione interfaccia utente convaliderà le informazioni di registrazione personalizzate e userà il codice già registrato anziché l'implementazione "ufficiale" del framework, riducendo così al minimo i problemi di compatibilità delle applicazioni. Non è possibile rimuovere proprietà, eventi o pattern di controllo già registrati.
 
 In questo argomento sono incluse le sezioni seguenti:
 
@@ -111,7 +111,7 @@ Gli identificatori di proprietà ed evento recuperati dai metodi [**IUIAutomatio
 Non esiste alcun metodo che annulla la registrazione di una proprietà o di un evento personalizzato. Al contrario, la registrazione viene annullata in modo implicito quando viene Automazione interfaccia utente'ultimo oggetto.
 
 > [!IMPORTANT]
-> Se il codice è un client Microsoft Active Accessibility (MSAA), devi chiamare la [**funzione NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) quando cambi il valore di una proprietà personalizzata.
+> Se il codice è un client Microsoft Active Accessibility (MSAA), è necessario chiamare la [**funzione NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) quando si modifica il valore di una proprietà personalizzata.
 
  
 
@@ -126,9 +126,9 @@ Un pattern di controllo personalizzato non è incluso nell'API Automazione inter
 
 ### <a name="the-client-wrapper-and-the-pattern-handler"></a>Wrapper client e gestore del modello
 
-Il wrapper client implementa l'API usata dal client per recuperare le proprietà e chiamare i metodi esposti dal pattern di controllo personalizzato. L'API viene implementata come interfaccia COM che passa tutte le richieste di proprietà e le chiamate al metodo al core Automazione interfaccia utente, che quindi effettua il marshalling delle richieste e delle chiamate al provider.
+Il wrapper client implementa l'API usata dal client per recuperare le proprietà e chiamare i metodi esposti dal pattern di controllo personalizzato. L'API viene implementata come interfaccia COM che passa tutte le richieste di proprietà e le chiamate di metodo al core Automazione interfaccia utente, che quindi effettua il marshalling delle richieste e delle chiamate al provider.
 
-Il codice che registra un pattern di controllo personalizzato deve fornire un class factory che Automazione interfaccia utente possibile usare per creare istanze dell'oggetto wrapper del client. Quando un pattern di controllo personalizzato viene registrato correttamente, Automazione interfaccia utente restituisce un puntatore di interfaccia [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) usato dal client per inoltrare le richieste di proprietà e le chiamate di metodi al core Automazione interfaccia utente.
+Il codice che registra un pattern di controllo personalizzato deve fornire un class factory che Automazione interfaccia utente possibile usare per creare istanze dell'oggetto wrapper del client. Quando un pattern di controllo personalizzato viene registrato correttamente, Automazione interfaccia utente restituisce un puntatore di interfaccia [**IUIAutomationPatternInstance**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatterninstance) usato dal client per inoltrare le richieste di proprietà e le chiamate ai metodi al core Automazione interfaccia utente.
 
 Sul lato provider, il core Automazione interfaccia utente accetta le richieste di proprietà e le chiamate al metodo dal client e le passa all'oggetto gestore del modello. Il gestore del pattern chiama quindi i metodi appropriati sull'interfaccia del provider per il pattern di controllo personalizzato.
 
@@ -198,7 +198,7 @@ Il gestore di modelli è un oggetto che implementa [**l'interfaccia IUIAutomatio
 
 Il [**metodo Dispatch**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationpatternhandler-dispatch) viene usato dal core Automazione interfaccia utente per passare le richieste di proprietà e le chiamate al metodo all'interfaccia del provider per il pattern di controllo personalizzato. I parametri includono un puntatore all'interfaccia del provider, l'indice in base zero del metodo o del getter di proprietà chiamato e una matrice di strutture [**UIAutomationParameter**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationparameter) che contengono i parametri da passare al provider. Il gestore dei modelli risponde controllando il parametro di indice per determinare il metodo del provider da chiamare e quindi chiama l'interfaccia del provider, passando i parametri contenuti nelle **strutture UIAutomationParameter.**
 
-L'istanza dell'oggetto gestore del pattern viene creata dallo stesso codice che registra il pattern di controllo personalizzato, prima della registrazione del pattern di controllo. Il codice deve passare il puntatore di interfaccia [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) dell'oggetto del gestore di modelli al Automazione interfaccia utente core al momento della registrazione.
+L'istanza dell'oggetto gestore del pattern viene creata dallo stesso codice che registra il pattern di controllo personalizzato, prima della registrazione del pattern di controllo. Il codice deve passare il puntatore all'interfaccia [**IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) dell'oggetto del gestore di modelli Automazione interfaccia utente core al momento della registrazione.
 
 Nell'esempio seguente viene illustrato come implementare un oggetto gestore di pattern per un pattern di controllo personalizzato semplice che supporta una singola proprietà. Per un esempio più complesso, vedere [Esempio di implementazione di un pattern di controllo personalizzato.](#example-implementation-of-a-custom-control-pattern)
 
@@ -248,7 +248,7 @@ public:
 
 ### <a name="registering-a-custom-control-pattern"></a>Registrazione di un pattern di controllo personalizzato
 
-Prima di poter essere usato, un pattern di controllo personalizzato deve essere registrato sia dal provider che dal client. La registrazione fornisce Automazione interfaccia utente core con informazioni dettagliate sul pattern di controllo e fornisce al provider o al client l'ID del pattern di controllo e gli ID per le proprietà e gli eventi supportati dal pattern di controllo. Sul lato provider, il pattern di controllo personalizzato deve essere registrato prima che il controllo associato gestisca il messaggio [**WM \_ GETOBJECT**](wm-getobject.md) o contemporaneamente.
+Prima di poter essere usato, un pattern di controllo personalizzato deve essere registrato sia dal provider che dal client. La registrazione fornisce Automazione interfaccia utente core con informazioni dettagliate sul pattern di controllo e fornisce al provider o al client l'ID del pattern di controllo e gli ID per le proprietà e gli eventi supportati dal pattern di controllo. Sul lato provider, il pattern di controllo personalizzato deve essere registrato prima che il controllo associato gestisca il [**messaggio WM \_ GETOBJECT**](wm-getobject.md) o contemporaneamente.
 
 Quando si registra un pattern di controllo personalizzato, il provider o il client fornisce le informazioni seguenti:
 
@@ -256,26 +256,26 @@ Quando si registra un pattern di controllo personalizzato, il provider o il clie
 -   Stringa non localizzabile contenente il nome del pattern di controllo personalizzato.
 -   GUID dell'interfaccia del provider che supporta il pattern di controllo personalizzato.
 -   GUID dell'interfaccia client che supporta il pattern di controllo personalizzato.
--   Matrice di [**strutture UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) che descrivono le proprietà supportate dal pattern di controllo personalizzato. Per ogni proprietà, è necessario specificare il GUID, il nome della proprietà e il tipo di dati.
--   Matrice di [**strutture UIAutomationMethodInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationmethodinfo) che descrivono i metodi supportati dal pattern di controllo personalizzato. Per ogni metodo, la struttura include le informazioni seguenti: nome del metodo, conteggio dei parametri, elenco dei tipi di dati dei parametri e elenco dei nomi dei parametri.
+-   Matrice di [**strutture UIAutomationPropertyInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpropertyinfo) che descrivono le proprietà supportate dal pattern di controllo personalizzato. Per ogni proprietà è necessario specificare il GUID, il nome della proprietà e il tipo di dati.
+-   Matrice di [**strutture UIAutomationMethodInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationmethodinfo) che descrivono i metodi supportati dal pattern di controllo personalizzato. Per ogni metodo, la struttura include le informazioni seguenti: nome del metodo, conteggio dei parametri, elenco di tipi di dati dei parametri e elenco dei nomi dei parametri.
 -   Matrice di [**strutture UIAutomationEventInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationeventinfo) che descrivono gli eventi generati dal pattern di controllo personalizzato. Per ogni evento, è necessario specificare il GUID e il nome dell'evento.
--   Indirizzo [**dell'interfaccia IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) dell'oggetto gestore del pattern che rende il pattern di controllo personalizzato disponibile per i client.
+-   Indirizzo [**dell'interfaccia IUIAutomationPatternHandler**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationpatternhandler) dell'oggetto gestore del modello che rende il pattern di controllo personalizzato disponibile per i client.
 
-Per registrare il pattern di controllo personalizzato, il codice del provider o del client deve eseguire i passaggi seguenti:
+Per registrare il pattern di controllo personalizzato, il codice del provider o del client deve eseguire la procedura seguente:
 
 1.  Compilare [**una struttura UIAutomationPatternInfo**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo) con le informazioni precedenti.
 2.  Usare la [**funzione CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) per creare un'istanza dell'oggetto [**CUIAutomationRegistrar**](/previous-versions/windows/desktop/legacy/ff384837(v=vs.85)) e recuperare un puntatore all'interfaccia [**IUIAutomationRegistrar**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iuiautomationregistrar) dell'oggetto.
 3.  Chiamare il [**metodo IUIAutomationRegistrar::RegisterPattern,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) passando l'indirizzo della [**struttura UIAutomationPatternInfo.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiautomationpatterninfo)
 
-Il [**metodo RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) restituisce un ID del pattern di controllo, insieme a un elenco di ID proprietà e ID evento. Un'applicazione può passare questi ID a qualsiasi Automazione interfaccia utente che accetta tale identificatore come parametro. Ad esempio, è possibile passare un ID pattern registrato al metodo [**IUIAutomationElement::GetCurrentPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpattern) per recuperare un puntatore all'interfaccia del provider per il pattern di controllo.
+Il [**metodo RegisterPattern**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iuiautomationregistrar-registerpattern) restituisce un ID pattern di controllo, insieme a un elenco di ID proprietà e ID evento. Un'applicazione può passare questi ID a qualsiasi Automazione interfaccia utente che accetta tale identificatore come parametro. Ad esempio, è possibile passare un ID modello registrato al metodo [**IUIAutomationElement::GetCurrentPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpattern) per recuperare un puntatore all'interfaccia del provider per il pattern di controllo.
 
-Non esiste alcun metodo che annulla la registrazione di un pattern di controllo personalizzato. Viene invece annullata in modo implicito quando viene rilasciato l Automazione interfaccia utente o object.
+Non esiste alcun metodo che annulla la registrazione di un pattern di controllo personalizzato. Viene invece annullata in modo implicito quando viene rilasciato l'Automazione interfaccia utente dell'oggetto.
 
 Per un esempio che illustra come registrare un pattern di controllo personalizzato, vedere la sezione seguente.
 
-### <a name="example-implementation-of-a-custom-control-pattern"></a>Implementazione di esempio di un pattern di controllo personalizzato
+### <a name="example-implementation-of-a-custom-control-pattern"></a>Esempio di implementazione di un pattern di controllo personalizzato
 
-Questa sezione contiene codice di esempio che illustra come implementare il wrapper client e gli oggetti gestore del pattern per un pattern di controllo personalizzato. L'esempio implementa un pattern di controllo personalizzato basato sul pattern [di controllo Value.](uiauto-implementingvalue.md)
+Questa sezione contiene codice di esempio che illustra come implementare il wrapper client e gli oggetti gestore del pattern per un pattern di controllo personalizzato. Nell'esempio viene implementato un pattern di controllo personalizzato basato sul [pattern di controllo Value.](uiauto-implementingvalue.md)
 
 
 ```C++

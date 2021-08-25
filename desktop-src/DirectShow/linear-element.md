@@ -14,7 +14,7 @@ ms.locfileid: "118397145"
 # <a name="linear-element"></a>Elemento linear
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 

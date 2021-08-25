@@ -17,7 +17,7 @@ Dichiarare puntatori a tabella di funzione (interfacce).
 
 
 
-| dcl \_ interface fp \# \[ arraySize \] \[ numCallSites \] = \# {ft, ft , \# ...} |
+| dcl \_ interface fp \# \[ arraySize \] \[ numCallSites \] = {ft , ft , \# \# ...} |
 |----------------------------------------------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiarare puntatori a tabella di funzione (interfacce).
 
 | Elemento                                                          | Descrizione                                    |
 |---------------------------------------------------------------|------------------------------------------------|
-| <span id="fp_"></span><span id="FP_"></span>*Fp\#*<br/> | \[in \] Puntatori di tabella della funzione.<br/> |
+| <span id="fp_"></span><span id="FP_"></span>*Fp\#*<br/> | \[in \] Puntatori alla tabella della funzione.<br/> |
 
 
 
@@ -36,32 +36,32 @@ Dichiarare puntatori a tabella di funzione (interfacce).
 
 ## <a name="remarks"></a>Commenti
 
-Ogni interfaccia deve essere associata dall'API prima che lo shader sia utilizzabile. L'associazione fornisce un riferimento a una delle tabelle delle funzioni in modo che gli slot del metodo possano essere compilati. Il compilatore non genererà puntatori per oggetti senza riferimenti.
+Ogni interfaccia deve essere associata dall'API prima che lo shader sia utilizzabile. L'associazione fornisce un riferimento a una delle tabelle di funzioni in modo che gli slot del metodo possano essere compilati. Il compilatore non genererà puntatori per gli oggetti senza riferimenti.
 
-Un puntatore a tabella di funzione ha un set completo di slot del metodo per evitare il livello aggiuntivo di riferimento indiretto richiesto da una rappresentazione da puntatore a puntatore a vtable C++. Ciò richiederebbe anche che i puntatori siano a 5 tuple. Nel modello di inlining virtuale HLSL è sempre noto quale variabile/input globale viene usato per una chiamata, in modo da poter configurare le tabelle per ogni oggetto radice.
+Un puntatore a tabella di funzione ha un set completo di slot di metodo per evitare il livello aggiuntivo di riferimento indiretto richiesto da una rappresentazione da puntatore a vtable del puntatore C++. Ciò richiederebbe anche che i puntatori siano a 5 tuple. Nel modello di inlining virtuale HLSL è sempre noto quale variabile/input globale viene usato per una chiamata, in modo da poter configurare tabelle per ogni oggetto radice.
 
-Le dichiarazioni di puntatore a funzione indicano quali tabelle di funzioni sono legali da usare con esse. Ciò consente anche la derivazione delle informazioni di correlazione dei metodi.
+Le dichiarazioni dei puntatori a funzione indicano quali tabelle di funzioni possono essere usate con esse. Ciò consente anche la derivazione delle informazioni di correlazione dei metodi.
 
-La prima \[ \] di una dichiarazione di interfaccia è la dimensione della matrice. Se si usa l'indicizzazione dinamica, la dichiarazione lo indicherà come illustrato. Una matrice di puntatori a interfaccia può essere indicizzata anche in modo statico. Non è necessario che le matrici di puntatori a interfaccia significherebbe l'indicizzazione dinamica.
+La prima \[ \] di una dichiarazione di interfaccia è la dimensione della matrice. Se viene usata l'indicizzazione dinamica, la dichiarazione lo indicherà come illustrato. Una matrice di puntatori a interfaccia può essere indicizzata anche in modo statico. Non è necessario che le matrici di puntatori a interfaccia significherebbe l'indicizzazione dinamica.
 
 La numerazione dei puntatori a interfaccia inizia da 0 per la prima dichiarazione e successivamente prende in considerazione le dimensioni della matrice, quindi il primo puntatore dopo una matrice di quattro voci fp0 \[ 4 1 sarebbe \] \[ \] fp4 \[ \] \[ \] .
 
-Il secondo di una dichiarazione di interfaccia è il numero di siti di chiamata, che devono corrispondere al numero di corpi in ogni tabella a cui viene \[ \] fatto riferimento nella dichiarazione.
+Il secondo di una dichiarazione di interfaccia è il numero di siti di chiamata, che devono corrispondere al numero di corpi in ogni tabella a cui \[ \] si fa riferimento nella dichiarazione.
 
-Non sono presenti limiti al numero di opzioni della tabella delle funzioni (ft ) che \# possono essere elencate in una dichiarazione di interfaccia.
+Non sono presenti limiti al numero di opzioni della tabella di funzioni (ft ) che \# possono essere elencate in una dichiarazione di interfaccia.
 
-Una determinata tabella di funzioni (ft \# ) può essere visualizzata più volte in una o più dichiarazioni di interfaccia.
+Una determinata tabella di funzioni (ft \# ) può essere visualizzata più di una volta in una o più dichiarazioni di interfaccia.
 
 ### <a name="restrictions"></a>Restrizioni
 
--   Il numero di siti di oggetti in uno shader, ovvero la somma in tutte le dichiarazioni *fp \#* delle dichiarazioni arraySize, non deve essere superiore a \[ \] 253. Questo numero corrisponde al numero **di puntatori** this che possono essere presenti. Il runtime applica questo limite di 253 per mantenere un limite alle dimensioni dell'interfaccia DDI per la comunicazione di questi dati del puntatore.
--   Il numero di siti di chiamata in uno shader, ovvero la somma in tutte le istruzioni fcall del numero di potenziali destinazioni di ramo, non deve essere superiore a 4096.
+-   Il numero di siti di oggetti in uno shader, ovvero la somma in tutte le dichiarazioni *fp \#* delle dichiarazioni arraySize, non deve essere \[ maggiore di \] 253. Questo numero corrisponde al numero **di puntatori** this che possono essere presenti. Il runtime applica questo limite di 253 per mantenere un limite alle dimensioni dell'interfaccia DDI per la comunicazione di questi dati del puntatore.
+-   Il numero di siti di chiamata in uno shader, ovvero la somma tra tutte le istruzioni fcall del numero di potenziali destinazioni di ramo, non deve essere maggiore di 4096.
 
-    Ad esempio, un [oggetto fcall](fcall--sm5---asm-.md) che usa un indice statico per la prima dimensione *fp \[ \] \[ \]* viene conteggiato come uno:
+    Ad esempio, una [chiamata fcall](fcall--sm5---asm-.md) che usa un indice statico per la prima *dimensione fp \[ \] \[ \]* viene conteggiato come uno:
 
     `                       fcall fp0[0][0]         // +1`
 
-    Un **oggetto fcall** che usa un indice dinamico viene conteggiato come numero di elementi nella matrice (prima dell'interfaccia \[ \] **dcl \_**):
+    Una **chiamata fcall** che usa un indice dinamico viene conteggiato come numero di elementi nella matrice (primo \[ \] dell'interfaccia **dcl \_**):
 
     `                    dcl_interface_dynamicindexed fp1[2][1] = {ft2, ft3, ft4}                      ...                     `
 
@@ -69,7 +69,7 @@ Una determinata tabella di funzioni (ft \# ) può essere visualizzata più volte
 
     Questo limite consente ad alcune implementazioni di adattare facilmente le tabelle delle selezioni del corpo della funzione nell'archiviazione costante simile al buffer.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -83,7 +83,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
@@ -92,9 +92,9 @@ Questa istruzione è supportata nei modelli shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -106,7 +106,7 @@ cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supportano questa istruzione per UAV e SRV.
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

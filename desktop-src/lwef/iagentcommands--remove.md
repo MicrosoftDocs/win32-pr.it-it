@@ -30,11 +30,11 @@ Rimuove l'oggetto [**Command**](/windows/desktop/lwef/the-command-object) specif
 <span id="dwID"></span><span id="dwid"></span><span id="DWID"></span>*dwID*
 </dt> <dd>
 
-ID di un [**comando**](/windows/desktop/lwef/the-command-object) da rimuovere dalla [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
+ID di un [**oggetto Command**](/windows/desktop/lwef/the-command-object) da rimuovere dalla [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
-La rimozione di [**un comando**](/windows/desktop/lwef/the-command-object) da una raccolta [**Commands**](/windows/desktop/lwef/the-commands-collection-object) lo  rimuove anche dal menu a comparsa e dalla finestra Comandi vocali quando l'applicazione è attiva per l'input.
+La rimozione di [**un comando**](/windows/desktop/lwef/the-command-object) da una raccolta [**Commands**](/windows/desktop/lwef/the-commands-collection-object) lo rimuove anche dal menu a comparsa e dalla finestra Comandi **vocali** quando l'applicazione è attiva per l'input.
 
 ## <a name="see-also"></a>Vedere anche
 

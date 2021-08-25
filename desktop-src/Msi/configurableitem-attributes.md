@@ -1,7 +1,7 @@
 ---
-description: La proprietà Attributes restituisce il valore dalla colonna Attributes della tabella ModuleConfiguration.
+description: La proprietà Attributes restituisce il valore della colonna Attributes della tabella ModuleConfiguration.
 ms.assetid: fb7336b7-28af-48c8-80b2-80c03948660a
-title: Proprietà ConfigurableItem. Attributes (Mergemod. h)
+title: Proprietà ConfigurableItem.Attributes (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: c381ce3d1bf07c03ff4bdcb687cca239ec715b17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba591ab8565390514e8fe6f8f7d5182184d1372b824d5262f87bd9ad4b412035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144189"
 ---
-# <a name="configurableitemattributes-property"></a>Proprietà ConfigurableItem. Attributes
+# <a name="configurableitemattributes-property"></a>ConfigurableItem.Attributes - proprietà
 
-La proprietà **Attributes** restituisce il valore dalla colonna Attributes della [tabella ModuleConfiguration](moduleconfiguration-table.md).
+La **proprietà Attributes** restituisce il valore della colonna Attributes della tabella [ModuleConfiguration](moduleconfiguration-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.Attributes
 
 ## <a name="c"></a>C++
 
-Vedere la funzione [**get \_ Attributes**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_attributes) .
+Vedere [**la funzione get \_ Attributes.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_attributes)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere la funzione [**get \_ Attributes**](/windows/desktop/api/Mergemod/nf-merg
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 2,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 2.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

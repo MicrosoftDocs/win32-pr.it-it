@@ -1,7 +1,7 @@
 ---
 description: Recupera l'indirizzo di destinazione di un frame.
 ms.assetid: f19a6753-37d8-4ec7-a7d4-ced0292d453c
-title: Funzione GetFrameDestAddress (Netmon. h)
+title: Funzione GetFrameDestAddress (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: afec32f0e0fc66ccd5a1d78cc9769b0e742f1e6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7719392794027567521ce3e9c1bd1caf8ecbf76110f76ad0e54e0dd6549aae4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366626"
 ---
-# <a name="getframedestaddress-function"></a>GetFrameDestAddress (funzione)
+# <a name="getframedestaddress-function"></a>Funzione GetFrameDestAddress
 
-La funzione **GetFrameDestAddress** recupera l'indirizzo di destinazione di un frame.
+La **funzione GetFrameDestAddress** recupera l'indirizzo di destinazione di un frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Buffer restituito che archivia l'indirizzo di destinazione del frame.
 *AddressType* 
 </dt> <dd>
 
-Tipo di indirizzo, ad esempio indirizzo IP del tipo di indirizzo \_ \_ Ethernet o indirizzo \_ \_ IP.
+Tipo di indirizzo, ad esempio ADDRESS \_ TYPE \_ ETHERNET o ADDRESS \_ TYPE \_ IP.
 
 </dd> <dt>
 
@@ -72,8 +72,8 @@ Flag utilizzati per modificare i dati dell'indirizzo di destinazione restituiti.
 
 | Valore                                                                                                                                                                                                           | Significato                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**ADDRESSTYPE i \_ flag \_ normalizzati**</dt> </dl>        | Annulla il routing e i bit del gruppo.<br/>                   |
-| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**ADDRESSTYPE \_ flag di \_ bit \_ inverso**</dt> </dl> | Converte gli indirizzi di rete dell'anello di token al normale.<br/> |
+| <span id="ADDRESSTYPE_FLAGS_NORMALIZE"></span><span id="addresstype_flags_normalize"></span><dl> <dt>**FLAG ADDRESSTYPE \_ \_ NORMALIZE**</dt> </dl>        | Annulla i BIT di routing e gruppo.<br/>                   |
+| <span id="ADDRESSTYPE_FLAGS_BIT_REVERSE"></span><span id="addresstype_flags_bit_reverse"></span><dl> <dt>**FLAG ADDRESSTYPE \_ \_ BIT \_ REVERSE**</dt> </dl> | Converte gli indirizzi di rete del token ring alla normalità.<br/> |
 
 
 
@@ -83,7 +83,7 @@ Flag utilizzati per modificare i dati dell'indirizzo di destinazione restituiti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore *lpAddress* è valido e il valore restituito è BHERR \_ Success.
+Se la funzione ha esito positivo, il *valore lpAddress* è valido e il valore restituito è BHERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un codice di errore.
 
@@ -91,8 +91,8 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore.
 
 | Codice restituito                                                                                                | Descrizione                                                                                |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <dl> <dt>**il \_ protocollo BHERR non è stato \_ \_ trovato**</dt> </dl> | Il protocollo specificato nel parametro *addressType* non è valido per il frame.<br/> |
-| <dl> <dt>**\_HFRAME BHERR non valido \_**</dt> </dl>      | Il valore *hFrame* non è valido.<br/>                                                  |
+| <dl> <dt>**PROTOCOLLO BHERR \_ \_ NON \_ TROVATO**</dt> </dl> | Il protocollo specificato nel *parametro AddressType* non è valido per il frame.<br/> |
+| <dl> <dt>**HFRAME BHERR \_ NON \_ VALIDO**</dt> </dl>      | Il *valore hFrame* non è valido.<br/>                                                  |
 
 
 
@@ -100,7 +100,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di indirizzo trova il tipo di indirizzo **\_ \_ \_ più alto** è consentito. Quando viene usato questo tipo di indirizzo, la funzione Cerca l'indirizzo IP IPX, XNS, IP o VINES prima di restituire l'indirizzo ETHERNET, TOKENRING o FDDI. Questo approccio è utile per i protocolli e gli ambienti in cui è possibile multiplexare due schede di rete in un unico indirizzo del server.
+Il **tipo di indirizzo ADDRESS TYPE FIND \_ \_ \_ HIGHEST** è consentito. Quando si usa questo tipo di indirizzo, la funzione cerca l'indirizzo IPX, XNS, IP o VINES prima di restituire l'indirizzo ETHERNET, TOKENRING o FDDI. Questo approccio è utile per i protocolli e negli ambienti in cui è possibile eseguire il multiplexing di due schede di interfaccia di rete con un singolo indirizzo server.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,8 +110,8 @@ Il tipo di indirizzo trova il tipo di indirizzo **\_ \_ \_ più alto** è consen
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

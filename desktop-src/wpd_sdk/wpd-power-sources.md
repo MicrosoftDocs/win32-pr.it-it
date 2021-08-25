@@ -1,7 +1,7 @@
 ---
-description: Il tipo di enumerazione WPD Power Sources \_ \_ descrive la fonte di alimentazione usata da un dispositivo.
+description: Il tipo di enumerazione WPD POWER SOURCES descrive la fonte di alimentazione utilizzata \_ \_ da un dispositivo.
 ms.assetid: feebf213-052d-4315-84db-2109cab5f179
-title: Enumerazione WPD_POWER_SOURCES (PortableDevice. h)
+title: WPD_POWER_SOURCES enumerazione (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: bf9a153d4d41a64b639f796ea2ba0eeb9e567a32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c31e156caa36e4a60ec74a2e554f983fd35445f28fd1424fbb6395cd2dd63a10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026318"
 ---
-# <a name="wpd_power_sources-enumeration"></a>\_ \_ Enumerazione origini alimentazione WPD
+# <a name="wpd_power_sources-enumeration"></a>Enumerazione POWER SOURCES WPD \_ \_
 
-Il tipo di enumerazione **WPD \_ Power \_** Sources descrive la fonte di alimentazione usata da un dispositivo.
+Il **tipo di enumerazione \_ WPD POWER \_ SOURCES** descrive la fonte di alimentazione utilizzata da un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ typedef enum WPD_POWER_SOURCES {
 
 <dl> <dt>
 
-<span id="WPD_POWER_SOURCE_BATTERY"></span><span id="wpd_power_source_battery"></span>**\_batteria di \_ origine \_ alimentazione WPD**
+<span id="WPD_POWER_SOURCE_BATTERY"></span><span id="wpd_power_source_battery"></span>**BATTERIA WPD \_ POWER \_ SOURCE \_**
 </dt> <dd>
 
 La fonte di alimentazione del dispositivo è una batteria.
 
 </dd> <dt>
 
-<span id="WPD_POWER_SOURCE_EXTERNAL"></span><span id="wpd_power_source_external"></span>**\_origine alimentazione \_ \_ esterna WPD**
+<span id="WPD_POWER_SOURCE_EXTERNAL"></span><span id="wpd_power_source_external"></span>**WPD \_ POWER \_ SOURCE \_ EXTERNAL**
 </dt> <dd>
 
 Il dispositivo usa una fonte di alimentazione esterna.
@@ -56,7 +56,7 @@ Il dispositivo usa una fonte di alimentazione esterna.
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione viene utilizzata dalla proprietà [di \_ \_ \_ origine dell'alimentazione del dispositivo WPD](device-properties.md) .
+Questa enumerazione viene utilizzata dalla [proprietà \_ WPD DEVICE POWER \_ \_ SOURCE.](device-properties.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questa enumerazione viene utilizzata dalla proprietà [di \_ \_ \_ origine dell'
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

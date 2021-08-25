@@ -1,29 +1,29 @@
 ---
-title: Modulo di convalida integrità sistema
-description: Nota la piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10 configura un modulo convalida integrità sistema (convalida integrità sistema) che include la registrazione e l'annullamento della registrazione con il sistema NAP.
+title: Modulo SHV
+description: Nota La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10 Configura un modulo di convalida dell'integrità del sistema (SHV) che include la registrazione e l'annullamento della registrazione con il sistema protezione accesso alla rete.
 ms.assetid: 0f2edd23-d44a-4a01-ae33-f7eef0e4b27f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b95784d05f4bf377f356a91fe5b0c1811fb9671d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 344b3a6d74acee0e06e3d2a9fedd4784b1c9d76ac8ba84c68ed4b7ef8ceebc56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103709796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133432"
 ---
-# <a name="shv-module"></a>Modulo di convalida integrità sistema
+# <a name="shv-module"></a>Modulo SHV
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
- 
+ 
 
-Configura un modulo di convalida integrità sistema (convalida integrità sistema), incluse la registrazione e l'annullamento della registrazione con il sistema NAP.
+Configura un modulo shv (System Health Validator) che include la registrazione e l'annullamento della registrazione con il sistema protezione accesso alla rete.
 
 > [!Note]  
-> NAP SDK contiene anche un set completo di codice di esempio disponibile in... \\ Esempi di \\ NetDS \\ NAP... Directory dell'installazione dell'SDK. Questo set di esempio include un agente integrità sistema (SHA), un servizio di convalida dell'integrità e un client di imposizione (EC). Dispone di scenari di protezione accesso alla rete completamente funzionanti che configurano la comunicazione tra SHA-convalida e SHA-EC.
+> Nap SDK contiene anche un set completo di codice di esempio disponibile in ... \\ Esempi \\ di Protezione accesso alla rete NetDS... \\ directory dell'installazione dell'SDK. Questo set di esempio include un agente di integrità del sistema (SHA), shv e client di imposizione (EC). Ha scenari di Protezione accesso alla rete funzionanti completi che configurano la comunicazione tra SHA-SHV e SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -104,9 +104,9 @@ void FreeComponentRegistration(NapComponentRegistrationInfo *shvInfo)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

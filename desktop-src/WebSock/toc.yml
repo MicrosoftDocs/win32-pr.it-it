@@ -3,7 +3,7 @@
   items:
     - name: Tipi di dati dell'API del componente del protocollo WebSocket
       href: web-socket-protocol-component-api-data-types.md
-    - name: Enumerazioni API del componente del protocollo WebSocket
+    - name: Enumerazioni api del componente del protocollo WebSocket
       href: web-socket-protocol-component-api-enumerations.md
       items:
         - name: WEB_SOCKET_ACTION
@@ -45,7 +45,7 @@
           href: /windows/desktop/api/Websocket/nf-websocket-websocketreceive
         - name: WebSocketSend
           href: /windows/desktop/api/Websocket/nf-websocket-websocketsend
-    - name: Strutture API del componente del protocollo WebSocket
+    - name: Strutture dell'API del componente del protocollo WebSocket
       href: web-socket-protocol-component-api-structures.md
       items:
         - name: WEB_SOCKET_BUFFER

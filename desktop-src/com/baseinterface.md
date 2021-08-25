@@ -1,5 +1,5 @@
 ---
-title: Interfaccia di base
+title: BaseInterface
 description: Identifica l'interfaccia da cui deriva l'interfaccia corrente.
 ms.assetid: b62a780f-8ff9-4942-839c-9b38cd2a920b
 keywords:
@@ -13,7 +13,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118550722"
 ---
-# <a name="baseinterface"></a>Interfaccia di base
+# <a name="baseinterface"></a>BaseInterface
 
 Identifica l'interfaccia da cui deriva l'interfaccia corrente.
 

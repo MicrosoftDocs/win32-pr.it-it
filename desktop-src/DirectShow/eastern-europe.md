@@ -4,20 +4,20 @@ ms.assetid: 0e2e81b3-52dc-451b-9734-464052128efe
 title: Europa orientale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb2c2b73b5d91728e0bfe3aca19431b586b18888
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0713d4089494e8c81aeb2f0e3c6d0cc4cb61590d9d58a353430c7d1630250212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820575"
 ---
 # <a name="eastern-europe"></a>Europa orientale
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
 Gli indici di frequenza nelle tabelle dell'Europa orientale non sono adatti per l'uso come numeri di canale.
 
-### <a name="eastern-europe-broadcast-assignments"></a>Assegnazioni broadcast in Europa orientale
+### <a name="eastern-europe-broadcast-assignments"></a>Assegnazioni di trasmissioni in Europa orientale
 
 
 ```C++
@@ -99,7 +99,7 @@ Gli indici di frequenza nelle tabelle dell'Europa orientale non sono adatti per 
 
 
 
-### <a name="eastern-europe-cable-assignments"></a>Assegnazioni di cavi in Europa orientale
+### <a name="eastern-europe-cable-assignments"></a>Assegnazioni dei cavi dell'Europa orientale
 
 
 ```C++
@@ -172,7 +172,7 @@ Gli indici di frequenza nelle tabelle dell'Europa orientale non sono adatti per 
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

@@ -1,36 +1,36 @@
 ---
-title: Messaggi di forma d'onda
-description: Messaggi di forma d'onda
+title: Messaggi waveform
+description: Messaggi waveform
 ms.assetid: 18e524d6-da3f-4b24-a755-9672d4ab3443
 keywords:
-- audio multimediale, messaggi di forma d'onda
-- audio, messaggi di forma d'onda
-- audio Waveform, messaggi
-- riferimento audio Waveform, messaggi
-- informazioni di riferimento sull'audio wavefore, messaggi
+- audio multimediale, messaggi waveform
+- audio, messaggi waveform
+- audio waveform, messaggi
+- informazioni di riferimento audio waveform, messaggi
+- informazioni di riferimento per l'audio wavefore, messaggi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d397f7b046c01c93e090a14579c203e87caae73f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f670a2a5aff4c2754c2ae3d8fed846cb8ec71777d69ae125fe705f30e39ad3a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369861"
 ---
-# <a name="waveform-messages"></a>Messaggi di forma d'onda
+# <a name="waveform-messages"></a>Messaggi waveform
 
--   [**\_Wim \_ chiusura di mm**](mm-wim-close.md)
--   [**\_dati WIM \_ mm**](mm-wim-data.md)
--   [**\_Wim \_ aperto mm**](mm-wim-open.md)
--   [**MM \_ WOM \_ Close**](mm-wom-close.md)
--   [**MM \_ WOM \_ completato**](mm-wom-done.md)
--   [**MM \_ WOM \_ aperto**](mm-wom-open.md)
--   [**chiusura di WIM \_**](wim-close.md)
--   [**\_dati WIM**](wim-data.md)
--   [**WIM \_ aperto**](wim-open.md)
--   [**chiusura di WOM \_**](wom-close.md)
--   [**WOM \_ completato**](wom-done.md)
--   [**WOM \_ aperto**](wom-open.md)
+-   [**CHIUSURA \_ DI MM WIM \_**](mm-wim-close.md)
+-   [**DATI \_ DI MM WIM \_**](mm-wim-data.md)
+-   [**MM \_ WIM \_ OPEN**](mm-wim-open.md)
+-   [**CHIUSURA \_ DI MM WOM \_**](mm-wom-close.md)
+-   [**MM \_ WOM \_ DONE**](mm-wom-done.md)
+-   [**MM \_ WOM \_ OPEN**](mm-wom-open.md)
+-   [**WIM \_ CLOSE**](wim-close.md)
+-   [**DATI \_ WIM**](wim-data.md)
+-   [**WIM \_ OPEN**](wim-open.md)
+-   [**CHIUSURA \_ DI WOM**](wom-close.md)
+-   [**WOM \_ DONE**](wom-done.md)
+-   [**WOM \_ OPEN**](wom-open.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -39,9 +39,9 @@ ms.locfileid: "104044306"
 [Riferimento onda audio](waveform-audio-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

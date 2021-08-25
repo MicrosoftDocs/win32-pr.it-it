@@ -21,7 +21,7 @@ ms.locfileid: "118328083"
 
 ## <a name="description"></a>Descrizione
 
-Prima di Windows 7, Segnalazione errori Windows (WER) raccoglieva segnalazioni degli errori che indicava problemi che necessitano di riparazione. Queste segnalazioni degli errori contengono informazioni utili che descrivono la natura generale di un problema, ma non informazioni sufficienti per determinarne la causa radice. A tale scopo, gli sviluppatori hanno bisogno di uno strumento per riprodurre lo scenario di arresto anomalo/blocco per il debug.
+Prima della Windows 7, Segnalazione errori Windows (WER) raccoglieva segnalazioni di errori che indicava problemi che necessitano di riparazione. Queste segnalazioni degli errori contengono informazioni utili che descrivono la natura generale di un problema, ma non informazioni sufficienti per determinarne la causa radice. A tale scopo, gli sviluppatori hanno bisogno di uno strumento per riprodurre lo scenario di arresto anomalo/blocco per il debug.
 
 Una nuova applicazione, Registrazione azioni utente (PSR.exe), viene spedita in tutte le build Windows 7. Questa funzionalità consente la raccolta delle azioni eseguite da un utente durante l'arresto anomalo del sistema in modo che tester e sviluppatori possano riprodurre la situazione per l'analisi e il debug.
 
@@ -33,7 +33,7 @@ Attualmente, uno sviluppatore Segnalazione errori Windows servizio deve richiede
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   [Segnalazione errori Windows di blog](/archive/blogs/wer/)
+-   [Segnalazione errori Windows blog](/archive/blogs/wer/)
 -   [Windows Quality Online Services (Winqual)](https://winqual.microsoft.com)
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio SB_GETBORDERS (COMmctrl. h)
-description: Recupera le larghezze correnti dei bordi orizzontali e verticali di una finestra di stato.
+title: SB_GETBORDERS messaggio (Commctrl.h)
+description: Recupera le larghezze correnti dei bordi orizzontale e verticale di una finestra di stato.
 ms.assetid: 120c1e0d-6f42-424e-94e0-a080d216d39d
 keywords:
-- Controlli di Windows Message SB_GETBORDERS
+- SB_GETBORDERS dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 854df2cd367a852a2e6a0e638b470187efabe58c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dafa7a8c27b5c274a981e43edc5c55ec0cade67cac08a1d09a898916d792795c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169054"
 ---
-# <a name="sb_getborders-message"></a>\_Messaggio SB GETborders
+# <a name="sb_getborders-message"></a>Messaggio SB \_ GETBORDERS
 
-Recupera le larghezze correnti dei bordi orizzontali e verticali di una finestra di stato.
+Recupera le larghezze correnti dei bordi orizzontale e verticale di una finestra di stato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,17 +35,17 @@ Recupera le larghezze correnti dei bordi orizzontali e verticali di una finestra
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di interi con tre elementi. Il primo elemento riceve la larghezza del bordo orizzontale, il secondo riceve la larghezza del bordo verticale e il terzo riceve la larghezza del bordo tra i rettangoli.
+Puntatore a una matrice di interi con tre elementi. Il primo elemento riceve lo spessore del bordo orizzontale, il secondo riceve lo spessore del bordo verticale e il terzo riceve lo spessore del bordo tra rettangoli.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-I bordi determinano la spaziatura tra il bordo esterno della finestra e i rettangoli all'interno della finestra che contengono testo. I bordi determinano anche la spaziatura tra i rettangoli.
+I bordi determinano la spaziatura tra il bordo esterno della finestra e i rettangoli all'interno della finestra che contengono testo. I bordi determinano anche la spaziatura tra rettangoli.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ I bordi determinano la spaziatura tra il bordo esterno della finestra e i rettan
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

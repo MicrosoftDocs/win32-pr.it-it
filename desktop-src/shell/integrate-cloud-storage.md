@@ -1,7 +1,7 @@
 ---
 description: Illustra come eseguire la registrazione come provider radice di sincronizzazione e integrare un provider di archiviazione cloud nel livello radice del riquadro di spostamento.
 ms.assetid: BB177EDC-8C88-4540-B2F8-994C1C8BA91C
-title: Integrare un provider Archiviazione cloud
+title: Integrare un provider di Archiviazione cloud
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1e218caa292e2b85e13e00374562c172158be8bb2f062f25b47979902046282c
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118458201"
 ---
-# <a name="integrate-a-cloud-storage-provider"></a>Integrare un provider Archiviazione cloud
+# <a name="integrate-a-cloud-storage-provider"></a>Integrare un provider di Archiviazione cloud
 
 Quando si dispone di un provider di archiviazione cloud, è necessario eseguire un paio di passaggi per offrire un'esperienza coerente e preferita per l'utente. Questi due elementi vengono registrati come provider radice di sincronizzazione e integrano l'applicazione nel livello radice del riquadro di spostamento.
 
@@ -20,7 +20,7 @@ Quando si dispone di un provider di archiviazione cloud, è necessario eseguire 
 
  
 
-La prima cosa da fare è registrare come provider radice di sincronizzazione. Ciò consente alla shell Windows informazioni sull'applicazione e che l'applicazione sarà responsabile della sincronizzazione dei file nella radice di sincronizzazione. In questo modo anche altre applicazioni sapranno che si sta sincronizzando questi file in modo che possano rispondere in modo appropriato. Altre applicazioni possono quindi usare [**StorageFile.Provider**](/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) per ottenere [**displayName**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) e [**ID**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) dell'applicazione.
+La prima cosa da fare è registrare come provider radice di sincronizzazione. In questo modo, Windows Shell può conoscere l'applicazione e che l'applicazione sarà responsabile della sincronizzazione dei file nella radice di sincronizzazione. In questo modo anche altre applicazioni sapranno che si sta sincronizzando questi file in modo che possano rispondere in modo appropriato. Altre applicazioni possono quindi usare [**StorageFile.Provider**](/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) per ottenere [**displayName**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) e [**ID**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) dell'applicazione.
 
 Per eseguire la registrazione come provider radice di sincronizzazione, è necessario creare più voci del Registro di sistema. Prima di fornire l'elenco delle coppie chiave-valore, ecco alcuni segnaposto da sostituire con i propri dati dell'applicazione.
 
@@ -31,7 +31,7 @@ Per eseguire la registrazione come provider radice di sincronizzazione, è neces
 Questi segnaposto vengono combinati insieme per formare l'ID radice di sincronizzazione. È necessario inserire un oggetto **.** tra i segnaposto quando si forma l'ID radice di sincronizzazione. Ecco le coppie chiave-valore che devono essere create.
 
 -   **HKLM \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ SyncRootManager \\** storage provider _\[ ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ ID \] account_*_\\ DisplayNameResource:_* punta alla risorsa in cui Windows Shell o altre applicazioni possono ottenere un nome descrittivo per la radice di sincronizzazione.
--   **HKLM \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ SyncRootManager \\** storage provider _\[ ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ Icona \] ID_*_\\ accountRisorsa:_* punta alla risorsa in cui Windows Shell o altre applicazioni possono ottenere un'icona per la radice di sincronizzazione.
+-   **HKLM \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ SyncRootManager \\** storage provider _\[ ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ Icona \] ID_*_\\ accountResource:_* punta alla risorsa in cui Windows Shell o altre applicazioni possono ottenere un'icona per la radice di sincronizzazione.
 -   **HKLM \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ SyncRootManager \\** storage provider _\[ ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ ID \] account_*_\\ UserSyncRoots \\_*_\[ Windows SID: \]_ percorso sul disco in cui si trova la radice di sincronizzazione.
 
 Oltre alla registrazione come provider radice di sincronizzazione, si vuole anche consentire agli utenti di accedere facilmente ai dati forniti. Lo Esplora file spazio dei nomi è progettato per fornire un metodo per tale accesso semplice. La creazione di un'estensione dello spazio dei nomi per il provider e la sua incorporazione nella finestra di Esplora file consentirà agli utenti di interagire con il livello radice dei servizi esattamente come vengono usati con altri Esplora file elementi. Questo argomento illustra come estendere lo spazio dei nomi Esplora file in modo che il provider venga visualizzato a livello di radice nel riquadro di spostamento.
@@ -98,7 +98,7 @@ Questo è fondamentale per assicurarsi che il riquadro di spostamento garantisca
 
 ### <a name="step-5-provide-the-dll-that-hosts-your-extension"></a>Passaggio 5: Specificare la DLL che ospita l'estensione.
 
-Usare il shell32.dll per emulare le cartelle di Windows predefinite. Modificare questa impostazione solo se si ha un motivo specifico per farlo e si ha familiarità con le estensioni dello spazio dei nomi.
+Usare la shell32.dll per emulare le cartelle di Windows predefinite. Modificare questa impostazione solo se si ha un motivo specifico per farlo e si ha familiarità con le estensioni dello spazio dei nomi.
 
 **reg add HKCU \\ Software \\ Classes \\ CLSID \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} \\ InProcServer32 /ve /t REG \_ EXPAND \_ SZ /d %%systemroot%% \\ system32 \\shell32.dll /f**
 
@@ -140,7 +140,7 @@ Configurare l'estensione dello spazio dei nomi come figlio della cartella deskto
 
 ### <a name="step-12-hide-your-extension-from-the-desktop"></a>Passaggio 12: Nascondere l'estensione dal desktop
 
-È importante che l'estensione venga visualizzata solo nel riquadro di spostamento del Esplora file. Un'estensione dello spazio dei nomi non funziona come un collegamento normale. Pertanto, non è consigliabile usare questo metodo per creare un collegamento desktop.
+È importante che l'estensione venga visualizzata solo nel riquadro di spostamento del Esplora file. Un'estensione dello spazio dei nomi non funziona come una normale scelta rapida. Pertanto, è consigliabile non usare questo metodo per creare un collegamento sul desktop.
 
 **reg add HKCU \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ HideDesktopIcons \\ NewStartPanel /v {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} /t REG \_ DWORD /d 0x1 /f**
 

@@ -1,30 +1,30 @@
 ---
-title: Architettura VCM
-description: Architettura VCM
+title: Architettura di VCM
+description: Architettura di VCM
 ms.assetid: cb0b036d-b8b1-4611-965f-08f932dbddb7
 keywords:
-- Video per Windows (VFW), architettura VCM
-- VFW (video per Windows), architettura VCM
+- Video per Windows (VFW), architettura di VCM
+- VFW (Video per Windows),Architettura di VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89b672c86053086f63127aae586517fac4906326
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7676fe7786b8674ddca957a75c33336294b65a9df18d53fe4b9c7f493092b66f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135599"
 ---
-# <a name="vcm-architecture"></a>Architettura VCM
+# <a name="vcm-architecture"></a>Architettura di VCM
 
-VCM è un intermediario tra un'applicazione e i driver di compressione e decompressione. I driver di compressione e decompressione comprimeno e decomprimeno singoli frame di dati.
+VCM è un intermediario tra un'applicazione e i driver di compressione e decompressione. I driver di compressione e decompressione comprimeno e decomprimeno singoli fotogrammi di dati.
 
-Quando un'applicazione effettua una chiamata a VCM, VCM converte la chiamata in un messaggio. Il messaggio viene inviato tramite la funzione [**ICSendMessage**](/windows/desktop/api/Vfw/nf-vfw-icsendmessage) al commediatore o al decompressore appropriato, che comprime o decomprime i dati. VCM riceve il valore restituito dal driver di compressione o decompressione e quindi restituisce il controllo all'applicazione.
+Quando un'applicazione esegue una chiamata a VCM, VCM converte la chiamata in un messaggio. Il messaggio viene inviato tramite la [**funzione ICSendMessage**](/windows/desktop/api/Vfw/nf-vfw-icsendmessage) al compressore o decompressore appropriato, che comprime o decomprime i dati. VCM riceve il valore restituito dal driver di compressione o decompressione e quindi restituisce il controllo all'applicazione.
 
-Se una macro viene definita per un messaggio, la macro si espande in una chiamata di funzione **ICSendMessage** che fornisce parametri appropriati per il messaggio. Se viene definita una macro per un messaggio, l'applicazione deve utilizzarla anziché il messaggio. In questa panoramica queste macro seguono i messaggi tra parentesi.
+Se per un messaggio è definita una macro, la macro si espande in una chiamata di funzione **ICSendMessage** che fornisce i parametri appropriati per il messaggio. Se per un messaggio è definita una macro, l'applicazione deve usarla anziché il messaggio. In questa panoramica, queste macro seguono i messaggi tra parentesi.
 
- 
+ 
 
- 
+ 
 
 
 

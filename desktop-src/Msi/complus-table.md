@@ -1,21 +1,21 @@
 ---
-description: La tabella ComPlus contiene le informazioni necessarie per installare le applicazioni COM+.
+description: La tabella Complus contiene le informazioni necessarie per installare le applicazioni COM+.
 ms.assetid: 0c9a7469-5959-45ad-b84d-6cfd3e169ff6
-title: Tabella ComPlus
+title: Tabella Complus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a2ad5b7b96044025b78bfc774ee0767c2756aa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f77885688226689e5d81e074b1a9a28ef3801aaeba5febf51165377ac9ad9e65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144972"
 ---
-# <a name="complus-table"></a>Tabella ComPlus
+# <a name="complus-table"></a>Tabella Complus
 
-La tabella ComPlus contiene le informazioni necessarie per installare le applicazioni COM+.
+La tabella Complus contiene le informazioni necessarie per installare le applicazioni COM+.
 
-La tabella ComPlus include le colonne seguenti.
+La tabella Complus include le colonne seguenti.
 
 
 
@@ -35,22 +35,22 @@ La tabella ComPlus include le colonne seguenti.
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chiave esterna nella prima colonna della [tabella dei componenti](component-table.md). Si tratta del componente che contiene l'applicazione COM+.
+Chiave esterna nella prima colonna della [tabella Component](component-table.md). Si tratta del componente che contiene l'applicazione COM+.
 
 </dd> <dt>
 
 <span id="ExpType"></span><span id="exptype"></span><span id="EXPTYPE"></span>ExpType
 </dt> <dd>
 
-Flag di esportazione utilizzati durante la generazione del file con estensione msi. Per ulteriori informazioni, vedere la documentazione COM+ in Microsoft Windows Software Development Kit (SDK).
+Flag di esportazione usati durante la generazione del file .msi file. Per altre informazioni, vedere la documentazione di COM+ in Microsoft Windows Software Development Kit (SDK).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Vedere l'azione [RegisterComPlus](registercomplus-action.md) e l' [azione UnregisterComPlus](unregistercomplus-action.md).
+Vedere [l'azione RegisterComPlus e](registercomplus-action.md) [l'azione UnregisterComPlus](unregistercomplus-action.md).
 
-Vedere [installazione di un'applicazione com+ con la Windows Installer](installing-a-com--application-with-the-windows-installer.md).
+Vedere [Installazione di un'applicazione COM+ con il Windows installer](installing-a-com--application-with-the-windows-installer.md).
 
 ## <a name="validation"></a>Convalida
 

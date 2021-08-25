@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentRequest GetCacheSoHFlag (NapSystemHealthAgent. h)
-description: Viene usato solo da NapAgent.
+title: Metodo INapSystemHealthAgentRequest GetCacheSoHFlag (NapSystemHealthAgent.h)
+description: Viene utilizzato solo da NapAgent.
 ms.assetid: 97dd4e95-30c2-48e2-9359-b1019299581d
 keywords:
-- NAP metodo GetCacheSoHFlag
+- Metodo GetCacheSoHFlag NAP
 - Metodo GetCacheSoHFlag NAP, interfaccia INapSystemHealthAgentRequest
 - Interfaccia INapSystemHealthAgentRequest NAP, metodo GetCacheSoHFlag
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d8b458e4a49b690fe1f0f53482a72dd253c7c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9268e620f38ef314c0699612436518315e44cf7f554bb393d2259ae4664519cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133676"
 ---
-# <a name="inapsystemhealthagentrequestgetcachesohflag-method"></a>Metodo INapSystemHealthAgentRequest:: GetCacheSoHFlag
+# <a name="inapsystemhealthagentrequestgetcachesohflag-method"></a>Metodo INapSystemHealthAgentRequest::GetCacheSoHFlag
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentRequest:: GetCacheSoHFlag** viene usato solo da napagent.
+Il **metodo INapSystemHealthAgentRequest::GetCacheSoHFlag** viene usato solo da NapAgent.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,20 +50,20 @@ HRESULT GetCacheSoHFlag(
 *cacheSohForLaterUse* 
 </dt> <dd>
 
-**Bool** che è **true** se il napagent deve memorizzare nella cache il rapporto di [**integrità**](/windows/win32/api/naptypes/ns-naptypes-soh) e **false** in caso contrario.
+Valore **BOOL true** se **NapAgent** deve memorizzare nella cache [**soh e**](/windows/win32/api/naptypes/ns-naptypes-soh) FALSE in caso **contrario.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -76,10 +76,10 @@ HRESULT GetCacheSoHFlag(
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |
 
 

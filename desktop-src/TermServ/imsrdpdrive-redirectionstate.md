@@ -5,7 +5,7 @@ ms.assetid: 05333671-460d-4c07-8b7e-fbb7bc215353
 ms.tgt_platform: multiple
 keywords:
 - Proprietà RedirectionState Servizi Desktop remoto
-- Proprietà RedirectionState Servizi Desktop remoto,interfaccia IMsRdpDrive
+- Proprietà RedirectionState Servizi Desktop remoto, interfaccia IMsRdpDrive
 - Interfaccia IMsRdpDrive Servizi Desktop remoto proprietà RedirectionState
 topic_type:
 - apiref

@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VCR_LIST_PARMS (VCR. h)
-description: La \_ struttura parametri di MCI VCR \_ List \_ contiene i parametri per il \_ comando elenco MCI per i registratori di nastri video.
+title: MCI_VCR_LIST_PARMS struttura (Vcr.h)
+description: La struttura MCI VCR LIST PARMS contiene i parametri \_ \_ per il comando \_ MCI LIST per i registratori di \_ videocassette.
 ms.assetid: 88725599-8057-4787-96e6-49b4a651c894
 keywords:
-- Struttura MCI_VCR_LIST_PARMS di Windows Multimedia
+- MCI_VCR_LIST_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3e7a2eae67ebc7148b7ff424361f16554a435c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8eeb74aeee254ab050d394dbf250c037d00d10d51fe872052dd5d36164b2c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137982"
 ---
-# <a name="mci_vcr_list_parms-structure"></a>\_ \_ Struttura parametri elenco VCR MCI \_
+# <a name="mci_vcr_list_parms-structure"></a>Struttura MCI \_ VCR \_ LIST \_ PARMS
 
-La struttura **parametri di MCI \_ VCR \_ List \_** contiene i parametri per il comando [**\_ elenco MCI**](mci-list.md) per i registratori di nastri video.
+La **struttura MCI \_ VCR LIST \_ \_ PARMS** contiene i parametri per il [**comando MCI \_ LIST**](mci-list.md) per i registratori di videocassette.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ typedef struct tagMCI_VCR_LIST_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -59,13 +59,13 @@ Buffer per le informazioni restituite.
 **dwNumber**
 </dt> <dd>
 
-Numero di input video o audio del videoregistratore.
+Numero di input audio o video del videoregistratore.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_elenco MCI**](mci-list.md)
+[**MCI \_ LIST**](mci-list.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

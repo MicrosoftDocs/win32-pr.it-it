@@ -3,7 +3,7 @@ title: EM_SETBKGNDCOLOR messaggio (Richedit.h)
 description: Il messaggio EM \_ SETBKGNDCOLOR imposta il colore di sfondo per un controllo Rich Edit.
 ms.assetid: 0ad191cd-6370-493e-bfe2-5aa8d81ed999
 keywords:
-- EM_SETBKGNDCOLOR di Windows messaggi
+- EM_SETBKGNDCOLOR controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

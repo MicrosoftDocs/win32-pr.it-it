@@ -3,35 +3,35 @@ title: Copia di dati da un file a un altro
 description: Copia di dati da un file a un altro
 ms.assetid: 1403c396-46ea-48b1-a535-922ffca31bc2
 keywords:
-- Windows Media Format SDK, copia di dati
-- Formato di sistemi avanzati (ASF), copia di dati
-- ASF (Advanced Systems Format), copia di dati
+- Windows Media Format SDK, copia dei dati
+- Advanced Systems Format (ASF), copia dei dati
+- ASF (Advanced Systems Format), copia dei dati
 - flussi, copia di dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8b38a1675ac79630371fe4d3fda66d44b4b2990
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e2fe8369a8e3ebef6bca191ceffdac7c284889b0afdb4145fbec9c44702a1a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118705076"
 ---
 # <a name="copying-data-from-one-file-to-another"></a>Copia di dati da un file a un altro
 
-Al livello più elementare, la copia di un flusso da un file ASF a un altro è piuttosto semplice. Tuttavia, esistono problemi da considerare quando si usano flussi da più file di input o quando si copiano i flussi che prima si decomprimeno e si ricodificano.
+Al livello più semplice, la copia di un flusso da un file ASF a un altro è piuttosto semplice. Tuttavia, esistono problemi da considerare quando si lavora con flussi da più file di input o quando si copiano flussi che vengono decompressi e ricodificati per primi.
 
-Le sezioni seguenti descrivono la copia di flussi.
+Le sezioni seguenti descrivono la copia dei flussi.
 
 
 
 | Sezione                                                                                              | Descripiton                                                                                    |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [Copia dei flussi senza decomprimere i dati](copying-streams-without-decompressing-the-data.md) | Viene descritto come copiare i flussi utilizzando esempi compressi per mantenere la qualità del contenuto. |
-| [Copia di flussi con esempi decompressi](copying-streams-using-decompressed-samples.md)         | Descrive le difficoltà di copia dei flussi utilizzando esempi decompressi.                      |
+| [Copia Flussi senza decomprimere i dati](copying-streams-without-decompressing-the-data.md) | Viene descritto come copiare flussi usando esempi compressi per mantenere la qualità del contenuto. |
+| [Copia Flussi usando esempi decompressi](copying-streams-using-decompressed-samples.md)         | Vengono descritte le difficoltà di copia dei flussi usando esempi decompressi.                      |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,9 +49,9 @@ Le sezioni seguenti descrivono la copia di flussi.
 [**Oggetto writer**](writer-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

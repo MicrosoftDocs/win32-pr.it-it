@@ -1,6 +1,6 @@
 ---
 title: XTYP_ADVREQ transazione (Ddeml.h)
-description: La transazione ADVREQ XTYP informa il server che è in attesa una transazione di notifica nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento \_ sono stati modificati.
+description: La transazione XTYP ADVREQ informa il server che una transazione di consulenza è in sospeso nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento \_ sono stati modificati.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
 - XTYP_ADVREQ dati della transazione Exchange
@@ -23,7 +23,7 @@ ms.locfileid: "118544886"
 ---
 # <a name="xtyp_advreq-transaction"></a>Transazione \_ ADVREQ XTYP
 
-La **transazione \_ ADVREQ XTYP** informa il server che è in attesa una transazione di notifica nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento sono stati modificati. Il sistema invia questa transazione alla funzione di callback Dynamic Data Exchange (DDE), [*DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)dopo che il server ha chiamato [**la funzione DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
+La **transazione XTYP \_ ADVREQ** informa il server che una transazione di consulenza è in sospeso nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento sono stati modificati. Il sistema invia questa transazione alla funzione di callback Dynamic Data Exchange [*(DDE), DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), dopo che il server ha chiamato la funzione [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 
 
 ```C++
@@ -83,11 +83,11 @@ Non usato.
 *dwData1* 
 </dt> <dd>
 
-Conteggio, nella parola più bassa, delle transazioni **\_ ADVREQ XTYP** che rimangono da elaborare nello stesso argomento, elemento e nome di formato impostati nel contesto della chiamata corrente alla [**funzione DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) Il conteggio è zero se la transazione **\_ XTYP ADVREQ** corrente è l'ultima. Un server può utilizzare questo conteggio per determinare se creare un handle di dati **\_ HDATA APPOWNED** per i dati consigliati.
+Conteggio, nella parola di ordine basso, delle transazioni **\_ XTYP ADVREQ** che rimangono da elaborare nello stesso argomento, elemento e nome di formato impostati nel contesto della chiamata corrente alla funzione [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) Il conteggio è zero se la transazione **\_ XTYP ADVREQ** corrente è l'ultima. Un server può usare questo conteggio per determinare se creare un handle di dati **HDATA \_ APPOWNED** per i dati di consulenza.
 
-La parola più bassa è impostata su **CADV \_ LATEACK** se DDEML ha emesso la transazione **\_ XTYP ADVREQ** a causa di un messaggio DDE ACK in arrivo in ritardo da un client in uscita dal \_ server.
+La parola di ordine basso è impostata su **CADV \_ LATEACK** se il DDEML ha emesso la transazione **\_ XTYP ADVREQ** a causa di un messaggio DDE ACK in arrivo in ritardo da un client in uscita dal \_ server.
 
-La parola più importante non viene usata.
+La parola di ordine alto non viene usata.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Il server deve prima chiamare la [**funzione DdeCreateDataHandle**](/windows/des
 
 ## <a name="remarks"></a>Commenti
 
-Un server non può bloccare questo tipo di transazione. Il **codice restituito da CBR \_ BLOCK** viene ignorato.
+Un server non può bloccare questo tipo di transazione. Il **codice restituito CBR \_ BLOCK** viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 

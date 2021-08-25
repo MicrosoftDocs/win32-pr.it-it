@@ -1,5 +1,5 @@
 ---
-description: Il Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote.
+description: I Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote.
 ms.assetid: 4ba1ab4b-57d2-40da-a7c7-2402f8845ff5
 title: Input penna sul Web
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118220804"
 ---
 # <a name="ink-on-the-web"></a>Input penna sul Web
 
-Il Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote. Esistono due tecniche di base per eseguire questa operazione: una è la distribuzione senza tocco, che consente la distribuzione di applicazioni .NET da un Web o da un file server e l'altra consiste nel creare pagine Web abilitate per l'input penna con controlli Windows Forms. In entrambi i casi, l'input penna viene gestito sul client, anziché sul server. Si noti che l'API COM non è supportata per il Web.
+I Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote. Esistono due tecniche di base per eseguire questa operazione: una è la distribuzione senza tocco, che consente la distribuzione di applicazioni .NET da un Web o da un file server e l'altra consiste nel creare pagine Web abilitate per l'input penna con controlli form Windows. In entrambi i casi, l'input penna viene gestito sul client, anziché sul server. Si noti che l'API COM non è supportata per il Web.
 
 Per usare l'elaborazione lato client sul Web, è necessario comprendere il modello di sicurezza .NET e il modo in cui il funzionamento con attendibilità parziale influisce sull'applicazione. Per questo motivo, vengono discusse anche la sicurezza e l'attendibilità per le applicazioni Tablet PC.
 

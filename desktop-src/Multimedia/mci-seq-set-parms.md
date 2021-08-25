@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_SEQ_SET_PARMS (Mciapi. h)
-description: La \_ struttura MCI seq \_ set \_ parametri contiene informazioni per il \_ comando set di MCI per i dispositivi MIDI Sequencer.
+title: MCI_SEQ_SET_PARMS struttura (Mciapi.h)
+description: La struttura MCI SEQ SET PARMS contiene informazioni per \_ \_ il comando \_ MCI SET per i dispositivi \_ sequencer MIDI.
 ms.assetid: 71638a92-c1d6-474b-bc97-ea63ca586aaa
 keywords:
-- Struttura MCI_SEQ_SET_PARMS di Windows Multimedia
+- MCI_SEQ_SET_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 879dd575918a33676e3ba73bd2a8f6212e3dc412
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffb96cfd2f652bf989673bad68c95c6765034d2105fa554efee057faf099a9c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374969"
 ---
-# <a name="mci_seq_set_parms-structure"></a>\_ \_ Struttura parametri della serie MCI seq \_
+# <a name="mci_seq_set_parms-structure"></a>Struttura MCI \_ SEQ \_ SET \_ PARMS
 
-La struttura **MCI \_ seq \_ set \_ parametri** contiene informazioni per il comando [**\_ set di MCI**](mci-set.md) per i dispositivi MIDI Sequencer.
+La **struttura MCI \_ SEQ SET \_ \_ PARMS** contiene informazioni per il [**comando MCI \_ SET**](mci-set.md) per i dispositivi sequencer MIDI.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Porta.
 
 </dd> <dt>
 
-**dwSlave**
+**dwAvare**
 </dt> <dd>
 
 Tipo di sincronizzazione utilizzato dal sequencer per l'operazione subordinata.
@@ -105,7 +105,7 @@ Offset dei dati.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,7 +115,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -123,13 +123,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**SET di MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo setime imposta il flusso di tempo quando questo esempio deve iniziare e terminare. Questo metodo implementa il metodo IMediaSample:: setime.'
+description: Il metodo SetTime imposta le ore del flusso in cui questo esempio deve iniziare e terminare. Questo metodo implementa il metodo IMediaSample::SetTime.
 ms.assetid: cab4907f-eb6f-4444-9b41-1f95a6ecffed
-title: Metodo CMediaSample. setime (Amfilter. h)
+title: Metodo CMediaSample.SetTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 935c4f3aa565b291e459d36e067805944b4fd6b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be9028db35cb6d74623bde77fac21e32793de436ea2f80d2f513687c15d1b64c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156513"
 ---
-# <a name="cmediasamplesettime-method"></a>CMediaSample. setime (metodo)
+# <a name="cmediasamplesettime-method"></a>Metodo CMediaSample.SetTime
 
-Il `SetTime` metodo imposta il flusso di tempo quando questo esempio deve iniziare e terminare. Questo metodo implementa il metodo [**IMediaSample:: setime**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime) .
+Il `SetTime` metodo imposta i tempi del flusso quando questo esempio deve iniziare e terminare. Questo metodo implementa il [**metodo IMediaSample::SetTime.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-settime)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,24 +46,24 @@ HRESULT SetTime(
 *pTimeStart* 
 </dt> <dd>
 
-Puntatore all'ora del flusso in cui inizia l'esempio, in unità di 100 nanosecondi o **null**.
+Puntatore all'ora del flusso in cui inizia il campione, in unità di 100 nanosecondi, o **NULL.**
 
 </dd> <dt>
 
 *pTimeEnd* 
 </dt> <dd>
 
-Puntatore all'ora del flusso in cui termina il campione, in unità di 100 nanosecondi o **null**.
+Puntatore all'ora del flusso in cui termina il campione, in unità di 100 nanosecondi, **o NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta le variabili membro End [**CMediaSample:: m \_ Start**](cmediasample-m-start.md) e [**CMediaSample \_ :: m**](cmediasample-m-end.md) , che specificano i timestamp. Viene inoltre aggiornata la variabile membro [**\_ dwFlags CMediaSample:: m**](cmediasample-m-dwflags.md) , che specifica se i timestamp sono validi.
+Questo metodo imposta le variabili membro Start e [**CMediaSample::m \_ End di CMediaSample::m,**](cmediasample-m-end.md) che specificano i timestamp. [**\_**](cmediasample-m-start.md) Aggiorna anche la variabile membro [**\_ dwFlags CMediaSample::m,**](cmediasample-m-dwflags.md) che specifica se i timestamp sono validi.
 
 Per informazioni sui timestamp, vedere [Time and Clocks in DirectShow](time-and-clocks-in-directshow.md).
 
@@ -73,8 +73,8 @@ Per informazioni sui timestamp, vedere [Time and Clocks in DirectShow](time-and-
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

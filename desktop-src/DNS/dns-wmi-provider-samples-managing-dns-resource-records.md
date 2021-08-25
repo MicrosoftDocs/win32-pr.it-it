@@ -1,33 +1,33 @@
 ---
-title: Esempi di provider WMI DNS-gestione dei record di risorse DNS
-description: Esempi di provider WMI DNS-gestione dei record di risorse DNS
+title: Esempi di provider WMI DNS- Gestione dei record di risorse DNS
+description: Esempi di provider WMI DNS- Gestione dei record di risorse DNS
 ms.assetid: 4b038c74-eec8-459c-9e3f-3be2a244d313
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6b6494168ef6a5ee4aa035879468e2c1a92d4e6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 089cf567452666db54ad0e0d784b2bf3b2566e0e986ba94a9e9d498a387468c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163840"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a>Esempi di provider WMI DNS-gestione dei record di risorse DNS
+# <a name="dns-wmi-provider-samplesmanaging-dns-resource-records"></a>Esempi di provider WMI DNS- Gestione dei record di risorse DNS
 
-Questa sezione illustra le attività di scripting associate alla gestione dei record di risorse DNS. I collegamenti seguenti consentono di passare alle subroutine nel file di script.
+Questa sezione illustra le attività di scripting associate alla gestione dei record di risorse DNS. I collegamenti seguenti passano alle subroutine nel file di script.
 
 -   [Elencare i record di risorse](#list-resource-records)
 -   [Aggiungere un record di risorse](#add-a-resource-record)
 -   [Eliminare un record di risorse](#delete-a-resource-record)
 -   [Modificare un record di risorse](#modify-a-resource-record)
--   [Connettersi al provider WMI DNS](#connect-to-the-dns-wmi-provider)
+-   [Connessione al provider WMI DNS](#connect-to-the-dns-wmi-provider)
 
 L'implementazione generale dello script è la seguente:
 
 1.  Viene creata una classe per ogni tipo di record di risorse.
-2.  I dati dei record di risorse vengono forniti tramite gli input della riga di comando utente e le informazioni del provider WMI DNS per ogni classe del tipo di record.
-3.  Vengono create funzioni comuni quali List, DELETE e Modify, che possono essere usate nelle singole classi di tipi di record di risorse.
+2.  I dati dei record di risorse vengono forniti tramite input della riga di comando dell'utente e informazioni sul provider WMI DNS per ogni classe di tipo di record.
+3.  Le funzioni comuni, ad esempio list, delete e modify, vengono create e possono essere usate in singole classi di tipi di record di risorse.
 
-Questo esempio di codice illustra le attività associate alla gestione dei record di risorse DNS.
+Questo esempio di codice mostra le attività associate alla gestione dei record di risorse DNS.
 
 
 ```VB
@@ -4194,7 +4194,7 @@ End Class
 
 ## <a name="list-resource-records"></a>Elencare i record di risorse
 
-Questo esempio di codice illustra le attività associate all'elenco dei record di risorse.
+Questo esempio di codice mostra le attività associate all'elenco dei record di risorse.
 
 
 ```VB
@@ -4318,7 +4318,7 @@ End Sub
 
 ## <a name="add-a-resource-record"></a>Aggiungere un record di risorse
 
-Questo esempio di codice illustra le attività associate all'aggiunta di record di risorse.
+Questo esempio di codice mostra le attività associate all'aggiunta di record di risorse.
 
 
 ```VB
@@ -4408,7 +4408,7 @@ End Sub
 
 ## <a name="delete-a-resource-record"></a>Eliminare un record di risorse
 
-In questo esempio di codice vengono illustrate le attività associate all'eliminazione di record di risorse.
+Questo esempio di codice mostra le attività associate all'eliminazione dei record di risorse.
 
 
 ```VB
@@ -4492,7 +4492,7 @@ End Sub
 
 ## <a name="modify-a-resource-record"></a>Modificare un record di risorse
 
-Questo esempio di codice illustra le attività associate alla modifica dei record di risorse.
+Questo esempio di codice mostra le attività associate alla modifica dei record di risorse.
 
 
 ```VB
@@ -5183,9 +5183,9 @@ End Function
 
 
 
-## <a name="connect-to-the-dns-wmi-provider"></a>Connettersi al provider WMI DNS
+## <a name="connect-to-the-dns-wmi-provider"></a>Connessione al provider WMI DNS
 
-In questo esempio di codice vengono illustrate le attività associate alla connessione a un provider WMI DNS.
+Questo esempio di codice illustra le attività associate alla connessione a un provider WMI DNS.
 
 
 ```VB
@@ -5417,9 +5417,9 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
 
 
 

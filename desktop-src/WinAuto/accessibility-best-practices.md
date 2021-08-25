@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per l'accesso facilitato
-description: L'implementazione delle procedure consigliate descritte in questa sezione consente di garantire che l'applicazione sia accessibile agli utenti che usano assistive technology prodotti.
+description: L'implementazione delle procedure consigliate descritte in questa sezione consente di garantire che l'applicazione sia accessibile agli utenti che assistive technology prodotti.
 ms.assetid: ef694361-49b7-424c-a583-1eadc2519db7
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118327871"
 ---
 # <a name="accessibility-best-practices"></a>Procedure consigliate per l'accesso facilitato
 
-L'implementazione delle procedure consigliate descritte in questa sezione consente di garantire che l'applicazione sia accessibile agli utenti che usano assistive technology prodotti. Molte di queste procedure consigliate sono incentrate su una buona progettazione dell'interfaccia utente. Ogni procedura consigliata include informazioni sull'implementazione per controlli o applicazioni. In molti casi, gran parte del lavoro per soddisfare queste procedure consigliate è già inclusa nei controlli.
+L'implementazione delle procedure consigliate descritte in questa sezione consente di garantire che l'applicazione sia accessibile agli utenti che assistive technology prodotti. Molte di queste procedure consigliate sono incentrate su una buona progettazione dell'interfaccia utente. Ogni procedura consigliata include informazioni sull'implementazione per controlli o applicazioni. In molti casi, gran parte del lavoro per soddisfare queste procedure consigliate è già incluso nei controlli.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,25 +40,25 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="programmatic-access"></a>Accesso a livello di codice
 
-Le procedure consigliate in questa sezione si apprendono che assistive technology prodotti hanno un accesso a livello di codice adeguato alle informazioni e alle funzionalità dell'interfaccia utente.
+Le procedure consigliate in questa sezione imprecano che assistive technology prodotti hanno un accesso a livello di codice adeguato alle informazioni e alle funzionalità dell'interfaccia utente.
 
 ### <a name="enable-programmatic-access-to-all-ui-elements-and-text"></a>Abilitare l'accesso a livello di codice a tutti gli elementi dell'interfaccia utente e al testo
 
-Gli elementi dell'interfaccia utente dell'applicazione devono essere accessibili a livello assistive technology prodotti. Tutti gli elementi dell'interfaccia utente devono avere etichette, devono esporre tutti i valori delle proprietà e devono generare tutti gli eventi appropriati. Per i controlli Windows standard, la maggior parte di queste operazioni è già stata eseguita tramite gli oggetti proxy Automazione interfaccia utente e Microsoft Active Accessibility Microsoft. I controlli personalizzati, tuttavia, richiedono lavoro aggiuntivo per assicurarsi che siano completamente esposti in modo che i fornitori di assistive technology possano identificare e modificare gli elementi dell'interfaccia utente dell'applicazione.
+Gli elementi dell'interfaccia utente dell'applicazione devono essere accessibili a livello di codice assistive technology prodotti. Tutti gli elementi dell'interfaccia utente devono avere etichette, devono esporre tutti i valori delle proprietà e devono generare tutti gli eventi appropriati. Per i controlli Windows standard, la maggior parte di questo lavoro viene già eseguita tramite gli oggetti proxy Automazione interfaccia utente e Microsoft Active Accessibility Microsoft. I controlli personalizzati, tuttavia, richiedono un lavoro aggiuntivo per assicurarsi che siano completamente esposti in modo che assistive technology fornitori possano identificare e modificare gli elementi dell'interfaccia utente dell'applicazione.
 
 Seguendo questa procedura consigliata, assistive technology fornitori di identificare e modificare gli elementi dell'interfaccia utente del prodotto.
 
 ### <a name="place-names-titles-and-descriptions-on-ui-objects-frames-and-pages"></a>Inserire nomi, titoli e descrizioni in oggetti di interfaccia utente, frame e pagine
 
-Poiché assistive technology, in particolare le utilità per la lettura dello schermo, usano i titoli per comprendere la posizione di un frame, un oggetto o una pagina nello schema di navigazione, i titoli devono essere molto descrittivi. I titoli descrittivi di qualità consentono assistive technology prodotti di identificare e modificare gli elementi dell'interfaccia utente in controlli e applicazioni. Ad esempio, un titolo di pagina Web "Pagina Web Microsoft" è inutile se l'utente si è inserito in un'area specifica. Un titolo descrittivo è fondamentale per gli utenti non vedenti che dipendono dalle utilità per la lettura dello schermo.
+Poiché assistive technology, in particolare le utilità per la lettura dello schermo, usano i titoli per comprendere la posizione di un frame, un oggetto o una pagina nello schema di navigazione, i titoli devono essere molto descrittivi. I titoli descrittivi di qualità consentono assistive technology di identificare e modificare gli elementi dell'interfaccia utente nei controlli e nelle applicazioni. Ad esempio, il titolo di una pagina Web "Pagina Web Microsoft" è inutile se l'utente ha esplorato un'area specifica. Un titolo descrittivo è fondamentale per gli utenti non vedenti e che dipendono dalle utilità per la lettura dello schermo.
 
-Seguendo questa procedura consigliata, i assistive technology di identificare e modificare l'interfaccia utente in applicazioni e controlli di esempio.
+Seguendo questa procedura consigliata, i prodotti assistive technology identificare e modificare l'interfaccia utente in controlli e applicazioni di esempio.
 
 ### <a name="ensure-programmatic-events-are-triggered-by-all-ui-activities"></a>Verificare che gli eventi a livello di codice siano attivati da tutte le attività dell'interfaccia utente
 
 L'applicazione deve generare eventi ogni volta che si verificano modifiche nello stato o nell'aspetto di un elemento dell'interfaccia utente.
 
-Seguendo questa procedura consigliata, i assistive technology possono restare in ascolto delle modifiche nell'interfaccia utente e notificare tali modifiche all'utente.
+Seguendo questa procedura consigliata, assistive technology prodotti di restare in ascolto delle modifiche nell'interfaccia utente e notificare tali modifiche all'utente.
 
 ## <a name="user-settings"></a>Impostazioni utente
 
@@ -66,13 +66,13 @@ La procedura consigliata in questa sezione garantisce che i controlli o le appli
 
 ### <a name="respect-all-system-wide-settings-and-do-not-interfere-with-accessibility-functions"></a>Rispettare tutte le impostazioni a livello di sistema e non interferire con le funzioni di accesso facilitato
 
-Gli utenti possono usare Pannello di controllo per impostare alcuni flag a livello di sistema; Altri flag possono essere impostati a livello di codice. Queste impostazioni non devono essere modificate da controlli o applicazioni. Inoltre, le applicazioni devono supportare le impostazioni di accessibilità del sistema operativo host.
+Gli utenti possono usare Pannello di controllo per impostare alcuni flag a livello di sistema; altri flag possono essere impostati a livello di codice. Queste impostazioni non devono essere modificate da controlli o applicazioni. Inoltre, le applicazioni devono supportare le impostazioni di accessibilità del sistema operativo host.
 
 Seguendo questa procedura consigliata gli utenti potranno configurare le impostazioni di accessibilità e sapere che queste non verranno modificate dalle applicazioni.
 
 ## <a name="visual-ui-design"></a>Progettazione dell'interfaccia utente visiva
 
-Le procedure consigliate in questa sezione assicurano che i controlli o le applicazioni usino i colori e le immagini in modo efficace e possano essere usati assistive technology prodotti.
+Le procedure consigliate in questa sezione assicurano che i controlli o le applicazioni usino in modo efficace il colore e le immagini e possano essere usati assistive technology prodotti.
 
 ### <a name="do-not-hard-code-colors"></a>Non Hard-Code colori
 
@@ -88,11 +88,11 @@ Molti utenti richiedono specifiche combinazioni di contrasto elevato, ad esempio
 
 ### <a name="ensure-all-ui-correctly-scales-by-any-dpi-setting"></a>Verificare che tutti gli elementi dell'interfaccia utente siano ridimensionati correttamente in base alle impostazioni DPI
 
-Assicurarsi che tutti gli elementi dell'interfaccia utente possano essere ridimensionati correttamente in base a qualsiasi impostazione di punti per pollice (dpi). Assicurarsi anche che gli elementi dell'interfaccia utente si adattino a uno schermo di 1024 x 768 con 120 punti per pollice (dpi).
+Assicurarsi che tutti gli elementi dell'interfaccia utente possano ridimensionare correttamente in base a qualsiasi impostazione di punti per pollice (dpi). Assicurarsi inoltre che gli elementi dell'interfaccia utente si adattino a uno schermo di 1024 x 768 con 120 punti per pollice (dpi).
 
 ## <a name="keyboard-navigation"></a>Navigazione tramite tastiera
 
-Le procedure consigliate in questa sezione assicurano che tutte le funzionalità dell'applicazione siano accessibili agli utenti che si basano sulla tastiera.
+Le procedure consigliate in questa sezione garantiscono che tutte le funzionalità dell'applicazione siano accessibili agli utenti che si basano sulla tastiera.
 
 ### <a name="provide-keyboard-interface-for-all-ui-elements"></a>Fornire l'interfaccia della tastiera per tutti gli elementi dell'interfaccia utente
 
@@ -111,13 +111,13 @@ Per evitare confusione, le applicazioni devono nascondere tutti gli indicatori v
 
 Le applicazioni devono eseguire le operazioni seguenti con lo stato attivo:
 
--   Un elemento deve sempre avere lo stato attivo della tastiera.
+-   Un elemento deve avere sempre lo stato attivo della tastiera.
 -   Lo stato attivo della tastiera deve essere visibile e ovvio.
 -   Le selezioni e/o gli elementi con stato attivo devono essere evidenziati visivamente.
 
 ### <a name="support-navigation-standards-and-powerful-navigation-schemes"></a>Supportare gli standard di esplorazione e schemi di navigazione potenti
 
-Diversi aspetti dello spostamento tramite tastiera offrono agli utenti diversi modi per spostarsi nell'interfaccia utente.
+Diversi aspetti della navigazione tramite tastiera offrono diversi modi per consentire agli utenti di spostarsi nell'interfaccia utente.
 
 Le applicazioni devono fornire le interfacce di tastiera seguenti:
 
@@ -137,7 +137,7 @@ La procedura consigliata in questa sezione garantisce che l'interfaccia utente d
 
 Per ogni elemento non di testo, fornire un equivalente selezionabile dall'utente per testo, trascrizioni o descrizioni audio, ad esempio testo alternativo, didascalie o commenti visivi.
 
-Gli elementi non di testo coprono un'ampia gamma di elementi dell'interfaccia utente, tra cui immagini, aree mappa immagine, animazioni, applet, frame, script, pulsanti grafici, suoni, file audio e video autonomi. Gli elementi non di testo sono importanti quando contengono informazioni visive, voce o informazioni audio generali a cui l'utente deve accedere per comprendere il contenuto dell'interfaccia utente.
+Gli elementi non di testo coprono un'ampia gamma di elementi dell'interfaccia utente, tra cui immagini, aree mappa immagine, animazioni, applet, fotogrammi, script, pulsanti grafici, suoni, file audio e video autonomi. Gli elementi non di testo sono importanti quando contengono informazioni visive, voce o informazioni audio generali a cui l'utente deve accedere per comprendere il contenuto dell'interfaccia utente.
 
 ### <a name="use-color-but-also-provide-alternatives-to-color"></a>Usare il colore, ma fornire anche alternative al colore
 

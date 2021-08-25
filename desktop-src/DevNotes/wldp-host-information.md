@@ -1,7 +1,7 @@
 ---
 description: Struttura che identifica l'host e il file di origine da valutare.
 ms.assetid: 547EF59E-7DE5-45E4-948F-109547FAAEE7
-title: Struttura WLDP_HOST_INFORMATION (Wldp. h)
+title: WLDP_HOST_INFORMATION (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - wldp.h
-ms.openlocfilehash: ad20be7fa5887e42c09248d04e14f5ff8cffcd54
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cc1bed8fd104b4aa6abb83d3eb7e19faa37a0301429312c8f0799e256ce32ec6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404070"
 ---
-# <a name="wldp_host_information-structure"></a>\_ \_ Struttura delle informazioni sull'host WLDP
+# <a name="wldp_host_information-structure"></a>Struttura delle informazioni host WLDP \_ \_
 
 Struttura che identifica l'host e il file di origine da valutare.
 
@@ -45,21 +45,21 @@ typedef struct _WLDP_HOST_INFORMATION {
 **dwRevision**
 </dt> <dd>
 
-Deve essere **la \_ \_ \_ revisione delle informazioni sull'host WLDP**.
+Deve essere **WLDP \_ HOST INFORMATION \_ \_ REVISION**.
 
 </dd> <dt>
 
 **dwHostId**
 </dt> <dd>
 
-Valore di enumerazione [**dell' \_ \_ ID host WLDP**](wldp-host-id.md) che descrive l'ID host.
+Valore di enumerazione [**\_ \_ dell'ID HOST WLDP**](wldp-host-id.md) che descrive l'ID host.
 
 </dd> <dt>
 
 **szSource**
 </dt> <dd>
 
-Percorso completo e nome di script con l'estensione. NULL per **l' \_ ID host WLDP \_ \_ globale** o l'esecuzione di script manuale.
+Percorso completo e nome dello script con l'estensione. NULL per **l'ID HOST WLDP \_ \_ \_ GLOBAL** o l'esecuzione manuale di script.
 
 </dd> <dt>
 
@@ -76,9 +76,9 @@ Oltre al nome, il chiamante può specificare un handle per il file utilizzato pe
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Wldp. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                        |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Wldp.h</dt> </dl> |
 
 
 

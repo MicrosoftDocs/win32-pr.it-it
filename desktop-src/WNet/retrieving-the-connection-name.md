@@ -58,7 +58,7 @@ switch (dwResult)
 
 
 
-Per altre informazioni sull'uso di un gestore degli errori definito dall'applicazione, vedere [Recupero di errori di rete](retrieving-network-errors.md).
+Per altre informazioni sull'uso di un gestore degli errori definito dall'applicazione, vedere [Recupero di errori di rete.](retrieving-network-errors.md)
 
  
 

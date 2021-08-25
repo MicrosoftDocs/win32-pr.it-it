@@ -14,7 +14,7 @@ ms.locfileid: "118130817"
 ---
 # <a name="dvc-client-apis"></a>API client DVC
 
-Le API client DVC (Dynamic Virtual Channel) vengono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione. Alcune API vengono implementate dal framework DVC e altre dallo sviluppatore di plug-in. Alcune API vengono usate per supportare il plug-in client Connessione Desktop remoto (RDC) e non sono direttamente correlate al trasporto dei dati.
+Le API client DVC (Dynamic Virtual Channel) vengono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione. Alcune API vengono implementate dal framework DVC e altre dallo sviluppatore di plug-in. Alcune API vengono usate per supportare il plug-in client Connessione Desktop remoto (RDC) e non sono direttamente correlate al trasporto dati.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ Le API client DVC (Dynamic Virtual Channel) vengono implementate in modo specifi
 [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin)
 </dt> <dd>
 
-Consente al plug-in Connessione Desktop remoto (RDC) di essere caricato dal client Connessione Desktop remoto (RDC).
+Consente il Connessione Desktop remoto plug-in client (RDC) da caricare dal client Connessione Desktop remoto (RDC).
 
 </dd> <dt>
 
@@ -37,7 +37,7 @@ Gestisce le impostazioni di configurazione per ogni listener per la connessione 
 [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback)
 </dt> <dd>
 
-Usato per notificare al plug-in del client Connessione Desktop remoto (RDC) le richieste in ingresso in un listener specifico.
+Usato per notificare al plug-in client Connessione Desktop remoto (RDC) le richieste in ingresso in un listener specifico.
 
 </dd> <dt>
 
@@ -51,7 +51,7 @@ Gestisce tutti Connessione Desktop remoto plug-in client (RDC) e listener DVC (D
 [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannel)
 </dt> <dd>
 
-Utilizzato per controllare lo stato del canale e scrive sul canale.
+Usato per controllare lo stato del canale e scrive nel canale.
 
 </dd> <dt>
 

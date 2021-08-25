@@ -3,8 +3,8 @@ title: Gruppo actionGroup
 description: Definisce il gruppo di azioni che un'attività può eseguire.
 ms.assetid: a43ba021-4a40-4e2c-a57f-bd6ee17706ba
 keywords:
-- Gruppo actionGroup Utilità di pianificazione
-- Gruppo di Utilità di pianificazione
+- gruppo actionGroup Utilità di pianificazione
+- actionGroup Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -59,7 +59,7 @@ Definisce il gruppo di azioni che un'attività può eseguire.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML, gli elementi definiti da questo gruppo sono gli elementi figlio [**dell'elemento**](taskschedulerschema-actions-tasktype-element.md) Actions.
+Quando si legge o si scrive codice XML, gli elementi definiti da questo gruppo sono gli elementi figlio [**dell'elemento**](taskschedulerschema-actions-tasktype-element.md) Actions.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Durante la lettura o la scrittura di codice XML, gli elementi definiti da questo
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

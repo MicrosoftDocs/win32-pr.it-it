@@ -1,23 +1,23 @@
 ---
-description: Usare i controlli Windows standard, laddove possibile, perché sono completamente compatibili con le linee guida di Microsoft Active Accessibility. Sono inclusi i controlli forniti da Windows (User32.dll) e dalla libreria di controlli comuni di Windows (Comctl32.dll).
+description: Usare controlli Windows standard quando possibile, perché sono completamente compatibili con le linee guida Microsoft Active Accessibility standard. Sono inclusi i controlli forniti da Windows (User32.dll) e dalla libreria Windows controlli comuni (Comctl32.dll).
 ms.assetid: 2d0b255f-52be-423b-a495-64bf21041858
-title: Utilizzo di controlli Windows standard
+title: Uso di controlli Windows standard
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8732ce48bee762b9a7f3f76669c5dbc45b07c831
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71beab38b4ee6ea6472a34b4edb190deed97731496eac7101859a9340c65ad0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449274"
 ---
-# <a name="using-standard-windows-controls"></a>Utilizzo di controlli Windows standard
+# <a name="using-standard-windows-controls"></a>Uso di controlli Windows standard
 
-Usare i controlli Windows standard, laddove possibile, perché sono completamente compatibili con le linee guida di Microsoft Active Accessibility. Sono inclusi i controlli forniti da Windows (User32.dll) e dalla libreria di controlli comuni di Windows (Comctl32.dll).
+Usare controlli Windows standard quando possibile, perché sono completamente compatibili con le linee guida Microsoft Active Accessibility standard. Sono inclusi i controlli forniti da Windows (User32.dll) e dalla libreria Windows controlli comuni (Comctl32.dll).
 
-Ogni controllo Windows standard è una finestra separata di una classe specifica, quindi l'assistenza per l'accessibilità riceve una notifica quando lo stato attivo si sposta su un nuovo controllo. Gli aiuti possono determinare la classe della finestra controlli e tutti i messaggi aggiuntivi che può inviare per eseguire query o modificare lo stato dei controlli. L'assistenza può inoltre identificare tutti i controlli figlio contenuti in una finestra padre e identificare l'elemento padre di qualsiasi controllo.
+Ogni controllo Windows standard è una finestra separata di una classe specifica, quindi il supporto per l'accessibilità viene notificato quando lo stato attivo passa a un nuovo controllo. L'aiuto può determinare la classe della finestra dei controlli ed eventuali messaggi aggiuntivi che può inviare per eseguire query o modificare lo stato dei controlli. Il supporto può anche identificare tutti i controlli figlio contenuti in una finestra padre e identificare l'elemento padre di qualsiasi controllo.
 
-Alcuni controlli comuni sono estremamente flessibili e spesso possono sostituire i controlli personalizzati meno accessibili e quelli creati dal proprietario. Una visualizzazione elenco, ad esempio, può sostituire una casella di riepilogo creata dal proprietario per visualizzare una casella di controllo accanto a ogni elemento. Come altro esempio, il controllo pulsante avanzato può visualizzare sia immagini che testo. In precedenza, era necessario usare un controllo personalizzato.
+Alcuni controlli comuni sono estremamente flessibili e spesso possono sostituire i controlli personalizzati meno accessibili e i controlli disegnati dal proprietario. Ad esempio, una visualizzazione elenco può sostituire una casella di riepilogo disegnata dal proprietario per visualizzare una casella di controllo accanto a ogni elemento. Come altro esempio, il controllo pulsante avanzato può visualizzare sia immagini che testo. In precedenza, questo richiedeva l'uso di un controllo personalizzato.
 
  
 

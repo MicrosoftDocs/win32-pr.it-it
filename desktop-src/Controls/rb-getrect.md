@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_GETRECT (COMmctrl. h)
+title: RB_GETRECT messaggio (Commctrl.h)
 description: Recupera il rettangolo di delimitazione per una determinata banda in un controllo Rebar.
 ms.assetid: e272b090-1e4d-4cff-87f0-557ad8116e7e
 keywords:
-- Controlli di Windows Message RB_GETRECT
+- RB_GETRECT controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76b9d5de00b638a3767df461595ff01316b23183
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 43d2f085fa7c6f413700156999f1325879f91affc2c8984fb33d08cb6cc90b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169297"
 ---
-# <a name="rb_getrect-message"></a>Messaggio di RB \_ GETrect
+# <a name="rb_getrect-message"></a>Messaggio \_ GETRECT RB
 
 Recupera il rettangolo di delimitazione per una determinata banda in un controllo Rebar.
 
@@ -39,13 +39,13 @@ Indice in base zero di una banda nel controllo Rebar.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che riceverà i limiti della banda del controllo Rebar.
+Puntatore a [**una struttura RECT**](/previous-versions//dd162897(v=vs.85)) che riceverà i limiti della banda rebar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

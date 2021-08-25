@@ -1,21 +1,21 @@
 ---
-description: Trovare un'interfaccia su un filtro o un pin
+description: Trovare un'interfaccia in un filtro o un segnaposto
 ms.assetid: 546f5b7d-3bcd-4e97-a012-daca6ae7bca1
-title: Trovare un'interfaccia su un filtro o un pin
+title: Trovare un'interfaccia in un filtro o un segnaposto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d264a35e0c33ba53f6a8df7f69113f3358a9737
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 17314f7e44e4b2c4f412dd0d152e038203268c29d585cd684ddde9eb34992a2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819563"
 ---
-# <a name="find-an-interface-on-a-filter-or-pin"></a>Trovare un'interfaccia su un filtro o un pin
+# <a name="find-an-interface-on-a-filter-or-pin"></a>Trovare un'interfaccia in un filtro o un segnaposto
 
-Per molte operazioni in DirectShow, l'applicazione chiama i metodi in gestione grafico dei filtri. In alcune situazioni, tuttavia, l'applicazione deve chiamare un metodo direttamente su un filtro o un PIN. Molti filtri, ad esempio, espongono interfacce specializzate che vengono usate per configurare il filtro.
+Per molte operazioni in DirectShow, l'applicazione chiama i metodi in Filter Graph Manager. In alcune situazioni, tuttavia, l'applicazione deve chiamare un metodo direttamente su un filtro o un pin. Ad esempio, molti filtri espongono interfacce specializzate usate per configurare il filtro.
 
-Nel caso di un'interfaccia di filtro, è possibile che si disponga già di un puntatore all'interfaccia [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro. In tal caso, usare semplicemente **QueryInterface** per ottenere l'altra interfaccia. Tuttavia, è possibile che alcuni filtri vengano aggiunti al grafico dal gestore del grafico dei filtri. Per informazioni dettagliate, vedere [connessione intelligente](intelligent-connect.md). In tal caso, usare l'interfaccia [**IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) per scorrere in ciclo tutti i filtri nel grafico ed eseguire una query su ognuno di essi. Nella funzione seguente viene illustrato quanto segue:
+Nel caso di un'interfaccia di filtro, potrebbe essere già presente un puntatore [**all'interfaccia IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro. In tal caso, è sufficiente usare **QueryInterface** per ottenere l'altra interfaccia. Tuttavia, alcuni filtri potrebbero essere aggiunti al grafico da Filter Graph Manager. Per informazioni dettagliate, vedere [Intelligent Connessione](intelligent-connect.md). In tal caso, usare [**l'interfaccia IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) per eseguire il ciclo di tutti i filtri nel grafico ed eseguire una query su ognuno di essi. La funzione seguente illustra questa operazione:
 
 
 ```C++
@@ -50,7 +50,7 @@ HRESULT FindFilterInterface(
 
 
 
-Per trovare un'interfaccia su un PIN, usare l'interfaccia [**IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) per scorrere in ciclo i pin di un filtro. La funzione seguente mostra come eseguire questa operazione:
+Per trovare un'interfaccia su un segnaposto, usare [**l'interfaccia IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) per scorrere i segnaposto in un filtro. La funzione seguente illustra come eseguire questa operazione:
 
 
 ```C++
@@ -85,7 +85,7 @@ HRESULT FindPinInterface(
 
 
 
-La funzione successiva cerca un'interfaccia su un filtro o un PIN:
+La funzione successiva cerca un'interfaccia in un filtro o un segnaposto:
 
 
 ```C++
@@ -125,7 +125,7 @@ HRESULT FindInterfaceAnywhere(
 
 
 
-Si noti che tutte le funzioni mostrate qui si arrestano al primo **QueryInterface** riuscito.
+Si noti che tutte le funzioni illustrate qui si arrestano in corrispondenza della prima **query QueryInterface riuscita.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 

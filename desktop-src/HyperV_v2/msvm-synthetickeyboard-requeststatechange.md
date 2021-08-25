@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: eb8714dfc652cd1ba1a581b99cf5a4066159fb1e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3a16710adafaf3c9a4d04658f556592c485fd3ce1fa5b88c198b8913dadda543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146721"
 ---
-# <a name="requeststatechange-method-of-the-msvm_synthetickeyboard-class"></a>Metodo RequestStateChange della classe Msvm \_ SyntheticKeyboard
+# <a name="requeststatechange-method-of-the-msvm_synthetickeyboard-class"></a>Metodo RequestStateChange della classe \_ SyntheticKeyboard Msvm
 
 Richiede una modifica dello stato.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà **RequestedState** dell'istanza se il codice restituito del metodo RequestStateChange è 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Fare riferimento alla descrizione delle **proprietà EnabledState** e **RequestedState** per le spiegazioni dettagliate dei *valori RequestedState.*
+Stato richiesto per l'elemento. Queste informazioni verranno inserite nella proprietà **RequestedState** dell'istanza se il codice restituito del metodo RequestStateChange è 0 ('Completed with No Error') o 4096 (0x1000) ('Job Started'). Fare riferimento alla descrizione delle **proprietà EnabledState** e **RequestedState** per le spiegazioni dettagliate dei *valori requestedState.*
 
 <dt>
 
@@ -64,7 +64,7 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -85,7 +85,7 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvio** (8)
+**Rinvia** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -106,21 +106,21 @@ Stato richiesto per l'elemento. Queste informazioni verranno inserite nella prop
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768..65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -143,7 +143,7 @@ Se questa proprietà non contiene 0 o null e l'implementazione non supporta ques
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; In caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -159,7 +159,7 @@ In caso di esito positivo, restituisce 0; In caso contrario, restituisce un erro
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

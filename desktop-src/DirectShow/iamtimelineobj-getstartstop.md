@@ -24,7 +24,7 @@ ms.locfileid: "118400787"
 # <a name="iamtimelineobjgetstartstop-method"></a>Metodo IAMTimelineObj::GetStartStop
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -66,7 +66,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Le composizioni, i gruppi e le tracce hanno sempre un'ora di inizio di 0.
+Le composizioni, i gruppi e le tracce hanno sempre un'ora di inizio 0.
 
 Durante il rendering, DES arrotonda i tempi di inizio e arresto di un oggetto al limite del frame più vicino. Des, tuttavia, non sovrascrive gli orari dell'oggetto. Se si modifica la frequenza fotogrammi del gruppo, gli orari arrotondati vengono sempre calcolati a partire dall'ora originale. Per altre informazioni, [vedere Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 

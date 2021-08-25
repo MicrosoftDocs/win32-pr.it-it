@@ -3,7 +3,7 @@ title: Funzione ByteAddressBuffer::Load3(uint)
 description: Ottiene tre valori. | Funzione ByteAddressBuffer::Load3(uint)
 ms.assetid: 79afeb36-e0e7-44a2-b252-8e3577f4c1a5
 keywords:
-- HLSL della funzione Load3
+- Funzione Load3 HLSL
 topic_type:
 - apiref
 api_name:

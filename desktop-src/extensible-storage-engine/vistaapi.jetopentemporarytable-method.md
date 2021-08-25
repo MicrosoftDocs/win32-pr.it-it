@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo VistaApi.JetOpenTemporaryTable'
+description: Altre informazioni sul metodo VistaApi.JetOpenTemporaryTable
 title: Metodo VistaApi.JetOpenTemporaryTable (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JetOpenTemporaryTable method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetOpenTemporaryTable(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE)
@@ -33,7 +33,7 @@ ms.locfileid: "118484286"
 ---
 # <a name="vistaapijetopentemporarytable-method"></a>Metodo VistaApi.JetOpenTemporaryTable
 
-Crea una tabella temporanea con un singolo indice. Una tabella temporanea archivia e recupera i record esattamente come una normale tabella creata usando JetCreateTableColumnIndex. Tuttavia, le tabelle temporanee sono molto più veloci delle tabelle normali a causa della loro natura volatile. Possono anche essere usati per ordinare ed eseguire rapidamente la rimozione dei duplicati sui set di record quando vi si accede in modo puramente sequenziale. Vedere anche [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md).
+Crea una tabella temporanea con un singolo indice. Una tabella temporanea archivia e recupera i record esattamente come una normale tabella creata usando JetCreateTableColumnIndex. Tuttavia, le tabelle temporanee sono molto più veloci delle tabelle ordinarie a causa della loro natura volatile. Possono anche essere usati per ordinare ed eseguire molto rapidamente la rimozione dei duplicati nei set di record quando vi si accede in modo puramente sequenziale. Vedere anche [JetOpenTempTable(JET_SESID, \[ \] , Int32, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable-method.md), [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md).
 
 **Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
@@ -71,11 +71,11 @@ public static void JetOpenTemporaryTable(
   - tabella temporanea  
     Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE](./jet-opentemporarytable-class.md)  
     
-    Descrizione della tabella temporanea da creare in base all'input. Dopo una chiamata riuscita, la struttura contiene l'handle per le identificazioni di tabella e colonna temporanee. Usare [JetCloseTable(JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) per liberare la tabella temporanea al termine.
+    Descrizione della tabella temporanea da creare nell'input. Dopo una chiamata riuscita, la struttura contiene l'handle per le identificazioni di tabella e colonna temporanee. Usare [JetCloseTable(JET_SESID, JET_TABLEID)](./api.jetclosetable-method.md) per liberare la tabella temporanea al termine.
 
 ## <a name="remarks"></a>Commenti
 
-Introdotto in Windows Vista. Usare [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md) per le versioni precedenti di Esent.
+Introduzione a Windows Vista. Usare [JetOpenTempTable3(JET_SESID, \[ \] , Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, \[ \] )](./api.jetopentemptable3-method.md) per le versioni precedenti di Esent.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -31,19 +31,19 @@ ms.locfileid: "118329853"
 
 ## <a name="description"></a>Descrizione
 
-A livello elevato, Hyper-V memoria dinamica è un miglioramento della gestione della memoria per il ruolo Hyper-V incluso in Windows Server 2008 R2 SP1. È progettato per l'uso in produzione e consente ai clienti di ottenere rapporti di consolidamento/densità di macchine virtuali (VM) più elevati, ottimizzando al tempo stesso l'utilizzo della memoria nel computer fisico. L'allocazione di memoria statica viene ridotta e la memoria aggiuntiva viene allocata in base alle esigenze. memoria dinamica influisce sugli sviluppatori di software che vogliono garantire il corretto funzionamento del software in un ambiente di macchine virtuali.
+A livello di alto livello, Hyper-V memoria dinamica è un miglioramento della gestione della memoria per il ruolo Hyper-V incluso in Windows Server 2008 R2 SP1. È progettato per l'uso in produzione e consente ai clienti di ottenere rapporti di densità più elevati di consolidamento/macchina virtuale (VM) ottimizzando al tempo stesso l'utilizzo della memoria nel computer fisico. L'allocazione di memoria statica viene ridotta e la memoria aggiuntiva viene allocata in base alle esigenze. memoria dinamica influisce sugli sviluppatori di software che vogliono garantire il corretto funzionamento del software in un ambiente di macchine virtuali.
 
 ## <a name="usage-scenario"></a>Scenario di utilizzo
 
-Esistono due scenari di utilizzo chiave in cui memoria dinamica entra in gioco, le applicazioni sul lato host e le applicazioni sul lato guest.
+Esistono due scenari di utilizzo chiave in cui memoria dinamica in gioco, applicazioni lato host e applicazioni lato guest.
 
 **Applicazioni lato host (strumenti di gestione)**
 
-I vecchi strumenti che gestiscono un nuovo server Windows Server 2008 R2 SP1 non saranno in grado di accedere alle nuove impostazioni memoria dinamica server. Sono stati sviluppati nuovi contatori delle prestazioni e API WMI per gestire le nuove memoria dinamica per le macchine virtuali Hyper-V. Gli sviluppatori di software che usano gli strumenti di gestione devono sfruttare questi contatori e API per l'uso con Windows Server 2008 R2 SP1 con il ruolo Hyper-V installato. I dettagli su queste nuove API saranno disponibili tramite la documentazione del [provider WMI Hyper-V in MSDN.](/previous-versions/windows/desktop/virtual/using-the-virtualization-wmi-provider)
+Gli strumenti meno avanzati che gestiscono un nuovo server Windows Server 2008 R2 SP1 non saranno in grado di accedere alle nuove impostazioni memoria dinamica predefinite. Sono state sviluppate nuove API WMI e contatori delle prestazioni per gestire le nuove impostazioni memoria dinamica per le macchine virtuali Hyper-V. Gli sviluppatori software che lavorano sugli strumenti di gestione devono sfruttare queste API e contatori per l'uso con Windows Server 2008 R2 SP1 con il ruolo Hyper-V installato. I dettagli su queste nuove API saranno disponibili tramite la documentazione del [provider WMI Hyper-V in MSDN.](/previous-versions/windows/desktop/virtual/using-the-virtualization-wmi-provider)
 
 **Applicazioni lato guest**
 
-Gli sviluppatori che scrivono software da usare all'interno di una macchina virtuale configurata memoria dinamica devono tenere presente che la memoria di sistema della macchina virtuale non è più costante. Di conseguenza, l'applicazione deve liberare memoria quando non è più necessaria per consentire ad altre applicazioni di sfruttare i vantaggi della risorsa.
+Gli sviluppatori che scrivono software da usare all'interno di una macchina virtuale configurata per l memoria dinamica devono tenere presente che la memoria di sistema della macchina virtuale non è più costante. Di conseguenza, l'applicazione deve liberare memoria quando non è più necessaria per consentire ad altre applicazioni di sfruttare la risorsa.
 
 Le allocazioni di memoria e le deallocazione continuano a funzionare normalmente per le applicazioni utente. memoria dinamica è completamente trasparente per la maggior parte delle applicazioni degli utenti finali. Tuttavia, se il software in fase di sviluppo usa contatori delle prestazioni di memoria nella macchina virtuale, è necessario eseguire test accurati in un ambiente abilitato per memoria dinamica per assicurarsi che il software prende in considerazione le modifiche apportate all'allocazione di memoria del sistema operativo guest. La memoria disponibile non è più "statica" dal punto di vista della macchina virtuale.
 
@@ -58,7 +58,7 @@ Le macchine virtuali devono avere installato Integration Services (SP1) aggiorna
 
 ## <a name="disclaimer"></a>Dichiarazione di non responsabilità
 
-Le informazioni contenute in questo documento riguardano prodotti software non definitive che possono essere modificati in modo sostanziale prima della prima versione commerciale. Di conseguenza, le informazioni potrebbero non descrivere o riflettere in modo accurato il prodotto software al momento del primo rilascio in commercio. Questo documento è esclusivamente a scopo informativo. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
+Le informazioni contenute in questo documento riguardano prodotti software non definitive che possono essere modificati in modo sostanziale prima della prima versione commerciale. Di conseguenza, le informazioni potrebbero non descrivere o riflettere in modo accurato il prodotto software al primo rilascio commerciale. Questo documento è esclusivamente a scopo informativo. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
  
 

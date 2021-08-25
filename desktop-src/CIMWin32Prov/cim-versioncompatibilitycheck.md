@@ -1,5 +1,5 @@
 ---
-description: La classe CIM VersionCompatibilityCheck specifica se è consentito creare \_ lo stato successivo di un elemento software.
+description: La classe CIM VersionCompatibilityCheck specifica se è consentito creare lo \_ stato successivo di un elemento software.
 ms.assetid: 3a04c489-e44e-44c7-8945-d6047ba0d6df
 ms.tgt_platform: multiple
 title: CIM_VersionCompatibilityCheck classe
@@ -33,12 +33,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118420388"
 ---
-# <a name="cim_versioncompatibilitycheck-class"></a>Classe CiM \_ VersionCompatibilityCheck
+# <a name="cim_versioncompatibilitycheck-class"></a>Classe CIM \_ VersionCompatibilityCheck
 
 La **classe CIM \_ VersionCompatibilityCheck** specifica se è consentito creare lo stato successivo di un elemento software.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -67,14 +67,14 @@ class CIM_VersionCompatibilityCheck : CIM_Check
 
 ## <a name="members"></a>Members
 
-La **classe CIM \_ VersionCompatibilityCheck** include i tipi di membri seguenti:
+La **classe CIM \_ VersionCompatibilityCheck** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe CiM \_ VersionCompatibilityCheck** include questi metodi.
+La **classe CIM \_ VersionCompatibilityCheck** include questi metodi.
 
 
 
@@ -101,7 +101,7 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** l'elemento software può passare allo stato successivo indipendentemente dal fatto che esista già una versione successiva o una seconda versione dell'elemento software nell'ambiente.
+Se **TRUE,** l'elemento software può passare allo stato successivo indipendentemente dal fatto che nell'ambiente sia già presente una versione superiore o la seconda dell'elemento software.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Controlla la possibilità di configurare più versioni di un prodotto in un sist
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -132,25 +132,25 @@ Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **CheckID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificatore utilizzato insieme ad altre chiavi per identificare in modo univoco il controllo.
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -163,18 +163,18 @@ Tipo di dati: **booleano**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **TRUE,** si prevede che la condizione esista nell'ambiente. Ad esempio, si prevede che un file si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **TRUE.**
+Se **TRUE,** è previsto che la condizione esista nell'ambiente. Ad esempio, è previsto che un file si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **TRUE.**
 
-Se **FALSE,** la condizione non deve esistere. Ad esempio, un file non si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **FALSE.**
+Se **FALSE,** non è previsto che la condizione esista. Ad esempio, un file non si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **FALSE.**
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -182,14 +182,14 @@ Tipo di accesso: sola lettura
 
 Descrizione degli oggetti .
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -200,7 +200,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Nome usato per identificare l'elemento software
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -220,18 +220,18 @@ Se **TRUE,** l'elemento software può passare allo stato successivo indipendente
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Si tratta di un identificatore per questo elemento software.
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Stato dell'elemento software di un elemento software.
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -297,7 +297,7 @@ Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[*
 
 Sistema operativo di destinazione dell'elemento software.
 
-Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
+Questa proprietà viene ereditata da [**CIM \_ Check**](cim-check.md).
 
 <dt>
 

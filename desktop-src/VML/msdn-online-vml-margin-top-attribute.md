@@ -42,7 +42,7 @@ Specifica il bordo superiore del rettangolo che contiene la forma rispetto all'a
 
 Si noti che **margintop** viene usato al posto di **margin-top per** lo scripting. Si noti anche che se **la posizione** è **assoluta,** il margine non verrà modificato.
 
-Questa proprietà viene usata al posto di **Top** per le forme in Microsoft Word e Microsoft Excel mobili in una posizione relativa a un punto di ancoraggio.
+Questa proprietà viene usata al posto di **Top** per le forme Microsoft Word e Microsoft Excel mobili in una posizione relativa a un punto di ancoraggio.
 
 I possibili valori sono:
 

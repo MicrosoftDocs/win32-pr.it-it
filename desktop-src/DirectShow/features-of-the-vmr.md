@@ -1,43 +1,43 @@
 ---
-description: Funzionalità di VMR
+description: Funzionalità del vmr
 ms.assetid: a809045b-b60d-4092-bc4d-0e70e17d2913
-title: Funzionalità di VMR
+title: Funzionalità del vmr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7c4a5a34be9fb3b3bb08df18091b88fbe7d7432
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 66c78fc34be3097beedb73ac3989bc468cff0851143355902e3236f672797a83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819553"
 ---
-# <a name="features-of-the-vmr"></a>Funzionalità di VMR
+# <a name="features-of-the-vmr"></a>Funzionalità del vmr
 
-Il video che combina il renderer 7 (VMR-7) supporta le seguenti nuove funzionalità:
+Video Mixing Renderer 7 (VMR-7) supporta le nuove funzionalità seguenti:
 
--   Combinazione reale di più flussi video, usando le funzionalità di fusione alfa dei dispositivi hardware Direct3D.
--   La possibilità di collegare il proprio componente di composizione per implementare gli effetti e le transizioni tra più flussi video che entrano in VMR.
--   Vero rendering senza finestra. Non è più necessario rendere la finestra di riproduzione del video un figlio della finestra dell'applicazione per poter contenere la riproduzione video. La nuova modalità di rendering senza finestra di VMR consente alle applicazioni di ospitare facilmente la riproduzione video in qualsiasi finestra senza dover inviare i messaggi della finestra al renderer per l'elaborazione specifica del renderer.
--   Nuova modalità di riproduzione con rendering in cui le applicazioni possono fornire il proprio componente allocatore per ottenere l'accesso all'immagine video decodificata prima che venga visualizzata sullo schermo.
+-   Combinazione reale di più flussi video, usando le funzionalità di alpha blending dei dispositivi hardware Direct3D.
+-   Possibilità di collegare il proprio componente di composizione per implementare effetti e transizioni tra più flussi video che entrano nel VMR.
+-   Rendering senza finestra vero. Non è più necessario rendere la finestra di riproduzione video un elemento figlio della finestra dell'applicazione per contenere la riproduzione video. La nuova modalità di rendering senza finestra della macchina virtuale consente alle applicazioni di ospitare facilmente la riproduzione video all'interno di qualsiasi finestra senza dover inoltrare messaggi di finestra al renderer per l'elaborazione specifica del renderer.
+-   Nuova modalità di riproduzione senza rendering in cui le applicazioni possono fornire il proprio componente allocatore per ottenere l'accesso all'immagine video decodificata prima che venga visualizzata sullo schermo.
 -   Supporto migliorato per i PC dotati di più monitor.
--   Supporto per la nuova architettura di accelerazione video DirectX Microsoft.
--   Supporto per la riproduzione video di alta qualità simultaneamente su più finestre.
--   Supporto per la modalità esclusiva di DirectDraw
--   100% di compatibilità con le versioni precedenti delle applicazioni esistenti.
--   Supporto per l'esecuzione dei frame e un modo affidabile per acquisire l'immagine corrente da visualizzare.
--   La possibilità per le applicazioni di incorporare facilmente i dati di immagini statiche, ad esempio i loghi dei canali o i componenti dell'interfaccia utente, con il video in modo senza sfarfallio.
+-   Supporto per la nuova architettura DirectX Video Acceleration di Microsoft.
+-   Supporto per la riproduzione video di alta qualità simultaneamente in più finestre.
+-   Supporto per la modalità esclusiva DirectDraw
+-   Compatibilità al 100% con le applicazioni esistenti.
+-   Supporto per l'esecuzione di istruzioni dei fotogrammi e un modo affidabile per acquisire l'immagine corrente visualizzata.
+-   La possibilità per le applicazioni di unire facilmente i propri dati di immagine statici (ad esempio logo del canale o componenti dell'interfaccia utente) con il video in modo uniforme senza sfarfallio.
 
-VMR-9 supporta tutte le funzionalità sopra elencate, oltre a:
+VmR-9 supporta tutte le funzionalità elencate in precedenza, oltre a:
 
 -   Possibilità di elaborare i dati video direttamente con le API Direct3D, ad esempio i pixel shader.
--   Supporto migliorato per contenuto video interlacciato.
--   Supporto per qualsiasi piattaforma supportata da DirectX.
+-   Supporto migliorato per il contenuto video interlacciato.
+-   Supporto in qualsiasi piattaforma supportata da DirectX.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni sul rendering del mixaggio video](about-the-video-mixing-render.md)
+[Informazioni sul rendering di combinazione video](about-the-video-mixing-render.md)
 </dt> </dl>
 
  

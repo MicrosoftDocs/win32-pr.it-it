@@ -22,7 +22,7 @@ ms.locfileid: "118355604"
 ---
 # <a name="uri-registrationinfotype-element"></a>Elemento URI (registrationInfoType)
 
-Specifica l'URI dell'attività. Questo elemento viene utilizzato per specificare la posizione dell'attività registrata nella gerarchia di cartelle delle attività.
+Specifica l'URI dell'attività. Questo elemento viene usato per specificare la posizione in cui l'attività registrata viene inserita nella gerarchia di cartelle delle attività.
 
 ``` syntax
 <xs:element name="URI"
@@ -31,7 +31,7 @@ Specifica l'URI dell'attività. Questo elemento viene utilizzato per specificare
  />
 ```
 
-**L'elemento URI** è definito dal [**tipo complesso registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
+**L'elemento URI** è definito dal tipo complesso [**registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,7 +39,7 @@ Specifica l'URI dell'attività. Questo elemento viene utilizzato per specificare
 
 | Elemento                                                                           | Derivato da                                                                         | Descrizione                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica le informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
 
 
 
@@ -47,7 +47,7 @@ Specifica l'URI dell'attività. Questo elemento viene utilizzato per specificare
 
 Per lo sviluppo di script, l'URI dell'attività viene specificato usando la [**proprietà RegistrationInfo.URI.**](registrationinfo-uri.md)
 
-Per lo sviluppo in C++, l'URI dell'attività viene specificato usando la [**proprietà IRegistrationInfo::URI.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_uri)
+Per lo sviluppo C++, l'URI dell'attività viene specificato usando la [**proprietà IRegistrationInfo::URI.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_uri)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Per lo sviluppo in C++, l'URI dell'attività viene specificato usando la [**prop
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ Per lo sviluppo in C++, l'URI dell'attività viene specificato usando la [**prop
 
 <dl> <dt>
 
-[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

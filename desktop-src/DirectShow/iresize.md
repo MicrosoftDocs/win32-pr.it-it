@@ -1,7 +1,7 @@
 ---
-description: "L'interfaccia IResize deve essere supportata da qualsiasi filtro di ridimensionamento video personalizzato per i servizi di modifica DirectShow (DES). Per impostare un filtro Resizer personalizzato, chiamare il metodo IRenderEngine2:: SetResizerGUID sul motore di rendering."
+description: L'interfaccia IResize deve essere supportata da qualsiasi filtro di ridimensionamento video personalizzato per DirectShow Editing Services (DES). Per impostare un filtro di ridimensionamento personalizzato, chiamare il metodo IRenderEngine2::SetResizerGUID nel motore di rendering.
 ms.assetid: 4740dbff-0881-45e8-b382-98ed9d055403
-title: Interfaccia IResize (qedit. h)
+title: Interfaccia IResize (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,41 +14,41 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1b9684ed6f2d2901159dde5a79bb4563ca0b2bda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 19aabd7c04cb5350ef3da87e1a20db6b75f6546f0fbcf5af3422c152bcafcf5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818070"
 ---
 # <a name="iresize-interface"></a>Interfaccia IResize
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `IResize` interfaccia deve essere supportata da qualsiasi filtro di ridimensionamento video personalizzato per i servizi di modifica DirectShow (des). Per impostare un filtro Resizer personalizzato, chiamare il metodo [**IRenderEngine2:: SetResizerGUID**](irenderengine2-setresizerguid.md) sul motore di rendering.
+`IResize`L'interfaccia deve essere supportata da qualsiasi filtro di ridimensionamento video personalizzato per DirectShow Editing Services (DES). Per impostare un filtro di ridimensionamento personalizzato, chiamare il metodo [**IRenderEngine2::SetResizerGUID**](irenderengine2-setresizerguid.md) nel motore di rendering.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IResize** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IResize** dispone anche di questi tipi di membri:
+**L'interfaccia IResize** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IResize** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IResize** dispone di questi metodi.
+**L'interfaccia IResize** include questi metodi.
 
 
 
 | Metodo                                          | Descrizione                                                  |
 |:------------------------------------------------|:-------------------------------------------------------------|
-| [**ottenere \_ InputSize**](iresize-get-inputsize.md) | Restituisce le dimensioni di input correnti del filtro Resizer.<br/>  |
-| [**ottenere \_ mediaType**](iresize-get-mediatype.md) | Restituisce il tipo di supporto di output del filtro di ridimensionamento.<br/>   |
-| [**Ottieni \_ dimensioni**](iresize-get-size.md)           | Restituisce le dimensioni di output e la modalità di estensione correnti.<br/> |
-| [**Inserisci \_ mediaType**](iresize-put-mediatype.md) | Imposta il tipo di supporto di output.<br/>                       |
-| [**\_dimensioni put**](iresize-put-size.md)           | Imposta le dimensioni di output e la modalità di estensione.<br/>            |
+| [**get \_ InputSize**](iresize-get-inputsize.md) | Restituisce le dimensioni di input correnti del filtro di ridimensionamento.<br/>  |
+| [**get \_ MediaType**](iresize-get-mediatype.md) | Restituisce il tipo di supporto di output del filtro di ridimensionamento.<br/>   |
+| [**get \_ Size**](iresize-get-size.md)           | Restituisce le dimensioni di output correnti e la modalità stretch.<br/> |
+| [**put \_ MediaType**](iresize-put-mediatype.md) | Imposta il tipo di supporto di output.<br/>                       |
+| [**Put \_ Size**](iresize-put-size.md)           | Imposta le dimensioni di output e la modalità stretch.<br/>            |
 
 
 
@@ -57,12 +57,12 @@ L'interfaccia **IResize** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -72,9 +72,9 @@ L'interfaccia **IResize** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ L'interfaccia **IResize** dispone di questi metodi.
 
 <dl> <dt>
 
-[Creazione di una ridisposizione video personalizzata](providing-a-custom-video-resizer.md)
+[Fornire un ridimensionatore video personalizzato](providing-a-custom-video-resizer.md)
 </dt> </dl>
 
  

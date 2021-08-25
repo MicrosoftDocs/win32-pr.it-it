@@ -1,9 +1,9 @@
 ---
-title: Funzione di tipo point2 (D2d1helper. h)
-description: Crea un punto che archivia le coordinate usando il tipo di dati specificato.
+title: Funzione di tipo Point2 (D2d1helper.h)
+description: Crea un punto che archivia le coordinate utilizzando il tipo di dati specificato.
 ms.assetid: 59a631ae-d70e-4ee2-9546-2d19da40aa9b
 keywords:
-- Point2 funzione di tipo Direct2D
+- Funzione di tipo Point2 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f614f49077ed198c5e85d17b9ee3c84a5e300670
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d925cc5676e6f0c9a8fb27a3ba2a12591ee87a5a72d5937e365fa57179e47ce1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160377"
 ---
-# <a name="point2type-function"></a>Point2 ( <Type> funzione)
+# <a name="point2type-function"></a>Funzione <Type> Point2
 
-Crea un punto che archivia le coordinate usando il tipo di dati specificato.
+Crea un punto che archivia le coordinate utilizzando il tipo di dati specificato.
 
 ``` syntax
 template<typename Type>
@@ -68,11 +68,11 @@ Punto che contiene la coordinata x e la coordinata y specificate.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e aggiornamento della piattaforma per app desktop di Windows Vista \[ \| UWP\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per app desktop di Windows Server 2008 \[ \| UWP\]<br/> |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/>                                                  |
-| Intestazione<br/>                   | <dl> <dt>D2d1helper. h</dt> </dl>                                                  |
-| Libreria<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e l'aggiornamento della piattaforma per Windows app desktop di Vista \[ \| per le app UWP\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e Aggiornamento della piattaforma per app desktop Windows Server 2008 \[ \| UWP\]<br/> |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/>                                                  |
+| Intestazione<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 

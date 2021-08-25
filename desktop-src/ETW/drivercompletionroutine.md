@@ -1,5 +1,5 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di routine di driver completi. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di routine di completamento del driver. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: deb4f0b2-d73f-4ccf-b39b-6e92b32489fb
 title: Classe DriverCompletionRoutine
 ms.topic: reference
@@ -15,16 +15,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2b43862169cbe8f192f8fb9db561c2e101f377b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac1329c60f38ebfb4597b85ec251e074babd2c1fde7e58fee2423b6a11be92f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814889"
 ---
 # <a name="drivercompletionroutine-class"></a>Classe DriverCompletionRoutine
 
-Questa classe è la classe del tipo di evento per gli eventi di routine di driver completi.
+Questa classe è la classe del tipo di evento per gli eventi di routine di completamento del driver.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -42,61 +42,61 @@ class DriverCompletionRoutine : DiskIo
 
 ## <a name="members"></a>Members
 
-La classe **DriverCompletionRoutine** dispone di questi tipi di membri:
+La **classe DriverCompletionRoutine** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **DriverCompletionRoutine** dispone di queste proprietà.
+La **classe DriverCompletionRoutine** ha queste proprietà.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
-Pacchetto di richiesta IO.
+Pacchetto di richiesta I/O.
 
 </dd> <dt>
 
 **Routine**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Indirizzo della funzione di driver chiamata.
+Indirizzo della funzione driver chiamata.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per la correlazione con gli altri eventi del driver, ad esempio l'evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per correlare con gli altri eventi del driver, ad esempio [**l'evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -106,8 +106,8 @@ Identificatore che identifica in modo univoco la richiesta. Usare questo identif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

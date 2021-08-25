@@ -44,7 +44,7 @@ Se True, la proprietà indica che il Utilità di pianificazione eseguirà l'atti
 
 ## <a name="remarks"></a>Commenti
 
-Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) dello schema Utilità di pianificazione attività.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 

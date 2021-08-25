@@ -1,6 +1,6 @@
 ---
-title: Proprietà ITsSbTargetEx
-description: L'interfaccia ITsSbTargetEx espone le proprietà ITsSbTarget e le proprietà seguenti.
+title: Proprietà di ITsSbTargetEx
+description: L'interfaccia ITsSbTargetEx espone le proprietà ITsSbTarget, nonché le proprietà seguenti.
 ms.assetid: 3969499b-1032-422c-b422-242441d08dd6
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -12,13 +12,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118351032"
 ---
-# <a name="itssbtargetex-properties"></a>Proprietà ITsSbTargetEx
+# <a name="itssbtargetex-properties"></a>Proprietà di ITsSbTargetEx
 
-[**L'interfaccia ITsSbTargetEx**](/windows/desktop/TermServ/itssbtargetex) espone le proprietà [ITsSbTarget](itssbtarget-properties.md) e le proprietà seguenti.
+[**L'interfaccia ITsSbTargetEx**](/windows/desktop/TermServ/itssbtargetex) espone le proprietà [ITsSbTarget,](itssbtarget-properties.md) nonché le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà TargetLoad**](/previous-versions/windows/desktop/legacy/mt703468(v=vs.85))
+-   [**TargetLoad - proprietà**](/previous-versions/windows/desktop/legacy/mt703468(v=vs.85))
 
  
 

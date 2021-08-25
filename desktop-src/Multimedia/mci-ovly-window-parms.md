@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_OVLY_WINDOW_PARMS (Mciapi. h)
-description: La \_ struttura parametri della finestra OVLY di MCI \_ \_ contiene informazioni sulla visualizzazione della finestra per il \_ comando della finestra MCI per i dispositivi con sovrimpressione video.
+title: MCI_OVLY_WINDOW_PARMS struttura (Mciapi.h)
+description: La struttura MCI OVLY WINDOW PARMS contiene informazioni di visualizzazione della finestra per il \_ \_ comando FINESTRA \_ MCI per i dispositivi con \_ sovrapposizione video.
 ms.assetid: 1189f31e-6e54-4279-a23d-b4e21c6cd276
 keywords:
-- Struttura MCI_OVLY_WINDOW_PARMS di Windows Multimedia
+- MCI_OVLY_WINDOW_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a554c9ed4e4869eab333b93736a0400ef93053cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd19580dacdc819f35bc36ed8f0070a5fc1b9fc4b745c78711c4fc312611e3c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138285"
 ---
-# <a name="mci_ovly_window_parms-structure"></a>\_ \_ Struttura parametri della finestra OVLY MCI \_
+# <a name="mci_ovly_window_parms-structure"></a>Struttura PARMS FINESTRA MCI \_ OVLY \_ \_
 
-La **struttura \_ \_ \_ parametri della finestra OVLY di MCI** contiene informazioni sulla visualizzazione della finestra per il comando della [**\_ finestra MCI**](mci-window.md) per i dispositivi con sovrimpressione video.
+La **struttura MCI \_ OVLY \_ WINDOW \_ PARMS** contiene informazioni di visualizzazione della finestra per il [**comando FINESTRA MCI \_**](mci-window.md) per i dispositivi con sovrapposizione video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **hWnd**
 </dt> <dd>
 
-Handle per la finestra di visualizzazione.
+Handle per visualizzare la finestra.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Didascalia della finestra.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -91,13 +91,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_finestra MCI**](mci-window.md)
+[**FINESTRA \_ MCI**](mci-window.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

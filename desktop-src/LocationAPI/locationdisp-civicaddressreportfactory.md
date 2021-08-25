@@ -1,7 +1,7 @@
 ---
 description: Gestisce i report degli indirizzi civici.
 ms.assetid: 46c2d001-409a-4a0a-9006-1c2c9d327c13
-title: Oggetto LocationDisp. CivicAddressReportFactory
+title: Oggetto LocationDisp.CivicAddressReportFactory
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,37 +12,37 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 451bb21822d1b56e4c7a45f1587df04761b67690
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6e0efcc63d0d14934abe1f6be1444bf5b7eeaed2bfa0b0cd46efefed3f1bba6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117993023"
 ---
-# <a name="locationdispcivicaddressreportfactory-object"></a>Oggetto LocationDisp. CivicAddressReportFactory
+# <a name="locationdispcivicaddressreportfactory-object"></a>Oggetto LocationDisp.CivicAddressReportFactory
 
-\[Il modello a oggetti dell'API location è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere al percorso da un sito Web, usare invece l' [API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Gestisce i report degli indirizzi civici.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **LocationDisp. CivicAddressReportFactory** ha questi tipi di membri:
+**L'oggetto LocationDisp.CivicAddressReportFactory** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **LocationDisp. CivicAddressReportFactory** ha questi metodi.
+**L'oggetto LocationDisp.CivicAddressReportFactory** dispone di questi metodi.
 
 
 
 | Metodo                                                                                            | Descrizione                                                                                   |
 |:--------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
-| [**ListenForReports**](locationdisp-civicaddressreportfactory-listenforreports.md)               | Richiede eventi di report relativi all'indirizzo civico.<br/>                                              |
-| [**RequestPermissions**](locationdisp-civicaddressreportfactory-requestpermissions.md)           | Apre una finestra di dialogo di sistema per richiedere l'autorizzazione utente per i dispositivi abilitati per la posizione.<br/> |
-| [**StopListeningForReports**](locationdisp-civicaddressreportfactory-stoplisteningforreports.md) | Annulla le richieste di eventi del report di indirizzo civico.<br/>                                       |
+| [**ListenForReports**](locationdisp-civicaddressreportfactory-listenforreports.md)               | Richiede eventi di report di indirizzo civico.<br/>                                              |
+| [**Autorizzazioni di richiesta**](locationdisp-civicaddressreportfactory-requestpermissions.md)           | Apre una finestra di dialogo di sistema per richiedere l'autorizzazione utente per i dispositivi abilitati per la posizione.<br/> |
+| [**StopListeningForReports**](locationdisp-civicaddressreportfactory-stoplisteningforreports.md) | Annulla le richieste di eventi di report di indirizzo civico.<br/>                                       |
 
 
 
@@ -50,16 +50,16 @@ L'oggetto **LocationDisp. CivicAddressReportFactory** ha questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-Le proprietà dell'oggetto **LocationDisp. CivicAddressReportFactory** sono queste.
+**L'oggetto LocationDisp.CivicAddressReportFactory** ha queste proprietà.
 
 
 
 | Proprietà                                                                                        | Tipo di accesso           | Descrizione                                                                                                |
 |:------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------|
-| [**CivicAddressReport**](locationdisp-dispcivicaddressreport-civicaddressreport.md)<br/> | Sola lettura<br/>  | [**LocationDisp. DispCivicAddressReport**](locationdisp-dispcivicaddressreport.md)corrente.<br/> |
+| [**CivicAddressReport**](locationdisp-dispcivicaddressreport-civicaddressreport.md)<br/> | Sola lettura<br/>  | [**LocationDisp.DispCivicAddressReport corrente.**](locationdisp-dispcivicaddressreport.md)<br/> |
 | [**DesiredAccuracy**](locationdisp-civicaddressreportfactory-desiredaccuracy.md)<br/>    | Lettura/Scrittura<br/> | Impostazione di accuratezza desiderata corrente.<br/>                                                           |
-| [**ReportInterval**](locationdisp-civicaddressreportfactory-reportinterval.md)<br/>      | Lettura/Scrittura<br/> | Intervallo di eventi del rapporto di indirizzo civico corrente in millisecondi.<br/>                                |
-| [**Stato**](locationdisp-civicaddressreportfactory-status.md)<br/>                      | Sola lettura<br/>  | Stato corrente del report.<br/>                                                                      |
+| [**ReportInterval**](locationdisp-civicaddressreportfactory-reportinterval.md)<br/>      | Lettura/Scrittura<br/> | Intervallo corrente degli eventi del report degli indirizzi civici in millisecondi.<br/>                                |
+| [**Status**](locationdisp-civicaddressreportfactory-status.md)<br/>                      | Sola lettura<br/>  | Stato del report corrente.<br/>                                                                      |
 
 
 
@@ -79,7 +79,7 @@ Nell'esempio di codice seguente viene illustrato come creare questo oggetto nel 
 
 
 
-Nell'esempio di codice seguente viene illustrato come creare questo oggetto in JScript utilizzando Windows script host.
+Nell'esempio di codice seguente viene illustrato come creare questo oggetto in JScript usando Windows Host script.
 
 
 ```JScript
@@ -88,7 +88,7 @@ var civicfactory = WScript.CreateObject("LocationDisp.CivicAddressReportFactory"
 
 
 
-Nell'esempio di codice seguente viene illustrato come creare questo oggetto in VBScript utilizzando Windows script host.
+Nell'esempio di codice seguente viene illustrato come creare questo oggetto in VBScript usando Windows Script Host.
 
 
 ```VB
@@ -104,7 +104,7 @@ Set civicfactory = WScript.CreateObject("LocationDisp.CivicAddressReportFactory"
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

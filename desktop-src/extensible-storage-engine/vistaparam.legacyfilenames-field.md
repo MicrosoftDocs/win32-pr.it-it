@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo VistaParam. LegacyFileNames'
-title: Campo VistaParam. LegacyFileNames (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Campo VistaParam.LegacyFileNames'
+title: Campo VistaParam.LegacyFileNames (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LegacyFileNames field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaParam.LegacyFileNames
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam.legacyfilenames(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e61c1583e0fbeaeb289ef40b6fd1fc587c44c351
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 608330b368fc6661f039cb5a62a18aa0310c7c6da85065bf62b923a8d2c8916a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484120"
 ---
-# <a name="vistaparamlegacyfilenames-field"></a>Campo VistaParam. LegacyFileNames
+# <a name="vistaparamlegacyfilenames-field"></a>Campo VistaParam.LegacyFileNames
 
-Questo parametro fornisce la compatibilità con le versioni precedenti con le convenzioni di denominazione dei file delle versioni precedenti del motore di database.
+Questo parametro garantisce la compatibilità con le versioni precedenti delle convenzioni di denominazione dei file delle versioni precedenti del motore di database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param LegacyFileNames
 
 [Membri di VistaParam](./vistaparam-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

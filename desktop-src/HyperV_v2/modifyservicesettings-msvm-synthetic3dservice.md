@@ -60,13 +60,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Operazione non** riuscita (32768)
+**Non riuscito** (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -84,7 +84,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Sistema in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)
@@ -107,7 +107,7 @@ Questo metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

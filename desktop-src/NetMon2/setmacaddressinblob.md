@@ -1,7 +1,7 @@
 ---
 description: La funzione SetMacAddressInBlob imposta l'indirizzo MAC richiesto di un BLOB.
 ms.assetid: f44d0cec-ced7-4d2a-a58e-aeb476bfe800
-title: Funzione SetMacAddressInBlob (Netmon. h)
+title: Funzione SetMacAddressInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 2183f5635dcdb15362a86a77ae2b3c109c71dbd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ed4a0358bc0aecada66858f9814bce94252ff9d705c971be947ca5af788ab3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364059"
 ---
-# <a name="setmacaddressinblob-function"></a>SetMacAddressInBlob (funzione)
+# <a name="setmacaddressinblob-function"></a>Funzione SetMacAddressInBlob
 
-La funzione **SetMacAddressInBlob** imposta l'indirizzo Mac richiesto di un BLOB.
+La **funzione SetMacAddressInBlob** imposta l'indirizzo MAC richiesto di un BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,35 +43,35 @@ DWORD SetMacAddressInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per il BLOB da impostare.
 
 </dd> <dt>
 
-*pOwnerName* \[ in\]
+*pOwnerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del **proprietario** del BLOB da impostare.
+Puntatore al nome **del proprietario** DEL BLOB impostato.
 
 </dd> <dt>
 
-*pCategoryName* \[ in\]
+*pCategoryName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome della **categoria** BLOB da impostare.
+Puntatore al nome **della categoria** BLOB da impostare.
 
 </dd> <dt>
 
-*pTagName* \[ in\]
+*pTagName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del **tag** BLOB da impostare.
+Puntatore al nome **del tag** BLOB impostato.
 
 </dd> <dt>
 
-*pMacAddress* \[ in\]
+*pMacAddress* \[ Pollici\]
 </dt> <dd>
 
 Puntatore all'indirizzo MAC del BLOB da impostare.
@@ -80,7 +80,7 @@ Puntatore all'indirizzo MAC del BLOB da impostare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

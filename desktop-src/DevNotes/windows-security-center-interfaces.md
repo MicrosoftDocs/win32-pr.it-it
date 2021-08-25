@@ -22,7 +22,7 @@ Le interfacce seguenti sono disponibili per l'uso con Sicurezza di Windows Cente
 | Argomento                                                 | Descrizione                                                                                                                      |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | [**IWscProduct**](/windows/desktop/api/Iwscapi/nn-iwscapi-iwscproduct)<br/>         | Fornisce metodi per ottenere informazioni sul prodotto per un singolo provider per interagire con Sicurezza di Windows Center.<br/> |
-| [**IWSCProductList**](/windows/desktop/api/iwscapi/nn-iwscapi-iwscproductlist)<br/> | Fornisce metodi per raccogliere informazioni sul prodotto per il tipo selezionato di provider installati nel computer.<br/>         |
+| [**IWSCProductList**](/windows/desktop/api/iwscapi/nn-iwscapi-iwscproductlist)<br/> | Fornisce metodi per raccogliere informazioni sui prodotti per il tipo selezionato di provider installati nel computer.<br/>         |
 
 
 

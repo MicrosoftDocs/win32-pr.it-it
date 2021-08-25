@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETBITMAPSIZE (COMmctrl. h)
-description: Imposta la dimensione delle immagini bitmap da aggiungere a una barra degli strumenti.
+title: TB_SETBITMAPSIZE messaggio (Commctrl.h)
+description: Imposta le dimensioni delle immagini bitmap da aggiungere a una barra degli strumenti.
 ms.assetid: 20b99cd8-6ef1-4037-92d2-c64a1003b5fe
 keywords:
-- Controlli di Windows Message TB_SETBITMAPSIZE
+- TB_SETBITMAPSIZE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d9c8a717151041fb83b7a0206acf570a6ad7f76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db2a26dacd63c00d1dd793163facce0ab4a45302e85dde11522f8844977eb0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167974"
 ---
-# <a name="tb_setbitmapsize-message"></a>TB \_ SETBITMAPSIZE messaggio
+# <a name="tb_setbitmapsize-message"></a>TB \_ SETBITMAPSIZE message
 
-Imposta la dimensione delle immagini bitmap da aggiungere a una barra degli strumenti.
+Imposta le dimensioni delle immagini bitmap da aggiungere a una barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,17 +39,17 @@ Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica la larghezza, in pixel, delle immagini bitmap. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica l'altezza, in pixel, delle immagini bitmap.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica la larghezza, in pixel, delle immagini bitmap. La [**parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica l'altezza, in pixel, delle immagini bitmap.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare le dimensioni solo prima di aggiungere bitmap alla barra degli strumenti. Se le dimensioni della bitmap non vengono impostate in modo esplicito in un'applicazione, le dimensioni predefinite sono pari a 16 per 15 pixel.
+Le dimensioni possono essere impostate solo prima di aggiungere bitmap alla barra degli strumenti. Se un'applicazione non imposta in modo esplicito le dimensioni della bitmap, le dimensioni predefinite sono 16 per 15 pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

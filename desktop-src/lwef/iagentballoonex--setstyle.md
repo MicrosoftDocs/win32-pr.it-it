@@ -1,19 +1,19 @@
 ---
-title: IAgentBalloonEx-stile
-description: IAgentBalloonEx-stile
+title: IAgentBalloonEx SetStyle
+description: IAgentBalloonEx SetStyle
 ms.assetid: 5be569b7-8a2d-437b-b5db-401af343bc78
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d942cc8adaf454a7c5f1cd299581f917560c00a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3961bf5f32aad10c662d9dc2943f32b60fad485621b5adce32e2036e6d2d4275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478541"
 ---
-# <a name="iagentballoonexsetstyle"></a>IAgentBalloonEx:: Sestyle
+# <a name="iagentballoonexsetstyle"></a>IAgentBalloonEx::SetStyle
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetStyle(
@@ -21,25 +21,25 @@ HRESULT SetStyle(
 );
 ```
 
-Recupera le impostazioni di stile del fumetto Word del carattere.
+Recupera le impostazioni di stile del fumetto della parola del carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="lStyle"></span><span id="lstyle"></span><span id="LSTYLE"></span>*lStyle*
 </dt> <dd>
 
-Impostazioni di stile per la parola Balloon, che può essere una combinazione dei valori seguenti:
+Impostazioni di stile per il fumetto della parola, che può essere una combinazione di uno dei valori seguenti:
 
 
 
 | Valore                                                                            | Descrizione                                                 |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------|
-| **const unsigned short** **Balloon \_ Style \_ BALLOONON = 0x00000001;**<br/>  | Il fumetto è supportato per l'output.                        |
-| **const unsigned short** **Balloon \_ Style \_ SIZETOTEXT = 0x0000002;**<br/> | L'altezza del fumetto è dimensionata in modo da contenere l'output di testo. |
-| Nascondi automaticamente lo stile di un **breve fumetto const senza segno** **\_ \_ = 0x00000004;**<br/>  | Il fumetto viene nascosto automaticamente.                        |
-| autopace **senza segno const unsigned short** **Balloon \_ \_ = 0x00000008;**<br/>  | L'output di testo viene gestito in base alla frequenza di output.          |
+| **const unsigned short** **BALLOON STYLE \_ \_ BALLOONON = 0x00000001;**<br/>  | Il fumetto è supportato per l'output.                        |
+| **const unsigned short** **BALLOON STYLE \_ \_ SIZETOTEXT = 0x0000002;**<br/> | L'altezza del fumetto viene ridimensionata in base all'output di testo. |
+| **const unsigned short** **BALLOON STYLE \_ \_ AUTOHIDE = 0x00000004;**<br/>  | Il fumetto viene automaticamente nascosto.                        |
+| **const unsigned short** **BALLOON STYLE \_ \_ AUTOPACE = 0x00000008;**<br/>  | L'output di testo viene paced in base alla frequenza di output.          |
 
 
 
@@ -47,23 +47,23 @@ Impostazioni di stile per la parola Balloon, che può essere una combinazione de
 
 </dd> </dl>
 
-Quando viene impostato il bit di stile **BalloonOn** , la parola Balloon viene visualizzata quando viene usato il metodo [**Speak**](speak-method.md) o [**think**](think-method.md) , a meno che l'utente non esegua l'override della relativa visualizzazione nella finestra delle proprietà di Microsoft Agent. Quando non è impostato, non viene visualizzato alcun fumetto.
+Quando il bit di stile **BalloonOn** è impostato, il fumetto viene visualizzato quando si usa il metodo [**Speak**](speak-method.md) o [**Think,**](think-method.md) a meno che l'utente non eserciti l'override della relativa visualizzazione nella finestra delle proprietà di Microsoft Agent. Se non è impostato, non viene visualizzato alcun fumetto.
 
-Quando è impostato il bit di stile **SizeToText** , la parola Balloon ridimensiona automaticamente l'altezza del fumetto alla dimensione corrente del testo specificato nel metodo [**Speak**](speak-method.md) o [**think**](think-method.md) . Quando non è impostato, l'altezza del fumetto è basata sull'impostazione della proprietà Number of Lines del fumetto. Questo bit di stile è impostato su 1 e un tentativo di utilizzare [**IAgentBalloonEx:: SetNumLines**](iagentballoonex--setnumlines.md) comporterà un errore.
+Quando il bit di stile **SizeToText** è impostato, il fumetto della parola ridimensiona automaticamente l'altezza del fumetto in base alle dimensioni correnti del testo specificato nel [**metodo Speak**](speak-method.md) o [**Think.**](think-method.md) Se non è impostata, l'altezza del fumetto si basa sull'impostazione della proprietà number of lines del fumetto. Questo bit di stile è impostato su 1 e un tentativo di usare [**IAgentBalloonEx::SetNumLines**](iagentballoonex--setnumlines.md) restituirà un errore.
 
-Quando viene impostato il bit di stile **Nascondi** automaticamente, la parola fumetto viene nascosta automaticamente dopo un breve timeout. Quando non è impostato, il fumetto viene visualizzato fino a quando [](think-method.md) non viene visualizzata una nuova chiamata, il carattere è [**nascosto oppure l'**](speak-method.md) utente fa clic o trascina il carattere.
+Quando il **bit di stile AutoHide** è impostato, il fumetto della parola si nasconde automaticamente dopo un breve timeout. Se non è impostato, il fumetto viene visualizzato fino a quando non viene visualizzata una nuova chiamata [**Speak**](speak-method.md) o [**Think,**](think-method.md) il carattere viene nascosto oppure l'utente fa clic o trascina il carattere.
 
-Quando è impostato il bit di stile **autopace** , la parola Balloon esegue il ritmo dell'output in base alla frequenza di output corrente, ad esempio una parola alla volta. Quando l'output supera le dimensioni del fumetto, viene automaticamente eseguito lo scorrimento del testo precedente. Quando non è impostato, tutto il testo incluso in un'istruzione [**Speak**](speak-method.md) o [**think**](think-method.md) viene visualizzato in una sola volta.
+Quando il bit di stile **AutoPace** è impostato, il fumetto della parola segue l'output in base alla frequenza di output corrente, ad esempio una parola alla volta. Quando l'output supera le dimensioni del fumetto, il testo precedente viene automaticamente scorrendo. Se non è impostato, tutto il testo incluso in [**un'istruzione Speak**](speak-method.md) [**o Think**](think-method.md) viene visualizzato contemporaneamente.
 
-La proprietà Style del fumetto può essere impostata anche se l'utente ha disabilitato la visualizzazione del fumetto usando la finestra delle proprietà di Microsoft Agent.
+La proprietà di stile Balloon può essere impostata anche se l'utente ha disabilitato la visualizzazione del balloon usando la finestra delle proprietà di Microsoft Agent.
 
-Questa proprietà si applica solo all'utilizzo del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
 
-Le impostazioni predefinite per questi bit di stile sono basate sulle impostazioni quando il carattere viene compilato con l'editor dei caratteri di Microsoft Agent.
+Le impostazioni predefinite per questi bit di stile si basano sulle relative impostazioni quando il carattere viene compilato con l'editor di caratteri di Microsoft Agent.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentBalloonEx:: GetStyle**](iagentballoonex--getstyle.md)
+[**IAgentBalloonEx::GetStyle**](iagentballoonex--getstyle.md)
 
 
  

@@ -91,13 +91,13 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 
 | API | Descrizione |
 |-----|-------------|
-| [DlpNotifyPrePrint](endpointdlp-dlpnotifypreprint.md)                         | Fornisce al sistema informazioni su un documento prima che venga avviata un'operazione di stampa.  |
+| [DlpNotifyPrePrint](endpointdlp-dlpnotifypreprint.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione di stampa.  |
 | [DlpNotifyPostStartPrint](endpointdlp-dlpnotifypoststartprint.md)                       | Fornisce al sistema informazioni su un documento dopo l'avvio di un'operazione di stampa.                                  |
 | [DlpNotifyPostPrint](endpointdlp-dlpnotifypostprint.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di stampa.                                  |
 
 ## <a name="endpoint-dlp-example-header"></a>Intestazione di esempio DLP dell'endpoint
 
-Poiché l'intestazione DLP dell'endpoint non è inclusa in Windows SDK, è necessario creare manualmente il file di intestazione per ottenere le firme API da usare nell'implementazione. Per praticità, viene fornito codice di esempio che è possibile copiare e incollare nell'applicazione. Oltre alle dichiarazioni di funzione, questo elenco di codice definisce anche costanti utili come le informazioni sul controllo delle versioni e i percorsi delle chiavi del Registro di sistema.
+Poiché l'intestazione DLP dell'endpoint non è inclusa in Windows SDK, è necessario creare manualmente il file di intestazione per ottenere le firme API da usare nell'implementazione. Per praticità, viene fornito codice di esempio che è possibile copiare e incollare nell'applicazione. Oltre alle dichiarazioni di funzione, questo listato di codice definisce anche costanti utili, ad esempio informazioni sul controllo delle versioni e percorsi delle chiavi del Registro di sistema.
 
 ```cpp
 //

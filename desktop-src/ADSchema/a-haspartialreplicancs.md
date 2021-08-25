@@ -1,11 +1,11 @@
 ---
-title: Con attributo-partial-replica-NCs
-description: Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distinto per tutti gli altri domini di dominio che sono stati replicati in un catalogo globale.
+title: Attributo Has-Partial-Replica-NCs
+description: Elemento di pari livello in Has-Master-NCs. Has-Partial-Replica-NCs riflette il nome distinto per tutti gli altri controller di rete di dominio che sono stati replicati in un catalogo globale.
 ms.assetid: 2501bbb3-74b5-4604-b0c0-8653fc092e1c
 ms.tgt_platform: multiple
 keywords:
-- Con lo schema AD dell'attributo-partial-replica-NCs
-- Schema AD dell'attributo hasPartialReplicaNCs
+- Has-Partial-Replica-NCs attribute AD Schema
+- HasPartialReplicaNCs attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f284df094c909b01b88a4853ed7c4a41dee9f31a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5a65e339ccf097d1699e12119a900e2ae695e8ef821469e0f6bc7660cb4304b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176788"
 ---
-# <a name="has-partial-replica-ncs-attribute"></a>Con attributo-partial-replica-NCs
+# <a name="has-partial-replica-ncs-attribute"></a>Attributo Has-Partial-Replica-NCs
 
-Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distinto per tutti gli altri domini di dominio che sono stati replicati in un catalogo globale.
+Elemento di pari livello in Has-Master-NCs. Has-Partial-Replica-NCs riflette il nome distinto per tutti gli altri controller di rete di dominio che sono stati replicati in un catalogo globale.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Has-partial-replica-NCs                 |
-| LDAP-Display-Name | hasPartialReplicaNCs                    |
+| CN                | Has-Partial-Replica-NCs                 |
+| Ldap-Display-Name | hasPartialReplicaNCs                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.15                   |
-| System-ID-GUID    | bf967981-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf967981-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Di pari livello a ha-Master-NCs. Has-partial-replica-NCs riflette il nome distin
 | ID collegamento                | 74                                       |
 | MAPI-Id                | 0x80B5                                   |
 | System-Only            | Vero                                     |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 

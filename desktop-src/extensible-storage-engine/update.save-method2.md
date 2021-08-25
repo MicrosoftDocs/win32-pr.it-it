@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo Update. Save'
-title: Metodo Update. Save
+description: Altre informazioni sul metodo Update.Save
+title: Metodo Update.Save
 TOCTitle: 'Save method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.Save
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.save(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad933c9601dc1a20932550aef363e067458ff79e
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 75927144f887ab5cd7dbfe05c6d8fbf4c690a0e29786c1834fa00f8e29fae76c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890062"
 ---
-# <a name="updatesave-method"></a>Metodo Update. Save
+# <a name="updatesave-method"></a>Metodo Update.Save
 
-Aggiornare il TableID.
+Aggiornare il tableid.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ public void Save()
 
 ## <a name="remarks"></a>Osservazioni
 
-Salva è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando la creazione di un oggetto Update e quindi chiamando JetSetColumn o JetSetColumns una o più volte per impostare lo stato del record. Infine, viene chiamato l'aggiornamento per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo tramite l'aggiornamento o e non durante JetSetColumn o JetSetColumns.
+Il salvataggio è il passaggio finale per eseguire un inserimento o un aggiornamento. L'aggiornamento viene avviato chiamando la creazione di un oggetto Update e quindi chiamando JetSetColumn o JetSetColumns una o più volte per impostare lo stato del record. Infine, viene chiamato Update per completare l'operazione di aggiornamento. Gli indici vengono aggiornati solo da Update o non durante JetSetColumn o JetSetColumns.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -61,6 +61,6 @@ Salva è il passaggio finale per eseguire un inserimento o un aggiornamento. L'a
 
 [Aggiornare i membri](./update-members.md)
 
-[Salva overload](./update.save-method.md)
+[Salvare l'overload](./update.save-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

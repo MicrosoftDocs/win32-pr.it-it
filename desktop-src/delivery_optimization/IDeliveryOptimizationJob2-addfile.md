@@ -47,7 +47,7 @@ HRESULT AddFile(
 *fileId* \[ Pollici\]
 </dt> <dd>
 
-Stringa ID file, che identifica in modo univoco il file da scaricare.
+Stringa id file che identifica in modo univoco il file da scaricare.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Numero di elementi contenuti negli *intervalli*. Un valore zero indica che non v
 *intervalli* \[ Pollici\]
 </dt> <dd>
 
-Elenco di intervalli facoltativo. Ogni intervallo nell'elenco è una [**BG_FILE_RANGE**](bg-file-range.md) struttura.
+Elenco di intervalli facoltativo. Ogni intervallo nell'elenco è una [**BG_FILE_RANGE**](bg-file-range.md) struttura .
 
 </dd> <dt>
 

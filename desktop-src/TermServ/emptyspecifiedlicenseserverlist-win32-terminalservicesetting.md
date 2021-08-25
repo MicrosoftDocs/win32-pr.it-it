@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Metodo EmptySpecifiedLicenseServerList Servizi Desktop remoto
 - Metodo EmptySpecifiedLicenseServerList Servizi Desktop remoto , Win32_TerminalServiceSetting classe
-- Win32_TerminalServiceSetting classe Servizi Desktop remoto, metodo EmptySpecifiedLicenseServerList
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto metodo EmptySpecifiedLicenseServerList
 topic_type:
 - apiref
 api_name:

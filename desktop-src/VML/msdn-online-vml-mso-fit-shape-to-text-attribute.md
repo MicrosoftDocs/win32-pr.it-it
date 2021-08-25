@@ -13,14 +13,14 @@ ms.locfileid: "118346319"
 ---
 # <a name="vml-mso-fit-shape-to-text-attribute"></a>Attributo VML MSO-Fit-Shape-To-Text
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
-Definisce se la forma verrà estesa per adattarla al testo nella casella di testo. Proprietà di lettura/scrittura. **VgTriState**.
+Definisce se la forma verrà adattata al testo nella casella di testo. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
@@ -32,7 +32,7 @@ Definisce se la forma verrà estesa per adattarla al testo nella casella di test
 
 **Osservazioni:**
 
-Se **True,** la forma viene estesa per adattarla al testo. L'impostazione predefinita è **False**.
+Se **True,** la forma viene adattata al testo. L'impostazione predefinita è **False**.
 
 *Microsoft Office Attributo Extensions*
 

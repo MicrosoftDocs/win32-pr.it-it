@@ -45,7 +45,7 @@ La soluzione consigliata consiste nel distribuire Servizi UDDI v3.0 da BizTalk S
 A questo scopo, seguire questa procedura:
 
 1.  Configurare un nuovo sito di Servizi UDDI v3.0 in un computer già caricato con Windows Server 2008 R2. Nota: in un'installazione distribuita un sito UDDI v3.0 può essere costituito da più Windows server 2008 R2.
-2.  Usare lo strumento di migrazione dei dati UDDI per eseguire la migrazione dei dati dal database di Servizi UDDI precedente al nuovo database.
+2.  Usare lo strumento di migrazione dei dati UDDI per eseguire la migrazione dei dati dal vecchio database di Servizi UDDI al nuovo database.
 3.  Eseguire il backup del database di Servizi UDDI precedente per garantire la funzionalità di rollback.
 4.  Disinstallare il software di Servizi UDDI precedente e quindi aggiornare queste caselle a Windows Server 2008 R2.
 

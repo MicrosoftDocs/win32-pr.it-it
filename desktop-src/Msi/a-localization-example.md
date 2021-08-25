@@ -13,7 +13,7 @@ ms.locfileid: "118382241"
 ---
 # <a name="a-localization-example"></a>Esempio di localizzazione
 
-Questo esempio illustra come localizzare il pacchetto Windows installer descritto in [An Installation Example](an-installation-example.md). Il pacchetto di installazione originale è stato modificato da inglese a versione in lingua francese.
+In questo esempio viene illustrato come localizzare il pacchetto Windows installer descritto in [An Installation Example](an-installation-example.md). Il pacchetto di installazione originale è stato modificato da inglese a versione in lingua francese.
 
 L'esempio di localizzazione presenta le specifiche seguenti:
 

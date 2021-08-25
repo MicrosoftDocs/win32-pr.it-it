@@ -1,24 +1,24 @@
 ---
 title: Proprietà EnableAutoReconnect di IMsRdpClientAdvancedSettings2
-description: Specifica se abilitare il controllo client per la riconnessione automatica a una sessione in caso di disconnessione di rete.
+description: Specifica se consentire al controllo client di riconnettersi automaticamente a una sessione in caso di disconnessione dalla rete.
 ms.assetid: 9d820f78-bf7f-479a-ae6f-be0f0abe549c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà EnableAutoReconnect
-- Servizi Desktop remoto proprietà EnableAutoReconnect, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà EnableAutoReconnect
+- Proprietà EnableAutoReconnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà EnableAutoReconnect
 topic_type:
 - apiref
 api_name:
@@ -49,16 +49,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f8d4a1345395b5b5843872df256fe7a113094e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2786146c974860d540db041943791b3fb81c4f3687f40285f0c570eba85bcdf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352956"
 ---
-# <a name="imsrdpclientadvancedsettings2enableautoreconnect-property"></a>Proprietà IMsRdpClientAdvancedSettings2:: EnableAutoReconnect
+# <a name="imsrdpclientadvancedsettings2enableautoreconnect-property"></a>Proprietà IMsRdpClientAdvancedSettings2::EnableAutoReconnect
 
-Specifica se abilitare il controllo client per la riconnessione automatica a una sessione in caso di disconnessione di rete.
+Specifica se consentire al controllo client di riconnettersi automaticamente a una sessione in caso di disconnessione dalla rete.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -79,17 +79,17 @@ HRESULT get_EnableAutoReconnect(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare su **Variant \_ true** per abilitare la riconnessione automatica e su **Variant \_ false** per disabilitarla. Il valore predefinito è **Variant \_ true**.
+Impostare su **VARIANT \_ TRUE per** abilitare la riconnessione automatica e su VARIANT **\_ FALSE** per disabilitarla. Il valore predefinito è **VARIANT \_ TRUE.**
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata quando il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta i parametri per impostare l'origine di avvio di una macchina virtuale.
 ms.assetid: 21CD4B71-3D05-469E-89BB-DC2C65F5AB10
-title: Classe Msvm_BootSourceSettingData
+title: Msvm_BootSourceSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0403846e10df4c9bd54146eea44e8e91c06d01c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7319c8df8c8f9b98ae39ed94f620445d4cc80b32f2c7b45189ce636c1c020dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995038"
 ---
-# <a name="msvm_bootsourcesettingdata-class"></a>\_Classe MSVM BootSourceSettingData
+# <a name="msvm_bootsourcesettingdata-class"></a>Classe Msvm \_ BootSourceSettingData
 
-Rappresenta i parametri per impostare l'origine di avvio di una macchina virtuale. Questa classe deriva da [**\_ SettingData CIM**](/previous-versions//cc136911(v=vs.85)).
+Rappresenta i parametri per impostare l'origine di avvio di una macchina virtuale. Questa classe deriva da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -55,20 +55,20 @@ class Msvm_BootSourceSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ BootSourceSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ BootSourceSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ BootSourceSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ BootSourceSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **BootSourceDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,15 +81,15 @@ Descrizione dell'origine di avvio fornita dal firmware.
 **BootSourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore di enumerazione che specifica il tipo di origine di avvio.
+Valore di enumerazione che specifica il tipo dell'origine di avvio.
 
-Valori validi:
+Questi sono valori validi:
 
 <dt>
 
@@ -126,13 +126,13 @@ Valori validi:
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** ( 64 )
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
@@ -142,68 +142,68 @@ Breve descrizione testuale dell'oggetto.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere utilizzato come proprietà di indice per una ricerca o una query. Nota: non è necessario che il nome sia univoco all'interno di uno spazio dei nomi.
+Nome visualizzato per questa istanza di SettingData. Inoltre, il nome visualizzato può essere usato come proprietà di indice per una ricerca o una query. Nota: il nome non deve essere univoco all'interno di uno spazio dei nomi.
 
 </dd> <dt>
 
 **FirmwareDevicePath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso nativo usato dal firmware per descrivere il dispositivo.
+Percorso nativo utilizzato dal firmware per descrivere il dispositivo.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-All'interno dell'ambito dello spazio dei nomi di creazione di istanze, InstanceID indica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID*:*localizzato* in cui *OrgID* e *LocalId* sono separati da due punti (:) e dove *OrgID* deve includere un nome con copyright, un marchio o in altro modo univoco di proprietà dell'entità di business che crea o definisce InstanceID o che è un ID registrato assegnato all'entità di business da un'autorità globale riconosciuta. (Questo requisito è simile a *SchemaName* \_ Struttura *ClassName* dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si utilizza questo algoritmo, i primi due punti da visualizzare in InstanceID devono comparire tra *OrgID* e *localizzato*. *Localizzato* viene scelto dall'entità business e non deve essere riutilizzato per identificare elementi diversi (reali) sottostanti. Se non viene utilizzato l'algoritmo preferenziale precedente, l'entità di definizione deve garantire che il InstanceID risultante non venga riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza. Per le istanze definite da DMTF, è necessario usare l'algoritmo "preferenziale" con *OrgID* impostato su CIM.
+Nell'ambito dello spazio dei nomi di creazione dell'istanza, InstanceID identifica in modo opaco e univoco un'istanza di questa classe. Per garantire l'univocità all'interno dello spazio dei nomi, il valore di InstanceID deve essere costruito usando l'algoritmo "preferito" seguente: *OrgID:**LocalID* Dove *OrgID* e *LocalID* sono separati da due punti (:) e dove *OrgID* deve includere un nome protetto da copyright, marchio o altrimenti univoco di proprietà dell'entità aziendale che crea o definisce InstanceID o che è un ID registrato assegnato all'entità aziendale da un'autorità globale riconosciuta. Questo requisito è simile a *SchemaName* \_ *Struttura ClassName* dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, *OrgID* non deve contenere i due punti (:). Quando si usa questo algoritmo, i primi due punti da visualizzare in InstanceID devono essere compresi tra *OrgID* e *LocalID*. *LocalID* viene scelto dall'entità business e non deve essere riutilizzato per identificare diversi elementi sottostanti (reali). Se l'algoritmo preferito precedente non viene usato, l'entità di definizione deve garantire che l'InstanceID risultante non viene riutilizzato in alcun InstanceID prodotto da questo o da altri provider per lo spazio dei nomi di questa istanza. Per le istanze definite da DMTF, l'algoritmo "preferito" deve essere usato con *OrgID* impostato su CIM.
 
 </dd> <dt>
 
-**OptionalData**
+**Dati facoltativi**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **OctetString**, [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato")
+Qualificatori: **OctetString**, [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
 Dati facoltativi forniti dal firmware.
@@ -218,13 +218,13 @@ Dati facoltativi forniti dal firmware.
 **OtherLocation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Altre informazioni sulla posizione, se presenti, utilizzate dal firmware per identificare in modo univoco l'origine di avvio.
+Le altre informazioni sulla posizione, se presenti, che il firmware usa per identificare ulteriormente in modo univoco l'origine di avvio.
 
 </dd> </dl>
 
@@ -234,10 +234,10 @@ Altre informazioni sulla posizione, se presenti, utilizzate dal firmware per ide
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -246,10 +246,10 @@ Altre informazioni sulla posizione, se presenti, utilizzate dal firmware per ide
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
-[**\_SETTINGDATA CIM**](/previous-versions//cc136911(v=vs.85))
+[**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))
 </dt> </dl>
 
  

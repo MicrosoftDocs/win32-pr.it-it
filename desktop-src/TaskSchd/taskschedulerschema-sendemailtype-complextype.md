@@ -85,7 +85,7 @@ Definisce il tipo di azione usato per specificare che verrà inviato un messaggi
 | [**Allegati**](taskschedulerschema-attachments-sendemailtype-element.md)   | [**attachmentsType**](taskschedulerschema-attachmentstype-complextype.md)   | Specifica un elenco di allegati nel messaggio di posta elettronica.<br/>                                 |
 | [**Bcc**](taskschedulerschema-bcc-sendemailtype-element.md)                   | **string**                                                                   | Specifica gli indirizzi di posta elettronica utilizzati nella riga Ccn di un messaggio di posta elettronica.<br/>               |
 | [**Corpo**](taskschedulerschema-body-sendemailtype-element.md)                 | **string**                                                                   | Specifica il testo nel corpo del messaggio di posta elettronica.<br/>                                  |
-| [**Cc**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Specifica gli indirizzi di posta elettronica utilizzati nella riga Cc di un messaggio di posta elettronica.<br/>                |
+| [**Cc**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Specifica gli indirizzi di posta elettronica usati nella riga Cc di un messaggio di posta elettronica.<br/>                |
 | [**Da**](taskschedulerschema-from-sendemailtype-element.md)                 | **string**                                                                   | Specifica l'indirizzo di posta elettronica del mittente.<br/>                                            |
 | [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Specifica i campi di intestazione e i relativi valori utilizzati nell'intestazione del messaggio di posta elettronica.<br/> |
 | [**ReplyTo**](taskschedulerschema-replyto-sendemailtype-element.md)           | **string**                                                                   | Specifica gli indirizzi di posta elettronica a cui viene inviata una risposta nel messaggio di posta elettronica.<br/>               |
@@ -101,8 +101,8 @@ Definisce il tipo di azione usato per specificare che verrà inviato un messaggi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

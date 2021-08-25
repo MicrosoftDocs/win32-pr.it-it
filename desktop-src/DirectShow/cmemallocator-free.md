@@ -1,7 +1,7 @@
 ---
-description: Il metodo free viene chiamato durante un'operazione di decommit.
+description: Il metodo Free viene chiamato durante un'operazione di decommit.
 ms.assetid: 71a84730-ca71-4418-bf76-52fd42fc7a5a
-title: Metodo CMemAllocator. Free (Amfilter. h)
+title: Metodo CMemAllocator.Free (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b707bb5b2a35466c47d05690a0f57f278d784542
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c2ffea6fdd60e4053f6c00ee1c87ca9596560909864c861d46b5728dad13a49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155993"
 ---
-# <a name="cmemallocatorfree-method"></a>CMemAllocator. free, metodo
+# <a name="cmemallocatorfree-method"></a>Metodo CMemAllocator.Free
 
-Il `Free` metodo viene chiamato durante un'operazione di decommit. Questo metodo implementa il metodo [**CBaseAllocator:: Free**](cbaseallocator-free.md) virtuale pure, ma non esegue alcuna operazione. La memoria del buffer non viene effettivamente rilasciata finché l'oggetto **CMemAllocator** non viene eliminato definitivamente. Il metodo del distruttore chiama [**CMemAllocator:: ReallyFree**](cmemallocator-reallyfree.md) per rilasciare la memoria.
+Il `Free` metodo viene chiamato durante un'operazione di decommit. Questo metodo implementa il metodo [**CBaseAllocator::Free**](cbaseallocator-free.md) virtuale puro, ma non esegue alcuna operazione. La memoria del buffer non viene effettivamente rilasciata fino a **quando l'oggetto CMemAllocator** non viene eliminato. Il metodo del distruttore chiama [**CMemAllocator::ReallyFree**](cmemallocator-reallyfree.md) per rilasciare la memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

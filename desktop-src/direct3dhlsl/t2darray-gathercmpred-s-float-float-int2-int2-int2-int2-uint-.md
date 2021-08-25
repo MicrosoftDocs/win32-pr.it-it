@@ -55,7 +55,7 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*Località* \[ Pollici\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**

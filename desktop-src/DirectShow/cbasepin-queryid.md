@@ -1,7 +1,7 @@
 ---
-description: "Il metodo QueryId recupera l'identificatore del PIN. Questo metodo implementa il metodo IPin:: QueryId."
+description: Il metodo QueryId recupera l'identificatore pin. Questo metodo implementa il metodo IPin::QueryId.
 ms.assetid: b365a574-61b4-454c-b062-8826cbe10f03
-title: Metodo CBasePin. QueryId (Amfilter. h)
+title: Metodo CBasePin.QueryId (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fa14fb933c89da0b0b6d2eebfab480b5508a3666
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ac4f7448b27e1780e2d44a512693f3a59113055d66f1b46a85038f04f87f045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158143"
 ---
-# <a name="cbasepinqueryid-method"></a>CBasePin. QueryId, metodo
+# <a name="cbasepinqueryid-method"></a>Metodo CBasePin.QueryId
 
-Il `QueryId` metodo recupera l'identificatore del PIN. Questo metodo implementa il metodo [**Ipin:: QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) .
+Il `QueryId` metodo recupera l'identificatore pin. Questo metodo implementa il [**metodo IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Puntatore all'identificatore del PIN.
+Puntatore all'identificatore pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                           |
 |-----------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>       |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Argomento puntatore **null** .<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>       |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Argomento del puntatore **NULL.**<br/> |
 
 
 
@@ -67,7 +67,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce una copia della variabile membro [**CBasePin:: m \_ pname**](cbasepin-m-pname.md) .
+Questo metodo restituisce una copia della variabile [**membro CBasePin::m \_ pName.**](cbasepin-m-pname.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questo metodo restituisce una copia della variabile membro [**CBasePin:: m \_ pn
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -30,21 +30,21 @@ Imposta la [**proprietà Voice**](voice-property.md) per un [**oggetto Command.*
 <span id="bszVoice"></span><span id="bszvoice"></span><span id="BSZVOICE"></span>*bszVoice*
 </dt> <dd>
 
-Oggetto BSTR che specifica il testo per la [**proprietà Voice**](voice-property.md) di un [**oggetto Command**](/windows/desktop/lwef/the-command-object).
+Oggetto BSTR che specifica il testo per la [**proprietà Voice**](voice-property.md) di un [**oggetto Command.**](/windows/desktop/lwef/the-command-object)
 
 </dd> </dl>
 
-Un [**oggetto Command**](/windows/desktop/lwef/the-command-object) deve avere la proprietà [**Voice**](voice-property.md) e la [**proprietà Enabled**](enabled-property.md) impostata per essere accessibile tramite voce. Deve anche avere la proprietà [**VoiceCaption**](voicecaption-property.md) impostata per essere visualizzata nella **finestra Comandi vocali**. Per la compatibilità con le versioni precedenti, se non è presente **VoiceCaption,** viene [**usata l'impostazione Didascalia.**](caption-property.md)
+Un [**oggetto Command**](/windows/desktop/lwef/the-command-object) deve avere la proprietà [**Voice**](voice-property.md) e la [**proprietà Enabled**](enabled-property.md) impostate per essere accessibile tramite voce. Deve anche avere la proprietà [**VoiceCaption**](voicecaption-property.md) impostata per essere visualizzata nella **finestra Comandi vocali**. Per compatibilità con le versioni precedenti, se non è presente **voiceCaption,** viene [**usata l'impostazione Caption.**](caption-property.md)
 
-L'espressione BSTR specificata può includere parentesi quadre ( ) per indicare parole facoltative e caratteri barra verticale ( ) per \[ \] indicare stringhe \| alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(hello there hi)" indica al motore di riconoscimento vocale di accettare \[ \] \| "hello", "hello there" o "hi" per il comando. Ricordarsi di includere gli spazi appropriati tra il testo tra parentesi o parentesi e il testo che non è tra parentesi o parentesi.
+L'espressione BSTR specificata può includere parentesi quadre ( ) per indicare parole facoltative e caratteri barra verticali ( ) per \[ \] indicare stringhe \| alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(hello there hi)" indica al motore di riconoscimento vocale di accettare \[ \] \| "hello", "hello there" o "hi" per il comando. Ricordarsi di includere spazi appropriati tra il testo racchiuso tra parentesi quadre o tra parentesi e il testo non racchiuso tra parentesi quadre o tra parentesi.
 
-È possibile usare l'operatore star ( ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una \* o più istanze. Ad esempio, i risultati seguenti in una grammatica che supporta "prova questo", "prova questo" e "prova questo", con iterazioni illimitate di "please":
+È possibile usare l'operatore star ( ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una o \* più istanze. Ad esempio, il risultato seguente è una grammatica che supporta "try this", "please try this" e "please please try this", con iterazioni illimitate di "please":
 
 ``` syntax
    "please* try this"
 ```
 
-Il formato grammaticale seguente esclude "try this" perché l'operatore + definisce almeno un'istanza di "please":
+Il formato di grammatica seguente esclude "try this" perché l'operatore + definisce almeno un'istanza di "please":
 
 ``` syntax
    "please+ try this"
@@ -56,13 +56,13 @@ Gli operatori di ripetizione seguono le normali regole di precedenza e si applic
    "New York+"
 ```
 
-Pertanto, è in genere necessario usare questi operatori con i caratteri di raggruppamento. Ad esempio, la grammatica seguente include sia "New York" che "New York New York":
+Pertanto, è in genere necessario utilizzare questi operatori con i caratteri di raggruppamento. Ad esempio, la grammatica seguente include sia "New York" che "New York New York":
 
 ``` syntax
    "(New York)+"
 ```
 
-Gli operatori di ripetizione sono utili quando si vuole comporre una grammatica che include una sequenza ripetuta, ad esempio un numero di telefono o una specifica di un elenco di elementi:
+Gli operatori di ripetizione sono utili quando si vuole comporre una grammatica che include una sequenza ripetuta, ad esempio un numero di telefono o la specifica di un elenco di elementi:
 
 ``` syntax
    "call (one|two|three|four|five|six|seven|eight|nine|zero|oh)*"
@@ -71,14 +71,14 @@ Gli operatori di ripetizione sono utili quando si vuole comporre una grammatica 
 
 Anche se gli operatori possono essere usati anche con le parentesi quadre (un carattere di raggruppamento facoltativo), questa operazione può ridurre l'efficienza dell'elaborazione della grammatica da parte di Agent.
 
-È anche possibile usare i puntini di sospensione (...) per supportare l'avvistamento di parole, ovvero  indicando al motore di riconoscimento vocale di ignorare le parole pronunciate in questa posizione nella frase (talvolta dette parole non usate). Di conseguenza, il motore di riconoscimento vocale riconosce solo parole specifiche nella stringa, indipendentemente da quando vengono pronunciate con parole o frasi adiacenti. Ad esempio, se si imposta questa proprietà su " \[ ... \] check mail ... " il motore di riconoscimento vocale corrisponderà a frasi come \[ \] "controlla posta" o "controlla la posta per favore" a questo comando. I puntini di sospensione possono essere usati ovunque all'interno di una stringa. Tuttavia, prestare attenzione a usare questa tecnica, perché le impostazioni vocali con puntini di sospensione possono aumentare il potenziale di corrispondenze indesiderate.
+È anche possibile usare i puntini di sospensione (...) per supportare l'individuazione delle parole, ovvero indicando al motore di riconoscimento vocale di ignorare le parole pronunciate in questa posizione nella frase (talvolta dette parole non errate).  Pertanto, il motore di riconoscimento vocale riconosce solo parole specifiche nella stringa, indipendentemente dal fatto che si parla con parole o frasi adiacenti. Ad esempio, se si imposta questa proprietà su " \[ ... \] check mail ... " il motore di riconoscimento vocale corrisponderà a frasi come \[ \] "please check mail" o "check mail please" a questo comando. I puntini di sospensione possono essere usati in qualsiasi punto all'interno di una stringa. Tuttavia, prestare attenzione a usare questa tecnica, perché le impostazioni vocali con puntini di sospensione possono aumentare il rischio di corrispondenze indesiderate.
 
-Quando si definiscono le parole e la grammatica per il comando, assicurarsi sempre di includere almeno una parola necessaria. in altre parole, evitare di specificare solo parole facoltative. Assicurarsi inoltre che la parola includa solo parole e lettere pronunciabili. Per i numeri, è meglio scrivere la parola anziché usare la rappresentazione numerica. Omettere anche eventuali segni di punteggiatura o simboli. Ad esempio, anziché "la \# pizza da 1$10!", usare "la pizza numero 10 dollari". Se si includono caratteri o simboli non pronunciabili per un comando, il motore di riconoscimento vocale potrebbe non compilare la grammatica per tutti i comandi. Infine, rendere il parametro voce il più possibile distinto dagli altri comandi vocali definiti. Maggiore è la somiglianza tra la grammatica vocale per i comandi, maggiore è la probabilità che il motore di riconoscimento vocale restituirà un errore di riconoscimento. È anche possibile usare i punteggi di attendibilità per distinguere meglio tra due comandi che possono avere grammatica vocale simile o simile.
+Quando si definiscono le parole e la grammatica per il comando, assicurarsi sempre di includere almeno una parola necessaria. in altre parole, evitare di specificare solo parole facoltative. Assicurarsi inoltre che la parola includa solo parole e lettere pronunciabili. Per i numeri, è meglio scrivere la parola anziché usare la rappresentazione numerica. Omettere anche eventuali segni di punteggiatura o simboli. Ad esempio, invece di \# "1 pizza da 10 dollari!", usare "the number one ten dollar pizza". L'inclusione di caratteri o simboli non pronunciabili per un comando può causare la mancata compilazione della grammatica da parte del motore di riconoscimento vocale per tutti i comandi. Infine, rendere il parametro voce il più possibile distinto dagli altri comandi vocali definiti. Maggiore è la somiglianza tra la grammatica vocale per i comandi, maggiore è la probabilità che il motore di riconoscimento vocale restituirà un errore di riconoscimento. È anche possibile usare i punteggi di attendibilità per distinguere meglio tra due comandi che possono avere una grammatica vocale simile o simile.
 
-L'impostazione [**della proprietà Voice**](voice-property.md) per un [**comando**](/windows/desktop/lwef/the-command-object) abilita automaticamente i servizi voce di Agent, rendendo disponibili la chiave di ascolto e la mancia di ascolto. Tuttavia, non carica il motore di riconoscimento vocale.
+L'impostazione [**della proprietà Voice**](voice-property.md) per un comando [**abilita**](/windows/desktop/lwef/the-command-object) automaticamente i servizi voce di Agent, rendendo disponibili la chiave di ascolto e la descrizione di ascolto. Tuttavia, non carica il motore di riconoscimento vocale.
 
 > [!Note]  
-> Le funzionalità grammaticali disponibili possono dipendere dal motore di riconoscimento vocale. È possibile rivolgersi al fornitore del motore per determinare le opzioni grammaticali supportate. Usare [**IAgentCharacterEx::SRModeID**](https://www.bing.com/search?q=**IAgentCharacterEx::SRModeID**) per specificare un motore.
+> Le funzionalità di grammatica disponibili possono dipendere dal motore di riconoscimento vocale. È possibile rivolgersi al fornitore del motore per determinare quali opzioni di grammatica sono supportate. Usare [**IAgentCharacterEx::SRModeID**](https://www.bing.com/search?q=**IAgentCharacterEx::SRModeID**) per specificare un motore.
 
  
 
