@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Peek-computer-Journal esteso a destra
-description: Consente la visualizzazione dei messaggi nella coda journal del computer.
+title: Diritto esteso msmq-Peek-computer-Journal
+description: Consente di visualizzare in anteprima i messaggi nella coda del journal del computer.
 ms.assetid: 76b5eeb2-01a9-45c1-aa8c-4092a7bf8d05
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Peek-computer-schema AD a destra esteso Journal
+- msmq-Peek-computer-Journal extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b24787d48a3bf6d3ee8cbebdd369a2f2d530e8e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 013b2752d3da12282527e90d9a211ab36651f05930d8470e1aaff1dfe3f8b946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922201"
 ---
-# <a name="msmq-peek-computer-journal-extended-right"></a>MSMQ-Peek-computer-Journal esteso a destra
+# <a name="msmq-peek-computer-journal-extended-right"></a>Diritto esteso msmq-Peek-computer-Journal
 
-Consente la visualizzazione dei messaggi nella coda journal del computer.
+Consente di visualizzare in anteprima i messaggi nella coda del journal del computer.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | MSMQ-Peek-computer-Journal           |
+| CN           | msmq-Peek-computer-Journal           |
 | Display-Name | Visualizza journal computer                |
 | Rights-GUID  | 4b6e08c3-df3c-11d1-9c86-006008764d0e |
 
@@ -50,7 +50,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -61,7 +61,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -72,7 +72,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -83,7 +83,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -94,7 +94,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 
@@ -105,7 +105,7 @@ Consente la visualizzazione dei messaggi nella coda journal del computer.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 41                                                           |
+| Localization-Display-ID | 41                                                           |
 
 
 

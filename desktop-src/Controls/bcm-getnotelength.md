@@ -1,9 +1,9 @@
 ---
-title: Messaggio BCM_GETNOTELENGTH (COMmctrl. h)
-description: Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento al comando. Inviare questo messaggio in modo esplicito o tramite il pulsante \_ GetNoteLength macro.
+title: BCM_GETNOTELENGTH messaggio (Commctrl.h)
+description: Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento di comando. Inviare questo messaggio in modo esplicito o usando la \_ macro Button GetNoteLength.
 ms.assetid: 62385485-b553-47e9-9f15-696cc4694752
 keywords:
-- Controlli di Windows Message BCM_GETNOTELENGTH
+- BCM_GETNOTELENGTH di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b33c5245778481033bd97326c3d66a40bf03210
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 385cb5d7694818a0e0e03ab74bcc31b76d13f5d304c7415b1f70a0fd43e1b31b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921661"
 ---
-# <a name="bcm_getnotelength-message"></a>\_Messaggio GETNOTELENGTH BCM
+# <a name="bcm_getnotelength-message"></a>BCM \_ GETNOTELENGTH message
 
-Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento al comando. Inviare questo messaggio in modo esplicito o tramite il [**pulsante \_ GetNoteLength**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnotelength) macro.
+Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento di comando. Inviare questo messaggio in modo esplicito o usando la macro [**\_ Button GetNoteLength.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnotelength)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,13 +45,13 @@ Deve essere zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la lunghezza del testo della nota in **WCHAR**, escluso il **valore null** di terminazione, o zero se non è presente alcun testo di nota.
+Restituisce la lunghezza del testo della nota nei **WCHAR,** senza alcun carattere **NULL** di terminazione o zero se non è presente alcun testo della nota.
 
 ## <a name="remarks"></a>Commenti
 
-A partire dalla versione 6,01 di comctl32, i pulsanti di collegamento al comando possono avere una nota. Per informazioni sulle versioni di DLL, vedere [versioni di controllo comuni](common-control-versions.md).
+A partire da comctl32 DLL versione 6.01, i pulsanti di collegamento ai comandi possono avere una nota. Per informazioni sulle versioni dll, vedere [Versioni dei controlli comuni.](common-control-versions.md)
 
-Il messaggio **BCM \_ GETNOTELENGTH** funziona solo con gli stili dei pulsanti [**BS \_ COMMANDLINK**](button-styles.md) e [**BS \_ DEFCOMMANDLINK**](button-styles.md) .
+Il **messaggio BCM \_ GETNOTELENGTH** funziona solo con gli stili dei pulsanti [**BS \_ COMMANDLINK**](button-styles.md) e [**BS \_ DEFCOMMANDLINK.**](button-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Il messaggio **BCM \_ GETNOTELENGTH** funziona solo con gli stili dei pulsanti [
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

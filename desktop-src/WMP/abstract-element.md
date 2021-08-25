@@ -1,9 +1,9 @@
 ---
-title: ABSTRACT (elemento)
-description: L'elemento astratto contiene testo che descrive l'elemento ASX, BANNER o ENTRY associato.
+title: Elemento ABSTRACT
+description: L'elemento ABSTRACT contiene testo che descrive l'elemento ASX, BANNER o ENTRY associato.
 ms.assetid: 7866fee8-1778-433a-be2f-9df0baa1c13e
 keywords:
-- Media Player di Windows elemento astratto
+- Elemento ABSTRACT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e90b6f52b697242be23303ab3597dac549a6177
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 153759dbe4bef47693cba13549b58215e4992686eab81cdcb4dadb33aa30279f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903051"
 ---
-# <a name="abstract-element"></a>ABSTRACT (elemento)
+# <a name="abstract-element"></a>Elemento ABSTRACT
 
-L'elemento **astratto** contiene testo che descrive l'elemento **ASX**, **banner** o **entry** associato.
+**L'elemento ABSTRACT** contiene testo che descrive l'elemento **ASX,** **BANNER** o **ENTRY** associato.
 
 ``` syntax
 <ABSTRACT>
@@ -41,7 +41,7 @@ Questo elemento non ha attributi.
 
 | Gerarchia | Elementi                       |
 |-----------|--------------------------------|
-| Padre    | **ASX**, **voce**, **banner** |
+| Padre    | **ASX,** **ENTRY,** **BANNER** |
 | Figlio     | nessuno                           |
 
 
@@ -50,13 +50,13 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Osservazioni
 
-Se questo elemento viene visualizzato all'interno di un elemento **ASX** , il testo viene visualizzato come descrizione comando quando il mouse viene posizionato sul titolo della visualizzazione.
+Se questo elemento viene visualizzato all'interno di un elemento **ASX,** il testo viene visualizzato come descrizione comando quando il puntatore del mouse viene posizionato sul titolo della presentazione.
 
-Se questo elemento viene visualizzato all'interno di un elemento **entry** , il testo viene visualizzato come descrizione comando quando il mouse viene posizionato sul titolo della clip.
+Se questo elemento viene visualizzato all'interno di un **elemento ENTRY,** il testo viene visualizzato come descrizione comando quando il puntatore del mouse viene posizionato sul titolo del clip.
 
-Se questo elemento viene visualizzato all'interno di un elemento **banner** , il testo viene visualizzato come descrizione comando per l'icona del banner.
+Se questo elemento viene visualizzato all'interno di **un elemento BANNER,** il testo viene visualizzato come descrizione comando per l'immagine del banner.
 
-Usare un solo elemento **astratto** per ambito. Quando viene elaborato un file Metafile, viene utilizzato solo il primo elemento **astratto** nell'ambito di un altro elemento. Tutti gli elementi **astratti** successivi in tale ambito vengono ignorati.
+Usare un solo **elemento ABSTRACT** per ogni ambito. Quando viene elaborato un file metafile, viene usato solo il primo elemento **ABSTRACT** nell'ambito di un altro elemento. Tutti gli **elementi ABSTRACT** successivi nell'ambito vengono ignorati.
 
 ## <a name="examples"></a>Esempio
 
@@ -94,10 +94,10 @@ Usare un solo elemento **astratto** per ambito. Quando viene elaborato un file M
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

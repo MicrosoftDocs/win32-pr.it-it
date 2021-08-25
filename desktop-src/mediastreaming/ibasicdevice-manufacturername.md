@@ -1,11 +1,11 @@
 ---
-title: Metodo IBasicDevice Manufacturer
+title: Metodo IBasicDevice ManufacturerName
 description: Recupera il nome del produttore del dispositivo.
 ms.assetid: F04400C9-02FC-4CB5-B355-A7E84BECD098
 keywords:
-- Metodo manufacturname API di streaming multimediale
-- Manufacturname metodo API di streaming multimediale, interfaccia IBasicDevice
-- API di streaming multimediale dell'interfaccia IBasicDevice, metodo Manufacturname
+- Metodo ManufacturerName API Streaming multimediale
+- Metodo ManufacturerName API Streaming multimediale, interfaccia IBasicDevice
+- Interfaccia IBasicDevice API Streaming multimediale, metodo ManufacturerName
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 698b4b6c202ed157737b20296976a282c7f97ba3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 453e11fc547998b6dc3e39017684c30cacd205c0c17b21846925d4de472f43a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011831"
 ---
-# <a name="ibasicdevicemanufacturername-method"></a>Metodo IBasicDevice:: Manufacturname
+# <a name="ibasicdevicemanufacturername-method"></a>Metodo IBasicDevice::ManufacturerName
 
 Recupera il nome del produttore del dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT ManufacturerName(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
 Riceve un puntatore al nome del produttore del dispositivo.
@@ -50,13 +50,13 @@ Riceve un puntatore al nome del produttore del dispositivo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

@@ -1,20 +1,20 @@
 ---
-description: La \_ classe Win32 AccountUtente espone i metodi seguenti.
+description: La classe \_ UserAccount Win32 espone i metodi seguenti.
 ms.assetid: E853655D-A486-4485-9C7E-849585345C62
 ms.tgt_platform: multiple
-title: Metodi di Win32_UserAccount
+title: Win32_UserAccount metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06603427c727cc64dc1c84c1da43afa1fe156d0f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f91c9417ef2ccbeab76818b334249cefff9abeb3ce899623583329610aa4180d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922771"
 ---
-# <a name="win32_useraccount-methods"></a>\_Metodi Win32 AccountUtente
+# <a name="win32_useraccount-methods"></a>Metodi UserAccount Win32 \_
 
-La classe [**Win32 \_ AccountUtente**](win32-useraccount.md) espone i metodi seguenti.
+La [**classe \_ UserAccount Win32**](win32-useraccount.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

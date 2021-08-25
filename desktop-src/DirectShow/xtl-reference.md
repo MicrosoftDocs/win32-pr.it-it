@@ -1,24 +1,24 @@
 ---
-description: Riferimento a XTL
+description: Informazioni di riferimento su XTL
 ms.assetid: a6fa5201-aec6-467b-a9a4-ca153f35b4af
-title: Riferimento a XTL
+title: Informazioni di riferimento su XTL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a11b448c9c333c2cdb1ce504f7ca4ca74d2a1cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b8fc6b905d665180e1bae0e79844b7fbc3c81b6dbf5cbc9108e199bb05844ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048961"
 ---
-# <a name="xtl-reference"></a>Riferimento a XTL
+# <a name="xtl-reference"></a>Informazioni di riferimento su XTL
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-I servizi di modifica DirectShow supportano un formato di persistenza XML, denominato XTL. In questa sezione vengono documentati gli elementi e gli attributi di XTL.
+DirectShow Servizi di modifica supporta un formato di persistenza XML, denominato XTL. Questa sezione documenta gli elementi e gli attributi XTL.
 
 -   [Elementi XTL](xtl-elements.md)
 -   [Attributi XTL](xtl-attributes.md)

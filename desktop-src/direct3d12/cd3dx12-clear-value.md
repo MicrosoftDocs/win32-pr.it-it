@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_CLEAR_VALUE (D3dx12. h)
-description: Struttura helper per consentire l'inizializzazione semplificata di una \_ struttura di valori non crittografati D3D12 \_ .
+title: CD3DX12_CLEAR_VALUE struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura D3D12 \_ CLEAR \_ VALUE.
 ms.assetid: C3E2FAF4-79C4-49CA-B7D3-1FED69C8F7A7
 keywords:
-- Struttura CD3DX12_CLEAR_VALUE
+- CD3DX12_CLEAR_VALUE struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9dc7afc62c6e9a3e229e6f5bdc4287bf4b85a9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 785ab3c8312949bfc692fcd7c8d1dace28734ce08e5763387a744eb28f2000f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988491"
 ---
-# <a name="cd3dx12_clear_value-structure"></a>\_Struttura del valore Clear di CD3DX12 \_
+# <a name="cd3dx12_clear_value-structure"></a>Struttura CD3DX12 \_ CLEAR \_ VALUE
 
-Struttura helper per consentire l'inizializzazione semplificata di una struttura di [**\_ \_ valori non crittografati D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura CLEAR \_ \_ VALUE D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,24 +45,24 @@ struct CD3DX12_CLEAR_VALUE  : public D3D12_CLEAR_VALUE{
 
 <dl> <dt>
 
-**\_Valore CD3DX12 Clear \_ ()**
+**CD3DX12 \_ CLEAR \_ VALUE()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ valore CD3DX12 Clear \_ .
+Crea una nuova istanza non inizializzata di un VALORE CLEAR CD3DX12. \_ \_
 
 </dd> <dt>
 
-**valore esplicito CD3DX12 \_ Clear \_ (const D3D12 \_ Clear \_ value &o)**
+**EXPLICIT CD3DX12 \_ CLEAR \_ VALUE(const D3D12 \_ CLEAR VALUE &\_ o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ valore CD3DX12 Clear \_ , inizializzata con il contenuto di un'altra struttura di [**\_ \_ valori non crittografati D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value) .
+Crea una nuova istanza di un VALORE CLEAR CD3DX12, inizializzato con il contenuto di \_ \_ un'altra struttura [**D3D12 \_ CLEAR \_ VALUE.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 
 </dd> <dt>
 
-**CD3DX12 \_ Clear \_ value ( \_ formato DXGI, const Float color \[ 4 \] )**
+**CD3DX12 \_ CLEAR \_ VALUE(formato DXGI, \_ const FLOAT color \[ 4 \] )**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ valore CD3DX12 Clear \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di UN VALORE CLEAR CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
 [**DXGI \_ Formato formato**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
@@ -70,10 +70,10 @@ Colore FLOAT \[ 4 \]
 
 </dd> <dt>
 
-**\_Valore CD3DX12 Clear \_ (formato DXGI \_ , profondità float, stencil Uint8)**
+**CD3DX12 \_ CLEAR \_ VALUE (formato DXGI, \_ profondità FLOAT, stencil UINT8)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ valore CD3DX12 Clear \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di UN VALORE CLEAR CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
 [**DXGI \_ Formato formato**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
@@ -83,10 +83,10 @@ Stencil UINT8
 
 </dd> <dt>
 
-**operator const D3D12 \_ Clear \_ value& () const**
+**operator const D3D12 \_ CLEAR \_ VALUE&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Valore D3D12 Clear \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
+[**VALORE DI CANCELLAZIONE D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

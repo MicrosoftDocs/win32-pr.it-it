@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETCTFOPENSTATUS (RichEdit. h)
-description: Apre o chiude la tastiera di Text Services Framework (TSF).
+title: EM_SETCTFOPENSTATUS messaggio (Richedit.h)
+description: Apre o chiude la tastiera Framework servizi di testo (TSF).
 ms.assetid: 9bdabf5a-93db-4b0e-9528-807d262de866
 keywords:
-- Controlli di Windows Message EM_SETCTFOPENSTATUS
+- EM_SETCTFOPENSTATUS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf4163a415f129dfc5d3f98aa06578d13bb462e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85ac27017abbadeb038f5b881aefe1aff394036931529c84c9c5a34a36e556c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048631"
 ---
-# <a name="em_setctfopenstatus-message"></a>\_Messaggio SETCTFOPENSTATUS em
+# <a name="em_setctfopenstatus-message"></a>Messaggio EM \_ SETCTFOPENSTATUS
 
-Apre o chiude la tastiera di Text Services Framework (TSF).
+Apre o chiude la tastiera Framework servizi di testo (TSF).
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Apre o chiude la tastiera di Text Services Framework (TSF).
 *wParam* 
 </dt> <dd>
 
-Per attivare la tastiera TSF, utilizzare **true**. Per disattivare la tastiera TSF, utilizzare **false**.
+Per attivare la tastiera TSF, usare **TRUE.** Per disattivare la tastiera TSF, usare **FALSE.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, il messaggio restituisce **true**. Se ha esito negativo, il messaggio restituisce **false**.
+Se ha esito positivo, questo messaggio restituisce **TRUE.** Se ha esito negativo, questo messaggio restituisce **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ In caso di esito positivo, il messaggio restituisce **true**. Se ha esito negati
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP1 \[\]<br/>                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con solo app desktop SP1 \[\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ In caso di esito positivo, il messaggio restituisce **true**. Se ha esito negati
 
 <dl> <dt>
 
-[**\_GETCTFOPENSTATUS em**](em-getctfopenstatus.md)
+[**EM \_ GETCTFOPENSTATUS**](em-getctfopenstatus.md)
 </dt> </dl>
 
  

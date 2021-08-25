@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 3f1317b1b8887b9ff306fcaed2cb6da2d077010f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 88e6d129e123b043c5223a5a129ceb08ce7bb497bf5798cf48920dad8f86c9c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989641"
 ---
 # <a name="d3dxvec3normalize-function-d3dx10mathh"></a>Funzione D3DXVec3Normalize (D3DX10Math.h)
 

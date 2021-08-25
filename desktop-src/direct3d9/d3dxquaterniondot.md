@@ -1,7 +1,7 @@
 ---
-description: Restituisce il prodotto scalare di due quaternioni.
+description: Restituisce il prodotto del punto di due quaternioni.
 ms.assetid: 2ed9aca9-0526-4b92-bd66-b09dcf4f474a
-title: Funzione D3DXQuaternionDot (D3dx9math. h)
+title: Funzione D3DXQuaternionDot (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e893ed9260c0d843e8454d96ab5b634741ee60d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f4e1c2759b5d8a80615fb02dc8636f848938bd480fe3feebc158abd4b70efc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986451"
 ---
-# <a name="d3dxquaterniondot-function"></a>D3DXQuaternionDot (funzione)
+# <a name="d3dxquaterniondot-function"></a>Funzione D3DXQuaternionDot
 
-Restituisce il prodotto scalare di due quaternioni.
+Restituisce il prodotto del punto di due quaternioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ FLOAT D3DXQuaternionDot(
 
 <dl> <dt>
 
-*pQ1* \[ in\]
+*pQ1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> <dt>
 
-*pQ2* \[ in\]
+*pQ2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Puntatore a una struttura [**D3DXQUATERNION**](d3dxquaternion.md) di origine.
+Puntatore a una [**struttura D3DXQUATERNION di**](d3dxquaternion.md) origine.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Prodotto scalare di due quaternioni.
+Prodotto del punto di due quaternioni.
 
 ## <a name="remarks"></a>Commenti
 
@@ -75,8 +75,8 @@ Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi in
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

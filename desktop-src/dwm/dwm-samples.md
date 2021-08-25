@@ -1,20 +1,20 @@
 ---
-title: Esempi di DWM
+title: Esempi DWM
 description: Gestione finestre desktop (DWM) è un set di interfacce introdotte in Windows Vista con alcune nuove funzionalità introdotte in Windows 7.
 ms.assetid: 43fe71e7-4e5c-46fb-876b-e26996071662
 keywords:
 - Gestione finestre desktop (DWM), esempi
-- DWM (Gestione finestre desktop), esempi
+- DWM (Gestione finestre desktop),esempi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a04bf6b56aef18f09096599745bdd805ed09a68b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8d6b13ce917c21e033f118ac8b62b8fbe03fe9f63065a220f3cccb45d3371a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022141"
 ---
-# <a name="dwm-samples"></a>Esempi di DWM
+# <a name="dwm-samples"></a>Esempi DWM
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ ms.locfileid: "103856258"
 
 | Argomento                                                                                                   | Descrizione                                                                                                   |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Personalizzare l'anteprima di un'icona e una bitmap di anteprima in tempo reale](dwm-sample-customizethumbnail.md)<br/> | Mostra come personalizzare un'anteprima iconica e una bitmap di anteprima in tempo reale (denominata anche anteprima di anteprima).<br/> |
+| [Personalizzare l'anteprima di un'icona e una bitmap di anteprima in tempo reale](dwm-sample-customizethumbnail.md)<br/> | Illustra come personalizzare un'anteprima di anteprima e una bitmap in anteprima dinamica (detta anche anteprima di anteprima).<br/> |
 
 
 

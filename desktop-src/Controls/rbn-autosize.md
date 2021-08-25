@@ -1,6 +1,6 @@
 ---
 title: RBN_AUTOSIZE codice di notifica (Commctrl.h)
-description: Inviato da un controllo rebar creato con lo stile RBS \_ AUTOSIZE quando l'oggetto rebar viene ridimensionato automaticamente. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
+description: Inviato da un controllo rebar creato con lo stile \_ RBS AUTOSIZE quando l'oggetto rebar viene ridimensionato automaticamente. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: d174fe99-13cc-404c-9dc5-d5a93e9807a2
 keywords:
 - RBN_AUTOSIZE codice di notifica Windows controlli
@@ -23,7 +23,7 @@ ms.locfileid: "119985371"
 ---
 # <a name="rbn_autosize-notification-code"></a>Codice di notifica RBN \_ AUTOSIZE
 
-Inviato da un controllo rebar creato con [**lo stile RBS \_ AUTOSIZE**](rebar-control-styles.md) quando l'oggetto rebar viene ridimensionato automaticamente. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Inviato da un controllo rebar creato con lo [**stile \_ RBS AUTOSIZE**](rebar-control-styles.md) quando l'oggetto rebar viene ridimensionato automaticamente. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++

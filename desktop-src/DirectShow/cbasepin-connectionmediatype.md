@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo ConnectionMediaType Recupera il tipo di supporto per la connessione pin corrente, se presente. Questo metodo implementa il metodo IPin:: ConnectionMediaType.'
+description: Il metodo ConnectionMediaType recupera il tipo di supporto per la connessione pin corrente, se presente. Questo metodo implementa il metodo IPin::ConnectionMediaType.
 ms.assetid: 57d100ba-4171-4caa-ab98-66a0a327a53b
-title: Metodo CBasePin. ConnectionMediaType (Amfilter. h)
+title: Metodo CBasePin.ConnectionMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62bd211b6c93e44c571d822ccc86104a5a6fdcab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cdeed52a212a659ca280163ea9513f0cb4f373ea2686bfde00078ebccb183daa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916751"
 ---
-# <a name="cbasepinconnectionmediatype-method"></a>CBasePin. ConnectionMediaType, metodo
+# <a name="cbasepinconnectionmediatype-method"></a>Metodo CBasePin.ConnectionMediaType
 
-Il metodo **ConnectionMediaType** Recupera il tipo di supporto per la connessione pin corrente, se presente. Questo metodo implementa il metodo [**Ipin:: ConnectionMediaType**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectionmediatype) .
+Il **metodo ConnectionMediaType** recupera il tipo di supporto per la connessione pin corrente, se presente. Questo metodo implementa il [**metodo IPin::ConnectionMediaType.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectionmediatype)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ HRESULT ConnectionMediaType(
 
 <dl> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) che riceve il tipo di supporto.
+Puntatore a [**una struttura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) che riceve il tipo di supporto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>             | Argomento puntatore **null** .<br/> |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il PIN non è connesso.<br/>      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                   |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>             | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin non è connesso.<br/>      |
 
 
 
@@ -67,9 +67,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Se il PIN è connesso, questo metodo copia il tipo di supporto nella struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) specificata da *PMT*. Il chiamante deve liberare il blocco di formato del tipo di supporto. È possibile usare la funzione [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) o la funzione di supporto [**FreeMediaType**](freemediatype.md) .
+Se il pin è connesso, questo metodo copia il tipo di supporto nella struttura [**AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) specificata da *pmt*. Il chiamante deve liberare il blocco di formato del tipo di supporto. È possibile usare la [**funzione CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) o la funzione helper [**FreeMediaType.**](freemediatype.md)
 
-Se il PIN non è connesso, questo metodo Azzera il blocco di memoria specificato da *PMT* e restituisce un codice di errore.
+Se il pin non è connesso, questo metodo azzera il blocco di memoria specificato da *pmt* e restituisce un codice di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,8 +77,8 @@ Se il PIN non è connesso, questo metodo Azzera il blocco di memoria specificato
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM SettingContext associa gli oggetti di configurazione a oggetti setting.
+description: La classe CIM \_ SettingContext associa gli oggetti di configurazione agli oggetti impostazione.
 ms.assetid: 8ed7e150-b4e6-4fd4-809b-32e870b559c4
 ms.tgt_platform: multiple
-title: Classe CIM_SettingContext
+title: CIM_SettingContext classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 867be99e1630f02c0163516ad7a86cf84c2fac13
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df59bff8be90d3db3ac6dfde638120779850f2691bd3e93826c57f829d034a4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919511"
 ---
-# <a name="cim_settingcontext-class"></a>CIM \_ SettingContext (classe)
+# <a name="cim_settingcontext-class"></a>Classe \_ CiM SettingContext
 
-La classe **CIM \_ SettingContext** associa gli oggetti di configurazione a oggetti setting. È ad esempio possibile che le impostazioni di una scheda di rete cambino in base al sito o alla rete a cui è collegato il relativo sistema di hosting. In tal caso, il sistema informatico avrebbe due oggetti di configurazione diversi, corrispondenti alle differenze nella configurazione di rete per i due segmenti di rete. Una configurazione aggrega un oggetto Setting per la scheda di rete quando opera su un segmento. mentre l'altra configurazione aggrega un oggetto impostazione della scheda di rete diverso, specifico di un altro segmento. Si noti che molte impostazioni computer sono indipendenti dalla configurazione di rete. Entrambe le configurazioni, ad esempio, aggregano lo stesso oggetto Setting per la risoluzione del monitoraggio del sistema del computer.
+La **classe CIM \_ SettingContext** associa gli oggetti di configurazione agli oggetti impostazione. Ad esempio, le impostazioni di una scheda di rete potrebbero cambiare in base al sito o alla rete a cui è collegato il sistema del computer host. In tal caso, il sistema computer avrebbe due oggetti di configurazione diversi, corrispondenti alle differenze nella configurazione di rete per i due segmenti di rete. Una configurazione aggrega un oggetto impostazione per la scheda di rete quando opera su un segmento; mentre l'altra configurazione aggrega un oggetto impostazione della scheda di rete diverso, specifico di un altro segmento. Si noti che molte impostazioni del computer sono indipendenti dalla configurazione di rete. Ad esempio, entrambe le configurazioni aggregano lo stesso oggetto impostazione per la risoluzione del monitor del computer.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,20 +47,20 @@ class CIM_SettingContext
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SettingContext** presenta questi tipi di membri:
+La **classe \_ CIM SettingContext** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SettingContext** dispone di queste proprietà.
+La **classe CIM \_ SettingContext** ha queste proprietà.
 
 <dl> <dt>
 
 **Contesto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ configurazione CIM**
+Tipo di dati: **Configurazione \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -76,7 +76,7 @@ Riferimento all'oggetto di configurazione che aggrega l'impostazione.
 **Impostazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ impostazione CIM**
+Tipo di dati: **Impostazione \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,7 +90,7 @@ Riferimento a un'impostazione aggregata.
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

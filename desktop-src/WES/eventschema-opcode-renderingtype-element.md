@@ -1,9 +1,9 @@
 ---
 title: Elemento Opcode (RenderingInfoType)
-description: Stringa del messaggio di cui è stato eseguito il rendering del codice operativo specificato nell'evento.
+description: Stringa di messaggio di cui è stato eseguito il rendering del codice operativo specificato nell'evento.
 ms.assetid: 5fdc94ca-edc0-4eae-8dab-d58d9172b8fc
 keywords:
-- Opcode element EventLog
+- Elemento Opcode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9ab6ed5bea91b5d05e21239d876f9efc86bbe51a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8ab181b57b91f3fbc9587833c3bd7d2e1c12b3f8c723961eae2a523573925ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904571"
 ---
 # <a name="opcode-renderinginfotype-element"></a>Elemento Opcode (RenderingInfoType)
 
-Stringa del messaggio di cui è stato eseguito il rendering del codice operativo specificato nell'evento.
+Stringa di messaggio di cui è stato eseguito il rendering del codice operativo specificato nell'evento.
 
 ``` syntax
 <xs:element name="Opcode"
@@ -30,7 +30,7 @@ Stringa del messaggio di cui è stato eseguito il rendering del codice operativo
  />
 ```
 
-L'elemento **OpCode** è definito dal tipo complesso [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+**L'elemento Opcode** è definito dal [**tipo complesso RenderingInfoType.**](eventschema-renderingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **OpCode** è definito dal tipo complesso [**RenderingInfoType**](eve
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_RSTINFO'
-title: Struttura JET_RSTINFO
+description: 'Altre informazioni su: JET_RSTINFO Structure'
+title: JET_RSTINFO struttura
 TOCTitle: JET_RSTINFO Structure
 ms:assetid: 2f144d68-dcd9-4d0d-9d9e-a7d2a5c350fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269216(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a776c84d89dfc97272c65bb0c0684faba814fdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8491b84a164ff591ce3d4a97e1e1128d8bba4f8b2e61e2b60824c501cbe4a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967841"
 ---
-# <a name="jet_rstinfo-structure"></a>Struttura JET_RSTINFO
+# <a name="jet_rstinfo-structure"></a>JET_RSTINFO struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_rstinfo-structure"></a>Struttura JET_RSTINFO
+## <a name="jet_rstinfo-structure"></a>JET_RSTINFO struttura
 
-La struttura **JET_RSTINFO** contiene informazioni di controllo per il processo di ripristino, ad esempio informazioni sulla rilocazione del database e la possibilità di controllare l'arresto del ripristino.
+La **JET_RSTINFO** contiene informazioni di controllo per il processo di ripristino, ad esempio le informazioni sulla rilocazione del database e la possibilità di controllare l'arresto del ripristino.
 
-**Windows Vista:** La struttura **JET_RSTINFO** è stata introdotta in Windows Vista.
+**Windows Vista:** La **JET_RSTINFO** struttura è stata introdotta in Windows Vista.
 
 ```cpp
     typedef struct {
@@ -48,15 +48,15 @@ La struttura **JET_RSTINFO** contiene informazioni di controllo per il processo 
 
 **cbStruct**
 
-Dimensione della struttura.
+Dimensione della struttura .
 
 **rgrstmap**
 
-Struttura che descrive il vecchio e il nuovo percorso di un database ripristinato.
+Struttura che descrive il percorso precedente e nuovo di un database ripristinato.
 
 **crstmap**
 
-Numero di voci della matrice in rgrstmap.
+Numero di voci di matrice in rgrstmap.
 
 **lgposStop**
 
@@ -88,11 +88,11 @@ Funzione di stato per la segnalazione dello stato del ripristino.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Unicode</strong></p></td>
-<td><p>Implementato come <strong>JET_RSTINFO_W</strong> (Unicode) e <strong>JET_RSTINFO_A</strong> (ANSI).</p></td>
+<td><p>Implementato come <strong>JET_RSTINFO_W</strong> (Unicode) <strong>e JET_RSTINFO_A</strong> (ANSI).</p></td>
 </tr>
 </tbody>
 </table>

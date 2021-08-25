@@ -1,11 +1,11 @@
 ---
-title: DHCP-state-attributo
-description: L'attributo di stato DHCP non è attualmente in uso.
+title: Attributo dhcp-State
+description: L'attributo dhcp-State non è attualmente utilizzato.
 ms.assetid: d82afeec-fed7-4e2e-bb45-32a4afa7a9e8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di stato DHCP
-- Schema AD dell'attributo dhcpState
+- Dhcp-State attribute AD Schema (Schema AD dell'attributo dhcp-State)
+- Attributo dhcpState Schema DI ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea51c4685f0c825fbc1a1b26eb3f22b5deefe32d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b28ec9508dd5ed8d529c1a2634879c9df3e7642e66b03b02757f61088df59c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049751"
 ---
-# <a name="dhcp-state-attribute"></a>DHCP-state-attributo
+# <a name="dhcp-state-attribute"></a>Attributo dhcp-State
 
-L'attributo **di stato DHCP** non è attualmente in uso.
+**L'attributo dhcp-State** non è attualmente utilizzato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Stato DHCP                           |
-| LDAP-Display-Name | dhcpState                            |
+| CN                | dhcp-State                           |
+| Ldap-Display-Name | dhcpState                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.717               |
-| System-ID-GUID    | 963d2752-48be-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 963d2752-48be-11d1-a9c3-0000f80367c1 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -58,15 +58,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **di stato DHCP** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 

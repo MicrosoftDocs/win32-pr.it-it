@@ -1,7 +1,7 @@
 ---
-description: Il metodo SynchronousBlockOutputPin blocca il PIN. non restituisce alcun risultato finché il PIN non viene bloccato.
+description: Il metodo SynchronousBlockOutputPin blocca il pin. non restituisce finché il pin non viene bloccato.
 ms.assetid: 10fdb788-bc72-4eda-b60b-af83f954d689
-title: Metodo CDynamicOutputPin. SynchronousBlockOutputPin (Amfilter. h)
+title: Metodo CDynamicOutputPin.SynchronousBlockOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7fff1a0a1f093b97d07c74d7916ef2a7511d0e16
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8613a27d8af2dc2b69a93a1f324db17b054cf2dd312fdb0c9d6cd63e6c89ca8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916311"
 ---
-# <a name="cdynamicoutputpinsynchronousblockoutputpin-method"></a>CDynamicOutputPin. SynchronousBlockOutputPin, metodo
+# <a name="cdynamicoutputpinsynchronousblockoutputpin-method"></a>Metodo CDynamicOutputPin.SynchronousBlockOutputPin
 
-Il `SynchronousBlockOutputPin` metodo blocca il PIN. non restituisce alcun risultato finché il PIN non viene bloccato.
+Il `SynchronousBlockOutputPin` metodo blocca il pin; non restituisce finché il pin non viene bloccato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                                    | Descrizione                                              |
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                           | Esito positivo.<br/>                                      |
-| <dl> <dt>**\_pin VFW \_ E \_ già \_ bloccato**</dt> </dl>                   | Il PIN è già bloccato in un altro thread.<br/>     |
-| <dl> <dt>**\_pin VFW \_ E \_ già \_ bloccato \_ in \_ questo \_ thread**</dt> </dl> | Il PIN è già bloccato nel thread chiamante.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                           | Operazione completata.<br/>                                      |
+| <dl> <dt>**PIN VFW \_ E \_ GIÀ \_ \_ BLOCCATO**</dt> </dl>                   | L'aggiunta è già bloccata in un altro thread.<br/>     |
+| <dl> <dt>**IL \_ PIN VFW E È GIÀ BLOCCATO IN QUESTO \_ \_ \_ \_ \_ \_ THREAD**</dt> </dl> | Il pin è già bloccato nel thread chiamante.<br/> |
 
 
 
@@ -66,8 +66,8 @@ Non chiamare questo metodo dal thread di streaming.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

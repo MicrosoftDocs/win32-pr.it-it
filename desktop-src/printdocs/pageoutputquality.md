@@ -4,12 +4,12 @@ ms.assetid: 4720f812-a71a-458f-85fa-7885cca0dbbb
 title: PageOutputQuality
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8001d8ffd6bb3ead50a27b9ea36c9849c475576f
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 59a17235061e2a00f665389be676e0f4099a1fcbf279391e350b0f0c973261c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948181"
 ---
 # <a name="pageoutputquality"></a>PageOutputQuality
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageOutputQuality">

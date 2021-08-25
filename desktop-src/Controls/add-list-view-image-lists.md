@@ -1,39 +1,39 @@
 ---
-title: Come aggiungere List-View elenchi di immagini
+title: Come aggiungere elenchi List-View immagini
 description: In questo argomento viene illustrato come aggiungere elenchi di immagini a un controllo visualizzazione elenco.
 ms.assetid: 3C282FBC-5E37-4D8E-A2C4-B2876874E9A7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2f6f5b483ea80b412ab7638c9aceafcac4c5e6
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 8875573634cd47fb5ccb271c3dabfca99daf9061469e31c1178b3e4ed938347e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104339667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922058"
 ---
-# <a name="how-to-add-list-view-image-lists"></a>Come aggiungere List-View elenchi di immagini
+# <a name="how-to-add-list-view-image-lists"></a>Come aggiungere elenchi List-View immagini
 
 In questo argomento viene illustrato come aggiungere elenchi di immagini a un controllo visualizzazione elenco.
 
-Vengono creati solo gli elenchi di immagini usati dal controllo. Se, ad esempio, l'applicazione non consente all'utente di passare alla visualizzazione icone, non è necessario creare e assegnare un elenco di icone di grandi dimensioni. Se si creano elenchi di immagini grandi e piccole, devono contenere le stesse immagini nello stesso ordine, poiché viene usato un solo valore per identificare l'icona di un elemento della visualizzazione elenco in entrambi gli elenchi di immagini.
+Si creano solo gli elenchi di immagini utilizzati dal controllo . Ad esempio, se l'applicazione non consente all'utente di passare alla visualizzazione icona, non è necessario creare e assegnare un elenco di icone di grandi dimensioni. Se si creano elenchi di immagini sia di grandi che di piccole dimensioni, questi devono contenere le stesse immagini nello stesso ordine, perché viene usato un singolo valore per identificare l'icona di un elemento di visualizzazione elenco in entrambi gli elenchi di immagini.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per visualizzare le immagini degli elementi, è necessario assegnare un elenco di immagini al controllo visualizzazione elenco. A tale scopo, usare il [**messaggio \_ LVM**](lvm-setimagelist.md) o la corrispondente macro [**ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist), che specifica se l'elenco immagini contiene icone a dimensione intera, icone piccole o immagini di stato. Per recuperare l'handle a un elenco di immagini attualmente assegnato a un controllo visualizzazione elenco, usare il messaggio [**LVM \_ getimagine**](lvm-getimagelist.md) . È possibile utilizzare la funzione [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) per determinare le dimensioni appropriate per le icone di dimensioni ridotte e di dimensioni ridotte.
+Per visualizzare le immagini degli elementi, è necessario assegnare un elenco di immagini al controllo visualizzazione elenco. A tale scopo, usare il messaggio [**LVM \_ SETIMAGELIST**](lvm-setimagelist.md) o la macro [**corrispondente ListView \_ SetImageList,**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)specificando se l'elenco di immagini contiene icone a dimensione intera, icone piccole o immagini di stato. Per recuperare l'handle a un elenco di immagini attualmente assegnato a un controllo di visualizzazione elenco, usare il messaggio [**LVM \_ GETIMAGELIST.**](lvm-getimagelist.md) È possibile usare la [**funzione GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) per determinare le dimensioni appropriate per le icone grandi e piccole.
 
-Nell'esempio di codice C++ riportato di seguito, la funzione definita dall'applicazione crea innanzitutto elenchi di immagini e li assegna a un controllo di visualizzazione elenco.
+Nell'esempio di codice C++ seguente la funzione definita dall'applicazione crea innanzitutto elenchi di immagini e quindi li assegna a un controllo visualizzazione elenco.
 
 
 ```C++
@@ -101,13 +101,13 @@ BOOL InitListViewImageLists(HWND hWndListView)
 
 <dl> <dt>
 
-[Riferimento al controllo visualizzazione elenco](bumper-list-view-list-view-control-reference.md)
+[Informazioni di riferimento sul controllo List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Informazioni sui controlli List-View](list-view-controls-overview.md)
+[Informazioni List-View controlli](list-view-controls-overview.md)
 </dt> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso di List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

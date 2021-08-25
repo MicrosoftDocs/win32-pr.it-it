@@ -3,22 +3,22 @@ title: Creazione di dispositivi di scorrimento personalizzati
 description: Creazione di dispositivi di scorrimento personalizzati
 ms.assetid: eb26ba44-a891-4cb6-be74-5acf881e896f
 keywords:
-- creazione di interfacce, dispositivi di scorrimento
-- Interfacce di Media Player Windows, dispositivi di scorrimento
-- interfacce, dispositivi di scorrimento
-- dispositivi di scorrimento nelle interfacce
+- creazione di skin, dispositivi di scorrimento
+- Windows Media Player, dispositivi di scorrimento
+- skin, dispositivi di scorrimento
+- dispositivi di scorrimento nelle skin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f205d46af003589fcc2c3b741a253ea08fae12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d85a789bbd90003b59e1a9b9dcf8fffcf4a126c38138f7a051c24125780f8c83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902331"
 ---
 # <a name="creating-custom-sliders"></a>Creazione di dispositivi di scorrimento personalizzati
 
-È possibile creare dispositivi di scorrimento personalizzati in qualsiasi forma desiderata. Per questo esempio viene scelta una semplice striscia, ma la forma effettiva può essere qualsiasi elemento. Ecco il codice per l'elemento **CUSTOMSLIDER** :
+È possibile creare dispositivi di scorrimento personalizzati in qualsiasi forma. Per questo esempio viene scelta una striscia semplice, ma la forma effettiva può essere qualsiasi elemento. Ecco il codice per **l'elemento CUSTOMSLIDER:**
 
 
 ```C++
@@ -38,11 +38,11 @@ ms.locfileid: "104515913"
 
 
 
-In questo modo viene impostato un valore iniziale per il dispositivo di scorrimento. Vengono introdotte due nuove bitmap. Una è la bitmap in scala di grigi (slider.bmp) che definisce i valori che verranno usati quando si fa clic su di esso e l'altro (slider.bmp) che determina quale immagine verrà visualizzata quando si fa clic su una particolare parte della scala di grigi.
+In questo modo viene impostato un valore iniziale per il dispositivo di scorrimento. Vengono introdotte due nuove bitmap. Una è la bitmap in scala di grigi (slider.bmp) che definisce i valori che verranno usati quando si fa clic su e l'altra (slider.bmp) che determina l'immagine da visualizzare quando si fa clic su una particolare parte della scala di grigi.
 
-Il valore iniziale viene determinato ascoltando il volume con wmpprop e quindi il volume può essere modificato quando l'utente fa clic su una parte del dispositivo di scorrimento che attiva una modifica nel valore.
+Il valore iniziale è determinato dall'ascolto del volume con wmpprop e quindi il volume può essere modificato quando l'utente fa clic su una parte del dispositivo di scorrimento che attiva una modifica nel valore.
 
-Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia del dispositivo di scorrimento funzionante simile.
+È possibile visualizzare un'interfaccia del dispositivo di scorrimento funzionante simile nella sezione di esempio dell'SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -51,9 +51,9 @@ Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia del d
 [**Guida alla creazione dell'interfaccia**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: Stack di configurazione
+description: Stacking della configurazione
 ms.assetid: 1f0f75d6-3553-4ee1-8ee6-bd617da4a109
-title: Stack di configurazione
+title: Stacking della configurazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b50b90629556b5ed00db712b49fe8fa4e48ea8cc
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 9018a2484ce4e5b9121d08abffee54911531b7f421cfef75643594e827fe350e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104566510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905563"
 ---
-# <a name="configuration-stacking"></a>Stack di configurazione
+# <a name="configuration-stacking"></a>Stacking della configurazione
 
-\[A partire da Windows 8 e Windows Server 2012, l'interfaccia com del [servizio dischi virtuali](virtual-disk-service-portal.md) viene sostituita dall' [API di gestione archiviazione di Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partire da Windows 8 e Windows Server 2012, l'interfaccia [COM](virtual-disk-service-portal.md) del servizio dischi virtuali viene sostituita dal Windows Archiviazione API Gestione [.](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal)\]
 
-Lo stacking prevede la concatenazione di un set di mapping dei blocchi logici. È possibile impilare più lun dallo stesso sottosistema in un LUN. È possibile impilare un LUN insieme ai volumi dello stesso pacchetto in un volume. Inoltre, è possibile sovrapporre più LUN esposti da sottosistemi eterogenei in un volume.
+L'impilamento comporta la concatenazione di un set di mapping di blocchi logici. È possibile eseguire lo stack di più LUN dello stesso sottosistema in un unico LUN. È possibile impilare un LUN insieme ai volumi dello stesso pacchetto in un unico volume. Inoltre, è possibile impilare più LUN che vengono evinte da sottosistemi eterogenei in un unico volume.
 
-Come illustrato nella figura seguente, la creazione di un volume non comporta la modifica dell'associazione esistente di un LUN che contribuisce. Analogamente, l'annullamento dell'associazione di un volume non associa un LUN di contributo. Nella figura è illustrata la configurazione RAID 0 1 (0 + 1). Questa configurazione ben nota combina lo striping (RAID 0) e il mirroring (RAID 1), che abbina l'accesso rapido ai dati di RAID 0 con l'affidabilità di RAID 1.
+Come illustrato nella figura seguente, la creazione di un volume non modifica l'associazione esistente di un LUN che contribuisce. Analogamente, l'annullamento dell'associazione di un volume non annulla l'associazione di un LUN che contribuisce. La figura illustra la configurazione RAID 0 1 (0+1). Questa configurazione nota combina lo striping (RAID 0) e il mirroring (RAID 1), che associa l'accesso rapido ai dati di RAID 0 con l'affidabilità di RAID 1.
 
-![Diagramma che mostra una configurazione RAID 0 1 (0 + 1).](images/vdsstacklunvolzeroplusone.png)
+![Diagramma che mostra una configurazione RAID 0 1 (0+1).](images/vdsstacklunvolzeroplusone.png)
 
-I LUN che contribuiscono possono avere tipi di binding diversi. Molte configurazioni sono possibili con VDS, ma sono molto improbabili, come la figura successiva. In questo esempio un volume Plex è un LUN con striping e l'altro è un LUN con mirroring a tre vie.
+I LUN che contribuiscono possono avere tipi di binding diversi. Molte configurazioni sono possibili con VDS, ma sono altamente improbabile, come nell'illustrazione successiva. In questo esempio, un volume plex è un LUN con striping e l'altro è un LUN con mirroring a tre modi.
 
-![Diagramma che mostra una configurazione VDS in cui un plex del volume è un LUN con striping e l'altro è un LUN con mirroring a tre vie.](images/vdsstacklunvol.png)
+![Diagramma che mostra una configurazione VDS in cui un volume plex è un LUN con striping e l'altro è un LUN con mirroring a 3 modi.](images/vdsstacklunvol.png)
 
-Sebbene non pratico, in questo esempio viene illustrato un aspetto importante dello stacking. Poiché lo stacking concatena i plex, VDS aggiunge i tre Plex di LUN ai due plex del volume per un totale di cinque Plex.
+Anche se poco pratico, questo esempio illustra un aspetto importante dell'impilamento. Poiché l'impilamento concatena i plex, VDS aggiunge i tre plex LUN ai due plex di volume per un totale di cinque plex.
 
  
 

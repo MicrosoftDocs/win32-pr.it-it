@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_UNDO (winuser. h)
-description: Questo messaggio annulla l'ultima operazione di modifica del controllo nella coda di annullamento del controllo. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_UNDO messaggio (Winuser.h)
+description: Questo messaggio annulla l'ultima operazione di controllo di modifica nella coda di annullamento del controllo. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: c4bff128-0383-40c5-8f29-7738f7f26871
 keywords:
-- Controlli di Windows Message EM_UNDO
+- EM_UNDO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c75d79e7ed25e582682830b1323c27878bbdbb3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 452d82e6d0685314a79f1f95cff487ee3f52e2d1b70925c3e6e72f9263f442e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047921"
 ---
-# <a name="em_undo-message"></a>\_Messaggio di annullamento em
+# <a name="em_undo-message"></a>Messaggio EM \_ UNDO
 
-Questo messaggio annulla l'ultima operazione di modifica del controllo nella coda di annullamento del controllo. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Questo messaggio annulla l'ultima operazione di controllo di modifica nella coda di annullamento del controllo. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,30 +32,30 @@ Questo messaggio annulla l'ultima operazione di modifica del controllo nella cod
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per un controllo di modifica a riga singola, il valore restituito è sempre **true**.
+Per un controllo di modifica a riga singola, il valore restituito è sempre **TRUE.**
 
-Per un controllo di modifica su più righe, il valore restituito è **true** se l'operazione di annullamento ha esito positivo o **false** se l'operazione di annullamento ha esito negativo.
+Per un controllo di modifica su più righe, il valore restituito è **TRUE** se l'operazione di annullamento ha esito positivo oppure **FALSE se** l'operazione di annullamento non riesce.
 
 ## <a name="remarks"></a>Commenti
 
-**Modificare i controlli e rich edit 1,0:** Un'operazione di annullamento può anche essere annullata. Ad esempio, è possibile ripristinare il testo eliminato con il primo messaggio di **\_ annullamento em** e rimuovere nuovamente il testo con un secondo messaggio di **\_ annullamento** , purché non sia presente alcuna operazione di modifica.
+**Controlli di modifica e Rich Edit 1.0:** È anche possibile annullare un'operazione di annullamento. Ad esempio, è possibile ripristinare il testo eliminato con il primo messaggio **EM \_ UNDO** e rimuovere di nuovo il testo con un secondo messaggio **EM \_ UNDO,** purché non sia presente alcuna operazione di modifica.
 
-**Rich Edit 2,0 e versioni successive:** La funzionalità di annullamento è multilivello, quindi l'invio di due messaggi di **\_ annullamento em** Annulla le ultime due operazioni nella coda di annullamento. Per ripetere un'operazione, inviare il messaggio di [**\_ ripetizione em**](em-redo.md) .
+**Rich Edit 2.0 e versioni successive:** La funzionalità di annullamento è multilivello, quindi **l'invio \_** di due messaggi EM UNDO annulla le ultime due operazioni nella coda di annullamento. Per ripetere un'operazione, inviare il [**messaggio EM \_ REDO.**](em-redo.md)
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Per un controllo di modifica su più righe, il valore restituito è **true** se 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Per un controllo di modifica su più righe, il valore restituito è **true** se 
 
 <dl> <dt>
 
-[**\_CANUNDO em**](em-canundo.md)
+[**EM \_ CANUNDO**](em-canundo.md)
 </dt> </dl>
 
  

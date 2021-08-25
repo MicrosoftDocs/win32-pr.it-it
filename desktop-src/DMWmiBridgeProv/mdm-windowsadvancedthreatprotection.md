@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_WindowsAdvancedThreatProtection
-description: La \_ classe MDM WindowsAdvancedThreatProtection viene utilizzata per caricare gli endpoint offboard per Windows Defender Advanced Threat Protection (WDATP).
+title: MDM_WindowsAdvancedThreatProtection classe
+description: La classe \_ MDM WindowsAdvancedThreatProtection viene usata per eseguire l'onboardaggio e l'offboard degli endpoint per Windows Defender Advanced Threat Protection (WDATP).
 ms.assetid: 7a95253e-6d13-4c1b-b78d-c56c6378f7c3
 keywords:
-- Classe MDM_WindowsAdvancedThreatProtection
-- Classe MDM_WindowsAdvancedThreatProtection, descritta
+- MDM_WindowsAdvancedThreatProtection classe
+- MDM_WindowsAdvancedThreatProtection classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c369406a3c8bcf982aeb18b4bbb53c1af4983e84
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f274a8802bd2c7975479ed6a3fa140807f81d1442575dfe767a4b5e57ce19c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967481"
 ---
-# <a name="mdm_windowsadvancedthreatprotection-class"></a>MDM \_ WindowsAdvancedThreatProtection (classe)
+# <a name="mdm_windowsadvancedthreatprotection-class"></a>Classe \_ Mdm WindowsAdvancedThreatProtection
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ WindowsAdvancedThreatProtection** viene utilizzata per caricare gli endpoint offboard per Windows Defender Advanced Threat Protection (WDATP).
+La **classe \_ MDM WindowsAdvancedThreatProtection** viene usata per eseguire l'onboardaggio e l'offboard degli endpoint per Windows Defender Advanced Threat Protection (WDATP).
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,20 +47,20 @@ class MDM_WindowsAdvancedThreatProtection
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ WindowsAdvancedThreatProtection** presenta questi tipi di membri:
+La **classe \_ MDM WindowsAdvancedThreatProtection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ WindowsAdvancedThreatProtection** ha queste proprietà.
+La **classe \_ MDM WindowsAdvancedThreatProtection** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -69,17 +69,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "WindowsAdvancedThreatProtection".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "WindowsAdvancedThreatProtection".
 
 </dd> <dt>
 
 [Offboarding](/windows/client-management/mdm/windowsadvancedthreatprotection-csp#offboarding)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -87,18 +87,18 @@ Tipo di accesso: lettura/scrittura
 [Onboarding](/windows/client-management/mdm/windowsadvancedthreatprotection-csp#onboarding)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -107,7 +107,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/"
 
 </dd> </dl>
 
@@ -117,11 +117,11 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
@@ -129,7 +129,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

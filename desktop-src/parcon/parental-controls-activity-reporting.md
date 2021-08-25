@@ -1,27 +1,27 @@
 ---
-description: Segnalazione attività dei controlli padre
+description: Controllo genitori Rapporto attività
 ms.assetid: 5ffac4f8-7112-4383-bf73-16e2289a3942
-title: Segnalazione attività dei controlli padre
+title: Controllo genitori Rapporto attività
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a41527e166b683e2ae7cd72129d9c9f3e032c7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a5d45a180114c2c53dbccc48836697b1a4fdab733db4f06237696d3dd50f42c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939361"
 ---
-# <a name="parental-controls-activity-reporting"></a>Segnalazione attività dei controlli padre
+# <a name="parental-controls-activity-reporting"></a>Controllo genitori Rapporto attività
 
-La creazione di report delle attività è considerata fondamentale in base ai problemi di ingegneria sociale. Le applicazioni o i filtri in grado di riconoscere le attività vengono richieste come specificato nella sezione Utilizzo delle API dei controlli padre.
+La creazione di report attività è considerata essenziale in base ai problemi di ingegneria sociale. Le applicazioni o i filtri in grado di riconoscere sono richiesti per registrare le attività come specificato nella sezione Using Parent Controls APIs (Uso delle API di controllo genitori).
 
-Facendo clic sul collegamento report attività viene visualizzata una pagina di Log Viewer che Mostra tutte le voci di log per un intervallo massimo di una settimana, delimitato in base ai limiti della dimensione del log, con i riquadri dati in formato colonna e albero categoria.
+Facendo clic sul collegamento Report attività viene visualizzata una pagina visualizzatore log che mostra tutte le voci di log per un intervallo massimo di una settimana (ulteriormente delimitato dai limiti delle dimensioni del log), con i riquadri dei dati in formato colonna e albero delle categorie.
 
-Nella casella riepilogo nella parte superiore destra del pannello controlli padre è indicato lo stato corrente per la creazione di report delle attività.
+La casella di riepilogo in alto a destra nel pannello controllo genitori indica lo stato corrente per la creazione di report sulle attività.
 
-Gli eventi di attività sono visibili anche nel Visualizzatore eventi con il nome Microsoft.com/Windows/ParentalControls nei log dell'applicazione.
+Gli eventi di attività sono visibili anche nel Visualizzatore eventi con il nome Microsoft.com/Windows/ParentControls nei log applicazioni.
 
-Questa funzionalità dipende dalle nuove funzionalità di registrazione eventi in Windows Vista, usando le API di pubblicazione fornite.
+Questa funzionalità dipende dalla nuova funzionalità di registrazione eventi in Windows Vista, usando le API di pubblicazione fornite.
 
  
 

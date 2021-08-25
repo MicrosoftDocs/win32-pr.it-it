@@ -6,40 +6,40 @@ ms.assetid: c516732e-8b2e-4809-aadf-428b2a2112f4
 keywords:
 - illuminazione
 - lines
-- luminanza
+- Luminanza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 091964e8d6a80ebad0c3c150a80c22ab71daaa12
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 73ce4625d515fc76831c5ed2c212ed99bdd092fb341fb925077ca789c80fc830
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035001"
 ---
 # <a name="l-opengl"></a>L (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [d](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [i](i.md) [J K](jk.md) L [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) [E](e.md) [F](f.md) [G](g.md) [H](h.md) [I](i.md) J [K](jk.md) L [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R S](r.md) [](s.md) [T U](t.md) [V](u-v.md) [W](w.md) X [Y Z](x-y-z.md)
 
 <dl> <dt>
 
-<span id="opengl_lighting"></span><span id="OPENGL_LIGHTING"></span>**illuminazione**
+<span id="opengl_lighting"></span><span id="OPENGL_LIGHTING"></span>**Illuminazione**
 </dt> <dd>
 
-Il processo di calcolo del colore di un vertice basato sulle luci correnti, sulle proprietà del materiale e sulle modalità di illuminazione del modello.
+Processo di calcolo del colore di un vertice in base alle luci correnti, alle proprietà dei materiali e alle modalità del modello di illuminazione.
 
 </dd> <dt>
 
-<span id="opengl_line"></span><span id="OPENGL_LINE"></span>**linea**
+<span id="opengl_line"></span><span id="OPENGL_LINE"></span>**Linea**
 </dt> <dd>
 
-Area retta di larghezza finita tra due vertici. Diversamente dalle linee matematiche, le linee OpenGL hanno una larghezza e una lunghezza finite. Ogni segmento di una striscia di linee è a sua volta una riga.
+Area retta di larghezza finita tra due vertici. A differenza delle linee matematiche, le linee OpenGL hanno larghezza e lunghezza finite. Ogni segmento di una striscia di linee è a sua volta una linea.
 
 </dd> <dt>
 
-<span id="opengl_luminance"></span><span id="OPENGL_LUMINANCE"></span>**luminanza**
+<span id="opengl_luminance"></span><span id="OPENGL_LUMINANCE"></span>**Luminanza**
 </dt> <dd>
 
-Luminosità percepita di una superficie. Spesso si riferisce a una media ponderata dei valori di colore rosso, verde e blu che fornisce la luminosità percepita della combinazione.
+Luminosità percepita di una superficie. Spesso si riferisce a una media ponderata di valori di colore rosso, verde e blu che fornisce la luminosità percepita della combinazione.
 
 </dd> </dl>
 

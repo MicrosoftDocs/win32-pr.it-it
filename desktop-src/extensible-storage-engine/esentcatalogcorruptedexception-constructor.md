@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentCatalogCorruptedException'
+description: Altre informazioni sul costruttore EsentCatalogCorruptedException
 title: Costruttore EsentCatalogCorruptedException
 TOCTitle: 'EsentCatalogCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCatalogCorruptedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b4668ca76b012168eaf1461ff6c03fda10e0d24f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd015b94cc1f3a9e4df47bbf27243d8bc9eb3512a701f386645b34667b050ef8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021181"
 ---
 # <a name="esentcatalogcorruptedexception-constructor"></a>Costruttore EsentCatalogCorruptedException
 
 Inizializza una nuova istanza della classe EsentCatalogCorruptedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentCatalogCorruptedException()
 
 [Membri di EsentCatalogCorruptedException](./esentcatalogcorruptedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

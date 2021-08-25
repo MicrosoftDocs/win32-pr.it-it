@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETTEXTROWS (COMmctrl. h)
-description: Recupera il numero massimo di righe di testo che è possibile visualizzare su un pulsante della barra degli strumenti.
+title: TB_GETTEXTROWS messaggio (Commctrl.h)
+description: Recupera il numero massimo di righe di testo che possono essere visualizzate su un pulsante della barra degli strumenti.
 ms.assetid: a7950e5f-c80a-4af2-9ccd-d8e3df5552d2
 keywords:
-- Controlli di Windows Message TB_GETTEXTROWS
+- TB_GETTEXTROWS del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69a871d1a13091b6dd70fa6d9f309735115e85ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2dc6867530eac1c178c4f6e58ab8b42740af558d32b9edfcfd1f1431b253cd9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918487"
 ---
-# <a name="tb_gettextrows-message"></a>TB \_ GETTEXTROWS messaggio
+# <a name="tb_gettextrows-message"></a>TB \_ GETTEXTROWS message
 
-Recupera il numero massimo di righe di testo che è possibile visualizzare su un pulsante della barra degli strumenti.
+Recupera il numero massimo di righe di testo che possono essere visualizzate su un pulsante della barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera il numero massimo di righe di testo che è possibile visualizzare su un
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore INT che rappresenta il numero massimo di righe di testo che il controllo visualizzerà per un pulsante.
+Restituisce un valore INT che rappresenta il numero massimo di righe di testo che il controllo visualizza per un pulsante.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore INT che rappresenta il numero massimo di righe di testo ch
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

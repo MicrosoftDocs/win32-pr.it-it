@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_SEARCHWEB (CommCtrl. h)
-description: Inviato quando un controllo di modifica perde lo stato attivo della tastiera. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un \_ messaggio di notifica WM.
+title: EN_SEARCHWEB di notifica (CommCtrl.h)
+description: Inviato quando un controllo di modifica perde lo stato attivo della tastiera. La finestra padre del controllo di modifica riceve questo codice di notifica tramite un messaggio WM \_ NOTIFY.
 ms.assetid: c31f4b6c-afed-4506-b98a-65c902b0f63a
 keywords:
-- Controlli di Windows per il codice di notifica EN_SEARCHWEB
+- EN_SEARCHWEB del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 2b995c90e8f4a607d7181adc8a357314acb84dc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 606f53427426e4c9d20c2e4c12245569ed1d8a53ed7ea29162516f6d65fd1baa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047471"
 ---
-# <a name="en_searchweb-notification-code"></a>\_Codice di notifica en SEARCHWEB
+# <a name="en_searchweb-notification-code"></a>EN \_ SEARCH Codice di notifica WEB
 
-Inviato dopo che un controllo di modifica ha eseguito una ricerca Web quando è abilitata la funzionalità "Cerca sul Web", vedere [EM_ENABLESEARCHWEB](em-enablesearchweb.md). La finestra padre del controllo di modifica riceve questo codice di notifica tramite un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Inviato dopo che un controllo di modifica ha eseguito una ricerca Web quando è abilitata la funzionalità "Cerca nel [Web", vedere EM_ENABLESEARCHWEB](em-enablesearchweb.md). La finestra padre del controllo di modifica riceve questo codice di notifica tramite un [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -49,7 +49,7 @@ Handle per il controllo di modifica.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-commctrl-nmsearchweb) .
+Puntatore a una [**struttura NMSEARCHWEB.**](/windows/desktop/api/Commctrl/ns-commctrl-nmsearchweb)
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Puntatore a una struttura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-com
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10, 1809 \[\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2019\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop 1809 \[\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2019 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Puntatore a una struttura [**NMSEARCHWEB**](/windows/desktop/api/Commctrl/ns-com
 **Riferimento**
 </dt> <dt>
 
-[**\_ENABLESEARCHWEB em**](em-enablesearchweb.md)
+[**EM \_ ENABLESEARCHWEB**](em-enablesearchweb.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**\_notifica WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

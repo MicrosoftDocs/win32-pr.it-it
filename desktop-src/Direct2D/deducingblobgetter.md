@@ -1,9 +1,9 @@
 ---
-title: DeducingBlobGetter (D2d1effecthelpers. h)
-description: Deduce la classe e gli argomenti e quindi chiama un callback del Getter della proprietà membro-funzione per una proprietà di tipo BLOB.
+title: DeducingBlobGetter (D2d1effecthelpers.h)
+description: Deduce la classe e gli argomenti e quindi chiama un callback del metodo get della proprietà della funzione membro per una proprietà di tipo BLOB.
 ms.assetid: 1B8800CB-2AD0-4684-99D7-986F6C53A6F1
 keywords:
-- Direct2D DeducingBlobGetter
+- DeducingBlobGetter Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f7ca5cc37a9fbd79807e258a87a199be7319ce3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f045f781ae22aa4550a298ba7becfe2bc4a939528657f663ec021870bf3afa78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918281"
 ---
 # <a name="deducingblobgetter"></a>DeducingBlobGetter
 
-Deduce la classe e gli argomenti e quindi chiama un callback del Getter della proprietà membro-funzione per una proprietà di tipo BLOB.
+Deduce la classe e gli argomenti e quindi chiama un callback del metodo get della proprietà della funzione membro per una proprietà di tipo BLOB.
 
 > [!Note]  
 > DeducingBlobGetter non deve essere chiamato direttamente.
@@ -47,7 +47,7 @@ HRESULT DeducingBlobGetter(
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

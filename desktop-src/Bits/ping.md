@@ -35,13 +35,13 @@ BITS-Packet-Type: Ping
 <span id="BITS_POST"></span><span id="bits_post"></span>BITS \_ POST
 </dt> <dd>
 
-Verbo specifico di BITS che identifica questo pacchetto per il server BITS.
+Verbo specifico di BITS che identifica il pacchetto al server BITS.
 
 Sostituire remote-URL con l'URI assoluto o relativo. In genere, sostituire remote-URL con il nome file remoto del processo.
 
 </dd> <dt>
 
-<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>TIPO DI PACCHETTO BITS
+<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-Packet-Type
 </dt> <dd>
 
 Identifica questo pacchetto di richiesta come pacchetto Ping.

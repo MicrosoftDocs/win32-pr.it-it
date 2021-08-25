@@ -4,34 +4,34 @@ ms.assetid: db2f1fdd-bcb1-4401-91f4-5e167e4da215
 title: Elemento group (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31502cef89c8383e935f409d76b9e31ca53a2da1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: eda120363540eaf467ebb9beaea4705c4b430077c55b5b05c46197d90920b40a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997831"
 ---
 # <a name="group-element"></a>Elemento group
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-**L'elemento** group definisce un gruppo, l'oggetto di primo livello in una sequenza temporale.
+**L'elemento group** definisce un gruppo, l'oggetto di primo livello in una sequenza temporale.
 
 ## <a name="attributes"></a>Attributi
 
-[**bitdepth**](bitdepth-attribute.md), [**buffering,**](buffering-attribute.md) [**framerate**](framerate-attribute.md), [**height**](height-attribute.md) [**,**](lock-attribute.md)lock , [**mute**](mute-attribute.md), [**name**](name-attribute.md), [**previewmode**](previewmode-attribute.md), [**samplingrate**](samplingrate-attribute.md), [**type**](type-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md), [**width**](width-attribute.md)
+[**bitdepth,**](bitdepth-attribute.md) [**buffering,**](buffering-attribute.md) [**framerate,**](framerate-attribute.md) [**height,**](height-attribute.md) [**lock,**](lock-attribute.md) [**mute,**](mute-attribute.md) [**name,**](name-attribute.md) [**previewmode,**](previewmode-attribute.md) [**samplingrate,**](samplingrate-attribute.md) [**type,**](type-attribute.md) [**userdata,**](userdata-attribute.md) [**userid,**](userid-attribute.md) [**username,**](username-attribute.md) [**width**](width-attribute.md)
 
 ## <a name="parentchild-information"></a>Informazioni padre/figlio
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |----------|----------------------------------------------------------------------------------------------------------|
 | Padre   | [**linea temporale**](timeline-element.md)                                                                     |
-| Children | [**composito,**](composite-element.md) [**effetto,**](effect-element.md) [**traccia**](track-element.md) |
+| Children | [**composite,**](composite-element.md) [**effect,**](effect-element.md) [**track**](track-element.md) |
 
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "107909249"
 
 ## <a name="remarks"></a>Commenti
 
-`group`All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito dall'ordine in cui appaiono all'interno dell'elemento. Il primo livello ha la priorità 0 e i livelli successivi hanno valori di priorità crescenti.
+All'interno di un elemento, la priorità dei livelli annidati viene determinata in modo implicito in `group` base all'ordine in cui vengono visualizzati all'interno dell'elemento. Il primo livello ha priorità 0 e i livelli successivi hanno valori di priorità crescenti.
 
 ## <a name="examples"></a>Esempi
 

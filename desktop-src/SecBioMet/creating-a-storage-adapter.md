@@ -1,19 +1,19 @@
 ---
-title: Creazione di un adattatore di archiviazione
-description: Struttura di base di un plug-in di adattatore di archiviazione implementato come DLL (Dynamic Link Library) C++.
+title: Creazione di un Archiviazione adapter
+description: Struttura di base di un plug-in dell'adattatore di archiviazione implementato come libreria a collegamento dinamico (DLL) C++.
 ms.assetid: c37e4c46-d11c-4458-b87b-78f693188e3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a4f922035b84593d812380991d0574a3ebeb141
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c8ff7ab15b1f94a37c77a7b3f4f014d34794999ae83429d663d7f97ac29ab5e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993771"
 ---
-# <a name="creating-a-storage-adapter"></a>Creazione di un adattatore di archiviazione
+# <a name="creating-a-storage-adapter"></a>Creazione di un Archiviazione adapter
 
-Nell'esempio di codice seguente viene illustrata la struttura di base di un plug-in di adattatore di archiviazione implementato come DLL (Dynamic Link Library) C++. Per visualizzare le implementazioni di pseudocodice di ogni funzione pubblica nella DLL, passare a [funzioni adattatore di archiviazione](storage-adapter-functions.md). Se si sceglie di non fornire funzionalità per una funzione specifica, è necessario definire uno stub e restituire E \_ NOTIMPL.
+L'esempio di codice seguente illustra la struttura di base di un plug-in dell'adattatore di archiviazione implementato come libreria a collegamento dinamico (DLL) C++. Per visualizzare le implementazioni pseudocodice di ogni funzione pubblica nella DLL, passare a Archiviazione [Adapter Functions](storage-adapter-functions.md). Se si sceglie di non fornire funzionalità per una determinata funzione, è necessario definire uno stub per questa funzione e restituire E \_ NOTIMPL.
 
 
 ```C++
@@ -735,12 +735,12 @@ StorageAdapterControlUnitPrivileged(
 
 <dl> <dt>
 
-[Creazione di plug-in di adapter](creating-adapter-plug-ins.md)
+[Creazione di plug-in dell'adapter](creating-adapter-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

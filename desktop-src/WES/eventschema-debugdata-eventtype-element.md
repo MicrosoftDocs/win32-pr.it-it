@@ -1,6 +1,6 @@
 ---
 title: Elemento DebugData (EventType)
-description: Contiene i dati che possono essere registrati per gli Windows del preprocessore di traccia software (WPP).
+description: Contiene i dati che possono essere registrati per Windows eventi WPP (Software Trace Preprocessor).
 ms.assetid: df7b1a84-95a3-4e56-9be8-3123366c4932
 keywords:
 - Elemento DebugData EventLog
@@ -22,7 +22,7 @@ ms.locfileid: "120005541"
 ---
 # <a name="debugdata-eventtype-element"></a>Elemento DebugData (EventType)
 
-Contiene i dati che possono essere registrati per gli Windows del preprocessore di traccia software (WPP).
+Contiene i dati che possono essere registrati per Windows eventi WPP (Software Trace Preprocessor).
 
 ``` syntax
 <xs:element name="DebugData"
@@ -38,8 +38,8 @@ Contiene i dati che possono essere registrati per gli Windows del preprocessore 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

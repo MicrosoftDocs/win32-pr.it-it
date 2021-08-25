@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI OnBoardDevice Win32 rappresenta i dispositivi Adapter comuni incorporati nella scheda madre (scheda di sistema).
+description: La classe \_ WMI Win32 OnBoardDevice rappresenta i dispositivi adattatore comuni incorporati nella scheda madre (scheda di sistema).
 ms.assetid: 6fac38b4-7c04-4f64-997d-40bcbf767959
 ms.tgt_platform: multiple
-title: Classe Win32_OnBoardDevice
+title: Win32_OnBoardDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,18 +34,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5fae5416a4b3cbeda0d8c63f6834c0406e628013
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6ce10494c44f6eecd78e44d4bcf97d5e46da7d6281a5ef614a9e737acae68c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972591"
 ---
-# <a name="win32_onboarddevice-class"></a>Win32 \_ OnBoardDevice (classe)
+# <a name="win32_onboarddevice-class"></a>Classe OnBoardDevice Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) **\_ OnBoardDevice Win32** rappresenta i dispositivi Adapter comuni incorporati nella scheda madre (scheda di sistema).
+La classe [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 OnBoardDevice** rappresenta i dispositivi adattatore comuni incorporati nella scheda madre (scheda di sistema).
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,80 +78,80 @@ class Win32_OnBoardDevice : CIM_PhysicalComponent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ OnBoardDevice** presenta questi tipi di membri:
+La **classe \_ OnBoardDevice Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ OnBoardDevice** dispone di queste proprietà.
+La **classe \_ OnBoardDevice Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**\_ chiave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**CIM \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, la proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza di . Se usata con le altre proprietà chiave della classe , la proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("Description"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 10 \| Description")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Description"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 10 \| Description")
 </dt> </dl>
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DeviceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| tipo 10 \| dispositivo tipo n")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 10 \| Device Type n")
 </dt> </dl>
 
 Tipo di dispositivo rappresentato.
@@ -212,92 +212,92 @@ Tipo di dispositivo rappresentato.
 **Enabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| tipo 10 \| dispositivo stato n")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 10 \| Device Status n")
 </dt> </dl>
 
-Se **true**, il dispositivo di bordo è disponibile per l'uso.
+Se **TRUE,** il dispositivo su scheda è disponibile per l'uso.
 
 </dd> <dt>
 
 **HotSwappable**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, un pacchetto fisico può essere scambiato a caldo (se è possibile sostituire l'elemento con un oggetto fisicamente diverso ma equivalente mentre al pacchetto che lo contiene è stata applicata una potenza). Ad esempio, un pacchetto di unità disco inserito usando i connettori SCA è rimovibile e può essere scambiato a caldo. Tutti i pacchetti che possono essere scambiati a caldo sono intrinsecamente rimovibili e sostituibili.
+Se **TRUE,** un pacchetto fisico può essere scambiato a caldo (se è possibile sostituire l'elemento con un elemento fisicamente diverso ma equivalente mentre al pacchetto contenitore è applicata la potenza). Ad esempio, un pacchetto di unità disco inserito usando connettori SCA è rimovibile e può essere scambiato a caldo. Tutti i pacchetti che possono essere scambiati a caldo sono intrinsecamente rimovibili e sostituibili.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome dell'organizzazione responsabile della creazione dell'elemento fisico.
+Nome dell'organizzazione responsabile della produzione dell'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Modello**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Nome in base al quale l'elemento fisico è generalmente noto.
+Nome con cui l'elemento fisico è noto a livello generale.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -306,141 +306,141 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override della proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. In caso di sottoclasse, è possibile eseguire l'override della proprietà come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Dati aggiuntivi, oltre alle informazioni sui tag asset, che possono essere usati per identificare un elemento fisico. Un esempio è costituito dai dati del codice a barre associati a un elemento che dispone anche di un tag asset. Si noti che se sono disponibili solo i dati del codice a barre ed è univoco o in grado di essere utilizzati come chiave dell'elemento, questa proprietà sarà **null** e i dati del codice a barre verranno utilizzati come chiave della classe nella proprietà Tag.
+Dati aggiuntivi, oltre alle informazioni sui tag degli asset, che possono essere usati per identificare un elemento fisico. Un esempio è dato da dati di codice a barre associati a un elemento che ha anche un tag di asset. Si noti che se sono disponibili solo i dati del codice a barre e sono univoci o possono essere usati come chiave dell'elemento, questa proprietà sarà **NULL** e i dati del codice a barre verranno usati come chiave di classe nella proprietà tag.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**NumeroArticolo**
+**PartNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Numero di parte assegnato dall'organizzazione responsabile della produzione o della produzione dell'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **PoweredOn**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'elemento fisico è acceso.
+Se **TRUE,** l'elemento fisico è acceso.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Rimovibile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se il valore è **true**, un pacchetto fisico è rimovibile (se è progettato per essere utilizzato e esterno al contenitore fisico in cui viene normalmente individuato, senza compromettere la funzione della creazione complessiva dei pacchetti). Un pacchetto può ancora essere rimovibile se l'alimentazione deve essere "off" per eseguire la rimozione. Se Power può essere "on" e il pacchetto viene rimosso, l'elemento è rimovibile e può essere scambiato a caldo. Ad esempio, una batteria aggiuntiva in un portatile è rimovibile, così come un pacchetto di unità disco inserito usando i connettori SCA. Tuttavia, quest'ultimo può essere scambiato a caldo. La visualizzazione di un computer portatile non è rimovibile, né è un alimentatore non ridondante. La rimozione di questi componenti influirà sulla funzione della creazione complessiva dei pacchetti o non è possibile grazie alla stretta integrazione del pacchetto.
+Se **TRUE,** un pacchetto fisico è rimovibile (se è progettato per essere prelevato e estratto dal contenitore fisico in cui viene normalmente trovato, senza compromettere la funzione della creazione complessiva dei pacchetti). Un pacchetto può comunque essere rimovibile se l'alimentazione deve essere disattivata per eseguire la rimozione. Se l'alimentazione può essere "on" e il pacchetto è stato rimosso, l'elemento è rimovibile e può essere scambiato a caldo. Ad esempio, una batteria aggiuntiva in un portatile è rimovibile, così come un pacchetto di unità disco inserito usando connettori SCA. Tuttavia, quest'ultimo può essere scambiato a caldo. Il display di un portatile non è rimovibile, né è un alimentatore non rimovibile. La rimozione di questi componenti influisce sulla funzione del pacchetto complessivo o è impossibile a causa della stretta integrazione del pacchetto.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
-**Sostituibili**
+**Sostituibile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, un pacchetto fisico è sostituibile (se è possibile sostituire, FRU o upgrade, l'elemento con un fisico diverso). Alcuni sistemi di computer, ad esempio, consentono di aggiornare il chip del processore principale a una delle valutazioni di clock più elevate. In questo caso, il processore viene definito sostituibile. Un altro esempio è un pacchetto di alimentazione montato sulle guide scorrevoli. Tutti i pacchetti rimovibili sono intrinsecamente sostituibili.
+Se **TRUE,** un pacchetto fisico è sostituibile (se è possibile sostituire, FRU o aggiornare, l'elemento con un elemento fisicamente diverso). Ad esempio, alcuni sistemi di computer consentono l'aggiornamento del chip del processore principale a una classificazione di clock superiore. In questo caso, il processore è detto sostituibile. Un altro esempio è un pacchetto di alimentazione montato su guide scorrevoli. Tutti i pacchetti rimovibili sono intrinsecamente sostituibili.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Numero allocato dal produttore utilizzato per identificare l'elemento fisico.
+Numero allocato dal produttore usato per identificare l'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **SKU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Numero di unità per l'elemento fisico che mantiene le scorte.
+Numero di unità di mantenimento delle scorte per l'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -455,77 +455,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -535,44 +535,44 @@ Ridotto **("danneggiato"** )
 **Tag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**override**](../wmisdk/standard-qualifiers.md) ("tag"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Tag"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Identificatore univoco del dispositivo a bordo connesso al sistema.
+Identificatore univoco del dispositivo di scheda connesso al sistema.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
-Esempio: "on board Device 1"
+Esempio: "On Board Device 1"
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
 Versione dell'elemento fisico.
 
-Questa proprietà viene ereditata da [**CIM \_ PhysicalElement**](cim-physicalelement.md).
+Questa proprietà viene ereditata da [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ OnBoardDevice** è derivata da [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+La **classe \_ OnBoardDevice Win32** è derivata da [**CIM \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -583,7 +583,7 @@ La classe **Win32 \_ OnBoardDevice** è derivata da [**CIM \_ PhysicalComponent*
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -592,10 +592,10 @@ La classe **Win32 \_ OnBoardDevice** è derivata da [**CIM \_ PhysicalComponent*
 
 <dl> <dt>
 
-[**\_PHYSICALCOMPONENT CIM**](cim-physicalcomponent.md)
+[**CIM \_ PhysicalComponent**](cim-physicalcomponent.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> </dl>
 
  
