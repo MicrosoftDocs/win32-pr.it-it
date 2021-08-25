@@ -1,20 +1,20 @@
 ---
-title: Panoramiche sul controllo di animazione
-description: Panoramiche sul controllo di animazione
+title: Cenni preliminari sul controllo Animation
+description: Cenni preliminari sul controllo Animation
 ms.assetid: 73083685-ff0e-478f-842f-ec03ccaaf064
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea87ec83ef469f43d16cb9ee4925e38a29440a20
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2003444d091ce858ab12b1029ebb94551d3ed4a7a273d18f585e2e9e0fefeef8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104058554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827411"
 ---
-# <a name="animation-control-overviews"></a>Panoramiche sul controllo di animazione
+# <a name="animation-control-overviews"></a>Cenni preliminari sul controllo Animation
 
 -   [Informazioni sui controlli di animazione](animation-control-overview.md)
--   [Uso di controlli di animazione](using-animation-control.md)
+-   [Uso dei controlli di animazione](using-animation-control.md)
 
  
 

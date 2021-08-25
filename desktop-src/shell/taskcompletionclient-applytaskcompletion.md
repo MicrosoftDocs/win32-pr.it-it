@@ -1,7 +1,7 @@
 ---
-description: Inizia il completamento dell'attività.
+description: Avvia il completamento dell'attività.
 ms.assetid: 75C84DD9-D815-45C2-A28E-EAE437EAFF89
-title: 'Metodo TaskCompletionClient:: ApplyTaskCompletion'
+title: Metodo TaskCompletionClient::ApplyTaskCompletion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: 950d96ac46c18d741d5cf2337326f116fb79e36a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 58c95144077697f1655547a58571ce3475355aa96040ce1815bd3178bc9a1290
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773671"
 ---
-# <a name="taskcompletionclientapplytaskcompletion-method"></a>Metodo TaskCompletionClient:: ApplyTaskCompletion
+# <a name="taskcompletionclientapplytaskcompletion-method"></a>Metodo TaskCompletionClient::ApplyTaskCompletion
 
-Inizia il completamento dell'attività.
+Avvia il completamento dell'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Valore che indica la categoria dell'attività.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,8 +60,8 @@ L'unico valore supportato per *ptcfCategory* è 0x08000000.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                           |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                           |
 | DLL<br/>                      | <dl> <dt>ExecModelClient.dll</dt> </dl> |
 
 

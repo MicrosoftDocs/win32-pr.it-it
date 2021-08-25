@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Get mediacollection ottiene un puntatore all'interfaccia ITMediaCollection per la conferenza.
+description: Il metodo get \_ MediaCollection ottiene un puntatore all'interfaccia ITMediaCollection per la conferenza.
 ms.assetid: 8109582a-74f0-47e8-91d1-0d89c3d3c331
-title: 'Metodo ITSdp:: get_MediaCollection (sdpblb. h)'
+title: Metodo ITSdp::get_MediaCollection (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f8812debf8c04fe022f24061660d6ea3bb5f162
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4cf358089a394775c753adc0642897021e91df5bfcd5f23418e638df82db03a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774511"
 ---
-# <a name="itsdpget_mediacollection-method"></a>Metodo ITSdp:: Get \_ mediacollection
+# <a name="itsdpget_mediacollection-method"></a>Metodo ITSdp::get \_ MediaCollection
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **get \_ mediacollection** ottiene un puntatore all'interfaccia [**ITMediaCollection**](itmediacollection.md) per la conferenza.
+Il **metodo get \_ MediaCollection** ottiene un puntatore [**all'interfaccia ITMediaCollection**](itmediacollection.md) per la conferenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT get_MediaCollection(
 
 <dl> <dt>
 
-*ppMediaCollection* \[ out\]
+*ppMediaCollection* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a [**ITMediaCollection**](itmediacollection.md).
+Puntatore a [**ITMediaCollection.**](itmediacollection.md)
 
 </dd> </dl>
 
@@ -47,11 +47,11 @@ Questo metodo può restituire uno di questi valori.
 
 | Valore                                                                                                                           | Significato                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                            | Il metodo è riuscito.<br/>                                                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                                    | Il parametro *ppMediaCollection* non è un puntatore valido.<br/>                        |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>                                   | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/>                             |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>                                          | Errore non specificato.<br/>                                                               |
-| <dl> <dt>**HRESULT \_ dal \_ codice di errore \_ (errore di \_ dati non validi \_ )**</dt> </dl> | Si è verificato un errore interno, in genere a causa dell'errore di un metodo precedente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                            | Il metodo è riuscito.<br/>                                                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                                    | Il *parametro ppMediaCollection* non è un puntatore valido.<br/>                        |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>                                   | Memoria insufficiente per eseguire l'operazione.<br/>                             |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                                          | Errore non specificato.<br/>                                                               |
+| <dl> <dt>**HRESULT \_ DAL CODICE DI ERRORE \_ \_ (DATI NON VALIDI PER \_ \_ L'ERRORE)**</dt> </dl> | Si è verificato un errore interno, in genere a causa dell'errore di un metodo precedente.<br/> |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>                                       | Questo metodo non è ancora implementato.<br/>                                              |
 
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile ottenere un puntatore [**ITMediaCollection**](itmediacollection.md) anche usando **QueryInterface**.
+È anche possibile ottenere un puntatore [**ITMediaCollection**](itmediacollection.md) usando **QueryInterface**.
 
-TAPI chiama il metodo **AddRef** sull'interfaccia [**ITMediaCollection**](itmediacollection.md) restituita da **ITSdp:: Get \_ mediacollection**. L'applicazione deve chiamare **Release** sull'interfaccia **ITMediaCollection** per liberare risorse associate.
+TAPI chiama il **metodo AddRef** [**sull'interfaccia ITMediaCollection**](itmediacollection.md) restituita da **ITSdp::get \_ MediaCollection**. L'applicazione deve **chiamare Release** **sull'interfaccia ITMediaCollection** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ TAPI chiama il metodo **AddRef** sull'interfaccia [**ITMediaCollection**](itmedi
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

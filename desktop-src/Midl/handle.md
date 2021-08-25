@@ -1,9 +1,9 @@
 ---
-title: handle (attributo)
-description: L'attributo \ handle \ specifica un oggetto definito dall'utente o \ 0034; personalizzato \ 0034; tipo di handle.
+title: Attributo handle
+description: L'attributo \ handle\ specifica un valore definito dall'utente o \ 0034;customized \ 0034; tipo di handle.
 ms.assetid: db5c6ea6-6081-4cea-9265-5e2f67fd8c14
 keywords:
-- Gestisci attributo MIDL
+- gestire l'attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d4560de53bf3f24238e9ff96e01c74716729749
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: aacdb3611a12873a6e828c33606bb9c970747555c285f8612be2b43bc3f51adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895291"
 ---
-# <a name="handle-attribute"></a>handle (attributo)
+# <a name="handle-attribute"></a>Attributo handle
 
-L' \[ attributo **handle** \] specifica un tipo di handle definito dall'utente o personalizzato.
+\[ **L'attributo** handle specifica un tipo di handle \] definito dall'utente o "personalizzato".
 
 ``` syntax
 typedef [handle] typename;  
@@ -33,10 +33,10 @@ void __RPC_USER typename_unbind (typename, handle_t);
 
 <dl> <dt>
 
-*typeName* 
+*Typename* 
 </dt> <dd>
 
-Specifica il nome del tipo di handle di binding definito dall'utente.
+Specifica il nome del tipo di handle di associazione definito dall'utente.
 
 </dd> </dl>
 
@@ -44,15 +44,15 @@ Specifica il nome del tipo di handle di binding definito dall'utente.
 
 Gli handle definiti dall'utente consentono agli sviluppatori di progettare handle significativi per l'applicazione. Un handle definito dall'utente può essere definito solo in una dichiarazione di tipo, non in un dichiaratore di funzione.
 
-Un parametro di un tipo definito dall'attributo \[ **handle** \] viene utilizzato per determinare l'associazione per la chiamata e viene trasmesso alla routine chiamata.
+Un parametro di un tipo definito dall'attributo handle viene usato per determinare l'associazione per la chiamata e viene trasmesso \[  \] alla routine chiamata.
 
-L'utente deve fornire routine di binding e di annullamento dell'associazione per eseguire la conversione tra tipi primitivi e di handle definiti dall'utente. Dato un handle definito dall'utente di tipo *typeName*, l'utente deve fornire le routine *typeName* \_ **Bind** e *typeName* \_ **UNBIND**. Se, ad esempio, il tipo di handle definito dall'utente è denominato HANDLE, le routine sono denominate HANDLE \_ **Bind** e handler \_ **UNBIND**.
+L'utente deve fornire routine di associazione e annullamento dell'associazione per eseguire la conversione tra tipi di handle primitivi e definiti dall'utente. Dato un handle definito dall'utente di tipo *typename*, l'utente deve fornire le routine *typename* bind e \_  *typename* \_ **unbind**. Ad esempio, se il tipo di handle definito dall'utente è denominato MYHANDLE, le routine sono denominate MYHANDLE bind e \_  MYHANDLE \_ **unbind**.
 
-In caso di esito positivo, la  \_ routine **Bind** typeName deve restituire un handle di associazione primitivo valido. Se ha esito negativo, la routine deve restituire un **valore null**. Se la routine restituisce **null**, la routine *typeName* \_ **UNBIND** non verrà chiamata. Se la routine di associazione restituisce un handle di binding non valido diverso da **null**, il comportamento dello stub non è definito.
+In caso di esito positivo, la routine *di associazione* \_ **typename** deve restituire un handle di associazione primitiva valido. In caso di esito negativo, la routine deve restituire **un valore NULL.** Se la routine restituisce **NULL,** la routine  \_ **unbind typename** non verrà chiamata. Se la routine di associazione restituisce un handle di associazione non valido diverso da **NULL,** il comportamento dello stub non è definito.
 
-Quando la procedura remota dispone di un handle definito dall'utente come parametro o come handle implicito, gli stub client chiamano la routine di associazione prima di chiamare la procedura remota. Gli stub client chiamano la routine unbinding dopo la chiamata remota.
+Quando la procedura remota ha un handle definito dall'utente come parametro o come handle implicito, gli stub client chiamano la routine di associazione prima di chiamare la routine remota. Gli stub client chiamano la routine di annullamento dell'associazione dopo la chiamata remota.
 
-In DCE IDL, un parametro con l' \[ attributo **handle** \] deve apparire come primo parametro nell'elenco di argomenti della procedura remota. I parametri successivi, inclusi altri attributi dell' \[ **handle** \] , vengono trattati come parametri normali. Microsoft supporta un'estensione di DCE IDL che consente la visualizzazione del parametro dell'handle definito dall'utente \[  \] in posizioni diverse dal primo parametro.
+In DCE IDL un parametro con l'attributo handle deve essere visualizzato \[  \] come primo parametro nell'elenco di argomenti della procedura remota. I parametri successivi, inclusi altri \[ **attributi di handle,** \] vengono trattati come parametri ordinari. Microsoft supporta un'estensione a DCE IDL che consente al parametro handle definito dall'utente di comparire in posizioni diverse \[  \] dal primo parametro.
 
 ## <a name="examples"></a>Esempi
 
@@ -77,12 +77,12 @@ void __RPC_USER h_service_unbind(h_service, handle_t);
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**handle implicito \_**](implicit-handle.md)
+[**handle \_ implicito**](implicit-handle.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

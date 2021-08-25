@@ -1,11 +1,11 @@
 ---
-title: Metodo getparat IConfigAsfWriter2
-description: Il metodo getparat Recupera il valore corrente del parametro di configurazione del filtro specificato.
+title: Metodo GetParam IConfigAsfWriter2
+description: Il metodo GetParam recupera il valore corrente del parametro di configurazione del filtro specificato.
 ms.assetid: 81d915a1-6190-46e3-a5cb-7f5fc242b8dd
 keywords:
-- Metodo getparat Windows Media Format
-- Metodo getparat Windows Media Format, interfaccia IConfigAsfWriter2
-- Interfaccia IConfigAsfWriter2-formato Windows Media, metodo getparat
+- Metodo GetParam windows Media Format
+- Metodo GetParam windows Media Format , interfaccia IConfigAsfWriter2
+- Interfaccia IConfigAsfWriter2 windows Media Format , metodo GetParam
 topic_type:
 - apiref
 api_name:
@@ -15,25 +15,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d72b8011072424679729686dd5a14c92bae90f66
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8a411e4b1896174e25a1f671f3f42fd83c1376713f10e9e4cb2b2d2186b3d551
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809141"
 ---
-# <a name="iconfigasfwriter2getparam-method"></a>Metodo IConfigAsfWriter2:: getparat
+# <a name="iconfigasfwriter2getparam-method"></a>Metodo IConfigAsfWriter2::GetParam
 
-Il metodo **Getparat** Recupera il valore corrente del parametro di configurazione del filtro specificato.
+Il **metodo GetParam** recupera il valore corrente del parametro di configurazione del filtro specificato.
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
 HRESULT GetParam(
-  [in]  DWORD dwParam,
-  [out] DWORD *pdwParam1,
-  [out] DWORD *pdwParam2
+  [in]  DWORD dwParam,
+  [out] DWORD *pdwParam1,
+  [out] DWORD *pdwParam2
 );
 ```
 
@@ -43,30 +43,30 @@ HRESULT GetParam(
 
 <dl> <dt>
 
-*dwParam* \[ in\]
+*dwParam* \[ Pollici\]
 </dt> <dd>
 
-Specifica il parametro da recuperare. Deve essere un valore definito nell'enumerazione [ \_ \_ \_ param ASFWRITERCONFIG](/previous-versions/windows/desktop/legacy/dd758054(v=vs.85)) .
+Specifica il parametro da recuperare. Deve essere un valore definito [ \_ nell'enumerazione AM \_ ASFWRITERCONFIG \_ PARAM.](/previous-versions/windows/desktop/legacy/dd758054(v=vs.85))
 
 </dd> <dt>
 
-*pdwParam1* \[ out\]
+*pdwParam1* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a una variabile che recupera il valore del parametro specificato in *dwParam*.
 
 </dd> <dt>
 
-*pdwParam2* \[ out\]
+*pdwParam2* \[ Cambio\]
 </dt> <dd>
 
-Non utilizzato, deve essere zero.
+Non usato, deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se non riesce, restituisce un **codice di errore HRESULT.**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -75,9 +75,9 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, resti
 [**Interfaccia IConfigAsfWriter2**](/previous-versions/windows/desktop/legacy/dd743206(v=vs.85))
 </dt> <dt>
 
-[**IConfigAsfWriter2:: separat**](iconfigasfwriter2-setparam.md)
+[**IConfigAsfWriter2::SetParam**](iconfigasfwriter2-setparam.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

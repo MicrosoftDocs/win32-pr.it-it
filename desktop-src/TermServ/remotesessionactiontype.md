@@ -1,10 +1,10 @@
 ---
 title: Enumerazione RemoteSessionActionType
-description: Utilizzato per specificare il tipo di azione remota.
+description: Consente di specificare il tipo di azione remota.
 ms.assetid: C0DA0FA2-6FE0-4B40-B169-4592A1BE2AD6
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto enumerazione RemoteSessionActionType
+- Enumerazione RemoteSessionActionType Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 291bb9fdd2cadfef3881bc27a47f9fc1bb1bce68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a107ee44f058d776a906fef37b2e384ed6d8970224c44a6846b257c5f336c515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865711"
 ---
 # <a name="remotesessionactiontype-enumeration"></a>Enumerazione RemoteSessionActionType
 
-Utilizzato per specificare il tipo di azione remota.
+Consente di specificare il tipo di azione remota.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ Visualizza la barra dell'app nella sessione remota.
 <span id="RemoteSessionActionSnap"></span><span id="remotesessionactionsnap"></span><span id="REMOTESESSIONACTIONSNAP"></span>**RemoteSessionActionSnap**
 </dt> <dd>
 
-Ancora l'applicazione nella sessione remota. Questa opzione è stata deprecata e non deve essere utilizzata.
+Ancora l'applicazione nella sessione remota. Questa opzione è stata deprecata e non deve essere usata.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Determina la visualizzazione della schermata iniziale nella sessione remota.
 <span id="RemoteSessionActionAppSwitch"></span><span id="remotesessionactionappswitch"></span><span id="REMOTESESSIONACTIONAPPSWITCH"></span>**RemoteSessionActionAppSwitch**
 </dt> <dd>
 
-Determina la visualizzazione della finestra del commutire dell'applicazione nella sessione remota. Si tratta dello stesso utente che preme ALT + TAB.
+Fa sì che la finestra del commutatore dell'applicazione sia visualizzata nella sessione remota. Questo è lo stesso dell'utente che preme ALT+TAB.
 
 </dd> <dt>
 
 <span id="RemoteSessionActionActionCenter"></span><span id="remotesessionactionactioncenter"></span><span id="REMOTESESSIONACTIONACTIONCENTER"></span>**RemoteSessionActionActionCenter**
 </dt> <dd>
 
-Determina la visualizzazione del centro operativo nella sessione remota. Si tratta dello stesso utente che preme Win + A.
+Determina la visualizzazione del Centro notifiche nella sessione remota. Questo è lo stesso dell'utente che preme Win+A.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012 e Windows 8:** Questo valore non è supportato prima di Windows Server 2016 e Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012 e Windows 8:** Questo valore non è supportato prima di Windows Server 2016 e Windows 10.
 
 </dd> </dl>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC. cbPageSize'
-title: Proprietà JET_DBINFOMISC. cbPageSize
+description: 'Altre informazioni su: JET_DBINFOMISC.cbPageSize'
+title: JET_DBINFOMISC.cbPageSize
 TOCTitle: 'cbPageSize property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.cbPageSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.cbpagesize(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae2f718c066c1b0cef347141f08e1ed1254e6bcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a4b72ff96337637c90aaeaa48bfbb344f0d36e9658536cb6efa9c5399741063
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891421"
 ---
-# <a name="jet_dbinfomisccbpagesize-property"></a>Proprietà JET_DBINFOMISC. cbPageSize
+# <a name="jet_dbinfomisccbpagesize-property"></a>JET_DBINFOMISC.cbPageSize
 
-Ottiene le dimensioni della pagina del database. Il valore 0 indica le pagine 4Kb.
+Ottiene le dimensioni della pagina del database. Il valore 0 indica 4 KB di pagine.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int cbPageSize { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

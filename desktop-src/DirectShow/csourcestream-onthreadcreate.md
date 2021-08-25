@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnThreadCreate viene chiamato quando viene inizializzato il thread di streaming.
 ms.assetid: eeaa0d12-3185-4c97-b481-fc420cfc0897
-title: Metodo CSourceStream. OnThreadCreate (source. h)
+title: Metodo CSourceStream.OnThreadCreate (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5ae3c210ca81eafa1951fc51301eaf50491357f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e263f0ae72838504ab6d219c71d7841291a3edd2a7d6b719d112c74fb30c23b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907711"
 ---
-# <a name="csourcestreamonthreadcreate-method"></a>CSourceStream. OnThreadCreate, metodo
+# <a name="csourcestreamonthreadcreate-method"></a>Metodo CSourceStream.OnThreadCreate
 
 Il `OnThreadCreate` metodo viene chiamato quando viene inizializzato il thread di streaming.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-La routine thread, [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md), chiama questo metodo quando riceve prima una richiesta [**CSourceStream:: init**](csourcestream-init.md) . Il metodo non esegue alcuna operazione nella classe di base. La classe derivata può eseguire l'override di questo metodo per eseguire le inizializzazioni dei thread. Se la classe derivata restituisce un codice di errore, il thread viene chiuso con un errore.
+La routine del [**thread, CSourceStream::ThreadProc,**](csourcestream-threadproc.md)chiama questo metodo quando riceve per la prima volta una richiesta [**CSourceStream::Init.**](csourcestream-init.md) Il metodo non esegue alcuna operazione nella classe di base. La classe derivata può eseguire l'override di questo metodo per eseguire le inizializzazioni dei thread. Se la classe derivata restituisce un codice di errore, il thread viene chiuso con un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La routine thread, [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

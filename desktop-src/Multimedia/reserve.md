@@ -1,9 +1,9 @@
 ---
-title: comando Reserve
-description: Il comando Reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del dispositivo. I dispositivi digitali video riconoscono questo comando.
+title: comando reserve
+description: Il comando reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del dispositivo. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: ac4fc75e-82d0-4817-a5cf-a77996bc69e2
 keywords:
-- comando riserva Windows Multimedia
+- Comando reserve Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f71889af552b9040777394047a0facfc6c81366
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83f4573f5a630bbf1243b7126867c2d6c6beef61810210624fe87958e12b02ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892921"
 ---
-# <a name="reserve-command"></a>comando Reserve
+# <a name="reserve-command"></a>comando reserve
 
-Il comando Reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del dispositivo. I dispositivi digitali video riconoscono questo comando.
+Il comando reserve alloca spazio su disco contiguo per l'area di lavoro dell'istanza del dispositivo. I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno o più dei flag seguenti.
 
 | Valore           | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| in *percorso*       | Specifica l'unità e il percorso della directory, ma non il nome, di un file temporaneo usato per conservare i dati registrati. Il nome di questo file è specificato dal dispositivo. Il file temporaneo viene eliminato quando il dispositivo viene chiuso. Se questo flag viene omesso, il dispositivo specifica il percorso dello spazio su disco.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| *durata* dimensioni | Specifica la quantità approssimativa di spazio su disco da riservare nell'area di lavoro. Il valore *Duration* viene specificato nel formato di ora corrente. Il dispositivo basa la stima dello spazio su disco richiesto nei parametri seguenti: il tempo richiesto, il formato del file, l'algoritmo di compressione video e audio e i valori di qualità di compressione in vigore. Se [sevideo](setvideo.md) "record" è disattivato, lo spazio è riservato solo per l'audio. Se il [file](setaudio.md) "record" è disattivato, lo spazio è riservato solo per i video. Se entrambi sono "off" o se *Duration* è zero, nessuno spazio viene riservato e lo spazio riservato esistente viene deallocato. Se questo flag viene omesso, il dispositivo userà un valore predefinito definito dal dispositivo. |
+| in *path*       | Specifica l'unità e il percorso della directory (ma non il nome) di un file temporaneo utilizzato per contenere i dati registrati. Il nome di questo file viene specificato dal dispositivo. Il file temporaneo viene eliminato alla chiusura del dispositivo. Se questo flag viene omesso, il dispositivo specifica la posizione dello spazio su disco.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| durata *delle dimensioni* | Specifica la quantità approssimativa di spazio su disco da riservare nell'area di lavoro. Il *valore* della durata viene specificato nel formato di ora corrente. Il dispositivo basa la stima dello spazio su disco richiesto sui parametri seguenti: l'ora richiesta, il formato di file, l'algoritmo di compressione audio e video e i valori di qualità della compressione in vigore. Se [setvideo](setvideo.md) "record" è "off", lo spazio è riservato solo per l'audio. Se [setaudio](setaudio.md) "record" è "off", lo spazio è riservato solo per i video. Se entrambi sono "disattivati" o se *duration* è zero, non viene riservato alcuno spazio e viene deallocato qualsiasi spazio riservato esistente. Se questo flag viene omesso, il dispositivo userà un valore predefinito definito dal dispositivo. |
 
 
 
@@ -67,17 +67,17 @@ Uno o più dei flag seguenti.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify", "test" o una combinazione di questi. Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify", "test" o una combinazione di questi elementi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se necessario, i comandi [record](record.md) o [Save](save.md) successivi usano lo spazio riservato da questo comando. Se l'area di lavoro contiene dati non salvati, i dati andranno perduti. Alcuni dispositivi non richiedono la riserva e lo ignorano. Se lo spazio su disco non è riservato prima della registrazione, il comando record esegue una riserva implicita con i flag predefiniti specifici del dispositivo. Utilizzare un comando di riserva esplicito se si desidera un migliore controllo del momento in cui si verifica l'allocazione dei dischi, il controllo della quantità di spazio allocato e il controllo della posizione di allocazione dello spazio su disco. L'applicazione può modificare la quantità e la posizione dello spazio su disco precedentemente riservato con i comandi di riserva successivi. Qualsiasi spazio su disco allocato e ancora inutilizzato non viene deallocato fino al salvataggio dei dati registrati o fino alla chiusura dell'istanza del dispositivo.
+Se necessario, i comandi [successivi di registrazione](record.md) [o](save.md) salvataggio usano lo spazio riservato da questo comando. Se l'area di lavoro contiene dati non salvati, i dati vengono persi. Alcuni dispositivi non richiedono la prenotazione e la ignorano. Se lo spazio su disco non è riservato prima della registrazione, il comando di registrazione esegue una riserva implicita con flag predefiniti specifici del dispositivo. Usare un comando di riserva esplicito per controllare meglio quando si verifica il ritardo per l'allocazione del disco, controllare la quantità di spazio allocato e il punto in cui viene allocato lo spazio su disco. L'applicazione può modificare la quantità e la posizione dello spazio su disco precedentemente riservato con i comandi di riserva successivi. Lo spazio su disco allocato e ancora inutilizzato non viene deallocato fino a quando non vengono salvati i dati registrati o fino alla chiusura dell'istanza del dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,22 +94,22 @@ Se necessario, i comandi [record](record.md) o [Save](save.md) successivi usano 
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[record](record.md)
+[Registrazione](record.md)
 </dt> <dt>
 
 [salvataggio](save.md)
 </dt> <dt>
 
-[SetAudio](setaudio.md)
+[setaudio](setaudio.md)
 </dt> <dt>
 
-[video](setvideo.md)
+[setvideo](setvideo.md)
 </dt> </dl>
 
  

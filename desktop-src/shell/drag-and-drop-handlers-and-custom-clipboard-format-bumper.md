@@ -1,19 +1,19 @@
 ---
-description: Gestori del trascinamento della selezione e formato degli Appunti personalizzati
-title: Gestori del trascinamento della selezione e formato degli Appunti personalizzati
+description: Gestori di trascinamento della selezione e formato degli Appunti personalizzato
+title: Gestori di trascinamento della selezione e formato degli Appunti personalizzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d6df490034ab303b546942c5bfd72a55e2a3fb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6917ce1275db0d07780523e1a9ba3c630b2bdac9f5e6eaa36ad24de18123787
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943051"
 ---
-# <a name="drag-and-drop-handlers-and-custom-clipboard-format"></a>Gestori del trascinamento della selezione e formato degli Appunti personalizzati
+# <a name="drag-and-drop-handlers-and-custom-clipboard-format"></a>Gestori di trascinamento della selezione e formato degli Appunti personalizzato
 
--   [Come creare i gestori di dati](how-to-create-data-handlers.md)
--   [Come creare i gestori di rilascio](how-to-create-drop-handlers.md)
+-   [Come creare gestori dati](how-to-create-data-handlers.md)
+-   [Come creare gestori di rilascio](how-to-create-drop-handlers.md)
 
  
 

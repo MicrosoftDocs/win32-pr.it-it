@@ -3,9 +3,9 @@ title: Metodo IBasicDevice ModelUrl
 description: Recupera l'URL del modello del dispositivo.
 ms.assetid: 093D306B-5DFC-4A68-803D-3DDE195A8B85
 keywords:
-- API di streaming multimediale del metodo ModelUrl
-- API di streaming multimediale del metodo ModelUrl, interfaccia IBasicDevice
-- API di streaming multimediale dell'interfaccia IBasicDevice, metodo ModelUrl
+- Metodo ModelUrl API Di streaming multimediale
+- Metodo ModelUrl API Streaming multimediale, interfaccia IBasicDevice
+- Interfaccia IBasicDevice API Di streaming multimediale, metodo ModelUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4f616d1a122f5fe6025c80742df61eb86d41514a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2e7595af295b0d0bc565d79bf5450ee6c5c16b0da4f3baa4fcf636e4e5386920
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104333895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847651"
 ---
-# <a name="ibasicdevicemodelurl-method"></a>Metodo IBasicDevice:: ModelUrl
+# <a name="ibasicdevicemodelurl-method"></a>Metodo IBasicDevice::ModelUrl
 
 Recupera l'URL del modello del dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT ModelUrl(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
 Riceve un puntatore all'URL del modello del dispositivo.
@@ -50,13 +50,13 @@ Riceve un puntatore all'URL del modello del dispositivo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

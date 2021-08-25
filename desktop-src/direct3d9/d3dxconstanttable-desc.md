@@ -1,7 +1,7 @@
 ---
 description: Descrizione della tabella delle costanti.
 ms.assetid: 848b328a-95a4-4fd0-a7d4-4fb0e5d14f64
-title: Struttura D3DXCONSTANTTABLE_DESC (D3dx9shader. h)
+title: D3DXCONSTANTTABLE_DESC struttura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 7c53023952518182f68cf4a671ec47c6056a92a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9fb881ce0871165d9df394bf8a76326b4f5d644692217b1bb901438b90cf7cef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894061"
 ---
-# <a name="d3dxconstanttable_desc-structure"></a>\_Struttura D3DXCONSTANTTABLE DESC
+# <a name="d3dxconstanttable_desc-structure"></a>Struttura DESC D3DXCONSTANTTABLE \_
 
 Descrizione della tabella delle costanti.
 
@@ -48,25 +48,25 @@ Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Nome del creatore della tabella di costanti.
+Nome dell'autore della tabella costante.
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Versione shader.
+Versione dello shader.
 
 </dd> <dt>
 
 **Costanti**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -80,7 +80,7 @@ Numero di costanti nella tabella delle costanti.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 

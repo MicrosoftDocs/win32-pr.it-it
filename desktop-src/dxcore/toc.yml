@@ -8,7 +8,7 @@
           href: dxcore-enum-adapters.md
         - name: Applicazione DXCore minima
           href: dxcore-source-code.md
-    - name: Riferimento a DXCore
+    - name: Informazioni di riferimento su DXCore
       href: dxcore-reference.md
       items:
         - name: GUID di attributi di adapter DXCore
@@ -42,9 +42,9 @@
             - name: IDXCoreAdapter
               href: ./dxcore_interface/nn-dxcore_interface-idxcoreadapter.md
               items:
-                - name: GetFactory
+                - name: Getfactory
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getfactory.md
-                - name: GetProperty
+                - name: Getproperty
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getproperty.md
                 - name: GetPropertySize
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getpropertysize.md
@@ -82,11 +82,11 @@
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getadapter.md
                 - name: GetAdapterCount
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getadaptercount.md
-                - name: GetFactory
+                - name: Getfactory
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getfactory.md
                 - name: IsAdapterPreferenceSupported
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-isadapterpreferencesupported.md
-                - name: Non aggiornato
+                - name: IsStale
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-isstale.md
                 - name: Ordina
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-sort.md

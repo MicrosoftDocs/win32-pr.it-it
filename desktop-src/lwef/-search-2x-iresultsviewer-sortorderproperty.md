@@ -1,11 +1,11 @@
 ---
 title: Proprietà IResultsViewer::SortOrderProperty (WdsView.h)
-description: Questa proprietà consente di impostare o restituire l'ordine delle colonne in base a cui ordinare i risultati.
+description: Questa proprietà imposta o restituisce l'ordine delle colonne in base alle quali ordinare i risultati.
 ms.assetid: ea05f4df-4caf-404f-8890-a109ca88555c
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà SortOrderProperty
-- Proprietà SortOrderProperty caratteristiche dell'ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà SortOrderProperty
+- Proprietà SortOrderProperty Funzionalità legacy Windows'ambiente
+- Proprietà SortOrderProperty Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer legacy Windows dell'ambiente, proprietà SortOrderProperty
 topic_type:
 - apiref
 api_name:
@@ -18,19 +18,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fa36dba99afbee58b480e17f241cb32f75cd5dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01680ac46592887cf4f321b771ff0e46039c775c4e9e9d8ed1edbc893ab45977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829171"
 ---
-# <a name="iresultsviewersortorderproperty-property"></a>Proprietà IResultsViewer:: SortOrderProperty
+# <a name="iresultsviewersortorderproperty-property"></a>Proprietà IResultsViewer::SortOrderProperty
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Questa proprietà consente di impostare o restituire l'ordine delle colonne in base a cui ordinare i risultati.
+Questa proprietà imposta o restituisce l'ordine delle colonne in base alle quali ordinare i risultati.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -51,7 +51,7 @@ HRESULT get_SortOrderProperty(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta la proprietà [**ColumnSortOrder**](/windows/win32/api/mmcobj/ne-mmcobj-_columnsortorder) .
+Imposta la [**proprietà ColumnSortOrder.**](/windows/win32/api/mmcobj/ne-mmcobj-_columnsortorder)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,10 +59,10 @@ Imposta la proprietà [**ColumnSortOrder**](/windows/win32/api/mmcobj/ne-mmcobj-
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

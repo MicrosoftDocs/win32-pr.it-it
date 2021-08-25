@@ -1,10 +1,10 @@
 ---
-title: Attributo COM-TypeLib-ID
-description: Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti nel pacchetto dell'applicazione.
+title: Attributo COM-Typelib-Id
+description: Questo attributo archivia l'elenco degli ID libreria dei tipi contenuti nel pacchetto dell'applicazione.
 ms.assetid: 3dcd2d1f-8b6d-46f6-9707-4af006f0e610
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo COM-TypeLib-ID
+- Schema AD dell'attributo COM-Typelib-Id
 - Schema AD dell'attributo cOMTypelibId
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0be116963137dcdba4d97aa3de751bdf7308c335
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d9e639490336895c4ce0213fcda74b47c7b2e9f97435f8445c6ac1d686c5424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805311"
 ---
-# <a name="com-typelib-id-attribute"></a>Attributo COM-TypeLib-ID
+# <a name="com-typelib-id-attribute"></a>Attributo COM-Typelib-Id
 
-Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti nel pacchetto dell'applicazione.
+Questo attributo archivia l'elenco degli ID libreria dei tipi contenuti nel pacchetto dell'applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | COM-TypeLib-ID                                                                   |
-| LDAP-Display-Name | cOMTypelibId                                                                     |
+| CN                | COM-Typelib-Id                                                                   |
+| Ldap-Display-Name | cOMTypelibId                                                                     |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Aggiorna privilegio  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.254                                                           |
-| System-ID-GUID    | 281416de-1968-11d0-a28f-00aa003049e2                                             |
+| System-Id-Guid    | 281416de-1968-11d0-a28f-00aa003049e2                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo archivia l'elenco degli ID della libreria dei tipi contenuti ne
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| Is-Single-Valued       | Falso                                                            |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 36                                                               |
 | Range-Upper            | 36                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: ICE86 genera un avviso se il pacchetto usa la proprietà AdminUser nella colonna database del tipo di condizione. Gli autori di pacchetti devono utilizzare la proprietà Privileged nelle istruzioni condizionali.
+description: ICE86 genera un avviso se il pacchetto usa la proprietà AdminUser nella colonna del database di tipo Condizione. Gli autori di pacchetti devono usare la proprietà Privileged nelle istruzioni condizionali.
 ms.assetid: c23c2920-3b8b-4cd1-a570-bdeabcf11436
 title: ICE86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25df1e2a9c3ab610e78efd6f797cb916f0563e31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c96e572a99fc31fea540fa4fbaad4179d1e8f2ecadebfcd9222527ca6a4afac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894991"
 ---
 # <a name="ice86"></a>ICE86
 
-ICE86 genera un avviso se il pacchetto usa la proprietà [**AdminUser**](adminuser.md) nella colonna database del tipo di [condizione](condition.md) . Gli autori di pacchetti devono utilizzare la proprietà [**Privileged**](privileged.md) nelle istruzioni condizionali.
+ICE86 genera un avviso se il pacchetto usa la [**proprietà AdminUser**](adminuser.md) nella colonna del database di [tipo](condition.md) Condizione. Gli autori di pacchetti devono usare [**la proprietà Privileged**](privileged.md) nelle istruzioni condizionali.
 
 ## <a name="result"></a>Risultato
 
-ICE86 invia il seguente avviso.
+ICE86 invia l'avviso seguente.
 
 
 
-| Avviso di ICE86                                                                                               | Descrizione                                                            |
+| Avviso ICE86                                                                                               | Descrizione                                                            |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| Proprietà \` % s \` trovata nella colonna \` % s \` . \` % s \` nella riga% s. \`\`La proprietà Privileged è spesso più appropriata. | La proprietà [**AdminUser**](adminuser.md) è stata usata in un campo condizione. |
+| Proprietà \` %s \` trovata nella colonna \` \` %s. \` %s \` nella riga %s. \`La proprietà \` con privilegi è spesso più appropriata. | [**La proprietà AdminUser**](adminuser.md) è stata usata in un campo Condizione. |
 
 
 
@@ -33,7 +33,7 @@ ICE86 invia il seguente avviso.
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

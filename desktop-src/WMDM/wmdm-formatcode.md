@@ -1,9 +1,9 @@
 ---
-title: Enumerazione WMDM_FORMATCODE
-description: Il \_ tipo di enumerazione WMDM FORMATCODE definisce un elenco di codici di formato che descrivono i tipi di contenuto trasferiti da e verso un dispositivo.
+title: WMDM_FORMATCODE enumerazione
+description: Il tipo di enumerazione WMDM FORMATCODE definisce un elenco di codici di formato che descrivono i tipi di contenuto trasferiti \_ da e verso un dispositivo.
 ms.assetid: 203d9bdf-cbbd-4d06-8292-26c8a472e2aa
 keywords:
-- Enumerazione WMDM_FORMATCODE Windows Media Gestione dispositivi
+- WMDM_FORMATCODE di windows Media Device Manager
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d04db31578f36455fdf77bb4044ad45e5ca9f9a6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b09a388926a0f5fc11e24fc17fe4693b710e04aa321202e9cf31890d60d6642
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862911"
 ---
-# <a name="wmdm_formatcode-enumeration"></a>\_Enumerazione WMDM FORMATCODE
+# <a name="wmdm_formatcode-enumeration"></a>Enumerazione FORMATCODE WMDM \_
 
-Il tipo di enumerazione **WMDM \_ FORMATCODE** definisce un elenco di codici di formato che descrivono i tipi di contenuto trasferiti da e verso un dispositivo.
+Il **tipo di enumerazione WMDM \_ FORMATCODE** definisce un elenco di codici di formato che descrivono i tipi di contenuto trasferiti da e verso un dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -137,49 +137,49 @@ typedef enum tagWMDM_FORMATCODE {
 
 <dl> <dt>
 
-<span id="WMDM_FORMATCODE_NOTUSED"></span><span id="wmdm_formatcode_notused"></span>**WMDM \_ FORMATCODE \_ abituata**
+<span id="WMDM_FORMATCODE_NOTUSED"></span><span id="wmdm_formatcode_notused"></span>**WMDM \_ FORMATCODE \_ NOTUSED**
 </dt> <dd>
 
-Non viene utilizzato alcun codice di formato.
+Non viene usato alcun codice di formato.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ALLIMAGES"></span><span id="wmdm_formatcode_allimages"></span>**WMDM \_ FORMATCODE \_ ALLIMAGES**
 </dt> <dd>
 
-Codice di formattazione che può essere utilizzato per eseguire una query per tutte le immagini.
+Codice di formato che può essere usato per eseguire query per tutte le immagini.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_UNDEFINED"></span><span id="wmdm_formatcode_undefined"></span>**FORMATCODE WMDM non \_ \_ definito**
+<span id="WMDM_FORMATCODE_UNDEFINED"></span><span id="wmdm_formatcode_undefined"></span>**WMDM \_ FORMATCODE \_ NON DEFINITO**
 </dt> <dd>
 
-Codice del formato utilizzato per eseguire una query per tutti gli oggetti non definiti.
+Codice di formato usato per eseguire query per tutti gli oggetti non definiti.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_ASSOCIATION"></span><span id="wmdm_formatcode_association"></span>**\_associazione WMDM FORMATCODE \_**
+<span id="WMDM_FORMATCODE_ASSOCIATION"></span><span id="wmdm_formatcode_association"></span>**ASSOCIAZIONE FORMATCODE WMDM \_ \_**
 </dt> <dd>
 
-Codice del formato utilizzato per definire un collegamento tra due oggetti.
+Codice di formato usato per definire un collegamento tra due oggetti.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_SCRIPT"></span><span id="wmdm_formatcode_script"></span>**\_script WMDM FORMATCODE \_**
+<span id="WMDM_FORMATCODE_SCRIPT"></span><span id="wmdm_formatcode_script"></span>**WMDM \_ FORMATCODE \_ SCRIPT**
 </dt> <dd>
 
-Formattare il codice per un file di script.
+Formattare il codice per un file script.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_EXECUTABLE"></span><span id="wmdm_formatcode_executable"></span>**\_ \_ eseguibile WMDM FORMATCODE**
+<span id="WMDM_FORMATCODE_EXECUTABLE"></span><span id="wmdm_formatcode_executable"></span>**FILE ESEGUIBILE \_ WMDM \_ FORMATCODE**
 </dt> <dd>
 
 Formattare il codice per un file eseguibile.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_TEXT"></span><span id="wmdm_formatcode_text"></span>**\_testo FORMATCODE \_ WMDM**
+<span id="WMDM_FORMATCODE_TEXT"></span><span id="wmdm_formatcode_text"></span>**TESTO WMDM \_ FORMATCODE \_**
 </dt> <dd>
 
 Formattare il codice per un file di testo.
@@ -196,182 +196,182 @@ Formattare il codice per un file HTML.
 <span id="WMDM_FORMATCODE_DPOF"></span><span id="wmdm_formatcode_dpof"></span>**WMDM \_ FORMATCODE \_ DPOF**
 </dt> <dd>
 
-Codice del formato utilizzato per rappresentare il formato dell'ordine di stampa digitale.
+Codice di formato usato per rappresentare il formato dell'ordine di stampa digitale.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_AIFF"></span><span id="wmdm_formatcode_aiff"></span>**WMDM \_ FORMATCODE \_ AIFF**
 </dt> <dd>
 
-Codice del formato utilizzato per rappresentare il formato del file di interscambio audio.
+Codice di formato usato per rappresentare il formato di file di interscambio audio.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_WAVE"></span><span id="wmdm_formatcode_wave"></span>**WMDM \_ FORMATCODE \_ Wave**
+<span id="WMDM_FORMATCODE_WAVE"></span><span id="wmdm_formatcode_wave"></span>**WMDM \_ FORMATCODE \_ WAVE**
 </dt> <dd>
 
-Codice di formattazione usato per un file WAV.
+Codice di formato usato per un file WAV.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MP3"></span><span id="wmdm_formatcode_mp3"></span>**WMDM \_ FORMATCODE \_ MP3**
 </dt> <dd>
 
-Codice di formattazione usato per un file MP3.
+Codice di formato usato per un file MP3.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_AVI"></span><span id="wmdm_formatcode_avi"></span>**WMDM \_ FORMATCODE \_ AVI**
 </dt> <dd>
 
-Codice di formattazione usato per un file AVI.
+Codice di formato usato per un file AVI.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MPEG"></span><span id="wmdm_formatcode_mpeg"></span>**WMDM \_ FORMATCODE \_ MPEG**
 </dt> <dd>
 
-Codice di formattazione usato per un file MPEG.
+Codice di formato usato per un file MPEG.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ASF"></span><span id="wmdm_formatcode_asf"></span>**WMDM \_ FORMATCODE \_ ASF**
 </dt> <dd>
 
-Codice del formato utilizzato per rappresentare un file di formato di sistema avanzato (ASF).
+Codice di formato usato per rappresentare un file ASF (Advanced Systems Format).
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_RESERVED_FIRST"></span><span id="wmdm_formatcode_reserved_first"></span>**WMDM \_ FORMATCODE \_ riservato per \_ primo**
+<span id="WMDM_FORMATCODE_RESERVED_FIRST"></span><span id="wmdm_formatcode_reserved_first"></span>**WMDM \_ FORMATCODE \_ RESERVED \_ FIRST**
 </dt> <dd>
 
-Formattare il codice che è il primo in un intervallo riservato a PTP (Picture Transfer Protocol).
+Formatta il codice che è il primo in un intervallo riservato al protocollo PTP (Picture Transfer Protocol).
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_RESERVED_LAST"></span><span id="wmdm_formatcode_reserved_last"></span>**WMDM \_ FORMATCODE \_ riservato per \_ ultimo**
+<span id="WMDM_FORMATCODE_RESERVED_LAST"></span><span id="wmdm_formatcode_reserved_last"></span>**WMDM \_ FORMATCODE \_ RESERVED \_ LAST**
 </dt> <dd>
 
-Formattare il codice che è l'ultimo in un intervallo riservato per PTP.
+Formattare il codice ultimo in un intervallo riservato per PTP.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_UNDEFINED"></span><span id="wmdm_formatcode_image_undefined"></span>**\_immagine FORMATCODE WMDM non \_ \_ definita**
+<span id="WMDM_FORMATCODE_IMAGE_UNDEFINED"></span><span id="wmdm_formatcode_image_undefined"></span>**IMMAGINE WMDM \_ FORMATCODE \_ NON \_ DEFINITA**
 </dt> <dd>
 
-Codice del formato utilizzato per rappresentare l'immagine di un tipo non definito.
+Codice di formato usato per rappresentare e l'immagine di un tipo non definito.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_EXIF"></span><span id="wmdm_formatcode_image_exif"></span>**WMDM \_ FORMATCODE \_ Image \_ EXIF**
+<span id="WMDM_FORMATCODE_IMAGE_EXIF"></span><span id="wmdm_formatcode_image_exif"></span>**IMMAGINE WMDM \_ FORMATCODE \_ \_ EXIF**
 </dt> <dd>
 
-Formattare il codice per un file EXIF. Usato anche per le immagini JPEG non coperte da WMDM \_ FORMATCODE \_ Image \_ JP2 o WMDM \_ FORMATCODE \_ Image \_ JPX.
+Codice di formato per un file EXIF. Usato anche per le immagini JPEG non coperte da WMDM \_ FORMATCODE \_ IMAGE \_ JP2 o WMDM \_ FORMATCODE \_ IMAGE \_ JPX.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_TIFFEP"></span><span id="wmdm_formatcode_image_tiffep"></span>**WMDM \_ FORMATCODE \_ Image \_ TIFFEP**
+<span id="WMDM_FORMATCODE_IMAGE_TIFFEP"></span><span id="wmdm_formatcode_image_tiffep"></span>**TIFFEP IMMAGINE \_ WMDM FORMATCODE \_ \_**
 </dt> <dd>
 
-Codice di formattazione usato per le immagini di tipo Tagged Image File Format per la fotografia elettronica (TIFF/EP)
+Codice di formato usato per le immagini di tipo Tagged Image File Format for Electronic Photography (TIFF/EP)
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_FLASHPIX"></span><span id="wmdm_formatcode_image_flashpix"></span>**WMDM \_ FORMATCODE \_ Image \_ FlashPix**
+<span id="WMDM_FORMATCODE_IMAGE_FLASHPIX"></span><span id="wmdm_formatcode_image_flashpix"></span>**FLASHPIX IMMAGINE \_ WMDM FORMATCODE \_ \_**
 </dt> <dd>
 
-Formattare il codice per un file di tipo FPX.
+Codice di formato per un file di tipo FPX.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_BMP"></span><span id="wmdm_formatcode_image_bmp"></span>**WMDM \_ \_ immagine \_ BMP FORMATCODE**
+<span id="WMDM_FORMATCODE_IMAGE_BMP"></span><span id="wmdm_formatcode_image_bmp"></span>**IMMAGINE DEL CODICE DI FORMATO WMDM \_ \_ \_ BMP**
 </dt> <dd>
 
-Formattare il codice per un file di tipo BMP.
+Codice di formato per un file di tipo BMP.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_CIFF"></span><span id="wmdm_formatcode_image_ciff"></span>**WMDM \_ FORMATCODE \_ Image \_ CIFF**
+<span id="WMDM_FORMATCODE_IMAGE_CIFF"></span><span id="wmdm_formatcode_image_ciff"></span>**CIFF IMMAGINE \_ WMDM FORMATCODE \_ \_**
 </dt> <dd>
 
-Formattare il codice per un'immagine nel formato di file dell'immagine della fotocamera.
+Formattare il codice per un'immagine nel formato di file di immagine della fotocamera.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_GIF"></span><span id="wmdm_formatcode_image_gif"></span>**\_ \_ gif immagine FORMATCODE \_ WMDM**
+<span id="WMDM_FORMATCODE_IMAGE_GIF"></span><span id="wmdm_formatcode_image_gif"></span>**WMDM \_ FORMATCODE \_ IMAGE \_ GIF**
 </dt> <dd>
 
-Formattare il codice per un file GIF.
+Codice di formato per un file GIF.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_JFIF"></span><span id="wmdm_formatcode_image_jfif"></span>**WMDM \_ FORMATCODE \_ Image \_ JFIF**
+<span id="WMDM_FORMATCODE_IMAGE_JFIF"></span><span id="wmdm_formatcode_image_jfif"></span>**IMMAGINE WMDM \_ FORMATCODE \_ \_ JFIF**
 </dt> <dd>
 
-Formattare il codice per un file di tipo JFIF.
+Codice di formato per un file di tipo JFIF.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_PCD"></span><span id="wmdm_formatcode_image_pcd"></span>**WMDM \_ FORMATCODE \_ Image \_ PCD**
+<span id="WMDM_FORMATCODE_IMAGE_PCD"></span><span id="wmdm_formatcode_image_pcd"></span>**WMDM \_ FORMATCODE \_ IMAGE \_ PCD**
 </dt> <dd>
 
-Formattare il codice per un'immagine di tipo CD foto.
+Codice di formato per un'immagine di tipo photo cd.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_PICT"></span><span id="wmdm_formatcode_image_pict"></span>**WMDM \_ FORMATCODE \_ Image \_ PICT**
+<span id="WMDM_FORMATCODE_IMAGE_PICT"></span><span id="wmdm_formatcode_image_pict"></span>**IMMAGINE WMDM \_ FORMATCODE \_ IMAGE \_ PICT**
 </dt> <dd>
 
-Formattare il codice per un'immagine di tipo PICT.
+Codice di formato per un'immagine di tipo PICT.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_PNG"></span><span id="wmdm_formatcode_image_png"></span>**\_ \_ png immagine WMDM \_ FORMATCODE**
+<span id="WMDM_FORMATCODE_IMAGE_PNG"></span><span id="wmdm_formatcode_image_png"></span>**WMDM \_ FORMATCODE \_ IMAGE \_ PNG**
 </dt> <dd>
 
-Formattare il codice per un'immagine di tipo PNG.
+Codice di formato per un'immagine di tipo PNG.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_TIFF"></span><span id="wmdm_formatcode_image_tiff"></span>**\_ \_ TIFF immagine FORMATCODE \_ WMDM**
+<span id="WMDM_FORMATCODE_IMAGE_TIFF"></span><span id="wmdm_formatcode_image_tiff"></span>**TIFF IMMAGINE \_ WMDM FORMATCODE \_ \_**
 </dt> <dd>
 
-Formattare il codice per un file di tipo TIFF.
+Codice di formato per un file di tipo TIFF.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_TIFFIT"></span><span id="wmdm_formatcode_image_tiffit"></span>**WMDM \_ FORMATCODE \_ Image \_ TIFFIT**
+<span id="WMDM_FORMATCODE_IMAGE_TIFFIT"></span><span id="wmdm_formatcode_image_tiffit"></span>**TIFFIT IMMAGINE \_ WMDM FORMATCODE \_ \_**
 </dt> <dd>
 
-Formattare il codice per un'immagine di tipo Tagged Image File Format con la tecnologia di immagine.
+Formattare il codice per un'immagine di tipo Tagged Image File Format con tecnologia di immagine.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_JP2"></span><span id="wmdm_formatcode_image_jp2"></span>**WMDM \_ FORMATCODE \_ Image \_ JP2**
+<span id="WMDM_FORMATCODE_IMAGE_JP2"></span><span id="wmdm_formatcode_image_jp2"></span>**IMMAGINE WMDM \_ FORMATCODE \_ \_ JP2**
 </dt> <dd>
 
-Formattare il codice per un'immagine JPEG200.
+Codice di formato per un'immagine jpeg200.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_JPX"></span><span id="wmdm_formatcode_image_jpx"></span>**WMDM \_ FORMATCODE \_ Image \_ JPX**
+<span id="WMDM_FORMATCODE_IMAGE_JPX"></span><span id="wmdm_formatcode_image_jpx"></span>**IMMAGINE WMDM \_ FORMATCODE \_ \_ JPX**
 </dt> <dd>
 
-Formattare il codice per un'immagine basata su JPEG200, usando la registrazione di immagini ancora estese. L'estensione del nome file è in genere. JPF o. JPX.
+Codice di formato per un'immagine creata in JPEG200, usando la registrazione estesa dell'immagine. L'estensione del nome file è in genere .jpf o .jpx.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_RESERVED_FIRST"></span><span id="wmdm_formatcode_image_reserved_first"></span>**WMDM \_ FORMATCODE \_ Image \_ riservato per \_ primo**
+<span id="WMDM_FORMATCODE_IMAGE_RESERVED_FIRST"></span><span id="wmdm_formatcode_image_reserved_first"></span>**IMMAGINE WMDM \_ FORMATCODE \_ RISERVATA PER \_ \_ PRIMA**
 </dt> <dd>
 
-Formattare il codice che è il primo in un intervallo riservato per un riferimento a un'immagine in PTP.
+Formattare il codice che è il primo in un intervallo riservato per un riferimento all'immagine in PTP.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_IMAGE_RESERVED_LAST"></span><span id="wmdm_formatcode_image_reserved_last"></span>**WMDM \_ FORMATCODE \_ Image \_ reserved \_ Last**
+<span id="WMDM_FORMATCODE_IMAGE_RESERVED_LAST"></span><span id="wmdm_formatcode_image_reserved_last"></span>**IMMAGINE WMDM \_ FORMATCODE \_ RISERVATA PER \_ \_ ULTIMA**
 </dt> <dd>
 
-Formattare il codice che rappresenta l'ultimo in un intervallo riservato per un riferimento a un'immagine in PTP.
+Formattare il codice che è l'ultimo in un intervallo riservato per un riferimento all'immagine in PTP.
 
 </dd> <dt>
 
@@ -382,38 +382,38 @@ Formattare il codice quando il firmware non è definito.
 
 </dd> <dt>
 
-<span id="________WMDM_FORMATCODE_WBMP_"></span><span id="________wmdm_formatcode_wbmp_"></span>**WMDM \_ \_WBMP FORMATCODE** 
+<span id="________WMDM_FORMATCODE_WBMP_"></span><span id="________wmdm_formatcode_wbmp_"></span>**WMDM \_ FORMATCODE \_ WBMP** 
 </dt> <dd>
 
-Formattare il codice per un'immagine di bitmap Wireless Application Protocol (wbmp).
+Formattare il codice per un Wireless Application Protocol bitmap (con estensione wbmp).
 
 </dd> <dt>
 
-<span id="________________WMDM_FORMATCODE_JPEGXR_"></span><span id="________________wmdm_formatcode_jpegxr_"></span>**WMDM \_ \_JPEGXR FORMATCODE** 
+<span id="________________WMDM_FORMATCODE_JPEGXR_"></span><span id="________________wmdm_formatcode_jpegxr_"></span>**WMDM \_ FORMATCODE \_ JPEGXR** 
 </dt> <dd>
 
-Formattare il codice per un'immagine della foto HD
+Formattare il codice per un'immagine HD Photo
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_WINDOWSIMAGEFORMAT"></span><span id="wmdm_formatcode_windowsimageformat"></span>**WMDM \_ FORMATCODE \_ WINDOWSIMAGEFORMAT**
 </dt> <dd>
 
-Formattare il codice per il formato di immagine Windows.
+Codice di formato per Windows immagine.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDAUDIO"></span><span id="wmdm_formatcode_undefinedaudio"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDAUDIO**
 </dt> <dd>
 
-Formattare il codice per un file audio di tipo non definito.
+Codice di formato per un file audio di tipo non definito.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_WMA"></span><span id="wmdm_formatcode_wma"></span>**WMDM \_ FORMATCODE \_ WMA**
 </dt> <dd>
 
-Formattare il codice per un file di Windows Media Audio (WMA).
+Formattare il codice per un Windows file WMA (Media Audio).
 
 </dd> <dt>
 
@@ -427,35 +427,35 @@ Formattare il codice per un file audio con codifica Vorbis in un contenitore Ogg
 <span id="WMDM_FORMATCODE_AAC"></span><span id="wmdm_formatcode_aac"></span>**WMDM \_ FORMATCODE \_ AAC**
 </dt> <dd>
 
-Formattare il codice per un file AAC (Advanced Audio Coding).
+Codice di formato per un file AAC (Advanced Audio Coding).
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_AUDIBLE"></span><span id="wmdm_formatcode_audible"></span>**WMDM \_ FORMATCODE \_ udibile**
+<span id="WMDM_FORMATCODE_AUDIBLE"></span><span id="wmdm_formatcode_audible"></span>**WMDM \_ FORMATCODE \_ AUDIBLE**
 </dt> <dd>
 
-Formattare il codice per un file acustico.
+Formattare il codice per un file udibile.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_FLAC"></span><span id="wmdm_formatcode_flac"></span>**WMDM \_ FORMATCODE \_ FLAC**
 </dt> <dd>
 
-Formattare il codice per un file FLAC (lossless audio codec) gratuito.
+Formattare il codice per un file FLAC (Free Lossless Audio Codec).
 
 </dd> <dt>
 
-<span id="________WMDM_FORMATCODE_QCELP_"></span><span id="________wmdm_formatcode_qcelp_"></span>**WMDM \_ \_QCELP FORMATCODE** 
+<span id="________WMDM_FORMATCODE_QCELP_"></span><span id="________wmdm_formatcode_qcelp_"></span>**WMDM \_ FORMATCODE \_ QCELP** 
 </dt> <dd>
 
-Codice di formattazione per un file di codec QCELP (codice Qualcomm Excited Linear Prediction).
+Codice di formato per un file di codec QCELP (Code Excited Linear Prediction) qualcomm.
 
 </dd> <dt>
 
-<span id="________WMDM_FORMATCODE_AMR_"></span><span id="________wmdm_formatcode_amr_"></span>**WMDM \_ \_AMR FORMATCODE** 
+<span id="________WMDM_FORMATCODE_AMR_"></span><span id="________wmdm_formatcode_amr_"></span>**WMDM \_ FORMATCODE \_ AMR** 
 </dt> <dd>
 
-Formattare il codice per un file di codec AMR (Adaptive multirate audio).
+Codice di formato per un file codec AMR (Adaptive Multi-Rate Audio).
 
 </dd> <dt>
 
@@ -469,53 +469,53 @@ Formattare il codice per un file video con un tipo non definito.
 <span id="WMDM_FORMATCODE_WMV"></span><span id="wmdm_formatcode_wmv"></span>**WMDM \_ FORMATCODE \_ WMV**
 </dt> <dd>
 
-Formattare il codice per un file di Windows Media Video (WMV).
+Formattare il codice per Windows file Media Video (WMV).
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MP4"></span><span id="wmdm_formatcode_mp4"></span>**WMDM \_ FORMATCODE \_ MP4**
 </dt> <dd>
 
-Formattare il codice per un file MP4.
+Codice di formato per un file MP4.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MP2"></span><span id="wmdm_formatcode_mp2"></span>**WMDM \_ FORMATCODE \_ MP2**
 </dt> <dd>
 
-Formattare il codice per un file MP2.
+Codice di formato per un file MP2.
 
 </dd> <dt>
 
 <span id="________WMDM_FORMATCODE_3G2_"></span><span id="________wmdm_formatcode_3g2_"></span>**WMDM \_ FORMATCODE \_ 3G2** 
 </dt> <dd>
 
-Formattare il codice per un formato del contenitore multimediale 3G2 (3GPP2). Un file di questo tipo può contenere audio, video o testo.
+Codice di formato per un formato contenitore multimediale 3G2 (3GPP2). Un file di questo tipo può contenere audio, video o testo.
 
 </dd> <dt>
 
 <span id="________________WMDM_FORMATCODE_AVCHD_"></span><span id="________________wmdm_formatcode_avchd_"></span>**WMDM \_ FORMATCODE \_ AVCHD** 
 </dt> <dd>
 
-Formattare il codice per un file video AVCHD (Advanced Video Coding High Definition).
+Codice di formato per un file video AVCHD (Advanced Video Coding High Definition).
 
 </dd> <dt>
 
-<span id="________________WMDM_FORMATCODE_ATSCTS_"></span><span id="________________wmdm_formatcode_atscts_"></span>**WMDM \_ FORMATCODE \_** 
+<span id="________________WMDM_FORMATCODE_ATSCTS_"></span><span id="________________wmdm_formatcode_atscts_"></span>**WMDM \_ FORMATCODE \_ ATSCTS** 
 </dt> <dd>
 
-Formattare il codice per lo standard del formato ATSCs (Advanced Television Systems Committee).
+Codice di formato per lo standard di formato ATSCTS (Advanced Tv Systems Committee).
 
 </dd> <dt>
 
-<span id="________________________WMDM_FORMATCODE_DVBTS_"></span><span id="________________________wmdm_formatcode_dvbts_"></span>**WMDM \_ \_DVBTS FORMATCODE** 
+<span id="________________________WMDM_FORMATCODE_DVBTS_"></span><span id="________________________wmdm_formatcode_dvbts_"></span>**WMDM \_ FORMATCODE \_ DVBTS** 
 </dt> <dd>
 
-Formattare il codice per un video MPEG-2 e MPEG-1 Layer II, oppure AC-3, audio all'interno di un flusso di trasporto MPEG-2 conforme a DVB.
+Formattare il codice per un video MPEG-2 e l'audio MPEG-1 Layer II o AC-3 all'interno di un flusso di trasporto MPEG-2 conforme a DVB.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_UNDEFINEDCOLLECTION"></span><span id="wmdm_formatcode_undefinedcollection"></span>**WMDM \_ FORMATCODE \_ undefined**
+<span id="WMDM_FORMATCODE_UNDEFINEDCOLLECTION"></span><span id="wmdm_formatcode_undefinedcollection"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDCOLLECTION**
 </dt> <dd>
 
 Formattare il codice per una raccolta di un tipo non definito.
@@ -525,70 +525,70 @@ Formattare il codice per una raccolta di un tipo non definito.
 <span id="WMDM_FORMATCODE_ABSTRACTMULTIMEDIAALBUM"></span><span id="wmdm_formatcode_abstractmultimediaalbum"></span>**WMDM \_ FORMATCODE \_ ABSTRACTMULTIMEDIAALBUM**
 </dt> <dd>
 
-Formattare il codice per un album multimediale in cui l'oggetto contiene le proprietà di un album multimediale e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un album multimediale in cui l'oggetto contiene le proprietà di un album multimediale e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTIMAGEALBUM"></span><span id="wmdm_formatcode_abstractimagealbum"></span>**WMDM \_ FORMATCODE \_ ABSTRACTIMAGEALBUM**
 </dt> <dd>
 
-Formattare il codice per un album di immagini in cui l'oggetto contiene le proprietà di un album di immagini e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un album di immagini in cui l'oggetto contiene le proprietà di un album immagine e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTAUDIOALBUM"></span><span id="wmdm_formatcode_abstractaudioalbum"></span>**WMDM \_ FORMATCODE \_ ABSTRACTAUDIOALBUM**
 </dt> <dd>
 
-Formattare il codice per un album audio in cui l'oggetto contiene le proprietà di un album audio e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un album audio in cui l'oggetto contiene le proprietà di un album audio e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTVIDEOALBUM"></span><span id="wmdm_formatcode_abstractvideoalbum"></span>**WMDM \_ FORMATCODE \_ ABSTRACTVIDEOALBUM**
 </dt> <dd>
 
-Formattare il codice per un album video in cui l'oggetto contiene le proprietà di un album video e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un album video in cui l'oggetto contiene le proprietà di un album video e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTAUDIOVIDEOPLAYLIST"></span><span id="wmdm_formatcode_abstractaudiovideoplaylist"></span>**WMDM \_ FORMATCODE \_ ABSTRACTAUDIOVIDEOPLAYLIST**
 </dt> <dd>
 
-Formattare il codice per una playlist audio/video in cui l'oggetto contiene le proprietà di una playlist audio/video e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per una playlist audio/video in cui l'oggetto contiene le proprietà di una playlist audio/video e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTCONTACTGROUP"></span><span id="wmdm_formatcode_abstractcontactgroup"></span>**WMDM \_ FORMATCODE \_ ABSTRACTCONTACTGROUP**
 </dt> <dd>
 
-Formattare il codice per un gruppo di contatti in cui l'oggetto contiene le proprietà di un gruppo di contatti e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Codice di formato per un gruppo di contatti in cui l'oggetto contiene le proprietà di un gruppo di contatti e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTMESSAGEFOLDER"></span><span id="wmdm_formatcode_abstractmessagefolder"></span>**WMDM \_ FORMATCODE \_ ABSTRACTMESSAGEFOLDER**
 </dt> <dd>
 
-Formattare il codice per una cartella di messaggi in cui l'oggetto contiene le proprietà di una cartella del messaggio e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Codice di formato per una cartella di messaggi in cui l'oggetto contiene le proprietà di una cartella di messaggi e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTCHAPTEREDPRODUCTION"></span><span id="wmdm_formatcode_abstractchapteredproduction"></span>**WMDM \_ FORMATCODE \_ ABSTRACTCHAPTEREDPRODUCTION**
 </dt> <dd>
 
-Formattare il codice per una produzione con capitolo in cui l'oggetto contiene le proprietà di una produzione con capitoli e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per una produzione con capitoli in cui l'oggetto contiene le proprietà di una produzione con capitoli e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_WPLPLAYLIST"></span><span id="wmdm_formatcode_wplplaylist"></span>**WMDM \_ FORMATCODE \_ WPLPLAYLIST**
 </dt> <dd>
 
-Formattare il codice per una playlist formattata con la formattazione Windows Media playlist.
+Formattare il codice per una playlist formattata con la Windows playlist media.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_M3UPLAYLIST"></span><span id="wmdm_formatcode_m3uplaylist"></span>**WMDM \_ FORMATCODE \_ M3UPLAYLIST**
 </dt> <dd>
 
-Formattare il codice per una playlist con la formattazione M3U.
+Formattare il codice per una playlist con formattazione M3U.
 
 </dd> <dt>
 
@@ -609,35 +609,35 @@ Formattare il codice per una playlist con formattazione ASX.
 <span id="WMDM_FORMATCODE_PLSPLAYLIST"></span><span id="wmdm_formatcode_plsplaylist"></span>**WMDM \_ FORMATCODE \_ PLSPLAYLIST**
 </dt> <dd>
 
-Formattare il codice per una playlist con la formattazione dei PLS.
+Formattare il codice per una playlist con formattazione PLS.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDDOCUMENT"></span><span id="wmdm_formatcode_undefineddocument"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDDOCUMENT**
 </dt> <dd>
 
-Formattare il codice per un documento di tipo non definito.
+Codice di formato per un documento di tipo non definito.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTDOCUMENT"></span><span id="wmdm_formatcode_abstractdocument"></span>**WMDM \_ FORMATCODE \_ ABSTRACTDOCUMENT**
 </dt> <dd>
 
-Formattare il codice per un documento in cui l'oggetto contiene le proprietà di un documento e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un documento in cui l'oggetto contiene le proprietà di un documento e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_XMLDOCUMENT"></span><span id="wmdm_formatcode_xmldocument"></span>**\_XMLDOCUMENT WMDM FORMATCODE \_**
+<span id="WMDM_FORMATCODE_XMLDOCUMENT"></span><span id="wmdm_formatcode_xmldocument"></span>**WMDM \_ FORMATCODE \_ XMLDOCUMENT**
 </dt> <dd>
 
-Formattare il codice per un documento XML.
+Codice di formato per un documento XML.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MICROSOFTWORDDOCUMENT"></span><span id="wmdm_formatcode_microsoftworddocument"></span>**WMDM \_ FORMATCODE \_ MICROSOFTWORDDOCUMENT**
 </dt> <dd>
 
-Formattare il codice per un documento di Microsoft Word.
+Codice di formato per un Microsoft Word documento.
 
 </dd> <dt>
 
@@ -651,126 +651,126 @@ Formattare il codice per un documento HTML compilato.
 <span id="WMDM_FORMATCODE_MICROSOFTEXCELSPREADSHEET"></span><span id="wmdm_formatcode_microsoftexcelspreadsheet"></span>**WMDM \_ FORMATCODE \_ MICROSOFTEXCELSPREADSHEET**
 </dt> <dd>
 
-Formattare il codice per un foglio di calcolo di Microsoft Excel.
+Codice di formato per un foglio Microsoft Excel dati.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_MICROSOFTPOWERPOINTDOCUMENT"></span><span id="wmdm_formatcode_microsoftpowerpointdocument"></span>**WMDM \_ FORMATCODE \_ MICROSOFTPOWERPOINTDOCUMENT**
 </dt> <dd>
 
-Formattare il codice per un documento di Microsoft PowerPoint.
+Codice di formato per un documento PowerPoint Microsoft.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDMESSAGE"></span><span id="wmdm_formatcode_undefinedmessage"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDMESSAGE**
 </dt> <dd>
 
-Formattare il codice per un messaggio di tipo non definito.
+Codice di formato per un messaggio di tipo non definito.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTMESSAGE"></span><span id="wmdm_formatcode_abstractmessage"></span>**WMDM \_ FORMATCODE \_ ABSTRACTMESSAGE**
 </dt> <dd>
 
-Formattare il codice per un messaggio in cui l'oggetto contiene le proprietà di un messaggio e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un messaggio in cui l'oggetto contiene le proprietà di un messaggio e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDCONTACT"></span><span id="wmdm_formatcode_undefinedcontact"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDCONTACT**
 </dt> <dd>
 
-Formattare il codice per un contatto di tipo non definito.
+Codice di formato per un contatto di tipo non definito.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTCONTACT"></span><span id="wmdm_formatcode_abstractcontact"></span>**WMDM \_ FORMATCODE \_ ABSTRACTCONTACT**
 </dt> <dd>
 
-Formattare il codice per un contatto in cui l'oggetto contiene le proprietà di un contatto e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Codice di formato per un contatto in cui l'oggetto contiene le proprietà di un contatto e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_VCARD2"></span><span id="wmdm_formatcode_vcard2"></span>**WMDM \_ FORMATCODE \_ VCARD2**
 </dt> <dd>
 
-Formattare il codice per una scheda elettronica con la formattazione di vCard versione 2.
+Codice di formato per una scheda elettronica con formattazione vcard versione 2.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_VCARD3"></span><span id="wmdm_formatcode_vcard3"></span>**WMDM \_ FORMATCODE \_ VCARD3**
 </dt> <dd>
 
-Formattare il codice per una scheda elettronica con la formattazione di vCard versione 3.
+Codice di formato per una scheda elettronica con formattazione vcard versione 3.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDCALENDARITEM"></span><span id="wmdm_formatcode_undefinedcalendaritem"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDCALENDARITEM**
 </dt> <dd>
 
-Formattare il codice per un elemento del calendario elettronico di tipo non definito.
+Codice di formato per un elemento di calendario elettronico di tipo non definito.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_ABSTRACTCALENDARITEM"></span><span id="wmdm_formatcode_abstractcalendaritem"></span>**WMDM \_ FORMATCODE \_ ABSTRACTCALENDARITEM**
 </dt> <dd>
 
-Formattare il codice per un elemento del calendario in cui l'oggetto contiene le proprietà di un elemento del calendario e, facoltativamente, i dati. Tutti i dati contenuti sono di un formato non definito rispetto alla specifica MTP.
+Formattare il codice per un elemento del calendario in cui l'oggetto contiene le proprietà di un elemento del calendario e, facoltativamente, i dati. Tutti i dati contenuti hanno un formato non definito rispetto alla specifica MTP.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_VCALENDAR1"></span><span id="wmdm_formatcode_vcalendar1"></span>**WMDM \_ FORMATCODE \_ VCALENDAR1**
 </dt> <dd>
 
-Formattare il codice per un elemento del calendario elettronico con la formattazione della versione 1 di vCalendar.
+Codice di formato per un elemento del calendario elettronico con formattazione vcalendar versione 1.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_VCALENDAR2"></span><span id="wmdm_formatcode_vcalendar2"></span>**WMDM \_ FORMATCODE \_ VCALENDAR2**
 </dt> <dd>
 
-Formattare il codice per un elemento del calendario elettronico con la formattazione vCalendar versione 2.
+Codice di formato per un elemento del calendario elettronico con formattazione vcalendar versione 2.
 
 </dd> <dt>
 
 <span id="WMDM_FORMATCODE_UNDEFINEDWINDOWSEXECUTABLE"></span><span id="wmdm_formatcode_undefinedwindowsexecutable"></span>**WMDM \_ FORMATCODE \_ UNDEFINEDWINDOWSEXECUTABLE**
 </dt> <dd>
 
-Formattare il codice per un eseguibile basato su Windows di tipo non definito.
+Formattare il codice per un Windows eseguibile basato su un tipo non definito.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_MEDIA_CAST"></span><span id="wmdm_formatcode_media_cast"></span>**\_ \_ cast multimediale WMDM \_ FORMATCODE**
+<span id="WMDM_FORMATCODE_MEDIA_CAST"></span><span id="wmdm_formatcode_media_cast"></span>**WMDM \_ FORMATCODE \_ MEDIA \_ CAST**
 </dt> <dd>
 
-Formattare il codice per un oggetto cast multimediale.
+Codice di formato per un oggetto media cast.
 
 </dd> <dt>
 
-<span id="WMDM_FORMATCODE_SECTION"></span><span id="wmdm_formatcode_section"></span>**\_sezione WMDM FORMATCODE \_**
+<span id="WMDM_FORMATCODE_SECTION"></span><span id="wmdm_formatcode_section"></span>**SEZIONE \_ \_ FORMATCODE WMDM**
 </dt> <dd>
 
 Formattare il codice per una sezione di dati contenuta in un altro oggetto.
 
 </dd> <dt>
 
-<span id="________________________________WMDM_FORMATCODE_3G2A_"></span><span id="________________________________wmdm_formatcode_3g2a_"></span>**WMDM \_ \_3G2A FORMATCODE** 
+<span id="________________________________WMDM_FORMATCODE_3G2A_"></span><span id="________________________________wmdm_formatcode_3g2a_"></span>**WMDM \_ FORMATCODE \_ 3G2A** 
 </dt> <dd>
 
-Formattare il codice per un formato di contenitore multimediale 3G2A (3GPP2A).
+Codice di formato per un formato contenitore multimediale 3G2A (3GPP2A).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per individuare i formati supportati da un dispositivo, un'applicazione può usare [**IWMDMDevice3:: GetProperty**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getproperty) per eseguire query sulla proprietà del dispositivo **g \_ wszWMDMFormatsSupported** .
+Per individuare i formati supportati da un dispositivo, un'applicazione può usare [**IWMDMDevice3::GetProperty**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getproperty) per eseguire una query sulla proprietà del dispositivo **\_ g wszWMDMFormatsSupported.**
 
-Per individuare le funzionalità del dispositivo per un particolare formato, un'applicazione può chiamare [**IWMDMDevice3:: GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability).
+Per individuare le funzionalità del dispositivo per un particolare formato, un'applicazione può chiamare [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability).
 
-Un'applicazione può impostare il codice di formato durante la creazione di una risorsa di archiviazione nel dispositivo includendo la proprietà **g \_ wszWMDMFormatCode** nei metadati passati nel parametro *pMetaData* di una chiamata a [**IWMDMStorageControl3:: Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3).
+Un'applicazione può impostare il codice di formato durante la creazione di una memoria nel dispositivo includendo la proprietà **\_ g wszWMDMFormatCode nei** metadati passati nel parametro *pMetaData* di una chiamata a [**IWMDMStorageControl3::Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3).
 
-Un'applicazione può eseguire una query sul codice del formato di un'archiviazione chiamando [**IWMDMStorage3:: GetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-getmetadata) o [**IWMDMStorage4:: GetSpecifiedMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getspecifiedmetadata) e recuperando la proprietà **g \_ wszWMDMFormatCode** .
+Un'applicazione può eseguire query sul codice di formato di una archiviazione chiamando [**IWMDMStorage3::GetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-getmetadata) o [**IWMDMStorage4::GetSpecifiedMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getspecifiedmetadata) e recuperando la proprietà **g \_ wszWMDMFormatCode.**
 
-Se il dispositivo supporta l'impostazione del codice del formato dopo la creazione dello spazio di archiviazione, un'applicazione può usare [**IWMDMStorage3::**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata) SetProperty per impostare la proprietà **g \_ wszWMDMFormatCode** . Alcuni dispositivi potrebbero non consentire la modifica del codice del formato dopo la creazione dell'archiviazione nel dispositivo. Pertanto, è consigliabile impostare questa proprietà insieme ai metadati passati in [**IWMDMStorageControl3:: Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3) .
+Se il dispositivo supporta l'impostazione del codice di formato dopo la creazione dell'archiviazione, un'applicazione può usare [**IWMDMStorage3::SetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata) per impostare la proprietà **\_ g wszWMDMFormatCode.** Alcuni dispositivi potrebbero non consentire la modifica del codice del formato dopo la creazione dello spazio di archiviazione nel dispositivo. Pertanto, è consigliabile impostare questa proprietà insieme ai metadati passati in [**IWMDMStorageControl3::Insert3.**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -778,7 +778,7 @@ Se il dispositivo supporta l'impostazione del codice del formato dopo la creazio
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -792,13 +792,13 @@ Se il dispositivo supporta l'impostazione del codice del formato dopo la creazio
 [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability)
 </dt> <dt>
 
-[**IWMDMDevice3:: GetProperty**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getproperty)
+[**IWMDMDevice3::GetProperty**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getproperty)
 </dt> <dt>
 
-[**IWMDMStorage3:: GetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-getmetadata)
+[**IWMDMStorage3::GetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-getmetadata)
 </dt> <dt>
 
-[**IWMDMStorage3:: tometadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata)
+[**IWMDMStorage3::SetMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setmetadata)
 </dt> <dt>
 
 [**IWMDMStorage4::GetSpecifiedMetadata**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage4-getspecifiedmetadata)

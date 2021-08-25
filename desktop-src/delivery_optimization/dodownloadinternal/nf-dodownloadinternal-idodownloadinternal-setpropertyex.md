@@ -1,8 +1,8 @@
 ---
-title: 'Metodo IDODownloadInternal:: SetPropertyEx'
-description: Imposta una proprietà di download estesa. Il metodo accetta un puntatore a una **variante** che contiene un valore della proprietà specifico da applicare al download.
+title: Metodo IDODownloadInternal::SetPropertyEx
+description: Imposta una proprietà di download estesa. Il metodo accetta un puntatore a **un variant** che contiene un valore di proprietà specifico da applicare al download.
 keywords:
-- 'Metodo IDODownloadInternal:: SetPropertyEx'
+- Metodo IDODownloadInternal::SetPropertyEx
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2019
-ms.openlocfilehash: e6630cc3e767531dd94da39fe73d88284c9ca0d0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d6156f4309c0eac9d2d250c85f7e9ab365e4a3b1e4072aabec7f6aa7e17c437f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858801"
 ---
-# <a name="idodownloadinternalsetpropertyex-method"></a>Metodo IDODownloadInternal:: SetPropertyEx
+# <a name="idodownloadinternalsetpropertyex-method"></a>Metodo IDODownloadInternal::SetPropertyEx
 
 > [!IMPORTANT]
-> L'interfaccia **IDODownloadInternal** è deprecata. Usare invece l'interfaccia [IDODownload](../do/nn-do-idodownload.md) .
+> **L'interfaccia IDODownloadInternal** è deprecata. Usare invece [l'interfaccia IDODownload.](../do/nn-do-idodownload.md)
 
-Imposta una proprietà di download estesa. Il metodo accetta un puntatore a una **variante** che contiene un valore della proprietà specifico da applicare al download.
+Imposta una proprietà di download estesa. Il metodo accetta un puntatore a **un variant** che contiene un valore di proprietà specifico da applicare al download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,25 +41,25 @@ HRESULT SetPropertyEx(
 
 `propId`
 
-ID di proprietà obbligatorio da impostare (di tipo **DODownloadPropertyEx**).
+ID di proprietà obbligatorio da impostare (di **tipo DODownloadPropertyEx).**
 
 `propVal`
 
-Valore della proprietà da impostare, archiviato in una **variante**.
+Valore della proprietà da impostare, archiviato in un **variant.**
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [codice di errore](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [](/windows/desktop/com/com-error-codes-10).
 
 |Valore restituito|Descrizione|
 |-|-|
-|DO_E_UNKNOWN_PROPERTY_ID|*propid* è sconosciuto.|
-|DO_E_INVALID_STATE|Il download non è attualmente in uno stato che consente di impostare le proprietà.|
+|DO_E_UNKNOWN_PROPERTY_ID|*propId* è sconosciuto.|
+|DO_E_INVALID_STATE|Il download non è attualmente in uno stato che consente l'impostazione delle proprietà.|
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | DODownloadInternal. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | DODownloadInternal.h |

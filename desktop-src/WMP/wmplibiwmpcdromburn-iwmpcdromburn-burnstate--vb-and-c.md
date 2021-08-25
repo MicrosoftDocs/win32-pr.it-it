@@ -1,11 +1,11 @@
 ---
-title: Proprietà burnState di IWMPCdromBurn
-description: La proprietà burnState ottiene un valore di enumerazione che indica lo stato Burn corrente.
+title: Proprietà burnState IWMPCdrom BurnState
+description: La proprietà burnState ottiene un valore di enumerazione che indica lo stato di masterizzazione corrente.
 ms.assetid: 2bb543f9-9e4c-4425-99d6-ac89ef7f5807
 keywords:
-- Finestra delle proprietà di burnState Media Player
-- Proprietà di burnState Media Player Windows, interfaccia IWMPCdromBurn
-- Interfaccia IWMPCdromBurn Windows Media Player, proprietà burnState
+- proprietà burnState Windows Media Player
+- proprietà burnState Windows Media Player, interfaccia IWMPCdromBurn
+- Interfaccia IWMPCdromBurn Windows Media Player , proprietà burnState
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c6b1aa8ec39f032e8f130a75370131bd2894c64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 871d0884c9e5bf60a666f299953cff77d9a458b5a56f505c0588fafdb740023b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862041"
 ---
-# <a name="iwmpcdromburnburnstate-property"></a>Proprietà IWMPCdromBurn:: burnState
+# <a name="iwmpcdromburnburnstate-property"></a>Proprietà IWMPCdromBurn::burnState
 
-La proprietà **burnState** ottiene un valore di enumerazione che indica lo stato Burn corrente.
+La **proprietà burnState** ottiene un valore di enumerazione che indica lo stato di masterizzazione corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -49,7 +49,7 @@ Public ReadOnly Property burnState As WMPBurnState
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto **wmplib. WMPBurnState** che corrisponde a un valore dell'enumerazione **WMPBurnState** che indica lo stato corrente.
+**WMPLib.WMPKindState** che è un valore **dell'enumerazione WMPKindState** che indica lo stato corrente.
 
 ## <a name="requirements"></a>Requisiti
 

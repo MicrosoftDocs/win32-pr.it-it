@@ -1,6 +1,6 @@
 ---
 title: Attributo ReleaseDateYearMonthDay
-description: L'attributo ReleaseDateYearMonthDay è la parte relativa all'anno, al mese e al giorno della data della versione originale dell'elemento.
+description: L'attributo ReleaseDateYearMonthDay è la parte dell'anno, del mese e del giorno della data della versione originale dell'elemento.
 ms.assetid: dc10af60-b30f-4ad6-88ad-9af646eccdce
 keywords:
 - Attributo ReleaseDateYearMonthDay Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e2d6d5d2bdc88f2118ccb7c1e6683ac819f1ea7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce3b8f8773f0439c7f507ed3a75ee3cab76e99161b49eb4e40e1c0a11e733e97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861471"
 ---
 # <a name="releasedateyearmonthday-attribute"></a>Attributo ReleaseDateYearMonthDay
 
-L'attributo **ReleaseDateYearMonthDay** è la parte relativa all'anno, al mese e al giorno della data della versione originale dell'elemento.
+**L'attributo ReleaseDateYearMonthDay** è la parte dell'anno, del mese e del giorno della data della versione originale dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **ReleaseDateYearMonthDay** è la parte relativa all'anno, al mese e
 
 Questo attributo viene archiviato solo nel database di libreria (o nella cache).
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

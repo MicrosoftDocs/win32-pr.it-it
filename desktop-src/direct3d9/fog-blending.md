@@ -1,19 +1,19 @@
 ---
-description: La fusione di nebbia si riferisce all'applicazione del fattore di nebbia ai colori dell'oggetto e della nebbia per produrre il colore finale visualizzato in una scena, come descritto in formule di nebbia (Direct3D 9).
+description: La fusione dello sfumamento si riferisce all'applicazione del fattore di riempimento ai colori dell'oggetto e dell'oggetto per produrre il colore finale visualizzato in una scena, come descritto in Formule dei colori (Direct3D 9).
 ms.assetid: b5b43f12-bbed-4464-aebc-02ad6dab1951
-title: Blending di nebbia (Direct3D 9)
+title: Blending Di Blending (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa918715a7bbe37b200568a0a9098135c5558b0d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f60f3402daf71a3fce14af936334c3d96e928d3469452eafb94d139594bb0b19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894021"
 ---
-# <a name="fog-blending-direct3d-9"></a>Blending di nebbia (Direct3D 9)
+# <a name="fog-blending-direct3d-9"></a>Blending Di Blending (Direct3D 9)
 
-La fusione di nebbia si riferisce all'applicazione del fattore di nebbia ai colori dell'oggetto e della nebbia per produrre il colore finale visualizzato in una scena, come descritto in [formule di nebbia (Direct3D 9)](fog-formulas.md). Lo \_ stato di rendering FOGENABLE di D3DRS controlla la fusione di nebbia. Impostare questo stato di rendering su **true** per abilitare la fusione di nebbia, come illustrato nel codice di esempio seguente. Il valore predefinito è **false**.
+La fusione degli elementi si riferisce all'applicazione del fattore di colore dei colori degli oggetti e degli oggetti per produrre il colore finale visualizzato in una scena, come descritto in Formula dei concis [(Direct3D 9).](fog-formulas.md) Lo stato di rendering di D3DRS \_ FOGENABLE controlla la fusione delle sfumature. Impostare questo stato di rendering su **TRUE per** abilitare la fusione delle sfumature, come illustrato nel codice di esempio seguente. Il valore predefinito è **FALSE.**
 
 
 ```
@@ -29,13 +29,13 @@ if FAILED(hr)
 
 
 
-È necessario abilitare la fusione di nebbia sia per la nebbia dei pixel che per il vertice. Per informazioni sull'uso di questi tipi di nebbia, vedere [pixel Fog (Direct3D 9)](pixel-fog.md) e [Vertex Fog (Direct3D 9)](vertex-fog.md).
+È necessario abilitare la fusione delle sfumature sia per pixel pixel che per vertice. Per informazioni sull'uso di questi tipi di ami, vedere [Pixel Coordinate (Direct3D 9)](pixel-fog.md) e [Vertex Risoluzione (Direct3D 9).](vertex-fog.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Tipi di nebbia](fog-types.md)
+[Tipi Disami](fog-types.md)
 </dt> </dl>
 
  

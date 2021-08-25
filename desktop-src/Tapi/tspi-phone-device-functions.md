@@ -1,49 +1,49 @@
 ---
-description: Questa sezione contiene un elenco alfabetico delle funzioni del dispositivo telefonico nella telefonia SPI.
+description: Questa sezione contiene un elenco alfabetico delle funzioni dei dispositivi telefonici nella spi di telefonia.
 ms.assetid: 6210a205-0ab6-4695-b4f4-62f8e018bf0e
-title: Funzioni del dispositivo Phone TSPI
+title: Funzioni del dispositivo Telefono TSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76659b787e66005e46e13872cc0c2ff7e6639f88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9320da72fa3bcd9f73d5b56b793c268dd35e4e2f5cf977e04b50a5b1de6162b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772941"
 ---
-# <a name="tspi-phone-device-functions"></a>Funzioni del dispositivo Phone TSPI
+# <a name="tspi-phone-device-functions"></a>Funzioni del dispositivo Telefono TSPI
 
-Questa sezione contiene un elenco alfabetico delle funzioni del dispositivo telefonico nella telefonia SPI. Le funzioni del dispositivo TSPI Phone includono:
+Questa sezione contiene un elenco alfabetico delle funzioni dei dispositivi telefonici nella spi di telefonia. Le funzioni del dispositivo telefonico TSPI includono:
 
--   [**\_PHONECLOSE TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phoneclose)
--   [**\_PHONECONFIGDIALOG TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phoneconfigdialog)
--   [**\_PHONEDEVSPECIFIC TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonedevspecific)
--   [**\_PHONEGETBUTTONINFO TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetbuttoninfo)
--   [**\_PHONEGETDATA TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdata)
--   [**\_PHONEGETDEVCAPS TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdevcaps)
--   [**\_PHONEGETDISPLAY TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdisplay)
--   [**\_PHONEGETEXTENSIONID TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetextensionid)
--   [**\_PHONEGETGAIN TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetgain)
--   [**\_PHONEGETHOOKSWITCH TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegethookswitch)
--   [**\_PHONEGETICON TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegeticon)
--   [**\_PHONEGETID TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetid)
--   [**\_PHONEGETLAMP TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetlamp)
--   [**\_PHONEGETRING TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetring)
--   [**\_PHONEGETSTATUS TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetstatus)
--   [**\_PHONEGETVOLUME TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetvolume)
--   [**\_PHONENEGOTIATEEXTVERSION TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonenegotiateextversion)
--   [**\_PHONENEGOTIATETSPIVERSION TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonenegotiatetspiversion)
--   [**\_PHONEOPEN TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phoneopen)
--   [**\_PHONESELECTEXTVERSION TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phoneselectextversion)
--   [**\_PHONESETBUTTONINFO TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetbuttoninfo)
--   [**\_PHONESETDATA TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetdata)
--   [**\_PHONESETDISPLAY TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetdisplay)
--   [**\_PHONESETGAIN TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetgain)
--   [**\_PHONESETHOOKSWITCH TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesethookswitch)
--   [**\_PHONESETLAMP TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetlamp)
--   [**\_PHONESETRING TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetring)
--   [**\_PHONESETSTATUSMESSAGES TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetstatusmessages)
--   [**\_PHONESETVOLUME TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetvolume)
+-   [**Telefono \_ TSPIChiudi**](/windows/win32/api/tspi/nf-tspi-tspi_phoneclose)
+-   [**PhoneConfigDialog TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phoneconfigdialog)
+-   [**Telefono \_ TSPIDevSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_phonedevspecific)
+-   [**PhoneGetButtonInfo TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetbuttoninfo)
+-   [**Telefono \_ TSPIGetData**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdata)
+-   [**Telefono \_ TSPIGetDevCaps**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdevcaps)
+-   [**Telefono \_ TSPIGetDisplay**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetdisplay)
+-   [**PhoneGetExtensionID TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetextensionid)
+-   [**Telefono \_ TSPIGetGain**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetgain)
+-   [**Telefono \_ TSPIGetHookSwitch**](/windows/win32/api/tspi/nf-tspi-tspi_phonegethookswitch)
+-   [**Telefono \_ TSPIGetIcon**](/windows/win32/api/tspi/nf-tspi-tspi_phonegeticon)
+-   [**PhoneGetID TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetid)
+-   [**Telefono \_ TSPIGetLamp**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetlamp)
+-   [**Telefono \_ TSPIGetRing**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetring)
+-   [**PhoneGetStatus TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetstatus)
+-   [**Telefono \_ TSPIGetVolume**](/windows/win32/api/tspi/nf-tspi-tspi_phonegetvolume)
+-   [**Telefono \_ TSPINegotiateExtVersion**](/windows/win32/api/tspi/nf-tspi-tspi_phonenegotiateextversion)
+-   [**Telefono \_ TSPINegotiateTSPIVersion**](/windows/win32/api/tspi/nf-tspi-tspi_phonenegotiatetspiversion)
+-   [**Telefono \_ TSPIApri**](/windows/win32/api/tspi/nf-tspi-tspi_phoneopen)
+-   [**PhoneSelectExtVersion TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phoneselectextversion)
+-   [**PhoneSetButtonInfo TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetbuttoninfo)
+-   [**PhoneSetData TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetdata)
+-   [**PhoneSetDisplay TSPI \_**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetdisplay)
+-   [**Telefono \_ TSPISetGain**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetgain)
+-   [**Telefono \_ TSPISetHookSwitch**](/windows/win32/api/tspi/nf-tspi-tspi_phonesethookswitch)
+-   [**Telefono \_ TSPISetLamp**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetlamp)
+-   [**Telefono \_ TSPISetRing**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetring)
+-   [**\_PhoneSetStatusMessages TSPI**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetstatusmessages)
+-   [**TSPI \_ phoneSetVolume**](/windows/win32/api/tspi/nf-tspi-tspi_phonesetvolume)
 
  
 

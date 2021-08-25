@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_TOUCHHITTESTING
-description: Inviato a una finestra in un tocco per determinare la destinazione del tocco più probabile.
+title: WM_TOUCHHITTESTING messaggio
+description: Inviato a una finestra con un tocco verso il basso per determinare la destinazione del tocco più probabile.
 ms.assetid: 741F9D67-A914-46CF-91A3-EF40447E7438
 keywords:
-- Messaggi e notifiche di input del messaggio WM_TOUCHHITTESTING
+- WM_TOUCHHITTESTING messaggi di input e notifiche del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 83b6e564d692fb0223ec8871b99cefcb9fddf40b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 895c535330674767683d0155bd2e22b8a40389c08378187377497380d71d97b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829491"
 ---
-# <a name="wm_touchhittesting-message"></a>Messaggio WM_TOUCHHITTESTING
+# <a name="wm_touchhittesting-message"></a>WM_TOUCHHITTESTING messaggio
 
-Inviato a una finestra in un tocco per determinare la destinazione del tocco più probabile.
+Inviato a una finestra con un tocco verso il basso per determinare la destinazione del tocco più probabile.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi dell'indicatore di misura e nelle strutture correlate potrebbero apparire inaccurate a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto per il ridimensionamento automatico per le applicazioni che non sono in grado di riconoscere DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -51,21 +51,21 @@ Non utilizzato.
 *lParam* 
 </dt> <dd>
 
-Puntatore alla struttura [**TOUCH_HIT_TESTING_INPUT**](/windows/win32/api/winuser/ns-winuser-touch_hit_testing_input) che include i dati dell'area di contatto tocco.
+Puntatore alla struttura [**TOUCH_HIT_TESTING_INPUT**](/windows/win32/api/winuser/ns-winuser-touch_hit_testing_input) che contiene i dati dell'area di contatto tocco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se uno o più elementi si trovano all'interno dell'area contatto tocco, un'applicazione deve restituire il risultato di [**PackTouchHitTestingProximityEvaluation**](/windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation).
+Se uno o più elementi si trova all'interno dell'area di contatto tocco, un'applicazione deve restituire il risultato di [**PackTouchHitTestingProximityEvaluation.**](/windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation)
 
-Se nessun elemento si trova all'interno dell'area contatto tocco, un'applicazione deve impostare il valore di **Score** in [**TOUCH_HIT_TESTING_PROXIMITY_EVALUATION**](/windows/win32/api/winuser/ns-winuser-touch_hit_testing_proximity_evaluation) su [**TOUCH_HIT_TESTING_PROXIMITY_FARTHEST**](/previous-versions/windows/desktop/input_touchhittest/hit-testing-scores) e chiamare [**PackTouchHitTestingProximityEvaluation**](/windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation) per ottenere il valore restituito lResult.
+Se nessun elemento si trova all'interno dell'area di contatto tocco, un'applicazione deve impostare il valore di **score** in [**TOUCH_HIT_TESTING_PROXIMITY_EVALUATION**](/windows/win32/api/winuser/ns-winuser-touch_hit_testing_proximity_evaluation) su [**TOUCH_HIT_TESTING_PROXIMITY_FARTHEST**](/previous-versions/windows/desktop/input_touchhittest/hit-testing-scores) e chiamare [**PackTouchHitTestingProximityEvaluation**](/windows/win32/api/winuser/nf-winuser-packtouchhittestingproximityevaluation) per ottenere il valore restituito LRESULT.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene inviato a Windows che effettua la registrazione tramite la funzione [**RegisterTouchHitTestingWindow**](/windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow) .
+Questo messaggio viene inviato alle finestre che eseguono la registrazione [**tramite la funzione RegisterTouchHitTestingWindow.**](/windows/win32/api/winuser/nf-winuser-registertouchhittestingwindow)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Questo messaggio viene inviato a Windows che effettua la registrazione tramite l
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ Questo messaggio viene inviato a Windows che effettua la registrazione tramite l
 [Messaggi](messages.md)
 </dt> <dt>
 
-[**Punteggi hit testing tocco**](/previous-versions/windows/desktop/input_touchhittest/hit-testing-scores)
+[**Punteggi di hit testing tocco**](/previous-versions/windows/desktop/input_touchhittest/hit-testing-scores)
 </dt> </dl>
 
  

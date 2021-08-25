@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_TextInput02
-description: La \_ \_ classe Result01 TextInput02 dei criteri MDM \_ rappresenta i criteri di input di testo disponibili.
+title: MDM_Policy_Result01_TextInput02 classe
+description: La classe MDM \_ Policy \_ Result01 \_ TextInput02 rappresenta i criteri di input di testo disponibili.
 ms.assetid: d0ab2d69-6d43-410e-936a-cb87a521d5f3
 keywords:
-- Classe MDM_Policy_Result01_TextInput02
-- Classe MDM_Policy_Result01_TextInput02, descritta
+- MDM_Policy_Result01_TextInput02 classe
+- MDM_Policy_Result01_TextInput02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a0c02c2afe70f3e7122de0c3d888c42ac179317
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 199f3e8cbe54f28554630dcb2f96c00722c6bb275ef213ebd70676ea1c6c9a1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875191"
 ---
-# <a name="mdm_policy_result01_textinput02-class"></a>\_ \_ Classe Result01 TextInput02 di criteri \_ MDM
+# <a name="mdm_policy_result01_textinput02-class"></a>Classe \_ \_ \_ TextInput02 risultato dei criteri MDM01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Result01 \_ TextInput02 dei criteri MDM** rappresenta i criteri di input di testo disponibili.
+La **classe MDM Policy \_ \_ Result01 \_ TextInput02** rappresenta i criteri di input di testo disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -57,13 +57,13 @@ class MDM_Policy_Result01_TextInput02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ TextInput02 dei criteri MDM** ha questi tipi di membri:
+La **classe MDM Policy \_ \_ Result01 \_ TextInput02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ TextInput02 dei criteri MDM Result01** ha queste proprietà.
+La **classe MDM Policy \_ \_ Result01 \_ TextInput02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -73,117 +73,117 @@ La **classe \_ \_ \_ TextInput02 dei criteri MDM Result01** ha queste proprietà
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowimenetworkaccess](/windows/client-management/mdm/policy-csp-textinput#textinput-allowimenetworkaccess)
+[AllowIMENetworkAccess](/windows/client-management/mdm/policy-csp-textinput#textinput-allowimenetworkaccess)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowinputpanel](/windows/client-management/mdm/policy-csp-textinput#textinput-allowinputpanel)
+[AllowInputPanel](/windows/client-management/mdm/policy-csp-textinput#textinput-allowinputpanel)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowjapaneseimesurrogatepaircharacters](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseimesurrogatepaircharacters)
+[AllowJapaneseIMESurrogatePairCharacters](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseimesurrogatepaircharacters)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowjapaneseivscharacters](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseivscharacters)
+[AllowJapaneseIVSCharacters](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseivscharacters)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowjapanesenonpublishingstandardglyph](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapanesenonpublishingstandardglyph)
+[AllowJapaneseNonPublishingStandardGlyph](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapanesenonpublishingstandardglyph)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowjapaneseuserdictionary](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseuserdictionary)
+[AllowJapaneseUserDictionary](/windows/client-management/mdm/policy-csp-textinput#textinput-allowjapaneseuserdictionary)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowkeyboardtextsuggestions](/windows/client-management/mdm/policy-csp-textinput#textinput-allowkeyboardtextsuggestions)
+[AllowKeyboardTextSuggestions](/windows/client-management/mdm/policy-csp-textinput#textinput-allowkeyboardtextsuggestions)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva allowlanguagefeaturesuninstall](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlanguagefeaturesuninstall)
+[AllowLanguageFeaturesUninstall](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlanguagefeaturesuninstall)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva excludejapaneseimeexceptjis0208](/windows/client-management/mdm/policy-csp-textinput#textinput-excludejapaneseimeexceptjis0208)
+[ExcludeJapaneseIMEExceptJIS0208](/windows/client-management/mdm/policy-csp-textinput#textinput-excludejapaneseimeexceptjis0208)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[Attiva excludejapaneseimeexceptjis0208andeudc](/windows/client-management/mdm/policy-csp-textinput#textinput-excludejapaneseimeexceptjis0208andeudc)
+[ExcludeJapaneseIMEExceptJIS0208andEUDC](/windows/client-management/mdm/policy-csp-textinput#textinput-excludejapaneseimeexceptjis0208andeudc)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -194,7 +194,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -202,32 +202,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "TextInput"
+Identifica il nome del nodo padre. Per questa classe, la stringa è "TextInput"
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> </dl>
 
@@ -237,10 +237,10 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -249,7 +249,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

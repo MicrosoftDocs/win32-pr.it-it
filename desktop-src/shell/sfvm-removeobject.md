@@ -1,6 +1,6 @@
 ---
-description: Rimuove un oggetto dalla visualizzazione Shell. Utilizzato dal \_ messaggio SHShellFolderView.
-title: Messaggio SFVM_REMOVEOBJECT (Shlobj. h)
+description: Rimuove un oggetto dalla visualizzazione della shell. Usato dal messaggio \_ SHShellFolderView.
+title: SFVM_REMOVEOBJECT messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 5b493cea-dfbd-4aee-8126-b118c058bb4c
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 99eaf6b1e8ca49403e0003d6cd60a6769778233a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5bb53da276e28d7598961cc8f68a2464f414db9a3eac2ddab769102149bf370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941951"
 ---
-# <a name="sfvm_removeobject-message"></a>\_Messaggio SFVM RemoveObject
+# <a name="sfvm_removeobject-message"></a>Messaggio \_ SFVM REMOVEOBJECT
 
-Rimuove un oggetto dalla visualizzazione Shell. Utilizzato dal [**\_ messaggio SHShellFolderView**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
+Rimuove un oggetto dalla visualizzazione della shell. Usato da [**SHShellFolderView \_ Message**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message).
 
 
 ```C++
@@ -37,12 +37,12 @@ SFVM_REMOVEOBJECT
 
 <dl> <dt>
 
-*PIDL* \[ in\]
+*pidl* \[ Pollici\]
 </dt> <dd>PIDL dell'oggetto da rimuovere.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice dell'elemento che è stato rimosso se è stato trovato un elemento corrispondente all'oggetto PIDL specificato. in caso contrario, restituisce-1.
+Restituisce l'indice dell'elemento rimosso se è stato trovato un elemento corrispondente al PIDL specificato; In caso contrario, restituisce -1.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -54,7 +54,7 @@ Restituisce l'indice dell'elemento che è stato rimosso se è stato trovato un e
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

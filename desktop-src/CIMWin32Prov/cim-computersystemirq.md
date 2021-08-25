@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM ComputerSystemIRQ rappresenta un'associazione tra un sistema di computer e le relative righe di richiesta di interrupt (IRQ) disponibili.
+description: La classe CIM ComputerSystemIRQ rappresenta un'associazione tra un sistema di computer e le relative righe di richiesta di \_ interrupt (IRQ) disponibili.
 ms.assetid: c2a1f231-1f8e-48b2-9afe-fa798e6a8a1d
 ms.tgt_platform: multiple
-title: Classe CIM_ComputerSystemIRQ
+title: CIM_ComputerSystemIRQ classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 490b1f26e8d100f675a6e57a8ddf7a53770d4ea1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 727783ea1d74fa66fb2c220ef69a77059fdb7ce6df2c660e11c0c2cad72b1bd9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925021"
 ---
-# <a name="cim_computersystemirq-class"></a>CIM \_ ComputerSystemIRQ (classe)
+# <a name="cim_computersystemirq-class"></a>Classe CIM \_ ComputerSystemIRQ
 
-La classe **CIM \_ ComputerSystemIRQ** rappresenta un'associazione tra un sistema di computer e le relative righe di richiesta di interrupt (IRQ) disponibili.
+La **classe CIM \_ ComputerSystemIRQ** rappresenta un'associazione tra un sistema di computer e le relative righe di richiesta di interrupt (IRQ) disponibili.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_ComputerSystemIRQ : CIM_ComputerSystemResource
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ComputerSystemIRQ** presenta questi tipi di membri:
+La **classe \_ CIM ComputerSystemIRQ** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ComputerSystemIRQ** dispone di queste proprietà.
+La **classe CIM \_ ComputerSystemIRQ** ha queste proprietà.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) (GroupComponent)
 </dt> </dl>
 
-Un [**\_ ComputerSystem CIM**](cim-computersystem.md) che descrive il computer associato all'IRQ.
+Un [**\_ ComputerSystem CIM che**](cim-computersystem.md) descrive il computer associato all'IRQ.
 
 Questa proprietà viene ereditata da [ **CIM \_ ComputerSystemResource**](cim-computersystemresource.md)
 
@@ -78,26 +78,26 @@ Questa proprietà viene ereditata da [ **CIM \_ ComputerSystemResource**](cim-co
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ IRQ CIM**
+Tipo di dati: **CIM \_ IRQ**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un [**\_ IRQ CIM**](cim-irq.md) che descrive un IRQ del sistema del computer.
+[**\_ IRQ CIM che**](cim-irq.md) descrive un IRQ del computer.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ ComputerSystemIRQ** è derivata da [**CIM \_ ComputerSystemResource**](cim-computersystemresource.md).
+La **classe CIM \_ ComputerSystemIRQ** è derivata da [**CIM \_ ComputerSystemResource**](cim-computersystemresource.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_COMPUTERSYSTEMRESOURCE CIM**](cim-computersystemresource.md)
+[**CIM \_ ComputerSystemResource**](cim-computersystemresource.md)
 </dt> </dl>
 
  

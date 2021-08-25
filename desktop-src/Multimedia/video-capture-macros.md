@@ -4,19 +4,19 @@ description: Macro di acquisizione video
 ms.assetid: 21061f06-d58b-4800-a9f5-9821494fabd6
 keywords:
 - Video per Windows (VFW), macro di acquisizione video
-- VFW (video per Windows), macro di acquisizione video
+- VFW (Video per Windows),macro di acquisizione video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78d822485e3f774046f94126f9cc51a4403e4331
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6aa4b92776d14216e61c3624efdb38b55e7db9c974143be0d1223bc7475f6af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892111"
 ---
 # <a name="video-capture-macros"></a>Macro di acquisizione video
 
-Con l'acquisizione video vengono usate le macro seguenti.
+Le macro seguenti vengono usate con l'acquisizione video.
 
 -   [**capCaptureAbort**](/windows/desktop/api/Vfw/nf-vfw-capcaptureabort)
 -   [**capCaptureGetSetup**](/windows/desktop/api/Vfw/nf-vfw-capcapturegetsetup)
@@ -57,7 +57,7 @@ Con l'acquisizione video vengono usate le macro seguenti.
 -   [**capPaletteManual**](/windows/desktop/api/Vfw/nf-vfw-cappalettemanual)
 -   [**capPaletteOpen**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
 -   [**capPalettePaste**](/windows/desktop/api/Vfw/nf-vfw-cappalettepaste)
--   [**capPaletteSave**](/windows/desktop/api/Vfw/nf-vfw-cappalettesave)
+-   [**capPaletteSalva**](/windows/desktop/api/Vfw/nf-vfw-cappalettesave)
 -   [**capPreview**](/windows/desktop/api/Vfw/nf-vfw-cappreview)
 -   [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate)
 -   [**capPreviewScale**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale)
@@ -78,12 +78,12 @@ Con l'acquisizione video vengono usate le macro seguenti.
 
 <dl> <dt>
 
-[Informazioni di riferimento sull'acquisizione video](video-capture-reference.md)
+[Informazioni di riferimento per l'acquisizione video](video-capture-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

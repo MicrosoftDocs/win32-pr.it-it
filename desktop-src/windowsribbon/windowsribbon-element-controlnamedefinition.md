@@ -3,7 +3,7 @@ title: Elemento ControlNameDefinition
 description: Rappresenta un nome di un controllo in un modello di layout SizeDefinition personalizzato.
 ms.assetid: 94b724bd-a4e3-40e0-9cf0-3cc6a71100d2
 keywords:
-- Barra multifunzione di Windows per l'elemento ControlNameDefinition
+- Elemento ControlNameDefinition Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6b2dc1db251d4d657c3793d2a66a9add1d324c37
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 98dec89afb4a74d71271e3568935f9707a31cbb1db18be22cedb6f667e1010cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840751"
 ---
 # <a name="controlnamedefinition-element"></a>Elemento ControlNameDefinition
 
@@ -39,7 +39,7 @@ Rappresenta un nome di un controllo in un modello di layout [**SizeDefinition**]
 
 | Attributo           | Type                                       | Obbligatoria      | Descrizione                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|--------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | xs:positiveInteger o xs:string<br/> | No<br/> | <dt> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl> |
+| **Nome**<br/> | xs:positiveInteger o xs:string<br/> | No<br/> | <dt> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl> |
 
 
 

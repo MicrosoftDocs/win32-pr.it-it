@@ -1,25 +1,25 @@
 ---
-description: L'oggetto EKU espone le proprietà seguenti.
+description: L'oggetto EKUs espone le proprietà seguenti.
 ms.assetid: B85A33F9-F5E1-4F68-8A88-1CBA863CE1C8
-title: Proprietà di EKU
+title: Proprietà EKU
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcc67eb394bfcf76067be2c6caaf7f603840ce55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75a78a5ab783501f2651a852e038e8ed64a0366d6e845554f8c702180a177aa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875011"
 ---
-# <a name="ekus-properties"></a>Proprietà di EKU
+# <a name="ekus-properties"></a>Proprietà EKU
 
-L'oggetto [**EKU**](ekus.md) espone le proprietà seguenti.
+[**L'oggetto EKUs**](ekus.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**\_Proprietà NewEnum**](ekus-newenum.md)
 -   [**Proprietà Count**](ekus-count.md)
--   [**Item (proprietà)**](ekus-item.md)
+-   [**Proprietà Item**](ekus-item.md)
 
  
 

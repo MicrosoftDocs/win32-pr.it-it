@@ -6,24 +6,24 @@ keywords:
 - Windows Media Format SDK, enumerazioni del formato di input
 - Windows Media Format SDK, enumerazione dei formati di input
 - Advanced Systems Format (ASF), enumerazioni del formato di input
-- ASF (formato avanzato dei sistemi), enumerazioni del formato di input
-- Formato di sistemi avanzati (ASF), enumerazione dei formati di input
+- ASF (Advanced Systems Format), enumerazioni del formato di input
+- Advanced Systems Format (ASF), enumerazione dei formati di input
 - ASF (Advanced Systems Format), enumerazione dei formati di input
-- enumerazioni del formato di input
+- Enumerazioni del formato di input
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e853aeeac5ca470f1b33b611b287cba8fa025dc0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a261b2edae285a970bead5d039c4e85076530eb363aa025289b75ec56618406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809041"
 ---
 # <a name="input-format-enumeration"></a>Enumerazione del formato di input
 
-L'oggetto writer ottiene le informazioni sul formato del flusso dal profilo fornito. Il flusso di informazioni di configurazione in un profilo fornisce al writer tutte le informazioni necessarie sulla modalità di scrittura dei dati nel file. Il profilo non fornisce al writer informazioni sul formato degli esempi di input che l'applicazione recapita. I formati di input saranno sconosciuti solo per i flussi compressi con uno dei codec Windows Media. gli input per i tipi di flusso arbitrari sono prevedibili in base alle informazioni contenute nel profilo.
+L'oggetto writer ottiene le informazioni sul formato del flusso dal profilo specificato. Le informazioni di configurazione del flusso in un profilo fornisce al writer tutte le informazioni necessarie sulla modalità di scrittura dei dati nel file. Il profilo non fornisce al writer informazioni sul formato degli esempi di input forniti dall'applicazione. I formati di input saranno sconosciuti solo per i flussi compressi con uno dei codec Windows media; Gli input per i tipi di flusso arbitrari sono prevedibili in base alle informazioni nel profilo.
 
-L'oggetto writer può comunicare con il codec per un flusso per determinare i tipi di input che è possibile usare. Vengono forniti metodi per enumerare i possibili tipi di input. È sempre necessario trovare il tipo di input che corrisponde al supporto di input enumerando i tipi supportati anziché impostare manualmente le proprietà del supporto di input. Per ulteriori informazioni, vedere [per enumerare i formati di input](to-enumerate-input-formats.md).
+L'oggetto writer può comunicare con il codec per un flusso per determinare i tipi di input che possono essere usati. Vengono forniti metodi per enumerare i tipi di input possibili. È sempre necessario trovare il tipo di input che corrisponde al supporto di input enumerando i tipi supportati anziché impostando manualmente le proprietà dei supporti di input. Per altre informazioni, vedere [Per enumerare i formati di input.](to-enumerate-input-formats.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -32,12 +32,12 @@ L'oggetto writer può comunicare con il codec per un flusso per determinare i ti
 [**Funzionalità di scrittura di file**](file-writing-features.md)
 </dt> <dt>
 
-[**Utilizzo degli input**](working-with-inputs.md)
+[**Uso degli input**](working-with-inputs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

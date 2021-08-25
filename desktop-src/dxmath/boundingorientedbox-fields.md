@@ -4,12 +4,12 @@ ms.assetid: 8d69080d-bbe7-4c62-a334-bb1e543a3c0b
 title: Campi BoundingOrientedBox
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e72fe7b53a283a353e0a88df99da8327ba069375
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2021d96c1bf9bff58b7fb417f8745607be96fc5eef9b34b793a14cc2a7229458
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841791"
 ---
 # <a name="boundingorientedbox-fields"></a>Campi BoundingOrientedBox
 
@@ -17,10 +17,10 @@ ms.locfileid: "106309413"
 
 | Campo                                                                | Descrizione                                                                                      |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [**Center**](boundingorientedbox-center.md)<br/>              | Il centro del [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/>                 |
-| [**\_conteggio angoli**](boundingorientedbox-corner-count.md)<br/> | Numero di punti che definiscono il [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/> |
-| [**Extents**](boundingorientedbox-extents.md)<br/>            | Extent di [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/>                |
-| [**Orientamento**](boundingorientedbox-orientation.md)<br/>    | Orientamento del [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox).<br/>            |
+| [**Center**](boundingorientedbox-center.md)<br/>              | Centro dell'oggetto [**BoundingOrientedBox.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/>                 |
+| [**NUMERO \_ DI ANGOLI**](boundingorientedbox-corner-count.md)<br/> | Numero di punti che definiscono [**BoundingOrientedBox.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/> |
+| [**Extents**](boundingorientedbox-extents.md)<br/>            | Extent dell'oggetto [**BoundingOrientedBox.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/>                |
+| [**Orientamento**](boundingorientedbox-orientation.md)<br/>    | Orientamento dell'oggetto [**BoundingOrientedBox.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/>            |
 
 
 

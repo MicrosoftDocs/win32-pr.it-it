@@ -1,17 +1,17 @@
 ---
-description: Recupero di formati di servizio supportati
+description: Recupero dei formati di servizio supportati
 ms.assetid: b54dfeda-c2a3-42ec-895f-9abbbd4dd2ec
-title: Recupero di formati di servizio supportati
+title: Recupero dei formati di servizio supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73618f3450255ad470545ac472ad9f71238621e3
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: ccbaa5678d12e4393f377bb0ae0a399634b247ceb9bd54e1d815d4e9f7e5a763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806671"
 ---
-# <a name="retrieving-supported-service-formats"></a>Recupero di formati di servizio supportati
+# <a name="retrieving-supported-service-formats"></a>Recupero dei formati di servizio supportati
 
 L'applicazione WpdServicesApiSample include codice che illustra come un'applicazione può recuperare i formati supportati da un determinato servizio Contatti chiamando i metodi delle interfacce nella tabella seguente.
 
@@ -28,15 +28,15 @@ L'applicazione WpdServicesApiSample include codice che illustra come un'applicaz
 
  
 
-Quando l'utente sceglie l'opzione "3" nella riga di comando, l'applicazione richiama il metodo **ListSupportedFormats** disponibile nel modulo ServiceCapabilities.cpp.
+Quando l'utente sceglie l'opzione "3" dalla riga di comando, l'applicazione richiama il metodo **ListSupportedFormats** disponibile nel modulo ServiceCapabilities.cpp.
 
 Si noti che prima di recuperare l'elenco di eventi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
 In WPD, un formato è descritto dagli attributi che specificano il nome e (facoltativamente) il tipo MIME di un determinato formato. Questi attributi sono definiti nel file di intestazionePortableDevice.h. Per una descrizione degli attributi supportati, vedere [l'argomento](attributes.md) Attributi.
 
-Nel caso dell'applicazione di esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, il driver restituisce due formati supportati per il servizio Contatto: "AbstractContactFormat" e "VCard2Format". Questi formati corrispondono agli attributi **\_ WPD OBJECT FORMAT ABSTRACT \_ \_ \_ CONTACT** e **WPD \_ OBJECT FORMAT \_ \_ VCARD2** disponibili in PortableDevice.h.
+Nel caso dell'applicazione di esempio, se WpdServiceSampleDriver è l'unico dispositivo installato, il driver restituisce due formati supportati per il servizio Contact: "AbstractContactFormat" e "VCard2Format". Questi formati corrispondono agli attributi **WPD \_ OBJECT FORMAT ABSTRACT \_ \_ \_ CONTACT** e **WPD \_ OBJECT FORMAT \_ \_ VCARD2** disponibili in PortableDevice.h.
 
-Due metodi nel modulo ServiceCapabilities.cpp supportano il recupero dei formati supportati per il servizio Contatti: **ListSupportedFormats** e **DisplayFormat.** Il primo recupera l'identificatore GUID per ogni formato supportato. Quest'ultimo converte questo GUID in una stringa descrittiva.
+Due metodi nel modulo ServiceCapabilities.cpp supportano il recupero dei formati supportati per il servizio Contatti: **ListSupportedFormats** e **DisplayFormat**. Il primo recupera l'identificatore GUID per ogni formato supportato. Quest'ultimo converte questo GUID in una stringa descrittiva.
 
 Il **metodo ListSupportedFormats** richiama il [**metodo IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, recupera i formati supportati chiamando il metodo [**IPortableDeviceServiceCapabilities::GetSupportedFormats.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedformats) Il **metodo GetSupportedFormats** recupera il GUID per ogni formato supportato dal servizio e lo copia in un [**oggetto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 

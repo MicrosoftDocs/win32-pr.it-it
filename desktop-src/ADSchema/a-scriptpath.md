@@ -1,10 +1,10 @@
 ---
-title: Attributo Script-Path
-description: Questo attributo specifica il percorso per lo script di accesso dell'utente. La stringa può essere null.
+title: Script-Path attributo
+description: Questo attributo specifica il percorso dello script di accesso dell'utente. La stringa può essere Null.
 ms.assetid: 356f2ba0-ceca-4805-a536-286c6a8b54fc
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Script-Path attribute
+- Script-Path schema AD dell'attributo
 - Schema AD dell'attributo scriptPath
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0909c35c41ae65f75481910d1377aa2761e99487
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8dbb015b627da90bab453f45dda0a46449f3362b3313e288e2a0f56bb59d0e63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923211"
 ---
-# <a name="script-path-attribute"></a>Attributo Script-Path
+# <a name="script-path-attribute"></a>Script-Path attributo
 
-Questo attributo specifica il percorso per lo script di accesso dell'utente. La stringa può essere null.
+Questo attributo specifica il percorso dello script di accesso dell'utente. La stringa può essere Null.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------|
 | CN                | Script-Path                                                            |
-| LDAP-Display-Name | scriptPath                                                             |
+| Ldap-Display-Name | scriptPath                                                             |
 | Dimensione              | \-                                                                     |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                 |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                 |
 | Frequenza di aggiornamento  | Quando viene creato il record utente e ogni volta che è necessario modificare il percorso. |
 | Attribute-Id      | 1.2.840.113556.1.4.62                                                  |
-| System-ID-GUID    | bf9679a8-0de6-11d0-a285-00aa003049e2                                   |
+| System-Id-Guid    | bf9679a8-0de6-11d0-a285-00aa003049e2                                   |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                            |
 
 
@@ -58,15 +58,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo specifica il percorso per lo script di accesso dell'utente. La 
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

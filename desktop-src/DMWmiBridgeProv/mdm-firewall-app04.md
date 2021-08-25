@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Firewall_App04
-description: La \_ classe App04 del firewall MDM \_ viene usata per configurare le impostazioni di Windows Defender Firewall.
+title: MDM_Firewall_App04 classe
+description: La classe \_ MDM Firewall \_ App04 viene usata per configurare le impostazioni Windows Defender firewall mdm.
 ms.assetid: d7844d89-97d3-43b4-85af-c9464d475167
 keywords:
-- Classe MDM_Firewall_App04
-- Classe MDM_Firewall_App04, descritta
+- MDM_Firewall_App04 classe
+- MDM_Firewall_App04 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00a8558fb2834ba9b0143d644cf4922aa9a710d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2fd76cef258eaf7695278ce5bf5851f2433089773e980b5c4241282acc728372
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875281"
 ---
-# <a name="mdm_firewall_app04-class"></a>\_Classe App04 del firewall MDM \_
+# <a name="mdm_firewall_app04-class"></a>Classe \_ MDM Firewall \_ App04
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe App04 del firewall MDM \_ viene usata per configurare le impostazioni di Windows Defender Firewall.
+La classe \_ MDM Firewall \_ App04 viene usata per configurare le impostazioni Windows Defender firewall mdm.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -49,23 +49,23 @@ class MDM_Firewall_App04
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ App04 del firewall MDM** presenta questi tipi di membri:
+La **classe MDM Firewall \_ \_ App04** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ App04 del firewall MDM** presenta queste proprietà.
+La **classe MDM Firewall \_ \_ App04** ha queste proprietà.
 
 <dl> <dt>
 
-[FilePath](/windows/client-management/mdm/firewall-csp#filepath)
+[Filepath](/windows/client-management/mdm/firewall-csp#filepath)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -73,10 +73,10 @@ Tipo di accesso: lettura/scrittura
 [Fqbn](/windows/client-management/mdm/firewall-csp#fqbn)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -84,13 +84,13 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -98,35 +98,35 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [PackageFamilyName](/windows/client-management/mdm/firewall-csp#packagefamilyname)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-[ServiceName](/windows/client-management/mdm/firewall-csp#servicename)
+[Servicename](/windows/client-management/mdm/firewall-csp#servicename)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -137,10 +137,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                     |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

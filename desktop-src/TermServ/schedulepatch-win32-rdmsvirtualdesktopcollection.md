@@ -1,12 +1,12 @@
 ---
 title: Metodo SchedulePatch della classe Win32_RDMSVirtualDesktopCollection
-description: Pianifica un processo di provisioning degli aggiornamenti software che installa gli aggiornamenti software nelle macchine virtuali in un insieme di desktop virtuali.
+description: Pianifica un processo di provisioning degli aggiornamenti software che installa gli aggiornamenti software nelle macchine virtuali in una raccolta di desktop virtuali.
 ms.assetid: 780d5709-9e7d-41d9-a4d0-b5d021615655
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SchedulePatch
-- Metodo SchedulePatch Servizi Desktop remoto, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Servizi Desktop remoto, metodo SchedulePatch
+- Metodo SchedulePatch Servizi Desktop remoto
+- Il metodo SchedulePatch Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto , metodo SchedulePatch
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d9585e3d13ea1f02115506741c153d62c33fcc8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb29eb42f0f1d13ff1bf234c6fb41b8f414317a4b723af9a6d215cf25fa2ec95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865511"
 ---
-# <a name="schedulepatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo SchedulePatch della \_ classe RDMSVirtualDesktopCollection Win32
+# <a name="schedulepatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo SchedulePatch della classe \_ WIN32 RDMSVirtualDesktopCollection
 
-Pianifica un processo di provisioning degli aggiornamenti software che installa gli aggiornamenti software nelle macchine virtuali in un insieme di desktop virtuali.
+Pianifica un processo di provisioning degli aggiornamenti software che installa gli aggiornamenti software nelle macchine virtuali in una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,26 +45,26 @@ uint32 SchedulePatch(
 
 <dl> <dt>
 
-*StartTime* \[ in\]
+*StartTime* \[ Pollici\]
 </dt> <dd>
 
 > [!Note]  
-> Il sistema non disconnette gli utenti delle macchine virtuali fino al momento specificato nel parametro *ForceLogOffTime* .
+> Il sistema non disconnetterà gli utenti delle macchine virtuali fino all'ora specificata nel *parametro ForceLogOffTime.*
 
  
 
-Data e ora in cui installare gli aggiornamenti.
+Data e ora di installazione degli aggiornamenti.
 
 </dd> <dt>
 
-*ForceLogOffTime* \[ in\]
+*ForceLogOffTime* \[ Pollici\]
 </dt> <dd>
 
 Data e ora in cui il sistema disconnetterà gli utenti delle macchine virtuali.
 
 </dd> <dt>
 
-*JobInputXml* \[ in\]
+*JobInputXml* \[ Pollici\]
 </dt> <dd>
 
 Stringa in formato XML che contiene le informazioni sul processo di aggiornamento software.
@@ -73,7 +73,7 @@ Stringa in formato XML che contiene le informazioni sul processo di aggiornament
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -93,7 +93,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

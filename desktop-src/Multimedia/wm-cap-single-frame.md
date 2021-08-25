@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SINGLE_FRAME (VFW. h)
-description: Il \_ messaggio con \_ frame singolo WM Cap \_ aggiunge un singolo frame a un file di acquisizione aperto con il messaggio di \_ apertura del \_ singolo frame WM Cap \_ \_ . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capCaptureSingleFrame.
+title: WM_CAP_SINGLE_FRAME messaggio (Vfw.h)
+description: Il messaggio WM CAP SINGLE FRAME aggiunge un singolo frame a un file di acquisizione aperto usando il messaggio \_ WM CAP SINGLE FRAME \_ \_ \_ \_ \_ \_ OPEN. È possibile inviare questo messaggio in modo esplicito o usando la macro capCaptureSingleFrame.
 ms.assetid: 95466961-0719-4ff7-afc8-f7bf0e0974ac
 keywords:
-- WM_CAP_SINGLE_FRAME messaggi multimediali di Windows
+- WM_CAP_SINGLE_FRAME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a919036ee38fdcf00f55c3d4044cd3f45bd13c82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2080c8471849d42c2260c1f4133c996ef31e65e8a20591df531fbd24c19bc85c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891791"
 ---
-# <a name="wm_cap_single_frame-message"></a>\_Messaggio con \_ frame singolo WM Cap \_
+# <a name="wm_cap_single_frame-message"></a>Messaggio \_ WM CAP SINGLE \_ \_ FRAME
 
-Il messaggio con **\_ \_ \_ frame singolo WM Cap** aggiunge un singolo frame a un file di acquisizione aperto con il messaggio di [**\_ \_ \_ \_ apertura del singolo frame WM Cap**](wm-cap-single-frame-open.md) . È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capCaptureSingleFrame**](/windows/desktop/api/Vfw/nf-vfw-capcapturesingleframe) .
+Il **messaggio WM CAP SINGLE \_ \_ \_ FRAME** aggiunge un singolo frame a un file di acquisizione aperto usando il messaggio [**WM CAP SINGLE FRAME \_ \_ \_ \_ OPEN.**](wm-cap-single-frame-open.md) È possibile inviare questo messaggio in modo esplicito o usando la macro [**capCaptureSingleFrame.**](/windows/desktop/api/Vfw/nf-vfw-capcapturesingleframe)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

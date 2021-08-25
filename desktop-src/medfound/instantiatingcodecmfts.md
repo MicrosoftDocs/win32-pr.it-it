@@ -1,29 +1,29 @@
 ---
-description: Creazione di un'istanza di codec MFTs
+description: Creazione di istanze di codec MFT
 ms.assetid: 171f9a0f-effb-4ed7-8aff-d7b1ee6e4973
-title: Creazione di un'istanza di codec MFTs
+title: Creazione di istanze di codec MFT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aa886f24f7dbd1acc373c7e505baddf71bc3aa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a73af4055aee1d5b7e6a3ea137ab2204c9e59194f57ae4776e6c8368429db877
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827611"
 ---
-# <a name="instantiating-codec-mfts"></a>Creazione di un'istanza di codec MFTs
+# <a name="instantiating-codec-mfts"></a>Creazione di istanze di codec MFT
 
-Le [trasformazioni Media Foundation](media-foundation-transforms.md) (MFTS) sono oggetti com che implementano l'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) . Un MFT è un oggetto per la trasformazione dei dati multimediali come parte di una pipeline. Una pipeline è un grafo aciclici diretto, composto da origini multimediali, trasformazioni di supporti e sink multimediali. Una pipeline elabora i dati multimediali in streaming in modo asincrono.
+[Media Foundation transforms](media-foundation-transforms.md) (MFT) sono oggetti COM che implementano [**l'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) Un MFT è un oggetto per la trasformazione dei dati multimediali come parte di una pipeline. Una pipeline è un grafo aciclico diretto, costituito da origini multimediali, trasformazioni multimediali e sink multimediali. Una pipeline elabora i dati multimediali in streaming in modo asincrono.
 
-Sebbene sia possibile creare un'istanza di MFTs e usarlo indipendentemente dall'infrastruttura della pipeline Media Foundation, è preferibile usare il Framework MediaFoundation, laddove possibile.
+Anche se è possibile creare istanze di MFT e usarle indipendentemente dall'infrastruttura della pipeline Media Foundation, è preferibile usare il framework MediaFoundation laddove possibile.
 
-È possibile creare un codec MFT chiamando la funzione [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) . È necessario passare l'identificatore di classe di MFT, l'identificatore di interfaccia di [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)e un puntatore a un puntatore **IMFTransform** .
+È possibile creare un codec MFT chiamando la [**funzione CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) È necessario passare l'identificatore di classe di MFT, l'identificatore di interfaccia [**di IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)e un puntatore a **un puntatore IMFTransform.**
 
-Gli identificatori di classe del codec MFTs sono definiti come costanti nel file di intestazione wmcodecdsp. h.
+Gli identificatori di classe dei codec MFT sono definiti come costanti nel file di intestazione wmcodecdsp.h.
 
-La costante per l'identificatore di interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) è IID \_ IMFTransform.
+La costante per [**l'identificatore di interfaccia IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) è IID \_ IMFTransform.
 
-Nell'esempio di codice seguente viene illustrato come creare un'istanza di un codec MFT:
+L'esempio di codice seguente illustra come creare un'istanza di un codec MFT:
 
 
 ```
@@ -46,7 +46,7 @@ HRESULT CreateVideoEncoderMFT(IMFTransform** ppMFT)
 
 <dl> <dt>
 
-[Uso di codec MFTs](workingwithcodecmfts.md)
+[Uso dei codec MFT](workingwithcodecmfts.md)
 </dt> </dl>
 
  

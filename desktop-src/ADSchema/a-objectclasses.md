@@ -1,10 +1,10 @@
 ---
-title: Attributo Object-Classes
-description: Proprietà con più valori che contiene stringhe che rappresentano ogni classe nello schema. Ogni valore contiene governsID, lDAPDisplayName, mustContain, mayContain e così via.
+title: Object-Classes attributo
+description: Proprietà a più valori che contiene stringhe che rappresentano ogni classe nello schema. Ogni valore contiene governsID, lDAPDisplayName, mustContain, mayContain e così via.
 ms.assetid: 7e3eda48-8e64-4a52-8d92-7a0d37e513ef
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Object-Classes attribute
+- Object-Classes schema AD dell'attributo
 - Schema AD dell'attributo objectClasses
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b799c725790115152ac70c0214d82a8c242ea600
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c20c11ff547c24b37edab7f88a2854c9bc26ff133e7acba3a381971ededc3d90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925191"
 ---
-# <a name="object-classes-attribute"></a>Attributo Object-Classes
+# <a name="object-classes-attribute"></a>Object-Classes attributo
 
-Proprietà con più valori che contiene stringhe che rappresentano ogni classe nello schema. Ogni valore contiene governsID, lDAPDisplayName, mustContain, mayContain e così via.
+Proprietà a più valori che contiene stringhe che rappresentano ogni classe nello schema. Ogni valore contiene governsID, lDAPDisplayName, mustContain, mayContain e così via.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------|
 | CN                | Object-Classes                                   |
-| LDAP-Display-Name | objectClasses                                    |
-| Dimensione              | Circa 20 byte in media per nome di classe.        |
-| Privilegio aggiornamento  | Il valore verrà impostato dalla finestra di progettazione dell'oggetto. |
-| Frequenza di aggiornamento  | Ogni volta che viene modificata la progettazione della classe.        |
+| Ldap-Display-Name | objectClasses                                    |
+| Dimensione              | Circa 20 byte in media per ogni nome di classe.        |
+| Privilegio di aggiornamento  | La finestra di progettazione dell'oggetto imposta questo valore. |
+| Frequenza di aggiornamento  | Ogni volta che la progettazione della classe cambia.        |
 | Attribute-Id      | 2.5.21.6                                         |
-| System-ID-GUID    | 9a7ad94b-ca53-11d1-bbd0-0080c76670c0             |
+| System-Id-Guid    | 9a7ad94b-ca53-11d1-bbd0-0080c76670c0             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)      |
 
 
@@ -44,7 +44,7 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| Is-Single-Valued       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Proprietà con più valori che contiene stringhe che rappresentano ogni classe n
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 

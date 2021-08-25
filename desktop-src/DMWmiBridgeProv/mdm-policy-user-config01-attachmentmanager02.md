@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_AttachmentManager02
-description: La \_ \_ classe Config01 AttachmentManager02 utente dei criteri MDM \_ \_ rappresenta i criteri di gestione degli allegati disponibili.
+title: MDM_Policy_User_Config01_AttachmentManager02 classe
+description: La classe Mdm \_ Policy \_ User \_ Config01 \_ AttachmentManager02 rappresenta i criteri di gestione allegati disponibili.
 ms.assetid: b20ec516-cdc9-4aeb-802d-97cd8423eceb
 keywords:
-- Classe MDM_Policy_User_Config01_AttachmentManager02
-- Classe MDM_Policy_User_Config01_AttachmentManager02, descritta
+- MDM_Policy_User_Config01_AttachmentManager02 classe
+- MDM_Policy_User_Config01_AttachmentManager02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d127fc3770f6ba605bd8e1efdd82314231ab27f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7f0d19642d3d1ca24dfca14ccedbdcdb32ec40343dfb11ea9437e4a233f2b27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875031"
 ---
-# <a name="mdm_policy_user_config01_attachmentmanager02-class"></a>\_Utente criteri \_ MDM \_ Config01 \_ classe AttachmentManager02
+# <a name="mdm_policy_user_config01_attachmentmanager02-class"></a>Classe \_ \_ \_ AttachmentManager02 di Mdm Policy User \_ Config01 AttachmentManager02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ classe Config01 AttachmentManager02 utente dei criteri MDM \_ \_ rappresenta i criteri di gestione degli allegati disponibili.
+La classe Mdm \_ Policy \_ User \_ Config01 \_ AttachmentManager02 rappresenta i criteri di gestione allegati disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,23 +48,23 @@ class MDM_Policy_User_Config01_AttachmentManager02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Config01 \_ AttachmentManager02 dell'utente dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy User \_ \_ \_ Config01 \_ AttachmentManager02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Config01 \_ AttachmentManager02 dell'utente dei criteri MDM** ha queste proprietà.
+La **classe Mdm Policy User \_ \_ \_ Config01 \_ AttachmentManager02** ha queste proprietà.
 
 <dl> <dt>
 
 [DoNotPreserveZoneInformation](/windows/client-management/mdm/policy-csp-attachmentmanager#attachmentmanager-donotpreservezoneinformation)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -72,10 +72,10 @@ Tipo di accesso: lettura/scrittura
 [HideZoneInfoMechanism](/windows/client-management/mdm/policy-csp-attachmentmanager#attachmentmanager-hidezoneinfomechanism)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -83,7 +83,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -97,18 +97,18 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [NotifyAntivirusPrograms](/windows/client-management/mdm/policy-csp-attachmentmanager#attachmentmanager-notifyantivirusprograms)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -125,10 +125,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

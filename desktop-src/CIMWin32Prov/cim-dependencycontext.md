@@ -1,8 +1,8 @@
 ---
-description: La \_ relazione CIM DependencyContext associa una \_ classe di dipendenza CIM a uno o più \_ oggetti di configurazione CIM. Le dipendenze di un sistema di computer, ad esempio, possono variare in base alla rete a cui è collegato il sistema.
+description: La relazione DependencyContext CIM \_ associa una classe Dependency CIM \_ a uno o più oggetti di configurazione \_ CIM. Ad esempio, le dipendenze di un sistema di computer possono cambiare in base alla rete a cui è collegato il sistema.
 ms.assetid: 9f35fc41-1bfa-4018-a54c-64c875c710d4
 ms.tgt_platform: multiple
-title: Classe CIM_DependencyContext
+title: CIM_DependencyContext classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 69319a4f4d228d484da62411060ae3fead90bb79
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 845086b7d41eb03227d6b5b47240ef4bf9e1a2c35f8049c96d5c665800b327e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924641"
 ---
-# <a name="cim_dependencycontext-class"></a>CIM \_ DependencyContext (classe)
+# <a name="cim_dependencycontext-class"></a>Classe \_ DependencyContext CIM
 
-La relazione **CIM \_ DependencyContext** associa una classe di [**\_ dipendenza CIM**](cim-dependency.md) a uno o più oggetti di [**\_ configurazione CIM**](cim-configuration.md) . Le dipendenze di un sistema di computer, ad esempio, possono variare in base alla rete a cui è collegato il sistema.
+La **relazione \_ DependencyContext CIM** associa una classe [**\_ Dependency CIM**](cim-dependency.md) a uno o più oggetti di configurazione [**CIM. \_**](cim-configuration.md) Ad esempio, le dipendenze di un sistema di computer possono cambiare in base alla rete a cui è collegato il sistema.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,20 +47,20 @@ class CIM_DependencyContext
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DependencyContext** presenta questi tipi di membri:
+La **classe \_ DependencyContext CIM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DependencyContext** dispone di queste proprietà.
+La **classe \_ CiM DependencyContext** ha queste proprietà.
 
 <dl> <dt>
 
 **Contesto**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ configurazione CIM**
+Tipo di dati: **Configurazione \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -76,7 +76,7 @@ Riferimento all'oggetto di configurazione che aggrega la dipendenza.
 **Dipendenza**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ dipendenza CIM**
+Tipo di dati: **dipendenza \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,7 +90,7 @@ Riferimento a una dipendenza aggregata.
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,7 +101,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

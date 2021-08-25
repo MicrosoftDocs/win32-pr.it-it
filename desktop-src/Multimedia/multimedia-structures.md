@@ -3,23 +3,23 @@ title: Strutture multimediali
 description: Strutture multimediali
 ms.assetid: afdf2730-d388-4700-88ad-dc6ccebd7854
 keywords:
-- Multimedia di Windows, strutture
-- Multimedia, strutture
-- riferimenti multimediali, strutture
-- informazioni di riferimento per i contenuti multimediali, le strutture
+- Windows multimediali, strutture
+- elementi multimediali, strutture
+- informazioni di riferimento multimediali, strutture
+- informazioni di riferimento per elementi multimediali, strutture
 - strutture multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f31a95d2004443e25a60eb6c22010d20495ef0bc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7f3a67105f7b413758fbcd83ba6319cfdc01d2cab96da93efe51c1ed08aeb61d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806751"
 ---
 # <a name="multimedia-structures"></a>Strutture multimediali
 
-Con i contenuti multimediali vengono utilizzate le strutture seguenti.
+Le strutture seguenti vengono usate con elementi multimediali.
 
 -   [**ACMDRIVERDETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
 -   [**ACMFILTERCHOOSE**](/windows/win32/api/msacm/ns-msacm-acmfilterchoose)
@@ -52,73 +52,73 @@ Con i contenuti multimediali vengono utilizzate le strutture seguenti.
 -   [**JOYCAPS**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps)
 -   [**JOYINFO**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfo)
 -   [**JOYINFOEX**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfoex)
--   [**\_parametri break \_ MCI**](mci-break-parms.md)
--   [**\_parametri di \_ acquisizione \_ DGV MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_capture_parmsa)
--   [**\_parametri DGV \_ Copia \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_copy_parms)
--   [**\_ \_ parametri cue DGV di MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cue_parms)
--   [**\_parametri DGV \_ Cut di MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cut_parms)
--   [**\_parametri DGV \_ Delete \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_delete_parms)
--   [**\_ \_ parametri blocco DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_rect_parms)
--   [**\_parametri DGV \_ info \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_info_parmsa)
--   [**\_ \_ parametri elenco DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_list_parmsa)
--   [**\_parametri DGV \_ Load \_ MCI**](/previous-versions//dd743391(v=vs.85))
--   [**\_ \_ parametri monitoraggio MCI \_ DGV**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_monitor_parms)
--   [**MCI \_ DGV \_ Open \_ parametri**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa)
--   [**\_parametri DGV \_ Incolla \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_paste_parms)
--   [**\_DGV di \_ sospensione MCI \_ parametri**](/previous-versions//dd743395(v=vs.85))
--   [**\_parametri DGV \_ Play \_ MCI**](/previous-versions//dd743396(v=vs.85))
--   [**\_parametri DGV \_ put di MCI \_**](/previous-versions//dd743397(v=vs.85))
--   [**MCI \_ DGV \_ Quality \_ parametri**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_quality_parmsa)
--   [**\_ \_ parametri record DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_record_parms)
--   [**MCI \_ DGV \_ Rect \_ parametri**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms)
--   [**\_ \_ parametri Reserve DGV di MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_reserve_parmsa)
--   [**\_parametri DGV \_ RESTOre MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_restore_parmsa)
--   [**\_parametri DGV per MCI \_ Resume \_**](/previous-versions//dd743403(v=vs.85))
--   [**\_parametri DGV per il \_ salvataggio di MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_save_parmsa)
--   [**MCI \_ DGV \_ set \_ parametri**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_set_parms)
--   [**\_parametri DGV \_ di MCI \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setaudio_parmsa)
--   [**parametri DGV di MCI- \_ \_ video \_**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setvideo_parmsa)
--   [**\_ \_ parametri segnale DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_signal_parms)
--   [**\_ \_ parametri stato DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa)
--   [**\_ \_ parametri passaggio DGV \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_step_parms)
--   [**\_DGV MCI \_ \_ parametri stop**](/previous-versions//dd743411(v=vs.85))
--   [**\_ \_ aggiornamento \_ parametri di MCI DGV**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_update_parms)
--   [**\_parametri DGV \_ finestra \_ MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_window_parmsa)
--   [**\_parametri generico \_ MCI**](mci-generic-parms.md)
--   [**\_parametri GETDEVCAPS \_ MCI**](mci-getdevcaps-parms.md)
--   [**\_parametri info \_ MCI**](mci-info-parms.md)
--   [**\_parametri Load \_ MCI**](mci-load-parms.md)
--   [**\_parametri aperto \_ MCI**](mci-open-parms.md)
--   [**\_parametri OVLY \_ Load \_ MCI**](mci-ovly-load-parms.md)
--   [**MCI \_ OVLY \_ Open \_ parametri**](mci-ovly-open-parms.md)
--   [**MCI \_ OVLY \_ Rect \_ parametri**](mci-ovly-rect-parms.md)
--   [**\_parametri OVLY per il \_ salvataggio di MCI \_**](/previous-versions//dd743447(v=vs.85))
--   [**\_parametri OVLY \_ finestra \_ MCI**](mci-ovly-window-parms.md)
--   [**parametri di MCI \_ Play \_**](mci-play-parms.md)
--   [**\_record MCI \_ parametri**](mci-record-parms.md)
--   [**\_Salva \_ parametri di MCI**](mci-save-parms.md)
--   [**\_parametri di ricerca MCI \_**](mci-seek-parms.md)
--   [**\_ \_ set \_ parametri di MCI Seq**](mci-seq-set-parms.md)
--   [**\_set \_ parametri di MCI**](mci-set-parms.md)
--   [**\_parametri stato \_ MCI**](mci-status-parms.md)
--   [**parametri di MCI \_ sysinfo \_**](mci-sysinfo-parms.md)
--   [**\_ \_ parametri cue VCR di MCI \_**](mci-vcr-cue-parms.md)
--   [**\_ \_ parametri elenco VCR \_ MCI**](mci-vcr-list-parms.md)
--   [**\_parametri VCR \_ Play di MCI \_**](mci-vcr-play-parms.md)
--   [**\_record VCR \_ MCI \_ parametri**](mci-vcr-record-parms.md)
--   [**parametri di MCI \_ VCR \_ Seek \_**](mci-vcr-seek-parms.md)
--   [**\_set VCR di MCI \_ \_ parametri**](mci-vcr-set-parms.md)
--   [**parametri di MCI \_ VCR \_ \_**](mci-vcr-setaudio-parms.md)
--   [**\_parametri MCI VCR \_ \_**](mci-vcr-settuner-parms.md)
--   [**\_ \_ video parametri MCI VCR \_**](mci-vcr-setvideo-parms.md)
--   [**\_ \_ parametri stato VCR \_ MCI**](mci-vcr-status-parms.md)
--   [**\_ \_ passaggio parametri del VCR MCI \_**](mci-vcr-step-parms.md)
--   [**\_parametri di \_ escape MCI VD \_**](mci-vd-escape-parms.md)
--   [**MCI \_ VD \_ Play \_ parametri**](mci-vd-play-parms.md)
--   [**\_ \_ passaggio parametri MCI \_ VD**](mci-vd-step-parms.md)
--   [**\_parametri di \_ eliminazione dell'onda MCI \_**](mci-wave-delete-parms.md)
--   [**\_parametri Wave MCI \_ aperto \_**](mci-wave-open-parms.md)
--   [**\_set di Wave MCI \_ \_ parametri**](mci-wave-set-parms.md)
+-   [**MCI \_ BREAK \_ PARMS**](mci-break-parms.md)
+-   [**MCI \_ DGV \_ CAPTURE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_capture_parmsa)
+-   [**MCI \_ DGV \_ COPY \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_copy_parms)
+-   [**MCI \_ DGV \_ CUE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cue_parms)
+-   [**MCI \_ DGV \_ CUT \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_cut_parms)
+-   [**MCI \_ DGV \_ DELETE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_delete_parms)
+-   [**MCI \_ DGV \_ FREEZE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_rect_parms)
+-   [**MCI \_ DGV \_ INFO \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_info_parmsa)
+-   [**MCI \_ DGV \_ LIST \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_list_parmsa)
+-   [**MCI \_ DGV \_ LOAD \_ PARMS**](/previous-versions//dd743391(v=vs.85))
+-   [**MCI \_ DGV \_ MONITOR \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_monitor_parms)
+-   [**MCI \_ DGV \_ OPEN \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_open_parmsa)
+-   [**MCI \_ DGV \_ PASTE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_paste_parms)
+-   [**MCI \_ DGV \_ PAUSE \_ PARMS**](/previous-versions//dd743395(v=vs.85))
+-   [**MCI \_ DGV \_ PLAY \_ PARMS**](/previous-versions//dd743396(v=vs.85))
+-   [**MCI \_ DGV \_ PUT \_ PARMS**](/previous-versions//dd743397(v=vs.85))
+-   [**MCI \_ DGV \_ QUALITY \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_quality_parmsa)
+-   [**MCI \_ DGV \_ RECORD \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_record_parms)
+-   [**MCI \_ DGV \_ RECT \_ PARMS**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms)
+-   [**MCI \_ DGV \_ RESERVE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_reserve_parmsa)
+-   [**MCI \_ DGV \_ RESTORE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_restore_parmsa)
+-   [**MCI \_ DGV \_ RESUME \_ PARMS**](/previous-versions//dd743403(v=vs.85))
+-   [**MCI \_ DGV \_ SAVE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_save_parmsa)
+-   [**MCI \_ DGV \_ SET \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_set_parms)
+-   [**MCI \_ DGV \_ SETAUDIO \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setaudio_parmsa)
+-   [**MCI \_ DGV \_ SETVIDEO \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setvideo_parmsa)
+-   [**MCI \_ DGV \_ SIGNAL \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_signal_parms)
+-   [**MCI \_ DGV \_ STATUS \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_status_parmsa)
+-   [**MCI \_ DGV \_ STEP \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_step_parms)
+-   [**MCI \_ DGV \_ STOP \_ PARMS**](/previous-versions//dd743411(v=vs.85))
+-   [**MCI \_ DGV \_ UPDATE \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_update_parms)
+-   [**MCI \_ DGV \_ WINDOW \_ PARMS**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_window_parmsa)
+-   [**MCI \_ GENERIC \_ PARMS**](mci-generic-parms.md)
+-   [**MCI \_ GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md)
+-   [**MCI \_ INFO \_ PARMS**](mci-info-parms.md)
+-   [**MCI \_ LOAD \_ PARMS**](mci-load-parms.md)
+-   [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md)
+-   [**MCI \_ OVLY \_ LOAD \_ PARMS**](mci-ovly-load-parms.md)
+-   [**MCI \_ OVLY \_ OPEN \_ PARMS**](mci-ovly-open-parms.md)
+-   [**MCI \_ OVLY \_ RECT \_ PARMS**](mci-ovly-rect-parms.md)
+-   [**MCI \_ OVLY \_ SAVE \_ PARMS**](/previous-versions//dd743447(v=vs.85))
+-   [**PARMS DELLA FINESTRA DI MCI \_ OVLY \_ \_**](mci-ovly-window-parms.md)
+-   [**MCI \_ PLAY \_ PARMS**](mci-play-parms.md)
+-   [**MCI \_ RECORD \_ PARMS**](mci-record-parms.md)
+-   [**MCI \_ SAVE \_ PARMS**](mci-save-parms.md)
+-   [**MCI \_ SEEK \_ PARMS**](mci-seek-parms.md)
+-   [**MCI \_ SEQ \_ SET \_ PARMS**](mci-seq-set-parms.md)
+-   [**MCI \_ SET \_ PARMS**](mci-set-parms.md)
+-   [**PARMS \_ DI STATO \_ MCI**](mci-status-parms.md)
+-   [**MCI \_ SYSINFO \_ PARMS**](mci-sysinfo-parms.md)
+-   [**MCI \_ VCR \_ CUE \_ PARMS**](mci-vcr-cue-parms.md)
+-   [**MCI \_ VCR \_ LIST \_ PARMS**](mci-vcr-list-parms.md)
+-   [**MCI \_ VCR \_ PLAY \_ PARMS**](mci-vcr-play-parms.md)
+-   [**PARMS \_ DEI RECORD DEL \_ \_ VCR MCI**](mci-vcr-record-parms.md)
+-   [**MCI \_ VCR \_ SEEK \_ PARMS**](mci-vcr-seek-parms.md)
+-   [**MCI \_ VCR \_ SET \_ PARMS**](mci-vcr-set-parms.md)
+-   [**MCI \_ VCR \_ SETAUDIO \_ PARMS**](mci-vcr-setaudio-parms.md)
+-   [**MCI \_ VCR \_ SETTUNER \_ PARMS**](mci-vcr-settuner-parms.md)
+-   [**MCI \_ VCR \_ SETVIDEO \_ PARMS**](mci-vcr-setvideo-parms.md)
+-   [**PARMS DI \_ \_ STATO DEL \_ VCR MCI**](mci-vcr-status-parms.md)
+-   [**MCI \_ VCR \_ STEP \_ PARMS**](mci-vcr-step-parms.md)
+-   [**MCI \_ VD \_ ESCAPE \_ PARMS**](mci-vd-escape-parms.md)
+-   [**MCI \_ VD \_ PLAY \_ PARMS**](mci-vd-play-parms.md)
+-   [**MCI \_ VD \_ STEP \_ PARMS**](mci-vd-step-parms.md)
+-   [**MCI \_ WAVE \_ DELETE \_ PARMS**](mci-wave-delete-parms.md)
+-   [**MCI \_ WAVE \_ OPEN \_ PARMS**](mci-wave-open-parms.md)
+-   [**MCI \_ WAVE \_ SET \_ PARMS**](mci-wave-set-parms.md)
 -   [**MIDIEVENT**](/windows/win32/api/mmeapi/ns-mmeapi-midievent)
 -   [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)
 -   [**MIDIINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps)
@@ -129,12 +129,12 @@ Con i contenuti multimediali vengono utilizzate le strutture seguenti.
 -   [**MIXERCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercaps)
 -   [**MIXERCONTROL**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontrol)
 -   [**MIXERCONTROLDETAILS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
--   [**MIXERCONTROLDETAILS ( \_ booleano)**](/previous-versions//dd757295(v=vs.85))
--   [**\_LISTTEXT MIXERCONTROLDETAILS**](/previous-versions//dd757296(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ firmato**](/previous-versions//dd757297(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ senza segno**](/previous-versions//dd757298(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ BOOLEANO**](/previous-versions//dd757295(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ FIRMATO**](/previous-versions//dd757297(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ SENZA SEGNO**](/previous-versions//dd757298(v=vs.85))
 -   [**MIXERLINE**](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
--   [**MIXERLINECONTROLS**](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
+-   [**CONTROLLO MIXERLINECONTROLS**](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
 -   [**MMCKINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-mmckinfo)
 -   [**MMIOINFO**](/previous-versions//dd757322(v=vs.85))
 -   [**MMTIME**](/previous-versions//dd757347(v=vs.85))
@@ -153,9 +153,9 @@ Con i contenuti multimediali vengono utilizzate le strutture seguenti.
 
 <dl> <dt>
 
-[Riferimenti multimediali](multimedia-reference.md)
+[Informazioni di riferimento su Elementi multimediali](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

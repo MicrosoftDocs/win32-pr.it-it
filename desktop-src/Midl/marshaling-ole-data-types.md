@@ -1,31 +1,31 @@
 ---
-title: Marshalling di tipi di dati OLE
+title: Marshalling dei tipi di dati OLE
 description: Marshalling di automazione e tipi di dati OLE.
 ms.assetid: 0cab4208-d40d-40a1-88f2-4933b52c0c29
 keywords:
-- MIDL e COM MIDL, marshalling di tipi di dati OLE
+- MIDL e COM MIDL , marshalling dei tipi di dati OLE
 - marshalling MIDL
-- MIDL di dati OLE
+- MIDL dei dati OLE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5970c6e0fef9d0fc88b8a0a11a087fa4396d7a7c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 91c5f1527ffaa361b85550941af1538c99251e59750b27f3bfe7552251e821e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895021"
 ---
-# <a name="marshaling-ole-data-types"></a>Marshalling di tipi di dati OLE
+# <a name="marshaling-ole-data-types"></a>Marshalling dei tipi di dati OLE
 
-Per semplificare l'utilizzo di determinati tipi di dati di automazione e OLE, oltre ad alcuni handle di sistema usati di frequente in COM, i typedef per questi tipi di dati e le funzioni di supporto correlate sono disponibili mediante l'importazione dei file IDL di Windows e il collegamento ai file DLL OLE e di automazione. Questi file vengono installati automaticamente nel sistema.
+Per semplificare l'uso di determinati tipi di dati OLE e di automazione, nonché di alcuni handle di sistema usati di frequente in COM, i typedef per questi tipi di dati e le relative funzioni helper correlate sono disponibili importando file IDL di Windows e collegandoli ai file DLL OLE e Automation. Questi file vengono installati automaticamente nel sistema.
 
--   Per utilizzare il tipo di dati [**BSTR**](/previous-versions/windows/desktop/automat/bstr) in Remote Procedure Calls, importare il file wtypes. idl nel file di definizione dell'interfaccia (IDL) e collegarsi a Oleaut32. lib durante la compilazione dell'applicazione distribuita. In questo consentirà agli stub di usare le funzioni di supporto **predefinite \_ BSTR UserSize**, **BSTR \_ UserMarshal**, **BSTR \_ UserUnmarshal** e **BSTR \_ UserFree**.
--   Per utilizzare altri tipi di dati di automazione, come [**Variant**](/windows/win32/api/oaidl/ns-oaidl-variant) e [**SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray), o tipi che utilizzano tali tipi (ad esempio, [**DISPPARAMS**](/windows/win32/api/oaidl/ns-oaidl-dispparams) e [**EXCEPINFO**](/windows/win32/api/oaidl/ns-oaidl-excepinfo)), importare il file objidl. idl nel file IDL e collegarsi a Oleaut32. lib in fase di compilazione. Questo consentirà di usare le routine di supporto appropriate.
--   Per usare i tipi di dati OLE (ad esempio CLIPFORMAT, BNS, STGMEDIUM, ASYNC \_ STGMEDIUM) o gli handle di sistema (ad esempio HMETAFILE \_ PICT, HENHMETAFILE, HMETAFILE, HBITMAP, HPALETTE e HGLOBAL), importare il file objidl. idl nel file di definizione dell'interfaccia e collegarsi a ole32. lib in fase di compilazione.
--   Gli handle OLE seguenti sono definiti anche con l'attributo **\[ Wire \_ marshalling \]** , ma solo come handle all'interno di un computer, in quanto non possono essere usati nelle chiamate di procedura remota ad altri computer al momento: HWND, HMENU, haccel, HDC, HFONT, HICON, HBRUSH. Importare il file objidl. idl nel file IDL e collegarsi a ole32. lib in fase di compilazione per usare questi handle nella comunicazione interprocesso in un singolo computer.
+-   Per usare il tipo di dati [**BSTR**](/previous-versions/windows/desktop/automat/bstr) nelle chiamate di procedura remota, importare il file wtypes.idl nel file di definizione dell'interfaccia (IDL) e collegarsi a Oleaut32.lib durante la compilazione dell'applicazione distribuita. In questo modo, gli stub useranno le funzioni helper già pronte **BSTR \_ UserSize**, **BSTR \_ UserMarshal**, **BSTR \_ UserUnmarshal** e **BSTR \_ UserFree**.
+-   Per usare altri tipi di dati di Automazione, ad esempio [**VARIANT**](/windows/win32/api/oaidl/ns-oaidl-variant) e [**SAFEARRAY,**](/windows/win32/api/oaidl/ns-oaidl-safearray)o tipi che usano tali tipi (ad [**esempio, DISPPARAMS**](/windows/win32/api/oaidl/ns-oaidl-dispparams) ed [**EXCEPINFO),**](/windows/win32/api/oaidl/ns-oaidl-excepinfo)importare il file objidl.idl nel file IDL e collegarsi a oleaut32.lib in fase di compilazione. In questo modo sarà possibile usare le routine helper appropriate.
+-   Per usare tipi di dati OLE (ad esempio CLIPFORMAT, SNB, STGMEDIUM, ASYNC STGMEDIUM) o handle di sistema (ad esempio \_ HMETAFILE \_ PICT, HENHMETAFILE, HMETAFILE, HBITMAP, HPALETTE e HGLOBAL), importare il file objidl.idl nel file di definizione dell'interfaccia e collegarsi a ole32.lib in fase di compilazione.
+-   Anche gli handle OLE seguenti vengono definiti con l'attributo **\[ \_ wire marshal, \]** ma solo come handle all'interno di un computer perché non possono essere usati in chiamate di procedura remota ad altri computer in questo momento: HWND, HMENU, HACCEL, HDC, HFONT, HICON, HBRUSH. Importare il file objidl.idl nel file IDL e collegarsi a ole32.lib in fase di compilazione per usare questi handle nella comunicazione interprocesso in un singolo computer.
 
-Per ulteriori informazioni, vedere [l' \_ attributo Wire Marshal](/windows/desktop/Rpc/the-wire-marshal-attribute), [il tipo \_ UserSize Function](/windows/desktop/Rpc/the-type-usersize-function), [il tipo \_ UserMarshal Function](/windows/desktop/Rpc/the-type-usermarshal-function), [il tipo \_ UserUnmarshal Function](/windows/desktop/Rpc/the-type-userunmarshal-function), [il tipo \_ UserFree function](/windows/desktop/Rpc/the-type-userfree-function)e gli [Stub targeting per specifiche piattaforme a 32 bit o a 64 bit](targeting-stubs-for-specific-32-bit-or-64-bit-platforms.md).
+Per altre informazioni, vedere Attributo wire [ \_ marshal](/windows/desktop/Rpc/the-wire-marshal-attribute), Il tipo [ \_ UserSize Function](/windows/desktop/Rpc/the-type-usersize-function), Il tipo [ \_ UserMarshal Function](/windows/desktop/Rpc/the-type-usermarshal-function), Il tipo [ \_ UserUnmarshal Function](/windows/desktop/Rpc/the-type-userunmarshal-function), The type [ \_ UserFree Function](/windows/desktop/Rpc/the-type-userfree-function)e [Targeting Stubs for Specific 32-bit or 64-bit Platforms](targeting-stubs-for-specific-32-bit-or-64-bit-platforms.md).
 
- 
+ 
 
- 
+ 

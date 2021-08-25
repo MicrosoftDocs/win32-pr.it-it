@@ -1,5 +1,5 @@
 ---
-description: Funzione D3DXMatrixLookAtRH (D3DX10Math.h) - Compila una matrice di tipo right-handed e look-at.
+description: 'Funzione D3DXMatrixLookAtRH (D3DX10Math.h): crea una matrice di visualizzazione con la mano destra.'
 ms.assetid: 98c8932f-f179-42ed-a361-a89065b71876
 title: Funzione D3DXMatrixLookAtRH (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0380207124e4a446b6303dbb377d116b8ae058ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af7faf7e3a0538d8b021cc5be353bd6918b7539570457e3a2486d1b8ead11404
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895621"
 ---
 # <a name="d3dxmatrixlookatrh-function-d3dx10mathh"></a>Funzione D3DXMatrixLookAtRH (D3DX10Math.h)
 
-Crea una matrice di tipo right-handed e look-at.
+Compila una matrice di visualizzazione con la mano destra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -66,7 +66,7 @@ Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che definisce il punto dell'
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore alla struttura D3DXVECTOR3 che definisce la destinazione di ricerca della fotocamera.
+Puntatore alla struttura D3DXVECTOR3 che definisce la destinazione di sguardo della fotocamera.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore alla struttura D3DXVECTOR3 che definisce la destinazione di ricerca de
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore alla struttura D3DXVECTOR3 che definisce il mondo corrente, in genere \[ 0, 1, \] 0.
+Puntatore alla struttura D3DXVECTOR3 che definisce l'oggetto corrente, in genere \[ 0, 1, \] 0.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Puntatore alla struttura D3DXVECTOR3 che definisce il mondo corrente, in genere 
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a una struttura D3DXMATRIX che è una matrice di tipo right-handed.
+Puntatore a una struttura D3DXMATRIX che rappresenta una matrice di visualizzazione a destra.
 
 ## <a name="remarks"></a>Commenti
 

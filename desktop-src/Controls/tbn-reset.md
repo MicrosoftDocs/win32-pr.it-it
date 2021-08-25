@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TBN_RESET (COMmctrl. h)
-description: Notifica alla finestra padre della barra degli strumenti che l'utente ha reimpostato il contenuto della finestra di dialogo Personalizza barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TBN_RESET codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre della barra degli strumenti che l'utente ha reimpostato il contenuto della finestra di dialogo Personalizza barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 55efba85-b453-48b9-83df-76820249e7a8
 keywords:
-- Controlli di Windows per il codice di notifica TBN_RESET
+- TBN_RESET codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 117ee2a50445ffe4dd8cd23d952fde7836bcf023
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7852ee64dcf741dd291965e86d3d73f6113c1c8270bfa948d8d547fa99b9c01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876621"
 ---
-# <a name="tbn_reset-notification-code"></a>\_Codice di notifica di reimpostazione TBN
+# <a name="tbn_reset-notification-code"></a>Codice di notifica \_ TBN RESET
 
-Notifica alla finestra padre della barra degli strumenti che l'utente ha reimpostato il contenuto della finestra di dialogo Personalizza barra degli strumenti. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre della barra degli strumenti che l'utente ha reimpostato il contenuto della finestra di dialogo Personalizza barra degli strumenti. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TBN_RESET
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) contenente informazioni sul codice di notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni sul codice di notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Restituire TBNRF \_ ENDCUSTOMIZE per chiudere la finestra di dialogo Personalizz
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

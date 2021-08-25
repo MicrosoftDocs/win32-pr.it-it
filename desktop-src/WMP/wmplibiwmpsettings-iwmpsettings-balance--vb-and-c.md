@@ -1,11 +1,11 @@
 ---
-title: Proprietà Balance IWMPSettings
-description: La proprietà Balance Ottiene o imposta il saldo stereo corrente.
+title: Proprietà di bilanciamento IWMPSettings
+description: La proprietà balance ottiene o imposta il bilanciamento stereo corrente.
 ms.assetid: 6b9b6305-3bab-418d-a172-d47ca4dbaba5
 keywords:
-- Proprietà bilancia Media Player di Windows
-- Proprietà Balance Media Player Windows, interfaccia IWMPSettings
-- Interfaccia IWMPSettings Media Player Windows, Balance (proprietà)
+- proprietà balance Windows Media Player
+- proprietà balance Windows Media Player, interfaccia IWMPSettings
+- Interfaccia IWMPSettings Windows Media Player proprietà , balance
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2085f4074d0cd09f475fc031213e3a583747a86b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76d519d656be6b4974e2b4dd2707aafb2bb153f6b26bafe75de948d5e50c67b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861084"
 ---
-# <a name="iwmpsettingsbalance-property"></a>Proprietà IWMPSettings:: Balance
+# <a name="iwmpsettingsbalance-property"></a>Proprietà IWMPSettings::balance
 
-La proprietà **Balance** Ottiene o imposta il saldo stereo corrente.
+La **proprietà balance** ottiene o imposta il bilanciamento stereo corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Public Property balance As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il valore di bilanciamento. Questo valore può essere compreso tra 100 e 100. Il valore predefinito è zero.
+Oggetto **System.Int32** che rappresenta il valore di saldo. Questo valore può essere compreso tra 100 e 100. Il valore predefinito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore zero indica che l'audio viene riprodotto in un volume uguale sui canali sinistro e destro. Il valore 100 indica che l'audio viene riprodotto solo sul canale sinistro. Il valore 100 indica che l'audio viene riprodotto solo sul canale destro.
+Il valore zero indica che l'audio viene riprodotto con un volume uguale su entrambi i canali sinistro e destro. Il valore 100 indica che l'audio viene riprodotto solo sul canale sinistro. Il valore 100 indica che l'audio viene riprodotto solo sul canale destro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Il valore zero indica che l'audio viene riprodotto in un volume uguale sui canal
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

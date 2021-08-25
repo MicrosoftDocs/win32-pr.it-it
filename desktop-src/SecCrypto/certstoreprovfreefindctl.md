@@ -1,5 +1,5 @@
 ---
-description: Chiamato quando il certificato restituito dal callback CertStoreProvFindCTL non è stato usato e quindi rilasciato, in una chiamata successiva a CertStoreProvFindCTL.
+description: Chiamato quando il certificato restituito dal callback CertStoreProvFindCTL non è stato usato e quindi rilasciato in una chiamata successiva a CertStoreProvFindCTL.
 ms.assetid: 04e62a4e-4542-4225-8750-fabbda5adf0d
 title: Funzione di callback CertStoreProvFreeFindCTL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: ff0c9c3b7be6b8a4cafd759c3411f5096ee8640b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f3f6d224ed19073408015b3b83b90a66e9402d9b838d50eb7a8381e312e0534
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877141"
 ---
 # <a name="certstoreprovfreefindctl-callback-function"></a>Funzione di callback CertStoreProvFreeFindCTL
 
-La funzione di callback **CertStoreProvFreeFindCTL** viene chiamata quando il certificato restituito dal callback [**CertStoreProvFindCTL**](certstoreprovfindctl.md) non è stato usato e quindi rilasciato in una chiamata successiva a **CertStoreProvFindCTL**. Prima che venga chiamato il callback di chiusura, tutti i certificati restituiti dal callback [**CertStoreProvFindCTL**](certstoreprovfindctl.md) devono essere rilasciati dal provider utilizzando **CertStoreProvFindCTL** o **CertStoreProvFreeFindCTL**.
+La funzione di callback **CertStoreProvFreeFindCTL** viene chiamata quando il certificato restituito dal callback [**CertStoreProvFindCTL**](certstoreprovfindctl.md) non è stato usato e quindi rilasciato in una chiamata successiva a **CertStoreProvFindCTL.** Prima che venga chiamato il callback CLOSE, tutti i certificati restituiti dal callback [**CertStoreProvFindCTL**](certstoreprovfindctl.md) devono essere rilasciati dal provider usando **CertStoreProvFindCTL** o **CertStoreProvFreeFindCTL.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,28 +41,28 @@ BOOL CertStoreProvFreeFindCTL(
 
 <dl> <dt>
 
-*hStoreProv* \[ in\]
+*hStoreProv* \[ Pollici\]
 </dt> <dd>
 
-Handle **HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
+**Handle HCERTSTOREPROV** per un [*archivio certificati.*](../secgloss/c-gly.md)
 
 </dd> <dt>
 
-*pCtlContext* \[ in\]
+*pCtlContext* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ contesto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) .
+Puntatore a una [**struttura CONTEXT \_ CTL.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*pvStoreProvFindInfo* \[ in\]
+*pvStoreProvFindInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un buffer contenente le informazioni di ricerca.
+Puntatore a un buffer contenente informazioni di ricerca.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tutti i valori di flag necessari.
@@ -71,7 +71,7 @@ Tutti i valori di flag necessari.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo o **false** se l'operazione ha esito negativo.
+Restituisce **TRUE** se la funzione ha esito positivo o **FALSE** in caso di esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 
@@ -91,7 +91,7 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 [**CertStoreProvFindCTL**](certstoreprovfindctl.md)
 </dt> <dt>
 
-[**\_contesto CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTESTO \_ CTL**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

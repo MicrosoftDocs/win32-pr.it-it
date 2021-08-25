@@ -1,9 +1,9 @@
 ---
-title: Metodi ComputeLength di ID2D1Geometry
-description: Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga.
+title: Metodi ID2D1Geometry ComputeLength
+description: Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea.
 ms.assetid: 4659d880-0aa3-485d-ac71-044d9ace6759
 keywords:
-- Metodo ComputeLength Direct2D
+- Metodi ComputeLength Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: b49b1beb0525d95967ad903b0f0fb3c464edf4d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3181803698dfa439127cbb8121e670e907c08421f725a935833b7ad58bbb206f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874391"
 ---
-# <a name="id2d1geometrycomputelength-methods"></a>Metodi ID2D1Geometry:: ComputeLength
+# <a name="id2d1geometrycomputelength-methods"></a>Metodi ID2D1Geometry::ComputeLength
 
-Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga.
+Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,16 +30,16 @@ Calcola la lunghezza della geometria come se ogni segmento venisse registrato in
 
 | Metodo                                                                                                                          | Descrizione                                                                                         |
 |:--------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**ComputeLength (D2D1 \_ Matrix \_ 3X2 \_ F&, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))              | Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga.<br/>  |
-| [**ComputeLength (D2D1 \_ Matrix \_ 3x2 \_ F \* , float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))             | Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga.<br/>  |
-| [**ComputeLength (D2D1 \_ Matrix \_ 3X2 \_ F&, float, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f__float_float))  | Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga.<br/>  |
-| [**ComputeLength (D2D1 \_ Matrix \_ 3x2 \_ F \* , float, float \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)) | Calcola la lunghezza della geometria come se ogni segmento venisse registrato in una riga. <br/> |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))              | Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ \* F, FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float))             | Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,FLOAT) \***](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f__float_float))  | Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea.<br/>  |
+| [**ComputeLength(D2D1 \_ MATRIX \_ 3X2 \_ \* F,FLOAT,FLOAT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)) | Calcola la lunghezza della geometria come se ogni segmento fosse stato scollegato in una linea. <br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente illustra come usare **ComputeLength** per calcolare la lunghezza di una geometria del percorso specificata.
+Il codice seguente illustra come usare **ComputeLength** per calcolare la lunghezza di una geometria di percorso specificata.
 
 
 ```C++
@@ -82,7 +82,7 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

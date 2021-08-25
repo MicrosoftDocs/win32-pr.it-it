@@ -1,19 +1,19 @@
 ---
-title: IAgentCharacter dimensioni
-description: IAgentCharacter dimensioni
+title: IAgentCharacter SetSize
+description: IAgentCharacter SetSize
 ms.assetid: 8324ab84-2b59-4459-b375-700d72b621bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d39d5b33afa7ff59516b793f194a0ba186c2e002
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 089226f98969594a1d19afc7f3bb529c30943e06ec4083364dc5ae2f9850c9c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848521"
 ---
-# <a name="iagentcharactersetsize"></a>IAgentCharacter:: sesize
+# <a name="iagentcharactersetsize"></a>IAgentCharacter::SetSize
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetSize(
@@ -22,38 +22,38 @@ HRESULT SetSize(
 );
 ```
 
-Imposta la dimensione del frame di animazione del carattere.
+Imposta le dimensioni del frame di animazione del carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="lWidth"></span><span id="lwidth"></span><span id="LWIDTH"></span>*lWidth*
 </dt> <dd>
 
-Larghezza del fotogramma di animazione del carattere in pixel.
+Larghezza in pixel del frame di animazione del carattere.
 
 </dd> <dt>
 
 <span id="lHeight"></span><span id="lheight"></span><span id="LHEIGHT"></span>*lHeight*
 </dt> <dd>
 
-Altezza del frame di animazione del carattere in pixel.
+Altezza in pixel del frame di animazione del carattere.
 
 </dd> </dl>
 
-Se si modifica la dimensione del fotogramma del carattere, il carattere viene ridimensionato in modo da impostare le dimensioni con questo metodo. L'impostazione di questa proprietà si applica a tutti i client del carattere.
+La modifica delle dimensioni del frame del carattere consente di ridimensionare il carattere in base alle dimensioni impostate con questo metodo. L'impostazione di questa proprietà si applica a tutti i client del carattere.
 
-Anche se il carattere viene visualizzato in una finestra dell'area a forma irregolare, la posizione del carattere è basata sul relativo frame di animazione rettangolare.
+Anche se il carattere viene visualizzato in una finestra di area di forma irregolare, la posizione del carattere si basa sul relativo frame di animazione rettangolare.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCharacter:: GetSize**](iagentcharacter--getsize.md)
+[**IAgentCharacter::GetSize**](iagentcharacter--getsize.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

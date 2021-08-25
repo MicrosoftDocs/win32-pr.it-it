@@ -1,7 +1,7 @@
 ---
-description: La funzione GetPrinterDriver2 recupera i dati del driver per la stampante specificata. Se il driver non è installato nel computer locale, GetPrinterDriver2 lo installa e visualizza qualsiasi interfaccia utente per la finestra specificata.
+description: La funzione GetPrinterDriver2 recupera i dati del driver per la stampante specificata. Se il driver non è installato nel computer locale, GetPrinterDriver2 lo installa e visualizza qualsiasi interfaccia utente nella finestra specificata.
 ms.assetid: 0d482d28-7668-4734-ba71-5b355c18ddec
-title: Funzione GetPrinterDriver2 (winspool. h)
+title: Funzione GetPrinterDriver2 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: b0a9d2bfe7827a2c0e3db9fff9e8249b73bf5102
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5217ee8445ce8ccae5f22d7c85a4a88dd33f31a1a714aad4899b539ce4edced
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846011"
 ---
-# <a name="getprinterdriver2-function"></a>GetPrinterDriver2 (funzione)
+# <a name="getprinterdriver2-function"></a>Funzione GetPrinterDriver2
 
-La funzione **GetPrinterDriver2** recupera i dati del driver per la stampante specificata. Se il driver non è installato nel computer locale, **GetPrinterDriver2** lo installa e visualizza qualsiasi interfaccia utente per la finestra specificata.
+La **funzione GetPrinterDriver2** recupera i dati del driver per la stampante specificata. Se il driver non è installato nel computer locale, **GetPrinterDriver2** lo installa e visualizza qualsiasi interfaccia utente nella finestra specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,43 +46,43 @@ BOOL GetPrinterDriver2(
 
 <dl> <dt>
 
-*HWND* \[ in, facoltativo\]
+*hWnd* \[ in, facoltativo\]
 </dt> <dd>
 
-Handle della finestra che verrà utilizzata come finestra padre di qualsiasi interfaccia utente, ad esempio una finestra di dialogo, visualizzata dal driver durante l'installazione. Se il valore di questo parametro è **null**, l'interfaccia utente del driver verrà comunque visualizzata all'utente durante l'installazione, ma non avrà una finestra padre.
+Handle della finestra che verrà utilizzata come finestra padre di qualsiasi interfaccia utente, ad esempio una finestra di dialogo, visualizzata dal driver durante l'installazione. Se il valore di questo parametro è **NULL,** l'interfaccia utente del driver verrà comunque visualizzata all'utente durante l'installazione, ma non avrà una finestra padre.
 
 </dd> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per la stampante per il quale devono essere recuperati i dati del driver. Utilizzare la funzione [**OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle di stampante.
+Handle per la stampante per cui devono essere recuperati i dati del driver. Usare la [**funzione OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) per recuperare un handle della stampante.
 
 </dd> <dt>
 
 *pEnvironment* \[ in, facoltativo\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica l'ambiente (ad esempio, Windows x86, Windows IA64 o Windows x64). Se questo parametro è **null**, viene utilizzato l'ambiente corrente dell'applicazione chiamante e del computer client, non dell'applicazione di destinazione e del server di stampa.
+Puntatore a una stringa con terminazione Null che specifica l'ambiente, ad esempio Windows x86, Windows IA64 o Windows x64). Se questo parametro è **NULL,** viene usato l'ambiente corrente dell'applicazione chiamante e del computer client (non dell'applicazione di destinazione e del server di stampa).
 
 </dd> <dt>
 
-*Livello* \[ di in\]
+*Livello* \[ Pollici\]
 </dt> <dd>
 
-Struttura del driver della stampante restituita nel buffer di *pDriverInfo* . Questo parametro può avere uno dei valori seguenti.
+Struttura del driver della stampante restituita nel buffer *pDriverInfo.* Questo parametro può avere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                | Significato                                             |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | [**\_Informazioni driver \_ 1**](driver-info-1.md)<br/> |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**\_Informazioni driver \_ 2**](driver-info-2.md)<br/> |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**\_Informazioni driver \_ 3**](driver-info-3.md)<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**\_Informazioni driver \_ 4**](driver-info-4.md)<br/> |
-| <span id="5"></span><dl> <dt>**5**</dt> </dl> | [**\_Informazioni driver \_ 5**](driver-info-5.md)<br/> |
-| <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**\_Informazioni driver \_ 6**](driver-info-6.md)<br/> |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**\_Informazioni driver \_ 8**](driver-info-8.md)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 1**](driver-info-1.md)<br/> |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 2**](driver-info-2.md)<br/> |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 3**](driver-info-3.md)<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 4**](driver-info-4.md)<br/> |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 5**](driver-info-5.md)<br/> |
+| <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 6**](driver-info-6.md)<br/> |
+| <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**INFORMAZIONI \_ SUL DRIVER \_ 8**](driver-info-8.md)<br/> |
 
 
 
@@ -90,23 +90,23 @@ Struttura del driver della stampante restituita nel buffer di *pDriverInfo* . Qu
 
 </dd> <dt>
 
-*pDriverInfo* \[ out\]
+*pDriverInfo* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve una struttura contenente informazioni sul driver, come specificato dal *livello*. Il buffer deve essere sufficientemente grande da archiviare le stringhe a cui puntano i membri della struttura.
+Puntatore a un buffer che riceve una struttura contenente informazioni sul driver, come specificato da *Level*. Il buffer deve essere sufficientemente grande da archiviare le stringhe a cui puntano i membri della struttura.
 
-Per determinare le dimensioni del buffer richieste, chiamare **GetPrinterDriver2** con *cbBuf* impostato su zero. **GetPrinterDriver2** ha esito negativo, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce l' **errore \_ \_ buffer insufficiente** e il parametro *pcbNeeded* restituisce la dimensione, in byte, del buffer necessario per memorizzare la matrice di strutture e i relativi dati.
+Per determinare le dimensioni del buffer necessarie, chiamare **GetPrinterDriver2** con *cbBuf* impostato su zero. **GetPrinterDriver2** ha esito negativo, [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce **ERROR INSUFFICIENT \_ \_ BUFFER** e il *parametro pcbNeeded* restituisce le dimensioni, in byte, del buffer necessario per contenere la matrice di strutture e i relativi dati.
 
 </dd> <dt>
 
-*cbBuf* \[ in\]
+*cbBuf* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, della matrice in corrispondenza della quale punta *pDriverInfo* .
+Dimensione, in byte, della matrice alla quale *punta pDriverInfo.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ out\]
+*pcbNeeded* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un valore che riceve il numero di byte copiati se la funzione ha esito positivo o il numero di byte necessari se *cbBuf* è troppo piccolo.
@@ -121,9 +121,9 @@ Se la funzione ha esito negativo, il valore restituito è zero. Per ottenere lo 
 
 ## <a name="remarks"></a>Commenti
 
-Il driver info [**\_ \_ 2**](driver-info-2.md), [**driver \_ info \_ 3**](driver-info-3.md), [**driver \_ info \_ 4**](driver-info-4.md), [**driver \_ info \_ 5**](driver-info-5.md), [**driver \_ info \_ 6**](driver-info-6.md)e [**driver \_ info \_ 8**](driver-info-8.md) Structures contengono il nome file o il percorso completo e il nome file del driver della stampante nel membro **pDriverPath** . Un'applicazione può utilizzare il percorso e il nome file per caricare un driver della stampante chiamando la funzione [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e specificando il percorso e il nome del file come argomento singolo.
+Le strutture [**DRIVER \_ INFO \_ 2**](driver-info-2.md), [**DRIVER INFO \_ \_ 3**](driver-info-3.md), [**DRIVER INFO \_ \_ 4**](driver-info-4.md), [**DRIVER INFO \_ \_ 5**](driver-info-5.md), DRIVER INFO 6 e [**DRIVER INFO \_ \_**](driver-info-8.md) [**\_ \_ 8**](driver-info-6.md)contengono il nome file o il percorso completo e il nome file del driver della stampante nel membro **pDriverPath.** Un'applicazione può usare il percorso e il nome file per caricare un driver della stampante chiamando la [**funzione LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e fornendo il percorso e il nome file come singolo argomento.
 
-La versione ANSI di questa funzione, **GetPrinterDriver2A** , non è supportata e restituisce l' **errore \_ non \_ supportato**.
+La versione ANSI di questa funzione, **GetPrinterDriver2A,** non è supportata e restituisce **ERROR NOT \_ \_ SUPPORTED**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,11 +131,11 @@ La versione ANSI di questa funzione, **GetPrinterDriver2A** , non è supportata 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomi Unicode e ANSI<br/>   | **GetPrinterDriver2W** (Unicode)<br/>                                                               |
 
 
@@ -150,31 +150,31 @@ La versione ANSI di questa funzione, **GetPrinterDriver2A** , non è supportata 
 [Funzioni dell'API spooler di stampa](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**AddPrinterDriver**](addprinterdriver.md)
+[**Addprinterdriver**](addprinterdriver.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 1**](driver-info-1.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 1**](driver-info-1.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 2**](driver-info-2.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 2**](driver-info-2.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 3**](driver-info-3.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 3**](driver-info-3.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 4**](driver-info-4.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 4**](driver-info-4.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 5**](driver-info-5.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 5**](driver-info-5.md)
 </dt> <dt>
 
-[**\_Informazioni driver \_ 6**](driver-info-6.md)
+[**INFORMAZIONI \_ SUL DRIVER \_ 6**](driver-info-6.md)
 </dt> <dt>
 
 [**EnumPrinterDrivers**](enumprinterdrivers.md)
 </dt> <dt>
 
-[**GetPrinterDriver**](getprinterdriver.md)
+[**Getprinterdriver**](getprinterdriver.md)
 </dt> <dt>
 
 [**OpenPrinter**](openprinter.md)
