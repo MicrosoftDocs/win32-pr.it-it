@@ -1,21 +1,21 @@
 ---
-description: Suddivide il testo in giapponese in parole o moduli dizionario.
+description: Suddivide il testo giapponese in parole o moduli di dizionario.
 ms.assetid: f51ff969-c13c-4584-9795-1e4748eeb91d
 title: WordInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e439c408c84a126a5e26babb07700a91e9590b10
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c1e3f6dce116e41550c12327d0c7c3d82ee4d6a41cb409c4b2791246df81dd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079661"
 ---
 # <a name="wordinfo"></a>WordInfo
 
-\[Questa classe è obsoleta e non è supportata in Windows Vista.\]
+\[Questa classe è obsoleta e non è supportata Windows Vista.\]
 
-Suddivide il testo in giapponese in parole o moduli dizionario.
+Suddivide il testo giapponese in parole o moduli di dizionario.
 
 ## <a name="clsid"></a>CLSID
 
@@ -23,15 +23,15 @@ Suddivide il testo in giapponese in parole o moduli dizionario.
 
 ## <a name="progid"></a>ProgID
 
-NLG. Informazioni di Word giapponese. 1
+Nlg. Informazioni sulla parola giapponese.1
 
-## <a name="inproc-server"></a>Server inproc
+## <a name="inproc-server"></a>Inproc Server
 
 Msir3jp.dll
 
 ## <a name="threading-model"></a>Modello di threading
 
-Entrambi
+Entrambe
 
 ## <a name="implemented-interfaces"></a>Interfacce implementate
 
@@ -39,7 +39,7 @@ Entrambi
 
 ## <a name="remarks"></a>Commenti
 
-Il formato del dizionario della parola è la radice o il formato di base della parola con le terminazioni inflessioni rimosse.
+La forma del dizionario della parola è la forma radice o di base della parola con eventuali terminazioni gonfie rimosse.
 
  
 

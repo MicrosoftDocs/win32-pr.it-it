@@ -1,6 +1,6 @@
 ---
 description: Libera il blocco di memoria specificato.
-title: DeltaFree (funzione)
+title: Funzione DeltaFree
 ms.topic: reference
 ms.date: 12/03/2020
 ms.keywords: DeltaFree
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - msdelta.dll
-ms.openlocfilehash: 15885cfa3e879ed6a1e85b2f9553af92d436ca71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 606b8d91d20c74f7dd56ff4e09986abec3eef547989990a38bd8b4e3a27382c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079731"
 ---
-# <a name="deltafree-function"></a>DeltaFree (funzione)
+# <a name="deltafree-function"></a>Funzione DeltaFree
 
-Libera il blocco di memoria specificato. È necessario chiamare questa funzione dopo le chiamate a [CreateDeltaB](msdelta-createdeltab.md) e [ApplyDeltaB](msdelta-applydeltab.md) riuscite per liberare il buffer di memoria allocato da msdelta.
+Libera il blocco di memoria specificato. È necessario chiamare questa funzione dopo le chiamate riuscite [a CreateDeltaB](msdelta-createdeltab.md) e [ApplyDeltaB](msdelta-applydeltab.md) per liberare il buffer di memoria allocato da MSDelta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,17 +38,17 @@ BOOL  WINAPI  DeltaFree(
 
 *lpMemory*
 
-in Blocco di memoria da liberare.
+[in] Blocco di memoria da liberare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce **true** se ha esito positivo; in caso contrario, restituisce **false**. Quando la funzione restituisce **false**, è possibile chiamare [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) per ottenere il codice di errore del sistema Win32 corrispondente.
+Questa funzione restituisce **TRUE** se ha esito positivo. In caso contrario, restituisce **FALSE.** Quando la funzione restituisce **FALSE,** è possibile chiamare [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) per ottenere il codice di errore di sistema Win32 corrispondente.
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |----------------|---------------------------------------------------------------------------------------|
-| Intestazione | msdelta. h |
+| Intestazione | msdelta.h |
 | DLL | msdelta.dll |
 | Unicode | Non applicabile |
 

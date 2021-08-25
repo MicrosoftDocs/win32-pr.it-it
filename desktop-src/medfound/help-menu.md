@@ -4,23 +4,23 @@ ms.assetid: 2aa61e3d-4385-4ec2-ac71-a2a4a43af079
 title: Menu ?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94579e49cc38a7a6cb35b99ba1a6f74cb564c645
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbc20d5fb12ce7a5e0429be0da10e85e445b3c76f2ebf884c8664bda466b3872
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942451"
 ---
 # <a name="help-menu"></a>Menu ?
 
-Il menu **Guida** fornisce i comandi seguenti:
+Il menu **?** fornisce i comandi seguenti:
 
 
 
 | Comando      | Descrizione                                                                      |
 |--------------|----------------------------------------------------------------------------------|
-| **Guida...**  | Apre la Guida di TopoEdit sul sito Web MSDN.                                         |
-| **Informazioni su...** | Apre la finestra di dialogo informazioni **su** che visualizza le informazioni sulla versione relative a TopoEdit. |
+| **Guida...**  | Apre la Guida di TopoEdit nel sito Web MSDN.                                         |
+| **Circa...** | Apre la **finestra di** dialogo Informazioni su che visualizza le informazioni sulla versione di TopoEdit. |
 
 
 
@@ -33,7 +33,7 @@ Il menu **Guida** fornisce i comandi seguenti:
 [Menu TopoEdit](topoedit-menus.md)
 </dt> <dt>
 
-[TopoEdit](topoedit.md)
+[TopoModifica](topoedit.md)
 </dt> </dl>
 
  

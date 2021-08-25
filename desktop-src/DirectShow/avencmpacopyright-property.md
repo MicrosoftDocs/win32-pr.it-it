@@ -1,17 +1,17 @@
 ---
 description: Specifica l'impostazione predefinita per il bit di copyright nel flusso audio MPEG-1. Questa proprietà si applica ai codificatori audio MPEG.
 ms.assetid: 6029c96f-b1dd-402f-9bac-9021bd897ee4
-title: Proprietà AVEncMPACopyright (codecapis. h)
+title: Proprietà AVEncMPACopyright (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4449c41448d59ce673e667be7400d4a713236dd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fbd747de4f4351e5d540fcf8235194308457e0dcc985500f2743209061cedbdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824271"
 ---
-# <a name="avencmpacopyright-property"></a>Proprietà AVEncMPACopyright
+# <a name="avencmpacopyright-property"></a>AVEncMPACopyright - proprietà
 
 Specifica l'impostazione predefinita per il bit di copyright nel flusso audio MPEG-1. Questa proprietà si applica ai codificatori audio MPEG.
 
@@ -19,22 +19,22 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMPACopyright**
+**CODECAPI \_ AVEncMPACopyright**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà può includere i valori seguenti.
+Questa proprietà può avere i valori seguenti.
 
 
 
 | Valore          | Descrizione           |
 |----------------|-----------------------|
-| VARIANTE \_ false | Il copyright è disattivato. |
-| VARIANT \_ true  | Il copyright è il bit on.  |
+| VARIANT \_ FALSE | Il bit di copyright è disattivato. |
+| VARIANT \_ TRUE  | Il bit di copyright è on.  |
 
 
 
@@ -50,9 +50,9 @@ Il codificatore potrebbe eseguire l'override di questa impostazione, in base al 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Il codificatore potrebbe eseguire l'override di questa impostazione, in base al 
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

@@ -3,22 +3,22 @@ title: Funzioni glColor
 description: Queste funzioni impostano il colore corrente.
 ms.assetid: 916eb8b5-65c2-4523-bdb5-e609ad7a24a0
 keywords:
-- OpenGL, funzioni glColor
-- Riferimento OpenGL, funzioni glColor
-- informazioni di riferimento per le funzioni OpenGL, glColor
-- OpenGL, funzioni colori
-- Riferimento OpenGL, funzioni colori
-- informazioni di riferimento per OpenGL, funzioni colori
-- funzioni glColor
-- funzioni colore
+- Funzioni OpenGL,glColor
+- Informazioni di riferimento su OpenGL, funzioni glColor
+- informazioni di riferimento per le funzioni OpenGL,glColor
+- OpenGL, funzioni di colore
+- Riferimento OpenGL, funzioni di colore
+- informazioni di riferimento per OpenGL, funzioni di colore
+- Funzioni glColor
+- funzioni di colore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc6c77e1201dec2fdd42d56871a95bf5d3fce359
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37ab97a7cdefb482b0a401b8291839513637484ecfd75ccbaace556c5e2b1d79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082041"
 ---
 # <a name="glcolor-functions"></a>Funzioni glColor
 
@@ -57,9 +57,9 @@ Queste funzioni impostano il colore corrente:
 -   [**glColor4uiv**](glcolor4uiv.md)
 -   [**glColor4usv**](glcolor4usv.md)
 
- 
+ 
 
- 
+ 
 
 
 

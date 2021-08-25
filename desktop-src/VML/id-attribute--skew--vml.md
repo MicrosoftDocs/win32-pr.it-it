@@ -1,47 +1,47 @@
 ---
-title: Attributo ID (asimmetria) (la)
-description: Attributo ID (asimmetria) (la)
+title: Attributo ID (skew)(VML)
+description: Attributo ID (skew)(VML)
 ms.assetid: b418bf0b-341c-40e2-8077-e2746ccb3a06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30028ef114f7375f525e3317ea229a07e5628b65
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 49e502dfbf12d64dcc54110799ea456a34c14ef8e41e488ec145c4ba9de77490
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905461"
 ---
-# <a name="id-attribute-skewvml"></a>Attributo ID (asimmetria) (la)
+# <a name="id-attribute-skewvml"></a>Attributo ID (skew)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce un nome che fornisce un identificatore univoco per una asimmetria. Proprietà di lettura/scrittura. **Stringa**.
+Definisce un nome che fornisce un identificatore univoco per un'a inclinazione. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Sfasamento](msdn-online-vml-skew-element.md)
+[Inclinazione](msdn-online-vml-skew-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* ID = " *Expression* " >
+<o: *element* id=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . ID = "*Expression*"
+*element* .id="*expression*"
 
-*espressione* = *elemento*. ID
+*expression* = *elemento*.id
 
 **Osservazioni:**
 
-Usare **ID** per fare riferimento a un'asimmetria specifica. Dopo aver creato un'asimmetria e avergli assegnato un ID, è possibile usare il nome ID quando si desidera modificare l'asimmetria.
+Usare **l'ID** per fare riferimento a un'a inclinazione specifica. Dopo aver creato un'a inclinazione e avergli assegnato un ID, è possibile usare il nome ID quando si vuole modificare l'a inclinazione.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

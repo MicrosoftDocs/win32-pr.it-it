@@ -1,10 +1,10 @@
 ---
-title: Attributo SID-History
-description: Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostato da un altro dominio.
+title: SID-History attributo
+description: Contiene i SID precedenti usati per l'oggetto se l'oggetto è stato spostato da un altro dominio.
 ms.assetid: d738002b-fc05-4c60-aaf9-b83be61ed5a9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD SID-History attribute
+- SID-History schema AD dell'attributo
 - Schema AD dell'attributo sIDHistory
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16474a6463fc99e7ed2c1d2b1a2cdbf6ea9b6614
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c5c2dbfb3572392bdbed3f13683adc1cbf64b70e061962975a178f8380f55f5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836291"
 ---
-# <a name="sid-history-attribute"></a>Attributo SID-History
+# <a name="sid-history-attribute"></a>SID-History attributo
 
-Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostato da un altro dominio. Ogni volta che un oggetto viene spostato da un dominio a un altro, viene creato un nuovo SID e il nuovo SID diventa objectSID. Il SID precedente viene aggiunto alla proprietà sIDHistory.
+Contiene i SID precedenti usati per l'oggetto se l'oggetto è stato spostato da un altro dominio. Ogni volta che un oggetto viene spostato da un dominio a un altro, viene creato un nuovo SID e tale nuovo SID diventa objectSID. Il SID precedente viene aggiunto alla proprietà sIDHistory.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------|
 | CN                | SID-History                                    |
-| LDAP-Display-Name | sIDHistory                                     |
+| Ldap-Display-Name | Sidhistory                                     |
 | Dimensione              | \-                                             |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.               |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.               |
 | Frequenza di aggiornamento  | Ogni volta che l'oggetto viene spostato in un nuovo dominio. |
 | Attribute-Id      | 1.2.840.113556.1.4.609                         |
-| System-ID-GUID    | 17eb4278-d167-11d0-b002-0000f80367c1           |
-| Sintassi            | [**Stringa (SID)**](s-string-sid.md)            |
+| System-Id-Guid    | 17eb4278-d167-11d0-b002-0000f80367c1           |
+| Sintassi            | [**String(Sid)**](s-string-sid.md)            |
 
 
 
@@ -58,15 +58,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene i SID precedenti utilizzati per l'oggetto se l'oggetto è stato spostat
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 

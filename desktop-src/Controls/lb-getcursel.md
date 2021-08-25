@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_GETCURSEL (winuser. h)
+title: LB_GETCURSEL messaggio (Winuser.h)
 description: Ottiene l'indice dell'elemento attualmente selezionato, se presente, in una casella di riepilogo a selezione singola.
 ms.assetid: 39ab7f77-6c8e-45a4-aad4-47eba0a11a11
 keywords:
-- Controlli di Windows Message LB_GETCURSEL
+- LB_GETCURSEL dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6209f1f5b67e059f9a2b8a224e6f96ec671e38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d67a060669d48a9ab020540c78ece395504c9f0b7e36807e3ac59daf216ea395
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085521"
 ---
-# <a name="lb_getcursel-message"></a>LB- \_ messaggio GETcursel
+# <a name="lb_getcursel-message"></a>Messaggio GETCURSEL di LB \_
 
 Ottiene l'indice dell'elemento attualmente selezionato, se presente, in una casella di riepilogo a selezione singola.
 
@@ -32,26 +32,26 @@ Ottiene l'indice dell'elemento attualmente selezionato, se presente, in una case
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In una casella di riepilogo a selezione singola, il valore restituito è l'indice in base zero dell'elemento attualmente selezionato. Se non è presente alcuna selezione, il valore restituito è LB \_ Err.
+In una casella di riepilogo a selezione singola il valore restituito è l'indice in base zero dell'elemento attualmente selezionato. Se non è presente alcuna selezione, il valore restituito è LB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare gli indici degli elementi selezionati in una casella di riepilogo a selezione multipla, usare il messaggio [**lb \_ GETSELITEMS**](lb-getselitems.md) . Per determinare se l'elemento con il rettangolo di attivazione in una casella di riepilogo a selezione multipla è selezionato, usare il messaggio [**lb \_ GETSEL**](lb-getsel.md) .
+Per recuperare gli indici degli elementi selezionati in una casella di riepilogo a selezione multipla, usare il [**messaggio \_ LB GETSELITEMS.**](lb-getselitems.md) Per determinare se l'elemento con il rettangolo di attivazione in una casella di riepilogo a selezione multipla è selezionato, usare il [**messaggio \_ LB GETSEL.**](lb-getsel.md)
 
-Se viene inviato a una casella di riepilogo a selezione multipla, **lb \_ GetCurSel** restituisce l'indice dell'elemento con il rettangolo di attivazione. Se non è selezionato alcun elemento, viene restituito zero.
+Se inviato a una casella di riepilogo a selezione multipla, **LB \_ GETCURSEL** restituisce l'indice dell'elemento con il rettangolo di attivazione. Se non è selezionato alcun elemento, restituisce zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Se viene inviato a una casella di riepilogo a selezione multipla, **lb \_ GetCur
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,16 +72,16 @@ Se viene inviato a una casella di riepilogo a selezione multipla, **lb \_ GetCur
 **Riferimento**
 </dt> <dt>
 
-[**\_GETCARETINDEX lb**](lb-getcaretindex.md)
+[**LB \_ GETCARETINDEX**](lb-getcaretindex.md)
 </dt> <dt>
 
-[**\_GETSEL lb**](lb-getsel.md)
+[**LB \_ GETSEL**](lb-getsel.md)
 </dt> <dt>
 
-[**\_GETSELITEMS lb**](lb-getselitems.md)
+[**LB \_ GETSELITEMS**](lb-getselitems.md)
 </dt> <dt>
 
-[**di \_ lb**](lb-setcursel.md)
+[**LB \_ SETCURSEL**](lb-setcursel.md)
 </dt> </dl>
 
  

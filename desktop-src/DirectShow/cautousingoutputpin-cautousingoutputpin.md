@@ -1,7 +1,7 @@
 ---
 description: Metodo del costruttore. Il costruttore ottiene l'accesso al pin specificato.
 ms.assetid: 518d41aa-8361-4769-aa9b-14676b676d6f
-title: Costruttore CAutoUsingOutputPin. CAutoUsingOutputPin (Amfilter. h)
+title: Costruttore CAutoUsingOutputPin.CAutoUsingOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 94bafcdcb6e44a07afdccea382d783c20a9ad2ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0594eed7f253f7e540f843dfc3c3de6481d7dbede3f25d1534e52181ef0585b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057521"
 ---
-# <a name="cautousingoutputpincautousingoutputpin-constructor"></a>Costruttore CAutoUsingOutputPin. CAutoUsingOutputPin
+# <a name="cautousingoutputpincautousingoutputpin-constructor"></a>Costruttore CAutoUsingOutputPin.CAutoUsingOutputPin
 
 Metodo del costruttore. Il costruttore ottiene l'accesso al pin specificato.
 
@@ -46,20 +46,20 @@ CAutoUsingOutputPin(
 *pOutputPin* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CDynamicOutputPin**](cdynamicoutputpin.md) .
+Puntatore a [**un oggetto CDynamicOutputPin.**](cdynamicoutputpin.md)
 
 </dd> <dt>
 
-*PHR* 
+*Phr* 
 </dt> <dd>
 
-Puntatore a una variabile che contiene un valore **HRESULT** . Il valore deve essere S \_ OK.
+Puntatore a una variabile che contiene un **valore HRESULT.** Il valore deve essere S \_ OK.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando il metodo restituisce, il valore di *\* PHR* indica l'esito positivo o negativo del metodo.
+Quando il metodo viene restituito, il valore *\* di phr* indica l'esito positivo o negativo del metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Quando il metodo restituisce, il valore di *\* PHR* indica l'esito positivo o ne
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

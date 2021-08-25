@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_ISBUTTONHIGHLIGHTED (COMmctrl. h)
+title: TB_ISBUTTONHIGHLIGHTED messaggio (Commctrl.h)
 description: Controlla lo stato di evidenziazione di un pulsante della barra degli strumenti.
 ms.assetid: d5aab670-a989-46f2-b4f8-d8a8968cbe07
 keywords:
-- Controlli di Windows Message TB_ISBUTTONHIGHLIGHTED
+- TB_ISBUTTONHIGHLIGHTED di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f53e25058fee8fa5dcac218a641277ac46aed4e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 903932fddb7bf356a89adda0513a045d099a22c459add6401818eec54a3f0657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918371"
 ---
-# <a name="tb_isbuttonhighlighted-message"></a>TB \_ ISBUTTONHIGHLIGHTED messaggio
+# <a name="tb_isbuttonhighlighted-message"></a>TB \_ ISBUTTONHIGHLIGHTED message
 
 Controlla lo stato di evidenziazione di un pulsante della barra degli strumenti.
 
@@ -32,7 +32,7 @@ Controlla lo stato di evidenziazione di un pulsante della barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Identificatore del comando per un pulsante della barra degli strumenti.
+Identificatore di comando per un pulsante della barra degli strumenti.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Identificatore del comando per un pulsante della barra degli strumenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se il pulsante è evidenziato; in caso contrario, zero.
+Restituisce un valore diverso da zero se il pulsante è evidenziato oppure zero in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se il pulsante è evidenziato; in caso con
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_SETCOLUMN. ibData'
-title: Proprietà JET_SETCOLUMN. ibData
+description: 'Altre informazioni su: JET_SETCOLUMN.ibData'
+title: JET_SETCOLUMN.ibData
 TOCTitle: 'ibData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN.ibData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setcolumn.ibdata(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9996318a76c00bb399b51a7478bf9b1f34478f8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a545a178a4c38f1a53d65687a519a605fb80a60585c3f7d6827ff39266bde35e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945271"
 ---
-# <a name="jet_setcolumnibdata-property"></a>Proprietà JET_SETCOLUMN. ibData
+# <a name="jet_setcolumnibdata-property"></a>JET_SETCOLUMN.ibData
 
 Ottiene o imposta l'offset dei dati da impostare.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public int ibData { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_SETCOLUMN](./jet-setcolumn-class.md)
+[JET_SETCOLUMN classe](./jet-setcolumn-class.md)
 
-[Membri JET_SETCOLUMN](./jet-setcolumn-members.md)
+[JET_SETCOLUMN membri](./jet-setcolumn-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

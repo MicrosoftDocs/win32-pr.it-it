@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene descritto come creare un decodificatore bitmap utilizzando un nome file di immagine.
+description: Questo argomento descrive come creare un decodificatore bitmap usando un nome file di immagine.
 ms.assetid: b384861d-4e71-4e07-8b44-5c1cbcb3a70f
 title: Come creare un decodificatore usando un nome file di immagine
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 113ea82b741f2a8dab6c92d6391d65eb7d7e99c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 867581e06692188913e4bb1af4956956c462c46bc189a4983f3c5d24bc38c986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811991"
 ---
 # <a name="how-to-create-a-decoder-using-an-image-filename"></a>Come creare un decodificatore usando un nome file di immagine
 
-In questo argomento viene descritto come creare un decodificatore bitmap utilizzando un nome file di immagine.
+Questo argomento descrive come creare un decodificatore bitmap usando un nome file di immagine.
 
-Per creare un decodificatore bitmap utilizzando un nome file di immagine
+Per creare un decodificatore bitmap usando un nome file di immagine
 
-1.  Creare un oggetto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare oggetti di Windows Imaging Component (WIC).
+1.  Creare un [**oggetto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare oggetti Windows Imaging Component (WIC).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Per creare un decodificatore bitmap utilizzando un nome file di immagine
 
     
 
-2.  Usare il metodo [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
+2.  Usare il [**metodo CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**oggetto IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
 
     ```C++
     HRESULT hr = S_OK;
@@ -50,7 +50,7 @@ Per creare un decodificatore bitmap utilizzando un nome file di immagine
 
     
 
-3.  Ottiene il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
+3.  Ottenere il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -62,9 +62,9 @@ Per creare un decodificatore bitmap utilizzando un nome file di immagine
 
     
 
-    Il formato del file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo frame ( `0` ). Per i formati di immagine con più frame, vedere [How to retrieve the Frames of an image to](-wic-bitmapsources-howto-retrieveimageframes.md) accessing Each frame of the image.
+    Il formato di file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo fotogramma ( `0` ). Per i formati di immagine con più fotogrammi, vedere [Come recuperare i](-wic-bitmapsources-howto-retrieveimageframes.md) fotogrammi di un'immagine per accedere a ogni fotogramma dell'immagine.
 
-4.  Elaborare il frame dell'immagine. Per ulteriori informazioni sugli oggetti [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) , vedere [Cenni preliminari sulle origini bitmap](-wic-bitmapsources.md).
+4.  Elaborare la cornice dell'immagine. Per altre informazioni sugli [**oggetti IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) vedere Cenni preliminari sulle [origini bitmap](-wic-bitmapsources.md).
 
 ## <a name="see-also"></a>Vedere anche
 

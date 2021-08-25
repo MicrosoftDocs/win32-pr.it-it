@@ -1,5 +1,5 @@
 ---
-title: Metodo IVMVirtualPC GetDVDFiles (VPCCOMInterfaces. h)
+title: Metodo IVMVirtualPC GetDVDFiles (VPCCOMInterfaces.h)
 description: Recupera una matrice di file DVD noti.
 ms.assetid: 9fe2191f-c5c0-464d-a190-29b2aba69682
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a91d7f0d65d1f62feb21d41bd9b27bf6ce112ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 585b1558c5a0692d4f9a3d5d8371cd0b7e5a692596c06605e7d86eadf377cf45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864121"
 ---
-# <a name="ivmvirtualpcgetdvdfiles-method"></a>Metodo IVMVirtualPC:: GetDVDFiles
+# <a name="ivmvirtualpcgetdvdfiles-method"></a>Metodo IVMVirtualPC::GetDVDFiles
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera una matrice di file DVD noti.
 
@@ -45,10 +45,10 @@ HRESULT GetDVDFiles(
 
 <dl> <dt>
 
-*inAdditionalSearchPaths* \[ in\]
+*inAdditionalSearchPaths* \[ Pollici\]
 </dt> <dd>
 
-Questi percorsi verranno cercati insieme ai percorsi impostati nella proprietà [**IVMVirtualPC:: SearchPaths**](ivmvirtualpc-searchpaths.md) .
+Questi percorsi verranno cercati insieme ai percorsi impostati nella [**proprietà IVMVirtualPC::SearchPaths.**](ivmvirtualpc-searchpaths.md)
 
 </dd> <dt>
 
@@ -68,10 +68,10 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                                        | Descrizione                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                              | L'operazione è stata completata.<br/>                                                        |
-| <dl> <dt>**E \_ PUNTATORE**</dt> <dt>0x80004003</dt> </dl>                                | Il parametro *outDVDFileList* è **null**.<br/>                                          |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>                             | Il parametro *inAdditionalSearchPaths* non è una matrice di stringhe.<br/>                  |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
-| <dl> <dt>**Macchina virtuale \_ E \_ \_ virtualizzazione hardware \_ disabilitato**</dt> <dt>0xA0040951</dt> </dl> | Il processore non supporta le estensioni di virtualizzazione accelerata hardware (HAV).<br/> |
+| <dl> <dt>**E \_ Puntatore**</dt> <dt>0x80004003</dt> </dl>                                | Il *parametro outDVDFileList* è **NULL.**<br/>                                          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                             | Il *parametro inAdditionalSearchPaths* non è una matrice di stringhe.<br/>                  |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                        | Si è verificato un errore imprevisto.<br/>                                                    |
+| <dl> <dt>**Macchina virtuale \_ E \_ \_ VIRTUALIZZAZIONE HARDWARE \_ DISABILITATA**</dt> <dt>0XA0040951</dt> </dl> | Il processore non supporta le estensioni haV (Hardware Accelerated Virtualization).<br/> |
 
 
 
@@ -79,7 +79,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-I percorsi di ricerca usati per recuperare la matrice di file includeranno quelli impostati in precedenza da [**IVMVirtualPC:: SearchPaths**](ivmvirtualpc-searchpaths.md) , oltre a quelli specificati dal parametro *inAdditionalSearchPaths* e dal percorso del programma di installazione per il modulo Integration Components.
+I percorsi di ricerca usati per recuperare la matrice di file includeranno quelli impostati in precedenza da [**IVMVirtualPC::SearchPaths**](ivmvirtualpc-searchpaths.md) oltre a quelli specificati dal *parametro inAdditionalSearchPaths* e il percorso del programma di installazione per il modulo dei componenti di integrazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,12 +87,12 @@ I percorsi di ricerca usati per recuperare la matrice di file includeranno quell
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC è definito come 236ba0d9-A24A-4292-A132-27c1421dfd01<br/>               |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC è definito come \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

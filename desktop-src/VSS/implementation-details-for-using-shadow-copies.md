@@ -1,24 +1,24 @@
 ---
-description: "Gli argomenti seguenti forniscono i dettagli di implementazione per l'uso delle copie shadow: richiedente l'accesso alle copie shadow di importazione di dati copiati Shadow VolumesExposing e la replica di VolumesBreaking shadow copie shadow"
+description: "Gli argomenti seguenti forniscono informazioni dettagliate sull'implementazione per l'uso delle copie shadow: Accesso del richiedente ai dati copiati tramite shadowImportazione di volumi copiati shadow trasportabiliEsposizione e visualizzazione di volumi copiati shadowCopia shadow distruibile"
 ms.assetid: 3d20e8cf-7400-415f-b23f-ca64068b24ef
-title: Dettagli di implementazione per l'utilizzo di copie shadow
+title: Dettagli di implementazione per l'uso di copie shadow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc23ce289ac942c2628012c543ff1d5ef67b55d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58c91582e774c354646af5389aa0fa0b5df2cc1a49591f82ca76b13a98b2bd86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006351"
 ---
-# <a name="implementation-details-for-using-shadow-copies"></a>Dettagli di implementazione per l'utilizzo di copie shadow
+# <a name="implementation-details-for-using-shadow-copies"></a>Dettagli di implementazione per l'uso di copie shadow
 
-Negli argomenti seguenti vengono forniti i dettagli di implementazione per l'utilizzo di copie shadow:
+Negli argomenti seguenti vengono forniti i dettagli di implementazione per l'uso delle copie shadow:
 
--   [Accesso del richiedente ai dati copiati in Shadow](requestor-access-to-shadow-copied-data.md)
--   [Importazione di volumi di copie shadow trasportabili](importing-transportable-shadow-copied-volumes.md)
--   [Esposizione ed emersione di volumi copiati Shadow](exposing-and-surfacing-shadow-copied-volumes.md)
--   [Suddivisione delle copie shadow](breaking-shadow-copies.md)
+-   [Accesso del richiedente ai dati copiati shadow](requestor-access-to-shadow-copied-data.md)
+-   [Importazione di volumi copiati shadow trasportabili](importing-transportable-shadow-copied-volumes.md)
+-   [Esposizione e esposizione di volumi shadow copiati](exposing-and-surfacing-shadow-copied-volumes.md)
+-   [Copie shadow di rilievo](breaking-shadow-copies.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_GETHORIZONTALEXTENT (winuser. h)
-description: Ottiene la larghezza, in pixel, che la casella di riepilogo può scorrere orizzontalmente (larghezza scorrevole). Questa operazione è applicabile solo se la casella di riepilogo presenta una barra di scorrimento orizzontale.
+title: CB_GETHORIZONTALEXTENT messaggio (Winuser.h)
+description: Ottiene la larghezza, in pixel, che la casella di riepilogo può scorrere orizzontalmente (larghezza scorrevole). È applicabile solo se la casella di riepilogo ha una barra di scorrimento orizzontale.
 ms.assetid: 7c9fff88-2750-4c94-b7f6-6bdd81c224e9
 keywords:
-- Controlli di Windows Message CB_GETHORIZONTALEXTENT
+- CB_GETHORIZONTALEXTENT controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a2b1fb7c8fe7549360801516364528c9a2ef1f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 928561b812dd3a09909d8d89c7dda1dc67b63f9177769d80db2d16ac78cbbf72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089211"
 ---
-# <a name="cb_gethorizontalextent-message"></a>\_Messaggio GETHORIZONTALEXTENT CB
+# <a name="cb_gethorizontalextent-message"></a>CB \_ GETHORIZONTALEXTENT message
 
-Ottiene la larghezza, in pixel, che la casella di riepilogo può scorrere orizzontalmente (larghezza scorrevole). Questa operazione è applicabile solo se la casella di riepilogo presenta una barra di scorrimento orizzontale.
+Ottiene la larghezza, in pixel, che la casella di riepilogo può scorrere orizzontalmente (larghezza scorrevole). È applicabile solo se la casella di riepilogo ha una barra di scorrimento orizzontale.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Ottiene la larghezza, in pixel, che la casella di riepilogo può scorrere orizzo
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è la larghezza dello scorrimento, in pixel.
+Il valore restituito è la larghezza scorrevole, in pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è la larghezza dello scorrimento, in pixel.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskSettings. DisallowStartIfOnBatteries
-description: Per gli script, ottiene o imposta un valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione sulle batterie.
+title: TaskSettings.DisallowStartIfOnBatteries - proprietà
+description: Per lo scripting, ottiene o imposta un valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione su batterie.
 ms.assetid: 5e13f168-a396-495f-a486-e64e8524c8cd
 keywords:
-- Utilità di pianificazione proprietà DisallowStartIfOnBatteries
-- Utilità di pianificazione proprietà DisallowStartIfOnBatteries, oggetto TaskSettings
-- Oggetto TaskSettings Utilità di pianificazione, proprietà DisallowStartIfOnBatteries
+- Proprietà DisallowStartIfOnBatteries Utilità di pianificazione
+- Proprietà DisallowStartIfOnBatteries Utilità di pianificazione , oggetto TaskSettings
+- Oggetto TaskSettings Utilità di pianificazione proprietà , DisallowStartIfOnBatteries
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d35a7fde3012b25dfeab65e6e6088bb1d950892d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7e08e3e57a961f08a5f1ddae17c8334c9f1d3501b34590b1f98676195108444d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099721"
 ---
-# <a name="tasksettingsdisallowstartifonbatteries-property"></a>Proprietà TaskSettings. DisallowStartIfOnBatteries
+# <a name="tasksettingsdisallowstartifonbatteries-property"></a>TaskSettings.DisallowStartIfOnBatteries - proprietà
 
-Per gli script, ottiene o imposta un valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione sulle batterie.
+Per lo scripting, ottiene o imposta un valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione su batterie.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -40,11 +40,11 @@ TaskSettings.DisallowStartIfOnBatteries As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione sulle batterie. Se true, l'attività non verrà avviata se il computer è in esecuzione sulle batterie. Se false, l'attività verrà avviata se il computer è in esecuzione sulle batterie. Il valore predefinito è True.
+Valore booleano che indica che l'attività non verrà avviata se il computer è in esecuzione su batterie. Se True, l'attività non verrà avviata se il computer è in esecuzione con batterie. Se False, l'attività verrà avviata se il computer è in esecuzione con batterie. Il valore predefinito è True.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**DisallowStartIfOnBatteries**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**DisallowStartIfOnBatteries**](taskschedulerschema-disallowstartifonbatteries-settingstype-element.md) dello schema Utilità di pianificazione attività.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

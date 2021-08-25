@@ -1,35 +1,35 @@
 ---
-description: Questa sezione di funzioni, strutture ed enumerazioni di esperti contiene informazioni sulle funzioni, le strutture e le enumerazioni che possono essere utilizzate solo da esperti.
+description: Questa sezione Relativa a funzioni, strutture ed enumerazioni di Esperti contiene informazioni sulle funzioni, le strutture e le enumerazioni che solo gli esperti possono usare.
 ms.assetid: d4078937-2899-43c8-81bf-9ee97ef7070b
-title: Funzioni, strutture ed enumerazioni di esperti
+title: Funzioni, strutture ed enumerazioni di Esperti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba238e346a0f14490816aec3f1ce745cbbc5c643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e73fac14aae5722cb4cacb97bf82910831d9a10da7f1ee1d756a9b4ff01256b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911101"
 ---
-# <a name="expert-functions-structures-and-enumerations"></a>Funzioni, strutture ed enumerazioni di esperti
+# <a name="expert-functions-structures-and-enumerations"></a>Funzioni, strutture ed enumerazioni di Esperti
 
-Questa sezione di funzioni, strutture ed enumerazioni di esperti contiene informazioni sulle funzioni, le strutture e le enumerazioni che possono essere utilizzate solo da esperti. Negli argomenti di questa sezione sono inclusi gli elementi seguenti:
+Questa sezione Relativa a funzioni, strutture ed enumerazioni di Esperti contiene informazioni sulle funzioni, le strutture e le enumerazioni che solo gli esperti possono usare. Gli argomenti di questa sezione includono quanto segue:
 
--   [Funzioni di esportazione DLL di esperti](expert-dll-export-functions.md)
+-   [Funzioni di esportazione di DLL esperte](expert-dll-export-functions.md)
 
-    In questi argomenti vengono descritte le funzioni che devono essere esportate da dll esperti.
+    Questi argomenti descrivono le funzioni che devono essere esportate da DLL esperte.
 
--   [Funzioni di esperti](expert-functions.md)
+-   [Funzioni esperte](expert-functions.md)
 
-    In questi argomenti vengono descritte le funzioni di supporto chiamate da esperti.
+    Questi argomenti descrivono le funzioni helper chiamate dagli esperti.
 
 -   [Strutture di esperti](expert-structures.md)
 
-    In questi argomenti vengono descritte le strutture utilizzate dalle funzioni di esperti.
+    Questi argomenti descrivono le strutture usate dalle funzioni di esperti.
 
 -   [Enumerazioni di esperti](expert-enumerations.md)
 
-    In questi argomenti vengono descritte le enumerazioni utilizzate dalle funzioni e dalle strutture di esperti.
+    Questi argomenti descrivono le enumerazioni usate da strutture e funzioni esperte.
 
  
 

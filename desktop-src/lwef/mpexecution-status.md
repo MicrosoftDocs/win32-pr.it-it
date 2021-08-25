@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPEXECUTION_STATUS (MpClient. h)
-description: Stato di esecuzione della minaccia possibile.
+title: MPEXECUTION_STATUS enumerazione (MpClient.h)
+description: Possibile stato di esecuzione delle minacce.
 ms.assetid: 89D6BD9F-4A4C-48F5-BFD1-D09A240EB253
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPEXECUTION_STATUS
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPEXECUTION_STATUS
+- MPEXECUTION_STATUS di enumerazione Legacy Windows Environment Features
+- PMPEXECUTION_STATUS puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5cc21a0d8ec45d0715a7b1af8fb81a25e260711
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e4748b6d97e1b7ee05db8044837b89e2653a14fd1e6f87068a40107cdd9ee60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943911"
 ---
-# <a name="mpexecution_status-enumeration"></a>\_Enumerazione stato MPEXECUTION
+# <a name="mpexecution_status-enumeration"></a>Enumerazione MPEXECUTION \_ STATUS
 
-Stato di esecuzione della minaccia possibile.
+Possibile stato di esecuzione delle minacce.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,35 +45,35 @@ typedef enum tagMPEXECUTION_STATUS {
 
 <dl> <dt>
 
-<span id="MP_EXECUTION_STATUS_UNKNOWN"></span><span id="mp_execution_status_unknown"></span>**\_stato di esecuzione MP \_ \_ sconosciuto**
+<span id="MP_EXECUTION_STATUS_UNKNOWN"></span><span id="mp_execution_status_unknown"></span>**STATO \_ DI ESECUZIONE MP \_ \_ SCONOSCIUTO**
 </dt> <dd>
 
 Lo stato di esecuzione non è noto.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_BLOCKED"></span><span id="mp_execution_status_blocked"></span>**\_stato di esecuzione MP \_ \_ bloccato**
+<span id="MP_EXECUTION_STATUS_BLOCKED"></span><span id="mp_execution_status_blocked"></span>**STATO \_ DI ESECUZIONE MP \_ \_ BLOCCATO**
 </dt> <dd>
 
-Bloccato dall'esecuzione con mini-filtro.
+Bloccato dall'esecuzione tramite mini-filtro.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_ALLOWED"></span><span id="mp_execution_status_allowed"></span>**\_stato esecuzione \_ MP \_ consentito**
+<span id="MP_EXECUTION_STATUS_ALLOWED"></span><span id="mp_execution_status_allowed"></span>**STATO \_ DI ESECUZIONE MP \_ \_ CONSENTITO**
 </dt> <dd>
 
-Consentito per l'esecuzione con mini-filtro.
+Consentito per l'esecuzione tramite mini-filtro.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_EXECUTING"></span><span id="mp_execution_status_executing"></span>**\_stato esecuzione MP in \_ \_ esecuzione**
+<span id="MP_EXECUTION_STATUS_EXECUTING"></span><span id="mp_execution_status_executing"></span>**STATO \_ DI ESECUZIONE MP IN \_ \_ ESECUZIONE**
 </dt> <dd>
 
-È in corso l'esecuzione della minaccia.
+Minaccia in esecuzione.
 
 </dd> <dt>
 
-<span id="MP_EXECUTION_STATUS_NOT_EXECUTING"></span><span id="mp_execution_status_not_executing"></span>**\_stato esecuzione \_ MP \_ non in \_ esecuzione**
+<span id="MP_EXECUTION_STATUS_NOT_EXECUTING"></span><span id="mp_execution_status_not_executing"></span>**STATO \_ DI ESECUZIONE MP NON IN \_ \_ \_ ESECUZIONE**
 </dt> <dd>
 
 La minaccia non è in esecuzione ed è disponibile solo dal motore durante la correzione.
@@ -86,9 +86,9 @@ La minaccia non è in esecuzione ed è disponibile solo dal motore durante la co
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

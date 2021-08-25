@@ -1,29 +1,29 @@
 ---
-title: Windows Touch Scratchpad usando l'esempio di stilo in tempo reale (C++)
-description: Esaminare un esempio di Windows Touch Scratchpad C++ (MTSocpadRTStylus), che illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra.
+title: Windows Toccare Scratchpad usando l'esempio di stilo in tempo reale (C++)
+description: Esaminare un esempio di Windows Touch Scratchpad C++ (MTScratchpadRTStylus), che illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra.
 ms.assetid: c72ddc71-48b7-4c26-af2b-10919038eaf8
 keywords:
-- Windows Touch, esempi di codice
-- Windows Touch,codice di esempio
-- Windows Touch,Esempi di Scratchpad
+- Windows Tocco, esempi di codice
+- Windows Tocco, codice di esempio
+- Windows Esempi di Touch,Scratchpad
 - Esempi di Scratchpad
-- Windows Touch, Oggetto stilo in tempo reale (RTS)
+- Windows Oggetto Touch,Real-Time Stylus (RTS)
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: 42e32e66942f3dcfad11b8b777e846e0cee6c0b3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8ae407240b939f1afe70a976c995e244521cf51ed9103ac5601fdfa817ddf9e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089807"
 ---
-# <a name="windows-touch-scratchpad-using-the-real-time-stylus-sample-c"></a>Windows Touch Scratchpad usando l'esempio di stilo in tempo reale (C++)
+# <a name="windows-touch-scratchpad-using-the-real-time-stylus-sample-c"></a>Windows Toccare Scratchpad usando l'esempio di stilo in tempo reale (C++)
 
-L Windows Touch di esempio scratchpad ([MTSococpadRTStylus](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp)) illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra. La traccia del dito principale, quella che è stata inserita per prima sul digitalizzatore, viene disegnata in nero. Le dita secondarie vengono disegnate in altri sei colori: rosso, verde, blu, ciano, magenta e giallo. Lo screenshot seguente mostra l'aspetto dell'applicazione durante l'esecuzione.
+L'esempio Windows Touch Scratchpad ([MTScratchpadRTStylus](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp)) illustra come usare i messaggi Windows Touch per disegnare tracce dei punti di tocco in una finestra. La traccia del dito primario, quella che è stata inserita per prima nel digitalizzatore, viene disegnata in nero. Le dita secondarie vengono disegnate in altri sei colori: rosso, verde, blu, ciano, magenta e giallo. Lo screenshot seguente mostra l'aspetto dell'applicazione durante l'esecuzione.
 
-![Screenshot che mostra l'esempio di touch scratchpad di Windows con lo stilo in tempo reale, con una linea verde, rossa, tre nere e una linea blu sullo schermo](images/mtscratchpadrtstylus.png)
+![Screenshot che mostra l'esempio di touch scratchpad di Windows con lo stilo in tempo reale, con un verde, un rosso, tre nere e una linea blu sullo schermo](images/mtscratchpadrtstylus.png)
 
-Per questo esempio, viene creato l'oggetto stilo in tempo reale (RTS) e viene abilitato il supporto per più punti di contatto. Un plug-in DynamicRenderer viene aggiunto a RTS per eseguire il rendering del contenuto. Viene implementato un plug-in, **CSyncEventHandlerRTS,** per tenere traccia del numero di dita e per modificare il colore di disegno del renderer dinamico. Con entrambi i plug-in nello stack di plug-in RTS, l'applicazione Windows Touch Scratchpad eseguirà il rendering del contatto principale in nero e del resto dei contatti nei vari colori.
+Per questo esempio viene creato l'oggetto Stilo in tempo reale (RTS) e viene abilitato il supporto per più punti di contatto. Un plug-in DynamicRenderer viene aggiunto a RTS per eseguire il rendering del contenuto. Un plug-in, **CSyncEventHandlerRTS,** viene implementato per tenere traccia del numero di dita e per modificare il colore di disegno del renderer dinamico. Con entrambi i plug-in nello stack di plug-in RTS, l'applicazione Windows Touch Scratchpad eseguirà il rendering del contatto primario in nero e del resto dei contatti nei vari colori.
 
 Il codice seguente illustra come viene creato l'oggetto RTS con il supporto per più punti di contatto.
 
@@ -186,4 +186,4 @@ Quando il *m_nContacts* viene incrementato, cambierà il set di colori nel rende
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Applicazione Scratchpad multitocchetto [(RTS/C#),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS)applicazione [Scratchpad multitocchetto (RTS/C++),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp) [Windows Touch esempi](windows-touch-samples.md)
+[Multi-touch Scratchpad Application (RTS/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/CS), [Multi-touch Scratchpad Application (RTS/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadRTStylus/cpp), [Windows Touch Samples](windows-touch-samples.md)

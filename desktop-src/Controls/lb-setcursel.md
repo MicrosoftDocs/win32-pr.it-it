@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SETCURSEL (winuser. h)
-description: Seleziona una stringa e la scorre nella visualizzazione, se necessario. Quando la nuova stringa è selezionata, la casella di riepilogo rimuove l'evidenziazione dalla stringa selezionata in precedenza.
+title: LB_SETCURSEL messaggio (Winuser.h)
+description: Seleziona una stringa e la scorre nella visualizzazione, se necessario. Quando si seleziona la nuova stringa, la casella di riepilogo rimuove l'evidenziazione dalla stringa selezionata in precedenza.
 ms.assetid: 28d81f9d-a926-400c-8803-dcdb0e8f193d
 keywords:
-- Controlli di Windows Message LB_SETCURSEL
+- LB_SETCURSEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d1305ccece9c220d6a20e72e0ee54a428f8b13
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b33964d98717ab84a325b5070eec6c4e1cacf334ba2272d4691d340a15af78a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085341"
 ---
-# <a name="lb_setcursel-message"></a>\_Messaggio con maledizione lb
+# <a name="lb_setcursel-message"></a>Messaggio \_ LB SETCURSEL
 
-Seleziona una stringa e la scorre nella visualizzazione, se necessario. Quando la nuova stringa è selezionata, la casella di riepilogo rimuove l'evidenziazione dalla stringa selezionata in precedenza.
+Seleziona una stringa e la scorre nella visualizzazione, se necessario. Quando si seleziona la nuova stringa, la casella di riepilogo rimuove l'evidenziazione dalla stringa selezionata in precedenza.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,9 +32,9 @@ Seleziona una stringa e la scorre nella visualizzazione, se necessario. Quando l
 *wParam* 
 </dt> <dd>
 
-Specifica l'indice in base zero della stringa selezionata. Se questo parametro è-1, la casella di riepilogo è impostata su nessuna selezione.
+Specifica l'indice in base zero della stringa selezionata. Se questo parametro è -1, la casella di riepilogo viene impostata in modo che non abbia alcuna selezione.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Sebbene il numero di elementi sia limitato, le dimensioni totali in byte degli elementi in una casella di riepilogo sono limitate solo dalla memoria disponibile.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Anche se il numero di elementi è limitato, la dimensione totale in byte degli elementi in una casella di riepilogo è limitata solo dalla memoria disponibile.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si verifica un errore, il valore restituito è LB \_ Err. Se il parametro *wParam* è-1, il valore restituito è lb \_ Err anche se non si è verificato alcun errore.
+Se si verifica un errore, il valore restituito è LB \_ ERR. Se il *parametro wParam* è -1, il valore restituito è LB \_ ERR anche se non si è verificato alcun errore.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo messaggio solo con le caselle di riepilogo a selezione singola. Non è possibile usarlo per impostare o rimuovere una selezione in una casella di riepilogo a selezione multipla.
+Usare questo messaggio solo con caselle di riepilogo a selezione singola. Non è possibile usarlo per impostare o rimuovere una selezione in una casella di riepilogo a selezione multipla.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Utilizzare questo messaggio solo con le caselle di riepilogo a selezione singola
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Utilizzare questo messaggio solo con le caselle di riepilogo a selezione singola
 
 <dl> <dt>
 
-[**LB \_ GETcursel**](lb-getcursel.md)
+[**LB \_ GETCURSEL**](lb-getcursel.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un dispositivo a batteria virtuale.
 ms.assetid: 24e745cc-d92b-429b-87eb-4caae5d4a95a
-title: Classe Msvm_Battery
+title: Msvm_Battery classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 047594768c4cfcf96067d43e023e3dcc01cd1a56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 070eb7fb8e953161f21cc9b4d467097ccd1f8902cc429f730dc9435e03002518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870406"
 ---
-# <a name="msvm_battery-class"></a>\_Classe MSVM Battery
+# <a name="msvm_battery-class"></a>Classe Msvm \_ Battery
 
 Rappresenta un dispositivo a batteria virtuale.
 
@@ -37,7 +37,7 @@ class Msvm_Battery : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La **classe \_ della batteria MSVM** non definisce membri.
+La **classe Msvm \_ Battery** non definisce membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,10 +45,10 @@ La **classe \_ della batteria MSVM** non definisce membri.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La **classe \_ della batteria MSVM** non definisce membri.
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

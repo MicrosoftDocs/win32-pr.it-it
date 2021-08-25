@@ -25,7 +25,7 @@ ms.locfileid: "120108621"
 ---
 # <a name="cbasepintrymediatypes-method"></a>Metodo CBasePin.TryMediaTypes
 
-Dato un elenco di tipi di supporti, `TryMediaTypes` il metodo tenta di completare una connessione usando uno di questi tipi.
+Dato un elenco di tipi di supporti, il metodo tenta `TryMediaTypes` di completare una connessione usando uno di questi tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,27 +47,27 @@ virtual HRESULT TryMediaTypes(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di ricezione.
+Puntatore all'interfaccia [**IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin ricevente.
 
 </dd> <dt>
 
 *Pmt* 
 </dt> <dd>
 
-Puntatore a un [**oggetto CMediaType**](cmediatype.md) che limita i possibili tipi di supporti oppure **NULL.**
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che limita i tipi di supporti possibili oppure **NULL.**
 
 </dd> <dt>
 
 *pEnum* 
 </dt> <dd>
 
-Puntatore a [**un'interfaccia IEnumMediaTypes,**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) usata per enumerare l'elenco dei tipi di supporti.
+Puntatore a [**un'interfaccia IEnumMediaTypes,**](/windows/desktop/api/Strmif/nn-strmif-ienummediatypes) usata per enumerare l'elenco di tipi di supporti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli nella tabella seguente.
 
 
 
@@ -82,9 +82,9 @@ Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nell
 
 ## <a name="remarks"></a>Commenti
 
-Per ogni tipo di supporto restituito **dall'interfaccia IEnumMediaTypes,** questo metodo tenta una connessione chiamando il [**metodo CBasePin::AttemptConnection.**](cbasepin-attemptconnection.md)
+Per ogni tipo di supporto restituito **dall'interfaccia IEnumMediaTypes,** questo metodo tenta una connessione chiamando il metodo [**CBasePin::AttemptConnection.**](cbasepin-attemptconnection.md)
 
-Se il *parametro pmt* è diverso da **NULL,** il pin ignora i tipi di supporti che non corrispondono a questo tipo. Il *parametro pmt* può specificare un tipo di supporto parziale. Un tipo di supporto parziale ha un valore NULL GUID \_ per il tipo principale, il sottotipo o il formato. Il valore \_ NULL GUID corrisponde a qualsiasi tipo, simile a un valore "wildcard".
+Se il *parametro pmt* è diverso da **NULL,** il pin ignora i tipi di supporti che non corrispondono a questo tipo. Il *parametro pmt* può specificare un tipo di supporto parziale. Un tipo di supporto parziale ha un valore GUID \_ NULL per il tipo principale, il sottotipo o il formato. Il valore \_ GUID NULL corrisponde a qualsiasi tipo, simile a un valore "jolly".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,7 +92,7 @@ Se il *parametro pmt* è diverso da **NULL,** il pin ignora i tipi di supporti c
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

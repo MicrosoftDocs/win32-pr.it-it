@@ -1,21 +1,21 @@
 ---
-description: La guida Windows Installer contiene informazioni di interesse per gli autori dei pacchetti Windows Installer e degli utenti del servizio Windows Installer.
+description: La Windows Installer Guide contiene informazioni di interesse per gli autori Windows e gli utenti del servizio Windows Installer.
 ms.assetid: 6c68ca12-f601-4dc3-8415-e22f394b3407
-title: Guida Windows Installer
+title: Windows Guida al programma di installazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09eb2b375f096e565fd7c8f661af30c3dc64052f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 962d309e9f1cd0c8bf2b361cae3b317f1a9cce90f740db385b05b38b8bd78a16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808731"
 ---
-# <a name="windows-installer-guide"></a>Guida Windows Installer
+# <a name="windows-installer-guide"></a>Windows Guida al programma di installazione
 
-La guida Windows Installer contiene informazioni di interesse per gli autori dei pacchetti Windows Installer e degli utenti del servizio Windows Installer.
+La Windows Installer Guide contiene informazioni di interesse per gli autori Windows e gli utenti del servizio Windows Installer.
 
--   [Firme digitali e Windows Installer](digital-signatures-and-windows-installer.md)
+-   [Firme digitali e programma di Windows di installazione](digital-signatures-and-windows-installer.md)
 -   [Assembly](assemblies.md)
 -   [Interfaccia utente](user-interface.md)
 -   [Azioni standard](standard-actions.md)
@@ -23,12 +23,12 @@ La guida Windows Installer contiene informazioni di interesse per gli autori dei
 -   [Proprietà](properties.md)
 -   [Flusso di informazioni di riepilogo](summary-information-stream.md)
 -   [Applicazione di patch e aggiornamenti](patching-and-upgrades.md)
--   [Trasformazioni di database](database-transforms.md)
--   [Convalida del pacchetto](package-validation.md)
--   [Unisci moduli](merge-modules.md)
--   [Bootstrap Windows Installer](windows-installer-bootstrapping.md)
--   [Windows Installer su sistemi operativi a 64 bit](windows-installer-on-64-bit-operating-systems.md)
--   [Requisiti per Windows Installer e logo](windows-installer-and-logo-requirements.md)
+-   [Trasformazioni del database](database-transforms.md)
+-   [Convalida dei pacchetti](package-validation.md)
+-   [Unire moduli](merge-modules.md)
+-   [Windows Bootstrap del programma di installazione](windows-installer-bootstrapping.md)
+-   [Windows Programma di installazione nei sistemi operativi a 64 bit](windows-installer-on-64-bit-operating-systems.md)
+-   [Windows Requisiti del programma di installazione e del logo](windows-installer-and-logo-requirements.md)
 
  
 

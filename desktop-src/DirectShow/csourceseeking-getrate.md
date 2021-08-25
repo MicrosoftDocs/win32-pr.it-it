@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fef379ef06cd0982f1eb5742ac2624d706ed73a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b734a5fafba9e38abbe853a8f3592a212130bf9a68de0efe7125aeea0ea01b7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083951"
 ---
 # <a name="csourceseekinggetrate-method"></a>Metodo CSourceSeeking.GetRate
 
@@ -58,7 +58,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 | Codice restituito                                                                               | Descrizione                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione riuscita<br/>                |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | **Valore del** puntatore NULL<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | **Valore del** puntatore NULL<br/> |
 
 
 
@@ -66,7 +66,7 @@ Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-La velocità di riproduzione viene specificata dalla [**variabile membro CSourceSeeking::m \_ dRateSeeking.**](csourceseeking-m-drateseeking.md)
+La velocità di riproduzione è specificata dalla variabile membro [**CSourceSeeking::m \_ dRateSeeking.**](csourceseeking-m-drateseeking.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ La velocità di riproduzione viene specificata dalla [**variabile membro CSource
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSignedLargeIntegerValue recupera un valore LONGLONG (di tipo VT \_ I8) specificato da una chiave.
+description: Il metodo GetSignedLargeIntegerValue recupera un valore LONGLONG (tipo VT \_ I8) specificato da una chiave.
 ms.assetid: b8d2a0b6-7ca3-4a56-a502-cc18b08df22a
-title: 'Metodo IPortableDeviceValues:: GetSignedLargeIntegerValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::GetSignedLargeIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 5fc41c263ffdef540300a08f88665a6489fa9d41
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 516d7c08b68e4480b3240ea9335793589114070859cf28d5cf91e645b616a2db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055111"
 ---
-# <a name="iportabledevicevaluesgetsignedlargeintegervalue-method"></a>Metodo IPortableDeviceValues:: GetSignedLargeIntegerValue
+# <a name="iportabledevicevaluesgetsignedlargeintegervalue-method"></a>Metodo IPortableDeviceValues::GetSignedLargeIntegerValue
 
-Il metodo **GetSignedLargeIntegerValue** recupera un valore **LONGLONG** (di tipo VT \_ I8) specificato da una chiave.
+Il **metodo GetSignedLargeIntegerValue** recupera un **valore LONGLONG** (tipo VT \_ I8) specificato da una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ HRESULT GetSignedLargeIntegerValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave **REFPROPERTYKEY** che specifica l'elemento da recuperare.
 
 </dd> <dt>
 
-*pValue* \[ out\]
+*pValue* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al valore **ULONG** recuperato.
@@ -57,15 +57,15 @@ Puntatore al valore **ULONG** recuperato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                            |
 |------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                       |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *Key* non è di tipo **LONGLONG** .<br/> |
-| <dl> <dt>**HRESULT \_ da \_ Win32 (errore \_ non \_ trovato)**</dt> </dl> | La proprietà specificata dalla *chiave* non è presente nella raccolta.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                       |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *key* non è di **tipo LONGLONG.**<br/> |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nella raccolta.<br/>   |
 
 
 
@@ -77,8 +77,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

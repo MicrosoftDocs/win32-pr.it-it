@@ -15,8 +15,8 @@ ms.locfileid: "119969476"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Stati degli elementi del controllo Struttura a schede](tab-control-item-states.md)
--   [Stili dei controlli Struttura a schede](tab-control-styles.md)
+-   [Stati degli elementi del controllo Tab](tab-control-item-states.md)
+-   [Stili del controllo Tab](tab-control-styles.md)
 
  
 

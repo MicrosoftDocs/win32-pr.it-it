@@ -1,19 +1,19 @@
 ---
-description: L' <dateCreated> elemento facoltativo identifica la data e l'ora in cui è stato creato il connettore di ricerca usando lo standard ISO 8601. Non ha elementi figlio e nessun attributo.
+description: L'elemento facoltativo identifica la data e l'ora di creazione del connettore di <dateCreated> ricerca usando lo standard ISO 8601. Non ha elementi figlio e nessun attributo.
 ms.assetid: 96d8b067-b5ab-4d36-a8d7-1d084a9f661d
 title: Elemento dateCreated (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6017c0555d464a49192c4fe8cb7e347bbab0e367
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b59af62b2bd7ce8678fafb1fdd84646314f41a51414b4285db3077b5db0e0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944401"
 ---
 # <a name="datecreated-element-search-connector-schema"></a>Elemento dateCreated (schema del connettore di ricerca)
 
-L' <dateCreated> elemento facoltativo identifica la data e l'ora in cui è stato creato il connettore di ricerca usando lo standard ISO 8601. Non ha elementi figlio e nessun attributo.
+L'elemento facoltativo identifica la data e l'ora di creazione del connettore di <dateCreated> ricerca usando lo standard ISO 8601. Non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,8 +49,8 @@ L' <dateCreated> elemento facoltativo identifica la data e l'ora in cui è stato
 
 Il formato del valore di questo elemento segue lo standard ISO 8601. Un uso comune è uno dei seguenti:
 
--   \[Aaaa \] - \[ mm \] - \[ gg \] T \[ HH \] : \[ mm \] : \[ SS \] ± \[ HH \] : \[ mm \] ("1981-04-05T14:30:30-05:00")
--   \[AAAA \] \[ mm \] \[ gg \] T \[ HH \] \[ mm \] \[ SS \] Z ("19810405T193030Z")
+-   \[AAAA \] - \[ MM \] - \[ GG \] T \[ \] hh: mm : \[ \] \[ ss ± \] \[ hh \] : mm \[ \] ("1981-04-05T14:30:30-05:00")
+-   \[AAAA \] \[ MM \] \[ GG \] T \[ hh mm \] \[ \] \[ ss \] Z ("19810405T193030Z")
 
 ## <a name="example"></a>Esempio
 

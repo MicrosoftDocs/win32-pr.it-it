@@ -1,39 +1,39 @@
 ---
-title: Rotazione Single-Finger
-description: In questa sezione viene illustrato come ruotare un oggetto utilizzando un punto pivot.
+title: Single-Finger rotazione
+description: Questa sezione illustra come ruotare un oggetto usando un punto pivot.
 ms.assetid: b9c19009-8ac0-4168-bf26-393280fc589f
 keywords:
-- Windows Touch, rotazione
-- Windows Touch, modifiche
-- Windows Touch, rotazione a dito singolo
-- Windows Touch, rotazione del punto pivot
+- Windows Tocco, rotazione
+- Windows Tocco, manipolazioni
+- Windows Tocco, rotazione con un solo dito
+- Windows Tocco, rotazione del punto pivot
 - manipolazioni, rotazione
 - rotazione, punti pivot
-- rotazione, a dito singolo
-- movimenti, rotazione a dito singolo
-- rotazione di un singolo dito
+- rotazione, dito singolo
+- movimenti, rotazione con un solo dito
+- rotazione con un solo dito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d74263f502749e2aaf942c4bbec5aa0a284e76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36fe7e92f6d68515e1d13b39c32ee4af5b6b03e675479242210fe302b84e6395
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110653"
 ---
-# <a name="single-finger-rotation"></a>Rotazione Single-Finger
+# <a name="single-finger-rotation"></a>Single-Finger rotazione
 
-In questa sezione viene illustrato come ruotare un oggetto utilizzando un punto pivot.
+Questa sezione illustra come ruotare un oggetto usando un punto pivot.
 
-Nell'immagine seguente viene illustrata la rotazione di un singolo dito.
+L'immagine seguente illustra la rotazione con un solo dito.
 
-![illustrazione che mostra due tipi di rotazione a dito singolo: intorno al centro o intorno al bordo](images/sfrotation.png)
+![Figura che mostra due tipi di rotazione con un dito singolo: intorno al centro o intorno al bordo](images/sfrotation.png)
 
-Nell'esempio A, l'oggetto viene ruotato intorno al punto centrale dell'oggetto utilizzando il movimento di rotazione. Nell'esempio B l'oggetto viene ruotato spostando un singolo dito intorno al bordo dell'oggetto. Il processore di manipolazione Abilita questa rotazione usando i valori del punto pivot e del raggio pivot. Nell'immagine seguente vengono illustrati i componenti della rotazione di un singolo dito.
+Nell'esempio A, l'oggetto viene ruotato intorno al punto centrale dell'oggetto usando il movimento di rotazione. Nell'esempio B, l'oggetto viene ruotato spostando un singolo dito intorno al bordo dell'oggetto. Il processore di manipolazione abilita questa rotazione usando i valori del punto pivot e del raggio del pivot. L'immagine seguente illustra i componenti della rotazione con un solo dito.
 
-![illustrazione che mostra i componenti della rotazione con un solo dito: pivotpointx, pivotpointy e pivotRadius](images/sfrotation-components.png)
+![Illustrazione che mostra i componenti della rotazione con un dito singolo: pivotpointx, pivotpointy e pivotradius](images/sfrotation-components.png)
 
-Dopo aver impostato i valori [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx), [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)e [**pivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) , i messaggi di traduzione successivi includeranno la rotazione. Maggiore è il raggio perno, maggiore è la modifica in x e y deve essere per ruotare l'oggetto. Nel codice seguente viene illustrato come impostare questi valori nel processore di manipolazione.
+Dopo aver impostato i [**valori PivotPointX,**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx) [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)e [**PivotRadius,**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) i messaggi di traduzione successivi incorporano la rotazione. Maggiore è il raggio del pivot, maggiore sarà la modifica in x e y per ruotare l'oggetto. Il codice seguente illustra come impostare questi valori nel processore di manipolazione.
 
 
 ```C++
@@ -60,12 +60,12 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
 
 
 
-Nell'esempio precedente, la distanza al bordo dell'oggetto, ridimensionato al 40%, viene utilizzata come raggio pivot. Poiché le dimensioni dell'oggetto vengono prese in considerazione, questo calcolo è valido per ogni Delta di oggetti. Quando l'oggetto viene ridimensionato, il raggio pivot aumenta. Questo valore e i valori x e y del centro dell'oggetto vengono passati al processore di manipolazione per ruotare l'oggetto intorno al punto di perno.
+Nell'esempio precedente viene usata la distanza dal bordo dell'oggetto (ridimensionata al 40%) come raggio pivot. Poiché le dimensioni dell'oggetto vengono prese in considerazione, questo calcolo è valido per ogni delta dell'oggetto. Man mano che l'oggetto viene ridimensionato, il raggio del pivot aumenta. Questo valore e i valori x e y al centro dell'oggetto vengono passati al processore di manipolazione per ruotare l'oggetto intorno al punto pivot.
 
 > [!Note]  
-> Il valore [**pivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) non deve essere mai compreso tra 0,0 e 1,0.
+> Il [**valore di PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) non deve mai essere compreso tra 0,0 e 1,0.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -83,9 +83,9 @@ Nell'esempio precedente, la distanza al bordo dell'oggetto, ridimensionato al 40
 [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà EmailAction. BCC
-description: Per la creazione di script, ottiene o imposta l'indirizzo di posta elettronica o gli indirizzi che si desidera inserire nel messaggio di posta elettronica.
+title: Proprietà EmailAction.Bcc
+description: Per lo scripting, ottiene o imposta l'indirizzo di posta elettronica o gli indirizzi da ccn nel messaggio di posta elettronica.
 ms.assetid: ab340cd7-d6ce-4dce-8474-fdbbc02bd65b
 keywords:
-- Utilità di pianificazione proprietà Ccn
-- Utilità di pianificazione proprietà Ccn, oggetto EmailAction
-- Oggetto EmailAction Utilità di pianificazione, proprietà Ccn
+- Proprietà Ccn Utilità di pianificazione
+- Proprietà Bcc Utilità di pianificazione , oggetto EmailAction
+- Oggetto EmailAction Utilità di pianificazione proprietà , Bcc
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bded5e88c236123832956ce42413352348ea535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 268aece8d6433d07b06d856c266d1e26c096104f0456856ac383253faaf4e976
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100391"
 ---
-# <a name="emailactionbcc-property"></a>Proprietà EmailAction. BCC
+# <a name="emailactionbcc-property"></a>Proprietà EmailAction.Bcc
 
-\[Questo oggetto non è più supportato. Per una soluzione alternativa, usare IExecAction con il cmdlet [**Send-MailMessage**](/powershell/module/microsoft.powershell.utility/send-mailmessage) di PowerShell.\]
+\[Questo oggetto non è più supportato. Usare IExecAction con il cmdlet [**Send-MailMessage**](/powershell/module/microsoft.powershell.utility/send-mailmessage) di PowerShell come soluzione alternativa.\]
 
-Per la creazione di script, ottiene o imposta l'indirizzo di posta elettronica o gli indirizzi che si desidera inserire nel messaggio di posta elettronica.
+Per lo scripting, ottiene o imposta l'indirizzo di posta elettronica o gli indirizzi da ccn nel messaggio di posta elettronica.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -42,7 +42,7 @@ EmailAction.Bcc As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Indirizzo di posta elettronica o indirizzi che si desidera inserire nel messaggio di posta elettronica.
+Indirizzo di posta elettronica o indirizzi da ccn nel messaggio di posta elettronica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,11 +50,11 @@ Indirizzo di posta elettronica o indirizzi che si desidera inserire nel messaggi
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                    |
 | Fine del supporto server<br/>    | Windows Server 2008 R2<br/>                                                       |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

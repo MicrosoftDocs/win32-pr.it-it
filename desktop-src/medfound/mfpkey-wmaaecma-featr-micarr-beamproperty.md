@@ -1,23 +1,23 @@
 ---
-description: Specifica il fascio utilizzato dal DSP di acquisizione vocale per l'elaborazione di matrici di microfoni.
+description: Specifica quale dispositivo DSP di acquisizione vocale usa per l'elaborazione della matrice del microfono.
 ms.assetid: 9ed761da-3f1b-47e8-b71f-becc56fe8801
-title: Proprietà MFPKEY_WMAAECMA_FEATR_MICARR_BEAM (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_BEAM proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9165eec0dee87fa5d9f6a751f41e81d0de2d9958
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b9a91cef7d270af37adc8fda9805d7bf275ef9877883ed8ff8cfdbf9e7a55e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953531"
 ---
-# <a name="mfpkey_wmaaecma_featr_micarr_beam-property"></a>MFPKEY \_ WMAAECMA \_ featr \_ MICARR \_ Beam proprietà
+# <a name="mfpkey_wmaaecma_featr_micarr_beam-property"></a>Proprietà MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ BEAM
 
-Specifica il fascio utilizzato dal DSP di acquisizione vocale per l'elaborazione di matrici di microfoni.
+Specifica quale dispositivo DSP di acquisizione vocale usa per l'elaborazione della matrice del microfono.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,15 +25,15 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [DSP di acquisizione vocale](voicecapturedmo.md)
+-   [Voice Capture DSP](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questa proprietà se il valore della proprietà [MFPKEY \_ WMAAECMA \_ featr \_ MICARR \_ mode](mfpkey-wmaaecma-featr-micarr-modeproperty.md) è MICARRAY \_ extern \_ Beam.
+Impostare questa proprietà se il valore della proprietà [MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ MODE](mfpkey-wmaaecma-featr-micarr-modeproperty.md) è MICARRAY \_ EXTERN \_ BEAM.
 
-Se il valore di [**MFPKEY \_ WMAAECMA \_ featr \_ MICARR \_ mode**](mfpkey-wmaaecma-featr-micarr-modeproperty.md) è MICARRAY \_ Single \_ Beam, è possibile leggere questa proprietà per eseguire una query su quale Beam è stato selezionato dal DSP.
+Se il valore di [**MFPKEY \_ WMAAECMA \_ FEATR \_ MICARR \_ MODE**](mfpkey-wmaaecma-featr-micarr-modeproperty.md) è MICARRAY \_ SINGLE PLUG-IN, è possibile leggere questa proprietà per eseguire una query sulla trave selezionata dal \_ DSP.
 
-Questa proprietà può includere i valori seguenti. I valori sono in gradi orizzontali.
+Questa proprietà può avere i valori seguenti. I valori sono in gradi orizzontali.
 
 
 
@@ -61,9 +61,9 @@ Questa proprietà può includere i valori seguenti. I valori sono in gradi orizz
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -71,10 +71,10 @@ Questa proprietà può includere i valori seguenti. I valori sono in gradi orizz
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP di acquisizione vocale](voicecapturedmo.md)
+[Voice Capture DSP](voicecapturedmo.md)
 </dt> </dl>
 
  

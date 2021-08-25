@@ -1,38 +1,38 @@
 ---
 title: Tipi di carattere e testo (OpenGL)
-description: L'implementazione Microsoft di OpenGL in Windows supporta la grafica GDI in una finestra OpenGL con singolo buffer.
+description: L'implementazione microsoft di OpenGL in Windows supporta la grafica GDI in una finestra OpenGL a buffer singolo.
 ms.assetid: 25a45e1a-6c1e-416b-8993-daeefc1100f3
 keywords:
-- OpenGL per Windows, tipi di carattere
-- OpenGL per Windows, testo
+- OpenGL in Windows,tipi di carattere
+- OpenGL su Windows,text
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6fba4ffe996bd88a6285f615ddacb31e57fc311
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 966298b6a8d8e5584e761570205a5d3e7be58be3a8dfeb488db2a6f523fc9a25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082431"
 ---
 # <a name="fonts-and-text-opengl"></a>Tipi di carattere e testo (OpenGL)
 
-L'implementazione Microsoft di OpenGL in Windows supporta la grafica GDI in una finestra OpenGL con singolo buffer. Non supporta la grafica GDI in una finestra OpenGL con doppio buffer. Pertanto, è possibile chiamare solo le funzioni standard GDI font e Text per creare testo in una finestra OpenGL con buffer singolo; non è possibile chiamare queste funzioni per creare testo in una finestra OpenGL con doppio buffer.
+L'implementazione microsoft di OpenGL in Windows supporta la grafica GDI in una finestra OpenGL a buffer singolo. Non supporta la grafica GDI in una finestra OpenGL con doppio buffer. Di conseguenza, è possibile chiamare solo le funzioni di tipo di carattere e testo GDI standard per disegnare testo in una finestra OpenGL a buffer singolo; non è possibile chiamare queste funzioni per disegnare testo in una finestra OpenGL con doppio buffer.
 
-Esiste una soluzione alternativa per questa restrizione sul testo nelle finestre con doppio buffer: compila gli elenchi di visualizzazione OpenGL per le immagini bitmap di caratteri, quindi Esegui gli elenchi di visualizzazione per creare caratteri. Questo processo prevede tre passaggi principali:
+Esiste una soluzione alternativa per questa restrizione al testo nelle finestre con doppio buffer: creare elenchi di visualizzazione OpenGL per immagini bitmap di caratteri e quindi eseguire tali elenchi di visualizzazione per disegnare caratteri. In questo processo sono necessari tre passaggi principali:
 
 1.  Selezionare un tipo di carattere per un contesto di dispositivo, impostando le proprietà del tipo di carattere come desiderato.
-2.  Creare un set di elenchi di visualizzazione bitmap basati sui glifi nel tipo di carattere del contesto di dispositivo, un elenco di visualizzazione per ogni glifo che l'applicazione trarrà.
-3.  Creare ogni glifo in una stringa usando gli elenchi di visualizzazione bitmap.
+2.  Creare un set di elenchi di visualizzazione bitmap in base ai glifi nel tipo di carattere del contesto di dispositivo, un elenco di visualizzazione per ogni glifo che verrà di disegno dall'applicazione.
+3.  Disegnare ogni glifo in una stringa usando gli elenchi di visualizzazione delle bitmap.
 
-Per creare gli elenchi di visualizzazione, chiamare le funzioni [**wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa) e [**wglUseFontOutlines**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa) . Per creare caratteri in una stringa usando gli elenchi di visualizzazione, chiamare [**glCallLists**](glcalllists.md).
+Per creare gli elenchi di visualizzazione, chiamare [**le funzioni wglUseFontBitmaps**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontbitmapsa) [**e wglUseFontOutlines.**](/windows/desktop/api/wingdi/nf-wingdi-wglusefontoutlinesa) Per disegnare caratteri in una stringa usando tali elenchi di visualizzazione, chiamare [**glCallLists**](glcalllists.md).
 
-Per creare applicazioni facili da localizzare e che usano le risorse in modo sporadico, è necessario gestire con attenzione la creazione e l'archiviazione degli elenchi di visualizzazione delle immagini del glifo. Molti linguaggi, a differenza della lingua inglese, presentano alfabeti i cui codici di caratteri sono compresi in un set di valori relativamente grande.
+Per creare applicazioni facili da localizzare e che usano risorse con parsimonia, la creazione e l'archiviazione di questi elenchi di visualizzazione delle immagini degli glifi devono essere gestite con attenzione. Molte lingue, a differenza dell'inglese, hanno alfabeti i cui codici di carattere sono diversi da un set relativamente grande di valori.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Funzioni di tipo carattere e testo](font-and-text-functions.md)
+[Funzioni di tipo di carattere e testo](font-and-text-functions.md)
 </dt> </dl>
 
  

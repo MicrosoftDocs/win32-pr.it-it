@@ -1,30 +1,30 @@
 ---
-description: Se l'applicazione ospita una DLL di terze parti, un'estensione, un plug-in o un pannello di controllo, potrebbe essere necessario abilitare un assembly nell'applicazione&\# 8212; senza abilitare anche questo assembly per i componenti ospitati.
+description: Se l'applicazione ospita una DLL di terze parti, un'estensione, un plug-in o un pannello di controllo, è possibile abilitare un assembly nell'applicazione&8212, senza abilitare anche questo assembly per i componenti \# ospitati.
 ms.assetid: 832957ca-82fc-4600-b469-512621dde921
-title: Abilitazione di un assembly in un'applicazione che ospita una DLL, un'estensione o un pannello di controllo
+title: Abilitazione di un assembly in un'applicazione che ospita una DLL, un'estensione o un Pannello di controllo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b04dd19b18c2cdce4783be47333b9afe53dd1ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23ac528c10d7ca0de903c6b132e0349c16061d63f121c390483458b4ef422d66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885541"
 ---
-# <a name="enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel"></a>Abilitazione di un assembly in un'applicazione che ospita una DLL, un'estensione o un pannello di controllo
+# <a name="enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel"></a>Abilitazione di un assembly in un'applicazione che ospita una DLL, un'estensione o un Pannello di controllo
 
-Se l'applicazione ospita una DLL di terze parti, un'estensione, un plug-in o un pannello di controllo, è possibile abilitare un assembly nell'applicazione, senza abilitare anche questo assembly per i componenti ospitati. Questo può essere il caso in cui un componente ospitato richiede modifiche al codice per usare l'assembly. Lo sviluppatore dell'applicazione potrebbe non essere in grado di apportare modifiche a questi componenti di terze parti. In questo caso, è necessario seguire la procedura descritta in questa sezione in modo che l'applicazione possa usare l'assembly senza influire sui componenti ospitati.
+Se l'applicazione ospita una DLL di terze parti, un'estensione, un plug-in o un pannello di controllo, è possibile abilitare un assembly nell'applicazione, senza abilitare anche questo assembly per i componenti ospitati. Ciò può verificarsi quando un componente ospitato richiede modifiche al codice per usare l'assembly. Lo sviluppatore dell'applicazione potrebbe non essere in grado di apportare modifiche a questi componenti di terze parti. In questo caso, è necessario seguire la procedura descritta in questa sezione in modo che l'applicazione possa usare l'assembly senza influire sui componenti ospitati.
 
--   Per abilitare un assembly in un'applicazione senza influire sulle dll, le estensioni, i plug-in o i pannelli di controllo ospitati, un manifesto che descrive la dipendenza dell'applicazione dall'assembly deve essere incluso nell'applicazione come risorsa. I componenti ospitati che non sono abilitati con l'assembly non devono includere manifesti che descrivono questa dipendenza.
--   Per abilitare un assembly in un'applicazione e le relative dll, estensioni, plug-in o pannelli di controllo ospitati, includere i manifesti come risorse nell'applicazione e nei relativi componenti ospitati. I manifesti inclusi nell'applicazione e nei componenti ospitati dovrebbero descrivere una dipendenza dall'assembly. In genere, lo sviluppatore dell'applicazione aggiunge un manifesto all'applicazione e lo sviluppatore di componenti ospitati aggiunge un manifesto alla DLL, all'estensione, al plug-in o al pannello di controllo.
+-   Per abilitare un assembly in un'applicazione senza influire su DLL, estensioni, plug-in o pannelli di controllo ospitati, un manifesto che descrive la dipendenza dell'applicazione dall'assembly deve essere incluso nell'applicazione come risorsa. I componenti ospitati che non vengono abilitati con l'assembly non devono includere manifesti che descrivono questa dipendenza.
+-   Per abilitare un assembly in un'applicazione e nelle DLL, estensioni, plug-in o pannelli di controllo ospitati, includere manifesti come risorse sia nell'applicazione che nei relativi componenti ospitati. I manifesti inclusi nell'applicazione e nei componenti ospitati devono descrivere ognuno una dipendenza dall'assembly. In genere, lo sviluppatore dell'applicazione aggiunge un manifesto all'applicazione e lo sviluppatore di componenti ospitati aggiunge un manifesto alla DLL, all'estensione, al plug-in o al pannello di controllo.
 
 Il metodo seguente può essere usato per aggiungere un manifesto a un'applicazione o a un componente ospitato che è una DLL, un'estensione, un plug-in o un pannello di controllo.
 
 **Per abilitare un assembly in un'applicazione o in un componente ospitato.**
 
-1.  Creare un manifesto che descriva la dipendenza dell'applicazione o dell'estensione nell'assembly.
+1.  Creare un manifesto che descrive la dipendenza dell'applicazione o dell'estensione nell'assembly.
 
-    È ad esempio possibile creare il manifesto per "YourApplication" copiando il manifesto di esempio seguente e sostituendo i valori corretti per **assemblyIdentity**, **processorArchitecture** e **Description**. Impostare il valore di **processorArchitecture** su x86 se si compila su una piattaforma a 32 bit e su ia64 se si compila su una piattaforma a 64 bit. L'elemento **Description** contiene una descrizione dell'opzione dell'applicazione. Per ulteriori informazioni sul formato del manifesto, vedere [manifesti dell'applicazione](application-manifests.md).
+    Ad esempio, il manifesto per "YourApplication" può essere creato copiando il manifesto di esempio seguente e sostituendo i valori corretti per **assemblyIdentity,** **processorArchitecture** e **description**. Impostare il valore **di processorArchitecture** su x86 se si compila in una piattaforma a 32 bit e su ia64 se si compila in una piattaforma a 64 bit. **L'elemento description** contiene una descrizione dell'opzione dell'applicazione. Per altre informazioni sul formato del manifesto, vedere [Manifesti dell'applicazione](application-manifests.md).
 
     ``` syntax
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -51,7 +51,7 @@ Il metodo seguente può essere usato per aggiungere un manifesto a un'applicazio
     </assembly>
     ```
 
-2.  Creare una risorsa nell'applicazione o nell'estensione di tipo RT \_ manifest ID 2.
+2.  Creare una risorsa nell'applicazione o nell'estensione di tipo RT \_ MANIFEST ID 2.
 
     Ad esempio, se il nome dell'applicazione è YourApp, l'applicazione deve contenere quanto segue:
 
@@ -60,15 +60,15 @@ Il metodo seguente può essere usato per aggiungere un manifesto a un'applicazio
     MANIFEST_RESOURCE_ID RT_MANIFEST "YourApp.manifest"
     ```
 
-3.  Compilare l'applicazione con il flag di \_ Abilitazione di-DISOLATION \_ o inserire questa istruzione prima dell' \# istruzione include "Windows. h". Nel caso di un'applicazione con più moduli, il flag-DISOLATION \_ Aware \_ Enabled è obbligatorio in tutti i moduli.
+3.  Compilare l'applicazione con il flag -DISOLATION AWARE ENABLED o inserire questa istruzione prima \_ \_ dell'istruzione include \# "Windows.h". Nel caso di un'applicazione con più moduli, il flag -DISOLATION \_ AWARE \_ ENABLED è obbligatorio in tutti i moduli.
 
     ``` syntax
     #define ISOLATION_AWARE_ENABLED 1
     ```
 
-4.  Eseguire un test per assicurarsi che gli assembly usati dall'applicazione funzionino correttamente nell'applicazione e nel componente ospitato.
+4.  Verificare che gli assembly usati dall'applicazione funzionino correttamente nell'applicazione e nel componente ospitato.
 
-Per ulteriori informazioni sull'aggiunta di un assembly alle applicazioni senza estensioni, vedere [Abilitazione di un assembly in un'applicazione senza estensioni](enabling-an-assembly-in-an-application-without-extensions.md).
+Per altre informazioni sull'aggiunta di un assembly alle applicazioni senza estensioni, vedere Abilitazione di [un assembly in un'applicazione senza estensioni](enabling-an-assembly-in-an-application-without-extensions.md).
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è un PROPVARIANT. Gli attributi vengono utilizzati in tutti i Microsoft Media Foundation per configurare gli oggetti, descrivere i formati multimediali, le proprietà degli oggetti query e altri scopi.
+description: Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è propVARIANT. Gli attributi vengono usati in Microsoft Media Foundation per configurare oggetti, descrivere formati multimediali, eseguire query su proprietà degli oggetti e altri scopi.
 ms.assetid: 44af5e03-5f0a-4564-b9d6-b8c935df35b2
 title: Attributi in Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6e7893586aa1e966b95c1af5d04246bbb0c82ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f46cc919f426ff7b0862de73d8852291d25b7e31f2b5d67d7a4955369be6d17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943301"
 ---
 # <a name="attributes-in-media-foundation"></a>Attributi in Media Foundation
 
-Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è un **PROPVARIANT**. Gli attributi vengono utilizzati in tutti i Microsoft Media Foundation per configurare gli oggetti, descrivere i formati multimediali, le proprietà degli oggetti query e altri scopi.
+Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è **PROPVARIANT**. Gli attributi vengono usati in Microsoft Media Foundation per configurare oggetti, descrivere formati multimediali, eseguire query su proprietà degli oggetti e altri scopi.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -24,21 +24,21 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="about-attributes"></a>Informazioni sugli attributi
 
-Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è un **PROPVARIANT**. I valori degli attributi sono limitati ai tipi di dati seguenti:
+Un attributo è una coppia chiave/valore, dove la chiave è un GUID e il valore è **PROPVARIANT**. I valori degli attributi sono limitati ai tipi di dati seguenti:
 
--   Intero senza segno a 32 bit (**UInt32**).
--   Intero senza segno a 64 bit (**UInt64**).
--   numero a virgola mobile a 64 bit.
+-   Intero senza segno a 32 bit (**UINT32**).
+-   Intero senza segno a 64 bit (**UINT64**).
+-   Numero a virgola mobile a 64 bit.
 -   GUID.
 -   Stringa di caratteri "wide" con terminazione Null.
 -   Matrice di byte.
--   Puntatore **IUnknown** .
+-   **Puntatore IUnknown.**
 
-Questi tipi sono definiti nell'enumerazione [**del \_ \_ tipo di attributo MF**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_attribute_type) . Per impostare o recuperare i valori di attributo, utilizzare l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Questa interfaccia contiene metodi indipendenti dai tipi per ottenere e impostare i valori in base al tipo di dati. Ad esempio, per impostare un intero a 32 bit, chiamare [**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32). Le chiavi di attributo sono univoche all'interno di un oggetto. Se si impostano due valori diversi con la stessa chiave, il secondo valore sovrascrive il primo.
+Questi tipi sono definiti [**nell'enumerazione \_ ATTRIBUTE \_ TYPE di MF.**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_attribute_type) Per impostare o recuperare i valori degli attributi, usare [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Questa interfaccia contiene metodi indipendente dai tipi per ottenere e impostare i valori in base al tipo di dati. Ad esempio, per impostare un intero a 32 bit, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32). Le chiavi di attributo sono univoche all'interno di un oggetto . Se si impostano due valori diversi con la stessa chiave, il secondo valore sovrascrive il primo.
 
-Diverse interfacce di Media Foundation ereditano l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Gli oggetti che espongono questa interfaccia hanno attributi facoltativi o obbligatori che l'applicazione deve impostare sull'oggetto o che possono recuperare gli attributi che l'applicazione può recuperare. Inoltre, alcuni metodi e funzioni accettano un puntatore **IMFAttributes** come parametro, che consente all'applicazione di impostare le informazioni di configurazione. L'applicazione deve creare un archivio di attributi per contenere gli attributi di configurazione. Per creare un archivio attributi vuoto, chiamare [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
+Diverse Media Foundation ereditano [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Gli oggetti che espongono questa interfaccia hanno attributi facoltativi o obbligatori che l'applicazione deve impostare sull'oggetto o hanno attributi che l'applicazione può recuperare. Inoltre, alcuni metodi e funzioni accettano un **puntatore IMFAttributes** come parametro, che consente all'applicazione di impostare le informazioni di configurazione. L'applicazione deve creare un archivio attributi per contenere gli attributi di configurazione. Per creare un archivio attributi vuoto, chiamare [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
 
-Il codice seguente illustra due funzioni. Il primo crea un nuovo archivio di attributi e imposta un ipotetico attributo denominato MY \_ Attribute con un valore stringa. La seconda funzione recupera il valore di questo attributo.
+Il codice seguente illustra due funzioni. Il primo crea un nuovo archivio attributi e imposta un ipotetico attributo denominato MY \_ ATTRIBUTE con un valore stringa. La seconda funzione recupera il valore di questo attributo.
 
 
 ```C++
@@ -101,15 +101,15 @@ HRESULT ShowGetAttributes()
 
 
 
-Per un elenco completo degli attributi di Media Foundation, vedere [Media Foundation attributi](media-foundation-attributes.md). Il tipo di dati previsto per ogni attributo è documentato in questa posizione.
+Per un elenco completo degli Media Foundation, vedere Media Foundation [attributi](media-foundation-attributes.md). Il tipo di dati previsto per ogni attributo è documentato qui.
 
 ## <a name="serializing-attributes"></a>Serializzazione degli attributi
 
-Media Foundation dispone di due funzioni per la serializzazione degli archivi di attributi. Uno scrive gli attributi in una matrice di byte, l'altro li scrive in un flusso che supporta l'interfaccia **IStream** . Ogni funzione ha una funzione corrispondente che carica i dati.
+Media Foundation ha due funzioni per la serializzazione degli archivi attributi. Uno scrive gli attributi in una matrice di byte, l'altro li scrive in un flusso che supporta **l'interfaccia IStream.** Ogni funzione ha una funzione corrispondente che carica i dati.
 
 
 
-| Operazione | Matrice di byte                                                   | IStream                                                                        |
+| Operazione | Matrice di byte                                                   | Istream                                                                        |
 |-----------|--------------------------------------------------------------|--------------------------------------------------------------------------------|
 | Salva      | [**MFGetAttributesAsBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesasblob)       | [**MFSerializeAttributesToStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfserializeattributestostream)         |
 | Caricamento      | [**MFInitAttributesFromBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfinitattributesfromblob) | [**MFDeserializeAttributesFromStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfdeserializeattributesfromstream) |
@@ -118,17 +118,17 @@ Media Foundation dispone di due funzioni per la serializzazione degli archivi di
 
  
 
-Per scrivere il contenuto di un archivio di attributi in una matrice di byte, chiamare [**MFGetAttributesAsBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesasblob). Gli attributi con valori di puntatore **IUnknown** vengono ignorati. Per caricare di nuovo gli attributi in un archivio di attributi, chiamare [**MFInitAttributesFromBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfinitattributesfromblob).
+Per scrivere il contenuto di un archivio attributi in una matrice di byte, chiamare [**MFGetAttributesAsBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesasblob). Gli attributi con **valori puntatore IUnknown** vengono ignorati. Per caricare nuovamente gli attributi in un archivio attributi, chiamare [**MFInitAttributesFromBlob**](/windows/desktop/api/mfapi/nf-mfapi-mfinitattributesfromblob).
 
-Per scrivere un archivio di attributi in un flusso, chiamare [**MFSerializeAttributesToStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfserializeattributestostream). Questa funzione può effettuare il marshalling dei valori del puntatore **IUnknown** . Il chiamante deve fornire un oggetto flusso che implementi l'interfaccia **IStream** . Per caricare un archivio di attributi da un flusso, chiamare [**MFDeserializeAttributesFromStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfdeserializeattributesfromstream).
+Per scrivere un archivio attributi in un flusso, chiamare [**MFSerializeAttributesToStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfserializeattributestostream). Questa funzione può effettuare il marshalling dei valori del puntatore **IUnknown.** Il chiamante deve fornire un oggetto flusso che implementa **l'interfaccia IStream.** Per caricare un archivio attributi da un flusso, chiamare [**MFDeserializeAttributesFromStream**](/windows/desktop/api/mfobjects/nf-mfobjects-mfdeserializeattributesfromstream).
 
 ## <a name="implementing-imfattributes"></a>Implementazione di IMFAttributes
 
-Media Foundation fornisce un'implementazione predefinita di [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes), ottenuta chiamando la funzione [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) . Nella maggior parte dei casi, è consigliabile usare questa implementazione e non fornire un'implementazione personalizzata.
+Media Foundation fornisce un'implementazione predefinita di [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes), ottenuta chiamando la [**funzione MFCreateAttributes.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) Nella maggior parte dei casi, è consigliabile usare questa implementazione e non fornire un'implementazione personalizzata.
 
-È possibile che si verifichi una situazione in cui è necessario implementare l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) : se si implementa una seconda interfaccia che eredita **IMFAttributes**. In tal caso, è necessario fornire le implementazioni per i metodi **IMFAttributes** ereditati dalla seconda interfaccia.
+Esiste una situazione in cui potrebbe essere necessario implementare [**l'interfaccia IMFAttributes:**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) se si implementa una seconda interfaccia che eredita **IMFAttributes.** In tal caso, è necessario fornire implementazioni per i **metodi IMFAttributes** ereditati dalla seconda interfaccia.
 
-In questa situazione, è consigliabile eseguire il wrapping dell'implementazione di Media Foundation esistente di [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). Il codice seguente illustra un modello di classe che contiene un puntatore **IMFAttributes** ed esegue il wrapping di ogni metodo **IMFAttributes** , ad eccezione dei metodi **IUnknown** .
+In questo caso, è consigliabile eseguire il wrapping dell'implementazione Media Foundation esistente [**di IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). Il codice seguente illustra un modello di classe che contiene un **puntatore IMFAttributes** ed esegue il wrapping di ogni **metodo IMFAttributes,** ad eccezione dei **metodi IUnknown.**
 
 
 ```C++
@@ -504,7 +504,7 @@ public:
 
 
 
-Il codice seguente mostra come derivare una classe da questo modello:
+Il codice seguente illustra come derivare una classe da questo modello:
 
 
 ```C++
@@ -576,15 +576,15 @@ public:
 
 
 
-È necessario chiamare `CBaseAttributes::Initialize` per creare l'archivio di attributi. Nell'esempio precedente, questa operazione viene eseguita all'interno di una funzione di creazione statica.
+È necessario chiamare per `CBaseAttributes::Initialize` creare l'archivio attributi. Nell'esempio precedente questa operazione viene eseguita all'interno di una funzione di creazione statica.
 
-L'argomento di modello è un tipo di interfaccia, che per impostazione predefinita è [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). Se l'oggetto implementa un'interfaccia che eredita **IMFAttributes**, ad esempio [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate), impostare l'argomento del modello uguale al nome dell'interfaccia derivata.
+L'argomento modello è un tipo di interfaccia, che per impostazione predefinita è [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes). Se l'oggetto implementa un'interfaccia che eredita **IMFAttributes,** ad esempio [**IMFActivate,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)impostare l'argomento modello uguale al nome dell'interfaccia derivata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Primitive Media Foundation](media-foundation-primitives.md)
+[Media Foundation primitive](media-foundation-primitives.md)
 </dt> </dl>
 
  

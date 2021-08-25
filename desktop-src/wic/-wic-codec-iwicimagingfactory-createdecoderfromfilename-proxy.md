@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo CreateDecoderFromFilename.
 ms.assetid: 12c60899-0fe0-47d0-9026-48c74df328ef
-title: Funzione IWICImagingFactory_CreateDecoderFromFilename_Proxy
+title: IWICImagingFactory_CreateDecoderFromFilename_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 3497d71475198d035a496909e65c47df6c5f8b8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dabc24d17fdac881537d45e47a8cc6808a1cf805ac14025d7fdfcfa50eea8500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056631"
 ---
-# <a name="iwicimagingfactory_createdecoderfromfilename_proxy-function"></a>IWICImagingFactory \_ CreateDecoderFromFilename- \_ funzione proxy
+# <a name="iwicimagingfactory_createdecoderfromfilename_proxy-function"></a>Funzione proxy IWICImagingFactory \_ CreateDecoderFromFilename \_
 
-Funzione proxy per il metodo [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) .
+Funzione proxy per il [**metodo CreateDecoderFromFilename.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,57 +45,57 @@ HRESULT IWICImagingFactory_CreateDecoderFromFilename_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ in\]
+*pFactory* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **IWICImagingFactory \** _
+Tipo: **IWICImagingFactory \***
 
 </dd> <dt>
 
-_wzFilename * \[ in\]
+*wzFilename* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntatore a una stringa con terminazione null che specifica il nome di un oggetto da creare o aprire.
+Puntatore a una stringa con terminazione Null che specifica il nome di un oggetto da creare o aprire.
 
 </dd> <dt>
 
-*pguidVendor* \[ in\]
+*pguidVendor* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* GUID* _
+Tipo: **CONST \* GUID**
 
 GUID del fornitore per il decodificatore.
 
 </dd> <dt>
 
-_dwDesiredAccess * \[ in\]
+*dwDesiredAccess* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Accesso all'oggetto, che può essere letto, scritto o entrambi.
+Accesso all'oggetto , che può essere in lettura, scrittura o entrambi.
 
-Per ulteriori informazioni, vedere file di [sicurezza e accesso \[ \] ai file](../fileio/file-security-and-access-rights.md).
+Per altre informazioni, vedere [File di sicurezza e diritti di \[ accesso. \] ](../fileio/file-security-and-access-rights.md)
 
 </dd> <dt>
 
-*metadataOptions* \[ in\]
+*metadataOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions)**
 
-[**WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) da utilizzare durante la creazione del decodificatore.
+[**WICDecodeOptions da**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) usare durante la creazione del decodificatore.
 
 </dd> <dt>
 
-*ppIDecoder* \[ out\]
+*ppIDecoder* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\*\***
 
-Puntatore che riceve un puntatore al nuovo [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder).
+Puntatore che riceve un puntatore al nuovo [**oggetto IWICBitmapDecoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Puntatore che riceve un puntatore al nuovo [**IWICBitmapDecoder**](/windows/desk
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -113,9 +113,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

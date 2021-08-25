@@ -1,25 +1,25 @@
 ---
-description: Visualizzazione di didascalie chiuse
+description: Visualizzazione di sottotitoli codificati
 ms.assetid: 86c0c553-af35-4ad1-8918-63d9e4577c73
-title: Visualizzazione di didascalie chiuse
+title: Visualizzazione di sottotitoli codificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82ff2d6d213259ccce6e9b02272d0c9db3ad7b71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f52288b1c4fa5c43f7e0419d81bd9727a4db86848d368b600e1d713c53dc1593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903433"
 ---
-# <a name="viewing-closed-captions"></a>Visualizzazione di didascalie chiuse
+# <a name="viewing-closed-captions"></a>Visualizzazione di sottotitoli codificati
 
-Per supportare le didascalie chiuse nella televisione analoga, il filtro di acquisizione espone un pin che recapita i dati di VBI o della didascalia chiusa. Il pin avrà una delle categorie di pin seguenti:
+Per supportare i sottotitoli codificati nella tv analogica, il filtro di acquisizione espone un segnaposto che recapita dati VBI o sottotitoli codificati. Il pin avrà una delle categorie di pin seguenti:
 
--   Pin VBI (PIN \_ Category \_ VBI). Fornisce un flusso di esempi di forma d'onda VBI. Questi vengono passati a un filtro decodificatore che estrae i dati di didascalia chiusi.
--   Pin CC ( \_ categoria pin \_ CC). Recapita le coppie di byte con didascalia chiusa, estratti dai dati riga 21.
--   Hardware slicing CC pin (PINNAME \_ video \_ CC \_ Capture).
+-   VBI pin (PIN \_ CATEGORY \_ VBI). Fornisce un flusso di esempi di forme d'onda VBI. Questi vengono passati a un filtro decodificatore che estrae i dati dei sottotitoli codificati.
+-   CC pin (PIN \_ CATEGORY \_ CC). Recapita coppie di byte con sottotitoli codificati, estratte dai dati della riga 21.
+-   Pin CC di sezione hardware (PINNAME \_ VIDEO \_ CC \_ CAPTURE).
 
-Per visualizzare in anteprima le didascalie chiuse, chiamare [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) con la categoria pin VBI e, in caso di errore, richiamarla con la categoria CC.
+Per visualizzare l'anteprima dei sottotitoli codificati, chiamare [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) con la categoria di pin VBI e, in caso di errore, chiamarlo nuovamente con la categoria CC.
 
 
 ```C++
@@ -32,35 +32,35 @@ if (FAILED(hr))
 
 
 
-Il diagramma seguente illustra un tipico grafico di filtro per la visualizzazione di didascalie chiuse.
+Il diagramma seguente illustra un grafico di filtro tipico per la visualizzazione di sottotitoli codificati.
 
-![grafico di anteprima sottotitoli codificati](images/vidcap08.png)
+![grafico di anteprima dei sottotitoli codificati](images/vidcap08.png)
 
-Questo grafico usa i filtri seguenti per la visualizzazione dei sottotitoli chiusi:
+Questo grafico usa i filtri seguenti per la visualizzazione dei sottotitoli codificati:
 
--   [Convertitore da tee a sink a sink](tee-sink-to-sink-converter.md). Accetta le informazioni VBI dal filtro di acquisizione e le suddivide in flussi distinti per ognuno dei servizi dati presenti sul segnale. Microsoft fornisce codec VBI per la didascalia chiusa, NABTS e il televideo internazionale (WST).
+-   [Tee/Sink-to-Sink Converter](tee-sink-to-sink-converter.md). Accetta le informazioni VBI dal filtro di acquisizione e le suddivide in flussi separati per ognuno dei servizi dati presenti nel segnale. Microsoft fornisce codec VBI per sottotitoli codificati, NABTS e WST (World Standard Teletext).
 -   [Decodificatore CC](cc-decoder-filter.md). Decodifica i dati CC dalle forme d'onda VBI campionate fornite dal filtro di acquisizione.
--   [Decodificatore riga 21](line-21-decoder-filter.md). Converte le coppie di byte CC e disegna il testo della didascalia sulle bitmap. Il filtro downstream (in questo caso il mixer overlay) sovrappone le bitmap nel video.
+-   [Decodificatore di riga 21.](line-21-decoder-filter.md) Converte le coppie di byte CC e disegna il testo della didascalia in bitmap. Il filtro downstream (in questo caso il filtro Overlay Mixer) sovrappone le bitmap al video.
 
-Il metodo [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) del generatore di grafici di acquisizione aggiunge questi filtri automaticamente. Se il filtro di acquisizione ha un pin CC anziché un pin VBI, il pin CC viene connesso direttamente al filtro decodificatore riga 21.
+Il metodo [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) Graph Capture di Builder aggiunge automaticamente questi filtri. Se il filtro di acquisizione ha un pin CC invece di un pin VBI, il pin CC è connesso direttamente al filtro del decodificatore Line 21.
 
 > [!Note]  
-> Se si usa il filtro VMR (video Mixing Renderer) per il rendering, usare il filtro decodificatore riga 21 2. Questo filtro ha la stessa funzionalità del decodificatore della riga 21, ma il CLSID è CLSID \_ Line21Decoder2.
+> Se si usa il filtro Video Mixing Renderer (VMR) per il rendering, usare il filtro decodificatore line 21 2. Questo filtro ha la stessa funzionalità del decodificatore Line 21, ma il CLSID è CLSID \_ Line21Decoder2.
 
  
 
 > [!Note]  
-> Il filtro del decodificatore CC è stato rimosso in Windows Vista. Le nuove applicazioni devono usare il filtro VBICodec, documentato nella documentazione relativa alle tecnologie Microsoft TV.
+> Il filtro CC Decoder è stato rimosso in Windows Vista. Le nuove applicazioni devono usare il filtro VBICodec, documentato nella documentazione di Microsoft TV Technologies.
 
  
 
-Se il dispositivo di acquisizione usa una porta video, il filtro di acquisizione potrebbe avere una porta video VBI pin (PIN \_ Category \_ VIDEOPORT \_ VBI). Questo pin deve essere connesso al filtro [VBI Surface allocator](vbi-surface-allocator.md) , che alloca le superfici in modo da contenere i dati VBI acquisiti. Il metodo [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) aggiunge questo filtro se necessario. Il diagramma seguente mostra un grafico di filtro con l'allocatore della superficie di VBI.
+Se il dispositivo di acquisizione usa una porta video, il filtro di acquisizione potrebbe avere un pin VBI della porta video (PIN \_ CATEGORY \_ VIDEOPORT \_ VBI). Questo pin deve essere connesso al filtro [VBI Surface Allocator,](vbi-surface-allocator.md) che alloca le superfici per contenere i dati VBI acquisiti. Il [**metodo RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) aggiunge questo filtro, se necessario. Il diagramma seguente illustra un grafo di filtro con l'allocatore di superficie VBI.
 
-![grafico di anteprima dei sottotitoli codificati con VBI Surface allocator](images/vidcap09.png)
+![grafico di anteprima dei sottotitoli codificati con l'allocatore di superficie vbi](images/vidcap09.png)
 
-### <a name="enabling-and-disabling-the-captions"></a>Abilitazione e disabilitazione delle didascalie
+### <a name="enabling-and-disabling-the-captions"></a>Abilitazione e disabilitazione dei sottotitoli
 
-Per controllare la visualizzazione dei sottotitoli, usare l'interfaccia [**IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) sul filtro del decodificatore della riga 21. Ad esempio, è possibile disattivare la visualizzazione didascalia usando il metodo [**IAMLine21Decoder:: SetServiceState**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) , come indicato di seguito:
+Per controllare la visualizzazione dei sottotitoli, usare [**l'interfaccia IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) nel filtro decodificatore Line 21. Ad esempio, è possibile disattivare la visualizzazione dei sottotitoli usando il metodo [**IAMLine21Decoder::SetServiceState,**](/previous-versions/windows/desktop/api/il21dec/nf-il21dec-iamline21decoder-setservicestate) come indicato di seguito:
 
 
 ```C++
@@ -81,11 +81,11 @@ if (SUCCEEDED(hr))
 
 
 
-Questo esempio usa il metodo [**ICaptureGraphBuilder2:: FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) per individuare l'interfaccia [**IAMLine21Decoder**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) . Il primo parametro di **FindInterface** è **&cercare \_ \_ solo downstream**, che specifica la ricerca a valle dal filtro di acquisizione (*pCap*).
+Questo esempio usa il [**metodo ICaptureGraphBuilder2::FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) per individuare [**l'interfaccia IAMLine21Decoder.**](/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder) Il primo parametro di **FindInterface** è **&LOOK \_ DOWNSTREAM \_ ONLY**, che specifica di eseguire la ricerca a valle dal filtro di acquisizione (*pCap*).
 
-### <a name="capturing-closed-caption-bitmaps"></a>Acquisizione di bitmap didascalia chiuse
+### <a name="capturing-closed-caption-bitmaps"></a>Acquisizione di bitmap di sottotitoli codificati
 
-È possibile acquisire le bitmap della didascalia in un file. A tale scopo, aggiungere la sezione relativa alla scrittura di file del grafico di filtro, come descritto in [acquisizione di video in un file](capturing-video-to-a-file.md). Eseguire quindi il rendering del pin CC o VBI nel filtro Mux:
+È possibile acquisire le bitmap della didascalia in un file. A tale scopo, aggiungere la sezione di scrittura di file del grafico dei filtri, come descritto in [Acquisizione di video in un file](capturing-video-to-a-file.md). Eseguire quindi il rendering del pin CC o VBI al filtro mux:
 
 
 ```C++
@@ -98,13 +98,13 @@ if (FAILED(hr))
 
 
 
-Se si sta acquisendo anche il video, verrà creato un file con due flussi video distinti. Il video non verrà acquisito con le didascalie sovrapposte sopra l'immagine.
+Se si acquisisce anche il video, verrà creato un file con due flussi video separati. Non acquisisce il video con didascalie sovrapposte all'immagine.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Didascalie e televideo chiusi](closed-captions-and-teletext.md)
+[Sottotitoli codificati e teletext](closed-captions-and-teletext.md)
 </dt> </dl>
 
  

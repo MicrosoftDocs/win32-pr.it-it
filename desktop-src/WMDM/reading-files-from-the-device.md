@@ -3,40 +3,40 @@ title: Lettura di file dal dispositivo
 description: Lettura di file dal dispositivo
 ms.assetid: adb87b53-39e2-4f83-ab6d-7e2f7c0bd5d3
 keywords:
-- Windows Media Gestione dispositivi, lettura di file dai dispositivi
+- Windows Gestione dispositivi multimediali, lettura di file dai dispositivi
 - Gestione dispositivi, lettura di file dai dispositivi
-- Guida per programmatori, lettura di file dai dispositivi
+- guida alla programmazione, lettura di file dai dispositivi
 - applicazioni desktop, lettura di file dai dispositivi
-- creazione di applicazioni Windows Media Gestione dispositivi, lettura di file dai dispositivi
+- creazione Windows applicazioni di Gestione dispositivi multimediali, lettura di file dai dispositivi
 - lettura di file dai dispositivi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b80cf820e889b29e612206f90b07e1cb02c4c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4352be59a335461f46bfc722146e4c51d31f72c1559e9ad8631e80cb6752c241
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904001"
 ---
 # <a name="reading-files-from-the-device"></a>Lettura di file dal dispositivo
 
-Quando è stato trovato un file che si vuole copiare dal dispositivo, è possibile copiare il file dal dispositivo al computer in un'unica chiamata oppure usare un callback per fare in modo che i byte del file vengano letti direttamente nell'applicazione, che può quindi elaborare o archiviare i dati nel modo più appropriato.
+Dopo aver trovato un file che si vuole copiare dal dispositivo, è possibile copiare il file dal dispositivo al computer in un'unica chiamata o usare un callback per fare in modo che i byte del file leggono direttamente nell'applicazione, che può quindi elaborare o archiviare i dati nel modo più adatto.
 
-I passaggi seguenti illustrano il modo più semplice per copiare un file da un dispositivo in una singola chiamata:
+La procedura seguente illustra il modo di base per copiare un file da un dispositivo in un'unica chiamata:
 
-1.  Ottenere un handle per il file nel dispositivo. È possibile ottenere l'handle usando una ricerca ricorsiva di file o, se si conosce l'ID persistente dell'archiviazione, chiamando [**IWMDMDevice3:: FindStorage**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-findstorage). In entrambi i casi, è necessaria l'interfaccia [**IWMDMStorage**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage) dell'oggetto.
-2.  Determinare se l'archiviazione è un file o una cartella. Solo i file possono essere copiati dal dispositivo. Chiamare [**IWMDMStorage:: GetAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getattributes) per ottenere gli attributi di archiviazione, in modo da indicare se l'archiviazione è un file o una cartella.
-3.  Eseguire una query su **IWMDMStorage** per [**IWMDMStorageControl**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol)e chiamare [**IWMDMStorageControl:: Read**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-read) per leggere il file dal dispositivo e salvarlo nel percorso specificato.
+1.  Ottenere un handle per il file nel dispositivo. È possibile ottenere l'handle usando una ricerca ricorsiva di file o, se si conosce l'ID permanente della risorsa di archiviazione, chiamando [**IWMDMDevice3::FindStorage**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-findstorage). In entrambi i casi, è necessaria [**l'interfaccia IWMDMStorage**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstorage) dell'oggetto.
+2.  Determinare se l'archiviazione è un file o una cartella. Solo i file possono essere copiati dal dispositivo. Chiamare [**IWMDMStorage::GetAttributes**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getattributes) per ottenere gli attributi di archiviazione, che indica se l'archiviazione è un file o una cartella.
+3.  Eseguire una query **su IWMDMStorage** per [**IWMDMStorageControl**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmstoragecontrol)e chiamare [**IWMDMStorageControl::Read**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-read) per leggere il file dal dispositivo e salvarlo in un percorso specificato.
 
-Se invece si vuole leggere il blocco di file per blocco dal dispositivo, è necessario implementare l'interfaccia di callback [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) . Passare questa interfaccia alla chiamata **IWMDMStorageControl:: Read** e Windows Media Gestione dispositivi invierà i blocchi di dati dei file in sequenza al callback. I passaggi seguenti illustrano come leggere un blocco di file del dispositivo per blocco:
+Se invece si vuole leggere il file blocco per blocco dal dispositivo, è necessario implementare l'interfaccia di callback [**IWMDMOperation.**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) Passare questa interfaccia alla chiamata **IWMDMStorageControl::Read** e Windows Media Device Manager invierà blocchi di dati di file in sequenza al callback. La procedura seguente illustra come leggere un file del dispositivo blocco per blocco:
 
-1.  Ottenere l'interfaccia **IWMDMStorage** per l'archiviazione e determinare se si tratta di un file, come descritto in precedenza.
-2.  Preparare gli handle di file o altri handle necessari per conservare i dati ricevuti.
-3.  Eseguire una query per l'interfaccia **IWMDMStorageControl** dell'archiviazione
-4.  Chiamare **IWMDMStorageControl:: Read** per iniziare l'operazione di lettura, passando l'interfaccia **IWMDMOperation** implementata.
-5.  Windows Media Gestione dispositivi invierà il blocco di dati per blocco al dispositivo, come descritto in [gestione manuale dei trasferimenti di file](handling-file-transfers-manually.md).
+1.  Ottenere **l'interfaccia IWMDMStorage per** l'archiviazione e determinare se si tratta di un file, come descritto in precedenza.
+2.  Preparare eventuali handle di file o altri handle necessari per contenere i dati ricevuti.
+3.  Eseguire una query per **l'interfaccia IWMDMStorageControl dell'archiviazione**
+4.  Chiamare **IWMDMStorageControl::Read** per iniziare l'operazione di lettura, passando **l'interfaccia IWMDMOperation** implementata.
+5.  Windows Gestione dispositivi multimediali invierà il blocco di dati al dispositivo come descritto in [Gestione manuale dei trasferimenti di file.](handling-file-transfers-manually.md)
 
-La funzione di esempio C++ seguente legge un oggetto di archiviazione da un dispositivo. La funzione accetta un puntatore all'interfaccia **IWMDMOperation** facoltativo; Se l'invio viene inviato, la funzione creerà un file in modo esplicito e gestirà la scrittura dei dati nel file durante l'implementazione di **IWMDMOperation:: TransferObjectData**; in caso contrario, il file verrà letto e salvato nella destinazione specificata da *pwszDestName*.
+La funzione di esempio C++ seguente legge un oggetto di archiviazione da un dispositivo. La funzione accetta un puntatore di **interfaccia IWMDMOperation** facoltativo. Se inviata, la funzione creerà un file in modo esplicito e gestirà la scrittura dei dati nel file nell'implementazione di **IWMDMOperation::TransferObjectData**; In caso contrario, leggerà il file e lo salverà nella destinazione specificata da *pwszDestName*.
 
 
 ```C++
@@ -121,12 +121,12 @@ HRESULT myFileRead(IWMDMStorage pStorage, LPWSTR pwszDestName, IWMDMOperation* p
 
 <dl> <dt>
 
-[**Creazione di un'applicazione Windows Media Gestione dispositivi**](creating-a-windows-media-device-manager-application.md)
+[**Creazione di un'Windows Gestione dispositivi multimediali**](creating-a-windows-media-device-manager-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

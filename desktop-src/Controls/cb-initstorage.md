@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_INITSTORAGE (winuser. h)
-description: Un'applicazione invia il \_ messaggio INITSTORAGE CB prima di aggiungere un numero elevato di elementi alla casella di riepilogo di una casella combinata. Questo messaggio alloca memoria per archiviare gli elementi della casella di riepilogo.
+title: CB_INITSTORAGE messaggio (Winuser.h)
+description: Un'applicazione invia il messaggio CB INITSTORAGE prima di aggiungere un numero elevato di elementi alla parte casella di riepilogo \_ di una casella combinata. Questo messaggio alloca memoria per l'archiviazione degli elementi della casella di riepilogo.
 ms.assetid: fb289968-a95b-4ca0-977d-b8651166f357
 keywords:
-- Controlli di Windows Message CB_INITSTORAGE
+- CB_INITSTORAGE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e78c2ae2592d89ba7a0f6392666dac0404d52e39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1be1aeccdde2c81c87956a42e72440732ff9eb2732cbd066f51308816c01f64a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089091"
 ---
-# <a name="cb_initstorage-message"></a>\_Messaggio INITSTORAGE CB
+# <a name="cb_initstorage-message"></a>CB \_ INITSTORAGE message
 
-Un'applicazione invia il **messaggio \_ INITSTORAGE CB** prima di aggiungere un numero elevato di elementi alla casella di riepilogo di una casella combinata. Questo messaggio alloca memoria per archiviare gli elementi della casella di riepilogo.
+Un'applicazione invia il **messaggio \_ CB INITSTORAGE** prima di aggiungere un numero elevato di elementi alla parte casella di riepilogo di una casella combinata. Questo messaggio alloca memoria per l'archiviazione degli elementi della casella di riepilogo.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,21 +39,21 @@ Numero di elementi da aggiungere.
 *lParam* 
 </dt> <dd>
 
-Quantità di memoria da allocare per le stringhe di elemento, in byte.
+Quantità di memoria da allocare per le stringhe elemento, in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, il valore restituito è il numero totale di elementi per cui la memoria è stata pre-allocata, ovvero il numero totale di elementi aggiunti da tutti i messaggi **CB \_ INITSTORAGE** correttamente.
+Se il messaggio ha esito positivo, il valore restituito è il numero totale di elementi per i quali è stata preallocazione memoria, ovvero il numero totale di elementi aggiunti da tutti i messaggi **\_ CB INITSTORAGE** riusciti.
 
 Se il messaggio ha esito negativo, il valore restituito è CB \_ ERRSPACE.
 
-Il messaggio alloca memoria e restituisce i valori di esito positivo e negativo descritti in precedenza.
+Il messaggio alloca memoria e restituisce i valori di esito positivo ed errore descritti in precedenza.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **CB \_ INITSTORAGE** consente di velocizzare l'inizializzazione di caselle combinate con un numero elevato di elementi (oltre 100). Si riserva la quantità di memoria specificata in modo che i messaggi [**CB \_ ADDSTRING**](cb-addstring.md), [**CB \_ INSERTSTRING**](cb-insertstring.md)e [**CB \_**](cb-dir.md) successivi abbiano il minor tempo possibile. È possibile utilizzare le stime per i parametri *wParam* e *lParam* . Se si esegue la sovrastima, viene allocata la memoria aggiuntiva, se si sottovaluta, per gli elementi che superano la quantità richiesta viene utilizzata l'allocazione normale.
+Il **messaggio \_ CB INITSTORAGE** consente di velocizzare l'inizializzazione delle caselle combinate con un numero elevato di elementi (oltre 100). Riserva la quantità di memoria specificata in modo che i successivi messaggi [**CB \_ ADDSTRING**](cb-addstring.md), [**CB \_ INSERTSTRING**](cb-insertstring.md)e [**CB \_ DIR**](cb-dir.md) prendano il tempo più breve possibile. È possibile usare stime per i *parametri wParam* *e lParam.* Se si sovrastima, la memoria aggiuntiva viene allocata. Se si sottovaluta, la normale allocazione viene usata per gli elementi che superano la quantità richiesta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Il messaggio **CB \_ INITSTORAGE** consente di velocizzare l'inizializzazione di
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Il messaggio **CB \_ INITSTORAGE** consente di velocizzare l'inizializzazione di
 [**CB \_ ADDSTRING**](cb-addstring.md)
 </dt> <dt>
 
-[**DIR della CB \_**](cb-dir.md)
+[**CB \_ DIR**](cb-dir.md)
 </dt> <dt>
 
 [**CB \_ INSERTSTRING**](cb-insertstring.md)

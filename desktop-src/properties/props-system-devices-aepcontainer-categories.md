@@ -4,12 +4,12 @@ ms.assetid: c435770e-57c5-4527-9bcb-c44d8c84b4f8
 title: System.Devices.AepContainer.Categories
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7bad3a455a7beaf914d5f0d6b95aece308882e2
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 83bc66dbdadf6624bc4a0ceb6e41848c6b69ab4c02bdf25439fd697816676b2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885901"
 ---
 # <a name="systemdevicesaepcontainercategories"></a>System.Devices.AepContainer.Categories
 

@@ -4,12 +4,12 @@ ms.assetid: 2270555b-549e-4e0e-ab22-1fa1a3e7cd69
 title: Funzioni di routine della finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d4ab2a608b9e553f1844795c17223438b4d1d58
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f8cbf5e791469bcc79b573cbcf742212339984696c7b7a66b467e1a2bedaf7e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056161"
 ---
 # <a name="window-procedure-functions"></a>Funzioni di routine della finestra
 

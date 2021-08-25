@@ -1,19 +1,19 @@
 ---
-description: Specifica la dimensione massima del pacchetto per un file ASF, in byte.
+description: Specifica le dimensioni massime del pacchetto per un file ASF, in byte.
 ms.assetid: c43423c2-a5f2-411c-aa47-802a3c808ad8
-title: Attributo MF_ASFPROFILE_MAXPACKETSIZE (Wmcontainer. h)
+title: MF_ASFPROFILE_MAXPACKETSIZE attributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e5766ea3321159915b725358b365359f3efc085
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d76a31828c249fa25cf8be605cd480ad434465a1e688ddf993d7e1119cb2f590
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013451"
 ---
-# <a name="mf_asfprofile_maxpacketsize-attribute"></a>\_Attributo MF ASFPROFILE \_ MAXPACKETSIZE
+# <a name="mf_asfprofile_maxpacketsize-attribute"></a>Attributo \_ MF ASFPROFILE \_ MAXPACKETSIZE
 
-Specifica la dimensione massima del pacchetto per un file ASF, in byte.
+Specifica le dimensioni massime del pacchetto per un file ASF, in byte.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica la dimensione massima del pacchetto per un file ASF, in byte.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica agli oggetti profilo ASF. Per impostare questo attributo, utilizzare l'interfaccia [**IMFASFProfile**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) .
+Questo attributo si applica agli oggetti profilo asf. Per impostare questo attributo, usare [**l'interfaccia IMFASFProfile.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,16 +41,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi ASF](asf-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

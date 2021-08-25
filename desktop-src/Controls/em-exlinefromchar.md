@@ -3,7 +3,7 @@ title: EM_EXLINEFROMCHAR messaggio (Richedit.h)
 description: Determina quale riga contiene il carattere specificato in un controllo Rich Edit.
 ms.assetid: 497482fb-9640-4063-a9f5-e0691b65225d
 keywords:
-- EM_EXLINEFROMCHAR dei messaggi Windows controlli
+- EM_EXLINEFROMCHAR dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -53,8 +53,8 @@ Questo messaggio restituisce l'indice in base zero della riga.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 

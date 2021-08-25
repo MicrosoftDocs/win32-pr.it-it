@@ -16,10 +16,10 @@ ms.locfileid: "119970221"
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Abilitazione della barra di \_ scorrimento**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_enable)
--   [**ScrollBar \_ GetPos**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getpos)
--   [**ScrollBar \_ GetRange**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getrange)
--   [**SetPos della \_ barra di scorrimento**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setpos)
--   [**ScrollBar \_ SetRange**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setrange)
+-   [**GetPos di ScrollBar \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getpos)
+-   [**GetRange di \_ ScrollBar**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_getrange)
+-   [**SetPos di ScrollBar \_**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setpos)
+-   [**SetRange \_ della barra di scorrimento**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_setrange)
 -   [**Visualizzazione della barra di \_ scorrimento**](/windows/desktop/api/Windowsx/nf-windowsx-scrollbar_show)
 
  

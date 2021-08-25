@@ -1,5 +1,5 @@
 ---
-title: NM_SETFOCUS (visualizzazione albero) codice di notifica (Commctrl.h)
+title: NM_SETFOCUS di notifica (visualizzazione albero) (Commctrl.h)
 description: Notifica alla finestra padre di un controllo visualizzazione albero che il controllo ha ricevuto lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 4bdd6cd2-afd3-4c0b-914b-8fff55e474a9
 keywords:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119919551"
 ---
-# <a name="nm_setfocus-tree-view-notification-code"></a>Codice di notifica DI NM \_ SETFOCUS (visualizzazione albero)
+# <a name="nm_setfocus-tree-view-notification-code"></a>Codice \_ di notifica DI NM SETFOCUS (visualizzazione albero)
 
-Notifica alla finestra padre di un controllo visualizzazione albero che il controllo ha ricevuto lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
+Notifica alla finestra padre di un controllo visualizzazione albero che il controllo ha ricevuto lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -55,8 +55,8 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

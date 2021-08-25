@@ -2,7 +2,7 @@
 description: La classe \_ CiM ServiceAccessPoint rappresenta la possibilità di usare o richiamare un servizio. I punti di accesso rappresentano i servizi disponibili per l'uso da parte di altre entità.
 ms.assetid: caf828a1-c9a7-4ae8-9734-d77e4ba90b09
 ms.tgt_platform: multiple
-title: CIM_ServiceAccessPoint (provider WMI CIMWin32)
+title: CIM_ServiceAccessPoint classe (provider WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,7 +30,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119919641"
 ---
-# <a name="cim_serviceaccesspoint-class-cimwin32-wmi-providers"></a>CIM_ServiceAccessPoint (provider WMI CIMWin32)
+# <a name="cim_serviceaccesspoint-class-cimwin32-wmi-providers"></a>CIM_ServiceAccessPoint classe (provider WMI CIMWin32)
 
 La **classe \_ CiM ServiceAccessPoint** rappresenta la possibilità di usare o richiamare un servizio. I punti di accesso rappresentano i servizi disponibili per l'uso da parte di altre entità.
 

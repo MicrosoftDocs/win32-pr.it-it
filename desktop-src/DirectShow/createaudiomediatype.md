@@ -1,7 +1,7 @@
 ---
-description: La funzione CreateAudioMediaType Inizializza un tipo di supporto da una struttura WAVEFORMATEX.
+description: La funzione CreateAudioMediaType inizializza un tipo di supporto da una struttura WAVEFORMATEX.
 ms.assetid: 2571b7b4-86e9-443f-a99d-9ba48f469522
-title: Funzione CreateAudioMediaType (mtype. h)
+title: Funzione CreateAudioMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef4e525762d4b6928e6a9095fad34f3f4f2e96fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2eb9dc01a398a498252cca2f1f3af012608f8e0ca80c62800c56e4026c0b0a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908821"
 ---
-# <a name="createaudiomediatype-function"></a>CreateAudioMediaType (funzione)
+# <a name="createaudiomediatype-function"></a>Funzione CreateAudioMediaType
 
-La funzione **CreateAudioMediaType** Inizializza un tipo di supporto da una struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+La **funzione CreateAudioMediaType** inizializza un tipo di supporto da una [**struttura WAVEFORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,27 +51,27 @@ Puntatore alla struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)
 
 </dd> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore alla struttura [**del \_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) da inizializzare.
+Puntatore alla [**struttura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) da inizializzare.
 
 </dd> <dt>
 
 *bSetFormat* 
 </dt> <dd>
 
-Flag che indica se inizializzare il blocco di formato. Specificare **true** per inizializzarlo o **false** in caso contrario.
+Flag che indica se inizializzare il blocco di formato. Specificare **TRUE per** inizializzarlo oppure FALSE in **caso** contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce E \_ OutOfMemory se non è stato possibile allocare memoria per i dati del formato. S \_ OK in caso contrario.
+Restituisce E \_ OUTOFMEMORY se non è stato possibile allocare memoria per i dati di formato. S \_ OK in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se il parametro *bSetFormat* è **true**, il metodo alloca la memoria per il blocco di formato. Se il parametro *PMT* contiene già un blocco di formato allocato, si verificherà una perdita di memoria. Per evitare una perdita di memoria, chiamare [**FreeMediaType**](freemediatype.md) prima di chiamare questa funzione. Quando il metodo restituisce un risultato, chiamare di nuovo **FreeMediaType** per liberare il blocco di formato.
+Se il *parametro bSetFormat* è **TRUE,** il metodo alloca la memoria per il blocco di formato. Se il *parametro pmt* contiene già un blocco di formato allocato, si verificherà una perdita di memoria. Per evitare una perdita di memoria, chiamare [**FreeMediaType**](freemediatype.md) prima di chiamare questa funzione. Dopo la fine del metodo, chiamare **di nuovo FreeMediaType** per liberare il blocco di formato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se il parametro *bSetFormat* è **true**, il metodo alloca la memoria per il blo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Se il parametro *bSetFormat* è **true**, il metodo alloca la memoria per il blo
 
 <dl> <dt>
 
-[**Funzioni di tipo multimediale**](media-type-functions.md)
+[**Funzioni per i tipi di supporti**](media-type-functions.md)
 </dt> </dl>
 
  

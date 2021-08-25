@@ -12,42 +12,42 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 360f46eb7242de01d5e734c5efa17399f23adf7d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a1e1a1b717aeb2814b469fc34a9e038052abb6720dde0ed75982f27716978de5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103877042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907007"
 ---
 # <a name="cvideotransformfilter-class"></a>Classe CVideoTransformFilter
 
-![gerarchia di classi cvideotransformfilter](images/vtsip01.png)
+![Gerarchia di classi cvideotransformfilter](images/vtsip01.png)
 
-La `CVideoTransformFilter` classe è progettata principalmente come classe di base per i filtri di decompressione AVI. Questa classe aggiunge il supporto per il controllo qualità alla classe [**CTransformFilter**](ctransformfilter.md) . Il metodo di **ricezione** del filtro può decidere di eliminare i frame, in base ai messaggi di qualità del renderer e alle misurazioni delle prestazioni che il filtro raccoglie durante il flusso.
+La `CVideoTransformFilter` classe è progettata principalmente come classe di base per i filtri di decompressione AVI. Questa classe aggiunge il supporto per il controllo qualità alla [**classe CTransformFilter.**](ctransformfilter.md) Il metodo **Receive** del filtro può decidere di eliminare i frame in base ai messaggi di qualità del renderer e alle misurazioni delle prestazioni raccolte dal filtro durante lo streaming.
 
-Se il filtro rilascia un frame, continua a rilasciare i frame fino a raggiungere il fotogramma chiave successivo. Per i flussi MPEG, il filtro non distingue tra B frame e P frame.
+Se il filtro elimina un frame, continua a rilasciare i fotogrammi fino a raggiungere il fotogramma chiave successivo. Per i flussi MPEG, il filtro non distingue tra i frame B e I frame P.
 
 
 
 | Variabili membro protette                                                      | Descrizione                                                                                    |
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [**\_bQualityChanged m**](cvideotransformfilter-m-bqualitychanged.md)           | Indica se il filtro ha eliminato i frame.                                               |
-| [**\_bSkipping m**](cvideotransformfilter-m-bskipping.md)                       | Indica se il filtro sta attualmente eliminando i frame.                                     |
-| [**\_itrAvgDecode m**](cvideotransformfilter-m-itravgdecode.md)                 | Durata media del tempo impiegato per decodificare un frame.                                         |
-| [**\_itrLate m**](cvideotransformfilter-m-itrlate.md)                           | Indica la fine dell'arrivo degli esempi nel renderer.                                   |
-| [**\_nFramesSinceKeyFrame m**](cvideotransformfilter-m-nframessincekeyframe.md) | Numero di frame ricevuti dal filtro dall'ultimo fotogramma chiave.                    |
-| [**\_nKeyFramePeriod m**](cvideotransformfilter-m-nkeyframeperiod.md)           | Intervallo osservato più grande tra fotogrammi chiave.                                              |
-| [**\_nWaitForKey m**](cvideotransformfilter-m-nwaitforkey.md)                   | Numero massimo corrente di fotogrammi Delta da eliminare.                                            |
-| [**\_tDecodeStart m**](cvideotransformfilter-m-tdecodestart.md)                 | Tempo impiegato per decodificare l'esempio più recente.                                  |
+| [**m \_ bQualityChanged**](cvideotransformfilter-m-bqualitychanged.md)           | Indica se il filtro ha eliminato frame.                                               |
+| [**m \_ bSkipping**](cvideotransformfilter-m-bskipping.md)                       | Indica se il filtro sta rilasciando frame.                                     |
+| [**m \_ itrAvgDecode**](cvideotransformfilter-m-itravgdecode.md)                 | Tempo medio impiegato per decodificare un frame.                                         |
+| [**m \_ itrLate**](cvideotransformfilter-m-itrlate.md)                           | Indica la fine degli esempi in arrivo nel renderer.                                   |
+| [**m \_ nFramesSinceKeyFrame**](cvideotransformfilter-m-nframessincekeyframe.md) | Numero di fotogrammi ricevuti dal filtro dall'ultimo fotogramma chiave.                    |
+| [**m \_ nKeyFramePeriod**](cvideotransformfilter-m-nkeyframeperiod.md)           | Intervallo massimo osservato tra fotogrammi chiave.                                              |
+| [**m \_ nWaitForKey**](cvideotransformfilter-m-nwaitforkey.md)                   | Numero massimo corrente di fotogrammi differenziali da eliminare.                                            |
+| [**m \_ tDecodeStart**](cvideotransformfilter-m-tdecodestart.md)                 | Tempo impiegato per decodificare l'esempio più recente.                                  |
 | Metodi protetti                                                               | Descrizione                                                                                    |
-| [**AbortPlayback**](cvideotransformfilter-abortplayback.md)                    | Utilizzato per segnalare un errore di streaming.                                                              |
-| [**AlterQuality**](cvideotransformfilter-alterquality.md)                      | Notifica al filtro che è richiesta una modifica di qualità.                                        |
-| [**Ricevere**](cvideotransformfilter-receive.md)                                | Riceve un esempio multimediale, lo elabora e recapita un esempio di output al filtro downstream. |
+| [**AbortPlayback**](cvideotransformfilter-abortplayback.md)                    | Usato per segnalare un errore di streaming.                                                              |
+| [**AlterQuality**](cvideotransformfilter-alterquality.md)                      | Notifica al filtro che è richiesta una modifica della qualità.                                        |
+| [**Ricevere**](cvideotransformfilter-receive.md)                                | Riceve un campione di supporti, lo elabora e recapita un esempio di output al filtro downstream. |
 | [**ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md)                | Determina se il filtro deve eliminare un campione specificato.                                  |
 | [**StartStreaming**](cvideotransformfilter-startstreaming.md)                  | Chiamato quando il filtro passa allo stato sospeso.                                           |
 | Metodi pubblici                                                                  | Descrizione                                                                                    |
 | [**CVideoTransformFilter**](cvideotransformfilter-cvideotransformfilter.md)    | Metodo del costruttore.                                                                            |
-| [**EndFlush**](cvideotransformfilter-endflush.md)                              | Termina un'operazione di svuotamento.                                                                        |
+| [**EndFlush**](cvideotransformfilter-endflush.md)                              | Termina un'operazione di scaricamento.                                                                        |
 
 
 

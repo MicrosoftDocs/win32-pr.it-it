@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_INSERTSTRING (winuser. h)
-description: Inserisce i dati di una stringa o di un elemento in una casella di riepilogo. A differenza del \_ messaggio lb ADDSTRING, il \_ messaggio lb INSERTSTRING non determina l'ordinamento di un elenco con lo \_ stile di ordinamento lbs.
+title: LB_INSERTSTRING messaggio (Winuser.h)
+description: Inserisce i dati di una stringa o di un elemento in una casella di riepilogo. A differenza del messaggio LB ADDSTRING, il messaggio LB INSERTSTRING non determina l'ordinamento di un elenco con lo stile \_ \_ \_ LBS SORT.
 ms.assetid: dfaa742d-2f42-4485-aed5-cda8ca9ba66c
 keywords:
-- Controlli di Windows Message LB_INSERTSTRING
+- LB_INSERTSTRING dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5858af0e0229f90a5ed9928e7478d0ac9a71c8f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd47d08ef78c590ecb3b5900143b29bc49676b86d8facdcc91b05bb34c8f4aa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085391"
 ---
-# <a name="lb_insertstring-message"></a>\_Messaggio INSERTSTRING lb
+# <a name="lb_insertstring-message"></a>Messaggio \_ INSERTSTRING LB
 
-Inserisce i dati di una stringa o di un elemento in una casella di riepilogo. A differenza del messaggio [**lb \_ ADDSTRING**](lb-addstring.md) , il messaggio **lb \_ INSERTSTRING** non determina l'ordinamento di un elenco con lo stile di [**\_ ordinamento lbs**](list-box-styles.md) .
+Inserisce i dati di una stringa o di un elemento in una casella di riepilogo. A differenza [**del messaggio \_ LB ADDSTRING,**](lb-addstring.md) il messaggio **\_ LB INSERTSTRING** non determina l'ordinamento di un elenco con lo stile [**\_ LBS SORT.**](list-box-styles.md)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,28 +32,28 @@ Inserisce i dati di una stringa o di un elemento in una casella di riepilogo. A 
 *wParam* 
 </dt> <dd>
 
-Indice in base zero della posizione in corrispondenza della quale inserire la stringa. Se questo parametro è-1, la stringa viene aggiunta alla fine dell'elenco.
+Indice in base zero della posizione in corrispondenza della quale inserire la stringa. Se questo parametro è -1, la stringa viene aggiunta alla fine dell'elenco.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore alla stringa con terminazione null da inserire. Se la casella di riepilogo ha uno stile disegnato dal proprietario ma non lo stile [**\_ HASSTRINGS lbs**](list-box-styles.md) , questo parametro viene archiviato come dati di elemento anziché come stringa. È possibile inviare i messaggi [**lb \_ GETITEMDATA**](lb-getitemdata.md) e [**lb \_ SETITEMDATA**](lb-setitemdata.md) per recuperare o modificare i dati dell'elemento.
+Puntatore alla stringa con terminazione Null da inserire. Se la casella di riepilogo ha uno stile disegnato dal proprietario ma non lo stile [**\_ LBS HASSTRINGS,**](list-box-styles.md) questo parametro viene archiviato come dati dell'elemento anziché come stringa. È possibile inviare [**i messaggi \_ LB GETITEMDATA**](lb-getitemdata.md) e [**LB \_ SETITEMDATA**](lb-setitemdata.md) per recuperare o modificare i dati dell'elemento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice della posizione in cui è stata inserita la stringa. Se si verifica un errore, il valore restituito è LB \_ Err. Se non è disponibile spazio sufficiente per archiviare la nuova stringa, il valore restituito è LB \_ ERRSPACE.
+Il valore restituito è l'indice della posizione in cui è stata inserita la stringa. Se si verifica un errore, il valore restituito è LB \_ ERR. Se lo spazio non è sufficiente per archiviare la nuova stringa, il valore restituito è LB \_ ERRSPACE.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio [**lb \_ INITSTORAGE**](lb-initstorage.md) consente di velocizzare l'inizializzazione di caselle di riepilogo con un numero elevato di elementi (più di 100). Si riserva la quantità di memoria specificata in modo che i messaggi **lb \_ INSERTSTRING** il tempo più breve possibile. È possibile utilizzare le stime per i parametri *wParam* e *lParam* . Se si esegue la sovrastima, viene allocata la memoria aggiuntiva. Se si sottovaluta, l'allocazione normale viene utilizzata per gli elementi che superano la quantità richiesta.
+Il [**messaggio \_ LB INITSTORAGE**](lb-initstorage.md) consente di velocizzare l'inizializzazione delle caselle di riepilogo con un numero elevato di elementi (più di 100). Riserva la quantità di memoria specificata in modo che i messaggi **\_ INSERTSTRING LB** successivi prendano il tempo più breve possibile. È possibile usare stime per i *parametri wParam* *e lParam.* Se si sovrastima, la memoria aggiuntiva viene allocata; Se si sottovaluta, viene usata l'allocazione normale per gli elementi che superano l'importo richiesto.
 
-Se nella casella di riepilogo è presente lo stile [**WS \_ HSCROLL**](/windows/desktop/winmsg/window-styles) e si inserisce una stringa più ampia della casella di riepilogo, inviare un messaggio [**lb \_ SETHORIZONTALEXTENT**](lb-sethorizontalextent.md) per assicurarsi che venga visualizzata la barra di scorrimento orizzontale.
+Se la casella di riepilogo ha lo stile [**\_ WS HSCROLL**](/windows/desktop/winmsg/window-styles) e si inserisce una stringa più ampia della casella di riepilogo, inviare un [**messaggio LB \_ SETHORIZONTALEXTENT**](lb-sethorizontalextent.md) per assicurarsi che venga visualizzata la barra di scorrimento orizzontale.
 
-Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilogo in formato Unicode usando CP \_ ACP. Ciò può causare problemi. Ad esempio, i caratteri romani accentati in una casella di riepilogo non Unicode nelle finestre giapponesi verranno disattivati. Per risolvere questo problema, compilare l'applicazione come Unicode o utilizzare una casella di riepilogo creata dal proprietario.
+Per un'applicazione ANSI, il sistema converte il testo di una casella di riepilogo in Unicode usando CP \_ ACP. Ciò può causare problemi. Ad esempio, i caratteri romani accentati in una casella di riepilogo non Unicode in lingua Windows verranno visualizzati in gran numero. Per risolvere questo problema, compilare l'applicazione come Unicode o usare una casella di riepilogo disegnata dal proprietario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilo
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -74,13 +74,13 @@ Per un'applicazione ANSI, il sistema converte il testo in una casella di riepilo
 **Riferimento**
 </dt> <dt>
 
-[**\_ADDSTRING lb**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**\_SELECTSTRING lb**](lb-selectstring.md)
+[**LB \_ SELECTSTRING**](lb-selectstring.md)
 </dt> <dt>
 
-[**\_SETHORIZONTALEXTENT lb**](lb-sethorizontalextent.md)
+[**LB \_ SETHORIZONTALEXTENT**](lb-sethorizontalextent.md)
 </dt> </dl>
 
  

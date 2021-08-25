@@ -1,10 +1,10 @@
 ---
-title: MSMQ-crittografia-chiave (attributo)
+title: Attributo MSMQ-Encrypt-Key
 description: Chiave di crittografia pubblica del computer.
 ms.assetid: 2213be9d-9c24-48f7-806a-039c1121d37d
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSMQ-encrypt-key
+- Schema AD dell'attributo MSMQ-Encrypt-Key
 - Schema AD dell'attributo mSMQEncryptKey
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2c4453deede78620cb76acfec062206812aa87
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12fec50e216412184de658e5e4500d5e418c70843689512497e2e4a1d32ed87b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066711"
 ---
-# <a name="msmq-encrypt-key-attribute"></a>MSMQ-crittografia-chiave (attributo)
+# <a name="msmq-encrypt-key-attribute"></a>Attributo MSMQ-Encrypt-Key
 
 Chiave di crittografia pubblica del computer.
 
@@ -29,13 +29,13 @@ Chiave di crittografia pubblica del computer.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-crittografia-chiave                                      |
-| LDAP-Display-Name | mSMQEncryptKey                                        |
+| CN                | MSMQ-Encrypt-Key                                      |
+| Ldap-Display-Name | mSMQEncryptKey                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.936                                |
-| System-ID-GUID    | 9a0dc331-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc331-c100-11d1-bbc5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Chiave di crittografia pubblica del computer.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

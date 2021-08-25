@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. Right
+title: AmbientAttributes.right
 description: L'attributo right specifica o recupera la coordinata destra del controllo.
 ms.assetid: 32f6c9ff-9b2f-4e24-abbb-548a0601d3d7
 keywords:
-- Media Player Windows AmbientAttributes. Right
+- AmbientAttributes.right Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a1df57e95072329eb3420189297e83821f1501
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2575286ebc912f3bde6489d43b411dd48b2faef640784bd64c52ab47c3950042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902821"
 ---
-# <a name="ambientattributesright"></a>AmbientAttributes. Right
+# <a name="ambientattributesright"></a>AmbientAttributes.right
 
-L'attributo **right** specifica o recupera la coordinata destra del controllo.
+**L'attributo** right specifica o recupera la coordinata destra del controllo.
 
 ``` syntax
         elementID.right
@@ -29,7 +29,7 @@ L'attributo **right** specifica o recupera la coordinata destra del controllo.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che rappresenta la distanza in pixel dal controllo al bordo destro della **visualizzazione** padre o della **Sottovisualizzazione**. Il comportamento per i valori negativi o quando [AmbientAttributes. Width](ambientattributes-width.md) non è specificato, non è definito.
+Questo attributo è un numero **di** lettura/scrittura (**long**) che rappresenta la distanza in pixel dal controllo al bordo destro dell'oggetto **VIEW** o **SUBVIEW padre.** Il comportamento per i valori negativi o quando [AmbientAttributes.width](ambientattributes-width.md) non è specificato, non è definito.
 
 ## <a name="requirements"></a>Requisiti
 

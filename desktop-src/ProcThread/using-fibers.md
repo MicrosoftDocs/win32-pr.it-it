@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene illustrato come creare, pianificare ed eliminare Fiber.
+description: L'esempio seguente illustra come creare, pianificare ed eliminare fibre.
 ms.assetid: b09c00ae-a498-499b-ba2b-735028e9fd8f
-title: Uso di Fiber
+title: Uso di fibre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c25c8d9d258853990bd200a01c77be85c1fdfaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ce5d33cfbe7e54d297366290587d14c282a2e8f2d008a92eba4427cfdd7a139
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101911"
 ---
-# <a name="using-fibers"></a>Uso di Fiber
+# <a name="using-fibers"></a>Uso di fibre
 
-La funzione [**CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) crea un nuovo fiber per un thread. Il thread di creazione deve specificare l'indirizzo iniziale del codice da eseguire per la nuova Fiber. In genere, l'indirizzo iniziale è il nome di una funzione fornita dall'utente. Più Fiber possono eseguire la stessa funzione.
+La [**funzione CreateFiber**](/windows/desktop/api/WinBase/nf-winbase-createfiber) crea un nuovo fiber per un thread. Il thread di creazione deve specificare l'indirizzo iniziale del codice che deve essere eseguito dal nuovo fiber. In genere, l'indirizzo iniziale è il nome di una funzione fornita dall'utente. Più fiber possono eseguire la stessa funzione.
 
-Nell'esempio seguente viene illustrato come creare, pianificare ed eliminare Fiber. I fiber eseguono le funzioni definite localmente ReadFiberFunc e WriteFiberFunc. Questo esempio implementa un'operazione di copia di file basata su Fiber. Quando si esegue l'esempio, è necessario specificare i file di origine e di destinazione. Si noti che esistono molti altri modi per copiare il file a livello di codice. Questo esempio esiste principalmente per illustrare l'uso delle funzioni fiber.
+L'esempio seguente illustra come creare, pianificare ed eliminare fibre. I fiber eseguono le funzioni definite localmente ReadFiberFunc e WriteFiberFunc. In questo esempio viene implementata un'operazione di copia di file basata su fiber. Quando si esegue l'esempio, è necessario specificare i file di origine e di destinazione. Si noti che esistono molti altri modi per copiare il file a livello di codice. Questo esempio esiste principalmente per illustrare l'uso delle funzioni fiber.
 
 
 ```C++
@@ -373,19 +373,19 @@ DisplayFiberInfo(
 
 
 
-Questo esempio fa uso di una struttura di dati Fiber usata per determinare il comportamento e lo stato della fibra. Esiste una struttura di dati per ogni Fiber; il puntatore alla struttura dei dati viene passato al Fiber al momento della creazione della Fiber usando il parametro della funzione [*FiberProc*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine) .
+Questo esempio usa una struttura di dati fiber usata per determinare il comportamento e lo stato del fiber. Esiste una struttura di dati per ogni fiber. Il puntatore alla struttura dei dati viene passato al fiber in fase di creazione del fiber usando il parametro della [*funzione FiberProc.*](/windows/win32/api/winbase/nc-winbase-pfiber_start_routine)
 
-Il thread chiamante chiama la funzione [**ConvertThreadToFiber**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) , che consente di pianificare i fiber dal chiamante. Questa operazione consente inoltre la pianificazione della fibra da parte di un'altra Fiber. Successivamente, il thread crea due fibre aggiuntive, una che esegue le operazioni di lettura su un file specificato e un'altra che esegue le operazioni di scrittura su un file specificato.
+Il thread chiamante chiama [**la funzione ConvertThreadToFiber,**](/windows/desktop/api/WinBase/nf-winbase-convertthreadtofiber) che consente la pianificazione dei fiber da parte del chiamante. Ciò consente anche la pianificazione del fiber da parte di un altro fiber. Successivamente, il thread crea due fiber aggiuntivi, uno che esegue operazioni di lettura su un file specificato e un altro che esegue le operazioni di scrittura su un file specificato.
 
-Il fiber primario chiama la funzione [**SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) per pianificare la lettura Fiber. Al termine della lettura, la lettura Fiber pianifica la scrittura della Fiber. Al termine della scrittura della fibra di scrittura, la scrittura Fiber pianifica la lettura Fiber. Quando il ciclo di lettura/scrittura è stato completato, viene pianificato il fiber primario, che comporta la visualizzazione dello stato di lettura/scrittura. Se si verifica un errore durante le operazioni di lettura o scrittura, il fiber primario viene pianificato ed esempio Visualizza lo stato dell'operazione.
+Il fiber primario chiama la [**funzione SwitchToFiber**](/windows/desktop/api/WinBase/nf-winbase-switchtofiber) per pianificare il fiber di lettura. Dopo una lettura corretta, il fiber di lettura pianifica il fiber di scrittura. Dopo una corretta scrittura nel fiber di scrittura, il fiber di scrittura pianifica il fiber di lettura. Al termine del ciclo di lettura/scrittura, viene pianificato il fiber primario, che determina la visualizzazione dello stato di lettura/scrittura. Se si verifica un errore durante le operazioni di lettura o scrittura, il fiber primario viene pianificato e nell'esempio viene visualizzato lo stato dell'operazione.
 
-Prima della terminazione del processo, il processo libera i fiber usando la funzione [**DeleteFiber**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) , chiude gli handle di file e libera la memoria allocata.
+Prima della terminazione dell'elaborazione, il processo libera i fiber usando la funzione [**DeleteFiber,**](/windows/desktop/api/WinBase/nf-winbase-deletefiber) chiude gli handle di file e libera la memoria allocata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Fiber](fibers.md)
+[Fibre](fibers.md)
 </dt> </dl>
 
  

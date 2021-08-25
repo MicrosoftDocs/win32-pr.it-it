@@ -1,10 +1,10 @@
 ---
-title: Attributo Root-Trust
+title: Root-Trust attributo
 description: Nome distinto di un altro riferimento incrociato.
 ms.assetid: ae886a08-e6ba-4346-815f-8fbf38a347d7
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Root-Trust attribute
+- Root-Trust schema AD dell'attributo
 - Schema AD dell'attributo rootTrust
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 748785f4c00900fb3183b53f8e801ea32b6a1657
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6af40636896ef99d0c70bc312d6039069c80bbec262a51c27387b22c4242a6f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837331"
 ---
-# <a name="root-trust-attribute"></a>Attributo Root-Trust
+# <a name="root-trust-attribute"></a>Root-Trust attributo
 
 Nome distinto di un altro riferimento incrociato.
 
@@ -30,12 +30,12 @@ Nome distinto di un altro riferimento incrociato.
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Root-Trust                              |
-| LDAP-Display-Name | rootTrust                               |
+| Ldap-Display-Name | rootTrust                               |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.674                  |
-| System-ID-GUID    | 7bfdcb80-4807-11d1-a9c3-0000f80367c1    |
+| System-Id-Guid    | 7bfdcb80-4807-11d1-a9c3-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Nome distinto di un altro riferimento incrociato.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome distinto di un altro riferimento incrociato.
 | ID collegamento                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 

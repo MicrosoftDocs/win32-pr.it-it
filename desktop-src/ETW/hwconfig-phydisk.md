@@ -1,7 +1,7 @@
 ---
-description: La \_ classe HWConfig PhyDisk è la classe del tipo di evento per gli eventi di configurazione del disco fisico. La sintassi seguente è semplificata dal codice MOF.
+description: La classe HWConfig \_ PhyDisk è la classe del tipo di evento per gli eventi di configurazione del disco fisico. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: b134ab45-b161-452f-be84-ccbdfa3fe4af
-title: Classe HWConfig_PhyDisk
+title: HWConfig_PhyDisk classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,16 +22,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 453f06ae11bb8b1e11c9efddd6f63bffd38540e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee8a578154e2acedb5d5c8ca6d5eea4f79737e5a2cfb89b0cb658526094fd09c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086401"
 ---
-# <a name="hwconfig_phydisk-class"></a>\_Classe HWConfig PhyDisk
+# <a name="hwconfig_phydisk-class"></a>Classe HWConfig \_ PhyDisk
 
-La classe **HWConfig \_ PhyDisk** è la classe del tipo di evento per gli eventi di configurazione del disco fisico.
+La **classe HWConfig \_ PhyDisk** è la classe del tipo di evento per gli eventi di configurazione del disco fisico.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -56,58 +56,58 @@ class HWConfig_PhyDisk : HWConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ PhyDisk di HWConfig** dispone di questi tipi di membri:
+La **classe HWConfig \_ PhyDisk** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ PhyDisk di HWConfig** dispone di queste proprietà.
+La **classe HWConfig \_ PhyDisk** ha queste proprietà.
 
 <dl> <dt>
 
 BytesPerSector
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Numero di byte in ogni settore per l'unità disco fisica.
+Numero di byte in ogni settore per l'unità disco fisico.
 
 </dd> <dt>
 
 Cilindri
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5)
+Qualificatori: WmiDataId(5)
 </dt> </dl>
 
-Numero totale di cilindri sull'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite le funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Consultare il produttore per le specifiche di unità accurate.
+Numero totale di cilindri nell'unità disco fisico. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13 ore. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
 
 </dd> <dt>
 
-Numerodisco
+DiskNumber
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
 Numero di indice del disco contenente questa partizione.
@@ -117,13 +117,13 @@ Numero di indice del disco contenente questa partizione.
 Produttore
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (10), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(10), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome del produttore dell'unità disco.
@@ -133,45 +133,45 @@ Nome del produttore dell'unità disco.
 SCSILun
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (9)
+Qualificatori: WmiDataId(9)
 </dt> </dl>
 
-Numero di unità logica (LUN) SCSI della scheda SCSI.
+Numero di unità logica SCSI (LUN) della scheda SCSI.
 
 </dd> <dt>
 
 SCSIPath
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7)
+Qualificatori: WmiDataId(7)
 </dt> </dl>
 
-Numero del bus SCSI della scheda SCSI.
+Numero di bus SCSI della scheda SCSI.
 
 </dd> <dt>
 
 SCSIPort
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
 Numero SCSI della scheda SCSI.
@@ -181,13 +181,13 @@ Numero SCSI della scheda SCSI.
 SCSITarget
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8)
+Qualificatori: WmiDataId(8)
 </dt> </dl>
 
 Contiene il numero del dispositivo di destinazione.
@@ -197,32 +197,32 @@ Contiene il numero del dispositivo di destinazione.
 SectorsPerTrack
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Numero di settori in ogni traccia per questa unità disco fisica.
+Numero di settori in ogni traccia per questa unità disco fisico.
 
 </dd> <dt>
 
 TracksPerCylinder
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Numero di tracce in ogni cilindro sull'unità disco fisica. Nota: il valore di questa proprietà viene ottenuto tramite le funzioni estese dell'interrupt BIOS 13h. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Consultare il produttore per le specifiche di unità accurate.
+Numero di tracce in ogni cilindro nell'unità disco fisico. Nota: il valore di questa proprietà viene ottenuto tramite funzioni estese dell'interrupt BIOS 13 ore. Il valore potrebbe non essere accurato se l'unità usa uno schema di conversione per supportare dimensioni del disco con capacità elevata. Per specifiche di unità accurate, rivolgersi al produttore.
 
 </dd> </dl>
 
@@ -232,7 +232,7 @@ Numero di tracce in ogni cilindro sull'unità disco fisica. Nota: il valore di q
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

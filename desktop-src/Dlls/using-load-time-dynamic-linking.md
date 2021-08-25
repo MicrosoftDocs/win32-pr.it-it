@@ -1,21 +1,21 @@
 ---
-description: Dopo aver creato una DLL, è possibile usare le funzioni definite in un'applicazione. Di seguito è riportata una semplice applicazione console che usa la funzione put esportata da Myputs.dll (vedere Creazione di una libreria di Dynamic-Link semplice).
+description: Dopo aver creato una DLL, è possibile usare le funzioni definite in un'applicazione. Di seguito è riportata una semplice applicazione console che usa la funzione myPuts esportata da Myputs.dll (vedere Creazione di una libreria Dynamic-Link semplice).
 ms.assetid: d67000c2-21ca-49c2-86f1-708f33003d1e
-title: Uso di Load-Time collegamento dinamico
+title: Uso Load-Time collegamento dinamico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e31e5d14ba2190528c44d892b957d22b273fd4c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106d9d73808b56c664e44d8dcd71b74a65431316fd3daf47dd0736596c5aa5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902371"
 ---
-# <a name="using-load-time-dynamic-linking"></a>Uso di Load-Time collegamento dinamico
+# <a name="using-load-time-dynamic-linking"></a>Uso Load-Time collegamento dinamico
 
-Dopo aver creato una DLL, è possibile usare le funzioni definite in un'applicazione. Di seguito è riportata una semplice applicazione console che usa la funzione put esportata da Myputs.dll (vedere [creazione di una libreria di Dynamic-Link semplice](creating-a-simple-dynamic-link-library.md)).
+Dopo aver creato una DLL, è possibile usare le funzioni definite in un'applicazione. Di seguito è riportata una semplice applicazione console che usa la funzione myPuts esportata da Myputs.dll (vedere Creazione di una libreria [Dynamic-Link semplice).](creating-a-simple-dynamic-link-library.md)
 
-Poiché in questo esempio la funzione DLL viene chiamata in modo esplicito, il modulo per l'applicazione deve essere collegato con la libreria di importazione My put. lib. Per ulteriori informazioni sulla creazione di dll, vedere la documentazione inclusa con gli strumenti di sviluppo.
+Poiché questo esempio chiama la funzione DLL in modo esplicito, il modulo per l'applicazione deve essere collegato alla libreria di importazione Myputs.lib. Per altre informazioni sulla compilazione di DLL, vedere la documentazione inclusa con gli strumenti di sviluppo.
 
 
 ```C++
