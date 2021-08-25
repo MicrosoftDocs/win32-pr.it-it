@@ -1,19 +1,19 @@
 ---
-description: L' <scope> elemento facoltativo specifica una raccolta di <scopeItem> elementi che definiscono le inclusioni e le esclusioni dell'ambito per questo particolare connettore di ricerca.
+description: L'elemento facoltativo specifica una raccolta di elementi che definiscono le inclusioni e le esclusioni di <scope> ambito per questo particolare <scopeItem> connettore di ricerca.
 ms.assetid: 9e92e3db-3d5e-4f86-8d67-90eb5469b04b
-title: Elemento Scope (Schema connettore di ricerca)
+title: Elemento scope (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f49041170db80de48d312596249d5c4dca835e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18d5fcdb3908f495d07199c61a2005a4f97ba5a01c641fb4e854961489e7abe0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944301"
 ---
-# <a name="scope-element-search-connector-schema"></a>Elemento Scope (Schema connettore di ricerca)
+# <a name="scope-element-search-connector-schema"></a>Elemento scope (schema del connettore di ricerca)
 
-L' <scope> elemento facoltativo specifica una raccolta di <scopeItem> elementi che definiscono le inclusioni e le esclusioni dell'ambito per questo particolare connettore di ricerca. Se <scope> è presente, deve contenere almeno un <scopeItem> elemento. Questo elemento non ha attributi.
+L'elemento facoltativo specifica una raccolta di elementi che definiscono le inclusioni e le esclusioni di <scope> ambito per questo particolare <scopeItem> connettore di ricerca. Se <scope> è presente, DEVE contenere almeno un <scopeItem> elemento. Questo elemento non ha attributi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ L' <scope> elemento facoltativo specifica una raccolta di <scopeItem> elementi c
 
 | Elemento padre                                                                                                   | Elementi figlio                                                                    |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Elemento searchConnectorDescriptionType (schema del connettore di ricerca)](search-schema-searchconnectordescription.md) | [elemento scopeItem (schema del connettore di ricerca)](search-schema-sconn-scopeitem.md). |
+| [Elemento searchConnectorDescriptionType (schema del connettore di ricerca)](search-schema-searchconnectordescription.md) | [Elemento scopeItem (schema del connettore di ricerca)](search-schema-sconn-scopeitem.md). |
 
 
 
@@ -55,11 +55,11 @@ L' <scope> elemento facoltativo specifica una raccolta di <scopeItem> elementi c
 
 ## <a name="remarks"></a>Commenti
 
-Usare gli <scope> <scopeItem> elementi e per identificare i percorsi in cui eseguire la ricerca e quali percorsi devono essere esclusi dalla ricerca.
+Usare gli elementi e per identificare i percorsi da cercare <scope> e i percorsi da escludere dalla <scopeItem> ricerca.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un ambito di ricerca che include C: \\ ExampleFolder e tutte le relative cartelle figlio ad eccezione di c: \\ ExampleFolder \\ ExcludeMe.
+L'esempio seguente illustra un ambito di ricerca che include C: ExampleFolder e tutte le relative cartelle \\ figlio ad eccezione di C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

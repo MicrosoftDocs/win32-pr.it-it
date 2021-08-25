@@ -1,23 +1,23 @@
 ---
-title: Strutture (input di Windows Touch)
-description: Questa sezione contiene le strutture per Windows Touch Input.
+title: Strutture (Windows Touch Input)
+description: Questa sezione contiene strutture per l'Windows touch.
 ms.assetid: 591c7218-bd4f-40c2-98e1-6442ede28600
 keywords:
-- Windows Touch, strutture
+- Windows Tocco, strutture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62595e9600474b3b3f1aca71dece1d81514daa91
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ce7d2178673fbf2d75b181875de14f0ad0087e80a6d424a497abcd39375235fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007371"
 ---
-# <a name="structures-windows-touch-input"></a>Strutture (input di Windows Touch)
+# <a name="structures-windows-touch-input"></a>Strutture (Windows Touch Input)
 
-Questa sezione contiene le strutture per Windows Touch Input.
+Questa sezione contiene strutture per l'Windows touch.
 
-Per l'input Windows Touch vengono utilizzate le strutture seguenti.
+Le strutture seguenti vengono usate per l'Windows tocco.
 
 
 
@@ -33,10 +33,10 @@ Per l'input Windows Touch vengono utilizzate le strutture seguenti.
 
 <dl> <dt>
 
-[Input Windows Touch](multi-touch-input.md)
+[Windows Input tocco](multi-touch-input.md)
 </dt> <dt>
 
-[Guida alla programmazione di input per Windows Touch](guide-multi-touch-input.md)
+[Windows Guida alla programmazione dell'input tocco](guide-multi-touch-input.md)
 </dt> </dl>
 
  

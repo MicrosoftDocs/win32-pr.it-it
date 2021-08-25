@@ -1,10 +1,10 @@
 ---
-title: Proprietà TaskService. HighestVersion
-description: Per gli script, indica la versione più recente di Utilità di pianificazione supportata da un computer.
+title: TaskService.HighestVersion - proprietà
+description: Per lo scripting, indica la versione più recente Utilità di pianificazione che un computer supporta.
 ms.assetid: b4e55e46-6f33-4224-811b-06bf218dd1ac
 keywords:
-- Utilità di pianificazione proprietà HighestVersion
-- Utilità di pianificazione proprietà HighestVersion, oggetto TaskService
+- Proprietà HighestVersion Utilità di pianificazione
+- Proprietà HighestVersion Utilità di pianificazione, oggetto TaskService
 - Oggetto TaskService Utilità di pianificazione, proprietà HighestVersion
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b4e381326ab901fcaf8657975ce3f8401facd44
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e27618490fcf404936532d272402bebc03d94eb72ba8156e897f344b708d90ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959491"
 ---
-# <a name="taskservicehighestversion-property"></a>Proprietà TaskService. HighestVersion
+# <a name="taskservicehighestversion-property"></a>TaskService.HighestVersion - proprietà
 
-Per gli script, indica la versione più recente di Utilità di pianificazione supportata da un computer.
+Per lo scripting, indica la versione più recente Utilità di pianificazione che un computer supporta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,11 +38,11 @@ TaskService.HighestVersion As Integer
 
 ## <a name="property-value"></a>Valore proprietà
 
-La versione più recente di Utilità di pianificazione supportata da un computer. La versione più recente è un valore suddiviso in MajorVersion/MinorVersion sul limite a 16 bit. Il servizio Utilità di pianificazione restituisce 1 per la versione principale e 2 per la versione secondaria. Usare la funzione [CLng](/previous-versions//ck4c5842(v=vs.85)) per ottenere il valore intero della proprietà.
+La versione più recente di Utilità di pianificazione supportata da un computer. La versione più recente è un valore suddiviso in MajorVersion/MinorVersion sul limite a 16 bit. Il Utilità di pianificazione restituisce 1 per la versione principale e 2 per la versione secondaria. Usare la [funzione CLng](/previous-versions//ck4c5842(v=vs.85)) per ottenere il valore intero della proprietà .
 
 ## <a name="examples"></a>Esempio
 
-Nel codice seguente viene illustrato come utilizzare la funzione [CLng](/previous-versions//ck4c5842(v=vs.85)) per ottenere il valore della proprietà **HighestVersion** .
+Il codice seguente illustra come usare la [funzione CLng](/previous-versions//ck4c5842(v=vs.85)) per ottenere il valore della **proprietà HighestVersion.**
 
 
 ```VB
@@ -64,9 +64,9 @@ End If
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

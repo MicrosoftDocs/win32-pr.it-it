@@ -1,26 +1,26 @@
 ---
 title: Proprietà EnableCredSspSupport di IMsRdpClientNonScriptable3
-description: Specifica o recupera un valore che indica se il provider del servizio di sicurezza delle credenziali (CredSSP) è abilitato per la connessione.
+description: Specifica o recupera se il provider del servizio di sicurezza delle credenziali (CredSSP) è abilitato per questa connessione.
 ms.assetid: 770da50b-2a93-4274-9b6f-c24c13f08549
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà EnableCredSspSupport
-- Servizi Desktop remoto proprietà EnableCredSspSupport, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , oggetto MsRdpClient5
+- Proprietà EnableCredSspSupport Servizi Desktop remoto oggetto MsRdpClient5
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà EnableCredSspSupport
+- Proprietà EnableCredSspSupport Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà EnableCredSspSupport
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2330b800d15f95a7b59a01735de971dd4b212d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f682fe85de22bcffad42d5da80c2f565f4690373629a804c7bbb4fefafa23b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125691"
 ---
-# <a name="imsrdpclientnonscriptable3enablecredsspsupport-property"></a>Proprietà IMsRdpClientNonScriptable3:: EnableCredSspSupport
+# <a name="imsrdpclientnonscriptable3enablecredsspsupport-property"></a>Proprietà IMsRdpClientNonScriptable3::EnableCredSspSupport
 
-Specifica o recupera un valore che indica se il provider del servizio di sicurezza delle credenziali (CredSSP) è abilitato per la connessione.
+Specifica o recupera se il provider del servizio di sicurezza delle credenziali (CredSSP) è abilitato per questa connessione.
 
 Si tratta di una proprietà di lettura/scrittura.
 

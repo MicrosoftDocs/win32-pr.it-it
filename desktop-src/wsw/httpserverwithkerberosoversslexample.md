@@ -1,29 +1,29 @@
 ---
 title: HttpServerWithKerberosOverSslExample
-description: Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi, con Kerberos sulla sicurezza in modalità mista SSL.
+description: In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi, con kerberos sulla sicurezza in modalità mista SSL.
 ms.assetid: 2910f594-2f38-4c1e-bb47-89258b752572
 keywords:
-- HttpServerWithKerberosOverSslExample native-servizi Web
+- HttpServerWithKerberosOverSslExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f9bcd3f0d0dbfe9805a39cac6577037f6a5385c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8ef005a49ba184f983f826f6232a7a63baf3886b2fb371e80aa0cf47195f92ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927287"
 ---
 # <a name="httpserverwithkerberosoversslexample"></a>HttpServerWithKerberosOverSslExample
 
-Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi, con Kerberos sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da un ticket APREQ Kerberos in un'intestazione WS-Security nel messaggio.
+In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi, con kerberos sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da un ticket APREQ Kerberos in WS-Security intestazione nel messaggio.
 
--   [HttpServerWithKerberosOverSsl. cpp](#httpserverwithkerberosoversslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpServerWithKerberosOverSsl.cpp](#httpserverwithkerberosoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpserverwithkerberosoversslcpp"></a>HttpServerWithKerberosOverSsl. cpp
+## <a name="httpserverwithkerberosoversslcpp"></a>HttpServerWithKerberosOverSsl.cpp
 
 
 ```C++
@@ -488,7 +488,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -627,9 +627,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

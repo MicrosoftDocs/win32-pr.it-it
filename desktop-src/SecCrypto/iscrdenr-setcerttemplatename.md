@@ -1,7 +1,7 @@
 ---
 description: Specifica il nome del modello di certificato.
 ms.assetid: 15d22130-e614-4505-94e8-83c2efbf6d87
-title: 'Metodo ISCrdEnr:: setCertTemplateName'
+title: Metodo ISCrdEnr::setCertTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 53ba18626a7d2bb703ed4d11953fb4872cf9257c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f757ead06e5d1769e109bcbfc8e3510f4298f32145d60c4c0bc992a01f3ab36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993041"
 ---
-# <a name="iscrdenrsetcerttemplatename-method"></a>Metodo ISCrdEnr:: setCertTemplateName
+# <a name="iscrdenrsetcerttemplatename-method"></a>Metodo ISCrdEnr::setCertTemplateName
 
-Il metodo **setCertTemplateName** specifica il nome del modello di certificato.
+Il **metodo setCertTemplateName** specifica il nome del modello di certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,14 +52,14 @@ SCrdEnr.setCertTemplateName( _
 
 <dl> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore che determina se è in corso l'impostazione del nome reale o del nome visualizzato del modello di certificato. Se *dwFlags* presenta il valore SCard \_ Registra \_ il \_ \_ nome visualizzato \_ del modello di certificato, viene impostato il nome visualizzato del modello di certificato. In caso contrario, viene impostato il nome reale del modello di certificato.
+Valore che determina se è in corso l'impostazione del nome reale o del nome visualizzato del modello di certificato. Se *dwFlags ha* il valore SCARD \_ ENROLL CERT TEMPLATE DISPLAY NAME, viene impostato il nome visualizzato \_ del modello di \_ \_ \_ certificato. In caso contrario, viene impostato il nome reale del modello di certificato.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ in\]
+*bstrCertTemplateName* \[ Pollici\]
 </dt> <dd>
 
 Nome del modello di certificato che verrà usato nella richiesta di certificato.
@@ -72,11 +72,11 @@ Nome del modello di certificato che verrà usato nella richiesta di certificato.
 
 Se il metodo ha esito positivo, il metodo restituisce S \_ OK.
 
-Se il metodo ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se il metodo ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](common-hresult-values.md).
 
 ## <a name="remarks"></a>Commenti
 
-Se non si imposta il nome del modello di certificato chiamando **ISCrdEnr:: setCertTemplateName**, il nome predefinito è il primo nome nell'elenco dei modelli di certificato disponibili.
+Se non si imposta il nome del modello di certificato chiamando **ISCrdEnr::setCertTemplateName**, il nome predefinito sarà il nome nell'elenco dei modelli di certificato disponibili.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,9 +85,9 @@ Se non si imposta il nome del modello di certificato chiamando **ISCrdEnr:: setC
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr è definito come 753988a1-1357-436D-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr è definito come \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

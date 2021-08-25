@@ -1,7 +1,7 @@
 ---
-description: Il metodo CloseLog dell'oggetto merge chiude il file di log corrente.
+description: Il metodo CloseLog dell'oggetto Merge chiude il file di log corrente.
 ms.assetid: 09a40de4-d92f-4fc8-8556-a50f5dbe856b
-title: Metodo merge. CloseLog (Mergemod. h)
+title: Metodo Merge.CloseLog (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 93756a2a5431e8c2ec8b2d7ac57840065e1bed90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39cccfac44878fd22d81b59e91c07998a1eaea1c91289ec803a8110b493dc593
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926741"
 ---
-# <a name="mergecloselog-method"></a>Merge. CloseLog, metodo
+# <a name="mergecloselog-method"></a>Metodo Merge.CloseLog
 
-Il metodo **CloseLog** dell'oggetto [**merge**](merge-object.md) chiude il file di log corrente.
+Il **metodo CloseLog** dell'oggetto [**Merge**](merge-object.md) chiude il file di log corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="c"></a>C++
 
-Vedere funzione [**CloseLog**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closelog) .
+Vedere [**Funzione CloseLog.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closelog)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ Vedere funzione [**CloseLog**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

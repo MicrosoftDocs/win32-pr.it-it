@@ -1,19 +1,19 @@
 ---
 description: La modalità di interpolazione di un oggetto Graphics influisce sul modo in cui Windows GDI+ ridimensiona (estende e compatta) le immagini.
 ms.assetid: 3aeead47-78da-4ab3-9126-2fbe9e341e48
-title: Uso della modalità di interpolazione per controllare la qualità dell'immagine durante il ridimensionamento
+title: Uso della modalità di interpolazione per controllare la qualità delle immagini durante il ridimensionamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d34a829f2edf2f341f50bee771d909f7c4eef98e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92fefe314ef680a54f9d885bb185c77b3349e84cbe5f7bcf347cf9ff3fa0a4ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943701"
 ---
-# <a name="using-interpolation-mode-to-control-image-quality-during-scaling"></a>Uso della modalità di interpolazione per controllare la qualità dell'immagine durante il ridimensionamento
+# <a name="using-interpolation-mode-to-control-image-quality-during-scaling"></a>Uso della modalità di interpolazione per controllare la qualità delle immagini durante il ridimensionamento
 
-La modalità di interpolazione di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) influisce sul modo in cui Windows GDI+ ridimensiona (estende e compatta) le immagini. L'enumerazione [**InterpolationMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-interpolationmode) in Gdiplusenums. h definisce diverse modalità di interpolazione, alcune delle quali sono mostrate nell'elenco seguente:
+La modalità di interpolazione di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) influisce sul modo in cui Windows GDI+ ridimensiona (estende e riduce) le immagini. [**L'enumerazione InterpolationMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-interpolationmode) in Gdiplusenums.h definisce diverse modalità di interpolazione, alcune delle quali sono illustrate nell'elenco seguente:
 
 -   InterpolationModeNearestNeighbor
 -   InterpolationModeBilinear
@@ -21,11 +21,11 @@ La modalità di interpolazione di un oggetto [**Graphics**](/windows/desktop/api
 -   InterpolationModeBicubic
 -   InterpolationModeHighQualityBicubic
 
-Per estendere un'immagine, è necessario eseguire il mapping di ogni pixel nell'immagine originale a un gruppo di pixel nell'immagine più grande. Per compattare un'immagine, è necessario eseguire il mapping dei gruppi di pixel nell'immagine originale a singoli pixel nell'immagine più piccola. L'efficacia degli algoritmi che eseguono questi mapping determina la qualità di un'immagine ridimensionata. Gli algoritmi che producono immagini con scalabilità di qualità superiore tendono a richiedere più tempo di elaborazione. Nell'elenco precedente InterpolationModeNearestNeighbor è la modalità di qualità più bassa e InterpolationModeHighQualityBicubic è la modalità di qualità più elevata.
+Per estendere un'immagine, ogni pixel nell'immagine originale deve essere mappato a un gruppo di pixel nell'immagine più grande. Per ridurre un'immagine, è necessario eseguire il mapping di gruppi di pixel nell'immagine originale a singoli pixel nell'immagine più piccola. L'efficacia degli algoritmi che eseguono questi mapping determina la qualità di un'immagine ridimensionata. Gli algoritmi che producono immagini con scalabilità di qualità superiore tendono a richiedere più tempo di elaborazione. Nell'elenco precedente InterpolationModeNearestNeighbor è la modalità di qualità più bassa e InterpolationModeHighQualityBicubic è la modalità di massima qualità.
 
-Per impostare la modalità di interpolazione, passare uno dei membri dell'enumerazione [**InterpolationMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-interpolationmode) al metodo **SetInterpolationMode** di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
+Per impostare la modalità di interpolazione, passare uno dei membri [**dell'enumerazione InterpolationMode**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-interpolationmode) al **metodo SetInterpolationMode** di un [**oggetto Graphics.**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
-Nell'esempio seguente viene disegnata un'immagine, quindi viene compattata l'immagine con tre diverse modalità di interpolazione:
+Nell'esempio seguente viene disegnata un'immagine e quindi compattata con tre diverse modalità di interpolazione:
 
 
 ```
@@ -71,7 +71,7 @@ graphics.DrawImage(
 
 
 
-La figura seguente illustra l'immagine originale e le tre immagini più piccole.
+La figura seguente mostra l'immagine originale e le tre immagini più piccole.
 
 ![illustrazione che mostra un'immagine originale di grandi dimensioni e le tre immagini più piccole di qualità variabile](images/grapes1.png)
 

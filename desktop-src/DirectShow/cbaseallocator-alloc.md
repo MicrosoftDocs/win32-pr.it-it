@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b53dc461a520b4e8c890a36fca6d73c2c836499f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 975f373136759a0950e5052413eccb501176e7876531208fd20380ee7d1fb10a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966711"
 ---
 # <a name="cbaseallocatoralloc-method"></a>Metodo CBaseAllocator.Alloc
 
@@ -64,7 +64,7 @@ Nella classe di base questo metodo non alloca memoria. Restituisce un errore se 
 
 Una classe derivata deve eseguire l'override di questo metodo per eseguire l'allocazione di memoria effettiva. In genere, la classe derivata esegue i passaggi seguenti:
 
-1.  Chiamare l'implementazione della classe di base per determinare se la memoria richiede effettivamente l'allocazione.
+1.  Chiamare l'implementazione della classe di base per determinare se la memoria deve effettivamente essere allocata.
 2.  Allocare memoria.
 3.  Creare [**oggetti CMediaSample**](cmediasample.md) che contengono blocchi di memoria dal passaggio 2.
 4.  Aggiungere ogni **oggetto CMediaSample** all'elenco di esempi gratuiti ([**CBaseAllocator::m \_ lFree**](cbaseallocator-m-lfree.md)).
@@ -77,7 +77,7 @@ Per un esempio, vedere [**CMemAllocator::Alloc**](cmemallocator-alloc.md).
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

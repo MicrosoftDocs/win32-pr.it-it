@@ -1,9 +1,9 @@
 ---
-title: SLIDER. disabledImage
-description: L'attributo disabledImage specifica o recupera l'immagine del dispositivo di scorrimento usato quando il controllo Slider è disabilitato.
+title: SLIDER.disabledImage
+description: L'attributo disabledImage specifica o recupera l'immagine del dispositivo di scorrimento usato quando il dispositivo di scorrimento è disabilitato.
 ms.assetid: b6c4237d-8eb0-44ce-a23f-9bdc5c21aca8
 keywords:
-- Media Player Windows SLIDER. disabledImage
+- Slider.disabledImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1b90dcbd551ca0f8bb332f858eac0b69c46733
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 596afbed41fa1a864d8ed4e5fd217cb4856a716623ad2a60db080b3e965ab48d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123071"
 ---
-# <a name="sliderdisabledimage"></a>SLIDER. disabledImage
+# <a name="sliderdisabledimage"></a>SLIDER.disabledImage
 
-L'attributo **disabledImage** specifica o recupera l'immagine del dispositivo di scorrimento usato quando il controllo Slider è disabilitato.
+**L'attributo disabledImage** specifica o recupera l'immagine del dispositivo di scorrimento usato quando il dispositivo di scorrimento è disabilitato.
 
 ``` syntax
         elementID.disabledImage
@@ -29,13 +29,13 @@ L'attributo **disabledImage** specifica o recupera l'immagine del dispositivo di
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente il nome di un file di immagine.
+Questo attributo è una stringa di **lettura/scrittura** contenente il nome di un file di immagine.
 
 ## <a name="remarks"></a>Commenti
 
-**DisabledImage** è facoltativo. Se non viene specificato, la **BackgroundImage** viene utilizzata per tutti gli stati disabilitati. Quando un controllo dispositivo di scorrimento è disabilitato, non è visibile alcuna immagine in primo piano.
+disabledImage **è** facoltativo. Se non viene specificato, **backgroundImage** viene usato per tutti gli stati disabilitati. Quando un controllo dispositivo di scorrimento è disabilitato, non è visibile alcuna immagine in primo piano.
 
-I formati supportati sono BMP, JPG, PNG e GIF (escluse le gif animate).
+I formati supportati sono BMP, JPG, PNG e GIF (senza GIF animate).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ I formati supportati sono BMP, JPG, PNG e GIF (escluse le gif animate).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,7 +54,7 @@ I formati supportati sono BMP, JPG, PNG e GIF (escluse le gif animate).
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDER. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> </dl>
 
  

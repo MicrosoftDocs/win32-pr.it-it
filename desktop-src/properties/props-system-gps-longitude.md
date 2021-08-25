@@ -1,19 +1,19 @@
 ---
 description: Indica la longitudine.
 ms.assetid: ef28141f-1b63-4694-b6df-fcc11ce7e50b
-title: System. GPS. Longitudine
+title: System.GPS.Longitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e65431412b0d46ad7b68100febd4d6e8efd31a17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf12d65c2776c3740360c4cb298048621a877d58999eaddd6e219c682e5a0c9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104132050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010341"
 ---
-# <a name="systemgpslongitude"></a>System. GPS. Longitudine
+# <a name="systemgpslongitude"></a>System.GPS.Longitude
 
-Indica la longitudine. Si tratta di una matrice di tre valori, come indicato di seguito: index 0 è il degrees, index 1 is the minutes, index 2 is the seconds. Ogni viene calcolato in base ai valori in PKEY \_ GPS \_ LONGITUDENUMERATOR e PKEY \_ GPS \_ LongitudeDenominator.
+Indica la longitudine. Si tratta di una matrice di tre valori, come indicato di seguito: Indice 0 è il gradi, indice 1 è il minuto, indice 2 è il secondo. Ognuno viene calcolato dai valori in PKEY \_ GPS \_ LongitudeNumerator e PKEY \_ GPS \_ LongitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -49,9 +49,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-`label`Per Windows Vista con Service Pack 1 (SP1) è stato aggiunto il requisito di un riferimento di stringa indiretto specifico per l'attributo di **labelInfo** .
+È stato aggiunto il requisito di un riferimento a una stringa indiretta specifico per l'attributo `label` **di labelInfo** per Windows Vista con Service Pack 1 (SP1).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -66,13 +66,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -81,7 +81,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

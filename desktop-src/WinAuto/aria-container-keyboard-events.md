@@ -1,23 +1,23 @@
 ---
-title: Errore di accessibilità tastiera ruolo contenitore ARIA
-description: Errore di accessibilità tastiera ruolo contenitore ARIA
+title: Errore di accessibilità della tastiera del ruolo contenitore ARIA
+description: Errore di accessibilità della tastiera del ruolo contenitore ARIA
 ms.assetid: 364F26D7-7B65-418B-9DA5-F3B7B59284F7
 keywords:
 - AriaContainerKeyboardAccessibilityErrorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085591e4f4834e8088b5ca199918d621f518e678
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 591098ba6e38836f1f39d13e72495bc1d7a3d5f9fe088873661e3dd3a7e65d4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122401"
 ---
-# <a name="aria-container-role-keyboard-accessibility-error"></a>Errore di accessibilità tastiera ruolo contenitore ARIA
+# <a name="aria-container-role-keyboard-accessibility-error"></a>Errore di accessibilità della tastiera del ruolo contenitore ARIA
 
 ## <a name="text"></a>Testo
 
-L'elemento è un contenitore con funzionalità del mouse attive discendenti e personalizzate ma senza la corrispondente funzionalità della tastiera: gestori eventi JavaScript per **OnKeyDown** o **OnKeyPress**.
+L'elemento è un contenitore con funzionalità del mouse discendente attivo e personalizzato, ma senza la corrispondente funzionalità della tastiera: gestori eventi JavaScript per **OnKeyDown** o **OnKeyPress.**
 
 ## <a name="type"></a>Tipo
 
@@ -25,9 +25,9 @@ Errore
 
 ## <a name="description"></a>Descrizione
 
-Questo errore si applica agli elementi con l'attributo **aria-activedescendant** . Questi elementi hanno uno o più gestori di eventi del mouse (**MouseMove**, **MouseDown** o **MouseUp**), ma mancano i gestori eventi di tastiera equivalenti (**KeyDown**, **KeyUp** o **KeyPress**). I gestori degli eventi della tastiera sono necessari per garantire che l'utente possa richiamare la funzionalità dell'elemento tramite la tastiera e per assicurarsi che l'elemento mantenga l'attributo **aria-activedescendant** .
+Questo errore si applica agli elementi con **l'attributo aria-activedescendant.** Questi elementi dispongono di uno o più gestori eventi del mouse **(mousemove,** **mousedown** o **mouseup),** ma mancano i gestori eventi della tastiera equivalenti (**keydown,** **keyup** o **keypress).** I gestori eventi della tastiera sono necessari per garantire che l'utente possa richiamare la funzionalità dell'elemento usando la tastiera e per garantire che l'elemento mantenga **l'attributo aria-activedescendant.**
 
-Per correggere l'errore, implementare uno dei gestori di eventi della tastiera.
+Per correggere l'errore, implementare uno dei gestori eventi della tastiera.
 
 ## <a name="example"></a>Esempio
 
@@ -72,12 +72,12 @@ Per correggere l'errore, implementare uno dei gestori di eventi della tastiera.
 
 <dl> <dt>
 
-[Errore di accessibilità della tastiera del ruolo contenitore ARIA (senza discendente attivo)](aria-container--no-active-descendants--keyboard-events.md)
+[Errore di accessibilità della tastiera per il ruolo contenitore ARIA (senza discendente attivo)](aria-container--no-active-descendants--keyboard-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

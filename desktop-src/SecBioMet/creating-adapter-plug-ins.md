@@ -1,21 +1,21 @@
 ---
-title: Creazione di plug-in di adapter
-description: Come usare l'API Windows Biometric Framework per creare plug-in di adapter.
+title: Creare plug-in dell'adapter
+description: Come usare l'API Windows Biometric Framework per creare plug-in dell'adattatore.
 ms.assetid: a1a18d4b-e047-4fa7-ad9b-c531e987a7a4
 keywords:
-- API Windows Biometric Framework API di Windows Biometric Framework, plug-in di adapter
+- Windows API Biometric Framework Windows API Biometric Framework, plug-in dell'adapter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 185319a738553702fe8e0736f0ce0760f662f378
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11c53d9a277e82ee3953f8c05b9f4952c9d55b173192e99ef8544231d3978761
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993671"
 ---
-# <a name="create-adapter-plug-ins"></a>Creazione di plug-in di adapter
+# <a name="create-adapter-plug-ins"></a>Creare plug-in dell'adapter
 
-Negli argomenti seguenti viene illustrato come utilizzare l'API di Windows Biometric Framework per creare plug-in di adapter.
+Gli argomenti seguenti illustrano come usare l'API Windows Biometric Framework per creare plug-in dell'adapter.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,10 +23,10 @@ Negli argomenti seguenti viene illustrato come utilizzare l'API di Windows Biome
 
 | Argomento                                                                   | Descrizione                                                                                              |
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [Flusso di lavoro adapter](adapter-workflow.md)<br/>                     | Questa sezione descrive il flusso di lavoro di registrazione dal punto di vista dei plug-in dell'adapter.<br/>   |
-| [Creazione di un adattatore del motore](creating-an-engine-adapter.md)<br/> | Struttura di base di un plug-in di adattatore del motore implementata come libreria di collegamento dinamico (DLL) di C++.<br/> |
-| [Creazione di un adattatore del sensore](creating-a-sensor-adapter.md)<br/>   | Struttura di base di un plug-in di adattatore del sensore implementato come libreria di collegamento dinamico (DLL) di C++.<br/>  |
-| [Creazione di un adattatore di archiviazione](creating-a-storage-adapter.md)<br/> | Struttura di base di un plug-in di adattatore di archiviazione implementato come DLL (Dynamic Link Library) C++.<br/> |
+| [Flusso di lavoro dell'adapter](adapter-workflow.md)<br/>                     | Questa sezione descrive il flusso di lavoro di registrazione dal punto di vista dei plug-in dell'adapter.<br/>   |
+| [Creazione di un adattatore motore](creating-an-engine-adapter.md)<br/> | Struttura di base di un plug-in dell'adattatore motore implementata come libreria di collegamento dinamico (DLL) C++.<br/> |
+| [Creazione di un adattatore sensore](creating-a-sensor-adapter.md)<br/>   | Struttura di base di un plug-in dell'adattatore sensore implementata come libreria di collegamento dinamico (DLL) C++.<br/>  |
+| [Creazione di un Archiviazione adapter](creating-a-storage-adapter.md)<br/> | Struttura di base di un plug-in dell'adattatore di archiviazione implementata come libreria di collegamento dinamico (DLL) C++.<br/> |
 
 
 
@@ -36,7 +36,7 @@ Negli argomenti seguenti viene illustrato come utilizzare l'API di Windows Biome
 
 <dl> <dt>
 
-[Riferimento al plug-in](plug-in-reference.md)
+[Informazioni di riferimento sul plug-in](plug-in-reference.md)
 </dt> </dl>
 
  

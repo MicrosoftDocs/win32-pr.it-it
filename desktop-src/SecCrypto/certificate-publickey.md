@@ -1,7 +1,7 @@
 ---
-description: Il metodo PublicKey restituisce l'oggetto chiave pubblica per un oggetto certificato.
+description: Il metodo PublicKey restituisce l'oggetto chiave pubblica per un oggetto Certificate.
 ms.assetid: 9a7ea6d5-365e-4360-ab50-2bafcfaecaa0
-title: Certificate. PublicKey (metodo)
+title: Metodo Certificate.PublicKey
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 472acee68aa653cc72787a5ac5ce2c2ace4ec70f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47bf713038f048048613a0be17c8a0523e33c603fbc761b57c3a76ee163534be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126931"
 ---
-# <a name="certificatepublickey-method"></a>Certificate. PublicKey (metodo)
+# <a name="certificatepublickey-method"></a>Metodo Certificate.PublicKey
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei nomi [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) nello spazio dei [**nomi System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-Il metodo **publicKey** restituisce l'oggetto chiave pubblica per un oggetto [**certificato**](certificate.md) .
+Il **metodo PublicKey** restituisce l'oggetto chiave pubblica per un [**oggetto**](certificate.md) Certificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Questo metodo non presenta parametri.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

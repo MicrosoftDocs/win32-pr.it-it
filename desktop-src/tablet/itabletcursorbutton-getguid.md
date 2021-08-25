@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore univoco del pulsante dello stilo.
 ms.assetid: 06bd6a84-46cd-4c62-92d6-50caae359e43
-title: 'Metodo ITabletCursorButton:: GetGuid'
+title: Metodo ITabletCursorButton::GetGuid
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 21d63ef0c934e96bc93b5384cab1e67f9dd452d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4492aa98630491730435080981172bc60a1eeccfe0c84ed76e3b4d504a79ad1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844281"
 ---
-# <a name="itabletcursorbuttongetguid-method"></a>Metodo ITabletCursorButton:: GetGuid
+# <a name="itabletcursorbuttongetguid-method"></a>Metodo ITabletCursorButton::GetGuid
 
 Recupera l'identificatore univoco del pulsante dello stilo.
 
@@ -40,7 +40,7 @@ HRESULT GetGuid(
 
 <dl> <dt>
 
-*pguidBtn* \[ out\]
+*pguidBtn* \[ Cambio\]
 </dt> <dd>
 
 Valore univoco che identifica il pulsante dello stilo.
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

@@ -1,9 +1,9 @@
 ---
-title: ErrorItem. errorDescription
+title: ErrorItem.errorDescription
 description: La proprietà errorDescription recupera una descrizione dell'errore.
 ms.assetid: 7fd16c3d-1460-41b5-81ca-2636d7a1d0d1
 keywords:
-- Media Player Windows ErrorItem. errorDescription
+- ErrorItem.errorDescription Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0de19bb67a5846a82e87d091f95a18cd12c5c2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5740adcef0b6eb86290ea392d0659abb0ccc3d51b0b0b1b3203105de67fb692
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862791"
 ---
-# <a name="erroritemerrordescription"></a>ErrorItem. errorDescription
+# <a name="erroritemerrordescription"></a>ErrorItem.errorDescription
 
-La proprietà **errorDescription** recupera una descrizione dell'errore.
+La **proprietà errorDescription** recupera una descrizione dell'errore.
 
 ``` syntax
 player.error.item(
@@ -33,15 +33,15 @@ player.error.item(
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="remarks"></a>Commenti
 
-È necessario impostare *le impostazioni*. **enableErrorDialogs** su false se si sceglie di visualizzare i messaggi di errore personalizzati.
+È necessario *impostare* Impostazioni . **enableErrorDialogs** su false se si sceglie di visualizzare messaggi di errore personalizzati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato *ErrorItem*. **errorDescription** in un gestore eventi per visualizzare il messaggio di errore all'utente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene *utilizzato ErrorItem*. **errorDescription** in un gestore eventi per visualizzare il messaggio di errore all'utente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -69,7 +69,7 @@ document.write(message);
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/>                               |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/>                               |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

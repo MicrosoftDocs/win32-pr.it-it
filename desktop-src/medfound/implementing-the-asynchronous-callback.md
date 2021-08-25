@@ -4,16 +4,16 @@ ms.assetid: c2c9d0f7-038b-4f23-985c-b812908d71a7
 title: Implementazione del callback asincrono
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24088aea4e74b39ae08625c6917a5ca56f554158
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f064c9a3d16ebf54342065439415557ea4621c72a57a0a52e4f4c9ed65721e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941891"
 ---
 # <a name="implementing-the-asynchronous-callback"></a>Implementazione del callback asincrono
 
-Il codice seguente illustra il Framework di base necessario per implementare l'interfaccia [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) . In questo esempio, il metodo [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) viene dichiarato come metodo virtuale puro. L'implementazione di questo metodo dipende dal metodo asincrono che si sta chiamando. Per ulteriori informazioni, vedere [chiamata di metodi asincroni](calling-asynchronous-methods.md).
+Il codice seguente illustra il framework di base necessario per implementare [**l'interfaccia IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) In questo esempio il [**metodo Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) viene dichiarato come metodo virtuale puro. L'implementazione di questo metodo dipenderà dal metodo asincrono che si sta chiamando. Per altre informazioni, vedere [Chiamata di metodi asincroni.](calling-asynchronous-methods.md)
 
 
 ```C++
@@ -68,7 +68,7 @@ private:
 
 
 
-Il codice seguente illustra un'implementazione di esempio di una classe che deriva da `CAsyncCallback` :
+Nel codice seguente viene illustrata un'implementazione di esempio di una classe che deriva da `CAsyncCallback` :
 
 
 ```C++
@@ -135,7 +135,7 @@ public:
 
 
 
-Questo esempio segnala un evento all'interno del metodo [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) . Per una descrizione delle varie opzioni, vedere [chiamata di metodi asincroni](calling-asynchronous-methods.md).
+Questo esempio segnala un evento all'interno [**del metodo Invoke.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) Per una descrizione delle varie opzioni, vedere [Chiamata di metodi asincroni.](calling-asynchronous-methods.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

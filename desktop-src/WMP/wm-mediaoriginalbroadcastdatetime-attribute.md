@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/MediaOriginalBroadcastDateTime
-description: L'attributo WM/MediaOriginalBroadcastDateTime specifica la data e l'ora in cui una determinata Mostra è stata trasmessa per la prima volta.
+description: L'attributo WM/MediaOriginalBroadcastDateTime specifica la data e l'ora in cui una determinata trasmissione è stata trasmessa per la prima volta.
 ms.assetid: bf63679d-2840-4fa0-97a7-3cbc8a97ce90
 keywords:
-- Media Player Windows per gli attributi WM/MediaOriginalBroadcastDateTime
+- Attributo WM/MediaOriginalBroadcastDateTime Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da45ff8f3da29e7ddf51078d5f143ffb7db76f56
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0229e33567896d322b4c5b041056345cfc6833397996d3d1e393c9a1cd7bda58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122631"
 ---
 # <a name="wmmediaoriginalbroadcastdatetime-attribute"></a>Attributo WM/MediaOriginalBroadcastDateTime
 
-L'attributo **WM/MediaOriginalBroadcastDateTime** specifica la data e l'ora in cui una determinata Mostra è stata trasmessa per la prima volta.
+**L'attributo WM/MediaOriginalBroadcastDateTime** specifica la data e l'ora in cui una determinata presentazione è stata trasmessa per la prima volta.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -29,9 +29,9 @@ L'attributo **WM/MediaOriginalBroadcastDateTime** specifica la data e l'ora in c
 
 ## <a name="remarks"></a>Commenti
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMMediaOriginalBroadcastDateTime.
+La Windows Media Format SDK per questo attributo è g \_ wszWMMediaOriginalBroadcastDateTime.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

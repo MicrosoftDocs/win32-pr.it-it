@@ -1,19 +1,19 @@
 ---
-description: L' <templateInfo> elemento è un contenitore per l'elemento FolderType, che specifica un tipo di cartella per la visualizzazione dei risultati di una query su questa libreria. Questo elemento è facoltativo e non ha attributi.
+description: L'elemento è un contenitore per l'elemento folderType, che specifica un tipo di cartella per la visualizzazione dei risultati di <templateInfo> una query su questa libreria. Questo elemento è facoltativo e non ha attributi.
 ms.assetid: C555097A-E7B8-45ef-8CFA-19CFBC5E9D5A
 title: Elemento templateInfo (schema della libreria)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dae06a57a1b30407e2513e03f30ae6a4da13e849
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eda0c42e71db2e47335371b51d9dc819620e6b28dfac63ee9c0e2a640ccab0b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942091"
 ---
 # <a name="templateinfo-element-library-schema"></a>Elemento templateInfo (schema della libreria)
 
-L' <templateInfo> elemento è un contenitore per l'elemento [FolderType](schema-library-foldertype.md) , che specifica un tipo di cartella per la visualizzazione dei risultati di una query su questa libreria. Questo elemento è facoltativo e non ha attributi.
+L'elemento è un contenitore per l'elemento folderType, che specifica un tipo di cartella per la visualizzazione dei risultati di <templateInfo> una query su questa libreria. [](schema-library-foldertype.md) Questo elemento è facoltativo e non ha attributi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ L' <templateInfo> elemento è un contenitore per l'elemento [FolderType](schema-
 
 <dl> <dt>
 
-[Schema Descrizione libreria](library-schema-entry.md)
+[Schema di descrizione della libreria](library-schema-entry.md)
 </dt> <dt>
 
-[Cerca nello schema di descrizione del connettore](/previous-versions//dd743009(v=vs.85))
+[Schema di descrizione del connettore di ricerca](/previous-versions//dd743009(v=vs.85))
 </dt> </dl>
 
  

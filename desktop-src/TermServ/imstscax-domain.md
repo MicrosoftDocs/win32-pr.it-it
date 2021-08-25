@@ -1,30 +1,30 @@
 ---
-title: Proprietà di dominio IMsTscAx
-description: Specifica il dominio a cui l'utente corrente esegue l'accesso.
+title: IMsTscAx Domain - proprietà
+description: Specifica il dominio a cui accede l'utente corrente.
 ms.assetid: 5d9a2048-5f5d-43ca-a8b8-400dac7d7472
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto della proprietà di dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà del dominio
-- Servizi Desktop remoto di proprietà del dominio, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà del dominio
+- Proprietà di dominio Servizi Desktop remoto
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà Domain
+- Proprietà di dominio Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà Domain
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faf95c02de10fe8db38a53b75d4d20cf796020f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 498098b57ef5ecb19958f6ef0e082022a92f15bab7f1fbfc74bef62d928e8726
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125431"
 ---
-# <a name="imstscaxdomain-property"></a>IMsTscAx::D Proprietà ominio
+# <a name="imstscaxdomain-property"></a>Proprietà IMsTscAx::D omain
 
-Specifica il dominio a cui l'utente corrente esegue l'accesso.
+Specifica il dominio a cui accede l'utente corrente.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,17 +98,17 @@ Nuovo nome di dominio.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà del **dominio** è facoltativa. Se non è impostata, l'utente può scegliere un dominio quando viene visualizzata la finestra di dialogo di accesso di Windows durante la connessione.
+L'impostazione **della proprietà Domain** è facoltativa. Se non è impostato, l'utente può scegliere un dominio quando viene visualizzata la Windows di dialogo Accesso durante la connessione.
 
-Il metodo **get \_ Domain** alloca la memoria necessaria per il buffer a cui punta il parametro *pDomain* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Il **metodo get \_ Domain** alloca la memoria necessaria per il buffer a cui punta il *parametro pDomain.* Le chiamate alle applicazioni C/C++ devono liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i client Visual Basic e script.
 
-Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Restituisce **e ha \_ esito negativo** se viene chiamato quando il controllo è connesso. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la proprietà [**connessa**](imstscax-connected.md) .
+Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Restituisce **E \_ FAIL** se viene chiamato quando il controllo è connesso. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la [**proprietà Connected.**](imstscax-connected.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,7 +120,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

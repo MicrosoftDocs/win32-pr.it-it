@@ -11,16 +11,16 @@ api_name:
 - ProfileCreationType
 api_type:
 - Schema
-ms.openlocfilehash: 661306cf53b1ae4c7c9cd49a295afe5b84dabd67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddf3e70607cedbaed45da19651ec73736a54bfafab197e95d2cd634d8e3833f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959841"
 ---
 # <a name="profilecreationtype-mbnprofile-element"></a>Elemento ProfileCreationType (MBNProfile)
 
-L'elemento **ProfileCreationType (MBNProfile)** contiene informazioni sull'autore del profilo.
+**L'elemento ProfileCreationType (MBNProfile)** contiene informazioni sull'autore del profilo.
 
 Questo elemento può avere uno dei valori seguenti.
 
@@ -31,7 +31,7 @@ Questo elemento può avere uno dei valori seguenti.
 | "UserProvisioned"     | Questo profilo viene creato dalle informazioni fornite dall'utente del dispositivo.                                                     |
 | "AdminProvisioned"    | Questo profilo viene creato dagli amministratori IT e distribuito agli utenti.                                                     |
 | "OperatorProvisioned" | Questo profilo viene creato da un operatore di rete e distribuito agli utenti.                                                    |
-| "DeviceProvisioned"   | Questo profilo viene creato dal servizio Mobile Broadband usando le informazioni archiviate nel contesto con provisioning del dispositivo. |
+| "DeviceProvisioned"   | Questo profilo viene creato dal servizio Mobile Broadband usando le informazioni archiviate nel contesto di provisioning del dispositivo. |
 
 
 
@@ -62,7 +62,7 @@ Si tratta di un elemento facoltativo.
 </xs:element>
 ```
 
-L'elemento **ProfileCreationType** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento ProfileCreationType** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,7 +70,7 @@ L'elemento **ProfileCreationType** è definito dall'elemento [**MBNProfile**](sc
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 
@@ -85,7 +85,7 @@ L'elemento **ProfileCreationType** è definito dall'elemento [**MBNProfile**](sc
 [**MBNProfile**](schema-mbnprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**MBNProfile**](schema-mbnprofile-element.md)
