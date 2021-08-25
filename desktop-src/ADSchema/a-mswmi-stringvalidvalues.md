@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-stringValidValues
+title: Attributo ms-WMI-stringValidValues
 description: Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 ms.assetid: 2c75818d-f8db-47ed-b125-e1b800b1139a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-WMI-stringValidValues
-- msWMI-schema AD attributo StringValidValues
+- Attributo ms-WMI-stringValidValues Schema DI AD
+- Schema AD dell'attributo msWMI-StringValidValues
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d056214127925230265165aabfcf6ec6f1380d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2944ebddddf3323d202f540de46db1278a2386189ccbe45b00b810d6944cc6dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924201"
 ---
-# <a name="ms-wmi-stringvalidvalues-attribute"></a>attributo ms-WMI-stringValidValues
+# <a name="ms-wmi-stringvalidvalues-attribute"></a>Attributo ms-WMI-stringValidValues
 
 Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 
@@ -29,13 +29,13 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-stringValidValues                    |
-| LDAP-Display-Name | msWMI-StringValidValues                     |
+| CN                | ms-WMI-stringValidValues                    |
+| Ldap-Display-Name | msWMI-StringValidValues                     |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Aggiorna privilegio  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1637                     |
-| System-ID-GUID    | 37609d31-a2bf-4b58-8f53-2b64e57a076d        |
+| System-Id-Guid    | 37609d31-a2bf-4b58-8f53-2b64e57a076d        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Set di stringhe che appartengono a un oggetto parametro del set di stringhe.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

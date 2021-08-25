@@ -1,54 +1,54 @@
 ---
 title: Uso dell'input del mouse
-description: In questa sezione vengono illustrate le attività associate all'input del mouse.
+description: Questa sezione illustra le attività associate all'input del mouse.
 ms.assetid: b96d0046-a507-4733-bcf3-fcf757beec7f
 keywords:
-- input dell'utente, input del mouse
+- input utente, input del mouse
 - acquisizione dell'input dell'utente, input del mouse
 - input del mouse
 - cursori, input del mouse
 - cursore del mouse
-- fare doppio clic su elaborazione dei messaggi
+- elaborazione di messaggi con doppio clic
 - rotellina del mouse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b34f180aad6aec6120bf4e3ffa997eba13e760
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc38105da1fbbe3bee1be9ca280f1f5573dbb41ba4b7b6aa2013d9c600b8ad00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829971"
 ---
 # <a name="using-mouse-input"></a>Uso dell'input del mouse
 
-In questa sezione vengono illustrate le attività associate all'input del mouse.
+Questa sezione illustra le attività associate all'input del mouse.
 
 -   [Rilevamento del cursore del mouse](#tracking-the-mouse-cursor)
 -   [Disegno di linee con il mouse](#drawing-lines-with-the-mouse)
--   [Elaborazione di un messaggio di doppio clic](#processing-a-double-click-message)
+-   [Elaborazione di un messaggio con doppio clic](#processing-a-double-click-message)
 -   [Selezione di una riga di testo](#selecting-a-line-of-text)
--   [Utilizzo di una rotellina del mouse in un documento con oggetti incorporati](#using-a-mouse-wheel-in-a-document-with-embedded-objects)
--   [Recupero del numero di righe di scorrimento della rotellina del mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
+-   [Uso della rotellina del mouse in un documento con oggetti incorporati](#using-a-mouse-wheel-in-a-document-with-embedded-objects)
+-   [Recupero del numero di linee di scorrimento della rotellina del mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
 
 ## <a name="tracking-the-mouse-cursor"></a>Rilevamento del cursore del mouse
 
-Le applicazioni eseguono spesso attività che comportano il rilevamento della posizione del cursore del mouse. La maggior parte delle applicazioni di disegno, ad esempio, tiene traccia della posizione del cursore del mouse durante le operazioni di disegno, consentendo all'utente di disegnare nell'area client di una finestra trascinando il mouse. Anche le applicazioni di elaborazione di testi tengono traccia del cursore, consentendo all'utente di selezionare una parola o un blocco di testo facendo clic e trascinando il mouse.
+Le applicazioni spesso eseguono attività che comportano il rilevamento della posizione del cursore del mouse. La maggior parte delle applicazioni di disegno, ad esempio, tiene traccia della posizione del cursore del mouse durante le operazioni di disegno, consentendo all'utente di disegnare nell'area client di una finestra trascinando il mouse. Le applicazioni di elaborazione di testo rilevano anche il cursore, consentendo all'utente di selezionare una parola o un blocco di testo facendo clic e trascinando il mouse.
 
-Il rilevamento del cursore implica in genere l'elaborazione dei messaggi [**WM \_ LBUTTONDOWN**](wm-lbuttondown.md), [**WM \_ MOUSEMOVE**](wm-mousemove.md)e [**WM \_ LBUTTONUP**](wm-lbuttonup.md) . Una finestra determina quando iniziare a tenere traccia del cursore controllando la posizione del cursore fornita nel parametro *lParam* del messaggio **WM \_ LBUTTONDOWN** . Ad esempio, un'applicazione per l'elaborazione di testi inizia a tenere traccia del cursore solo se il messaggio **WM \_ LBUTTONDOWN** si è verificato quando il cursore si trovava in una riga di testo, ma non se fosse passato alla fine del documento.
+Il rilevamento del cursore comporta in genere l'elaborazione dei messaggi [**\_ WM LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MOUSEMOVE**](wm-mousemove.md)e [**WM \_ LBUTTONUP.**](wm-lbuttonup.md) Una finestra determina quando iniziare a tenere traccia del cursore controllando la posizione del cursore specificata nel *parametro lParam* del **messaggio WM \_ LBUTTONDOWN.** Ad esempio, un'applicazione di elaborazione di testo inizierebbe a tenere traccia del cursore solo se si verificava il messaggio **WM \_ LBUTTONDOWN** mentre il cursore si trovava su una riga di testo, ma non se era oltre la fine del documento.
 
-Una finestra tiene traccia della posizione del cursore elaborando il flusso di messaggi [**WM \_ MOUSEMOVE**](wm-mousemove.md) inviati alla finestra quando il mouse viene spostato. L'elaborazione del messaggio di **WM \_ MOUSEMOVE** implica in genere un'operazione di disegno o disegno ripetitiva nell'area client. Ad esempio, un'applicazione di disegno può ridisegnare una riga ripetutamente quando il mouse viene spostato. Una finestra usa il messaggio [**WM \_ LBUTTONUP**](wm-lbuttonup.md) come segnale per arrestare il rilevamento del cursore.
+Una finestra tiene traccia della posizione del cursore elaborando il flusso di messaggi [**WM \_ MOUSEMOVE**](wm-mousemove.md) inviati alla finestra durante lo spostamento del mouse. L'elaborazione **del \_ messaggio WM MOUSEMOVE** comporta in genere un'operazione ripetitiva di disegno o disegno nell'area client. Ad esempio, un'applicazione di disegno potrebbe ridisegnare ripetutamente una linea durante lo spostamento del mouse. Una finestra usa il [**messaggio \_ WM LBUTTONUP**](wm-lbuttonup.md) come segnale per interrompere il rilevamento del cursore.
 
-Inoltre, un'applicazione può chiamare la funzione [**TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) per fare in modo che il sistema invii altri messaggi utili per il rilevamento del cursore. Il sistema invia il messaggio [**WM \_ MOUSEHOVER**](wm-mousehover.md) quando il cursore passa sull'area client per un determinato periodo di tempo. Invia il messaggio [**di \_ MOUSELEAVE di WM**](wm-mouseleave.md) quando il cursore esce dall'area client. I messaggi [**WM \_ NCMOUSEHOVER**](wm-ncmousehover.md) e [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) sono i messaggi corrispondenti per le aree non client.
+Inoltre, un'applicazione può chiamare la [**funzione TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) per fare in modo che il sistema invii altri messaggi utili per tenere traccia del cursore. Il sistema invia il [**messaggio \_ WM MOUSEHOVER**](wm-mousehover.md) quando il cursore passa sull'area client per un determinato periodo di tempo. Invia il messaggio [**\_ WM MOUSELEAVE**](wm-mouseleave.md) quando il cursore esce dall'area client. I [**messaggi \_ WM NCMOUSEHOVER**](wm-ncmousehover.md) e [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) sono i messaggi corrispondenti per le aree non client.
 
 ## <a name="drawing-lines-with-the-mouse"></a>Disegno di linee con il mouse
 
-Nell'esempio riportato in questa sezione viene illustrato come tenere traccia del cursore del mouse. Contiene parti di una routine di finestra che consente all'utente di creare linee nell'area client di una finestra trascinando il mouse.
+Nell'esempio di questa sezione viene illustrato come tenere traccia del cursore del mouse. Contiene parti di una routine della finestra che consente all'utente di disegnare linee nell'area client di una finestra trascinando il mouse.
 
-Quando la routine della finestra riceve un messaggio [**WM \_ LBUTTONDOWN**](wm-lbuttondown.md) , acquisisce il mouse e salva le coordinate del cursore, usando le coordinate come punto iniziale della linea. USA anche la funzione [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) per limitare il cursore all'area client durante l'operazione di disegno della linea.
+Quando la routine della finestra riceve un messaggio [**\_ WM LBUTTONDOWN,**](wm-lbuttondown.md) acquisisce il mouse e salva le coordinate del cursore, usando le coordinate come punto iniziale della riga. Usa anche la funzione [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) per limitare il cursore all'area client durante l'operazione di disegno della linea.
 
-Durante il primo [**messaggio \_ WM di WM**](wm-mousemove.md) , la routine della finestra Disegna una linea dal punto iniziale alla posizione corrente del cursore. Durante i successivi messaggi di **WM \_ MOUSEMOVE** , la routine della finestra Cancella la riga precedente eseguendone il disegno con un colore della penna invertito. Quindi disegna una nuova riga dal punto iniziale alla nuova posizione del cursore.
+Durante il primo [**messaggio WM \_ MOUSEMOVE,**](wm-mousemove.md) la routine della finestra disegna una linea dal punto iniziale alla posizione corrente del cursore. Durante i **messaggi WM \_ MOUSEMOVE** successivi, la routine della finestra cancella la riga precedente disegnando su di essa un colore della penna invertito. Disegna quindi una nuova riga dal punto iniziale alla nuova posizione del cursore.
 
-Il messaggio [**WM \_ LBUTTONUP**](wm-lbuttonup.md) segnala la fine dell'operazione di disegno. La procedura finestra rilascia l'acquisizione del mouse e libera il mouse dall'area client.
+Il [**messaggio \_ WM LBUTTONUP**](wm-lbuttonup.md) segnala la fine dell'operazione di disegno. La routine della finestra rilascia il mouse capture e rilascia il mouse dall'area client.
 
 
 ```
@@ -169,9 +169,9 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="processing-a-double-click-message"></a>Elaborazione di un messaggio di doppio clic
+## <a name="processing-a-double-click-message"></a>Elaborazione di un messaggio con doppio clic
 
-Per ricevere i messaggi di doppio clic, è necessario che una finestra appartenga a una classe della finestra con lo stile della classe [**cs \_ DBLCLKS**](/windows/desktop/winmsg/about-window-classes) . Questo stile viene impostato durante la registrazione della classe della finestra, come illustrato nell'esempio seguente.
+Per ricevere messaggi con doppio clic, una finestra deve appartenere a una classe finestra con lo stile della classe [**\_ CS DBLCLKS.**](/windows/desktop/winmsg/about-window-classes) Questo stile viene impostato durante la registrazione della classe della finestra, come illustrato nell'esempio seguente.
 
 
 ```
@@ -196,11 +196,11 @@ BOOL InitApplication(HINSTANCE hInstance)
 
 
 
-Un messaggio di doppio clic è sempre preceduto da un messaggio di un pulsante. Per questo motivo, le applicazioni utilizzano in genere un messaggio di doppio clic per estendere un'attività iniziata durante un messaggio di un pulsante.
+Un messaggio con doppio clic è sempre preceduto da un messaggio di menu a discesa. Per questo motivo, le applicazioni usano in genere un messaggio con doppio clic per estendere un'attività avviata durante un messaggio di selezione del pulsante.
 
 ## <a name="selecting-a-line-of-text"></a>Selezione di una riga di testo
 
-L'esempio in questa sezione è tratto da una semplice applicazione di elaborazione di testo. Include codice che consente all'utente di impostare la posizione del punto di inserimento facendo clic in un punto qualsiasi di una riga di testo e di selezionare (evidenziare) una riga di testo facendo doppio clic in un punto qualsiasi della riga.
+L'esempio riportato in questa sezione è tratto da una semplice applicazione di elaborazione di testo. Include codice che consente all'utente di impostare la posizione del cursore facendo clic in un punto qualsiasi di una riga di testo e di selezionare (evidenziare) una riga di testo facendo doppio clic in un punto qualsiasi della riga.
 
 
 ```
@@ -439,29 +439,29 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="using-a-mouse-wheel-in-a-document-with-embedded-objects"></a>Utilizzo di una rotellina del mouse in un documento con oggetti incorporati
+## <a name="using-a-mouse-wheel-in-a-document-with-embedded-objects"></a>Uso della rotellina del mouse in un documento con oggetti incorporati
 
-In questo esempio si presuppone un documento di Microsoft Word con vari oggetti incorporati:
+In questo esempio si presuppone Microsoft Word documento con vari oggetti incorporati:
 
--   Un foglio di calcolo di Microsoft Excel
+-   Foglio di Microsoft Excel dati
 -   Controllo casella di riepilogo incorporato che scorre in risposta alla rotellina
 -   Controllo casella di testo incorporato che non risponde alla rotellina
 
-Il messaggio [MSH \_ MOUSEWHEEL](about-mouse-input.md) viene sempre inviato alla finestra principale in Microsoft Word. Questo vale anche se il foglio di calcolo incorporato è attivo. Nella tabella seguente viene illustrato il modo \_ in cui il messaggio MOUSEWHEEL MSH viene gestito in base allo stato attivo.
+Il [messaggio MSH \_ MOUSEWHEEL](about-mouse-input.md) viene sempre inviato alla finestra principale in Microsoft Word. Questo vale anche se il foglio di calcolo incorporato è attivo. La tabella seguente illustra come viene gestito il messaggio MSH \_ MOUSEWHEEL in base all'attenzione.
 
 
 
-| Lo stato attivo è on                | La gestione è la seguente:                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Lo stato attivo è attivo                | La gestione è la seguente                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Documento di Word              | Word scorre la finestra del documento.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Foglio di calcolo di Excel incorporato | Word Invia il messaggio a Excel. È necessario decidere se l'applicazione incorporata deve rispondere al messaggio o meno.                                                                                                                                                                                                                                                                                                                                                            |
-| Controllo incorporato           | Spetta all'applicazione inviare il messaggio a un controllo incorporato con lo stato attivo e controllare il codice restituito per verificare se il controllo è stato gestito. Se il controllo non lo gestisce, l'applicazione deve scorrere la finestra del documento. Se, ad esempio, l'utente ha fatto clic su una casella di riepilogo ed è stata quindi arrotolata, il controllo scorrerà in risposta a una rotazione della rotellina. Se l'utente ha fatto clic su una casella di testo e quindi ruotata la rotellina, l'intero documento scorrerebbe. |
+| Foglio di calcolo Excel incorporato | Word pubblica il messaggio in Excel. È necessario decidere se l'applicazione incorporata deve rispondere o meno al messaggio.                                                                                                                                                                                                                                                                                                                                                            |
+| Controllo incorporato           | L'applicazione deve inviare il messaggio a un controllo incorporato con lo stato attivo e controllare il codice restituito per verificare se il controllo lo ha gestito. Se il controllo non lo ha gestito, l'applicazione deve scorrere la finestra del documento. Ad esempio, se l'utente fa clic su una casella di riepilogo e quindi ruota la rotellina, tale controllo scorre in risposta a una rotazione della rotellina. Se l'utente ha fatto clic su una casella di testo e quindi ha ruotato la rotellina, l'intero documento scorrerebbe. |
 
 
 
- 
+ 
 
-Nell'esempio seguente viene illustrato come un'applicazione può gestire i due messaggi della rotellina.
+Nell'esempio seguente viene illustrato come un'applicazione può gestire i messaggi a due rotelle.
 
 
 ```
@@ -589,9 +589,9 @@ LONG APIENTRY MainWndProc(
 
 
 
-## <a name="retrieving-the-number-of-mouse-wheel-scroll-lines"></a>Recupero del numero di righe di scorrimento della rotellina del mouse
+## <a name="retrieving-the-number-of-mouse-wheel-scroll-lines"></a>Recupero del numero di linee di scorrimento della rotellina del mouse
 
-Il codice seguente consente a un'applicazione di recuperare il numero di righe di scorrimento usando la funzione [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) .
+Il codice seguente consente a un'applicazione di recuperare il numero di righe di scorrimento usando la [**funzione SystemParametersInfo.**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
 
 
 ```
@@ -652,6 +652,6 @@ UINT GetNumScrollLines(void)
 
 
 
- 
+ 
 
- 
+ 

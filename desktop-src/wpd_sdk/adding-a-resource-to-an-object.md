@@ -4,35 +4,35 @@ ms.assetid: 81476f50-5ea0-4e02-9e38-2b1dfcc32c4f
 title: Aggiunta di una risorsa a un oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 869b5cdcf172c4b8f27f7081bfce8e6f05073789
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34f95cd4b11182a8cc6bc3d249f2065744ba0f6d8efe1be204e47ad321429a88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930241"
 ---
 # <a name="adding-a-resource-to-an-object"></a>Aggiunta di una risorsa a un oggetto
 
-Oltre a trasferire gli oggetti in un dispositivo, è anche possibile aggiungere risorse agli oggetti. Ad esempio, un'applicazione potrebbe aggiungere una foto alle informazioni esistenti per un determinato contatto.
+Oltre a trasferire oggetti in un dispositivo, è anche possibile aggiungere risorse agli oggetti. Ad esempio, un'applicazione può aggiungere una foto alle informazioni esistenti per un determinato contatto.
 
-Le risorse vengono aggiunte utilizzando le interfacce descritte nella tabella seguente.
+Le risorse vengono aggiunte usando le interfacce descritte nella tabella seguente.
 
 
 
 | Interfaccia                                                              | Descrizione                                                       |
 |------------------------------------------------------------------------|-------------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)     | Fornisce l'accesso ai metodi specifici del contenuto.                  |
-| [**Interfaccia IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) | Usato quando si scrivono i dati e le proprietà della risorsa nel dispositivo. |
-| [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)       | Utilizzato per scrivere le proprietà che descrivono la risorsa.              |
+| [**Interfaccia IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) | Usato durante la scrittura delle proprietà e dei dati della risorsa nel dispositivo. |
+| [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)       | Usato per scrivere proprietà che descrivono la risorsa.              |
 | Interfaccia IStream                                                      | Usato per semplificare la scrittura della risorsa nel dispositivo.              |
 
 
 
  
 
-La funzione CreateContactPhotoResourceOnDevice nel modulo ContentTransfer. cpp dell'applicazione di esempio illustra come un'applicazione può aggiungere una risorsa foto a un oggetto Contact. Questa funzione richiede all'utente l'identificatore di oggetto del contatto sul dispositivo, a cui verrà aggiunta la risorsa foto. Viene quindi visualizzata una finestra di dialogo FileOpen che consente all'utente di selezionare l'immagine da aggiungere. Una volta raccolti i dati, l'applicazione scrive la risorsa nel dispositivo.
+La funzione CreateContactPhotoResourceOnDevice nel modulo ContentTransfer.cpp dell'applicazione di esempio illustra come un'applicazione può aggiungere una risorsa foto a un oggetto contatto. Questa funzione richiede all'utente l'identificatore di oggetto del contatto nel dispositivo a cui verrà aggiunta la risorsa foto. Viene quindi visualizzata una finestra di dialogo FileApri in modo che l'utente possa selezionare l'immagine da aggiungere. Dopo aver raccolto questi dati, l'applicazione scrive la risorsa nel dispositivo.
 
-La prima attività eseguita dalla funzione CreateContactPhotoResourceOnDevice consiste nel richiedere all'utente di immettere un identificatore di oggetto per il contatto a cui verrà aggiunta la foto.
+La prima attività eseguita dalla funzione CreateContactPhotoResourceOnDevice è richiedere all'utente di immettere un identificatore di oggetto per il contatto a cui verrà aggiunta la foto.
 
 
 ```C++
@@ -55,7 +55,7 @@ if (FAILED(hr))
 
 
 
-Il passaggio successivo è il recupero di un oggetto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) , che a sua volta viene usato per ottenere un oggetto [**IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) . (L'applicazione usa quest'ultimo oggetto per creare e scrivere la nuova risorsa).
+Il passaggio successivo consiste nel recupero di [**un oggetto IPortableDeviceContent,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) che a sua volta viene usato per ottenere un [**oggetto IPortableDeviceResources.**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) L'applicazione usa quest'ultimo oggetto per creare e scrivere la nuova risorsa.
 
 
 ```C++
@@ -93,7 +93,7 @@ if (SUCCEEDED(hr))
 
 
 
-Successivamente, nell'esempio viene visualizzata la finestra di dialogo **FileOpen** , che consente all'utente di specificare il nome del file di immagine che contiene la foto che desidera aggiungere alle informazioni di contatto.
+Successivamente, nell'esempio viene visualizzata la finestra di dialogo **FileApri,** che consente all'utente di specificare il nome del file di immagine che contiene la foto da aggiungere alle informazioni di contatto.
 
 
 ```C++
@@ -129,10 +129,10 @@ if (SUCCEEDED(hr))
 
 
 
-Quando l'esempio include un oggetto [**IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) e il nome del file di immagine, esegue le operazioni seguenti per preparare effettivamente il trasferimento dei dati al dispositivo.
+Dopo che l'esempio ha un [**oggetto IPortableDeviceResources**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceresources) e il nome del file di immagine, esegue le operazioni seguenti per preparare il trasferimento dei dati al dispositivo.
 
-1.  Apre un oggetto IStream sul file selezionato per le operazioni di lettura.
-2.  Viene creato un oggetto [**IPortableDeviceValues**](iportabledevicevalues.md) , che conterrà informazioni come la dimensione e il formato dell'immagine.
+1.  Apre un oggetto IStream nel file selezionato per le operazioni di lettura.
+2.  Crea un [**oggetto IPortableDeviceValues,**](iportabledevicevalues.md) che conterrà informazioni quali le dimensioni e il formato dell'immagine.
 
 
 ```C++
@@ -222,11 +222,11 @@ if (SUCCEEDED(hr))
 
 
 
-Dopo aver preparato gli oggetti IStream e [**IPortableDeviceValues**](iportabledevicevalues.md) per l'operazione di scrittura, l'esempio trasferisce l'immagine al dispositivo. L'esempio completa il trasferimento in tre passaggi, come indicato di seguito:
+Dopo aver preparato gli oggetti IStream e [**IPortableDeviceValues per**](iportabledevicevalues.md) l'operazione di scrittura, l'esempio trasferisce l'immagine al dispositivo. L'esempio completa il trasferimento in tre passaggi, come indicato di seguito:
 
-1.  Crea la risorsa nel dispositivo chiamando il metodo [**IPortableDeviceResources:: CreateResource**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-createresource) .
+1.  Crea la risorsa nel dispositivo chiamando il [**metodo IPortableDeviceResources::CreateResource.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-createresource)
 2.  Chiama una funzione helper StreamCopy per copiare il flusso di origine nel flusso di destinazione.
-3.  Informa il driver di dispositivo che il trasferimento è stato completato chiamando il metodo IPortableDeviceDataStream:: commit.
+3.  Informa il driver di dispositivo che il trasferimento è stato completato chiamando il metodo IPortableDeviceDataStream::Commit.
 
 
 ```C++

@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 9aa6eb20-de39-41f7-a17e-183f4088f972
-ms.openlocfilehash: 7f219e5fd62fb4f85fd206501e6a53ac3927195a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9e5eeb2b99455d81bae36f1c5f26ed38126122bb58a5b8964a47cfb205f71ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942901"
 ---
 # <a name="imultimonitordockingsiterequestmonitor-method"></a>Metodo IMultiMonitorDockingSite::RequestMonitor
 
@@ -39,7 +39,7 @@ HRESULT RequestMonitor(
 
 <dl> <dt>
 
-*punkSrc* \[ Pollici\]
+*RCSrc* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
@@ -53,7 +53,7 @@ Puntatore all'oggetto che implementa [**l'interfaccia IDockingWindow.**](/window
 
 Tipo: **HMONITOR \***
 
-Puntatore all'handle del monitoraggio predefinito.
+Puntatore all'handle del monitor predefinito.
 
 </dd> </dl>
 
@@ -69,8 +69,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/> |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                   |
 
 
 

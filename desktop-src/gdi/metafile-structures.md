@@ -4,12 +4,12 @@ ms.assetid: 6a509ed5-cea3-4318-ad17-9d20425a6e80
 title: Strutture di metafile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33dfad6180b0b30c6bcb3786ec3870493c5b9839
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370fa42f935a99183e9132c652368d102af83bc4ea908e4ae9733e346ae41cb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965631"
 ---
 # <a name="metafile-structures"></a>Strutture di metafile
 
@@ -27,7 +27,7 @@ Le strutture seguenti vengono usate con i metafile in formato avanzato.
 [**RECTL**](/previous-versions//dd162907(v=vs.85))  
 </dl> 
 
-Si noti che la struttura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) viene utilizzata come primo membro delle strutture rimanenti.  
+Si noti che la struttura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) viene usata come primo membro delle strutture rimanenti.  
 
 <dl> 
 
@@ -146,9 +146,9 @@ Si noti che la struttura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) vien
 
 ## <a name="obsolete-structures"></a>Strutture obsolete
 
-Le strutture seguenti sono obsolete. Sono forniti per la compatibilità con i file di formato di Windows:
+Le strutture seguenti sono obsolete. Sono disponibili per la compatibilità con Windows metafile in formato predefinito:
 
-MetaRecord [**MetaHeader**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[](/windows/win32/api/wingdi/ns-wingdi-metarecord)
+[**METARECORD**](/windows/win32/api/wingdi/ns-wingdi-metaheader)[**METAHEADER**](/windows/win32/api/wingdi/ns-wingdi-metarecord)
 
  
 

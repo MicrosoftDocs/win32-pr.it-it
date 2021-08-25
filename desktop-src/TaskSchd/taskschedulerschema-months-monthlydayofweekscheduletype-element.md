@@ -1,9 +1,9 @@
 ---
-title: Months (monthlyDayOfWeekScheduleType)-elemento
-description: Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile del giorno della settimana.
+title: Elemento Months (monthlyDayOfWeekScheduleType)
+description: Specifica i mesi dell'anno durante i quali viene eseguita l'attività per una pianificazione mensile del giorno della settimana.
 ms.assetid: 420fa7f4-7106-483e-9b3b-d1ba51f25222
 keywords:
-- Utilità di pianificazione dell'elemento months
+- Mesi - elemento Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76f13a5823e0154519dbdb093dd03ea36bbe77b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a963032a2d33f13158af249f2b867037cf50082be005efa579148031c8e30585
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959601"
 ---
-# <a name="months-monthlydayofweekscheduletype-element"></a>Months (monthlyDayOfWeekScheduleType)-elemento
+# <a name="months-monthlydayofweekscheduletype-element"></a>Elemento Months (monthlyDayOfWeekScheduleType)
 
-Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile del giorno della settimana.
+Specifica i mesi dell'anno durante i quali viene eseguita l'attività per una pianificazione mensile del giorno della settimana.
 
 ``` syntax
 <xs:element name="Months"
@@ -30,7 +30,7 @@ Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pi
  />
 ```
 
-L'elemento **months** viene definito dal tipo complesso [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+**L'elemento Months** è definito dal [**tipo complesso monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -48,32 +48,32 @@ L'elemento **months** viene definito dal tipo complesso [**monthlyDayOfWeekSched
 
 | Elemento                                                               | Tipo | Descrizione                                           |
 |-----------------------------------------------------------------------|------|-------------------------------------------------------|
-| [**Aprile**](taskschedulerschema-april-monthstype-element.md)         |      | Specifica che l'attività viene eseguita nell'aprile.<br/>     |
-| [**Agosto**](taskschedulerschema-august-monthstype-element.md)       |      | Specifica che l'attività viene eseguita nell'agosto.<br/>    |
-| [**Dicembre**](taskschedulerschema-december-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel dicembre.<br/>  |
-| [**Febbraio**](taskschedulerschema-february-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel febbraio.<br/>  |
-| [**Gennaio**](taskschedulerschema-january-monthstype-element.md)     |      | Specifica che l'attività viene eseguita nel gennaio.<br/>   |
-| [**Luglio**](taskschedulerschema-july-monthstype-element.md)           |      | Specifica che l'attività viene eseguita nel luglio.<br/>      |
-| [**Giugno**](taskschedulerschema-june-monthstype-element.md)           |      | Specifica che l'attività viene eseguita in giugno.<br/>      |
-| [**Marzo**](taskschedulerschema-march-monthstype-element.md)         |      | Specifica che l'attività viene eseguita nel marzo.<br/>     |
-| [**Mag**](taskschedulerschema-may-monthstype-element.md)             |      | Specifica che l'attività viene eseguita in May.<br/>       |
-| [**Novembre**](taskschedulerschema-november-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel novembre.<br/>  |
-| [**Ottobre**](taskschedulerschema-october-monthstype-element.md)     |      | Specifica che l'attività viene eseguita nel ottobre.<br/>   |
-| [**Settembre**](taskschedulerschema-september-monthstype-element.md) |      | Specifica che l'attività viene eseguita nel settembre.<br/> |
+| [**Aprile**](taskschedulerschema-april-monthstype-element.md)         |      | Specifica che l'attività viene eseguita nel mese di aprile.<br/>     |
+| [**Agosto**](taskschedulerschema-august-monthstype-element.md)       |      | Specifica che l'attività viene eseguita nel mese di agosto.<br/>    |
+| [**Dicembre**](taskschedulerschema-december-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel mese di dicembre.<br/>  |
+| [**Febbraio**](taskschedulerschema-february-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel mese di febbraio.<br/>  |
+| [**Gennaio**](taskschedulerschema-january-monthstype-element.md)     |      | Specifica che l'attività viene eseguita nel mese di gennaio.<br/>   |
+| [**Luglio**](taskschedulerschema-july-monthstype-element.md)           |      | Specifica che l'attività viene eseguita nel mese di luglio.<br/>      |
+| [**Giugno**](taskschedulerschema-june-monthstype-element.md)           |      | Specifica che l'attività viene eseguita nel mese di giugno.<br/>      |
+| [**Marzo**](taskschedulerschema-march-monthstype-element.md)         |      | Specifica che l'attività viene eseguita nel mese di marzo.<br/>     |
+| [**Maggio**](taskschedulerschema-may-monthstype-element.md)             |      | Specifica che l'attività viene eseguita nel maggio.<br/>       |
+| [**Novembre**](taskschedulerschema-november-monthstype-element.md)   |      | Specifica che l'attività viene eseguita nel mese di novembre.<br/>  |
+| [**Ottobre**](taskschedulerschema-october-monthstype-element.md)     |      | Specifica che l'attività viene eseguita nel mese di ottobre.<br/>   |
+| [**Settembre**](taskschedulerschema-september-monthstype-element.md) |      | Specifica che l'attività viene eseguita nel mese di settembre.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, i mesi di un anno per una pianificazione giornaliera giornaliera della settimana vengono specificati utilizzando la proprietà [**MonthlyDOWTrigger. MonthsOfYear**](monthlydowtrigger-monthsofyear.md) .
+Per lo sviluppo di script, i mesi di un anno per una pianificazione mensile del giorno della settimana vengono specificati usando la [**proprietà MonthlyDOWTrigger.MonthsOfYear.**](monthlydowtrigger-monthsofyear.md)
 
-Per lo sviluppo in C++, i mesi di un anno per una pianificazione giornaliera giornaliera della settimana vengono specificati utilizzando la proprietà [**IMonthlyDOWTrigger:: MonthsOfYear**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_monthsofyear) .
+Per lo sviluppo in C++, i mesi di un anno per una pianificazione mensile del giorno della settimana vengono specificati usando la proprietà [**IMonthlyDOWTrigger::MonthsOfYear.**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_monthsofyear)
 
-Gli elementi figlio precedenti sono definiti dal tipo complesso [**monthsType**](taskschedulerschema-monthstype-complextype.md) .
+Gli elementi figlio precedenti sono definiti dal [**tipo complesso monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un calendario mensile del giorno della settimana che avvia l'attività il lunedì della prima settimana per ogni mese dell'anno.
+Nel codice XML seguente viene definito un calendario mensile del giorno della settimana che avvia l'attività il lunedì della prima settimana per ogni mese dell'anno.
 
 
 ```XML
@@ -109,8 +109,8 @@ Il codice XML seguente definisce un calendario mensile del giorno della settiman
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
 
 
 
@@ -118,7 +118,7 @@ Il codice XML seguente definisce un calendario mensile del giorno della settiman
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

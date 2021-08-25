@@ -1,5 +1,5 @@
 ---
-description: 'SystemConfig_V0_LogDisk: questa classe è la classe del tipo di evento per gli eventi di configurazione del disco logico.'
+description: 'SystemConfig_V0_LogDisk classe: questa classe è la classe del tipo di evento per gli eventi di configurazione del disco logico.'
 ms.assetid: 3fa5f2e4-f6fa-4c10-9634-04908783cd28
 title: SystemConfig_V0_LogDisk classe
 ms.topic: reference
@@ -26,12 +26,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: eb0ad959d637a38a03b77bd8d7a812ff608ddc04
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 42b17cf31dcb3830cd35f046a7fcbad1858f8ae4f728fc1417339962a4be4441
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927521"
 ---
 # <a name="systemconfig_v0_logdisk-class"></a>Classe SystemConfig \_ V0 \_ LogDisk
 
@@ -64,7 +64,7 @@ class SystemConfig_V0_LogDisk : SystemConfig_V0
 
 ## <a name="members"></a>Members
 
-La **classe SystemConfig \_ V0 \_ LogDisk** include questi tipi di membri:
+La **classe SystemConfig \_ V0 \_ LogDisk** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -86,7 +86,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (10)
 </dt> </dl>
 
-Numero di byte in ogni settore per l'unità disco fisica.
+Numero di byte in ogni settore per l'unità disco fisico.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Tipo di accesso: sola lettura
 Qualificatori: **WmiDataId** (3)
 </dt> </dl>
 
-Numero di indice del disco contenente la partizione.
+Numero di indice del disco contenente questa partizione.
 
 </dd> <dt>
 
@@ -246,7 +246,7 @@ Numero di settori nel volume.
 
 </dd> <dt>
 
-**Size**
+**Dimensioni**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
@@ -317,7 +317,7 @@ Riservato.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

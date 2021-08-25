@@ -1,7 +1,7 @@
 ---
-description: Il metodo MakeIdentityPalette tenta di creare un &\# 0034; Identity palette, &\# 0034; definito come uno che esegue il mapping direttamente alla tavolozza selezionata nel dispositivo di visualizzazione.
+description: Il metodo MakeIdentityPalette tenta di creare una tavolozza delle identità \# &0034;&0034; definita come mappata direttamente alla tavolozza selezionata nel dispositivo di \# visualizzazione.
 ms.assetid: 08a0cf67-f43f-44c0-bfb3-6527fd434ea4
-title: Metodo CImagePalette. MakeIdentityPalette (Winutil. h)
+title: Metodo CImagePalette.MakeIdentityPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8e105652108e74907375408f0bd8946c69194202
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb6e9a4e2c6adc411b7b043e35dc6dacf45dbb6a6ee4cf326a1c1953c559c16f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916131"
 ---
-# <a name="cimagepalettemakeidentitypalette-method"></a>CImagePalette. MakeIdentityPalette, metodo
+# <a name="cimagepalettemakeidentitypalette-method"></a>Metodo CImagePalette.MakeIdentityPalette
 
-Il `MakeIdentityPalette` metodo tenta di creare una "tavolozza di identità", definita come uno che esegue il mapping direttamente alla tavolozza selezionata nel dispositivo di visualizzazione.
+Il metodo tenta di creare una "tavolozza delle identità", definita come una tavolozza mappata direttamente alla `MakeIdentityPalette` tavolozza selezionata nel dispositivo di visualizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT MakeIdentityPalette(
 
 <dl> <dt>
 
-*Pente* 
+*pEntry* 
 </dt> <dd>
 
 Puntatore a una matrice di voci della tavolozza.
@@ -54,26 +54,26 @@ Puntatore a una matrice di voci della tavolozza.
 *iColours* 
 </dt> <dd>
 
-Numero di voci della tavolozza in *pente*.
+Numero di voci della tavolozza in *pEntry.*
 
 </dd> <dt>
 
 *szDevice* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome del dispositivo di visualizzazione, come restituito dalla funzione **ENUMDISPLAYDEVICES** GDI. Per usare il dispositivo di visualizzazione principale, impostare questo parametro su **null**.
+Puntatore a una stringa che contiene il nome del dispositivo di visualizzazione, come restituito dalla funzione GDI **EnumDisplayDevices.** Per usare il dispositivo di visualizzazione principale, impostare questo parametro su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se l'operazione ha esito positivo o \_ false se non è riuscita.
+Restituisce S \_ OK in caso di esito positivo o S FALSE in caso di esito \_ negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo confronta le voci riservate nella tavolozza di sistema con le voci corrispondenti nell' *Array.* Se corrispondono esattamente, il metodo imposta il flag PC \_ nocollapse nelle voci della tavolozza rimanenti (non riservate) in *pente*. Questo flag impedisce a GDI di provare a eseguire il mapping delle voci della tavolozza logica alle voci della tavolozza.
+Questo metodo confronta le voci riservate nella tavolozza di sistema con le voci corrispondenti nella *matrice pEntry.* Se corrispondono esattamente, il metodo imposta il flag PC NOCOLLAPSE nelle voci della \_ tavolozza rimanenti (non riservate) in *pEntry*. Questo flag impedisce a GDI di eseguire il mapping delle voci della tavolozza logica alle voci della tavolozza di sistema.
 
-Il metodo [**CImagePalette:: MakePalette**](cimagepalette-makepalette.md) chiama questo metodo.
+Il [**metodo CImagePalette::MakePalette**](cimagepalette-makepalette.md) chiama questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Il metodo [**CImagePalette:: MakePalette**](cimagepalette-makepalette.md) chiama
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Definisce le costanti che descrivono la modalità di riempimento.
+description: Definisce costanti che descrivono la modalità di riempimento.
 ms.assetid: be835432-e8d5-4afb-a810-2dac25bdc9dc
-title: Enumerazione D3DFILLMODE (D3D9Types. h)
+title: Enumerazione D3DFILLMODE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 33cf03258933055aa18aecb42fffe4d8f33b1e51
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e92d91c13718462487eb3dac07ba1d5fc61a2d428bf610dd9575b080d375676d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857451"
 ---
 # <a name="d3dfillmode-enumeration"></a>Enumerazione D3DFILLMODE
 
-Definisce le costanti che descrivono la modalità di riempimento.
+Definisce costanti che descrivono la modalità di riempimento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ typedef enum D3DFILLMODE {
 
 <dl> <dt>
 
-<span id="D3DFILL_POINT"></span><span id="d3dfill_point"></span>**Punto di D3DFILL \_**
+<span id="D3DFILL_POINT"></span><span id="d3dfill_point"></span>**PUNTO D3DFILL \_**
 </dt> <dd>
 
 Punti di riempimento.
 
 </dd> <dt>
 
-<span id="D3DFILL_WIREFRAME"></span><span id="d3dfill_wireframe"></span>**\_Wireframe D3DFILL**
+<span id="D3DFILL_WIREFRAME"></span><span id="d3dfill_wireframe"></span>**D3DFILL \_ WIREFRAME**
 </dt> <dd>
 
-Inserire i wireframe.
+Riempire wireframe.
 
 </dd> <dt>
 
-<span id="D3DFILL_SOLID"></span><span id="d3dfill_solid"></span>**D3DFILL \_ Solid**
+<span id="D3DFILL_SOLID"></span><span id="d3dfill_solid"></span>**D3DFILL \_ SOLID**
 </dt> <dd>
 
 Riempire i solidi.
 
 </dd> <dt>
 
-<span id="D3DFILL_FORCE_DWORD"></span><span id="d3dfill_force_dword"></span>**D3DFILL \_ Force \_ DWORD**
+<span id="D3DFILL_FORCE_DWORD"></span><span id="d3dfill_force_dword"></span>**D3DFILL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering FillMode di D3DRS.
+I valori in questo tipo enumerato vengono usati dallo stato di rendering \_ FILLMODE D3DRS.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering Fill
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: Oggetti DirectShow
+description: DirectShow Oggetti
 ms.assetid: 4b5068b5-4af9-40cb-b5a2-c9761ef13c55
-title: Oggetti DirectShow
+title: DirectShow Oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 522bb6b8191a732114d3ea123e1cad4b075d0114
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b3cefa1b42f05e941e2d3b218dbbd9c2ff3d63f12fa0f70ef0c0d675c7c98edf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966431"
 ---
-# <a name="directshow-objects"></a>Oggetti DirectShow
+# <a name="directshow-objects"></a>DirectShow Oggetti
 
-Questo argomento contiene le voci di riferimento per gli oggetti COM di base inclusi con DirectShow, tranne i filtri. Per un elenco dei filtri inclusi con DirectShow, vedere [filtri DirectShow](directshow-filters.md).
+Questo argomento contiene voci di riferimento per gli oggetti COM principali inclusi in DirectShow, oltre ai filtri. Per un elenco dei filtri inclusi in DirectShow, vedere DirectShow [Filtri](directshow-filters.md).
 
 
 
 | Oggetto                                                   | Descrizione                                                      |
 |----------------------------------------------------------|------------------------------------------------------------------|
-| [Acquisisci generatore grafico](capture-graph-builder.md)       | Compila i grafici di acquisizione video.                                     |
-| [Generatore di grafici DVD](dvd-graph-builder.md)               | Compila i grafici di riproduzione DVD.                                      |
-| [Gestione grafico filtro](filter-graph-manager.md)         | Compila e controlla i grafici filtro.                               |
-| [Mapper di filtri](filter-mapper.md)                       | Cerca i filtri registrati nel registro di sistema.                    |
-| [Elenco proprietà supporti](media-property-bag.md)             | Imposta o recupera i blocchi INFO e DISP nei file AVI.             |
+| [Acquisisci Graph Builder](capture-graph-builder.md)       | Crea grafici di acquisizione video.                                     |
+| [Generatore Graph DVD](dvd-graph-builder.md)               | Compila grafici di riproduzione DVD.                                      |
+| [Filtrare Graph Manager](filter-graph-manager.md)         | Compilazioni e controlli filtrano i grafici.                               |
+| [Filtro mapper](filter-mapper.md)                       | Cerca filtri registrati nel Registro di sistema.                    |
+| [Contenitore delle proprietà multimediali](media-property-bag.md)             | Imposta o recupera blocchi INFO e DISP nei file AVI.             |
 | [Allocatore di memoria](memory-allocator.md)                 | Alloca i buffer per gli esempi di supporti.                             |
-| [Clock di riferimento di sistema](system-reference-clock.md)     | Implementa un orologio di riferimento.                                    |
+| [Clock di riferimento di sistema](system-reference-clock.md)     | Implementa un clock di riferimento.                                    |
 | [Enumeratore dispositivo di sistema](system-device-enumerator.md) | Enumera i filtri e i dispositivi hardware installati nel sistema. |
 
 
@@ -36,7 +36,7 @@ Questo argomento contiene le voci di riferimento per gli oggetti COM di base inc
 
 <dl> <dt>
 
-[Riferimento a DirectShow](directshow-reference.md)
+[DirectShow Riferimento](directshow-reference.md)
 </dt> </dl>
 
  

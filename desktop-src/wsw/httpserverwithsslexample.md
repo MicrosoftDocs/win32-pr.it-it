@@ -1,29 +1,29 @@
 ---
 title: HttpServerWithSslExample
-description: Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi, con la sicurezza del trasporto SSL.
+description: In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi, con sicurezza del trasporto SSL.
 ms.assetid: 627b6ba8-3bb2-41f3-a456-a811eb3b8e3d
 keywords:
-- HttpServerWithSslExample native-servizi Web
+- HttpServerWithSslExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59a188a4d0f6ce43d1060f7373057743e480f8f5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 877a4418a45887ed91deb94c9f11c506f6eef310fad159e9e423fba8371a7936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927285"
 ---
 # <a name="httpserverwithsslexample"></a>HttpServerWithSslExample
 
-Questo esempio mostra un server TCP che accetta un canale e riceve e risponde ai messaggi, con la sicurezza del trasporto SSL.
+In questo esempio viene illustrato un server TCP che accetta un canale e riceve e risponde ai messaggi, con sicurezza del trasporto SSL.
 
--   [HttpServerWithSsl. cpp](#httpserverwithsslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpServerWithSsl.cpp](#httpserverwithsslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpserverwithsslcpp"></a>HttpServerWithSsl. cpp
+## <a name="httpserverwithsslcpp"></a>HttpServerWithSsl.cpp
 
 
 ```C++
@@ -483,7 +483,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -623,9 +623,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

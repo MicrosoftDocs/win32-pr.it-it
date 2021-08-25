@@ -1,7 +1,7 @@
 ---
 description: Contiene la destinazione dell'oggetto collegamento.
 ms.assetid: 26da562b-a1d6-4150-9d9a-05b11e3972d9
-title: Proprietà IShellLinkDual2. target (shldisp. h)
+title: Proprietà IShellLinkDual2.Target (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8e5f29623cf94ef5f17f06e52337928c0c345e42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3319e84abc32887d7cf7a9126ea9ae0f57b9607f937256b8377030fdd9dd75cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884321"
 ---
-# <a name="ishelllinkdual2target-property"></a>Proprietà IShellLinkDual2. target
+# <a name="ishelllinkdual2target-property"></a>Proprietà IShellLinkDual2.Target
 
 Contiene la destinazione dell'oggetto collegamento.
 
@@ -37,13 +37,13 @@ Target = IShellLinkDual2.Target
 
 ## <a name="property-value"></a>Valore proprietà
 
-Espressione di oggetto che restituisce l'oggetto [**FolderItem**](folderitem.md) della destinazione.
+Espressione dell'oggetto che restituisce l'oggetto [**FolderItem della**](folderitem.md) destinazione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzata la **destinazione** per recuperare la destinazione di un collegamento a Internet Explorer. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente usa **Target** per recuperare la destinazione di un collegamento Internet Explorer. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -83,7 +83,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -174,11 +174,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

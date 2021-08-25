@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Param. PrereadIOMax'
-title: Campo Windows8Param. PrereadIOMax (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: Campo Windows8Param.PrereadIOMax'
+title: Campo Windows8Param.PrereadIOMax (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: PrereadIOMax field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.PrereadIOMax
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.prereadiomax(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd0d9726c3cd5986b731042ae8e89c5d4bdbfcc6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c987d645803a3e975563371bbe7022b2bee64c01dd9414f9c23845b1470edb71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966791"
 ---
-# <a name="windows8paramprereadiomax-field"></a>Campo Windows8Param. PrereadIOMax
+# <a name="windows8paramprereadiomax-field"></a>Campo Windows8Param.PrereadIOMax
 
-Numero massimo di operazioni di I/O inviate per uno scopo specifico.
+Numero massimo di operazioni di I/O inviati per uno scopo specifico.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param PrereadIOMax
 
 [Membri di Windows8Param](./windows8param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

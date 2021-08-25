@@ -1,23 +1,23 @@
 ---
-description: L'ombreggiatura uniforme è un metodo di ombreggiatura di un'area con una sfumatura di colore.
+description: L'ombreggiatura smussata è un metodo di ombreggiatura di un'area con una sfumatura di colore.
 ms.assetid: 94f26d15-fb76-47ec-b805-f04975d41b43
-title: Ombreggiatura uniforme
+title: Ombreggiatura smussata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b73738c03147083099a5070e61fe21ca5cac76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd5bfa54fef8d0a6810a3230e88e4e3144f7ecf4b62f7313f5daf4213e948c00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965201"
 ---
-# <a name="smooth-shading"></a>Ombreggiatura uniforme
+# <a name="smooth-shading"></a>Ombreggiatura smussata
 
-L' *ombreggiatura uniforme* è un metodo di ombreggiatura di un'area con una sfumatura di colore. L'inclusione di informazioni sui colori, insieme ai limiti della primitiva di disegno, specifica la sfumatura di colore. GDI esegue l'interpolazione lineare del colore dell'interno della primitiva passata sugli endpoint dei colori. Le informazioni sui vertici e sui colori sono incluse con le informazioni sulla posizione nella struttura [**trivertice**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) .
+*L'ombreggiatura smussata* è un metodo di ombreggiatura di un'area con una sfumatura di colore. L'inclusione delle informazioni sul colore, insieme ai limiti della primitiva di disegno, specifica la sfumatura di colore. GDI interpola in modo lineare il colore dell'oggetto all'interno della primitiva passata sugli endpoint del colore. Le informazioni sul colore e sui vertici sono incluse nelle informazioni sulla posizione nella [**struttura TRIVERTEX.**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex)
 
-Utilizzare la funzione [**GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) per riempire un triangolo o una struttura Rectangle. Per riempire un triangolo con ombreggiatura uniforme, chiamare **GradientFill** con i tre endpoint triangolari. Per riempire un rettangolo con ombreggiatura uniforme, chiamare **GradientFill** con le coordinate del rettangolo superiore sinistro e inferiore destro. **GradientFill** fa riferimento alle strutture [**trivertice**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex), rettangolo [**\_ sfumato**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_rect)e [**\_ triangolo sfumatura**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle) .
+Usare la [**funzione GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) per riempire una struttura triangolare o rettangolare. Per riempire un triangolo con ombreggiatura uniforme, chiama **GradientFill** con i tre endpoint del triangolo. Per riempire un rettangolo con ombreggiatura smussata, chiama **GradientFill** con le coordinate del rettangolo in alto a sinistra e in basso a destra. **GradientFill** fa riferimento [**alle strutture TRIVERTEX,**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) [**GRADIENT \_ RECT**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_rect)e [**GRADIENT \_ TRIANGLE.**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle)
 
-Per un esempio, vedere [disegno di un triangolo ombreggiato](drawing-a-shaded-triangle.md).
+Per un esempio, vedere [Disegno di un triangolo ombreggiato.](drawing-a-shaded-triangle.md)
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura MPTHREAT_INFO (MpClient. h)
+title: MPTHREAT_INFO struttura (MpClient.h)
 description: Contiene informazioni su una minaccia.
 ms.assetid: ED2A0BDB-0E7C-479D-ADA1-95B9A259F57E
 keywords:
-- Struttura MPTHREAT_INFO le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPTHREAT_INFO
+- MPTHREAT_INFO struttura Legacy Windows Environment Features
+- PMPTHREAT_INFO puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa850a4293006a2f4b107a3f2579fdc14c1ea6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7be9b1f38a2771d7c6e4831e7716552de34492b30429084f3e087e0a3b49602
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943921"
 ---
-# <a name="mpthreat_info-structure"></a>Struttura delle informazioni di MPTHREAT \_
+# <a name="mpthreat_info-structure"></a>Struttura MPTHREAT \_ INFO
 
 Contiene informazioni su una minaccia.
 
@@ -92,7 +92,7 @@ Tipo: **MPTHREAT \_ ID**
 
 </dd> <dd>
 
-Identificatore della minaccia. Il bit superiore è impostato in modo da identificare le minacce correlate all'antivirus.
+Identificatore della minaccia. Il bit superiore è impostato per identificare le minacce correlate all'antivirus.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ ID rilevamento.
 **Nome**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -121,33 +121,33 @@ Nome della minaccia.
 **ThreatType**
 </dt> <dd>
 
-Tipo: **[ **MPTHREAT \_**](mpthreat-type.md)**
+Tipo: **[ **TIPO MPTHREAT \_**](mpthreat-type.md)**
 
 </dd> <dd>
 
-Tipo di minaccia. Usato per distinguere tra tipi di minacce diversi, ad esempio noti non validi, sconosciuti o noti. Vedere [**MPTHREAT \_ Type**](mpthreat-type.md).
+Tipo di minaccia. Usato per distinguere tra diversi tipi di minaccia, ad esempio quelli noti non validi, sconosciuti o noti. Vedere [**MPTHREAT \_ TYPE**](mpthreat-type.md).
 
 </dd> <dt>
 
 **ThreatCriticality**
 </dt> <dd>
 
-Tipo: **[ **\_ gravità MPTHREAT**](mpthreat-severity.md)**
+Tipo: **[ **MPTHREAT \_ SEVERITY**](mpthreat-severity.md)**
 
 </dd> <dd>
 
-Criticità della minaccia. Vedere [**\_ gravità MPTHREAT**](mpthreat-severity.md).
+Criticità delle minacce. Vedere [**MPTHREAT \_ SEVERITY**](mpthreat-severity.md).
 
 </dd> <dt>
 
 **ThreatCategory**
 </dt> <dd>
 
-Tipo: **[ **MPTHREAT \_ categoria**](mpthreat-category.md)**
+Tipo: **[ **MPTHREAT \_ CATEGORY**](mpthreat-category.md)**
 
 </dd> <dd>
 
-Categoria di minacce, ad esempio un Trojan o un keylogger. Vedere [**la \_ categoria MPTHREAT**](mpthreat-category.md).
+Categoria di minacce, ad esempio un trojan o un keylogger. Vedere [**MPTHREAT \_ CATEGORY**](mpthreat-category.md).
 
 </dd> <dt>
 
@@ -158,7 +158,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-ID breve della descrizione della minaccia.
+ID descrizione breve della minaccia.
 
 </dd> <dt>
 
@@ -169,18 +169,18 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-ID descrizione della notifica di minaccia.
+ID descrizione del consiglio di minaccia.
 
 </dd> <dt>
 
 **ThreatStatus**
 </dt> <dd>
 
-Tipo: **[ **\_ stato MPTHREAT**](mpthreat-status.md)**
+Tipo: **[ **MPTHREAT \_ STATUS**](mpthreat-status.md)**
 
 </dd> <dd>
 
-Stato della minaccia, ad esempio rilevato, pulito o in quarantena. Vedere [**\_ lo stato di MPTHREAT**](mpthreat-status.md).
+Stato della minaccia, ad esempio rilevato, pulito o messo in quarantena. Vedere [**STATO MPTHREAT \_**](mpthreat-status.md).
 
 </dd> <dt>
 
@@ -198,11 +198,11 @@ Conteggio delle azioni suggerite in **SuggestedActionArray**.
 **SuggestedActionArray**
 </dt> <dd>
 
-Tipo: **[**MPTHREAT \_ Action**](mpthreat-action.md) \[ MP \_ Max \_ suggestions\]**
+Tipo: **[**MPTHREAT \_ ACTION**](mpthreat-action.md) \[ MP MAX \_ \_ SUGGESTIONS\]**
 
 </dd> <dd>
 
-Matrice di azioni suggerite. Vedere [**\_ azione MPTHREAT**](mpthreat-action.md).
+Matrice di azioni suggerite. Vedere [**MPTHREAT \_ ACTION**](mpthreat-action.md).
 
 </dd> <dt>
 
@@ -213,29 +213,29 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Numero di risorse in **Resources**.
+Conteggio delle risorse in **ResourceList**.
 
 </dd> <dt>
 
-**ResourceList**
+**Elenco risorse**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info \** _
+Tipo: **PMPRESOURCE \_ INFO \***
 
 </dd> <dd>
 
-Elenco di risorse identificato con la minaccia. Vedere [_ *MPRESOURCE \_ info* *](mpresource-info.md).
+Elenco di risorse identificate con la minaccia. Vedere [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> <dt>
 
 **ThreatStatusTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
-Ora dell'Ultima modifica dello stato della minaccia.
+Ora dell'ultima modifica dello stato della minaccia.
 
 </dd> <dt>
 
@@ -253,11 +253,11 @@ Codice di stato associato allo stato della minaccia.
 **ThreatDetection**
 </dt> <dd>
 
-Tipo: **[ **\_ rilevamento MPTHREAT**](mpthreat-detection.md)**
+Tipo: **[ **RILEVAMENTO MPTHREAT \_**](mpthreat-detection.md)**
 
 </dd> <dd>
 
-Tipo di rilevamento delle minacce, ad esempio concreto, sospetto o generico. Vedere [**\_ rilevamento MPTHREAT**](mpthreat-detection.md).
+Tipo di rilevamento delle minacce, ad esempio concreto, sospetto o generico. Vedere [**RILEVAMENTO MPTHREAT \_**](mpthreat-detection.md).
 
 </dd> <dt>
 
@@ -275,62 +275,62 @@ GUID di quarantena.
 **ExecutionStatus**
 </dt> <dd>
 
-Tipo: **[ **\_ stato MPEXECUTION**](mpexecution-status.md)**
+Tipo: **[ **\_ MPEXECUTION STATUS**](mpexecution-status.md)**
 
 </dd> <dd>
 
-Stato di esecuzione della minaccia, ad esempio non noto, bloccato o attivo. Vedere [**\_ lo stato di MPEXECUTION**](mpexecution-status.md).
+Stato di esecuzione della minaccia, ad esempio non noto, bloccato o attivo. Vedere [**STATO \_ MPEXECUTION**](mpexecution-status.md).
 
 </dd> <dt>
 
 **Dati**
 </dt> <dd>
 
-Informazioni aggiuntive. Il puntatore alla struttura appropriata dipende dal valore di **ThreatType**.
+Informazioni aggiuntive. Il puntatore alla struttura appropriata dipende dal valore **di ThreatType**.
 
 <dl> <dt>
 
 **pKnownBad**
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ INFOEX non \_ usato**
+Tipo: **PMPTHREAT \_ INFOEX \_ UNUSED**
 
 </dd> <dd>
 
-Quando **ThreatType**  ==  **MPTHREAT \_ digitare \_ KNOWNBAD**. Vedere [**MPTHREAT \_ INFOEX \_ inutilizzato**](mpthreat-infoex-unused.md).
+Quando **ThreatType**  ==  **MPTHREAT \_ TYPE \_ KNOWNBAD**. Vedere [**MPTHREAT \_ INFOEX \_ UNUSED**](mpthreat-infoex-unused.md).
 
 </dd> <dt>
 
 **pBehavior**
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ INFOEX \_ Behavior**
+Tipo: **PMPTHREAT \_ INFOEX \_ BEHAVIOR**
 
 </dd> <dd>
 
-Quando **ThreatType**  ==  **MPTHREAT \_ il \_ comportamento del tipo**. Vedere [**MPTHREAT \_ INFOEX \_ Behavior**](mpthreat-infoex-behavior.md).
+Quando **ThreatType**  ==  **MPTHREAT \_ TYPE \_ BEHAVIOR**. Vedere [**MPTHREAT INFOEX BEHAVIOR ( COMPORTAMENTO DI MPTHREAT \_ \_ INFOEX**](mpthreat-infoex-behavior.md)).
 
 </dd> <dt>
 
 **pUnknown**
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ INFOEX non \_ usato**
+Tipo: **PMPTHREAT \_ INFOEX \_ UNUSED**
 
 </dd> <dd>
 
-Quando **ThreatType**  ==  **MPTHREAT \_ tipo \_ sconosciuto**. Vedere [**MPTHREAT \_ INFOEX \_ inutilizzato**](mpthreat-infoex-unused.md).
+Quando **ThreatType**  ==  **MPTHREAT \_ TYPE \_ UNKNOWN**. Vedere [**MPTHREAT \_ INFOEX \_ UNUSED**](mpthreat-infoex-unused.md).
 
 </dd> <dt>
 
 **pKnownGood**
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ INFOEX non \_ usato**
+Tipo: **PMPTHREAT \_ INFOEX \_ UNUSED**
 
 </dd> <dd>
 
-Quando **ThreatType** = = MPTHREAT \_ \_ , digitare KNOWNGOOD. Vedere [**MPTHREAT \_ INFOEX \_ inutilizzato**](mpthreat-infoex-unused.md).
+Quando **ThreatType** == MPTHREAT \_ TYPE \_ KNOWNGOOD. Vedere [**MPTHREAT \_ INFOEX \_ UNUSED**](mpthreat-infoex-unused.md).
 
 </dd> <dt>
 
@@ -341,25 +341,25 @@ Tipo: **PMPTHREAT \_ INFOEX \_ NIS**
 
 </dd> <dd>
 
-Quando **ThreatType**  ==  **MPTHREAT \_ digitare \_ NIS**. Vedere [**MPTHREAT \_ INFOEX \_ NIS**](mpthreat-infoex-nis.md).
+Quando **ThreatType**  ==  **MPTHREAT \_ TYPE \_ NIS**. Vedere [**MPTHREAT \_ INFOEX \_ NIS**](mpthreat-infoex-nis.md).
 
 </dd> </dl> </dd> <dt>
 
 **State**
 </dt> <dd>
 
-Tipo: **[ **\_ stato MPDETECTION**](mpdetection-state.md)**
+Tipo: **[ **MPDETECTION \_ STATE**](mpdetection-state.md)**
 
 </dd> <dd>
 
-Stato corrente del rilevamento. Vedere [**MPDETECTION \_ state**](mpdetection-state.md).
+Stato corrente del rilevamento. Vedere [**MPDETECTION \_ STATE**](mpdetection-state.md).
 
 </dd> <dt>
 
 **DetectionUser**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -381,7 +381,7 @@ Origine del rilevamento. Vedere [**MPSOURCE**](mpsource.md).
 **ProcessName**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -392,15 +392,15 @@ Nome del processo associato al rilevamento.
 **DetectionOrigin**
 </dt> <dd>
 
-Tipo: **[ **MPDETECTION \_ Origin**](mpdetection-origin.md)**
+Tipo: **[ **MPDETECTION \_ ORIGIN**](mpdetection-origin.md)**
 
 </dd> <dd>
 
-Origine del rilevamento, ad esempio locale o rete. Vedere [**MPDETECTION \_ Origin**](mpdetection-origin.md).
+Origine del rilevamento, ad esempio locale o di rete. Vedere [**MPDETECTION \_ ORIGIN**](mpdetection-origin.md).
 
 </dd> <dt>
 
-**Reserved1**
+**reserved1**
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -414,7 +414,7 @@ Metadati riservati sul rilevamento.
 **DetectionTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -425,44 +425,44 @@ Ora del rilevamento iniziale.
 **PreExecutionStatus**
 </dt> <dd>
 
-Tipo: **[ **\_ stato MPEXECUTION**](mpexecution-status.md)**
+Tipo: **[ **\_ MPEXECUTION STATUS**](mpexecution-status.md)**
 
 </dd> <dd>
 
-Stato di esecuzione immediatamente prima della correzione. Vedere [**\_ lo stato di MPEXECUTION**](mpexecution-status.md).
+Stato di esecuzione subito prima della correzione. Vedere [**STATO \_ MPEXECUTION**](mpexecution-status.md).
 
 </dd> <dt>
 
 **RemediationTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
-È stata eseguita la correzione dell'ora.
+Ora in cui si è verificata la correzione.
 
 </dd> <dt>
 
 **PostExecutionStatus**
 </dt> <dd>
 
-Tipo: **[ **\_ stato MPEXECUTION**](mpexecution-status.md)**
+Tipo: **[ **\_ MPEXECUTION STATUS**](mpexecution-status.md)**
 
 </dd> <dd>
 
-Stato di esecuzione dopo la correzione. Vedere [**\_ lo stato di MPEXECUTION**](mpexecution-status.md).
+Stato di esecuzione dopo la correzione. Vedere [**STATO \_ MPEXECUTION**](mpexecution-status.md).
 
 </dd> <dt>
 
 **CriticalFailure**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
-True se l'errore di correzione è stato critico.
+True se l'errore di correzione era critico.
 
 </dd> <dt>
 
@@ -473,14 +473,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Il motivo per cui l'errore di correzione non è critico. Questa operazione non è garantita per essere supportata in futuro.
+Motivo per cui l'errore di correzione non è critico. Questo non è garantito per essere supportato in futuro.
 
 </dd> <dt>
 
 **RemediationUser**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -495,40 +495,40 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Numero di risorse in **RemediationResourceList**.
+Conteggio delle risorse in **RemediationResourceList**.
 
 </dd> <dt>
 
 **RemediationResourceList**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info \[ RemediationResourceCount \]**
+Tipo: **PMPRESOURCE \_ INFO \[ \] RemediationResourceCount**
 
 </dd> <dd>
 
-Elenco di risorse non riuscite durante la correzione. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
+Elenco di risorse non riuscite durante la correzione. Vedere [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> <dt>
 
 **FailureResolved**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
-True se l'errore di monitoraggio e aggiornamento è stato risolto. Il bucket verrà spostato in modo da essere completato o da un'altra azione.
+True se l'errore di correzione è stato risolto. In questo modo il bucket verrà spostato in modo da completare o eseguire un'azione aggiuntiva.
 
 </dd> <dt>
 
 **ResolvedReason**
 </dt> <dd>
 
-Tipo: **[ **MPRESOLVED \_ reason**](mpresolved-reason.md)**
+Tipo: **[ **MOTIVO \_ MPRESOLVED**](mpresolved-reason.md)**
 
 </dd> <dd>
 
-Motivo per cui è stato risolto un errore di correzione. Questo è il motivo per cui il rilevamento è stato spostato da un'azione non riuscita o completata. Vedere [**MPRESOLVED \_ reason**](mpresolved-reason.md).
+Motivo della risoluzione dell'errore di correzione. Questo è il motivo per cui il rilevamento è stato spostato da non riuscito a un'azione aggiuntiva o è stato completato. Vedere [**MPRESOLVED \_ REASON**](mpresolved-reason.md).
 
 </dd> <dt>
 
@@ -561,7 +561,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Aggiuntivi Informazioni sul rilevamento delle minacce.
+Aggiungere informazioni sul rilevamento delle minacce.
 
 </dd> </dl>
 
@@ -571,9 +571,9 @@ Aggiuntivi Informazioni sul rilevamento delle minacce.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -590,49 +590,49 @@ Aggiuntivi Informazioni sul rilevamento delle minacce.
 [**MpThreatQuery**](mpthreatquery.md)
 </dt> <dt>
 
-[**\_origine MPDETECTION**](mpdetection-origin.md)
+[**ORIGINE MPDETECTION \_**](mpdetection-origin.md)
 </dt> <dt>
 
-[**\_stato MPDETECTION**](mpdetection-state.md)
+[**STATO MPDETECTION \_**](mpdetection-state.md)
 </dt> <dt>
 
-[**\_stato MPEXECUTION**](mpexecution-status.md)
+[**STATO \_ MPEXECUTION**](mpexecution-status.md)
 </dt> <dt>
 
-[**\_motivo MPRESOLVED**](mpresolved-reason.md)
+[**MOTIVO \_ MPRESOLVED**](mpresolved-reason.md)
 </dt> <dt>
 
-[**\_informazioni MPRESOURCE**](mpresource-info.md)
+[**INFORMAZIONI SU \_ MPRESOURCE**](mpresource-info.md)
 </dt> <dt>
 
 [**MPSOURCE**](mpsource.md)
 </dt> <dt>
 
-[**\_azione MPTHREAT**](mpthreat-action.md)
+[**AZIONE \_ MPTHREAT**](mpthreat-action.md)
 </dt> <dt>
 
-[**\_categoria MPTHREAT**](mpthreat-category.md)
+[**CATEGORIA \_ MPTHREAT**](mpthreat-category.md)
 </dt> <dt>
 
-[**\_rilevamento MPTHREAT**](mpthreat-detection.md)
+[**RILEVAMENTO \_ MPTHREAT**](mpthreat-detection.md)
 </dt> <dt>
 
-[**\_comportamento INFOEX \_ MPTHREAT**](mpthreat-infoex-behavior.md)
+[**COMPORTAMENTO DI MPTHREAT \_ \_ INFOEX**](mpthreat-infoex-behavior.md)
 </dt> <dt>
 
 [**MPTHREAT \_ INFOEX \_ NIS**](mpthreat-infoex-nis.md)
 </dt> <dt>
 
-[**MPTHREAT \_ INFOEX non \_ usato**](mpthreat-infoex-unused.md)
+[**MPTHREAT \_ INFOEX \_ NON USATO**](mpthreat-infoex-unused.md)
 </dt> <dt>
 
-[**\_gravità MPTHREAT**](mpthreat-severity.md)
+[**GRAVITÀ \_ MPTHREAT**](mpthreat-severity.md)
 </dt> <dt>
 
-[**\_stato MPTHREAT**](mpthreat-status.md)
+[**STATO \_ MPTHREAT**](mpthreat-status.md)
 </dt> <dt>
 
-[**\_tipo MPTHREAT**](mpthreat-type.md)
+[**TIPO \_ MPTHREAT**](mpthreat-type.md)
 </dt> </dl>
 
  

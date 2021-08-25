@@ -4,18 +4,18 @@ description: L'interfaccia IVMHostInfo espone le proprietà seguenti.
 ms.assetid: 198166B3-5D98-4A34-A232-FE0A29877409
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d342e4724fcfac28cb144e92d5a0866d02934a8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90738dee57faf0eaecd2e012b1c7a2360b9f6f97a9521143428d6be16734fc4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867081"
 ---
 # <a name="ivmhostinfo-properties"></a>Proprietà di IVMHostInfo
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-L'interfaccia [**IVMHostInfo**](ivmhostinfo.md) espone le proprietà seguenti.
+[**L'interfaccia IVMHostInfo**](ivmhostinfo.md) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -27,7 +27,7 @@ L'interfaccia [**IVMHostInfo**](ivmhostinfo.md) espone le proprietà seguenti.
 -   [**Proprietà MemoryAvailString**](ivmhostinfo-memoryavailstring.md)
 -   [**Proprietà MemoryTotalString**](ivmhostinfo-memorytotalstring.md)
 -   [**Proprietà MMX**](ivmhostinfo-mmx.md)
--   [**Proprietà I NetworkAdapter**](ivmhostinfo-networkadapters.md)
+-   [**Proprietà NetworkAdapters**](ivmhostinfo-networkadapters.md)
 -   [**Proprietà NetworkAddresses**](ivmhostinfo-networkaddresses.md)
 -   [**Proprietà OperatingSystem**](ivmhostinfo-operatingsystem.md)
 -   [**Proprietà OSMajorVersion**](ivmhostinfo-osmajorversion.md)
@@ -43,10 +43,10 @@ L'interfaccia [**IVMHostInfo**](ivmhostinfo.md) espone le proprietà seguenti.
 -   [**Proprietà ProcessorVersionString**](ivmhostinfo-processorversionstring.md)
 -   [**Proprietà SerialPorts**](ivmhostinfo-serialports.md)
 -   [**Proprietà SSE**](ivmhostinfo-sse.md)
--   [**SSE2 (proprietà)**](ivmhostinfo-sse2.md)
+-   [**Proprietà SSE2**](ivmhostinfo-sse2.md)
 -   [**Proprietà ThreeDNow**](ivmhostinfo-threednow.md)
 -   [**Proprietà UTCTime**](ivmhostinfo-utctime.md)
 
- 
+ 
 
- 
+ 

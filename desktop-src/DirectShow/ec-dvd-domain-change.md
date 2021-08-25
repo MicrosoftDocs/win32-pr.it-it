@@ -1,7 +1,7 @@
 ---
 description: Indica il nuovo dominio del lettore DVD.
 ms.assetid: 4faa46d6-2ba2-44a3-b237-acac3b32f8b1
-title: EC_DVD_DOMAIN_CHANGE (Dvdevcode. h)
+title: EC_DVD_DOMAIN_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 815b6b2dd318d0b7716f4cf640ef3f83dacd0d60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a43c44e779d8ad64852b673fb053467687c50daec85acb9bc87999675200d5f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965661"
 ---
-# <a name="ec_dvd_domain_change"></a>\_ \_ Modifica dominio DVD \_ EC
+# <a name="ec_dvd_domain_change"></a>MODIFICA DEL \_ DOMINIO DEL DVD \_ \_ EC
 
 Indica il nuovo dominio del lettore DVD.
 
@@ -31,7 +31,7 @@ Indica il nuovo dominio del lettore DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica il nuovo dominio. Membro del tipo di dati enumerato del [**\_ dominio DVD**](/windows/win32/api/strmif/ne-strmif-dvd_domain) .
+**Valore DWORD** che indica il nuovo dominio. Membro del tipo [**di dati enumerato \_ DVD DOMAIN.**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Questo evento viene generato in tutti i domini DVD.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

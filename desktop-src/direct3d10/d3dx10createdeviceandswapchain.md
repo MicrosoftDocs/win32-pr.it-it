@@ -1,7 +1,7 @@
 ---
-description: Creare il migliore dispositivo Direct3D e una catena di scambio.
+description: Creare il miglior dispositivo Direct3D e una catena di scambio.
 ms.assetid: c320a6c4-fa68-47fc-b2cb-0dc53c2767e7
-title: Funzione D3DX10CreateDeviceAndSwapChain (D3DX10Core. h)
+title: Funzione D3DX10CreateDeviceAndSwapChain (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: fe71aeae91f8c43966e0fda2d2f430c7908f2855
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa92b0fd7efb9c6f457fd035fad28992d965a4cf2f6fdad39936292f7a70a996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852371"
 ---
-# <a name="d3dx10createdeviceandswapchain-function"></a>D3DX10CreateDeviceAndSwapChain (funzione)
+# <a name="d3dx10createdeviceandswapchain-function"></a>Funzione D3DX10CreateDeviceAndSwapChain
 
-Creare il migliore dispositivo Direct3D e una catena di scambio.
+Creare il miglior dispositivo Direct3D e una catena di scambio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,66 +45,66 @@ HRESULT D3DX10CreateDeviceAndSwapChain(
 
 <dl> <dt>
 
-*pAdapter* \[ in\]
+*pAdapter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **IDXGIAdapter**](/windows/win32/api/dxgi/nn-dxgi-idxgiadapter)\***
 
-Puntatore a un [**IDXGIAdapter**](/windows/win32/api/dxgi/nn-dxgi-idxgiadapter).
+Puntatore a [**un oggetto IDXGIAdapter.**](/windows/win32/api/dxgi/nn-dxgi-idxgiadapter)
 
 </dd> <dt>
 
-*DriverType* \[ in\]
+*DriverType* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ tipo di driver D3D10**](/windows/desktop/api/D3D10misc/ne-d3d10misc-d3d10_driver_type)**
+Tipo: **[ **TIPO DI \_ DRIVER \_ D3D10**](/windows/desktop/api/D3D10misc/ne-d3d10misc-d3d10_driver_type)**
 
-Tipo di driver per il dispositivo. Vedere [**\_ \_ tipo di driver D3D10**](/windows/desktop/api/D3D10misc/ne-d3d10misc-d3d10_driver_type).
+Tipo di driver per il dispositivo. Vedere [**TIPO DI \_ DRIVER \_ D3D10**](/windows/desktop/api/D3D10misc/ne-d3d10misc-d3d10_driver_type).
 
 </dd> <dt>
 
-*Software* \[ di in\]
+*Software* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
-Handle per la DLL che implementa un rasterizzatore software. Deve essere **null** se DriverType è non software. Il HMODULE di una DLL può essere ottenuto con [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya), [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa)o [GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Handle per la DLL che implementa un rasterizzatore software. Deve essere **NULL se** DriverType non è software. Il modulo HMODULE di una DLL può essere ottenuto [con LoadLibrary,](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa)o [GetModuleHandle.](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-facoltativo. Flag di creazione del dispositivo (vedere [**D3D10 \_ Create \_ Device \_ flag**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_create_device_flag)) che Abilita i [livelli API](d3d10-graphics-programming-guide-api-features-layers.md). Questi flag possono essere OR bit per bit.
+facoltativo. Flag di creazione del dispositivo (vedere [**D3D10 \_ CREATE \_ DEVICE \_ FLAG**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_create_device_flag)) che abilitano i [livelli API](d3d10-graphics-programming-guide-api-features-layers.md). Questi flag possono essere OR bit per bit insieme.
 
 </dd> <dt>
 
-*pSwapChainDesc* \[ in\]
+*pSwapChainDesc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **DXGI \_ scambio \_ catena \_ desc**](/windows/win32/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)\***
+Tipo: **[ **DXGI \_ SWAP \_ CHAIN \_ DESC**](/windows/win32/api/dxgi/ns-dxgi-dxgi_swap_chain_desc)\***
 
-Descrizione della catena di scambio. Vedere [**DXGI \_ swap \_ Chain \_ desc**](/windows/win32/api/dxgi/ns-dxgi-dxgi_swap_chain_desc).
+Descrizione della catena di scambio. Vedere [**DXGI \_ SWAP CHAIN \_ \_ DESC**](/windows/win32/api/dxgi/ns-dxgi-dxgi_swap_chain_desc).
 
 </dd> <dt>
 
-*ppSwapChain* \[ out\]
+*ppSwapChain* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IDXGISwapChain**](/windows/win32/api/dxgi/nn-dxgi-idxgiswapchain)\*\***
 
-Indirizzo di un puntatore a un [**IDXGISwapChain**](/windows/win32/api/dxgi/nn-dxgi-idxgiswapchain).
+Indirizzo di un puntatore a [**un oggetto IDXGISwapChain.**](/windows/win32/api/dxgi/nn-dxgi-idxgiswapchain)
 
 </dd> <dt>
 
-*ppDevice* \[ out\]
+*ppDevice* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\*\***
 
-Indirizzo di un puntatore a un' [**interfaccia ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) che riceverà il dispositivo appena creato.
+Indirizzo di un puntatore a [**un'interfaccia ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) che riceverà il dispositivo appena creato.
 
 </dd> </dl>
 
@@ -112,14 +112,14 @@ Indirizzo di un puntatore a un' [**interfaccia ID3D10Device**](/windows/desktop/
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Questo metodo restituisce uno dei seguenti [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Questo metodo restituisce uno dei codici [restituiti Direct3D 10 seguenti.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Per creare il dispositivo migliore, questo metodo implementa più di un'opzione di creazione del dispositivo. In primo luogo, il metodo tenta di creare un dispositivo 10,1 (e una catena di scambio). Se l'operazione ha esito negativo, il metodo tenta di creare un dispositivo 10,0. Se l'operazione ha esito negativo, il metodo avrà esito negativo. Se l'applicazione deve creare solo un dispositivo 10,1 o solo un dispositivo 10,0, usare queste API:
+Per creare il dispositivo migliore, questo metodo implementa più di un'opzione di creazione del dispositivo. In primo luogo, il metodo tenta di creare un dispositivo 10.1 (e la catena di scambio). In caso di errore, il metodo tenta di creare un dispositivo 10.0. Se l'operazione ha esito negativo, il metodo avrà esito negativo. Se l'applicazione deve creare solo un dispositivo 10.1 o solo un dispositivo 10.0, usare invece queste API:
 
--   Usare [**D3D10CreateDeviceAndSwapChain**](/windows/desktop/api/D3D10Misc/nf-d3d10misc-d3d10createdeviceandswapchain) per creare un dispositivo Direct3D 10,0 (solo) e una catena di scambio.
--   Usare [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1) per creare un dispositivo Direct3D 10,1 (solo) e una catena di scambio.
+-   Usare [**D3D10CreateDeviceAndSwapChain**](/windows/desktop/api/D3D10Misc/nf-d3d10misc-d3d10createdeviceandswapchain) per creare un dispositivo Direct3D 10.0 (solo) e una catena di scambio.
+-   Usare [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1) per creare un dispositivo Direct3D 10.1 (solo) e una catena di scambio.
 
 Questo metodo richiede Windows Vista Service Pack 1.
 
@@ -129,7 +129,7 @@ Questo metodo richiede Windows Vista Service Pack 1.
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -137,7 +137,7 @@ Questo metodo richiede Windows Vista Service Pack 1.
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[per utilizzo generico funzioni](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

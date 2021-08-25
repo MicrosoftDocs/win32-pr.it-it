@@ -1,7 +1,7 @@
 ---
-description: Contiene la risposta a una \_ query D3DAUTHENTICATEDQUERY ENCRYPTIONWHENACCESSIBLEGUID.
+description: Contiene la risposta a una query D3DAUTHENTICATEDQUERY \_ ENCRYPTIONWHENACCESSIBLEGUID.
 ms.assetid: afe73f8e-3304-470c-a37a-17b6c767b2c0
-title: Struttura D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_OUTPUT (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_OUTPUT struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 8fa46095c5075b0a36ed691978b73de1e7b8cade
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01624b35b7c1b29267b490204a2d814adec1c7075eaf23e746e6ade04ceb0c6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942771"
 ---
-# <a name="d3dauthenticatedchannel_queryevictionencryptionguid_output-structure"></a>\_Struttura di output QUERYEVICTIONENCRYPTIONGUID di D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_queryevictionencryptionguid_output-structure"></a>Struttura DI OUTPUT D3DAUTHENTICATEDCHANNEL \_ QUERYEVICTIONENCRYPTIONGUID \_
 
-Contiene la risposta a una query [**D3DAUTHENTICATEDQUERY \_ ENCRYPTIONWHENACCESSIBLEGUID**](d3dauthenticatedquery-encryptionwhenaccessibleguid.md) .
+Contiene la risposta a una query [**D3DAUTHENTICATEDQUERY \_ ENCRYPTIONWHENACCESSIBLEGUID.**](d3dauthenticatedquery-encryptionwhenaccessibleguid.md)
 
-Per inviare la query, chiamare [**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Per inviare questa query, chiamare [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYEVICTIONENCRYPTIONGUID_OUTPUT {
 
 <dl> <dt>
 
-**\_Output della query D3DAUTHENTICATEDCHANNEL \_**
+**OUTPUT DELLE QUERY D3DAUTHENTICATEDCHANNEL \_ \_**
 </dt> <dd>
 
-Struttura [**di \_ \_ output della query D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-output.md) che contiene un Message Authentication Code (Mac) e altri dati.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ OUTPUT**](d3dauthenticatedchannel-query-output.md) che contiene un Message Authentication Code (MAC) e altri dati.
 
 </dd> <dt>
 
@@ -70,9 +70,9 @@ GUID che specifica un tipo di crittografia supportato.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ GUID che specifica un tipo di crittografia supportato.
 [Strutture video Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

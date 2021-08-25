@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h): crea una matrice di proiezione prospettica personalizzata e mancino.'
+description: 'Funzione D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h): compila una matrice di proiezione prospettica personalizzata mancino.'
 ms.assetid: 73616fcc-1799-4e65-92b9-2d8f500c326e
 title: Funzione D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1116e24b48c9090739511894d28031ca921ed6ed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 99dc5c5b0806f119f3728facbb0d67c88884bb537e909daf0c7687392e20784a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858751"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterlh-function-d3dx10mathh"></a>Funzione D3DXMatrixPerspectiveOffCenterLH (D3DX10Math.h)
 
-Compila una matrice di proiezione prospettica personalizzata e mancino.
+Compila una matrice di proiezione prospettica personalizzata mancino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ D3DXMATRIX* D3DXMatrixPerspectiveOffCenterLH(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 

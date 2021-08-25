@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Reveal-OnDemand-Group
-description: Usato con RODC per definire gli utenti, i computer e i gruppi che possono avere le password memorizzate nella cache in un RODC.
+title: Attributo ms-DS-Reveal-OnDemand-Group
+description: Utilizzato con controller di dominio di sola lettura per definire quali utenti, computer e gruppi possono memorizzare le password nella cache in un controller di dominio di sola lettura.
 ms.assetid: ee31957c-66a2-49d8-865c-7f599754dcdd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo gruppo ms-DS-Reveal-OnDemand
-- attributo msDS-RevealOnDemandGroup-schema AD
+- Schema AD dell'attributo ms-DS-Reveal-OnDemand-Group
+- Schema AD dell'attributo msDS-RevealOnDemandGroup
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc89e0aabf1d82a9b7171530c5d297c668dbcb99
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 385cbaaf35256f05c09469ac187b395fa42d4f1275c72358a9f22350998c6878
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925421"
 ---
-# <a name="ms-ds-reveal-ondemand-group-attribute"></a>attributo ms-DS-Reveal-OnDemand-Group
+# <a name="ms-ds-reveal-ondemand-group-attribute"></a>Attributo ms-DS-Reveal-OnDemand-Group
 
-Usato con RODC per definire gli utenti, i computer e i gruppi che possono avere le password memorizzate nella cache in un RODC.
+Utilizzato con controller di dominio di sola lettura per definire quali utenti, computer e gruppi possono memorizzare le password nella cache in un controller di dominio di sola lettura.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Reveal-OnDemand-gruppo             |
-| LDAP-Display-Name | msDS-RevealOnDemandGroup                |
+| CN                | ms-DS-Reveal-OnDemand-Group             |
+| Ldap-Display-Name | msDS-RevealOnDemandGroup                |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1928                 |
-| System-ID-GUID    | 303d9f4a-1dd6-4b38-8fc5-33afe8c988ad    |
+| System-Id-Guid    | 303d9f4a-1dd6-4b38-8fc5-33afe8c988ad    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Usato con RODC per definire gli utenti, i computer e i gruppi che possono avere 
 | ID collegamento                | 2110                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | Falso                                                                              |
-| È a valore singolo       | Falso                                                                              |
+| Is-Single-Valued       | Falso                                                                              |
 | Indicizzato             | Falso                                                                              |
 | Nel catalogo globale      | Falso                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |
 | System-Flags           | 0x00000010                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Usato con RODC per definire gli utenti, i computer e i gruppi che possono avere 
 | ID collegamento                | 2110                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | Falso                                                                              |
-| È a valore singolo       | Falso                                                                              |
+| Is-Single-Valued       | Falso                                                                              |
 | Indicizzato             | Falso                                                                              |
 | Nel catalogo globale      | Falso                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |
 | System-Flags           | 0x00000010                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Usato con RODC per definire gli utenti, i computer e i gruppi che possono avere 
 | ID collegamento                | 2110                                                                               |
 | MAPI-Id                | \-                                                                                 |
 | System-Only            | Falso                                                                              |
-| È a valore singolo       | Falso                                                                              |
+| Is-Single-Valued       | Falso                                                                              |
 | Indicizzato             | Falso                                                                              |
 | Nel catalogo globale      | Falso                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                       |
 | Range-Lower            | \-                                                                                 |
 | Range-Upper            | \-                                                                                 |
 | Search-Flags           | 0x00000000                                                                         |
 | System-Flags           | 0x00000010                                                                         |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 

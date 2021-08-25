@@ -1,7 +1,7 @@
 ---
-description: Recupera la modalità protetta di Windows corrente. Windows può essere in modalità bloccata, in modalità normale o in modalità di valutazione.
+description: Recupera l'oggetto Windows modalità protetta. Windows essere in modalità bloccata, in modalità normale sbloccata o in modalità di valutazione.
 ms.assetid: FD280818-C6DE-4CEA-A772-E239A8DB891F
-title: Funzione WldpQueryWindowsLockdownMode (Wldp. h)
+title: Funzione WldpQueryWindowsLockdownMode (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wldp.dll
-ms.openlocfilehash: fc746270a0634525154417cfba7e1529bee7edfb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 94dc1665dcfa98b27fc15f68a799792b57f428875fefb88c6d35de57bad71b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911291"
 ---
-# <a name="wldpquerywindowslockdownmode-function"></a>WldpQueryWindowsLockdownMode (funzione)
+# <a name="wldpquerywindowslockdownmode-function"></a>Funzione WldpQueryWindowsLockdownMode
 
-Recupera la modalità protetta di Windows corrente. Windows può essere in modalità bloccata, in modalità normale o in modalità di valutazione.
+Recupera l'oggetto Windows modalità protetta. Windows essere in modalità bloccata, in modalità normale sbloccata o in modalità di valutazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ Recupera la modalità protetta di Windows corrente. Windows può essere in modal
 
 <dl> <dt>
 
-*lockdownMode* \[ out\]
+*lockdownMode* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione riesce, restituisce una [**\_ modalità di \_ blocco \_ di Windows PWLDP**](wldp-windows-lockdown-mode.md) che indica la modalità protetta per il dispositivo Windows 10 corrente.
+In caso di esito positivo, restituisce [**un oggetto PWLDP \_ WINDOWS \_ LOCKDOWN \_ MODE**](wldp-windows-lockdown-mode.md) che indica la modalità sicura per il dispositivo Windows 10 corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce **\_ OK** se l'esito è positivo o un codice di errore; in caso contrario,.
+Questo metodo restituisce **S \_ OK in caso** di esito positivo o un codice di errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ Questo metodo restituisce **\_ OK** se l'esito è positivo o un codice di errore
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Wldp. h</dt> </dl>   |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                           |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Wldp.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Wldp.dll</dt> </dl> |
 
 

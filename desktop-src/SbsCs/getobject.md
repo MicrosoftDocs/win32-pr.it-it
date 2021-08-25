@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetObject recupera un'istanza di un oggetto Microsoft. Windows. ActCtx esistente.
+description: Il metodo GetObject ottiene un'istanza di microsoft esistente. Windows. Oggetto ActCtx.
 ms.assetid: 547525f3-afef-463b-823a-df8ccd954f36
-title: ActCtx. GetObject, metodo
+title: Metodo ActCtx.GetObject
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Sxsoa.dll
-ms.openlocfilehash: 11b71d8d40d947472612c91f70e9956aa7798806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a102fdae74232fa9a67c4b9455050bcdba32a219d8a66180ae8bc6ce6cb96c8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885281"
 ---
-# <a name="actctxgetobject-method"></a>ActCtx. GetObject, metodo
+# <a name="actctxgetobject-method"></a>Metodo ActCtx.GetObject
 
-Il metodo **GetObject** recupera un'istanza di un oggetto [**Microsoft. Windows. ACTCTX**](microsoft-windows-actctx-object.md) esistente.
+Il **metodo GetObject** ottiene un'istanza di un [**oggetto Microsoft.Windows. Oggetto ActCtx.**](microsoft-windows-actctx-object.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ ActCtx.GetObject(
 *bstrName* 
 </dt> <dd>
 
-Stringa obbligatoria che indica l'oggetto. Il nome deve trovarsi nel registro di sistema in **HKEY \_ \_ computer locale** \\ **Microsoft** \\ **Visual Studio** \\ **6,0** \\ **<package>** \\ **Automation**.
+Stringa obbligatoria che indica l'oggetto. Il nome deve essere nel Registro di sistema in **HKEY \_ LOCAL \_ MACHINE** \\ **Microsoft** \\ **Visual Studio** \\ **6.0** \\ **<package>** \\ **Automation.**
 
 </dd> </dl>
 
@@ -56,10 +56,10 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Sxsoa.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IActCtx è definito come 8FA7728F-B69B-4ee5-99F2-E2AA021BEF28<br/>           |
+| IID<br/>                      | IID \_ IActCtx è definito come 8FA7728F-B69B-4EE5-99F2-E2AA021BEF28<br/>           |
 
 
 

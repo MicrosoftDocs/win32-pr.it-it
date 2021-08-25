@@ -1,33 +1,33 @@
 ---
-title: Ridistribuzione di Windows Media Player 9 Series
-description: Ridistribuzione di Windows Media Player 9 Series
+title: Ridistribuzione Windows Media Player serie 9
+description: Ridistribuzione Windows Media Player serie 9
 ms.assetid: 812e3fc7-e23d-489c-a486-62c7602cf46e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f48da20123255ae08a0993d361a95deb8ed335
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 418a780836c0a64a1b31b0d3c01a69841b695803f5db61b049915ec0d981f9c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861681"
 ---
-# <a name="redistributing-windows-media-player-9-series"></a>Ridistribuzione di Windows Media Player 9 Series
+# <a name="redistributing-windows-media-player-9-series"></a>Ridistribuzione Windows Media Player serie 9
 
-È possibile installare la serie Windows Media Player 9 in Windows XP utilizzando uno dei seguenti programmi di installazione.
+È possibile installare Windows Media Player serie 9 in Windows XP usando uno dei programmi di installazione seguenti.
 
 -   MPSetupXP.exe
 -   MPSetup.exe
 
 > [!Note]  
-> MPSetup.exe è un superset del programma di installazione di MPSetupXP.exe. Contiene i file necessari per i sistemi operativi rilasciati prima di Windows XP. MPSetup.exe è equivalente dal punto di vista funzionale al MPSetupXP.exe quando viene eseguito in Windows XP, ma le dimensioni del file del programma di installazione sono maggiori perché non sono state ottimizzate per l'installazione nei sistemi operativi Windows XP.
+> MPSetup.exe è un superset del programma MPSetupXP.exe programma di installazione. Contiene i file necessari per i sistemi operativi rilasciati prima di Windows XP. MPSetup.exe funzionalmente equivalente a MPSetupXP.exe quando viene eseguito in Windows XP, ma le dimensioni del file del programma di installazione sono maggiori perché non è stato ottimizzato per l'installazione nei sistemi operativi Windows XP.
 
- 
+ 
 
-È possibile installare la serie Windows Media Player 9 in Windows 98 Second Edition, Windows Millennium Edition o Windows 2000 usando il programma di installazione seguente.
+È possibile installare Windows Media Player serie 9 in Windows 98 Second Edition, Windows Millennium Edition o Windows 2000 usando il programma di installazione seguente.
 
 -   MPSetup.exe
 
-Di seguito è riportato un esempio di una riga di comando per l'installazione senza interfaccia utente e nessuna richiesta di riavvio o riavvio.
+Di seguito è riportato un esempio di riga di comando per l'installazione senza interfaccia utente e senza prompt di riavvio o riavvio.
 
 
 ```
@@ -37,40 +37,40 @@ MPSetup.exe /q:A /c:"setup_wm.exe /Q /R:N /P:#e"
 
 
 > [!Note]  
-> Il parametro/P: \# e specifica che il pacchetto di installazione di windows media Player deve essere memorizzato nella cache durante l'installazione di windows media player. Questo comando viene utilizzato per gestire gli aggiornamenti futuri del sistema operativo. Questo comando deve essere omesso solo dagli amministratori IT aziendali. L'unico caso in cui/P: \# e non deve essere incluso nella riga di comando è quando si è proprietari del sistema di destinazione e si sa che il sistema di destinazione non verrà mai aggiornato a un sistema operativo successivo. Se ad esempio si installa la serie Windows Media Player 9 in Windows 2000 e il computer potrebbe essere aggiornato a Windows XP, è necessario utilizzare/P: \# e nella riga di comando. In caso contrario, dopo l'installazione di Windows XP, i file di Windows Media Player verranno sovrascritti con i file per Windows Media Player per Windows XP.
+> Il parametro /P: e specifica che il pacchetto Windows Media Player di installazione deve essere memorizzato nella cache durante Windows Media Player \# installazione. Questo comando viene usato per gestire gli aggiornamenti futuri del sistema operativo. Questo comando deve essere omesso solo dagli amministratori IT aziendali. L'unico caso in cui /P: e non deve essere incluso nella riga di comando è quando si è proprietari del sistema di destinazione e si sa che il sistema di destinazione non verrà mai aggiornato a un sistema operativo \# successivo. Ad esempio, se si installa Windows Media Player serie 9 in Windows 2000 e il computer potrebbe essere aggiornato a Windows XP, è necessario usare /P: e nella riga di \# comando. In caso contrario, dopo l Windows installazione di XP, i file Windows Media Player verranno sovrascritti con i file per Windows Media Player per Windows XP.
 
- 
+ 
 
-La tabella seguente illustra i parametri aggiuntivi che è possibile usare con il programma di installazione della serie Windows Media Player 9.
+La tabella seguente illustra parametri aggiuntivi che è possibile usare con il programma di installazione Windows Media Player serie 9.
 
 
 
 | Parametro              | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /NoMigrate             | Impedisci la migrazione della libreria.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| /NestedRestore         | Creare un punto di ripristino del sistema annidato. Usare questa istruzione se l'applicazione crea un punto di ripristino del sistema per annidare il punto di ripristino di Windows Media Player all'interno del punto di ripristino dell'applicazione.                                                                                                                                                                                                                                                                                                                             |
-| /DisallowSystemRestore | Impedisce la creazione di un punto di ripristino del sistema. Questo flag Disabilita la creazione di un punto di ripristino del sistema. Nella maggior parte dei casi non è consigliabile usare questo flag per la ridistribuzione generale del software. Questa operazione deve essere utilizzata solo quando è possibile effettuare una scelta esplicita per conto dell'utente finale per non supportare il rollback dei file di Media Player Windows a una versione precedente del lettore. Questo flag deve essere usato solo per la distribuzione aziendale o l'installazione OEM (Original Equipment Manufacturer). |
+| /NoMigrate             | Impedire la migrazione della libreria.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| /NestedRestore         | Creare un punto di ripristino di sistema annidato. Usare questa opzione se l'applicazione crea un punto di ripristino di sistema per annidare Windows Media Player punto di ripristino all'interno del punto di ripristino dell'applicazione.                                                                                                                                                                                                                                                                                                                             |
+| /DisallowSystemRestore | Non consentire la creazione di un punto di ripristino di sistema. Questo flag disabilita la creazione di un punto di ripristino di sistema. Nella maggior parte dei casi questo flag non deve essere usato per la ridistribuzione software generale. Deve essere usato solo quando è possibile scegliere esplicitamente per conto dell'utente finale di non supportare il rollback dei file Windows Media Player a una versione precedente di Player. Questo flag deve essere usato solo per la distribuzione aziendale o l'installazione OEM (Original Equipment Manufacturer). |
 
 
 
- 
+ 
 
 ## <a name="notes"></a>Note
 
--   I parametri della riga di comando distinguono tra maiuscole e minuscole.
--   Quando si disattiva la richiesta di riavvio, è necessario controllare la chiave del registro di sistema InstallResult e gestire la notifica di riavvio nell'applicazione di installazione chiamante.
--   La serie Windows Media Player 9 installa anche il runtime di Windows Media Format, pertanto non è necessario includere il pacchetto di distribuzione di Windows Media Player e il pacchetto di distribuzione di runtime di Windows Media Format nello stesso pacchetto di ridistribuzione software. Se pertanto si includono MPSetup.exe o MPSetupXP.exe nell'installazione di, non è necessario includere WMFdist.exe.
+-   Per i parametri della riga di comando viene fatto distinzione tra maiuscole e minuscole.
+-   Quando si elimina la richiesta di riavvio, è necessario controllare la chiave del Registro di sistema InstallResult e gestire la notifica di riavvio nell'applicazione di installazione chiamante.
+-   Windows Media Player serie 9 installa anche il runtime di Windows Media Format, quindi non è necessario includere sia il pacchetto di distribuzione Windows Media Player che il pacchetto di distribuzione del runtime di Windows Media Format nello stesso pacchetto di ridistribuzione software. Pertanto, se si includono MPSetup.exe o MPSetupXP.exe nell'installazione, non è necessario includere WMFdist.exe.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Ridistribuzione del software Windows Media Player**](redistributing-windows-media-player-software.md)
+[**Ridistribuzione Windows Media Player Software**](redistributing-windows-media-player-software.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

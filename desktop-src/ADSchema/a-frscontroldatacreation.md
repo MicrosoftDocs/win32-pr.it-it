@@ -1,6 +1,6 @@
 ---
-title: FRS-Control-Data-creazione attributo
-description: Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al secondo).
+title: Attributo FRS-Control-Data-Creation
+description: Coppia a livello di avviso/errore per la creazione di dati di file (megabyte al secondo).
 ms.assetid: 9907e58e-3464-48fc-a115-b47ff577c719
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd1b7aa2befa849438fbefeb9d1f11792dcff58b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 660b1bfbc770fd41994ef1d8154e0a93c2f58db65d71a75ad2a621aa3609c7fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925701"
 ---
-# <a name="frs-control-data-creation-attribute"></a>FRS-Control-Data-creazione attributo
+# <a name="frs-control-data-creation-attribute"></a>Attributo FRS-Control-Data-Creation
 
-Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al secondo).
+Coppia a livello di avviso/errore per la creazione di dati di file (megabyte al secondo).
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | FRS-controllo-dati-creazione                   |
-| LDAP-Display-Name | fRSControlDataCreation                      |
+| CN                | FRS-Control-Data-Creation                   |
+| Ldap-Display-Name | fRSControlDataCreation                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.871                      |
-| System-ID-GUID    | 2a13257a-9373-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | 2a13257a-9373-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Coppia di avvisi/livelli di errore per la creazione di dati di file (megabyte al
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Vero                                             |
+| Is-Single-Valued       | Vero                                             |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 

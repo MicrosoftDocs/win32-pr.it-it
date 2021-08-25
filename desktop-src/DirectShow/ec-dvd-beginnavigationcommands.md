@@ -1,7 +1,7 @@
 ---
-description: Inviato quando viene avviato un set di comandi di spostamento su DVD.
+description: Inviato all'avvio di un set di comandi di navigazione DVD.
 ms.assetid: 9cdcb211-a9e3-4a15-81bd-7ada2b9d823a
-title: EC_DVD_BeginNavigationCommands (Dvdevcode. h)
+title: EC_DVD_BeginNavigationCommands (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: cda904c4fcc0b1acdd16c8fc4596eef332140ec4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e0c39b43fc29ed5fadcac0e85ff23ef9f1945a25e26bcfdb0f1e81f804abbc07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965901"
 ---
-# <a name="ec_dvd_beginnavigationcommands"></a>\_BeginNavigationCommands DVD \_ EC
+# <a name="ec_dvd_beginnavigationcommands"></a>EC \_ DVD \_ BeginNavigationCommands
 
-Inviato quando viene avviato un set di comandi di spostamento su DVD.
+Inviato all'avvio di un set di comandi di navigazione DVD.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Inviato quando viene avviato un set di comandi di spostamento su DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore dell'enumerazione [**\_ NavCmdType DVD**](/windows/win32/api/strmif/ne-strmif-dvd_navcmdtype) .
+Valore [**dell'enumerazione \_ NAVCmdType DVD.**](/windows/win32/api/strmif/ne-strmif-dvd_navcmdtype)
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDVDControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **DVD \_ EnableLoggingEvents** su **true**.
+Questo evento è disabilitato per impostazione predefinita. Per abilitare questo evento, chiamare [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e impostare l'opzione **\_ DVD EnableLoggingEvents** su **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Questo evento è disabilitato per impostazione predefinita. Per abilitare questo
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

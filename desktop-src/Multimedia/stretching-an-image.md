@@ -3,20 +3,20 @@ title: Estensione di un'immagine
 description: Estensione di un'immagine
 ms.assetid: 7cfd91c3-0ebd-47eb-a33d-c81a66f820e5
 keywords:
-- MCIWndGetDest (macro)
-- MCIWndPutDest (macro)
+- Macro MCIWndGetDest
+- Macro MCIWndPutDest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0296cd31988ba79aeab9221fb41b4fd150ffc09
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 283ecc69af3298930b4fb9788a02fb60167483fc10b185dd21e696affe4ee58a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892571"
 ---
 # <a name="stretching-an-image"></a>Estensione di un'immagine
 
-Nell'esempio seguente si estendono le immagini di un clip video. Aumenta le dimensioni del rettangolo di destinazione usando la macro [**MCIWndPutDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) . La dimensione dell'area di riproduzione rimane invariata, quindi il risultato è un'immagine ingrandita e distorta. Negli esempi viene utilizzata la funzione **MCIWndPutDest** per riposizionare il rettangolo di destinazione rispetto all'area di riproduzione, consentendo di visualizzare parti diverse dell'immagine estesa.
+L'esempio seguente estende le immagini di un clip video. Aumenta le dimensioni del rettangolo di destinazione usando la macro [**MCIWndPutDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) Le dimensioni dell'area di riproduzione rimangono invariate, quindi il risultato è un'immagine distorta e ingrandita. Negli esempi viene utilizzata la **funzione MCIWndPutDest** per riposizionare il rettangolo di destinazione rispetto all'area di riproduzione, offrendo un modo per visualizzare parti diverse dell'immagine estesa.
 
 
 ```C++
@@ -74,9 +74,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

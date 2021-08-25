@@ -1,15 +1,15 @@
 ---
-description: Il metodo PlayForwards avvia la riproduzione dalla posizione corrente alla velocità specificata.
+description: Il metodo PlayForwards avvia la riproduzione in avanti dalla posizione corrente alla velocità specificata.
 ms.assetid: 4f1a3e74-b343-413d-8df7-6c4bea39c62d
 title: Metodo PlayForwards
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d49d8d6d80613c4dd5b2b8a374002b37d9baa4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 81e607779147ba057b9cfd747ebfe827a25e294e2b04cdfa7e61a0691ecf293c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830631"
 ---
 # <a name="playforwards-method"></a>Metodo PlayForwards
 
@@ -18,7 +18,7 @@ ms.locfileid: "103746794"
 
  
 
-Il `PlayForwards` metodo inizia la riproduzione dalla posizione corrente alla velocità specificata.
+Il `PlayForwards` metodo avvia la riproduzione in avanti dalla posizione corrente alla velocità specificata.
 
 ``` syntax
 MSWebDVD.PlayForwards(nSpeed)
@@ -31,7 +31,7 @@ MSWebDVD.PlayForwards(nSpeed)
 <span id="nSpeed"></span><span id="nspeed"></span><span id="NSPEED"></span>*nSpeed*
 </dt> <dd>
 
-Specifica la velocità di riproduzione come valore intero. Questo valore è un moltiplicatore: 1.0 è la velocità di riproduzione normale; 2,0 è una doppia velocità, 0,5 è la metà della velocità e così via. Quando **nSpeed** non è uguale a 1,0, l'audio viene disattivato e la sottoimmagine è disattivata.
+Specifica la velocità alla quale eseguire la riproduzione come valore Integer. Questo valore è un moltiplicatore, ovvero 1,0 è la velocità di riproduzione normale. 2.0 è a doppia velocità, 0,5 è a metà velocità e così via. Quando **nSpeed** non è uguale a 1.0, l'audio viene disattivato e l'immagine secondaria viene disattivata.
 
 </dd> </dl>
 

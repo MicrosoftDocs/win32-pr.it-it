@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskSettings. RunOnlyIfIdle
-description: Per gli script, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo se il computer si trova in una condizione di inattività.
+title: TaskSettings.RunOnlyIfIdle - proprietà
+description: Per lo scripting, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo se il computer si trova in una condizione di inattività.
 ms.assetid: fca1d98e-0544-4301-a709-1e0dae762e07
 keywords:
-- Utilità di pianificazione proprietà RunOnlyIfIdle
-- Utilità di pianificazione proprietà RunOnlyIfIdle, oggetto TaskSettings
-- Oggetto TaskSettings Utilità di pianificazione, proprietà RunOnlyIfIdle
+- Proprietà RunOnlyIfIdle Utilità di pianificazione
+- Proprietà RunOnlyIfIdle Utilità di pianificazione , oggetto TaskSettings
+- Oggetto TaskSettings Utilità di pianificazione proprietà RunOnlyIfIdle
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8256b2a3d1dd96db9a8f29b49ce10f6c2fdb266d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed423dc4cd34a03bd3b76401284a4d6bfb98270e7c0d0feed0a45046a82e7d3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990821"
 ---
-# <a name="tasksettingsrunonlyifidle-property"></a>Proprietà TaskSettings. RunOnlyIfIdle
+# <a name="tasksettingsrunonlyifidle-property"></a>TaskSettings.RunOnlyIfIdle - proprietà
 
-Per gli script, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo se il computer si trova in una condizione di inattività.
+Per lo scripting, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo se il computer si trova in una condizione di inattività.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -40,11 +40,11 @@ TaskSettings.RunOnlyIfIdle As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se true, la proprietà indica che il Utilità di pianificazione eseguirà l'attività solo se il computer si trova in una condizione di inattività. Il valore predefinito è False.
+Se True, la proprietà indica che il Utilità di pianificazione eseguirà l'attività solo se il computer è in una condizione di inattività. Il valore predefinito è False.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfIdle**](taskschedulerschema-runonlyifidle-settingstype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfIdle**](taskschedulerschema-runonlyifidle-settingstype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

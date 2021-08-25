@@ -1,6 +1,6 @@
 ---
-title: Servizi Desktop remoto codici di errore del provider WMI (Wbemcli. h)
-description: Errori restituiti dal provider WMI Servizi Desktop remoto. Per un elenco di altri errori WMI, vedere costanti di errore WMI.
+title: Servizi Desktop remoto di errore del provider WMI (Wbemcli.h)
+description: Errori restituiti dal Servizi Desktop remoto WMI. Per un elenco di altri errori WMI, vedere Costanti di errore WMI.
 ms.assetid: 1e68c41d-f321-4bc5-ba30-b69f5ba741eb
 ms.tgt_platform: multiple
 topic_type:
@@ -35,20 +35,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 252015a5d80a1487033ad285ce3080f4d666f0c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f02b2c1cc07bbe9431f2d0e64252258d76de9e6f06c0d7b756b3a5af4e42bff2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869671"
 ---
-# <a name="remote-desktop-services-wmi-provider-error-codes"></a>Servizi Desktop remoto codici di errore del provider WMI
+# <a name="remote-desktop-services-wmi-provider-error-codes"></a>Servizi Desktop remoto di errore del provider WMI
 
-Nell'elenco seguente sono elencati gli errori WMI restituiti dal provider WMI Servizi Desktop remoto. Per un elenco di altri errori WMI, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
+Nell'elenco seguente sono elencati gli errori WMI restituiti dal Servizi Desktop remoto WMI. Per un elenco di altri errori WMI, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants).
 
 <dl> <dt>
 
-<span id="WBEM_E_FAILED"></span><span id="wbem_e_failed"></span>**WBEM \_ E \_ non riuscito**
+<span id="WBEM_E_FAILED"></span><span id="wbem_e_failed"></span>**WBEM \_ E \_ NON RIUSCITO**
 </dt> <dd> <dl> <dt>
 
 2147749889 (0x80041001)
@@ -61,7 +61,7 @@ La chiamata al metodo non è riuscita.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NOT_FOUND"></span><span id="wbem_e_not_found"></span>**WBEM \_ E \_ non \_ trovato**
+<span id="WBEM_E_NOT_FOUND"></span><span id="wbem_e_not_found"></span>**WBEM \_ E \_ NON \_ TROVATO**
 </dt> <dd> <dl> <dt>
 
 2147749890 (0x80041002)
@@ -74,7 +74,7 @@ Impossibile trovare l'oggetto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_PROVIDER_FAILURE"></span><span id="wbem_e_provider_failure"></span>**\_errore del \_ provider WBEM E \_**
+<span id="WBEM_E_PROVIDER_FAILURE"></span><span id="wbem_e_provider_failure"></span>**ERRORE DEL \_ PROVIDER WBEM E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749892 (0x80041004)
@@ -82,12 +82,12 @@ Impossibile trovare l'oggetto.
 
 
 
-Il provider ha avuto esito negativo in un momento diverso dall'inizializzazione.
+Il provider ha avuto esito negativo in un momento diverso da durante l'inizializzazione.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_TYPE_MISMATCH"></span><span id="wbem_e_type_mismatch"></span>**\_tipo WBEM E non \_ \_ corrispondente**
+<span id="WBEM_E_TYPE_MISMATCH"></span><span id="wbem_e_type_mismatch"></span>**MANCATA \_ CORRISPONDENZA DEL TIPO E \_ WBEM \_**
 </dt> <dd> <dl> <dt>
 
 2147749893 (0x80041005)
@@ -100,7 +100,7 @@ Si è verificata una mancata corrispondenza del tipo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_OUT_OF_MEMORY"></span><span id="wbem_e_out_of_memory"></span>**WBEM \_ E \_ \_ \_ memoria insufficiente**
+<span id="WBEM_E_OUT_OF_MEMORY"></span><span id="wbem_e_out_of_memory"></span>**MEMORIA INSUFFICIENTE PER WBEM \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749894 (0x80041006)
@@ -113,7 +113,7 @@ Memoria insufficiente per eseguire l'operazione.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_PARAMETER"></span><span id="wbem_e_invalid_parameter"></span>**\_parametro WBEM E \_ non valido \_**
+<span id="WBEM_E_INVALID_PARAMETER"></span><span id="wbem_e_invalid_parameter"></span>**PARAMETRO WBEM \_ E \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749896 (0x80041008)
@@ -126,7 +126,7 @@ Uno dei parametri della chiamata non è corretto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NOT_AVAILABLE"></span><span id="wbem_e_not_available"></span>**WBEM \_ E \_ non \_ disponibile**
+<span id="WBEM_E_NOT_AVAILABLE"></span><span id="wbem_e_not_available"></span>**WBEM \_ E \_ NON \_ DISPONIBILE**
 </dt> <dd> <dl> <dt>
 
 2147749897 (0x80041009)
@@ -139,7 +139,7 @@ La risorsa, tipicamente un server remoto, non è attualmente disponibile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NOT_SUPPORTED"></span><span id="wbem_e_not_supported"></span>**WBEM \_ E \_ non \_ supportato**
+<span id="WBEM_E_NOT_SUPPORTED"></span><span id="wbem_e_not_supported"></span>**WBEM \_ E \_ NON \_ SUPPORTATO**
 </dt> <dd> <dl> <dt>
 
 2147749900 (0x8004100C)
@@ -152,7 +152,7 @@ La funzionalità o l'operazione non è supportata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_NAMESPACE"></span><span id="wbem_e_invalid_namespace"></span>**\_ \_ spazio dei nomi WBEM E non valido \_**
+<span id="WBEM_E_INVALID_NAMESPACE"></span><span id="wbem_e_invalid_namespace"></span>**SPAZIO DEI NOMI WBEM \_ E \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749902 (0x8004100E)
@@ -165,7 +165,7 @@ Impossibile trovare lo spazio dei nomi specificato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_OBJECT"></span><span id="wbem_e_invalid_object"></span>**\_oggetto WBEM E \_ non valido \_**
+<span id="WBEM_E_INVALID_OBJECT"></span><span id="wbem_e_invalid_object"></span>**OGGETTO WBEM \_ E \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749903 (0x8004100F)
@@ -178,7 +178,7 @@ L'istanza specificata non è valida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INITIALIZATION_FAILURE"></span><span id="wbem_e_initialization_failure"></span>**\_errore di \_ inizializzazione WBEM E \_**
+<span id="WBEM_E_INITIALIZATION_FAILURE"></span><span id="wbem_e_initialization_failure"></span>**ERRORE DI \_ INIZIALIZZAZIONE WBEM E \_ \_**
 </dt> <dd> <dl> <dt>
 
 2147749908 (0x80041014)
@@ -186,12 +186,12 @@ L'istanza specificata non è valida.
 
 
 
-Non è stato possibile inizializzare un modulo, ad esempio un provider, per motivi interni.
+Un modulo, ad esempio un provider, non è stato inizializzato per motivi interni.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_OPERATION"></span><span id="wbem_e_invalid_operation"></span>**\_operazione WBEM E \_ non valida \_**
+<span id="WBEM_E_INVALID_OPERATION"></span><span id="wbem_e_invalid_operation"></span>**OPERAZIONE WBEM \_ E \_ NON \_ VALIDA**
 </dt> <dd> <dl> <dt>
 
 2147749910 (0x80041016)
@@ -199,12 +199,12 @@ Non è stato possibile inizializzare un modulo, ad esempio un provider, per moti
 
 
 
-Il tipo di operazione richiesta non è valido. Questo errore si applica generalmente a tentativi non validi di eliminare classi o proprietà. Questo errore viene restituito quando si tenta di modificare una proprietà di sostituzione del server tramite il controllo criteri di gruppo.
+Il tipo di operazione richiesta non è valido. Questo errore si applica generalmente a tentativi non validi di eliminare classi o proprietà. Questo errore viene restituito nel tentativo di modificare una proprietà di override del server tramite il controllo Criteri di gruppo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_QUERY"></span><span id="wbem_e_invalid_query"></span>**\_query WBEM E \_ non valida \_**
+<span id="WBEM_E_INVALID_QUERY"></span><span id="wbem_e_invalid_query"></span>**QUERY WBEM \_ E \_ NON \_ VALIDA**
 </dt> <dd> <dl> <dt>
 
 2147749911 (0x80041017)
@@ -217,7 +217,7 @@ La sintassi della query non è valida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_QUERY_TYPE"></span><span id="wbem_e_invalid_query_type"></span>**\_tipo di query WBEM E \_ non valido \_ \_**
+<span id="WBEM_E_INVALID_QUERY_TYPE"></span><span id="wbem_e_invalid_query_type"></span>**TIPO DI QUERY WBEM \_ E \_ NON \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749912 (0x80041018)
@@ -230,7 +230,7 @@ Il linguaggio della query richiesta non è supportato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_ALREADY_EXISTS"></span><span id="wbem_e_already_exists"></span>**WBEM \_ E \_ \_ esiste già**
+<span id="WBEM_E_ALREADY_EXISTS"></span><span id="wbem_e_already_exists"></span>**WBEM \_ E \_ ESISTE \_ GIÀ**
 </dt> <dd> <dl> <dt>
 
 2147749913 (0x80041019)
@@ -238,12 +238,12 @@ Il linguaggio della query richiesta non è supportato.
 
 
 
-In un'operazione Put è stato specificato il flag **wbemChangeFlagCreateOnly** , ma l'istanza esiste già.
+In un'operazione put è stato specificato il flag **wbemChangeFlagCreateOnly,** ma l'istanza esiste già.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_SYNTAX"></span><span id="wbem_e_invalid_syntax"></span>**\_sintassi WBEM E \_ non valida \_**
+<span id="WBEM_E_INVALID_SYNTAX"></span><span id="wbem_e_invalid_syntax"></span>**SINTASSI WBEM \_ E \_ NON \_ VALIDA**
 </dt> <dd> <dl> <dt>
 
 2147749921 (0x80041021)
@@ -256,7 +256,7 @@ La query non è sintatticamente valida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_READ_ONLY"></span><span id="wbem_e_read_only"></span>**WBEM \_ E \_ sola lettura \_**
+<span id="WBEM_E_READ_ONLY"></span><span id="wbem_e_read_only"></span>**WBEM \_ E DI SOLA \_ \_ LETTURA**
 </dt> <dd> <dl> <dt>
 
 2147749923 (0x80041023)
@@ -269,7 +269,7 @@ La proprietà che si tenta di modificare è di sola lettura.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_PROVIDER_NOT_CAPABLE"></span><span id="wbem_e_provider_not_capable"></span>**il \_ provider WBEM E \_ \_ non è \_ in grado di supportare**
+<span id="WBEM_E_PROVIDER_NOT_CAPABLE"></span><span id="wbem_e_provider_not_capable"></span>**PROVIDER WBEM \_ E \_ NON \_ \_ IDONEO**
 </dt> <dd> <dl> <dt>
 
 2147749924 (0x80041024)
@@ -277,12 +277,12 @@ La proprietà che si tenta di modificare è di sola lettura.
 
 
 
-Il provider non è in grado di eseguire l'operazione richiesta. L'operazione potrebbe includere una query troppo complessa, il recupero di un'istanza, la creazione di una classe, l'aggiornamento di una classe, l'eliminazione di una classe o l'enumerazione di una classe.
+Il provider non può eseguire l'operazione richiesta. L'operazione può includere una query troppo complessa, il recupero di un'istanza, la creazione di una classe, l'aggiornamento di una classe, l'eliminazione di una classe o l'enumerazione di una classe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_ILLEGAL_NULL"></span><span id="wbem_e_illegal_null"></span>**WBEM \_ E \_ null non valido \_**
+<span id="WBEM_E_ILLEGAL_NULL"></span><span id="wbem_e_illegal_null"></span>**WBEM \_ E NULL NON \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749928 (0x80041028)
@@ -290,12 +290,12 @@ Il provider non è in grado di eseguire l'operazione richiesta. L'operazione pot
 
 
 
-Non è stato specificato **alcun** valore / **null** per una proprietà che non può essere  / **null**, ad esempio una chiave contrassegnata da un qualificatore di [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**indicizzato**](/windows/desktop/WmiSdk/optional-qualifiers)o [**Not \_ null**](/windows/desktop/WmiSdk/optional-qualifiers) .
+È stato specificato **un valore Nothing** NULL per una proprietà che non può essere Nothing NULL, ad esempio uno contrassegnato da un qualificatore /   /  [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Indexed**](/windows/desktop/WmiSdk/optional-qualifiers)o [**Not \_ Null.**](/windows/desktop/WmiSdk/optional-qualifiers)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_VALUE_OUT_OF_RANGE"></span><span id="wbem_e_value_out_of_range"></span>**\_valore WBEM E non compreso nell' \_ \_ \_ \_ intervallo**
+<span id="WBEM_E_VALUE_OUT_OF_RANGE"></span><span id="wbem_e_value_out_of_range"></span>**VALORE \_ WBEM E NON COMPRESO \_ \_ \_ \_ NELL'INTERVALLO**
 </dt> <dd> <dl> <dt>
 
 2147749931 (0x8004102B)
@@ -308,7 +308,7 @@ La richiesta è stata eseguita con un valore esterno all'intervallo o è incompa
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_METHOD"></span><span id="wbem_e_invalid_method"></span>**WBEM \_ E \_ metodo non valido \_**
+<span id="WBEM_E_INVALID_METHOD"></span><span id="wbem_e_invalid_method"></span>**METODO WBEM \_ E \_ NON \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749934 (0x8004102E)
@@ -321,7 +321,7 @@ Il metodo richiesto non è disponibile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_METHOD_PARAMETERS"></span><span id="wbem_e_invalid_method_parameters"></span>**\_parametri del metodo WBEM E \_ non validi \_ \_**
+<span id="WBEM_E_INVALID_METHOD_PARAMETERS"></span><span id="wbem_e_invalid_method_parameters"></span>**PARAMETRI DEL METODO \_ WBEM E \_ NON \_ \_ VALIDI**
 </dt> <dd> <dl> <dt>
 
 2147749935 (0x8004102F)
@@ -334,7 +334,7 @@ I parametri forniti per il metodo non sono validi.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_OBJECT_PATH"></span><span id="wbem_e_invalid_object_path"></span>**\_percorso dell'oggetto WBEM E \_ non valido \_ \_**
+<span id="WBEM_E_INVALID_OBJECT_PATH"></span><span id="wbem_e_invalid_object_path"></span>**PERCORSO \_ DELL'OGGETTO WBEM E NON \_ \_ \_ VALIDO**
 </dt> <dd> <dl> <dt>
 
 2147749946 (0x8004103A)
@@ -355,7 +355,7 @@ Il percorso dell'oggetto specificato non è valido.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Wbemcli. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemcli.h</dt> </dl> |
 
 
 

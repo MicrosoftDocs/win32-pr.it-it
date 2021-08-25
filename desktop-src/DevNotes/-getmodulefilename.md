@@ -1,7 +1,7 @@
 ---
 description: Ottiene il percorso del modulo.
 ms.assetid: ff632357-8d4a-4de4-a69a-0be9e380639d
-title: Funzione _GetModuleFileName
+title: _GetModuleFileName funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: 5bf18e8baac62de6474f4ce1e48a0ae115ced778
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a10ff54d7f118dc71e12cdb5b29e28d3b3dd6e60c7b51c263af8c62c1264968c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911921"
 ---
-# <a name="_getmodulefilename-function"></a>\_GetModuleFileName (funzione)
+# <a name="_getmodulefilename-function"></a>\_Funzione GetModuleFileName
 
-\[Questa funzione è un wrapper per la funzione **GetModuleFileName** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **GetModuleFileName** .\]
+\[Questa funzione è un wrapper sulla **funzione GetModuleFileName.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **direttamente GetModuleFileName.**\]
 
 Ottiene il percorso del modulo. Vedere [**GetModuleFileName**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamea).
 

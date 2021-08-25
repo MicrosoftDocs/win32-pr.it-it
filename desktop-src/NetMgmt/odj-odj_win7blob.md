@@ -1,18 +1,18 @@
 ---
 title: ODJ_WIN7BLOB
-description: Definizione di ODJ_WIN7BLOB IDL
+description: ODJ_WIN7BLOB IDL Definition
 ms.assetid: 5802e00c-b943-45d8-8298-5c2b4b996b85
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 2083648636bd58c64314ba22852839f89ed4461d
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: ab6f6582b23d6e65866ba1380b696fab6d8313578fab47ad5dda999b09a1caa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104339563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911596"
 ---
-# <a name="odj_win7blob-structure"></a>Struttura ODJ_WIN7BLOB
+# <a name="odj_win7blob-structure"></a>ODJ_WIN7BLOB struttura
 
 Contiene le informazioni di base necessarie per aggiungere un client a un dominio.
 
@@ -46,11 +46,11 @@ Deve essere impostato su una password non crittografata per l'account del comput
 
 ### <a name="dnsdomaininfo"></a>DnsDomainInfo
 
-Contiene informazioni sul dominio da unire.
+Contiene informazioni sul dominio aggiunto.
 
 ### <a name="dcinfo"></a>DcInfo
 
-Contiene informazioni sulla denominazione e sull'indirizzamento del controller di dominio utilizzato per creare l'account del computer Active Directory.
+Contiene informazioni di denominazione e indirizzamento sul controller di dominio utilizzato per creare l'account computer Active Directory.
 
 ### <a name="options"></a>Opzioni
 
@@ -58,9 +58,9 @@ Deve essere impostato su zero.
 
 ## <a name="see-also"></a>Vedi anche
 
-[**Definizioni IDL di aggiunta al dominio offline**](odj-idl.md)
+[**Definizioni IDL di aggiunta a un dominio offline**](odj-idl.md)
 
-[**\_informazioni sul \_ \_ dominio DNS del criterio \_ ODJ**](odj-odj_policy_dns_domain_info.md)
+[**INFORMAZIONI SUL DOMINIO \_ \_ DNS DEI CRITERI \_ ODJ \_**](odj-odj_policy_dns_domain_info.md)
 
 [**DOMAIN_CONTROLLER_INFOW**](/windows/win32/api/dsgetdc/ns-dsgetdc-domain_controller_infow)
 

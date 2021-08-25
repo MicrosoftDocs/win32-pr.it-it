@@ -1,9 +1,9 @@
 ---
-title: Messaggio DTM_GETIDEALSIZE (COMmctrl. h)
-description: Ottiene le dimensioni necessarie per visualizzare il controllo senza ritagliare. Inviare questo messaggio in modo esplicito o utilizzando la \_ macro DateTime GetIdealSize.
+title: DTM_GETIDEALSIZE messaggio (Commctrl.h)
+description: Ottiene le dimensioni necessarie per visualizzare il controllo senza ritaglio. Inviare questo messaggio in modo esplicito o usando la \_ macro DateTime GetIdealSize.
 ms.assetid: 15ec26a1-645b-4a96-af66-1031e1a46c6c
 keywords:
-- Controlli di Windows Message DTM_GETIDEALSIZE
+- DTM_GETIDEALSIZE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a979883f431fea4627f52fe19c3716341e3f2328
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 639fbbb25fbf61695f83b54f106f45ff3dd421f528807120be52edd7031e4f66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878231"
 ---
-# <a name="dtm_getidealsize-message"></a>\_Messaggio GETIDEALSIZE DTM
+# <a name="dtm_getidealsize-message"></a>Messaggio DTM \_ GETIDEALSIZE
 
-Ottiene le dimensioni necessarie per visualizzare il controllo senza ritagliare. Inviare questo messaggio in modo esplicito o utilizzando la macro [**DateTime \_ GetIdealSize**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getidealsize) .
+Ottiene le dimensioni necessarie per visualizzare il controllo senza ritaglio. Inviare questo messaggio in modo esplicito o usando la macro [**\_ DateTime GetIdealSize.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getidealsize)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Non usato. Deve essere zero.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**dimensioni**](/previous-versions//dd145106(v=vs.85)) per la ricezione delle dimensioni ideali. L'applicazione chiamante è responsabile dell'allocazione di questa struttura.
+Puntatore a una [**struttura SIZE**](/previous-versions//dd145106(v=vs.85)) per ricevere le dimensioni ideali. L'applicazione chiamante è responsabile dell'allocazione di questa struttura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true**.
+Restituisce **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce **true**.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

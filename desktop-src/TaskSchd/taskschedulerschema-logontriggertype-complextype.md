@@ -3,7 +3,7 @@ title: Tipo complesso logonTriggerType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento LogonTrigger.
 ms.assetid: ddb1d01b-89d1-4d52-872c-4fbd90f32f4b
 keywords:
-- Utilità di pianificazione di tipo complesso logonTriggerType
+- Tipo complesso logonTriggerType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81a3f42eb94d14506d96348b803c8b1bc41737d1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85cbbeaa5d911b1ef9677c79980167a66cdf410c7aa63597b02b007795dfbd81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991212"
 ---
 # <a name="logontriggertype-complex-type"></a>Tipo complesso logonTriggerType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento LogonTrigger.**](taskschedulerschema-logontrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="logonTriggerType">
@@ -52,14 +52,14 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Elemento                                                               | Tipo                                                                    | Descrizione                                                                                   |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Ritardo**](taskschedulerschema-delay-logontriggertype-element.md)   | duration                                                                | Intervallo di tempo tra il momento in cui l'utente esegue l'accesso e l'avvio dell'attività.<br/>         |
-| [**UserId**](taskschedulerschema-userid-logontriggertype-element.md) | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Identificatore dell'utente. L'attività viene avviata quando l'utente accede al computer.<br/> |
+| [**Ritardo**](taskschedulerschema-delay-logontriggertype-element.md)   | duration                                                                | Intervallo di tempo tra l'accesso dell'utente e l'avvio dell'attività.<br/>         |
+| [**Userid**](taskschedulerschema-userid-logontriggertype-element.md) | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md) | Identificatore dell'utente. L'attività viene avviata quando l'utente accede al computer.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Oltre agli elementi figlio definiti in questa sezione, l'elemento [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) usa anche elementi figlio definiti dal tipo complesso [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) .
+Oltre agli elementi figlio definiti qui, [**l'elemento LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) usa anche gli elementi figlio definiti dal [**tipo complesso triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Oltre agli elementi figlio definiti in questa sezione, l'elemento [**LogonTrigge
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -76,7 +76,7 @@ Oltre agli elementi figlio definiti in questa sezione, l'elemento [**LogonTrigge
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

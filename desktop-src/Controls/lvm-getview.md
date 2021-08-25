@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETVIEW (COMmctrl. h)
+title: LVM_GETVIEW messaggio (Commctrl.h)
 description: Recupera la visualizzazione corrente di un controllo visualizzazione elenco.
 ms.assetid: dd63e726-3a7f-40e7-8d46-4680816c02a3
 keywords:
-- Controlli di Windows Message LVM_GETVIEW
+- LVM_GETVIEW dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2da295fa5a5b335de60169ce06b777d9e355121
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 431b0a7b3fba9a45370c372347285489a56082c4a04396c273a45c4da41b05b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915511"
 ---
-# <a name="lvm_getview-message"></a>\_Messaggio LVM GETview
+# <a name="lvm_getview-message"></a>Messaggio \_ LVM GETVIEW
 
 Recupera la visualizzazione corrente di un controllo visualizzazione elenco.
 
@@ -43,14 +43,14 @@ Restituisce un **valore DWORD** che specifica la visualizzazione corrente.
 
 Di seguito sono riportati i valori per le visualizzazioni.
 
--   \_dettagli vista \_ LV
--   \_icona di visualizzazione LV \_
--   \_elenco viste \_ LV
--   \_SMALLICON vista \_ LV
--   \_riquadro Vista \_ LV
+-   DETTAGLI DELLA \_ VISUALIZZAZIONE \_ LV
+-   ICONA VISUALIZZAZIONE \_ \_ LV
+-   ELENCO DI VISUALIZZAZIONE LV \_ \_
+-   VISUALIZZAZIONE LV \_ \_ SMALLICON
+-   RIQUADRO \_ VISUALIZZAZIONE LV \_
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -60,9 +60,9 @@ Di seguito sono riportati i valori per le visualizzazioni.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

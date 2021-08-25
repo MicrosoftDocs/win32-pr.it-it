@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f113b3df247765b958dfe47bb04fafb6c9a13bbe
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 543b6b40d3fe24f902eb999a9377b8dbf60e1baa31efb70febbd2c0261d47305
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857441"
 ---
 # <a name="d3dpresent_parameters-structure"></a>Struttura PARAMETERS \_ D3DPRESENT
 
@@ -83,9 +83,9 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 Formato del buffer nascosto. Per altre informazioni sui formati, vedere [D3DFORMAT](d3dformat.md). Questo valore deve essere uno dei formati di destinazione di rendering convalidati da [**CheckDeviceType.**](/windows/desktop/api) È possibile usare [**GetDisplayMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode) per ottenere il formato corrente.
 
-È infatti possibile specificare D3DFMT \_ UNKNOWN per **BackBufferFormat** in modalità finestra. Questo indica al runtime di usare il formato della modalità di visualizzazione corrente ed elimina la necessità di [**chiamare GetDisplayMode.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode)
+In realtà, È possibile specificare D3DFMT \_ UNKNOWN per **BackBufferFormat** in modalità finestra. Ciò indica al runtime di usare il formato corrente della modalità di visualizzazione ed elimina la necessità di chiamare [**GetDisplayMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdisplaymode).
 
-Per le applicazioni con finestra, il formato del buffer nascosto non deve più corrispondere al formato della modalità di visualizzazione perché la conversione dei colori può ora essere eseguita dall'hardware (se l'hardware supporta la conversione dei colori). Il set di possibili formati di buffer nascosto è vincolato, ma il runtime consentirà di presentare qualsiasi formato di buffer nascosto valido a qualsiasi formato desktop. Esiste il requisito aggiuntivo che il dispositivo sia operabile nel desktop. I dispositivi in genere non funzionano in modalità a 8 bit per pixel.
+Per le applicazioni con finestra, il formato del buffer nascosto non deve più corrispondere al formato della modalità di visualizzazione perché la conversione dei colori può ora essere eseguita dall'hardware (se l'hardware supporta la conversione dei colori). Il set di possibili formati di buffer nascosto è vincolato, ma il runtime consentirà di presentare qualsiasi formato di buffer nascosto valido in qualsiasi formato desktop. Esiste il requisito aggiuntivo che il dispositivo sia operabile nel desktop. I dispositivi in genere non funzionano in modalità a 8 bit per pixel.
 
 Le applicazioni a schermo intero non possono eseguire la conversione dei colori.
 
@@ -98,9 +98,9 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Questo valore può essere compreso tra 0 e [D3DPRESENT \_ BACK \_ BUFFERS \_ MAX](d3dpresent-back-buffers.md) (o [D3DPRESENT \_ BACK \_ BUFFERS MAX \_ \_ EX](d3dpresent-back-buffers.md) quando si usa Direct3D 9Ex). I valori 0 vengono considerati come 1. Se non è possibile creare il numero di buffer nascosto, il runtime non riuscirà a chiamare il metodo e riempirà questo valore con il numero di buffer che è possibile creare. Di conseguenza, un'applicazione può chiamare il metodo due volte con la stessa struttura PARAMETERS D3DPRESENT e aspettarsi che \_ funzioni la seconda volta.
+Questo valore può essere compreso tra 0 e [D3DPRESENT \_ BACK \_ BUFFERS \_ MAX](d3dpresent-back-buffers.md) (o [D3DPRESENT \_ BACK \_ BUFFERS MAX \_ \_ EX](d3dpresent-back-buffers.md) quando si usa Direct3D 9Ex). I valori 0 vengono considerati come 1. Se non è possibile creare il numero di buffer nascosto, il runtime avrà esito negativo nella chiamata al metodo e riempirà questo valore con il numero di buffer che è possibile creare. Di conseguenza, un'applicazione può chiamare il metodo due volte con la stessa struttura PARAMETERS D3DPRESENT e prevede che \_ funzioni la seconda volta.
 
-Il metodo ha esito negativo se non è possibile creare un buffer nascosto. Il valore di **BackBufferCount** influenza il set di effetti di scambio consentiti. In particolare, qualsiasi effetto di scambio COPY D3DSWAPEFFECT richiede \_ che sia presente esattamente un buffer nascosto.
+Il metodo ha esito negativo se non è possibile creare un buffer nascosto. Il valore di **BackBufferCount** influisce sul set di effetti di scambio consentiti. In particolare, qualsiasi effetto di scambio COPY D3DSWAPEFFECT richiede che sia \_ presente esattamente un buffer nascosto.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo: **[ **D3DMULTISAMPLE \_ TYPE**](./d3dmultisample-type.md)**
 
 </dd> <dd>
 
-Membro del [**tipo enumerato D3DMULTISAMPLE \_ TYPE.**](./d3dmultisample-type.md) Il valore deve essere D3DMULTISAMPLE NONE a meno che SwapEffect non sia stato \_ impostato su  D3DSWAPEFFECT \_ DISCARD. Il multisampling è supportato solo se l'effetto di scambio è D3DSWAPEFFECT \_ DISCARD.
+Membro del [**tipo enumerato D3DMULTISAMPLE \_ TYPE.**](./d3dmultisample-type.md) Il valore deve essere D3DMULTISAMPLE NONE a meno che SwapEffect non sia stato \_ impostato su  D3DSWAPEFFECT \_ DISCARD. Il multicampionamento è supportato solo se l'effetto di scambio è D3DSWAPEFFECT \_ DISCARD.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ D3DSWAPEFFECT DISCARD verrà applicato nel runtime di debug riempiendo qualsiasi
 
 Differenze tra Direct3D9 e Direct3D9Ex:
 
-- In Direct3D9Ex, D3DSWAPEFFECT FLIPEX viene aggiunto per designare quando un'applicazione \_ adotta la modalità flip. Ovvero, il frame di un'applicazione viene passato in modalità finestra (anziché copiato) al Gestione finestre desktop (DWM) per la composizione. La modalità flip offre una larghezza di banda di memoria più efficiente e consente a un'applicazione di sfruttare le statistiche presenti a schermo intero. Non modifica il comportamento a schermo intero. Il comportamento della modalità capovolgimento è disponibile a partire da Windows 7.
+- In Direct3D9Ex, D3DSWAPEFFECT FLIPEX viene aggiunto per designare quando un'applicazione \_ adotta la modalità flip. Ovvero, il frame di un'applicazione viene passato in modalità finestra (anziché copiato) al Gestione finestre desktop(DWM) per la composizione. La modalità flip offre una larghezza di banda di memoria più efficiente e consente a un'applicazione di sfruttare le statistiche presenti a schermo intero. Non modifica il comportamento a schermo intero. Il comportamento della modalità capovolgimento è disponibile a partire Windows 7.
 
 
 
@@ -158,13 +158,13 @@ Tipo: **[ **HWND**](../winprog/windows-data-types.md)**
 
 La finestra del dispositivo determina la posizione e le dimensioni del buffer nascosto sullo schermo. Viene usato da Direct3D quando il contenuto del buffer nascosto viene copiato nel front buffer durante [**present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present).
 
--   Per un'applicazione a schermo intero, si tratta di un handle per la finestra superiore, ovvero la finestra attiva.
+-   Per un'applicazione a schermo intero, si tratta di un handle per la finestra superiore ,ovvero la finestra attiva.
 
-    Per le applicazioni che usano più dispositivi a schermo intero(ad esempio un sistema multimonitor), esattamente un dispositivo può usare la finestra di attivazione come finestra del dispositivo. Tutti gli altri dispositivi devono avere finestre univoche del dispositivo.
+    Per le applicazioni che usano più dispositivi a schermo intero ,ad esempio un sistema multimonitoraggio, esattamente un dispositivo può usare la finestra dello stato attivo come finestra del dispositivo. Tutti gli altri dispositivi devono avere finestre del dispositivo univoche.
 
--   Per un'applicazione in modalità finestra, questo handle sarà la finestra di destinazione predefinita per [**Present.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) Se questo handle è **NULL,** verrà attivata la finestra attiva.
+-   Per un'applicazione in modalità finestra, questo handle sarà la finestra di destinazione predefinita per [**Present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present). Se questo handle è **NULL,** verrà utilizzata la finestra di stato attivo.
 
-Si noti che il runtime non tenta di riflettere le modifiche apportate dall'utente alle dimensioni della finestra. Il buffer nascosto non viene reimpostato in modo implicito quando questa finestra viene reimpostata. Tuttavia, il [**metodo Present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) tiene traccia automaticamente delle modifiche apportate alla posizione della finestra.
+Si noti che il runtime non tenta di riflettere le modifiche apportate dall'utente alle dimensioni della finestra. Il buffer nascosto non viene reimpostato in modo implicito quando questa finestra viene reimpostata. Tuttavia, il [**metodo Present**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) tiene traccia automaticamente delle modifiche alla posizione della finestra.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-**TRUE se** l'applicazione viene eseguita in finestra; **FALSE** se l'applicazione viene eseguita a schermo intero.
+**TRUE** se l'applicazione viene eseguita in finestra; **FALSE** se l'applicazione viene eseguita a schermo intero.
 
 </dd> <dt>
 
@@ -186,9 +186,9 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se questo valore è **TRUE,** Direct3D gestirà i buffer di profondità per l'applicazione. Il dispositivo creerà un buffer depth-stencil al momento della creazione. Il buffer depth-stencil verrà impostato automaticamente come destinazione di rendering del dispositivo. Quando il dispositivo viene reimpostato, il buffer depth-stencil verrà eliminato e ricreato automaticamente con le nuove dimensioni.
+Se questo valore è **TRUE,** Direct3D gestirà i buffer di profondità per l'applicazione. Il dispositivo creerà un buffer depth-stencil al momento della creazione. Il buffer depth-stencil verrà impostato automaticamente come destinazione di rendering del dispositivo. Quando il dispositivo viene reimpostato, il buffer depth-stencil verrà automaticamente eliminato e ricreato con le nuove dimensioni.
 
-Se EnableAutoDepthStencil è **TRUE,** AutoDepthStencilFormat deve essere un formato di stencil di profondità valido.
+Se EnableAutoDepthStencil è **TRUE,** AutoDepthStencilFormat deve essere un formato depth-stencil valido.
 
 </dd> <dt>
 
@@ -199,7 +199,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Membro del [tipo enumerato D3DFORMAT.](d3dformat.md) Formato della superficie depth-stencil automatica che verrà creata dal dispositivo. Questo membro viene ignorato a meno **che EnableAutoDepthStencil** non sia **TRUE.**
+Membro del [tipo enumerato D3DFORMAT.](d3dformat.md) Formato della superficie depth-stencil automatica che verrà creata dal dispositivo. Questo membro viene ignorato a meno **che EnableAutoDepthStencil non** sia **TRUE.**
 
 </dd> <dt>
 

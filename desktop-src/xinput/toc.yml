@@ -1,10 +1,10 @@
-- name: API di XInput Game controller
+- name: API di XInput Game Controller
   href: xinput-game-controller-apis-portal.md
   items:
     - name: Guida per programmatori
       href: programming-guide.md
       items:
-        - name: Introduzione con XInput
+        - name: Attività iniziali con XInput
           href: getting-started-with-xinput.md
         - name: Versioni di XInput
           href: xinput-versions.md

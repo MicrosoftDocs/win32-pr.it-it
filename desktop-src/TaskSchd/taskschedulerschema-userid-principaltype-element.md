@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe12f76c35238251e2ecc60f848e2f7eb4eaa681
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 955dcc93b826b4f86bffd3371ab9907e56dfe7f35649aee603cb18716868f535
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959531"
 ---
 # <a name="userid-principaltype-element"></a>Elemento UserId (principalType)
 
@@ -30,7 +30,7 @@ Specifica l'identificatore utente necessario per eseguire le attività associate
  />
 ```
 
-L'elemento **userid** è definito dal tipo complesso [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) .
+**L'elemento UserId** è definito dal [**tipo complesso principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,17 +44,17 @@ L'elemento **userid** è definito dal tipo complesso [**PrincipalType**](tasksch
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **userid** e l'elemento [**LogonType**](taskschedulerschema-logontype-principaltype-element.md) vengono utilizzati insieme per definire l'utente necessario per eseguire le attività che utilizzano questa entità.
+**L'elemento UserId** e [**l'elemento LogonType**](taskschedulerschema-logontype-principaltype-element.md) vengono usati insieme per definire l'utente necessario per eseguire le attività che usano questa entità.
 
-Non è possibile specificare contemporaneamente un identificatore utente e un identificatore di gruppo. Specificare l' **ID utente** o l'elemento [**GroupID**](taskschedulerschema-groupid-principaltype-element.md) , ma non entrambi.
+Non è possibile specificare contemporaneamente un identificatore utente e un identificatore di gruppo. Specificare **l'elemento UserId** o [**GroupId,**](taskschedulerschema-groupid-principaltype-element.md) ma non entrambi.
 
-Per lo sviluppo di script, l'identificatore utente viene specificato utilizzando la proprietà [**Principal. UserID**](principal-userid.md) .
+Per lo sviluppo di script, l'identificatore utente viene specificato usando la [**proprietà Principal.UserId.**](principal-userid.md)
 
-Per lo sviluppo in C++, l'identificatore utente viene specificato tramite la proprietà [**IPrincipal:: UserID**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_userid) .
+Per lo sviluppo in C++, l'identificatore utente viene specificato usando la [**proprietà IPrincipal::UserId.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_userid)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un principio usando un identificatore utente.
+Nel codice XML seguente viene definito un principio utilizzando un identificatore utente.
 
 
 ```XML
@@ -73,8 +73,8 @@ Il codice XML seguente definisce un principio usando un identificatore utente.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

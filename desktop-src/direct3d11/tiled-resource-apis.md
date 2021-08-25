@@ -1,71 +1,71 @@
 ---
-title: API di risorse affiancate
-description: Le API descritte in questa sezione funzionano con le risorse affiancate e il pool di sezioni.
+title: API delle risorse affiancate
+description: Le API descritte in questa sezione funzionano con le risorse affiancate e il pool di riquadri.
 ms.assetid: 02DCF9BA-F9EA-4176-AD6F-AA620CE968BA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0d97f5272f4f96db56e6e89b871951de035105
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f433b6c70d475d4da511b85fdcc2b1c273de1efa8e1186215b25ce6b9b95d0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894391"
 ---
-# <a name="tiled-resource-apis"></a>API di risorse affiancate
+# <a name="tiled-resource-apis"></a>API delle risorse affiancate
 
-Le API descritte in questa sezione funzionano con le risorse affiancate e il pool di sezioni.
+Le API descritte in questa sezione funzionano con le risorse affiancate e il pool di riquadri.
 
--   [Assegnazione di riquadri da un pool di sezioni a una risorsa](#assigning-tiles-from-a-tile-pool-to-a-resource)
--   [Esecuzione di query su affiancamento e supporto delle risorse](#querying-resource-tiling-and-support)
+-   [Assegnazione di riquadri da un pool di riquadri a una risorsa](#assigning-tiles-from-a-tile-pool-to-a-resource)
+-   [Esecuzione di query sul supporto e sulla affiancamento delle risorse](#querying-resource-tiling-and-support)
 -   [Copia di dati affiancati](#copying-tiled-data)
--   [Ridimensionamento del pool di sezioni](#resizing-tile-pool)
--   [Barriera risorse affiancate](#tiled-resource-barrier)
+-   [Ridimensionamento del pool di riquadri](#resizing-tile-pool)
+-   [Barriera delle risorse affiancate](#tiled-resource-barrier)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="assigning-tiles-from-a-tile-pool-to-a-resource"></a>Assegnazione di riquadri da un pool di sezioni a una risorsa
+## <a name="assigning-tiles-from-a-tile-pool-to-a-resource"></a>Assegnazione di riquadri da un pool di riquadri a una risorsa
 
-Le API [**ID3D11DeviceContext2:: UpdateTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) e [**ID3D11DeviceContext2:: CopyTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytilemappings) modificano ed eseguono query sui mapping dei riquadri. Le chiamate di aggiornamento hanno effetto solo sui riquadri identificati nella chiamata e altri vengono lasciati come definito in precedenza.
+Le [**API ID3D11DeviceContext2::UpdateTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetilemappings) e [**ID3D11DeviceContext2::CopyTileMappings**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytilemappings) modificano ed e interrogano i mapping dei riquadri. Le chiamate di aggiornamento influiscono solo sui riquadri identificati nella chiamata e altre vengono lasciati come definito in precedenza.
 
-Qualsiasi riquadro specificato da un pool di sezioni può essere mappato a più posizioni in una risorsa e anche a più risorse. Questo mapping include i riquadri in una risorsa che hanno un layout scelto dall'implementazione ([mipmap](mipmap-packing.md)) in cui più mipmap sono raggruppati in un unico riquadro. L'elemento catch è che se i dati vengono scritti nel riquadro tramite un mapping, ma letti tramite un mapping configurato in modo diverso, i risultati non sono definiti. Un uso accurato di questa flessibilità può comunque essere utile per un'applicazione, come la condivisione di un riquadro tra le risorse che non verranno usate simultaneamente, in cui il contenuto del riquadro viene sempre inizializzato tramite lo stesso mapping delle risorse che verrà successivamente letto da. Analogamente, viene eseguito il mapping di un riquadro per conservare i mipmap di più risorse diverse con le stesse dimensioni di superficie. i dati verranno visualizzati nello stesso modo in entrambi i mapping.
+Qualsiasi riquadro specificato da un pool di riquadri può essere mappato a più posizioni in una risorsa e anche a più risorse. Questo mapping include i riquadri in una risorsa che hanno un layout scelto dall'implementazione (creazione di un pacchetto[Mipmap)](mipmap-packing.md)in cui più mipmap vengono riunite in un unico riquadro. Il problema è che se i dati vengono scritti nel riquadro tramite un mapping, ma letti tramite un mapping configurato in modo diverso, i risultati non sono definiti. Un uso attento di questa flessibilità può comunque essere utile per un'applicazione, ad esempio la condivisione di un riquadro tra risorse che non verranno usate contemporaneamente, in cui il contenuto del riquadro viene sempre inizializzato tramite lo stesso mapping delle risorse da cui verranno successivamente lette. Analogamente, un riquadro mappato per contenere le mipmap di più risorse diverse con le stesse dimensioni di superficie funzionerà correttamente: i dati verranno visualizzati nello stesso modo in entrambi i mapping.
 
-È possibile apportare modifiche alle assegnazioni di sezioni per una risorsa in qualsiasi momento in un contesto immediato o posticipato.
+Le modifiche alle assegnazioni di riquadri per una risorsa possono essere apportate in qualsiasi momento in un contesto immediato o posticipato.
 
-## <a name="querying-resource-tiling-and-support"></a>Esecuzione di query su affiancamento e supporto delle risorse
+## <a name="querying-resource-tiling-and-support"></a>Esecuzione di query sul supporto e sulla affiancamento delle risorse
 
-Per eseguire una query sul affiancamento delle risorse, usare [**ID3D11Device2:: GetResourceTiling**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling).
+Per eseguire query sulla affiancamento delle risorse, [**usare ID3D11Device2::GetResourceTiling.**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-getresourcetiling)
 
-Per il supporto di altre risorse di affiancamento, usare [**ID3D11Device2:: CheckMultisampleQualityLevels1**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-checkmultisamplequalitylevels1).
+Per altre risorse supportate, usare [**ID3D11Device2::CheckMultisampleQualityLevels1**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11device2-checkmultisamplequalitylevels1).
 
 ## <a name="copying-tiled-data"></a>Copia di dati affiancati
 
-Tutti i metodi in Direct3D per lo spostamento dei dati funzionano con le risorse affiancate come se non fossero affiancati, ad eccezione del fatto che le Scritture in aree non mappate vengono eliminate e le letture da aree non mappate producono 0. Se un'operazione di copia comporta la scrittura più volte nella stessa posizione di memoria perché più percorsi nella risorsa di destinazione sono mappati alla stessa memoria del riquadro, le Scritture risultanti nei riquadri con mapping multiplo sono non deterministiche e non ripetibili. In altre circostanze, gli accessi avvengono in qualsiasi ordine in cui l'hardware esegue la copia.
+Tutti i metodi in Direct3D per lo spostamento dei dati funzionano con le risorse affiancate come se non fossero affiancate, ad eccezione del fatto che le scritture nelle aree non mappate vengono eliminate e le operazioni di lettura da aree non mappate producono 0. Se un'operazione di copia comporta la scrittura più volte nella stessa posizione di memoria perché viene eseguito il mapping di più posizioni nella risorsa di destinazione alla stessa memoria del riquadro, le scritture risultanti in riquadri con più mappe sono non deterministiche e non ripetibili. In altri casi, gli accessi vengono eseguiti nell'ordine in cui l'hardware esegue la copia.
 
-Direct3D 11,2 introduce metodi che consentono di copiare:
+Direct3D 11.2 introduce metodi per questi metodi aggiuntivi per la copia:
 
--   Copia tra i riquadri in una risorsa affiancata (in granularità del riquadro 64KB) e (a/da) un buffer nella memoria di unità di elaborazione grafica (GPU) (o risorsa di staging)- [ **ID3D11DeviceContext2:: CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles)
--   Copia dalla memoria fornita dall'applicazione ai riquadri in una risorsa affiancata- [ **ID3D11DeviceContext2:: UpdateTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetiles)
+-   Copiare tra riquadri in una risorsa affiancata (con granularità del riquadro di 64 KB) e (da/verso) un buffer nella memoria dell'unità di elaborazione grafica (o risorsa di staging) - [ **ID3D11DeviceContext2::CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles)
+-   Copiare dalla memoria fornita dall'applicazione ai riquadri in una risorsa affiancata - [ **ID3D11DeviceContext2::UpdateTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetiles)
 
-Questi metodi swizzle/deswizzle in base alle esigenze e consentono a \_ una \_ Copia \_ del riquadro d3d11 senza \_ flag di sovrascrittura quando il chiamante promette che la memoria di destinazione non è presente nel lavoro GPU in corso.
+Questi metodi swizzle/deswizzle in base alle esigenze e consentono un flag D3D11 TILE COPY NO OVERWRITE quando il chiamante promise che alla memoria di destinazione non viene fatto riferimento dalle operazioni \_ \_ \_ \_ GPU in esecuzione.
 
-I riquadri interessati dalla copia non possono includere riquadri contenenti mipmap compressi o che hanno risultati non definiti. Per trasferire i dati da e verso mipmap che l'hardware comprime in un riquadro, è necessario usare le API di copia/aggiornamento standard (non specifiche del riquadro) o [**sul ID3D11DeviceContext:: GenerateMips**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips) per l'intera catena MIP.
+I riquadri coinvolti nella copia non possono includere riquadri contenenti mipmap di tipo packed o con risultati non definiti. Per trasferire i dati da e verso mipmap che l'hardware contiene in un unico riquadro, è necessario usare le API di copia/aggiornamento standard (non specifiche del riquadro) o [**ID3D11DeviceContext::GenerateMips**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips) per l'intera catena mip.
 
-**Nota in [**GenerateMips**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips):** l'uso di [**sul ID3D11DeviceContext:: GenerateMips**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips) in una risorsa con riquadri con mapping parziale genera risultati che seguono semplicemente le regole per la lettura e la scrittura di **valori null** applicati a qualsiasi algoritmo che l'hardware e il driver di visualizzazione devono usare per **GenerateMips**. Quindi, non è particolarmente utile per un'applicazione preoccuparsi di questa operazione, a meno che in qualche modo le aree con mapping **null** (e il loro effetto su altri MIP durante la fase di generazione) non abbiano alcuna conseguenza sulle parti della superficie a cui l'applicazione si occupa.
+**Nota su [**GenerateMips:**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips)** l'uso di [**ID3D11DeviceContext::GenerateMips**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-generatemips) in una risorsa con riquadri parzialmente mappati produrrà risultati che seguono semplicemente le regole per la lettura e la scrittura **di VALORI NULL** applicati a qualsiasi algoritmo che l'hardware e il driver di visualizzazione usano per **GenerateMips.** Pertanto, non è particolarmente utile per un'applicazione eseguire questa operazione, a meno che in qualche modo le aree con mapping **NULL** (e il relativo effetto su altri mip durante la fase di generazione) non avranno alcuna conseguenza sulle parti della superficie di cui l'applicazione si occupa.
 
-La copia dei dati del riquadro da una superficie di staging o dalla memoria dell'applicazione è il modo in cui caricare i riquadri che potrebbero essere stati trasmessi dal disco, ad esempio. Una variazione quando lo streaming del disco è il caricamento di un tipo di dati compressi nella memoria GPU, quindi la decodifica della GPU. La destinazione Decode può essere una risorsa buffer nella memoria GPU, da cui [**CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) copia quindi nella risorsa affiancata effettiva. Questo passaggio di copia consente alla GPU di swizzle quando il modello swizzle non è noto. Swizzling non è necessario se la risorsa affiancata è una risorsa di buffer (ad esempio, in contrapposizione a una trama).
+La copia dei dati dei riquadri da una superficie di gestione temporanea o dalla memoria dell'applicazione sarebbe il modo per caricare i riquadri che potrebbero essere stati trasmessi dal disco, ad esempio. Una variazione durante lo streaming dal disco è il caricamento di alcuni dati compressi nella memoria GPU e quindi la decodifica nella GPU. La destinazione di decodifica potrebbe essere una risorsa buffer nella memoria GPU, da cui [**CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) copia quindi nella risorsa affiancata effettiva. Questo passaggio di copia consente alla GPU di eseguire lo swizzle quando il modello di swizzle non è noto. Lo swizzling non è necessario se la risorsa affiancata stessa è una risorsa buffer( ad esempio, anziché una trama).
 
-Il layout della memoria dei riquadri nel lato della risorsa del buffer non affiancato della copia è semplicemente lineare in memoria all'interno dei riquadri 64KB, che i driver hardware e display swizzle/deswizzle per riquadro in base alle esigenze durante il trasferimento da e verso una risorsa affiancata. Per le superfici con aliasing a più campioni (MSAA), i campioni di ogni pixel vengono attraversati nell'ordine di indice di esempio prima di passare al pixel successivo. Per i riquadri che sono parzialmente riempiti sul lato destro (per una superficie che ha una larghezza non un multiplo della larghezza del riquadro in pixel), il pitch/stride per spostarsi verso il basso di una riga è la dimensione massima in byte del numero di pixel che si adattano al riquadro se il riquadro era pieno. Quindi, può esserci un divario tra ogni riga di pixel in memoria. Per semplicità di specifica, mipmap inferiori a un riquadro non vengono compressi nel layout lineare. Si tratta di uno spreco di spazio di memoria, ma come indicato in precedenza per la copia in MIPS, i pacchetti hardware non sono consentiti tramite [**CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) o [**UpdateTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetiles). L'applicazione può usare solo API UpdateSubresource \* () o CopySubresource \* () generiche per copiare i piccoli MIP singolarmente, anche se nel caso di CopySubresource \* () che significa che la memoria lineare deve essere della stessa dimensione della risorsa affiancata-CopySubresource () non è in grado di \* copiare da una risorsa buffer a una Texture2D per l'istanza.
+Il layout della memoria dei riquadri nel lato della risorsa buffer non affiancato della copia è semplicemente lineare in memoria all'interno di riquadri da 64 KB, che il driver hardware e di visualizzazione esegue lo swizzle/deswizzle per riquadro in base alle esigenze durante il trasferimento da e verso una risorsa affiancata. Per le superfici di anti-aliasing multicampionamento (MSAA), i campioni di ogni pixel vengono attraversati in ordine di indice del campione prima di passare al pixel successivo. Per i riquadri parzialmente riempiti sul lato destro (per una superficie con una larghezza non multipla di larghezza in pixel), l'altezza/stride per spostarsi verso il basso di una riga è la dimensione completa in byte del numero di pixel che si adatterebbe all'interno del riquadro se il riquadro fosse pieno. Può quindi esserci uno spazio tra ogni riga di pixel in memoria. Per semplicità di specifica, le mipmap più piccole di un riquadro non vengono riunite nel layout lineare. Questo sembra uno spreco di spazio di memoria, ma come accennato, la copia in mips che l'hardware si riunisce non è consentita tramite [**CopyTiles**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-copytiles) [**o UpdateTiles.**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-updatetiles) L'applicazione può usare solo API Generic UpdateSubresource () o CopySubresource () per copiare singoli mip di piccole dimensioni, anche se nel caso di CopySubresource () ciò significa che la memoria lineare deve essere della stessa dimensione della risorsa affiancata. CopySubresource () non può, ad esempio, copiare da una risorsa \* \* buffer a \* \* texture2D.
 
-Se è stato definito un swizzle standard hardware, è possibile aggiungere i flag per indicare che i dati nel buffer devono essere interpretati in tale formato (nessun swizzle necessario per il trasferimento), anche se approcci alternativi al caricamento dei dati può essere utile anche in questo caso, ad esempio consentendo alle applicazioni di accedere direttamente alla memoria del pool di riquadri.
+Se viene definito uno swizzle standard hardware, è possibile aggiungere flag per indicare che i dati nel buffer devono essere interpretati in tale formato (non è necessario uno swizzle al trasferimento), anche se in questo caso possono essere sensato anche approcci alternativi al caricamento dei dati, ad esempio consentire alle applicazioni l'accesso diretto alla memoria del pool di riquadri.
 
 Le operazioni di copia possono essere eseguite in un contesto immediato o posticipato.
 
-## <a name="resizing-tile-pool"></a>Ridimensionamento del pool di sezioni
+## <a name="resizing-tile-pool"></a>Ridimensionamento del pool di riquadri
 
-Per ridimensionare un pool di sezioni, utilizzare [**ID3D11DeviceContext2:: ResizeTilePool**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-resizetilepool).
+Per ridimensionare un pool di riquadri, [**usare ID3D11DeviceContext2::ResizeTilePool**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-resizetilepool).
 
-## <a name="tiled-resource-barrier"></a>Barriera risorse affiancate
+## <a name="tiled-resource-barrier"></a>Barriera delle risorse affiancate
 
-Per specificare un vincolo di ordinamento per l'accesso ai dati tra più risorse affiancate, usare [**ID3D11DeviceContext2:: TiledResourceBarrier**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-tiledresourcebarrier).
+Per specificare un vincolo di ordinamento dell'accesso ai dati tra più risorse affiancate, usare [**ID3D11DeviceContext2::TiledResourceBarrier**](/windows/desktop/api/D3D11_2/nf-d3d11_2-id3d11devicecontext2-tiledresourcebarrier).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -74,9 +74,9 @@ Per specificare un vincolo di ordinamento per l'accesso ai dati tra più risorse
 [Risorse affiancate](tiled-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
