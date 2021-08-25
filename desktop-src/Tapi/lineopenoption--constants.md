@@ -1,45 +1,45 @@
 ---
-description: Le \_ costanti LINEOPENOPTION elencano le opzioni disponibili per l'apertura di una riga.
+description: Le costanti LINEOPENOPTION \_ elencano le opzioni disponibili per l'apertura di una riga.
 ms.assetid: 361ae90c-a2cf-4107-a2da-80f561a82c56
-title: Costanti LINEOPENOPTION_ (TAPI. h)
+title: LINEOPENOPTION_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dee9182ff7a28627eebd695ce5d9c0877460b15e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0dc6a4780b366b2dce08110ecce40c7140ab1d0956d788dce5a67d5d0501b6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739251"
 ---
-# <a name="lineopenoption_-constants"></a>\_Costanti LINEOPENOPTION
+# <a name="lineopenoption_-constants"></a>Costanti LINEOPENOPTION \_
 
-Le **\_ costanti LINEOPENOPTION** elencano le opzioni disponibili per l'apertura di una riga.
+Le **costanti LINEOPENOPTION \_** elencano le opzioni disponibili per l'apertura di una riga.
 
 <dl> <dt>
 
-<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**\_proxy LINEOPENOPTION**
+<span id="LINEOPENOPTION_PROXY"></span><span id="lineopenoption_proxy"></span>**LINEOPENOPTION \_ PROXY**
 </dt> <dd> <dl> <dt>
 
 
 
-L'applicazione è pronta a gestire le richieste provenienti da altre applicazioni con la riga aperta.
+L'applicazione è disposta a gestire le richieste provenienti da altre applicazioni con la riga aperta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEOPENOPTION_SINGLEADDRESS"></span><span id="lineopenoption_singleaddress"></span>**\_SINGLEADDRESS LINEOPENOPTION**
+<span id="LINEOPENOPTION_SINGLEADDRESS"></span><span id="lineopenoption_singleaddress"></span>**LINEOPENOPTION \_ SINGLEADDRESS**
 </dt> <dd> <dl> <dt>
 
 
 
-L'applicazione deve essere informata sulle nuove chiamate create sul dispositivo di linea solo se tali chiamate vengono visualizzate nell'indirizzo specificato nel membro **dwAddressID** della struttura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) a cui punta il parametro *lpCallParams* .
+L'applicazione deve essere informata delle nuove chiamate create nel dispositivo line solo se tali chiamate vengono visualizzate sull'indirizzo specificato nel membro **dwAddressID** nella struttura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) a cui punta il *parametro lpCallParams.*
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sul funzionamento di queste opzioni, vedere [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) .
+Per altri dettagli sul funzionamento di queste opzioni, vedere [**lineOpen.**](/windows/desktop/api/Tapi/nf-tapi-lineopen)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Per ulteriori informazioni sul funzionamento di queste opzioni, vedere [**lineOp
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

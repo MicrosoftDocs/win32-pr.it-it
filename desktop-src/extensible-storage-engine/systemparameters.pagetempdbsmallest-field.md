@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: SystemParameters. PageTempDBSmallest campo'
-title: Campo SystemParameters. PageTempDBSmallest
+description: Altre informazioni sul campo SystemParameters.PageTempDBSmallest
+title: Campo SystemParameters.PageTempDBSmallest
 TOCTitle: PageTempDBSmallest field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.PageTempDBSmallest
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.pagetempdbsmallest(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa575bf30c71f6e43d1fd929bc40497d4cdb901e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36b7286d606d937dbdbf5eac6fbb64788042c02ffee16d2b6c487d8a6553ae2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780211"
 ---
-# <a name="systemparameterspagetempdbsmallest-field"></a>Campo SystemParameters. PageTempDBSmallest
+# <a name="systemparameterspagetempdbsmallest-field"></a>Campo SystemParameters.PageTempDBSmallest
 
-Il numero di pagine che fornisce il database temporaneo più piccolo possibile.
+Numero di pagine che fornisce il database temporaneo più piccolo possibile.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,6 +59,6 @@ public const int PageTempDBSmallest
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

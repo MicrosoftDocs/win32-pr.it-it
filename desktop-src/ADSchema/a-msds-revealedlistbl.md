@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Revealed-list-BL
-description: Attributo di collegamento a ritroso per MS-DS-Revealed-List.
+title: Attributo ms-DS-Revealed-List-BL
+description: Attributo di collegamento all'indietro per ms-DS-Revealed-List.
 ms.assetid: 12979dc0-674b-4102-a433-0d4ff6989248
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Revealed-list-BL
-- attributo msDS-RevealedListBL-schema AD
+- Schema AD dell'attributo ms-DS-Revealed-List-BL
+- Schema AD dell'attributo msDS-RevealedListBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3d99b745ccdf696786247d0926e3005112b1c42
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c954fb95d0e41aebd5ac5d821d9c4d023aff75644bddda8b4fad53e801e1f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925461"
 ---
-# <a name="ms-ds-revealed-list-bl-attribute"></a>attributo ms-DS-Revealed-list-BL
+# <a name="ms-ds-revealed-list-bl-attribute"></a>Attributo ms-DS-Revealed-List-BL
 
-Attributo di collegamento a ritroso per [**ms-DS-Revealed-list**](a-msds-revealedlist.md).
+Attributo di collegamento all'indietro [**per ms-DS-Revealed-List**](a-msds-revealedlist.md).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Revealed-list-BL                  |
-| LDAP-Display-Name | msDS-RevealedListBL                     |
+| CN                | ms-DS-Revealed-List-BL                  |
+| Ldap-Display-Name | msDS-RevealedListBL                     |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1975                 |
-| System-ID-GUID    | aa1c88fd-b0f6-429f-b2ca-9d902266e808    |
+| System-Id-Guid    | aa1c88fd-b0f6-429f-b2ca-9d902266e808    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Attributo di collegamento a ritroso per [**ms-DS-Revealed-list**](a-msds-reveale
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Attributo di collegamento a ritroso per [**ms-DS-Revealed-list**](a-msds-reveale
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Attributo di collegamento a ritroso per [**ms-DS-Revealed-list**](a-msds-reveale
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

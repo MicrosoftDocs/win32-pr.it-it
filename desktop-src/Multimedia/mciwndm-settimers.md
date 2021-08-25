@@ -41,14 +41,14 @@ lParam = (LPARAM) (UINT) inactive;
 <span id="active"></span><span id="ACTIVE"></span>*Attivo*
 </dt> <dd>
 
-Periodo di aggiornamento usato da MCIWnd quando è la finestra attiva. Il valore predefinito è 500 millisecondi. Archiviazione questo valore è limitato a 16 bit.
+Periodo di aggiornamento usato da MCIWnd quando è la finestra attiva. Il valore predefinito è 500 millisecondi. Archiviazione per questo valore è limitato a 16 bit.
 
 </dd> <dt>
 
 <span id="inactive"></span><span id="INACTIVE"></span>*Inattivo*
 </dt> <dd>
 
-Periodo di aggiornamento usato da MCIWnd quando è la finestra inattiva. Il valore predefinito è 2000 millisecondi. Archiviazione questo valore è limitato a 16 bit.
+Periodo di aggiornamento usato da MCIWnd quando è la finestra inattiva. Il valore predefinito è 2000 millisecondi. Archiviazione per questo valore è limitato a 16 bit.
 
 </dd> </dl>
 

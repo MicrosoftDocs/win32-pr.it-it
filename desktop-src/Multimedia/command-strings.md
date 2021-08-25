@@ -18,11 +18,11 @@ ms.locfileid: "119807831"
 
 Per inviare un comando stringa a un dispositivo MCI, usare la funzione [**mciSendString,**](/previous-versions//dd757161(v=vs.85)) che include i parametri per il comando stringa e un buffer per le informazioni restituite.
 
-La **funzione mciSendString** restituisce zero in caso di esito positivo. Se la funzione ha esito negativo, la parola di ordine basso del valore restituito contiene un codice di errore. È possibile passare questo codice di errore alla [**funzione mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) per ottenere una descrizione testuale dell'errore.
+La **funzione mciSendString** restituisce zero in caso di esito positivo. Se la funzione ha esito negativo, la parola di ordine basso del valore restituito contiene un codice di errore. È possibile passare questo codice di errore alla [**funzione mciGetErrorString**](/previous-versions//dd757158(v=vs.85)) per ottenere una descrizione di testo dell'errore.
 
 ## <a name="syntax-of-command-strings"></a>Sintassi delle stringhe di comando
 
-Le stringhe di comando MCI usano una sintassi di modificatori verbo-oggetto coerente. Ogni stringa di comando include un comando, un identificatore di dispositivo e argomenti di comando. Gli argomenti sono facoltativi per alcuni comandi e obbligatori per altri.
+Le stringhe di comando MCI usano una sintassi verb-object-modifier coerente. Ogni stringa di comando include un comando, un identificatore di dispositivo e argomenti di comando. Gli argomenti sono facoltativi per alcuni comandi e obbligatori per altri.
 
 Una stringa di comando ha il formato seguente:
 

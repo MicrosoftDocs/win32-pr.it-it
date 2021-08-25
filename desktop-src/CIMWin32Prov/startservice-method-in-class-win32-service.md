@@ -1,5 +1,5 @@
 ---
-description: 'Metodo StartService della classe Win32_Service (provider WMI CIMWin32): tenta di inserire il servizio di riferimento nello stato di avvio.'
+description: 'Metodo StartService della classe Win32_Service (provider WMI CIMWin32): tenta di inserire il servizio a cui si fa riferimento nello stato di avvio.'
 ms.assetid: b7a815a2-7bf6-436f-b3b4-de55eeb2de0e
 ms.tgt_platform: multiple
 title: Metodo StartService della classe Win32_Service (provider WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a630b9d926ff5377312f1c67630a20816ab38b6c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c88588ec506d24726b99eaa7a1c3f8316bee8e44d6270efb0c51b165ac01a14f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752391"
 ---
 # <a name="startservice-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo StartService della classe Win32_Service (provider WMI CIMWin32)
 
@@ -223,18 +223,18 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Anche se potrebbe sembrare che non vi sia alcuna differenza pratica tra un servizio arrestato e un servizio in pausa, i due stati appaiono in modo diverso rispetto a Gestione controllo servizi. Un servizio arrestato è un servizio che non è in esecuzione e deve eseguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma ha avuto il suo funzionamento sospeso. Per questo problema, un servizio sospeso non deve eseguire l'intera procedura di avvio del servizio, ma richiede una procedura diversa per riprendere il funzionamento.
+Anche se potrebbe non esserci alcuna differenza pratica tra un servizio arrestato e un servizio sospeso, i due stati appaiono in modo diverso rispetto a Gestione configurazione servizi. Un servizio arrestato è un servizio che non è in esecuzione e deve eseguire l'intera procedura di avvio del servizio. Un servizio sospeso, tuttavia, è ancora in esecuzione, ma il suo funzionamento è stato sospeso. Per questo scopo, un servizio sospeso non deve eseguire l'intera procedura di avvio del servizio, ma richiede una procedura diversa per riprendere il funzionamento.
 
-È necessario utilizzare il metodo appropriato per avviare un servizio arrestato o per riprendere un servizio sospeso. I [**metodi \_ startService**](win32-service.md) e [**ResumeService**](resumeservice-method-in-class-win32-service.md) del servizio Win32 devono essere usati nelle situazioni seguenti: 
+È necessario usare il metodo appropriato per avviare un servizio arrestato o per riprendere un servizio sospeso. I [**metodi \_ del servizio Win32**](win32-service.md) **StartService** e [**ResumeService**](resumeservice-method-in-class-win32-service.md) devono essere usati nelle situazioni seguenti:
 
--   Se un servizio è attualmente arrestato, è necessario usare il **metodo StartService** per riavviarlo. [**ResumeService**](resumeservice-method-in-class-win32-service.md) non può avviare un servizio attualmente arrestato.
--   Se un servizio è in pausa, è necessario usare [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se si usa il **metodo StartService** in un servizio sospeso, viene visualizzato il messaggio "Il servizio è già in esecuzione". Tuttavia, il servizio rimane in pausa fino a quando non viene inviato il codice di controllo del servizio di ripresa.
+-   Se un servizio è attualmente arrestato, è necessario usare il **metodo StartService** per riavviarlo. [**ResumeService non**](resumeservice-method-in-class-win32-service.md) può avviare un servizio attualmente arrestato.
+-   Se un servizio è sospeso, è necessario usare [**ResumeService**](resumeservice-method-in-class-win32-service.md). Se si usa il **metodo StartService** in un servizio sospeso, viene visualizzato il messaggio "Il servizio è già in esecuzione". Tuttavia, il servizio rimane sospeso fino a quando non viene inviato il codice di controllo del servizio di ripresa.
 
 Se si avvia un servizio arrestato che dipende da un altro servizio, vengono avviati entrambi i servizi. Quando un servizio viene avviato con questo metodo, i servizi dipendenti non vengono avviati automaticamente. È necessario usare la classe di associazione [**Win32 \_ DependentService**](win32-dependentservice.md) e la query [Associators Of](/windows/desktop/WmiSdk/associators-of-statement) per individuare i dipendenti e avviarli separatamente.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di PowerShell [Remotely Enable RDP](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) abilita il Desktop remoto remoto.
+[L'esempio remotely Enable RDP](https://Gallery.TechNet.Microsoft.Com/Remotely-Enable-RDP-855c3842) PowerShell (Abilitazione remota di RDP PowerShell) abilita il Desktop remoto remoto.
 
 L'esempio di PowerShell [Arresta, Avvia, Abilita](https://Gallery.TechNet.Microsoft.Com/212e68f0-5279-4499-8e9e-6aa1807719c0) o Disabilita servizio avvia, arresta, abilita o disabilita un servizio.
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 600cc2cd333aaea08b38c252c206c1a74c1ca059
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0de2e2cda9724a5bfa12d13171276694bcd8fbcbbd5dffbb81ae185ebbda381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853411"
 ---
 # <a name="d3dxfloat32to16array-function-d3dx10mathh"></a>Funzione D3DXFloat32To16Array (D3DX10Math.h)
 
-Converte una matrice di valori float a 32 bit in float a 16 bit.
+Converte una matrice di valori float a 32 bit in valori float a 16 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ D3DXFLOAT16* D3DXFloat32To16Array(
 
 Tipo: **[ **D3DXFLOAT16**](../direct3d9/d3dxfloat16.md)\***
 
-Puntatore alla matrice di float a 16 bit.
+Puntatore alla matrice di valori float a 16 bit.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **D3DXFLOAT16**](../direct3d9/d3dxfloat16.md)\***
 
-Puntatore a una matrice di float a 16 bit.
+Puntatore a una matrice di valori float a 16 bit.
 
 ## <a name="requirements"></a>Requisiti
 

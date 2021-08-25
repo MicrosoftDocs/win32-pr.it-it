@@ -1,7 +1,7 @@
 ---
 description: Contiene dati che descrivono un esperto all'avvio.
 ms.assetid: 9ecd5395-d10c-411b-a6bd-fbac724d8603
-title: Struttura EXPERTSTARTUPINFO (Netmon. h)
+title: Struttura EXPERTSTARTUPINFO (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 627d47cec09a683f80c16374561899ab008d0596
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f49fcf3c87795dbd7c9e65745e1b5560331c96c471d8ff7b2c8a24560b143cb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911051"
 ---
 # <a name="expertstartupinfo-structure"></a>Struttura EXPERTSTARTUPINFO
 
-La struttura **EXPERTSTARTUPINFO** contiene dati che descrivono un esperto all'avvio.
+La **struttura EXPERTSTARTUPINFO** contiene dati che descrivono un esperto all'avvio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,7 +72,7 @@ Nome del file di acquisizione.
 **dwFrameNumber**
 </dt> <dd>
 
-Numero di frame.
+Numero di fotogramma.
 
 </dd> <dt>
 
@@ -86,24 +86,24 @@ Handle per il protocollo.
 **lpPropertyInst**
 </dt> <dd>
 
-Puntatore a una struttura [**PROPERTYINST**](propertyinst.md) .
+Puntatore a [**una struttura PROPERTYINST.**](propertyinst.md)
 
 </dd> <dt>
 
 **sBitfield**
 </dt> <dd> <dl> <dt>
 
-**BitNumber**
+**Numero di bit**
 </dt> <dd>
 
-Utilizzato solo se il membro **dataqualifier** della struttura [**PROPERTYINST**](propertyinst.md) è impostato su propa \_ \_ Flags.
+Utilizzato solo se il **membro DataQualifier** della [**struttura PROPERTYINST**](propertyinst.md) è impostato su PROP \_ QUAL \_ FLAGS.
 
 </dd> <dt>
 
-**bOn**
+**Bon**
 </dt> <dd>
 
-Utilizzato solo se il membro **dataqualifier** della struttura [**PROPERTYINST**](propertyinst.md) è impostato su propa \_ \_ Flags.
+Utilizzato solo se il **membro DataQualifier** della [**struttura PROPERTYINST**](propertyinst.md) è impostato su PROP \_ QUAL \_ FLAGS.
 
 </dd> </dl> </dd> </dl>
 
@@ -115,7 +115,7 @@ Utilizzato solo se il membro **dataqualifier** della struttura [**PROPERTYINST**
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

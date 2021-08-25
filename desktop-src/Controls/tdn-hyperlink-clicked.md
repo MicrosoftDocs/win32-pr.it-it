@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TDN_HYPERLINK_CLICKED (COMmctrl. h)
-description: Inviato da una finestra di dialogo attività quando l'utente fa clic su un collegamento ipertestuale nel contenuto della finestra di dialogo attività. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo TaskDialogIndirect.
+title: TDN_HYPERLINK_CLICKED di notifica (Commctrl.h)
+description: Inviato da una finestra di dialogo attività quando l'utente fa clic su un collegamento ipertestuale nel contenuto della finestra di dialogo attività. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il metodo TaskDialogIndirect.
 ms.assetid: b769af31-32d0-463e-be15-6abf5dcb425c
 keywords:
-- Controlli di Windows per il codice di notifica TDN_HYPERLINK_CLICKED
+- TDN_HYPERLINK_CLICKED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edd79406eb59f9bafd93269f8982db6213ef882c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0adaf5ecf05b22e3ff33aa88e28cb3f8f8c8b78f0b06d2127792b7639942bf7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875771"
 ---
-# <a name="tdn_hyperlink_clicked-notification-code"></a>\_Codice di \_ notifica fatto clic sul collegamento IPERtestuale TDN
+# <a name="tdn_hyperlink_clicked-notification-code"></a>Codice di notifica TDN \_ HYPERLINK \_ CLICKED
 
-Inviato da una finestra di dialogo attività quando l'utente fa clic su un collegamento ipertestuale nel contenuto della finestra di dialogo attività. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Inviato da una finestra di dialogo attività quando l'utente fa clic su un collegamento ipertestuale nel contenuto della finestra di dialogo attività. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il [**metodo TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -63,9 +63,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

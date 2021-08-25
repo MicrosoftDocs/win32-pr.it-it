@@ -1,35 +1,35 @@
 ---
-description: Questa sezione elenca i codici delle operazioni raster ternari usati dalle funzioni BitBlt, PatBlt e StretchBlt. I codici di operazione raster ternari definiscono il modo in cui GDI combina i bit in una bitmap di origine con i bit nella bitmap di destinazione.
+description: Questa sezione elenca i codici di funzionamento raster ternari usati dalle funzioni BitBlt, PatBlt e StretchBlt. I codici di operazione raster ternari definiscono il modo in cui GDI combina i bit in una bitmap di origine con i bit nella bitmap di destinazione.
 ms.assetid: 538f3580-d6a7-4dae-8185-802eb9c96735
 title: Operazioni raster ternarie
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c30411ff4e5a38f54b52baa086510cecb6168dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58a6dd0009a9be4a1fe062dbb2ab40766a7b01a565b80a7b866c0ce1af40ca48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889011"
 ---
 # <a name="ternary-raster-operations"></a>Operazioni raster ternarie
 
-Questa sezione elenca i codici delle operazioni raster ternari usati dalle funzioni [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt), [**PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patblt)e [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) . I codici di operazione raster ternari definiscono il modo in cui GDI combina i bit in una bitmap di origine con i bit nella bitmap di destinazione.
+Questa sezione elenca i codici di funzionamento raster ternari usati [**dalle funzioni BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) [**PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patblt) [**e StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) I codici di operazione raster ternari definiscono il modo in cui GDI combina i bit in una bitmap di origine con i bit nella bitmap di destinazione.
 
-Ogni codice di operazione raster rappresenta un'operazione booleana in cui vengono combinati i valori dei pixel nell'origine, il pennello selezionato e la destinazione. Di seguito sono riportati i tre operandi utilizzati in queste operazioni.
+Ogni codice di operazione raster rappresenta un'operazione booleana in cui vengono combinati i valori dei pixel nell'origine, il pennello selezionato e la destinazione. Di seguito sono riportati i tre operandi usati in queste operazioni.
 
 
 
 | Operando | Significato                              |
 |---------|--------------------------------------|
 | D       | Bitmap di destinazione                   |
-| P       | Pennello selezionato (chiamato anche pattern) |
+| P       | Pennello selezionato (chiamato anche motivo) |
 | S       | Bitmap di origine                        |
 
 
 
  
 
-Gli operatori booleani utilizzati in queste operazioni seguono.
+Seguono gli operatori booleani usati in queste operazioni.
 
 
 
@@ -44,7 +44,7 @@ Gli operatori booleani utilizzati in queste operazioni seguono.
 
  
 
-Tutte le operazioni booleane vengono presentate in notazione polacca inversa. Ad esempio, l'operazione seguente sostituisce i valori dei pixel nella bitmap di destinazione con una combinazione dei valori dei pixel dell'origine e del pennello:
+Tutte le operazioni booleane vengono presentate in notazione polacco inversa. Ad esempio, l'operazione seguente sostituisce i valori dei pixel nella bitmap di destinazione con una combinazione dei valori in pixel dell'origine e del pennello:
 
 
 ```C++
@@ -53,7 +53,7 @@ PSo
 
 
 
-L'operazione seguente combina i valori dei pixel nell'origine e il pennello con i valori pixel della bitmap di destinazione (esistono ortografie alternative della stessa funzione, quindi anche se un'ortografia particolare non è presente nell'elenco, un formato equivalente sarebbe):
+L'operazione seguente combina i valori dei pixel nell'origine e nel pennello con i valori in pixel della bitmap di destinazione (esistono ortografie alternative della stessa funzione, quindi anche se una particolare ortografia potrebbe non essere presente nell'elenco, un formato equivalente sarebbe):
 
 
 ```C++
@@ -62,11 +62,11 @@ DPSoo
 
 
 
-Ogni codice di operazione raster è un intero a 32 bit la cui parola più ordinata è un indice di operazione booleana e la cui parola di basso livello è il codice dell'operazione. L'indice dell'operazione a 16 bit è un valore a 8 bit esteso a zero che rappresenta il risultato dell'operazione booleana sui valori predefiniti del pennello, dell'origine e della destinazione. Gli indici dell'operazione per le operazioni PSo e DPSoo, ad esempio, sono mostrati nell'elenco seguente.
+Ogni codice dell'operazione raster è un intero a 32 bit la cui parola più importante è un indice di operazione booleana e la cui parola meno importante è il codice dell'operazione. L'indice dell'operazione a 16 bit è un valore esteso a zero a 8 bit che rappresenta il risultato dell'operazione booleana sui valori predefiniti di pennello, origine e destinazione. Ad esempio, gli indici dell'operazione per le operazioni PSo e DPSoo sono visualizzati nell'elenco seguente.
 
 
 
-| P                | S   | D   | PSo   | DPSoo |
+| P                | S   | D   | Pso   | DPSoo |
 |------------------|-----|-----|-------|-------|
 | 0                | 0   | 0   | 0     | 0     |
 | 0                | 0   | 1   | 0     | 1     |
@@ -76,25 +76,25 @@ Ogni codice di operazione raster è un intero a 32 bit la cui parola più ordina
 | 1                | 0   | 1   | 1     | 1     |
 | 1                | 1   | 0   | 1     | 1     |
 | 1                | 1   | 1   | 1     | 1     |
-| Indice operazione: |     |     | 00FCh | 00FEh |
+| Indice dell'operazione: |     |     | 00FCh | 00FEh |
 
 
 
  
 
-In questo caso, l'oggetto PSo contiene l'indice dell'operazione 00FC (lettura dal basso verso l'alto); DPSoo contiene l'indice dell'operazione 00FE. Questi valori definiscono la posizione dei codici di operazione raster corrispondenti, come illustrato nella tabella A. 1, "codici di operazione raster". L'operazione PSo è alla riga 252 (00FCh) della tabella. DPSoo è alla riga 254 (00FEh).
+In questo caso, PSo ha l'indice dell'operazione 00FC (letto dal basso verso l'alto); DPSoo include l'indice dell'operazione 00FE. Questi valori definiscono la posizione dei codici di operazione raster corrispondenti, come illustrato nella tabella A.1, "Codici di operazione raster". L'operazione PSo è nella riga 252 (00FCh) della tabella; DPSoo è nella riga 254 (00FEh).
 
-Alle operazioni raster utilizzate più di frequente sono stati assegnati nomi speciali nel file di intestazione SDK, WINDOWS. H. Usare questi nomi quando possibile nelle applicazioni.
+Alle operazioni raster usate più di frequente sono stati dati nomi speciali nel file di intestazione DELL'SDK, WINDOWS.H. È consigliabile usare questi nomi quando possibile nelle applicazioni.
 
-Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit pari a zero rappresenta un pixel nero e il valore di bit 1 rappresenta un pixel bianco. Quando le bitmap di origine e di destinazione sono colorate, tali colori sono rappresentati con valori RGB. Per ulteriori informazioni sui valori RGB, vedere [**RGB**](/windows/desktop/api/Wingdi/nf-wingdi-rgb).
+Quando le bitmap di origine e di destinazione sono monocroma, un valore di bit pari a zero rappresenta un pixel nero e un valore di bit pari a 1 rappresenta un pixel bianco. Quando le bitmap di origine e di destinazione sono a colori, tali colori sono rappresentati con valori RGB. Per altre informazioni sui valori RGB, vedere [**RGB.**](/windows/desktop/api/Wingdi/nf-wingdi-rgb)
 
-**Codici operativi raster**
+**Codici di operazione raster**
 
 
 
 | Funzione booleana (esadecimale) | Operazione raster (esadecimale) | Funzione booleana in polacco inverso | Nome comune    |
 |--------------------------------|--------------------------------|------------------------------------|----------------|
-| 00                             | 00000042                       | 0                                  | NERO      |
+| 00                             | 00000042                       | 0                                  | Oscurità      |
 | 01                             | 00010289                       | DPSoon                             |                |
 | 02                             | 00020C89                       | DPSona                             |                |
 | 03                             | 000300AA                       | PSon                               |                |
@@ -104,12 +104,12 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 07                             | 000702C5                       | PDSaon                             |                |
 | 08                             | 00080F08                       | SDPnaa                             |                |
 | 09                             | 00090245                       | PDSxon                             |                |
-| 0A                             | 000A0329                       | DPna                               |                |
-| 0B                             | 000B0B2A                       | PSDnaon                            |                |
+| 0a                             | 000A0329                       | DPna                               |                |
+| 0b                             | 000B0B2A                       | PSDnaon                            |                |
 | 0C                             | 000C0324                       | SPna                               |                |
 | 0D                             | 000D0B25                       | PDSnaon                            |                |
-| 0E                             | 000E08A5                       | PDSonon                            |                |
-| 0F                             | 000F0001                       | PN                                 |                |
+| 0e                             | 000E08A5                       | PDSonon                            |                |
+| 0F                             | 000F0001                       | Pn                                 |                |
 | 10                             | 00100C85                       | PDSona                             |                |
 | 11                             | 001100A6                       | DSon                               | NOTSRCERASE    |
 | 12                             | 00120868                       | SDPxnon                            |                |
@@ -141,7 +141,7 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 2C                             | 002C0784                       | SPDSoax                            |                |
 | 2D                             | 002D060A                       | PSDnox                             |                |
 | 2E                             | 002E064A                       | PSDPxox                            |                |
-| 2F                             | 002F0E2A                       | PSDnoan                            |                |
+| 2f                             | 002F0E2A                       | PSDnoan                            |                |
 | 30                             | 0030032A                       | PSna                               |                |
 | 31                             | 00310B28                       | SDPnaon                            |                |
 | 32                             | 00320688                       | SDPSoox                            |                |
@@ -154,9 +154,9 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 39                             | 00390604                       | SPDnox                             |                |
 | 3A                             | 003A0644                       | SPDSxox                            |                |
 | 3B                             | 003B0E24                       | SPDnoan                            |                |
-| 3C                             | 003C004A                       | PSx                                |                |
+| 3C                             | 003C004A                       | Psx                                |                |
 | 3D                             | 003D18A4                       | SPDSonox                           |                |
-| 3E                             | 003E1B24                       | SPDSnaox                           |                |
+| 3e                             | 003E1B24                       | SPDSnaox                           |                |
 | 3F                             | 003F00EA                       | PSan                               |                |
 | 40                             | 00400F0A                       | PSDnaa                             |                |
 | 41                             | 00410249                       | DPSxon                             |                |
@@ -169,11 +169,11 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 48                             | 00480368                       | SDPxa                              |                |
 | 49                             | 004916C5                       | PDSPDaoxxn                         |                |
 | 4A                             | 004A0789                       | DPSDoax                            |                |
-| 4B                             | 004B0605                       | PDSnox                             |                |
+| 4b                             | 004B0605                       | PDSnox                             |                |
 | 4C                             | 004C0CC8                       | SDPana                             |                |
 | 4D                             | 004D1954                       | SSPxDSxoxn                         |                |
 | 4E                             | 004E0645                       | PDSPxox                            |                |
-| 4F                             | 004F0E25                       | PDSnoan                            |                |
+| 4f                             | 004F0E25                       | PDSnoan                            |                |
 | 50                             | 00500325                       | PDna                               |                |
 | 51                             | 00510B26                       | DSPnaon                            |                |
 | 52                             | 005206C9                       | DPSDaox                            |                |
@@ -184,28 +184,28 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 57                             | 00570389                       | DPSoan                             |                |
 | 58                             | 00580785                       | PDSPoax                            |                |
 | 59                             | 00590609                       | DPSnox                             |                |
-| 5A                             | 005A0049                       | DPx                                | PATINVERT      |
+| 5A                             | 005A0049                       | Dpx                                | PATINVERT      |
 | 5B                             | 005B18A9                       | DPSDonox                           |                |
 | 5C                             | 005C0649                       | DPSDxox                            |                |
-| 5D                             | 005D0E29                       | DPSnoan                            |                |
+| 5d                             | 005D0E29                       | DPSnoan                            |                |
 | 5E                             | 005E1B29                       | DPSDnaox                           |                |
-| 5F                             | 005F00E9                       | DPan                               |                |
+| 5f                             | 005F00E9                       | DPan                               |                |
 | 60                             | 00600365                       | PDSxa                              |                |
 | 61                             | 006116C6                       | DSPDSaoxxn                         |                |
 | 62                             | 00620786                       | DSPDoax                            |                |
 | 63                             | 00630608                       | SDPnox                             |                |
 | 64                             | 00640788                       | SDPSoax                            |                |
 | 65                             | 00650606                       | DSPnox                             |                |
-| 66                             | 00660046                       | DSx                                | SRCINVERT      |
+| 66                             | 00660046                       | Dsx                                | SRCINVERT      |
 | 67                             | 006718A8                       | SDPSonox                           |                |
 | 68                             | 006858A6                       | DSPDSonoxxn                        |                |
 | 69                             | 00690145                       | PDSxxn                             |                |
 | 6A                             | 006A01E9                       | DPSax                              |                |
 | 6B                             | 006B178A                       | PSDPSoaxxn                         |                |
 | 6C                             | 006C01E8                       | SDPax                              |                |
-| 6D                             | 006D1785                       | PDSPDoaxxn                         |                |
+| 6d                             | 006D1785                       | PDSPDoaxxn                         |                |
 | 6E                             | 006E1E28                       | SDPSnoax                           |                |
-| 6F                             | 006F0C65                       | PDSxnan                            |                |
+| 6f                             | 006F0C65                       | PDSxnan                            |                |
 | 70                             | 00700CC5                       | PDSana                             |                |
 | 71                             | 00711D5C                       | SSDxPDxaxn                         |                |
 | 72                             | 00720648                       | SDPSxox                            |                |
@@ -216,12 +216,12 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 77                             | 007700E6                       | DSan                               |                |
 | 78                             | 007801E5                       | PDSax                              |                |
 | 79                             | 00791786                       | DSPDSoaxxn                         |                |
-| 7A                             | 007A1E29                       | DPSDnoax                           |                |
-| 7B                             | 007B0C68                       | SDPxnan                            |                |
+| 7a                             | 007A1E29                       | DPSDnoax                           |                |
+| 7b                             | 007B0C68                       | SDPxnan                            |                |
 | 7C                             | 007C1E24                       | SPDSnoax                           |                |
-| 7D                             | 007D0C69                       | DPSxnan                            |                |
+| 7d                             | 007D0C69                       | DPSxnan                            |                |
 | 7E                             | 007E0955                       | SPxDSxo                            |                |
-| 7F                             | 007F03C9                       | DPSaan                             |                |
+| 7f                             | 007F03C9                       | DPSaan                             |                |
 | 80                             | 008003E9                       | DPSaa                              |                |
 | 81                             | 00810975                       | SPxDSxon                           |                |
 | 82                             | 00820C49                       | DPSxna                             |                |
@@ -230,14 +230,14 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 85                             | 00851E05                       | PDSPnoaxn                          |                |
 | 86                             | 008617A6                       | DSPDSoaxx                          |                |
 | 87                             | 008701C5                       | PDSaxn                             |                |
-| 88                             | 008800C6                       | DSa                                | SRCAND         |
+| 88                             | 008800C6                       | Dsa                                | SRCAND         |
 | 89                             | 00891B08                       | SDPSnaoxn                          |                |
 | 8A                             | 008A0E06                       | DSPnoa                             |                |
-| 8B                             | 008B0666                       | DSPDxoxn                           |                |
+| 8B                             | 008B0666                       | DSPDxoxoxn                           |                |
 | 8C                             | 008C0E08                       | SDPnoa                             |                |
 | 8D                             | 008D0668                       | SDPSxoxn                           |                |
-| 8E                             | 008E1D7C                       | SSDxPDxax                          |                |
-| 8F                             | 008F0CE5                       | PDSanan                            |                |
+| 8e                             | 008E1D7C                       | SSDxPDxax                          |                |
+| 8f                             | 008F0CE5                       | PDSanan                            |                |
 | 90                             | 00900C45                       | PDSxna                             |                |
 | 91                             | 00911E08                       | SDPSnoaxn                          |                |
 | 92                             | 009217A9                       | DPSDPoaxx                          |                |
@@ -252,12 +252,12 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | 9B                             | 009B07A8                       | SDPSoaxn                           |                |
 | 9C                             | 009C0704                       | SPDnax                             |                |
 | 9D                             | 009D07A6                       | DSPDoaxn                           |                |
-| 9E                             | 009E16E6                       | DSPDSaoxx                          |                |
-| 9F                             | 009F0345                       | PDSxan                             |                |
-| A0                             | 00A000C9                       | DPa                                |                |
+| 9e                             | 009E16E6                       | DSPDSaoxx                          |                |
+| 9f                             | 009F0345                       | PDSxan                             |                |
+| A0                             | 00A000C9                       | Dpa                                |                |
 | A1                             | 00A11B05                       | PDSPnaoxn                          |                |
 | A2                             | 00A20E09                       | DPSnoa                             |                |
-| A3                             | 00A30669                       | DPSDxoxn                           |                |
+| A3                             | 00A30669                       | DPSDxoxoxn                           |                |
 | A4.                             | 00A41885                       | PDSPonoxn                          |                |
 | A5                             | 00A50065                       | PDxn                               |                |
 | A6                             | 00A60706                       | DSPnax                             |                |
@@ -266,7 +266,7 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | A9                             | 00A90189                       | DPSoxn                             |                |
 | AA                             | 00AA0029                       | D                                  |                |
 | AB                             | 00AB0889                       | DPSono                             |                |
-| AC                             | 00AC0744                       | SPDSxax                            |                |
+| Ac                             | 00AC0744                       | SPDSxax                            |                |
 | AD                             | 00AD06E9                       | DPSDaoxn                           |                |
 | AE                             | 00AE0B06                       | DSPnao                             |                |
 | AF                             | 00AF0229                       | DPno                               |                |
@@ -286,7 +286,7 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | BD                             | 00BD0D7D                       | SDxPDxan                           |                |
 | BE                             | 00BE0269                       | DPSxo                              |                |
 | BF                             | 00BF08C9                       | DPSano                             |                |
-| C0                             | 00C000CA                       | Nei                                | MERGECOPY      |
+| C0                             | 00C000CA                       | Psa                                | MERGECOPY      |
 | C1                             | 00C11B04                       | SPDSnaoxn                          |                |
 | C2                             | 00C21884                       | SPDSonoxn                          |                |
 | C3                             | 00C3006A                       | PSxn                               |                |
@@ -315,7 +315,7 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | DA                             | 00DA1CE9                       | DPSDanax                           |                |
 | DB                             | 00DB0D75                       | SPxDSxan                           |                |
 | DC                             | 00DC0B04                       | SPDnao                             |                |
-| GG                             | 00DD0228                       | SDno                               |                |
+| GG                             | 00DD0228                       | SDNO                               |                |
 | DE                             | 00DE0268                       | SDPxo                              |                |
 | DF                             | 00DF08C8                       | SDPano                             |                |
 | E0                             | 00E003A5                       | PDSoa                              |                |
@@ -332,7 +332,7 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | EB                             | 00EB0849                       | DPSxno                             |                |
 | EC                             | 00EC02E8                       | SDPao                              |                |
 | ED                             | 00ED0848                       | SDPxno                             |                |
-| EE                             | 00EE0086                       | DSo                                | SRCPAINT       |
+| EE                             | 00EE0086                       | Dso                                | SRCPAINT       |
 | EF                             | 00EF0A08                       | SDPnoo                             |                |
 | F0                             | 00F00021                       | P                                  | PATCOPY        |
 | F1                             | 00F10885                       | PDSono                             |                |
@@ -344,13 +344,13 @@ Quando le bitmap di origine e di destinazione sono monocromatiche, un valore bit
 | F7                             | 00F708C5                       | PDSano                             |                |
 | F8                             | 00F802E5                       | PDSao                              |                |
 | F9                             | 00F90845                       | PDSxno                             |                |
-| FA                             | 00FA0089                       | DPo                                |                |
+| FA                             | 00FA0089                       | Dpo                                |                |
 | FB                             | 00FB0A09                       | DPSnoo                             | PATPAINT       |
-| FC                             | 00FC008A                       | PSo                                |                |
+| FC                             | 00FC008A                       | Pso                                |                |
 | FD                             | 00FD0A0A                       | PSDnoo                             |                |
 | FE                             | 00FE02A9                       | DPSoo                              |                |
-| FF                             | 00FF0062                       | 1                                  | CANDORE      |
-| 8000                           | 80 milioni                       |                                    | NOMIRRORBITMAP |
+| FF                             | 00FF0062                       | 1                                  | Bianchezza      |
+| 8000                           | 80000000                       |                                    | NOMIRRORBITMAP |
 
 
 

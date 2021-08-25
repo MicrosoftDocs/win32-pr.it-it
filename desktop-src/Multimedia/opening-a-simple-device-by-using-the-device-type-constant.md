@@ -1,21 +1,21 @@
 ---
-title: Apertura di un dispositivo semplice utilizzando la costante Device-Type
-description: Apertura di un dispositivo semplice utilizzando la costante Device-Type
+title: Apertura di un dispositivo semplice tramite la costante Device-Type
+description: Apertura di un dispositivo semplice tramite la costante Device-Type
 ms.assetid: 6ed5fd4b-534a-4e03-8130-07f831403a8e
 keywords:
-- mciSendCommand (funzione)
+- MciSendCommand - funzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef65cf4546da2d7f7b6fdb5883232d0b1802f7b1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 810915331fc00f72f4ab705cd01c91ecabf5d190efca4f4a9c786a36d7880103
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806331"
 ---
-# <a name="opening-a-simple-device-by-using-the-device-type-constant"></a>Apertura di un dispositivo semplice utilizzando la costante Device-Type
+# <a name="opening-a-simple-device-by-using-the-device-type-constant"></a>Apertura di un dispositivo semplice tramite la costante Device-Type
 
-Nell'esempio seguente viene aperto un dispositivo audio CD specificando una costante del tipo di dispositivo mediante la funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+L'esempio seguente apre un dispositivo audio CD specificando una costante di tipo dispositivo usando la [**funzione mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -41,6 +41,6 @@ wDeviceID = mciOpenParms.wDeviceID;
 
 
 
- 
+ 
 
- 
+ 

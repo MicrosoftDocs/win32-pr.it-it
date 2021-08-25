@@ -4,7 +4,7 @@ description: Nome dell'autorità emittente del secondo server terminal per utent
 ms.assetid: 7a44cb39-c5a3-415d-8990-3e0368730a23
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TS-ManagingLS2-schema AD
+- Schema AD dell'attributo MS-TS-ManagingLS2
 - Schema AD dell'attributo msTSManagingLS2
 topic_type:
 - apiref
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31122c8ed57173c645ff63583f6d5615f84812b5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d4c181161e426188de204a04f7aab063a706d28ef6a4dec71f5232a186b6280d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924341"
 ---
 # <a name="ms-ts-managingls2-attribute"></a>Attributo MS-TS-ManagingLS2
 
@@ -30,12 +30,12 @@ Nome dell'autorità emittente del secondo server terminal per utente CAL.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS2                           |
-| LDAP-Display-Name | msTSManagingLS2                             |
+| Ldap-Display-Name | msTSManagingLS2                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2002                     |
-| System-ID-GUID    | 349f0757-51bd-4fc8-9d66-3eceea8a25be        |
+| System-Id-Guid    | 349f0757-51bd-4fc8-9d66-3eceea8a25be        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Nome dell'autorità emittente del secondo server terminal per utente CAL.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -76,15 +76,15 @@ Nome dell'autorità emittente del secondo server terminal per utente CAL.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -97,15 +97,15 @@ Nome dell'autorità emittente del secondo server terminal per utente CAL.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

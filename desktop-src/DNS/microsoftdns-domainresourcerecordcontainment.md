@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_DomainResourceRecordContainment
-description: La \_ classe MicrosoftDNS DomainResourceRecordContainment viene usata per il contenimento del record RR. ogni istanza del \_ dominio MicrosoftDNS può contenere più istanze della \_ classe MicrosoftDNS ResourceRecord.
+title: MicrosoftDNS_DomainResourceRecordContainment classe
+description: La classe MicrosoftDNS DomainResourceRecordContainment viene usata per il contenimento di RR. Ogni istanza del dominio MicrosoftDNS può contenere più istanze della \_ \_ classe ResourceRecord MicrosoftDNS. \_
 ms.assetid: 556c5e8d-58a1-4cb4-b4e9-eebdd86ed6a0
 keywords:
-- DNS della classe MicrosoftDNS_DomainResourceRecordContainment
-- MicrosoftDNS_DomainResourceRecordContainment della classe DNS, descritta
+- MicrosoftDNS_DomainResourceRecordContainment DNS della classe
+- MicrosoftDNS_DomainResourceRecordContainment classe DNS , descritto
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fddf172c3e320fd5c3a3b04d85d766a0252abd97
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 498d9b953895ebece94dc77edb587045d1cfdd45c29f04c202756bd1080dc9f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795611"
 ---
-# <a name="microsoftdns_domainresourcerecordcontainment-class"></a>\_Classe MicrosoftDNS DomainResourceRecordContainment
+# <a name="microsoftdns_domainresourcerecordcontainment-class"></a>Classe \_ DomainResourceRecordContainment MicrosoftDNS
 
-La classe **MicrosoftDNS \_ DomainResourceRecordContainment** viene usata per il contenimento del record RR. ogni istanza del [**\_ dominio MicrosoftDNS**](microsoftdns-domain.md) può contenere più istanze della classe [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) . Ogni istanza della classe **MicrosoftDNS \_ ResourceRecord** appartiene a una singola istanza della classe di **\_ dominio MicrosoftDNS** e viene definita debole per tale istanza.
+La **classe MicrosoftDNS \_ DomainResourceRecordContainment** viene usata per il contenimento di RR. Ogni istanza del dominio [**MicrosoftDNS \_**](microsoftdns-domain.md) può contenere più istanze della [**classe \_ ResourceRecord MicrosoftDNS.**](microsoftdns-resourcerecord.md) Ogni istanza della **classe \_ MicrosoftDNS ResourceRecord** appartiene a una singola istanza della classe Di dominio **MicrosoftDNS \_** ed è definita come debole per tale istanza.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -42,30 +42,30 @@ class MicrosoftDNS_DomainResourceRecordContainment : CIM_Component
 
 ## <a name="members"></a>Members
 
-La **classe \_ DomainResourceRecordContainment di MicrosoftDNS** dispone di questi tipi di membri:
+La **classe MicrosoftDNS \_ DomainResourceRecordContainment** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ DomainResourceRecordContainment di MicrosoftDNS** dispone di queste proprietà.
+La **classe MicrosoftDNS \_ DomainResourceRecordContainment** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ dominio MicrosoftDNS**
+Tipo di dati: **Dominio \_ MicrosoftDNS**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Qualificatori: chiave, override ("GroupComponent")
+Qualificatori: Key, Override("GroupComponent")
 
-Descrizione: la zona, la cache, RootHints o il dominio contenente direttamente il record di risorse.
+Descrizione: zona, cache, RootHints o dominio che contiene direttamente il record di risorse.
 
-Ereditato dal \_ componente CIM
+Ereditato dal componente \_ CIM
 
 </dd> <dt>
 
@@ -78,11 +78,11 @@ Tipo di dati: **MicrosoftDNS \_ ResourceRecord**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Qualificatori: chiave, override ("PartComponent")
+Qualificatori: Key, Override("PartComponent")
 
-Descrizione: il record di risorse contenuto in un dominio, una zona, una cache o un RootHints.
+Descrizione: record di risorse contenuto in un dominio, una zona, una cache o un roothints.
 
-Ereditato dal \_ componente CIM.
+Ereditato dal componente \_ CIM.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Ereditato dal \_ componente CIM.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -103,13 +103,13 @@ Ereditato dal \_ componente CIM.
 
 <dl> <dt>
 
-[**\_ServerDomainContainment MicrosoftDNS**](microsoftdns-serverdomaincontainment.md)
+[**MicrosoftDNS \_ ServerDomainContainment**](microsoftdns-serverdomaincontainment.md)
 </dt> <dt>
 
-[**\_DomainDomainContainment MicrosoftDNS**](microsoftdns-domaindomaincontainment.md)
+[**MicrosoftDNS \_ DomainDomainContainment**](microsoftdns-domaindomaincontainment.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

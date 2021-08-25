@@ -1,25 +1,25 @@
 ---
 description: 'Altre informazioni su: operatori JET_SIGNATURE'
-title: Operatori di JET_SIGNATURE
+title: JET_SIGNATURE operatori
 TOCTitle: JET_SIGNATURE operators
 ms:assetid: 8d99c598-1c79-00ba-5a3e-d18a90d0ba5c
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh558131(v=EXCHG.10)
 ms:contentKeyID: 39513665
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 95607171d6b89dc9b4ec7415ca2cce0710622207
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d65e7e2da255e71302c5f432b37b1c6d8a1157c7005c2197afea21c522a15c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104555146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833291"
 ---
-# <a name="jet_signature-operators"></a>Operatori di JET_SIGNATURE
+# <a name="jet_signature-operators"></a>JET_SIGNATURE operatori
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_SIGNATURE](./jet-signature-structure2.md) espone i membri seguenti.
+Il [JET_SIGNATURE](./jet-signature-structure2.md) tipo espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE struttura](./jet-signature-structure2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione SystemTimeZone Win32 mette in correlazione un computer e un fuso orario.
+description: La classe WMI di associazione SystemTimeZone Win32 \_ mette in relazione un sistema di computer e un fuso orario.
 ms.assetid: 53c74a61-c91d-4daa-933e-4cc7b9583d98
 ms.tgt_platform: multiple
-title: Classe Win32_SystemTimeZone
+title: Win32_SystemTimeZone classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9ec294600fdc81f085bf29f5e664bcbec961417c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b94f6c6ff61acb526e972da54c55798524b39b1663dec1239e9e2dbae0110e6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827751"
 ---
-# <a name="win32_systemtimezone-class"></a>Win32 \_ SystemTimeZone (classe)
+# <a name="win32_systemtimezone-class"></a>Classe SystemTimeZone Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ SystemTimeZone Win32** mette in correlazione un computer e un fuso orario.
+La classe [WMI](../wmisdk/retrieving-a-class.md) di **associazione \_ SystemTimeZone Win32** mette in relazione un sistema informatico e un fuso orario.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,51 +42,51 @@ class Win32_SystemTimeZone : Win32_SystemSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SystemTimeZone** presenta questi tipi di membri:
+La **classe \_ SystemTimeZone Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SystemTimeZone** dispone di queste proprietà.
+La **classe \_ SystemTimeZone Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **elemento**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ ComputerSystem**
+Tipo di dati: **\_ ComputerSystem Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("ComputerSystem \| Win32 \_ WMI")
 </dt> </dl>
 
-Riferimento all'istanza che rappresenta il sistema del computer che tiene traccia del fuso orario di sistema.
+Riferimento all'istanza che rappresenta il sistema informatico che tiene traccia del fuso orario di sistema.
 
 </dd> <dt>
 
 **Impostazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ fuso orario Win32**
+Tipo di dati: **\_ TimeZone Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ TimeZone")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("TimeZone \| WIN32 \_ WMI")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta le proprietà del fuso orario registrate dal sistema del computer.
+Riferimento all'istanza che rappresenta le proprietà del fuso orario rilevate dal sistema informatico.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ SystemTimeZone** è derivata da [**Win32 \_ SystemSetting**](win32-systemsetting.md).
+La **classe \_ SystemTimeZone Win32** è derivata da [**\_ SystemSetting Win32.**](win32-systemsetting.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ SystemTimeZone** è derivata da [**Win32 \_ SystemSetting**
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ SystemTimeZone** è derivata da [**Win32 \_ SystemSetting**
 
 <dl> <dt>
 
-[**\_SystemSetting Win32**](win32-systemsetting.md)
+[**Win32 \_ SystemSetting**](win32-systemsetting.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

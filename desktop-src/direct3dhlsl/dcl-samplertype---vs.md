@@ -1,6 +1,6 @@
 ---
 title: dcl_samplerType (sm3 - vs asm)
-description: Dichiarare un campionatore di vertex shader.
+description: Dichiarare un campionatore vertex shader.
 ms.assetid: 733307ac-24ab-4db7-bf70-58a83b4c39b1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2fbcb934ad591274d743f09c810de2db42278261
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 048246f8a48430dca26a763e9266f00edd61215e769f4ff5385036054aebc34b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726571"
 ---
 # <a name="dcl_samplertype-sm3---vs-asm"></a>dcl \_ samplerType (sm3 - vs asm)
 
-Dichiarare un campionatore di vertex shader.
+Dichiarare un campionatore vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,17 +30,17 @@ dcl \_ samplerType s\#
 
 dove:
 
--   \_samplerType definisce il tipo di dati sampler. In questo modo viene determinato il numero di coordinate richieste da ogni coordinata di trama durante il campionamento. Vengono definite le dimensioni delle coordinate di trama seguenti.
+-   \_samplerType definisce il tipo di dati sampler. Questo determina il numero di coordinate richieste da ogni coordinata di trama durante il campionamento. Vengono definite le dimensioni delle coordinate di trama seguenti.
     -   \_2d
     -   \_Cubo
     -   \_Volume
--   s \# identifica un campionatore, dove s è un'abbreviazione del campionatore e \# è il numero del campionatore. [I sampler (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)sono pseudoregistri perché non è possibile leggerli o scriverli direttamente.
+-   s \# identifica un campionatore dove s è l'abbreviazione del campionatore e \# è il numero del campionatore. [I sampler (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md)sono pseudoregistri perché non è possibile leggerli o scrivervi direttamente.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | dcl \_ samplerType       |      |      |      |       | x    | x     |
 

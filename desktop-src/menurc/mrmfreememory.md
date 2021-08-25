@@ -1,5 +1,5 @@
 ---
-title: Funzione MrmFreeMemory (MrmResourceIndexer. h)
+title: Funzione MrmFreeMemory (MrmResourceIndexer.h)
 description: Libera la memoria allocata da MrmCreateConfigInMemory, MrmCreateResourceFileInMemory, MrmDumpPriFileInMemory e MrmDumpPriDataInMemory.
 ms.assetid: F8741379-CE1A-47BD-9B2C-721A5424CAD1
 keywords:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6c255cb4d1c73e40b5636914d2bc70ae4e1efe3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8870281268ff9560d9c82455349f07c3df42e8ab1937b047c4aa9e431b02ed90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825701"
 ---
-# <a name="mrmfreememory-function"></a>MrmFreeMemory (funzione)
+# <a name="mrmfreememory-function"></a>Funzione MrmFreeMemory
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Libera la memoria allocata da [**MrmCreateConfigInMemory**](mrmcreateconfiginmemory.md), [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md), [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md)e [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Libera la memoria allocata da [**MrmCreateConfigInMemory**](mrmcreateconfiginmemory.md), [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md), [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md)e [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi [di compilazione personalizzati.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,12 +42,12 @@ HRESULT HRESULT MrmFreeMemory(
 
 <dl> <dt>
 
-*dati* \[ di in\]
+*dati* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Puntatore alla memoria allocata e restituita [da *_ MrmCreateConfigInMemory* *](mrmcreateconfiginmemory.md), [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md), [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md)o [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md).
+Puntatore alla memoria allocata e restituita da [**MrmCreateConfigInMemory**](mrmcreateconfiginmemory.md), [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md), [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md)o [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md).
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Puntatore alla memoria allocata e restituita [da *_ MrmCreateConfigInMemory* *](
 
 Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,10 +63,10 @@ S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valor
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

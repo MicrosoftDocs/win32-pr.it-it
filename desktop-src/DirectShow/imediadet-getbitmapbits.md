@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetBitmapBits recupera un frame video al momento del supporto specificato. Il frame restituito è sempre in formato RGB a 24 bit.
+description: Il metodo GetBitmapBits recupera un fotogramma video all'ora del supporto specificata. Il frame restituito è sempre in formato RGB a 24 bit.
 ms.assetid: b51df9d1-9c54-41bd-b0f8-ec290525deca
-title: 'Metodo IMediaDet:: GetBitmapBits (qedit. h)'
+title: Metodo IMediaDet::GetBitmapBits (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 95aea5281f77b32868e0f0856bc63063e4f08639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c4a7332580d4e9a9fece5a66d390753566fbf54c615699663256c463cb401b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792001"
 ---
-# <a name="imediadetgetbitmapbits-method"></a>Metodo IMediaDet:: GetBitmapBits
+# <a name="imediadetgetbitmapbits-method"></a>Metodo IMediaDet::GetBitmapBits
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `GetBitmapBits` metodo recupera un frame video al momento del supporto specificato. Il frame restituito è sempre in formato RGB a 24 bit.
+Il `GetBitmapBits` metodo recupera un fotogramma video all'ora del supporto specificata. Il frame restituito è sempre in formato RGB a 24 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,21 +52,21 @@ HRESULT GetBitmapBits(
 *StreamTime* 
 </dt> <dd>
 
-Tempo di recupero del fotogramma video, in secondi.
+Ora in cui recuperare il fotogramma video, espresso in secondi.
 
 </dd> <dt>
 
 *pBufferSize* 
 </dt> <dd>
 
-Riceve le dimensioni del buffer richieste. Se *pbuffer* è **null**, la variabile riceve la dimensione del buffer necessaria per recuperare il frame. Se *pbuffer* non è **null**, questo parametro viene ignorato.
+Riceve le dimensioni del buffer necessarie. Se *pBuffer* è **NULL,** la variabile riceve le dimensioni del buffer necessarie per recuperare il frame. Se *pBuffer* non è **NULL,** questo parametro viene ignorato.
 
 </dd> <dt>
 
 *pBuffer* 
 </dt> <dd>
 
-Puntatore a un buffer che riceve una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) seguita dai bit DIB.
+Puntatore a un buffer che riceve una [**struttura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) seguita dai bit DIB.
 
 </dd> <dt>
 
@@ -86,17 +86,17 @@ Altezza dell'immagine video, in pixel.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I possibili valori sono i seguenti:
+Restituisce un **valore HRESULT.** I possibili valori sono i seguenti:
 
 
 
 | Codice restituito                                                                                             | Descrizione                                                                                       |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                    | Esito positivo.<br/>                                                                               |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl>           | Non è stato possibile aggiungere il filtro [**grabber di esempio**](sample-grabber-filter.md) al grafo.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>           | Memoria insufficiente.<br/>                                                                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>               | Errore puntatore **null** .<br/>                                                                |
-| <dl> <dt>**E \_ imprevisto**</dt> </dl>            | Errore imprevisto.<br/>                                                                      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                    | Operazione completata.<br/>                                                                               |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl>           | Impossibile aggiungere il [**filtro Grabber**](sample-grabber-filter.md) di esempio al grafico.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>           | Memoria insufficiente.<br/>                                                                   |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>               | Errore del puntatore **NULL.**<br/>                                                                |
+| <dl> <dt>**E \_ IMPREVISTO**</dt> </dl>            | Errore imprevisto.<br/>                                                                      |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo di supporto non valido.<br/>                                                                    |
 
 
@@ -105,19 +105,19 @@ Restituisce un valore **HRESULT** . I possibili valori sono i seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, impostare il nome e il flusso del file chiamando [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) e [**IMediaDet::p UT \_ CurrentStream**](imediadet-put-currentstream.md).
+Prima di chiamare questo metodo, impostare il nome file e il flusso chiamando [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
 
-Per determinare le dimensioni del buffer necessario, chiamare questo metodo con *pbuffer* uguale a **null**. La dimensione viene restituita nella variabile a cui punta *pBufferSize*. Creare quindi il buffer e chiamare di nuovo il metodo, con *pbuffer* uguale all'indirizzo del buffer. Quando il metodo viene restituito, il buffer contiene una struttura **BITMAPINFOHEADER** seguita dalla bitmap. La bitmap viene ridimensionata alle dimensioni specificate nei parametri *Width* e *Height* .
+Per determinare le dimensioni del buffer necessarie, chiamare questo metodo con *pBuffer* uguale a **NULL.** Le dimensioni vengono restituite nella variabile a cui punta *pBufferSize*. Creare quindi il buffer e chiamare di nuovo il metodo , con *pBuffer* uguale all'indirizzo del buffer. Quando il metodo viene restituito, il buffer contiene una **struttura BITMAPINFOHEADER** seguita dalla bitmap. La bitmap viene ridimensionata in base alle dimensioni specificate nei *parametri Width* *e Height.*
 
-Questo metodo inserisce il rilevatore multimediale in modalità di cattura bitmap. Una volta che questo metodo è stato chiamato, i vari metodi di informazioni sui flussi in **IMediaDet** non funzionano, a meno che non si crei una nuova istanza del rilevamento multimediale.
+Questo metodo imposta il rilevatore multimediale in modalità di cattura bitmap. Dopo aver chiamato questo metodo, i vari metodi di informazioni sul flusso in **IMediaDet** non funzionano, a meno che non si crei una nuova istanza del rilevatore di supporti.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -172,8 +172,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 62681c468fa7e78e6fd08c458798d98b467b992e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8fa483be72d29cc869b2bd468cff25033a80187bef69317af4894fc05b096dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856451"
 ---
 # <a name="id3dxmatrixstack-interface"></a>Interfaccia ID3DXMATRIXStack
 
@@ -43,7 +43,7 @@ Le applicazioni usano i metodi dell'interfaccia ID3DXMATRIXStack per modificare 
 | [**LoadIdentity**](id3dxmatrixstack--loadidentity.md)                       | Carica l'identità nella matrice corrente.<br/>                                                                                           |
 | [**LoadMatrix**](id3dxmatrixstack--loadmatrix.md)                           | Carica la matrice specificata nella matrice corrente.<br/>                                                                                 |
 | [**MultMatrix**](id3dxmatrixstack--multmatrix.md)                           | Determina il prodotto della matrice corrente e della matrice specificata.<br/>                                                              |
-| [**MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md)                 | Determina il prodotto della matrice specificata e la matrice corrente.<br/>                                                              |
+| [**MultMatrixLocal**](id3dxmatrixstack--multmatrixlocal.md)                 | Determina il prodotto della matrice specificata e della matrice corrente.<br/>                                                              |
 | [**Pop**](id3dxmatrixstack--pop.md)                                         | Rimuove la matrice corrente dall'inizio dello stack.<br/>                                                                           |
 | [**Spingere**](id3dxmatrixstack--push.md)                                       | Aggiunge una matrice nello stack.<br/>                                                                                                     |
 | [**RotateAxis**](id3dxmatrixstack--rotateaxis.md)                           | Ruota (rispetto allo spazio delle coordinate del mondo) intorno a un asse arbitrario.<br/>                                                          |

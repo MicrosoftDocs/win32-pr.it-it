@@ -1,11 +1,11 @@
 ---
 title: Metodo IConfigAsfWriter2 StreamNumFromPin
-description: Il metodo StreamNumFromPin Recupera il numero di flusso associato al pin di input specificato.
+description: Il metodo StreamNumFromPin recupera il numero di flusso associato al pin di input specificato.
 ms.assetid: f645a742-e6dc-4041-8a56-3bbb5188a9a9
 keywords:
-- Metodo StreamNumFromPin Windows Media Format
-- Metodo StreamNumFromPin Windows Media Format, interfaccia IConfigAsfWriter2
-- Interfaccia IConfigAsfWriter2-formato Windows Media, metodo StreamNumFromPin
+- Metodo StreamNumFromPin windows Media Format
+- Metodo StreamNumFromPin windows Media Format , interfaccia IConfigAsfWriter2
+- Metodo StreamNumFromPin dell'interfaccia IConfigAsfWriter2 di Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,24 +15,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c63a31d515e70b0ee0ac5be617ee52fe23bd5416
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9124d3acaea81e36b212f3dec001374cc035efca449f35af5e43fa18ce50d6dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839822"
 ---
-# <a name="iconfigasfwriter2streamnumfrompin-method"></a>Metodo IConfigAsfWriter2:: StreamNumFromPin
+# <a name="iconfigasfwriter2streamnumfrompin-method"></a>Metodo IConfigAsfWriter2::StreamNumFromPin
 
-Il metodo **StreamNumFromPin** Recupera il numero di flusso associato al pin di input specificato.
+Il **metodo StreamNumFromPin** recupera il numero di flusso associato al pin di input specificato.
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
 HRESULT StreamNumFromPin(
-  [in]  IPin *pPin,
-  [out] WORD *pwStreamNum
+  [in]  IPin *pPin,
+  [out] WORD *pwStreamNum
 );
 ```
 
@@ -42,14 +42,14 @@ HRESULT StreamNumFromPin(
 
 <dl> <dt>
 
-*pPin* \[ in\]
+*pPin* \[ Pollici\]
 </dt> <dd>
 
-Puntatore all'interfaccia **Ipin** sul pin di input.
+Puntatore **all'interfaccia IPin** sul pin di input.
 
 </dd> <dt>
 
-*pwStreamNum* \[ out\]
+*pwStreamNum* \[ Cambio\]
 </dt> <dd>
 
 Puntatore che riceve il numero di flusso.
@@ -58,11 +58,11 @@ Puntatore che riceve il numero di flusso.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se non riesce, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-In alcuni casi potrebbe essere necessario usare direttamente le interfacce SDK di formato Windows Media per modificare un flusso prima di eseguire un grafico di filtro. Poiché non è possibile presupporre che un numero di flusso ASF corrisponda al numero del pin DirectShow, viene fornito questo metodo.
+In alcuni casi potrebbe essere necessario usare direttamente le interfacce Windows Media Format SDK per modificare un flusso prima di eseguire un grafico di filtro. Poiché non è possibile presupporre che un numero di flusso ASF sia lo stesso DirectShow pin, viene fornito questo metodo.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -71,6 +71,6 @@ In alcuni casi potrebbe essere necessario usare direttamente le interfacce SDK d
 [**Interfaccia IConfigAsfWriter2**](/previous-versions/windows/desktop/legacy/dd743206(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

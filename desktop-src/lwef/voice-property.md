@@ -4,16 +4,16 @@ description: Informazioni sulla proprietà Voice dell'oggetto Commands, che rest
 ms.assetid: 1feb5597-7971-4778-8221-2eb3a6e5e1ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7403075d8ec0b2d16c66130fc9534edf4fc391df
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 5af651532894537f58d35f860b781d3be42bfacf89b9be01d7caa26aa40102ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715811"
 ---
 # <a name="voice-property-commands-object"></a>Proprietà Voice (oggetto Commands)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -33,7 +33,7 @@ Restituisce o imposta il testo passato alla grammatica del motore di riconoscime
 
 | Parte     | Descrizione                                                                                                            |
 |----------|------------------------------------------------------------------------------------------------------------------------|
-| *string* | Espressione stringa corrispondente alle parole o alla frase che devono essere usate dal motore di riconoscimento vocale per il riconoscimento di questo comando. |
+| *string* | Espressione stringa corrispondente alle parole o alla frase che il motore di riconoscimento vocale deve usare per il riconoscimento di questo comando. |
 
 
 
@@ -45,7 +45,7 @@ Restituisce o imposta il testo passato alla grammatica del motore di riconoscime
 
 Se non si specifica questo parametro, [**l'oggetto VoiceCaption**](voicecaption-property.md) per [**l'oggetto Commands**](/windows/desktop/lwef/the-commands-collection-object) non verrà visualizzato nella finestra Comandi vocali.
 
-L'espressione stringa specificata può includere parentesi quadre ( ) per indicare parole facoltative e caratteri barra verticali ( ) per \[ \] indicare stringhe \| alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(hello there hi)" indica al motore di riconoscimento vocale di accettare \[ \] \| "hello", "hello there" o "hi" per il comando. Ricordarsi di includere spazi appropriati tra il testo racchiuso tra parentesi quadre o tra parentesi e il testo non racchiuso tra parentesi quadre o tra parentesi. È possibile usare l'operatore star ( ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una o \* più istanze. Ad esempio, il risultato seguente è una grammatica che supporta "try this", "please try this", "please try this", con iterazioni illimitate di "please":
+L'espressione stringa specificata può includere parentesi quadre ( ) per indicare parole facoltative e caratteri barra verticali ( ) per \[ \] indicare stringhe \| alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(hello there hi)" indica al motore di riconoscimento vocale di accettare \[ \] \| "hello", "hello there" o "hi" per il comando. Ricordarsi di includere spazi appropriati tra il testo racchiuso tra parentesi quadre o tra parentesi e il testo non racchiuso tra parentesi quadre o tra parentesi. È possibile usare l'operatore star ( ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una o \* più istanze. Ad esempio, il risultato seguente è una grammatica che supporta "try this", "please try this", "please try this", with unlimited iterations of "please":
 
 
 ```
@@ -97,9 +97,9 @@ Sebbene gli operatori possano essere usati anche con il carattere di raggruppame
 
 Quando si definisce la grammatica delle parole per il comando, includere almeno una parola obbligatoria. in altre parole, evitare di specificare solo parole facoltative. Assicurarsi inoltre che la parola includa solo parole e lettere pronunciabili. Per i numeri, è meglio scrivere la parola anziché usare una rappresentazione ambigua. Ad esempio, "345" non è una forma grammaticale buona. Analogamente, invece di "IEEE", usare "I triple E". Omettere anche eventuali segni di punteggiatura o simboli. Ad esempio, invece di \# "1 pizza da 10 dollari!", usare "the number one ten dollar pizza". L'inclusione di caratteri o simboli non pronunciabili per un comando può causare la mancata compilazione della grammatica da parte del motore di riconoscimento vocale per tutti i comandi. Infine, rendere il parametro voce il più possibile distinto dagli altri comandi vocali definiti. Maggiore è la somiglianza tra la grammatica vocale per i comandi, maggiore è la probabilità che il motore di riconoscimento vocale restituirà un errore di riconoscimento. È anche possibile usare i punteggi di attendibilità per distinguere meglio tra due comandi che possono avere una grammatica vocale simile o simile.
 
-È possibile includere nelle parole grammaticali sotto forma di  "*\\ pronuncia* del testo ", dove testo è il testo visualizzato e *pronuncia* è il testo che chiarisce la pronuncia. Ad esempio, la grammatica "1st first" verrebbe riconosciuta quando l'utente dice "first", ma l'evento Command restituirà il testo \\ "1st [](command-event.md) \\ first". È anche possibile usare IPA (International Phonetic Alphabet) per specificare una pronuncia iniziando la pronuncia con un carattere cancelletto (" "), quindi includere il testo che rappresenta la \# pronuncia IPA.
+È possibile includere nelle parole grammaticali sotto forma di  "*\\ pronuncia* del testo ", dove testo è il testo visualizzato e *pronuncia* è il testo che chiarisce la pronuncia. Ad esempio, la grammatica "1st first" verrebbe riconosciuta quando l'utente dice "first", ma l'evento Command restituirà il testo \\ "1st [](command-event.md) \\ first". È anche possibile usare IPA (Alfabeto fonetico internazionale) per specificare una pronuncia iniziando la pronuncia con un carattere cancelletto (" "), quindi includere il testo che rappresenta la \# pronuncia IPA.
 
-Per i motori di riconoscimento vocale giapponese, è possibile definire la grammatica nel formato "*kana \\ kanji*", riducendo le pronunce alternative e aumentando l'accuratezza. L'ordinamento viene invertito per garantire la compatibilità con le versioni precedenti. Ciò è particolarmente importante per la pronuncia dei nomi propri in Kanji. Tuttavia, è possibile passare kanji senza il Kana, nel qual caso il motore deve restare in ascolto di tutte le pronunce accettabili per i Kanji. È anche possibile passare solo Kana.
+Per i motori di riconoscimento vocale giapponese, è possibile definire la grammatica nel formato "*kana \\ kanji*", riducendo le pronunce alternative e aumentando l'accuratezza. L'ordinamento viene invertito per garantire la compatibilità con le versioni precedenti. Ciò è particolarmente importante per la pronuncia dei nomi propri in Kanji. Tuttavia, è sufficiente passare Kanji senza il Kana, nel qual caso il motore deve restare in ascolto di tutte le pronunce accettabili per i Kanji. È anche possibile passare solo Kana.
 
 Si noti anche che per lingue come giapponese, cinese e thai, che non usano spazi per designare le interruzioni di parola, inserire uno spazio unicode di larghezza zero (0x200B) per indicare interruzioni di parola logiche.
 

@@ -4,12 +4,12 @@ ms.assetid: 817a291c-34de-4780-b8b5-0f428864fa7d
 title: Elemento modelURL
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 980ebd9b97a44372cda68b58add59258ff96a244
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1cee7677062cd509ac43e5a477615e1b0ba29c16084a338ac4cd8f4294aa513f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793981"
 ---
 # <a name="modelurl-element"></a>Elemento modelURL
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -3,20 +3,20 @@ title: Funzioni di compressione video
 description: Funzioni di compressione video
 ms.assetid: 193961a5-b882-4769-bce7-a53d625fc9dd
 keywords:
-- Video per Windows (VFW), funzioni VCM
-- VFW (video per Windows), funzioni VCM
+- Video per Windows (VFW),Funzioni di VCM
+- VFW (Video per Windows),Funzioni di VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0876b67c74ddac2d2f498583fe058dd9ea39436
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d6a6de915c837fbe7e7d8d73d655a2f0a58804ef2a45a23c0a3087a9cb2187c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804321"
 ---
 # <a name="video-compression-functions"></a>Funzioni di compressione video
 
-Con la compressione video vengono usate le funzioni seguenti.
+Le funzioni seguenti vengono usate con la compressione video.
 
 -   [**ICClose**](/windows/desktop/api/Vfw/nf-vfw-icclose)
 -   [**ICCompress**](/windows/desktop/api/Vfw/nf-vfw-iccompress)
@@ -50,9 +50,9 @@ Con la compressione video vengono usate le funzioni seguenti.
 
 <dl> <dt>
 
-[Guida di riferimento a Gestione compressione video](video-compression-manager-reference.md)
+[Informazioni di riferimento su Gestione compressione video](video-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

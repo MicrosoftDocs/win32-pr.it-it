@@ -1,23 +1,23 @@
 ---
-description: Conversioni di tipi di supporto
+description: Conversioni di tipi di supporti
 ms.assetid: 6aee18b8-79b1-47fb-816f-d1c2c77b3a03
-title: Conversioni di tipi di supporto
+title: Conversioni di tipi di supporti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee3a72e74439251f9661e0ff27166c504e47c238
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aacb4b7209ec96493c7b32c9de15ecf55071d7fb2861eda86f6f38fed8566e71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103761465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827471"
 ---
-# <a name="media-type-conversions"></a>Conversioni di tipi di supporto
+# <a name="media-type-conversions"></a>Conversioni di tipi di supporti
 
-In alcuni casi è necessario eseguire la conversione tra Media Foundation tipi di supporto e le strutture di tipo multimediale precedenti da DirectShow o Windows Media Format SDK.
+In alcuni casi è necessario eseguire la conversione tra Media Foundation tipi di supporti e le strutture dei tipi di supporti meno recenti da DirectShow o Windows Media Format SDK.
 
-### <a name="from-a-format-structure-to-a-media-foundation-type"></a>Da una struttura di formato a un tipo di Media Foundation
+### <a name="from-a-format-structure-to-a-media-foundation-type"></a>Da una struttura di formato a un Media Foundation tipo
 
-Le funzioni seguenti inizializzano un Media Foundation tipo di supporto da una struttura di formato. Queste funzioni sono utili anche se un flusso di dati o un'intestazione di file contiene una struttura di formato. L'intestazione di file per i file audio WAVE, ad esempio, contiene una struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+Le funzioni seguenti inizializzano un Media Foundation tipo di supporto da una struttura di formato. Queste funzioni sono utili anche se un flusso di dati o un'intestazione di file contiene una struttura di formato. Ad esempio, l'intestazione del file per i file audio WAVE contiene una [**struttura WAVEFORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
 
 
@@ -34,7 +34,7 @@ Le funzioni seguenti inizializzano un Media Foundation tipo di supporto da una s
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="/windows/win32/api/strmif/ns-strmif-am_media_type"><strong>AM_MEDIA_TYPE</strong></a> (DirectShow)<br/> <a href="/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type"><strong>DMO_MEDIA_TYPE</strong></a> (oggetti multimediali DirectX) <br/> <a href="/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type"><strong>WM_MEDIA_TYPE</strong></a> (Windows Media Format SDK) <br/>
+<td><a href="/windows/win32/api/strmif/ns-strmif-am_media_type"><strong>AM_MEDIA_TYPE</strong></a> (DirectShow)<br/> <a href="/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type"><strong>DMO_MEDIA_TYPE</strong></a> (DirectX Media Objects) <br/> <a href="/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type"><strong>WM_MEDIA_TYPE</strong></a> (Windows Media Format SDK) <br/>
 <blockquote>
 [!Note]<br />
 Queste strutture sono equivalenti.
@@ -77,37 +77,37 @@ Queste strutture sono equivalenti.
 
  
 
-### <a name="from-a-media-foundation-type-to-a-format-structure"></a>Da un tipo di Media Foundation a una struttura di formato
+### <a name="from-a-media-foundation-type-to-a-format-structure"></a>Da un Media Foundation tipo a una struttura di formato
 
-Le funzioni seguenti creano o inizializzano una struttura di formato da un tipo di supporto Media Foundation.
+Le funzioni seguenti creano o inizializzano una struttura di formato da un Media Foundation tipo di supporto.
 
 
 
 | Funzione                                                                             | Struttura di destinazione                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IMFMediaType:: getrappresentation**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-getrepresentation)            | [**Am \_ MEDIA \_ Type**](/windows/win32/api/strmif/ns-strmif-am_media_type), [**MFVIDEOFORMAT**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoformat), [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader)o [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) |
-| [**MFCreateAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateammediatypefrommfmediatype)     | [**\_tipo di supporto am \_**](/windows/win32/api/strmif/ns-strmif-am_media_type)                                                                                                                                          |
+| [**IMFMediaType::GetRepresentation**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-getrepresentation)            | [**AM \_ TIPO \_ DI**](/windows/win32/api/strmif/ns-strmif-am_media_type)SUPPORTO, [**MFVIDEOFORMAT,**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoformat) [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader)o [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) |
+| [**MFCreateAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateammediatypefrommfmediatype)     | [**TIPO \_ DI SUPPORTO \_ AM**](/windows/win32/api/strmif/ns-strmif-am_media_type)                                                                                                                                          |
 | [**MFCreateMFVideoFormatFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatemfvideoformatfrommfmediatype) | [**MFVIDEOFORMAT**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoformat)                                                                                                                                              |
 | [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype)   | [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) o [ **WAVEFORMATEXTENSIBLE**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85))                                                                                    |
-| [**MFInitAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfinitammediatypefrommfmediatype)         | [**\_tipo di supporto am \_**](/windows/win32/api/strmif/ns-strmif-am_media_type)                                                                                                                                          |
+| [**MFInitAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfinitammediatypefrommfmediatype)         | [**TIPO \_ DI SUPPORTO \_ AM**](/windows/win32/api/strmif/ns-strmif-am_media_type)                                                                                                                                          |
 
 
 
  
 
-## <a name="format-mappings"></a>Mapping del formato
+## <a name="format-mappings"></a>Mapping dei formati
 
-Nelle tabelle seguenti sono elencati gli attributi Media Foundation che corrispondono a diverse strutture di formato. Non tutti questi attributi possono essere tradotti direttamente. Per eseguire le conversioni, è necessario usare le funzioni elencate nella sezione precedente. Queste tabelle vengono fornite principalmente per riferimento.
+Nelle tabelle seguenti sono elencati Media Foundation attributi che corrispondono a varie strutture di formato. Non tutti questi attributi possono essere tradotti direttamente. Per eseguire conversioni, è necessario usare le funzioni elencate nella sezione precedente. queste tabelle vengono fornite principalmente come riferimento.
 
-### <a name="am_media_type"></a>\_tipo di supporto am \_
+### <a name="am_media_type"></a>TIPO \_ DI SUPPORTO \_ AM
 
 
 
 | Membro                   | Attributo                                                                            |
 |--------------------------|--------------------------------------------------------------------------------------|
-| **bTemporalCompression** | [**\_ \_ tutti gli esempi MF mt \_ \_ Independent**](mf-mt-all-samples-independent-attribute.md) |
-| **bFixedSizeSamples**    | [**\_esempi di \_ \_ dimensioni fisse MF mt \_**](mf-mt-fixed-size-samples-attribute.md)           |
-| **lSampleSize**          | [**\_ \_ dimensioni campione MF \_ mt**](mf-mt-sample-size-attribute.md)                          |
+| **bTemporalCompression** | [**MF \_ MT \_ ALL \_ SAMPLES \_ INDEPENDENT**](mf-mt-all-samples-independent-attribute.md) |
+| **bFixedSizeSamples**    | [**ESEMPI DI \_ DIMENSIONI \_ \_ FISSE MF MT \_**](mf-mt-fixed-size-samples-attribute.md)           |
+| **lSampleSize**          | [**DIMENSIONI DEL \_ CAMPIONE MF \_ \_ MT**](mf-mt-sample-size-attribute.md)                          |
 
 
 
@@ -119,17 +119,17 @@ Nelle tabelle seguenti sono elencati gli attributi Media Foundation che corrispo
 
 | Membro                  | Attributo                                                                                                                                                                 |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **wFormatTag**          | [**sottotipo MF \_ mt \_**](mf-mt-subtype-attribute.md)<br/> Se **wFormatTag** è \_ Extensible Format WAVE \_ , il sottotipo viene trovato nel membro **subformat** .<br/> |
-| **nChannels**           | [**numero \_ di \_ \_ canali audio MF mt \_**](mf-mt-audio-num-channels-attribute.md)                                                                                                |
-| **nSamplesPerSec**      | [**\_ \_ campioni audio MF \_ mt \_ al \_ secondo**](mf-mt-audio-samples-per-second-attribute.md)                                                                                   |
-| **nAvgBytesPerSec**     | [**\_ \_ Media byte audio MF mt \_ \_ \_ al \_ secondo**](mf-mt-audio-avg-bytes-per-second-attribute.md)                                                                              |
-| **nBlockAlign**         | [**\_ \_ \_ allineamento blocchi audio MF \_ mt**](mf-mt-audio-block-alignment-attribute.md)                                                                                          |
-| **wBitsPerSample**      | [**\_ \_ bit audio MF \_ mt \_ per \_ campione**](mf-mt-audio-bits-per-sample-attribute.md)                                                                                         |
-| **wValidBitsPerSample** | [**\_ \_ bit validi per l'audio MF mt \_ \_ \_ per \_ campione**](mf-mt-audio-valid-bits-per-sample-attribute.md)                                                                            |
-| **wSamplesPerBlock**    | [**\_ \_ campioni audio MF \_ mt \_ per \_ blocco**](mf-mt-audio-samples-per-block-attribute.md)                                                                                     |
-| **dwChannelMask**       | [**\_ \_ \_ maschera canale audio MF \_ mt**](mf-mt-audio-channel-mask-attribute.md)                                                                                                |
-| **Sottoformati**           | [**sottotipo MF \_ mt \_**](mf-mt-subtype-attribute.md)                                                                                                                        |
-| Dati aggiuntivi              | [**\_ \_ dati utente MF \_ mt**](mf-mt-user-data-attribute.md)                                                                                                                   |
+| **wFormatTag**          | [**MF \_ MT \_ SUBTYPE**](mf-mt-subtype-attribute.md)<br/> Se **wFormatTag** è EXTENSIBLE WAVE \_ \_ FORMAT, il sottotipo viene trovato nel **membro SubFormat.**<br/> |
+| **nChannels**           | [**MF \_ MT \_ AUDIO \_ NUM \_ CHANNELS**](mf-mt-audio-num-channels-attribute.md)                                                                                                |
+| **nSamplesPerSec**      | [**ESEMPI \_ DI AUDIO MT MF \_ \_ AL \_ \_ SECONDO**](mf-mt-audio-samples-per-second-attribute.md)                                                                                   |
+| **nAvgBytesPerSec**     | [**MF \_ MT \_ AUDIO \_ AVG BYTES AL \_ \_ \_ SECONDO**](mf-mt-audio-avg-bytes-per-second-attribute.md)                                                                              |
+| **nBlockAlign**         | [**MF \_ MT \_ AUDIO \_ BLOCK \_ ALIGNMENT**](mf-mt-audio-block-alignment-attribute.md)                                                                                          |
+| **wBitsPerSample**      | [**MF \_ MT \_ AUDIO \_ BITS \_ PER \_ SAMPLE**](mf-mt-audio-bits-per-sample-attribute.md)                                                                                         |
+| **wValidBitsPerSample** | [**MF \_ MT \_ AUDIO \_ VALID \_ BITS \_ PER \_ SAMPLE**](mf-mt-audio-valid-bits-per-sample-attribute.md)                                                                            |
+| **wSamplesPerBlock**    | [**ESEMPI \_ DI AUDIO MT MF \_ \_ PER \_ \_ BLOCCO**](mf-mt-audio-samples-per-block-attribute.md)                                                                                     |
+| **dwChannelMask**       | [**MF \_ MT \_ AUDIO \_ CHANNEL \_ MASK**](mf-mt-audio-channel-mask-attribute.md)                                                                                                |
+| **Formato secondario**           | [**MF \_ MT \_ SUBTYPE**](mf-mt-subtype-attribute.md)                                                                                                                        |
+| Dati aggiuntivi              | [**MF \_ MT \_ USER \_ DATA**](mf-mt-user-data-attribute.md)                                                                                                                   |
 
 
 
@@ -141,28 +141,28 @@ Nelle tabelle seguenti sono elencati gli attributi Media Foundation che corrispo
 
 | Membro                                         | Attributo                                                                                                                                                                                                                                        |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **dwBitRate**                                  | [**\_velocità in \_ bit media MF mt \_**](mf-mt-avg-bitrate-attribute.md)                                                                                                                                                                                      |
-| **dwBitErrorRate**                             | [**\_frequenza di \_ \_ errori bit \_ medio \_ MF mt**](mf-mt-avg-bit-error-rate-attribute.md)                                                                                                                                                                      |
-| **AvgTimePerFrame**                            | [**MF \_ \_ \_ Frequenza fotogrammi mt**](mf-mt-frame-rate-attribute.md); usare [**MFAverageTimePerFrameToFrameRate**](/windows/desktop/api/mfapi/nf-mfapi-mfaveragetimeperframetoframerate) per calcolare questo valore.                                                                             |
-| **dwInterlaceFlags**                           | [**\_modalità di \_ intreccio MF mt \_**](mf-mt-interlace-mode-attribute.md)                                                                                                                                                                                |
+| **dwBitRate**                                  | [**MF \_ MT \_ AVG \_ BITRATE**](mf-mt-avg-bitrate-attribute.md)                                                                                                                                                                                      |
+| **dwBitErrorRate**                             | [**MF \_ MT \_ AVG \_ BIT \_ ERROR \_ RATE**](mf-mt-avg-bit-error-rate-attribute.md)                                                                                                                                                                      |
+| **AvgTimePerFrame**                            | [**MF \_ MT \_ FRAME \_ RATE;**](mf-mt-frame-rate-attribute.md)usare [**MFAverageTimePerFrameToFrameRate**](/windows/desktop/api/mfapi/nf-mfapi-mfaveragetimeperframetoframerate) per calcolare questo valore.                                                                             |
+| **dwInterlaceFlags**                           | [**MODALITÀ \_ INTERLACE MF MT \_ \_**](mf-mt-interlace-mode-attribute.md)                                                                                                                                                                                |
 | **dwCopyProtectFlags**                         | Nessun equivalente definito                                                                                                                                                                                                                            |
-| **dwPictAspectRatioX**, **dwPictAspectRatioY** | [**MF \_ Proporzioni MT \_ pixel \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md); è necessario convertire le proporzioni dell'immagine in proporzioni dell'immagine.                                                                                                      |
-| **dwControlFlags**                             | [**MF \_ \_flag di \_ controllo \_ del pad mt**](mf-mt-pad-control-flags-attribute.md). Se è presente il flag **AMCONTROL \_ COLORINFO \_ present** , impostare gli attributi di colore esteso descritti in [informazioni estese sui colori](extended-color-information.md). |
-| **bmiHeader. biWidth**, **BmiHeader. biHeight**  | [**\_dimensioni del \_ frame MF mt \_**](mf-mt-frame-size-attribute.md)                                                                                                                                                                                        |
-| **bmiHeader.biBitCount**                       | Implicito nel sottotipo ([**\_ \_ sottotipo MF mt**](mf-mt-subtype-attribute.md)).                                                                                                                                                                    |
-| **bmiHeader. biCompression**                    | Implicito nel sottotipo.                                                                                                                                                                                                                         |
-| **bmiHeader.biSizeImage**                      | [**\_ \_ dimensioni campione MF \_ mt**](mf-mt-sample-size-attribute.md)                                                                                                                                                                                      |
-| Informazioni tavolozza                            | [**\_ \_ tavolozza MF mt**](mf-mt-palette-attribute.md)                                                                                                                                                                                               |
+| **dwPictAspectRatioX**, **dwPictAspectRatioY** | [**MF \_ MT \_ PIXEL \_ ASPECT \_ RATIO;**](mf-mt-pixel-aspect-ratio-attribute.md)deve eseguire la conversione dalle proporzioni dell'immagine alle proporzioni dell'immagine.                                                                                                      |
+| **dwControlFlags**                             | [**MF \_ FLAG \_ DI CONTROLLO MT PAD \_ \_**](mf-mt-pad-control-flags-attribute.md). Se è presente il flag **\_ AMCONTROL COLORINFO \_ PRESENT,** impostare gli attributi di colore estesi descritti in [Informazioni sul colore estese](extended-color-information.md). |
+| **bmiHeader.biWidth**, **bmiHeader.biHeight**  | [**DIMENSIONI \_ DEL FRAME MT \_ \_ MF**](mf-mt-frame-size-attribute.md)                                                                                                                                                                                        |
+| **bmiHeader.biBitCount**                       | Implicito nel sottotipo ([**MF \_ MT \_ SUBTYPE**](mf-mt-subtype-attribute.md)).                                                                                                                                                                    |
+| **bmiHeader.biCompression**                    | Implicito nel sottotipo.                                                                                                                                                                                                                         |
+| **bmiHeader.biSizeImage**                      | [**DIMENSIONI DEL \_ CAMPIONE MF \_ \_ MT**](mf-mt-sample-size-attribute.md)                                                                                                                                                                                      |
+| Informazioni sul riquadro                            | [**MF \_ MT \_ PALETTE**](mf-mt-palette-attribute.md)                                                                                                                                                                                               |
 
 
 
  
 
-Gli attributi seguenti possono essere dedotti dalla struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) o [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) , ma richiedono anche una certa conoscenza dei dettagli del formato. Ad esempio, diversi formati YUV hanno requisiti di stride diversi.
+Gli attributi seguenti possono essere dedosi dalla struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) o [**VIDEOINFOHEADER2,**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) ma richiedono anche una certa conoscenza dei dettagli del formato. Ad esempio, diversi formati YUV hanno requisiti di stride diversi.
 
--   [**\_ \_ stride predefinito MF \_ mt**](mf-mt-default-stride-attribute.md)
--   [**\_ \_ \_ apertura minima schermo \_ MF mt**](mf-mt-minimum-display-aperture-attribute.md)
--   [**\_apertura dell' \_ analisi della panoramica MF mt \_ \_**](mf-mt-pan-scan-aperture-attribute.md)
+-   [**MF \_ MT \_ DEFAULT \_ STRIDE**](mf-mt-default-stride-attribute.md)
+-   [**MF \_ MT \_ MINIMUM \_ DISPLAY \_ APERTURE**](mf-mt-minimum-display-aperture-attribute.md)
+-   [**MF \_ MT \_ PAN \_ SCAN \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md)
 
 ### <a name="mpeg1videoinfo"></a>MPEG1VIDEOINFO
 
@@ -170,9 +170,9 @@ Gli attributi seguenti possono essere dedotti dalla struttura [**VIDEOINFOHEADER
 
 | Membro                                   | Attributo                                                                       |
 |------------------------------------------|---------------------------------------------------------------------------------|
-| **dwStartTimeCode**                      | [**\_ \_ \_ codice ora di inizio \_ MF mt MPEG \_**](mf-mt-mpeg-start-time-code-attribute.md) |
-| **bSequenceHeader**                      | [**\_intestazione della sequenza MF mt \_ MPEG \_ \_**](mf-mt-mpeg-sequence-header-attribute.md)  |
-| **biXPelsPerMeter**, **biYPelsPerMeter** | [**proporzioni MF \_ mt \_ pixel \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)      |
+| **dwStartTimeCode**                      | [**CODICE ORA \_ DI \_ INIZIO MPEG MF MT \_ \_ \_**](mf-mt-mpeg-start-time-code-attribute.md) |
+| **bSequenceHeader**                      | [**INTESTAZIONE DELLA \_ SEQUENZA \_ MPEG MF MT \_ \_**](mf-mt-mpeg-sequence-header-attribute.md)  |
+| **biXPelsPerMeter**, **biYPelsPerMeter** | [**PROPORZIONI \_ DEI PIXEL MF MT \_ \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)      |
 
 
 
@@ -184,11 +184,11 @@ Gli attributi seguenti possono essere dedotti dalla struttura [**VIDEOINFOHEADER
 
 | Membro               | Attributo                                                                       |
 |----------------------|---------------------------------------------------------------------------------|
-| **dwStartTimeCode**  | [**\_ \_ \_ codice ora di inizio \_ MF mt MPEG \_**](mf-mt-mpeg-start-time-code-attribute.md) |
-| **dwSequenceHeader** | [**\_intestazione della sequenza MF mt \_ MPEG \_ \_**](mf-mt-mpeg-sequence-header-attribute.md)  |
-| **dwProfile**        | [**\_ \_ Profilo MPEG2 MF \_ mt**](mf-mt-mpeg2-profile-attribute.md)                 |
-| **dwLevel**          | [**\_ \_ Livello MPEG2 MF \_ mt**](mf-mt-mpeg2-level-attribute.md)                     |
-| **dwFlags**          | [**\_ \_ Flag MPEG2 MF \_ mt**](mf-mt-mpeg2-flags-attribute.md)                     |
+| **dwStartTimeCode**  | [**CODICE ORA \_ DI \_ INIZIO MPEG MF MT \_ \_ \_**](mf-mt-mpeg-start-time-code-attribute.md) |
+| **dwSequenceHeader** | [**INTESTAZIONE DELLA \_ SEQUENZA \_ MPEG MF MT \_ \_**](mf-mt-mpeg-sequence-header-attribute.md)  |
+| **dwProfile**        | [**PROFILO \_ \_ MPEG2 MF MT \_**](mf-mt-mpeg2-profile-attribute.md)                 |
+| **dwLevel**          | [**MF \_ MT \_ MPEG2 \_ LEVEL**](mf-mt-mpeg2-level-attribute.md)                     |
+| **dwFlags**          | [**MF \_ MT \_ MPEG2 \_ FLAGS**](mf-mt-mpeg2-flags-attribute.md)                     |
 
 
 
@@ -196,7 +196,7 @@ Gli attributi seguenti possono essere dedotti dalla struttura [**VIDEOINFOHEADER
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente compila una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) da un tipo di supporto video. Si noti che questa conversione perde alcune informazioni sul formato (interlacciamento, frequenza dei fotogrammi, dati di colore estesi). Tuttavia, potrebbe essere utile quando si salva una bitmap da un frame video, ad esempio.
+Il codice seguente inserisce una struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) da un tipo di supporto video. Si noti che queste conversioni perdono alcune delle informazioni sul formato (interlacciamento, frequenza fotogrammi, dati di colore estesi). Tuttavia, potrebbe essere utile quando si salva una bitmap da un fotogramma video, ad esempio.
 
 
 ```C++
@@ -291,7 +291,7 @@ done:
 
 <dl> <dt>
 
-[Tipi di supporto](media-types.md)
+[Tipi di supporti](media-types.md)
 </dt> </dl>
 
  

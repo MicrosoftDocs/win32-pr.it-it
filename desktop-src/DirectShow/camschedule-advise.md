@@ -1,7 +1,7 @@
 ---
-description: Il metodo Advise Invia tutte le richieste pianificate per un periodo di tempo specificato o un valore precedente.
+description: Il metodo Advise invia tutte le richieste pianificate per un orario specificato o una versione precedente.
 ms.assetid: 09ea84b7-517a-4ea6-9e03-0d9cd8f72e1f
-title: Metodo CAMSchedule. Advise (Dsschedule. h)
+title: Metodo CAMSchedule.Advise (Dsschedule.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 70880243cef294ebe747463cd11737027faf9277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0943479aaa7fe2e6d699bba147977a73f48fc31186fb64ea26a211e2ea31d8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757791"
 ---
-# <a name="camscheduleadvise-method"></a>Metodo CAMSchedule. Advise
+# <a name="camscheduleadvise-method"></a>Metodo CAMSchedule.Advise
 
-Il `Advise` metodo invia tutte le richieste pianificate per un periodo di tempo specificato o un valore precedente.
+Il `Advise` metodo invia tutte le richieste pianificate per un orario specificato o una versione precedente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,13 +51,13 @@ Valore che specifica l'ora di riferimento corrente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'ora di riferimento della richiesta di notifica pianificata successiva o il \_ tempo massimo se non ne è rimasto alcuno.
+Restituisce l'ora di riferimento della successiva richiesta di consulenza pianificata oppure MAX TIME se \_ non ne è rimasto nessuno.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il clock chiama questo metodo, specifica l'ora di riferimento corrente. L'utilità di pianificazione determina quali richieste di notifica sono scadute, se presenti, e le invia. Se una richiesta di una volta scade, l'utilità di pianificazione la Elimina. Se una richiesta periodica scade, l'utilità di pianificazione lo Ripianifica per il successivo tempo di notifica. Il metodo restituisce l'ora della richiesta in sospeso successiva.
+Quando l'orologio chiama questo metodo, specifica l'ora di riferimento corrente. L'utilità di pianificazione determina quali richieste di consulenza sono scadute, se presenti, e le invia. Se una richiesta con una sola operazione scade, l'utilità di pianificazione la elimina. Se una richiesta periodica scade, l'utilità di pianificazione la pianifica nuovamente per la successiva consulenza. Il metodo restituisce l'ora della richiesta in sospeso successiva.
 
-Per inviare una richiesta di notifica, l'utilità di pianificazione segnala l'evento o il semaforo specificato nel parametro *hNotify* del metodo [**CAMSchedule:: AddAdvisePacket**](camschedule-addadvisepacket.md) .
+Per inviare una richiesta di consulenza, l'utilità di pianificazione segnala l'evento o il semaforo specificato nel parametro *hNotify* del metodo [**CAMSchedule::AddAdvisePacket.**](camschedule-addadvisepacket.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Per inviare una richiesta di notifica, l'utilità di pianificazione segnala l'ev
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Dsschedule. h (include Streams. h)</dt> </dl>                                                                                |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Dsschedule.h (includere Flussi.h)</dt> </dl>                                                                                |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

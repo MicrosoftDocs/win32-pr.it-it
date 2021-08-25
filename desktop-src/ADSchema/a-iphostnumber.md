@@ -1,6 +1,6 @@
 ---
-title: attributo ipHostNumber
-description: Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettendo gli zeri iniziali.
+title: Attributo ipHostNumber
+description: Contiene l'indirizzo IP dell'host in notazione decimale virgola, omettendo gli zeri iniziali.
 ms.assetid: 0ac29b9c-17eb-483e-9c1b-1c853a197cfc
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44ab93428b683e39fe2081c7f58262cb7bde7280
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce17bbbf9bb928ce3b71b66f8fccdbb74d4a9a9669b4b7a5dcca64c4fab1cce6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925161"
 ---
-# <a name="iphostnumber-attribute"></a>attributo ipHostNumber
+# <a name="iphostnumber-attribute"></a>Attributo ipHostNumber
 
-Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettendo gli zeri iniziali.
+Contiene l'indirizzo IP dell'host in notazione decimale virgola, omettendo gli zeri iniziali.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ipHostNumber                         |
-| LDAP-Display-Name | ipHostNumber                         |
+| Ldap-Display-Name | ipHostNumber                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.19                     |
-| System-ID-GUID    | de8bb721-85dc-4fde-b687-9657688e667e |
+| System-Id-Guid    | de8bb721-85dc-4fde-b687-9657688e667e |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettend
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**ipHost**](c-iphost.md)<br/> |
+| Classi usate in        | [**ipHost**](c-iphost.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettend
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**ipHost**](c-iphost.md)<br/> |
+| Classi usate in        | [**ipHost**](c-iphost.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettend
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**ipHost**](c-iphost.md)<br/> |
+| Classi usate in        | [**ipHost**](c-iphost.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene l'indirizzo IP dell'host nella notazione decimale punteggiata, omettend
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Falso                                 |
+| A valore singolo       | Falso                                 |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**ipHost**](c-iphost.md)<br/> |
+| Classi usate in        | [**ipHost**](c-iphost.md)<br/> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1d32bb312c97b793f492f7a29bebe11529b79cf9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9d70f588c9f4ec54fd5889f8effb503c62235441fe425d38ea9dbed620fd3e8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754161"
 ---
 # <a name="d3dxplaneintersectline-function-d3dx10mathh"></a>Funzione D3DXPlaneIntersectLine (D3DX10Math.h)
 
@@ -57,7 +57,7 @@ Puntatore a [**un oggetto D3DXVECTOR3**](d3d10-d3dxvector3.md)che identifica l'i
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntatore [**all'oggetto D3DXPLANE di origine.**](d3d10-d3dxplane.md)
+Puntatore all'oggetto [**D3DXPLANE di origine.**](d3d10-d3dxplane.md)
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Puntatore [**all'oggetto D3DXPLANE di origine.**](d3d10-d3dxplane.md)
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3 di origine, che definisce un punto di partenza della linea.
+Puntatore a una struttura D3DXVECTOR3 di origine, che definisce un punto iniziale della riga.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore a una struttura D3DXVECTOR3 di origine, che definisce un punto di part
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3 di origine, che definisce un punto finale della riga.
+Puntatore a una struttura D3DXVECTOR3 di origine, che definisce un punto finale di riga.
 
 </dd> </dl>
 

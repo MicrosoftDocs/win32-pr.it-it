@@ -6,21 +6,21 @@ keywords:
 - timer multimediali, ora di sistema
 - timer, ora di sistema
 - ora di sistema
-- timeGetTime (funzione)
-- timeGetSystemTime (funzione)
+- Funzione timeGetTime
+- Funzione timeGetSystemTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89fdcc905569a500afe689658676137c460d19d8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 45460078776732234510d7308bd1e8f490e3871334bdf950bcedd77943b430e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806471"
 ---
 # <a name="obtaining-the-system-time"></a>Recupero dell'ora di sistema
 
-In genere, prima che un'applicazione inizi a usare i servizi timer multimediali, viene recuperata l' *ora di sistema* corrente. L'ora di sistema è il tempo, in millisecondi, dopo l'avvio del sistema operativo Microsoft Windows. Per recuperare l'ora di sistema, è possibile usare la funzione [**timeGetTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegettime) o [**timeGetSystemTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetsystemtime) . Queste due funzioni sono molto simili: **timeGetTime** restituisce l'ora di sistema e **timeGetSystemTime** riempie una struttura [**MMTIME**](/previous-versions//dd757347(v=vs.85)) con l'ora di sistema.
+In genere, prima che un'applicazione inizi a usare i servizi timer multimediali, recupera l'ora *di sistema corrente.* L'ora di sistema è l'ora, in millisecondi, dall'avvio Windows sistema operativo Microsoft. È possibile usare la [**funzione timeGetTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegettime) o [**timeGetSystemTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegetsystemtime) per recuperare l'ora di sistema. Queste due funzioni sono molto simili: **timeGetTime** restituisce l'ora di sistema e **timeGetSystemTime** riempie una [**struttura MMTIME**](/previous-versions//dd757347(v=vs.85)) con l'ora di sistema.
 
- 
+ 
 
- 
+ 

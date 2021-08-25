@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put CurrentPosition imposta la posizione corrente rispetto alla durata totale del flusso. Questo metodo implementa il metodo IMediaPosition::p UT \_ CurrentPosition.
+description: Il metodo put \_ CurrentPosition imposta la posizione corrente rispetto alla durata totale del flusso. Questo metodo implementa il metodo IMediaPosition::p ut \_ CurrentPosition.
 ms.assetid: 22d7e9e4-47da-45b5-9be0-3c5128f90353
-title: Metodo CPosPassThru.put_CurrentPosition (Ctlutil. h)
+title: CPosPassThru.put_CurrentPosition metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 85426636a34d0e197b36496d5a38a847c61b9501
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab6a8323023e9a2cd20f9453dc00e0c56a688086f10772b72b59b3c012a24702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909221"
 ---
-# <a name="cpospassthruput_currentposition-method"></a>CPosPassThru. put \_ CurrentPosition (metodo)
+# <a name="cpospassthruput_currentposition-method"></a>Metodo CPosPassThru.put \_ CurrentPosition
 
-Il `put_CurrentPosition` metodo imposta la posizione corrente rispetto alla durata totale del flusso. Questo metodo implementa il metodo [**IMediaPosition::p UT \_ currentPosition**](/windows/desktop/api/Control/nf-control-imediaposition-put_currentposition) .
+Il `put_CurrentPosition` metodo imposta la posizione corrente rispetto alla durata totale del flusso. Questo metodo implementa il [**metodo IMediaPosition::p ut \_ CurrentPosition.**](/windows/desktop/api/Control/nf-control-imediaposition-put_currentposition)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Nuova posizione, in secondi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

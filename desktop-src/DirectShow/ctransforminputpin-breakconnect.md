@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fe425ba617909dcfb1d66dbb4777b579139d436b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ad97061bda8ec4703464d21ad4817cfd97740f4a98904255150ce75fba37c425
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812891"
 ---
 # <a name="ctransforminputpinbreakconnect-method"></a>Metodo CTransformInputPin.BreakConnect
 
@@ -46,7 +46,7 @@ Restituisce S \_ OK o un altro valore **HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CBaseInputPin::BreakConnect.**](cbaseinputpin-breakconnect.md) Chiama il metodo [**CTransformFilter::BreakConnect**](ctransformfilter-breakconnect.md) del filtro, che restituisce S \_ OK nella classe di base. La classe derivata può eseguire l'override del metodo **CTransformFilter::BreakConnect.**
+Questo metodo esegue l'override [**del metodo CBaseInputPin::BreakConnect.**](cbaseinputpin-breakconnect.md) Chiama il metodo [**CTransformFilter::BreakConnect**](ctransformfilter-breakconnect.md) del filtro, che restituisce S \_ OK nella classe di base. La classe derivata può eseguire l'override **del metodo CTransformFilter::BreakConnect.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Questo metodo esegue l'override [**del metodo CBaseInputPin::BreakConnect.**](cb
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

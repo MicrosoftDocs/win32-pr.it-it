@@ -1,10 +1,10 @@
 ---
-title: Attributo Repl-Interval
-description: Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i cicli di replica tra i siti nell'elenco di siti.
+title: Repl-Interval attributo
+description: Attributo di Site-Link che definisce l'intervallo, in minuti, tra i cicli di replica tra i siti nell'elenco siti.
 ms.assetid: ef4cbf75-7283-4930-9f98-1ffd6eb05669
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Repl-Interval attribute
+- Repl-Interval schema AD dell'attributo
 - Schema AD dell'attributo replInterval
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e681b01fbc60b775b0cb947007056dc1d3d3adbb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fb5cd02d3458684f6d70cff84435c7809fcd4c912befd65373a264f961cefd72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837441"
 ---
-# <a name="repl-interval-attribute"></a>Attributo Repl-Interval
+# <a name="repl-interval-attribute"></a>Repl-Interval attributo
 
-Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i cicli di replica tra i siti nell'elenco di siti. Deve essere un multiplo di 15 minuti (la granularità della replica DS tra siti), un minimo di 15 minuti e un massimo di 10.080 minuti (una settimana).
+Attributo di Site-Link che definisce l'intervallo, in minuti, tra i cicli di replica tra i siti nell'elenco siti. Deve essere un multiplo di 15 minuti (la granularità della replica DS tra siti), un minimo di 15 minuti e un massimo di 10.080 minuti (una settimana).
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------|
 | CN                | Repl-Interval                                  |
-| LDAP-Display-Name | replInterval                                   |
+| Ldap-Display-Name | replInterval                                   |
 | Dimensione              | 4 byte                                        |
-| Privilegio aggiornamento  | Amministratore dell'organizzazione                       |
-| Frequenza di aggiornamento  | Quando l'intervallo di replica deve essere modificato. |
+| Privilegio di aggiornamento  | Amministratore dell'organizzazione                       |
+| Frequenza di aggiornamento  | Quando l'intervallo di replica deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.4.1336                        |
-| System-ID-GUID    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
+| System-Id-Guid    | 45ba9d1a-56fa-11d2-90d0-00c04fd91ab1           |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)           |
 
 
@@ -44,7 +44,7 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento al sito**](c-sitelink.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento al sito**](c-sitelink.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Attributo di Site-Link oggetti che definiscono l'intervallo, in minuti, tra i ci
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Sito-collegamento**](c-sitelink.md)<br/> |
+| Classi usate in        | [**Trasporto tra siti**](c-intersitetransport.md)<br/> [**Collegamento di sito**](c-sitelink.md)<br/> |
 
 
 

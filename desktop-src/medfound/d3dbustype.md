@@ -1,7 +1,7 @@
 ---
 description: Specifica il tipo di bus di I/O utilizzato dalla scheda grafica.
 ms.assetid: 11bb7e0e-8d49-45f2-89aa-7583dd925edf
-title: Enumerazione D3DBUSTYPE (D3d9types. h)
+title: Enumerazione D3DBUSTYPE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 807e5a57c4abbf57c241643a3e7fea47606fbf75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cece215946406bedcca2cbfdd2b64bfdb5df00208b2d84cf2aa90fdb89b516bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828381"
 ---
 # <a name="d3dbustype-enumeration"></a>Enumerazione D3DBUSTYPE
 
@@ -49,10 +49,10 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="D3DBUSTYPE_OTHER"></span><span id="d3dbustype_other"></span>**D3DBUSTYPE \_ altro**
+<span id="D3DBUSTYPE_OTHER"></span><span id="d3dbustype_other"></span>**D3DBUSTYPE \_ OTHER**
 </dt> <dd>
 
-Indica un tipo di bus diverso dai tipi elencati qui.
+Indica un tipo di bus diverso da quelli elencati di seguito.
 
 </dd> <dt>
 
@@ -63,14 +63,14 @@ Bus PCI.
 
 </dd> <dt>
 
-<span id="D3DBUSTYPE_PCIX"></span><span id="d3dbustype_pcix"></span>**\_PCIx D3DBUSTYPE**
+<span id="D3DBUSTYPE_PCIX"></span><span id="d3dbustype_pcix"></span>**D3DBUSTYPE \_ PCIX**
 </dt> <dd>
 
 Bus PCI-X.
 
 </dd> <dt>
 
-<span id="D3DBUSTYPE_PCIEXPRESS"></span><span id="d3dbustype_pciexpress"></span>**\_Per D3DBUSTYPE**
+<span id="D3DBUSTYPE_PCIEXPRESS"></span><span id="d3dbustype_pciexpress"></span>**D3DBUSTYPE \_ PCIEXPRESS**
 </dt> <dd>
 
 Bus PCI Express.
@@ -80,55 +80,55 @@ Bus PCI Express.
 <span id="D3DBUSTYPE_AGP"></span><span id="d3dbustype_agp"></span>**D3DBUSTYPE \_ AGP**
 </dt> <dd>
 
-Bus di porta grafica accelerata (AGP).
+Bus AGP (Accelerated Graphics Port).
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_INSIDE_OF_CHIPSET"></span><span id="d3dbusimpl_modifier_inside_of_chipset"></span>**\_Modificatore D3DBUSIMPL \_ all'interno \_ del \_ chipset**
+<span id="D3DBUSIMPL_MODIFIER_INSIDE_OF_CHIPSET"></span><span id="d3dbusimpl_modifier_inside_of_chipset"></span>**MODIFICATORE D3DBUSIMPL \_ \_ \_ ALL'INTERNO DEL \_ CHIPSET**
 </dt> <dd>
 
-L'implementazione per la scheda grafica si trova nel Bridge nord di un chipset della scheda madre. Questo flag implica che i dati non passano mai su un bus di espansione (ad esempio, PCI o AGP) quando viene trasferito dalla memoria principale alla scheda grafica.
+L'implementazione per la scheda grafica si trova nel ponte nord di un chipset della scheda madre. Questo flag implica che i dati non passano mai attraverso un bus di espansione (ad esempio PCI o AGP) quando vengono trasferiti dalla memoria principale alla scheda grafica.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_chip"></span>**\_Il modificatore D3DBUSIMPL \_ tiene traccia della \_ \_ \_ scheda madre per il \_ \_ chip**
+<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_CHIP"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_chip"></span>**TRACCE MODIFICATORI D3DBUSIMPL \_ SULLA SCHEDA MADRE PER \_ \_ \_ \_ \_ \_ CHIP**
 </dt> <dd>
 
-Indica che la scheda grafica è connessa al Bridge nord di un chipset della scheda madre mediante tracce sulla scheda madre e che tutti i chip della scheda grafica sono saldati alla scheda madre. Questo flag implica che i dati non passano mai su un bus di espansione (ad esempio, PCI o AGP) quando viene trasferito dalla memoria principale alla scheda grafica.
+Indica che la scheda grafica è connessa al ponte nord di un chipset della scheda madre tramite tracce sulla scheda madre e che tutti i chip della scheda grafica vengono venduti alla scheda madre. Questo flag implica che i dati non passano mai attraverso un bus di espansione (ad esempio PCI o AGP) quando vengono trasferiti dalla memoria principale alla scheda grafica.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_socket"></span>**\_Il modificatore D3DBUSIMPL \_ tiene traccia della \_ \_ \_ scheda madre \_ al \_ socket**
+<span id="D3DBUSIMPL_MODIFIER_TRACKS_ON_MOTHER_BOARD_TO_SOCKET"></span><span id="d3dbusimpl_modifier_tracks_on_mother_board_to_socket"></span>**TRACCE MODIFICATORI D3DBUSIMPL \_ SULLA SCHEDA MADRE PER IL \_ \_ \_ \_ \_ \_ SOCKET**
 </dt> <dd>
 
-La scheda grafica è connessa al Bridge nord di un chipset della scheda madre mediante tracce sulla scheda madre e tutti i chip della scheda grafica sono connessi tramite socket alla scheda madre.
+La scheda grafica è connessa al ponte nord di un chipset della scheda madre tramite tracce sulla scheda madre e tutti i chip della scheda grafica sono connessi tramite socket alla scheda madre.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR"></span><span id="d3dbusimpl_modifier_daughter_board_connector"></span>**\_Connettore della \_ \_ scheda figlia del modificatore D3DBUSIMPL \_**
+<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR"></span><span id="d3dbusimpl_modifier_daughter_board_connector"></span>**D3DBUSIMPL \_ MODIFIER \_ DAUGHTER \_ BOARD \_ CONNECTOR**
 </dt> <dd>
 
-La scheda grafica è connessa alla scheda madre tramite un connettore daughterboard.
+La scheda grafica è connessa alla scheda madre tramite un connettore della scheda madre.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE"></span><span id="d3dbusimpl_modifier_daughter_board_connector_inside_of_nuae"></span>**Connettore D3DBUSIMPL per \_ \_ la figlia del modificatore \_ \_ \_ all'interno \_ di \_ NUAE**
+<span id="D3DBUSIMPL_MODIFIER_DAUGHTER_BOARD_CONNECTOR_INSIDE_OF_NUAE"></span><span id="d3dbusimpl_modifier_daughter_board_connector_inside_of_nuae"></span>**D3DBUSIMPL \_ MODIFIER DAUGHTER BOARD CONNECTOR \_ \_ \_ \_ \_ ALL'INTERNO DI \_ NUAE**
 </dt> <dd>
 
-La scheda grafica è connessa alla scheda madre tramite un connettore daughterboard e la scheda grafica si trova all'interno di un'enclosure non accessibile dall'utente.
+La scheda grafica è connessa alla scheda madre tramite un connettore della scheda madre e la scheda grafica si trova all'interno di uno chassis non accessibile dall'utente.
 
 </dd> <dt>
 
-<span id="D3DBUSIMPL_MODIFIER_NON_STANDARD"></span><span id="d3dbusimpl_modifier_non_standard"></span>**\_Modificatore D3DBUSIMPL \_ non \_ standard**
+<span id="D3DBUSIMPL_MODIFIER_NON_STANDARD"></span><span id="d3dbusimpl_modifier_non_standard"></span>**MODIFICATORE D3DBUSIMPL \_ \_ NON \_ STANDARD**
 </dt> <dd>
 
-Viene impostato uno dei flag di modifica D3DBUSIMPL del modificatore \_ \_ \_ xxx.
+Uno dei flag D3DBUSIMPL \_ MODIFIER MODIFIER Xxx è \_ \_ impostato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare un numero di tre flag. I flag compresi nell'intervallo da 0x00 a 0x04 (**D3DBUSTYPE \_ xxx**) forniscono il tipo di bus di base. I flag nell'intervallo compreso tra 0x10000 e 0x50000 (**\_ modificatore D3DBUSIMPL \_ xxx**) modificano la descrizione di base. Il driver imposta un flag di tipo bus e può impostare zero o un flag di modifica. Se il driver imposta un flag di modifica, imposta anche il **flag \_ \_ non \_ standard del modificatore D3DBUSIMPL** . I flag vengono combinati con un **or** bit per bit.
+È possibile impostare un numero di tre flag. I flag nell'intervallo 0x00 da 0x04 (**D3DBUSTYPE \_ Xxx**) forniscono il tipo di bus di base. I flag nell'intervallo 0x10000 a 0x50000 (**D3DBUSIMPL \_ MODIFIER \_ Xxx**) modificano la descrizione di base. Il driver imposta un flag di tipo bus e può impostare zero o un flag di modifica. Se il driver imposta un flag di modifica, imposta anche il flag **D3DBUSIMPL \_ MODIFIER \_ NON \_ STANDARD.** I flag vengono combinati con or bit per **bit.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -136,9 +136,9 @@ Viene impostato uno dei flag di modifica D3DBUSIMPL del modificatore \_ \_ \_ xx
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h (include d3d9. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h (includere D3d9.h)</dt> </dl> |
 
 
 

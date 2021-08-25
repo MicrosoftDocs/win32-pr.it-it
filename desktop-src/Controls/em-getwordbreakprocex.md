@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETWORDBREAKPROCEX (RichEdit. h)
-description: Recupera l'indirizzo della routine di Word breaker estesa attualmente registrata per un controllo Rich Edit.
+title: EM_GETWORDBREAKPROCEX messaggio (Richedit.h)
+description: Recupera l'indirizzo della routine di word break estesa attualmente registrata per un controllo Rich Edit.
 ms.assetid: 391681b6-fba9-4fc8-8778-3b3bd45ee5d6
 keywords:
-- Controlli di Windows Message EM_GETWORDBREAKPROCEX
+- EM_GETWORDBREAKPROCEX dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 890ef921a33dc387b17fddaa504bd15fa61ac505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08e03818ae36946192ed35fee508bacb1c7cc2cbb22dc43e77ee9ee48eac8509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799981"
 ---
-# <a name="em_getwordbreakprocex-message"></a>\_Messaggio GETWORDBREAKPROCEX em
+# <a name="em_getwordbreakprocex-message"></a>Messaggio \_ EM GETWORDBREAKPROCEX
 
-Recupera l'indirizzo della routine di Word breaker estesa attualmente registrata per un controllo Rich Edit.
+Recupera l'indirizzo della routine di word break estesa attualmente registrata per un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Recupera l'indirizzo della routine di Word breaker estesa attualmente registrata
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il messaggio restituisce l'indirizzo della routine corrente.
+Il messaggio restituisce l'indirizzo della procedura corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il messaggio restituisce l'indirizzo della routine corrente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

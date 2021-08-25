@@ -1,5 +1,5 @@
 ---
-description: Modifica le impostazioni del Commuter virtuale.
+description: Modifica le impostazioni del commutatore virtuale.
 ms.assetid: 8d323578-990f-483c-8515-8a21479767b1
 title: Metodo ModifySystemSettings della classe Msvm_VirtualEthernetSwitchManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3512debfd6d49e3c09cb8a508a7f0d748ab128e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcce0c85a8a486968b4f079ab78db99df3384c62c8ce9ec7963b0c36894e305c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693771"
 ---
-# <a name="modifysystemsettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Metodo ModifySystemSettings della classe MSVM \_ VirtualEthernetSwitchManagementService
+# <a name="modifysystemsettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Metodo ModifySystemSettings della classe Msvm \_ VirtualEthernetSwitchManagementService
 
-Modifica le impostazioni del Commuter virtuale.
+Modifica le impostazioni del commutatore virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 ModifySystemSettings(
 
 <dl> <dt>
 
-*SystemSettings* \[ in\]
+*SystemSettings* \[ Pollici\]
 </dt> <dd>
 
-Istanza incorporata della classe [**MSVM \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) che contiene gli aspetti modificati del commutatore virtuale. La proprietà **InstanceID** identifica l'impostazione del commutatore virtuale da modificare.
+Istanza incorporata della [**classe Msvm \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) che contiene gli aspetti modificati del commutatore virtuale. La **proprietà InstanceID** identifica l'impostazione del commutatore virtuale da modificare.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -66,13 +66,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -81,16 +81,16 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametri incompatibili** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -99,10 +99,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_VirtualEthernetSwitchManagementService MSVM**](msvm-virtualethernetswitchmanagementservice.md)
+[**Msvm \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md)
 </dt> </dl>
 
  

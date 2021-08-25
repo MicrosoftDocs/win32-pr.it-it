@@ -1,32 +1,32 @@
 ---
-description: L'attributo CLSID specifica un identificatore di classe (CLSID) per un oggetto.
+description: L'attributo clsid specifica un identificatore di classe (CLSID) per un oggetto.
 ms.assetid: 046ebe03-34ec-46b1-a2f3-36a4d16ac512
-title: CLSID (attributo)
+title: Attributo clsid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61dfd0c327a742094b72fde138c5f8e7bb18761a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 279acec03ad6f3c85057e10598588c67fb1cbd236f135d0c4706d2d3b898054d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832541"
 ---
-# <a name="clsid-attribute"></a>CLSID (attributo)
+# <a name="clsid-attribute"></a>Attributo clsid
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `clsid` attributo specifica un identificatore di classe (CLSID) per un oggetto.
+`clsid`L'attributo specifica un identificatore di classe (CLSID) per un oggetto.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Deve essere una stringa con il formato {00000000-0000-0000-0000-000000000000} .
+Deve essere una stringa nel formato {00000000-0000-0000-0000-000000000000} .
 
 ## <a name="applies-to"></a>Si applica a
 
-[**al**](at-element.md), [**effetto**](effect-element.md), [**transizione**](transition-element.md)
+[**in**](at-element.md)corrispondenza di , [**effetto**](effect-element.md), [**transizione**](transition-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

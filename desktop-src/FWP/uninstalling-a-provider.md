@@ -1,19 +1,19 @@
 ---
 title: Disinstallazione di un provider
-description: Il codice di esempio seguente illustra il processo necessario per rimuovere un'installazione del provider.
+description: Nell'esempio di codice seguente viene illustrato il processo necessario per rimuovere un'installazione del provider.
 ms.assetid: fe86972f-f1fb-41b8-989e-f146dba0bd06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9bc2a781f8a0e21bc347baf6bd1854dd3a3906
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a24d7f18f4fe7dc2709cd4960bd9417a994dbb6042c7c21e655d17f378b2aa86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755171"
 ---
 # <a name="uninstalling-a-provider"></a>Disinstallazione di un provider
 
-Nell'esempio di codice riportato di seguito viene illustrato il processo necessario per rimuovere un'installazione del provider.
+Nell'esempio di codice seguente viene illustrato il processo necessario per rimuovere un'installazione del provider.
 
 
 ```C++
@@ -109,9 +109,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

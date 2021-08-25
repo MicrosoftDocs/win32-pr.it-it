@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 21b4cd7b6cb921f7bd71b8670a37da12b2239b92
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dfe48afce1e8fd2350f1d1b696eb426a326ade1b30151e872afee30c0ed997f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910511"
 ---
 # <a name="idelaydcpause-method"></a>Metodo IDelaydC::P ause
 
@@ -48,10 +48,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                           | Descrizione                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già in stato di sospensione.<br/>                                                                                  |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | NPP non è connesso alla rete. Chiamare [IDelaydC::Connect](idelaydc-connect.md) per connettere NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>    | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già in stato sospeso.<br/>                                                                                  |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | Il NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettere il NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>    | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -59,7 +59,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione è in stato di sospensione, i nuovi dati non vengono aggiunti al [*file*](c.md) di acquisizione corrente finché non viene chiamato il metodo **IDelaydC::Resume** per riavviare l'acquisizione. Quando **sospendi** **e** riprendi vengono usati per arrestare e riavviare l'acquisizione, tutte le informazioni acquisite vengono inserite nello stesso file di acquisizione.
+Mentre l'acquisizione è in pausa, i nuovi dati non vengono aggiunti al [*file*](c.md) di acquisizione corrente finché non viene chiamato il metodo **IDelaydC::Resume** per riavviare l'acquisizione. Quando **sospendi** **e** riprendi vengono usati per arrestare e riavviare l'acquisizione, tutte le informazioni acquisite vengono inserite nello stesso file di acquisizione.
 
 Quando si usa **IDelaydC::P ause** e **IDelaydC::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
@@ -87,7 +87,7 @@ Per arrestare l'acquisizione, [chiamare IDelaydC::Stop](idelaydc-stop.md).
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Connessione](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::Resume](idelaydc-resume.md)

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put maskName specifica il nome di un file JPEG da usare come maschera di cancellazione.
+description: Il metodo put \_ MaskName specifica il nome di un file JPEG da usare come maschera di cancellazione dati.
 ms.assetid: f2b93c1e-479e-46c1-afe3-25b0ef720ab3
-title: 'IDxtJpeg: metodo:p ut_MaskName (qedit. h)'
+title: Metodo IDxtJpeg::p ut_MaskName (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f74fe09572b95ff1508021b3fa2ae4f9888f2d5a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a43398020c49f2a6dab1cd56fc0244c4be88e2e45e38e0f6bd63c119bbf66a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755941"
 ---
-# <a name="idxtjpegput_maskname-method"></a>IDxtJpeg::p UT \_ maskName metodo
+# <a name="idxtjpegput_maskname-method"></a>Metodo IDxtJpeg::p ut \_ MaskName
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `put_MaskName` metodo specifica il nome di un file JPEG da usare come maschera di cancellazione. Questa maschera verrà utilizzata al posto di una delle maschere di cancellazione predefinite. Il file deve contenere una sfumatura monocromatica a 8 bit per pixel. La sfumatura viene utilizzata come maschera per definire la progressione della cancellazione.
+Il `put_MaskName` metodo specifica il nome di un file JPEG da usare come maschera di cancellazione dati. Questa maschera verrà usata al posto di una delle maschere di cancellazione incorporate. Il file deve contenere una sfumatura monocromatica a 8 bit per pixel. La sfumatura viene usata come maschera per definire l'avanzamento della cancellazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT put_MaskName(
 
 <dl> <dt>
 
-*newVal* \[ in\]
+*newVal* \[ Pollici\]
 </dt> <dd>
 
 Specifica il nome del file.
@@ -54,19 +54,19 @@ Specifica il nome del file.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Per ripristinare una maschera predefinita, impostare la proprietà **MaskNum** .
+Per ripristinare una maschera predefinita, impostare la **proprietà MaskNum.**
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Per ripristinare una maschera predefinita, impostare la proprietà **MaskNum** .
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Per ripristinare una maschera predefinita, impostare la proprietà **MaskNum** .
 [**Interfaccia IDxtJpeg**](idxtjpeg.md)
 </dt> <dt>
 
-[**IDxtJpeg::p UT \_ MaskNum**](idxtjpeg-put-masknum.md)
+[**IDxtJpeg::put \_ MaskNum**](idxtjpeg-put-masknum.md)
 </dt> </dl>
 
  

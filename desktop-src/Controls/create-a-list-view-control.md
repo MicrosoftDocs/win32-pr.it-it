@@ -1,44 +1,44 @@
 ---
-title: Come creare un controllo List-View
-description: In questo argomento viene illustrato come creare un controllo visualizzazione elenco. Per creare un controllo di visualizzazione elenco, usare la funzione CreateWindow o CreateWindowEx e specificare la classe della \_ finestra ListView di WC.
+title: Come creare un controllo List-View controllo
+description: Questo argomento illustra come creare un controllo visualizzazione elenco. Per creare un controllo di visualizzazione elenco, usare la funzione CreateWindow o CreateWindowEx e specificare la classe finestra WC \_ LISTVIEW.
 ms.assetid: FEAA0ACA-A086-46DF-9DD2-A3E32F2CCDA3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3050498b87aaf701249a06cfe2c3ad18afdc1d84
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d71eddfb60a2ea035a5afe62423289da40a47b61841d3ba58c4cafa2824a65b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104474672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826611"
 ---
-# <a name="how-to-create-a-list-view-control"></a>Come creare un controllo List-View
+# <a name="how-to-create-a-list-view-control"></a>Come creare un controllo List-View controllo
 
-In questo argomento viene illustrato come creare un controllo visualizzazione elenco. Per creare un controllo di visualizzazione elenco, usare la funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificare la classe della finestra [**\_ ListView di WC**](common-control-window-classes.md) .
+Questo argomento illustra come creare un controllo visualizzazione elenco. Per creare un controllo visualizzazione elenco, usare la [**funzione CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificare la [**classe finestra \_ LISTVIEW WC.**](common-control-window-classes.md)
 
-È anche possibile creare un controllo di visualizzazione elenco come parte di un modello di finestra di dialogo. È necessario specificare [**il \_ controllo ListView di WC**](common-control-window-classes.md) come nome della classe. Per utilizzare un controllo visualizzazione elenco come parte di un modello di finestra di dialogo, è necessario chiamare [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) o [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) prima di creare un'istanza della finestra di dialogo.
+È anche possibile creare un controllo visualizzazione elenco come parte di un modello di finestra di dialogo. È necessario specificare [**WC \_ LISTVIEW**](common-control-window-classes.md) come nome della classe. Per usare un controllo visualizzazione elenco come parte di un modello di finestra di dialogo, è necessario chiamare [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) o [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) prima di creare un'istanza della finestra di dialogo.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Prima di tutto, registrare la classe della finestra chiamando la funzione [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e specificando il bit delle [**\_ \_ classi ListView di ICC**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) nella struttura **InitCommonControlsEx** associata. In questo modo si garantisce che la DLL dei controlli comuni venga caricata. Usare quindi la funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificare la classe della finestra di [**\_ controllo WC ListView**](common-control-window-classes.md) .
+Registrare prima di tutto la classe window chiamando la [**funzione InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) e specificando il bit [**ICC \_ LISTVIEW \_ CLASSES**](/windows/win32/api/commctrl/ns-commctrl-initcommoncontrolsex) nella struttura **INITCOMMONCONTROLSEX** che lo accompagna. In questo modo si garantisce che la DLL dei controlli comuni sia caricata. Usare quindi la [**funzione CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificare la [**classe finestra WC \_ LISTVIEW.**](common-control-window-classes.md)
 
 > [!Note]  
-> Per impostazione predefinita, un controllo di visualizzazione elenco Usa il tipo di carattere del titolo dell'icona. Tuttavia, è possibile usare un messaggio [**WM \_ sefont**](/windows/desktop/winmsg/wm-setfont) per specificare il tipo di carattere da usare per il testo. È necessario inviare questo messaggio prima di inserire elementi. Il controllo Usa le dimensioni del tipo di carattere specificato dal messaggio di **tipo \_ carattere di WM** per determinare la spaziatura e il layout. È anche possibile personalizzare il tipo di carattere per ogni elemento. Per ulteriori informazioni, vedere [Custom disegnato](custom-draw.md).
+> Per impostazione predefinita, un controllo visualizzazione elenco usa il tipo di carattere del titolo dell'icona. È tuttavia possibile usare un [**messaggio WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) per specificare il tipo di carattere da usare per il testo. È consigliabile inviare questo messaggio prima di inserire gli elementi. Il controllo usa le dimensioni del tipo di carattere specificato dal messaggio **WM \_ SETFONT** per determinare la spaziatura e il layout. È anche possibile personalizzare il tipo di carattere per ogni elemento. Per altre informazioni, vedere [Disegno personalizzato.](custom-draw.md)
 
  
 
-Nell'esempio di codice C++ riportato di seguito viene creato un controllo visualizzazione elenco in visualizzazione report.
+L'esempio di codice C++ seguente crea un controllo visualizzazione elenco nella visualizzazione report.
 
 
 ```C++
@@ -80,9 +80,9 @@ HWND CreateListView (HWND hwndParent)
 
 
 
-In genere, le applicazioni di visualizzazione elenco consentono all'utente di passare da una visualizzazione all'altra.
+In genere, le applicazioni di visualizzazione elenco consentono all'utente di passare da una visualizzazione a un'altra.
 
-Nell'esempio di codice C++ riportato di seguito viene modificato lo stile della finestra della visualizzazione elenco, che a sua volta modifica la visualizzazione.
+L'esempio di codice C++ seguente modifica lo stile della finestra della visualizzazione elenco, che a sua volta modifica la visualizzazione.
 
 
 ```C++
@@ -113,13 +113,13 @@ VOID SetView(HWND hWndListView, DWORD dwView)
 
 <dl> <dt>
 
-[Riferimento al controllo visualizzazione elenco](bumper-list-view-list-view-control-reference.md)
+[Informazioni di riferimento sul controllo List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Informazioni sui controlli List-View](list-view-controls-overview.md)
+[Informazioni List-View seguenti](list-view-controls-overview.md)
 </dt> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso dei List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

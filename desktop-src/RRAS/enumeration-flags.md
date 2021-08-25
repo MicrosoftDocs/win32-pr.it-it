@@ -7,12 +7,12 @@ keywords:
 - Flag di enumerazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a1cbec08496ccd6338de77ebdddf76547a48258
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6ffa99352db877cdaef3d5297d754d1e66bb246240074cfc741ba3baff94a5d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910271"
 ---
 # <a name="enumeration-flags"></a>Flag di enumerazione
 
@@ -20,21 +20,21 @@ ms.locfileid: "103955479"
 
 | Costante               | Valore      | Descrizione                                                                                                                                               |
 |------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_inizio enum \_ RTM       | 0x00000000 | Enumerare route o destinazioni a partire da 0/0.                                                                                                         |
-| \_enumerazione RTM \_ successiva        | 0x00000001 | Enumera le route o le destinazioni a partire dalla lunghezza dell'indirizzo/maschera specificata (ad esempio, 10/8). L'enumerazione continua fino alla fine della tabella di routing. |
-| \_intervallo enum \_ RTM       | 0x00000002 | Enumera le route o le destinazioni nel sottoalbero specificato dalla lunghezza dell'indirizzo/maschera, ad esempio 10/8.                                            |
-| \_ \_ tutte le \_ DestS enum di RTM  | 0x00000000 | Restituisce tutte le destinazioni.                                                                                                                                  |
-| \_DestS dell'enumerazione RTM \_ \_  | 0x01000000 | Restituire solo le destinazioni di proprietà del client.                                                                                                      |
-| \_ \_ tutte le route di enum RTM \_ | 0x00000000 | Restituisce tutte le route.                                                                                                                                        |
-| \_ \_ route personalizzate enum \_ RTM | 0x00010000 | Restituisce solo le route di proprietà del client.                                                                                                            |
+| AVVIO \_ DELL'ENUMERAZIONE RTM \_       | 0x00000000 | Enumerare le route o le destinazioni a partire da 0/0.                                                                                                         |
+| RTM \_ ENUM \_ NEXT        | 0x00000001 | Enumera le route o le destinazioni a partire dalla lunghezza di indirizzo/maschera specificata, ad esempio 10/8. L'enumerazione continua fino alla fine della tabella di routing. |
+| INTERVALLO DI ENUMERAZIONE RTM \_ \_       | 0x00000002 | Enumera le route o le destinazioni nel sottoalbero specificato dalla lunghezza di indirizzo/maschera (ad esempio 10/8).                                            |
+| ENUMERAZIONE RTM \_ \_ ALL \_ DESTS  | 0x00000000 | Restituisce tutte le destinazioni.                                                                                                                                  |
+| DESTS \_ DI ENUMERAZIONE RTM \_ \_  | 0x01000000 | Restituire solo le destinazioni di proprietà del client.                                                                                                      |
+| ENUMERAZIONE RTM \_ \_ TUTTE LE \_ ROUTE | 0x00000000 | Restituisce tutte le route.                                                                                                                                        |
+| ROUTE \_ PROPRIE DELL'ENUMERAZIONE RTM \_ \_ | 0x00010000 | Restituisce solo le route di proprietà del client.                                                                                                            |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

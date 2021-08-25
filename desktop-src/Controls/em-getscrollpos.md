@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETSCROLLPOS (RichEdit. h)
+title: EM_GETSCROLLPOS messaggio (Richedit.h)
 description: Ottiene la posizione di scorrimento corrente del controllo di modifica.
 ms.assetid: 26e122da-f1b4-4694-978c-ff678dad5d9f
 keywords:
-- Controlli di Windows Message EM_GETSCROLLPOS
+- EM_GETSCROLLPOS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70458abca94e483f8e202f13ecaed3df04a68366
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 42bde137096ae3c13582017f91b82c1eb9100097bb76f0d1babb91fa47b52196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800031"
 ---
-# <a name="em_getscrollpos-message"></a>\_Messaggio GETSCROLLPOS em
+# <a name="em_getscrollpos-message"></a>Messaggio \_ EM GETSCROLLPOS
 
 Ottiene la posizione di scorrimento corrente del controllo di modifica.
 
@@ -32,14 +32,14 @@ Ottiene la posizione di scorrimento corrente del controllo di modifica.
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) . Dopo la chiamata di **em \_ GETSCROLLPOS**, questo parametro contiene un punto nello spazio del testo virtuale del documento, espresso in pixel. Questo punto sarà il punto attualmente disponibile nell'angolo superiore sinistro della finestra di controllo di modifica.
+Puntatore a una [**struttura POINT.**](/previous-versions//dd162805(v=vs.85)) Dopo aver **chiamato EM \_ GETSCROLLPOS,** questo parametro contiene un punto nello spazio di testo virtuale del documento, espresso in pixel. Questo punto sarà il punto che si trova attualmente nell'angolo superiore sinistro della finestra di controllo di modifica.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Questo messaggio restituisce sempre 1.
 
 ## <a name="remarks"></a>Commenti
 
-I valori restituiti nella struttura [**Point**](/previous-versions//dd162805(v=vs.85)) sono valori a 16 bit, anche nei campi wide a 32 bit.
+I valori restituiti nella [**struttura POINT**](/previous-versions//dd162805(v=vs.85)) sono valori a 16 bit (anche nei campi a 32 bit).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,10 +57,10 @@ I valori restituiti nella struttura [**Point**](/previous-versions//dd162805(v=v
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ I valori restituiti nella struttura [**Point**](/previous-versions//dd162805(v=v
 
 <dl> <dt>
 
-[**\_SETSCROLLPOS em**](em-setscrollpos.md)
+[**EM \_ SETSCROLLPOS**](em-setscrollpos.md)
 </dt> </dl>
 
  

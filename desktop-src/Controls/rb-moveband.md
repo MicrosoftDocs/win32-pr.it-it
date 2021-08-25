@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_MOVEBAND (COMmctrl. h)
+title: RB_MOVEBAND messaggio (Commctrl.h)
 description: Sposta una banda da un indice a un altro.
 ms.assetid: bb5b45de-957e-46fb-b59a-18b55b69c395
 keywords:
-- Controlli di Windows Message RB_MOVEBAND
+- RB_MOVEBAND di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146103c4c3d70fc0514729a00eac152c4847b85c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ab45f63b46b8bb883ef9f1fd8708f915dba2a6860ef2f6fabb09e2b00bd8fe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798541"
 ---
-# <a name="rb_moveband-message"></a>\_Messaggio MOVEBAND RB
+# <a name="rb_moveband-message"></a>Messaggio RB \_ MOVEBAND
 
 Sposta una banda da un indice a un altro.
 
@@ -45,13 +45,13 @@ Indice in base zero della nuova posizione della banda.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-È probabile che questo messaggio modifichi l'indice di altre bande nel controllo Rebar. Se una banda viene spostata dall'indice 6 all'indice 0, per tutte le bande comprese tra l'indice viene incrementato di uno.
+Questo messaggio modificherà molto probabilmente l'indice di altre bande nel controllo rebar. Se una banda viene spostata dall'indice 6 all'indice 0, l'indice di tutte le bande in mezzo verrà incrementato di uno.
 
-*lParam* non deve mai essere maggiore del numero di bande meno uno. Il numero di bande può essere ottenuto con il messaggio [**RB \_ GETBANDCOUNT**](rb-getbandcount.md) .
+*lParam non* deve mai essere maggiore del numero di bande meno uno. Il numero di bande può essere ottenuto con il [**messaggio RB \_ GETBANDCOUNT.**](rb-getbandcount.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

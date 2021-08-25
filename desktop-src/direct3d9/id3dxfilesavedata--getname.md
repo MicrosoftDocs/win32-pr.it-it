@@ -1,7 +1,7 @@
 ---
-description: Recupera il nome del nodo dati del file ID3DXFileSaveData.
+description: Recupera il nome di questo nodo dati del file ID3DXFileSaveData.
 ms.assetid: ea697d23-42e7-4661-b605-3654f6a31055
-title: 'Metodo ID3DXFileSaveData:: GetName (D3DX9Xof. h)'
+title: Metodo ID3DXFileSaveData::GetName (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 00fa8c60f423343d3d4c594d31141a2f192802d3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7aa6ef69a5296830b2f3bb992fb24ac23fa58adeeea629fd0e1bdeacf6173344
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856650"
 ---
-# <a name="id3dxfilesavedatagetname-method"></a>Metodo ID3DXFileSaveData:: GetName
+# <a name="id3dxfilesavedatagetname-method"></a>Metodo ID3DXFileSaveData::GetName
 
-Recupera il nome del nodo dati del file [**ID3DXFileSaveData**](id3dxfilesavedata.md) .
+Recupera il nome di questo nodo dati del file [**ID3DXFileSaveData.**](id3dxfilesavedata.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*szName* \[ in\]
+*szName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPSTR**](../winprog/windows-data-types.md)**
 
-Indirizzo di un puntatore per la ricezione del nome del nodo dati del file. Se questo parametro è **null**, *puiSize* restituirà la dimensione della stringa. Se szName punta alla memoria valida, il nome del nodo dati del file verrà copiato in szName fino al numero di caratteri specificato da *puiSize* .
+Indirizzo di un puntatore per ricevere il nome di questo nodo dati file. Se questo parametro è **NULL,** *puiSize* restituirà le dimensioni della stringa. Se szName punta a una memoria valida, il nome di questo nodo dati file verrà copiato in szName fino al numero di caratteri specificato da *puiSize* .
 
 </dd> <dt>
 
-*puiSize* \[ in uscita\]
+*puiSize* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)\***
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)\***
 
-Puntatore alla dimensione della stringa che rappresenta il nome del nodo dati del file. Questo parametro può essere **null** se szName fornisce un riferimento al nome. Questo parametro restituirà la dimensione della stringa se szName è **null**.
+Puntatore alla dimensione della stringa che rappresenta il nome di questo nodo dati file. Questo parametro può essere **NULL** se szName fornisce un riferimento al nome. Questo parametro restituirà le dimensioni della stringa se szName è **NULL.**
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore alla dimensione della stringa che rappresenta il nome del nodo dati de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
 
 ## <a name="remarks"></a>Commenti
 
-Affinché questo metodo abbia esito positivo, *szName* o *puiSize* deve essere non **null**.
+Per l'esito positivo di questo metodo, *szName* o *puiSize* deve essere diverso da **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Affinché questo metodo abbia esito positivo, *szName* o *puiSize* deve essere n
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

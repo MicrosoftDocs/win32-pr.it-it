@@ -1,55 +1,55 @@
 ---
-title: Configurazione dei flussi video per le prestazioni di ricerca
-description: Configurazione dei flussi video per le prestazioni di ricerca
+title: Configurazione dei Flussi video per la ricerca di prestazioni
+description: Configurazione dei Flussi video per la ricerca di prestazioni
 ms.assetid: 2df507f9-60a5-4489-b3db-7fe15604e625
 keywords:
 - flussi, configurazione di flussi video
-- codec, configurazione dei flussi video
+- codec, configurazione di flussi video
 - flussi video, configurazione
 - flussi video, prestazioni
 - prestazioni, flussi video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33b4fc68e0b3a91cf135d29dc7123d5af88db84c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9b7a21e6352d03375b680702a16190b4af9eef24ca7ba9d592adb79ab5794b5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103723438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840161"
 ---
-# <a name="configuring-video-streams-for-seeking-performance"></a>Configurazione dei flussi video per le prestazioni di ricerca
+# <a name="configuring-video-streams-for-seeking-performance"></a>Configurazione dei Flussi video per la ricerca di prestazioni
 
-Alcune applicazioni di riproduzione eseguono molte ricerche nei singoli flussi. La ricerca è un'area in cui le prestazioni possono variare significativamente a seconda delle impostazioni del flusso. Se si sa che il contenuto deve essere ottimizzato per la ricerca rapida, è possibile personalizzare la configurazione del flusso per migliorare le prestazioni.
+Alcune applicazioni di riproduzione eseguono molte operazioni di ricerca su singoli flussi. La ricerca è un'area in cui le prestazioni possono variare notevolmente a seconda delle impostazioni del flusso. Se si sa che il contenuto deve essere ottimizzato per la ricerca rapida, è possibile personalizzare la configurazione del flusso per migliorare le prestazioni.
 
-Il fattore più importante che influisce sulla velocità delle operazioni di ricerca nel video è la spaziatura dei fotogrammi chiave. Poiché ogni frame tra fotogrammi chiave deve essere ricostruito in base ai frame che lo precedono, i fotogrammi chiave con spazi ampi risultano più lunghi. Se, ad esempio, un flusso video con 30 fotogrammi al secondo ha una spaziatura massima con fotogrammi chiave di 10 secondi, esistono potenzialmente 300 di frame tra fotogrammi chiave. Se si cerca l'ultimo [*frame Delta*](wmformat-glossary.md), è necessario ricostruire i frame 299 per la decompressione del fotogramma. Se ogni ricostruzione di frame ha richiesto .01 secondi, la ricerca richiederebbe circa 3 secondi. Se si desidera aumentare l'efficienza della ricerca, è possibile ridurre la spaziatura dei fotogrammi chiave. Tuttavia, se si impostano i fotogrammi chiave troppo vicini, è possibile perdere la qualità.
+Il fattore più importante che influisce sulla velocità delle operazioni di ricerca nel video è la spaziatura dei fotogrammi chiave. Poiché ogni fotogramma tra i fotogrammi chiave deve essere ricostruito in base ai fotogrammi precedenti, i fotogrammi chiave con spazi molto spaziati comportano tempi di ricerca più lunghi. Ad esempio, se un flusso video con 30 fotogrammi al secondo ha una spaziatura massima dei fotogrammi chiave di 10 secondi, ci sono potenzialmente 300 fotogrammi tra i fotogrammi chiave. Se si cerca l'ultimo [*frame differenziale,*](wmformat-glossary.md)è necessario ricostruire 299 fotogrammi per decompressire il frame. Se la ricostruzione di ogni fotogramma ha richiesto 0,01 secondi, la ricerca potrebbe richiedere quasi 3 secondi. Se si vuole aumentare l'efficienza della ricerca, ridurre la spaziatura dei fotogrammi chiave può essere utile. Tuttavia, se si impostano i fotogrammi chiave troppo vicini, si può perdere la qualità.
 
-È possibile impostare la spaziatura massima del fotogramma chiave chiamando [**IWMVideoMediaProps:: SetMaxKeyFrameSpacing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-setmaxkeyframespacing). I valori consigliati, in base alla velocità in bit del flusso, sono elencati nella tabella seguente. Questi valori rappresentano un equilibrio efficace tra la ricerca di prestazioni e qualità. L'SDK non impone alcun limite per il tempo tra i fotogrammi chiave. In generale, i tempi più lunghi di 30 secondi possono influire negativamente sui tempi di ricerca sia quando il contenuto viene trasmesso su una rete che quando viene riprodotto localmente.
+È possibile impostare la spaziatura massima dei fotogrammi chiave chiamando [**IWMVideoMediaProps::SetMaxKeyFrameSpacing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmvideomediaprops-setmaxkeyframespacing). I valori consigliati, in base alla velocità in bit del flusso, sono elencati nella tabella seguente. Questi valori offrono un buon equilibrio tra prestazioni e qualità. L'SDK non applica alcun limite al tempo tra fotogrammi chiave. In generale, tempi più lunghi di 30 secondi possono influire negativamente sui tempi di ricerca sia quando il contenuto viene trasmesso in rete che quando viene riprodotto in locale.
 
 
 
-| Velocità in bit             | Spaziatura massima consigliata per i fotogrammi chiave |
+| Velocità in bit             | Spaziatura massima dei fotogrammi chiave suggerita |
 |----------------------|-------------------------------------|
-| da 22 kbps a 300 kbps  | 8 secondi                           |
-| 300 kbps a 600 Kbps | 6 secondi                           |
-| da 600 kbps a 2 Mbps   | 4 secondi                           |
+| Da 22 Kbps a 300 Kbps  | 8 secondi                           |
+| Da 300 Kbps a 600 Kbps | 6 secondi                           |
+| Da 600 Kbps a 2 Mbps   | 4 secondi                           |
 | 2 Mbps e versioni successive    | 3 secondi                           |
 
 
 
- 
+ 
 
-Per ulteriori informazioni su come ottenere prestazioni ottimali durante la ricerca di file video, vedere [ottenere le migliori prestazioni di ricerca dei video](getting-the-best-video-seeking-performance.md).
+Per altre informazioni su come ottenere prestazioni ottimali quando si cercano file video, vedere [Ottenere le migliori prestazioni di ricerca video.](getting-the-best-video-seeking-performance.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Configurazione di flussi**](configuring-streams.md)
+[**Configurazione di Flussi**](configuring-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

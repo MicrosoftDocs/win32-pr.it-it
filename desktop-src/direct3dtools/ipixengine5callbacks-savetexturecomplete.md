@@ -1,10 +1,10 @@
 ---
-description: Una funzione di callback utilizzata per notificare all'host quando il salvataggio di una trama è stata completata.
+description: Funzione di callback usata per notificare all'host il completamento del salvataggio di una trama.
 MS-HAID: vspixengine.IPixEngine5Callbacks\_SaveTextureComplete
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine5Callbacks:: SaveTextureComplete'
+title: Metodo IPixEngine5Callbacks::SaveTextureComplete
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 84B51B52-FC30-4920-9237-91312370C10B
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7474691dc809c8788c6a324338f4220a33fc6229
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 14fc2d648d18378e492143053996a02e27a6876ce1cd4281cbba29f5e0c1c6db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892391"
 ---
-# <a name="span-idvspixengineipixengine5callbacks_savetexturecompletespanipixengine5callbackssavetexturecomplete-method"></a><span id="vspixengine.ipixengine5callbacks_savetexturecomplete"></span>Metodo IPixEngine5Callbacks:: SaveTextureComplete
+# <a name="span-idvspixengineipixengine5callbacks_savetexturecompletespanipixengine5callbackssavetexturecomplete-method"></a><span id="vspixengine.ipixengine5callbacks_savetexturecomplete"></span>Metodo IPixEngine5Callbacks::SaveTextureComplete
 
-Una funzione di callback utilizzata per notificare all'host quando il salvataggio di una trama è stata completata.
+Funzione di callback usata per notificare all'host il completamento del salvataggio di una trama.
 
 ## <a name="syntax"></a>Sintassi
 

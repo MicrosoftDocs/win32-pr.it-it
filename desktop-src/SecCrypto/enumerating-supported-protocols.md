@@ -1,23 +1,23 @@
 ---
-description: I protocolli supportati e i pacchetti di crittografia possono essere elencati da chiamate a CryptGetProvParam con PP \_ ENUMALGS o PP \_ ENUMALGS \_ ex.
+description: I protocolli e i pacchetti di crittografia supportati possono essere elencati tramite chiamate a CryptGetProvParam con PP \_ ENUMALGS o PP \_ ENUMALGS \_ EX.
 ms.assetid: 8f0c2129-6841-4793-a404-bb6ee8f41683
 title: Enumerazione dei protocolli supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76976da7e3ab59e299d6ef0a8e9bcabce601c0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54d7236fe20901e9feb48e844deceea47e8f5936b9685580a653f1480b3b667c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874431"
 ---
 # <a name="enumerating-supported-protocols"></a>Enumerazione dei protocolli supportati
 
-I protocolli supportati e i pacchetti di crittografia possono essere elencati da chiamate a [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) con PP \_ ENUMALGS o PP \_ ENUMALGS \_ ex. Il \_ valore ENUMALGS di PP \_ funziona come PP \_ ENUMALGS ma restituisce una struttura di [**prova \_ ENUMALGS \_ ex**](/windows/desktop/api/Wincrypt/ns-wincrypt-prov_enumalgs_ex) che include informazioni più dettagliate sugli algoritmi supportati dal provider.
+I protocolli e i pacchetti di crittografia supportati possono essere elencati tramite chiamate a [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) con PP \_ ENUMALGS o PP \_ ENUMALGS \_ EX. Il valore PP ENUMALGS EX funziona come PP ENUMALGS, ma restituisce una struttura \_ \_ \_ [**PROV \_ ENUMALGS \_ EX**](/windows/desktop/api/Wincrypt/ns-wincrypt-prov_enumalgs_ex) che contiene informazioni più dettagliate sugli algoritmi supportati dal provider.
 
-Per ulteriori informazioni sui flag di protocollo definiti e sui relativi valori, vedere [flag di protocollo](protocol-flags.md).
+Per altre informazioni sui flag di protocollo definiti e sui relativi valori, vedere [Flag di protocollo.](protocol-flags.md)
 
-Dato che il membro **hCryptProv** è l' [*handle*](../secgloss/h-gly.md) di un [*contesto*](../secgloss/c-gly.md) di crittografia aperto acquisito usando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) con il relativo parametro *dwProvType* impostato su prov \_ RSA \_ Schannel, nell'esempio seguente vengono elencati i nomi di tutti gli algoritmi disponibili in CSP.
+Dato che il membro **hCryptProv** è [](../secgloss/c-gly.md) l'handle di un contesto di crittografia aperto acquisito usando [**CryptAcquireContext con**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) il parametro *dwProvType* impostato su PROV RSA SCHANNEL, l'esempio seguente elenca i nomi di tutti gli algoritmi disponibili in [](../secgloss/h-gly.md) \_ \_ CSP.
 
 
 ```C++
@@ -46,23 +46,23 @@ while( CryptGetProvParam(
 
 
 
-Nella tabella seguente sono elencati alcuni algoritmi restituiti da una tipica parte interna di prove \_ RSA \_ Schannel CSP. Si noti che in questo esempio non è supportata né la crittografia SSL2 SHA né la crittografia DES SSL2.
+La tabella seguente elenca alcuni algoritmi restituiti da un tipico provider di servizi di configurazione PROV \_ RSA \_ SCHANNEL nazionale. Si noti che né i mac SSL2 SHA né la crittografia DES SSL2 sono supportati dal CSP in questo esempio.
 
 
 
-| Identificatore dell'algoritmo                                                                        | Lunghezza minima chiave | Lunghezza massima della chiave | Protocolli | Nome algoritmo |
+| Identificatore dell'algoritmo                                                                        | Lunghezza minima della chiave | Lunghezza massima della chiave | Protocolli | Nome algoritmo |
 |---------------------------------------------------------------------------------------------|--------------------|--------------------|-----------|----------------|
 | [*CALG \_ RSA \_ KEYX*](../secgloss/c-gly.md) | 512                | 2048               | 0x0007    | "RSA \_ KEYX"    |
-| [*\_MD5 CALG*](../secgloss/c-gly.md)                 | 128                | 128                | 0x0007    | MD5          |
-| [*\_Sha CALG*](../secgloss/c-gly.md)                 | 160                | 160                | 0x0005    | Sha          |
-| [*CALG \_ RC4*](../secgloss/c-gly.md)                 | 40                 | 128                | 0x0007    | RC4          |
-| CALG \_ des                                                                                   | 56                 | 56                 | 0x0005    | DES          |
+| [*CALG \_ MD5*](../secgloss/c-gly.md)                 | 128                | 128                | 0x0007    | "MD5"          |
+| [*CALG \_ SHA*](../secgloss/c-gly.md)                 | 160                | 160                | 0x0005    | "SHA"          |
+| [*CALG \_ RC4*](../secgloss/c-gly.md)                 | 40                 | 128                | 0x0007    | "RC4"          |
+| CALG \_ DES                                                                                   | 56                 | 56                 | 0x0005    | "DES"          |
 
 
 
  
 
-Per preparare l'invio di messaggi ClientHello o ServerHello, il motore di protocollo [*Schannel*](../secgloss/s-gly.md) enumera gli algoritmi e le dimensioni delle chiavi supportati dal CSP e compila un elenco internamente dei pacchetti di crittografia supportati.
+Per preparare l'invio di messaggi ClientHello o ServerHello, il motore del protocollo [*Schannel*](../secgloss/s-gly.md) enumera gli algoritmi e le dimensioni delle chiavi supportati dal CSP e compila internamente un elenco di pacchetti di crittografia supportati.
 
  
 

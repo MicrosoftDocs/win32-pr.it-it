@@ -1,11 +1,11 @@
 ---
 title: Metodo IConfigAsfWriter2 ResetMultiPassState
-description: Il metodo ResetMultiPassState Reimposta il filtro quando viene annullato un passaggio di codifica per la pre-elaborazione prima del completamento.
+description: Il metodo ResetMultiPassState reimposta il filtro quando un passaggio di codifica di pre-elaborazione viene annullato prima del completamento.
 ms.assetid: b6687af7-f3cd-4e92-9c76-dddff9063fa0
 keywords:
-- Metodo ResetMultiPassState Windows Media Format
-- Metodo ResetMultiPassState Windows Media Format, interfaccia IConfigAsfWriter2
-- Interfaccia IConfigAsfWriter2-formato Windows Media, metodo ResetMultiPassState
+- Metodo ResetMultiPassState windows Media Format
+- Metodo ResetMultiPassState windows Media Format , interfaccia IConfigAsfWriter2
+- Interfaccia IConfigAsfWriter2 formato multimediale windows, metodo ResetMultiPassState
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ed61e4f0517822a602f2bb88c944bba82fa1f943
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f10563ed716b6b33258fe57ff8129bff78b401170db1512566015d0b05d54dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839871"
 ---
-# <a name="iconfigasfwriter2resetmultipassstate-method"></a>Metodo IConfigAsfWriter2:: ResetMultiPassState
+# <a name="iconfigasfwriter2resetmultipassstate-method"></a>Metodo IConfigAsfWriter2::ResetMultiPassState
 
-Il metodo **ResetMultiPassState** Reimposta il filtro quando viene annullato un passaggio di codifica per la pre-elaborazione prima del completamento.
+Il **metodo ResetMultiPassState** reimposta il filtro quando un passaggio di codifica di pre-elaborazione viene annullato prima del completamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                         | Descrizione                                       |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                | Il metodo è riuscito.<br/>                  |
-| <dl> <dt>**VFW \_ E \_ non \_ arrestato**</dt> </dl> | Il filtro non si trova in uno stato interrotto.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                | Il metodo è riuscito.<br/>                  |
+| <dl> <dt>**VFW \_ E \_ NON \_ ARRESTATO**</dt> </dl> | Il filtro non era in stato arrestato.<br/> |
 
 
 
@@ -56,7 +56,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato per reimpostare lo stato interno del filtro ogni volta che viene annullato un passaggio di codifica per la pre-elaborazione prima che il filtro riceva un evento di **\_ \_ completamento della pre-elaborazione EC** . Non è necessario chiamare questo metodo se il passaggio di codifica per la pre-elaborazione viene completato senza errori.
+Questo metodo deve essere chiamato per reimpostare lo stato interno del filtro ogni volta che un passaggio di codifica di pre-elaborazione viene annullato prima che il filtro abbia ricevuto un evento **EC \_ PREPROCESS \_ COMPLETE.** Non è necessario chiamare questo metodo se il passaggio di codifica di pre-elaborazione viene completato senza errori.
 
 ## <a name="see-also"></a>Vedi anche
 

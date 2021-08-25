@@ -1,45 +1,45 @@
 ---
-title: Mapper MIDI
-description: Mapper MIDI
+title: The MIDI Mapper
+description: The MIDI Mapper
 ms.assetid: 92cffc67-b4a4-4807-94d2-02fbbdba5abf
 keywords:
-- Windows Multimedia, Mapper MIDI
-- Multimedia, Mapper MIDI
-- audio multimediale, Mapper MIDI
-- audio, Mapper MIDI
-- MIDI (Musical Instrument Digital Interface), Mapper MIDI
-- MIDI (Musical Instrument Digital Interface), MIDI Mapper
-- Mapper MIDI, informazioni
-- Mapper MIDI, origine
-- Mapper MIDI, destinazione
+- Windows multimediali, MIDI Mapper
+- multimedia,MIDI Mapper
+- audio multimediale, mapper MIDI
+- audio, mapper MIDI
+- Instrument Digital Interface (MIDI), MIDI Mapper
+- MIDI (Instrument Digital Interface), MIDI Mapper
+- MIDI Mapper,about
+- MIDI Mapper, origine
+- MIDI Mapper, destinazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b360148c994c0ee6434fdf097ca5f393b23d49
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8a5becc117668964a584f29c311c3e3ac477f672085e837e28d7eecc595658d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805101"
 ---
-# <a name="the-midi-mapper"></a>Mapper MIDI
+# <a name="the-midi-mapper"></a>The MIDI Mapper
 
-I servizi patch standard del mapper MIDI forniscono la riproduzione dei file MIDI indipendenti dal dispositivo per le applicazioni. Il mapper MIDI può essere usato con il sequencer MIDI di MCI o con servizi di output MIDI di basso livello.
+I servizi patch standard di MIDI Mapper offrono la riproduzione di file MIDI indipendenti dal dispositivo per le applicazioni. MidI Mapper può essere usato con il sequencer MIDI MCI o con servizi di output MIDI di basso livello.
 
-Se non specificato diversamente, tutti i riferimenti ai numeri di canale MIDI utilizzano i numeri di canale logico da 1 a 16. Questi numeri di canale logico corrispondono ai numeri di canale fisico da 0 a 15 che fanno effettivamente parte del messaggio MIDI. Tutti i riferimenti ai valori delle chiavi e delle modifiche dei programmi MIDI usano i valori fisici da 0 a 127. Tutti i numeri sono decimali, a meno che non siano preceduti dal prefisso "0x", nel qual caso sono esadecimali.
+Se non diversamente specificato, tutti i riferimenti ai numeri di canale MIDI usano i numeri di canale logici da 1 a 16. Questi numeri di canale logici corrispondono ai numeri di canale fisici da 0 a 15 che fanno effettivamente parte del messaggio MIDI. Tutti i riferimenti ai valori di chiave e modifica del programma MIDI usano i valori fisici da 0 a 127. Tutti i numeri sono decimali a meno che non siano preceduti dal prefisso "0x", nel qual caso sono esadecimali.
 
-Nella discussione del mapper MIDI, il termine *origine* si riferisce al lato di input del mapper MIDI. Il termine *destinazione* si riferisce al lato output del mapper MIDI. Un canale di origine, ad esempio, è il canale MIDI di un messaggio inviato al mapper MIDI e un canale di destinazione è il canale MIDI di un messaggio inviato dal mapper MIDI a un dispositivo di output.
+Nella discussione sul mapper MIDI, il termine *source* si riferisce al lato input del mapper MIDI. Il termine *destinazione* si riferisce al lato di output del mapper MIDI. Ad esempio, un canale di origine è il canale MIDI di un messaggio inviato al mapper MIDI e un canale di destinazione è il canale MIDI di un messaggio inviato dal mapper MIDI a un dispositivo di output.
 
--   [Il mapper MIDI e Windows](the-midi-mapper-and-windows.md)
+-   [Mapper MIDI e Windows](the-midi-mapper-and-windows.md)
 -   [Architettura del mapper MIDI](the-midi-mapper-architecture.md)
--   [Mappa del canale](the-channel-map.md)
--   [Mappe patch](patch-maps.md)
--   [Volume scalare](the-volume-scalar.md)
--   [Mappe chiave](key-maps.md)
--   [Riepilogo delle mappe e dei messaggi MIDI](summary-of-maps-and-midi-messages.md)
+-   [Mappa dei canali](the-channel-map.md)
+-   [Applicazione di patch Mappe](patch-maps.md)
+-   [Scalare del volume](the-volume-scalar.md)
+-   [Chiave Mappe](key-maps.md)
+-   [Riepilogo dei Mappe e MIDI](summary-of-maps-and-midi-messages.md)
 
- 
+ 
 
- 
+ 
 
 
 

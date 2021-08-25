@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_PIPELINE_STATE_STREAM_BLEND_DESC (D3dx12. h)
-description: Struttura di supporto utilizzata per descrivere una descrizione di Blend come singolo oggetto adatto per la descrizione di un flusso.
+title: CD3DX12_PIPELINE_STATE_STREAM_BLEND_DESC struttura (D3dx12.h)
+description: Struttura helper usata per descrivere una descrizione di blend come un singolo oggetto adatto per una descrizione del flusso.
 ms.assetid: A629B05D-0A70-4C96-9F66-1508F2667BF6
 keywords:
-- Struttura CD3DX12_PIPELINE_STATE_STREAM_BLEND_DESC
+- CD3DX12_PIPELINE_STATE_STREAM_BLEND_DESC struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d251be9cc1423babc58e1d3c3be87c5345308874
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 300506d2c41be5a5380f4f0f64c93779185fd59ced2e0dd613d926f8397ea85c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752171"
 ---
-# <a name="cd3dx12_pipeline_state_stream_blend_desc-structure"></a>\_ \_ \_ \_ Struttura Desc del flusso di stato della pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_blend_desc-structure"></a>Struttura \_ \_ \_ \_ \_ DESC DI BLEND DI FLUSSO DELLO STATO DELLA PIPELINE CD3DX12
 
-Struttura di supporto utilizzata per descrivere una descrizione di Blend come singolo oggetto adatto per la descrizione di un flusso.
+Struttura helper usata per descrivere una descrizione di blend come un singolo oggetto adatto per una descrizione del flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_BLEND_DESC {
 
 <dl> <dt>
 
-**CD3DX12 \_ di \_ \_ Blend del flusso di stato \_ della pipeline \_**
+**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ BLEND \_ DESC**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di una CD3DX12 della \_ pipeline di \_ flusso dello stato della pipeline \_ \_ \_ .
+Crea una nuova istanza non inizializzata di una PIPELINE CD3DX12 \_ \_ STATE STREAM BLEND \_ \_ \_ DESC.
 
 </dd> <dt>
 
-**CD3DX12 \_ pipeline \_ state \_ Stream \_ Blend \_ DESC (CD3DX12 \_ Blend \_ desc const &i)**
+**CD3DX12 \_ PIPELINE STATE STREAM BLEND \_ \_ \_ \_ DESC(CD3DX12 \_ BLEND \_ DESC const &i)**
 </dt> <dd>
 
-Crea una nuova istanza di una CD3DX12 \_ della pipeline di \_ flusso dello stato della pipeline \_ \_ \_ , inizializzata con un tipo di sottooggetto di Blend di tipo di **oggetto di stato della \_ pipeline \_ \_ \_ \_ D3D12** e i dati di sottooggetti copiati da *i*, una struttura di [**CD3DX12 \_ Blend \_ desc**](cd3dx12-blend-desc.md) .
+Crea una nuova istanza di UNA PIPELINE CD3DX12 PIPELINE STATE STREAM BLEND DESC, inizializzata con un tipo di oggetto secondario D3D12 PIPELINE STATE SUBOBJECT TYPE BLEND e dati di sottooggetto copiati da \_ i , una struttura \_ \_ \_ \_ [**CD3DX12 \_ BLEND \_ DESC.**](cd3dx12-blend-desc.md) **\_ \_ \_ \_ \_** 
 
 </dd> <dt>
 
-**operator = (CD3DX12 \_ Blend \_ desc deconst& i)**
+**operator=(CD3DX12 \_ BLEND \_ DESC const& i)**
 </dt> <dd>
 
 Operatore di assegnazione di copia.
 
 </dd> <dt>
 
-**operatore CD3DX12 \_ Blend \_ DESC () const**
+**Operatore CD3DX12 \_ BLEND \_ DESC() const**
 </dt> <dd>
 
-Conversione implicita in una struttura [**\_ \_ desc di CD3DX12 Blend**](cd3dx12-blend-desc.md) .
+Conversione implicita in [**una struttura CD3DX12 \_ BLEND \_ DESC.**](cd3dx12-blend-desc.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-\_La funzione \_ di flusso di stato della pipeline CD3DX12 \_ \_ \_ è una specializzazione typedef del modello di [**\_ \_ \_ \_ sottooggetto flusso di stato della pipeline CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e viene definita nel modo seguente:
+CD3DX12 PIPELINE STATE STREAM BLEND DESC è una specializzazione typedef del modello \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) e viene definita come segue:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<CD3DX12_BLEND_DESC, D3D12_PIPELI
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<CD3DX12_BLEND_DESC, D3D12_PIPELI
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Sottooggetto \_ flusso di stato della pipeline CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**SOTTOOGGETTO FLUSSO DI STATO DELLA PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo di \_ \_ sottooggetto stato della pipeline D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DI SOTTOOGGETTO STATO PIPELINE D3D12 \_ \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

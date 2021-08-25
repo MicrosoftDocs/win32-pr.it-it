@@ -1,9 +1,9 @@
 ---
-title: Proprietà SplitButton. ButtonItem
-description: Rappresenta un contenitore per un pulsante o interruttore che espone il comando predefinito di un pulsante di suddivisione.
+title: SplitButton.ButtonItem - proprietà
+description: Rappresenta un contenitore per un pulsante o un interruttore che espone il comando predefinito di un pulsante di divisione.
 ms.assetid: 3d46d606-238d-46d4-b92e-dfd759951770
 keywords:
-- Barra multifunzione di Windows SplitButton. ButtonItem
+- Proprietà SplitButton.ButtonItem Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf1e1cb908ce9a86f23f75d17bf2e76797997db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f49f316f7c740b434f761bbe4c00906c8f76b5027af9fcc87317af2a51960dab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840691"
 ---
-# <a name="splitbuttonbuttonitem-property"></a>Proprietà SplitButton. ButtonItem
+# <a name="splitbuttonbuttonitem-property"></a>SplitButton.ButtonItem - proprietà
 
-Rappresenta un contenitore per un [pulsante](windowsribbon-controls-button.md) o [interruttore](windowsribbon-controls-togglebutton.md) che espone il comando predefinito di un pulsante di [suddivisione](windowsribbon-controls-splitbutton.md).
+Rappresenta un contenitore per [un pulsante o](windowsribbon-controls-button.md) un [interruttore che](windowsribbon-controls-togglebutton.md) espone il comando predefinito di un pulsante di [divisione.](windowsribbon-controls-splitbutton.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -60,15 +60,15 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**SplitButton**](windowsribbon-element-splitbutton.md).
+Può verificarsi al massimo una volta per [**ogni controllo SplitButton.**](windowsribbon-element-splitbutton.md)
 
-Ogni **SplitButton. ButtonItem** può contenere solo un [**pulsante**](windowsribbon-element-button.md) o un elemento figlio [**ToggleButton**](windowsribbon-element-togglebutton.md) .
+Ogni **elemento SplitButton.ButtonItem** può contenere un solo [**elemento figlio Button**](windowsribbon-element-button.md) o [**ToggleButton.**](windowsribbon-element-togglebutton.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per il [pulsante di suddivisione](windowsribbon-controls-splitbutton.md).
+Nell'esempio seguente viene illustrato il markup di base per [il pulsante di divisione](windowsribbon-controls-splitbutton.md).
 
-In questa sezione del codice vengono illustrate le dichiarazioni di comando [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton. ButtonItem** , con un [**gruppo**](windowsribbon-element-group.md) associato che funge da contenitore padre per l'elemento **SplitButton** .
+Questa sezione di codice illustra le dichiarazioni di comando [**SplitButton**](windowsribbon-element-splitbutton.md) **e SplitButton.ButtonItem,** con un oggetto [**Group**](windowsribbon-element-group.md) associato che funziona come contenitore padre per **l'elemento SplitButton.**
 
 
 ```XML
@@ -112,7 +112,7 @@ In questa sezione del codice vengono illustrate le dichiarazioni di comando [**S
 
 
 
-In questa sezione del codice vengono illustrate le dichiarazioni di controllo [**SplitButton**](windowsribbon-element-splitbutton.md) e **SplitButton. ButtonItem** .
+Questa sezione di codice illustra le [**dichiarazioni dei controlli SplitButton**](windowsribbon-element-splitbutton.md) **e SplitButton.ButtonItem.**
 
 
 ```XML
@@ -149,8 +149,8 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo [*
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -158,7 +158,7 @@ In questa sezione del codice vengono illustrate le dichiarazioni di controllo [*
 
 <dl> <dt>
 
-[Controllo pulsante combinato](windowsribbon-controls-splitbutton.md)
+[Controllo Pulsante di divisione](windowsribbon-controls-splitbutton.md)
 </dt> </dl>
 
  

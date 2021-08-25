@@ -1,21 +1,21 @@
 ---
-description: Un set di continuità specifica i protocolli che seguono un protocollo. Il parser utilizza un set di continuità solo quando il parser è in grado di identificare il protocollo successivo tra i dati in un'istanza del protocollo.
+description: Un set di handoff specifica i protocolli che seguono un protocollo. Il parser usa un set di handoff solo quando il parser può identificare il protocollo successivo dai dati in un'istanza del protocollo.
 ms.assetid: d1f44646-98ee-4e3a-a81a-83d6c87c23f4
-title: Specifica di un set di continuità
+title: Specifica di un set di handoff
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9acb421963bea3ffaa70b6165c6ffceee138e38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c2f3f7d559c83e3c56bc6ea202b3a0e339dbc1b76d93fc2af1b73f5a2c60c4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778351"
 ---
-# <a name="specifying-a-handoff-set"></a>Specifica di un set di continuità
+# <a name="specifying-a-handoff-set"></a>Specifica di un set di handoff
 
-Un set di continuità specifica i protocolli che seguono un protocollo. Il parser utilizza un set di continuità solo quando il parser è in grado di identificare il protocollo successivo tra i dati in un'istanza del protocollo.
+Un set di handoff specifica i protocolli che seguono un protocollo. Il parser usa un set di handoff solo quando il parser può identificare il protocollo successivo dai dati in un'istanza del protocollo.
 
-Il protocollo TCP, ad esempio, dispone di una proprietà Port che identifica il protocollo che segue il protocollo TCP. Il valore della proprietà 20 indica che il protocollo successivo è FTP. Il valore della proprietà 53 indica che il protocollo successivo è DNS. Poiché la proprietà Port identifica il protocollo che segue, il parser TCP può usare il set di continuità seguente per ottenere un handle per il protocollo specificato dalla proprietà Port.
+Ad esempio, il protocollo TCP ha una proprietà di porta che identifica il protocollo che segue il protocollo TCP. Il valore della proprietà 20 indica che il protocollo successivo è FTP. Il valore della proprietà 53 indica che il protocollo successivo è DNS. Poiché la proprietà port identifica il protocollo seguente, il parser TCP può usare il set di handoff seguente per ottenere un handle per il protocollo specificato dalla proprietà port.
 
 ``` syntax
 [TCP_HandoffSet]
@@ -47,13 +47,13 @@ Il protocollo TCP, ad esempio, dispone di una proprietà Port che identifica il 
   5678  = PPTP
 ```
 
-I set di continuità vengono archiviati nel file INI del parser. Il set di continuità TCP precedente, ad esempio, si trova nel file tcpip.ini. Si noti che se una DLL del parser supporta più protocolli, ogni parser che usa un set di continuità ha il proprio percorso nel file INI.
+I set di handoff vengono archiviati nel file INI del parser. Ad esempio, il set di handoff TCP precedente si trova in tcpip.ini file. Si noti che se una DLL del parser supporta più protocolli, ogni parser che usa un set di handoff ha la propria posizione nel file INI.
 
-Le informazioni sui set di continuità vengono specificate durante l'implementazione della funzione [**ParserAutoInstallInfo**](parserautoinstallinfo.md) . Il parser può specificare i protocolli che precedono il protocollo del parser e i protocolli che seguono il protocollo del parser. Network Monitor accetta tutti i protocolli che precedono e aggiunge il protocollo del parser alle sezioni seguenti set del file INI del parser, per ogni protocollo precedente. Network Monitor archivia l'elenco dei protocolli seguiti nella sezione set di continuità del file INI del parser.
+Le informazioni sul set di handoff vengono specificate durante l'implementazione della [**funzione ParserAutoInstallInfo.**](parserautoinstallinfo.md) Il parser può specificare i protocolli che precedono il protocollo del parser e i protocolli che seguono il protocollo del parser. Network Monitor accetta tutti i protocolli che precedono e aggiunge il protocollo del parser alle sezioni del set di passaggi seguenti del file INI del parser, per ogni protocollo precedente. Network Monitor l'elenco dei protocolli che seguono nella sezione handoff set del file INI del parser.
 
-Network Monitor archivia le informazioni sul set di continuità nel file INI del parser, ma il parser non accede direttamente ai file INI. Per usare le informazioni nel set di continuità, il parser chiama la funzione [**CreateHandoffTable**](createhandofftable.md) per creare una tabella con continuità. In genere, la tabella di continuità viene creata quando il parser registra il protocollo. Dopo che il protocollo è stato registrato, Network Monitor crea una tabella set uniforme che può essere utilizzata dal parser.
+Network Monitor le informazioni sul set di handoff nel file INI del parser, ma il parser non accede direttamente ai file INI. Per usare le informazioni nel set handoff, il parser chiama la [**funzione CreateHandoffTable**](createhandofftable.md) per creare una tabella handoff. In genere, la tabella handoff viene creata quando il parser registra il protocollo. Dopo la registrazione del protocollo, Network Monitor una tabella del set di handoff che può essere utilizzata dal parser.
 
-Il parser usa il set di continuità quando riconoscono i dati. Prima di tutto il parser legge il valore della proprietà che identifica il protocollo successivo. Il parser chiama quindi [**GetProtocolFromTable**](getprotocolfromtable.md) per ottenere un handle per il protocollo successivo. Infine, il parser restituisce un puntatore all'handle nel parametro *phNextProtocol* di [**RecognizeFrame**](recognizeframe.md).
+Il parser usa il set di handoff per il riconoscimento dei dati. Prima di tutto il parser legge il valore della proprietà che identifica il protocollo successivo. Il parser chiama quindi [**GetProtocolFromTable**](getprotocolfromtable.md) per ottenere un handle per il protocollo successivo. Infine, il parser restituisce un puntatore all'handle nel *parametro phNextProtocol* di [**RecognizeFrame.**](recognizeframe.md)
 
  
 

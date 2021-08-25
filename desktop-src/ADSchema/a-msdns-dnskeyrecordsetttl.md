@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DNS-DNSKEY-record-set-TTL
-description: Attributo che definisce il valore time-to-Live (TTL) assegnato ai record DNSKEY durante la firma della zona DNS.
+title: Attributo ms-DNS-DNSKEY-Record-Set-TTL
+description: Attributo che definisce il valore TTL assegnato ai record DNSKEY durante la firma della zona DNS.
 ms.assetid: 90f08d20-2e57-4751-ada1-0888b4be4533
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DNS-DNSKEY-record-set-TTL
-- msDNs-schema AD dell'attributo DNSKEYRecordSetTTL
+- Schema AD dell'attributo ms-DNS-DNSKEY-Record-Set-TTL
+- Schema AD dell'attributo msDNS-DNSKEYRecordSetTTL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02ff8fb91ad0c213658a52fb6730606a42582128
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b9ff62a3d4778610d654884f2b9a909f08810821eea8a1d2fbdd4795b88438f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924501"
 ---
-# <a name="ms-dns-dnskey-record-set-ttl-attribute"></a>attributo ms-DNS-DNSKEY-record-set-TTL
+# <a name="ms-dns-dnskey-record-set-ttl-attribute"></a>Attributo ms-DNS-DNSKEY-Record-Set-TTL
 
-Attributo che definisce il valore time-to-Live (TTL) assegnato ai record DNSKEY durante la firma della zona DNS.
+Attributo che definisce il valore TTL assegnato ai record DNSKEY durante la firma della zona DNS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-DNSKEY-record-set-TTL         |
-| LDAP-Display-Name | msDNs-DNSKEYRecordSetTTL             |
+| CN                | ms-DNS-DNSKEY-Record-Set-TTL         |
+| Ldap-Display-Name | msDNS-DNSKEYRecordSetTTL             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2139              |
-| System-ID-GUID    | 8f4e317f-28d7-442c-a6df-1f491f97b326 |
+| System-Id-Guid    | 8f4e317f-28d7-442c-a6df-1f491f97b326 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ Attributo che definisce il valore time-to-Live (TTL) assegnato ai record DNSKEY 
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 2592000                                  |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

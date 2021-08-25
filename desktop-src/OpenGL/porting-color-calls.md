@@ -1,40 +1,40 @@
 ---
-title: Chiamate di colore di porting
-description: Nella tabella seguente sono elencate le funzioni dei colori IRIS GL e le relative funzioni OpenGL equivalenti.
+title: Porting di chiamate a colori
+description: La tabella seguente elenca le funzioni di colore IRIS GL e le funzioni OpenGL equivalenti.
 ms.assetid: 4ca6c311-d6c8-4d10-9e9c-770a8e6de4bb
 keywords:
-- Porting di IRIS GL, colore
-- porting da IRIS GL, color
-- porting in OpenGL da IRIS GL, colore
-- Porting OpenGL da IRIS GL, colore
+- Portabilità IRIS GL, colore
+- porting from IRIS GL,color
+- porting to OpenGL from IRIS GL,color
+- Portabilità OpenGL da IRIS GL, colore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 856b9f9d0a62b866ac1c9981d9fbb716cf243341
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5e15774f66964c11527955b57651e69db26f6f3d3704d114fdfa4de9a0d5b97c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777051"
 ---
-# <a name="porting-color-calls"></a>Chiamate di colore di porting
+# <a name="porting-color-calls"></a>Porting di chiamate a colori
 
-Nella tabella seguente sono elencate le funzioni dei colori IRIS GL e le relative funzioni OpenGL equivalenti.
+La tabella seguente elenca le funzioni di colore IRIS GL e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL                  | OpenGL (funzione)                                                                                                                               | Significato                                              |
+| Funzione GL IRIS                  | Funzione OpenGL                                                                                                                               | Significato                                              |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | **c**                             | [glColor](glcolor-functions.md)                                                                                                              | Imposta il colore RGB.                                      |
 | **color**                         | [glIndex](glindex-functions.md)                                                                                                              | Imposta l'indice dei colori.                                |
-| **GetColor**                      | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( \_ indice corrente GL \_ )                                               | Restituisce l'indice dei colori corrente.                     |
+| **getcolor**                      | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ CURRENT \_ INDEX )                                               | Restituisce l'indice dei colori corrente.                     |
 | **getmcolor**                     |                                                                                                                                               | Ottiene una copia dei valori RGB per una voce della mappa colori. |
-| **gRGBcolor**                     | **glGet**( \_ colore corrente GL \_ )                                                                                                               | Ottiene i valori dei colori RGB correnti.                   |
+| **gRGBcolor**                     | **glGet**( GL \_ CURRENT \_ COLOR )                                                                                                               | Ottiene i valori di colore RGB correnti.                   |
 | **mapcolor**                      |                                                                                                                                               |                                                      |
-| **RGBcolor**                      | **glColor**                                                                                                                                   | Imposta il colore RGB.                                      |
-| **writemask**                     | [**glIndexMask**](glindexmask.md)                                                                                                            | Imposta la maschera colori della modalità di indice dei colori.                |
-| **wmpackRGBwritemask**<br/> | [**glColorMask**](glcolormask.md)                                                                                                            | Imposta la maschera della modalità colori RGB.                        |
-| **getwritemask**                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) (GL \_ Color \_ WRITEMASK)**glGet**(GL \_ index \_ WRITEMASK)<br/> | Ottiene la maschera dei colori.                                 |
-| **gRGBmask**                      | **glGet**(GL \_ Color \_ WRITEMASK)                                                                                                             | Ottiene la maschera dei colori.                                 |
+| **Colore RGB**                      | **glColor**                                                                                                                                   | Imposta il colore RGB.                                      |
+| **maschera di scrittura**                     | [**glIndexMask**](glindexmask.md)                                                                                                            | Imposta la maschera colori della modalità indice colori.                |
+| **wmpackRGBwritemask**<br/> | [**glColorMask**](glcolormask.md)                                                                                                            | Imposta la maschera della modalità colore RGB.                        |
+| **getwritemask**                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ COLOR \_ WRITEMASK )**glGet**( GL \_ INDEX \_ WRITEMASK )<br/> | Ottiene la maschera di colore.                                 |
+| **gRGBmask**                      | **glGet**( GL \_ COLOR \_ WRITEMASK )                                                                                                             | Ottiene la maschera di colore.                                 |
 | **zwritemask**                    | [**glDepthMask**](gldepthmask.md)                                                                                                            |                                                      |
 
 
@@ -43,11 +43,11 @@ Nella tabella seguente sono elencate le funzioni dei colori IRIS GL e le relativ
 
 > [!Note]
 >
-> Prestare attenzione quando si sostituisce **zwritemask** con [**glDepthMask**](gldepthmask.md); **glDepthMask** accetta un argomento booleano, mentre **zwritemask** accetta un campo di bit.
+> Prestare attenzione quando si **sostituisce zwritemask** [**con glDepthMask**](gldepthmask.md); **glDepthMask** accetta un argomento booleano, mentre **zwritemask** accetta un campo di bit.
 
  
 
-Se si desidera utilizzare più mappe a colori, è necessario utilizzare le funzioni mappa colori di Windows appropriate. Pertanto, **multimap**, **OneMap**, **getcmmode**, **setmap** e **GetMap** non dispongono di equivalenti OpenGL.
+Se si vogliono usare più mappe colori, è necessario usare le funzioni appropriate Windows mappa colori. Pertanto, **multimap**, **onemap**, **getcmmode**, **setmap** e **getmap** non hanno equivalenti OpenGL.
 
  
 

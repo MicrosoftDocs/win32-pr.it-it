@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentNoCurrentRecordException'
+description: Altre informazioni sul costruttore EsentNoCurrentRecordException
 title: Costruttore EsentNoCurrentRecordException
 TOCTitle: 'EsentNoCurrentRecordException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoCurrentRecordException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 775b17abcea59fb09023e91e89e868b5133a351b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa33c00fd10ca32fcd5173012217eed9a253a93223e2ff3245d926a65a083cf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733901"
 ---
 # <a name="esentnocurrentrecordexception-constructor"></a>Costruttore EsentNoCurrentRecordException
 
 Inizializza una nuova istanza della classe EsentNoCurrentRecordException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentNoCurrentRecordException()
 
 [Membri di EsentNoCurrentRecordException](./esentnocurrentrecordexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

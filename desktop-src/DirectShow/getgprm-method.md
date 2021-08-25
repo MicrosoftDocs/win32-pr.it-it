@@ -1,15 +1,15 @@
 ---
-description: Il metodo GetGPRM Recupera il registro del parametro generale specificato.
+description: Il metodo GetGPRM recupera il registro dei parametri generali specificato.
 ms.assetid: 66afd2a5-6aa1-4280-93cf-dd3cfed2499d
 title: Metodo GetGPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d82522f834a6f3bda8abefb492d5cc8b568872e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 33c46307f1cbec49b4916cdbd528c2b22cfb42bf89a06285c5c779339786599d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812561"
 ---
 # <a name="getgprm-method"></a>Metodo GetGPRM
 
@@ -18,7 +18,7 @@ ms.locfileid: "104522313"
 
  
 
-Il `GetGPRM` metodo recupera il registro del parametro generale specificato.
+Il `GetGPRM` metodo recupera il registro dei parametri generali specificato.
 
 ``` syntax
 [ iGPRM = ] MSWebDVD.GetGPRM(iIndex)
@@ -28,10 +28,10 @@ Il `GetGPRM` metodo recupera il registro del parametro generale specificato.
 
 <dl> <dt>
 
-<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
+<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*Iindex*
 </dt> <dd>
 
-Specifica il registro da recuperare come Integer. Il valore deve essere compreso tra 0 e 15.
+Specifica il registro da recuperare come integer. Il valore deve essere compreso tra 0 e 15.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Restituisce un valore intero che rappresenta il registro specificato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non è necessario per le funzionalità di navigazione o riproduzione DVD con l'oggetto **mswebdvd** . Viene fornito per gli utenti con una conoscenza approfondita della specifica DVD che desiderano implementare funzionalità avanzate. GPRMs può essere usato per contenere qualsiasi valore, in modo che possano essere impostati e letti liberamente. Tuttavia, poiché GPRMs vengono usati anche per archiviare i comandi del disco, la modifica dei valori usando [**SetGPRM**](setgprm-method.md) può causare un comportamento imprevedibile.
+Questo metodo non è necessario per le funzionalità di navigazione o riproduzione di DVD che usano **l'oggetto MSWebDVD.** Viene fornito per gli utenti con una conoscenza approfondita della specifica DVD che vogliono implementare funzionalità avanzate. Le GPPM possono essere usate per contenere qualsiasi valore, in modo che possano essere impostate e lette liberamente. Tuttavia, poiché le GPRM vengono usate anche per archiviare i comandi del disco, la modifica dei valori tramite [**SetGPRM**](setgprm-method.md) può comportare un comportamento imprevedibile.
 
 ## <a name="see-also"></a>Vedi anche
 

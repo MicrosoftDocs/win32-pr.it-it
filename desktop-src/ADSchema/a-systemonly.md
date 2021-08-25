@@ -1,10 +1,10 @@
 ---
-title: Attributo System-Only
-description: Valore booleano che specifica se solo Active Directory possibile modificare la classe. Solo le classi di sistema possono essere create o eliminate dall'agente del sistema di directory.
+title: System-Only attributo
+description: Valore booleano che specifica se solo Active Directory può modificare la classe. Le classi solo di sistema possono essere create o eliminate solo dall'agente di sistema directory.
 ms.assetid: 78d2da1f-bdf1-452b-bc64-78088f3630dd
 ms.tgt_platform: multiple
 keywords:
-- Schema AD System-Only attribute
+- System-Only schema AD dell'attributo
 - Schema AD dell'attributo systemOnly
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1310eb5f13da3c17c20ac9c01f337ff2a018a545
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e03c28707c2cc2d9070ff639dd9c9e9d934a0a5569e32ae40b067e639e6a21e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835862"
 ---
-# <a name="system-only-attribute"></a>Attributo System-Only
+# <a name="system-only-attribute"></a>System-Only attributo
 
-Valore booleano che specifica se solo Active Directory possibile modificare la classe. Solo le classi di sistema possono essere create o eliminate dall'agente del sistema di directory.
+Valore booleano che specifica se solo Active Directory può modificare la classe. Le classi solo di sistema possono essere create o eliminate solo dall'agente di sistema directory.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | System-Only                          |
-| LDAP-Display-Name | systemOnly                           |
+| Ldap-Display-Name | systemOnly                           |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.170               |
-| System-ID-GUID    | bf967a46-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a46-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -44,7 +44,7 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Valore booleano che specifica se solo Active Directory possibile modificare la c
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Vero                                                                                                      |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
