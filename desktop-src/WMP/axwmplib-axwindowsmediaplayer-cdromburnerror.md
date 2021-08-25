@@ -1,9 +1,9 @@
 ---
-title: Evento CdromBurnError dell'oggetto AxWindowsMediaPlayer
-description: L'evento CdromBurnError si verifica quando si verifica un errore generico durante un'operazione di masterizzazione del CD.
+title: Evento CdromError dell'oggetto AxWindowsMediaPlayer
+description: L'evento CdromError si verifica quando si verifica un errore generico durante un'operazione di masterizzazione cd.
 ms.assetid: 512a3417-c8f3-42c7-ab2e-bea35cadbd4e
 keywords:
-- Evento CdromBurnError dell'oggetto AxWindowsMediaPlayer Media Player Windows
+- Evento CdromError dell'oggetto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c27969ea83089b225ba92eb93854fc1dcde9bde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37ea2ca4c510685e8a9d23a3fdc507e055f30c8916c7bf8bbbfbb30a5c4591b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106323927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864741"
 ---
-# <a name="cdromburnerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromBurnError dell'oggetto AxWindowsMediaPlayer
+# <a name="cdromburnerror-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromError dell'oggetto AxWindowsMediaPlayer
 
-L'evento CdromBurnError si verifica quando si verifica un errore generico durante un'operazione di masterizzazione del CD.
+L'evento CdromError si verifica quando si verifica un errore generico durante un'operazione di masterizzazione cd.
 
 ``` syntax
 [C#]
@@ -41,14 +41,14 @@ Private Sub player_CdromBurnError(
 
 ## <a name="event-data"></a>Dati eventi
 
-Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_CdromBurnErrorEventHandler WMPOCXEvents**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnErrorEvent**, che contiene le seguenti proprietà correlate a questo evento.
+Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorErrorEventHandler**. Questo gestore riceve un argomento di tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromErrorErrorEvent**, che contiene le proprietà seguenti correlate a questo evento.
 
 
 
 | Proprietà   | Descrizione                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------|
-| hrError    | **System. Int32** Errore che ha generato l'evento.<br/>                                               |
-| pCdromBurn | Interfaccia WMPLib. IWMPCdromBurnThe che rappresenta l'operazione di masterizzazione che ha generato l'errore.<br/> |
+| errore hr    | **System.Int32** Errore che ha generato l'evento.<br/>                                               |
+| pCdromCombo | Interfaccia WMPLib.IWMPCdromThe che rappresenta l'operazione di compressione che ha generato l'errore.<br/> |
 
 
 
@@ -56,7 +56,7 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ \_CdromBurnErrorE
 
 ## <a name="remarks"></a>Commenti
 
-Per acquisire gli errori specifici del supporto, gestire AxWMPLib. \_ \_Evento CdromBurnMediaError WMPOCXEvents.
+Per acquisire errori specifici del supporto, gestire AxWMPLib. \_ Evento WMPOCXEvents \_ CdromMediaError.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,10 +77,10 @@ Per acquisire gli errori specifici del supporto, gestire AxWMPLib. \_ \_Evento C
 [**Oggetto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. CdromBurnMediaError (VB e C#)**](axwmplib-axwindowsmediaplayer-cdromburnmediaerror.md)
+[**Evento AxWindowsMediaPlayer.CdromMediaError (VB e C#)**](axwmplib-axwindowsmediaplayer-cdromburnmediaerror.md)
 </dt> <dt>
 
-[**Interfaccia IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaccia IWMPCdrom Sistema (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> </dl>
 
  

@@ -4,25 +4,25 @@ ms.assetid: b1747b7e-a505-4b23-93bc-cef4e77bf825
 title: Creazione di un HMAC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 364314081bd1d84d6d9bfff889c234470cc6775c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1eb600b00c0bfa3ac8af24cd297b1e2dd67933e2990216dafe84713ee5e831c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876668"
 ---
 # <a name="creating-an-hmac"></a>Creazione di un HMAC
 
 **Per calcolare un HMAC**
 
-1.  Ottenere un puntatore al provider del [*servizio di crittografia*](../secgloss/c-gly.md) (CSP) Microsoft chiamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
-2.  Creare un handle per un [](../secgloss/h-gly.md)[*oggetto hash*](../secgloss/h-gly.md) HMAC chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash). Passare CALG \_ HMAC nel parametro *algido* . Passare l'handle di una [*chiave simmetrica*](../secgloss/s-gly.md) nel parametro *HKEY* . Questa chiave simmetrica è la chiave utilizzata per calcolare il HMAC.
-3.  Specificare il tipo di hash da utilizzare chiamando [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam) con il parametro *dwParam* impostato sul valore HP \_ HMAC \_ info. Il parametro *pbData* deve puntare a una struttura [**di \_ informazioni HMAC**](/windows/desktop/api/Wincrypt/ns-wincrypt-hmac_info) inizializzata.
-4.  Chiamare [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata) per iniziare a calcolare il HMAC dei dati. La prima chiamata a **CryptHashData** fa sì che il valore della chiave venga combinato usando l'operatore XOR con la stringa interna e i dati. Viene generato un hash per il risultato dell'operazione XOR, quindi i dati di destinazione per HMAC (a cui fa riferimento il parametro *pbData* passato nella chiamata a **CryptHashData**) vengono sottoposizionati a hash. Se necessario, è possibile che vengano effettuate chiamate successive a **CryptHashData** per completare l'hashing dei dati di destinazione.
-5.  Chiamare [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam) con il parametro *DWPARAM* impostato su HP \_ HASHVAL. Questa chiamata fa sì che l'hash interno venga completato e che la stringa esterna venga combinata usando XOR con la chiave. Viene eseguito l'hashing del risultato dell'operazione XOR, quindi viene generato un hash per il risultato dell'hash interno (completato nel passaggio precedente). L'hash esterno viene quindi terminato e restituito nel parametro *pbData* e la lunghezza nel parametro *dwDataLen* .
+1.  Ottenere un puntatore a Microsoft [*Cryptographic Service Provider*](../secgloss/c-gly.md) (CSP) chiamando [**CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+2.  Creare un handle per un oggetto [*hash*](../secgloss/h-gly.md) [*HMAC*](../secgloss/h-gly.md)chiamando [**CryptCreateHash.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) Passare CALG \_ HMAC nel *parametro Algid.* Passare l'handle di [*una chiave simmetrica*](../secgloss/s-gly.md) nel *parametro hKey.* Questa chiave simmetrica è la chiave usata per calcolare HMAC.
+3.  Specificare il tipo di hash da usare chiamando [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam) con il *parametro dwParam* impostato sul valore HP \_ HMAC \_ INFO. Il *parametro pbData* deve puntare a una struttura [**HMAC INFO \_ inizializzata.**](/windows/desktop/api/Wincrypt/ns-wincrypt-hmac_info)
+4.  Chiamare [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata) per iniziare a calcolare il valore HMAC dei dati. La prima chiamata a **CryptHashData** fa sì che il valore della chiave sia combinato usando l'operatore XOR con la stringa interna e i dati. Viene eseguito l'hashing del risultato dell'operazione XOR e quindi viene eseguito l'hashing dei dati di destinazione per HMAC (a cui punta il parametro *pbData* passato nella chiamata a **CryptHashData).** Se necessario, è possibile effettuare chiamate successive a **CryptHashData** per completare l'hashing dei dati di destinazione.
+5.  Chiamare [**CryptGetHashParam con**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam) il *parametro dwParam* impostato su HP \_ HASHVAL. Questa chiamata fa sì che l'hash interno sia completato e che la stringa esterna sia combinata usando XOR con la chiave. Viene eseguito l'hashing del risultato dell'operazione XOR e quindi viene eseguito l'hashing del risultato dell'hash interno (completato nel passaggio precedente). L'hash esterno viene quindi completato e restituito nel *parametro pbData* e la lunghezza nel *parametro dwDataLen.*
 
 > [!Note]  
-> Non usare la stessa chiave [*simmetrica*](../secgloss/s-gly.md) ([*Session*](../secgloss/s-gly.md)) per la generazione di crittografia dei messaggi e di [*Message Authentication Code*](../secgloss/m-gly.md) (Mac). L'utilizzo della stessa chiave per entrambi aumenta significativamente il rischio che i messaggi vengano decodificati da utenti malintenzionati.
+> Non usare la stessa chiave [*simmetrica*](../secgloss/s-gly.md) ([*sessione*](../secgloss/s-gly.md)) per la crittografia dei messaggi [*e la Message Authentication Code*](../secgloss/m-gly.md) (MAC). L'uso della stessa chiave per entrambi aumenta notevolmente il rischio che i messaggi vengano decodificati da utenti malintenzionati.
 
  
 

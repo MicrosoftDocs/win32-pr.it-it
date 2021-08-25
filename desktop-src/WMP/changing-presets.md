@@ -1,32 +1,32 @@
 ---
-title: Modifica di set di impostazioni
-description: Modifica di set di impostazioni
+title: Modifica dei set di impostazioni
+description: Modifica dei set di impostazioni
 ms.assetid: f8a5565d-676b-4679-a4cb-4bd7551cf41c
 keywords:
-- Visualizzazioni, esempio Glow
-- Visualizzazioni personalizzate, esempio Glow
-- Guida per programmatori, visualizzazioni
-- esempi, visualizzazione bagliore
-- Esempio di visualizzazione bagliore
-- Visualizzazioni, set di impostazioni
-- Visualizzazioni personalizzate, set di impostazioni
-- impostazioni predefinite nelle visualizzazioni, esempio Glow
+- visualizzazioni,Esempio di alone
+- visualizzazioni personalizzate,Esempio di alone
+- guida alla programmazione, visualizzazioni
+- esempi, visualizzazione Alone
+- Esempio di visualizzazione alone
+- visualizzazioni, set di impostazioni
+- visualizzazioni personalizzate, set di impostazioni
+- set di impostazioni nelle visualizzazioni,Esempio di alone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95d24841c95c3fc1029aa0c405e90b329799fdbe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03828614093836c5f9a3b422167b62f11b8f2489eb30556d42a2d80495935ec5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863911"
 ---
-# <a name="changing-presets"></a>Modifica di set di impostazioni
+# <a name="changing-presets"></a>Modifica dei set di impostazioni
 
-Le sezioni di codice del set di impostazioni seguenti sono state modificate per consentire tre set di impostazioni:
+Le sezioni di codice predefinite seguenti sono state modificate per consentire tre set di impostazioni:
 
 ## <a name="getpresettitle"></a>GetPresetTitle
 
-Questo codice è stato inserito al posto del codice del set di impostazioni generato:
+Questo codice è stato inserito al posto del codice predefinito generato:
 
 
 ```C++
@@ -51,7 +51,7 @@ Questo codice è stato inserito al posto del codice del set di impostazioni gene
 
 ## <a name="enumerations"></a>Enumerazioni
 
-L'enumerazione seguente in Glow. h è stata modificata in modo da consentire tre set di impostazioni:
+L'enumerazione seguente in Alone.h è stata modificata per consentire tre set di impostazioni:
 
 
 ```C++
@@ -68,7 +68,7 @@ enum {
 
 ## <a name="resource-header"></a>Intestazione della risorsa
 
-Le risorse seguenti sono state definite in Resource. h per consentire tre set di impostazioni:
+Le risorse seguenti sono state definite in Resource.h per consentire tre set di impostazioni:
 
 
 ```C++
@@ -80,11 +80,11 @@ Le risorse seguenti sono state definite in Resource. h per consentire tre set di
 
 
 
-Si noti che è necessario modificare anche il numero di risorsa del **\_ \_ \_ \_ valore SYMED successivo di APS** in 106.
+Si noti che è anche necessario modificare il numero di **\_ risorsa piattaforma di strumenti analitici NEXT \_ \_ SYMED \_ VALUE** in 106.
 
 ## <a name="resource-file"></a>File di risorse
 
-È necessario modificare le seguenti stringhe nel file Glowdll. RC per consentire tre set di impostazioni e assegnare loro i nomi:
+Le stringhe seguenti devono essere modificate nel file Alonedll.rc per consentire tre set di impostazioni e assegnare loro i nomi:
 
 
 ```C++
@@ -100,12 +100,12 @@ Si noti che è necessario modificare anche il numero di risorsa del **\_ \_ \_ \
 
 <dl> <dt>
 
-[**Esempio Glow**](the-glow-sample.md)
+[**Esempio di alone**](the-glow-sample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

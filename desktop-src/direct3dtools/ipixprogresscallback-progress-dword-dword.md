@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixProgressCallback\_Progress\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IPixProgressCallback::P metodo rogress
+title: Metodo IPixProgressCallback::P rogress
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: BE74599B-C98F-4BDB-ACDF-641F77A35EEB
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 0379ad6fcb5f97825469c97af38453e55585d005
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0bcf3ce7e443d2fb7964f07effdac8648edc652c48c8110fa8574bd62e3d9a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845321"
 ---
-# <a name="span-idvspixengineipixprogresscallback_progress_dword_dwordspanipixprogresscallbackprogress-method"></a><span id="vspixengine.ipixprogresscallback_progress_dword_dword"></span>IPixProgressCallback::P metodo rogress
+# <a name="span-idvspixengineipixprogresscallback_progress_dword_dwordspanipixprogresscallbackprogress-method"></a><span id="vspixengine.ipixprogresscallback_progress_dword_dword"></span>Metodo IPixProgressCallback::P rogress
 
 Callback che notifica all'host lo stato di avanzamento di una richiesta associata.
 
@@ -40,19 +40,19 @@ HRESULT Progress(
 
 ## <a name="parameters"></a>Parametri
 
-*corrente*   
+*Corrente*   
 Parte di una richiesta completata, come conteggio del numero di passaggi completati.
 
-*maxSize*   
-Il numero totale di passaggi per completare la richiesta.
+*Maxsize*   
+Numero totale di passaggi per completare la richiesta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

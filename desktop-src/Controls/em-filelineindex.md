@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_FILELINEINDEX (CommCtrl. h)
-description: Ottiene l'indice dei caratteri del primo carattere di una riga specificata in un controllo di modifica su più righe, indipendentemente dalla modalità di visualizzazione delle linee sullo schermo.
+title: EM_FILELINEINDEX messaggio (CommCtrl.h)
+description: Ottiene l'indice dei caratteri del primo carattere di una riga specificata in un controllo di modifica su più righe, indipendentemente dalla modalità di visualizzazione delle righe sullo schermo.
 ms.assetid: vs|controls|~\controls\editcontrols\editcontrolreference\editcontrolmessages\em_lineindex.htm
 keywords:
-- Controlli di Windows Message EM_FILELINEINDEX
+- EM_FILELINEINDEX di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4ce5f5ca07fc9fb9869898965422c7c8a6aa3fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df7c4bd1f21ee6bcdf7bec56828ea9c2996c837def614c0c537ef83ee053ebfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915611"
 ---
-# <a name="em_filelineindex-message-commctrlh"></a>Messaggio EM_FILELINEINDEX (CommCtrl. h)
+# <a name="em_filelineindex-message-commctrlh"></a>EM_FILELINEINDEX messaggio (CommCtrl.h)
 
-Ottiene l'indice dei caratteri del primo carattere di una riga specificata in un controllo di modifica su più righe, indipendentemente dalla modalità di visualizzazione delle linee sullo schermo. Un indice dei caratteri è l'indice in base zero del carattere a partire dall'inizio del controllo di modifica.
+Ottiene l'indice dei caratteri del primo carattere di una riga specificata in un controllo di modifica su più righe, indipendentemente dalla modalità di visualizzazione delle righe sullo schermo. Un indice di caratteri è l'indice in base zero del carattere dall'inizio del controllo di modifica.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Ottiene l'indice dei caratteri del primo carattere di una riga specificata in un
 *wParam* 
 </dt> <dd>
 
-Numero di riga in base zero. Il valore-1 specifica il numero di riga corrente, ovvero la riga che contiene il punto di inserimento.
+Numero di riga in base zero. Il valore -1 specifica il numero di riga corrente (la riga che contiene il punto di interruzione).
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice dei caratteri della riga specificata nel parametro *wParam* , indipendentemente dalla modalità di visualizzazione delle linee sullo schermo, oppure-1 se il numero di riga specificato è maggiore del numero di righe nel controllo di modifica.
+Il valore restituito è l'indice dei caratteri della riga specificata nel *parametro wParam,* indipendentemente dalla modalità di visualizzazione delle righe sullo schermo oppure è -1 se il numero di riga specificato è maggiore del numero di righe nel controllo di modifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito è l'indice dei caratteri della riga specificata nel parame
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10, 1809 \[\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2019\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop 1809 \[\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2019 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore restituito è l'indice dei caratteri della riga specificata nel parame
 
 <dl> <dt>
 
-[**\_FILELINEFROMCHAR em**](em-filelinefromchar.md)
+[**EM \_ FILELINEFROMCHAR**](em-filelinefromchar.md)
 </dt> </dl>
 
  

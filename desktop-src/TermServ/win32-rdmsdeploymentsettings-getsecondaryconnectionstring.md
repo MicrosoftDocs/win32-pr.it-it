@@ -1,12 +1,12 @@
 ---
-title: Metodo GetSecondaryConnectionString della classe Win32_RDMSDeploymentSettings
-description: Recupera la stringa di connessione secondaria del database a livello di distribuzione, che può essere utilizzata per supportare la scadenza della password.
+title: Metodo GetSecondaryConnectionString della Win32_RDMSDeploymentSettings classe
+description: Recupera la stringa di connessione secondaria del database a livello di distribuzione, che può essere usata per supportare la scadenza della password.
 ms.assetid: 0de02752-6cbf-4c21-b752-a57ed58aeef1
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetSecondaryConnectionString
-- Metodo GetSecondaryConnectionString Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo GetSecondaryConnectionString
+- Metodo GetSecondaryConnectionString Servizi Desktop remoto
+- Metodo GetSecondaryConnectionString Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto metodo , GetSecondaryConnectionString
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c09f4fcacabbe928fcda00447e252077bd8a51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac54d0d5ce9207070d03028ba53175d964e93d77a93d51b28345089fcea99dcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868311"
 ---
-# <a name="getsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetSecondaryConnectionString della \_ classe RDMSDeploymentSettings Win32
+# <a name="getsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo GetSecondaryConnectionString della classe \_ WIN32 RDMSDeploymentSettings
 
-Recupera la stringa di connessione secondaria del database a livello di distribuzione, che può essere utilizzata per supportare la scadenza della password.
+Recupera la stringa di connessione secondaria del database a livello di distribuzione, che può essere usata per supportare la scadenza della password.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ uint32 GetSecondaryConnectionString(
 
 <dl> <dt>
 
-*SecondaryConnectionString* \[ out\]
+*SecondaryConnectionString* \[ Cambio\]
 </dt> <dd>
 
 Stringa di connessione da recuperare
@@ -52,7 +52,7 @@ Stringa di connessione da recuperare
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

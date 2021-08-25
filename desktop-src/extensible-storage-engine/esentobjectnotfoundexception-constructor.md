@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentObjectNotFoundException'
+description: Altre informazioni sul costruttore EsentObjectNotFoundException
 title: Costruttore EsentObjectNotFoundException
 TOCTitle: 'EsentObjectNotFoundException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentObjectNotFoundException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb644bec98944cb535fb1c9b7f3d9669ade64396
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6266026525b7a6c9ef3465b1d70634da3f287dc076ee084adbbb559a5a876786
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851881"
 ---
 # <a name="esentobjectnotfoundexception-constructor"></a>Costruttore EsentObjectNotFoundException
 
 Inizializza una nuova istanza della classe EsentObjectNotFoundException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentObjectNotFoundException()
 
 [Membri di EsentObjectNotFoundException](./esentobjectnotfoundexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore di classe per questo filtro.
 ms.assetid: f0559437-5d0d-4522-a3dc-947e3494b576
-title: Metodo CPersistStream. GetClassID (pStream. h)
+title: Metodo CPersistStream.GetClassID (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7603541eae4f431327a91777488a740afb7f628b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e500b91453bd7c9d76f243939a98b0779f1873ed7b5f79128e639173710e62de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915561"
 ---
-# <a name="cpersiststreamgetclassid-method"></a>CPersistStream. GetClassID, metodo
+# <a name="cpersiststreamgetclassid-method"></a>Metodo CPersistStream.GetClassID
 
 Recupera l'identificatore di classe per questo filtro.
 
@@ -45,13 +45,13 @@ HRESULT GetClassID(
 *pClsID* 
 </dt> <dd>
 
-Puntatore a una struttura CLSID. Copiare l'ID della classe qui.
+Puntatore a una struttura CLSID. Copiare l'ID classe qui.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

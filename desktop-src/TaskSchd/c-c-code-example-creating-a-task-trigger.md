@@ -1,19 +1,19 @@
 ---
 title: Esempio di codice C/C++ creazione di un trigger di attività
-description: Questo esempio crea un nuovo trigger per un'attività esistente denominata attività di test.
+description: In questo esempio viene creato un nuovo trigger per un'attività esistente denominata Attività di test.
 ms.assetid: 94755ec0-4b65-4adb-8074-9a0990e26e3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00f7f846992d9d5a149230414a9b954198c06b2e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9fb9fd30dba24ea101c968f1b84e18d7fad584e61c6087a08ac1150c93fdc351
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959641"
 ---
-# <a name="cc-code-example-creating-a-task-trigger"></a>Esempio di codice C/C++: creazione di un trigger di attività
+# <a name="cc-code-example-creating-a-task-trigger"></a>Esempio di codice C/C++: Creazione di un trigger di attività
 
-Questo esempio crea un nuovo trigger per un'attività esistente denominata attività di test.
+In questo esempio viene creato un nuovo trigger per un'attività esistente denominata Attività di test.
 
 
 ```C++
@@ -174,12 +174,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,23 +1,23 @@
 ---
 description: 'Gli esempi seguenti illustrano come usare la gestione delle eccezioni strutturata nel codice:'
 ms.assetid: 1e4f9cd8-11c6-4dc2-883c-7de02375d7ed
-title: Uso della gestione strutturata delle eccezioni
+title: Uso della gestione delle eccezioni strutturata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fb90a3efacffe2e14b4d588b33af1e31b66a6b4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b16cba3c3d33386c136a716ed5ed3254b9d479f2d3cc0082da929aede19d5d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912331"
 ---
-# <a name="using-structured-exception-handling"></a>Uso della gestione strutturata delle eccezioni
+# <a name="using-structured-exception-handling"></a>Uso della gestione delle eccezioni strutturata
 
 Gli esempi seguenti illustrano come usare la gestione delle eccezioni strutturata nel codice:
 
--   [Uso di un gestore di eccezioni](using-an-exception-handler.md)
+-   [Uso di un gestore eccezioni](using-an-exception-handler.md)
 -   [Uso di un gestore di terminazione](using-a-termination-handler.md)
--   [Uso di un gestore di eccezioni con vettori](using-a-vectored-exception-handler.md)
+-   [Uso di un gestore di eccezioni vettoriali](using-a-vectored-exception-handler.md)
 
  
 

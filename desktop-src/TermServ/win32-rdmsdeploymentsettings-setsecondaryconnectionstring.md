@@ -1,12 +1,12 @@
 ---
-title: Metodo SetSecondaryConnectionString della classe Win32_RDMSDeploymentSettings
+title: Metodo SetSecondaryConnectionString della Win32_RDMSDeploymentSettings classe
 description: Imposta la stringa di connessione secondaria del database a livello di distribuzione.
 ms.assetid: 154c495e-564e-4d90-a4ff-de683d41aa73
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetSecondaryConnectionString
-- Metodo SetSecondaryConnectionString Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, metodo SetSecondaryConnectionString
+- Metodo SetSecondaryConnectionString Servizi Desktop remoto
+- Metodo SetSecondaryConnectionString Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto, metodo SetSecondaryConnectionString
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8060a6f2676b5599bf44672e79ebf48e64e354
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeb43f0317f4a31733cf0c0f7b5b578234e14b50dc8976df096e5b9b0b3426d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868251"
 ---
-# <a name="setsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetSecondaryConnectionString della \_ classe RDMSDeploymentSettings Win32
+# <a name="setsecondaryconnectionstring-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetSecondaryConnectionString della classe \_ RDMSDeploymentSettings Win32
 
 Imposta la stringa di connessione secondaria del database a livello di distribuzione.
 
@@ -43,7 +43,7 @@ uint32 SetSecondaryConnectionString(
 
 <dl> <dt>
 
-*SecondaryConnectionString* \[ in\]
+*SecondaryConnectionString* \[ Pollici\]
 </dt> <dd>
 
 Stringa di connessione da impostare
@@ -52,7 +52,7 @@ Stringa di connessione da impostare
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

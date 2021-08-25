@@ -1,7 +1,7 @@
 ---
-description: Si verifica quando il cursore viene spostato sul digitalizzatore del tablet.
+description: Si verifica quando il cursore si sposta sul digitalizzatore del tablet.
 ms.assetid: cd2863af-59a9-4dd0-a679-84861a70ef53
-title: 'Metodo ITabletEventSink:: CursorMove'
+title: Metodo ITabletEventSink::CursorMove
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f6950e0b30c1b8fc8ccf3e60a8aaa05b9eeb3215
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 030fa5ba4adc725288d5135ccd24409d4fc02cddbc16da52aa375a275a73be5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119843491"
 ---
-# <a name="itableteventsinkcursormove-method"></a>Metodo ITabletEventSink:: CursorMove
+# <a name="itableteventsinkcursormove-method"></a>Metodo ITabletEventSink::CursorMove
 
-Si verifica quando il cursore viene spostato sul digitalizzatore del tablet.
+Si verifica quando il cursore si sposta sul digitalizzatore del tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ HRESULT CursorMove(
 
 <dl> <dt>
 
-*TCID* 
+*Tcid* 
 </dt> <dd>
 
-Dentifier univoco del digitalizzatore del tablet.
+Identificatore univoco del digitalizzatore tablet.
 
 </dd> <dt>
 
-*CID* 
+*Cid* 
 </dt> <dd>
 
 Identificatore univoco dello stilo del tablet.
@@ -61,7 +61,7 @@ Identificatore univoco dello stilo del tablet.
 *hWnd* 
 </dt> <dd>
 
-Finestra su cui è stato spostato il cursore.
+Finestra sulla quale è stato spostato il cursore.
 
 </dd> <dt>
 
@@ -87,8 +87,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -100,7 +100,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

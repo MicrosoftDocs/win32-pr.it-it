@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETGROUPINFOBYINDEX (COMmctrl. h)
-description: Ottiene informazioni su un gruppo specificato. Inviare questo messaggio in modo esplicito o utilizzando la \_ macro GetGroupInfoByIndex di ListView.
+title: LVM_GETGROUPINFOBYINDEX messaggio (Commctrl.h)
+description: Ottiene informazioni su un gruppo specificato. Inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetGroupInfoByIndex.
 ms.assetid: vs|controls|~\controls\listview\messages\lvm_getgroupinfobyindex.htm
 keywords:
-- Controlli di Windows Message LVM_GETGROUPINFOBYINDEX
+- LVM_GETGROUPINFOBYINDEX di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cff801eae55ab4b4194ef23e624ff6eff75fbc25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 482683e9d1026c1deed17bf1f05310d63ac2127a6a2a6f32b5b5d95a0fbbea3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877401"
 ---
-# <a name="lvm_getgroupinfobyindex-message"></a>\_Messaggio GETGROUPINFOBYINDEX LVM
+# <a name="lvm_getgroupinfobyindex-message"></a>Messaggio LVM \_ GETGROUPINFOBYINDEX
 
-Ottiene informazioni su un gruppo specificato. Inviare questo messaggio in modo esplicito o utilizzando la macro [**\_ GetGroupInfoByIndex di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getgroupinfobyindex) .
+Ottiene informazioni su un gruppo specificato. Inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView GetGroupInfoByIndex.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getgroupinfobyindex)
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
 Indice del gruppo.
 
 </dd> <dt>
 
-*lParam* \[ in uscita\]
+*lParam* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup) per ricevere informazioni sul gruppo specificato da *wParam*. Il processo chiamante è responsabile dell'allocazione della memoria per la struttura e di tutti i buffer nella struttura, ad esempio quella a cui fa riferimento il membro **pszHeader** . Impostare qualsiasi membro contingente della struttura, ad esempio **cchHeader** , la dimensione del buffer a cui punta **pszHeader** in **WCHAR** , incluso il **null** di terminazione. Impostare **cbSize** su sizeof (LVGROUP).
+Puntatore a una [**struttura LVGROUP**](/windows/win32/api/commctrl/ns-commctrl-lvgroup) per ricevere informazioni sul gruppo specificato da *wParam.* Il processo chiamante è responsabile dell'allocazione della memoria per la struttura e per tutti i buffer nella struttura, ad esempio quello a cui punta **il membro pszHeader.** Impostare tutti i membri contingenti della struttura, ad esempio **cchHeader,** le dimensioni del buffer a cui punta **pszHeader** nei **WCHAR,** incluso il valore NULL di **terminazione.** Impostare **cbSize** su sizeof(LVGROUP).
 
 Il ricevitore del messaggio è responsabile dell'impostazione dei membri della struttura con le informazioni per il gruppo specificato da *wParam*.
 
@@ -47,7 +47,7 @@ Il ricevitore del messaggio è responsabile dell'impostazione dei membri della s
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

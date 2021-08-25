@@ -1,9 +1,9 @@
 ---
-title: Messaggio PSM_SETCURSELID (Prsht. h)
-description: Attiva la pagina specificata in una finestra delle proprietà in base all'identificatore di risorsa della pagina. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro PropSheet SetCurSelByID.
+title: PSM_SETCURSELID messaggio (Prsht.h)
+description: Attiva la pagina specificata in una finestra delle proprietà in base all'identificatore di risorsa della pagina. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro PropSheet SetCurSelByID.
 ms.assetid: 6db5f6ab-77ce-4a80-a84d-cb66eb1cdeaa
 keywords:
-- Controlli di Windows Message PSM_SETCURSELID
+- PSM_SETCURSELID di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9da6ec827bbf3b9bade0af649f124d25c420d299
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7be1d21b5153d480e409c6e9e7f4204746b5509b058bc292509e24ad9e03b538
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877021"
 ---
-# <a name="psm_setcurselid-message"></a>\_Messaggio SETCURSELID di PSM
+# <a name="psm_setcurselid-message"></a>Messaggio \_ SETCURSELID PSM
 
-Attiva la pagina specificata in una finestra delle proprietà in base all'identificatore di risorsa della pagina. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**PropSheet \_ SetCurSelByID**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcurselbyid) .
+Attiva la pagina specificata in una finestra delle proprietà in base all'identificatore di risorsa della pagina. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ PropSheet SetCurSelByID.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcurselbyid)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,11 +45,11 @@ Identificatore di risorsa della pagina da attivare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La finestra che sta per perdere l'attivazione riceve il codice di notifica [ \_ KILLACTIVE PSN](psn-killactive.md) e la finestra che sta ottenendo l'attivazione riceve il codice di notifica [ \_ seattivo PSN](psn-setactive.md) .
+La finestra che perde l'attivazione riceve il codice di notifica [PSN \_ KILLACTIVE](psn-killactive.md) e la finestra che sta ricevendo l'attivazione riceve il codice di notifica [PSN \_ SETACTIVE.](psn-setactive.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ La finestra che sta per perdere l'attivazione riceve il codice di notifica [ \_ 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

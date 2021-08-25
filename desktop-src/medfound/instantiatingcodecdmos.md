@@ -1,25 +1,25 @@
 ---
-description: Creazione di un'istanza di codec DMOs
+description: Creazione di istanze di dmo codec
 ms.assetid: e031d0d4-dd70-409e-8a2e-5a1433fe909e
-title: Creazione di un'istanza di codec DMOs
+title: Creazione di istanze di dmo codec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d7b98848b3e3fee5b3c28389294869eb39005c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 180fcb6a3de7c581f48c7f78981e12b544963cbfb590e521d43413732bcc1e7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957551"
 ---
-# <a name="instantiating-codec-dmos"></a>Creazione di un'istanza di codec DMOs
+# <a name="instantiating-codec-dmos"></a>Creazione di istanze di dmo codec
 
-È possibile creare un codec DMO chiamando la funzione com [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) . È necessario passare l'identificatore di classe di DMO, l'identificatore di interfaccia di **IMediaObject** e un puntatore a un puntatore **IMediaObject** .
+È possibile creare un codec DMO chiamando la funzione COM [**CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) È necessario passare l'identificatore di classe del DMO, l'identificatore di interfaccia **di IMediaObject** e un puntatore a un **puntatore IMediaObject.**
 
-Gli identificatori di classe del codec DMOs sono definiti come costanti nel file di intestazione wmcodecdsp. h.
+Gli identificatori di classe dei DMO del codec sono definiti come costanti nel file di intestazione wmcodecdsp.h.
 
-La costante per l'identificatore di interfaccia **IMediaObject** è IID \_ IMediaObject.
+La costante per **l'identificatore di interfaccia IMediaObject** è IID \_ IMediaObject.
 
-Nell'esempio di codice seguente viene illustrato come creare un'istanza di un codec DMO:
+L'esempio di codice seguente illustra come creare un'istanza di un codec DMO:
 
 
 ```
@@ -42,7 +42,7 @@ HRESULT CreateVideoEncoderDMO(IMediaObject** ppDMO)
 
 <dl> <dt>
 
-[Uso di codec DMOs](workingwithcodecdmos.md)
+[Uso degli oggetti DMO codec](workingwithcodecdmos.md)
 </dt> </dl>
 
  

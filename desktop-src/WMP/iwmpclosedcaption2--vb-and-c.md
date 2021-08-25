@@ -1,10 +1,10 @@
 ---
-title: Interfaccia IWMPClosedCaption2 (VB e C) (WMP. h)
-description: Fornisce proprietà e metodi per la didascalia chiusa che integrano l'interfaccia IWMPClosedCaption. Oltre alle proprietà ereditate da IWMPClosedCaption, l'interfaccia IWMPClosedCaption2 espone le proprietà seguenti.
+title: Interfaccia IWMPClosedCaption2 (VB e C ) (Wmp.h)
+description: Fornisce proprietà e metodi per i sottotitoli codificati che integrano l'interfaccia IWMPClosedCaption. Oltre alle proprietà ereditate da IWMPClosedCaption, l'interfaccia IWMPClosedCaption2 espone le proprietà seguenti.
 ms.assetid: e34ea819-dc1a-48f3-9e55-cf2217379ddb
 keywords:
 - Interfaccia IWMPClosedCaption2 (VB e C) Windows Media Player
-- Interfaccia IWMPClosedCaption2 (VB e C) Windows Media Player, descritta
+- Interfaccia IWMPClosedCaption2 (VB e C) Windows Media Player , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,29 +15,29 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dbf81cef3734a6466b6fd177ccc87a38c5c7085
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e955feacd9447327ee003d3e4db535643be1bcd286f7ff24737df8c4b53b149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862461"
 ---
 # <a name="iwmpclosedcaption2-vb-and-c-interface"></a>Interfaccia IWMPClosedCaption2 (VB e C#)
 
-Fornisce proprietà e metodi per la didascalia chiusa che integrano l'interfaccia **IWMPClosedCaption** .
+Fornisce proprietà e metodi per i sottotitoli codificati che integrano **l'interfaccia IWMPClosedCaption.**
 
-Oltre alle proprietà ereditate da **IWMPClosedCaption**, l'interfaccia **IWMPClosedCaption2** espone le proprietà seguenti.
+Oltre alle proprietà ereditate da **IWMPClosedCaption,** **l'interfaccia IWMPClosedCaption2** espone le proprietà seguenti.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMPClosedCaption2 (VB e C#)** presenta questi tipi di membri:
+**L'interfaccia IWMPClosedCaption2 (VB e C#)** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMPClosedCaption2 (VB e C#)** presenta questi metodi.
+**L'interfaccia IWMPClosedCaption2 (VB e C#)** ha questi metodi.
 
 
 
@@ -53,7 +53,7 @@ L'interfaccia **IWMPClosedCaption2 (VB e C#)** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IWMPClosedCaption2 (VB e C#)** presenta queste proprietà.
+**L'interfaccia IWMPClosedCaption2 (VB e C#)** ha queste proprietà.
 
 
 
@@ -66,7 +66,7 @@ L'interfaccia **IWMPClosedCaption2 (VB e C#)** presenta queste proprietà.
 
  
 
-Ottenere un'interfaccia **IWMPClosedCaption2** eseguendo il cast del valore restituito dalla proprietà [**AxWindowsMediaPlayer. closedCaption**](axwmplib-axwindowsmediaplayer-closedcaption--vb-and-c.md) .
+Ottenere **un'interfaccia IWMPClosedCaption2** eseguendo il cast del valore restituito dalla [**proprietà AxWindowsMediaPlayer.closedCaption.**](axwmplib-axwindowsmediaplayer-closedcaption--vb-and-c.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Ottenere un'interfaccia **IWMPClosedCaption2** eseguendo il cast del valore rest
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Ottenere un'interfaccia **IWMPClosedCaption2** eseguendo il cast del valore rest
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati a supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfacce per Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)

@@ -1,5 +1,5 @@
 ---
-description: Fornisce la funzionalità per ottenere IMFDXGIDeviceManager dall'Microsoft Media Foundation sink di rendering video.
+description: Fornisce la funzionalità per ottenere IMFDXGIDeviceManager dal sink Microsoft Media Foundation rendering video.
 ms.assetid: 80078ed6-61cc-4fb9-8fd5-eda78cd5be30
 title: Interfaccia IMFDXGIDeviceManagerSource
 ms.topic: reference
@@ -13,32 +13,32 @@ api_type:
 - COM
 api_location:
 - mfidl.h
-ms.openlocfilehash: 669ec840a3122172147840052bd1dbf5c940569d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c75b2a691bfe9fcbda453fd49a29fcfd2ff640346f0e3c13a34418995439f4df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957851"
 ---
 # <a name="imfdxgidevicemanagersource-interface"></a>Interfaccia IMFDXGIDeviceManagerSource
 
-Fornisce la funzionalità per ottenere [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) dall'Microsoft Media Foundation sink di rendering video.
+Fornisce la funzionalità per ottenere [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) dal sink Microsoft Media Foundation rendering video.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IMFDXGIDeviceManagerSource** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IMFDXGIDeviceManagerSource** dispone anche di questi tipi di membri:
+**L'interfaccia IMFDXGIDeviceManagerSource** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IMFDXGIDeviceManagerSource** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IMFDXGIDeviceManagerSource** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IMFDXGIDeviceManagerSource.**
 
 
 
 | Metodo                                                      | Descrizione                                                                                                              |
 |:------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| [**GetManager**](imfdxgidevicemanagersource-getmanager.md) | Ottiene [**IMFDXGIDeviceManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) dal sink di rendering del video Media Foundation.<br/> |
+| [**GetManager**](imfdxgidevicemanagersource-getmanager.md) | Ottiene [**IMFDXGIDeviceManager dal**](/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager) sink Media Foundation rendering video.<br/> |
 
 
 
@@ -50,9 +50,9 @@ L'interfaccia **IMFDXGIDeviceManagerSource** dispone di questi metodi.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                       |
-| IDL<br/>                      | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                       |
+| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ L'interfaccia **IMFDXGIDeviceManagerSource** dispone di questi metodi.
 
 <dl> <dt>
 
-[Interfacce di Media Foundation](media-foundation-interfaces.md)
+[Media Foundation interfacce](media-foundation-interfaces.md)
 </dt> </dl>
 
  

@@ -1,27 +1,27 @@
 ---
-description: Questa sezione contiene un esempio che illustra la creazione di un metafile avanzato archiviato su un disco, usando un nome file specificato dall'utente.
+description: Questa sezione contiene un esempio che illustra la creazione di un metafile avanzato archiviato su disco, usando un nome file specificato dall'utente.
 ms.assetid: 084b2737-eb55-4587-b8e8-3eb3fa3688c4
 title: Creazione di un metafile avanzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4877481ed0a68d6379e7eaabb00bbe37cef74c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e53266ac0677da211308c7028f4d61869fc2890f27c06daeff9cfb6fea87e58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849231"
 ---
 # <a name="creating-an-enhanced-metafile"></a>Creazione di un metafile avanzato
 
-Questa sezione contiene un esempio che illustra la creazione di un metafile avanzato archiviato su un disco, usando un nome file specificato dall'utente.
+Questa sezione contiene un esempio che illustra la creazione di un metafile avanzato archiviato su disco, usando un nome file specificato dall'utente.
 
-Nell'esempio viene usato un contesto di dispositivo per la finestra dell'applicazione come contesto di dispositivo di riferimento. Il sistema archivia i dati di risoluzione per questo dispositivo nell'intestazione del metafile avanzato. L'applicazione recupera un handle che identifica il contesto di dispositivo chiamando la funzione [**GetDC**](/windows/desktop/api/Winuser/nf-winuser-getdc) .
+Nell'esempio viene utilizzato un contesto di dispositivo per la finestra dell'applicazione come contesto di dispositivo di riferimento. Il sistema archivia i dati di risoluzione per questo dispositivo nell'intestazione del metafile avanzato. L'applicazione recupera un handle che identifica questo contesto di dispositivo chiamando la [**funzione GetDC.**](/windows/desktop/api/Winuser/nf-winuser-getdc)
 
-Nell'esempio vengono utilizzate le dimensioni dell'area client dell'applicazione per definire le dimensioni del frame immagine. Utilizzando le dimensioni del rettangolo restituite dalla funzione [**GetClientRect**](/windows/win32/api/winuser/nf-winuser-getclientrect) , l'applicazione converte le unità del dispositivo in unità .01-millimetri e passa i valori convertiti alla funzione [**CreateEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea) .
+Nell'esempio vengono utilizzate le dimensioni dell'area client dell'applicazione per definire le dimensioni della cornice dell'immagine. Usando le dimensioni del rettangolo restituite dalla funzione [**GetClientRect,**](/windows/win32/api/winuser/nf-winuser-getclientrect) l'applicazione converte le unità del dispositivo in unità da 0,01 millimetri e passa i valori convertiti alla [**funzione CreateEnhMetaFile.**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea)
 
-Nell'esempio viene visualizzata la finestra di dialogo **Salva come** comune che consente all'utente di specificare il nome file del nuovo Metafile avanzato. Il sistema aggiunge l'estensione EMF a tre caratteri al nome del file e passa il nome alla funzione [**CreateEnhMetaFile**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea) .
+Nell'esempio viene **visualizzata una** finestra di dialogo comune Salva con nome che consente all'utente di specificare il nome file del nuovo metafile avanzato. Il sistema aggiunge l'estensione emf di tre caratteri a questo nome file e passa il nome alla [**funzione CreateEnhMetaFile.**](/windows/desktop/api/Wingdi/nf-wingdi-createenhmetafilea)
 
-Nell'esempio viene incorporata anche una descrizione testuale dell'immagine nell'intestazione Enhanced-Metafile. Questa descrizione viene specificata come risorsa nella tabella di stringhe del file di risorse dell'applicazione. Tuttavia, in un'applicazione funzionante questa stringa verrebbe recuperata da un controllo personalizzato in una finestra di dialogo comune o da una finestra di dialogo separata visualizzata esclusivamente a questo scopo.
+L'esempio incorpora anche una descrizione testuale dell'immagine nell'intestazione enhanced-metafile. Questa descrizione viene specificata come risorsa nella tabella delle stringhe del file di risorse dell'applicazione. Tuttavia, in un'applicazione funzionante, questa stringa verrebbe recuperata da un controllo personalizzato in una finestra di dialogo comune o da una finestra di dialogo separata visualizzata esclusivamente a questo scopo.
 
 
 ```C++

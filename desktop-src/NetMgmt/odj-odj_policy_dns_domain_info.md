@@ -1,20 +1,20 @@
 ---
 title: ODJ_POLICY_DNS_DOMAIN_INFO
-description: Definizione di ODJ_POLICY_DNS_DOMAIN_INFO IDL
+description: ODJ_POLICY_DNS_DOMAIN_INFO definizione IDL
 ms.assetid: 44b1145f-3bdd-42cd-a88f-9b41888cc644
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 36b7759451811844a91b3ee66ff3460fa4c4db34
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: d0a83ccade72a11449ca0cc9b35b9fc58e9c53d48f8248a9f6074cdb087cc0c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "103734690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911597"
 ---
-# <a name="odj_policy_dns_domain_info-structure"></a>Struttura ODJ_POLICY_DNS_DOMAIN_INFO
+# <a name="odj_policy_dns_domain_info-structure"></a>ODJ_POLICY_DNS_DOMAIN_INFO struttura
 
-Contiene informazioni sul dominio e la foresta a cui deve essere aggiunto un client.
+Contiene informazioni sul dominio e sulla foresta a cui deve essere aggiunto un client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ typedef struct _ODJ_POLICY_DNS_DOMAIN_INFO
 
 ### <a name="name"></a>Nome
 
-Deve essere impostato su un nome di dominio NetBIOS.
+Deve essere impostato su un nome di dominio Netbios.
 
 ### <a name="dnsdomainname"></a>DnsDomainName
 
@@ -45,7 +45,7 @@ Deve essere impostato su un nome di foresta in formato DNS.
 
 ### <a name="domainguid"></a>DomainGuid
 
-Deve essere impostato sul GUID del dominio.
+Deve essere impostato sul GUID di dominio.
 
 ### <a name="sid"></a>Sid
 
@@ -53,8 +53,8 @@ Deve essere impostato sul SID del dominio.
 
 ## <a name="see-also"></a>Vedi anche
 
-[**Definizioni IDL di aggiunta al dominio offline**](odj-idl.md)
+[**Definizioni IDL di aggiunta a un dominio offline**](odj-idl.md)
 
-[**\_stringa Unicode \_ ODJ**](odj-odj_unicode_string.md)
+[**STRINGA \_ UNICODE \_ ODJ**](odj-odj_unicode_string.md)
 
-[**\_SID ODJ**](odj-odj_sid.md)
+[**ODJ \_ SID**](odj-odj_sid.md)

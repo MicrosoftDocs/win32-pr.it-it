@@ -4,12 +4,12 @@ description: Esaminare le funzioni di sessione, che sono un gruppo di funzioni d
 ms.assetid: ef912cd9-be5c-4202-89aa-e60f275e8938
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78479391e4dc2d2aa0ced8af16a8b6cf6f3a9b05
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: fbaa2362db5d6583c44cff73fb2831f9dbd7b6f164d5a8df1dce07827d6144d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911441"
 ---
 # <a name="session-functions-network-management"></a>Funzioni di sessione (Gestione rete)
 
@@ -29,7 +29,7 @@ Le funzioni di sessione sono elencate di seguito.
 
  
 
-Una *sessione* è un collegamento tra una workstation e un server. Una sessione viene stabilita la prima volta che una workstation esegue una connessione a una risorsa condivisa nel server. Fino al termine della sessione, tutte le altre connessioni tra la workstation e il server fanno parte della stessa sessione. Per terminare una sessione, un'applicazione all'estremità server di una connessione chiama la [**funzione NetSessionDel.**](/windows/desktop/api/lmshare/nf-lmshare-netsessiondel)
+Una *sessione* è un collegamento tra una workstation e un server. Una sessione viene stabilita la prima volta che una workstation esegue una connessione a una risorsa condivisa nel server. Fino al termine della sessione, tutte le altre connessioni tra la workstation e il server fanno parte della stessa sessione. Per terminare una sessione, un'applicazione sul server finale di una connessione chiama la [**funzione NetSessionDel.**](/windows/desktop/api/lmshare/nf-lmshare-netsessiondel)
 
 Le funzioni della sessione di gestione di rete gestiscono le informazioni in base all'utente con il *parametro username.* Poiché possono essere presenti più utenti per sessione, questo parametro è necessario per accedere alle informazioni specifiche dell'utente per la sessione.
 

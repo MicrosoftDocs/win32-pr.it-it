@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione del percorso della chiave CAPICOM definisce i tipi di \_ posizione chiave.
+description: L'enumerazione CAPICOM \_ KEY LOCATION definisce i tipi di posizione delle \_ chiavi.
 ms.assetid: d6261906-66aa-4c18-8305-b7998bbe53d5
-title: Enumerazione CAPICOM_KEY_LOCATION (CAPICOM. h)
+title: CAPICOM_KEY_LOCATION enumerazione (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: d2e5af31c48f6130f99acc2ac7eaf6e582407b6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fe51754d798ee1d6970c3be8d9e12c12cffb1aaf174ecb94dc663af3bad89fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879131"
 ---
-# <a name="capicom_key_location-enumeration"></a>\_Enumerazione della posizione della chiave CApicol \_
+# <a name="capicom_key_location-enumeration"></a>Enumerazione CAPICOM \_ KEY \_ LOCATION
 
-L'enumerazione del **\_ \_ percorso della chiave CAPICOM** definisce i tipi di posizione chiave.
+**L'enumerazione CAPICOM \_ KEY \_ LOCATION** definisce i tipi di posizione delle chiavi.
 
 ## <a name="members"></a>Membri
 
@@ -30,8 +30,8 @@ L'enumerazione del **\_ \_ percorso della chiave CAPICOM** definisce i tipi di p
 
 | Membro                           | Descrizione                          | Valore |
 |----------------------------------|--------------------------------------|-------|
-| **\_ \_ chiave utente corrente di CAPICOM \_**  | La chiave è una chiave utente.<br/>    | 0     |
-| **\_chiave del computer locale \_ CAPICOM \_** | La chiave è una chiave del computer.<br/> | 1     |
+| **CAPICOM \_ CURRENT \_ USER \_ KEY**  | La chiave è una chiave utente.<br/>    | 0     |
+| **CHIAVE \_ DEL COMPUTER \_ LOCALE \_ CAPICOM** | La chiave è una chiave del computer.<br/> | 1     |
 
 
 
@@ -39,7 +39,7 @@ L'enumerazione del **\_ \_ percorso della chiave CAPICOM** definisce i tipi di p
 
 Questa enumerazione viene utilizzata dal metodo seguente:
 
--   [**Certificate. Load**](certificate-load.md)
+-   [**Certificate.Load**](certificate-load.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Questa enumerazione viene utilizzata dal metodo seguente:
 
 | Requisito | Valore |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
-| Intestazione<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
+| Intestazione<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

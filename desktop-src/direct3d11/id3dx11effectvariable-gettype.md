@@ -1,11 +1,11 @@
 ---
-title: Metodo GetType ID3DX11EffectVariable (D3dx11effect. h)
+title: Metodo GetType ID3DX11EffectVariable (D3dx11effect.h)
 description: Ottenere informazioni sul tipo.
 ms.assetid: c9ada96a-0259-48c1-b869-ba0f51bf4600
 keywords:
 - Metodo GetType Direct3D 11
 - Metodo GetType Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo GetType
+- INTERFACCIA ID3DX11EffectVariable Direct3D 11, metodo GetType
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06a6a654dd815770da8913660b22215dfbecc36b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f0eae9da797ee22f85234383e2e54d97f4cb1045bcdd0216e70899b294b42378
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894551"
 ---
-# <a name="id3dx11effectvariablegettype-method"></a>Metodo ID3DX11EffectVariable:: GetType
+# <a name="id3dx11effectvariablegettype-method"></a>Metodo ID3DX11EffectVariable::GetType
 
 Ottenere informazioni sul tipo.
 
@@ -45,12 +45,12 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **ID3DX11EffectType**](id3dx11effecttype.md)\***
 
-Puntatore a un [**ID3DX11EffectType**](id3dx11effecttype.md).
+Puntatore a un [**oggetto ID3DX11EffectType.**](id3dx11effecttype.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -60,8 +60,8 @@ Puntatore a un [**ID3DX11EffectType**](id3dx11effecttype.md).
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

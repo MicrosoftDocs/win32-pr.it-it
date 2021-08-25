@@ -1,7 +1,7 @@
 ---
-description: Ottiene le dimensioni in byte del buffer mesh.
+description: Ottiene le dimensioni del buffer mesh, in byte.
 ms.assetid: 6c958190-fb43-4e7b-924d-89bb2d92981d
-title: 'Metodo ID3DX10MeshBuffer:: GetSize (D3DX10. h)'
+title: Metodo ID3DX10MeshBuffer::GetSize (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 47858d0267a294ad267fc2e310a16b1005d75bfc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 47766423074f6cd93cb5f881959dbd396cad632be1cb8ef1b8be944787a2e17f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852261"
 ---
-# <a name="id3dx10meshbuffergetsize-method"></a>Metodo ID3DX10MeshBuffer:: GetSize
+# <a name="id3dx10meshbuffergetsize-method"></a>Metodo ID3DX10MeshBuffer::GetSize
 
-Ottiene le dimensioni in byte del buffer mesh.
+Ottiene le dimensioni del buffer mesh, in byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **size \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
 
-Dimensioni in byte del buffer mesh.
+Dimensioni del buffer mesh, in byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Dimensioni in byte del buffer mesh.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

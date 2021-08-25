@@ -1,19 +1,19 @@
 ---
-description: L'elemento booleano <supportsAdvancedQuerySyntax> specifica se il provider di ricerca supporta la sintassi di query avanzata. Il valore predefinito è false. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
+description: <supportsAdvancedQuerySyntax>L'elemento booleano specifica se il provider di ricerca supporta la sintassi di query avanzata. Il valore predefinito è false. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
 ms.assetid: d4aef1f1-63c8-4e9a-9e22-5efbb8c523b2
 title: Elemento supportsAdvancedQuerySyntax (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39d31eb96615c952f703729fd9d22f2e5d27f38b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8235c1021ae04cbbce65500ebf008f645ef74c1f2bb6ea7f3a9edfe4253e035
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844511"
 ---
 # <a name="supportsadvancedquerysyntax-element-search-connector-schema"></a>Elemento supportsAdvancedQuerySyntax (schema del connettore di ricerca)
 
-L'elemento booleano <supportsAdvancedQuerySyntax> specifica se il provider di ricerca supporta la [sintassi di query avanzata](-search-3x-advancedquerysyntax.md). Il valore predefinito è false. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
+<supportsAdvancedQuerySyntax>L'elemento booleano specifica se il provider di ricerca supporta la [sintassi di query avanzate](-search-3x-advancedquerysyntax.md). Il valore predefinito è false. Questo elemento è facoltativo e non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ L'elemento booleano <supportsAdvancedQuerySyntax> specifica se il provider di ri
 
 ## <a name="remarks"></a>Commenti
 
-Il valore `true` indica che il provider di ricerca supporta la sintassi di query avanzata inviata nelle query di ricerca.
+Il valore `true` indica che il provider di ricerca supporta la sintassi di query avanzate inviata nelle query di ricerca.
 
 ## <a name="example"></a>Esempio
 

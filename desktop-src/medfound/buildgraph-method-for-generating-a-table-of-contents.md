@@ -4,16 +4,16 @@ ms.assetid: f70740ef-4c58-4944-9be6-dd056e12ad93
 title: Funzione BuildGraph per la generazione di un sommario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f53f1f175095573a5f0f53a5274d997d85db7b74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2346676eb868fb4d1a2cc30ebebdec9ec63f1a80858203729315d1019f7cd93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959510"
 ---
 # <a name="buildgraph-function-for-generating-a-table-of-contents"></a>Funzione BuildGraph per la generazione di un sommario
 
-La funzione seguente è una funzione helper in un programma di esempio descritto in [generazione automatica di un sommario](generating-a-table-of-contents-automatically.md).
+La funzione seguente è una funzione helper in un programma di esempio descritto in Generazione automatica di un [sommario.](generating-a-table-of-contents-automatically.md)
 
 
 ```C++

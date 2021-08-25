@@ -4,8 +4,8 @@ description: Il metodo item recupera l'elemento multimediale in corrispondenza d
 ms.assetid: a564f6db-ede4-4c85-87ca-0e2539d914c2
 keywords:
 - Metodo item Windows Media Player
-- metodo item Windows Media Player , classe Playlist
-- Classe Playlist Windows Media Player metodo , item
+- Metodo item Windows Media Player , classe Playlist
+- Classe Playlist Windows Media Player , metodo item
 topic_type:
 - apiref
 api_name:
@@ -55,11 +55,11 @@ Questo metodo restituisce un **oggetto Media.**
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata *la playlist*. **elemento** per recuperare un elemento multimediale dalla playlist corrente in base a una selezione dell'utente. È stato creato un elemento HTML SELECT con il nome "weblist" e riempito con i titoli della playlist corrente. **L'oggetto** Player è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la playlist*. **elemento** per recuperare un elemento multimediale dalla playlist corrente in base a una selezione dell'utente. È stato creato un elemento HTML SELECT con il nome "weblist" e sono stati inseriti i titoli della playlist corrente. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript

@@ -50,7 +50,7 @@ Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegn
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "wait", "notify" o entrambi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
+Può essere "wait", "notify" o entrambi. Per altre informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Per chiudere tutti i dispositivi aperti dall'applicazione, specificare l'identif
 
 La chiusura del **dispositivo cdaudio** interrompe la riproduzione audio.
 
-**Windows 2000/XP:** Se il **dispositivo cdaudio** è in riproduzione, la chiusura del **dispositivo cdaudio** non causa l'interruzione della riproduzione dell'audio. Inviare prima [il comando](stop.md) stop.
+**Windows 2000/XP:** Se il **dispositivo cdaudio** è in riproduzione, la chiusura del **dispositivo cdaudio** non causa l'interruzione della riproduzione dell'audio. Inviare prima [il comando stop.](stop.md)
 
 ## <a name="examples"></a>Esempio
 
