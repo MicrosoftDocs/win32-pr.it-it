@@ -1,19 +1,19 @@
 ---
-description: Specifica se il codificatore deve verificare la coerenza dei dati tra i passaggi quando si esegue la codifica VBR a due passaggi. Lettura/scrittura.
+description: Specifica se il codificatore deve verificare la coerenza dei dati tra i passaggi durante l'esecuzione della codifica VBR a due passaggi. Lettura/scrittura.
 ms.assetid: 68750820-e931-41c2-9d12-89ab83b4b97e
-title: Proprietà MFPKEY_CHECKDATACONSISTENCY2P (Wmcodecdsp. h)
+title: MFPKEY_CHECKDATACONSISTENCY2P proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abc706712ef1e8bff36a118031fde155bb9bda31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a1cef9c8c2a8e4fcd536ce73653e80e62282b40734cc695493d6cba4187c8f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954721"
 ---
-# <a name="mfpkey_checkdataconsistency2p-property"></a>\_Proprietà CHECKDATACONSISTENCY2P di MFPKEY
+# <a name="mfpkey_checkdataconsistency2p-property"></a>Proprietà MFPKEY \_ CHECKDATACONSISTENCY2P
 
-Specifica se il codificatore deve verificare la coerenza dei dati tra i passaggi quando si esegue la codifica VBR a due passaggi. Lettura/scrittura.
+Specifica se il codificatore deve verificare la coerenza dei dati tra i passaggi durante l'esecuzione della codifica VBR a due passaggi. Lettura/scrittura.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -21,15 +21,15 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valore predefinito
 
-**VARIANT \_ true**
+**VARIANT \_ TRUE**
 
 ## <a name="remarks"></a>Commenti
 
-Se si lascia questa proprietà sul valore predefinito **Variant \_ true**, il codificatore verifica che gli esempi di input corrispondano tra le due sessioni e non riesce se rileva una discrepanza. Lo scenario principale che causa una discrepanza consiste nel momento in cui l'input deriva da un dispositivo.
+Se si lascia questa proprietà sul valore predefinito **VARIANT \_ TRUE,** il codificatore verifica che i campioni di input corrispondano tra i due passaggi e non riesce se rileva una discrepanza. Lo scenario principale che causa una discrepanza è quando l'input proviene da un dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,7 +38,7 @@ Se si lascia questa proprietà sul valore predefinito **Variant \_ true**, il co
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -46,7 +46,7 @@ Se si lascia questa proprietà sul valore predefinito **Variant \_ true**, il co
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

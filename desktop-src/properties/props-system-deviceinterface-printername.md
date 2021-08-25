@@ -1,17 +1,17 @@
 ---
 description: Nome della stampante.
 ms.assetid: 80EBA03F-E703-4783-AD22-15A8592E0B81
-title: System. DeviceInterface. PrinterName
+title: System.DeviceInterface.PrinterName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ee3c504b4ff3fa335d25820a0a0a56bb810db3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6c7fb5608f192ac0ba143ac857f4ad7b509c60a11e65da4ae1e022f014a21fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946451"
 ---
-# <a name="systemdeviceinterfaceprintername"></a>System. DeviceInterface. PrinterName
+# <a name="systemdeviceinterfaceprintername"></a>System.DeviceInterface.PrinterName
 
 Nome della stampante.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

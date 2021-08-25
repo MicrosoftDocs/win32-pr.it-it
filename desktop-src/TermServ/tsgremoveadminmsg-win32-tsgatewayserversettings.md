@@ -4,9 +4,9 @@ description: Rimuove il messaggio amministrativo per il server gateway. | Metodo
 ms.assetid: 36b157de-80ee-46f8-9803-5012cf1d6f5f
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo TSGRemoveAdminMsg
-- Metodo TSGRemoveAdminMsg Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo TSGRemoveAdminMsg
+- Metodo TSGRemoveAdminMsg Servizi Desktop remoto
+- Metodo TSGRemoveAdminMsg Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto , metodo TSGRemoveAdminMsg
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba9877b9e8704c92eb482876ab69107e116207b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: dc70fc302ea261a7777b3fbcd3c7773139b92bec48ea611960dfd6f1017b93af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869041"
 ---
-# <a name="tsgremoveadminmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGRemoveAdminMsg della \_ classe TSGatewayServerSettings Win32
+# <a name="tsgremoveadminmsg-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo TSGRemoveAdminMsg della classe \_ Win32 TSGatewayServerSettings
 
 Rimuove il messaggio amministrativo per il server gateway.
 
@@ -43,15 +43,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -71,7 +71,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

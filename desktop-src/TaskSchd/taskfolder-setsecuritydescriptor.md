@@ -1,10 +1,10 @@
 ---
-title: Proprietà TaskFolder. SetSecurityDescriptor
+title: TaskFolder.SetSecurityDescriptor - proprietà
 description: Per lo scripting, imposta il descrittore di sicurezza per la cartella.
 ms.assetid: 50649100-08f6-4c2e-b084-7cfcf9f78e09
 keywords:
-- Utilità di pianificazione proprietà SetSecurityDescriptor
-- Utilità di pianificazione proprietà SetSecurityDescriptor, oggetto TaskFolder
+- Impostazione della proprietà SetSecurityDescriptor Utilità di pianificazione
+- Proprietà SetSecurityDescriptor Utilità di pianificazione, oggetto TaskFolder
 - Oggetto TaskFolder Utilità di pianificazione, proprietà SetSecurityDescriptor
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0854ee6485007e1465dd0a264c908d67443f248
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8416e14a5415de86f8ad3f4a1181ce231ecfbdc875e36e9e3fd14014de8c4935
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033791"
 ---
-# <a name="taskfoldersetsecuritydescriptor-property"></a>Proprietà TaskFolder. SetSecurityDescriptor
+# <a name="taskfoldersetsecuritydescriptor-property"></a>TaskFolder.SetSecurityDescriptor - proprietà
 
 Per lo scripting, imposta il descrittore di sicurezza per la cartella.
 
@@ -51,9 +51,9 @@ TaskFolder.SetSecurityDescriptor( _
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -62,10 +62,10 @@ TaskFolder.SetSecurityDescriptor( _
 
 <dl> <dt>
 
-[**RegisteredTask. SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)
+[**RegisteredTask.SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)
 </dt> <dt>
 
-[**TaskFolder. GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
+[**TaskFolder.GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_MOUSEWHEEL (winuser. h)
-description: Inviato alla finestra con lo stato attivo quando la rotellina del mouse viene ruotata.
+title: WM_MOUSEWHEEL messaggio (Winuser.h)
+description: Inviato alla finestra attiva quando viene ruotata la rotellina del mouse.
 ms.assetid: 9831cceb-bbf3-42a0-a0f9-c2d6ad4573eb
 keywords:
-- Input della tastiera e del mouse WM_MOUSEWHEEL messaggio
+- WM_MOUSEWHEEL messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b918989b41b43c3f54d8ec3133223716e839e58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae3e750a8544c050e735671b7fd2df6980d53b1200e2f67493b46ad7a2e0b017
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888731"
 ---
-# <a name="wm_mousewheel-message"></a>Messaggio di WM \_ MOUSEWHEEL
+# <a name="wm_mousewheel-message"></a>Messaggio \_ WM MOUSEWHEEL
 
-Inviato alla finestra con lo stato attivo quando la rotellina del mouse viene ruotata. La funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) propaga il messaggio all'elemento padre della finestra. Non devono essere presenti inoltri interni del messaggio, poiché **DefWindowProc** lo propaga alla catena padre fino a quando non trova una finestra che la elabora.
+Inviato alla finestra attiva quando viene ruotata la rotellina del mouse. La [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) propaga il messaggio all'elemento padre della finestra. Non deve essere presente alcun inoltro interno del messaggio, perché **DefWindowProc** lo propaga fino alla catena padre finché non trova una finestra che lo elabora.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,21 +41,21 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-La parola più ordinata indica la distanza con cui la rotellina viene ruotata, espressa in multipli o divisioni di **\_ Delta della rotella**, ovvero 120. Un valore positivo indica che la rotellina è stata ruotata in orizzontale, lontano dall'utente; un valore negativo indica che la rotellina è stata ruotata indietro verso l'utente.
+La parola più alta indica la distanza di rotazione della ruota, espressa in multipli o divisioni di **WHEEL \_ DELTA,** ovvero 120. Un valore positivo indica che la rotellina è stata ruotata in avanti, lontano dall'utente; un valore negativo indica che la rotellina è stata ruotata indietro, verso l'utente.
 
-La parola più bassa indica se le varie chiavi virtuali sono inattive. Il parametro può essere costituito da uno o più dei valori seguenti.
+La parola meno in ordine indica se varie chiavi virtuali non sono disponibili. Questo parametro può essere uno o più dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                               | Significato                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_**</dt> <dt>0x0008</dt> di controllo </dl>    | Il tasto CTRL è premuto.<br/>            |
-| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_**</dt> <dt>0x0001</dt> LBUTTON </dl>    | Il pulsante sinistro del mouse è premuto.<br/>   |
-| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_**</dt> <dt>0x0010</dt> MBUTTON </dl>    | Il pulsante centrale del mouse è inattivo.<br/> |
-| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_**</dt> <dt>0x0002</dt> RBUTTON </dl>    | Il pulsante destro del mouse è inattivo.<br/>  |
+| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_ Controllo**</dt> <dt>0x0008</dt> </dl>    | Il tasto CTRL è premuto.<br/>            |
+| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | Il pulsante sinistro del mouse è in basso.<br/>   |
+| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | Il pulsante centrale del mouse è in basso.<br/> |
+| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | Il pulsante destro del mouse è in basso.<br/>  |
 | <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ MAIUSC**</dt> <dt>0x0004</dt> </dl>          | Il tasto MAIUSC è premuto.<br/>           |
-| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_**</dt> <dt>0x0020</dt> XBUTTON1 </dl> | Il primo pulsante X è inattivo.<br/>      |
-| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_**</dt> <dt>0x0040</dt> XBUTTON2 </dl> | Il secondo pulsante X è inattivo.<br/>     |
+| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | Il primo pulsante X è in basso.<br/>      |
+| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | Il secondo pulsante X è in basso.<br/>     |
 
 
 
@@ -66,19 +66,19 @@ La parola più bassa indica se le varie chiavi virtuali sono inattive. Il parame
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore specifica la coordinata x del puntatore, relativa all'angolo superiore sinistro dello schermo.
+La parola di ordine inferiore specifica la coordinata x dell'indicatore di misura rispetto all'angolo superiore sinistro dello schermo.
 
-La parola più significativa specifica la coordinata y del puntatore, relativa all'angolo superiore sinistro dello schermo.
+La parola più alta specifica la coordinata y dell'indicatore di misura rispetto all'angolo superiore sinistro dello schermo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Usare il codice seguente per ottenere le informazioni nel parametro *wParam* :
+Usare il codice seguente per ottenere le informazioni nel *parametro wParam:*
 
 
 ```
@@ -98,20 +98,20 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Come indicato in precedenza, la coordinata x è **nell'ordine inferiore** del valore restituito. la coordinata y si trova nell'ordine **breve** (entrambi rappresentano valori *firmati* perché possono assumere valori negativi nei sistemi con più monitoraggi). Se il valore restituito viene assegnato a una variabile, è possibile usare la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) per ottenere una struttura [**Points**](/previous-versions//dd162808(v=vs.85)) dal valore restituito. Per estrarre la coordinata x o y, è anche possibile usare la macro [**get \_ x \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) .
+Come indicato in precedenza, la coordinata x si trova nell'ordine più basso **del** valore restituito. La coordinata y si trova nell'ordine  più breve **(entrambi** rappresentano valori con segno perché possono assumere valori negativi nei sistemi con più monitor). Se il valore restituito viene assegnato a una variabile, è possibile usare la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) per ottenere una [**struttura POINTS**](/previous-versions//dd162808(v=vs.85)) dal valore restituito. È anche possibile usare la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) per estrarre la coordinata x o y.
 
 > [!IMPORTANT]
-> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitoraggi. I sistemi con più monitoraggi possono avere coordinate x e y negative e **LOWORD** e **HIWORD** considerano le coordinate come quantità senza segno.
+> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitor. I sistemi con più monitor possono avere coordinate x e y negative e **LOWORD** e **HIWORD** trattano le coordinate come quantità senza segno.
 
  
 
-La rotazione della rotellina sarà un multiplo del **\_ Delta della rotellina**, che viene impostato su 120. Si tratta della soglia per l'azione da intraprendere e una di queste azioni, ad esempio lo scorrimento di un incremento, deve verificarsi per ogni Delta.
+La rotazione della ruota sarà un multiplo di **WHEEL \_ DELTA,** impostato su 120. Questa è la soglia per l'azione da eseguire e una di queste azioni (ad esempio, lo scorrimento di un incremento) deve verificarsi per ogni delta.
 
-Il Delta è stato impostato su 120 per consentire a Microsoft o altri fornitori di creare ruote a risoluzione più fine, ovvero una rotellina a rotazione libera senza tacche, per inviare più messaggi per rotazione, ma con un valore inferiore in ogni messaggio. Per usare questa funzionalità, è possibile aggiungere i valori Delta in entrata fino a raggiungere il **\_ Delta della rotella** (pertanto, per una rotazione delta si ottiene la stessa risposta) o scorrere righe parziali in risposta ai messaggi più frequenti. È anche possibile scegliere la granularità di scorrimento e accumulare delta fino a quando non viene raggiunto.
+Il delta è stato impostato su 120 per consentire a Microsoft o ad altri fornitori di creare ruote con risoluzione più fine (una ruota a rotazione libera senza punti) per inviare più messaggi per rotazione, ma con un valore più piccolo in ogni messaggio. Per usare questa funzionalità, è possibile aggiungere i valori delta in ingresso fino a quando non viene raggiunto **WHEEL \_ DELTA** (in modo che per una rotazione delta si otterrà la stessa risposta) o scorrere righe parziali in risposta ai messaggi più frequenti. È anche possibile scegliere la granularità di scorrimento e accumulare delta fino a quando non viene raggiunto.
 
-Si noti che non esiste alcun *fwKeys* per **MSH \_ MOUSEWHEEL**. In caso contrario, i parametri sono esattamente uguali a quelli per **WM \_ MOUSEWHEEL**.
+Si noti che non sono *presenti fwKey per* **MSH \_ MOUSEWHEEL**. In caso contrario, i parametri sono esattamente gli stessi di **WM \_ MOUSEWHEEL.**
 
-È possibile che l'applicazione inoltri **MSH \_ MOUSEWHEEL** a tutti gli oggetti o controlli incorporati. L'applicazione è necessaria per inviare il messaggio a un'applicazione OLE incorporata attiva. È facoltativo che l'applicazione lo invii a un controllo abilitato per la rotellina con lo stato attivo. Se l'applicazione invia il messaggio a un controllo, può controllare il valore restituito per verificare se il messaggio è stato elaborato. I controlli sono necessari per restituire un valore **true** se elaborano il messaggio.
+È l'applicazione a inoltrare **MSH \_ MOUSEWHEEL** a qualsiasi oggetto o controllo incorporato. L'applicazione è necessaria per inviare il messaggio a un'applicazione OLE incorporata attiva. È facoltativo che l'applicazione lo invii a un controllo abilitato per le rotelle con lo stato attivo. Se l'applicazione invia il messaggio a un controllo , può controllare il valore restituito per verificare se il messaggio è stato elaborato. I controlli sono necessari per restituire il valore **TRUE** se elaborano il messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,7 +121,7 @@ Si noti che non esiste alcun *fwKeys* per **MSH \_ MOUSEWHEEL**. In caso contrar
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include WINDOWSX. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windowsx.h)</dt> </dl> |
 
 
 
@@ -132,16 +132,16 @@ Si noti che non esiste alcun *fwKeys* per **MSH \_ MOUSEWHEEL**. In caso contrar
 **Riferimento**
 </dt> <dt>
 
-[**OTTENERE \_ lo stato di un \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_keystate_wparam)
+[**GET \_ KEYSTATE \_ WPARAM**](/windows/win32/api/winuser/nf-winuser-get_keystate_wparam)
 </dt> <dt>
 
-[**Ottieni \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OTTENERE \_ il \_ lParam Y**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
-[**OTTENERE \_ la \_ Delta del cerchio \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_wheel_delta_wparam)
+[**GET \_ WHEEL \_ DELTA \_ WPARAM**](/windows/win32/api/winuser/nf-winuser-get_wheel_delta_wparam)
 </dt> <dt>
 
 [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
@@ -150,13 +150,13 @@ Si noti che non esiste alcun *fwKeys* per **MSH \_ MOUSEWHEEL**. In caso contrar
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_evento mouse**](/windows/win32/api/winuser/nf-winuser-mouse_event)
+[**evento \_ mouse**](/windows/win32/api/winuser/nf-winuser-mouse_event)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Input del mouse](mouse-input.md)
+[Mouse Input](mouse-input.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -165,13 +165,13 @@ Si noti che non esiste alcun *fwKeys* per **MSH \_ MOUSEWHEEL**. In caso contrar
 [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics)
 </dt> <dt>
 
-[**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
+[**PUNTI DI APPLICAZIONE**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**PUNTI**](/previous-versions//dd162808(v=vs.85))
+[**Punti**](/previous-versions//dd162808(v=vs.85))
 </dt> <dt>
 
-[**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
+[**Systemparametersinfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa)
 </dt> </dl>
 
  

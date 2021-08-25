@@ -1,45 +1,45 @@
 ---
-title: Introduzione con Microsoft Windows Media DRM Client
-description: Introduzione con Microsoft Windows Media DRM Client
+title: Attività iniziali con Microsoft Windows Media DRM Client
+description: Attività iniziali con Microsoft Windows Media DRM Client
 ms.assetid: da2c57ab-7f88-4696-a8cf-065d8c86a510
 keywords:
-- Windows Media Format SDK, API client DRM estese
-- Windows Media Format SDK, API client estese
+- Windows SDK per il formato multimediale, API estese del client DRM
+- Windows MEDIA Format SDK, API estese client
 - Windows Media Format SDK, API estese
-- Windows Media Format SDK, API
+- Windows MEDIA Format SDK, API
 - Windows Media Format SDK, Digital Rights Management (DRM)
-- Windows Media Format SDK, guida per programmatori
-- Digital Rights Management (DRM), API estese del client
-- DRM (Digital Rights Management), API estese client
-- Digital Rights Management (DRM), API estese
-- DRM (Digital Rights Management), API estese
-- Digital Rights Management (DRM), API
-- DRM (Digital Rights Management), API
-- Digital Rights Management (DRM), Guida alla programmazione
-- DRM (Digital Rights Management), Guida alla programmazione
+- Windows Media Format SDK, Guida per programmatori
+- digital rights management (DRM), API estese client
+- DRM (digital rights management),API estese client
+- digital rights management (DRM), API estese
+- DRM (digital rights management), API estese
+- digital rights management (DRM), API
+- DRM (digital rights management), API
+- digital rights management (DRM), Guida per programmatori
+- DRM (digital rights management),Guida per programmatori
 - API estese del client DRM, informazioni
 - API estese client, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0962d75d6d01de381056faa0204e683c48583b3
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6283fe4f796ff5f43312b5ecb9c445c5e0661f77a354a41cee41fd39c911a596
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104047723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881167"
 ---
-# <a name="getting-started-with-microsoft-windows-media-drm-client"></a>Introduzione con Microsoft Windows Media DRM Client
+# <a name="getting-started-with-microsoft-windows-media-drm-client"></a>Attività iniziali con Microsoft Windows Media DRM Client
 
-In questa parte della Guida per la programmazione viene descritto come configurare un progetto utilizzando le API estese del client Windows Media DRM e vengono fornite informazioni di base sull'utilizzo delle API. Contiene gli argomenti seguenti.
+Questa parte della guida alla programmazione descrive come configurare un progetto usando le API estese del client DRM di Windows Media e fornisce informazioni di base sull'uso delle API. Contiene gli argomenti seguenti.
 
 
 
 | Argomento                                                                                                      | Descrizione                                                                                             |
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [File di libreria, file di intestazione e impostazioni del compilatore](library-files-header-files-and-compiler-settings.md) | Viene descritto come configurare l'ambiente di sviluppo per l'utilizzo delle API estese del client Windows Media DRM. |
-| [Uso degli esempi di codice](drm-using-the-code-examples.md)                                                 | Descrive le convenzioni usate negli esempi di codice forniti in questa documentazione.                     |
-| [Nozioni fondamentali sulle applicazioni](application-basics.md)                                                               | Viene descritto come creare un'applicazione che utilizza le API estese del client Windows Media DRM.            |
-| [Uso del modello di eventi Media Foundation](using-the-media-foundation-model.md)                             | Introduce il modello di eventi usato dalle API estese del client Windows Media DRM.                  |
+| [File di libreria, file di intestazione e compilatori Impostazioni](library-files-header-files-and-compiler-settings.md) | Viene descritto come configurare l'ambiente di sviluppo per l'uso Windows API estese del client DRM di Media. |
+| [Uso degli esempi di codice](drm-using-the-code-examples.md)                                                 | Vengono descritte le convenzioni usate negli esempi di codice forniti in questa documentazione.                     |
+| [Nozioni di base dell'applicazione](application-basics.md)                                                               | Viene descritto come creare un'applicazione che usa Windows API estese del client DRM di Media.            |
+| [Uso del modello Media Foundation eventi](using-the-media-foundation-model.md)                             | Introduce il modello di eventi usato dalle API estese Windows client DRM media.                  |
 
 
 

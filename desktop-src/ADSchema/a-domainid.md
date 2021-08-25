@@ -1,11 +1,11 @@
 ---
-title: Attributo domain-ID
+title: Attributo DOMAIN-ID
 description: Riferimento a un dominio associato a un'autorità di certificazione.
 ms.assetid: dd2f0822-cf94-485b-8d21-8954dddb81ad
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo domain-ID
-- Schema AD dell'attributo domainID
+- Schema AD dell'attributo DOMAIN-ID
+- Attributo domainID Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6c321fdea062ccbca907e22a2d72b06c26110ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ae98294df75cdd2fdd69576629b87dbea8410b17d91ba525024a2a0a43ce7c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925971"
 ---
-# <a name="domain-id-attribute"></a>Attributo domain-ID
+# <a name="domain-id-attribute"></a>Attributo DOMAIN-ID
 
 Riferimento a un dominio associato a un'autorità di certificazione.
 
@@ -30,12 +30,12 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | ID dominio                               |
-| LDAP-Display-Name | domainID                                |
+| Ldap-Display-Name | domainID                                |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.686                  |
-| System-ID-GUID    | 963d2734-48be-11d1-a9c3-0000f80367c1    |
+| System-Id-Guid    | 963d2734-48be-11d1-a9c3-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| Is-Single-Valued       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| A valore singolo       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| A valore singolo       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento a un dominio associato a un'autorità di certificazione.
 | ID collegamento                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| È a valore singolo       | Vero                                                                   |
+| A valore singolo       | Vero                                                                   |
 | Indicizzato             | Falso                                                                  |
 | Nel catalogo globale      | Falso                                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classi utilizzate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
+| Classi usate in        | [**Autorità di certificazione**](c-certificationauthority.md)<br/> |
 
 
 

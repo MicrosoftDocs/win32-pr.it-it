@@ -1,25 +1,25 @@
 ---
-description: Uso di Demux con flussi elementari
+description: Uso di Demux con l'Flussi
 ms.assetid: dd98aada-8309-428e-9609-2542195bc6ec
-title: Uso di Demux con flussi elementari
+title: Uso di Demux con l'Flussi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b9004d6c99db96405797016b0d9854c96dae92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dec805b4c93432c6532edaefac50e9bd15ad8fac5a7d9672fd358c66e57363fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964671"
 ---
-# <a name="using-the-demux-with-elementary-streams"></a>Uso di Demux con flussi elementari
+# <a name="using-the-demux-with-elementary-streams"></a>Uso di Demux con l'Flussi
 
-Quando il demux MPEG-2 fornisce payload di PES, invia il flusso di byte ES in batch di esempi di supporti. La dimensione predefinita del campione è 8 KB. Il demux avvia un nuovo esempio di supporto in ogni limite PES, ma può suddividere un singolo payload di PES in diversi esempi. Se, ad esempio, un payload PES è 20.000, verrà distribuito in due campioni da 8 KB seguiti da un campione 4K. Demux non esamina il contenuto del flusso di byte. Il decodificatore analizza le intestazioni di sequenza e cerca le modifiche del formato.
+Quando il demux MPEG-2 recapita payload PES, invia il flusso di byte ES in batch di campioni multimediali. La dimensione predefinita del campione è 8K. Il demux avvia un nuovo campione multimediale in ogni limite PES, ma può suddividere un singolo payload PES in diversi campioni. Ad esempio, se un payload PES è 20.000, verrà fornito in due campioni da 8.000 seguiti da un campione da 4K. Il demux non esamina il contenuto del flusso di byte. È il decodificatore ad analizzare le intestazioni di sequenza e cercare le modifiche al formato.
 
-Quando il pin di output del filtro demux si connette al decodificatore, offre il tipo di supporto che è stato specificato al momento della creazione del PIN. Poiché demux non esamina il flusso di byte ES, non convalida il tipo di supporto. In teoria, un decodificatore MPEG-2 dovrebbe essere in grado di connettersi solo con il tipo e il sottotipo principale, per indicare il tipo di dati. Il decodificatore deve quindi esaminare le intestazioni di sequenza che arrivano negli esempi di supporti. Tuttavia, in pratica, molti decodificatori non si connetteranno, a meno che il tipo di supporto non includa un blocco di formato completo.
+Quando il pin di output del filtro demux si connette al decodificatore, offre il tipo di supporto specificato al momento della creazione del pin. Poiché il demux non esamina il flusso di byte ES, non convalida il tipo di supporto. In teoria, un decodificatore MPEG-2 dovrebbe essere in grado di connettersi solo al tipo principale e al sottotipo compilati, per indicare il tipo di dati. Il decodificatore deve quindi esaminare le intestazioni di sequenza che arrivano nei campioni multimediali. Tuttavia, in pratica, molti decodificatori non si connetteranno a meno che il tipo di supporto non includa un blocco di formato completo.
 
-Si supponga, ad esempio, che PID 0x31 contenga il video del profilo principale MPEG-2. Come minimo, è necessario eseguire i passaggi seguenti.
+Si supponga, ad esempio, che il 0x31 PID contenga il video del profilo principale MPEG-2. Come minimo, è necessario eseguire i passaggi seguenti.
 
-Per prima cosa, creare un tipo di supporto per il video MPEG-2. A questo punto, lasciare il blocco di formato:
+Creare prima di tutto un tipo di supporto per il video MPEG-2. Lasciare da parte il blocco di formato per il momento:
 
 
 ```C++
@@ -32,7 +32,7 @@ mt.subtype = MEDIASUBTYPE_MPEG2_VIDEO;
 
 
 
-Successivamente, creare un pin di output in Demux:
+Creare quindi un pin di output sul demux:
 
 
 ```C++
@@ -53,7 +53,7 @@ if (SUCCEEDED(hr))
 
 
 
-Eseguire quindi una query sul nuovo PIN per l'interfaccia **IMPEG2PIDMap** e chiamare **MapPID**. Specificare il numero PID 0x30 e il \_ flusso elementare multimediale \_ per i payload PES.
+Eseguire quindi una query sul nuovo pin per **l'interfaccia IMPEG2PIDMap** e chiamare **MapPID**. Specificare il numero PID 0x30 e MEDIA \_ ELEMENTARY STREAM per i payload \_ PES.
 
 
 ```C++
@@ -72,7 +72,7 @@ if (SUCCEEDED(hr))
 
 
 
-Infine, rilasciare tutte le interfacce al termine dell'operazione:
+Al termine, rilasciare tutte le interfacce:
 
 
 ```C++
@@ -82,7 +82,7 @@ pDemux->Release();
 
 
 
-Di seguito è riportato un esempio più completo di impostazione del tipo di supporto, incluso il blocco di formato. In questo esempio si presuppone ancora un video del profilo principale MPEG-2. I dettagli variano a seconda del contenuto del flusso:
+Di seguito è riportato un esempio più completo di impostazione del tipo di supporto, incluso il blocco di formato. Questo esempio presuppone ancora un video del profilo principale MPEG-2. I dettagli variano a seconda del contenuto del flusso:
 
 
 ```C++
@@ -134,7 +134,7 @@ memcpy(pMVIH->dwSequenceHeader, SeqHdr, sizeof(SeqHdr));
 
 <dl> <dt>
 
-[Uso del Demultiplexer MPEG-2](using-the-mpeg-2-demultiplexer.md)
+[Uso del demultiplexer MPEG-2](using-the-mpeg-2-demultiplexer.md)
 </dt> </dl>
 
  

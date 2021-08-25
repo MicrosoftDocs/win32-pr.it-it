@@ -1,11 +1,11 @@
 ---
-title: Metodo Decrypt IWMSecureBuffer (wmdrmsdk. h)
-description: Il metodo Decrypt decrittografa un puntatore a dati crittografato chiamando il metodo Encrypt.
+title: Metodo IWMSecureBuffer Decrypt (Wmdrmsdk.h)
+description: Il metodo Decrypt decrittografa un puntatore ai dati crittografato chiamando il metodo Encrypt.
 ms.assetid: 15cedb56-686a-4a3c-81a5-b1797cfe0838
 keywords:
-- Metodo Decrypt Windows Media Format
-- Metodo di decrittografia Windows Media Format, interfaccia IWMSecureBuffer
-- Interfaccia IWMSecureBuffer-formato Windows Media, metodo Decrypt
+- Decrittografare il metodo windows Media Format
+- Decrittografare il metodo windows Media Format , interfaccia IWMSecureBuffer
+- Interfaccia IWMSecureBuffer windows Media Format , metodo Decrypt
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6f48ae389090840e085c90b0bc5444e7cd6784e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb9867cb6476ab0a2838903c906f662032e14dfb0d4fa0547b045672e03b6ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930101"
 ---
-# <a name="iwmsecurebufferdecrypt-method"></a>IWMSecureBuffer::D Metodo ecrypt
+# <a name="iwmsecurebufferdecrypt-method"></a>Metodo IWMSecureBuffer::D ecrypt
 
-Il metodo **Decrypt** decrittografa un puntatore a dati crittografato chiamando il metodo [**Encrypt**](iwmsecurebuffer-encrypt.md) .
+Il **metodo Decrypt** decrittografa un puntatore ai dati crittografato chiamando il metodo [**Encrypt.**](iwmsecurebuffer-encrypt.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ HRESULT Decrypt(
 
 <dl> <dt>
 
-*pSecureChannel* \[ in\]
+*pSecureChannel* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia di canale sicura che contiene il puntatore ai dati crittografati.
+Puntatore a un'interfaccia di canale protetta contenente il puntatore ai dati crittografati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetMediaTypeForVB specifica il tipo di supporto di gruppo per i client di automazione.
+description: Il metodo SetMediaTypeForVB specifica il tipo di supporto del gruppo, per i client di Automazione.
 ms.assetid: 86f52088-a0dd-40be-98a0-8adc09b264dd
-title: 'Metodo IAMTimelineGroup:: SetMediaTypeForVB (qedit. h)'
+title: Metodo IAMTimelineGroup::SetMediaTypeForVB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1371b1d6c906666ca30e5df2d26dbe20eddf1745
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea47e4edcdfc58e38e61a9f92eb5afac0092ab0cb445f6ff73471e1b65b1480b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905041"
 ---
-# <a name="iamtimelinegroupsetmediatypeforvb-method"></a>Metodo IAMTimelineGroup:: SetMediaTypeForVB
+# <a name="iamtimelinegroupsetmediatypeforvb-method"></a>Metodo IAMTimelineGroup::SetMediaTypeForVB
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `SetMediaTypeForVB` metodo specifica il tipo di supporto di gruppo per i client di automazione.
+Il `SetMediaTypeForVB` metodo specifica il tipo di supporto del gruppo, per i client di Automazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ HRESULT SetMediaTypeForVB(
 
 <dl> <dt>
 
-*Val* \[ in\]
+*Val* \[ Pollici\]
 </dt> <dd>
 
-Valore che specifica il tipo di supporto. Impostare il valore su 0 per video o 1 per audio.
+Valore che specifica il tipo di supporto. Impostare il valore su 0 per il video o su 1 per l'audio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo è destinato ai client di automazione. Per le applicazioni C++, usare il metodo [**IAMTimelineGroup:: SetMediaType**](iamtimelinegroup-setmediatype.md) .
+Questo metodo è destinato ai client di automazione. Per le applicazioni C++, usare il [**metodo IAMTimelineGroup::SetMediaType.**](iamtimelinegroup-setmediatype.md)
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Questo metodo è destinato ai client di automazione. Per le applicazioni C++, us
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

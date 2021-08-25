@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_EXSETSEL (RichEdit. h)
-description: Seleziona un intervallo di caratteri o oggetti Component Object Model (COM) in un controllo Microsoft Rich Edit.
+title: EM_EXSETSEL messaggio (Richedit.h)
+description: Seleziona un intervallo di caratteri o Component Object Model (COM) in un controllo Microsoft Rich Edit.
 ms.assetid: 85a0d1d4-1826-4ac5-b823-de81a051441d
 keywords:
-- Controlli di Windows Message EM_EXSETSEL
+- EM_EXSETSEL di Windows messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6939156fb1a8f35e03527e64a4c6f5185180668d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9e35840e404f295b7d3ed6ddd5dddf4c77076c236eb3260f6f719b152cef207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915651"
 ---
-# <a name="em_exsetsel-message"></a>\_Messaggio EXSETSEL em
+# <a name="em_exsetsel-message"></a>Messaggio \_ EM EXSETSEL
 
-Seleziona un intervallo di caratteri o oggetti Component Object Model (COM) in un controllo Microsoft Rich Edit.
+Seleziona un intervallo di caratteri o Component Object Model (COM) in un controllo Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Seleziona un intervallo di caratteri o oggetti Component Object Model (COM) in u
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Il valore restituito è la selezione effettivamente impostata.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

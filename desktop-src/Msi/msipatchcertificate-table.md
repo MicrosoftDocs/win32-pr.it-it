@@ -1,19 +1,19 @@
 ---
-description: Identifica i possibili certificati del firmatario utilizzati per la firma digitale delle patch.
+description: Identifica i possibili certificati del firmatario usati per firmare digitalmente le patch.
 ms.assetid: 8f76c27d-92f1-4de7-a69c-fba877e0325d
 title: Tabella MsiPatchCertificate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01648e792931fd856a1231a5d876c7db843479df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f39d2bc3a05c8b3fe3f23cd7dce01da36e14ce1f3984f24e827606bbc44c1a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913311"
 ---
 # <a name="msipatchcertificate-table"></a>Tabella MsiPatchCertificate
 
-La tabella MsiPatchCertificate identifica i possibili certificati del firmatario usati per la firma digitale delle patch. La tabella MsiPatchCertificate contiene le informazioni necessarie per abilitare l'applicazione di patch per il [controllo dell'account utente (UAC)](user-account-control--uac--patching.md) per un'applicazione.
+La tabella MsiPatchCertificate identifica i possibili certificati del firmatario usati per firmare digitalmente le patch. La tabella MsiPatchCertificate contiene le informazioni necessarie per abilitare l'applicazione di patch al controllo [dell'account](user-account-control--uac--patching.md) utente per un'applicazione.
 
 La tabella MsiPatchCertificate include le colonne seguenti:
 
@@ -42,13 +42,13 @@ Identificatore univoco per questa riga nella tabella MsiPatchCertificate.
 <span id="DigitalCertificate"></span><span id="digitalcertificate"></span><span id="DIGITALCERTIFICATE"></span>DigitalCertificate
 </dt> <dd>
 
-Chiave esterna nella prima colonna della [tabella MsiDigitalCertificate](msidigitalcertificate-table.md). La riga indicata nella tabella MsiDigitalCertificate contiene la rappresentazione binaria del certificato del firmatario.
+Chiave esterna nella prima colonna della [tabella MsiDigitalCertificate.](msidigitalcertificate-table.md) La riga indicata nella tabella MsiDigitalCertificate contiene la rappresentazione binaria del certificato del firmatario.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le patch vengono sempre valutate rispetto alla tabella MsiPatchCertificate corrente al momento dell'applicazione della patch. Una patch può modificare la tabella MsiPatchCertificate aggiungendo o rimuovendo le voci. Questa operazione consente a una patch di modificare la valutazione delle patch future applicate successivamente nella sequenza di patch. Nella tabella possono essere presenti più certificati e la patch deve corrispondere a almeno un certificato da applicare.
+Le patch vengono sempre valutate rispetto alla tabella MsiPatchCertificate corrente al momento dell'applicazione della patch. Una patch può modificare la tabella MsiPatchCertificate aggiungendo o rimuovendo voci. Ciò consente a una patch di modificare la valutazione delle patch future che verranno applicate più avanti nella sequenza di applicazione delle patch. Nella tabella possono essere presenti più certificati e la patch deve corrispondere ad almeno un certificato da applicare.
 
 ## <a name="validation"></a>Convalida
 
@@ -67,16 +67,16 @@ Le patch vengono sempre valutate rispetto alla tabella MsiPatchCertificate corre
 [DisableLUAPatching](disableluapatching.md)
 </dt> <dt>
 
-[Applicazione di patch al controllo dell'account utente (UAC)](user-account-control--uac--patching.md)
+[Applicazione di patch al controllo dell'account utente](user-account-control--uac--patching.md)
 </dt> <dt>
 
 [**MSIDISABLELUAPATCHING**](msidisableluapatching.md)
 </dt> <dt>
 
-[Firme digitali e Windows Installer](digital-signatures-and-windows-installer.md)
+[Firme digitali e programma di Windows di installazione](digital-signatures-and-windows-installer.md)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

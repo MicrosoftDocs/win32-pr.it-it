@@ -1,7 +1,7 @@
 ---
-description: Restituisce il numero di oggetti cursori associati al tablet.
+description: Restituisce il numero di oggetti cursore associati alla tablet.
 ms.assetid: 7aa5802c-1255-41a4-b1fa-23e5f56c0b80
-title: 'Metodo ITablet:: GetCursorCount'
+title: Metodo ITablet::GetCursorCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 2309384e4aa36383277ba72cc407cabef7ab4b27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02ad52e5ad75d4c71129ec7987347121c6152c01071e797c7b169327fdeb3614
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883861"
 ---
-# <a name="itabletgetcursorcount-method"></a>Metodo ITablet:: GetCursorCount
+# <a name="itabletgetcursorcount-method"></a>Metodo ITablet::GetCursorCount
 
-Restituisce il numero di oggetti cursori associati al tablet.
+Restituisce il numero di oggetti cursore associati alla tablet.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ HRESULT GetCursorCount(
 
 <dl> <dt>
 
-*pcCurs* \[ out\]
+*pcCurs* \[ Cambio\]
 </dt> <dd>
 
-Numero di oggetti cursori associati al tablet.
+Numero di oggetti cursore associati alla tablet.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

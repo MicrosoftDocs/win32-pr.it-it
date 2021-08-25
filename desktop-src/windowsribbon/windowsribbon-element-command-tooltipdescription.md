@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. TooltipDescription
-description: Rappresenta una descrizione della descrizione comando.
+title: Command.TooltipDescription - proprietà
+description: Rappresenta una descrizione comando.
 ms.assetid: 2d3ea497-2d96-4420-8fcf-39ac2c472bf1
 keywords:
-- Barra multifunzione di Windows Command. TooltipDescription
+- Proprietà Command.TooltipDescription Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 288578e74420912b7454be5037c4b2651918ac6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5dd356ae3bcfa5949e8469240330a3a09a11f01b5a919ed02f4eb55683fbc15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933211"
 ---
-# <a name="commandtooltipdescription-property"></a>Proprietà Command. TooltipDescription
+# <a name="commandtooltipdescription-property"></a>Command.TooltipDescription - proprietà
 
-Rappresenta una descrizione della descrizione comando.
+Rappresenta una descrizione comando.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -61,27 +61,27 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-**Command. TooltipDescription** può contenere un valore di tipo *xs: String* vincolato a qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.
+**Command.TooltipDescription può** contenere un valore di tipo *xs:string* vincolato a qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzione di riga .
 
 > [!Note]  
-> Usare il riferimento al carattere XML UCS (Universal Character Set) `&#xA;` per specificare un'interruzioni di riga.
+> Usare il riferimento ai caratteri XML del set di caratteri universali (UCS) `&#xA;` per specificare un'interruzione di riga.
 
  
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
-Se non viene specificato alcun valore per **Command. TooltipDescription**, l'elemento figlio [**stringa**](windowsribbon-element-string.md) è obbligatorio.
+Se non viene specificato alcun valore per **Command.TooltipDescription**, [**l'elemento**](windowsribbon-element-string.md) figlio String è obbligatorio.
 
 > [!Note]  
-> Se **Command. TooltipDescription** contiene sia un elemento Value che un elemento figlio [**String**](windowsribbon-element-string.md) , la **stringa** avrà la precedenza.
+> Se **Command.TooltipDescription contiene** sia un valore che un elemento figlio [**String,**](windowsribbon-element-string.md) **String** ha la precedenza.
 
  
 
-**Command. TooltipDescription** supporta solo l'allineamento a sinistra.
+**Command.TooltipDescription supporta** solo l'allineamento a sinistra.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](windowsribbon-element-command.md) con una Dichiarazione **Command. TooltipDescription** .
+L'esempio seguente illustra il markup per un [**elemento Command**](windowsribbon-element-command.md) con una **dichiarazione Command.TooltipDescription.**
 
 
 ```XML
@@ -111,8 +111,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -120,7 +120,7 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command**](w
 
 <dl> <dt>
 
-[Interfaccia utente \_ pkey \_ TooltipDescription](windowsribbon-reference-properties-uipkey-tooltipdescription.md)
+[UI \_ PKEY \_ TooltipDescription](windowsribbon-reference-properties-uipkey-tooltipdescription.md)
 </dt> </dl>
 
  

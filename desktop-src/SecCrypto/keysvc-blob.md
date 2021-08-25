@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura BLOB KEYSVC definisce un BLOB del servizio Key. Questa struttura viene utilizzata dalla funzione RKeyPFXInstall.
+description: La struttura BLOB KEYSVC \_ definisce un BLOB del servizio chiave. Questa struttura viene usata dalla funzione RKeyPFXInstall.
 ms.assetid: 255b5fab-6271-4d3f-9c56-a63278b8b104
-title: Struttura KEYSVC_BLOB (Rkeysvcc. h)
+title: KEYSVC_BLOB (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 801be5f5a0d431f488da6e13e1f3082d147c5974
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e71a090558b31444c550146a2cb99f062080db9b80e7d69561ff891b93262b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992971"
 ---
-# <a name="keysvc_blob-structure"></a>\_Struttura BLOB KEYSVC
+# <a name="keysvc_blob-structure"></a>Struttura BLOB \_ KEYSVC
 
-La **struttura \_ BLOB KEYSVC** definisce un BLOB del servizio Key. Questa struttura viene utilizzata dalla funzione [**RKeyPFXInstall**](rkeypfxinstall.md) .
+La **struttura \_ BLOB KEYSVC** definisce un BLOB del servizio chiave. Questa struttura viene usata dalla [**funzione RKeyPFXInstall.**](rkeypfxinstall.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ typedef struct _KEYSVC_BLOB {
 
 <dl> <dt>
 
-**CB**
+**Cb**
 </dt> <dd>
 
-Valore **ULONG** che specifica la dimensione, in byte, del **PB**.
+Valore **ULONG** che specifica la dimensione, in byte, di **pb**.
 
 </dd> <dt>
 
-**PB**
+**Pb**
 </dt> <dd>
 
-Puntatore a un **byte** che contiene il BLOB, in formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+Puntatore a un **byte** che contiene il BLOB, in [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Puntatore a un **byte** che contiene il BLOB, in formato [*PKCS \# 12*](../secgl
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Puntatore a un **byte** che contiene il BLOB, in formato [*PKCS \# 12*](../secgl
 [**RKeyPFXInstall**](rkeypfxinstall.md)
 </dt> <dt>
 
-[**\_stringa Unicode \_ KEYSVC**](keysvc-unicode-string.md)
+[**STRINGA UNICODE KEYSVC \_ \_**](keysvc-unicode-string.md)
 </dt> </dl>
 
  

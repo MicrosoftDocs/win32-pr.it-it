@@ -1,9 +1,9 @@
 ---
 title: mul
-description: Moltiplica x e y con la matematica della matrice. Le colonne x e y della dimensione interna devono essere uguali.
+description: Moltiplica x e y usando la matematica della matrice. Le colonne x e y della dimensione interna devono essere uguali.
 ms.assetid: 9945388a-d802-4dbe-bdb7-4eadb8751c39
 keywords:
-- HLSL mul
+- mul HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a2e9fe545cb16f8ac1fef1935b9d7e97075521b6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e6362c734cbbf30defa8fed75f28c6f39397d75977488d9efc170d2647a9b3d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950361"
 ---
 # <a name="mul"></a>mul
 
-Moltiplica x e y con la matematica della matrice. Le colonne x e y della dimensione interna devono essere uguali.
+Moltiplica x e y usando la matematica della matrice. Le colonne x e y della dimensione interna devono essere uguali.
 
 
 
-| Mul RET (x, y) |
+| ret mul(x, y) |
 |---------------|
 
 
@@ -39,8 +39,8 @@ Moltiplica x e y con la matematica della matrice. Le colonne x e y della dimensi
 
 | Elemento                                                   | Descrizione                                                                           |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore di input x. Se x è un vettore, viene considerato come un vettore di riga.<br/>    |
-| <span id="y"></span><span id="Y"></span>*y*<br/> | \[nel \] valore di input y. Se y è un vettore, viene trattato come un vettore di colonna.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore di input x. Se x è un vettore, viene considerato come vettore di riga.<br/>    |
+| <span id="y"></span><span id="Y"></span>*Y*<br/> | \[in \] Valore di input y. Se y è un vettore, viene considerato come vettore di colonna.<br/> |
 
 
 
@@ -48,58 +48,58 @@ Moltiplica x e y con la matematica della matrice. Le colonne x e y della dimensi
 
 ## <a name="return-value"></a>Valore restituito
 
-Risultato di x volte y. Il risultato contiene le colonne x-Rows x y.
+Risultato di x x x y. Il risultato ha la dimensione x-rows x y-columns.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
-Sono disponibili 9 versioni di overload di questa funzione; le versioni di overload gestiscono i diversi casi per i tipi e le dimensioni degli argomenti di input.
+Esistono 9 versioni di overload di questa funzione. Le versioni di overload gestiscono i diversi case per i tipi e le dimensioni degli argomenti di input.
 
 
 
 | Versione | Nome | Scopo | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md) | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                                                                     |
 |---------|------|---------|---------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------|
 | 1       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | scalare                                                        | float, int                                                     | 1                                                                        |
-|         | y    | in ingresso      | scalare                                                        | uguale all'input x                                                | 1                                                                        |
-|         | RET  | in uscita     | scalare                                                        | uguale all'input x                                                | 1                                                                        |
+|         | x    | in      | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | y    | in      | scalare                                                        | uguale all'input x                                                | 1                                                                        |
+|         | Ret  | in uscita     | scalare                                                        | uguale all'input x                                                | 1                                                                        |
 | 2       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | scalare                                                        | float, int                                                     | 1                                                                        |
-|         | y    | in ingresso      | vettore                                                        | float, int                                                     | any                                                                      |
-|         | RET  | in uscita     | vettore                                                        | float, int                                                     | le stesse dimensioni di input y                                             |
+|         | x    | in      | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | y    | in      | vettore                                                        | float, int                                                     | any                                                                      |
+|         | Ret  | in uscita     | vettore                                                        | float, int                                                     | stesse dimensioni dell'input y                                             |
 | 3       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | scalare                                                        | float, int                                                     | 1                                                                        |
-|         | y    | in ingresso      | matrix                                                        | float, int                                                     | any                                                                      |
-|         | RET  | in uscita     | matrix                                                        | uguale all'input y                                                | le stesse dimensioni di input y                                             |
+|         | x    | in      | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | y    | in      | matrix                                                        | float, int                                                     | any                                                                      |
+|         | Ret  | in uscita     | matrix                                                        | uguale all'input y                                                | stesse dimensioni dell'input y                                             |
 | 4       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | vettore                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | scalare                                                        | float, int                                                     | 1                                                                        |
-|         | RET  | in uscita     | vettore                                                        | float, int                                                     | le stesse dimensioni di input x                                             |
+|         | x    | in      | vettore                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | Ret  | in uscita     | vettore                                                        | float, int                                                     | stesse dimensioni dell'input x                                             |
 | 5       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | vettore                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | vettore                                                        | float, int                                                     | le stesse dimensioni di input x                                             |
-|         | RET  | in uscita     | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | x    | in      | vettore                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | vettore                                                        | float, int                                                     | stesse dimensioni dell'input x                                             |
+|         | Ret  | in uscita     | scalare                                                        | float, int                                                     | 1                                                                        |
 | 6       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | vettore                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | matrix                                                        | float, int                                                     | righe = stesse dimensioni come input x, colonne = any                       |
-|         | RET  | in uscita     | vettore                                                        | float, int                                                     | le stesse dimensioni delle colonne di input y                                     |
+|         | x    | in      | vettore                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | matrix                                                        | float, int                                                     | rows = stesse dimensioni dell'input x, columns = any                       |
+|         | Ret  | in uscita     | vettore                                                        | float, int                                                     | stesse dimensioni delle colonne di input y                                     |
 | 7       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | matrix                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | scalare                                                        | float, int                                                     | 1                                                                        |
-|         | RET  | in uscita     | matrix                                                        | float, int                                                     | le stesse dimensioni di input x                                             |
+|         | x    | in      | matrix                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | scalare                                                        | float, int                                                     | 1                                                                        |
+|         | Ret  | in uscita     | matrix                                                        | float, int                                                     | stesse dimensioni dell'input x                                             |
 | 8       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | matrix                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | vettore                                                        | float, int                                                     | numero di colonne nell'input x                                             |
-|         | RET  | in uscita     | vettore                                                        | float, int                                                     | numero di righe nell'input x                                                |
+|         | x    | in      | matrix                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | vettore                                                        | float, int                                                     | numero di colonne nell'input x                                             |
+|         | Ret  | in uscita     | vettore                                                        | float, int                                                     | numero di righe nell'input x                                                |
 | 9       |      |         |                                                               |                                                                |                                                                          |
-|         | x    | in ingresso      | matrix                                                        | float, int                                                     | any                                                                      |
-|         | y    | in ingresso      | matrix                                                        | float, int                                                     | Rows = numero di colonne nell'input x                                      |
-|         | RET  | in uscita     | matrix                                                        | float, int                                                     | Rows = numero di righe nell'input x, colonne = numero di colonne nell'input y |
+|         | x    | in      | matrix                                                        | float, int                                                     | any                                                                      |
+|         | y    | in      | matrix                                                        | float, int                                                     | rows = numero di colonne nell'input x                                      |
+|         | Ret  | in uscita     | matrix                                                        | float, int                                                     | rows = numero di righe nell'input x, columns = number of columns in input y |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -107,7 +107,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader più elevati | sì       |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader superiori | sì       |
 
 
 

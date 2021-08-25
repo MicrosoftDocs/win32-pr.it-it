@@ -5,7 +5,7 @@ ms.assetid: 0d6a9a60-7909-4945-8186-3495e6fe9bc4
 keywords:
 - Metodo DeleteFolder Utilità di pianificazione
 - Metodo DeleteFolder Utilità di pianificazione , oggetto TaskFolder
-- Oggetto TaskFolder Utilità di pianificazione metodo , DeleteFolder
+- Oggetto TaskFolder Utilità di pianificazione, metodo DeleteFolder
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31080f017329cde376b646befd4b7e12ba02926b
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: a73dfe168b599de6e09d5437d0be4ec7a851d246f9fcbce0f79f662b62c56212
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974901"
 ---
 # <a name="taskfolderdeletefolder-method"></a>Metodo TaskFolder.DeleteFolder
 
@@ -67,8 +67,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

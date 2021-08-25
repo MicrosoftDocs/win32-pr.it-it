@@ -1,7 +1,7 @@
 ---
-description: "Il metodo CurrentStopTime recupera l'ora di arresto del segmento, impostata dal Metodo CBasePin:: NewSegment."
+description: Il metodo CurrentStopTime recupera l'ora di arresto del segmento, impostata dal metodo CBasePin::NewSegment.
 ms.assetid: 2066c4a5-2d39-4a2e-b2d6-48c615862aec
-title: Metodo CBasePin. CurrentStopTime (Amfilter. h)
+title: Metodo CBasePin.CurrentStopTime (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 74fb25184bbcd0778268f74a4c40ccfb0722287f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2905913828c91fffde9fb474802c8dea0e0f83d59ccdb5408f846a1936071cf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916701"
 ---
-# <a name="cbasepincurrentstoptime-method"></a>CBasePin. CurrentStopTime, metodo
+# <a name="cbasepincurrentstoptime-method"></a>Metodo CBasePin.CurrentStopTime
 
-Il `CurrentStopTime` metodo recupera l'ora di arresto del segmento, impostata dal metodo [**CBasePin:: NewSegment**](cbasepin-newsegment.md) .
+Il `CurrentStopTime` metodo recupera il tempo di arresto del segmento, impostato dal metodo [**CBasePin::NewSegment.**](cbasepin-newsegment.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore di [**CBasePin:: m \_ tStop**](cbasepin-m-tstop.md).
+Restituisce il valore di [**CBasePin::m \_ tStop**](cbasepin-m-tstop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore di [**CBasePin:: m \_ tStop**](cbasepin-m-tstop.md).
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCube:: TextureCube GatherRed'
-description: "Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare. | Metodi di TextureCube:: TextureCube GatherRed"
+title: Metodi GatherRed di TextureCube::TextureCube
+description: Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Metodi GatherRed di TextureCube::TextureCube
 ms.assetid: DDBFE342-C22D-46A3-BC7D-1D34ED2C0AD6
 keywords:
 - Metodi GatherRed HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: eda1781ebba1a49062792136d9049efef4863b13
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ea45df981449e20d092e613e47144d56d547274669e8fc1d167f45294c71af60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949151"
 ---
-# <a name="texturecubegatherred-methods"></a>Metodi TextureCube:: GatherRed
+# <a name="texturecubegatherred-methods"></a>Metodi TextureCube::GatherRed
 
-Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare.
+Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in 
 
 | Metodo                                                           | Descrizione                                                                                                                                     |
 |:-----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherRed (S, float, uint)**](tcube-gatherred-s-float-uint-.md)  | Restituisce i componenti rossi dei quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, oltre allo stato di mapping dei riquadri.<br/> |
+| [**GatherRed(S,float,uint)**](tcube-gatherred-s-float-uint-.md)  | Restituisce i componenti rossi dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

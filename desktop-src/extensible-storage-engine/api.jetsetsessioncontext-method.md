@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetSessionContext'
-title: API. JetSetSessionContext, metodo
+description: Altre informazioni sul metodo Api.JetSetSessionContext
+title: Metodo Api.JetSetSessionContext
 TOCTitle: 'JetSetSessionContext method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetSessionContext(Microsoft.Isam.Esent.Interop.JET_SESID,System.IntPtr)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetsessioncontext(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5d73a382a2b8e176e2d1ce6fa13585a6b5fa103e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5530988aff70589493645afb2bf0b78da63470a1f48d1619913fbfdf8d8c8af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977601"
 ---
-# <a name="apijetsetsessioncontext-method"></a>API. JetSetSessionContext, metodo
+# <a name="apijetsetsessioncontext-method"></a>Metodo Api.JetSetSessionContext
 
-Associa una sessione al thread corrente usando l'handle di contesto specificato. Questa associazione esegue l'override del requisito del motore predefinito che una transazione per una determinata sessione deve essere interamente eseguita sullo stesso thread. Utilizzare [JetResetSessionContext (JET_SESID)](./api.jetresetsessioncontext-method.md) per rimuovere l'associazione.
+Associa una sessione al thread corrente usando l'handle di contesto specificato. Questa associazione sostituisce il requisito predefinito del motore che una transazione per una determinata sessione deve essere eseguita interamente nello stesso thread. Usare [JetResetSessionContext(JET_SESID)](./api.jetresetsessioncontext-method.md) per rimuovere l'associazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public static void JetSetSessionContext(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione in cui impostare il contesto.
+    Sessione su cui impostare il contesto.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Contesto da impostare.
 
@@ -79,6 +79,6 @@ public static void JetSetSessionContext(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

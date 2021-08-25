@@ -1,19 +1,19 @@
 ---
-title: Enumerazioni di messaggi e notifiche di input del puntatore
-description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per i messaggi di input del puntatore e le enumerazioni delle notifiche.
+title: Enumerazioni di notifiche e messaggi di input del puntatore
+description: Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni Pointer Input Messages (Messaggi di input puntatore) e Notifications (Notifiche).
 ms.assetid: 22241CD0-DAE1-4AC2-AB36-23D114803133
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: a857d5f2c5df826e4ba22a7e29448edff581b404
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 5eb9c9ca21a90d28951d4b574b9b91b5bcf04cc70a79c460209db9eabc7af36f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964285"
 ---
-# <a name="pointer-input-messages-and-notifications-enumerations"></a>Enumerazioni di messaggi e notifiche di input del puntatore
+# <a name="pointer-input-messages-and-notifications-enumerations"></a>Enumerazioni di notifiche e messaggi di input del puntatore
 
-Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per [i messaggi di input del puntatore e](messages-and-notifications-portal.md) le enumerazioni delle notifiche.
+Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per le enumerazioni [Pointer Input Messages (Messaggi di input puntatore)](messages-and-notifications-portal.md) e Notifications (Notifiche).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -32,7 +32,7 @@ Negli argomenti di questa sezione vengono fornite le specifiche di riferimento p
 
 <dl> <dt>
 
-[Riferimento al messaggio di input del puntatore](wmpointer-reference.md)
+[Informazioni di riferimento sul messaggio di input del puntatore](wmpointer-reference.md)
 </dt> </dl>
 
  

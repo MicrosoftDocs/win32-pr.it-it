@@ -1,41 +1,41 @@
 ---
-title: Ottenere le funzionalità di formattazione tramite IWMDMDevice
-description: Ottenere le funzionalità di formato nei dispositivi che supportano solo IWMDMDevice
+title: Ottenere funzionalità di formato tramite IWMDMDevice
+description: Recupero delle funzionalità di formato nei dispositivi che supportano solo IWMDMDevice
 ms.assetid: bff079a1-d192-4e53-9b1d-9ad3b5dcca51
 keywords:
-- Windows Media Gestione dispositivi, funzionalità del dispositivo
+- Windows Gestione dispositivi multimediali, funzionalità del dispositivo
 - Gestione dispositivi, funzionalità del dispositivo
-- Guida per programmatori, funzionalità del dispositivo
-- applicazioni desktop, funzionalità del dispositivo
-- creazione di applicazioni Windows Media Gestione dispositivi, funzionalità del dispositivo
-- scrittura di file nei dispositivi, funzionalità del dispositivo
+- guida per programmatori, funzionalità del dispositivo
+- applicazioni desktop, funzionalità dei dispositivi
+- creazione Windows applicazioni di Gestione dispositivi multimediali, funzionalità del dispositivo
+- scrittura di file in dispositivi, funzionalità del dispositivo
 - Metodo IWMDMDevice
-- Windows Media Gestione dispositivi, metodo IWMDMDevice
+- Windows Media Device Manager,Metodo IWMDMDevice
 - Gestione dispositivi, metodo IWMDMDevice
-- Guida per programmatori, metodo IWMDMDevice
+- Guida per programmatori,metodo IWMDMDevice
 - applicazioni desktop, metodo IWMDMDevice
-- creazione di applicazioni Windows Media Gestione dispositivi, metodo IWMDMDevice
+- creazione Windows applicazioni di Gestione dispositivi multimediali,metodo IWMDMDevice
 - scrittura di file nei dispositivi, metodo IWMDMDevice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a923919611b40197b1deed30e781042e008ef41
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: f3fe71969b48ded5616ee34e90a3420a77f468dfd9fb7f2cf0c6d14168a6fbb2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "104335756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957526"
 ---
-# <a name="getting-format-capabilities-through-iwmdmdevice"></a>Ottenere le funzionalità di formattazione tramite IWMDMDevice
+# <a name="getting-format-capabilities-through-iwmdmdevice"></a>Ottenere funzionalità di formato tramite IWMDMDevice
 
-Il metodo consigliato per l'esecuzione di query su un dispositivo per le funzionalità di riproduzione è [**IWMDMDevice3:: GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability). Tuttavia, se un dispositivo non supporta questo metodo, l'applicazione può invece chiamare [**IWMDMDevice:: GetFormatSupport**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getformatsupport) per recuperare una matrice di formati audio supportati come strutture [**\_ WAVEFORMATEX**](-waveformatex.md) e formati MIME come stringhe dal dispositivo.
+Il metodo consigliato per eseguire query su un dispositivo per le funzionalità di riproduzione è [**IWMDMDevice3::GetFormatCapability**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice3-getformatcapability). Tuttavia, se un dispositivo non supporta questo metodo, l'applicazione può chiamare [**invece IWMDMDevice::GetFormatSupport**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmdevice-getformatsupport) per recuperare una matrice di formati audio supportati come [**\_ strutture WAVEFORMATEX**](-waveformatex.md) e formati MIME come stringhe dal dispositivo.
 
-Nei passaggi seguenti viene illustrato come un'applicazione può utilizzare questo metodo per eseguire una query su un dispositivo per i formati supportati:
+La procedura seguente illustra come un'applicazione può usare questo metodo per eseguire query su un dispositivo per trovare i formati supportati:
 
-1.  Chiamare **GetFormatSupport** per recuperare matrici di formati audio e MIME.
-2.  Scorrere i formati audio recuperati ed esaminare ogni struttura [**\_ WAVEFORMATEX**](-waveformatex.md) per provare a trovare un formato audio accettabile
-3.  Scorrere le stringhe di formato MIME recuperate (se necessario) per trovare un tipo di file accettabile. L'SDK non definisce le costanti per i formati MIME. è consigliabile usare i valori standard del settore (disponibili nel sito Web iana.org). Un dispositivo dovrebbe elencare i tipi MIME specifici supportati.
+1.  Chiamare **GetFormatSupport** per recuperare matrici di formati audio e mime.
+2.  Scorrere i formati audio recuperati ed esaminare ogni [**\_ struttura WAVEFORMATEX**](-waveformatex.md) per provare a trovare un formato audio accettabile
+3.  Scorrere le stringhe di formato MIME recuperate (se necessario) per trovare un tipo di file accettabile. L'SDK non definisce costanti per i formati MIME. È consigliabile usare i valori standard del settore (disponibili nel iana.org Web). Un dispositivo deve elencare i tipi MIME specifici supportati.
 
-Il codice C++ seguente illustra come recuperare le funzionalità di formattazione da un dispositivo, usando **GetFormatSupport**.
+Il codice C++ seguente illustra il recupero di funzionalità di formato da un dispositivo usando **GetFormatSupport**.
 
 
 ```C++
@@ -95,12 +95,12 @@ void CWMDMController::GetCaps(IWMDMDevice* pDevice)
 [**Individuazione delle funzionalità del formato del dispositivo**](discovering-device-format-capabilities.md)
 </dt> <dt>
 
-[**Ottenere le funzionalità di formato nei dispositivi che supportano IWMDMDevice3**](getting-format-capabilities-on-devices-that-support-iwmdmdevice3.md)
+[**Recupero delle funzionalità di formato nei dispositivi che supportano IWMDMDevice3**](getting-format-capabilities-on-devices-that-support-iwmdmdevice3.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

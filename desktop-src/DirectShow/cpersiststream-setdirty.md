@@ -1,7 +1,7 @@
 ---
-description: Modifica il flag Dirty per il flusso corrente.
+description: Modifica il flag dirty per il flusso corrente.
 ms.assetid: 65fa7fbe-4fa7-45a3-91a4-4a3547b035b9
-title: Metodo CPersistStream. IsDirty (pStream. h)
+title: Metodo CPersistStream.SetDirty (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 382b74f6314beb586b1e51c02a257cad8904c188
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31a00de873f33cedd1451ebebd0ec21f1dfaa83690923712d867ec4a8d34d502
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909301"
 ---
-# <a name="cpersiststreamsetdirty-method"></a>Metodo CPersistStream. IsDirty
+# <a name="cpersiststreamsetdirty-method"></a>Metodo CPersistStream.SetDirty
 
-Modifica il flag Dirty per il flusso corrente.
+Modifica il flag dirty per il flusso corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT SetDirty(
 *fDirty* 
 </dt> <dd>
 
-Nuovo flag Dirty per questo flusso. **True** indica che i dati non sono stati salvati.
+Nuovo flag dirty per questo flusso. **TRUE** indica che i dati non sono stati salvati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

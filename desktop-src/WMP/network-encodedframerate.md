@@ -1,9 +1,9 @@
 ---
-title: Rete. encodedFrameRate
-description: La proprietà encodedFrameRate recupera la frequenza dei fotogrammi video specificata dall'autore del contenuto in frame al secondo.
+title: Network.encodedFrameRate
+description: La proprietà encodedFrameRate recupera la frequenza fotogrammi video specificata dall'autore del contenuto in fotogrammi al secondo.
 ms.assetid: 7dad5c90-f750-48d7-9dda-3fc07394edcc
 keywords:
-- Media Player di Windows Network. encodedFrameRate
+- Network.encodedFrameRate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0008eb5d648dc7d3f51b40329ca3d830c3590c49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1f64b6f57b4cfd0e7bc94715f80c1066ebe23a601e64c173926cf2cd9e36393
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901701"
 ---
-# <a name="networkencodedframerate"></a>Rete. encodedFrameRate
+# <a name="networkencodedframerate"></a>Network.encodedFrameRate
 
-La proprietà **encodedFrameRate** recupera la frequenza dei fotogrammi video specificata dall'autore del contenuto in frame al secondo.
+La **proprietà encodedFrameRate** recupera la frequenza fotogrammi video specificata dall'autore del contenuto in fotogrammi al secondo.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **encodedFrameRate**
+*lettore*. *network*. **encodedFrameRate**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **encodedFrameRate** consente di visualizzare la frequenza dei fotogrammi specificata quando il file è stato codificato. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FR". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **encodedFrameRate per** visualizzare la frequenza dei fotogrammi specificata quando il file è stato codificato. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FR". **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -62,7 +62,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **encodedFrameRate** c
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,7 +74,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **encodedFrameRate** c
 [**Oggetto di rete**](network-object.md)
 </dt> <dt>
 
-[**Rete. frameRate**](network-framerate.md)
+[**Network.frameRate**](network-framerate.md)
 </dt> </dl>
 
  

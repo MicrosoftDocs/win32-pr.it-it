@@ -1,22 +1,22 @@
 ---
-title: Programma trasferito a Windows
-description: Il programma seguente è un programma Windows OpenGL con lo stesso codice OpenGL usato in AUXDEMO. Programma di esempio C fornito con Platform SDK. Confrontare questo programma con il programma X Window System OpenGL in un programma OpenGL di sistema X Window.
+title: Il programma è stato Windows
+description: Il programma seguente è un Windows OpenGL con lo stesso codice OpenGL usato in AUXDEMO. Programma di esempio C fornito con Platform SDK. Confrontare questo programma con il programma X Window System OpenGL in An X Window System OpenGL Program.
 ms.assetid: c42dce45-8f9e-4920-ac3d-ff7549aae3e9
 keywords:
 - porting in OpenGL, esempio
-- Porting OpenGL, esempio
+- Portabilità OpenGL, esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d0b86851ebc6acd5e61997b7e2efae662b11554
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f8a90e205dbebc8ff4228e3114080b0e535cc6ecdcb6ebbd40738d6afc363fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888031"
 ---
-# <a name="the-program-ported-to-windows"></a>Programma trasferito a Windows
+# <a name="the-program-ported-to-windows"></a>Il programma è stato Windows
 
-Il programma seguente è un programma Windows OpenGL con lo stesso codice OpenGL usato in AUXDEMO. Programma di esempio C fornito con Platform SDK. Confrontare questo programma con il programma X Window System OpenGL in [un programma OpenGL di sistema x window](an-x-window-system-opengl-program.md).
+Il programma seguente è un Windows OpenGL con lo stesso codice OpenGL usato in AUXDEMO. Programma di esempio C fornito con Platform SDK. Confrontare questo programma con il programma X Window System OpenGL in [An X Window System OpenGL Program](an-x-window-system-opengl-program.md).
 
 
 ```C++
@@ -349,9 +349,9 @@ GLvoid drawScene(GLvoid)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

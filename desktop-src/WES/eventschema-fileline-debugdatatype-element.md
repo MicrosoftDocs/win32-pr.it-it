@@ -1,6 +1,6 @@
 ---
 title: Elemento FileLine (DebugDataType)
-description: Il nome del file di origine e la riga all'interno del file di origine che ha registrato il messaggio di traccia.
+description: Nome del file di origine e riga all'interno del file di origine che ha registrato il messaggio di traccia.
 ms.assetid: 398fc254-d48f-49eb-9554-f110a7665628
 keywords:
 - Elemento FileLine EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 195c964e58e40a7bb4b77e8da142d3224159427b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6cceb2d6c7730aed49f91aab464e692ff3fa03873bcce8b3da1f60f8fdb58add
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904791"
 ---
 # <a name="fileline-debugdatatype-element"></a>Elemento FileLine (DebugDataType)
 
-Il nome del file di origine e la riga all'interno del file di origine che ha registrato il messaggio di traccia.
+Nome del file di origine e riga all'interno del file di origine che ha registrato il messaggio di traccia.
 
 ``` syntax
 <xs:element name="FileLine"
@@ -30,7 +30,7 @@ Il nome del file di origine e la riga all'interno del file di origine che ha reg
  />
 ```
 
-L'elemento **FileLine** è definito dal tipo complesso [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+**L'elemento FileLine** è definito dal [**tipo complesso DebugDataType.**](eventschema-debugdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **FileLine** è definito dal tipo complesso [**DebugDataType**](event
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

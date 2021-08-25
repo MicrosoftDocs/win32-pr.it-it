@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentIndexTuplesCannotRetrieveFromIndexException'
+description: Altre informazioni sul costruttore EsentIndexTuplesCannotRetrieveFromIndexException
 title: Costruttore EsentIndexTuplesCannotRetrieveFromIndexException
 TOCTitle: 'EsentIndexTuplesCannotRetrieveFromIndexException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIndexTuplesCannotRetrieveFromIndexException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8369b4e07437d3b749091a0b1c549188ddb6fc24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd2a715c3e0c40196117d679b6f8c4ddcaf1b809865867f169035ec90c9fe861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973111"
 ---
 # <a name="esentindextuplescannotretrievefromindexexception-constructor"></a>Costruttore EsentIndexTuplesCannotRetrieveFromIndexException
 
 Inizializza una nuova istanza della classe EsentIndexTuplesCannotRetrieveFromIndexException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentIndexTuplesCannotRetrieveFromIndexException()
 
 [Membri di EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

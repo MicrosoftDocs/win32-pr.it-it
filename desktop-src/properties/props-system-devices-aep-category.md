@@ -4,12 +4,12 @@ ms.assetid: 40fde8e1-7c09-4486-89d2-f86f6d48b4bf
 title: System.Devices.Aep.Category
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0625744d735bb6884a96894c4c47e2152e66f6f7
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: f70d535d7ae0ca4586d32cbda30cfdfab48e2fe194177f8f4f662cb0423fc830
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946171"
 ---
 # <a name="systemdevicesaepcategory"></a>System.Devices.Aep.Category
 

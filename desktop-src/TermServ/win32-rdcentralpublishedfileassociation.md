@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDCentralPublishedFileAssociation
+title: Win32_RDCentralPublishedFileAssociation classe
 description: Informazioni per un'estensione di file associata a un'applicazione.
 ms.assetid: ba12d933-572c-48d3-bf0f-1c99de61457d
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_RDCentralPublishedFileAssociation Servizi Desktop remoto
-- Classe Win32_RDCentralPublishedFileAssociation Servizi Desktop remoto, descritta
+- Win32_RDCentralPublishedFileAssociation classe Servizi Desktop remoto
+- Win32_RDCentralPublishedFileAssociation classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a0f1c9bf7905504ee3aa2ba6fff7e9804f4747
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41361959c56810036b8ca2e17d338e2ff1d3433c6e0384fd168a2d21d6e0e0f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868451"
 ---
-# <a name="win32_rdcentralpublishedfileassociation-class"></a>Win32 \_ RDCentralPublishedFileAssociation (classe)
+# <a name="win32_rdcentralpublishedfileassociation-class"></a>Classe \_ RDCentralPublishedFileAssociation Win32
 
 Informazioni per un'estensione di file associata a un'applicazione
 
@@ -52,65 +52,65 @@ class Win32_RDCentralPublishedFileAssociation
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ RDCentralPublishedFileAssociation** presenta questi tipi di membri:
+La **classe \_ WIN32 RDCentralPublishedFileAssociation** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ RDCentralPublishedFileAssociation** dispone di queste proprietà.
+La **classe WIN32 \_ RDCentralPublishedFileAssociation** ha queste proprietà.
 
 <dl> <dt>
 
 **AppAlias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Alias dell'associazione di file RemoteApp.
+Alias dell'applicazione RemoteApp dell'associazione di file.
 
 </dd> <dt>
 
 **ExtName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome dell'estensione, ad esempio. txt.
+Nome dell'estensione,ad esempio .txt.
 
 </dd> <dt>
 
 **FarmAlias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Alias della farm RemoteApp's dell'associazione file
+Alias della farm di RemoteApp dell'associazione file
 
 </dd> <dt>
 
 **IconContents**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Contenuto dell'icona per questa associazione di file.
@@ -120,26 +120,26 @@ Contenuto dell'icona per questa associazione di file.
 **PrimaryHandler**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Riservato per utilizzi futuri. Sarà sempre **true**.
+Riservato per utilizzi futuri. Sarà sempre **true.**
 
 </dd> <dt>
 
 **ProgIdHint**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Suggerimento per aprire i documenti con questa associazione di file.
+Suggerimento per consentire l'apertura di documenti con questa associazione di file.
 
 </dd> </dl>
 
@@ -151,8 +151,8 @@ Suggerimento per aprire i documenti con questa associazione di file.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

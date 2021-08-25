@@ -3,7 +3,7 @@ title: Elemento MiniToolbar
 description: Rappresenta una barra degli strumenti contestuale.
 ms.assetid: bb50890d-554a-4add-a583-d4fd48b823bf
 keywords:
-- Barra multifunzione di Windows per l'elemento MiniToolbar
+- Elemento MiniToolbar Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: e47fee9fbf2b6b0bc95153fd512f6484129dc7f3edebd56e1d97664ecc2bbef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881741"
 ---
 # <a name="minitoolbar-element"></a>Elemento MiniToolbar
 

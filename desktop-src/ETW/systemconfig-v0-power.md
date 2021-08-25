@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab268e719374906e149dc9c1b733487f986e8308
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 588622fb010cf9ca43f7253adc269e86b1755e5e459cbd6320a28d1d5416706a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914341"
 ---
 # <a name="systemconfig_v0_power-class"></a>Classe SystemConfig \_ V0 \_ Power
 
@@ -197,7 +197,7 @@ True indica che il sistema supporta lo stato di sospensione S5.
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

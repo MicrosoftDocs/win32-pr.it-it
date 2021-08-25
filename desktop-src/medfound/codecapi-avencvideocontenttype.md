@@ -1,35 +1,35 @@
 ---
 description: Indica il tipo di contenuto video per un codificatore video.
 ms.assetid: 2BCAA6F3-E08A-4387-BD48-038A7A3B1ADB
-title: Proprietà CODECAPI_AVEncVideoContentType (codecapit. h)
+title: CODECAPI_AVEncVideoContentType proprietà (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 158a8344718f190ee100ae472353dc026db73fa4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4170d4545a0435e06b81e3112a72fef0ced3030dfbecc91bad7e70607b412597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959111"
 ---
-# <a name="codecapi_avencvideocontenttype-property"></a>Proprietà AVEncVideoContentType di codecapi \_
+# <a name="codecapi_avencvideocontenttype-property"></a>CODECAPI \_ AVEncVideoContentType - proprietà
 
 Indica il tipo di contenuto video per un codificatore video.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**ULONG**
+**Ulong**
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoContentType**
+**CODECAPI \_ AVEncVideoContentType**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un membro dell'enumerazione [**eAVEncVideoContentType**](/windows/win32/api/codecapi/ne-codecapi-eavencvideocontenttype) .
+Il valore di questa proprietà è un membro [**dell'enumerazione eAVEncVideoContentType.**](/windows/win32/api/codecapi/ne-codecapi-eavencvideocontenttype)
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è un hint per il codificatore per ottimizzare le impostazioni di codifica.
+Questa proprietà è un suggerimento al codificatore per ottimizzare le impostazioni di codifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Questa proprietà è un hint per il codificatore per ottimizzare le impostazioni
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Questa proprietà è un hint per il codificatore per ottimizzare le impostazioni
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

@@ -1,8 +1,8 @@
 ---
-description: Descrive la sessione di accesso o le sessioni associate a un utente connesso a un computer in cui è in esecuzione Windows.
+description: Descrive la sessione o le sessioni di accesso associate a un utente connesso a un computer che esegue Windows.
 ms.assetid: d09a115b-95a3-47c7-a04d-c810d044ccc8
 ms.tgt_platform: multiple
-title: Classe Win32_LogonSession
+title: Win32_LogonSession classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 78e14bbd41c2fd8bb0c10a7bfeeda0dc9d426b0f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85cbc80050fafe887fa99974c41666c7189b2b12c21559aac0255870b2a697d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103747983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972983"
 ---
-# <a name="win32_logonsession-class"></a>Win32 \_ LogonSession (classe)
+# <a name="win32_logonsession-class"></a>Classe LogonSession Win32 \_
 
-La classe WMI **Win32 \_ LogonSession** (vedere [recupero di una classe WMI](/windows/desktop/wmisdk/retrieving-a-class)) descrive la sessione di accesso o le sessioni associate a un utente connesso a un computer che esegue Windows.
+La classe WMI **\_ Win32 LogonSession** (vedere Recupero di una classe [WMI)](/windows/desktop/wmisdk/retrieving-a-class)descrive la sessione o le sessioni di accesso associate a un utente connesso a un computer che esegue Windows.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,51 +56,51 @@ class Win32_LogonSession : Win32_Session
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ LogonSession** presenta questi tipi di membri:
+La **classe \_ LogonSession Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ LogonSession** dispone di queste proprietà.
+La **classe Win32 \_ LogonSession** ha queste proprietà.
 
 <dl> <dt>
 
 **AuthenticationPackage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del sottosistema usato per autenticare la sessione di accesso.
+Nome del sottosistema utilizzato per autenticare la sessione di accesso.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -109,50 +109,50 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**IDaccesso**
+**ID di accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 ID assegnato alla sessione di accesso.
 
 </dd> <dt>
 
-**LogonType**
+**Tipo di accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -176,7 +176,7 @@ Utilizzato solo dall'account di sistema.
 
 </dt> <dd>
 
-Destinato agli utenti che usano in modo interattivo il computer, ad esempio un utente che ha eseguito l'accesso da un server terminal, una shell remota o un processo simile.
+Destinato agli utenti che usano il computer in modo interattivo, ad esempio un utente connesso da un server terminal, una shell remota o un processo simile.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Destinato agli utenti che usano in modo interattivo il computer, ad esempio un u
 
 </dt> <dd>
 
-Destinata ai server ad alte prestazioni per l'autenticazione di password in testo non crittografato. LogonUser non memorizza nella cache le credenziali per questo tipo di accesso.
+Destinato ai server ad alte prestazioni per autenticare le password non crittografate. LogonUser non memorizza nella cache le credenziali per questo tipo di accesso.
 
 </dd> <dt>
 
@@ -198,7 +198,7 @@ Destinata ai server ad alte prestazioni per l'autenticazione di password in test
 
 </dt> <dd>
 
-Destinato ai server batch, in cui i processi possono essere eseguiti per conto di un utente senza l'intervento diretto; o per server con prestazioni più elevate che elaborano molti tentativi di autenticazione in testo non crittografato alla volta, ad esempio posta elettronica o server Web. LogonUser non memorizza nella cache le credenziali per questo tipo di accesso.
+Destinato ai server batch, in cui i processi possono essere eseguiti per conto di un utente senza l'intervento diretto; o per server con prestazioni più elevate che elaborano molti tentativi di autenticazione in testo non crittografato alla volta, ad esempio server di posta elettronica o Web. LogonUser non memorizza nella cache le credenziali per questo tipo di accesso.
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Destinato ai server batch, in cui i processi possono essere eseguiti per conto d
 
 </dt> <dd>
 
-Indica un accesso del tipo di servizio. Per l'account specificato deve essere abilitato il privilegio servizio.
+Indica un accesso di tipo servizio. Per l'account specificato deve essere abilitato il privilegio del servizio.
 
 </dd> <dt>
 
@@ -231,7 +231,7 @@ Indica un accesso di tipo proxy.
 
 </dt> <dd>
 
-Questo tipo di accesso è concepito per la registrazione delle DLL GINA sugli utenti che usano il computer in modo interattivo. Questo tipo di accesso consente la generazione di un record di controllo univoco che indica quando la workstation è stata sbloccata.
+Questo tipo di accesso è destinato alla registrazione delle DLL DELL'APPLICAZIONE per gli utenti che usano il computer in modo interattivo. Questo tipo di accesso consente di generare un record di controllo univoco che indica quando la workstation è stata sbloccata.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ Questo tipo di accesso è concepito per la registrazione delle DLL GINA sugli ut
 
 </dt> <dd>
 
-Conserva il nome e la password nei pacchetti di autenticazione, consentendo al server di stabilire connessioni ad altri server di rete durante la rappresentazione del client. Questo consente a un server di accettare le credenziali di testo non crittografato da un client, chiamare LogonUser, verificare che l'utente possa accedere al sistema attraverso la rete e comunicare comunque con altri server.
+Mantiene il nome e la password nei pacchetti di autenticazione, consentendo al server di effettuare connessioni ad altri server di rete durante la rappresentazione del client. In questo modo un server può accettare credenziali non crittografate da un client, chiamare LogonUser, verificare che l'utente possa accedere al sistema attraverso la rete e comunicare comunque con altri server.
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Conserva il nome e la password nei pacchetti di autenticazione, consentendo al s
 
 </dt> <dd>
 
-Consente al chiamante di clonare il token corrente e specificare nuove credenziali per le connessioni in uscita. La nuova sessione di accesso ha la stessa identità locale, ma usa credenziali diverse per altre connessioni di rete.
+Consente al chiamante di clonare il token corrente e specificare nuove credenziali per le connessioni in uscita. La nuova sessione di accesso ha la stessa identificazione locale, ma usa credenziali diverse per altre connessioni di rete.
 
 </dd> <dt>
 
@@ -264,7 +264,7 @@ Consente al chiamante di clonare il token corrente e specificare nuove credenzia
 
 </dt> <dd>
 
-Sessione Servizi terminal che è sia remota che interattiva.
+Sessione di Servizi terminal sia remota che interattiva.
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Sessione Servizi terminal che è sia remota che interattiva.
 
 </dt> <dd>
 
-Provare le credenziali memorizzate nella cache senza accedere alla rete.
+Provare a memorizzare le credenziali nella cache senza accedere alla rete.
 
 </dd> <dt>
 
@@ -286,7 +286,7 @@ Provare le credenziali memorizzate nella cache senza accedere alla rete.
 
 </dt> <dd>
 
-Uguale a RemoteInteractive. Viene utilizzato per il controllo interno.
+Uguale a RemoteInteractive. Viene usato per il controllo interno.
 
 </dd> <dt>
 
@@ -306,7 +306,7 @@ Accesso alla workstation.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -315,16 +315,16 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -332,27 +332,27 @@ Tipo di accesso: sola lettura
 
 Ora di inizio della sessione.
 
-Questa proprietà viene ereditata [**dalla \_ sessione Win32**](win32-session.md).
+Questa proprietà viene ereditata da [**Win32 \_ Session.**](win32-session.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto. È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "danneggiato" e "errore predazione". "Predator fail" indica che un elemento funziona correttamente, ma sta stimando un errore, ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Danneggiato" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma prevede un errore , ad esempio un'unità disco rigido abilitata per SMART.
 
-Lo stato non operativo può includere "Error", "starting", "stoping" e "Service". Il "servizio" può essere applicato durante il mirroring del disco, ovvero la riattivazione, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". Il "servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -367,77 +367,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -446,9 +446,9 @@ Ridotto **("danneggiato"** )
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di [elenco di informazioni sulla sessione di accesso](https://Gallery.TechNet.Microsoft.Com/scriptcenter/64cc7ab5-f1cd-460c-9d37-e6f989444de3) di PowerShell restituisce informazioni sulle sessioni di accesso associate all'utente attualmente connesso a un computer.
+L'esempio di PowerShell List [Logon Session Information](https://Gallery.TechNet.Microsoft.Com/scriptcenter/64cc7ab5-f1cd-460c-9d37-e6f989444de3) restituisce informazioni sulle sessioni di accesso associate all'utente attualmente connesso a un computer.
 
-Nell'esempio di PowerShell seguente viene verificata l'apertura di una sessione remota per un utente specifico.
+Nell'esempio di PowerShell seguente viene verificata l'apertura di una sessione remota per un utente specificato.
 
 
 ```PowerShell
@@ -479,7 +479,7 @@ $servers = gci servers.txt
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -488,7 +488,7 @@ $servers = gci servers.txt
 
 <dl> <dt>
 
-[**\_Sessione Win32**](win32-session.md)
+[**Sessione \_ Win32**](win32-session.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

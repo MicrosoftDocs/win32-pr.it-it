@@ -1,7 +1,7 @@
 ---
-description: Dispositivi portatili Windows supporta le seguenti proprietà dell'attributo di risorsa.
+description: Windows Dispositivi portabili supporta le proprietà degli attributi delle risorse seguenti.
 ms.assetid: 9b90db8a-e833-48cf-b484-70ac5ac32a76
-title: Proprietà degli attributi delle risorse (PortableDevice. h)
+title: Proprietà degli attributi delle risorse (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 64f4f394fcd91d50f323a8e46a9556daa6a8dbff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 956cd349089afb00a1350bf32e8f06acd5747599f6d5a731e4bf5d8dd1c96295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928071"
 ---
 # <a name="resource-attribute-properties"></a>Proprietà degli attributi delle risorse
 
-Dispositivi portatili Windows supporta le seguenti proprietà dell'attributo di risorsa.
+Windows Dispositivi portabili supporta le proprietà degli attributi delle risorse seguenti.
 
 
 
 | Proprietà                                    | VarType         | Descrizione                                                                                                                                                               |
 |---------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_chiave di \_ risorsa dell'attributo della risorsa WPD \_ \_** | **VT \_ sconosciuto** | Si tratta di un [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) contenente un singolo valore, ovvero la chiave che identifica la risorsa.                     |
-| **\_formato dell' \_ attributo della risorsa WPD \_**        | **\_CLSID VT**   | Valore GUID che specifica il formato della risorsa. Vedere [formati oggetto](object-format-guids.md) per un elenco di formati definiti da dispositivi portatili Windows. |
-| **\_ \_ dimensioni totali dell'attributo della risorsa WPD \_ \_**   | **\_UI8 VT**     | Dimensioni totali, in byte, dei dati della risorsa.                                                                                                                            |
+| **CHIAVE DI RISORSA \_ \_ DELL'ATTRIBUTO \_ DELLA RISORSA \_ WPD** | **VT \_ UNKNOWN** | Si tratta di [**un oggetto IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) contenente un singolo valore, ovvero la chiave che identifica la risorsa.                     |
+| **FORMATO DELL'ATTRIBUTO DELLA RISORSA WPD \_ \_ \_**        | **VT \_ CLSID**   | Valore GUID che specifica il formato della risorsa. Vedere [Formati di oggetto](object-format-guids.md) per un elenco di formati definiti da Windows dispositivi portatili. |
+| **DIMENSIONI TOTALI \_ DELL'ATTRIBUTO DELLA RISORSA \_ \_ \_ WPD**   | **Interfaccia utente \_ VT8**     | Dimensioni totali dei dati delle risorse, in byte.                                                                                                                            |
 
 
 
@@ -38,7 +38,7 @@ Dispositivi portatili Windows supporta le seguenti proprietà dell'attributo di 
 
 ## <a name="remarks"></a>Commenti
 
-Questi attributi vengono restituiti dal metodo [**IPortableDeviceResources:: GetResourceAttributes**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getresourceattributes) .
+Questi attributi vengono restituiti dal [**metodo IPortableDeviceResources::GetResourceAttributes.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getresourceattributes)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Questi attributi vengono restituiti dal metodo [**IPortableDeviceResources:: Get
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -57,7 +57,7 @@ Questi attributi vengono restituiti dal metodo [**IPortableDeviceResources:: Get
 [**IPortableDeviceResources::GetResourceAttributes**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getresourceattributes)
 </dt> <dt>
 
-[**Proprietà e attributi di WPD**](properties-and-attributes.md)
+[**Proprietà e attributi WPD**](properties-and-attributes.md)
 </dt> </dl>
 
  

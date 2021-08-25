@@ -1,77 +1,77 @@
 ---
-title: Uso di tasti di scelta rapida
-description: In questa sezione vengono illustrate le attività associate agli acceleratori tastiera.
+title: Uso dei tasti di scelta rapida
+description: Questa sezione illustra le attività associate ai tasti di scelta rapida.
 ms.assetid: 11c42d69-7454-43e6-9f44-c14a283814ce
 keywords:
 - input utente, tasti di scelta rapida
-- acquisizione dell'input dell'utente, tasti di scelta rapida
+- acquisizione di input dell'utente, tasti di scelta rapida
 - tasti di scelta rapida
-- acceleratori
+- Acceleratori
 - tabelle dei tasti di scelta rapida
-- risorse tabella di tasti di scelta rapida
-- translate Accelerator (funzione)
-- Messaggio WM_COMMAND
-- WM_SYS messaggio di comando
+- risorse accelerator-table
+- Funzione di conversione dei tasti di scelta rapida
+- WM_COMMAND messaggio
+- WM_SYS messaggio COMMAND
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2241ba828ea9e6be5e4bb0b7471adcc3130940ca
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ecbb16c92b986cbe73aababc7edc24518cf59ce5009322e3a006bac827427c45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886566"
 ---
-# <a name="using-keyboard-accelerators"></a>Uso di tasti di scelta rapida
+# <a name="using-keyboard-accelerators"></a>Uso dei tasti di scelta rapida
 
-In questa sezione vengono illustrate le attività associate agli acceleratori tastiera.
+Questa sezione illustra le attività associate ai tasti di scelta rapida.
 
--   [Uso di una risorsa della tabella dei tasti di scelta rapida](#using-an-accelerator-table-resource)
-    -   [Creazione della risorsa della tabella dei tasti di scelta rapida](#creating-the-accelerator-table-resource)
-    -   [Caricamento della risorsa della tabella dei tasti di scelta rapida](#loading-the-accelerator-table-resource)
-    -   [Chiamata della funzione di accelerazione translate](#calling-the-translate-accelerator-function)
-    -   [Elaborazione \_ dei messaggi di comando WM](/windows)
-    -   [Eliminazione definitiva della risorsa della tabella dei tasti di scelta rapida](#destroying-the-accelerator-table-resource)
-    -   [Creazione di acceleratori per gli attributi del tipo di carattere](#creating-accelerators-for-font-attributes)
--   [Uso di una tabella di tasti di scelta rapida creata in fase di esecuzione](#using-an-accelerator-table-created-at-run-time)
-    -   [Creazione di una tabella Run-Time Accelerator](#creating-a-run-time-accelerator-table)
-    -   [Elaborazione di acceleratori](#processing-accelerators)
-    -   [Eliminazione di una tabella di tasti di scelta rapida Run-Time](#destroying-a-run-time-accelerator-table)
+-   [Uso di una risorsa tabella dei tasti di scelta rapida](#using-an-accelerator-table-resource)
+    -   [Creazione della risorsa tabella dei tasti di scelta rapida](#creating-the-accelerator-table-resource)
+    -   [Caricamento della risorsa tabella dei tasti di scelta rapida](#loading-the-accelerator-table-resource)
+    -   [Chiamata della funzione Translate Accelerator](#calling-the-translate-accelerator-function)
+    -   [Elaborazione di messaggi WM \_ COMMAND](/windows)
+    -   [Eliminazione della risorsa tabella dei tasti di scelta rapida](#destroying-the-accelerator-table-resource)
+    -   [Creazione di tasti di scelta rapida per gli attributi dei tipi di carattere](#creating-accelerators-for-font-attributes)
+-   [Uso di una tabella dei tasti di scelta rapida creata in fase di esecuzione](#using-an-accelerator-table-created-at-run-time)
+    -   [Creazione di una Run-Time di tasti di scelta rapida](#creating-a-run-time-accelerator-table)
+    -   [Acceleratori di elaborazione](#processing-accelerators)
+    -   [Eliminazione di una tabella Run-Time tasti di scelta rapida](#destroying-a-run-time-accelerator-table)
     -   [Creazione di acceleratori modificabili dall'utente](#creating-user-editable-accelerators)
 
-## <a name="using-an-accelerator-table-resource"></a>Uso di una risorsa della tabella dei tasti di scelta rapida
+## <a name="using-an-accelerator-table-resource"></a>Uso di una risorsa tabella dei tasti di scelta rapida
 
-Il modo più comune per aggiungere il supporto acceleratore a un'applicazione consiste nell'includere una risorsa della tabella dei tasti di scelta rapida con il file eseguibile dell'applicazione e quindi caricare la risorsa in fase di esecuzione.
+Il modo più comune per aggiungere il supporto dell'acceleratore a un'applicazione è includere una risorsa accelerator-table con il file eseguibile dell'applicazione e quindi caricare la risorsa in fase di esecuzione.
 
 In questa sezione vengono trattati gli argomenti seguenti.
 
--   [Creazione della risorsa della tabella dei tasti di scelta rapida](#creating-the-accelerator-table-resource)
--   [Caricamento della risorsa della tabella dei tasti di scelta rapida](#loading-the-accelerator-table-resource)
--   [Chiamata della funzione di accelerazione translate](#calling-the-translate-accelerator-function)
--   [Elaborazione \_ dei messaggi di comando WM](/windows)
--   [Eliminazione definitiva della risorsa della tabella dei tasti di scelta rapida](#destroying-the-accelerator-table-resource)
--   [Creazione di acceleratori per gli attributi del tipo di carattere](#creating-accelerators-for-font-attributes)
+-   [Creazione della risorsa tabella dei tasti di scelta rapida](#creating-the-accelerator-table-resource)
+-   [Caricamento della risorsa tabella dei tasti di scelta rapida](#loading-the-accelerator-table-resource)
+-   [Chiamata della funzione Translate Accelerator](#calling-the-translate-accelerator-function)
+-   [Elaborazione di messaggi WM \_ COMMAND](/windows)
+-   [Eliminazione della risorsa tabella dei tasti di scelta rapida](#destroying-the-accelerator-table-resource)
+-   [Creazione di tasti di scelta rapida per gli attributi dei tipi di carattere](#creating-accelerators-for-font-attributes)
 
-### <a name="creating-the-accelerator-table-resource"></a>Creazione della risorsa della tabella dei tasti di scelta rapida
+### <a name="creating-the-accelerator-table-resource"></a>Creazione della risorsa tabella dei tasti di scelta rapida
 
-Si crea una risorsa della tabella di tasti di scelta rapida [usando l'istruzione ACCELERATORS](./accelerators-resource.md) nel file di definizione delle risorse dell'applicazione. È necessario assegnare un nome o un identificatore di risorsa alla tabella dei tasti di scelta rapida, preferibilmente a differenza di quanto avviene per qualsiasi altra risorsa. Il sistema usa questo identificatore per caricare la risorsa in fase di esecuzione.
+È possibile creare una risorsa accelerator-table usando [l'istruzione ACCELERATORS](./accelerators-resource.md) nel file di definizione delle risorse dell'applicazione. È necessario assegnare un nome o un identificatore di risorsa alla tabella dei tasti di scelta rapida, preferibilmente a differenza di qualsiasi altra risorsa. Il sistema usa questo identificatore per caricare la risorsa in fase di esecuzione.
 
-Ogni acceleratore definito richiede una voce separata nella tabella dei tasti di scelta rapida. In ogni voce si definisce la sequenza di tasti (codice carattere ASCII o codice chiave virtuale) che genera l'acceleratore e l'identificatore dell'acceleratore. È inoltre necessario specificare se la sequenza di tasti deve essere utilizzata in combinazione con i tasti ALT, MAIUSC o CTRL. Per ulteriori informazioni sulle chiavi virtuali, vedere [input da tastiera](/windows/desktop/inputdev/keyboard-input).
+Ogni tasto di scelta rapida definito richiede una voce separata nella tabella dei tasti di scelta rapida. In ogni voce si definisce la sequenza di tasti (un codice carattere ASCII o un codice tasto virtuale) che genera l'acceleratore e l'identificatore del tasto di scelta rapida. È inoltre necessario specificare se la sequenza di tasti deve essere utilizzata in combinazione con i tasti ALT, MAIUSC o CTRL. Per altre informazioni sui tasti virtuali, vedere [Input da tastiera.](/windows/desktop/inputdev/keyboard-input)
 
-Una sequenza di tasti ASCII viene specificata racchiudendo il carattere ASCII tra virgolette doppie o usando il valore intero del carattere in combinazione con il flag ASCII. Gli esempi seguenti illustrano come definire gli acceleratori ASCII.
+Una sequenza di tasti ASCII viene specificata racchiudendo il carattere ASCII tra virgolette doppie o usando il valore intero del carattere in combinazione con il flag ASCII. Negli esempi seguenti viene illustrato come definire tasti di scelta rapida ASCII.
 
 ``` syntax
 "A", ID_ACCEL1         ; SHIFT+A 
 65,  ID_ACCEL2, ASCII  ; SHIFT+A 
 ```
 
-Una sequenza di tasti del codice a chiave virtuale viene specificata in modo diverso a seconda che la sequenza di tasti sia una chiave alfanumerica o una chiave non alfanumerica. Per una chiave alfanumerica, la lettera o il numero della chiave, racchiuso tra virgolette doppie, viene combinato con il flag **VIRTKEY** . Per una chiave non alfanumerica, il codice della chiave virtuale per la chiave specifica viene combinato con il flag **VIRTKEY** . Negli esempi seguenti viene illustrato come definire gli acceleratori del codice a chiave virtuale.
+Una sequenza di tasti del codice virtuale viene specificata in modo diverso a seconda che la sequenza di tasti sia un tasto alfanumerico o un tasto non alfanumerico. Per una chiave alfanumerica, la lettera o il numero della chiave, racchiuso tra virgolette doppie, viene combinato con il flag **VIRTKEY.** Per una chiave non alfanumerica, il codice della chiave virtuale per la chiave specifica viene combinato con il flag **VIRTKEY.** Gli esempi seguenti illustrano come definire gli acceleratori di codice dei tasti di scelta rapida virtuali.
 
 ``` syntax
 "a",       ID_ACCEL3, VIRTKEY   ; A (caps-lock on) or a 
 VK_INSERT, ID_ACCEL4, VIRTKEY   ; INSERT key 
 ```
 
-Nell'esempio seguente viene illustrata una risorsa della tabella dei tasti di scelta rapida che definisce acceleratori per le operazioni sui file. Il nome della risorsa è *FileAccel*.
+L'esempio seguente illustra una risorsa accelerator-table che definisce i tasti di scelta rapida per le operazioni sui file. Il nome della risorsa è *FileAccel.*
 
 ``` syntax
 FileAccel ACCELERATORS 
@@ -83,7 +83,7 @@ BEGIN
 END 
 ```
 
-Se si desidera che l'utente prema ALT, MAIUSC o CTRL in una combinazione con la sequenza di tasti di scelta rapida, specificare i flag ALT, MAIUSC e CONTROL nella definizione dell'acceleratore. Di seguito sono riportati alcuni esempi.
+Se si vuole che l'utente premuti i tasti ALT, MAIUSC o CTRL in combinazione con la combinazione di tasti di scelta rapida, specificare i flag ALT, MAIUSC e CTRL nella definizione del tasto di scelta rapida. Di seguito sono riportati alcuni esempi.
 
 ``` syntax
 "B",   ID_ACCEL5, ALT                   ; ALT_SHIFT+B 
@@ -91,13 +91,13 @@ Se si desidera che l'utente prema ALT, MAIUSC o CTRL in una combinazione con la 
 VK_F5, ID_ACCEL7, CONTROL, ALT, VIRTKEY ; CTRL+ALT+F5 
 ```
 
-Per impostazione predefinita, quando un tasto di scelta rapida corrisponde a una voce di menu, il sistema evidenzia la voce di menu. È possibile usare il flag **noinverte** per impedire l'evidenziazione per un singolo acceleratore. Nell'esempio seguente viene illustrato come utilizzare il flag **noinverte** :
+Per impostazione predefinita, quando un tasto di scelta rapida corrisponde a una voce di menu, il sistema evidenzia la voce di menu. È possibile usare il flag **NOINVERT** per impedire l'evidenziazione per un singolo acceleratore. L'esempio seguente illustra come usare il flag **NOINVERT:**
 
 ``` syntax
 VK_DELETE, ID_ACCEL8, VIRTKEY, SHIFT, NOINVERT  ; SHIFT+DELETE 
 ```
 
-Per definire acceleratori che corrispondono alle voci di menu nell'applicazione, includere gli acceleratori nel testo delle voci di menu. Nell'esempio seguente viene illustrato come includere acceleratori nel testo di una voce di menu in un file di definizione delle risorse.
+Per definire i tasti di scelta rapida che corrispondono alle voci di menu nell'applicazione, includere i tasti di scelta rapida nel testo delle voci di menu. L'esempio seguente illustra come includere i tasti di scelta rapida nel testo delle voci di menu in un file di definizione delle risorse.
 
 ``` syntax
 FilePopup MENU 
@@ -113,15 +113,15 @@ BEGIN
 END 
 ```
 
-### <a name="loading-the-accelerator-table-resource"></a>Caricamento della risorsa della tabella dei tasti di scelta rapida
+### <a name="loading-the-accelerator-table-resource"></a>Caricamento della risorsa tabella dei tasti di scelta rapida
 
-Un'applicazione carica una risorsa della tabella dei tasti di scelta rapida chiamando la funzione [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) e specificando l'handle dell'istanza per l'applicazione il cui file eseguibile contiene la risorsa e il nome o l'identificatore della risorsa. **LoadAccelerators** carica la tabella dei tasti di scelta rapida specificata in memoria e restituisce l'handle alla tabella dei tasti di scelta rapida.
+Un'applicazione carica una risorsa accelerator-table chiamando la funzione [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) e specificando l'handle di istanza per l'applicazione il cui file eseguibile contiene la risorsa e il nome o l'identificatore della risorsa. **LoadAccelerators carica** la tabella dei tasti di scelta rapida specificata in memoria e restituisce l'handle alla tabella dei tasti di scelta rapida.
 
-Un'applicazione può caricare una risorsa della tabella dei tasti di scelta rapida in qualsiasi momento. In genere, un'applicazione a thread singolo carica la tabella dei tasti di scelta rapida prima di immettere il ciclo di messaggi principale. Un'applicazione che usa più thread in genere carica la risorsa della tabella di tasti di scelta rapida per un thread prima di immettere il ciclo di messaggi per il thread. Un'applicazione o un thread potrebbe inoltre utilizzare più tabelle di tasti di scelta rapida, ciascuna associata a una particolare finestra dell'applicazione. Tale applicazione caricherà la tabella dei tasti di scelta rapida per la finestra ogni volta che l'utente ha attivato la finestra. Per ulteriori informazioni sui thread, vedere [processi e thread](/windows/desktop/ProcThread/processes-and-threads).
+Un'applicazione può caricare una risorsa accelerator-table in qualsiasi momento. In genere, un'applicazione a thread singolo carica la tabella dei tasti di scelta rapida prima di entrare nel ciclo di messaggi principale. Un'applicazione che usa più thread carica in genere la risorsa della tabella di tasti di scelta rapida per un thread prima di entrare nel ciclo di messaggi per il thread. Un'applicazione o un thread può anche usare più tabelle dei tasti di scelta rapida, ognuna associata a una determinata finestra nell'applicazione. Un'applicazione di questo tipo carica la tabella dei tasti di scelta rapida per la finestra ogni volta che l'utente attiva la finestra. Per altre informazioni sui thread, vedere [Processi e thread.](/windows/desktop/ProcThread/processes-and-threads)
 
-### <a name="calling-the-translate-accelerator-function"></a>Chiamata della funzione di accelerazione translate
+### <a name="calling-the-translate-accelerator-function"></a>Chiamata della funzione Translate Accelerator
 
-Per elaborare gli acceleratori, il ciclo di messaggi di un'applicazione (o di un thread) deve contenere una chiamata alla funzione [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) . **TranslateAccelerator** Confronta le sequenze di tasti con una tabella dei tasti di scelta rapida e, se trova una corrispondenza, traduce le sequenze di tasti in un messaggio [**WM \_**](wm-command.md) (o [**WM \_ SYSCOMMAND**](wm-syscommand.md)). La funzione Invia quindi il messaggio a una routine della finestra. I parametri della funzione **TranslateAccelerator** includono l'handle per la finestra che deve ricevere i messaggi di **\_ comando WM** , l'handle alla tabella dei tasti di scelta rapida utilizzata per convertire gli acceleratori e un puntatore a [**una struttura di messaggi contenente**](/windows/win32/api/winuser/ns-winuser-msg) un messaggio dalla coda. Nell'esempio seguente viene illustrato come chiamare **TranslateAccelerator** dall'interno di un ciclo di messaggi.
+Per elaborare gli acceleratori, il ciclo di messaggi di un'applicazione (o del thread) deve contenere una chiamata alla [**funzione TranslateAccelerator.**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) **TranslateAccelerator** confronta le sequenze di tasti con una tabella dei tasti di scelta rapida e, se trova una corrispondenza, converte le sequenze di tasti in un messaggio [**WM \_ COMMAND**](wm-command.md) (o [**WM \_ SYSCOMMAND).**](wm-syscommand.md) La funzione invia quindi il messaggio a una routine della finestra. I parametri della funzione **TranslateAccelerator** includono l'handle per la finestra che deve ricevere i messaggi **WM \_ COMMAND,** l'handle alla tabella dei tasti di scelta rapida usata per convertire i tasti di scelta rapida e un puntatore a una struttura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) contenente un messaggio dalla coda. Nell'esempio seguente viene illustrato come chiamare **TranslateAccelerator dall'interno** di un ciclo di messaggi.
 
 
 ```
@@ -152,28 +152,28 @@ while ( (bRet = GetMessage(&msg, (HWND) NULL, 0, 0)) != 0)
 
 
 
-### <a name="processing-wm_command-messages"></a>Elaborazione \_ dei messaggi di comando WM
+### <a name="processing-wm_command-messages"></a>Elaborazione di messaggi WM \_ COMMAND
 
-Quando si usa un tasto di scelta rapida, la finestra specificata nella funzione [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) riceve un [**\_ comando WM**](wm-command.md) o un messaggio [**WM \_ SYSCOMMAND**](wm-syscommand.md) . La parola inferiore del parametro *wParam* contiene l'identificatore del tasto di scelta rapida. La routine della finestra esamina l'identificatore per determinare l'origine del messaggio **del \_ comando WM** ed elabora il messaggio di conseguenza.
+Quando si usa un tasto di scelta rapida, la finestra specificata nella funzione [**TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) riceve un messaggio [**WM \_ COMMAND**](wm-command.md) o [**WM \_ SYSCOMMAND.**](wm-syscommand.md) La parola più bassa del parametro *wParam* contiene l'identificatore del tasto di scelta rapida. La routine della finestra esamina l'identificatore per determinare l'origine del **messaggio WM \_ COMMAND** ed elabora il messaggio di conseguenza.
 
-In genere, se un tasto di scelta rapida corrisponde a una voce di menu nell'applicazione, all'acceleratore e alla voce di menu viene assegnato lo stesso identificatore. Se è necessario sapere se un messaggio [**di \_ comando WM**](wm-command.md) è stato generato da un acceleratore o da una voce di menu, è possibile esaminare la parola più ordinata del parametro *wParam* . Se un tasto di scelta rapida ha generato il messaggio, la parola più ordinata è 1; Se una voce di menu ha generato il messaggio, la parola più ordinata è 0.
+In genere, se un tasto di scelta rapida corrisponde a una voce di menu nell'applicazione, all'acceleratore e alla voce di menu viene assegnato lo stesso identificatore. Se è necessario sapere se un messaggio [**WM \_ COMMAND**](wm-command.md) è stato generato da un tasto di scelta rapida o da una voce di menu, è possibile esaminare la parola più alta del *parametro wParam.* Se il messaggio è stato generato da un acceleratore, la parola più importante è 1. Se il messaggio è stato generato da una voce di menu, la parola più importante è 0.
 
-### <a name="destroying-the-accelerator-table-resource"></a>Eliminazione definitiva della risorsa della tabella dei tasti di scelta rapida
+### <a name="destroying-the-accelerator-table-resource"></a>Eliminazione della risorsa tabella dei tasti di scelta rapida
 
-Il sistema elimina automaticamente le risorse della tabella dei tasti di scelta rapida caricate dalla funzione [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) , rimuovendo la risorsa dalla memoria dopo la chiusura dell'applicazione.
+Il sistema elimina automaticamente le risorse della tabella dei tasti di scelta rapida caricate dalla funzione [**LoadAccelerators,**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) rimuovendo la risorsa dalla memoria dopo la chiusura dell'applicazione.
 
-### <a name="creating-accelerators-for-font-attributes"></a>Creazione di acceleratori per gli attributi del tipo di carattere
+### <a name="creating-accelerators-for-font-attributes"></a>Creazione di tasti di scelta rapida per gli attributi dei tipi di carattere
 
-Nell'esempio riportato in questa sezione viene illustrato come eseguire le attività seguenti:
+L'esempio in questa sezione illustra come eseguire le attività seguenti:
 
--   Creare una risorsa della tabella dei tasti di scelta rapida.
+-   Creare una risorsa accelerator-table.
 -   Caricare la tabella dei tasti di scelta rapida in fase di esecuzione.
--   Tradurre gli acceleratori in un ciclo di messaggi.
--   Elabora i messaggi di [**\_ comando WM**](wm-command.md) generati dagli acceleratori.
+-   Convertire i tasti di scelta rapida in un ciclo di messaggi.
+-   Elaborare [**i messaggi WM \_ COMMAND**](wm-command.md) generati dagli acceleratori.
 
-Queste attività vengono illustrate nel contesto di un'applicazione che include un menu di **caratteri** e gli acceleratori corrispondenti che consentono all'utente di selezionare gli attributi del tipo di carattere corrente.
+Queste attività vengono illustrate nel contesto di un'applicazione che include un menu **Carattere** e i tasti di scelta rapida corrispondenti che consentono all'utente di selezionare gli attributi del tipo di carattere corrente.
 
-La parte seguente di un file di definizione delle risorse definisce il menu dei **caratteri** e la tabella dei tasti di scelta rapida associata. Si noti che le voci di menu mostrano le sequenze di tasti di scelta rapida e che ogni acceleratore ha lo stesso identificatore della voce di menu associata.
+La parte seguente di un file di definizione delle risorse definisce il menu **Carattere e** la tabella dei tasti di scelta rapida associata. Si noti che le voci di menu mostrano le sequenze di tasti di scelta rapida e che ogni tasto di scelta rapida ha lo stesso identificatore della voce di menu associata.
 
 
 ```
@@ -203,7 +203,7 @@ FontAccel ACCELERATORS
 
 
 
-Le sezioni seguenti del file di origine dell'applicazione mostrano come implementare gli acceleratori.
+Le sezioni seguenti del file di origine dell'applicazione illustrano come implementare gli acceleratori.
 
 
 ```
@@ -324,18 +324,18 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="using-an-accelerator-table-created-at-run-time"></a>Uso di una tabella di tasti di scelta rapida creata in fase di esecuzione
+## <a name="using-an-accelerator-table-created-at-run-time"></a>Uso di una tabella dei tasti di scelta rapida creata in fase di esecuzione
 
-In questo argomento viene illustrato come utilizzare le tabelle di tasti di scelta rapida create in fase di esecuzione.
+Questo argomento illustra come usare le tabelle dei tasti di scelta rapida create in fase di esecuzione.
 
--   [Creazione di una tabella Run-Time Accelerator](#creating-a-run-time-accelerator-table)
--   [Elaborazione di acceleratori](#processing-accelerators)
--   [Eliminazione di una tabella di tasti di scelta rapida Run-Time](#destroying-a-run-time-accelerator-table)
+-   [Creazione di una Run-Time di tasti di scelta rapida](#creating-a-run-time-accelerator-table)
+-   [Acceleratori di elaborazione](#processing-accelerators)
+-   [Eliminazione di una tabella Run-Time tasti di scelta rapida](#destroying-a-run-time-accelerator-table)
 -   [Creazione di acceleratori modificabili dall'utente](#creating-user-editable-accelerators)
 
-### <a name="creating-a-run-time-accelerator-table"></a>Creazione di una tabella Run-Time Accelerator
+### <a name="creating-a-run-time-accelerator-table"></a>Creazione di una Run-Time di tasti di scelta rapida
 
-Il primo passaggio per la creazione di una tabella di tasti di scelta rapida in fase di esecuzione consiste nel compilare una matrice di strutture [**Accel**](/windows/win32/api/winuser/ns-winuser-accel) . Ogni struttura della matrice definisce un tasto di scelta rapida nella tabella. La definizione di un acceleratore include i relativi flag, la relativa chiave e il relativo identificatore. La struttura **Accel** ha il formato seguente.
+Il primo passaggio per la creazione di una tabella dei tasti di scelta rapida in fase di esecuzione consiste nel riempire una matrice di [**strutture ACCEL.**](/windows/win32/api/winuser/ns-winuser-accel) Ogni struttura nella matrice definisce un acceleratore nella tabella. La definizione di un acceleratore include i flag, la chiave e il relativo identificatore. La **struttura ACCEL** ha il formato seguente.
 
 ``` syntax
 typedef struct tagACCEL { // accl 
@@ -345,25 +345,25 @@ typedef struct tagACCEL { // accl
 } ACCEL;
 ```
 
-Si definisce la sequenza di tasti di un acceleratore specificando un codice carattere ASCII o un codice di chiave virtuale nel membro **chiave** della struttura di [**accelerazione**](/windows/win32/api/winuser/ns-winuser-accel) . Se si specifica un codice a chiave virtuale, è necessario prima includere il flag **FVIRTKEY** nel membro **fVirt** . in caso contrario, il sistema interpreta il codice come un codice carattere ASCII. È possibile includere il flag **FCONTROL**, **Falt** o **FSHIFT** , o tutti e tre, per combinare il tasto CTRL, ALT o MAIUSC con la sequenza di tasti.
+È possibile definire la sequenza di tasti di scelta rapida specificando un  codice carattere ASCII o un codice tasto virtuale nel membro chiave della [**struttura ACCEL.**](/windows/win32/api/winuser/ns-winuser-accel) Se si specifica un codice di chiave virtuale, è prima necessario includere il flag **FVIRTKEY** nel **membro fVirt.** In caso contrario, il sistema interpreta il codice come codice di caratteri ASCII. È possibile includere il flag **FCONTROL,** **FALT** o **FSHIFT** o tutti e tre per combinare ctrl, ALT o MAIUSC con la sequenza di tasti.
 
-Per creare la tabella dei tasti di scelta rapida, passare un puntatore alla matrice di strutture [**Accel**](/windows/win32/api/winuser/ns-winuser-accel) alla funzione [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) . **CreateAcceleratorTable** crea la tabella dei tasti di scelta rapida e restituisce l'handle alla tabella.
+Per creare la tabella dei tasti di scelta rapida, passare un puntatore alla matrice di [**strutture ACCEL**](/windows/win32/api/winuser/ns-winuser-accel) alla [**funzione CreateAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) **CreateAcceleratorTable crea** la tabella dei tasti di scelta rapida e restituisce l'handle alla tabella.
 
-### <a name="processing-accelerators"></a>Elaborazione di acceleratori
+### <a name="processing-accelerators"></a>Acceleratori di elaborazione
 
-Il processo di caricamento e chiamata di acceleratori forniti da una tabella di tasti di scelta rapida creata in fase di esecuzione è identico all'elaborazione di quelli forniti da una risorsa della tabella dei tasti di scelta rapida. Per altre informazioni, vedere [caricamento della risorsa della tabella dei tasti di scelta rapida tramite l'](#loading-the-accelerator-table-resource) [elaborazione \_ dei messaggi di comando WM](/windows).
+Il processo di caricamento e chiamata degli acceleratori forniti da una tabella dei tasti di scelta rapida creata in fase di esecuzione è lo stesso dell'elaborazione di quelli forniti da una risorsa della tabella dei tasti di scelta rapida. Per altre informazioni, vedere [Caricamento della risorsa tabella dei tasti di scelta rapida](#loading-the-accelerator-table-resource) tramite [l'elaborazione di messaggi WM \_ COMMAND.](/windows)
 
-### <a name="destroying-a-run-time-accelerator-table"></a>Eliminazione di una tabella di tasti di scelta rapida Run-Time
+### <a name="destroying-a-run-time-accelerator-table"></a>Eliminazione di una tabella Run-Time acceleratore
 
-Il sistema elimina automaticamente le tabelle dei tasti di scelta rapida create in fase di esecuzione, rimuovendo le risorse dalla memoria dopo la chiusura dell'applicazione. È possibile eliminare una tabella di tasti di scelta rapida e rimuoverla dalla memoria prima passando l'handle della tabella alla funzione [**DestroyAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable) .
+Il sistema elimina automaticamente le tabelle dei tasti di scelta rapida create in fase di esecuzione, rimuovendo le risorse dalla memoria dopo la chiusura dell'applicazione. È possibile eliminare una tabella dei tasti di scelta rapida e rimuoverla dalla memoria in precedenza passando l'handle della tabella alla [**funzione DestroyAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable)
 
 ### <a name="creating-user-editable-accelerators"></a>Creazione di acceleratori modificabili dall'utente
 
-Questo esempio illustra come creare una finestra di dialogo che consente all'utente di modificare il tasto di scelta rapida associato a una voce di menu. La finestra di dialogo è costituita da una casella combinata che contiene voci di menu, una casella combinata contenente i nomi delle chiavi e caselle di controllo per la selezione dei tasti CTRL, ALT e MAIUSC. Nella figura seguente viene illustrata la finestra di dialogo.
+Questo esempio illustra come costruire una finestra di dialogo che consente all'utente di modificare il tasto di scelta rapida associato a una voce di menu. La finestra di dialogo è costituita da una casella combinata contenente voci di menu, da una casella combinata contenente i nomi dei tasti e da caselle di controllo per la selezione dei tasti CTRL, ALT e MAIUSC. Nella figura seguente viene illustrata la finestra di dialogo .
 
 ![finestra di dialogo con caselle combinate e caselle di controllo](images/useredit.gif)
 
-Nell'esempio seguente viene illustrato il modo in cui la finestra di dialogo viene definita nel file di definizione delle risorse.
+Nell'esempio seguente viene illustrato come viene definita la finestra di dialogo nel file di definizione delle risorse.
 
 ``` syntax
 EdAccelBox DIALOG 5, 17, 193, 114 
@@ -392,7 +392,7 @@ BEGIN
 END
 ```
 
-La barra dei menu dell'applicazione contiene un sottomenu **carattere** i cui elementi sono associati ad acceleratori.
+La barra dei menu dell'applicazione contiene un sottomenu **Carattere** i cui elementi hanno tasti di scelta rapida associati.
 
 ``` syntax
 MainMenu MENU 
@@ -425,7 +425,7 @@ I valori delle voci di menu per il modello di menu sono costanti definite come i
 #define IDM_ULINE      1400
 ```
 
-Nella finestra di dialogo viene utilizzata una matrice di strutture VKEY definite dall'applicazione, ciascuna contenente una stringa di testo della sequenza di tasti e una stringa di testo del tasto di scelta rapida. Quando viene creata, la finestra di dialogo analizza la matrice e aggiunge ogni stringa di testo della sequenza di tasti alla casella combinata **Seleziona sequenza di tasti** . Quando l'utente fa clic sul pulsante **OK** , la finestra di dialogo Cerca la stringa di testo della sequenza di tasti selezionata e recupera la stringa di testo dell'acceleratore corrispondente. La finestra di dialogo aggiunge la stringa di testo acceleratore al testo della voce di menu selezionata dall'utente. Nell'esempio seguente viene illustrata la matrice di strutture VKEY:
+La finestra di dialogo usa una matrice di strutture VKEY definite dall'applicazione, ognuna delle quali contiene una stringa di tasti di scelta rapida e una stringa di testo dell'acceleratore. Quando viene creata la finestra di dialogo, analizza la matrice e aggiunge ogni stringa di sequenza di tasti alla casella combinata **Seleziona sequenza** di tasti. Quando l'utente fa clic sul **pulsante OK,** la finestra di dialogo cerca la stringa di sequenza di tasti selezionata e recupera la stringa di tasti di scelta rapida corrispondente. La finestra di dialogo aggiunge la stringa accelerator-text al testo della voce di menu selezionata dall'utente. L'esempio seguente illustra la matrice di strutture VKEY:
 
 
 ```
@@ -469,7 +469,7 @@ VKEYS vkeys[MAXKEYS] = {
 
 
 
-La procedura di inizializzazione della finestra di dialogo Compila l' **elemento SELECT** e seleziona le caselle combinate della **sequenza di tasti** . Dopo che l'utente ha selezionato una voce di menu e un tasto di scelta rapida associato, nella finestra di dialogo vengono esaminati i controlli della finestra di dialogo per ottenere la selezione dell'utente, viene aggiornato il testo della voce di menu e quindi viene creata una nuova tabella dei tasti di scelta rapida che contiene il nuovo acceleratore definito dall'utente. Nell'esempio seguente viene illustrata la routine della finestra di dialogo. Si noti che è necessario inizializzare nella routine della finestra.
+La procedura di inizializzazione della finestra di dialogo riempie **le caselle** combinate Seleziona elemento e **Seleziona sequenza di** tasti. Dopo che l'utente ha selezionato una voce di menu e un acceleratore associato, la finestra di dialogo esamina i controlli nella finestra di dialogo per ottenere la selezione dell'utente, aggiorna il testo della voce di menu e quindi crea una nuova tabella dei tasti di scelta rapida contenente il nuovo acceleratore definito dall'utente. Nell'esempio seguente viene illustrata la procedura della finestra di dialogo. Si noti che è necessario inizializzare nella routine della finestra.
 
 
 ```
@@ -782,6 +782,6 @@ BOOL CALLBACK EdAccelProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 
 
- 
+ 
 
- 
+ 

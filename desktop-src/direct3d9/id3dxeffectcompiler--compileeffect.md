@@ -1,7 +1,7 @@
 ---
 description: Compilare un effetto.
 ms.assetid: be6f862a-5091-4a06-a27a-308e81360129
-title: 'Metodo ID3DXEffectCompiler:: CompileEffect (D3DX9Effect. h)'
+title: Metodo ID3DXEffectCompiler::CompileEffect (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6552d0216cd05c40c122657270c02e0886438da1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f3769f3f7433aadc55e766d68ecc152a4e26444cf506344f80e3f11a0bca8fcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951661"
 ---
-# <a name="id3dxeffectcompilercompileeffect-method"></a>Metodo ID3DXEffectCompiler:: CompileEffect
+# <a name="id3dxeffectcompilercompileeffect-method"></a>Metodo ID3DXEffectCompiler::CompileEffect
 
 Compilare un effetto.
 
@@ -42,12 +42,12 @@ HRESULT CompileEffect(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opzioni di compilazione identificate da diversi flag. Il compilatore Direct3D 10 HLSL è ora il valore predefinito. Per informazioni dettagliate, vedere [flag D3DXSHADER](d3dxshader-flags.md) .
+Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Flag D3DXSHADER.](d3dxshader-flags.md)
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Opzioni di compilazione identificate da diversi flag. Il compilatore Direct3D 10
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente l'effetto compilato. Per ulteriori informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
+Buffer contenente l'effetto compilato. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Buffer contenente l'effetto compilato. Per ulteriori informazioni sull'accesso a
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer contenente almeno il primo messaggio di errore di compilazione che si è verificato. Sono inclusi gli errori del compilatore degli effetti e gli errori di compilazione del linguaggio di alto livello. Per ulteriori informazioni sull'accesso al buffer, vedere [**ID3DXBuffer**](id3dxbuffer.md).
+Buffer contenente almeno il primo messaggio di errore di compilazione che si è verificato. Sono inclusi gli errori del compilatore degli effetti e gli errori di compilazione del linguaggio di alto livello. Per altre informazioni sull'accesso al buffer, vedere [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Buffer contenente almeno il primo messaggio di errore di compilazione che si è 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK.
 
 Se gli argomenti non sono validi, il metodo restituirà D3DERR \_ INVALIDCALL.
 
-Se il metodo ha esito negativo, il valore restituito sarà E avrà \_ esito negativo.
+Se il metodo ha esito negativo, il valore restituito sarà E \_ FAIL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Se il metodo ha esito negativo, il valore restituito sarà E avrà \_ esito nega
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

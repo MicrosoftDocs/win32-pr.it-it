@@ -1,37 +1,37 @@
 ---
-title: Come creare un'immagine
-description: Questo argomento illustra come usare la funzione di creazione ImageList \_ per creare un'immagine.
+title: Come disegnare un'immagine
+description: Questo argomento illustra come usare la funzione ImageList \_ Draw per disegnare un'immagine.
 ms.assetid: BE2F20F3-B7D3-4FA2-B1E9-60A47A609C36
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac13eef2eb5bc55866ac2fd930db5494f2683dd2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: f7b42e97ad9b7cab8693431654dc31b473267414f31ae5811f4f66a6663ce8e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878331"
 ---
-# <a name="how-to-draw-an-image"></a>Come creare un'immagine
+# <a name="how-to-draw-an-image"></a>Come disegnare un'immagine
 
-Questo argomento illustra come usare la funzione di creazione [**ImageList \_**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) per creare un'immagine.
+Questo argomento illustra come usare la funzione [**ImageList \_ Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) per disegnare un'immagine.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per creare un'immagine, è possibile usare la funzione [**ImageList \_ disegnato**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) o [**ImageList \_ DrawEx**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) . È possibile specificare l'handle per un elenco di immagini, l'indice dell'immagine da disegnare, l'handle per il contesto di dispositivo di destinazione, una posizione all'interno del contesto di dispositivo e uno o più stili di disegno.
+Per disegnare un'immagine, usa la [**funzione ImageList \_ Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) o [**ImageList \_ DrawEx.**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_drawex) È possibile specificare l'handle per un elenco di immagini, l'indice dell'immagine da disegnare, l'handle per il contesto di dispositivo di destinazione, una posizione all'interno del contesto di dispositivo e uno o più stili di disegno.
 
-La funzione definita dall'utente nell'esempio di codice C++ seguente usa la funzione di creazione [**ImageList \_**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) per creare un'immagine e salva le coordinate client del rettangolo di delimitazione dell'immagine. Una funzione successiva usa il rettangolo di delimitazione per determinare se l'utente ha fatto clic sull'immagine.
+La funzione definita dall'utente nell'esempio di codice C++ seguente usa la funzione [**ImageList \_ Draw**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_draw) per disegnare un'immagine e salva le coordinate client del rettangolo di delimitazione dell'immagine. Una funzione successiva usa il rettangolo di delimitazione per determinare se l'utente ha fatto clic sull'immagine.
 
 
 
@@ -75,7 +75,7 @@ BOOL DrawTheImage(HWND hwnd, HIMAGELIST himl, int cx, int cy)
 
 <dl> <dt>
 
-[Informazioni di riferimento sugli elenchi di immagini](bumper-image-lists-image-lists-reference.md)
+[Informazioni di riferimento per gli elenchi di immagini](bumper-image-lists-image-lists-reference.md)
 </dt> <dt>
 
 [Informazioni sugli elenchi di immagini](image-lists.md)

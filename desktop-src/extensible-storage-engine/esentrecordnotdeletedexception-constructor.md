@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentRecordNotDeletedException'
+description: Altre informazioni sul costruttore EsentRecordNotDeletedException
 title: Costruttore EsentRecordNotDeletedException
 TOCTitle: 'EsentRecordNotDeletedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordNotDeletedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 30e231f5bab278cef87d7d20ffee9e29fdd68cea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0616c726a5eb39c01dd8a1508248328203ae605774741018616e1276daa5f9cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851631"
 ---
 # <a name="esentrecordnotdeletedexception-constructor"></a>Costruttore EsentRecordNotDeletedException
 
 Inizializza una nuova istanza della classe EsentRecordNotDeletedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentRecordNotDeletedException()
 
 [Membri di EsentRecordNotDeletedException](./esentrecordnotdeletedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

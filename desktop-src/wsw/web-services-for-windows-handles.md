@@ -1,35 +1,35 @@
 ---
-title: Handle di servizi Web Windows
+title: Windows Handle di servizi Web
 ms.assetid: a67f48ce-ebe3-48f9-9c00-67acd8b9fbe5
-description: 'Ulteriori informazioni su: handle dei servizi Web Windows'
+description: 'Altre informazioni su: Gestire Windows servizi Web'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 102a0666c69abe791c532ee6a837e95c57392f6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd4eff84fe08728b9f336fdd32f2d929ba335125522311f0cec279825c2e70d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926841"
 ---
-# <a name="windows-web-services-handles"></a>Handle di servizi Web Windows
+# <a name="windows-web-services-handles"></a>Windows Handle di servizi Web
 
-L'API dei servizi Web Windows include gli handle seguenti:
+L'API Windows Web Services include gli handle seguenti:
 
--   [\_canale WS](ws-channel.md)
--   [\_errore WS](ws-error.md)
--   [\_heap WS](ws-heap.md)
--   [\_listener WS](ws-listener.md)
--   [\_messaggio WS](ws-message.md)
--   [\_metadati WS](ws-metadata.md)
--   [\_contesto dell'operazione WS \_](ws-operation-context.md)
--   [\_criteri WS](ws-policy.md)
--   [\_contesto di sicurezza WS \_](ws-security-context.md)
--   [\_token di sicurezza WS \_](ws-security-token.md)
--   [\_host del servizio WS \_](ws-service-host.md)
--   [\_proxy servizio \_ WS](ws-service-proxy.md)
--   [\_buffer WS XML \_](ws-xml-buffer.md)
--   [\_lettore XML \_ WS](ws-xml-reader.md)
--   [\_writer XML \_ WS](ws-xml-writer.md)
+-   [CANALE \_ WS](ws-channel.md)
+-   [ERRORE \_ WS](ws-error.md)
+-   [WS \_ HEAP](ws-heap.md)
+-   [WS \_ LISTENER](ws-listener.md)
+-   [MESSAGGIO \_ WS](ws-message.md)
+-   [METADATI \_ WS](ws-metadata.md)
+-   [CONTESTO \_ DELL'OPERAZIONE WS \_](ws-operation-context.md)
+-   [CRITERI \_ WS](ws-policy.md)
+-   [CONTESTO DI \_ SICUREZZA WS \_](ws-security-context.md)
+-   [TOKEN DI SICUREZZA WS \_ \_](ws-security-token.md)
+-   [HOST DEL SERVIZIO WS \_ \_](ws-service-host.md)
+-   [PROXY DEL SERVIZIO WS \_ \_](ws-service-proxy.md)
+-   [WS \_ XML \_ BUFFER](ws-xml-buffer.md)
+-   [LETTORE \_ XML WS \_](ws-xml-reader.md)
+-   [WS \_ XML \_ WRITER](ws-xml-writer.md)
 
  
 

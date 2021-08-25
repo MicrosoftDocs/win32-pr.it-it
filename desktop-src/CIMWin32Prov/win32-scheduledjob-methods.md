@@ -1,20 +1,20 @@
 ---
-description: La \_ classe Win32 ScheduledJob espone i metodi seguenti.
+description: La classe ScheduledJob Win32 \_ espone i metodi seguenti.
 ms.assetid: D380783C-35DB-42F8-81F5-881FE43C4F52
 ms.tgt_platform: multiple
-title: Metodi di Win32_ScheduledJob
+title: Win32_ScheduledJob metodi
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adfb461696ad8c45865660a606941735b67b4839
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7ee25bca758d7822d0accd1d2838b4ce621706181dfff569710f27d6ee777cb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917601"
 ---
-# <a name="win32_scheduledjob-methods"></a>\_Metodi Win32 ScheduledJob
+# <a name="win32_scheduledjob-methods"></a>Metodi di Processo pianificato Win32 \_
 
-La classe [**Win32 \_ ScheduledJob**](win32-scheduledjob.md) espone i metodi seguenti.
+La [**classe \_ ScheduledJob Win32**](win32-scheduledjob.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

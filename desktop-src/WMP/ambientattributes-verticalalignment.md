@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. verticalAlignment
-description: L'attributo verticalAlignment specifica o recupera un valore che indica la posizione verticale del controllo quando la visualizzazione o la Sottovisualizzazione padre è allungata.
+title: AmbientAttributes.verticalAlignment
+description: L'attributo verticalAlignment specifica o recupera un valore che indica la posizione verticale del controllo quando l'elemento VIEW o subVIEW padre viene allungato.
 ms.assetid: 08ef483a-58ee-4a35-9973-2567076d07f7
 keywords:
-- Media Player Windows AmbientAttributes. verticalAlignment
+- AmbientAttributes.verticalAlignment Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88de2f5f54b95b14827fabb2bafb89ff6974966b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a116a8883fe1d591f5c68050e4a5ab738a3cf913322ae7c671c71a507f2c924d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956391"
 ---
-# <a name="ambientattributesverticalalignment"></a>AmbientAttributes. verticalAlignment
+# <a name="ambientattributesverticalalignment"></a>AmbientAttributes.verticalAlignment
 
-L'attributo **VerticalAlignment** specifica o recupera un valore che indica la posizione verticale del controllo quando la **visualizzazione** o la **Sottovisualizzazione** padre è allungata.
+**L'attributo verticalAlignment** specifica o recupera un valore che indica la posizione verticale del controllo quando l'elemento **VIEW** o **subVIEW** padre viene allungato.
 
 ``` syntax
         elementID.verticalAlignment
@@ -29,16 +29,16 @@ L'attributo **VerticalAlignment** specifica o recupera un valore che indica la p
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura.
+Questo attributo è una stringa di **lettura/scrittura.**
 
 
 
 | Valore   | Descrizione                                                                                                                                                                                                                                                                                                                                     |
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| top     | Valore predefinito. Mantiene la posizione del controllo rispetto alla parte superiore della **visualizzazione** o della **Sottovisualizzazione** padre quando la vista viene ridimensionata.                                                                                                                                                                                                             |
-| bottom  | Mantiene la posizione del controllo rispetto alla parte inferiore della **visualizzazione** o della **Sottovisualizzazione** padre quando la vista viene ridimensionata.                                                                                                                                                                                                                   |
-| center  | Mantiene il posizionamento del controllo in relazione al centro verticale della **visualizzazione** o della **Sottovisualizzazione** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                          |
-| adattamento | Mantiene la posizione del controllo rispetto ai margini superiore e inferiore della visualizzazione quando viene ridimensionato. Il controllo si adatta al momento in cui la **visualizzazione** o la **Sottovisualizzazione** padre è allungata. L'immagine effettiva non aumenta o diminuisce a meno che non sia ridimensionabile, ma l'area selezionabile aumenta o diminuisce se non è vincolata da un **clippingImage**. |
+| top     | Valore predefinito. Mantiene la posizione del controllo rispetto alla parte superiore dell'oggetto **VIEW** o **subVIEW** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                             |
+| bottom  | Mantiene la posizione del controllo rispetto alla parte inferiore dell'oggetto **VIEW** o **subVIEW** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                                   |
+| center  | Mantiene la posizione del controllo rispetto al centro verticale dell'oggetto **VIEW** o **subVIEW** padre quando la visualizzazione viene ridimensionata.                                                                                                                                                                                                          |
+| adattamento | Mantiene la posizione del controllo rispetto ai margini superiore e inferiore della visualizzazione quando viene ridimensionata. Il controllo si adatta in modo da adattarsi quando **l'elemento VIEW** o **subVIEW padre** viene allungato. L'immagine effettiva non aumenta o riduce a meno che non sia ridimensionabile, ma l'area selezionabile aumenta o si riduce se non è delimitata da **un oggetto clippingImage.** |
 
 
 
@@ -46,9 +46,9 @@ Questo attributo è una **stringa** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-A meno che **VerticalAlignment** non sia impostato su "Center", il controllo mantiene la distanza originale dal bordo specificato oppure da entrambi i bordi se viene specificato "Stretch" e il controllo è ridimensionabile. Se il controllo non è ridimensionabile e si specifica "Stretch", viene invece estesa l'area selezionabile.
+A meno che **verticalAlignment** non sia impostato su "center", il controllo mantiene la distanza originale dal bordo specificato o da entrambi i bordi se si specifica "stretch" e il controllo è ridimensionabile. Se il controllo non è ridimensionabile ed è specificato "stretch", l'area selezionabile viene estesa.
 
-È possibile impostare qualsiasi combinazione degli attributi **HorizontalAlignment** e **VerticalAlignment** . Se ad esempio si desidera che un controllo sia centrato orizzontalmente e verticalmente, impostare **HorizontalAlignment** su "Center" e **VerticalAlignment** su "Center".
+È possibile impostare qualsiasi combinazione degli **attributi horizontalAlignment** **e verticalAlignment.** Ad esempio, se vuoi che un controllo sia centrato sia orizzontalmente che verticalmente, imposta **horizontalAlignment** su "center" e **verticalAlignment** su "center".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ A meno che **VerticalAlignment** non sia impostato su "Center", il controllo man
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -67,7 +67,7 @@ A meno che **VerticalAlignment** non sia impostato su "Center", il controllo man
 [**Attributi di ambiente**](ambient-attributes.md)
 </dt> <dt>
 
-[**AmbientAttributes. horizontalAlignment**](ambientattributes-horizontalalignment.md)
+[**AmbientAttributes.horizontalAlignment**](ambientattributes-horizontalalignment.md)
 </dt> </dl>
 
  

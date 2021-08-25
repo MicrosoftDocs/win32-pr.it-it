@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_CentralPublishingChangeEvent
-description: Evento che rappresenta una modifica alle impostazioni di RDV centrale.
+title: Win32_CentralPublishingChangeEvent classe
+description: Evento che rappresenta una modifica alle impostazioni RDV centrali.
 ms.assetid: 95be015e-a185-4548-a7f7-a22b351a34c8
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_CentralPublishingChangeEvent Servizi Desktop remoto
-- Classe Win32_CentralPublishingChangeEvent Servizi Desktop remoto, descritta
+- Win32_CentralPublishingChangeEvent classe Servizi Desktop remoto
+- Win32_CentralPublishingChangeEvent classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4695479eb33301bda51b558375a18186fa08161e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bbc38d132920bd5ffcaa2208d8f1aa94c8629bb0c5399f6b8776654d078cd47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868521"
 ---
-# <a name="win32_centralpublishingchangeevent-class"></a>Win32 \_ CentralPublishingChangeEvent (classe)
+# <a name="win32_centralpublishingchangeevent-class"></a>Classe \_ CentralPublishingChangeEvent Win32
 
-Evento che rappresenta una modifica alle impostazioni di RDV centrale.
+Evento che rappresenta una modifica alle impostazioni RDV centrali.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -47,20 +47,20 @@ class Win32_CentralPublishingChangeEvent : __ExtrinsicEvent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ CentralPublishingChangeEvent** presenta questi tipi di membri:
+La **classe Win32 \_ CentralPublishingChangeEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ CentralPublishingChangeEvent** dispone di queste proprietà.
+La **classe Win32 \_ CentralPublishingChangeEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **Tipo operazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -72,7 +72,7 @@ Tipo di operazione corrispondente all'evento.
 
 <span id="Create"></span><span id="create"></span><span id="CREATE"></span>
 
-**Creazione** (0)
+**Crea** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -93,23 +93,23 @@ Tipo di operazione corrispondente all'evento.
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](/windows/desktop/WmiSdk/--event). Per ulteriori informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere la pagina relativa alle [costanti di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-constants).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](/windows/desktop/WmiSdk/--event). Per altre informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere [Costanti di sicurezza WMI](/windows/desktop/WmiSdk/wmi-security-constants).
 
 </dd> <dt>
 
 **TargetInstance**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -119,18 +119,18 @@ Oggetto modificato dall'operazione corrispondente all'evento.
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time). Questa proprietà viene ereditata dall' [**\_ \_ evento**](/windows/desktop/WmiSdk/--event).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Times). Questa proprietà viene ereditata [**\_ \_ dall'evento**](/windows/desktop/WmiSdk/--event).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> </dl>
 
@@ -142,8 +142,8 @@ Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vede
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Spazio dei nomi<br/>                | TerminalServices \\ cimv2 \\ radice<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

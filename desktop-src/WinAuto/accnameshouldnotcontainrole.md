@@ -4,12 +4,12 @@ description: AccNameShouldNotContainRole
 ms.assetid: 271461FF-5123-482F-B66D-A323CB3361DD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fb91eeeb34d484c1f51cd0b7cd2d2947e86abda
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c8f09bd9ccdf27c5f52a45466b6b8145cfe23248cc175777f57202aac6530791
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103714194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899731"
 ---
 # <a name="accnameshouldnotcontainrole"></a>AccNameShouldNotContainRole
 
@@ -23,29 +23,29 @@ Avviso
 
 ## <a name="description"></a>Descrizione
 
-Il nome di un elemento incorpora il proprio ruolo MSAA o il tipo di controllo UIA. Ad esempio, questo avviso può verificarsi se il metodo [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname) , utilizzato per recuperare il nome MSAA di un elemento, restituisce "Role \_ System \_ ScrollBar \_ \* ".
+Il nome di un elemento incorpora il ruolo MSAA o il tipo di controllo dell'interfaccia utente. Ad esempio, questo avviso può verificarsi se il metodo [**get \_ accName,**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname) usato per recuperare il nome MSAA di un elemento, restituisce "ROLE \_ SYSTEM \_ \_ SCROLLBAR". \*
 
-Questo problema causa problemi per gli utenti che si affidano a un lettore di schermate e a una tastiera per la navigazione, perché il ruolo verrà letto due volte o potrebbe non essere pronunciabile o non intuitivo per gli utenti.
+Questo problema causa problemi per gli utenti che si affidano a un'utilità per la lettura dello schermo e a una tastiera per lo spostamento, perché il ruolo verrà letto due volte o potrebbe essere imprevedibile o non intuitivo per gli utenti.
 
 ## <a name="possible-causes"></a>Possibili cause
 
--   All'elemento o al relativo padre è assegnato un nome o un'etichetta non corretta.
--   L'elemento o il relativo padre ha un nome predefinito che non è stato modificato in un nome descrittivo. Ad esempio, button1.
--   Uno sviluppatore non è in grado di leggere i nomi dei lettori dello schermo.
+-   All'elemento o al relativo elemento padre è assegnato un nome o un'etichetta non corretta.
+-   L'elemento o il relativo elemento padre ha un nome predefinito che non è stato modificato in un nome descrittivo. Ad esempio, button1.
+-   Uno sviluppatore non è a conoscenza del fatto che le utilità per la lettura dello schermo leggono i nomi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**IAccessible:: Get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)
+[**IAccessible::get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)
 </dt> <dt>
 
 [Proprietà Name](name-property.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

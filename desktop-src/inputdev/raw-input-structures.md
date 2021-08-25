@@ -4,12 +4,12 @@ description: Strutture di input non elaborato
 ms.assetid: e6ea3fde-98a0-4eab-888d-647a6b0eb1e2
 ms.topic: article
 ms.date: 03/25/2020
-ms.openlocfilehash: 1fe86112465cd94150c0b628e67ded393c69290c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32ad7ae704640b116f2693e6787e2162436171501cbcbb9948b1d3bfc8f16135
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888891"
 ---
 # <a name="raw-input-structures"></a>Strutture di input non elaborato
 
