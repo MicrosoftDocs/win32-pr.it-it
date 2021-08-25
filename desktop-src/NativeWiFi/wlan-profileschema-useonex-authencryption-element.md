@@ -1,5 +1,5 @@
 ---
-description: Indica se viene utilizzata l'autenticazione 802.1 X.
+description: Indica se viene usata l'autenticazione 802.1X.
 ms.assetid: dbddaf5a-7574-4282-ab4d-f6f697ed94ab
 title: Elemento useOneX (authEncryption)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: cb327be4006e8da0074815a74e49d3ccdc5d3c84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 961f1b6be52da97ada2c230579ac281652a07fcbae67ac32d2399eb2968b1946
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912571"
 ---
 # <a name="useonex-authencryption-element"></a>Elemento useOneX (authEncryption)
 
-L'elemento useOneX (authEncryption) indica se viene utilizzata l'autenticazione 802.1 X.
+L'elemento useOneX (authEncryption) indica se viene usata l'autenticazione 802.1X.
 
 ``` syntax
 <xs:element name="useOneX"
@@ -30,11 +30,11 @@ L'elemento useOneX (authEncryption) indica se viene utilizzata l'autenticazione 
  />
 ```
 
-L'elemento è definito dall'elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+L'elemento è definito [**dall'elemento authEncryption.**](wlan-profileschema-authencryption-security-element.md)
 
 ## <a name="examples"></a>Esempio
 
-Per visualizzare i profili di esempio che usano l'elemento **useOneX** , vedere esempi di profili [wireless](wireless-profile-samples.md).
+Per visualizzare i profili di esempio che usano **l'elemento useOneX,** vedere [Esempi di profili wireless](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,8 +42,8 @@ Per visualizzare i profili di esempio che usano l'elemento **useOneX** , vedere 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                 |
 
 

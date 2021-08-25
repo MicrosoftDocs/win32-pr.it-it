@@ -1,7 +1,7 @@
 ---
-description: Il metodo Connect dell'oggetto merge connette un modulo a una funzionalità aggiuntiva. Il modulo deve essere già stato Unito nel database o verrà unito al database. La funzionalità deve esistere prima di chiamare questa funzione.
+description: Il Connessione dell'oggetto Merge connette un modulo a una funzionalità aggiuntiva. Il modulo deve essere già stato unito nel database o verrà unito al database. La funzionalità deve esistere prima di chiamare questa funzione.
 ms.assetid: 1c1ef664-792c-4cdc-b468-1ffe0b7810a5
-title: Metodo merge. Connect (Mergemod. h)
+title: Unione. Connessione metodo (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: da66f7dfe4203e80d4778ae9b39c665a66164384
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c28aafaac9f8224ea4f622b2e63f81d9dc458d72e98c6e22c348087794e9e7a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926671"
 ---
-# <a name="mergeconnect-method"></a>Merge. Connect (metodo)
+# <a name="mergeconnect-method"></a>Unione. Connessione metodo
 
-Il metodo **Connect** dell'oggetto [**merge**](merge-object.md) connette un modulo a una funzionalità aggiuntiva. Il modulo deve essere già stato Unito nel database o verrà unito al database. La funzionalità deve esistere prima di chiamare questa funzione.
+Il **Connessione** metodo dell'oggetto [**Merge**](merge-object.md) connette un modulo a una funzionalità aggiuntiva. Il modulo deve essere già stato unito nel database o verrà unito al database. La funzionalità deve esistere prima di chiamare questa funzione.
 
-Le modifiche apportate al database non vengono salvate su disco a meno che non venga chiamato il metodo [**ChiudiDatabase**](merge-closedatabase.md) con *BCommit* impostato su **true**.
+Le modifiche apportate al database non vengono salvate su disco a meno che il [**metodo CloseDatabase**](merge-closedatabase.md) non venga chiamato con *bCommit* impostato su **TRUE.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,11 +55,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Gli errori possono essere recuperati tramite la proprietà [**Errors**](merge-errors.md) . Gli errori e i messaggi informativi vengono inseriti nel file di log corrente.
+Gli errori possono essere recuperati tramite la [**proprietà**](merge-errors.md) Errors. Gli errori e i messaggi informativi vengono inviati al file di log corrente.
 
 ### <a name="c"></a>C++
 
-Vedere funzione [**Connect**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-connect) .
+Vedere [**Connessione**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-connect) funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Vedere funzione [**Connect**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

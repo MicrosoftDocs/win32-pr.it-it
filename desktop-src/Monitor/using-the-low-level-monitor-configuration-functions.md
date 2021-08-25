@@ -1,60 +1,60 @@
 ---
-title: Uso delle funzioni di configurazione di monitoraggio Low-Level
-description: Uso delle funzioni di configurazione di monitoraggio Low-Level
+title: Uso delle funzioni Low-Level Monitoraggio prestazioni
+description: Uso delle funzioni Low-Level Monitoraggio prestazioni
 ms.assetid: 014a144b-d01a-4bc1-959d-08a643b3e1f5
 keywords:
 - monitoraggio, funzioni
 - monitoraggio, funzioni di configurazione di basso livello
 - monitoraggio, DDC/CI
-- monitorare, visualizzare l'interfaccia del comando del canale dati
-- configurazione del monitoraggio, funzioni di configurazione di basso livello
-- configurazione del monitoraggio, funzioni
+- monitor,Display Data Channel Command Interface
+- monitorare la configurazione, funzioni di configurazione di basso livello
+- monitorare la configurazione, funzioni
 - configurazione del monitoraggio, DDC/CI
-- configurare il monitoraggio, visualizzare l'interfaccia del comando del canale dati
+- configurazione del monitoraggio, interfaccia dei comandi del canale dati di visualizzazione
 - funzioni di configurazione di basso livello
-- Interfaccia del comando Visualizza canale dati
+- Interfaccia dei comandi del canale dati di visualizzazione
 - DDC/CI
-- Set di comandi di controllo VESA monitor (MCCS)
-- Set di comandi di controllo Monitor (MCCS)
-- MCCS (set di comandi di controllo monitor)
-- Pannello di controllo virtuale (VCP)
-- VCP (pannello di controllo virtuale)
+- VESA Monitor Control Command Set (MCCS)
+- Monitor Control Command Set (MCCS)
+- MCCS (Monitor Control Command Set)
+- Virtual Pannello di controllo (VCP)
+- VCP (Virtual Pannello di controllo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d98e2cd4d85cb972b6a13896e9c497e51e16f8d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f3ffd21f0b232db71bb6023f968122271ce70f03b0a632dc33d9df1e7ee993bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103963027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927391"
 ---
-# <a name="using-the-low-level-monitor-configuration-functions"></a>Uso delle funzioni di configurazione di monitoraggio Low-Level
+# <a name="using-the-low-level-monitor-configuration-functions"></a>Uso delle funzioni Low-Level Monitoraggio prestazioni
 
-Prima di usare le funzioni di configurazione di monitoraggio di basso livello, è necessario avere familiarità con questi standard:
+Prima di usare le funzioni di configurazione del monitoraggio di basso livello, è necessario avere familiarità con questi standard:
 
--   Visualizzazione dell'interfaccia di comando del canale dati (DDC/CI)
--   Set di comandi di controllo VESA monitor (MCCS)
+-   Interfaccia DDC/CI (Display Data Channel Command Interface)
+-   VESA Monitor Control Command Set (MCCS)
 
-Le funzioni di basso livello funzionano ottenendo e impostando i valori dei codici del pannello di controllo virtuale (VCP). Un codice VCP può essere *continuo* o non *continuo*. I codici continui possono assumere qualsiasi valore compreso tra zero e un valore massimo specifico del fornitore. I codici non continui supportano un set definito di valori, anch ' esso specifico per il fornitore.
+Le funzioni di basso livello funzionano ottenendo e impostando i valori dei codici vcp (Virtual Pannello di controllo). Un codice VCP può *essere continuo* o *non costante.* I codici continui possono presupporre qualsiasi valore compreso tra zero e un valore massimo specifico del fornitore. I codici non contigui supportano un set definito di valori, che è anche specifico del fornitore.
 
-Per utilizzare le funzioni di configurazione di monitoraggio di basso livello, attenersi alla procedura seguente:
+Per usare le funzioni di configurazione del monitoraggio di basso livello, seguire questa procedura:
 
-1.  Ottenere un handle **HMONITOR** chiamando [**EnumDisplayMonitors**](/windows/desktop/api/winuser/nf-winuser-enumdisplaymonitors) o [**MonitorFromWindow**](/windows/desktop/api/winuser/nf-winuser-monitorfromwindow).
-2.  Chiamare [**GetNumberOfPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromhmonitor) per ottenere il numero di monitoraggi fisici associati all'handle **HMONITOR** .
-3.  Chiamare [**GetPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromhmonitor) per ottenere un elenco di handle per i monitoraggi fisici.
-4.  Chiamare [**GetCapabilitiesStringLength**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) per ottenere la lunghezza della stringa delle funzionalità DDC/ci di un monitoraggio. La stringa capabilities è una stringa ASCII che contiene informazioni statiche sul monitoraggio. Una parte della stringa elenca i codici VCP supportati dal monitoraggio. Nella stringa sono inoltre elencati i valori supportati dei codici VCP non continui.
-5.  Allocare un buffer per memorizzare la stringa delle funzionalità e chiamare [**CapabilitiesRequestAndCapabilitiesReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-capabilitiesrequestandcapabilitiesreply) per ottenere la stringa.
-6.  Analizzare la stringa delle funzionalità per determinare quali codici VCP sono supportati dal monitoraggio.
-7.  Per un codice VCP continuo, chiamare [**GetVCPFeatureAndVCPFeatureReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) per ottenere i valori correnti e massimi del codice. Per un codice VCP non continuo, analizzare la stringa delle funzionalità per ottenere i valori supportati.
+1.  Ottenere un handle **HMONITOR** chiamando [**EnumDisplayMonitors**](/windows/desktop/api/winuser/nf-winuser-enumdisplaymonitors) o [**MonitorFromWindow.**](/windows/desktop/api/winuser/nf-winuser-monitorfromwindow)
+2.  Chiamare [**GetNumberOfPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromhmonitor) per ottenere il numero di monitor fisici associati all'handle **HMONITOR.**
+3.  Chiamare [**GetPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromhmonitor) per ottenere un elenco di handle per i monitor fisici.
+4.  Chiamare [**GetCapabilitiesStringLength**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength) per ottenere la lunghezza della stringa delle funzionalità DDC/CI di un monitoraggio. La stringa capabilities è una stringa ASCII che contiene informazioni statiche sul monitoraggio. Una parte della stringa elenca i codici VCP supportati dal monitoraggio. La stringa elenca anche i valori supportati dei codici VCP non contigui.
+5.  Allocare un buffer per contenere la stringa capabilities e chiamare [**CapabilitiesRequestAndCapabilitiesReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-capabilitiesrequestandcapabilitiesreply) per ottenere la stringa.
+6.  Analizzare la stringa capabilities per determinare i codici VCP supportati dal monitoraggio.
+7.  Per un codice VCP continuo, chiamare [**GetVCPFeatureAndVCPFeatureReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) per ottenere i valori correnti e massimi del codice. Per un codice VCP non contiguo, analizzare la stringa capabilities per ottenere i valori supportati.
 8.  Chiamare [**SetVCPFeature**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-setvcpfeature) per impostare un nuovo valore per un codice VCP.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Uso della configurazione di monitoraggio**](using-monitor-configuration.md)
+[**Uso della configurazione del monitoraggio**](using-monitor-configuration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-required-Forest-Behavior-Version
-description: Livello di funzione della foresta obbligatorio per questa funzionalità.
+title: Attributo ms-DS-Required-Forest-Behavior-Version
+description: Livello di funzione foresta obbligatorio per questa funzionalità.
 ms.assetid: ad884471-a416-4210-8cc8-0dbdf7ec535a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-required-Forest-Behavior-Version
-- attributo msDS-RequiredForestBehaviorVersion-schema AD
+- Attributo ms-DS-Required-Forest-Behavior-Version schema DI AD
+- Schema AD dell'attributo msDS-RequiredForestBehaviorVersion
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 287541b2eeeb37a3c45c7249c3661017bb580536
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24ea90bbaf51e69200764278b4cf64721505b1da435726720abe44bdaf7ff78b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925711"
 ---
-# <a name="ms-ds-required-forest-behavior-version-attribute"></a>attributo ms-DS-required-Forest-Behavior-Version
+# <a name="ms-ds-required-forest-behavior-version-attribute"></a>Attributo ms-DS-Required-Forest-Behavior-Version
 
-Livello di funzione della foresta obbligatorio per questa funzionalità.
+Livello di funzione foresta obbligatorio per questa funzionalità.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------|
-| CN                | ms-DS-required-Forest-Behavior-Version |
-| LDAP-Display-Name | msDS-RequiredForestBehaviorVersion     |
+| CN                | ms-DS-Required-Forest-Behavior-Version |
+| Ldap-Display-Name | msDS-RequiredForestBehaviorVersion     |
 | Dimensione              | \-                                     |
-| Privilegio aggiornamento  | \-                                     |
+| Privilegio di aggiornamento  | \-                                     |
 | Frequenza di aggiornamento  | \-                                     |
 | Attribute-Id      | 1.2.840.113556.1.4.2079                |
-| System-ID-GUID    | 4beca2e8-a653-41b2-8fee-721575474bec   |
+| System-Id-Guid    | 4beca2e8-a653-41b2-8fee-721575474bec   |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)   |
 
 
@@ -54,15 +54,15 @@ Livello di funzione della foresta obbligatorio per questa funzionalità.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Vero                                                                |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**ms-DS-facoltativo-funzionalità**](c-msds-optionalfeature.md)<br/> |
+| Classi usate in        | [**ms-DS-Optional-Feature**](c-msds-optionalfeature.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Livello di funzione della foresta obbligatorio per questa funzionalità.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Vero                                                                |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**ms-DS-facoltativo-funzionalità**](c-msds-optionalfeature.md)<br/> |
+| Classi usate in        | [**ms-DS-Optional-Feature**](c-msds-optionalfeature.md)<br/> |
 
 
 

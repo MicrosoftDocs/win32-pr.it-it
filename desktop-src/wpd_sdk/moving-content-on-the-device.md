@@ -1,21 +1,21 @@
 ---
-description: Trasferimento del contenuto nel dispositivo
+description: Spostamento di contenuto nel dispositivo
 ms.assetid: 5072d308-d376-4141-96df-dbef23fb9f9b
-title: Trasferimento del contenuto nel dispositivo
+title: Spostamento di contenuto nel dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eb4a9638e656d5cab8437448d64b79947df337b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0830dab93b4ac0cd11f988c34edef24b1eb11b8869f63efdc4b0b518fc9380b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928371"
 ---
-# <a name="moving-content-on-the-device"></a>Trasferimento del contenuto nel dispositivo
+# <a name="moving-content-on-the-device"></a>Spostamento di contenuto nel dispositivo
 
-Un'altra operazione comune eseguita da un'applicazione WPD è il trasferimento di contenuto da una posizione sul dispositivo a un'altra.
+Un'altra operazione comune eseguita da un'applicazione WPD è il trasferimento del contenuto da una posizione del dispositivo a un'altra.
 
-Le operazioni di spostamento del contenuto vengono eseguite utilizzando le interfacce descritte nella tabella seguente.
+Le operazioni di spostamento del contenuto vengono eseguite usando le interfacce descritte nella tabella seguente.
 
 
 
@@ -28,9 +28,9 @@ Le operazioni di spostamento del contenuto vengono eseguite utilizzando le inter
 
  
 
-La funzione MoveContentAlreadyOnDevice nel modulo ContentTransfer. cpp dell'applicazione di esempio illustra come un'applicazione può spostare il contenuto da una posizione a un'altra.
+La funzione MoveContentAlreadyOnDevice nel modulo ContentTransfer.cpp dell'applicazione di esempio illustra come un'applicazione può spostare il contenuto da una posizione a un'altra.
 
-La prima attività eseguita dalla funzione MoveContentAlreadyOnDevice consiste nell'eseguire una query sul driver di dispositivo per verificare se supporta lo spostamento del contenuto. Questa operazione viene eseguita chiamando la funzione helper SupportsCommand e passando \_ \_ \_ gli oggetti di spostamento della gestione degli oggetti Command WPD \_ \_ come secondo argomento.
+La prima attività eseguita dalla funzione MoveContentAlreadyOnDevice è eseguire una query sul driver di dispositivo per verificare se supporta lo spostamento del contenuto. Questa operazione viene eseguita chiamando la funzione helper SupportsCommand e passando WPD \_ COMMAND OBJECT MANAGEMENT MOVE OBJECTS come secondo \_ \_ \_ \_ argomento.
 
 
 ```C++
@@ -49,7 +49,7 @@ if (SupportsCommand(pDevice, WPD_COMMAND_OBJECT_MANAGEMENT_MOVE_OBJECTS) == FALS
 
 
 
-Il passaggio successivo prevede la richiesta all'utente di immettere due identificatori di oggetto. Il primo è l'identificatore per il contenuto che verrà spostato. Il secondo è l'identificatore per la posizione in cui l'applicazione deve spostare il contenuto.
+Il passaggio successivo comporta la richiesta all'utente di immettere due identificatori di oggetto. Il primo è l'identificatore del contenuto che verrà spostato. Il secondo è l'identificatore del percorso in cui l'applicazione deve spostare il contenuto.
 
 
 ```C++
@@ -77,7 +77,7 @@ if (FAILED(hr))
 
 
 
-Successivamente, l'esempio recupera un oggetto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) usato per accedere al metodo [**IPortableDeviceContent:: Move**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move) .
+Successivamente, l'esempio recupera un [**oggetto IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) usato per accedere al [**metodo IPortableDeviceContent::Move.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-move)
 
 
 ```C++
@@ -99,11 +99,11 @@ if (SUCCEEDED(hr))
 
 
 
-Infine, il contenuto viene spostato. Questo processo prevede quanto segue:
+Infine, il contenuto viene spostato. Questo processo comporta quanto segue:
 
-1.  Creazione di un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che riceve una struttura PROPVARIANT per l'oggetto da spostare.
+1.  Creazione di [**un oggetto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che riceve una struttura PROPVARIANT per l'oggetto da spostare.
 2.  Aggiunta di PROPVARIANT all'oggetto IPortableDevicePropVariantCollection.
-3.  Richiamo del metodo IPortableDeviceContent:: Move.
+3.  Chiamata del metodo IPortableDeviceContent::Move.
 
 
 ```C++

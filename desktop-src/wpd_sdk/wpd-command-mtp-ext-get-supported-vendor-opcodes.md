@@ -1,23 +1,23 @@
 ---
-description: Il comando WPD \_ comando \_ MTP \_ ext \_ get \_ supported \_ Vendor \_ OpCodes Invia un blocco di comandi MTP. A questo comando non è associata alcuna fase di dati successiva.
+description: Il comando WPD \_ COMMAND \_ MTP \_ EXT \_ GET SUPPORTED \_ \_ VENDOR \_ OPCODES invia un blocco di comandi MTP. A questo comando non è associata alcuna fase dati successiva.
 ms.assetid: 397ae29c-f81c-410e-9670-db69c099a321
-title: Comando WPD_COMMAND_MTP_EXT_GET_SUPPORTED_VENDOR_OPCODES (WpdMtpExtensions. h)
+title: WPD_COMMAND_MTP_EXT_GET_SUPPORTED_VENDOR_OPCODES comando (WpdMtpExtensions.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8713c739da98c179ecc2b7bf042905e4fd06ad7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45b0ab00fc3ada963e56dced49f97d3c1dbca578dfc5c1cded4735f9df947ff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927971"
 ---
-# <a name="wpd_command_mtp_ext_get_supported_vendor_opcodes-command"></a>\_Comando WPD \_ MTP \_ ext \_ get \_ supported \_ Vendor \_ OpCodes
+# <a name="wpd_command_mtp_ext_get_supported_vendor_opcodes-command"></a>COMANDO WPD \_ \_ MTP \_ EXT \_ GET SUPPORTED \_ VENDOR \_ \_ OPCODES COMMAND
 
-Il comando **WPD \_ comando \_ MTP \_ ext \_ get \_ supported \_ Vendor \_ OpCodes** Invia un blocco di comandi MTP. A questo comando non è associata alcuna fase di dati successiva.
+Il **comando WPD \_ COMMAND \_ MTP \_ EXT GET SUPPORTED VENDOR \_ \_ \_ \_ OPCODES** invia un blocco di comandi MTP. A questo comando non è associata alcuna fase dati successiva.
 
 ## <a name="command-category"></a>Categoria
 
-**WPD \_ categoria \_ MTP \_ \_ operazioni fornitore \_ ext**
+**WPD \_ CATEGORY \_ MTP \_ EXT \_ VENDOR \_ OPERATIONS**
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Il driver restituisce i risultati seguenti.
 
 | Risultato                                                | VarType | Descrizione                                                                                              |
 |-------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------|
-| **WPD \_ proprietà \_ MTP \_ \_ \_ codici operazione fornitore \_ ext** | \_UI4 VT | Obbligatorio. Oggetto **IPortableDevicePropVariantCollection** che contiene tutti i codici operativi estesi del fornitore. |
+| **CODICI DI OPERAZIONE \_ DEL FORNITORE \_ MTP \_ EXT DELLA \_ \_ PROPRIETÀ \_ WPD** | VT \_ UI4 | Obbligatorio. Oggetto **IPortableDevicePropVariantCollection** che contiene tutti i codici di operazione estesi dal fornitore. |
 
 
 
@@ -39,7 +39,7 @@ Il driver restituisce i risultati seguenti.
 
 ## <a name="calling-methods"></a>Chiamata di metodi
 
-Può essere chiamato solo direttamente tramite [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
+Può essere chiamato direttamente solo tramite [**IPortableDevice::SendCommand.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Può essere chiamato solo direttamente tramite [**IPortableDevice:: SendCommand*
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WpdMtpExtensions. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>WpdMtpExtensions.h</dt> </dl> |
 
 
 

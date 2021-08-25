@@ -1,21 +1,21 @@
 ---
 description: Nome visualizzato descrittivo della cartella padre di un elemento.
 ms.assetid: 4049b6cb-41a1-4df6-89d1-a2022d3a285d
-title: System. ItemFolderNameDisplay
+title: System.ItemFolderNameDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d637412b02345b52fee2e1c13e8f499314af4c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7c8e8ca12af7c7665a2fd4b64f2911a1e6dbc99805cf4355ea1bb1ceec764c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945171"
 ---
-# <a name="systemitemfoldernamedisplay"></a>System. ItemFolderNameDisplay
+# <a name="systemitemfoldernamedisplay"></a>System.ItemFolderNameDisplay
 
 Nome visualizzato descrittivo della cartella padre di un elemento.
 
-Questa operazione deriva da [System. ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md). Se la proprietà è VT \_ vuota, anche questa proprietà deve essere.
+Deriva da [System.ItemFolderPathDisplay.](./props-system-itemfolderpathdisplay.md) Se la proprietà è VT \_ EMPTY, anche questa proprietà deve essere .
 
 Se la cartella è una cartella di file, il valore verrà localizzato se è disponibile un nome localizzato.
 
@@ -37,9 +37,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Se [System. ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) è un VT \_ vuoto, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System. ItemFolderPathDisplay.
+Se [System.ItemFolderPathDisplay è](./props-system-itemfolderpathdisplay.md) VT \_ EMPTY, anche questa proprietà deve essere vuota. In caso contrario, deve essere derivato in modo appropriato dall'origine dati da System.ItemFolderPathDisplay.
 
 Esempi:
 
@@ -47,11 +47,11 @@ Esempi:
 
 | Percorso specificato                             | Nome visualizzato cartella |
 |----------------------------------------|---------------------|
-| c: \\ MyFile \\ testo \\hello.txt           | Testo                |
-| \\\\\\condivisione server \\ mydir \\goodnews.doc | mydir               |
-| \\\\\\numbers.xls condivisione \\ Server         | condividi               |
-| c: \\ cartelle \\ cartella                  | Cartelle             |
-| /Mailbox account/Inbox/' re: Hello!'    | Posta in arrivo               |
+| c: \\ MyFiles \\ Text \\hello.txt           | Testo                |
+| \\\\condivisione \\ server \\ mydir \\goodnews.doc | mydir               |
+| \\\\condivisione \\ \\ servernumbers.xls         | condividi               |
+| c: \\ Cartelle \\ Cartella                  | Cartelle             |
+| /Mailbox Account/Inbox/'Re: Hello!'    | Posta in arrivo               |
 
 
 
@@ -70,13 +70,13 @@ Esempi:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -85,7 +85,7 @@ Esempi:
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

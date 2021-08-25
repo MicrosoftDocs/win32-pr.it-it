@@ -4,12 +4,12 @@ ms.assetid: 2a159e29-c501-4721-9478-aa201454a415
 title: System.Importance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 211685b7fcc928565d2243afcc013f6e585c09f0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0eeeee29a063116d62fbf7ed523ecc8db2be7e97aaf009a8239ed0a2b0acd0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945361"
 ---
 # <a name="systemimportance"></a>System.Importance
 
@@ -99,7 +99,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -129,7 +129,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

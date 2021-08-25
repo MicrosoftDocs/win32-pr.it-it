@@ -1,10 +1,10 @@
 ---
-title: IPSec-owners-attributo Reference
-description: L'attributo IPSec-owners-Reference è solo per uso interno.
+title: Attributo Ipsec-Owners-Reference
+description: L'attributo Ipsec-Owners-Reference è solo per uso interno.
 ms.assetid: a04e5e01-efbb-47d5-83c5-20598de64f61
 ms.tgt_platform: multiple
 keywords:
-- IPSec-owners-schema AD dell'attributo di riferimento
+- Schema AD dell'attributo Ipsec-Owners-Reference
 - Schema AD dell'attributo ipsecOwnersReference
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac0579e48db84e33c3eb2d47a7bbcef007847d67
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 05accf4346f35f9a543718cbee6d49256c8024b5e9fecb8c5895d3e2431236a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104121991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924981"
 ---
-# <a name="ipsec-owners-reference-attribute"></a>IPSec-owners-attributo Reference
+# <a name="ipsec-owners-reference-attribute"></a>Attributo Ipsec-Owners-Reference
 
-L'attributo **IPSec-owners-Reference** è solo per uso interno.
+**L'attributo Ipsec-Owners-Reference** è solo per uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-owners-Reference                  |
-| LDAP-Display-Name | ipsecOwnersReference                    |
+| CN                | Riferimento a Ipsec-Owners-Reference                  |
+| Ldap-Display-Name | ipsecOwnersReference                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.624                  |
-| System-ID-GUID    | b40ff824-427a-11d1-a9c2-0000f80367c1    |
+| System-Id-Guid    | b40ff824-427a-11d1-a9c2-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| Is-Single-Valued       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **IPSec-owners-Reference** è solo per uso interno.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Falso                                        |
+| A valore singolo       | Falso                                        |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**IPSec-base**](c-ipsecbase.md)<br/> |
+| Classi usate in        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 

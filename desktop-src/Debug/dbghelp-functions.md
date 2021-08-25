@@ -4,12 +4,12 @@ ms.assetid: 7b28f70b-2d97-4cc2-8064-dfb806f9cffa
 title: Funzioni DbgHelp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db65e46fe407b26b1a6ec9ae3cb8d5d7301d5821
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8afacd44409004034ed727920c98487a0e2e34ad03e7af4ef5a2e5e13ab5303c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912771"
 ---
 # <a name="dbghelp-functions"></a>Funzioni DbgHelp
 
@@ -17,7 +17,7 @@ Di seguito sono riportate le funzioni DbgHelp.
 
 ## <a name="general"></a>Generale
 
-Di seguito sono riportate le funzioni di supporto generali:
+Di seguito sono riportate le funzioni helper generali:
 
 <dl>
 
@@ -30,7 +30,7 @@ Di seguito sono riportate le funzioni di supporto generali:
 
 ## <a name="debugger"></a>Debugger
 
-Le funzioni del servizio di debug sono le funzioni più adatte per l'uso da parte di un debugger o del codice di debug in un'applicazione. Queste funzioni possono essere usate in concerto con le funzioni del gestore di simboli per un uso più semplice.
+Le funzioni del servizio di debug sono le funzioni più adatte per l'uso da parte di un debugger o del codice di debug in un'applicazione. Queste funzioni possono essere usate insieme alle funzioni di gestione dei simboli per semplificarne l'uso.
 
 <dl>
 
@@ -47,7 +47,7 @@ Le funzioni del servizio di debug sono le funzioni più adatte per l'uso da part
 
 ## <a name="image-access"></a>Accesso alle immagini
 
-Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile. Le funzioni forniscono accesso di alto livello alla base di immagini e accesso molto specifico alle parti più comuni dei dati di un'immagine.
+Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile. Le funzioni forniscono un accesso di alto livello alla base delle immagini e un accesso molto specifico alle parti più comuni dei dati di un'immagine.
 
 <dl>
 
@@ -61,7 +61,7 @@ Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile.
 
 ## <a name="symbol-handler"></a>Gestore simboli
 
-Le funzioni del [gestore di simboli](symbol-handling.md) consentono alle applicazioni di accedere in modo semplice e portatile alle informazioni sul debug simbolico di un'immagine. Queste funzioni devono essere utilizzate esclusivamente per garantire l'accesso alle informazioni sui simboli. Questa operazione è necessaria perché queste funzioni isolano l'applicazione dal formato dei simboli.
+Le [funzioni di gestione](symbol-handling.md) dei simboli offrono alle applicazioni un accesso semplice e portabile alle informazioni di debug simboliche di un'immagine. Queste funzioni devono essere usate esclusivamente per garantire l'accesso alle informazioni simboliche. Questa operazione è necessaria perché queste funzioni isolano l'applicazione dal formato del simbolo.
 
 <dl>
 
@@ -125,7 +125,7 @@ Le funzioni del [gestore di simboli](symbol-handling.md) consentono alle applica
 
 ## <a name="symbol-server"></a>Server di simboli
 
-Il [server di simboli](symbol-servers-and-symbol-stores.md) consente ai debugger di recuperare automaticamente i file di simboli corretti senza nomi di prodotto, versioni o numeri di Build. Con il server di simboli vengono utilizzate le funzioni seguenti.
+Il [server di](symbol-servers-and-symbol-stores.md) simboli consente ai debugger di recuperare automaticamente i file di simboli corretti senza nomi di prodotto, versioni o numeri di build. Le funzioni seguenti vengono usate con il server di simboli.
 
 <dl>
 
@@ -139,9 +139,9 @@ Il [server di simboli](symbol-servers-and-symbol-stores.md) consente ai debugger
 [**SymSrvStoreSupplement**](/windows/desktop/api/DbgHelp/nf-dbghelp-symsrvstoresupplement)  
 </dl>
 
-## <a name="user-mode-minidump-files"></a>File di minidump in modalità utente
+## <a name="user-mode-minidump-files"></a>File minidump in modalità utente
 
-Le funzioni di minidump consentono alle applicazioni di produrre file CrashDumps che contengono un subset utile dell'intero contesto del processo. Questa operazione è nota come [file di minidump](minidump-files.md). Con i file di minidump vengono usate le funzioni seguenti.
+Le funzioni di minidump consentono alle applicazioni di produrre file crashdump contenenti un subset utile dell'intero contesto del processo. questo file è noto come [file di minidump](minidump-files.md). Le funzioni seguenti vengono usate con i file di minidump.
 
 <dl>
 
@@ -152,7 +152,7 @@ Le funzioni di minidump consentono alle applicazioni di produrre file CrashDumps
 
 ## <a name="source-server"></a>Server di origine
 
-Il [server di origine](source-server-and-source-indexing.md) consente a un client di recuperare la versione esatta dei file di origine utilizzati per compilare un'applicazione. Le funzioni seguenti vengono utilizzate con il server di origine.
+[Il server](source-server-and-source-indexing.md) di origine consente a un client di recuperare la versione esatta dei file di origine usati per compilare un'applicazione. Le funzioni seguenti vengono usate con il server di origine.
 
 -   [**SymGetSourceFile**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetsourcefile)
 -   [**SymEnumSourceFileTokens**](/windows/desktop/api/Dbghelp/nf-dbghelp-symenumsourcefiletokens)

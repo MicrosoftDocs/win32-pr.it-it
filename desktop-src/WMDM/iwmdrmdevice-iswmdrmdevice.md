@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMDRMDevice IsWMDRMDevice
-description: Il metodo IsWMDRMDevice determina se il dispositivo supporta Windows Media DRM 10 per i dispositivi portatili.
+description: Il metodo IsWMDRMDevice determina se il dispositivo supporta Windows Media DRM 10 per dispositivi portatili.
 ms.assetid: 247e7a77-e805-4848-893f-f5522c161232
 keywords:
-- Metodo IsWMDRMDevice Windows Media Gestione dispositivi
-- Metodo IsWMDRMDevice Windows Media Gestione dispositivi, interfaccia IWMDRMDevice
-- Interfaccia IWMDRMDevice Windows Media Gestione dispositivi, metodo IsWMDRMDevice
+- Metodo IsWMDRMDevice windows Media Device Manager
+- Metodo IsWMDRMDevice windows Media Device Manager , interfaccia IWMDRMDevice
+- Interfaccia IWMDRMDevice windows Media Device Manager , metodo IsWMDRMDevice
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca9cb79598ea41a996748e383c8fdfc63364dd6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60ee225267ce2301e9a2dad392d72ce72b0e698872cd3fd54ab3e50a07043477
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957261"
 ---
-# <a name="iwmdrmdeviceiswmdrmdevice-method"></a>Metodo IWMDRMDevice:: IsWMDRMDevice
+# <a name="iwmdrmdeviceiswmdrmdevice-method"></a>Metodo IWMDRMDevice::IsWMDRMDevice
 
-Il metodo **IsWMDRMDevice** determina se il dispositivo supporta Windows Media DRM 10 per i dispositivi portatili.
+Il **metodo IsWMDRMDevice** determina se il dispositivo supporta Windows Media DRM 10 per dispositivi portatili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT IsWMDRMDevice(
 
 <dl> <dt>
 
-*pdwVersion* \[ out\]
+*pdwVersion* \[ Cambio\]
 </dt> <dd>
 
 Versione di Windows Media DRM 10 per dispositivi portatili, il cui valore è 0x00010000.
@@ -52,13 +52,13 @@ Versione di Windows Media DRM 10 per dispositivi portatili, il cui valore è 0x0
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -70,8 +70,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Libreria<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 

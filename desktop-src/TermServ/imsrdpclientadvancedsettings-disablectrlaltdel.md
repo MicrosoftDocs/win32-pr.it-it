@@ -1,26 +1,26 @@
 ---
-title: Proprietà DisableCtrlAltDel di IMsRdpClientAdvancedSettings
-description: Specifica se la schermata iniziale esplicativa in Winlogon dovrebbe essere visualizzata.
+title: Proprietà IMsRdpClientAdvancedSettings DisableCtrlAltDel
+description: Specifica se deve essere visualizzata la schermata esplicativa iniziale in Winlogon.
 ms.assetid: 79212472-105f-4e92-8065-f97819637d02
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà DisableCtrlAltDel
-- Servizi Desktop remoto proprietà DisableCtrlAltDel, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà DisableCtrlAltDel
+- Proprietà DisableCtrlAltDel Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà DisableCtrlAltDel
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3380aa78c16c7e937637cc727fe81f054649f929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79c524945afe4fbaaa0498f579641a32d3f55f37e88335be82e8fa308fae502f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871056"
 ---
-# <a name="imsrdpclientadvancedsettingsdisablectrlaltdel-property"></a>IMsRdpClientAdvancedSettings::D Proprietà isableCtrlAltDel
+# <a name="imsrdpclientadvancedsettingsdisablectrlaltdel-property"></a>Proprietà IMsRdpClientAdvancedSettings::D isableCtrlAltDel
 
-Specifica se la schermata iniziale esplicativa in Winlogon dovrebbe essere visualizzata.
+Specifica se deve essere visualizzata la schermata esplicativa iniziale in Winlogon.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -84,15 +84,15 @@ HRESULT get_DisableCtrlAltDel(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la funzionalità o un valore diverso da zero per abilitare la funzionalità.
+Impostare questo parametro su 0 per disabilitare la funzionalità o su un valore diverso da zero per abilitarla.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

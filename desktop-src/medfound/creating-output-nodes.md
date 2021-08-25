@@ -4,32 +4,32 @@ ms.assetid: 6e548f2a-77cd-460e-9ffd-c098f6ee75eb
 title: Creazione di nodi di output
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4388258c82c12f8473dc07df83ba3b9467eed7e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6af2842458fb360374d34583b15bfbf5005b2f2bbdd8b32332bc6756ca4e8157
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943021"
 ---
 # <a name="creating-output-nodes"></a>Creazione di nodi di output
 
-Un nodo di output rappresenta un sink del flusso in un sink multimediale. Esistono due modi per inizializzare un nodo di output:
+Un nodo di output rappresenta un sink di flusso in un sink multimediale. Esistono due modi per inizializzare un nodo di output:
 
--   Da un puntatore al sink del flusso.
+-   Da un puntatore al sink di flusso.
 -   Da un puntatore a un oggetto di attivazione per il sink multimediale.
 
-Se si intende caricare la topologia all'interno del percorso multimediale protetto (PMP), è necessario usare un oggetto attivazione, in modo che il sink multimediale possa essere creato all'interno del processo protetto. Il primo approccio (usando un puntatore al sink di flusso) non funziona con il PMP.
+Se si desidera caricare la topologia all'interno del percorso del supporto protetto (PMP), è necessario usare un oggetto di attivazione, in modo che il sink multimediale possa essere creato all'interno del processo protetto. Il primo approccio (usando un puntatore al sink di flusso) non funziona con il PMP.
 
 ## <a name="creating-an-output-node-from-a-stream-sink"></a>Creazione di un nodo di output da un sink di flusso
 
-Per creare un nodo di output da un sink di flusso, procedere come segue:
+Per creare un nodo di output da un sink di flusso, eseguire le operazioni seguenti:
 
 1.  Creare un'istanza del sink multimediale.
-2.  Usare l'interfaccia [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) del sink multimediale per ottenere un puntatore al sink di flusso desiderato. (L'interfaccia **IMFMediaSink** dispone di diversi metodi che restituiscono puntatori a un sink di flusso).
-3.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag del **\_ nodo di \_ output \_ della topologia MF** per creare il nodo di output.
-4.  Chiamare [**IMFTopologyNode:: seobject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare un puntatore all'interfaccia [**IMFStreamSink**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamsink) del sink di flusso.
-5.  Impostare [**MF \_ TOPONODE \_ noshutdown \_ sull'attributo \_ Remove su**](mf-toponode-noshutdown-on-remove-attribute.md) **false** (facoltativo ma consigliato).
-6.  Chiamare [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
+2.  Usare l'interfaccia [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) del sink di supporto per ottenere un puntatore al sink di flusso desiderato. **L'interfaccia IMFMediaSink** include diversi metodi che restituiscono puntatori a un sink di flusso.
+3.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag **MF \_ TOPOLOGY \_ OUTPUT \_ NODE** per creare il nodo di output.
+4.  Chiamare [**IMFTopologyNode::SetObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare un puntatore [**all'interfaccia IMFStreamSink**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamsink) del sink di flusso.
+5.  Impostare [**l'attributo MF \_ TOPONODE \_ NOSHUTDOWN \_ ON \_ REMOVE**](mf-toponode-noshutdown-on-remove-attribute.md) su **FALSE** (facoltativo ma consigliato).
+6.  Chiamare [**IMFTopology::AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
 
 Nell'esempio seguente viene creato e inizializzato un nodo di output da un sink di flusso.
 
@@ -81,22 +81,22 @@ HRESULT AddOutputNode(
 
 
 
-Quando l'applicazione arresta la sessione multimediale, la sessione multimediale arresta automaticamente il sink multimediale. Non è pertanto possibile riutilizzare il sink multimediale con un'altra istanza della sessione multimediale.
+Quando l'applicazione arresta la sessione multimediale, la sessione multimediale arresta automaticamente il sink multimediale. Pertanto, non è possibile usare nuovamente il sink multimediale con un'altra istanza della sessione multimediale.
 
-## <a name="creating-an-output-node-from-an-activation-object"></a>Creazione di un nodo di output da un oggetto Activation
+## <a name="creating-an-output-node-from-an-activation-object"></a>Creazione di un nodo di output da un oggetto di attivazione
 
-Qualsiasi sink multimediale attendibile deve fornire un oggetto attivazione, in modo che il sink multimediale possa essere creato all'interno del processo protetto. Per altre informazioni, vedere [oggetti Activation](activation-objects.md). La funzione specifica che crea l'oggetto attivazione dipenderà dal sink multimediale.
+Qualsiasi sink di supporto attendibile deve fornire un oggetto di attivazione, in modo che possa essere creato all'interno del processo protetto. Per altre informazioni, vedere [Oggetti di attivazione](activation-objects.md). La funzione specifica che crea l'oggetto di attivazione dipenderà dal sink multimediale.
 
-Per creare un nodo di output da un oggetto Activation, procedere come segue:
+Per creare un nodo di output da un oggetto di attivazione, eseguire le operazioni seguenti:
 
-1.  Creare l'oggetto attivazione e ottenere un puntatore all'interfaccia [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) dell'oggetto Activation.
-2.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag del **\_ nodo di \_ output \_ della topologia MF** per creare il nodo di output.
-3.  Facoltativamente, impostare l'attributo [**MF \_ TOPONODE \_ STREAMID**](mf-toponode-streamid-attribute.md) nel nodo per specificare l'identificatore di flusso del sink di flusso. Se si omette questo attributo, il valore predefinito del nodo sarà Using Stream sink 0.
-4.  Impostare [**MF \_ TOPONODE \_ noshutdown \_ sull'attributo \_ Remove su**](mf-toponode-noshutdown-on-remove-attribute.md) **true** (facoltativo ma consigliato).
-5.  Chiamare [**IMFTopologyNode:: seobject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare il puntatore [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
-6.  Chiamare [**IMFTopology:: AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
+1.  Creare l'oggetto di attivazione e ottenere un puntatore [**all'interfaccia IMFActivate dell'oggetto**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) di attivazione.
+2.  Chiamare [**MFCreateTopologyNode**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopologynode) con il flag **MF \_ TOPOLOGY \_ OUTPUT \_ NODE** per creare il nodo di output.
+3.  Facoltativamente, impostare [**l'attributo \_ MF TOPONODE \_ STREAMID**](mf-toponode-streamid-attribute.md) nel nodo per specificare l'identificatore di flusso del sink di flusso. Se si omette questo attributo, per impostazione predefinita il nodo usa il sink di flusso 0.
+4.  Impostare [**l'attributo MF \_ TOPONODE \_ NOSHUTDOWN \_ ON \_ REMOVE**](mf-toponode-noshutdown-on-remove-attribute.md) su **TRUE** (facoltativo ma consigliato).
+5.  Chiamare [**IMFTopologyNode::SetObject**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-setobject) e passare il [**puntatore IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
+6.  Chiamare [**IMFTopology::AddNode**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-addnode) per aggiungere il nodo alla topologia.
 
-Nell'esempio seguente viene creato e inizializzato un nodo di output da un oggetto Activation.
+Nell'esempio seguente viene creato e inizializzato un nodo di output da un oggetto di attivazione.
 
 
 ```C++

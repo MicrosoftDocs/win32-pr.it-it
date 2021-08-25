@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio di codice riportato di seguito viene illustrato come utilizzare la gestione delle eccezioni vettoriale. Usa la funzione AddVectoredExceptionHandler per aggiungere diversi gestori, verifica i gestori, quindi usa la funzione RemoveVectoredExceptionHandler per rimuovere i gestori.
+description: Il codice di esempio seguente illustra come usare la gestione delle eccezioni vettoriale. Usa la funzione AddVectoredExceptionHandler per aggiungere diversi gestori, testa i gestori e quindi usa la funzione RemoveVectoredExceptionHandler per rimuovere i gestori.
 ms.assetid: dbf7016b-09ac-4ca7-9b47-38b0dd763462
-title: Uso di un gestore di eccezioni con vettori
+title: Uso di un gestore di eccezioni vettoriali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c766d6695ebebdcb65f2895356866233117d87
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1a74fa8d603997afcd5b2700a052c924315f2514651d588539a68f9bbc0e2068
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929231"
 ---
-# <a name="using-a-vectored-exception-handler"></a>Uso di un gestore di eccezioni con vettori
+# <a name="using-a-vectored-exception-handler"></a>Uso di un gestore di eccezioni vettoriali
 
-Nell'esempio di codice riportato di seguito viene illustrato come utilizzare la gestione delle eccezioni vettoriale. Usa la funzione [**AddVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler) per aggiungere diversi gestori, verifica i gestori, quindi usa la funzione [**RemoveVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredexceptionhandler) per rimuovere i gestori.
+Il codice di esempio seguente illustra come usare la gestione delle eccezioni vettoriale. Usa la [**funzione AddVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler) per aggiungere diversi gestori, testa i gestori e quindi usa la [**funzione RemoveVectoredExceptionHandler**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-removevectoredexceptionhandler) per rimuovere i gestori.
 
-**Windows a 64 bit:** Questo codice non è adatto per Windows a 64 bit.
+**64 bit Windows:** Questo codice non è adatto per le applicazioni a 64 bit Windows.
 
 
 ```C++

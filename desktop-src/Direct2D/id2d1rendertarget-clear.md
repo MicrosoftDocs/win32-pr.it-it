@@ -1,9 +1,9 @@
 ---
-title: Metodi Clear di ID2D1RenderTarget
-description: Cancella l'area di disegno dal colore specificato.
+title: Metodi CLEAR ID2D1RenderTarget
+description: Cancella l'area di disegno in base al colore specificato.
 ms.assetid: 3bfec923-17fc-479a-a760-9baab2ff3a56
 keywords:
-- Metodi Clear Direct2D
+- Clear methods Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 346e44e3ce0b59e40577d3207f45faafdc33b367
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e4e0c9843752af0799901537c5ee6d682d895a5ada22843ad2c406e9bda32b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928951"
 ---
-# <a name="id2d1rendertargetclear-methods"></a>Metodi ID2D1RenderTarget:: Clear
+# <a name="id2d1rendertargetclear-methods"></a>Metodi ID2D1RenderTarget::Clear
 
-Cancella l'area di disegno dal colore specificato.
+Cancella l'area di disegno in base al colore specificato.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,20 +30,20 @@ Cancella l'area di disegno dal colore specificato.
 
 | Metodo                                                                 | Descrizione                                                 |
 |:-----------------------------------------------------------------------|:------------------------------------------------------------|
-| [**Cancella (D2D1 \_ Color \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f)) | Cancella l'area di disegno dal colore specificato. <br/> |
-| [**Clear (D2D1 \_ Color \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f_))  | Cancella l'area di disegno dal colore specificato. <br/> |
+| [**Clear(D2D1 \_ COLOR \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f)) | Cancella l'area di disegno in base al colore specificato. <br/> |
+| [**Clear(D2D1 \_ COLOR \_ F&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f_))  | Cancella l'area di disegno in base al colore specificato. <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Direct2D interpreta *clearColor* come Alpha lineare (non premoltiplicato). Se la modalità Alpha della destinazione di rendering [**è \_ d2d1 \_ modalità Alpha \_ Ignore**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), il canale alfa di *clearColor* viene ignorato e sostituito con 1,0 f (completamente opaco).
+Direct2D interpreta *clearColor* come alfa rette (non premoltimulati). Se la modalità alfa della destinazione di rendering è [**D2D1 \_ ALPHA \_ MODE \_ IGNORE,**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode)il canale alfa di *clearColor* viene ignorato e sostituito con 1,0f (completamente opaco).
 
-Se la destinazione di rendering ha un clip attivo (specificato da [**PushAxisAlignedClip**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))), il comando Clear viene applicato solo all'area all'interno dell'area di ritaglio.
+Se la destinazione di rendering ha una clip attiva (specificata da [**PushAxisAlignedClip),**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))il comando cancella viene applicato solo all'area all'interno dell'area di ritaglio.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato il metodo **Clear** per creare uno sfondo bianco prima di eseguire il rendering di altro contenuto.
+Nell'esempio seguente viene utilizzato il **metodo Clear** per creare uno sfondo bianco prima di eseguire il rendering di altro contenuto.
 
 
 ```C++
@@ -103,7 +103,7 @@ HRESULT DemoApp::OnRender()
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

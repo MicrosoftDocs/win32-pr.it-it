@@ -1,5 +1,5 @@
 ---
-description: metodo Shell.FindComputer - 'Visualizza la finestra di dialogo Risultati ricerca: Computer. La finestra di dialogo mostra il risultato della ricerca di un computer specificato."
+description: metodo Shell.FindComputer - 'Visualizza la finestra di dialogo Risultati ricerca: Computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato."
 ms.assetid: 0304b955-afde-4de4-824a-9ec9c9530360 title: Shell.FindComputer method (Shldisp.h) ms.topic: reference ms.date: 05/31/2018 topic_type: 
 - APIRef
 - kbSyntax api_name: 
@@ -10,7 +10,7 @@ ms.assetid: 0304b955-afde-4de4-824a-9ec9c9530360 title: Shell.FindComputer metho
 
 # <a name="shellfindcomputer-method"></a>Metodo Shell.FindComputer
 
-Visualizza la **finestra di dialogo Risultati ricerca:** Computer. Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato.
+Visualizza la **finestra di dialogo Risultati ricerca:** Computer . Nella finestra di dialogo viene visualizzato il risultato della ricerca di un computer specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,9 +45,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente mostra **FindComputer** in uso. Il risultato di questo codice è lo stesso che si fa premendo il pulsante **Start,** facendo clic su **Cerca**, facendo clic sull'opzione **Stampanti,** computer o persone, quindi facendo clic su Un **computer nella rete**. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+L'esempio seguente mostra **FindComputer** in uso. Il risultato di questo codice è identico a quello che si verifica quando si preme il pulsante **Start,** si fa clic su Cerca **,** si fa clic sull'opzione **Stampanti,** computer o persone , quindi si fa clic su Un **computer nella rete**. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -105,7 +105,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

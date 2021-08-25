@@ -1,21 +1,21 @@
 ---
-description: L'utilizzo di Windows GDI+ per la stampa su una stampante è analogo all'utilizzo di GDI+ per l'estrazione di uno schermo del computer. Per creare una stampante, ottenere un handle del contesto di dispositivo per la stampante e quindi passare tale handle a un costruttore di grafica.
+description: L Windows GDI+ per disegnare su una stampante è simile all'uso di GDI+ per disegnare sullo schermo di un computer. Per disegnare su una stampante, ottenere un handle del contesto di dispositivo per la stampante e quindi passare tale handle a un costruttore Graphics.
 ms.assetid: a76cca57-6ed8-44cd-a9f6-f2692d14b68a
 title: Invio di un output GDI+ a una stampante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c1c4f6c05e4918663284e6d7747952040dcddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51116e27f3ef4e457d2d3cf8d39b26c1a5e2275da4b964bd4de58ec273db1e2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943781"
 ---
 # <a name="sending-gdi-output-to-a-printer"></a>Invio di un output GDI+ a una stampante
 
-L'utilizzo di Windows GDI+ per la stampa su una stampante è analogo all'utilizzo di GDI+ per l'estrazione di uno schermo del computer. Per creare una stampante, ottenere un handle del contesto di dispositivo per la stampante e quindi passare tale handle a un costruttore di [**grafica**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) .
+L Windows GDI+ per disegnare su una stampante è simile all'uso di GDI+ per disegnare sullo schermo di un computer. Per disegnare su una stampante, ottenere un handle del contesto di dispositivo per la stampante e quindi passare tale handle a un [**costruttore Graphics.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 
-La seguente applicazione console disegna una linea, un rettangolo e un'ellisse in una stampante denominata di stampa:
+L'applicazione console seguente disegna una linea, un rettangolo e un'ellisse su una stampante denominata MyPrinter:
 
 
 ```
@@ -59,21 +59,21 @@ INT main()
 
 
 
-Nel codice precedente, i tre comandi di disegno GDI+ si trovano tra le chiamate alle funzioni [StartDoc](/windows/win32/api/wingdi/nf-wingdi-startdocw) e [EndDoc](/windows/win32/api/wingdi/nf-wingdi-enddoc) , ognuna delle quali riceve l'handle di contesto del dispositivo stampante. Tutti i comandi grafici tra StartDoc e EndDoc vengono instradati a un metafile temporaneo. Dopo la chiamata a EndDoc, il driver della stampante converte i dati nel metafile nel formato richiesto dalla stampante specifica in uso.
+Nel codice precedente i tre comandi GDI+ di disegno sono compresi tra le chiamate alle funzioni [StartDoc](/windows/win32/api/wingdi/nf-wingdi-startdocw) ed [EndDoc,](/windows/win32/api/wingdi/nf-wingdi-enddoc) ognuno dei quali riceve l'handle del contesto di dispositivo della stampante. Tutti i comandi grafici compresi tra StartDoc ed EndDoc vengono instradati a un metafile temporaneo. Dopo la chiamata a EndDoc, il driver della stampante converte i dati nel metafile nel formato richiesto dalla stampante specifica in uso.
 
 > [!Note]  
-> Se lo spooling non è abilitato per la stampante utilizzata, l'output della grafica non viene indirizzato a un metafile. Al contrario, i singoli comandi grafici vengono elaborati dal driver della stampante e quindi inviati alla stampante.
+> Se lo spooling non è abilitato per la stampante in uso, l'output grafico non viene indirizzato a un metafile. I singoli comandi grafici vengono invece elaborati dal driver della stampante e quindi inviati alla stampante.
 
  
 
-In genere non è necessario impostare come hardcoded il nome di una stampante come è stato fatto nell'applicazione console precedente. Un'alternativa al nome a livello di codice consiste nel chiamare [GetDefaultPrinter](../printdocs/getdefaultprinter.md) per ottenere il nome della stampante predefinita. Prima di chiamare GetDefaultPrinter, è necessario allocare un buffer sufficientemente grande da mantenere il nome della stampante. È possibile determinare le dimensioni del buffer necessario chiamando GetDefaultPrinter, passando **null** come primo argomento.
+In genere non è consigliabile impostare come hard coded il nome di una stampante come è stato fatto nell'applicazione console precedente. Un'alternativa alla codifica hard-coding del nome consiste nel chiamare [GetDefaultPrinter](../printdocs/getdefaultprinter.md) per ottenere il nome della stampante predefinita. Prima di chiamare GetDefaultPrinter, è necessario allocare un buffer sufficientemente grande da contenere il nome della stampante. È possibile determinare le dimensioni del buffer richiesto chiamando GetDefaultPrinter, passando **NULL** come primo argomento.
 
 > [!Note]  
-> La funzione [GetDefaultPrinter](../printdocs/getdefaultprinter.md) è supportata solo in Windows 2000 e versioni successive.
+> La [funzione GetDefaultPrinter](../printdocs/getdefaultprinter.md) è supportata solo in Windows 2000 e versioni successive.
 
  
 
-La seguente applicazione console ottiene il nome della stampante predefinita, quindi disegna un rettangolo e un'ellisse sulla stampante. La chiamata di [**Graphics::D rawrectangle**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) è compresa tra le chiamate a [Startpage](/windows/win32/api/wingdi/nf-wingdi-startpage) e [EndPage](/windows/win32/api/wingdi/nf-wingdi-endpage), pertanto il rettangolo si trova in una pagina da sola. Analogamente, l'ellisse si trova in una pagina da sola.
+L'applicazione console seguente ottiene il nome della stampante predefinita e quindi disegna un rettangolo e un'ellisse su tale stampante. La [**chiamata Graphics::D rawRectangle**](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) si trova tra le chiamate a [StartPage](/windows/win32/api/wingdi/nf-wingdi-startpage) ed [EndPage,](/windows/win32/api/wingdi/nf-wingdi-endpage)quindi il rettangolo si trova in una pagina da sola. Analogamente, l'ellisse si trova in una pagina da sola.
 
 
 ```

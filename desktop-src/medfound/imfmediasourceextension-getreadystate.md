@@ -1,7 +1,7 @@
 ---
 description: Ottiene lo stato pronto dell'origine multimediale.
 ms.assetid: 155d9202-5598-467c-b4d0-d22424b13b9d
-title: 'Metodo IMFMediaSourceExtension:: GetReadyState'
+title: Metodo IMFMediaSourceExtension::GetReadyState
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: d541177aaabc7c4558a75de870aa6477872f794b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: ebfd7bd23f196b5956d4460dc0d8e7a9569d8091124cefa34072dd754fca0d5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103761495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941931"
 ---
-# <a name="imfmediasourceextensiongetreadystate-method"></a>Metodo IMFMediaSourceExtension:: GetReadyState
+# <a name="imfmediasourceextensiongetreadystate-method"></a>Metodo IMFMediaSourceExtension::GetReadyState
 
 Ottiene lo stato pronto dell'origine multimediale.
 
@@ -47,9 +47,9 @@ Stato pronto dell'origine multimediale.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Stato pronto dell'origine multimediale.
 [**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 </dt> <dt>
 
-[**pronto per MF \_ MSE \_**](mf-mse-ready.md)
+[**MF \_ MSE \_ READY**](mf-mse-ready.md)
 </dt> </dl>
 
  

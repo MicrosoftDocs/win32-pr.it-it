@@ -1,10 +1,10 @@
 ---
-title: TLSKeyPackEnumNext (funzione)
-description: Continua da una precedente chiamata alla funzione TLSKeyPackEnumBegin e restituisce il key pack successivo installato in un server licenze Desktop remoto corrispondente ai criteri di ricerca.
+title: Funzione TLSKeyPackEnumNext
+description: Continua da una chiamata precedente alla funzione TLSKeyPackEnumBegin e restituisce il key pack successivo installato in un server licenze Desktop remoto che corrisponde ai criteri di ricerca.
 ms.assetid: 2614eb7a-df57-42a6-ad34-0a3211a6b8c3
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto funzione TLSKeyPackEnumNext
+- Funzione TLSKeyPackEnumNext Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 897874f333ed7933ea1616f7f5ba5f1686736d0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d352d94204e4c590668018546f0d6304d4faa3836bcc7289b675b05b1ae2b825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869261"
 ---
-# <a name="tlskeypackenumnext-function"></a>TLSKeyPackEnumNext (funzione)
+# <a name="tlskeypackenumnext-function"></a>Funzione TLSKeyPackEnumNext
 
-Continua da una precedente chiamata alla funzione [**TLSKeyPackEnumBegin**](tlskeypackenumbegin.md) e restituisce il key pack successivo installato in un server licenze Desktop remoto corrispondente ai criteri di ricerca.
+Continua da una chiamata precedente alla funzione [**TLSKeyPackEnumBegin**](tlskeypackenumbegin.md) e restituisce il key pack successivo installato in un server licenze Desktop remoto che corrisponde ai criteri di ricerca.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mstlsapi.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Mstlsapi.dll.
 
  
 
@@ -48,41 +48,41 @@ DWORD WINAPI TLSKeyPackEnumNext(
 
 <dl> <dt>
 
-*hHandle* \[ in\]
+*hHandle* \[ Pollici\]
 </dt> <dd>
 
-Handle per un server licenze Desktop remoto. Specificare un handle aperto dalla funzione [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Handle a un Desktop remoto licenze. Specificare un handle aperto dalla funzione [**TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*lpKeyPack* \[ in\]
+*lpKeyPack* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**LSKeyPack**](lskeypack.md) che riceve il key pack successivo corrispondente ai criteri di ricerca.
+Puntatore a una [**struttura LSKeyPack**](lskeypack.md) che riceve il key pack successivo che corrisponde ai criteri di ricerca.
 
 </dd> <dt>
 
-*pdwErrCode* \[ out\]
+*pdwErrCode* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve uno dei codici di errore seguenti alla restituzione.
+Puntatore a una variabile che riceve uno dei codici di errore seguenti al ritorno.
 
 <dt>
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ \_Operazione riuscita** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
 
-La chiamata è riuscita.
+La chiamata ha esito positivo.
 
 </dd> <dt>
 
 <span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>
 
-<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ Non \_ sono \_ più \_ disponibili dati** (4001)
+<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ I \_ NO \_ MORE \_ DATA** (4001)
 
 
 </dt> <dd>
@@ -93,7 +93,7 @@ Nessun altro Key Pack corrisponde ai criteri di ricerca.
 
 <span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>
 
-<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ \_ \_ Errore interno di E** (5001)
+<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ E \_ ERRORE \_ INTERNO** (5001)
 
 
 </dt> <dd>
@@ -104,18 +104,18 @@ Errore interno nel server licenze.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ \_ \_ Sequenza E non valida** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SEQUENZA \_ NON VALIDA** (5006)
 
 
 </dt> <dd>
 
-Sequenza di chiamata non valida. È necessario chiamare la funzione [**TLSKeyPackEnumBegin ()**](tlskeypackenumbegin.md) prima di questa.
+Sequenza chiamante non valida. È necessario chiamare la [**funzione TLSKeyPackEnumBegin()**](tlskeypackenumbegin.md) prima di questo.
 
 </dd> <dt>
 
 <span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>
 
-<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ \_Server E \_ occupato** (5007)
+<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ SERVER \_ OCCUPATO** (5007)
 
 
 </dt> <dd>
@@ -126,7 +126,7 @@ Il server licenze è troppo occupato per elaborare la richiesta.
 
 <span id="LSERVER_E_OUTOFMEMORY"></span><span id="lserver_e_outofmemory"></span>
 
-<span id="LSERVER_E_OUTOFMEMORY"></span><span id="lserver_e_outofmemory"></span>**LSERVER \_ E \_ OutOfMemory** (5008)
+<span id="LSERVER_E_OUTOFMEMORY"></span><span id="lserver_e_outofmemory"></span>**LSERVER \_ E \_ OUTOFMEMORY** (5008)
 
 
 </dt> <dd>
@@ -144,14 +144,14 @@ Questa funzione restituisce i valori restituiti possibili seguenti.
 **RPC \_ S \_ OK**
 </dt> <dd>
 
-La chiamata è riuscita. Controllare il valore del parametro *pdwErrCode* per ottenere il codice restituito per la chiamata.
+La chiamata ha avuto esito positivo. Controllare il valore del *parametro pdwErrCode* per ottenere il codice restituito per la chiamata.
 
 </dd> <dt>
 
-**\_ \_ arg non valido \_**
+**RPC \_ S NON VALIDA \_ \_ ARG**
 </dt> <dd>
 
-Argomento non valido.
+L'argomento non è valido.
 
 </dd> </dl>
 

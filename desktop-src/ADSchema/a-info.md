@@ -1,11 +1,11 @@
 ---
-title: Attributo comment
-description: Commenti dell'utente. Questa stringa può essere una stringa null.
+title: Attributo Comment
+description: Commenti dell'utente. Questa stringa può essere null.
 ms.assetid: c57493b3-a42a-49ad-8f8c-0afadbb3ba09
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo comment
-- attributo info-schema AD
+- Comment attribute AD Schema
+- Attributo info Schema ad
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bd84674fce08f75c3162628b32f67a75fb8c026
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 739203abd9cfbeb383ca4365bdc8b19135010830c4c23305aff18d86d9b03be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925491"
 ---
-# <a name="comment-attribute-ad-schema"></a>Attributo comment (schema AD)
+# <a name="comment-attribute-ad-schema"></a>Attributo Comment (schema AD)
 
-Commenti dell'utente. Questa stringa può essere una stringa null.
+Commenti dell'utente. Questa stringa può essere null.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------------|
 | CN                | Commento                                                                  |
-| LDAP-Display-Name | info                                                                     |
+| Ldap-Display-Name | info                                                                     |
 | Dimensione              | \-                                                                       |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                   |
-| Frequenza di aggiornamento  | Ogni volta che l'utente o l'amministratore deve aggiungere commenti per l'account. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                   |
+| Frequenza di aggiornamento  | Ogni volta che l'utente o l'amministratore deve aggiungere commenti sull'account. |
 | Attribute-Id      | 1.2.840.113556.1.2.81                                                    |
-| System-ID-GUID    | bf96793e-0de6-11d0-a285-00aa003049e2                                     |
+| System-Id-Guid    | bf96793e-0de6-11d0-a285-00aa003049e2                                     |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                              |
 
 
@@ -58,15 +58,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Commenti dell'utente. Questa stringa può essere una stringa null.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3004                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario di posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
