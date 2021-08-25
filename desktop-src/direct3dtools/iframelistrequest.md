@@ -1,5 +1,5 @@
 ---
-description: Richiesta per l'elenco di frame con l'ID evento e il numero di frame.
+description: Richiesta per l'elenco di frame con l'ID evento e il numero di fotogramma.
 MS-HAID: vspixengine.IFrameListRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d5795a72931a3900b4be4e091b545602ccdd29e2d2c21bc95e7e5c9877f75dba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4c56fea2c458076ff91c5acdca3f22dcdfc830e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119742271"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631699"
 ---
 # <a name="span-idvspixengineiframelistrequestspaniframelistrequest-interface"></a><span id="vspixengine.iframelistrequest"></span>Interfaccia IFrameListRequest
 
-Richiesta per l'elenco di frame con l'ID evento e il numero di frame.
+Richiesta per l'elenco di frame con l'ID evento e il numero di fotogramma.
 
 ## <a name="members"></a>Membri
 
@@ -38,13 +38,13 @@ Richiesta per l'elenco di frame con l'ID evento e il numero di frame.
 
 **L'interfaccia IFrameListRequest** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframelistrequest-requestasync-iframelistcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere i frame di elenco acquisiti nel log grafico.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframelistrequest-requestasync-iframelistcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere i frame di elenco acquisiti nel log di grafica.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

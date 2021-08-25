@@ -1,23 +1,23 @@
 ---
 description: Recupero di un identificatore di oggetto da un identificatore univoco permanente
 ms.assetid: 146f8943-d4e1-4b87-a812-e534082a4f14
-title: Recupero di un ID oggetto da un ID univoco persistente
+title: Recupero di un ID oggetto da un ID univoco permanente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f997f0faf586a374e5a83c6f96b6508f02eb41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4f08d496c7c03101602c945e6c27e7a2624fe84957eda932ead806f964d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054771"
 ---
-# <a name="retrieving-an-object-id-from-a-persistent-unique-id"></a>Recupero di un ID oggetto da un ID univoco persistente
+# <a name="retrieving-an-object-id-from-a-persistent-unique-id"></a>Recupero di un ID oggetto da un ID univoco permanente
 
-Gli identificatori di oggetto devono essere univoci solo per una determinata sessione del dispositivo. Se l'utente stabilisce una nuova connessione, gli identificatori di una sessione precedente potrebbero non corrispondere agli identificatori per la sessione corrente. Per risolvere questo problema, l'API WPD supporta gli identificatori univoci permanenti (PUID), che vengono mantenuti tra le sessioni del dispositivo.
+È garantito che gli identificatori di oggetto siano univoci solo per una determinata sessione del dispositivo. se l'utente stabilisce una nuova connessione, gli identificatori di una sessione precedente potrebbero non corrispondere a identificatori per la sessione corrente. Per risolvere questo problema, l'API WPD supporta identificatori univoci persistenti (PUID), che vengono mantenuti tra le sessioni del dispositivo.
 
-In alcuni dispositivi i PUID vengono archiviati in modo nativo con un oggetto specifico. Altri possono generare il PUID in base a un hash dei dati oggetto selezionati. Altri possono trattare gli identificatori di oggetto come PUID, in quanto possono garantire che questi identificatori non cambiano mai.
+Alcuni dispositivi archiviano i propri PUID in modo nativo con un determinato oggetto. Altri possono generare il PUID in base a un hash dei dati dell'oggetto selezionato. Altri possono considerare gli identificatori di oggetto come PUID (perché possono garantire che questi identificatori non cambino mai).
 
-La funzione GetObjectIdentifierFromPersistentUniqueIdentifier nel modulo ContentProperties. cpp illustra il recupero di un identificatore di oggetto per un determinato PUID.
+La funzione GetObjectIdentifierFromPersistentUniqueIdentifier nel modulo ContentProperties.cpp illustra il recupero di un identificatore di oggetto per un PUID specificato.
 
 L'applicazione può recuperare un identificatore di oggetto per un PUID corrispondente usando le interfacce descritte nella tabella seguente.
 
@@ -26,7 +26,7 @@ L'applicazione può recuperare un identificatore di oggetto per un PUID corrispo
 | Interfaccia                                                                                      | Descrizione                                                                                         |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Fornisce l'accesso al metodo di recupero.                                                            |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per archiviare sia l'identificatore di oggetto sia l'identificatore univoco permanente corrispondente (PUID). |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usato per archiviare sia l'identificatore di oggetto che l'identificatore univoco permanente (PUID) corrispondente. |
 
 
 
@@ -47,7 +47,7 @@ if (FAILED(hr))
 
 
 
-Successivamente, l'applicazione di esempio recupera un oggetto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) , che verrà usato per richiamare il metodo [**GetObjectIDsFromPersistentUniqueIDs**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) .
+Successivamente, l'applicazione di esempio recupera un [**oggetto IPortableDeviceContent,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) che userà per richiamare il [**metodo GetObjectIDsFromPersistentUniqueIDs.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids)
 
 
 ```C++
@@ -63,7 +63,7 @@ if (SUCCEEDED(hr))
 
 
 
-Successivamente, viene creato un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che conterrà il PUID fornito dall'utente.
+Crea quindi un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contenerà il PUID fornito dall'utente.
 
 
 ```C++
@@ -75,7 +75,7 @@ hr = CoCreateInstance(CLSID_PortableDevicePropVariantCollection,
 
 
 
-Una volta eseguiti i tre passaggi precedenti, l'esempio è pronto per recuperare l'identificatore di oggetto che corrisponde al PUID fornito dall'utente. Questa operazione viene eseguita chiamando il metodo [**IPortableDeviceContent:: GetObjectIDsFromPersistentUniqueIDs**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) . Prima di chiamare questo metodo, l'esempio Inizializza una struttura PROPVARIANT, scrive il PUID fornito dall'utente in questa struttura e lo aggiunge all'oggetto IPortableDevicePropVariantCollection in corrispondenza del quale punta pPersistentUniqueIDs. Questo puntatore viene passato come primo argomento al metodo GetObjectIDsFromPersistentUniqueIDs. Il secondo argomento di GetObjectIDsFromPersistentUniqueIDs è un oggetto IPortableDevicePropVariantCollection che riceve l'identificatore dell'oggetto corrispondente.
+Dopo aver effettuato i tre passaggi precedenti, l'esempio è pronto per recuperare l'identificatore di oggetto corrispondente al PUID fornito dall'utente. Questa operazione viene eseguita chiamando il [**metodo IPortableDeviceContent::GetObjectIDsFromPersistentUniqueIDs.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-getobjectidsfrompersistentuniqueids) Prima di chiamare questo metodo, l'esempio inizializza una struttura PROPVARIANT, scrive il PUID fornito dall'utente in questa struttura e lo aggiunge all'oggetto IPortableDevicePropVariantCollection a cui punta pPersistentUniqueIDs. Questo puntatore viene passato come primo argomento al metodo GetObjectIDsFromPersistentUniqueIDs. Il secondo argomento di GetObjectIDsFromPersistentUniqueIDs è un oggetto IPortableDevicePropVariantCollection che riceve l'identificatore di oggetto corrispondente.
 
 
 ```C++

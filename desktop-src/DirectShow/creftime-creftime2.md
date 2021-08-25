@@ -1,7 +1,7 @@
 ---
-description: Questo metodo del costruttore CRefTime. CRefTime (Reftime. h) usa il parametro *msecs* .
+description: Questo metodo del costruttore CRefTime.CRefTime (Reftime.h) usa il *parametro msecs.*
 ms.assetid: 039f57b2-0b5a-4087-b252-a9b8bbb7f284
-title: Costruttore CRefTime. CRefTime (Reftime. h)-parametro msecs
+title: Costruttore CRefTime.CRefTime (Reftime.h) - parametro msecs
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 00022ab493d08dd636be45008e0efdfde854e77a
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: db696a174c17b26f745a33a532c7020932e7e2cfd5a872ed8585d6a6291b0806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054731"
 ---
-# <a name="creftimecreftime-constructor-reftimeh---msecs-parameter"></a>Costruttore CRefTime. CRefTime (Reftime. h)-parametro msecs
+# <a name="creftimecreftime-constructor-reftimeh---msecs-parameter"></a>Costruttore CRefTime.CRefTime (Reftime.h) - parametro msecs
 
 Metodo del costruttore.
 
@@ -42,7 +42,7 @@ CRefTime(
 
 <dl> <dt>
 
-*msec* 
+*msecs* 
 </dt> <dd>
 
 Tempo in millisecondi.
@@ -55,8 +55,8 @@ Tempo in millisecondi.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione  | Reftime. h (include Streams. h)                                                                                   |
-| Libreria | Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione  | Reftime.h (includere Flussi.h)                                                                                   |
+| Libreria | Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 
 

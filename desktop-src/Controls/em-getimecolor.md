@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETIMECOLOR (RichEdit. h)
-description: Recupera il colore di composizione IME (Input Method Editor).
+title: EM_GETIMECOLOR messaggio (Richedit.h)
+description: Recupera il colore della composizione IME (Input Method Editor).
 ms.assetid: 788ac56c-f2d8-4e9a-8829-b92dcd76e6de
 keywords:
-- Controlli di Windows Message EM_GETIMECOLOR
+- EM_GETIMECOLOR controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8a19061651787ff94575f8bc64a69f06d445a7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46ac9d49f4fe178bdda45359da8aabd40badcd68aceadc4a57890279fc9fda01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049101"
 ---
-# <a name="em_getimecolor-message"></a>\_Messaggio GETIMECOLOR em
+# <a name="em_getimecolor-message"></a>Messaggio \_ EM GETIMECOLOR
 
-Recupera il colore di composizione IME (Input Method Editor).
+Recupera il colore della composizione IME (Input Method Editor).
 
 > [!Note]  
-> Questo messaggio è supportato solo nelle versioni in lingua asiatica di Microsoft Rich Edit 1,0. Non è supportata nelle versioni successive di Rich Edit.
+> Questo messaggio è supportato solo nelle versioni in lingua asia di Microsoft Rich Edit 1.0. Non è supportato nelle versioni successive di Rich Edit.
 
  
 
@@ -37,14 +37,14 @@ Recupera il colore di composizione IME (Input Method Editor).
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Matrice di quattro elementi di strutture [**COMPCOLOR**](/windows/desktop/api/Richedit/ns-richedit-compcolor) che riceve il colore di composizione.
+Matrice di quattro elementi di [**strutture COMPCOLOR**](/windows/desktop/api/Richedit/ns-richedit-compcolor) che riceve il colore della composizione.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Matrice di quattro elementi di strutture [**COMPCOLOR**](/windows/desktop/api/Ri
 
 Se l'operazione ha esito positivo, il valore restituito è un valore diverso da zero.
 
-Se l'operazione ha esito negativo, il valore restituito è zero.
+Se l'operazione non riesce, il valore restituito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Se l'operazione ha esito negativo, il valore restituito è zero.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

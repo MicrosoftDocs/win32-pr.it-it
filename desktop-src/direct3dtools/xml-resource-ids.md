@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 29617a4c4f8e42fd4c6049a987c98e7edcf11d783a0d226fc9fc751d8d28c2ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6cde2fe260924702eaeaebad235ebf1b469c73ed
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119075"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122621907"
 ---
 # <a name="span-idvspixenginexml_resource_idsspanxml_resource_ids-enumeration"></a><span id="vspixengine.xml_resource_ids"></span>Enumerazione \_ DEGLI ID risorsa \_ XML
 
@@ -191,7 +191,7 @@ ID risorsa per la stringa "rettali di forbice" usata nei dati XML.
 ID risorsa per la stringa "rasterizer" usata nei dati XML.
 
 <span id="XML_SHADER_GENERAL_INFORMATION"></span><span id="xml_shader_general_information"></span>**INFORMAZIONI GENERALI SU XML \_ \_ \_ SHADER**  
-ID risorsa per la stringa "informazioni generali shader" usata nei dati XML.
+ID risorsa per la stringa "informazioni generali dello shader" usata nei dati XML.
 
 <span id="XML_SHADER_RESOURCES"></span><span id="xml_shader_resources"></span>**RISORSE \_ DI SHADER \_ XML**  
 ID risorsa per la stringa "risorse shader" usata nei dati XML.
@@ -230,7 +230,7 @@ ID risorsa per la stringa "viste di accesso non ordinate" usata nei dati XML.
 ID risorsa per la stringa "istanze di classe" usata nei dati XML.
 
 <span id="XML_INSTANCE_INDEX"></span><span id="xml_instance_index"></span>**INDICE \_ DELL'ISTANZA \_ XML**  
-ID risorsa per la stringa "instance index" usata nei dati XML.
+ID risorsa per la stringa "indice dell'istanza" usata nei dati XML.
 
 <span id="XML_INSTANCE_NAME"></span><span id="xml_instance_name"></span>**NOME \_ ISTANZA \_ XML**  
 ID risorsa per la stringa "nome istanza" usata nei dati XML.
@@ -275,7 +275,7 @@ ID risorsa per la stringa "indice semantico" usato nei dati XML.
 ID risorsa per la stringa "format" usata nei dati XML.
 
 <span id="XML_INPUT_SLOT"></span><span id="xml_input_slot"></span>**SLOT DI INPUT XML \_ \_**  
-ID risorsa per la stringa "slot di input" usata nei dati XML.
+ID risorsa per la stringa "slot di input" usato nei dati XML.
 
 <span id="XML_ALIGNED_BYTE_OFFSET"></span><span id="xml_aligned_byte_offset"></span>**OFFSET \_ BYTE ALLINEATO \_ \_ XML**  
 ID risorsa per la stringa "aligned byte offset" usata nei dati XML.
@@ -305,7 +305,7 @@ ID risorsa per la stringa "max lod" usata nei dati XML.
 ID risorsa per la stringa "filter" usata nei dati XML.
 
 <span id="XML_MIP_SLICE"></span><span id="xml_mip_slice"></span>**SEZIONE \_ MIP \_ XML**  
-ID risorsa per la stringa "sezione mip" usata nei dati XML.
+ID risorsa per la stringa "mip slice" usata nei dati XML.
 
 <span id="XML_MOST_DETAILED_MIP"></span><span id="xml_most_detailed_mip"></span>**MIP \_ XML \_ PIÙ \_ DETTAGLIATO**  
 ID risorsa per la stringa "mip più dettagliato" usato nei dati XML.
@@ -328,14 +328,14 @@ ID risorsa per la stringa "resource type" usata nei dati XML.
 <span id="XML_ELEMENT_OFFSET"></span><span id="xml_element_offset"></span>**OFFSET \_ \_ DELL'ELEMENTO XML**  
 ID risorsa per la stringa "element offset" usata nei dati XML.
 
-<span id="XML_ELEMENT_WIDTH"></span><span id="xml_element_width"></span>**LARGHEZZA \_ ELEMENTO \_ XML**  
+<span id="XML_ELEMENT_WIDTH"></span><span id="xml_element_width"></span>**LARGHEZZA \_ DELL'ELEMENTO \_ XML**  
 ID risorsa per la stringa "larghezza elemento" usata nei dati XML.
 
 <span id="XML_FIRST_WITH_SLICE"></span><span id="xml_first_with_slice"></span>**XML \_ FIRST \_ WITH \_ SLICE**  
 ID risorsa per la stringa "first with slice" usata nei dati XML.
 
 <span id="XML_BORDER_COLOR"></span><span id="xml_border_color"></span>**COLORE \_ BORDO \_ XML**  
-ID risorsa per la stringa "colore bordo" utilizzata nei dati XML.
+ID risorsa per la stringa "border color" usata nei dati XML.
 
 <span id="XML_SLOT"></span><span id="xml_slot"></span>**XML \_ SLOT**  
 ID risorsa per la stringa "slot" usata nei dati XML.
@@ -346,70 +346,70 @@ ID risorsa per la stringa "funzione di confronto" usata nei dati XML.
 <span id="XML_MAX_ANISOTROPY"></span><span id="xml_max_anisotropy"></span>**XML \_ MAX \_ ANISOTROPY**  
 ID risorsa per la stringa "max anisotropy" usata nei dati XML.
 
-<span id="XML_MIP_LOD_BIAS"></span><span id="xml_mip_lod_bias"></span>**XML \_ MIP \_ LOD \_ BIAS**  
+<span id="XML_MIP_LOD_BIAS"></span><span id="xml_mip_lod_bias"></span>**DISTORSIONE \_ MIP \_ LOD \_ XML**  
 ID risorsa per la stringa "mip lod bias" usata nei dati XML.
 
-<span id="XML_FILL_MODE"></span><span id="xml_fill_mode"></span>**MODALITÀ \_ RIEMPIMENTO \_ XML**  
+<span id="XML_FILL_MODE"></span><span id="xml_fill_mode"></span>**MODALITÀ \_ DI RIEMPIMENTO \_ XML**  
 ID risorsa per la stringa "modalità di riempimento" usata nei dati XML.
 
 <span id="XML_CULL_MODE"></span><span id="xml_cull_mode"></span>**MODALITÀ \_ CULL \_ XML**  
 ID risorsa per la stringa "cull mode" usata nei dati XML.
 
-<span id="XML_FRONT_COUNTER_CLOCKWISE"></span><span id="xml_front_counter_clockwise"></span>**XML \_ FRONT \_ COUNTER \_ CLOCKWISE**  
-ID risorsa per la stringa "front counterwise" usata nei dati XML.
+<span id="XML_FRONT_COUNTER_CLOCKWISE"></span><span id="xml_front_counter_clockwise"></span>**FRONTALE XML \_ \_ IN SENSO \_ ORARIO**  
+ID risorsa per la stringa "front counter clockwise" usata nei dati XML.
 
 <span id="XML_DEPTH_BIAS"></span><span id="xml_depth_bias"></span>**DISTORSIONE \_ DELLA PROFONDITÀ \_ XML**  
-ID risorsa per la stringa "distorsione profondità" usata nei dati XML.
+ID risorsa per la stringa "distorsione della profondità" usata nei dati XML.
 
-<span id="XML_DEPTH_BIAS_CLAMP"></span><span id="xml_depth_bias_clamp"></span>**XML \_ DEPTH \_ BIAS \_ CLAMP**  
+<span id="XML_DEPTH_BIAS_CLAMP"></span><span id="xml_depth_bias_clamp"></span>**CLAMP \_ DI \_ DISTORSIONE DELLA \_ PROFONDITÀ XML**  
 ID risorsa per la stringa "depth bias clamp" usata nei dati XML.
 
-<span id="XML_SLOPE_SCALE_DEPTH_BIAS"></span><span id="xml_slope_scale_depth_bias"></span>**DISTORSIONE \_ DELLA PROFONDITÀ DELLA SCALA DEL \_ \_ INCLINAZIONE \_ XML**  
-ID risorsa per la stringa "distorsione della profondità della scala del inclinazione" usata nei dati XML.
+<span id="XML_SLOPE_SCALE_DEPTH_BIAS"></span><span id="xml_slope_scale_depth_bias"></span>**DISTORSIONE \_ DELLA PROFONDITÀ DELLA SCALA DI \_ \_ \_ PENDENZA XML**  
+ID risorsa per la stringa "slope scale depth bias" usata nei dati XML.
 
-<span id="XML_DEPTH_CLIP_ENABLE"></span><span id="xml_depth_clip_enable"></span>**XML \_ DEPTH \_ CLIP \_ ENABLE**  
+<span id="XML_DEPTH_CLIP_ENABLE"></span><span id="xml_depth_clip_enable"></span>**ABILITAZIONE \_ DELLA CLIP DI PROFONDITÀ \_ \_ XML**  
 ID risorsa per la stringa "depth clip enable" usata nei dati XML.
 
-<span id="XML_SCISSOR_ENABLE"></span><span id="xml_scissor_enable"></span>**XML \_ SCISSOR \_ ENABLE**  
+<span id="XML_SCISSOR_ENABLE"></span><span id="xml_scissor_enable"></span>**ABILITAZIONE \_ SCISSOR \_ XML**  
 ID risorsa per la stringa "scissor enable" usata nei dati XML.
 
 <span id="XML_MULTISAMPLE_ENABLE"></span><span id="xml_multisample_enable"></span>**ABILITAZIONE \_ DI MULTISAMPLE \_ XML**  
 ID risorsa per la stringa "multisample enable" usata nei dati XML.
 
-<span id="XML_ANTIALIASED_LINE_ENABLE"></span><span id="xml_antialiased_line_enable"></span>**XML \_ ANTIALIASED \_ LINE \_ ENABLE**  
+<span id="XML_ANTIALIASED_LINE_ENABLE"></span><span id="xml_antialiased_line_enable"></span>**ABILITAZIONE DELLA RIGA \_ CON ANTIALIAS \_ \_ XML**  
 ID risorsa per la stringa "antialiased line enable" usata nei dati XML.
 
-<span id="XML_FUNCTION"></span><span id="xml_function"></span>**XML \_ FUNCTION**  
+<span id="XML_FUNCTION"></span><span id="xml_function"></span>**FUNZIONE \_ XML**  
 ID risorsa per la stringa "function" usata nei dati XML.
 
 <span id="XML_PASS_OP"></span><span id="xml_pass_op"></span>**XML \_ PASS \_ OP**  
 ID risorsa per la stringa "pass op" usata nei dati XML.
 
-<span id="XML_FAIL_OP"></span><span id="xml_fail_op"></span>**XML \_ FAIL \_ OP**  
+<span id="XML_FAIL_OP"></span><span id="xml_fail_op"></span>**OPERAZIONI \_ DI ERRORE \_ XML**  
 ID risorsa per la stringa "fail op" usata nei dati XML.
 
-<span id="XML_DEPTH_FAIL_OP"></span><span id="xml_depth_fail_op"></span>**XML \_ DEPTH \_ FAIL \_ OP**  
+<span id="XML_DEPTH_FAIL_OP"></span><span id="xml_depth_fail_op"></span>**OPERAZIONE DI \_ ERRORE \_ DI PROFONDITÀ \_ XML**  
 ID risorsa per la stringa "depth fail op" usata nei dati XML.
 
-<span id="XML_DEPTH_ENABLE"></span><span id="xml_depth_enable"></span>**XML \_ DEPTH \_ ENABLE**  
+<span id="XML_DEPTH_ENABLE"></span><span id="xml_depth_enable"></span>**ABILITAZIONE \_ DELLA PROFONDITÀ \_ XML**  
 ID risorsa per la stringa "depth enable" usata nei dati XML.
 
-<span id="XML_DEPTH_FUNCTION"></span><span id="xml_depth_function"></span>**FUNZIONE \_ XML DEPTH \_**  
-ID risorsa per la stringa "depth function" usata nei dati XML.
+<span id="XML_DEPTH_FUNCTION"></span><span id="xml_depth_function"></span>**FUNZIONE \_ DI PROFONDITÀ \_ XML**  
+ID risorsa per la stringa "funzione depth" usata nei dati XML.
 
-<span id="XML_DEPTH_WRITE_MASK"></span><span id="xml_depth_write_mask"></span>**XML \_ DEPTH \_ WRITE \_ MASK**  
+<span id="XML_DEPTH_WRITE_MASK"></span><span id="xml_depth_write_mask"></span>**MASCHERA \_ DI SCRITTURA DI PROFONDITÀ \_ \_ XML**  
 ID risorsa per la stringa "depth write mask" usata nei dati XML.
 
-<span id="XML_STENCIL_ENABLE"></span><span id="xml_stencil_enable"></span>**ABILITAZIONE \_ STENCIL \_ XML**  
+<span id="XML_STENCIL_ENABLE"></span><span id="xml_stencil_enable"></span>**ABILITAZIONE \_ DI STENCIL \_ XML**  
 ID risorsa per la stringa "stencil enable" usata nei dati XML.
 
-<span id="XML_STENCIL_READ_MASK"></span><span id="xml_stencil_read_mask"></span>**MASCHERA DI \_ \_ LETTURA STENCIL XML \_**  
+<span id="XML_STENCIL_READ_MASK"></span><span id="xml_stencil_read_mask"></span>**MASCHERA DI \_ LETTURA DI STENCIL \_ \_ XML**  
 ID risorsa per la stringa "stencil read mask" usata nei dati XML.
 
-<span id="XML_STENCIL_WRITE_MASK"></span><span id="xml_stencil_write_mask"></span>**MASCHERA DI \_ SCRITTURA \_ STENCIL \_ XML**  
+<span id="XML_STENCIL_WRITE_MASK"></span><span id="xml_stencil_write_mask"></span>**MASCHERA DI \_ \_ SCRITTURA DI STENCIL \_ XML**  
 ID risorsa per la stringa "stencil write mask" usata nei dati XML.
 
-<span id="XML_FIRST_ELEMENT"></span><span id="xml_first_element"></span>**PRIMO \_ ELEMENTO \_ XML**  
+<span id="XML_FIRST_ELEMENT"></span><span id="xml_first_element"></span>**PRIMO \_ \_ ELEMENTO XML**  
 ID risorsa per la stringa "primo elemento" usata nei dati XML.
 
 <span id="XML_NUM_ELEMENTS"></span><span id="xml_num_elements"></span>**ELEMENTI \_ NUM \_ XML**  
@@ -418,7 +418,7 @@ ID risorsa per la stringa "num elements" usata nei dati XML.
 <span id="XML_FLAGS"></span><span id="xml_flags"></span>**FLAG \_ XML**  
 ID risorsa per la stringa "flags" usata nei dati XML.
 
-<span id="XML_W_SIZE"></span><span id="xml_w_size"></span>**XML \_ W \_ SIZE**  
+<span id="XML_W_SIZE"></span><span id="xml_w_size"></span>**DIMENSIONI \_ W \_ XML**  
 ID risorsa per la stringa "w size" usata nei dati XML.
 
 <span id="XML_FIRST_2D_ARRAY_FACE"></span><span id="xml_first_2d_array_face"></span>**XML \_ FIRST \_ 2D \_ ARRAY \_ FACE**  
@@ -430,7 +430,7 @@ ID risorsa per la stringa "num cubes" usata nei dati XML.
 <span id="XML_FACTORY"></span><span id="xml_factory"></span>**XML \_ FACTORY**  
 ID risorsa per la stringa "factory" usata nei dati XML.
 
-<span id="XML_ADAPTER"></span><span id="xml_adapter"></span>**XML \_ ADAPTER**  
+<span id="XML_ADAPTER"></span><span id="xml_adapter"></span>**ADATTATORE \_ XML**  
 ID risorsa per la stringa "adapter" usata nei dati XML.
 
 <span id="XML_HEIGHT"></span><span id="xml_height"></span>**ALTEZZA \_ XML**  
@@ -446,21 +446,21 @@ ID risorsa per la stringa "flag di creazione" usata nei dati XML.
 ID risorsa per la stringa "versione sdk" usata nei dati XML.
 
 <span id="XML_DRIVER_TYPE"></span><span id="xml_driver_type"></span>**TIPO \_ DI DRIVER \_ XML**  
-ID risorsa per la stringa "tipo di driver" usata nei dati XML.
+ID risorsa per la stringa "driver type" usata nei dati XML.
 
 <span id="XML_FEATURE_LEVEL"></span><span id="xml_feature_level"></span>**LIVELLO \_ DI FUNZIONALITÀ \_ XML**  
 ID risorsa per la stringa "feature level" usata nei dati XML.
 
 <span id="XML_IMMEDIATE_CONTEXT"></span><span id="xml_immediate_context"></span>**CONTESTO \_ IMMEDIATO \_ XML**  
-ID risorsa per la stringa "contesto immediato" usata nei dati XML.
+ID risorsa per la stringa "contesto immediato" usato nei dati XML.
 
-<span id="XML_EXCEPTION_MODE"></span><span id="xml_exception_mode"></span>**MODALITÀ \_ DI ECCEZIONE \_ XML**  
-ID risorsa per la stringa "exception mode" usata nei dati XML.
+<span id="XML_EXCEPTION_MODE"></span><span id="xml_exception_mode"></span>**MODALITÀ \_ ECCEZIONI \_ XML**  
+ID risorsa per la stringa "modalità eccezione" usata nei dati XML.
 
-<span id="XML_REFRESH_RATE"></span><span id="xml_refresh_rate"></span>**FREQUENZA \_ DI AGGIORNAMENTO \_ XML**  
+<span id="XML_REFRESH_RATE"></span><span id="xml_refresh_rate"></span>**FREQUENZA \_ DI \_ AGGIORNAMENTO XML**  
 ID risorsa per la stringa "frequenza di aggiornamento" usata nei dati XML.
 
-<span id="XML_SCANLINE_ORDERING"></span><span id="xml_scanline_ordering"></span>**ORDINAMENTO \_ SCANLINE \_ XML**  
+<span id="XML_SCANLINE_ORDERING"></span><span id="xml_scanline_ordering"></span>**ORDINAMENTO \_ DI SCANLINE \_ XML**  
 ID risorsa per la stringa "scanline ordering" usata nei dati XML.
 
 <span id="XML_SCALING"></span><span id="xml_scaling"></span>**SCALABILITÀ \_ XML**  
@@ -476,7 +476,7 @@ ID risorsa per la stringa "buffer count" usata nei dati XML.
 ID risorsa per la stringa "windowed" usata nei dati XML.
 
 <span id="XML_SWAP_EFFECT"></span><span id="xml_swap_effect"></span>**EFFETTO \_ DI SCAMBIO \_ XML**  
-ID risorsa per la stringa "effetto swap" usata nei dati XML.
+ID risorsa per la stringa "effetto swap" usato nei dati XML.
 
 <span id="XML_STREAM"></span><span id="xml_stream"></span>**FLUSSO \_ XML**  
 ID risorsa per la stringa "stream" usata nei dati XML.
@@ -598,7 +598,7 @@ ID risorsa per la stringa "layout di input" usata nei dati XML.
 <span id="XML_CLASS_INSTANCE"></span><span id="xml_class_instance"></span>**ISTANZA \_ DELLA CLASSE \_ XML**  
 ID risorsa per la stringa "istanza di classe" usata nei dati XML.
 
-<span id="XML_STREAM_OUTPUT_BUFFER"></span><span id="xml_stream_output_buffer"></span>**BUFFER \_ DI OUTPUT DEL \_ FLUSSO \_ XML**  
+<span id="XML_STREAM_OUTPUT_BUFFER"></span><span id="xml_stream_output_buffer"></span>**\_BUFFER DI OUTPUT DEL \_ FLUSSO XML \_**  
 ID risorsa per la stringa "stream output buffer" usata nei dati XML.
 
 <span id="XML_SHADER_RESOURCE"></span><span id="xml_shader_resource"></span>**RISORSA SHADER \_ \_ XML**  
@@ -784,28 +784,28 @@ ID risorsa per la stringa "d3d11 device information" usata nei dati XML.
 <span id="XML_D3D12_DEVICE_INFORMATION"></span><span id="xml_d3d12_device_information"></span>**INFORMAZIONI \_ SUL DISPOSITIVO XML D3D12 \_ \_**  
 ID risorsa per la stringa "d3d12 device information" usata nei dati XML.
 
-<span id="XML_CONSERVATIVE_RASTER"></span><span id="xml_conservative_raster"></span>**RASTER \_ \_ CONSERVATIVO XML**  
-ID risorsa per la stringa "raster conservativo" usata nei dati XML.
+<span id="XML_CONSERVATIVE_RASTER"></span><span id="xml_conservative_raster"></span>**XML \_ CONSERVATIVE \_ RASTER**  
+ID risorsa per la stringa "raster conservativa" usata nei dati XML.
 
-<span id="XML_INPUT_LAYOUT_12"></span><span id="xml_input_layout_12"></span>**LAYOUT INPUT XML \_ \_ \_ 12**  
+<span id="XML_INPUT_LAYOUT_12"></span><span id="xml_input_layout_12"></span>**LAYOUT DI INPUT XML \_ \_ \_ 12**  
 ID risorsa per la stringa "layout di input 12" usata nei dati XML.
 
-<span id="XML_GRAPHICS_PIPELINE_STATE_12"></span><span id="xml_graphics_pipeline_state_12"></span>**STATO DELLA PIPELINE GRAFICA XML \_ \_ \_ \_ 12**  
+<span id="XML_GRAPHICS_PIPELINE_STATE_12"></span><span id="xml_graphics_pipeline_state_12"></span>**STATO \_ \_ \_ 12 DELLA PIPELINE GRAFICA XML \_**  
 ID risorsa per la stringa "graphics pipeline state 12" usata nei dati XML.
 
 <span id="XML_BLEND_STATE_12"></span><span id="xml_blend_state_12"></span>**XML \_ BLEND \_ STATE \_ 12**  
 ID risorsa per la stringa "blend state 12" usata nei dati XML.
 
 <span id="XML_ROOT_SIGNATURE_12"></span><span id="xml_root_signature_12"></span>**FIRMA RADICE XML \_ \_ \_ 12**  
-ID risorsa per la stringa "firma radice 12" usata nei dati XML.
+ID risorsa per la stringa "root signature 12" usata nei dati XML.
 
 <span id="XML_STREAM_OUTPUT_12"></span><span id="xml_stream_output_12"></span>**OUTPUT DEL FLUSSO XML \_ \_ \_ 12**  
 ID risorsa per la stringa "stream output 12" usata nei dati XML.
 
 <span id="XML_RASTERIZED_STREAM"></span><span id="xml_rasterized_stream"></span>**FLUSSO \_ \_ RASTERIZZATO XML**  
-ID risorsa per la stringa "flusso rasterizzato" usato nei dati XML.
+ID risorsa per la stringa "flusso rasterizzato" usata nei dati XML.
 
-<span id="XML_SO_DECLARATION_ENTRY_12"></span><span id="xml_so_declaration_entry_12"></span>**VOCE DI \_ DICHIARAZIONE SO \_ XML \_ \_ 12**  
+<span id="XML_SO_DECLARATION_ENTRY_12"></span><span id="xml_so_declaration_entry_12"></span>**XML \_ SO DECLARATION ENTRY \_ \_ \_ 12**  
 ID risorsa per la stringa "so declaration entry 12" usata nei dati XML.
 
 <span id="XML_START_COMPONENT"></span><span id="xml_start_component"></span>**COMPONENTE \_ DI AVVIO \_ XML**  
@@ -814,11 +814,11 @@ ID risorsa per la stringa "start component" usata nei dati XML.
 <span id="XML_COMPONENT_COUNT"></span><span id="xml_component_count"></span>**CONTEGGIO \_ COMPONENTI \_ XML**  
 ID risorsa per la stringa "component count" usata nei dati XML.
 
-<span id="XML_OUTPUT_SLOT"></span><span id="xml_output_slot"></span>**\_SLOT DI OUTPUT \_ XML**  
-ID risorsa per la stringa "slot di output" usata nei dati XML.
+<span id="XML_OUTPUT_SLOT"></span><span id="xml_output_slot"></span>**SLOT DI OUTPUT XML \_ \_**  
+ID risorsa per la stringa "output slot" usata nei dati XML.
 
 <span id="XML_COMPUTE_PIPELINE_STATE_12"></span><span id="xml_compute_pipeline_state_12"></span>**STATO DELLA PIPELINE DI CALCOLO XML \_ \_ \_ \_ 12**  
-ID risorsa per la stringa "stato pipeline di calcolo 12" usato nei dati XML.
+ID risorsa per la stringa "compute pipeline state 12" usata nei dati XML.
 
 <span id="XML_D3D12_SHADER_BYTECODE"></span><span id="xml_d3d12_shader_bytecode"></span>**XML \_ D3D12 \_ SHADER \_ BYTECODE**  
 ID risorsa per la stringa "d3d12 shader bytecode" usata nei dati XML.
@@ -829,10 +829,10 @@ ID risorsa per la stringa "d3d12 shader bytecode ptr" usata nei dati XML.
 <span id="XML_D3D12_SHADER_BYTECODE_LENGTH"></span><span id="xml_d3d12_shader_bytecode_length"></span>**LUNGHEZZA \_ \_ \_ BYTECODE SHADER XML D3D12 \_**  
 ID risorsa per la stringa "d3d12 shader bytecode length" usata nei dati XML.
 
-<span id="XML_D3D12_VIEW_DIMENSION"></span><span id="xml_d3d12_view_dimension"></span>**DIMENSIONE \_ DI VISUALIZZAZIONE D3D12 \_ \_ XML**  
+<span id="XML_D3D12_VIEW_DIMENSION"></span><span id="xml_d3d12_view_dimension"></span>**XML \_ D3D12 \_ VIEW \_ DIMENSION**  
 ID risorsa per la stringa "d3d12 view dimension" usata nei dati XML.
 
-<span id="XML_D3D12_NOTHING_TO_DEFINE"></span><span id="xml_d3d12_nothing_to_define"></span>**XML \_ D3D12 \_ NULLA DA \_ \_ DEFINIRE**  
+<span id="XML_D3D12_NOTHING_TO_DEFINE"></span><span id="xml_d3d12_nothing_to_define"></span>**XML \_ D3D12 \_ NOTHING \_ TO \_ DEFINE**  
 ID risorsa per la stringa "d3d12 nothing to define" usata nei dati XML.
 
 <span id="XML_OFFSET_IN_BYTES"></span><span id="xml_offset_in_bytes"></span>**OFFSET \_ XML \_ IN \_ BYTE**  
@@ -848,79 +848,79 @@ ID risorsa per la stringa "so cur offset" usata nei dati XML.
 ID risorsa per la stringa "firma radice" usata nei dati XML.
 
 <span id="XML_NUM_PARAMETERS"></span><span id="xml_num_parameters"></span>**PARAMETRI \_ NUM \_ XML**  
-ID risorsa per la stringa "parametri num" usata nei dati XML.
+ID risorsa per la stringa "num parameters" usata nei dati XML.
 
 <span id="XML_ROOT_PARAMETERS"></span><span id="xml_root_parameters"></span>**PARAMETRI \_ RADICE \_ XML**  
 ID risorsa per la stringa "parametri radice" usata nei dati XML.
 
-<span id="XML_ROOT_PARAMETER"></span><span id="xml_root_parameter"></span>**PARAMETRO \_ RADICE \_ XML**  
+<span id="XML_ROOT_PARAMETER"></span><span id="xml_root_parameter"></span>**XML \_ ROOT \_ PARAMETER**  
 ID risorsa per la stringa "parametro radice" usata nei dati XML.
 
 <span id="XML_ROOT_PARAMETER_TYPE"></span><span id="xml_root_parameter_type"></span>**TIPO \_ DI PARAMETRO RADICE \_ \_ XML**  
 ID risorsa per la stringa "tipo di parametro radice" usata nei dati XML.
 
-<span id="XML_ROOT_PARAMETER_SHADER_VISIBILITY"></span><span id="xml_root_parameter_shader_visibility"></span>**VISIBILITÀ \_ DELLO SHADER DEI PARAMETRI RADICE \_ \_ \_ XML**  
-ID risorsa per la stringa "visibilità shader del parametro radice" usata nei dati XML.
+<span id="XML_ROOT_PARAMETER_SHADER_VISIBILITY"></span><span id="xml_root_parameter_shader_visibility"></span>**VISIBILITÀ \_ DELLO SHADER CON PARAMETRO \_ \_ RADICE \_ XML**  
+ID risorsa per la stringa "root parameter shader visibility" usata nei dati XML.
 
-<span id="XML_DESCRIPTOR_HANDLE"></span><span id="xml_descriptor_handle"></span>**HANDLE \_ DEL DESCRITTORE \_ XML**  
-ID risorsa per la stringa "handle descrittore" usato nei dati XML.
+<span id="XML_DESCRIPTOR_HANDLE"></span><span id="xml_descriptor_handle"></span>**\_HANDLE DEL DESCRITTORE XML \_**  
+ID risorsa per la stringa "handle descrittore" usata nei dati XML.
 
-<span id="XML_DESCRIPTOR_HANDLE_PTR"></span><span id="xml_descriptor_handle_ptr"></span>**\_PTR \_ DELL'HANDLE \_ DEL DESCRITTORE XML**  
-ID risorsa per la stringa "descriptor handle ptr" usato nei dati XML.
+<span id="XML_DESCRIPTOR_HANDLE_PTR"></span><span id="xml_descriptor_handle_ptr"></span>**\_PTR \_ DELL'HANDLE DEL \_ DESCRITTORE XML**  
+ID risorsa per la stringa "descriptor handle ptr" usata nei dati XML.
 
-<span id="XML_ROOT_CONSTANTS"></span><span id="xml_root_constants"></span>**COSTANTI \_ RADICE \_ XML**  
+<span id="XML_ROOT_CONSTANTS"></span><span id="xml_root_constants"></span>**COSTANTI RADICE XML \_ \_**  
 ID risorsa per la stringa "costanti radice" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR"></span><span id="xml_root_descriptor"></span>**DESCRITTORE \_ RADICE \_ XML**  
-ID risorsa per la stringa "descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR"></span><span id="xml_root_descriptor"></span>**DESCRITTORE RADICE XML \_ \_**  
+ID risorsa per la stringa "descrittore radice" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_SHADER_REGISTER"></span><span id="xml_root_descriptor_shader_register"></span>**REGISTRO \_ SHADER \_ DEL DESCRITTORE RADICE \_ \_ XML**  
+<span id="XML_ROOT_DESCRIPTOR_SHADER_REGISTER"></span><span id="xml_root_descriptor_shader_register"></span>**REGISTRO \_ SHADER \_ DEL DESCRITTORE \_ RADICE \_ XML**  
 ID risorsa per la stringa "registro shader del descrittore radice" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_REGISTER_SPACE"></span><span id="xml_root_descriptor_register_space"></span>**SPAZIO \_ DI \_ REGISTRAZIONE DESCRITTORE RADICE \_ \_ XML**  
-ID risorsa per la stringa "spazio registro descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_REGISTER_SPACE"></span><span id="xml_root_descriptor_register_space"></span>**SPAZIO \_ DI REGISTRAZIONE \_ DESCRITTORE \_ RADICE \_ XML**  
+ID risorsa per la stringa "root descriptor register space" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_TABLE"></span><span id="xml_root_descriptor_table"></span>**TABELLA \_ DEL \_ DESCRITTORE RADICE \_ XML**  
-ID risorsa per la stringa "tabella descrittore radice" usata nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_TABLE"></span><span id="xml_root_descriptor_table"></span>**TABELLA \_ DEI \_ DESCRITTORI RADICE \_ XML**  
+ID risorsa per la stringa "root descriptor table" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_NUM_RANGES"></span><span id="xml_root_descriptor_num_ranges"></span>**INTERVALLI NUM \_ \_ DEL DESCRITTORE RADICE \_ \_ XML**  
-ID risorsa per la stringa "intervallo num descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_NUM_RANGES"></span><span id="xml_root_descriptor_num_ranges"></span>**INTERVALLI NUM \_ \_ DESCRITTORE \_ RADICE \_ XML**  
+ID risorsa per la stringa "root descriptor num ranges" usata nei dati XML.
 
 <span id="XML_ROOT_DESCRIPTOR_RANGES"></span><span id="xml_root_descriptor_ranges"></span>**INTERVALLI \_ DI \_ DESCRITTORI RADICE \_ XML**  
 ID risorsa per la stringa "intervalli di descrittori radice" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE"></span><span id="xml_root_descriptor_range"></span>**INTERVALLO \_ \_ DESCRITTORE RADICE \_ XML**  
+<span id="XML_ROOT_DESCRIPTOR_RANGE"></span><span id="xml_root_descriptor_range"></span>**INTERVALLO \_ DESCRITTORE \_ RADICE XML \_**  
 ID risorsa per la stringa "intervallo descrittore radice" usato nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE_TYPE"></span><span id="xml_root_descriptor_range_type"></span>**TIPO \_ DI INTERVALLO \_ DESCRITTORE RADICE \_ \_ XML**  
-ID risorsa per la stringa "tipo di intervallo descrittore radice" usata nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_RANGE_TYPE"></span><span id="xml_root_descriptor_range_type"></span>**TIPO \_ DI INTERVALLO \_ DESCRITTORE \_ RADICE \_ XML**  
+ID risorsa per la stringa "tipo di intervallo del descrittore radice" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE_COUNT"></span><span id="xml_root_descriptor_range_count"></span>**CONTEGGIO \_ \_ DELL'INTERVALLO DEL \_ DESCRITTORE RADICE \_ XML**  
-ID risorsa per la stringa "conteggio intervallo descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_RANGE_COUNT"></span><span id="xml_root_descriptor_range_count"></span>**CONTEGGIO \_ \_ INTERVALLI \_ DESCRITTORI RADICE \_ XML**  
+ID risorsa per la stringa "root descriptor range count" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE_BASE_SHADER_REGISTER"></span><span id="xml_root_descriptor_range_base_shader_register"></span>**REGISTRO SHADER \_ \_ DI BASE \_ DELL'INTERVALLO \_ DI DESCRITTORI RADICE \_ \_ XML**  
-ID risorsa per la stringa "registro shader di base dell'intervallo del descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_RANGE_BASE_SHADER_REGISTER"></span><span id="xml_root_descriptor_range_base_shader_register"></span>**REGISTRO BASE \_ \_ SHADER \_ DELL'INTERVALLO DI \_ DESCRITTORI RADICE \_ \_ XML**  
+ID risorsa per la stringa "root descriptor range base shader register" usata nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE_REGISTER_SPACE"></span><span id="xml_root_descriptor_range_register_space"></span>**SPAZIO \_ DI REGISTRAZIONE \_ \_ DELL'INTERVALLO DEL \_ DESCRITTORE RADICE \_ XML**  
-ID risorsa per la stringa "spazio registro intervallo descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_RANGE_REGISTER_SPACE"></span><span id="xml_root_descriptor_range_register_space"></span>**SPAZIO \_ DI REGISTRAZIONE \_ DELL'INTERVALLO \_ DEL \_ DESCRITTORE RADICE \_ XML**  
+ID risorsa per la stringa "spazio registro dell'intervallo di descrittori radice" usato nei dati XML.
 
-<span id="XML_ROOT_DESCRIPTOR_RANGE_OFFSET"></span><span id="xml_root_descriptor_range_offset"></span>**OFFSET \_ INTERVALLO \_ DESCRITTORE RADICE \_ \_ XML**  
-ID risorsa per la stringa "offset intervallo descrittore radice" usato nei dati XML.
+<span id="XML_ROOT_DESCRIPTOR_RANGE_OFFSET"></span><span id="xml_root_descriptor_range_offset"></span>**OFFSET \_ DELL'INTERVALLO \_ DEL \_ DESCRITTORE RADICE \_ XML**  
+ID risorsa per la stringa "root descriptor range offset" usata nei dati XML.
 
-<span id="XML_ROOT_CONSTANTS_SHADER_REGISTER"></span><span id="xml_root_constants_shader_register"></span>**REGISTRO SHADER \_ \_ DELLE COSTANTI RADICE \_ \_ XML**  
+<span id="XML_ROOT_CONSTANTS_SHADER_REGISTER"></span><span id="xml_root_constants_shader_register"></span>**REGISTRO \_ SHADER DELLE COSTANTI \_ RADICE \_ \_ XML**  
 ID risorsa per la stringa "registro shader delle costanti radice" usata nei dati XML.
 
-<span id="XML_ROOT_CONSTANTS_REGISTER_SPACE"></span><span id="xml_root_constants_register_space"></span>**SPAZIO \_ DI REGISTRAZIONE DELLE COSTANTI \_ RADICE \_ XML \_**  
+<span id="XML_ROOT_CONSTANTS_REGISTER_SPACE"></span><span id="xml_root_constants_register_space"></span>**SPAZIO \_ DEI REGISTRI DELLE COSTANTI \_ \_ RADICE \_ XML**  
 ID risorsa per la stringa "root constants register space" usata nei dati XML.
 
-<span id="XML_ROOT_CONSTANTS_INT32_COUNT"></span><span id="xml_root_constants_int32_count"></span>**COSTANTI RADICE XML \_ \_ \_ INT32 \_ COUNT**  
-ID risorsa per la stringa "costanti radice int32 count" usata nei dati XML.
+<span id="XML_ROOT_CONSTANTS_INT32_COUNT"></span><span id="xml_root_constants_int32_count"></span>**XML \_ ROOT \_ CONSTANTS \_ INT32 \_ COUNT**  
+ID risorsa per la stringa "root constants int32 count" usata nei dati XML.
 
-<span id="XML_NOT_SET"></span><span id="xml_not_set"></span>**XML \_ NON \_ IMPOSTATO**  
+<span id="XML_NOT_SET"></span><span id="xml_not_set"></span>**XML \_ NOT \_ SET**  
 ID risorsa per la stringa "not set" usata nei dati XML.
 
 <span id="XML_ERROR_RETRIEVING_VALUE"></span><span id="xml_error_retrieving_value"></span>**ERRORE XML \_ DURANTE IL RECUPERO DEL \_ \_ VALORE**  
-ID risorsa per la stringa "errore durante il recupero del valore" usato nei dati XML.
+ID risorsa per la stringa "error retrieving value" usata nei dati XML.
 
 <span id="XML_VERTEX_SHADER"></span><span id="xml_vertex_shader"></span>**XML \_ VERTEX \_ SHADER**  
 ID risorsa per la stringa "vertex shader" usata nei dati XML.
@@ -938,9 +938,9 @@ ID risorsa per la stringa "hull shader" usata nei dati XML.
 ID risorsa per la stringa "geometry shader" usata nei dati XML.
 
 <span id="XML_ROOT_SIGNATURE_OBJECT"></span><span id="xml_root_signature_object"></span>**OGGETTO \_ FIRMA \_ RADICE \_ XML**  
-ID risorsa per la stringa "oggetto firma radice" usata nei dati XML.
+ID risorsa per la stringa "oggetto firma radice" usato nei dati XML.
 
-<span id="XML_ROOT_SIGNATURE_DESERIALIZED_DESC"></span><span id="xml_root_signature_deserialized_desc"></span>**\_DESC \_ \_ DESERIALIZZATA DELLA FIRMA \_ RADICE XML**  
+<span id="XML_ROOT_SIGNATURE_DESERIALIZED_DESC"></span><span id="xml_root_signature_deserialized_desc"></span>**\_DESC \_ \_ DESERIALIZZATA CON \_ FIRMA RADICE XML**  
 ID risorsa per la stringa "root signature deserialized desc" usata nei dati XML.
 
 <span id="XML_COMMAND_QUEUE"></span><span id="xml_command_queue"></span>**CODA \_ DI COMANDI \_ XML**  
@@ -1034,7 +1034,7 @@ ID risorsa per la stringa "cmdlist root signature object" usata nei dati XML.
 ID risorsa per la stringa "input layout element count" usata nei dati XML.
 
 <span id="XML_INPUT_LAYOUT_ELEMENT_DESCRIPTIONS"></span><span id="xml_input_layout_element_descriptions"></span>**DESCRIZIONI \_ DEGLI ELEMENTI DI LAYOUT DI INPUT \_ \_ \_ XML**  
-ID risorsa per la stringa "descrizioni degli elementi di layout di input" usata nei dati XML.
+ID risorsa per la stringa "descrizioni degli elementi del layout di input" usata nei dati XML.
 
 <span id="XML_SHADER_DESCRIPTION"></span><span id="xml_shader_description"></span>**DESCRIZIONE \_ DELLO SHADER \_ XML**  
 ID risorsa per la stringa "descrizione shader" usata nei dati XML.
@@ -1078,14 +1078,14 @@ ID risorsa per la stringa "slot del pool di riquadri" usata nei dati XML.
 <span id="XML_TILE_COORDINATE"></span><span id="xml_tile_coordinate"></span>**COORDINATA \_ DEL RIQUADRO \_ XML**  
 ID risorsa per la stringa "coordinata del riquadro" usata nei dati XML.
 
-<span id="XML_HEAP_TYPE"></span><span id="xml_heap_type"></span>**TIPO \_ HEAP \_ XML**  
+<span id="XML_HEAP_TYPE"></span><span id="xml_heap_type"></span>**TIPO \_ DI HEAP \_ XML**  
 ID risorsa per la stringa "tipo heap" usata nei dati XML.
 
 <span id="XML_RESOURCE_USAGE"></span><span id="xml_resource_usage"></span>**UTILIZZO \_ DELLE RISORSE \_ XML**  
-ID risorsa per la stringa "resource usage" usata nei dati XML.
+ID risorsa per la stringa "utilizzo delle risorse" usata nei dati XML.
 
 <span id="XML_RESOURCE_USAGES"></span><span id="xml_resource_usages"></span>**UTILIZZI \_ DELLE \_ RISORSE XML**  
-ID risorsa per la stringa "resource usages" usata nei dati XML.
+ID risorsa per la stringa "utilizzo delle risorse" usata nei dati XML.
 
 <span id="XML_SUBRESOURCE"></span><span id="xml_subresource"></span>**\_SOTTORISORSA XML**  
 ID risorsa per la stringa "subresource" usata nei dati XML.
@@ -1093,24 +1093,24 @@ ID risorsa per la stringa "subresource" usata nei dati XML.
 <span id="XML_SUBRESOURCE_USAGE"></span><span id="xml_subresource_usage"></span>**UTILIZZO \_ DELLE SOTTORISORSE \_ XML**  
 ID risorsa per la stringa "subresource usage" usata nei dati XML.
 
-<span id="XML_COMPUTE_SHADER"></span><span id="xml_compute_shader"></span>**XML \_ COMPUTE \_ SHADER**  
+<span id="XML_COMPUTE_SHADER"></span><span id="xml_compute_shader"></span>**SHADER DI CALCOLO XML \_ \_**  
 ID risorsa per la stringa "compute shader" usata nei dati XML.
 
-<span id="XML_COMMAND_LIST_12"></span><span id="xml_command_list_12"></span>**XML \_ COMMAND \_ LIST \_ 12**  
+<span id="XML_COMMAND_LIST_12"></span><span id="xml_command_list_12"></span>**ELENCO COMANDI XML \_ \_ \_ 12**  
 ID risorsa per la stringa "command list 12" usata nei dati XML.
 
-<span id="XML_PSO_RENDER_TARGET_FORMATS"></span><span id="xml_pso_render_target_formats"></span>**FORMATI DI \_ DESTINAZIONE DI RENDERING PSO \_ \_ \_ XML**  
+<span id="XML_PSO_RENDER_TARGET_FORMATS"></span><span id="xml_pso_render_target_formats"></span>**FORMATI \_ DI DESTINAZIONE DI RENDERING PSO \_ \_ \_ XML**  
 ID risorsa per la stringa "pso render target formats" usata nei dati XML.
 
-<span id="XML_RENDER_TARGET_VIEWS"></span><span id="xml_render_target_views"></span>**VISUALIZZAZIONI \_ DELLE DESTINAZIONE DI RENDERING \_ \_ XML**  
+<span id="XML_RENDER_TARGET_VIEWS"></span><span id="xml_render_target_views"></span>**VISUALIZZAZIONI \_ DI DESTINAZIONE DI RENDERING \_ \_ XML**  
 ID risorsa per la stringa "render target views" usata nei dati XML.
 
-<span id="XML_SHADER_RESOURCE_VIEWS"></span><span id="xml_shader_resource_views"></span>**VISUALIZZAZIONI \_ DELLE \_ RISORSE SHADER \_ XML**  
+<span id="XML_SHADER_RESOURCE_VIEWS"></span><span id="xml_shader_resource_views"></span>**VISUALIZZAZIONI \_ \_ DELLE RISORSE SHADER \_ XML**  
 ID risorsa per la stringa "shader resource views" usata nei dati XML.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

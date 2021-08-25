@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b9648b1b662cb98bc762a479782e4d3742d4d32056fc9f15f43f58f8f4a89659
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6a3b46dc226a85593a17b02118ed52088ed75d6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726941"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471997"
 ---
 # <a name="dcl_outputtopology-sm4---asm"></a>dcl \_ outputTopology (sm4 - asm)
 
@@ -31,29 +31,11 @@ Dichiara i dati di output geometry-shader del tipo primitivo.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>digitare</em><br/></td>
-<td>[in] Topologia primitiva di output, che è uno dei valori seguenti: <br/>
-<ul>
-<li><em>elenco di punti</em></li>
-<li><em>linestrip</em></li>
-<li><em>trianglestrip</em></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descrizione | 
+|------|-------------|
+| <span id="Type"></span><span id="type"></span><span id="TYPE"></span><em>Digitare</em><br /> | [in] Topologia primitiva di output, che è uno dei valori seguenti: <br /><ul><li><em>elenco di punti</em></li><li><em>linestrip</em></li><li><em>trianglestrip</em></li></ul> | 
+
 
 
 

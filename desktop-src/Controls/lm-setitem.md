@@ -1,9 +1,9 @@
 ---
-title: Messaggio LM_SETITEM (COMmctrl. h)
-description: Imposta gli Stati e gli attributi di un elemento.
+title: LM_SETITEM messaggio (Commctrl.h)
+description: Imposta gli stati e gli attributi di un elemento.
 ms.assetid: 02a68a31-2541-480e-b768-449d40e5e9e0
 keywords:
-- Controlli di Windows Message LM_SETITEM
+- LM_SETITEM dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,37 +14,37 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11888a76b11ccec7e8e659ca3a33bb23a71667ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8dccdb37536352c8783f7dd6af6a9475f5bea69111e2f7f09e5395b0ebf25b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062801"
 ---
-# <a name="lm_setitem-message"></a>\_Messaggio elemento
+# <a name="lm_setitem-message"></a>Messaggio \_ LM SETITEM
 
-Imposta gli Stati e gli attributi di un elemento.
+Imposta gli stati e gli attributi di un elemento.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Deve essere **null**. </dd> <dt>
+</dt> <dd>Deve essere **NULL.** </dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntatore a una struttura <a href="/windows/win32/api/commctrl/ns-commctrl-litem">litey</a> che contiene i nuovi Stati e attributi desiderati per il collegamento. </dd> </dl>
+</dt> <dd>Puntatore a una <a href="/windows/win32/api/commctrl/ns-commctrl-litem">struttura LITEM</a> contenente i nuovi stati e attributi desiderati per il collegamento. </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il messaggio riesce a impostare i valori e gli attributi specificati.
+Restituisce **TRUE** se il messaggio riesce a impostare i valori e gli attributi specificati.
 
 ## <a name="remarks"></a>Commenti
 
-Con il messaggio [**LM \_ GetItem**](lm-getitem.md) , è possibile accedere ai collegamenti solo tramite l'indice numerico restituito nel membro **iLink** di [**liteo**](/windows/win32/api/commctrl/ns-commctrl-litem). L'accesso al collegamento tramite il nome ID restituito in **szId** non è supportato.
+Con il [**messaggio \_ LM GETITEM,**](lm-getitem.md) è possibile accedere ai collegamenti solo tramite l'indice numerico restituito nel **membro iLink** di [**LITEM.**](/windows/win32/api/commctrl/ns-commctrl-litem) L'accesso al collegamento tramite il nome ID restituito in **szID** non è supportato.
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comctl32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comctl32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -54,9 +54,9 @@ Con il messaggio [**LM \_ GetItem**](lm-getitem.md) , è possibile accedere ai c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-genre
+title: Attributo ms-WMI-Genus
 description: Identifica il tipo di oggetto di una codifica.
 ms.assetid: 924363f5-dabf-46ce-a5de-bbecf401db61
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-WMI-genre
-- Schema AD dell'attributo msWMI-genre
+- Schema AD dell'attributo ms-WMI-Genus
+- Schema AD dell'attributo msWMI-Genus
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e901c0e9d64c02bee04e9a8e6b5cc50bbcb726a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 10d14dc879cbd60f326b52c2bcd46a37276c0ea4120da19fa01d10b4396f19f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760791"
 ---
-# <a name="ms-wmi-genus-attribute"></a>attributo ms-WMI-genre
+# <a name="ms-wmi-genus-attribute"></a>Attributo ms-WMI-Genus
 
 Identifica il tipo di oggetto di una codifica.
 
@@ -29,13 +29,13 @@ Identifica il tipo di oggetto di una codifica.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
-| CN                | MS-WMI-genere                                                    |
-| LDAP-Display-Name | msWMI-genere                                                     |
-| Dimensione              | 4 byte. 1 indica una classe. 2 indica un'istanza di.          |
-| Privilegio aggiornamento  | Amministratore di dominio                                            |
+| CN                | ms-WMI-Genus                                                    |
+| Ldap-Display-Name | msWMI-Genus                                                     |
+| Dimensione              | 4 byte. 1 indica una classe. 2 indica un'istanza di .          |
+| Aggiorna privilegio  | Amministratore di dominio                                            |
 | Frequenza di aggiornamento  | Ogni volta che viene aggiunta o modificata una classe contenente l'attributo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1677                                         |
-| System-ID-GUID    | 50c8673a-8f56-4614-9308-9e1340fb9af3                            |
+| System-Id-Guid    | 50c8673a-8f56-4614-9308-9e1340fb9af3                            |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                            |
 
 
@@ -57,15 +57,15 @@ Identifica il tipo di oggetto di una codifica.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Identifica il tipo di oggetto di una codifica.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Identifica il tipo di oggetto di una codifica.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Identifica il tipo di oggetto di una codifica.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Identifica il tipo di oggetto di una codifica.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**MS-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
+| Classi usate in        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 

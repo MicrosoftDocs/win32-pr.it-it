@@ -7,16 +7,16 @@ MSHAttr:
 title: IsPurchaseProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f257db150e0bc5e41fcf3432026fd09a5d3918f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d64acacbbf13d65fc18cf8aa9835bb435059f155
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129578"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482707"
 ---
 # <a name="span-idwwan_profile_v2element_ispurchaseprofilespanispurchaseprofile"></a><span id="WWAN_profile_v2.element_IsPurchaseProfile"></span>IsPurchaseProfile
 
-L'elemento **IsPurchaseProfile** contiene un **valore booleano** che è **true** se si tratta di un profilo acquistato e **false**, in caso contrario. Il valore predefinito è **false**.
+**L'elemento IsPurchaseProfile** contiene un **valore booleano** che è **true** se si tratta di un profilo acquistato e **false,** in caso contrario. Il valore predefinito **è false.**
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -36,30 +36,21 @@ L'elemento **IsPurchaseProfile** contiene un **valore booleano** che è **true**
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
-Questo elemento (documento) più esterno potrebbe non essere contenuto da altri elementi.
+Questo elemento più esterno (documento) potrebbe non essere contenuto da altri elementi.
 
 ## <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Spazio dei nomi</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v2</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Spazio dei nomi</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
+
 
  
 

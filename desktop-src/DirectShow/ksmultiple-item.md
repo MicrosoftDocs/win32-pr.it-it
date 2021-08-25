@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura dell'elemento KSMULTIPLE descrive le dimensioni e il numero di proprietà a lunghezza variabile nei pin della modalità kernel.
+description: La struttura KSMULTIPLE ITEM descrive le dimensioni e il conteggio delle proprietà a lunghezza variabile \_ nei pin in modalità kernel.
 ms.assetid: aedbf7bc-393d-4ab5-afcd-d8822b925f07
-title: Struttura KSMULTIPLE_ITEM (KS. h)
+title: KSMULTIPLE_ITEM struttura (Ks.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - ks.h
-ms.openlocfilehash: 62e26b1aa8804514588e66c1d02e1f0643e97bcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e1cdf3d8edcea88fbcfb260d87d3e79d62eb2aebc57144ae38defb018065f1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823311"
 ---
-# <a name="ksmultiple_item-structure"></a>\_Struttura dell'elemento KSMULTIPLE
+# <a name="ksmultiple_item-structure"></a>Struttura ITEM KSMULTIPLE \_
 
-La `KSMULTIPLE_ITEM` struttura descrive le dimensioni e il numero di proprietà a lunghezza variabile nei pin della modalità kernel.
+La `KSMULTIPLE_ITEM` struttura descrive le dimensioni e il conteggio delle proprietà a lunghezza variabile nei pin in modalità kernel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ typedef struct {
 **Dimensioni**
 </dt> <dd>
 
-Dimensioni in byte del blocco di memoria restituito. La dimensione include la struttura dell' **\_ elemento KSMULTIPLE** e gli elementi che lo seguono.
+Dimensioni del blocco di memoria restituito, in byte. Le dimensioni includono la **struttura KSMULTIPLE \_ ITEM** e gli elementi che la seguono.
 
 </dd> <dt>
 
 **Count**
 </dt> <dd>
 
-Specifica il numero totale di elementi che seguono la struttura.
+Specifica il numero totale di elementi che seguono questa struttura.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Specifica il numero totale di elementi che seguono la struttura.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>KS. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Ks.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Specifica il numero totale di elementi che seguono la struttura.
 
 <dl> <dt>
 
-[Strutture DirectShow](directshow-structures.md)
+[DirectShow Strutture](directshow-structures.md)
 </dt> <dt>
 
 [**IKsPin::KsQueryMediums**](ikspin-ksquerymediums.md)

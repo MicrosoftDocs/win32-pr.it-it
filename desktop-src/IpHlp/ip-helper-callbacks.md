@@ -3,12 +3,12 @@ title: Callback dell'helper IP
 description: Le funzioni di callback seguenti sono da usare con l'helper IP.
 ms.topic: article
 ms.date: 10/04/2019
-ms.openlocfilehash: 6b1953faa4cdf94f94f4eba30f40a913118408d8
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: a693a09ef1698d7caf7277a0039c3309ce28274fce768286b4531d7eb871d621
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822481"
 ---
 # <a name="ip-helper-callbacks"></a>Callback dell'helper IP
 

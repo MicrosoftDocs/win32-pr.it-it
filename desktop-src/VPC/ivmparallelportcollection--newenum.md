@@ -1,10 +1,10 @@
 ---
-title: Proprietà _NewEnum IVMParallelPortCollection (VPCCOMInterfaces. h)
-description: Recupera un enumeratore per l'insieme. | Proprietà _NewEnum IVMParallelPortCollection (VPCCOMInterfaces. h)
+title: Proprietà _NewEnum IVMParallelPortCollection (VPCCOMInterfaces.h)
+description: Recupera un enumeratore per l'insieme. | Proprietà _NewEnum IVMParallelPortCollection (VPCCOMInterfaces.h)
 ms.assetid: 2e26fba7-bcc0-4bb3-bf89-3c62cbd2b37e
 keywords:
-- Proprietà _NewEnum Virtual PC
-- Proprietà _NewEnum Virtual PC, interfaccia IVMParallelPortCollection
+- _NewEnum proprietà Virtual PC
+- _NewEnum proprietà Virtual PC , interfaccia IVMParallelPortCollection
 - Interfaccia IVMParallelPortCollection Virtual PC, _NewEnum proprietà
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de7b0a7330e38abaa604c84c2b703bd5d908619a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4aa415000e828ff4d484f66ce7765328638e5980ec202c328dffac3b2d844827
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973861"
 ---
 # <a name="ivmparallelportcollection_newenum-property"></a>Proprietà IVMParallelPortCollection:: \_ NewEnum
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera un enumeratore per l'insieme.
 
@@ -45,7 +45,7 @@ HRESULT get__NewEnum(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
+[Enumeratore IEnumVARIANT.](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,8 +54,8 @@ Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 | Nome/valore                                                                                                                                                    | Significato                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/> |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>    |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>    |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -65,12 +65,12 @@ Enumeratore [IEnumVARIANT](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) .
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMParallelPortCollection è definito come 27c3e036-198f-430C-8735-6e652f7203fd<br/>  |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMParallelPortCollection è definito come 27c3e036-198f-430c-8735-6e652f7203fd<br/>  |
 
 
 

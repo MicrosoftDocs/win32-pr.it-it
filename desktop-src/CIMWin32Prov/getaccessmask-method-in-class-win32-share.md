@@ -2,7 +2,7 @@
 description: "Metodo GetAccessMask della classe Win32_Share: restituisce una bitmap uint32 con i diritti di accesso alla condivisione mantenuta dall'utente o dal gruppo per conto del quale viene restituita l'istanza."
 ms.assetid: 234f44a4-ffff-431d-a973-98f2bd313c7d
 ms.tgt_platform: multiple
-title: Metodo GetAccessMask della Win32_Share classe
+title: Metodo GetAccessMask della classe Win32_Share
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fcd6396f6421060a67108e7c428c99bcd7ca9651
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ebc2b2620b0bdc019e117f9a4b2c376be6320be968fdae42509dc3f62c3cc9a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077661"
 ---
 # <a name="getaccessmask-method-of-the-win32_share-class"></a>Metodo GetAccessMask della classe Win32 \_ Share
 
@@ -55,7 +55,7 @@ Concede il diritto di leggere i dati dal file. Per una directory, questo valore 
 
 </dd> <dt>
 
-**FILE \_ ADD \_ FILE**
+**FILE \_ AGGIUNGI \_ FILE**
 </dt> <dd>
 
 2 (0x2)
@@ -64,7 +64,7 @@ Concede il diritto di scrivere dati nel file. Per una directory, questo valore c
 
 </dd> <dt>
 
-**FILE \_ ADD \_ SUBDIRECTORY**
+**FILE \_ AGGIUNGI \_ SOTTODIRECTORY**
 </dt> <dd>
 
 4 (0x4)

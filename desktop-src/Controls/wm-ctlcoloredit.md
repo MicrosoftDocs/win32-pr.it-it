@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_CTLCOLOREDIT (winuser. h)
-description: Un controllo di modifica che non è di sola lettura o disabilitato invia il \_ messaggio WM CTLCOLOREDIT alla relativa finestra padre quando il controllo sta per essere disegnato.
+title: WM_CTLCOLOREDIT messaggio (Winuser.h)
+description: Un controllo di modifica non di sola lettura o disabilitato invia il messaggio WM CTLCOLOREDIT alla finestra padre quando il controllo \_ sta per essere disegnato.
 ms.assetid: 2294e3b8-00a7-43ef-b20a-fe0e46764055
 keywords:
-- Controlli di Windows Message WM_CTLCOLOREDIT
+- WM_CTLCOLOREDIT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e100367f37018424fad33dc7cea30700183a0a2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da7f1fd27c51cabc699cf945fd4701c36d2e9709d1654de45859777333b9b4bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053901"
 ---
-# <a name="wm_ctlcoloredit-message"></a>\_Messaggio CTLCOLOREDIT WM
+# <a name="wm_ctlcoloredit-message"></a>Messaggio WM \_ CTLCOLOREDIT
 
-Un controllo di modifica che non è di sola lettura o disabilitato invia il messaggio **WM \_ CTLCOLOREDIT** alla relativa finestra padre quando il controllo sta per essere disegnato. Rispondendo a questo messaggio, la finestra padre può usare l'handle del contesto di dispositivo specificato per impostare il testo e i colori di sfondo del controllo di modifica.
+Un controllo di modifica non di sola lettura o disabilitato invia il messaggio **WM \_ CTLCOLOREDIT** alla finestra padre quando il controllo sta per essere disegnato. Rispondendo a questo messaggio, la finestra padre può usare l'handle del contesto di dispositivo specificato per impostare i colori del testo e dello sfondo del controllo di modifica.
 
 
 ```C++
@@ -42,7 +42,7 @@ WM_CTLCOLOREDIT
 *wParam* 
 </dt> <dd>
 
-Handle per il contesto di dispositivo per la finestra di controllo di modifica.
+Handle per il contesto di dispositivo per la finestra del controllo di modifica.
 
 </dd> <dt>
 
@@ -55,21 +55,21 @@ Handle per il controllo di modifica.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire l'handle di un pennello. Il sistema utilizza il pennello per disegnare lo sfondo del controllo di modifica.
+Se un'applicazione elabora questo messaggio, deve restituire l'handle di un pennello. Il sistema usa il pennello per disegnare lo sfondo del controllo di modifica.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'applicazione restituisce un pennello creato, ad esempio tramite la funzione [**CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush) o [**CreateBrushIndirect**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) , l'applicazione deve liberare il pennello. Se l'applicazione restituisce un pennello di sistema, ad esempio uno recuperato dalla funzione [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) o [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) , l'applicazione non deve liberare il pennello.
+Se l'applicazione restituisce un pennello creato(ad esempio, usando la [**funzione CreateSolidBrush**](/windows/desktop/api/wingdi/nf-wingdi-createsolidbrush) o [**CreateBrushIndirect),**](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) l'applicazione deve liberare il pennello. Se l'applicazione restituisce un pennello di sistema(ad esempio, uno recuperato dalla funzione [**GetStockObject**](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) o [**GetSysColorBrush),**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) l'applicazione non deve liberare il pennello.
 
-Per impostazione predefinita, la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per il controllo di modifica.
+Per impostazione predefinita, la [**funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) seleziona i colori di sistema predefiniti per il controllo di modifica.
 
-I controlli di modifica di sola lettura o disabilitato non inviano il messaggio **WM \_ CTLCOLOREDIT** , bensì inviano il messaggio [**WM \_ CTLCOLORSTATIC**](wm-ctlcolorstatic.md) .
+I controlli di modifica di sola lettura o disabilitati non inviano il messaggio **WM \_ CTLCOLOREDIT,** ma inviano il [**messaggio WM \_ CTLCOLORSTATIC.**](wm-ctlcolorstatic.md)
 
-Il messaggio **WM \_ CTLCOLOREDIT** non viene mai inviato tra i thread, ma viene inviato solo all'interno dello stesso thread.
+Il **messaggio WM \_ CTLCOLOREDIT** non viene mai inviato tra thread, ma solo all'interno dello stesso thread.
 
-Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a un **\_ ptr int** e restituire direttamente il valore. Se la routine della finestra di dialogo restituisce **false**, viene eseguita la gestione dei messaggi predefinita. Il \_ valore DWL MSGRESULT impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
+Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguire il cast del valore restituito desiderato a **un INT \_ PTR** e restituire direttamente il valore. Se la routine della finestra di dialogo restituisce **FALSE,** viene eseguita la gestione dei messaggi predefinita. Il valore MSGRESULT DWL \_ impostato dalla funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) viene ignorato.
 
-**Modifica avanzata:** Questo messaggio non è supportato. Per impostare il colore di sfondo per un controllo Rich Edit, utilizzare il messaggio [**\_ SETBKGNDCOLOR em**](em-setbkgndcolor.md) .
+**Rich Edit:** Questo messaggio non è supportato. Per impostare il colore di sfondo per un controllo Rich Edit, usare il messaggio [**EM \_ SETBKGNDCOLOR.**](em-setbkgndcolor.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,9 +77,9 @@ Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguir
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -90,10 +90,10 @@ Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguir
 **Riferimento**
 </dt> <dt>
 
-[**\_SETBKGNDCOLOR em**](em-setbkgndcolor.md)
+[**EM \_ SETBKGNDCOLOR**](em-setbkgndcolor.md)
 </dt> <dt>
 
-[**\_CTLCOLORSTATIC WM**](wm-ctlcolorstatic.md)
+[**WM \_ CTLCOLORSTATIC**](wm-ctlcolorstatic.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -105,7 +105,7 @@ Se una routine della finestra di dialogo gestisce questo messaggio, deve eseguir
 [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette)
 </dt> <dt>
 
-[**SelectPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
+[**SelezionarePalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette)
 </dt> </dl>
 
  

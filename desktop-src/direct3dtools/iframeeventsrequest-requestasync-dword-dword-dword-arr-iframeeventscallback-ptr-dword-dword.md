@@ -1,5 +1,5 @@
 ---
-description: Richiesta asincrona per ottenere le informazioni specificate su un singolo frame specificato.
+description: Richiesta asincrona per ottenere informazioni specificate su un singolo frame specificato.
 MS-HAID: vspixengine.IFrameEventsRequest\_RequestAsync\_DWORD\_DWORD\_DWORD\_arr\_IFrameEventsCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "119981481"
 ---
 # <a name="span-idvspixengineiframeeventsrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dwordspaniframeeventsrequestrequestasync-method"></a><span id="vspixengine.iframeeventsrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>Metodo IFrameEventsRequest::RequestAsync
 
-Richiesta asincrona per ottenere le informazioni specificate su un singolo frame specificato.
+Richiesta asincrona per ottenere informazioni specificate su un singolo frame specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,10 +51,10 @@ Frame specificato.
 Colonne specificate (campi).
 
 *colonne \_ count1*   
-Indirizzo del callback utilizzato per notificare i risultati all'host.
+Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
 
 *requestCallback*   
-Indirizzo del callback utilizzato per notificare i risultati all'host.
+Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
 
 *requestCookie*   
 Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.

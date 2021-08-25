@@ -1,5 +1,5 @@
 ---
-description: Richiede di eseguire l'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
+description: Richieste di esecuzione dell'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
 MS-HAID: vspixengine.IOfflineAnalysisRequest\_RequestOfflineAnalysisAsync\_enumOFFLINEANALYSISSOURCE\_BSTR\_BSTR\_DWORD\_BSTR\_DWORD\_BSTR\_IOfflineAnalysisCallback\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "119981141"
 ---
 # <a name="span-idvspixengineiofflineanalysisrequest_requestofflineanalysisasync_enumofflineanalysissource_bstr_bstr_dword_bstr_dword_bstr_iofflineanalysiscallback_ptrspaniofflineanalysisrequestrequestofflineanalysisasync-method"></a><span id="vspixengine.iofflineanalysisrequest_requestofflineanalysisasync_enumofflineanalysissource_bstr_bstr_dword_bstr_dword_bstr_iofflineanalysiscallback_ptr"></span>Metodo IOfflineAnalysisRequest::RequestOfflineAnalysisAsync
 
-Richiede di eseguire l'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
+Richieste di esecuzione dell'analisi offline con l'origine, il manifesto, i parametri e del frame specificato.
 
 ## <a name="syntax"></a>Sintassi
 

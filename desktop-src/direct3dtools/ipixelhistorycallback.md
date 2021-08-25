@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d207badad9b483435fb177eaec035122413e27e0cc5d5714ed4d0507703bb3f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: acdee69a844025aab831e8e1c465b90569d97acf
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118283206"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627517"
 ---
 # <a name="span-idvspixengineipixelhistorycallbackspanipixelhistorycallback-interface"></a><span id="vspixengine.ipixelhistorycallback"></span>Interfaccia IPixelHistoryCallback
 
@@ -36,15 +36,15 @@ Non usato. In precedenza un callback per restituire tutti i risultati della cron
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-**L'interfaccia IPixelHistoryCallback** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IPixelHistoryCallback.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistorycallback-resultcallback-dword-pixelhistoryoperation-arr"><strong>Oggetto ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host i risultati della richiesta di cronologia pixel.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistorycallback-resultcallback-dword-pixelhistoryoperation-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Callback che notifica all'host i risultati della richiesta di cronologia pixel.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

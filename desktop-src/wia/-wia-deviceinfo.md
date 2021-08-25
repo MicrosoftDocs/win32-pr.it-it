@@ -1,5 +1,5 @@
 ---
-description: L'oggetto DeviceInfo fornisce l'accesso alle proprietà di un dispositivo hardware Windows Image Acquisition (WIA).
+description: L'oggetto DeviceInfo fornisce l'accesso alle proprietà di Windows dispositivo hardware WIA (Image Acquisition).
 ms.assetid: b3cf153b-76f8-4822-8d88-331ab91a1116
 title: Oggetto DeviceInfo
 ms.topic: reference
@@ -13,34 +13,34 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 928bc05da4ec97df9d52ce504ccb9dadd649e546
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69b34a97483a8a6ce231890454148c7948f63e4e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312440"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467178"
 ---
 # <a name="deviceinfo-object"></a>Oggetto DeviceInfo
 
-L'oggetto **deviceInfo** fornisce l'accesso alle proprietà di un dispositivo hardware Windows Image Acquisition (WIA). Inoltre, tramite il metodo [**create**](-wia-iwiadeviceinfo-create.md) , fornisce un modo per l'applicazione o lo script per la connessione al dispositivo e per ottenere un oggetto [**Item**](-wia-item.md) che rappresenta il dispositivo. Usare il metodo [**Devices**](-wia-iwia-devices.md) per ottenere una raccolta di oggetti **deviceInfo** .
+**L'oggetto DeviceInfo** fornisce l'accesso alle proprietà di Windows dispositivo hardware WIA (Image Acquisition). Inoltre, tramite il metodo [**Create,**](-wia-iwiadeviceinfo-create.md) consente all'applicazione o allo script di connettersi al dispositivo e ottenere un [**oggetto Item**](-wia-item.md) che rappresenta il dispositivo. Usare il [**metodo Devices**](-wia-iwia-devices.md) per ottenere una raccolta di **oggetti DeviceInfo.**
 
 ## <a name="members"></a>Membri
 
-L'oggetto **deviceInfo** dispone di questi tipi di membri:
+**L'oggetto DeviceInfo** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **deviceInfo** dispone di questi metodi.
+**L'oggetto DeviceInfo** dispone di questi metodi.
 
 
 
 | Metodo                                                 | Descrizione                                                                                                                                                                                                                                              |
 |:-------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Creare**](-wia-iwiadeviceinfo-create.md)           | Il metodo [**create**](-wia-iwiadeviceinfo-create.md) dell'oggetto **deviceInfo** esegue una connessione al dispositivo WIA specificato dall'oggetto **deviceInfo** e restituisce un oggetto [**Item**](-wia-item.md) che rappresenta il dispositivo.<br/> |
-| [**GetPropById**](-wia-iwiadeviceinfo-getpropbyid.md) | Il metodo [**GetPropById**](-wia-iwiadeviceinfo-getpropbyid.md) dell'oggetto **DEVICEINFO** usa l'ID di una proprietà del dispositivo per restituirne il valore.<br/>                                                                                               |
+| [**Creare**](-wia-iwiadeviceinfo-create.md)           | Il [**metodo Create**](-wia-iwiadeviceinfo-create.md) **dell'oggetto DeviceInfo** esegue una connessione al dispositivo WIA specificato dall'oggetto **DeviceInfo** e restituisce un [**oggetto Item**](-wia-item.md) che rappresenta il dispositivo.<br/> |
+| [**GetPropById**](-wia-iwiadeviceinfo-getpropbyid.md) | Il [**metodo GetPropById**](-wia-iwiadeviceinfo-getpropbyid.md) dell'oggetto **DeviceInfo** usa l'ID di una proprietà del dispositivo per restituirne il valore.<br/>                                                                                               |
 
 
 
@@ -48,62 +48,20 @@ L'oggetto **deviceInfo** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **deviceInfo** dispone di queste proprietà.
+**L'oggetto DeviceInfo** ha queste proprietà.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Proprietà</th>
-<th style="text-align: left;">Tipo di accesso</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-id.md"><strong>ID</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Recupera l'ID del dispositivo hardware WIA. <br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-manufacturer.md"><strong>Produttore</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Recupera il nome del produttore del dispositivo hardware.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-name.md"><strong>Nome</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Nome del dispositivo hardware WIA così come appare nell'interfaccia utente.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-port.md"><strong>Porta</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Recupera la porta a cui è connessa la periferica hardware WIA.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-type.md"><strong>Tipo</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Recupera il tipo di dispositivo hardware WIA. I valori possibili sono: <br/>
-<ul>
-<li>DigitalCamera</li>
-<li>Scanner</li>
-<li>StreamingVideo</li>
-<li>Predefinito</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="-wia-iwiadeviceinfo-uiclsid.md"><strong>UIClsid</strong></a><br/></td>
-<td style="text-align: left;">Sola lettura<br/></td>
-<td style="text-align: left;">Recupera l'ID di classe dell'interfaccia utente fornita dal produttore per questo dispositivo hardware WIA. Il valore è una rappresentazione in forma di stringa di un GUID. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Proprietà | Tipo di accesso | Descrizione | 
+|----------|-------------|-------------|
+| <a href="-wia-iwiadeviceinfo-id.md"><strong>Id</strong></a><br /> | Sola lettura<br /> | Recupera l'ID del dispositivo hardware WIA. <br /> | 
+| <a href="-wia-iwiadeviceinfo-manufacturer.md"><strong>Produttore</strong></a><br /> | Sola lettura<br /> | Recupera il nome del produttore del dispositivo hardware.<br /> | 
+| <a href="-wia-iwiadeviceinfo-name.md"><strong>Nome</strong></a><br /> | Sola lettura<br /> | Nome del dispositivo hardware WIA visualizzato nell'interfaccia utente.<br /> | 
+| <a href="-wia-iwiadeviceinfo-port.md"><strong>Porta</strong></a><br /> | Sola lettura<br /> | Recupera la porta a cui è connesso il dispositivo hardware WIA.<br /> | 
+| <a href="-wia-iwiadeviceinfo-type.md"><strong>Tipo</strong></a><br /> | Sola lettura<br /> | Recupera il tipo di dispositivo hardware WIA. I valori possibili sono: <br /><ul><li>DigitalCamera</li><li>Scanner</li><li>StreamingVideo</li><li>Predefinito</li></ul> | 
+| <a href="-wia-iwiadeviceinfo-uiclsid.md"><strong>UIClsid</strong></a><br /> | Sola lettura<br /> | Recupera l'ID classe dell'interfaccia utente fornita dal produttore per questo dispositivo hardware WIA. Il valore è una rappresentazione di stringa di un GUID. <br /> | 
+
 
 
 
@@ -113,11 +71,11 @@ L'oggetto **deviceInfo** dispone di queste proprietà.
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

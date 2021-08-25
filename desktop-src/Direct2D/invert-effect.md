@@ -1,32 +1,32 @@
 ---
-title: Inverti effetto
+title: Effetto Inverti
 description: Inverte i colori di un'immagine.
 ms.assetid: aa859cd4-0fb0-9902-3add-748d0cca63ce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba6a39a273417cb479f2f99a1e08cf20c16e1398
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8dd718d5a6f23dc1e1ab0bae0cbe9b39411379af43e56097aee106409826c635
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076716"
 ---
-# <a name="invert-effect"></a>Inverti effetto
+# <a name="invert-effect"></a>Effetto Inverti
 
 Inverte i colori di un'immagine.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Invert.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà dell'effetto](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/invert-effect.png)
+![Esempio di output dell'effetto](images/invert-effect.png)
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 Questo effetto non ha proprietà.
 
@@ -36,10 +36,10 @@ Questo effetto non ha proprietà.
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows App di Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Argomenti correlati

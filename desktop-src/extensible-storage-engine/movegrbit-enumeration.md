@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione MoveGrbit'
+description: Altre informazioni sull'enumerazione MoveGrbit
 title: Enumerazione MoveGrbit
 TOCTitle: MoveGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.MoveGrbit
@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81f047cd69bca668a5eae2b5147d8c0a137011e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43cabd8057e9c5c5546d8b38b6e819cccace74a351be30486a1e5e5f578ec09d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016011"
 ---
 # <a name="movegrbit-enumeration"></a>Enumerazione MoveGrbit
 
@@ -41,8 +41,8 @@ Opzioni per JetMove.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,7 +78,7 @@ public enum MoveGrbit
 <tr class="even">
 <td></td>
 <td>MoveKeyNE</td>
-<td>Sposta il cursore avanti o indietro per il numero di voci di indice necessarie per ignorare il numero richiesto di valori di chiave di indice rilevati nell'indice. Questo ha l'effetto di comprimere le voci di indice con valori di chiave duplicati in una singola voce di indice.</td>
+<td>Sposta il cursore avanti o indietro in base al numero di voci di indice necessarie per ignorare il numero richiesto di valori di chiave di indice rilevati nell'indice. Ciò ha l'effetto di comprimere le voci di indice con valori di chiave duplicati in una singola voce di indice.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum MoveGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

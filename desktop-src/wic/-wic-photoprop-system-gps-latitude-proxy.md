@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per il criterio dei metadati di Photo System. GPS. Latitude.
+description: Proxy di proprietà per i criteri dei metadati foto System.GPS.Latitude.
 ms.assetid: bf4f8a8a-ca59-4cd5-bbe9-64f8a003a7dc
-title: Proxy System. GPS. Latitude
+title: System.GPS.Latitude Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbb04967cc51f142ed3083a0a0e5f07707ef2450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0682152e9d6fb8eb3f2d59b4d5f9d004af25702e47c96198c7d3f562f57d008a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056461"
 ---
-# <a name="systemgpslatitude-proxy"></a>Proxy System. GPS. Latitude
+# <a name="systemgpslatitude-proxy"></a>System.GPS.Latitude Proxy
 
-Il proxy di proprietà per il criterio dei metadati di Photo System. GPS. Latitude.
+Proxy di proprietà per i criteri dei metadati foto System.GPS.Latitude.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. GPS. Latitude](../properties/props-system-gps-latitude.md)
+[System.GPS.Latitude](../properties/props-system-gps-latitude.md)
 </dt> </dl>
 
  

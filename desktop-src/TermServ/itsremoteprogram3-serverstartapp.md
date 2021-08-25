@@ -4,9 +4,9 @@ description: Specifica un'app da avviare nella sessione remota.
 ms.assetid: 55a05d05-66d5-48a1-b3a6-f087aeb62925
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo ServerStartApp
+- Metodo ServerStartApp Servizi Desktop remoto
 - Metodo ServerStartApp Servizi Desktop remoto, interfaccia ITSRemoteProgram3
-- Interfaccia ITSRemoteProgram3 Servizi Desktop remoto, metodo ServerStartApp
+- ItsRemoteProgram3 interface Servizi Desktop remoto , Metodo ServerStartApp
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1822fa98094870ebebe607528cdc69a8a201f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e162f220c59f8dfaca1d1f5666fb691ca02b8f53b5fcfe0476bf188d55b25d6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072231"
 ---
-# <a name="itsremoteprogram3serverstartapp-method"></a>Metodo ITSRemoteProgram3:: ServerStartApp
+# <a name="itsremoteprogram3serverstartapp-method"></a>Metodo ITSRemoteProgram3::ServerStartApp
 
 Specifica un'app da avviare nella sessione remota.
 
@@ -45,18 +45,18 @@ HRESULT ServerStartApp(
 
 <dl> <dt>
 
-*bstrAppUserModelId* \[ in\]
+*bstrAppUserModelId* \[ Pollici\]
 </dt> <dd></dd> <dt>
 
-*bstrArguments* \[ in\]
+*bstrArguments* \[ Pollici\]
 </dt> <dd></dd> <dt>
 
-*vbExpandEnvVarInArgumentsOnServer* \[ in\]
+*VbExpandEnvVarInArgumentsOnServer* \[ Pollici\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                            |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                            |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

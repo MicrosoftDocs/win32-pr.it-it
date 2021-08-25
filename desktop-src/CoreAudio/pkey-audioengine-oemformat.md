@@ -1,23 +1,23 @@
 ---
-description: La \_ Proprietà pkey Audioengine \_ OEMFormat specifica il formato predefinito del dispositivo usato per il rendering o l'acquisizione di un flusso. I valori vengono popolati dall'OEM in un file con estensione inf.
+description: La proprietà PKEY \_ AudioEngine OEMFormat specifica il formato predefinito del dispositivo usato per il rendering o l'acquisizione \_ di un flusso. I valori vengono popolati dall'OEM in un file inf.
 ms.assetid: 3a199ecf-642c-491c-a565-f0083783d180
-title: PKEY_AudioEngine_OEMFormat (mmdeviceapi. h)
+title: PKEY_AudioEngine_OEMFormat (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be7ed65ae8a7bd717992b13dc7b5517a5725b241
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9ed43ee7a607bc7b97e6ce521c3c1f76356380d27b3471d16dde27cd021838e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053641"
 ---
-# <a name="pkey_audioengine_oemformat"></a>PKEY \_ Audioengine \_ OEMFormat
+# <a name="pkey_audioengine_oemformat"></a>PKEY \_ AudioEngine \_ OEMFormat
 
-La \_ Proprietà pkey Audioengine \_ OEMFormat specifica il formato predefinito del dispositivo usato per il rendering o l'acquisizione di un flusso. I valori vengono popolati dall'OEM in un file con estensione inf.
+La proprietà PKEY \_ AudioEngine OEMFormat specifica il formato predefinito del dispositivo usato per il rendering o l'acquisizione \_ di un flusso. I valori vengono popolati dall'OEM in un file inf.
 
-Il membro **VT** della struttura **PROPVARIANT** è impostato su VT \_ BLOB.
+Il **membro vt** della **struttura PROPVARIANT** è impostato su BLOB VT. \_
 
-Il membro **BLOB** della struttura **PROPVARIANT** è una struttura di tipo **BLOB** che contiene due membri. Member **BLOB. cbSize** è un **valore DWORD** che specifica il numero di byte nella descrizione del formato. Il membro **BLOB. pBlobData** punta a una struttura **WAVEFORMATEX** che contiene la descrizione del formato. Per ulteriori informazioni su BLOB, vedere la documentazione Windows SDK. Per ulteriori informazioni su **WAVEFORMATEX**, vedere la documentazione di Windows DDK.
+Il **membro** BLOB della **struttura PROPVARIANT** è una struttura di tipo **BLOB** che contiene due membri. Member **blob.cbSize** è un **valore DWORD** che specifica il numero di byte nella descrizione del formato. Il **membro blob.pBlobData** punta a una **struttura WAVEFORMATEX** che contiene la descrizione del formato. Per altre informazioni su BLOB, vedere la documentazione Windows SDK. Per altre informazioni su **WAVEFORMATEX,** vedere la documentazione Windows DDK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,9 +25,9 @@ Il membro **BLOB** della struttura **PROPVARIANT** è una struttura di tipo **BL
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Il membro **BLOB** della struttura **PROPVARIANT** è una struttura di tipo **BL
 
 <dl> <dt>
 
-[**Proprietà endpoint audio**](audio-endpoint-properties.md)
+[**Proprietà dell'endpoint audio**](audio-endpoint-properties.md)
 </dt> <dt>
 
 [Proprietà audio principali](core-audio-properties.md)

@@ -1,5 +1,5 @@
 ---
-description: Richiesta di informazioni sul file di origine da un callstack.
+description: Richiesta di informazioni sul file di origine da unock di chiamate.
 MS-HAID: vspixengine.ISourceFileInfoRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 08648da713e6125dd5b17ebfc87249dc5e890886f85aecbf85e22cb5553da25c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51ffb8574eb600170533c5e4019db60677f28b9c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985631"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622337"
 ---
 # <a name="span-idvspixengineisourcefileinforequestspanisourcefileinforequest-interface"></a><span id="vspixengine.isourcefileinforequest"></span>Interfaccia ISourceFileInfoRequest
 
-Richiesta di informazioni sul file di origine da un callstack.
+Richiesta di informazioni sul file di origine da unock di chiamate.
 
 ## <a name="members"></a>Membri
 
@@ -36,15 +36,15 @@ Richiesta di informazioni sul file di origine da un callstack.
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **ISourceFileInfoRequest.**
+**L'interfaccia ISourceFileInfoRequest** include questi metodi.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinforequest-requestasync-eventid-isourcefileinfocallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere i file di origine associati al callstack di un evento.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinforequest-requestasync-eventid-isourcefileinfocallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiesta asincrona per ottenere i file di origine associati allock chiamate di un evento.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

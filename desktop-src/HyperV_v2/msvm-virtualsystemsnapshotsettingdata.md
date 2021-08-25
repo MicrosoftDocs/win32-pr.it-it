@@ -1,7 +1,7 @@
 ---
-description: Fornisce informazioni aggiuntive da utilizzare con il metodo CreateSnapshot della \_ classe VirtualSystemSnapshotService di MSVM.
+description: Fornisce informazioni aggiuntive da usare con il metodo CreateSnapshot della classe Msvm \_ VirtualSystemSnapshotService.
 ms.assetid: d4a025c4-6a3c-4ae0-8f2c-421c1aa1eb23
-title: Classe Msvm_VirtualSystemSnapshotSettingData
+title: Msvm_VirtualSystemSnapshotSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 32ab52da97e9fcc943c3a70548bb6b1a6d7994a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d112e4109ed6d0ab899aadf59f0e991f52259eaf2c514c6d9215b04a8cafcab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046251"
 ---
-# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>\_Classe MSVM VirtualSystemSnapshotSettingData
+# <a name="msvm_virtualsystemsnapshotsettingdata-class"></a>Classe Msvm \_ VirtualSystemSnapshotSettingData
 
-Fornisce informazioni aggiuntive da utilizzare con il metodo [**CreateSnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) della classe [**\_ VirtualSystemSnapshotService di MSVM**](msvm-virtualsystemsnapshotservice.md) .
+Fornisce informazioni aggiuntive da usare con il [**metodo CreateSnapshot**](cim-virtualsystemsnapshotservice-createsnapshot.md) della [**classe Msvm \_ VirtualSystemSnapshotService.**](msvm-virtualsystemsnapshotservice.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -43,20 +43,20 @@ class Msvm_VirtualSystemSnapshotSettingData : CIM_SettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualSystemSnapshotSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualSystemSnapshotSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualSystemSnapshotSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualSystemSnapshotSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **ConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -75,14 +75,14 @@ Livello di coerenza dello snapshot.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-**Coerente** con l'applicazione (1)
+**Coerente con l'applicazione** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-**Coerente con l'arresto anomalo** (2)
+**Coerenza arresto anomalo** del sistema (2)
 
 
 </dt> <dd></dd> </dl>
@@ -92,13 +92,13 @@ Livello di coerenza dello snapshot.
 **GuestBackupType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di backup da utilizzare nel guest.
+Tipo di backup da usare all'interno del guest.
 
 > [!Note]  
 > Proprietà aggiunta in Windows 10, versione 1703
@@ -133,13 +133,13 @@ Tipo di backup da utilizzare nel guest.
 **IgnoreNonSnapshottableDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se i dischi non snapshottable come dischi pass-through e dischi Fibre Channel devono essere ignorati durante la creazione dello snapshot.
+Specifica se i dischi non snapshottable, ad esempio i dischi pass-through e Fibre Channel, devono essere ignorati durante la creazione dello snapshot.
 
 </dd> </dl>
 
@@ -149,10 +149,10 @@ Specifica se i dischi non snapshottable come dischi pass-through e dischi Fibre 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -161,7 +161,7 @@ Specifica se i dischi non snapshottable come dischi pass-through e dischi Fibre 
 
 <dl> <dt>
 
-[**\_SETTINGDATA CIM**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

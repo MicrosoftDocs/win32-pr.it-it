@@ -4,12 +4,12 @@ ms.assetid: bef5db10-fac2-48d9-bc8b-8c39d377d945
 title: Esempio di PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91a1564099824bf99a123b875bc5745138522de3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4da38057db2bdee5b923f854477e125596c44dc4455b9574552d377bf3d62105
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824631"
 ---
 # <a name="printticket-example"></a>Esempio di PrintTicket
 

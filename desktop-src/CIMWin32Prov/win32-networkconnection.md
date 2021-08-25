@@ -1,8 +1,8 @@
 ---
-description: Rappresenta una connessione di rete attiva in un ambiente basato su Windows.
+description: Rappresenta una connessione di rete attiva in un Windows basato su rete.
 ms.assetid: e16e5f13-ea28-4d75-9978-4ff2ef5e5506
 ms.tgt_platform: multiple
-title: Classe Win32_NetworkConnection
+title: Win32_NetworkConnection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,18 +31,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96d91008ff8ad2f947e6c9957d16c4f007d15e47
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b4a8c712e8eb373730d24841133264e312694d79b593e83e89a1fc7387e7a77a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972631"
 ---
-# <a name="win32_networkconnection-class"></a>Win32 \_ NetworkConnection (classe)
+# <a name="win32_networkconnection-class"></a>Classe NetworkConnection Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) **\_ NetworkConnection Win32** rappresenta una connessione di rete attiva in un ambiente basato su Windows.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 NetworkConnection** rappresenta una connessione di rete attiva in un Windows basato su rete.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,20 +72,20 @@ class Win32_NetworkConnection : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ NetworkConnection** presenta questi tipi di membri:
+La **classe \_ NetworkConnection Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ NetworkConnection** dispone di queste proprietà.
+La **classe \_ NetworkConnection Win32** ha queste proprietà.
 
 <dl> <dt>
 
-**AccessMask**
+**Accessmask**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -94,13 +94,13 @@ Tipo di accesso: sola lettura
 Qualificatori: [**schema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Elenco di diritti di accesso al file o alla directory specificata dall'utente o dal gruppo per conto del quale viene restituita l'istanza. Nei volumi FAT viene invece restituito il valore di **\_ accesso completo** , che indica che non è stata impostata alcuna sicurezza per l'oggetto.
+Elenco dei diritti di accesso per il file o la directory specificata in cui l'utente o il gruppo ha la proprietà per conto del quale viene restituita l'istanza. Nei volumi FAT viene invece restituito il valore **FULL \_ ACCESS,** che indica che non è stata impostata alcuna sicurezza per l'oggetto.
 
 <dt>
 
 <span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**File \_ LETTURA \_ dati (file) o \_ Directory elenco file \_ (directory)** (1)
+<span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>**FILE \_ READ \_ DATA (file) o FILE \_ LIST DIRECTORY \_ (directory)** (1)
 
 
 </dt> <dd>
@@ -111,29 +111,29 @@ Concede il diritto di leggere i dati dal file. Per una directory, questo valore 
 
 <span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>
 
-<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**File \_ SCRITTURA di \_ dati (file) o file di \_ aggiunta \_ (directory)** (2)
+<span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>**FILE \_ WRITE \_ DATA (file) o FILE \_ ADD FILE \_ (directory)** (2)
 
 
 </dt> <dd>
 
-Concede il diritto di scrivere i dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
+Concede il diritto di scrivere dati nel file. Per una directory, questo valore concede il diritto di creare un file nella directory.
 
 </dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>
 
-<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**File \_ ACCODA \_ dati (file) o \_ Aggiungi \_ sottodirectory** (4)
+<span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY"></span><span id="file_append_data__file__or_file_add_subdirectory"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY"></span>**FILE \_ APPEND \_ DATA (file) o FILE \_ ADD \_ SUBDIRECTORY** (4)
 
 
 </dt> <dd>
 
-Concede il diritto di accodare i dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
+Concede il diritto di aggiungere dati al file. Per una directory, questo valore concede il diritto di creare una sottodirectory.
 
 </dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**File \_ Leggi \_ EA** (8)
+<span id="FILE_READ_EA"></span><span id="file_read_ea"></span>**FILE \_ READ \_ EA** (8)
 
 
 </dt> <dd>
@@ -144,7 +144,7 @@ Concede il diritto di leggere gli attributi estesi.
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**File \_ Scrivi \_ EA** (16)
+<span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>**FILE \_ WRITE \_ EA** (16)
 
 
 </dt> <dd>
@@ -155,7 +155,7 @@ Concede il diritto di scrivere attributi estesi.
 
 <span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>
 
-<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**File \_ ESECUZIONE (file) o \_ attraversamento file (directory)** (32)
+<span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>**FILE \_ EXECUTE (file) o FILE \_ TRAVERSE (directory)** (32)
 
 
 </dt> <dd>
@@ -166,18 +166,18 @@ Concede il diritto di eseguire un file. Per una directory, la directory può ess
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**File \_ Elimina \_ elemento figlio (directory)** (64)
+<span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>**FILE \_ DELETE \_ CHILD (directory)** (64)
 
 
 </dt> <dd>
 
-Concede il diritto di eliminare una directory e tutti i file in esso contenuti (elementi figlio), anche se i file sono di sola lettura.
+Concede il diritto di eliminare una directory e tutti i file in essa contenuti (relativi elementi figlio), anche se i file sono di sola lettura.
 
 </dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**File \_ Leggi \_ attributi** (128)
+<span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** LETTURA (128)
 
 
 </dt> <dd>
@@ -188,7 +188,7 @@ Concede il diritto di leggere gli attributi del file.
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**File \_ Scrivi \_ attributi** (256)
+<span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>**FILE \_ ATTRIBUTI \_ DI** SCRITTURA (256)
 
 
 </dt> <dd>
@@ -199,18 +199,18 @@ Concede il diritto di modificare gli attributi del file.
 
 <span id="DELETE"></span><span id="delete"></span>
 
-<span id="DELETE"></span><span id="delete"></span>**Elimina** (65536)
+<span id="DELETE"></span><span id="delete"></span>**DELETE** (65536)
 
 
 </dt> <dd>
 
-Concede l'accesso DELETE.
+Concede l'accesso per l'eliminazione.
 
 </dd> <dt>
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leggi \_ CONTROLLO** (131072)
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072)
 
 
 </dt> <dd>
@@ -221,7 +221,7 @@ Concede l'accesso in lettura al descrittore di sicurezza e al proprietario.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Scrivi \_ Applicazione livello dati** (262144)
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**WRITE \_ Applicazione livello** dati (262144)
 
 
 </dt> <dd>
@@ -232,7 +232,7 @@ Concede l'accesso in scrittura all'elenco di controllo di accesso discrezionale 
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-<span id="WRITE_OWNER"></span><span id="write_owner"></span>**Scrivi \_ PROPRIETARIO** (524288)
+<span id="WRITE_OWNER"></span><span id="write_owner"></span>**WRITE \_ OWNER** (524288)
 
 
 </dt> <dd>
@@ -243,7 +243,7 @@ Assegna il proprietario della scrittura.
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**Sincronizza** (1048576)
+<span id="SYNCHRONIZE"></span><span id="synchronize"></span>**SYNCHRONIZE** (1048576)
 
 
 </dt> <dd>
@@ -257,31 +257,31 @@ Sincronizza l'accesso e consente a un processo di attendere che un oggetto entri
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Commento**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| *lpComment*")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| *lpComment*")
 </dt> </dl>
 
 Commento fornito dal provider di rete.
@@ -291,13 +291,13 @@ Commento fornito dal provider di rete.
 **ConnectionState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (20), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures \| [**use \_ info \_ 1**](/windows/win32/api/lmuse/ns-lmuse-use_info_1) \| **Ui1 \_ status**")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (20), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Network Management Structures USE INFO \| [**\_ \_ 1**](/windows/win32/api/lmuse/ns-lmuse-use_info_1) \| **ui1 \_ status**")
 </dt> </dl>
 
 Stato corrente della connessione di rete.
@@ -306,42 +306,42 @@ Stato corrente della connessione di rete.
 
 <span id="Connected"></span><span id="connected"></span><span id="CONNECTED"></span>
 
-**Connesso** ("connesso")
+**Connesso** ("Connesso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-**Sospesa** ("sospesa")
+**Paused** ("Paused")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Disconnected"></span><span id="disconnected"></span><span id="DISCONNECTED"></span>
 
-**Disconnesso** ("disconnesso")
+**Disconnesso** ("Disconnesso")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Connecting"></span><span id="connecting"></span><span id="CONNECTING"></span>
 
-**Connessione** ("connessione")
+**Connessione** ("Connessione")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reconnecting"></span><span id="reconnecting"></span><span id="RECONNECTING"></span>
 
-**Riconnessione** ("riconnessione")
+**Riconnessione** ("Riconnessione")
 
 
 </dt> <dd></dd> </dl>
@@ -351,13 +351,13 @@ Stato corrente della connessione di rete.
 **ConnectionType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwScope**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwScope**")
 </dt> </dl>
 
 Tipo di persistenza della connessione utilizzata per la connessione alla rete.
@@ -366,14 +366,14 @@ Tipo di persistenza della connessione utilizzata per la connessione alla rete.
 
 <span id="Current_Connection"></span><span id="current_connection"></span><span id="CURRENT_CONNECTION"></span>
 
-**Connessione corrente** ("connessione corrente")
+**Connessione corrente** ("Connessione corrente")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Persistent_Connection"></span><span id="persistent_connection"></span><span id="PERSISTENT_CONNECTION"></span>
 
-**Connessione permanente** ("connessione permanente")
+**Connessione permanente** ("Connessione permanente")
 
 
 </dt> <dd></dd> </dl>
@@ -383,7 +383,7 @@ Tipo di persistenza della connessione utilizzata per la connessione alla rete.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -392,38 +392,38 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DisplayType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwDisplayType**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwDisplayType**")
 </dt> </dl>
 
-L'oggetto di rete deve essere visualizzato in un'interfaccia utente di esplorazione della rete.
+L'oggetto di rete deve essere visualizzato in un'interfaccia utente di esplorazione di rete.
 
 <dt>
 
 <span id="Domain"></span><span id="domain"></span><span id="DOMAIN"></span>
 
-**Dominio** ("dominio")
+**Dominio** ("Dominio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Generic"></span><span id="generic"></span><span id="GENERIC"></span>
 
-**Generico** (generico)
+**Generico** ("Generico")
 
 
 </dt> <dd></dd> <dt>
@@ -437,7 +437,7 @@ L'oggetto di rete deve essere visualizzato in un'interfaccia utente di esplorazi
 
 <span id="Share"></span><span id="share"></span><span id="SHARE"></span>
 
-**Condividi** ("Condividi")
+**Condivisione** ("Condividi")
 
 
 </dt> <dd></dd> </dl>
@@ -447,31 +447,31 @@ L'oggetto di rete deve essere visualizzato in un'interfaccia utente di esplorazi
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data di installazione ")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**LocalName**
+**Localname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpLocalName**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpLocalName**")
 </dt> </dl>
 
 Nome locale del dispositivo di rete connesso.
@@ -483,25 +483,25 @@ Esempio: "c: \\ public"
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig)")
+Qualificatori: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig)")
 </dt> </dl>
 
-Nome della connessione di rete corrente. Si tratta della combinazione dei valori in **RemoteName** e **localName**.
+Nome della connessione di rete corrente. È la combinazione dei valori in **RemoteName** e **LocalName**.
 
-Esempio: " \\ \\ NTRELEASE (c: \\ Public)"
+Esempio: " \\ \\ NTRELEASE (c: \\ public)"
 
 </dd> <dt>
 
 **Persistente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -517,47 +517,47 @@ La connessione verrà riconnessa automaticamente dal sistema operativo all'acces
 **ProviderName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpProvider**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpProvider**")
 </dt> </dl>
 
-Nome del provider a cui appartiene la risorsa. Questa proprietà può essere **null** se il nome del provider è sconosciuto.
+Nome del provider proprietario della risorsa. Questa proprietà può essere **NULL se** il nome del provider è sconosciuto.
 
 </dd> <dt>
 
 **RemoteName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Windows strutture di rete \| \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
 </dt> </dl>
 
-Nome della risorsa di rete remota per una risorsa di rete. Per una connessione corrente o permanente, **RemoteName** contiene il nome di rete associato al nome del valore nella proprietà **localName** . Il nome in **RemoteName** deve rispettare le convenzioni di denominazione del provider di rete.
+Nome della risorsa di rete remota per una risorsa di rete. Per una connessione corrente o persistente, **RemoteName** contiene il nome di rete associato al nome del valore nella **proprietà LocalName.** Il nome in **RemoteName** deve seguire le convenzioni di denominazione del provider di rete.
 
-Esempio: " \\ \\ NTRELEASE"
+Esempio: \\ \\ "NTRELEASE"
 
 </dd> <dt>
 
 **RemotePath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API Windows strutture di rete \| \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **lpRemoteName**")
 </dt> </dl>
 
 Percorso completo della risorsa di rete.
@@ -569,36 +569,36 @@ Esempio: " \\ \\ infosrv1 \\ public"
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows Networking Structures \| [**netresource**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwType**")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Windows strutture di rete \| [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) \| **dwType**")
 </dt> </dl>
 
-Tipo di risorsa a cui eseguire l'enumerazione o la connessione.
+Tipo di risorsa a cui enumerare o connettersi.
 
 <dt>
 
 <span id="Disk"></span><span id="disk"></span><span id="DISK"></span>
 
-**Disco** ("disco")
+**Disco** ("Disco")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Print"></span><span id="print"></span><span id="PRINT"></span>
 
-**Stampa** ("stampa")
+**Stampa** ("Stampa")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Any"></span><span id="any"></span><span id="ANY"></span>
 
-**Any** ("any")
+**Qualsiasi** ("Qualsiasi")
 
 
 </dt> <dd></dd> </dl>
@@ -608,20 +608,20 @@ Tipo di risorsa a cui eseguire l'enumerazione o la connessione.
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto. È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "danneggiato" e "errore predazione". "Predator fail" indica che un elemento funziona correttamente, ma sta stimando un errore, ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Danneggiato" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma prevede un errore , ad esempio un'unità disco rigido abilitata per SMART.
 
-Lo stato non operativo può includere "Error", "starting", "stoping" e "Service". Il "servizio" può essere applicato durante il mirroring del disco, ovvero la riattivazione, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". Il "servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -636,77 +636,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -716,7 +716,7 @@ Ridotto **("danneggiato"** )
 **UserName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -733,11 +733,11 @@ Esempio: "SYSTEM"
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ NetworkConnection** deriva da [**CIM \_ LogicalElement**](cim-logicalelement.md).
+La **classe \_ NetworkConnection Win32** è derivata da [**CIM \_ LogicalElement.**](cim-logicalelement.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente vengono recuperate le informazioni sulla connessione di rete locale.
+Nell'esempio di codice VBScript seguente vengono recuperate informazioni sulla connessione di rete locale.
 
 
 ```VB
@@ -777,7 +777,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -786,7 +786,7 @@ Next
 
 <dl> <dt>
 
-[**\_LogicalElement CIM**](cim-logicalelement.md)
+[**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

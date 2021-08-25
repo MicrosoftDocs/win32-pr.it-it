@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca3c3847d9c4802154e04627e06e97a2ca3f1d3f493edfcd5bb1367fd354dde6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1261cc75575a5b59d200ff965a5325caef9fa966
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117988353"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481557"
 ---
 # <a name="freeze-command"></a>Comando freeze
 
@@ -53,43 +53,13 @@ Flag che identifica gli elementi da bloccare. La tabella seguente elenca i tipi 
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore</th>
-<th>Significato</th>
-<th>Significato</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>digitalvideo</td>
-<td>at <em>rectangle</em></td>
-<td>Fuori</td>
-</tr>
-<tr class="even">
-<td>overlay</td>
-<td>at <em>rectangle</em></td>
 
-</tr>
-<tr class="odd">
-<td>Vcr</td>
-<td><ul>
-<li>campo</li>
-<li>frame</li>
-</ul></td>
-<td><ul>
-<li>input</li>
-<li>output</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| valore | Significato | Significato | 
+|-------|---------|---------|
+| digitalvideo | at <em>rectangle</em> | Fuori | 
+| overlay | at <em>rectangle</em> | 
+| Vcr | <ul><li>campo</li><li>frame</li></ul> | <ul><li>input</li><li>output</li></ul> | 
+
 
 
 
@@ -99,7 +69,7 @@ La tabella seguente elenca i flag che possono essere specificati nel *parametro 
 
 
 
-| Valore          | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| valore          | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | at *rectangle* | Specifica l'area che verrà bloccata. Per i dispositivi con sovrimpressione video, l'acquisizione video in quest'area sarà disabilitata. Per i dispositivi video digitali, i pixel all'interno del rettangolo avranno il bit della maschera di blocco attivato (a meno che non sia specificato il flag "esterno"). Il rettangolo è relativo all'origine del buffer video e viene specificato come *X1 Y1 X2 Y2*. Le coordinate *X1 Y1* specificano l'angolo superiore sinistro del rettangolo e le coordinate *X2 Y2* specificano la larghezza e l'altezza. |
 | campo          | Blocca il primo campo. Il campo viene presupposto per impostazione predefinita (se non viene specificato né il frame né il campo).                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -145,7 +115,7 @@ freeze vboard at 0 0 100 100
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/> |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>       |
@@ -156,7 +126,7 @@ freeze vboard at 0 0 100 100
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

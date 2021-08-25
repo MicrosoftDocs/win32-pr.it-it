@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c8b6952ff50dc2266655c58bd5c2e1ed13105598
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4cdd7e26b0c08b154c6cffd08066e8ae841a6aa849db4751ffa0cdf252848719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055951"
 ---
 # <a name="cdynamicoutputpindeliverendflush-method"></a>Metodo CDynamicOutputPin.DeliverEndFlush
 
@@ -46,7 +46,7 @@ Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override [**del metodo CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md) Reimposta l'evento [**\_ HStopEvent CDynamicOutputPin::m.**](cdynamicoutputpin-m-hstopevent.md)
+Questo metodo esegue l'override del metodo [**CBaseOutputPin::D eliverEndFlush.**](cbaseoutputpin-deliverendflush.md) Reimposta [**l'evento CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Questo metodo esegue l'override [**del metodo CBaseOutputPin::D eliverEndFlush.*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

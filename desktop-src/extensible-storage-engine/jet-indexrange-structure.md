@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b5b68e7ebf6df39757ab39947201b945e35a3ece85518a3cb202525033cdd214
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48e9da5822f69d4460a1699252112899a990188d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118485599"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470877"
 ---
 # <a name="jet_indexrange-structure"></a>JET_INDEXRANGE struttura
 
@@ -53,28 +53,12 @@ Cursore che in precedenza aveva un intervallo di indici impostato [con JetSetInd
 
 Maschera di bit composta esattamente da uno degli elementi seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitRecordInIndex</p></td>
-<td><p>Specifica che l'intervallo di indici deve essere gestito normalmente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitRecordNotInIndex</p></td>
-<td><p>Riservato per utilizzi futuri. Non usare.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_bitRecordInIndex</p> | <p>Specifica che l'intervallo di indici deve essere gestito normalmente.</p> | 
+| <p>JET_bitRecordNotInIndex</p> | <p>Riservato per utilizzi futuri. Non usare.</p> | 
+
 
 
 ### <a name="remarks"></a>Commenti
@@ -83,26 +67,9 @@ Ogni **JET_INDEXRANGE** che viene passata a [JetIntersectIndexes](./jetintersect
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarato in Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

@@ -1,26 +1,26 @@
 ---
-title: Effetto di ritaglio
-description: Usare l'effetto di ritaglio per restituire un'area specificata di un'immagine.
+title: Effetto Ritaglia
+description: Usare l'effetto di ritaglio per ottenere un'area specificata di un'immagine.
 ms.assetid: DFB7DE20-F202-4E7F-AE63-94BF817B6E30
 keywords:
 - effetto di ritaglio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 653ceaf4cf8b5922fe05e151c1639269f3169b57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e342bdef882fbff89d4c67c3accfbff7287a2ad9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873761"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472932"
 ---
-# <a name="crop-effect"></a>Effetto di ritaglio
+# <a name="crop-effect"></a>Effetto Ritaglia
 
-Usare l'effetto di ritaglio per restituire un'area specificata di un'immagine.
+Usare l'effetto di ritaglio per ottenere un'area specificata di un'immagine.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Crop.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Bitmap di output](#output-bitmap)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
@@ -31,9 +31,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1Crop.
 
 | Prima                                                     |
 |------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg) |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg) |
 | After                                                      |
-| ![immagine dopo la trasformazione.](images/8-crop.png)       |
+| ![l'immagine dopo la trasformazione.](images/8-crop.png)       |
 
 
 
@@ -54,49 +54,17 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nome visualizzato e enumerazione dell'indice</th>
-<th>Tipo e valore predefinito</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Rect<br/></td>
-<td>D2D1_VECTOR_4F<br/></td>
-<td>Area da ritagliare specificata come vettore nel form (a sinistra, superiore, larghezza, altezza).<br/></td>
-</tr>
-<tr class="even">
-<td>D2D1_CROP_PROP_RECT<br/></td>
-<td>{-FLT_MAX,-FLT_MAX, FLT_MAX, FLT_MAX}<br/></td>
-<td>Le unità sono in tuffi. <br/>
-<blockquote>
-<p>[!Note]</p>
-<p>Il rettangolo verrà troncato se si sovrappone ai limiti del bordo dell'immagine di input.<br/></p>
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>D2D1_CROP_PROP_BORDER_MODE<br/></td>
-<td>D2D1_BORDER_MODE <br/> D2D1_BORDER_MODE_SOFT <br/></td>
-<td><ul>
-<li>D2D1_BORDER_MODE_SOFT: se il rettangolo di ritaglio è costituito da coordinate dei pixel frazionari, l'effetto applica l'anti-aliasing che produce un bordo flessibile.</li>
-<li>D2D1_BORDER_MODE_HARD: se il rettangolo di ritaglio è costituito da coordinate dei pixel frazionari, l'effetto si blocca che determina un bordo rigido.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Nome visualizzato ed enumerazione dell'indice | Tipo e valore predefinito | Descrizione | 
+|------------------------------------|------------------------|-------------|
+| Rect<br /> | D2D1_VECTOR_4F<br /> | Area da ritagliare specificata come vettore nel formato (sinistra, superiore, larghezza, altezza).<br /> | 
+| D2D1_CROP_PROP_RECT<br /> | {-FLT_MAX, -FLT_MAX, FLT_MAX, FLT_MAX}<br /> | Le unità sono in DIP. <br /><blockquote><p>[!Note]</p><p>L'oggetto Rect verrà troncato se si sovrappone ai limiti del bordo dell'immagine di input.<br /></p></blockquote><br /> | 
+| D2D1_CROP_PROP_BORDER_MODE<br /> | D2D1_BORDER_MODE <br /> D2D1_BORDER_MODE_SOFT <br /> | <ul><li>D2D1_BORDER_MODE_SOFT: se il rettangolo di ritaglio si applica alle coordinate dei pixel frazionari, l'effetto applica l'antialiasing che determina un bordo soffice.</li><li>D2D1_BORDER_MODE_HARD: se il rettangolo di ritaglio cade sulle coordinate dei pixel frazionari, l'effetto si stringe e viene restituito un bordo rigido.</li></ul> | 
+
 
 
 
@@ -104,22 +72,22 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-L'output di questo effetto corrisponde alla dimensione della proprietà Rect. La lunghezza e la larghezza sono calcoli
+L'output di questo effetto è la dimensione della proprietà Rect. Lunghezza e larghezza sono calc
 
-ulated usando le equazioni qui: <dl> Lunghezza di output in pixel = (Rect. Right-Rect. Left) \* (dpi utente/96)  
-Altezza di output in pixel = (Rect. Bottom-Rect.Top) \* (dpi utente/96)  
+con le equazioni seguenti: <dl> Lunghezza dell'output in Pixel=(Rect.Right-Rect.Left) \* (DPI/96 dell'utente)  
+Altezza dell'output in pixel=(Rect.Bottom-Rect.Top) \* (DPI/96 dell'utente)  
 </dl>
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

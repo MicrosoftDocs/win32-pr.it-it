@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aae44918b51331363c6750e269019b5c4d6d6883
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 20c78fae9e66ad07224c96ee39ee9e99bf3b5396b4db05796feec97cc3e3db5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077641"
 ---
 # <a name="getaccessmask-method-of-the-win32_clustershare-class"></a>Metodo GetAccessMask della classe ClusterShare Win32 \_
 

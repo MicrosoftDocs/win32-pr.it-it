@@ -1,19 +1,19 @@
 ---
-description: È in corso l'arresto del grafico del filtro prima di essere eliminato definitivamente.
+description: Il grafico dei filtri viene arrestato prima di essere eliminato.
 ms.assetid: f1b3fc87-16ec-485b-b659-fc7d975c4a22
-title: EC_SHUTTING_DOWN (dshow. h)
+title: EC_SHUTTING_DOWN (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 471b746df3980afd96bbfc122a164ccd30561846
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 917a8f79b1a5201e50d0fcf2761a99b2801f75601f95ef866902492fb36065f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079111"
 ---
-# <a name="ec_shutting_down"></a>\_arresto di EC \_
+# <a name="ec_shutting_down"></a>ARRESTO \_ EC \_
 
-È in corso l'arresto del grafico del filtro prima di essere eliminato definitivamente.
+Il grafico dei filtri viene arrestato prima di essere eliminato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Zero.
 
 ## <a name="default-action"></a>Azione predefinita
 
-Questo evento non viene inviato all'applicazione. Il gestore del grafo del filtro lo invia ai distributori plug-in per notificare che il grafico è in fase di chiusura. Le applicazioni non possono eseguire l'override dell'azione predefinita di questo evento.
+Questo evento non viene inviato all'applicazione. Il gestore del grafo del filtro lo invia ai distributori plug-in per notificare che il grafo è in fase di arresto. Le applicazioni non possono eseguire l'override dell'azione predefinita di questo evento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Questo evento non viene inviato all'applicazione. Il gestore del grafo del filtr
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

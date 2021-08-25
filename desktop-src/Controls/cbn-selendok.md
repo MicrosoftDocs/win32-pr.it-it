@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_SELENDOK (winuser. h)
-description: Inviato quando l'utente seleziona una voce di elenco o seleziona un elemento e quindi lo chiude. Indica che la selezione dell'utente deve essere elaborata. La finestra padre della casella combinata riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: CBN_SELENDOK di notifica (Winuser.h)
+description: Inviato quando l'utente seleziona un elemento dell'elenco o seleziona un elemento e quindi chiude l'elenco. Indica che la selezione dell'utente deve essere elaborata. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: ef0ac46f-2db9-40d6-ba82-7e90d71fdd37
 keywords:
-- Controlli di Windows per il codice di notifica CBN_SELENDOK
+- CBN_SELENDOK codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0b04fcce0ec2b3f6a2bf5b5e04fa4110ad6ceb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 57ad6b8a7d8449a646e7b95fd154fb219a9a8087593dcd432da27b9703ebfd28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053991"
 ---
-# <a name="cbn_selendok-notification-code"></a>\_Codice di notifica SELENDOK CBN
+# <a name="cbn_selendok-notification-code"></a>Codice di notifica \_ CBN SELENDOK
 
-Inviato quando l'utente seleziona una voce di elenco o seleziona un elemento e quindi lo chiude. Indica che la selezione dell'utente deve essere elaborata. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando l'utente seleziona un elemento dell'elenco o seleziona un elemento e quindi chiude l'elenco. Indica che la selezione dell'utente deve essere elaborata. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_SELENDOK
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md) , il codice di notifica di CBN \_ SELENDOK viene inviato immediatamente prima di ogni codice di notifica [ \_ selChange CBN](cbn-selchange.md) .
+In una casella combinata con lo stile [**CBS \_ SIMPLE,**](combo-box-styles.md) il codice di notifica CBN SELENDOK viene inviato immediatamente prima di ogni codice di notifica \_ [CBN \_ SELCHANGE.](cbn-selchange.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 **Riferimento**
 </dt> <dt>
 
-[\_selChange CBN](cbn-selchange.md)
+[CBN \_ SELCHANGE](cbn-selchange.md)
 </dt> <dt>
 
-[\_SELENDCANCEL CBN](cbn-selendcancel.md)
+[CBN \_ SELENDCANCEL](cbn-selendcancel.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -91,7 +91,7 @@ In una casella combinata con lo [**stile \_ semplice CBS**](combo-box-styles.md)
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

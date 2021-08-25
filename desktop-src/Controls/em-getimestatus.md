@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_GETIMESTATUS (winuser. h)
-description: Ottiene un set di flag di stato che indicano il modo in cui il controllo di modifica interagisce con l'IME (Input Method Editor).
+title: EM_GETIMESTATUS messaggio (Winuser.h)
+description: Ottiene un set di flag di stato che indicano come il controllo di modifica interagisce con Input Method Editor (IME).
 ms.assetid: 56705aed-afab-4f4d-9e0b-dc533b516a15
 keywords:
-- Controlli di Windows Message EM_GETIMESTATUS
+- EM_GETIMESTATUS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a9b449053972db8101db7f5c01d1a03611cae67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01a8251a62aa9cf48bcc6476af27e4c3a5dbbb82dd0ce76ca21ae094225a3e46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048991"
 ---
-# <a name="em_getimestatus-message"></a>\_Messaggio GETIMESTATUS em
+# <a name="em_getimestatus-message"></a>Messaggio \_ EM GETIMESTATUS
 
-Ottiene un set di flag di stato che indicano il modo in cui il controllo di modifica interagisce con l'IME (Input Method Editor).
+Ottiene un set di flag di stato che indicano come il controllo di modifica interagisce con Input Method Editor (IME).
 
 ## <a name="parameters"></a>Parametri
 
@@ -38,7 +38,7 @@ Tipo di stato da recuperare. Questo parametro può essere il valore seguente.
 
 | Valore                                                                                                                                                                                       | Significato                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EMSIS_COMPOSITIONSTRING"></span><span id="emsis_compositionstring"></span><dl> <dt>**\_COMPOSITIONSTRING EMSIS**</dt> </dl> | Imposta il comportamento per la gestione della stringa di composizione.<br/> |
+| <span id="EMSIS_COMPOSITIONSTRING"></span><span id="emsis_compositionstring"></span><dl> <dt>**EMSIS \_ COMPOSITIONSTRING**</dt> </dl> | Imposta il comportamento per la gestione della stringa di composizione.<br/> |
 
 
 
@@ -55,15 +55,15 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Dati specifici del tipo di stato da recuperare. Con il valore **EMSIS \_ COMPOSITIONSTRING** per *status*, questo valore restituito corrisponde a uno o più dei valori seguenti.
+Dati specifici del tipo di stato da recuperare. Con il **valore EMSIS \_ COMPOSITIONSTRING** per *status*, questo valore restituito è uno o più dei valori seguenti.
 
 
 
 | Codice restituito                                                                                                    | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_GETCOMPSTRATONCE EIMES**</dt> </dl>         | Se questo flag è impostato, il controllo di modifica associa il messaggio di [**\_ \_ composizione IME WM**](/windows/desktop/Intl/wm-ime-composition) a *fFlags* impostato su GC \_ RESULTSTR e restituisce immediatamente la stringa di risultato. Se questo flag non è impostato, il controllo di modifica passa il messaggio di **\_ \_ composizione IME WM** alla routine della finestra predefinita ed elabora la stringa di risultato dal messaggio [**WM \_ char**](/windows/desktop/inputdev/wm-char) ; questo è il comportamento predefinito del controllo di modifica.<br/> |
-| <dl> <dt>**\_CANCELCOMPSTRINFOCUS EIMES**</dt> </dl>     | Se questo flag è impostato, il controllo di modifica annulla la stringa di composizione quando riceve il messaggio di [**\_ SetFocus di WM**](/windows/desktop/inputdev/wm-setfocus) . Se questo flag non è impostato, il controllo di modifica non annulla la stringa di composizione. Questo è il comportamento predefinito del controllo di modifica.<br/>                                                                                                                                                                       |
-| <dl> <dt>**\_COMPLETECOMPSTRKILLFOCUS EIMES**</dt> </dl> | Se questo flag è impostato, il controllo di modifica completa la stringa di composizione al momento della ricezione del messaggio [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) . Se questo flag non è impostato, il controllo di modifica non completerà la stringa di composizione. Questo è il comportamento predefinito del controllo di modifica.<br/>                                                                                                                                                                   |
+| <dl> <dt>**EIMES \_ GETCOMPSTRATONCE**</dt> </dl>         | Se questo flag è impostato, il controllo di modifica esegue l'hook del messaggio [**WM \_ IME \_ COMPOSITION**](/windows/desktop/Intl/wm-ime-composition) con *fFlags* impostato su GCS RESULTSTR e restituisce immediatamente la \_ stringa di risultato. Se questo flag non è impostato, il controllo di modifica passa il messaggio **WM \_ IME \_ COMPOSITION** alla routine della finestra predefinita ed elabora la stringa di risultato dal messaggio [**WM \_ CHAR.**](/windows/desktop/inputdev/wm-char) Questo è il comportamento predefinito del controllo di modifica.<br/> |
+| <dl> <dt>**EIMES \_ CANCELCOMPSTRINFOCUS**</dt> </dl>     | Se questo flag è impostato, il controllo di modifica annulla la stringa di composizione quando riceve il [**messaggio WM \_ SETFOCUS.**](/windows/desktop/inputdev/wm-setfocus) Se questo flag non è impostato, il controllo di modifica non annulla la stringa di composizione. questo è il comportamento predefinito del controllo di modifica.<br/>                                                                                                                                                                       |
+| <dl> <dt>**EIMES \_ COMPLETECOMPSTRKILLFOCUS**</dt> </dl> | Se questo flag è impostato, il controllo di modifica completa la stringa di composizione alla ricezione del [**messaggio WM \_ KILLFOCUS.**](/windows/desktop/inputdev/wm-killfocus) Se questo flag non è impostato, il controllo di modifica non completa la stringa di composizione. questo è il comportamento predefinito del controllo di modifica.<br/>                                                                                                                                                                   |
 
 
 
@@ -71,7 +71,7 @@ Dati specifici del tipo di stato da recuperare. Con il valore **EMSIS \_ COMPOSI
 
 ## <a name="remarks"></a>Commenti
 
-**Modifica avanzata:** Il **messaggio \_ GETIMESTATUS em** non è supportato.
+**Rich Edit:** Il **messaggio EM \_ GETIMESTATUS** non è supportato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,9 +79,9 @@ Dati specifici del tipo di stato da recuperare. Con il valore **EMSIS \_ COMPOSI
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Dati specifici del tipo di stato da recuperare. Con il valore **EMSIS \_ COMPOSI
 
 <dl> <dt>
 
-[**\_SETIMESTATUS em**](em-setimestatus.md)
+[**EM \_ SETIMESTATUS**](em-setimestatus.md)
 </dt> </dl>
 
  

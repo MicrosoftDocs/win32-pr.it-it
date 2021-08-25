@@ -1,11 +1,11 @@
 ---
-title: Metodo Play IWMPControls
-description: Il metodo Play inizia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
+title: Metodo di riproduzione IWMPControls
+description: Il metodo play avvia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
 ms.assetid: 02e00df6-4dc1-44bb-9826-e69e8298ccaa
 keywords:
-- Metodo di riproduzione Media Player Windows
-- Metodo Play Media Player Windows, interfaccia IWMPControls
-- Interfaccia IWMPControls Windows Media Player, metodo Play
+- Metodo play Windows Media Player
+- Metodo play Windows Media Player, interfaccia IWMPControls
+- Interfaccia IWMPControls Windows Media Player, metodo play
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fd87a2e2ba3d53b119df328fa68668c91c78d6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2823c5f9846ec2569da0ede6629a4b7e8c04c7b61e14060451c8d0cf3a02f71d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761021"
 ---
-# <a name="iwmpcontrolsplay-method"></a>IWMPControls::p metodo Lay
+# <a name="iwmpcontrolsplay-method"></a>Metodo IWMPControls::p lay
 
-Il metodo **Play** inizia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
+Il **metodo play** avvia la riproduzione dell'elemento multimediale corrente o riprende la riproduzione di un elemento sospeso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,11 +55,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo metodo viene chiamato durante l'avanzamento rapido o il riavvolgimento, la frequenza di riproduzione (il valore di **IWMPSettings. rate**) viene impostata su 1,0.
+Se questo metodo viene chiamato durante l'inoltro rapido o il riavvolgimento, la velocità di riproduzione (il valore di **IWMPSettings.rate)** è impostata su 1.0.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **Play** per riprodurre l'elemento multimediale corrente in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **play** per riprodurre l'elemento multimediale corrente in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -106,7 +106,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -119,10 +119,10 @@ End Sub
 [**Interfaccia IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. playItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-playitem--vb-and-c.md)
+[**IWMPControls.playItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-playitem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. rate (VB e C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
+[**IWMPSettings.rate (VB e C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
 </dt> </dl>
 
  

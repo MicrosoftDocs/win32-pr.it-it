@@ -1,49 +1,49 @@
 ---
-description: Elenco delle risorse protette
+description: Elenco di risorse protette
 ms.assetid: 70413c13-3db0-4af0-b584-259cce70f084
-title: Elenco delle risorse protette
+title: Elenco di risorse protette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 316a9bf9233283a7c0aba11f0d5fe8a09f38f1e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c221068d9185c289d601f53c6b76df9677d8bc213b44f3dc13dbf5b66a0df446
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760121"
 ---
-# <a name="protected-resource-list"></a>Elenco delle risorse protette
+# <a name="protected-resource-list"></a>Elenco di risorse protette
 
-L'autorizzazione per l'accesso completo per modificare le risorse protette con WRP è limitata a TrustedInstaller. È possibile modificare le risorse protette con WRP solo usando i [meccanismi di sostituzione delle risorse supportati](supported-file-replacement-mechanisms.md) con il servizio moduli di installazione di Windows.
+L'autorizzazione per l'accesso completo per modificare le risorse protette da WRP è limitata a TrustedInstaller. Le risorse protette da WRP [](supported-file-replacement-mechanisms.md) possono essere modificate solo usando i meccanismi di sostituzione delle risorse supportati con il Windows del programma di installazione dei moduli.
 
-WRP protegge i file con le seguenti estensioni installate da Windows Server 2008 o Windows Vista:. dll,. exe,. ocx e. sys.
+WRP protegge i file con le estensioni seguenti installate da Windows Server 2008 o Windows Vista: .dll, .exe, OCX e .sys.
 
-WRP protegge i file critici installati da Windows Server 2008 o Windows Vista con le estensioni seguenti:. ACM,. Ade,. adp,. app,. asa,. asp,. aspx,. ax,. Bas,. bat,. bin,. cer,. chm,. CLB,. cmd,. cnt,. cnv,. com,. cpl,. CPX,. CRT,. csh,. dll,. drv,. DTD,. exe,. fxp,. GRP,. H1S,. hlp,. HTA,.,. inf,. ins,. ISP,. its,. js,. jse,. ksh,. lnk,. Mad,. maf,. mag , Mam,. Man,. maq,. Mar,. Mas,. mat,. Mau,. MAV,. Maw,. MDA,. mdb,. mde,. MDT,. mdw,. mdz,. msc,. msi,. msp,. MST,. mui,. NLS,. ocx,. ops,. PAL,. PCD,. PIF,. prf,. prg,. pst,. reg,. SCF,. SCR,. SCT,. SHB,. SHS,. sys,. tlb,. tsp,. URL,. vb,. vbe,. vbs,. vsmacros,. VSS,. VST,. vsw,. ws,. WSC,. wsf,. WSH,. xsd e. Xsl.
+WRP protegge i file critici installati da Windows Server 2008 o Windows Vista con le estensioni seguenti: .acm, .ade, .adp, .app, .asa, .asp, .aspx, .ax, .bas, .bat, .bin, .cer, .chm, .clb, .cmd, .cnt, .cnv, .com, .cpl, .cpx, .crt, .csh, .dll, .drv, .dtd, .exe, .fxp, .grp, .h1s, .hlp, .hta, .ime, .inf, .ins, .isp, .its, .js, .jse, .ksh, .lnk, .mad, .maf, .mag, .mam, .man, .maq, .mar, .mas, .mat, .mau, .mav, .maw, .mda, .mdb, .mde, .mdt, .mdw, .mdz, .msc, .msi, .msp, .mst, .mui, .nls, .ocx, .ops, .pal, .pcd, .pif, .prf, .prg, .pst, .reg, .scf, .scr, .sct, .shb, .shs, .sys, .tlb, .tsp, .url, .vb, .vbe, .vbs, .vsmacros, .vss, .vst, .vsw, .ws, .wsc, .wsf, .wsh,  xsd e xsl.
 
-WRP protegge le cartelle critiche. Una cartella contenente solo file protetti da WRP può essere bloccata in modo che solo il programma di installazione attendibile di Windows sia in grado di creare file o sottocartelle nella cartella. Una cartella può essere bloccata parzialmente per consentire agli amministratori di creare file e sottocartelle nella cartella.
+WRP protegge le cartelle critiche. Una cartella contenente solo file protetti da WRP può essere bloccata in modo che solo il Windows di installazione attendibile sia in grado di creare file o sottocartelle nella cartella. Una cartella può essere parzialmente bloccata per consentire agli amministratori di creare file e sottocartelle nella cartella.
 
-WRP protegge le chiavi del registro di sistema essenziali installate da Windows Server 2008 e Windows Vista. Se una chiave è protetta da WRP, è possibile proteggere tutte le sottochiavi e i valori.
+WRP protegge le chiavi del Registro di sistema essenziali installate da Windows Server 2008 e Windows Vista. Se una chiave è protetta da WRP, è possibile proteggere tutte le relative sottochiavi e valori.
 
-WRP copia i file necessari per riavviare Windows nella directory della *cache* che si trova in% windir% \\ WinSxS \\ backup. I file critici non necessari per riavviare Windows non vengono copiati nella directory della cache. Non è possibile modificare la dimensione della directory della cache e l'elenco dei file copiati nella cache.
+WRP copia i file necessari per riavviare Windows nella *directory della cache* disponibile in %Windir% \\ winsxs \\ Backup. I file critici che non sono necessari per riavviare Windows non vengono copiati nella directory della cache. Non è possibile modificare le dimensioni della directory della cache e l'elenco di file copiati nella cache.
 
-* * Windows Server 2003 e Windows XP: * *
+**Windows Server 2003 e Windows XP: **
 
-Protezione file di Windows (WFP) preceduta da WRP.
+Windows Protezione file (WFP) ha preceduto WRP.
 
-Pam protegge i file installati da Windows con le estensioni seguenti:. dll,. exe,. ocx e. sys. Inoltre, i tipi di carattere TrueType MICROS. ttf, Tahoma. ttf e TahomaBD. ttf sono protetti.
+WFP protegge i file installati da Windows con le estensioni seguenti: .dll, .exe, ocx e .sys. Sono inoltre protetti i tipi di carattere TrueType Micross.ttf, Tahoma.ttf e Tahomabd.ttf.
 
-Al termine dell'installazione di Windows, PAM esegue un'analisi di tutti i file protetti per assicurarsi che non siano stati modificati dalle applicazioni installate tramite installazione automatica. Pam copia inoltre le versioni verificate di questi file di sistema nella directory della cache. Quando un'applicazione tenta di sostituire un file protetto, PAM può ripristinare il file originale dalla directory della cache.
+Al termine dell'Windows, WFP esegue un'analisi di tutti i file protetti per assicurarsi che non siano stati modificati dalle applicazioni installate tramite l'installazione automatica. Wfp copia anche le versioni verificate di questi file di sistema nella directory della cache. Quando un'applicazione tenta di sostituire un file protetto, WFP può ripristinare il file originale dalla directory della cache.
 
-Il valore predefinito è% SystemRoot% \\ system32 \\ dllcache. Per specificare un percorso diverso per la cache, creare il valore del registro di sistema seguente: **HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Winlogon \\ SFCDllCacheDir**
+Il valore predefinito è %systemroot% \\ system32 \\ dllcache. Per specificare un percorso diverso per la cache, creare il valore del Registro di sistema **seguente: HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion \\ Winlogon \\ SFCDllCacheDir**
 
-Deve trattarsi di un percorso locale. L'utilizzo di un percorso di rete crea un'unica origine di rete condivisa per i file di cache, purché tutti i client che utilizzano la condivisione eseguano gli stessi Service Pack e gli stessi hotfix.
+Deve trattarsi di un percorso locale. L'uso di un percorso di rete crea una singola origine di rete condivisa per i file di cache, purché tutti i client che usano la condivisione esere gli stessi Service Pack e gli stessi hotfix.
 
-Le dimensioni predefinite della cache sono illimitate. Per modificare le dimensioni della cache, usare l'impostazione del registro di sistema seguente: **HKEY \_ Local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Winlogon \\ SFCQuota**
+Le dimensioni predefinite della cache sono illimitate. Per modificare le dimensioni della cache, usare l'impostazione del Registro di sistema **seguente: HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion \\ Winlogon \\ SFCQuota**
 
-Se il valore è SFC \_ quota \_ tutti \_ i file, tutti i file di sistema verranno memorizzati nella cache nella directory della cache.
+Se il valore è SFC QUOTA ALL FILES, tutti i file di sistema \_ verranno \_ \_ memorizzati nella cache nella directory della cache.
 
-A causa di considerazioni sullo spazio su disco, potrebbe non essere consigliabile mantenere le versioni memorizzate nella cache di tutti i file di sistema nella directory della cache. A seconda delle dimensioni della cache, Pam archivia le versioni dei file verificate nella directory della cache sul disco rigido del sistema. Pam aggiungerà i file alla cache fino a quando le dimensioni della directory della cache non raggiungono il limite specificato.
+A causa di considerazioni relative allo spazio su disco, potrebbe non essere consigliabile mantenere le versioni memorizzate nella cache di tutti i file di sistema nella directory della cache. A seconda delle dimensioni della cache, WFP archivierà le versioni di file verificate nella directory della cache sul disco rigido del sistema. WFP aggiungerà file alla cache fino a quando le dimensioni della directory della cache non raggiungono il limite specificato.
 
-Quando un'applicazione tenta di sostituire un file protetto che non si trova nella cache, WFP tenta di ripristinare il file originale dall'origine dell'installazione, se necessario.
+Quando un'applicazione tenta di sostituire un file protetto non presente nella cache, WFP tenta di ripristinare il file originale dall'origine di installazione, richiedendo all'utente se necessario.
 
  
 

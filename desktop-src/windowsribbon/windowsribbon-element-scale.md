@@ -3,7 +3,7 @@ title: Elemento Scale
 description: Rappresenta le dimensioni e la preferenza di layout di un gruppo di controlli tramite una coppia Group, SizeDefinition.
 ms.assetid: feef3721-c779-4c64-96c6-9d951ac32277
 keywords:
-- Barra multifunzione di Windows per l'elemento Scale
+- Ridimensiona elemento Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3ba922b65525b92189673020f7155275bdf49f9
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 580cfad910a727f7e4392489adc8cb8baec9a0bc
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111445012"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630202"
 ---
 # <a name="scale-element"></a>Elemento Scale
 
@@ -39,10 +39,10 @@ Rappresenta le dimensioni e la preferenza di layout [**di un gruppo**](windowsri
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,15 +57,15 @@ Rappresenta le dimensioni e la preferenza di layout [**di un gruppo**](windowsri
 <td><strong>Gruppo</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>Sì<br/></td>
-<td>Deve corrispondere a un oggetto <a href="windowsribbon-element-group.md"><strong>CommandName</strong></a> <em>di gruppo esistente.</em><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa o valore intero compreso tra 2 e 59999, inclusi o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Deve corrispondere a un oggetto <a href="windowsribbon-element-group.md"><strong>CommandName</strong></a> <em>del gruppo esistente.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa o valore intero compreso tra 2 e 59999, inclusivo o 0x2 e 0xea5f in formato esadecimale, inclusivo. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Dimensioni</strong><br/></td>
+<td><strong>Size</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Sì<br/></td>
-<td>Questo valore deve corrispondere a una delle dimensioni valide per <em>l'attributo SizeDefinition</em> del gruppo <a href="windowsribbon-element-group.md"><strong>di</strong></a> controlli associato specificato in <em>Group.</em> <br/> Limitato a uno dei valori seguenti: <br/> <br/>
-<dt><span></span><span></span><strong></strong> (Popup)<br/> </dt> <dd> Layout di controllo identico <code>Large</code> a ma ospitato in un riquadro popup o a discesa.<br/> </dd> <dt><span></span><span></span><strong></strong> (Small)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>Small SizeDefinition.</strong></a><br/> </dd> <dt><span></span><span></span><strong></strong> (Media)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> medio.<br/> </dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>Large SizeDefinition.</strong></a><br/> </dd> </dl></td>
+<td>Questo valore deve corrispondere a una delle dimensioni valide per <em>l'attributo SizeDefinition</em> del <a href="windowsribbon-element-group.md"><strong>gruppo di</strong></a> controlli associato specificato in <em>Group</em>. <br/> Limitato a uno dei valori seguenti: <br/> <br/>
+<dt><span></span><span></span><strong></strong> (Popup)<br/> </dt> <dd> Layout di controllo identico <code>Large</code> a ma ospitato in un popup o in un riquadro a discesa.<br/> </dd> <dt><span></span><span></span><strong></strong> (Piccola)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>Small SizeDefinition.</strong></a><br/> </dd> <dt><span></span><span></span><strong></strong> (Media)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> medio.<br/> </dd> <dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Modello <a href="windowsribbon-element-sizedefinition.md"><strong>SizeDefinition</strong></a> di grandi dimensioni.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -91,15 +91,15 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può verificarsi una o più volte per [**ogni oggetto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) [**o ScalingPolicy.IdealSizes.**](windowsribbon-element-scalingpolicy-idealsizes.md)
+Può verificarsi una o più volte per [**ogni oggetto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) o [**ScalingPolicy.IdealSizes.**](windowsribbon-element-scalingpolicy-idealsizes.md)
 
 Ogni coppia di attributi (*Group*, *Size*) deve essere univoca.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra come personalizzare l'aspetto dei controlli in un oggetto [**Group**](windowsribbon-element-group.md) tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
+L'esempio seguente illustra come personalizzare l'aspetto dei controlli in [**un**](windowsribbon-element-group.md) gruppo tramite la funzionalità di layout adattivo dei modelli [**SizeDefinition della**](windowsribbon-element-sizedefinition.md) barra multifunzione.
 
-Il [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in questo esempio specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda Home.** Inoltre, gli **elementi Scale** vengono specificati per influenzare il comportamento di compressione, in ordine di dimensione decrescente, di ogni gruppo.
+Il [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in questo esempio specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una **scheda** Home. Inoltre, gli **elementi Scale** vengono specificati per influire sul comportamento di compressione, in ordine decrescente, di ogni gruppo.
 
 
 ```XML
@@ -178,7 +178,7 @@ Il [**manifesto ScalingPolicy**](windowsribbon-element-scalingpolicy.md) in ques
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

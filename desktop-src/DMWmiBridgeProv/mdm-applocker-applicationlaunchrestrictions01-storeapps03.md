@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
-description: La \_ classe MDM AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03 consente di specificare quali applicazioni exe sono consentite o non consentite per la protezione dei dati aziendali.
+title: MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe
+description: La classe Mdm \_ AppLocker \_ ApplicationLaunchRestrictions01 StoreApps03 consente di specificare quali applicazioni EXE sono consentite o non consentite per la protezione Enterprise \_ dati.
 ms.assetid: de5ceaea-589a-4ed7-8dd6-eb9477d68e0e
 keywords:
-- Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
-- Classe MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03, descritta
+- MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe
+- MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c58610c10e672a6fbc1406b2d022b8ce211871
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dace54d1e34559b0e1f5bdf55d86528b83d8d8f5f9810caa9370a799a5b3b30c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077091"
 ---
-# <a name="mdm_applocker_applicationlaunchrestrictions01_storeapps03-class"></a>MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ classe StoreApps03
+# <a name="mdm_applocker_applicationlaunchrestrictions01_storeapps03-class"></a>Classe \_ Mdm AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** consente di specificare quali applicazioni exe sono consentite o non consentite per la protezione dei dati aziendali.
+La **classe Mdm \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** consente di specificare quali applicazioni EXE sono consentite o non consentite per la protezione Enterprise dati.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -47,23 +47,23 @@ class MDM_AppLocker_ApplicationLaunchRestrictions01_StoreApps03
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** include questi tipi di membri:
+La **classe Mdm \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** dispone di queste proprietà.
+La **classe Mdm \_ AppLocker \_ ApplicationLaunchRestrictions01 \_ StoreApps03** ha queste proprietà.
 
 <dl> <dt>
 
 [**EnforcementMode**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -71,7 +71,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -80,14 +80,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Definisce le restrizioni per l'esecuzione di app da Windows Store.
+Definisce le restrizioni per l'esecuzione di app Windows Store.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -96,17 +96,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "*grouping*./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/Grouping"
 
 </dd> <dt>
 
 [**Criteri**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -129,7 +129,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  
