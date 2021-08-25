@@ -2,7 +2,7 @@
 description: Rappresenta i dati relativi a un account di gruppo.
 ms.assetid: a53d1276-3dc9-419a-bbb8-5dd07794a971
 ms.tgt_platform: multiple
-title: Classe Win32_Group
+title: Win32_Group classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,18 +23,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a8849ba149e0de570150682d3afbad3a4ee33f36
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1f5c6a7feda436129e910b4db21cd3b7457f5a3d6a737e6a99b1c43244659495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699801"
 ---
-# <a name="win32_group-class"></a>\_Classe gruppo Win32
+# <a name="win32_group-class"></a>Classe Group win32 \_
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) del **\_ gruppo Win32** rappresenta i dati relativi a un account di gruppo. Un account di gruppo consente la modifica dei privilegi di accesso per un elenco di utenti. Esempio: Marketing2.
+La classe WMI **\_ Gruppo Win32** [rappresenta](/windows/desktop/WmiSdk/retrieving-a-class) i dati relativi a un account di gruppo. Un account di gruppo consente di modificare i privilegi di accesso per un elenco di utenti. Esempio: Marketing2.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,14 +56,14 @@ class Win32_Group : Win32_Account
 
 ## <a name="members"></a>Members
 
-La classe del **\_ gruppo Win32** presenta questi tipi di membri:
+La **classe \_ Group Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe del **\_ gruppo Win32** presenta questi metodi.
+La **classe \_ Group win32** include questi metodi.
 
 
 
@@ -77,32 +77,32 @@ La classe del **\_ gruppo Win32** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe del **\_ gruppo Win32** dispone di queste proprietà.
+La **classe \_ Win32 Group** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -111,25 +111,25 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Dominio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Domain"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Functions \| NomeDominio")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dominio"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Functions \| domainname")
 </dt> </dl>
 
-Nome del dominio Windows a cui appartiene l'account di gruppo.
+Nome del dominio Windows cui appartiene l'account di gruppo.
 
 Esempio: "NA-SALES"
 
@@ -138,88 +138,88 @@ Esempio: "NA-SALES"
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Indica quando l'oggetto è stato installato. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**LocalAccount**
+**Account locale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **corretti**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **fissi**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Se **true**, l'account viene definito nel computer locale. Per recuperare solo gli account definiti nel computer locale, progettare una query che includa la condizione "LocalAccount =**true**".
+Se **TRUE,** l'account viene definito nel computer locale. Per recuperare solo gli account definiti nel computer locale, progettare una query che includa la condizione "LocalAccount=**TRUE".**
 
-Questa proprietà viene ereditata [**dall' \_ account Win32**](win32-account.md).
+Questa proprietà viene ereditata [**dall'account \_ Win32.**](win32-account.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures \| Name")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures \| name")
 </dt> </dl>
 
-Nome dell'account di gruppo di Windows nel dominio specificato dalla proprietà del **dominio** di questa classe.
+Nome dell'account Windows gruppo nel dominio specificato dalla **proprietà Domain** di questa classe.
 
 </dd> <dt>
 
 **SID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Security Identifier (SID)")
+Qualificatori: [**corretto**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("ID di sicurezza \| (SID) Win32API")
 </dt> </dl>
 
-ID di sicurezza (SID) per l'account. Un SID è un valore stringa di lunghezza variabile usato per identificare un trustee. Ogni account dispone di un SID univoco emesso da un'autorità, ad esempio un dominio di Windows, archiviato in un database di sicurezza. Quando un utente esegue l'accesso, il sistema Recupera il SID dell'utente dal database e lo inserisce nel token di accesso dell'utente. Il sistema usa il SID nel token di accesso dell'utente per identificare l'utente in tutte le interazioni successive con la sicurezza di Windows. Quando un SID è stato usato come identificatore univoco per un utente o un gruppo, non può essere usato di nuovo per identificare un altro utente o gruppo.
+ID di sicurezza (SID) per questo account. Un SID è un valore stringa di lunghezza variabile usato per identificare un trustee. Ogni account ha un SID univoco emesso da un'autorità, ad esempio un dominio Windows, archiviato in un database di sicurezza. Quando un utente esegue l'accesso, il sistema recupera il SID dell'utente dal database e lo inserisce nel token di accesso dell'utente. Il sistema usa il SID nel token di accesso dell'utente per identificare l'utente in tutte le interazioni successive con Windows sicurezza. Quando un SID è stato usato come identificatore univoco per un utente o un gruppo, non può essere usato nuovamente per identificare un altro utente o gruppo.
 
-Questa proprietà viene ereditata [**dall' \_ account Win32**](win32-account.md).
+Questa proprietà viene ereditata [**dall'account \_ Win32.**](win32-account.md)
 
 </dd> <dt>
 
 **SIDType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API di \| controllo di accesso tipi di enumerazione \| SID \_ nome \_ utilizzo")
+Qualificatori: [**corretto ,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API Access Control Enumeration Types \| \| SID NAME \_ \_ USE")
 </dt> </dl>
 
 Valori enumerati che specificano il tipo di ID di sicurezza (SID).
 
-Questa proprietà viene ereditata [**dall' \_ account Win32**](win32-account.md).
+Questa proprietà viene ereditata [**dall'account \_ Win32.**](win32-account.md)
 
 <dt>
 
@@ -291,20 +291,20 @@ Questa proprietà viene ereditata [**dall' \_ account Win32**](win32-account.md)
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stringa che indica lo stato corrente dell'oggetto. È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "danneggiato" e "errore predazione". "Predator fail" indica che un elemento funziona correttamente, ma sta stimando un errore, ad esempio un'unità disco rigido abilitata per SMART.
+Stringa che indica lo stato corrente dell'oggetto . È possibile definire lo stato operativo e non operativo. Lo stato operativo può includere "OK", "Danneggiato" e "Pred Fail". "Pred Fail" indica che un elemento funziona correttamente, ma prevede un errore , ad esempio un'unità disco rigido abilitata per SMART.
 
-Lo stato non operativo può includere "Error", "starting", "stoping" e "Service". Il "servizio" può essere applicato durante il mirroring del disco, ovvero la riattivazione, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Lo stato non operativo può includere "Error", "Starting", "Stopping" e "Service". Il "servizio" può essere applicato durante il ridimensionamento del mirror del disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -319,77 +319,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degraded** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -398,11 +398,11 @@ Ridotto **("danneggiato"** )
 
 ## <a name="remarks"></a>Commenti
 
-La classe del **\_ gruppo Win32** è derivata [**dall' \_ account Win32**](win32-account.md).
+La **classe \_ Group win32** è derivata dall'account [**Win32 \_**](win32-account.md).
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente, tratto dall' [elenco dei gruppi locali utilizzando](https://Gallery.TechNet.Microsoft.Com/4474e390-776d-428e-906d-20668ce5933f) l'esempio di codice VBScript WMI nella raccolta TechNet, utilizza il **\_ gruppo Win32** per restituire informazioni sui gruppi locali presenti in un computer.
+Il codice seguente, tratto dall'esempio di codice List [Local Groups Using WMI](https://Gallery.TechNet.Microsoft.Com/4474e390-776d-428e-906d-20668ce5933f) VBScript nella raccolta TechNet, usa Il gruppo **Win32 \_** per restituire informazioni sui gruppi locali trovati in un computer.
 
 
 ```VB
@@ -438,7 +438,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -447,7 +447,7 @@ Next
 
 <dl> <dt>
 
-[**\_Account Win32**](win32-account.md)
+[**Win32 \_ Account**](win32-account.md)
 </dt> <dt>
 
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -1,28 +1,28 @@
 ---
 title: Enumerazione dei file in un processo
-description: Per enumerare i file in un processo, chiamare il metodo Metodo ibackgroundcopyjob EnumFiles. Il metodo restituisce un puntatore a interfaccia IEnumBackgroundCopyFiles che viene usato per enumerare i file.
+description: Per enumerare i file in un processo, chiamare il metodo IBackgroundCopyJob EnumFiles. Il metodo restituisce un puntatore a interfaccia IEnumBackgroundCopyFiles che viene utilizzato per enumerare i file.
 ms.assetid: 0e1fa024-4576-434c-bc5f-518d246b5faa
 keywords:
-- trasferimento di bit di processo, enumerazione di file
-- Enumerazione dei bit di file
-- Enumerazione di bit, file
-- BIT di trasferimento di file, enumerazione
+- trasferimento di bit del processo, enumerazione dei file
+- enumerazione di file BITS
+- enumerazione di BITS , file
+- trasferimento di file BITS, enumerazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0db704e47a0e075801de2434ed30ba6fb8d8c91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 01a986b8a8869008db34e97c1cc7e0cd733c301f5cdc57ce4ef6e313ff382479
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801461"
 ---
 # <a name="enumerating-files-in-a-job"></a>Enumerazione dei file in un processo
 
-Per enumerare i file in un processo, chiamare il metodo [**Metodo ibackgroundcopyjob:: EnumFiles**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) . Il metodo restituisce un puntatore a interfaccia [**IEnumBackgroundCopyFiles**](/windows/desktop/api/Bits/nn-bits-ienumbackgroundcopyfiles) che viene usato per enumerare i file.
+Per enumerare i file in un processo, chiamare il [**metodo IBackgroundCopyJob::EnumFiles.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) Il metodo restituisce un puntatore a [**interfaccia IEnumBackgroundCopyFiles**](/windows/desktop/api/Bits/nn-bits-ienumbackgroundcopyfiles) che viene utilizzato per enumerare i file.
 
-Si noti che l'elenco enumerato è uno snapshot dei file nel processo nel momento in cui si chiama il metodo [**EnumFiles**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) . Tuttavia, i valori delle proprietà di tali oggetti file riflettono i valori correnti del file.
+Si noti che l'elenco enumerato è uno snapshot dei file nel processo al momento della chiamata del [**metodo EnumFiles.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles) Tuttavia, i valori delle proprietà di tali oggetti file riflettono i valori correnti del file.
 
-Nell'esempio seguente viene illustrato come enumerare i file in un processo e recuperare le relative proprietà. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
+Nell'esempio seguente viene illustrato come enumerare i file in un processo e recuperarne le proprietà. Nell'esempio si presuppone che il [**puntatore a interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
 
 
 ```C++
@@ -88,9 +88,9 @@ if (SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

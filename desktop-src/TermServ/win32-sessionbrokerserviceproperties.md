@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerServiceProperties
-description: Definisce la query per un servizio di gestore sessioni.
+title: Win32_SessionBrokerServiceProperties classe
+description: Definisce la query per un servizio broker di sessione.
 ms.assetid: fe7a0317-8b52-4685-9d0d-2f81058b4561
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_SessionBrokerServiceProperties Servizi Desktop remoto
-- Classe Win32_SessionBrokerServiceProperties Servizi Desktop remoto, descritta
+- Win32_SessionBrokerServiceProperties classe Servizi Desktop remoto
+- Win32_SessionBrokerServiceProperties classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 507c4211b9506e0635966e9541167d24495735ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f095272ee0d836e77542e20badbe5bb1169206cc6b0e87d742e3fbd235acd52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656181"
 ---
-# <a name="win32_sessionbrokerserviceproperties-class"></a>Win32 \_ SessionBrokerServiceProperties (classe)
+# <a name="win32_sessionbrokerserviceproperties-class"></a>Classe \_ SessionBrokerServiceProperties Win32
 
-Definisce la query per un servizio di gestore sessioni.
+Definisce la query per un servizio broker di sessione.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -46,25 +46,25 @@ class Win32_SessionBrokerServiceProperties
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SessionBrokerServiceProperties** presenta questi tipi di membri:
+La **classe Win32 \_ SessionBrokerServiceProperties** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](/windows)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ SessionBrokerServiceProperties** presenta questi metodi.
+La **classe Win32 \_ SessionBrokerServiceProperties** include questi metodi.
 
 
 
 | Metodo                                                                                                | Descrizione                                                                                                                                                                                                                          |
 |:------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DeleteSBDbConnectionString**](win32-sessionbrokerserviceproperties-deletesbdbconnectionstring.md) | Elimina le stringhe di connessione del database (primaria e secondaria) dal registro di sistema.<br/> **Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Questo metodo non è disponibile prima di Windows Server 2016<br/> |
-| [**InstallBrokerDatabase**](win32-sessionbrokerserviceproperties-installbrokerdatabase.md)           | Installa il database gestore connessione Desktop remoto nella SQL Server centrale<br/>                                                                                                                                                                    |
-| [**IsDbReachable**](win32-sessionbrokerserviceproperties-isdbreachable.md)                           | Controlla se il database è raggiungibile<br/>                                                                                                                                                                                                 |
-| [**SetBrokerHAMode**](win32-sessionbrokerserviceproperties-setbrokerhamode.md)                       | Esegue la migrazione dei dati dal database WID locale al nuovo database basato su SQL Server. Configura inoltre il server Broker per l'utilizzo della SQL Server centrale<br/>                                                                                        |
-| [**SetBrokerNonHAMode**](win32-sessionbrokerserviceproperties-setbrokernonhamode.md)                 | Esegue la migrazione dei dati dal SQL Server centrale al database locale. Configura inoltre il server Broker per l'utilizzo del database locale.<br/>                                                                                                              |
-| [**SetSBDbConnectionStrings**](win32-sessionbrokerserviceproperties-setsbdbconnectionstrings.md)     | Salva le stringhe di connessione del database (primaria e secondaria) nel registro di sistema.<br/> **Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Questo metodo non è disponibile prima di Windows Server 2016<br/>     |
+| [**DeleteSBDbConnectionString**](win32-sessionbrokerserviceproperties-deletesbdbconnectionstring.md) | Elimina le stringhe di connessione del database (primarie e secondarie) dal Registro di sistema.<br/> **Windows Server 2012 R2, Windows Server 2012 e Windows Server 2008 R2:** Questo metodo non è disponibile prima di Windows Server 2016<br/> |
+| [**InstallBrokerDatabase**](win32-sessionbrokerserviceproperties-installbrokerdatabase.md)           | Installa il database di Gestore connessione Desktop remoto nel server SQL Server<br/>                                                                                                                                                                    |
+| [**IsDbReachable**](win32-sessionbrokerserviceproperties-isdbreachable.md)                           | Verifica se il database è raggiungibile<br/>                                                                                                                                                                                                 |
+| [**SetBrokerHAMode**](win32-sessionbrokerserviceproperties-setbrokerhamode.md)                       | Esegue la migrazione dei dati dal database WID locale al nuovo database SQL Server database basato su . Configura anche il server broker per l'uso dell'SQL Server<br/>                                                                                        |
+| [**SetBrokerNonHAMode**](win32-sessionbrokerserviceproperties-setbrokernonhamode.md)                 | Esegue la migrazione dei dati dalla SQL Server centrale al database locale. Configura anche il server broker per l'uso del database locale.<br/>                                                                                                              |
+| [**SetSBDbConnectionStrings**](win32-sessionbrokerserviceproperties-setsbdbconnectionstrings.md)     | Salva le stringhe di connessione del database (primaria e secondaria) nel Registro di sistema.<br/> **Windows Server 2012 R2, Windows Server 2012 e Windows Server 2008 R2:** Questo metodo non è disponibile prima di Windows Server 2016<br/>     |
 
 
 
@@ -72,20 +72,20 @@ La classe **Win32 \_ SessionBrokerServiceProperties** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SessionBrokerServiceProperties** dispone di queste proprietà.
+La **classe Win32 \_ SessionBrokerServiceProperties** ha queste proprietà.
 
 <dl> <dt>
 
 **SBDbConnectionString**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Stringa di connessione del database utilizzata dal servizio Gestore sessioni.
+Stringa di connessione del database utilizzata dal servizio Session Broker.
 
 **Windows Server 2008 R2:** Questa proprietà non è disponibile prima di Windows Server 2012
 
@@ -94,28 +94,28 @@ Stringa di connessione del database utilizzata dal servizio Gestore sessioni.
 **SBDbSecondaryConnectionString**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-facoltativo. Stringa di connessione al database secondario, usata dal servizio Broker di sessione per supportare la scadenza della password.
+facoltativo. Stringa di connessione del database secondario, usata dal servizio Session Broker per supportare la scadenza della password.
 
-**Windows server 2012 R2, Windows server 2012 e Windows server 2008 R2:** Questa proprietà non è disponibile prima di Windows Server 2016
+**Windows Server 2012 R2, Windows Server 2012 e Windows Server 2008 R2:** Questa proprietà non è disponibile prima di Windows Server 2016
 
 </dd> <dt>
 
 **SBNetworkName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome di rete utilizzato dal servizio Broker di sessione.
+Nome di rete utilizzato dal servizio di broker di sessione.
 
 </dd> </dl>
 
@@ -127,8 +127,8 @@ Nome di rete utilizzato dal servizio Broker di sessione.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

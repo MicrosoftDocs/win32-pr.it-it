@@ -1,7 +1,7 @@
 ---
-description: La funzione AdvancedDocumentProperties Visualizza una finestra di dialogo di configurazione della stampante per la stampante specificata, consentendo all'utente di configurare la stampante.
+description: La funzione AdvancedDocumentProperties visualizza una finestra di dialogo di configurazione della stampante per la stampante specificata, consentendo all'utente di configurare tale stampante.
 ms.assetid: 29e33f34-f6ec-4989-b076-e1fef8eb5bc4
-title: Funzione AdvancedDocumentProperties (winspool. h)
+title: Funzione AdvancedDocumentProperties (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: da8754add6e3f5997354c940c303c41d4588c7b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2451f8e0668e0064566511bbf5eeb05e65094967486142719629400cf8d97348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720271"
 ---
-# <a name="advanceddocumentproperties-function"></a>AdvancedDocumentProperties (funzione)
+# <a name="advanceddocumentproperties-function"></a>AdvancedDocumentProperties - funzione
 
-La funzione **AdvancedDocumentProperties** Visualizza una finestra di dialogo di configurazione della stampante per la stampante specificata, consentendo all'utente di configurare la stampante.
+La **funzione AdvancedDocumentProperties** visualizza una finestra di dialogo di configurazione della stampante per la stampante specificata, consentendo all'utente di configurare tale stampante.
 
-Questa funzione è un caso speciale della funzione [**DocumentProperties**](documentproperties.md) . Per ulteriori informazioni, vedere la sezione Osservazioni.
+Questa funzione è un caso speciale della [**funzione DocumentProperties.**](documentproperties.md) Per altri dettagli, vedere la sezione Osservazioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,55 +47,55 @@ LONG AdvancedDocumentProperties(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hWnd* \[ Pollici\]
 </dt> <dd>
 
-Handle per la finestra padre della finestra di dialogo Printer-Configuration.
+Handle per la finestra padre della finestra di dialogo di configurazione della stampante.
 
 </dd> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per un oggetto Printer. Utilizzare la funzione [**OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle di stampante.
+Handle per un oggetto stampante. Usare la [**funzione OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle della stampante.
 
 </dd> <dt>
 
-*pDeviceName* \[ in\]
+*pDeviceName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del dispositivo per il quale deve essere visualizzata una finestra di dialogo di configurazione della stampante.
+Puntatore a una stringa con terminazione Null che specifica il nome del dispositivo per il quale deve essere visualizzata una finestra di dialogo di configurazione della stampante.
 
 </dd> <dt>
 
-*pDevModeOutput* \[ out\]
+*pDevModeOutput* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che conterrà i dati di configurazione specificati dall'utente.
+Puntatore a una [**struttura DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che conterrà i dati di configurazione specificati dall'utente.
 
 </dd> <dt>
 
-*pDevModeInput* \[ in\]
+*pDevModeInput* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che contiene i dati di configurazione utilizzati per inizializzare i controlli della finestra di dialogo di configurazione della stampante.
+Puntatore a una [**struttura DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che contiene i dati di configurazione utilizzati per inizializzare i controlli della finestra di dialogo di configurazione della stampante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione [**DocumentProperties**](documentproperties.md) con questi parametri ha esito positivo, il valore restituito di **AdvancedDocumentProperties** è 1. In caso contrario, il valore restituito è zero.
+Se la [**funzione DocumentProperties**](documentproperties.md) con questi parametri ha esito positivo, il valore restituito di **AdvancedDocumentProperties** è 1. In caso contrario, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-Questa funzione può visualizzare solo la finestra di dialogo di configurazione della stampante, in modo che un utente possa configurarla. Per un maggiore controllo, usare [**DocumentProperties**](documentproperties.md). I parametri di input per questa funzione vengono passati direttamente a **DocumentProperties** e il valore *fmode* è impostato su DM \_ in \_ buffer \| DM \_ in \_ prompt \| DM \_ out \_ buffer. A differenza di **DocumentProperties**, questa funzione restituisce solo 1 o 0. Pertanto, non è possibile determinare la dimensione richiesta di [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) impostando *pDevMode* su zero.
+Questa funzione può visualizzare solo la finestra di dialogo di configurazione della stampante in modo che un utente possa configurarla. Per un maggiore controllo, usare [**DocumentProperties.**](documentproperties.md) I parametri di input per questa funzione vengono passati direttamente a **DocumentProperties** e il valore *fMode* è impostato su DM \_ IN BUFFER DM IN PROMPT DM OUT \_ \| \_ \_ \| \_ \_ BUFFER. A **differenza di DocumentProperties,** questa funzione restituisce solo 1 o 0. Pertanto, non è possibile determinare le dimensioni richieste di [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) impostando *pDevMode* su zero.
 
-Un'applicazione può ottenere il nome a cui punta il parametro *pDeviceName* chiamando la funzione [**GetPrinter**](getprinter.md) e quindi esaminando il membro **pPrinterName** della struttura [**Printer \_ info \_ 2**](printer-info-2.md) .
+Un'applicazione può ottenere il nome a cui punta il *parametro pDeviceName* chiamando la [**funzione GetPrinter**](getprinter.md) e quindi esaminando il membro **pPrinterName** della struttura [**PRINTER INFO \_ \_ 2.**](printer-info-2.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,9 +105,9 @@ Un'applicazione può ottenere il nome a cui punta il parametro *pDeviceName* chi
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomi Unicode e ANSI<br/>   | **AdvancedDocumentPropertiesW** (Unicode) e **AdvancedDocumentPropertiesA** (ANSI)<br/>           |
 
 
@@ -122,13 +122,13 @@ Un'applicazione può ottenere il nome a cui punta il parametro *pDeviceName* chi
 [Funzioni dell'API spooler di stampa](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**AddPrinter**](addprinter.md)
+[**Addprinter**](addprinter.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> <dt>
 
-[**DocumentProperties**](documentproperties.md)
+[**Proprietà documento**](documentproperties.md)
 </dt> <dt>
 
 [**GetPrinter**](getprinter.md)
@@ -137,7 +137,7 @@ Un'applicazione può ottenere il nome a cui punta il parametro *pDeviceName* chi
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**\_Informazioni stampante \_ 2**](printer-info-2.md)
+[**PRINTER \_ INFO \_ 2**](printer-info-2.md)
 </dt> </dl>
 
  

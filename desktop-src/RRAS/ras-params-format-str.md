@@ -1,9 +1,9 @@
 ---
-title: Enumerazione RAS_PARAMS_FORMAT (rassapi. h)
-description: Il \_ \_ tipo di enumerazione del formato params RAS viene usato nella \_ struttura dei parametri RAS per indicare il tipo di dati associato a una chiave specifica del supporto.
+title: RAS_PARAMS_FORMAT enumerazione (Rassapi.h)
+description: Il tipo di enumerazione RAS PARAMS FORMAT viene usato nella struttura PARAMETRI RAS per indicare il tipo di dati \_ associati a una chiave specifica del \_ \_ supporto.
 ms.assetid: dd2c0110-1f27-4a8f-bc61-f15588ebc4ca
 keywords:
-- RAS enumerazione RAS_PARAMS_FORMAT
+- RAS_PARAMS_FORMAT enumerazione RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00065f3781fd2ada420f67367e84e0863fe3b446
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b798ef8a5257afcb4e4ad653801bda0d21691057abad970d6e8158f592146e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673181"
 ---
-# <a name="ras_params_format-enumeration"></a>\_Enumerazione del formato params RAS \_
+# <a name="ras_params_format-enumeration"></a>Enumerazione \_ RAS PARAMS \_ FORMAT
 
-\[L'enumerazione del **\_ \_ formato params RAS** non è supportata in Windows Vista.\]
+\[**\_ L'enumerazione \_ RAS PARAMS FORMAT** non è supportata a Windows Vista.\]
 
-Il tipo di enumerazione del **\_ \_ formato params RAS** viene usato nella struttura dei [**\_ parametri RAS**](ras-parameters-str.md) per indicare il tipo di dati associato a una chiave specifica del supporto.
+Il **tipo di enumerazione RAS \_ PARAMS \_ FORMAT** viene usato nella [**struttura \_ PARAMETRI RAS**](ras-parameters-str.md) per indicare il tipo di dati associati a una chiave specifica del supporto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef enum RAS_PARAMS_FORMAT {
 <span id="ParamNumber"></span><span id="paramnumber"></span><span id="PARAMNUMBER"></span>**ParamNumber**
 </dt> <dd>
 
-Indica che i dati associati alla chiave sono numerici.
+Indica che i dati associati alla chiave sono un numero.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Indica che i dati associati alla chiave sono una stringa.
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Indica che i dati associati alla chiave sono una stringa.
 [Enumerazioni di amministrazione del server RAS](ras-server-administration-enumerations.md)
 </dt> <dt>
 
-[**\_parametri RAS**](ras-parameters-str.md)
+[**PARAMETRI \_ RAS**](ras-parameters-str.md)
 </dt> </dl>
 
  

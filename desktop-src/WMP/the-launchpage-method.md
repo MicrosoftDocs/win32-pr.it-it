@@ -3,27 +3,27 @@ title: Metodo LaunchPage
 description: Metodo LaunchPage
 ms.assetid: f0f93535-5afc-4777-9188-5bbac63ddc6b
 keywords:
-- Plug-in di Windows Media Player, metodo LaunchPage
+- Windows Media Player plug-in, metodo LaunchPage
 - plug-in, metodo LaunchPage
 - plug-in dell'interfaccia utente, metodo LaunchPage
 - Plug-in dell'interfaccia utente, metodo LaunchPage
 - Metodo LaunchPage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f04974eba1ba5c86300de44acd2ba6e2920954f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 11a22e1f4b136711a6f4336fbe54d6d90e4bb18b24a88645587311a0b4046f6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762721"
 ---
 # <a name="the-launchpage-method"></a>Metodo LaunchPage
 
-Il metodo LaunchPage fornisce la funzionalità principale del plug-in, ovvero l'avvio di una pagina di ricerca che contiene informazioni sull'autore dell'elemento multimediale passato al metodo.
+Il metodo LaunchPage fornisce la funzionalità principale del plug-in, ovvero l'avvio di una pagina di ricerca contenente informazioni sull'artista dell'elemento multimediale passato al metodo .
 
-Questo metodo viene chiamato dal metodo OnSearch utilizzando l'oggetto **multimediale** corrente.
+Questo metodo viene chiamato dal metodo OnSearch usando l'oggetto **Media** corrente.
 
-Il codice seguente viene usato per implementare questo metodo:
+Per implementare questo metodo viene usato il codice seguente:
 
 
 ```C++
@@ -65,9 +65,9 @@ void LaunchPage(IWMPMedia *pMedia)
 [**Implementazione di CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

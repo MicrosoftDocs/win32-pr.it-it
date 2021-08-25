@@ -1,7 +1,7 @@
 ---
-description: Il metodo PaintWindow fa sì che la finestra venga ridisegnata.
+description: Il metodo PaintWindow fa sì che la finestra sia ridisegnata.
 ms.assetid: dce3d782-00e5-4176-9365-378d59d48ebc
-title: Metodo CBaseWindow. PaintWindow (Winutil. h)
+title: Metodo CBaseWindow.PaintWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3b0932422f85cb31d587485976dfacbaa51e2bf7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7cc998f270947890327fb3cbacce4a29183604047824b05b8a66538c163bdc08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635121"
 ---
-# <a name="cbasewindowpaintwindow-method"></a>CBaseWindow. PaintWindow, metodo
+# <a name="cbasewindowpaintwindow-method"></a>Metodo CBaseWindow.PaintWindow
 
-Il `PaintWindow` metodo fa sì che la finestra venga ridisegnata.
+Il `PaintWindow` metodo fa sì che la finestra sia ridisegnata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void PaintWindow(
 *bErase* 
 </dt> <dd>
 
-Valore booleano che specifica se lo sfondo è stato cancellato. Se il valore è **true**, lo sfondo viene cancellato.
+Valore booleano che specifica se lo sfondo viene cancellato. Se il valore è **TRUE,** lo sfondo viene cancellato.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo genera un \_ messaggio di disegno WM invalidando l'intera area client della finestra.
+Questo metodo genera un messaggio WM \_ PAINT invalidando l'intera area client della finestra.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo genera un \_ messaggio di disegno WM invalidando l'intera area cli
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

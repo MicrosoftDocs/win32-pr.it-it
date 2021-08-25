@@ -1,8 +1,8 @@
 ---
-title: 'Metodo IDODownload:: Finalize'
-description: Completa il download.
+title: Metodo IDODownload::Finalize
+description: Finalizza il download.
 keywords:
-- 'Metodo IDODownload:: Finalize'
+- Metodo IDODownload::Finalize
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 6befc9a7e64fb0963d45257d68d6bb8d2ba7a2cb
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 620b8cf1671c18f2e4a79a798fac366d61c9e09f5a83ecda2c1ade531c6a558a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "106299305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636035"
 ---
-# <a name="idodownloadfinalize-method"></a>Metodo IDODownload:: Finalize
+# <a name="idodownloadfinalize-method"></a>Metodo IDODownload::Finalize
 
-Completa il download. Una volta finalizzato, un download non può essere ripreso chiamando **Avvia**.
+Finalizza il download. Una volta finalizzato, un download non può essere ripreso chiamando **Start.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,12 +33,12 @@ HRESULT Finalize();
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [codice di errore](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
+Se la funzione ha esito positivo, restituisce **S_OK**. In caso contrario, restituisce un [**codice di errore HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [](/windows/desktop/com/com-error-codes-10).
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | Do.h |

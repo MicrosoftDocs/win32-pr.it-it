@@ -1,6 +1,6 @@
 ---
-title: GroupMemoryBarrier (funzione)
-description: Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi condivisi del gruppo non sono stati completati.
+title: Funzione GroupMemoryBarrier
+description: Blocca l'esecuzione di tutti i thread in un gruppo fino al completamento di tutti gli accessi condivisi del gruppo.
 ms.assetid: cebd4277-47a0-401a-bfbe-8d956412f254
 keywords:
 - Funzione GroupMemoryBarrier HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 54a140a892b0e9144ef23fc0290ca3bb3747e90a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e9889be841df54f6ae18b7ac52d7117f780af37662c5a1d4f6c29af858350345
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743861"
 ---
-# <a name="groupmemorybarrier-function"></a>GroupMemoryBarrier (funzione)
+# <a name="groupmemorybarrier-function"></a>Funzione GroupMemoryBarrier
 
-Blocca l'esecuzione di tutti i thread in un gruppo finché tutti gli accessi condivisi del gruppo non sono stati completati.
+Blocca l'esecuzione di tutti i thread in un gruppo fino al completamento di tutti gli accessi condivisi del gruppo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -48,23 +48,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -73,12 +73,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

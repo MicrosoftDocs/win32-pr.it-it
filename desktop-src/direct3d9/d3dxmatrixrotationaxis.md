@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 720ac4d3bdae2910cee7913b9c34316d72526688
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ae47bf75a8f2a1f0b5e75ceadabff5a1ea7c6845617012a00a2bb115470e43c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750211"
 ---
 # <a name="d3dxmatrixrotationaxis-function-d3dx9mathh"></a>Funzione D3DXMatrixRotationAxis (D3dx9math.h)
 
@@ -103,7 +103,7 @@ Il valore restituito per questa funzione è lo stesso valore restituito nel *par
 [**D3DXMatrixRotationX**](d3dxmatrixrotationx.md)
 </dt> <dt>
 
-[**D3DXMatrixRotationy**](d3dxmatrixrotationy.md)
+[**D3DXMatrixRotationY**](d3dxmatrixrotationy.md)
 </dt> <dt>
 
 [**D3DXMatrixRotationYawPitchRoll**](d3dxmatrixrotationyawpitchroll.md)

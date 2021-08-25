@@ -1,19 +1,19 @@
 ---
-description: Il subset Unicode campi (USBs) viene utilizzato nelle strutture FONTSIGNATURE e LOCALESIGNATURE.
+description: I campi di bit del subset Unicode (USB) vengono usati nelle strutture FONTSIGNATURE e LOCALESIGNATURE.
 ms.assetid: f897dfc7-3e78-48dc-8d3d-6929e2f4ec4d
-title: Campi subset Unicode
+title: Campi di bit subset Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fced251b1bf8e04dd4c0d7d7cb0dca15c8bdfa6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06f0fa4791e62f397e62a99a78d41dbcdc67c55299a650b1bc78bea685205399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787991"
 ---
-# <a name="unicode-subset-bitfields"></a>Campi subset Unicode
+# <a name="unicode-subset-bitfields"></a>Campi di bit subset Unicode
 
-Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-fontsignature) e [**LOCALESIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-localesignature) .
+I campi di bit del subset Unicode (USB) vengono usati nelle [**strutture FONTSIGNATURE**](/windows/win32/api/wingdi/ns-wingdi-fontsignature) e [**LOCALESIGNATURE.**](/windows/win32/api/wingdi/ns-wingdi-localesignature)
 
 
 
@@ -34,20 +34,20 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>1</td>
 <td>0080 - 00FF</td>
-<td>Supplemento Latin 1</td>
+<td>Supplemento Latin-1</td>
 </tr>
 <tr class="odd">
 <td>2</td>
 <td>0100 - 017F</td>
-<td>Latino esteso-A</td>
+<td>Latino esteso A</td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>0180 - 024F</td>
-<td>Latino esteso-B</td>
+<td>Latino esteso B</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">4 $ {REMOVE} $<br />
+<td rowspan="3">4${REMOVE}$<br />
 </td>
 <td>0250 - 02AF</td>
 <td>Estensioni IPA</td>
@@ -59,29 +59,29 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="odd">
 <td>1D80 - 1DBF</td>
-<td>Supplemento per le estensioni fonetiche</td>
+<td>Supplemento estensioni fonetiche</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">5 $ {REMOVE} $<br />
+<td rowspan="2">5${REMOVE}$<br />
 </td>
 <td>02B0 - 02FF</td>
-<td>Caratteri di modifica spaziatura</td>
+<td>Lettere di modifica della spaziatura</td>
 </tr>
 <tr class="odd">
-<td>A700-A71F</td>
-<td>Modifica lettere tono</td>
+<td>A700 - A71F</td>
+<td>Lettere del tono di modifica</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">6 $ {REMOVE} $<br />
+<td rowspan="2">6${REMOVE}$<br />
 </td>
 <td>0300 - 036F</td>
 <td>Combinazione di segni diacritici</td>
 </tr>
 <tr class="odd">
-<td>1DC0 - 1DFF</td>
-<td>Supplemento segni diacritici combinati</td>
+<td>1DC0 - 1 DFF</td>
+<td>Supplemento per segni diacritici combinato</td>
 
 </tr>
 <tr class="even">
@@ -95,7 +95,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Copto</td>
 </tr>
 <tr class="even">
-<td rowspan="4">9 $ {REMOVE} $<br />
+<td rowspan="4">9${REMOVE}$<br />
 </td>
 <td>0400 - 04FF</td>
 <td>Cirillico</td>
@@ -107,12 +107,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="even">
 <td>2DE0 - 2DFF</td>
-<td>Cirillico esteso-A</td>
+<td>Cirillico esteso A</td>
 
 </tr>
 <tr class="odd">
-<td>A640-A69F</td>
-<td>Cirillico esteso-B</td>
+<td>A640 - A69F</td>
+<td>Cirillico esteso B</td>
 
 </tr>
 <tr class="even">
@@ -127,17 +127,17 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="even">
 <td>12</td>
-<td>A500-A63F</td>
+<td>A500 - A63F</td>
 <td>Vai</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">13 $ {REMOVE} $<br />
+<td rowspan="2">13${REMOVE}$<br />
 </td>
 <td>0600 - 06FF</td>
 <td>Arabo</td>
 </tr>
 <tr class="even">
-<td>0750-077F</td>
+<td>0750 - 077F</td>
 <td>Supplemento arabo</td>
 
 </tr>
@@ -202,14 +202,14 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Lao</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">26 $ {REMOVE} $<br />
+<td rowspan="2">26${REMOVE}$<br />
 </td>
 <td>10A0 - 10FF</td>
 <td>Georgiano</td>
 </tr>
 <tr class="even">
 <td>2D00 - 2D2F</td>
-<td>Supplemento georgiano</td>
+<td>Supplemento in stile alfabeto alfabeto</td>
 
 </tr>
 <tr class="odd">
@@ -220,22 +220,22 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>28</td>
 <td>1100 - 11FF</td>
-<td>Jamo hangul</td>
+<td>Hangul Jamo</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">29 $ {REMOVE} $<br />
+<td rowspan="3">29${REMOVE}$<br />
 </td>
 <td>1E00 - 1EFF</td>
-<td>Informazioni aggiuntive sull'estensione Latin</td>
+<td>Latin Extended Additional</td>
 </tr>
 <tr class="even">
 <td>2C60 - 2C7F</td>
-<td>Latino esteso-C</td>
+<td>Alfabeto latino esteso-C</td>
 
 </tr>
 <tr class="odd">
-<td>A720-A7FF</td>
-<td>Latino esteso D</td>
+<td>A720 - A7FF</td>
+<td>Latino esteso-D</td>
 
 </tr>
 <tr class="even">
@@ -244,7 +244,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Greco esteso</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">31 $ {REMOVE} $<br />
+<td rowspan="2">31${REMOVE}$<br />
 </td>
 <td>2000 - 206F</td>
 <td>Punteggiatura generale</td>
@@ -257,7 +257,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="odd">
 <td>32</td>
 <td>2070 - 209F</td>
-<td>Apici e pedici</td>
+<td>Apici e pedice</td>
 </tr>
 <tr class="even">
 <td>33</td>
@@ -272,36 +272,36 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>35</td>
 <td>2100 - 214F</td>
-<td>Simboli alfabetici</td>
+<td>Simboli simili a lettere</td>
 </tr>
 <tr class="odd">
 <td>36</td>
 <td>2150 - 218F</td>
-<td>Formati numerici</td>
+<td>Moduli numerici</td>
 </tr>
 <tr class="even">
-<td rowspan="4">37 $ {REMOVE} $<br />
+<td rowspan="4">37${REMOVE}$<br />
 </td>
 <td>2190 - 21FF</td>
 <td>Frecce</td>
 </tr>
 <tr class="odd">
 <td>27F0 - 27FF</td>
-<td>Frecce aggiuntive-A</td>
+<td>Frecce supplementari-A</td>
 
 </tr>
 <tr class="even">
 <td>2900 - 297F</td>
-<td>Frecce aggiuntive-B</td>
+<td>Frecce supplementari-B</td>
 
 </tr>
 <tr class="odd">
 <td>2B00 - 2BFF</td>
-<td>Simboli e frecce varie</td>
+<td>Simboli e frecce vari</td>
 
 </tr>
 <tr class="even">
-<td rowspan="4">38 $ {REMOVE} $<br />
+<td rowspan="4">38${REMOVE}$<br />
 </td>
 <td>2200 - 22FF</td>
 <td>Operatori matematici</td>
@@ -334,7 +334,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>41</td>
 <td>2440 - 245F</td>
-<td>Riconoscimento ottico di caratteri</td>
+<td>Riconoscimento ottico dei caratteri</td>
 </tr>
 <tr class="odd">
 <td>42</td>
@@ -344,12 +344,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>43</td>
 <td>2500 - 257F</td>
-<td>Disegno box</td>
+<td>Disegno a casella</td>
 </tr>
 <tr class="odd">
 <td>44</td>
 <td>2580 - 259F</td>
-<td>Elementi Block</td>
+<td>Elementi block</td>
 </tr>
 <tr class="even">
 <td>45</td>
@@ -364,12 +364,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>47</td>
 <td>2700 - 27BF</td>
-<td>Dingbat</td>
+<td>Dingbats</td>
 </tr>
 <tr class="odd">
 <td>48</td>
 <td>3000 - 303F</td>
-<td>Simboli e punteggiatura CJK</td>
+<td>Simboli E punteggiatura CJK</td>
 </tr>
 <tr class="even">
 <td>49</td>
@@ -377,36 +377,36 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Hiragana</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">50 $ {REMOVE} $<br />
+<td rowspan="2">50${REMOVE}$<br />
 </td>
 <td>30A0 - 30FF</td>
 <td>Katakana</td>
 </tr>
 <tr class="even">
 <td>31F0 - 31FF</td>
-<td>Estensioni fonetiche katakana</td>
+<td>Estensioni fonetiche Katakana</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="2">51 $ {REMOVE} $<br />
+<td rowspan="2">51${REMOVE}$<br />
 </td>
 <td>3100 - 312F</td>
 <td>Bopomofo</td>
 </tr>
 <tr class="even">
 <td>31A0 - 31BF</td>
-<td>Bopomofo esteso</td>
+<td>Bopomofo Esteso</td>
 
 </tr>
 <tr class="odd">
 <td>52</td>
 <td>3130 - 318F</td>
-<td>Compatibilità Hangul Jamo</td>
+<td>Jamo di compatibilità Hangul</td>
 </tr>
 <tr class="even">
 <td>53</td>
 <td>A840 - A87F</td>
-<td>Carattere phags-pa</td>
+<td>Phags-pa</td>
 </tr>
 <tr class="odd">
 <td>54</td>
@@ -421,32 +421,32 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="odd">
 <td>56</td>
 <td>AC00 - D7AF</td>
-<td>Sillabe hangul</td>
+<td>Sillabe Hangul</td>
 </tr>
 <tr class="even">
 <td>57</td>
-<td>D800-DFFF</td>
-<td>Non piano 0. Si noti che l'impostazione di questo bit implica che esiste almeno un punto di codice supplementare oltre il piano multilingue di base (BMP) supportato da questo tipo di carattere. Vedere <a href="surrogates-and-supplementary-characters.md">surrogati e caratteri supplementari</a>.</td>
+<td>D800 - DFFF</td>
+<td>Non piano 0. Si noti che l'impostazione di questo bit implica che esiste almeno un punto di codice supplementare oltre il piano BMP (Basic Multilingual Plane) supportato da questo tipo di carattere. Vedere <a href="surrogates-and-supplementary-characters.md">Surrogati e caratteri supplementari.</a></td>
 </tr>
 <tr class="odd">
 <td>58</td>
-<td>10900-1091F</td>
-<td>Fenicio</td>
+<td>10900 - 1091F</td>
+<td>Fenicia</td>
 </tr>
 <tr class="even">
-<td rowspan="7">59 $ {REMOVE} $<br />
+<td rowspan="7">59${REMOVE}$<br />
 </td>
 <td>2E80 - 2EFF</td>
-<td>Complemento ai radicali CJK</td>
+<td>Supplemento per CJK Radicals</td>
 </tr>
 <tr class="odd">
 <td>2F00 - 2FDF</td>
-<td>Radicali Kangxi</td>
+<td>Kangxi Radicals</td>
 
 </tr>
 <tr class="even">
 <td>2FF0 - 2FFF</td>
-<td>Caratteri di descrizione ideogrammi</td>
+<td>Caratteri di descrizione ideografica</td>
 
 </tr>
 <tr class="odd">
@@ -456,80 +456,80 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="even">
 <td>3400 - 4DBF</td>
-<td>Ideogrammi Unificati CJK estensione A</td>
+<td>Estensione ideografi unificati CJK A</td>
 
 </tr>
 <tr class="odd">
 <td>4E00 - 9FFF</td>
-<td>Ideogrammi Unificati CJK</td>
+<td>Ideografi unificati CJK</td>
 
 </tr>
 <tr class="even">
-<td>20000-2A6DF</td>
-<td>CJK Unified ideogrammi Extension B</td>
+<td>20000 - 2A6DF</td>
+<td>Estensione CJK Unified Ideographs B</td>
 
 </tr>
 <tr class="odd">
 <td>60</td>
 <td>E000 - F8FF</td>
-<td>Area uso privato</td>
+<td>Area di utilizzo privato</td>
 </tr>
 <tr class="even">
-<td rowspan="3">61 $ {REMOVE} $<br />
+<td rowspan="3">61${REMOVE}$<br />
 </td>
 <td>31C0 - 31EF</td>
 <td>Tratti CJK</td>
 </tr>
 <tr class="odd">
 <td>F900 - FAFF</td>
-<td>Ideogrammi di compatibilità CJK</td>
+<td>Ideografi di compatibilità CJK</td>
 
 </tr>
 <tr class="even">
 <td>2F800 - 2FA1F</td>
-<td>Complemento ideogrammi compatibilità CJK</td>
+<td>Supplemento ideografi per la compatibilità CJK</td>
 
 </tr>
 <tr class="odd">
 <td>62</td>
 <td>FB00 - FB4F</td>
-<td>Moduli di presentazione alfabetica</td>
+<td>Moduli di presentazione alfabetici</td>
 </tr>
 <tr class="even">
 <td>63</td>
 <td>FB50 - FDFF</td>
-<td>Moduli di presentazione araba-A</td>
+<td>Moduli di presentazione arabo-A</td>
 </tr>
 <tr class="odd">
 <td>64</td>
 <td>FE20 - FE2F</td>
-<td>Combinazione di metà segni</td>
+<td>Combinazione di mezzi contrassegni</td>
 </tr>
 <tr class="even">
-<td rowspan="2">65 $ {REMOVE} $<br />
+<td rowspan="2">65${REMOVE}$<br />
 </td>
 <td>FE10 - FE1F</td>
 <td>Moduli verticali</td>
 </tr>
 <tr class="odd">
 <td>FE30 - FE4F</td>
-<td>Moduli per la compatibilità con CJK</td>
+<td>Moduli di compatibilità CJK</td>
 
 </tr>
 <tr class="even">
 <td>66</td>
 <td>FE50 - FE6F</td>
-<td>Varianti di formato ridotto</td>
+<td>Varianti di forma di piccole dimensioni</td>
 </tr>
 <tr class="odd">
 <td>67</td>
 <td>FE70 - FEFF</td>
-<td>Moduli per la presentazione araba-B</td>
+<td>Moduli di presentazione arabo-B</td>
 </tr>
 <tr class="even">
 <td>68</td>
 <td>FF00 - FFEF</td>
-<td>Moduli carattere e fullwidth</td>
+<td>Forme halfwidth e fullwidth</td>
 </tr>
 <tr class="odd">
 <td>69</td>
@@ -562,19 +562,19 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Myanmar</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">75 $ {REMOVE} $<br />
+<td rowspan="3">75${REMOVE}$<br />
 </td>
 <td>1200 - 137F</td>
 <td>Etiope</td>
 </tr>
 <tr class="even">
-<td>1380-139F</td>
-<td>Supplemento etiope</td>
+<td>1380 - 139F</td>
+<td>Supplemento etiopic</td>
 
 </tr>
 <tr class="odd">
 <td>2D80 - 2DDF</td>
-<td>Etiope esteso</td>
+<td>Ethiopic Extended</td>
 
 </tr>
 <tr class="even">
@@ -590,15 +590,15 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>78</td>
 <td>1680 - 169F</td>
-<td>Ogamico</td>
+<td>Ogham</td>
 </tr>
 <tr class="odd">
 <td>79</td>
 <td>16A0 - 16FF</td>
-<td>Runico</td>
+<td>Runic</td>
 </tr>
 <tr class="even">
-<td rowspan="2">80 $ {REMOVE} $<br />
+<td rowspan="2">80${REMOVE}$<br />
 </td>
 <td>1780 - 17FF</td>
 <td>Khmer</td>
@@ -616,21 +616,21 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="odd">
 <td>82</td>
 <td>2800 - 28FF</td>
-<td>Modelli Braille</td>
+<td>Modelli braille</td>
 </tr>
 <tr class="even">
-<td rowspan="2">83 $ {REMOVE} $<br />
+<td rowspan="2">83${REMOVE}$<br />
 </td>
 <td>A000 - A48F</td>
-<td>Sillabe di Yi</td>
+<td>Sillabe Yi</td>
 </tr>
 <tr class="odd">
 <td>A490 - A4CF</td>
-<td>Radicali Yi</td>
+<td>Yi Radicals</td>
 
 </tr>
 <tr class="even">
-<td rowspan="4">84 $ {REMOVE} $<br />
+<td rowspan="4">84${REMOVE}$<br />
 </td>
 <td>1700 - 171F</td>
 <td>Tagalog</td>
@@ -652,21 +652,21 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="even">
 <td>85</td>
-<td>10300-1032F</td>
+<td>10300 - 1032F</td>
 <td>Corsivo precedente</td>
 </tr>
 <tr class="odd">
 <td>86</td>
-<td>10330-1034F</td>
-<td>Gothic</td>
+<td>10330 - 1034F</td>
+<td>Gotico</td>
 </tr>
 <tr class="even">
 <td>87</td>
-<td>10400-1044F</td>
+<td>10400 - 1044F</td>
 <td>Deseret</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">88 $ {REMOVE} $<br />
+<td rowspan="3">88${REMOVE}$<br />
 </td>
 <td>1D000 - 1D0FF</td>
 <td>Simboli musicali bizantini</td>
@@ -678,7 +678,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="odd">
 <td>1D200 - 1D24F</td>
-<td>Notazione musicale greca antica</td>
+<td>Notazione musicale greco</td>
 
 </tr>
 <tr class="even">
@@ -687,25 +687,25 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Simboli alfanumerici matematici</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">90 $ {REMOVE} $<br />
+<td rowspan="2">90${REMOVE}$<br />
 </td>
 <td>FF000 - FFFFD</td>
 <td>Uso privato (piano 15)</td>
 </tr>
 <tr class="even">
-<td>100000-10FFFD</td>
+<td>100000 - 10FFFD</td>
 <td>Uso privato (piano 16)</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="2">91 $ {REMOVE} $<br />
+<td rowspan="2">91${REMOVE}$<br />
 </td>
 <td>FE00 - FE0F</td>
 <td>Selettori di variazione</td>
 </tr>
 <tr class="even">
 <td>E0100 - E01EF</td>
-<td>Supplemento per i selettori di variazione</td>
+<td>Supplemento ai selettori di variazione</td>
 
 </tr>
 <tr class="odd">
@@ -721,12 +721,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="odd">
 <td>94</td>
 <td>1950 - 197F</td>
-<td>Tai le</td>
+<td>Tai Le</td>
 </tr>
 <tr class="even">
 <td>95</td>
-<td>1980-19DF</td>
-<td>Nuovo tai lue</td>
+<td>1980 - 19DF</td>
+<td>Nuovo Tai Lue</td>
 </tr>
 <tr class="odd">
 <td>96</td>
@@ -740,69 +740,69 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="odd">
 <td>98</td>
-<td>2D30-2D7F</td>
+<td>2D30 - 2D7F</td>
 <td>Tifinagh</td>
 </tr>
 <tr class="even">
 <td>99</td>
 <td>4DC0 - 4DFF</td>
-<td>Simboli esagrammi esagrammi</td>
+<td>Simboli hexagram di Yijing</td>
 </tr>
 <tr class="odd">
 <td>100</td>
-<td>A800-A82F</td>
-<td>Nagri Carattere syloti nagri</td>
+<td>A800 - A82F</td>
+<td>Syloti Nagri</td>
 </tr>
 <tr class="even">
-<td rowspan="3">101 $ {REMOVE} $<br />
+<td rowspan="3">101${REMOVE}$<br />
 </td>
-<td>10000-1007F</td>
-<td>Sillabario B lineare</td>
+<td>10000 - 1007F</td>
+<td>Linear B Syllabary</td>
 </tr>
 <tr class="odd">
-<td>10080-100FF</td>
-<td>Degli ideogrammi lineare B</td>
+<td>10080 - 100FF</td>
+<td>Ideogrammi lineari B</td>
 
 </tr>
 <tr class="even">
-<td>10100-1013F</td>
-<td>Numeri Aegean</td>
+<td>10100 - 1013F</td>
+<td>Numeri egei</td>
 
 </tr>
 <tr class="odd">
 <td>102</td>
-<td>10140-1018F</td>
-<td>Numeri greci antichi</td>
+<td>10140 - 1018F</td>
+<td>Numeri greco greco</td>
 </tr>
 <tr class="even">
 <td>103</td>
-<td>10380-1039F</td>
+<td>10380 - 1039F</td>
 <td>Ugaritico</td>
 </tr>
 <tr class="odd">
 <td>104</td>
 <td>103A0 - 103DF</td>
-<td>Persiano precedente</td>
+<td>Old Persian</td>
 </tr>
 <tr class="even">
 <td>105</td>
-<td>10450-1047F</td>
-<td>L'shaviano</td>
+<td>10450 - 1047F</td>
+<td>Sha shae</td>
 </tr>
 <tr class="odd">
 <td>106</td>
-<td>10480-104AF</td>
-<td>Osmanya</td>
+<td>10480 - 104AF</td>
+<td>Osmascher</td>
 </tr>
 <tr class="even">
 <td>107</td>
-<td>10800-1083F</td>
-<td>Sillabario cipriota</td>
+<td>10800 - 1083F</td>
+<td>Sillabara cipriota</td>
 </tr>
 <tr class="odd">
 <td>108</td>
 <td>10A00 - 10A5F</td>
-<td>Kharoshthi</td>
+<td>Gharoshthi</td>
 </tr>
 <tr class="even">
 <td>109</td>
@@ -810,20 +810,20 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <td>Simboli Tai Xuan Jing</td>
 </tr>
 <tr class="odd">
-<td rowspan="2">110 $ {REMOVE} $<br />
+<td rowspan="2">110${REMOVE}$<br />
 </td>
-<td>12000-123FF</td>
+<td>12000 - 123FF</td>
 <td>Cuneiforme</td>
 </tr>
 <tr class="even">
-<td>12400-1247F</td>
-<td>Numeri e punteggiatura cuneiforme</td>
+<td>12400 - 1247F</td>
+<td>Numeri cuneiformi e punteggiatura</td>
 
 </tr>
 <tr class="odd">
 <td>111</td>
 <td>1D360 - 1D37F</td>
-<td>Conteggio dei numeri di asta</td>
+<td>Conteggio dei numeri dell'asta</td>
 </tr>
 <tr class="even">
 <td>112</td>
@@ -838,7 +838,7 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="even">
 <td>114</td>
 <td>1C50 - 1C7F</td>
-<td>Chiki OL</td>
+<td>Ol Chiki</td>
 </tr>
 <tr class="odd">
 <td>115</td>
@@ -847,12 +847,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="even">
 <td>116</td>
-<td>A900-A92F</td>
+<td>A900 - A92F</td>
 <td>Kayah Li</td>
 </tr>
 <tr class="odd">
 <td>117</td>
-<td>A930-A95F</td>
+<td>A930 - A95F</td>
 <td>Rejang</td>
 </tr>
 <tr class="even">
@@ -862,18 +862,18 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 </tr>
 <tr class="odd">
 <td>119</td>
-<td>10190-101CF</td>
-<td>Simboli antichi</td>
+<td>10190 - 101CF</td>
+<td>Simboli di simboli di simboli</td>
 </tr>
 <tr class="even">
 <td>120</td>
 <td>101D0 - 101FF</td>
-<td>Disco Festo</td>
+<td>Disco Phaistos</td>
 </tr>
 <tr class="odd">
-<td rowspan="3">121 $ {REMOVE} $<br />
+<td rowspan="3">121${REMOVE}$<br />
 </td>
-<td>10280-1029F</td>
+<td>10280 - 1029F</td>
 <td>Lycian</td>
 </tr>
 <tr class="even">
@@ -882,19 +882,19 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 
 </tr>
 <tr class="odd">
-<td>10920-1093F</td>
+<td>10920 - 1093F</td>
 <td>Lydian</td>
 
 </tr>
 <tr class="even">
-<td rowspan="2">122 $ {REMOVE} $<br />
+<td rowspan="2">122${REMOVE}$<br />
 </td>
 <td>1F000 - 1F02F</td>
 <td>Riquadri Mahjong</td>
 </tr>
 <tr class="odd">
 <td>1F030 - 1F09F</td>
-<td>Tessere domino</td>
+<td>Tessere Domino</td>
 
 </tr>
 <tr class="even">
@@ -905,12 +905,12 @@ Il subset Unicode campi (USBs) viene utilizzato nelle strutture [**FONTSIGNATURE
 <tr class="odd">
 <td>124</td>
 
-<td><strong>Windows 2000 e versioni successive:</strong> Stato del layout, verticale prima dell'orizzontale</td>
+<td><strong>Windows 2000 e versioni successive:</strong> Avanzamento del layout, verticale prima dell'orizzontale</td>
 </tr>
 <tr class="even">
 <td>125</td>
 
-<td><strong>Windows 2000 e versioni successive:</strong> Stato del layout, dal basso verso l'alto verticale</td>
+<td><strong>Windows 2000 e versioni successive:</strong> Stato del layout, verticale dal basso verso l'alto</td>
 </tr>
 <tr class="odd">
 <td>126-127</td>

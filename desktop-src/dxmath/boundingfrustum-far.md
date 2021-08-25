@@ -1,19 +1,19 @@
 ---
-description: Distanza del piano lontano dall'origine del BoundingFrustum.
+description: Distanza del piano lontano dall'origine di BoundingFrustum.
 ms.assetid: 2ea59565-d5be-4f9e-bf67-47e7d1335bae
-title: BoundingFrustum. lontano (DirectXCollision. h)
+title: BoundingFrustum.Far (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be1e81960a4abb39d8543c86f00006f2f3fcb377
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f45f208c235a1e711f7983f604ef3719bfb32d20514a64431cafb3a39b3c11cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740931"
 ---
-# <a name="boundingfrustumfar"></a>BoundingFrustum. lontano
+# <a name="boundingfrustumfar"></a>BoundingFrustum.Far
 
-Distanza del piano lontano dall'origine del [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Distanza del piano lontano dall'origine di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 **Riferimento**
 </dt> <dt>
 
-[**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
+[**Boundingfrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Recupera le proprietà supportate da un oggetto.
+description: Recupera le proprietà supportate da un oggetto .
 ms.assetid: 842bd4d6-0824-4597-bb5d-9ef8769055fb
-title: Comando WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED (PortableDevice. h)
+title: WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED comando (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,30 +13,30 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: bd816e1dc4ce9c3cbb1fb3c0b118004983baea54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5020494658f380abc465a9059544131174edc8c417f69f6322636e6c9d4170d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703981"
 ---
-# <a name="wpd_command_object_properties_get_supported-command"></a>\_Comando WPD \_ Proprietà oggetto comando \_ \_ get \_ supported
+# <a name="wpd_command_object_properties_get_supported-command"></a>COMANDO GET \_ SUPPORTED PROPERTIES \_ \_ \_ DELL'OGGETTO \_ COMANDO WPD
 
-Il **comando \_ WPD \_ Proprietà oggetto comando \_ \_ get \_ supported** recupera le proprietà supportate da un oggetto.
+Il **comando WPD \_ COMMAND OBJECT PROPERTIES GET \_ \_ \_ \_ SUPPORTED** recupera le proprietà supportate da un oggetto.
 
-## <a name="command-category"></a>Categoria comando
+## <a name="command-category"></a>Categoria di comandi
 
-**\_proprietà dell' \_ oggetto \_ categoria WPD**
+**PROPRIETÀ DELL'OGGETTO CATEGORIA WPD \_ \_ \_**
 
 ## <a name="parameters"></a>Parametri
 
-Il driver prevede il seguente parametro.
+Il driver prevede il parametro seguente.
 
 
 
 | Parametro                                         | VarType        | Descrizione                                                            |
 |---------------------------------------------------|----------------|------------------------------------------------------------------------|
-| **\_ \_ \_ \_ ID oggetto proprietà oggetto proprietà \_ WPD** | **\_LPWSTR VT** | Obbligatorio. ID dell'oggetto che contiene le proprietà richieste. |
+| **ID OGGETTO PROPRIETÀ OGGETTO PROPRIETÀ WPD \_ \_ \_ \_ \_** | **VT \_ LPWSTR** | Obbligatorio. ID dell'oggetto che contiene le proprietà richieste. |
 
 
 
@@ -50,9 +50,9 @@ Il driver dovrebbe restituire i risultati seguenti.
 
 | Risultato                                                | VarType         | Descrizione                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **proprietà \_ \_ oggetto proprietà \_ WPD \_ \_ chiavi proprietà** | **VT \_ sconosciuto** | Obbligatorio. Interfaccia [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) che specifica tutte le proprietà supportate.                                                                                                                                                                                                            |
-| **\_ \_ HRESULT comune della proprietà WPD \_**                    | **\_errore VT**   | Obbligatorio. Valore **HRESULT** che indica l'esito positivo o negativo complessivo. I possibili valori dei risultati includono i [codici di errore dei dispositivi portatili Windows](error-constants.md). Se il chiamante esegue una richiesta non valida, il driver deve restituire **HRESULT \_ da \_ Win32 (errore \_ non \_ supportato)** , ma in caso contrario non è necessario per restituire altri valori di risultato. |
-| **\_codice di \_ \_ errore del driver comune della proprietà \_ WPD \_**        | **\_UI4 VT**     | facoltativo. Codice di errore specifico del driver. Questa operazione viene in genere usata solo per i test di driver o se il driver, il dispositivo e il client sono tutti progettati insieme.                                                                                                                                                                                                |
+| **CHIAVI DI PROPRIETÀ \_ \_ DELL'OGGETTO \_ PROPRIETÀ \_ \_ WPD** | **VT \_ UNKNOWN** | Obbligatorio. Interfaccia [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) che specifica tutte le proprietà supportate.                                                                                                                                                                                                            |
+| **HRESULT COMUNE \_ DELLA \_ PROPRIETÀ WPD \_**                    | **ERRORE \_ VT**   | Obbligatorio. Valore **HRESULT** che indica l'esito positivo o negativo complessivo. I possibili valori di risultato [includono Windows di errore di Dispositivi portatili](error-constants.md). Se il chiamante effettua una richiesta non valida, il driver deve restituire **HRESULT \_ FROM \_ WIN32(ERROR \_ NOT \_ SUPPORTED),** ma in caso contrario non è necessario per restituire qualsiasi altro valore di risultato. |
+| **CODICE DI ERRORE COMUNE \_ \_ DEL DRIVER DELLA \_ \_ PROPRIETÀ \_ WPD**        | **Interfaccia utente \_ VT4**     | facoltativo. Codice di errore specifico del driver. Viene in genere usato solo per il test del driver o se il driver, il dispositivo e il client sono tutti progettati insieme.                                                                                                                                                                                                |
 
 
 
@@ -64,7 +64,7 @@ Il driver dovrebbe restituire i risultati seguenti.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

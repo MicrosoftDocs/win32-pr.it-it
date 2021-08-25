@@ -1,7 +1,7 @@
 ---
-description: Definisce una coppia di algoritmi di crittografia e autenticazione 802,11 che possono essere abilitati nello stesso momento nella stazione 802,11.
+description: Definisce una coppia di algoritmi di autenticazione e crittografia 802.11 che possono essere abilitati contemporaneamente nella stazione 802.11.
 ms.assetid: 5fbe23f6-7902-46d4-a1f0-57f045d78662
-title: Struttura DOT11_AUTH_CIPHER_PAIR (wlantypes. h)
+title: DOT11_AUTH_CIPHER_PAIR struttura (Wlantypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - wlantypes.h
-ms.openlocfilehash: fd1a8ef03d5c5cb897d95b768f8ab48705098d74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84e4abde6192cf1be92b21df0c6a79125a198e0fde28e304cf583d76ea91689f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801481"
 ---
-# <a name="dot11_auth_cipher_pair-structure"></a>\_Struttura delle \_ coppie di crittografia auth DOT11 \_
+# <a name="dot11_auth_cipher_pair-structure"></a>Struttura DOT11 \_ AUTH \_ CIPHER \_ PAIR
 
-La struttura delle **\_ \_ \_ coppie di crittografia auth DOT11** definisce una coppia di algoritmi di crittografia e autenticazione 802,11 che possono essere abilitati allo stesso tempo nella stazione 802,11.
+La struttura **DOT11 \_ AUTH \_ CIPHER \_ PAIR** definisce una coppia di algoritmi di autenticazione e crittografia 802.11 che possono essere abilitati contemporaneamente nella stazione 802.11.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ typedef struct _DOT11_AUTH_CIPHER_PAIR {
 **AuthAlgoId**
 </dt> <dd>
 
-Algoritmo di autenticazione che usa un tipo enumerato dell' [**\_ \_ algoritmo**](dot11-auth-algorithm.md) di autenticazione DOT11.
+Algoritmo di autenticazione che usa un [**tipo enumerato \_ DOT11 AUTH \_ ALGORITHM.**](dot11-auth-algorithm.md)
 
 </dd> <dt>
 
 **CipherAlgoId**
 </dt> <dd>
 
-Algoritmo di crittografia che utilizza un tipo enumerato dell' [**\_ \_ algoritmo di crittografia DOT11**](dot11-cipher-algorithm.md) .
+Algoritmo di crittografia che usa un [**tipo enumerato \_ DOT11 CIPHER \_ ALGORITHM.**](dot11-cipher-algorithm.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La \_ struttura delle \_ coppie di crittografia auth DOT11 \_ definisce un algoritmo di autenticazione e crittografia che può essere abilitato insieme per le connessioni di rete di base del set di servizi (BSS).
+La struttura DOT11 AUTH CIPHER PAIR definisce un algoritmo di autenticazione e crittografia che può essere abilitato insieme per le connessioni di rete \_ \_ \_ BSS (Basic Service Set).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,10 +64,10 @@ La \_ struttura delle \_ coppie di crittografia auth DOT11 \_ definisce un algor
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista, Windows XP con \[ solo app desktop SP3\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                        |
+| Client minimo supportato<br/> | Windows Vista, Windows XP solo con app desktop SP3 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                        |
 | Componente ridistribuibile<br/>          | API LAN wireless per Windows XP con SP2<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Wlantypes. h (include Windot11. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wlantypes.h (include Windot11.h)</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ La \_ struttura delle \_ coppie di crittografia auth DOT11 \_ definisce un algor
 
 <dl> <dt>
 
-[**\_Algoritmo di autenticazione DOT11 \_**](dot11-auth-algorithm.md)
+[**ALGORITMO DI AUTENTICAZIONE DOT11 \_ \_**](dot11-auth-algorithm.md)
 </dt> <dt>
 
-[**\_Algoritmo di crittografia DOT11 \_**](dot11-cipher-algorithm.md)
+[**ALGORITMO DI CRITTOGRAFIA DOT11 \_ \_**](dot11-cipher-algorithm.md)
 </dt> </dl>
 
  

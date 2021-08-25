@@ -1,31 +1,31 @@
 ---
-title: Effetto Posterizzazione
-description: L'effetto Posterizzazione riduce il numero di colori univoci in un'immagine.
+title: Effetto Posterize
+description: L'effetto posterizza riduce il numero di colori univoci in un'immagine.
 ms.assetid: e6686998-1246-b3b7-6f4f-212568c3191c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c98c55154300f7b29c23c24e97570335c6e930f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21372ee43935441168609cc81ef053ac96fd3fdbbd7cd3c16578f13d1a47fda1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636106"
 ---
-# <a name="posterize-effect"></a>Effetto Posterizzazione
+# <a name="posterize-effect"></a>Effetto Posterize
 
-L'effetto Posterizzazione riduce il numero di colori univoci in un'immagine.
+L'effetto posterizza riduce il numero di colori univoci in un'immagine.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Posterize.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/posterize-effect.png)
+![esempio di output dell'effetto](images/posterize-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -48,9 +48,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto Posterizzazione sono definite dall'enumerazione [**d2d1 \_ posterizzazione \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop) .
+Le proprietà per l'effetto posterize sono definite [**dall'enumerazione D2D1 \_ POSTERIZE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,10 +58,10 @@ Le proprietà per l'effetto Posterizzazione sono definite dall'enumerazione [**d
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

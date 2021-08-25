@@ -1,9 +1,9 @@
 ---
-title: SinCos
+title: Sincos
 description: Restituisce il seno e il coseno di x.
 ms.assetid: 2ef9e84e-4539-47f5-9966-d8e02ca15d36
 keywords:
-- HLSL SinCos
+- sincos HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8391c2fcecc939db1d7044fe56fbd281fe3e79fc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ff2854ea4c8b956298a65107136a963c5591b91de32d108b3179772bd0043a6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673481"
 ---
-# <a name="sincos"></a>SinCos
+# <a name="sincos"></a>Sincos
 
 Restituisce il seno e il coseno di x.
 
 
 
-| SinCos (*x*, out *s*, out *c*) |
+| sincos(*x*, out *s*, out *c*) |
 |-------------------------------|
 
 
@@ -39,9 +39,9 @@ Restituisce il seno e il coseno di x.
 
 | Elemento                                                   | Descrizione                                        |
 |--------------------------------------------------------|----------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato, in radianti.<br/> |
-| <span id="s"></span><span id="S"></span>*s*<br/> | \[out \] restituisce il seno di x.<br/>          |
-| <span id="c"></span><span id="C"></span>*c*<br/> | \[out \] restituisce il coseno di x.<br/>        |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore specificato, espresso in radianti.<br/> |
+| <span id="s"></span><span id="S"></span>*s*<br/> | \[out \] Restituisce il seno di x.<br/>          |
+| <span id="c"></span><span id="C"></span>*C*<br/> | \[out \] Restituisce il coseno di x.<br/>        |
 
 
 
@@ -49,7 +49,7 @@ Restituisce il seno e il coseno di x.
 
 ## <a name="return-value"></a>Valore restituito
 
-Nessuna.
+Nessuno.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -57,15 +57,15 @@ Nessuna.
 
 | Nome | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*  | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *s*  | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
-| c    | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*  | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *s*  | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
+| c    | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -73,8 +73,8 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sì ( \_ solo vs 1 \_ 1) |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
 
 
 

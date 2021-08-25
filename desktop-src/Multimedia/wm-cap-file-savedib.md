@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_FILE_SAVEDIB (VFW. h)
-description: Il \_ messaggio WM Cap \_ file \_ SAVEDIB copia il frame corrente in un file DIB. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capFileSaveDIB.
+title: WM_CAP_FILE_SAVEDIB messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP \_ FILE \_ SAVEDIB copia il frame corrente in un file DIB. È possibile inviare questo messaggio in modo esplicito o tramite la macro capFileSaveDIB.
 ms.assetid: bf6d343b-9236-4e68-bbda-2ed6e197a5cb
 keywords:
-- WM_CAP_FILE_SAVEDIB messaggi multimediali di Windows
+- WM_CAP_FILE_SAVEDIB messaggio Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2155febfdac1b3f24133df47ce206c8e5ec33d3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66d6dd9b8675e1fb8625349afc4b3f86347d71d605407d5c99fbca291ade744d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803811"
 ---
-# <a name="wm_cap_file_savedib-message"></a>\_ \_ Messaggio SAVEDIB file WM Cap \_
+# <a name="wm_cap_file_savedib-message"></a>Messaggio \_ WM CAP FILE \_ \_ SAVEDIB
 
-Il messaggio **WM \_ Cap \_ file \_ SAVEDIB** copia il frame corrente in un file DIB. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capFileSaveDIB**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib) .
+Il **messaggio WM CAP FILE \_ \_ \_ SAVEDIB** copia il frame corrente in un file DIB. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**capFileSaveDIB.**](/windows/desktop/api/Vfw/nf-vfw-capfilesavedib)
 
 
 ```C++
@@ -38,22 +38,22 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 
 <dl> <dt>
 
-<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
+<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*Szname*
 </dt> <dd>
 
-Puntatore alla stringa con terminazione null che contiene il nome del file DIB di destinazione.
+Puntatore alla stringa con terminazione Null che contiene il nome del file DIB di destinazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
 
-Se si verifica un errore e viene impostata una funzione di callback di errore utilizzando il messaggio di errore di richiamata di [**WM \_ Cap \_ set \_ \_**](wm-cap-set-callback-error.md) , viene chiamata la funzione di callback dell'errore.
+Se si verifica un errore e viene impostata una funzione di callback di errore usando il messaggio DI ERRORE [**CALLBACK \_ SET \_ \_ SET \_ WM,**](wm-cap-set-callback-error.md) viene chiamata la funzione di callback dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Se il driver di acquisizione fornisce frame in formato compresso, questa chiamata tenta di decomprimere il frame prima di scrivere il file.
+Se il driver di acquisizione fornisce frame in un formato compresso, questa chiamata tenta di decomprimere il frame prima di scrivere il file.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Se il driver di acquisizione fornisce frame in formato compresso, questa chiamat
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

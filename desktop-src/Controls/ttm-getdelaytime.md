@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_GETDELAYTIME (COMmctrl. h)
-description: Recupera le durate iniziali, popup e reshow attualmente impostate per un controllo ToolTip.
+title: TTM_GETDELAYTIME messaggio (Commctrl.h)
+description: Recupera le durate iniziali, popup e di nuova visualizzazione attualmente impostate per un controllo descrizione comando.
 ms.assetid: f89a75ed-ba80-4741-927f-c571f3b2efe7
 keywords:
-- Controlli di Windows Message TTM_GETDELAYTIME
+- TTM_GETDELAYTIME di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff8c75f078465646333cae1f519049733a0c9f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0e63eca126477a6f602e6e23be75495319d30aa2814d2d72b8426a96c078326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769261"
 ---
-# <a name="ttm_getdelaytime-message"></a>\_Messaggio TTM GETDELAYTIME
+# <a name="ttm_getdelaytime-message"></a>Messaggio \_ TTM GETDELAYTIME
 
-Recupera le durate iniziali, popup e reshow attualmente impostate per un controllo ToolTip.
+Recupera le durate iniziali, popup e di nuova visualizzazione attualmente impostate per un controllo descrizione comando.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,15 +32,15 @@ Recupera le durate iniziali, popup e reshow attualmente impostate per un control
 *wParam* 
 </dt> <dd>
 
-Flag che specifica quale valore Duration verrà recuperato. Per il parametro è possibile specificare uno dei valori riportati di seguito:
+Flag che specifica il valore della durata che verrà recuperato. Per il parametro è possibile specificare uno dei valori riportati di seguito:
 
 
 
 | Valore                                                                                                                                                      | Significato                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TTDT_AUTOPOP"></span><span id="ttdt_autopop"></span><dl> <dt>**\_AUTOPOP TTDT**</dt> </dl> | Recuperare la quantità di tempo in cui la finestra della descrizione comando rimane visibile se il puntatore è fermo all'interno del rettangolo di delimitazione di uno strumento.<br/>      |
-| <span id="TTDT_INITIAL"></span><span id="ttdt_initial"></span><dl> <dt>**TTDT \_ iniziale**</dt> </dl> | Recuperare l'intervallo di tempo in cui il puntatore deve rimanere fermo nel rettangolo di delimitazione di uno strumento prima che venga visualizzata la finestra della descrizione comando.<br/> |
-| <span id="TTDT_RESHOW"></span><span id="ttdt_reshow"></span><dl> <dt>**TTDT \_ RImostra**</dt> </dl>    | Recuperare la quantità di tempo necessaria per la visualizzazione delle finestre di descrizione comando successive quando il puntatore passa da uno strumento all'altro.<br/>         |
+| <span id="TTDT_AUTOPOP"></span><span id="ttdt_autopop"></span><dl> <dt>**TTDT \_ AUTOPOP**</dt> </dl> | Recuperare la quantità di tempo per cui la finestra della descrizione comando rimane visibile se il puntatore è fermo all'interno del rettangolo di delimitazione di uno strumento.<br/>      |
+| <span id="TTDT_INITIAL"></span><span id="ttdt_initial"></span><dl> <dt>**TTDT \_ INITIAL**</dt> </dl> | Recuperare la quantità di tempo per cui il puntatore deve rimanere fermo all'interno del rettangolo di delimitazione di uno strumento prima che venga visualizzata la finestra della descrizione comando.<br/> |
+| <span id="TTDT_RESHOW"></span><span id="ttdt_reshow"></span><dl> <dt>**TTDT \_ RESHOW**</dt> </dl>    | Recuperare il tempo necessario per visualizzare le finestre della descrizione comando successive quando il puntatore si sposta da uno strumento a un altro.<br/>         |
 
 
 
@@ -61,9 +61,9 @@ Restituisce e il valore INT con la durata specificata in millisecondi.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Restituisce e il valore INT con la durata specificata in millisecondi.
 
 <dl> <dt>
 
-[**\_SETDELAYTIME TTM**](ttm-setdelaytime.md)
+[**TTM \_ SETDELAYTIME**](ttm-setdelaytime.md)
 </dt> </dl>
 
  

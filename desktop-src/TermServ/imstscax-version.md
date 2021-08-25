@@ -1,30 +1,30 @@
 ---
-title: Proprietà della versione IMsTscAx
+title: Proprietà IMsTscAx Version
 description: Specifica il numero di versione del controllo corrente.
 ms.assetid: 91ddeb4c-9d61-41e7-af96-95b0c4884682
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto della proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà Version
-- Servizi Desktop remoto della proprietà Version, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà Version
+- Proprietà Version Servizi Desktop remoto
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà Version
+- Proprietà Version Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà Version
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff25f274d1f076c9c4119648ccb9cc6d82f43b33
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a8911eaaf8af95e0f3ca1fde254250bcc781e71450b7d96ce8dc342b36298d88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770851"
 ---
-# <a name="imstscaxversion-property"></a>Proprietà IMsTscAx:: Version
+# <a name="imstscaxversion-property"></a>Proprietà IMsTscAx::Version
 
 Specifica il numero di versione del controllo corrente.
 
@@ -84,13 +84,13 @@ Numero di versione.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo alloca la memoria necessaria per il buffer a cui punta il parametro *pVersion* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Questo metodo alloca la memoria necessaria per il buffer a cui punta il *parametro pVersion.* La chiamata alle applicazioni C/C++ deve liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i Visual Basic client di scripting.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

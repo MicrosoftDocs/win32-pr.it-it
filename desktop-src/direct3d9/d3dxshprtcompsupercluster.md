@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c22c8a3a14fd8af3e9104889b421068c7ff1457
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 55556046c7fa8e0a8e7666a9d2dd0a20d81b5f3cf59253f499cbd7d0fba41fbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749830"
 ---
 # <a name="d3dxshprtcompsupercluster-function"></a>Funzione D3DXSHPRTCompSuperCluster
 
-Usato con i risultati compressi della versione dei vertici del simulatore di trasferimento di raggi pre-ricalcolo (PRT). Genera "supercluster", ovvero gruppi di cluster che possono essere disegnati nella stessa chiamata di disegno. Per raggruppare i cluster viene usato un algoritmo greedy che riduce al minimo il ridisegno.
+Usato con i risultati compressi della versione vertice del simulatore PRT (Pre-computed Radiance Transfer). Genera "supercluster", ovvero gruppi di cluster che possono essere disegnati nella stessa chiamata di disegno. Per raggruppare i cluster viene usato un algoritmo greedy che riduce al minimo la sovrapposizione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Puntatore a un ID cluster NumVerts (estratto da un buffer compresso).
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntatore a una mesh che rappresenta la scena composita passata al simulatore. Vedere [**ID3DXMesh**](id3dxmesh.md).
+Puntatore a una mesh che rappresenta la scena composita passata al simulatore. Vedere [**ID3DXMesh.**](id3dxmesh.md)
 
 </dd> <dt>
 
@@ -68,11 +68,11 @@ Puntatore a una mesh che rappresenta la scena composita passata al simulatore. V
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di cluster allocati per cluster super.
+Numero massimo di cluster allocati per ogni super cluster.
 
 </dd> <dt>
 
-*NumCluster* \[ Pollici\]
+*NumClusters* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**

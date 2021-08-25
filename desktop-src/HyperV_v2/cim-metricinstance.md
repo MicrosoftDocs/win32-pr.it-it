@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un'istanza di un valore di metrica e una definizione di metrica.
 ms.assetid: 4c620a7a-8b15-49ad-ae84-246e2fca175d
-title: Classe CIM_MetricInstance
+title: CIM_MetricInstance classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: defba85f46e037c226a96cfaa8ffac44b99244f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ff08757b8043e51d43079be6011b69731bdc761f22da27ff85272b95d4795c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695061"
 ---
-# <a name="cim_metricinstance-class"></a>CIM \_ MetricInstance (classe)
+# <a name="cim_metricinstance-class"></a>Classe CIM \_ MetricInstance
 
 Rappresenta un'associazione tra un'istanza di un valore di metrica e una definizione di metrica.
 
@@ -39,13 +39,13 @@ class CIM_MetricInstance : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ MetricInstance** presenta questi tipi di membri:
+La **classe CIM \_ MetricInstance** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ MetricInstance** dispone di queste proprietà.
+La **classe CIM \_ MetricInstance** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo di dati: **CIM \_ BaseMetricDefinition**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Definizione del valore della metrica.
@@ -74,7 +74,7 @@ Tipo di dati: **CIM \_ BaseMetricValue**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Valore della metrica associato alla definizione della metrica.
@@ -89,8 +89,8 @@ Valore della metrica associato alla definizione della metrica.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Valore della metrica associato alla definizione della metrica.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

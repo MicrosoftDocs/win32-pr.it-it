@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put WindowStyleEx imposta gli stili della finestra estesa.
+description: Il metodo put \_ WindowStyleEx imposta gli stili di finestra estesi.
 ms.assetid: 3c5928fe-7cd3-4e1c-9a3f-fa6d7a73dbc3
-title: Metodo CBaseControlWindow.put_WindowStyleEx (Ctlutil. h)
+title: CBaseControlWindow.put_WindowStyleEx metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ee04cf2d2b2dcaafdaf4e989fd1118abf447698
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48bdfba6b388d4595af3ba886ed97567c12f080953e238c03d8a5fb36f7a6ce4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635541"
 ---
-# <a name="cbasecontrolwindowput_windowstyleex-method"></a>CBaseControlWindow. put \_ WindowStyleEx (metodo)
+# <a name="cbasecontrolwindowput_windowstyleex-method"></a>Metodo CBaseControlWindow.put \_ WindowStyleEx
 
-Il `put_WindowStyleEx` metodo imposta gli stili della finestra estesa.
+Il `put_WindowStyleEx` metodo imposta gli stili di finestra estesi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT put_WindowStyleEx(
 
 <dl> <dt>
 
-*WindowStyleEx* \[ in\]
+*WindowStyleEx* \[ Pollici\]
 </dt> <dd>
 
 Valore che specifica lo stile della finestra del controllo.
@@ -55,18 +55,18 @@ Restituisce NOERROR.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo utilizza gli stili estesi della finestra. Per un elenco completo degli stili della finestra estesa, vedere la funzione **CreateWindowEx** di Microsoft Win32. Per modificare lo stile della finestra, recuperare lo stile della finestra corrente, quindi aggiungere o rimuovere i campi di bit necessari.
+Questo metodo usa stili di finestra estesi. Per un elenco completo degli stili di finestra estesi, vedere la funzione Microsoft Win32 **CreateWindowEx.** Per modificare lo stile della finestra, recuperare lo stile della finestra corrente e quindi aggiungere o rimuovere i campi di bit necessari.
 
-Non usare gli stili della finestra seguenti perché non vengono convalidati.
+Non usare gli stili di finestra seguenti perché non vengono convalidati.
 
--   WS \_ disabilitato
+-   WS \_ DISABILITATO
 -   WS \_ HSCROLL
--   \_icona WS
--   WS- \_ Ingrandisc
--   WS- \_ riduzione a icona
+-   WS \_ SIMBOLICO
+-   WS \_ MAXIMIZE
+-   WS \_ MINIMIZE
 -   WS \_ VSCROLL
 
-Con alcune eccezioni (indicate qui), i flag accettabili sono gli stessi di quelli consentiti dalla funzione Win32 **CreateWindow** .
+Con alcune eccezioni (qui segnalate), i flag accettabili sono gli stessi consentiti dalla funzione **Win32 CreateWindow.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Con alcune eccezioni (indicate qui), i flag accettabili sono gli stessi di quell
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

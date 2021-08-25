@@ -1,31 +1,31 @@
 ---
 title: Interfacce di query
-description: Per eseguire ricerche nella directory è possibile usare tre tipi di interfacce ADSI. L'ambiente dell'applicazione e altri requisiti possono indicare quale interfaccia viene utilizzata.
+description: Per eseguire ricerche nella directory, è possibile usare tre tipi di interfacce ADSI. L'ambiente dell'applicazione e altri requisiti possono indicare quale interfaccia viene usata.
 ms.assetid: 42843e02-b685-492e-9046-aea460e84584
 ms.tgt_platform: multiple
 keywords:
 - Interfacce di query ADSI
-- Query ADSI, interfacce di query
+- Esegue query ad ADSI, interfacce di query
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 805303a972b4a8140a9e632857287aeebca9b32f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 967f111107549fd0e6352f0e93d3a747b287c040ea7d5e6cee48415aa7f7925f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637721"
 ---
 # <a name="query-interfaces"></a>Interfacce di query
 
-Per eseguire ricerche nella directory è possibile usare tre tipi di interfacce ADSI. L'ambiente dell'applicazione e altri requisiti possono indicare quale interfaccia viene utilizzata.
+Per eseguire ricerche nella directory, è possibile usare tre tipi di interfacce ADSI. L'ambiente dell'applicazione e altri requisiti possono indicare quale interfaccia viene usata.
 
--   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch). **IDirectorySearch** è un'interfaccia com di base disponibile solo per i programmatori C/C++. Per ulteriori informazioni, vedere [ricerca con l'interfaccia IDirectorySearch](searching-with-idirectorysearch.md).
--   ADO. Le interfacce ADO (ActiveX Data Object) sono interfacce di automazione che utilizzano OLE DB. Usare ADO per le query all'interno di applicazioni che si basano sull'automazione. Sono incluse Visual Basic applicazioni, Active Server pagine e così via. Per ulteriori informazioni, vedere [ricerca con ActiveX Data Objects](searching-with-activex-data-objects-ado.md).
--   OLE DB. OLE DB è un set di interfacce C/C++ utilizzate per eseguire query sui database. Grazie al supporto di queste interfacce, i provider ADSI possono implementare funzionalità di OLE DB avanzate, ad esempio query distribuite con altri provider di OLE DB. Per ulteriori informazioni, vedere [ricerca con OLE DB](searching-with-ole-db.md).
+-   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch). **IDirectorySearch è** un'interfaccia COM di base disponibile solo per i programmatori C/C++. Per altre informazioni, vedere [Ricerca con l'interfaccia IDirectorySearch.](searching-with-idirectorysearch.md)
+-   Ado. Le ActiveX ADO (Data Object) sono interfacce di automazione che usano OLE DB. Usare ADO per le query all'interno di applicazioni che si basano su Automazione. Queste includono Visual Basic applicazioni, Active Server pagine e così via. Per altre informazioni, vedere [Ricerca con oggetti ActiveX dati.](searching-with-activex-data-objects-ado.md)
+-   OLE DB. OLE DB è un set di interfacce C/C++ usate per eseguire query nei database. Grazie al supporto di queste interfacce, i provider ADSI possono implementare funzionalità OLE DB, ad esempio query distribuite con altri provider OLE DB. Per altre informazioni, vedere [Ricerca con OLE DB](searching-with-ole-db.md).
 
- 
+ 
 
- 
+ 
 
 
 

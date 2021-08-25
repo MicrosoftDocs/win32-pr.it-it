@@ -1,19 +1,19 @@
 ---
 title: " elif"
-description: La direttiva \ Elif contrassegna una clausola facoltativa di un blocco di compilazione condizionale definito da una direttiva \ ifdef, \ ifndef o \ if.
+description: La direttiva \ elif contrassegna una clausola facoltativa di un blocco di compilazione condizionale definita da una direttiva \ ifdef, \ ifndef o \ if.
 ms.assetid: 432b8543-7e1a-411a-8191-cc0f0e4a2e86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a548cff74151dadf4a83a1e7d91ceedeafe07e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92e131d40648bcda75025087717798ceb2ad1262d680877512dbb85a451fc86e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720901"
 ---
-# <a name="elif"></a>\#elif
+# <a name="elif"></a>\#Elif
 
-La direttiva **\# Elif** contrassegna una clausola facoltativa di un blocco di compilazione condizionale definito da una direttiva **\# ifdef**, **\# ifndef** o **\# if** . La direttiva controlla la compilazione condizionale del file di risorse controllando l'espressione costante specificata. Se l'espressione costante è diversa da zero, **\# Elif** indica al compilatore di continuare l'elaborazione delle istruzioni fino alla successiva direttiva **\# endif**, **\# else** o **\# Elif** e quindi di passare all'istruzione dopo **\# endif**. Se l'espressione costante è zero, **\# Elif** indica al compilatore di passare alla successiva direttiva **\# endif**, **\# else** o **\# Elif** . È possibile utilizzare un numero qualsiasi di direttive **\# Elif** in un blocco condizionale.
+La **\# direttiva elif** contrassegna una clausola facoltativa di un blocco di compilazione condizionale definita da una direttiva **\# ifdef**, **\# ifndef** o **\# if.** La direttiva controlla la compilazione condizionale del file di risorse controllando l'espressione costante specificata. Se l'espressione costante è diversa da zero, **\# elif** indica al compilatore di continuare a elaborare le istruzioni fino alla successiva direttiva **\# endif**, **\# else** o **\# elif** e quindi di passare all'istruzione dopo **\# endif**. Se l'espressione costante è zero, **\# elif** indica al compilatore di passare alla direttiva **\# endif**, **\# else** o **\# elif** successiva. È possibile usare qualsiasi numero di **\# direttive elif** in un blocco condizionale.
 
 ``` syntax
 #elif constant-expression
@@ -21,16 +21,16 @@ La direttiva **\# Elif** contrassegna una clausola facoltativa di un blocco di c
 
 <dl> <dt>
 
-<span id="constant-expression"></span><span id="CONSTANT-EXPRESSION"></span>*espressione costante*
+<span id="constant-expression"></span><span id="CONSTANT-EXPRESSION"></span>*constant-expression*
 </dt> <dd>
 
-Espressione da controllare. Questo valore è un nome definito, una costante Integer o un'espressione costituita da nomi, numeri interi e operatori aritmetici e relazionali.
+Espressione da controllare. Questo valore è un nome definito, una costante integer o un'espressione costituita da nomi, numeri interi e operatori aritmetici e relazionali.
 
 </dd> </dl>
 
 ## <a name="example"></a>Esempio
 
-In questo esempio, **\# Elif** indica al compilatore di elaborare la seconda istruzione [**bitmap**](bitmap-resource.md) solo se il valore assegnato alla versione del nome è minore di 7. La direttiva **\# Elif** viene elaborata solo se Version è maggiore o uguale a 3.
+In questo esempio elif indica al **\# compilatore** di elaborare la seconda [**istruzione BITMAP**](bitmap-resource.md) solo se il valore assegnato al nome Version è minore di 7. La **\# direttiva elif** viene elaborata solo se Version è maggiore o uguale a 3.
 
 ``` syntax
 #if Version < 3
@@ -47,9 +47,9 @@ BITMAP 1 userbox.bmp
 [Direttive per il preprocessore](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

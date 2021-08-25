@@ -1,28 +1,28 @@
 ---
-title: Lettura dell'utente che non può modificare la password (provider WinNT)
-description: Informazioni su come determinare se un utente è autorizzato a modificare una password per il provider WinNT. La possibilità di un utente di modificare una password può essere concessa o negata.
+title: Lettura dell'utente non è possibile modificare la password (provider WinNT)
+description: Informazioni su come determinare se un utente ha l'autorizzazione per modificare una password per il provider WinNT. La possibilità di un utente di modificare una password può essere concessa o negata.
 ms.assetid: b8b8de00-0def-4506-ab73-d03a7e06256d
 ms.tgt_platform: multiple
 keywords:
-- Lettura dell'utente non è in grado di modificare la password (provider WinNT) ADSI
-- L'utente non può modificare la password (provider WinNT) ADSI, lettura
-- Provider WINNT ADSI, esempi di gestione degli utenti,Utente non può modificare la password,lettura
+- Lettura dell'utente non è possibile modificare la password (provider WinNT) ADSI
+- L'utente non può modificare la password (provider WinNT) ADSI , lettura
+- Provider WinNT ADSI, esempi di gestione utenti,Utente non può modificare la password,lettura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd075bfb6700779b60f9e578a4e89957487a2646
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 761a1ef0a332f1cdfd7dad1b20426b749618ed2286832c7ff16b207cee57c176
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637551"
 ---
-# <a name="reading-user-cannot-change-password-winnt-provider"></a>Lettura dell'utente che non può modificare la password (provider WinNT)
+# <a name="reading-user-cannot-change-password-winnt-provider"></a>Lettura dell'utente non è possibile modificare la password (provider WinNT)
 
-La possibilità di un utente di modificare la propria password è un'autorizzazione che può essere concessa o negata. Per determinare se all'utente è stata concessa questa autorizzazione con il provider WinNT, leggere il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** dell'oggetto utente. Il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** è definito nell'enumerazione [**ADS \_ USER FLAG \_ \_ ENUM.**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum)
+La possibilità di un utente di modificare la propria password è un'autorizzazione che può essere concessa o negata. Per determinare se all'utente è stata concessa questa autorizzazione con il provider WinNT, leggere il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** dell'oggetto utente. Il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** è definito nell'enumerazione [**ADS \_ USER FLAG \_ \_ ENUM.**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum)
 
 ## <a name="example-code"></a>Codice di esempio
 
-Nell'esempio di codice seguente viene illustrato come ottenere il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
+L'esempio di codice seguente illustra come ottenere il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
 
 
 ```VB
@@ -56,7 +56,7 @@ End Function
 
 
 
-Nell'esempio di codice seguente viene illustrato come ottenere il flag **\_ ADS UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
+L'esempio di codice seguente illustra come ottenere il flag **ADS \_ UF \_ PASSWD \_ CANT \_ CHANGE** della **proprietà userFlags** di un oggetto utente.
 
 
 ```C++

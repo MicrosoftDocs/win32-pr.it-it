@@ -1,7 +1,7 @@
 ---
-description: Rappresenta i dati dell'impostazione della funzionalità di sicurezza.
+description: Rappresenta i dati delle impostazioni delle funzionalità di sicurezza.
 ms.assetid: 98e0de24-ccdc-4fc7-86a5-b68d454fde9d
-title: Classe Msvm_EthernetSwitchPortSecuritySettingData
+title: Msvm_EthernetSwitchPortSecuritySettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -31,18 +31,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8d37913f015a3ffbfaa751a7bbb10f79cea2fb39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214a86513462e70025f0bcb6403faecc3b6663463dbef8c4cb9d1ea60a9c8f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681441"
 ---
-# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>\_Classe MSVM EthernetSwitchPortSecuritySettingData
+# <a name="msvm_ethernetswitchportsecuritysettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortSecuritySettingData
 
-Rappresenta i dati dell'impostazione della funzionalità di sicurezza.
+Rappresenta i dati delle impostazioni delle funzionalità di sicurezza.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,97 +73,97 @@ class Msvm_EthernetSwitchPortSecuritySettingData : Msvm_EthernetSwitchPortFeatur
 
 ## <a name="members"></a>Members
 
-La **classe \_ EthernetSwitchPortSecuritySettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ EthernetSwitchPortSecuritySettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ EthernetSwitchPortSecuritySettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ EthernetSwitchPortSecuritySettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **AllowIeeePriorityTag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Specifica se il traffico verso/dalla porta mantiene le informazioni 802.1 P. Contiene **true** se il traffico verso/dalla porta mantiene le informazioni 802.1 p o **false** in caso contrario. Il valore predefinito è **False**.
+Specifica se il traffico da e verso la porta mantiene le informazioni 802.1P. Contiene **True se** il traffico da e verso la porta mantiene le informazioni 802.1P o False in caso **contrario.** Il valore predefinito è **False**.
 
 </dd> <dt>
 
 **AllowMacSpoofing**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se la porta consentirà lo spoofing degli indirizzi MAC. Se questa proprietà è **true**, la porta consentirà lo spoofing degli indirizzi Mac. Sono consentiti tutti i valori di indirizzi MAC unicast validi. Se questa proprietà è **false**, la porta consentirà l'utilizzo solo degli indirizzi MAC configurati all'interno della gestione di Hyper-V. Il valore predefinito è **False**.
+Indica se la porta consentirà lo spoofing MAC. Se questa proprietà è **True,** la porta consentirà lo spoofing degli indirizzi MAC. Sono consentiti tutti i valori di indirizzo MAC unicast validi. Se questa proprietà è **False,** la porta consentirà l'uso solo degli indirizzi MAC configurati all'interno della gestione di Hyper-V. Il valore predefinito è **False**.
 
 </dd> <dt>
 
 **AllowTeaming**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se le schede di rete connesse alla porta possono far parte di un team. Questo vale solo per le schede di rete connesse alle macchine virtuali. Contiene **true** se gruppo NIC è consentito o **false** in caso contrario. Il valore predefinito è **False**.
+Indica se le schede di interfaccia di rete connesse alla porta possono far parte di un team. Questo vale solo per le schede di interfaccia di rete connesse alle macchine virtuali. Contiene **True se** il gruppo NIC è consentito o False in caso **contrario.** Il valore predefinito è **False**.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "impostazioni di sicurezza della porta del commutere Ethernet".
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Security Impostazioni".
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ Managed**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "rappresenta i dati dell'impostazione della funzionalità di sicurezza".
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Rappresenta i dati delle impostazioni delle funzionalità di sicurezza".
 
 </dd> <dt>
 
 **DynamicIPAddressLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (12), **InterfaceVersion** (2), **InterfaceRevision** (0)
@@ -176,45 +176,45 @@ Definisce il limite per il numero di indirizzi IP dinamici appresi. L'impostazio
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "impostazioni di sicurezza della porta del commutere Ethernet".
+Nome visualizzato per l'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su "Ethernet Switch Port Security Impostazioni".
 
 </dd> <dt>
 
 **EnableDhcpGuard**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Specifica se le offerte DHCP sono bloccate dalla porta. Contiene **true** se le offerte DHCP sono bloccate dalla porta o **false** in caso contrario. Il valore predefinito è **False**.
+Specifica se le offerte DHCP sono bloccate dalla porta. Contiene **True se** le offerte DHCP sono bloccate dalla porta o False in caso **contrario.** Il valore predefinito è **False**.
 
 </dd> <dt>
 
 **EnableFixSpeed10G**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (14), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Impostare su TRUE se la velocità a dimensione fissa 10G è abilitata altrimenti FALSE. Il valore predefinito è FALSE.
+Impostare su TRUE se la velocità fissa 10G è abilitata in caso contrario FALSE. Il valore predefinito è FALSE.
 
 > [!Note]  
 > Proprietà aggiunta in Windows 10.
@@ -226,42 +226,42 @@ Impostare su TRUE se la velocità a dimensione fissa 10G è abilitata altrimenti
 **EnableRouterGuard**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Specifica se gli annunci router e i reindirizzamenti router sono bloccati dalla porta. Contiene **true** se gli annunci router e i reindirizzamenti router sono bloccati dalla porta o **false** in caso contrario. Il valore predefinito è **False**.
+Specifica se gli annunci router e i reindirizzamenti router sono bloccati dalla porta. Contiene **True se** gli annunci router e i reindirizzamenti router sono bloccati dalla porta o False in caso **contrario.** Il valore predefinito è **False**.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **chiave**
+Qualificatori: **Chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
-**MonitorMode**
+**Modalità di monitoraggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -294,13 +294,13 @@ Indica la modalità di monitoraggio della porta.
 
 </dd> <dt>
 
-**MonitorSession**
+**Sessione di monitoraggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -313,13 +313,13 @@ Specifica l'identificatore della sessione di monitoraggio a cui appartiene quest
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore"), **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
 Riservato
@@ -334,10 +334,10 @@ Riservato
 **StormLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (11), **InterfaceVersion** (2), **InterfaceRevision** (0)
@@ -350,13 +350,13 @@ Definisce il limite di pacchetti al secondo per il traffico broadcast e multicas
 **TeamName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 Riservato per utilizzi futuri.
@@ -366,10 +366,10 @@ Riservato per utilizzi futuri.
 **TeamNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -382,10 +382,10 @@ Riservato per utilizzi futuri.
 **VirtualSubnetId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (16777215)
@@ -401,10 +401,10 @@ Specifica l'identificatore della subnet virtuale di cui la porta è membro. Il v
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

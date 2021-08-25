@@ -1,10 +1,10 @@
 ---
-title: Attributo non di sicurezza-membro-BL
-description: Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
+title: Attributo non Security-Member-BL
+description: Elenco di membri non di sicurezza per una Exchange di distribuzione.
 ms.assetid: 6f5044f5-3cab-4b92-9055-2d431efdd0f0
 ms.tgt_platform: multiple
 keywords:
-- Attributo non di sicurezza-membro-BL-schema AD
+- Schema AD non Security-Member-BL
 - Schema AD dell'attributo nonSecurityMemberBL
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2478b887e25bcdcb2ecfcb6b13b06feb50994fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 81b663f0f1acb546a4fbfac4fc90660ca1299fdb8e28c4d4ef7eef96e60a9bbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703122"
 ---
-# <a name="non-security-member-bl-attribute"></a>Attributo non di sicurezza-membro-BL
+# <a name="non-security-member-bl-attribute"></a>Attributo non Security-Member-BL
 
-Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
+Elenco di membri non di sicurezza per una Exchange di distribuzione.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Non-Security-member-BL                  |
-| LDAP-Display-Name | nonSecurityMemberBL                     |
+| CN                | Non security-Member-BL                  |
+| Ldap-Display-Name | nonSecurityMemberBL                     |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.531                  |
-| System-ID-GUID    | 52458019-ca6a-11D0-AFFF-0000f80367c1    |
+| System-Id-Guid    | 52458019-ca6a-11d0-afff-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di membri non di sicurezza per un elenco di distribuzione di Exchange.
 | ID collegamento                | 51                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

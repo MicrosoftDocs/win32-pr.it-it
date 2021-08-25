@@ -1,7 +1,7 @@
 ---
-description: Sottoclassi automaticamente e aggiunge effetti 3D a tutte le finestre di dialogo nell'applicazione.
+description: Crea automaticamente una sottoclasse e aggiunge effetti 3D a tutte le finestre di dialogo nell'applicazione.
 ms.assetid: 96555052-c564-4cc7-9b24-e527f8e2f879
-title: Ctl3dAutoSubclass (funzione)
+title: Funzione Ctl3dAutoSubclass
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 85f4c85d1d608ff97147a935806b090162f5a78a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5edc8bafb00d5444f18b61e0600fb075b6a7367c315c2ab1cfe38f911e9a84d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654611"
 ---
-# <a name="ctl3dautosubclass-function"></a>Ctl3dAutoSubclass (funzione)
+# <a name="ctl3dautosubclass-function"></a>Funzione Ctl3dAutoSubclass
 
-Sottoclassi automaticamente e aggiunge effetti 3D a tutte le finestre di dialogo nell'applicazione.
+Crea automaticamente una sottoclasse e aggiunge effetti 3D a tutte le finestre di dialogo nell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,15 +48,15 @@ Handle per l'applicazione da registrare come client.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** a meno che non esista una delle condizioni seguenti, nel qual caso restituisce **false**:
+Restituisce **TRUE** a meno che non esista una delle condizioni seguenti, nel qual caso restituisce **FALSE**:
 
--   CTL3D è in esecuzione in Windows versione 3,0 o versioni precedenti.
--   In CTL3D non è disponibile spazio nelle tabelle per l'applicazione corrente. CTL3D è in grado di servire fino a 32 applicazioni nello stesso momento.
+-   CTL3D è in esecuzione Windows versione 3.0 o precedente.
+-   CTL3D non dispone di spazio disponibile nelle tabelle per l'applicazione corrente. CTL3D può essere in grado di eseguire contemporaneamente fino a 32 applicazioni.
 -   CTL3D non è in grado di installare il relativo hook CBT.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

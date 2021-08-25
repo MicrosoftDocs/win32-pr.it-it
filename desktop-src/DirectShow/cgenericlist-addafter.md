@@ -1,7 +1,7 @@
 ---
-description: Il metodo AddAfter inserisce un elemento dopo la posizione specificata e usa i parametri "p" e "pObj".
+description: Il metodo AddAfter inserisce un elemento dopo la posizione specificata e usa i parametri 'p' e 'pObj'.
 ms.assetid: 3e1f27c5-3e04-424a-8fe3-9bfde4e3824b
-title: Metodo CGenericList. AddAfter (Wxlist. h)-p, parametri di pObj
+title: Metodo CGenericList.AddAfter (Wxlist.h) - p, pObj parameters
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fbb9553310a8ba817f90464d90226eb36371505e
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 6de0037d76e63049294b0455c8ec1fbac82963d94febb35f7c9400ec8eae9ab5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104356154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697531"
 ---
-# <a name="cgenericlistaddafter-method-wxlisth---p-pobj-parameters"></a>Metodo CGenericList. AddAfter (Wxlist. h)-p, parametri di pObj
+# <a name="cgenericlistaddafter-method-wxlisth---p-pobj-parameters"></a>Metodo CGenericList.AddAfter (Wxlist.h) - p, pObj parameters
 
 Il `AddAfter` metodo inserisce un elemento dopo la posizione specificata.
 
@@ -43,17 +43,17 @@ POSITION AddAfter(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
-Posizione dopo la quale aggiungere l'elemento. Se *p* è **null**, il metodo aggiunge l'elemento all'inizio dell'elenco.
+Posizione dopo la quale aggiungere l'elemento. Se *p* è **NULL,** il metodo aggiunge l'elemento all'inizio dell'elenco.
 
 </dd> <dt>
 
 *pObj* 
 </dt> <dd>
 
-Puntatore a un oggetto di tipo **Object** (il tipo di modello).
+Puntatore a un oggetto di tipo **OBJECT** (tipo di modello).
 
 </dd> </dl>
 
@@ -65,8 +65,8 @@ Restituisce l'indicatore di posizione dell'elemento inserito.
 
 | Requisito | Valore |
 |-|-|
-| Intestazione | Wxlist. h (include Streams. h) |
-| Libreria| Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione | Wxlist.h (includere Flussi.h) |
+| Libreria| Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

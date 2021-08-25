@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSerializedSize calcola la dimensione del buffer necessaria per mantenere un'interfaccia IPortableDeviceValues serializzata.
+description: Il metodo GetSerializedSize calcola le dimensioni del buffer necessarie per contenere un'interfaccia IPortableDeviceValues serializzata.
 ms.assetid: 12fa6ed1-ce3b-4c5d-920a-87ff693fe0ea
-title: 'Metodo IWpdSerializer:: GetSerializedSize (PortableDeviceTypes. h)'
+title: Metodo IWpdSerializer::GetSerializedSize (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7b50f7f6158145cd71125b5e5f26649712bb065b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae6b8381928c64b7d16e9f5daa4dd9fd85acd9b61c13531365d871563ef6afe0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704521"
 ---
-# <a name="iwpdserializergetserializedsize-method"></a>Metodo IWpdSerializer:: GetSerializedSize
+# <a name="iwpdserializergetserializedsize-method"></a>Metodo IWpdSerializer::GetSerializedSize
 
-Il metodo **GetSerializedSize** calcola la dimensione del buffer necessaria per mantenere un'interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) serializzata.
+Il **metodo GetSerializedSize** calcola le dimensioni del buffer necessarie per contenere un'interfaccia [**IPortableDeviceValues serializzata.**](iportabledevicevalues.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,31 +41,31 @@ HRESULT GetSerializedSize(
 
 <dl> <dt>
 
-*pSource* \[ in\]
+*pSource* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia [**IPortableDeviceValues**](iportabledevicevalues.md) la cui dimensione si desidera richiedere.
+Puntatore a [**un'interfaccia IPortableDeviceValues**](iportabledevicevalues.md) di cui si desidera richiedere le dimensioni.
 
 </dd> <dt>
 
-*pdwSize* \[ out\]
+*pdwSize* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un **valore DWORD** che indica le dimensioni del buffer necessarie per serializzare *pSource* in byte.
+Puntatore a **un valore DWORD** che indica le dimensioni del buffer necessarie per serializzare *pSource,* in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                                                            |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                       |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un argomento obbligatorio del puntatore è **null**.<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria disponibile insufficiente per creare il buffer.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                       |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>     | Un argomento del puntatore obbligatorio era **NULL.**<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria disponibile insufficiente per creare il buffer.<br/> |
 
 
 
@@ -77,8 +77,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

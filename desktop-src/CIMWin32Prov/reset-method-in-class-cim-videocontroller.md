@@ -1,8 +1,8 @@
 ---
-description: Il metodo Reset della classe CIM \_ VideoController richiede la reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe CIM \_ VideoController richiede una reimpostazione del dispositivo logico.
 ms.assetid: 4dab954d-ed0f-4620-b5a8-7e55185d0b7b
 ms.tgt_platform: multiple
-title: Reimposta il metodo della classe CIM_VideoController
+title: Metodo Reset della classe CIM_VideoController
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 03d5b8a64edf73cc7ef76847177a1e86b2efc20d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b533ce6a40e43a9febd47d3dbd31abb963a9434990c51a5ce3643642aab8928c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700711"
 ---
 # <a name="reset-method-of-the-cim_videocontroller-class"></a>Metodo Reset della classe CIM \_ VideoController
 
-Il metodo **Reset** della classe CIM \_ VideoController richiede la reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo Reset** della classe CIM \_ VideoController richiede una reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_VIDEOCONTROLLER CIM](reset-method-in-class-cim-videocontroller.md)
+[CIM \_ VideoController](reset-method-in-class-cim-videocontroller.md)
 </dt> <dt>
 
-[**\_VIDEOCONTROLLER CIM**](cim-videocontroller.md)
+[**CIM \_ VideoController**](cim-videocontroller.md)
 </dt> </dl>
 
  

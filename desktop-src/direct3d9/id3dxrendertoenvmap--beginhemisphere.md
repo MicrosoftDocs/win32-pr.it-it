@@ -1,7 +1,7 @@
 ---
-description: Avviare il rendering di una mappa dell'ambiente emisferica.
+description: Avviare il rendering di una mappa dell'ambiente emisferico.
 ms.assetid: 1150aad9-dd8c-4943-afaf-90794faaaf70
-title: 'Metodo ID3DXRenderToEnvMap:: BeginHemisphere (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::BeginHemisphere (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 96eb4bbf4cfc6cac952368337456b946f64cf711
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8fa3aaa9abff51abc88042c87a0663011775c920097febefa9c3582c4db55636
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119674771"
 ---
-# <a name="id3dxrendertoenvmapbeginhemisphere-method"></a>Metodo ID3DXRenderToEnvMap:: BeginHemisphere
+# <a name="id3dxrendertoenvmapbeginhemisphere-method"></a>Metodo ID3DXRenderToEnvMap::BeginHemisphere
 
-Avviare il rendering di una mappa dell'ambiente emisferica.
+Avviare il rendering di una mappa dell'ambiente emisferico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT BeginHemisphere(
 
 <dl> <dt>
 
-*pTexZPos* \[ in\]
+*pTexZPos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta l'area di rendering della trama positiva.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la superficie di rendering della trama positiva.
 
 </dd> <dt>
 
-*pTexZNeg* \[ in\]
+*pTexZNeg* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la superficie di rendering della trama negativa.
+Puntatore a [**un'interfaccia IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) che rappresenta la superficie di rendering negativa della trama.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Puntatore a un'interfaccia [**IDirect3DTexture9**](/windows/win32/api/d3d9helper
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL. E \_ non riescono
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL. E \_ FAIL
 
 ## <a name="remarks"></a>Commenti
 
-Per creare la faccia, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvmap--face.md) .
+Vedere [**ID3DXRenderToEnvMap::Face**](id3dxrendertoenvmap--face.md) per disegnare il viso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Per creare la faccia, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvma
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -87,7 +87,7 @@ Per creare la faccia, vedere [**ID3DXRenderToEnvMap:: Face**](id3dxrendertoenvma
 [ID3DXRenderToEnvMap](id3dxrendertoenvmap.md)
 </dt> <dt>
 
-[**ID3DXRenderToEnvMap:: end**](id3dxrendertoenvmap--end.md)
+[**ID3DXRenderToEnvMap::End**](id3dxrendertoenvmap--end.md)
 </dt> </dl>
 
  

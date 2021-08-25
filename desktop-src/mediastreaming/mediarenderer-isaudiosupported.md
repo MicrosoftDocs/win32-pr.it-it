@@ -1,11 +1,11 @@
 ---
-title: Proprietà MediaRenderer. IsAudioSupported
-description: Ottiene un valore che indica se ricevitore è in grado di riprodurre contenuto audio.
+title: MediaRenderer.IsAudioSupported - proprietà
+description: Ottiene un valore che indica se la dmr è in grado di riprodurre contenuto audio.
 ms.assetid: a1965cba-3e7c-4a81-ab1d-6d3af7826115
 keywords:
-- API di streaming multimediale della proprietà IsAudioSupported
-- API di streaming multimediale della proprietà IsAudioSupported, interfaccia MediaRenderer
-- API di streaming multimediale dell'interfaccia MediaRenderer, proprietà IsAudioSupported
+- Proprietà IsAudioSupported API Streaming multimediale
+- Proprietà IsAudioSupported API Streaming multimediale, interfaccia MediaRenderer
+- Interfaccia MediaRenderer API Streaming multimediale , proprietà IsAudioSupported
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e948e3c7b3a1c00c7a3fb5fe6a758849f060545a
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: dc3995464a71412bbd098d68a2cb4e19d65a570f35973f528b5bd2efbad5b478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104334983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720951"
 ---
-# <a name="mediarendererisaudiosupported-property"></a>Proprietà MediaRenderer. IsAudioSupported
+# <a name="mediarendererisaudiosupported-property"></a>MediaRenderer.IsAudioSupported - proprietà
 
-Ottiene un valore che indica se ricevitore è in grado di riprodurre contenuto audio.
+Ottiene un valore che indica se la dmr è in grado di riprodurre contenuto audio.
 
 Questa proprietà è di sola lettura.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_IsAudioSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_IsAudioSupported(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore booleano che è **true** se ricevitore è in grado di riprodurre contenuto audio e **false** in caso contrario.
+Valore booleano True **se** la dmr è in grado di riprodurre contenuto audio e **False** in caso contrario.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,9 +50,9 @@ Valore booleano che è **true** se ricevitore è in grado di riprodurre contenut
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

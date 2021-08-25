@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_ADDTOOL (COMmctrl. h)
-description: Registra uno strumento con un controllo ToolTip.
+title: TTM_ADDTOOL messaggio (Commctrl.h)
+description: Registra uno strumento con un controllo descrizione comando.
 ms.assetid: c974866b-20e7-45bc-914e-9dcf9af161e0
 keywords:
-- Controlli di Windows Message TTM_ADDTOOL
+- TTM_ADDTOOL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29dad3e297f8c3430f18286afa9a998eaf578a26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb66c43033e54ce51b396ff5bb11efe3b2a99e8eb2578a2e9fe4d4bc4487ccf0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769541"
 ---
-# <a name="ttm_addtool-message"></a>\_Messaggio TTM ADDTOOL
+# <a name="ttm_addtool-message"></a>TTM \_ ADDTOOL message
 
-Registra uno strumento con un controllo ToolTip.
+Registra uno strumento con un controllo descrizione comando.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,13 +37,13 @@ Registra uno strumento con un controllo ToolTip.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) contenente le informazioni necessarie al controllo ToolTip per visualizzare il testo per lo strumento. Prima di inviare questo messaggio, è necessario compilare il membro **cbSize** della struttura.
+Puntatore a una [**struttura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) contenente le informazioni necessarie al controllo descrizione comando per visualizzare il testo per lo strumento. Il **membro cbSize** di questa struttura deve essere compilato prima di inviare questo messaggio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TTM \_ ADDTOOLW** (Unicode) e **TTM \_ ADDTOOLA** (ANSI)<br/>                   |
 
 
@@ -65,13 +65,13 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 **Riferimento**
 </dt> <dt>
 
-[**\_DELTOOL TTM**](ttm-deltool.md)
+[**TTM \_ DELTOOL**](ttm-deltool.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Informazioni sui controlli ToolTip](tooltip-controls.md)
+[Informazioni sui controlli descrizione comando](tooltip-controls.md)
 </dt> </dl>
 
  

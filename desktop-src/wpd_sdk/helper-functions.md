@@ -4,12 +4,12 @@ ms.assetid: 751618ED-B54D-45F7-926C-7A554D61AC51
 title: Funzioni helper (API WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 357205a9e598b9567b5025babf73690575771e93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57fccf5edb177334a460fe5125983abbca6b5ae288f2693e0c8b14d1d9eb3254
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704741"
 ---
 # <a name="helper-functions"></a>Funzioni di supporto
 

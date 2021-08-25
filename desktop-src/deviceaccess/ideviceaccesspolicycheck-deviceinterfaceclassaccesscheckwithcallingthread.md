@@ -3,9 +3,9 @@ title: Metodo IDeviceAccessPolicyCheck DeviceInterfaceClassAccessCheckWithCallin
 description: Questa API determinerà se il token per il contesto corrente ha accesso alla classe di interfaccia del dispositivo specificata. IID 7D276FF2-CE90-4275-A2A8-9A48B10D3E0B.
 ms.assetid: D7BFE1F3-4876-4BAB-A32D-46DB533140BB
 keywords:
-- API broker Access Device Method DeviceInterfaceClassAccessCheckWithCallingThread
-- API gestore di accesso ai dispositivi del metodo DeviceInterfaceClassAccessCheckWithCallingThread, interfaccia IDeviceAccessPolicyCheck
-- API del broker di accesso ai dispositivi dell'interfaccia IDeviceAccessPolicyCheck, metodo DeviceInterfaceClassAccessCheckWithCallingThread
+- Metodo DeviceInterfaceClassAccessCheckWithCallingThread API device access broker
+- Metodo DeviceInterfaceClassAccessCheckWithCallingThread API device access broker, interfaccia IDeviceAccessPolicyCheck
+- Metodo DeviceInterfaceClassAccessCheckWithCallingThread dell'interfaccia IDeviceAccessPolicyCheck
 topic_type:
 - apiref
 api_name:
@@ -16,17 +16,17 @@ ms.topic: article
 ms.date: 02/11/2020
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 44eb44a83175cf8f735abfeb8cfec4de83f46bd2
-ms.sourcegitcommit: 01a4383738056cf3de4f45f36d98ef73d4dc694d
+ms.openlocfilehash: f279972c3b716f111fa37fc2dd01ef9184b2f804f07106f6b971358daf290c44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "106299369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635351"
 ---
-# <a name="ideviceaccesspolicycheckdeviceinterfaceclassaccesscheckwithcallingthread-method"></a>IDeviceAccessPolicyCheck::D Metodo eviceInterfaceClassAccessCheckWithCallingThread
+# <a name="ideviceaccesspolicycheckdeviceinterfaceclassaccesscheckwithcallingthread-method"></a>Metodo IDeviceAccessPolicyCheck::D eviceInterfaceClassAccessCheckWithCallingThread
 
 > [!Important]  
-> Queste interfacce non sono supportate e non devono essere usate. Usare invece le API nella Guida di riferimento per la [programmazione di API di accesso ai dispositivi](device-access-api-c---programming-reference.md) .
+> Queste interfacce non sono supportate e non devono essere usate. Usare invece le API nel API di accesso al dispositivo [di programmazione C++.](device-access-api-c---programming-reference.md)
 
 Questa API determinerà se il token per il contesto corrente ha accesso alla classe di interfaccia del dispositivo specificata. IID = 7D276FF2-CE90-4275-A2A8-9A48B10D3E0B.
 
@@ -34,8 +34,8 @@ Questa API determinerà se il token per il contesto corrente ha accesso alla cla
 
 ```C++
 HRESULT DeviceInterfaceClassAccessCheckWithCallingThread(
-  [in] PCWSTR pszDeviceInterfaceClassGuid,
-  [in] DWORD  dwClientThreadId
+  [in] PCWSTR pszDeviceInterfaceClassGuid,
+  [in] DWORD  dwClientThreadId
 );
 ```
 
@@ -43,17 +43,17 @@ HRESULT DeviceInterfaceClassAccessCheckWithCallingThread(
 
 <dl> <dt>
 
-*pszDeviceInterfaceClassGuid* \[ in\]
+*pszDeviceInterfaceClassGuid* \[ Pollici\]
 </dt> <dd>
 
-GUID della classe dell'interfaccia del dispositivo per cui è necessario controllare l'accesso.
+GUID della classe di interfaccia del dispositivo per cui verificare l'accesso.
 
 </dd> <dt>
 
-*dwClientThreadId* \[ in\]
+*dwClientThreadId* \[ Pollici\]
 </dt> <dd>
 
-ID thread del client in cui deve essere visualizzata un'interfaccia utente associata, se necessario.
+ID thread client in cui deve essere visualizzata qualsiasi interfaccia utente associata, se necessario.
 
 </dd> </dl>
 

@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_WAVE_DELETE_PARMS (Mciapi. h)
-description: La \_ \_ \_ struttura parametri per l'eliminazione di MCI Wave contiene informazioni sulla posizione per il \_ comando MCI Delete per i dispositivi audio waveform.
+title: MCI_WAVE_DELETE_PARMS struttura (Mciapi.h)
+description: La struttura MCI WAVE DELETE PARMS contiene informazioni sulla posizione per \_ \_ il comando \_ MCI DELETE per i dispositivi \_ waveform-audio.
 ms.assetid: 5c0bf0ca-773b-4b96-8b55-9ef7b5a306d9
 keywords:
-- Struttura MCI_WAVE_DELETE_PARMS di Windows Multimedia
+- MCI_WAVE_DELETE_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 286c6443a229da266dae4992687c0e9ead5640bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11633a1b6b3876f0382669856cf5971767be325906b270c4d42417e8d3f9b51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783830"
 ---
-# <a name="mci_wave_delete_parms-structure"></a>\_ \_ Struttura parametri Delete Wave MCI \_
+# <a name="mci_wave_delete_parms-structure"></a>Struttura MCI \_ WAVE \_ DELETE \_ PARMS
 
-La **struttura \_ \_ \_ parametri** per l'eliminazione di MCI Wave contiene informazioni sulla posizione per il comando [**MCI \_ Delete**](mci-delete.md) per i dispositivi audio waveform.
+La **struttura MCI \_ WAVE DELETE \_ \_ PARMS** contiene informazioni sulla posizione per il [**comando MCI \_ DELETE**](mci-delete.md) per i dispositivi waveform-audio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,27 +45,27 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola di ordine basso specifica un handle di finestra usato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
 **dwFrom**
 </dt> <dd>
 
-Posizione da cui eliminare.
+Posizione da cui eseguire l'eliminazione.
 
 </dd> <dt>
 
 **dwTo**
 </dt> <dd>
 
-Posizione da eliminare.
+Posizione in cui eliminare.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel *parametro fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**eliminazione di MCI \_**](mci-delete.md)
+[**MCI \_ DELETE**](mci-delete.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

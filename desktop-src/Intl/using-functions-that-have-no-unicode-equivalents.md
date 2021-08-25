@@ -1,21 +1,21 @@
 ---
-description: Le funzioni che non sono state implementate con una versione Unicode sono in genere sostituite da funzioni più potenti o estese che supportano Unicode.
+description: Le funzioni che non sono state implementate con una versione Unicode sono state in genere sostituite da funzioni più potenti o estese che supportano Unicode.
 ms.assetid: 9e02c8fe-4fed-4b77-9b09-35850350859a
-title: Utilizzo di funzioni senza equivalenti Unicode
+title: Uso di funzioni senza equivalenti Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0850eea442b98c81918c7c6733da65f730936be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e00781db9bce98c335c4a9071b9643ef5fdcb3716478cbffe12a5b53b33e2313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787881"
 ---
-# <a name="using-functions-that-have-no-unicode-equivalents"></a>Utilizzo di funzioni senza equivalenti Unicode
+# <a name="using-functions-that-have-no-unicode-equivalents"></a>Uso di funzioni senza equivalenti Unicode
 
-Le funzioni che non sono state implementate con una versione [Unicode](unicode.md) sono in genere sostituite da funzioni più potenti o estese che supportano Unicode. Se, ad esempio, si esegue il porting di codice che chiama la funzione [**OpenFile**](/windows/win32/api/winbase/nf-winbase-openfile) , l'applicazione può supportare Unicode usando la funzione [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) .
+Le funzioni che non sono state implementate con [una versione Unicode](unicode.md) sono in genere state sostituite da funzioni più potenti o estese che supportano Unicode. Ad esempio, se si porta il codice che chiama la funzione [**OpenFile,**](/windows/win32/api/winbase/nf-winbase-openfile) l'applicazione può supportare Unicode usando invece [**la funzione CreateFile.**](/windows/win32/api/fileapi/nf-fileapi-createfilea)
 
-Se una funzione non ha un equivalente Unicode, l'applicazione può eseguire il mapping dei caratteri da e verso i set di caratteri a 8 bit prima e dopo la chiamata di funzione. Ad esempio, le funzioni di formattazione dei numeri **atoi** e **ITOA** usano solo le cifre da 0 a 9. In genere, il mapping di caratteri Unicode a 8 bit causa la perdita di dati, ma ciò può essere evitato rendendo il codice indipendente dai tipi e rendendo le espressioni condizionali. Le istruzioni nell'esempio seguente, scritte per i caratteri a 8 bit, sono dipendenti dal tipo e devono essere modificate per supportare Unicode.
+Se una funzione non ha un equivalente Unicode, l'applicazione può eseguire il mapping dei caratteri a e da set di caratteri a 8 bit prima e dopo la chiamata di funzione. Ad esempio, le funzioni di formattazione dei numeri **atoi** **e itoa** usano solo le cifre da 0 a 9. In genere, il mapping di Unicode a caratteri a 8 bit causa la perdita di dati, ma ciò può essere evitato rendendo indipendente il tipo di codice e rendendo le espressioni condizionali. Le istruzioni nell'esempio seguente, scritte per caratteri a 8 bit, dipendono dal tipo e devono essere modificate per supportare Unicode.
 
 
 ```C++
@@ -26,7 +26,7 @@ int num = atoi(str);
 
 
 
-Queste istruzioni possono essere riscritte come indicato di seguito per renderle indipendenti dai tipi.
+Queste istruzioni possono essere riscritte come indicato di seguito per renderle indipendenti dal tipo.
 
 
 ```C++
@@ -51,12 +51,12 @@ int num = atoi(tstr);
 
 
 
-In questo esempio la funzione della libreria C standard **wcstombs** converte il formato Unicode in ASCII. Questo esempio si basa sul fatto che le cifre da 0 a 9 possono essere sempre convertite da Unicode a ASCII, anche se non è possibile eseguire una parte del testo circostante. La funzione **atoi** si arresta in corrispondenza di qualsiasi carattere diverso da una cifra.
+In questo esempio la funzione della libreria C standard **wcstombs** converte Unicode in ASCII. L'esempio si basa sul fatto che le cifre da 0 a 9 possono sempre essere convertite da Unicode ad ASCII, anche se non è possibile usare parte del testo circostante. La **funzione atoi** si arresta in corrispondenza di qualsiasi carattere che non sia una cifra.
 
-L'applicazione può usare la funzione [**LCMAPSTRING**](/windows/desktop/api/Winnls/nf-winnls-lcmapstringa) NLS (National Language Support) per elaborare il testo che include le [cifre native](digit-shapes.md) fornite per alcuni degli script in Unicode.
+L'applicazione può usare la funzione [**LCMapString**](/windows/desktop/api/Winnls/nf-winnls-lcmapstringa) NLS (National [](digit-shapes.md) Language Support) per elaborare il testo che include le cifre native fornite per alcuni script in Unicode.
 
 > [!Caution]  
-> L'uso errato della funzione **wcstombs** può compromettere la sicurezza dell'applicazione. Verificare che il buffer dell'applicazione per la stringa di caratteri a 8 bit sia almeno di dimensioni 2 \* (*\_ lunghezza char* + 1), dove *char \_ length* rappresenta la lunghezza della stringa Unicode. Questa restrizione viene eseguita perché, con [set di caratteri a doppio byte](double-byte-character-sets.md) (DBCS), è possibile eseguire il mapping di ogni carattere Unicode a due caratteri consecutivi a 8 bit. Se il buffer non è in possesso dell'intera stringa, la stringa di risultato non è con terminazione null e costituisce un rischio per la sicurezza. Per ulteriori informazioni sulla sicurezza delle applicazioni, vedere [considerazioni sulla sicurezza: funzionalità internazionali](security-considerations--international-features.md).
+> L'uso non corretto della funzione **wcstombs** può compromettere la sicurezza dell'applicazione. Assicurarsi che il buffer dell'applicazione per la stringa di caratteri a 8 bit sia di dimensioni pari almeno a 2 ( lunghezza \* *\_ char* +1), dove *char \_ length* rappresenta la lunghezza della stringa Unicode. Questa restrizione viene [](double-byte-character-sets.md) fatta perché, con set di caratteri a byte doppio (DBCS), è possibile eseguire il mapping di ogni carattere Unicode a due caratteri consecutivi a 8 bit. Se il buffer non contiene l'intera stringa, la stringa di risultato non è con terminazione Null, esponendo un rischio per la sicurezza. Per altre informazioni sulla sicurezza delle applicazioni, vedere [Considerazioni sulla sicurezza: funzionalità internazionali](security-considerations--international-features.md).
 
  
 
@@ -64,7 +64,7 @@ L'applicazione può usare la funzione [**LCMAPSTRING**](/windows/desktop/api/Win
 
 <dl> <dt>
 
-[Utilizzo di set di caratteri e Unicode](using-unicode-and-character-sets.md)
+[Uso di unicode e set di caratteri](using-unicode-and-character-sets.md)
 </dt> </dl>
 
  

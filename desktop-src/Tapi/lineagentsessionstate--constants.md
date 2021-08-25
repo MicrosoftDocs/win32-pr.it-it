@@ -1,43 +1,43 @@
 ---
-description: Le \_ costanti LINEAGENTSESSIONSTATE descrivono diversi Stati della sessione di Agent.
+description: Le costanti LINEAGENTSESSIONSTATE \_ descrivono vari stati della sessione dell'agente.
 ms.assetid: 8a0d06bb-51ba-4eaf-8719-120aed817f63
-title: Costanti LINEAGENTSESSIONSTATE_ (TAPI. h)
+title: LINEAGENTSESSIONSTATE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfd1be8cf846d0e23828f0a3540960a86a83ef1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 702c9820fb6c2157a386241b13ea0593c4156195bc74bcfa7655c76db171083d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682201"
 ---
-# <a name="lineagentsessionstate_-constants"></a>\_Costanti LINEAGENTSESSIONSTATE
+# <a name="lineagentsessionstate_-constants"></a>Costanti LINEAGENTSESSIONSTATE \_
 
-Le **\_ costanti LINEAGENTSESSIONSTATE** descrivono diversi Stati della sessione di Agent.
+Le **costanti LINEAGENTSESSIONSTATE \_ descrivono** vari stati della sessione dell'agente.
 
 <dl> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_BUSYONCALL"></span><span id="lineagentsessionstate_busyoncall"></span>**\_BUSYONCALL LINEAGENTSESSIONSTATE**
+<span id="LINEAGENTSESSIONSTATE_BUSYONCALL"></span><span id="lineagentsessionstate_busyoncall"></span>**LINEAGENTSESSIONSTATE \_ BUSYONCALL**
 </dt> <dd> <dl> <dt>
 
 
 
-L'agente è occupato a gestire una chiamata.
+L'agente è occupato nella gestione di una chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_BUSYWRAPUP"></span><span id="lineagentsessionstate_busywrapup"></span>**\_BUSYWRAPUP LINEAGENTSESSIONSTATE**
+<span id="LINEAGENTSESSIONSTATE_BUSYWRAPUP"></span><span id="lineagentsessionstate_busywrapup"></span>**LINEAGENTSESSIONSTATE \_ BUSYWRAPUP**
 </dt> <dd> <dl> <dt>
 
 
 
-L'agente occupa la gestione del completamento della chiamata.
+L'agente è occupato nella gestione del wrapping della chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_ENDED"></span><span id="lineagentsessionstate_ended"></span>**LINEAGENTSESSIONSTATE \_ terminato**
+<span id="LINEAGENTSESSIONSTATE_ENDED"></span><span id="lineagentsessionstate_ended"></span>**LINEAGENTSESSIONSTATE \_ TERMINATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -47,27 +47,27 @@ La sessione dell'agente è terminata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_NOTREADY"></span><span id="lineagentsessionstate_notready"></span>**LINEAGENTSESSIONSTATE \_ NObattistrada**
+<span id="LINEAGENTSESSIONSTATE_NOTREADY"></span><span id="lineagentsessionstate_notready"></span>**LINEAGENTSESSIONSTATE \_ NOTREADY**
 </dt> <dd> <dl> <dt>
 
 
 
-L'agente è connesso, ma è occupato da un'attività diversa da quella di una chiamata (ad esempio, in pausa). Nessuna chiamata aggiuntiva deve essere indirizzata all'agente.
+L'agente è connesso, ma occupato con un'attività diversa dalla gestione di una chiamata (ad esempio in caso di interruzione). Nessuna chiamata aggiuntiva deve essere instradata all'agente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_READY"></span><span id="lineagentsessionstate_ready"></span>**LINEAGENTSESSIONSTATE \_ pronto**
+<span id="LINEAGENTSESSIONSTATE_READY"></span><span id="lineagentsessionstate_ready"></span>**LINEAGENTSESSIONSTATE \_ READY**
 </dt> <dd> <dl> <dt>
 
 
 
-L'agente è pronto per accettare le chiamate.
+L'agente è pronto ad accettare chiamate.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSESSIONSTATE_RELEASED"></span><span id="lineagentsessionstate_released"></span>**LINEAGENTSESSIONSTATE \_ rilasciato**
+<span id="LINEAGENTSESSIONSTATE_RELEASED"></span><span id="lineagentsessionstate_released"></span>**LINEAGENTSESSIONSTATE \_ RILASCIATO**
 </dt> <dd> <dl> <dt>
 
 
@@ -83,8 +83,8 @@ La sessione dell'agente è stata rilasciata.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

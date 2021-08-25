@@ -5,7 +5,7 @@ ms.assetid: 89fe874a-8009-4901-bebe-2d9e45f894bb
 keywords:
 - cbuffer
 - tbuffer
-- buffer costante
+- constant buffer
 - buffer di trama
 ms.topic: article
 ms.date: 05/31/2018
@@ -14,18 +14,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f314be4b8da98ff80bd7404c270479855e13fb6e
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: b2a6b2ffa9168e870aeb405badb6ff71b0a4a59b23d76947e56a9c085ed0107a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726551"
 ---
 # <a name="shader-constants-hlsl"></a>Costanti dello shader (HLSL)
 
 In Shader Model 4 le costanti shader vengono archiviate in una o più risorse del buffer in memoria. Possono essere organizzati in due tipi di buffer: buffer costanti (cbuffer) e buffer di trama (tbuffer). I buffer costanti sono ottimizzati per l'utilizzo di variabili costanti, caratterizzato da un accesso a bassa latenza e da un aggiornamento più frequente dalla CPU. Per questo motivo, a queste risorse si applicano restrizioni aggiuntive per dimensioni, layout e accesso. I buffer di trama sono accessibili come trame e hanno prestazioni migliori per i dati indicizzati arbitrariamente. Indipendentemente dal tipo di risorsa in uso, non esiste alcun limite al numero di buffer costanti o di trame che un'applicazione può creare.
 
-La dichiarazione di un buffer costante o di un buffer di trama è molto simile a una dichiarazione di struttura in C, con l'aggiunta delle parole chiave **register** e **packoffset** per l'assegnazione manuale di registri o di dati di pacchetto.
+La dichiarazione di un buffer costante o di un buffer di trama è molto simile a una dichiarazione di struttura in C, con l'aggiunta delle parole chiave **register** e **packoffset** per l'assegnazione manuale di registri o la creazione di dati di pacchetto.
 
 
 
@@ -50,7 +50,7 @@ La dichiarazione di un buffer costante o di un buffer di trama è molto simile a
 
 | BufferType | Descrizione     |
 |------------|-----------------|
-| cbuffer    | buffer costante |
+| cbuffer    | constant buffer |
 | tbuffer    | buffer di trama  |
 
 
@@ -76,20 +76,20 @@ La dichiarazione di un buffer costante o di un buffer di trama è molto simile a
 <span id="VariableDeclaration"></span><span id="variabledeclaration"></span><span id="VARIABLEDECLARATION"></span>*VariableDeclaration*
 </dt> <dd>
 
-\[nella \] dichiarazione di variabile, simile a una dichiarazione di membro di struttura. Può trattarsi di qualsiasi tipo HLSL o oggetto effetto (ad eccezione di una trama o di un oggetto sampler).
+\[nella \] dichiarazione di variabile, simile a una dichiarazione di membro di struttura. Può trattarsi di qualsiasi tipo HLSL o oggetto effetto (ad eccezione di una trama o di un oggetto campionatore).
 
 </dd> <dt>
 
 <span id="packoffset_c_.xyzw_"></span><span id="PACKOFFSET_C_.XYZW_"></span>**packoffset**(c \# .xyzw)
 </dt> <dd>
 
-\[in \] Parola chiave Facoltativa, usata per inserire manualmente i dati costanti. Le costanti possono essere imballate in qualsiasi buffer costante, in cui il numero di registro viene fornito da ( *\#* ). L'impacchettamento dei componenti secondari (con xyzw swizzling) è disponibile per le costanti le cui dimensioni rientrano in un singolo registro (non attraversare un limite di registro). Ad esempio, non è stato possibile inserire un float4 in un singolo registro a partire dal componente y perché non rientra in un registro a quattro componenti.
+\[in \] Parola chiave Facoltativa, usata per inserire manualmente i dati costanti. Le costanti possono essere imballate in qualsiasi buffer costante, in cui il numero di registro è specificato da ( *\#* ). L'impacchettamento dei componenti secondari (con xyzw swizzling) è disponibile per le costanti le cui dimensioni rientrano in un singolo registro (non attraversare un limite di registro). Ad esempio, non è stato possibile inserire un float4 in un singolo registro a partire dal componente y perché non rientra in un registro a quattro componenti.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I buffer costanti riducono la larghezza di banda necessaria per aggiornare le costanti shader consentendo il raggruppamento e il commit delle costanti shader contemporaneamente anziché effettuare singole chiamate per eseguire separatamente il commit di ogni costante.
+I buffer costanti riducono la larghezza di banda necessaria per aggiornare le costanti shader consentendo il raggruppamento e il commit delle costanti shader contemporaneamente anziché effettuare singole chiamate per eseguire il commit di ogni costante separatamente.
 
 Un buffer costante è una risorsa buffer specializzata a cui si accede come un buffer. Ogni buffer costante può contenere fino a 4096 [vettori](dx-graphics-hlsl-vector.md); ogni vettore contiene fino a quattro valori a 32 bit. È possibile associare fino a 14 buffer costanti per ogni fase della pipeline (2 slot aggiuntivi sono riservati per l'uso interno).
 
@@ -99,7 +99,7 @@ Una risorsa buffer è progettata per ridurre al minimo il sovraccarico dell'impo
 
 Per altre informazioni sull'uso dei buffer costanti in un'applicazione D3D10, vedere Tipi di risorse [(Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) e Creazione di risorse [buffer (Direct3D 10).](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-creating)
 
-Per altre informazioni sull'uso dei buffer costanti in un'applicazione D3D11, vedere Introduzione ai buffer [in Direct3D 11](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-intro) e [Procedura: Creare un buffer costante.](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to)
+Per altre informazioni sull'uso dei buffer costanti in un'applicazione D3D11, vedere Introduzione ai [buffer in Direct3D 11](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-intro) e [Procedura: Creare un buffer costante.](/windows/desktop/direct3d11/overviews-direct3d-11-resources-buffers-constant-how-to)
 
 Un buffer costante non richiede che [una vista](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-access-views) sia associata alla pipeline. Un buffer di trama, tuttavia, richiede una visualizzazione e deve essere associato a uno slot di trama (o deve essere associato a [**SetTextureBuffer**](/windows/desktop/api/d3d10effect/nf-d3d10effect-id3d10effectconstantbuffer-settexturebuffer) quando si usa un effetto).
 
@@ -115,7 +115,7 @@ Differenze tra Direct3D 9 e Direct3D 10 e 11:
 
 ### <a name="organizing-constant-buffers"></a>Organizzazione dei buffer costanti
 
-I buffer costanti riducono la larghezza di banda necessaria per aggiornare le costanti shader consentendo il raggruppamento e il commit delle costanti shader contemporaneamente anziché effettuare singole chiamate per eseguire separatamente il commit di ogni costante.
+I buffer costanti riducono la larghezza di banda necessaria per aggiornare le costanti shader consentendo il raggruppamento e il commit delle costanti shader contemporaneamente anziché effettuare singole chiamate per eseguire il commit di ogni costante separatamente.
 
 Il modo migliore per usare in modo efficiente i buffer costanti consiste nell'organizzare le variabili dello shader in buffer costanti in base alla rispettiva frequenza di aggiornamento. Ciò consente a un'applicazione di ridurre al minimo la larghezza di banda necessaria per l'aggiornamento delle costanti shader. Ad esempio, uno shader potrebbe dichiarare due buffer costanti e organizzare i dati in ognuno in base alla frequenza di aggiornamento: i dati che devono essere aggiornati per ogni oggetto (ad esempio una matrice globale) vengono raggruppati in un buffer costante che può essere aggiornato per ogni oggetto. Questo è separato dai dati che caratterizzano una scena e pertanto è probabile che siano aggiornati molto meno spesso (quando la scena cambia).
 
@@ -140,7 +140,7 @@ cbuffer myScene
 
 ### <a name="default-constant-buffers"></a>Buffer costanti predefiniti
 
-Sono disponibili due buffer costanti predefiniti, $Global e $Param. Le variabili inserite nell'ambito globale vengono aggiunte in modo implicito al $Global cbuffer, usando lo stesso metodo di pacchetto usato per cbuffer. I parametri uniformi nell'elenco di parametri di una funzione vengono visualizzati nel buffer $Param costante quando uno shader viene compilato all'esterno del framework degli effetti. Quando vengono compilate all'interno del framework degli effetti, tutte le uniformi devono essere risolte in variabili definite nell'ambito globale.
+Sono disponibili due buffer costanti predefiniti, $Global e $Param. Le variabili inserite nell'ambito globale vengono aggiunte in modo implicito al $Global cbuffer, usando lo stesso metodo di pacchetto usato per cbuffer. I parametri uniformi nell'elenco di parametri di una funzione vengono visualizzati nel buffer $Param costante quando uno shader viene compilato all'esterno del framework degli effetti. Quando vengono compilate all'interno del framework effetti, tutte le uniformi devono essere risolte in variabili definite nell'ambito globale.
 
 ## <a name="examples"></a>Esempio
 

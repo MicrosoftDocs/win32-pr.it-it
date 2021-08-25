@@ -1,7 +1,7 @@
 ---
-description: Descrive le restrizioni sulle proprietà di un \_ oggetto ENABLEDLOGICALELEMENT CIM associato.
+description: Descrive le restrizioni relative alle proprietà di un oggetto CIM \_ EnabledLogicalElement associato.
 ms.assetid: debce40c-9a0e-43a7-88fa-9336afd52e17
-title: Classe CIM_EnabledLogicalElementCapabilities
+title: CIM_EnabledLogicalElementCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 35f400643e01821667c999342603fd402a3ae419
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbec7b52d735b6dcff4da4c211da1db8b36d18adf20798fdcaa3932e1761119a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695911"
 ---
-# <a name="cim_enabledlogicalelementcapabilities-class"></a>CIM \_ EnabledLogicalElementCapabilities (classe)
+# <a name="cim_enabledlogicalelementcapabilities-class"></a>Classe CIM \_ EnabledLogicalElementCapabilities
 
-Descrive le restrizioni sulle proprietà di un oggetto [**\_ EnabledLogicalElement CIM**](cim-enabledlogicalelement.md) associato.
+Descrive le restrizioni relative alle proprietà di un oggetto [**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md) associato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,36 +43,36 @@ class CIM_EnabledLogicalElementCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ EnabledLogicalElementCapabilities** presenta questi tipi di membri:
+La **classe CIM \_ EnabledLogicalElementCapabilities** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ EnabledLogicalElementCapabilities** dispone di queste proprietà.
+La **classe CIM \_ EnabledLogicalElementCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **ElementNameEditSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("FC-swapi. Incis-T11 \| swapping \_ unità \_ config i \_ Caps \_ T \| EditName "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Managed**](cim-managedelement.md).**ElementName**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("FC-SWAPI. INCITS-T11 \| SWAPI \_ UNIT CONFIG \_ \_ CAPS T \_ \| EditName"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ManagedElement**](cim-managedelement.md).**ElementName**")
 </dt> </dl>
 
-**true** se la proprietà **ElementName** dell'elemento logico abilitato può essere modificata. in caso contrario, **false**.
+**true** se la **proprietà ElementName** dell'elemento logico abilitato può essere modificata; in caso contrario, **false.**
 
 </dd> <dt>
 
 **ElementNameMask**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,10 +81,10 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElementCapabilities**.**MaxElementNameLen**")
 </dt> </dl>
 
-Espressione regolare che indica le restrizioni sulla proprietà **ElementName** dell'elemento logico Enable. Vedere *DMTF standard ABNF con la Guida all'utilizzo della specifica del profilo di gestione*, Appendice C per la sintassi consentita.
+Espressione regolare che indica le restrizioni per la proprietà **ElementName** dell'elemento logico enable. Per *la sintassi consentita, vedere ABNF standard DMTF con la Guida all'utilizzo della* specifica del profilo di gestione , appendice C.
 
 > [!Note]  
-> Se questa proprietà e la proprietà **ElementNameMask** dell'elemento logico Enable descrivono la lunghezza massima di **ElementName**, viene usato il valore più piccolo.
+> Se questa proprietà e la **proprietà ElementNameMask** dell'elemento logico enable descrivono la lunghezza massima di **ElementName**, viene usato il valore più piccolo.
 
  
 
@@ -93,13 +93,13 @@ Espressione regolare che indica le restrizioni sulla proprietà **ElementName** 
 **MaxElementNameLen**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("FC-swapi. INCIs-T11 \| swapi \_ unit \_ config \_ Caps \_ T \| MaxNameChars "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (" CIM \_ FCSwitchCapabilities. ElementNameEditSupported ","**CIM \_ EnabledLogicalElementCapabilities**.**ElementNameMask**")
+Qualificatori: [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("FC-SWAPI. INCITS-T11 \| SWAPI \_ UNIT CONFIG \_ \_ CAPS T \_ \| MaxNameChars"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ FCSwitchCapabilities.ElementNameEditSupported", "**CIM \_ EnabledLogicalElementCapabilities**.**ElementNameMask**")
 </dt> </dl>
 
 Lunghezza massima supportata della proprietà **ElementName** dell'elemento logico abilitato.
@@ -109,7 +109,7 @@ Lunghezza massima supportata della proprietà **ElementName** dell'elemento logi
 **RequestedStatesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -118,7 +118,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**RequestStateChange**")
 </dt> </dl>
 
-Gli stati possibili che possono essere richiesti sull'elemento logico abilitato tramite il metodo [**RequestStateChange**](cim-enabledlogicalelement-requeststatechange.md) .
+Stati possibili che possono essere richiesti nell'elemento logico abilitato dal [**metodo RequestStateChange.**](cim-enabledlogicalelement-requeststatechange.md)
 
 <dt>
 
@@ -138,7 +138,7 @@ Gli stati possibili che possono essere richiesti sull'elemento logico abilitato 
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -166,7 +166,7 @@ Gli stati possibili che possono essere richiesti sull'elemento logico abilitato 
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -180,7 +180,7 @@ Gli stati possibili che possono essere richiesti sull'elemento logico abilitato 
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> </dl>
@@ -195,8 +195,8 @@ Gli stati possibili che possono essere richiesti sull'elemento logico abilitato 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -205,7 +205,7 @@ Gli stati possibili che possono essere richiesti sull'elemento logico abilitato 
 
 <dl> <dt>
 
-[**\_Funzionalità CIM**](cim-capabilities.md)
+[**Funzionalità \_ CIM**](cim-capabilities.md)
 </dt> </dl>
 
  

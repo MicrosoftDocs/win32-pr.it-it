@@ -1,98 +1,98 @@
 ---
-description: Questo argomento descrive alcuni aspetti da considerare quando si usano le librerie nel programma.
+description: Questo argomento descrive alcuni aspetti da considerare quando si usano librerie nel programma.
 ms.assetid: 40ACC8F6-1416-4390-A8D7-8F924DC2C2FE
-title: Uso delle librerie nel programma
+title: Uso di librerie nel programma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2812a66b148d9bd16fc3951efab64a4d37afaaff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b2c76c4ce8bf9114d7294b257c03bcc62adecc947a3d7e651d6f94fa8876d4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821111"
 ---
-# <a name="using-libraries-in-your-program"></a>Uso delle librerie nel programma
+# <a name="using-libraries-in-your-program"></a>Uso di librerie nel programma
 
-Questo argomento descrive alcuni aspetti da considerare quando si usano le librerie nel programma.
+Questo argomento descrive alcuni aspetti da considerare quando si usano librerie nel programma.
 
 In questo argomento
 
--   [Panoramica della programmazione della libreria](#library-programming-overview)
--   [Programmazione con le librerie](#programming-with-libraries)
-    -   [Passaggio da cartelle note a librerie](#moving-from-known-folders-to-libraries)
-    -   [Gruppo Home e librerie condivise](#homegroup-and-shared-libraries)
--   [Utilizzo di una finestra di dialogo file comune con le librerie](#using-a-common-file-dialog-box-with-libraries)
+-   [Panoramica della programmazione delle librerie](#library-programming-overview)
+-   [Programmazione con librerie](#programming-with-libraries)
+    -   [Spostamento da cartelle note a librerie](#moving-from-known-folders-to-libraries)
+    -   [HomeGroup e librerie condivise](#homegroup-and-shared-libraries)
+-   [Uso di una finestra di dialogo file comune con le librerie](#using-a-common-file-dialog-box-with-libraries)
 -   [Abilitazione della selezione della libreria dall'interfaccia utente](#enabling-library-selection-from-the-user-interface)
 -   [Accesso al contenuto della libreria in un programma](#accessing-library-content-in-a-program)
     -   [Accesso al contenuto della libreria con l'interfaccia IShellLibrary](#accessing-library-content-with-the-ishelllibrary-interface)
-    -   [Accesso al contenuto della libreria con le API della shell](#accessing-library-content-with-the-shell-apis)
+    -   [Accesso al contenuto della libreria con le API shell](#accessing-library-content-with-the-shell-apis)
 -   [Salvataggio del contenuto utente in una raccolta](#saving-user-content-in-a-library)
 -   [Supporto delle operazioni di trascinamento della selezione in una libreria](#supporting-drag-and-drop-operations-in-a-library)
--   [Mantenimento della sincronizzazione con una libreria](#keeping-in-sync-with-a-library)
+-   [Mantenere la sincronizzazione con una libreria](#keeping-in-sync-with-a-library)
     -   [Aggiornamento bulk](#bulk-update)
-    -   [Notifica API shell](#shell-api-notification)
-    -   [Notifica dell'API del file System](#file-system-api-notification)
+    -   [Notifica dell'API shell](#shell-api-notification)
+    -   [Notifica dell'API del file system](#file-system-api-notification)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="library-programming-overview"></a>Panoramica della programmazione della libreria
+## <a name="library-programming-overview"></a>Panoramica della programmazione delle librerie
 
-Le librerie consentono agli utenti di organizzare il contenuto basato su file in modo significativo e non limitato dall'organizzazione del file system. Quando il programma supporta le librerie, consente all'utente di trovare il contenuto in modo che abbia senso, presentando un'interfaccia utente coerente con l'esperienza utente di Windows 7. Le librerie consentono inoltre al programma di individuare in modo più semplice contenuto basato su file archiviato in cartelle diverse o in computer diversi.
+Le librerie consentono agli utenti di organizzare il contenuto basato su file in modo significativo e non limitato dall'organizzazione del file system. Quando il programma supporta le librerie, consente all'utente di trovare il contenuto in modo sensato durante la presentazione di un'interfaccia utente coerente con l'esperienza utente Windows 7. Le librerie semplificano inoltre al programma l'individuazione di contenuto basato su file archiviato in cartelle diverse o in computer diversi.
 
-Negli argomenti di questa sezione viene descritto come aggiungere il supporto della libreria al programma e sfruttare le nuove funzionalità offerte dalle librerie. Windows 7 fornisce parte del supporto per impostazione predefinita. Se il programma non modifica le finestre di dialogo file comuni attualmente in uso, potrebbe essere necessaria una programmazione aggiuntiva minima per supportare le librerie.
+Negli argomenti di questa sezione viene descritto come aggiungere il supporto per le librerie al programma e sfruttare le nuove funzionalità offerte da librerie. Windows 7 offre parte di questo supporto per impostazione predefinita. Se il programma non modifica le finestre di dialogo di file comuni attualmente in uso, potrebbe essere necessaria una programmazione aggiuntiva molto piccola per supportare le librerie.
 
-In questa sezione vengono descritte alcune delle funzionalità chiave fornite dalle librerie e il modo in cui supportarle nel programma. Con queste informazioni, è possibile decidere quali funzionalità forniranno la migliore esperienza utente dal programma. Se il programma Personalizza le finestre di dialogo file comuni, le informazioni contenute in questa sezione consentono di determinare come utilizzare le nuove finestre di dialogo file comuni per utilizzare le librerie e fornire funzionalità equivalenti in Windows 7.
+In questa sezione vengono descritte alcune delle funzionalità principali fornite nelle librerie e viene descritto come supportarle nel programma. Con queste informazioni, è possibile decidere quali funzionalità offriranno la migliore esperienza utente dal programma. Se il programma personalizza le finestre di dialogo di file comuni, le informazioni contenute in questa sezione consentono di determinare come usare le nuove finestre di dialogo file comuni per usare le librerie e fornire funzionalità equivalenti in Windows 7.
 
-## <a name="programming-with-libraries"></a>Programmazione con le librerie
+## <a name="programming-with-libraries"></a>Programmazione con librerie
 
-Il modello di programmazione shell di Windows descrive il modo in cui un programma interagisce con gli oggetti di programmazione della shell di Windows. Mentre gli oggetti di file System, ad esempio file e directory, sono rappresentati da oggetti della shell di Windows, non tutti gli oggetti della shell di Windows sono rappresentati dal file System. Le librerie, ad esempio, sono oggetti della shell di Windows che non hanno un equivalente del file System. L'uso di oggetti della shell di Windows nel programma consente al programma di accedere a tutti gli oggetti della shell e non solo a oggetti di file System.
+Il Windows di programmazione shell descrive il modo in cui un programma interagisce con Windows di programmazione shell. Mentre gli oggetti del file system, ad esempio file e directory, sono rappresentati da oggetti shell Windows, non tutti gli oggetti Windows Shell sono rappresentati dal file system. Le librerie, ad esempio, Windows shell che non hanno un equivalente del file system. L Windows di shell nel programma consente al programma di accedere a tutti gli oggetti shell e non solo agli oggetti del file system.
 
-Per ottenere risultati ottimali, il programma utilizzerà l' [**API della libreria della shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per interagire con le librerie e accedere al contenuto. Mentre le librerie contengono elementi di file System, ad esempio cartelle e file, le librerie non sono elementi del file System. Di conseguenza, non è possibile utilizzare le API del file System per accedere alle funzionalità della libreria o al contenuto della raccolta.
+Per ottenere risultati ottimali, il programma userebbe [**l'API Shell Library**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per interagire con le librerie e accedere al relativo contenuto. Sebbene le librerie contengano elementi del file system, ad esempio cartelle e file, le librerie non sono elementi del file system. Di conseguenza, le API del file system non possono essere usate per accedere alle funzionalità della libreria o al contenuto della libreria.
 
-Se si dispone di un programma esistente che attualmente usa molte API del file System, il programma può comunque sfruttare le funzionalità della libreria. L' [**API della libreria della shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) può fornire riferimenti a file System agli elementi presenti in una raccolta e questi riferimenti del file System, ad esempio il nome e il percorso del file, possono essere passati alle API del file System esistente presenti nel programma esistente.
+Se si dispone di un programma esistente che attualmente usa molte API del file system, il programma può comunque sfruttare le funzionalità della libreria. [**L'API**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) Shell Library può fornire riferimenti al file system agli elementi presenti in una libreria e questi riferimenti al file system, ad esempio il nome e il percorso, possono essere passati alle API del file system esistenti presenti nel programma esistente.
 
-### <a name="moving-from-known-folders-to-libraries"></a>Passaggio da cartelle note a librerie
+### <a name="moving-from-known-folders-to-libraries"></a>Spostamento da cartelle note a librerie
 
-Prima di Windows 7, era comune usare una cartella nota, ad esempio la cartella documenti, come cartella predefinita in operazioni di salvataggio file o file aperti. In Windows 7, è necessario utilizzare la libreria corrispondente in modo che l'utente abbia la stessa esperienza del programma in uso con altri programmi di Windows 7, ad esempio Esplora risorse.
+Prima Windows 7 era comune usare una cartella nota, ad esempio la cartella Documenti, come cartella predefinita nelle operazioni di salvataggio o apertura file. In Windows 7, è consigliabile usare la libreria corrispondente in modo che l'utente abbia la stessa esperienza nel programma in uso con altri programmi Windows 7, ad esempio Windows Explorer.
 
-Se attualmente si usa l'API shell di Windows nel programma, l'aggiunta del supporto per le librerie è semplice. Se, ad esempio, si chiama la funzione [**SHGetKnownFolderItem**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderitem) per ottenere il percorso della cartella documenti, è possibile sostituire il valore [**KNOWNFOLDERID**](knownfolderid.md) della cartella documenti nota con il valore **KNOWNFOLDERID** della libreria corrispondente.
+Se attualmente si usa l'API shell Windows nel programma, l'aggiunta del supporto della libreria è semplice. Ad esempio, se attualmente si chiama la funzione [**SHGetKnownFolderItem**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderitem) per ottenere il percorso della cartella Documenti, è possibile sostituire il valore [**KNOWNFOLDERID**](knownfolderid.md) della cartella nota Documenti con il **valore KNOWNFOLDERID** della libreria corrispondente.
 
-Nella tabella seguente viene illustrata la relazione tra i valori [**KNOWNFOLDERID**](knownfolderid.md) delle cartelle note e il valore **KNOWNFOLDERID** della libreria corrispondente in Windows 7. 
+Nella tabella seguente viene illustrata la relazione tra i valori [**KNOWNFOLDERID**](knownfolderid.md) delle cartelle note e il **valore KNOWNFOLDERID** della libreria corrispondente in Windows 7. 
 
-| Valori KNOWNFOLDERID cartella nota | Valori KNOWNFOLDERID della libreria |
+| Valori known folder KNOWNFOLDERID | Valori KNOWNFOLDERID della libreria |
 |-----------------------------------|------------------------------|
-| \_Documenti FOLDERID               | \_DOCUMENTSLIBRARY FOLDERID   |
-| Immagini di FOLDERID \_                | \_PICTURESLIBRARY FOLDERID    |
-| \_Musica FOLDERID                   | \_MUSICLIBRARY FOLDERID       |
-| \_RECORDEDTV FOLDERID              | \_RECORDEDTVLIBRARY FOLDERID  |
+| Documenti \_ FOLDERID               | FOLDERID \_ DocumentsLibrary   |
+| Immagini \_ FOLDERID                | FOLDERID \_ PicturesLibrary    |
+| FOLDERID \_ Musica                   | FOLDERID \_ MusicLibrary       |
+| FOLDERID \_ RecordedTV              | FOLDERID \_ RecordedTVLibrary  |
 
 
 
  
 
-### <a name="homegroup-and-shared-libraries"></a>Gruppo Home e librerie condivise
+### <a name="homegroup-and-shared-libraries"></a>HomeGroup e librerie condivise
 
-L'aggiunta del supporto per la libreria al programma Abilita il supporto per le librerie condivise in un gruppo Home. Il gruppo Home è identificato dal relativo valore [**KNOWNFOLDERID**](knownfolderid.md) di [**FOLDERID \_ Gruppo Home**](knownfolderid.md). Il programma può individuare il percorso di salvataggio predefinito privato o condiviso dell'utente impostando il valore [**DEFAULTSAVEFOLDERTYPE**](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-defaultsavefoldertype) nella chiamata al metodo [**IShellLibrary:: GetDefaultSaveFolder**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelllibrary-getdefaultsavefolder) .
+L'aggiunta del supporto della libreria al programma abiliterà il supporto per le librerie condivise in un gruppo Home. Il gruppo Home è identificato dal [**relativo valore KNOWNFOLDERID**](knownfolderid.md) [**di FOLDERID \_ HomeGroup**](knownfolderid.md). Il programma può individuare il percorso di salvataggio predefinito privato o condiviso dell'utente impostando il [**valore DEFAULTSAVEFOLDERTYPE**](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-defaultsavefoldertype) nella chiamata al metodo [**IShellLibrary::GetDefaultSaveFolder.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishelllibrary-getdefaultsavefolder)
 
-## <a name="using-a-common-file-dialog-box-with-libraries"></a>Utilizzo di una finestra di dialogo file comune con le librerie
+## <a name="using-a-common-file-dialog-box-with-libraries"></a>Uso di una finestra di dialogo file comune con le librerie
 
-Utilizzo di una finestra di dialogo file comune con le librerie la finestra di dialogo file comune è stata aggiornata per supportare le librerie in Windows 7. Nella figura seguente viene illustrato come viene visualizzata la finestra di dialogo file comune di un utente in Windows 7.
+Uso di una finestra di dialogo file comune con librerie La finestra di dialogo File comune è stata aggiornata per supportare le librerie Windows 7. La figura seguente mostra come viene visualizzata la finestra di dialogo file comune a un utente in Windows 7.
 
-![screenshot della finestra di dialogo file comune che mostra le librerie](images/libraries-commonfiledialog.png)
+![Screenshot della finestra di dialogo file comune che mostra le librerie](images/libraries-commonfiledialog.png)
 
-In Windows 7, se il programma visualizza attualmente una finestra di dialogo file comune e non modifica il modello della finestra di dialogo o non associa alcun evento, verrà visualizzata automaticamente la nuova versione di Windows 7 della finestra di dialogo. In particolare, nella chiamata alla funzione della finestra di dialogo file comune i membri **lpfnHook**, **HINSTANCE**, **lpTemplatename** della struttura [**OpenFileName**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) devono essere **null** **e i flag OFN ENABLEHOOK \_** e **OFN \_ ENABLETEMPLATE** devono essere cancellati.
+In Windows 7, se il programma visualizza attualmente una finestra di dialogo di file comune e non modifica il modello di finestra di dialogo o esegue l'hook di uno dei relativi eventi, verrà visualizzata automaticamente la nuova versione Windows 7 della finestra di dialogo. In particolare, nella chiamata alla funzione della finestra di dialogo file comune, i membri **lpfnHook**, **hInstance**, **lpTemplatename** della struttura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) devono essere **NULL** e i flag **\_ OFN ENABLEHOOK** e **OFN \_ ENABLETEMPLATE** devono essere deselezionati.
 
-In Windows 7 le interfacce correlate a [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)sostituiscono le funzioni della finestra di dialogo file comuni utilizzate nelle versioni precedenti di Windows. Le funzioni della finestra di dialogo file comuni precedenti sono ancora supportate in Windows 7 ma non offrono l'esperienza utente completa di Windows 7 e non supportano le librerie. Di seguito sono riportate alcune delle nuove funzionalità supportate dalle interfacce correlate a **IFileDialog**:
+In Windows 7, le interfacce correlate a [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)sostituiscono le funzioni comuni della finestra di dialogo dei file usate nelle versioni precedenti di Windows. Le funzioni della finestra di dialogo file comuni precedenti sono ancora supportate in Windows 7, ma non forniscono l'esperienza utente completa Windows 7 e non supportano le librerie. Alcune delle nuove funzionalità supportate dalle **interfacce correlate a IFileDialog** includono:
 
--   L'utente può accedere alle proprietà del file supportate da Esplora risorse di Windows 7 per la ricerca e la selezione dei file.
--   Il programma può usare interfacce e metodi dell'API dello spazio dei nomi della Shell per lavorare con gli elementi.
--   Il programma può utilizzare un modello di personalizzazione basato sui dati anziché un modello di personalizzazione basato sui file di risorse per aggiungere nuovi controlli alle finestre di dialogo file comuni.
+-   L'utente può accedere alle proprietà dei file supportate dal Windows 7 Windows Explorer per cercare e selezionare i file.
+-   Il programma può usare interfacce e metodi dell'API dello spazio dei nomi Shell per usare gli elementi.
+-   Il programma può usare un modello di personalizzazione basato sui dati anziché un modello di personalizzazione basato su file di risorse per aggiungere nuovi controlli alle finestre di dialogo di file comuni.
 
-È consigliabile usare le interfacce correlate a [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)nei casi seguenti:
+È consigliabile usare [**le interfacce correlate a IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)quando:
 
--   è necessario personalizzare la finestra di dialogo file comune per il programma in Windows 7. Questo consentirà al programma di lavorare con le librerie e supportare la personalizzazione della finestra di dialogo.
--   si desidera che l'utente sia in grado di selezionare più file da una finestra di dialogo file comune. In questo modo si otterrà i percorsi corretti per l'oggetto selezionato perché una raccolta può includere contenuto archiviato in cartelle diverse.
+-   è necessario personalizzare la finestra di dialogo file comune per il programma in Windows 7. In questo modo il programma può usare le librerie e supportare la personalizzazione della finestra di dialogo.
+-   si vuole che l'utente sia in grado di selezionare più file da una finestra di dialogo di file comune. In questo modo si otterrà i percorsi corretti per l'oggetto selezionato perché una libreria può avere contenuto archiviato in cartelle diverse.
 
-Per ulteriori informazioni sulle interfacce correlate a [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog), vedere:
+Per altre informazioni sulle [**interfacce correlate a IFileDialog,**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)vedere:
 
 -   [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)
 -   [**IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog)
@@ -103,9 +103,9 @@ Per ulteriori informazioni sulle interfacce correlate a [**IFileDialog**](/windo
 
 ## <a name="enabling-library-selection-from-the-user-interface"></a>Abilitazione della selezione della libreria dall'interfaccia utente
 
-Se il programma consente all'utente di selezionare una cartella, ad esempio per le funzioni di importazione o esportazione, in Windows 7, deve consentire all'utente di selezionare anche una libreria. L'interfaccia [**IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) e la funzione [**SHBrowseForFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera) consentono all'utente di selezionare una libreria quando viene richiesto di selezionare una cartella. Per la funzione **SHBrowseForFolder** è preferibile l'interfaccia **IFileOpenDialog** , perché **IFileOpenDialog** supporta l'interfaccia utente di Windows 7.
+Se il programma consente all'utente di selezionare una cartella, ad esempio per le funzioni di importazione o esportazione, in Windows 7 dovrebbe consentire all'utente di selezionare anche una libreria. [**L'interfaccia IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) e la [**funzione SHBrowseForFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera) consentono all'utente di selezionare una libreria quando viene richiesto di selezionare una cartella. **L'interfaccia IFileOpenDialog** è preferibile alla funzione **SHBrowseForFolder** perché **IFileOpenDialog** supporta l'interfaccia utente Windows 7.
 
-Per consentire agli utenti di selezionare le cartelle quando si usa l'interfaccia [**IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) , chiamare SetOption con il \_ flag Fos PICKFOLDERS impostato e assicurarsi che il \_ flag Fos FORCEFILESYSTEM sia chiaro.
+Per consentire agli utenti di selezionare cartelle quando si usa [**l'interfaccia IFileOpenDialog,**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) chiamare SetOptions con il flag FOS PICKFOLDERS impostato e assicurarsi che il \_ flag FOS \_ FORCEFILESYSTEM sia deselezionato.
 
 
 ```C++
@@ -118,7 +118,7 @@ hr = fileOpenDialogBox->SetOptions(fileOptions);
 
 
 
-Per consentire agli utenti di selezionare le cartelle quando si chiama la funzione SHBrowseForFolder, nel membro ulFlags della struttura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) impostare il \_ flag BIF USENEWUI e deselezionare il \_ flag BIF RETURNONLYFSDIRS.
+Per consentire agli utenti di selezionare cartelle quando chiamano la funzione SHBrowseForFolder, nel membro ulFlags della struttura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) impostare il flag BIF USENEWUI e cancellare il \_ flag BIF \_ RETURNONLYFSDIRS.
 
 
 ```C++
@@ -132,13 +132,13 @@ pidl = SHBrowseForFolder(&browseInfo);
 
 ## <a name="accessing-library-content-in-a-program"></a>Accesso al contenuto della libreria in un programma
 
-Per accedere al contenuto di una raccolta, è necessario usare l'API shell di Windows. Non è possibile usare le funzioni dell'API del file System per accedere al contenuto della libreria perché le librerie non sono oggetti di file System. Se il programma usa un browser file personalizzato basato sull'API del file System, non sarà in grado di esplorare le librerie o accedere al contenuto della libreria.
+Per accedere al contenuto di una libreria, è necessario usare l'API Windows Shell. Le funzioni dell'API del file system non possono essere usate per accedere al contenuto della libreria perché le librerie non sono oggetti del file system. Se il programma usa un browser di file personalizzato basato sull'API del file system, non sarà in grado di esplorare le librerie o accedere al contenuto della libreria.
 
-In questa sezione viene descritto come accedere al contenuto della libreria in modo che sia possibile selezionare il modo migliore per aggiornare il programma per l'utilizzo delle librerie.
+Questa sezione descrive come accedere al contenuto della libreria in modo da poter selezionare il modo migliore per aggiornare il programma in modo che funzioni con le librerie.
 
 ### <a name="accessing-library-content-with-the-ishelllibrary-interface"></a>Accesso al contenuto della libreria con l'interfaccia IShellLibrary
 
-Il modo più semplice per accedere al contenuto della libreria consiste nell'usare l' [**API della libreria della shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary). Se si sta lavorando a un programma che usa l'API del file System, l' **API della libreria shell** può restituire le cartelle del file System di una libreria, riducendo al minimo la modifica apportata al codice del programma esistente.
+Il modo più semplice per un programma di accedere al contenuto della libreria è usare [**l'API Shell Library**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary). Se si usa un programma che usa l'API del file system, **l'API** Libreria shell può restituire le cartelle del file system di una libreria, riducendo al minimo la modifica al codice del programma esistente.
 
 
 ```C++
@@ -160,71 +160,71 @@ hr = pslLibrary->GetFolders(LFF_FORCEFILESYSTEM, IID_PPV_ARGS(&pictureFolders));
 
 
 
-### <a name="accessing-library-content-with-the-shell-apis"></a>Accesso al contenuto della libreria con le API della shell
+### <a name="accessing-library-content-with-the-shell-apis"></a>Accesso al contenuto della libreria con le API shell
 
-Poiché gli oggetti libreria fanno parte del modello di programmazione della shell, possono essere usati con altre API della shell di Windows. Ad esempio, è possibile usare le interfacce [**IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) e [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) nel programma, insieme alle funzioni di supporto correlate, per accedere al contenuto di una libreria allo stesso modo in cui si enumerano le cartelle e il contenuto della cartella per accedere al contenuto con le API file System.
+Poiché gli oggetti libreria fanno parte del modello di programmazione Shell, possono essere usati con altre API Windows Shell. Ad esempio, è possibile usare le interfacce [**IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) e [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) nel programma, insieme alle funzioni helper correlate, per accedere al contenuto di una libreria nello stesso modo in cui si enumerano le cartelle e il contenuto delle cartelle per accedere al contenuto con le API file system.
 
-Le API della shell di Windows supportano due modalità di enumerazione per accedere al contenuto di una libreria:
+Le WINDOWS Shell supportano due modalità di enumerazione per accedere al contenuto di una libreria:
 
--   **Esplora enumerazione**
+-   **Enumerazione Browse**
 
-    L'enumerazione Browse è la modalità di enumerazione predefinita ed enumera il contenuto di una cartella di libreria. \_ \_ Per utilizzare questa modalità, deselezionare il flag di enumerazione di navigazione SHCONTF.
+    L'enumerazione Browse è la modalità di enumerazione predefinita ed enumera il contenuto di una cartella della libreria. Deselezionare il flag SHCONTF \_ NAVIGATION \_ ENUM per usare questa modalità.
 
 -   **Enumerazione di navigazione**
 
-    L'enumerazione di navigazione enumera le cartelle della libreria. Impostare il \_ \_ flag di enumerazione di navigazione SHCONTF per utilizzare questa modalità.
+    L'enumerazione di navigazione enumera le cartelle della libreria. Impostare il flag SHCONTF \_ NAVIGATION \_ ENUM per usare questa modalità.
 
-Se il programma utilizza un controllo albero personalizzato per spostarsi tra le cartelle dell'utente, l'enumerazione delle cartelle nella modalità di enumerazione di navigazione fornirà un elenco delle cartelle di una libreria coerenti con il modo in cui Esplora risorse enumera le cartelle in Windows 7.
+Se il programma usa un controllo albero personalizzato per esplorare le cartelle dell'utente, l'enumerazione delle cartelle nella modalità di enumerazione di navigazione offrirà un elenco delle cartelle di una libreria coerente con il modo in cui esplora Windows enumera le cartelle in Windows 7.
 
-Per esempi relativi all'uso di queste funzionalità in un programma, vedere l'esempio ShellStorage nel Windows SDK.
+Per esempi su come utilizzare queste funzionalità in un programma, vedere l'esempio ShellStorage in Windows SDK.
 
 ## <a name="saving-user-content-in-a-library"></a>Salvataggio del contenuto utente in una raccolta
 
-Il programma può salvare il contenuto utente in una raccolta e in una cartella della libreria. Analogamente, l'utente può salvare in una cartella specifica in una raccolta o semplicemente salvarla nella libreria.
+Il programma può salvare il contenuto dell'utente in una libreria e in una cartella della libreria. Analogamente, l'utente può salvare in una cartella specifica in una libreria o semplicemente salvarla nella libreria.
 
-Ogni libreria ha una cartella che viene designata come percorso di salvataggio predefinito. Il percorso di salvataggio predefinito viene definito al momento della creazione della libreria. Tuttavia, l'utente può riassegnare il percorso di salvataggio predefinito come qualsiasi cartella della libreria. Mentre l'utente non deve configurare un percorso di salvataggio predefinito, è possibile modificarlo. Se l'utente elimina la cartella attualmente impostata come percorso di salvataggio predefinito, nella libreria la cartella successiva nella libreria verrà automaticamente configurata come percorso di salvataggio predefinito.
+Ogni libreria ha una cartella designata come percorso di salvataggio predefinito. Il percorso di salvataggio predefinito viene definito al momento della creazione della libreria. tuttavia l'utente può riassegnare il percorso di salvataggio predefinito come qualsiasi cartella nella libreria. Anche se l'utente non deve configurare un percorso di salvataggio predefinito, ha la possibilità di modificarlo. Se l'utente elimina la cartella attualmente impostata come percorso di salvataggio predefinito, la libreria configurerà automaticamente la cartella successiva nella libreria come percorso di salvataggio predefinito.
 
-È possibile salvare il contenuto utente in una raccolta in diversi modi.
+Esistono diversi modi per salvare il contenuto utente in una raccolta.
 
--   **API shell**
+-   **Shell API**
 
-    Se si usa il modello di programmazione della shell e si salva un elemento della shell, come rappresentato da [**IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem), IStorage o IStream, in un oggetto libreria, l'elemento della shell verrà automaticamente archiviato nel percorso di salvataggio predefinito della libreria.
+    Se si usa il modello di programmazione Shell e si salva un elemento Shell, come rappresentato da [**IShellItem,**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem)IStorage o IStream, in un oggetto libreria, l'elemento Shell verrà archiviato automaticamente nel percorso di salvataggio predefinito della libreria.
 
--   **API del file System**
+-   **API del file system**
 
-    Se si dispone di un programma esistente che utilizza molte chiamate API del file System, è possibile ottenere il percorso della cartella definita come percorso di salvataggio predefinito della libreria. Il percorso della cartella può quindi essere passato a un'API del file System.
+    Se si dispone di un programma esistente che usa molte chiamate API del file system, è possibile ottenere un percorso alla cartella definita come percorso di salvataggio predefinito della libreria. Il percorso della cartella può quindi essere passato a un'API del file system.
 
-Per esempi relativi all'uso di queste funzionalità in un programma, vedere l'esempio ShellStorage nel Windows SDK.
+Per esempi su come utilizzare queste funzionalità in un programma, vedere l'esempio ShellStorage in Windows SDK.
 
 ## <a name="supporting-drag-and-drop-operations-in-a-library"></a>Supporto delle operazioni di trascinamento della selezione in una libreria
 
-Se il programma supporta le operazioni di trascinamento della selezione, è necessario aggiornarle per supportare l'interazione corretta della libreria. Se un file viene rilasciato in una raccolta, il file eliminato deve essere salvato nel percorso di salvataggio predefinito. Se una cartella viene rilasciata in una raccolta, la cartella eliminata deve essere aggiunta come nuova cartella alla libreria. Se un file viene rilasciato in una cartella esistente che non è il percorso di salvataggio predefinito, il file deve essere aggiunto alla cartella selezionata.
+Se il programma supporta le azioni di trascinamento della selezione, queste devono essere aggiornate per supportare l'interazione corretta con la libreria. Se un file viene rilasciato in una libreria, il file eliminato deve essere salvato nel percorso di salvataggio predefinito. Se una cartella viene rilasciata in una libreria, la cartella eliminata deve essere aggiunta come nuova cartella alla libreria. Se un file viene rilasciato in una cartella esistente che non è il percorso di salvataggio predefinito, il file deve essere aggiunto alla cartella selezionata.
 
-Per esempi relativi all'aggiunta del supporto per le librerie per la funzionalità di trascinamento della selezione dei programmi, vedere l'esempio ShellLibraryCommandLine nel Windows SDK.
+Per esempi su come aggiungere il supporto della libreria per la funzionalità di trascinamento della selezione dei programmi, vedere l'esempio ShellLibraryCommandLine in Windows SDK.
 
-## <a name="keeping-in-sync-with-a-library"></a>Mantenimento della sincronizzazione con una libreria
+## <a name="keeping-in-sync-with-a-library"></a>Mantenere la sincronizzazione con una libreria
 
-In questo argomento viene descritto come un programma può rimanere aggiornato sul contenuto di una raccolta.
+Questo argomento descrive come un programma può mantenere aggiornata la visualizzazione del contenuto di una libreria.
 
 ### <a name="bulk-update"></a>Aggiornamento bulk
 
-Poiché l'utente può modificare le cartelle di una libreria in modo interattivo quando il programma non è in esecuzione, il programma deve chiamare [**SHResolveLibrary**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shresolvelibrary) quando inizia a individuare e archiviare le modifiche apportate alla libreria. L'API shell fornisce la funzione **SHResolveLibrary** per consentire a un programma di ottenere il contenuto corrente di una raccolta e i percorsi correnti di tutte le cartelle che la libreria potrebbe contenere.
+Poiché l'utente può modificare le cartelle di una libreria in modo interattivo quando il programma non è in esecuzione, il programma deve chiamare [**SHResolveLibrary**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shresolvelibrary) quando inizia a individuare e archiviare le modifiche alla libreria. L'API Shell fornisce la funzione **SHResolveLibrary** per consentire a un programma di ottenere il contenuto corrente di una libreria e i percorsi correnti di tutte le cartelle che la libreria potrebbe contenere.
 
-Si noti che [**SHResolveLibrary**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shresolvelibrary) è una funzione di blocco che può richiedere molto tempo per la restituzione a seconda di ciò che è stato modificato nella libreria. Di conseguenza, non deve essere chiamato da un thread dell'interfaccia utente.
+Si noti [**che SHResolveLibrary**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shresolvelibrary) è una funzione di blocco che potrebbe richiedere molto tempo a seconda delle modifiche nella libreria. Di conseguenza, non deve essere chiamato da un thread dell'interfaccia utente.
 
-Dopo che il programma è stato aggiornato, è possibile registrarsi per le notifiche di modifica per mantenere una visualizzazione corrente.
+Dopo che il programma è stato aggiornato, può quindi registrarsi per le notifiche di modifica per mantenere una visualizzazione corrente.
 
-### <a name="shell-api-notification"></a>Notifica API shell
+### <a name="shell-api-notification"></a>Notifica dell'API shell
 
-L'API shell di Windows fornisce la funzione [**SHChangeNotifyRegister**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister) , che rappresenta la modalità preferita per i processi non di servizio di ricevere una notifica di una modifica nella libreria.
+L Windows API Shell di Windows fornisce la funzione [**SHChangeNotifyRegister,**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister) che è il modo preferito per ricevere una notifica ai processi non di servizio di una modifica nella libreria.
 
-Per rilevare le modifiche apportate agli elementi all'interno di una libreria tramite l'API della shell di Windows, chiamare [**SHChangeNotifyRegister**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister) per registrare il programma per le notifiche delle modifiche apportate agli elementi in una cartella di libreria. Questa funzione può notificare al programma se è presente una modifica in qualsiasi libreria o solo in una libreria specifica. Le notifiche vengono inviate immediatamente quando viene modificata una libreria.
+Per rilevare le modifiche agli elementi all'interno di una libreria usando l'API shell di Windows, chiamare [**SHChangeNotifyRegister**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister) per registrare il programma per le notifiche delle modifiche apportate agli elementi in una cartella della libreria. Questa funzione può inviare una notifica al programma in caso di modifica in una libreria o solo in una libreria specifica. Le notifiche vengono inviate immediatamente quando viene modificata una libreria.
 
-### <a name="file-system-api-notification"></a>Notifica dell'API del file System
+### <a name="file-system-api-notification"></a>Notifica dell'API del file system
 
-Le notifiche del file System devono essere usate nei processi del servizio.
+Le notifiche del file system devono essere usate nei processi del servizio.
 
-Per rilevare le modifiche apportate agli elementi di una raccolta tramite l'API del file System, enumerare le cartelle nella libreria e chiamare [**FindFirstChangeNotification**](/windows/win32/api/fileapi/nf-fileapi-findfirstchangenotificationa) per ogni cartella da monitorare. Il programma riceverà una notifica in caso di modifica di una cartella monitorata. Per trovare il file specifico di file modificato nella cartella, chiamare [**ReadDirectoryChangesW**](/windows/win32/api/winbase/nf-winbase-readdirectorychangesw). Per rilevare le modifiche nel file di descrizione della libreria, monitorare la cartella che lo contiene. Il file di descrizione della libreria si trova nella cartella [**FOLDERID \_ Libraries**](knownfolderid.md) . Il file di descrizione della libreria, tuttavia, non deve essere aperto o modificato.
+Per rilevare le modifiche apportate agli elementi in una libreria usando l'API del file system, enumerare le cartelle nella libreria e chiamare [**FindFirstChangeNotification**](/windows/win32/api/fileapi/nf-fileapi-findfirstchangenotificationa) per ogni cartella da monitorare. Il programma riceverà una notifica quando cambia una cartella monitorata. Per trovare il file specifico dei file modificati nella cartella, chiamare [**ReadDirectoryChangesW**](/windows/win32/api/winbase/nf-winbase-readdirectorychangesw). Per rilevare le modifiche nel file di descrizione della libreria, monitorare la cartella che lo contiene. Il file di descrizione della libreria è disponibile nella [**cartella LIBRERIE \_ FOLDERID.**](knownfolderid.md) Il file di descrizione della libreria, tuttavia, non deve essere aperto o modificato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -236,16 +236,16 @@ Per rilevare le modifiche apportate agli elementi di una raccolta tramite l'API 
 [**IShellLibrary**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary)
 </dt> <dt>
 
-[Collegamenti Shell](./links.md)
+[Collegamenti alla shell](./links.md)
 </dt> <dt>
 
 [Cartelle note](known-folders.md)
 </dt> <dt>
 
-[Schema Descrizione libreria](library-schema-entry.md)
+[Schema di descrizione della libreria](library-schema-entry.md)
 </dt> <dt>
 
-[**argomenti di IID \_ PPV \_**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
+[**IID \_ PPV \_ ARGS**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
 </dt> </dl>
 
  
