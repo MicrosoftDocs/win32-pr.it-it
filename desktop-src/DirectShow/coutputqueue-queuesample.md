@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8efe0ec3b2326d1af0d0075770bdc6443ab9dcad
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3770029f732629f12d94c9304d144226d873f38cc1b8452036d39ca2abdd757a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909591"
 ---
 # <a name="coutputqueuequeuesample-method"></a>Metodo COutputQueue.QueueSample
 
@@ -55,25 +55,25 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo aggiunge un campione alla parte finale della coda. Mantenere la sezione critica prima di chiamare questo metodo e chiamarla solo quando l'oggetto usa un thread per distribuire i campioni. Per determinare se l'oggetto usa un thread, chiamare il [**metodo COutputQueue::IsQueued.**](coutputqueue-isqueued.md)
+Questo metodo aggiunge un esempio alla parte finale della coda. Mantenere la sezione critica prima di chiamare questo metodo e chiamarlo solo quando l'oggetto usa un thread per fornire esempi. Per determinare se l'oggetto usa un thread, chiamare il [**metodo COutputQueue::IsQueued.**](coutputqueue-isqueued.md)
 
-Questo metodo può essere usato anche per inserire i messaggi di controllo nella coda. Un messaggio di controllo è una costante definita (cast a un tipo PTR LONG) che indica al \_ thread di eseguire un'azione. La **classe COutputQueue** definisce i messaggi di controllo illustrati nella tabella seguente.
+Questo metodo può essere usato anche per inserire i messaggi di controllo nella coda. Un messaggio di controllo è una costante definita (cast a un tipo LONG PTR) che indica al thread di \_ eseguire un'azione. La **classe COutputQueue** definisce i messaggi di controllo illustrati nella tabella seguente.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |---------------|----------------------------------------|
 | Message       | Azione                                 |
 | PACCHETTO \_ EOS   | Recapitare una notifica di fine flusso. |
 | NUOVO \_ SEGMENTO  | Distribuire un nuovo segmento.                 |
-| REIMPOSTA \_ PACCHETTO | Reimpostare lo stato della coda.          |
-| SEND \_ PACKET  | Inviare un batch parziale di campioni.       |
+| REIMPOSTARE \_ IL PACCHETTO | Reimpostare lo stato della coda.          |
+| INVIARE \_ UN PACCHETTO  | Inviare un batch parziale di esempi.       |
 
 
 
  
 
-Si tratta di un metodo protetto, che la **classe COutputQueue usa** internamente.
+Si tratta di un metodo protetto, che la **classe COutputQueue** usa internamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,7 +81,7 @@ Si tratta di un metodo protetto, che la **classe COutputQueue usa** internamente
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

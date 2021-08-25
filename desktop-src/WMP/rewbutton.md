@@ -1,9 +1,9 @@
 ---
 title: REWBUTTON
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | REWBUTTON
+description: Si tratta di un pulsante predefinito con i valori predefiniti seguenti. | REWBUTTON
 ms.assetid: 941ea1b3-d276-4073-b9ae-60574052f544
 keywords:
-- Media Player Windows REWBUTTON
+- Controllo REWBUTTON Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c94836e09b5b6a63cc45af850464787218f228a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3020ecf13971cd6e23b9807988703a5b9d081d5124562522a5f11cbb59f3fb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901021"
 ---
 # <a name="rewbutton"></a>REWBUTTON
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **pulsante predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.controls.fastReverse()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.fastReverse"
 
 ## <a name="remarks"></a>Commenti
 
-Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+È possibile eseguire **l'override di** tutte le proprietà di questo pulsante specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

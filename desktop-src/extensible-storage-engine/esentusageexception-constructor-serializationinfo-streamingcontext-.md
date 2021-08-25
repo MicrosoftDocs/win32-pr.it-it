@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 46100a5f359616b18e5eae0d7b9d9a04b0c2fc25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a93c67f5bb8b324eaab04797f3a7d6bba6a5e4cf6867bd779e16057789503fcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781261"
 ---
 # <a name="esentusageexception-constructor-serializationinfo-streamingcontext"></a>Costruttore EsentUsageException (SerializationInfo, StreamingContext)
 
-Inizializza una nuova istanza della classe EsentUsageException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.
+Inizializza una nuova istanza della classe EsentUsageException. Questo costruttore viene usato per deserializzare un'eccezione serializzata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,14 +59,14 @@ protected EsentUsageException(
 #### <a name="parameters"></a>Parametri
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
     Dati necessari per deserializzare l'oggetto.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contesto di deserializzazione.
 
@@ -78,6 +78,6 @@ protected EsentUsageException(
 
 [Membri di EsentUsageException](./esentusageexception-members.md)
 
-[Overload EsentUsageException](./esentusageexception-constructor.md)
+[Overload di EsentUsageException](./esentusageexception-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

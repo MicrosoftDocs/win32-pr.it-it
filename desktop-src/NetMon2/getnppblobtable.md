@@ -1,7 +1,7 @@
 ---
-description: La funzione GetNPPBlobTable recupera una tabella BLOB NPP che rappresenta le schede di rete di registrazione nel computer locale.
+description: La funzione GetNPPBlobTable recupera una tabella BLOB NPP che rappresenta le schede di interfaccia di rete del registro nel computer locale.
 ms.assetid: 9e61faf5-1f06-40b5-bf47-f258ffb5151a
-title: Funzione GetNPPBlobTable (Netmon. h)
+title: Funzione GetNPPBlobTable (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 883493215aaac0fa2568baec69232b379b8aa808
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49920df1be929eb9b35781aeabdcdf47167e82a94066e2d3237207dd00b08f74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910701"
 ---
-# <a name="getnppblobtable-function"></a>GetNPPBlobTable (funzione)
+# <a name="getnppblobtable-function"></a>Funzione GetNPPBlobTable
 
-La funzione **GetNPPBlobTable** recupera una tabella BLOB NPP che rappresenta le schede di rete di registrazione nel computer locale.
+La **funzione GetNPPBlobTable** recupera una tabella BLOB NPP che rappresenta le schede di interfaccia di rete del registro nel computer locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ DWORD GetNPPBlobTable(
 
 <dl> <dt>
 
-*hFilterBlob* \[ in\]
+*hFilterBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un BLOB di filtro che limita i BLOB di NPP restituiti nella tabella.
+Handle a un BLOB di filtro che limita i BLOB NPP restituiti nella tabella.
 
 </dd> <dt>
 
-*ppBlobTable* \[ out\]
+*ppBlobTable* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura di [ \_ tabella BLOB](blob-table.md) che contiene almeno un puntatore del BLOB.
+Puntatore a [una struttura BLOB \_ TABLE](blob-table.md) che contiene almeno un puntatore BLOB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -64,10 +64,10 @@ Se la funzione ha esito negativo, il valore restituito è uno dei codici di erro
 
 | Codice restituito                                                                                                | Descrizione                                                            |
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ Nessuna \_ \_ dll NPP**</dt> </dl>         | Non sono state trovate dll nella directory NPP.<br/>                    |
-| <dl> <dt>**NMERR \_ Nessuna \_ \_ dll NPP \_ valida**</dt> </dl> | Nessuna dll nella directory NPP era una dll NPP valida.<br/>  |
-| <dl> <dt>**NMERR \_ senza \_ \_ centrali corrispondente**</dt> </dl>   | I BLOB di NPP sono stati individuati, ma nessuno ha superato il test di filtro.<br/> |
-| <dl> <dt>**NMERR \_ da \_ \_ memor**</dt> </dl>       | Network Monitor non è stato in grado di allocare memoria.<br/>            |
+| <dl> <dt>**NMERR \_ NO \_ NPP \_ DLL**</dt> </dl>         | Non sono state trovate DLL nella directory NPP.<br/>                    |
+| <dl> <dt>**NMERR \_ NO \_ VALID \_ NPP DLLS (NESSUNA DLL NPP \_ VALIDA)**</dt> </dl> | Nessuna DLL nella directory NPP era valida.<br/>  |
+| <dl> <dt>**NMERR \_ NO \_ MATCHING \_ NPPS**</dt> </dl>   | Sono stati individuati BLOB NPP, ma nessuno ha superato il test del filtro.<br/> |
+| <dl> <dt>**NMERR \_ OUT \_ OF \_ MEMOR**</dt> </dl>       | Network Monitor non è stato in grado di allocare memoria.<br/>            |
 
 
 
@@ -75,13 +75,13 @@ Se la funzione ha esito negativo, il valore restituito è uno dei codici di erro
 
 ## <a name="remarks"></a>Commenti
 
-Il BLOB denominato da *hFilterBlob* può anche essere un BLOB speciale.
+Anche il BLOB denominato *da hFilterBlob* può essere un BLOB speciale.
 
-Se si imposta il flag nel BLOB di filtro su **true**, la tabella BLOB restituita può includere anche BLOB speciali.
+Se si imposta il flag nel BLOB del filtro su **TRUE,** la tabella BLOB restituita può includere anche BLOB speciali.
 
-Se il BLOB denominato da *hFilterBlob* è un BLOB speciale, l'interfaccia utente Network Monitor tenterà di elaborarla. Si supponga, ad esempio, che una chiamata precedente restituisca un BLOB speciale dall'oggetto NPP remoto. L'applicazione inserisce il tag necessario, il \_ nome del computer. Il Finder passa quindi questo BLOB all'elemento NPP remoto, che quindi restituisce una tabella dei BLOB di NPP associati al nome del computer.
+Se il BLOB denominato *da hFilterBlob* è un BLOB speciale, l'Network Monitor'interfaccia utente tenterà di elaborarlo. Si supponga, ad esempio, che una chiamata precedente restituisca un BLOB speciale dal servizio NPP remoto. L'applicazione inserisce il tag richiesto, MACHINE \_ NAME. Il finder passa quindi questo BLOB all'NPP remoto, che quindi restituisce una tabella dei BLOB NPP associati al nome del computer.
 
-Per eliminare definitivamente tutti i BLOB restituiti e la tabella BLOB, il chiamante è responsabile della chiamata della funzione **DestroyBlob** .
+Per eliminare tutti i BLOB restituiti e la tabella BLOB, il chiamante è responsabile della chiamata alla **funzione DestroyBlob.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Per eliminare definitivamente tutti i BLOB restituiti e la tabella BLOB, il chia
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

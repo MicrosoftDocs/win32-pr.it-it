@@ -1,62 +1,62 @@
 ---
-description: Modalità senza finestra VMR
+description: Modalità senza finestra vmr
 ms.assetid: 0dc871d2-79c4-4bf8-96ef-13c4d1ab4497
-title: Modalità senza finestra VMR
+title: Modalità senza finestra vmr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b137fbc1351f2bbe5ed38673b681e45558675d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 193f672e0fc1e3dced4bdff16da0e85123079eb94f2ac3c5fdb302b67c9432b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830586"
 ---
-# <a name="vmr-windowless-mode"></a>Modalità senza finestra VMR
+# <a name="vmr-windowless-mode"></a>Modalità senza finestra vmr
 
-La modalità senza finestra è il modo migliore per le applicazioni per eseguire il rendering di video all'interno di una finestra dell'applicazione. In modalità senza finestra, il renderer di mixaggio video non carica il componente Window Manager e pertanto non supporta le interfacce [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) o [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Al contrario, l'applicazione fornisce la finestra di riproduzione e imposta un rettangolo di destinazione nell'area client per VMR per creare il video. VMR usa un oggetto di DirectDraw Clipper per garantire che il video venga ritagliato nella finestra dell'applicazione e non venga visualizzato in altre finestre. Il VMR non esegue la sottoclasse della finestra dell'applicazione né installa alcun hook di sistema/processo.
+La modalità senza finestra è il modo preferito per le applicazioni di eseguire il rendering di video all'interno di una finestra dell'applicazione. In modalità senza finestra, il renderer di combinazione video non carica il componente Gestione finestre e pertanto non supporta le [**interfacce IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) o [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Al contrario, l'applicazione fornisce la finestra di riproduzione e imposta un rettangolo di destinazione nell'area client per il vmr per disegnare il video. La macchina virtuale usa un oggetto clipper DirectDraw per assicurarsi che il video venga ritagliato nella finestra dell'applicazione e non venga visualizzato in altre finestre. La macchina virtuale non sottoclassa la finestra dell'applicazione né installa alcun hook di sistema/processo.
 
 In modalità senza finestra, la sequenza di eventi durante la connessione e la transizione allo stato di esecuzione è la seguente:
 
--   Il filtro upstream propone un tipo di supporto, che il VMR accetta o rifiuta.
--   Se il tipo di supporto è accettato, il VMR chiama Allocator-Presenter per ottenere una superficie DirectDraw. Se la superficie viene creata correttamente, i pin Connect e VMR sono pronti per la transizione allo stato di esecuzione.
--   Quando viene eseguito il grafico dei filtri, il decodificatore chiama **GetBuffer** per ottenere un esempio di supporto dall'allocatore. VMR esegue una query su Allocator-Presenter per assicurarsi che la profondità dei pixel, le dimensioni del rettangolo e altri parametri sulla relativa superficie DirectDraw siano compatibili con il video in arrivo. Se sono compatibili, VMR restituisce la superficie DirectDraw al decodificatore. Dopo la decodifica della superficie del decodificatore, l'unità di sincronizzazione principale di VMR convalida i timestamp. Questa unità blocca la chiamata di **ricezione** fino a quando non arriva l'ora di presentazione. A questo punto, VMR chiama **PresentImage** su Allocator-Presenter, che presenta la superficie alla scheda grafica.
+-   Il filtro upstream propone un tipo di supporto, che il vmr accetta o rifiuta.
+-   Se il tipo di supporto viene accettato, la macchina virtuale chiama allocator-presenter per ottenere una superficie DirectDraw. Se la superficie viene creata correttamente, i pin si connettono e la macchina virtuale è pronta per la transizione allo stato di esecuzione.
+-   Quando viene eseguito il grafo del filtro, il decodificatore chiama **GetBuffer** per ottenere un campione multimediale dall'allocatore. La macchina virtuale esegue una query sull'allocatore-presentatore per verificare che la profondità in pixel, le dimensioni del rettangolo e altri parametri sulla superficie DirectDraw siano compatibili con il video in ingresso. Se sono compatibili, la macchina virtuale restituisce la superficie DirectDraw al decodificatore. Dopo che il decodificatore è stato decodificato in superficie, l'unità di sincronizzazione principale della macchina virtuale convalida i timestamp. Questa unità blocca la **chiamata Receive** fino all'arrivo dell'ora di presentazione. A questo punto, la macchina virtuale chiama **PresentImage** sull'allocator-presenter, che presenta la superficie alla scheda grafica.
 
-La figura seguente mostra il VMR in modalità senza finestra con più flussi di input.
+La figura seguente mostra la macchina virtuale in modalità senza finestra con più flussi di input.
 
-![VMR in modalità senza finestra](images/vmr-windowless-mult-streams.png)
+![vmr in modalità senza finestra](images/vmr-windowless-mult-streams.png)
 
 **Configurazione di VMR-7 per la modalità senza finestra**
 
-Per configurare VMR-7 per la modalità senza finestra, eseguire tutti i passaggi seguenti prima di connettere i pin di input di VMR:
+Per configurare VMR-7 per la modalità senza finestra, eseguire tutti i passaggi seguenti prima di connettere uno dei pin di input della macchina virtuale:
 
 1.  Creare il filtro e aggiungerlo al grafico.
-2.  Chiamare il metodo [**IVMRFilterConfig:: SetRenderingMode**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingmode) con il flag VMRMode senza \_ finestra.
-3.  Facoltativamente, configurare VMR per più flussi di input chiamando [**IVMRFilterConfig:: SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). VMR crea un pin di input per ogni flusso. Usare l'interfaccia [**IVMRMixerControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixercontrol) per impostare l'ordine Z e altri parametri per il flusso. Per altre informazioni, vedere [VMR con più flussi (modalità di combinazione)](vmr-with-multiple-streams--mixing-mode.md).
+2.  Chiamare il [**metodo IVMRFilterConfig::SetRenderingMode**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingmode) con il flag senza finestra VMRMode. \_
+3.  Facoltativamente, configurare la macchina virtuale per più flussi di input chiamando [**IVMRFilterConfig::SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). La macchina virtuale crea un pin di input per ogni flusso. Usare [**l'interfaccia IVMRMixerControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixercontrol) per impostare l'ordine Z e altri parametri per il flusso. Per altre informazioni, vedere VMR con più [Flussi (modalità di combinazione).](vmr-with-multiple-streams--mixing-mode.md)
 
-    Se non si chiama **SetNumberOfStreams**, il valore predefinito di VMR-7 è un pin di input. Una volta connessi i pin di input, il numero di pin non può essere modificato.
+    Se non si chiama **SetNumberOfStreams,** il valore predefinito di VMR-7 è un pin di input. Dopo la connessione dei pin di input, il numero di pin non può essere modificato.
 
-4.  Chiamare [**IVMRWindowlessControl:: SetVideoClippingWindow**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoclippingwindow) per specificare la finestra in cui verrà visualizzato il video di cui è stato eseguito il rendering.
+4.  Chiamare [**IVMRWindowlessControl::SetVideoClippingWindow**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoclippingwindow) per specificare la finestra in cui verrà visualizzato il video sottoposto a rendering.
 
-Una volta completati questi passaggi, è possibile connettere i pin di input del filtro VMR. Esistono diversi modi per creare il grafico, ad esempio la connessione diretta dei pin, l'uso di metodi di connessione intelligenti, ad esempio [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile), o l'uso del metodo [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) del generatore di grafici di acquisizione. Per ulteriori informazioni, vedere [General Graph-Building Techniques](general-graph-building-techniques.md).
+Al termine di questi passaggi, è possibile connettere i pin di input del filtro VMR. Esistono diversi modi per compilare il grafo, ad esempio connettendo i pin direttamente, usando metodi intelligent Connessione come [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile)o usando il metodo [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) di Capture Graph Builder. Per altre informazioni, vedere [General Graph-Building Techniques](general-graph-building-techniques.md).
 
-Per impostare la posizione del video all'interno della finestra dell'applicazione, chiamare il metodo [**IVMRWindowlessControl:: SetVideoPosition**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) . Il metodo [**IVMRWindowlessControl:: GetNativeVideoSize**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-getnativevideosize) restituisce le dimensioni del video nativo. Durante la riproduzione, l'applicazione deve notificare al VMR i messaggi di Windows seguenti:
+Per impostare la posizione del video all'interno della finestra dell'applicazione, chiamare il metodo [**IVMRWindowlessControl::SetVideoPosition.**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) Il [**metodo IVMRWindowlessControl::GetNativeVideoSize**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-getnativevideosize) restituisce le dimensioni native del video. Durante la riproduzione, l'applicazione deve inviare una notifica al VMR dei messaggi Windows seguenti:
 
--   \_Disegno WM: chiamare [**IVMRWindowlessControl:: RepaintVideo**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-repaintvideo) per ridisegnare l'immagine.
--   WM \_ DISPLAYCHANGE: chiamata [**IVMRWindowlessControl::D isplaymodechanged**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-displaymodechanged). Il VMR esegue le azioni necessarie per visualizzare il video alla nuova risoluzione o alla profondità del colore.
--   \_Dimensioni WM: ricalcolare la posizione del video e chiamare di nuovo [**SetVideoPosition**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) , se necessario.
+-   WM \_ PAINT: chiamare [**IVMRWindowlessControl::RepaintVideo**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-repaintvideo) per ridisegnare l'immagine.
+-   WM \_ DISPLAYCHANGE: chiamare [**IVMRWindowlessControl::D isplayModeChanged**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-displaymodechanged). La macchina virtuale prende tutte le azioni necessarie per visualizzare il video alla nuova risoluzione o profondità del colore.
+-   WM \_ SIZE: ricalcolare la posizione del video e chiamare di nuovo [**SetVideoPosition,**](/windows/desktop/api/Strmif/nf-strmif-ivmrwindowlesscontrol-setvideoposition) se necessario.
 
 > [!Note]  
-> Le applicazioni MFC devono definire un \_ gestore di messaggi WM ERASEBKGND vuoto oppure l'area di visualizzazione del video non viene ridisegnata correttamente.
+> Le applicazioni MFC devono definire un gestore di messaggi WM \_ ERASEBKGND vuoto oppure l'area di visualizzazione video non verrà ridisegnata correttamente.
 
  
 
 **Configurazione di VMR-9 per la modalità senza finestra**
 
-Per configurare VMR-9 per la modalità senza finestra, usare la procedura descritta per VMR-7 per la modalità senza finestra, ma usare le interfacce [**IVMRFilterConfig9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrfilterconfig9) e [**IVMRWindowlessControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) . L'unica differenza significativa è che VMR-9 crea quattro pin di input per impostazione predefinita, anziché un pin di input. Pertanto, è necessario chiamare **SetNumberOfStreams** solo se si combinano più di quattro flussi video.
+Per configurare VMR-9 per la modalità senza finestra, seguire la procedura descritta per vmr-7 per la modalità senza finestra, ma usare le [**interfacce IVMRFilterConfig9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrfilterconfig9) e [**IVMRWindowlessControl9.**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) L'unica differenza significativa è che vmr-9 crea quattro pin di input per impostazione predefinita, anziché un pin di input. Pertanto, è necessario chiamare **SetNumberOfStreams** solo se si combinano più di quattro flussi video.
 
 **Codice di esempio**
 
-Il codice seguente illustra come creare un filtro VMR-7, aggiungerlo al grafo del filtro DirectShow e quindi inserire il VMR in modalità senza finestra. Per VMR-9 usare CLSID \_ VideoMixingRenderer9 in **CoCreateInstance** e le corrispondenti interfacce VMR-9.
+Il codice seguente illustra come creare un filtro VMR-7, aggiungerlo al grafo del filtro DirectShow e quindi impostare la vmr in modalità senza finestra. Per VMR-9, usare CLSID \_ VideoMixingRenderer9 in **CoCreateInstance** e le interfacce VMR-9 corrispondenti.
 
 
 ```C++

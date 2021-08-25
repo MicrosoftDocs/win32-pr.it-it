@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX12SerializeVersionedRootSignature (D3dx12. h)
-description: Consente di abilitare le funzionalità della firma radice 1,1 quando sono disponibili e non richiede la gestione di due percorsi di codice per la creazione di firme radice. Questo metodo helper ricostruisce una firma radice della versione 1,0 quando la versione 1,1 non è supportata.
+title: Funzione D3DX12SerializeVersionedRootSignature (D3dx12.h)
+description: Consente di abilitare le funzionalità della firma radice 1.1 quando sono disponibili e non richiede la gestione di due percorsi di codice per la compilazione delle firme radice. Questo metodo helper ricostruisce una firma radice della versione 1.0 quando la versione 1.1 non è supportata.
 ms.assetid: 0F6BA6C1-9A33-4E99-BF34-4A0358E7427D
 keywords:
-- D3DX12SerializeVersionedRootSignature (funzione)
+- Funzione D3DX12SerializeVersionedRootSignature
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70a9d0424f7f7a7f89edde18273c5d1fa22fae28
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f69e3bf66bcbad61e3d9bf676038f27511f756d7a3a473be2c513553862eb90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851155"
 ---
-# <a name="d3dx12serializeversionedrootsignature-function"></a>D3DX12SerializeVersionedRootSignature (funzione)
+# <a name="d3dx12serializeversionedrootsignature-function"></a>Funzione D3DX12SerializeVersionedRootSignature
 
-Consente di abilitare le funzionalità della firma radice 1,1 quando sono disponibili e non richiede la gestione di due percorsi di codice per la creazione di firme radice. Questo metodo helper ricostruisce una firma radice della versione 1,0 quando la versione 1,1 non è supportata.
+Consente di abilitare le funzionalità della firma radice 1.1 quando sono disponibili e non richiede la gestione di due percorsi di codice per la compilazione delle firme radice. Questo metodo helper ricostruisce una firma radice della versione 1.0 quando la versione 1.1 non è supportata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,39 +44,39 @@ HRESULT inline D3DX12SerializeVersionedRootSignature(
 
 <dl> <dt>
 
-*pRootSignatureDesc* \[ in\]
+*pRootSignatureDesc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const D3D12 \_ versione \_ della \_ firma \_ radice \* desc**
+Tipo: **const D3D12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC \***
 
-Specifica una descrizione della [**\_ \_ firma radice \_ \_ con versione D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) che contiene una descrizione di qualsiasi versione di una firma radice.
+Specifica un [**D3D12 \_ VERSIONED \_ ROOT SIGNATURE \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_versioned_root_signature_desc) che contiene una descrizione di qualsiasi versione di una firma radice.
 
 </dd> <dt>
 
 *MaxVersion* 
 </dt> <dd>
 
-Tipo: **\_ versione della \_ firma \_ radice D3D**
+Tipo: **D3D \_ ROOT SIGNATURE \_ \_ VERSION**
 
-Specifica la versione massima supportata della [**\_ \_ firma \_ radice D3D**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version).
+Specifica il numero massimo supportato [**di D3D \_ ROOT SIGNATURE \_ \_ VERSION**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version).
 
 </dd> <dt>
 
-*ppBlob* \[ out\]
+*ppBlob* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ID3DBlob \* \***
+Tipo: **\* \* ID3DBlob**
 
-Puntatore a un blocco di memoria che riceve un puntatore all'interfaccia [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) che è possibile usare per accedere alla firma radice serializzata.
+Puntatore a un blocco di memoria che riceve un puntatore [**all'interfaccia ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) che è possibile usare per accedere alla firma radice serializzata.
 
 </dd> <dt>
 
 *ppErrorBlob* \[ out, facoltativo\]
 </dt> <dd>
 
-Tipo: **ID3DBlob \* \***
+Tipo: **\* \* ID3DBlob**
 
-Puntatore a un blocco di memoria che riceve un puntatore all'interfaccia [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) che è possibile utilizzare per accedere ai messaggi di errore del serializzatore oppure **null** se non sono presenti errori.
+Puntatore a un blocco di memoria che riceve un puntatore [**all'interfaccia ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) che è possibile usare per accedere ai messaggi di errore del serializzatore oppure **NULL** se non sono presenti errori.
 
 </dd> </dl>
 
@@ -84,11 +84,11 @@ Puntatore a un blocco di memoria che riceve un puntatore all'interfaccia [**ID3D
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce **\_ OK** se ha esito positivo; in caso contrario, restituisce uno dei [codici restituiti Direct3D 12](d3d12-graphics-reference-returnvalues.md).
+Restituisce **S \_ OK in** caso di esito positivo. In caso contrario, restituisce uno dei codici restituiti [Direct3D 12.](d3d12-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è stata rilasciata in concomitanza con l'aggiornamento dell'anniversario di Windows 10 (14393). Per supportare versioni di Windows 10 precedenti, l'uso di questa funzione richiede la configurazione di d3d12. lib per il *caricamento ritardato*.
+Questa funzione è stata rilasciata in Windows 10'aggiornamento dell'anniversario (14393). Per supportare le Windows 10 precedenti, l'uso di questa funzione richiede che d3d12.lib sia configurato per il *caricamento ritardato.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,8 +96,8 @@ Questa funzione è stata rilasciata in concomitanza con l'aggiornamento dell'ann
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

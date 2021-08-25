@@ -1,9 +1,9 @@
 ---
 title: WMPVIDEO
-description: Si tratta di un elemento VIDEO predefinito con i seguenti valori predefiniti.
+description: Si tratta di un elemento VIDEO predefinito con i valori predefiniti seguenti.
 ms.assetid: c9423aea-2d21-4c5d-8941-dd156dd07eb7
 keywords:
-- Media Player Windows WMPVIDEO
+- WmPVIDEO Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a918af8548ae7bc82cd4b1de1a81c685c1b5562
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65560b9a5633020f2bbc37209af6ce5146027323fab7e422e6feac5536d0d84d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899751"
 ---
 # <a name="wmpvideo"></a>WMPVIDEO
 
-Si tratta di un elemento **video** predefinito con i seguenti valori predefiniti.
+Si tratta di un elemento **VIDEO** predefinito con i valori predefiniti seguenti.
 
 ``` syntax
 backgroundColor="black"
@@ -32,9 +32,9 @@ verticalAlignment="stretch"
 
 ## <a name="remarks"></a>Commenti
 
-Verrà creato un elemento **video** che estenderà la finestra video quando l'interfaccia verrà ridimensionata. Il video digitale visualizzato in questa finestra si adatta allo spazio disponibile o viene scalato verso l'alto o verso il basso in base alle impostazioni del menu di **visualizzazione** del lettore in **dimensioni del video**. Il menu **Visualizza** viene visualizzato nella modalità completa del lettore o quando l'attributo **View. barra** del titolo è impostato su true in un'interfaccia personalizzata.
+Verrà creato un elemento **VIDEO** che estenderà la finestra video quando l'interfaccia viene ridimensionata. Il video digitale visualizzato in questa finestra si estenderà per adattarsi allo spazio disponibile o verrà ridimensionato in base alle impostazioni del **menu** Visualizzazione lettore in **Dimensioni video**. Il menu **Visualizza** viene visualizzato nella modalità completa di Player o quando l'attributo **VIEW.titleBar** è impostato su true in un'interfaccia.
 
-Per eseguire l'override di tutte le proprietà di questo elemento **video** , è possibile specificarle in modo esplicito.
+È possibile eseguire l'override **di tutte** le proprietà di questo elemento VIDEO specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,7 +42,7 @@ Per eseguire l'override di tutte le proprietà di questo elemento **video** , è
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------|
-| Versione<br/> | Windows Media Player 7,0 o versione successiva<br/> |
+| Versione<br/> | Windows Media Player 7.0 o versione successiva<br/> |
 
 
 

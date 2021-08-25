@@ -4,16 +4,16 @@ ms.assetid: 05f17128-dfc9-4a78-b23c-0420a1c3d1bd
 title: MeshNormals
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65b9e0ffc89af5a0a55ef7bd1fa2575a4943137e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 02a261dd8dbd46cf26116657b983eca4f693603869a80bf2fb110c0f165221ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104225423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846461"
 ---
 # <a name="meshnormals"></a>MeshNormals
 
-Definisce le normali per una mesh. La prima matrice di vettori è costituita dai normali vettori e la seconda matrice è una matrice di indici che specifica quali normali devono essere applicati a una determinata faccia. Il valore del membro nFaceNormals deve essere uguale al numero di visi in una mesh.
+Definisce le normali per una mesh. La prima matrice di vettori è i vettori normali stessi e la seconda matrice è una matrice di indici che specifica quali normali devono essere applicate a un determinato viso. Il valore del membro nFaceNormals deve essere uguale al numero di visi in una mesh.
 
 ``` syntax
 template MeshNormals
@@ -28,10 +28,10 @@ template MeshNormals
 
 Dove:
 
--   nNormals: numero di normali.
--   Vettore di matrice Normals \[ nNormals \] : matrice di normali. Vedere [**vector**](vector.md).
--   nFaceNormals-numero di normali facciali.
--   Array MeshFace faceNormals \[ nFaceNormals \] -Array of Mesh Face Normals. Vedere [**MeshFace**](meshface.md).
+-   nNormals : numero di normali.
+-   array Vector normals \[ nNormals \] : matrice di normali. Vedere [**Vettore**](vector.md).
+-   nFaceNormals : numero di normali del viso.
+-   array MeshFace faceNormals \[ nFaceNormals \] : matrice di normali del viso mesh. Vedere [**MeshFace**](meshface.md).
 
 ## <a name="see-also"></a>Vedi anche
 

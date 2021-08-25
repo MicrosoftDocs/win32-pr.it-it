@@ -1,19 +1,19 @@
 ### YamlMime:Landing
-title: Creazione di app desktop di Windows con l'API Win32
-summary: Informazioni su come creare applicazioni desktop per PC Windows con C++ e l'API Win32.
+title: Creare app Windows desktop usando l'API Win32
+summary: Informazioni su come creare app desktop per Windows PC con C++ e l'API Win32.
 metadata:
   author: mcleanbyron
-  description: Informazioni su come creare applicazioni desktop per PC Windows con C++ e l'API Win32.
+  description: Informazioni su come creare app desktop per Windows PC con C++ e l'API Win32.
   manager: jken
   ms.author: mcleans
   ms.date: 09/15/2019
   ms.topic: landing-page
-  ms.openlocfilehash: 99090d109a717c1008a11e6a9c9e6cf7a31f2b7c
-  ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+  ms.openlocfilehash: cc2d2b66adddba0b164f5f3eccae1e076fd91d451d9857ba901ec4a81ac6e9f0
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/19/2020
-  ms.locfileid: "104046582"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119848951"
 landingContent:
 - title: Introduzione
   linkLists:
@@ -29,21 +29,21 @@ landingContent:
     links:
     - text: Strumenti di sviluppo
       url: https://developer.microsoft.com/windows/downloads
-    - text: Esempi di codice di Windows
+    - text: Windows di codice
       url: https://developer.microsoft.com/windows/samples
 - title: Sviluppo
   linkLists:
   - linkListType: overview
     links:
-    - text: Funzionalità e tecnologie di Windows
+    - text: Windows funzionalità e tecnologie
       url: desktop-app-technologies.md
     - text: Modernizzare le app per Windows 10
       url: /windows/apps/desktop/modernize
   - linkListType: reference
     links:
-    - text: Riferimento all'API Win32 per funzionalità
+    - text: Informazioni di riferimento sulle API Win32 per funzionalità
       url: ./apiindex/windows-api-list.md
-    - text: Riferimento all'API Win32 per intestazione
+    - text: Informazioni di riferimento sull'API Win32 in base all'intestazione
       url: /windows/win32/api/
 - title: Risorse e community
   linkLists:
@@ -73,7 +73,7 @@ landingContent:
       url: /windows/uwp/cpp-and-winrt-apis/
     - text: Creazione di pacchetti MSIX e distribuzione
       url: /windows/msix/desktop/desktop-to-uwp-root
-    - text: Piattaforma UWP
+    - text: UWP
       url: /windows/uwp/
     - text: .NET
       url: //docs.microsoft.com/dotnet/

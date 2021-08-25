@@ -1,12 +1,12 @@
 ---
 title: Metodo SetPolicyPropertyName della classe Win32_TerminalServiceSetting
-description: Il metodo SetPolicyPropertyName imposta la proprietà DeleteTempFolders, UseTempFolders o help per la classe.
+description: Il metodo SetPolicyPropertyName imposta la proprietà DeleteTempFolders, UseTempFolders o Help per la classe .
 ms.assetid: 18d9927a-b7db-46c7-90ee-00da6de06202
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetPolicyPropertyName
-- Metodo SetPolicyPropertyName Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo SetPolicyPropertyName
+- Metodo SetPolicyPropertyName Servizi Desktop remoto
+- Metodo SetPolicyPropertyName Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto, metodo SetPolicyPropertyName
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f49732fa916dd3c37539dc35d6cef7a4d920d81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 007a9009a05cb1c8de210c3e274af0e8c21297e9e01ed28dbc0c01d38edc06fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769981"
 ---
-# <a name="setpolicypropertyname-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetPolicyPropertyName della \_ classe TerminalServiceSetting Win32
+# <a name="setpolicypropertyname-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetPolicyPropertyName della classe TerminalServiceSetting Win32 \_
 
-Il metodo **SetPolicyPropertyName** imposta la proprietà **DeleteTempFolders**, **UseTempFolders** o **Help** per la classe.
+Il **metodo SetPolicyPropertyName** imposta la **proprietà DeleteTempFolders,** **UseTempFolders** **o Help** per la classe .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ uint32 SetPolicyPropertyName(
 
 <dl> <dt>
 
-*PropertyName* \[ in\]
+*PropertyName* \[ Pollici\]
 </dt> <dd>
 
-Specifica la proprietà dei criteri che il metodo sta impostando.
+Specifica la proprietà dei criteri impostata dal metodo.
 
 <dt>
 
@@ -58,7 +58,7 @@ Specifica la proprietà dei criteri che il metodo sta impostando.
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà **DeleteTempFolders** .
+Il metodo imposta la **proprietà DeleteTempFolders.**
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Il metodo sta impostando la proprietà **DeleteTempFolders** .
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà **UseTempFolders** .
+Il metodo imposta la **proprietà UseTempFolders.**
 
 </dd> <dt>
 
@@ -80,16 +80,16 @@ Il metodo sta impostando la proprietà **UseTempFolders** .
 
 </dt> <dd>
 
-Il metodo sta impostando la proprietà della **Guida** .
+Il metodo imposta la **proprietà Della** Guida.
 
-**Nota** la **Guida** non è supportata  
+**Nota La**  **Guida** non è supportata
 
 </dd> </dl> </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-Valore che indica se abilitare o disabilitare la proprietà specificata dal parametro *PropertyName* .
+Valore che indica se abilitare o disabilitare la proprietà specificata dal *parametro PropertyName.*
 
 <dt>
 
@@ -100,7 +100,7 @@ Valore che indica se abilitare o disabilitare la proprietà specificata dal para
 
 </dt> <dd>
 
-Disabilitare la proprietà.
+Disabilitare la proprietà .
 
 </dd> <dt>
 
@@ -111,17 +111,17 @@ Disabilitare la proprietà.
 
 </dt> <dd>
 
-Abilitare la proprietà.
+Abilitare la proprietà .
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce Success in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,8 +131,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -141,7 +141,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

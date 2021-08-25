@@ -1,7 +1,7 @@
 ---
-description: Specifica le autorizzazioni di controllo di accesso per una directory in una smart card.
+description: Specifica le autorizzazioni di controllo di accesso per una directory in un smart card.
 ms.assetid: 361d9fa0-286e-4d2c-8452-3b5f48e77779
-title: Enumerazione CARD_DIRECTORY_ACCESS_CONDITION (cardmod. h)
+title: CARD_DIRECTORY_ACCESS_CONDITION enumerazione (Cardmod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: 9879fa73f6bb45b56f433d7bca7765ab5fc0daef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8038179c7337edaff0138fc46c34191f99821250808c4ace16dc76cdfafd3b19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878961"
 ---
-# <a name="card_directory_access_condition-enumeration"></a>\_Enumerazione della \_ condizione di accesso alla directory della scheda \_
+# <a name="card_directory_access_condition-enumeration"></a>Enumerazione CARD \_ DIRECTORY \_ ACCESS \_ CONDITION
 
-L'enumerazione della condizione di accesso alla directory delle schede specifica le autorizzazioni di controllo di accesso per una directory in una [*Smart Card*](../secgloss/s-gly.md). **\_ \_ \_**
+**L'enumerazione CARD DIRECTORY ACCESS \_ \_ \_ CONDITION** specifica le autorizzazioni di controllo di accesso per una directory in un [*smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,9 +68,9 @@ Gli amministratori possono leggere, scrivere ed eliminare la directory.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, \[ solo app desktop Windows XP\]<br/>                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2003, Windows Server 2003 \[\]<br/>            |
-| Intestazione<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP, Windows solo \[ app desktop XP\]<br/>                              |
+| Server minimo supportato<br/> | Windows Solo app desktop Windows Server 2003 Server 2003 \[\]<br/>            |
+| Intestazione<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Gli amministratori possono leggere, scrivere ed eliminare la directory.
 
 <dl> <dt>
 
-[Provider del servizio di crittografia Smart Card di Microsoft base](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider)
+[Provider del servizio di crittografia smart card di base Microsoft](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider)
 </dt> <dt>
 
 [**CardCreateDirectory**](/previous-versions/windows/desktop/secsmart/cardcreatedirectory)

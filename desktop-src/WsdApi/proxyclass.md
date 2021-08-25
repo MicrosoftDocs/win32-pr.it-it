@@ -4,12 +4,12 @@ ms.assetid: 48e42d96-e3f2-4e00-a62d-adfac87c13a3
 title: Elemento proxyClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59c86240a5a42094c811e506fc9564560ace00bd
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 7d37f1690792e75e7f3c0b29db5807b3e9aacf2790ce89c1349d0d9bbdf781bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897341"
 ---
 # <a name="proxyclass-element"></a>Elemento proxyClass
 
@@ -46,7 +46,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

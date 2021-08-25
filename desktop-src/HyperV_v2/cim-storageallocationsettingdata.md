@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le impostazioni per l'allocazione di spazio di archiviazione virtuale.
+description: Rappresenta le impostazioni per l'allocazione dell'archiviazione virtuale.
 ms.assetid: 128fd3e9-8759-4b2f-a881-d34e89c539ac
 title: Classe CIM_StorageAllocationSettingData
 ms.topic: reference
@@ -26,16 +26,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e66322f20987e2d1f99042430f0f57cdc2e399d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe380b03daced6ca98a44c189c52b5842862aa2e033bf66a04f8dd1466968449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899671"
 ---
-# <a name="cim_storageallocationsettingdata-class"></a>CIM \_ StorageAllocationSettingData (classe)
+# <a name="cim_storageallocationsettingdata-class"></a>Classe CIM \_ StorageAllocationSettingData
 
-Rappresenta le impostazioni per l'allocazione di spazio di archiviazione virtuale.
+Rappresenta le impostazioni per l'allocazione dell'archiviazione virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,29 +61,29 @@ class CIM_StorageAllocationSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ StorageAllocationSettingData** presenta questi tipi di membri:
+La **classe CIM \_ StorageAllocationSettingData** include i tipi di membri seguenti:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ StorageAllocationSettingData** dispone di queste proprietà.
+La **classe CIM \_ StorageAllocationSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **Accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**Accesso**")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**Accesso a**")
 </dt> </dl>
 
-Supporto di lettura/scrittura dell'allocazione di archiviazione.
+Supporto di lettura/scrittura dell'allocazione dello spazio di archiviazione.
 
 <dt>
 
@@ -117,7 +117,7 @@ Supporto di lettura/scrittura dell'allocazione di archiviazione.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -127,32 +127,32 @@ Supporto di lettura/scrittura dell'allocazione di archiviazione.
 **HostExtentName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**","**CIM \_ StorageAllocationSettingData**.**HostExtentNameNamespace**","[**CIM \_ StorageExtent**](cim-storageextent.md).**Nome**")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**", "**CIM \_ StorageAllocationSettingData**.**HostExtentNameNamespace**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**Nome**")
 </dt> </dl>
 
-Identificatore univoco dell'extent di archiviazione dell'host.
+Identificatore univoco dell'extent di archiviazione host.
 
 </dd> <dt>
 
 **HostExtentNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**","**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameFormat**","[**CIM \_ StorageExtent**](cim-storageextent.md).**NameFormat**")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**", "**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameFormat**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**NameFormat**")
 </dt> </dl>
 
-Formato del valore della proprietà **HostExtentName** .
+Formato del valore della **proprietà HostExtentName.**
 
 <dt>
 
@@ -177,9 +177,9 @@ Formato del valore della proprietà **HostExtentName** .
 
 </dt> <dd>
 
-Il numero di serie/fornitore/modello (SNVM) SNVM è 3 stringhe che rappresentano il nome del fornitore, il nome del prodotto nello spazio dei nomi del fornitore e il numero di serie nello spazio dei nomi del modello. Le stringhe sono delimitate da' +'. Gli spazi possono essere inclusi e sono significativi. Il numero di serie è la rappresentazione testuale del numero di serie in lettere maiuscole esadecimali. Rappresenta il fornitore e l'ID modello dai dati di richiesta SCSI; il campo fornitore deve avere una larghezza di 8 caratteri e il campo prodotto deve avere una larghezza di 16 caratteri. Ad esempio,
+SNVM numero di serie/fornitore/modello (SNVM) è 3 stringhe che rappresentano il nome del fornitore, il nome del prodotto all'interno dello spazio dei nomi del fornitore e il numero di serie all'interno dello spazio dei nomi del modello. Le stringhe sono delimitate da '+'. Gli spazi possono essere inclusi e sono significativi. Il numero di serie è la rappresentazione testuale del numero di serie in maiuscolo esadecimale. Rappresenta l'ID del fornitore e del modello dai dati della richiesta SCSI. il campo del fornitore DEVE avere una larghezza di 8 caratteri e il campo del prodotto DEVE avere una larghezza di 16 caratteri. Ad esempio,
 
-' Acme \_ \_ \_ \_ + Super Disk \_ \_ \_ \_ \_ \_ + 124437458' ( \_ è un carattere spazio)
+'ACME \_ \_ \_ \_ +SUPER DISK \_ \_ \_ \_ \_ \_ +124437458' ( \_ è uno spazio)
 
 </dd> <dt>
 
@@ -192,9 +192,9 @@ Il numero di serie/fornitore/modello (SNVM) SNVM è 3 stringhe che rappresentano
 
 9 = NAA come formato generico. Vedere
 
-https://standards.ieee.org/regauth/oui/tutorials/fibrecomp\_id.html. Formattato come 16 o 32 caratteri esadecimali maiuscoli non separati (2 per byte binario).
+https://standards.ieee.org/regauth/oui/tutorials/fibrecomp\_id.html. Formattato come 16 o 32 caratteri esadecimali maiuscoli non eparati (2 per byte binario).
 
-Ad esempio ' 21000020372D3C73'
+Ad esempio "21000020372D3C73"
 
 </dd> <dt>
 
@@ -205,7 +205,7 @@ Ad esempio ' 21000020372D3C73'
 
 </dt> <dd>
 
-EUI come formato generico (EUI64) vedere
+EUI as a generic format (EUI64) See
 
 https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tutorials/eui.pdf.
 
@@ -218,24 +218,24 @@ https://standards.ieee.org/content/dam/ieee-standards/standards/web/documents/tu
 
 </dt> <dd>
 
-Formato dell'identificatore del fornitore T10 come restituito dalla richiesta SCSI Vital pagina 83, identificatore tipo 1. Vedere la specifica di T10 SPC-3. ID del fornitore ASCII a 8 byte dal registro di sistema T10 seguito da un identificatore ASCII specifico del fornitore. gli spazi sono consentiti. Per i volumi non SCSI,' SNVM ' può essere la scelta più appropriata.
+Formato dell'identificatore del fornitore T10 restituito dalla pagina 83 della richiesta SCSI VPD, tipo di identificatore 1. Vedere la specifica T10 SPC-3. Si tratta dell'ID del fornitore ASCII a 8 byte del Registro di sistema T10 seguito da un identificatore ASCII specifico del fornitore; Gli spazi sono consentiti. Per i volumi non SCSI, 'SNVM' può essere la scelta più appropriata.
 
 </dd> <dt>
 
 <span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>
 
-<span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>**Nome dispositivo del sistema operativo** (12)
+<span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>**Nome del dispositivo del sistema operativo** (12)
 
 
 </dt> <dd>
 
-Nome del dispositivo del sistema operativo (per LogicalDisks). Per informazioni dettagliate, vedere la descrizione del nome disco logico.
+Nome del dispositivo del sistema operativo (per LogicalDisks). Per informazioni dettagliate, vedere Descrizione del nome del disco logico.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF riservato** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -245,16 +245,16 @@ Nome del dispositivo del sistema operativo (per LogicalDisks). Per informazioni 
 **HostExtentNameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**","**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameNamespace**","**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**","[**CIM \_ StorageExtent**](cim-storageextent.md).**Spazio dei nomi**")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentName**", "**CIM \_ StorageAllocationSettingData**.**OtherHostExtentNameNamespace**", "**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**", "[**CIM \_ StorageExtent**](cim-storageextent.md).**Spazio dei nomi**")
 </dt> </dl>
 
-Formato di denominazione per la proprietà **Name** .
+Formato di denominazione per la **proprietà** Name.
 
 <dt>
 
@@ -316,14 +316,14 @@ Formato di denominazione per la proprietà **Name** .
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Spazio dei nomi del dispositivo del sistema operativo** (8)
+**Spazio dei nomi del dispositivo del sistema** operativo (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -333,55 +333,55 @@ Formato di denominazione per la proprietà **Name** .
 **HostExtentStartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**","[**CIM \_ BasedOn**](cim-basedon.md).**IndirizzoIniziale**")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**", "[**CIM \_ BasedOn**](cim-basedon.md).**StartingAddress**")
 </dt> </dl>
 
-Indirizzo iniziale nell'extent di archiviazione dell'host. Un valore NULL Val; UE indica che non esiste alcun mapping diretto tra l'extent di archiviazione virtuale e l'extent di archiviazione dell'host.
+Indirizzo iniziale nell'extent di archiviazione host. Un valore NULL val;ue indica che non esiste alcun mapping diretto tra l'extent di archiviazione virtuale e l'extent di archiviazione host.
 
 </dd> <dt>
 
 **HostResourceBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **punito** (" byte ")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **PUnit** ("byte")
 </dt> </dl>
 
-Dimensione, in byte, dei blocchi allocati nell'host per l'allocazione dell'archiviazione. Se la dimensione del blocco è variabile, è necessario specificare la dimensione massima del blocco in byte. Se le dimensioni del blocco sono sconosciute o se non si applica un concetto di blocco, è necessario usare il valore "1" (sconosciuto).
+Dimensione, in byte, dei blocchi allocati nell'host per l'allocazione dell'archiviazione. Se la dimensione del blocco è variabile, è necessario specificare la dimensione massima in byte del blocco. Se la dimensione del blocco è sconosciuta o se non si applica un concetto di blocco, è necessario usare il valore "1" (sconosciuto).
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("Limit"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Limit"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**")
 </dt> </dl>
 
-Quantità massima di blocchi che verranno concessi per l'allocazione delle risorse di archiviazione nell'host. La dimensione del blocco viene specificata dalla proprietà **HostResourceBlockSize** .
+Quantità massima di blocchi che verranno concessi per l'allocazione delle risorse di archiviazione nell'host. La dimensione del blocco viene specificata dalla **proprietà HostResourceBlockSize.**
 
 </dd> <dt>
 
 **OtherHostExtentNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -390,14 +390,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameFormat**")
 </dt> </dl>
 
-Formato della proprietà **HostExtentName** se la proprietà è impostata su "1" (other).
+Formato della proprietà **HostExtentName** se la proprietà è impostata su "1" (altro).
 
 </dd> <dt>
 
 **OtherHostExtentNameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -406,42 +406,42 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostExtentNameNamespace**")
 </dt> </dl>
 
-Stringa che descrive lo spazio dei nomi della proprietà **HostExtentName** se il valore della proprietà **HostExtentNameNamespace** è "1" (other).
+Stringa che descrive lo spazio dei nomi della proprietà **HostExtentName** se il valore della proprietà **HostExtentNameNamespace** è "1" (altro).
 
 </dd> <dt>
 
 **Prenotazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("Reservation"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Reservation"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**HostResourceBlockSize**")
 </dt> </dl>
 
-Quantità di blocchi di cui è garantita la disponibilità per l'allocazione delle risorse di archiviazione nell'host. La dimensione del blocco viene specificata dalla proprietà **HostResourceBlockSize** .
+Quantità di blocchi che sono garantiti per l'allocazione delle risorse di archiviazione nell'host. Le dimensioni del blocco vengono specificate dalla **proprietà HostResourceBlockSize.**
 
 </dd> <dt>
 
 **VirtualQuantity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("VirtualQuantity"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**Proprietà NumberOfBlocks**","**CIM \_ StorageAllocationSettingData**.**VirtualQuantityUnits**")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("VirtualQuantity"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**NumberOfBlocks**", "**CIM \_ StorageAllocationSettingData**.**VirtualQuantityUnits**")
 </dt> </dl>
 
-Il numero di blocchi che l'allocazione di archiviazione presenta al consumer.
+Numero di blocchi che l'allocazione di archiviazione presenta al consumer.
 
 > [!Note]  
-> La proprietà **VirtualQuantity** può specificare una dimensione di blocco pari a "1", anche se **VirtualResourceBlockSize** è sconosciuta.
+> La **proprietà VirtualQuantity** può specificare una dimensione di blocco pari a "1", anche se **VirtualResourceBlockSize è** sconosciuto.
 
  
 
@@ -450,32 +450,32 @@ Il numero di blocchi che l'allocazione di archiviazione presenta al consumer.
 **VirtualQuantityUnits**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("VirtualQuantityUnits"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**VirtualQuantity**"), **IsPUnit**
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("VirtualQuantityUnits"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("**CIM \_ StorageAllocationSettingData**.**VirtualQuantity**"), **IsPUnit**
 </dt> </dl>
 
-Unità utilizzate dalla proprietà **VirtualQuantity** . Questo valore deve essere impostato su "Count (blocco a dimensione fissa)" o "byte". Il valore predefinito "Count (blocco a dimensione fissa)" deve essere utilizzato per una dimensione fissa del blocco e deve essere utilizzato "byte" per una dimensione del blocco sconosciuta o variabile.
+Unità utilizzate dalla **proprietà VirtualQuantity.** Questo valore deve essere impostato su "count(fixed size block)" o "byte". Il valore predefinito"count(fixed size block)" deve essere usato per una dimensione di blocco fissa e "byte" deve essere usato per una dimensione di blocco sconosciuta o variabile.
 
 </dd> <dt>
 
 **VirtualResourceBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **punito** (" byte ")
+Qualificatori: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ StorageExtent**](cim-storageextent.md).**BlockSize**"), **PUnit** ("byte")
 </dt> </dl>
 
-Dimensione, in byte, dei blocchi che formano la richiesta di allocazione dell'archiviazione. Se la dimensione del blocco è variabile, è necessario specificare la dimensione massima del blocco. Se la dimensione del blocco è sconosciuta o se non si applica un concetto di blocco, la dimensione del blocco deve essere "1" (sconosciuta).
+Dimensione, in byte, dei blocchi che formano la richiesta di allocazione di archiviazione. Se le dimensioni del blocco sono variabili, è necessario specificare le dimensioni massime del blocco. Se la dimensione del blocco è sconosciuta o se non si applica un concetto di blocco, la dimensione del blocco deve essere "1" (sconosciuta).
 
 </dd> </dl>
 
@@ -487,8 +487,8 @@ Dimensione, in byte, dei blocchi che formano la richiesta di allocazione dell'ar
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -497,7 +497,7 @@ Dimensione, in byte, dei blocchi che formano la richiesta di allocazione dell'ar
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

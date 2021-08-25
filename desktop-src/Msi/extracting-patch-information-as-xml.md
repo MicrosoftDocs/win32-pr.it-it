@@ -1,55 +1,55 @@
 ---
-description: Le informazioni sull'applicabilità e la sequenziazione delle patch restituite dalla funzione MsiExtractPatchXMLData o dal metodo ExtractPatchXMLData sono nel formato di un BLOB XML che contiene gli elementi e gli attributi identificati in questo argomento.
+description: Le informazioni di sequenziazione e applicabilità della patch restituite dalla funzione MsiExtractPatchXMLData o dal metodo ExtractPatchXMLData sono nel formato di un BLOB XML che contiene gli elementi e gli attributi identificati in questo argomento.
 ms.assetid: ea40ed1d-1ef9-44f3-8ae8-3d854e308a49
-title: Estrazione delle informazioni sulla patch come XML
+title: Estrazione di informazioni sulla patch come XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e1e594d3ff2870ca1aaf87245c537045f95d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0574d953609b467c42467853f540dc85c9c24a31c07b3b3d006eaa6633472d53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821681"
 ---
-# <a name="extracting-patch-information-as-xml"></a>Estrazione delle informazioni sulla patch come XML
+# <a name="extracting-patch-information-as-xml"></a>Estrazione di informazioni sulla patch come XML
 
-Le informazioni sull'applicabilità e la sequenziazione delle patch restituite dalla funzione [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa) o dal metodo [**ExtractPatchXMLData**](installer-extractpatchxmldata.md) sono nel formato di un BLOB XML che contiene gli elementi e gli attributi identificati in questo argomento. Il BLOB XML può essere fornito a [**MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) e [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) anziché al file di patch completo.
+Le informazioni di sequenziazione e applicabilità della patch restituite dalla funzione [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa) o dal metodo [**ExtractPatchXMLData**](installer-extractpatchxmldata.md) sono nel formato di un BLOB XML che contiene gli elementi e gli attributi identificati in questo argomento. Il BLOB XML può essere fornito [**a MsiDeterminePatchSequence**](/windows/desktop/api/Msi/nf-msi-msideterminepatchsequencea) e [**MsiDetermineApplicablePatches**](/windows/desktop/api/Msi/nf-msi-msidetermineapplicablepatchesa) anziché al file di patch completo.
 
--   L'elemento MsiPatch è il primo elemento del BLOB XML e contiene informazioni sulla patch.
+-   L'elemento MsiPatch è l'elemento principale del BLOB XML e contiene informazioni sulla patch.
 
-    L'attributo SchemaVersion specifica la versione della definizione dello schema. Lo schema è specificato da MSIPatchApplicability. xsd e la versione dello schema corrente è 1.0.0.0. Il valore dell'attributo PatchGUID è il codice della patch del GUID per il pacchetto di patch ottenuto dalla proprietà di [**Riepilogo dei numeri di revisione**](revision-number-summary.md) nel flusso di informazioni di [Riepilogo](summary-information-stream.md) della patch. MinMsiVersion è la versione minima del Windows Installer necessario per installare la patch ottenuta dalla proprietà [**riepilogo Conteggio parole**](word-count-summary.md) .
+    L'attributo SchemaVersion specifica la versione della definizione dello schema. Lo schema viene specificato da MSIPatchApplicability.xsd e la versione corrente dello schema è 1.0.0.0. Il valore dell'attributo PatchGUID è il codice di patch GUID per il pacchetto patch ottenuto dalla [**proprietà Riepilogo**](revision-number-summary.md) numero revisione nel flusso [di informazioni](summary-information-stream.md) di riepilogo della patch. MinMsiVersion è la versione minima del programma di Windows necessario per installare la patch ottenuta dalla [**proprietà Riepilogo conteggio**](word-count-summary.md) parole.
 
--   L'elemento TargetProduct è un elemento contenitore per informazioni su un'applicazione a cui è destinata una patch.
+-   L'elemento TargetProduct è un elemento contenitore per informazioni su un'applicazione destinata a una patch.
 
-    Se la patch può essere applicata a più applicazioni, possono essere presenti più elementi TargetProduct. Le informazioni contenute nell'elemento TargetProduct vengono estratte dalle trasformazioni incorporate all'interno della patch.
+    Possono essere presenti più elementi TargetProduct se la patch può essere applicata a più applicazioni. Le informazioni nell'elemento TargetProduct vengono estratte dalle trasformazioni incorporate nella patch.
 
--   L'elemento TargetProductCode contiene il valore della proprietà [**ProductCode**](productcode.md) dell'applicazione di destinazione prima che sia stata applicata la patch.
+-   L'elemento TargetProductCode contiene il valore della [**proprietà ProductCode**](productcode.md) dell'applicazione di destinazione prima dell'applicazione della patch.
 
     Se la patch può essere applicata a più applicazioni, possono essere presenti più elementi TargetProductCode.
 
 -   L'elemento UpdatedProductCode contiene il GUID del codice prodotto dell'applicazione di destinazione dopo l'applicazione della patch.
 
-    Questo elemento è presente solo se la patch modifica il valore della proprietà [**ProductCode**](productcode.md) . Una patch che modifica **ProductCode** viene definita [aggiornamento principale](major-upgrades.md).
+    Questo elemento è presente solo se la patch modifica il valore della [**proprietà ProductCode.**](productcode.md) Una patch che modifica **ProductCode** viene definita [aggiornamento principale.](major-upgrades.md)
 
--   L'elemento TargetVersion contiene la proprietà [**ProductVersion**](productversion.md) dell'applicazione di destinazione prima dell'applicazione della patch.
--   L'elemento UpdateVersion contiene il valore della proprietà [**ProductVersion**](productversion.md) dell'applicazione di destinazione dopo l'applicazione della patch.
+-   L'elemento TargetVersion contiene la [**proprietà ProductVersion**](productversion.md) dell'applicazione di destinazione prima dell'applicazione della patch.
+-   L'elemento UpdateVersion contiene il valore della [**proprietà ProductVersion**](productversion.md) dell'applicazione di destinazione dopo l'applicazione della patch.
 
-    Questo elemento è presente solo se la patch modifica il valore della proprietà [**ProductVersion**](productversion.md) . Il BLOB XML per una patch che implementa un [piccolo aggiornamento](small-updates.md), noto anche come QFE, non includerà questo elemento. Il BLOB XML per una patch che implementa un aggiornamento secondario, noto anche come Service Pack, includerà questo elemento.
+    Questo elemento è presente solo se la patch modifica il valore della [**proprietà ProductVersion.**](productversion.md) Il BLOB XML per una patch che implementa [un aggiornamento](small-updates.md)di piccole dimensioni, definito anche QFE, non includerà questo elemento. Il BLOB XML per una patch che implementa un aggiornamento secondario, definito anche Service Pack, includerà questo elemento.
 
--   L'elemento TargetLanguage contiene il valore della proprietà [**ProductLanguage**](productlanguage.md) dell'applicazione di destinazione prima che sia stata applicata la patch.
--   L'elemento UpdatedLanguages contiene il valore della proprietà [**ProductLanguage**](productlanguage.md) dopo l'applicazione della patch.
--   L'elemento UpgradeCode contiene il valore della proprietà [**UpgradeCode**](upgradecode.md) dell'applicazione di destinazione.
--   L'elemento ObsoletedPatch contiene i codici patch (GUID) delle patch specificate come obsolete da questa patch.
+-   L'elemento TargetLanguage contiene il valore della [**proprietà ProductLanguage**](productlanguage.md) dell'applicazione di destinazione prima dell'applicazione della patch.
+-   L'elemento UpdatedLanguages contiene il valore della [**proprietà ProductLanguage**](productlanguage.md) dopo l'applicazione della patch.
+-   L'elemento UpgradeCode contiene il valore della [**proprietà UpgradeCode**](upgradecode.md) dell'applicazione di destinazione.
+-   L'elemento ObsoletedPatch contiene i codici di patch (GUID) delle patch specificate come obsolete da questa patch.
 
-    L'elenco delle patch obsolete viene ottenuto dal [**Riepilogo dei numeri di revisione**](revision-number-summary.md) nel flusso di informazioni di [Riepilogo](summary-information-stream.md) della patch.
+    L'elenco delle patch obsolete viene ottenuto dal [**riepilogo del numero di**](revision-number-summary.md) revisione nel flusso di informazioni di [riepilogo](summary-information-stream.md) della patch.
 
--   L'elemento SequenceData contiene informazioni di sequenziazione delle patch per la patch.
+-   L'elemento SequenceData contiene informazioni di sequenziazione della patch per la patch.
 
-    Nel BLOB XML possono essere presenti più elementi SequenceData. Ogni elemento SequenceData contiene le informazioni contenute in una riga della [tabella MsiPatchSequence](msipatchsequence-table.md) della patch. L'elemento SequenceData contiene un sottoelemento ProductCode, Sequence e Attributes per le informazioni nei campi corrispondenti della tabella MsiPatchSequence. Per una descrizione di ogni campo, vedere la sezione relativa alla [tabella MsiPatchSequence](msipatchsequence-table.md) .
+    Nel BLOB XML possono essere presenti più elementi SequenceData. Ogni elemento SequenceData contiene le informazioni in una riga della [tabella MsiPatchSequence](msipatchsequence-table.md) della patch. L'elemento SequenceData contiene un sottoelemento ProductCode, Sequence e Attributes per le informazioni nei campi corrispondenti nella tabella MsiPatchSequence. Per una descrizione di ogni campo, vedere la sezione tabella [MsiPatchSequence.](msipatchsequence-table.md)
 
-## <a name="extracting-applicability-information"></a>Estrazione delle informazioni sull'applicabilità
+## <a name="extracting-applicability-information"></a>Estrazione di informazioni sull'applicabilità
 
-Nell'esempio seguente viene illustrato come estrarre le informazioni sull'applicabilità per una patch di Windows Installer (file con estensione msp) utilizzando [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa). Il BLOB XML estratto è basato sulla definizione dello schema in MSIPatchApplicability. xsd e viene restituito a szXMLData.
+L'esempio seguente illustra come estrarre le informazioni sull'applicabilità per una patch Windows Installer (file msp) usando [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa). Il BLOB XML estratto è basato sulla definizione dello schema in MSIPatchApplicability.xsd e restituito a szXMLData.
 
 
 ```C++
@@ -93,7 +93,7 @@ void main()
 
 
 
-Nell'esempio seguente viene illustrato come estrarre le informazioni sull'applicabilità per un Windows Installer patch (file con estensione msp) in formato XML. Il BLOB XML estratto è basato sulla definizione dello schema in MSIPatchApplicability. xsd e restituito in strPatchXML.
+L'esempio seguente illustra come estrarre le informazioni sull'applicabilità per una patch Windows installer (file con estensione msp) in formato XML. Il BLOB XML estratto è basato sulla definizione dello schema in MSIPatchApplicability.xsd e restituito in strPatchXML.
 
 ``` syntax
 Dim installer
@@ -101,9 +101,9 @@ Set installer = CreateObject("WindowsInstaller.Installer")
 strPatchXML = installer.ExtractPatchXMLData("c:\example\patch.msp")
 ```
 
-## <a name="patch-applicability-schema-definition"></a>Definizione dello schema di applicabilità patch
+## <a name="patch-applicability-schema-definition"></a>Definizione dello schema di applicabilità delle patch
 
-Copiare il testo seguente nel blocco note o in un altro editor di testo per creare il file di definizione dello schema per le informazioni sull'applicabilità della patch nel BLOB XML. Assegnare al file il nome MSIPatchApplicability. XSD.
+Copiare il testo seguente in Blocco note o in un altro editor di testo per creare il file di definizione dello schema per le informazioni sull'applicabilità della patch nel BLOB XML. Assegnare al file il nome MSIPatchApplicability.XSD.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>

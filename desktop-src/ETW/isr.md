@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di routine del servizio di interrupt (ISR). La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di routine del servizio di interruzione (ISR). La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 2c7ccace-3384-43f4-905e-e7eeeee6f87b
-title: ISR (classe)
+title: Classe ISR
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5e27d5aa2712f8493b80ea11884aae1d0ef7abee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 621bf9c97aef9ea23fba6186a419f7c205d98fba608c2539702607986de0d258
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901001"
 ---
-# <a name="isr-class"></a>ISR (classe)
+# <a name="isr-class"></a>Classe ISR
 
-Questa classe è la classe del tipo di evento per gli eventi di routine del servizio di interrupt (ISR).
+Questa classe è la classe del tipo di evento per gli eventi di routine del servizio di interruzione (ISR).
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -46,26 +46,26 @@ class ISR : PerfInfo
 
 ## <a name="members"></a>Members
 
-La classe **ISR** presenta questi tipi di membri:
+La **classe ISR** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ISR** dispone di queste proprietà.
+La **classe ISR** ha queste proprietà.
 
 <dl> <dt>
 
 **InitialTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Extension ("WmiTime")
+Qualificatori: WmiDataId(1), Extension("WmiTime")
 </dt> </dl>
 
 Ora di ingresso ISR.
@@ -75,61 +75,61 @@ Ora di ingresso ISR.
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), puntatore
+Qualificatori: WmiDataId(5), Puntatore
 </dt> </dl>
 
 Riservato.
 
 </dd> <dt>
 
-**ReturnValue**
+**Returnvalue**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Valore booleano che indica se l'interrupt è stato richiesto (è true se l'interrupt è stato richiesto).
+Valore booleano che indica se l'interrupt è stato richiesto (è True se l'interrupt è stato richiesto).
 
 </dd> <dt>
 
 **Routine**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
-Indirizzo della routine ISR. Usare l'indirizzo con gli eventi di immagine per individuare l'immagine avviata.
+Indirizzo della routine ISR. Usare l'indirizzo con gli eventi Image per trovare l'immagine avviata.
 
 </dd> <dt>
 
 **Vettore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
 Vettore dalla tabella del descrittore di interrupt a cui è assegnata la routine ISR.
@@ -142,8 +142,8 @@ Vettore dalla tabella del descrittore di interrupt a cui è assegnata la routine
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

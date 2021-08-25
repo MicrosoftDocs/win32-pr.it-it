@@ -1,9 +1,9 @@
 ---
-title: Messaggio DTM_SETMCFONT (COMmctrl. h)
-description: Imposta il tipo di carattere che verrà utilizzato dal controllo Calendar Month Child del controllo di selezione data e ora (DTP). È possibile inviare questo messaggio in modo esplicito o usare la \_ macro DateTime SetMonthCalFont.
+title: DTM_SETMCFONT messaggio (Commctrl.h)
+description: Imposta il tipo di carattere che deve essere utilizzato dal controllo calendario mensile figlio del controllo selezione data e ora (DTP). È possibile inviare questo messaggio in modo esplicito o usare la \_ macro DateTime SetMonthCalFont.
 ms.assetid: 5033e975-9b68-438a-99c3-80ca02cd59e7
 keywords:
-- Controlli di Windows Message DTM_SETMCFONT
+- DTM_SETMCFONT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b148ffb95acd82257265bf0bab53000b10803793
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cfa1b34c1a51e365868cbdae30e46cd299937d3d6fe33bad6c57d630a0b226fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877811"
 ---
-# <a name="dtm_setmcfont-message"></a>\_Messaggio SETMCFONT DTM
+# <a name="dtm_setmcfont-message"></a>Messaggio DTM \_ SETMCFONT
 
-Imposta il tipo di carattere che verrà utilizzato dal controllo Calendar Month Child del controllo di selezione data e ora (DTP). È possibile inviare questo messaggio in modo esplicito o usare la macro [**DateTime \_ SetMonthCalFont**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setmonthcalfont) .
+Imposta il tipo di carattere che deve essere utilizzato dal controllo calendario mensile figlio del controllo selezione data e ora (DTP). È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ DateTime SetMonthCalFont.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setmonthcalfont)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Handle per il tipo di carattere che verrà impostato.
 *lParam* 
 </dt> <dd>
 
-Specifica se il controllo deve essere ridisegnato immediatamente dopo l'impostazione del tipo di carattere. Se si imposta questo parametro su **true** , il controllo verrà ridisegnato automaticamente.
+Specifica se il controllo deve essere ridisegnato immediatamente dopo l'impostazione del tipo di carattere. Se si imposta questo **parametro su TRUE,** il controllo viene ridisegnato da solo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questo messaggio non viene utilizzato.
+Il valore restituito per questo messaggio non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Converte un nome delle impostazioni locali in un identificatore delle impostazioni locali che può essere utilizzato per ottenere informazioni dal sistema operativo.
+description: Converte un nome delle impostazioni locali in un identificatore delle impostazioni locali che può essere usato per ottenere informazioni dal sistema operativo.
 ms.assetid: dc776c41-0376-4222-bebf-86be7e4be122
-title: Funzione DownlevelLocaleNameToLCID (nlsdl. h)
+title: Funzione DownlevelLocaleNameToLCID (Nlsdl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - NlsMap.dll
-ms.openlocfilehash: c41b82c59b63a5b324e15f89c1f77118d454e428
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39a0a6b274ba141553d2ddda927f71754cc9639ff5fc3a0d3870a974e46526a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898731"
 ---
-# <a name="downlevellocalenametolcid-function"></a>DownlevelLocaleNameToLCID (funzione)
+# <a name="downlevellocalenametolcid-function"></a>Funzione DownlevelLocaleNameToLCID
 
-Converte un [nome delle impostazioni locali](locale-names.md) in un [identificatore delle impostazioni locali](locale-identifiers.md) che può essere utilizzato per ottenere informazioni dal sistema operativo.
+Converte un [nome delle impostazioni](locale-names.md) locali in un identificatore delle impostazioni locali che può essere usato per ottenere informazioni dal sistema operativo. [](locale-identifiers.md)
 
 > [!Note]  
-> Questa funzione viene utilizzata solo dalle applicazioni eseguite in sistemi operativi precedenti a Windows Vista. Il relativo utilizzo richiede un pacchetto di download. Le applicazioni che vengono eseguite solo in Windows Vista e versioni successive devono chiamare [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) per recuperare un identificatore delle impostazioni locali.
+> Questa funzione viene usata solo dalle applicazioni eseguite in sistemi operativi Windows Vista. Il suo uso richiede un pacchetto di download. Le applicazioni eseguite solo in Windows Vista e versioni successive devono chiamare [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) per recuperare un identificatore delle impostazioni locali.
 
  
 
@@ -45,17 +45,17 @@ LCID DownlevelLocaleNameToLCID(
 
 <dl> <dt>
 
-*lpName* \[ in\]
+*lpName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che rappresenta il [nome delle impostazioni locali](locale-names.md).
+Puntatore a una stringa con terminazione Null che rappresenta un [nome di impostazioni locali](locale-names.md).
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Flag che specificano il tipo di nome. Il valore predefinito è il \_ nome delle impostazioni locali di livello inferiore \_ .
+Flag che specificano il tipo di nome. Il valore predefinito è DOWNLEVEL \_ LOCALE \_ NAME.
 
 </dd> </dl>
 
@@ -63,19 +63,19 @@ Flag che specificano il tipo di nome. Il valore predefinito è il \_ nome delle 
 
 Restituisce l'identificatore delle impostazioni locali che corrisponde al nome delle impostazioni locali in caso di esito positivo.
 
-Se l'operazione non riesce, la funzione restituisce 0. Per ottenere informazioni estese sull'errore, l'applicazione può chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), che può restituire uno dei codici di errore seguenti:
+La funzione restituisce 0 se non ha esito positivo. Per ottenere informazioni estese sugli errori, l'applicazione può chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), che può restituire uno dei codici di errore seguenti:
 
--   flag di errore \_ non validi \_ . I valori specificati per i flag non sono validi.
--   ERRORE \_ parametro non valido \_ . Uno dei valori di parametro non è valido.
+-   ERRORE \_ FLAG NON \_ VALIDI. I valori forniti per i flag non sono validi.
+-   ERRORE \_ PARAMETRO \_ NON VALIDO. Uno dei valori dei parametri non è valido.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Questa funzione non supporta le impostazioni locali non associate ad alcun paese. La funzione [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) equivalente supporta [impostazioni locali personalizzate](custom-locales.md), ma solo per Windows Vista e versioni successive.
+> Questa funzione non supporta le impostazioni locali neutre. La funzione [**LocaleNameToLCID**](/windows/desktop/api/Winnls/nf-winnls-localenametolcid) equivalente supporta le impostazioni locali [personalizzate,](custom-locales.md)ma solo per Windows Vista e versioni successive.
 
  
 
-Il file di intestazione e la DLL necessari fanno parte del download di "Microsoft NLS Data Mapping API", disponibile nell' [area download Microsoft](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&DisplayLang=en).
+Il file di intestazione e la DLL necessari fanno parte del download "Microsoft NLS Downlevel Data Mapping APIs", disponibile [nell'Area download Microsoft.](https://www.microsoft.com/downloads/details.aspx?FamilyID=eb72cda0-834e-4c35-9419-ff14bc349c9d&DisplayLang=en)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,10 +83,10 @@ Il file di intestazione e la DLL necessari fanno parte del download di "Microsof
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                |
-| Componente ridistribuibile<br/>          | API di mapping dei dati di livello inferiore Microsoft NLS in Windows XP con SP2 e laterorWindows vista<br/> |
-| Intestazione<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                |
+| Componente ridistribuibile<br/>          | API di mapping dei dati di livello inferiore di Microsoft NLS in Windows XP con SP2 e versioni successiveWindows Vista<br/> |
+| Intestazione<br/>                   | <dl> <dt>Nlsdl.h</dt> </dl>                  |
 | DLL<br/>                      | <dl> <dt>NlsMap.dll</dt> </dl>               |
 
 
@@ -95,10 +95,10 @@ Il file di intestazione e la DLL necessari fanno parte del download di "Microsof
 
 <dl> <dt>
 
-[Supporto per lingua nazionale](national-language-support.md)
+[Supporto linguistico nazionale](national-language-support.md)
 </dt> <dt>
 
-[Funzioni di supporto del linguaggio nazionale](national-language-support-functions.md)
+[Funzioni di supporto linguistico nazionale](national-language-support-functions.md)
 </dt> <dt>
 
 [Mapping dei dati delle impostazioni locali](mapping-locale-data.md)

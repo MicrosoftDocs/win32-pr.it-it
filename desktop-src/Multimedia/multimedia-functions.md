@@ -3,23 +3,23 @@ title: Funzioni multimediali
 description: Funzioni multimediali
 ms.assetid: a2520c4a-cce4-40ad-b8e7-3728b84d88ea
 keywords:
-- Multimedia di Windows, funzioni
-- Multimedia, funzioni
-- riferimenti multimediali, funzioni
-- informazioni di riferimento per Multimedia, funzioni
+- Windows multimediali, funzioni
+- multimediali, funzioni
+- informazioni di riferimento multimediali, funzioni
+- informazioni di riferimento per elementi multimediali, funzioni
 - funzioni multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc279a8fdbbeaee88dc3f83eb56d6eec7b7bae5e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a38a1e886e86e1a503e2e6398f5f339837554145683fbf478e21e9413508d69c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806951"
 ---
 # <a name="multimedia-functions"></a>Funzioni multimediali
 
-Le funzioni seguenti vengono usate con i contenuti multimediali.
+Le funzioni seguenti vengono usate con elementi multimediali.
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverClose**](/windows/desktop/api/Msacm/nf-msacm-acmdriverclose)
@@ -117,7 +117,7 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**capWaveStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capwavecallback)
 -   [**capYieldCallback**](/windows/desktop/api/Vfw/nc-vfw-capyieldcallback)
 -   [**CreateEditableStream**](/windows/desktop/api/Vfw/nf-vfw-createeditablestream)
--   [**DllGetClassObject**](/previous-versions//dd797891(v=vs.85))
+-   [**Dllgetclassobject**](/previous-versions//dd797891(v=vs.85))
 -   [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin)
 -   [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette)
 -   [**DrawDibClose**](/windows/desktop/api/Vfw/nf-vfw-drawdibclose)
@@ -167,15 +167,15 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**ICSeqCompressFrameStart**](/windows/desktop/api/Vfw/nf-vfw-icseqcompressframestart)
 -   [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc)
 -   [**IOProc**](/previous-versions//dd757098(v=vs.85))
--   [**joyConfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
--   [**joyGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
--   [**joyGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
--   [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
--   [**joyGetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
--   [**joyGetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
--   [**joyReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
--   [**joySetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
--   [**joySetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
+-   [**proprietà di configChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
+-   [**devGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
+-   [**devGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
+-   [**sporGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
+-   [**sporGetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
+-   [**xxGetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
+-   [**easeReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
+-   [**incapsulamento set di dati**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
+-   [**tutto il tempo necessario per il set di dati**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
 -   [**mciExecute**](/previous-versions//dd757154(v=vs.85))
 -   [**mciGetCreatorTask**](/previous-versions//dd757155(v=vs.85))
 -   [**mciGetDeviceID**](/previous-versions//dd757156(v=vs.85))
@@ -236,7 +236,7 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**mixerGetLineInfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
 -   [**mixerGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
 -   [**mixerMessage**](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
--   [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
+-   [**mixerApri**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 -   [**mixerSetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
 -   [**mmGetCurrentTask**](/windows/desktop/api/Mmddk/nf-mmddk-mmgetcurrenttask)
 -   [**mmioAdvance**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioadvance)
@@ -263,7 +263,7 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**mmTaskSignal**](/windows/desktop/api/Mmddk/nf-mmddk-mmtasksignal)
 -   [**mmTaskYield**](/windows/desktop/api/Mmddk/nf-mmddk-mmtaskyield)
 -   [**MyStatusProc**](/previous-versions//dd743620(v=vs.85))
--   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
+-   [**Playsound**](/previous-versions//dd743680(v=vs.85))
 -   [**sndOpenSound**](/windows/desktop/api/mmiscapi/nf-mmiscapi-sndopensound)
 -   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
 -   [**StretchDIB**](/windows/desktop/api/Vfw/nf-vfw-stretchdib)
@@ -274,7 +274,7 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**timeGetTime**](/windows/desktop/api/TimeAPI/nf-timeapi-timegettime)
 -   [**timeKillEvent**](/previous-versions//dd757630(v=vs.85))
 -   [**TimeProc**](/previous-versions//dd757631(v=vs.85))
--   [**Funzione timeSetEvent**](/previous-versions//dd757634(v=vs.85))
+-   [**timeSetEvent**](/previous-versions//dd757634(v=vs.85))
 -   [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer)
 -   [**waveInClose**](/windows/win32/api/mmeapi/nf-mmeapi-waveinclose)
 -   [**waveInGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-waveingetdevcaps)
@@ -313,6 +313,6 @@ Le funzioni seguenti vengono usate con i contenuti multimediali.
 -   [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader)
 -   [**waveOutWrite**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutwrite)
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC. ulECCFixSuccess'
-title: Proprietà JET_DBINFOMISC. ulECCFixSuccess
+description: 'Altre informazioni su: JET_DBINFOMISC.ulECCFixSuccess'
+title: JET_DBINFOMISC.ulECCFixSuccess
 TOCTitle: 'ulECCFixSuccess property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.ulECCFixSuccess
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.uleccfixsuccess(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 734f68a5d756d51a383d1dea08e425819ba108e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f44989bbea2c1b58f2add17e638326488cc1fcf668922388db8f4adeea881954
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890951"
 ---
-# <a name="jet_dbinfomisculeccfixsuccess-property"></a>Proprietà JET_DBINFOMISC. ulECCFixSuccess
+# <a name="jet_dbinfomisculeccfixsuccess-property"></a>JET_DBINFOMISC.ulECCFixSuccess
 
-Ottiene il numero di volte in cui un errore di un bit è stato corretto correttamente.
+Ottiene il numero di volte in cui è stato corretto un errore di un bit.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int ulECCFixSuccess { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

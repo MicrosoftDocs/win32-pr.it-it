@@ -1,7 +1,7 @@
 ---
-description: Definisce gli algoritmi da utilizzare per la crittografia e la decrittografia.
+description: Definisce gli algoritmi da usare nella crittografia e nella decrittografia.
 ms.assetid: c7aacd1c-02f6-4cf5-9305-50e2330f243c
-title: Enumerazione CAPICOM_ENCRYPTION_ALGORITHM (CAPICOM. h)
+title: CAPICOM_ENCRYPTION_ALGORITHM enumerazione (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 19626ba560ead406005612db3ed90cabc61d98ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d0f66c1e8ec59819f4f01c5f46989e1f904930f3699f978b26c6ab7c5107154c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879341"
 ---
-# <a name="capicom_encryption_algorithm-enumeration"></a>\_Enumerazione dell'algoritmo di crittografia CAPICOM \_
+# <a name="capicom_encryption_algorithm-enumeration"></a>Enumerazione CAPICOM \_ ENCRYPTION \_ ALGORITHM
 
-Il tipo di enumerazione di **\_ \_ algoritmi di crittografia CAPICOM** definisce gli algoritmi da utilizzare per la crittografia e la decrittografia.
+Il **tipo di enumerazione CAPICOM ENCRYPTION \_ \_ ALGORITHM** definisce gli algoritmi da usare nella crittografia e nella decrittografia.
 
 ## <a name="members"></a>Membri
 
@@ -30,17 +30,17 @@ Il tipo di enumerazione di **\_ \_ algoritmi di crittografia CAPICOM** definisce
 
 | Membro                                   | Descrizione                                                                                                                                                                                              | Valore     |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| **Algoritmo di crittografia capicol \_ \_ \_ RC2**  | Usare la crittografia RSA RC2.<br/>                                                                                                                                                                       | 0         |
-| **\_Algoritmo di crittografia CAPICOM \_ \_ RC4**  | Usare la crittografia RSA RC4.<br/>                                                                                                                                                                       | 1         |
-| **\_algoritmo di crittografia CAPICOM \_ \_ des**  | Usare la crittografia DES.<br/>                                                                                                                                                                           | 2         |
-| **Algoritmo di crittografia capicol \_ \_ \_ 3DES** | Usare la crittografia Triple DES.<br/>                                                                                                                                                                    | 3         |
-| **algoritmo di crittografia capicol \_ \_ \_ AES**  | Usare l'algoritmo [*Advanced Encryption Standard*](../secgloss/a-gly.md) (AES). Questo valore è valido solo per l'oggetto [**EncryptedData**](encrypteddata.md) .<br/> | 4//v 2.0 |
+| **ALGORITMO DI CRITTOGRAFIA CAPICOM \_ \_ \_ RC2**  | Usare la crittografia RSA RC2.<br/>                                                                                                                                                                       | 0         |
+| **ALGORITMO DI CRITTOGRAFIA CAPICOM \_ \_ \_ RC4**  | Usare la crittografia RSA RC4.<br/>                                                                                                                                                                       | 1         |
+| **ALGORITMO DI CRITTOGRAFIA CAPICOM \_ \_ \_ DES**  | Usare la crittografia DES.<br/>                                                                                                                                                                           | 2         |
+| **ALGORITMO DI CRITTOGRAFIA CAPICOM \_ \_ \_ 3DES** | Usare la crittografia DES tripla.<br/>                                                                                                                                                                    | 3         |
+| **AES \_ \_ DELL'ALGORITMO \_ DI CRITTOGRAFIA CAPICOM**  | Usare [*l'algoritmo*](../secgloss/a-gly.md) Advanced Encryption Standard (AES). Questo valore è valido solo per [**l'oggetto EncryptedData.**](encrypteddata.md)<br/> | 4 // v2.0 |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di enumerazione dell' **\_ \_ algoritmo di crittografia CAPICOM** viene usato dalla proprietà [**Algorithm.Name**](algorithm-name.md) .
+Il **tipo di enumerazione CAPICOM ENCRYPTION \_ \_ ALGORITHM** viene usato dalla [**proprietà Algorithm.Name.**](algorithm-name.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Il tipo di enumerazione dell' **\_ \_ algoritmo di crittografia CAPICOM** viene 
 
 | Requisito | Valore |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
-| Intestazione<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
+| Intestazione<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

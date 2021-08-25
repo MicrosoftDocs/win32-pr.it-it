@@ -1,7 +1,7 @@
 ---
 description: Recupera le dimensioni dei dati binari. Deprecato.
 ms.assetid: 99a74043-ce87-4545-961f-dade54e77735
-title: 'Metodo IDirectXFileBinary:: GetSize (DXFile. h)'
+title: Metodo IDirectXFileBinary::GetSize (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 664e2bf026df6d9e4b5bc07067ce1ce7fe7669db
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1af59f6a32d163275df02d1469ba4777bf5c5152535c2df52fcf7d7c40218e2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104531003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846941"
 ---
-# <a name="idirectxfilebinarygetsize-method"></a>Metodo IDirectXFileBinary:: GetSize
+# <a name="idirectxfilebinarygetsize-method"></a>Metodo IDirectXFileBinary::GetSize
 
 Recupera le dimensioni dei dati binari. Deprecato.
 
@@ -40,12 +40,12 @@ HRESULT GetSize(
 
 <dl> <dt>
 
-*pcbSize* \[ out\]
+*pcbSize* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore alle dimensioni restituite dei dati binari, in byte.
+Puntatore alla dimensione restituita dei dati binari, in byte.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

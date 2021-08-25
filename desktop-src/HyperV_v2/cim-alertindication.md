@@ -1,7 +1,7 @@
 ---
-description: Superclasse concreta per le notifiche di avviso CIM.
+description: Una superclasse concreta per le notifiche di avviso CIM.
 ms.assetid: ec4cf41d-decd-4f21-b805-90db4a61376d
-title: Classe CIM_AlertIndication
+title: CIM_AlertIndication classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1a1916705ee696c949dba2a557f7077ade8db7ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4a5f175ba98165e1e13d86a638260871f9bab16de23b28a92144386f89a587f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829681"
 ---
-# <a name="cim_alertindication-class"></a>CIM \_ AlertIndication (classe)
+# <a name="cim_alertindication-class"></a>Classe CIM \_ AlertIndication
 
-Superclasse concreta per le notifiche di avviso CIM. **CIM \_ AlertIndication** è un tipo specializzato di classe di **\_ indicazione CIM** che contiene informazioni sulla gravità, la cause, le azioni consigliate e altri dati per un evento reale. Questo evento e i relativi dati possono essere modellati o meno nella gerarchia di classi CIM.
+Una superclasse concreta per le notifiche di avviso CIM. **CIM \_ AlertIndication** è un tipo specializzato di **classe CIM \_ Indication** che contiene informazioni sulla gravità, la causa, le azioni consigliate e altri dati per un evento reale. Questo evento e i relativi dati possono essere modellati o meno nella gerarchia di classi CIM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -75,29 +75,29 @@ class CIM_AlertIndication : CIM_ProcessIndication
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AlertIndication** presenta questi tipi di membri:
+La **classe CIM \_ AlertIndication** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AlertIndication** dispone di queste proprietà.
+La **classe CIM \_ AlertIndication** ha queste proprietà.
 
 <dl> <dt>
 
 **AlertingElementFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingManagedElement**","**CIM \_ AlertIndication**.**OtherAlertingElementFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingManagedElement**", "**CIM \_ AlertIndication**.**OtherAlertingElementFormat ")**
 </dt> </dl>
 
-Formato della proprietà **AlertingManagedElement** .
+Formato della **proprietà AlertingManagedElement.**
 
 <dt>
 
@@ -108,7 +108,7 @@ Formato della proprietà **AlertingManagedElement** .
 
 </dt> <dd>
 
-Il formato è sconosciuto o non interpretabile in maniera significativa da un'applicazione client CIM.
+Il formato è sconosciuto o non interpretabile in modo significativo da un'applicazione client CIM.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Il formato è definito dal valore della proprietà OtherAlertingElementFormat.
 
 </dt> <dd>
 
-Il formato è un CIMObjectPath, che specifica un'istanza nello schema CIM.
+Il formato è CIMObjectPath, che specifica un'istanza nello schema CIM.
 
 </dd> </dl>
 
@@ -139,29 +139,29 @@ Il formato è un CIMObjectPath, che specifica un'istanza nello schema CIM.
 **AlertingManagedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingElementFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingElementFormat ")**
 </dt> </dl>
 
-Informazioni di identificazione dell'entità, ad esempio l'istanza, per la quale viene generata questa indicazione. La proprietà contiene il percorso di un'istanza, codificata come parametro di stringa, se l'istanza è modellata nello schema CIM. In caso contrario, la proprietà contiene una stringa di identificazione che assegna un nome all'entità per la quale viene generato l'avviso. Il percorso o la stringa di identificazione viene formattato in base alla proprietà AlertingElementFormat.
+Informazioni di identificazione dell'entità (ad esempio, l'istanza) per cui viene generata l'indicazione. La proprietà contiene il percorso di un'istanza codificata come parametro stringa, se l'istanza è modellata nello schema CIM. Se non è un'istanza CIM, la proprietà contiene una stringa di identificazione che identifica l'entità per cui viene generato l'avviso. Il percorso o la stringa di identificazione viene formattata in base alla proprietà AlertingElementFormat.
 
 </dd> <dt>
 
 **AlertType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**required**](/windows/desktop/WmiSdk/standard-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. Tipo di evento ")
+Qualificatori: [**Obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Tipo di evento")
 </dt> </dl>
 
 Classificazione primaria dell'indicazione.
@@ -175,18 +175,18 @@ Classificazione primaria dell'indicazione.
 
 </dt> <dd>
 
-\- Altri. La proprietà OtherAlertType dell'indicatore trasmette la relativa classificazione. L'uso di "altro" in un'enumerazione è una convenzione CIM standard. Significa che l'indicazione corrente non rientra nelle categorie descritte da questa enumerazione.
+\- Altro. La proprietà OtherAlertType di Indication ne indica la classificazione. L'uso di "Other" in un'enumerazione è una convenzione CIM standard. Ciò significa che l'indicazione corrente non rientra nelle categorie descritte da questa enumerazione.
 
 </dd> <dt>
 
 <span id="Communications_Alert"></span><span id="communications_alert"></span><span id="COMMUNICATIONS_ALERT"></span>
 
-<span id="Communications_Alert"></span><span id="communications_alert"></span><span id="COMMUNICATIONS_ALERT"></span>**Avviso di comunicazione** (2)
+<span id="Communications_Alert"></span><span id="communications_alert"></span><span id="COMMUNICATIONS_ALERT"></span>**Avviso di** comunicazione (2)
 
 
 </dt> <dd>
 
-Un'indicazione di questo tipo è associata principalmente alle procedure e/o ai processi necessari per il trasferimento di informazioni da un punto a un altro.
+Un'indicazione di questo tipo è principalmente associata alle procedure e/o ai processi necessari per trasmettere informazioni da un punto a un altro.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Un'indicazione di questo tipo è associata principalmente alle procedure e/o ai 
 
 </dt> <dd>
 
-Un'indicazione di questo tipo è associata principalmente a una riduzione o a errori nelle prestazioni o nella funzione di un'entità.
+Un'indicazione di questo tipo è principalmente associata a una riduzione o a errori nelle prestazioni o nella funzione di un'entità.
 
 </dd> <dt>
 
@@ -208,7 +208,7 @@ Un'indicazione di questo tipo è associata principalmente a una riduzione o a er
 
 </dt> <dd>
 
-Un'indicazione di questo tipo è associata principalmente a un errore software o di elaborazione.
+Un'indicazione di questo tipo è principalmente associata a un errore software o di elaborazione.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Un'indicazione di questo tipo è associata principalmente a un errore software o
 
 </dt> <dd>
 
-Un'indicazione di questo tipo è associata principalmente a un errore hardware o di strumentazione.
+Un'indicazione di questo tipo è principalmente associata a un'apparecchiatura o a un errore hardware.
 
 </dd> <dt>
 
@@ -230,29 +230,29 @@ Un'indicazione di questo tipo è associata principalmente a un errore hardware o
 
 </dt> <dd>
 
-Avviso ambientale. Un'indicazione di questo tipo è associata principalmente a una condizione relativa a un'enclosure in cui si trova l'hardware o ad altre considerazioni sull'ambiente.
+Avviso ambientale. Un'indicazione di questo tipo è principalmente associata a una condizione relativa a un'enclosure in cui risiede l'hardware o ad altre considerazioni ambientali.
 
 </dd> <dt>
 
 <span id="Model_Change"></span><span id="model_change"></span><span id="MODEL_CHANGE"></span>
 
-<span id="Model_Change"></span><span id="model_change"></span><span id="MODEL_CHANGE"></span>**Modifica modello** (7)
+<span id="Model_Change"></span><span id="model_change"></span><span id="MODEL_CHANGE"></span>**Modifica del** modello (7)
 
 
 </dt> <dd>
 
-L'indicazione risolve le modifiche nel modello informativo. Ad esempio, può incorporare un'indicazione del ciclo di vita per indicare che la modifica del modello specifica viene segnalata.
+L'indicazione risolve le modifiche nel modello di informazioni. Ad esempio, può incorporare un'indicazione del ciclo di vita per comunicare la modifica specifica del modello che viene avvisata.
 
 </dd> <dt>
 
 <span id="Security_Alert"></span><span id="security_alert"></span><span id="SECURITY_ALERT"></span>
 
-<span id="Security_Alert"></span><span id="security_alert"></span><span id="SECURITY_ALERT"></span>**Avviso di sicurezza** (8)
+<span id="Security_Alert"></span><span id="security_alert"></span><span id="SECURITY_ALERT"></span>**Avviso di** sicurezza (8)
 
 
 </dt> <dd>
 
-. Viene associata un'indicazione di questo tipo.
+. Un'indicazione di questo tipo è associata.
 
 </dd> </dl>
 
@@ -261,13 +261,13 @@ L'indicazione risolve le modifiche nel modello informativo. Ad esempio, può inc
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. Testo aggiuntivo ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Testo aggiuntivo")
 </dt> </dl>
 
 Breve descrizione dell'indicazione.
@@ -277,7 +277,7 @@ Breve descrizione dell'indicazione.
 **EventID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -286,14 +286,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**ProbableCause**")
 </dt> </dl>
 
-Valore specifico di strumentazione o provider che descrive l'evento reale sottostante rappresentato dall'indicazione. Le indicazioni con lo stesso valore **eventId** non null vengono considerate dall'entità di creazione per rappresentare lo stesso evento. Il confronto di due valori **eventId** viene definito solo per le indicazioni di avviso con valori identici, non null, delle proprietà **SystemCreateClassName**, **SystemName** e **providerName** .
+Strumentazione o valore specifico del provider che descrive l'evento reale sottostante rappresentato dall'indicazione. Le indicazioni con lo stesso valore **EventID** non NULL vengono considerate dall'entità di creazione per rappresentare lo stesso evento. Il confronto tra due **valori EventID** è definito solo per le indicazioni di avviso con valori identici non NULL delle proprietà **SystemCreateClassName,** **SystemName** e **ProviderName.**
 
 </dd> <dt>
 
 **EventTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -302,78 +302,78 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**ProbableCause**")
 </dt> </dl>
 
-Data e ora che indica quando l'evento sottostante è stato rilevato per la prima volta. Se questi valori vengono specificati e l'entità di creazione non è in grado di fornire queste informazioni, questa proprietà deve essere impostata su **null**. Questo valore è basato sulla nozione della data e dell'ora locali dell'oggetto **\_ ManageSystemElement CIM** che ha generato l'indicazione.
+Ora e data che indica la prima volta che è stato rilevato l'evento sottostante. Se questi valori vengono specificati e l'entità di creazione non è in grado di fornire queste informazioni, questa proprietà deve essere impostata su **NULL.** Questo valore si basa sulla nozione di data e ora locali **dell'oggetto CIM \_ ManageSystemElement** che ha generato l'indicazione.
 
 </dd> <dt>
 
 **Messaggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**MessageID**","**CIM \_ AlertIndication**.**MessageArguments**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**MessageID**", "**CIM \_ AlertIndication**.**MessageArguments**")
 </dt> </dl>
 
-Messaggio formattato per l'indicazione dell'avviso. Questo messaggio viene formattato combinando uno o più elementi dinamici specificati nella proprietà **MessageArguments** e con gli elementi statici identificati in modo univoco dalla proprietà **MessageID** .
+Messaggio formattato per l'indicazione di avviso. Questo messaggio viene formattato combinando uno o più elementi dinamici specificati nella proprietà **MessageArguments** e con gli elementi statici identificati in modo univoco dalla **proprietà MessageID.**
 
 </dd> <dt>
 
-**MessageArguments**
+**Argomenti di messaggio**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**Messaggio**","**CIM \_ AlertIndication**.**MessageID**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**Messaggio**", "**CIM \_ AlertIndication**.**MessageID**")
 </dt> </dl>
 
-Matrice che contiene il contenuto dinamico del messaggio per l'indicazione dell'avviso.
+Matrice contenente il contenuto dinamico del messaggio per l'indicazione di avviso.
 
 </dd> <dt>
 
 **MessageID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**Messaggio**","**CIM \_ AlertIndication**.**MessageArguments**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**Messaggio**", "**CIM \_ AlertIndication**.**MessageArguments**")
 </dt> </dl>
 
-ID univoco del formato del messaggio, con l'ambito dell'organizzazione specificato in **OwningEntity**.
+ID univoco del formato del messaggio, con l'ambito dell'organizzazione specificato in **OwningEntity.**
 
 </dd> <dt>
 
 **OtherAlertingElementFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingElementFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertingElementFormat ")**
 </dt> </dl>
 
-Definisce il formato della proprietà **AlertingManagedElement** quando la proprietà **AlertingElementFormat** è impostata su "1" (other); in caso contrario, questo valore deve essere impostato su **null**.
+Definisce il formato della proprietà **AlertingManagedElement** quando la **proprietà AlertingElementFormat** è impostata su "1" (altro); In caso contrario, questo valore deve essere impostato su **NULL.**
 
 </dd> <dt>
 
 **OtherAlertType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -382,33 +382,33 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**AlertType**")
 </dt> </dl>
 
-Stringa che descrive il valore **AlertType** quando la proprietà **AlertType** è impostata su "1" (altra modifica dello stato).
+Stringa che descrive il valore **AlertType** quando la **proprietà AlertType** è impostata su "1" (Other State Change).
 
 </dd> <dt>
 
 **OwningEntity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-ID univoco dell'organizzazione a cui appartiene la definizione del formato della proprietà del **messaggio** . **OwningEntity** deve includere un nome con copyright, marchio o univoco di proprietà dell'entità di business o del corpo degli standard che ha definito il formato del messaggio.
+ID univoco dell'organizzazione proprietaria della definizione del formato della **proprietà** Message. **OwningEntity** deve includere un nome protetto da copyright, con marchio o univoco di proprietà dell'entità aziendale o del corpo degli standard che ha definito il formato del messaggio.
 
 </dd> <dt>
 
 **PerceivedSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PerceivedSeverity"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. Gravità percepita ")
+Qualificatori: [**Required**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PerceivedSeverity"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Gravità percepita")
 </dt> </dl>
 
 Gravità dell'indicazione di avviso dal punto di vista dell'elemento che ha generato l'avviso.
@@ -433,7 +433,7 @@ Segue l'utilizzo comune.
 
 </dt> <dd>
 
-Indica che il valore della gravità è reperibile nella proprietà OtherSeverity.
+Indica che il valore della gravità è disponibile nella proprietà OtherSeverity.
 
 </dd> <dt>
 
@@ -450,12 +450,12 @@ Segue l'utilizzo comune.
 
 <span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>
 
-<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Danneggiato/avviso** (3)
+<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Danneggiato/Avviso** (3)
 
 
 </dt> <dd>
 
-Deve essere usato quando è appropriato per consentire all'utente di decidere se è necessaria un'azione.
+Deve essere usato quando appropriato per consentire all'utente di decidere se è necessaria un'azione.
 
 </dd> <dt>
 
@@ -466,7 +466,7 @@ Deve essere usato quando è appropriato per consentire all'utente di decidere se
 
 </dt> <dd>
 
-Indica che l'azione è necessaria, ma in questo momento la situazione non è grave.
+Indica che è necessaria un'azione, ma la situazione non è grave in questo momento.
 
 </dd> <dt>
 
@@ -477,7 +477,7 @@ Indica che l'azione è necessaria, ma in questo momento la situazione non è gra
 
 </dt> <dd>
 
-Indica che l'azione è ora necessaria.
+Indica che è ora necessaria un'azione.
 
 </dd> <dt>
 
@@ -488,13 +488,13 @@ Indica che l'azione è ora necessaria.
 
 </dt> <dd>
 
-L'azione è ora necessaria e l'ambito è ampio (probabilmente verrà generata un'interruzione imminente a una risorsa critica).
+L'azione è necessaria ORA e l'ambito è ampio (potrebbe verificarsi un'imminente interruzione di una risorsa critica).
 
 </dd> <dt>
 
 <span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>
 
-<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Irreversibile/irreversibile** (7)
+<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Irreversibile/Non irreversibile** (7)
 
 
 </dt> <dd>
@@ -508,16 +508,16 @@ Indica che si è verificato un errore, ma è troppo tardi per eseguire un'azione
 **ProbableCause**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**required**](/windows/desktop/WmiSdk/standard-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. Probabili cause "," Recommendation. ITU \| M3100. probableCause "," ITU-IANA-Alarm-TC "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**ProbableCauseDescription**","**CIM \_ AlertIndication**.**ID** evento ","**CIM \_ AlertIndication**.**EventTime**")
+Qualificatori: [**Obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Probable cause", "Recommendation.ITU \| M3100.probableCause", "ITU-IANA-ALARM-TC"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**ProbableCauseDescription**", "**CIM \_ AlertIndication**.**EventID**", "**CIM \_ AlertIndication**.**EventTime**")
 </dt> </dl>
 
-Causa probabile della situazione che ha generato l'indicazione dell'avviso.
+Causa probabile della situazione che ha causato l'indicazione di avviso.
 
 <dt>
 
@@ -537,7 +537,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Adapter_Card_Error"></span><span id="adapter_card_error"></span><span id="ADAPTER_CARD_ERROR"></span>
 
-**Errore scheda/scheda** (2)
+**Errore adattatore/scheda** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -565,14 +565,14 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Communications_Protocol_Error"></span><span id="communications_protocol_error"></span><span id="COMMUNICATIONS_PROTOCOL_ERROR"></span>
 
-**Errore del protocollo di comunicazione** (6)
+**Errore del protocollo di** comunicazione (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Communications_Subsystem_Failure"></span><span id="communications_subsystem_failure"></span><span id="COMMUNICATIONS_SUBSYSTEM_FAILURE"></span>
 
-**Errore del sottosistema di comunicazione** (7)
+**Errore del sottosistema comunicazioni** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -600,14 +600,14 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="CPU_Cycles_Limit_Exceeded"></span><span id="cpu_cycles_limit_exceeded"></span><span id="CPU_CYCLES_LIMIT_EXCEEDED"></span>
 
-**Limite cicli CPU superato** (11)
+**Limite di cicli CPU superato** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dataset_Modem_Error"></span><span id="dataset_modem_error"></span><span id="DATASET_MODEM_ERROR"></span>
 
-**Errore del set di dati/modem** (12)
+**Errore set di dati/modem** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -621,21 +621,21 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="DTE-DCE_Interface_Error"></span><span id="dte-dce_interface_error"></span><span id="DTE-DCE_INTERFACE_ERROR"></span>
 
-**Errore di interfaccia DTE-DCE** (14)
+**Errore dell'interfaccia DTE-DCE** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Enclosure_Door_Open"></span><span id="enclosure_door_open"></span><span id="ENCLOSURE_DOOR_OPEN"></span>
 
-**Sportello enclosure aperto** (15)
+**Enclosure Door Open** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Equipment_Malfunction"></span><span id="equipment_malfunction"></span><span id="EQUIPMENT_MALFUNCTION"></span>
 
-**Malfunzionamento delle apparecchiature** (16)
+**Malfunzionamento delle** apparecchiature (16)
 
 
 </dt> <dd></dd> <dt>
@@ -649,21 +649,21 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="File_Format_Error"></span><span id="file_format_error"></span><span id="FILE_FORMAT_ERROR"></span>
 
-**Errore di formato del file** (18)
+**Errore di formato file** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Fire_Detected"></span><span id="fire_detected"></span><span id="FIRE_DETECTED"></span>
 
-**Fire detected** (19)
+**Rilevato incendio** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Flood_Detected"></span><span id="flood_detected"></span><span id="FLOOD_DETECTED"></span>
 
-**Flood rilevato** (20)
+**Rilevato flood** (20)
 
 
 </dt> <dd></dd> <dt>
@@ -698,7 +698,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Input_Device_Error"></span><span id="input_device_error"></span><span id="INPUT_DEVICE_ERROR"></span>
 
-**Errore dispositivo di input** (25)
+**Errore del dispositivo di** input (25)
 
 
 </dt> <dd></dd> <dt>
@@ -712,7 +712,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Non-Toxic_Leak_Detected"></span><span id="non-toxic_leak_detected"></span><span id="NON-TOXIC_LEAK_DETECTED"></span>
 
-È stata **rilevata una perdita non tossica** (27)
+**Rilevata perdita non tossica** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -733,14 +733,14 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Loss_of_Signal"></span><span id="loss_of_signal"></span><span id="LOSS_OF_SIGNAL"></span>
 
-**Perdita del segnale** (30)
+**Perdita di segnale** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Material_Supply_Exhausted"></span><span id="material_supply_exhausted"></span><span id="MATERIAL_SUPPLY_EXHAUSTED"></span>
 
-**Approvvigionamento materiale esaurito** (31)
+**Alimentazione materiale esaurita** (31)
 
 
 </dt> <dd></dd> <dt>
@@ -761,14 +761,14 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Output_Device_Error"></span><span id="output_device_error"></span><span id="OUTPUT_DEVICE_ERROR"></span>
 
-**Errore dispositivo di output** (34)
+**Errore del dispositivo di** output (34)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Performance_Degraded"></span><span id="performance_degraded"></span><span id="PERFORMANCE_DEGRADED"></span>
 
-**Prestazioni** ridotte (35)
+**Prestazioni ridotte** (35)
 
 
 </dt> <dd></dd> <dt>
@@ -796,42 +796,42 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Pump_Failure"></span><span id="pump_failure"></span><span id="PUMP_FAILURE"></span>
 
-**Errore della pompa** (39)
+**Guasto alla pompa** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Queue_Size_Exceeded"></span><span id="queue_size_exceeded"></span><span id="QUEUE_SIZE_EXCEEDED"></span>
 
-**Dimensione coda superata** (40)
+**Dimensioni coda superate** (40)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Receive_Failure"></span><span id="receive_failure"></span><span id="RECEIVE_FAILURE"></span>
 
-**Errore di ricezione** (41)
+**Errore di** ricezione (41)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Receiver_Failure"></span><span id="receiver_failure"></span><span id="RECEIVER_FAILURE"></span>
 
-**Errore del ricevitore** (42)
+**Errore ricevitore** (42)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Remote_Node_Transmission_Error"></span><span id="remote_node_transmission_error"></span><span id="REMOTE_NODE_TRANSMISSION_ERROR"></span>
 
-**Errore di trasmissione del nodo remoto** (43)
+**Errore di trasmissione del nodo** remoto (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Resource_at_or_Nearing_Capacity"></span><span id="resource_at_or_nearing_capacity"></span><span id="RESOURCE_AT_OR_NEARING_CAPACITY"></span>
 
-**Risorsa alla capacità o al prossimo livello** (44)
+**Risorsa con capacità prossima o prossima** (44)
 
 
 </dt> <dd></dd> <dt>
@@ -845,7 +845,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Retransmission_Rate_Excessive"></span><span id="retransmission_rate_excessive"></span><span id="RETRANSMISSION_RATE_EXCESSIVE"></span>
 
-**Frequenza di ritrasmissione eccessiva** (46)
+**Velocità di ritrasmissione eccessiva** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -873,7 +873,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Storage_Capacity_Problem"></span><span id="storage_capacity_problem"></span><span id="STORAGE_CAPACITY_PROBLEM"></span>
 
-**Problema di capacità di archiviazione** (50)
+**Archiviazione problema di capacità** (50)
 
 
 </dt> <dd></dd> <dt>
@@ -901,7 +901,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Toxic_Leak_Detected"></span><span id="toxic_leak_detected"></span><span id="TOXIC_LEAK_DETECTED"></span>
 
-È stata **rilevata una perdita tossica** (54)
+**Rilevata perdita tossica** (54)
 
 
 </dt> <dd></dd> <dt>
@@ -915,7 +915,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Transmitter_Failure"></span><span id="transmitter_failure"></span><span id="TRANSMITTER_FAILURE"></span>
 
-**Errore della trasmittente** (56)
+**Errore del trasmettitore** (56)
 
 
 </dt> <dd></dd> <dt>
@@ -943,7 +943,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Login_Attempts_Failed"></span><span id="login_attempts_failed"></span><span id="LOGIN_ATTEMPTS_FAILED"></span>
 
-**Tentativi di accesso non riusciti** (60)
+**Tentativi di accesso non** riusciti (60)
 
 
 </dt> <dd></dd> <dt>
@@ -957,28 +957,28 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Hardware_Security_Breached"></span><span id="hardware_security_breached"></span><span id="HARDWARE_SECURITY_BREACHED"></span>
 
-**Protezione hardware violata** (62)
+**Sicurezza hardware violata** (62)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Denial_of_Service_Detected"></span><span id="denial_of_service_detected"></span><span id="DENIAL_OF_SERVICE_DETECTED"></span>
 
-**Rilevato un attacco Denial of Service** (63)
+**Rilevata negazione del servizio** (63)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Security_Credential_MisMatch"></span><span id="security_credential_mismatch"></span><span id="SECURITY_CREDENTIAL_MISMATCH"></span>
 
-**Mancata corrispondenza delle credenziali di sicurezza** (64)
+**Mancata corrispondenza delle credenziali di** sicurezza (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unauthorized_Access"></span><span id="unauthorized_access"></span><span id="UNAUTHORIZED_ACCESS"></span>
 
-**Accesso non autorizzato** (65)
+**Accesso non** autorizzato (65)
 
 
 </dt> <dd></dd> <dt>
@@ -992,7 +992,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Loss_of_Pointer"></span><span id="loss_of_pointer"></span><span id="LOSS_OF_POINTER"></span>
 
-**Perdita di puntatore** (67)
+**Perdita del puntatore** (67)
 
 
 </dt> <dd></dd> <dt>
@@ -1013,7 +1013,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Excessive_Error_Rate"></span><span id="excessive_error_rate"></span><span id="EXCESSIVE_ERROR_RATE"></span>
 
-**Frequenza degli errori eccessiva** (70)
+**Frequenza di errori** eccessiva (70)
 
 
 </dt> <dd></dd> <dt>
@@ -1048,7 +1048,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Broadcast_Channel_Failure"></span><span id="broadcast_channel_failure"></span><span id="BROADCAST_CHANNEL_FAILURE"></span>
 
-**Errore canale broadcast** (75)
+**Errore del canale di trasmissione** (75)
 
 
 </dt> <dd></dd> <dt>
@@ -1076,14 +1076,14 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Identifier_Duplication"></span><span id="identifier_duplication"></span><span id="IDENTIFIER_DUPLICATION"></span>
 
-**Duplicazione degli identificatori** (79)
+**Duplicazione dell'identificatore** (79)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Protection_Path_Failure"></span><span id="protection_path_failure"></span><span id="PROTECTION_PATH_FAILURE"></span>
 
-**Errore nel percorso di protezione** (80)
+**Errore del percorso di** protezione (80)
 
 
 </dt> <dd></dd> <dt>
@@ -1097,21 +1097,21 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Terminal_Problem"></span><span id="terminal_problem"></span><span id="TERMINAL_PROBLEM"></span>
 
-**Problema terminale** (82)
+**Problema del terminale** (82)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Real_Time_Clock_Failure"></span><span id="real_time_clock_failure"></span><span id="REAL_TIME_CLOCK_FAILURE"></span>
 
-**Errore di clock in tempo reale** (83)
+**Errore dell'orologio in** tempo reale (83)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Antenna_Failure"></span><span id="antenna_failure"></span><span id="ANTENNA_FAILURE"></span>
 
-**Errore antenna** (84)
+**Errore dell'antenna** (84)
 
 
 </dt> <dd></dd> <dt>
@@ -1132,7 +1132,7 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Frequency_Hopping_Failure"></span><span id="frequency_hopping_failure"></span><span id="FREQUENCY_HOPPING_FAILURE"></span>
 
-**Errore di salto della frequenza** (87)
+**Errore di salti di frequenza** (87)
 
 
 </dt> <dd></dd> <dt>
@@ -1146,28 +1146,28 @@ Causa probabile della situazione che ha generato l'indicazione dell'avviso.
 
 <span id="Power_Supply_Failure"></span><span id="power_supply_failure"></span><span id="POWER_SUPPLY_FAILURE"></span>
 
-**Errore alimentatore** (89)
+**Errore di alimentazione** (89)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Signal_Quality_Problem"></span><span id="signal_quality_problem"></span><span id="SIGNAL_QUALITY_PROBLEM"></span>
 
-**Problema relativo alla qualità del segnale** (90)
+**Problema di qualità del** segnale (90)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Battery_Discharging"></span><span id="battery_discharging"></span><span id="BATTERY_DISCHARGING"></span>
 
-Scaricamento **della batteria** (91)
+**Scaricamento della batteria** (91)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Battery_Failure"></span><span id="battery_failure"></span><span id="BATTERY_FAILURE"></span>
 
-**Errore batteria** (92)
+**Guasto della batteria** (92)
 
 
 </dt> <dd></dd> <dt>
@@ -1181,14 +1181,14 @@ Scaricamento **della batteria** (91)
 
 <span id="Fan_Failure"></span><span id="fan_failure"></span><span id="FAN_FAILURE"></span>
 
-**Errore ventola** (94)
+**Errore della ventola** (94)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Engine_Failure"></span><span id="engine_failure"></span><span id="ENGINE_FAILURE"></span>
 
-**Errore del motore** (95)
+**Errore del** motore (95)
 
 
 </dt> <dd></dd> <dt>
@@ -1202,7 +1202,7 @@ Scaricamento **della batteria** (91)
 
 <span id="Fuse_Failure"></span><span id="fuse_failure"></span><span id="FUSE_FAILURE"></span>
 
-**Errore fusibile** (97)
+**Errore del fusibile** (97)
 
 
 </dt> <dd></dd> <dt>
@@ -1216,14 +1216,14 @@ Scaricamento **della batteria** (91)
 
 <span id="Low_Battery"></span><span id="low_battery"></span><span id="LOW_BATTERY"></span>
 
-**Batteria insufficiente** (99)
+**Batteria in esaurimento** (99)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Low_Fuel"></span><span id="low_fuel"></span><span id="LOW_FUEL"></span>
 
-**Carburante basso** (100)
+**Basso consumo di** carburante (100)
 
 
 </dt> <dd></dd> <dt>
@@ -1251,42 +1251,42 @@ Scaricamento **della batteria** (91)
 
 <span id="Ice_Buildup"></span><span id="ice_buildup"></span><span id="ICE_BUILDUP"></span>
 
-**Accumulo di ghiaccio** (104)
+**Ice Buildup** (104)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Smoke"></span><span id="smoke"></span><span id="SMOKE"></span>
 
-**Fumo** (105)
+**Smoke** (105)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Memory_Mismatch"></span><span id="memory_mismatch"></span><span id="MEMORY_MISMATCH"></span>
 
-**Memoria non corrispondente** (106)
+**Mancata corrispondenza della** memoria (106)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Out_of_CPU_Cycles"></span><span id="out_of_cpu_cycles"></span><span id="OUT_OF_CPU_CYCLES"></span>
 
-**Cicli esauriti CPU** (107)
+**Cicli di CPU non in esecuzione** (107)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Software_Environment_Problem"></span><span id="software_environment_problem"></span><span id="SOFTWARE_ENVIRONMENT_PROBLEM"></span>
 
-**Problema relativo all'ambiente software** (108)
+**Problema dell'ambiente software** (108)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Software_Download_Failure"></span><span id="software_download_failure"></span><span id="SOFTWARE_DOWNLOAD_FAILURE"></span>
 
-**Errore di download del software** (109)
+**Errore di download software** (109)
 
 
 </dt> <dd></dd> <dt>
@@ -1314,21 +1314,21 @@ Scaricamento **della batteria** (91)
 
 <span id="Leak_Detected"></span><span id="leak_detected"></span><span id="LEAK_DETECTED"></span>
 
-**Perdita rilevata** (113)
+**Rilevata perdita** (113)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Protection_Mechanism_Failure"></span><span id="protection_mechanism_failure"></span><span id="PROTECTION_MECHANISM_FAILURE"></span>
 
-**Errore del meccanismo di protezione** (114)
+**Errore del meccanismo di** protezione (114)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Protecting_Resource_Failure"></span><span id="protecting_resource_failure"></span><span id="PROTECTING_RESOURCE_FAILURE"></span>
 
-**Protezione** di un errore di risorse (115)
+**Protezione degli errori delle** risorse (115)
 
 
 </dt> <dd></dd> <dt>
@@ -1342,7 +1342,7 @@ Scaricamento **della batteria** (91)
 
 <span id="Authentication_Failure"></span><span id="authentication_failure"></span><span id="AUTHENTICATION_FAILURE"></span>
 
-**Errore di autenticazione** (117)
+**Errore di** autenticazione (117)
 
 
 </dt> <dd></dd> <dt>
@@ -1356,7 +1356,7 @@ Scaricamento **della batteria** (91)
 
 <span id="Cable_Tamper"></span><span id="cable_tamper"></span><span id="CABLE_TAMPER"></span>
 
-**Manomissione cavo** (119)
+**Manomissione del cavo** (119)
 
 
 </dt> <dd></dd> <dt>
@@ -1384,7 +1384,7 @@ Scaricamento **della batteria** (91)
 
 <span id="Information_Modification"></span><span id="information_modification"></span><span id="INFORMATION_MODIFICATION"></span>
 
-**Modifica delle informazioni** (123)
+**Modifica delle** informazioni (123)
 
 
 </dt> <dd></dd> <dt>
@@ -1443,7 +1443,7 @@ Scaricamento **della batteria** (91)
 **ProbableCauseDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1452,20 +1452,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AlertIndication**.**ProbableCause**")
 </dt> </dl>
 
-Informazioni aggiuntive correlate alla proprietà **ProbableCause** .
+Informazioni aggiuntive relative alla **proprietà ProbableCause.**
 
 </dd> <dt>
 
 **ProviderName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome del provider che ha generato l'indicazione.
@@ -1475,45 +1475,45 @@ Nome del provider che ha generato l'indicazione.
 **RecommendedActions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. Azioni di ripristino proposte ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Azioni di ripristino proposte")
 </dt> </dl>
 
-Descrizioni del formato gratuite delle azioni consigliate da intraprendere per risolvere la cause della notifica.
+Descrizioni in formato libero delle azioni consigliate da eseguire per risolvere la causa della notifica.
 
 </dd> <dt>
 
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Valore **CreationClassName** del sistema di ambito per il provider che ha generato l'indicazione.
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome del sistema di ambito per il provider che ha generato l'indicazione.
@@ -1523,16 +1523,16 @@ Nome del sistema di ambito per il provider che ha generato l'indicazione.
 **Di tendenza**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation. ITU \| X733. TrendIndication")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. TrendIndication")
 </dt> </dl>
 
-Fornisce informazioni sulla tendenza, ovvero sulle tendenze, su inattivo o nessuna modifica.
+Fornisce informazioni sulla tendenza: tendenza verso l'alto, verso il basso o nessuna modifica.
 
 <dt>
 
@@ -1580,9 +1580,9 @@ Fornisce informazioni sulla tendenza, ovvero sulle tendenze, su inattivo o nessu
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1591,7 +1591,7 @@ Fornisce informazioni sulla tendenza, ovvero sulle tendenze, su inattivo o nessu
 
 <dl> <dt>
 
-[**\_PROCESSINDICATION CIM**](cim-processindication.md)
+[**Processo \_ CIMIndication**](cim-processindication.md)
 </dt> </dl>
 
  

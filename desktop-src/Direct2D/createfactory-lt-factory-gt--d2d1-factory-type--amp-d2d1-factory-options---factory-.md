@@ -1,9 +1,9 @@
 ---
-title: Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE, D2D1_FACTORY_OPTIONS, Factory) (D2d1. h)
-description: Crea un oggetto factory che può essere utilizzato per creare risorse Direct2D. | Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE, D2D1_FACTORY_OPTIONS, Factory) (D2d1. h)
+title: Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,D2D1_FACTORY_OPTIONS ,Factory ) (D2d1.h)
+description: Crea un oggetto factory che può essere usato per creare risorse Direct2D. | Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,D2D1_FACTORY_OPTIONS ,Factory ) (D2d1.h)
 ms.assetid: 618d7fbc-3801-4507-8774-4e1f4f36af44
 keywords:
-- Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE, D2D1_FACTORY_OPTIONS, Factory) Direct2D
+- Funzione D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,D2D1_FACTORY_OPTIONS ,Factory ) Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b25e6588ef79b234402742d473982910255f4230
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 34cbe566b139ebd873e8e9895aa21307113be9632b2045d40c099f52f49fc574
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106322004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824691"
 ---
-# <a name="d2d1createfactoryfactoryd2d1_factory_typed2d1_factory_optionsfactory-function"></a>D2D1CreateFactory <Factory> ( \_ \_ tipo di Factory d2d1, D2D1 \_ Factory \_ options&, factory \* \* )
+# <a name="d2d1createfactoryfactoryd2d1_factory_typed2d1_factory_optionsfactory-function"></a>Funzione D2D1CreateFactory <Factory> (D2D1 \_ FACTORY \_ TYPE,D2D1 \_ FACTORY OPTIONS \_&,Factory \* \* )
 
-Crea un oggetto factory che può essere utilizzato per creare risorse Direct2D.
+Crea un oggetto factory che può essere usato per creare risorse Direct2D.
 
 ``` syntax
 template<class Factory>
@@ -52,9 +52,9 @@ HRESULT D2D1CreateFactory(
 
 | Parametro        | Descrizione                                                                     |
 |------------------|---------------------------------------------------------------------------------|
-| *factoryType*    | Il modello di threading della Factory e le risorse che crea.                |
+| *factoryType*    | Modello di threading della factory e delle risorse create.                |
 | *factoryOptions* | Livello di dettaglio fornito al livello di debug.                            |
-| *factory*        | Quando termina, questo metodo contiene l'indirizzo di un puntatore alla nuova factory. |
+| *factory*        | Quando questo metodo viene restituito, contiene l'indirizzo di un puntatore alla nuova factory. |
 
 
 
@@ -62,7 +62,7 @@ HRESULT D2D1CreateFactory(
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,11 +70,11 @@ Se il metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, rest
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e aggiornamento della piattaforma per app desktop di Windows Vista \[ \| UWP\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per app desktop di Windows Server 2008 \[ \| UWP\]<br/> |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/>                                                  |
-| Intestazione<br/>                   | <dl> <dt>D2d1. h</dt> </dl>                                                        |
-| Libreria<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma per Windows app desktop di Vista \[ \| app UWP\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma per app desktop Windows Server 2008 \[ \| app UWP\]<br/> |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/>                                                  |
+| Intestazione<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
+| Libreria<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 

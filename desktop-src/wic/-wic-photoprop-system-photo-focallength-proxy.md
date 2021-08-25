@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per i criteri dei metadati della foto System. Photo. FocalLength.
+description: Proxy di proprietà per i criteri dei metadati della foto System.Photo.FocalLength.
 ms.assetid: ce2076fe-22c4-4f43-9740-cdcbcb2eadc8
-title: System. Photo. FocalLength proxy
+title: System.Photo.FocalLength Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68dd1f66aef65a2b75aedebed6aceb974803cec8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33f17eb7b829bb0c21e596fa134ae35b289e862bc782d45786fb59ae57d892ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882021"
 ---
-# <a name="systemphotofocallength-proxy"></a>System. Photo. FocalLength proxy
+# <a name="systemphotofocallength-proxy"></a>System.Photo.FocalLength Proxy
 
-Il proxy di proprietà per i criteri dei metadati della foto System. Photo. FocalLength.
+Proxy di proprietà per i criteri dei metadati della foto System.Photo.FocalLength.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. Photo. FocalLength](../properties/props-system-photo-focallength.md)
+[System.Photo.FocalLength](../properties/props-system-photo-focallength.md)
 </dt> </dl>
 
  

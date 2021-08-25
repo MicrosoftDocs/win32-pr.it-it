@@ -1,19 +1,19 @@
 ---
-description: Questo argomento fornisce informazioni sul codec TIFF nativo disponibile tramite Windows Imaging Component (WIC).
+description: In questo argomento vengono fornite informazioni sul codec TIFF nativo disponibile tramite Windows Imaging Component (WIC).
 ms.assetid: 021AAF33-A89E-4336-AEB1-1A0D79A14C75
 title: Panoramica del formato TIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b28dfcc85dac21e95e6c76118d2db57cb74a08
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 995b8635756a1cc807d3125240517ce5d1eef54d447540028408eb3048d6143a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841341"
 ---
 # <a name="tiff-format-overview"></a>Panoramica del formato TIFF
 
-Questo argomento fornisce informazioni sul codec TIFF nativo disponibile tramite Windows Imaging Component (WIC).
+In questo argomento vengono fornite informazioni sul codec TIFF nativo disponibile tramite Windows Imaging Component (WIC).
 
 -   [Codec Identity](#codec-identity)
 -   [Encoding](#encoding)
@@ -53,7 +53,7 @@ Nella tabella seguente sono elencati i GUID utilizzati per identificare i compon
 
 ## <a name="encoding"></a>Codifica
 
-L'API di codifica WIC è progettata per essere indipendente dal codec e la codifica delle immagini per i codec abilitati per WIC è essenzialmente la stessa. Per altre informazioni sulla codifica delle immagini tramite l'API WIC, vedere Cenni preliminari [sulla codifica.](-wic-creating-encoder.md)
+L'API di codifica WIC è progettata per essere indipendente dal codec e la codifica delle immagini per i codec abilitati per WIC è essenzialmente la stessa. Per altre informazioni sulla codifica delle immagini tramite l'API WIC, vedere Cenni [preliminari sulla codifica.](-wic-creating-encoder.md)
 
 ### <a name="encoder-options"></a>Opzioni del codificatore
 
@@ -82,7 +82,7 @@ Il valore predefinito è [**WICTiffCompressionDontCare.**](/windows/desktop/api/
 
 ## <a name="decoding"></a>Decodifica
 
-Le API di decodifica WIC sono progettate per essere indipendenti dal codec e la decodifica delle immagini per i codec abilitati per WIC è essenzialmente la stessa. Per altre informazioni sulla decodifica delle immagini, vedere [Cenni preliminari sulla decodifica.](-wic-creating-decoder.md) Per altre informazioni sull'uso di dati di immagine decodificati, vedere Cenni [preliminari sulle origini bitmap.](-wic-bitmapsources.md)
+Le API di decodifica WIC sono progettate per essere indipendenti dal codec e la decodifica delle immagini per i codec abilitati per WIC è essenzialmente la stessa. Per altre informazioni sulla decodifica delle immagini, vedere [Cenni preliminari sulla decodifica.](-wic-creating-decoder.md) Per altre informazioni sull'uso di dati immagine decodificati, vedere Cenni preliminari [sulle origini bitmap.](-wic-bitmapsources.md)
 
  
 

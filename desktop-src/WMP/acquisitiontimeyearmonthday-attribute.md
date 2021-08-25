@@ -1,6 +1,6 @@
 ---
 title: Attributo AcquisitionTimeYearMonthDay
-description: L'attributo AcquisitionTimeYearMonthDay è la parte relativa all'anno, al mese e al giorno della data e dell'ora in cui l'elemento è stato aggiunto alla libreria.
+description: L'attributo AcquisitionTimeYearMonthDay è la parte anno, mese e giorno della data e dell'ora in cui l'elemento è stato aggiunto alla libreria.
 ms.assetid: b8bde5b9-bf9b-460e-80cc-7aaef2b4d908
 keywords:
 - Attributo AcquisitionTimeYearMonthDay Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee14a5ab75e23a4206d340a3e2e15c8e74e79a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f304f3bd0c4f5c361139307f62ba5a3f00594e7b8fbc33df43a37ce1fc31efd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862541"
 ---
 # <a name="acquisitiontimeyearmonthday-attribute"></a>Attributo AcquisitionTimeYearMonthDay
 
-L'attributo **AcquisitionTimeYearMonthDay** è la parte relativa all'anno, al mese e al giorno della data e dell'ora in cui l'elemento è stato aggiunto alla libreria.
+**L'attributo AcquisitionTimeYearMonthDay** è la parte anno, mese e giorno della data e dell'ora in cui l'elemento è stato aggiunto alla libreria.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -34,9 +34,9 @@ L'attributo **AcquisitionTimeYearMonthDay** è la parte relativa all'anno, al me
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

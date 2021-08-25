@@ -1,38 +1,38 @@
 ---
-title: Posizionamento pulsante
-description: Posizionamento pulsante
+title: Posizionamento dei pulsanti
+description: Posizionamento dei pulsanti
 ms.assetid: 104f4dfb-8452-4dcc-9d48-cd754318083c
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di immagine per le interfacce, posizionamento dei pulsanti
-- Interfacce di Windows Media Player Mobile, posizionamento del pulsante
-- interfacce, posizionamento del pulsante
-- posizionamento pulsante nelle interfacce
+- Windows Media Player Skin per dispositivi mobili, file di grafica
+- skins, file di grafica
+- file per skin, art
+- file di grafica per le skin, posizionamento dei pulsanti
+- Windows Media Player Skin per dispositivi mobili, posizionamento dei pulsanti
+- skins,posizionamento dei pulsanti
+- posizionamento dei pulsanti nelle skin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe14e941e620f80906bb78f86c30f1beceeb66fb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d93bc748d2b88cf46c18414916ae9cf563edde112a94e89723105600f68de57d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902381"
 ---
-# <a name="button-placement"></a>Posizionamento pulsante
+# <a name="button-placement"></a>Posizionamento dei pulsanti
 
-Anche se è possibile disegnare pulsanti come forme, questi vengono trattati internamente come aventi un limite esterno rettangolare. Per questo motivo, evitare la sovrapposizione delle coordinate dei pulsanti perché potrebbero verificarsi risultati imprevisti.
+Anche se è possibile disegnare pulsanti per qualsiasi forma, vengono considerati internamente come con un limite esterno rettangolare. Per questo motivo, evitare di sovrapporsi alle coordinate dei pulsanti perché possono verificarsi risultati imprevisti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**File di immagine**](art-files.md)
+[**File di grafica**](art-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

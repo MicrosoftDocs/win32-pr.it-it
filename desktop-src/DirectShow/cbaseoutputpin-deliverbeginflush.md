@@ -1,5 +1,5 @@
 ---
-description: "Metodo CBaseOutputPin.DeliverBeginFlush: il metodo DeliverBeginFlush richiede al pin di input connesso di avviare un'operazione di scaricamento."
+description: "Metodo CBaseOutputPin.DeliverBeginFlush: il metodo DeliverBeginFlush richiede al pin di input connesso di iniziare un'operazione di scaricamento."
 ms.assetid: 0d7c7bd7-2a7a-42a4-a0de-60205b62e49c
 title: Metodo CBaseOutputPin.DeliverBeginFlush (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 22dbd2bccf33d9f203d1505106184500b8cae3ba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f154835a78ba2dab40f6cd505f6dc25e00ef60b6d070a2b4b19e1123c370478f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814201"
 ---
 # <a name="cbaseoutputpindeliverbeginflush-method"></a>Metodo CBaseOutputPin.DeliverBeginFlush
 
@@ -65,7 +65,7 @@ Questo metodo chiama il [**metodo IPin::BeginFlush**](/windows/desktop/api/Strmi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

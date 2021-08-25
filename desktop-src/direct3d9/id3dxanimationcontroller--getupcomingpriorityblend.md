@@ -1,7 +1,7 @@
 ---
-description: Restituisce un handle di evento per l'evento di Blend di priorità successivo pianificato per essere eseguito dopo un evento specificato.
+description: Restituisce un handle di evento per l'evento di blend di priorità successivo pianificato dopo un evento specificato.
 ms.assetid: 64fa6fca-dc4a-4534-ab8e-b11b3c7ed23c
-title: 'Metodo ID3DXAnimationController:: GetUpcomingPriorityBlend (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::GetUpcomingPriorityBlend (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 72f9b8854041094d43d9e8250ab61b5f59a67848
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4c58bf5e2a8736db98e0461988f984709e756d269d09c74dd673356676702ff9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849081"
 ---
-# <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a>Metodo ID3DXAnimationController:: GetUpcomingPriorityBlend
+# <a name="id3dxanimationcontrollergetupcomingpriorityblend-method"></a>Metodo ID3DXAnimationController::GetUpcomingPriorityBlend
 
-Restituisce un handle di evento per l'evento di Blend di priorità successivo pianificato per essere eseguito dopo un evento specificato.
+Restituisce un handle di evento per l'evento di blend di priorità successivo pianificato dopo un evento specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ D3DXEVENTHANDLE GetUpcomingPriorityBlend(
 
 <dl> <dt>
 
-*hEvent* \[ in\]
+*hEvent* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Handle di evento per un evento specificato dopo il quale cercare un evento di combinazione di priorità successivo. Se impostato su **null**, il metodo restituirà l'evento di Blend di priorità pianificato successivo.
+Handle di evento per un evento specificato dopo il quale cercare un evento di blend di priorità seguente. Se impostato su **NULL,** il metodo restituirà il successivo evento di blend di priorità pianificato.
 
 </dd> </dl>
 
@@ -53,14 +53,14 @@ Handle di evento per un evento specificato dopo il quale cercare un evento di co
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Handle di evento per l'evento di Blend di priorità successivo pianificato. Viene restituito **null** se non è pianificato alcun nuovo evento di Blend di priorità.
+Handle di evento per il successivo evento di combinazione di priorità pianificato. Se non è pianificato alcun nuovo evento di combinazione di priorità, viene restituito **NULL.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere utilizzato in modo iterativo per individuare un evento di Blend di priorità desiderato passando ripetutamente **null** per hEvent.
+Questo metodo può essere usato in modo iterativo per individuare un evento di blend di priorità desiderato passando ripetutamente **NULL** per hEvent.
 
 > [!Note]  
-> Non scorrere ulteriormente dopo che il metodo ha restituito **null**.
+> Non eseguire ulteriori iterazioni dopo che il metodo ha restituito **NULL.**
 
  
 
@@ -70,8 +70,8 @@ Questo metodo può essere utilizzato in modo iterativo per individuare un evento
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

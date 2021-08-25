@@ -1,26 +1,26 @@
 ---
-title: Proprietà NegotiateSecurityLayer di IMsRdpClientNonScriptable3
+title: Proprietà IMsRdpClientNonScriptable3 NegotiateSecurityLayer
 description: Specifica o recupera un valore che indica se il livello di sicurezza della negoziazione è abilitato per la connessione.
 ms.assetid: 7fc9e3c7-0723-48c4-8d29-5f68a24a522c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
-- Servizi Desktop remoto proprietà NegotiateSecurityLayer, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
+- Proprietà NegotiateSecurityLayer Servizi Desktop remoto, oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà , NegotiateSecurityLayer
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64533615c780cd6e3703be85363684e537b784a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13f87abb5323289e60e3d29fa93d5e858a9a755224e7161ba28970ef5ccb186f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771551"
 ---
-# <a name="imsrdpclientnonscriptable3negotiatesecuritylayer-property"></a>Proprietà IMsRdpClientNonScriptable3:: NegotiateSecurityLayer
+# <a name="imsrdpclientnonscriptable3negotiatesecuritylayer-property"></a>Proprietà IMsRdpClientNonScriptable3::NegotiateSecurityLayer
 
 Specifica o recupera un valore che indica se il livello di sicurezza della negoziazione è abilitato per la connessione.
 
@@ -78,10 +78,10 @@ Specifica se abilitare la negoziazione del livello di sicurezza.
 
 ## <a name="remarks"></a>Commenti
 
-Se questa proprietà è impostata su **Variant \_ FALSE** e autenticazione a livello di rete (NLA) è abilitata nel sistema operativo client, il client non negozierà il livello di sicurezza e utilizzerà invece NLA per proteggere la connessione RDP. Se questa proprietà è impostata su **Variant \_ true**, il client effettuerà la negoziazione tra NLA e la sicurezza RDP di base.
+Se questa proprietà è impostata su **VARIANT \_ FALSE** e l'Autenticazione a livello di rete (NLA) è abilitato nel sistema operativo client, il client non negozierà il livello di sicurezza e userà l'autenticazione a livello di rete per proteggere la connessione RDP. Se questa proprietà è impostata su **VARIANT \_ TRUE,** il client negozierà tra l'autenticazione a livello di rete e la sicurezza RDP di base.
 
 > [!Note]  
-> La disabilitazione della negoziazione del livello di sicurezza è possibile solo quando ci si connette a un server di host sessione Desktop remoto (host sessione Desktop remoto) che esegue Windows Vista o sistemi operativi successivi. Se questa proprietà è abilitata e il client tenta di connettersi a un server Host sessione Desktop remoto che esegue un sistema operativo precedente, la connessione avrà esito negativo.
+> La disabilitazione della negoziazione del livello di sicurezza è possibile solo quando ci si connette a un server Host sessione Desktop remoto (Host sessione Desktop remoto) che esegue Windows Vista o sistemi operativi successivi. Se questa proprietà è abilitata e il client tenta di connettersi a un server Host sessione Desktop remoto che esegue un sistema operativo precedente, la connessione avrà esito negativo.
 
  
 

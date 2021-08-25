@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica BN_SETFOCUS (winuser. h)
-description: Inviato quando un pulsante riceve lo stato attivo della tastiera. Il pulsante deve avere lo \_ stile di notifica BS per inviare il codice di notifica. La finestra padre del pulsante riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: BN_SETFOCUS di notifica (Winuser.h)
+description: Inviato quando un pulsante riceve lo stato attivo della tastiera. Per inviare questo codice di notifica, il pulsante deve avere lo stile \_ BS NOTIFY. La finestra padre del pulsante riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: 6b8d9bde-67f9-454f-ba2c-e5c8d9ff2709
 keywords:
-- Controlli di Windows per il codice di notifica BN_SETFOCUS
+- BN_SETFOCUS codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eb9204f5b23b62b6cee9fb2652a16d546f6ef62
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a10cb9b728d6f98f984ff6b70fb76c42102d8414d486cdba3db27b3ac6fbe99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827591"
 ---
-# <a name="bn_setfocus-notification-code"></a>Codice di notifica per la messa a fuoco di BN \_
+# <a name="bn_setfocus-notification-code"></a>Codice di notifica \_ BN SETFOCUS
 
-Inviato quando un pulsante riceve lo stato attivo della tastiera. Il pulsante deve avere lo stile di [**\_ notifica BS**](button-styles.md) per inviare il codice di notifica.
+Inviato quando un pulsante riceve lo stato attivo della tastiera. Per inviare questo codice di notifica, il pulsante deve avere lo stile [**\_ BS NOTIFY.**](button-styles.md)
 
-La finestra padre del pulsante riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+La finestra padre del pulsante riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -44,7 +44,7 @@ BN_SETFOCUS
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo del pulsante. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo del pulsante. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -61,9 +61,9 @@ Handle per il pulsante.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -4,29 +4,29 @@ description: Preparare l'ambiente di sviluppo
 ms.assetid: 5a3fd27e-ec8f-41eb-9d31-86d6d9f70862
 ms.topic: article
 ms.date: 10/03/2019
-ms.openlocfilehash: ec42509ea81efce4bb17365d3bf08d36c2a4f415
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8245326ba0d7862836336cf050eb3abf1873139873bde8b9bab238ff5a738942
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896971"
 ---
 # <a name="prepare-your-development-environment"></a>Preparare l'ambiente di sviluppo
 
-Per scrivere un programma Windows in C o C++, è necessario installare Microsoft Windows Software Development Kit (SDK) o Microsoft Visual Studio. Il Windows SDK contiene le intestazioni e le librerie necessarie per la compilazione e il collegamento dell'applicazione. Il Windows SDK contiene anche gli strumenti da riga di comando per la compilazione di applicazioni Windows, tra cui il compilatore Visual C++ e il linker. Sebbene sia possibile compilare e compilare programmi Windows con gli strumenti da riga di comando, è consigliabile usare Microsoft Visual Studio. È possibile scaricare gratuitamente una community di [Visual Studio o](https://visualstudio.microsoft.com/downloads/)versioni di valutazione gratuite di altre versioni di Visual Studio.
+Per scrivere un programma Windows in C o C++, è necessario installare Microsoft Windows Software Development Kit (SDK) o Microsoft Visual Studio. L Windows SDK contiene le intestazioni e le librerie necessarie per compilare e collegare l'applicazione. L Windows SDK contiene anche strumenti da riga di comando per la compilazione Windows applicazioni, tra cui il compilatore Visual C++ e il linker. Sebbene sia possibile compilare e compilare Windows con gli strumenti da riga di comando, è consigliabile usare Microsoft Visual Studio. È possibile scaricare un download gratuito di Visual Studio Community o versioni di valutazione gratuite di altre versioni di Visual Studio [qui](https://visualstudio.microsoft.com/downloads/).
 
-Ogni versione del Windows SDK è destinata alla versione più recente di Windows e a diverse versioni precedenti. Nelle note sulla versione sono elencate le piattaforme specifiche supportate, ma a meno che non si stia gestendo un'applicazione per una versione molto vecchia di Windows, è necessario installare la versione più recente del Windows SDK. È possibile scaricare la Windows SDK più recente [qui](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+Ogni versione dell'SDK Windows è destinata alla versione più recente Windows e a diverse versioni precedenti. Le note sulla versione elencano le piattaforme specifiche supportate, ma a meno che non si manteni un'applicazione per una versione molto precedente di Windows, devi installare la versione più recente di Windows SDK. È possibile scaricare la versione più recente Windows SDK [qui.](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
-Il Windows SDK supporta lo sviluppo di applicazioni sia a 32 bit che a 64 bit. Le API di Windows sono progettate in modo che lo stesso codice possa essere compilato per 32 bit o 64 bit senza apportare modifiche.
+L Windows SDK supporta lo sviluppo di applicazioni a 32 bit e a 64 bit. Le Windows sono progettate in modo che lo stesso codice possa essere compilato per 32 o 64 bit senza modifiche.
 
 > [!Note]  
-> Il Windows SDK non supporta lo sviluppo di driver hardware e in questa serie non verrà illustrato lo sviluppo di driver. Per informazioni sulla scrittura di un driver hardware, vedere [Introduzione con i driver di Windows](/windows-hardware/drivers/gettingstarted/).
+> L Windows SDK non supporta lo sviluppo di driver hardware e questa serie non descrive lo sviluppo di driver. Per informazioni sulla scrittura di un driver hardware, [vedere Attività iniziali con Windows driver](/windows-hardware/drivers/gettingstarted/).
 
 ## <a name="next"></a>Prossima
 
-[Convenzioni di codifica Windows](windows-coding-conventions.md)
+[Windows Convenzioni di codifica](windows-coding-conventions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 * [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/)
-* [Scarica Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+* [Scaricare Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)

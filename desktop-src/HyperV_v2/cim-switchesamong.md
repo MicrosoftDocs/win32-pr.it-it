@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un servizio di commutazione, che passa i frame tra le porte di commutazione.
+description: Rappresenta un servizio di commutazione, che consente di alternare i frame tra le porte del commutatore.
 ms.assetid: ee2d4831-df00-408c-b350-26d2d1d3e8aa
-title: Classe CIM_SwitchesAmong
+title: CIM_SwitchesAmong classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 16a87797b4a138ef79be3d5ea8c6304d2ce4a942
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a12d4ffa10f8a1a921b64fab26082a9b99e00022d2ae6363a1d093a0627b044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899639"
 ---
-# <a name="cim_switchesamong-class"></a>CIM \_ SwitchesAmong (classe)
+# <a name="cim_switchesamong-class"></a>Classe CIM \_ SwitchesAmong
 
-Rappresenta un servizio di commutazione, che passa i frame tra le porte di commutazione.
+Rappresenta un servizio di commutazione, che consente di alternare i frame tra le porte del commutatore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_SwitchesAmong : CIM_ForwardsAmong
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SwitchesAmong** presenta questi tipi di membri:
+La **classe CIM \_ SwitchesAmong** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SwitchesAmong** dispone di queste proprietà.
+La **classe CIM \_ SwitchesAmong** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo di dati: **CIM \_ SwitchPort**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Riferimento [**CIM \_ SwitchPort**](cim-switchport.md) alla porta di commutazione.
+Riferimento [**CIM \_ SwitchPort**](cim-switchport.md) alla porta del commutatore.
 
 </dd> <dt>
 
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ SwitchService**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**massimo**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Riferimento [**CIM \_ SwitchService**](cim-switchservice.md) al servizio di cambio.
+Riferimento [**CIM \_ SwitchService**](cim-switchservice.md) al servizio di commutazione.
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Riferimento [**CIM \_ SwitchService**](cim-switchservice.md) al servizio di camb
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Riferimento [**CIM \_ SwitchService**](cim-switchservice.md) al servizio di camb
 
 <dl> <dt>
 
-[**\_FORWARDSAMONG CIM**](cim-forwardsamong.md)
+[**CIM \_ ForwardsAmong**](cim-forwardsamong.md)
 </dt> </dl>
 
  

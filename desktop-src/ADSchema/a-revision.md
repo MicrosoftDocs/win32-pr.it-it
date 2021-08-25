@@ -1,11 +1,11 @@
 ---
-title: Attributo Revisione
-description: Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato solo negli oggetti Sam-server e DS-UI-Settings.
+title: Attributo Revision
+description: Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato solo negli oggetti sam-server e ds-ui-settings.
 ms.assetid: 480de80f-3e76-4a62-a4a7-29a67f910a62
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo Revisione
-- Schema di AD dell'attributo Revisione
+- Schema AD dell'attributo revision
+- Attributo di revisione Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8948bd865db776c52ac021d296792a6f7d0720dc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 655b947e0d2420ba731329dc09104d9a6da19342de41408c06173aecdb4f3737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837391"
 ---
-# <a name="revision-attribute"></a>Attributo Revisione
+# <a name="revision-attribute"></a>Attributo Revision
 
-Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato solo negli oggetti Sam-server e DS-UI-Settings.
+Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato solo negli oggetti sam-server e ds-ui-settings.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Revisione                             |
-| LDAP-Display-Name | revision                             |
+| Ldap-Display-Name | revision                             |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.145               |
-| System-ID-GUID    | bf967a21-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a21-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Livello di revisione per un descrittore di sicurezza o un'altra modifica. Usato 
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Vero                                                                                  |
+| Is-Single-Valued       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 

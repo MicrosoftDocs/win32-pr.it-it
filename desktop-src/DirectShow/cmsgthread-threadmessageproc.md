@@ -1,7 +1,7 @@
 ---
 description: Elabora le richieste. Si tratta di una funzione membro virtuale pura.
 ms.assetid: ffdbc287-ca17-44e4-b00a-d72a2367f510
-title: Metodo CMsgThread. ThreadMessageProc (Msgthrd. h)
+title: Metodo CMsgThread.ThreadMessageProc (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cf47eb63a6f9d8fe4921985bb64567de6678b44c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb11a7cac567bd645d0e3fd1c294636b5df9410fbc54012633ec0c0d161b43d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909701"
 ---
-# <a name="cmsgthreadthreadmessageproc-method"></a>CMsgThread. ThreadMessageProc, metodo
+# <a name="cmsgthreadthreadmessageproc-method"></a>Metodo CMsgThread.ThreadMessageProc
 
 Elabora le richieste. Si tratta di una funzione membro virtuale pura.
 
@@ -45,28 +45,28 @@ virtual LRESULT ThreadMessageProc(
 
 <dl> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Codice della richiesta.
+Richiedere il codice.
 
 </dd> <dt>
 
 *dwFlags* 
 </dt> <dd>
 
-Parametro facoltativo del flag da richiedere.
+Parametro flag facoltativo da richiedere.
 
 </dd> <dt>
 
 *lpParam* 
 </dt> <dd>
 
-Puntatore facoltativo a dati aggiuntivi o a un blocco di dati restituito.
+Puntatore facoltativo a dati aggiuntivi o a un blocco di dati restituiti.
 
 </dd> <dt>
 
-*pEvent* 
+*Pevent* 
 </dt> <dd>
 
 Puntatore facoltativo a un oggetto evento.
@@ -75,13 +75,13 @@ Puntatore facoltativo a un oggetto evento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Qualsiasi valore restituito diverso da zero causa la chiusura del thread. Restituisce zero a meno che non sia stata elaborata di recente una richiesta di uscita.
+Qualsiasi valore restituito diverso da zero causa la chiusura del thread. Restituisce zero a meno che una richiesta di uscita non sia stata elaborata di recente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione virtuale pura deve essere sottoposta a override nella classe derivata. Verrà chiamata una volta per ogni richiesta accodata da una chiamata alla funzione membro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) .
+Questa funzione virtuale pura deve essere sottoposta a override nella classe derivata. Verrà chiamato una volta per ogni richiesta accodata da una chiamata alla funzione membro [**CMsgThread::P utThreadMsg.**](cmsgthread-putthreadmsg.md)
 
-La funzione membro definisce i quattro parametri. In genere, usare il parametro *uMsg* per indicare la richiesta e gli altri tre parametri saranno parametri aggiuntivi facoltativi. Se l'applicazione lo richiede, l'applicazione chiamante può fornire un puntatore a un oggetto [**CAMEvent**](camevent.md) nel parametro *pEvent* . È necessario impostare questo evento dopo l'elaborazione dell'evento usando un'espressione simile alla seguente:
+La funzione membro definisce i quattro parametri. In genere, usare *il parametro uMsg* per indicare la richiesta e gli altri tre parametri saranno parametri aggiuntivi facoltativi. L'applicazione chiamante può fornire un puntatore a un [**oggetto CAMEvent**](camevent.md) nel *parametro pEvent* se richiesto dall'applicazione. È necessario impostare questo evento dopo l'elaborazione dell'evento usando un'espressione come:
 
 
 ```C++
@@ -90,7 +90,7 @@ pEvent->SetEvent
 
 
 
-È necessario riservare un codice di richiesta per indicare al thread di lavoro di uscire. Al momento della ricezione della richiesta, restituire 1 da questa funzione membro. Restituisce 0 se non si desidera che il thread di lavoro venga chiuso.
+Un codice di richiesta deve essere accantonato per indicare l'uscita del thread di lavoro. Quando si riceve questa richiesta, restituire 1 da questa funzione membro. Restituisce 0 se non si vuole che il thread di lavoro si chieva.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,8 +98,8 @@ pEvent->SetEvent
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

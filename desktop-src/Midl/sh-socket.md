@@ -1,6 +1,6 @@
 ---
-title: parola chiave sh_socket
-description: La \_ parola chiave \ SH socket \ specifica che l'oggetto di sistema è un handle per un socket.
+title: sh_socket parola chiave
+description: La parola chiave \ sh \_ socket\ specifica che l'oggetto di sistema è un handle per un socket.
 keywords:
 - sh_socket parola chiave MIDL
 topic_type:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 5f5d2506f66f89cd47ecf3f011c8071b79e64177
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 542610d586af084f4238e70cd0e6c848099e4d2153d0feab8d617475a50476e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "106320240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822101"
 ---
-# <a name="sh_socket-keyword"></a>\_parola chiave socket SH
+# <a name="sh_socket-keyword"></a>Parola \_ chiave sh socket
 
-La parola chiave **\_ socket SH** specifica che un oggetto `system_handle` include un handle per un socket.
+La **parola chiave sh \_ socket** specifica che un `system_handle` oggetto contiene un handle per un socket.
 
 ``` syntax
 [system_handle(sh_socket)]
@@ -32,11 +32,11 @@ La parola chiave **\_ socket SH** specifica che un oggetto `system_handle` inclu
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La documentazione di [**system_handle**](system-handle.md) contiene inoltre informazioni dettagliate sull'utilizzo facoltativo del parametro *Access-Rights* . Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della [funzione **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l' `system_handle` attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato su (o versione successiva) quando si `system_handle` `-target` esegue `NT100` midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -51,8 +51,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -61,5 +61,5 @@ interface MyInterface : IUnknown
 [**system_handle**](system-handle.md)
 </dt> <dt>
 
-[Windows Sockets 2](../winsock/windows-sockets-start-page-2.md)
+[Windows Socket 2](../winsock/windows-sockets-start-page-2.md)
 </dt> </dl>

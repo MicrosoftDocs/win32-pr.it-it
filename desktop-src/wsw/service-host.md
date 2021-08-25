@@ -3,17 +3,17 @@ title: Host del servizio
 description: L'host del servizio è l'ambiente di runtime per l'hosting di un servizio all'interno di un processo.
 ms.assetid: 42e4d24d-5611-4561-b874-6dc3f3f88c73
 keywords:
-- Servizi Web host servizio per Windows
+- Servizi Web host del servizio per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0170f7dc0dfda99887b7d11d68d073517e0eb85f
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: ff3a09a41714ce80402c5430e6849988ae86163770af7ae3eb060fdd7925e861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "106320441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838667"
 ---
 # <a name="service-host"></a>Host del servizio
 
@@ -22,19 +22,19 @@ L'host del servizio è l'ambiente di runtime per l'hosting di un servizio all'in
 
 Un servizio può configurare uno o più endpoint all'interno di un host del servizio.
 
-![Diagramma che illustra la struttura di un host del servizio contenente un endpoint del servizio.](images/servicehost.png)
+![Diagramma che mostra la struttura di un host del servizio contenente un endpoint di servizio.](images/servicehost.png)
 
 ## <a name="creating-a-service-host"></a>Creazione di un host del servizio
 
-Prima di creare un host del servizio, un servizio deve definire gli endpoint. Un endpoint nell'host del servizio viene specificato nella struttura dell' [**\_ \_ endpoint del servizio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) ed è definito dalle informazioni seguenti:
+Prima di creare un host del servizio, un servizio deve definire i relativi endpoint. Un endpoint nell'host del servizio è specificato nella struttura endpoint del servizio [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) ed è definito dalle informazioni seguenti:
 
--   Un indirizzo, ovvero l'URI fisico in cui verrà ospitato il servizio.
--   Struttura [**del \_ \_ tipo di canale WS**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_type) che specifica il tipo del canale sottostante per l'endpoint.
--   Struttura [**di \_ \_ associazione WS Channel**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding) che specifica l'associazione del canale.
--   Struttura [**di \_ \_ Descrizione della sicurezza WS**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) che contiene la descrizione di sicurezza per l'endpoint.
--   Struttura [**del \_ \_ contratto di servizio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_contract) che rappresenta il [contratto di servizio](contract.md) per l'endpoint.
--   Struttura [**di \_ \_ \_ callback di sicurezza del servizio WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback) che specifica una funzione di callback di autorizzazione per l'endpoint.
--   Struttura [**di \_ \_ \_ proprietà dell'endpoint del servizio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_property) che contiene una matrice di proprietà dell'endpoint del servizio.
+-   Indirizzo, ovvero l'URI fisico in cui verrà ospitato il servizio.
+-   Struttura [**WS \_ CHANNEL \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_type) che specifica il tipo del canale sottostante per l'endpoint.
+-   Struttura [**WS \_ CHANNEL \_ BINDING**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding) che specifica l'associazione del canale.
+-   Struttura [**WS \_ SECURITY \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) che contiene la descrizione di sicurezza per l'endpoint.
+-   Struttura [**WS \_ SERVICE \_ CONTRACT**](/windows/desktop/api/WebServices/ns-webservices-ws_service_contract) che rappresenta il [contratto di servizio per](contract.md) l'endpoint.
+-   Struttura [**WS \_ SERVICE SECURITY \_ \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback) che specifica una funzione di callback di autorizzazione per l'endpoint.
+-   Struttura [**WS \_ SERVICE ENDPOINT \_ \_ PROPERTY**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_property) che contiene una matrice di proprietà dell'endpoint di servizio.
 
 ``` syntax
 WS_SERVICE_ENDPOINT serviceEndpoint = {0};
@@ -57,23 +57,23 @@ serviceEndpoint.channelType = WS_CHANNEL_TYPE_DUPLEX_SESSION;
 serviceEndpoint.authorizationCallback = AuthorizationCallback; // Authorization callback.
 ```
 
-Solo i contratti unidirezionali sono supportati per SOAP su UDP, rappresentati [**dall' \_ \_ \_ associazione di canale WS UDP**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding) nell'enumerazione **WS \_ Channel \_ Binding** .
+Sono supportati solo contratti unidirezionale per SOAP su UDP, rappresentati da [**WS \_ UDP CHANNEL \_ \_ BINDING**](/windows/desktop/api/WebServices/ne-webservices-ws_channel_binding) nell'enumerazione **WS CHANNEL \_ \_ BINDING.**
 
-Una volta definito, un endpoint può essere passato alla funzione [**WsCreateServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost) , che accetta una matrice di puntatori alle strutture dell' [**\_ \_ endpoint WS Service**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) .
+Dopo la definizione, un endpoint può essere passato alla funzione [**WsCreateServiceHost,**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost) che accetta una matrice di puntatori alle strutture endpoint del servizio [**WS. \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint)
 
 ``` syntax
 HRESULT hr = WsCreateServiceHost (serviceEndpoints, 1, NULL, 0, &host, error);
 ```
 
-Un'applicazione può facoltativamente fornire una matrice di [**proprietà del servizio**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property) a [**WsCreateServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost) per configurare le impostazioni personalizzate nell'host del servizio.
+Un'applicazione può facoltativamente fornire una matrice di proprietà [**del servizio**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property) a [**WsCreateServiceHost per**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost) configurare impostazioni personalizzate nell'host del servizio.
 
-Un'applicazione apre l'host del servizio per iniziare ad accettare le richieste dei client.
+Un'applicazione apre l'host del servizio per avviare l'accettazione delle richieste client.
 
 ``` syntax
 WsOpenServiceHost(serviceHost, NULL, NULL);
 ```
 
-Dopo l'apertura dell'host del servizio, l'applicazione può chiuderla se non sono presenti altre operazioni che lo richiedono. Si noti che questo non rilascia le risorse e che può essere riaperto con una chiamata successiva a [**WsResetServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsresetservicehost).
+Dopo aver aperto l'host del servizio, l'applicazione può chiuderlo se non sono presenti altre operazioni che lo richiedono. Si noti che non rilascia le risorse e che può essere riaperto con una chiamata successiva a [**WsResetServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsresetservicehost).
 
 ``` syntax
 WsCloseServiceHost(serviceHost, NULL, NULL);
@@ -85,45 +85,45 @@ Dopo la chiusura dell'host del servizio, un'applicazione può reimpostare l'host
 WsResetServiceHost(serviceHost, NULL);
 ```
 
-Quando l'applicazione viene eseguita con l'host del servizio, può liberare le risorse associate all'host del servizio chiamando la funzione [**WsFreeServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsfreeservicehost) . Si noti che [**WsCloseServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscloseservicehost) deve essere chiamato prima di chiamare questa funzione.
+Quando l'applicazione viene eseguita con l'host del servizio, può liberare le risorse associate all'host del servizio chiamando la [**funzione WsFreeServiceHost.**](/windows/desktop/api/WebServices/nf-webservices-wsfreeservicehost) Si noti [**che WsCloseServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscloseservicehost) deve essere chiamato prima di chiamare questa funzione.
 
 ``` syntax
 WsFreeServiceHost(serviceHost, NULL);
 ```
 
-Per informazioni sul connessione di uno stato personalizzato all'host del servizio, vedere [stato host utente](user-host-state.md)
+Per informazioni sul collegamento di uno stato personalizzato all'host del servizio, vedere [Stato dell'host utente](user-host-state.md)
 
-Per informazioni sull'autorizzazione in un host del servizio per un determinato endpoint, vedere [autorizzazione del servizio](service-authorization.md).
+Per informazioni sull'autorizzazione in un host del servizio per un determinato endpoint, vedere [Autorizzazione del servizio](service-authorization.md).
 
-Per iInformation sull'implementazione di operazioni di servizio e contratti di servizio per un servizio, vedere gli argomenti relativi a [operazioni di servizio](server-side-service-operations.md) e [contratto di servizio](contract.md).
+Per informazioni sull'implementazione di operazioni del servizio e contratti di servizio per un servizio, vedere gli argomenti relativi alle operazioni [del](server-side-service-operations.md) servizio e [ai contratti di](contract.md)servizio.
 
 ## <a name="security"></a>Sicurezza
 
-Un'applicazione può utilizzare le proprietà seguenti per controllare la quantità di risorse allocate dall'host del servizio per conto dell'applicazione:
+Un'applicazione può usare le proprietà seguenti per controllare la quantità di risorse allocate dall'host del servizio per conto dell'applicazione:
 
--   [**WS \_ \_proprietà endpoint \_ servizio \_ Max \_ accepting \_ Channels**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
--   [**WS \_ \_ \_ \_ \_ concorrenza massima della proprietà dell'endpoint di servizio**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
--   [**WS \_ \_ \_ \_ \_ canale massimo proprietà endpoint servizio**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
--   [**WS \_ \_ \_ \_ \_ \_ \_ dimensioni massime heap del corpo della proprietà dell'endpoint servizio**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
--   [**WS \_ \_proprietà endpoint servizio- \_ \_ dimensioni massime \_ \_ pool \_ di chiamate**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
--   [**WS \_ \_ \_ \_ \_ \_ \_ dimensioni massime pool di canali**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id)per la proprietà dell'endpoint di servizio.
+-   [**WS \_ PROPRIETÀ \_ \_ DELL'ENDPOINT \_ DI SERVIZIO MAX \_ ACCEPTING \_ CHANNELS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
+-   [**WS \_ PROPRIETÀ \_ \_ DELL'ENDPOINT DI SERVIZIO \_ MAX \_ CONCURRENCY**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
+-   [**WS \_ PROPRIETÀ \_ \_ DELL'ENDPOINT \_ DI SERVIZIO MAX \_ CHANNELS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
+-   [**WS \_ DIMENSIONI \_ MASSIME \_ HEAP DEL CORPO \_ \_ DELL'ENDPOINT \_ DI \_ SERVIZIO**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
+-   [**WS \_ PROPRIETÀ \_ DELL'ENDPOINT \_ DI SERVIZIO DIMENSIONI \_ \_ MASSIME POOL DI \_ \_ CHIAMATE**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id),
+-   [**WS \_ PROPRIETÀ \_ DELL'ENDPOINT \_ DI SERVIZIO DIMENSIONI \_ \_ MASSIME DEL POOL DI \_ \_ CANALI**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id).
 
-Per ognuna di queste proprietà si scelgono impostazioni predefinite sicure, un'applicazione deve essere attenta se desidera modificare queste proprietà. Oltre alle proprietà indicate sopra, il [canale](channel.md), il [listener](listener.md) e le proprietà specifiche del [messaggio](message.md) possono essere modificati anche dall'applicazione. Prima di modificare una di queste impostazioni, fare riferimento alle considerazioni sulla sicurezza di questi componenti.
+Le impostazioni predefinite sicure vengono scelte per ognuna di queste proprietà. Un'applicazione deve prestare attenzione se vuole modificare queste proprietà. Oltre alle proprietà indicate in precedenza, [l'applicazione](channel.md)può modificare anche le proprietà specifiche del canale, del [listener](listener.md) e del messaggio. [](message.md) Fare riferimento alle considerazioni sulla sicurezza di questi componenti prima di modificare una di queste impostazioni.
 
-Inoltre, quando si usa l'API dell'host del servizio WWSAPI, è consigliabile valutare attentamente le considerazioni di progettazione delle applicazioni seguenti:
+Inoltre, quando si usa l'API host del servizio WWSAPI, è necessario valutare attentamente le considerazioni seguenti sulla progettazione dell'applicazione:
 
--   Quando si utilizza MEX, le applicazioni devono prestare attenzione a non divulgare i dati sensibili. Come mitigazione, se la natura dei dati esposti tramite MEX è sensibile, le applicazioni possono scegliere di configurare l'endpoint MEX con un'associazione sicura che richiede almeno l'autenticazione e implementare l'autorizzazione come parte dell'endpoint utilizzando il callback di sicurezza del [**\_ servizio WS \_ \_**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback).
--   Per impostazione predefinita, le informazioni dettagliate sugli errori tramite errori sono disabilitate nell'host del servizio dalla proprietà di [**\_ \_ \_ \_ divulgazione degli errori della proprietà del servizio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) . È a discrezione dell'applicazione inviare informazioni dettagliate sugli errori come parte dell'errore. Tuttavia, ciò può comportare la divulgazione di informazioni ed è quindi consigliabile che questa impostazione venga modificata solo per gli scenari di debug.
--   Oltre alla convalida eseguita per il profilo di base 2,0 e la serializzazione XML, l'host del servizio non esegue alcuna convalida sul contenuto dati ricevuto come parte dei parametri dell'operazione del servizio. È responsabilità dell'applicazione eseguire autonomamente tutte le convalide dei parametri.
--   L'autorizzazione non è implementata come parte dell'host del servizio. Tuttavia, le applicazioni possono implementare il proprio schema di autorizzazione mediante [**WS \_ Security \_ Description**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) e il [**\_ callback di \_ sicurezza \_ del servizio WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback).
--   È responsabilità dell'applicazione usare le associazioni sicure sul relativo endpoint. L'host del servizio non fornisce alcuna protezione oltre a quanto configurato nell'endpoint.
+-   Quando si usa MEX, le applicazioni devono prestare attenzione a non divulgare dati sensibili. Come mitigazione, se la natura dei dati esposti tramite MEX è sensibile, le applicazioni possono scegliere di configurare l'endpoint MEX con un'associazione sicura che richiede almeno l'autenticazione e implementare l'autorizzazione come parte dell'endpoint usando [**WS \_ SERVICE SECURITY \_ \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback).
+-   Per impostazione predefinita, le informazioni dettagliate sugli errori tramite errori sono disabilitate nell'host del servizio dalla proprietà FAULT DISCLOSURE delle proprietà del servizio [**WS. \_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) È a discrezione dell'applicazione inviare informazioni dettagliate sull'errore come parte dell'errore. Tuttavia, ciò può comportare la diffusione di informazioni ed è pertanto consigliabile modificare questa impostazione solo per gli scenari di debug.
+-   Oltre alla convalida eseguita per Basic Profile 2.0 e la serializzazione XML, l'host del servizio non esegue alcuna convalida sul contenuto dei dati ricevuto come parte dei parametri dell'operazione del servizio. È responsabilità dell'applicazione eseguire di per sé tutte le convalide dei parametri.
+-   L'autorizzazione non viene implementata come parte dell'host del servizio. Tuttavia, le applicazioni possono implementare il proprio schema di autorizzazione [**usando WS \_ SECURITY \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) e [**WS SERVICE SECURITY \_ \_ \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_service_security_callback).
+-   È responsabilità dell'applicazione usare associazioni protette nel relativo endpoint. L'host del servizio non fornisce alcuna sicurezza oltre a quanto configurato nell'endpoint.
 
-Gli elementi API seguenti vengono utilizzati con l'host del servizio.
+Gli elementi API seguenti vengono usati con l'host del servizio.
 
 | Callback                                                                             | Descrizione                                                                     |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [**\_ \_ \_ callback canale accettazione servizio \_ WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_accept_channel_callback) | Richiamato quando un canale viene accettato su un listener dell'endpoint dall'host del servizio. |
-| [**\_ \_ \_ callback canale chiusura servizio \_ WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_close_channel_callback)   | Richiamato quando un canale viene chiuso o interrotto in un endpoint.                     |
+| [**CALLBACK DEL \_ CANALE \_ ACCEPT DEL \_ SERVIZIO \_ WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_accept_channel_callback) | Richiamato quando un canale viene accettato in un listener dell'endpoint dall'host del servizio. |
+| [**CALLBACK DEL \_ CANALE DI CHIUSURA DEL \_ \_ SERVIZIO \_ WS**](/windows/desktop/api/WebServices/nc-webservices-ws_service_close_channel_callback)   | Richiamato quando un canale viene chiuso o interrotto in un endpoint.                     |
 
 
 
@@ -133,9 +133,9 @@ Gli elementi API seguenti vengono utilizzati con l'host del servizio.
 
 | Enumerazione                                                                    | Descrizione                                                                                 |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**\_ \_ \_ ID proprietà endpoint servizio \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) | Parametri facoltativi per la configurazione di un [**\_ \_ endpoint di servizio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint). |
-| [**\_stato dell' \_ host del servizio WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_host_state)                      | Gli stati in cui può trovarsi un host del servizio.                                                   |
-| [**\_ \_ ID proprietà servizio \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id)                    | Parametri facoltativi per la configurazione dell'host del servizio.                                       |
+| [**ID PROPRIETÀ \_ \_ ENDPOINT \_ SERVIZIO \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) | Parametri facoltativi per la configurazione di [**un ENDPOINT DEL \_ SERVIZIO \_ WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) |
+| [**STATO HOST DEL SERVIZIO WS \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_host_state)                      | Stati in cui può essere presente un host del servizio.                                                   |
+| [**ID PROPRIETÀ \_ DEL \_ SERVIZIO WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id)                    | Parametri facoltativi per la configurazione dell'host del servizio.                                       |
 
 
 
@@ -145,13 +145,13 @@ Gli elementi API seguenti vengono utilizzati con l'host del servizio.
 
 | Funzione                                                     | Descrizione                                                                                  |
 |--------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [**WsAbortServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsabortservicehost)             | Interrompe e sospende le operazioni correnti nell'host del servizio.                          |
-| [**WsCloseServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscloseservicehost)             | Chiude tutti i listener in modo che non vengano accettati nuovi canali dal client.                   |
-| [**WsCreateServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost)           | Consente di creare un host del servizio.                                                                      |
+| [**WsAbortServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsabortservicehost)             | Interrompe e interrompe le operazioni correnti nell'host del servizio.                          |
+| [**WsCloseServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscloseservicehost)             | Chiude tutti i listener in modo che non siano accettati nuovi canali dal client.                   |
+| [**WsCreateServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wscreateservicehost)           | Crea un host del servizio.                                                                      |
 | [**WsFreeServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsfreeservicehost)               | Rilascia la memoria associata a un oggetto host del servizio.                                   |
 | [**WsGetServiceHostProperty**](/windows/desktop/api/WebServices/nf-webservices-wsgetservicehostproperty) | Recupera una proprietà dell'host del servizio specificata.                                                 |
-| [**WsOpenServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsopenservicehost)               | Apre un host del servizio per la comunicazione e avvia i listener su tutti gli endpoint.        |
-| [**WsResetServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsresetservicehost)             | Reimposta l'host del servizio per riutilizzarlo e reimposta il canale e i listener sottostanti per il riutilizzo. |
+| [**WsOpenServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsopenservicehost)               | Apre un host del servizio per la comunicazione e avvia i listener in tutti gli endpoint.        |
+| [**WsResetServiceHost**](/windows/desktop/api/WebServices/nf-webservices-wsresetservicehost)             | Reimposta l'host del servizio per il riutilizzo e reimposta il canale sottostante e i listener per il riutilizzo. |
 
 
 
@@ -161,7 +161,7 @@ Gli elementi API seguenti vengono utilizzati con l'host del servizio.
 
 | Handle                                       | Descrizione                                      |
 |----------------------------------------------|--------------------------------------------------|
-| [**\_host del servizio WS \_**](ws-service-host.md) | Tipo opaco utilizzato per fare riferimento a un host del servizio. |
+| [**HOST DEL SERVIZIO WS \_ \_**](ws-service-host.md) | Tipo opaco utilizzato per fare riferimento a un host del servizio. |
 
 
 
@@ -171,11 +171,11 @@ Gli elementi API seguenti vengono utilizzati con l'host del servizio.
 
 | Struttura                                                                              | Descrizione                                                                     |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [**\_endpoint servizio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint)                                   | Rappresenta un singolo endpoint in un host del servizio.                            |
-| [**\_ \_ proprietà endpoint servizio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_property)                | Specifica un'impostazione specifica del servizio.                                           |
-| [**WS \_ Service ( \_ proprietà)**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property)                                   | Specifica un'impostazione specifica del servizio.                                           |
-| [**\_ \_ \_ callback accetta proprietà servizio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property_accept_callback) | Specifica il callback che viene chiamato quando un canale viene accettato correttamente. |
-| [**\_ \_ \_ callback chiusura proprietà servizio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property_close_callback)   | Specifica il callback che viene chiamato quando un canale sta per essere chiuso.    |
+| [**ENDPOINT DI SERVIZIO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint)                                   | Rappresenta un singolo endpoint in un host del servizio.                            |
+| [**PROPRIETÀ \_ \_ DELL'ENDPOINT DEL \_ SERVIZIO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_property)                | Specifica un'impostazione specifica del servizio.                                           |
+| [**PROPRIETÀ DEL SERVIZIO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property)                                   | Specifica un'impostazione specifica del servizio.                                           |
+| [**CALLBACK ACCEPT \_ \_ DELLA PROPRIETÀ DEL \_ SERVIZIO \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property_accept_callback) | Specifica il callback che viene chiamato quando un canale viene accettato correttamente. |
+| [**CALLBACK DI \_ CHIUSURA DELLA PROPRIETÀ DEL \_ \_ SERVIZIO \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_property_close_callback)   | Specifica il callback che viene chiamato quando un canale sta per essere chiuso.    |
 
 
 

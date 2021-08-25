@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_VD_ESCAPE_PARMS (Mciapi. h)
-description: La \_ struttura MCI VD \_ escape \_ parametri contiene il comando inviato a un dispositivo per il comando di escape MCI per i \_ dispositivi videodisco.
+title: MCI_VD_ESCAPE_PARMS struttura (Mciapi.h)
+description: La struttura MCI VD ESCAPE PARMS contiene il comando inviato a un dispositivo per il \_ \_ comando \_ MCI ESCAPE per i dispositivi \_ videodisc.
 ms.assetid: 7c735943-b67a-4be5-82b5-6a058349623e
 keywords:
-- Struttura MCI_VD_ESCAPE_PARMS di Windows Multimedia
+- MCI_VD_ESCAPE_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80712cd693e2c7ebe290be6b9827c1e051dd86a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f9a0fef0e60168d4539756c741527d751fd726ab3d2472cdbaf3b080784e70c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783846"
 ---
-# <a name="mci_vd_escape_parms-structure"></a>\_ \_ Struttura parametri di escape MCI VD \_
+# <a name="mci_vd_escape_parms-structure"></a>Struttura MCI \_ VD \_ ESCAPE \_ PARMS
 
-La struttura **MCI \_ VD \_ escape \_ parametri** contiene il comando inviato a un dispositivo per il comando di [**\_ escape MCI**](mci-escape.md) per i dispositivi videodisco.
+La **struttura MCI \_ VD ESCAPE \_ \_ PARMS** contiene il comando inviato a un dispositivo per il [**comando MCI \_ ESCAPE**](mci-escape.md) per i dispositivi videodisc.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Comando da inviare al dispositivo.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_escape MCI**](mci-escape.md)
+[**MCI \_ ESCAPE**](mci-escape.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

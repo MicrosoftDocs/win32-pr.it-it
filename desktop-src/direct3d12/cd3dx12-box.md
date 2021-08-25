@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_BOX (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una struttura di D3D12 \_ box.
+title: CD3DX12_BOX struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura D3D12 \_ BOX.
 ms.assetid: 7E1A352C-D664-4538-BA78-91493980559D
 keywords:
-- Struttura CD3DX12_BOX
+- CD3DX12_BOX struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.localizationpriority: low
 ms.date: 05/31/2018
-ms.openlocfilehash: c689c9bfe611651248280f7536bd91a9f4d003d4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2aa358d8b2d772d45c6387221dd9e660a9630fbf90535ada7dcceefc3257879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851411"
 ---
-# <a name="cd3dx12_box-structure"></a>\_Struttura CD3DX12 box
+# <a name="cd3dx12_box-structure"></a>Struttura CD3DX12 \_ BOX
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura di [**D3D12 \_ Box**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura D3D12 \_ BOX.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,76 +47,76 @@ struct CD3DX12_BOX  : public D3D12_BOX{
 
 <dl> <dt>
 
-**CD3DX12 \_ Box ()**
+**CD3DX12 \_ BOX()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di una \_ casella CD3DX12.
+Crea una nuova istanza non inizializzata di un OGGETTO CD3DX12 \_ BOX.
 
 </dd> <dt>
 
-**casella CD3DX12 esplicita \_ (const D3D12 \_ Box& o)**
+**EXPLICIT CD3DX12 \_ BOX(const D3D12 \_ BOX& o)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ casella CD3DX12, inizializzata con il contenuto di un'altra struttura di [**\_ caselle di D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box) .
+Crea una nuova istanza di cd3DX12 BOX, inizializzata con il contenuto di \_ [**un'altra struttura D3D12 \_ BOX.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
 </dd> <dt>
 
-**casella CD3DX12 esplicita \_ (Long Left, Long Right)**
+**EXPLICIT CD3DX12 \_ BOX(LONG Left, LONG Right)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ casella CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di cd3DX12 \_ BOX, inizializzando i parametri seguenti:
 
-LONG Left
+LONG A sinistra
 
-LUNGO a destra
+LONG Right
 
 </dd> <dt>
 
-**casella CD3DX12 esplicita \_ (Long Left, Long Top, Long Right, Long Bottom)**
+**EXPLICIT CD3DX12 \_ BOX(LONG Left, LONG Top, LONG Right, LONG Bottom)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ casella CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di cd3DX12 \_ BOX, inizializzando i parametri seguenti:
 
-LONG Left
+LONG A sinistra
 
-Inizio lungo
+LONG Top
 
-LUNGO a destra
+LONG Right
 
-LUNGO in basso
+LONG In basso
 
 </dd> <dt>
 
-**casella CD3DX12 esplicita \_ (Long Left, Long Top, Long Front, Long Right, Long Bottom, Long back)**
+**EXPLICIT CD3DX12 \_ BOX(LONG Left, LONG Top, LONG Front, LONG Right, LONG Bottom, LONG Back)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ casella CD3DX12, inizializzando i parametri seguenti:
+Crea una nuova istanza di cd3DX12 \_ BOX, inizializzando i parametri seguenti:
 
-LONG Left
+LONG A sinistra
 
-Inizio lungo
+LONG Top
 
-LUNGO Front
+LONG Front
 
-LUNGO a destra
+LONG Right
 
-LUNGO in basso
+LONG In basso
 
-LONG back
+LONG Back
 
 </dd> <dt>
 
-**~ CD3DX12 \_ Box ()**
+**~CD3DX12 \_ BOX()**
 </dt> <dd>
 
-Elimina un'istanza di una casella CD3DX12 \_ .
+Elimina un'istanza di cd3DX12 \_ BOX.
 
 </dd> <dt>
 
-**operatore const D3D12 \_ BOX& () const**
+**operator const D3D12 \_ BOX&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -126,7 +126,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Casella D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
+[**D3D12 \_ BOX**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_PassportForWork_Device_Policies02
-description: La \_ \_ classe Policies02 del dispositivo MDM PassportForWork \_ definisce le impostazioni dei criteri di Windows Hello for business.
+title: MDM_PassportForWork_Device_Policies02 classe
+description: La classe MDM \_ PassportForWork Device Policies02 definisce le impostazioni \_ dei Windows Hello per le \_ aziende.
 ms.assetid: 7581ea7e-0360-4695-a4ad-566df24a8841
 keywords:
-- Classe MDM_PassportForWork_Device_Policies02
-- Classe MDM_PassportForWork_Device_Policies02, descritta
+- MDM_PassportForWork_Device_Policies02 classe
+- MDM_PassportForWork_Device_Policies02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c66d642fb796d3b7af009197580f1eda21ab0bdf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c545408e0e1f0a6058b9efea6033d9531084df0357fe612a34773baa04f8dd63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796811"
 ---
-# <a name="mdm_passportforwork_device_policies02-class"></a>MDM \_ PassportForWork \_ Device \_ Policies02 Class
+# <a name="mdm_passportforwork_device_policies02-class"></a>Classe \_ Mdm PassportForWork \_ Device \_ Policies02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ Policies02 del dispositivo MDM PassportForWork** definisce le impostazioni dei criteri di Windows Hello for business.
+La **classe MDM \_ PassportForWork \_ Device \_ Policies02** definisce le impostazioni dei Windows Hello per le aziende.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,55 +46,55 @@ class MDM_PassportForWork_Device_Policies02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ \_ Policies02 del dispositivo MDM PassportForWork** presenta questi tipi di membri:
+La **classe MDM \_ PassportForWork \_ Device \_ Policies02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ Policies02 del dispositivo MDM PassportForWork** ha queste proprietà.
+La **classe MDM \_ PassportForWork \_ Device \_ Policies02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nodo per le impostazioni dei criteri di Windows Hello for business.
+Nodo per le impostazioni Windows Hello criteri di Windows Hello for Business.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Device/Vendor/MSFT/PassPortForWork/*TenantId*/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Device/Vendor/MSFT/PassPortForWork/*TenantID*/"
 
 </dd> <dt>
 
 [UseCertificateForOnPremAuth](/windows/client-management/mdm/passportforwork-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

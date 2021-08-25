@@ -1,7 +1,7 @@
 ---
-description: Informazioni sul metodo del costruttore per CGenericList. CGenericList (Wxlist. h). Questo metodo usa il parametro ' pName '.
+description: Informazioni sul metodo costruttore per CGenericList.CGenericList (Wxlist.h). Questo metodo usa il parametro 'pName'.
 ms.assetid: 6311d84d-1723-4607-87f8-7cd2ad2582f3
-title: Costruttore CGenericList. CGenericList (Wxlist. h)-parametro pName
+title: Costruttore CGenericList.CGenericList (Wxlist.h) - parametro pName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4a2aa2347e963839c18d904f2819d50de8d6d9c3
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 117138e80db91529d6a2baf93577a6a4dfd542d2975bf2ce6f89124a3d7aefe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103886336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813841"
 ---
-# <a name="cgenericlistcgenericlist-constructor-wxlisth---pname-parameter"></a>Costruttore CGenericList. CGenericList (Wxlist. h)-parametro pName
+# <a name="cgenericlistcgenericlist-constructor-wxlisth---pname-parameter"></a>Costruttore CGenericList.CGenericList (Wxlist.h) - parametro pName
 
 Metodo del costruttore.
 
@@ -42,7 +42,7 @@ CGenericList(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
 Puntatore al nome dell'elenco.
@@ -51,14 +51,14 @@ Puntatore al nome dell'elenco.
 
 ## <a name="remarks"></a>Commenti
 
-Per migliorare l'efficienza, la `CGenericList` classe mantiene una cache di nodi elenco. Questa versione del costruttore usa una dimensione della cache predefinita.
+Per migliorare l'efficienza, `CGenericList` la classe gestisce una cache di nodi elenco. Questa versione del costruttore usa le dimensioni predefinite della cache.
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-|-|
-| Intestazione | Wxlist. h (include Streams. h) |
-| Libreria| Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione | Wxlist.h (includere Flussi.h) |
+| Libreria| Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

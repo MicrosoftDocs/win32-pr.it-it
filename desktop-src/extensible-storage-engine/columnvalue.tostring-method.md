@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo ColumnValue. ToString'
-title: ColumnValue. ToString, metodo
+description: Altre informazioni sul metodo ColumnValue.ToString
+title: Metodo ColumnValue.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnValue.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7ad8618fb9fe3486ca15b0883002f40cd29a2193
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8be28048f1328acfd8ae634e55d095e81a5ae859972b206b817d4f3c3e01a410
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786411"
 ---
-# <a name="columnvaluetostring-method"></a>ColumnValue. ToString, metodo
+# <a name="columnvaluetostring-method"></a>Metodo ColumnValue.ToString
 
-Restituisce una [stringa](/dotnet/api/system.string) che rappresenta l'oggetto [columnValue](./columnvalue-class.md)corrente.
+Restituisce un [oggetto String](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnValue corrente.](./columnvalue-class.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,8 +56,8 @@ public abstract string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Stringa](/dotnet/api/system.string) che rappresenta l'oggetto [columnValue](./columnvalue-class.md)corrente.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Valore [String](/dotnet/api/system.string) che rappresenta l'oggetto [ColumnValue corrente.](./columnvalue-class.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -65,6 +65,6 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Classe ColumnValue](./columnvalue-class.md)
 
-[Membri di ColumnValue](./columnvalue-members.md)
+[Membri ColumnValue](./columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Struttura RAS_PARAMETERS (rassapi. h)
-description: La \_ struttura dei parametri RAS viene utilizzata dalla funzione RasAdminPortGetInfo per restituire il nome e il valore di un parametro specifico del supporto associato a una porta su un server RAS.
+title: RAS_PARAMETERS struttura (Rassapi.h)
+description: La struttura PARAMETRI RAS viene usata dalla funzione RasAdminPortGetInfo per restituire il nome e il valore di un parametro specifico del supporto associato a una porta \_ in un server RAS.
 ms.assetid: b46b6176-9a0c-4d9b-b961-b20fdc41653b
 keywords:
-- RAS struttura RAS_PARAMETERS
+- RAS_PARAMETERS struttura RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fffaefa8a6f2cffb895cc18882ed8fc0c382a4bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e38ec1a8febbca4319a9c098eafee3705fe59602af81b3ec94e4e974892be771
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909671"
 ---
-# <a name="ras_parameters-structure"></a>\_Struttura dei parametri RAS
+# <a name="ras_parameters-structure"></a>Struttura \_ PARAMETERS RAS
 
-\[La struttura dei **\_ parametri RAS** non è supportata a partire da Windows Vista.\]
+\[La **struttura \_ PARAMETRI RAS** non è supportata a Windows Vista.\]
 
-La struttura dei **\_ parametri RAS** viene utilizzata dalla funzione [**RasAdminPortGetInfo**](rasadminportgetinfo.md) per restituire il nome e il valore di un parametro specifico del supporto associato a una porta su un server RAS.
+La **struttura \_ PARAMETRI RAS** viene usata dalla funzione [**RasAdminPortGetInfo**](rasadminportgetinfo.md) per restituire il nome e il valore di un parametro specifico del supporto associato a una porta in un server RAS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,23 +45,23 @@ typedef struct RAS_PARAMETERS {
 
 <dl> <dt>
 
-**\_Tasto P**
+**Tasto \_ P**
 </dt> <dd>
 
 Specifica il nome della chiave che rappresenta il parametro specifico del supporto, ad esempio MAXCONNECTBPS.
 
 </dd> <dt>
 
-**\_Tipo P**
+**Tipo \_ P**
 </dt> <dd>
 
-Identifica il tipo di dati associato al parametro. Questo membro può essere uno dei valori seguenti dall'enumerazione del [**\_ \_ formato RAS params**](ras-params-format-str.md) .
+Identifica il tipo di dati associati al parametro . Questo membro può essere uno dei valori seguenti dell'enumerazione [**RAS \_ PARAMS \_ FORMAT.**](ras-params-format-str.md)
 
 
 
 | Valore                                                                                                                                                                                | Significato                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <span id="ParamNumber"></span><span id="paramnumber"></span><span id="PARAMNUMBER"></span><dl> <dt>**ParamNumber**</dt> </dl> | Indica che i dati associati alla chiave sono numerici.<br/> |
+| <span id="ParamNumber"></span><span id="paramnumber"></span><span id="PARAMNUMBER"></span><dl> <dt>**ParamNumber**</dt> </dl> | Indica che i dati associati alla chiave sono un numero.<br/> |
 | <span id="ParamString"></span><span id="paramstring"></span><span id="PARAMSTRING"></span><dl> <dt>**ParamString**</dt> </dl> | Indica che i dati associati alla chiave sono una stringa.<br/> |
 
 
@@ -70,17 +70,17 @@ Identifica il tipo di dati associato al parametro. Questo membro può essere uno
 
 </dd> <dt>
 
-**\_Attributi P**
+**Attributi \_ P**
 </dt> <dd>
 
 Riservato.
 
 </dd> <dt>
 
-**\_Valore P**
+**Valore \_ P**
 </dt> <dd>
 
-Specifica il valore associato al parametro. Questo membro è un'Unione del [**\_ \_ valore params RAS**](ras-params-value-str.md) . Se il membro di **\_ tipo P** è ParamNumber, il membro **Number** dell'Unione contiene il valore. Se **P \_ Type** è ParamString, il membro di **stringa** dell'Unione contiene il valore.
+Specifica il valore associato al parametro . Questo membro è [**un'unione RAS \_ PARAMS \_ VALUE.**](ras-params-value-str.md) Se il **membro P \_ Type** è ParamNumber, il **membro Number** dell'unione contiene il valore . Se **P \_ Type** è ParamString, il **membro String** dell'unione contiene il valore .
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Specifica il valore associato al parametro. Questo membro è un'Unione del [**\_
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: RecentItems - elemento
+title: Elemento RecentItems
 description: Rappresenta il controllo Elementi recenti nel menu dell'applicazione.
 ms.assetid: a3df0bb0-e0f8-413a-879d-8e39164535d0
 keywords:
-- Elemento RecentItems Barra multifunzione di Windows
+- Elemento RecentItems Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a433e2f04eae8607b0c14c5494c734ad0f0dd83a
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 6ae49864fea057aa942b121f21813acfd0f26c6cc4411d4f1b3c59cda12014c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881561"
 ---
-# <a name="recentitems-element"></a>RecentItems - elemento
+# <a name="recentitems-element"></a>Elemento RecentItems
 
-Rappresenta il [controllo Elementi recenti](windowsribbon-controls-recentitems.md) nel menu [dell'applicazione.](windowsribbon-controls-applicationmenu.md)
+Rappresenta il [controllo Elementi recenti](windowsribbon-controls-recentitems.md) nel menu [dell'applicazione](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Utilizzo
 
@@ -57,11 +57,11 @@ Rappresenta il [controllo Elementi recenti](windowsribbon-controls-recentitems.m
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Abilitazione dell'aggiunta</strong><br/></td>
+<td><strong>EnablePinning</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti (0 e 1 non sono validi):<br/> <br/>
@@ -72,7 +72,7 @@ Rappresenta il [controllo Elementi recenti](windowsribbon-controls-recentitems.m
 <td>xs:nonNegativeInteger<br/></td>
 <td>No<br/></td>
 <td>Numero di elementi recenti da visualizzare.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:nonNegativeInteger)<br/> </dt> <dd> Valore intero maggiore o uguale a 0.<br/> Il valore predefinito <strong>è 10</strong>.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:nonNegativeInteger)<br/> </dt> <dd> Valore intero pari o maggiore di 0.<br/> Il valore predefinito <strong>è 10</strong>.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -103,9 +103,9 @@ Il [controllo Elementi recenti](windowsribbon-controls-recentitems.md) visualizz
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [il controllo Elementi](windowsribbon-controls-recentitems.md) recenti.
+Nell'esempio seguente viene illustrato il markup di base per il [controllo Elementi](windowsribbon-controls-recentitems.md) recenti.
 
-L'esempio seguente mostra una **dichiarazione RecentItems** Command.
+L'esempio seguente illustra una **dichiarazione RecentItems** Command.
 
 
 ```XML
@@ -117,7 +117,7 @@ L'esempio seguente mostra una **dichiarazione RecentItems** Command.
 
 
 
-L'esempio seguente mostra la dichiarazione **dei controlli RecentItems** associati.
+Nell'esempio seguente viene illustrata la dichiarazione **dei controlli RecentItems** associati.
 
 
 ```XML

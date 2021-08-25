@@ -1,12 +1,12 @@
-- name: Sistema colori Windows
+- name: Windows Sistema colori
   href: windows-color-system.md
   items:
-    - name: 'Considerazioni sulla sicurezza: sistema colori Windows'
+    - name: 'Considerazioni sulla sicurezza: Windows Color System'
       href: security-considerations--windows-color-system.md
     - name: Concetti di base sulla gestione dei colori
       href: basic-color-management-concepts.md
       items:
-        - name: Colore nell'immagine
+        - name: Colore nella creazione dell'immagine
           href: color-in-imaging.md
           items:
             - name: Percezione del colore umano
@@ -22,61 +22,61 @@
           items:
             - name: Spazi colori RGB
               href: rgb-color-spaces.md
-            - name: Spazi colore HSV
+            - name: Spazi colori HSV
               href: hsv-color-spaces.md
             - name: Spazi colori HLS
               href: hls-color-spaces.md
             - name: Spazi colori CMY e CMYK
               href: cmy-and-cmyk-color-spaces.md
-            - name: Spazi colori Device-Dependent
+            - name: Device-Dependent colori
               href: device-dependent-color-spaces.md
-            - name: Spazi colori Device-Independent
+            - name: Device-Independent colori
               href: device-independent-color-spaces.md
-        - name: Conversione colori e corrispondenza colori
+        - name: Conversione dei colori e corrispondenza colori
           href: color-conversion-and-color-matching.md
         - name: Altre informazioni
           href: further-information.md
-    - name: Schemi e algoritmi del sistema di colori Windows
+    - name: Windows Schemi e algoritmi del sistema di colori
       href: windows-color-system-schemas-and-algorithms.md
       items:
-        - name: 'WCS schema tipi di profilo comuni, strategie di controllo delle versioni e localizzazione'
+        - name: 'Schema dei tipi di profilo comuni WCS, strategie di controllo delle versioni e localizzazione'
           href: windows-color-system-common-profile-types-schema--versioning-and-localization-strategies.md
-        - name: Schema e algoritmi del profilo del modello di aspetto del colore WCS
+        - name: Schema e algoritmi del profilo del modello di aspetto colori WCS
           href: wcs-color-appearance-model-profile-schema-and-algorithm.md
         - name: Schema di calibrazione WCS
           href: wcs-calibration-schema.md
-        - name: Schema e algoritmi del profilo del modello del dispositivo a colori WCS
+        - name: Schema e algoritmi del profilo del modello di dispositivo a colori WCS
           href: wcs-color-device-model-profile-schema-and-algorithms.md
-        - name: Schema e algoritmi del profilo del modello di mappa del programma WCS
+        - name: Schema e algoritmi del profilo del modello mappa Gamut WCS
           href: wcs-gamut-map-model-profile-schema-and-algorithms.md
         - name: Algoritmi di creazione della trasformazione WCS
           href: wcs-transform-creation-algorithms.md
-    - name: 'Informazioni su Windows Color System versione 1,0'
+    - name: Informazioni Windows Color System versione 1.0
       href: about-windows-color-system-version-1-0.md
       items:
         - name: Novità di WCS per Windows Vista
           href: what-s-new-in-windows-vista.md
-        - name: 'Novità della versione 1,0 di WCS'
+        - name: Novità della versione 1.0 di WCS
           href: what-s-new-in-version-1-0-of-wcs.md
-        - name: 'Disponibilità di WCS 1,0'
+        - name: Disponibilità di WCS 1.0
           href: wcs-1-0-availability.md
-    - name: 'Uso di WCS 1,0'
+    - name: Uso di WCS 1.0
       href: using-wcs-1-0.md
       items:
         - name: Uso dei profili di dispositivo con WCS
           href: using-device-profiles-with-wcs.md
-        - name: Uso di moduli di gestione colori (CMM)
+        - name: Uso dei moduli di gestione dei colori (CMM)
           href: using-color-management-modules--cmm.md
-        - name: Rendering degli Intent
+        - name: Finalità di rendering
           href: rendering-intents.md
-        - name: Uso del processo di mapping dei colori con WCS
+        - name: Utilizzo del processo di mapping dei colori con WCS
           href: using-the-color-mapping-process-with-wcs.md
-        - name: 'Uso di strutture in WCS 1,0'
+        - name: Uso di strutture in WCS 1.0
           href: using-structures-in-wcs-1-0.md
-        - name: Uso della gestione dei colori su Internet
+        - name: Uso di Gestione colori su Internet
           href: using-color-management-on-the-internet.md
           items:
-            - name: 'sRGB: uno spazio colore standard'
+            - name: 'sRGB: spazio colore standard'
               href: srgb--a-standard-color-space.md
         - name: Uso delle funzioni GDI con WCS
           href: using-gdi-functions-with-wcs.md
@@ -90,11 +90,11 @@
               href: basic-functions-for-use-within-a-device-context.md
             - name: Funzioni avanzate da usare all'esterno di un contesto di dispositivo
               href: advanced-functions-for-use-outside-of-a-device-context.md
-            - name: Funzioni di calibratura e di caratterizzazione del dispositivo
+            - name: Funzioni di calibrazione e caratterizzazione dei dispositivi
               href: device-calibration-and-characterization-functions.md
-            - name: Funzioni di gestione del profilo
+            - name: Funzioni di gestione dei profili
               href: profile-management-functions.md
-            - name: Funzioni WCS per i moduli di gestione colori (CMM) da implementare
+            - name: Funzioni WCS per i moduli DIM (Color Management Modules) da implementare
               href: wcs-functions-for-color-management-modules--cmms--to-implement.md
             - name: Elenco alfabetico di tutte le funzioni WCS
               href: alphabetical-list-of-all-wcs-functions.md
@@ -265,7 +265,7 @@
                   href: /windows/win32/api/icm/nf-icm-registercmma
                 - name: RegisterCMMW
                   href: /windows/win32/api/icm/nf-icm-registercmmw
-                - name: SelectCMM
+                - name: Selezionare CMM
                   href: /windows/win32/api/icm/nf-icm-selectcmm
                 - name: SetColorProfileElement
                   href: /windows/win32/api/icm/nf-icm-setcolorprofileelement
@@ -299,9 +299,9 @@
                   href: /windows/win32/api/icm/nf-icm-uninstallcolorprofilea
                 - name: UninstallColorProfileW
                   href: /windows/win32/api/icm/nf-icm-uninstallcolorprofilew
-                - name: UnregisterCMMA
+                - name: Annullare la registrazione di CMMA
                   href: /windows/win32/api/icm/nf-icm-unregistercmma
-                - name: UnregisterCMMW
+                - name: Annullare la registrazione diCMMW
                   href: /windows/win32/api/icm/nf-icm-unregistercmmw
                 - name: WcsAssociateColorProfileWithDevice
                   href: /windows/win32/api/icm/nf-icm-wcsassociatecolorprofilewithdevice
@@ -399,7 +399,7 @@
           items:
             - name: BlackInformation
               href: /windows/win32/api/wcsplugin/ns-wcsplugin-blackinformation
-            - name: CIE XYZ
+            - name: CIEXYZ
               href: /windows/win32/api/wingdi/ns-wingdi-tagciexyz
             - name: CIEXYZTRIPLE
               href: /windows/win32/api/wingdi/ns-wingdi-tagicexyztriple
@@ -455,10 +455,10 @@
               href: /windows/win32/api/wcsplugin/ns-wcsplugin-xyzcolorf
             - name: YxyCOLOR
               href: /windows/win32/api/icm/ns-icm-yxycolor
-        - name: Macro per i valori e i colori CMYK
+        - name: Macro per valori e colori CMYK
           href: macros-for-cmyk-values-and-colors.md
           items:
-            - name: CMYK
+            - name: Cmyk
               href: /windows/win32/api/wingdi/nf-wingdi-cmyk
             - name: GetCValue
               href: /windows/win32/api/wingdi/nf-wingdi-getcvalue
@@ -471,19 +471,19 @@
         - name: Costanti WCS
           href: wcs-constants.md
           items:
-            - name: Costanti spazio colore
+            - name: Costanti dello spazio colore
               href: color-space-constants.md
             - name: Flag di creazione della trasformazione CMM
               href: cmm-transform-creation-flags.md
-            - name: Identificatori del tipo di spazio colore
+            - name: Identificatori dei tipi di spazio dei colori
               href: color-space-type-identifiers.md
-            - name: Messaggi di colore comuni
+            - name: Messaggi a colori comuni
               href: common-color-messages.md
             - name: Codici di errore specifici di WCSCM
               href: error-codes-specific-to-wcs.md
-        - name: Chiavi del registro di sistema WCS
+        - name: Chiavi del Registro di sistema WCS
           href: wcs-registry-keys.md
-    - name: 'Glossario 1,0 di WCS'
+    - name: Glossario di WCS 1.0
       href: wcs-1-0-glossary.md
       items:
         - name: A

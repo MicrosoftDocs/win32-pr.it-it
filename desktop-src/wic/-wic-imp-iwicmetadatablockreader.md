@@ -4,27 +4,27 @@ ms.assetid: 80ad8e20-a9d4-4503-94ba-1b7699e36111
 title: Implementazione di IWICMetadataBlockReader
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55bfe53e87dae52d004fa90d1104fb60f252085d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbb32ca6bf5ce0714c06a6f355c319908c6dd3a61b1ac27f6baf13f6285183ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772261"
 ---
 # <a name="implementing-iwicmetadatablockreader"></a>Implementazione di IWICMetadataBlockReader
 
 ## <a name="iwicmetadatablockreader"></a>IWICMetadataBlockReader
 
-All'interno di un'immagine sono spesso presenti più blocchi di metadati, ognuno dei quali espone tipi diversi di informazioni in formati diversi. Nel modello di Windows Imaging Component (WIC), i gestori di metadati sono componenti distinti che, come i decodificatori, sono individuabili in fase di esecuzione. Ogni formato di metadati dispone di un gestore separato e ognuno di questi gestori di metadati può essere utilizzato con qualsiasi formato di immagine che supporti il formato dei metadati gestito. Se pertanto il formato dell'immagine supporta EXIF, XMP, IPTC o un altro formato, è possibile sfruttare i gestori di metadati standard per questi formati forniti con WIC e non è necessario scrivere i propri. Naturalmente, se si crea un nuovo formato di metadati, è necessario scrivere un gestore di metadati per tale formato, che verrà individuato e richiamato in fase di esecuzione, esattamente come quelli standard.
+All'interno di un'immagine sono spesso presenti più blocchi di metadati, ognuno dei quali espone tipi diversi di informazioni in formati diversi. Nel modello Windows Imaging Component (WIC), i gestori dei metadati sono componenti distinti che, come i decodificatori, sono individuabili in fase di esecuzione. Ogni formato di metadati ha un gestore separato e ognuno di questi gestori di metadati può essere usato con qualsiasi formato di immagine che supporti il formato di metadati gestito. Pertanto, se il formato dell'immagine supporta EXIF, XMP, IPTC o un altro formato, è possibile sfruttare i gestori di metadati standard per questi formati forniti con WIC e non è necessario scriverne uno personalizzato. Naturalmente, se si crea un nuovo formato di metadati, è necessario scrivere un gestore di metadati per esso, che verrà individuato e richiamato in fase di esecuzione esattamente come quelli standard.
 
 > [!Note]  
-> Se il formato dell'immagine è basato su un contenitore Tagged Image File Format (TIFF) o JPEG, non sarà necessario scrivere alcun gestore di metadati (a meno che non si sviluppi un formato di metadati nuovo o proprietario). Nei contenitori TIFF e JPEG i blocchi di metadati si trovano all'interno di IFDs e ogni contenitore ha una struttura IFD diversa. WIC fornisce gestori IFD per entrambi i formati di contenitore che esplorano la struttura IFD e delegano ai gestori di metadati standard per accedere ai metadati al suo interno. Quindi, se il formato dell'immagine è basato su uno di questi contenitori, è possibile sfruttare automaticamente i gestori IFD di WIC. Tuttavia, se si dispone di un formato di contenitore proprietario con una struttura di metadati di primo livello univoca, è necessario scrivere un gestore in grado di esplorare la struttura di livello superiore e delegare ai gestori di metadati appropriati, esattamente come avviene per i gestori IFD.
+> Se il formato dell'immagine è basato su un contenitore Tagged Image File Format (TIFF) o JPEG, non sarà necessario scrivere gestori di metadati(a meno che non si sviluppi un formato di metadati nuovo o proprietario). Nei contenitori TIFF e JPEG, i blocchi di metadati si trovano all'interno di IFD e ogni contenitore ha una struttura IFD diversa. WIC fornisce gestori IFD per entrambi questi formati di contenitore che esplorano la struttura IFD e delegano ai gestori di metadati standard per accedere ai metadati al loro interno. Pertanto, se il formato dell'immagine è basato su uno di questi contenitori, è possibile sfruttare automaticamente i gestori IFD WIC. Tuttavia, se si dispone di un formato di contenitore proprietario con una propria struttura di metadati di primo livello univoca, è necessario scrivere un gestore in grado di esplorare la struttura di primo livello e delegare ai gestori di metadati appropriati, proprio come fanno i gestori IFD.
 
  
 
-In modo analogo a WIC fornisce un livello di astrazione per le applicazioni che consente loro di utilizzare tutti i formati di immagine nello stesso modo tramite un set coerente di interfacce, WIC fornisce un livello di astrazione per gli autori di codec in relazione ai formati di metadati. Come indicato in precedenza, non è necessario che gli autori di codec funzionino direttamente con i vari formati di metadati che possono essere presenti in un'immagine. Tuttavia, ogni autore di codec è responsabile di fornire un modo per enumerare i blocchi di metadati, in modo che sia possibile individuare e creare un'istanza di un gestore di metadati appropriato per ogni blocco.
+Allo stesso modo in cui WIC fornisce un livello di astrazione per le applicazioni che consente loro di lavorare con tutti i formati di immagine nello stesso modo tramite un set coerente di interfacce, WIC fornisce un livello di astrazione per gli autori di codec in relazione ai formati di metadati. Come indicato in precedenza, gli autori di codec in genere non devono lavorare direttamente con i vari formati di metadati che possono essere presenti in un'immagine. Tuttavia, ogni autore di codec è responsabile di fornire un modo per enumerare i blocchi di metadati in modo che sia possibile individuare e creare un'istanza di un gestore di metadati appropriato per ogni blocco.
 
-È necessario implementare questa interfaccia nella classe di decodifica a livello di frame. Potrebbe anche essere necessario implementarlo nella classe decodificatore a livello di contenitore se il formato dell'immagine espone i metadati globali all'esterno dei singoli frame di immagine.
+È necessario implementare questa interfaccia nella classe di decodifica a livello di frame. Potrebbe anche essere necessario implementarlo nella classe del decodificatore a livello di contenitore se il formato dell'immagine espone metadati globali all'esterno di singoli fotogrammi di immagine.
 
 ``` syntax
 interface IWICMetadataBlockReader : IUnknown
@@ -44,7 +44,7 @@ interface IWICMetadataBlockReader : IUnknown
 
 ### <a name="getcontainerformat"></a>GetContainerFormat
 
-[**GetContainerFormat**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getcontainerformat) è uguale al metodo [GetContainerFormat](-wic-imp-iwicbitmapdecoder.md) sull'implementazione di [IWICBitmapDecoder](-wic-imp-iwicbitmapdecoder.md).
+[**GetContainerFormat è**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getcontainerformat) uguale al metodo [GetContainerFormat](-wic-imp-iwicbitmapdecoder.md) nell'implementazione [di IWICBitmapDecoder.](-wic-imp-iwicbitmapdecoder.md)
 
 ### <a name="getcount"></a>GetCount
 
@@ -52,9 +52,9 @@ interface IWICMetadataBlockReader : IUnknown
 
 ### <a name="getenumerator"></a>GetEnumerator
 
-[**GetEnumerator**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getenumerator) restituisce un enumeratore che il chiamante può usare per enumerare i blocchi di metadati nel frame e leggerne i metadati. Per implementare questo metodo, è necessario creare un lettore di metadati per ogni blocco di metadati e implementare un oggetto di enumerazione che enumera la raccolta di Reader dei metadati. L'oggetto di enumerazione deve implementare [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) in modo che sia possibile eseguirne il cast in IEnumUnknown quando viene restituito nel parametro *ppIEnumMetadata* .
+[**GetEnumerator**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getenumerator) restituisce un enumeratore che il chiamante può usare per enumerare i blocchi di metadati nel frame e leggerne i metadati. Per implementare questo metodo, è necessario creare un lettore di metadati per ogni blocco di metadati e implementare un oggetto di enumerazione che enumera la raccolta di lettori di metadati. L'oggetto enumerazione deve [implementare IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) in modo che sia possibile eseguire il cast a IEnumUnknown quando viene restituito nel *parametro ppIEnumMetadata.*
 
-Quando si implementa l'oggetto di enumerazione, è possibile creare tutti i lettori di metadati quando si crea per la prima volta l'oggetto [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) o quando si crea l'oggetto di enumerazione per la prima volta oppure è possibile crearli in modo differito all'interno dell'implementazione del metodo [IEnumUnknown:: Next](/windows/win32/api/objidlbase/nf-objidlbase-ienumunknown-next) . In molti casi, è più efficiente crearli in modalità differita, ma nell'esempio seguente i reader di blocco vengono tutti creati nel costruttore per risparmiare spazio.
+Quando si implementa l'oggetto di enumerazione, è possibile creare tutti i lettori di metadati quando si crea per la prima volta l'oggetto [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) o quando si crea per la prima volta l'oggetto di enumerazione oppure è possibile crearli in modo decompresso all'interno dell'implementazione del [metodo IEnumUnknown::Next.](/windows/win32/api/objidlbase/nf-objidlbase-ienumunknown-next) In molti casi, è più efficiente crearli in modalità lazily, ma nell'esempio seguente i lettori di blocchi vengono tutti creati nel costruttore per risparmiare spazio.
 
 
 ```C++
@@ -95,9 +95,9 @@ public class MetadataReaderEnumerator : public IEnumUnknown
 
 
 
-Per creare i lettori di metadati, utilizzare il metodo [**CreateMetadataReaderFromContainer**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createmetadatareaderfromcontainer) . Quando si richiama questo metodo, si passa il GUID del formato del contenitore nel parametro *guidContainerFormat* . Se si ha la preferenza di fornitore per un lettore di metadati, è possibile passare il GUID del fornitore preferito nel parametro *pGuidVendor* . Se, ad esempio, l'azienda scrive gestori di metadati e si vuole usare il proprio, se presente, è possibile passare il GUID del fornitore. Nella maggior parte dei casi, è sufficiente passare **null** e consentire al sistema di selezionare il lettore di metadati appropriato. Se si richiede un fornitore specifico e tale fornitore dispone di un lettore di metadati installato nel computer, WIC restituirà il lettore del fornitore. Tuttavia, se il fornitore richiesto non dispone di un lettore di metadati installato nel computer e se è disponibile un lettore di metadati appropriato, il lettore verrà restituito anche se non è del fornitore preferito. Se nel computer non è presente alcun lettore di metadati per il tipo di metadati nel blocco, la factory del componente restituisce il gestore di metadati sconosciuto, che considererà il blocco di metadati come oggetto binario di grandi dimensioni (BLOB) e deserializza il blocco di metadati dal file senza alcun tentativo di analisi.
+Per creare i lettori di metadati, usare il [**metodo CreateMetadataReaderFromContainer.**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createmetadatareaderfromcontainer) Quando si richiama questo metodo, si passa il GUID del formato del contenitore nel *parametro guidContainerFormat.* Se si ha una preferenza di fornitore per un lettore di metadati, è possibile passare il GUID del fornitore preferito nel *parametro pGuidVendor.* Ad esempio, se l'azienda scrive gestori di metadati e si vuole usare il proprio, se presente, è possibile passare il GUID del fornitore. Nella maggior parte dei casi, è sufficiente passare **NULL** e consentire al sistema di selezionare il lettore di metadati appropriato. Se si richiede un fornitore specifico e tale fornitore dispone di un lettore di metadati installato nel computer, wic restituirà il lettore del fornitore. Tuttavia, se il fornitore richiesto non dispone di un lettore di metadati installato nel computer e se è disponibile un lettore di metadati appropriato, tale lettore verrà restituito anche se non è del fornitore preferito. Se nel computer non è presente alcun lettore di metadati per il tipo di metadati nel blocco, la factory dei componenti restituirà il gestore di metadati sconosciuti, che tratterà il blocco di metadati come oggetto binario di grandi dimensioni (BLOB) e deserializzerà il blocco di metadati dal file senza alcun tentativo di analizzarlo.
 
-Per il parametro *dwOptions* , eseguire un'operazione OR tra il [**WICPersistOptions**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicpersistoptions) appropriato e il [**WICMetadataCreationOptions**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions)appropriato. Il **WICPersistOptions** descrive come il contenitore è disposto. Il valore predefinito è Little-endian.
+Per il *parametro dwOptions,* eseguire un'operazione OR tra [**wicPersistOptions**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicpersistoptions) appropriato con [**WICMetadataCreationOptions appropriato.**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions) **WICPersistOptions** descrive la struttura del contenitore. Little-endian è l'impostazione predefinita.
 
 ``` syntax
 enum WICPersistOptions
@@ -111,10 +111,10 @@ enum WICPersistOptions
 };
 ```
 
-[**WICMetadataCreationOptions**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions) specificare se si desidera ottenere UnknownMetadataHandler se nel computer non è presente alcun lettore di metadati in grado di leggere il formato dei metadati di un blocco specifico. **WICMetadataCreationAllowUnknown** è l'impostazione predefinita ed è necessario consentire sempre la creazione di UnknownMetadtataHandler. Il UnknownMetadataHandler considera i metadati non riconosciuti come un BLOB. Non può analizzarlo, ma lo scrive nel flusso come un BLOB e lo rende intatto quando viene scritto nel flusso durante la codifica. In questo modo è possibile creare gestori di metadati per i metadati proprietari o i formati di metadati che non vengono forniti con il sistema. Poiché i metadati vengono conservati intatti, anche se non è presente alcun gestore nel computer che lo riconosce, quando un gestore di metadati appropriato viene installato in un secondo momento, i metadati saranno ancora presenti e potranno essere letti. Se non si consente la creazione di UnknownMetadataHandler, l'alternativa è l'eliminazione o la sovrascrittura dei metadati non riconosciuti. Si tratta di una forma di perdita di dati.
+[**WICMetadataCreationOptions**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions) specifica se si vuole ottenere nuovamente UnknownMetadataHandler se non viene trovato alcun lettore di metadati nel computer in grado di leggere il formato dei metadati di un blocco specifico. **WICMetadataCreationAllowUnknown** è l'impostazione predefinita ed è consigliabile consentire sempre la creazione di UnknownMetadtataHandler. UnknownMetadataHandler considera i metadati non riconosciuti come BLOB. Non può analizzarlo, ma lo scrive nel flusso come BLOB e lo rende intatto quando viene scritto nel flusso durante la codifica. In questo modo è possibile creare gestori di metadati per metadati proprietari o formati di metadati che non vengono forniti con il sistema. Poiché i metadati vengono mantenuti intatti, anche se nel computer non è presente alcun gestore che lo riconosce, quando in un secondo momento viene installato un gestore di metadati appropriato, i metadati saranno ancora presenti e potranno essere letti. Se non si consente la creazione di UnknownMetadataHandler, l'alternativa consiste nell'eliminare o sovrascrivere i metadati non riconosciuti. Si tratta di una forma di perdita di dati.
 
 > [!Note]  
-> Se si scrive un gestore di metadati personalizzato per i metadati proprietari, è consigliabile non includere mai riferimenti a qualsiasi elemento all'esterno del blocco di metadati stesso. Sebbene il UnknownMetadataHandler manterrà i metadati intatti, i metadati vengono spostati quando i file vengono modificati e tutti i riferimenti a qualsiasi elemento all'esterno del proprio blocco non saranno più validi in questo caso.
+> Se si scrive un gestore di metadati personalizzato per i metadati proprietari, non includere mai riferimenti a elementi esterni al blocco di metadati stesso. Anche se UnknownMetadataHandler mantiene intatti i metadati, i metadati vengono spostati quando i file vengono modificati e tutti i riferimenti a qualsiasi elemento esterno al proprio blocco non saranno più validi in questo caso.
 
  
 
@@ -128,11 +128,11 @@ enum WICMetadataCreationOptions
 };
 ```
 
-Il parametro *pIStream* è il flusso effettivo che si sta decodificando. Prima di passare al flusso, è necessario cercare all'inizio del blocco di metadati per il quale si richiede un lettore. Il lettore di metadati appropriato per il blocco di metadati in corrispondenza della posizione corrente in [IStream](/windows/desktop/api/objidl/nn-objidl-istream) verrà restituito nel parametro *ppiReader* .
+Il *parametro pIStream* è il flusso effettivo che si sta decodificando. Prima di passare il flusso, è necessario cercare l'inizio del blocco di metadati per cui si richiede un lettore. Il lettore di metadati appropriato per il blocco di metadati nella posizione corrente in [IStream](/windows/desktop/api/objidl/nn-objidl-istream) verrà restituito nel *parametro ppiReader.*
 
 ### <a name="getreaderbyindex"></a>GetReaderByIndex
 
-[**GetReaderByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex) restituisce il lettore di metadati in corrispondenza dell'indice richiesto nell'insieme.
+[**GetReaderByIndex restituisce**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex) il lettore di metadati in corrispondenza dell'indice richiesto nella raccolta.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -153,10 +153,10 @@ Il parametro *pIStream* è il flusso effettivo che si sta decodificando. Prima d
 [Implementazione di IWICBitmapSourceTransform](-wic-imp-iwicbitmapsourcetransform.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSNetworkAdapterListSetting
-description: Enumera l'elenco di schede di rete che possono essere configurate per un \_ terminale Win32, in base al protocollo Terminal e al metodo di trasporto specificati.
+title: Win32_TSNetworkAdapterListSetting classe
+description: Enumera l'elenco di schede di rete che possono essere configurate per un terminale Win32, in base al protocollo terminale e al metodo \_ di trasporto specificati.
 ms.assetid: affe440a-1a7b-49be-a4aa-d792811c59ea
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSNetworkAdapterListSetting Servizi Desktop remoto
-- Classe Win32_TSNetworkAdapterListSetting Servizi Desktop remoto, descritta
+- Win32_TSNetworkAdapterListSetting classe Servizi Desktop remoto
+- Win32_TSNetworkAdapterListSetting classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e8c1ac9466d389924d0717748d7da9ec1f5b55f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61e917ac0e0d515793d0ca2234ae19079fa869874935a5f802211cdaccb3c679
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769441"
 ---
-# <a name="win32_tsnetworkadapterlistsetting-class"></a>Win32 \_ TSNetworkAdapterListSetting (classe)
+# <a name="win32_tsnetworkadapterlistsetting-class"></a>Classe \_ Win32 TSNetworkAdapterListSetting
 
-La classe WMI **\_ TSNetworkAdapterListSetting Win32** enumera l'elenco di schede di rete che possono essere configurate per un [**\_ terminale Win32**](win32-terminal.md), in base al protocollo Terminal e al metodo di trasporto specificati.
+La classe WMI **\_ Win32 TSNetworkAdapterListSetting** enumera l'elenco di schede di rete che possono essere configurate per un [**\_ terminale Win32,**](win32-terminal.md)in base al protocollo terminale e al metodo di trasporto specificati.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico.
 
@@ -56,38 +56,38 @@ class Win32_TSNetworkAdapterListSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSNetworkAdapterListSetting** presenta questi tipi di membri:
+La **classe \_ TSNetworkAdapterListSetting Win32** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSNetworkAdapterListSetting** dispone di queste proprietà.
+La **classe \_ Win32 TSNetworkAdapterListSetting** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -95,32 +95,32 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -128,14 +128,14 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NetworkAdapterID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -148,13 +148,13 @@ GUID della scheda di rete.
 **NetworkAdapterIP**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Indirizzo IP della scheda di rete.
@@ -164,18 +164,18 @@ Indirizzo IP della scheda di rete.
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -188,7 +188,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -209,14 +209,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -237,10 +237,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 </dd> <dt>
 
-**Terminale**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -248,13 +248,13 @@ Tipo di accesso: sola lettura
 
 Nome del terminale.
 
-Questa proprietà viene ereditata da [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Questa proprietà viene ereditata da [**\_ TerminalSetting Win32.**](win32-terminalsetting.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per connettersi allo \\ \\ spazio dei nomi "root cimv2 TerminalServices", il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_ privacy**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6. Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Per connettersi allo spazio dei nomi "Root \\ CIMV2 \\ TerminalServices", il livello di autenticazione deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione di **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valore di 6. Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -265,7 +265,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -276,7 +276,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -285,10 +285,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalSetting Win32**](win32-terminalsetting.md)
+[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
 </dt> <dt>
 
-[**\_TSNetworkAdapterSetting Win32**](win32-tsnetworkadaptersetting.md)
+[**Win32 \_ TSNetworkAdapterSetting**](win32-tsnetworkadaptersetting.md)
 </dt> </dl>
 
  

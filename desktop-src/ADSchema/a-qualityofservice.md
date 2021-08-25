@@ -1,10 +1,10 @@
 ---
-title: Attributo Quality of Service
-description: Qualità dei bit di servizio locale o di dominio su oggetti criteri.
+title: Attributo Quality-Of-Service
+description: Bit di qualità del servizio locali o di dominio sugli oggetti criteri.
 ms.assetid: 8db984d5-2aca-493b-8fa0-8156dd7c453b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD degli attributi di qualità del servizio
+- Schema AD dell'attributo Quality-Of-Service
 - Schema AD dell'attributo qualityOfService
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2346a67b4434413a22495409b64638634880fd18
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 92f8adf204ac9bd926c3b964dd7bb09925b63628efc5b30fec6548cb54ec3336
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837471"
 ---
-# <a name="quality-of-service-attribute"></a>Attributo Quality of Service
+# <a name="quality-of-service-attribute"></a>Attributo Quality-Of-Service
 
-Qualità dei bit di servizio locale o di dominio su oggetti criteri.
+Bit di qualità del servizio locali o di dominio sugli oggetti criteri.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Qualità del servizio                   |
-| LDAP-Display-Name | qualityOfService                     |
+| Ldap-Display-Name | qualityOfService                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.458               |
-| System-ID-GUID    | 80a67e4e-9f22-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | 80a67e4e-9f22-11d0-afdd-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Qualità dei bit di servizio locale o di dominio su oggetti criteri.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 

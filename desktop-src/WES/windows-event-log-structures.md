@@ -1,34 +1,34 @@
 ---
-title: Strutture del registro eventi di Windows
-description: Nel registro eventi di Windows sono definite le seguenti strutture.
+title: Windows Strutture del log eventi
+description: Windows Registro eventi definisce le strutture seguenti.
 ms.assetid: b617d89a-8967-4a66-a441-a06e6bbf6d9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e04d481ffd9dea85e7530130539fe59b335940a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0bac7b3b86aff30f65eb6bb05f059d870144dce4ebdaf0ad2e5c502d7dfbdcf0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863221"
 ---
-# <a name="windows-event-log-structures"></a>Strutture del registro eventi di Windows
+# <a name="windows-event-log-structures"></a>Windows Strutture del log eventi
 
-Nel registro eventi di Windows sono definite le seguenti strutture.
+Windows Registro eventi definisce le strutture seguenti.
 
 
 
 | Struttura                                | Descrizione                                                    |
 |------------------------------------------|----------------------------------------------------------------|
-| [**\_accesso RPC \_ evt**](/windows/desktop/api/WinEvt/ns-winevt-evt_rpc_login) | Contiene le informazioni utilizzate per la connessione a un computer remoto. |
-| [**\_variante evt**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant)      | Contiene i dati dell'evento o i valori delle proprietà.                        |
+| [**ACCESSO RPC EVT \_ \_**](/windows/desktop/api/WinEvt/ns-winevt-evt_rpc_login) | Contiene le informazioni utilizzate per connettersi a un computer remoto. |
+| [**VARIANTE \_ EVT**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant)      | Contiene i dati dell'evento o i valori delle proprietà.                        |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Associa un sistema a un dispositivo logico che è un componente del sistema.
 ms.assetid: d5a36f71-5ebe-46e2-aaa9-5d99fa075d31
-title: Classe CIM_SystemDevice (gestione Hyper-V)
+title: CIM_SystemDevice classe (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b02921e4be0f8aa0cddc194a2ed430e10e115eb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e45c2ffabe477a7a3908102b32e4257f6bb54bbcb9e85f80e6b894021173310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899451"
 ---
-# <a name="cim_systemdevice-class-hyper-v-management"></a>Classe CIM_SystemDevice (gestione Hyper-V)
+# <a name="cim_systemdevice-class-hyper-v-management"></a>CIM_SystemDevice classe (gestione di Hyper-V)
 
 Associa un sistema a un dispositivo logico che è un componente del sistema.
 
@@ -39,26 +39,26 @@ class CIM_SystemDevice : CIM_SystemComponent
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SystemDevice** presenta questi tipi di membri:
+La **classe \_ SystemDevice CIM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SystemDevice** dispone di queste proprietà.
+La **classe \_ SystemDevice CIM** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ sistema CIM**
+Tipo di dati: **sistema \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Riferimento [**di \_ sistema CIM**](cim-system.md) al sistema padre nell'associazione.
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Un riferimento [**CIM \_ LogicalDevice**](cim-logicaldevice.md) al dispositivo logico che è un componente del sistema.
+Riferimento [**CIM \_ LogicalDevice**](cim-logicaldevice.md) al dispositivo logico che è un componente del sistema.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Un riferimento [**CIM \_ LogicalDevice**](cim-logicaldevice.md) al dispositivo l
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Un riferimento [**CIM \_ LogicalDevice**](cim-logicaldevice.md) al dispositivo l
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> </dl>
 
  

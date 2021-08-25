@@ -3,24 +3,24 @@ title: Creazione dell'effetto Echo
 description: Creazione dell'effetto Echo
 ms.assetid: 3fac6c74-8221-4656-997b-0f903fae85b7
 keywords:
-- Plug-in di Windows Media Player, metodo DoProcessOutput di esempio Echo
-- plug-in, esempio Echo metodo DoProcessOutput
-- plug-in di elaborazione dei segnali digitali, metodo DoProcessOutput di esempio Echo
+- Windows Media Player plug-in, metodo DoProcessOutput di esempio Echo
+- plug-in, metodo DoProcessOutput di esempio Echo
+- plug-in di elaborazione del segnale digitale, metodo DoProcessOutput di esempio Echo
 - Plug-in DSP, metodo DoProcessOutput di esempio Echo
-- Esempio di plug-in Echo DSP, metodo DoProcessOutput
-- Esempio di plug-in Echo DSP, creazione dell'effetto Echo
+- Esempio di plug-in Echo DSP,metodo DoProcessOutput
+- Esempio di plug-in Echo DSP, creazione dell'effetto echo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e978562ff4cdee016f92409d183990cd4bb178b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fcb79b5be53f391854f38ce9aeba1c1bbff61ed2c0a982395c7063ff53146760
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902291"
 ---
 # <a name="creating-the-echo-effect"></a>Creazione dell'effetto Echo
 
-È necessario innanzitutto rimuovere il codice dall'esempio della procedura guidata che consente di ridimensionare l'audio. Dalla sezione a 8 bit rimuovere il codice seguente:
+È prima necessario rimuovere il codice dall'esempio della procedura guidata che ridimensiona l'audio. Dalla sezione a 8 bit rimuovere il codice seguente:
 
 
 ```C++
@@ -44,7 +44,7 @@ i = int( ((double) i) * m_dwDelayTime );
 
 
 
-L'implementazione di **DoProcessOutput** fornita dal codice di esempio della procedura guidata plug-in crea un ciclo while che esegue l'iterazione una volta per ogni campione nel buffer di input fornito da Windows Media Player. Questo ciclo funziona allo stesso modo per l'audio a 8 bit e a 16 bit, anche se per ciascuna è necessario un ciclo separato. In ogni caso, il ciclo inizia con il test seguente:
+L'implementazione di **DoProcessOutput** fornita dal codice di esempio della procedura guidata plug-in crea un ciclo while che esegue l'iterazione una volta per ogni esempio nel buffer di input fornito da Windows Media Player. Questo ciclo funziona allo stesso modo per l'audio a 8 bit e a 16 bit, anche se è necessario un ciclo separato per ognuno. In ogni caso, il ciclo viene avviato con il test seguente:
 
 
 ```C++
@@ -54,13 +54,13 @@ while (dwSamplesToProcess--)
 
 
 
-Una volta all'interno del ciclo, le routine di elaborazione sono molto simili per l'audio a 8 bit e a 16 bit. La differenza principale consiste nel fatto che il codice nella sezione a 8 bit modifica l'intervallo di valori dei dati da-128 a 127, quindi converte di nuovo l'intervallo prima di scrivere i dati nel buffer di output. Questo è importante per mantenere la simmetria della forma d'onda audio durante l'elaborazione.
+Una volta all'interno del ciclo, le routine di elaborazione sono molto simili per l'audio a 8 bit e a 16 bit. La differenza principale è che il codice nella sezione a 8 bit modifica l'intervallo di valori di dati da -128 a 127 e quindi riconverte l'intervallo prima di scrivere i dati nel buffer di output. Questo è importante per mantenere la simmetria della forma d'onda audio durante l'elaborazione.
 
-A questo punto è possibile iniziare ad aggiungere e sostituire il codice nel ciclo di elaborazione.
+È ora possibile iniziare ad aggiungere e sostituire il codice nel ciclo di elaborazione.
 
-## <a name="retrieve-a-sample-from-the-input-buffer"></a>Recuperare un campione dal buffer di input
+## <a name="retrieve-a-sample-from-the-input-buffer"></a>Recuperare un esempio dal buffer di input
 
-Durante ogni iterazione del ciclo, viene recuperato un singolo campione dal buffer di input. Per l'audio a 8 bit, l'esempio viene spostato nel nuovo intervallo, quindi il puntatore al buffer di input è avanzato per l'esempio successivo. Il codice seguente viene dalla procedura guidata plug-in:
+Durante ogni iterazione del ciclo, un singolo campione viene recuperato dal buffer di input. Per l'audio a 8 bit, l'esempio viene spostato nel nuovo intervallo e quindi il puntatore al buffer di input viene avanzato all'esempio successivo. Il codice seguente deriva dalla procedura guidata del plug-in:
 
 
 ```C++
@@ -97,7 +97,7 @@ int delay = m_pbDelayPointer[0] - 128;
 
 
 
-Per l'audio a 16 bit, il processo è simile:
+Per l'audio a 16 bit, il processo è simile al seguente:
 
 
 ```C++
@@ -110,7 +110,7 @@ int delay = *pwDelayPointer;
 
 ## <a name="write-the-input-sample-to-the-delay-buffer"></a>Scrivere l'esempio di input nel buffer di ritardo
 
-A questo punto, è necessario archiviare l'esempio di input nel buffer di ritardo nello stesso percorso da cui è stato recuperato l'esempio di ritardo. Di seguito è riportato il codice che è necessario aggiungere per audio a 8 bit:
+A questo punto, è necessario archiviare l'esempio di input nel buffer di ritardo nella stessa posizione da cui è stato recuperato l'esempio di ritardo. Di seguito è riportato il codice da aggiungere per l'audio a 8 bit:
 
 
 ```C++
@@ -121,7 +121,7 @@ m_pbDelayPointer[0] = i + 128;
 
 
 
-Si tratta del codice da aggiungere per la sezione a 16 bit:
+Questo è il codice da aggiungere per la sezione a 16 bit:
 
 
 ```C++
@@ -134,7 +134,7 @@ Si tratta del codice da aggiungere per la sezione a 16 bit:
 
 ## <a name="move-the-delay-buffer-pointer"></a>Spostare il puntatore del buffer di ritardo
 
-Ora che il lavoro nel buffer di ritardo è terminato per questa iterazione, è possibile far avanzare il puntatore mobile al buffer di ritardo. Se il puntatore raggiunge la fine del buffer circolare, è necessario modificarne il valore in modo che punti all'inizio del buffer. Per eseguire questa operazione per audio a 8 bit, usare il codice seguente:
+Ora che il lavoro nel buffer di ritardo è stato completato per questa iterazione, è possibile far avanzare il puntatore mobile al buffer di ritardo. Se il puntatore raggiunge la fine del buffer circolare, è necessario modificarne il valore in modo che punti alla parte superiore del buffer. A tale scopo per l'audio a 8 bit, usare il codice seguente:
 
 
 ```C++
@@ -162,7 +162,7 @@ if (++pwDelayPointer > pwEOFDelayBuffer)
 
 
 
-Poiché il puntatore nella sezione a 16 bit è effettivamente una copia della variabile membro, è necessario ricordarsi di aggiornare il valore nella variabile membro con il nuovo indirizzo. Se non si riesce a eseguire questa operazione, il puntatore del buffer di ritardo punterà ripetutamente all'inizio del buffer e l'effetto Echo non funzionerà come previsto. Aggiungere il codice seguente alla sezione a 16 bit:
+Poiché il puntatore nella sezione a 16 bit è effettivamente una copia della variabile membro, è necessario ricordarsi di aggiornare il valore nella variabile membro con il nuovo indirizzo. Se non si riesce a eseguire questa operazione, il puntatore del buffer di ritardo punta ripetutamente alla parte superiore del buffer e l'effetto echo non funzionerà come previsto. Aggiungere il codice seguente alla sezione a 16 bit:
 
 
 ```C++
@@ -175,7 +175,7 @@ m_pbDelayPointer = (BYTE *) pwDelayPointer;
 
 ## <a name="mix-the-input-sample-with-the-delay-sample"></a>Combinare l'esempio di input con l'esempio delay
 
-Questa è la posizione in cui si usano i valori Wet Mix e dry mix per creare l'esempio di output finale. È sufficiente moltiplicare ogni campione in base al valore a virgola mobile che rappresenta la percentuale del segnale finale per l'esempio. Moltiplicare l'esempio di input in base al valore archiviato in m \_ fDryMix; moltiplicare l'esempio di ritardo in base al valore archiviato in m \_ fWetMix. Quindi, aggiungere i due valori. Il codice che è necessario aggiungere è identico per le sezioni a 8 bit e a 16 bit:
+È qui che si usano i valori della combinazione umida e della combinazione a secco per creare l'esempio di output finale. È sufficiente moltiplicare ogni campione per il valore a virgola mobile che rappresenta la percentuale del segnale finale per il campione. Moltiplicare il campione di input per il valore archiviato in m fDryMix; moltiplicare il campione di ritardo per \_ il valore archiviato in m \_ fWetMix. Aggiungere quindi i due valori. Il codice da aggiungere è identico per le sezioni a 8 bit e a 16 bit:
 
 
 ```C++
@@ -188,7 +188,7 @@ i = (int)((i * m_fDryMix ) + (delay * m_fWetMix));
 
 ## <a name="write-the-data-to-the-output-buffer"></a>Scrivere i dati nel buffer di output
 
-Infine, copiare l'esempio misto nel buffer di output, quindi spostare il puntatore del buffer di output. Per l'audio a 8 bit, la procedura guidata plug-in USA il codice seguente per restituire l'esempio nell'intervallo originale:
+Infine, copiare l'esempio misto nel buffer di output e quindi far avanzare il puntatore del buffer di output. Per l'audio a 8 bit, la procedura guidata del plug-in usa il codice seguente per ripristinare l'intervallo originale dell'esempio:
 
 
 ```C++
@@ -199,7 +199,7 @@ Infine, copiare l'esempio misto nel buffer di output, quindi spostare il puntato
 
 
 
-Per audio a 16 bit, la procedura guidata usa il codice seguente come passaggio finale del ciclo di elaborazione:
+Per l'audio a 16 bit, la procedura guidata usa il codice seguente come passaggio finale nel ciclo di elaborazione:
 
 
 ```C++
@@ -217,9 +217,9 @@ Per audio a 16 bit, la procedura guidata usa il codice seguente come passaggio f
 [**Implementazione di CEcho::D oProcessOutput**](implementing-cecho--doprocessoutput.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
