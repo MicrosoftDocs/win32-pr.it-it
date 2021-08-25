@@ -1,34 +1,34 @@
 ---
-title: Volume scalare
-description: Volume scalare
+title: Scalare del volume
+description: Scalare del volume
 ms.assetid: a9fe2c35-9109-4697-9ffa-a31debbe72c8
 keywords:
-- MIDI (Musical Instrument Digital Interface), volume Scalar
-- MIDI (Musical Instrument Digital Interface), volume Scalar
-- Mapper MIDI, volume Scalar
-- volume scalare
-- Mapper MIDI, regolazione del livello di output
-- regolazione di livelli di output
+- MIDI (Musical Instrument Digital Interface), scalare di volumi
+- MIDI (Musical Instrument Digital Interface),volume scalare
+- MIDI Mapper, scalare di volumi
+- scalare di volumi
+- Mapper MIDI, regolazione dei livelli di output
+- regolazione dei livelli di output
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d39566a10ca909030b60ff197f009b6afe05ce51
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a7710e8e3ceb8079f04ac97bfcce8c91c6c74aa60452c220166e358a87939848
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804947"
 ---
-# <a name="the-volume-scalar"></a>Volume scalare
+# <a name="the-volume-scalar"></a>Scalare del volume
 
-Lo scopo del volume scalare è consentire le regolazioni tra i livelli di output relativi di patch diverse in un sintetizzatore. Se, ad esempio, la patch Bass in un sintetizzatore è troppo alta rispetto alla patch del piano, è possibile modificare la mappa di installazione per ridimensionare il volume di bassi o il volume del piano.
+Lo scopo dello scalare di volume è consentire modifiche tra i livelli di output relativi di patch diverse in un sintetizzatore. Ad esempio, se la patch per bassi in un sintetizzatore è troppo alta rispetto alla patch del piano, è possibile modificare la mappa di configurazione per ridimensionare il volume dei bassi o aumentare il volume del piano.
 
-Volume Scalar specifica un valore percentuale per la modifica di tutti i messaggi del controller di volume principale MIDI che seguono un messaggio di modifica del programma associato. Se, ad esempio, il valore scalare del volume è 50%, il mapper MIDI modifica i messaggi del controller principale del volume MIDI, come illustrato nella figura seguente.
+Lo scalare di volume specifica un valore percentuale per la modifica di tutti i messaggi del controller del volume principale MIDI che seguono un messaggio di modifica del programma associato. Ad esempio, se il valore scalare del volume è 50%, MIDI Mapper modifica i messaggi del controller midi principale del volume, come illustrato nella figura seguente.
 
-![immagine del mapper MIDI](images/mmap-a04.gif)
+![immagine midi mapper](images/mmap-a04.gif)
 
- 
+ 
 
- 
+ 
 
 
 

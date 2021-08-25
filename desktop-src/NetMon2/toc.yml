@@ -1,24 +1,24 @@
 - name: Network Monitor
   href: network-monitor.md
   items:
-    - name: SDK Network Monitor
+    - name: The Network Monitor SDK
       href: the-network-monitor-sdk.md
       items:
         - name: Requisiti di sistema
           href: system-requirements.md
-        - name: 'Acquisizione di Network Monitor 2,1'
+        - name: Come ottenere Network Monitor 2.1
           href: obtaining-network-monitor-2-1.md
-        - name: Installazione dei file di Network Monitor
+        - name: Installazione di Network Monitor file
           href: installing-network-monitor-files.md
-    - name: 'Informazioni su Network Monitor 2,1'
+    - name: Informazioni Network Monitor 2.1
       href: about-network-monitor-2-1.md
       items:
-        - name: Architettura Network Monitor
+        - name: Network Monitor architettura
           href: network-monitor-architecture.md
           items:
             - name: Architettura di esperti e parser
               href: expert-and-parser-architecture.md
-            - name: Architettura di monitoraggio
+            - name: Monitorare l'architettura
               href: monitor-architecture.md
         - name: Monitoraggi
           href: monitors.md
@@ -27,20 +27,20 @@
               href: real-time-captures.md
             - name: Monitorare gli eventi
               href: monitor-events.md
-            - name: Pagine di riferimento per gli eventi di monitoraggio
+            - name: Monitorare le pagine di riferimento degli eventi
               href: monitor-event-reference-pages.md
             - name: Monitora configurazione
               href: monitor-configuration.md
-            - name: Modalità di Local-Only e promiscuità
+            - name: Local-Only e promiscue
               href: local-only-and-promiscuous-modes.md
         - name: Esperti
           href: experts.md
         - name: Parser
           href: parsers.md
           items:
-            - name: Architettura DLL parser
+            - name: Architettura della DLL del parser
               href: parser-dll-architecture.md
-            - name: Definizione di proprietà e strutture dell'istanza di proprietà
+            - name: Definizione di proprietà e strutture di istanze di proprietà
               href: property-definition-and-property-instance-structures.md
         - name: Provider di pacchetti di rete
           href: network-packet-providers.md
@@ -50,7 +50,7 @@
               items:
                 - name: Selezione di una scheda di interfaccia di rete registrata
                   href: selecting-a-registered-nic.md
-                - name: Selezione di una scheda di interfaccia di rete da una tabella BLOB NPP specificata
+                - name: Selezione di una scheda di interfaccia di rete da una tabella BLOB NPP fornita
                   href: selecting-a-nic-from-a-supplied-npp-blob-table.md
                 - name: Selezione di una scheda di interfaccia di rete da una tabella BLOB NPP restituita
                   href: selecting-a-nic-from-a-returned-npp-blob-table.md
@@ -60,19 +60,19 @@
               href: selecting-an-npp-interface.md
             - name: Processo di acquisizione
               href: the-capture-process.md
-        - name: BLOB Network Monitor
+        - name: Network Monitor BLOB
           href: network-monitor-blobs.md
           items:
-            - name: Tipi di BLOB
+            - name: Tipi DI BLOB
               href: blob-types.md
             - name: Componenti BLOB
               href: blob-components.md
             - name: Voci BLOB speciali
               href: special-blob-entries.md
-        - name: Pagina di riferimento evento
+        - name: Pagina Di riferimento a eventi
           href: event-reference-page.md
           items:
-            - name: Informazioni sulle pagine di riferimento evento
+            - name: Informazioni sulle pagine di riferimento eventi
               href: about-event-reference-pages.md
         - name: Filtri di acquisizione
           href: capture-filters.md
@@ -81,26 +81,26 @@
               href: about-capture-filters.md
             - name: Struttura CAPTUREFILTER
               href: the-capturefilter-structure.md
-    - name: 'Uso di Network Monitor 2,1'
+    - name: Uso Network Monitor 2.1
       href: using-network-monitor-2-1.md
       items:
-        - name: Monitoraggio dei dati di rete Real-Time
+        - name: Monitoraggio dei Real-Time di rete
           href: monitoring-real-time-network-data.md
           items:
             - name: Specifica delle informazioni sul protocollo
               href: specifying-protocol-information.md
             - name: Impostazione della frequenza di callback
               href: setting-the-callback-frequency.md
-            - name: Installazione di un monitoraggio per Network Monitor
+            - name: Installazione di un monitoraggio in Network Monitor
               href: installing-a-monitor-to-network-monitor.md
             - name: Creazione di un filtro di acquisizione monitoraggio
               href: creating-a-monitor-capture-filter.md
               items:
-                - name: Impostazione del filtro ETYPE o SAP
+                - name: Impostazione del filtro Etype o SAP
                   href: setting-the-etype-or-sap-filter.md
                 - name: Impostazione di una corrispondenza di criteri
                   href: setting-a-pattern-match.md
-                - name: Elaborazione dei dati del frame
+                - name: Elaborazione dei dati dei frame
                   href: processing-frame-data.md
             - name: Test di un monitoraggio
               href: testing-a-monitor.md
@@ -109,30 +109,30 @@
         - name: Analisi del traffico di rete
           href: analyzing-network-traffic.md
           items:
-            - name: Configurazione di esperti
+            - name: Configurazione degli esperti
               href: configuring-experts.md
-            - name: Avvio ed esecuzione di esperti
+            - name: Esperti di avvio e di esecuzione
               href: starting-and-running-experts.md
             - name: Programmazione di un esperto
               href: programming-an-expert.md
-            - name: Utilizzo di Microsoft Foundation Classes
+            - name: Uso di Microsoft Foundation Classes
               href: using-microsoft-foundation-classes.md
             - name: Gestione della memoria
               href: managing-memory.md
             - name: Creazione di un esperto
               href: building-an-expert.md
-            - name: 'Installazione di un esperto in Network Monitor 2,1'
+            - name: Installazione di un esperto Network Monitor 2.1
               href: installing-an-expert-to-network-monitor-2-1.md
             - name: Debug di un esperto
               href: debugging-an-expert.md
-            - name: Visualizzazione delle proprietà di una DLL di esperti
+            - name: Visualizzazione delle proprietà della DLL Expert
               href: viewing-expert-dll-properties.md
         - name: Scrittura di un parser di protocollo
           href: writing-a-protocol-parser.md
           items:
             - name: Considerazioni sulla programmazione
               href: programming-considerations.md
-            - name: Implementazione di funzioni di esportazione del parser
+            - name: Implementazione delle funzioni di esportazione del parser
               href: implementing-parser-export-functions.md
               items:
                 - name: Implementazione di ParserAutoInstallInfo
@@ -147,41 +147,41 @@
                   href: implementing-attachproperties.md
                 - name: Implementazione di FormatProperties
                   href: implementing-formatproperties.md
-                - name: Implementazione della deregistrazione
+                - name: Implementazione dell'annullamento della registrazione
                   href: implementing-deregister.md
-            - name: Specifica di un set di continuità
+            - name: Specifica di un set handoff
               href: specifying-a-handoff-set.md
-            - name: Specifica di un set di seguito
+            - name: Specifica di un set di follow
               href: specifying-a-follow-set.md
             - name: Formattazione dei dati visualizzati
               href: formatting-displayed-data.md
               items:
-                - name: Output formattatore generico
+                - name: Output del formattatore generico
                   href: generic-formatter-output.md
-        - name: Visualizzazione di informazioni analizzate
+        - name: Visualizzazione delle informazioni analizzate
           href: viewing-parsed-information.md
-        - name: Fornire statistiche di rete e informazioni sui pacchetti
+        - name: Specifica delle statistiche di rete e delle informazioni sui pacchetti
           href: providing-network-statistics-and-packet-information.md
           items:
-            - name: Selezione di una scheda di interfaccia di rete con GetNPPBlobFromUI
+            - name: Selezione di una scheda di interfaccia di rete tramite GetNPPBlobFromUI
               href: selecting-a-nic-using-getnppblobfromui.md
             - name: Uso di GetNPPBlobTable
               href: using-getnppblobtable.md
-        - name: Creazione di pagine di riferimento per gli eventi Expert e monitor
+        - name: Creazione di pagine di riferimento degli eventi Expert e Monitor
           href: creating-expert-and-monitor-event-reference-pages.md
           items:
             - name: Scrittura di una pagina di riferimento a un evento
               href: writing-an-event-reference-page.md
             - name: Denominazione di una pagina di riferimento a un evento
               href: naming-an-event-reference-page.md
-            - name: 'Installazione di ERPs esistenti nel Network Monitor 2,1'
+            - name: Installazione di ESP esistenti in Network Monitor 2.1
               href: installing-existing-erps-to-network-monitor-2-1.md
             - name: Test di una pagina di riferimento a un evento
               href: testing-an-event-reference-page.md
         - name: Creazione di filtri di acquisizione
           href: creating-capture-filters.md
           items:
-            - name: Scrittura della parte di filtro ETYPE/SAP
+            - name: Scrittura della parte di filtro Etype/SAP
               href: writing-etypesap-filter-portion.md
             - name: Scrittura della parte di filtro ADDRESSTABLE
               href: writing-addresstable-filter-portion.md
@@ -197,18 +197,18 @@
         - name: Interfacce di monitoraggio
           href: monitor-interfaces.md
           items:
-            - name: IMonitor
+            - name: Imonitor
               href: imonitor.md
               items:
                 - name: Metodo DoInitialize
                   href: imonitor-doinitialize.md
                 - name: Metodo DoConfigure
                   href: imonitor-doconfigure.md
-                - name: Metodo onframes
+                - name: Metodo OnFrames
                   href: imonitor-onframes.md
                 - name: Metodo OnStart
                   href: imonitor-onstart.md
-                - name: OnStatus (metodo)
+                - name: Metodo OnStatus
                   href: imonitor-onstatus.md
                 - name: Metodo OnStop
                   href: imonitor-onstop.md
@@ -242,21 +242,21 @@
               href: loadtchar.md
             - name: OnLoadingDLL
               href: onloadingdll.md
-        - name: 'Funzioni, strutture ed enumerazioni di esperti'
+        - name: 'Funzioni, strutture ed enumerazioni expert'
           href: expert-functions-structures-and-enumerations.md
           items:
-            - name: Funzioni di esportazione DLL di esperti
+            - name: Funzioni di esportazione di DLL expert
               href: expert-dll-export-functions.md
               items:
-                - name: Esperto DllMain
+                - name: DllMain Expert
                   href: dllmain-expert.md
-                - name: Registra esperto
+                - name: Registrare Un esperto
                   href: register-expert.md
                 - name: Configurare
                   href: configure.md
                 - name: Esegui
                   href: run.md
-            - name: Funzioni di esperti
+            - name: Funzioni esperte
               href: expert-functions.md
               items:
                 - name: ExpertAllocMemory
@@ -275,7 +275,7 @@
                   href: expertreallocmemory.md
                 - name: ExpertSubmitEvent
                   href: expertsubmitevent.md
-            - name: Strutture di esperti
+            - name: Strutture esperte
               href: expert-structures.md
               items:
                 - name: CONFIGUREDEXPERT
@@ -312,20 +312,20 @@
         - name: Funzioni e strutture del parser
           href: parser-functions-and-structures.md
           items:
-            - name: Funzioni di esportazione DLL del parser
+            - name: Funzioni di esportazione dll del parser
               href: parser-dll-export-functions.md
               items:
-                - name: Parser DllMain
+                - name: DllMain Parser
                   href: dllmain-parser.md
-                - name: AttachProperties
+                - name: Proprietàallegato
                   href: attachproperties.md
                 - name: Annullamento registrazione
                   href: deregister.md
-                - name: FormatProperties
+                - name: Proprietà Format
                   href: formatproperties.md
                 - name: RecognizeFrame
                   href: recognizeframe.md
-                - name: Registra parser
+                - name: Registrare il parser
                   href: register-parser.md
                 - name: ParserAutoInstallInfo
                   href: parserautoinstallinfo.md
@@ -372,7 +372,7 @@
                   href: findnextframe.md
                 - name: FindPreviousFrame
                   href: findpreviousframe.md
-                - name: FormatPropertyInstance
+                - name: Istanza di FormatProperty
                   href: formatpropertyinstance.md
                 - name: GetCCInstPtr
                   href: getccinstptr.md
@@ -401,7 +401,7 @@
             - name: Strutture del parser
               href: parser-structures.md
               items:
-                - name: ENTRYPOINTS
+                - name: PUNTI DI INGRESSO
                   href: entrypoints.md
                 - name: HANDOFFENTRY
                   href: handoffentry.md
@@ -435,7 +435,7 @@
                   href: pf-parserdllinfo.md
                 - name: PF_PARSERINFO
                   href: pf-parserinfo.md
-                - name: PROPERTYINFO
+                - name: Propertyinfo
                   href: propertyinfo.md
                 - name: PROPERTYINST
                   href: propertyinst.md
@@ -447,7 +447,7 @@
                   href: range.md
                 - name: SET
                   href: set.md
-        - name: Funzioni comuni di esperti e parser
+        - name: Funzioni comuni di Expert e Parser
           href: expert-and-parser-common-functions.md
           items:
             - name: CompareAddresses
@@ -500,7 +500,7 @@
               href: getframetimestamp.md
             - name: GetPreviousProtocolOffsetByName
               href: getpreviousprotocoloffsetbyname.md
-            - name: GetProperty
+            - name: Getproperty
               href: getproperty.md
             - name: GetPropertyInfo
               href: getpropertyinfo.md
@@ -522,11 +522,11 @@
             - name: IDelaydC
               href: idelaydc.md
               items:
-                - name: Configure (metodo)
+                - name: Metodo Configure
                   href: idelaydc-configure.md
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: idelaydc-connect.md
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: idelaydc-disconnect.md
                 - name: Metodo GetControlState
                   href: idelaydc-getcontrolstate.md
@@ -534,13 +534,13 @@
                   href: idelaydc-getconversationstatistics.md
                 - name: Metodo GetTotalStatistics
                   href: idelaydc-gettotalstatistics.md
-                - name: Pause (metodo)
+                - name: Metodo Pause
                   href: idelaydc-pause.md
                 - name: Metodo QueryStations
                   href: idelaydc-querystations.md
                 - name: Metodo QueryStatus
                   href: idelaydc-querystatus.md
-                - name: Resume (metodo)
+                - name: Metodo Resume
                   href: idelaydc-resume.md
                 - name: Metodo Start
                   href: idelaydc-start.md
@@ -549,21 +549,21 @@
             - name: IESP
               href: iesp.md
               items:
-                - name: Configure (metodo)
+                - name: Metodo Configure
                   href: iesp-configure.md
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: iesp-connect.md
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: iesp-disconnect.md
                 - name: Metodo GetControlState
                   href: iesp-getcontrolstate.md
-                - name: Pause (metodo)
+                - name: Metodo Pause
                   href: iesp-pause.md
                 - name: Metodo QueryStations
                   href: iesp-querystations.md
                 - name: Metodo QueryStatus
                   href: iesp-querystatus.md
-                - name: Resume (metodo)
+                - name: Metodo Resume
                   href: iesp-resume.md
                 - name: Metodo Start
                   href: iesp-start.md
@@ -572,11 +572,11 @@
             - name: IRTC
               href: irtc.md
               items:
-                - name: Configure (metodo)
+                - name: Metodo Configure
                   href: irtc-configure.md
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: irtc-connect.md
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: irtc-disconnect.md
                 - name: Metodo GetControlState
                   href: irtc-getcontrolstate.md
@@ -584,26 +584,26 @@
                   href: irtc-getconversationstatistics.md
                 - name: Metodo GetTotalStatistics
                   href: irtc-gettotalstatistics.md
-                - name: Pause (metodo)
+                - name: Metodo Pause
                   href: irtc-pause.md
                 - name: Metodo QueryStations
                   href: irtc-querystations.md
                 - name: Metodo QueryStatus
                   href: irtc-querystatus.md
-                - name: Resume (metodo)
+                - name: Metodo Resume
                   href: irtc-resume.md
                 - name: Metodo Start
                   href: irtc-start.md
                 - name: Metodo Stop
                   href: irtc-stop.md
-            - name: IStats
+            - name: IStat
               href: istats.md
               items:
-                - name: Configure (metodo)
+                - name: Metodo Configure
                   href: istats-configure.md
-                - name: Metodo Connect
+                - name: Connessione Metodo
                   href: istats-connect.md
-                - name: Disconnetti (metodo)
+                - name: Metodo Disconnect
                   href: istats-disconnect.md
                 - name: Metodo GetControlState
                   href: istats-getcontrolstate.md
@@ -611,13 +611,13 @@
                   href: istats-getconversationstatistics.md
                 - name: Metodo GetTotalStatistics
                   href: istats-gettotalstatistics.md
-                - name: Pause (metodo)
+                - name: Metodo Pause
                   href: istats-pause.md
                 - name: Metodo QueryStations
                   href: istats-querystations.md
                 - name: Metodo QueryStatus
                   href: istats-querystatus.md
-                - name: Resume (metodo)
+                - name: Metodo Resume
                   href: istats-resume.md
                 - name: Metodo Start
                   href: istats-start.md
@@ -632,7 +632,7 @@
               href: stationstats.md
             - name: STATISTICS
               href: statistics.md
-            - name: QUERYTABLE
+            - name: Querytable
               href: querytable.md
             - name: STATIONQUERY
               href: stationquery.md
@@ -647,7 +647,7 @@
               href: createnppinterface.md
             - name: DestroyBlob
               href: destroyblob.md
-            - name: DuplicateBlob
+            - name: Oggetto DuplicateBlob
               href: duplicateblob.md
             - name: GetBoolFromBlob
               href: getboolfromblob.md
@@ -679,7 +679,7 @@
               href: getstringsfromblob.md
             - name: IsRemoteNPP
               href: isremotenpp.md
-            - name: MergeBlob
+            - name: Oggetto MergeBlob
               href: mergeblob.md
             - name: ReadBlobFromFile
               href: readblobfromfile.md
@@ -722,7 +722,7 @@
               href: address2.md
             - name: ADDRESSPAIR
               href: addresspair.md
-            - name: ADDRESSTABLE
+            - name: TABELLA INDIRIZZI
               href: addresstable.md
             - name: ANDEXP
               href: andexp.md
@@ -732,9 +732,9 @@
               href: capturefile-header-values.md
             - name: CAPTUREFILTER
               href: capturefilter.md
-            - name: ESPRESSIONE
+            - name: Espressione
               href: expression.md
-            - name: FRAME
+            - name: Telaio
               href: frame.md
             - name: FRAME_DESCRIPTOR
               href: frame-descriptor.md

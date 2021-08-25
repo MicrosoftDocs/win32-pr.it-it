@@ -1,50 +1,50 @@
 ---
-title: Linee di porting
-description: Il porting di codice IRIS GL che disegna linee è piuttosto semplice, anche se è opportuno notare le differenze nel modo in cui OpenGL stipples. La tabella seguente elenca le funzioni di IRIS GL per le linee di disegno e le relative funzioni OpenGL equivalenti.
+title: Linee di portabilità
+description: La portabilità del codice IRIS GL che disegna linee è piuttosto semplice, anche se è necessario notare le differenze nel modo in cui OpenGL si infiamma. La tabella seguente elenca le funzioni IRIS GL per il disegno di linee e le funzioni OpenGL equivalenti.
 ms.assetid: de5fd544-5a64-44b5-8976-b96867e4006d
 keywords:
-- Porting di IRIS GL, righe
-- porting da IRIS GL, righe
-- porting in OpenGL da IRIS GL, righe
-- Porting OpenGL da IRIS GL, righe
-- disegno di funzioni, righe
+- Portabilità IRIS GL, righe
+- porting from IRIS GL,lines
+- porting to OpenGL from IRIS GL,lines
+- Portabilità OpenGL da IRIS GL, righe
+- funzioni di disegno, linee
 - lines
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c9c97593d0230d6830cf3d3ce8fa2c13466e21e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8b0dd0e254380e65171acef1a536038532a370da85ffaa361e8555f77457424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776961"
 ---
-# <a name="porting-lines"></a>Linee di porting
+# <a name="porting-lines"></a>Linee di portabilità
 
-Il porting di codice IRIS GL che disegna linee è piuttosto semplice, anche se è opportuno notare le differenze nel modo in cui OpenGL stipples. La tabella seguente elenca le funzioni di IRIS GL per le linee di disegno e le relative funzioni OpenGL equivalenti.
+La portabilità del codice IRIS GL che disegna linee è piuttosto semplice, anche se è necessario notare le differenze nel modo in cui OpenGL si infiamma. La tabella seguente elenca le funzioni IRIS GL per il disegno di linee e le funzioni OpenGL equivalenti.
 
 
 
-| Funzione IRIS GL                               | OpenGL (funzione)                                                                                         | Significato                                                                                                                                      |
+| Funzione GL IRIS                               | Funzione OpenGL                                                                                         | Significato                                                                                                                                      |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| **bgnclosedline**,**endclosedline**<br/> | [**glBegin**](glbegin.md) ( \_ ciclo linea GL \_ )[**glEnd**](glend.md)<br/>                          | Disegna una linea chiusa.                                                                                                                         |
-| **bgnline**                                    | [**glBegin**](glbegin.md) ( \_ striscia di riga GL \_ )                                                          | Disegna segmenti di linea.                                                                                                                         |
-| **LineWidth**                                  | [**glLineWidth**](gllinewidth.md)                                                                      | Imposta la lunghezza riga.                                                                                                                             |
-| **getlwidth**                                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( \_ lunghezza riga GL \_ )            | Restituisce la lunghezza della riga corrente.                                                                                                                  |
-| **deflinestyle**,**setlinestyle**<br/>   | [**glLineStipple**](gllinestipple.md)                                                                  | Specifica un modello di stipple di linea.                                                                                                            |
-| **lsrepeat**                                   | argomento factor di **glLineStipple**                                                                    | Imposta un fattore di ripetizione per lo stile di linea.                                                                                                     |
-| **getlstyle**                                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( \_ modello di \_ stipple linea GL \_ ) | Restituisce il pattern stipple della riga.                                                                                                                |
-| **getlsrepeat**                                | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( \_ riga GL \_ stipple \_ ripetizione)  | Restituisce il fattore di ripetizione.                                                                                                                       |
-| **linesmooth**, **a linee smussate**                 | [**glEnable**](glenable.md) ( \_ linea GL \_ smussata)                                                       | Attiva l'anti-aliasing della riga. per ulteriori informazioni sull'anti-aliasing, vedere [porting anti-aliasing Functions](porting-antialiasing-functions.md). |
+| **bgnclosedline**,**endclosedline**<br/> | [**glBegin**](glbegin.md) ( GL \_ LINE LOOP ) \_ [**glEnd**](glend.md)<br/>                          | Disegna una linea chiusa.                                                                                                                         |
+| **bgnline**                                    | [**glBegin**](glbegin.md) ( GL \_ LINE \_ STRIP )                                                          | Disegna segmenti di linea.                                                                                                                         |
+| **linewidth**                                  | [**glLineWidth**](gllinewidth.md)                                                                      | Imposta lo spessore della linea.                                                                                                                             |
+| **getlwidth**                                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ LINE \_ WIDTH )            | Restituisce lo spessore della riga corrente.                                                                                                                  |
+| **deflinestyle**,**setlinestyle**<br/>   | [**glLineStipple**](gllinestipple.md)                                                                  | Specifica un modello di stipple di riga.                                                                                                            |
+| **lsrepeat**                                   | argomento factor di **glLineStipple**                                                                    | Imposta un fattore di ripetizione per lo stile della linea.                                                                                                     |
+| **getlstyle**                                  | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ LINE \_ STIPPLE \_ PATTERN ) | Restituisce il modello a stipple di riga.                                                                                                                |
+| **getlsrepeat**                                | [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ( GL \_ LINE \_ STIPPLE \_ REPEAT )  | Restituisce il fattore di ripetizione.                                                                                                                       |
+| **linesmooth**, **smoothline**                 | [**glEnable**](glenable.md) ( GL \_ LINE \_ SMOOTH )                                                       | Attiva l'antialiasing di riga. Per altre informazioni sull'antialiasing, vedere [Porting Antialiasing Functions (Porting di funzioni di antialiasing).](porting-antialiasing-functions.md) |
 
 
 
  
 
-OpenGL non usa le tabelle per la riga stipples; mantiene solo un modello line-stipple. È possibile usare [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib**](glpopattrib.md) per passare da un modello di stipple all'altro.
+OpenGL non usa le tabelle per gli stipple di riga. mantiene un solo modello a punta di riga. È possibile usare [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib**](glpopattrib.md) per passare da uno schema all'altro.
 
-Le funzioni di stile linea IRIS GL precedenti (ad esempio, **Disegna**, **lsbackup**, **getlsbackup** e così via) non sono supportate da OpenGL.
+Le funzioni precedenti di stile linea IRIS GL (ad esempio **draw,** **lsbackup,** **getlsbackup** e così via) non sono supportate da OpenGL.
 
-Per informazioni sul disegno di linee con antialias, vedere [porting anti-aliasing Functions](porting-antialiasing-functions.md).
+Per informazioni sul disegno di linee con antialias, vedere [Porting Antialiasing Functions](porting-antialiasing-functions.md).
 
 ??
 

@@ -1,7 +1,7 @@
 ---
 description: Ottiene il numero di tratti associati all'oggetto IContextNode.
 ms.assetid: bb3c1cb3-dcf6-4465-b1bc-5c613e9747da
-title: 'Metodo IContextNode:: GetStrokeCount (IACom. h)'
+title: Metodo IContextNode::GetStrokeCount (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 2652168fa2846995aeb17ec23c194f908f22e5d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3cecaa43c6bc42526a34ed4859c8365fbd0f1d10f90970a1b6940019da249f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773811"
 ---
-# <a name="icontextnodegetstrokecount-method"></a>Metodo IContextNode:: GetStrokeCount
+# <a name="icontextnodegetstrokecount-method"></a>Metodo IContextNode::GetStrokeCount
 
-Ottiene il numero di tratti associati all'oggetto [**IContextNode**](icontextnode.md) .
+Ottiene il numero di tratti associati [**all'oggetto IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,29 +39,29 @@ HRESULT GetStrokeCount(
 
 <dl> <dt>
 
-*pulStrokeCount* \[ out\]
+*pulStrokeCount* \[ Cambio\]
 </dt> <dd>
 
-Numero di tratti associati all'oggetto [**IContextNode**](icontextnode.md) .
+Numero di tratti associati [**all'oggetto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
-Solo i nodi di contesto foglia input penna hanno dati di tratto associati (vedere [**IContextNode:: GetType**](icontextnode-gettype.md)).
+Solo i nodi del contesto foglia input penna hanno dati di tratto associati (vedere [**IContextNode::GetType).**](icontextnode-gettype.md)
 
 ## <a name="examples"></a>Esempio
 
-Questo esempio illustra un metodo, `ExploreContextNode` , che esamina un [**IContextNode**](icontextnode.md). Il metodo esegue le operazioni seguenti:
+In questo esempio viene illustrato un `ExploreContextNode` metodo, , che esamina un [**oggetto IContextNode.**](icontextnode.md) Il metodo esegue le operazioni seguenti:
 
 -   Ottiene il tipo del nodo di contesto.
--   Esamina le proprietà specifiche del tipo di nodo chiamando un metodo di supporto, se il nodo di contesto è un input penna non classificato, un hint di analisi o un nodo di riconoscimento personalizzato.
--   Esamina ogni sottonodo chiamando se nel nodo sono presenti sottonodi.
--   Esamina i dati del tratto per il nodo chiamando un metodo di supporto, se il nodo è un nodo foglia dell'input penna.
+-   Esamina le proprietà specifiche del tipo di nodo chiamando un metodo helper, se il nodo di contesto è un input penna non classificato, un hint di analisi o un nodo di riconoscimento personalizzato.
+-   Esamina ogni sottonodo chiamando se stesso, se il nodo contiene sottonodi.
+-   Esamina i dati del tratto per il nodo chiamando un metodo helper, se il nodo è un nodo foglia di input penna.
 
 
 ```C++
@@ -171,9 +171,9 @@ HRESULT CMyClass::ExploreContextNode(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -185,13 +185,13 @@ HRESULT CMyClass::ExploreContextNode(
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: GetStrokeIds**](icontextnode-getstrokeids.md)
+[**IContextNode::GetStrokeIds**](icontextnode-getstrokeids.md)
 </dt> <dt>
 
 [**IContextNode::GetStrokeId**](icontextnode-getstrokeid.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Metodi DrawRoundedRectangle di ID2D1RenderTarget (D2d1. h)
+title: Metodi DrawRoundedRectangle ID2D1RenderTarget (D2d1.h)
 description: Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.
 ms.assetid: d718c355-ffd8-4a7f-90f3-9a10d37a19c8
 keywords:
-- Metodo DrawRoundedRectangle Direct2D
+- Metodi DrawRoundedRectangle Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 1cc42449bd2e2db7ec6637a7c405228fd3b51c1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9db4da23faaea274a105dcfabdd33254223eb3b23e6395fd6d7cd9113134af74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874361"
 ---
-# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>ID2D1RenderTarget::D Metodi rawRoundedRectangle
+# <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>Metodi ID2D1RenderTarget::D rawRoundedRectangle
 
 Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.
 
@@ -29,20 +29,20 @@ Disegna il contorno del rettangolo arrotondato specificato usando lo stile del t
 
 | Metodo                                                                                                                                                                                              | Descrizione                                                                                       |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| [**DrawRoundedRectangle (D2D1 \_ rettangolo arrotondato \_&, ID2D1Brush \* , float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.<br/> |
-| [**DrawRoundedRectangle (D2D1 \_ rettangolo arrotondato \_ \* , ID2D1Brush \* , float, ID2D1StrokeStyle \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ RECT&,ID2D1Brush,FLOAT,ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle))  | Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.<br/> |
+| [**DrawRoundedRectangle(D2D1 \_ ROUNDED \_ \* RECT,ID2D1Brush,FLOAT,ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)) | Disegna il contorno del rettangolo arrotondato specificato usando lo stile del tratto specificato.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non restituisce un codice di errore se ha esito negativo. Per determinare se un'operazione di disegno (ad esempio **DrawRoundedRectangle**) non è riuscita, controllare il risultato restituito dai metodi [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Questo metodo non restituisce un codice di errore se ha esito negativo. Per determinare se un'operazione di disegno (ad esempio **DrawRoundedRectangle)** ha avuto esito negativo, controllare il risultato restituito dai metodi [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono utilizzati i metodi **DrawRoundedRectangle** e [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) per delineare e riempire un rettangolo arrotondato. Questo esempio produce l'output illustrato nella figura seguente.
+Nell'esempio seguente vengono utilizzati i **metodi DrawRoundedRectangle** e [**FillRoundedRectangle**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect_id2d1brush)) per delineare e riempire un rettangolo arrotondato. Questo esempio produce l'output illustrato nella figura seguente.
 
-![illustrazione di quattro rettangoli arrotondati con stili di tratto e riempimenti diversi](images/drawroundedrectangle-scr.png)
+![Illustrazione di quattro rettangoli arrotondati con stili e riempimenti di tratti diversi](images/drawroundedrectangle-scr.png)
 
 
 ```C++
@@ -122,8 +122,8 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
@@ -135,10 +135,10 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Come creare e riempire una forma di base](how-to-draw-an-ellipse.md)
+[Come disegnare e riempire una forma di base](how-to-draw-an-ellipse.md)
 </dt> <dt>
 
-[**D2D1:: RoundedRect**](/windows/win32/api/d2d1/nf-d2d1-id2d1roundedrectanglegeometry-getroundedrect)
+[**D2D1::RoundedRect**](/windows/win32/api/d2d1/nf-d2d1-id2d1roundedrectanglegeometry-getroundedrect)
 </dt> </dl>
 
 �

@@ -4,12 +4,12 @@ ms.assetid: fc656149-15b7-4460-a572-a83cccf7d14f
 title: System.RemoteConflictingFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bb941d6019aafdfd8727ef542185e384961bd26
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1793a70d6d698366b3b3dbefa08ce76cd52c3c9ce4b1e309ffc5880d7a3fff22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774571"
 ---
 # <a name="systemremoteconflictingfile"></a>System.RemoteConflictingFile
 

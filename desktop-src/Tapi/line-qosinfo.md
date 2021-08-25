@@ -1,19 +1,19 @@
 ---
-description: Il messaggio QOSINFO della riga TSPI \_ fa sì che TAPI generi un evento QoS. Per ulteriori informazioni, vedere ITQOSEvent.
+description: Il messaggio QOSINFO TSPI LINE causa la generazione di un evento QOS da parte di \_ TAPI. Per altre informazioni, vedere ITQOSEvent.
 ms.assetid: b2844d12-c524-42ab-aeb9-8daf4e07a436
-title: Messaggio LINE_QOSINFO (TSPI. h)
+title: LINE_QOSINFO messaggio (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d35ff19601ab6acd9a3d8e8aebf1e59b06a4f17e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f0e6273eb31447f0e0c9543dfa191a25869fa08f05be8a5c639ceb101deff47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873321"
 ---
-# <a name="line_qosinfo-message"></a>\_Messaggio linea QOSINFO
+# <a name="line_qosinfo-message"></a>Messaggio \_ LINE QOSINFO
 
-Il messaggio **\_ QOSINFO della riga** TSPI fa sì che TAPI generi un evento QoS. Per ulteriori informazioni, vedere [**ITQOSEvent**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent) .
+Il messaggio **\_ QOSINFO TSPI LINE** causa la generazione di un evento QOS da parte di TAPI. Per [**altre informazioni, vedere ITQOSEvent.**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent)
 
 
 ```C++
@@ -43,21 +43,21 @@ Handle TAPI per la chiamata.
 *dwMsg* 
 </dt> <dd>
 
-RIGA del valore \_ QOSINFO.
+Valore LINE \_ QOSINFO.
 
 </dd> <dt>
 
 *dwParam1* 
 </dt> <dd>
 
-Membro dell'enumeratore [**di \_ eventi QoS**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event) che identifica il tipo di evento.
+Membro dell'enumeratore [**\_ QOS EVENT**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event) che identifica il tipo di evento.
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-Costante del [tipo di supporto](./tapiprotocol--constants.md) che identifica il supporto della chiamata associata a questo evento.
+Costante [del tipo di](./tapiprotocol--constants.md) supporto che identifica il supporto della chiamata associata a questo evento.
 
 </dd> <dt>
 
@@ -74,8 +74,8 @@ Non utilizzato.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Non utilizzato.
 
 <dl> <dt>
 
-[**\_evento QoS**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event)
+[**EVENTO \_ QOS**](/windows/win32/api/tapi3if/ne-tapi3if-qos_event)
 </dt> <dt>
 
 [**ITQOSEvent**](/windows/win32/api/tapi3if/nn-tapi3if-itqosevent)

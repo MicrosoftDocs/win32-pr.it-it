@@ -1,7 +1,7 @@
 ---
 description: Annulla la registrazione del database specificato, rendendolo non più disponibile.
 ms.assetid: 7e6c50f4-85f6-4b33-b639-d8fda143e5e7
-title: SdbUnregisterDatabase (funzione)
+title: Funzione SdbUnregisterDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 72171e1f9ae20ac2213a285046b2499093be4313
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2ea0cfeedbf74bea02af60b8c01d04b9e0e02f527ba35c0478da801253687b8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815311"
 ---
-# <a name="sdbunregisterdatabase-function"></a>SdbUnregisterDatabase (funzione)
+# <a name="sdbunregisterdatabase-function"></a>Funzione SdbUnregisterDatabase
 
 Annulla la registrazione del database specificato, rendendolo non più disponibile.
 
@@ -39,16 +39,16 @@ BOOL WINAPI SdbUnregisterDatabase(
 
 <dl> <dt>
 
-*pguidDB* \[ in\]
+*pguidDB* \[ Pollici\]
 </dt> <dd>
 
-GUID del database. Questo parametro non può essere **null**.
+GUID del database. Questo parametro non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

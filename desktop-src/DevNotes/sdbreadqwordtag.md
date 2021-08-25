@@ -1,7 +1,7 @@
 ---
-Description: Recupera il valore QWORD per il TAGID specificato.
+Description: Recupera il valore QWORD per l'ELEMENTO TAGID specificato.
 ms.assetid: 5fa94a95-c7f3-477b-ab7c-931e8d62d501
-title: SdbReadQWORDTag (funzione)
+title: Funzione SdbReadQWORDTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 15227f3d7c3177a226f1b3cc77fc78efd34379d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4280c21983fa86312229930b7496625c594f0caac384f0dc6d130f673ce68509
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815281"
 ---
-# <a name="sdbreadqwordtag-function"></a>SdbReadQWORDTag (funzione)
+# <a name="sdbreadqwordtag-function"></a>Funzione SdbReadQWORDTag
 
-Recupera il valore **QWORD** per il **TagId** specificato.
+Recupera il valore **QWORD** per l'elemento **TAGID specificato.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ ULONGLONG WINAPI SdbReadQWORDTag(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiWhich* \[ in\]
+*tiWhich* \[ Pollici\]
 </dt> <dd>
 
-**TagId** che corrisponde ai dati da recuperare.
+**TAGID** che corrisponde ai dati da recuperare.
 
 </dd> <dt>
 
-*qwDefault* \[ in\]
+*qwDefault* \[ Pollici\]
 </dt> <dd>
 
 Valore predefinito da restituire in caso di errore.
@@ -64,7 +64,7 @@ Valore predefinito da restituire in caso di errore.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce il valore in caso di esito positivo o *qwDefault* in caso di errore.
+La funzione restituisce il valore in caso di esito positivo o *qwDefault in* caso di esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ La funzione restituisce il valore in caso di esito positivo o *qwDefault* in cas
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

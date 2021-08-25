@@ -65,7 +65,7 @@ Restituisce S OK in caso di esito positivo o un \_ **valore HRESULT** che indica
 
 Questo metodo viene chiamato alla fine del processo di connessione pin. Esegue i passaggi seguenti:
 
-1.  Chiama il [**metodo IMemInputPin::GetAllocatorRequirements**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocatorrequirements) per recuperare i requisiti di buffer del pin di input, se presenti.
+1.  Chiama il [**metodo IMemInputPin::GetAllocatorRequirements**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocatorrequirements) per recuperare i requisiti del buffer del pin di input, se presenti.
 2.  Chiama il [**metodo IMemInputPin::GetAllocator**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) per richiedere un allocatore dal pin di input. Se il pin di input non fornisce un allocatore, il pin di output ne crea uno chiamando il metodo della classe [**CBaseOutputPin::InitAllocator.**](cbaseoutputpin-initallocator.md)
 3.  Chiama il [**metodo della classe CBaseOutputPin::D ecideBufferSize,**](cbaseoutputpin-decidebuffersize.md) che imposta le proprietà dell'allocatore. Si tratta di un metodo virtuale puro. la classe derivata deve implementarla.
 4.  Chiama il [**metodo IMemInputPin::NotifyAllocator,**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator) che notifica al pin di input l'allocatore in uso.

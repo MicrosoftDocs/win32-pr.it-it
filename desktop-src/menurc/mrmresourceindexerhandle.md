@@ -1,10 +1,10 @@
 ---
-title: Struttura MrmResourceIndexerHandle (MrmResourceIndexer. h)
-description: Rappresenta un handle opaco per un oggetto indicizzatore di risorse. L'handle è gestito dal sistema operativo. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere API PRI (Package Resource Indexing) e sistemi di compilazione personalizzati.
+title: Struttura MrmResourceIndexerHandle (MrmResourceIndexer.h)
+description: Rappresenta un handle opaco per un oggetto indicizzatore di risorse. L'handle è gestito dal sistema operativo. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti (PRI) e sistemi di compilazione personalizzati.
 ms.assetid: E3ED8AB8-39B8-419C-9570-1CC6B2CFE8D0
 keywords:
-- Menu struttura MrmResourceIndexerHandle e altre risorse
-- Menu puntatore struttura PMrmResourceIndexerHandle e altre risorse
+- Menu della struttura MrmResourceIndexerHandle e altre risorse
+- Puntatore alla struttura PMrmResourceIndexerHandle Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5786585597b5d23a6f6c0cd6842b655727c3ffe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5c9cd18d6c828d5f9b5187f866d8ab637dfd4d58c3da0a8569bd8c910c7e872
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825691"
 ---
 # <a name="mrmresourceindexerhandle-structure"></a>Struttura MrmResourceIndexerHandle
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Rappresenta un handle opaco per un oggetto indicizzatore di risorse. L'handle è gestito dal sistema operativo. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Rappresenta un handle opaco per un oggetto indicizzatore di risorse. L'handle è gestito dal sistema operativo. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct _MrmResourceIndexerHandle {
 
 <dl> <dt>
 
-**gestire**
+**Gestire**
 </dt> <dd>
 
 Tipo: **PVOID**
@@ -60,9 +60,9 @@ Handle opaco per un oggetto indicizzatore di risorse.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

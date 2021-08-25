@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_MGType
-description: Il metodo modify aggiorna un record di risorse del gruppo di posta (MG).
+description: Il metodo Modify aggiorna un record di risorse del gruppo di posta (MG).
 ms.assetid: c7d42964-19fb-410d-a434-85af20754e20
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_MGType classe
-- Classe MicrosoftDNS_MGType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il metodo DNS , MicrosoftDNS_MGType classe
+- MicrosoftDNS_MGType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 706502569687a3c035c943e0a9dcc04aa1732492
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db26f33e56ecc8553af1e34513a085b6eb6666ca99e2f91ec19383756094d6f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874911"
 ---
-# <a name="modify-method-of-the-microsoftdns_mgtype-class"></a>Metodo Modify della \_ classe MGType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_mgtype-class"></a>Metodo Modify della classe MICROSOFTDNS \_ MGType
 
-Il metodo **Modify** aggiorna un record di risorse del gruppo di posta (mg).
+Il **metodo Modify** aggiorna un record di risorse del gruppo di posta (MG).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,21 +44,21 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
 *MGMailbox* \[ in, facoltativo\]
 </dt> <dd>
 
-FQDN che specifica una cassetta postale che è un membro del gruppo di posta elettronica specificato dal nome del proprietario del record.
+FQDN che specifica una cassetta postale membro del gruppo di posta specificato dal nome del proprietario del record.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento all'oggetto modificato.
@@ -71,7 +71,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -90,13 +90,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_MGType MicrosoftDNS**](microsoftdns-mgtype.md)
+[**MicrosoftDNS \_ MGType**](microsoftdns-mgtype.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ MGType**](microsoftdns-mgtype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe MICROSOFTDNS \_ MGType**](microsoftdns-mgtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

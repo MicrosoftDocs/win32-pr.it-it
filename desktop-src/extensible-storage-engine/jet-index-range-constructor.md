@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: Costruttore JET_INDEX_RANGE'
-title: Costruttore JET_INDEX_RANGE (Microsoft. ISAM. esent. Interop. Windows8)
+title: JET_INDEX_RANGE costruttore (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JET_INDEX_RANGE constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range.jet_index_range(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ea89c9198b24531199a0945267ba0ddd7f837ce6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdaf3bca87ec0cf3cbf53dae05cef18d387d1d733b9a09496259ebbe226f96b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890886"
 ---
-# <a name="jet_index_range-constructor"></a>Costruttore JET_INDEX_RANGE
+# <a name="jet_index_range-constructor"></a>JET_INDEX_RANGE costruttore
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,8 +54,8 @@ public JET_INDEX_RANGE()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEX_RANGE](./jet-index-range-class.md)
+[JET_INDEX_RANGE classe](./jet-index-range-class.md)
 
-[Membri JET_INDEX_RANGE](./jet-index-range-members.md)
+[JET_INDEX_RANGE membri](./jet-index-range-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

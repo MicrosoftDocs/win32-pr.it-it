@@ -1,21 +1,21 @@
 ---
 description: Il metodo SetQOSApplicationID imposta l'identificatore QOS per l'applicazione.
 ms.assetid: e25cf749-6673-47eb-b843-4066f475b8f1
-title: 'Metodo ITQOSApplicationID:: SetQOSApplicationID (Ipmsp. h)'
+title: Metodo ITQOSApplicationID::SetQOSApplicationID (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7893c8038fd7a47fc1978a20e5aba5cc8293d9a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10e7783efaf8ec30ea8f70fec634eefff0acd2f5df99453fc1958258a5a26597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774591"
 ---
-# <a name="itqosapplicationidsetqosapplicationid-method"></a>Metodo ITQOSApplicationID:: SetQOSApplicationID
+# <a name="itqosapplicationidsetqosapplicationid-method"></a>Metodo ITQOSApplicationID::SetQOSApplicationID
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **SetQOSApplicationID** imposta l'identificatore QoS per l'applicazione.
+Il **metodo SetQOSApplicationID** imposta l'identificatore QOS per l'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,21 +34,21 @@ HRESULT SetQOSApplicationID(
 
 <dl> <dt>
 
-*pApplicationID* \[ in\]
+*pApplicationID* \[ Pollici\]
 </dt> <dd>
 
-Identificatore univoco del processo dell'applicazione.
+Identificatore univoco per il processo dell'applicazione.
 
 </dd> <dt>
 
-*pApplicationGUID* \[ in\]
+*pApplicationGUID* \[ Pollici\]
 </dt> <dd>
 
 GUID dell'applicazione.
 
 </dd> <dt>
 
-*pSubIDs* \[ in\]
+*pSubIDs* \[ Pollici\]
 </dt> <dd>
 
 Sub-IDs associato alla chiamata corrente.
@@ -63,8 +63,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -76,9 +76,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 659a9809-fe35-4d34-aa95-af353998c350
 title: Evento InkCollector.TabletRemoved (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df76c27b1a0d47e456f69a789d17ef6343706284
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c4d3c319a4e67a22c81a74c6b5acceba7bd6f19188042fc68ebe4c7c7c8314e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773521"
 ---
 # <a name="inkcollectortabletremoved-event"></a>Evento InkCollector.TabletRemoved
 
@@ -33,7 +33,7 @@ void TabletRemoved(
 *TabletId* \[ Pollici\]
 </dt> <dd>
 
-Valore long utilizzato come ID per [**l'oggetto IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) rimosso.
+Valore long utilizzato come ID per l'oggetto [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) rimosso.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

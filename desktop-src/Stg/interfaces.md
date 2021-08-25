@@ -1,38 +1,38 @@
 ---
-title: Interfacce (archiviazione strutturata)
-description: L'archiviazione strutturata definisce le interfacce seguenti.
+title: Interfacce (Archiviazione)
+description: Struttura Archiviazione definisce le interfacce seguenti.
 ms.assetid: 068ca25f-8aca-450b-b9c9-cec07d515dac
 keywords:
-- Archiviazione strutturata Strctd STG, informazioni di riferimento, interfacce
+- Struttura Archiviazione Strctd Stg , riferimento, interfacce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d25caf7151dcd56d55b424950e03a68cde01900
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e81ea5e67c54f9ff89c6c02ce6c075e6f7300a9407de6b0479f76f9f3180bf22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104517241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906141"
 ---
-# <a name="interfaces-structured-storage"></a>Interfacce (archiviazione strutturata)
+# <a name="interfaces-structured-storage"></a>Interfacce (Archiviazione)
 
-L'archiviazione strutturata definisce le interfacce seguenti:
+Struttura Archiviazione definisce le interfacce seguenti:
 
 -   [**IMemoryAllocator**](imemoryallocator.md)
 -   [**IDirectWriterLock**](/windows/desktop/api/Objidl/nn-objidl-idirectwriterlock)
--   [IDirectWriterLock-implementazione del file composto](idirectwriterlock-compound-file-implementation.md)
+-   [IDirectWriterLock - Implementazione di file compositi](idirectwriterlock-compound-file-implementation.md)
 -   [**IEnumSTATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg)
--   [IEnumSTATPROPSETSTG-implementazione del file composto](ienumstatpropsetstg-compound-file-implementation.md)
+-   [IEnumSTATPROPSETSTG - Implementazione di file compositi](ienumstatpropsetstg-compound-file-implementation.md)
 -   [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg)
--   [IEnumSTATPROPSTG-implementazione del file composto](ienumstatpropstg-compound-file-implementation.md)
+-   [IEnumSTATPROPSTG - Implementazione di file compositi](ienumstatpropstg-compound-file-implementation.md)
 -   [**IEnumSTATSTG**](/windows/desktop/api/Objidl/nn-objidl-ienumstatstg)
 -   [**IFillLockBytes**](/windows/desktop/api/Objidl/nn-objidl-ifilllockbytes)
--   [IFillLockBytes-implementazione](ifilllockbytes-implementation.md)
+-   [IFillLockBytes - Implementazione](ifilllockbytes-implementation.md)
 -   [**ILayoutStorage**](/windows/desktop/api/Objidl/nn-objidl-ilayoutstorage)
--   [**ISequentialStream**](/windows/desktop/api/Objidl/nn-objidl-isequentialstream)
--   [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
--   [IStorage-implementazione del file composto](istorage-compound-file-implementation.md)
--   [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream)
--   [Implementazione del file composto IStream](istream-compound-file-implementation.md)
+-   [**Isequentialstream**](/windows/desktop/api/Objidl/nn-objidl-isequentialstream)
+-   [**Istorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)
+-   [IStorage - Implementazione di file compositi](istorage-compound-file-implementation.md)
+-   [**Istream**](/windows/desktop/api/Objidl/nn-objidl-istream)
+-   [IStream - Implementazione di file compositi](istream-compound-file-implementation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

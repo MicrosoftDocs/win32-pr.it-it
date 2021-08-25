@@ -1,26 +1,26 @@
 ---
 title: Dithering
-description: Se la retinatura è abilitata, viene applicato un algoritmo di rethering al valore del colore o dell'indice dei colori del frammento. Questo algoritmo dipende solo dal valore del frammento e dalle coordinate della finestra x e y.
+description: Se il dithering è abilitato, viene applicato un algoritmo di dithering al colore o al valore dell'indice dei colori del frammento. Questo algoritmo dipende solo dal valore del frammento e dalle coordinate della finestra x e y.
 ms.assetid: a975910c-3a14-4cf5-92fc-6e98fd128477
 keywords:
-- Pipeline di elaborazione OpenGL, dithering
-- dithering OpenGL
+- pipeline di elaborazione OpenGL, dithering
+- dithering di OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 014fb027c2b6b4e2b92200d4be8162e68d6645d7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18a9367f8927c38b84e0098420e71b98e196bd5cd9dfd9dd2f82c54bafa78a47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889041"
 ---
 # <a name="dithering"></a>Dithering
 
-Se la retinatura è abilitata, viene applicato un algoritmo di rethering al valore del colore o dell'indice dei colori del frammento. Questo algoritmo dipende solo dal valore del frammento e dalle coordinate della finestra x e y.
+Se il dithering è abilitato, viene applicato un algoritmo di dithering al colore o al valore dell'indice dei colori del frammento. Questo algoritmo dipende solo dal valore del frammento e dalle coordinate della finestra x e y.
 
- 
+ 
 
- 
+ 
 
 
 

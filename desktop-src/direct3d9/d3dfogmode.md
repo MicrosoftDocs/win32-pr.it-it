@@ -1,7 +1,7 @@
 ---
-description: Definisce le costanti che descrivono la modalità di nebbia.
+description: Definisce le costanti che descrivono la modalità di sospensione.
 ms.assetid: cd83c914-bc1d-4f66-b5a6-7984b7ec52cd
-title: Enumerazione D3DFOGMODE (D3D9Types. h)
+title: Enumerazione D3DFOGMODE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 8436a52edbb9460c6945c1526513629939ec444b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b94992d94779932301c271ca46dc7466344b40b68c62855d4c57bfe8b780a94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791985"
 ---
 # <a name="d3dfogmode-enumeration"></a>Enumerazione D3DFOGMODE
 
-Definisce le costanti che descrivono la modalità di nebbia.
+Definisce le costanti che descrivono la modalità di sospensione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,54 +43,54 @@ typedef enum D3DFOGMODE {
 
 <dl> <dt>
 
-<span id="D3DFOG_NONE"></span><span id="d3dfog_none"></span>**D3DFOG \_ None**
+<span id="D3DFOG_NONE"></span><span id="d3dfog_none"></span>**D3DFOG \_ NONE**
 </dt> <dd>
 
-Nessun effetto di nebbia.
+Nessun effetto collaterale.
 
 </dd> <dt>
 
-<span id="D3DFOG_EXP"></span><span id="d3dfog_exp"></span>**D3DFOG \_ Exp**
+<span id="D3DFOG_EXP"></span><span id="d3dfog_exp"></span>**D3DFOG \_ EXP**
 </dt> <dd>
 
-L'effetto nebbia si intensifica in modo esponenziale in base alla formula seguente.
+L'effetto dell'acqua si intensifica in modo esponenziale, in base alla formula seguente.
 
-![formula dell'intensità dell'effetto nebbia](images/fogexp.png)
+![formula dell'intensità effetto-effetto](images/fogexp.png)
 
 </dd> <dt>
 
-<span id="D3DFOG_EXP2"></span><span id="d3dfog_exp2"></span>**\_Exp2 D3DFOG**
+<span id="D3DFOG_EXP2"></span><span id="d3dfog_exp2"></span>**D3DFOG \_ EXP2**
 </dt> <dd>
 
-L'effetto nebbia si intensifica in modo esponenziale con il quadrato della distanza in base alla formula seguente.
+L'effetto dell'effetto intensifica in modo esponenziale il quadrato della distanza, in base alla formula seguente.
 
-![formula dell'intensità dell'effetto nebbia basata sul quadrato della distanza](images/fogexp2.png)
+![formula dell'intensità dell'effetto a effetto in base al quadrato di distanza](images/fogexp2.png)
 
 </dd> <dt>
 
-<span id="D3DFOG_LINEAR"></span><span id="d3dfog_linear"></span>**D3DFOG \_ lineare**
+<span id="D3DFOG_LINEAR"></span><span id="d3dfog_linear"></span>**LINEARE D3DFOG \_**
 </dt> <dd>
 
-L'effetto nebbia si intensifica in modo lineare tra i punti di inizio e di fine, in base alla formula seguente.
+L'effetto dell'effetto intensifica in modo lineare tra i punti iniziale e finale, in base alla formula seguente.
 
-![formula dell'intensità dell'effetto nebbia in base ai punti iniziale e finale](images/fogliner.png)
+![formula dell'intensità degli effetti in base ai punti di inizio e di fine](images/fogliner.png)
 
-Questa è l'unica modalità di nebbia attualmente supportata.
+Questa è l'unica modalità attualmente supportata.
 
 </dd> <dt>
 
-<span id="D3DFOG_FORCE_DWORD"></span><span id="d3dfog_force_dword"></span>**D3DFOG \_ Force \_ DWORD**
+<span id="D3DFOG_FORCE_DWORD"></span><span id="d3dfog_force_dword"></span>**D3DFOG \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori in questo tipo enumerato vengono usati dagli Stati di \_ rendering D3DRS FOGTABLEMODE e D3DRS \_ FOGVERTEXMODE.
+I valori in questo tipo enumerato vengono usati dagli stati di rendering D3DRS \_ ESEGUITABLEMODE e D3DRSBIEVERTEXMODE. \_
 
-La nebbia può essere considerata una misura di visibilità: più basso è il valore di nebbia prodotto da un'equazione di nebbia, minore è la visibilità di un oggetto.
+Può essere considerato una misura di visibilità: più basso è il valore dell'oggetto prodotto da un'equazione dell'equazione, minore è la visibilità di un oggetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,7 +98,7 @@ La nebbia può essere considerata una misura di visibilità: più basso è il va
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

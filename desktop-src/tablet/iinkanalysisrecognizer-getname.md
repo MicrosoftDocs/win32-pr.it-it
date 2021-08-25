@@ -1,7 +1,7 @@
 ---
-description: Recupera il nome del riconoscimento.
+description: Recupera il nome del riconoscitore.
 ms.assetid: bd97fead-1e80-49dc-ada0-38eb5dc015ae
-title: 'Metodo IInkAnalysisRecognizer:: GetName (IACom. h)'
+title: Metodo IInkAnalysisRecognizer::GetName (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fe263878d1fd5e914cf033111997d297a20c54f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df86f5526a6b28f8a7f383ddfb49ca999875b8aa08c66e07a9ac95c41acd13cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773621"
 ---
-# <a name="iinkanalysisrecognizergetname-method"></a>Metodo IInkAnalysisRecognizer:: GetName
+# <a name="iinkanalysisrecognizergetname-method"></a>Metodo IInkAnalysisRecognizer::GetName
 
-Recupera il nome del riconoscimento.
+Recupera il nome del riconoscitore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*pbstrName* \[ out\]
+*pbstrName* \[ Cambio\]
 </dt> <dd>
 
-Nome del riconoscimento.
+Nome del sistema di riconoscimento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,7 +57,7 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
  
 
-Il nome è localizzato per la lingua indipendente dall'area supportata dal riconoscimento.
+Il nome è localizzato per la lingua indipendente dall'area geografica che il riconoscimento supporta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Il nome è localizzato per la lingua indipendente dall'area supportata dal ricon
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -79,7 +79,7 @@ Il nome è localizzato per la lingua indipendente dall'area supportata dal ricon
 [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

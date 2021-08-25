@@ -4,12 +4,12 @@ ms.assetid: 79c46e8f-f7e6-42ff-b3e8-d69c822acf74
 title: Elemento notificationInterface
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da4ec9a2215fe0072b5c78c7d47f45206827da8d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f1751e177c0675cd7c6b57a892a284ab181d32692855b462c078ad253d0b2ecb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856501"
 ---
 # <a name="notificationinterface-element"></a>Elemento notificationInterface
 
@@ -45,7 +45,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

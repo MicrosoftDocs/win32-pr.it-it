@@ -1,11 +1,11 @@
 ---
 title: Metodo StartScavenging della classe MicrosoftDNS_Server
-description: Il metodo StartScavenging avvia lo scavenging dei record non aggiornati nelle zone soggette allo scavenging.
+description: Il metodo StartScavenging avvia lo scavenging dei record non aggiornati nelle zone sottoposte a scavenging.
 ms.assetid: ee1bc0e0-9334-4971-a524-4bb8a9015b5b
 keywords:
 - DNS del metodo StartScavenging
-- DNS del metodo StartScavenging, classe MicrosoftDNS_Server
-- Classe MicrosoftDNS_Server DNS, metodo StartScavenging
+- Metodo StartScavenging DNS, MicrosoftDNS_Server classe
+- MicrosoftDNS_Server classe DNS , metodo StartScavenging
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8e1927ed069d3e3e3cf27fd94b1ffd54e6bb2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6173021ca49dc73b7ec89f60b097b2179078a774c9a40c26fda2c41b2ad25f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874771"
 ---
-# <a name="startscavenging-method-of-the-microsoftdns_server-class"></a>Metodo StartScavenging della \_ classe server MicrosoftDNS
+# <a name="startscavenging-method-of-the-microsoftdns_server-class"></a>Metodo StartScavenging della classe Server \_ MicrosoftDNS
 
-Il metodo **StartScavenging** avvia lo scavenging dei record non aggiornati nelle zone soggette allo scavenging.
+Il **metodo StartScavenging** avvia lo scavenging dei record non aggiornati nelle zone sottoposte a scavenging.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-ERRORE \_ indica che l'operazione di scavenging è stata avviata correttamente. Qualsiasi altro valore è un codice di errore.
+ERROR \_ SUCCESS indica che lo scavenging è stato avviato correttamente. Qualsiasi altro valore è un codice di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,7 +53,7 @@ ERRORE \_ indica che l'operazione di scavenging è stata avviata correttamente. 
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,16 +61,16 @@ ERRORE \_ indica che l'operazione di scavenging è stata avviata correttamente. 
 
 <dl> <dt>
 
-[**\_Server MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Metodo StartService della \_ classe server MicrosoftDNS**](microsoftdns-server-startservice.md)
+[**Metodo StartService della classe server \_ MicrosoftDNS**](microsoftdns-server-startservice.md)
 </dt> <dt>
 
-[**Metodo StopService della \_ classe server MicrosoftDNS**](microsoftdns-server-stopservice.md)
+[**Metodo StopService della classe server \_ MicrosoftDNS**](microsoftdns-server-stopservice.md)
 </dt> <dt>
 
-[**Metodo getdistinguishname della \_ classe server MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Metodo GetDistinguishedName della classe server \_ MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

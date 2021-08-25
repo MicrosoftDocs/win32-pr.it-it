@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6415b8e3d8ae4e292b7e2592b123120927081ea8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9b471ac42ceb44f5e65a2ac08365bf97ab0e3157816b772b331cde0fa0b13bde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907531"
 ---
 # <a name="ctransformfiltergetmediatype-method"></a>Metodo CTransformFilter.GetMediaType
 
@@ -53,7 +53,7 @@ Valore di indice in base zero.
 *pMediaType* 
 </dt> <dd>
 
-Puntatore a un [**oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
+Puntatore a [**un oggetto CMediaType**](cmediatype.md) che riceve il tipo di supporto.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrat
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CTransformOutputPin::GetMediaType**](ctransformoutputpin-getmediatype.md) del pin di output chiama questo metodo. La classe derivata deve implementare questo metodo. Per altre informazioni, vedere [**CBasePin::GetMediaType**](cbasepin-getmediatype.md).
+Il metodo [**CTransformOutputPin::GetMediaType**](ctransformoutputpin-getmediatype.md) del pin di output chiama questo metodo. La classe derivata deve implementare questo metodo. Per altre informazioni, vedere [**CBasePin::GetMediaType.**](cbasepin-getmediatype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Il metodo [**CTransformOutputPin::GetMediaType**](ctransformoutputpin-getmediaty
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transfrm.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Transfrm.h (includere Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

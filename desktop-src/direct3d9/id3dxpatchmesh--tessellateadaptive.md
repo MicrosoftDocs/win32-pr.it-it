@@ -1,7 +1,7 @@
 ---
-description: Esegue lo schema a mosaico adattivo basato sul criterio a mosaico adattivo basato su z.
+description: Esegue la tessellazione adattiva in base al criterio a tessellazione adattiva basato su z.
 ms.assetid: 9f8f5c18-e866-4893-ba07-2a3c0d26c028
-title: 'Metodo ID3DXPatchMesh:: TessellateAdaptive (D3DX9Mesh. h)'
+title: Metodo ID3DXPatchMesh::TessellateAdaptive (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4cc6c6b7ff7b0cdb99e56386df49529f26c9166
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d6365cfcf50debfeeb28fd493b76ac60943ee14f27a2dadec168b3dd4d31ace1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856291"
 ---
-# <a name="id3dxpatchmeshtessellateadaptive-method"></a>Metodo ID3DXPatchMesh:: TessellateAdaptive
+# <a name="id3dxpatchmeshtessellateadaptive-method"></a>Metodo ID3DXPatchMesh::TessellateAdaptive
 
-Esegue lo schema a mosaico adattivo basato sul criterio a mosaico adattivo basato su z.
+Esegue la tessellazione adattiva in base al criterio a tessellazione adattiva basato su z.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT TessellateAdaptive(
 
 <dl> <dt>
 
-*pTrans* \[ in\]
+*pTrans* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Specifica un vettore 4D punteggiato con i vertici per ottenere l'importo a mosaico adattivo per vertice. Ogni bordo è tassellati al valore medio dei livelli a mosaico per i due vertici a cui si connette.
+Specifica un vettore 4D punteggiato con i vertici per ottenere la quantità adattiva a tessellazione per vertice. Ogni bordo viene a tessellato al valore medio dei livelli a tessellazione per i due vertici che connette.
 
 </dd> <dt>
 
-*dwMaxTessLevel* \[ in\]
+*dwMaxTessLevel* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Limite massimo per lo schema a mosaico adattivo. Il numero di vertici introdotti tra i vertici esistenti. Questo valore integer può variare da 1 a 32, inclusi.
+Limite massimo per la tessellazione adattiva. Questo è il numero di vertici introdotti tra i vertici esistenti. Questo valore intero può essere compreso tra 1 e 32, inclusi.
 
 </dd> <dt>
 
-*dwMinTessLevel* \[ in\]
+*dwMinTessLevel* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Limite minimo per lo schema a mosaico adattivo. Il numero di vertici introdotti tra i vertici esistenti. Questo valore integer può variare da 1 a 32, inclusi.
+Limite minimo per la tessellazione adattiva. Questo è il numero di vertici introdotti tra i vertici esistenti. Questo valore intero può essere compreso tra 1 e 32, inclusi.
 
 </dd> <dt>
 
-*pMesh* \[ in\]
+*pMesh* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Mesh tassellati risultante. Vedere [**ID3DXMesh**](id3dxmesh.md).
+Mesh a tessella risultante. Vedere [**ID3DXMesh**](id3dxmesh.md).
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Mesh tassellati risultante. Vedere [**ID3DXMesh**](id3dxmesh.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione verrà eseguita in modo più efficiente se la mesh patch è stata ottimizzata con [**ID3DXPatchMesh:: Optimize**](id3dxpatchmesh--optimize.md).
+Questa funzione funzionerà in modo più efficiente se la mesh di patch è stata ottimizzata usando [**ID3DXPatchMesh::Optimize**](id3dxpatchmesh--optimize.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Questa funzione verrà eseguita in modo più efficiente se la mesh patch è stat
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione ExpertFreeMemory libera la memoria acquisita dalle chiamate alle funzioni ExpertAllocMemory e ExpertReallocMemory.
+description: La funzione ExpertFreeMemory libera la memoria acquisita dalle chiamate alle funzioni ExpertAllocMemory ed ExpertReallocMemory.
 ms.assetid: 0e7cc791-98dd-4522-afab-76ac9e74c715
-title: Funzione ExpertFreeMemory (Netmon. h)
+title: Funzione ExpertFreeMemory (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: cc26056a3ec3e8820c363d97f92c7eb382cd0622
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: edc4d1a9e33139372d0f397053d233a28c9e2445ba270a47e7dbfe97090eb6a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890830"
 ---
-# <a name="expertfreememory-function"></a>ExpertFreeMemory (funzione)
+# <a name="expertfreememory-function"></a>Funzione ExpertFreeMemory
 
-La funzione **ExpertFreeMemory** libera la memoria acquisita dalle chiamate alle funzioni [**ExpertAllocMemory**](expertallocmemory.md) e [**ExpertReallocMemory**](expertreallocmemory.md) .
+La **funzione ExpertFreeMemory** libera la memoria acquisita dalle chiamate alle [**funzioni ExpertAllocMemory**](expertallocmemory.md) [**ed ExpertReallocMemory.**](expertreallocmemory.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,26 +43,26 @@ SIZE_T WINAPI ExpertFreeMemory(
 *hExpertKey* 
 </dt> <dd>
 
-Identificatore univoco dell'esperto. Network Monitor passa *hExpertKey* all'esperto quando chiama la funzione [Run](run.md) .
+Identificatore univoco dell'esperto. Network Monitor passa *hExpertKey* all'esperto quando chiama la [funzione](run.md) Run.
 
 </dd> <dt>
 
-*pMemory* \[ in\]
+*pMemory* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla memoria allocata da Network Monitor. Il puntatore *pMemory* può essere restituito da una precedente chiamata a [**ExpertAllocMemory**](expertallocmemory.md) o [**ExpertReallocMemory**](expertreallocmemory.md).
+Puntatore alla memoria allocata Network Monitor memoria. Il *puntatore pMemory* può essere restituito da una chiamata precedente a [**ExpertAllocMemory**](expertallocmemory.md) o [**ExpertReallocMemory**](expertreallocmemory.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo. il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo. il valore restituito è NMERR \_ SUCCESS.
 
-Se la funzione ha esito negativo, il valore restituito indica il motivo dell'errore. Se il valore restituito è NMERR \_ Expert \_ Terminate, l'esperto viene immediatamente ripulito e restituito.
+Se la funzione ha esito negativo, il valore restituito indica il motivo dell'errore. Se il valore restituito è NMERR \_ EXPERT \_ TERMINATE, l'esperto pulisce e restituisce immediatamente .
 
 ## <a name="remarks"></a>Commenti
 
-È importante notare che un esperto deve usare le funzioni di allocazione della memoria Network Monitor per la gestione della memoria. Se l'esperto non riesce in fase di esecuzione, l'uso di queste funzioni consentirà Network Monitor di liberare la memoria allocata.
+È importante notare che un esperto deve usare le Network Monitor di allocazione della memoria per la gestione della memoria. Se l'esperto non riesce in fase di esecuzione, l'uso di queste funzioni consentirà Network Monitor liberare la memoria allocata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ Se la funzione ha esito negativo, il valore restituito indica il motivo dell'err
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

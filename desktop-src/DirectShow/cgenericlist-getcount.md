@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetCount Recupera il numero di elementi nell'elenco.
+description: Il metodo GetCount recupera il numero di elementi nell'elenco.
 ms.assetid: a74fcddd-109f-4abf-abe0-e00f6e56ea0f
-title: Metodo CGenericList. GetCount (Wxlist. h)
+title: Metodo CGenericList.GetCount (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0c78bfb8f9ddf086434f86a33f8cf059db5e1474
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7166127fc22140f1150008e4dd0007c28dfed3e8311fa8198d0d0d4f16399a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813781"
 ---
-# <a name="cgenericlistgetcount-method"></a>CGenericList. GetCount (metodo)
+# <a name="cgenericlistgetcount-method"></a>Metodo CGenericList.GetCount
 
 Il `GetCount` metodo recupera il numero di elementi nell'elenco.
 
@@ -50,8 +50,8 @@ Restituisce il numero di elementi nell'elenco.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

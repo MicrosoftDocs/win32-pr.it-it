@@ -1,22 +1,22 @@
 ---
 title: Eliminazione di un contesto di rendering
-description: L'esempio di codice seguente illustra come eliminare un contesto di rendering OpenGL quando una finestra OpenGL viene chiusa. Si tratta di una continuazione dello scenario usato per la creazione di un contesto di rendering e per renderlo corrente.
+description: L'esempio di codice seguente illustra come eliminare un contesto di rendering OpenGL quando viene chiusa una finestra OpenGL. Si tratta di una continuazione dello scenario usato in Creazione di un contesto di rendering e Come renderlo corrente.
 ms.assetid: 562c4698-f5bb-418a-8479-0df07e9834e5
 keywords:
-- OpenGL per Windows, contesti di rendering
-- rendering di contesti OpenGL
+- OpenGL in Windows,contesti di rendering
+- contesti di rendering OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 621abd0de46c874f40568f8361191b25df329f0f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9efd6821e51ad2493bc2ec3ce1c3ce9b448faee1079ae3771cf3290874fcb9e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889241"
 ---
 # <a name="deleting-a-rendering-context"></a>Eliminazione di un contesto di rendering
 
-L'esempio di codice seguente illustra come eliminare un contesto di rendering OpenGL quando una finestra OpenGL viene chiusa. Si tratta di una continuazione dello scenario usato per la [creazione di un contesto di rendering e per renderlo corrente](creating-a-rendering-context-and-making-it-current.md).
+L'esempio di codice seguente illustra come eliminare un contesto di rendering OpenGL quando viene chiusa una finestra OpenGL. Si tratta di una continuazione dello scenario usato in [Creazione di un contesto di rendering e Come renderlo corrente.](creating-a-rendering-context-and-making-it-current.md)
 
 
 ```C++
@@ -47,9 +47,9 @@ case WM_DESTROY:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

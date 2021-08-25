@@ -5,21 +5,21 @@ ms.assetid: 659e7d1e-d985-4cb1-95ad-355c5b44d55a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f2ff388cf3448a4482d304fabf90fdbaa83d5d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 69c12a8969e4e16495881a08a67550cb2052862126baecf5cc07c2ad6b129c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889331"
 ---
 # <a name="creating-a-connection-request-policy"></a>Creazione di un criterio di richiesta di connessione
 
-Il codice di Visual Basic seguente crea un criterio di richiesta di connessione. Aggiunge una condizione al criterio che corrisponde al nome dell'utente che richiede l'accesso. Collega i criteri a un profilo. Il profilo viene configurato in modo da usare RADIUS per l'autenticazione e l'accounting e specifica i gruppi di server che il profilo deve usare per l'autenticazione e l'accounting.
+Il codice Visual Basic seguente crea criteri di richiesta di connessione. Aggiunge una condizione ai criteri corrispondenti al nome dell'utente che richiede l'accesso. Collega il criterio a un profilo. Configura tale profilo per l'uso di RADIUS sia per l'autenticazione che per l'accounting e specifica i gruppi di server che il profilo deve usare per l'autenticazione e l'accounting.
 
 > [!Note]  
-> Questo esempio di codice inline è stato compilato su Visual Basic gestiti.
+> Questo esempio di codice inline è stato compilato su codice gestito Visual Basic.
 
- 
+ 
 
 
 ```VB
@@ -354,12 +354,12 @@ End Module
 [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> <dt>
 
-[**POLICYPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-policyproperties)
+[**PROPRIETÀ DEI CRITERI**](/windows/desktop/api/sdoias/ne-sdoias-policyproperties)
 </dt> <dt>
 
-[**PROFILEPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-profileproperties)
+[**PROPRIETÀ PROFILO**](/windows/desktop/api/sdoias/ne-sdoias-profileproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

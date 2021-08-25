@@ -1,23 +1,23 @@
 ---
-description: Il tipo di indirizzo identifica il formato dell'indirizzo, ad esempio il numero di telefono standard o l'indirizzo di posta elettronica. Solo le applicazioni che negoziano la versione 3,0 o successiva di TAPI possono usare i tipi di indirizzo.
+description: Il tipo di indirizzo identifica il formato dell'indirizzo, ad esempio il numero di telefono standard o l'indirizzo di posta elettronica. Solo le applicazioni che negoziano TAPI versione 3.0 o successiva possono usare i tipi di indirizzo.
 ms.assetid: 2c32eda1-e510-40eb-ae75-fc7b9e9953cd
-title: Costanti LINEADDRESSTYPE_ (TAPI. h)
+title: LINEADDRESSTYPE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d0a46eff2a7a0c38fa17aed4b831ef8701c565
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6555ff934ffb8c1b40b8f35d279a2071cad32b80b754af19672108f5e318a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873334"
 ---
-# <a name="lineaddresstype_-constants"></a>\_Costanti LINEADDRESSTYPE
+# <a name="lineaddresstype_-constants"></a>Costanti \_ LINEADDRESSTYPE
 
-Il tipo di indirizzo identifica il formato dell'indirizzo, ad esempio il numero di telefono standard o l'indirizzo di posta elettronica. Solo le applicazioni che negoziano la versione 3,0 o successiva di TAPI possono usare i tipi di indirizzo.
+Il tipo di indirizzo identifica il formato dell'indirizzo, ad esempio il numero di telefono standard o l'indirizzo di posta elettronica. Solo le applicazioni che negoziano TAPI versione 3.0 o successiva possono usare i tipi di indirizzo.
 
 <dl> <dt>
 
-<span id="LINEADDRESSTYPE_PHONENUMBER"></span><span id="lineaddresstype_phonenumber"></span>**\_PhoneNumber LINEADDRESSTYPE**
+<span id="LINEADDRESSTYPE_PHONENUMBER"></span><span id="lineaddresstype_phonenumber"></span>**LINEADDRESSTYPE \_ PHONENUMBER**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -25,12 +25,12 @@ Il tipo di indirizzo identifica il formato dell'indirizzo, ad esempio il numero 
 
 
 
-Tipo di indirizzo è un numero di telefono standard.
+Il tipo di indirizzo è un numero di telefono standard.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_SDP"></span><span id="lineaddresstype_sdp"></span>**\_SDP LINEADDRESSTYPE**
+<span id="LINEADDRESSTYPE_SDP"></span><span id="lineaddresstype_sdp"></span>**LINEADDRESSTYPE \_ SDP**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -38,12 +38,12 @@ Tipo di indirizzo è un numero di telefono standard.
 
 
 
-Tipo di indirizzo è la conferenza SDP (Session Description Protocol).
+Il tipo di indirizzo è Session Description Protocol (SDP).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_EMAILNAME"></span><span id="lineaddresstype_emailname"></span>**LINEADDRESSTYPE \_ EmailName**
+<span id="LINEADDRESSTYPE_EMAILNAME"></span><span id="lineaddresstype_emailname"></span>**LINEADDRESSTYPE \_ EMAILNAME**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -51,12 +51,12 @@ Tipo di indirizzo è la conferenza SDP (Session Description Protocol).
 
 
 
-Tipo di indirizzo è un nome di posta elettronica.
+Il tipo di indirizzo è un nome di posta elettronica.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ DomainName**
+<span id="LINEADDRESSTYPE_DOMAINNAME"></span><span id="lineaddresstype_domainname"></span>**LINEADDRESSTYPE \_ DOMAINNAME**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -64,12 +64,12 @@ Tipo di indirizzo è un nome di posta elettronica.
 
 
 
-Tipo di indirizzo è un nome di dominio.
+Il tipo di indirizzo è un nome di dominio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**LINEADDRESSTYPE \_ IPAddress**
+<span id="LINEADDRESSTYPE_IPADDRESS"></span><span id="lineaddresstype_ipaddress"></span>**LINEADDRESSTYPE \_ IPADDRESS**
 </dt> <dd> <dl> <dt>
 
 0x00000010
@@ -88,8 +88,8 @@ Il tipo di indirizzo è un indirizzo IP.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

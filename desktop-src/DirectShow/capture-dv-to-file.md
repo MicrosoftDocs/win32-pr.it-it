@@ -1,32 +1,32 @@
 ---
-description: Acquisisci DV nel file
+description: Acquisisci DV in file
 ms.assetid: f7a8bcbb-a744-43c4-a226-354ae2d94df8
-title: Acquisisci DV nel file
+title: Acquisisci DV in file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 713e49eba3016b353362c541ba31ffd6a1ae5de7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d886b964502d705f5902c17de8e6e008a11a31699de40b3089033867873fa021
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814341"
 ---
-# <a name="capture-dv-to-file"></a>Acquisisci DV nel file
+# <a name="capture-dv-to-file"></a>Acquisisci DV in file
 
-Questa sezione descrive come acquisire video digitali (DV) da una videocamera DV o da un nastro VTR.
+Questa sezione descrive come acquisire video digitali (DV) da una fotocamera DV o da un nastro VTR.
 
-1.  Creare un'istanza del filtro del [driver Msdv](msdv-driver.md) . Per altre informazioni, vedere [selezione di un dispositivo di acquisizione](selecting-a-capture-device.md).
-2.  Inizializzare il generatore di grafici di acquisizione, come descritto in [informazioni sul generatore di grafici di acquisizione](about-the-capture-graph-builder.md).
+1.  Creare un'istanza del [filtro del driver MSDV.](msdv-driver.md) Per altre informazioni, vedere [Selezione di un dispositivo di acquisizione](selecting-a-capture-device.md).
+2.  Inizializzare capture Graph Builder, come descritto in [About the Capture Graph Builder](about-the-capture-graph-builder.md).
 3.  Compilare il grafico di acquisizione, a seconda del tipo di file di destinazione:
     -   [Acquisire un file DV di tipo 1](capture-a-type-1-dv-file.md)
     -   [Acquisire un file DV di tipo 2](capture-a-type-2-dv-file.md)
     -   [Acquisisci DV in RGB non compresso](capture-dv-to-uncompressed-rgb.md)
 4.  Eseguire il grafo.
 
-L'acquisizione da un nastro VTR funziona esattamente come l'acquisizione di video live dalla fotocamera, ad eccezione del fatto che è necessario riprodurre il nastro, come descritto in [controllo di una videocamera DV](controlling-a-dv-camcorder.md). Per evitare la perdita di frame, eseguire prima il grafo, quindi riprodurre il nastro. Al termine della trasmissione, arrestare prima il nastro e quindi arrestare il grafo.
+L'acquisizione da un nastro VTR funziona esattamente come l'acquisizione di video live dalla fotocamera, con la differenza che è necessario riprodurre il nastro, come descritto in Controllo di un [camcorder DV.](controlling-a-dv-camcorder.md) Per evitare la perdita di fotogrammi, eseguire prima il grafo e quindi riprodurre il nastro. Al termine della trasmissione, arrestare prima il nastro e quindi arrestare il grafo.
 
 > [!Note]  
-> La videocamera deve essere in modalità VTR. Vedere [modalità dispositivo](device-mode.md).
+> Il camcorder deve essere in modalità VTR. Vedere [Modalità dispositivo](device-mode.md).
 
  
 
@@ -37,7 +37,7 @@ L'acquisizione da un nastro VTR funziona esattamente come l'acquisizione di vide
 [Video digitale in DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Tipo-1 e file AVI DV di tipo 2](type-1-vs--type-2-dv-avi-files.md)
+[File AVI DV type-1 e Type-2](type-1-vs--type-2-dv-avi-files.md)
 </dt> <dt>
 
 [Acquisizione video](video-capture.md)

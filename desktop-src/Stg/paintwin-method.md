@@ -4,16 +4,16 @@ description: Metodo PaintWin
 ms.assetid: e89794e6-c059-4531-a1e3-3a4972e0218d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b30e7a52640255934762943f910e367d76088d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40708700ba4f0175713c59f6e3f1ff1395accadb0dcae3b31ca2e85862a998ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906031"
 ---
 # <a name="paintwin-method"></a>Metodo PaintWin
 
-Di seguito è riportato il metodo **PaintWin** di CGUIPAPER da GUIPAPER. CPP.
+Di seguito è riportato il metodo **PaintWin** di CGuiPaper da GUIPAPER. CPP.
 
 
 ```C++
@@ -42,11 +42,11 @@ HRESULT CGuiPaper::PaintWin(void)
 
 
 
-**PaintWin** essenzialmente **chiama il metodo** di ridefinizione di Copaper. Nell'esempio [StoServe](structured-storage-server-sample--stoserve-.md) è stato mostrato il metodo di **riestrazione** per trasmettere l'intera matrice di dati dell'input penna a tutti i sink connessi. **PaintWin** chiama un oggetto sul lato server per restituire i dati di disegno al client.
+**PaintWin** chiama essenzialmente il metodo **Redraw di** COPaper. [Nell'esempio StoServe](structured-storage-server-sample--stoserve-.md) è stato illustrato il metodo **Redraw** per trasmettere l'intera matrice di dati input penna di COPaper a tutti i sink connessi. **PaintWin** chiama un oggetto sul lato server per inviare i dati di disegno al client.
 
- 
+ 
 
- 
+ 
 
 
 

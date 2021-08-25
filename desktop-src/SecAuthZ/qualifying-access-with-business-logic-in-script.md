@@ -1,7 +1,7 @@
 ---
-description: Utilizzo di script delle regole business nello script per fornire la logica di run-time per il controllo dell'accesso.
+description: Uso di script delle regole business in Script per fornire logica di run-time per il controllo dell'accesso.
 ms.assetid: 10c28ecb-3f36-45a8-b037-7038e8927b6b
-title: Qualificazione dell'accesso con la logica di business nello script
+title: Qualifica dell'accesso con la logica di business nello script
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 65ee69e0572c0f480cded2930ea81ac6da710b6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b77ff1d6d520780d30efab5619c3e9bc3c896ad88315fba56e3a19e05d3ae97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907551"
 ---
-# <a name="qualifying-access-with-business-logic-in-script"></a>Qualificazione dell'accesso con la logica di business nello script
+# <a name="qualifying-access-with-business-logic-in-script"></a>Qualifica dell'accesso con la logica di business nello script
 
-Usare gli script delle regole business per fornire la logica di run-time per il controllo dell'accesso. Per ulteriori informazioni sulle regole business, vedere [regole business](business-rules.md).
+Usare gli script delle regole business per fornire logica di run-time per il controllo dell'accesso. Per altre informazioni sulle regole business, vedere [Business Rules](business-rules.md).
 
-Per assegnare una regola business a un'attività, impostare innanzitutto la proprietà [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) dell'oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) che rappresenta l'attività. Lo script deve essere scritto utilizzando il linguaggio di programmazione di Visual Basic Scripting Edition (VBScript) o il software di sviluppo JScript. Dopo aver specificato il linguaggio di script, impostare la proprietà [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) dell'oggetto **IAzTask** con una rappresentazione di stringa dello script.
+Per assegnare una regola business a un'attività, impostare prima di tutto la [**proprietà BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) [**dell'oggetto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) che rappresenta l'attività. Lo script deve essere scritto usando il linguaggio di programmazione Visual Basic Scripting Edition (VBScript) o JScript di sviluppo. Dopo aver specificato il linguaggio di script, impostare la [**proprietà BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) **dell'oggetto IAzTask** con una rappresentazione di stringa dello script.
 
-Quando si verifica l'accesso per un'operazione contenuta da un'attività a cui è associata una regola business, l'applicazione deve creare due matrici con le stesse dimensioni da passare come parametri *varParameterNames* e *VarParameterValues* del metodo [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) di un oggetto [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) . Per informazioni sulla creazione di un contesto client, vedere [definizione di un contesto client nello script](establishing-a-client-context-in-script.md).
+Quando si verifica l'accesso per un'operazione contenuta in un'attività a cui è associata una regola business, l'applicazione deve creare due matrici delle stesse dimensioni da passare ai parametri *varParameterNames* e *varParameterValues* del metodo [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) di un [**oggetto IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) Per informazioni sulla creazione di un contesto client, vedere [Definizione di un contesto client nello script](establishing-a-client-context-in-script.md).
 
-Il metodo [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un oggetto [**AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) passato allo script della regola business. Lo script imposta quindi la proprietà [**BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) dell'oggetto **AzBizRuleContext** . Il valore **true** indica che è stato concesso l'accesso e il valore **false** indica che l'accesso è stato negato.
+Il [**metodo AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) crea un [**oggetto AzBizRuleContext**](/windows/desktop/api/Azroles/nn-azroles-iazbizrulecontext) che viene passato allo script della regola business. Lo script imposta quindi la [**proprietà BusinessRuleResult**](/windows/desktop/api/Azroles/nf-azroles-iazbizrulecontext-put_businessruleresult) dell'oggetto **AzBizRuleContext.** Il valore **True** indica che l'accesso è concesso e il valore **False** indica che l'accesso è negato.
 
-Non è possibile assegnare uno script della regola business a un oggetto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contenuto in un oggetto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegato.
+Uno script della regola business non può essere assegnato a [**un oggetto IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) contenuto in un oggetto [**IAzScope**](/windows/desktop/api/Azroles/nn-azroles-iazscope) delegato.
 
-Nell'esempio seguente viene illustrato come utilizzare uno script della regola business per controllare l'accesso di un client a un'operazione. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che l'archivio contenga un'applicazione denominata Expense, un'attività denominata Submit Expense e un'operazione denominata UseFormControl.
+L'esempio seguente illustra come usare uno script di regole business per controllare l'accesso di un client a un'operazione. L'esempio presuppone che nella directory radice dell'unità C sia presente un archivio criteri XML denominato MyStore.xml e che questo archivio contenga un'applicazione denominata Expense, un'attività denominata Submit Expense e un'operazione denominata UseFormControl.
 
 
 ```VB

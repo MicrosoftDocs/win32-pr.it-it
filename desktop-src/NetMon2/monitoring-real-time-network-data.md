@@ -1,19 +1,19 @@
 ---
-description: In questa sezione viene descritto come sviluppare, testare e implementare monitoraggi in tempo reale che possono essere utilizzati con lo strumento di controllo di monitoraggio.
+description: Questa sezione descrive come sviluppare, testare e implementare monitoraggi in tempo reale che possono essere usati con lo strumento di controllo monitoraggio.
 ms.assetid: 2c3baff0-5150-473c-8047-845711cd615c
-title: Monitoraggio dei dati di rete Real-Time
+title: Monitoraggio dei Real-Time di rete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 627bbe4c118e997109aae095843b91d08079d068
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b51207c6559499900541a476a2e0d0c51466b0ce9a10bc07dbefbd846745962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890011"
 ---
-# <a name="monitoring-real-time-network-data"></a>Monitoraggio dei dati di rete Real-Time
+# <a name="monitoring-real-time-network-data"></a>Monitoraggio dei Real-Time di rete
 
-In questa sezione viene descritto come sviluppare, testare e implementare monitoraggi in tempo reale che possono essere utilizzati con lo strumento di controllo di monitoraggio. Questa sezione include gli argomenti seguenti:
+Questa sezione descrive come sviluppare, testare e implementare monitoraggi in tempo reale che possono essere usati con lo strumento di controllo monitoraggio. Questa sezione include gli argomenti seguenti:
 
 -   [Specifica delle informazioni sul protocollo](specifying-protocol-information.md)
 -   [Impostazione della frequenza di callback](setting-the-callback-frequency.md)

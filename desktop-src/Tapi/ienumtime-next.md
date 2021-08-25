@@ -4,16 +4,16 @@ ms.assetid: e8ca77b8-0322-43b4-9996-26f584cf878a
 title: Metodo IEnumTime::Next (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1487136b0e3e41ba11a23ba92500d2aa0758df79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6068d23fae96d5623ced72f44e6e8d185f861b6c49ff085f1b6e9e58bc489b89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905961"
 ---
 # <a name="ienumtimenext-method"></a>Metodo IEnumTime::Next
 
-\[ Le interfacce e i controlli di conferenza di telefonia IP di Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
 Il **metodo Next** ottiene il successivo numero specificato di elementi nella sequenza di enumerazione.
 
@@ -73,7 +73,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-TAPI chiama il **metodo AddRef** [**sull'interfaccia ITTime**](ittime.md) restituita da **IEnumTime::Next**. L'applicazione deve **chiamare Release** **sull'interfaccia ITTime** per liberare le risorse associate.
+TAPI chiama il **metodo AddRef** sull'interfaccia [**ITTime**](ittime.md) restituita da **IEnumTime::Next.** L'applicazione deve **chiamare Release** **sull'interfaccia ITTime** per liberare le risorse associate.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -4,22 +4,22 @@ ms.assetid: 7c8a63c5-2eab-4414-9a3d-c99a92b67a62
 title: Verifica dell'accesso client a una risorsa richiesta in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeffe9cb3312e33a283c1701b58356cdf5ea9b3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 363490e3636f5ad5229dd4234eba3bf38b9dfc54a4564bda775b143a249fe640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906731"
 ---
 # <a name="verifying-client-access-to-a-requested-resource-in-c"></a>Verifica dell'accesso client a una risorsa richiesta in C++
 
-Chiamare il metodo [**AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) dell'interfaccia [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) per verificare se il client ha accesso a una o più operazioni. Un client potrebbe appartenere a più di un ruolo e un'operazione potrebbe essere assegnata a più di un'attività, in modo che Gestione autorizzazioni verifichi tutti i ruoli e le attività. Se un ruolo a cui appartiene il client contiene un'attività che contiene un'operazione, viene concesso l'accesso a tale operazione.
+Chiamare il [**metodo AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) dell'interfaccia [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) per verificare se il client ha accesso a una o più operazioni. Un client potrebbe essere membro di più di un ruolo e un'operazione potrebbe essere assegnata a più di un'attività, quindi Gestione autorizzazioni controlla tutti i ruoli e le attività. Se un ruolo a cui appartiene il client contiene un'attività che contiene un'operazione, viene concesso l'accesso a tale operazione.
 
-Per controllare l'accesso solo a un singolo ruolo a cui appartiene il client, impostare la proprietà [**RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) dell'interfaccia [**IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext) .
+Per controllare l'accesso per un solo ruolo a cui appartiene il client, impostare la [**proprietà RoleForAccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-get_roleforaccesscheck) [**dell'interfaccia IAzClientContext.**](/windows/desktop/api/Azroles/nn-azroles-iazclientcontext)
 
-Quando si inizializza l'archivio dei criteri di autorizzazione per il controllo dell'accesso, è necessario passare zero come valore del parametro *è* del metodo [**IAzAuthorizationStore:: Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize) .
+Quando si inizializza l'archivio dei criteri di autorizzazione per il controllo di accesso, è necessario passare zero come valore del parametro *lFlags* del [**metodo IAzAuthorizationStore::Initialize.**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)
 
-Nell'esempio seguente viene illustrato come controllare l'accesso di un client a un'operazione. Nell'esempio si presuppone che esista un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C, che questo archivio contiene un'applicazione denominata Expense e un'operazione denominata UseFormControl e che la variabile hToken contiene un token client valido.
+Nell'esempio seguente viene illustrato come controllare l'accesso di un client a un'operazione. Nell'esempio si presuppone che nella directory radice dell'unità C sia presente un archivio criteri XML denominato MyStore.xml, che questo archivio contenga un'applicazione denominata Expense e un'operazione denominata UseFormControl e che la variabile hToken contenga un token client valido.
 
 
 ```C++

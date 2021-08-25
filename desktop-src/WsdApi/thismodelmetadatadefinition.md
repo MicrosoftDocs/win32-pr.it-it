@@ -4,12 +4,12 @@ ms.assetid: f51da261-ca56-40e5-a6e0-47544d15d6e5
 title: Elemento thisModelMetadataDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7951d6ce0385c976714b57511b4c0e18458f133d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1458b406045ccffd5a09d94d839dd9fc032ba2966842955f12e29044b689d25f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856319"
 ---
 # <a name="thismodelmetadatadefinition-element"></a>Elemento thisModelMetadataDefinition
 
@@ -35,7 +35,7 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**File**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
@@ -43,7 +43,7 @@ Non ci sono elementi figlio.
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

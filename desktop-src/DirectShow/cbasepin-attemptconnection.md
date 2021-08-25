@@ -1,7 +1,7 @@
 ---
-description: Il metodo AttemptConnection si connette a un altro PIN usando un tipo di supporto specificato.
+description: Il metodo AttemptConnection si connette a un altro pin usando un tipo di supporto specificato.
 ms.assetid: b80cf2c0-7266-4dac-8633-d30a871c57d9
-title: Metodo CBasePin. AttemptConnection (Amfilter. h)
+title: Metodo CBasePin.AttemptConnection (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72f80d81b5f105f528292a23f8b58257066b425e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e70683d5307b81db14d23fec2c163b085cccaf64b7926eb41efdb5dfe9ac7611
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872397"
 ---
-# <a name="cbasepinattemptconnection-method"></a>CBasePin. AttemptConnection, metodo
+# <a name="cbasepinattemptconnection-method"></a>Metodo CBasePin.AttemptConnection
 
-Il `AttemptConnection` metodo si connette a un altro PIN utilizzando un tipo di supporto specificato.
+Il `AttemptConnection` metodo si connette a un altro pin usando un tipo di supporto specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,27 +46,27 @@ virtual HRESULT AttemptConnection(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN di ricezione.
+Puntatore all'interfaccia [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin di ricezione.
 
 </dd> <dt>
 
-*PMT* 
+*Pmt* 
 </dt> <dd>
 
-Puntatore a un oggetto [**CMediaType**](cmediatype.md) che specifica il tipo di supporto.
+Puntatore a un [**oggetto CMediaType**](cmediatype.md) che specifica il tipo di supporto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                  |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                       | Esito positivo.<br/>                          |
-| <dl> <dt>**\_tipo VFW \_ E \_ non \_ accettato**</dt> </dl> | Il tipo di supporto non è accettabile.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Operazione completata.<br/>                          |
+| <dl> <dt>**TIPO VFW \_ E \_ NON \_ \_ ACCETTATO**</dt> </dl> | Il tipo di supporto non è accettabile.<br/> |
 
 
 
@@ -74,9 +74,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo tenta di connettere i due pin con un tipo di supporto specifico. Se il tipo non è accettabile, il metodo ha esito negativo senza provare altri tipi di supporto.
+Questo metodo tenta di connettere i due pin a un tipo di supporto specifico. Se il tipo non è accettabile, il metodo ha esito negativo senza provare altri tipi di supporti.
 
-Se il tipo di supporto è accettabile, questo metodo chiama il metodo [**Ipin:: ReceiveConnection**](/windows/desktop/api/Strmif/nf-strmif-ipin-receiveconnection) del PIN di ricezione. Chiama quindi il metodo [**CBasePin:: CompleteConnect**](cbasepin-completeconnect.md) per completare la connessione.
+Se il tipo di supporto è accettabile, questo metodo chiama il metodo [**IPin::ReceiveConnection del**](/windows/desktop/api/Strmif/nf-strmif-ipin-receiveconnection) pin ricevente. Chiama quindi il [**metodo CBasePin::CompleteConnect**](cbasepin-completeconnect.md) per completare la connessione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Se il tipo di supporto è accettabile, questo metodo chiama il metodo [**Ipin:: 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
