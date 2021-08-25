@@ -1,9 +1,9 @@
 ---
-title: Messaggio DTM_CLOSEMONTHCAL (COMmctrl. h)
-description: Chiude un controllo di selezione data e ora (DTP). Inviare questo messaggio in modo esplicito o utilizzando la \_ macro DateTime CloseMonthCal.
+title: DTM_CLOSEMONTHCAL messaggio (Commctrl.h)
+description: Chiude un controllo selezione data e ora (DTP). Inviare questo messaggio in modo esplicito o usando la \_ macro DateTime CloseMonthCal.
 ms.assetid: f60af77f-ec34-4f3d-9427-cda7ac6083bf
 keywords:
-- Controlli di Windows Message DTM_CLOSEMONTHCAL
+- DTM_CLOSEMONTHCAL dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd79f33576490196bf29fd51316f8ce3daf4ad4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f458592d2842625b9826eda5963c66cbd182e3f052a2b2a70ff5219a054e8cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878241"
 ---
-# <a name="dtm_closemonthcal-message"></a>\_Messaggio CLOSEMONTHCAL DTM
+# <a name="dtm_closemonthcal-message"></a>Messaggio DTM \_ CLOSEMONTHCAL
 
-Chiude un controllo di selezione data e ora (DTP). Inviare questo messaggio in modo esplicito o utilizzando la macro [**DateTime \_ CloseMonthCal**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_closemonthcal) .
+Chiude un controllo selezione data e ora (DTP). Inviare questo messaggio in modo esplicito o usando la macro [**\_ DateTime CloseMonthCal.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_closemonthcal)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-Elimina il controllo e invia una notifica [del \_ primo piano DTN](dtn-closeup.md) che il controllo sta chiudendo anziché il controllo è in apertura (a discesa come nella notifica a [ \_ discesa DTN](dtn-dropdown.md) ) all'elemento padre del controllo.
+Elimina il controllo e invia una notifica [DTN \_ CLOSEUP](dtn-closeup.md) che indica che il controllo è in chiusura anziché il controllo è in corso di apertura (elenco a discesa come nella notifica [DTN \_ DROPDOWN)](dtn-dropdown.md) all'elemento padre del controllo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Elimina il controllo e invia una notifica [del \_ primo piano DTN](dtn-closeup.m
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ Elimina il controllo e invia una notifica [del \_ primo piano DTN](dtn-closeup.m
 **Riferimento**
 </dt> <dt>
 
-[\_elenco a discesa DTN](dtn-dropdown.md)
+[ELENCO A DISCESA DTN \_](dtn-dropdown.md)
 </dt> <dt>
 
-[primo piano DTN \_](dtn-closeup.md)
+[CHIUSURA \_ DTN](dtn-closeup.md)
 </dt> </dl>
 
  

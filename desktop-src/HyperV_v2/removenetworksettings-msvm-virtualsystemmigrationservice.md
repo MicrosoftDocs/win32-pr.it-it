@@ -1,7 +1,7 @@
 ---
-description: Rimuove le subnet di rete di migrazione dal servizio di migrazione del sistema virtuale.
+description: Rimuove le subnet della rete di migrazione dal servizio di migrazione del sistema virtuale.
 ms.assetid: 6ae8de07-552b-4525-8806-bfb9da73bd42
-title: Metodo RemoveNetworkSettings della classe Msvm_VirtualSystemMigrationService
+title: Metodo RemoveNetworkSettings della Msvm_VirtualSystemMigrationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "119980081"
 ---
 # <a name="removenetworksettings-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo RemoveNetworkSettings della classe Msvm \_ VirtualSystemMigrationService
 
-Rimuove le subnet di rete di migrazione dal servizio di migrazione del sistema virtuale.
+Rimuove le subnet della rete di migrazione dal servizio di migrazione del sistema virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ uint32 RemoveNetworkSettings(
 
 <dl> <dt>
 
-*NetworkSettings* \[ Pollici\]
+*Impostazioni di rete* \[ Pollici\]
 </dt> <dd>
 
 Matrice di istanze incorporate della [**classe Msvm \_ VirtualSystemMigrationNetworkSettingData**](msvm-virtualsystemmigrationnetworksettingdata.md) che rappresentano le subnet di rete da rimuovere.
@@ -60,13 +60,13 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Operazione non** riuscita (32768)
+**Non riuscito** (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -84,7 +84,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametro non** valido (32773)
 </dt> <dt>
 
-**Sistema in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
 **Stato non valido per questa operazione** (32775)
@@ -107,7 +107,7 @@ Questo metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

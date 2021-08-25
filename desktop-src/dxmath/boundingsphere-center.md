@@ -1,19 +1,19 @@
 ---
-description: Centro della BoundingSphere.
+description: Centro di BoundingSphere.
 ms.assetid: 5e8a6cd6-a38b-406c-a759-8685bfecc0e6
-title: BoundingSphere. Center (DirectXCollision. h)
+title: BoundingSphere.Center (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98dd6a002e2316d1bb4778bbfdbba209f5cbeda7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2ddbab102d4644fa435431880e70a0cf2923088723cbd2f1cc6a09bf76128bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948941"
 ---
-# <a name="boundingspherecenter"></a>BoundingSphere. Center
+# <a name="boundingspherecenter"></a>BoundingSphere.Center
 
-Centro della BoundingSphere.
+Centro di BoundingSphere.
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK per Windows 8. Supportato per le app desktop Win32, le app di Windows Store e le app Windows Phone 8.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,7 +36,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 | Requisito | Valore |
 |----------------------|-----------------------------------------------------------------------------------------------|
 | Spazio dei nomi<br/> | Usare DirectX.<br/>                                                                       |
-| Intestazione<br/>    | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Intestazione<br/>    | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con la Windows SDK p
 **Riferimento**
 </dt> <dt>
 
-[**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)
+[**Boundingsphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)
 </dt> </dl>
 
  

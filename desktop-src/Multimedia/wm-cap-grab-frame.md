@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_GRAB_FRAME (VFW. h)
-description: Il \_ \_ \_ messaggio di cattura frame WM Cap recupera e visualizza un singolo frame dal driver di acquisizione. Dopo l'acquisizione, la sovrapposizione e l'anteprima sono disabilitate. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capGrabFrame.
+title: WM_CAP_GRAB_FRAME messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP GRAB FRAME recupera e visualizza un singolo frame dal driver di \_ \_ acquisizione. Dopo l'acquisizione, la sovrapposizione e l'anteprima sono disabilitate. È possibile inviare questo messaggio in modo esplicito o usando la macro capGrabFrame.
 ms.assetid: 91d58c1c-53b9-4813-88c2-7a1acf641d96
 keywords:
-- WM_CAP_GRAB_FRAME messaggi multimediali di Windows
+- WM_CAP_GRAB_FRAME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2ffd91ce767ad86ddac002bb216420b604883d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdccfc9df0f3abac7febfa78029b4ecb351ec3044c618dc4c811e91b433f0f49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892041"
 ---
-# <a name="wm_cap_grab_frame-message"></a>\_Messaggio di \_ cattura del frame WM Cap \_
+# <a name="wm_cap_grab_frame-message"></a>Messaggio \_ WM CAP GRAB \_ \_ FRAME
 
-Il messaggio di cattura **\_ \_ \_ frame WM Cap** recupera e visualizza un singolo frame dal driver di acquisizione. Dopo l'acquisizione, la sovrapposizione e l'anteprima sono disabilitate. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capGrabFrame**](/windows/desktop/api/Vfw/nf-vfw-capgrabframe) .
+Il **messaggio WM CAP GRAB \_ \_ \_ FRAME** recupera e visualizza un singolo frame dal driver di acquisizione. Dopo l'acquisizione, la sovrapposizione e l'anteprima sono disabilitate. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capGrabFrame.**](/windows/desktop/api/Vfw/nf-vfw-capgrabframe)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = (LPARAM)0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE se** l'operazione ha esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sull'installazione delle funzioni di callback, vedere l' [**errore di callback di WM \_ Cap \_ set \_ \_**](wm-cap-set-callback-error.md) e [**WM \_ Cap \_ set callback message \_ \_ frame**](wm-cap-set-callback-frame.md) .
+Per informazioni sull'installazione delle funzioni di callback, vedere i [**messaggi WM CAP SET CALLBACK \_ \_ \_ \_ ERROR**](wm-cap-set-callback-error.md) e [**WM CAP SET CALLBACK \_ \_ \_ \_ FRAME.**](wm-cap-set-callback-frame.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Per informazioni sull'installazione delle funzioni di callback, vedere l' [**err
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

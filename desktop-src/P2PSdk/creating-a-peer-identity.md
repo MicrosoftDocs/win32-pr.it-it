@@ -4,12 +4,12 @@ ms.assetid: 44b85bbc-9594-4f68-b930-51a28422b571
 title: Creazione di un'identità peer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ab240b9fa1265ba03bfb1ce584dabed92988620
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de7d7e2a1bfba386ede4bf3f10e8b009794c3e17676abc65d797d42e203f214f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887821"
 ---
 # <a name="creating-a-peer-identity"></a>Creazione di un'identità peer
 

@@ -1,36 +1,36 @@
 ---
-description: Un'applicazione deve creare un contesto client prima di poter usare l'API Authz per eseguire verifiche di accesso o controllo.
+description: Un'applicazione deve creare un contesto client prima di poter usare Authz API per eseguire i controlli di accesso o il controllo.
 ms.assetid: 82f207ff-cac4-4e9a-a9e6-ddb3f6c8b30a
 title: Inizializzazione di un contesto client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be229a60a12e33ab0c2bbd3e52fc533cf29ed1bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da8a3c3191f323cf6ce35fda90f4bd75299dac67183986998cf21a80c0ee6995
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908041"
 ---
 # <a name="initializing-a-client-context"></a>Inizializzazione di un contesto client
 
-Un'applicazione deve creare un contesto client prima di poter usare l'API Authz per eseguire verifiche di accesso o controllo.
+Un'applicazione deve creare un contesto client prima di poter usare Authz API per eseguire i controlli di accesso o il controllo.
 
-Per inizializzare Resource Manager, un'applicazione deve chiamare la funzione [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager) . L'applicazione può quindi chiamare una delle diverse funzioni per creare un contesto client. Inoltre, se si eseguono controlli di accesso o di controllo in modalità remota, è necessario utilizzare la funzione [**AuthzInitializeRemoteResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeremoteresourcemanager) .
+Un'applicazione deve chiamare la [**funzione AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager) per inizializzare il gestore di risorse. L'applicazione può quindi chiamare una delle diverse funzioni per creare un contesto client. Inoltre, se si eseguono controlli di accesso o controlli in remoto, è necessario usare la funzione [**AuthzInitializeRemoteResourceManager.**](/windows/desktop/api/Authz/nf-authz-authzinitializeremoteresourcemanager)
 
-Per creare un contesto client basato su un contesto client esistente, chiamare la funzione [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext) .
+Per creare un contesto client basato su un contesto client esistente, chiamare la [**funzione AuthzInitializeContextFromAuthzContext.**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext)
 
-La funzione [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) crea un nuovo contesto client usando le informazioni contenute in un token di accesso. La funzione [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid) crea un nuovo contesto client usando il [**SID**](/windows/desktop/api/Winnt/ns-winnt-sid)specificato.
+La [**funzione AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) crea un nuovo contesto client usando le informazioni in un token di accesso. La [**funzione AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid) crea un nuovo contesto client usando il [**SID specificato.**](/windows/desktop/api/Winnt/ns-winnt-sid)
 
-Se possibile, chiamare la funzione [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) anziché [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid). **AuthzInitializeContextFromSid** tenta di recuperare le informazioni disponibili in un token di accesso se il client ha effettivamente effettuato l'accesso. Un token di accesso effettivo fornisce ulteriori informazioni, ad esempio il tipo di accesso e le proprietà di accesso, e riflette il comportamento del pacchetto di autenticazione utilizzato per l'accesso. Il contesto client creato da **AuthzInitializeContextFromToken** utilizza un token di accesso e il contesto client risultante è più completo e accurato rispetto a un contesto client creato da **AuthzInitializeContextFromSid**.
+Se possibile, chiamare la [**funzione AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) anziché [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid). **AuthzInitializeContextFromSid** tenta di recuperare le informazioni disponibili in un token di accesso a cui il client ha effettivamente eseguito l'accesso. Un token di accesso effettivo fornisce ulteriori informazioni, ad esempio il tipo di accesso e le proprietà di accesso, e riflette il comportamento del pacchetto di autenticazione utilizzato per l'accesso. Il contesto client creato da **AuthzInitializeContextFromToken** usa un token di accesso e il contesto client risultante è più completo e accurato rispetto a un contesto client creato da **AuthzInitializeContextFromSid**.
 
 > [!Note]  
-> Le variabili degli attributi di sicurezza devono essere presenti nel contesto client se si fa riferimento a in un'espressione condizionale. in caso contrario, il termine dell'espressione condizionale che vi fa riferimento verrà valutato come sconosciuto. Per altre informazioni sulle espressioni condizionali, vedere il [linguaggio di definizione del descrittore di sicurezza per le voci ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md) .
+> Le variabili degli attributi di sicurezza devono essere presenti nel contesto client se si fa riferimento a in un'espressione condizionale. In caso contrario, il termine espressione condizionale che vi fa riferimento verrà valutato come sconosciuto. Per altre informazioni sulle espressioni condizionali, vedere l'argomento [Linguaggio di definizione del descrittore di](security-descriptor-definition-language-for-conditional-aces-.md) sicurezza per ACE condizionali.
 
  
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene inizializzato il gestore di risorse Authz e viene chiamata la funzione [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) per creare un contesto client dal token di accesso associato al processo corrente.
+L'esempio seguente inizializza il gestore di risorse Authz e chiama la funzione [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) per creare un contesto client dal token di accesso associato al processo corrente.
 
 
 ```C++
@@ -100,10 +100,10 @@ BOOL AuthzInitFromToken(AUTHZ_CLIENT_CONTEXT_HANDLE *phClientContext)
 [Aggiunta di SID a un contesto client](adding-sids-to-a-client-context.md)
 </dt> <dt>
 
-[Memorizzazione nella cache di controlli di accesso](caching-access-checks.md)
+[Caching Controlli di accesso](caching-access-checks.md)
 </dt> <dt>
 
-[Verifica dell'accesso con l'API Authz](checking-access-with-authz-api.md)
+[Controllo dell'accesso con Authz API](checking-access-with-authz-api.md)
 </dt> <dt>
 
 [Funzionamento di AccessCheck](how-dacls-control-access-to-an-object.md)
@@ -112,7 +112,7 @@ BOOL AuthzInitFromToken(AUTHZ_CLIENT_CONTEXT_HANDLE *phClientContext)
 [Esecuzione di query su un contesto client](querying-a-client-context.md)
 </dt> <dt>
 
-[Linguaggio di definizione del descrittore di sicurezza per le voci](security-descriptor-definition-language-for-conditional-aces-.md)
+[Linguaggio di definizione del descrittore di sicurezza per ACE condizionali](security-descriptor-definition-language-for-conditional-aces-.md)
 </dt> <dt>
 
 [**AuthzInitializeRemoteResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeremoteresourcemanager)

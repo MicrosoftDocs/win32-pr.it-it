@@ -1,9 +1,9 @@
 ---
 title: show urlacl
-description: Elenca gli elenchi DACL per l'URL riservato specificato o per tutti gli URL riservati.
+description: Elenca gli ELENCHI DACL per l'URL riservato specificato o tutti gli URL riservati.
 ms.assetid: 8428583c-b420-408f-974f-670b6809fa3c
 keywords:
-- Mostra HTTP urlacl
+- show urlacl HTTP
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f86f7856e70a1be327297bb3fd4b892b3bf39789
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: d4f6e2443f4cdb489f8deb6e8b61d3a808e8a0711ce13c8d71edc57001787617
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "103956025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900621"
 ---
 # <a name="show-urlacl"></a>show urlacl
 
-Elenca gli elenchi DACL per l'URL riservato specificato o per tutti gli URL riservati.
+Elenca gli ELENCHI DACL per l'URL riservato specificato o tutti gli URL riservati.
 
 ``` syntax
 show urlacl [url=]string
@@ -32,7 +32,7 @@ show urlacl [url=]string
 
 <dl> <dt>
 
-<span id="_url__string"></span><span id="_URL__STRING"></span>**\[URL = \] * * * stringa*
+<span id="_url__string"></span><span id="_URL__STRING"></span>**\[ url= \]**_stringa_
 </dt> <dd>
 
 Specifica l'URL completo. Se non specificato, implica tutti gli URL.
@@ -41,13 +41,13 @@ Specifica l'URL completo. Se non specificato, implica tutti gli URL.
 
 ## <a name="examples"></a>Esempio
 
-**Mostra URL urlacl =https://+:80/MyUrl**
+**show urlacl url=https://+:80/MyUrl**
 
-**Mostra URL urlacl =https://www.contoso.com:80/MyUrl**
+**show urlacl url=https://www.contoso.com:80/MyUrl**
 
- 
+ 
 
- 
+ 
 
 
 

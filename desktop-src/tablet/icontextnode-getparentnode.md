@@ -1,7 +1,7 @@
 ---
 description: Recupera il nodo padre di questo IContextNode nell'albero del nodo di contesto.
 ms.assetid: 782fd973-f8f3-4902-b8e0-cc5e70a66d28
-title: 'Metodo IContextNode:: GetParentNode (IACom. h)'
+title: Metodo IContextNode::GetParentNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 50bba716486910802e91cbe6d3f003d172f1cb29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23739bd92da2e8337c949ac7b1fd66e456da1c803cccbe4d0980821a062ec9da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935381"
 ---
-# <a name="icontextnodegetparentnode-method"></a>Metodo IContextNode:: GetParentNode
+# <a name="icontextnodegetparentnode-method"></a>Metodo IContextNode::GetParentNode
 
-Recupera il nodo padre di questo [**IContextNode**](icontextnode.md) nell'albero del nodo di contesto.
+Recupera il nodo padre di questo [**IContextNode**](icontextnode.md) nell'albero dei nodi di contesto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,34 +39,34 @@ HRESULT GetParentNode(
 
 <dl> <dt>
 
-*ppParentContextNode* \[ out\]
+*ppParentContextNode* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al nodo padre di questo oggetto [**IContextNode**](icontextnode.md) .
+Puntatore al nodo padre di questo [**oggetto IContextNode.**](icontextnode.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su \* *ppParentContextNode* quando non è più necessario usare il nodo di contesto padre.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) in \* *ppParentContextNode* quando non è più necessario usare il nodo di contesto padre.
 
  
 
-Se si tratta del nodo radice, il parametro *ppParentContextNode* è impostato su **null**.
+Se si tratta del nodo radice, il *parametro ppParentContextNode* è impostato su **NULL.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo helper che recupera le informazioni su un nodo specificato, il relativo parametro *pContextNode* . Questo metodo helper restituisce informazioni dai metodi seguenti.
+Nell'esempio seguente viene illustrato un metodo helper che recupera informazioni su un nodo specificato, il relativo *parametro pContextNode.* Questo metodo helper restituisce informazioni dai metodi seguenti.
 
--   [**IContextNode:: GetId**](icontextnode-getid.md)
--   [**IContextNode:: GetType**](icontextnode-gettype.md)
--   [**IContextNode:: GetLocation**](icontextnode-getlocation.md)
--   **IContextNode:: GetParentNode**
+-   [**IContextNode::GetId**](icontextnode-getid.md)
+-   [**IContextNode::GetType**](icontextnode-gettype.md)
+-   [**IContextNode::GetLocation**](icontextnode-getlocation.md)
+-   **IContextNode::GetParentNode**
 
 
 ```C++
@@ -146,9 +146,9 @@ HRESULT CMyClass::GetNodeInformation(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -163,7 +163,7 @@ HRESULT CMyClass::GetNodeInformation(
 [**IContextNode::GetSubNodes**](icontextnode-getsubnodes.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

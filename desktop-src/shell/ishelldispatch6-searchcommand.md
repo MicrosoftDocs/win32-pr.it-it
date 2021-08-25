@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: B5861125-2B21-4C47-8425-026381B2F677
-ms.openlocfilehash: 7ca8818960704627376bde8b394eae7deb0317b6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 472b5683ecf7cdfe2bcb432e0cc822ad3fb86ab6ed159ba768e6826c83f2f80a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884351"
 ---
 # <a name="ishelldispatch6searchcommand-method"></a>Metodo IShellDispatch6.SearchCommand
 
@@ -61,8 +61,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                   |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                   |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

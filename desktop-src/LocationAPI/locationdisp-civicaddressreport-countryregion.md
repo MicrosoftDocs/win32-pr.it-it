@@ -1,7 +1,7 @@
 ---
 description: Nome del paese o dell'area geografica.
 ms.assetid: 54c00418-42ef-45f8-bd82-51e287208b12
-title: Proprietà LocationDisp. CivicAddressReport. CountryRegion
+title: Proprietà LocationDisp.CivicAddressReport.CountryRegion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 609cf49a71fb044e97987ab7d96109755f9f71ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69cdf68f1263afd6d5dd4104457faeebaa2defb4fe1259201ba0efc84382a15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896711"
 ---
-# <a name="locationdispcivicaddressreportcountryregion-property"></a>Proprietà LocationDisp. CivicAddressReport. CountryRegion
+# <a name="locationdispcivicaddressreportcountryregion-property"></a>Proprietà LocationDisp.CivicAddressReport.CountryRegion
 
-\[Il modello a oggetti dell'API location è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere al percorso da un sito Web, usare invece l' [API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Nome del paese o dell'area geografica.
 
@@ -38,11 +38,11 @@ strCountryRegion = LocationDisp.CivicAddressReport.CountryRegion
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà è una **stringa** di sola lettura.
+Questa proprietà è una stringa di sola **lettura.**
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questa proprietà, vedere [un semplice esempio di report sull'indirizzo civico](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questa proprietà, vedere [a Simple Civic Address Report Example](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Per un esempio di come usare questa proprietà, vedere [un semplice esempio di r
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

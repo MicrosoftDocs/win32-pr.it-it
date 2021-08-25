@@ -1,22 +1,22 @@
 ---
-description: Il parser Sommario è un componente di Windows che consente di archiviare informazioni avanzate sugli indici nei file con estensione ASF (Advanced Systems Format).
+description: Il parser sommario è un componente Windows che consente di archiviare informazioni di indice avanzate in file ASF (Advanced Systems Format).
 ms.assetid: 123083b0-dc1b-4c5c-8702-e236cffcf2da
-title: Parser Sommario
+title: Parser sommario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d4f931013ba091a740c27c3af541c3bcb7200a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 348d98ed50057727407f0fd339a16f0d20538864289441846c3de7ef5e611614
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953151"
 ---
-# <a name="table-of-contents-parser"></a>Parser Sommario
+# <a name="table-of-contents-parser"></a>Parser sommario
 
-Il parser Sommario è un componente di Windows che consente di archiviare informazioni avanzate sugli indici nei file con estensione ASF (Advanced Systems Format).
+Il parser sommario è un componente Windows che consente di archiviare informazioni di indice avanzate in file ASF (Advanced Systems Format).
 
 > [!Note]  
-> Il parser TOC non è direttamente correlato alle API Microsoft Media Foundation, sebbene possa essere usato insieme a Media Foundation.
+> Il parser del sommario non è direttamente correlato alle API Microsoft Media Foundation, anche se può essere usato in combinazione con Media Foundation.
 
  
 
@@ -24,9 +24,9 @@ Il parser Sommario è un componente di Windows che consente di archiviare inform
 
 | Sezione                                                                        | Descrizione                                                                                                |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Informazioni sul parser Sommario](about-toc-parser.md)                         | Viene fornita una panoramica del parser TOC                                                                     |
-| [Guida per programmatori del parser Sommario](toc-parser-programming-guide.md) | Viene descritto come utilizzare il parser TOC per eseguire attività specifiche.                                             |
-| [Guida di riferimento al parser Sommario](toc-parser-reference.md)                 | Contiene pagine di riferimento per oggetti, interfacce, strutture ed enumerazioni associate al parser di sommario. |
+| [Informazioni sul parser sommario](about-toc-parser.md)                         | Fornisce una panoramica del parser del sommario                                                                     |
+| [Guida per programmatori del parser sommario](toc-parser-programming-guide.md) | Viene descritto come utilizzare il parser del sommario per eseguire attività specifiche.                                             |
+| [Informazioni di riferimento sul parser sommario](toc-parser-reference.md)                 | Contiene pagine di riferimento per oggetti, interfacce, strutture ed enumerazioni associati al parser del sommario. |
 
 
 

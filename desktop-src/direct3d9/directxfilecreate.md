@@ -1,7 +1,7 @@
 ---
 description: Crea un'istanza di un oggetto DirectXFile. Deprecato.
 ms.assetid: c920d480-2557-491d-87ea-7eea1f470498
-title: Funzione DirectXFileCreate (DXFile. h)
+title: Funzione DirectXFileCreate (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - d3dxof.dll
-ms.openlocfilehash: 8ee1787941bbb902e6f0f50b082867aaf2f0a8bc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6dbcf4836c33fd2acfc1adc21e47430a54ba7c54aeb2b220199846d31572619e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952181"
 ---
-# <a name="directxfilecreate-function"></a>DirectXFileCreate (funzione)
+# <a name="directxfilecreate-function"></a>Funzione DirectXFileCreate
 
 Crea un'istanza di un oggetto DirectXFile. Deprecato.
 
@@ -44,7 +44,7 @@ HRESULT STDAPICALLTYPE DirectXFileCreate(
 
 Tipo: **[ **LPDIRECTXFILE**](idirectxfile.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**IDirectXFile**](idirectxfile.md) , che rappresenta l'oggetto DirectXFile creato.
+Indirizzo di un puntatore a [**un'interfaccia IDirectXFile,**](idirectxfile.md) che rappresenta l'oggetto DirectXFile creato.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Dopo aver usato questa funzione, usare [**RegisterTemplates**](idirectxfile--registertemplates.md) per registrare i modelli, [**CreateEnumObject**](idirectxfile--createenumobject.md) per creare un oggetto enumeratore o [**CreateSaveObject**](idirectxfile--createsaveobject.md) per creare un oggetto Save.
+Dopo aver utilizzato questa funzione, usare [**RegisterTemplates**](idirectxfile--registertemplates.md) per registrare i modelli, [**CreateEnumObject**](idirectxfile--createenumobject.md) per creare un oggetto enumeratore o [**CreateSaveObject**](idirectxfile--createsaveobject.md) per creare un oggetto save.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Dopo aver usato questa funzione, usare [**RegisterTemplates**](idirectxfile--reg
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3dxof.dll</dt> </dl> |
 
 

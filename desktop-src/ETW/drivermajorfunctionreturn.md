@@ -1,5 +1,5 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di restituzione della chiamata di funzione principale del driver. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi restituiti delle chiamate di funzione principali del driver. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: b3358935-d6fb-49eb-bdf7-4366b4fd14c5
 title: Classe DriverMajorFunctionReturn
 ms.topic: reference
@@ -14,16 +14,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 21340224253d1eb3f3ddc733bf2d43e847844282
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de8c18d7655aec0f9ae4748c384b26015a5a1083721aae367e132ea7c39f80a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914471"
 ---
 # <a name="drivermajorfunctionreturn-class"></a>Classe DriverMajorFunctionReturn
 
-Questa classe è la classe del tipo di evento per gli eventi di restituzione della chiamata di funzione principale del driver.
+Questa classe è la classe del tipo di evento per gli eventi restituiti delle chiamate di funzione principali del driver.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -40,45 +40,45 @@ class DriverMajorFunctionReturn : DiskIo
 
 ## <a name="members"></a>Members
 
-La classe **DriverMajorFunctionReturn** dispone di questi tipi di membri:
+La **classe DriverMajorFunctionReturn** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **DriverMajorFunctionReturn** dispone di queste proprietà.
+La **classe DriverMajorFunctionReturn** ha queste proprietà.
 
 <dl> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Pacchetto di richiesta IO.
+Pacchetto di richiesta I/O.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
-Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per la correlazione con gli altri eventi del driver, ad esempio l'evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificatore che identifica in modo univoco la richiesta. Usare questo identificatore per correlare con gli altri eventi del driver, ad esempio [**l'evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ Identificatore che identifica in modo univoco la richiesta. Usare questo identif
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

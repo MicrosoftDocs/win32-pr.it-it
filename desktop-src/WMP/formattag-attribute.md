@@ -1,6 +1,6 @@
 ---
 title: Attributo FormatTag
-description: L'attributo FormatTag è il tag format del codec audio.
+description: L'attributo FormatTag è il tag di formato del codec audio.
 ms.assetid: 67c453ee-eb58-4273-9b4b-fd48dc02e4ab
 keywords:
 - Attributo FormatTag Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b958baf6e0f2d9baa40059ce1719e14dfb0a48d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 18fdeb1f32d8aa337293c728f90cdf5a93ef2457be9e45bc80f017c5cc2d6db1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862701"
 ---
 # <a name="formattag-attribute"></a>Attributo FormatTag
 
-L'attributo **FormatTag** è il tag format del codec audio.
+**L'attributo FormatTag** è il tag di formato del codec audio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -30,7 +30,7 @@ L'attributo **FormatTag** è il tag format del codec audio.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore è una rappresentazione di stringa del valore del tag di formato decimale. Ad esempio, per Windows Media Audio 9 codec, l'attributo **FormatTag** conterrà la stringa "354".
+Il valore è una rappresentazione di stringa del valore del tag di formato decimale. Ad esempio, per Windows codec Media Audio 9, **l'attributo FormatTag** conterrà la stringa "354".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Il valore è una rappresentazione di stringa del valore del tag di formato decim
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

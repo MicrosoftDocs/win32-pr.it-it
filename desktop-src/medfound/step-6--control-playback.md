@@ -1,19 +1,19 @@
 ---
-description: Questo argomento è il passaggio 6 dell'esercitazione come riprodurre file multimediali con Media Foundation.
+description: Questo argomento è il passaggio 6 dell'esercitazione Come riprodurre file multimediali con Media Foundation.
 ms.assetid: e2e3e95b-41b2-45fb-b495-0e700220e5f5
-title: 'Passaggio 6: controllare la riproduzione'
+title: 'Passaggio 6: Controllare la riproduzione'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfdfecea3484ac6b06cc44e23fd3bd1b3235324e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eef0aa18f671c994837ba195cddba38976c3ffba990eb95748d2bede09141317
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887261"
 ---
-# <a name="step-6-control-playback"></a>Passaggio 6: controllare la riproduzione
+# <a name="step-6-control-playback"></a>Passaggio 6: Controllare la riproduzione
 
-Questo argomento è il passaggio 6 dell'esercitazione [come riprodurre file multimediali con Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'esempio relativo alla [riproduzione della sessione multimediale](media-session-playback-example.md).
+Questo argomento è il passaggio 6 dell'esercitazione [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md). Il codice completo è illustrato nell'argomento [Esempio di riproduzione di sessioni multimediali](media-session-playback-example.md).
 
 In questo argomento sono incluse le sezioni seguenti:
 
@@ -26,7 +26,7 @@ In questo argomento sono incluse le sezioni seguenti:
 
 ## <a name="starting-playback"></a>Avvio della riproduzione
 
-Per avviare la riproduzione, chiamare [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Nel codice seguente viene illustrato come avviare dalla posizione di riproduzione corrente.
+Per avviare la riproduzione, chiamare [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Il codice seguente illustra come iniziare dalla posizione di riproduzione corrente.
 
 
 ```C++
@@ -69,7 +69,7 @@ HRESULT CPlayer::Play()
 
 
 
-Il metodo [**Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) può inoltre specificare una posizione iniziale relativa all'inizio del file. Per ulteriori informazioni, vedere l'argomento di riferimento per le API.
+Il [**metodo Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) può anche specificare una posizione iniziale relativa all'inizio del file. Per altre informazioni, vedere l'argomento di riferimento sulle API.
 
 ## <a name="pausing-playback"></a>Sospensione della riproduzione
 
@@ -103,7 +103,7 @@ HRESULT CPlayer::Pause()
 
 ## <a name="stopping-playback"></a>Arresto della riproduzione
 
-Per arrestare la riproduzione, chiamare [**IMFMediaSession:: Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-stop). Mentre la riproduzione viene arrestata, l'immagine video viene deselezionata e la finestra video viene disegnata con il colore di sfondo (nero per impostazione predefinita).
+Per arrestare la riproduzione, chiamare [**IMFMediaSession::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-stop). Mentre la riproduzione viene arrestata, l'immagine video viene cancellata e la finestra video viene disegnata con il colore di sfondo (nero per impostazione predefinita).
 
 
 ```C++
@@ -132,7 +132,7 @@ HRESULT CPlayer::Stop()
 
 ## <a name="repainting-the-video-window"></a>Ridisegno della finestra video
 
-Il [renderer video avanzato](enhanced-video-renderer.md) (EVR) consente di disegnare il video nella finestra specificata dall'applicazione. Questo problema si verifica in un thread separato e, nella maggior parte dei casi, l'applicazione non deve gestire questo processo. Se la riproduzione viene sospesa o arrestata, tuttavia, il EVR deve ricevere una notifica ogni volta che la finestra video riceve un messaggio di [**\_ disegno WM**](../gdi/wm-paint.md) . Ciò consente all'EVR di ridisegnare la finestra. Per inviare una notifica a EVR, chiamare il metodo [**IMFVideoDisplayControl:: RepaintVideo**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-repaintvideo) :
+EVR [(Enhanced Video Renderer)](enhanced-video-renderer.md) disegna il video nella finestra specificata dall'applicazione. Ciò si verifica in un thread separato e, per la maggior parte, l'applicazione non deve gestire questo processo. Se la riproduzione viene sospesa o arrestata, tuttavia, l'EVR deve ricevere una notifica ogni volta che la finestra video riceve un [**messaggio WM \_ PAINT.**](../gdi/wm-paint.md) In questo modo l'EVR può ridisegnare la finestra. Per inviare una notifica all'EVR, chiamare il [**metodo IMFVideoDisplayControl::RepaintVideo:**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-repaintvideo)
 
 
 ```C++
@@ -153,7 +153,7 @@ HRESULT CPlayer::Repaint()
 
 
 
-Il codice seguente illustra il gestore per il messaggio di [**\_ disegno WM**](../gdi/wm-paint.md) . Questa funzione deve essere chiamata dal ciclo di messaggi dell'applicazione.
+Il codice seguente illustra il gestore per il [**messaggio WM \_ PAINT.**](../gdi/wm-paint.md) Questa funzione deve essere chiamata dal ciclo di messaggi dell'applicazione.
 
 
 ```C++
@@ -181,7 +181,7 @@ void OnPaint(HWND hwnd)
 
 
 
-Il `HasVideo` metodo restituisce **true** se l' `CPlayer` oggetto dispone di un puntatore [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) valido. Vedere [passaggio 1: dichiarare la classe CPlayer](step-1--declare-the-cplayer-class.md).
+Il `HasVideo` metodo restituisce TRUE **se** `CPlayer` l'oggetto ha un [**puntatore IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) valido. Vedere [Passaggio 1: Dichiarare la classe CPlayer](step-1--declare-the-cplayer-class.md).
 
 
 ```C++
@@ -192,7 +192,7 @@ Il `HasVideo` metodo restituisce **true** se l' `CPlayer` oggetto dispone di un 
 
 ## <a name="resizing-the-video-window"></a>Ridimensionamento della finestra video
 
-Se si ridimensiona la finestra video, aggiornare il rettangolo di destinazione in EVR chiamando il metodo [**IMFVideoDisplayControl:: SetVideoPosition**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition) :
+Se si ridimensiona la finestra video, aggiornare il rettangolo di destinazione nell'EVR chiamando il [**metodo IMFVideoDisplayControl::SetVideoPosition:**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition)
 
 
 ```C++
@@ -220,7 +220,7 @@ HRESULT CPlayer::ResizeVideo(WORD width, WORD height)
 
 
 
-[Passaggio 7: arrestare la sessione multimediale](step-7--shut-down-the-media-session.md)
+Passaggio [7: Arrestare la sessione multimediale](step-7--shut-down-the-media-session.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

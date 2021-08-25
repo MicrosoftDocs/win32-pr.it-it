@@ -1,25 +1,25 @@
 ---
-description: I componenti ben creati non turbano l'ambiente dell'applicazione host, né i contesti di attivazione.
+description: I componenti ben creati non perturbano l'ambiente dell'applicazione host, né perdono i contesti di attivazione.
 ms.assetid: cc3e21fd-5fd3-40b6-9218-cb5f47be3567
 title: Isolamento dei componenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e201375f50324209380a4ecef5fa762ae70e56d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 411d5e90114b7509dff2e5e48a4770841774df52fce804895155d2bd4d43e514
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885191"
 ---
 # <a name="isolating-components"></a>Isolamento dei componenti
 
-I componenti ben creati non turbano l'ambiente dell'applicazione host, né i contesti di attivazione. I componenti creati correttamente eseguono la gestione del contesto anziché basarsi sull'ambiente dell'applicazione host.
+I componenti ben creati non perturbano l'ambiente dell'applicazione host, né perdono i contesti di attivazione. I componenti ben creati eseguono la gestione del contesto anziché basarsi sull'ambiente dell'applicazione host.
 
-L'autore del componente ospitato si trova nella posizione migliore per capire esattamente quali altri assembly richiede il componente. Basarsi sull'applicazione host per fornire l'ambiente corretto per il componente ospitato è una probabile fonte di errori. In alternativa, creare un manifesto per il componente ospitato che specifichi tutte le relative dipendenze e quindi eseguire la compilazione utilizzando il supporto di isolamento \_ \_ abilitato. Ciò garantisce che le chiamate all'esterno effettuate dal componente siano isolate e usino le versioni corrette. Poiché il contesto di attivazione utilizzato da compatibile con l'isolamento \_ \_ è per ogni dll, è possibile utilizzarlo in più dll, ognuna con il proprio manifesto che chiama le dipendenze.
+L'autore del componente ospitato è nella posizione migliore per sapere esattamente quali altri assembly sono necessari al componente. L'uso dell'applicazione host per fornire l'ambiente corretto per il componente ospitato è una probabile origine di errori. Creare invece un manifesto per il componente ospitato che specifichi tutte le relative dipendenze e quindi eseguire la compilazione usando ISOLATION \_ AWARE \_ ENABLED. Ciò garantisce che le chiamate esterne effettuate dal componente siano isolate e usino le versioni corrette. Poiché il contesto di attivazione utilizzato da ISOLATION AWARE ENABLED è per DLL, è possibile usarlo in più DLL, ognuna con il proprio manifesto che chiama \_ \_ le dipendenze.
 
-Se non è possibile eseguire la compilazione con \_ \_ l'abilitazione dell'isolamento, usare una soluzione simile a quella illustrata nell' [uso di callback da componenti ospitati](using-callbacks-from-hosted-components.md).
+Se non è possibile eseguire la compilazione con ISOLATION AWARE ENABLED, usare una soluzione simile a quella presentata \_ \_ in Using [Callbacks From Hosted Components](using-callbacks-from-hosted-components.md).
 
-È necessario attivare il proprio contesto di attivazione in tutti i punti di ingresso che l'applicazione host può chiamare per assicurarsi che il componente ospitato venga eseguito interamente con il contesto di attivazione corretto. È possibile usare un oggetto Helper C++ per facilitare la modifica di tutti i entryPoints. Ad esempio, è possibile usare una classe C++ come la seguente:
+È necessario attivare il proprio contesto di attivazione in tutti i punti di ingresso che l'applicazione host può chiamare per assicurarsi che il componente ospitato venga eseguito interamente con il contesto di attivazione corretto. È possibile usare un oggetto helper C++ per facilitare la modifica di tutti i punti di ingresso. Ad esempio, è possibile usare una classe C++ come la seguente:
 
 
 ```C++
@@ -90,7 +90,7 @@ public:
 
 
 
-Questa operazione può quindi essere usata nel componente, usando una variabile globale per archiviare il contesto di attivazione che deve essere attivato in ogni punto di ingresso. In questo modo, è possibile isolare il componente dall'applicazione host.
+Può quindi essere usato nel componente, usando una variabile globale per archiviare il contesto di attivazione che deve essere attivato in ogni punto di ingresso. In questo modo, è possibile isolare il componente dall'applicazione host.
 
 
 ```C++

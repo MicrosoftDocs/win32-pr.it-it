@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM DeviceServiceImplementation rappresenta un'associazione tra un servizio e il modo in cui viene implementata.
+description: La classe \_ CIM DeviceServiceImplementation rappresenta un'associazione tra un servizio e la modalità di implementazione.
 ms.assetid: 5e2e3975-8338-4bf4-8c73-5be4b93fa2c8
 ms.tgt_platform: multiple
-title: Classe CIM_DeviceServiceImplementation
+title: CIM_DeviceServiceImplementation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ae96d94c95ddda684dbb4d17a2d8eb52fc6ffd4b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 14ab52a8075a9982d9e14f87b130b7b85a7b18badb9adab58e609acd0ee9662b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924511"
 ---
-# <a name="cim_deviceserviceimplementation-class"></a>CIM \_ DeviceServiceImplementation (classe)
+# <a name="cim_deviceserviceimplementation-class"></a>Classe \_ CiM DeviceServiceImplementation
 
-La classe **CIM \_ DeviceServiceImplementation** rappresenta un'associazione tra un servizio e il modo in cui viene implementata. Quando più dispositivi sono associati a un servizio, gli elementi operano insieme per fornire il servizio. Se esistono implementazioni diverse di un servizio, ogni implementazione produce singole creazioni di istanze dell'oggetto servizio.
+La **classe \_ CIM DeviceServiceImplementation** rappresenta un'associazione tra un servizio e la modalità di implementazione. Quando più dispositivi sono associati a un servizio, gli elementi operano in combinazione per fornire il servizio. Se esistono implementazioni diverse di un servizio, ogni implementazione comporta la creazione di singole istanze dell'oggetto servizio.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_DeviceServiceImplementation : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DeviceServiceImplementation** presenta questi tipi di membri:
+La **classe \_ CIM DeviceServiceImplementation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DeviceServiceImplementation** dispone di queste proprietà.
+La **classe CIM \_ DeviceServiceImplementation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,26 +66,26 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ LogicalDevice CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
+[**LogicalDevice \_ CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ servizio CIM**
+Tipo di dati: **servizio \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-[**\_ Servizio CIM**](cim-service.md) che descrive il servizio implementato utilizzando il dispositivo logico.
+Un [**servizio CIM \_ che**](cim-service.md) descrive il servizio implementato usando il dispositivo logico.
 
 </dd> </dl>
 
@@ -93,9 +93,9 @@ Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dip
 
 WMI non implementa questa classe.
 
-La classe **CIM \_ DeviceServiceImplementation** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe \_ CIM DeviceServiceImplementation** è derivata dalla [**dipendenza CIM \_**](cim-dependency.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

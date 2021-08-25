@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_CANUNDO (winuser. h)
-description: Determina se sono presenti azioni nella coda di annullamento di un controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_CANUNDO messaggio (Winuser.h)
+description: Determina se sono presenti azioni nella coda di annullamento di un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: ae7ff372-b1f8-4ab7-9a7e-450aed3e0bc5
 keywords:
-- Controlli di Windows Message EM_CANUNDO
+- EM_CANUNDO dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 345367b25790051a444363bb9bbc02af3d6fb0fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b1cb56b07232c6b55a85b7387cf7b2fafd40ac29e5dc0520b45e1aa50cadcb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915991"
 ---
-# <a name="em_canundo-message"></a>\_Messaggio CANUNDO em
+# <a name="em_canundo-message"></a>Messaggio \_ EM CANUNDO
 
-Determina se sono presenti azioni nella coda di annullamento di un controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Determina se sono presenti azioni nella coda di annullamento di un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Determina se sono presenti azioni nella coda di annullamento di un controllo di 
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Se la coda di annullamento è vuota, il valore restituito è zero.
 
 ## <a name="remarks"></a>Commenti
 
-Se la coda di annullamento non è vuota, è possibile inviare il messaggio di [**\_ annullamento em**](em-undo.md) al controllo per annullare l'operazione più recente.
+Se la coda di annullamento non è vuota, è possibile inviare il messaggio [**EM \_ UNDO**](em-undo.md) al controllo per annullare l'operazione più recente.
 
-**Modificare i controlli e rich edit 1,0:** La coda di annullamento contiene solo l'operazione più recente.
+**Controlli di modifica e Rich Edit 1.0:** La coda di annullamento contiene solo l'operazione più recente.
 
-**Rich Edit 2,0 e versioni successive:** La coda di annullamento può contenere più operazioni.
+**Rich Edit 2.0 e versioni successive:** La coda di annullamento può contenere più operazioni.
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le diverse versioni del sistema, vedere [Informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Se la coda di annullamento non è vuota, è possibile inviare il messaggio di [*
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Se la coda di annullamento non è vuota, è possibile inviare il messaggio di [*
 
 <dl> <dt>
 
-[**\_Annulla**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> </dl>
 
  

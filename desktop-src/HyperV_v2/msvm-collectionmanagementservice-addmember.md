@@ -1,5 +1,5 @@
 ---
-description: Aggiunge l'elemento gestito specificato come membro dell'oggetto CollectionOfMSEs CIM specificato \_ .
+description: Aggiunge l'elemento gestito specificato come membro dell'oggetto \_ CIM CollectionOfMSEs specificato.
 ms.assetid: 6f23eecc-b445-4495-ae96-76b89652a1cb
 title: Metodo AddMember della classe Msvm_CollectionManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b885701086262fda48c5d50abd750eca6866c72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f97781c07c3d7d6f351c671a86c83d71153375b59b4e5bdab5d6607518cd8e34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870391"
 ---
-# <a name="addmember-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo AddMember della classe MSVM \_ CollectionManagementService
+# <a name="addmember-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo AddMember della classe Msvm \_ CollectionManagementService
 
-Aggiunge l'elemento gestito specificato come membro dell'oggetto [**\_ CollectionOfMSEs CIM**](cim-collectionofmses.md) specificato.
+Aggiunge l'elemento gestito specificato come membro dell'oggetto [**\_ CIM CollectionOfMSEs**](cim-collectionofmses.md) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,37 +41,37 @@ uint32 AddMember(
 
 <dl> <dt>
 
-*Membro* \[ di in\]
+*Membro* \[ Pollici\]
 </dt> <dd>
 
-Membro da aggiungere alla raccolta.
+Membro da aggiungere all'insieme.
 
 </dd> <dt>
 
-*Raccolta* \[ di in\]
+*Raccolta* \[ Pollici\]
 </dt> <dd>
 
 Raccolta a cui aggiungere il membro.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento al processo (può essere null se l'attività è stata completata).
+Riferimento al processo (può essere Null se l'attività viene completata).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 se ha esito positivo oppure 4096 se il processo è stato avviato. in caso contrario, restituisce un errore.
+Restituisce 0 in caso di esito positivo oppure 4096 se il processo è stato avviato. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -83,25 +83,25 @@ Restituisce 0 se ha esito positivo oppure 4096 se il processo è stato avviato. 
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Il sistema è in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -116,10 +116,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -128,7 +128,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_CollectionManagementService MSVM**](msvm-collectionmanagementservice.md)
+[**Msvm \_ CollectionManagementService**](msvm-collectionmanagementservice.md)
 </dt> </dl>
 
  

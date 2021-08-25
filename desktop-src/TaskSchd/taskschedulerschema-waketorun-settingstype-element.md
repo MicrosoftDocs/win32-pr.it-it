@@ -1,9 +1,9 @@
 ---
 title: Elemento WakeToRun (settingsType)
-description: Specifica che Utilità di pianificazione riattiverà il computer al momento dell'esecuzione dell'attività.
+description: Specifica che Utilità di pianificazione riattivazione del computer quando è il momento di eseguire l'attività.
 ms.assetid: 5fb53016-5778-463d-bb32-3c1da2de6fc2
 keywords:
-- Utilità di pianificazione elemento WakeToRun
+- Elemento WakeToRun Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 23eeaa06073fa9259c1a48137cf3676baa402d39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 12d16f9f06685a427a8f3e7c4f2356dff0bc6415e50379ba752a4bc3a3fec8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872061"
 ---
 # <a name="waketorun-settingstype-element"></a>Elemento WakeToRun (settingsType)
 
-Specifica che Utilità di pianificazione riattiverà il computer al momento dell'esecuzione dell'attività.
+Specifica che Utilità di pianificazione riattivazione del computer quando è il momento di eseguire l'attività.
 
 ``` syntax
 <xs:element name="WakeToRun"
@@ -30,7 +30,7 @@ Specifica che Utilità di pianificazione riattiverà il computer al momento dell
  />
 ```
 
-L'elemento **WakeToRun** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento WakeToRun** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,11 +44,11 @@ L'elemento **WakeToRun** è definito dal tipo complesso [**settingsType**](tasks
 
 ## <a name="remarks"></a>Commenti
 
-Quando il servizio Utilità di pianificazione riattiva il computer per eseguire un'attività, è possibile che lo schermo rimanga disattivato anche se il computer non è più in modalità di sospensione o di ibernazione. La schermata viene accesa quando Windows Vista rileva che un utente ha restituito l'utilizzo del computer.
+Quando il Utilità di pianificazione riattiva il computer per eseguire un'attività, è possibile che lo schermo rimanga spento anche se il computer non è più in modalità sospensione o ibernazione. La schermata si accende quando Windows Vista rileva che un utente è tornato a usare il computer.
 
-Per lo sviluppo in C++, vedere [**la proprietà WakeToRun di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
+Per lo sviluppo C++, vedere [**Proprietà WakeToRun di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
 
-Per lo sviluppo di script, vedere [**TaskSettings. WakeToRun**](tasksettings-waketorun.md).
+Per lo sviluppo di script, vedere [**TaskSettings.WakeToRun**](tasksettings-waketorun.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Per lo sviluppo di script, vedere [**TaskSettings. WakeToRun**](tasksettings-wak
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ Per lo sviluppo di script, vedere [**TaskSettings. WakeToRun**](tasksettings-wak
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

@@ -1,6 +1,6 @@
 ---
 title: Struttura XMUINT4
-description: Descrive un vettore intero senza segno 4D.
+description: Descrive un vettore integer senza segno 4D.
 ms.assetid: 289293e5-882e-479c-886e-82c802f824b5
 keywords:
 - Struttura XMUINT4 HLSL
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e424b4e5fd1c97f5aec01571d887b54dbb143b7
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 932168d2d251d5506727503053cb56cab2e50e57209276649beb35932478ab26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981471"
 ---
 # <a name="xmuint4-structure"></a>Struttura XMUINT4
 
@@ -78,7 +78,7 @@ w-component del vettore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione di DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione nel pacchetto NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) non la definisce più e si basa invece su [DirectX::XMUINT4](/windows/win32/api/directxmath/ns-directxmath-xmuint4) in DirectXMath.
+Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione di DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione nel pacchetto di NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) non la definisce più e si basa invece su [DirectX::XMUINT4](/windows/win32/api/directxmath/ns-directxmath-xmuint4) in DirectXMath.
 
 
 

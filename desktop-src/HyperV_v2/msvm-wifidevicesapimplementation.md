@@ -1,5 +1,5 @@
 ---
-description: 'Msvm_WiFiDeviceSAPImplementation classe : associazione tra un punto di accesso del servizio (SAP) e la modalità di implementazione.'
+description: 'Msvm_WiFiDeviceSAPImplementation classe: associazione tra un punto di accesso al servizio (SAP) e la modalità di implementazione.'
 ms.assetid: d1d99299-f2d9-4025-a48d-cf8180f2f7af
 title: Msvm_WiFiDeviceSAPImplementation classe
 ms.topic: reference
@@ -24,7 +24,7 @@ ms.locfileid: "119980421"
 ---
 # <a name="msvm_wifidevicesapimplementation-class"></a>Classe Msvm \_ WiFiDeviceSAPImplementation
 
-Associazione tra un punto di accesso del servizio (SAP) e la modalità di implementazione. La cardinalità di questa associazione è molti-a-molti. Un sap può essere fornito da più di un dispositivo logico, operando in combinazione. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino in combinazione per fornire il punto di accesso. Se esistono implementazioni diverse di sap, ognuna di queste implementazioni comporterebbe la creazione di singole istanze dell'oggetto SAP. Queste singole istanze hanno quindi associazioni alle implementazioni univoche.
+Associazione tra un punto di accesso al servizio (SAP) e la modalità di implementazione. La cardinalità di questa associazione è molti-a-molti. Un sap può essere fornito da più di un dispositivo logico, operando in combinazione. Qualsiasi dispositivo può fornire più di un SAP. Quando molti dispositivi logici sono associati a un singolo SAP, si presuppone che questi elementi funzionino insieme per fornire il punto di accesso. Se esistono implementazioni diverse di un sap, ognuna di queste implementazioni comporterebbe la creazione di singole istanze dell'oggetto SAP. Queste singole istanze avrebbero quindi associazioni alle implementazioni univoche.
 
 La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
@@ -41,7 +41,7 @@ class Msvm_WiFiDeviceSAPImplementation : CIM_DeviceSAPImplementation
 
 ## <a name="members"></a>Members
 
-La **classe Msvm \_ WiFiDeviceSAPImplementation** include questi tipi di membri:
+La **classe Msvm \_ WiFiDeviceSAPImplementation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -79,7 +79,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappresenta il punto di accesso del servizio implementato usando il dispositivo logico.
+Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappresenta il punto di accesso del servizio implementato tramite il dispositivo logico.
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappre
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

@@ -1,11 +1,11 @@
 ---
-title: Informazioni di riferimento sui metafile di Windows Media
-description: Informazioni di riferimento sui metafile di Windows Media
+title: Windows Informazioni di riferimento sui metafile multimediali
+description: Windows Informazioni di riferimento sui metafile multimediali
 ms.assetid: 03dadba3-0143-46f0-990a-108196eb58ab
 keywords:
-- Metafile di Windows Media, informazioni di riferimento
-- Metafile, riferimento
-- informazioni di riferimento sui metafile di Windows Media
+- Windows metafile multimediali, informazioni di riferimento
+- metafile, informazioni di riferimento
+- informazioni di riferimento Windows metafile multimediali
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,50 +13,50 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 31d2c8d20d64e9a363fb37594519253206d30483
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b00cd604ec94c42ef90f08a8875edb4fda92ba8267c7e4a7d7b5505c2fb57932
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862261"
 ---
-# <a name="windows-media-metafile-reference"></a>Informazioni di riferimento sui metafile di Windows Media
+# <a name="windows-media-metafile-reference"></a>Windows Informazioni di riferimento sui metafile multimediali
 
-Questa documentazione di riferimento illustra gli elementi e le estensioni di file per i file di Windows Media. Il riferimento è suddiviso nelle sezioni seguenti.
+Questo riferimento documenta gli elementi e le estensioni di file Windows metafile multimediali. Il riferimento è suddiviso nelle sezioni seguenti.
 
 
 
 | Sezione                                                                                    | Descrizione                                                                                                                      |
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [Riferimento agli elementi metafile di Windows Media](windows-media-metafile-elements-reference.md) | Documenta gli elementi metafile, incluse le definizioni, gli attributi e i relativi valori, nonché le condizioni speciali correlate a ogni elemento. |
-| [Estensioni di file](file-name-extensions.md)                                           | Documenta le estensioni dei nomi di file di metafile con regole e linee guida per l'utilizzo.                                                  |
+| [Windows Informazioni di riferimento per gli elementi metafile multimediali](windows-media-metafile-elements-reference.md) | Documenta gli elementi metafile, incluse le definizioni, gli attributi e i relativi valori, e le condizioni speciali correlate a ogni elemento. |
+| [Estensioni di file](file-name-extensions.md)                                           | Documenta le estensioni di file metafile con regole e linee guida sul loro uso.                                                  |
 
 
 
- 
+ 
 
-I metafile di Windows Media sono file di testo che forniscono informazioni su un flusso di file e la relativa presentazione. I metafile sono basati sulla sintassi Extensible Markup Language (XML) e sono costituiti da vari elementi di tipo XML con i relativi tag e attributi. Ogni elemento definisce un'impostazione o un'azione per i flussi multimediali.
+Windows I metafile multimediali sono file di testo che forniscono informazioni su un flusso di file e la relativa presentazione. I metafile sono basati sulla sintassi Extensible Markup Language (XML) e sono formati da vari elementi di tipo XML con tag e attributi. Ogni elemento definisce un'impostazione o un'azione per il flusso multimediale.
 
-Sono disponibili due set di tag di elemento per i metafile. I metafile lato client hanno un set di elementi e i metafile del lato server hanno un altro set di elementi.
+Per i metafile sono disponibili due set di tag di elemento. I metafile lato client hanno un set di elementi e i metafile sul lato server hanno un altro set di elementi.
 
-Se un tag di elemento non ha elementi figlio (quelli che modificano o sono contenuti all'interno di un altro elemento), è possibile usare una singola barra (/) alla fine del tag di apertura al posto di un tag di chiusura. Se gli elementi figlio non vengono visualizzati tra il tag di apertura e di chiusura per un elemento, non sono elementi figlio per quell'elemento e vengono ignorati o generano un errore nella sintassi del metafile.
+Se un tag di elemento non ha elementi figlio (quelli che modificano o sono contenuti in un altro elemento), è possibile usare un singolo carattere barra (/) alla fine del tag di apertura al posto di un tag di chiusura. Se gli elementi figlio non vengono visualizzati tra il tag di apertura e quello di chiusura di un elemento, non sono elementi figlio per tale elemento e vengono ignorati o causano un errore nella sintassi del metafile.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Informazioni sui metafile di Windows Media**](about-windows-media-metafiles.md)
+[**Informazioni Windows metafile multimediali**](about-windows-media-metafiles.md)
 </dt> <dt>
 
-[**Guida ai metafile di Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guida ai metafile multimediali**](windows-media-metafile-guide.md)
 </dt> <dt>
 
-[**Metafile di Windows Media**](windows-media-metafiles.md)
+[**Windows Metafile multimediali**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Utilizzato per indicare che il buffer di origine è in corso di aggiornamento.
 ms.assetid: 3c41f50f-7f0b-4676-9522-3866aedab047
-title: 'Metodo IMFSourceBufferNotify:: OnUpdate'
+title: Metodo IMFSourceBufferNotify::OnUpdate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 0e9149e6c0dca6166df3cad179681a90e57aaa44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06b46c0467468153400225415df1c26b675b81d6f2eac0e9c2cee8b1ef7107ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957810"
 ---
-# <a name="imfsourcebuffernotifyonupdate-method"></a>Metodo IMFSourceBufferNotify:: OnUpdate
+# <a name="imfsourcebuffernotifyonupdate-method"></a>Metodo IMFSourceBufferNotify::OnUpdate
 
 Utilizzato per indicare che il buffer di origine è in corso di aggiornamento.
 
@@ -47,9 +47,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

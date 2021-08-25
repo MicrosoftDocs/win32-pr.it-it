@@ -1,11 +1,11 @@
 ---
-title: Metodo Encrypt IWMSecureBuffer (wmdrmsdk. h)
-description: Il metodo Encrypt crittografa un puntatore di dati.
+title: Metodo IWMSecureBuffer Encrypt (Wmdrmsdk.h)
+description: Il metodo Encrypt crittografa un puntatore ai dati.
 ms.assetid: da391dcb-3ef8-4c09-bca6-507f67a24ee6
 keywords:
-- Metodo Encrypt formato Windows Media
-- Metodo Encrypt formato Windows Media, interfaccia IWMSecureBuffer
-- Interfaccia IWMSecureBuffer-formato Windows Media, metodo Encrypt
+- Crittografare il metodo windows Media Format
+- Metodo Encrypt windows Media Format , interfaccia IWMSecureBuffer
+- Interfaccia IWMSecureBuffer windows Media Format , metodo Encrypt
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7758903de5f4a68cddffee982ad457d03ae6094
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8e5badce8249e5d6b9d2460fec0e72ef4ca4b81f5b8ffa0d3edd83729f98bd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808311"
 ---
-# <a name="iwmsecurebufferencrypt-method"></a>Metodo IWMSecureBuffer:: Encrypt
+# <a name="iwmsecurebufferencrypt-method"></a>Metodo IWMSecureBuffer::Encrypt
 
-Il metodo **Encrypt** crittografa un puntatore di dati.
+Il **metodo Encrypt** crittografa un puntatore ai dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ HRESULT Encrypt(
 
 <dl> <dt>
 
-*pSecureChannel* \[ in\]
+*pSecureChannel* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia di canale sicura che contiene il puntatore ai dati da crittografare.
+Puntatore a un'interfaccia del canale sicuro contenente il puntatore ai dati da crittografare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo per crittografare i puntatori dati in modo che possano essere inviati attraverso i limiti DLL.
+Usare questo metodo per crittografare i puntatori ai dati in modo che possano essere inviati attraverso i limiti della DLL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Utilizzare questo metodo per crittografare i puntatori dati in modo che possano 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Utilizzare questo metodo per crittografare i puntatori dati in modo che possano 
 
 <dl> <dt>
 
-[**Decrypt**](iwmsecurebuffer-decrypt.md)
+[**Decrittografare**](iwmsecurebuffer-decrypt.md)
 </dt> <dt>
 
 [**Interfaccia IWMSecureBuffer**](iwmsecurebuffer.md)

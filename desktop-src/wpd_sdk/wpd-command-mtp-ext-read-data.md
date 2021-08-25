@@ -1,23 +1,23 @@
 ---
-description: Il comando WPD \_ comando \_ MTP \_ ext \_ Read \_ Data recupera i dati dal dispositivo dopo l'esecuzione del comando WPD \_ comando \_ MTP \_ ext \_ Execute \_ \_ con \_ i dati \_ da \_ leggere.
+description: Il comando WPD COMMAND MTP EXT READ DATA recupera i dati dal dispositivo dopo l'esecuzione del comando \_ \_ \_ \_ \_ WPD \_ COMMAND \_ MTP \_ EXT \_ EXECUTE WITH DATA \_ TO \_ \_ \_ \_ READ.
 ms.assetid: d7acb2cc-28b0-4314-99fd-4e7eded22122
-title: Comando WPD_COMMAND_MTP_EXT_READ_DATA (WpdMtpExtensions. h)
+title: WPD_COMMAND_MTP_EXT_READ_DATA comando (WpdMtpExtensions.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4671101ee9be6e355a4e64d2a467d83d0028db69
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5aeee37e1922f91e9a9fac7881369364d01340893829678a5651f89ed428440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927951"
 ---
-# <a name="wpd_command_mtp_ext_read_data-command"></a>Comando WPD \_ comando \_ MTP \_ ext \_ Read \_ Data
+# <a name="wpd_command_mtp_ext_read_data-command"></a>Comando WPD \_ \_ MTP \_ EXT \_ READ \_ DATA
 
-Il comando **WPD \_ comando \_ MTP \_ ext \_ Read \_ Data** recupera i dati dal dispositivo dopo l'esecuzione del comando **WPD \_ comando \_ MTP \_ ext \_ Execute \_ \_ con \_ i dati \_ da \_ leggere** .
+Il **comando WPD \_ COMMAND \_ MTP \_ EXT READ \_ \_ DATA** recupera i dati dal dispositivo dopo l'esecuzione del comando **WPD \_ COMMAND \_ MTP \_ EXT EXECUTE WITH DATA \_ \_ \_ \_ \_ TO \_** READ.
 
 ## <a name="command-category"></a>Categoria
 
-**WPD \_ categoria \_ MTP \_ \_ operazioni fornitore \_ ext**
+**WPD \_ CATEGORY \_ MTP \_ EXT \_ VENDOR \_ OPERATIONS**
 
 ## <a name="parameters"></a>Parametri
 
@@ -27,9 +27,9 @@ Per il driver sono previsti i parametri seguenti.
 
 | Parametro                                                   | VarType             | Descrizione                                                                            |
 |-------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------|
-| **Proprietà WPD del \_ \_ \_ contesto di trasferimento MTP ext \_ \_**              | \_LPWSTR VT          | Obbligatorio. Identifica il contesto restituito dalla chiamata precedente al dispositivo. |
-| **\_Proprietà WPD \_ MTP \_ trasferimento ext ext numero \_ \_ \_ \_ di byte da \_ leggere** | \_UI4 VT             | Obbligatorio. Specifica il numero di byte da leggere.                                       |
-| **\_Proprietà WPD \_ MTP \_ \_ Transfer \_ Data**                 | VT \_ vettore \| VT \_ UI1 | Obbligatorio. Identifica il buffer in cui vengono copiati i dati del dispositivo.                  |
+| **CONTESTO DI TRASFERIMENTO \_ \_ MTP \_ EXT \_ DELLA PROPRIETÀ \_ WPD**              | VT \_ LPWSTR          | Obbligatorio. Identifica il contesto restituito dalla chiamata precedente al dispositivo. |
+| **LA PROPRIETÀ WPD \_ \_ MTP \_ EXT \_ TRASFERISCE \_ I BYTE NUM \_ DA \_ \_ LEGGERE** | VT \_ UI4             | Obbligatorio. Specifica il numero di byte da leggere.                                       |
+| **PROPRIETÀ WPD \_ \_ MTP \_ EXT \_ TRANSFER \_ DATA**                 | VT \_ VECTOR \| VT \_ UI1 | Obbligatorio. Identifica il buffer in cui vengono copiati i dati del dispositivo.                  |
 
 
 
@@ -43,8 +43,8 @@ Il driver restituisce i risultati seguenti.
 
 | Risultato                                                  | VarType             | Descrizione                                                       |
 |---------------------------------------------------------|---------------------|-------------------------------------------------------------------|
-| **\_Proprietà WPD \_ MTP Transfer numero di \_ \_ \_ \_ byte \_ letti** | \_UI4 VT             | Obbligatorio. Specifica il numero di byte ricevuti dal dispositivo. |
-| **\_Proprietà WPD \_ MTP \_ \_ Transfer \_ Data**             | VT \_ vettore \| VT \_ UI1 | Obbligatorio. Buffer che contiene i dati del dispositivo.               |
+| **PROPRIETÀ WPD \_ \_ MTP \_ EXT \_ TRANSFER NUM \_ BYTES \_ \_ READ** | VT \_ UI4             | Obbligatorio. Specifica il numero di byte ricevuti dal dispositivo. |
+| **PROPRIETÀ WPD \_ \_ MTP \_ EXT \_ TRANSFER \_ DATA**             | VT \_ VECTOR \| VT \_ UI1 | Obbligatorio. Buffer che contiene i dati del dispositivo.               |
 
 
 
@@ -52,7 +52,7 @@ Il driver restituisce i risultati seguenti.
 
 ## <a name="calling-methods"></a>Chiamata di metodi
 
-Può essere chiamato solo direttamente tramite [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand).
+Può essere chiamato direttamente solo tramite [**IPortableDevice::SendCommand.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Può essere chiamato solo direttamente tramite [**IPortableDevice:: SendCommand*
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WpdMtpExtensions. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>WpdMtpExtensions.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Proprietà UID IPropertyFilter (WdsSharedIDL. h)
+title: Proprietà UID IPropertyFilter (WdsSharedIDL.h)
 description: UID per la proprietà in base a cui filtrare.
 ms.assetid: a9dfb34c-a161-4d5f-8d01-695b2f9346e6
 keywords:
-- Funzionalità dell'ambiente Windows legacy della proprietà UID
-- Funzionalità dell'ambiente Windows legacy della proprietà UID, interfaccia IPropertyFilter
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IPropertyFilter, proprietà UID
+- Proprietà UID Funzionalità dell'ambiente Windows legacy
+- Proprietà UID Legacy Windows Environment Features , interfaccia IPropertyFilter
+- Interfaccia IPropertyFilter Legacy Windows, proprietà UID
 topic_type:
 - apiref
 api_name:
@@ -18,17 +18,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 529f3f9142345705b9e14cabd2a46200d62fe2ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d0e96fc2c207a3dc7e11d751cb2e545f6d917036b3ce8f184280807c71f55e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963781"
 ---
-# <a name="ipropertyfilteruid-property"></a>Proprietà IPropertyFilter:: UID
+# <a name="ipropertyfilteruid-property"></a>Proprietà IPropertyFilter::UID
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 UID per la proprietà in base a cui filtrare.
 
@@ -59,10 +59,10 @@ Imposta la proprietà UID.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                      |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                             |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                             |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Intestazione<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

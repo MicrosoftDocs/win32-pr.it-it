@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura Printer Info \_ 8 specifica le impostazioni della stampante predefinite globali.
+description: La struttura PRINTER \_ INFO \_ 8 specifica le impostazioni predefinite globali della stampante.
 ms.assetid: 98f26a45-5302-4358-bed6-691d9bc37554
-title: Struttura PRINTER_INFO_8 (winspool. h)
+title: PRINTER_INFO_8 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: e17780dc2f39dc3041e690de1ef7b5728c8743e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa5d516dd099caeba5699a8328fa52add64f14ea970e6ccec28ea8bfbe87271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947671"
 ---
-# <a name="printer_info_8-structure"></a>\_Struttura Info stampante \_ 8
+# <a name="printer_info_8-structure"></a>Struttura PRINTER \_ INFO \_ 8
 
-La struttura **Printer \_ info \_ 8** specifica le impostazioni della stampante predefinite globali.
+La **struttura PRINTER INFO \_ \_ 8** specifica le impostazioni predefinite globali della stampante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,13 +44,13 @@ typedef struct _PRINTER_INFO_8 {
 **pDevMode**
 </dt> <dd>
 
-Puntatore a una struttura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che definisce i dati globali della stampante predefiniti, ad esempio l'orientamento della carta e la risoluzione.
+Puntatore a una [**struttura DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) che definisce i dati della stampante predefiniti globali, ad esempio l'orientamento della carta e la risoluzione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le impostazioni predefinite globali vengono impostate dall'amministratore di una stampante che può essere usata da chiunque. Al contrario, le impostazioni predefinite per singolo utente influiranno su un utente specifico o su qualsiasi altro utente che utilizza il profilo. Per le impostazioni predefinite per utente, usare [**le \_ informazioni \_ sulla stampante 9**](printer-info-9.md).
+Le impostazioni predefinite globali vengono impostate dall'amministratore di una stampante che può essere usata da chiunque. Al contrario, le impostazioni predefinite per utente influiranno su un determinato utente o su qualsiasi altro utente che usa il profilo. Per le impostazioni predefinite per utente, usare [**PRINTER \_ INFO \_ 9**](printer-info-9.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Le impostazioni predefinite globali vengono impostate dall'amministratore di una
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ Informazioni sulle stampanti \_ \_ 8W** (Unicode) e **\_ informazioni sulla stampante \_ \_ 8a** (ANSI)<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ PRINTER \_ INFO \_ 8W** (Unicode) e **\_ PRINTER INFO \_ \_ 8A** (ANSI)<br/>                           |
 
 
 
@@ -72,16 +72,16 @@ Le impostazioni predefinite globali vengono impostate dall'amministratore di una
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**GetPrinter**](getprinter.md)
 </dt> <dt>
 
-[**SetPrinter**](setprinter.md)
+[**Setprinter**](setprinter.md)
 </dt> <dt>
 
-[**Informazioni sulla stampante \_ \_ 9**](printer-info-9.md)
+[**PRINTER \_ INFO \_ 9**](printer-info-9.md)
 </dt> </dl>
 
  

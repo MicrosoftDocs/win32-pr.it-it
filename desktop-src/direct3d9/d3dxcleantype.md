@@ -1,7 +1,7 @@
 ---
-description: Definisce le operazioni da eseguire sui vertici in preparazione alla pulizia della rete.
+description: Definisce le operazioni da eseguire sui vertici in preparazione per la pulizia della mesh.
 ms.assetid: f222acaa-fa82-4591-b7c2-b520cb648ed5
-title: Enumerazione D3DXCLEANTYPE (D3dx9mesh. h)
+title: Enumerazione D3DXCLEANTYPE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: b38578d0f50521def552b8bd6608c2696b405d0f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2517c59d5505a8f2892ef0aee1d3884b8d489625637002d6e69a4f86434237fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894111"
 ---
 # <a name="d3dxcleantype-enumeration"></a>Enumerazione D3DXCLEANTYPE
 
-Definisce le operazioni da eseguire sui vertici in preparazione alla pulizia della rete.
+Definisce le operazioni da eseguire sui vertici in preparazione per la pulizia della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,38 +43,38 @@ typedef enum D3DXCLEANTYPE {
 
 <dl> <dt>
 
-<span id="D3DXCLEAN_BACKFACING"></span><span id="d3dxclean_backfacing"></span>**D3DXCLEAN \_ BACKfacing**
+<span id="D3DXCLEAN_BACKFACING"></span><span id="d3dxclean_backfacing"></span>**D3DXCLEAN \_ BACKFACING**
 </dt> <dd>
 
-Unisci triangoli che condividono gli stessi indici di vertice ma hanno normali facciali che puntano in direzioni opposte (triangoli rivolti verso il retro). A meno che i triangoli non vengano divisi aggiungendo un vertice replicato, i dati di adiacenza mesh dei due triangoli potrebbero essere in conflitto.
+Unire triangoli che condividono gli stessi indici dei vertici, ma con normali della faccia che puntano in direzioni opposte (triangoli rivolti all'indietro). A meno che i triangoli non vengano suddivisi aggiungendo un vertice replicato, i dati di adizia della mesh dei due triangoli possono essere in conflitto.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**\_BOWTIES D3DXCLEAN**
+<span id="D3DXCLEAN_BOWTIES"></span><span id="d3dxclean_bowties"></span>**D3DXCLEAN \_ BOWTIES**
 </dt> <dd>
 
-Se un vertice è il vertice di due ventilatori a triangolo (bowtie) e le operazioni di mesh avranno effetto su una delle ventole, suddivideranno il vertice condiviso in due nuovi vertici. Bowties può causare problemi per le operazioni, ad esempio la semplificazione della rete che rimuove i vertici, perché la rimozione di un vertice interessa due set distinti di triangoli.
+Se un vertice è il vertice di due ventole di triangolo (un arco) e le operazioni di mesh influiranno su una delle ventole, suddividere il vertice condiviso in due nuovi vertici. Le archi possono causare problemi per operazioni come la semplificazione della mesh che rimuovono i vertici, perché la rimozione di un vertice influisce su due set distinti di triangoli.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_SKINNING"></span><span id="d3dxclean_skinning"></span>**D3DXCLEAN \_ skining**
+<span id="D3DXCLEAN_SKINNING"></span><span id="d3dxclean_skinning"></span>**INTERFACCIA D3DXCLEAN \_**
 </dt> <dd>
 
-Usare questo flag per impedire l'esecuzione di cicli infiniti durante la scuoiatura delle operazioni mesh di installazione.
+Usare questo flag per evitare cicli infiniti durante le operazioni di configurazione della mesh di configurazione dell'interfaccia.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_OPTIMIZATION"></span><span id="d3dxclean_optimization"></span>**\_Ottimizzazione D3DXCLEAN**
+<span id="D3DXCLEAN_OPTIMIZATION"></span><span id="d3dxclean_optimization"></span>**OTTIMIZZAZIONE D3DXCLEAN \_**
 </dt> <dd>
 
-Usare questo flag per evitare cicli infiniti durante le operazioni di ottimizzazione della rete.
+Usare questo flag per impedire cicli infiniti durante le operazioni di ottimizzazione della mesh.
 
 </dd> <dt>
 
-<span id="D3DXCLEAN_SIMPLIFICATION"></span><span id="d3dxclean_simplification"></span>**\_Semplificazione D3DXCLEAN**
+<span id="D3DXCLEAN_SIMPLIFICATION"></span><span id="d3dxclean_simplification"></span>**SEMPLIFICAZIONE D3DXCLEAN \_**
 </dt> <dd>
 
-Usare questo flag per evitare cicli infiniti durante le operazioni di semplificazione della rete.
+Usare questo flag per evitare cicli infiniti durante le operazioni di semplificazione della mesh.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Usare questo flag per evitare cicli infiniti durante le operazioni di semplifica
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

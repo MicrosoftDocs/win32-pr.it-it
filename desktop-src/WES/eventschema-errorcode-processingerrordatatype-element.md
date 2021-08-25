@@ -1,9 +1,9 @@
 ---
-title: ErrorCode (ProcessingErrorDataType)-elemento
+title: Elemento ErrorCode (ProcessingErrorDataType)
 description: Contiene il codice di errore generato quando si è verificato un errore durante l'elaborazione dei dati dell'evento.
 ms.assetid: 30243369-6ab0-450b-a345-6f8ff9b21543
 keywords:
-- Codice errore elemento ErrorCode
+- Elemento ErrorCode EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 938870f5069c2be920bf6b9a7970d76f89620e68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 200ff2c06cced288c6cbcd62679d4b30207d994d6d03d4d6bf27b92896060326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863241"
 ---
-# <a name="errorcode-processingerrordatatype-element"></a>ErrorCode (ProcessingErrorDataType)-elemento
+# <a name="errorcode-processingerrordatatype-element"></a>Elemento ErrorCode (ProcessingErrorDataType)
 
 Contiene il codice di errore generato quando si è verificato un errore durante l'elaborazione dei dati dell'evento.
 
@@ -30,7 +30,7 @@ Contiene il codice di errore generato quando si è verificato un errore durante 
  />
 ```
 
-L'elemento **ErrorCode** è definito dal tipo complesso [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+**L'elemento ErrorCode** è definito dal [**tipo complesso ProcessingErrorDataType.**](eventschema-processingerrordatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **ErrorCode** è definito dal tipo complesso [**ProcessingErrorDataTy
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

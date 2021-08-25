@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MP_HASH_TYPE (MpClient. h)
+title: MP_HASH_TYPE enumerazione (MpClient.h)
 description: Tipi hash possibili.
 ms.assetid: 46432C40-6DE1-4FB8-B7C1-C2712CCEB208
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MP_HASH_TYPE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMP_HASH_TYPE
+- MP_HASH_TYPE funzionalità dell'ambiente Windows legacy
+- PMP_HASH_TYPE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40c36e709d165845b729673df4aaea1042a7ee49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a98e048b77953a90051de947b2b500c4ab1c07f29138418418edfdce5f5ebad7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961231"
 ---
-# <a name="mp_hash_type-enumeration"></a>Enumerazione del tipo di \_ hash MP \_
+# <a name="mp_hash_type-enumeration"></a>Enumerazione \_ MP HASH \_ TYPE
 
 Tipi hash possibili.
 
@@ -45,35 +45,35 @@ typedef enum tagMP_HASH_TYPE {
 
 <dl> <dt>
 
-<span id="MP_HASH_TYPE_NONE"></span><span id="mp_hash_type_none"></span>**\_tipo di hash MP \_ \_ None**
+<span id="MP_HASH_TYPE_NONE"></span><span id="mp_hash_type_none"></span>**TIPO \_ HASH \_ MP \_ NONE**
 </dt> <dd>
 
 Nessun hash.
 
 </dd> <dt>
 
-<span id="MP_HASH_TYPE_CRC32"></span><span id="mp_hash_type_crc32"></span>**\_Tipo di hash MP \_ \_ CRC32**
+<span id="MP_HASH_TYPE_CRC32"></span><span id="mp_hash_type_crc32"></span>**TIPO \_ HASH MP \_ \_ CRC32**
 </dt> <dd>
 
 CRC32
 
 </dd> <dt>
 
-<span id="MP_HASH_TYPE_MD5"></span><span id="mp_hash_type_md5"></span>**\_Tipo di hash MP \_ \_ MD5**
+<span id="MP_HASH_TYPE_MD5"></span><span id="mp_hash_type_md5"></span>**TIPO \_ HASH MP \_ \_ MD5**
 </dt> <dd>
 
 MD5
 
 </dd> <dt>
 
-<span id="MP_HASH_TYPE_SHA1"></span><span id="mp_hash_type_sha1"></span>**\_Tipo di hash MP \_ \_ SHA1**
+<span id="MP_HASH_TYPE_SHA1"></span><span id="mp_hash_type_sha1"></span>**TIPO \_ HASH MP \_ \_ SHA1**
 </dt> <dd>
 
 SHA1
 
 </dd> <dt>
 
-<span id="MP_HASH_TYPE_SHA256"></span><span id="mp_hash_type_sha256"></span>**\_Tipo di hash MP \_ \_ SHA256**
+<span id="MP_HASH_TYPE_SHA256"></span><span id="mp_hash_type_sha256"></span>**TIPO \_ HASH MP \_ \_ SHA256**
 </dt> <dd>
 
 SHA 256
@@ -86,9 +86,9 @@ SHA 256
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

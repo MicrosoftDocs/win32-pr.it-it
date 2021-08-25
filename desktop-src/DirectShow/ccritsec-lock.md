@@ -1,7 +1,7 @@
 ---
 description: Il metodo Lock blocca l'oggetto sezione critica.
 ms.assetid: b08be5ec-3f02-4ed8-8791-20e4d2a0c55f
-title: Metodo CCritSec. Lock (Wxutil. h)
+title: Metodo CCritSec.Lock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 19599e9cd3c3b8fa913bd07d22fe743aaaa1382f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4241b2cd5e94fbd6a3cbe0abd91d47ad6312c44b71f76c214cffb22836033a7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928590"
 ---
-# <a name="ccritseclock-method"></a>Metodo CCritSec. Lock
+# <a name="ccritseclock-method"></a>Metodo CCritSec.Lock
 
-Il metodo **Lock** blocca l'oggetto sezione critica.
+Il **metodo Lock** blocca l'oggetto sezione critica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama la funzione [**EnterCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection) .
+Questo metodo chiama la [**funzione EnterCriticalSection.**](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection)
 
-Chiamare la funzione membro [**CCritSec:: Unlock**](ccritsec-unlock.md) per sbloccare la sezione critica. È possibile eseguire più chiamate al metodo **Lock** sullo stesso thread. Assicurarsi di chiamare **Unlock** un numero di volte corrispondente.
+Chiamare la [**funzione membro CCritSec::Unlock**](ccritsec-unlock.md) per sbloccare la sezione critica. È possibile effettuare più chiamate al **metodo Lock** nello stesso thread. Assicurarsi di chiamare **Unlock** un numero corrispondente di volte.
 
-Se l'oggetto è già bloccato da un altro thread, il metodo **CCritSec:: Lock** si blocca fino a quando l'oggetto non viene rilasciato o fino a quando non si verifica un'eccezione di deadlock possibile.
+Se l'oggetto è già bloccato da un altro thread, il metodo **CCritSec::Lock** si blocca fino al rilascio dell'oggetto o fino a quando non si verifica una possibile eccezione deadlock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Se l'oggetto è già bloccato da un altro thread, il metodo **CCritSec:: Lock** 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

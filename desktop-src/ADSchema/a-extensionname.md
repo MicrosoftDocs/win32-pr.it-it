@@ -1,11 +1,11 @@
 ---
-title: Attributo Extension-Name
-description: Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utente di un oggetto directory.
+title: Extension-Name attributo
+description: Nome di una pagina delle proprietà usata per estendere l'interfaccia utente di un oggetto directory.
 ms.assetid: 7afa3363-00ac-4651-8a5c-b36b4ee8bf88
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Extension-Name attribute
-- Schema AD dell'attributo ExtensionName
+- Extension-Name schema AD dell'attributo
+- Schema AD dell'attributo extensionName
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 841685edbafbc761b1531f29f16d45657b57011d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 270398ea4a351b7d170a3eecc37dd2cded87b1a7aada911cf6be32372d5f61bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929681"
 ---
-# <a name="extension-name-attribute"></a>Attributo Extension-Name
+# <a name="extension-name-attribute"></a>Extension-Name attributo
 
-Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utente di un oggetto directory.
+Nome di una pagina delle proprietà usata per estendere l'interfaccia utente di un oggetto directory.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Extension-Name                              |
-| LDAP-Display-Name | NomeEstensione                               |
+| Ldap-Display-Name | extensionName                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Autore dell'oggetto di estensione.        |
+| Privilegio di aggiornamento  | Autore dell'oggetto estensione.        |
 | Frequenza di aggiornamento  | Ogni volta che viene creata una nuova estensione dell'interfaccia utente.     |
 | Attribute-Id      | 1.2.840.113556.1.2.227                      |
-| System-ID-GUID    | bf967972-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967972-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome di una pagina delle proprietà utilizzata per estendere l'interfaccia utent
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x80A9                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

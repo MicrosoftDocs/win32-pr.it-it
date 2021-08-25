@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un servizio e un punto di accesso al servizio (SAP) che fornisce al servizio funzionalità.
+description: Rappresenta un'associazione tra un servizio e un punto di accesso del servizio (SAP) che fornisce funzionalità al servizio.
 ms.assetid: 9b82fad2-9731-4e0d-bdb0-d1be13ea20fc
-title: Classe CIM_ServiceSAPDependency (gestione Hyper-V)
+title: CIM_ServiceSAPDependency classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d49b63dfb37dfddf009f01122f4aa49af316fa58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 279ad2b3833b6daf4f01915f210e099051975f8171344b479088dde440246eb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899801"
 ---
-# <a name="cim_servicesapdependency-class-hyper-v-management"></a>Classe CIM_ServiceSAPDependency (gestione Hyper-V)
+# <a name="cim_servicesapdependency-class-hyper-v-management"></a>CIM_ServiceSAPDependency classe (gestione Hyper-V)
 
-Rappresenta un'associazione tra un servizio e un punto di accesso al servizio (SAP) che fornisce al servizio funzionalità.
+Rappresenta un'associazione tra un servizio e un punto di accesso del servizio (SAP) che fornisce funzionalità al servizio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,45 +39,45 @@ class CIM_ServiceSAPDependency : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ServiceSAPDependency** presenta questi tipi di membri:
+La **classe CIM \_ ServiceSAPDependency** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ServiceSAPDependency** dispone di queste proprietà.
+La **classe CIM \_ ServiceSAPDependency** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Il punto di accesso al servizio richiesto.
+Punto di accesso al servizio richiesto.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ servizio CIM**
+Tipo di dati: **servizio \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Il servizio che dipende da SAP.
+Servizio dipendente da SAP.
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Il servizio che dipende da SAP.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Il servizio che dipende da SAP.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetUnsignedIntegerValue aggiunge un nuovo valore ULONG (Type VT \_ UI4) o ne sovrascrive uno esistente.
+description: Il metodo SetUnsignedIntegerValue aggiunge un nuovo valore ULONG (tipo VT \_ UI4) o ne sovrascrive uno esistente.
 ms.assetid: 9b5d1b8c-7863-4807-a34b-56d30a47bd5c
-title: 'Metodo IPortableDeviceValues:: SetUnsignedIntegerValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetUnsignedIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7dc237e5cdba120a08899035dc20f6fb6b2b63f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c58569554cf9170788524bdcb233bf42b3318f1e954050bb713711c93337543
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928461"
 ---
-# <a name="iportabledevicevaluessetunsignedintegervalue-method"></a>Metodo IPortableDeviceValues:: SetUnsignedIntegerValue
+# <a name="iportabledevicevaluessetunsignedintegervalue-method"></a>Metodo IPortableDeviceValues::SetUnsignedIntegerValue
 
-Il metodo **SetUnsignedIntegerValue** aggiunge un nuovo valore **ULONG** (Type VT \_ UI4) o ne sovrascrive uno esistente.
+Il **metodo SetUnsignedIntegerValue** aggiunge un nuovo **valore ULONG** (tipo VT UI4) o ne \_ sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetUnsignedIntegerValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-**ULONG** che specifica il nuovo valore.
+ULONG **che** specifica il nuovo valore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,11 +71,11 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso.
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [**specifica delle informazioni client**](specifying-client-information.md).
+Per un esempio di come usare questo metodo, vedere [**Specifica delle informazioni client**](specifying-client-information.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Per un esempio di come usare questo metodo, vedere [**specifica delle informazio
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ Per un esempio di come usare questo metodo, vedere [**specifica delle informazio
 [**IPortableDeviceValues::GetUnsignedIntegerValue**](iportabledevicevalues-getunsignedintegervalue.md)
 </dt> <dt>
 
-[**Specifica delle informazioni client**](specifying-client-information.md)
+[**Specifica delle informazioni sul client**](specifying-client-information.md)
 </dt> </dl>
 
  

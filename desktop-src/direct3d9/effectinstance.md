@@ -1,19 +1,19 @@
 ---
-description: Definisce un'istanza di effetto.
+description: Definisce un'istanza dell'effetto.
 ms.assetid: vs|directx_sdk|~\effectinstance.htm
 title: EffectInstance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be5eb81824372808c93ebd3d979b04d7cea54006
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3c2db15886dc940fc22c31442d7877270e1c4f5f3ece5c2626034948360e3fc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894041"
 ---
 # <a name="effectinstance"></a>EffectInstance
 
-Definisce un'istanza di effetto.
+Definisce un'istanza dell'effetto.
 
 ``` syntax
 template EffectInstance
@@ -26,8 +26,8 @@ template EffectInstance
 
 Dove:
 
--   EffectFilename-Effect nomefile.
--   \[ ... \] -È possibile usare qualsiasi modello di file con estensione x. Questa operazione rende l'architettura estendibile.
+-   EffectFilename: nome file dell'effetto.
+-   \[ ... \] - Qui è possibile usare qualsiasi modello di file con estensione x. In questo modo l'architettura è estensibile.
 
 ## <a name="see-also"></a>Vedi anche
 

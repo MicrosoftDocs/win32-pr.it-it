@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d7c9847f363d9bc6d1743da6189d2c4290c00dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3bce9626b67b989ca9ec323f2c1150599696c6bf203a09a1b77aabb88e6f6b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867931"
 ---
 # <a name="pauseservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo PauseService della classe Win32_Service (Servizi Desktop remoto)
 
@@ -178,14 +178,14 @@ Il servizio non ha thread di esecuzione.
 **18**
 </dt> <dd>
 
-Il servizio presenta dipendenze circolari all'avvio.
+Il servizio ha dipendenze circolari all'avvio.
 
 </dd> <dt>
 
 **19**
 </dt> <dd>
 
-Un servizio viene eseguito con lo stesso nome.
+Un servizio è in esecuzione con lo stesso nome.
 
 </dd> <dt>
 
@@ -226,17 +226,17 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Dopo aver determinato quali servizi possono essere arrestati o sospesi, è possibile usare i [**metodi StopService**](win32-terminalservice-stopservice.md) e **PauseService** per arrestare e sospendere i servizi. La decisione di arrestare un servizio anziché sospenderlo o viceversa dipende da diversi fattori, tra cui:
+Dopo aver determinato quali servizi possono essere arrestati o sospesi, è possibile usare i metodi [**StopService**](win32-terminalservice-stopservice.md) e **PauseService** per arrestare e sospendere i servizi. La decisione di arrestare un servizio anziché sospenderlo o viceversa dipende da diversi fattori, tra cui:
 
--   Il servizio è in grado di essere sospeso? In caso contrario, l'unica opzione è arrestare il servizio.
+-   Il servizio può essere sospeso? In caso contrario, l'unica opzione è arrestare il servizio.
 -   È necessario continuare a gestire le richieste client per chiunque sia già connesso al servizio? In tal caso, la sospensione di un servizio consente in genere di gestire i client esistenti negando l'accesso ai nuovi client. Al contrario, quando si arresta un servizio, tutti i client vengono disconnessi immediatamente.
--   È necessario riconfigurare un servizio e impostare immediatamente l'applicazione delle modifiche? Sebbene le proprietà del servizio possano essere modificate durante la sospensione di un servizio, la maggior parte di esse non ha effetto fino a quando il servizio non viene effettivamente arrestato e riavviato.
+-   È necessario riconfigurare un servizio e le modifiche vengono applicate immediatamente? Anche se le proprietà del servizio possono essere modificate durante la sospensione di un servizio, la maggior parte di esse non ha effetto fino a quando il servizio non viene effettivamente arrestato e riavviato.
 
 Il codice di scripting necessario per arrestare un servizio è quasi identico al codice necessario per sospendere il servizio.
 
 ## <a name="examples"></a>Esempio
 
-[L'esempio VBScript Pause Services Running Under a Specific Account](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) Sospende tutti i servizi in esecuzione con l'ipotetico account del servizio Netsvc.
+[L'esempio VBScript](https://Gallery.TechNet.Microsoft.Com/12a256dd-39da-4690-b3f0-f0adccaf25f1) Sospendi i servizi in esecuzione con un account specifico sospende tutti i servizi in esecuzione con l'ipotetico account del servizio Netsvc.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -246,7 +246,7 @@ Il codice di scripting necessario per arrestare un servizio è quasi identico al
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

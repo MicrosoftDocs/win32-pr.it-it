@@ -1,6 +1,6 @@
 ---
 title: Elementi dello schema mschapv2connectionpropertiesv1
-description: Informazioni sugli elementi dello schema dello schema mschapv2connectionpropertiesv1, inclusi EapType e UseWinLogonCredentials.
+description: Informazioni sugli elementi dello schema mschapv2connectionpropertiesv1, inclusi EapType e UseWinLogonCredentials.
 ms.assetid: 59563bbd-3243-447c-b90a-e2cf3b889f69
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 83c0c9f86f06488cef34ab24212c8754df7bd63e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d318e1c25b54d9cc7dfa56be17cd471c9ec00f90ddade4d00696d1ba4f535657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948121"
 ---
 # <a name="mschapv2connectionpropertiesv1-schema-elements"></a>Elementi dello schema mschapv2connectionpropertiesv1
 
@@ -27,7 +27,7 @@ Lo schema [mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-schema.md)

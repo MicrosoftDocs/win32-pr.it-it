@@ -1,9 +1,9 @@
 ---
-title: DURATION-elemento
-description: L'elemento DURATION definisce l'intervallo di tempo in cui Windows Media Player eseguirà il rendering della voce della playlist associata.
+title: Elemento DURATION
+description: L'elemento DURATION definisce l'intervallo di tempo Windows Media Player eseguirà il rendering della voce della playlist associata.
 ms.assetid: fe5c242e-08c9-44f0-a6fc-3f0fa432ba38
 keywords:
-- Finestra di Media Player elemento DURATION
+- Elemento DURATION Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0446fd207ce04ab08d4c7bd2e055ef8d11a5a36
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b06b497a6d31b03c4cbec23748f6995a1382fb806ad18fabaa542ed8ff33e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863351"
 ---
-# <a name="duration-element"></a>DURATION-elemento
+# <a name="duration-element"></a>Elemento DURATION
 
-L'elemento **Duration** definisce l'intervallo di tempo in cui Windows Media Player eseguirà il rendering della voce della playlist associata.
+**L'elemento DURATION** definisce l'intervallo di tempo Windows Media Player eseguirà il rendering della voce della playlist associata.
 
 ``` syntax
 <DURATION
@@ -32,9 +32,9 @@ L'elemento **Duration** definisce l'intervallo di tempo in cui Windows Media Pla
 
 ## <a name="attributes"></a>Attributi
 
-**Valore** (obbligatorio)
+**VALUE** (obbligatorio)
 
-Periodo di tempo, in ore, minuti, secondi e centesimi di secondo, in base al quale viene eseguito il rendering di una voce da parte di Windows Media Player. Il valore predefinito è l'intera lunghezza della voce. Se la voce è un file grafico, è necessario specificare un valore Duration.
+Periodo di tempo, in ore, minuti, secondi e centesimi di secondo, di cui viene eseguito il rendering di una voce Windows Media Player. Il valore predefinito è l'intera lunghezza della voce. Se la voce è un file grafico, è necessario specificare un valore di durata.
 
 ## <a name="parentchild-elements"></a>Elementi padre/figlio
 
@@ -42,7 +42,7 @@ Periodo di tempo, in ore, minuti, secondi e centesimi di secondo, in base al qua
 
 | Gerarchia       | Elementi           |
 |-----------------|--------------------|
-| Elementi padre | **voce**, **ref** |
+| Elementi padre | **ENTRY**, **REF** |
 | Elementi figlio  | nessuno               |
 
 
@@ -51,11 +51,11 @@ Periodo di tempo, in ore, minuti, secondi e centesimi di secondo, in base al qua
 
 ## <a name="remarks"></a>Osservazioni
 
-Questo elemento definisce l'intervallo di tempo in cui deve essere eseguito il rendering di un flusso. Se l'attributo **value** supera la lunghezza del flusso di contenuto, il flusso termina in corrispondenza del normale endpoint.
+Questo elemento definisce la durata del rendering di un flusso. Se **l'attributo VALUE** supera la lunghezza del flusso di contenuto, il flusso termina al punto finale normale.
 
-Questo elemento può essere presente all'interno di un elemento **ref** o all'interno di un elemento **entry** . Tuttavia, un elemento **Duration** definito all'interno di un elemento **ref** esegue l'override di uno che viene visualizzato all'interno dell'elemento **entry** padre dell'elemento **ref** .
+Questo elemento può essere visualizzato all'interno di un **elemento REF** o all'interno di un **elemento ENTRY.** Tuttavia, un **elemento DURATION** definito all'interno di un **elemento REF** ne esegue l'override all'interno dell'elemento **ENTRY** padre dell'elemento **REF.**
 
-L'elemento **Duration** esegue l'override di un elemento **PREVIEWDURATION** .
+**L'elemento DURATION** esegue l'override **di un elemento PREVIEWDURATION.**
 
 ## <a name="examples"></a>Esempio
 
@@ -74,7 +74,7 @@ L'elemento **Duration** esegue l'override di un elemento **PREVIEWDURATION** .
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -82,10 +82,10 @@ L'elemento **Duration** esegue l'override di un elemento **PREVIEWDURATION** .
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

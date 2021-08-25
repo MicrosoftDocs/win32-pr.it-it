@@ -4,16 +4,16 @@ ms.assetid: 5f7d5647-cdf0-4bb7-a4d5-09656c0ed702
 title: video.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 654b413b39509dfd5ffcc31533470eb9d67c6295
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 107933fa85e9096adfa1910e517b5314cfa32bcba9d6d8d0a97b02c21398b0f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964621"
 ---
 # <a name="videoh"></a>video.h
 
-Questo argomento contiene il codice per [l'esercitazione Riproduzione audio/video in DirectShow.](audio-video-playback-in-directshow.md)
+Questo argomento contiene il codice per [l'esercitazione Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++
@@ -120,10 +120,10 @@ public:
 
 <dl> <dt>
 
-[Riproduzione di audio/video in DirectShow](audio-video-playback-in-directshow.md)
+[Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Esempio di DirectShow Playback](directshow-playback-example.md)
+[DirectShow Esempio di riproduzione](directshow-playback-example.md)
 </dt> </dl>
 
  

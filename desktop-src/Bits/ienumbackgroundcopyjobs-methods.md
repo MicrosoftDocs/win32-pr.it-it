@@ -1,5 +1,5 @@
 ---
-title: Metodi IEnumBackgroundCopyJobs
+title: Metodi di IEnumBackgroundCopyJobs
 description: L'interfaccia IEnumBackgroundCopyJobs espone i metodi seguenti.
 ms.assetid: E2051C87-7D2D-435C-98B6-E1FC010F1DED
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120005031"
 ---
-# <a name="ienumbackgroundcopyjobs-methods"></a>Metodi IEnumBackgroundCopyJobs
+# <a name="ienumbackgroundcopyjobs-methods"></a>Metodi di IEnumBackgroundCopyJobs
 
 [**L'interfaccia IEnumBackgroundCopyJobs**](/windows/desktop/api/Bits/nn-bits-ienumbackgroundcopyjobs) espone i metodi seguenti.
 

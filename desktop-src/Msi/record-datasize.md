@@ -1,7 +1,7 @@
 ---
-description: La proprietà DataSize dell'oggetto record è una proprietà di sola lettura che restituisce la dimensione dei dati per il campo designato.
+description: La proprietà DataSize dell'oggetto Record è una proprietà di sola lettura che restituisce le dimensioni dei dati per il campo designato.
 ms.assetid: 6f89321e-bdb2-4c18-bdf8-01dea38b47c9
-title: Proprietà record. DataSize
+title: Record.DataSize - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 500ee0039f4bfe638f4eca3740669e821c97ca6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 067fc09e65d644413e75ccd8a9c0173e30df8060dff0f772ae5d12705ab610aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912961"
 ---
-# <a name="recorddatasize-property"></a>Proprietà record. DataSize
+# <a name="recorddatasize-property"></a>Record.DataSize - proprietà
 
-La proprietà **DataSize** dell'oggetto [**record**](record-object.md) è una proprietà di sola lettura che restituisce la dimensione dei dati per il campo designato. Se i dati sono un flusso, viene restituita la lunghezza del flusso in byte. Se i dati sono una stringa, viene restituita la lunghezza della stringa senza null. Se i dati sono di tipo Integer, viene restituito il valore 4 (che indica le dimensioni dell'Integer). Se i dati sono null, viene restituito 0.
+La **proprietà DataSize** dell'oggetto [**Record**](record-object.md) è una proprietà di sola lettura che restituisce le dimensioni dei dati per il campo designato. Se i dati sono un flusso, viene restituita la lunghezza del flusso in byte. Se i dati sono una stringa, viene restituita la lunghezza della stringa senza Null. Se i dati sono un numero intero, viene restituito il valore 4 (che indica le dimensioni dell'intero). Se i dati sono Null, viene restituito 0.
 
 Questa proprietà è di sola lettura.
 
@@ -37,7 +37,7 @@ propVal = Record.DataSize
 
 ## <a name="property-value"></a>Valore proprietà
 
-Numero di campo obbligatorio del valore all'interno del record, basato su 1.
+Numero di campo obbligatorio del valore all'interno del record, in base 1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,7 +45,7 @@ Numero di campo obbligatorio del valore all'interno del record, basato su 1.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IRecord è definito come 000C1093-0000-0000-C000-000000000046<br/>                                                                                                                                                                              |
 

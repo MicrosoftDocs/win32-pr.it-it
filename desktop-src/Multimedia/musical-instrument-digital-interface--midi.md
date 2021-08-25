@@ -1,34 +1,34 @@
 ---
-title: MIDI (Musical Instrument Digital Interface)
-description: MIDI (Musical Instrument Digital Interface)
+title: Instrument Digital Interface (MIDI)
+description: Instrument Digital Interface (MIDI)
 ms.assetid: 5c81e1dc-ee6b-4a59-8992-8ec869264d4f
 keywords:
-- Multimedia di Windows, Musical Instrument Digital Interface (MIDI)
-- Multimedia, Musical Instrument Digital Interface (MIDI)
-- audio multimediale, MIDI (Musical Instrument Digital Interface)
-- audio, Musical Instrument Digital Interface (MIDI)
-- MIDI (Musical Instrument Digital Interface), informazioni
-- MIDI (Musical Instrument Digital Interface), informazioni
+- Windows multimediali, Instrument Digital Interface (MIDI)
+- multimedia, Instrument Digital Interface (MIDI)
+- audio multimediale, Instrument Digital Interface (MIDI)
+- audio, Instrument Digital Interface (MIDI)
+- Instrument Digital Interface (MIDI), about
+- MIDI (Instrument Digital Interface), about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb479ef03657a31b1cf8e488551f0893746edab9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a75bdf54a57f64c0ed074cf37cd0ba99990acd72eb86c03cf5ac82f9caae04a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893271"
 ---
-# <a name="musical-instrument-digital-interface-midi"></a>MIDI (Musical Instrument Digital Interface)
+# <a name="musical-instrument-digital-interface-midi"></a>Instrument Digital Interface (MIDI)
 
-Il protocollo MIDI (Musical Instrument Digital Interface) è un protocollo e un set di comandi per l'archiviazione e la trasmissione di informazioni sulla musica. I dispositivi di output MIDI interpretano queste informazioni e le usano per sintetizzare la musica.
+MidI (Digital Interface) è un protocollo e un set di comandi per l'archiviazione e la trasmissione di informazioni sulla musica. I dispositivi di output MIDI interpretano queste informazioni e le usano per sintetizzare musica.
 
 -   [Informazioni su MIDI](about-midi.md)
 -   [Uso di MIDI](using-midi.md)
 -   [Riferimento MIDI](midi-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

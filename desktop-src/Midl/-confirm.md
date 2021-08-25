@@ -1,9 +1,9 @@
 ---
-title: opzione/Confirm
-description: L'opzione/Confirm indica al compilatore di visualizzare tutte le opzioni del compilatore MIDL senza elaborare i file di input IDL e ACF facoltativi.
+title: Opzione /confirm
+description: L'opzione /confirm indica al compilatore di visualizzare tutte le opzioni del compilatore MIDL senza elaborare il file IDL di input e i file ACF facoltativi.
 ms.assetid: 15a92062-1503-4cdc-91cb-9c125dbfe950
 keywords:
-- /Confirm switch MIDL
+- /confirm - opzione MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,44 +12,44 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 035b25c782b66818124a5728bcc7462b42d5cd6e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3fd71fc71195d37927c0b8b040d2ca426b6889feec60e4eaa334407f6afbf332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896141"
 ---
-# <a name="confirm-switch"></a>opzione/Confirm
+# <a name="confirm-switch"></a>Opzione /confirm
 
-L'opzione **/Confirm** indica al compilatore di visualizzare tutte le opzioni del compilatore MIDL senza elaborare i file di input IDL e ACF facoltativi.
+**L'opzione /confirm** indica al compilatore di visualizzare tutte le opzioni del compilatore MIDL senza elaborare il file IDL di input e i file ACF facoltativi.
 
 ``` syntax
 midl /confirm
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
 ## <a name="examples"></a>Esempio
 
-**/Confirm MIDL**
+**midl /confirm**
 
-**MIDL/Confirm @response.rsp nomefile. idl**
+**midl /confirm @response.rsp filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**/Help**](-help-.md)
+[**/help**](-help-.md)
 </dt> <dt>
 
 [Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

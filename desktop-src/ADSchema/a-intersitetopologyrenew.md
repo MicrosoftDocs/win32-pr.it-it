@@ -1,11 +1,11 @@
 ---
-title: Attributo tra siti-topologia-rinnovo
-description: Questa classe indica la frequenza con cui il generatore di topologia tra siti aggiorna il messaggio keep-alive inviato ai controller di dominio contenuti nello stesso sito.
+title: Attributo Inter-Site-Topology-Renew
+description: Questa classe indica la frequenza con cui il generatore di topologie tra siti aggiorna il messaggio keep-alive inviato ai controller di dominio contenuti nello stesso sito.
 ms.assetid: 523d8161-0678-482f-8d66-55a112995fe5
 ms.tgt_platform: multiple
 keywords:
-- Schema AD per l'attributo tra siti-topologia-rinnovo
-- Schema AD dell'attributo interSiteTopologyRenew
+- Schema ad Active Directory tra siti-topologia-rinnovo
+- Schema AD interSiteTopologyRenew dell'attributo
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 821bd294f777fd29738ff102955cd170a42205e2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3730785a342ba9ac3e6026f3aaf6d9055e6f6562c91cc88d835ff2334fa25772
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925171"
 ---
-# <a name="inter-site-topology-renew-attribute"></a>Attributo tra siti-topologia-rinnovo
+# <a name="inter-site-topology-renew-attribute"></a>Attributo Inter-Site-Topology-Renew
 
-Questa classe indica la frequenza con cui il generatore di topologia tra siti aggiorna il messaggio keep-alive inviato ai controller di dominio contenuti nello stesso sito.
+Questa classe indica la frequenza con cui il generatore di topologie tra siti aggiorna il messaggio keep-alive inviato ai controller di dominio contenuti nello stesso sito.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Topologia tra siti-rinnovo            |
-| LDAP-Display-Name | interSiteTopologyRenew               |
+| Ldap-Display-Name | interSiteTopologyRenew               |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1247              |
-| System-ID-GUID    | b7c69e5f-2cc7-11d2-854e-00a0c983f608 |
+| System-Id-Guid    | b7c69e5f-2cc7-11d2-854e-00a0c983f608 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Questa classe indica la frequenza con cui il generatore di topologia tra siti ag
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| Is-Single-Valued       | Vero                                                        |
 | Indicizzato             | Falso                                                       |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**NTDS-Site-Settings**](c-ntdssitesettings.md)<br/> |
+| Classi usate in        | [**NTDS-Site-Impostazioni**](c-ntdssitesettings.md)<br/> |
 
 
 

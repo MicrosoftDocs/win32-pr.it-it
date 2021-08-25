@@ -1,5 +1,5 @@
 ---
-description: "DFM_WM_INITMENUPOPUP: inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu."
+description: "DFM_WM_INITMENUPOPUP messaggio: inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu."
 title: DFM_WM_INITMENUPOPUP messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9df2700403dcdc0ce00b6d90d9c3a87d373b0a34
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4cb68b8251fa383ae9386eae3e6753158330c4be7566f02a8758a72dfe05de03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943151"
 ---
-# <a name="dfm_wm_initmenupopup-message"></a>Messaggio \_ INITMENUPOPUP di DFM WM \_
+# <a name="dfm_wm_initmenupopup-message"></a>Messaggio DFM \_ WM \_ INITMENUPOPUP
 
 Inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu.
 
@@ -67,8 +67,8 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                      |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
 | Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 

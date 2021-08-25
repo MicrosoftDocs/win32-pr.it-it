@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_DB (tipi WinBio \_ . h)
-description: Specificare il database da utilizzare per un pool di sistema.
+title: WINBIO_DB costanti (Winbio \_ types.h)
+description: Specificare il database da usare per un pool di sistema.
 ms.assetid: 2cffa455-5834-4a35-b8d8-f9d1feddcaa1
 topic_type:
 - apiref
@@ -14,24 +14,24 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20503e1dc3cd7b5e47651889dd9c67777614593c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a9d8392fd38e9d53588002c8aeab688ffc8b76efced83819318d9c6b6c2b721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867981"
 ---
-# <a name="winbio_db-constants"></a>\_Costanti database WINBIO
+# <a name="winbio_db-constants"></a>Costanti del database WINBIO \_
 
-Quando si chiama [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) per specificare il database da utilizzare per un pool di sistema, è possibile utilizzare le costanti seguenti.
+Le costanti seguenti possono essere usate quando si chiama [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) per specificare il database da usare per un pool di sistema.
 
 
 
 | Costante                                                                                                                                                                         | Descrizione                                                                                                                                                                                          |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_DB_DEFAULT"></span><span id="winbio_db_default"></span><dl> <dt>**\_ \_ impostazione predefinita database WINBIO**</dt> </dl>       | Ogni unità biometrica nel pool di sensori usa il database predefinito specificato nella configurazione predefinita dell'unità biometrica.<br/>                                                                   |
-| <span id="WINBIO_DB_BOOTSTRAP"></span><span id="winbio_db_bootstrap"></span><dl> <dt>**\_bootstrap del database WINBIO \_**</dt> </dl> | Può essere usato per gli scenari prima dell'avvio di Windows. In genere, il database fa parte del chip del sensore o fa parte del BIOS e può essere usato solo per la registrazione e l'eliminazione del modello.<br/> |
-| <span id="WINBIO_DB_ONCHIP"></span><span id="winbio_db_onchip"></span><dl> <dt>**WINBIO \_ database \_ OnChip**</dt> </dl>          | Il database si trova sul chip del sensore.<br/>                                                                                                                                                  |
+| <span id="WINBIO_DB_DEFAULT"></span><span id="winbio_db_default"></span><dl> <dt>**IMPOSTAZIONE PREDEFINITA DI WINBIO \_ \_ DB**</dt> </dl>       | Ogni unità biometrica nel pool di sensori usa il database predefinito specificato nella configurazione predefinita dell'unità biometrica.<br/>                                                                   |
+| <span id="WINBIO_DB_BOOTSTRAP"></span><span id="winbio_db_bootstrap"></span><dl> <dt>**BOOTSTRAP DEL DATABASE WINBIO \_ \_**</dt> </dl> | Può essere usato per gli scenari prima di iniziare Windows. In genere, il database fa parte del chip del sensore o fa parte del BIOS e può essere usato solo per la registrazione e l'eliminazione di modelli.<br/> |
+| <span id="WINBIO_DB_ONCHIP"></span><span id="winbio_db_onchip"></span><dl> <dt>**WINBIO \_ DB \_ ONCHIP**</dt> </dl>          | Il database si trova nel chip del sensore.<br/>                                                                                                                                                  |
 
 
 
@@ -41,9 +41,9 @@ Quando si chiama [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 
