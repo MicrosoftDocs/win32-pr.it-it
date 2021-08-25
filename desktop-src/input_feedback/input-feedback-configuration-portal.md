@@ -1,6 +1,6 @@
 ---
-title: Configurazione feedback input
-description: Negli argomenti di questa sezione viene fornita una panoramica della configurazione del feedback di input in Windows 8. La configurazione feedback input fornisce l'accesso alle impostazioni feedback visive per le interazioni dell'utente.
+title: Configurazione dei commenti e suggerimenti di input
+description: Negli argomenti di questa sezione viene fornita una panoramica di Input Feedback Configuration in Windows 8. Input Feedback Configuration (Configurazione feedback input) consente di accedere alle impostazioni di feedback visivo per le interazioni dell'utente.
 ms.assetid: 9158A6C6-5BB5-4C5C-8411-AE07966B478B
 keywords:
 - interazione dell'utente
@@ -12,31 +12,31 @@ keywords:
 - stilo
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 3a6bae95281c3dfd030fc6146a6b95ef11cca522
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 9450a6f722451850cb4759ed067b7a0d4675c4d9843be0a67adf727023cb739f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104047553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830391"
 ---
-# <a name="input-feedback-configuration"></a>Configurazione feedback input
+# <a name="input-feedback-configuration"></a>Configurazione dei commenti e suggerimenti di input
 
 ## <a name="purpose"></a>Scopo
 
-Negli argomenti di questa sezione viene fornita una panoramica della configurazione del feedback di input in Windows 8. La configurazione feedback input fornisce l'accesso alle impostazioni feedback visive per le interazioni dell'utente.
+Negli argomenti di questa sezione viene fornita una panoramica di Input Feedback Configuration in Windows 8. Input Feedback Configuration (Configurazione feedback input) consente di accedere alle impostazioni di feedback visivo per le interazioni dell'utente.
 
-La raccolta di argomenti forniti in questo articolo descrive come usare la configurazione feedback input per ottimizzare l'esperienza utente dell'app. Ad esempio, le impostazioni predefinite per i commenti visivi potrebbero non essere necessarie o auspicabili in un'app di gioco a causa di interferenze o conflitti con il gameplay stesso.
+La raccolta di argomenti forniti qui descrive come usare Input Feedback Configuration per ottimizzare l'esperienza utente dell'app. Ad esempio, le impostazioni di feedback visivo predefinite potrebbero non essere necessarie o desiderabili in un'app di gioco a causa di interferenze o conflitti con il gioco stesso.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione |
 |---|---|
-| [Riferimento alla configurazione del feedback di input](input-feedback-configuration-reference.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per la configurazione del feedback di input.<br/> |
+| [Informazioni di riferimento sulla configurazione dei commenti e suggerimenti sull'input](input-feedback-configuration-reference.md)<br/> | Negli argomenti di questa sezione vengono fornite le specifiche di riferimento per La configurazione dei commenti e suggerimenti sull'input.<br/> |
 
 ## <a name="developer-audience"></a>Sviluppatori
 
-Il feedback di input ConfigurationAPIs è progettato per gli sviluppatori che compilano Framework di interfaccia utente che forniscono un'esperienza utente ottimizzata per il tocco per le applicazioni desktop.
+Le API Di configurazione feedback input sono progettate per gli sviluppatori che compilano framework dell'interfaccia utente che offrono un'esperienza utente ottimizzata per il tocco coerente tra le applicazioni desktop.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Interazione dell'utente](../user-interaction.md), [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
+[Interazione dell'utente,](../user-interaction.md) [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)

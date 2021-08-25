@@ -1,16 +1,16 @@
 - name: Servizi di distribuzione Windows
   href: windows-deployment-services-portal.md
   items:
-    - name: Informazioni sull'API di servizi di distribuzione Windows
+    - name: Informazioni sull'API Windows Deployment Services
       href: about-the-windows-deployment-services-api.md
     - name: Uso dell'API server di Servizi di distribuzione Windows
       href: using-the-windows-deployment-services-server-api.md
     - name: Uso dell'API client di Servizi di distribuzione Windows
       href: using-the-windows-deployment-services-client-api.md
-    - name: Guida di riferimento a servizi di distribuzione Windows
+    - name: Windows Informazioni di riferimento su Servizi di distribuzione
       href: windows-deployment-services-reference.md
       items:
-        - name: Funzioni client di servizi di distribuzione Windows
+        - name: Windows Funzioni client di Servizi di distribuzione
           href: windows-deployment-services-client-functions.md
           items:
             - name: PFN_WdsCliCallback
@@ -83,7 +83,7 @@
               href: /windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehandlefromfindhandle
             - name: WdsCliGetImageHandleFromTransferHandle
               href: /windows/desktop/api/WdsClientAPI/nf-wdsclientapi-wdscligetimagehandlefromtransferhandle
-        - name: Funzioni server di servizi di distribuzione Windows
+        - name: Windows Funzioni del server di Servizi di distribuzione
           href: windows-deployment-services-server-functions.md
           items:
             - name: PxeAsyncRecvDone
@@ -154,7 +154,7 @@
               href: /windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6parserelayforw
             - name: PxeDhcpv6CreateRelayRepl
               href: /windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6createrelayrepl
-        - name: Funzioni di trasporto di servizi di distribuzione Windows
+        - name: Windows Funzioni di trasporto di Servizi di distribuzione
           href: windows-deployment-services-transport--functions.md
           items:
             - name: Funzioni del provider di trasporto WDS
@@ -201,7 +201,7 @@
                   href: /windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportservertrace
                 - name: WdsTransportServerTraceV
                   href: /windows/desktop/api/Wdstpdi/nf-wdstpdi-wdstransportservertracev
-            - name: Funzioni client del trasporto WDS
+            - name: Funzioni client di trasporto WDS
               href: wds-transport-client-functions.md
               items:
                 - name: PFN_WdsTransportClientReceiveContents
@@ -238,7 +238,7 @@
                   href: /windows/desktop/api/Wdstci/nf-wdstci-wdstransportclientstartsession
                 - name: WdsTransportClientWaitForCompletion
                   href: /windows/desktop/api/Wdstci/nf-wdstci-wdstransportclientwaitforcompletion
-        - name: Enumerazioni di servizi di distribuzione Windows
+        - name: Windows Enumerazioni di Servizi di distribuzione
           href: windows-deployment-services-enumerations.md
           items:
             - name: TRANSPORTCLIENT_CALLBACK_ID
@@ -249,7 +249,7 @@
               href: /windows/desktop/api/wdsclientapi/ne-wdsclientapi-__unnamed_enum_2
             - name: WDS_LOG_TYPE_CLIENT
               href: /windows/desktop/api/wdsclientapi/ne-wdsclientapi-__unnamed_enum_1
-        - name: Strutture di servizi di distribuzione Windows
+        - name: Windows Strutture di Servizi di distribuzione
           href: windows-deployment-services-structures.md
           items:
             - name: PXE_ADDRESS
@@ -280,10 +280,10 @@
               href: /windows/win32/api/Wdstpdi/ns-wdstpdi-wds_transportprovider_init_params
             - name: WDS_TRANSPORTPROVIDER_SETTINGS
               href: /windows/win32/api/Wdstpdi/ns-wdstpdi-wds_transportprovider_settings
-        - name: API di gestione del trasporto di servizi di distribuzione Windows
+        - name: Windows API Transport Management distribuzione
           href: windows-deployment-services-transport-management-api.md
           items:
-            - name: Enumerazioni di gestione del trasporto WDS
+            - name: Enumerazioni Transport Management WDS
               href: wds-transport-management-enums.md
               items:
                 - name: WDSTRANSPORT_DIAGNOSTICS_COMPONENT_FLAGS
@@ -310,7 +310,7 @@
                   href: /windows/win32/api/Wdstptmgmt/ne-wdstptmgmt-wdstransport_tftp_capability
                 - name: WDSTRANSPORT_UDP_PORT_POLICY
                   href: /windows/win32/api/Wdstptmgmt/ne-wdstptmgmt-wdstransport_udp_port_policy
-            - name: Interfacce di gestione del trasporto WDS
+            - name: Interfacce Transport Management WDS
               href: wds-transport-management-interfaces.md
               items:
                 - name: IWdsTransportCacheable
@@ -320,18 +320,18 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcacheable-commit
                     - name: Proprietà Dirty
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcacheable-get_dirty
-                    - name: Metodo di eliminazione
+                    - name: Metodo Discard
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcacheable-discard
-                    - name: Refresh (metodo)
+                    - name: Metodo Refresh
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcacheable-refresh
                 - name: IWdsTransportClient
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportclient
                   items:
                     - name: Proprietà CpuUtilization
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportclient-get_cpuutilization
-                    - name: Disconnetti (metodo)
+                    - name: Metodo Disconnect
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportclient-disconnect
-                    - name: ID (proprietà)
+                    - name: Proprietà Id
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportclient-get_id
                     - name: Proprietà IpAddress
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportclient-get_ipaddress
@@ -358,7 +358,7 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcollection-get_count
                     - name: Proprietà Item
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcollection-get_item
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcollection-get__newenum
                 - name: IWdsTransportConfigurationManager
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportconfigurationmanager
@@ -389,11 +389,11 @@
                 - name: IWdsTransportContent
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportcontent
                   items:
-                    - name: ID (proprietà)
+                    - name: Proprietà Id
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontent-get_id
                     - name: Proprietà Name
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontent-get_name
-                    - name: Namespace (proprietà)
+                    - name: Proprietà Namespace
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontent-get_namespace
                     - name: Metodo RetrieveSessions
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontent-retrievesessions
@@ -406,14 +406,14 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontentprovider-get_name
                     - name: Proprietà Description
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontentprovider-get_description
-                    - name: FilePath (proprietà)
+                    - name: Proprietà FilePath
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontentprovider-get_filepath
                     - name: Proprietà InitializationRoutine
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportcontentprovider-get_initializationroutine
                 - name: IWdsTransportDiagnosticsPolicy
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportdiagnosticspolicy
                   items:
-                    - name: Components (proprietà)
+                    - name: Proprietà Components
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportdiagnosticspolicy-get_components
                     - name: Proprietà Enabled
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportdiagnosticspolicy-get_enabled
@@ -442,31 +442,31 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_configuration
                     - name: Proprietà ContentProvider
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_contentprovider
-                    - name: Metodo deregister
+                    - name: Metodo Deregister
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-deregister
                     - name: Proprietà Description
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_description
                     - name: Proprietà FriendlyName
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_friendlyname
-                    - name: ID (proprietà)
+                    - name: Proprietà Id
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_id
                     - name: Proprietà Name
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_name
-                    - name: Refresh (metodo)
+                    - name: Metodo Refresh
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-refresh
-                    - name: Register (metodo)
+                    - name: Metodo Register
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-register
-                    - name: Proprietà registrata
+                    - name: Proprietà registered
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_registered
                     - name: Metodo RetrieveContents
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-retrievecontents
-                    - name: Proprietà contrassegnato per la rimozione definitiva
+                    - name: Proprietà tombstoned
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_tombstoned
                     - name: Proprietà TombstoneTime
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_tombstonetime
                     - name: Proprietà TransmissionStarted
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_transmissionstarted
-                    - name: Type (proprietà)
+                    - name: Proprietà Type
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespace-get_type
                 - name: IWdsTransportNamespaceAutoCast
                   href: /windows/desktop/api/wdstptmgmt/nn-wdstptmgmt-iwdstransportnamespaceautocast
@@ -489,14 +489,14 @@
                   items:
                     - name: Proprietà MinimumClients
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespacescheduledcastautostart-get_minimumclients
-                    - name: StartTime (proprietà)
+                    - name: Proprietà StartTime
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportnamespacescheduledcastautostart-get_starttime
                 - name: IWdsTransportNamespaceScheduledCastManualStart
                   href: /windows/desktop/api/wdstptmgmt/nn-wdstptmgmt-iwdstransportnamespacescheduledcastmanualstart
                 - name: IWdsTransportServer
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportserver
                   items:
-                    - name: ConfigurationManager (proprietà)
+                    - name: Proprietà ConfigurationManager
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportserver-get_configurationmanager
                     - name: Metodo DisconnectClient
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportserver-disconnectclient
@@ -524,7 +524,7 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportservicepolicy-get_ipaddresssource
                     - name: Proprietà StartIpAddress
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportservicepolicy-get_startipaddress
-                    - name: Proprietà presenta
+                    - name: Proprietà StartPort
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportservicepolicy-get_startport
                 - name: IWdsTransportServicePolicy2
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportservicepolicy2
@@ -538,9 +538,9 @@
                 - name: IWdsTransportSession
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportsession
                   items:
-                    - name: Content (proprietà)
+                    - name: Proprietà Content
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-get_content
-                    - name: ID (proprietà)
+                    - name: Proprietà Id
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-get_id
                     - name: Proprietà MasterClientId
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-get_masterclientid
@@ -552,7 +552,7 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-retrieveclients
                     - name: Metodo Terminate
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-terminate
-                    - name: Proprietà transferred
+                    - name: Proprietà TransferRate
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransportsession-get_transferrate
                 - name: IWdsTransportSetupManager
                   href: /windows/desktop/api/Wdstptmgmt/nn-wdstptmgmt-iwdstransportsetupmanager
@@ -585,7 +585,7 @@
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransporttftpclient-get_timeout
                     - name: Proprietà CurrentFileOffset
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransporttftpclient-get_currentfileoffset
-                    - name: Filesize (proprietà)
+                    - name: Proprietà FileSize
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransporttftpclient-get_filesize
                     - name: Proprietà BlockSize
                       href: /windows/desktop/api/Wdstptmgmt/nf-wdstptmgmt-iwdstransporttftpclient-get_blocksize
@@ -596,7 +596,7 @@
                   items:
                     - name: Metodo RetrieveTftpClients
                       href: /windows/desktop/api/wdstptmgmt/nf-wdstptmgmt-iwdstransporttftpmanager-retrievetftpclients
-        - name: Programma di avvio di rete di servizi di distribuzione Windows
+        - name: Windows Programma di avvio di rete di Servizi di distribuzione
           href: windows-deployment-services-network-boot-program.md
           items:
             - name: WdsBpAddOption

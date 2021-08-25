@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d4d4c1bb1ad7ecb45b640c16322e297f9f640ef1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60fc768a1b93a752a91d431e79fb3e875416ac2b82b2bad5603e3d4cddaccbaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910571"
 ---
 # <a name="idelaydcgetconversationstatistics-method"></a>Metodo IDelaydC::GetConversationStatistics
 
@@ -89,10 +89,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                                   | Descrizione                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>          | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connect](idelaydc-connect.md) per connettere il NPP alla rete.<br/>                                                                                                  |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>          | NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione.<br/>                                                                                                                             |
-| <dl> <dt>**NMERR \_ NON \_ IN RITARDO**</dt> </dl>            | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/>                                                                                                                      |
-| <dl> <dt>**NO \_ CONVERSATION \_ \_ STATS DI NMERR**</dt> </dl> | La configurazione per questa connessione è impostata in modo da non salvare le statistiche della conversazione. Per salvare le statistiche della conversazione, arrestare l'acquisizione, impostare NoConversationStats = YES nel BLOB di configurazione e quindi riavviare l'acquisizione.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>          | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettere il NPP alla rete.<br/>                                                                                                  |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>          | Il NPP non acquisisce dati. Chiamare [IDelaydC::Start](idelaydc-start.md) per avviare l'acquisizione.<br/>                                                                                                                             |
+| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>            | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                                                                                                                      |
+| <dl> <dt>**NMERR \_ NO \_ CONVERSATION \_ STATS**</dt> </dl> | La configurazione per questa connessione è impostata in modo da non salvare le statistiche di conversazione. Per salvare le statistiche della conversazione, arrestare l'acquisizione, impostare NoConversationStats = YES nel BLOB di configurazione e quindi riavviare l'acquisizione.<br/> |
 
 
 
@@ -100,7 +100,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato solo mentre è in corso Data Capture. Quando l'acquisizione corrente viene sospesa, le chiamate a questo metodo non avranno esito positivo. Per avviare un'acquisizione, chiamare il [metodo IDelaydC::Start.](idelaydc-start.md)
+Questo metodo può essere chiamato solo mentre è in corso l'acquisizione dei dati. Quando l'acquisizione corrente viene sospesa, le chiamate a questo metodo non avranno esito positivo. Per avviare un'acquisizione, chiamare [il metodo IDelaydC::Start.](idelaydc-start.md)
 
 Per recuperare altri tipi di statistiche, chiamare [IDelaydC::GetTotalStatistics](idelaydc-gettotalstatistics.md).
 
@@ -124,7 +124,7 @@ Per recuperare altri tipi di statistiche, chiamare [IDelaydC::GetTotalStatistics
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Connessione](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::GetTotalStatistics](idelaydc-gettotalstatistics.md)
@@ -136,7 +136,7 @@ Per recuperare altri tipi di statistiche, chiamare [IDelaydC::GetTotalStatistics
 [SESSIONSTATS](sessionstats.md)
 </dt> <dt>
 
-[STATIONSTATS](stationstats.md)
+[STATISTICHE DI STAZIONE](stationstats.md)
 </dt> </dl>
 
  

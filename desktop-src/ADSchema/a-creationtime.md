@@ -1,10 +1,10 @@
 ---
-title: Attributo Creation-Time
+title: Creation-Time attributo
 description: Data e ora di creazione dell'oggetto.
 ms.assetid: eab276f8-2956-4a83-beb4-a3b8ed11ccca
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Creation-Time attribute
+- Creation-Time schema AD dell'attributo
 - Schema AD dell'attributo creationTime
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a695495d33e47a3597db9954f3b563245eab05
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64f5dc7c772ab71ef062077c2ab7de7f6039c6fcb18d238e90f82d54c7a58fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926091"
 ---
-# <a name="creation-time-attribute"></a>Attributo Creation-Time
+# <a name="creation-time-attribute"></a>Creation-Time attributo
 
 Data e ora di creazione dell'oggetto.
 
@@ -30,13 +30,13 @@ Data e ora di creazione dell'oggetto.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Creation-Time                        |
-| LDAP-Display-Name | creationTime                         |
+| Ldap-Display-Name | creationTime                         |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.26                |
-| System-ID-GUID    | bf967946-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967946-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Data e ora di creazione dell'oggetto.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

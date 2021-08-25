@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_POINTERUPDATE
-description: Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area client di una finestra o su un puntatore non acquisito posizionato al passaggio del mouse sull'area client di una finestra.
+title: WM_POINTERUPDATE messaggio
+description: Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area client di una finestra o su un puntatore non incapsulato al passaggio del mouse sull'area client di una finestra.
 ms.assetid: 3bdc37da-227c-4be1-bf0b-99704b8ac222
 keywords:
-- Messaggi e notifiche di input del messaggio WM_POINTERUPDATE
+- WM_POINTERUPDATE messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 215874f4dc1b3438ae3d69b22758ced09a050f0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40c1decbf3c209a381356c58c901c4cab992fadd28eb9566e55e46b1cf87e3d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829511"
 ---
-# <a name="wm_pointerupdate-message"></a>Messaggio WM_POINTERUPDATE
+# <a name="wm_pointerupdate-message"></a>WM_POINTERUPDATE messaggio
 
-Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area client di una finestra o su un puntatore non acquisito posizionato al passaggio del mouse sull'area client di una finestra. Mentre il puntatore è posizionato al passaggio del mouse, il messaggio viene indirizzato a qualsiasi finestra su cui si trova il puntatore. Mentre il puntatore è in contatto con la superficie, il puntatore viene acquisito in modo implicito nella finestra su cui il puntatore ha effettuato il contatto e tale finestra continua a ricevere l'input per il puntatore finché non interrompe il contatto.
+Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contatto sull'area client di una finestra o su un puntatore non incapsulato al passaggio del mouse sull'area client di una finestra. Durante il passaggio del puntatore, il messaggio è destinato a qualsiasi finestra su cui si trova il puntatore. Mentre il puntatore è in contatto con la superficie, il puntatore viene acquisito in modo implicito nella finestra sulla quale il puntatore ha contattato e tale finestra continua a ricevere input per il puntatore fino a quando non interrompe il contatto.
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi del puntatore e nelle strutture correlate potrebbero apparire inesatte a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto automatico del ridimensionamento per le applicazioni che non supportano DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -44,28 +44,28 @@ Inviato per fornire un aggiornamento su un puntatore che ha effettuato il contat
 *wParam* 
 </dt> <dd>
 
-Contiene informazioni sul puntatore. Usare le macro seguenti per recuperare le informazioni dal parametro wParam.
+Contiene informazioni sul puntatore. Usare le macro seguenti per recuperare informazioni dal parametro wParam.
 
 -   [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificatore del puntatore.
--   [**IS_POINTER_NEW_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il messaggio rappresenta il primo input generato da un nuovo puntatore.
--   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il messaggio è stato generato da un puntatore durante la relativa durata. Questo flag non è impostato per i messaggi che indicano che il puntatore ha un intervallo di rilevamento a sinistra
--   [**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il messaggio è stato generato da un puntatore in contatto con l'area della finestra. Questo flag non è impostato per i messaggi che indicano un puntatore al passaggio del mouse.
+-   [**IS_POINTER_NEW_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se questo messaggio rappresenta il primo input generato da un nuovo puntatore.
+-   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il messaggio è stato generato da un puntatore durante la durata. Questo flag non è impostato sui messaggi che indicano che il puntatore ha un intervallo di rilevamento a sinistra
+-   [**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il messaggio è stato generato da un puntatore in contatto con la superficie della finestra. Questo flag non è impostato sui messaggi che indicano un puntatore al passaggio del mouse.
 -   [**IS_POINTER_PRIMARY_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica che questo puntatore è stato designato come primario.
 -   [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se è presente un'azione primaria.
-    -   Questo è analogo a un pulsante sinistro del mouse.
-    -   Il puntatore a tocco avrà questo set quando sarà in contatto con la superficie del digitalizzatore.
-    -   Un puntatore della penna avrà questo set quando sarà in contatto con la superficie del digitalizzatore senza pulsanti premuti.
+    -   Questo è analogo a un pulsante sinistro del mouse verso il basso.
+    -   Un puntatore tocco avrà questo set quando è in contatto con la superficie del digitalizzatore.
+    -   Un puntatore a penna avrà questo set quando è in contatto con la superficie del digitalizzatore senza pulsanti premuti.
 -   [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se è presente un'azione secondaria.
-    -   Questo è analogo al pulsante destro del mouse.
-    -   Il puntatore della penna avrà questo set quando sarà in contatto con la superficie del digitalizzatore con il pulsante della penna premuto.
--   [**IS_POINTER_THIRDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se sono presenti una o più azioni terziarie basate sul tipo di puntatore. le applicazioni che vogliono rispondere a azioni terziarie devono recuperare informazioni specifiche per il tipo di puntatore per determinare quali pulsanti di terziaria vengono premuti. Ad esempio, un'applicazione può determinare lo stato dei pulsanti di una penna chiamando [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) ed esaminando i flag che specificano gli Stati dei pulsanti.
--   [**IS_POINTER_FOURTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il puntatore specificato ha avuto una quarta azione. Le applicazioni che vogliono rispondere a quattro azioni devono recuperare informazioni specifiche del tipo di puntatore per determinare se viene premuto il primo pulsante del mouse esteso (XButton1).
--   [**IS_POINTER_FIFTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): [**flag**](pointer-flags-contants.md) che indica se il puntatore specificato ha avuto una quinta azione. Le applicazioni che vogliono rispondere a quinte azioni devono recuperare informazioni specifiche del tipo di puntatore per determinare se viene premuto il secondo pulsante del mouse esteso (XButton2).
+    -   Questo è analogo a un pulsante destro del mouse verso il basso.
+    -   Un puntatore a penna avrà questo set quando è in contatto con la superficie del digitalizzatore con il pulsante pentola premuto.
+-   [**IS_POINTER_THIRDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se sono presenti una o più azioni terziarie in base al tipo di puntatore. Le applicazioni che vogliono rispondere alle azioni terziarie devono recuperare informazioni specifiche per il tipo di puntatore per determinare quali pulsanti terziari vengono premuti. Ad esempio, un'applicazione può determinare gli stati dei pulsanti di una penna chiamando [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) ed esaminando i flag che specificano gli stati del pulsante.
+-   [**IS_POINTER_FOURTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag che indica se il puntatore specificato ha preso la quarta azione. Le applicazioni che vogliono rispondere a quarta azione devono recuperare informazioni specifiche per il tipo di puntatore per determinare se viene premuto il primo pulsante del mouse esteso (XButton1).
+-   [**IS_POINTER_FIFTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): flag [**che**](pointer-flags-contants.md) indica se il puntatore specificato ha preso la quinta azione. Le applicazioni che vogliono rispondere a quinta azione devono recuperare informazioni specifiche per il tipo di puntatore per determinare se viene premuto il secondo pulsante del mouse esteso (XButton2).
 
-    Per altri dettagli, vedere [**flag puntatore**](pointer-flags-contants.md) .
+    Per [**altri dettagli, vedere Flag**](pointer-flags-contants.md) puntatore.
 
     > [!Note]  
-    > Un puntatore al passaggio del mouse non ha alcun flag dei pulsanti impostato. Questa operazione è analoga a uno spostamento del mouse senza pulsanti del mouse. Un'applicazione può determinare lo stato dei pulsanti di una penna in sospeso, ad esempio chiamando [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) ed esaminando i flag che specificano gli Stati dei pulsanti.
+    > Per un puntatore al passaggio del mouse non è impostato nessuno dei flag del pulsante. Questo è analogo a uno spostamento del mouse senza pulsanti del mouse verso il basso. Un'applicazione può determinare gli stati dei pulsanti di una penna al passaggio del mouse, ad esempio chiamando [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) ed esaminando i flag che specificano gli stati del pulsante.
 
      
 
@@ -77,38 +77,38 @@ Contiene informazioni sul puntatore. Usare le macro seguenti per recuperare le i
 Contiene la posizione del punto del puntatore.
 
 > [!Note]  
-> Poiché il puntatore può rendere il contatto con il dispositivo su un'area non banale, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Laddove possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
+> Poiché il puntatore può contattare il dispositivo su un'area non semplice, questa posizione del punto può essere una semplificazione di un'area del puntatore più complessa. Quando possibile, un'applicazione deve usare le informazioni complete sull'area del puntatore anziché la posizione del punto.
 
  
 
-Utilizzare le macro seguenti per recuperare le coordinate dello schermo fisico del punto.
+Usare le macro seguenti per recuperare le coordinate fisiche dello schermo del punto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata X (punto orizzontale).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata Y (punto verticale).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordinata x (punto orizzontale).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordinata y (punto verticale).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 Se l'applicazione non elabora questo messaggio, deve chiamare [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Commenti
 
-Ogni puntatore ha un identificatore univoco del puntatore durante la relativa durata. La durata di un puntatore inizia quando viene rilevata per la prima volta.
+Ogni puntatore ha un identificatore di puntatore univoco durante la sua durata. La durata di un puntatore inizia quando viene rilevato per la prima volta.
 
-Viene generato un messaggio [**WM_POINTERENTER**](wm-pointerenter.md) se viene rilevato un puntatore al passaggio del mouse. Un messaggio di [**WM_POINTERDOWN**](wm-pointerdown.md) seguito da un messaggio di **WM_POINTERENTER** viene generato se viene rilevato un puntatore senza passaggio del mouse.
+Un [**WM_POINTERENTER**](wm-pointerenter.md) viene generato se viene rilevato un puntatore al passaggio del mouse. Un [**WM_POINTERDOWN**](wm-pointerdown.md) seguito da un messaggio WM_POINTERENTER **viene** generato se viene rilevato un puntatore non al passaggio del mouse.
 
-Durante la sua durata, un puntatore può generare una serie di messaggi di **WM_POINTERUPDATE** mentre è in corso il passaggio del mouse o il contatto.
+Durante la durata, un puntatore può generare una serie di WM_POINTERUPDATE **durante** il passaggio del mouse o in contatto.
 
-La durata di un puntatore termina quando non viene più rilevata. Viene generato un messaggio di [**WM_POINTERLEAVE**](wm-pointerleave.md) .
+La durata di un puntatore termina quando non viene più rilevata. Verrà generato un [**messaggio WM_POINTERLEAVE**](wm-pointerleave.md) messaggio.
 
-Quando un puntatore viene interrotto, viene impostato [**POINTER_FLAG_CANCELED**](pointer-flags-contants.md) .
+Quando un puntatore viene [**interrotto,**](pointer-flags-contants.md) POINTER_FLAG_CANCELED impostato.
 
-Un messaggio di [**WM_POINTERLEAVE**](wm-pointerleave.md) può essere generato anche quando un puntatore non acquisito si sposta all'esterno dei limiti di una finestra.
+Un [**WM_POINTERLEAVE**](wm-pointerleave.md) può essere generato anche quando un puntatore non acquisito si sposta all'esterno dei limiti di una finestra.
 
-Per ottenere la posizione orizzontale e verticale di un puntatore, utilizzare quanto segue:
+Per ottenere la posizione orizzontale e verticale di un puntatore, usare quanto segue:
 
 
 ```
@@ -118,21 +118,21 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-La macro [**MAKEPOINTS**](/windows/win32/api/wingdi/nf-wingdi-makepoints) può essere usata anche per convertire il parametro lParam in una struttura [**Points**](/previous-versions//dd162808(v=vs.85)) .
+La macro [**MAKEPOINTS**](/windows/win32/api/wingdi/nf-wingdi-makepoints) può essere usata anche per convertire il parametro lParam in una [**struttura POINTS.**](/previous-versions//dd162808(v=vs.85))
 
-La funzione [**GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) può essere usata per determinare gli Stati dei tasti di modifica della tastiera associati a questo messaggio. Ad esempio, per rilevare che è stato premuto il tasto ALT, controllare se **GetKeyState** (VK_MENU) &lt; 0.
+La [**funzione GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) può essere usata per determinare gli stati dei tasti di modifica della tastiera associati a questo messaggio. Ad esempio, per rilevare che il tasto ALT è stato premuto, controllare se **GetKeyState** (VK_MENU) &lt; 0.
 
-Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può generare uno o più messaggi di [**WM_GESTURE**](../wintouch/wm-gesture.md) se la sequenza di input da questo e, possibilmente, altri puntatori viene riconosciuta come movimento. Se non viene riconosciuto un movimento, **DefWindowProc** potrebbe generare un input del mouse.
+Se l'applicazione non elabora questo messaggio, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) può generare uno o più messaggi [**WM_GESTURE**](../wintouch/wm-gesture.md) se la sequenza di input da questo e, possibilmente, altri puntatori viene riconosciuta come movimento. Se un movimento non viene riconosciuto, **DefWindowProc** può generare l'input del mouse.
 
-Se un'applicazione usa selettivamente un input del puntatore e passa il resto a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca), il comportamento risultante non è definito.
+Se un'applicazione utilizza in modo selettivo un input del puntatore e passa il resto a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca), il comportamento risultante non è definito.
 
-Utilizzare la funzione [**GetPointerInfo**](/previous-versions/windows/desktop/api) per recuperare ulteriori informazioni correlate a questo messaggio.
+Usare la [**funzione GetPointerInfo**](/previous-versions/windows/desktop/api) per recuperare altre informazioni correlate a questo messaggio.
 
-Se l'applicazione non elabora questi messaggi con la stessa velocità con cui vengono generati, è possibile che si verifichi l'Unione di alcuni spostamenti. La cronologia degli input che sono Stati Uniti in questo messaggio può essere recuperata tramite la funzione [**GetPointerInfoHistory**](/previous-versions/windows/desktop/api) .
+Se l'applicazione non elabora questi messaggi alla velocità di generazione, è possibile che alcuni spostamenti siano uniti. La cronologia degli input uniti in questo messaggio può essere recuperata usando la [**funzione GetPointerInfoHistory.**](/previous-versions/windows/desktop/api)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato come utilizzare [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam), [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam), [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)e [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api) per recuperare le informazioni rilevanti dai parametri wParam e lParam del messaggio **WM_POINTERUPDATE** .
+L'esempio di codice seguente illustra come  usare [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam), [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam), [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)e [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api) per recuperare le informazioni rilevanti dai parametri wParam e lParam del messaggio WM_POINTERUPDATE.
 
 
 ```
@@ -151,7 +151,7 @@ else if (IS_POINTER_SECONDARYBUTTON_WPARAM(wParam))
 
 
 
-Nell'esempio di codice seguente viene illustrato come utilizzare [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api) per recuperare l'ID del puntatore dal parametro wParam del messaggio di **WM_POINTERUPDATE** .
+L'esempio di codice seguente illustra come usare [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api) per recuperare l'ID puntatore dal parametro wParam del WM_POINTERUPDATE **messaggio.**
 
 
 ```
@@ -241,9 +241,9 @@ default:
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                               |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Desktop-Profile
+title: Desktop-Profile attributo
 description: Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 ms.assetid: cbab8930-ce18-4b9c-ad60-5875bb23b822
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Desktop-Profile attribute
+- Desktop-Profile schema AD dell'attributo
 - Schema AD dell'attributo desktopProfile
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fecaa174659248d08a8bfd6433a505a77386dd1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1cc9157730bce827c51a8705385afa61a92abc1d0d8f874844ac74d57fc31557
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925991"
 ---
-# <a name="desktop-profile-attribute"></a>Attributo Desktop-Profile
+# <a name="desktop-profile-attribute"></a>Desktop-Profile attributo
 
 Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 
@@ -30,12 +30,12 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Desktop-Profile                             |
-| LDAP-Display-Name | desktopProfile                              |
+| Ldap-Display-Name | desktopProfile                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.346                      |
-| System-ID-GUID    | eea65906-8ac6-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | eea65906-8ac6-11d0-afda-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Percorso del profilo desktop per un utente o un gruppo di utenti. Non usato.
 | ID collegamento                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| È a valore singolo       | Vero                                                                                                                                                                              |
+| Is-Single-Valued       | Vero                                                                                                                                                                              |
 | Indicizzato             | Falso                                                                                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                        |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

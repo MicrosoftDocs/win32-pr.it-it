@@ -1,23 +1,23 @@
 ---
-description: La proprietà PATCHNEWPACKAGECODE aggiorna la proprietà di riepilogo dei numeri di revisione di un'immagine amministrativa durante l'applicazione di patch.
+description: La proprietà PATCHNEWPACKAGECODE aggiorna la proprietà Riepilogo numero revisione di un'immagine amministrativa durante l'applicazione di patch.
 ms.assetid: 5ca0058a-b4eb-48df-89eb-fbc7da7224e8
-title: Proprietà PATCHNEWPACKAGECODE
+title: PatchNEWPACKAGECODE - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb7c1c70c91ede5788258c67626cdf429df74e27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65d7e64729643fa1b6449838496416d10e1ec12374762b3f702b306a146338f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926164"
 ---
-# <a name="patchnewpackagecode-property"></a>Proprietà PATCHNEWPACKAGECODE
+# <a name="patchnewpackagecode-property"></a>PatchNEWPACKAGECODE - proprietà
 
-La proprietà **PATCHNEWPACKAGECODE** aggiorna la proprietà di [**Riepilogo dei numeri di revisione**](revision-number-summary.md) di un'immagine amministrativa durante l'applicazione di patch. Questa proprietà viene impostata solo da una trasformazione in un file con estensione msp. Il file con estensione msp deve includere una trasformazione che aggiunge questa proprietà alla [tabella delle proprietà](property-table.md) e ne imposta il valore. Il programma di installazione scrive quindi il valore di **PATCHNEWPACKAGECODE** nella proprietà di **Riepilogo dei numeri di revisione** .
+La **proprietà PATCHNEWPACKAGECODE** aggiorna la [**proprietà Riepilogo numero**](revision-number-summary.md) revisione di un'immagine amministrativa durante l'applicazione di patch. Questa proprietà viene impostata solo da una trasformazione in un file msp. Il file msp deve includere una trasformazione che aggiunge questa proprietà alla [tabella Property e](property-table.md) ne imposta il valore. Il programma di installazione scrive quindi il valore **di PATCHNEWPACKAGECODE** nella **proprietà Revision Number Summary.**
 
 ## <a name="remarks"></a>Commenti
 
-Le proprietà **PATCHNEWPACKAGECODE**, [**PATCHNEWSUMMARYCOMMENTS**](patchnewsummarycomments.md)e [**PATCHNEWSUMMARYSUBJECT**](patchnewsummarysubject.md) vengono utilizzate per aggiornare le informazioni di riepilogo quando una patch viene installata in un'immagine amministrativa.
+Le **proprietà PATCHNEWPACKAGECODE**, [**PATCHNEWSUMMARYCOMMENTS**](patchnewsummarycomments.md)e [**PATCHNEWSUMMARYSUBJECT**](patchnewsummarysubject.md) vengono usate per aggiornare le informazioni di riepilogo quando viene installata una patch in un'immagine amministrativa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,7 +25,7 @@ Le proprietà **PATCHNEWPACKAGECODE**, [**PATCHNEWSUMMARYCOMMENTS**](patchnewsum
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

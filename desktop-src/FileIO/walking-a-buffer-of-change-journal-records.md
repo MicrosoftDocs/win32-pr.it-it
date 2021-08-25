@@ -1,43 +1,43 @@
 ---
 description: Come restituire i record del journal delle modifiche che soddisfano i criteri specificati.
 ms.assetid: 8946adb5-da47-4711-8800-86f323081c4c
-title: Analisi di un buffer di record del journal delle modifiche
+title: Memorizzazione di un buffer di record del journal delle modifiche
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9384316e38c23951849006efc259268a7bdf33df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9242d671cedfb5c9ef2b5fa836e29c455d09a9e1287b1ed035712f49c6c7d627
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830151"
 ---
-# <a name="walking-a-buffer-of-change-journal-records"></a>Analisi di un buffer di record del journal delle modifiche
+# <a name="walking-a-buffer-of-change-journal-records"></a>Memorizzazione di un buffer di record del journal delle modifiche
 
-I codici di controllo che restituiscono i record del journal delle modifiche USN (Update Sequence Number), [**FSCTL \_ Read \_ USN \_ Journal**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) e [**FSCTL \_ enum \_ USN \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data), restituiscono dati simili nel buffer di output. Entrambi restituiscono un USN seguito da zero o più record del journal delle modifiche, ognuno in una struttura di record [**USN \_ \_ v2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**\_ record USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) .
+I codici di controllo che restituiscono record del journal delle modifiche USN (Update Sequence Number), [**FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) e [**FSCTL \_ ENUM \_ USN \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data)restituiscono dati simili nel buffer di output. Entrambi restituiscono un USN seguito da zero o più record del journal delle modifiche, ognuno in una struttura [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) [**o USN RECORD \_ \_ V3.**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3)
 
-Il volume di destinazione per le operazioni USN deve essere ReFS o NTFS 3,0 o versione successiva. Per ottenere la versione NTFS di un volume, aprire un prompt dei comandi con diritti di accesso di amministratore ed eseguire il comando seguente:
+Il volume di destinazione per le operazioni USN deve essere ReFS o NTFS 3.0 o versione successiva. Per ottenere la versione NTFS di un volume, aprire un prompt dei comandi con diritti di accesso amministratore ed eseguire il comando seguente:
 
-**FSUtil.exe FSInfo NTFSInfo** *X * * *:**
+**FSUtil.exe FSInfo NTFSInfo** *X***:**
 
 dove *X* è la lettera di unità del volume.
 
-Nell'elenco seguente vengono illustrate le modalità di ottenimento dei record del journal delle modifiche:
+L'elenco seguente identifica i modi per ottenere i record del journal delle modifiche:
 
--   Usare [**\_ \_ \_ i dati USN dell'enumerazione FSCTL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data) per ottenere un elenco (enumerazione) di tutti i record del journal delle modifiche tra due USNs.
--   Usare [**FSCTL \_ Read \_ USN \_ Journal**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) per essere più selettivi, ad esempio la selezione di motivi specifici per le modifiche o la restituzione di un file chiuso.
+-   Usare [**FSCTL \_ ENUM \_ USN \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_enum_usn_data) per ottenere un elenco (enumerazione) di tutti i record del journal delle modifiche tra due USN.
+-   Usare [**FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) per essere più selettivo, ad esempio per la selezione di motivi specifici per le modifiche o la restituzione quando un file viene chiuso.
 
 > [!Note]  
 > Entrambe queste operazioni restituiscono solo il subset di record del journal delle modifiche che soddisfano i criteri specificati.
 
  
 
-L'USN restituito come primo elemento nel buffer di output è l'USN del numero di record successivo da recuperare. Utilizzare questo valore per continuare a leggere i record dal limite finale in avanti.
+L'USN restituito come primo elemento nel buffer di output è l'USN del numero di record successivo da recuperare. Usare questo valore per continuare a leggere i record dal limite finale in avanti.
 
-Il membro **filename** del [**\_ record USN \_ v2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**\_ record USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) contiene il nome del file a cui si applica il record in questione. Il nome del file varia di lunghezza, quindi il **\_ record USN \_ v2** e il **\_ record USN \_ v3** sono strutture a lunghezza variabile. Il primo membro, **RecordLength**, è la lunghezza della struttura, incluso il nome del file, in byte.
+Il **membro FileName** di [**USN RECORD \_ \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN RECORD \_ \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) contiene il nome del file a cui si applica il record in questione. Il nome del file varia in lunghezza, quindi **USN \_ RECORD \_ V2** e **USN \_ RECORD \_ V3** sono strutture a lunghezza variabile. Il primo membro, **RecordLength**, è la lunghezza della struttura (incluso il nome del file), in byte.
 
-Quando si lavora con il membro **filename** delle strutture del [**\_ record USN \_ v2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) e del [**\_ record USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) , non presupporre che il nome del file contenga un \\ delimitatore ' 0' finale. Per determinare la lunghezza del nome file, usare il membro **FileNameLength** .
+Quando si usa il membro **FileName** delle strutture [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) e [**USN \_ RECORD \_ V3,**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) non presupporre che il nome file contenga un delimitatore \\ "0" finale. Per determinare la lunghezza del nome file, usare il **membro FileNameLength.**
 
-Nell'esempio seguente viene chiamato [**FSCTL \_ Read \_ USN \_ Journal**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) e viene analizzato il buffer dei record del journal delle modifiche restituiti dall'operazione.
+L'esempio seguente chiama [**FSCTL \_ READ \_ USN \_ JOURNAL**](/windows/win32/api/winioctl/ni-winioctl-fsctl_read_usn_journal) e illustra il buffer dei record del journal delle modifiche restituiti dall'operazione.
 
 
 ```C++
@@ -143,11 +143,11 @@ void main()
 
 
 
-La dimensione in byte di qualsiasi record specificato da un [**\_ record USN \_ v2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o dalla struttura [**\_ record USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) è al massimo `((MaxComponentLength - 1) * Width) + Size` dove *MaxComponentLength* è la lunghezza massima in caratteri del nome del file di record. La larghezza è la dimensione di un carattere wide e la dimensione *corrisponde alla* dimensione della struttura.
+La dimensione in byte di qualsiasi record specificato da una struttura [**USN \_ RECORD \_ V2**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) o [**USN \_ RECORD \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) è al massimo dove `((MaxComponentLength - 1) * Width) + Size` *MaxComponentLength* è la lunghezza massima in caratteri del nome del file di record. La larghezza è la dimensione di un carattere wide e *size* è la dimensione della struttura .
 
-Per ottenere la lunghezza massima, chiamare la funzione [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) ed esaminare il valore a cui punta il parametro *lpMaximumComponentLength* . Sottrarre un oggetto da *MaxComponentLength* per tenere conto del fatto che la definizione del [**\_ record USN**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) e del [**\_ record USN \_ v3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) include un carattere del nome file.
+Per ottenere la lunghezza massima, chiamare la [**funzione GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) ed esaminare il valore a cui punta *il parametro lpMaximumComponentLength.* Sottrarre uno da *MaxComponentLength* per fare in modo che la definizione di [**USN \_ RECORD**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v2) e [**USN \_ RECORD \_ V3**](/windows/desktop/api/WinIoCtl/ns-winioctl-usn_record_v3) includa un carattere del nome file.
 
-Nel linguaggio di programmazione C, la dimensione massima possibile per i record è la seguente:
+Nel linguaggio di programmazione C le dimensioni massime possibili per i record sono le seguenti:
 
 `(MaxComponentLength - 1) * sizeof(WCHAR) + sizeof(USN_RECORD)`
 
