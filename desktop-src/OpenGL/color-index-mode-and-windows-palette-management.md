@@ -1,28 +1,28 @@
 ---
-title: Modalità Color-Index e gestione tavolozza Windows
-description: La modalità di indicizzazione dei colori specifica i colori in una tavolozza logica con un indice per una specifica voce della tavolozza logica.
+title: Color-Index e gestione Windows tavolozza
+description: La modalità di indicizzazione dei colori specifica i colori in una tavolozza logica con un indice per una voce specifica della tavolozza logica.
 ms.assetid: 8cf07c3e-8a8b-4f28-a363-34d3c0d33890
 keywords:
-- OpenGL per Windows, gestione tavolozza
-- OpenGL per Windows, modalità indice colori
-- OpenGL modalità di indice colore
-- gestione tavolozza OpenGL
+- OpenGL in Windows,gestione della tavolozza
+- OpenGL in Windows, modalità color-index
+- Modalità indice colori OpenGL
+- Gestione della tavolozza OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 873308c4ac64d496e344b1c71d440d4dc8321418
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72e4d7c9db02a80bdffdef93655e88cc5b2ca8197a58c5ffdb488c2b782f10d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889261"
 ---
-# <a name="color-index-mode-and-windows-palette-management"></a>Modalità Color-Index e gestione tavolozza Windows
+# <a name="color-index-mode-and-windows-palette-management"></a>Color-Index e gestione Windows tavolozza
 
-La modalità di indicizzazione dei colori specifica i colori in una tavolozza logica con un indice per una specifica voce della tavolozza logica. La maggior parte dei programmi GDI USA le tavolozze degli indici colore, ma la modalità RGBA funziona meglio per OpenGL per diversi effetti, ad esempio ombreggiatura, illuminazione, nebbia e mapping di trama. Se il colore più vero non è cruciale per l'applicazione OpenGL, è possibile scegliere di usare la modalità di indice dei colori, ad esempio per una mappa topografica che usa "false color" per evidenziare la sfumatura di elevazione dei privilegi.
+La modalità di indicizzazione dei colori specifica i colori in una tavolozza logica con un indice per una voce specifica della tavolozza logica. La maggior parte dei programmi GDI usa le tavolozze degli indici di colore, ma la modalità RGBA funziona meglio per OpenGL per diversi effetti, ad esempio ombreggiatura, illuminazione, tinta e mapping di trama. Se il colore più vero non è critico per l'applicazione OpenGL, è possibile scegliere di usare la modalità di indicizzazione dei colori (ad esempio, per una mappa topografica che usa "false color" per evidenziare la sfumatura di elevazione).
 
-## <a name="color-index-mode-palette-sample"></a>Esempio di tavolozza modalità Color-Index
+## <a name="color-index-mode-palette-sample"></a>esempio Color-Index palette modalità di compatibilità
 
-Il codice seguente configura una struttura [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) che imposta il flag del membro **iPixelType** su PFD di \_ tipo \_ ColorIndex. Questa operazione specifica che l'applicazione usa una tavolozza con indice dei colori.
+Nel codice seguente viene impostata [**una struttura PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) che imposta il flag del membro **iPixelType** su PFD \_ TYPE \_ COLORINDEX. Specifica che l'applicazione utilizza una tavolozza dell'indice dei colori.
 
 
 ```C++
@@ -67,9 +67,9 @@ BOOL bSetupPixelFormat(HDC hdc)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

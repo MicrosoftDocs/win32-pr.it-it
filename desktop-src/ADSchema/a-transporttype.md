@@ -1,10 +1,10 @@
 ---
-title: Attributo Transport-Type
-description: Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo valore può puntare a un trasporto IP o SMTP.
+title: Transport-Type attributo
+description: Nome distinto per un tipo di trasporto usato per connettere i siti. Questo valore può puntare a un trasporto IP o SMTP.
 ms.assetid: aed18e69-3118-4cb8-b959-829106602f95
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Transport-Type attribute
+- Transport-Type schema AD dell'attributo
 - Schema AD dell'attributo transportType
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a28c68347deb83d52b78564688a563431609fb81
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a6ade467fd932666f1b9a67edf67f61275c7cbd01dc9cfe77e15a0313685bfb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835751"
 ---
-# <a name="transport-type-attribute"></a>Attributo Transport-Type
+# <a name="transport-type-attribute"></a>Transport-Type attributo
 
-Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo valore può puntare a un trasporto IP o SMTP.
+Nome distinto per un tipo di trasporto usato per connettere i siti. Questo valore può puntare a un trasporto IP o SMTP.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Transport-Type                          |
-| LDAP-Display-Name | transportType                           |
+| Ldap-Display-Name | transportType                           |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
-| Frequenza di aggiornamento  | Quando si connettono i siti.                  |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Frequenza di aggiornamento  | Quando si connettono siti.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.791                  |
-| System-ID-GUID    | 26d97374-6070-11d1-a9c6-0000f80367c1    |
+| System-Id-Guid    | 26d97374-6070-11d1-a9c6-0000f80367c1    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -44,7 +44,7 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**NTDS-Connection**](c-ntdsconnection.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| Is-Single-Valued       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| A valore singolo       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| A valore singolo       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| A valore singolo       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Nome distinto per un tipo di trasporto utilizzato per connettere i siti. Questo 
 | ID collegamento                | \-                                                     |
 | MAPI-Id                | \-                                                     |
 | System-Only            | Falso                                                  |
-| È a valore singolo       | Vero                                                   |
+| A valore singolo       | Vero                                                   |
 | Indicizzato             | Falso                                                  |
 | Nel catalogo globale      | Falso                                                  |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
 | Search-Flags           | 0x00000000                                             |
 | System-Flags           | 0x00000010                                             |
-| Classi utilizzate in        | [**NTDS-connessione**](c-ntdsconnection.md)<br/> |
+| Classi usate in        | [**Connessione NTDS**](c-ntdsconnection.md)<br/> |
 
 
 

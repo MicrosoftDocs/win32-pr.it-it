@@ -1,21 +1,21 @@
 ---
-description: Le funzioni seguenti consentono agli sviluppatori di software di usare la funzionalità fornita dal modulo Wireless Zero Configuration.
+description: Le funzioni seguenti consentono agli sviluppatori di software di usare le funzionalità fornite dal modulo Wireless Zero Configuration.
 ms.assetid: 6e0a2d0f-556a-413d-a607-2e63aec5c790
-title: Funzioni di configurazione senza fili zero
+title: Funzioni wireless zero configuration
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2978d39530b7893ba5ca611215ddf3c208590f39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d498f0315e7e382638b71a041172f5d4fa587374d0613018905c720b3463994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800317"
 ---
-# <a name="wireless-zero-configuration-functions"></a>Funzioni di configurazione senza fili zero
+# <a name="wireless-zero-configuration-functions"></a>Funzioni wireless zero configuration
 
-\[L'interfaccia di programmazione Wireless Zero Configuration non è più supportata a partire da Windows Vista e Windows Server 2008. Usare invece l' [API WiFi nativa](native-wifi-reference.md), che fornisce funzionalità simili. Per ulteriori informazioni, vedere [informazioni sull'API WiFi nativa](about-the-native-wifi-api.md).\]
+\[L'interfaccia di programmazione Wireless Zero Configuration non è più supportata a Windows Vista e Windows Server 2008. Usare invece [l'API Wi-Fi nativa](native-wifi-reference.md), che offre funzionalità simili. Per altre informazioni, vedere [Informazioni sull'API Wi-Fi nativa.](about-the-native-wifi-api.md)\]
 
-Le funzioni seguenti consentono agli sviluppatori di software di usare la funzionalità fornita dal modulo Wireless Zero Configuration.
+Le funzioni seguenti consentono agli sviluppatori di software di usare le funzionalità fornite dal modulo Wireless Zero Configuration.
 
 -   [**WZCEapolGetInterfaceParams**](wzceapolgetinterfaceparams.md)
 -   [**WZCEnumInterfaces**](wzcenuminterfaces.md)

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_CredentialProviders02
-description: La \_ classe CredentialProviders02 dei criteri MDM \_ Result01 \_ rappresenta i criteri del provider di credenziali disponibili.
+title: MDM_Policy_Result01_CredentialProviders02 classe
+description: La classe \_ \_ \_ CredentialProviders02 di Mdm Policy Result01 rappresenta i criteri del provider di credenziali disponibili.
 ms.assetid: dc9e276b-8813-46cf-8e5a-0d41a93331ea
 keywords:
-- Classe MDM_Policy_Result01_CredentialProviders02
-- Classe MDM_Policy_Result01_CredentialProviders02, descritta
+- MDM_Policy_Result01_CredentialProviders02 classe
+- MDM_Policy_Result01_CredentialProviders02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98a2e6c0ababbf2706e82606ddb7c7c13a9087a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c29fd13a456f46e51c4f0027d36d6b46f1937fc3f5d11e31706e146138ade51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796381"
 ---
-# <a name="mdm_policy_result01_credentialproviders02-class"></a>\_ \_ Classe Result01 CredentialProviders02 di criteri \_ MDM
+# <a name="mdm_policy_result01_credentialproviders02-class"></a>Classe \_ \_ \_ CredentialProviders02 di Mdm Policy Result01 CredentialProviders02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe CredentialProviders02 dei criteri MDM \_ Result01 \_ rappresenta i criteri del provider di credenziali disponibili.
+La classe \_ \_ \_ CredentialProviders02 di Mdm Policy Result01 rappresenta i criteri del provider di credenziali disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,23 +48,23 @@ class MDM_Policy_Result01_CredentialProviders02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ CredentialProviders02 dei criteri MDM** ha questi tipi di membri:
+La **classe \_ \_ \_ CredentialProviders02 di Mdm Policy Result01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ CredentialProviders02 dei criteri MDM Result01** ha queste proprietà.
+La **classe \_ \_ \_ CredentialProviders02 di Mdm Policy Result01** ha queste proprietà.
 
 <dl> <dt>
 
 [AllowPINLogon](/windows/client-management/mdm/policy-csp-credentialproviders#credentialproviders-allowpinlogon)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -72,10 +72,10 @@ Tipo di accesso: lettura/scrittura
 [BlockPicturePassword](/windows/client-management/mdm/policy-csp-credentialproviders#credentialproviders-blockpicturepassword)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -86,7 +86,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -94,7 +94,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -105,10 +105,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -125,10 +125,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

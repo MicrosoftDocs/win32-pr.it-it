@@ -1,12 +1,12 @@
 ---
-title: Proprietà GatewayEncryptedOtpCookie di IMsRdpClientTransportSettings2
-description: Specifica o Recupera il cookie crittografato per la password monouso (OTP).
+title: Proprietà IMsRdpClientTransportSettings2 GatewayEncryptedOtpCookie
+description: Specifica o recupera il cookie OTP (One-Time Password) crittografato.
 ms.assetid: 09b90231-ebe5-4165-b0e5-edba18472391
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GatewayEncryptedOtpCookie
-- Servizi Desktop remoto proprietà GatewayEncryptedOtpCookie, interfaccia IMsRdpClientTransportSettings2
-- Interfaccia IMsRdpClientTransportSettings2 Servizi Desktop remoto, proprietà GatewayEncryptedOtpCookie
+- Proprietà GatewayEncryptedOtpCookie Servizi Desktop remoto
+- Proprietà GatewayEncryptedOtpCookie Servizi Desktop remoto , interfaccia IMsRdpClientTransportSettings2
+- Interfaccia IMsRdpClientTransportSettings2 Servizi Desktop remoto , proprietà GatewayEncryptedOtpCookie
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df5463d3d576144fc0a58b543904d6d4934b68c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55f7f1cf0d73d6e18a119207e57e0aaf93729d5b25a7184f4a55110d045b189a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770741"
 ---
-# <a name="imsrdpclienttransportsettings2gatewayencryptedotpcookie-property"></a>Proprietà IMsRdpClientTransportSettings2:: GatewayEncryptedOtpCookie
+# <a name="imsrdpclienttransportsettings2gatewayencryptedotpcookie-property"></a>Proprietà IMsRdpClientTransportSettings2::GatewayEncryptedOtpCookie
 
-Specifica o Recupera il cookie crittografato per la password monouso (OTP).
+Specifica o recupera il cookie OTP (One-Time Password) crittografato.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -49,7 +49,7 @@ HRESULT get_GatewayEncryptedOtpCookie(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Specifica o Recupera il cookie OTP crittografato.
+Specifica o recupera il cookie OTP crittografato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Specifica o Recupera il cookie OTP crittografato.
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                    |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>            |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>            |
-| IID<br/>                      | IID \_ IMsRdpClientTransportSettings2 è definito come 67341688-D606-4C73-A5D2-2E0489009319<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientTransportSettings2 è definito come 67341688-D606-4c73-A5D2-2E0489009319<br/> |
 
 
 

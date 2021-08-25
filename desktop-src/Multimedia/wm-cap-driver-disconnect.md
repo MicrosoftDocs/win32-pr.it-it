@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_DRIVER_DISCONNECT (VFW. h)
-description: Il \_ \_ \_ messaggio di disconnessione del driver WM Cap disconnette un driver di acquisizione da una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capDriverDisconnect.
+title: WM_CAP_DRIVER_DISCONNECT messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP DRIVER DISCONNECT disconnette un driver di acquisizione da una finestra di \_ \_ acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro capDriverDisconnect.
 ms.assetid: a420f24a-aa7d-4788-9120-2c11e5e2c14c
 keywords:
-- WM_CAP_DRIVER_DISCONNECT messaggi multimediali di Windows
+- WM_CAP_DRIVER_DISCONNECT messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acad628cc61bbb50c56f68fda91ac87be4feb728
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6365366c6ea37b36734262d1d7a8412a7729406ff3fcc12e10ae9ba55d9ba84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803861"
 ---
-# <a name="wm_cap_driver_disconnect-message"></a>\_Messaggio di \_ disconnessione driver WM Cap \_
+# <a name="wm_cap_driver_disconnect-message"></a>Messaggio \_ DI \_ DISCONNESSIONE DEL DRIVER CAP WM \_
 
-Il messaggio di **\_ \_ \_ disconnessione del driver WM Cap disconnette** un driver di acquisizione da una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capDriverDisconnect**](/windows/desktop/api/Vfw/nf-vfw-capdriverdisconnect) .
+Il **messaggio WM CAP DRIVER \_ \_ \_ DISCONNECT** disconnette un driver di acquisizione da una finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capDriverDisconnect.**](/windows/desktop/api/Vfw/nf-vfw-capdriverdisconnect)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** se la finestra di acquisizione non è connessa a un driver di acquisizione.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se la finestra di acquisizione non è connessa a un driver di acquisizione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Restituisce **true** se l'operazione ha esito positivo o **false** se la finestr
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione GetDwordFromBlob Recupera il valore DWORD denominato da un BLOB.
+description: La funzione GetDwordFromBlob recupera il valore DWORD denominato da un BLOB.
 ms.assetid: edad74a7-b726-46d9-b49f-9984272d0a29
-title: Funzione GetDwordFromBlob (Netmon. h)
+title: Funzione GetDwordFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 064985f0f3b9a235dc1c00d683fe4b11371df87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d81492e64127e61e8750b86964c2a6c541c409dacc232a031c152376943263f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890611"
 ---
-# <a name="getdwordfromblob-function"></a>GetDwordFromBlob (funzione)
+# <a name="getdwordfromblob-function"></a>Funzione GetDwordFromBlob
 
-La funzione **GetDwordFromBlob** Recupera il valore **DWORD** denominato da un BLOB.
+La **funzione GetDwordFromBlob** recupera il valore **DWORD** denominato da un BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,44 +43,44 @@ DWORD GetDwordFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un BLOB.
+Handle a un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ in\]
+*pOwnerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al nome del proprietario del BLOB.
+Puntatore al nome del proprietario BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ in\]
+*pCategoryName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome della categoria BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ in\]
+*pTagName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al nome del tag BLOB.
 
 </dd> <dt>
 
-*pDword* \[ out\]
+*pDword* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al valore **DWORD** del BLOB.
+Puntatore al **valore DWORD** del BLOB.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che descrive l'errore.
 
@@ -92,8 +92,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

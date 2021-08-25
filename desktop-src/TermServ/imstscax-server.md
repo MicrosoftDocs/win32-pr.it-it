@@ -1,30 +1,30 @@
 ---
-title: Proprietà del server IMsTscAx (Asptlb. h)
+title: Proprietà server IMsTscAx (Asptlb.h)
 description: Specifica il nome del server a cui è connesso il controllo corrente.
 ms.assetid: 81118ddd-2662-47f5-8e9d-9c2a5056820b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà server
-- Servizi Desktop remoto proprietà server, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà server
+- Proprietà server Servizi Desktop remoto
+- Proprietà server Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà Server
+- Proprietà server Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà Server
 topic_type:
 - apiref
 api_name:
@@ -64,14 +64,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b7be04c149e2ac10c1a3e905678bd2b5f663cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8ce72d7cc26dc3fd7b60b7f1d4f26d2737980dfde88a1b31c79a59fb4335f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771001"
 ---
-# <a name="imstscaxserver-property"></a>Proprietà IMsTscAx:: Server
+# <a name="imstscaxserver-property"></a>Proprietà IMsTscAx::Server
 
 Specifica il nome del server a cui è connesso il controllo corrente.
 
@@ -98,17 +98,17 @@ Nome del nuovo server. Questo parametro può essere un nome DNS o un indirizzo I
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se i metodi hanno esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se i metodi hanno esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà deve essere impostata prima di chiamare il metodo [**Connect**](imstscax-connect.md) . Si tratta dell'unica proprietà che è necessario impostare prima della connessione.
+Questa proprietà deve essere impostata prima di chiamare [**il Connessione**](imstscax-connect.md) metodo . È l'unica proprietà che deve essere impostata prima della connessione.
 
-Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Questa proprietà restituisce **E ha \_ esito negativo** se viene chiamata quando il controllo è connesso. È possibile verificare lo stato connesso usando la proprietà [**connessa**](imstscax-connected.md) .
+Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Questa proprietà restituisce **E \_ FAIL** se viene chiamata quando il controllo è connesso. È possibile verificare lo stato connesso usando la [**proprietà Connected.**](imstscax-connected.md)
 
-Questo metodo alloca la memoria necessaria per il buffer a cui punta il parametro *pServer* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Questo metodo alloca la memoria necessaria per il buffer a cui punta il *parametro pServer.* La chiamata alle applicazioni C/C++ deve liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i client Visual Basic script.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,10 +118,10 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Asptlb. h</dt> </dl>    |
+| Intestazione<br/>                   | <dl> <dt>Asptlb.h</dt> </dl>    |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

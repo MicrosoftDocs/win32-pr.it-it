@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMediaPositionInterface recupera i puntatori dell'interfaccia IMediaPosition e IMediaSeeking del filtro.
+description: Il metodo GetMediaPositionInterface recupera i puntatori di interfaccia IMediaPosition e IMediaSeeking del filtro.
 ms.assetid: aeca4484-cecc-4d07-aa77-56221ff75699
-title: Metodo CBaseRenderer. GetMediaPositionInterface (Renbase. h)
+title: Metodo CBaseRenderer.GetMediaPositionInterface (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3d41d777b88f0e18ae1510c32b7e89024ea7bdd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12e15b297f78b3386ae9ad31e749858bad14b87e59e938ac02a3cf3a9ca002a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872331"
 ---
-# <a name="cbaserenderergetmediapositioninterface-method"></a>CBaseRenderer. GetMediaPositionInterface, metodo
+# <a name="cbaserenderergetmediapositioninterface-method"></a>Metodo CBaseRenderer.GetMediaPositionInterface
 
-Il `GetMediaPositionInterface` metodo recupera i puntatori dell'interfaccia [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) e [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
+Il metodo recupera i puntatori di interfaccia `GetMediaPositionInterface` [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) e [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) del filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ virtual HRESULT GetMediaPositionInterface(
 
 <dl> <dt>
 
-*riid* 
+*Riid* 
 </dt> <dd>
 
 Identificatore di riferimento dell'interfaccia.
 
 </dd> <dt>
 
-*PPV* 
+*Ppv* 
 </dt> <dd>
 
 Indirizzo di una variabile che riceve il puntatore a interfaccia.
@@ -59,15 +59,15 @@ Indirizzo di una variabile che riceve il puntatore a interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                         |
 |-----------------------------------------------------------------------------------------------|-------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Esito positivo.<br/>                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>     |
-| <dl> <dt>**E \_ NOinterface**</dt> </dl> | Interfaccia non supportata.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata.<br/>                 |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>     |
+| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | Interfaccia non supportata.<br/> |
 
 
 
@@ -75,9 +75,9 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro delega tutti i comandi di ricerca a un oggetto [**CRendererPosPassThru**](crendererpospassthru.md) , che li passa a upstream. Questo metodo crea l'oggetto **CRendererPosPassThru** , se non esiste ancora, ed esegue una query per l'interfaccia richiesta.
+Il filtro delega tutti i comandi di ricerca a un oggetto [**CRendererPosPassThru,**](crendererpospassthru.md) che li passa a monte. Questo metodo crea **l'oggetto CRendererPosPassThru,** se non esiste ancora, ed esegue una query per l'interfaccia richiesta.
 
-La variabile membro [**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-pposition.md) archivia un puntatore all'oggetto **CRendererPosPassThru** .
+La [**variabile membro CBaseRenderer::m \_ pPosition**](cbaserenderer-m-pposition.md) archivia un puntatore all'oggetto **CRendererPosPassThru.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ La variabile membro [**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-ppositi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Questa interfaccia incapsula la funzionalità di patch mesh.
+description: Questa interfaccia incapsula la funzionalità patch mesh.
 ms.assetid: c70c0fe0-b695-4ad9-b0c6-7854cf8f7593
-title: Interfaccia ID3DXPatchMesh (D3DX9Mesh. h)
+title: Interfaccia ID3DXPatchMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,53 +14,53 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f1f13e6abe3a164e8027ddcb6bb33e9f0ca618fb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44899ccee6f13aa25b01e284df5a892196d657610c3f89d546fc0b646eeaa069
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856281"
 ---
 # <a name="id3dxpatchmesh-interface"></a>Interfaccia ID3DXPatchMesh
 
-Questa interfaccia incapsula la funzionalità di patch mesh.
+Questa interfaccia incapsula la funzionalità patch mesh.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DXPatchMesh** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXPatchMesh** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DXPatchMesh** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXPatchMesh** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DXPatchMesh** dispone di questi metodi.
+**L'interfaccia ID3DXPatchMesh** include questi metodi.
 
 
 
 | Metodo                                                                           | Descrizione                                                                                     |
 |:---------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
-| [**CloneMesh**](id3dxpatchmesh--clonemesh.md)                                   | Crea una nuova mesh della patch con la dichiarazione di vertice specificata.<br/>                      |
-| [**GenerateAdjacency**](id3dxpatchmesh--generateadjacency.md)                   | Generare un elenco di bordi della rete e le patch che condividono ogni bordo.<br/>                  |
+| [**CloneMesh**](id3dxpatchmesh--clonemesh.md)                                   | Crea una nuova mesh di patch con la dichiarazione di vertice specificata.<br/>                      |
+| [**GenerateAdjacency**](id3dxpatchmesh--generateadjacency.md)                   | Generare un elenco di bordi di mesh e le patch che condividono ogni bordo.<br/>                  |
 | [**GetControlVerticesPerPatch**](id3dxpatchmesh--getcontrolverticesperpatch.md) | Ottiene il numero di vertici di controllo per patch.<br/>                                       |
 | [**GetDeclaration**](id3dxpatchmesh--getdeclaration.md)                         | Ottiene la dichiarazione del vertice.<br/>                                                         |
 | [**GetDevice**](id3dxpatchmesh--getdevice.md)                                   | Ottiene il dispositivo che ha creato la mesh.<br/>                                               |
 | [**GetDisplaceParam**](id3dxpatchmesh--getdisplaceparam.md)                     | Ottiene i parametri di spostamento della geometria mesh.<br/>                                          |
-| [**GetIndexBuffer**](id3dxpatchmesh--getindexbuffer.md)                         | Ottiene il buffer dell'indice mesh.<br/>                                                          |
-| [**GetNumPatches**](id3dxpatchmesh--getnumpatches.md)                           | Ottiene il numero di patch nella rete.<br/>                                              |
-| [**GetNumVertices**](id3dxpatchmesh--getnumvertices.md)                         | Ottiene il numero di vertici nella rete.<br/>                                             |
+| [**GetIndexBuffer**](id3dxpatchmesh--getindexbuffer.md)                         | Ottiene la rete index buffer.<br/>                                                          |
+| [**GetNumPatches**](id3dxpatchmesh--getnumpatches.md)                           | Ottiene il numero di patch nella mesh.<br/>                                              |
+| [**GetNumVertices**](id3dxpatchmesh--getnumvertices.md)                         | Ottiene il numero di vertici nella mesh.<br/>                                             |
 | [**GetOptions**](id3dxpatchmesh--getoptions.md)                                 | Ottiene il tipo di patch.<br/>                                                              |
 | [**GetPatchInfo**](id3dxpatchmesh--getpatchinfo.md)                             | Ottiene gli attributi della patch.<br/>                                                    |
-| [**GetTessSize**](id3dxpatchmesh--gettesssize.md)                               | Ottiene le dimensioni della mesh tassellati, dato un livello a mosaico.<br/>                   |
-| [**GetVertexBuffer**](id3dxpatchmesh--getvertexbuffer.md)                       | Ottiene il buffer del vertice mesh.<br/>                                                         |
+| [**GetTessSize**](id3dxpatchmesh--gettesssize.md)                               | Ottiene le dimensioni della mesh a tessellazione, dato un livello a trama.<br/>                   |
+| [**GetVertexBuffer**](id3dxpatchmesh--getvertexbuffer.md)                       | Ottiene il buffer dei vertici della mesh.<br/>                                                         |
 | [**LockAttributeBuffer**](id3dxpatchmesh--lockattributebuffer.md)               | Blocca il buffer dell'attributo.<br/>                                                          |
-| [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md)                       | Blocca il buffer dell'indice.<br/>                                                               |
-| [**LockVertexBuffer**](id3dxpatchmesh--lockvertexbuffer.md)                     | Blocca il buffer dei vertici.<br/>                                                              |
-| [**Ottimizzare**](id3dxpatchmesh--optimize.md)                                     | Ottimizza la mesh della patch per un efficiente mosaico.<br/>                                 |
+| [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md)                       | Bloccare il index buffer.<br/>                                                               |
+| [**LockVertexBuffer**](id3dxpatchmesh--lockvertexbuffer.md)                     | Bloccare il buffer dei vertici.<br/>                                                              |
+| [**Ottimizzazione**](id3dxpatchmesh--optimize.md)                                     | Ottimizza la mesh di patch per un'efficiente applicazione a più elementi.<br/>                                 |
 | [**SetDisplaceParam**](id3dxpatchmesh--setdisplaceparam.md)                     | Imposta i parametri di spostamento della geometria mesh.<br/>                                          |
-| [**Conteggiarla suddividerla**](id3dxpatchmesh--tessellate.md)                                 | Esegue lo schema a mosaico uniforme in base al livello del mosaico.<br/>                       |
-| [**TessellateAdaptive**](id3dxpatchmesh--tessellateadaptive.md)                 | Esegue lo schema a mosaico adattivo basato sul criterio a mosaico adattivo basato su z.<br/> |
+| [**A tessellate**](id3dxpatchmesh--tessellate.md)                                 | Esegue un'operazione a più livelli uniforme in base al livello a più livelli.<br/>                       |
+| [**TessellateAdaptive**](id3dxpatchmesh--tessellateadaptive.md)                 | Esegue il tessellamento adattivo in base al criterio a tessellazione adattiva basato su z.<br/> |
 | [**UnlockAttributeBuffer**](id3dxpatchmesh--unlockattributebuffer.md)           | Sbloccare il buffer dell'attributo.<br/>                                                         |
-| [**UnlockIndexBuffer**](id3dxpatchmesh--unlockindexbuffer.md)                   | Sbloccare il buffer dell'indice.<br/>                                                             |
+| [**UnlockIndexBuffer**](id3dxpatchmesh--unlockindexbuffer.md)                   | Sbloccare il index buffer.<br/>                                                             |
 | [**UnlockVertexBuffer**](id3dxpatchmesh--unlockvertexbuffer.md)                 | Sbloccare il buffer dei vertici.<br/>                                                            |
 
 
@@ -69,11 +69,11 @@ L'interfaccia **ID3DXPatchMesh** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Una mesh patch è un reticolo costituito da una serie di patch.
+Una mesh di patch è una mesh costituita da una serie di patch.
 
-Per ottenere l'interfaccia **ID3DXPatchMesh** , chiamare la funzione [**D3DXCreatePatchMesh**](d3dxcreatepatchmesh.md) .
+Per ottenere **l'interfaccia ID3DXPatchMesh,** chiamare [**la funzione D3DXCreatePatchMesh.**](d3dxcreatepatchmesh.md)
 
-Il tipo LPD3DXPATCHMESH è definito come puntatore all'interfaccia **ID3DXPatchMesh** , come indicato di seguito:
+Il tipo LPD3DXPATCHMESH viene definito come puntatore **all'interfaccia ID3DXPatchMesh,** come indicato di seguito:
 
 
 ```
@@ -88,8 +88,8 @@ typedef struct ID3DXPatchMesh *LPD3DXPATCHMESH;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

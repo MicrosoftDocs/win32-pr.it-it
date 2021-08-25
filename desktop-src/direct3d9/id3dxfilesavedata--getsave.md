@@ -1,7 +1,7 @@
 ---
 description: Recupera un puntatore a questo nodo dati del file ID3DXFileSaveObject.
 ms.assetid: 092d1c6f-0a53-4b8e-84ec-bc76f3f647ac
-title: 'Metodo ID3DXFileSaveData:: getsave (D3DX9Xof. h)'
+title: Metodo ID3DXFileSaveData::GetSave (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 4e23296ad0a866a0ad289a9a587c433411ef9bb8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 05b30c34f7e9d1383270c06ee70aca63d3f24b0f4f721d6859366794f2df361a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856642"
 ---
-# <a name="id3dxfilesavedatagetsave-method"></a>Metodo ID3DXFileSaveData:: getsave
+# <a name="id3dxfilesavedatagetsave-method"></a>Metodo ID3DXFileSaveData::GetSave
 
-Recupera un puntatore a questo nodo dati del file [**ID3DXFileSaveObject**](id3dxfilesaveobject.md) .
+Recupera un puntatore a questo nodo dati del file [**ID3DXFileSaveObject.**](id3dxfilesaveobject.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetSave(
 
 <dl> <dt>
 
-*ppObj* \[ out\]
+*ppObj* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXFileSaveObject**](id3dxfilesaveobject.md)\*\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXFileSaveObject**](id3dxfilesaveobject.md) che rappresenta questo nodo dati del file.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXFileSaveObject**](id3dxfilesaveobject.md) che rappresenta questo nodo dati file.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXFileSaveObject**](id3dxfilesa
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

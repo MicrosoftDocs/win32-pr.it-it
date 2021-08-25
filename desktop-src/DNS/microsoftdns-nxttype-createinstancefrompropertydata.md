@@ -1,11 +1,11 @@
 ---
-title: Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS_NXTType
-description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse successivo (NXT).
+title: Metodo CreateInstanceFromPropertyData della MicrosoftDNS_NXTType classe
+description: Il metodo CreateInstanceFromPropertyData crea un'istanza di un record di risorse Next (NXT).
 ms.assetid: d0e4f3bf-f835-4341-a614-539975e6be11
 keywords:
 - DNS del metodo CreateInstanceFromPropertyData
-- DNS del metodo CreateInstanceFromPropertyData, classe MicrosoftDNS_NXTType
-- Classe MicrosoftDNS_NXTType DNS, metodo CreateInstanceFromPropertyData
+- Metodo CreateInstanceFromPropertyData DNS, MicrosoftDNS_NXTType classe
+- MicrosoftDNS_NXTType classe DNS, metodo CreateInstanceFromPropertyData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee00cd0afdb6ac629a981dbdb586a30252eac1d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1075574ec2e2fecceacc24701f67105ac9796a41a45e20c468a9021d7ff20899
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815671"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_nxttype-class"></a>Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ NXTType
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_nxttype-class"></a>Metodo CreateInstanceFromPropertyData della classe \_ NXTType MicrosoftDNS
 
-Il metodo **CreateInstanceFromPropertyData** crea un'istanza di un record di risorse successivo (NXT).
+Il **metodo CreateInstanceFromPropertyData** crea un'istanza di un record di risorse Next (NXT).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,31 +49,31 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
 FQDN o indirizzo IP del server DNS che contiene questo RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore per la zona, la cache o l'istanza di RootHints che contiene questo RR.
+Nome del contenitore per l'istanza di Zone, Cache o RootHints che contiene questo RR.
 
 </dd> <dt>
 
-*Proprietarioname* \[ in\]
+*OwnerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del proprietario per l'RR.
+Nome del proprietario per RR.
 
 </dd> <dt>
 
 *RecordClass* \[ in, facoltativo\]
 </dt> <dd>
 
-Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
+Classe di RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 
 
@@ -82,7 +82,7 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Esiodo)<br/>   |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -90,31 +90,31 @@ Classe dell'RR. Il valore predefinito è 1. I valori seguenti sono validi.
 
 </dd> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*NextDomainName* \[ in\]
+*NextDomainName* \[ Pollici\]
 </dt> <dd>
 
 Nome di dominio successivo.
 
 </dd> <dt>
 
-*Tipi* \[ di in\]
+*Tipi* \[ Pollici\]
 </dt> <dd>
 
-Elenco separato da spazi dei tasti di scelta del tipo RR per il nome del proprietario del record di risorse NXT.
+Elenco delimitato da spazi dei valori mnemoici di tipo RR per il nome del proprietario del record di risorse NXT.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento al nuovo oggetto.
+Riferimento al nuovo oggetto .
 
 </dd> </dl>
 
@@ -131,7 +131,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -139,13 +139,13 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_NXTType MicrosoftDNS**](microsoftdns-nxttype.md)
+[**MicrosoftDNS \_ NXTType**](microsoftdns-nxttype.md)
 </dt> <dt>
 
-[**Metodo Modify della \_ classe NXTType di MicrosoftDNS**](microsoftdns-nxttype-modify.md)
+[**Metodo Modify della classe \_ NXTType MicrosoftDNS**](microsoftdns-nxttype-modify.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

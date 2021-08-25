@@ -1,7 +1,7 @@
 ---
-description: Recupera le informazioni sulla sessione e sulla stazione relative all'acquisizione corrente.
+description: Recupera le informazioni di sessione e stazione sull'acquisizione corrente.
 ms.assetid: 7fc436fc-b569-402d-a1ea-c1bb65de8a9e
-title: 'Metodo IStats:: GetConversationStatistics (Netmon. h)'
+title: Metodo IStats::GetConversationStatistics (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 030fafb4ccf041c2804179f8adf0088ca3fba845
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e76bad23d79e261a27df5b83a94d4e477b21cde5057bb2587ffb49c93382df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890341"
 ---
-# <a name="istatsgetconversationstatistics-method"></a>IStats:: GetConversationStatistics (metodo)
+# <a name="istatsgetconversationstatistics-method"></a>Metodo IStats::GetConversationStatistics
 
-Il metodo **GetConversationStatistics** recupera le informazioni sulla sessione e sulla stazione relative all'acquisizione corrente.
+Il **metodo GetConversationStatistics** recupera le informazioni di sessione e stazione sull'acquisizione corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,44 +44,44 @@ HRESULT STDMETHODCALLTYPE GetConversationStatistics(
 
 <dl> <dt>
 
-*nSessions* \[ out\]
+*nSessions* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un valore DWORD che contiene il numero di [*sessioni*](s.md) registrate per l'acquisizione corrente.
+Puntatore a un valore DWORD che contiene il [*numero*](s.md) di sessioni registrate per l'acquisizione corrente.
 
 </dd> <dt>
 
-*lpSessionStats* \[ out\]
+*lpSessionStats* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**SESSIONSTATS**](sessionstats.md) .
+Puntatore a una [**struttura SESSIONSTATS.**](sessionstats.md)
 
 </dd> <dt>
 
-*nStations* \[ out\]
+*nStations* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un valore DWORD che contiene il numero di [*stazioni*](s.md) registrate per l'acquisizione corrente.
+Puntatore a un valore DWORD che contiene il numero [*di*](s.md) stazioni registrate per l'acquisizione corrente.
 
 </dd> <dt>
 
-*lpStationStats* \[ out\]
+*lpStationStats* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**STATIONSTATS**](stationstats.md) .
+Puntatore a una [**struttura STATIONSTATS.**](stationstats.md)
 
 </dd> <dt>
 
-*fClearAfterReading* \[ in\]
+*fClearAfterReading* \[ Pollici\]
 </dt> <dd>
 
-Flag utilizzato per indicare Network Monitor per cancellare l'archiviazione interna delle strutture [**SESSIONSTATS**](sessionstats.md) e [**STATIONSTATS**](stationstats.md) dopo il recupero dei dati correnti.
+Flag utilizzato per indicare Network Monitor l'archiviazione interna delle strutture [**SESSIONSTATS**](sessionstats.md) e [**STATIONSTATS**](stationstats.md) dopo il recupero dei dati correnti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti:
 
@@ -89,10 +89,10 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                                   | Descrizione                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ non \_ connesso**</dt> </dl>          | L'oggetto NPP non è connesso alla rete. Chiamare [**IStats:: Connect**](istats-connect.md) per connettere l'oggetto NPP alla rete.<br/>                                                                                                      |
-| <dl> <dt>**NMERR \_ non \_ acquisizione**</dt> </dl>          | L'oggetto NPP non sta acquisendo dati. Chiamare [**IStats:: Start**](istats-start.md) per avviare l'acquisizione.<br/>                                                                                                                                 |
-| <dl> <dt>**NMERR \_ non \_ \_ solo statistiche**</dt> </dl>        | L'oggetto NPP è connesso alla rete, ma non con il metodo [**IStats:: Connect**](istats-connect.md) .<br/>                                                                                                                         |
-| <dl> <dt>**NMERR \_ Nessuna \_ statistica di conversazione \_**</dt> </dl> | La configurazione per questa connessione è impostata in modo da non salvare le statistiche di conversazione. Per salvare le statistiche di conversazione, arrestare l'acquisizione, impostare **NoConversationStats = Yes** nel BLOB di configurazione, quindi riavviare l'acquisizione.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>          | NPP non è connesso alla rete. Chiamare [**IStats::Connessione**](istats-connect.md) per connettere NPP alla rete.<br/>                                                                                                      |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>          | NPP non acquisisce dati. Chiamare [**IStats::Start**](istats-start.md) per avviare l'acquisizione.<br/>                                                                                                                                 |
+| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl>        | NPP è connesso alla rete, ma non con il [**metodo IStats::Connessione.**](istats-connect.md)<br/>                                                                                                                         |
+| <dl> <dt>**NO \_ CONVERSATION \_ \_ STATS DI NMERR**</dt> </dl> | La configurazione per questa connessione è impostata in modo da non salvare le statistiche della conversazione. Per salvare le statistiche della conversazione, arrestare l'acquisizione, **impostare NoConversationStats = YES** nel BLOB di configurazione e quindi riavviare l'acquisizione.<br/> |
 
 
 
@@ -100,9 +100,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato solo mentre è in corso l'acquisizione dei dati; Quando l'acquisizione corrente viene sospesa, una chiamata a questo metodo avrà esito negativo.
+Questo metodo può essere chiamato solo mentre è in corso Data Capture. Quando l'acquisizione corrente viene sospesa, una chiamata a questo metodo non avrà esito positivo.
 
-Per avviare un'acquisizione, chiamare il metodo [**IStats:: Start**](istats-start.md) . Per recuperare altri tipi di statistiche, chiamare [**IStats:: GetTotalStatistics**](istats-gettotalstatistics.md).
+Per avviare un'acquisizione, chiamare il [**metodo IStats::Start.**](istats-start.md) Per recuperare altri tipi di statistiche, chiamare [**IStats::GetTotalStatistics**](istats-gettotalstatistics.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,7 +112,7 @@ Per avviare un'acquisizione, chiamare il metodo [**IStats:: Start**](istats-star
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -121,16 +121,16 @@ Per avviare un'acquisizione, chiamare il metodo [**IStats:: Start**](istats-star
 
 <dl> <dt>
 
-[**IStats**](istats.md)
+[**IStat**](istats.md)
 </dt> <dt>
 
-[**IStats:: GetTotalStatistics**](istats-gettotalstatistics.md)
+[**IStats::GetTotalStatistics**](istats-gettotalstatistics.md)
 </dt> <dt>
 
-[**IStats:: Start**](istats-start.md)
+[**IStats::Start**](istats-start.md)
 </dt> <dt>
 
-[**IStats:: Connect**](istats-connect.md)
+[**IStats::Connessione**](istats-connect.md)
 </dt> <dt>
 
 [**SESSIONSTATS**](sessionstats.md)

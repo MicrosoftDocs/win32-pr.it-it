@@ -1,11 +1,11 @@
 ---
-title: Attributo Trust-Partner
-description: Nome del dominio con il quale esiste una relazione di trust.
+title: Trust-Partner attributo
+description: Nome del dominio con cui esiste un trust.
 ms.assetid: 0b7c8e78-614b-46dd-8616-40d75b461639
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Trust-Partner attribute
-- Schema AD dell'attributo trustPartner
+- Trust-Partner schema AD dell'attributo
+- Attributo trustPartner Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 201a89e178515b270302b4d8541af64a63ad6813
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 43ce551bbf23c7eec378088a0a8d9a9ced25612e40cae1766c55099bb4e45b31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835441"
 ---
-# <a name="trust-partner-attribute"></a>Attributo Trust-Partner
+# <a name="trust-partner-attribute"></a>Trust-Partner attributo
 
-Nome del dominio con il quale esiste una relazione di trust.
+Nome del dominio con cui esiste un trust.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Trust-Partner                               |
-| LDAP-Display-Name | trustPartner                                |
+| Ldap-Display-Name | trustPartner                                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
-| Frequenza di aggiornamento  | Quando viene creata una nuova relazione di trust.                |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
+| Frequenza di aggiornamento  | Quando viene creato un nuovo trust.                |
 | Attribute-Id      | 1.2.840.113556.1.4.133                      |
-| System-ID-GUID    | bf967a5d-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a5d-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome del dominio con il quale esiste una relazione di trust.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Vero                                                 |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

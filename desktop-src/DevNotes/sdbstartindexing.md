@@ -1,7 +1,7 @@
 ---
-description: Consente la creazione e la modifica di indici per il database specificato.
+description: Abilita la creazione e la modifica dell'indice per il database specificato.
 ms.assetid: f780034e-6963-423c-8ffa-9fbe98dca7e1
-title: SdbStartIndexing (funzione)
+title: Funzione SdbStartIndexing
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e3324b4cb0d42ca33ee7c3234a1acc099adcb743
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3643936511755642cf9997709faa69d7bb3e902e5cf3e9dd2b0f56bda681b381
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815271"
 ---
-# <a name="sdbstartindexing-function"></a>SdbStartIndexing (funzione)
+# <a name="sdbstartindexing-function"></a>Funzione SdbStartIndexing
 
-Consente la creazione e la modifica di indici per il database specificato.
+Abilita la creazione e la modifica dell'indice per il database specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ BOOL WINAPI SdbStartIndexing(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*iiWhich* \[ in\]
+*iiWhich* \[ Pollici\]
 </dt> <dd>
 
 Identificatore dell'indice.
@@ -56,7 +56,7 @@ Identificatore dell'indice.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

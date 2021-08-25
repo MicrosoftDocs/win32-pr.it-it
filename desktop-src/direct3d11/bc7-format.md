@@ -1,78 +1,78 @@
 ---
 title: Formato BC7
-description: Il formato BC7 è un formato di compressione di trama usato per la compressione di alta qualità dei dati RGB e RGBA.
+description: Il formato BC7 è un formato di compressione della trama usato per la compressione di alta qualità dei dati RGB e RGBA.
 ms.assetid: DF333106-293E-4B3E-A1EB-B0BF0ADBAC72
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9b64c3d4a8b5e960077a9f33de82ff08cd4bbc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0bd48826cc0c02be6d15a837c272442c0931e9660f507a90cb491acf4d5820ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858221"
 ---
 # <a name="bc7-format"></a>Formato BC7
 
-Il formato BC7 è un formato di compressione di trama usato per la compressione di alta qualità dei dati RGB e RGBA.
+Il formato BC7 è un formato di compressione della trama usato per la compressione di alta qualità dei dati RGB e RGBA.
 
--   [Informazioni sul formato BC7/DXGI \_ \_ BC7](/windows)
--   [Implementazione di BC7](#bc7-implementation)
+-   [Informazioni su BC7/DXGI \_ FORMAT \_ BC7](/windows)
+-   [Implementazione bc7](#bc7-implementation)
 -   [Decodifica del formato BC7](#decoding-the-bc7-format)
 -   [Argomenti correlati](#related-topics)
 
-Per informazioni sulle modalità di blocco del formato BC7, vedere [riferimento alla modalità di formattazione BC7](bc7-format-mode-reference.md).
+Per informazioni sulle modalità di blocco del formato BC7, vedere Bc7 Format Mode Reference (Informazioni [di riferimento sulla modalità di formato BC7).](bc7-format-mode-reference.md)
 
-## <a name="about-bc7dxgi_format_bc7"></a>Informazioni sul formato BC7/DXGI \_ \_ BC7
+## <a name="about-bc7dxgi_format_bc7"></a>Informazioni su BC7/DXGI \_ FORMAT \_ BC7
 
-BC7 viene specificato dai valori di enumerazione del formato DXGI seguenti \_ :
+BC7 viene specificato dai valori di enumerazione DXGI \_ FORMAT seguenti:
 
--   **DXGI \_ FORMATTARE \_ BC7 con \_ tipo**.
--   **DXGI \_ FORMATTARE \_ BC7 \_ UNORM**.
--   **DXGI \_ FORMATTARE \_ BC7 \_ UNORM \_ sRGB**.
+-   **DXGI \_ FORMAT \_ BC7 \_ TYPELESS**.
+-   **DXGI \_ FORMAT \_ BC7 \_ UNORM**.
+-   **DXGI \_ FORMAT \_ BC7 \_ UNORM \_ SRGB**.
 
-Il formato BC7 può essere usato per le risorse di trama [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluse le matrici), Texture3D o TextureCube (incluse le matrici). Analogamente, questo formato si applica a qualsiasi superficie mappa MIP associata a tali risorse.
+Il formato BC7 può essere usato per le risorse [trama Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluse le matrici), Texture3D o TextureCube (incluse le matrici). Analogamente, questo formato si applica a qualsiasi superficie mappa MIP associata a queste risorse.
 
-BC7 usa una dimensione fissa a blocchi di 16 byte (128 bit) e una dimensione del riquadro fissa di Texel 4x4. Come per i formati BC precedenti, le immagini di trama più grandi delle dimensioni del riquadro supportate (4x4) vengono compresse usando più blocchi. Questa identità di indirizzamento si applica anche alle immagini tridimensionali e alle matrici MIP, CubeMaps e di trama. Tutti i riquadri immagine devono avere lo stesso formato.
+BC7 usa una dimensione di blocco fissa di 16 byte (128 bit) e una dimensione di riquadro fissa di 4x4 texel. Come per i formati BC precedenti, le immagini di trama di dimensioni superiori alle dimensioni del riquadro supportate (4x4) vengono compresse usando più blocchi. Questa identità di indirizzamento si applica anche a immagini tridimensionali e mappe MIP, mappe cubi e matrici di trame. Tutti i riquadri immagine devono avere lo stesso formato.
 
-BC7 comprime sia immagini di dati a virgola fissa a tre canali (RGB) che a quattro canali (RGBA). In genere, i dati di origine sono a 8 bit per componente colore (canale), sebbene il formato sia in grado di codificare i dati di origine con bit più alti per componente colore. Tutti i riquadri immagine devono avere lo stesso formato.
+BC7 comprime sia immagini di dati a virgola fissa a tre canali (RGB) che a 4 canali (RGBA). In genere, i dati di origine sono a 8 bit per componente di colore (canale), anche se il formato è in grado di codificare i dati di origine con bit più elevati per componente colore. Tutti i riquadri immagine devono avere lo stesso formato.
 
 Il decodificatore BC7 esegue la decompressione prima dell'applicazione del filtro della trama.
 
-L'hardware di decompressione di BC7 deve essere leggermente accurato; ovvero, l'hardware deve restituire risultati identici ai risultati restituiti dal decodificatore descritto in questo documento.
+L'hardware di decompressione BC7 deve essere bit accurato; ciò significa che l'hardware deve restituire risultati identici ai risultati restituiti dal decodificatore descritto in questo documento.
 
-## <a name="bc7-implementation"></a>Implementazione di BC7
+## <a name="bc7-implementation"></a>Implementazione bc7
 
-Un'implementazione di BC7 può specificare una delle 8 modalità, con la modalità specificata nel bit meno significativo del blocco a 16 byte (128 bit). La modalità è codificata da zero o più bit con un valore pari a 0 seguito da 1.
+Un'implementazione BC7 può specificare una delle 8 modalità, con la modalità specificata nel bit meno significativo del blocco a 16 byte (128 bit). La modalità è codificata da zero o più bit con un valore pari a 0 seguito da 1.
 
-Un blocco BC7 può contenere più coppie di endpoint. Ai fini di questa documentazione, il set di indici che corrisponde a una coppia di endpoint può essere definito "subset". Inoltre, in alcune modalità di blocco, la rappresentazione dell'endpoint viene codificata in un form che, ai fini di questa documentazione, deve essere denominata "RBGP", dove il bit "P" rappresenta un bit meno significativo condiviso per i componenti di colore dell'endpoint. Se, ad esempio, la rappresentazione dell'endpoint per il formato è "RGB 5.5.5.1", l'endpoint viene interpretato come valore 6.6.6 RGB, dove lo stato del P-bit definisce il bit meno significativo di ogni componente. Analogamente, per i dati di origine con un canale alfa, se la rappresentazione per il formato è "RGBAP 5.5.5.5.1", l'endpoint è interepreted come RGBA 6.6.6.6. A seconda della modalità di blocco, è possibile specificare il bit meno significativo condiviso per entrambi gli endpoint di un subset singolarmente (2 P-bit per subset) o condivisi tra endpoint di un subset (1 P-bit per subset).
+Un blocco BC7 può contenere più coppie di endpoint. Ai fini di questa documentazione, il set di indici che corrispondono a una coppia di endpoint può essere definito "subset". Inoltre, in alcune modalità a blocchi, la rappresentazione dell'endpoint viene codificata in un formato che, anche in questo caso, ai fini di questa documentazione, deve essere definito "RBGP", dove il bit "P" rappresenta un bit condiviso meno significativo per i componenti di colore dell'endpoint. Ad esempio, se la rappresentazione dell'endpoint per il formato è "RGB 5.5.5.1", l'endpoint viene interpretato come un valore RGB 6.6.6, dove lo stato del bit P definisce il bit meno significativo di ogni componente. Analogamente, per i dati di origine con un canale alfa, se la rappresentazione per il formato è "RGBAP 5.5.5.5.1", l'endpoint viene interpretato come RGBA 6.6.6.6. A seconda della modalità di blocco, è possibile specificare il bit meno significativo condiviso per entrambi gli endpoint di un subset singolarmente (2 bit P per subset) o condivisi tra gli endpoint di un subset (1 P-bit per subset).
 
-Per i blocchi BC7 che non codificano in modo esplicito il componente alfa, un blocco BC7 è costituito da bit in modalità, bit di partizione, endpoint compressi, indici compressi e un P-bit facoltativo. In questi blocchi gli endpoint hanno una rappresentazione solo RGB e il componente alfa viene decodificato come 1,0 per tutti i Texel nei dati di origine.
+Per i blocchi BC7 che non codificano in modo esplicito il componente alfa, un blocco BC7 è costituito da bit di modalità, bit di partizione, endpoint compressi, indici compressi e un P-bit facoltativo. In questi blocchi gli endpoint hanno una rappresentazione solo RGB e il componente alfa viene decodificato come 1.0 per tutti i texel nei dati di origine.
 
-Per i blocchi BC7 con componenti combinati di colore e alfa, un blocco è costituito da bit in modalità, endpoint compressi, indici compressi e bit di partizione facoltativi e un P-bit. In questi blocchi, i colori dell'endpoint sono espressi in formato RGBA e i valori dei componenti alfa vengono interpolati insieme ai valori dei componenti dei colori.
+Per i blocchi BC7 che hanno componenti colore e alfa combinati, un blocco è costituito da bit di modalità, endpoint compressi, indici compressi e bit di partizione facoltativi e P-bit. In questi blocchi, i colori dell'endpoint sono espressi in formato RGBA e i valori dei componenti alfa vengono interpolati insieme ai valori del componente colore.
 
-Per i blocchi BC7 con componenti di colore e alfa distinti, un blocco è costituito da bit in modalità, bit di rotazione, endpoint compressi, indici compressi e un bit del selettore di indice facoltativo. Questi blocchi hanno un vettore RGB effettivo \[ R, G, B \] e un canale alfa scalare \[ a \] codificato separatamente.
+Per i blocchi BC7 con componenti di colore e alfa separati, un blocco è costituito da bit di modalità, bit di rotazione, endpoint compressi, indici compressi e un bit del selettore di indice facoltativo. Questi blocchi hanno un vettore RGB R, G, B e un canale \[ \] alfa scalare A \[ \] codificati separatamente.
 
 Nella tabella seguente sono elencati i componenti di ogni tipo di blocco.
 
 
 
-| Il blocco BC7 contiene...     | bit della modalità | bit di rotazione | bit selettore indice | bit partizione | endpoint compressi | P-bit    | indici compressi |
+| Il blocco BC7 contiene...     | bit della modalità | bit di rotazione | bit del selettore di indice | bit di partizione | endpoint compressi | P-bit    | indici compressi |
 |---------------------------|-----------|---------------|--------------------|----------------|----------------------|----------|--------------------|
-| solo componenti colori     | necessario  | N/D           | N/D                | necessario       | necessario             | facoltative | necessario           |
-| colore + Alpha combinato    | necessario  | N/D           | N/D                | facoltative       | necessario             | facoltative | necessario           |
-| colore e alfa separati | necessario  | necessario      | facoltative           | N/D            | necessario             | N/D      | necessario           |
+| Solo componenti a colori     | necessario  | N/D           | N/D                | necessario       | necessario             | facoltative | necessario           |
+| combinazione di colore e alfa    | necessario  | N/D           | N/D                | facoltative       | necessario             | facoltative | necessario           |
+| colore e valori alfa separati | necessario  | necessario      | facoltative           | N/A            | necessario             | N/A      | necessario           |
 
 
 
- 
+ 
 
-BC7 definisce una tavolozza di colori su una linea approssimativa tra due endpoint. Il valore della modalità determina il numero di coppie di endpoint di interpolazione per blocco. BC7 archivia un indice tavolozza per Texel.
+BC7 definisce una tavolozza di colori su una linea approssimativa tra due endpoint. Il valore mode determina il numero di coppie di endpoint di interpolazione per blocco. BC7 archivia un indice della tavolozza per ogni texel.
 
-Per ogni subset di indici che corrisponde a una coppia di endpoint, il codificatore corregge lo stato di un bit dei dati dell'indice compresso per quel subset. Questa operazione viene eseguita scegliendo un ordine di endpoint che consente all'indice per l'indice "correzione" designato di impostare il bit più significativo su 0 e che può quindi essere ignorato, salvando un bit per ogni subset. Per le modalità di blocco con un solo subset, l'indice di correzione è sempre indice 0.
+Per ogni subset di indici che corrisponde a una coppia di endpoint, il codificatore corregge lo stato di un bit dei dati dell'indice compresso per tale subset. A tale scopo, sceglie un ordine dell'endpoint che consente all'indice per l'indice di "correzione" designato di impostare il bit più significativo su 0 e che può quindi essere eliminato, salvando un bit per subset. Per le modalità a blocchi con un solo subset, l'indice di correzione è sempre l'indice 0.
 
 ## <a name="decoding-the-bc7-format"></a>Decodifica del formato BC7
 
-Lo pseudocodice seguente illustra i passaggi per decomprimere il pixel in corrispondenza di (x, y) in base al blocco BC7 a 16 byte.
+Lo pseudocodice seguente illustra i passaggi per decomprimere il pixel in corrispondenza di (x,y) in base al blocco BC7 a 16 byte.
 
 ``` syntax
 decompress_bc7(x, y, block)
@@ -125,7 +125,7 @@ decompress_bc7(x, y, block)
 }
 ```
 
-Lo pseudocodice di seguente descrive i passaggi per decodificare completamente i componenti alfa e del colore dell'endpoint per ogni subset dato un blocco BC7 a 16 byte.
+Lo pseudocodice seguente descrive i passaggi per decodificare completamente il colore dell'endpoint e i componenti alfa per ogni subset in base a un blocco BC7 a 16 byte.
 
 ``` syntax
 fully_decode_endpoints(endpoint_array, mode, block)
@@ -185,7 +185,7 @@ fully_decode_endpoints(endpoint_array, mode, block)
 }
 ```
 
-Per generare ogni componente interpolato per ogni subset, usare l'algoritmo seguente: lasciare che "c" sia il componente da generare. consentire a "E0" di essere il componente dell'endpoint 0 del sottoinsieme; e consentono a "E1" di essere il componente dell'endpoint 1 del sottoinsieme.
+Per generare ogni componente interpolato per ogni subset, usare l'algoritmo seguente: lasciare che "c" sia il componente da generare; lasciare che "e0" sia il componente dell'endpoint 0 del subset; e lasciare che "e1" sia il componente dell'endpoint 1 del subset.
 
 ``` syntax
 UINT16 aWeight2[] = {0, 21, 43, 64};
@@ -203,7 +203,7 @@ UINT8 interpolate(UINT8 e0, UINT8 e1, UINT8 index, UINT8 indexprecision)
 }
 ```
 
-Nello pseudocodice seguente viene illustrato come estrarre gli indici e i conteggi dei bit per i componenti colore e alfa. I blocchi con colore separato e Alpha hanno anche due set di dati di indice: uno per il canale vettoriale e uno per il canale scalare. Per la modalità 4, questi indici hanno larghezze diverse (2 o 3 bit) ed esiste un selettore a un bit che specifica se i dati vettoriali o scalari usano gli indici a 3 bit. L'estrazione del conteggio dei bit alfa è simile all'estrazione del numero di bit di colore, ma con un comportamento inverso basato sul bit **idxMode** .
+Lo pseudocodice seguente illustra come estrarre indici e conteggi di bit per i componenti di colore e alfa. I blocchi con colore e alfa separati hanno anche due set di dati di indice: uno per il canale vettoriale e uno per il canale scalare. Per la modalità 4, questi indici hanno larghezze diverse (2 o 3 bit) ed è presente un selettore a 1 bit che specifica se il vettore o i dati scalari utilizzano gli indici a 3 bit. L'estrazione del conteggio dei bit alfa è simile all'estrazione del numero di bit dei colori, ma con un comportamento inverso basato sul bit **idxMode.**
 
 ``` syntax
 bitcount get_color_bitcount(block, mode)
@@ -233,6 +233,6 @@ bitcount get_color_bitcount(block, mode)
 [Compressione dei blocchi di trama in Direct3D 11](texture-block-compression-in-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

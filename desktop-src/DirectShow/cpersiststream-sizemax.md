@@ -1,7 +1,7 @@
 ---
-description: Recupera la dimensione massima in byte necessaria per il flusso corrente, senza includere il numero di versione.
+description: Recupera le dimensioni massime in byte necessarie per il flusso corrente, senza includere il numero di versione.
 ms.assetid: ca1a68e2-02b4-4eea-916a-e0418ae811ae
-title: Metodo CPersistStream. SizeMax (pStream. h)
+title: Metodo CPersistStream.SizeMax (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: afa29e2c81cc454a9e85b9038486221f6f44aaf5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b8f2c547e75303e4c54a49651f2118a90768bc0f42161ee3dae0de9bec2dcad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813301"
 ---
-# <a name="cpersiststreamsizemax-method"></a>CPersistStream. SizeMax, metodo
+# <a name="cpersiststreamsizemax-method"></a>Metodo CPersistStream.SizeMax
 
-Recupera la dimensione massima in byte necessaria per il flusso corrente, senza includere il numero di versione.
+Recupera le dimensioni massime in byte necessarie per il flusso corrente, senza includere il numero di versione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il numero di byte necessari per i dati, escluso il numero di versione.
+Restituisce il numero di byte necessari per i dati, senza includere il numero di versione.
 
 ## <a name="remarks"></a>Commenti
 
-La versione predefinita restituisce zero. è necessario eseguirne l'override per fornire un altro valore appropriato.
+La versione predefinita restituisce zero. deve essere sottoposto a override per fornire un altro valore appropriato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ La versione predefinita restituisce zero. è necessario eseguirne l'override per
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PStream. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pstream.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
