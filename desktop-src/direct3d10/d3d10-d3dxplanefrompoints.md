@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a3af01df7d1ce66029994226d040544b733a75df
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 07275d7a67527959396ba82f7e0fb8cbbc39b27d7e3adeca70df2e174fe09258
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895381"
 ---
 # <a name="d3dxplanefrompoints-function-d3dx10mathh"></a>Funzione D3DXPlaneFromPoints (D3DX10Math.h)
 

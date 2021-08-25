@@ -1,7 +1,7 @@
 ---
-description: Il metodo EffectSwapPriorities passa i livelli di priorità di due effetti.
+description: Il metodo EffectSwapPriorities cambia i livelli di priorità di due effetti.
 ms.assetid: ff5ab294-3963-4df7-9299-ee7c7165e72f
-title: 'Metodo IAMTimelineEffectable:: EffectSwapPriorities (qedit. h)'
+title: Metodo IAMTimelineEffectable::EffectSwapPriorities (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fb6a7dbee2d7f90da8f32e2a034e82df485f1ef4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e79f3f83422290600b4b6e75dbf15daff161f5e913a0300645254cdf94e7c37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928231"
 ---
-# <a name="iamtimelineeffectableeffectswappriorities-method"></a>Metodo IAMTimelineEffectable:: EffectSwapPriorities
+# <a name="iamtimelineeffectableeffectswappriorities-method"></a>Metodo IAMTimelineEffectable::EffectSwapPriorities
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `EffectSwapPriorities` metodo passa i livelli di priorità di due effetti.
+Il `EffectSwapPriorities` metodo cambia i livelli di priorità di due effetti.
 
-Dato due valori di priorità, questo metodo scambia gli effetti con tali priorità. Quando il metodo restituisce un risultato, l'effetto che si trovava al primo livello di priorità è il secondo livello di priorità e viceversa.
+Dati due valori di priorità, questo metodo scambia gli effetti a tali priorità. Quando il metodo viene restituito, l'effetto al primo livello di priorità è al secondo livello di priorità e viceversa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,14 +48,14 @@ HRESULT EffectSwapPriorities(
 
 <dl> <dt>
 
-*Priorità* 
+*PrioritàA* 
 </dt> <dd>
 
 Primo livello di priorità in corrispondenza del quale scambiare gli effetti.
 
 </dd> <dt>
 
-*PriorityB* 
+*PrioritàB* 
 </dt> <dd>
 
 Secondo livello di priorità in corrispondenza del quale scambiare gli effetti.
@@ -64,17 +64,17 @@ Secondo livello di priorità in corrispondenza del quale scambiare gli effetti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

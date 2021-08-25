@@ -1,7 +1,7 @@
 ---
-description: Imposta il peso della combinazione di priorità per la traccia di animazione specificata.
+description: Imposta lo spessore di fusione della priorità per la traccia di animazione specificata.
 ms.assetid: 8d40b0f6-d79a-42c1-99fb-3f76bd46f30c
-title: 'Metodo ID3DXAnimationController:: SetTrackPriority (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::SetTrackPriority (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 32f1f8cce4641203782b0a84840d2986780da26a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: be294710fcd6ec2d8e72c7d7c9437623d29a2729a52144d4edfdc91e5be7eea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848971"
 ---
-# <a name="id3dxanimationcontrollersettrackpriority-method"></a>Metodo ID3DXAnimationController:: SetTrackPriority
+# <a name="id3dxanimationcontrollersettrackpriority-method"></a>Metodo ID3DXAnimationController::SetTrackPriority
 
-Imposta il peso della combinazione di priorità per la traccia di animazione specificata.
+Imposta lo spessore di fusione della priorità per la traccia di animazione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT SetTrackPriority(
 
 <dl> <dt>
 
-*Traccia* \[ in\]
+*Traccia* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Identificatore di traccia.
+Identificatore della traccia.
 
 </dd> <dt>
 
-*Priorità* \[ di in\]
+*Priorità* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXPRIORITY \_**](./d3dxpriority-type.md)**
+Tipo: **[ **D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md)**
 
-Tenere traccia della priorità. Questo parametro deve essere impostato su una delle costanti dal [**\_ tipo D3DXPRIORITY**](./d3dxpriority-type.md).
+Tenere traccia della priorità. Questo parametro deve essere impostato su una delle costanti di [**D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Tenere traccia della priorità. Questo parametro deve essere impostato su una de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -73,8 +73,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

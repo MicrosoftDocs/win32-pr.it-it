@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Revealed-DSA
-description: Collegamento all'indietro per MS-DS-Revealed-Users. Identifica il RODC che utilizza il segreto degli utenti.
+title: Attributo ms-DS-Revealed-DSAs
+description: Collegamento indietro per ms-DS-Revealed-Users. Identifica il controller di dominio di sola lettura che contiene il segreto utente.
 ms.assetid: cd84db75-d961-4290-8aa7-2805febbd842
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo DSA di MS-DS-Revealed
-- attributo msDS-RevealedDSAs-schema AD
+- Attributo MS-DS-Revealed-DSAs Schema DI AD
+- Schema AD dell'attributo msDS-RevealedDSAs
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e77dfd69fafffc3286f0ff9419965d7ae9daaa0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5b8cd94e5cde7c5ea021558088852f551fcdcf733eab131216d663d363c5a544
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925501"
 ---
-# <a name="ms-ds-revealed-dsas-attribute"></a>attributo ms-DS-Revealed-DSA
+# <a name="ms-ds-revealed-dsas-attribute"></a>Attributo ms-DS-Revealed-DSAs
 
-Collegamento all'indietro per [**ms-DS-Revealed-Users**](a-msds-revealedusers.md). Identifica il RODC che utilizza il segreto dell'utente.
+Collegamento indietro per [**ms-DS-Revealed-Users**](a-msds-revealedusers.md). Identifica il controller di dominio di sola lettura che contiene il segreto dell'utente.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Revealed-DSA                     |
-| LDAP-Display-Name | msDS-RevealedDSAs                       |
+| CN                | Ms-DS-Revealed-DSAs                     |
+| Ldap-Display-Name | msDS-RevealedDSAs                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1930                 |
-| System-ID-GUID    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
+| System-Id-Guid    | 94f6f2ac-c76d-4b5e-b71f-f332c3e93c22    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Collegamento all'indietro per [**ms-DS-Revealed-Users**](a-msds-revealedusers.md
 | ID collegamento                | 2103                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Collegamento all'indietro per [**ms-DS-Revealed-Users**](a-msds-revealedusers.md
 | ID collegamento                | 2103                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Collegamento all'indietro per [**ms-DS-Revealed-Users**](a-msds-revealedusers.md
 | ID collegamento                | 2103                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

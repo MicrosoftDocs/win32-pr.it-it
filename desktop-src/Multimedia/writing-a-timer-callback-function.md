@@ -1,30 +1,30 @@
 ---
-title: Scrittura di una funzione di callback timer
-description: Scrittura di una funzione di callback timer
+title: Scrittura di una funzione di callback del timer
+description: Scrittura di una funzione di callback del timer
 ms.assetid: 85260b6b-42de-43f4-83b7-94edbf660006
 keywords:
 - timer multimediali, funzioni di callback
 - timer, funzioni di callback
-- scrittura di funzioni di callback timer
+- scrittura di funzioni di callback del timer
 - timer multimediali, scrittura di funzioni di callback
 - timer, scrittura di funzioni di callback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 609cf2dda455897fb6cae0f3c48252016ba54cb9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f5b8680fc4d697c33514276276daaa2a4d75577bfbd78fa3caffc7f426ca9d70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103956405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891781"
 ---
-# <a name="writing-a-timer-callback-function"></a>Scrittura di una funzione di callback timer
+# <a name="writing-a-timer-callback-function"></a>Scrittura di una funzione di callback del timer
 
 > [!Note]  
-> In questo argomento viene descritta una funzione obsoleta. Per creare i timer, le nuove applicazioni devono usare la funzione [**CreateTimerQueueTimer ha provocato**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) .
+> Questo argomento descrive una funzione obsoleta. Le nuove applicazioni devono usare [**la funzione CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) per creare timer.
 
- 
+ 
 
-La funzione di callback seguente, OneShotTimer, invalida l'identificatore per l'evento del timer singolo e chiama una routine timer per gestire le attività specifiche dell'applicazione. Per ulteriori informazioni, vedere [**TimeProc**](/previous-versions//dd757631(v=vs.85)).
+La funzione di callback seguente, OneShotTimer, invalida l'identificatore per il singolo evento timer e chiama una routine timer per gestire le attività specifiche dell'applicazione. Per altre informazioni, vedere [**TimeProc**](/previous-versions//dd757631(v=vs.85)).
 
 
 ```C++
@@ -47,6 +47,6 @@ void CALLBACK OneShotTimer(UINT wTimerID, UINT msg,
 [Uso di timer multimediali](using-multimedia-timers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

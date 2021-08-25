@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene fornito un esempio di utilizzo delle sfumature in un OM XPS.
+description: In questo argomento viene fornito un esempio dell'uso delle sfumature in un sistema operativo XPS.
 ms.assetid: c58c9e5a-c871-4b44-a1be-0aceafa2f805
-title: Gradienti OM XPS
+title: Sfumature OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5aac5fcce4ebd662d834705d1e8d84140f09000
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 267d053ef0e9b98408119870cb723ceb1170d4905aab81b0dc3db7969c356c32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823611"
 ---
-# <a name="xps-om-gradients"></a>Gradienti OM XPS
+# <a name="xps-om-gradients"></a>Sfumature OM XPS
 
-In questo argomento viene fornito un esempio di utilizzo delle sfumature in un OM XPS.
+In questo argomento viene fornito un esempio dell'uso delle sfumature in un sistema operativo XPS.
 
 ## <a name="add-a-new-stop-to-an-existing-gradient"></a>Aggiungere una nuova interruzione a una sfumatura esistente
 
-Nell'esempio di codice seguente viene aggiunta una nuova interruzione alla sfumatura di un pennello a sfumatura lineare.
+L'esempio di codice seguente aggiunge una nuova interruzione alla sfumatura di un pennello a sfumatura lineare.
 
 
 ```C++

@@ -1,21 +1,21 @@
 ---
 description: Quando molte funzioni di sistema hanno esito negativo, impostano il codice dell'ultimo errore.
 ms.assetid: 4cc626ac-7574-44ce-8377-e0bdd8e74b7e
-title: Recupero del codice Last-Error
+title: Recupero del codice Last-Error dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c28ba096fae2bd38bb8dc9c291a677aa6fa161d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 853fb6991bab5ad761dacaf18a2ec086dbf8fc4176964888bd0ededc548fbeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912451"
 ---
-# <a name="retrieving-the-last-error-code"></a>Recupero del codice Last-Error
+# <a name="retrieving-the-last-error-code"></a>Recupero del codice Last-Error dati
 
-Quando molte funzioni di sistema hanno esito negativo, impostano il codice dell'ultimo errore. Se per l'applicazione sono necessari ulteriori dettagli su un errore, è possibile recuperare il codice dell'ultimo errore utilizzando la funzione [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e visualizzare una descrizione dell'errore utilizzando la funzione [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) .
+Quando molte funzioni di sistema hanno esito negativo, impostano il codice dell'ultimo errore. Se l'applicazione necessita di altri dettagli su un errore, può recuperare il codice dell'ultimo errore usando la funzione [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e visualizzare una descrizione dell'errore usando la [**funzione FormatMessage.**](/windows/desktop/api/WinBase/nf-winbase-formatmessage)
 
-Nell'esempio seguente viene inclusa una funzione di gestione degli errori che stampa il messaggio di errore e termina il processo. Il parametro *lpszFunction* è il nome della funzione che ha impostato il codice dell'ultimo errore.
+Nell'esempio seguente è inclusa una funzione di gestione degli errori che stampa il messaggio di errore e termina il processo. Il *parametro lpszFunction* è il nome della funzione che imposta il codice dell'ultimo errore.
 
 
 ```C++

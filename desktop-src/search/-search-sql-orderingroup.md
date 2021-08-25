@@ -1,19 +1,19 @@
 ---
-description: La clausola ORDER IN GROUP viene utilizzata insieme all'istruzione GROUP ON, che restituisce set di risultati in gruppi.
+description: La clausola ORDER IN GROUP viene usata insieme all'istruzione GROUP ON, che restituisce set di risultati in gruppi.
 ms.assetid: edfa2037-3360-411d-8a12-cdb9680222f2
 title: Clausola ORDER IN GROUP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b4a3a39ffeb2704a099389a6668a075fb4a24f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83b17981f6368b67852e393d38ef8c4b856601d73014d9bdce40292e7e4a499d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944651"
 ---
 # <a name="order-in-group-clause"></a>Clausola ORDER IN GROUP
 
-La clausola ORDER IN GROUP viene utilizzata insieme all'istruzione [Group on](-search-sql-group-on-over.md) , che restituisce set di risultati in gruppi. La clausola ORDER IN GROUP consente di ordinare ogni gruppo restituito in modo diverso. Se si esegue il raggruppamento in System. Kind, ad esempio, è possibile ordinare tutti i documenti in base System.Document. LastAuthor, tutti i file musicali per System. Music. AlbumArtist e tutti i messaggi di posta elettronica da System. Message. FromName.
+La clausola ORDER IN GROUP viene usata insieme [all'istruzione GROUP ON,](-search-sql-group-on-over.md) che restituisce set di risultati in gruppi. La clausola ORDER IN GROUP consente di ordinare ogni gruppo restituito in modo diverso. Se ad esempio si raggruppa in base a System.Kind, è possibile ordinare tutti i documenti System.Docordinamento. LastAuthor, tutti i file musicali di System. Musica. AlbumArtist e tutti i messaggi di posta elettronica di System.Message.FromName.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,17 +31,17 @@ OVER (SELECT ... FROM SystemIndex
 
 
 
-L'identificatore del nome del gruppo è un intervallo o un valore noto della colonna di gruppo, come specificato nell'istruzione GROUP ON. Ad esempio, i valori noti per System. Photo. ISOSpeed includono ' ISO-100',' ISO-200' e così via. Un intervallo per System. Photo. DateTaken includerà' 2006-1-1' è 2007-1-1' per un'istruzione come GROUP in System. ItemDate \[ ' 2006-1-1',' 2007-1-1' \] .
+L'identificatore del nome di gruppo è un intervallo o un valore noto della colonna del gruppo, come specificato nell'istruzione GROUP ON. Ad esempio, i valori noti per System.Photo.ISOSpeed includono "ISO-100", "ISO-200" e così via. Un intervallo per System.Photo.DateTaken include '2006-1-1' e '2007-1-1' per un'istruzione come GROUP ON System.ItemDate \[ '2006-1-1', '2007-1-1'. \]
 
-L'identificatore di colonna deve essere una colonna valida specificata nell'istruzione GROUP ON o SELECT. È possibile includere più di una colonna, separate da virgole. Se, ad esempio, si esegue il raggruppamento in System. Photo. ISOSpeed, è possibile ordinare tutte le foto ISO-100, prima in base a System. Photo. ShutterSpeed e quindi a System. Photo. aperture.
+L'identificatore di colonna deve essere una colonna valida specificata nell'istruzione GROUP ON o SELECT. È possibile includere più di una colonna, separate da virgole. Ad esempio, se si raggruppa in base a System.Photo.ISOSpeed, è possibile ordinare tutte le foto ISO-100, prima in base a System.Photo.PhotosSpeed e quindi in base a System.Photo.Aperture.
 
-L'identificatore di direzione facoltativo può essere ASC per l'ordine crescente (da basso a alto) o DESC per la decrescente (da alto a basso). Se non si specifica un identificatore di direzione, viene usato il valore predefinito Ascending. Se si specifica più di una colonna, ma non si specificano tutte le direzioni, la direzione specificata per ultima viene applicata a ogni colonna successiva fino a quando non si modifica in modo esplicito la direzione.
+L'identificatore di direzione facoltativo può essere ASC per l'ordine crescente (da basso a alto) o DESC per decrescente (dall'alto al basso). Se non si specifica un identificatore di direzione, viene usato il valore predefinito crescente. Se si specifica più di una colonna, ma non si specificano tutte le direzioni, la direzione specificata per ultima viene applicata a ogni colonna successiva fino a quando non si modifica in modo esplicito la direzione.
 
-Gli intervalli o i valori non specificati in modo esplicito in una clausola ORDER GROUP IN sono ordinati in ordine crescente in base ai valori della colonna GROUP ON.
+Gli intervalli o i valori non specificati in modo esplicito in una clausola ORDER GROUP IN vengono ordinati in ordine crescente in base ai valori nella colonna GROUP ON.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono raggruppati i risultati in base alla proprietà System. Kind. La query ordina il gruppo ' Program ' in base al nome dell'applicazione e al gruppo ' Music ' in base al titolo dell'album e al numero di traccia. Il gruppo **null** verrebbe ordinato in base al nome dell'elemento. Tutti gli altri gruppi verranno ordinati in base alla data dell'elemento.
+L'esempio seguente raggruppa i risultati in base alla proprietà System.Kind. La query ordinerebbe il gruppo "program" in base al nome dell'applicazione e il gruppo "music" in base al titolo dell'album e al numero di traccia. Il **gruppo NULL** verrà ordinato in base al nome dell'elemento. Tutti gli altri gruppi verrebbero ordinati in base alla data dell'elemento.
 
 
 ```
@@ -56,7 +56,7 @@ OVER (SELECT System.ItemUrl, System.Music.AlbumTitle, System.Music.TrackNumber, 
 
 
 
-Nell'esempio seguente vengono raggruppati i risultati in base alla proprietà System. ItemDate, quindi viene ordinata l'URL, il tipo o il nome di ogni elemento Group by.
+L'esempio seguente raggruppa i risultati in base alla proprietà System.ItemDate e quindi ordina ogni gruppo in base all'URL, al tipo o al nome dell'elemento.
 
 
 ```
@@ -70,17 +70,17 @@ OVER (SELECT System.ItemUrl, System.ItemName, System.ItemDate System.Kind FROM S
 
 
 
-I risultati della query precedente verrebbero restituiti in cinque gruppi e ordinati come descritto nella tabella seguente.
+I risultati della query precedente verranno restituiti in cinque gruppi e ordinati come descritto nella tabella seguente.
 
 
 
 | Gruppo    | Descrizione                                               | Ordinamento                                    |
 |----------|-----------------------------------------------------------|----------------------------------------------|
-| MINVALUE | Elementi con date precedenti alla 2006-1-1                          | Ordinato in base all'URL dell'elemento, in ordine crescente |
-| 2006-1-1 | Elementi con date il o dopo il 2006-1-1 ma prima del 2007-1-1 | Ordinato per data dell'elemento, in ordine crescente      |
-| 2007-1-1 | Elementi con date il o dopo il 2007-1-1 ma prima del 2008-1-1 | Ordinato per valore di tipo, in ordine crescente     |
-| 2008-1-1 | Elementi con date il o dopo il 2008-1-1                     | Ordinato per data dell'elemento, in ordine crescente      |
-| **NULL** | Elementi senza valore nella colonna System. ItemDate         | Ordinato in base al nome dell'elemento, in ordine crescente      |
+| Minvalue | Elementi con date precedenti al 1-1-2006                          | Ordinato in base all'URL dell'elemento, in ordine crescente |
+| 2006-1-1 | Elementi con date in data 1-1-2006 o precedenti al 1-1-2007 | Ordinato in base alla data dell'elemento, in ordine crescente      |
+| 2007-1-1 | Elementi con date in data 1-1-2007 o precedenti al 1-1-2008 | Ordinato in base al valore del tipo, in ordine crescente     |
+| 2008-1-1 | Elementi con date il giorno o dopo il 1-1-2008                     | Ordinato in base alla data dell'elemento, in ordine crescente      |
+| **NULL** | Elementi senza valore nella colonna System.ItemDate         | Ordinato in base al nome dell'elemento, in ordine crescente      |
 
 
 
@@ -93,7 +93,7 @@ I risultati della query precedente verrebbero restituiti in cinque gruppi e ordi
 **Riferimento**
 </dt> <dt>
 
-[RAGGRUPPA IN... SOPRA... Istruzione](-search-sql-group-on-over.md)
+[GROUP ON ... Oltre... affermazione](-search-sql-group-on-over.md)
 </dt> <dt>
 
 [Clausola ORDER BY](-search-sql-orderby.md)

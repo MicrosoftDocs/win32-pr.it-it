@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth del rendering del servizio del dispositivo.
+description: Bluetooth classe di rendering del servizio dispositivo.
 ms.assetid: 1df0a4c3-d11e-42da-b636-6ba1f2cbfb4f
-title: System. Devices. AEP. Bluetooth. Cod. Services. rendering
+title: System.Devices.Aep. Bluetooth. Cod.Services.Rendering
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1649b37735f4160dd18614b7a2d8bb71154e12c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4c832800e07a971593c6c76fc7c0953de74125ec56ffa7019bf79d48140b915
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822861"
 ---
-# <a name="systemdevicesaepbluetoothcodservicesrendering"></a>System. Devices. AEP. Bluetooth. Cod. Services. rendering
+# <a name="systemdevicesaepbluetoothcodservicesrendering"></a>System.Devices.Aep. Bluetooth. Cod.Services.Rendering
 
-Classe Bluetooth del rendering del servizio del dispositivo.
+Bluetooth classe di rendering del servizio dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

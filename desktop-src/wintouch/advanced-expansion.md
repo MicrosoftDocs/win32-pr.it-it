@@ -3,28 +3,28 @@ title: Espansione avanzata
 description: Espansione avanzata
 ms.assetid: 29db15a1-fa56-441a-af99-9e858d143804
 keywords:
-- Windows Touch, espansione
-- Windows Touch, espansione avanzata
-- Windows Touch, modifiche
+- Windows Tocco, espansione
+- Windows Tocco, espansione avanzata
+- Windows Tocco, manipolazioni
 - manipolazioni, espansione
 - manipolazioni, espansione avanzata
-- espansione, avanzata
+- espansione, avanzate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b81a3a395da053b7d0e8f79a115a2489f3e63190
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27e176d91c08bd0d39383e2aba269bbdb5629cfe6b7c2d20eb1ac955786bef2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881501"
 ---
 # <a name="advanced-expansion"></a>Espansione avanzata
 
-Nella figura seguente vengono illustrati due modi in cui un oggetto può essere espanso.
+La figura seguente illustra due modi in cui un oggetto può essere espanso.
 
-![illustrazione che mostra un'espansione semplice intorno al punto centrale di un oggetto ed espansione avanzata intorno al punto centrale della manipolazione](images/expansion.png)
+![illustrazione che mostra una semplice espansione intorno al punto centrale di un oggetto e l'espansione avanzata intorno al punto centrale della manipolazione](images/expansion.png)
 
-Nell'esempio A, l'esempio di espansione semplice, l'oggetto viene espanso intorno al punto centrale. Nell'esempio B l'oggetto viene espanso intorno al punto centrale della manipolazione. Per abilitare questa operazione, è necessario convertire l'oggetto mentre è in corso l'espansione. La quantità che verrà convertita dall'oggetto corrisponde alla distanza dal centro dell'oggetto al punto centrale del movimento. Intuitivamente, è come se l'oggetto venisse espanso dal punto centrale del movimento di espansione e quindi spostato in modo che sia sempre nello stesso centro della posizione iniziale. Il codice seguente illustra un modo in cui questo concetto può essere applicato per consentire l'espansione in un punto centrale.
+Nell'esempio A, il semplice esempio di espansione, l'oggetto viene espanso intorno al punto centrale. Nell'esempio B, l'oggetto viene espanso intorno al punto centrale della manipolazione. Per abilitare questa funzionalità, è necessario convertire l'oggetto durante l'espansione. La quantità di traslazione dell'oggetto è uguale alla distanza dal centro dell'oggetto al punto centrale del movimento. Intuitivamente, è come se si espandesse l'oggetto dal punto centrale del movimento di espansione e quindi lo si spostasse in modo che sia ancora nello stesso centro della posizione iniziale. Il codice seguente illustra un modo in cui questo concetto può essere applicato per abilitare l'espansione intorno a un punto centrale.
 
 
 ```C++
@@ -56,9 +56,9 @@ Nell'esempio A, l'esempio di espansione semplice, l'oggetto viene espanso intorn
 [Modifiche](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

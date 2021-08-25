@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectTechnique ComputeStateBlockMask (D3dx11effect. h)
-description: Consente di calcolare una maschera a blocchi di stato per consentire o impedire modifiche di stato.
+title: Metodo ID3DX11EffectTechnique ComputeStateBlockMask (D3dx11effect.h)
+description: Calcolare una maschera di blocco di stato per consentire o impedire modifiche dello stato.
 ms.assetid: 4fd6061d-6ca5-4e3f-b031-fae98f3de057
 keywords:
 - Metodo ComputeStateBlockMask Direct3D 11
 - Metodo ComputeStateBlockMask Direct3D 11, interfaccia ID3DX11EffectTechnique
-- Interfaccia ID3DX11EffectTechnique Direct3D 11, metodo ComputeStateBlockMask
+- ID3DX11EffectTechnique interface Direct3D 11 , ComputeStateBlockMask method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d15a159c15f35d530559b4ad6d84dd815e5964a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cf7a221cd685eb31b068ae6144514adb70ffa42c654d9e1a3249db5302e0aa6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894761"
 ---
-# <a name="id3dx11effecttechniquecomputestateblockmask-method"></a>Metodo ID3DX11EffectTechnique:: ComputeStateBlockMask
+# <a name="id3dx11effecttechniquecomputestateblockmask-method"></a>Metodo ID3DX11EffectTechnique::ComputeStateBlockMask
 
-Consente di calcolare una maschera a blocchi di stato per consentire o impedire modifiche di stato.
+Calcolare una maschera di blocco di stato per consentire o impedire modifiche dello stato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ HRESULT ComputeStateBlockMask(
 *pStateBlockMask* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ state \_ Block \_ mask**](d3dx11-state-block-mask.md)\***
+Tipo: **[ **D3DX11 \_ STATE \_ BLOCK \_ MASK**](d3dx11-state-block-mask.md)\***
 
-Puntatore a una maschera a blocchi di stato (vedere [**D3DX11 \_ state \_ Block \_ mask**](d3dx11-state-block-mask.md)).
+Puntatore a una maschera di blocco di stato (vedere [**D3DX11 \_ STATE \_ BLOCK \_ MASK).**](d3dx11-state-block-mask.md)
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntatore a una maschera a blocchi di stato (vedere [**D3DX11 \_ state \_ Block 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

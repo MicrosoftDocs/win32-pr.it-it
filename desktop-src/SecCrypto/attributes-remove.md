@@ -1,7 +1,7 @@
 ---
-description: Rimuove dall'insieme un oggetto attributo indicizzato.
+description: Rimuove un oggetto Attribute indicizzato dalla raccolta.
 ms.assetid: 6d9423e3-ab24-4973-b0aa-32e38abd607a
-title: Metodo Attributes. Remove
+title: Metodo Attributes.Remove
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e5981176afb332254d98171d40027e43383cb557
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea18aab32153c998a0ddbaced65727e1ecb43dc8c54a7e3989aadcb698693970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879771"
 ---
-# <a name="attributesremove-method"></a>Metodo Attributes. Remove
+# <a name="attributesremove-method"></a>Metodo Attributes.Remove
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece la [**classe CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio dei nomi [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista, Windows XP. Usare invece la [**classe CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio [**dei nomi System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-Il metodo **Remove** rimuove un oggetto [**attributo**](attribute.md) indicizzato dalla raccolta.
+Il **metodo Remove** rimuove un oggetto [**Attribute**](attribute.md) indicizzato dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ Attributes.Remove( _
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*Indice* \[ Pollici\]
 </dt> <dd>
 
-Indice dell'oggetto [**attributo**](attribute.md) da rimuovere.
+Indice [**dell'oggetto Attribute**](attribute.md) da rimuovere.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Le applicazioni che usano questo metodo devono contenere codice per gestire un'e
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -73,7 +73,7 @@ Le applicazioni che usano questo metodo devono contenere codice per gestire un'e
 
 <dl> <dt>
 
-[Oggetti Cryptography](cryptography-objects.md)
+[Oggetti di crittografia](cryptography-objects.md)
 </dt> <dt>
 
 [**Attributi**](attributes.md)

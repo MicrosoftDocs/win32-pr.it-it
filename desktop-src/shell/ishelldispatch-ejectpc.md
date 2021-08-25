@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ac42e1a4331a553a03bac3da50a187e06c90859c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e812365f50c0166c824afd7fb0b1dac7a82cbe11961f45e1fd89283692816232
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884391"
 ---
 # <a name="ishelldispatchejectpc-method"></a>Metodo IShellDispatch.EjectPC
 
-Espulse il computer dall'alloggiamento di espansione. Questo è lo stesso che si fa clic sul menu **Start** e si seleziona **Espulsa PC**, se il computer supporta questo comando.
+Espulse il computer dall'alloggiamento di espansione. Questo è lo stesso che si fa clic sul menu **Start** e si **seleziona Espulsa PC**, se il computer supporta questo comando.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,7 +63,7 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.EjectP
 
 Gli esempi seguenti illustrano l'uso di **EjectPC** in JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -119,7 +119,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

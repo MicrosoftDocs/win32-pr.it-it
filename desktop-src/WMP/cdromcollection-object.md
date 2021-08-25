@@ -1,9 +1,9 @@
 ---
-title: Oggetto cdromcollection
-description: L'oggetto cdromcollection fornisce un modo per organizzare e accedere a una raccolta di unità CD o DVD.
+title: Oggetto CdromCollection
+description: L'oggetto CdromCollection consente di organizzare e accedere a una raccolta di unità CD o DVD.
 ms.assetid: 02429ba7-a053-42bf-9ed5-c05e13c964c0
 keywords:
-- Finestre degli oggetti di cdromcollection Media Player
+- Oggetto CdromCollection Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0d5367a6887290f06d36225f211f42048e98ba03
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0f8fe20bc138feb3eb1ad5bc937ef1f53f0e6b08e5757bbe03791177fe4c3531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863951"
 ---
-# <a name="cdromcollection-object"></a>Oggetto cdromcollection
+# <a name="cdromcollection-object"></a>Oggetto CdromCollection
 
-L'oggetto **cdromcollection** fornisce un modo per organizzare e accedere a una raccolta di unità CD o DVD.
+**L'oggetto CdromCollection** consente di organizzare e accedere a una raccolta di unità CD o DVD.
 
-L'oggetto **cdromcollection** supporta la proprietà seguente.
+**L'oggetto CdromCollection** supporta la proprietà seguente.
 
 
 
@@ -34,43 +34,43 @@ L'oggetto **cdromcollection** supporta la proprietà seguente.
 
 
 
- 
+ 
 
-L'oggetto **cdromcollection** supporta i metodi seguenti.
+**L'oggetto CdromCollection** supporta i metodi seguenti.
 
 
 
 | Metodo                                                         | Descrizione                                                                               |
 |----------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [getByDriveSpecifier](cdromcollection-getbydrivespecifier.md) | Recupera l'oggetto [CDROM](cdrom-object.md) associato a una lettera di unità specifica. |
-| [item](cdromcollection-item.md)                               | Recupera l'oggetto [CDROM](cdrom-object.md) in corrispondenza dell'indice specificato.                        |
+| [getByDriveSpecifier](cdromcollection-getbydrivespecifier.md) | Recupera [l'oggetto Cdrom](cdrom-object.md) associato a una lettera di unità specifica. |
+| [item](cdromcollection-item.md)                               | Recupera [l'oggetto Cdrom](cdrom-object.md) in corrispondenza dell'indice specificato.                        |
 
 
 
- 
+ 
 
-È possibile accedere all'oggetto **cdromcollection** tramite la proprietà seguente.
+È **possibile accedere all'oggetto CdromCollection** tramite la proprietà seguente.
 
 
 
 | Oggetto                      | Proprietà                                      |
 |-----------------------------|-----------------------------------------------|
-| [Player](player-object.md) | [cdromcollection](player-cdromcollection.md) |
+| [Player](player-object.md) | [CdromCollection](player-cdromcollection.md) |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**Riferimento del modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
+[**Informazioni di riferimento sul modello a oggetti per lo scripting**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

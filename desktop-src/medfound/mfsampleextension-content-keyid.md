@@ -1,17 +1,17 @@
 ---
 description: Imposta l'ID chiave per l'esempio.
 ms.assetid: 75339350-05AA-486E-9C28-11070C0DA61D
-title: Attributo MFSampleExtension_Content_KeyID (Mfapi. h)
+title: MFSampleExtension_Content_KeyID attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b40d698dbb2d64e9744027b3cd8a3bb2dceec226
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38498665dddaed0cd38082246f61f0f86c9b1b7a1e8cec7d19d476c860fe8d6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848171"
 ---
-# <a name="mfsampleextension_content_keyid-attribute"></a>MFSampleExtension \_ Content \_ keyId-attributo
+# <a name="mfsampleextension_content_keyid-attribute"></a>Attributo Content \_ KeyID MFSampleExtension \_
 
 Imposta l'ID chiave per l'esempio.
 
@@ -39,9 +39,9 @@ m_spSample->SetGUID( MFSampleExtension_Content_KeyID, guidKID );
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -49,13 +49,13 @@ m_spSample->SetGUID( MFSampleExtension_Content_KeyID, guidKID );
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 </dt> <dt>
 
-[\_SubSampleMappingSplit di crittografia MFSampleExtension \_](mfsampleextension-encryption-subsamplemappingsplit.md)
+[MFSampleExtension \_ Encryption \_ SubSampleMappingSplit](mfsampleextension-encryption-subsamplemappingsplit.md)
 </dt> </dl>
 
  

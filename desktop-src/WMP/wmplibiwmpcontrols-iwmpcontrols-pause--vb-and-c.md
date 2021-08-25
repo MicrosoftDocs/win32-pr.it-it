@@ -1,10 +1,10 @@
 ---
-title: Metodo di sospensione IWMPControls
-description: Il metodo pause sospende la riproduzione dell'elemento multimediale. | Metodo di sospensione IWMPControls
+title: Metodo pause IWMPControls
+description: Il metodo pause sospende la riproduzione dell'elemento multimediale. | Metodo pause IWMPControls
 ms.assetid: 1d9ebaf3-84b4-458d-a393-2b685cd0dbfb
 keywords:
-- sospendere il metodo Windows Media Player
-- sospendere il metodo Windows Media Player, interfaccia IWMPControls
+- Metodo pause Windows Media Player
+- Metodo pause Windows Media Player, interfaccia IWMPControls
 - Interfaccia IWMPControls Windows Media Player, metodo pause
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf89cfef66c84be76a529d9c0cef6ec3ae6ac40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49950b5d2c5588e27755f3845e65f0a79ce0aae6ccc4a05dd4e5af3186b879de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861881"
 ---
-# <a name="iwmpcontrolspause-method"></a>IWMPControls::p metodo ause
+# <a name="iwmpcontrolspause-method"></a>Metodo IWMPControls::p ause
 
-Il metodo **pause** sospende la riproduzione dell'elemento multimediale.
+Il **metodo pause** sospende la riproduzione dell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,13 +55,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un file viene sospeso, Windows Media Player non cede alcuna risorsa di sistema, ad esempio il dispositivo audio.
+Quando un file viene sospeso, Windows Media Player non c'è alcuna risorsa di sistema, ad esempio il dispositivo audio.
 
-Per determinare se un particolare tipo di supporto può essere sospeso, passare il valore **System. String** "pause" alla proprietà **IWMPControls.** IsValid (il metodo **IWMPControls. Get \_ unavailable** in C#).
+Per determinare se un particolare tipo di supporto può essere sospeso, passare il valore **System.String** "pause" alla proprietà **IWMPControls.isAvailable** (il **metodo IWMPControls.get \_ isAvailable** in C#).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **pause** per sospendere la riproduzione dell'elemento multimediale corrente in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **pause** per sospendere la riproduzione dell'elemento multimediale corrente in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -108,7 +108,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -121,7 +121,7 @@ End Sub
 [**Interfaccia IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. disavailable (VB e C#)**](iwmpcontrols-isavailable--vb-and-c.md)
+[**IWMPControls.isAvailable (VB e C#)**](iwmpcontrols-isavailable--vb-and-c.md)
 </dt> </dl>
 
  

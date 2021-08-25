@@ -1,46 +1,46 @@
 ---
 title: Novità di Windows Media Player 12
-description: In questo argomento vengono elencate le nuove funzionalità di Windows Media Player 12.
+description: Questo argomento elenca le nuove funzionalità di Windows Media Player 12.
 ms.assetid: 17f76963-c96d-46c9-82c0-3ed2d8a4e892
 keywords:
 - Windows Media Player, novità
 - Windows Media Player, nuove funzionalità
 - Software Development Kit (SDK), Windows Media Player 12
-- SDK (Software Development Kit), Windows Media Player 12
+- SDK (software development kit), Windows Media Player 12
 - documentazione, Windows Media Player 12 SDK
-- Novità, Windows Media Player 12
+- novità, Windows Media Player 12
 - nuove funzionalità, Windows Media Player 12
-- interfacce, nuove funzionalità di Windows Media Player 12
-- attributi, nuove funzionalità di Windows Media Player 12
-- metadati, nuove funzionalità di Windows Media Player 12
-- enumerazioni, nuove funzionalità di Windows Media Player 12
-- flag, nuove funzionalità di Windows Media Player 12
+- interfacce, nuove funzionalità in Windows Media Player 12
+- attributi, nuove funzionalità in Windows Media Player 12
+- metadati, nuove funzionalità in Windows Media Player 12
+- enumerazioni, nuove funzionalità in Windows Media Player 12
+- flag, nuove funzionalità in Windows Media Player 12
 - interfacce, deprecate in Windows Media Player 12
 - metodi, deprecati in Windows Media Player 11 e non 12
-- versioni di Windows Media Player, nuove funzionalità della versione 12
+- versioni di Windows Media Player, nuove funzionalità nella versione 12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d16b21077df1f4a9c11edbfa20032ed473f872a0
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 976c9b0995188f9d6c6db6e7394ec0019047ff18b51940ada202c8c7ea713f39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104117482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862281"
 ---
 # <a name="whats-new-in-windows-media-player-12"></a>Novità di Windows Media Player 12
 
-In questo argomento vengono elencate le nuove funzionalità di Windows Media Player 12.
+Questo argomento elenca le nuove funzionalità di Windows Media Player 12.
 
 ## <a name="new-interfaces"></a>Nuove interfacce
 
 -   [**IWMPAudioRenderConfig**](/previous-versions/windows/desktop/api/wmprealestate/nn-wmprealestate-iwmpaudiorenderconfig)
 -   [**IWMPEvents4**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents4)
--   [**IWMPLibrary2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmplibrary2)
+-   [**Libreria IWMP2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmplibrary2)
 -   [**IWMPSyncDevice3**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpsyncdevice3)
 
 ## <a name="new-attributes"></a>Nuovi attributi
 
-I nuovi attributi seguenti per gli elementi multimediali sono disponibili tramite le interfacce [**IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) e [**IWMPMedia3**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia3) .
+I nuovi attributi seguenti per gli elementi multimediali sono disponibili tramite le [**interfacce IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) e [**IWMPMedia3.**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia3)
 
 -   [**AlbumCoverURL**](wm-albumcoverurl-attribute.md)
 -   [**AlternateSourceURL**](alternatesourceurl-attribute.md)
@@ -48,18 +48,18 @@ I nuovi attributi seguenti per gli elementi multimediali sono disponibili tramit
 -   [**DLNAServerUDN**](dlnaserverudn-attribute.md)
 -   [**DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**DTCPIPPort**](dtcpipport-attribute.md)
--   [**IDLibreria**](libraryid-attribute.md)
+-   [**ID libreria**](libraryid-attribute.md)
 -   [**LibraryName**](libraryname-attribute.md)
 
 ## <a name="new-device-metadata"></a>Nuovi metadati del dispositivo
 
-I nuovi elementi di metadati del dispositivo seguenti possono essere recuperati chiamando [**IWMPSyncDevice:: GetItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-getiteminfo).
+I nuovi elementi di metadati del dispositivo seguenti possono essere recuperati chiamando [**IWMPSyncDevice::getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-getiteminfo).
 
 -   **BackgroundSyncState**
 -   **SkippedFiles**
 -   **SyncFilter**
 
-I nuovi elementi di metadati del dispositivo seguenti possono essere impostati chiamando [**IWMPSyncDevice2:: setItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice2-setiteminfo).
+I nuovi elementi di metadati del dispositivo seguenti possono essere impostati chiamando [**IWMPSyncDevice2::setItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice2-setiteminfo).
 
 -   **AutoSyncDefaultRules**
 -   **BackgroundSyncState**
@@ -69,15 +69,15 @@ I nuovi elementi di metadati del dispositivo seguenti possono essere impostati c
 
 ## <a name="new-enumeration-member"></a>Nuovo membro di enumerazione
 
-L'enumerazione [**WMPSyncState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpsyncstate) dispone del nuovo membro seguente.
+[**L'enumerazione WMPSyncState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpsyncstate) ha il nuovo membro seguente.
 
 -   **wmpssEstimating**
 
 ## <a name="new-flag"></a>Nuovo flag
 
-Il metodo [**IWMPGraphCreation:: GetGraphCreationFlags**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-getgraphcreationflags) supporta il seguente nuovo flag.
+Il [**metodo IWMPGraphCreation::GetGraphCreationFlags**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-getgraphcreationflags) supporta il nuovo flag seguente.
 
--   **\_flag WMPGC \_ usare \_ un \_ grafo personalizzato**
+-   **I FLAG WMPGC \_ \_ USANO UN \_ GRAFO \_ PERSONALIZZATO**
 
 ## <a name="deprecated-interface"></a>Interfaccia deprecata
 
@@ -87,7 +87,7 @@ L'interfaccia seguente è deprecata.
 
 ## <a name="methods-that-are-no-longer-deprecated"></a>Metodi che non sono più deprecati
 
-I metodi seguenti sono stati deprecati in Windows Media Player 11 SDK, ma non sono più deprecati.
+I metodi seguenti sono stati deprecati in Windows Media Player SDK 11, ma non sono più deprecati.
 
 -   [**IWMPGraphCreation::GraphCreationPreRender**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-graphcreationprerender)
 -   [**IWMPGraphCreation::GraphCreationPostRender**](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmpgraphcreation-graphcreationpostrender)
@@ -99,9 +99,9 @@ I metodi seguenti sono stati deprecati in Windows Media Player 11 SDK, ma non so
 [Informazioni su Windows Media Player SDK](about-the-windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection Add (metodo)
-description: Il metodo Add aggiunge un nuovo elemento multimediale o una playlist alla raccolta. | IWMPMediaCollection Add (metodo)
+title: Metodo add IWMPMediaCollection
+description: Il metodo add aggiunge un nuovo elemento multimediale o una nuova playlist alla libreria. | Metodo add IWMPMediaCollection
 ms.assetid: a3539646-797b-4481-a31e-86771f3633a9
 keywords:
-- Aggiungi metodo Windows Media Player
-- aggiungere il metodo Windows Media Player, interfaccia IWMPMediaCollection
-- Interfaccia IWMPMediaCollection Windows Media Player, Aggiungi metodo
+- Metodo add Windows Media Player
+- Metodo add Windows Media Player, interfaccia IWMPMediaCollection
+- Interfaccia IWMPMediaCollection Windows Media Player , metodo add
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7953067281e394df71a1a53c874cb80837a5f35d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 778850da4094d8ac745018b115248de9008d15339b7ffee75de177cf957d3fc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861164"
 ---
-# <a name="iwmpmediacollectionadd-method"></a>Metodo IWMPMediaCollection:: Add
+# <a name="iwmpmediacollectionadd-method"></a>Metodo IWMPMediaCollection::add
 
-Il metodo **Add** aggiunge un nuovo elemento multimediale o una playlist alla raccolta.
+Il **metodo add** aggiunge un nuovo elemento multimediale o una nuova playlist alla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,28 +53,28 @@ Implements IWMPMediaCollection.add
 
 <dl> <dt>
 
-*bstrURL* \[ in\]
+*bstrURL* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta l'URL che specifica la posizione dell'elemento multimediale o della playlist.
+**System.String che rappresenta** l'URL che specifica il percorso dell'elemento multimediale o della playlist.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPMedia** per l'elemento o la playlist aggiunta.
+Interfaccia **WMPLib.IWMPMedia** per l'elemento o la playlist aggiunta.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo carica un elemento multimediale o una playlist esistente nella libreria, dato un percorso. Questo metodo non sposta o modifica il file. Questo metodo ha esito negativo se viene specificato un percorso locale non valido, ma non viene verificata la validità degli elementi multimediali prima che vengano aggiunti alla libreria.
+Questo metodo carica un elemento multimediale o una playlist esistente nella libreria, dato un percorso. Questo metodo non sposta o modifica il file. Questo metodo ha esito negativo se viene specificato un percorso locale non valido, ma non viene verificata la validità degli elementi multimediali prima dell'aggiunta alla libreria.
 
-Questo metodo accetta sia i file di playlist statici che quelli automatici. Il metodo **IWMPPlaylistCollection. importPlaylist** può essere usato anche per aggiungere una playlist statica alla libreria.
+Questo metodo accetta file di playlist sia statici che automatici. Il **metodo IWMPPlaylistCollection.importPlaylist** può essere usato anche per aggiungere una playlist statica alla libreria.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono aggiunti tre oggetti multimediali alla raccolta di supporti Windows Media Player. L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente vengono aggiunti tre oggetti multimediali all Windows Media Player raccolta di supporti. L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -115,7 +115,7 @@ player.mediaCollection.add(&quot;C:\WMSDK\WMPSDK\samples\media\house.wma&quot;)
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -128,10 +128,10 @@ player.mediaCollection.add(&quot;C:\WMSDK\WMPSDK\samples\media\house.wma&quot;)
 [**Interfaccia IWMPMediaCollection (VB e C#)**](iwmpmediacollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection. Remove (VB e C#)**](wmplibiwmpmediacollection-iwmpmediacollection-remove--vb-and-c.md)
+[**IWMPMediaCollection.remove (VB e C#)**](wmplibiwmpmediacollection-iwmpmediacollection-remove--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. importPlaylist (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-importplaylist--vb-and-c.md)
+[**IWMPPlaylistCollection.importPlaylist (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-importplaylist--vb-and-c.md)
 </dt> </dl>
 
  

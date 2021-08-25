@@ -1,11 +1,11 @@
 ---
 title: Interfaccia IMsRdpClientAdvancedSettings7
-description: Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX.
+description: Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX controllo .
 ms.assetid: 2d6848b4-2ce6-4624-b46e-65e7daf2d0f1
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, descritta
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -16,28 +16,28 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eed28c5d26ecf280507ce3cce835a6d0a71fc3bb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5df2990a257d8f7fa544c24e33dba6a2422d2db8bea878f2487ca131e5bd607
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119866561"
 ---
 # <a name="imsrdpclientadvancedsettings7-interface"></a>Interfaccia IMsRdpClientAdvancedSettings7
 
-Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX.
+Espone metodi e proprietà che gestiscono le impostazioni avanzate del controllo ActiveX controllo .
 
-Per ottenere un'istanza di questa interfaccia, usare la proprietà [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) per ottenere un puntatore a interfaccia [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) . Chiamare quindi [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sul puntatore **IMsTscAdvancedSettings** e passare **IID \_ IMsRdpClientAdvancedSettings7** a **QueryInterface**.
+Per ottenere un'istanza di questa interfaccia, usare la [**proprietà IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) per ottenere un puntatore a interfaccia [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) Chiamare quindi [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) sul **puntatore IMsTscAdvancedSettings** e passare **\_ IMsRdpClientAdvancedSettings7** a **QueryInterface**.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IMsRdpClientAdvancedSettings7** eredita da **IMsRdpClientAdvancedSettings6**. **IMsRdpClientAdvancedSettings7** dispone anche di questi tipi di membri:
+**L'interfaccia IMsRdpClientAdvancedSettings7** eredita da **IMsRdpClientAdvancedSettings6**. **IMsRdpClientAdvancedSettings7** include anche questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **IMsRdpClientAdvancedSettings7** ha queste proprietà.
+Queste proprietà sono disponibili nell'interfaccia **IMsRdpClientAdvancedSettings7.**
 
 
 

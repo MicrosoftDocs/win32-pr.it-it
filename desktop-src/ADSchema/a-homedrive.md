@@ -1,11 +1,11 @@
 ---
-title: Attributo Home-Drive
-description: Specifica la lettera di unità in cui eseguire il mapping del percorso UNC specificato da homeDirectory.
+title: Home-Drive attributo
+description: Specifica la lettera di unità a cui eseguire il mapping del percorso UNC specificato da homeDirectory.
 ms.assetid: fa402e14-febf-4ed9-bcc6-a6bfd405068c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Home-Drive attribute
-- Schema AD dell'attributo homeDrive
+- Home-Drive schema AD dell'attributo
+- Attributo homeDrive - Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce9bff87662cc3b9da962b0c5647e79e90a3068
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8a33e7d31f175f3675da86c56cbd0617fe566c93a95272517eff97f24fac3f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925541"
 ---
-# <a name="home-drive-attribute"></a>Attributo Home-Drive
+# <a name="home-drive-attribute"></a>Home-Drive attributo
 
-Specifica la lettera di unità in cui eseguire il mapping del percorso UNC specificato da [**HomeDirectory**](a-homedirectory.md). La lettera di unità deve essere specificata nel formato *LetteraUnità * * *:** dove *LetteraUnità* è la lettera dell'unità da mappare. *LetteraUnità* deve essere costituito da una singola lettera maiuscola e dai due punti (:) è obbligatorio.
+Specifica la lettera di unità a cui eseguire il mapping del percorso UNC specificato da [**homeDirectory**](a-homedirectory.md). La lettera di unità deve essere specificata nel formato *DriveLetter***:** dove *DriveLetter* è la lettera dell'unità di cui eseguire il mapping. *DriveLetter deve* essere una singola lettera maiuscola e i due punti (:) è obbligatorio.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------------------|
 | CN                | Home-Drive                                                                        |
-| LDAP-Display-Name | homeDrive                                                                         |
+| Ldap-Display-Name | Homedrive                                                                         |
 | Dimensione              | 2 byte                                                                           |
-| Privilegio aggiornamento  | Questo valore viene impostato dall'amministratore di dominio.                                         |
-| Frequenza di aggiornamento  | Quando viene creato il record di un utente e ogni volta che è necessario modificare l'unità Home. |
+| Aggiorna privilegio  | L'amministratore di dominio imposta questo valore.                                         |
+| Frequenza di aggiornamento  | Quando viene creato il record di un utente e ogni volta che è necessario modificare l'unità home. |
 | Attribute-Id      | 1.2.840.113556.1.4.45                                                             |
-| System-ID-GUID    | bf967986-0de6-11d0-a285-00aa003049e2                                              |
+| System-Id-Guid    | bf967986-0de6-11d0-a285-00aa003049e2                                              |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                       |
 
 
@@ -58,15 +58,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Specifica la lettera di unità in cui eseguire il mapping del percorso UNC speci
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

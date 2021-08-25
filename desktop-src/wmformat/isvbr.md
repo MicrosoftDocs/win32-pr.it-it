@@ -1,9 +1,9 @@
 ---
 title: IsVBR
-description: L'attributo IsVBR specifica se il contenuto di un flusso è stato codificato tramite la codifica con velocità in bit variabile (VBR).
+description: L'attributo IsVBR specifica se il contenuto di un flusso è stato codificato usando la codifica VBR (Variable Bit Rate).
 ms.assetid: 13bd2400-c8f8-4074-8702-498543e42a63
 keywords:
-- IsVBR Windows Media Format
+- IsVBR windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f83fbaebda6e4da3ae80379053bfa6d4a167c6d5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0f5f1eb7ad35de25f89d47ac873bf592e3e473eb03c519b781051848bcf5239b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808711"
 ---
 # <a name="isvbr"></a>IsVBR
 
-L'attributo **IsVBR** specifica se il contenuto di un flusso è stato codificato tramite la codifica con velocità in bit variabile (VBR).
+**L'attributo IsVBR** specifica se il contenuto di un flusso è stato codificato usando la codifica VBR (Variable Bit Rate).
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMIsVBR
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_tipo WMT \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Commenti
 
-Quando si accede all'interfaccia **IWMHeaderInfo3** dell'oggetto writer, è possibile aggiungere o modificare questo valore. In altri oggetti (editor di metadati, lettore e lettore sincrono), questo valore è di sola lettura.
+Quando si accede **all'interfaccia IWMHeaderInfo3** dell'oggetto writer, è possibile aggiungere o modificare questo valore. In altri oggetti (editor di metadati, lettore e lettore sincrono), questo valore è di sola lettura.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,12 +42,12 @@ Quando si accede all'interfaccia **IWMHeaderInfo3** dell'oggetto writer, è poss
 [**Elenco degli attributi**](attribute-list.md)
 </dt> <dt>
 
-[**Attributi della stazione multicast**](multicast-station-attributes.md)
+[**Attributi delle stazioni multicast**](multicast-station-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Imposta un valore a virgola mobile.
 ms.assetid: f49fb4d2-6e3d-4452-8102-76200c55cf1f
-title: 'Metodo ID3DXBaseEffect:: sefloat (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::SetFloat (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: af955748fff66e67e0e2f5650b869a746168de54
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f55ede140e324daa52b5bafc24cc7004a75163a96bdf2e75d4e4be5e7a4c4b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893701"
 ---
-# <a name="id3dxbaseeffectsetfloat-method"></a>Metodo ID3DXBaseEffect:: sefloat
+# <a name="id3dxbaseeffectsetfloat-method"></a>Metodo ID3DXBaseEffect::SetFloat
 
 Imposta un valore a virgola mobile.
 
@@ -41,19 +41,19 @@ HRESULT SetFloat(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
 *f* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valore a virgola mobile.
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -83,7 +83,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**GetFloat**](id3dxbaseeffect--getfloat.md)
+[**Getfloat**](id3dxbaseeffect--getfloat.md)
 </dt> </dl>
 
  

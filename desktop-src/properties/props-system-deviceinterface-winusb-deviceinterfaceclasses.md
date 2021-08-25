@@ -1,17 +1,17 @@
 ---
 description: GUID dell'interfaccia del dispositivo WinUSB usati per aprire un handle per il dispositivo.
 ms.assetid: 744b30c3-916d-418a-9a74-904de51b8494
-title: System. DeviceInterface. WinUsb. DeviceInterfaceClasses
+title: System.DeviceInterface.WinUsb.DeviceInterfaceClasses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffec53cb5bcea1045d289cfd50068f934f291455
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 378d7ec1856c5978f6b0153b93ac5eb13c2cebf92aa2469337570549cd2bd0ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946321"
 ---
-# <a name="systemdeviceinterfacewinusbdeviceinterfaceclasses"></a>System. DeviceInterface. WinUsb. DeviceInterfaceClasses
+# <a name="systemdeviceinterfacewinusbdeviceinterfaceclasses"></a>System.DeviceInterface.WinUsb.DeviceInterfaceClasses
 
 GUID dell'interfaccia del dispositivo WinUSB usati per aprire un handle per il dispositivo.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

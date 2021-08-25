@@ -1,7 +1,7 @@
 ---
-description: Imposta il GUID della categoria dell'elemento Windows Image Acquisition (WIA) 2,0 a cui è associato il profilo.
+description: Imposta il GUID della categoria di Windows'elemento WIA (Image Acquisition) 2.0 a cui è associato il profilo.
 ms.assetid: e359abcb-b5d5-45a4-b650-2b278ba1ff6a
-title: 'Metodo IScanProfile:: SetItem (scanprofile. h)'
+title: Metodo IScanProfile::SetItem (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: d4b20aae0740656b46dd26824947fc27513afcac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc4f79c44ff84bef1efbda4b09beee6b7dcf83f04023a5e2211e9f808b18446a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814071"
 ---
-# <a name="iscanprofilesetitem-method"></a>Metodo IScanProfile:: SetItem
+# <a name="iscanprofilesetitem-method"></a>Metodo IScanProfile::SetItem
 
-Imposta il GUID della categoria dell'elemento Windows Image Acquisition (WIA) 2,0 a cui è associato il profilo.
+Imposta il GUID della categoria di Windows'elemento WIA (Image Acquisition) 2.0 a cui è associato il profilo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,12 +39,12 @@ HRESULT SetItem(
 
 <dl> <dt>
 
-*guidCategory* \[ in\]
+*guidCategory* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **GUID**
 
-GUID della categoria dell'elemento WIA 2,0. Deve corrispondere a una delle costanti di \_ categoria degli elementi dell'IPA WIA \_ \_ .
+GUID della categoria dell'elemento WIA 2.0. Deve essere una delle costanti ITEM CATEGORY di WIA \_ \_ \_ IPA.
 
 </dd> </dl>
 
@@ -52,15 +52,15 @@ GUID della categoria dell'elemento WIA 2,0. Deve corrispondere a una delle costa
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Gli utenti possono modificare la categoria con il metodo [**ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) .
+Gli utenti possono modificare la categoria con [**il metodo ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-Le modifiche apportate a un profilo non vengono salvate su disco fino a quando l'applicazione non chiama il metodo [**IScanProfile:: Save**](-wia-iscanprofile-save.md) .
+Le modifiche apportate a un profilo non vengono salvate su disco finché l'applicazione non chiama il [**metodo IScanProfile::Save.**](-wia-iscanprofile-save.md)
 
-Se due applicazioni creano oggetti del profilo di analisi dallo stesso file XML e ogni applicazione scrive le modifiche nel relativo oggetto, solo le modifiche apportate dall'applicazione che chiama [**IScanProfile:: Save**](-wia-iscanprofile-save.md) Last vengono salvate su disco.
+Se due applicazioni creano oggetti profilo di analisi dallo stesso file XML e ogni applicazione scrive le modifiche nel relativo oggetto , solo le modifiche apportate dall'applicazione che chiama [**IScanProfile::Save**](-wia-iscanprofile-save.md) per ultimo vengono salvate su disco.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,10 +68,10 @@ Se due applicazioni creano oggetti del profilo di analisi dallo stesso file XML 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

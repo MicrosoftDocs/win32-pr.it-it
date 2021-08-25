@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMethod recupera l'identificatore di invio (DISPID) del metodo da eseguire.
+description: Il metodo GetMethod recupera l'identificatore dispatch (DISPID) del metodo da eseguire.
 ms.assetid: 93b48e04-7a47-4112-ae9d-dfda6adf100a
-title: Metodo CDeferredCommand. GetMethod (Ctlutil. h)
+title: Metodo CDeferredCommand.GetMethod (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2dcbf42f7216aa72faf578d80ec47b0877be78c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16d6f3ae7a116d59eef60b440a7423f57cf0012375e261a9943714523db9259f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910071"
 ---
-# <a name="cdeferredcommandgetmethod-method"></a>Metodo CDeferredCommand. GetMethod
+# <a name="cdeferredcommandgetmethod-method"></a>Metodo CDeferredCommand.GetMethod
 
-Il `GetMethod` metodo recupera l'identificatore di invio (DISPID) del metodo da eseguire.
+Il `GetMethod` metodo recupera l'identificatore dispatch (DISPID) del metodo da eseguire.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Restituisce il DISPID del metodo da eseguire.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

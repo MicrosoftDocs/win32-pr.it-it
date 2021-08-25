@@ -1,7 +1,7 @@
 ---
 description: Puntatore a una sezione critica.
 ms.assetid: 7d949b7f-a6a7-4ab5-b651-f85b70d55065
-title: 'Membro CBaseMediaFilter:: m_pLock (Amfilter. h)'
+title: Membro CBaseMediaFilter::m_pLock (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 126aa213004dd032eea43b28198b6f8b49fe7f3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad92cf07cc096c50ffa50f862c26f6133fc8dbb9b9b059419bb516e07cbd5daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910791"
 ---
-# <a name="cbasemediafilterm_plock-member"></a>Membro pLock di CBaseMediaFilter:: m \_
+# <a name="cbasemediafilterm_plock-member"></a>Membro PLock CBaseMediaFilter::m \_
 
 Puntatore a una sezione critica.
 
@@ -38,7 +38,7 @@ CCritSec *m_pLock;
 
 ## <a name="remarks"></a>Osservazioni
 
-La sezione critica viene mantenuta durante le transizioni di stato ([**CBaseMediaFilter:: Run**](cbasemediafilter-run.md), [**CBaseMediaFilter::P ause**](cbasemediafilter-pause.md), [**CBaseMediaFilter:: Stop**](cbasemediafilter-stop.md)), quando si accede al clock di riferimento ([**CBaseMediaFilter:: SetSyncSource**](cbasemediafilter-setsyncsource.md), [**CBaseMediaFilter:: GetSyncSource**](cbasemediafilter-getsyncsource.md)) e nel metodo [**CBaseMediaFilter::**](cbasemediafilter-isactive.md) IsValid.
+La sezione critica viene mantenuta durante le transizioni di stato ([**CBaseMediaFilter::Run**](cbasemediafilter-run.md), [**CBaseMediaFilter::P ause**](cbasemediafilter-pause.md), [**CBaseMediaFilter::Stop**](cbasemediafilter-stop.md)), quando si accede al clock di riferimento ([**CBaseMediaFilter::SetSyncSource**](cbasemediafilter-setsyncsource.md), [**CBaseMediaFilter::GetSyncSource**](cbasemediafilter-getsyncsource.md)) e nel [**metodo CBaseMediaFilter::IsActive.**](cbasemediafilter-isactive.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ La sezione critica viene mantenuta durante le transizioni di stato ([**CBaseMedi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

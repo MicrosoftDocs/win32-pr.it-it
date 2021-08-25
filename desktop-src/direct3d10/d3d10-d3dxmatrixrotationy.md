@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 570179fadc9008c5f919acf657541e53ab399ac8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 29f222d2bc5a6e20dfad6d0f77b5a76ddfa1dc8174cb46bde47ee39770259839
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895561"
 ---
 # <a name="d3dxmatrixrotationy-function-d3dx10mathh"></a>Funzione D3DXMatrixRotationY (D3DX10Math.h)
 
@@ -46,7 +46,7 @@ D3DXMATRIX* D3DXMatrixRotationY(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 

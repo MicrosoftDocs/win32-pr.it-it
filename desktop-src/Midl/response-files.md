@@ -6,12 +6,12 @@ keywords:
 - MIDL del compilatore MIDL , file di risposta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c9b4d079e92dff3c25f8a38c6c73073a548ea91
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: f60a565c6178b3f671cccb391124297b07bb344c08d1cf7125ed26ba4f1b0704
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822111"
 ---
 # <a name="response-files"></a>File di risposta
 

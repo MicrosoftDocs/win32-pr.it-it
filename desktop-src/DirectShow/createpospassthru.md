@@ -1,7 +1,7 @@
 ---
 description: La funzione CreatePosPassThru crea un oggetto CPosPassThru o un oggetto CRendererPosPassThru.
 ms.assetid: d6fccfb4-b256-40aa-b927-84c7a886f631
-title: Funzione CreatePosPassThru (Ctlutil. h)
+title: Funzione CreatePosPassThru (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 08735a0bac2cc5aa8f5bb61461f10097435ad9c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0118299bd328d09d77ccbb8d5258b25c0ac57bdc21fc7a47f642374e8be12357
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908751"
 ---
-# <a name="createpospassthru-function"></a>CreatePosPassThru (funzione)
+# <a name="createpospassthru-function"></a>Funzione CreatePosPassThru
 
-La `CreatePosPassThru` funzione crea un oggetto [**CPosPassThru**](cpospassthru.md) o un oggetto [**CRendererPosPassThru**](crendererpospassthru.md) .
+La `CreatePosPassThru` funzione crea un oggetto [**CPosPassThru**](cpospassthru.md) o [**un oggetto CRendererPosPassThru.**](crendererpospassthru.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,40 +48,40 @@ STDAPI CreatePosPassThru(
 *pAgg* 
 </dt> <dd>
 
-Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown** dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **null**.
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 
 *bRenderer* 
 </dt> <dd>
 
-Valore booleano che specifica se il filtro è un renderer. Usare il valore **true** se il filtro è un renderer oppure **false** in caso contrario. Se il valore è **true**, questo metodo crea un'istanza della classe [**CRendererPosPassThru**](crendererpospassthru.md) . Se il valore è **false**, il metodo crea un'istanza della classe **CPosPassThru** .
+Valore booleano che specifica se il filtro è un renderer. Usare il valore **TRUE se** il filtro è un renderer oppure FALSE **in caso** contrario. Se il valore è **TRUE,** questo metodo crea un'istanza della [**classe CRendererPosPassThru.**](crendererpospassthru.md) Se il valore è **FALSE,** il metodo crea un'istanza della **classe CPosPassThru.**
 
 </dd> <dt>
 
 *pPin* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) sul pin di input del filtro.
+Puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) sul pin di input del filtro.
 
 </dd> <dt>
 
 *ppPassThru* 
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore all'interfaccia **IUnknown** dell'oggetto.
+Indirizzo di una variabile che riceve un puntatore **all'interfaccia IUnknown** dell'oggetto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo. In caso contrario, restituisce un valore **HRESULT** che indica la cause dell'errore.
+Restituisce S \_ OK in caso di esito positivo. In caso contrario, restituisce **un valore HRESULT** che indica la causa dell'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo utilizza l'interfaccia [**ISeekingPassThru**](/windows/desktop/api/Strmif/nn-strmif-iseekingpassthru) per creare l'oggetto. L'oggetto viene caricato dinamicamente da Quartz.dll.
+Questo metodo usa [**l'interfaccia ISeekingPassThru**](/windows/desktop/api/Strmif/nn-strmif-iseekingpassthru) per creare l'oggetto . L'oggetto viene caricato dinamicamente da Quartz.dll.
 
-Se la funzione ha esito positivo, l'interfaccia **IUnknown** restituita presenta un conteggio dei riferimenti in attesa. Il chiamante deve rilasciare l'interfaccia.
+Se la funzione ha esito positivo, **l'interfaccia IUnknown restituita** ha un conteggio dei riferimenti in sospeso. Il chiamante deve rilasciare l'interfaccia .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Se la funzione ha esito positivo, l'interfaccia **IUnknown** restituita presenta
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

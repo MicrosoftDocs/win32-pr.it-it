@@ -1,27 +1,27 @@
 ---
-description: Emissione del comando GetDevicePropValue
+description: Esecuzione del comando GetDevicePropValue
 ms.assetid: 60294ac6-06e0-4546-bbe9-da48d250e31e
-title: Emissione del comando GetDevicePropValue
+title: Esecuzione del comando GetDevicePropValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d2e5e99e2b1d51b9147fc4da2d86b4fa955907
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da87366361bbcccba182b72cfb49124692f86dc88c5a87ebbeb4d5f667451a97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839281"
 ---
-# <a name="issuing-the-getdevicepropvalue-command"></a>Emissione del comando GetDevicePropValue
+# <a name="issuing-the-getdevicepropvalue-command"></a>Esecuzione del comando GetDevicePropValue
 
-L'esempio in questa sezione richiama il comando **GetDevicePropValue** MTP per recuperare la proprietà del dispositivo **BatteryLevel** . Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).
+L'esempio in questa sezione richiama il **comando MTP GetDevicePropValue** per recuperare la **proprietà del dispositivo BatteryLevel.** Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP.](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
-Nel caso di **GetDevicePropValue**, il codice di esempio usa la sequenza seguente:
+Nel caso di **GetDevicePropValue,** il codice di esempio usa la sequenza seguente:
 
-1.  comando \_ WPD \_ MTP \_ ext \_ Execute \_ \_ con \_ dati \_ da \_ leggere
-2.  \_comando WPD \_ MTP \_ ext \_ Read \_ Data
-3.  \_comando WPD \_ MTP \_ ext \_ End \_ data \_ Transfer
+1.  COMANDO WPD \_ \_ MTP \_ EXT \_ EXECUTE CON DATI DA \_ \_ \_ \_ \_ LEGGERE
+2.  COMANDO WPD \_ \_ MTP \_ EXT \_ LETTURA \_ DATI
+3.  TRASFERIMENTO DEI DATI \_ DI FINE DEL COMANDO \_ WPD MTP \_ EXT \_ \_ \_
 
-Nell'esempio di codice seguente viene illustrato il modo in cui l'applicazione initates la sequenza di comandi.
+Nell'esempio di codice seguente viene illustrato come l'applicazione inita la sequenza di comandi.
 
 
 ```
@@ -144,7 +144,7 @@ HRESULT GetBatteryLevel(IPortableDevice* pDevice, BYTE& bBatteryLevel)
 
 
 
-Nell'esempio di codice seguente viene illustrato il modo in cui l'applicazione recupera i dati della proprietà.
+Nell'esempio di codice seguente viene illustrato come l'applicazione recupera i dati delle proprietà.
 
 
 ```
@@ -240,7 +240,7 @@ Nell'esempio di codice seguente viene illustrato il modo in cui l'applicazione r
 
 
 
-L'esempio di codice seguente mostra come l'applicazione recupera la risposta del dispositivo al comando.
+Nell'esempio di codice seguente viene illustrato come l'applicazione recupera la risposta del dispositivo al comando .
 
 
 ```

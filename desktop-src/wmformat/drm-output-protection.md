@@ -1,10 +1,10 @@
 ---
-title: Struttura DRM_OUTPUT_PROTECTION (wmdrmsdk. h)
-description: La \_ \_ struttura di protezione dell'output DRM include informazioni su una tecnologia di protezione dell'output.
+title: DRM_OUTPUT_PROTECTION struttura (Wmdrmsdk.h)
+description: La struttura DRM \_ OUTPUT PROTECTION contiene informazioni su una tecnologia di protezione \_ dell'output.
 ms.assetid: e458013d-b77e-4e03-bff9-e3ecfc72ebdb
 keywords:
-- Formato di Windows Media per la struttura DRM_OUTPUT_PROTECTION
-- struttura Windows Media Format
+- DRM_OUTPUT_PROTECTION struttura windows Media Format
+- Struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a10428d86503e952dc82a7d45bddc11f5dd1286
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82454d8b4982e6546b003ae3977c7a98869d46ba393ea49f0b97773f95572777
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881131"
 ---
-# <a name="drm_output_protection-structure"></a>Struttura di protezione dell' \_ output DRM \_
+# <a name="drm_output_protection-structure"></a>Struttura DRM \_ OUTPUT \_ PROTECTION
 
-La struttura di **\_ \_ protezione dell'output DRM** include informazioni su una tecnologia di protezione dell'output.
+La **struttura DRM \_ OUTPUT \_ PROTECTION** contiene informazioni su una tecnologia di protezione dell'output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ Dati di configurazione per la tecnologia.
 
 ## <a name="remarks"></a>Commenti
 
-**DRM \_ La \_ \_** protezione dell'output audio e la **\_ \_ \_ protezione dell'output video DRM** sono entrambe definite come **\_ \_ protezione dell'output DRM** nelle istruzioni **typedef** .
+**DRM \_ AUDIO \_ OUTPUT \_ PROTECTION** e **DRM VIDEO OUTPUT \_ \_ \_ PROTECTION** sono entrambi definiti **come DRM OUTPUT \_ \_ PROTECTION** nelle **istruzioni typedef.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Dati di configurazione per la tecnologia.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Dati di configurazione per la tecnologia.
 
 <dl> <dt>
 
-[**protezione dell'output DRM, ad \_ \_ \_ esempio**](drm-output-protection-ex.md)
+[**PROTEZIONE \_ DELL'OUTPUT DRM \_ \_ EX**](drm-output-protection-ex.md)
 </dt> <dt>
 
 [**Strutture**](drm-structures.md)

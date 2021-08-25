@@ -1,6 +1,6 @@
 ---
-title: Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12. h)
-description: Chiama il callback del sottooggetto stato depth stencil di un oggetto che implementa questa interfaccia.
+title: Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h)
+description: Chiama il callback depth stencil oggetto secondario di stato di un oggetto che implementa questa interfaccia.
 ms.assetid: 6E77A3B7-20D8-4D31-9D31-515CF4618157
 keywords:
 - Metodo DepthStencilStateCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 913dbddef0c509174d3600798a6e1380d6098808
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a1086156fcaa6b8736c049c93bacc5dfd1f5e915ba8a7006b3c71e654ba65f52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894581"
 ---
-# <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h"></a>Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12. h)
+# <a name="id3dx12pipelineparsercallbacks-depthstencilstatecb-method-d3dx12h"></a>Metodo ID3DX12PipelineParserCallbacks DepthStencilStateCb (D3DX12.h)
 
-Chiama il callback del sottooggetto stato depth stencil di un oggetto che implementa questa interfaccia.
+Chiama il callback depth stencil oggetto secondario di stato di un oggetto che implementa questa interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,15 +46,15 @@ void DepthStencilStateCb(
 *DepthStencilState* \[ Ref\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ Depth \_ stencil \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)**
+Tipo: **const [**D3D12 \_ DEPTH STENCIL \_ \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)**
 
-Dettagli del sottooggetto depth stencil stato analizzato da un flusso di stato della pipeline.
+Dettagli del sottooggetto depth stencil stato della pipeline analizzato da un flusso di stato della pipeline.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Non restituisce alcun elemento.
+Non restituisce alcun valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Non restituisce alcun elemento.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Libreria<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Libreria<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Non restituisce alcun elemento.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**D3D12 \_ Depth \_ stencil \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
+[**D3D12 \_ DEPTH \_ STENCIL \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 </dt> </dl>
 
  

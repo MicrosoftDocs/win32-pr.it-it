@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_COLUMNBASE. szBaseColumnName'
-title: Proprietà JET_COLUMNBASE. szBaseColumnName
+description: 'Altre informazioni su: JET_COLUMNBASE.szBaseColumnName'
+title: JET_COLUMNBASE.szBaseColumnName
 TOCTitle: 'szBaseColumnName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNBASE.szBaseColumnName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnbase.szbasecolumnname(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93c3fd47cba41ef54ebf4f53cd1c2b22cdde5c6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d4ff0af51ddde0c6a42a50e28f8abf1c695b762da5d2e0a7578a68efa7c6f1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945841"
 ---
-# <a name="jet_columnbaseszbasecolumnname-property"></a>Proprietà JET_COLUMNBASE. szBaseColumnName
+# <a name="jet_columnbaseszbasecolumnname-property"></a>JET_COLUMNBASE.szBaseColumnName
 
-Ottiene il nome della colonna nella tabella del modello.
+Ottiene il nome della colonna nella tabella modello.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public string szBaseColumnName { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNBASE](./jet-columnbase-class.md)
+[JET_COLUMNBASE classe](./jet-columnbase-class.md)
 
-[Membri JET_COLUMNBASE](./jet-columnbase-members.md)
+[JET_COLUMNBASE membri](./jet-columnbase-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

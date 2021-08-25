@@ -1,9 +1,9 @@
 ---
-title: Elemento Localization (instrumentationManifest)
-description: Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto. | Elemento Localization (instrumentationManifest)
+title: Elemento localization (instrumentationManifest)
+description: Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto. | Elemento localization (instrumentationManifest)
 ms.assetid: 20c41456-cba2-4c8c-9c7e-2ffa0d1b37e5
 keywords:
-- EventLog elemento di localizzazione
+- Elemento di localizzazione EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df7629a2fb4662527426271892bd10da490daee4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 40cbee0cd5a8e9254b1fa6bf613c1153bb77eaebd8327e752aca24cdc8bb7330
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863331"
 ---
-# <a name="localization-instrumentationmanifest-element"></a>Elemento Localization (instrumentationManifest)
+# <a name="localization-instrumentationmanifest-element"></a>Elemento localization (instrumentationManifest)
 
 Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto.
 
@@ -30,7 +30,7 @@ Definisce un gruppo di risorse localizzate a cui si fa riferimento nel manifesto
  />
 ```
 
-L'elemento di **localizzazione** è definito dall'elemento [**instrumentationManifest**](eventmanifestschema-instrumentationmanifest-element.md) .
+**L'elemento di** localizzazione è definito dall'elemento [**instrumentationManifest.**](eventmanifestschema-instrumentationmanifest-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento di **localizzazione** è definito dall'elemento [**instrumentationMan
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
