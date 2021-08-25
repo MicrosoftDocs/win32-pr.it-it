@@ -1,11 +1,11 @@
 ---
-title: EventTrigger. Delay (proprietà)
-description: Per gli script, ottiene o imposta un valore che indica l'intervallo di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività.
+title: EventTrigger.Delay - proprietà
+description: Per lo scripting, ottiene o imposta un valore che indica la quantità di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività.
 ms.assetid: 6f8b5e25-ad53-466e-adab-fe3c968e941b
 keywords:
-- Utilità di pianificazione di proprietà delay
-- Utilità di pianificazione di proprietà delay, oggetto EventTrigger
-- Utilità di pianificazione oggetto EventTrigger, proprietà delay
+- Proprietà Delay Utilità di pianificazione
+- Proprietà Delay Utilità di pianificazione , oggetto EventTrigger
+- EventTrigger object Utilità di pianificazione , Delay property
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcb67ca7ef12ca023bcb6c0d9d83880d4abb94af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 402ddb8e55f6eb22a4e2c106b64cbec3ed1afa6d0b58f38a2a8923f5bd8dfa4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959591"
 ---
-# <a name="eventtriggerdelay-property"></a>EventTrigger. Delay (proprietà)
+# <a name="eventtriggerdelay-property"></a>EventTrigger.Delay - proprietà
 
-Per gli script, ottiene o imposta un valore che indica l'intervallo di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni,' t'è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti).
+Per lo scripting, ottiene o imposta un valore che indica la quantità di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni, 'T' è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Valore che indica la quantità di tempo tra il momento in cui si verifica l'even
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, il ritardo dell'evento viene specificato utilizzando l'elemento [**delay**](taskschedulerschema-delay-eventtriggertype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML personalizzato per un'attività, il ritardo dell'evento viene specificato usando l'elemento [**Delay**](taskschedulerschema-delay-eventtriggertype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Durante la lettura o la scrittura di un codice XML personalizzato per un'attivit
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

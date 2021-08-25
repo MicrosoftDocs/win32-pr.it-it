@@ -1,7 +1,7 @@
 ---
-description: Aggiungere i dati figlio alla rete.
+description: Aggiungere dati figlio alla mesh.
 ms.assetid: cf3e2015-c4b0-4d98-8346-c74fbdd37310
-title: 'Metodo ID3DXSaveUserData:: AddMeshChildData (D3dx9anim. h)'
+title: Metodo ID3DXSaveUserData::AddMeshChildData (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8a9d6b69e64e0e1eca5d4350125e0955254b6127
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 397dc9ade32222dd98e050110811464f6544a1d0af52729417c61fbc3367bdbd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893311"
 ---
-# <a name="id3dxsaveuserdataaddmeshchilddata-method"></a>Metodo ID3DXSaveUserData:: AddMeshChildData
+# <a name="id3dxsaveuserdataaddmeshchilddata-method"></a>Metodo ID3DXSaveUserData::AddMeshChildData
 
-Aggiungere i dati figlio alla rete.
+Aggiungere dati figlio alla mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT AddMeshChildData(
 
 <dl> <dt>
 
-*pMeshContainer* \[ in\]
+*pMeshContainer* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMESHCONTAINER**](d3dxmeshcontainer.md) \***
@@ -51,21 +51,21 @@ Puntatore a un contenitore mesh. Vedere [**D3DXMESHCONTAINER**](d3dxmeshcontaine
 
 </dd> <dt>
 
-*pXofSave* \[ in\]
+*pXofSave* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Puntatore a un oggetto di salvataggio file con estensione x. Usare il puntatore per chiamare [**ID3DXFileSaveObject:: AddDataObject**](id3dxfilesaveobject--adddataobject.md) per aggiungere un oggetto dati figlio. Non salvare i dati con [**ID3DXFileSaveObject:: Save**](id3dxfilesaveobject--save.md).
+Puntatore a un oggetto di salvataggio di file con estensione x. Usare il puntatore per chiamare [**ID3DXFileSaveObject::AddDataObject**](id3dxfilesaveobject--adddataobject.md) per aggiungere un oggetto dati figlio. Non salvare i dati con [**ID3DXFileSaveObject::Save**](id3dxfilesaveobject--save.md).
 
 </dd> <dt>
 
-*pXofMeshData* \[ in\]
+*pXofMeshData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFileSaveData**](id3dxfilesavedata.md)**
 
-Puntatore a un nodo dati del file con estensione x. Usare il puntatore per chiamare [**ID3DXFileSaveData:: AddDataObject**](id3dxfilesavedata--adddataobject.md) per aggiungere un oggetto dati figlio.
+Puntatore a un nodo dati di file con estensione x. Usare il puntatore per chiamare [**ID3DXFileSaveData::AddDataObject**](id3dxfilesavedata--adddataobject.md) per aggiungere un oggetto dati figlio.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntatore a un nodo dati del file con estensione x. Usare il puntatore per chiam
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR,**](./d3dxerr.md)perché in questo modo anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

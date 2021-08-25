@@ -1,24 +1,24 @@
 ---
-title: Attributo Origin (Fill) (la)
-description: Attributo Origin (Fill) (la)
+title: Attributo origin (fill)(VML)
+description: Attributo origin (fill)(VML)
 ms.assetid: 7ebb70eb-e8f2-4749-88fd-935562da0b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1d26f5e544ffa19b347ceec1549885c1ff6b90
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fc33ae1f4cf7c588ae9b3f40ff8c445be88192bae1dfc86a3593eea931befb25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959221"
 ---
-# <a name="origin-attribute-fillvml"></a>Attributo Origin (Fill) (la)
+# <a name="origin-attribute-fillvml"></a>Attributo origin (fill)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il centro di un'immagine di riempimento. Proprietà di lettura/scrittura. [VgVector2D](msdn-online-vml-ivgvector2d-data-type.md) .
 
@@ -26,25 +26,25 @@ Definisce il centro di un'immagine di riempimento. Proprietà di lettura/scrittu
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* Origin = " *Expression* " >
+<v: *element* origin=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Origin = "*Expression*"
+*element* .origin="*expression*"
 
-*espressione* = *elemento*. Origin
+*expression* = *elemento*.origin
 
 **Osservazioni:**
 
-Specifica un punto relativo all'angolo superiore sinistro dell'immagine; questo punto viene trattato come origine dell'immagine. Il valore predefinito è il centro dell'immagine. Il vettore è una frazione della larghezza e dell'altezza dell'immagine.
+Specifica un punto relativo all'angolo superiore sinistro dell'immagine. questo punto viene considerato come l'origine dell'immagine. Il valore predefinito è il centro dell'immagine. Il vettore è una frazione della larghezza e dell'altezza dell'immagine.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-L'immagine del riempimento viene spostata verso sinistra fino a un punto 50% della larghezza della forma.
+L'immagine del riempimento viene spostata a sinistra fino a un punto del 50% della larghezza della forma .
 
 
 ```HTML
@@ -59,6 +59,6 @@ L'immagine del riempimento viene spostata verso sinistra fino a un punto 50% del
 
 
 
- 
+ 
 
- 
+ 

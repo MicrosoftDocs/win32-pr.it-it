@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_FLOAT_to_UINT
+title: D3DX_FLOAT_to_UINT funzione
 description: Converte un valore FLOAT in UINT.
 ms.assetid: 05c5de72-8915-4541-a82d-242e46bfa883
 keywords:
-- Funzione D3DX_FLOAT_to_UINT HLSL
+- D3DX_FLOAT_to_UINT funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e729ba805d63068844192a134236722288fe8a9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 37665d3630979dee3fad7c109152a852883455f5de40c064faa8f1ea4f0645cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855621"
 ---
-# <a name="d3dx_float_to_uint-function"></a>\_Funzione float D3DX \_ a \_ uint
+# <a name="d3dx_float_to_uint-function"></a>Funzione da D3DX \_ FLOAT \_ a \_ UINT
 
 Converte un valore FLOAT in UINT.
 
@@ -38,7 +38,7 @@ UINT D3DX_FLOAT_to_UINT(
 
 <dl> <dt>
 
-*\_V* 
+*\_Presso* 
 </dt> <dd>
 
 Vettore v.
@@ -48,7 +48,7 @@ Vettore v.
 *\_Scalabilità* 
 </dt> <dd>
 
-Valore della scala.
+Valore di scala.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Valore FLOAT convertito
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Valore FLOAT convertito
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e impacchettamento del formato DXGI \_ per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

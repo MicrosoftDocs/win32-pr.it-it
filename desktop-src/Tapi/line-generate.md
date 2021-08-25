@@ -1,19 +1,19 @@
 ---
-description: Il messaggio di generazione della linea TAPI \_ viene inviato per notificare all'applicazione che la cifra corrente o la generazione di un tono è stata interrotta.
+description: Il messaggio TAPI LINE GENERATE viene inviato per notificare all'applicazione che la generazione della cifra o del tono \_ corrente è terminata.
 ms.assetid: 375823c5-22c2-4010-bfb4-5b8b46141c72
-title: Messaggio di LINE_GENERATE (TAPI. h)
+title: LINE_GENERATE messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b916dc95d1a6343b0f8ebc0eef9e589b04aa2112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd3ab0d503d7515fec2cdbd1676eed235cced88e2adfa9fcc1dd354663929e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774241"
 ---
-# <a name="line_generate-message"></a>\_Messaggio di generazione riga
+# <a name="line_generate-message"></a>MESSAGGIO LINE \_ GENERATE
 
-Il messaggio **di \_ generazione della linea** TAPI viene inviato per notificare all'applicazione che la cifra corrente o la generazione di un tono è stata interrotta. Solo una di queste richieste di generazione può essere in corso una determinata chiamata in qualsiasi momento. Questo messaggio viene inviato anche quando viene annullata la generazione di numeri o toni.
+Il messaggio TAPI **LINE \_ GENERATE viene** inviato per notificare all'applicazione che la generazione della cifra o del tono corrente è terminata. È possibile che sia in corso una sola richiesta di generazione di questo tipo in una determinata chiamata in qualsiasi momento. Questo messaggio viene inviato anche quando la generazione di numeri o toni viene annullata.
 
 
 ```C++
@@ -29,7 +29,7 @@ Il messaggio **di \_ generazione della linea** TAPI viene inviato per notificare
 *hDevice* 
 </dt> <dd>
 
-Handle della chiamata.
+Handle per la chiamata.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Istanza di callback fornita all'apertura della riga.
 *dwParam1* 
 </dt> <dd>
 
-Motivo per cui la generazione di numeri o toni è stata terminata. Questo parametro deve essere costituito solo da una delle [**\_ costanti LINEGENERATETERM**](linegenerateterm--constants.md).
+Motivo per cui la generazione di numeri o toni è stata terminata. Questo parametro deve essere una sola delle costanti [**LINEGENERATETERM \_**](linegenerateterm--constants.md).
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Non utilizzato.
 *dwParam3* 
 </dt> <dd>
 
-"Conteggio dei cicli" (numero di millisecondi dall'avvio di Windows) in corrispondenza del quale la cifra o la generazione del tono è stata completata. Per le versioni API precedenti alla 2,0, questo parametro è inutilizzato.
+Il "numero di tick" (numero di millisecondi dall'Windows avviata) in corrispondenza del quale è stata completata la generazione della cifra o del tono. Per le versioni dell'API precedenti alla 2.0, questo parametro non è usato.
 
 </dd> </dl>
 
@@ -67,11 +67,11 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il **messaggio \_ di generazione riga** viene inviato solo all'applicazione che ha richiesto la generazione di numeri o toni.
+Il **messaggio LINE \_ GENERATE** viene inviato solo all'applicazione che ha richiesto la generazione della cifra o del tono.
 
-Poiché è possibile che il timestamp specificato da *dwParam3* sia stato generato in un computer diverso da quello in cui è in esecuzione l'applicazione, è utile solo per il confronto con altri messaggi con timestamp analoghi generati sullo stesso dispositivo a linee ( [**linea \_ GATHERDIGITS**](line-gatherdigits.md), [**linea \_ MONITORDIGITS**](line-monitordigits.md), [**riga \_ MONITORMEDIA**](line-monitormedia.md), [**linea \_ MONITORTONE**](line-monitortone.md)), per determinare la tempistica relativa (separazione tra gli eventi). Il numero di cicli può essere "avvolto" dopo circa 49,7 giorni. Quando si eseguono calcoli, le applicazioni devono tenere conto di questo.
+Poiché il timestamp specificato da *dwParam3* può essere stato generato in un computer diverso da quello in cui è in esecuzione l'applicazione, è utile solo per il confronto con altri messaggi con timestamp simili generati sullo stesso dispositivo di riga ( [**LINE \_ GATHERDIGITS**](line-gatherdigits.md), [**LINE \_ MONITORDIGITS**](line-monitordigits.md), [**LINE \_ MONITORMEDIA**](line-monitormedia.md), [**LINE \_ MONITORTONE**](line-monitortone.md)), per determinare la relativa temporizzazione (separazione tra gli eventi). Il conteggio dei tick può essere "incapsulato" dopo circa 49,7 giorni; le applicazioni devono prendere in considerazione questo tipo di dati durante l'esecuzione di calcoli.
 
-Se il provider di servizi non genera il timestamp (ad esempio, se è stato creato con una versione precedente di TAPI), TAPI fornisce un timestamp nel punto più vicino al provider di servizi che genera l'evento in modo che il timestamp sintetizzato sia il più accurato possibile.
+Se il provider di servizi non genera il timestamp (ad esempio, se è stato creato usando una versione precedente di TAPI), TAPI fornisce un timestamp nel punto più vicino al provider di servizi che genera l'evento in modo che il timestamp sintetizzato sia il più accurato possibile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se il provider di servizi non genera il timestamp (ad esempio, se è stato creat
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -88,16 +88,16 @@ Se il provider di servizi non genera il timestamp (ad esempio, se è stato creat
 
 <dl> <dt>
 
-[**LINEA \_ GATHERDIGITS**](line-gatherdigits.md)
+[**LINE \_ GATHERDIGITS**](line-gatherdigits.md)
 </dt> <dt>
 
-[**LINEA \_ MONITORDIGITS**](line-monitordigits.md)
+[**LINE \_ MONITORDIGITS**](line-monitordigits.md)
 </dt> <dt>
 
-[**LINEA \_ MONITORMEDIA**](line-monitormedia.md)
+[**LINE \_ MONITORMEDIA**](line-monitormedia.md)
 </dt> <dt>
 
-[**LINEA \_ MONITORTONE**](line-monitortone.md)
+[**LINE \_ MONITORTONE**](line-monitortone.md)
 </dt> </dl>
 
  

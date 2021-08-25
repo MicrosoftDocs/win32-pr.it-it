@@ -1,45 +1,45 @@
 ---
-description: Panoramica dell'uso di automazione interfaccia utente e di altri strumenti per testare le app.
+description: Panoramica di come usare Automazione interfaccia utente e altri strumenti per testare le app.
 title: Test per l'accessibilità
 ms.topic: article
 ms.date: 04/18/2019
-ms.openlocfilehash: 0d589c9b7bd598c0829ff9941ab2facabfaf10d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0cc1d118c84e2689b6cf329da29bb518a566fb8588c311229be17fcd28825ddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119896581"
 ---
 # <a name="testing-for-accessibility"></a>Test per l'accessibilità
 
-L'accesso a livello di codice e l'accesso tramite tastiera sono requisiti essenziali per supportare l'accessibilità nell'applicazione. Il test dell'accessibilità delle applicazioni Windows, degli strumenti di Assistive Technology (AT) e dei framework dell'interfaccia utente è fondamentale per garantire un'esperienza utente efficace per gli utenti con diverse disabilità e limitazioni (tra cui visione, apprendimento, destrezza/mobilità e disabilità di lingua/comunicazione) o chi preferisce semplicemente utilizzare una tastiera.
+L'accesso a livello di codice e l'accesso tramite tastiera sono requisiti critici per il supporto dell'accessibilità nell'applicazione. Testare l'accessibilità delle applicazioni Windows, degli strumenti di assistive technology (AT) e dei framework dell'interfaccia utente è fondamentale per garantire un'esperienza utente ottimale per gli utenti con varie disabilità e limitazioni (inclusi visione, apprendimento, complessità/mobilità e disabilità di linguaggio/comunicazione) o per coloro che preferiscono semplicemente usare una tastiera.
 
-Senza un accesso adeguato a, ad esempio lettori schermo e tastiere sullo schermo, gli utenti con visione, apprendimento, destrezza/mobilità e disabilità o limitazioni di lingua/comunicazione (e utenti che preferiscono semplicemente utilizzare la tastiera) non sarebbero in grado di utilizzare l'applicazione.
+Senza un accesso adeguato tramite AT, ad esempio utilità per la lettura dello schermo e tastiere su schermo, gli utenti con visione, apprendimento, mobilità e disabilità di linguaggio/comunicazione o limitazioni (e gli utenti che preferiscono semplicemente usare la tastiera) non sarebbero in grado di usare l'applicazione.
 
-In questa sezione vengono descritti i vari strumenti che è possibile utilizzare per testare l'implementazione dell'accessibilità delle applicazioni Windows e Web.
+In questa sezione vengono descritti i vari strumenti che è possibile usare per testare l'implementazione dell'accessibilità delle applicazioni Windows e Web.
 
 > [!NOTE]
 > È anche importante eseguire test manuali per verificare l'accesso tramite tastiera all'applicazione.
 
 ## <a name="tools"></a>Strumenti
 
-[Informazioni dettagliate sull'accessibilità](https://accessibilityinsights.io/) : consente agli sviluppatori di individuare e correggere i problemi di accessibilità nei siti Web e nelle applicazioni Windows.
+[Accessibilità Insights: consente](https://accessibilityinsights.io/) agli sviluppatori di individuare e risolvere i problemi di accessibilità sia nei siti Web che Windows applicazioni.
 
-- [Accessibility Insights per il Web](https://accessibilityinsights.io/docs/web/overview) è un'estensione per Chrome e [Microsoft Edge Insider](https://www.microsoftedgeinsider.com) che consente agli sviluppatori di individuare e correggere i problemi di accessibilità nei siti e nelle app Web. Supporta due scenari principali:
-  - **Fastpass** : processo semplificato in due passaggi che consente agli sviluppatori di identificare i problemi di accessibilità comuni e ad alto effetto in meno di cinque minuti.  
-  - **Valutazione** : consente a chiunque di verificare che un sito Web sia conforme al 100% con gli standard e le linee guida per l'accessibilità. [Accessibility Insights](https://accessibilityinsights.io/) consente anche di esaminare gli elementi, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente (analogamente agli strumenti di [ispezione](/windows/desktop/winauto/inspect-objects) e [Accevent](/windows/desktop/winauto/accessible-event-watcher) legacy descritti nella sezione seguente).
+- [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview) è un'estensione per Chrome e [Microsoft Edge Insider](https://www.microsoftedgeinsider.com) che consente agli sviluppatori di individuare e risolvere i problemi di accessibilità in siti e app Web. Supporta due scenari principali:
+  - **FastPass:** processo leggero in due passaggi che consente agli sviluppatori di identificare i problemi comuni di accessibilità ad alto impatto in meno di cinque minuti.  
+  - **Valutazione:** consente a chiunque di verificare che un sito Web sia 100% conforme agli standard e alle linee guida di accessibilità. [Il Insights](https://accessibilityinsights.io/) accessibilità consente anche di esaminare Automazione interfaccia utente elementi, proprietà, pattern di controllo ed eventi (in modo simile agli strumenti legacy [Inspect](/windows/desktop/winauto/inspect-objects) e [AccEvent](/windows/desktop/winauto/accessible-event-watcher) descritti nella sezione seguente).
 
-- [Accessibility Insights per Windows](https://accessibilityinsights.io/docs/windows/overview) consente agli sviluppatori di individuare e risolvere i problemi di accessibilità nelle app di Windows. Lo strumento supporta tre scenari principali:
-  - Il **controllo in tempo reale** consente agli sviluppatori di verificare che un elemento in un'app disponga delle proprietà di automazione interfaccia utente appropriate semplicemente passando il mouse sull'elemento o impostando lo stato attivo della tastiera.
-  - **Fastpass** : processo semplificato in due passaggi che consente agli sviluppatori di identificare i problemi di accessibilità comuni e ad alto effetto in meno di cinque minuti.
-  - La **risoluzione dei problemi** consente di diagnosticare e risolvere specifici problemi di accessibilità.
+- [I Insights per Windows](https://accessibilityinsights.io/docs/windows/overview) consentono agli sviluppatori di individuare e risolvere i problemi di accessibilità nelle Windows app. Lo strumento supporta tre scenari principali:
+  - **Live Inspect consente** agli sviluppatori di verificare che un elemento in un'app abbia le proprietà Automazione interfaccia utente semplicemente passando il puntatore sull'elemento o impostando lo stato attivo della tastiera su di esso.
+  - **FastPass:** processo leggero in due passaggi che consente agli sviluppatori di identificare i problemi comuni di accessibilità ad alto impatto in meno di cinque minuti.
+  - **La risoluzione** dei problemi consente di diagnosticare e risolvere problemi di accessibilità specifici.
 
 ### <a name="legacy-testing-tools"></a>Strumenti di test legacy
 
-Gli strumenti seguenti sono ancora disponibili nella Windows SDK e sono documentati qui per il supporto continuo, ma è consigliabile eseguire la transizione a [Insights di accessibilità](https://accessibilityinsights.io/).
+Gli strumenti seguenti sono ancora disponibili in Windows SDK e sono documentati qui per il supporto continuo, ma è consigliabile passare a [Accessibilità Insights](https://accessibilityinsights.io/).
 
-- [Ispeziona](/windows/desktop/winauto/inspect-objects): consente di visualizzare i dati di accessibilità di qualsiasi elemento dell'interfaccia utente. È particolarmente utile per garantire che le proprietà e i pattern di controllo siano impostati correttamente quando si estende un controllo comune o si crea un controllo personalizzato.
-- [Monitoraggio eventi accessibili (accEvent)](/windows/desktop/winauto/accessible-event-watcher): esamina i dati di accessibilità per convalidare gli elementi dell'interfaccia utente dell'applicazione e verificare che gli elementi dell'interfaccia utente generino gli eventi di Microsoft Active Accessibility e di automazione interfaccia utente appropriati AccEvent viene in genere usato per eseguire il debug dei problemi e per convalidare il corretto funzionamento dei controlli personalizzati ed estesi.
-- [AccScope](/windows/desktop/winauto/accscope): consente la valutazione visiva dell'accessibilità di un'applicazione durante le fasi iniziali di progettazione e sviluppo. AccScope consente di visualizzare il modo in cui un'applicazione per la lettura dello schermo usa le informazioni di automazione interfaccia utente fornite da un'app e Mostra dove l'aggiunta di informazioni o il supporto per l'applicazione può migliorare l'accessibilità.
-- [Controllo di accessibilità dell'interfaccia utente](/windows/desktop/winauto/ui-accessibility-checker): verifica che i requisiti di accessibilità chiave dell'interfaccia utente in un'applicazione vengano realizzati. AccChecker include controlli di verifica per l'automazione dell'interfaccia utente, Microsoft Active Accessibility e le applicazioni Rich Internet (ARIA) accessibili. Può fornire un controllo statico degli errori, ad esempio nomi mancanti, problemi di struttura ad albero e altro ancora. Consente di verificare l'accesso programmatico e include funzionalità avanzate per l'automazione dei test di accessibilità.
-- [Verifica automazione interfaccia utente](/windows/desktop/winauto/ui-automation-verify): un Framework per test manuali e automatizzati dell'implementazione di automazione interfaccia utente in un controllo o in un'applicazione (i risultati possono essere registrati). È possibile integrare l'applicazione nel codice di test ed eseguire verifiche regolari e automatizzate dei test o degli scenari di automazione dell'interfaccia utente. Questo strumento è utile per verificare che le modifiche apportate alle applicazioni con funzionalità stabilite non includano nuovi problemi o regressioni in aree oltre le nuove funzionalità.
+- [Inspect](/windows/desktop/winauto/inspect-objects): consente di visualizzare i dati di accessibilità di qualsiasi elemento dell'interfaccia utente. È particolarmente utile per garantire che le proprietà e i pattern di controllo vengano impostati correttamente durante l'estensione di un controllo comune o la creazione di un controllo personalizzato.
+- [Accessible Event Watcher (AccEvent):](/windows/desktop/winauto/accessible-event-watcher)esamina i dati di accessibilità per convalidare gli elementi dell'interfaccia utente dell'applicazione e assicurarsi che gli elementi dell'interfaccia utente Microsoft Active Accessibility e Automazione interfaccia utente eventi dell'interfaccia utente. AccEvent viene in genere usato per eseguire il debug dei problemi e per convalidare il corretto funzionamento dei controlli personalizzati ed estesi.
+- [AccScope:](/windows/desktop/winauto/accscope)consente la valutazione visiva dell'accessibilità di un'applicazione durante le prime fasi di progettazione e sviluppo. AccScope consente di visualizzare il modo in cui un'utilità per la lettura dello schermo usa le Automazione interfaccia utente fornite da un'app e mostra dove l'aggiunta di informazioni o supporto all'applicazione può migliorarne l'accessibilità.
+- [Verifica accessibilità interfaccia utente:](/windows/desktop/winauto/ui-accessibility-checker)verifica che siano soddisfatti i requisiti di accessibilità principali dell'interfaccia utente in un'applicazione. AccChecker include controlli di verifica per Automazione interfaccia utente, Microsoft Active Accessibility e LEA (Accessible Rich Internet Applications). Può fornire un controllo statico degli errori, ad esempio nomi mancanti, problemi di albero e altro ancora. Consente di verificare l'accesso a livello di codice e include funzionalità avanzate per l'automazione dei test di accessibilità.
+- [Automazione interfaccia utente verifica:](/windows/desktop/winauto/ui-automation-verify)framework per il test manuale e automatizzato dell'implementazione Automazione interfaccia utente in un controllo o in un'applicazione (i risultati possono essere registrati). È possibile integrare l'applicazione nel codice di test ed eseguire test regolari e automatizzati o controlli spot degli scenari Automazione interfaccia utente test. Questo strumento è utile per verificare che le modifiche apportate alle applicazioni con funzionalità stabilite non presentino nuovi problemi o regressioni in aree oltre le nuove funzionalità.

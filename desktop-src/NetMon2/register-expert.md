@@ -1,7 +1,7 @@
 ---
 description: L'esperto deve implementare la funzione Register Expert. Network Monitor chiama la funzione Register Expert per ottenere informazioni sull'esperto.
 ms.assetid: 58cfe525-99b1-40ce-b8d8-fa1c62a20c40
-title: Funzione Register Expert callback (Netmon. h)
+title: Registrare la funzione di callback Expert (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 085d5c59b17b10949ad39d07354906f40e123988
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1203682e82b01b7665c9661c3f58c14bbf2cd479cac62c72a64505b0e25feaa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889571"
 ---
-# <a name="register-expert-callback-function"></a>Registra funzione di callback esperto
+# <a name="register-expert-callback-function"></a>Funzione di callback Register Expert
 
-L'esperto deve implementare la funzione **Register** Expert. Network Monitor chiama la funzione **Register** Expert per ottenere informazioni sull'esperto.
+L'esperto deve **implementare la funzione Register** Expert. Network Monitor chiama la **funzione Register** Expert per ottenere informazioni sull'esperto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,22 +39,22 @@ BOOL WINAPI Register(
 
 <dl> <dt>
 
-*pExpertInfo* \[ in uscita\]
+*pExpertInfo* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**EXPERTENUMINFO**](expertenuminfo.md) che Network Monitor alloca. L'esperto compila la struttura con tutte le informazioni richieste.
+Puntatore a [**una struttura EXPERTENUMINFO**](expertenuminfo.md) Network Monitor allocata. L'esperto compila la struttura con tutte le informazioni richieste.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è **true** e la funzione restituisce le informazioni richieste.
+Se la funzione ha esito positivo, il valore restituito è **TRUE** e la funzione restituisce le informazioni richieste.
 
-Se la funzione ha esito negativo, il valore restituito è **false**.
+Se la funzione ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Il membro della **versione** della struttura [**EXPERTENUMINFO**](expertenuminfo.md) deve essere zero.
+Il **membro Version** della struttura [**EXPERTENUMINFO**](expertenuminfo.md) deve essere zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Il membro della **versione** della struttura [**EXPERTENUMINFO**](expertenuminfo
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

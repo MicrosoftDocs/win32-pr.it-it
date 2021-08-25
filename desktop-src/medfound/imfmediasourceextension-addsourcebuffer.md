@@ -1,7 +1,7 @@
 ---
-description: Aggiunge un IMFSourceBuffer all'insieme di buffer associato a IMFMediaSourceExtension.
+description: Aggiunge un oggetto IMFSourceBuffer alla raccolta di buffer associati a IMFMediaSourceExtension.
 ms.assetid: 1ecb7047-4dc9-4657-8a19-12108de299c0
-title: 'Metodo IMFMediaSourceExtension:: AddSourceBuffer'
+title: Metodo IMFMediaSourceExtension::AddSourceBuffer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: a62a62d8cf11afaa0190ac442f84b00cfe23517b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b49a7c4fb0cb9e45ab0c2823d92ceb6e4076dfcaef4d2e8450f1f3d07f474279
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942031"
 ---
-# <a name="imfmediasourceextensionaddsourcebuffer-method"></a>Metodo IMFMediaSourceExtension:: AddSourceBuffer
+# <a name="imfmediasourceextensionaddsourcebuffer-method"></a>Metodo IMFMediaSourceExtension::AddSourceBuffer
 
-Aggiunge un [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) all'insieme di buffer associato a [**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension).
+Aggiunge un [**oggetto IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) alla raccolta di buffer associati a [**IMFMediaSourceExtension.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,18 +41,18 @@ HRESULT AddSourceBuffer(
 
 <dl> <dt>
 
-*tipo* \[ di in\]
+*type* \[ Pollici\]
 </dt> <dd></dd> <dt>
 
-*pNotify* \[ in\]
+*pNotify* \[ Pollici\]
 </dt> <dd></dd> <dt>
 
-*ppSourceBuffer* \[ out\]
+*ppSourceBuffer* \[ Cambio\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

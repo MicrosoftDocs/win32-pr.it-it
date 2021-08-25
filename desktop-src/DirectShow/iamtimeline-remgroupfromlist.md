@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 9fcb2a73f32ab1c1f401a4508c63e53cc58ebcfb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 836d1a0ac30b0155e4f81bc0806a1bfeb0f07b13199dee9c8889189e4236e4d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915181"
 ---
 # <a name="iamtimelineremgroupfromlist-method"></a>Metodo IAMTimeline::RemGroupFromList
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare Microsoft Windows SDK [Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Initial-auth-in uscita
+title: Attributo Initial-Auth-Outgoing
 description: Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server di autenticazione per questo dominio al client che ha richiesto l'autenticazione.
 ms.assetid: cc5ceb14-0424-4caa-bcd9-1e48988af67a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo iniziale-auth-in uscita
+- Schema AD dell'attributo Initial-Auth-Outgoing
 - Schema AD dell'attributo initialAuthOutgoing
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e84faaa443c9589e04f4998dc41d72fe870b5f2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9d6b904249224b5c861216f5913637ab18458b9d6b11d1b354d46311e1861558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925391"
 ---
-# <a name="initial-auth-outgoing-attribute"></a>Attributo Initial-auth-in uscita
+# <a name="initial-auth-outgoing-attribute"></a>Attributo Initial-Auth-Outgoing
 
-Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server di autenticazione per questo dominio al client che ha richiesto l'autenticazione. Il server che utilizza questo attributo riceve l'autorizzazione dal server di autenticazione e lo invia al client.
+Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server di autenticazione per questo dominio al client che ha richiesto l'autenticazione. Il server che utilizza questo attributo riceve l'autorizzazione dal server di autenticazione e la invia al client.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Autenticazione iniziale-in uscita                       |
-| LDAP-Display-Name | initialAuthOutgoing                         |
+| CN                | Initial-Auth-Outgoing                       |
+| Ldap-Display-Name | initialAuthOutgoing                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.540                      |
-| System-ID-GUID    | 52458024-ca6a-11D0-AFFF-0000f80367c1        |
+| System-Id-Guid    | 52458024-ca6a-11d0-afff-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene informazioni su un'autenticazione in uscita iniziale inviata dal server
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

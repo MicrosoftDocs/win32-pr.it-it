@@ -4,12 +4,12 @@ ms.assetid: cabb715a-2a6a-4d56-8113-5e5ed26fc107
 title: Macro (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99a957ca9d15784e995ec3bd145cc55387151797
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 02c6c1cec7688ad78f5047529cdf4e41951f7160a177c5509e99a0d4842e1145
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849451"
 ---
 # <a name="macros-direct3d-9"></a>Macro (Direct3D 9)
 
@@ -17,31 +17,31 @@ Questa sezione contiene informazioni di riferimento per le macro fornite da Dire
 
 -   [**D3DCLIPPLANEn**](d3dclipplanen.md)
 -   [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md)
--   [**\_AYUV D3DCOLOR**](d3dcolor-ayuv.md)
--   [**\_COLORVALUE D3DCOLOR**](d3dcolor-colorvalue.md)
--   [**\_RGBA D3DCOLOR**](d3dcolor-rgba.md)
--   [**\_Sulle XRGB mentre D3DCOLOR**](d3dcolor-xrgb.md)
--   [**\_XYUV D3DCOLOR**](d3dcolor-xyuv.md)
--   [**\_Fine D3DDECL**](d3ddecl-end.md)
--   [**\_TEXCOORDSIZEN D3DFVF**](d3dfvf-texcoordsizen.md)
--   [**\_Scaricamento D3DGETDATA**](d3dgetdata-flush.md)
--   [**\_Inizio D3DISSUE**](d3dissue-begin.md)
--   [**\_Fine D3DISSUE**](d3dissue-end.md)
--   [**Versione di D3DPS \_**](d3dps-version.md)
--   [**\_Mondo D3DTS**](d3dts-world.md)
--   [**\_WORLDMATRIX D3DTS**](d3dts-worldmatrix.md)
--   [**D3DTS \_ mondo**](d3dts-worldn.md)
--   [**Versione di D3DVS \_**](d3dvs-version.md)
+-   [**D3DCOLOR \_ AYUV**](d3dcolor-ayuv.md)
+-   [**D3DCOLOR \_ COLORVALUE**](d3dcolor-colorvalue.md)
+-   [**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md)
+-   [**D3DCOLOR \_ XRGB**](d3dcolor-xrgb.md)
+-   [**D3DCOLOR \_ XYUV**](d3dcolor-xyuv.md)
+-   [**D3DDECL \_ END**](d3ddecl-end.md)
+-   [**D3DFVF \_ TEXCOORDSIZEN**](d3dfvf-texcoordsizen.md)
+-   [**SCARICAMENTO DI D3DGETDATA \_**](d3dgetdata-flush.md)
+-   [**D3DISSUE \_ BEGIN**](d3dissue-begin.md)
+-   [**D3DISSUE \_ END**](d3dissue-end.md)
+-   [**VERSIONE \_ D3DPS**](d3dps-version.md)
+-   [**MONDO D3DTS \_**](d3dts-world.md)
+-   [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md)
+-   [**D3DTS \_ WORLDn**](d3dts-worldn.md)
+-   [**VERSIONE \_ D3DVS**](d3dvs-version.md)
 
 ### <a name="requirements"></a>Requisiti
 
-Tutte le macro Direct3D presentano i requisiti seguenti:
+Tutte le macro Direct3D hanno i requisiti seguenti:
 
 
 
 | Requisito | Valore |
 |--------|-------------|
-| Intestazione | d3d9types. h |
+| Intestazione | d3d9types.h |
 
 
 
@@ -51,7 +51,7 @@ Tutte le macro Direct3D presentano i requisiti seguenti:
 
 <dl> <dt>
 
-[Riferimento a Direct3D](dx9-graphics-reference-d3d.md)
+[Informazioni di riferimento su Direct3D](dx9-graphics-reference-d3d.md)
 </dt> </dl>
 
  

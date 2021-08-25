@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray SampleGrad'
-description: 'Campiona una trama utilizzando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio. | Metodi di TextureCubeArray:: TextureCubeArray SampleGrad'
+title: Metodi textureCubeArray::TextureCubeArray SampleGrad
+description: Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione. | Metodi textureCubeArray::TextureCubeArray SampleGrad
 ms.assetid: AA9F7778-F719-460F-86FC-652E1D7CD156
 keywords:
-- Metodi SampleGrad HLSL
+- Metodi di SampleGrad HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7e3e770c7127ee8b791feedbe1a8c63051229fd3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1f2ae90d04414e9ffdd727b65d04c31d85144bf4dead6afd055b25e77aded221
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892441"
 ---
-# <a name="texturecubearraysamplegrad-methods"></a>Metodi TextureCubeArray:: SampleGrad
+# <a name="texturecubearraysamplegrad-methods"></a>Metodi di TextureCubeArray::SampleGrad
 
-Campiona una trama utilizzando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio.
+Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 
 | Metodo                                                                                                      | Descrizione                                                                                                                                                                                                        |
 |:------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleGrad (S, float, float, float)**](dx-graphics-hlsl-to-samplegrad.md)                                   | Esegue il campionamento di una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio.<br/>                                                                                                             |
-| [**SampleGrad (S, float, float, float, float)**](tcubearray-samplegrad-s-float-float-float-float-.md)           | Esegue il campionamento di una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.<br/>                                     |
-| [**SampleGrad (S, float, float, float, float, uint)**](tcubearray-samplegrad-s-float-float-float-float-uint-.md) | Esegue il campionamento di una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione di esempio, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleGrad(S,float,float,float)**](dx-graphics-hlsl-to-samplegrad.md)                                   | Campionare una trama usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione.<br/>                                                                                                             |
+| [**SampleGrad(S,float,float,float,float)**](tcubearray-samplegrad-s-float-float-float-float-.md)           | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione.<br/>                                     |
+| [**SampleGrad(S,float,float,float,float,uint)**](tcubearray-samplegrad-s-float-float-float-float-uint-.md) | Campionare una trama, usando una sfumatura per influenzare il modo in cui viene calcolata la posizione del campione, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Campiona una trama utilizzando una sfumatura per influenzare il modo in cui vien
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

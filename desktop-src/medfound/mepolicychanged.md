@@ -1,37 +1,37 @@
 ---
-description: Generato da un componente della pipeline quando vengono modificati i criteri di output per il flusso. Questo evento si applica solo ai contenuti protetti.
+description: Generato da un componente della pipeline quando i criteri di output per il flusso cambiano. Questo evento si applica solo al contenuto protetto.
 ms.assetid: 9dc78dc6-3fc2-4a81-ad41-45ff3fdbdade
-title: Evento MEPolicyChanged (Mfobjects. h)
+title: Evento MEPolicyChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b6827c44958e2df016365a8caa9a66f1aad9a30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ac87d3dae63b20d19c91f0fdef5471060753152901d9096b1be315cd76e9974
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957411"
 ---
 # <a name="mepolicychanged-event"></a>Evento MEPolicyChanged
 
-Generato da un componente della pipeline quando vengono modificati i criteri di output per il flusso. Questo evento si applica solo ai contenuti protetti.
+Generato da un componente della pipeline quando i criteri di output per il flusso cambiano. Questo evento si applica solo al contenuto protetto.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE                | Descrizione                                                                                                                  |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| VT \_ sconosciuto<br/> | Puntatore all'interfaccia [**IMFOutputPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfoutputpolicy) del nuovo criterio per il flusso.<br/> <br/> |
+| VT \_ UNKNOWN<br/> | Puntatore [**all'interfaccia IMFOutputPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfoutputpolicy) dei nuovi criteri per il flusso.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Tutti gli output attendibili devono gestire questo evento. Le trasformazioni Media Foundation (MFTs) ricevono questo evento tramite il metodo [**IMFTransform::P rocessevent**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent) . I sink di supporto ricevono questo evento tramite il metodo [**IMFStreamSink::P lacemarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) .
+Tutti gli output attendibili devono gestire questo evento. Media Foundation trasformazioni (MFT) ricevono questo evento tramite il [**metodo IMFTransform::P rocessEvent.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent) I sink multimediali ricevono questo evento tramite il [**metodo IMFStreamSink::P laceMarker.**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker)
 
-L'output attendibile deve applicare il nuovo criterio o restituire il codice di errore MF \_ E \_ criteri non \_ supportati.
+L'output attendibile deve applicare i nuovi criteri o restituire il codice di errore MF \_ E \_ POLICY \_ UNSUPPORTED.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,9 +39,9 @@ L'output attendibile deve applicare il nuovo criterio o restituire il codice di 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                                                    |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                                              |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                                                    |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                                              |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ L'output attendibile deve applicare il nuovo criterio o restituire il codice di 
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

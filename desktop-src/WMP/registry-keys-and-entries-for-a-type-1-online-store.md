@@ -1,24 +1,24 @@
 ---
-title: Chiavi e voci del registro di sistema per un archivio online di tipo 1
-description: Chiavi e voci del registro di sistema per un archivio online di tipo 1
+title: Chiavi e voci del Registro di sistema per un negozio online di tipo 1
+description: Chiavi e voci del Registro di sistema per un negozio online di tipo 1
 ms.assetid: cf25a004-e0c3-407c-8704-54be3601528b
 keywords:
-- Windows Media Player Online Stores, registro di sistema
-- archivi online, registro di sistema
-- digitare 1 archivi online, registro di sistema
-- Registro di sistema, digitare 1 negozio online
+- Windows Media Player negozi online, registro
+- negozi online, registro
+- tipo 1 negozi online, registro
+- registro, tipo 1 di negozi online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1329ad69e91ebce41b258d1e148403f62caceb96
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 7e42b1b75b64a8736c1491ccc058fe5548d78808ba51e142b3272d17d3c0eba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "106299423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861531"
 ---
-# <a name="registry-keys-and-entries-for-a-type-1-online-store"></a>Chiavi e voci del registro di sistema per un archivio online di tipo 1
+# <a name="registry-keys-and-entries-for-a-type-1-online-store"></a>Chiavi e voci del Registro di sistema per un negozio online di tipo 1
 
-Per rendere disponibile un archivio online di tipo 1 in Windows Media Player, il provider di archivio online deve creare le sottochiavi e le voci del registro di sistema seguenti nel computer dell'utente.
+Per rendere disponibile un negozio online di tipo 1 in Windows Media Player, il provider del negozio online deve creare le sottochiavi e le voci del Registro di sistema seguenti nel computer dell'utente.
 
 
 ```C++
@@ -43,50 +43,50 @@ Per rendere disponibile un archivio online di tipo 1 in Windows Media Player, il
 
 
 > [!Note]  
-> L'impostazione del valore di DllSurrogate sulla stringa vuota indica che il runtime COM caricherà il plug-in del negozio online nel surrogato predefinito della DLL, dllhost.exe.
+> L'impostazione del valore di DllSurrogate sulla stringa vuota indica che il runtime COM carica il plug-in del negozio online nel surrogato DLL predefinito, dllhost.exe.
 
  
 
-Nella sintassi del registro di sistema precedente, i simboli in corsivo sono segnaposto per i nomi e identificatori univoci globali (GUID) specifici per l'archivio online. Nella tabella seguente vengono descritti i segnaposto.
+Nella sintassi del Registro di sistema precedente i simboli in corsivo sono segnaposto per i nomi e gli identificatori univoci globali specifici del negozio online. Nella tabella seguente vengono descritti questi segnaposto.
 
 
 
 | Segnaposto    | Descrizione                                                                                                                                                                                                                                                                                                                     |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *keyName*      | Stringa concordata tra Microsoft e il negozio online. Questa stringa identifica in modo univoco l'archivio online. Esempio: "Proseware"<br/>                                                                                                                                                                                   |
-| *flags*        | Un operatore OR bit per bit di uno o più plug-in **flag di funzionalità** questi flag specificano se Windows Media Player deve chiamare metodi specifici di [IWMPContentPartner](/previous-versions/windows/desktop/api/contentpartner/nn-contentpartner-iwmpcontentpartner). Per informazioni sui flag supportati, vedere la tabella dei flag di funzionalità plug-in che seguono questa tabella. Esempio: 00000058<br/> |
-| *CLSID*        | GUID che rappresenta l'identificatore di classe (CLSID) per la classe che implementa **IWMPContentPartner** nel plug-in del negozio online. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                  |
-| *FriendlyName* | Nome descrittivo per il negozio online. Esempio: "Proseware Music Service"<br/>                                                                                                                                                                                                                                              |
-| *appid*        | GUID che rappresenta l'ID applicazione (AppID) per il plug-in del negozio online. Il GUID deve essere nel formato del registro di sistema, completo di parentesi graffe. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                                                                |
-| *pluginName*   | Nome del plug-in del negozio online. Esempio: "plug-in di Proseware content partner"<br/>                                                                                                                                                                                                                                   |
+| *Keyname*      | Stringa concordata tra Microsoft e il negozio online. Questa stringa identifica in modo univoco il negozio online. Esempio: "Proseware"<br/>                                                                                                                                                                                   |
+| *flags*        | OR bit **per** bit di uno o più flag di funzionalità plug-in Questi flag specificano se Windows Media Player chiamare metodi specifici di [IWMPContentPartner.](/previous-versions/windows/desktop/api/contentpartner/nn-contentpartner-iwmpcontentpartner) Per informazioni sui flag supportati, vedere la tabella dei flag di funzionalità plug-in che segue questa tabella. Esempio: 00000058<br/> |
+| *Clsid*        | GUID che rappresenta l'identificatore di classe (CLSID) per la classe che implementa **IWMPContentPartner** nel plug-in del negozio online. Questo GUID deve essere in formato registro, completo di parentesi graffe. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                  |
+| *Friendlyname* | Nome descrittivo per il negozio online. Esempio: "Proseware Musica Service"<br/>                                                                                                                                                                                                                                              |
+| *appid*        | GUID che rappresenta l'identificatore dell'applicazione (AppID) per il plug-in del negozio online. Questo GUID deve essere in formato registro, completo di parentesi graffe. Formato: {xxxxxxxx-xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}<br/>                                                                                                                |
+| *pluginName*   | Nome per il plug-in del negozio online. Esempio: "Plug-in partner di contenuti Proseware"<br/>                                                                                                                                                                                                                                   |
 | *className*    | Nome della classe che implementa **IWMPContentpartner** nel plug-in del negozio online. Esempio: "CProsewarePartner"<br/>                                                                                                                                                                                              |
-| *moduleName*   | Percorso completo della DLL che implementa il plug-in del negozio online. Esempio: "C: \\ Program Files \\ Proseware \\ProsewarePartner.dll"<br/>                                                                                                                                                                         |
-| *Threading*    | Tipo di Apartment in cui viene eseguito il plug-in. "ThreadingModel" = "Apartment" indica che il plug-in viene eseguito in un Apartment a thread singolo (STA). "ThreadingModel" = "Free" indica che il plug-in viene eseguito nell'Apartment a thread multipli (MTA).                                                                                     |
+| *Modulename*   | Percorso completo della DLL che implementa il plug-in dello store online. Esempio: "C: \\ Programmi \\ Proseware \\ProsewarePartner.dll"<br/>                                                                                                                                                                         |
+| *Threading*    | Tipo di apartment in cui viene eseguito il plug-in. "ThreadingModel"="Apartment" indica che il plug-in viene eseguito in un apartment a thread singolo (STA). "ThreadingModel"="Free" indica che il plug-in viene eseguito nell'apartment multithreading (MTA).                                                                                     |
 
 
 
  
 
-Nella tabella seguente vengono descritti i flag di funzionalità plug-in.
+Nella tabella seguente vengono descritti i flag di funzionalità del plug-in.
 
 
 
 | Flag                                    | valore | Descrizione                                                                                                                                                                                                                                                                 |
 |-----------------------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_BACKGROUNDPROCESSING Cap \_ sottoscrizione | 0x8   | Windows Media Player deve chiamare [IWMPContentPartner:: Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-notify) per informare il plug-in quando deve avviare e arrestare l'elaborazione in background.                                                                                                     |
-| \_DEVICEAVAILABLE Cap \_ sottoscrizione      | 0x10  | Windows Media Player deve chiamare [IWMPContentPartner:: UpdateDevice](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-updatedevice).                                                                                                                                                                   |
-| il \_ limite della sottoscrizione \_ è \_ CONTENTPARTNER   | 0x40  | Informa Windows Media Player che il plug-in implementa l'interfaccia **IWMPContentPartner** . Tutti i plug-in di archiviazione di tipo 1 devono impostare questo flag.                                                                                                                         |
-| \_ALTLOGIN Cap \_ sottoscrizione             | 0x80  | Informa Windows Media Player che il plug-in supporta un account di accesso alternativo. Se il plug-in supporta un account di accesso alternativo, Windows Media Player recupera l'URL e la didascalia di accesso alternativi chiamando [IWMPContentPartner:: GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo). |
+| BACKGROUND \_ DEL LIMITE DI \_ SOTTOSCRIZIONEPROCESSING | 0x8   | Windows Media Player chiamare [IWMPContentPartner::Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-notify) per informare il plug-in quando deve avviare e arrestare l'elaborazione in background.                                                                                                     |
+| LIMITE \_ DI \_ SOTTOSCRIZIONE DEVICEAVAILABLE      | 0x10  | Windows Media Player chiamare [IWMPContentPartner::UpdateDevice](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-updatedevice).                                                                                                                                                                   |
+| IL \_ LIMITE DI SOTTOSCRIZIONE È \_ \_ CONTENTPARTNER   | 0x40  | Informa Windows Media Player che il plug-in implementa **l'interfaccia IWMPContentPartner.** Tutti i plug-in del negozio online di tipo 1 devono impostare questo flag.                                                                                                                         |
+| LIMITE \_ DI SOTTOSCRIZIONE \_ ALTLOGIN             | 0x80  | Informa Windows Media Player che il plug-in supporta un account di accesso alternativo. Se il plug-in supporta un account di accesso alternativo, Windows Media Player recupera l'URL e la didascalia di accesso alternativi chiamando [IWMPContentPartner::GetItemInfo](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getiteminfo). |
 
 
 
  
 
-**Voci del registro di sistema per sviluppo e test**
+**Voci del Registro di sistema per sviluppo e test**
 
-Quando si inizia a sviluppare lo Store online, Microsoft fornisce due chiavi: una chiave di test e una chiave di produzione. Durante la fase di sviluppo e test, il negozio online verrà visualizzato in Windows Media Player solo se la chiave di test o la chiave di produzione si trova nel registro di sistema nel computer dell'utente. Per ulteriori informazioni sulle chiavi di test e di produzione, vedere [chiavi di test e di produzione per un negozio online di tipo 1](test-and-production-keys-for-a-type-1-online-store.md).
+Quando si inizia a sviluppare il negozio online, Microsoft fornisce due chiavi: una chiave di test e una chiave di produzione. Durante la fase di sviluppo e test, il negozio online verrà visualizzato nel Windows Media Player solo se la chiave di test o la chiave di produzione si trova nel Registro di sistema nel computer dell'utente. Per altre informazioni sulle chiavi di test e di produzione, vedere Chiavi di test e produzione [per un Negozio online di tipo 1.](test-and-production-keys-for-a-type-1-online-store.md)
 
-Inserire la chiave di test o di produzione nel seguente percorso del registro di sistema.
+Inserire la chiave di test o di produzione nel percorso seguente nel Registro di sistema.
 
 
 ```C++
@@ -96,7 +96,7 @@ Inserire la chiave di test o di produzione nel seguente percorso del registro di
 
 
 
-Si noti che il valore della voce del registro di sistema TestParameter può specificare più chiavi di test o di produzione. Si supponga, ad esempio, che Proseware disponga di una chiave di test "1234" e che Contoso disponga di una chiave di test "2345". La voce del registro di sistema seguente specifica che gli archivi di test per Proseware e contoso verranno visualizzati in Windows Media Player.
+Si noti che il valore della voce del Registro di sistema TestParameter può specificare più chiavi di test o di produzione. Si supponga, ad esempio, che Proseware abbia una chiave di test "1234" e che Contoso abbia una chiave di test "2345". La voce del Registro di sistema seguente specifica che gli archivi di test per Proseware e Contoso verranno visualizzati in Windows Media Player.
 
 
 ```C++
@@ -106,9 +106,9 @@ Si noti che il valore della voce del registro di sistema TestParameter può spec
 
 
 
-**Voce del registro di sistema ActiveService**
+**Voce del Registro di sistema ActiveService**
 
-Quando l'utente attiva uno Store online, Windows Media Player scrive le informazioni nel registro di sistema che identifica l'archivio online attivo. Windows Media Player inserisce le informazioni nel seguente percorso del registro di sistema nel computer dell'utente.
+Quando l'utente attiva un negozio online, Windows Media Player le informazioni nel Registro di sistema che identificano il negozio online attivo. Windows Media Player le informazioni nel percorso seguente nel Registro di sistema nel computer dell'utente.
 
 
 ```C++
@@ -118,7 +118,7 @@ Quando l'utente attiva uno Store online, Windows Media Player scrive le informaz
 
 
 
-Nella sintassi del registro di sistema precedente, *serviceInfo* è un segnaposto per una stringa che contiene informazioni descrittive sull'archivio online attivo.
+Nella sintassi del Registro di sistema precedente *serviceInfo* è un segnaposto per una stringa che contiene informazioni descrittive sul negozio online attivo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

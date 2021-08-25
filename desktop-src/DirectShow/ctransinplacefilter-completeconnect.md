@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9cc0bc839a4e35c4ce896acdf50da10f0c2bb0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6185204c41e177207d32c321985c021a93ea20506da5f4279cd3134a12952097
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907320"
 ---
 # <a name="ctransinplacefiltercompleteconnect-method"></a>Metodo CTransInPlaceFilter.CompleteConnect
 
@@ -46,7 +46,7 @@ HRESULT CompleteConnect(
 *direction* 
 </dt> <dd>
 
-Membro del [**tipo enumerato PIN \_ DIRECTION,**](/windows/win32/api/strmif/ne-strmif-pin_direction) che specifica quale pin nel filtro sta effettuando la connessione.
+Membro del tipo [**enumerato \_ PIN DIRECTION,**](/windows/win32/api/strmif/ne-strmif-pin_direction) che specifica quale pin nel filtro sta effettuando la connessione.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Restituisce un **HRESULT.** I valori possibili includono quelli illustrati nella
 | Codice restituito                                                                                           | Descrizione                                     |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                             |
-| <dl> <dt>**VFW \_ E NON IN \_ \_ \_ GRAPH**</dt> </dl> | Il filtro non è in un grafico filtri.<br/> |
+| <dl> <dt>**VFW \_ E NON IN \_ \_ \_ GRAPH**</dt> </dl> | Il filtro non è in un grafico di filtro.<br/> |
 
 
 
@@ -89,7 +89,7 @@ Il filtro esegue tutte le riconnessioni dei pin chiamando il [**metodo CBaseFilt
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

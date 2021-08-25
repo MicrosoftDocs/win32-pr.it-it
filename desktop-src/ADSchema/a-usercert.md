@@ -1,11 +1,11 @@
 ---
-title: Attributo User-Cert
-description: Certificati Nortel V1 o DMS.
+title: User-Cert attributo
+description: Certificati Nortel v1 o dms.
 ms.assetid: f0aa19ad-0599-4e38-b49b-0a24241f1a23
 ms.tgt_platform: multiple
 keywords:
-- Schema AD User-Cert attribute
-- Schema AD dell'attributo userCert
+- User-Cert schema AD dell'attributo
+- Attributo userCert Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a041375ba9e00539c51d1022b0f053b79c6eae1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3cc52a1476ec365d18266ff1197d019dff7983819217df18fb443434a8f016c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835371"
 ---
-# <a name="user-cert-attribute"></a>Attributo User-Cert
+# <a name="user-cert-attribute"></a>User-Cert attributo
 
-Certificati Nortel V1 o DMS.
+Certificati Nortel v1 o dms.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | User-Cert                                             |
-| LDAP-Display-Name | userCert                                              |
+| Ldap-Display-Name | userCert                                              |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.645                                |
-| System-ID-GUID    | bf967a69-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf967a69-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Certificati Nortel V1 o DMS.
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | 0x3A22                                               |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Destinatario posta**](c-mailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario posta elettronica**](c-mailrecipient.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetOutputBuffering specifica il numero di frame di cui è stato eseguito il rendering in anticipo durante l'anteprima.
+description: Il metodo SetOutputBuffering specifica il numero di fotogrammi sottoposti a rendering in anticipo durante l'anteprima.
 ms.assetid: 6e69b196-a6ce-4ce0-8c48-58b1738fb197
-title: 'Metodo IAMTimelineGroup:: SetOutputBuffering (qedit. h)'
+title: Metodo IAMTimelineGroup::SetOutputBuffering (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ab249c1a6af63b0fc0f2ee535daeab1dec9cd558
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8187918a4f6d04df9c8c0eaff387a092f18181071ce6ba41c83de44fcb095bbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915191"
 ---
-# <a name="iamtimelinegroupsetoutputbuffering-method"></a>Metodo IAMTimelineGroup:: SetOutputBuffering
+# <a name="iamtimelinegroupsetoutputbuffering-method"></a>Metodo IAMTimelineGroup::SetOutputBuffering
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `SetOutputBuffering` metodo specifica il numero di frame di cui è stato eseguito il rendering in anticipo durante l'anteprima.
+Il `SetOutputBuffering` metodo specifica il numero di fotogrammi sottoposti a rendering in anticipo durante l'anteprima.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ HRESULT SetOutputBuffering(
 
 <dl> <dt>
 
-*nBuffer* \[ in\]
+*nBuffer* \[ Pollici\]
 </dt> <dd>
 
-Numero di frame da memorizzare nel buffer durante l'anteprima. Deve essere maggiore o uguale a due.
+Numero di frame da bufferare durante l'anteprima. Deve essere maggiore o uguale a due.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Un buffer più grande richiede più memoria, ma può comportare una visualizzazione in anteprima più uniforme, soprattutto durante gli effetti o le transizioni che richiedono più tempo per il rendering. Il buffer predefinito è 30 fotogrammi.
+Un buffer più grande richiede più memoria, ma può comportare un'anteprima più uniforme, soprattutto durante gli effetti o le transizioni che richiedono più tempo per il rendering. Il buffer predefinito è 30 fotogrammi.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Un buffer più grande richiede più memoria, ma può comportare una visualizzazi
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

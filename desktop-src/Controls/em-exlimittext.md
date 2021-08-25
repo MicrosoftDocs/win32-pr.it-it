@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_EXLIMITTEXT (RichEdit. h)
+title: EM_EXLIMITTEXT messaggio (Richedit.h)
 description: Imposta un limite massimo per la quantità di testo che l'utente può digitare o incollare in un controllo Rich Edit.
 ms.assetid: 66fcdbb9-99ac-4122-b89c-be4aef80fbae
 keywords:
-- Controlli di Windows Message EM_EXLIMITTEXT
+- EM_EXLIMITTEXT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49c4ebb554e3aa3139a66ca63970356e1261a23f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98f9879323f3feade3ece536cd130b274b423c98aebedd6b6f5ef1497d995d07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915681"
 ---
-# <a name="em_exlimittext-message"></a>\_Messaggio EXLIMITTEXT em
+# <a name="em_exlimittext-message"></a>MESSAGGIO \_ EM EXLIMITTEXT
 
 Imposta un limite massimo per la quantità di testo che l'utente può digitare o incollare in un controllo Rich Edit.
 
@@ -32,26 +32,26 @@ Imposta un limite massimo per la quantità di testo che l'utente può digitare o
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Specifica la quantità massima di testo che è possibile immettere. Se questo parametro è zero, viene usato il valore massimo predefinito, ovvero i caratteri 64K. Un oggetto COM viene conteggiato come un singolo carattere.
+Specifica la quantità massima di testo che è possibile immettere. Se questo parametro è zero, viene usato il valore massimo predefinito, ovvero 64.000 caratteri. Un oggetto COM viene conteggiato come carattere singolo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il limite di testo impostato dal **messaggio \_ EXLIMITTEXT em** non limita la quantità di testo che è possibile trasmettere in un controllo Rich Edit usando il messaggio [**\_ flusso em**](em-streamin.md) con *lParam* impostato sul \_ testo SF. Tuttavia, limita la quantità di testo che è possibile trasmettere in un controllo Rich Edit usando il messaggio **\_ flusso em** nel messaggio con *lParam* impostato sul formato SF \_ RTF.
+Il limite di testo impostato dal messaggio **EM \_ EXLIMITTEXT** non limita la quantità di testo che è possibile trasmettere in un controllo Rich Edit usando il messaggio [**\_ STREAMIN EM**](em-streamin.md) con *lParam* impostato su SF \_ TEXT. Tuttavia, limita la quantità di testo che è possibile trasmettere in un controllo Rich Edit usando il messaggio **\_ STREAMIN EM** con *lParam* impostato su \_ SF RTF.
 
-Prima di chiamare **em \_ EXLIMITTEXT** , il limite predefinito per la quantità di testo che un utente può immettere è 32.767 caratteri.
+Prima **della chiamata a EM \_ EXLIMITTEXT,** il limite predefinito per la quantità di testo che un utente può immettere è di 32.767 caratteri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Prima di chiamare **em \_ EXLIMITTEXT** , il limite predefinito per la quantità
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Prima di chiamare **em \_ EXLIMITTEXT** , il limite predefinito per la quantità
 
 <dl> <dt>
 
-[**flusso EMin \_**](em-streamin.md)
+[**EM \_ STREAMIN**](em-streamin.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-title: Riferimento (COM)
+title: Informazioni di riferimento (COM)
 ms.assetid: cad0242e-844d-4504-b633-3143a88e1514
-description: 'Altre informazioni su: riferimento (COM)'
+description: 'Altre informazioni su: Informazioni di riferimento (COM)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c062a2451cccad1c147574bfd63027fdf7c3816
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c69fe55d5276ee28119408edc1103cebb6ea6ddf001ef459fc688217f4c54498
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992291"
 ---
-# <a name="reference-com"></a>Riferimento (COM)
+# <a name="reference-com"></a>Informazioni di riferimento (COM)
 
-Gli elementi di programmazione seguenti sono forniti da COM:
+Com ha fornito gli elementi di programmazione seguenti:
 
 -   [Costanti](constants.md)
 -   [Enumerazioni](enumerations.md)
 -   [Funzioni](functions.md)
 -   [Interfacce](interfaces.md)
 -   [Macro](macros.md)
--   [Voci del registro di sistema](registry-entries.md)
+-   [Voci del Registro di sistema](registry-entries.md)
 -   [Strutture](structures.md)
 
  

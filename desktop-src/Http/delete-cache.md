@@ -1,9 +1,9 @@
 ---
 title: delete cache
-description: Scarica l'intera cache URL o Elimina le voci in base all'URL specificato.
+description: Scarica l'intera cache url o elimina le voci in base all'URL specificato.
 ms.assetid: 499ce0f9-01db-4648-89f7-1ecafd25a805
 keywords:
-- Elimina HTTP cache
+- http di eliminazione della cache
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f963d12812140d11923460235ef780a621ba3db5
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: c41f2147f0101f312a7fa76796032ec8c821fcea9c08cf89bb3174ddace43d47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "106299274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870561"
 ---
 # <a name="delete-cache"></a>delete cache
 
-Scarica l'intera cache URL o Elimina le voci in base all'URL specificato.
+Scarica l'intera cache url o elimina le voci in base all'URL specificato.
 
 ``` syntax
 delete cache [url=]string [[recursive=]{yes|no}]
@@ -32,7 +32,7 @@ delete cache [url=]string [[recursive=]{yes|no}]
 
 <dl> <dt>
 
-<span id="_url__string"></span><span id="_URL__STRING"></span>**\[URL = \] * * * stringa*
+<span id="_url__string"></span><span id="_URL__STRING"></span>**\[ url= \]**_stringa_
 </dt> <dd>
 
 Obbligatorio. Specifica l'URL completo.
@@ -41,20 +41,20 @@ Obbligatorio. Specifica l'URL completo.
 
 <dl> <dt>
 
-<span id="_recursive___yes_no_"></span><span id="_RECURSIVE___YES_NO_"></span>**\[ricorsivo = \] {Yes \| No}**
+<span id="_recursive___yes_no_"></span><span id="_RECURSIVE___YES_NO_"></span>**\[recursive= \] {sì \| no}**
 </dt> <dd>
 
-In caso affermativo, rimuove tutte le voci nell'URL specificato.
+In caso affermativa, rimuove tutte le voci nell'URL specificato.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-**Elimina URL cache = https://www.contoso.com:80/myresource/ ricorsivo = Sì**
+**delete cache url= https://www.contoso.com:80/myresource/ recursive=yes**
 
- 
+ 
 
- 
+ 
 
 
 

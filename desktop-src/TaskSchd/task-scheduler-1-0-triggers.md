@@ -1,25 +1,25 @@
 ---
-title: Trigger Utilità di pianificazione 1,0
-description: Gli argomenti seguenti fanno riferimento ai trigger usati dalle attività Utilità di pianificazione 1,0. Sono inclusi qui per gli sviluppatori che esaminano il codice esistente.
+title: Utilità di pianificazione 1.0
+description: Gli argomenti seguenti fanno riferimento ai trigger usati dalle Utilità di pianificazione 1.0. Sono inclusi qui per gli sviluppatori che stanno esaminando il codice esistente.
 ms.assetid: 76064508-0fae-4763-8ee9-90b9de9e4937
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cc8ccb4f4372fe29e11889cc3cd4f14c1573b72
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e78d66ff5aac28c67a3807e14ef2a6df0d8d6c376331f9e1fabf0db03f1b165
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975050"
 ---
-# <a name="task-scheduler-10-triggers"></a>Trigger Utilità di pianificazione 1,0
+# <a name="task-scheduler-10-triggers"></a>Utilità di pianificazione 1.0
 
-Gli argomenti seguenti fanno riferimento ai trigger usati dalle attività Utilità di pianificazione 1,0. Sono inclusi qui per gli sviluppatori che esaminano il codice esistente.
+Gli argomenti seguenti fanno riferimento ai trigger usati dalle Utilità di pianificazione 1.0. Sono inclusi qui per gli sviluppatori che stanno esaminando il codice esistente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Strutture trigger](trigger-structures.md)
+[Strutture dei trigger](trigger-structures.md)
 </dt> <dt>
 
 [Trigger inattivi](idle-triggers.md)
@@ -28,9 +28,9 @@ Gli argomenti seguenti fanno riferimento ai trigger usati dalle attività Utilit
 [Utilità di pianificazione](task-scheduler-start-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

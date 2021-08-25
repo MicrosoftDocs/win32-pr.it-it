@@ -1,9 +1,9 @@
 ---
-title: Funzione AllocCountedString (NapUtil. h)
-description: Alloca memoria per una stringa con terminazione null e la restituisce in una struttura CountedString.
+title: Funzione AllocCountedString (NapUtil.h)
+description: Alloca memoria per una stringa con terminazione Null e la restituisce in una struttura CountedString.
 ms.assetid: 6dd503bf-8853-499b-adcd-54de696f01d6
 keywords:
-- NAP funzione AllocCountedString
+- Funzione AllocCountedString nap
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ab2980ce5eefdd7743907bdcc947cdce1c74823
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef205cf7211f25253a3e6ba0cb7cd84ac37dbdb49848b36e844595d632552331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891741"
 ---
-# <a name="alloccountedstring-function"></a>AllocCountedString (funzione)
+# <a name="alloccountedstring-function"></a>Funzione AllocCountedString
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-La funzione **AllocCountedString** alloca memoria per una stringa con terminazione null e la restituisce in una struttura [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) .
+La **funzione AllocCountedString** alloca memoria per una stringa con terminazione Null e la restituisce in [**una struttura CountedString.**](/windows/win32/api/naptypes/ns-naptypes-countedstring)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,17 +46,17 @@ NAPAPI HRESULT WINAPI AllocCountedString(
 
 <dl> <dt>
 
-*countedString* \[ in uscita\]
+*countedString* \[ in, out\]
 </dt> <dd>
 
-Puntatore all'indirizzo di una struttura [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) appena allocata.
+Puntatore all'indirizzo di una struttura [**CountedString appena**](/windows/win32/api/naptypes/ns-naptypes-countedstring) allocata.
 
 </dd> <dt>
 
-*stringa* \[ di in\]
+*string* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla stringa con terminazione null da restituire in *countedString*.
+Puntatore alla stringa con terminazione Null che deve essere restituita in *countedString*.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Puntatore alla stringa con terminazione null da restituire in *countedString*.
 
 | Codice restituito                                                                                   | Descrizione                                                                |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | L'operazione è stata completata correttamente.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | L'operazione è stata completata correttamente.<br/>                       |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | È stato passato un argomento non valido.<br/>                                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria virtuale insufficiente nel sistema. Operazione non riuscita.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | La memoria virtuale del sistema è insufficiente. L'operazione non è riuscita.<br/> |
 
 
 
@@ -76,13 +76,13 @@ Puntatore alla stringa con terminazione null da restituire in *countedString*.
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le interfacce COM supportate dal sistema NAP utilizzano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Tutte le interfacce COM supportate dal sistema di Protezione accesso alla rete usano regole di gestione della memoria COM standard e allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   I parametri **in** vengono allocati e liberati dal chiamante.
--   I parametri **out** vengono allocati dal chiamato e liberati dal chiamante utilizzando **CoTaskMem**.
--   I parametri **in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
+-   **I** parametri in vengono allocati e liberati dal chiamante.
+-   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem**.
+-   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
 
-Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
+Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,9 +90,9 @@ Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

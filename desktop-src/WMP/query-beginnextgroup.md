@@ -1,11 +1,11 @@
 ---
-title: Metodo query. beginNextGroup
-description: Il metodo beginNextGroup avvia un nuovo gruppo di condizioni. | Metodo query. beginNextGroup
+title: Metodo Query.beginNextGroup
+description: Il metodo beginNextGroup avvia un nuovo gruppo di condizioni. | Metodo Query.beginNextGroup
 ms.assetid: e0c59bd0-0789-413e-ade8-8d53c6f3e19b
 keywords:
 - Metodo beginNextGroup Windows Media Player
-- Metodo beginNextGroup Media Player Windows, classe query
-- Classe di query Windows Media Player, metodo beginNextGroup
+- Metodo beginNextGroup Windows Media Player , classe Query
+- Query class Windows Media Player metodo beginNextGroup
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c043b9a0ea506e054877b4d8122304ced75e28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d12f8e37c32b83afb3e518deda09643033c7f396d8c52a2898893a01dc930d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861851"
 ---
-# <a name="querybeginnextgroup-method"></a>Metodo query. beginNextGroup
+# <a name="querybeginnextgroup-method"></a>Metodo Query.beginNextGroup
 
-Il metodo **beginNextGroup** avvia un nuovo gruppo di condizioni.
+Il **metodo beginNextGroup** avvia un nuovo gruppo di condizioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'inizio di un nuovo gruppo di condizioni implica il completamento del gruppo di condizioni corrente. Il nuovo gruppo di condizioni viene sempre concatenato al gruppo di condizioni precedente mediante la logica o.
+L'inizio di un nuovo gruppo di condizioni implica che il gruppo di condizioni corrente è stato completato. Il nuovo gruppo di condizioni viene sempre concatenato al gruppo di condizioni precedente usando la logica OR.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,19 +63,19 @@ L'inizio di un nuovo gruppo di condizioni implica il completamento del gruppo di
 
 <dl> <dt>
 
-[**Mediacollection. createQuery**](mediacollection-createquery.md)
+[**MediaCollection.createQuery**](mediacollection-createquery.md)
 </dt> <dt>
 
-[**Mediacollection. getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
+[**MediaCollection.getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
 </dt> <dt>
 
-[**Mediacollection. getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
+[**MediaCollection.getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
 </dt> <dt>
 
-[**Oggetto query**](query-object.md)
+[**Oggetto Query**](query-object.md)
 </dt> <dt>
 
-[**Query. addCondition**](query-addcondition.md)
+[**Query.addCondition**](query-addcondition.md)
 </dt> </dl>
 
  

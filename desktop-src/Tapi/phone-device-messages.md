@@ -1,27 +1,27 @@
 ---
 description: Questa sezione contiene i riferimenti per i messaggi del dispositivo telefonico TAPI.
 ms.assetid: b84c77ae-5d0f-416c-83c5-f7874168d996
-title: Messaggi del dispositivo telefonico
+title: Telefono Messaggi del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a212b66113fce867b3bb0cc7a1cb8f8a382192c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ef5de7f4fa08c68e5d0a88fdb9f5fe7f983c2d7d2e655d69348724832d4690e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774101"
 ---
-# <a name="phone-device-messages"></a>Messaggi del dispositivo telefonico
+# <a name="phone-device-messages"></a>Telefono Messaggi del dispositivo
 
-Questa sezione contiene il riferimento per i messaggi seguenti del dispositivo telefonico:
+Questa sezione contiene informazioni di riferimento per i messaggi del dispositivo telefonico seguenti:
 
--   [**pulsante del telefono \_**](phone-button.md)
--   [**\_chiusura telefono**](phone-close.md)
--   [**\_creazione telefono**](phone-create.md)
--   [**\_DEVSPECIFIC telefono**](phone-devspecific.md)
--   [**\_rimozione telefono**](phone-remove.md)
--   [**\_risposta telefono**](phone-reply.md)
--   [**\_stato telefono**](phone-state.md)
+-   [**PULSANTE \_ TELEFONO**](phone-button.md)
+-   [**CHIUSURA \_ TELEFONO**](phone-close.md)
+-   [**CREAZIONE \_ TELEFONO**](phone-create.md)
+-   [**PHONE \_ DEVSPECIFIC**](phone-devspecific.md)
+-   [**RIMOZIONE \_ TELEFONO**](phone-remove.md)
+-   [**RISPOSTA \_ TELEFONICA**](phone-reply.md)
+-   [**STATO \_ DEL TELEFONO**](phone-state.md)
 
  
 

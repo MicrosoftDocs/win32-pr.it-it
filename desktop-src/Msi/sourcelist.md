@@ -1,29 +1,29 @@
 ---
-description: La proprietà SOURCE list è un elenco delimitato da punti e virgola di percorsi di origine di rete o URL per il pacchetto di installazione dell'applicazione.
+description: La proprietà SOURCELIST è un elenco delimitato da punto e virgola di percorsi di origine url o di rete per il pacchetto di installazione dell'applicazione.
 ms.assetid: 9dc1e195-a108-4f8f-b008-e08fc7658fc0
-title: SOURCEs (proprietà)
+title: SOURCELIST - proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5384504c337aeb9f1848f59efb2c6abaee5887b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd0ab879d55481f71c663e4375a305232be576d0c923f67fa419530012d1ce89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893751"
 ---
-# <a name="sourcelist-property"></a>SOURCEs (proprietà)
+# <a name="sourcelist-property"></a>SOURCELIST - proprietà
 
-La proprietà **source** list è un elenco delimitato da punti e virgola di percorsi di origine di rete o URL per il pacchetto di installazione dell'applicazione. Questo elenco viene aggiunto alla fine dell'elenco di origine di ogni utente esistente per l'applicazione. Il programma di installazione individua un'origine enumerando l'elenco dei percorsi di origine e usa il primo percorso accessibile individuato. Solo questa origine può essere utilizzata per il resto dell'installazione. Ogni percorso specificato nell'elenco di origine deve quindi essere un percorso che disponga di un'origine completa per l'applicazione. L'intero albero di directory in ogni percorso di origine deve essere lo stesso e deve includere tutti i file di origine necessari, inclusi tutti i file CAB. Ogni percorso deve avere un file con estensione msi con lo stesso nome file e il codice prodotto.
+La **proprietà SOURCELIST** è un elenco delimitato da punto e virgola di percorsi di origine url o di rete per il pacchetto di installazione dell'applicazione. Questo elenco viene aggiunto alla fine dell'elenco di origine esistente di ogni utente per l'applicazione. Il programma di installazione individua un'origine enumerando l'elenco dei percorsi di origine e usa il primo percorso accessibile trovato. Solo questa origine può essere usata per il resto dell'installazione. Ogni percorso specificato nell'elenco di origine deve quindi essere in un percorso con un'origine completa per l'applicazione. L'intero albero di directory in ogni percorso di origine deve essere lo stesso e deve includere tutti i file di origine necessari, inclusi gli eventuali file cab. Ogni percorso deve avere un .msi file con lo stesso nome file e lo stesso codice prodotto.
 
 ## <a name="default-value"></a>Valore predefinito
 
-Il programma di installazione controlla solo la proprietà **SourceName** se il prodotto non è già stato pubblicizzato o installato. In tutti gli altri casi, il programma di installazione usa l'elenco di origine esistente nel registro di sistema.
+Il programma di installazione controlla la **proprietà SOURCELIST** solo se il prodotto non è già stato annunciato o installato. In tutti gli altri casi il programma di installazione usa l'elenco di origine esistente presente nel Registro di sistema.
 
 ## <a name="remarks"></a>Commenti
 
-Le origini aggiunte utilizzando la proprietà di **origine** vengono aggiunte direttamente alla fine dell'elenco per ogni tipo di origine e si trovano sempre dopo l'origine predefinita specificata dalla proprietà [**SourceDir**](sourcedir.md) .
+Le origini aggiunte tramite la proprietà **SOURCELIST** vengono aggiunte direttamente alla fine dell'elenco per ogni tipo di origine e vengono sempre dopo l'origine predefinita specificata dalla [**proprietà SourceDir.**](sourcedir.md)
 
-Per Windows Installer il numero di origini nella proprietà di **origine** è illimitato. [**MsiSourceListAddSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourcea) può essere usato per aggiungere origini di rete.
+Ad Windows programma di installazione il numero di origini nella **proprietà SOURCELIST** è illimitato. [**MsiSourceListAddSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourcea) può essere usato per aggiungere origini di rete.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per Windows Installer il numero di origini nella proprietà di **origine** è il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Per Windows Installer il numero di origini nella proprietà di **origine** è il
 [Proprietà](properties.md)
 </dt> <dt>
 
-[Resilienza di origine](source-resiliency.md)
+[Resilienza dell'origine](source-resiliency.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni di allocazione delle risorse di un elemento gestito per un tipo di risorsa specifico.
 ms.assetid: f27910c7-a88a-4694-80fe-7761945782e0
-title: Classe CIM_AllocationCapabilities
+title: CIM_AllocationCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d022023142b38905067e30a4c1be3b133e49a86f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b3a30b6df2b4fea50022f047df42f04e3635b37d015e16fed50e2d971827b61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829651"
 ---
-# <a name="cim_allocationcapabilities-class"></a>CIM \_ AllocationCapabilities (classe)
+# <a name="cim_allocationcapabilities-class"></a>Classe CIM \_ AllocationCapabilities
 
 Rappresenta le impostazioni di allocazione delle risorse di un elemento gestito per un tipo di risorsa specifico.
 
@@ -49,20 +49,20 @@ class CIM_AllocationCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AllocationCapabilities** presenta questi tipi di membri:
+La **classe CIM \_ AllocationCapabilities** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AllocationCapabilities** dispone di queste proprietà.
+La **classe CIM \_ AllocationCapabilities** ha queste proprietà.
 
 <dl> <dt>
 
 **OtherResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -71,20 +71,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**ResourceType**")
 </dt> </dl>
 
-Il tipo di risorsa per questa impostazione di allocazione quando la proprietà **ResourceType** è impostata su "1" (other).
+Tipo di risorsa per questa impostazione di allocazione quando la **proprietà ResourceType** è impostata su "1" (Altro).
 
 </dd> <dt>
 
 **RequestTypesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se è supportata la richiesta di una risorsa specifica.
+Indica se la richiesta di una risorsa specifica è supportata.
 
 <dt>
 
@@ -113,7 +113,7 @@ La richiesta può includere una richiesta per una risorsa specifica.
 
 </dt> <dd>
 
-La richiesta non include risorse specifiche.
+La richiesta non include una risorsa specifica.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ La richiesta non include risorse specifiche.
 
 </dt> <dd>
 
-Sono supportate sia richieste specifiche che richieste generali.
+Sono supportate sia le richieste specifiche che le richieste generali.
 
 </dd> <dt>
 
@@ -137,7 +137,7 @@ Sono supportate sia richieste specifiche che richieste generali.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (0x8000.. 0xFFFF
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -147,7 +147,7 @@ Sono supportate sia richieste specifiche che richieste generali.
 **ResourceSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -160,13 +160,13 @@ Descrizione di un sottotipo specifico dell'implementazione per questa risorsa. A
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AllocationCapabilities**.**OtherResourceType**","[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**ResourceType**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AllocationCapabilities**.**OtherResourceType**", "[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**ResourceType**")
 </dt> </dl>
 
 Tipo di risorsa assegnato a questa impostazione di allocazione.
@@ -210,21 +210,21 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>
 
-**HBA SCSI parallelo** (6)
+**HBA SCSI parallela** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_HBA"></span><span id="fc_hba"></span>
 
-**HBA FC** (7)
+**FC HBA** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>
 
-**HBA iSCSI** (8)
+**ISCSI HBA** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -245,21 +245,21 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>
 
-**Altra scheda di rete** (11)
+**Altra scheda di** rete (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>
 
-**Slot I/O** (12)
+**Slot di I/O** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>
 
-**Dispositivo I/O** (13)
+**Dispositivo di I/O** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -301,14 +301,14 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extent di archiviazione** (19)
+**Archiviazione extent** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>
 
-**Altro dispositivo di archiviazione** (20)
+**Altro Archiviazione dispositivo** (20)
 
 
 </dt> <dd></dd> <dt>
@@ -336,14 +336,14 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>
 
-**Controller grafica** (24)
+**Controller grafico** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_1394_Controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>
 
-**Controller IEEE 1394** (25)
+**IEEE 1394 controller** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -364,7 +364,7 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Power"></span><span id="power"></span><span id="POWER"></span>
 
-**Potenza** (28)
+**Alimentazione** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -378,7 +378,7 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>
 
-**Porta switch Ethernet** (30)
+**Porta commutatore Ethernet** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -392,7 +392,7 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volume di archiviazione** (32)
+**Archiviazione volume** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -413,7 +413,7 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (0x8000.. 0xFFFF
+**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -423,15 +423,15 @@ Tipo di risorsa assegnato a questa impostazione di allocazione.
 **SharingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica il modo in cui viene concesso l'accesso alla risorsa sottostante.
+Indica come viene concesso l'accesso alla risorsa sottostante.
 
-La quantità effettiva è controllata da min, dimensioni massime, pesi e così via.
+La quantità effettiva è controllata da min, max size, weights e così via.
 
 <dt>
 
@@ -473,7 +473,7 @@ Uso condiviso della risorsa sottostante.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (0x8000.. 0xFFFF
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -483,7 +483,7 @@ Uso condiviso della risorsa sottostante.
 **SupportedAddStates**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -492,7 +492,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**EnabledState**")
 </dt> </dl>
 
-Gli Stati del sistema supportati quando viene creata una nuova risorsa.
+Stati di sistema supportati quando viene creata una nuova risorsa.
 
 <dt>
 
@@ -519,7 +519,7 @@ Gli Stati del sistema supportati quando viene creata una nuova risorsa.
 
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>
 
-**Arresto** in corso (4)
+**Arresto in fase di** arresto (4)
 
 
 </dt> <dd></dd> <dt>
@@ -547,28 +547,28 @@ Gli Stati del sistema supportati quando viene creata una nuova risorsa.
 
 <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>
 
-**Posticipato** (8)
+**Differito** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** in corso (10)
+**Avvio** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-In **pausa** (11)
+**In pausa** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -582,14 +582,14 @@ In **pausa** (11)
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (0x8000.. 0xFFFF
+**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -599,7 +599,7 @@ In **pausa** (11)
 **SupportedRemoveStates**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -608,7 +608,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md).**EnabledState**")
 </dt> </dl>
 
-Gli Stati del sistema supportati quando una risorsa viene rimossa.
+Stati di sistema supportati quando viene rimossa una risorsa.
 
 <dt>
 
@@ -635,7 +635,7 @@ Gli Stati del sistema supportati quando una risorsa viene rimossa.
 
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>
 
-**Arresto** in corso (4)
+**Arresto in fase di** arresto (4)
 
 
 </dt> <dd></dd> <dt>
@@ -663,28 +663,28 @@ Gli Stati del sistema supportati quando una risorsa viene rimossa.
 
 <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>
 
-**Posticipato** (8)
+**Differito** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Mettere in stato** (9)
+**Inattiva** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** in corso (10)
+**Avvio** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-In **pausa** (11)
+**In pausa** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -698,14 +698,14 @@ In **pausa** (11)
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (0x8000.. 0xFFFF
+**Fornitore riservato** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -720,8 +720,8 @@ In **pausa** (11)
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -730,7 +730,7 @@ In **pausa** (11)
 
 <dl> <dt>
 
-[**\_Funzionalità CIM**](cim-capabilities.md)
+[**Funzionalità \_ CIM**](cim-capabilities.md)
 </dt> </dl>
 
  

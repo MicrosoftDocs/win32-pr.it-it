@@ -1,9 +1,9 @@
 ---
-title: CASELLA. giustificazione
-description: L'attributo giustificazione specifica o recupera l'allineamento del testo all'interno del controllo casella.
+title: EDITBOX.justification
+description: L'attributo di giustificazione specifica o recupera l'allineamento del testo all'interno del controllo casella di modifica.
 ms.assetid: e1b62381-3975-45d9-8c9c-1e30770cebdb
 keywords:
-- Media Player di Windows casella. giustificazione
+- EDITBOX.justification Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c230f8a2527a1a66ed7bfd3b42bfff8c686fa2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fcb9a9b2fd2722e0d36b285b606d42fb8299531c6119816b7dd2e1ad1e63cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863111"
 ---
-# <a name="editboxjustification"></a>CASELLA. giustificazione
+# <a name="editboxjustification"></a>EDITBOX.justification
 
-L'attributo **giustificazione** specifica o recupera l'allineamento del testo all'interno del controllo casella.
+**L'attributo di giustificazione** specifica o recupera l'allineamento del testo all'interno del controllo casella di modifica.
 
 ``` syntax
         elementID.justification
@@ -29,7 +29,7 @@ L'attributo **giustificazione** specifica o recupera l'allineamento del testo al
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente uno dei valori seguenti.
+Questo attributo è una stringa di **lettura/scrittura** contenente uno dei valori seguenti.
 
 
 
@@ -45,7 +45,7 @@ Questo attributo è una **stringa** di lettura/scrittura contenente uno dei valo
 
 ## <a name="remarks"></a>Commenti
 
-C'è un margine di due pixel.
+È presente un margine di due pixel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ C'è un margine di due pixel.
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> </dl>
 
  

@@ -1,29 +1,29 @@
 ---
-title: Enumerazioni per i negozi di tipo 2 online
-description: Enumerazioni per i negozi di tipo 2 online
+title: Enumerazioni per i negozi online di tipo 2
+description: Enumerazioni per i negozi online di tipo 2
 ms.assetid: b4d27310-9902-4c46-a558-f46f19735ec7
 keywords:
-- Archivi Windows Media Player online, enumerazioni
-- archivi online, enumerazioni
-- digitare 2 archivi online, enumerazioni
-- enumerazioni, digitare 2 archivi online
+- Windows Media Player online, enumerazioni
+- negozi online, enumerazioni
+- negozi online di tipo 2, enumerazioni
+- enumerazioni,tipo 2 negozi online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dd9cd733f39cb3c99b09986ea7136e984b3c666
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 05a203342d675eaac6e0565c9b120ab42f42a29799f9a2a84dc18ac165fc3ae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104336361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862971"
 ---
-# <a name="enumerations-for-type-2-online-stores"></a>Enumerazioni per i negozi di tipo 2 online
+# <a name="enumerations-for-type-2-online-stores"></a>Enumerazioni per i negozi online di tipo 2
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità all'esterno del contesto di un negozio online non è supportato.
 
- 
+ 
 
-Il tipo di enumerazione seguente è disponibile per gli archivi online usando il codice C++.
+Il tipo di enumerazione seguente è disponibile per i negozi online tramite codice C++.
 
 
 
@@ -33,7 +33,7 @@ Il tipo di enumerazione seguente è disponibile per gli archivi online usando il
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -42,9 +42,9 @@ Il tipo di enumerazione seguente è disponibile per gli archivi online usando il
 [**Riferimento per negozi online di tipo 2**](reference-for-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

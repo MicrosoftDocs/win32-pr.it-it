@@ -3,44 +3,44 @@ title: Riproduzione audio multicanale in DirectShow
 description: Riproduzione audio multicanale in DirectShow
 ms.assetid: 5123854a-0f1f-40f4-bf57-47622b91103f
 keywords:
-- Windows Media Format SDK, DirectShow
+- Windows Media Format SDK,DirectShow
 - Windows Media Format SDK, riproduzione audio multicanale
-- Windows Media Format SDK, riproduzione audio
+- Windows MEDIA Format SDK, riproduzione audio
+- Advanced Systems Format (ASF), DirectShow
 - ASF (Advanced Systems Format), DirectShow
-- ASF (Advanced Systems Format), DirectShow
+- Advanced Systems Format (ASF), riproduzione audio multicanale
 - ASF (Advanced Systems Format), riproduzione audio multicanale
-- ASF (Advanced Systems Format), riproduzione audio multicanale
+- Advanced Systems Format (ASF), riproduzione audio
 - ASF (Advanced Systems Format), riproduzione audio
-- ASF (formato avanzato dei sistemi), riproduzione audio
-- DirectShow, riproduzione audio multicanale
-- DirectShow, riproduzione audio
+- DirectShow,riproduzione audio multicanale
+- DirectShow,riproduzione audio
 - audio multicanale, riproduzione
 - riproduzione audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d44c6eec473c8bbbff81d35f4127d5d132d0b6cd
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 99734ddf32be6e0340e26fafef0f22f1127ec3652cc0db0a9d2e94ce2f694b96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104398650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808161"
 ---
 # <a name="multichannel-audio-playback-in-directshow"></a>Riproduzione audio multicanale in DirectShow
 
-Per riprodurre un file di Windows Media Audio multicanale in DirectShow, è necessario impostare la \_ Proprietà "HIRESOUTPUT" direttamente nel decodificatore dopo che è stata connessa al lettore WM ASF. Non è necessaria alcuna configurazione dell'oggetto Reader. Tuttavia, per lavorare direttamente con DMO, è necessario wmcodecconst. h dal [codice di esempio per l'uso del pacchetto di download Windows Media audio e interfacce codec video](https://www.microsoft.com/downloads/details.aspx?FamilyId=92490D8A-4F2E-46F1-8835-B1D987B3C985&displaylang=en) .
+Per riprodurre un file audio multimediale Windows multicanale in DirectShow, è necessario impostare la proprietà "HIRESOUTPUT" direttamente nel decodificatore dopo la connessione al lettore \_ ASF WM. Non è necessaria alcuna configurazione dell'oggetto lettore. Tuttavia, per usare direttamente il DMO, è necessario wmcodecconst.h dal pacchetto di download Sample Code for Using the Windows Media Audio and Video Codec Interfaces (Codice di esempio per l'uso del pacchetto di download Windows [Media Audio and Video Codec Interfaces).](https://www.microsoft.com/downloads/details.aspx?FamilyId=92490D8A-4F2E-46F1-8835-B1D987B3C985&displaylang=en)
 
-**Nota** Questa procedura di configurazione è supportata solo per i file non protetti da Rights Management digitali.
+**Nota** Questa procedura di configurazione è supportata solo per i file non protetti da Rights Management.
 
 I passaggi di base per abilitare l'output multicanale sono i seguenti:
 
 1.  Chiamare RenderFile per creare il grafico dei filtri.
-2.  Ottenere un puntatore al filtro del wrapper DMO
-3.  Disconnettere il wrapper DMO dal renderer audio
-4.  Impostare la \_ Proprietà "HIRESOUTPUT" nel decodificatore.
-5.  Riconnettere il wrapper DMO e il renderer audio.
+2.  Ottenere un puntatore al filtro DMO Wrapper
+3.  Disconnettere DMO wrapper dal renderer audio
+4.  Impostare la \_ proprietà "HIRESOUTPUT" nel decodificatore.
+5.  Riconnettere il DMO e il renderer audio.
 6.  Eseguire il grafo.
 
-I frammenti di codice seguenti illustrano questi passaggi. (Per semplicità è stato omesso tutto il controllo degli errori. Se si utilizza questo codice in un'applicazione, è necessario aggiungere routine di gestione degli errori appropriate.
+I frammenti di codice seguenti illustrano questi passaggi. Tutti i controlli degli errori sono stati omessi per motivi di semplicità. Se si usa questo codice in un'applicazione, è necessario aggiungere routine di gestione degli errori appropriate.
 
 
 ```C++
@@ -141,9 +141,9 @@ HRESULT GetPin(IBaseFilter *pFilter, PIN_DIRECTION PinDir, IPin** ppPin)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

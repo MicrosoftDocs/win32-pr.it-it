@@ -1,22 +1,22 @@
 ---
-description: I riconoscitori della grafia utilizzano un set definito di regole per un determinato linguaggio come contesto principale per il riconoscimento delle parole.
+description: I riconoscitori della grafia usano un set definito di regole per una determinata lingua come contesto principale per il riconoscimento delle parole.
 ms.assetid: d55ab045-7896-4d55-a634-238dea0606c8
-title: Informazioni sui modelli di linguaggio
+title: Informazioni sui modelli linguistici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de2a099912330dc36e1b27d853f93b6e33aee6a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 764ed86da3f0139658cfc11d6af21941220f8d5ac69c3e7d54655148d860a4df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941521"
 ---
-# <a name="about-language-models"></a>Informazioni sui modelli di linguaggio
+# <a name="about-language-models"></a>Informazioni sui modelli linguistici
 
-I riconoscitori della grafia utilizzano un set definito di regole per un determinato linguaggio come contesto principale per il riconoscimento delle parole. Queste regole sono denominate modelli di linguaggio. Il modello di lingua viene implementato dal sistema di riconoscimento e non può essere modificato direttamente da uno sviluppatore utilizzando il Software Development Kit (SDK) di Microsoft Windows XP Tablet PC Edition. Esistono tuttavia modi per affinare il contesto per campi specifici in un'applicazione. Queste tecniche includono:
+I riconoscitori della grafia usano un set definito di regole per una determinata lingua come contesto principale per il riconoscimento delle parole. Queste regole sono denominate modelli linguistici. Il modello linguistico viene implementato dal sistema di riconoscimento e non può essere modificato direttamente da uno sviluppatore che usa Microsoft Windows XP Tablet PC Edition Software Development Kit (SDK). Esistono tuttavia modi per perfezionare il contesto per campi specifici in un'applicazione. Queste tecniche includono:
 
 -   Ambiti di input
--   Factoids
+-   Factoid
 -   Dizionari
 -   Elenchi di frasi
 

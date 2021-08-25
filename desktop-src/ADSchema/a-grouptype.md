@@ -1,11 +1,11 @@
 ---
-title: Attributo Group-Type
+title: Group-Type attributo
 description: Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 ms.assetid: cd37ed2f-8503-4227-b0d2-c8135605cb84
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Group-Type attribute
-- Schema AD dell'attributo groupType
+- Group-Type schema AD dell'attributo
+- Attributo groupType schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e1db8f102e7e56b38d15d74fedb7c5a5366ee47
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c05584576c96766d302170220411e165da9b14e89c81fb0bd9d0837c05c9aed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925571"
 ---
-# <a name="group-type-attribute"></a>Attributo Group-Type
+# <a name="group-type-attribute"></a>Group-Type attributo
 
-Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo. Per i valori possibili per questo attributo, vedere la sezione Osservazioni.
+Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo. Per i valori possibili per questo attributo, vedere Osservazioni.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Group-Type                           |
-| LDAP-Display-Name | groupType                            |
+| Ldap-Display-Name | groupType                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.750               |
-| System-ID-GUID    | 9a9a021e-4a5b-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 9a9a021e-4a5b-11d1-a9c3-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Contiene un set di flag che definiscono il tipo e l'ambito di un oggetto gruppo.
 | ID collegamento                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| È a valore singolo       | Vero                                |
+| Is-Single-Valued       | Vero                                |
 | Indicizzato             | Vero                                |
 | Nel catalogo globale      | Vero                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000009                          |
 | System-Flags           | 0x00000012                          |
-| Classi utilizzate in        | [**Group**](c-group.md)<br/> |
+| Classi usate in        | [**Group**](c-group.md)<br/> |
 
 
 
@@ -209,15 +209,15 @@ Questo attributo può essere zero o una combinazione di uno o più dei valori se
 | 2 (0x00000002)          | Specifica un gruppo con ambito globale.                                                         |
 | 4 (0x00000004)          | Specifica un gruppo con ambito locale di dominio.                                                   |
 | 8 (0x00000008)          | Specifica un gruppo con ambito universale.                                                      |
-| 16 (0x00000010)         | Specifica un \_ gruppo App Basic per gestione autorizzazioni di Windows Server.                      |
-| 32 (0x00000020)         | Specifica un \_ gruppo di query app per gestione autorizzazioni di Windows Server.                      |
+| 16 (0x00000010)         | Specifica un gruppo APP \_ BASIC per Windows Server Authorization Manager.                      |
+| 32 (0x00000020)         | Specifica un gruppo DI QUERY APP \_ per Windows Server Authorization Manager.                      |
 | 2147483648 (0x80000000) | Specifica un gruppo di sicurezza. Se questo flag non è impostato, il gruppo è un gruppo di distribuzione. |
 
 
 
  
 
-Per ulteriori informazioni sul tipo di gruppo e sull'ambito, vedere gli argomenti [tipi](/previous-versions/windows/it-pro/windows-server-2003/cc781446(v=ws.10)) di gruppo e [ambito del gruppo](/previous-versions/windows/it-pro/windows-server-2003/cc755692(v=ws.10)) in Microsoft TechNet.
+Per altre informazioni sul tipo di gruppo e sull'ambito, vedere gli [argomenti Tipi di](/previous-versions/windows/it-pro/windows-server-2003/cc781446(v=ws.10)) gruppo e Ambito gruppo in Microsoft TechNet. [](/previous-versions/windows/it-pro/windows-server-2003/cc755692(v=ws.10))
 
  
 

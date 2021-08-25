@@ -1,11 +1,11 @@
 ---
-title: Attributo Object-Class
+title: Object-Class attributo
 description: Elenco di classi da cui deriva questa classe.
 ms.assetid: def98723-2d8a-49ea-84f8-afe6ff9cdfd9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Object-Class attribute
-- attributo objectClass-schema AD
+- Object-Class schema AD dell'attributo
+- Attributo objectClass Schema di AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 851d48bcbcc40640af3ee555c343feaab05edf6b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8270c247ec276058b1060f68158004802b9775dbafa69e79fccb09105dcccdab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925321"
 ---
-# <a name="object-class-attribute"></a>Attributo Object-Class
+# <a name="object-class-attribute"></a>Object-Class attributo
 
 Elenco di classi da cui deriva questa classe.
 
@@ -30,12 +30,12 @@ Elenco di classi da cui deriva questa classe.
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Object-Class                                                    |
-| LDAP-Display-Name | objectClass                                                     |
+| Ldap-Display-Name | objectClass                                                     |
 | Dimensione              | Circa 20 byte in media.                                      |
-| Privilegio aggiornamento  | Il valore verrà impostato dalla finestra di progettazione dell'oggetto.                |
+| Privilegio di aggiornamento  | La finestra di progettazione dell'oggetto imposta questo valore.                |
 | Frequenza di aggiornamento  | Questo valore non deve mai cambiare.                                 |
 | Attribute-Id      | 2.5.4.0                                                         |
-| System-ID-GUID    | bf9679e5-0de6-11d0-a285-00aa003049e2                            |
+| System-Id-Guid    | bf9679e5-0de6-11d0-a285-00aa003049e2                            |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ Elenco di classi da cui deriva questa classe.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di classi da cui deriva questa classe.
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Vero                            |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
 | System-Flags           | 0x00000012                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

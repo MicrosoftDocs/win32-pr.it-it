@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM DirectorySpecification acquisisce la struttura di directory principale di un elemento software. Questa classe viene utilizzata per organizzare i file di un elemento software in unità gestibili che possono essere rilocate in un sistema di computer.
+description: La classe CIM \_ DirectorySpecification acquisisce la struttura di directory principale di un elemento software. Questa classe viene usata per organizzare i file di un elemento software in unità gestibili che possono essere rilocate in un computer.
 ms.assetid: faeab356-e470-477b-97d2-1a19ce1d8d21
 ms.tgt_platform: multiple
-title: Classe CIM_DirectorySpecification
+title: CIM_DirectorySpecification classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,23 +25,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6a7eb6ae627c8ed9b5639e573e1d2d89132698ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2464636b717d320c592cc007a8f0e688a9e3dfcd27e0eb49ae29e391b2a05cb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924211"
 ---
-# <a name="cim_directoryspecification-class"></a>CIM \_ DirectorySpecification (classe)
+# <a name="cim_directoryspecification-class"></a>Classe \_ CiM DirectorySpecification
 
-La classe **CIM \_ DirectorySpecification** acquisisce la struttura di directory principale di un elemento software. Questa classe viene utilizzata per organizzare i file di un elemento software in unità gestibili che possono essere rilocate in un sistema di computer.
+La **classe CIM \_ DirectorySpecification** acquisisce la struttura di directory principale di un elemento software. Questa classe viene usata per organizzare i file di un elemento software in unità gestibili che possono essere rilocate in un computer.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,20 +65,20 @@ class CIM_DirectorySpecification : CIM_Check
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DirectorySpecification** presenta questi tipi di membri:
+La **classe \_ CIM DirectorySpecification** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **CIM \_ DirectorySpecification** presenta questi metodi.
+La **classe \_ CIM DirectorySpecification** include questi metodi.
 
 
 
 | Metodo                                                              | Descrizione                                                                     |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [**Richiamare**](invoke-method-in-class-cim-directoryspecification.md) | Valuta un particolare controllo. Questo metodo non è implementato da WMI.<br/> |
+| [**evocare**](invoke-method-in-class-cim-directoryspecification.md) | Valuta un controllo specifico. Questo metodo non è implementato da WMI.<br/> |
 
 
 
@@ -86,127 +86,127 @@ La classe **CIM \_ DirectorySpecification** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DirectorySpecification** dispone di queste proprietà.
+La **classe \_ CIM DirectorySpecification** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto.
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **CheckID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificatore utilizzato insieme ad altre chiavi per identificare in modo univoco il controllo.
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **CheckMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, la condizione dovrebbe esistere nell'ambiente. Un file, ad esempio, dovrebbe trovarsi in un sistema, quindi il metodo [**Invoke**](invoke-method-in-class-cim-check.md) deve restituire **true**.
+Se **TRUE,** si prevede che la condizione esista nell'ambiente. Ad esempio, si prevede che un file si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **TRUE.**
 
-Se **false**, la condizione non è prevista. Un file, ad esempio, non si trova in un sistema, quindi il metodo [**Invoke**](invoke-method-in-class-cim-check.md) deve restituire **false**.
+Se **FALSE,** la condizione non deve esistere. Ad esempio, un file non si trova in un sistema, quindi il [**metodo Invoke**](invoke-method-in-class-cim-check.md) deve restituire **FALSE.**
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione degli oggetti.
+Descrizione degli oggetti .
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **DirectoryPath**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
-Nome della directory. Il valore fornito da un provider di applicazioni è un nome di percorso predefinito o consigliato. Il valore può essere modificato per un ambiente specifico.
+Nome della directory. Il valore fornito da un provider di applicazioni è un nome di percorso predefinito o consigliato. Il valore può essere modificato per un determinato ambiente.
 
 </dd> <dt>
 
-**DirectoryType**
+**Tipo di directory**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Percorso DMTF \| 001,2 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Location \| 001.2")
 </dt> </dl>
 
-Tipo di directory da descrivere.
+Tipo di directory da descrizione.
 
 <dt>
 
 <span id="Product_base_directory"></span><span id="product_base_directory"></span><span id="PRODUCT_BASE_DIRECTORY"></span>
 
-**Directory di base del prodotto** (0)
+**Directory di base del** prodotto (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Product_executable_directory"></span><span id="product_executable_directory"></span><span id="PRODUCT_EXECUTABLE_DIRECTORY"></span>
 
-**Directory eseguibile prodotto** (1)
+**Directory eseguibile del prodotto** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Product_library_directory"></span><span id="product_library_directory"></span><span id="PRODUCT_LIBRARY_DIRECTORY"></span>
 
-**Directory della raccolta di prodotti** (2)
+**Directory della raccolta prodotti** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -220,7 +220,7 @@ Tipo di directory da descrivere.
 
 <span id="Product_include_directory"></span><span id="product_include_directory"></span><span id="PRODUCT_INCLUDE_DIRECTORY"></span>
 
-**Directory di inclusione prodotto** (4)
+**Directory di inclusione del prodotto** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -234,7 +234,7 @@ Tipo di directory da descrivere.
 
 <span id="Product_log_directory"></span><span id="product_log_directory"></span><span id="PRODUCT_LOG_DIRECTORY"></span>
 
-**Directory log prodotto** (6)
+**Directory dei log del** prodotto (6)
 
 
 </dt> <dd></dd> <dt>
@@ -255,7 +255,7 @@ Tipo di directory da descrivere.
 
 <span id="Shared_library_directory"></span><span id="shared_library_directory"></span><span id="SHARED_LIBRARY_DIRECTORY"></span>
 
-**Directory delle librerie condivise** (9)
+**Directory della libreria condivisa** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -269,42 +269,42 @@ Tipo di directory da descrivere.
 
 <span id="System_base_directory"></span><span id="system_base_directory"></span><span id="SYSTEM_BASE_DIRECTORY"></span>
 
-**Directory di base di sistema** (11)
+**Directory di base del** sistema (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_executable_directory"></span><span id="system_executable_directory"></span><span id="SYSTEM_EXECUTABLE_DIRECTORY"></span>
 
-**Directory eseguibile di sistema** (12)
+**Directory eseguibile di** sistema (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_library_directory"></span><span id="system_library_directory"></span><span id="SYSTEM_LIBRARY_DIRECTORY"></span>
 
-**Directory libreria di sistema** (13)
+**Directory della libreria di** sistema (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_configuration_directory"></span><span id="system_configuration_directory"></span><span id="SYSTEM_CONFIGURATION_DIRECTORY"></span>
 
-**Directory di configurazione di sistema** (14)
+**Directory di configurazione del** sistema (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_include_directory"></span><span id="system_include_directory"></span><span id="SYSTEM_INCLUDE_DIRECTORY"></span>
 
-**Directory di inclusione sistema** (15)
+**Directory di inclusione del** sistema (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_log_directory"></span><span id="system_log_directory"></span><span id="SYSTEM_LOG_DIRECTORY"></span>
 
-**Directory registro di sistema** (16)
+**Directory del registro di** sistema (16)
 
 
 </dt> <dd></dd> <dt>
@@ -321,54 +321,54 @@ Tipo di directory da descrivere.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Nome**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nome usato per identificare l'elemento software
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Si tratta di un identificatore per questo elemento software.
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Stato dell'elemento software di un elemento software.
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 <dt>
 
@@ -379,18 +379,18 @@ Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile, ovvero lo stato successivo.
+Descrive i dettagli necessari per la corretta distribuzione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato installabile ,ovvero lo stato successivo.
 
 </dd> <dt>
 
 <span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>
 
-<span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>**Installabile** (1)
+<span id="Installable"></span><span id="installable"></span><span id="INSTALLABLE"></span>**Installable** (1)
 
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per l'installazione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile, ovvero lo stato successivo.
+Descrive i dettagli necessari per una corretta installazione e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato eseguibile (ovvero lo stato successivo).
 
 </dd> <dt>
 
@@ -401,18 +401,18 @@ Vengono descritti i dettagli necessari per l'installazione corretta e i dettagli
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione, ovvero lo stato successivo.
+Descrive i dettagli necessari per l'esecuzione corretta e i dettagli (condizioni e azioni) necessari per creare un elemento software nello stato di esecuzione ,ovvero lo stato successivo.
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In esecuzione** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**In** esecuzione (3)
 
 
 </dt> <dd>
 
-Vengono descritti i dettagli necessari per il monitoraggio e l'utilizzo di un elemento iniziale.
+Descrive i dettagli necessari per monitorare e operare su un elemento iniziale.
 
 </dd> </dl>
 
@@ -421,18 +421,18 @@ Vengono descritti i dettagli necessari per il monitoraggio e l'utilizzo di un el
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informazioni sul componente software DMTF \| 002,5 ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chiave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo di destinazione dell'elemento software.
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 <dt>
 
@@ -452,7 +452,7 @@ Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
 
 <span id="MACOS"></span><span id="macos"></span>
 
-<span id="MACOS"></span><span id="macos"></span>**MacOS** (2)
+<span id="MACOS"></span><span id="macos"></span>**MACOS** (2)
 
 
 </dt> <dd>
@@ -468,7 +468,7 @@ Mac OS
 
 </dt> <dd>
 
-UNIX ATT
+ATT UNIX
 
 </dd> <dt>
 
@@ -488,7 +488,7 @@ UNIX ATT
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**UNIX digitale** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -500,7 +500,7 @@ UNIX ATT
 
 </dt> <dd>
 
-Apri VM
+Aprire macchine virtuali
 
 </dd> <dt>
 
@@ -517,7 +517,7 @@ HP-UX
 
 <span id="AIX"></span><span id="aix"></span>
 
-<span id="AIX"></span><span id="aix"></span>**Aix** (9)
+<span id="AIX"></span><span id="aix"></span>**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -545,12 +545,12 @@ HP-UX
 
 <span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>
 
-<span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>**Javavm** (13)
+<span id="JavaVM"></span><span id="javavm"></span><span id="JAVAVM"></span>**JavaVM** (13)
 
 
 </dt> <dd>
 
-Macchina virtuale Microsoft (VM) per Java
+Microsoft Virtual Machine (VM) per Java
 
 </dd> <dt>
 
@@ -568,13 +568,13 @@ Macchina virtuale Microsoft (VM) per Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -585,7 +585,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -596,7 +596,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -607,7 +607,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -650,7 +650,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX Reliant** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -671,7 +671,7 @@ NCR 3000
 
 <span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>
 
-<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequent** (27)
+<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequenziante** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -722,7 +722,7 @@ Serie A
 
 </dt> <dd>
 
-NSK tandem
+Tandem NSK
 
 </dd> <dt>
 
@@ -733,7 +733,7 @@ NSK tandem
 
 </dt> <dd>
 
-NT tandem
+Tandem NT
 
 </dd> <dt>
 
@@ -750,7 +750,7 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -778,7 +778,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interattivo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -828,14 +828,14 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel MACH** (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Inferno** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ilva** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -870,7 +870,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -884,14 +884,14 @@ Mac OS 9
 
 <span id="HP_MPE"></span><span id="hp_mpe"></span>
 
-<span id="HP_MPE"></span><span id="hp_mpe"></span>**HP mpe** (54)
+<span id="HP_MPE"></span><span id="hp_mpe"></span>**HP MPE** (54)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>
 
-<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NeXTSTEP** (55)
+<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NextStep** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -944,34 +944,34 @@ Sistema operativo Palm
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| ComponentID \| 001,3 ")
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Versione**"), [**chiave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versione dell'operazione.
 
-La versione dell'operazione deve essere in uno dei seguenti formati:
+La versione dell'operazione deve essere in uno dei formati seguenti:
 
 -   <major>.<minor>.<revision>
 -   <major>.<minor><letter><revision>
 
-Questa proprietà viene ereditata [**dal \_ controllo CIM**](cim-check.md).
+Questa proprietà viene ereditata dal [**controllo CIM \_**](cim-check.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-WMI non implementa questa classe. Per le classi derivate da **CIM \_ DirectorySpecification**, vedere [Win32 Classes](win32-provider.md).
+WMI non implementa questa classe. Per le classi derivate **da CIM \_ DirectorySpecification,** vedere [Classi Win32.](win32-provider.md)
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -982,7 +982,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -991,7 +991,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Controllo CIM**](cim-check.md)
+[**Controllo \_ CIM**](cim-check.md)
 </dt> </dl>
 
  

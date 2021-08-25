@@ -1,7 +1,7 @@
 ---
-description: Puntatore all'interfaccia IMemInputPin del PIN di input.
+description: Puntatore all'interfaccia IMemInputPin del pin di input.
 ms.assetid: 59383b5d-cfd2-40ae-9075-c55aa20139ae
-title: 'Membro COutputQueue:: m_pInputPin (Outputq. h)'
+title: Membro COutputQueue::m_pInputPin (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d47444a95d8497e67c72fa399308ff7d8e815f46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 497eaf85f1884da3817564d06f2a1989f5e33fec99f5aae50cd435cff76dce0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871532"
 ---
-# <a name="coutputqueuem_pinputpin-member"></a>Membro pInputPin di COutputQueue:: m \_
+# <a name="coutputqueuem_pinputpin-member"></a>Membro COutputQueue::m \_ pInputPin
 
-Puntatore all'interfaccia [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) del PIN di input.
+Puntatore all'interfaccia [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) del pin di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ IMemInputPin *m_pInputPin;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

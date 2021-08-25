@@ -1,19 +1,19 @@
 ---
-description: ETW definisce le seguenti macro pratici che è possibile utilizzare per accedere ai membri della \_ struttura del descrittore di eventi.
+description: ETW definisce le macro di praticità seguenti che è possibile usare per accedere ai membri della struttura EVENT \_ DESCRIPTOR.
 ms.assetid: ce5439cb-8bb7-4d71-8908-d4ccf6086811
 title: Macro di traccia eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a5017973627fc18b153b3b9eaed52dcb4b71c18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8601293e958e2931d45fcade8f1e7840788d40c2ede818d6301ada745267166e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914431"
 ---
 # <a name="event-tracing-macros"></a>Macro di traccia eventi
 
-ETW definisce le seguenti macro pratici che è possibile utilizzare per accedere ai membri della \_ struttura del descrittore di eventi.
+ETW definisce le macro di praticità seguenti che è possibile usare per accedere ai membri della struttura EVENT \_ DESCRIPTOR.
 
 <dl>
 

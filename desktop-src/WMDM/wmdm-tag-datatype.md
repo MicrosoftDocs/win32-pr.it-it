@@ -1,9 +1,9 @@
 ---
-title: Enumerazione WMDM_TAG_DATATYPE
-description: Il \_ \_ tipo di enumerazione WMDM Tag DataType definisce un tipo di dati.
+title: WMDM_TAG_DATATYPE enumerazione
+description: Il tipo di enumerazione WMDM \_ TAG \_ DATATYPE definisce un tipo di dati.
 ms.assetid: 9c300814-5610-4e46-b441-e7f2fc78a47b
 keywords:
-- Enumerazione WMDM_TAG_DATATYPE Windows Media Gestione dispositivi
+- WMDM_TAG_DATATYPE enumerazione windows Media Device Manager
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ad04f0d220809f6bd13d8ae29cc36d52ff6e599
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd725e6d8a0e1baef8a6dfc98cb5d3056f5d67b2d7babd07c919692d96248881
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862671"
 ---
-# <a name="wmdm_tag_datatype-enumeration"></a>\_ \_ Enumerazione DataType Tag WMDM
+# <a name="wmdm_tag_datatype-enumeration"></a>Enumerazione \_ \_ DATATYPE TAG WMDM
 
-Il tipo di enumerazione **WMDM \_ tag \_ DataType** definisce un tipo di dati.
+Il **tipo di enumerazione WMDM TAG \_ \_ DATATYPE** definisce un tipo di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,56 +47,56 @@ typedef enum tagWMDM_TAG_DATATYPE {
 
 <dl> <dt>
 
-<span id="WMDM_TYPE_DWORD"></span><span id="wmdm_type_dword"></span>**WMDM \_ tipo \_ DWORD**
+<span id="WMDM_TYPE_DWORD"></span><span id="wmdm_type_dword"></span>**DWORD \_ DI TIPO \_ WMDM**
 </dt> <dd>
 
 Specifica un valore **DWORD** a 4 byte.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_STRING"></span><span id="wmdm_type_string"></span>**\_stringa di tipo WMDM \_**
+<span id="WMDM_TYPE_STRING"></span><span id="wmdm_type_string"></span>**STRINGA DI TIPO \_ \_ WMDM**
 </dt> <dd>
 
-Specifica una stringa Unicode con terminazione null (2 byte per carattere).
+Specifica una stringa Unicode con terminazione Null (2 byte per carattere).
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_BINARY"></span><span id="wmdm_type_binary"></span>**\_binario di tipo WMDM \_**
+<span id="WMDM_TYPE_BINARY"></span><span id="wmdm_type_binary"></span>**FILE BINARIO \_ DI TIPO WMDM \_**
 </dt> <dd>
 
 Specifica una matrice di byte.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_BOOL"></span><span id="wmdm_type_bool"></span>**\_tipo WMDM \_ bool**
+<span id="WMDM_TYPE_BOOL"></span><span id="wmdm_type_bool"></span>**TIPO WMDM \_ \_ BOOL**
 </dt> <dd>
 
 Specifica un valore booleano a 4 byte.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_QWORD"></span><span id="wmdm_type_qword"></span>**WMDM \_ tipo \_ QWORD**
+<span id="WMDM_TYPE_QWORD"></span><span id="wmdm_type_qword"></span>**QWORD \_ DI TIPO \_ WMDM**
 </dt> <dd>
 
 Specifica un valore **QWORD** a 8 byte.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_WORD"></span><span id="wmdm_type_word"></span>**WMDM \_ digitare \_ Word**
+<span id="WMDM_TYPE_WORD"></span><span id="wmdm_type_word"></span>**WMDM \_ TYPE \_ WORD**
 </dt> <dd>
 
-Specifica un valore **Word** a 2 byte.
+Specifica un valore **WORD** a 2 byte.
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_GUID"></span><span id="wmdm_type_guid"></span>**\_GUID di tipo WMDM \_**
+<span id="WMDM_TYPE_GUID"></span><span id="wmdm_type_guid"></span>**GUID DI TIPO WMDM \_ \_**
 </dt> <dd>
 
 Specifica un GUID a 128 bit (16 byte).
 
 </dd> <dt>
 
-<span id="WMDM_TYPE_DATE"></span><span id="wmdm_type_date"></span>**WMDM \_ tipo di \_ dati**
+<span id="WMDM_TYPE_DATE"></span><span id="wmdm_type_date"></span>**DATA TIPO \_ \_ WMDM**
 </dt> <dd>
 
 Specifica una data.
@@ -109,7 +109,7 @@ Specifica una data.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

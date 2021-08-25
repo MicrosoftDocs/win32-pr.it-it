@@ -1,7 +1,7 @@
 ---
 description: Termina il completamento dell'attività.
 ms.assetid: C64C57E3-593C-47AE-A005-F468E7C588EF
-title: 'Metodo TaskCompletionClient:: RevokeTaskCompletion'
+title: Metodo TaskCompletionClient::RevokeTaskCompletion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - ExecModelClient.dll
-ms.openlocfilehash: 8e93828d204a839ea4092d13889564781b360146
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b0130ae2e90c2f592c158fb0730461eab8a78b192ae81f7cc7aaa4139c83483
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773661"
 ---
-# <a name="taskcompletionclientrevoketaskcompletion-method"></a>Metodo TaskCompletionClient:: RevokeTaskCompletion
+# <a name="taskcompletionclientrevoketaskcompletion-method"></a>Metodo TaskCompletionClient::RevokeTaskCompletion
 
 Termina il completamento dell'attività.
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                           |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                           |
 | DLL<br/>                      | <dl> <dt>ExecModelClient.dll</dt> </dl> |
 
 

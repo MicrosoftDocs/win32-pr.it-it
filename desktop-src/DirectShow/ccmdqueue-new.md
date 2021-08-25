@@ -1,7 +1,7 @@
 ---
-description: Il nuovo metodo inizializza un comando da eseguire e restituisce un nuovo oggetto CDeferredCommand.
+description: Il metodo New inizializza un comando da eseguire e restituisce un nuovo oggetto CDeferredCommand.
 ms.assetid: bdd80747-a15b-422a-b742-ebfa4076bdf7
-title: Metodo CCmdQueue. New (Winutil. h)
+title: Metodo CCmdQueue.New (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 58c3aee63005010b9ed7366cfb63a69fcc7348b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8b6ad22b67df863e699649f22f513a98ca1306751a1d449a683f306c9cc2938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910391"
 ---
-# <a name="ccmdqueuenew-method"></a>CCmdQueue. New, metodo
+# <a name="ccmdqueuenew-method"></a>Metodo CCmdQueue.New
 
-Il `New` Metodo Inizializza un comando da eseguire e restituisce un nuovo oggetto [**CDeferredCommand**](cdeferredcommand.md) .
+Il `New` metodo inizializza un comando da eseguire e restituisce un nuovo oggetto [**CDeferredCommand.**](cdeferredcommand.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,11 +55,11 @@ virtual HRESULT New(
 *ppCmd* 
 </dt> <dd>
 
-Indirizzo di un puntatore a un oggetto [**CDeferredCommand**](cdeferredcommand.md) tramite il quale un'applicazione può annullare il comando, impostare una nuova ora di presentazione per esso oppure recuperare le informazioni relative alla stima.
+Indirizzo di un puntatore a un [**oggetto CDeferredCommand**](cdeferredcommand.md) tramite il quale un'applicazione può annullare il comando, impostare una nuova ora di presentazione o recuperare informazioni sulla stima.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Puntatore all'oggetto che eseguirà il comando.
@@ -73,10 +73,10 @@ Ora in cui eseguire il comando o i comandi in coda.
 
 </dd> <dt>
 
-*IID* 
+*Iid* 
 </dt> <dd>
 
-Puntatore all'identificatore univoco globale (**GUID**) dell'interfaccia da chiamare.
+Puntatore all'identificatore univoco globale **(GUID)** dell'interfaccia da chiamare.
 
 </dd> <dt>
 
@@ -87,10 +87,10 @@ Metodo sull'interfaccia da chiamare.
 
 </dd> <dt>
 
-*wFlags* 
+*Wflags* 
 </dt> <dd>
 
-Flag che descrivono il contesto della chiamata. Questo parametro supporta gli stessi flag del metodo **IDispatch:: Invoke** .
+Flag che descrivono il contesto della chiamata. Questo parametro supporta gli stessi flag del **metodo IDispatch::Invoke.**
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Numero di argomenti passati.
 *pDispParams* 
 </dt> <dd>
 
-Puntatore all'elenco di tipi Variant associati ai parametri di invio.
+Puntatore all'elenco di tipi variant associati ai parametri dispatch.
 
 </dd> <dt>
 
@@ -118,35 +118,35 @@ Puntatore all'elenco in cui devono essere restituiti i risultati, se presenti.
 *puArgErr* 
 </dt> <dd>
 
-Puntatore all'indice all'interno dell'elenco di parametri *pDispParams* in cui si è verificato l'ultimo errore.
+Puntatore all'indice all'interno *dell'elenco di parametri pDispParams* in cui si è verificato l'ultimo errore.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-Valore che indica se il parametro di *ora* è un valore in fase di flusso (**true**) o un valore della fase di presentazione (**false**).
+Valore che indica se il *parametro time* è un valore stream-time (**TRUE**) o un valore dell'ora di presentazione (**FALSE**).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo. Restituisce E \_ OutOfMemory se *ppCmd* restituisce un valore **null** per la creazione del nuovo oggetto [**CDeferredCommand**](cdeferredcommand.md) . In caso contrario, restituisce un valore **HRESULT** che indica un errore durante il tentativo di creazione di un nuovo oggetto **CDeferredCommand** . Se si verifica un errore, nessun oggetto è stato accodato.
+Restituisce S \_ OK in caso di esito positivo. Restituisce E \_ OUTOFMEMORY se *ppCmd* restituisce dalla creazione del nuovo oggetto [**CDeferredCommand**](cdeferredcommand.md) con valore **NULL.** In caso contrario, restituisce **un HRESULT** che indica un errore durante il tentativo di creare un nuovo **oggetto CDeferredCommand.** Se si verifica un errore, nessun oggetto è stato accodato.
 
 ## <a name="remarks"></a>Commenti
 
-Il nuovo oggetto [**CDeferredCommand**](cdeferredcommand.md) verrà inizializzato con i parametri e verrà aggiunto alla coda durante la costruzione. Questo metodo è simile al metodo **IDispatch:: Invoke** .
+Il nuovo [**oggetto CDeferredCommand**](cdeferredcommand.md) verrà inizializzato con i parametri e verrà aggiunto alla coda durante la costruzione. Questo metodo è simile al **metodo IDispatch::Invoke.**
 
-I valori per il parametro *wFlags* sono i seguenti:
+I valori per *il parametro wFlags* includono quanto segue:
 
 
 
 | Valore                    | Descrizione                                                                                                                                                          |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_metodo Dispatch         | Il membro viene eseguito come metodo. Se una proprietà ha lo stesso nome, è possibile impostare sia questo che il \_ flag PropertyGet (di invio.                                       |
-| \_PROPERTYGET (dispatch    | Il membro viene recuperato come una proprietà o un membro dati.                                                                                                          |
-| \_PROPERTYPUT dispatch    | Il membro viene modificato come una proprietà o un membro dati.                                                                                                            |
-| \_PROPERTYPUTREF dispatch | Il membro viene modificato tramite un'assegnazione di riferimento, anziché un'assegnazione di valore. Questo valore è valido solo quando la proprietà accetta un riferimento a un oggetto. |
+| METODO \_ DISPATCH         | Il membro viene eseguito come metodo. Se una proprietà ha lo stesso nome, è possibile impostare sia questo che il flag DISPATCH \_ PROPERTYGET.                                       |
+| DISPATCH \_ PROPERTYGET    | Il membro viene recuperato come proprietà o membro dati.                                                                                                          |
+| PROPRIETÀ \_ DISPATCHPUT    | Il membro viene modificato come proprietà o membro dati.                                                                                                            |
+| DISPATCH \_ PROPERTYPUTREF | Il membro viene modificato tramite un'assegnazione di riferimento, anziché un'assegnazione di valore. Questo valore è valido solo quando la proprietà accetta un riferimento a un oggetto . |
 
 
 
@@ -158,8 +158,8 @@ I valori per il parametro *wFlags* sono i seguenti:
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

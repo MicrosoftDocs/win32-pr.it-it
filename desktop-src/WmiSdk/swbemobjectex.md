@@ -1,8 +1,8 @@
 ---
-description: Fornisce funzionalità estese per SWbemObject. Analogamente a SWbemObject, i metodi di questo oggetto esteso possono essere utilizzati da tutti gli oggetti WMI.
+description: Fornisce funzionalità estese per SWbemObject. Come SWbemObject, i metodi di questo oggetto esteso possono essere usati da tutti gli oggetti WMI.
 ms.assetid: 944d4cdc-ad35-4b53-b755-f10131a087fb
 ms.tgt_platform: multiple
-title: Oggetto SWbemObjectEx (wbemdisp. h)
+title: Oggetto SWbemObjectEx (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,34 +16,34 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: abed8c1d58687203aaeb32918cf15b2785b92622
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 642b76cde4f4e27979dae0e930ec987dc9a02d36aa8d17c7dcdd9b8785204ac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860151"
 ---
 # <a name="swbemobjectex-object"></a>Oggetto SWbemObjectEx
 
-L'oggetto **SWbemObjectEx** fornisce funzionalità estese per [**SWbemObject**](swbemobject.md). Analogamente a **SWbemObject**, i metodi di questo oggetto esteso possono essere utilizzati da tutti gli oggetti WMI. Questo oggetto non può essere creato dalla chiamata [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) di VBScript.
+**L'oggetto SWbemObjectEx** fornisce funzionalità estese per [**SWbemObject**](swbemobject.md). Come **SWbemObject,** i metodi di questo oggetto esteso possono essere usati da tutti gli oggetti WMI. Questo oggetto non può essere creato dalla chiamata [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) di VBScript.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **SWbemObjectEx** dispone di questi tipi di membri:
+**L'oggetto SWbemObjectEx** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **SWbemObjectEx** dispone di questi metodi.
+**L'oggetto SWbemObjectEx** dispone di questi metodi.
 
 
 
 | Metodo                                      | Descrizione                                                              |
 |:--------------------------------------------|:-------------------------------------------------------------------------|
 | [**GetText\_**](swbemobjectex-gettext-.md) | Restituisce un file di testo che mostra il contenuto di un oggetto in XML.<br/> |
-| [**Aggiorna\_**](swbemobjectex-refresh-.md) | Aggiorna i dati in un oggetto.<br/>                                  |
+| [**Aggiorna\_**](swbemobjectex-refresh-.md) | Aggiorna i dati in un oggetto .<br/>                                  |
 | **SetFromText\_**                           | Riservato per utilizzi futuri.<br/>                                      |
 
 
@@ -52,13 +52,13 @@ L'oggetto **SWbemObjectEx** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **SWbemObjectEx** dispone di queste proprietà.
+**L'oggetto SWbemObjectEx** ha queste proprietà.
 
 
 
 | Proprietà                                                                 | Tipo di accesso           | Descrizione                                                                                                                                              |
 |:-------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SystemProperties\_**](swbemobjectex-systemproperties-.md)<br/> | Lettura/Scrittura<br/> | Oggetto [**SWbemPropertySet**](swbempropertyset.md) che contiene la raccolta di proprietà di sistema che si applicano a **SWbemObjectEx**.<br/> |
+| [**Proprietà del sistema\_**](swbemobjectex-systemproperties-.md)<br/> | Lettura/Scrittura<br/> | Oggetto [**SWbemPropertySet**](swbempropertyset.md) che contiene la raccolta di proprietà di sistema applicabili a **SWbemObjectEx.**<br/> |
 
 
 
@@ -72,11 +72,11 @@ L'oggetto **SWbemObjectEx** dispone di queste proprietà.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTEX CLSID<br/>                                                         |
-| IID<br/>                      | \_ISWBEMOBJECTEX IID<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemObjectEx<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemObjectEx<br/>                                                          |
 
 
 
@@ -84,7 +84,7 @@ L'oggetto **SWbemObjectEx** dispone di queste proprietà.
 
 <dl> <dt>
 
-[Oggetti API di scripting](scripting-api-objects.md)
+[Scripting di oggetti API](scripting-api-objects.md)
 </dt> <dt>
 
 [**SWbemObject**](swbemobject.md)

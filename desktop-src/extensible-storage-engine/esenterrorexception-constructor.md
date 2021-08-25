@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0728eb316c7d5a5d3cf4a1ad13c2e35451318225
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10f0c3bad81b7da722f204993211abf71ccc9bd1057d5b3ba7bead8ccfeeb954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973841"
 ---
 # <a name="esenterrorexception-constructor"></a>Costruttore EsentErrorException
 
 Inizializza una nuova istanza della classe EsentErrorException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -63,14 +63,14 @@ protected EsentErrorException(
 #### <a name="parameters"></a>Parametri
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
     Dati necessari per deserializzare l'oggetto.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contesto di deserializzazione.
 
@@ -82,4 +82,4 @@ protected EsentErrorException(
 
 [Membri di EsentErrorException](./esenterrorexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

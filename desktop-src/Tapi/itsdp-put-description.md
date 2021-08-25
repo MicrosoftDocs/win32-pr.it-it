@@ -1,21 +1,21 @@
 ---
-description: Il \_ metodo Put Description imposta la descrizione della sessione.
+description: Il metodo put \_ Description imposta la descrizione della sessione.
 ms.assetid: 535957e7-effe-4b1b-8cba-38a7a3fe9a9a
-title: 'ITSdp: metodo:p ut_Description (sdpblb. h)'
+title: Metodo ITSdp::p ut_Description (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea8799ce9b2b8f3f44147b8ca60a92d2c37d5e87
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe47e55b41de2c656f04872846c8be9352c53a0f6265a27e0eefbb1ceb1d5d7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873691"
 ---
-# <a name="itsdpput_description-method"></a>ITSdp::p \_ metodo di descrizione ut
+# <a name="itsdpput_description-method"></a>Metodo ITSdp::p ut \_ Description
 
-\[ I controlli e le interfacce per la comunicazione di telefonia IP Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **put \_ Description** imposta la descrizione della sessione.
+Il **metodo put \_ Description** imposta la descrizione della sessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT put_Description(
 
 <dl> <dt>
 
-*pDescription* \[ in\]
+*pDescription* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un **BSTR** che contiene la descrizione della sessione.
+Puntatore a un **BSTR contenente** la descrizione della sessione.
 
 </dd> </dl>
 
@@ -47,10 +47,10 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Il parametro *pDescription* non è un puntatore valido.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
-| <dl> <dt>**E \_ non riescono**</dt> </dl>        | Errore non specificato.<br/>                                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | Il *parametro pDescription* non è un puntatore valido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Errore non specificato.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Questo metodo non è ancora implementato.<br/>                  |
 
 
@@ -59,9 +59,9 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione deve usare [**SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il parametro *PDescription* e usare [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
+L'applicazione deve [**usare SysAllocString**](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) per allocare memoria per il parametro *pDescription* e [**usare SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) per liberare la memoria quando la variabile non è più necessaria.
 
-Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Il rischio di sicurezza di inviare i dati in testo non crittografato deve essere considerato prima di utilizzare questo metodo.
+Questa funzione può inviare dati in rete in formato non crittografato. Pertanto, un utente che intercetta la rete potrebbe essere in grado di leggere i dati. Prima di utilizzare questo metodo, è necessario considerare il rischio di sicurezza dell'invio dei dati in testo non crittografato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,9 +69,9 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 
 | Requisito | Valore |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,0 o versione successiva<br/>                                                 |
-| Intestazione<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versione TAPI<br/> | Richiede TAPI 3.0 o versione successiva<br/>                                                 |
+| Intestazione<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -83,7 +83,7 @@ Questa funzione può inviare dati in rete in forma non crittografata; Pertanto, 
 [**ITSdp**](itsdp.md)
 </dt> <dt>
 
-[**Descrizione di ITSdp:: Get \_**](itsdp-get-description.md)
+[**Descrizione di ITSdp::get \_**](itsdp-get-description.md)
 </dt> </dl>
 
  

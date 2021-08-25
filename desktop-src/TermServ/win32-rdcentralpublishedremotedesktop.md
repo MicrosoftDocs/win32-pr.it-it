@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDCentralPublishedRemoteDesktop
-description: Desktop pubblicato in un altro computer, per l'utilizzo remoto tramite Servizi terminal.
+title: Win32_RDCentralPublishedRemoteDesktop classe
+description: Desktop pubblicato in un altro computer, per l'uso remoto tramite Servizi terminal.
 ms.assetid: 2b28a2d3-048f-446f-9ce0-eb684b393eaa
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_RDCentralPublishedRemoteDesktop Servizi Desktop remoto
-- Classe Win32_RDCentralPublishedRemoteDesktop Servizi Desktop remoto, descritta
+- Win32_RDCentralPublishedRemoteDesktop classe Servizi Desktop remoto
+- Win32_RDCentralPublishedRemoteDesktop classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04696331b7027b7cc65d2202c29e6ce95bb3f4b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5560407da5a88fb17c39f76a91bdb0e193a246496c3f7333e4efccbe70c60ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868411"
 ---
-# <a name="win32_rdcentralpublishedremotedesktop-class"></a>Win32 \_ RDCentralPublishedRemoteDesktop (classe)
+# <a name="win32_rdcentralpublishedremotedesktop-class"></a>Classe \_ WIN32 RDCentralPublishedRemoteDesktop
 
-Desktop pubblicato in un altro computer, per l'utilizzo remoto tramite Servizi terminal
+Desktop pubblicato in un altro computer, per l'uso remoto tramite Servizi terminal
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -62,26 +62,26 @@ class Win32_RDCentralPublishedRemoteDesktop : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ RDCentralPublishedRemoteDesktop** presenta questi tipi di membri:
+La **classe \_ WIN32 RDCentralPublishedRemoteDesktop** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ RDCentralPublishedRemoteDesktop** dispone di queste proprietà.
+La **classe Win32 \_ RDCentralPublishedRemoteDesktop** ha queste proprietà.
 
 <dl> <dt>
 
 **Alias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias del desktop.
@@ -91,25 +91,25 @@ Alias del desktop.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -117,17 +117,17 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Cartelle**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Elenco delle cartelle in cui deve essere visualizzata la risorsa.
@@ -137,10 +137,10 @@ Elenco delle cartelle in cui deve essere visualizzata la risorsa.
 **IconContents**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: [ **facoltativo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -153,25 +153,25 @@ Contenuto dell'icona corrispondente all'applicazione.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**mappingstring**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -179,30 +179,30 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PublishingFarm**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias della farm che ha pubblicato il desktop.
 
 </dd> <dt>
 
-**RDPFileContents**
+**CONTENUTO RDPFileContents**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -215,31 +215,31 @@ Contenuto del file RDP corrispondente al desktop.
 **ShowInPortal**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-**true** se l'applicazione deve essere visualizzata nel accesso Web di Servizi terminal; in caso contrario, **false**.
+**true** se l'applicazione deve essere visualizzata nel Accesso Web TS; in caso contrario, **false.**
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati nonoperational includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -252,7 +252,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
@@ -273,14 +273,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Avvio")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
@@ -309,8 +309,8 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

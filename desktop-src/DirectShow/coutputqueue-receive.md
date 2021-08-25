@@ -1,7 +1,7 @@
 ---
 description: Il metodo Receive recapita un campione multimediale al pin di input.
 ms.assetid: a8ee0988-8955-48d0-be1b-24eea72d560d
-title: Metodo COutputQueue. Receive (Outputq. h)
+title: Metodo COutputQueue.Receive (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ce8a0d44730fa35b38cf6d738edd26168284a46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8fb896429e53c16b30dbc4301f2e54fca5a2087dc1c89635fa33395f68ba0f5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871501"
 ---
-# <a name="coutputqueuereceive-method"></a>Metodo COutputQueue. Receive
+# <a name="coutputqueuereceive-method"></a>Metodo COutputQueue.Receive
 
-Il `Receive` Metodo recapita un campione multimediale al pin di input.
+Il `Receive` metodo recapita un campione multimediale al pin di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,14 +51,14 @@ Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili includono quelli illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                                   |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Notifica di fine del flusso ricevuta prima di elaborare l'esempio.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                                           |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Notifica di fine flusso ricevuta prima dell'elaborazione di questo esempio.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                                           |
 
 
 
@@ -66,7 +66,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli mostrati
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**COutputQueue:: ReceiveMultiple**](coutputqueue-receivemultiple.md) .
+Questo metodo chiama [**il metodo COutputQueue::ReceiveMultiple.**](coutputqueue-receivemultiple.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Questo metodo chiama il metodo [**COutputQueue:: ReceiveMultiple**](coutputqueue
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
