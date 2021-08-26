@@ -1,7 +1,7 @@
 ---
-description: Arresta il servizio Guest.
+description: Arresta il servizio guest.
 ms.assetid: 67FFA46C-0B61-4845-A617-BA10F4D42CBC
-title: 'Metodo Msvm_GuestService:: StopService'
+title: Msvm_GuestService::StopService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6c396078e2bd623a768f391a645091679694f453
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f67234a09ad150f2f039a57b321797e03444c75defe2e83cfd06b60de320a664
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050391"
 ---
-# <a name="msvm_guestservicestopservice-method"></a>\_Metodo MSVM GuestService:: StopService
+# <a name="msvm_guestservicestopservice-method"></a>Metodo Msvm \_ GuestService::StopService
 
-Arresta il servizio Guest.
+Arresta il servizio guest.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Codice/valore restituito                                                                                                                                             | Descrizione         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**Completato senza errori**</dt> <dt>0</dt> </dl> | Esito positivo.<br/> |
+| <dl> <dt>**Completata senza errori**</dt> <dt>0</dt> </dl> | Operazione completata.<br/> |
 | <dl> <dt>**Non supportato**</dt> <dt>1</dt> </dl>           |                     |
 
 
@@ -58,10 +58,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -70,7 +70,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_GuestService MSVM**](msvm-guestservice.md)
+[**Msvm \_ GuestService**](msvm-guestservice.md)
 </dt> </dl>
 
  

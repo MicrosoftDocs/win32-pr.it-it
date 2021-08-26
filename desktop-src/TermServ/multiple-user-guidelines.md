@@ -1,20 +1,20 @@
 ---
 title: Linee guida per più utenti
-description: Linee guida per lo sviluppo di applicazioni per più utenti in un ambiente Servizi Desktop remoto.
+description: Linee guida per lo sviluppo di applicazioni per più utenti in Servizi Desktop remoto ambiente.
 ms.assetid: c7acbedb-3bf2-4519-ab11-a50bf071e757
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a06db01da6d9413684e3197aa9758d6e5c04643f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5bc598042530ab59c0c8932522185ce5a9d0d3dce04cabce44239c3c81b79d59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988851"
 ---
 # <a name="multiple-user-guidelines"></a>Linee guida per più utenti
 
-Nelle sezioni seguenti vengono fornite le linee guida per lo sviluppo di applicazioni per più utenti in un ambiente Servizi Desktop remoto.
+Le sezioni seguenti forniscono linee guida per lo sviluppo di applicazioni per più utenti in un Servizi Desktop remoto specifico.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ Nelle sezioni seguenti vengono fornite le linee guida per lo sviluppo di applica
 [Configurazione dell'applicazione](application-setup-in-a-terminal-services-environment.md)
 </dt> <dd>
 
-L'installazione di un'applicazione per un singolo utente può creare problemi in un ambiente multiutente Servizi Desktop remoto.
+L'installazione di un'applicazione per un singolo utente può creare problemi in un ambiente Servizi Desktop remoto multiutente.
 
 </dd> <dt>
 
@@ -34,10 +34,10 @@ Le applicazioni devono archiviare le informazioni specifiche dell'utente in perc
 
 </dd> <dt>
 
-[Spazi dei nomi dell'oggetto kernel](kernel-object-namespaces.md)
+[Spazi dei nomi degli oggetti kernel](kernel-object-namespaces.md)
 </dt> <dd>
 
-Servizi Desktop remoto usa più spazi dei nomi per gli oggetti kernel; uno spazio dei nomi globale viene utilizzato principalmente dai servizi nelle applicazioni client/server.
+Servizi Desktop remoto usa più spazi dei nomi per gli oggetti kernel. Uno spazio dei nomi globale viene usato principalmente dai servizi nelle applicazioni client/server.
 
 </dd> <dt>
 
@@ -48,13 +48,13 @@ Non è opportuno presupporre che il nome del computer o l' indirizzo IP assegnat
 
 </dd> </dl>
 
-Come sempre, bloccare i file e i database durante le modifiche per evitare la perdita accidentale di dati.
+Come sempre, bloccare file e database apportando modifiche per evitare la perdita accidentale di dati.
 
-L'applicazione non deve bloccare i file dell'applicazione in fase di esecuzione che non sono file per utente. I file di runtime bloccati possono impedire l'esecuzione di più istanze dell'applicazione o di processi nell'applicazione, ad esempio procedure guidate. Un modo efficace per verificare quali file sono i file dell'applicazione in fase di esecuzione consiste nel tenere traccia dei file installati dall'installazione dell'applicazione. I file per utente vengono raramente installati dal programma di installazione di; Pertanto, la maggior parte dei file installati dal programma di installazione sono file dell'applicazione in fase di esecuzione.
+L'applicazione non deve bloccare i file dell'applicazione di run-time che non sono file per utente. I file di run-time bloccati possono evitare l'esecuzione di più istanze dell'applicazione o dei processi nell'applicazione, ad esempio le procedure guidate. Un modo efficace per testare quali file sono file dell'applicazione in fase di esecuzione è tenere traccia dei file installati dal programma di installazione dell'applicazione. I file per utente vengono installati raramente dal programma di installazione. Pertanto, la maggior parte dei file installati dal programma di installazione sono file dell'applicazione di run-time.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: "Il metodo Receive riceve un campione multimediale, lo elabora e recapita un esempio di output al filtro downstream. Questo metodo esegue l'override del metodo CTransformFilter:: Receive."
+description: Il metodo Receive riceve un campione multimediale, lo elabora e recapita un esempio di output al filtro downstream. Questo metodo esegue l'override del metodo CTransformFilter::Receive.
 ms.assetid: 35e22a63-471e-4ca8-be3b-d84920cec7cb
-title: Metodo CVideoTransformFilter. Receive (Vtrans. h)
+title: Metodo CVideoTransformFilter.Receive (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bdc33773a31a7c9ddfd7adb0f3fb20f8fcf6d520
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bce69d5f14a522f403eed54b56a340ab02316507766c0cc6d60ff897ec73541
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998511"
 ---
-# <a name="cvideotransformfilterreceive-method"></a>Metodo CVideoTransformFilter. Receive
+# <a name="cvideotransformfilterreceive-method"></a>Metodo CVideoTransformFilter.Receive
 
-Il `Receive` metodo riceve un campione multimediale, lo elabora e recapita un esempio di output al filtro downstream. Questo metodo esegue l'override del metodo [**CTransformFilter:: Receive**](ctransformfilter-receive.md) .
+Il `Receive` metodo riceve un campione multimediale, lo elabora e fornisce un esempio di output al filtro downstream. Questo metodo esegue l'override [**del metodo CTransformFilter::Receive.**](ctransformfilter-receive.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT Receive(
 *pSample* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) nell'esempio di input.
+Puntatore [**all'interfaccia IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) nell'esempio di input.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I possibili valori sono i seguenti:
+Restituisce un **valore HRESULT.** I possibili valori sono i seguenti:
 
 
 
 | Codice restituito                                                                             | Descrizione                                                 |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Il filtro upstream deve interrompere l'invio degli esempi.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                         |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Il filtro upstream deve interrompere l'invio di campioni.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                         |
 
 
 
@@ -66,13 +66,13 @@ Restituisce un valore **HRESULT** . I possibili valori sono i seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama [**CVideoTransformFilter:: ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md) per determinare se deve fornire questo esempio o semplicemente rimuoverlo. Se **ShouldSkipFrame** restituisce **false** (che indica che l'esempio deve essere recapitato), il metodo esegue le operazioni seguenti:
+Questo metodo chiama [**CVideoTransformFilter::ShouldSkipFrame**](cvideotransformfilter-shouldskipframe.md) per determinare se deve recapitare questo esempio o semplicemente eliminarlo. Se **ShouldSkipFrame** restituisce **FALSE** (che indica che l'esempio deve essere recapitato), il metodo esegue le operazioni seguenti:
 
-1.  Chiama [**CTransformFilter:: InitializeOutputSample**](ctransformfilter-initializeoutputsample.md) per preparare l'esempio di output
-2.  Chiama [**CTransformFilter:: Transform**](ctransformfilter-transform.md) per elaborare l'esempio di input. Questo metodo è virtuale puro e deve essere implementato nella classe derivata.
-3.  Chiama [**CBaseOutputPin::D Eliver**](cbaseoutputpin-deliver.md) per recapitare l'esempio di output.
+1.  Chiama [**CTransformFilter::InitializeOutputSample per**](ctransformfilter-initializeoutputsample.md) preparare l'esempio di output
+2.  Chiama [**CTransformFilter::Transform per**](ctransformfilter-transform.md) elaborare l'esempio di input. Questo metodo è virtuale puro e deve essere implementato nella classe derivata.
+3.  Chiama [**CBaseOutputPin::D eliver**](cbaseoutputpin-deliver.md) per fornire l'esempio di output.
 
-Questo metodo, inoltre, verifica le modifiche di formato nell'esempio di input o di output, chiamando [**IMediaSample:: GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Se viene apportata una modifica al formato, il metodo imposta il tipo di connessione sul pin corrispondente. Prima di impostare il nuovo tipo, viene chiamato **StopStreaming**. Dopo aver impostato il nuovo tipo, viene chiamato **StartStreaming**. La classe derivata può usare questi metodi per aggiornarne lo stato interno. La classe derivata potrebbe anche dover verificare il nuovo formato nel metodo **Transform** .
+Questo metodo verifica inoltre la presenza di modifiche di formato nell'esempio di input o output chiamando [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). In caso di modifica del formato, il metodo imposta il tipo di connessione sul pin corrispondente. Prima di impostare il nuovo tipo, chiama **StopStreaming.** Dopo aver impostato il nuovo tipo, chiama **StartStreaming.** La classe derivata può usare questi metodi per aggiornarne lo stato interno. La classe derivata potrebbe anche dover verificare la presenza del nuovo formato nel **relativo metodo Transform.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ Questo metodo, inoltre, verifica le modifiche di formato nell'esempio di input o
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

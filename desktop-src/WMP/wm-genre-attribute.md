@@ -1,9 +1,9 @@
 ---
-title: Attributo WM/genre
-description: L'attributo WM/genre è il genere del contenuto.
+title: Attributo WM/Genre
+description: L'attributo WM/Genre è il genere del contenuto.
 ms.assetid: 4b1b0512-d8fd-402a-a5f0-1002c64194f4
 keywords:
-- Windows Media Player attributo WM/genre
+- Attributo WM/Genre Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,23 +12,23 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aae4a0c6ae27e85fa1ed147a3173c4cc31b20f1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cd0ef67b0b41ff59f644b0d52376428ae7a2330d388aa62f9765cb4842eeb561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000981"
 ---
-# <a name="wmgenre-attribute"></a>Attributo WM/genre
+# <a name="wmgenre-attribute"></a>Attributo WM/Genre
 
-L'attributo **WM/genre** è il genere del contenuto.
+**L'attributo WM/Genre** è il genere del contenuto.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Playlist CD](cd-playlist-attributes.md)
+-   [Playlist cd](cd-playlist-attributes.md)
 -   [Tracce CD](cd-track-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei file multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [DVD](dvd-attributes.md)
 -   [Altri elementi](other-item-attributes.md)
 -   [Playlist](playlist-attributes-ref.md)
@@ -36,15 +36,15 @@ L'attributo **WM/genre** è il genere del contenuto.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato nella libreria o nella cache e nel file multimediale digitale.
+Questo attributo viene archiviato sia nella libreria (o cache) che nel file multimediale digitale.
 
-Questo attributo può avere più valori. Per recuperare tutti i valori per un attributo multivalore, è necessario usare il metodo **Media. getItemInfoByType** , non il metodo **Media. GetItemInfo** .
+Questo attributo può avere più valori. Per recuperare tutti i valori per un attributo multivalore, è necessario usare il metodo **Media.getItemInfoByType,** non il **metodo Media.getItemInfo.**
 
 **Genre** è un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMGenre.
+La Windows media format SDK costante per questo attributo è \_ g wszWMGenre.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -60,10 +60,10 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> </dl>
 
  

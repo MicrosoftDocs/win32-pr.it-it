@@ -11,27 +11,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: be0e7f282978ada28c2dd71dc7c16dd317ddce42
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4c9f3c71ab6308ad921b5cce27f2c078ad980da17daa7c0045228d27ef0579ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024121"
 ---
 # <a name="ps_2_x-registers"></a>ps \_ 2 \_ x Registri
 
-I pixel shader dipendono dai registri per ottenere i dati dei vertici, per l'output dei dati pixel, per contenere i risultati temporanei durante i calcoli e per identificare le fasi di campionamento delle trame. Esistono diversi tipi di registri, ognuno con una funzionalità univoca. Questa sezione contiene informazioni di riferimento per i registri di input e output implementati pixel shader versione 2 \_ x.
+I pixel shader dipendono dai registri per ottenere i dati dei vertici, per l'output dei dati pixel, per contenere risultati temporanei durante i calcoli e per identificare le fasi di campionamento delle trame. Esistono diversi tipi di registri, ognuno con una funzionalità univoca. Questa sezione contiene informazioni di riferimento per i registri di input e output implementati da pixel shader versione 2 \_ x.
 
 ## <a name="input-register-types"></a>Tipi di registro di input
 
 
 
-| Registrazione | Nome                                                                                          | Conteggio      | L/S        | \# Leggere le porte | \# Reads/inst | Dimensione | RelAddr | Valori predefiniti                  | Richiede la DCL |
+| Registrazione | Nome                                                                                          | Conteggio      | L/S        | \# Leggere le porte | \# Reads/inst | Dimensione | RelAddr | Valori predefiniti                  | Richiede L'elenco di controllo di accesso |
 |----------|-----------------------------------------------------------------------------------------------|------------|------------|---------------|---------------|-----------|---------|---------------------------|--------------|
 | v\#      | [Registro colori di input](dx9-graphics-reference-asm-ps-registers-input-color.md)               | 2          | R          | 1             | Nessuna limitazione     | 4         | N       | Partial(0001). Vedere la nota 4 | S            |
-| R\#      | [Registro temporaneo](dx9-graphics-reference-asm-ps-registers-temporary.md)                   | Vedere la nota 1 | L/S        | 3             | Nessuna limitazione     | 4         | N       | Nessuno                      | N            |
+| R\#      | [Registrazione temporanea](dx9-graphics-reference-asm-ps-registers-temporary.md)                   | Vedere la nota 1 | L/S        | 3             | Nessuna limitazione     | 4         | N       | Nessuno                      | N            |
 | c\#      | [Registro float costante](dx9-graphics-reference-asm-ps-registers-constant-float.md)         | 32         | R          | 1             | 2             | 4         | N       | 0000                      | N            |
-| Ho\#      | [Registro Di tipo Integer costante](dx9-graphics-reference-asm-ps-registers-constant-integer.md)     | 16         | Vedere la nota 2 | 1             | 1             | 4         | N       | 0000                      | N            |
+| i\#      | [Registro di numeri interi costanti](dx9-graphics-reference-asm-ps-registers-constant-integer.md)     | 16         | Vedere la nota 2 | 1             | 1             | 4         | N       | 0000                      | N            |
 | B\#      | [Registro booleano costante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)     | 16         | Vedere la nota 2 | 1             | 1             | 1         | N       | FALSE                     | N            |
 | p0       | [Registro predicati](dx9-graphics-reference-asm-ps-registers-predicate.md)                   | 1          | Vedere la nota 2 | 1             | 1             | 1         | N       | Nessuno                      | S            |
 | s\#      | [Campionatore (Direct3D 9 asm-ps)](dx9-graphics-reference-asm-ps-registers-sampler.md)            | 16         | Vedere la nota 3 | 1             | 1             | 4         | N       | Vedere la nota 5                | S            |

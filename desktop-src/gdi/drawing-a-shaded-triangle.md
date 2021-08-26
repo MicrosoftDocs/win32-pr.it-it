@@ -1,19 +1,19 @@
 ---
-description: Per creare un triangolo ombreggiato, definire una struttura a trivertici con tre elementi e una singola struttura del triangolo a SFUMAtura \_ .
+description: Per disegnare un triangolo ombreggiato, definire una struttura TRIVERTEX con tre elementi e una singola struttura GRADIENT \_ TRIANGLE.
 ms.assetid: 78834f92-00cb-4899-851a-1de5e3c1f4fa
 title: Disegno di un triangolo ombreggiato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3200a1ec061d7513cbac56c8c66104154005cef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1b6742f8ff6a3e2d543592e86cac87489048ca4d9748dc4e111cd4613b2f207
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062411"
 ---
 # <a name="drawing-a-shaded-triangle"></a>Disegno di un triangolo ombreggiato
 
-Per creare un triangolo ombreggiato, definire una struttura a [**TRIvertici**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) con tre elementi e una singola struttura del [**\_ triangolo a sfumatura**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle) . Nell'esempio di codice seguente viene illustrato come creare un triangolo ombreggiato utilizzando la funzione [**GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) con la \_ modalità triangolo di riempimento sfumatura \_ definita.
+Per disegnare un triangolo ombreggiato, definire una [**struttura TRIVERTEX**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex) con tre elementi e una singola [**struttura GRADIENT \_ TRIANGLE.**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle) Nell'esempio di codice seguente viene illustrato come disegnare un triangolo ombreggiato usando la [**funzione GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill) con la modalità TRIANGOLO DI RIEMPIMENTO SFUMATURA \_ \_ definita.
 
 
 ```C++
@@ -90,15 +90,15 @@ GradientFill(hdc, vertex, 3, &gTriangle, 1, GRADIENT_FILL_TRIANGLE);
 
 
 
-Nell'immagine seguente viene illustrato l'output del disegno dell'esempio di codice precedente.
+L'immagine seguente mostra l'output di disegno dell'esempio di codice precedente.
 
-![illustrazione che mostra un triangolo che si riempie da arancione al punto superiore verso il magenta sul bordo inferiore](images/gradientfilltriangle.png)
+![illustrazione che mostra un triangolo che si riempie da arancione nel punto superiore a magenta sul bordo inferiore](images/gradientfilltriangle.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Panoramica di bitmap](bitmaps.md)
+[Cenni preliminari sulle bitmap](bitmaps.md)
 </dt> <dt>
 
 [Funzioni bitmap](bitmap-functions.md)
@@ -110,13 +110,13 @@ Nell'immagine seguente viene illustrato l'output del disegno dell'esempio di cod
 [**EMRGRADIENTFILL**](/windows/win32/api/wingdi/ns-wingdi-emrgradientfill)
 </dt> <dt>
 
-[**triangolo SFUMAto \_**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle)
+[**TRIANGOLO \_ SFUMATO**](/windows/desktop/api/Wingdi/ns-wingdi-gradient_triangle)
 </dt> <dt>
 
 [**GradientFill**](/windows/desktop/api/WinGdi/nf-wingdi-gradientfill)
 </dt> <dt>
 
-[**Trivertice**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex)
+[**TRIVERTEX**](/windows/desktop/api/Wingdi/ns-wingdi-trivertex)
 </dt> </dl>
 
  

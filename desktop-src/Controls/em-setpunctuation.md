@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETPUNCTUATION (RichEdit. h)
+title: EM_SETPUNCTUATION messaggio (Richedit.h)
 description: Imposta i caratteri di punteggiatura per un controllo Rich Edit.
 ms.assetid: c0c8ad14-63e2-4be8-8fc0-6b8ef9be4522
 keywords:
-- Controlli di Windows Message EM_SETPUNCTUATION
+- EM_SETPUNCTUATION controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 710392cee7f7a1fb04fce59d6549134255499172
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9a5e0856c1ee1882695dc5e6d7dfdd6b72ea0f6c4f16ee7396bbfde2b76b49b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062901"
 ---
-# <a name="em_setpunctuation-message"></a>\_Messaggio di DEpunteggiatura em
+# <a name="em_setpunctuation-message"></a>Messaggio \_ EM SETPUNCTUATION
 
 Imposta i caratteri di punteggiatura per un controllo Rich Edit.
 
 > [!Note]  
-> Questo messaggio è supportato solo nelle versioni in lingua asiatica di Microsoft Rich Edit 1,0. Non è supportata nelle versioni successive.
+> Questo messaggio è supportato solo nelle versioni in lingua Asia di Microsoft Rich Edit 1.0. Non è supportato nelle versioni successive.
 
  
 
@@ -37,16 +37,16 @@ Imposta i caratteri di punteggiatura per un controllo Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Specifica il tipo di punteggiatura. i possibili valori sono i seguenti.
+Specifica il tipo di punteggiatura, che può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                      | Significato                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <span id="PC_LEADING"></span><span id="pc_leading"></span><dl> <dt>**COMPUTER \_ leader**</dt> </dl>       | Caratteri di punteggiatura iniziali.<br/>   |
-| <span id="PC_FOLLOWING"></span><span id="pc_following"></span><dl> <dt>**PC che \_ segue**</dt> </dl> | Caratteri di punteggiatura seguenti.<br/> |
-| <span id="PC_DELIMITER"></span><span id="pc_delimiter"></span><dl> <dt>**\_DElimitatore PC**</dt> </dl> | Delimitatore.<br/>                        |
-| <span id="PC_OVERFLOW_"></span><span id="pc_overflow_"></span><dl> <dt>**Computer \_ OVERFLOW**</dt> </dl> | Non supportata.<br/>                    |
+| <span id="PC_LEADING"></span><span id="pc_leading"></span><dl> <dt>**PC \_ LEADING**</dt> </dl>       | Caratteri di punteggiatura iniziali.<br/>   |
+| <span id="PC_FOLLOWING"></span><span id="pc_following"></span><dl> <dt>**PC \_ SEGUENTE**</dt> </dl> | Caratteri di punteggiatura seguenti.<br/> |
+| <span id="PC_DELIMITER"></span><span id="pc_delimiter"></span><dl> <dt>**DELIMITATORE \_ PC**</dt> </dl> | Delimitatore.<br/>                        |
+| <span id="PC_OVERFLOW_"></span><span id="pc_overflow_"></span><dl> <dt>**PC \_ OVERFLOW**</dt> </dl> | Non supportata.<br/>                    |
 
 
 
@@ -57,7 +57,7 @@ Specifica il tipo di punteggiatura. i possibili valori sono i seguenti.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punteggiatura**](/windows/desktop/api/Richedit/ns-richedit-punctuation) che contiene i caratteri di punteggiatura.
+Puntatore a [**una struttura PUNCTUATION**](/windows/desktop/api/Richedit/ns-richedit-punctuation) che contiene i caratteri di punteggiatura.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Puntatore a una struttura di [**punteggiatura**](/windows/desktop/api/Richedit/n
 
 Se l'operazione ha esito positivo, il valore restituito è un valore diverso da zero.
 
-Se l'operazione ha esito negativo, il valore restituito è zero.
+Se l'operazione non riesce, il valore restituito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Se l'operazione ha esito negativo, il valore restituito è zero.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ Se l'operazione ha esito negativo, il valore restituito è zero.
 **Riferimento**
 </dt> <dt>
 
-[**\_GETpunteggiatura em**](em-getpunctuation.md)
+[**EM \_ GETPUNCTUATION**](em-getpunctuation.md)
 </dt> <dt>
 
-[**PUNTEGGIATURA**](/windows/desktop/api/Richedit/ns-richedit-punctuation)
+[**Punteggiatura**](/windows/desktop/api/Richedit/ns-richedit-punctuation)
 </dt> </dl>
 
  

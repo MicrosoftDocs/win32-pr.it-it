@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETGROUPMETRICS (COMmctrl. h)
+title: LVM_GETGROUPMETRICS messaggio (Commctrl.h)
 description: Ottiene informazioni sulla visualizzazione dei gruppi.
 ms.assetid: 75e7da66-50c6-4834-ae66-e43b8f9b0b34
 keywords:
-- Controlli di Windows Message LVM_GETGROUPMETRICS
+- LVM_GETGROUPMETRICS di Windows di messaggi
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5af8ec50fe74ab90a0f3e44a69e2cbc7dda583e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b99996adfe7f26342dde8967c95973fdb972290367328875257f5615f0a43c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062611"
 ---
-# <a name="lvm_getgroupmetrics-message"></a>\_Messaggio GETGROUPMETRICS LVM
+# <a name="lvm_getgroupmetrics-message"></a>Messaggio LVM \_ GETGROUPMETRICS
 
 Ottiene informazioni sulla visualizzazione dei gruppi.
 
@@ -30,19 +30,19 @@ Ottiene informazioni sulla visualizzazione dei gruppi.
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Deve essere **null**.</dd> <dt>
+</dt> <dd>Deve essere **NULL.**</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntatore a una struttura <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics">**LVGROUPMETRICS**</a> che riceve la metrica recuperata.</dd> </dl>
+</dt> <dd>Puntatore a una <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics">**struttura LVGROUPMETRICS**</a> che riceve le metriche recuperate.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito non viene utilizzato.
+Il valore restituito non viene usato.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
 
  
 
@@ -52,9 +52,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

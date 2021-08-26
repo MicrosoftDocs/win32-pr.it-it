@@ -1,9 +1,9 @@
 ---
-title: " pragma (direttiva)"
-description: Direttiva per il preprocessore che fornisce funzionalità specifiche del computer o del sistema operativo mantenendo la compatibilità complessiva con i linguaggi C e C++.
+title: " Direttiva pragma"
+description: Direttiva per il preprocessore che fornisce funzionalità specifiche del computer o del sistema operativo mantenendo al tempo stesso la compatibilità complessiva con i linguaggi C e C++.
 ms.assetid: 806ddb9b-ae4b-4dd3-a2c4-39c9cb7f3820
 keywords:
-- pragma directive HLSL
+- Direttiva pragma HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f843a218e39daf616fa6c59ca27f73a5511f17b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a16101eac6f303dbba03819c8d9f460c06c2613c748ef8ce4c74ae3fe30bb0f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024611"
 ---
-# <a name="pragma-directive"></a>\#pragma (direttiva)
+# <a name="pragma-directive"></a>\#Direttiva pragma
 
-Direttiva per il preprocessore che fornisce funzionalità specifiche del computer o del sistema operativo mantenendo la compatibilità complessiva con i linguaggi C e C++.
+Direttiva per il preprocessore che fornisce funzionalità specifiche del computer o del sistema operativo mantenendo al tempo stesso la compatibilità complessiva con i linguaggi C e C++.
 
 
 
-| \#pragma *-stringa di token* |
+| \#pragma *token-string* |
 |-------------------------|
 
 
@@ -39,7 +39,7 @@ Direttiva per il preprocessore che fornisce funzionalità specifiche del compute
 
 | Elemento                                                                                    | Descrizione                                                                                                                              |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="token-string"></span><span id="TOKEN-STRING"></span>*stringa di token*<br/> | Serie di caratteri che fornisce un'istruzione e argomenti specifici del compilatore. Questo parametro è soggetto all'espansione della macro. <br/> |
+| <span id="token-string"></span><span id="TOKEN-STRING"></span>*token-string*<br/> | Serie di caratteri che fornisce istruzioni e argomenti del compilatore specifici. Questo parametro è soggetto all'espansione delle macro. <br/> |
 
 
 
@@ -49,11 +49,11 @@ Direttiva per il preprocessore che fornisce funzionalità specifiche del compute
 
 Se il compilatore trova un pragma che non riconosce, genera un avviso, ma la compilazione continua.
 
-Il compilatore HLSL riconosce i seguenti pragma:
+Il compilatore HLSL riconosce i pragma seguenti:
 
--   [def](dx-graphics-hlsl-appendix-pre-pragma-def.md)
+-   [Def](dx-graphics-hlsl-appendix-pre-pragma-def.md)
 -   [message](message-pragma-directive--directx-hlsl-.md)
--   [matrice di pacchetti \_](dx-graphics-hlsl-appendix-pre-pragma-pack-matrix.md)
+-   [matrice \_ di tipo pack](dx-graphics-hlsl-appendix-pre-pragma-pack-matrix.md)
 -   [warning](dx-graphics-hlsl-appendix-pre-pragma-warning.md)
 
 ## <a name="see-also"></a>Vedi anche

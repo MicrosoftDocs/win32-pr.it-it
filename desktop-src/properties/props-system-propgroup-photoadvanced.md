@@ -4,12 +4,12 @@ ms.assetid: ae4024d2-ffb8-46a3-a35b-08f9c9dfab8c
 title: System.PropGroup.PhotoAdvanced
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50dd122f709fc1b9337922277e45a9995a65830b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 44a27822a95a7b3004cfb7f067d3d796b01b3733ca123a9ffcb88ec5d131fd4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009931"
 ---
 # <a name="systempropgroupphotoadvanced"></a>System.PropGroup.PhotoAdvanced
 

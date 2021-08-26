@@ -1,21 +1,21 @@
 ---
 title: Esempi di codifica incrementale
-description: Nella sezione seguente viene fornito un esempio di utilizzo dell'handle di serializzazione dello stile incrementale per la codifica dei tipi.
+description: Nella sezione seguente viene fornito un esempio di come usare l'handle di serializzazione dello stile incrementale per la codifica dei tipi.
 ms.assetid: c50c0de3-aabb-4166-93dc-67b0fee66635
 keywords:
-- RPC (Remote Procedure Call), attività, uso della codifica incrementale
+- Chiamata di procedura remota RPC , attività, con codifica incrementale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16c9cb61e6b2bf55b29fb02e39f41dd7a61c8317
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09d80b7f9b8ddb2acf31626da581996a667a7d2f7a395d419ea8da4c36c60d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021412"
 ---
 # <a name="examples-of-incremental-encoding"></a>Esempi di codifica incrementale
 
-Nella sezione seguente viene fornito un esempio di utilizzo dell'handle di serializzazione dello stile incrementale per la codifica dei tipi.
+Nella sezione seguente viene fornito un esempio di come usare l'handle di serializzazione dello stile incrementale per la codifica dei tipi.
 
 ``` syntax
 /* This is an acf file. MooType is defined in the idl file */
@@ -68,9 +68,9 @@ MesHandleFree ( Handle );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

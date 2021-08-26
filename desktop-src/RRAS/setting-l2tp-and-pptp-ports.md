@@ -1,21 +1,21 @@
 ---
 title: Impostazione delle porte L2TP e PPTP del servizio RRAS locale
-description: Questo esempio Mostra come ottenere e impostare la configurazione della porta L2TP e PPTP del servizio RRAS locale. Si presuppone che il processo chiamante disponga di privilegi sufficienti per accedere al servizio RRAS locale.
+description: Questo esempio ottiene e imposta la configurazione delle porte L2TP e PPTP del servizio RRAS locale. Presuppone che il processo chiamante disponga di privilegi sufficienti per accedere al servizio RRAS locale.
 ms.assetid: 9e4aa8d4-e09e-4c84-acf0-c505a58841a4
 keywords:
 - Impostazione delle porte del servizio RRAS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7590ec249fd73934dab2e07bfb4dbef77d46aeda
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3ae05fabd171bba59286b3a68120895132b303af9c5e81e7c6a36410e98195be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073771"
 ---
 # <a name="setting-l2tp-and-pptp-ports-of-local-rras-service"></a>Impostazione delle porte L2TP e PPTP del servizio RRAS locale
 
-Questo esempio Mostra come ottenere e impostare la configurazione della porta L2TP e PPTP del servizio RRAS locale. Si presuppone che il processo chiamante disponga di privilegi sufficienti per accedere al servizio RRAS locale.
+Questo esempio ottiene e imposta la configurazione delle porte L2TP e PPTP del servizio RRAS locale. Presuppone che il processo chiamante disponga di privilegi sufficienti per accedere al servizio RRAS locale.
 
 
 ```C++
@@ -98,9 +98,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

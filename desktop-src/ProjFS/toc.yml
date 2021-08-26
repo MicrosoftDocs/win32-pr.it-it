@@ -1,14 +1,14 @@
-- name: File System proiettato di Windows
+- name: Windows File system proiettato
   href: projected-file-system.md
   items:
-    - name: Guida alla programmazione del file System proiettato
+    - name: Guida per programmatori del file system proiettato
       href: projfs-programming-guide.md
       items:
         - name: Panoramica del provider
           href: provider-overview.md
         - name: Stato della cache nella radice di virtualizzazione
           href: cache-state.md
-        - name: Abilitazione del file System proiettato di Windows
+        - name: Abilitazione Windows file system proiettato
           href: enabling-windows-projected-file-system.md
         - name: Ciclo di vita dell'istanza di virtualizzazione
           href: virtualization-instance-lifecycle.md
@@ -16,16 +16,16 @@
           href: enumerating-files-and-directories.md
         - name: Fornire dati di file
           href: providing-file-data.md
-        - name: Notifiche delle operazioni del file System
+        - name: Notifiche delle operazioni del file system
           href: file-system-operation-notifications.md
         - name: Gestione delle modifiche della visualizzazione
           href: handling-view-changes.md
-        - name: Gestione asincrona del callback
+        - name: Gestione dei callback asincroni
           href: asynchronous-callback-handling.md
-    - name: Riferimento al file System proiettato
+    - name: Informazioni di riferimento sul file system proiettato
       href: projfs-reference.md
       items:
-        - name: Funzioni di callback del file System proiettate
+        - name: Funzioni di callback del file system proiettato
           href: projfs-callback-functions.md
           items:
             - name: PRJ_CANCEL_COMMAND_CB
@@ -44,7 +44,7 @@
               href: /windows/win32/api/projectedfslib/nc-projectedfslib-prj_query_file_name_cb
             - name: PRJ_START_DIRECTORY_ENUMERATION_CB
               href: /windows/win32/api/projectedfslib/nc-projectedfslib-prj_start_directory_enumeration_cb
-        - name: Funzioni del file System proiettate
+        - name: Funzioni del file system proiettato
           href: projfs-functions.md
           items:
             - name: PrjAllocateAlignedBuffer
@@ -85,7 +85,7 @@
               href: /windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo
             - name: PrjWritePlaceholderInfo2
               href: /windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo2
-        - name: Strutture di file System proiettate
+        - name: Strutture del file system proiettate
           href: projfs-structures.md
           items:
             - name: PRJ_CALLBACK_DATA
@@ -108,7 +108,7 @@
               href: /windows/win32/api/projectedfslib/ns-projectedfslib-prj_startvirtualizing_options
             - name: PRJ_VIRTUALIZATION_INSTANCE_INFO
               href: /windows/win32/api/projectedfslib/ns-projectedfslib-prj_virtualization_instance_info
-        - name: Enumerazioni del file System proiettate
+        - name: Enumerazioni del file system proiettate
           href: projfs-enumerations.md
           items:
             - name: PRJ_CALLBACK_DATA_FLAGS

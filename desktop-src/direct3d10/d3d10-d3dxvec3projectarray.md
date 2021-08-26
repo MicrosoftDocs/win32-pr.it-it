@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXVec3ProjectArray (D3DX10Math.h): proietta una matrice (x, y, z, 0) dallo spazio dell'oggetto allo spazio dello schermo."
+description: 'Funzione D3DXVec3ProjectArray (D3DX10Math.h): proietta una matrice (x, y, z, 0) dallo spazio oggetto allo spazio dello schermo.'
 ms.assetid: 33f0f65a-c027-4a31-83a7-f5f6b2a2f72f
 title: Funzione D3DXVec3ProjectArray (D3DX10Math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 1f69eb14cf2cf5fd77092ed6881e16524d8428c5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 660d48219c3d93e9b3188926dd6f5bc2ddf9db45a9310b3bf8716cb2e960e895
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989621"
 ---
 # <a name="d3dxvec3projectarray-function-d3dx10mathh"></a>Funzione D3DXVec3ProjectArray (D3DX10Math.h)
 
-Proietta una matrice (x, y, z, 0) dallo spazio dell'oggetto nello spazio dello schermo.
+Proietta una matrice (x, y, z, 0) dallo spazio oggetto allo spazio dello schermo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ D3DXVECTOR3* D3DXVec3ProjectArray(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore [**all'oggetto D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Puntatore alla struttura D3DXVECTOR3 di origine.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra i vettori nel flusso di dati di input.
+Stride tra vettori nel flusso di dati di input.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Puntatore a [**un \_ VIEWPORT D3D10**](/windows/desktop/api/D3D10/ns-d3d10-d3d10
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta la matrice di proiezione.
+Puntatore a [**una struttura D3DXMATRIX,**](d3d10-d3dxmatrix.md) che rappresenta la matrice di proiezione.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Puntatore a una [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta 
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di visualizzazione.
+Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice di visualizzazione.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Puntatore a una struttura D3DXMATRIX che rappresenta la matrice di visualizzazio
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Puntatore a una struttura D3DXMATRIX che rappresenta la matrice globale.
+Puntatore a una struttura D3DXMATRIX, che rappresenta la matrice globale.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntatore a una struttura D3DXVECTOR3 che rappresenta la matrice proiettata dallo spazio dell'oggetto allo spazio dello schermo.
+Puntatore a una struttura D3DXVECTOR3 che rappresenta la matrice proiettata dallo spazio oggetto allo spazio dello schermo.
 
 ## <a name="remarks"></a>Commenti
 

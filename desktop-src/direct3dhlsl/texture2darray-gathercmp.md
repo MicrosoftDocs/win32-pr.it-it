@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture2DArray:: Texture2DArray GatherCmp'
-description: Campiona e confronta un Texture2DArray e restituisce tutti i componenti.
+title: Metodi GatherCmp texture2DArray::Texture2DArray
+description: Esempi e confronta un oggetto Texture2DArray e restituisce tutti i componenti.
 ms.assetid: 5b2892f0-be62-4fb2-978e-aabb8ae96e67
 keywords:
 - Metodi GatherCmp HLSL
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 760c6313df2fb50ea821495d9f57933aef5bb0cc
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 3f2f67c430cf41b4fd45719140f2e3d4818a2326a95bb03a3bb2ae1f368e96e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104981039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022971"
 ---
-# <a name="texture2darraygathercmp-methods"></a>Metodi Texture2DArray:: GatherCmp
+# <a name="texture2darraygathercmp-methods"></a>Metodi texture2DArray::GatherCmp
 
-Per quattro valori Texel di un [**Texture2DArray**](sm5-object-texture2darray.md) che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto rispetto a un valore di confronto.
+Per quattro valori texel di [**un oggetto Texture2DArray**](sm5-object-texture2darray.md) che verrebbero usati in un'operazione di filtro bi-lineare, restituisce il confronto con un valore di confronto.
 
-Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, vedere la documentazione su [gather4_c](./gather4-c--sm5---asm-.md) .
+Per altre informazioni [sull'istruzione](./gather4-c--sm5---asm-.md) DXBC sottostante, vedere la documentazione su gather4_c.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -31,8 +31,8 @@ Per ulteriori informazioni sulla descrizione dell'istruzione DXBC sottostante, v
 
 | Metodo                                                                             | Descrizione                                                                                                      |
 |:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmp (S, float, float, int)**](sm5-object-texture2darray-gathercmp.md)        | Campiona e confronta una trama e restituisce tutti e quattro i componenti.<br/>                                       |
-| [**GatherCmp (S, float, float, int, uint)**](t2d-gathercmp-s-float-float-int-uint-.md) | Campiona e confronta una trama e restituisce tutti e quattro i componenti insieme allo stato dell'operazione.<br/> |
+| [**GatherCmp(S,float,float,int)**](sm5-object-texture2darray-gathercmp.md)        | Esempi e confronta una trama e restituisce tutti e quattro i componenti.<br/>                                       |
+| [**GatherCmp(S,float,float,int,uint)**](t2d-gathercmp-s-float-float-int-uint-.md) | Esempi e confronta una trama e restituisce tutti e quattro i componenti insieme allo stato dell'operazione.<br/> |
 
 
 

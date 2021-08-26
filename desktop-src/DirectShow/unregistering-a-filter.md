@@ -4,18 +4,18 @@ ms.assetid: 5459d172-7dfe-4786-bcf2-031e441e30a2
 title: Annullamento della registrazione di un filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d161b7d1f169b84ba43ac734bf01708a37eb700a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74e26f2d524ff501fcff1db645c9ccdf1a1c9c80c4056af1af206b996f801207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049681"
 ---
 # <a name="unregistering-a-filter"></a>Annullamento della registrazione di un filtro
 
-Per annullare la registrazione di un filtro, implementare la funzione **DllUnregisterServer** . All'interno di questa funzione, chiamare la funzione DirectShow [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) con il valore **false**. Se è stato chiamato **IFilterMapper2:: RegisterFilter** al momento della registrazione del filtro, chiamare il metodo [**IFilterMapper2:: UnregisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-unregisterfilter) qui.
+Per annullare la registrazione di un filtro, **implementare la funzione DllUnregisterServer.** All'interno di questa funzione chiamare DirectShow [**funzione AMovieDllRegisterServer2**](amoviedllregisterserver2.md) con il valore **FALSE**. Se al momento della registrazione del filtro è stato chiamato **IFilterMapper2::RegisterFilter,** chiamare qui il metodo [**IFilterMapper2::UnregisterFilter.**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-unregisterfilter)
 
-Nell'esempio seguente viene illustrato come annullare la registrazione di un filtro:
+L'esempio seguente illustra come annullare la registrazione di un filtro:
 
 
 ```C++

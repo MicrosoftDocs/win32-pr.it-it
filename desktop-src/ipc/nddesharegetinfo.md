@@ -1,7 +1,7 @@
 ---
 description: Recupera le informazioni sulla condivisione DDE. Questa operazione viene in genere eseguita per la modifica.
 ms.assetid: a2e48a4d-2b72-40a3-b827-474da1db0910
-title: Funzione NDdeShareGetInfo (nddeapi. h)
+title: Funzione NDdeShareGetInfo (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 72dc9ae12b174555debfa21afac15e5bfbed993e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c622a611b3d917dcf67de2ec6b96070ec0e54e9e53b0cef04c3c9e35b859e40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014751"
 ---
-# <a name="nddesharegetinfo-function"></a>NDdeShareGetInfo (funzione)
+# <a name="nddesharegetinfo-function"></a>Funzione NDdeShareGetInfo
 
-\[Il DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ non \_ implementate.\]
+\[DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
 
 Recupera le informazioni sulla condivisione DDE. Questa operazione viene in genere eseguita per la modifica.
 
@@ -49,49 +49,49 @@ UINT NDdeShareGetInfo(
 
 <dl> <dt>
 
-*lpszServer* \[ in\]
+*lpszServer* \[ Pollici\]
 </dt> <dd>
 
-Nome del server in cui risiede l'DSDM.
+Nome del server in cui risiede DSDM.
 
 </dd> <dt>
 
-*lpszShareName* \[ in\]
+*lpszShareName* \[ Pollici\]
 </dt> <dd>
 
-Nome della condivisione le cui informazioni devono essere recuperate da DSDM. Questo parametro non può essere **null**.
+Nome della condivisione le cui informazioni devono essere recuperate dal DSDM. Questo parametro non deve essere **NULL.**
 
 </dd> <dt>
 
-*nLevel* \[ in\]
+*nLevel* \[ Pollici\]
 </dt> <dd>
 
 Livello di informazioni. Questo parametro deve essere 2.
 
 </dd> <dt>
 
-*lpBuffer* \[ out\]
+*lpBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un buffer che riceve la struttura [**NDDESHAREINFO**](nddeshareinfo-str.md) e i dati associati a cui puntano i relativi membri. Questo parametro può essere **NULL**. Se *lpBuffer* è **null**, DSDM calcola il numero di byte necessari per archiviare le informazioni di condivisione richieste e restituisce tale valore nel campo *lpnTotalAvailable* insieme all' \_ errore NDDE BUF \_ troppo \_ piccolo.
+Puntatore a un buffer che riceve la [**struttura NDDESHAREINFO**](nddeshareinfo-str.md) e i dati associati a cui puntano i relativi membri. Questo parametro può essere **NULL**. Se *lpBuffer* è **NULL,** DSDM calcola il numero di byte necessari per archiviare le informazioni sulla condivisione richieste e restituisce tale valore nel campo *lpnTotalAvailable* insieme all'errore NDDE \_ BUF \_ TOO \_ SMALL.
 
 </dd> <dt>
 
-*cBufSize* \[ in\]
+*cBufSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *lpBuffer* . Se *lpBuffer* è **null**, *cBufSize* deve essere zero.
+Dimensioni del buffer *lpBuffer,* in byte. Se *lpBuffer* è **NULL,** *cBufSize* deve essere zero.
 
 </dd> <dt>
 
-*lpnTotalAvailable* \[ out\]
+*lpnTotalAvailable* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve il numero totale di byte necessari per archiviare le informazioni di condivisione richieste. Questo parametro non può essere **null**.
+Puntatore a una variabile che riceve il numero totale di byte necessari per archiviare le informazioni di condivisione richieste. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*lpnItems* \[ in\]
+*lpnItems* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a una maschera di selezione dell'elemento per il recupero parziale delle informazioni sulla condivisione.
@@ -100,9 +100,9 @@ Puntatore a una maschera di selezione dell'elemento per il recupero parziale del
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NDDE \_ senza \_ errori.
+Se la funzione ha esito positivo, il valore restituito è NDDE \_ NO \_ ERROR.
 
-Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString**](nddegeterrorstring.md). Se il parametro *lpBuffer* è **null**, restituisce NDDE \_ BUF \_ troppo \_ piccolo.
+Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString.**](nddegeterrorstring.md) Se il *parametro lpBuffer* è **NULL,** restituisce NDDE \_ BUF \_ TOO \_ SMALL.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,8 +112,8 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore, c
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **NDdeShareGetInfoW** (Unicode) e **NDdeShareGetInfoA** (ANSI)<br/>            |
 
@@ -123,7 +123,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore, c
 
 <dl> <dt>
 
-[Panoramica di Dynamic Data Exchange di rete](network-dynamic-data-exchange.md)
+[Panoramica delle Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funzioni DDE di rete](network-dde-functions.md)

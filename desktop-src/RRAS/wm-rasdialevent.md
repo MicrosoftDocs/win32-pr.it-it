@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_RASDIALEVENT (RAS. h)
-description: Il sistema operativo invia un \_ messaggio WM RASDIALEVENT a una routine della finestra quando si verifica una modifica dell'evento di stato durante un processo di connessione RAS.
+title: WM_RASDIALEVENT messaggio (Ras.h)
+description: Il sistema operativo invia un messaggio WM RASDIALEVENT a una routine della finestra quando si verifica un evento di modifica dello stato \_ durante un processo di connessione RAS.
 ms.assetid: 4526da20-04e7-47b2-b576-8dc36c08b053
 keywords:
-- RAS del messaggio WM_RASDIALEVENT
+- WM_RASDIALEVENT messaggio RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 470fe3915c9f672c4663971159386e529ea60db4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 093591ffe07ecbe662ca85306b74c34c670e1adbe51e2605b1f21faa20696c3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024771"
 ---
-# <a name="wm_rasdialevent-message"></a>\_Messaggio RASDIALEVENT WM
+# <a name="wm_rasdialevent-message"></a>Messaggio \_ DI WM RASDIALEVENT
 
-Il sistema operativo invia un messaggio **WM \_ RASDIALEVENT** a una routine della finestra quando si verifica una modifica dell'evento di stato durante un processo di connessione RAS. Questo errore si verifica quando viene specificata una finestra per gestire le notifiche di tali eventi utilizzando il parametro *Notifier* di [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala).
+Il sistema operativo invia un **messaggio WM \_ RASDIALEVENT** a una routine finestra quando si verifica un evento di modifica dello stato durante un processo di connessione RAS. Ciò si verifica quando è stata specificata una finestra per gestire le notifiche di tali eventi usando il *parametro notifier* di [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala).
 
-I due parametri del messaggio sono equivalenti ai parametri degli stessi nomi utilizzati con le funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) .
+I due parametri del messaggio sono equivalenti ai parametri con gli stessi nomi usati con le funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1.**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1)
 
 
 ```C++
@@ -44,22 +44,22 @@ dwError = (DWORD) lParam;
 *rasconnstate* 
 </dt> <dd>
 
-Valore di *wParam*. Equivale al parametro *rasconnstate* delle funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) . Specifica un valore di enumeratore [**RASCONNSTATE**](/previous-versions/windows/desktop/legacy/aa376727(v=vs.85)) che indica lo stato in cui il processo di connessione di accesso remoto RasDial sta per essere inserito.
+Valore di *wParam*. Equivale al *parametro rasconnstate* delle funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1.**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) Specifica un [**valore dell'enumeratore RASCONNSTATE**](/previous-versions/windows/desktop/legacy/aa376727(v=vs.85)) che indica lo stato che sta per essere immesso dal processo di connessione di accesso remoto RasDial.
 
 </dd> <dt>
 
 *dwError* 
 </dt> <dd>
 
-Valore di *lParam*. Equivale al parametro *dwError* delle funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) . Un valore diverso da zero indica l'errore che si è verificato o zero se non si è verificato alcun errore.
+Valore di *lParam*. Equivale al *parametro dwError* delle funzioni di callback [**RasDialFunc**](/windows/desktop/api/Ras/nc-ras-rasdialfunc) e [**RasDialFunc1.**](/windows/desktop/api/Ras/nc-ras-rasdialfunc1) Un valore diverso da zero indica l'errore che si è verificato oppure zero se non si è verificato alcun errore.
 
-[**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) Invia questo messaggio con *dwError* impostato su zero alla voce per ogni stato della connessione. Se si verifica un errore all'interno di uno stato, il messaggio viene inviato di nuovo per lo stato, questa volta con un valore *dwError* diverso da zero.
+[**RasDial invia**](/windows/desktop/api/Ras/nf-ras-rasdiala) questo messaggio con *dwError* impostato su zero al momento dell'immissione a ogni stato di connessione. Se si verifica un errore all'interno di uno stato, il messaggio viene inviato nuovamente per lo stato, questa volta con un valore *dwError* diverso da zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire **true**.
+Se un'applicazione elabora questo messaggio, deve restituire **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,7 +69,7 @@ Se un'applicazione elabora il messaggio, deve restituire **true**.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>RAS. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ras.h</dt> </dl> |
 
 
 

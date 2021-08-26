@@ -1,19 +1,19 @@
 ---
-description: 'Indica che il tipo di output è stato impostato sul motore di acquisizione in risposta a IMFCaptureSink2:: SetOutputType.'
+description: Indica che il tipo di output è stato impostato nel motore di acquisizione in risposta a IMFCaptureSink2::SetOutputType.
 ms.assetid: A48CBC82-87C2-4AED-B7E0-B7C60FCCE4CC
-title: Attributo MF_CAPTURE_ENGINE_OUTPUT_MEDIA_TYPE_SET (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_OUTPUT_MEDIA_TYPE_SET attributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5819de6a07f3b6a339400d65ff9260c33b14c592
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 138a5893d4ccdd014354e00718a98eda9ba41616c1f1507c8749c9b36dcc0c29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104351646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013411"
 ---
-# <a name="mf_capture_engine_output_media_type_set-attribute"></a>\_ \_ \_ \_ \_ Attributo set del tipo di supporto di output del motore \_ di acquisizione MF
+# <a name="mf_capture_engine_output_media_type_set-attribute"></a>Attributo MF \_ CAPTURE ENGINE OUTPUT MEDIA TYPE \_ \_ \_ \_ \_ SET
 
-Indica che il tipo di output è stato impostato sul motore di acquisizione in risposta a [**IMFCaptureSink2:: SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype).
+Indica che il tipo di output è stato impostato nel motore di acquisizione in risposta a [**IMFCaptureSink2::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Indica che il tipo di output è stato impostato sul motore di acquisizione in ri
 
 ## <a name="remarks"></a>Commenti
 
-È possibile chiamare [**IMFMediaEvent:: GetStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstatus) per verificare se l'operazione ha avuto esito positivo o negativo.
+È possibile chiamare [**IMFMediaEvent::GetStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstatus) per determinare se l'operazione ha avuto esito positivo o meno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,10 +29,10 @@ Indica che il tipo di output è stato impostato sul motore di acquisizione in ri
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                   |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Mfcaptureengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                   |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Mfcaptureengine.idl</dt> </dl> |
 
 
 
@@ -40,7 +40,7 @@ Indica che il tipo di output è stato impostato sul motore di acquisizione in ri
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFCaptureSink2::SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype)

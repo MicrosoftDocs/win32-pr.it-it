@@ -1,8 +1,8 @@
 ---
-description: Viene descritto come creare Microsoft Active Server Pages (ASP) che visualizza informazioni sui computer remoti nei computer in cui non è installato WMI.
+description: Viene descritto come creare Microsoft Active Server Pages (ASP) che visualizzano informazioni sui computer remoti in computer in cui non è installato WMI.
 ms.assetid: add08566-6408-43e4-9d0d-4c0851540602
 ms.tgt_platform: multiple
-title: Creazione di Active Server pagine per WMI
+title: Creazione di Active Server per WMI
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,31 +10,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 52143284be54868d36b55a6dd86e0b49c82d863d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7b31a5f4874e0ae4431ac452ea604da9c154bbb78e8debb91aad7ea892fa09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030611"
 ---
-# <a name="creating-active-server-pages-for-wmi"></a>Creazione di Active Server pagine per WMI
+# <a name="creating-active-server-pages-for-wmi"></a>Creazione di Active Server per WMI
 
-Microsoft Active Server Pages (ASP) può creare pagine Web dinamiche includendo gli script lato server e lato client. Le pagine ASP possono essere molto più veloci rispetto alle pagine HTML del client perché la maggior parte del lavoro viene eseguita sul server. È inoltre possibile utilizzare le pagine ASP per visualizzare informazioni sui computer remoti in altri computer in cui non è installato Strumentazione gestione Windows (WMI).
+Microsoft Active Server Pages (ASP) può creare pagine Web dinamiche includendo script lato server e lato client. Le pagine ASP possono essere molto più veloci delle pagine HTML client perché la maggior parte delle operazioni viene eseguita sul server. È inoltre possibile utilizzare le pagine ASP per visualizzare informazioni sui computer remoti in altri computer in cui non è installato Windows Management Instrumentation (WMI).
 
-Nella procedura seguente viene descritto come utilizzare WMI con ASP.
+La procedura seguente descrive come usare WMI con ASP.
 
-**Per utilizzare WMI con ASP**
+**Per usare WMI con ASP**
 
-1.  Scrivere una pagina ASP (. asp) che utilizza WMI e posizionarla in una directory accessibile al server Web.
+1.  Scrivere una pagina ASP (.asp) che usa WMI e posizionarla in una directory accessibile al server Web.
 
-    Gli script ASP per WMI possono essere sviluppati con diversi linguaggi di scripting, incluso VBScript. È possibile costruire la parte script WMI di una pagina ASP esattamente come si costruisce qualsiasi altro script che utilizza WMI, con una restrizione importante: non è possibile utilizzare metodi WMI asincroni nelle pagine ASP. Si noti inoltre che tutte le chiamate a **GetObject** o **CreateObject** devono trovarsi nel codice sul lato server. Per ulteriori informazioni, vedere [scripting API for WMI](scripting-api-for-wmi.md).
+    Gli script ASP per WMI possono essere sviluppati con diversi linguaggi di scripting, tra cui VBScript. È possibile costruire la parte di script WMI di una pagina ASP esattamente come si costruisce qualsiasi altro script che usa WMI, con una restrizione importante: non è possibile usare metodi WMI asincroni all'interno delle pagine ASP. Si noti anche che tutte **le chiamate a GetObject** **o CreateObject** devono essere nel codice lato server. Per altre informazioni, vedere [Scripting API for WMI](scripting-api-for-wmi.md).
 
-2.  Configurare la configurazione dell'autenticazione per Internet Information Services (IIS). Per ulteriori informazioni, vedere [la pagina relativa alla configurazione di IIS 5 e versioni successive per lo scripting ASP WMI](configuring-iis-5-for-wmi-asp-scripting.md).
-3.  Disabilitare l'accesso anonimo e abilitare l'autenticazione integrata di Windows per il file ASP. È possibile configurare queste impostazioni per la pagina ASP tramite lo snap-in IIS disponibile nella cartella **strumenti di amministrazione** del pannello di **controllo**.
+2.  Configurare la configurazione dell'autenticazione Internet Information Services (IIS). Per altre informazioni, vedere [Configuring IIS 5 and Later for WMI ASP Scripting](configuring-iis-5-for-wmi-asp-scripting.md).
+3.  Disabilitare l'accesso anonimo e Windows'autenticazione integrata per il file ASP. È possibile configurare queste impostazioni per la pagina ASP usando  lo snap-in IIS disponibile nella cartella Strumenti di amministrazione **del Pannello di controllo**.
 
 ## <a name="wmi-asp-page-example"></a>Esempio di pagina ASP WMI
 
-Nell'esempio seguente viene utilizzato Strumentazione gestione Windows (WMI) in una pagina di Active Server (ASP) per visualizzare le impostazioni indirizzo IP e gateway IP predefinito per il server da cui viene eseguito lo script.
+L'esempio seguente usa Windows Management Instrumentation (WMI) all'interno di una pagina Active Server (ASP) per visualizzare l'indirizzo IP e le impostazioni predefinite del gateway IP per il server da cui viene eseguito lo script.
 
 
 ```VB

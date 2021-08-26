@@ -4,9 +4,9 @@ description: Inviare un messaggio all'utente tramite la sessione desktop virtual
 ms.assetid: 4bb9183e-c016-48f2-8e8c-0d5fb395c435
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SendMessage
-- Servizi Desktop remoto del metodo SendMessage, classe Win32_VirtualDesktopSession
-- Classe Win32_VirtualDesktopSession Servizi Desktop remoto, metodo SendMessage
+- Metodo SendMessage Servizi Desktop remoto
+- Metodo SendMessage Servizi Desktop remoto , Win32_VirtualDesktopSession classe
+- Win32_VirtualDesktopSession classe Servizi Desktop remoto, metodo SendMessage
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e3e72f5c401b8cbb0e5e5de45f594d61af6275
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a159d9c8b4e8c4b5086fff9c4fc6c67c0a6e33464eeefee77d15a620b157bd55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988151"
 ---
-# <a name="sendmessage-method-of-the-win32_virtualdesktopsession-class"></a>Metodo SendMessage della \_ classe VirtualDesktopSession Win32
+# <a name="sendmessage-method-of-the-win32_virtualdesktopsession-class"></a>Metodo SendMessage della classe \_ VirtualDesktopSession Win32
 
 Inviare un messaggio all'utente tramite la sessione desktop virtuale.
 
@@ -44,14 +44,14 @@ uint32 SendMessage(
 
 <dl> <dt>
 
-*Titolo* \[ in\]
+*Titolo* \[ Pollici\]
 </dt> <dd>
 
-Titolo del dei.
+Titolo della confusione.
 
 </dd> <dt>
 
-*Messaggio* \[ di in\]
+*Messaggio* \[ Pollici\]
 </dt> <dd>
 
 Contenuto del messaggio.
@@ -60,7 +60,7 @@ Contenuto del messaggio.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_VirtualDesktopSession Win32**](win32-virtualdesktopsession.md)
+[**Win32 \_ VirtualDesktopSession**](win32-virtualdesktopsession.md)
 </dt> </dl>
 
  

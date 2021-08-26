@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a25dd7b4e55195deaecf5228b9ad5bad9195c2c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41725119f97e0609931a3c9b7789e86d16a20507523e76a3f5642a0955998d6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001651"
 ---
 # <a name="userrating-attribute"></a>Attributo UserRating
 
-L'attributo **UserRating** è la classificazione specificata dall'utente nella libreria.
+**L'attributo UserRating** è la classificazione specificata dall'utente nella libreria.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,18 +33,18 @@ L'attributo **UserRating** è la classificazione specificata dall'utente nella l
 
 ## <a name="remarks"></a>Commenti
 
-Le classificazioni utente sono rappresentate da valori integer, come descritto nella tabella seguente. Quando si specifica un valore, usare uno dei valori della colonna valore di scrittura. Quando si recuperano i valori, è possibile utilizzare gli intervalli nella colonna valori di lettura per determinare il numero di stelle.
+Le classificazioni utente sono rappresentate da valori interi, come descritto nella tabella seguente. Quando si specifica un valore, usare uno dei valori della colonna Valore di scrittura. Quando si recuperano valori, è possibile usare gli intervalli nella colonna Valori di lettura per determinare il numero di stelle.
 
 
 
-| Classificazione  | Valore di scrittura | Lettura di valori |
+| Classificazione  | Valore di scrittura | Lettura dei valori |
 |---------|---------------|----------------|
-| Senza classificazione | 0             | 0              |
+| Unrated | 0             | 0              |
 | 1 stella  | 1             | Da 1 a 12        |
-| 2 stelle | 25            | da 13 a 37       |
-| 3 stelle | 50            | da 38 a 62       |
-| 4 stelle | 75            | da 63 a 86       |
-| 5 stelle | 99            | da 87 a 99       |
+| 2 stelle | 25            | Da 13 a 37       |
+| 3 stelle | 50            | Da 38 a 62       |
+| 4 stelle | 75            | Da 63 a 86       |
+| 5 stelle | 99            | Da 87 a 99       |
 
 
 
@@ -52,7 +52,7 @@ Le classificazioni utente sono rappresentate da valori integer, come descritto n
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 Series o versione successiva (l'elemento Photo è supportato solo in Windows Media Player 10 o versione successiva)<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva (l'elemento foto è supportato solo in Windows Media Player 10 o versioni successive)<br/> |
 
 
 
@@ -68,7 +68,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

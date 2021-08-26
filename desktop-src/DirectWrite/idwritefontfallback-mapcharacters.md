@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteFontFallback MapCharacters
-description: Determina un tipo di carattere appropriato da utilizzare per eseguire il rendering dell'intervallo iniziale del testo.
+description: Determina un tipo di carattere appropriato da usare per eseguire il rendering dell'intervallo di testo iniziale.
 ms.assetid: 9D3DBBF7-72D4-473D-A321-E64BC94493D5
 keywords:
-- Scrittura diretta metodo MapCharacters
-- Metodo MapCharacters scrittura diretta, interfaccia IDWriteFontFallback
-- IDWriteFontFallback Interface Direct Write, metodo MapCharacters
+- Metodo MapCharacters Direct Write
+- Metodo MapCharacters Direct Write, interfaccia IDWriteFontFallback
+- Interfaccia IDWriteFontFallback Direct Write, metodo MapCharacters
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 428778afc12c668d284dffb5a8a6f734c03f0705
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99f18932121d44f61d67c8124faa2d26638035bdcff473ad26c4222ceea9a85b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048791"
 ---
-# <a name="idwritefontfallbackmapcharacters-method"></a>Metodo IDWriteFontFallback:: MapCharacters
+# <a name="idwritefontfallbackmapcharacters-method"></a>Metodo IDWriteFontFallback::MapCharacters
 
-Determina un tipo di carattere appropriato da utilizzare per eseguire il rendering dell'intervallo iniziale del testo.
+Determina un tipo di carattere appropriato da usare per eseguire il rendering dell'intervallo di testo iniziale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,16 +55,16 @@ HRESULT MapCharacters(
 *source* 
 </dt> <dd>
 
-Tipo: **[**IDWriteTextAnalysisSource**](/windows/win32/api/dwrite/nn-dwrite-idwritetextanalysissource) \** _
+Tipo: **[ **IDWriteTextAnalysisSource**](/windows/win32/api/dwrite/nn-dwrite-idwritetextanalysissource)\***
 
-L'implementazione di origine del testo include il testo e le impostazioni locali.
+L'implementazione dell'origine testo contiene il testo e le impostazioni locali.
 
 </dd> <dt>
 
-_textPosition * 
+*textPosition* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
 Posizione iniziale da analizzare.
 
@@ -73,7 +73,7 @@ Posizione iniziale da analizzare.
 *textLength* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
 Lunghezza del testo da analizzare.
 
@@ -82,34 +82,34 @@ Lunghezza del testo da analizzare.
 *baseFontCollection* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **[**IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection) \** _
+Tipo: **[ **IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection)\***
 
-Raccolta dei tipi di carattere predefinita da utilizzare.
+Raccolta di caratteri predefinita da usare.
 
 </dd> <dt>
 
-_baseFamilyName * \[ in, facoltativo\]
+*baseFamilyName* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const \_ WCHAR \* t* _
+Tipo: **const wchar \_ t \***
 
 Nome della famiglia del tipo di carattere di base. Se si passa null, non verrà eseguita alcuna corrispondenza per la famiglia.
 
 </dd> <dt>
 
-_baseWeight * 
+*baseWeight* 
 </dt> <dd>
 
-Tipo: **[ **\_ \_ Spessore carattere DWrite**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_weight)**
+Tipo: **[ **SPESSORE DEL \_ CARATTERE \_ DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_weight)**
 
-Spessore desiderato.
+Peso desiderato.
 
 </dd> <dt>
 
 *baseStyle* 
 </dt> <dd>
 
-Tipo: stile del tipo di **[ **\_ carattere \_ DWrite**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_style)**
+Tipo: **[ **STILE \_ \_ CARATTERE DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_style)**
 
 Stile desiderato.
 
@@ -118,44 +118,44 @@ Stile desiderato.
 *baseStretch* 
 </dt> <dd>
 
-Tipo: estensione del tipo di **[ **\_ carattere \_ DWrite**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_stretch)**
+Tipo: **[ **DWRITE \_ FONT \_ STRETCH**](/windows/win32/api/dwrite/ne-dwrite-dwrite_font_stretch)**
 
 Estensione desiderata.
 
 </dd> <dt>
 
-*mappedLength* \[ out\]
+*mappedLength* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **UInt32 \** _
+Tipo: **UINT32 \***
 
-Lunghezza del testo mappato al tipo di carattere mappato. Sarà sempre minore o uguale alla lunghezza del testo e maggiore di zero (se la lunghezza del testo è diversa da zero), in modo che il chiamante anticipi almeno un carattere.
+Lunghezza del testo mappato al tipo di carattere mappato. Sarà sempre minore o uguale alla lunghezza del testo e maggiore di zero (se la lunghezza del testo è diversa da zero), quindi il chiamante avanza almeno un carattere.
 
 </dd> <dt>
 
-_mappedFont * \[ out\]
+*mappedFont* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFont**](/windows/win32/api/dwrite/nn-dwrite-idwritefont)\*\***
 
-Il tipo di carattere da utilizzare per eseguire il rendering dei primi caratteri *mappedLength* del testo. Se restituisce NULL, significa che nessun carattere può eseguire il rendering del testo e *mappedLength* è il numero di caratteri da ignorare (sottoposto a rendering con un glifo mancante).
+Tipo di carattere che deve essere usato per eseguire il rendering dei primi *caratteri mappedLength* del testo. Se restituisce NULL, significa che nessun tipo di carattere può eseguire il rendering del testo e *mappedLength* è il numero di caratteri da ignorare (di cui viene eseguito il rendering con un glifo mancante).
 
 </dd> <dt>
 
-*Ridimensiona* \[ out\]
+*scalabilità* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **float \** _
+Tipo: **\* FLOAT**
 
-Fattore di scala per moltiplicare le dimensioni em del tipo di carattere restituito da.
+Fattore di scala per moltiplicare le dimensioni em del tipo di carattere restituito.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -163,10 +163,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                 |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/> |
-| Libreria<br/>                  | <dl> <dt>DWrite. lib</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                 |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/> |
+| Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

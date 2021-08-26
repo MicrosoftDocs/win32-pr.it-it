@@ -1,7 +1,7 @@
 ---
-description: Il metodo PrintXML converte i dati della proprietà in una stringa XML.
+description: Il metodo PrintXML converte i dati delle proprietà in una stringa XML.
 ms.assetid: 24638489-b5ed-4bdd-b40e-6d61c0db1533
-title: Metodo IPropertySetter::P rintXML (qedit. h)
+title: Metodo IPropertySetter::P rintXML (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f31d36e8642cb669f5e365d6ffe25b538268bd1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5070a6906d7f30ab12171f551270f82b9851fa8c3990fade47aca6d2927509be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051511"
 ---
-# <a name="ipropertysetterprintxml-method"></a>IPropertySetter::P metodo rintXML
+# <a name="ipropertysetterprintxml-method"></a>Metodo IPropertySetter::P rintXML
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -48,28 +48,28 @@ HRESULT PrintXML(
 
 <dl> <dt>
 
-*pszXML* \[ out\]
+*pszXML* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un buffer che riceve la stringa XML.
 
 </dd> <dt>
 
-*cbXML* \[ in\]
+*cbXML* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni del buffer a cui punta *pszXML* in byte.
+Dimensioni del buffer a cui punta *pszXML,* in byte.
 
 </dd> <dt>
 
-*pcbPrinted* \[ out\]
+*pcbPrinted* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve la lunghezza della stringa XML. Può essere **null**.
+Puntatore a una variabile che riceve la lunghezza della stringa XML. Può essere **NULL.**
 
 </dd> <dt>
 
-*rientro* \[ in\]
+*rientro* \[ Pollici\]
 </dt> <dd>
 
 Numero di livelli di rientro per il tag più esterno.
@@ -78,17 +78,17 @@ Numero di livelli di rientro per il tag più esterno.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo. In caso contrario, restituisce un valore **HRESULT** che indica la cause dell'errore. Se la stringa XML è più lunga del buffer, il metodo restituisce E \_ OutOfMemory.
+Restituisce S \_ OK in caso di esito positivo. In caso contrario, restituisce **un valore HRESULT** che indica la causa dell'errore. Se la stringa XML è più lunga del buffer, il metodo restituisce E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -98,8 +98,8 @@ Restituisce \_ OK se ha esito positivo. In caso contrario, restituisce un valore
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

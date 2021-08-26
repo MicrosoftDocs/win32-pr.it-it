@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 64f02529ba10d98092eb30a1bcc350d5c72049fc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 494ec12a0bb9c5c312f34e9cc53e82bfcbe155f90c38b98b2ba807e9c87b6945
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037151"
 ---
 # <a name="istatsstart-method"></a>Metodo IStats::Start
 
@@ -50,8 +50,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl>  | L'acquisizione è stata sospesa e deve essere arrestata prima di poter essere riavviata. Chiamare il [metodo IStats::Stop](istats-stop.md) per arrestare l'acquisizione.<br/> |
 | <dl> <dt>**ACQUISIZIONE DI \_ NMERR**</dt> </dl>        | L'acquisizione è già stata avviata.<br/>                                                                                                            |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | NPP non è connesso alla rete. Chiamare il [metodo IStats::Connect](istats-connect.md) per connettere NPP alla rete.<br/>           |
-| <dl> <dt>**NMERR \_ NON \_ STATS \_ ONLY**</dt> </dl> | NPP è connesso alla rete, ma non con il [metodo IStats::Connect.](istats-connect.md)<br/>                                          |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>   | Il NPP non è connesso alla rete. Chiamare il [metodo IStats::Connessione](istats-connect.md) per connettere il NPP alla rete.<br/>           |
+| <dl> <dt>**NMERR \_ NON \_ SOLO \_ STATISTICHE**</dt> </dl> | Il NPP è connesso alla rete, ma non con il [metodo IStats::Connessione.](istats-connect.md)<br/>                                          |
 
 
 
@@ -62,7 +62,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 Quando si riavvia l'acquisizione usando i metodi IStats::Start e [IStats::Stop,](istats-stop.md) è necessario chiamare il metodo [IStats::Configure](istats-configure.md) per riconfigurare la connessione ogni volta che si chiama IStats::Start per riavviare Data Capture.
 
 > [!Note]  
-> È anche possibile avviare e arrestare l'acquisizione usando i metodi [IStats::P ause](istats-pause.md) e [IStats::Resume.](istats-resume.md) Quando si usano questi metodi, i dati acquisiti vengono archiviati nello stesso file di acquisizione.
+> È anche possibile avviare e arrestare l'acquisizione usando i metodi [IStats::P ause](istats-pause.md) [e IStats::Resume.](istats-resume.md) Quando si usano questi metodi, i dati acquisiti vengono archiviati nello stesso file di acquisizione.
 
  
 
@@ -89,7 +89,7 @@ Quando si riavvia l'acquisizione usando i metodi IStats::Start e [IStats::Stop,]
 [IStats::Configure](istats-configure.md)
 </dt> <dt>
 
-[IStats::Connect](istats-connect.md)
+[IStats::Connessione](istats-connect.md)
 </dt> <dt>
 
 [IStats::P ause](istats-pause.md)

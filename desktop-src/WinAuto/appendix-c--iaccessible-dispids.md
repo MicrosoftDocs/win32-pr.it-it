@@ -1,19 +1,19 @@
 ---
-title: DISPID di appendice C IAccessible
+title: Appendice C DISPID IAccessible
 description: Un DISPID consente all'implementazione di IDispatch di cercare i vari metodi e proprietà di un'interfaccia duale.
 ms.assetid: 3d19b37a-1ce4-4f34-96b3-ff39b320e8db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d510fac39209cdb268a7676b49bbb6424cae1b09
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f73b1e280a6735f4d7d18f519e60102c04103d9500a588ef0613fd123557ed7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998881"
 ---
-# <a name="appendix-c-iaccessible-dispids"></a>Appendice C: DISPID di IAccessible
+# <a name="appendix-c-iaccessible-dispids"></a>Appendice C: DISPID IAccessible
 
-Un DISPID consente all'implementazione di [**IDispatch**](idispatch-interface.md) di cercare i vari metodi e proprietà di un'interfaccia duale.
+Un DISPID consente all'implementazione [**di IDispatch**](idispatch-interface.md) di cercare i vari metodi e proprietà di un'interfaccia duale.
 
 
 ```C++
@@ -45,9 +45,9 @@ Un DISPID consente all'implementazione di [**IDispatch**](idispatch-interface.md
 
 
 
- 
+ 
 
- 
+ 
 
 
 

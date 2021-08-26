@@ -4,20 +4,20 @@ description: Per iniziare a inviare dati a un server, un client chiama una delle
 ms.assetid: 6abaa851-41bf-4a03-8d12-cd595d74c8c9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d60c2436129b59619f5a9954c70823631d72ae3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fbf133fce019328b9fa7d6b2a03e47d516de5ca74310d611ecea1686c0b9a3a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020521"
 ---
 # <a name="implementing-input-pipes-on-the-server"></a>Implementazione di pipe di input nel server
 
 Per iniziare a inviare dati a un server, un client chiama una delle procedure remote del server. Questa procedura deve chiamare ripetutamente la procedura pull nello stub del server. Il compilatore MIDL usa il file IDL dell'applicazione per generare automaticamente la procedura pull del server.
 
-Ogni volta che il programma server richiama la procedura pull nello stub, la procedura pull riceve i blocchi di dati dal client. Esegue l'unmarshalling dei dati nel buffer del server. La procedura remota del server può quindi elaborare questi dati in qualsiasi modo necessario. Il ciclo continua fino a quando il server non riceve un buffer di lunghezza zero.
+Ogni volta che il programma server richiama la procedura pull nello stub, la procedura pull riceve blocchi di dati dal client. Annulla ilmarshaling dei dati nel buffer del server. La procedura remota del server può quindi elaborare questi dati in qualsiasi modo necessario. Il ciclo continua fino a quando il server non riceve un buffer di lunghezza zero.
 
-Nell'esempio seguente viene utilizzato il programma Pipedemo contenuto negli esempi forniti con Platform Software Development Kit (SDK). Viene illustrata una procedura server remota che utilizza una pipe per eseguire il pull dei dati dal client al server.
+L'esempio seguente deriva dal programma Pipedemo contenuto negli esempi forniti con Platform Software Development Kit (SDK). Viene illustrata una procedura del server remoto che usa una pipe per eseguire il pull dei dati dal client al server.
 
 ``` syntax
 //file: server.c (fragment)
@@ -41,9 +41,9 @@ void InPipe(LONG_PIPE     long_pipe )
 } //end InPipe
 ```
 
- 
+ 
 
- 
+ 
 
 
 
