@@ -1,19 +1,19 @@
 ---
-description: Inviato quando il relatore dell'allocatore VMR-7 ha chiamato il metodo di capovolgimento DirectDraw sulla superficie visualizzata. In questo modo, VMR mantiene la tabella DirectXVA delle superfici sincronizzate con la catena di capovolgimento di DirectDraw.
+description: Inviato quando l'allocatore presenter di VMR-7 ha chiamato il metodo Flip DirectDraw sulla superficie visualizzata. Ciò consente al VMR di mantenere la tabella directXVA delle superfici sincronizzata con la catena di capovolgimento di DirectDraw.
 ms.assetid: e298857b-0579-48b4-add0-72320bc52d63
-title: EC_VMR_SURFACE_FLIPPED (dshow. h)
+title: EC_VMR_SURFACE_FLIPPED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1feafaa58f0cacdafde04591d494dbb9a9eb258e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02c352af01ee31728b41aa276d14ca64b7c3fa6770bb4c9328a8c4ee5e91bb07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043351"
 ---
-# <a name="ec_vmr_surface_flipped"></a>\_superficie VMR \_ EC \_ capovolta
+# <a name="ec_vmr_surface_flipped"></a>SUPERFICIE \_ VMR \_ EC \_ CAPOVOLTA
 
-Inviato quando il relatore dell'allocatore VMR-7 ha chiamato il metodo di capovolgimento DirectDraw sulla superficie visualizzata. In questo modo, VMR mantiene la tabella DirectXVA delle superfici sincronizzate con la catena di capovolgimento di DirectDraw.
+Inviato quando l'allocatore presenter di VMR-7 ha chiamato il metodo Flip DirectDraw sulla superficie visualizzata. Ciò consente al VMR di mantenere la tabella directXVA delle superfici sincronizzata con la catena di capovolgimento di DirectDraw.
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,7 +22,7 @@ Inviato quando il relatore dell'allocatore VMR-7 ha chiamato il metodo di capovo
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**HRESULT**) Codice di stato restituito dal metodo di capovolgimento DirectDraw.
+(**HRESULT**) Codice di stato restituito dal metodo DirectDraw Flip.
 
 </dd> <dt>
 
@@ -35,7 +35,7 @@ Non usato.
 
 ## <a name="remarks"></a>Commenti
 
-Allocator-Presenter personalizzato per VMR-7 deve inviare questo evento. Questo evento non viene inviato alle applicazioni e non viene usato con Allocator-Presenter per VMR-9.
+Gli allocator-presenter personalizzati per VMR-7 devono inviare questo evento. Questo evento non viene inoltrato alle applicazioni e non viene usato con allocator-presenter per vmr-9.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Allocator-Presenter personalizzato per VMR-7 deve inviare questo evento. Questo 
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

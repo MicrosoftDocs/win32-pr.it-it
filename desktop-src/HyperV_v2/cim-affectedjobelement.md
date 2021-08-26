@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un processo e gli \_ oggetti CIM gestiti che potrebbero essere interessati dalla relativa esecuzione.
+description: Rappresenta un'associazione tra un processo e gli oggetti \_ CIM ManagedElement che possono essere interessati dalla relativa esecuzione.
 ms.assetid: 94c5e602-214c-4003-921c-8955c3859738
-title: Classe CIM_AffectedJobElement
+title: CIM_AffectedJobElement classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 830e798ff12dc87c88126375736f116c044de731
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85e801f4b7d32ecc66a9bdfd0b11c2e97a4331b73eaa66e54a4f7b30562e0fd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041721"
 ---
-# <a name="cim_affectedjobelement-class"></a>CIM \_ AffectedJobElement (classe)
+# <a name="cim_affectedjobelement-class"></a>Classe CIM \_ AffectedJobElement
 
-Rappresenta un'associazione tra un processo e gli oggetti **CIM \_ gestiti** che potrebbero essere interessati dalla relativa esecuzione. Potrebbe non essere possibile per il processo descrivere tutti gli elementi interessati. Lo scopo principale di questa associazione è fornire informazioni quando un processo richiede l'uso esclusivo degli elementi gestiti interessati o quando descrive gli effetti collaterali che possono verificarsi.
+Rappresenta un'associazione tra un processo e **gli oggetti \_ CIM ManagedElement** che possono essere interessati dalla relativa esecuzione. Potrebbe non essere possibile che il processo descriva tutti gli elementi interessati. Lo scopo principale di questa associazione è fornire informazioni quando un processo richiede l'uso esclusivo degli elementi gestiti interessati o quando si descrivono gli effetti collaterali che possono verificarsi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ class CIM_AffectedJobElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AffectedJobElement** presenta questi tipi di membri:
+La **classe CIM \_ AffectedJobElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AffectedJobElement** dispone di queste proprietà.
+La **classe CIM \_ AffectedJobElement** ha queste proprietà.
 
 <dl> <dt>
 
-**Interessato**
+**AffectedElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ Managed**
+Tipo di dati: **CIM \_ ManagedElement**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -72,7 +72,7 @@ Elemento gestito interessato dall'esecuzione del processo.
 **AffectingElement**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ processo CIM**
+Tipo di dati: **processo CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,20 +81,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Processo che influisce sull'elemento gestito.
+Processo che interessa l'elemento gestito.
 
 </dd> <dt>
 
-**ElementEffects**
+**ElementiEffects**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AffectedJobElement**.**OtherElementEffectsDescriptions**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AffectedJobElement**.**OtherElementEffectsDescriptions**")
 </dt> </dl>
 
 Effetto del processo sull'elemento gestito.
@@ -117,28 +117,28 @@ Effetto del processo sull'elemento gestito.
 
 <span id="Exclusive_Use"></span><span id="exclusive_use"></span><span id="EXCLUSIVE_USE"></span>
 
-**Utilizzo esclusivo** (2)
+**Uso esclusivo** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Performance_Impact"></span><span id="performance_impact"></span><span id="PERFORMANCE_IMPACT"></span>
 
-**Effetti sulle prestazioni** (3)
+**Impatto sulle** prestazioni (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Element_Integrity"></span><span id="element_integrity"></span><span id="ELEMENT_INTEGRITY"></span>
 
-**Integrità elementi** (4)
+**Integrità degli elementi** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Create"></span><span id="create"></span><span id="CREATE"></span>
 
-**Creazione** (5)
+**Crea** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -148,16 +148,16 @@ Effetto del processo sull'elemento gestito.
 **OtherElementEffectsDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AffectedJobElement**.**ElementEffects**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ AffectedJobElement**.**ElementEffects**")
 </dt> </dl>
 
-Dettagli aggiuntivi per i valori corrispondenti "1" (altro) nella matrice **ElementEffects** .
+Dettagli aggiuntivi per i valori "1" (Other) corrispondenti nella **matrice ElementEffects.**
 
 </dd> </dl>
 
@@ -169,8 +169,8 @@ Dettagli aggiuntivi per i valori corrispondenti "1" (altro) nella matrice **Elem
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

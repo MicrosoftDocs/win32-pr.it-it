@@ -1,27 +1,27 @@
 ---
-title: Gestione della pipe asincrona sul lato server
-description: La routine Manager di una funzione asincrona riceve sempre l'handle asincrono come primo parametro.
+title: Gestione della pipe asincrona lato server
+description: La routine di gestione di una funzione asincrona riceve sempre l'handle asincrono come primo parametro.
 ms.assetid: ddf9c319-6c4d-4de1-ab29-0ef9b76531ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2b0f11372090f1fd181c0d7272aa1446e5e3d22
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58b879cad9b3bde57798a3ebd3c04f7c9a76cb0d1ed055d219195db51cbed4a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017791"
 ---
-# <a name="server-side-asynchronous-pipe-handling"></a>Gestione della pipe asincrona sul lato server
+# <a name="server-side-asynchronous-pipe-handling"></a>Gestione della pipe asincrona lato server
 
-La routine Manager di una funzione asincrona riceve sempre l'handle asincrono come primo parametro. Il server utilizza questo handle per inviare la risposta e inviare i dati della pipe non appena diventano disponibili. L'handle rimane valido fino a quando non viene chiamato [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) , la chiamata viene interrotta da [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)oppure si verifica un'eccezione nella routine Manager. L'applicazione deve tenere traccia di tutti i puntatori di primo livello per \[ **i** \] parametri out e out \[  \] , per poterli aggiornare prima di completare la chiamata. L'applicazione deve inoltre tenere traccia delle pipe \[ [**in**](/windows/desktop/Midl/in) \] e \[ [**out**](/windows/desktop/Midl/out-idl) \] .
+La routine di gestione di una funzione asincrona riceve sempre l'handle asincrono come primo parametro. Il server usa questo handle per inviare la risposta e inviare i dati della pipe in uscita non appena diventano disponibili. L'handle rimane valido fino a quando non viene chiamato [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) su di esso, la chiamata viene interrotta da [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)o si verifica un'eccezione nella routine di gestione. L'applicazione deve tenere traccia di tutti i puntatori di primo livello per i parametri out e out per aggiornarli prima \[  \] \[  \] di completare la chiamata. L'applicazione deve inoltre tenere traccia delle pipe \[ [**in**](/windows/desktop/Midl/in) \] e \[ [**out.**](/windows/desktop/Midl/out-idl) \]
 
-Il server invia i dati della pipe asincrona allo stesso modo del client. Vedere [gestione della pipe asincrona sul lato client](client-side-asynchronous-pipe-handling.md).
+Il server invia dati di pipe asincroni nello stesso modo del client. Vedere [Gestione della pipe asincrona sul lato client.](client-side-asynchronous-pipe-handling.md)
 
-Il server riceve i dati della pipe asincrona nello stesso modo del client. Se il meccanismo Receive è una chiamata di procedura asincrona (APC), il server deve specificare un handle di thread (in pAsync->u. APC. hThread) e registrare l'handle asincrono con la libreria di Runtime.
+Il server riceve i dati di pipe asincroni nello stesso modo del client. Se il meccanismo di ricezione è chiamate di procedura asincrone (APC), il server deve specificare un handle di thread (in pAsync->u.APC.hThread) e registrare l'handle asincrono con la libreria di runtime.
 
 ## <a name="example"></a>Esempio
 
-In questo esempio, la routine di Server Manager, MyAsyncPipeFunc, gestisce la chiamata di procedura remota dal client.
+In questo esempio la routine di gestione server MyAsyncPipeFunc gestisce la chiamata di procedura remota dal client.
 
 
 ```C++
@@ -181,9 +181,9 @@ void MyAsyncPipeAPCRoutine (
 [MIDL asincrono](/windows/desktop/Midl/async)
 </dt> <dt>
 
-[RPC asincrona sul lato server](server-side-asynchronous-rpc.md)
+[RPC asincrona lato server](server-side-asynchronous-rpc.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

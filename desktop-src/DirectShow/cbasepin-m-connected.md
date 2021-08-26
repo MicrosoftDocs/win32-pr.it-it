@@ -1,7 +1,7 @@
 ---
-description: Puntatore al pin connesso a questo pin.
+description: Puntatore al segnaposto connesso a questo pin.
 ms.assetid: 358f17d4-fc27-4fb2-b18a-f384fbca40a0
-title: 'Membro CBasePin:: m_Connected (Amfilter. h)'
+title: Membro CBasePin::m_Connected (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eab47440f54435953978aea35c62de8ca1b085ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c58607ac16d5d67dd30a2d652da40b89ab15d446da799091434a7918ce781eb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056311"
 ---
-# <a name="cbasepinm_connected-member"></a>Membro connesso CBasePin:: m \_
+# <a name="cbasepinm_connected-member"></a>Membro connesso CBasePin::m \_
 
-Puntatore al pin connesso a questo pin.
+Puntatore al segnaposto connesso a questo pin.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ IPin *m_Connected;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

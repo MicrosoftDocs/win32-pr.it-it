@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72aaf6bb4c1ff8bf108086a8a42a618267c4bc06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 119f3ffaa5863584b55210306b38b011c758f9bab0febac47547bdfe469b5ac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056341"
 ---
 # <a name="cbaseinputpingetallocator-method"></a>Metodo CBaseInputPin.GetAllocator
 
@@ -51,7 +51,7 @@ Indirizzo di una variabile che riceve un puntatore [**all'interfaccia IMemAlloca
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK in caso di esito positivo o un codice di errore dalla funzione **CoCreateInstance.**
+Restituisce S OK in caso di esito positivo o un \_ codice di errore dalla funzione **CoCreateInstance.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -65,7 +65,7 @@ Se il metodo ha esito positivo, **l'interfaccia IMemAllocator** ha un conteggio 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

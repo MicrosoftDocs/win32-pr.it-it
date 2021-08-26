@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetHead recupera l'elemento all'inizio dell'elenco.
 ms.assetid: 1cbaa790-e26a-4d81-b96b-3a07b22dff1e
-title: Metodo CGenericList. GetHead (Wxlist. h)
+title: Metodo CGenericList.GetHead (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1805be6125d2037356cc7e9e285af21d21ecb2a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afe8de9a0f23cdee1a06bff18a5460ee2789086748c44b7668931cd80121dc34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055571"
 ---
-# <a name="cgenericlistgethead-method"></a>Metodo CGenericList. GetHead
+# <a name="cgenericlistgethead-method"></a>Metodo CGenericList.GetHead
 
 Il `GetHead` metodo recupera l'elemento all'inizio dell'elenco.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a un oggetto di tipo **Object** (il tipo di modello).
+Restituisce un puntatore a un oggetto di tipo **OBJECT** (il tipo di modello).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un puntatore a un oggetto di tipo **Object** (il tipo di modello).
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

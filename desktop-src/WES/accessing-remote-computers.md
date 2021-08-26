@@ -1,21 +1,21 @@
 ---
 title: Accesso ai computer remoti
-description: È possibile utilizzare l'API registro eventi di Windows per accedere ai dati nel computer locale o in un computer remoto.
+description: È possibile usare l Windows aPI registro eventi per accedere ai dati nel computer locale o in un computer remoto.
 ms.assetid: df789981-0e1c-4d68-9bd5-5d054f1724d4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e0063238560ddd7f1613e94b83ecc7f27900bb3
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 0a64bf1b3bded6ba1c72231e85bc78fa7f486739741fea1391c869ad79b457e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104117475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032581"
 ---
 # <a name="accessing-remote-computers"></a>Accesso ai computer remoti
 
-È possibile utilizzare l'API registro eventi di Windows per accedere ai dati nel computer locale o in un computer remoto. Per accedere ai dati in un computer remoto, è necessario chiamare la funzione [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) per creare un contesto della sessione remota. Quando si chiama questa funzione, si specifica il nome del computer remoto a cui si desidera connettersi, le credenziali utente da utilizzare per stabilire la connessione e il tipo di autenticazione da utilizzare per autenticare l'utente. Per specificare l'utente corrente, impostare i membri Domain, User e password su **null**.
+È possibile usare l Windows aPI registro eventi per accedere ai dati nel computer locale o in un computer remoto. Per accedere ai dati in un computer remoto, è necessario chiamare la [**funzione EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) per creare un contesto di sessione remota. Quando si chiama questa funzione, specificare il nome del computer remoto a cui ci si vuole connettere, le credenziali utente da utilizzare per stabilire la connessione e il tipo di autenticazione da usare per autenticare l'utente. Per specificare l'utente corrente, impostare i membri Domain, User e Password su **NULL.**
 
-Quando si chiama l'API registro eventi di Windows, si passa l'handle al contesto della sessione remota restituito dalla funzione [**EvtOpenSession**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) . (Per accedere ai dati nel computer locale, passare **null** per specificare la sessione predefinita). Per accedere ai dati nel computer remoto, il computer remoto deve abilitare l'eccezione "gestione remota registro eventi" Windows Firewall; in caso contrario, quando si tenta di usare l'handle di sessione, la chiamata non sarà più disponibile per il \_ \_ server RPC \_ . Il computer a cui ci si connette deve eseguire Windows Vista o versione successiva.
+Quando si chiama Windows aPI registro eventi, si passa l'handle al contesto della sessione remota restituito dalla [**funzione EvtOpenSession.**](/windows/desktop/api/WinEvt/nf-winevt-evtopensession) Per accedere ai dati nel computer locale, passare **NULL** per specificare la sessione predefinita. Per accedere ai dati nel computer remoto, il computer remoto deve abilitare l'eccezione "Gestione registro eventi remoti" Windows firewall; In caso contrario, quando si tenta di utilizzare l'handle di sessione, la chiamata restituirà un errore con RPC \_ S \_ SERVER \_ UNAVAILABLE. Il computer a cui ci si connette deve eseguire Windows Vista o versione successiva.
 
 Nell'esempio seguente viene illustrato come connettersi a un computer remoto.
 

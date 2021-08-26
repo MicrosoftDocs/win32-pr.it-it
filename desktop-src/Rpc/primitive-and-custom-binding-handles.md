@@ -1,36 +1,36 @@
 ---
-title: Handle di binding primitivi e personalizzati
-description: Tutti gli handle dichiarati con i \_ tipi handle t o \_ binding RPC \_ sono handle di associazione primitivi.
+title: Handle di associazione primitivi e personalizzati
+description: Tutti gli handle dichiarati con i tipi handle t o \_ RPC BINDING HANDLE sono handle di associazione \_ \_ primitivi.
 ms.assetid: 7a948aad-02fa-421d-b32c-f5dab071bd04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d496a9a54ba0ee7b9552326f7c4dc15792a72bce
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e0e1d6f7cc2ad4d11e268e0f5c83b0275fcd2677a32303820507272f550b834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120019151"
 ---
-# <a name="primitive-and-custom-binding-handles"></a>Handle di binding primitivi e personalizzati
+# <a name="primitive-and-custom-binding-handles"></a>Handle di associazione primitivi e personalizzati
 
-Tutti gli handle dichiarati con i tipi handle [ \_ t](/windows/desktop/Midl/handle-t) o [**\_ binding RPC \_**](rpc-binding-handle.md) sono handle di associazione primitivi. È possibile estendere i tipi handle [ \_ t](/windows/desktop/Midl/handle-t) o [**\_ binding \_ RPC**](rpc-binding-handle.md) per includere informazioni più o diverse rispetto a quelle contenute nel tipo di handle primitivo. Quando si esegue questa operazione, viene creato un handle di binding personalizzato.
+Tutti gli handle dichiarati con [i tipi handle \_ t](/windows/desktop/Midl/handle-t) o [**RPC BINDING \_ \_ HANDLE**](rpc-binding-handle.md) sono handle di associazione primitivi. È possibile estendere i tipi [handle \_ t](/windows/desktop/Midl/handle-t) o [**RPC BINDING \_ \_ HANDLE**](rpc-binding-handle.md) per includere più informazioni o informazioni diverse da quelle contenute nel tipo di handle primitivo. In questo caso, si crea un handle di associazione personalizzato.
 
-Per creare un handle di binding personalizzato per l'applicazione distribuita, è necessario creare un tipo di dati personalizzato e specificare l' \[ attributo [handle](/windows/desktop/Midl/handle) in \] una definizione di tipo nel file IDL. Infine, i file stub mappano gli handle di associazione personalizzati agli handle primitivi.
+Per creare un handle di associazione personalizzato per l'applicazione distribuita, è necessario creare un tipo di dati personalizzato e specificare l'attributo handle in una definizione di tipo nel \[ [](/windows/desktop/Midl/handle) \] file IDL. In definitiva, i file stub esempre il mapping di handle di associazione personalizzati agli handle primitivi.
 
-Se si crea un tipo di handle di binding personalizzato, è necessario fornire anche le routine BIND e UNBIND che lo stub client usa per eseguire il mapping di un handle personalizzato a un handle primitivo. Lo stub chiama le routine BIND e UNBIND all'inizio e alla fine di ogni chiamata di procedura remota. Le routine BIND e UNBIND devono essere conformi ai prototipi di funzione seguenti.
+Se si crea un tipo di handle di associazione personalizzato, è necessario fornire anche routine di associazione e annullamento dell'associazione utilizzate dal client stub per eseguire il mapping di un handle personalizzato a un handle primitivo. Lo stub chiama le routine bind e unbind all'inizio e alla fine di ogni chiamata di procedura remota. Le routine bind e unbind devono essere conformi ai prototipi di funzione seguenti.
 
 
 
 | Prototipo di funzione                     | Descrizione       |
 |----------------------------------------|-------------------|
-| \_binding di tipo handle t \_ (*tipo*)           | Routine di associazione   |
-| void Type \_ UNBIND (*Type*, *handle \_ t*) | Annullamento dell'associazione della routine |
+| handle \_ t type \_ bind(*type*)           | Routine di associazione   |
+| void type \_ unbind(*type*, *handle \_ t*) | Routine di annullamento dell'associazione |
 
 
 
- 
+ 
 
-Nell'esempio seguente viene illustrato come è possibile definire un handle di binding personalizzato nel file IDL:
+L'esempio seguente illustra come è possibile definire un handle di associazione personalizzato nel file IDL:
 
 ``` syntax
 /* usrdef.idl */
@@ -58,11 +58,11 @@ interface usrdef
 }
 ```
 
-Se la routine di binding rileva un errore, deve generare un'eccezione usando la funzione [**RpcRaiseException**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcraiseexception) . Lo stub client eseguirà quindi la pulizia e configurerà il filtro eccezioni per il blocco di eccezioni che circonda la chiamata RPC sul lato client. Se la routine BIND restituisce semplicemente **null**, il codice client ottiene l'errore di \_ binding RPC S \_ non valido \_ . Sebbene questo potrebbe essere accettabile in determinate situazioni, altre situazioni, ad esempio memoria insufficiente, non rispondono correttamente. La routine UNBIND deve essere progettata in modo da non avere esito negativo. La routine UNBIND non deve generare eccezioni.
+Se la routine di associazione rileva un errore, deve generare un'eccezione usando la [**funzione RpcRaiseException.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcraiseexception) Lo stub client verrà quindi pulito e l'eccezione verrà filtrata fino al blocco di eccezioni che circonda la chiamata di procedura remota sul lato client. Se la routine di associazione restituisce **semplicemente NULL,** il codice client riceve l'errore RPC \_ S INVALID \_ \_ BINDING. Anche se questo potrebbe essere accettabile in determinate situazioni, altre situazioni (ad esempio memoria insufficiente) non rispondono bene. La routine unbind deve essere progettata in modo da non avere esito negativo. La routine unbind non deve generare eccezioni.
 
-Nell'applicazione client vengono visualizzate le routine BIND e UNBIND definite dal programmatore. Nell'esempio seguente, la routine BIND chiama [**errore in RpcBindingFromStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) per convertire le informazioni di associazione di stringa in un handle di associazione. La routine UNBIND chiama [**RpcBindingFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree) per liberare l'handle di associazione.
+Le routine bind e unbind definite dal programmatore vengono visualizzate nell'applicazione client. Nell'esempio seguente la routine di associazione chiama [**RpcBindingFromStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) per convertire le informazioni di associazione di stringa in un handle di associazione. La routine unbind chiama [**RpcBindingFree**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfree) per liberare l'handle di associazione.
 
-Il nome dell'handle di binding definito dal programmatore, il \_ tipo di handle di dati \_ , viene visualizzato come parte del nome delle funzioni. Viene anche usato come tipo di parametro nei parametri della funzione.
+Il nome dell'handle di associazione definito dal programmatore, DATA HANDLE TYPE, viene visualizzato come \_ parte del nome delle \_ funzioni. Viene usato anche come tipo di parametro nei parametri della funzione.
 
 ``` syntax
 /* The client stub calls this _bind routine at the */
@@ -108,13 +108,13 @@ void __RPC_USER DATA_HANDLE_TYPE_unbind(
 }
 ```
 
-Gli handle di associazione impliciti ed espliciti possono essere di tipo primitivo o personalizzato. Ovvero, un handle può essere:
+Entrambi gli handle di associazione impliciti ed espliciti possono essere handle primitivi o personalizzati. Ciò significa che un handle può essere:
 
--   Primitive e implicite
--   Personalizzata e implicita
--   Primitive ed esplicite
--   Personalizzata ed esplicita
+-   Primitivo e implicito
+-   Personalizzato e implicito
+-   Primitivo ed esplicito
+-   Personalizzato ed esplicito
 
- 
+ 
 
- 
+ 

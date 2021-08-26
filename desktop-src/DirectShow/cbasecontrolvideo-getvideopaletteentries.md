@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetVideoPaletteEntries recupera un intervallo di voci della tavolozza per il video.
 ms.assetid: 7ac12e28-daa7-4d6c-9983-401971e6704d
-title: Metodo CBaseControlVideo. GetVideoPaletteEntries (Ctlutil. h)
+title: Metodo CBaseControlVideo.GetVideoPaletteEntries (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6fa354922e57436c0d9e3e18924dcf31afe1629e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5eb1c017353ed3e5095f5ee5d24870773c11211c14eaa44a673b4f12913c56c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057041"
 ---
-# <a name="cbasecontrolvideogetvideopaletteentries-method"></a>CBaseControlVideo. GetVideoPaletteEntries, metodo
+# <a name="cbasecontrolvideogetvideopaletteentries-method"></a>Metodo CBaseControlVideo.GetVideoPaletteEntries
 
 Il `GetVideoPaletteEntries` metodo recupera un intervallo di voci della tavolozza per il video.
 
@@ -45,7 +45,7 @@ HRESULT GetVideoPaletteEntries(
 
 <dl> <dt>
 
-*StartIndex* 
+*Startindex* 
 </dt> <dd>
 
 Voce della tavolozza iniziale in base zero.
@@ -55,7 +55,7 @@ Voce della tavolozza iniziale in base zero.
 *Voci* 
 </dt> <dd>
 
-Numero di voci richieste.
+Numero di voci necessarie.
 
 </dd> <dt>
 
@@ -75,11 +75,11 @@ Puntatore al buffer di output per i colori.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce NOERROR se ha esito positivo, VFW \_ E \_ Nessuna \_ tavolozza \_ disponibile se gli esempi video non hanno tavolozza colori, e \_ OutOfMemory se la memoria disponibile non è sufficiente, e \_ INVALIDARG se *startIndex* non è valido oppure S \_ false se non sono presenti colori nella tavolozza.
+Restituisce NOERROR in caso di esito positivo, VFW E NO PALETTE AVAILABLE se i campioni video non hanno una tavolozza dei colori, E OUTOFMEMORY se la memoria disponibile non è \_ \_ \_ \_ \_ sufficiente, E \_ INVALIDARG se *StartIndex* \_ non è valido o S FALSE se non sono presenti colori nella tavolozza.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro restituisce la tavolozza corrente del video come matrice allocata dall'utente. Per rimanere coerenti, usare i membri della struttura Win32 **PaletteEntry** per restituire i colori, anziché i membri nella struttura **RGBQUAD** (anche se il parametro è **Long**). La memoria viene allocata dal chiamante, quindi è sufficiente copiarla a turno. Determinare se il numero di voci richieste e l'offset della posizione iniziale sono entrambi validi. Se il numero di voci restituisce zero, restituire un \_ codice S false.
+Questa funzione membro restituisce la tavolozza corrente del video come matrice allocata dall'utente. Per mantenere la coerenza, usare i membri nella struttura WIN32 **PALETTEENTRY** per restituire i colori, anziché i membri nella struttura **RGBQUAD** (anche se il parametro è **long).** La memoria viene allocata dal chiamante, quindi è sufficiente copiare ogni elemento a turno. Determinare che il numero di voci richieste e l'offset della posizione iniziale sono entrambi validi. Se il numero di voci restituisce zero, restituisce un codice S \_ FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,8 +87,8 @@ Questa funzione membro restituisce la tavolozza corrente del video come matrice 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

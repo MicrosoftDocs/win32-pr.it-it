@@ -1,7 +1,7 @@
 ---
-description: Il metodo ResetPaletteVersion Reimposta la versione della tavolozza. Chiamare questo metodo se il pin del filtro proprietario si riconnette.
+description: Il metodo ResetPaletteVersion reimposta la versione della tavolozza. Chiamare questo metodo se il pin del filtro proprietario si riconnette.
 ms.assetid: c9e5588c-5501-4356-bdec-a339d33f9eb5
-title: Metodo CDrawImage. ResetPaletteVersion (Winutil. h)
+title: Metodo CDrawImage.ResetPaletteVersion (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a94cd04de428a29308ead8fa33ccfe1792e021a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d367060c86c54fb9df5bd7b0f05cea1fa3d7b7f3316dce327fca7ce9985fadfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055961"
 ---
-# <a name="cdrawimageresetpaletteversion-method"></a>CDrawImage. ResetPaletteVersion, metodo
+# <a name="cdrawimageresetpaletteversion-method"></a>Metodo CDrawImage.ResetPaletteVersion
 
 Il `ResetPaletteVersion` metodo reimposta la versione della tavolozza. Chiamare questo metodo se il pin del filtro proprietario si riconnette.
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo imposta il valore di **m \_ PaletteVersion** su una costante predefinita, una **\_ versione della tavolozza**.
+Questo metodo imposta il valore di **m \_ PaletteVersion** su una costante predefinita, **PALETTE \_ VERSION.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo imposta il valore di **m \_ PaletteVersion** su una costante prede
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
