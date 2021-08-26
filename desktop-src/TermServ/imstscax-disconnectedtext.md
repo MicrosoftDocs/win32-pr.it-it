@@ -1,30 +1,30 @@
 ---
-title: Proprietà DisconnectedText di IMsTscAx
-description: Specifica il testo visualizzato al centro del controllo prima che venga terminata una connessione.
+title: IMsTscAx DisconnectedText - proprietà
+description: Specifica il testo visualizzato centrato nel controllo prima che venga terminata una connessione.
 ms.assetid: ec7efe7a-8fb9-4c45-8e16-78951365de13
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà DisconnectedText
-- Servizi Desktop remoto proprietà DisconnectedText, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , DisconnectedText
+- Proprietà DisconnectedText Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , DisconnectedText
 topic_type:
 - apiref
 api_name:
@@ -64,16 +64,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4768e639cbfb1543e06c03f2d9e6566d0adb147e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bcee521e5956242380c48fb07020db32eafeadb88f919ec6a20bdf2a10c4a23
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125450"
 ---
-# <a name="imstscaxdisconnectedtext-property"></a>IMsTscAx::D Proprietà isconnectedText
+# <a name="imstscaxdisconnectedtext-property"></a>Proprietà IMsTscAx::D isconnectedText
 
-Specifica il testo visualizzato al centro del controllo prima che venga terminata una connessione.
+Specifica il testo visualizzato centrato nel controllo prima che venga terminata una connessione.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -98,17 +98,17 @@ Nuovo testo visualizzato.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione della proprietà **DisconnectedText** è facoltativa. Se non viene specificato, il controllo appare vuoto prima che venga stabilita una connessione.
+L'impostazione **della proprietà DisconnectedText** è facoltativa. Se non è specificato, il controllo viene visualizzato vuoto prima di stabilire una connessione.
 
-Questa proprietà può essere impostata solo se il controllo non è nello stato connesso. Il metodo restituisce **E ha \_ esito negativo** se viene chiamato dopo la connessione del controllo. È possibile verificare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la proprietà [**connessa**](imstscax-connected.md) .
+Questa proprietà può essere impostata solo se il controllo non si trova nello stato connesso. Il metodo restituisce **E \_ FAIL** se viene chiamato dopo la connessione del controllo. È possibile controllare se il controllo è connesso rispondendo agli eventi di connessione in [**IMsTscAxEvents**](imstscaxevents-interface.md) o esaminando la [**proprietà Connected.**](imstscax-connected.md)
 
-Questo metodo alloca la memoria necessaria per il buffer a cui punta il parametro *pDisconnectedText* . La chiamata di applicazioni C/C++ deve liberare la memoria con una chiamata alla funzione [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Questa operazione non è necessaria per Visual Basic e client di scripting.
+Questo metodo alloca la memoria necessaria per il buffer a cui punta *il parametro pDisconnectedText.* La chiamata alle applicazioni C/C++ deve liberare la memoria con una chiamata alla [**funzione SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Questa operazione non è necessaria per i client Visual Basic e di scripting.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

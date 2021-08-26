@@ -1,31 +1,31 @@
 ---
-title: Notifiche delle operazioni del file System
-description: Viene descritto come un provider può ricevere notifiche di file system operazioni.
+title: Notifiche delle operazioni del file system
+description: Viene descritto in che modo un provider può ricevere notifiche file system operazioni.
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/04/2018
 ms.topic: article
-ms.openlocfilehash: 9eae9bde6d56592f371dcd48c24fef96a9eecbdf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e09efcc9d1a1aea99f79b70446162df5e3ef924067ac6619a443aa15e06e9df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031241"
 ---
-# <a name="file-system-operation-notifications"></a>Notifiche delle operazioni del file System
+# <a name="file-system-operation-notifications"></a>Notifiche delle operazioni del file system
 
-Oltre ai callback richiesti per la gestione dell'enumerazione, la restituzione di metadati di file e il contenuto del file, un provider può registrare facoltativamente un callback di **[PRJ_NOTIFICATION_CB]()** nella chiamata a **[PrjStartVirtualizing]()**.  Questo callback riceve le notifiche di file system operazioni eseguite su file e directory sotto la radice di virtualizzazione dell'istanza.  Alcune notifiche sono notifiche "post-operazione", che indicano al provider che un'operazione è stata appena completata.  Le altre notifiche sono notifiche di "pre-operazione", vale a dire che il provider riceve una notifica prima che l'operazione venga eseguita.  In una notifica di pre-operazione il provider può porre il veto all'operazione restituendo un codice di errore dal callback.  In questo modo l'operazione avrà esito negativo con il codice di errore restituito.
+Oltre ai callback necessari per la gestione dell'enumerazione, la restituzione di metadati di file e il contenuto del file, un provider può facoltativamente registrare un callback **[PRJ_NOTIFICATION_CB]()** nella chiamata a **[PrjStartVirtualizing.]()**  Questo callback riceve le notifiche delle file system eseguite su file e directory sotto la radice di virtualizzazione dell'istanza.  Alcune notifiche sono di tipo "post-operazione", che indica al provider che un'operazione è stata appena completata.  Le altre notifiche sono notifiche di "pre-operazione", vale a dire che il provider viene informato prima dell'esecuzione dell'operazione.  In una notifica di pre-operazione il provider può veto all'operazione tramite la restituzione di un codice di errore dal callback.  In questo modo l'operazione ha esito negativo con il codice di errore restituito.
 
 ## <a name="how-to-specify-notifications-to-receive"></a>Come specificare le notifiche da ricevere
 
-Se il provider fornisce un'implementazione di **PRJ_NOTIFICATION_CB** quando avvia un'istanza di virtualizzazione, deve specificare anche le notifiche che desidera ricevere.  Le notifiche per le quali il provider è in grado di registrare sono definite nell'enumerazione [PRJ_NOTIFICATION](/windows/win32/api/projectedfslib/ne-projectedfslib-prj_notification) .
+Se il provider fornisce un'implementazione di **PRJ_NOTIFICATION_CB** all'avvio di un'istanza di virtualizzazione, deve anche specificare le notifiche da ricevere.  Le notifiche per cui il provider può [](/windows/win32/api/projectedfslib/ne-projectedfslib-prj_notification) eseguire la registrazione sono definite nell PRJ_NOTIFICATION enum .
 
-Quando il provider specifica le notifiche che desidera ricevere, usa una matrice di una o più strutture di [PRJ_NOTIFICATION_MAPPING](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_notification_mapping) .  Definiscono "mapping notifiche".  Un mapping delle notifiche è un'associazione tra una directory, denominata "radice di notifica" e un set di notifiche, espresso come maschera di bit, che ProjFS deve inviare per la directory e i relativi discendenti.  È inoltre possibile stabilire un mapping delle notifiche per un singolo file.  Un file o una directory specificata in un mapping delle notifiche non deve esistere già nel momento in cui il provider chiama **PrjStartVirtualizing**, il provider può specificare qualsiasi percorso e il mapping verrà applicato se viene creato.
+Quando il provider specifica le notifiche che vuole ricevere, lo fa [](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_notification_mapping) usando una matrice di una o più PRJ_NOTIFICATION_MAPPING struttura .  Questi definiscono "mapping di notifica".  Un mapping di notifica è un'associazione tra una directory, definita "radice di notifica" e un set di notifiche, espresse come maschera di bit, che ProjFS deve inviare per tale directory e i relativi discendenti.  È anche possibile stabilire un mapping di notifica per un singolo file.  Non è necessario che un file o una directory specificata in un mapping di notifica esista già nel momento in cui il provider chiama **PrjStartVirtualizing,** il provider può specificare qualsiasi percorso e il mapping verrà applicato se viene creato.
 
-Se il provider specifica più mapping di notifiche e alcuni sono discendenti di altri, i mapping devono essere specificati in profondità.  I mapping delle notifiche a livelli più profondi eseguono l'override di quelli di livello superiore per i discendenti.
+Se il provider specifica più mapping di notifica e alcuni sono discendenti di altri, i mapping devono essere specificati in profondità decrescente.  I mapping delle notifiche a livelli più approfonditi eseguono l'override di quelli di livello superiore per i relativi discendenti.
 
-Se il provider non specifica un set di mapping di notifiche, per impostazione predefinita ProjFS lo invierà PRJ_NOTIFY_FILE_OPENED, PRJ_NOTIFY_NEW_FILE_CREATED e PRJ_NOTIFY_FILE_OVERWRITTEN per tutti i file e le directory sotto la radice di virtualizzazione.
+Se il provider non specifica un set di mapping di notifica, ProjFS lo invierà per impostazione predefinita PRJ_NOTIFY_FILE_OPENED, PRJ_NOTIFY_NEW_FILE_CREATED e PRJ_NOTIFY_FILE_OVERWRITTEN per tutti i file e le directory sotto la radice di virtualizzazione.
 
-Il frammento di codice seguente illustra come registrare un set di notifiche quando si avvia un'istanza di virtualizzazione.
+Il frammento di codice seguente illustra come registrare un set di notifiche all'avvio di un'istanza di virtualizzazione.
 
 ```C++
 PRJ_CALLBACKS callbackTable;
@@ -99,32 +99,32 @@ if (FAILED(hr))
 
 ## <a name="receiving-notifications"></a>Ricezione di notifiche
 
-ProjFS Invia notifiche di file system operazioni chiamando il callback **PRJ_NOTIFICATION_CB** del provider.  Questa operazione viene eseguita per ogni operazione per cui il provider ha effettuato la registrazione.  Se, come nell'esempio precedente, il provider è stato registrato per PRJ_NOTIFY_NEW_FILE_CREATED | PRJ_NOTIFY_FILE_OPENED | PRJ_NOTIFY_PRE_DELETE | PRJ_NOTIFY_FILE_HANDLE_CLOSED_FILE_DELETED | PRJ_NOTIFY_FILE_RENAMED e un'applicazione ha creato un nuovo file nella radice della notifica, ProjFS chiamerebbe il callback **PRJ_NOTIFICATION_CB** con il nome del nuovo percorso del file e il parametro di _notifica_ impostato su PRJ_NOTIFICATION_NEW_FILE_CREATED.
+ProjFS invia le notifiche file system operazioni chiamando il **callback** PRJ_NOTIFICATION_CB provider.  Questa operazione viene eseguita per ogni operazione per cui il provider è registrato.  Se, come nell'esempio precedente, il provider è registrato per PRJ_NOTIFY_NEW_FILE_CREATED | PRJ_NOTIFY_FILE_OPENED | PRJ_NOTIFY_PRE_DELETE | PRJ_NOTIFY_FILE_HANDLE_CLOSED_FILE_DELETED | PRJ_NOTIFY_FILE_RENAMED e un'applicazione ha creato un nuovo file nella radice della notifica, ProjFS chiama il callback **PRJ_NOTIFICATION_CB** con il nome del percorso del nuovo file e il parametro di notifica impostato su PRJ_NOTIFICATION_NEW_FILE_CREATED. 
 
-ProjFS Invia le notifiche nell'elenco seguente prima che venga eseguita l'operazione di file system associata.  Se il provider restituisce un codice di errore dal callback **PRJ_NOTIFICATION_CB** , l'operazione di file System avrà esito negativo e restituirà il codice di errore specificato dal provider.
+ProjFS invia le notifiche nell'elenco seguente prima che venga eseguita file system'operazione associata.  Se il provider restituisce un codice di errore dal callback **PRJ_NOTIFICATION_CB,** l'operazione di file system avrà esito negativo e restituirà il codice di errore specificato dal provider.
 
 * PRJ_NOTIFICATION_PRE_DELETE: il file sta per essere eliminato.
 * PRJ_NOTIFICATION_PRE_RENAME: il file sta per essere rinominato.
-* PRJ_NOTIFICATION_PRE_SET_HARDLINK: sta per essere creato un collegamento reale per il file.
-* PRJ_NOTIFICATION_FILE_PRE_CONVERT_TO_FULL: un file sta per essere espanso da un segnaposto a un file completo, che ne indica il contenuto che probabilmente verrà modificato.
+* PRJ_NOTIFICATION_PRE_SET_HARDLINK: sta per essere creato un collegamento rigido per il file.
+* PRJ_NOTIFICATION_FILE_PRE_CONVERT_TO_FULL: un file sta per essere espanso da un segnaposto a un file completo, a indicare che è probabile che il relativo contenuto sia stato modificato.
 
-ProjFS Invia le notifiche nell'elenco seguente dopo il completamento dell'operazione di file system associata.
+ProjFS invia le notifiche nell'elenco seguente dopo il completamento file system'operazione associata.
 
 * PRJ_NOTIFICATION_FILE_OPENED: è stato aperto un file esistente.
-  * Anche se questa notifica viene inviata dopo l'apertura del file, il provider può restituire un codice di errore.  In risposta, ProjFS cancellerà l'apertura e restituirà l'errore al chiamante.
+  * Anche se questa notifica viene inviata dopo l'apertura del file, il provider può restituire un codice di errore.  In risposta, ProjFS annullerà l'apertura e restituirà l'errore al chiamante.
 * PRJ_NOTIFICATION_NEW_FILE_CREATED: è stato creato un nuovo file.
-* PRJ_NOTIFICATION_FILE_OVERWRITTEN: un file esistente è stato sovrascritto, ad esempio chiamando [CreateFileW](/windows/desktop/api/fileapi/nf-fileapi-createfilew) con il flag di **CREATE_ALWAYS** _dwCreationDisposition_ .
+* PRJ_NOTIFICATION_FILE_OVERWRITTEN: un file esistente è stato sovrascritto, ad esempio chiamando [CreateFileW](/windows/desktop/api/fileapi/nf-fileapi-createfilew) con **il** flag _CREATE_ALWAYS dwCreationDisposition._
 * PRJ_NOTIFICATION_FILE_RENAMED: un file è stato rinominato.
-* PRJ_NOTIFICATION_HARDLINK_CREATED: è stato creato un [collegamento](/windows/desktop/FileIO/hard-links-and-junctions#hard-links) reale per un file.
-* PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_NO_MODIFICATION: un handle di file è stato chiuso e il contenuto del file non è stato modificato, né il file è stato eliminato.
+* PRJ_NOTIFICATION_HARDLINK_CREATED: è [stato creato un collegamento](/windows/desktop/FileIO/hard-links-and-junctions#hard-links) rigido per un file.
+* PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_NO_MODIFICATION: un handle di file è stato chiuso e il contenuto del file non è stato modificato, né è stato eliminato.
 * PRJ_NOTIFICATION_FILE_HANLDE_CLOSED_FILE_MODIFIED: un handle di file è stato chiuso e il contenuto del file è stato modificato.
 * PRJ_NOTIFICATION_FILE_HANDLE_CLOSED_FILE_DELETED: un handle di file è stato chiuso e il file è stato eliminato come parte della chiusura dell'handle.
 
-Per ulteriori informazioni su ogni notifica, fare riferimento alla documentazione per **[PRJ_NOTIFICATION](/windows/desktop/api/projectedfslib/ne-projectedfslib-prj_notification)**.
+Per altri dettagli su ogni notifica, vedere la documentazione **[per PRJ_NOTIFICATION](/windows/desktop/api/projectedfslib/ne-projectedfslib-prj_notification)**.
 
-Il parametro _notificationParameters_ del callback **PRJ_NOTIFICATION_CB** specifica parametri aggiuntivi per determinate notifiche.  Se un provider riceve un PRJ_NOTIFICATION_FILE_OPENED, PRJ_NOTIFICATION_NEW_FILE_CREATED o PRJ_NOTIFICATION_FILE_OVERWRITTEN, o PRJ_NOTIFICATION_FILE_RENAMED notifica, il provider può specificare un nuovo set di notifiche da ricevere per il file. Per ulteriori informazioni, fare riferimento alla documentazione per **[PRJ_NOTIFICATION_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_notification_cb)**.
+Il **PRJ_NOTIFICATION_CB** _notificationParameters_ del callback specifica parametri aggiuntivi per determinate notifiche.  Se un provider riceve una notifica PRJ_NOTIFICATION_FILE_OPENED, PRJ_NOTIFICATION_NEW_FILE_CREATED, PRJ_NOTIFICATION_FILE_OVERWRITTEN o PRJ_NOTIFICATION_FILE_RENAMED, il provider può specificare un nuovo set di notifiche da ricevere per il file. Per altri dettagli, vedere la documentazione per **[PRJ_NOTIFICATION_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_notification_cb)**.
 
-Nell'esempio seguente vengono illustrati esempi semplici di come un provider può elaborare le notifiche registrate per nel frammento di codice riportato sopra.
+L'esempio seguente illustra semplici esempi di come un provider potrebbe elaborare le notifiche per cui è stato registrato nel frammento di codice precedente.
 
 ```C++
 #include <windows.h>

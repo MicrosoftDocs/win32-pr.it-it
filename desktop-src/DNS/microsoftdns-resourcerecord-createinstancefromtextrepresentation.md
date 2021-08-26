@@ -1,11 +1,11 @@
 ---
 title: Metodo CreateInstanceFromTextRepresentation della classe MicrosoftDNS_ResourceRecord
-description: Il metodo CreateInstanceFromTextRepresentation crea un'istanza di un \_ oggetto ResourceRecord MicrosoftDNS.
+description: Il metodo CreateInstanceFromTextRepresentation crea un'istanza di un oggetto \_ ResourceRecord MicrosoftDNS.
 ms.assetid: 19600a9a-f75d-40ad-98e5-f81465d10f79
 keywords:
 - DNS del metodo CreateInstanceFromTextRepresentation
-- DNS del metodo CreateInstanceFromTextRepresentation, classe MicrosoftDNS_ResourceRecord
-- Classe MicrosoftDNS_ResourceRecord DNS, metodo CreateInstanceFromTextRepresentation
+- Metodo CreateInstanceFromTextRepresentation DNS, MicrosoftDNS_ResourceRecord classe
+- MicrosoftDNS_ResourceRecord classe DNS, metodo CreateInstanceFromTextRepresentation
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a578d036180ecb1dc8a5e66bf853eec8845583f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a8ee7f92db1185fe2762b0b308b4fbafdbdd80e7417c7b615939c72333f15e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104021"
 ---
-# <a name="createinstancefromtextrepresentation-method-of-the-microsoftdns_resourcerecord-class"></a>Metodo CreateInstanceFromTextRepresentation della classe MicrosoftDNS \_ ResourceRecord
+# <a name="createinstancefromtextrepresentation-method-of-the-microsoftdns_resourcerecord-class"></a>Metodo CreateInstanceFromTextRepresentation della classe ResourceRecord MicrosoftDNS \_
 
-Il metodo **CreateInstanceFromTextRepresentation** crea un'istanza di un oggetto [**\_ ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md) .
+Il **metodo CreateInstanceFromTextRepresentation** crea un'istanza di un [**oggetto \_ ResourceRecord MicrosoftDNS.**](microsoftdns-resourcerecord.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,31 +45,31 @@ void CreateInstanceFromTextRepresentation(
 
 <dl> <dt>
 
-*DnsServerName* \[ in\]
+*DnsServerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del server DNS in cui deve essere creato l'RR.
+Nome del server DNS in cui deve essere creato il RR.
 
 </dd> <dt>
 
-*ContainerName* \[ in\]
+*ContainerName* \[ Pollici\]
 </dt> <dd>
 
-Nome del contenitore in cui deve essere inserito il nuovo RR.
+Nome del contenitore in cui inserire il nuovo RR.
 
 </dd> <dt>
 
-*TextRepresentation* \[ in\]
+*TextRepresentation* \[ Pollici\]
 </dt> <dd>
 
-Rappresentazione testo dell'istanza di RR da creare.
+Rappresentazione testuale dell'istanza di RR da creare.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento all'RR di cui è stata creata un'istanza.
+Riferimento al RR di cui è stata creata un'istanza.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Questo metodo non restituisce valori.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -94,10 +94,10 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> <dt>
 
-[**Metodo GetObjectByTextRepresentation della classe MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord-getobjectbytextrepresentation.md)
+[**Metodo GetObjectByTextRepresentation della classe ResourceRecord MicrosoftDNS \_**](microsoftdns-resourcerecord-getobjectbytextrepresentation.md)
 </dt> </dl>
 
  

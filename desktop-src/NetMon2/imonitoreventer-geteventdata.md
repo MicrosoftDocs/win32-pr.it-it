@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetEventData alloca spazio per le strutture NMEVENTDATA e NMCOLUMNINFO.
 ms.assetid: b24a2a30-4543-4311-87ec-66872463aed7
-title: 'Metodo IMonitorEventer:: GetEventData (Netmon. h)'
+title: Metodo IMonitorEventer::GetEventData (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: be1654c38f51fa62909e10c12900c087bf0842fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a089e57ac5f66187f97dfa6ae7533aeda620632bdbf35c7b5bf3a34d4654b0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037371"
 ---
-# <a name="imonitoreventergeteventdata-method"></a>Metodo IMonitorEventer:: GetEventData
+# <a name="imonitoreventergeteventdata-method"></a>Metodo IMonitorEventer::GetEventData
 
-Il metodo **GetEventData** alloca spazio per le strutture [NMEVENTDATA](nmeventdata.md) e [NMCOLUMNINFO](nmcolumninfo.md) .
+Il **metodo GetEventData** alloca spazio per le [strutture NMEVENTDATA](nmeventdata.md) e [NMCOLUMNINFO.](nmcolumninfo.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,29 +40,29 @@ HRESULT GetEventData(
 
 <dl> <dt>
 
-*bNumColumns* \[ in\]
+*bNumColumns* \[ Pollici\]
 </dt> <dd>
 
-Numero di strutture **NMCOLUMNINFO** necessarie.
+Numero di **strutture NMCOLUMNINFO** necessarie.
 
 </dd> <dt>
 
-*ppNMEventData* \[ out\]
+*ppNMEventData* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo della struttura **NMEVENTDATA** restituita.
+Indirizzo della **struttura NMEVENTDATA** restituita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK.
 
-Se il metodo ha esito negativo, il valore restituito è NMERR \_ \_ \_ memoria insufficiente.
+Se il metodo ha esito negativo, il valore restituito è NMERR \_ OUT \_ OF \_ MEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-I monitoraggi chiamano questo metodo per allocare memoria per le strutture di dati dell'evento e delle informazioni sulle colonne. Per liberare la memoria allocata per una struttura **NMEVENTDATA** , vedere [IMonitorEventer:: FreeEventData](imonitoreventer-freeeventdata.md).
+I monitoraggi chiamano questo metodo per allocare memoria per i dati degli eventi e le strutture di informazioni sulle colonne. Per liberare memoria allocata per **una struttura NMEVENTDATA,** vedere [IMonitorEventer::FreeEventData](imonitoreventer-freeeventdata.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ I monitoraggi chiamano questo metodo per allocare memoria per le strutture di da
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: LA-attributo in scala di grigi
-description: LA-attributo in scala di grigi
+title: Attributo VML GrayScale
+description: Attributo VML GrayScale
 ms.assetid: 0715b78c-f529-422e-9064-7b99324e60de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1c4b5da616ec5f96eeb226ecb2ba18202874f67
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 683371e2441ffa93f96dc8f727e4eed293954b1897267db8848aa39ffa497af8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099211"
 ---
-# <a name="vml-grayscale-attribute"></a>LA-attributo in scala di grigi
+# <a name="vml-grayscale-attribute"></a>Attributo VML GrayScale
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se un'immagine verrà visualizzata in modalità scala di grigi. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,27 +26,27 @@ Determina se un'immagine verrà visualizzata in modalità scala di grigi. Propri
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* scala di grigi = " *espressione* " >
+<v: *elemento* grayscale=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . scalece = "*Expression*"
+*element* .grayscale="*expression*"
 
-*espressione* = *elemento*. scala di grigi
+*expression* = *elemento*.grayscale
 
 **Osservazioni:**
 
-Se **true**, l'immagine verrà visualizzata in grigio anziché in colore. Il valore predefinito è **False**.
+Se **True**, l'immagine verrà visualizzata in scala di grigi anziché a colori. Il valore predefinito è **False**.
 
-Il valore è basato sulla raccomandazione CCIR 709, che favorisce un peso più verde e produce risultati più soddisfacenti per il colore naturale.
+Il valore è basato sulla raccomandazione CCIR 709, che favorisce un peso più verde e produce risultati più gradevoli per il colore naturale.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-L'immagine verrà visualizzata in scala di grigi anziché in colore.
+L'immagine verrà visualizzata in scala di grigi anziché a colori.
 
 
 ```HTML
@@ -61,6 +61,6 @@ L'immagine verrà visualizzata in scala di grigi anziché in colore.
 
 
 
- 
+ 
 
- 
+ 

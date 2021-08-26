@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskDefinition. Principal
-description: Per gli script, ottiene o imposta l'entità per l'attività che fornisce le credenziali di sicurezza per l'attività.
+title: TaskDefinition.Principal - proprietà
+description: Per lo scripting, ottiene o imposta l'entità per l'attività che fornisce le credenziali di sicurezza per l'attività.
 ms.assetid: ed706616-50a1-40b2-8e02-6f548e1b714e
 keywords:
-- Utilità di pianificazione proprietà principale
-- Utilità di pianificazione proprietà principale, oggetto TaskDefinition
-- Utilità di pianificazione oggetto TaskDefinition, proprietà Principal
+- Proprietà principal Utilità di pianificazione
+- Proprietà Principal Utilità di pianificazione , oggetto TaskDefinition
+- Oggetto TaskDefinition Utilità di pianificazione proprietà Principal
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a3a58074a7b56c77661b360333f5721a04ff6a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec41b6c1b2f55b73d8cbe22954f2e6097f4ad2ae1fd7dd25836b016744279cdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080311"
 ---
-# <a name="taskdefinitionprincipal-property"></a>Proprietà TaskDefinition. Principal
+# <a name="taskdefinitionprincipal-property"></a>TaskDefinition.Principal - proprietà
 
-Per gli script, ottiene o imposta l'entità per l'attività che fornisce le credenziali di sicurezza per l'attività.
+Per lo scripting, ottiene o imposta l'entità per l'attività che fornisce le credenziali di sicurezza per l'attività.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -48,9 +48,9 @@ Entità per l'attività che fornisce le credenziali di sicurezza per l'attività
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

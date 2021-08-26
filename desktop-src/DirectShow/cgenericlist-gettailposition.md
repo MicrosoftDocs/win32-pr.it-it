@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetTailPosition recupera la posizione dell'ultimo elemento dell'elenco.
 ms.assetid: 53af7ecd-5ec5-4d45-9f38-f253649f9113
-title: Metodo CGenericList. GetTailPosition (Wxlist. h)
+title: Metodo CGenericList.GetTailPosition (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66fc4e396fab558c79fb7333263442fac146e105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90b84369688c065445f7d8a127219e707a20867776d1c5949b2927dd22e24868
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076271"
 ---
-# <a name="cgenericlistgettailposition-method"></a>CGenericList. GetTailPosition, metodo
+# <a name="cgenericlistgettailposition-method"></a>Metodo CGenericList.GetTailPosition
 
 Il `GetTailPosition` metodo recupera la posizione dell'ultimo elemento dell'elenco.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore di posizione oppure **null** se l'elenco è vuoto.
+Restituisce un valore POSITION o **NULL se** l'elenco è vuoto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce un valore di posizione oppure **null** se l'elenco è vuoto.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

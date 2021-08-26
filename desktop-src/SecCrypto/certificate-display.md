@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare il certificato.
+description: Visualizza il certificato.
 ms.assetid: bd9a0abc-c8ab-4d87-81e3-aab02d992c39
-title: ICertificate2::D metodo di riproduzione
+title: Metodo ICertificate2::D isplay
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 4d6c7016eaf25f046aba8aa7d968b9e7917a8dd2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85a0f7f3fdab18421941fdbcd551688bcad135d51204550bc8bc8ae17b1941bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127141"
 ---
-# <a name="icertificate2display-method"></a>ICertificate2::D metodo di riproduzione
+# <a name="icertificate2display-method"></a>Metodo ICertificate2::D isplay
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netcore-3.1) nello spazio dei nomi [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece la [**classe X509Certificate2**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-Il metodo di **visualizzazione** Visualizza il certificato.
+Il **metodo Display** visualizza il certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Questo metodo non restituisce valori.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fine del supporto client<br/> | Windows Vista<br/>                                                               |
 | Fine del supporto server<br/> | Windows Server 2008<br/>                                                         |
-| Componente ridistribuibile<br/>       | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/>       | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

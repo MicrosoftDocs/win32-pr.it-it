@@ -1,10 +1,10 @@
 ---
 title: Metodo IMsTscAxEvents OnRemoteDesktopSizeChange
-description: Chiamato per indicare che la dimensione del controllo client sul desktop remoto è cambiata in risposta a un'operazione di controllo client.
+description: Chiamato per indicare che le dimensioni del controllo client sul desktop remoto sono state modificate in risposta a un'operazione di controllo client.
 ms.assetid: 6d27aec0-7249-4aac-8755-186815b50be7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnRemoteDesktopSizeChange
+- Metodo OnRemoteDesktopSizeChange Servizi Desktop remoto
 - Metodo OnRemoteDesktopSizeChange Servizi Desktop remoto, interfaccia IMsTscAxEvents
 - Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnRemoteDesktopSizeChange
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aee74049ea726b4e2686a028359afe01d2d7632
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 316b70c3405c13dd50c773d36c20f036c9e99aebeb3e5dedae692c2f9ad772fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125091"
 ---
-# <a name="imstscaxeventsonremotedesktopsizechange-method"></a>Metodo IMsTscAxEvents:: OnRemoteDesktopSizeChange
+# <a name="imstscaxeventsonremotedesktopsizechange-method"></a>Metodo IMsTscAxEvents::OnRemoteDesktopSizeChange
 
-Chiamato per indicare che la dimensione del controllo client sul desktop remoto è cambiata in risposta a un'operazione di controllo client.
+Chiamato per indicare che le dimensioni del controllo client sul desktop remoto sono state modificate in risposta a un'operazione di controllo client.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ void OnRemoteDesktopSizeChange(
 
 <dl> <dt>
 
-*larghezza* \[ in\]
+*width* \[ Pollici\]
 </dt> <dd>
 
 Larghezza, in pixel, del desktop remoto ridimensionato.
 
 </dd> <dt>
 
-*altezza* \[ in\]
+*height* \[ Pollici\]
 </dt> <dd>
 
 Altezza, in pixel, del desktop remoto ridimensionato.
@@ -64,9 +64,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento consente al contenitore di determinare se deve essere ridimensionato in risposta a un'operazione di controllo client, il che potrebbe comportare una dimensione del desktop visualizzabile più grande. Si noti che il controllo regola automaticamente le barre di scorrimento per le nuove dimensioni della sessione.
+Questo evento consente al contenitore di determinare se deve essere ridimensionato in risposta a un'operazione di controllo client, il che potrebbe comportare dimensioni del desktop visualizzabili maggiori. Si noti che il controllo regola automaticamente le barre di scorrimento per le nuove dimensioni della sessione.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

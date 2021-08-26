@@ -1,5 +1,5 @@
 ---
-description: 'CTransInPlaceInputPin::m_pTIPFilter membro : puntatore al filtro che ha creato questo segnaposto.'
+description: 'CTransInPlaceInputPin::m_pTIPFilter membro: puntatore al filtro che ha creato questo pin.'
 ms.assetid: a0be08c5-d120-4495-b80a-0fb90fad9238
 title: Membro CTransInPlaceInputPin::m_pTIPFilter (Transip.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9d6991ee65ae9b7dc7dc8b7e6108c0074e95b0be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3565eb55949c7b51d4064d2edcac285bc843f09e7637d4659bea1b6665bab732
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076211"
 ---
 # <a name="ctransinplaceinputpinm_ptipfilter-member"></a>Membro CTransInPlaceInputPin::m \_ pTIPFilter
 
@@ -42,7 +42,7 @@ CTransInPlaceFilter * const m_pTIPFilter;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

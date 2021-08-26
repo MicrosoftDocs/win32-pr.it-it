@@ -7,16 +7,16 @@ keywords:
 - last_is
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 159a2696db8e175f921b797176baaa8f3aa0263c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 16c30c2e7e6689ba2a61f7f5e694a5b29f39af5cadcf7fa2ca2f51e14e1f3457
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104339047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017141"
 ---
-# <a name="the-first_is-and-last_is-attributes"></a>Il \[ primo \_ è \] e l' \[ ultimo \_ è \] Attributes
+# <a name="the-first_is-and-last_is-attributes"></a>Il \[ primo è e \_ \] \[ \_ l'ultimo è \] Attributes
 
-È possibile determinare il numero di elementi trasmessi specificando il primo e l'ultimo elemento. Usare la \[ [**prima \_**](/windows/desktop/Midl/first-is) \] e l' \[ [**Ultima \_**](/windows/desktop/Midl/last-is) è \] attribuite agli attributi, come illustrato:
+È possibile determinare il numero di elementi trasmessi specificando il primo e l'ultimo elemento. Usare il \[ [**primo attributo \_ è**](/windows/desktop/Midl/first-is) \] e \[ [**\_ l'ultimo è**](/windows/desktop/Midl/last-is) , come illustrato di \] seguito:
 
 ``` syntax
 /* IDL file */
@@ -38,6 +38,6 @@ interface arraytest
 }
 ```
 
- 
+ 
 
- 
+ 

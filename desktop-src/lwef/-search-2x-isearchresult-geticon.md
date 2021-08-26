@@ -3,9 +3,9 @@ title: Metodo GetIcon ISearchResult
 description: Riservato. | Metodo GetIcon ISearchResult
 ms.assetid: 53cd18ef-c128-4739-984a-4bc78f9bcebe
 keywords:
-- Funzionalità dell'ambiente Windows legacy del Metodo GetIcon
-- Metodo GetIcon, funzionalità dell'ambiente Windows legacy, Interfaccia ISearchResult
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia ISearchResult, Metodo GetIcon
+- Metodo GetIcon Funzionalità dell'Windows legacy
+- Metodo GetIcon Legacy Windows Environment Features , interfaccia ISearchResult
+- Interfaccia ISearchResult Legacy Windows Environment Features , Metodo GetIcon
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7cc7ed96db85dd74d79348a525f259b3fa677f7a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1d3c10ef339672e12b2dd046d8ca1a19381367b5834cacdcfbe96333a2b45376
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014251"
 ---
-# <a name="isearchresultgeticon-method"></a>Metodo ISearchResult:: GetIcon
+# <a name="isearchresultgeticon-method"></a>Metodo ISearchResult::GetIcon
 
 Questo metodo non è implementato.
 

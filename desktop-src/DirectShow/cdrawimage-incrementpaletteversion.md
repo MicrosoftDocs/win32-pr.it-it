@@ -1,7 +1,7 @@
 ---
-description: Il metodo IncrementPaletteVersion incrementa la versione della tavolozza. Chiamare questo metodo se il tipo di supporto viene modificato in un nuovo formato pallettizzati.
+description: Il metodo IncrementPaletteVersion incrementa la versione della tavolozza. Chiamare questo metodo se il tipo di supporto viene modificato in un nuovo formato non formattato.
 ms.assetid: 1ce77f97-d225-45f5-a259-1dcca1272d15
-title: Metodo CDrawImage. IncrementPaletteVersion (Winutil. h)
+title: Metodo CDrawImage.IncrementPaletteVersion (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21b4220ec98c5b083913e92f5749866f629a4854
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7884c4d552920a9e5650d2a092b7fffc43a1c67bf03916eab7bb72da3a87946a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076401"
 ---
-# <a name="cdrawimageincrementpaletteversion-method"></a>CDrawImage. IncrementPaletteVersion, metodo
+# <a name="cdrawimageincrementpaletteversion-method"></a>Metodo CDrawImage.IncrementPaletteVersion
 
-Il `IncrementPaletteVersion` metodo incrementa la versione della tavolozza. Chiamare questo metodo se il tipo di supporto viene modificato in un nuovo formato pallettizzati.
+Il `IncrementPaletteVersion` metodo incrementa la versione della tavolozza. Chiamare questo metodo se il tipo di supporto viene modificato in un nuovo formato non formattato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo incrementa il valore della variabile membro **\_ PaletteVersion m** .
+Questo metodo incrementa il valore della variabile **membro m \_ PaletteVersion.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo incrementa il valore della variabile membro **\_ PaletteVersion m*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: Proprietà HorizontalScrollBarVisible di IMsTscAx
+title: Proprietà IMsTscAx HorizontalScrollBarVisible
 description: Indica se il controllo ha visualizzato una barra di scorrimento orizzontale.
 ms.assetid: d3c22c5f-321f-476e-bcdb-224eb988a7bb
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
-- Servizi Desktop remoto proprietà HorizontalScrollBarVisible, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto , interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto , interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto , interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto , interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà HorizontalScrollBarVisible
+- Proprietà HorizontalScrollBarVisible Servizi Desktop remoto , interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà HorizontalScrollBarVisible
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08fa2abb97a28af013e5791bcbd643f3f479d5c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae77499f685bb8b55e02fbf5c2eae0a1909469a3db6353a7914b1b8f0bcabe68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125401"
 ---
-# <a name="imstscaxhorizontalscrollbarvisible-property"></a>Proprietà IMsTscAx:: HorizontalScrollBarVisible
+# <a name="imstscaxhorizontalscrollbarvisible-property"></a>Proprietà IMsTscAx::HorizontalScrollBarVisible
 
 Indica se il controllo ha visualizzato una barra di scorrimento orizzontale.
 
@@ -80,17 +80,17 @@ HRESULT get_HorizontalScrollBarVisible(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questo parametro è **true** se la barra di scorrimento orizzontale è visibile e **false** in caso contrario.
+Il valore di questo parametro è **TRUE se** la barra di scorrimento orizzontale è visibile e FALSE in **caso contrario.**
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo Visualizza automaticamente una barra di scorrimento orizzontale se la larghezza del controllo è inferiore alla larghezza del desktop.
+Il controllo visualizza automaticamente una barra di scorrimento orizzontale se la larghezza del controllo è minore della larghezza del desktop.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx è definito come 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IMsTscAx IID è definito come \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

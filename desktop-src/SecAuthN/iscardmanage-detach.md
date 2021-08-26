@@ -1,7 +1,7 @@
 ---
-description: Rilascia l'allegato a una smart card o un lettore specifico allocato rispettivamente da AttachByHandle e AttachByIFD.
+description: Rilascia l'allegato a un smart card o lettore allocato rispettivamente da AttachByHandle e AttachByIFD.
 ms.assetid: 601b35a6-9094-4786-b94c-5cd1283feef5
-title: ISCardManage::D Metodo etach
+title: Metodo ISCardManage::D etach
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: bc5a48f76a643447b3e3d836d61ad7a769c56ff6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 067c8e9f3e8cee607281d5f0a80ca813e91b425e63c15d3c1d47661acbbd04d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014091"
 ---
-# <a name="iscardmanagedetach-method"></a>ISCardManage::D Metodo etach
+# <a name="iscardmanagedetach-method"></a>Metodo ISCardManage::D etach
 
-\[Il metodo **Detach** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo Detach** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **Detach** rilascia l'allegato a una [*Smart Card*](../secgloss/s-gly.md) o a un [*lettore*](../secgloss/r-gly.md) specifico allocato rispettivamente da [**AttachByHandle**](iscardmanage-attachbyhandle.md) e [**AttachByIFD**](iscardmanage-attachbyifd.md) .
+Il **metodo Detach** rilascia l'allegato a un smart card o lettore allocato rispettivamente da [**AttachByHandle**](iscardmanage-attachbyhandle.md) e [](../secgloss/s-gly.md) [**AttachByIFD.**](iscardmanage-attachbyifd.md) [](../secgloss/r-gly.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,8 +46,8 @@ Il metodo restituisce uno dei valori possibili seguenti:
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -55,13 +55,13 @@ Il metodo restituisce uno dei valori possibili seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Per connettere una smart card, chiamare [**AttachByHandle**](iscardmanage-attachbyhandle.md) o [**AttachByIFD**](iscardmanage-attachbyifd.md).
+Per collegare un smart card [**chiamare AttachByHandle**](iscardmanage-attachbyhandle.md) [**o AttachByIFD.**](iscardmanage-attachbyifd.md)
 
-Per riconnettersi con la smart card senza chiamare **Detach** e [**AttachByHandle**](iscardmanage-attachbyhandle.md), chiamare [**Reconnect**](iscardmanage-reconnect.md).
+Per riconnettersi al smart card senza chiamare **Detach** e [**AttachByHandle,**](iscardmanage-attachbyhandle.md)chiamare [**Reconnect**](iscardmanage-reconnect.md).
 
-Per un elenco di tutti i metodi definiti da questa interfaccia, vedere [**ISCardManage**](iscardmanage.md).
+Per un elenco di tutti i metodi definiti da questa interfaccia, vedere [**ISCardManage.**](iscardmanage.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

@@ -1,35 +1,35 @@
 ---
-description: Sono ora disponibili tutti gli elementi essenziali necessari per spostarsi in un punto qualsiasi dello spazio dei nomi.
+description: Sono ora presenti tutti gli elementi essenziali necessari per spostarsi in qualsiasi punto dello spazio dei nomi.
 ms.assetid: bd9f903d-bea6-494f-af81-d90457dc2647
-title: Spostamento nello spazio dei nomi
+title: Esplorazione dello spazio dei nomi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d24993369222fb32f9de6c79a0c998b1d7be9f2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2778fc21df12e9228f9335a52c04556e97563cba5f8a4cb6b82eb779944c451
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111481"
 ---
-# <a name="navigating-the-namespace"></a>Spostamento nello spazio dei nomi
+# <a name="navigating-the-namespace"></a>Esplorazione dello spazio dei nomi
 
-Sono ora disponibili tutti gli elementi essenziali necessari per spostarsi in un punto qualsiasi dello spazio dei nomi. Il modo più semplice per iniziare è fare in modo che l'applicazione chiami [**SHGetDesktopFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder) per recuperare l'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) del desktop. Quindi, per spostarsi verso il basso nello spazio dei nomi, l'applicazione può seguire questa procedura:
+Sono ora presenti tutti gli elementi essenziali necessari per spostarsi in qualsiasi punto dello spazio dei nomi. Il modo più semplice per iniziare è fare in modo che l'applicazione chiami [**SHGetDesktopFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder) per recuperare [**l'interfaccia IShellFolder del**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) desktop. Quindi, per spostarsi verso il basso nello spazio dei nomi, l'applicazione può seguire questa procedura:
 
 1.  Enumerare il contenuto della cartella.
 2.  Determinare quali oggetti sono sottocartelle e selezionarne uno.
-3.  Eseguire l'associazione alla sottocartella per recuperare l'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) .
+3.  Eseguire il binding alla sottocartella per recuperare [**l'interfaccia IShellFolder.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder)
 
 Ripetere questi passaggi con la frequenza necessaria per raggiungere la destinazione.
 
-## <a name="a-simple-example-of-namespace-navigation"></a>Esempio semplice di esplorazione dello spazio dei nomi
+## <a name="a-simple-example-of-namespace-navigation"></a>Esempio semplice di navigazione nello spazio dei nomi
 
-Il seguente frammento di codice di esempio è una semplice applicazione console che illustra una serie di procedure illustrate nelle sezioni precedenti. Il controllo degli errori è stato omesso per maggiore chiarezza. L'applicazione esegue queste attività:
+La parte di codice di esempio seguente è una semplice applicazione console che illustra una serie di procedure illustrate nelle sezioni precedenti. Il controllo degli errori è stato omesso per maggiore chiarezza. L'applicazione esegue queste attività:
 
-1.  Recupera l'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) della cartella programmi ([usando l'interfaccia IShellFolder](folder-info.md)).
-2.  Enumera il contenuto della cartella ([enumerando il contenuto di una cartella](folder-info.md)).
-3.  Determina tutti i nomi visualizzati e li stampa ([determinando i nomi visualizzati e altre proprietà](folder-info.md)).
-4.  Cerca una sottocartella ([ottenendo un puntatore all'interfaccia IShellFolder di una sottocartella](folder-info.md)).
-5.  Esegue l'associazione alla prima sottocartella individuata ([ottenendo un puntatore all'interfaccia IShellFolder di una sottocartella](folder-info.md)).
+1.  Recupera l'interfaccia [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) della cartella Programmi ([tramite l'interfaccia IShellFolder](folder-info.md)).
+2.  Enumera il contenuto della cartella ([Enumerazione del contenuto di una cartella](folder-info.md)).
+3.  Determina tutti i nomi visualizzati e li stampa ([Determinazione dei nomi visualizzati e altre proprietà](folder-info.md)).
+4.  Cerca una sottocartella ([Getting a Pointer to a Subfolder's IShellFolder Interface](folder-info.md)).
+5.  Esegue l'associazione alla prima sottocartella trovata ( Recupero di un puntatore[all'interfaccia IShellFolder di una sottocartella).](folder-info.md)
 6.  Stampa i nomi visualizzati degli oggetti nella sottocartella.
 
 

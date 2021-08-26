@@ -1,45 +1,45 @@
 ---
-title: Aggiungere e aggiornare le route con RtmAddRouteToDest
-description: La funzione RtmAddRouteToDest viene usata per aggiungere nuove route e aggiornare le route esistenti per una destinazione. Nelle procedure seguenti vengono illustrati entrambi i casi. Il codice di esempio seguente illustra come implementare la prima procedura.
+title: Aggiungere e aggiornare route tramite RtmAddRouteToDest
+description: La funzione RtmAddRouteToDest viene usata per aggiungere nuove route e aggiornare le route esistenti per una destinazione. Le procedure seguenti illustrano entrambi i casi. Il codice di esempio seguente illustra come implementare la prima procedura.
 ms.assetid: 17a04511-69f8-4e50-993c-0e558ee72184
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd3594aee054e6815094834bedbc1aae158fc4e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 64032aa5f73019e08bb82405d85ffa5ef85abd0526cf7748ec8881b97ab900e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030601"
 ---
-# <a name="add-and-update-routes-using-rtmaddroutetodest"></a>Aggiungere e aggiornare le route con RtmAddRouteToDest
+# <a name="add-and-update-routes-using-rtmaddroutetodest"></a>Aggiungere e aggiornare route tramite RtmAddRouteToDest
 
-La funzione [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) viene usata per aggiungere nuove route e aggiornare le route esistenti per una destinazione. Nelle procedure seguenti vengono illustrati entrambi i casi. Il codice di esempio seguente illustra come implementare la prima procedura.
+La funzione [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) viene usata per aggiungere nuove route e aggiornare le route esistenti per una destinazione. Le procedure seguenti illustrano entrambi i casi. Il codice di esempio seguente illustra come implementare la prima procedura.
 
-**Per aggiungere una route, il client deve eseguire la procedura seguente**
+**Per aggiungere una route, il client deve seguire questa procedura**
 
-1.  Se il client ha già memorizzato nella cache l'handle di hop successivo, andare al passaggio 4.
-2.  Creare una struttura di [**\_ \_ informazioni NEXTHOP RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) e riempirla con le informazioni appropriate.
-3.  Aggiungere l'hop successivo alla tabella di routing chiamando [**RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop). Gestione tabelle di routing restituisce un handle per l'hop successivo. Se l'hop successivo esiste già, la tabella di routing non aggiunge l'hop successivo. viene invece restituito l'handle per l'hop successivo.
-4.  Creare una struttura di [**\_ \_ informazioni sulla route RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) e riempirla con le informazioni appropriate, incluso l'handle di hop successivo restituito da Gestione tabelle di routing.
-5.  Aggiungere la route alla tabella di routing chiamando [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest). Gestione tabelle di routing confronta la nuova route con le route già presenti nella tabella di routing. Due route sono uguali se si verificano tutte le condizioni seguenti:
+1.  Se il client ha già memorizzato nella cache l'handle dell'hop successivo, andare al passaggio 4.
+2.  Creare una [**struttura RTM \_ NEXTHOP \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info) e compilarla con le informazioni appropriate.
+3.  Aggiungere l'hop successivo alla tabella di routing chiamando [**RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop). Il gestore tabelle di routing restituisce un handle all'hop successivo. Se l'hop successivo esiste già, la tabella di routing non aggiunge l'hop successivo. restituisce invece l'handle all'hop successivo.
+4.  Creare una [**struttura RTM \_ ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) e compilarla con le informazioni appropriate, incluso l'handle dell'hop successivo restituito dal gestore tabelle di routing.
+5.  Aggiungere la route alla tabella di routing chiamando [**RtmAddRouteToDest.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) Il gestore tabelle di routing confronta la nuova route con le route già presenti nella tabella di routing. Due route sono uguali se si verificano tutte le condizioni seguenti:
 
     -   La route viene aggiunta alla stessa destinazione.
-    -   La route viene aggiunta dallo stesso client come specificato dal membro **proprietario** della struttura di informazioni della [**\_ route RTM \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
-    -   La route viene annunciata dallo stesso adiacente, come specificato dal membro **adiacente** della struttura di [**\_ \_ informazioni della route RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) .
+    -   La route viene aggiunta dallo stesso client specificato dal membro **Owner** della [**struttura RTM ROUTE \_ \_ INFO.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
+    -   La route viene annunciata dallo stesso router adiacente specificato dal membro **Neighbor** della [**struttura RTM ROUTE \_ \_ INFO.**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
-    Se la route esiste, il gestore delle tabelle di routing restituisce l'handle alla route esistente. In caso contrario, il gestore tabelle di routing aggiunge la route e restituisce l'handle alla nuova route.
+    Se la route esiste, il gestore delle tabelle di routing restituisce l'handle alla route esistente. In caso contrario, il gestore delle tabelle di routing aggiunge la route e restituisce l'handle alla nuova route.
 
-    Il client può impostare il parametro *Change \_ Flags* sulla \_ route RTM \_ Change \_ New per indicare a gestione tabelle di routing di aggiungere una nuova route nella destinazione, anche se esiste un'altra route con lo stesso proprietario e i campi adiacenti.
+    Il client può impostare il parametro *Flag \_* di modifica su RTM ROUTE CHANGE NEW per indicare al gestore delle tabelle di routing di aggiungere una nuova route nella destinazione, anche se esiste un'altra route con lo stesso proprietario e gli stessi campi \_ \_ \_ adiacenti.
 
-    Il client può impostare il parametro *Change \_ Flags* su RTM \_ route \_ Change \_ prima per indicare a gestione tabelle di routing di aggiornare la prima route nella destinazione di proprietà del client. Questo aggiornamento può essere eseguito se esiste una route di questo tipo, anche se il campo adiacente non corrisponde. Questo flag viene usato dai client che gestiscono una singola route per destinazione.
+    Il client può impostare il parametro *\_ Flag* di modifica su RTM ROUTE CHANGE FIRST per indicare al gestore tabelle di routing di aggiornare la prima route nella destinazione di proprietà \_ del \_ \_ client. Questo aggiornamento può essere eseguito se esiste una route di questo tipo, anche se il campo adiacente non corrisponde. Questo flag viene usato dai client che gestiscono una singola route per ogni destinazione.
 
-**Per aggiornare una route, il client deve eseguire la procedura seguente**
+**Per aggiornare una route, il client deve seguire questa procedura**
 
-1.  Chiamare [**RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) con l'handle per la route. L'handle è uno precedentemente memorizzato nella cache dal client o restituito da Gestione tabelle di routing da una chiamata che restituisce un handle di route, ad esempio **RtmGetRouteInfo**.
-2.  Apportare le modifiche alla struttura [**delle \_ \_ informazioni sulla route RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) restituita da Gestione tabelle di routing.
-3.  Chiamare [**RtmAddRouteToDest**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) con l'handle per la route e la struttura [**di \_ \_ informazioni della route RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) modificata.
+1.  Chiamare [**RtmGetRouteInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetrouteinfo) con l'handle per la route. L'handle è un handle precedentemente memorizzato nella cache dal client o restituito dal gestore tabelle di routing da una chiamata che restituisce un handle di route, ad esempio **RtmGetRouteInfo.**
+2.  Apportare le modifiche alla [**struttura RTM \_ ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) restituita dal gestore tabelle di routing.
+3.  Chiamare [**RtmAddRouteToDest con**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddroutetodest) l'handle per la route e la struttura [**RTM ROUTE \_ \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) modificata.
 
-Nell'esempio di codice seguente viene illustrato come aggiungere una route a una destinazione utilizzando Gestione tabelle di routing come intermediario.
+Nell'esempio di codice seguente viene illustrato come aggiungere una route a una destinazione utilizzando il gestore tabelle di routing come intermediario.
 
 
 ```C++
@@ -132,9 +132,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,9 +4,9 @@ description: Chiamato quando il cursore del puntatore tocco è stato spostato e 
 ms.assetid: 55A6AC99-0723-4215-9428-D2DAAC77A74A
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnTouchPointerCursorMoved
-- Metodo OnTouchPointerCursorMoved Servizi Desktop remoto, interfaccia IRemoteDesktopClientEvents
-- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto, metodo OnTouchPointerCursorMoved
+- Metodo OnTouchPointerCursorMoved Servizi Desktop remoto
+- Metodo OnTouchPointerCursorMoved Servizi Desktop remoto , interfaccia IRemoteDesktopClientEvents
+- Interfaccia IRemoteDesktopClientEvents Servizi Desktop remoto , metodo OnTouchPointerCursorMoved
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae347e19942bf0c82112e5cec6a3fb4fe131349f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a7c6d542031ab375d7e960b82bb36ba52ea6c9ecab58764c13595871687a731
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072301"
 ---
-# <a name="iremotedesktopclienteventsontouchpointercursormoved-method"></a>Metodo IRemoteDesktopClientEvents:: OnTouchPointerCursorMoved
+# <a name="iremotedesktopclienteventsontouchpointercursormoved-method"></a>Metodo IRemoteDesktopClientEvents::OnTouchPointerCursorMoved
 
-Chiamato quando il cursore del puntatore tocco è stato spostato e la proprietà [**EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) è impostata su true.
+Chiamato quando il cursore del puntatore tocco è stato spostato e la [**proprietà EventsEnabled**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclienttouchpointer-get_eventsenabled) è impostata su true.
 
 ## <a name="syntax"></a>Sintassi
 

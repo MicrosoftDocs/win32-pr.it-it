@@ -4,12 +4,12 @@ ms.assetid: 93c10b75-2071-46fa-9ff0-57b317f53af8
 title: System.Contact.ConnectedServiceSupportedActions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0a4c9a483e7bda8e2252b7be0124ee4cedfc2f5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4bf8a78f695c21ffcbaa6e9419b98b4598ab9863a1140a25b72950bfcd78a6df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059651"
 ---
 # <a name="systemcontactconnectedservicesupportedactions"></a>System.Contact.ConnectedServiceSupportedActions
 

@@ -2,7 +2,7 @@
 description: Rinomina il file di paging specificato nel percorso dell'oggetto.
 ms.assetid: 6a98e05f-337e-4224-a847-f01913031b20
 ms.tgt_platform: multiple
-title: Rinominare il metodo della classe Win32_PageFile
+title: Metodo Rename della classe Win32_PageFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c9ba8162cd115a567e9e9010420c558061fed08
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c47bda2b5466111594617a9f3fc0faa9d2dbf55e4452509015cbbe368ef15cba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077431"
 ---
-# <a name="rename-method-of-the-win32_pagefile-class"></a>Rinominare il metodo della \_ classe Win32 pagefile
+# <a name="rename-method-of-the-win32_pagefile-class"></a>Metodo Rename della classe PageFile Win32 \_
 
-Il metodo **Rinomina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Rinomina il file di paging specificato nel percorso dell'oggetto. Una ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
+Il **metodo Rinomina** classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) rinomina il file di paging specificato nel percorso dell'oggetto. La ridenominazione non è supportata se la destinazione si trova in un'altra unità o se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,18 +42,18 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nome file* \[ in\]
+*FileName* \[ Pollici\]
 </dt> <dd>
 
-Nome completo del nuovo file (o directory).
+Nuovo nome completo del file (o directory).
 
-Esempio: c: \\ temp \\newfile.txt
+Esempio: \\ c:temp \\newfile.txt
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato rinominato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato rinominato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Pagefile Win32**](win32-pagefile.md)
+[**File di paging Win32 \_**](win32-pagefile.md)
 </dt> </dl>
 
  

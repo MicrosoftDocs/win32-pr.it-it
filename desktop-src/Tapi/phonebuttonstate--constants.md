@@ -1,19 +1,19 @@
 ---
 description: Le costanti del flag di bit PHONEBUTTONSTATE descrivono le posizioni dei pulsanti.
 ms.assetid: f1196e31-65c6-4ade-a0b7-c7758ce97be1
-title: Costanti PHONEBUTTONSTATE_ (TAPI. h)
+title: PHONEBUTTONSTATE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b1cc2f669fb5c1171834f46e11a161e9390eab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95070eb24b5189b44f07a8ba2d2d7ed7d8234ec14a97889f09c0fe29ac72eed9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100510"
 ---
-# <a name="phonebuttonstate_-constants"></a>Costanti PHONEBUTTONSTATE_
+# <a name="phonebuttonstate_-constants"></a>PHONEBUTTONSTATE_ costanti
 
-Le costanti del flag di bit **PHONEBUTTONSTATE_** descrivono le posizioni del pulsante.
+Le **PHONEBUTTONSTATE_** flag di bit descrivono le posizioni del pulsante.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Le costanti del flag di bit **PHONEBUTTONSTATE_** descrivono le posizioni del pu
 
 
 
-Il pulsante si trova nello stato "giù" (premuto).
+Il pulsante si trova nello stato "down" (premuto).
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Il pulsante si trova nello stato "giù" (premuto).
 
 
 
-Indica che lo stato verso l'alto o verso il basso del pulsante non è noto al provider di servizi e non verrà più conosciuto in un momento successivo. (Versioni TAPI 1,4 e successive)
+Indica che lo stato verso l'alto o verso il basso del pulsante non è noto al provider di servizi e non diventerà noto in un momento futuro. (TAPI versioni 1.4 e successive)
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Indica che lo stato verso l'alto o verso il basso del pulsante non è noto al pr
 
 
 
-Indica che lo stato verso l'alto o verso il basso del pulsante non è noto in questo momento, ma può diventare noto in un momento successivo. (Versioni TAPI 1,4 e successive)
+Indica che lo stato verso l'alto o verso il basso del pulsante non è noto in questo momento, ma potrebbe diventare noto in un momento futuro. (TAPI versioni 1.4 e successive)
 
 
 </dt> </dl> </dd> <dt>
@@ -52,16 +52,16 @@ Indica che lo stato verso l'alto o verso il basso del pulsante non è noto in qu
 
 
 
-Il pulsante si trova nello stato "up".
+Il pulsante si trova nello stato "su".
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
-Per compatibilità con le versioni precedenti, è responsabilità del provider di servizi esaminare la versione dell'API negoziata sul telefono e non usare i valori PHONEBUTTONSTATE_ non supportati dalla versione negoziata.
+Per la compatibilità con le versioni precedenti, è responsabilità del provider di servizi esaminare la versione dell'API negoziata sul telefono e non usare i valori PHONEBUTTONSTATE_ non supportati dalla versione negoziata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -69,8 +69,8 @@ Per compatibilità con le versioni precedenti, è responsabilità del provider d
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

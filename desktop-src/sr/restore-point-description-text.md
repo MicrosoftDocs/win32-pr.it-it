@@ -1,41 +1,41 @@
 ---
-title: Testo Descrizione punto di ripristino
-description: Quando un'applicazione chiama la funzione SRSetRestorePoint, può fornire qualsiasi testo come descrizione per il punto di ripristino; Tuttavia, nella tabella seguente viene illustrato il testo della descrizione consigliata.
+title: Testo della descrizione del punto di ripristino
+description: Quando un'applicazione chiama la funzione SRSetRestorePoint, può fornire qualsiasi testo come descrizione per il punto di ripristino. Tuttavia, la tabella seguente mostra il testo di descrizione consigliato.
 ms.assetid: e6e1974b-c162-4019-9349-936f3786cb9b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59e90fd1b7d5776c8c3798a68946382cc702b3bd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd785d143d3eed243e5d80ec261f121817db6187013f70b6f6cc6be0b1c2b790
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111250"
 ---
-# <a name="restore-point-description-text"></a>Testo Descrizione punto di ripristino
+# <a name="restore-point-description-text"></a>Testo della descrizione del punto di ripristino
 
-Quando un'applicazione chiama la funzione [**SRSetRestorePoint**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) , può fornire qualsiasi testo come descrizione per il punto di ripristino; Tuttavia, nella tabella seguente viene illustrato il testo della descrizione consigliata.
+Quando un'applicazione chiama [**la funzione SRSetRestorePoint,**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) può fornire qualsiasi testo come descrizione per il punto di ripristino. Tuttavia, la tabella seguente mostra il testo di descrizione consigliato.
 
 
 
 | Modifica del sistema                            | Tipo di punto di ripristino      | Descrizione            |
 |------------------------------------------------|-------------------------|------------------------|
-| Installazione delle applicazioni                       | \_installazione applicazione    | *Appname* installato    |
-| Modifica dell'applicazione (aggiunta/rimozione di funzionalità) | MODIFICARE \_ le impostazioni        | *Appname* configurato   |
-| Rimozione di applicazioni                            | disinstallazione dell'applicazione \_  | *Appname* rimosso      |
-| Installazione del driver di dispositivo                     | \_installazione del driver di dispositivo \_ | *Drivername* installato |
+| Installazione delle applicazioni                       | INSTALLAZIONE \_ DELL'APPLICAZIONE    | AppName *installato*    |
+| Modifica dell'applicazione (aggiunta/rimozione di funzionalità) | MODIFICARE \_ LE IMPOSTAZIONI        | AppName *configurato*   |
+| Rimozione dell'applicazione                            | DISINSTALLAZIONE \_ DELL'APPLICAZIONE  | Rimozione *di AppName*      |
+| Installazione del driver di dispositivo                     | INSTALLAZIONE \_ DEL DRIVER DI \_ DISPOSITIVO | DriverName *installato* |
 
 
 
- 
+ 
 
-I programmi di installazione, ad esempio Windows Installer e InstallShield, usano le convenzioni seguenti per il testo della descrizione:
+I programmi di installazione, ad esempio Windows Installer e InstallShield, usano queste convenzioni per il testo della descrizione:
 
--   Il nome del prodotto segue il verbo. ad esempio, è installato *appname*.
--   Il nome del prodotto può essere usato da solo (*appname*) o il nome del prodotto e il nome della società può essere usato (*MyCompany AppName*).
+-   Il nome del prodotto segue il verbo; ad esempio *AppName installato.*
+-   Il nome del prodotto può essere usato da solo (*AppName*) o dal nome del prodotto e dal nome della società (*MyCompany AppName*).
 
- 
+ 
 
- 
+ 
 
 
 

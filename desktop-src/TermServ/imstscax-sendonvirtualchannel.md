@@ -1,10 +1,10 @@
 ---
 title: Metodo IMsTscAx SendOnVirtualChannel
-description: Invia dati al server host sessione Desktop remoto (host sessione Desktop remoto) su un canale virtuale creato in precedenza tramite il metodo CreateVirtualChannels.
+description: Invia i dati Desktop remoto server Host sessione Desktop remoto tramite un canale virtuale creato in precedenza usando il metodo CreateVirtualChannels.
 ms.assetid: 795ef508-bdf7-4897-84b1-931615262293
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SendOnVirtualChannel
+- Metodo SendOnVirtualChannel Servizi Desktop remoto
 - Metodo SendOnVirtualChannel Servizi Desktop remoto, interfaccia IMsTscAx
 - Interfaccia IMsTscAx Servizi Desktop remoto, metodo SendOnVirtualChannel
 - Metodo SendOnVirtualChannel Servizi Desktop remoto, interfaccia IMsRdpClient
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1371ae17978601a3194f755dd364d9227b8fc28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03c5b84ff9cb272d5560f3b6588301a05a3e9a003db1b28f841a77b2e0618b37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125301"
 ---
-# <a name="imstscaxsendonvirtualchannel-method"></a>Metodo IMsTscAx:: SendOnVirtualChannel
+# <a name="imstscaxsendonvirtualchannel-method"></a>Metodo IMsTscAx::SendOnVirtualChannel
 
-Invia dati al server host sessione Desktop remoto (host sessione Desktop remoto) su un canale virtuale creato in precedenza tramite il metodo [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .
+Invia dati al server host sessione Desktop remoto (Host sessione Desktop remoto) tramite un canale virtuale creato in precedenza usando il [**metodo CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -71,29 +71,29 @@ HRESULT SendOnVirtualChannel(
 
 <dl> <dt>
 
-*Channame* \[ in\]
+*ChanName* \[ Pollici\]
 </dt> <dd>
 
-Nome del canale virtuale specificato nella chiamata a [**CreateVirtualChannels**](imstscax-createvirtualchannels.md).
+Nome del canale virtuale specificato nella chiamata a [**CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 </dd> <dt>
 
-*ChanData* \[ in\]
+*ChanData* \[ Pollici\]
 </dt> <dd>
 
-Dati da inviare sul canale virtuale, in formato **BSTR** . Non esiste alcuna restrizione che questi dati devono essere stringhe con terminazione null.
+Dati da inviare tramite il canale virtuale, in **formato BSTR.** Non esiste alcuna restrizione per cui questi dati devono essere stringhe con terminazione Null.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sulle restrizioni di denominazione dei canali virtuali, vedere [registrazione client del canale virtuale](virtual-channel-client-registration.md) .
+Per informazioni [sulle restrizioni di denominazione dei](virtual-channel-client-registration.md) canali virtuali, vedere Registrazione client del canale virtuale.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
