@@ -3,9 +3,9 @@ title: Metodo IMsRdpClientNonScriptable6 SendLocation2D
 description: Invia un valore di latitudine e longitudine al server in modo che la posizione geografica del client possa essere riflessa nella sessione remota.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SendLocation2D
+- Metodo SendLocation2D Servizi Desktop remoto
 - Metodo SendLocation2D Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable6
-- Interfaccia IMsRdpClientNonScriptable6 Servizi Desktop remoto, metodo SendLocation2D
+- Interfaccia IMsRdpClientNonScriptable6 Servizi Desktop remoto metodo SendLocation2D
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: b706fdb35ba8360b294d25021c0c1a18bbe90188
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 2e2e252f86249531c61922cf02f308bfaf2b76c2518ff9b420f5ec3fd80d9d88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "103745343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990141"
 ---
-# <a name="imsrdpclientnonscriptable6sendlocation2d-method"></a>Metodo IMsRdpClientNonScriptable6:: SendLocation2D
+# <a name="imsrdpclientnonscriptable6sendlocation2d-method"></a>Metodo IMsRdpClientNonScriptable6::SendLocation2D
 
 Invia un valore di latitudine e longitudine al server in modo che la posizione geografica del client possa essere riflessa nella sessione remota.
 
@@ -38,17 +38,17 @@ HRESULT SendLocation2D(
 
 ## <a name="parameters"></a>Parametri
 
-*Latitudine* \[ in\]
+*latitudine* \[ Pollici\]
 
-Latitudine di una posizione geografica. L'intervallo valido di valori di latitudine è compreso tra-90,0 e 90,0 gradi.
+Latitudine di una posizione geografica. L'intervallo valido di valori di latitudine è compreso tra -90,0 e 90,0 gradi.
 
-*Longitudine* \[ in\]
+*longitudine* \[ Pollici\]
 
-Longitudine di una posizione geografica. L'intervallo valido di valori di latitudine è compreso tra-180,0 e 180,0 gradi.
+Longitudine di una posizione geografica. L'intervallo valido di valori di latitudine è compreso tra -180,0 e 180,0 gradi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Se l'operazione ha esito positivo, restituire **S \_ OK** .
 | Client minimo supportato| Windows 10, versione 1709 (build 16299)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpClientNonScriptable6 è definito come 05293249-B28B-4DB8-BE64-1B2F496B910E            |
+| IID                      | IMsRdpClientNonScriptable6 IID è definito come \_ 05293249-B28B-4DB8-BE64-1B2F496B910E            |
 
 ## <a name="see-also"></a>Vedi anche
 

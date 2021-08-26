@@ -1,27 +1,27 @@
 ---
-description: La proprietà ProductName contiene il nome dell'applicazione da installare. Viene utilizzato solo a scopo di visualizzazione. Annunciato come proprietà del prodotto. Questa proprietà è obbligatoria. Questa proprietà può essere modificata da una trasformazione.
+description: La proprietà ProductName contiene il nome dell'applicazione da installare. Viene usato solo a scopo di visualizzazione. Annunciato come proprietà del prodotto. Questa proprietà è REQUIRED. Questa proprietà può essere modificata da una trasformazione.
 ms.assetid: 0a9f5be1-9da2-47a7-859b-fc6d1ec326b3
-title: Proprietà ProductName
+title: ProductName - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfecd7a8464395f021d09430ce1be7ca3ba4a6cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfd250d4a3aae2fd1aa25fa2c5ff08492e8f7707fd5301d6318e9d813de423a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074691"
 ---
-# <a name="productname-property"></a>Proprietà ProductName
+# <a name="productname-property"></a>ProductName - proprietà
 
-La proprietà **ProductName** contiene il nome dell'applicazione da installare. Viene utilizzato solo a scopo di visualizzazione. Annunciato come proprietà del prodotto.
+La **proprietà ProductName** contiene il nome dell'applicazione da installare. Viene usato solo a scopo di visualizzazione. Annunciato come proprietà del prodotto.
 
-Questa proprietà è obbligatoria.
+Questa proprietà è REQUIRED.
 
 Questa proprietà può essere modificata da una trasformazione.
 
 ## <a name="remarks"></a>Commenti
 
-La lunghezza della proprietà **ProductName** non può superare i 63 caratteri. Non esiste alcun limite per la lunghezza della chiave del registro di sistema per DisplayName.
+La **proprietà ProductName** non può contenere più di 63 caratteri. Non esiste alcun limite alla lunghezza della chiave del Registro di sistema per DisplayName.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,7 +29,7 @@ La lunghezza della proprietà **ProductName** non può superare i 63 caratteri. 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

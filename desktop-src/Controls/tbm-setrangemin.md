@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_SETRANGEMIN (COMmctrl. h)
-description: Imposta la posizione logica minima per il dispositivo di scorrimento in un TrackBar.
+title: TBM_SETRANGEMIN messaggio (Commctrl.h)
+description: Imposta la posizione logica minima per il dispositivo di scorrimento in un trackbar.
 ms.assetid: 85071be2-4df3-4b54-9122-b6dc767f6cb9
 keywords:
-- Controlli di Windows Message TBM_SETRANGEMIN
+- TBM_SETRANGEMIN di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d34c2e70aa6247cb970e576c915bdcd28cd18d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d35cbb162b42636d886cb5e41eb9ba6de1a2101a8327ff8ddffbc71c57fa6735
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046071"
 ---
-# <a name="tbm_setrangemin-message"></a>\_Messaggio SETRANGEMIN TBM
+# <a name="tbm_setrangemin-message"></a>Messaggio \_ TBM SETRANGEMIN
 
-Imposta la posizione logica minima per il dispositivo di scorrimento in un TrackBar.
+Imposta la posizione logica minima per il dispositivo di scorrimento in un trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Imposta la posizione logica minima per il dispositivo di scorrimento in un Track
 *wParam* 
 </dt> <dd>
 
-Ridisegni flag. Se questo parametro è **true**, il messaggio riestrae il TrackBar dopo l'impostazione dell'intervallo. Se questo parametro è **false**, il messaggio imposta l'intervallo senza ricreare il TrackBar.
+Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il trackbar dopo l'impostazione dell'intervallo. Se questo parametro è **FALSE,** il messaggio imposta l'intervallo ma non ridisegna il trackbar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Posizione minima del dispositivo di scorrimento.
+Posizione minima per il dispositivo di scorrimento.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Se la posizione corrente del dispositivo di scorrimento è inferiore al nuovo valore minimo, il messaggio **TBM \_ SETRANGEMIN** imposta la posizione del dispositivo di scorrimento sul nuovo valore minimo.
+Se la posizione corrente del dispositivo di scorrimento è minore del nuovo valore minimo, il messaggio **\_ TBM SETRANGEMIN** imposta la posizione del dispositivo di scorrimento sul nuovo valore minimo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Se la posizione corrente del dispositivo di scorrimento è inferiore al nuovo va
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Se la posizione corrente del dispositivo di scorrimento è inferiore al nuovo va
 **Riferimento**
 </dt> <dt>
 
-[**\_SEtrange TBM**](tbm-setrange.md)
+[**TBM \_ SETRANGE**](tbm-setrange.md)
 </dt> <dt>
 
 [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)

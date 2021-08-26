@@ -1,6 +1,6 @@
 ---
 title: " Direttive ifdef e ifndef"
-description: Direttive per il preprocessore che determinano se una specifica costante o macro del preprocessore è definita.
+description: Direttive per il preprocessore che determinano se è definita una macro o una costante del preprocessore specifica.
 ms.assetid: c1cc2e1d-2599-45ec-9629-56c4b42e0d0e
 keywords:
 - Direttive ifdef e ifndef HLSL
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 338308b58f1cdc68ec78984e65ffbf056a36b10b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 584cde8856c48aeafed5665016a71146f8c2ffb341b837faa6bf35d627152c39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068321"
 ---
-# <a name="ifdef-and-ifndef-directives"></a>\#\#direttive ifdef e ifndef
+# <a name="ifdef-and-ifndef-directives"></a>\#Direttive ifdef \# e ifndef
 
-Direttive per il preprocessore che determinano se una specifica costante o macro del preprocessore è definita.
+Direttive per il preprocessore che determinano se è definita una macro o una costante del preprocessore specifica.
 
 
 
-| \#*identificatore* ifdef...  |
+| \#Identificatore *ifdef* ...  |
 |---------------------------|
 | \#endif                   |
-| \#*identificatore* ifndef... |
+| \#Identificatore *ifndef* ... |
 | \#endif                   |
 
 
@@ -42,7 +42,7 @@ Direttive per il preprocessore che determinano se una specifica costante o macro
 
 | Elemento                                                                              | Descrizione                                               |
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------|
-| <span id="identifier"></span><span id="IDENTIFIER"></span>*identificatore*<br/> | Identificatore della costante o della macro da verificare. <br/> |
+| <span id="identifier"></span><span id="IDENTIFIER"></span>*Identificatore*<br/> | Identificatore della costante o della macro da controllare. <br/> |
 
 
 
@@ -50,15 +50,15 @@ Direttive per il preprocessore che determinano se una specifica costante o macro
 
 ## <a name="remarks"></a>Commenti
 
-È possibile utilizzare le \# \# direttive ifdef e ifndef in qualsiasi punto [ \# ](dx-graphics-hlsl-appendix-pre-if.md) in cui è possibile utilizzare. L' \# istruzione ifdef è equivalente alla direttiva. Queste direttive controllano solo la presenza o l'assenza di identificatori definiti usando la direttiva [ \# define](dx-graphics-hlsl-appendix-pre-define.md) , non per gli identificatori dichiarati nel codice sorgente C o C++.
+È possibile usare le \# direttive ifdef \# e ifndef ovunque sia possibile usare [ \# se](dx-graphics-hlsl-appendix-pre-if.md) . \#L'istruzione ifdef equivale alla direttiva ). Queste direttive verificano solo la presenza o l'assenza di identificatori definiti tramite la direttiva [ \# define,](dx-graphics-hlsl-appendix-pre-define.md) non per gli identificatori dichiarati nel codice sorgente C o C++.
 
-Queste direttive sono fornite solo per compatibilità con le versioni precedenti del linguaggio. È preferibile usare l'operatore [definito](dx-graphics-hlsl-appendix-pre-if.md) con la \# direttiva if.
+Queste direttive sono fornite solo per compatibilità con le versioni precedenti del linguaggio. È preferibile usare [l'operatore](dx-graphics-hlsl-appendix-pre-if.md) definito con \# la direttiva if.
 
-La \# direttiva ifndef controlla l'opposto della condizione controllata da \# ifdef. Se l'identificatore non è definito, la condizione è true (diverso da zero); in caso contrario, la condizione è false (zero).
+La \# direttiva ifndef verifica l'opposto della condizione controllata da \# ifdef. Se l'identificatore non è definito, la condizione è true (diverso da zero). in caso contrario, la condizione è false (zero).
 
 ## <a name="examples"></a>Esempio
 
-L'identifier può essere passato dalla riga di comando utilizzando l'opzione /D. È possibile specificare fino a 30 macro utilizzando /D. Ciò è utile per controllare l'esistenza di una definizione poiché una definizione può essere passata dalla riga di comando. Nell'esempio seguente viene usato questo comportamento per determinare se eseguire un'applicazione in modalità test.
+L'identifier può essere passato dalla riga di comando utilizzando l'opzione /D. È possibile specificare fino a 30 macro utilizzando /D. Ciò è utile per controllare l'esistenza di una definizione poiché una definizione può essere passata dalla riga di comando. Nell'esempio seguente viene utilizzato questo comportamento per determinare se eseguire un'applicazione in modalità test.
 
 
 ```
@@ -73,7 +73,7 @@ int main()
 
 
 
-Quando viene compilato usando il comando seguente, PROG. cpp verrà compilato in modalità test. in caso contrario, verrà compilato in modalità finale.
+Quando viene compilato con il comando seguente, prog.cpp verrà compilato in modalità test. In caso contrario, verrà compilato in modalità finale.
 
 
 ```
@@ -89,7 +89,7 @@ CL.EXE /Dtest prog.cpp
 [Direttive per il preprocessore (DirectX HLSL)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#Se,)](dx-graphics-hlsl-appendix-pre-if.md)
+[\#se, )](dx-graphics-hlsl-appendix-pre-if.md)
 </dt> </dl>
 
  

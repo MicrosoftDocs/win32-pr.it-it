@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: fb5a329e39631dff626ff1c7945ad4b05f9dcd58
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39e2b3871365cddd70b942f6d9d9f0fc9af85eca23944f388e3afd6ad9b4fc63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989961"
 ---
 # <a name="d3dxsphereboundprobe-function-d3dx10mathh"></a>Funzione D3DXSphereBoundProbe (D3DX10math.h)
 

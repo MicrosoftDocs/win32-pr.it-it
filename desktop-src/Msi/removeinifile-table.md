@@ -1,19 +1,19 @@
 ---
-description: La tabella RemoveIniFile contiene le informazioni che un'applicazione deve eliminare da un file ini.
+description: La tabella RemoveIniFile contiene le informazioni che un'applicazione deve eliminare da .ini file.
 ms.assetid: 702cf86e-02f4-4ea7-8573-b500ac550aae
 title: Tabella RemoveIniFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b57b4ba6f2c42ee636f1b9e21e798e27665f102a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6aca38f320a8cb548faf00d284cff4c934e127a44cbaf7ca5b96013fac80d63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074581"
 ---
 # <a name="removeinifile-table"></a>Tabella RemoveIniFile
 
-La tabella RemoveIniFile contiene le informazioni che un'applicazione deve eliminare da un file ini.
+La tabella RemoveIniFile contiene le informazioni che un'applicazione deve eliminare da .ini file.
 
 La tabella RemoveIniFile include le colonne seguenti.
 
@@ -45,38 +45,38 @@ Chiave per questa tabella.
 
 </dd> <dt>
 
-<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>FileName
+<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Filename
 </dt> <dd>
 
-Nome del file ini in cui eliminare le informazioni.
+Nome .ini file in cui eliminare le informazioni.
 
 </dd> <dt>
 
 <span id="DirProperty"></span><span id="dirproperty"></span><span id="DIRPROPERTY"></span>DirProperty
 </dt> <dd>
 
-Nome di una proprietà il cui valore si presuppone venga risolto nel percorso completo della cartella del file ini da rimuovere. La proprietà può essere il nome di una directory nella [tabella di directory](directory-table.md), una proprietà impostata dalla [tabella AppSearch](appsearch-table.md)o qualsiasi altra proprietà che rappresenta un percorso completo.
+Nome di una proprietà il cui valore viene risolto nel percorso completo della cartella .ini file da rimuovere. La proprietà può essere il nome di una directory nella tabella [Directory](directory-table.md), una proprietà impostata dalla tabella [AppSearch](appsearch-table.md)o qualsiasi altra proprietà che rappresenta un percorso completo.
 
 </dd> <dt>
 
 <span id="Section"></span><span id="section"></span><span id="SECTION"></span>Sezione
 </dt> <dd>
 
-Sezione del file con estensione ini localizzabile.
+Sezione del file .ini localizzabile.
 
 </dd> <dt>
 
 <span id="Key"></span><span id="key"></span><span id="KEY"></span>Chiave
 </dt> <dd>
 
-Chiave del file. ini localizzabile sotto la sezione.
+Chiave del file .ini localizzabile sotto la sezione .
 
 </dd> <dt>
 
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valore
 </dt> <dd>
 
-Valore localizzabile da eliminare. Il valore è obbligatorio quando l'azione è 4.
+Valore localizzabile da eliminare. Il valore è obbligatorio quando Action è 4.
 
 </dd> <dt>
 
@@ -89,8 +89,8 @@ Tipo di modifica da apportare.
 
 | Costante                         | Valore esadecimale | Decimal | Significato                          |
 |----------------------------------|-------------|---------|----------------------------------|
-| **msidbIniFileActionRemoveLine** | 0x002       | 2       | Elimina la voce. ini.              |
-| **msidbIniFileActionRemoveTag**  | 0x004       | 4       | Elimina un tag da una voce. ini. |
+| **msidbIniFileActionRemoveLine** | 0x002       | 2       | Elimina .ini voce.              |
+| **msidbIniFileActionRemoveTag**  | 0x004       | 4       | Elimina un tag da una .ini voce. |
 
 
 
@@ -101,19 +101,19 @@ Tipo di modifica da apportare.
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chiave esterna nella prima colonna della [tabella dei componenti](component-table.md) che fa riferimento al componente che controlla l'eliminazione del valore ini.
+Chiave esterna nella prima colonna della tabella [Componente che](component-table.md) fa riferimento al componente che controlla l'eliminazione .ini valore.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni sul file ini vengono eliminate quando il componente corrispondente è stato selezionato per l'installazione, localmente o eseguito dall'origine.
+Le .ini file vengono eliminate quando il componente corrispondente è stato selezionato per l'installazione, in locale o in esecuzione dall'origine.
 
-Questa tabella viene definita quando viene eseguita l' [azione RemoveIniValues](removeinivalues-action.md) .
+Questa tabella viene definita quando viene eseguita [l'azione RemoveIniValues.](removeinivalues-action.md)
 
-Se la \_ colonna directory è specificata come null, il percorso del file ini è il percorso standard di Windows ini, che è la directory di Windows per impostazione predefinita.
+Se la colonna Directory viene specificata come Null, il percorso del file ini è il percorso Windows ini standard, ovvero la directory Windows \_ predefinita.
 
-La rimozione dell'ultimo valore da una sezione comporta l'eliminazione di tale sezione. Non esiste un altro modo per eliminare un'intera sezione diversa dalla rimozione di tutti i relativi valori.
+La rimozione dell'ultimo valore da una sezione elimina tale sezione. Non esiste altro modo per eliminare un'intera sezione oltre alla rimozione di tutti i relativi valori.
 
 ## <a name="validation"></a>Convalida
 

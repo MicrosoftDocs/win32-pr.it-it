@@ -1,7 +1,7 @@
 ---
-description: Un endpoint di comunicazione che può connettersi a una LAN per inviare e ricevere frame di dati. Gli endpoint LAN includono Ethernet, token ring e interfacce FDDI.
+description: Endpoint di comunicazione in grado di connettersi a una LAN per inviare e ricevere frame di dati. Gli endpoint LAN includono interfacce ethernet, token ring e FDDI.
 ms.assetid: c69464cf-00a9-476d-a494-2d7d65776334
-title: Classe CIM_LANEndpoint
+title: CIM_LANEndpoint classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c924d175cb48e53346daff59a6317a4a0f241f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e42f5edcc7010b9a84fdaaf3686208c9f82def03493c4c423aa3815b1d0758e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106320044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046811"
 ---
-# <a name="cim_lanendpoint-class"></a>CIM \_ LANEndpoint (classe)
+# <a name="cim_lanendpoint-class"></a>Classe \_ CIM LANEndpoint
 
-Un endpoint di comunicazione che può connettersi a una LAN per inviare e ricevere frame di dati. Gli endpoint LAN includono Ethernet, token ring e interfacce FDDI.
+Endpoint di comunicazione in grado di connettersi a una LAN per inviare e ricevere frame di dati. Gli endpoint LAN includono interfacce ethernet, token ring e FDDI.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,76 +49,76 @@ class CIM_LANEndpoint : CIM_ProtocolEndpoint
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ LANEndpoint** presenta questi tipi di membri:
+La **classe \_ CIM LANEndpoint** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ LANEndpoint** dispone di queste proprietà.
+La **classe \_ CIM LANEndpoint** ha queste proprietà.
 
 <dl> <dt>
 
 **AliasAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene altri indirizzi unicast che possono essere utilizzati per comunicare con l'endpoint LAN.
+Matrice che contiene altri indirizzi unicast che possono essere usati per comunicare con l'endpoint LAN.
 
 </dd> <dt>
 
 **GroupAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene gli indirizzi multicast su cui è in ascolto l'endpoint LAN.
+Matrice contenente gli indirizzi multicast a cui l'endpoint LAN è in ascolto.
 
 </dd> <dt>
 
-**LANId**
+**LANID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ LANConnectivitySegment. LanID, CIM \_ LANSegment. LanID")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ LANConnectivitySegment.LANID, CIM \_ LANSegment.LANID")
 </dt> </dl>
 
-Etichetta o identificatore per il segmento LAN a cui è connesso l'endpoint. Se l'endpoint non è attualmente connesso o se queste informazioni sono sconosciute, **LanID** è null.
+Etichetta o identificatore per il segmento LAN a cui è connesso l'endpoint. Se l'endpoint non è attualmente connesso o se queste informazioni sono sconosciute, **LANID** è NULL.
 
 </dd> <dt>
 
 **LANType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md).**ProtocolType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (" CIM \_ LANCONNECTIVITYSEGMENT. ConnectivityType, CIM \_ LANSegment. LANType ")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md).**ProtocolType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ LANConnectivitySegment.ConnectivityType, CIM \_ LANSegment.LANType")
 </dt> </dl>
 
 > [!Note]  
-> Descrizione deprecata: tipo di tecnologia utilizzata nella LAN.
+> Descrizione deprecata: tipo di tecnologia usata nella lan.
 
  
 
-Questa proprietà è deprecata. È invece consigliabile usare la proprietà **ProtocolType** .
+Questa proprietà è deprecata. È invece consigliabile usare la **proprietà ProtocolType.**
 
 <dt>
 
@@ -145,7 +145,7 @@ Questa proprietà è deprecata. È invece consigliabile usare la proprietà **Pr
 
 <span id="TokenRing"></span><span id="tokenring"></span><span id="TOKENRING"></span>
 
-**Tokenring** (3)
+**TokenRing** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -159,62 +159,62 @@ Questa proprietà è deprecata. È invece consigliabile usare la proprietà **Pr
 
 </dd> <dt>
 
-**MACAddress**
+**Macaddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (12)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (12)
 </dt> </dl>
 
-Indirizzo unicast principale utilizzato dall'endpoint LAN.
+Indirizzo unicast principale usato dall'endpoint LAN.
 
 L'indirizzo MAC deve essere formattato con le caratteristiche seguenti:
 
 -   L'indirizzo è costituito da dodici cifre esadecimali.
 -   Ogni coppia di cifre rappresenta uno dei sei ottetti dell'indirizzo MAC.
--   Ogni coppia di cifre deve essere in ordine di bit canonico in base allo standard RFC 2469.
+-   Ogni coppia di cifre deve essere in ordine di bit canonico in base a RFC 2469.
 
 </dd> <dt>
 
 **MaxDataSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit")
 </dt> </dl>
 
-Dimensione massima, in byte, dei campi dati inviati o ricevuti dall'endpoint LAN.
+Dimensioni massime, in byte, dei campi dati inviati o ricevuti dall'endpoint LAN.
 
 </dd> <dt>
 
 **OtherLANType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md).**OtherTypeDescription**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (" CIM \_ LANConnectivitySegment. OtherTypeDescription ","**CIM \_ LANEndpoint**.**LANType**")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md).**OtherTypeDescription**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ LANConnectivitySegment.OtherTypeDescription", "**CIM \_ LANEndpoint**.**LANType**")
 </dt> </dl>
 
 > [!Note]  
-> Descrizione deprecata: tipo di tecnologia utilizzata sulla LAN quando la proprietà **LANType** è impostata su "1" (other).
+> Descrizione deprecata: tipo di tecnologia usata nella LAN quando la proprietà **LANType** è impostata su "1" (Altro).
 
  
 
-Questa proprietà è deprecata. È invece consigliabile usare la proprietà **OtherTypeDescription** .
+Questa proprietà è deprecata. È invece consigliabile usare la **proprietà OtherTypeDescription.**
 
 </dd> </dl>
 
@@ -226,8 +226,8 @@ Questa proprietà è deprecata. È invece consigliabile usare la proprietà **Ot
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -236,7 +236,7 @@ Questa proprietà è deprecata. È invece consigliabile usare la proprietà **Ot
 
 <dl> <dt>
 
-[**\_PROTOCOLENDPOINT CIM**](cim-protocolendpoint.md)
+[**Protocollo \_ CIMEndpoint**](cim-protocolendpoint.md)
 </dt> </dl>
 
  

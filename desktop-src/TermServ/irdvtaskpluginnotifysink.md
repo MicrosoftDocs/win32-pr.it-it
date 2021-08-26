@@ -1,11 +1,11 @@
 ---
 title: Interfaccia IRDVTaskPluginNotifySink
-description: L'interfaccia IRDVTaskPluginNotifySink viene utilizzata dall'agente attività per comunicare con l'agente di trigger.
+description: L'interfaccia IRDVTaskPluginNotifySink viene usata dall'agente attività per comunicare con l'agente trigger.
 ms.assetid: ccf19693-d3cc-4cf7-af35-947be047beeb
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto
-- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto, descritta
+- Interfaccia IRDVTaskPluginNotifySink Servizi Desktop remoto , descritta
 topic_type:
 - apiref
 api_name:
@@ -15,34 +15,34 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0dadaf387fcf6e8381404440e0d31dd210b9f8a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88692175fedbad4faf5b2755ce92897cff25fe9d588e6fb446d8174407aa6b5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072391"
 ---
 # <a name="irdvtaskpluginnotifysink-interface"></a>Interfaccia IRDVTaskPluginNotifySink
 
-L'interfaccia **IRDVTaskPluginNotifySink** viene utilizzata dall'agente attività per comunicare con l'agente di trigger. Un puntatore a questa interfaccia viene passato all'agente attività nel metodo [**IRDVTaskPlugin:: Initialize**](irdvtaskplugin-initialize.md) .
+**L'interfaccia IRDVTaskPluginNotifySink** viene usata dall'agente attività per comunicare con l'agente trigger. Un puntatore a questa interfaccia viene passato all'agente attività nel [**metodo IRDVTaskPlugin::Initialize.**](irdvtaskplugin-initialize.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IRDVTaskPluginNotifySink** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IRDVTaskPluginNotifySink** dispone anche di questi tipi di membri:
+**L'interfaccia IRDVTaskPluginNotifySink** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRDVTaskPluginNotifySink** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IRDVTaskPluginNotifySink** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IRDVTaskPluginNotifySink.**
 
 
 
 | Metodo                                                                  | Descrizione                                                                       |
 |:------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
 | [**DeleteSchedule**](irdvtaskpluginnotifysink-deleteschedule.md)       | Chiamato dall'agente attività per eliminare un'attività pianificata.<br/>                   |
-| [**OnTaskStateChange**](irdvtaskpluginnotifysink-ontaskstatechange.md) | Utilizzato per notificare all'agente del trigger che lo stato di un'attività è stato modificato.<br/> |
-| [**Con terminazione**](irdvtaskpluginnotifysink-onterminated.md)           | Chiamato dall'agente attività per richiedere l'arresto dell'agente attività.<br/>  |
+| [**OnTaskStateChange**](irdvtaskpluginnotifysink-ontaskstatechange.md) | Usato per notificare all'agente trigger che lo stato di un'attività è stato modificato.<br/> |
+| [**OnTerminated**](irdvtaskpluginnotifysink-onterminated.md)           | Chiamato dall'agente attività per richiedere l'arresto dell'agente attività.<br/>  |
 | [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md)           | Chiamato dall'agente attività per pianificare un'attività.<br/>                           |
 
 
@@ -51,7 +51,7 @@ L'interfaccia **IRDVTaskPluginNotifySink** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene questa interfaccia sia supportata nei sistemi operativi indicati nei requisiti indicati di seguito, verrà usata solo se la macchina virtuale è ospitata in Windows Server 2012.
+Anche se questa interfaccia è supportata nei sistemi operativi identificati nei requisiti seguenti, verrà usata solo se la macchina virtuale è ospitata in Windows Server 2012.
 
 ## <a name="requirements"></a>Requisiti
 

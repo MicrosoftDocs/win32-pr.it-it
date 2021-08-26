@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 186f2eddbedf4eb0565a4ca66ff4ed7e5b080090
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cc202c3b6dbc570d063ef74619b266c2faa20cb74322b29e61626418412e2cb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044081"
 ---
 # <a name="cbasepingetmediatype-method"></a>Metodo CBasePin.GetMediaType
 
@@ -76,7 +76,7 @@ Restituisce un **valore HRESULT.** I valori possibili includono quelli nella tab
 
 ## <a name="remarks"></a>Commenti
 
-Dall'elenco dei tipi di supporti preferiti, questo metodo restituisce il tipo con un valore di indice *iPosition*. La [**classe CEnumMediaTypes**](cenummediatypes.md) chiama questo metodo per enumerare i tipi di supporti preferiti.
+Dall'elenco dei tipi di supporti preferiti del pin, questo metodo restituisce il tipo con un valore di indice *iPosition*. La [**classe CEnumMediaTypes**](cenummediatypes.md) chiama questo metodo per enumerare i tipi di supporti preferiti.
 
 La classe base restituisce E \_ UNEXPECTED. Eseguire l'override di questo metodo nella classe derivata.
 
@@ -86,7 +86,7 @@ La classe base restituisce E \_ UNEXPECTED. Eseguire l'override di questo metodo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

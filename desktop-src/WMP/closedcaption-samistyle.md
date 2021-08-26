@@ -1,6 +1,6 @@
 ---
 title: ClosedCaption.SAMIStyle
-description: La proprietà SAMIStyle specifica o recupera lo stile dei sottotitoli codificati.
+description: La proprietà SAMIStyle specifica o recupera lo stile di sottotitoli codificati.
 ms.assetid: 5535fb31-f1c0-49c4-b758-df74964b1e67
 keywords:
 - ClosedCaption.SAMIStyle Windows Media Player
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4a12671877cf0d4d8abdb77d169b0f13000bc564e6c1dc37e65bf6eccdf005
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bd45977e3d433239e74aee21def913b640fad12
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118580766"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882174"
 ---
 # <a name="closedcaptionsamistyle"></a>ClosedCaption.SAMIStyle
 
-La **proprietà SAMIStyle** specifica o recupera lo stile dei sottotitoli codificati.
+La **proprietà SAMIStyle** specifica o recupera lo stile di sottotitoli codificati.
 
 ``` syntax
 player.closedCaption.SAMIStyle
@@ -35,7 +35,7 @@ Questa proprietà è una stringa di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Un file SAMI può contenere diverse definizioni di stile di formato. Gli stili SAMI vengono definiti tra <STYLE> i tag </STYLE> e nel file SAMI. Uno stile viene definito con una stringa di testo preceduta da un \# carattere. Ad esempio:
+Un file SAMI può contenere diverse definizioni di stile di formato. Gli stili SAMI vengono definiti tra &lt; i tag STYLE e nel file &gt; </STYLE> SAMI. Uno stile viene definito con una stringa di testo preceduta da un \# carattere. Ad esempio:
 
 
 ```
@@ -55,7 +55,7 @@ Se non viene specificato alcuno stile SAMI, per impostazione predefinita viene u
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene creato un elemento HTML SELECT che usa *closedCaption.* **SAMIStyle per** modificare l'aspetto del testo del sottotitolo codificato. **L'oggetto Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene creato un elemento HTML SELECT che usa *closedCaption*. **SAMIStyle per** modificare l'aspetto del testo del sottotitolo codificato. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -91,7 +91,7 @@ Nell'esempio JScript seguente viene creato un elemento HTML SELECT che usa *clos
 
 <dl> <dt>
 
-[**Aggiunta di sottotitoli codificati a supporti digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati ai supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Oggetto ClosedCaption**](closedcaption-object.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo pause segnala al thread di streaming che diventa attivo.
+description: Il metodo Pause segnala al thread di streaming di diventare attivo.
 ms.assetid: c97da113-c5a7-422d-9215-70b556e0b8ca
-title: Metodo CSourceStream. pause (source. h)
+title: Metodo CSourceStream.Pause (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6f7cd3b38144edebd98ca655b32bf6092f44269
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 454f6e64461c036e9e3d9ef2f13033e5a210d783f3f6b734b7137a99b16402c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079311"
 ---
-# <a name="csourcestreampause-method"></a>CSourceStream. pause (metodo)
+# <a name="csourcestreampause-method"></a>Metodo CSourceStream.Pause
 
-Il `Pause` metodo segnala al thread di streaming di essere attivo.
+Il `Pause` metodo segnala al thread di streaming di diventare attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o e \_ imprevisto.
+Restituisce S \_ OK o E \_ UNEXPECTED.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CSourceStream:: Active**](csourcestream-active.md) chiama questo metodo. Quando il metodo [**CSourceStream:: ThreadProc**](csourcestream-threadproc.md) riceve la richiesta, chiama il metodo [**CSourceStream::D obufferprocessingloop**](csourcestream-dobufferprocessingloop.md) .
+Il [**metodo CSourceStream::Active**](csourcestream-active.md) chiama questo metodo. Quando il [**metodo CSourceStream::ThreadProc**](csourcestream-threadproc.md) riceve questa richiesta, chiama il metodo [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il metodo [**CSourceStream:: Active**](csourcestream-active.md) chiama questo me
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

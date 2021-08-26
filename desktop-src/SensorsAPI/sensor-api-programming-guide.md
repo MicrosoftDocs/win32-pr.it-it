@@ -1,21 +1,21 @@
 ---
-description: Questa sezione fornisce informazioni, incluso il codice di esempio, su come usare le funzionalità dell'API del sensore. Per informazioni complementari sulle varie interfacce di programmazione, vedere informazioni sull'API del sensore.
+description: Questa sezione fornisce informazioni, incluso il codice di esempio, su come usare le funzionalità dell'API Sensor. Per informazioni di base sulle varie interfacce di programmazione, vedere Informazioni sull'API Sensor.
 ms.assetid: 4c2ffd22-49ee-4318-bfa0-e0ce4d8c67bb
-title: Guida alla programmazione dell'API del sensore
+title: Guida alla programmazione dell'API Sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078cc99e88a1a4fd6a232220e08c53a99dfbdfb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5886564e66a0a8db64713b280b44f85a197430dc23523266bc45e66e44c956b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073241"
 ---
-# <a name="sensor-api-programming-guide"></a>Guida alla programmazione dell'API del sensore
+# <a name="sensor-api-programming-guide"></a>Guida alla programmazione dell'API Sensor
 
-Questa sezione fornisce informazioni, incluso il codice di esempio, su come usare le funzionalità dell'API del sensore. Per informazioni complementari sulle varie interfacce di programmazione, vedere [informazioni sull'API del sensore](about-the-sensor-api.md).
+Questa sezione fornisce informazioni, incluso il codice di esempio, su come usare le funzionalità dell'API Sensor. Per informazioni di base sulle varie interfacce di programmazione, vedere [Informazioni sull'API Sensor.](about-the-sensor-api.md)
 
-Il codice di esempio riportato in questa sezione usa le intestazioni incluse aggiuntive seguenti.
+Il codice di esempio in questa sezione usa le intestazioni incluse aggiuntive seguenti.
 
 
 ```C++
@@ -34,9 +34,9 @@ Il codice di esempio riportato in questa sezione usa le intestazioni incluse agg
 
 
 
-È inoltre necessario collegare a questi file di libreria associati aggiuntivi: propsys. lib e PortableDeviceGuids. lib.
+È anche necessario collegarsi a questi file di libreria associati aggiuntivi: Propsys.lib e PortableDeviceGuids.lib.
 
-Il codice di esempio in questa sezione usa le costanti seguenti per le categorie di sensori, i tipi e i campi dati. Queste costanti sono valori personalizzati definiti dall'esempio di driver TimeSensor nel kit driver di Windows. Si noti che, sebbene la piattaforma del sensore consenta la definizione e l'uso di tipi personalizzati come questi, è consigliabile usare i tipi definiti dalla piattaforma quando possibile.
+Il codice di esempio in questa sezione usa le costanti seguenti per le categorie di sensori, i tipi e i campi dati. Queste costanti sono valori personalizzati definiti dall'esempio di driver TimeSensor in Windows Driver Kit. Si noti che, anche se la piattaforma Sensor consente di definire e usare tipi personalizzati come questi, è consigliabile usare i tipi definiti dalla piattaforma quando possibile.
 
 
 ```C++
@@ -89,7 +89,7 @@ ULONG ulHour, ulMinute, ulSecond = 0;
 
 
 
-Il codice di esempio in questa sezione usa la funzione seguente per rilasciare i puntatori all'interfaccia COM.
+Il codice di esempio in questa sezione usa la funzione seguente per rilasciare puntatori a interfaccia COM.
 
 
 ```C++
@@ -107,21 +107,21 @@ template <class T> void SafeRelease(T **ppT)
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Recupero di un oggetto Sensor](retrieving-a-sensor.md)
+-   [Recupero di un oggetto sensore](retrieving-a-sensor.md)
 -   [Richiesta di autorizzazioni utente](requesting-user-permissions.md)
 -   [Recupero e impostazione delle proprietà dei sensori](setting-and-retrieving-sensor-properties.md)
--   [Verifica dei campi dati dei sensori supportati](checking-for-supported-sensor-data-fields.md)
--   [Uso degli eventi dell'API del sensore](using-sensor-api-events.md)
--   [Recupero dei valori dei dati del sensore](retrieving-sensor-data-fields.md)
+-   [Controllo dei campi dati dei sensori supportati](checking-for-supported-sensor-data-fields.md)
+-   [Uso degli eventi dell'API Sensor](using-sensor-api-events.md)
+-   [Recupero dei valori dei dati dei sensori](retrieving-sensor-data-fields.md)
 -   [Recupero di tipi di vettore](retrieving-vector-types.md)
 -   [Uso di sensori logici](using-logical-sensors.md)
--   [Creazione di interfacce utente Light-Aware](creating-light-aware-user-interfaces.md)
+-   [Creazione Light-Aware interfacce utente](creating-light-aware-user-interfaces.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni sull'API del sensore](about-the-sensor-api.md)
+[Informazioni sull'API Sensor](about-the-sensor-api.md)
 </dt> </dl>
 
  

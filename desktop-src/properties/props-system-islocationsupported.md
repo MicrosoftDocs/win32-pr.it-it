@@ -1,19 +1,19 @@
 ---
-description: Indica se un percorso è stato indicizzato (in locale o in remoto) al momento dell'aggiunta alla libreria.
+description: Identifica se una posizione è stata indicizzata (in locale o in remoto) al momento dell'aggiunta alla libreria.
 ms.assetid: 5BAFB5A4-33C7-4522-B9C1-2F68D7AFC31B
-title: System. IsLocationSupported
+title: System.IsLocationSupported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ddc7343d1ef3cca37bd3b276008146458e9eab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8480eeab0d5dcc32e750af593069f48b2a4728546e41909fa9ee8df4f11ffc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058781"
 ---
-# <a name="systemislocationsupported"></a>System. IsLocationSupported
+# <a name="systemislocationsupported"></a>System.IsLocationSupported
 
-Indica se un percorso è stato indicizzato (in locale o in remoto) al momento dell'aggiunta alla libreria.
+Identifica se una posizione è stata indicizzata (in locale o in remoto) al momento dell'aggiunta alla libreria.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

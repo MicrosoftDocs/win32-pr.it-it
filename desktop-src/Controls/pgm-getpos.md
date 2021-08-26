@@ -1,9 +1,9 @@
 ---
-title: Messaggio PGM_GETPOS (COMmctrl. h)
-description: Recupera la posizione di scorrimento corrente del controllo cercapersone. È possibile inviare questo messaggio in modo esplicito o utilizzare la \_ macro GetPos del cercapersone.
+title: PGM_GETPOS messaggio (Commctrl.h)
+description: Recupera la posizione di scorrimento corrente del controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro GetPos del \_ pager.
 ms.assetid: 1e0f967a-3290-43b7-b812-8cf56abf2d32
 keywords:
-- Controlli di Windows Message PGM_GETPOS
+- PGM_GETPOS dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 611a27e9cb952c5be190fa041af3d238f0184b03
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16f1d5608b720d5a5d3d661a368d094da9469d71108874a6cec5495bf120cc54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046871"
 ---
-# <a name="pgm_getpos-message"></a>\_Messaggio GETPOS PGM
+# <a name="pgm_getpos-message"></a>Messaggio \_ GETPOS PGM
 
-Recupera la posizione di scorrimento corrente del controllo cercapersone. È possibile inviare questo messaggio in modo esplicito o utilizzare la macro [**\_ GetPos del cercapersone**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getpos) .
+Recupera la posizione di scorrimento corrente del controllo pager. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetPos del pager.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getpos)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce un valore INT che contiene la posizione di scorrimento corrente, in 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

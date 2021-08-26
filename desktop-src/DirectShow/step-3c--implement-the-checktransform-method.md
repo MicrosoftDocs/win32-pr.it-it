@@ -4,25 +4,25 @@ ms.assetid: e780df46-bf47-4334-b788-05ad8179f051
 title: Passaggio 3C. Implementare il metodo CheckTransform
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78148701fc54e73a6970d45fde95d70f4cf0df3a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 430ad933acfa7fc41a8b075183080e0b710a5d4780b55fa89cd4bf80984c1edc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075591"
 ---
 # <a name="step-3c-implement-the-checktransform-method"></a>Passaggio 3C. Implementare il metodo CheckTransform
 
-Questo è il passaggio 3C dell'esercitazione sulla [scrittura dei filtri di trasformazione](writing-transform-filters.md).
+Questo è il passaggio 3C dell'esercitazione [Scrittura di filtri di trasformazione.](writing-transform-filters.md)
 
 > [!Note]  
-> Questo passaggio non è necessario per i filtri che derivano da **CTransInPlaceFilter**.
+> Questo passaggio non è necessario per i filtri che derivano da **CTransInPlaceFilter.**
 
  
 
-Il metodo [**CTransformFilter:: CheckTransform**](ctransformfilter-checktransform.md) controlla se un tipo di output proposto è compatibile con il tipo di input corrente. Il metodo viene chiamato anche se il pin di input si riconnette dopo la connessione del PIN di output.
+Il [**metodo CTransformFilter::CheckTransform**](ctransformfilter-checktransform.md) controlla se un tipo di output proposto è compatibile con il tipo di input corrente. Il metodo viene chiamato anche se il pin di input si riconnette dopo la connessione del pin di output.
 
-Nell'esempio seguente viene verificato se il formato è RLE8 video; le dimensioni dell'immagine corrispondono al formato di input; e le voci della tavolozza sono le stesse. Rifiuta inoltre i rettangoli di origine e di destinazione che non corrispondono alla dimensione dell'immagine.
+L'esempio seguente verifica se il formato è video RLE8. le dimensioni dell'immagine corrispondono al formato di input; e le voci della tavolozza sono le stesse. Rifiuta anche i rettangoli di origine e di destinazione che non corrispondono alle dimensioni dell'immagine.
 
 
 ```C++
@@ -96,23 +96,23 @@ HRESULT CRleFilter::CheckTransform(
 
 
 
-**Riconnessioni pin**
+**Bloccare le riconnessioni**
 
-Le applicazioni possono disconnettere e riconnettere i pin. Si supponga che un'applicazione connetta entrambi i pin, disconnette il pin di input e quindi riconnette il pin di input usando una nuova dimensione dell'immagine. In tal caso, **CheckTransform** ha esito negativo perché le dimensioni dell'immagine non corrispondono più. Questo comportamento è ragionevole, sebbene anche il filtro possa provare a riconnettere il pin di output con un nuovo tipo di supporto.
+Le applicazioni possono disconnettere e riconnettere i pin. Si supponga che un'applicazione connetta entrambi i pin, disconnette il pin di input e quindi riconnette il pin di input usando una nuova dimensione dell'immagine. In tal caso, **CheckTransform ha** esito negativo perché le dimensioni dell'immagine non corrispondono più. Questo comportamento è ragionevole, anche se il filtro potrebbe anche provare a riconnettere il pin di output con un nuovo tipo di supporto.
 
-Successivo: [passaggio 4. Impostare le proprietà dell'allocatore](step-4--set-allocator-properties.md).
+Passaggio [4. Impostare le proprietà dell'allocatore](step-4--set-allocator-properties.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riconnessione di pin](reconnecting-pins.md)
+[Riconnessione dei pin](reconnecting-pins.md)
 </dt> <dt>
 
-[Rettangoli di origine e di destinazione nei renderer video](source-and-target-rectangles-in-video-renderers.md)
+[Rettangoli di origine e destinazione nei renderer video](source-and-target-rectangles-in-video-renderers.md)
 </dt> <dt>
 
-[Scrittura di filtri DirectShow](writing-directshow-filters.md)
+[Scrittura DirectShow filtri](writing-directshow-filters.md)
 </dt> </dl>
 
  

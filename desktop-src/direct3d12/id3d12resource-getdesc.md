@@ -1,11 +1,11 @@
 ---
-title: ID3D12Resource metodo getdesc
+title: Metodo ID3D12Resource GetDesc
 description: Ottiene la descrizione della risorsa.
 ms.assetid: B8D84D69-6B13-4E86-8EF6-A841354B1E5C
 keywords:
-- Metodo getdesc
-- Metodo getdesc, interfaccia ID3D12Resource
-- Interfaccia ID3D12Resource, metodo getdesc
+- Metodo GetDesc
+- Metodo GetDesc, interfaccia ID3D12Resource
+- Interfaccia ID3D12Resource, metodo GetDesc
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location:
 - d3d12.h
-ms.openlocfilehash: 5be3f6f825370c467388805c84096240441d09a5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 179acfa051212a2f98eb94441cbfad9fd7d9bbab47e4616f82a4f4cff3d41035
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069631"
 ---
-# <a name="id3d12resourcegetdesc-method"></a>Metodo ID3D12Resource:: getdesc
+# <a name="id3d12resourcegetdesc-method"></a>Metodo ID3D12Resource::GetDesc
 
 Ottiene la descrizione della risorsa.
 
@@ -43,7 +43,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **D3D12 \_ Resource \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)**
+Tipo: **[ **D3D12 \_ RESOURCE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)**
 
 Struttura di descrizione della risorsa Direct3D 12.
 
@@ -73,7 +73,7 @@ inline UINT64 GetRequiredIntermediateSize(
 
 
 
-Vedere il [codice di esempio nella Guida di riferimento a D3D12](notes-on-example-code.md).
+Fare riferimento al [codice di esempio in D3D12 Reference (Riferimento D3D12).](notes-on-example-code.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -82,9 +82,9 @@ Vedere il [codice di esempio nella Guida di riferimento a D3D12](notes-on-exampl
 [**ID3D12Resource**](/windows/desktop/api/d3d12/nn-d3d12-id3d12resource)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
