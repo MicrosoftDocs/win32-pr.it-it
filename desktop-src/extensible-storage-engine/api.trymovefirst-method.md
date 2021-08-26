@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. TryMoveFirst'
-title: API. TryMoveFirst, metodo
+description: Altre informazioni sul metodo Api.TryMoveFirst
+title: Metodo Api.TryMoveFirst
 TOCTitle: 'TryMoveFirst method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryMoveFirst(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trymovefirst(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 624fba29ab6fe653b7af674e32b907ea3934d643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53b4f126e93986ad0818e2d6e333d70b848a6653343e14ed9fdc010013ffc651
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066971"
 ---
-# <a name="apitrymovefirst-method"></a>API. TryMoveFirst, metodo
+# <a name="apitrymovefirst-method"></a>Metodo Api.TryMoveFirst
 
-Provare a spostarsi sul primo record della tabella. Se la tabella è vuota, viene restituito false, se viene rilevato un errore diverso, viene generata un'eccezione.
+Provare a passare al primo record della tabella. Se la tabella è vuota, restituisce false, se viene rilevato un errore diverso viene generata un'eccezione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,20 +65,20 @@ public static bool TryMoveFirst(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da posizionare.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se lo spostamento ha avuto esito positivo.  
 
 ## <a name="see-also"></a>Vedi anche
@@ -87,6 +87,6 @@ True se lo spostamento ha avuto esito positivo.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

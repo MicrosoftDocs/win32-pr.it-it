@@ -1,7 +1,7 @@
 ---
-description: Crea il valore del colore negativo di un valore di colore.
+description: Crea il valore di colore negativo di un valore di colore.
 ms.assetid: 74143126-93f8-49fa-abe3-fd730b644d87
-title: Funzione D3DXColorNegative (D3dx9math. h)
+title: Funzione D3DXColorNegative (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a6d4d8559e64580897aec5261c450dc739496e75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c046702b81ce60f2e50817cb98c04686d9a35e964a141d88fd70dd05654e3067
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069331"
 ---
-# <a name="d3dxcolornegative-function"></a>D3DXColorNegative (funzione)
+# <a name="d3dxcolornegative-function"></a>Funzione D3DXColorNegative
 
-Crea il valore del colore negativo di un valore di colore.
+Crea il valore di colore negativo di un valore di colore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ D3DXCOLOR* D3DXColorNegative(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*computer* \[ in\]
+*pC* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> </dl>
 
@@ -63,15 +63,15 @@ Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che corrisponde al valore di colore negativo del valore del colore.
+Questa funzione restituisce un puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il valore di colore negativo del valore del colore.
 
 ## <a name="remarks"></a>Commenti
 
-Il canale alfa di input viene copiato, non modificato, nel canale alfa di output.
+Il canale alfa di input viene copiato, senza modifiche, nel canale alfa di output.
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXColorNegative** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXColorNegative** può essere usata come parametro per un'altra funzione.
 
-Questa funzione restituisce il valore di colore negativo sottraendo 1,0 dai componenti colore della struttura [**D3DXCOLOR**](d3dxcolor.md) , come illustrato nell'esempio seguente.
+Questa funzione restituisce il valore di colore negativo sottraendo 1,0 dai componenti di colore della struttura [**D3DXCOLOR,**](d3dxcolor.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -86,8 +86,8 @@ pOut->r = 1.0f - pC->r;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

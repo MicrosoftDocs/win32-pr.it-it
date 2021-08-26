@@ -1,6 +1,6 @@
 ---
-title: M3x4-PS
-description: Moltiplica un vettore a 3 componenti per una matrice 3x4. | M3x4-PS
+title: m3x4 - ps
+description: Moltiplica un vettore a 3 componenti per una matrice 3x4. | m3x4 - ps
 ms.assetid: b749d3cd-2acf-450c-94f2-fea5e1c8f4d2
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4c245f4765853301a7c8319c8038b9ed342e3715
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 21c7f5ed65531e4022f503acf1b2ca994c860894824b2614220e16d36743d52b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067931"
 ---
-# <a name="m3x4---ps"></a>M3x4-PS
+# <a name="m3x4---ps"></a>m3x4 - ps
 
 Moltiplica un vettore a 3 componenti per una matrice 3x4.
 
@@ -24,7 +24,7 @@ Moltiplica un vettore a 3 componenti per una matrice 3x4.
 
 
 
-| M3x4 DST, src0, src1 |
+| m3x4 dst, src0, src1 |
 |----------------------|
 
 
@@ -33,7 +33,7 @@ Moltiplica un vettore a 3 componenti per una matrice 3x4.
 
 dove
 
--   DST è il registro di destinazione. Result è un vettore a 4 componenti.
+-   dst è il registro di destinazione. Il risultato è un vettore a 4 componenti.
 -   src0 è un registro di origine che rappresenta un vettore a 3 componenti.
 -   src1 è un registro di origine che rappresenta una matrice 3x4, che corrisponde al primo di 4 registri consecutivi.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | m3x4                  |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -49,9 +49,9 @@ dove
 
  
 
-Per il registro di destinazione è richiesta la maschera xyzw (impostazione predefinita). I modificatori negate e swizzle sono consentiti per src0 ma non per src1.
+La maschera xyzw (predefinita) è obbligatoria per il registro di destinazione. I modificatori di negazione e swizzle sono consentiti per src0 ma non per src1.
 
-Il frammento di codice seguente mostra le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -64,9 +64,9 @@ dest.w = (src0.x*src4.x) + (src0.y*src4.y) + (src0.z*src4.z);
 
 
 
-Il vettore di input si trova in Register src0. La matrice di input 3x4 si trova nel registro src1 e i successivi due registri superiori, come illustrato nell'espansione riportata di seguito.
+Il vettore di input si trova nel registro src0. La matrice di input 3x4 si trova nel registro src1 e nei due registri successivi, come illustrato nell'espansione seguente.
 
-Questa operazione viene in genere usata per trasformare un vettore di posizione in base a una matrice che ha un effetto proiettivo ma non applica alcuna traduzione. Questa istruzione viene implementata come coppia di prodotti punto, come illustrato di seguito.
+Questa operazione viene comunemente usata per trasformare un vettore di posizione da una matrice che ha un effetto proiettativo ma non applica alcuna traslazione. Questa istruzione viene implementata come coppia di prodotti punto, come illustrato di seguito.
 
 
 ```
@@ -84,7 +84,7 @@ dp3 r0.w, r1, c3
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: DFMA (SM5-ASM)
-description: Esegue un'aggiunta di moltiplicazione con fusione.
+title: dfma (sm5 - asm)
+description: Esegue un'aggiunta a moltiplicazione fusa.
 ms.assetid: 5BE96CDB-1756-4EBE-B4CC-69EFF098A4F1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e6cafc71dbc7d57655524b1b87c9c5b9ba20f3
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 84952ed594ba8541223df072fa59550aded581e5517dee3d6f4168b7661a87aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068391"
 ---
-# <a name="dfma-sm5---asm"></a>DFMA (SM5-ASM)
+# <a name="dfma-sm5---asm"></a>dfma (sm5 - asm)
 
-Esegue un'aggiunta di moltiplicazione con fusione.
+Esegue un'aggiunta a moltiplicazione fusa.
 
 
 
-| DFMA \[ \_ Sat \] dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle \] , \[ - \] src1 \[ \_ ABS \] \[ . Swizzle \] , \[ - \] src2 \[ \_ ABS \] \[ . Swizzle\] |
+| dfma \[ \_ sat \] dest \[ \] .mask, \[ - \] src0 \[ \_ abs \] \[ .swizzle, \] \[ - \] src1 \[ \_ abs \] \[ .swizzle, \] \[ - \] src2 \[ \_ abs \] \[ .swizzle\] |
 |----------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Esegue un'aggiunta di moltiplicazione con fusione.
 
 | Elemento                                                            | Descrizione                                                                                                                                               |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione. Il valore del risultato deve essere accurato per 0,5 ULP rispetto.<br/> *dest*  =  *src0* \* *src1*  +  *src2*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti da moltiplicare con *src1*.<br/>                                                                                                 |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nei \] componenti da moltiplicare con *src0*.<br/>                                                                                                 |
-| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[nei \] componenti da aggiungere a *src0* \* *src1*.<br/>                                                                                               |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione. Il valore del risultato deve essere preciso a 0,5 ULP.<br/> *dest*  =  *src0* \* *src1*  +  *src2*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] I componenti da moltiplicare con *src1*.<br/>                                                                                                 |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] I componenti da moltiplicare con *src0*.<br/>                                                                                                 |
+| <span id="src2"></span><span id="SRC2"></span>*src2*<br/> | \[in \] Componenti da aggiungere a *src0* \* *src1*.<br/>                                                                                               |
 
 
 
@@ -39,17 +39,17 @@ Esegue un'aggiunta di moltiplicazione con fusione.
 
 ## <a name="remarks"></a>Commenti
 
-Gli shader che usano questa istruzione verranno contrassegnati con un flag shader che ne causerà la mancata associazione a meno che non vengano soddisfatte tutte le condizioni seguenti.
+Gli shader che usano questa istruzione verranno contrassegnati con un flag shader che ne causerà l'esito negativo, a meno che non vengano soddisfatte tutte le condizioni seguenti.
 
--   Il sistema supporta DirectX 11,1.
--   Il sistema include un driver WDDM 1,2.
--   Il driver segnala il supporto per questa istruzione tramite le **\_ \_ Opzioni d3d11 dei dati della funzionalità d3d11 \_ \_ . ExtendedDoublesShaderInstructions** impostato su **true**.
+-   Il sistema supporta DirectX 11.1.
+-   Il sistema include un driver WDDM 1.2.
+-   Il driver segnala il supporto per questa istruzione **tramite D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS. ExtendedDoublesShaderInstructions** impostato su **TRUE.**
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -57,7 +57,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -65,12 +65,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -80,7 +80,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

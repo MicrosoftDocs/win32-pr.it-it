@@ -5,7 +5,7 @@ ms.assetid: 2c6b2706-4140-4c61-9f67-12f925e94165
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IWTSServerChannelManager Servizi Desktop remoto
-- Interfaccia IWTSServerChannelManager Servizi Desktop remoto, descritta
+- Interfaccia IWTSServerChannelManager Servizi Desktop remoto , descritta
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b76deff5829f6c01b32703661588991657e95ab4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1506fd2d0c28d6c3331a44eda2b2f21152f2870134154f80356b7a4be3144fcc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989321"
 ---
 # <a name="iwtsserverchannelmanager-interface"></a>Interfaccia IWTSServerChannelManager
 

@@ -1,6 +1,6 @@
 ---
-description: Alcuni degli elementi di sistema disponibili nel pannello di controllo sono estendibili. Per installare un'estensione del pannello di controllo, registrare l'estensione della shell nel modo seguente, dove nome è il nome predefinito dell'elemento di sistema (vedere la tabella riportata di seguito).
-title: Estensione degli elementi del pannello di controllo di sistema
+description: Alcuni degli elementi di sistema trovati nel Pannello di controllo sono estendibili. Per installare un'Pannello di controllo, registrare l'estensione shell come indicato di seguito, dove nome è il nome predefinito dell'elemento di sistema (vedere la tabella seguente).
+title: Estensione degli elementi di Pannello di controllo sistema
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: b8b18b71-c95f-4c71-8df4-fe9342ce0165
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 9b0f6628d7bc75378915c1d9f3e20327478742df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c5948ad99111dc87578dfa15c5278cf03d5918e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104993869"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469748"
 ---
-# <a name="extending-system-control-panel-items"></a>Estensione degli elementi del pannello di controllo di sistema
+# <a name="extending-system-control-panel-items"></a>Estensione degli elementi di Pannello di controllo sistema
 
-Alcuni degli elementi di sistema disponibili nel pannello di controllo sono estendibili. Per installare un'estensione del pannello di controllo, registrare l'estensione della shell nel modo seguente, dove *nome* è il nome predefinito dell'elemento di sistema (vedere la tabella riportata di seguito).
+Alcuni degli elementi di sistema trovati nel Pannello di controllo sono estendibili. Per installare un'Pannello di controllo, registrare l'estensione shell come indicato di seguito, dove *nome* è il nome predefinito dell'elemento di sistema (vedere la tabella seguente).
 
 ```
 HKEY_LOCAL_MACHINE
@@ -32,122 +32,58 @@ HKEY_LOCAL_MACHINE
                         PropertySheetHandlers
 ```
 
-Questa operazione è simile alla modalità di registrazione di un'estensione per un oggetto shell predefinito. Poiché le uniche estensioni della shell supportate dagli elementi del pannello di controllo sono finestre delle proprietà, la registrazione deve trovarsi nella sottochiave **ShellEx** \\ **PropertySheetHandlers**
+Questo è simile al modo in cui si registra un'estensione per un oggetto Shell predefinito. Poiché le uniche estensioni della shell supportate Pannello di controllo elementi sono finestre delle proprietà, la registrazione deve essere nella **sottochiave** \\ **shellex PropertySheetHandlers.**
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento del pannello di controllo</th>
-<th><em>nome</em></th>
-<th>Commenti</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Visualizza</td>
-<td>Reception</td>
-<td>Supporta anche la sostituzione della pagina <strong>Desktop</strong> .
-<blockquote>
-[!Note]<br />
-Questa operazione non è più supportata in Windows Vista.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>Impostazioni di visualizzazione avanzate</td>
-<td>Dispositivo</td>
-<td>Proprietà avanzate non specifiche dell'hardware.
-<blockquote>
-[!Note]<br />
-Questa operazione non è più supportata in Windows Vista.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>Impostazioni di visualizzazione avanzate</td>
-<td>Visualizza</td>
-<td>Proprietà avanzate specifiche dell'hardware.
-<blockquote>
-[!Note]<br />
-Questa operazione non è più supportata in Windows Vista.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>Opzioni Internet</td>
-<td>Internet</td>
-<td>Il numero massimo di pagine di estensione è 18.</td>
-</tr>
-<tr class="odd">
-<td>Tastiera</td>
-<td>Tastiera</td>
-<td>Il numero massimo di pagine di estensione è 30.</td>
-</tr>
-<tr class="even">
-<td>Mouse</td>
-<td>Mouse</td>
-<td>Supporta anche la sostituzione di pagine standard. Il numero massimo di pagine di estensione è 8.</td>
-</tr>
-<tr class="odd">
-<td>Opzioni risparmio energia</td>
-<td>Potenza</td>
-<td>Il numero massimo di pagine, incluse le pagine standard, è 18.</td>
-</tr>
-<tr class="even">
-<td>Sistema</td>
-<td>Sistema</td>
-<td>Il numero massimo di pagine di estensione è 8.
-<blockquote>
-[!Note]<br />
-Questa operazione non è più supportata in Windows Vista.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Pannello di controllo elemento | <em>nome</em> | Commenti | 
+|--------------------|---------------|---------|
+| Visualizza | Scrivania | Supporta anche la sostituzione della <strong>pagina Desktop.</strong><blockquote>[!Note]<br />Questa funzionalità non è più supportata in Windows Vista.</blockquote><br /> | 
+| Visualizzazione Impostazioni avanzate | Dispositivo | Proprietà avanzate non specifiche delhardware.<blockquote>[!Note]<br />Questa funzionalità non è più supportata in Windows Vista.</blockquote><br /> | 
+| Visualizzazione Impostazioni avanzate | Visualizza | Proprietà avanzate specifiche dell'hardware.<blockquote>[!Note]<br />Questa funzionalità non è più supportata in Windows Vista.</blockquote><br /> | 
+| Opzioni Internet | Internet | Il numero massimo di pagine di estensione è 18. | 
+| Tastiera | Tastiera | Il numero massimo di pagine di estensione è 30. | 
+| Mouse | Mouse | Supporta anche la sostituzione delle pagine standard. Il numero massimo di pagine di estensione è 8. | 
+| Opzioni risparmio energia | Elettricità | Il numero massimo di pagine, incluse le pagine standard, è 18. | 
+| Sistema | Sistema | Il numero massimo di pagine di estensione è 8.<blockquote>[!Note]<br />Questa funzionalità non è più supportata in Windows Vista.</blockquote><br /> | 
+
 
 
 
  
 
-L'elemento **Installazione applicazioni** nel pannello di controllo di Windows XP non è una finestra delle proprietà e pertanto non può essere esteso dai metodi descritti qui. Il relativo contenuto viene invece ottenuto dagli autori dell'applicazione. Per ulteriori informazioni sull'aggiunta di contenuto per l'aggiunta **o la rimozione di programmi**, vedere [**IAppPublisher**](/windows/desktop/api/Shappmgr/nn-shappmgr-iapppublisher), [**IEnumPublishedApps**](/windows/desktop/api/Shappmgr/nn-shappmgr-ienumpublishedapps)e [**IPublishedApp**](/windows/desktop/api/Shappmgr/nn-shappmgr-ipublishedapp).
+**L'elemento Installazione** applicazioni nel Windows XP Pannello di controllo non è una finestra delle proprietà e pertanto non può essere esteso dai metodi descritti qui. Il contenuto viene invece ottenuto dagli editori di applicazioni. Per altre informazioni sull'aggiunta di contenuto **a** Installazione applicazioni, vedere [**IAppPublisher,**](/windows/desktop/api/Shappmgr/nn-shappmgr-iapppublisher) [**IEnumPublishedApps**](/windows/desktop/api/Shappmgr/nn-shappmgr-ienumpublishedapps)e [**IPublishedApp.**](/windows/desktop/api/Shappmgr/nn-shappmgr-ipublishedapp)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Elementi del pannello di controllo](control-panel-applications.md)
+[Pannello di controllo elementi](control-panel-applications.md)
 </dt> <dt>
 
 [Linee guida sull'esperienza utente](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrazione degli elementi del pannello di controllo](registering-control-panel-items.md)
+[Registrazione di Pannello di controllo elementi](registering-control-panel-items.md)
 </dt> <dt>
 
 [Uso di CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Elaborazione del messaggio del pannello di controllo](message-processing.md)
+[Pannello di controllo di messaggi](message-processing.md)
 </dt> <dt>
 
-[Esecuzione degli elementi del pannello di controllo](executing-control-panel-items.md)
+[Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 </dt> <dt>
 
-[Assegnazione delle categorie del pannello di controllo](assigning-control-panel-categories.md)
+[Assegnazione di Pannello di controllo categorie](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Creazione di collegamenti alle attività ricercabili per un elemento del pannello di controllo](creating-searchable-task-links.md)
+[Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Accesso al pannello di controllo in modalità provvisoria in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Accesso al Pannello di controllo in modalità Cassaforte in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

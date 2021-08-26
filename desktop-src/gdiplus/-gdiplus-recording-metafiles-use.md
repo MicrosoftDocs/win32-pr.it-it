@@ -4,18 +4,18 @@ ms.assetid: 062de6c2-9f82-415d-860e-2d1afd2ac027
 title: Registrazione di metafile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 129b8fe810b1394921c60540488c93676341c562
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 047cdce842a9b44096ebd0f866e1b1551a5f951e138557062dff5e8f8d54f3ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014781"
 ---
 # <a name="recording-metafiles"></a>Registrazione di metafile
 
-La classe [**metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) , che eredita dalla classe [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) , consente di registrare una sequenza di comandi di disegno. I comandi registrati possono essere archiviati in memoria, salvati in un file o salvati in un flusso. I metafile possono contenere grafica vettoriale, immagini raster e testo.
+La [**classe Metafile,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) che eredita dalla [**classe Image,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) consente di registrare una sequenza di comandi di disegno. I comandi registrati possono essere archiviati in memoria, salvati in un file o salvati in un flusso. I metafile possono contenere grafica vettoriale, immagini raster e testo.
 
-Nell'esempio seguente viene creato un oggetto [**metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Il codice usa l'oggetto **metafile** per registrare una sequenza di comandi grafici e quindi Salva i comandi registrati in un file denominato SampleMetafile. EMF. Si noti che il costruttore di **metafile** riceve un handle del contesto di dispositivo e il costruttore di [**grafica**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) riceve l'indirizzo dell'oggetto **metafile** . La registrazione viene arrestata (e i comandi registrati vengono salvati nel file) quando l'oggetto **Graphics** esce dall'ambito. Le ultime due righe di codice visualizzano il metafile creando un nuovo oggetto **Graphics** e passando l'indirizzo dell'oggetto **metafile** al metodo **DrawImage** di quell'oggetto **Graphics** . Si noti che il codice usa lo stesso oggetto **metafile** per registrare e visualizzare (riprodurre) il metafile.
+Nell'esempio seguente viene creato [**un oggetto Metafile.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) Il codice usa **l'oggetto Metafile** per registrare una sequenza di comandi grafici e quindi salva i comandi registrati in un file denominato SampleMetafile.emf. Si noti che **il costruttore metafile** riceve un handle del contesto di dispositivo e il [**costruttore Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) riceve l'indirizzo dell'oggetto **Metafile.** La registrazione si interrompe (e i comandi registrati vengono salvati nel file) quando **l'oggetto Graphics** esce dall'ambito. Le ultime due righe di codice visualizzano il metafile creando un nuovo oggetto **Graphics** e passando l'indirizzo dell'oggetto **Metafile** al **metodo DrawImage** di tale **oggetto Graphics.** Si noti che il codice usa lo stesso **oggetto Metafile** per registrare e visualizzare (riprodurre) il metafile.
 
 
 ```
@@ -51,13 +51,13 @@ playbackGraphics.DrawImage(&metafile, 200, 100);
 
 
 > [!Note]  
-> Per registrare un metafile, è necessario costruire un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un oggetto [**metafile**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) . La registrazione del metafile termina quando l'oggetto **grafico** viene eliminato o esce dall'ambito.
+> Per registrare un metafile, è necessario costruire un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basato su un [**oggetto Metafile.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-metafile) La registrazione del metafile termina quando **l'oggetto Graphics** viene eliminato o esce dall'ambito.
 
  
 
-Un metafile contiene il proprio stato di grafica, definito dall'oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) usato per registrare il metafile. Tutte le proprietà dell'oggetto **Graphics** (area di ritaglio, trasformazione globale, modalità smussatura e like) impostate durante la registrazione del metafile verranno archiviate nel metafile. Quando si Visualizza il metafile, il disegno viene eseguito in base alle proprietà archiviate.
+Un metafile contiene il proprio stato grafico, definito [**dall'oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) usato per registrare il metafile. Tutte le proprietà dell'oggetto **Graphics** (area di ritaglio, trasformazione globale, modalità smoothing e simili) impostate durante la registrazione del metafile verranno archiviate nel metafile. Quando si visualizza il metafile, il disegno verrà eseguito in base alle proprietà archiviate.
 
-Nell'esempio seguente, si supponga che la modalità di smussatura sia stata impostata su SmoothingModeNormal durante la registrazione del metafile. Anche se la modalità di smussatura dell'oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) usato per la riproduzione è impostata su SmoothingModeHighQuality, il metafile verrà riprodotto in base all'impostazione SmoothingModeNormal. Si tratta della modalità di smussamento impostata durante la registrazione, che è importante, non sulla modalità di smussamento impostata prima della riproduzione.
+Nell'esempio seguente si supponga che la modalità smoothing sia stata impostata su SmoothingModeNormal durante la registrazione del metafile. Anche se la modalità smoothing dell'oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) usato per la riproduzione è impostata su SmoothingModeHighQuality, il metafile verrà riprodotto in base all'impostazione SmoothingModeNormal. È importante impostare la modalità di smussamento durante la registrazione, non la modalità di smoothing impostata prima della riproduzione.
 
 
 ```

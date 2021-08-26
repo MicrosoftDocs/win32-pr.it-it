@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. sedeleted (metodo)
-description: Il metodo sedeleted sposta una playlist nella cartella degli elementi eliminati.
+title: Metodo PlaylistCollection.setDeleted
+description: Il metodo setDeleted sposta una playlist nella cartella degli elementi eliminati.
 ms.assetid: c41f7e89-11c8-4d55-91eb-a89e6f39e56b
 keywords:
-- Metodo sedeleted Media Player Windows
-- Metodo sedeleted Windows Media Player, Classe PlaylistCollection
-- Classe PlaylistCollection Windows Media Player, metodo sedeleted
+- Metodo setDeleted Windows Media Player
+- Metodo setDeleted Windows Media Player , classe PlaylistCollection
+- Classe PlaylistCollection Windows Media Player , metodo setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2953066f115ebec05e7ee90e57a171884986d156
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c14c36ff8a60c95ee1f5e1f85a46991660a6e5bae17367c01cec3d00da3d1f06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901131"
 ---
-# <a name="playlistcollectionsetdeleted-method"></a>PlaylistCollection. sedeleted (metodo)
+# <a name="playlistcollectionsetdeleted-method"></a>Metodo PlaylistCollection.setDeleted
 
-Il metodo **Sedeleted** sposta una playlist nella cartella degli elementi eliminati.
+Il **metodo setDeleted** sposta una playlist nella cartella degli elementi eliminati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ PlaylistCollection.setDeleted(
 
 <dl> <dt>
 
-*playlist* \[ in\]
+*playlist* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **playlist** da spostare.
+Oggetto **Playlist** da spostare.
 
 </dd> <dt>
 
-valore *true* \[ in\]
+*true* \[ Pollici\]
 </dt> <dd>
 
 Specificare sempre questo valore.
@@ -63,7 +63,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-**Windows Media Player 10 Mobile**: questo metodo non è supportato.
+**Windows Media Player 10 Mobile:** questo metodo non è supportato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,7 +71,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0, Windows Media Player versione 7,1 o Windows Media Player per Windows XP. Questo metodo non è supportato per Windows Media Player 9 Series o versioni successive.<br/> |
+| Versione<br/> | Windows Media Player versione 7.0, Windows Media Player 7.1 o Windows Media Player per Windows XP. Questo metodo non è supportato per Windows Media Player serie 9 o versioni successive.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                                                              |
 
 
@@ -80,7 +80,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PlaylistCollection (oggetto)**](playlistcollection-object.md)
+[**Oggetto PlaylistCollection**](playlistcollection-object.md)
 </dt> </dl>
 
  

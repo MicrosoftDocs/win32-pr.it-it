@@ -4,18 +4,18 @@ description: Questo argomento fornisce l'esempio di codice completo usato nell'e
 ms.assetid: 5d1e1f21-b541-4a61-8f04-e1e767b3a23e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1a01e983f483503b42a0ac244453f14665460f
-ms.sourcegitcommit: 07b756a2f350efa5cfd5024a723ef392274ac3d9
+ms.openlocfilehash: 26940947a1806ab5e265720aa681b37cd9f93d1ac7f80ef69d72ce91a3ea8d5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "106320451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068681"
 ---
 # <a name="complete-code-for-a-directx-framework"></a>Codice completo per un framework DirectX
 
-Questo argomento fornisce l'esempio di codice completo usato nell'esercitazione [Introduzione a DirectX per Windows](getting-started-with-a-directx-game.md).
+In questo argomento viene fornito l'esempio di codice completo usato nell'esercitazione Introduzione a [DirectX per](getting-started-with-a-directx-game.md)Windows .
 
-Questo codice presuppone che si stia usando Microsoft Visual Studio 2013 e che sia stato creato un progetto Win32 vuoto.
+Questo codice presuppone che si sta usando Microsoft Visual Studio 2013 e che sia stato creato un progetto Win32 vuoto.
 
 In questo argomento sono contenute le sezioni seguenti:
 
@@ -49,14 +49,14 @@ Questo esempio non è disponibile per il download.
 | Requisito | Valore |
 |--------------------------|------------------------|
 | Client minimo supportato | Windows 8.1            |
-| Server minimo supportato | Windows Server 2012 R2 |
+| Server minimo supportato | R2 per Windows Server 2012 |
 | SDK minimo necessario     | Visual Studio 2013     |
 
 <span id="view_codecpp"></span>
 
 ## <a name="view-the-code-c"></a>Visualizzare il codice (C++)
 
-## <a name="cubecpp"></a>Cube. cpp
+## <a name="cubecpp"></a>Cube.cpp
 
 
 ```C++
@@ -142,7 +142,7 @@ INT WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 
 
-## <a name="mainclassh"></a>MainClass. h
+## <a name="mainclassh"></a>MainClass.h
 
 
 ```C++
@@ -212,7 +212,7 @@ static std::wstring m_windowClassName;
 
 
 
-## <a name="mainclasscpp"></a>MainClass. cpp
+## <a name="mainclasscpp"></a>MainClass.cpp
 
 
 ```C++
@@ -425,7 +425,7 @@ LRESULT CALLBACK MainClass::StaticWindowProc(
 
 
 
-## <a name="deviceresourcesh"></a>DeviceResources. h
+## <a name="deviceresourcesh"></a>DeviceResources.h
 
 
 ```C++
@@ -509,7 +509,7 @@ private:
 
 
 
-## <a name="deviceresourcescpp"></a>DeviceResources. cpp
+## <a name="deviceresourcescpp"></a>DeviceResources.cpp
 
 
 ```C++
@@ -916,7 +916,7 @@ DeviceResources::~DeviceResources()
 
 
 
-## <a name="rendererh"></a>Renderer. h
+## <a name="rendererh"></a>Renderer.h
 
 
 ```C++
@@ -1010,7 +1010,7 @@ private:
 
 
 
-## <a name="renderercpp"></a>Renderer. cpp
+## <a name="renderercpp"></a>Renderer.cpp
 
 
 ```C++

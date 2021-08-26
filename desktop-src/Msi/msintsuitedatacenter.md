@@ -1,19 +1,19 @@
 ---
-description: In Windows 2000 e nei sistemi operativi successivi il programma di installazione imposta la proprietà MsiNTSuiteDataCenter su 1 se è installato Windows 2000 Datacenter Server.
+description: Nei Windows 2000 e versioni successive, il programma di installazione imposta la proprietà MsiNTSuiteDataCenter su 1 se Windows 2000 Datacenter Server è installato.
 ms.assetid: a777e62a-a360-4d8c-b7a6-00d45c17db66
-title: Proprietà MsiNTSuiteDataCenter
+title: MsiNTSuiteDataCenter - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 106b9119885e15b94bf5d8f2cd4b6954d0891d98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b42edc0a4abb544133b4b7fb176988f826c5af172cc4c0d49ca56494ed37672
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082811"
 ---
-# <a name="msintsuitedatacenter-property"></a>Proprietà MsiNTSuiteDataCenter
+# <a name="msintsuitedatacenter-property"></a>MsiNTSuiteDataCenter - proprietà
 
-In Windows 2000 e nei sistemi operativi successivi il programma di installazione imposta la proprietà **MsiNTSuiteDataCenter** su 1 se è installato Windows 2000 Datacenter Server. Il programma di installazione imposta questa proprietà su 1 solo se \_ il \_ flag del Data Center di ver Suite è impostato nella struttura [**OSVERSIONINFOEX**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) . In caso contrario, il programma di installazione non imposta questa proprietà.
+Nei Windows 2000 e versioni successive, il programma di installazione imposta la proprietà **MsiNTSuiteDataCenter** su 1 se Windows 2000 Datacenter Server è installato. Il programma di installazione imposta questa proprietà su 1 solo se il flag VER \_ SUITE DATACENTER è impostato nella struttura \_ [**OSVERSIONINFOEX.**](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) In caso contrario, il programma di installazione non imposta questa proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ In Windows 2000 e nei sistemi operativi successivi il programma di installazione
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

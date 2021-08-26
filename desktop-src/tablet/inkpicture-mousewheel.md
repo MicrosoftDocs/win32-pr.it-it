@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando viene spostata la rotellina del mouse mentre il controllo InkPicture dispone dello stato attivo.
+description: Si verifica quando la rotellina del mouse si sposta mentre il controllo InkPicture ha lo stato attivo.
 ms.assetid: f56a8af9-7618-4fa3-8dd5-aa81a7f817e4
-title: Evento InkPicture. MouseWheel (Msinkaut. h)
+title: Evento InkPicture.MouseWheel (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cab870f3a00b2aa0cea3c003993e2b35cd2abbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e139604b4fbfd3293203d82b44be15fa36c090e72f40cfedc8ce0641b75b27b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938991"
 ---
-# <a name="inkpicturemousewheel-event"></a>Evento InkPicture. MouseWheel
+# <a name="inkpicturemousewheel-event"></a>Evento InkPicture.MouseWheel
 
-Si verifica quando viene spostata la rotellina del mouse mentre il controllo [InkPicture](inkpicture-control-reference.md) dispone dello stato attivo.
+Si verifica quando la rotellina del mouse si sposta mentre [il controllo InkPicture](inkpicture-control-reference.md) ha lo stato attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,45 +35,45 @@ void MouseWheel(
 
 <dl> <dt>
 
-*Pulsante* \[ in\]
+*Pulsante* \[ Pollici\]
 </dt> <dd>
 
 Pulsante premuto.
 
 </dd> <dt>
 
-*Sposta* \[ in\]
+*MAIUSC* \[ Pollici\]
 </dt> <dd>
 
 Stato del tasto MAIUSC.
 
 </dd> <dt>
 
-*Delta* \[ in\]
+*Delta* \[ Pollici\]
 </dt> <dd>
 
-Distanza di spostamento della rotellina del mouse.
+Distanza di scorrimento della rotellina del mouse.
 
 </dd> <dt>
 
 *x* \[ in\]
 </dt> <dd>
 
-Coordinata x, espressa in pixel, dell'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordinata x, in pixel, [**dell'oggetto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
 *y* \[ in\]
 </dt> <dd>
 
-Coordinata y, in pixel, dell'oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordinata y, in pixel, [**dell'oggetto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
-*Annulla* \[ in uscita\]
+*Annulla* \[ in, out\]
 </dt> <dd>
 
-VARIANT \_ true per annullare l'evento **MouseWheel** per il controllo padre; in caso contrario, VARIANT \_ false.
+VARIANT \_ TRUE per annullare l'evento **MouseWheel** per il controllo padre; in caso contrario, VARIANT \_ FALSE.
 
 </dd> </dl>
 
@@ -84,11 +84,11 @@ Questo evento non restituisce un valore.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> I parametri *x* e *y* sono in pixel e non le unità HIMETRIC associate al sistema di coordinate dello spazio di input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione che non è compatibile con la penna e che il tipo di applicazione fa riferimento solo ai pixel.
+> I parametri *x* e *y* sono in pixel e non le unità HIMETRIC associate al sistema di coordinate dello spazio input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione che non supporta la penna e tale tipo di applicazione fa riferimento solo ai pixel.
 
  
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . L'interfaccia **\_ IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IPEMouseWheel.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ DISPID IPEMouseWheel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,9 +96,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -107,7 +107,7 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

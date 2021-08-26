@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: bd6038e1b3d2b2f85e5766605583db9879427343
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: a9a55632ee1f1b8f2e40b1be1272411c7c24b3b18c576563ff9c0de7c79bc413
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069371"
 ---
 # <a name="d3dtexturefiltertype-enumeration"></a>Enumerazione D3DTEXTUREFILTERTYPE
 
@@ -84,14 +84,14 @@ Filtro a tent di 4 campioni usato come filtro di ingrandimento o minificazione d
 <span id="D3DTEXF_GAUSSIANQUAD"></span><span id="d3dtexf_gaussianquad"></span>**D3DTEXF \_ GAUSSIANQUAD**
 </dt> <dd>
 
-Filtro Gaussiano a 4 campioni usato come filtro di ingrandimento o minimicazione della trama. [**L'uso con D3DSAMP \_ MIPFILTER**](./d3dsamplerstatetype.md) non è definito.
+Filtro gaussiano di 4 campioni usato come filtro di ingrandimento o minificazione della trama. [**L'uso con D3DSAMP \_ MIPFILTER**](./d3dsamplerstatetype.md) non è definito.
 
 </dd> <dt>
 
 <span id="D3DTEXF_CONVOLUTIONMONO"></span><span id="d3dtexf_convolutionmono"></span>**D3DTEXF \_ CONVOLUTIONMONO**
 </dt> <dd>
 
-Filtro di convoluzione per trame monocroma. Vedere [D3DFMT \_ A1.](d3dformat.md)
+Filtro di convoluzione per trame monocroma. Vedere [D3DFMT \_ A1](d3dformat.md).
 
 Differenze tra Direct3D 9 e Direct3D 9Ex:
 
@@ -108,23 +108,23 @@ Differenze tra Direct3D 9 e Direct3D 9Ex:
 <span id="D3DTEXF_FORCE_DWORD"></span><span id="d3dtexf_force_dword"></span>**D3DTEXF \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-D3DTEXTUREFILTERTYPE viene usato da [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) insieme [**a D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md) per definire le modalità di filtro della trama per una fase della trama.
+D3DTEXTUREFILTERTYPE viene usato da [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) insieme a [**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md) per definire le modalità di filtro trame per una fase di trama.
 
-Per verificare se un formato supporta tipi di filtro di trama diversi da D3DTEXF POINT (che è sempre supportato), chiamare \_ [**IDirect3D9::CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) con D3DUSAGE \_ QUERY \_ FILTER.
+Per verificare se un formato supporta tipi di filtro trame diversi da D3DTEXF POINT (che è sempre supportato), chiamare \_ [**IDirect3D9::CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat) con D3DUSAGE \_ QUERY \_ FILTER.
 
-Impostare il filtro di ingrandimento di una fase della trama chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore D3DSAMP MAGFILTER come secondo parametro e un membro di questa enumerazione come terzo \_ parametro.
+Impostare il filtro di ingrandimento di una fase di trama chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore D3DSAMP MAGFILTER come secondo parametro e un membro di questa enumerazione come \_ terzo parametro.
 
-Impostare il filtro di minificazione di una fase della trama chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore D3DSAMP MINFILTER come secondo parametro e un membro di questa enumerazione come terzo \_ parametro.
+Impostare il filtro di minificazione di una fase di trama chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore D3DSAMP MINFILTER come secondo parametro e un membro di questa enumerazione come \_ terzo parametro.
 
-Impostare il filtro di trama per l'uso tra livelli mipmap chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore MIPFILTER D3DSAMP come secondo parametro e un membro di questa enumerazione come terzo \_ parametro.
+Impostare il filtro di trama in modo da usare i livelli tra mipmap chiamando [**IDirect3DDevice9::SetSamplerState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate) con il valore MIPFILTER D3DSAMP come secondo parametro e un membro di questa enumerazione come \_ terzo parametro.
 
-Non tutte le modalità di filtro valide per un dispositivo verranno applicate alle mappe di volume. In generale, i filtri di ingrandimento D3DTEXF POINT e \_ D3DTEXF \_ LINEAR saranno supportati per le mappe di volume. Se si imposta D3DPTEXTURECAPS \_ MIPVOLUMEMAP, i filtri mipmap D3DTEXF POINT e \_ D3DTEXF POINT e \_ D3DTEXF LINEAR saranno supportati per le mappe \_ di volume. Il dispositivo può supportare o meno il filtro mipmap D3DTEXF \_ LINEAR per le mappe dei volumi. I dispositivi che supportano il filtro anisotropo per le mappe 2D non supportano necessariamente il filtro anisotropo per le mappe di volume. Tuttavia, le applicazioni che abilitano il filtro anisotropo riceveranno il filtro migliore disponibile (probabilmente lineare) se il filtro anisotropo non è supportato.
+Non tutte le modalità di filtro valide per un dispositivo verranno applicate alle mappe dei volumi. In generale, i filtri di ingrandimento D3DTEXF POINT e \_ D3DTEXF LINEAR saranno \_ supportati per le mappe dei volumi. Se è impostato D3DPTEXTURECAPS \_ MIPVOLUMEMAP, i filtri mipmap D3DTEXF POINT e \_ D3DTEXF POINT e \_ D3DTEXF LINEAR saranno supportati per le mappe \_ di volume. Il dispositivo può supportare o meno il filtro mipmap D3DTEXF \_ LINEAR per le mappe dei volumi. I dispositivi che supportano il filtro anisotropo per le mappe 2D non supportano necessariamente il filtro anisotropo per le mappe di volume. Tuttavia, le applicazioni che abilitano il filtro anisotropo riceveranno il filtro migliore disponibile (probabilmente lineare) se il filtro anisotropo non è supportato.
 
 ## <a name="requirements"></a>Requisiti
 

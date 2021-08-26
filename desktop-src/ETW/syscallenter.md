@@ -1,5 +1,5 @@
 ---
-description: Questa classe è la classe del tipo di evento per le chiamate di sistema immettere gli eventi. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi enter delle chiamate di sistema. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 1ab32977-3f59-4816-b311-67142475dff2
 title: Classe SysCallEnter
 ms.topic: reference
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1497491de622e564b945e8a80fcb1d8755886f39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53389fb4c5d78316020a145999ac13d2c8abfbf7474efaad802e29632d40beaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083191"
 ---
 # <a name="syscallenter-class"></a>Classe SysCallEnter
 
-Questa classe è la classe del tipo di evento per le chiamate di sistema immettere gli eventi.
+Questa classe è la classe del tipo di evento per gli eventi enter delle chiamate di sistema.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -38,29 +38,29 @@ class SysCallEnter : PerfInfo
 
 ## <a name="members"></a>Members
 
-La classe **SysCallEnter** dispone di questi tipi di membri:
+La **classe SysCallEnter** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SysCallEnter** dispone di queste proprietà.
+La **classe SysCallEnter** ha queste proprietà.
 
 <dl> <dt>
 
 **SysCallAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Indirizzo della chiamata di funzione NT da immettere.
+Indirizzo della chiamata di funzione NT immessa.
 
 </dd> </dl>
 
@@ -70,8 +70,8 @@ Indirizzo della chiamata di funzione NT da immettere.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

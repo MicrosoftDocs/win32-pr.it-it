@@ -1,9 +1,9 @@
 ---
-title: VIDEOSETTINGS. saturazione
-description: L'attributo Saturation specifica o recupera l'impostazione di saturazione del video.
+title: VIDEOSETTINGS.saturation
+description: L'attributo di saturazione specifica o recupera l'impostazione di saturazione del video.
 ms.assetid: e981e194-810b-4e6d-a1e8-790ede442752
 keywords:
-- Media Player di Windows VIDEOSETTINGS. Saturation
+- VIDEOSETTINGS.saturation Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22a1cd4a288e30373d460fafbc92b3aaa29283cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02aa5445cb3a7fa59fb59fc04a3bc2b5ff54640b4662c8cb469064d633d1a4f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900691"
 ---
-# <a name="videosettingssaturation"></a>VIDEOSETTINGS. saturazione
+# <a name="videosettingssaturation"></a>VIDEOSETTINGS.saturation
 
-L'attributo **Saturation** specifica o recupera l'impostazione di saturazione del video.
+**L'attributo di saturazione** specifica o recupera l'impostazione di saturazione del video.
 
 ``` syntax
         elementID.saturation
@@ -29,7 +29,7 @@ L'attributo **Saturation** specifica o recupera l'impostazione di saturazione de
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore compreso tra-127 e + 127 e il valore predefinito 0.
+Questo attributo è un numero di lettura/scrittura **(** **long**) con un valore compreso tra -127 e +127 e un valore predefinito pari a 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione per Windows XP o versioni successive<br/> |
+| Versione<br/> | Windows Media Player versione per Windows XP o versione successiva<br/> |
 
 
 

@@ -1,38 +1,38 @@
 ---
-description: Esempio introduttivo di utilizzo del catalogo di amministrazione COM+
+description: Esempio introduttivo sull'uso del catalogo di amministrazione COM+
 ms.assetid: e9ce25aa-4fb1-4357-9f4e-5bf649e29447
-title: Esempio introduttivo di utilizzo del catalogo di amministrazione COM+
+title: Esempio introduttivo sull'uso del catalogo di amministrazione COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db24f3985538b7189534c9fef3ef279ed240e3a1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5bfd085cbe9a829a1248ddf36057c9d9f79de9d576236a2621b237063340cf95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070591"
 ---
-# <a name="introductory-example-using-the-com-administration-catalog"></a>Esempio introduttivo di utilizzo del catalogo di amministrazione COM+
+# <a name="introductory-example-using-the-com-administration-catalog"></a>Esempio introduttivo sull'uso del catalogo di amministrazione COM+
 
-Quando si usa il catalogo di amministrazione COM+ a livello di codice, in genere si eseguono i passaggi generali seguenti (non specificati in un ordine rigoroso):
+Quando si usa il catalogo di amministrazione COM+ a livello di codice, in genere si ese verificano i passaggi generali seguenti (non indicati in un ordine rigoroso in questo caso):
 
--   Aprire una sessione di con il catalogo COM+ nel computer locale. Facoltativamente, connettersi al catalogo COM+ in un computer remoto.
--   Eseguire azioni quali l'avvio o l'arresto di servizi, ovvero azioni che non riguardano una particolare applicazione COM+.
--   Eseguire azioni quali l'installazione o l'esportazione di applicazioni COM+ o l'installazione di componenti in applicazioni, ovvero azioni che riguardano la lettura o la scrittura su file.
--   Aggiungere nuovi elementi alle raccolte, ad esempio creando una nuova applicazione COM+ aggiungendo un nuovo elemento alla raccolta "Applications".
--   Imposta o ottiene le proprietà di un elemento in una raccolta.
+-   Aprire una sessione con il catalogo COM+ nel computer locale. Facoltativamente, connettersi al catalogo COM+ in un computer remoto.
+-   Eseguire azioni come l'avvio o l'arresto di servizi, ovvero azioni che non riguardano una determinata applicazione COM+.
+-   Eseguire azioni come l'installazione o l'esportazione di applicazioni COM+ o l'installazione di componenti in applicazioni, azioni che riguardano la lettura o la scrittura in file.
+-   Aggiungere nuovi elementi alle raccolte, ad esempio creare una nuova applicazione COM+ aggiungendo un nuovo elemento alla raccolta "Applicazioni".
+-   Impostare o ottenere proprietà per un elemento di una raccolta.
 -   Salvare o rimuovere le modifiche in sospeso nel catalogo.
--   Gestire gli eventuali errori che potrebbero verificarsi.
+-   Gestire eventuali errori che potrebbero verificarsi.
 
-Per visualizzare l'aspetto di questi passaggi quando si usano gli oggetti COMAdmin, viene fornito un esempio di Visual Basic Microsoft. Vengono brevemente illustrati alcuni dei passaggi tipici descritti in precedenza, ad esempio l'individuazione di raccolte, l'enumerazione di una raccolta per recuperare un elemento e l'impostazione delle proprietà di tale elemento.
+Per illustrare l'aspetto di questi passaggi quando si usano gli oggetti COMAdmin, di seguito viene fornito un esempio Visual Basic Microsoft. Illustra brevemente alcuni dei passaggi tipici descritti in precedenza, ad esempio l'individuazione di raccolte, l'enumerazione tramite una raccolta per recuperare un elemento e l'impostazione delle proprietà per tale elemento.
 
-Nell'esempio seguente vengono eseguite le azioni seguenti:
+Nell'esempio seguente verranno eseguite le azioni seguenti:
 
 1.  Creare una nuova applicazione COM+, "MyHomeZoo".
-2.  Installare alcuni componenti, cat e Dog, nell'applicazione. Entrambi i componenti sono contenuti in una singola DLL che deve esistere già: MyZoo.dll.
-3.  Configurare la sicurezza basata sui ruoli per l'applicazione definendo due ruoli: ZooKeeper e AllergicToCats.
-4.  Assegnare il ruolo ZooKeeper per l'accesso all'intera applicazione.
-5.  Assegnare il ruolo AllergicToCats accesso solo al componente Dog.
-6.  Attivare le proprietà di sicurezza in modo che il controllo dei ruoli venga applicato per l'applicazione.
+2.  Installare alcuni componenti, Cat e Dog, nell'applicazione. Entrambi i componenti sono contenuti in una singola DLL che deve esistere già: MyZoo.dll.
+3.  Configurare la sicurezza basata sui ruoli per l'applicazione definendo due ruoli: ZooKeeper eKeeperToCats.
+4.  Assegnare al ruolo ZooKeeper l'accesso all'intera applicazione.
+5.  Assegnare l'accesso al ruolo DirtoCats solo al componente Dog.
+6.  Attivare le proprietà di sicurezza in modo che il controllo dei ruoli verrà applicato per l'applicazione.
 7.  Esportare l'applicazione MyHomeZoo in un file in modo che possa essere installata in altri computer.
 
 Per usare questo esempio da Visual Basic, aggiungere un riferimento alla libreria dei tipi di amministrazione COM+.

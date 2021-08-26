@@ -4,12 +4,12 @@ ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
 title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: d44eab0f9feec4b80369a365663917ca1aea0f211bba70dd4b99e9161316c662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936591"
 ---
 # <a name="drawing-element"></a>Elemento Drawing
 
@@ -33,7 +33,7 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 [**CanReClassify**](canreclassify-element.md)
 
-[**Classe InkClass**](inkclass-element.md)
+[**Classe Ink**](inkclass-element.md)
 
 [**InkObject**](inkobject-element.md)
 
@@ -43,10 +43,10 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 | Attributo  | Type                      | Obbligatoria | Descrizione                                                                             | Valori possibili           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Sinistra**   | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più a sinistra nel rettangolo di selezione per l'elemento. | Qualsiasi numero intero.              |
-| **Top**    | **xs:integer**            | Obbligatoria | Distanza dall'origine al punto più in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
-| **Larghezza**  | **xs:nonNegativeInteger** | Obbligatoria | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
-| **Altezza** | **xs:nonNegativeInteger** | Obbligatoria | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
+| **Sinistra**   | **xs:integer**            | Necessario | Distanza tra l'origine e il punto più a sinistra nel rettangolo di selezione dell'elemento. | Qualsiasi numero intero.              |
+| **Top**    | **xs:integer**            | Necessario | Distanza tra l'origine e il punto in alto nel rettangolo di selezione per l'elemento.  | Qualsiasi numero intero.              |
+| **Larghezza**  | **xs:nonNegativeInteger** | Necessario | Larghezza del rettangolo di selezione per l'elemento.                                          | Qualsiasi numero intero non negativo. |
+| **Altezza** | **xs:nonNegativeInteger** | Necessario | Altezza del rettangolo di selezione per l'elemento.                                         | Qualsiasi numero intero non negativo. |
 
 
 
@@ -58,7 +58,7 @@ Contiene contenuto classificato dall'analizzatore o dall'utente come disegno.
 
 |  Elemento     | valore                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo di elemento | [**ComplexType DrawingType**](drawingtype-complex-type.md) |
+| Tipo di elemento | [**complexType DrawingType**](drawingtype-complex-type.md) |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink                  |
 | Nome schema  | Lettore journal                                              |
 

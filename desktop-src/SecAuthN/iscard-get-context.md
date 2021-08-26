@@ -1,7 +1,7 @@
 ---
-description: Recupera l'handle di contesto corrente di Resource Manager. Questo metodo restituisce ( \* pContext) = = null se non è stato stabilito alcun contesto.
+description: Recupera l'handle di contesto di Resource Manager corrente. Questo metodo restituisce ( \* pContext) == NULL se non è stato stabilito alcun contesto.
 ms.assetid: c031f53d-4670-4d48-934c-a1550f21c23a
-title: 'Metodo IsValid:: get_Context (Scardmgr. h)'
+title: Metodo ISCard::get_Context (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 8b5aba075d755b644a78cca23a827a70966f4ffd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82094d51912031655585cacde0b156451107276bc08ca1be6dc6d82bdbb3229d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015631"
 ---
-# <a name="iscardget_context-method"></a>Metodo di contesto IsValid:: Get \_
+# <a name="iscardget_context-method"></a>Metodo ISCard::get \_ Context
 
-\[Il metodo **get \_ context** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requirements. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo get \_ Context** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **get \_ context** recupera l'handle di contesto corrente di [*Resource Manager*](../secgloss/r-gly.md) . Questo metodo restituisce ( \* *pContext*) = = **null** se non è stato stabilito alcun contesto.
+Il **metodo get \_ Context** recupera l'handle [*di contesto di Resource Manager*](../secgloss/r-gly.md) corrente. Questo metodo restituisce ( \* *pContext*) == **NULL** se non è stato stabilito alcun contesto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ HRESULT get_Context(
 
 <dl> <dt>
 
-*pContext* \[ out\]
+*pContext* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'handle di contesto alla restituzione.
+Puntatore all'handle di contesto al ritorno.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                        |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata correttamente.<br/>       |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *pContext* non è valido.<br/>  |
-| <dl> <dt>**\_puntatore E**</dt> </dl>    | Un puntatore errato è stato passato in *pContext*.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata correttamente.<br/>       |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro pContext* non è valido.<br/>  |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>    | È stato passato un puntatore non valido in *pContext*.<br/> |
 
 
 
@@ -66,13 +66,13 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il contesto di Resource Manager viene impostato chiamando la funzione [*Smart Card*](../secgloss/s-gly.md) [**SCardEstablishContext**](/windows/desktop/api/Winscard/nf-winscard-scardestablishcontext).
+Il contesto di Resource Manager viene impostato chiamando [*smart card*](../secgloss/s-gly.md) [**funzione SCardEstablishContext**](/windows/desktop/api/Winscard/nf-winscard-scardestablishcontext).
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente mostra come recuperare l'handle di contesto corrente di [*Resource Manager*](../secgloss/r-gly.md) .
+L'esempio seguente illustra il recupero dell'handle [*di contesto di Resource Manager*](../secgloss/r-gly.md) corrente.
 
 
 ```C++
@@ -97,14 +97,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID ISCard è definito come \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -112,19 +112,19 @@ if (FAILED(hr))
 
 <dl> <dt>
 
-[**Ottieni \_ ATR**](iscard-get-atr.md)
+[**get \_ Atr**](iscard-get-atr.md)
 </dt> <dt>
 
-[**ottenere \_ CardHandle**](iscard-get-cardhandle.md)
+[**get \_ CardHandle**](iscard-get-cardhandle.md)
 </dt> <dt>
 
-[**ottenere il \_ protocollo**](iscard-get-protocol.md)
+[**Get \_ Protocol**](iscard-get-protocol.md)
 </dt> <dt>
 
 [**ottenere \_ lo stato**](iscard-get-status.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
 [**SCardEstablishContext**](/windows/desktop/api/Winscard/nf-winscard-scardestablishcontext)

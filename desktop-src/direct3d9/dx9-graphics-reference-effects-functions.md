@@ -1,19 +1,19 @@
 ---
-description: Sono disponibili diverse funzioni che consentono di creare e compilare effetti.
+description: Esistono diverse funzioni che consentono di creare e compilare effetti.
 ms.assetid: 8aa68b19-d248-448a-9364-42913253c55f
-title: Funzioni effetto
+title: Funzioni degli effetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98b6f14d45bb98c80a491c8ee29583fc5a0b9650
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3a7f2ed7b793050c87d863bde913b4bc104acfa2c45615ac88c4c020e78f75a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026981"
 ---
-# <a name="effect-functions"></a>Funzioni effetto
+# <a name="effect-functions"></a>Funzioni degli effetti
 
-Sono disponibili diverse funzioni che consentono di creare e compilare effetti.
+Esistono diverse funzioni che consentono di creare e compilare effetti.
 
 -   [**D3DXCreateEffect**](d3dxcreateeffect.md)
 -   [**D3DXCreateEffectEx**](d3dxcreateeffectex.md)
@@ -31,7 +31,7 @@ Sono disponibili diverse funzioni che consentono di creare e compilare effetti.
 
 <dl> <dt>
 
-[Riferimento a effetti](dx9-graphics-reference-effects.md)
+[Informazioni di riferimento sull'effetto](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

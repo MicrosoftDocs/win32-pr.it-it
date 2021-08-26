@@ -1,17 +1,17 @@
 ---
 description: Contiene dati di formato aggiuntivi per un tipo di supporto.
 ms.assetid: 020832c4-40a1-4d8b-ada0-7a04ce097bce
-title: Attributo MF_MT_USER_DATA (Mfapi. h)
+title: MF_MT_USER_DATA attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6042ded0e2d441b0f86c5e1f97557959ce08cd1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0196e8fea06bb84fe5a78a8b486f95864e0c6d889692dfa6f3ee9b1103da518a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012782"
 ---
-# <a name="mf_mt_user_data-attribute"></a>\_ \_ Attributo dati utente MF mt \_
+# <a name="mf_mt_user_data-attribute"></a>Attributo MF \_ MT \_ USER \_ DATA
 
 Contiene dati di formato aggiuntivi per un tipo di supporto.
 
@@ -27,15 +27,15 @@ Il significato dei dati in questo attributo dipende dal formato descritto dal ti
 
 | Tipo di formato                                                                                                           | Dati di formato aggiuntivi                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Codec Windows Media.                                                                                                  | Dati privati di codec.                                                                                                                       |
-| La struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) o [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) è stata convertita.   | Dati aggiuntivi visualizzati dopo la struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) , esclusa la tabella dei colori o le maschere colori. |
-| La struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) o [**WAVEFORMATEXTENSIBLE**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85)) è stata convertita. | Dati aggiuntivi visualizzati dopo la struttura del formato audio.                                                                                 |
+| Windows Codec multimediale.                                                                                                  | Codec di dati privati.                                                                                                                       |
+| Struttura [**VIDEOINFOHEADER o**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) convertita.   | Dati aggiuntivi visualizzati dopo la struttura [**BITMAPINFOHEADER,**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) senza includere la tabella dei colori o le maschere di colore. |
+| Struttura [**WAVEFORMATEX o**](/previous-versions/dd757713(v=vs.85)) [**WAVEFORMATEXTENSIBLE**](/previous-versions/windows/desktop/legacy/dd390971(v=vs.85)) convertita. | Dati aggiuntivi visualizzati dopo la struttura del formato audio.                                                                                 |
 
 
 
  
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -53,13 +53,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: seblob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

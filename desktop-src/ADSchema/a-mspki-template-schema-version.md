@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-template-Schema-Version
-description: Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-template.
+title: Attributo ms-PKI-Template-Schema-Version
+description: Tiene traccia degli aggiornamenti dello schema della classe PKI-Certificate-Template.
 ms.assetid: 7ad55f1a-cdb9-4eea-bd09-db4f5e6373ba
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-PKI-template-Schema-Version
-- Schema AD dell'attributo msPKI-template-Schema-Version
+- Attributo MS-PKI-Template-Schema-Version Schema DI AD
+- Attributo msPKI-Template-Schema-Version Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc3b7952b55b346da29119775bb9c0f8b825c50
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 19ba5dcd71abac9339c8be6b4c1b04828e65bbdcff47ab1086296603c1569dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066421"
 ---
-# <a name="ms-pki-template-schema-version-attribute"></a>attributo ms-PKI-template-Schema-Version
+# <a name="ms-pki-template-schema-version-attribute"></a>Attributo ms-PKI-Template-Schema-Version
 
-Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-template.
+Tiene traccia degli aggiornamenti dello schema della classe PKI-Certificate-Template.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | ms-PKI-template-Schema-Version                                                                    |
-| LDAP-Display-Name | msPKI-template-Schema-Version                                                                     |
+| CN                | ms-PKI-Template-Schema-Version                                                                    |
+| Ldap-Display-Name | msPKI-Template-Schema-Version                                                                     |
 | Dimensione              | 4 byte                                                                                           |
-| Privilegio aggiornamento  | Amministratore di dominio                                                                              |
-| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-certificate-template) viene modificato, creato o clonato. |
+| Aggiorna privilegio  | Amministratore di dominio                                                                              |
+| Frequenza di aggiornamento  | Quando l'oggetto modello di certificato (ms-PKI-Certificate-Template) viene modificato, creato o clonato. |
 | Attribute-Id      | 1.2.840.113556.1.4.1434                                                                           |
-| System-ID-GUID    | 0c15e9f5-491d-4594-918f-32813a091da9                                                              |
+| System-Id-Guid    | 0c15e9f5-491d-4594-918f-32813a091da9                                                              |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)                                                              |
 
 
@@ -57,15 +57,15 @@ Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-temp
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-temp
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-temp
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-temp
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Tiene traccia degli aggiornamenti dello schema della classe PKI-certificate-temp
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Vero                                                                    |
+| Is-Single-Valued       | Vero                                                                    |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
