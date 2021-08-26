@@ -1,18 +1,18 @@
 ---
 title: Funzioni DNS
-description: Pagina di navigazione delle funzioni Domain Name System (DNS).
+description: Domain Name System di navigazione delle funzioni DNS (Dns).
 ms.assetid: 9b3c1c20-5516-41de-b00f-b95736ff53f1
 keywords:
-- Domain Name System, Reference, funzioni
+- Domain Name System, informazioni di riferimento, funzioni
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 665afcd62d359bb89409e15744c7fb50c52cc6ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e1f38e937c68ac97eab20e1f3bd07689d51190001a7641ed7a194511efc847e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109211"
 ---
 # <a name="dns-functions"></a>Funzioni DNS
 
@@ -39,10 +39,10 @@ Per DNS sono definite le funzioni seguenti.
 - [**DnsReplaceRecordSet**](/windows/desktop/api/Windns/nf-windns-dnsreplacerecordseta)
 - [**DnsServiceBrowse**](/windows/desktop/api/Windns/nf-windns-dnsservicebrowse)
 - [**DnsServiceBrowseCancel**](/windows/desktop/api/Windns/nf-windns-dnsservicebrowsecancel)
-- [**DnsServiceConstructInstance**](/windows/desktop/api/Windns/nf-windns-dnsserviceconstructinstance)
-- [**DnsServiceCopyInstance**](/windows/desktop/api/Windns/nf-windns-dnsservicecopyinstance)
+- [**Istanza di DnsServiceConstructInstance**](/windows/desktop/api/Windns/nf-windns-dnsserviceconstructinstance)
+- [**Istanza di DnsServiceCopy**](/windows/desktop/api/Windns/nf-windns-dnsservicecopyinstance)
 - [**DnsServiceDeRegister**](/windows/desktop/api/Windns/nf-windns-dnsservicederegister)
-- [**DnsServiceFreeInstance**](/windows/desktop/api/Windns/nf-windns-dnsservicefreeinstance)
+- [**Istanza DnsServiceFreeInstance**](/windows/desktop/api/Windns/nf-windns-dnsservicefreeinstance)
 - [**DnsServiceRegister**](/windows/desktop/api/Windns/nf-windns-dnsserviceregister)
 - [**DnsServiceRegisterCancel**](/windows/desktop/api/Windns/nf-windns-dnsserviceregistercancel)
 - [**DnsServiceResolve**](/windows/desktop/api/Windns/nf-windns-dnsserviceresolve)

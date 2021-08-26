@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_SLIDE (Wmsdkidl. h)
-description: La transizione della diapositiva Mostra la nuova immagine spostando l'immagine precedente al di fuori del frame.
+title: WMT_VIDEOIMAGE_TRANSITION_SLIDE (Wmsdkidl.h)
+description: La transizione di scorrimento rivela la nuova immagine scorrendo l'immagine precedente fuori dal frame.
 ms.assetid: 925bcf92-5608-48ca-9bdc-dd08bcd8b8d5
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_SLIDE formato Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_SLIDE windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,64 +14,30 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26caaadc268e823734c2bcf4a7899e6bb5399192
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9866706528cab038042adc8d098743ce6588c805
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327692"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476337"
 ---
-# <a name="wmt_videoimage_transition_slide"></a>\_diapositiva di \_ transizione \_ VIDEOIMAGE di WMT
+# <a name="wmt_videoimage_transition_slide"></a>DIAPOSITIVA DI TRANSIZIONE VIDEOIMAGE WMT \_ \_ \_
 
-La transizione della diapositiva Mostra la nuova immagine spostando l'immagine precedente al di fuori del frame.
+La transizione di scorrimento rivela la nuova immagine scorrendo l'immagine precedente fuori dal frame.
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella seguente vengono descritti i parametri utilizzati da questa transizione ed elencati i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
+La tabella seguente descrive i parametri usati da questa transizione ed elenca i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parametro</th>
-<th>Membro della struttura</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Distanza</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Distanza, in pixel, che l'immagine precedente scorre all'esterno del frame.</td>
-</tr>
-<tr class="even">
-<td>Direzione</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Direzione della diapositiva dell'immagine precedente. Impostare su uno dei valori seguenti:<br/>
-<ul>
-<li>0-scorrere a destra.</li>
-<li>1-scorrere verso sinistra.</li>
-<li>2-scorrere verso l'alto.</li>
-<li>3-scorrere verso il basso.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Composizione</td>
-<td><strong>fEffectPara2</strong></td>
-<td>Impostare su uno dei valori seguenti:
-<ul>
-<li>0: specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è il primo piano.</li>
-<li>1-specifica la composizione invertita, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è il primo piano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parametro | Membro della struttura | Descrizione | 
+|-----------|------------------|-------------|
+| Distanza | <strong>fEffectPara0</strong> | Distanza, in pixel, in cui l'immagine precedente esce dal frame. | 
+| Direzione | <strong>fEffectPara1</strong> | Direzione in cui scorre l'immagine precedente. Impostare su uno dei valori seguenti:<br /><ul><li>0 - Scorrere verso destra.</li><li>1 - Scorrere verso sinistra.</li><li>2 - Scorrere verso l'alto.</li><li>3 - Scorrere verso il basso.</li></ul> | 
+| Composizione | <strong>fEffectPara2</strong> | Impostare su uno dei valori seguenti:<ul><li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li><li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano</li></ul> | 
+
 
 
 
@@ -81,9 +47,9 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 

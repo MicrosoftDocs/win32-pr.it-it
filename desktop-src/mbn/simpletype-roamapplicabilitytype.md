@@ -1,5 +1,5 @@
 ---
-description: RoamApplicabilityType descrive le condizioni di roaming per le quali viene applicato un profilo mobile.
+description: RoamApplicabilityType descrive le condizioni di roaming a cui si applica un profilo mobile.
 MS-HAID: WWAN\_profile\_v4.simpleType\_roamApplicabilityType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,28 +7,28 @@ MSHAttr:
 title: Tipo semplice roamApplicabilityType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95d81214ab5a44dcac60bb5e1a6accc81b0d0418
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c2ce8f24e0987d5e8463838b33d4f2f2cf859da
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879149"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474757"
 ---
 # <a name="span-idwwan_profile_v4simpletype_roamapplicabilitytypespanroamapplicabilitytype-simple-type"></a><span id="WWAN_profile_v4.simpleType_roamApplicabilityType"></span>Tipo semplice roamApplicabilityType
 
-RoamApplicabilityType descrive le condizioni di roaming per le quali viene applicato un profilo mobile.
+RoamApplicabilityType descrive le condizioni di roaming a cui si applica un profilo mobile.
 
-Si tratta di un attributo più espressivo di [**roamControlType**](simpletype-roamcontroltype.md)e un profilo deve usare **roamControlType** o **roamApplicabilityType**, ma non entrambi. Se un profilo usa entrambi, vengono applicati entrambi. Il risultato è l'intersezione dei due.
+Si tratta di un attributo più espressivo rispetto a [**roamControlType**](simpletype-roamcontroltype.md)e un profilo deve usare **roamControlType** o **roamApplicabilityType**, ma non entrambi. Se un profilo usa entrambi, vengono applicati entrambi. Il risultato è l'intersezione dei due.
 
-Utilizzare questo attributo per distinguere tra più profili con condizioni di roaming non contigue, per specificare diversi attributi del profilo per, ad esempio, Home e roaming.
+Usare questo attributo per distinguere tra più profili con condizioni di roaming non contigue, per specificare attributi del profilo diversi per, ad esempio, home rispetto al roaming.
 
-Esistono tre possibili stati di registrazione di casa/roaming:
+Esistono tre possibili stati di registrazione home/roaming:
 
--   Home page: registrato nella rete domestica
--   Partner: registrato in una rete strettamente collegata alla rete domestica
+-   Home: registrato nella rete domestica
+-   Partner: registrato in una rete strettamente affiliata alla rete domestica
 -   Non partner: registrato in una rete non strettamente affiliata alla rete domestica
 
-Il significato esatto di "partner" varia a seconda della rete, ma rappresenta una relazione più stretta con tariffe più favorevoli rispetto a un non partner. Questa situazione può verificarsi se un operatore basato su aree ha una disposizione aziendale per usare la rete di accesso radiofonico di un altro operatore al di fuori dell'area di residenza. Potrebbe anche rappresentare la differenza tra il roaming all'interno di un'area (ad esempio, l'Unione europea) e all'esterno.
+Il significato preciso di "partner" varia in base alla rete, ma rappresenta una relazione più stretta con tariffe più vantaggiose rispetto a un non partner. Ciò può verificarsi se un operatore locale ha una disposizione aziendale per usare la rete di accesso radio di un altro operatore al di fuori della propria area domestica. Può anche rappresentare la differenza tra roaming all'interno di un'area (ad esempio, UE) e all'esterno di essa.
 
 ``` syntax
 <xs:simpleType name="roamApplicabilityType">
@@ -59,46 +59,18 @@ Il significato esatto di "partner" varia a seconda della rete, ma rappresenta un
 
 ## <a name="enumeration-values"></a>Valori di enumerazione
 
-Il tipo semplice **roamApplicabilityType** definisce i valori seguenti.
+Il **tipo semplice roamApplicabilityType** definisce i valori seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valore</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>NonPartnerOnly</td>
-<td><p>Questo profilo viene usato solo quando si esegue il roaming in una rete non partner</p></td>
-</tr>
-<tr class="even">
-<td>PartnerOnly</td>
-<td><p>Questo profilo viene usato solo quando si esegue il roaming in una rete partner</p></td>
-</tr>
-<tr class="odd">
-<td>HomeOnly</td>
-<td><p>Questo profilo viene usato solo quando si usa la rete domestica</p></td>
-</tr>
-<tr class="even">
-<td>HomeAndPartner</td>
-<td><p>Questo profilo viene usato solo quando si è a casa o in una rete partner</p></td>
-</tr>
-<tr class="odd">
-<td>PartnerAndNonpartner</td>
-<td><p>Questo profilo viene usato quando non è a casa (roaming in qualsiasi rete)</p></td>
-</tr>
-<tr class="even">
-<td>AllRoaming</td>
-<td><p>Questo profilo viene usato in tutte le reti</p></td>
-</tr>
-</tbody>
-</table>
+
+| valore | Descrizione | 
+|-------|-------------|
+| NonPartnerOnly | <p>Questo profilo viene usato solo quando si esegue il roaming in una rete non partner</p> | 
+| PartnerOnly | <p>Questo profilo viene usato solo quando si esegue il roaming in una rete partner</p> | 
+| HomeOnly | <p>Questo profilo viene usato solo nella rete domestica</p> | 
+| HomeAndPartner | <p>Questo profilo viene usato solo quando si è a casa o in una rete partner</p> | 
+| PartnerAndNonpartner | <p>Questo profilo viene usato quando non è a casa (roaming in qualsiasi rete)</p> | 
+| AllRoaming | <p>Questo profilo viene usato in tutte le reti</p> | 
+
 
  
 

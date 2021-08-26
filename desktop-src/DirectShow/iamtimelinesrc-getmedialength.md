@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetMediaLength recupera la lunghezza del supporto di questo oggetto di origine.
+description: Il metodo GetMediaLength recupera la lunghezza dei supporti di questo oggetto di origine.
 ms.assetid: 70298d8f-67e7-4774-a7ae-f0b48e4afda7
-title: 'Metodo IAMTimelineSrc:: GetMediaLength (qedit. h)'
+title: Metodo IAMTimelineSrc::GetMediaLength (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5cd896ed0890a199f85838a01c4c6ebec6d0895d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72aeb68b3b3f9b31dc9ba00b2ffe8d82e2df8f8c5271abffcbd7737fa65203ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131181"
 ---
-# <a name="iamtimelinesrcgetmedialength-method"></a>Metodo IAMTimelineSrc:: GetMediaLength
+# <a name="iamtimelinesrcgetmedialength-method"></a>Metodo IAMTimelineSrc::GetMediaLength
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `GetMediaLength` metodo recupera la lunghezza del supporto di questo oggetto di origine.
+Il `GetMediaLength` metodo recupera la lunghezza dei supporti di questo oggetto di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,21 +48,21 @@ HRESULT GetMediaLength(
 *pLength* 
 </dt> <dd>
 
-Riceve la lunghezza del supporto in unità 100-nanosecondi.
+Riceve la lunghezza del supporto in unità di 100 nanosecondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** :
+Restituisce uno dei valori **HRESULT** seguenti:
 
 
 
 | Codice restituito                                                                                     | Descrizione                                        |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>            | Esito positivo.<br/>                                |
-| <dl> <dt>**E \_ NOTDETERMINED**</dt> </dl> | I tempi dei supporti non sono impostati per questo oggetto.<br/> |
-| <dl> <dt>**\_puntatore E**</dt> </dl>       | Argomento puntatore **null** .<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>            | Operazione completata.<br/>                                |
+| <dl> <dt>**E \_ NOTDETERMINED**</dt> </dl> | I tempi dei supporti non sono impostati su questo oggetto.<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>       | Argomento del puntatore **NULL.**<br/>              |
 
 
 
@@ -71,12 +71,12 @@ Restituisce uno dei seguenti valori **HRESULT** :
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -86,8 +86,8 @@ Restituisce uno dei seguenti valori **HRESULT** :
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

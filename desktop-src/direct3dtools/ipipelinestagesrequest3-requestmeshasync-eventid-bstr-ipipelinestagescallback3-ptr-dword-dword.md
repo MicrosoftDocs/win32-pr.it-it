@@ -1,5 +1,5 @@
 ---
-description: Richiesta asincrona per ottenere dati mesh dall'evento specificato.
+description: Richiesta asincrona per ottenere i dati della mesh dall'evento specificato.
 MS-HAID: vspixengine.IPipeLineStagesRequest3\_RequestMeshAsync\_EventID\_BSTR\_IPipeLineStagesCallback3\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 39177109630feb09231616173cd8ccc498c9e7f54b99aff7d4ac6b75aa946123
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea2b5602d8668cec019efb02f4202dd7110da8cf
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117721633"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623567"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dwordspanipipelinestagesrequest3requestmeshasync-method"></a><span id="vspixengine.ipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dword"></span>Metodo IPipeLineStagesRequest3::RequestMeshAsync
 
-Richiesta asincrona per ottenere dati mesh dall'evento specificato.
+Richiesta asincrona per ottenere i dati della mesh dall'evento specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Evento specificato.
 Stringa COM contenente il percorso del file in cui vengono scritti i dati della mesh.
 
 *requestCallback*   
-Indirizzo del callback utilizzato per inviare una notifica all'host dei risultati.
+Indirizzo del callback utilizzato per notificare i risultati all'host.
 
 *requestCookie*   
 Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
@@ -64,7 +64,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

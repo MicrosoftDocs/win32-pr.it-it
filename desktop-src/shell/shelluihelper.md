@@ -1,5 +1,5 @@
 ---
-description: Implementato da Shell per consentire agli sviluppatori di script e microsoft Visual Basic di usare alcune delle funzionalità disponibili in Shell. L'oggetto ShellUIHelper non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
+description: Implementato dalla shell per consentire agli sviluppatori di script Visual Basic Microsoft di usare alcune delle funzionalità disponibili nella shell. L'oggetto ShellUIHelper non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
 title: Oggetto ShellUIHelper (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9fffebc8-29b9-4064-b60c-c8c63690a79e
-ms.openlocfilehash: b77d618c4c772859a9009f3cca761c59df83257a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: f254bd218024b3d1df15a826da701b1f010ae616
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842432"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473327"
 ---
 # <a name="shelluihelper-object"></a>Oggetto ShellUIHelper
 
-Implementato da Shell per consentire agli sviluppatori di script e microsoft Visual Basic di usare alcune delle funzionalità disponibili in Shell. **L'oggetto ShellUIHelper** non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
+Implementato dalla shell per consentire agli sviluppatori di script Visual Basic Microsoft di usare alcune delle funzionalità disponibili nella shell. **L'oggetto ShellUIHelper** non ha proprietà o eventi. Vengono forniti metodi per aggiungere elementi alla shell.
 
 ## <a name="members"></a>Membri
 
@@ -36,41 +36,14 @@ Implementato da Shell per consentire agli sviluppatori di script e microsoft Vis
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Metodo</th>
-<th style="text-align: left;">Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="shelluihelper-addchannel.md"><strong>AddChannel</strong></a></td>
-<td style="text-align: left;">Aggiunge un nuovo canale all'elenco di canali nel <strong>menu</strong> Preferiti Internet Explorer canale e alla barra <strong>Dei</strong> canali sul desktop.<br/>
-<blockquote>
-[!Note]<br />
-Questo metodo non è più supportato in Windows Vista. In tale sistema operativo, restituisce E_NOTIMPL.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="shelluihelper-adddesktopcomponent.md"><strong>AddDesktopComponent</strong></a></td>
-<td style="text-align: left;">Aggiunge un elemento al Active Desktop.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="shelluihelper-addfavorite.md"><strong>AddFavorite</strong></a></td>
-<td style="text-align: left;">Visualizza l'interfaccia utente predefinita per la creazione di un elemento preferito. L'interfaccia utente viene inizializzata sui parametri specificati.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="shelluihelper-issubscribed.md"><strong>IsSubscribed</strong></a></td>
-<td style="text-align: left;">Indica se un URL specificato è sottoscritto.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Metodo | Descrizione | 
+|--------|-------------|
+| <a href="shelluihelper-addchannel.md"><strong>AddChannel</strong></a> | Aggiunge un nuovo canale all'elenco dei canali nel <strong>menu</strong> <strong></strong> Internet Explorer Preferiti e alla barra dei canali sul desktop.<br /><blockquote>[!Note]<br />Questo metodo non è più supportato in Windows Vista. In tale sistema operativo, restituisce E_NOTIMPL.</blockquote><br /> | 
+| <a href="shelluihelper-adddesktopcomponent.md"><strong>AddDesktopComponent</strong></a> | Aggiunge un elemento alla Active Desktop.<br /> | 
+| <a href="shelluihelper-addfavorite.md"><strong>AddFavorite</strong></a> | Visualizza l'interfaccia utente predefinita per la creazione di un elemento preferito. L'interfaccia utente viene inizializzata con i parametri specificati.<br /> | 
+| <a href="shelluihelper-issubscribed.md"><strong>IsSubscribed</strong></a> | Indica se un URL specificato è sottoscritto.<br /> | 
+
 
 
 
@@ -80,9 +53,9 @@ Questo metodo non è più supportato in Windows Vista. In tale sistema operativo
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |

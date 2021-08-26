@@ -1,19 +1,19 @@
 ---
 title: Esempio di proprietà
 ms.assetid: 44642d32-2cbc-4dd9-bccc-15924f310539
-description: 'Ulteriori informazioni su: esempio di proprietà'
+description: 'Altre informazioni su: Esempio di proprietà'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9c11fda9b133ca6fa3b2f9942d8d48bec3a9e47
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 83f17e12031b326566e6b948b05dae5851ec4aabd1cc7fd0a0281fc9d1a89c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104125976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061641"
 ---
 # <a name="property-sample"></a>Esempio di proprietà
 
-Questo argomento descrive l'esempio di codice di esempio della proprietà. Contiene le sezioni seguenti:
+Questo argomento descrive l'esempio di codice Di esempio di proprietà. Contiene le sezioni seguenti:
 
 -   [Descrizione](#description)
 -   [Requisiti minimi](#minimum-requirements)
@@ -23,7 +23,7 @@ Questo argomento descrive l'esempio di codice di esempio della proprietà. Conti
 
 ## <a name="description"></a>Descrizione
 
-Nell'esempio di proprietà viene illustrato come implementare tre stili diversi di finestre delle proprietà: modale, non modale e procedura guidata. Viene inoltre illustrato come utilizzare la funzione [*PropSheetProc*](/windows/desktop/api/Prsht/nc-prsht-pfnpropsheetcallback) per modificare la finestra di dialogo della finestra delle proprietà prima o dopo la creazione.
+L'esempio di proprietà illustra come implementare tre diversi stili di finestre delle proprietà: modale, non modale e procedura guidata. Viene inoltre illustrato come usare la funzione [*PropSheetProc*](/windows/desktop/api/Prsht/nc-prsht-pfnpropsheetcallback) per modificare la finestra di dialogo della finestra delle proprietà prima o dopo la creazione.
 
 ## <a name="minimum-requirements"></a>Requisiti minimi
 
@@ -31,8 +31,8 @@ Nell'esempio di proprietà viene illustrato come implementare tre stili diversi 
 
 | Prodotto          | Versione                              |
 |------------------|--------------------------------------|
-| DLL              | comctl32.dll versione 4,0             |
-| Sistema operativo | Windows 95, Microsoft Windows NT 3,1 |
+| DLL              | comctl32.dll versione 4.0             |
+| Sistema operativo | Windows 95, Microsoft Windows NT 3.1 |
 
 
 
@@ -40,13 +40,13 @@ Nell'esempio di proprietà viene illustrato come implementare tre stili diversi 
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-L'esempio di proprietà viene installato come parte di [Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windows/bb980924.aspx) ed è disponibile nel percorso seguente.
+L'esempio di proprietà viene installato come parte [di Windows Software Development Kit (SDK)](https://msdn.microsoft.com/windows/bb980924.aspx) ed è disponibile nel percorso seguente.
 
 
 
-| Location    | Percorso/URL                                                                                                 |
+| Località    | Percorso/URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
-| Windows SDK | % Program Files% \\ Microsoft SDK \\ numero di versione di Windows \\ \[ \] \\ esempi \\ WinUI \\ controlli di \\ \\ Proprietà comuni |
+| Windows SDK | %Programmi% Microsoft SDK Windows numero di versione \\ \\ Esempi \\ \[ \] \\ \\ winui controlla la proprietà \\ \\ \\ comune |
 
 
 
@@ -54,16 +54,16 @@ L'esempio di proprietà viene installato come parte di [Windows Software Develop
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
-Per compilare l'esempio utilizzando il prompt dei comandi:
+Per compilare l'esempio usando il prompt dei comandi:
 
 1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto.
 2.  Immettere `msbuild [project file]`.
 
-Per compilare l'esempio con Visual Studio:
+Per compilare l'esempio usando Visual Studio:
 
-1.  Aprire Esplora risorse e passare alla directory del progetto.
-2.  Fare doppio clic sull'icona del file con estensione vcproj per aprire il progetto in Visual Studio.
-3.  Scegliere **Compila soluzione** dal menu **Compila** per compilare la soluzione.
+1.  Aprire Windows Explorer e passare alla directory del progetto.
+2.  Fare doppio clic sull'icona per il file con estensione vcproj per aprire il progetto in Visual Studio.
+3.  Scegliere **Compila** soluzione dal menu Compila **per** compilare la soluzione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

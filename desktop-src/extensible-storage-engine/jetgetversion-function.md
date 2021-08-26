@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetGetVersion'
-title: JetGetVersion (funzione)
+description: Altre informazioni sulla funzione JetGetVersion
+title: Funzione JetGetVersion
 TOCTitle: JetGetVersion Function
 ms:assetid: f25c3639-ae2b-4357-9947-563ef3df72c6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294133(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 38128358d814ea85cf087c270a65a3fada976e7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4157b52d05716b00645bd7815c54e802bb55417
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233637"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474497"
 ---
-# <a name="jetgetversion-function"></a>JetGetVersion (funzione)
+# <a name="jetgetversion-function"></a>Funzione JetGetVersion
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetgetversion-function"></a>JetGetVersion (funzione)
+## <a name="jetgetversion-function"></a>Funzione JetGetVersion
 
-La funzione **JetGetVersion** recupera la versione del motore di database.
+La **funzione JetGetVersion** recupera la versione del motore di database.
 
 ```cpp
     JET_ERR JET_API JetGetVersion(
@@ -53,26 +53,13 @@ Puntatore al numero di versione del motore di database.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del [motore Archiviazione estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+
 
 
 Se questa funzione ha esito positivo, viene recuperata la versione del motore di database.
@@ -81,39 +68,14 @@ Non sono presenti modalità di errore note.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche
 
 [Parametri di gestione degli errori](./error-handling-parameters.md)  
-[Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)  
+[Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JET_SESID](./jet-sesid.md)

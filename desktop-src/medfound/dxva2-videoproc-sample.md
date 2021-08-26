@@ -4,12 +4,12 @@ ms.assetid: 1465bd41-94f9-4e19-8236-00e7a2d6f54a
 title: DXVA2_VideoProc esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 160fda9829398b97e7670bb2d1f8cc076c00cda77e1ad06131603603f6f49191
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8fc4be1bad6a3955af255cb083a4595ecedfd30
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119828287"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473927"
 ---
 # <a name="dxva2_videoproc-sample"></a>Esempio \_ videoproc DXVA2
 
@@ -63,106 +63,18 @@ Ognuno dei tasti funzione da F1 a F8 passa a una modalità in cui i tasti di dir
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Chiave</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>F1</td>
-<td>Modificare i valori alfa.<br/>
-<ul>
-<li>UP: aumenta il valore alfa planare di entrambi i flussi.</li>
-<li>DOWN: riduce il valore alfa planare di entrambi i flussi.</li>
-<li>RIGHT: aumenta il pixel alfa del flusso secondario.</li>
-<li>LEFT: riduce il pixel alfa del flusso secondario.</li>
-</ul>
-Colore del flusso secondario: bianco<br/></td>
-</tr>
-<tr class="even">
-<td>F2</td>
-<td>Regolare l'area di origine del flusso primario (zoom).<br/>
-<ul>
-<li>SU: aumenta verticalmente (zoom avanti).</li>
-<li>DOWN: consente di ridurre verticalmente (zoom indietro).</li>
-<li>RIGHT: aumenta orizzontalmente (zoom avanti).</li>
-<li>LEFT: consente di ridurre orizzontalmente (zoom indietro).</li>
-</ul>
-Colore del flusso secondario: rosso<br/></td>
-</tr>
-<tr class="odd">
-<td>F3</td>
-<td>Spostare l'area di origine del flusso primario.<br/>
-<ul>
-<li>UP: sposta verso l'alto.</li>
-<li>DOWN: consente di spostarsi verso il basso.</li>
-<li>RIGHT: sposta a destra.</li>
-<li>LEFT: sposta a sinistra.</li>
-</ul>
-Colore del flusso secondario: giallo<br/></td>
-</tr>
-<tr class="even">
-<td>F4</td>
-<td>Modificare l'area di destinazione del flusso primario.<br/>
-<ul>
-<li>UP: aumenta verticalmente.</li>
-<li>DOWN: consente di ridurre verticalmente.</li>
-<li>RIGHT: aumenta orizzontalmente.</li>
-<li>LEFT: consente di ridurre orizzontalmente.</li>
-</ul>
-Colore del flusso secondario: verde<br/></td>
-</tr>
-<tr class="odd">
-<td>F5</td>
-<td>Spostare l'area di destinazione del flusso primario.<br/>
-<ul>
-<li>UP: sposta verso l'alto.</li>
-<li>DOWN: consente di spostarsi verso il basso.</li>
-<li>RIGHT: sposta a destra.</li>
-<li>LEFT: sposta a sinistra.</li>
-</ul>
-Colore del flusso secondario: ciano<br/></td>
-</tr>
-<tr class="even">
-<td>F6</td>
-<td>Modificare il colore di sfondo o lo spazio colore.<br/>
-<ul>
-<li>SU, GIÙ: consente di scorrere gli spazi colori.</li>
-<li>RIGHT, LEFT: consente di scorrere i colori di sfondo.</li>
-</ul>
-Colore del flusso secondario: blu<br/></td>
-</tr>
-<tr class="odd">
-<td>F7</td>
-<td>Regolare luminosità e contrasto.<br/>
-<ul>
-<li>UP: aumentare la luminosità.</li>
-<li>DOWN: diminuisce la luminosità.</li>
-<li>RIGHT: aumenta il contrasto.</li>
-<li>LEFT: consente di ridurre il contrasto.</li>
-</ul>
-Colore del flusso secondario: Magenta<br/></td>
-</tr>
-<tr class="even">
-<td>F8</td>
-<td>Regolare la tonalità e la saturazione.<br/>
-<ul>
-<li>UP: aumenta la tonalità.</li>
-<li>DOWN: consente di ridurre la tonalità.</li>
-<li>RIGHT: aumentare la saturazione.</li>
-<li>LEFT: riduce la saturazione.</li>
-</ul>
-Colore del flusso secondario: Nero<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Chiave | Descrizione | 
+|-----|-------------|
+| F1 | Modificare i valori alfa.<br /><ul><li>UP: aumenta il valore alfa planare di entrambi i flussi.</li><li>DOWN: riduce il valore alfa planare di entrambi i flussi.</li><li>RIGHT: aumenta il pixel alfa del flusso secondario.</li><li>LEFT: riduce il pixel alfa del flusso secondario.</li></ul>Colore del flusso secondario: bianco<br /> | 
+| F2 | Regolare l'area di origine del flusso primario (zoom).<br /><ul><li>SU: aumenta verticalmente (zoom avanti).</li><li>DOWN: consente di ridurre verticalmente (zoom indietro).</li><li>RIGHT: aumenta orizzontalmente (zoom avanti).</li><li>LEFT: consente di ridurre orizzontalmente (zoom indietro).</li></ul>Colore del flusso secondario: rosso<br /> | 
+| F3 | Spostare l'area di origine del flusso primario.<br /><ul><li>UP: sposta verso l'alto.</li><li>DOWN: consente di spostarsi verso il basso.</li><li>RIGHT: sposta a destra.</li><li>LEFT: sposta a sinistra.</li></ul>Colore del flusso secondario: giallo<br /> | 
+| F4 | Modificare l'area di destinazione del flusso primario.<br /><ul><li>UP: aumenta verticalmente.</li><li>DOWN: consente di ridurre verticalmente.</li><li>RIGHT: aumenta orizzontalmente.</li><li>LEFT: consente di ridurre orizzontalmente.</li></ul>Colore del flusso secondario: verde<br /> | 
+| F5 | Spostare l'area di destinazione del flusso primario.<br /><ul><li>UP: sposta verso l'alto.</li><li>DOWN: consente di spostarsi verso il basso.</li><li>RIGHT: sposta a destra.</li><li>LEFT: sposta a sinistra.</li></ul>Colore del flusso secondario: ciano<br /> | 
+| F6 | Modificare il colore di sfondo o lo spazio colore.<br /><ul><li>SU, GIÙ: consente di scorrere gli spazi colori.</li><li>RIGHT, LEFT: consente di scorrere i colori di sfondo.</li></ul>Colore del flusso secondario: blu<br /> | 
+| F7 | Regolare luminosità e contrasto.<br /><ul><li>UP: aumentare la luminosità.</li><li>DOWN: diminuisce la luminosità.</li><li>RIGHT: aumenta il contrasto.</li><li>LEFT: consente di ridurre il contrasto.</li></ul>Colore del flusso secondario: Magenta<br /> | 
+| F8 | Regolare la tonalità e la saturazione.<br /><ul><li>UP: aumenta la tonalità.</li><li>DOWN: consente di ridurre la tonalità.</li><li>RIGHT: aumentare la saturazione.</li><li>LEFT: riduce la saturazione.</li></ul>Colore del flusso secondario: Nero<br /> | 
+
 
 
 
@@ -184,7 +96,7 @@ In ogni modalità, premendo HOME i parametri per tale modalità vengono reimpost
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/evrpresenter).
+Questo esempio è disponibile nel repository [github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/evrpresenter).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

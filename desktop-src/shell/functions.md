@@ -1,6 +1,6 @@
 ---
-description: Questa sezione descrive le funzioni Windows Shell.
-title: Funzioni shell
+description: In questa sezione vengono descritte le Windows shell.
+title: Funzioni della shell
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f4d6c0c4-8db3-4721-80f5-2a73bb57cd99
@@ -9,868 +9,226 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: d523ed11d54c9518b386752133226cadf29adbca927ee797cba7d9fa119d0389
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fce7bc2b7a6669afd42f7d4b8883aff937615ae0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119593241"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476597"
 ---
-# <a name="shell-functions"></a>Funzioni shell
+# <a name="shell-functions"></a>Funzioni della shell
 
 \[Questa funzione non è più implementata.\]
 
-Questa sezione descrive le funzioni Windows Shell.
+In questa sezione vengono descritte le Windows shell.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Argomento</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="intsafe-h-functions-bumper.md">Funzioni intsafe.h</a><br/></td>
 
-</tr>
-<tr class="even">
-<td><a href="library-functions-bumper.md">Funzioni della libreria</a><br/></td>
+| Argomento | Descrizione | 
+|-------|-------------|
+| <a href="intsafe-h-functions-bumper.md">Funzioni Intsafe.h</a><br /> | 
+| <a href="library-functions-bumper.md">Funzioni di libreria</a><br /> | 
+| <a href="path-functions.md">Funzioni path</a><br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-assoccreateforclasses"><strong>AssocCreateForClasses</strong></a><br /> | Recupera un oggetto che implementa <a href="/windows/desktop/api/shlwapi/nn-shlwapi-iqueryassociations"><strong>un'interfaccia IQueryAssociations.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-assocgetdetailsofpropkey"><strong>AssocGetDetailsOfPropKey</strong></a><br /> | Recupera il valore per una chiave di proprietà specificata utilizzando le informazioni sull'associazione di file fornite dalle estensioni dello spazio <a href="nse-works.md">dei nomi</a>.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2"><strong>CDefFolderMenu_Create2</strong></a><br /> | Crea un menu di scelta rapida per un gruppo selezionato di oggetti cartella file.<br /> | 
+| <a href="/windows/win32/api/ntquery/nf-ntquery-cishutdown"><strong>CIShutdown</strong></a><br /> | Arresta l'indicizzatore di contenuto e chiude tutti i cataloghi aperti. <br /><blockquote>[!Note]<br />Questa funzione non è supportata a Windows 8.</blockquote><br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-commandlinetoargvw"><strong>CommandLineToArgvW</strong></a><br /> | Analizza una stringa della riga di comando Unicode e restituisce una matrice di puntatori agli argomenti della riga di comando, insieme a un conteggio di tali argomenti, in modo simile ai valori <em>argv</em> e <em>argc</em> standard del run-time C.<br /> | 
+| <a href="/windows/desktop/api/cpl/nc-cpl-applet_proc"><strong>APPLET_PROC</strong></a><br /> | Funge da punto di ingresso per un'Pannello di controllo applicazione. Si tratta di una funzione di callback definita dalla libreria.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-createappcontainerprofile"><strong>CreateAppContainerProfile</strong></a><br /> | Crea un profilo per utente e per app per le Windows Store.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-createenvironmentblock"><strong>CreateEnvironmentBlock</strong></a><br /> | Recupera le variabili di ambiente per l'utente specificato. Questo blocco può quindi essere passato alla <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera"><strong>funzione CreateProcessAsUser.</strong></a><br /> | 
+| <a href="createmrulist.md"><strong>CreateMRUListW</strong></a><br /> | Crea un nuovo elenco degli elementi usati più di recente.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-createprofile"><strong>CreateProfile</strong></a><br /> | Crea un nuovo profilo utente.<br /> | 
+| <a href="/windows/desktop/api/Scrnsave/nf-scrnsave-defscreensaverproc"><strong>DefScreenSaverProc</strong></a><br /> | Fornisce l'elaborazione predefinita per tutti i messaggi non screen saver un'applicazione.<br /> | 
+| <a href="/windows/desktop/api/Commctrl/nf-commctrl-defsubclassproc"><strong>DefSubclassProc</strong></a><br /> | Chiama il gestore successivo nella catena di sottoclassi di una finestra. L'ultimo gestore nella catena di sottoclassi chiama la routine della finestra originale per la finestra.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-deleteappcontainerprofile"><strong>DeleteAppContainerProfile</strong></a><br /> | Elimina il profilo specificato per utente e per app.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-deleteprofilea"><strong>DeleteProfile</strong></a><br /> | Elimina il profilo utente e tutte le impostazioni relative all'utente dal computer specificato. Il chiamante deve avere privilegi amministrativi per eliminare il profilo di un utente.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-destroyenvironmentblock"><strong>DestroyEnvironmentBlock</strong></a><br /> | Libera le variabili di ambiente create <a href="/windows/desktop/api/Userenv/nf-userenv-createenvironmentblock"><strong>dalla funzione CreateEnvironmentBlock.</strong></a><br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-deriveappcontainersidfromappcontainername"><strong>DeriveAppContainerSidFromAppContainerName</strong></a><br /> | Ottiene il SID del profilo specificato.<br /> | 
+| <a href="/windows/desktop/api/userenv/nf-userenv-deriverestrictedappcontainersidfromappcontainersidandrestrictedname"><strong>DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName</strong></a><br /> | DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName è riservato per un uso futuro.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><em>DLLGETVERSIONPROC</em></a><br /> | Implementato da molte DLL Windows Shell per consentire alle applicazioni di ottenere informazioni sulla versione specifiche della DLL.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-dragacceptfiles"><strong>DragAcceptFiles</strong></a><br /> | Registra se una finestra accetta file eliminati.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-dragfinish"><strong>TrascinareFinish</strong></a><br /> | Rilascia la memoria allocata dal sistema per il trasferimento dei nomi di file all'applicazione.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea"><strong>DragQueryFile</strong></a><br /> | Recupera i nomi dei file rilasciati risultanti da un'operazione di trascinamento della selezione riuscita.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint"><strong>DragQueryPoint</strong></a><br /> | Recupera la posizione del puntatore del mouse nel momento in cui è stato rilasciato un file durante un'operazione di trascinamento della selezione.<br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-duplicateicon"><strong>DuplicateIcon</strong></a><br /> | Crea un duplicato di un'icona specificata.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-expandenvironmentstringsforusera"><strong>ExpandEnvironmentStringsForUser</strong></a><br /> | Espande la stringa di origine usando il blocco di ambiente stabilito per l'utente specificato.<br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-extractassociatedicona"><strong>ExtractAssociatedIcon</strong></a><br /> | Ottiene un handle per un'icona archiviata come risorsa in un file o un'icona archiviata nel file eseguibile associato di un file.<br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticona"><strong>ExtractIcon</strong></a><br /> | Ottiene un handle a un'icona dal file eseguibile, dalla DLL o dal file icona specificato. <br /> Per recuperare una matrice di handle per icone grandi o piccole, usare la <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>funzione ExtractIconEx.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>ExtractIconEx</strong></a><br /> | La <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>funzione ExtractIconEx</strong></a> crea una matrice di handle per icone grandi o piccole estratte dal file eseguibile, dalla DLL o dal file icona specificato.<br /> | 
+| <a href="fileiconinit.md"><strong>FileIconInit</strong></a><br /> | Inizializza o reinizializza l'elenco di immagini di sistema.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-findexecutablea"><strong>FindExecutable</strong></a><br /> | Recupera il nome e l'handle del file eseguibile (.exe) associato a un file di documento specifico.<br /> | 
+| <a href="/windows/desktop/api/syncmgr/nf-syncmgr-freeconfirmconflictitem"><strong>FreeConfirmConflictItem</strong></a><br /> | Libera le risorse allocate per una struttura <a href="/windows/desktop/api/Syncmgr/ns-syncmgr-confirm_conflict_item"><strong>CONFIRM_CONFLICT_ITEM</strong></a> struttura .<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarray"><strong>FreeIDListArray</strong></a><br /> | Libera la memoria utilizzata da un puntatore a una matrice di elenchi di identificatori di elemento (PIDL).<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarraychild"><strong>FreeIDListArrayChild</strong></a><br /> | Rilascia lo spazio di memoria per la matrice di puntatori agli ID elemento figlio. In questo modo vengono rilasciati PITEMID_CHILDs all'interno della matrice e della matrice stessa.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarrayfull"><strong>FreeIDListArrayFull</strong></a><br /> | Rilascia lo spazio di memoria per la matrice PIDL. In questo modo vengono rilasciati PIDLIST_ABSOLUTEs all'interno della matrice e della matrice stessa.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeknownfolderdefinitionfields"><strong>FreeKnownFolderDefinitionFields</strong></a><br /> | Libera i campi allocati nel risultato da <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getfolderdefinition"><strong>IKnownFolder::GetFolderDefinition.</strong></a><br /> | 
+| <a href="freemrulist.md"><strong>FreeMRUList</strong></a><br /> | Libera l'handle associato all'elenco MRU e scrive i dati memorizzati nella cache nel Registro di sistema.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getallusersprofiledirectorya"><strong>GetAllUsersProfileDirectory</strong></a><br /> | Recupera il percorso della radice della directory che contiene i dati del programma condivisi da tutti gli utenti.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getappcontainerfolderpath"><strong>GetAppContainerFolderPath</strong></a><br /> | Ottiene il percorso della cartella dei dati dell'app locale per il contenitore di app specificato.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getappcontainerregistrylocation"><strong>GetAppContainerRegistryLocation</strong></a><br /> | Ottiene il percorso dell'archiviazione del registro associata a un contenitore di app.<br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/jj152005(v=vs.85)"><strong>GetContractDelegateWindow</strong></a><br /> | Recupera una finestra impostata come delegato per la finestra in primo piano principale di un'app allo scopo di associare la finestra del delegato ai contratti dell'app. Usare questa funzione se si è uno sviluppatore che scrive un'app Windows Store in C++ nativo.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-getcurrentprocessexplicitappusermodelid"><strong>GetCurrentProcessExplicitAppUserModelID</strong></a><br /> | Recupera l'ID modello utente applicazione esplicito definito dall'applicazione (AppUserModelID) per il processo corrente.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getdefaultuserprofiledirectorya"><strong>GetDefaultUserProfileDirectory</strong></a><br /> | Recupera il percorso della radice del profilo utente predefinito.<br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getdpiforshelluicomponent"><strong>GetDpiForShellUiComponent</strong></a><br /> | Recupera i punti per pollice (dpi) <a href="/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-shell_ui_component"><strong></strong></a> occupati da un SHELL_UI_COMPONENT in base al fattore di scala <a href="/windows/desktop/api/shellscalingapi/ne-shellscalingapi-process_dpi_awareness"><strong>corrente e</strong></a>PROCESS_DPI_AWARENESS .<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-getmenucontexthelpid"><strong>GetMenuContextHelpId</strong></a><br /> | Recupera l'identificatore di contesto della Guida associato al menu specificato.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getprofilesdirectorya"><strong>GetProfilesDirectory</strong></a><br /> | Recupera il percorso della directory radice in cui sono archiviati i profili utente.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getprofiletype"><strong>GetProfileType</strong></a><br /> | Recupera il tipo di profilo caricato per l'utente corrente.<br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorfordevice"><strong>GetScaleFactorForDevice</strong></a><br /> | Ottiene il fattore di scala preferito per un dispositivo di visualizzazione.<br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorformonitor"><strong>GetScaleFactorForMonitor</strong></a><br /> | Ottiene il fattore di scala di un monitoraggio specifico. Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorfordevice"><strong>GetScaleFactorForDevice.</strong></a><br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-getuserprofiledirectorya"><strong>GetUserProfileDirectory</strong></a><br /> | Recupera il percorso della directory radice del profilo dell'utente specificato.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-getwindowcontexthelpid"><strong>GetWindowContextHelpId</strong></a><br /> | Recupera l'identificatore di contesto della Guida, se presente, associato alla finestra specificata.<br /> | 
+| <a href="/windows/desktop/api/Commctrl/nf-commctrl-getwindowsubclass"><strong>GetWindowSubclass</strong></a><br /> | Recupera i dati di riferimento per il callback della sottoclasse della finestra specificata.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-idlistcontainerisconsistent"><strong>IDListContainerIsConsistent</strong></a><br /> | Verifica che la struttura del contenitore di un elenco IDList sia valida.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilappendid"><strong>ILAppendID</strong></a><br /> | Aggiunge o antepone una <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> a <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclone"><strong>ILClone</strong></a><br /> | Clona una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonechild"><strong>ILCloneChild</strong></a><br /> | Clona una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> figlio.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonefirst"><strong>ILCloneFirst</strong></a><br /> | Clona la prima <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonefull"><strong>ILCloneFull</strong></a><br /> | Clona una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> completa o assoluta.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilcombine"><strong>ILCombine</strong></a><br /> | Combina due <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>strutture ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilcreatefrompath"><strong>ILCreateFromPath</strong></a><br /> | Restituisce la <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> associata a un percorso di file specificato.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfindchild"><strong>ILFindChild</strong></a><br /> | Determina se una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> specificata è figlio di <strong>un'altra struttura ITEMIDLIST.</strong><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfindlastid"><strong>ILFindLastID</strong></a><br /> | Restituisce un puntatore all'ultima <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> in <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree"><strong>IlFree</strong></a><br /> | Libera una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> allocata dalla shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilgetnext"><strong>ILGetNext</strong></a><br /> | Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilgetsize"><strong>ILGetSize</strong></a><br /> | Restituisce le dimensioni, in byte, di una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisaligned"><strong>ILIsAligned</strong></a><br /> | Verifica se una costante <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> è allineata su un limite del puntatore, ovvero un <strong>valore DWORD</strong> nelle architetture a 32 bit e un <strong>valore QWORD</strong> nelle architetture a 64 bit.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilischild"><strong>ILIsChild</strong></a><br /> | Verifica se un PIDL è un PIDL figlio, ovvero un PIDL con esattamente <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>un SHITEMID.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisempty"><strong>ILIsEmpty</strong></a><br /> | Verifica se una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> è vuota.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisequal"><strong>ILIsEqual</strong></a><br /> | Verifica se due <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>strutture ITEMIDLIST</strong></a> sono uguali in un confronto binario.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisparent"><strong>ILIsParent</strong></a><br /> | Verifica se una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> è l'elemento padre di un'altra <strong>struttura ITEMIDLIST.</strong><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilnext"><strong>ILNext(PCUIDLIST_RELATIVE)</strong></a><br /> | Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/bb776455(v=vs.85)"><strong>ILNext(PUIDLIST_RELATIVE)</strong></a><br /> | Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilremovelastid"><strong>ILRemoveLastID</strong></a><br /> | Rimuove <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>l'ultima struttura SHITEMID</strong></a> da <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilsavetostream"><strong>ILSaveToStream</strong></a><br /> | Salva una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> in un flusso.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilskip"><strong>ILSkip(PCUIDLIST_RELATIVE, UINT)</strong></a><br /> | Ignora un determinato numero di byte in una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> costante, non allineata e relativa.<br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/bb776459(v=vs.85)"><strong>ILSkip(PUIDLIST_RELATIVE, UINT)</strong></a><br /> | Ignora un determinato numero di byte in una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> relativa non allineata.<br /> | 
+| <a href="/windows/desktop/api/Intshcut/nf-intshcut-inetisoffline"><strong>InetIsOffline</strong></a><br /> | Determina se il sistema è connesso a Internet.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol"><strong>InitNetworkAddressControl</strong></a><br /> | Inizializza la classe della finestra di controllo dell'indirizzo di rete.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-loaduserprofilea"><strong>LoadUserProfile</strong></a><br /> | Carica il profilo dell'utente specificato. Il profilo può essere un <a href="local-user-profiles.md">profilo utente locale o</a> un profilo utente <a href="roaming-user-profiles.md">mobile.</a><br /> | 
+| <a href="/windows/desktop/api/Intshcut/nf-intshcut-mimeassociationdialoga"><strong>MimeAssociationDialog</strong></a><br /> | Esegue la finestra di dialogo tipo di contenuto MIME non registrato.<br /><blockquote>[!Note]<br />Windows XP Service Pack 2 (SP2) o versioni successive: questa funzione non è più supportata.</blockquote><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-pathmakeuniquename"><strong>PathMakeUniqueName</strong></a><br /> | Crea un nome di percorso univoco da un modello.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-pathyetanothermakeuniquename"><strong>PathYetAnotherMakeUniqueName</strong></a><br /> | Crea un nome file univoco basato su un nome file esistente.<br /> | 
+| <a href="/windows/desktop/api/appnotify/nf-appnotify-registerappstatechangenotification"><strong>RegisterAppStateChangeNotification</strong></a><br /> | Consente a un'app di registrare una funzione di callback tramite la quale può ricevere una notifica che la libreria sta per entrare o uscire da uno stato sospeso. L'app può usare queste informazioni per eseguire le operazioni necessarie, ad esempio il mantenimento dello stato, che devono essere eseguite in quel momento.<br /> | 
+| <a href="/windows/desktop/api/Scrnsave/nf-scrnsave-registerdialogclasses"><strong>Classi RegisterDialogClasses</strong></a><br /> | Registra tutte le classi di finestra non standard richieste da una screen saver di configurazione di una finestra di dialogo.<br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>RegisterScaleChangeEvent</strong></a><br /> | Esegue la registrazione per un evento che viene attivato quando è possibile che la scala sia stata modificata. Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangenotifications"><strong>RegisterScaleChangeNotifications.</strong></a><br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangenotifications"><strong>RegisterScaleChangeNotifications</strong></a><br /> | Registra una finestra per ricevere callback quando si modifica il ridimensionamento delle informazioni.<br /><blockquote>[!Note]<br />Questa funzione non è supportata a Windows 8.1. In <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>alternativa, usare RegisterScaleChangeEvent.</strong></a></blockquote><br /> | 
+| <a href="/windows/desktop/api/Commctrl/nf-commctrl-removewindowsubclass"><strong>RemoveWindowSubclass</strong></a><br /> | Rimuove un callback di sottoclasse da una finestra.<br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-revokescalechangenotifications"><strong>RevokeScaleChangeNotifications</strong></a><br /> | Revoca la registrazione di una finestra, impedendo la ricezione di callback durante il ridimensionamento delle informazioni.<br /><blockquote>[!Note]<br />Questa funzione non è supportata a Windows 8.1. In <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-unregisterscalechangeevent"><strong>alternativa, usare UnregisterScaleChangeEvent.</strong></a></blockquote><br /> | 
+| <a href="/windows/desktop/api/Scrnsave/nf-scrnsave-screensaverconfiguredialog"><strong>ScreenSaverConfigureDialog</strong></a><br /> | Riceve i messaggi inviati a una screen saver di configurazione di un utente. Una screen saver che consente la configurazione utente deve definire questa funzione.<br /> | 
+| <a href="/windows/desktop/api/Scrnsave/nf-scrnsave-screensaverproc"><strong>ScreenSaverProc</strong></a><br /> | Riceve i messaggi inviati alla finestra di screen saver specificata.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-setcontractdelegatewindow"><strong>SetContractDelegateWindow</strong></a><br /> | Associa una finestra dell'app diversa dalla finestra principale in primo piano ai contratti di un'app. Usare questa funzione se si è uno sviluppatore che scrive un'app Windows Store in C++ nativo.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-setcurrentprocessexplicitappusermodelid"><strong>SetCurrentProcessExplicitAppUserModelID</strong></a><br /> | Specifica un AppUserModelID univoco definito dall'applicazione che identifica il processo corrente nella barra delle applicazioni. Questo identificatore consente a un'applicazione di raggruppare i processi e le finestre associati sotto un singolo pulsante della barra delle applicazioni.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-setmenucontexthelpid"><strong>SetMenuContextHelpId</strong></a><br /> | Associa un identificatore di contesto della Guida a un menu.<br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-setwindowcontexthelpid"><strong>SetWindowContextHelpId</strong></a><br /> | Associa un identificatore di contesto della Guida alla finestra specificata.<br /> | 
+| <a href="/windows/desktop/api/Commctrl/nf-commctrl-setwindowsubclass"><strong>SetWindowSubclass</strong></a><br /> | Installa o aggiorna un callback di sottoclasse della finestra.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a><br /> | Notifica al sistema che è stato eseguito l'accesso a un elemento allo scopo di tenere traccia degli elementi usati più di recente e più di frequente. Questa funzione può essere usata anche per cancellare tutti i dati di utilizzo.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage"><strong>SHAppBarMessage</strong></a><br /> | Invia un messaggio di appbar al sistema.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shassocenumhandlers"><strong>SHAssocEnumHandlers</strong></a><br /> | Restituisce un oggetto di enumerazione per un set specificato di gestori di estensioni di file.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shassocenumhandlersforprotocolbyapplication"><strong>SHAssocEnumHandlersForProtocolByApplication</strong></a><br /> | Ottiene un'interfaccia di enumerazione che fornisce l'accesso ai gestori associati a un protocollo specificato.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparent"><strong>SHBindToFolderIDListParent</strong></a><br /> | Dato un elemento dello spazio dei nomi Shell specificato sotto forma di cartella e un elenco di identificatori di elemento relativo a tale cartella, questa funzione esegue il binding all'elemento padre dell'elemento dello spazio dei nomi e restituisce facoltativamente un puntatore al componente finale dell'elenco di identificatori di elemento.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparentex"><strong>SHBindToFolderIDListParentEx</strong></a><br /> | Estende la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparent"><strong>funzione SHBindToFolderIDListParent</strong></a> consentendo al chiamante di specificare un contesto di associazione.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtoobject"><strong>SHBindToObject</strong></a><br /> | Recupera ed esegue l'associazione a un oggetto specificato usando il metodo <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-bindtoobject"><strong>IShellFolder::BindToObject</strong></a> dello spazio dei nomi shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtoparent"><strong>SHBindToParent</strong></a><br /> | Accetta un puntatore a un elenco di identificatori di elemento completo (PIDL) e restituisce un puntatore a interfaccia specificato sull'oggetto padre.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera"><strong>SHBrowseForFolder</strong></a><br /> | Visualizza una finestra di dialogo che consente all'utente di selezionare una cartella Shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotification_lock"><strong>SHChangeNotification_Lock</strong></a><br /> | Blocca la memoria condivisa associata a un evento di notifica delle modifiche della shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotification_unlock"><strong>SHChangeNotification_Unlock</strong></a><br /> | Sblocca la memoria condivisa per una notifica di modifica.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify"><strong>SHChangeNotify</strong></a><br /> | Notifica al sistema di un evento che un'applicazione ha eseguito. Un'applicazione deve usare questa funzione se esegue un'azione che può influire sulla shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyderegister"><strong>SHChangeNotifyDeregister</strong></a><br /> | Annulla la registrazione del processo finestra del client dalla ricezione <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify"><strong>di messaggi SHChangeNotify.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister"><strong>SHChangeNotifyRegister</strong></a><br /> | Registra una finestra per ricevere notifiche dall'file system o dalla shell, se il file system supporta le notifiche.<br /> | 
+| <a href="/windows/desktop/api/Shlobj/nf-shlobj-shchangenotifyregisterthread"><strong>SHChangeNotifyRegisterThread</strong></a><br /> | Abilita la registrazione asincrona e l'annullamento della registrazione di un thread.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateassociationregistration"><strong>SHCreateAssociationRegistration</strong></a><br /> | Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iapplicationassociationregistration"><strong>oggetto IApplicationAssociationRegistration</strong></a> in base all'implementazione predefinita dell'interfaccia fornita da Windows.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedataobject"><strong>SHCreateDataObject</strong></a><br /> | Crea un oggetto dati in una cartella padre.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu"><strong>SHCreateDefaultContextMenu</strong></a><br /> | Crea un oggetto che rappresenta l'implementazione predefinita del menu di scelta rapida della shell.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreatedefaultextracticon"><strong>SHCreateDefaultExtractIcon</strong></a><br /> | Crea un estrattore di icone standard, i cui valori predefiniti possono essere ulteriormente configurati tramite <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idefaultextracticoninit"><strong>l'interfaccia IDefaultExtractIconInit.</strong></a><br /> | 
+| <a href="/windows/desktop/api/Shobjidl/nf-shobjidl-shcreatedefaultpropertiesop"><strong>SHCreateDefaultPropertiesOp</strong></a><br /> | Crea un'operazione di file che imposta le proprietà predefinite per l'elemento Shell che non sono già state impostate.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromidlist"><strong>SHCreateItemFromIDList</strong></a><br /> | Crea e inizializza un oggetto elemento Shell da un file PIDL. L'oggetto elemento della shell risultante supporta <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>l'interfaccia IShellItem.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromparsingname"><strong>SHCreateItemFromParsingName</strong></a><br /> | Crea e inizializza un oggetto Shell da un nome di analisi.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromrelativename"><strong>SHCreateItemFromRelativeName</strong></a><br /> | Crea e inizializza un oggetto elemento Shell da un nome di analisi relativo.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateiteminknownfolder"><strong>SHCreateItemInKnownFolder</strong></a><br /> | Crea un oggetto elemento Shell per un singolo file presente all'interno di una cartella nota.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemwithparent"><strong>SHCreateItemWithParent</strong></a><br /> | Creare un elemento shell, dati una cartella padre e un ID elemento figlio.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>SHCreateShellFolderView</strong></a><br /> | Crea una nuova istanza dell'oggetto visualizzazione cartella Shell predefinito (DefView).<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderviewex"><strong>SHCreateShellFolderViewEx</strong></a><br /> | Crea una nuova istanza dell'oggetto visualizzazione cartella Shell predefinito. È consigliabile usare <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>SHCreateShellFolderView</strong></a> anziché questa funzione.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellitem"><strong>SHCreateShellItem</strong></a><br /> | Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem.</strong></a> <br /><blockquote>[!Note]<br />È consigliabile usare <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemwithparent"><strong>SHCreateItemWithParent</strong></a> o <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromidlist"><strong>SHCreateItemFromIDList</strong></a> anziché questa funzione.</blockquote><br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarray"><strong>SHCreateShellItemArray</strong></a><br /> | Crea un oggetto matrice di elementi shell.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject"><strong>SHCreateShellItemArrayFromDataObject</strong></a><br /> | Crea un oggetto matrice di elementi shell da un oggetto dati. <br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromidlists"><strong>SHCreateShellItemArrayFromIDLists</strong></a><br /> | Crea un oggetto matrice di elementi shell da un elenco <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>di strutture ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromshellitem"><strong>SHCreateShellItemArrayFromShellItem</strong></a><br /> | Crea una matrice di un elemento da un singolo elemento shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shdefextracticona"><strong>SHDefExtractIcon</strong></a><br /> | Fornisce un gestore predefinito per estrarre un'icona da un file.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shdodragdrop"><strong>SHDoDragDrop</strong></a><br /> | Esegue un'operazione di trascinamento della selezione. Supporta la creazione dell'origine di trascinamento su richiesta, nonché le immagini di trascinamento.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona"><strong>Shell_NotifyIcon</strong></a><br /> | Invia un messaggio all'area di stato della barra delle applicazioni.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect"><strong>Shell_NotifyIconGetRect</strong></a><br /> | Ottiene le coordinate dello schermo del rettangolo di delimitazione di un'icona di notifica.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellabouta"><strong>ShellAbout</strong></a><br /> | Visualizza una <strong>finestra di dialogo ShellAbout.</strong><br /> | 
+| <a href="shellddeinit.md"><strong>ShellDDEInit</strong></a><br /> | Registra i servizi DDE (Shell Dynamic Data Exchange) nel processo corrente, notificando al sistema che il processo corrente vuole ospitare oggetti DDE.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a><br /> | Esegue un'operazione su un file specificato.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a><br /> | Esegue un'operazione su un file specificato.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shemptyrecyclebina"><strong>SHEmptyRecycleBin</strong></a><br /> | Svuota il Cestino nell'unità specificata.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shenumerateunreadmailaccountsa"><strong>SHEnumerateUnreadMailAccounts</strong></a><br /> | Enumera gli account utente con messaggi di posta elettronica non letti.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shevaluatesystemcommandtemplate"><strong>SHEvaluateSystemCommandTemplate</strong></a><br /> | Applica la convalida rigorosa dei parametri usati in una chiamata a <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa"><strong>CreateProcess</strong></a> o <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute.</strong></a><br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>SHFileOperation</strong></a><br /> | Copia, sposta, rinomina o elimina un file system. Questa funzione è stata sostituita in Windows Vista da <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation"><strong>IFileOperation</strong></a>.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfreenamemappings"><strong>SHFreeNameMappings</strong></a><br /> | Libera un oggetto di mapping dei nomi di file recuperato dalla <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>funzione SHFileOperation.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdatafromidlista"><strong>SHGetDataFromIDList</strong></a><br /> | Recupera i dati delle proprietà estese da un elenco di identificatori relativi.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder"><strong>SHGetDesktopFolder</strong></a><br /> | Recupera <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>l'interfaccia IShellFolder</strong></a> per la cartella desktop, che è la radice dello spazio dei nomi della shell.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetdiskfreespaceexa"><strong>SHGetDiskFreeSpaceEx</strong></a><br /> | Recupera le informazioni sullo spazio su disco per un volume del disco.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetdrivemedia"><strong>SHGetDriveMedia</strong></a><br /> | Restituisce il tipo di supporto presente nell'unità specificata.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetfileinfoa"><strong>SHGetFileInfo</strong></a><br /> | Recupera informazioni su un oggetto nel file system, ad esempio un file, una cartella, una directory o una radice dell'unità.<br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/mt757093(v=vs.85)"><strong>SHGetFolderPathEx</strong></a><br /> | Recupera il percorso completo di una cartella nota identificata da <a href="knownfolderid.md"><strong>KNOWNFOLDERID della cartella.</strong></a> Questo estende <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath</strong></a> consentendo di impostare le dimensioni iniziali del buffer di stringa.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgeticonoverlayindexa"><strong>SHGetIconOverlayIndex</strong></a><br /> | Restituisce l'indice dell'icona di sovrapposizione nell'elenco delle immagini di sistema.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetidlistfromobject"><strong>SHGetIDListFromObject</strong></a><br /> | Recupera il file PIDL di un oggetto .<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetimagelist"><strong>SHGetImageList</strong></a><br /> | Recupera un elenco di immagini.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetinstanceexplorer"><strong>SHGetInstanceExplorer</strong></a><br /> | Recupera un'interfaccia che consente alle estensioni della shell ospitate e ad altri componenti di impedire la chiusura prematura del processo host. Il processo host è in genere Windows Explorer o Windows Internet Explorer, ma questa funzione può essere usata anche da altre applicazioni.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetitemfromdataobject"><strong>SHGetItemFromDataObject</strong></a><br /> | Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> o correlato in base a un elemento specificato da <a href="/windows/desktop/api/objidl/nn-objidl-idataobject"><strong>un oggetto IDataObject.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetitemfromobject"><strong>SHGetItemFromObject</strong></a><br /> | Recupera un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> per un oggetto .<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderidlist"><strong>SHGetKnownFolderIDList</strong></a><br /> | Recupera il percorso di una cartella nota come <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderitem"><strong>SHGetKnownFolderItem</strong></a><br /> | Recupera un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> che rappresenta una cartella nota.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath</strong></a><br /> | Recupera il percorso completo di una cartella nota identificata da <a href="knownfolderid.md"><strong>KNOWNFOLDERID della cartella.</strong></a><br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetlocalizedname"><strong>SHGetLocalizedName</strong></a><br /> | Recupera il nome localizzato di un file in una cartella Shell.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetnamefromidlist"><strong>SHGetNameFromIDList</strong></a><br /> | Recupera il nome visualizzato di un elemento identificato dal relativo IDList.<br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/bb762192(v=vs.85)"><strong>SHGetNameFromPropertyKey</strong></a><br /> | Recupera il nome canonico della proprietà in base alla <a href="/windows/desktop/api/wtypes/ns-wtypes-propertykey"><strong>proprietà PROPERTYKEY</strong></a>.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetnewlinkinfoa"><strong>SHGetNewLinkInfo</strong></a><br /> | Crea un nome per un nuovo collegamento in base alla destinazione proposta del collegamento. Questa funzione non crea il collegamento, ma solo il nome.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlista"><strong>SHGetPathFromIDList</strong></a><br /> | Converte un elenco di identificatori di elemento in un file system percorso.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlistex"><strong>SHGetPathFromIDListEx</strong></a><br /> | Converte un elenco di identificatori di elemento in un file system percorso. Questa funzione estende <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlista"><strong>SHGetPathFromIDList</strong></a> consentendo di impostare le dimensioni iniziali del buffer di stringa e dichiarare le opzioni seguenti.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsettings"><strong>SHGetSettings</strong></a><br /> | Recupera le impostazioni correnti dell'opzione Shell.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetstockiconinfo"><strong>SHGetStockIconInfo</strong></a><br /> | Recupera informazioni sulle icone shell definite dal sistema.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgettemporarypropertyforitem"><strong>SHGetTemporaryPropertyForItem</strong></a><br /> | Recupera la proprietà temporanea per l'elemento specificato. Una proprietà temporanea è un archivio di lettura/scrittura che contiene le proprietà solo per la durata dell'oggetto <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem,</strong></a> anziché essere salvato in modo permanente nell'elemento.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetunreadmailcountw"><strong>SHGetUnreadMailCount</strong></a><br /> | Recupera il numero di messaggi non letti di un utente specificato per uno o tutti gli account di posta elettronica.<br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-shisfileavailableoffline"><strong>SHIsFileAvailableOffline</strong></a><br /> | Determina se un file o una cartella è disponibile per l'uso offline. Questa funzione determina anche se il file verrà aperto dalla rete, dalla cache File offline locale o da entrambi i percorsi.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shloadinproc"><strong>SHLoadInProc</strong></a><br /> | Crea un'istanza della classe di oggetti specificata dall'interno del contesto del processo della shell. <br /><strong>Windows Vista</strong> e versioni successive: questa funzione è stata disabilitata e restituisce E_NOTIMPL.<br /> | 
+| <a href="/windows/desktop/api/shellapi/nf-shellapi-shloadnonloadediconoverlayidentifiers"><strong>SHLoadNonloadedIconOverlayIdentifiers</strong></a><br /> | Segnala a Shell che durante l'operazione successiva che richiede informazioni di sovrimpressione, deve caricare gli identificatori di sovrapposizione delle icone che hanno avuto esito negativo o non erano presenti per la creazione all'avvio. Gli identificatori già caricati non sono interessati.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shlocalstrdupa"><strong>SHLocalStrDup</strong></a><br /> | Crea una copia di una stringa nella memoria appena allocata.<br /> | 
+| <a href="/windows/desktop/api/Shlobj/nf-shlobj-shmultifileproperties"><strong>SHMultiFileProperties</strong></a><br /> | Visualizza una finestra delle proprietà unita per un set di file. I valori delle proprietà comuni a tutti i file vengono visualizzati mentre quelli che differiscono visualizzano la stringa <strong>(più valori).</strong><br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenfolderandselectitems"><strong>SHOpenFolderAndSelectItems</strong></a><br /> | Apre una finestra Windows Explorer con gli elementi specificati in una cartella specifica selezionata.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenwithdialog"><strong>SHOpenWithDialog</strong></a><br /> | Visualizza la <strong>finestra di dialogo</strong> Apri con .<br /> | 
+| <a href="/windows/desktop/shell/showsharefolderui"><strong>ShowShareFolderUI</strong></a><br /> | Visualizza la <strong>scheda Condivisione</strong> cartelle nella finestra delle proprietà per la cartella specificata.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shparsedisplayname"><strong>SHParseDisplayName</strong></a><br /> | Converte il nome visualizzato di un oggetto dello spazio dei nomi Shell in un elenco di identificatori di elemento e restituisce gli attributi dell'oggetto. Questa funzione è il metodo preferito per convertire una stringa in un file PIDL.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shpathprepareforwritea"><strong>SHPathPrepareForWrite</strong></a><br /> | Verifica se il percorso esiste. Ciò include il rimontaggio delle unità di rete mappate, la richiesta di reinserire i supporti espulsibili, la creazione dei percorsi, la richiesta di formattazione dei supporti e l'inserimento delle interfacce utente appropriate, se necessario. Le autorizzazioni di lettura/scrittura per il supporto non vengono controllate.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryrecyclebina"><strong>SHQueryRecycleBin</strong></a><br /> | Recupera le dimensioni dell'Cestino e il numero di elementi in esso presenti, per un'unità specificata.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryusernotificationstate"><strong>SHQueryUserNotificationState</strong></a><br /> | Controlla lo stato del computer per l'utente corrente per determinare se l'invio di una notifica è appropriato.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shremovelocalizedname"><strong>SHRemoveLocalizedName</strong></a><br /> | Rimuove il nome localizzato di un file in una cartella Shell.<br /> | 
+| <a href="/windows/desktop/api/Shlobj/nf-shlobj-shruncontrolpanel"><strong>SHRunControlPanel</strong></a><br /> | Apre un Pannello di controllo elemento. <br /><blockquote>[!Note]<br />Questa funzione non è supportata a Windows Vista</blockquote><br /> | 
+| <a href="/windows/desktop/api/Shobjidl/nf-shobjidl-shsetdefaultproperties"><strong>SHSetDefaultProperties</strong></a><br /> | Applica il set predefinito di proprietà a un elemento shell.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shsetinstanceexplorer"><strong>SHSetInstanceExplorer</strong></a><br /> | Fornisce un'interfaccia che consente alle estensioni della shell ospitate e ad altri componenti di impedire la chiusura prematura del processo host. Il processo host è in genere Windows Explorer o Internet Explorer, ma questa funzione può essere usata anche da altre applicazioni.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shsetknownfolderpath"><strong>SHSetKnownFolderPath</strong></a><br /> | Reindirizza una cartella nota a un nuovo percorso.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shsetlocalizedname"><strong>SHSetLocalizedName</strong></a><br /> | Imposta il nome localizzato di un file in una cartella shell.<br /> | 
+| <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shsettemporarypropertyforitem"><strong>SHSetTemporaryPropertyForItem</strong></a><br /> | Imposta una proprietà temporanea per l'elemento specificato. Una proprietà temporanea viene mantenuta in un archivio di lettura/scrittura che contiene proprietà solo per la durata dell'oggetto <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem,</strong></a> anziché scriverle nuovamente nell'elemento.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shsetunreadmailcountw"><strong>SHSetUnreadMailCount</strong></a><br /> | Archivia il numero di messaggi non letti dell'utente corrente per un account di posta elettronica specificato nel Registro di sistema.<br /> | 
+| <a href="/windows/desktop/api/Shellapi/nf-shellapi-shtesttokenmembership"><strong>SHTestTokenMembership</strong></a><br /> | Usa <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-checktokenmembership"><strong>CheckTokenMembership</strong></a> per verificare se il token specificato è membro del gruppo locale con il RID specificato.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shupdateimagea"><strong>SHUpdateImage</strong></a><br /> | Notifica a Shell che un'immagine nell'elenco di immagini di sistema è stata modificata.<br /> | 
+| <a href="/windows/desktop/api/Shlobj/nf-shlobj-softwareupdatemessagebox"><strong>SoftwareUpdateMessageBox</strong></a><br /> | Visualizza una finestra di messaggio standard che può essere utilizzata per notificare a un utente che un'applicazione è stata aggiornata.<br /> | 
+| <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-stgmakeuniquename"><strong>StgMakeUniqueName</strong></a><br /> | Crea un nome univoco per un flusso o un oggetto di archiviazione da un modello.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-strstrniw"><strong>StrStrNIW</strong></a><br /> | Trova la prima occorrenza di una sottostringa all'interno di una stringa. Il confronto viene eseguito senza distinzione tra maiuscole e minuscole.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-strstrnw"><strong>StrStrNW</strong></a><br /> | Trova la prima occorrenza di una sottostringa all'interno di una stringa. Il confronto fa distinzione tra maiuscole e minuscole.<br /> | 
+| <a href="/windows/desktop/api/Intshcut/nf-intshcut-translateurla"><strong>TranslateURL</strong></a><br /> | Applica traduzioni comuni a una determinata stringa URL, creando una nuova stringa URL.<br /> | 
+| <a href="/windows/desktop/api/Userenv/nf-userenv-unloaduserprofile"><strong>UnloadUserProfile</strong></a><br /> | Scarica il profilo di un utente caricato dalla <a href="/windows/desktop/api/Userenv/nf-userenv-loaduserprofilea"><strong>funzione LoadUserProfile.</strong></a> Il chiamante deve avere privilegi amministrativi nel computer. Per altre informazioni, vedere la sezione Osservazioni della <strong>funzione LoadUserProfile.</strong><br /> | 
+| <a href="/windows/desktop/api/appnotify/nf-appnotify-unregisterappstatechangenotification"><strong>UnregisterAppStateChangeNotification</strong></a><br /> | Annulla una notifica di modifica registrata tramite <a href="/windows/desktop/api/appnotify/nf-appnotify-registerappstatechangenotification"><strong>RegisterAppStateChangeNotification.</strong></a><br /> | 
+| <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-unregisterscalechangeevent"><strong>UnregisterScaleChangeEvent</strong></a><br /> | Annulla la registrazione per l'evento di modifica della scalabilità registrato <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>tramite RegisterScaleChangeEvent</strong></a>. Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-revokescalechangenotifications"><strong>RevokeScaleChangeNotifications</strong></a>.<br /> | 
+| <a href="/windows/desktop/api/Intshcut/nf-intshcut-urlassociationdialoga"><strong>URLAssociationDialog</strong></a><br /> | Richiama la finestra di dialogo del protocollo URL non registrato. Questa finestra di dialogo consente all'utente di selezionare un'applicazione da associare a un protocollo precedentemente sconosciuto.<br /><blockquote>[!Note]<br />Windows XP SP2 o versione successiva: questa funzione non è più supportata.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/bb762266(v=vs.85)"><strong>WinExecError</strong></a><br /> | Recupera il valore di errore generato se la <a href="/windows/win32/api/winbase/nf-winbase-winexec">funzione WinExec</a> non può eseguire un'applicazione specificata. <br /> | 
+| <a href="/windows/desktop/api/Winuser/nf-winuser-winhelpa"><strong>Winhelp</strong></a><br /> | Avvia Windows Guida (Winhelp.exe) e passa dati aggiuntivi che indicano la natura della Guida richiesta dall'applicazione.<br /> | 
 
-</tr>
-<tr class="odd">
-<td><a href="path-functions.md">Funzioni di percorso</a><br/></td>
-
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-assoccreateforclasses"><strong>AssocCreateForClasses</strong></a><br/></td>
-<td>Recupera un oggetto che implementa <a href="/windows/desktop/api/shlwapi/nn-shlwapi-iqueryassociations"><strong>un'interfaccia IQueryAssociations.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-assocgetdetailsofpropkey"><strong>AssocGetDetailsOfPropKey</strong></a><br/></td>
-<td>Recupera il valore per una chiave di proprietà specificata usando le informazioni sull'associazione di file fornite dalle estensioni dello spazio <a href="nse-works.md">dei nomi</a>.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2"><strong>CDefFolderMenu_Create2</strong></a><br/></td>
-<td>Crea un menu di scelta rapida per un gruppo selezionato di oggetti cartella file.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/win32/api/ntquery/nf-ntquery-cishutdown"><strong>CIShutdown</strong></a><br/></td>
-<td>Arresta l'indicizzatore di contenuto e chiude tutti i cataloghi aperti. <br/>
-<blockquote>
-[!Note]<br />
-Questa funzione non è supportata a Windows 8.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-commandlinetoargvw"><strong>CommandLineToArgvW</strong></a><br/></td>
-<td>Analizza una stringa della riga di comando Unicode e restituisce una matrice di puntatori agli argomenti della riga di comando, insieme a un conteggio di tali argomenti, in modo analogo ai valori <em>argv</em> e <em>argc</em> standard del run-time C.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/cpl/nc-cpl-applet_proc"><strong>APPLET_PROC</strong></a><br/></td>
-<td>Funge da punto di ingresso per un'Pannello di controllo applicazione. Si tratta di una funzione di callback definita dalla libreria.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-createappcontainerprofile"><strong>CreateAppContainerProfile</strong></a><br/></td>
-<td>Crea un profilo per utente e per app per le app Windows Store.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-createenvironmentblock"><strong>CreateEnvironmentBlock</strong></a><br/></td>
-<td>Recupera le variabili di ambiente per l'utente specificato. Questo blocco può quindi essere passato alla <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera"><strong>funzione CreateProcessAsUser.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="createmrulist.md"><strong>CreateMRUListW</strong></a><br/></td>
-<td>Crea un nuovo elenco MRU (Most Recently Used).<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-createprofile"><strong>Creare un profilo</strong></a><br/></td>
-<td>Crea un nuovo profilo utente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Scrnsave/nf-scrnsave-defscreensaverproc"><strong>DefScreenSaverProc</strong></a><br/></td>
-<td>Fornisce l'elaborazione predefinita per tutti i messaggi che screen saver'applicazione non elabora.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Commctrl/nf-commctrl-defsubclassproc"><strong>DefSubclassProc</strong></a><br/></td>
-<td>Chiama il gestore successivo nella catena di sottoclassi di una finestra. L'ultimo gestore nella catena di sottoclassi chiama la routine della finestra originale per la finestra.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-deleteappcontainerprofile"><strong>DeleteAppContainerProfile</strong></a><br/></td>
-<td>Elimina il profilo per utente e per app specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-deleteprofilea"><strong>DeleteProfile</strong></a><br/></td>
-<td>Elimina il profilo utente e tutte le impostazioni correlate all'utente dal computer specificato. Il chiamante deve avere privilegi amministrativi per eliminare il profilo di un utente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-destroyenvironmentblock"><strong>DestroyEnvironmentBlock</strong></a><br/></td>
-<td>Libera le variabili di ambiente create <a href="/windows/desktop/api/Userenv/nf-userenv-createenvironmentblock"><strong>dalla funzione CreateEnvironmentBlock.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-deriveappcontainersidfromappcontainername"><strong>DeriveAppContainerSidFromAppContainerName</strong></a><br/></td>
-<td>Ottiene il SID del profilo specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/userenv/nf-userenv-deriverestrictedappcontainersidfromappcontainersidandrestrictedname"><strong>DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName</strong></a><br/></td>
-<td>DeriveRestrictedAppContainerSidFromAppContainerSidAndRestrictedName è riservato per un uso futuro.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shlwapi/nc-shlwapi-dllgetversionproc"><em>DLLGETVERSIONPROC</em></a><br/></td>
-<td>Implementato da molte DELLE DLL Windows Shell per consentire alle applicazioni di ottenere informazioni sulla versione specifiche della DLL.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-dragacceptfiles"><strong>DragAcceptFiles</strong></a><br/></td>
-<td>Registra se una finestra accetta i file eliminati.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-dragfinish"><strong>TrascinareFine</strong></a><br/></td>
-<td>Rilascia la memoria allocata dal sistema per l'uso nel trasferimento dei nomi di file all'applicazione.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea"><strong>DragQueryFile</strong></a><br/></td>
-<td>Recupera i nomi dei file eliminati risultanti da un'operazione di trascinamento della selezione completata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint"><strong>DragQueryPoint</strong></a><br/></td>
-<td>Recupera la posizione del puntatore del mouse al momento dell'eliminazione di un file durante un'operazione di trascinamento della selezione.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-duplicateicon"><strong>DuplicateIcon</strong></a><br/></td>
-<td>Crea un duplicato di un'icona specificata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-expandenvironmentstringsforusera"><strong>ExpandEnvironmentStringsForUser</strong></a><br/></td>
-<td>Espande la stringa di origine usando il blocco di ambiente stabilito per l'utente specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-extractassociatedicona"><strong>ExtractAssociatedIcon</strong></a><br/></td>
-<td>Ottiene un handle per un'icona archiviata come risorsa in un file o un'icona archiviata nel file eseguibile associato di un file.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-extracticona"><strong>ExtractIcon</strong></a><br/></td>
-<td>Ottiene un handle per un'icona dal file eseguibile, dll o file icona specificato. <br/> Per recuperare una matrice di handle per icone grandi o piccole, usare la <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>funzione ExtractIconEx.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>ExtractIconEx</strong></a><br/></td>
-<td>La <a href="/windows/desktop/api/shellapi/nf-shellapi-extracticonexa"><strong>funzione ExtractIconEx</strong></a> crea una matrice di handle per icone grandi o piccole estratte dal file eseguibile, dalla DLL o dal file icona specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="fileiconinit.md"><strong>FileIconInit</strong></a><br/></td>
-<td>Inizializza o reinizializza l'elenco di immagini di sistema.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-findexecutablea"><strong>FindExecutable</strong></a><br/></td>
-<td>Recupera il nome e l'handle del file eseguibile (.exe) associato a un file di documento specifico.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/syncmgr/nf-syncmgr-freeconfirmconflictitem"><strong>FreeConfirmConflictItem</strong></a><br/></td>
-<td>Libera le risorse allocate per una struttura <a href="/windows/desktop/api/Syncmgr/ns-syncmgr-confirm_conflict_item"><strong>CONFIRM_CONFLICT_ITEM.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarray"><strong>FreeIDListArray</strong></a><br/></td>
-<td>Libera la memoria utilizzata da un puntatore a una matrice di elenchi di identificatori di elemento (PIDL).<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarraychild"><strong>FreeIDListArrayChild</strong></a><br/></td>
-<td>Rilascia lo spazio di memoria per la matrice di puntatori agli ID elemento figlio. In questo modo viene PITEMID_CHILDs all'interno della matrice e della matrice stessa.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeidlistarrayfull"><strong>FreeIDListArrayFull</strong></a><br/></td>
-<td>Rilascia lo spazio di memoria per la matrice PIDL. In questo modo vengono rilasciati PIDLIST_ABSOLUTEs all'interno della matrice e della matrice stessa.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-freeknownfolderdefinitionfields"><strong>FreeKnownFolderDefinitionFields</strong></a><br/></td>
-<td>Libera i campi allocati nel risultato da <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getfolderdefinition"><strong>IKnownFolder::GetFolderDefinition</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="freemrulist.md"><strong>FreeMRUList</strong></a><br/></td>
-<td>Libera l'handle associato all'elenco MRU e scrive i dati memorizzati nella cache nel Registro di sistema.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getallusersprofiledirectorya"><strong>GetAllUsersProfileDirectory</strong></a><br/></td>
-<td>Recupera il percorso della radice della directory che contiene i dati del programma condivisi da tutti gli utenti.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getappcontainerfolderpath"><strong>GetAppContainerFolderPath</strong></a><br/></td>
-<td>Ottiene il percorso della cartella dei dati dell'app locale per il contenitore di app specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getappcontainerregistrylocation"><strong>GetAppContainerRegistryLocation</strong></a><br/></td>
-<td>Ottiene il percorso dell'archiviazione del Registro di sistema associata a un contenitore di app.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/previous-versions/windows/desktop/legacy/jj152005(v=vs.85)"><strong>GetContractDelegateWindow</strong></a><br/></td>
-<td>Recupera una finestra impostata come delegato per la finestra in primo piano principale di un'app allo scopo di associare la finestra del delegato ai contratti dell'app. Usare questa funzione se si è uno sviluppatore che scrive un'app Windows Store in C++ nativo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-getcurrentprocessexplicitappusermodelid"><strong>GetCurrentProcessExplicitAppUserModelID</strong></a><br/></td>
-<td>Recupera l'ID modello utente dell'applicazione esplicito definito dall'applicazione (AppUserModelID) per il processo corrente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getdefaultuserprofiledirectorya"><strong>GetDefaultUserProfileDirectory</strong></a><br/></td>
-<td>Recupera il percorso della radice del profilo dell'utente predefinito.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getdpiforshelluicomponent"><strong>GetDpiForShellUiComponent</strong></a><br/></td>
-<td>Recupera i punti per pollice (dpi) occupati da un SHELL_UI_COMPONENT <a href="/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-shell_ui_component"><strong>in</strong></a> base al fattore di scala <a href="/windows/desktop/api/shellscalingapi/ne-shellscalingapi-process_dpi_awareness"><strong>corrente e</strong></a>PROCESS_DPI_AWARENESS .<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-getmenucontexthelpid"><strong>GetMenuContextHelpId</strong></a><br/></td>
-<td>Recupera l'identificatore di contesto della Guida associato al menu specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getprofilesdirectorya"><strong>GetProfilesDirectory</strong></a><br/></td>
-<td>Recupera il percorso della directory radice in cui sono archiviati i profili utente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getprofiletype"><strong>GetProfileType</strong></a><br/></td>
-<td>Recupera il tipo di profilo caricato per l'utente corrente.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorfordevice"><strong>GetScaleFactorForDevice</strong></a><br/></td>
-<td>Ottiene il fattore di scala preferito per un dispositivo di visualizzazione.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorformonitor"><strong>GetScaleFactorForMonitor</strong></a><br/></td>
-<td>Ottiene il fattore di scala di un monitoraggio specifico. Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getscalefactorfordevice"><strong>GetScaleFactorForDevice</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-getuserprofiledirectorya"><strong>GetUserProfileDirectory</strong></a><br/></td>
-<td>Recupera il percorso della directory radice del profilo utente specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-getwindowcontexthelpid"><strong>GetWindowContextHelpId</strong></a><br/></td>
-<td>Recupera l'identificatore di contesto della Guida, se presente, associato alla finestra specificata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Commctrl/nf-commctrl-getwindowsubclass"><strong>GetWindowSubclass</strong></a><br/></td>
-<td>Recupera i dati di riferimento per il callback della sottoclasse della finestra specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-idlistcontainerisconsistent"><strong>IDListContainerIsConsistent</strong></a><br/></td>
-<td>Verifica che la struttura del contenitore di un elenco IDList sia valida.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilappendid"><strong>ILAppendID</strong></a><br/></td>
-<td>Aggiunge o antepone una <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> a <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclone"><strong>ILClone</strong></a><br/></td>
-<td>Clona una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonechild"><strong>ILCloneChild</strong></a><br/></td>
-<td>Clona una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> figlio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonefirst"><strong>ILCloneFirst</strong></a><br/></td>
-<td>Clona la prima <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> in <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilclonefull"><strong>ILCloneFull</strong></a><br/></td>
-<td>Clona una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> completa o assoluta.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilcombine"><strong>ILCombine</strong></a><br/></td>
-<td>Combina due <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>strutture ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilcreatefrompath"><strong>ILCreateFromPath</strong></a><br/></td>
-<td>Restituisce la <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> associata a un percorso di file specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfindchild"><strong>ILFindChild</strong></a><br/></td>
-<td>Determina se una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> specificata è figlio di <strong>un'altra struttura ITEMIDLIST.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfindlastid"><strong>ILFindLastID</strong></a><br/></td>
-<td>Restituisce un puntatore all'ultima <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>struttura SHITEMID</strong></a> in <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilfree"><strong>ILFree</strong></a><br/></td>
-<td>Libera una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> allocata dalla shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilgetnext"><strong>ILGetNext</strong></a><br/></td>
-<td>Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilgetsize"><strong>ILGetSize</strong></a><br/></td>
-<td>Restituisce le dimensioni, in byte, di <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisaligned"><strong>ILIsAligned</strong></a><br/></td>
-<td>Verifica se una costante <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> è allineata su un limite del puntatore, ovvero un <strong>valore DWORD</strong> nelle architetture a 32 bit e un <strong>valore QWORD</strong> nelle architetture a 64 bit.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilischild"><strong>ILIsChild</strong></a><br/></td>
-<td>Verifica se un PIDL è un PIDL figlio, ovvero un PIDL con esattamente <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>un OGGETTO SHITEMID.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisempty"><strong>ILIsEmpty</strong></a><br/></td>
-<td>Verifica se una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> è vuota.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisequal"><strong>ILIsEqual</strong></a><br/></td>
-<td>Verifica se due <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>strutture ITEMIDLIST</strong></a> sono uguali in un confronto binario.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilisparent"><strong>ILIsParent</strong></a><br/></td>
-<td>Verifica se una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> è l'elemento padre di un'altra <strong>struttura ITEMIDLIST.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilnext"><strong>ILNext(PCUIDLIST_RELATIVE)</strong></a><br/></td>
-<td>Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/previous-versions/windows/desktop/legacy/bb776455(v=vs.85)"><strong>ILNext(PUIDLIST_RELATIVE)</strong></a><br/></td>
-<td>Recupera la struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>SHITEMID successiva</strong></a> in una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilremovelastid"><strong>ILRemoveLastID</strong></a><br/></td>
-<td>Rimuove <a href="/windows/desktop/api/Shtypes/ns-shtypes-shitemid"><strong>l'ultima struttura SHITEMID</strong></a> da <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>una struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilsavetostream"><strong>ILSaveToStream</strong></a><br/></td>
-<td>Salva una <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST</strong></a> in un flusso.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-ilskip"><strong>ILSkip(PCUIDLIST_RELATIVE, UINT)</strong></a><br/></td>
-<td>Ignora un determinato numero di byte in una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> costante, non allineata e relativa.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/previous-versions/windows/desktop/legacy/bb776459(v=vs.85)"><strong>ILSkip(PUIDLIST_RELATIVE, UINT)</strong></a><br/></td>
-<td>Ignora un determinato numero di byte in una struttura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> relativa non allineata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Intshcut/nf-intshcut-inetisoffline"><strong>InetIsOffline</strong></a><br/></td>
-<td>Determina se il sistema è connesso a Internet.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol"><strong>InitNetworkAddressControl</strong></a><br/></td>
-<td>Inizializza la classe della finestra di controllo dell'indirizzo di rete.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-loaduserprofilea"><strong>LoadUserProfile</strong></a><br/></td>
-<td>Carica il profilo utente specificato. Il profilo può essere un <a href="local-user-profiles.md">profilo utente locale o</a> un profilo utente <a href="roaming-user-profiles.md">mobile.</a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Intshcut/nf-intshcut-mimeassociationdialoga"><strong>MIMEAssociationDialog</strong></a><br/></td>
-<td>Esegue la finestra di dialogo tipo di contenuto MIME non registrato.<br/>
-<blockquote>
-[!Note]<br />
-Windows XP Service Pack 2 (SP2) o versione successiva: questa funzione non è più supportata.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-pathmakeuniquename"><strong>PathMakeUniqueName</strong></a><br/></td>
-<td>Crea un nome di percorso univoco da un modello.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-pathyetanothermakeuniquename"><strong>PathYetAnotherMakeUniqueName</strong></a><br/></td>
-<td>Crea un nome file univoco in base a un nome file esistente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/appnotify/nf-appnotify-registerappstatechangenotification"><strong>RegisterAppStateChangeNotification</strong></a><br/></td>
-<td>Consente a un'app di registrare una funzione di callback tramite la quale è possibile notificare che la libreria sta per entrare o uscire da uno stato sospeso. L'app può usare queste informazioni per eseguire tutte le operazioni necessarie, ad esempio il mantenimento dello stato, che devono essere eseguite a quel punto.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Scrnsave/nf-scrnsave-registerdialogclasses"><strong>Classi RegisterDialogClasses</strong></a><br/></td>
-<td>Registra tutte le classi finestra non standard richieste da una screen saver di configurazione di un utente.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>RegisterScaleChangeEvent</strong></a><br/></td>
-<td>Esegue la registrazione per un evento attivato quando la scalabilità è stata modificata. Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangenotifications"><strong>RegisterScaleChangeNotifications</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangenotifications"><strong>RegisterScaleChangeNotifications</strong></a><br/></td>
-<td>Registra una finestra per ricevere callback quando si modifica il ridimensionamento delle informazioni.<br/>
-<blockquote>
-[!Note]<br />
-Questa funzione non è supportata a Windows 8.1. In <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>alternativa, usare RegisterScaleChangeEvent.</strong></a>
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Commctrl/nf-commctrl-removewindowsubclass"><strong>RemoveWindowSubclass</strong></a><br/></td>
-<td>Rimuove un callback di sottoclasse da una finestra.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-revokescalechangenotifications"><strong>RevokeScaleChangeNotifications</strong></a><br/></td>
-<td>Revoca la registrazione di una finestra, impedendo la ricezione di callback durante il ridimensionamento delle modifiche delle informazioni.<br/>
-<blockquote>
-[!Note]<br />
-Questa funzione non è supportata a Windows 8.1. In <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-unregisterscalechangeevent"><strong>alternativa, usare UnregisterScaleChangeEvent.</strong></a>
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Scrnsave/nf-scrnsave-screensaverconfiguredialog"><strong>ScreenSaverConfigureDialog</strong></a><br/></td>
-<td>Riceve i messaggi inviati a una screen saver di configurazione di un utente. Una screen saver che consente la configurazione utente deve definire questa funzione.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Scrnsave/nf-scrnsave-screensaverproc"><strong>ScreenSaverProc</strong></a><br/></td>
-<td>Riceve i messaggi inviati alla finestra di screen saver specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-setcontractdelegatewindow"><strong>SetContractDelegateWindow</strong></a><br/></td>
-<td>Associa una finestra dell'app diversa dalla finestra principale in primo piano ai contratti di un'app. Usare questa funzione se si è uno sviluppatore che scrive un'app Windows Store in C++ nativo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-setcurrentprocessexplicitappusermodelid"><strong>SetCurrentProcessExplicitAppUserModelID</strong></a><br/></td>
-<td>Specifica un AppUserModelID univoco definito dall'applicazione che identifica il processo corrente nella barra delle applicazioni. Questo identificatore consente a un'applicazione di raggruppare i processi e le finestre associati sotto un singolo pulsante della barra delle applicazioni.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-setmenucontexthelpid"><strong>SetMenuContextHelpId</strong></a><br/></td>
-<td>Associa un identificatore di contesto della Guida a un menu.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-setwindowcontexthelpid"><strong>SetWindowContextHelpId</strong></a><br/></td>
-<td>Associa un identificatore di contesto della Guida alla finestra specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Commctrl/nf-commctrl-setwindowsubclass"><strong>SetWindowSubclass</strong></a><br/></td>
-<td>Installa o aggiorna un callback di sottoclasse della finestra.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs"><strong>SHAddToRecentDocs</strong></a><br/></td>
-<td>Notifica al sistema che è stato eseguito l'accesso a un elemento allo scopo di tenere traccia degli elementi usati più di recente e più di frequente. Questa funzione può essere usata anche per cancellare tutti i dati di utilizzo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage"><strong>SHAppBarMessage</strong></a><br/></td>
-<td>Invia un messaggio di appbar al sistema.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shassocenumhandlers"><strong>SHAssocEnumHandlers</strong></a><br/></td>
-<td>Restituisce un oggetto di enumerazione per un set specificato di gestori di estensioni di file.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shassocenumhandlersforprotocolbyapplication"><strong>SHAssocEnumHandlersForProtocolByApplication</strong></a><br/></td>
-<td>Ottiene un'interfaccia di enumerazione che fornisce l'accesso ai gestori associati a un protocollo specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparent"><strong>SHBindToFolderIDListParent</strong></a><br/></td>
-<td>Dato un elemento dello spazio dei nomi Shell specificato sotto forma di cartella e un elenco di identificatori di elemento relativo a tale cartella, questa funzione esegue il binding all'elemento padre dell'elemento dello spazio dei nomi e restituisce facoltativamente un puntatore al componente finale dell'elenco di identificatori di elemento.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparentex"><strong>SHBindToFolderIDListParentEx</strong></a><br/></td>
-<td>Estende la <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtofolderidlistparent"><strong>funzione SHBindToFolderIDListParent</strong></a> consentendo al chiamante di specificare un contesto di associazione.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtoobject"><strong>SHBindToObject</strong></a><br/></td>
-<td>Recupera ed esegue l'associazione a un oggetto specificato usando il metodo <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-bindtoobject"><strong>IShellFolder::BindToObject</strong></a> dello spazio dei nomi shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbindtoparent"><strong>SHBindToParent</strong></a><br/></td>
-<td>Accetta un puntatore a un elenco di identificatori di elemento completo (PIDL) e restituisce un puntatore a interfaccia specificato sull'oggetto padre.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera"><strong>SHBrowseForFolder</strong></a><br/></td>
-<td>Visualizza una finestra di dialogo che consente all'utente di selezionare una cartella Shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotification_lock"><strong>SHChangeNotification_Lock</strong></a><br/></td>
-<td>Blocca la memoria condivisa associata a un evento di notifica delle modifiche della shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotification_unlock"><strong>SHChangeNotification_Unlock</strong></a><br/></td>
-<td>Sblocca la memoria condivisa per una notifica di modifica.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify"><strong>SHChangeNotify</strong></a><br/></td>
-<td>Notifica al sistema di un evento che un'applicazione ha eseguito. Un'applicazione deve usare questa funzione se esegue un'azione che può influire sulla shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyderegister"><strong>SHChangeNotifyDeregister</strong></a><br/></td>
-<td>Annulla la registrazione del processo finestra del client dalla ricezione <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify"><strong>di messaggi SHChangeNotify.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotifyregister"><strong>SHChangeNotifyRegister</strong></a><br/></td>
-<td>Registra una finestra per ricevere notifiche dal file system o dalla shell, se il file system supporta le notifiche.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shchangenotifyregisterthread"><strong>SHChangeNotifyRegisterThread</strong></a><br/></td>
-<td>Abilita la registrazione asincrona e l'annullamento della registrazione di un thread.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateassociationregistration"><strong>SHCreateAssociationRegistration</strong></a><br/></td>
-<td>Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iapplicationassociationregistration"><strong>oggetto IApplicationAssociationRegistration</strong></a> in base all'implementazione predefinita dell'interfaccia fornita da Windows.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedataobject"><strong>SHCreateDataObject</strong></a><br/></td>
-<td>Crea un oggetto dati in una cartella padre.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu"><strong>SHCreateDefaultContextMenu</strong></a><br/></td>
-<td>Crea un oggetto che rappresenta l'implementazione predefinita del menu di scelta rapida della shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreatedefaultextracticon"><strong>SHCreateDefaultExtractIcon</strong></a><br/></td>
-<td>Crea un estrattore di icone standard, i cui valori predefiniti possono essere ulteriormente configurati tramite <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idefaultextracticoninit"><strong>l'interfaccia IDefaultExtractIconInit.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shobjidl/nf-shobjidl-shcreatedefaultpropertiesop"><strong>SHCreateDefaultPropertiesOp</strong></a><br/></td>
-<td>Crea un'operazione di file che imposta le proprietà predefinite per l'elemento Shell che non sono già state impostate.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromidlist"><strong>SHCreateItemFromIDList</strong></a><br/></td>
-<td>Crea e inizializza un oggetto elemento Shell da un file PIDL. L'oggetto elemento della shell risultante supporta <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>l'interfaccia IShellItem.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromparsingname"><strong>SHCreateItemFromParsingName</strong></a><br/></td>
-<td>Crea e inizializza un oggetto Shell da un nome di analisi.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromrelativename"><strong>SHCreateItemFromRelativeName</strong></a><br/></td>
-<td>Crea e inizializza un oggetto elemento Shell da un nome di analisi relativo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateiteminknownfolder"><strong>SHCreateItemInKnownFolder</strong></a><br/></td>
-<td>Crea un oggetto elemento Shell per un singolo file presente all'interno di una cartella nota.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemwithparent"><strong>SHCreateItemWithParent</strong></a><br/></td>
-<td>Creare un elemento Shell, dati una cartella padre e un ID elemento figlio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>SHCreateShellFolderView</strong></a><br/></td>
-<td>Crea una nuova istanza dell'oggetto visualizzazione cartella Shell predefinito (DefView).<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderviewex"><strong>SHCreateShellFolderViewEx</strong></a><br/></td>
-<td>Crea una nuova istanza dell'oggetto visualizzazione cartella Shell predefinito. È consigliabile usare <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellfolderview"><strong>SHCreateShellFolderView</strong></a> anziché questa funzione.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreateshellitem"><strong>SHCreateShellItem</strong></a><br/></td>
-<td>Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem.</strong></a> <br/>
-<blockquote>
-[!Note]<br />
-È consigliabile usare <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemwithparent"><strong>SHCreateItemWithParent</strong></a> o <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateitemfromidlist"><strong>SHCreateItemFromIDList</strong></a> anziché questa funzione.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarray"><strong>SHCreateShellItemArray</strong></a><br/></td>
-<td>Crea un oggetto matrice di elementi shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromdataobject"><strong>SHCreateShellItemArrayFromDataObject</strong></a><br/></td>
-<td>Crea un oggetto matrice di elementi shell da un oggetto dati. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromidlists"><strong>SHCreateShellItemArrayFromIDLists</strong></a><br/></td>
-<td>Crea un oggetto matrice di elementi shell da un elenco <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>di strutture ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shcreateshellitemarrayfromshellitem"><strong>SHCreateShellItemArrayFromShellItem</strong></a><br/></td>
-<td>Crea una matrice di un elemento da un singolo elemento shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shdefextracticona"><strong>SHDefExtractIcon</strong></a><br/></td>
-<td>Fornisce un gestore predefinito per estrarre un'icona da un file.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shdodragdrop"><strong>SHDoDragDrop</strong></a><br/></td>
-<td>Esegue un'operazione di trascinamento della selezione. Supporta la creazione dell'origine di trascinamento su richiesta, nonché le immagini di trascinamento.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona"><strong>Shell_NotifyIcon</strong></a><br/></td>
-<td>Invia un messaggio all'area di stato della barra delle applicazioni.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicongetrect"><strong>Shell_NotifyIconGetRect</strong></a><br/></td>
-<td>Ottiene le coordinate dello schermo del rettangolo di delimitazione di un'icona di notifica.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellabouta"><strong>ShellAbout</strong></a><br/></td>
-<td>Visualizza una <strong>finestra di dialogo ShellAbout.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><a href="shellddeinit.md"><strong>ShellDDEInit</strong></a><br/></td>
-<td>Registra i servizi DDE (Shell Dynamic Data Exchange) nel processo corrente, notificando al sistema che il processo corrente vuole ospitare oggetti DDE.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a><br/></td>
-<td>Esegue un'operazione su un file specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a><br/></td>
-<td>Esegue un'operazione su un file specificato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shemptyrecyclebina"><strong>SHEmptyRecycleBin</strong></a><br/></td>
-<td>Svuota il Cestino nell'unità specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shenumerateunreadmailaccountsa"><strong>SHEnumerateUnreadMailAccounts</strong></a><br/></td>
-<td>Enumera gli account utente con posta elettronica non letta.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shevaluatesystemcommandtemplate"><strong>SHEvaluateSystemCommandTemplate</strong></a><br/></td>
-<td>Applica una convalida rigorosa dei parametri usati in una chiamata a <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa"><strong>CreateProcess</strong></a> <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>o ShellExecute.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>SHFileOperation</strong></a><br/></td>
-<td>Copia, sposta, rinomina o elimina un file system oggetto . Questa funzione è stata sostituita in Windows Vista da <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileoperation"><strong>IFileOperation.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shfreenamemappings"><strong>SHFreeNameMappings</strong></a><br/></td>
-<td>Libera un oggetto mapping del nome file recuperato dalla <a href="/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa"><strong>funzione SHFileOperation.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdatafromidlista"><strong>SHGetDataFromIDList</strong></a><br/></td>
-<td>Recupera i dati delle proprietà estese da un elenco di identificatori relativi.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetdesktopfolder"><strong>SHGetDesktopFolder</strong></a><br/></td>
-<td>Recupera <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>l'interfaccia IShellFolder</strong></a> per la cartella desktop, che è la radice dello spazio dei nomi della shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetdiskfreespaceexa"><strong>SHGetDiskFreeSpaceEx</strong></a><br/></td>
-<td>Recupera informazioni sullo spazio su disco per un volume del disco.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetdrivemedia"><strong>SHGetDriveMedia</strong></a><br/></td>
-<td>Restituisce il tipo di supporto presente nell'unità specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetfileinfoa"><strong>SHGetFileInfo</strong></a><br/></td>
-<td>Recupera informazioni su un oggetto nel file system, ad esempio un file, una cartella, una directory o una radice dell'unità.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/previous-versions/windows/desktop/legacy/mt757093(v=vs.85)"><strong>SHGetFolderPathEx</strong></a><br/></td>
-<td>Recupera il percorso completo di una cartella nota identificata da <a href="knownfolderid.md"><strong>KNOWNFOLDERID della cartella.</strong></a> Estende <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath</strong></a> consentendo di impostare le dimensioni iniziali del buffer di stringhe.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgeticonoverlayindexa"><strong>SHGetIconOverlayIndex</strong></a><br/></td>
-<td>Restituisce l'indice dell'icona di sovrimpressione nell'elenco di immagini di sistema.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetidlistfromobject"><strong>SHGetIDListFromObject</strong></a><br/></td>
-<td>Recupera il file PIDL di un oggetto .<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetimagelist"><strong>SHGetImageList</strong></a><br/></td>
-<td>Recupera un elenco di immagini.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetinstanceexplorer"><strong>SHGetInstanceExplorer</strong></a><br/></td>
-<td>Recupera un'interfaccia che consente alle estensioni della shell ospitata e ad altri componenti di impedire la chiusura prematura del processo host. Il processo host è in genere Windows Explorer o Windows Internet Explorer, ma questa funzione può essere usata anche da altre applicazioni.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetitemfromdataobject"><strong>SHGetItemFromDataObject</strong></a><br/></td>
-<td>Crea un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> o correlato in base a un elemento specificato da <a href="/windows/desktop/api/objidl/nn-objidl-idataobject"><strong>un oggetto IDataObject.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetitemfromobject"><strong>SHGetItemFromObject</strong></a><br/></td>
-<td>Recupera un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> per un oggetto .<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderidlist"><strong>SHGetKnownFolderIDList</strong></a><br/></td>
-<td>Recupera il percorso di una cartella nota come <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>struttura ITEMIDLIST.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderitem"><strong>SHGetKnownFolderItem</strong></a><br/></td>
-<td>Recupera un <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>oggetto IShellItem</strong></a> che rappresenta una cartella nota.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath</strong></a><br/></td>
-<td>Recupera il percorso completo di una cartella nota identificata da <a href="knownfolderid.md"><strong>KNOWNFOLDERID della cartella.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetlocalizedname"><strong>SHGetLocalizedName</strong></a><br/></td>
-<td>Recupera il nome localizzato di un file in una cartella shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgetnamefromidlist"><strong>SHGetNameFromIDList</strong></a><br/></td>
-<td>Recupera il nome visualizzato di un elemento identificato dal relativo IDList.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/previous-versions/windows/desktop/legacy/bb762192(v=vs.85)"><strong>SHGetNameFromPropertyKey</strong></a><br/></td>
-<td>Recupera il nome canonico della proprietà in base alla <a href="/windows/desktop/api/wtypes/ns-wtypes-propertykey"><strong>proprietà PROPERTYKEY.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetnewlinkinfoa"><strong>SHGetNewLinkInfo</strong></a><br/></td>
-<td>Crea un nome per un nuovo collegamento in base alla destinazione proposta del collegamento. Questa funzione non crea il collegamento, ma solo il nome.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlista"><strong>SHGetPathFromIDList</strong></a><br/></td>
-<td>Converte un elenco di identificatori di elemento in un file system specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlistex"><strong>SHGetPathFromIDListEx</strong></a><br/></td>
-<td>Converte un elenco di identificatori di elemento in un file system specificato. Questa funzione estende <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetpathfromidlista"><strong>SHGetPathFromIDList</strong></a> consentendo di impostare le dimensioni iniziali del buffer di stringa e dichiarare le opzioni seguenti.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsettings"><strong>SHGetSettings</strong></a><br/></td>
-<td>Recupera le impostazioni correnti delle opzioni della shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetstockiconinfo"><strong>SHGetStockIconInfo</strong></a><br/></td>
-<td>Recupera informazioni sulle icone della shell definite dal sistema.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shgettemporarypropertyforitem"><strong>SHGetTemporaryPropertyForItem</strong></a><br/></td>
-<td>Recupera la proprietà temporanea per l'elemento specificato. Una proprietà temporanea è un archivio di lettura/scrittura che contiene le proprietà solo per la durata dell'oggetto <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem,</strong></a> anziché essere resa persistente nell'elemento.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shgetunreadmailcountw"><strong>SHGetUnreadMailCount</strong></a><br/></td>
-<td>Recupera il numero di messaggi non letti di un utente specificato per uno o tutti gli account di posta elettronica.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-shisfileavailableoffline"><strong>SHIsFileAvailableOffline</strong></a><br/></td>
-<td>Determina se un file o una cartella è disponibile per l'uso offline. Questa funzione determina anche se il file verrà aperto dalla rete, dalla cache File offline locale o da entrambe le posizioni.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shloadinproc"><strong>SHLoadInProc</strong></a><br/></td>
-<td>Crea un'istanza della classe di oggetti specificata dall'interno del contesto del processo della shell. <br/> <strong>Windows Vista</strong> e versioni successive: questa funzione è stata disabilitata e restituisce E_NOTIMPL.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shellapi/nf-shellapi-shloadnonloadediconoverlayidentifiers"><strong>SHLoadNonloadedIconOverlayIdentifiers</strong></a><br/></td>
-<td>Segnala alla shell che durante l'operazione successiva che richiede informazioni di sovrimpressione, deve caricare gli identificatori di sovrimpressione icona non riusciti o che non erano presenti per la creazione all'avvio. Gli identificatori che sono già stati caricati non sono interessati.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shlocalstrdupa"><strong>SHLocalStrDup</strong></a><br/></td>
-<td>Crea una copia di una stringa nella memoria appena allocata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shmultifileproperties"><strong>SHMultiFileProperties</strong></a><br/></td>
-<td>Visualizza una finestra delle proprietà unita per un set di file. I valori delle proprietà comuni a tutti i file vengono visualizzati mentre quelli che differiscono visualizzano la stringa <strong>(più valori).</strong><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenfolderandselectitems"><strong>SHOpenFolderAndSelectItems</strong></a><br/></td>
-<td>Apre una Windows explorer con gli elementi specificati in una cartella specifica selezionata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shopenwithdialog"><strong>SHOpenWithDialog</strong></a><br/></td>
-<td>Consente di visualizzare <strong>la finestra di dialogo</strong> Apri con .<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/shell/showsharefolderui"><strong>ShowShareFolderUI</strong></a><br/></td>
-<td>Visualizza la <strong>scheda Condivisione</strong> cartelle nella finestra delle proprietà per la cartella specificata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shparsedisplayname"><strong>SHParseDisplayName</strong></a><br/></td>
-<td>Converte il nome visualizzato di un oggetto dello spazio dei nomi shell in un elenco di identificatori di elemento e restituisce gli attributi dell'oggetto. Questa funzione è il metodo preferito per convertire una stringa in un file PIDL.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shpathprepareforwritea"><strong>SHPathPrepareForWrite</strong></a><br/></td>
-<td>Verifica se il percorso esiste. Ciò include il rimontaggio delle unità di rete mappate, la richiesta di reinserire i supporti espulsibili, la creazione dei percorsi, la richiesta della formattazione dei supporti e, se necessario, l'inserimento delle interfacce utente appropriate. Le autorizzazioni di lettura/scrittura per il supporto non vengono controllate.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryrecyclebina"><strong>SHQueryRecycleBin</strong></a><br/></td>
-<td>Recupera le dimensioni del Cestino e il numero di elementi in esso presenti, per un'unità specificata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shqueryusernotificationstate"><strong>SHQueryUserNotificationState</strong></a><br/></td>
-<td>Controlla lo stato del computer per l'utente corrente per determinare se l'invio di una notifica è appropriato.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shremovelocalizedname"><strong>SHRemoveLocalizedName</strong></a><br/></td>
-<td>Rimuove il nome localizzato di un file in una cartella shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shruncontrolpanel"><strong>SHRunControlPanel</strong></a><br/></td>
-<td>Apre un Pannello di controllo elemento. <br/>
-<blockquote>
-[!Note]<br />
-Questa funzione non è supportata a Windows Vista
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shobjidl/nf-shobjidl-shsetdefaultproperties"><strong>SHSetDefaultProperties</strong></a><br/></td>
-<td>Applica il set predefinito di proprietà a un elemento della shell.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shsetinstanceexplorer"><strong>SHSetInstanceExplorer</strong></a><br/></td>
-<td>Fornisce un'interfaccia che consente alle estensioni della shell ospitata e ad altri componenti di impedire la chiusura prematura del processo host. Il processo host è in genere Windows Explorer o Internet Explorer, ma questa funzione può essere usata anche da altre applicazioni.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shsetknownfolderpath"><strong>SHSetKnownFolderPath</strong></a><br/></td>
-<td>Reindirizza una cartella nota a un nuovo percorso.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shsetlocalizedname"><strong>SHSetLocalizedName</strong></a><br/></td>
-<td>Imposta il nome localizzato di un file in una cartella shell.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shsettemporarypropertyforitem"><strong>SHSetTemporaryPropertyForItem</strong></a><br/></td>
-<td>Imposta una proprietà temporanea per l'elemento specificato. Una proprietà temporanea viene mantenuta in un archivio di lettura/scrittura che contiene le proprietà solo per la durata dell'oggetto <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem"><strong>IShellItem,</strong></a> invece di scriverle nuovamente nell'elemento.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shsetunreadmailcountw"><strong>SHSetUnreadMailCount</strong></a><br/></td>
-<td>Archivia il numero di messaggi non letti dell'utente corrente per un account di posta elettronica specificato nel Registro di sistema.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shtesttokenmembership"><strong>SHTestTokenMembership</strong></a><br/></td>
-<td>Usa <a href="/windows/desktop/api/securitybaseapi/nf-securitybaseapi-checktokenmembership"><strong>CheckTokenMembership</strong></a> per verificare se il token specificato è un membro del gruppo locale con il RID specificato.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shupdateimagea"><strong>SHUpdateImage</strong></a><br/></td>
-<td>Notifica alla shell che un'immagine nell'elenco delle immagini di sistema è stata modificata.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-softwareupdatemessagebox"><strong>Controllo SoftwareUpdateMessageBox</strong></a><br/></td>
-<td>Visualizza una finestra di messaggio standard che può essere utilizzata per notificare a un utente che un'applicazione è stata aggiornata.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-stgmakeuniquename"><strong>StgMakeUniqueName</strong></a><br/></td>
-<td>Crea un nome univoco per un flusso o un oggetto di archiviazione da un modello.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-strstrniw"><strong>StrStrNIW</strong></a><br/></td>
-<td>Trova la prima occorrenza di una sottostringa all'interno di una stringa. Il confronto viene eseguito senza distinzione tra maiuscole e minuscole.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-strstrnw"><strong>StrStrNW</strong></a><br/></td>
-<td>Trova la prima occorrenza di una sottostringa all'interno di una stringa. Il confronto fa distinzione tra maiuscole e minuscole.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Intshcut/nf-intshcut-translateurla"><strong>TranslateURL</strong></a><br/></td>
-<td>Applica traduzioni comuni a una determinata stringa URL, creando una nuova stringa URL.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Userenv/nf-userenv-unloaduserprofile"><strong>UnloadUserProfile</strong></a><br/></td>
-<td>Scarica un profilo utente caricato dalla funzione <a href="/windows/desktop/api/Userenv/nf-userenv-loaduserprofilea"><strong>LoadUserProfile.</strong></a> Il chiamante deve avere privilegi amministrativi nel computer. Per altre informazioni, vedere la sezione Osservazioni della <strong>funzione LoadUserProfile.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/appnotify/nf-appnotify-unregisterappstatechangenotification"><strong>UnregisterAppStateChangeNotification</strong></a><br/></td>
-<td>Annulla una notifica di modifica registrata tramite <a href="/windows/desktop/api/appnotify/nf-appnotify-registerappstatechangenotification"><strong>RegisterAppStateChangeNotification.</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-unregisterscalechangeevent"><strong>UnregisterScaleChangeEvent</strong></a><br/></td>
-<td>Annulla la registrazione per l'evento di modifica della scalabilità registrato <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-registerscalechangeevent"><strong>tramite RegisterScaleChangeEvent.</strong></a> Questa funzione sostituisce <a href="/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-revokescalechangenotifications"><strong>RevokeScaleChangeNotifications.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Intshcut/nf-intshcut-urlassociationdialoga"><strong>Finestra di dialogo URLAssociationDialog</strong></a><br/></td>
-<td>Richiama la finestra di dialogo del protocollo URL non registrato. Questa finestra di dialogo consente all'utente di selezionare un'applicazione da associare a un protocollo precedentemente sconosciuto.<br/>
-<blockquote>
-[!Note]<br />
-Windows XP SP2 o versione successiva: questa funzione non è più supportata.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/previous-versions/windows/desktop/legacy/bb762266(v=vs.85)"><strong>Errore WinExecError</strong></a><br/></td>
-<td>Recupera il valore di errore generato se la <a href="/windows/win32/api/winbase/nf-winbase-winexec">funzione WinExec</a> non può eseguire un'applicazione specificata. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winuser/nf-winuser-winhelpa"><strong>Winhelp</strong></a><br/></td>
-<td>Avvia Windows guida (Winhelp.exe) e passa dati aggiuntivi che indicano la natura della Guida richiesta dall'applicazione.<br/></td>
-</tr>
-</tbody>
-</table>
 
 
 

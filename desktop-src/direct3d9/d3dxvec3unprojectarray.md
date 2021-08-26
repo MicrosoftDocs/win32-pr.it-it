@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 67e42b30a8f8d44bb9b21668a515a202436b7631
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7173ed5e912dea8eba08a8fc5e40b33e043ff2181df9e9fc2f62354bb2768fc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118991"
 ---
 # <a name="d3dxvec3unprojectarray-function-d3dx9mathh"></a>Funzione D3DXVec3UnprojectArray (D3dx9math.h)
 
@@ -98,7 +98,7 @@ Puntatore a [**una struttura D3DVIEWPORT9,**](d3dviewport9.md) che rappresenta i
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di proiezione.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice di proiezione.
 
 </dd> <dt>
 
@@ -107,7 +107,7 @@ Puntatore a una [**struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la mat
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice di visualizzazione.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la mat
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a [**una struttura D3DXMATRIX**](d3dxmatrix.md) che rappresenta la matrice globale.
+Puntatore a [**una struttura D3DXMATRIX,**](d3dxmatrix.md) che rappresenta la matrice globale.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Numero di elementi nella matrice.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta la matrice proiettata dallo spazio dello schermo allo spazio dell'oggetto.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta la matrice proiettata dallo spazio dello schermo allo spazio oggetto.
 
 ## <a name="remarks"></a>Commenti
 

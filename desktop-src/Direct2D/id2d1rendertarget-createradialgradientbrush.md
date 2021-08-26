@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateRadialGradientBrush di ID2D1RenderTarget (D2d1. h)
+title: Metodi ID2D1RenderTarget CreateRadialGradientBrush (D2d1.h)
 description: Crea un oggetto ID2D1RadialGradientBrush che può essere usato per disegnare aree con una sfumatura radiale.
 ms.assetid: 985a4c1b-d29b-46ed-bc55-6dcd313718a8
 keywords:
-- Metodo CreateRadialGradientBrush Direct2D
+- Metodi CreateRadialGradientBrush Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 680cc981943e45eb32834e48151f391f6249cc1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b32c384e55f8c6ac17551c290c36e1130c05d5939fd5cf56116410ddac37320f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108821"
 ---
-# <a name="id2d1rendertargetcreateradialgradientbrush-methods"></a>Metodi ID2D1RenderTarget:: CreateRadialGradientBrush
+# <a name="id2d1rendertargetcreateradialgradientbrush-methods"></a>Metodi ID2D1RenderTarget::CreateRadialGradientBrush
 
-Crea un oggetto [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che può essere usato per disegnare aree con una sfumatura radiale.
+Crea un [**oggetto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che può essere usato per disegnare aree con una sfumatura radiale.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,15 +29,15 @@ Crea un oggetto [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-i
 
 | Metodo                                                                                                                                                                                                                       | Descrizione                                                                                                                                                                      |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateRadialGradientBrush ( \_ proprietà del \_ pennello sfumatura radiale d2d1 \_ \_&, ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))                            | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati, non ha alcuna trasformazione e ha un'opacità di base 1,0. <br/> |
-| [**CreateRadialGradientBrush ( \_ proprietà del \_ pennello sfumatura radiale d2d1 \_ \_&, \_ proprietà del pennello d2d1 \_&, ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))   | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati e presenta la trasformazione e l'opacità di base specificate. <br/> |
-| [**CreateRadialGradientBrush ( \_ proprietà del \_ pennello sfumatura radiale d2d1 \_ \_ \* , \_ proprietà del pennello d2d1 \_ \* , ID2D1GradientStopCollection \* , ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) | Crea un [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati e presenta la trasformazione e l'opacità di base specificate. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH PROPERTIES \_ \_ \_&,ID2D1GradientStopCollection \* ,ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))                            | Crea un [**oggetto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati, non ha alcuna trasformazione e ha un'opacità di base di 1,0. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH PROPERTIES \_ \_ \_&,D2D1 \_ BRUSH PROPERTIES \_&,ID2D1GradientStopCollection \* ,ID2D1RadialGradientBrush \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush))   | Crea un [**oggetto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati e ha la trasformazione e l'opacità di base specificate. <br/> |
+| [**CreateRadialGradientBrush(D2D1 \_ RADIAL GRADIENT BRUSH \_ \_ \_ \* PROPERTIES,D2D1 \_ BRUSH PROPERTIES \_ \* ,ID2D1GradientStopCollection,ID2D1RadialGradientBrush \* \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) | Crea un [**oggetto ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) che contiene i cursori sfumatura specificati e ha la trasformazione e l'opacità di base specificate. <br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio, vedere [come creare un pennello sfumatura radiale](how-to-create-a-radial-gradient-brush.md).
+Per un esempio, vedere [How to Create a Radial Gradient Brush](how-to-create-a-radial-gradient-brush.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,8 +45,8 @@ Per un esempio, vedere [come creare un pennello sfumatura radiale](how-to-create
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera l'elemento successivo dalla coda.
 ms.assetid: 406ae640-5903-427d-91f9-8b01beb1aaa7
-title: Metodo CQueue. GetQueueObject (Wxutil. h)
+title: Metodo CQueue.GetQueueObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c3ae68c0564c7f76f38e91b7d27c8c3deb5ef2b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c32039a82e3a0b5c086cbe18e895bdec1aaac09d4947b90d9ba18e8c6636d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108281"
 ---
-# <a name="cqueuegetqueueobject-method"></a>CQueue. GetQueueObject, metodo
+# <a name="cqueuegetqueueobject-method"></a>Metodo CQueue.GetQueueObject
 
 Recupera l'elemento successivo dalla coda.
 
@@ -54,8 +54,8 @@ Questo metodo si blocca fino a quando un elemento non è disponibile nella coda.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

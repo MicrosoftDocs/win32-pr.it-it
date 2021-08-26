@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 03b232a9cba3cf5fe8f756b9804b03d03f9c5047
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 90f742cbdbb0da2367dfaa158a7f17ae4dd59b9e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113059"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625937"
 ---
 # <a name="span-idvspixengineobjectstatetypespanobjectstatetype-enumeration"></a><span id="vspixengine.objectstatetype"></span>Enumerazione OBJECTSTATETYPE
 
@@ -91,13 +91,13 @@ Interno
 <span id="ObjectState_GSSetShaderResources"></span><span id="objectstate_gssetshaderresources"></span><span id="OBJECTSTATE_GSSETSHADERRESOURCES"></span>**ObjectState \_ GSSetShaderResources**  
 Interno
 
-<span id="ObjectState_GSSetSamplers"></span><span id="objectstate_gssetsamplers"></span><span id="OBJECTSTATE_GSSETSAMPLERS"></span>**Oggetti ObjectState \_ GSSetSamplers**  
+<span id="ObjectState_GSSetSamplers"></span><span id="objectstate_gssetsamplers"></span><span id="OBJECTSTATE_GSSETSAMPLERS"></span>**ObjectState \_ GSSetSamplers**  
 Interno
 
 <span id="ObjectState_GSSetShader"></span><span id="objectstate_gssetshader"></span><span id="OBJECTSTATE_GSSETSHADER"></span>**ObjectState \_ GSSetShader**  
 Interno
 
-<span id="ObjectState_SOSetTargets"></span><span id="objectstate_sosettargets"></span><span id="OBJECTSTATE_SOSETTARGETS"></span>**SOSetTargets di ObjectState \_**  
+<span id="ObjectState_SOSetTargets"></span><span id="objectstate_sosettargets"></span><span id="OBJECTSTATE_SOSETTARGETS"></span>**ObjectState \_ SOSetTargets**  
 Interno
 
 <span id="ObjectState_RSSetState"></span><span id="objectstate_rssetstate"></span><span id="OBJECTSTATE_RSSETSTATE"></span>**ObjectState \_ RSSetState**  
@@ -136,7 +136,7 @@ Interno
 <span id="ObjectState_CSSetShaderResources"></span><span id="objectstate_cssetshaderresources"></span><span id="OBJECTSTATE_CSSETSHADERRESOURCES"></span>**ObjectState \_ CSSetShaderResources**  
 Interno
 
-<span id="ObjectState_CSSetSamplers"></span><span id="objectstate_cssetsamplers"></span><span id="OBJECTSTATE_CSSETSAMPLERS"></span>**CsSetSamplers di ObjectState \_**  
+<span id="ObjectState_CSSetSamplers"></span><span id="objectstate_cssetsamplers"></span><span id="OBJECTSTATE_CSSETSAMPLERS"></span>**ObjectState \_ CSSetSamplers**  
 Interno
 
 <span id="ObjectState_CSSetShader"></span><span id="objectstate_cssetshader"></span><span id="OBJECTSTATE_CSSETSHADER"></span>**ObjectState \_ CSSetShader**  
@@ -177,7 +177,7 @@ Interno
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

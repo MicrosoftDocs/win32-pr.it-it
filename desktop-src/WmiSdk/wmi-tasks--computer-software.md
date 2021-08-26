@@ -1,8 +1,8 @@
 ---
-description: Le attività WMI per il software per computer ottengono informazioni quali il software installato dalle Microsoft Windows Installer (MSI) e le versioni del software. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
+description: Le attività WMI per il software per computer ottengono informazioni quali il software installato da Microsoft Windows Installer (MSI) e le versioni software. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
 ms.assetid: 65a61be3-7870-4178-9e96-78b82898271f
 ms.tgt_platform: multiple
-title: 'Attività WMI: software per computer'
+title: 'Attività WMI: Software del computer'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,47 +10,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 800a42764cbb1b9552a8ecc87debc04685d28850
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ebe16a0de29a6426dcea91f55ca1409d09348791
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530073"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625507"
 ---
-# <a name="wmi-tasks-computer-software"></a>Attività WMI: software per computer
+# <a name="wmi-tasks-computer-software"></a>Attività WMI: Software del computer
 
-Le attività WMI per il software per computer ottengono informazioni quali il software installato dalle Microsoft Windows Installer (MSI) e le versioni del software. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Le attività WMI per il software per computer ottengono informazioni quali il software installato da Microsoft Windows Installer (MSI) e le versioni software. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per ulteriori informazioni sull'utilizzo dello script per ottenere dati da computer remoti, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 
-Nella procedura riportata di seguito viene descritto come eseguire uno script.
+La procedura seguente descrive come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunga un'estensione txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare che sia in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni log eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da controlli di accesso utente (UAC).
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript Visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
 
  
 
 > [!Note]  
-> L'esecuzione di una \* query "Select from Win32 \_ Product" può causare un comportamento imprevisto. Questo perché il provider che supporta il \_ prodotto Win32 non è ottimizzato per la query. Per ulteriori informazioni, vedere l' [articolo KB 974524](https://support.microsoft.com/kb/974524).
+> L'esecuzione di \* una query "Seleziona da prodotto Win32" \_ può comportare un comportamento imprevisto. Questo perché il provider che supporta il prodotto Win32 \_ non è ottimizzato per le query. Per altre informazioni, vedere [l'articolo della Knowledge Base 974524](https://support.microsoft.com/kb/974524).
 
  
 
-Nella tabella seguente sono elencati esempi di script che è possibile utilizzare per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere usati per ottenere vari tipi di dati dal computer locale.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -60,11 +60,11 @@ Nella tabella seguente sono elencati esempi di script che è possibile utilizzar
 </thead>
 <tbody>
 <tr class="odd">
-<td>... disinstallare il software utilizzando uno script?</td>
-<td>Se il software è stato installato tramite Microsoft Windows Installer (MSI), utilizzare la classe WMI <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>Win32_Product</strong></a> e il metodo di <a href="/previous-versions/windows/desktop/msiprov/uninstall-method-in-class-win32-product"><strong>disinstallazione</strong></a> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... disinstallare il software usando uno script?</td>
+<td>Se il software è stato installato usando Microsoft Windows Installer (MSI), usare la classe WMI Win32_Product <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>e</strong></a> il <a href="/previous-versions/windows/desktop/msiprov/uninstall-method-in-class-win32-product"><strong>metodo Uninstall.</strong></a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -89,7 +89,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,13 +110,13 @@ foreach ($colItem in $colSoftware)
 </td>
 </tr>
 <tr class="even">
-<td>... inventario di tutto il software installato in un computer con uno script?</td>
-<td><p>Se il software è stato installato tramite Microsoft Windows Installer (MSI), utilizzare la classe WMI <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>Win32_Product</strong></a>.</p>
+<td>... Eseguire l'inventario di tutto il software installato in un computer con uno script?</td>
+<td><p>Se il software è stato installato usando Microsoft Windows Installer (MSI) usare la classe WMI <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>Win32_Product</strong></a>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -142,7 +142,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -165,13 +165,13 @@ foreach ($colItem in $colSoftware)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... determinare quale versione di Microsoft Office è installata?</td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>Win32_Product</strong></a> e controllare il valore della proprietà <strong>Version</strong> .</p>
+<td>... determinare quale versione di Microsoft Office installata?</td>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/legacy/aa394378(v=vs.85)"><strong>Win32_Product</strong></a> classe e controllare il valore della <strong>proprietà</strong> Version.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -198,7 +198,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -229,7 +229,7 @@ foreach ($colItem in $colSoftware)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice PowerShell [Remote PC info script](https://Gallery.TechNet.Microsoft.Com/2a8a008c-ee30-4b50-a81a-1b7545ef3436) PowerShell usa una serie di classi hardware e software, tra cui Win32Product, per trovare varie informazioni su un computer remoto tramite WMI e il registro di sistema remoto.
+L'esempio di codice [PowerShell PowerShell Remote PC Info Script](https://Gallery.TechNet.Microsoft.Com/2a8a008c-ee30-4b50-a81a-1b7545ef3436) usa una serie di classi hardware e software, tra cui Win32Product, per trovare varie informazioni su un PC remoto usando WMI e il Registro di sistema remoto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -238,7 +238,7 @@ L'esempio di codice PowerShell [Remote PC info script](https://Gallery.TechNet.M
 [Attività WMI per script e applicazioni](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Esempi di applicazioni WMI C++](wmi-c---application-examples.md)
+[Esempi di applicazioni C++ WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)

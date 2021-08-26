@@ -1,40 +1,40 @@
 ---
 title: Tipo di controllo Separator
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo Separator.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo Separator.
 ms.assetid: 4987b05a-101e-48b1-aed2-bd7206146f70
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo Separator
-- Automazione interfaccia utente, tipo di controllo Separator
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo Separator
-- Automazione interfaccia utente, proprietà per il tipo di controllo Separator
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo Separator
-- Automazione interfaccia utente, eventi per il tipo di controllo Separator
+- Automazione interfaccia utente,supporto per il tipo di controllo Separator
+- Automazione interfaccia utente,Tipo di controllo separatore
+- Automazione interfaccia utente,struttura ad albero per il tipo di controllo Separator
+- Automazione interfaccia utente,proprietà per il tipo di controllo Separator
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo Separator
+- Automazione interfaccia utente,events per il tipo di controllo Separator
 - strutture ad albero, tipo di controllo Separator
-- Proprietà, tipo di controllo Separator
-- pattern di controllo, tipo di controllo Separator
-- eventi, tipo di controllo Separator
+- proprietà,Tipo di controllo separatore
+- pattern di controllo,tipo di controllo separatore
+- eventi,Tipo di controllo separatore
 - supporto per il tipo di controllo Separator
 - Separator (tipo di controllo)
 - tipi di controllo, struttura ad albero per il tipo di controllo Separator
 - tipi di controllo, pattern di controllo per il tipo di controllo Separator
-- tipi di controllo, supporto per il separatore
-- tipi di controllo, separatore
+- tipi di controllo, supporto per separatore
+- tipi di controllo,separatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92cdf6c15dbe461e78877c6b93f0ff4b52f67fc8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0685f21565a6252febfadad115c8edf10990995c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515931"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477717"
 ---
 # <a name="separator-control-type"></a>Tipo di controllo Separator
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **separator** .
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo **Separator.**
 
 I controlli separatore vengono usati per dividere visivamente uno spazio in due aree. Ad esempio, un controllo separatore può essere una barra che definisce due riquadri in una finestra. Se il separatore può essere spostato, il controllo deve essere esposto come il tipo di controllo Thumb.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **separator** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli separatore in cui la piattaforma/Framework dell'interfaccia utente integra il supporto di automazione interfaccia utente per i tipi di controllo e pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il tipo di controllo **Separator.** I Automazione interfaccia utente si applicano a tutti i controlli separatori in cui il framework o la piattaforma dell'interfaccia utente Automazione interfaccia utente supporto per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -46,59 +46,42 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli separatore e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente che riguarda i controlli separatori e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Panoramica Automazione interfaccia utente [albero](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Separatore</li>
-</ul></td>
-<td><ul>
-<li>Il tipo di controllo <strong>separator</strong> non dispone mai di contenuto.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>Separatore</li></ul> | <ul><li>Il <strong>tipo di</strong> controllo Separator non ha mai contenuto.</li></ul> | 
 
 
 
- 
+
+ 
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per i controlli separatore. Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o definizione è particolarmente rilevante per i controlli separatore. Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di proprietà [da Automazione interfaccia utente Elements](uiauto-propertiesforclients.md).
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore         | Note                                                                                                                                                                                                |
+| Proprietà di automazione interfaccia utente                                                                                              | valore         | Note                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note.    | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                         |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note.    | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | Vedere le note.    | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override e fornire un punto selezionabile. |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **Separatore** |                                                                                                                                                                                                      |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | FALSE         | Il controllo separatore non è mai un contenuto.                                                                                                                                                              |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true          | Il controllo separatore deve essere sempre un controllo.                                                                                                                                                      |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | Vedere le note.    | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | NULL          | Il controllo separatore non dispone di un'etichetta statica.                                                                                                                                                  |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note.    | Stringa localizzata corrispondente al tipo di controllo **separator** . Il valore predefinito è "Separator" per en-US o inglese (Stati Uniti).                                                             |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | ""            | Il controllo separatore non richiede una proprietà **Name** .                                                                                                                                          |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.    | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                         |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.    | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.    | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue hit testing specializzati, esegue l'override e fornisce un punto selezionabile. |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **Separatore** |                                                                                                                                                                                                      |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | FALSE         | Il controllo separatore non è mai un contenuto.                                                                                                                                                              |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true          | Il controllo separatore deve essere sempre un controllo.                                                                                                                                                      |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.    | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL          | Il controllo separatore non dispone di un'etichetta statica.                                                                                                                                                  |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.    | Stringa localizzata corrispondente al tipo di controllo **Separator.** Il valore predefinito è "Separator" per en-US o English (Stati Uniti).                                                             |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | ""            | Il controllo separatore non richiede una **proprietà** Name.                                                                                                                                          |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
@@ -106,21 +89,21 @@ Il controllo separatore non deve supportare qualsiasi pattern di controllo. Per 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente necessari per supportare i controlli separatore. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati Automazione interfaccia utente che i controlli separatori devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                   | Note                                                                                                                      |
+| Automazione interfaccia utente evento                                                                                                                   | Note                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                 | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.             | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento. |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                  |                                                                                                                            |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md) |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                 | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.   |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)             | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento. |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -135,9 +118,9 @@ La tabella seguente elenca gli eventi di automazione interfaccia utente necessar
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

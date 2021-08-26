@@ -4,12 +4,12 @@ description: Il pulsante di menu suddiviso è un controllo composito con cui l'u
 ms.assetid: 0939b3be-fa88-4864-8096-a664ab2e97b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bc5d9554af8c580b5288a2f18eaef89a1d7e864bae628ebac59599f6b7f820f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 066a2275c49ad8d6dd32dd8ce4fd3d89956f204c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202493"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473757"
 ---
 # <a name="split-button"></a>Pulsante di menu combinato
 
@@ -44,41 +44,14 @@ Nella tabella seguente sono elencate le chiavi di proprietà associate al contro
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Chiave di proprietà</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br/> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">imposta UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).
-<blockquote>
-[!Important]<br />
-La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> proprietà per il controllo Pulsante di menu suddiviso deve essere invalidata dopo l'a attivazione o la disabilitazione di uno o più elementi figlio. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo Pulsante di menu suddiviso nell'interfaccia utente della barra multifunzione.
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-<tr class="odd">
-<td><a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-<tr class="even">
-<td><a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a></td>
-<td>Può essere aggiornato solo tramite invalidamento.</td>
-</tr>
-</tbody>
-</table>
+
+| Chiave di proprietà | Note | 
+|--------------|-------|
+| <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> | Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.<br /> Se tutti gli elementi figlio sono disabilitati, il framework <a href="windowsribbon-reference-properties-uipkey-enabled.md">imposta UI_PKEY_Enabled</a> su false (0). In caso contrario, se uno o più elementi figlio sono abilitati, UI_PKEY_Enabled è impostato su true (-1).<blockquote>[!Important]<br />La <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> proprietà per il controllo Pulsante di menu suddiviso deve essere invalidata dopo che uno o più elementi figlio sono stati abilitati o disabilitati. In questo modo il framework esegue query sul valore della proprietà aggiornato e aggiorna lo stato del controllo Pulsante di menu suddiviso nell'interfaccia utente della barra multifunzione.</blockquote><br /><br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> | Può essere aggiornato solo tramite invalidamento. | 
+| <a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a> | Può essere aggiornato solo tramite invalidamento. | 
+| <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a> | Può essere aggiornato solo tramite invalidamento. | 
+
 
 
 

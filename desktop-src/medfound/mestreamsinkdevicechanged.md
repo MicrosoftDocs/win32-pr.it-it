@@ -1,31 +1,31 @@
 ---
 description: Generato dai sink di flusso del renderer video avanzato (EVR) se il dispositivo video viene modificato.
 ms.assetid: 5b663d6b-5df8-4321-a6a5-a21b9810065a
-title: Evento MEStreamSinkDeviceChanged (Mfobjects. h)
+title: Evento MEStreamSinkDeviceChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 651fc34a56ca52cfb9e0b3f20e6e4d6b5366f541
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb760a45125ae7434ff2a58d43f087d2ec3c030cb29351ea4d2113ca8fe10c0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061011"
 ---
-# <a name="mestreamsinkdevicechanged-event"></a>Evento MEStreamSinkDeviceChanged
+# <a name="mestreamsinkdevicechanged-event"></a>EVENTO MEStreamSinkDeviceChanged
 
-Generato dai sink di flusso del renderer video avanzato (EVR) se il dispositivo video viene modificato. Ad esempio, EVR genera questo evento quando riceve un evento di [**\_ \_ modifica della visualizzazione EC**](../directshow/ec-display-changed.md) .
+Generato dai sink di flusso del renderer video avanzato (EVR) se il dispositivo video viene modificato. Ad esempio, l'EVR genera questo evento quando riceve un [**evento EC \_ DISPLAY \_ CHANGED.**](../directshow/ec-display-changed.md)
 
 La pipeline Media Foundation risponde a questo evento inviando nuovamente tutte le richieste di esempio non riuscite durante la modifica del dispositivo.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -35,9 +35,9 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> <dt>
 
-[Sink di supporti](media-sinks.md)
+[Sink multimediali](media-sinks.md)
 </dt> </dl>
 
  

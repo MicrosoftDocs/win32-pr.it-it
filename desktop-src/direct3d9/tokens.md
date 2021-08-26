@@ -1,21 +1,21 @@
 ---
-description: I token vengono scritti come parole little-endian. Il seguente elenco di valori di token è suddiviso in token di registrazione e autonomi.
+description: I token vengono scritti come WORD little-endian. L'elenco seguente di valori di token è suddiviso in token con supporto dei record e autonomi.
 ms.assetid: vs|directx_sdk|~\tokens.htm
 title: Tokens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df253327b1256ea5e04f8b80b7e1da89f13e32c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cf3e3654d90566fa6c4a6208c965518ce54acd3dd31669038de1b9a8ab38684d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095581"
 ---
 # <a name="tokens"></a>Tokens
 
-I token vengono scritti come parole little-endian. Il seguente elenco di valori di token è suddiviso in token di registrazione e autonomi.
+I token vengono scritti come WORD little-endian. L'elenco seguente di valori di token è suddiviso in token con supporto dei record e autonomi.
 
-I token che portano a record sono definiti nel modo seguente.
+I token di rilevamento dei record sono definiti come indicato di seguito.
 
 
 ```
@@ -29,7 +29,7 @@ I token che portano a record sono definiti nel modo seguente.
 
 
 
-I token autonomi sono definiti nel modo seguente.
+I token autonomi sono definiti come segue.
 
 
 ```

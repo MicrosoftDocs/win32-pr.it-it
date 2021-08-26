@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetComputeStats'
-title: JetComputeStats (funzione)
+description: 'Altre informazioni su: Funzione JetComputeStats'
+title: Funzione JetComputeStats
 TOCTitle: JetComputeStats Function
 ms:assetid: 142f6ab0-715f-493a-a762-7a83854498d2
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269192(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77c6856a50ae2f1c01b1cfde0666d0c535ad37e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1324722ed0bd239f4c5b26fbd3340d45f325e53c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234094"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465818"
 ---
-# <a name="jetcomputestats-function"></a>JetComputeStats (funzione)
+# <a name="jetcomputestats-function"></a>Funzione JetComputeStats
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetcomputestats-function"></a>JetComputeStats (funzione)
+## <a name="jetcomputestats-function"></a>Funzione JetComputeStats
 
-La funzione **JetComputeStats** percorre ogni indice di una tabella per calcolare esattamente il numero di voci in un indice e il numero di chiavi distinte in un indice. Queste informazioni, insieme al numero di pagine di database allocate per un indice e all'ora corrente del calcolo, vengono archiviate nei metadati dell'indice nel database. Questi dati possono essere successivamente recuperati con le operazioni relative alle informazioni.
+La **funzione JetComputeStats** illustra ogni indice di una tabella per calcolare esattamente il numero di voci in un indice e il numero di chiavi distinte in un indice. Queste informazioni, insieme al numero di pagine di database allocate per un indice e all'ora corrente del calcolo, vengono archiviate nei metadati dell'indice nel database. Questi dati possono essere successivamente recuperati con operazioni di informazioni.
 
 ```cpp
     JET_ERR JET_API JetComputeStats(
@@ -47,106 +47,45 @@ La funzione **JetComputeStats** percorre ogni indice di una tabella per calcolar
 
 Sessione da utilizzare per questa chiamata.
 
-*TableID*
+*tableid*
 
-Cursore che verrà utilizzato per la chiamata. Descrive la tabella in cui calcolare le statistiche.
+Cursore che verrà utilizzato per questa chiamata. Descrive la tabella su cui calcolare le statistiche.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Codice restituito</p></th>
-<th><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>Operazione riuscita.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono state interrotte in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede che l'accesso a tutti i dati venga revocato per proteggere l'integrità dei dati.</p>
-<p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino sull'istanza associata alla sessione.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRollbackError</p></td>
-<td><p>Si è verificato un errore che richiede l'esecuzione del rollback di tutte le modifiche, ma il rollback della transazione non è riuscito.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>Non è possibile usare la stessa sessione per più di un thread nello stesso momento.</p>
-<p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>Non è possibile completare l'operazione perché l'istanza associata alla sessione viene arrestata.</p></td>
-</tr>
-</tbody>
-</table>
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Extensible Archiviazione Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 
-In seguito all'esito positivo, le statistiche aggiornate vengono archiviate nei cataloghi del database per la tabella descritta con il cursore specificato.
+| <p>Codice restituito</p> | <p>Descrizione</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>Operazione riuscita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>Non è possibile completare l'operazione perché tutte le attività nell'istanza associata alla sessione sono cessare in seguito a una chiamata a <a href="gg269240(v=exchg.10).md">JetStopService.</a></p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione ha rilevato un errore irreversibile che richiede la revoca dell'accesso a tutti i dati per proteggere l'integrità di questi dati.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errNotInitialized</p> | <p>Non è possibile completare l'operazione perché l'istanza associata alla sessione non è ancora stata inizializzata.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso un'operazione di ripristino nell'istanza associata alla sessione.</p> | 
+| <p>JET_errRollbackError</p> | <p>Si è verificato un errore che richiede l'esecuzione del rollback di tutte le modifiche, ma il rollback della transazione non è riuscito.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>La stessa sessione non può essere usata per più thread contemporaneamente.</p><p>Questo errore verrà restituito solo da Windows XP e versioni successive.</p> | 
+| <p>JET_errTermInProgress</p> | <p>Non è possibile completare l'operazione perché è in corso l'arresto dell'istanza associata alla sessione.</p> | 
 
-In caso di errore, non viene eseguito alcun aggiornamento del tipo di dati al database.
+
+
+In caso di esito positivo, le statistiche aggiornate vengono archiviate nei cataloghi di database per la tabella descritta con il cursore specificato.
+
+In caso di errore, non viene effettuato alcun aggiornamento di alcun tipo al database.
 
 #### <a name="remarks"></a>Commenti
 
-Questa operazione può essere un consumo di risorse perché ogni indice di una tabella deve essere analizzato interamente. [JetGetRecordPosition](./jetgetrecordposition-function.md) può essere utilizzato per ottenere una stima approssimativa del numero di voci in un indice, ma non può stimare il numero di valori distinct in un indice.
+Questa operazione può richiedere un utilizzo di risorse, perché ogni indice in una tabella deve essere visto per intero. [JetGetRecordPosition](./jetgetrecordposition-function.md) può essere usato per ottenere una stima approssimativa del numero di voci in un indice, ma non può stimare di per sé il numero di valori distinti in un indice.
 
-I dati calcolati da questa operazione iniziano a diventare obsoleti e la tabella viene aggiornata successivamente.
+I dati calcolati da questa operazione iniziano a diventare non aggiornati e la tabella viene successivamente aggiornata.
 
-Gli aggiornamenti al database creati da **JetComputeStats** vengono eseguiti in modo lazy. Ciò significa che nessuno scaricamento del log sarà accompagnato da questa operazione e un arresto anomalo del sistema successivo a un ritorno di JET_errSuccess da **JetComputeStats** può comunque causare la perdita di questi aggiornamenti.
+Gli aggiornamenti al database apportati **da JetComputeStats** vengono evasi in modalità differita. Ciò significa che non verrà eseguita alcuna operazione di scaricamento del log e un arresto anomalo del sistema dopo la restituzione di JET_errSuccess da parte di **JetComputeStats** può comunque causare la perdita di questi aggiornamenti.
 
 #### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Richiede ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | | <p><strong>Libreria</strong></p> | <p>Usare ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Richiede ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Vedere anche

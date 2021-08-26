@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_cbtyp'
-title: Enumerazione JET_cbtyp
+description: 'Altre informazioni su: enumerazione JET_cbtyp dati'
+title: JET_cbtyp enumerazione
 TOCTitle: JET_cbtyp enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_cbtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_cbtyp(v=EXCHG.10)
@@ -48,21 +48,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d2e545fea9c1942dc09df82eb93eafa1d3e4e89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 209d3ffe9721f51b8c2d510eecb5408ac66cdbeb58309d1f033e2d23730328ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116231"
 ---
-# <a name="jet_cbtyp-enumeration"></a>Enumerazione JET_cbtyp
+# <a name="jet_cbtyp-enumeration"></a>JET_cbtyp enumerazione
 
-Tipo di stato di avanzamento segnalato.
+Tipo di stato segnalato.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -93,62 +93,62 @@ public enum JET_cbtyp
 <tr class="odd">
 <td></td>
 <td>Null</td>
-<td>Questo callback è riservato e sempre considerato non valido.</td>
+<td>Questo callback è riservato e considerato sempre non valido.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Finalize</td>
-<td>Una colonna finalizzabile è scesa a zero.</td>
+<td>Una colonna finalizzabile è passata a zero.</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>PrimaDiInserire</td>
-<td>Questo callback si verificherà immediatamente prima dell'inserimento di un nuovo record in una tabella tramite una chiamata a JetUpdate.</td>
+<td>BeforeInsert</td>
+<td>Questo callback si verificherà subito prima dell'inserimento di un nuovo record in una tabella tramite una chiamata a JetUpdate.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>AfterInsert</td>
-<td>Questo callback si verificherà subito dopo l'inserimento di un nuovo record in una tabella tramite una chiamata a JetUpdate, ma prima della restituzione di JetUpdate.</td>
+<td>Afterinsert</td>
+<td>Questo callback si verificherà subito dopo l'inserimento di un nuovo record in una tabella da una chiamata a JetUpdate ma prima che jetUpdate venga restituito.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BeforeReplace</td>
-<td>Questo callback si verificherà immediatamente prima di un record esistente in una tabella modificata da una chiamata a JetUpdate.</td>
+<td>Questo callback si verificherà subito prima che un record esistente in una tabella venga modificato da una chiamata a JetUpdate.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>AfterReplace</td>
-<td>Questo callback si verifica subito dopo la modifica di un record esistente in una tabella da una chiamata a JetUpdate, ma prima che JetUpdate restituisca.</td>
+<td>Questo callback si verificherà subito dopo che un record esistente in una tabella è stato modificato da una chiamata a JetUpdate ma prima della restituzione di JetUpdate.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BeforeDelete</td>
-<td>Questo callback si verificherà immediatamente prima che un record esistente in una tabella venga eliminato da una chiamata a JetDelete.</td>
+<td>Questo callback si verificherà subito prima che un record esistente in una tabella venga eliminato da una chiamata a JetDelete.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>AfterDelete</td>
-<td>Questo callback si verificherà subito dopo l'eliminazione di un record esistente in una tabella da una chiamata a JetDelete.</td>
+<td>Questo callback si verificherà subito dopo l'eliminazione di un record esistente in una tabella tramite una chiamata a JetDelete.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UserDefinedDefaultValue</td>
-<td>Questo callback si verifica quando il motore deve recuperare il valore predefinito definito dall'utente di una colonna dall'applicazione. Questo callback è essenzialmente un'implementazione limitata di JetRetrieveColumn valutata dall'applicazione. Per un valore predefinito definito dall'utente può essere restituito un massimo di un valore di colonna.</td>
+<td>Questo callback si verifica quando il motore deve recuperare il valore predefinito definito dall'utente di una colonna dall'applicazione. Questo callback è essenzialmente un'implementazione limitata di JetRetrieveColumn che viene valutata dall'applicazione. È possibile restituire un massimo di un valore di colonna per un valore predefinito definito dall'utente.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OnlineDefragCompleted</td>
-<td>Questo callback si verifica quando la deframmentazione in linea di un database iniziata da JetDefragment è stata interrotta a causa del completamento del processo o del raggiungimento del limite di tempo.</td>
+<td>Questo callback si verifica quando la deframmentazione online di un database come avviato da JetDefragment è stata arrestata a causa del completamento del processo o del limite di tempo raggiunto.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FreeCursorLS</td>
-<td>Questo callback si verifica quando l'applicazione deve eseguire la pulizia dell'handle di contesto per l'archiviazione locale associata a un cursore rilasciato dal motore di database. Per ulteriori informazioni, vedere JetSetLS. Il delegato per questo motivo di callback viene configurato per mezzo di JetSetSystemParameter con JET_paramRuntimeCallback.</td>
+<td>Questo callback si verifica quando l'applicazione deve pulire l'handle di contesto per l'Archiviazione locale associato a un cursore rilasciato dal motore di database. Per altre informazioni, vedere JetSetLS. Il delegato per questo motivo di callback viene configurato tramite JetSetSystemParameter con JET_paramRuntimeCallback.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FreeTableLS</td>
-<td>Questo callback si verificherà come il risultato della necessità che l'applicazione ripulisca l'handle di contesto per l'archiviazione locale associata a una tabella rilasciata dal motore di database. Per ulteriori informazioni, vedere JetSetLS. Il delegato per questo motivo di callback viene configurato per mezzo di JetSetSystemParameter con JET_paramRuntimeCallback.</td>
+<td>Questo callback si verificherà in seguito alla necessità dell'applicazione di pulire l'handle di contesto per il Archiviazione locale associato a una tabella rilasciata dal motore di database. Per altre informazioni, vedere JetSetLS. Il delegato per questo motivo di callback viene configurato tramite JetSetSystemParameter con JET_paramRuntimeCallback.</td>
 </tr>
 </tbody>
 </table>
@@ -158,4 +158,4 @@ public enum JET_cbtyp
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

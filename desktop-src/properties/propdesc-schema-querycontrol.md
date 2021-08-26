@@ -4,12 +4,12 @@ ms.assetid: 7d79c2fe-c63d-4ac5-8dd6-1a6103e53245
 title: queryControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34f05800fc026c61a4ea50098fb1d8f4deb98d971c9eecfed478d71bd3c01033
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3652a46d403bc258226de5a48f34ae16960ff517
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823561"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626317"
 ---
 # <a name="querycontrol"></a>queryControl
 
@@ -63,8 +63,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -78,8 +78,8 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 <td>Pubblica. facoltativo. Il valore predefinito &quot; è &quot; Default. I valori validi sono i seguenti. 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -100,7 +100,7 @@ Se sono presenti più elementi, viene usato l'ultimo. Se non viene specificato a
 </thead>
 <tbody>
 <tr class="odd">
-<td>string</td>
+<td>Stringa</td>
 <td>Testo</td>
 </tr>
 <tr class="even">

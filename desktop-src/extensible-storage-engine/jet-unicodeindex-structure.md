@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_UNICODEINDEX'
-title: Struttura JET_UNICODEINDEX
+description: 'Altre informazioni su: JET_UNICODEINDEX struttura'
+title: JET_UNICODEINDEX struttura
 TOCTitle: JET_UNICODEINDEX Structure
 ms:assetid: d0b8ef74-850e-4e21-9f71-b56ec472aa0f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294097(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4a2332551fb1f624b75e32596b2941d97ffa47d
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 544438541affba1121850d5ad5a7a60d54d398bd
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104402038"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471387"
 ---
-# <a name="jet_unicodeindex-structure"></a>Struttura JET_UNICODEINDEX
+# <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_unicodeindex-structure"></a>Struttura JET_UNICODEINDEX
+## <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX struttura
 
-La struttura **JET_UNICODEINDEX** Personalizza il modo in cui i dati Unicode vengono normalizzati quando viene creato un indice su una colonna Unicode.
+La **JET_UNICODEINDEX** consente di personalizzare il modo in cui i dati Unicode vengono normalizzati quando viene creato un indice su una colonna Unicode.
 
 ```cpp
 typedef struct tagJET_UNICODEINDEX {
@@ -42,92 +42,41 @@ typedef struct tagJET_UNICODEINDEX {
 
 **lcid**
 
-ID delle impostazioni locali da utilizzare per la normalizzazione dei dati. Le impostazioni locali possono essere usate purché nel computer sia installato il Language Pack appropriato. L'unica eccezione è che le impostazioni locali indipendenti dalla lingua (LCID di zero) non sono valide.
+ID delle impostazioni locali da usare durante la normalizzazione dei dati. È possibile usare tutte le impostazioni locali purché nel computer siano language pack le impostazioni locali appropriate. L'unica eccezione è che le impostazioni locali indipendenti dalla lingua (LCID pari a zero) non sono valide.
 
 **dwMapFlags**
 
 Questi flag vengono passati a [LCMapString](/windows/win32/api/winnls/nf-winnls-lcmapstringa) quando i dati Unicode vengono normalizzati in una chiave, che consente ai flag definiti dall'utente di eseguire l'override del valore predefinito.
 
-**Windows 2000**: gli unici due valori validi per **dwFlags** sono:
+**Windows 2000:** gli unici due valori validi per **dwFlags** sono:
 
-  - (LCMAP_SORTKEY | NORM_IGNORECASE | NORM_IGNOREKANATYPE | NORM_IGNOREWIDTH | NORM_IGNORENONSPACE)
+  - ( LCMAP_SORTKEY | NORM_IGNORECASE | NORM_IGNOREKANATYPE | NORM_IGNOREWIDTH | NORM_IGNORENONSPACE )
 
 <!-- end list -->
 
-  - (LCMAP_SORTKEY | NORM_IGNORECASE | NORM_IGNOREKANATYPE | NORM_IGNOREWIDTH)
+  - ( LCMAP_SORTKEY | NORM_IGNORECASE | NORM_IGNOREKANATYPE | NORM_IGNOREWIDTH )
 
 **dwMapFlags** presenta le restrizioni seguenti.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>LCMAP_SORTKEY</p></td>
-<td><p>Mandatory.</p></td>
-</tr>
-<tr class="even">
-<td><p>LCMAP_BYTEREV</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>NORM_IGNORECASE</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="even">
-<td><p>NORM_IGNORENONSPACE</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>NORM_IGNORESYMBOLS</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="even">
-<td><p>NORM_IGNOREKANATYPE</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>NORM_IGNOREWIDTH</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-<tr class="even">
-<td><p>SORT_STRINGSORT</p></td>
-<td><p>facoltativo.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>LCMAP_SORTKEY</p> | <p>Mandatory.</p> | 
+| <p>LCMAP_BYTEREV</p> | <p>facoltativo.</p> | 
+| <p>NORM_IGNORECASE</p> | <p>facoltativo.</p> | 
+| <p>NORM_IGNORENONSPACE</p> | <p>facoltativo.</p> | 
+| <p>NORM_IGNORESYMBOLS</p> | <p>facoltativo.</p> | 
+| <p>NORM_IGNOREKANATYPE</p> | <p>facoltativo.</p> | 
+| <p>NORM_IGNOREWIDTH</p> | <p>facoltativo.</p> | 
+| <p>SORT_STRINGSORT</p> | <p>facoltativo.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bdbc845eda69d22f6e7097131f71b074a9b53985
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f7df8e49850917413f2d6e80a13d62f9d3289caa2d0eb089593fb946070d0456
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119031"
 ---
 # <a name="d3dxplanetransformarray-function-d3dx9mathh"></a>Funzione D3DXPlaneTransformArray (D3dx9math.h)
 
@@ -86,7 +86,7 @@ Stride di ogni piano non trasformato.
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine, che contiene il traspose inverso dei valori della trasformazione.
+Puntatore alla struttura [**D3DXMATRIX**](d3dxmatrix.md) di origine, che contiene il traspose inverso dei valori di trasformazione.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Numero di piani da trasformare.
 
 Tipo: **[ **D3DXPLANE**](d3dxplane.md)\***
 
-Puntatore a [**una struttura D3DXPLANE,**](d3dxplane.md) che rappresenta il piano trasformato. Si tratta dello stesso valore restituito nel *parametro pOut* in modo che questa funzione possa essere usata come parametro per un'altra funzione.
+Puntatore a [**una struttura D3DXPLANE**](d3dxplane.md) che rappresenta il piano trasformato. Si tratta dello stesso valore restituito nel *parametro pOut* in modo che questa funzione possa essere usata come parametro per un'altra funzione.
 
 ## <a name="remarks"></a>Commenti
 
@@ -131,9 +131,9 @@ D3DXPlaneTransformArray( &planeNew, sizeof (D3DXPLANE), &plane,
 
 
 
-Un piano è descritto da ax + by + cz + dw = 0. Il primo piano viene creato con (a,b,c,d) = (0,1,1,0), ovvero un piano descritto da y + z = 0. Dopo il ridimensionamento, il nuovo piano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), che mostra il nuovo piano descritto da 0,353y + 0,235z = 0.
+Un piano è descritto da ax + by + cz + dw = 0. Il primo piano viene creato con (a,b,c,d) = (0,1,1,0), ovvero un piano descritto da y + z = 0. Dopo il ridimensionamento, il nuovo piano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), che mostra il nuovo piano che deve essere descritto da 0,353y + 0,235z = 0.
 
-Il parametro *pM* contiene la trasposizione inversa della matrice di trasformazione. La trasposizione inversa è richiesta da questo metodo in modo che anche il vettore normale del piano trasformato possa essere trasformato correttamente.
+Il parametro *pM* contiene il traspose inverso della matrice di trasformazione. Il traspose inverso è richiesto da questo metodo in modo che anche il vettore normale del piano trasformato possa essere trasformato correttamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -159,7 +159,7 @@ Il parametro *pM* contiene la trasposizione inversa della matrice di trasformazi
 [**D3DXMatrixRotationX**](d3dxmatrixrotationx.md)
 </dt> <dt>
 
-[**D3DXMatrixRotationy**](d3dxmatrixrotationy.md)
+[**D3DXMatrixRotationY**](d3dxmatrixrotationy.md)
 </dt> <dt>
 
 [**D3DXMatrixRotationZ**](d3dxmatrixrotationz.md)

@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: c9eeadfb38acd39e5861c5661e2f4117ef2a8ce415e3e21374f197763d4b315e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20021472467d7861aa2b9cabd5602b5a167f20ab
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118160992"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622157"
 ---
 # <a name="d1108-wrong-factory"></a>D1108: Factory errata
 
-La risorsa \[ *di risorsa* \] è stata allocata dalla factory \[ *1* \] e usata con factory factory \[ *2.* \]
+La risorsa \[ *è stata* \] allocata dalla factory \[ *1* \] e usata con la factory \[ *2.* \]
 
 ## <a name="placeholders"></a>Segnaposto
 
@@ -56,7 +56,7 @@ Indirizzo della factory con cui è *stata usata* la risorsa.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory abilitati**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) per il debug. crea quindi una geometria dalla prima factory e un pennello dalla seconda factory. Infine, chiama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando la geometria e il pennello.
+Nell'esempio seguente vengono prima creati due oggetti [**ID2D1Factory abilitati**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) per il debug. crea quindi una geometria dalla prima factory e un pennello dalla seconda factory. Infine, chiama [**FillGeometry,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry)passando la geometria e il pennello.
 
 
 ```C++
@@ -100,7 +100,7 @@ Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory ab
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -123,7 +123,7 @@ Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory ab
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -147,7 +147,7 @@ Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory ab
 
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -166,7 +166,7 @@ Nell'esempio seguente vengono innanzitutto creati due oggetti [**ID2D1Factory ab
 
 
 
-In questo esempio viene generato il messaggio di debug seguente:
+Questo esempio genera il messaggio di debug seguente:
 
 
 ```
