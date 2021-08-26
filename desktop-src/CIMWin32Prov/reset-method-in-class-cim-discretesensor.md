@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aecda4b40a70c72679c3edff7b30f6ba548938cf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5868d57ffcb2f62b48a428eb56493fc1bb2ba7982a51d67682d132f6aa6edfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929531"
 ---
 # <a name="reset-method-of-the-cim_discretesensor-class"></a>Metodo Reset della classe CIM \_ DiscreteSensor
 

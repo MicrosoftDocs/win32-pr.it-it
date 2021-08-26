@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_Terminal
+title: Win32_Terminal classe
 description: Rappresenta un terminale.
 ms.assetid: d56cc605-6c5a-46ae-96fd-d0a4f5b6074a
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_Terminal Servizi Desktop remoto
-- Classe Win32_Terminal Servizi Desktop remoto, descritta
+- Win32_Terminal classe Servizi Desktop remoto
+- Win32_Terminal classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ae74003f798049fbdb34c955db3f64112bfcd2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e43f3998e1b8f9e7d252a8a4c949d7d083c763a8759d7c9df6aa60c21618e217
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867961"
 ---
-# <a name="win32_terminal-class"></a>\_Classe terminale Win32
+# <a name="win32_terminal-class"></a>Classe terminale Win32 \_
 
-La classe WMI del **\_ terminale Win32** rappresenta un terminale.
+La **classe WMI del \_ terminale Win32** rappresenta un terminale.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi più avanti in questo argomento.
 
@@ -56,22 +56,22 @@ class Win32_Terminal : CIM_LogicalElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ terminale Win32** presenta questi tipi di membri:
+La **classe \_ Terminale Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ terminale Win32** presenta questi metodi.
+La **classe \_ Terminale Win32** dispone di questi metodi.
 
 
 
 | Metodo                                  | Descrizione                                                                                                                                                                             |
 |:----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Creare**](create-win32-terminal.md) | Crea un terminale con le impostazioni predefinite che possono essere personalizzate usando le proprietà e i metodi delle classi [**Win32 \_ TerminalSetting**](win32-terminalsetting.md) .<br/> |
-| [**Delete**](delete-win32-terminal.md) | Elimina il terminale specificato.<br/>                                                                                                                                              |
-| [**Abilitare**](win32-terminal-enable.md) | Disabilita o Abilita il terminale.<br/>                                                                                                                                            |
+| [**Creare**](create-win32-terminal.md) | Crea un terminale con le impostazioni predefinite che possono essere personalizzate usando le proprietà e i metodi delle [**classi \_ TerminalSetting Win32.**](win32-terminalsetting.md)<br/> |
+| [**Elimina**](delete-win32-terminal.md) | Elimina il terminale specificato.<br/>                                                                                                                                              |
+| [**Abilita**](win32-terminal-enable.md) | Disabilita o abilita il terminale.<br/>                                                                                                                                            |
 | [**Rinominare**](win32-terminal-rename.md) | Rinomina il terminale.<br/>                                                                                                                                                        |
 
 
@@ -80,32 +80,32 @@ La **classe \_ terminale Win32** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ terminale Win32** dispone di queste proprietà.
+La **classe \_ Terminale Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa a una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto .
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -113,14 +113,14 @@ Tipo di accesso: sola lettura
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **fEnableTerminal**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -132,7 +132,7 @@ Specifica se il terminale specificato è disabilitato o abilitato.
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -143,7 +143,7 @@ Il terminale è disabilitato.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -157,38 +157,38 @@ Il terminale è abilitato.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Qualificatori: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Data di installazione dell'oggetto. La mancanza di un valore non indica che l'oggetto non è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LoggedOnUsers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di sessioni di accesso per il terminale.
+Numero di sessioni registrate per il terminale.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -196,25 +196,25 @@ Tipo di accesso: sola lettura
 
 Nome dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono in linea, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -227,14 +227,14 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore")
+ ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Danneggiato")
+ ("Degraded")
 
 
 </dt> <dd></dd> <dt>
@@ -248,7 +248,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 
 
- ("Errore di predazione")
+ ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -276,10 +276,10 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-manag
 
 </dd> <dt>
 
-**Terminale**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -294,13 +294,13 @@ Nome univoco che identifica l'istanza del terminale.
 
 ## <a name="remarks"></a>Commenti
 
-**Win32 \_ Il terminale** è associato [**a Win32 \_ TerminalSetting**](win32-terminalsetting.md) come proprietà dell' **elemento** dell' [**associazione \_ TerminalTerminalSetting Win32**](win32-terminalterminalsetting.md) .
+**Win32 \_ Terminal** è associato a [**\_ TerminalSetting Win32**](win32-terminalsetting.md) come **proprietà Element** dell'associazione [**\_ TerminalTerminalSetting Win32.**](win32-terminalterminalsetting.md)
 
-Le classi seguenti sono sottoclassi della classe **\_ terminale Win32** : [**Win32 \_ TSGeneralSetting**](win32-tsgeneralsetting.md), Win32 [**\_ TSLogonSetting**](win32-tslogonsetting.md), [**Win32 \_ TSSessionSetting**](win32-tssessionsetting.md), Win32 [**\_ TSEnvironmentSetting**](win32-tsenvironmentsetting.md), Win32 [**\_ TSRemoteControlSetting**](win32-tsremotecontrolsetting.md), Win32 TSClientSetting [**, \_ Win32**](win32-tsclientsetting.md)TSNetworkAdapterSetting [**, \_**](win32-tsnetworkadaptersetting.md)Win32 TSNetworkAdapterListSetting, [**Win32 \_**](win32-tspermissionssetting.md)TSPermissionsSetting e [**Win32 \_ TSAccount**](win32-tsaccount.md). [**\_**](win32-tsnetworkadapterlistsetting.md)
+Le classi seguenti sono sottoclassi della classe **\_ terminale Win32:** [**Win32 \_ TSGeneralSetting,**](win32-tsgeneralsetting.md) [**Win32 \_ TSLogonSetting,**](win32-tslogonsetting.md) [**Win32 \_ TSSessionSetting,**](win32-tssessionsetting.md) [**Win32 \_ TSEnvironmentSetting,**](win32-tsenvironmentsetting.md) [**Win32 \_ TSRemoteControlSetting,**](win32-tsremotecontrolsetting.md) [**Win32 \_ TSClientSetting,**](win32-tsclientsetting.md) [**Win32 \_ TSNetworkAdapterSetting,**](win32-tsnetworkadaptersetting.md) [**Win32 \_ TSNetworkAdapterListSetting,**](win32-tsnetworkadapterlistsetting.md) [**Win32 \_ TSPermissionsSetting**](win32-tspermissionssetting.md)e [**Win32 \_ TSAccount.**](win32-tsaccount.md)
 
-Si noti che WinStations associato alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se viene effettuato un tentativo di eseguire questa operazione specificando "console" come valore della proprietà **TerminalName** , i metodi di questo oggetto restituiscono **WBEM \_ E \_ non \_ supportati**. Questo codice di errore viene restituito anche se una stazione della finestra tenta di chiamare i metodi di questo oggetto per aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
+Si noti che Winstations associato alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se si tenta di eseguire questa operazione specificando "Console" come valore della proprietà **TerminalName,** i metodi di questo oggetto restituiscono **WBEM \_ E NOT \_ \_ SUPPORTED**. Questo codice di errore viene restituito anche se una stazione finestra tenta di chiamare metodi di questo oggetto per aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
 
-Per connettersi allo \\ \\ \\ spazio dei nomi CIMV2 TerminalServices radice, il livello di autenticazione deve includere la riservatezza dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione del livello di autenticazione **RPC \_ C \_ \_ \_ PKT \_ privacy**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione di **WbemAuthenticationLevelPktPrivacy** o "su PktPrivacy", con un valore pari a 6. Il seguente esempio di Visual Basic Scripting Edition (VBScript) illustra come connettersi a un computer remoto con la privacy dei pacchetti.
+Per connettersi allo spazio \\ dei \\ nomi TerminalServices CIMV2 radice, il livello di autenticazione \\ deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione **di RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic chiamate di script e script, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore 6. Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
 
 ```VB
@@ -311,7 +311,7 @@ Set objServices = GetObject( _
 
 
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -322,7 +322,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -331,13 +331,13 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_LogicalElement CIM**](cim-logicalelement.md)
+[**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**\_Terminale Win32ServiceSetting**](win32-terminalservicesetting.md)
 </dt> <dt>
 
-[**\_TerminalTerminalSetting Win32**](win32-terminalterminalsetting.md)
+[**\_Terminale Win32TerminalSetting**](win32-terminalterminalsetting.md)
 </dt> </dl>
 
  

@@ -1,32 +1,32 @@
-- name: Stazioni e desktop della finestra
+- name: Stazioni finestra e desktop
   href: window-stations-and-desktops.md
   items:
-    - name: Informazioni sulle stazioni e sui desktop della finestra
+    - name: Informazioni su stazioni finestra e desktop
       href: about-window-stations-and-desktops.md
       items:
         - name: Stazioni finestra
           href: window-stations.md
         - name: Desktop
           href: desktops.md
-        - name: Creazione di finestre e desktop
+        - name: Creazione di window station e desktop
           href: window-station-and-desktop-creation.md
-        - name: Elaborare la connessione a una stazione di finestra
+        - name: Elaborare la connessione a una stazione finestra
           href: process-connection-to-a-window-station.md
         - name: Connessione thread a un desktop
           href: thread-connection-to-a-desktop.md
-        - name: Diritti di accesso e sicurezza di Windows Station
+        - name: Sicurezza e diritti di accesso di Window Station
           href: window-station-security-and-access-rights.md
-        - name: Diritti di accesso e sicurezza desktop
+        - name: Desktop Security and Access Rights
           href: desktop-security-and-access-rights.md
-    - name: Informazioni di riferimento su Window Station e desktop
+    - name: Informazioni di riferimento su Stazione finestra e desktop
       href: window-station-and-desktop-reference.md
       items:
-        - name: Funzioni di Window Station e desktop
+        - name: Funzioni di Window Station e Desktop
           href: window-station-and-desktop-functions.md
           items:
             - name: CloseDesktop
               href: /windows/desktop/api/winuser/nf-winuser-closedesktop
-            - name: CloseWindowStation
+            - name: ChiudiWindowStation
               href: /windows/desktop/api/winuser/nf-winuser-closewindowstation
             - name: CreateDesktop
               href: /windows/desktop/api/winuser/nf-winuser-createdesktopa
@@ -64,7 +64,7 @@
               href: /windows/desktop/api/winuser/nf-winuser-setuserobjectinformationa
             - name: SwitchDesktop
               href: /windows/desktop/api/winuser/nf-winuser-switchdesktop
-        - name: Strutture della finestra e del desktop
+        - name: Strutture window station e desktop
           href: window-station-and-desktop-structures.md
           items:
             - name: USEROBJECTFLAGS

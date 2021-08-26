@@ -1,8 +1,8 @@
 ---
-description: La proprietà Value dell'oggetto oggetto SWbemQualifier contiene il valore Variant di questo qualificatore. Si tratta della proprietà predefinita di questo oggetto.
+description: La proprietà Value dell'oggetto SWbemQualifier contiene il valore variant di questo qualificatore. Si tratta della proprietà predefinita di questo oggetto.
 ms.assetid: a2f481fc-8231-4bc0-a9fc-9e622f11c925
 ms.tgt_platform: multiple
-title: Proprietà oggetto SWbemQualifier. Value (wbemdisp. h)
+title: Proprietà SWbemQualifier.Value (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 623252563ae4bd64d04309331fde65227c22aca9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71d8b9c434c1da1302f874e70a1cda56840a2776056801c3054d590974469a2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897901"
 ---
-# <a name="swbemqualifiervalue-property"></a>Proprietà oggetto SWbemQualifier. Value
+# <a name="swbemqualifiervalue-property"></a>Proprietà SWbemQualifier.Value
 
-La proprietà **value** dell'oggetto [**oggetto SWbemQualifier**](swbemqualifier.md) contiene il valore Variant di questo qualificatore. Si tratta della proprietà predefinita di questo oggetto.
+La **proprietà Value** dell'oggetto [**SWbemQualifier**](swbemqualifier.md) contiene il valore variant di questo qualificatore. Si tratta della proprietà predefinita di questo oggetto.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -51,11 +51,11 @@ SWbemQualifier.Value As Variant
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_Oggetto SWBEMQUALIFIER CLSID<br/>                                                        |
-| IID<br/>                      | \_ISWBEMQUALIFIER IID<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemQualifier<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemQualifier<br/>                                                         |
 
 
 

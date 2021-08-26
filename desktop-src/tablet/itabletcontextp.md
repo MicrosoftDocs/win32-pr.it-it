@@ -1,5 +1,5 @@
 ---
-description: Rappresenta il contesto della tavoletta.
+description: Rappresenta il contesto del tablet.
 ms.assetid: d518c42d-c2f6-4776-bea5-fecdfe48e260
 title: Interfaccia ITabletContextP
 ms.topic: reference
@@ -14,36 +14,36 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5b3b6a69deeaa30c3fa0e16b1b36094dceaff304
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da5c26a0a9d7d080a9787fef0b7ba2fdb919e473fd66c989fca478c4ac7d0ac3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883521"
 ---
 # <a name="itabletcontextp-interface"></a>Interfaccia ITabletContextP
 
-Rappresenta il contesto della tavoletta.
+Rappresenta il contesto del tablet.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITabletContextP** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletContextP** dispone anche di questi tipi di membri:
+**L'interfaccia ITabletContextP** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletContextP** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITabletContextP** dispone di questi metodi.
+**L'interfaccia ITabletContextP** include questi metodi.
 
 
 
 | Metodo                                                                                           | Descrizione                                                                     |
 |:-------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [**IsTopMostHook**](itabletcontextp-istopmosthook.md)                                           | Indica se il contesto del tablet è nell'hook superiore.<br/>             |
+| [**IsTopMostHook**](itabletcontextp-istopmosthook.md)                                           | Indica se il contesto del tablet è in primo piano.<br/>             |
 | [**Overlap**](itabletcontextp-overlap.md)                                                       | Sposta un contesto del tablet nella parte anteriore o posteriore della coda di input.<br/>      |
-| [**TrackInputRect**](itabletcontextp-trackinputrect.md)                                         | Aggiorna il digitalizzatore del Tablet alle coordinate del mapping della posizione della finestra.<br/> |
-| [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) | Consente di accedere alla memoria condivisa tra i thread del tablet.<br/>             |
-| [**UseSharedMemoryCommunications**](itabletcontextp-usesharedmemorycommunications.md)           | Consente di accedere alla memoria condivisa tra i thread del tablet.<br/>             |
+| [**TrackInputRect**](itabletcontextp-trackinputrect.md)                                         | Aggiorna il digitalizzatore tablet alle coordinate di mapping della posizione della finestra.<br/> |
+| [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) | Fornisce l'accesso alla memoria condivisa tra i thread del tablet.<br/>             |
+| [**UseSharedMemoryCommunications**](itabletcontextp-usesharedmemorycommunications.md)           | Fornisce l'accesso alla memoria condivisa tra i thread del tablet.<br/>             |
 
 
 
@@ -51,11 +51,11 @@ L'interfaccia **ITabletContextP** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Gli sviluppatori non devono utilizzare questa interfaccia.
+Gli sviluppatori non devono usare questa interfaccia.
 
 [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md) è disponibile solo in Windows Vista e versioni successive.
 
-Il codice seguente descrive il modo in cui viene definita l'interfaccia **ITabletContextP** .
+Il codice seguente descrive come viene definita **l'interfaccia ITabletContextP.**
 
 ``` syntax
 [
@@ -101,7 +101,7 @@ interface ITabletContextP : ITabletContext
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

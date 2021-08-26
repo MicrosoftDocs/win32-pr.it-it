@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_UPDATE (COMmctrl. h)
-description: Aggiorna un elemento della visualizzazione elenco. Se il controllo elenco-visualizzazione dispone dello \_ stile LVS AutoArrange, questa macro causa la disposizione del controllo elenco-visualizzazione. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro di aggiornamento ListView.
+title: LVM_UPDATE messaggio (Commctrl.h)
+description: Aggiorna un elemento di visualizzazione elenco. Se il controllo visualizzazione elenco ha lo stile LVS AUTOARRANGE, questa macro determina la disposta \_ del controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro ListView \_ Update.
 ms.assetid: 81b332e9-4bea-481e-a7c5-613371103550
 keywords:
-- Controlli di Windows Message LVM_UPDATE
+- LVM_UPDATE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6cf2a4316e3ae3fc4dbab5e1afe780b03829b30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff9067d6eb80c5db7880ee9331a04e9259e9c841ccfe7dd80158a2afbcd06c99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915231"
 ---
-# <a name="lvm_update-message"></a>\_Messaggio di aggiornamento LVM
+# <a name="lvm_update-message"></a>Messaggio LVM \_ UPDATE
 
-Aggiorna un elemento della visualizzazione elenco. Se il controllo elenco-visualizzazione dispone dello stile [**LVS \_ AutoArrange**](list-view-window-styles.md) , questa macro causa la disposizione del controllo elenco-visualizzazione. È possibile inviare questo messaggio in modo esplicito o usando la macro di [**\_ aggiornamento ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update) .
+Aggiorna un elemento di visualizzazione elenco. Se il controllo visualizzazione elenco ha lo stile [**LVS \_ AUTOARRANGE,**](list-view-window-styles.md) questa macro determina la disposta del controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**ListView \_ Update.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,7 +41,7 @@ Indice dell'elemento da aggiornare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

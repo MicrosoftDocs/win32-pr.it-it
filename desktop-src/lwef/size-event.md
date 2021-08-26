@@ -1,19 +1,19 @@
 ---
-title: Evento dimensioni
-description: Evento dimensioni
+title: Evento Size
+description: Evento Size
 ms.assetid: 06089f84-8e75-475f-a492-536c83fa6730
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9a896d2dcbf8b925c0ca13fa429f6dfd95bc21
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 146763c649ab22c59a8367e3135ee0ea277c8ae4c8e4bc58588cd70c0b5ec1c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961021"
 ---
-# <a name="size-event"></a>Evento dimensioni
+# <a name="size-event"></a>Evento Size
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,34 +27,34 @@ Si verifica quando le dimensioni di un carattere cambiano.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-Dimensioni agente **secondario**  \_ **(ByVal** *CharacterID*, **ByVal** *Width*, **ByVal** *Height*)
+**Dimensioni**  \_ **dell'agente secondario (ByVal** *CharacterID,* **ByVal** *Width,* **ByVal** *Height*)
 
 
 
 | Parte          | Descrizione                                                         |
 |---------------|---------------------------------------------------------------------|
 | *CharacterID* | Restituisce l'ID del carattere spostato.                         |
-| *Larghezza*       | Restituisce la nuova larghezza (in pixel) del fotogramma carattere come numero intero.  |
-| *Altezza*      | Restituisce la nuova altezza (in pixel) del fotogramma di caratteri come valore integer. |
+| *Larghezza*       | Restituisce la nuova larghezza (in pixel) del frame di caratteri come numero intero.  |
+| *Altezza*      | Restituisce la nuova altezza (in pixel) del frame di caratteri come numero intero. |
 
 
 
- 
+ 
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Commenti
 
-Questo evento si verifica quando un'applicazione modifica la dimensione di un carattere. Questo evento viene inviato solo ai client del carattere, ovvero le applicazioni che hanno caricato il carattere.
+Questo evento si verifica quando un'applicazione modifica le dimensioni di un carattere. Questo evento viene inviato solo ai client del carattere (applicazioni che hanno caricato il carattere).
 
 ### <a name="see-also"></a>Vedere anche
 
-[**Sposta evento**](move-event.md)
+[**Evento Move**](move-event.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

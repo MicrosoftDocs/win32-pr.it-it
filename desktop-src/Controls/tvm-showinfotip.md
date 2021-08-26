@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SHOWINFOTIP (COMmctrl. h)
-description: Mostra infotip per un elemento specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro ShowInfoTip di TreeView.
+title: TVM_SHOWINFOTIP messaggio (Commctrl.h)
+description: Visualizza il suggerimento per un elemento specificato in un controllo visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro TreeView ShowInfoTip.
 ms.assetid: ed5a1bda-5754-4bb3-aa22-8faaf1af1268
 keywords:
-- Controlli di Windows Message TVM_SHOWINFOTIP
+- TVM_SHOWINFOTIP dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f147253800469a800677a242ff0ab0ccdbdfa4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0e1cf61511e8c9e69c42d89f99fc4ddae90de78701e5e75170ff1b793671120
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913921"
 ---
-# <a name="tvm_showinfotip-message"></a>\_Messaggio SHOWINFOTIP TVM
+# <a name="tvm_showinfotip-message"></a>Messaggio TVM \_ SHOWINFOTIP
 
-Mostra infotip per un elemento specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**\_ ShowInfoTip di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_showinfotip) .
+Visualizza il suggerimento per un elemento specificato in un controllo visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TreeView ShowInfoTip.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_showinfotip)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Mostra infotip per un elemento specificato in un controllo di visualizzazione al
 *wParam* 
 </dt> <dd>Deve essere zero.</dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
 Handle per l'elemento.
@@ -45,7 +45,7 @@ Restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-La maggior parte delle applicazioni non usa questo messaggio. Infotip vengono visualizzate automaticamente. Per altre informazioni, vedere uso di infotip di visualizzazione ad albero nella panoramica [sui controlli Tree-View](tree-view-controls.md) .
+La maggior parte delle applicazioni non usa questo messaggio. I suggerimenti vengono visualizzati automaticamente. Per altre informazioni, vedere Using Tree-view Infotips (Uso dei suggerimenti per la visualizzazione albero) nella panoramica [Tree-View dei controlli.](tree-view-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ La maggior parte delle applicazioni non usa questo messaggio. Infotip vengono vi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

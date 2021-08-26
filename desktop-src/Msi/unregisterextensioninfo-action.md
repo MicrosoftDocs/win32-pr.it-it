@@ -1,27 +1,27 @@
 ---
-description: L'azione UnregisterExtensionInfo gestisce la rimozione delle informazioni relative all'estensione dal registro di sistema.
+description: L'azione UnregisterExtensionInfo gestisce la rimozione delle informazioni relative all'estensione dal Registro di sistema.
 ms.assetid: 62bb9d17-c221-4bd2-bd7f-9930e28bb946
 title: Azione UnregisterExtensionInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d069a686c5f0e517a0cc9556634895216dd8cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e8dae707bc4dd517402d8a85fb64402637a815f8249d4677f18818c855ba4e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810231"
 ---
 # <a name="unregisterextensioninfo-action"></a>Azione UnregisterExtensionInfo
 
-L'azione UnregisterExtensionInfo gestisce la rimozione delle informazioni relative all'estensione dal registro di sistema.
+L'azione UnregisterExtensionInfo gestisce la rimozione delle informazioni relative all'estensione dal Registro di sistema.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
-L'azione UnregisterExtensionInfo deve essere successiva all'azione [InstallInitialize](installinitialize-action.md) e prima dell'azione [RegisterExtensionInfo](registerextensioninfo-action.md) .
+L'azione UnregisterExtensionInfo deve essere eseguita dopo [l'azione InstallInitialize](installinitialize-action.md) e prima [dell'azione RegisterExtensionInfo.](registerextensioninfo-action.md)
 
-[RemoveRegistryValues](removeregistryvalues-action.md) deve precedere UnregisterExtensionInfo nella sequenza.
+[RemoveRegistryValues](removeregistryvalues-action.md) deve essere prima di UnregisterExtensionInfo nella sequenza.
 
-La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di queste azioni si verifica insieme in una tabella di sequenza, è necessario che disponga dello stesso ordine di sequenza relativo, come illustrato:
+La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di queste azioni si verifica insieme in una tabella di sequenze, deve avere lo stesso ordine di sequenza relativo illustrato:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   UnregisterExtensionInfo
@@ -32,7 +32,7 @@ La sequenziazione delle azioni nel gruppo seguente è limitata. Se un subset di 
 -   [RegisterProgIdInfo](registerprogidinfo-action.md)
 -   [RegisterMIMEInfo](registermimeinfo-action.md)
 
-Ad esempio, UnregisterExtensionInfo deve precedere [UnregisterProgIdInfo](unregisterprogidinfo-action.md) nella tabella di sequenza.
+Ad esempio, UnregisterExtensionInfo deve essere prima [di UnregisterProgIdInfo](unregisterprogidinfo-action.md) nella tabella di sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
@@ -48,7 +48,7 @@ Ad esempio, UnregisterExtensionInfo deve precedere [UnregisterProgIdInfo](unregi
 
 ## <a name="remarks"></a>Commenti
 
-Se il sistema non supporta l'installazione su richiesta dei server di estensione, UnregisterExtensionInfo rimuove tutti i server di estensione nella [tabella di estensione](extension-table.md) associata a una funzionalità disinstallata o a una funzionalità installata come annunciato dal registro di sistema. In caso contrario, questa azione rimuoverà i server di estensione associati a una funzionalità selezionata per la rimozione dal registro di sistema.
+Se il sistema non supporta l'installazione su richiesta dei server di estensione, [](extension-table.md) UnregisterExtensionInfo rimuove tutti i server di estensione nella tabella delle estensioni associata a una funzionalità disinstallata o a una funzionalità installata come annunciato dal Registro di sistema. In caso contrario, questa azione rimuove i server di estensione associati a una funzionalità selezionata per la rimozione dal Registro di sistema.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

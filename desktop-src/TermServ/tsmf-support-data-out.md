@@ -1,11 +1,11 @@
 ---
-title: Struttura TSMF_SUPPORT_DATA_OUT
-description: Contiene informazioni sui formati multimediali. | Struttura TSMF_SUPPORT_DATA_OUT
+title: TSMF_SUPPORT_DATA_OUT struttura
+description: Contiene informazioni sui formati multimediali. | TSMF_SUPPORT_DATA_OUT struttura
 ms.assetid: 987ede31-ad15-489f-90e5-fb707c6b38a9
 ms.tgt_platform: multiple
 keywords:
-- Struttura TSMF_SUPPORT_DATA_OUT Servizi Desktop remoto
-- Puntatore alla struttura PTSMF_SUPPORT_DATA_OUT Servizi Desktop remoto
+- TSMF_SUPPORT_DATA_OUT struttura Servizi Desktop remoto
+- PTSMF_SUPPORT_DATA_OUT puntatore alla struttura Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9705c4c2c27eaff904e09364b029bd74ebd05d6c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8577266c2e259e7a7e4bb70310837eee1d743905e0e0d166e5797bc51a1f1b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869021"
 ---
-# <a name="tsmf_support_data_out-structure"></a>TSMF \_ supporta la \_ struttura dei dati in \_ uscita
+# <a name="tsmf_support_data_out-structure"></a>Struttura TSMF \_ SUPPORT \_ DATA \_ OUT
 
-Contiene informazioni sui formati multimediali. Questa struttura viene usata dal metodo [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante le query di supporto per il **\_ \_ \_ \_ formato WRDS query MF** .
+Contiene informazioni sui formati multimediali. Questa struttura viene usata dal metodo [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty) durante le **query WRDS \_ QUERY \_ MF FORMAT \_ \_ SUPPORT.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef struct tagTSMF_SUPPORT_DATA_OUT {
 **guidMfSession**
 </dt> <dd>
 
-Deve corrispondere alla proprietà **guidMfSession** nei [**\_ \_ dati \_ di supporto TSMF corrispondenti nella**](tsmf-support-data-in.md) struttura.
+Deve corrispondere alla proprietà **guidMfSession** nella struttura [**TSMF \_ SUPPORT DATA \_ \_ IN**](tsmf-support-data-in.md) corrispondente.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Numero di strutture nei dati a lunghezza variabile.
 **...**
 </dt> <dd>
 
-Numero variabile di strutture che contengono dati di formato multimediale.
+Numero variabile di strutture contenenti dati in formato multimediale.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Numero variabile di strutture che contengono dati di formato multimediale.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**\_NODEDATA di supporto TSMF \_ \_**](tsmf-support-nodedata-out.md)
+[**SUPPORTO DI TSMF \_ \_ PER NODEDATA \_ OUT**](tsmf-support-nodedata-out.md)
 </dt> </dl>
 
  

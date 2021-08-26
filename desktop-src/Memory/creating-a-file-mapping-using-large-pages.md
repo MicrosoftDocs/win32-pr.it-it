@@ -1,22 +1,22 @@
 ---
-description: Nell'esempio seguente viene utilizzata la funzione CreateFileMapping con il \_ flag sec Large \_ pages per utilizzare pagine di grandi dimensioni. Richiede Windows Server 2003 con Service Pack 1 (SP1) o versione successiva.
+description: L'esempio seguente usa la funzione CreateFileMapping con il flag SEC \_ LARGE PAGES per usare pagine di grandi \_ dimensioni. Richiede Windows Server 2003 con Service Pack 1 (SP1) o versione successiva.
 ms.assetid: be2cdcbc-03e8-407d-8ae2-569f8fd8cba8
 title: Creazione di un mapping di file con pagine di grandi dimensioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49a852de187f6798904ef1795dca5955663283f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8df68cc483856d0fe7f329b4f5e6e5c8a424a8c0e55958ca1da8de1ce51cbf71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869941"
 ---
 # <a name="creating-a-file-mapping-using-large-pages"></a>Creazione di un mapping di file con pagine di grandi dimensioni
 
-Nell'esempio seguente viene utilizzata la funzione [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) con il flag **sec \_ Large \_ pages** per utilizzare pagine di grandi dimensioni. Il buffer deve essere sufficientemente grande da contenere la dimensione minima di una pagina di grandi dimensioni. Questo valore viene ottenuto tramite la funzione [**GetLargePageMinimum**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) . Questa funzionalità richiede anche il privilegio "SeLockMemoryPrivilege".
+L'esempio seguente usa [**la funzione CreateFileMapping con**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) il flag SEC LARGE **\_ \_ PAGES** per usare pagine di grandi dimensioni. Le dimensioni del buffer devono essere sufficienti per contenere le dimensioni minime di una pagina di grandi dimensioni. Questo valore viene ottenuto usando la [**funzione GetLargePageMinimum.**](/windows/win32/api/memoryapi/nf-memoryapi-getlargepageminimum) Questa funzionalità richiede anche il privilegio "SeLockMemoryPrivilege".
 
 > [!NOTE]
-> A partire da Windows 10, versione 1703, per impostazione predefinita la funzione [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) esegue il mapping di una vista che utilizza pagine piccole, anche per gli oggetti di mapping dei file creati con il secondo flag di **\_ \_ pagine di grandi dimensioni** . In questa e nelle versioni successive del sistema operativo, è necessario specificare il flag di **\_ \_ \_ pagine di grandi dimensioni** con la funzione [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) per eseguire il mapping di pagine di grandi dimensioni. Questo flag viene ignorato nelle versioni del sistema operativo precedenti a Windows 10, versione 1703.
+> A partire da Windows 10 versione 1703, la funzione [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) esegue il mapping di una visualizzazione usando pagine di piccole dimensioni per impostazione predefinita, anche per gli oggetti di mapping dei file creati con il flag **SEC LARGE \_ \_ PAGES.** In questa e versioni successive del sistema operativo è necessario specificare il flag **\_ FILE MAP LARGE \_ \_ PAGES** con la funzione [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) per eseguire il mapping di pagine di grandi dimensioni. Questo flag viene ignorato nelle versioni del sistema operativo precedenti Windows 10 versione 1703.
 
 
 ```C++
@@ -152,7 +152,7 @@ int _tmain(void)
 
 <dl> <dt>
 
-[Creazione di un oggetto di mapping dei file](creating-a-file-mapping-object.md)
+[Creazione di un oggetto mapping di file](creating-a-file-mapping-object.md)
 </dt> <dt>
 
 [Supporto per pagine di grandi dimensioni](large-page-support.md)

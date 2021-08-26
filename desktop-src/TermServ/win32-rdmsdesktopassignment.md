@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDMSDesktopAssignment
-description: Descrive l'assegnazione del desktop utente della raccolta desktop remoto.
+title: Win32_RDMSDesktopAssignment classe
+description: Descrive l'assegnazione di Desktop utente raccolta Desktop remoto.
 ms.assetid: d3370cf2-65db-4e01-9ea3-9a71340bf71b
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_RDMSDesktopAssignment Servizi Desktop remoto
-- Classe Win32_RDMSDesktopAssignment Servizi Desktop remoto, descritta
+- Win32_RDMSDesktopAssignment classe Servizi Desktop remoto
+- Win32_RDMSDesktopAssignment classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bb252bd2efb71e3192ebd16160cecf18196cb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88576607777fe55d2fb2d4d9232ddc9d4b23849503e56f53fe4cd99f3931ddea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868211"
 ---
-# <a name="win32_rdmsdesktopassignment-class"></a>Win32 \_ RDMSDesktopAssignment (classe)
+# <a name="win32_rdmsdesktopassignment-class"></a>Classe \_ RDMSDesktopAssignment Win32
 
-Descrive l'assegnazione del desktop utente della raccolta desktop remoto.
+Descrive l'assegnazione di Desktop utente raccolta Desktop remoto.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -48,14 +48,14 @@ class Win32_RDMSDesktopAssignment
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ RDMSDesktopAssignment** presenta questi tipi di membri:
+La **classe \_ WIN32 RDMSDesktopAssignment** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ RDMSDesktopAssignment** presenta questi metodi.
+La **classe \_ WIN32 RDMSDesktopAssignment** include questi metodi.
 
 
 
@@ -70,36 +70,36 @@ La classe **Win32 \_ RDMSDesktopAssignment** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ RDMSDesktopAssignment** dispone di queste proprietà.
+La **classe \_ WIN32 RDMSDesktopAssignment** ha queste proprietà.
 
 <dl> <dt>
 
 **CollectionAlias**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Alias della raccolta.
 
 </dd> <dt>
 
-**Desktopname**
+**DesktopName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome del desktop.
@@ -109,13 +109,13 @@ Nome del desktop.
 **UserDomain**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome di dominio dell'account utente.
@@ -125,13 +125,13 @@ Nome di dominio dell'account utente.
 **UserName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nome dell'account utente.
@@ -146,8 +146,8 @@ Nome dell'account utente.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 

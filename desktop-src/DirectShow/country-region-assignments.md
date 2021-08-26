@@ -4,20 +4,20 @@ ms.assetid: a71784eb-e6b4-4dab-91fc-103c39dd1591
 title: Assegnazioni di paese/area geografica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b804a1ccb5a9dc552545202bb6dc20a006a4ba77
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0396a0027a5046a0730a5344351917104b5f47184047106fa6c345ae7c0f3b5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915591"
 ---
 # <a name="countryregion-assignments"></a>Assegnazioni di paese/area geografica
 
-I codici di chiamata del paese standard ITU (International Telecommunication Union) vengono passati al metodo [**IAMTuner::p UT \_ CountryCode**](/windows/desktop/api/Strmif/nf-strmif-iamtuner-put_countrycode) per selezionare i mapping delle frequenze televisive predefinite.
+I codici di chiamata standard dell'Unione delle telecomunicazioni (ITU) vengono passati al metodo [**IAMTuner::p ut \_ CountryCode**](/windows/desktop/api/Strmif/nf-strmif-iamtuner-put_countrycode) per selezionare i mapping di frequenza televisivi predefiniti.
 
-Passando, ad esempio, 20, il codice di chiamata ITU-T per l'Egitto, selezionerebbe frequenze televisive predefinite per l'Egitto.
+Ad esempio, se si passa 20, il codice chiamante ITU-T per l'Evadato selezionerebbe le frequenze televisive predefinite per l'Evadato.
 
-Per un elenco di codici di chiamata per i paesi, vedere la raccomandazione ITU-T corrente relativa ai codici paese assegnati.
+Per un elenco dei codici paese chiamante, fare riferimento alla raccomandazione ITU-T corrente dei codici paese assegnati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

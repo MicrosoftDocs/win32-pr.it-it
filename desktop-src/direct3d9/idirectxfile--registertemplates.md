@@ -1,7 +1,7 @@
 ---
-description: Registra i modelli personalizzati. Deprecato.
+description: Registra modelli personalizzati. Deprecato.
 ms.assetid: f9b24800-83a5-45bf-b19f-b247c88a2c2c
-title: 'Metodo IDirectXFile:: RegisterTemplates (DXFile. h)'
+title: Metodo IDirectXFile::RegisterTemplates (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 683a495398e7fe0718ee0642c7760b0a8590538c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 685e97ec28241348ff4a969c444b6da5638aeba01af8be35cc5490a0d2be0a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846961"
 ---
-# <a name="idirectxfileregistertemplates-method"></a>Metodo IDirectXFile:: RegisterTemplates
+# <a name="idirectxfileregistertemplates-method"></a>Metodo IDirectXFile::RegisterTemplates
 
-Registra i modelli personalizzati. Deprecato.
+Registra modelli personalizzati. Deprecato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT RegisterTemplates(
 
 <dl> <dt>
 
-*pvData* \[ in\]
+*pvData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntatore a un buffer costituito da un file DirectX in formato testo o binario che contiene modelli.
+Puntatore a un buffer costituito da un file DirectX in formato testo o binario contenente modelli.
 
 </dd> <dt>
 
-*cbSize* \[ in\]
+*cbSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Dimensioni del buffer a cui punta pvData in byte.
+Dimensioni del buffer a cui punta pvData, in byte.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Dimensioni del buffer a cui punta pvData in byte.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR BADVALUE \_ , DXFILEERR \_ PARSEERROR.
+Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: DXFILEERR \_ BADFILEFLOATSIZE, DXFILEERR \_ BADFILETYPE, DXFILEERR \_ BADFILEVERSION, DXFILEERR \_ BADVALUE, DXFILEERR \_ PARSEERROR.
 
 ## <a name="remarks"></a>Commenti
 
-Il seguente frammento di codice fornisce una chiamata di esempio a **RegisterTemplates** e il contenuto di esempio per il buffer a cui punta pvData.
+Il frammento di codice seguente fornisce una chiamata di esempio **a RegisterTemplates** E il contenuto di esempio per il buffer a cui punta pvData.
 
 
 ```
@@ -89,7 +89,7 @@ Il seguente frammento di codice fornisce una chiamata di esempio a **RegisterTem
 
 
 
-Tutti i modelli devono specificare un nome e un identificatore univoco universale (UUID).
+Tutti i modelli devono specificare un nome e un UUID (Universally Unique Identifier).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Tutti i modelli devono specificare un nome e un identificatore univoco universal
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

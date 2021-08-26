@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPSOURCE (MpClient. h)
-description: Categoria di origine possibile.
+title: Enumerazione MPSOURCE (MpClient.h)
+description: Possibile categoria di origine.
 ms.assetid: 1AD12D67-C74B-481A-AC9B-D119AABDB6E9
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPSOURCE
-- Funzionalità dell'ambiente Windows legacy del puntatore di enumerazione PMPSOURCE
+- Enumerazione MPSOURCE Funzionalità dell'Windows legacy
+- Puntatore di enumerazione PMPSOURCE Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e9255029512499a0e2948a44701ef4482aff4b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 59eb014ab78645d78cd2942c37477d9a19d2572826859be77c6f5ecddfcb1bda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961101"
 ---
 # <a name="mpsource-enumeration"></a>Enumerazione MPSOURCE
 
-Categoria di origine possibile.
+Possibile categoria di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,91 +53,91 @@ typedef enum tagMPSOURCE {
 
 <dl> <dt>
 
-<span id="MPSOURCE_UNKNOWN"></span><span id="mpsource_unknown"></span>**MPSOURCE \_ sconosciuto**
+<span id="MPSOURCE_UNKNOWN"></span><span id="mpsource_unknown"></span>**MPSOURCE \_ SCONOSCIUTO**
 </dt> <dd>
 
 Origine sconosciuta.
 
 </dd> <dt>
 
-<span id="MPSOURCE_USER"></span><span id="mpsource_user"></span>**\_utente MPSOURCE**
+<span id="MPSOURCE_USER"></span><span id="mpsource_user"></span>**UTENTE \_ MPSOURCE**
 </dt> <dd>
 
-Avviata dall'utente.
+Avviato dall'utente.
 
 </dd> <dt>
 
-<span id="MPSOURCE_SYSTEM"></span><span id="mpsource_system"></span>**\_sistema MPSOURCE**
+<span id="MPSOURCE_SYSTEM"></span><span id="mpsource_system"></span>**SISTEMA \_ MPSOURCE**
 </dt> <dd>
 
 avviato dal sistema.
 
 </dd> <dt>
 
-<span id="MPSOURCE_REALTIME"></span><span id="mpsource_realtime"></span>**MPSOURCE in \_ tempo reale**
+<span id="MPSOURCE_REALTIME"></span><span id="mpsource_realtime"></span>**TEMPO REALE \_ MPSOURCE**
 </dt> <dd>
 
 Componente in tempo reale avviato.
 
 </dd> <dt>
 
-<span id="MPSOURCE_IOAV"></span><span id="mpsource_ioav"></span>**\_IOAV MPSOURCE**
+<span id="MPSOURCE_IOAV"></span><span id="mpsource_ioav"></span>**MPSOURCE \_ IOAV**
 </dt> <dd>
 
-Vengono avviati i download di IE e gli allegati di Outlook Express.
+Download di IE e Outlook gli allegati Express avviati.
 
 </dd> <dt>
 
-<span id="MPSOURCE_NIS"></span><span id="mpsource_nis"></span>**\_NIS MPSOURCE**
+<span id="MPSOURCE_NIS"></span><span id="mpsource_nis"></span>**MPSOURCE \_ NIS**
 </dt> <dd>
 
 Sistema di ispezione di rete.
 
 </dd> <dt>
 
-<span id="MPSOURCE_BHO"></span><span id="mpsource_bho"></span>**\_bho MPSOURCE**
+<span id="MPSOURCE_BHO"></span><span id="mpsource_bho"></span>**MPSOURCE \_ BHO**
 </dt> <dd>
 
-BHO-script Web (deprecato).
+BHO - Script Web (deprecato).
 
 </dd> <dt>
 
-<span id="MPSOURCE_IEPROTECT"></span><span id="mpsource_ieprotect"></span>**\_IEPROTECT MPSOURCE**
+<span id="MPSOURCE_IEPROTECT"></span><span id="mpsource_ieprotect"></span>**MPSOURCE \_ IEPROTECT**
 </dt> <dd>
 
-IE-IExtensionValidation.
+IE - IExtensionValidation.
 
 </dd> <dt>
 
-<span id="MPSOURCE_ELAM"></span><span id="mpsource_elam"></span>**\_Elam MPSOURCE**
+<span id="MPSOURCE_ELAM"></span><span id="mpsource_elam"></span>**MPSOURCE \_ ELAM**
 </dt> <dd>
 
 ELAM
 
 </dd> <dt>
 
-<span id="MPSOURCE_LOCAL_ATTESTATION"></span><span id="mpsource_local_attestation"></span>**\_ \_ attestazione locale MPSOURCE**
+<span id="MPSOURCE_LOCAL_ATTESTATION"></span><span id="mpsource_local_attestation"></span>**ATTESTAZIONE \_ LOCALE \_ MPSOURCE**
 </dt> <dd>
 
 Attestazione locale.
 
 </dd> <dt>
 
-<span id="MPSOURCE_REMOTE_ATTESTATION"></span><span id="mpsource_remote_attestation"></span>**\_ \_ attestazione remota MPSOURCE**
+<span id="MPSOURCE_REMOTE_ATTESTATION"></span><span id="mpsource_remote_attestation"></span>**ATTESTAZIONE \_ REMOTA \_ MPSOURCE**
 </dt> <dd>
 
 Attestazione remota.
 
 </dd> <dt>
 
-<span id="MPSOURCE_AMSI"></span><span id="mpsource_amsi"></span>**\_AMSI MPSOURCE**
+<span id="MPSOURCE_AMSI"></span><span id="mpsource_amsi"></span>**MPSOURCE \_ AMSI**
 </dt> <dd>
 
 AMSI
 
 </dd> <dt>
 
-<span id="MP_SOURCE_MAXVALUE"></span><span id="mp_source_maxvalue"></span>**\_MaxValue origine \_ MP**
+<span id="MP_SOURCE_MAXVALUE"></span><span id="mp_source_maxvalue"></span>**MAXVALUE DI ORIGINE MP \_ \_**
 </dt> <dd>
 
 Valore massimo possibile.
@@ -150,9 +150,9 @@ Valore massimo possibile.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

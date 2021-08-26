@@ -1,10 +1,10 @@
 ---
-title: TLSLicenseEnumEnd (funzione)
-description: Continua da una precedente chiamata alla funzione TLSLicenseEnumBegin e termina l'enumerazione.
+title: Funzione TLSLicenseEnumEnd
+description: Continua da una chiamata precedente alla funzione TLSLicenseEnumBegin e termina l'enumerazione.
 ms.assetid: b9cba03c-0f5a-41e8-ae13-bcdd0ac6dd99
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto funzione TLSLicenseEnumEnd
+- Funzione TLSLicenseEnumEnd Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bbd494ec539ee78008fa3df274282da1e9db6c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c0518b9c27b01484b7fb92dd254ae6f1ccdf01d36ef602541209b9f38abd205
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869211"
 ---
-# <a name="tlslicenseenumend-function"></a>TLSLicenseEnumEnd (funzione)
+# <a name="tlslicenseenumend-function"></a>Funzione TLSLicenseEnumEnd
 
-Continua da una precedente chiamata alla funzione [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e termina l'enumerazione.
+Continua da una chiamata precedente alla [**funzione TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e termina l'enumerazione.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mstlsapi.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mstlsapi.dll.
 
  
 
@@ -47,39 +47,39 @@ DWORD WINAPI TLSLicenseEnumEnd(
 
 <dl> <dt>
 
-*hHandle* \[ in\]
+*hHandle* \[ Pollici\]
 </dt> <dd>
 
-Handle per un server licenze Desktop remoto. Specificare un handle aperto dalla funzione [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Handle a un Desktop remoto licenze. Specificare un handle aperto dalla funzione [**TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*pdwErrCode* \[ out\]
+*pdwErrCode* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve uno dei codici di errore seguenti alla restituzione.
+Puntatore a una variabile che riceve uno dei codici di errore seguenti al ritorno.
 
 <dt>
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ \_Operazione riuscita** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
 
-La chiamata è riuscita.
+La chiamata ha esito positivo.
 
 </dd> <dt>
 
 <span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>
 
-<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ \_ \_ Handle E non valido** (5005)
+<span id="LSERVER_E_INVALID_HANDLE"></span><span id="lserver_e_invalid_handle"></span>**LSERVER \_ E \_ HANDLE \_ NON VALIDO** (5005)
 
 
 </dt> <dd>
 
-Handle non valido.
+L'handle non è valido.
 
 </dd> </dl> </dd> </dl>
 
@@ -92,14 +92,14 @@ Questa funzione restituisce i valori restituiti possibili seguenti.
 **RPC \_ S \_ OK**
 </dt> <dd>
 
-La chiamata è riuscita. Controllare il valore del parametro *pdwErrCode* per ottenere il codice restituito per la chiamata.
+La chiamata ha avuto esito positivo. Controllare il valore del *parametro pdwErrCode* per ottenere il codice restituito per la chiamata.
 
 </dd> <dt>
 
-**\_ \_ arg non valido \_**
+**RPC \_ S NON VALIDA \_ \_ ARG**
 </dt> <dd>
 
-Argomento non valido.
+L'argomento non è valido.
 
 </dd> </dl>
 

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_SETDISPINFO (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che deve aggiornare le informazioni gestite per un elemento. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_SETDISPINFO codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che deve aggiornare le informazioni mantenute per un elemento. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 1ea51d50-4a57-4662-972e-89e916fa9b16
 keywords:
-- Controlli di Windows per il codice di notifica LVN_SETDISPINFO
+- LVN_SETDISPINFO codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 659623d892f0f5a556f4890703d4e0dd725536b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f4827d37a115f2bd1bb523f78bdb5975de4314056a174be4bfa886e1a076497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915061"
 ---
-# <a name="lvn_setdispinfo-notification-code"></a>\_Codice di notifica SETDISPINFO di LVN
+# <a name="lvn_setdispinfo-notification-code"></a>Codice di notifica \_ LVN SETDISPINFO
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che deve aggiornare le informazioni gestite per un elemento. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che deve aggiornare le informazioni mantenute per un elemento. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ LVN_SETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) che specifica le informazioni per l'elemento modificato. Il membro dell' **elemento** di questa struttura è una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) che contiene informazioni sull'elemento che è stato modificato. Il membro **pszText** dell' **elemento** contiene un valore valido, indipendentemente dal fatto che il \_ flag di testo LVIF sia impostato nel membro **mask** della struttura.
+Puntatore a [**una struttura NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) che specifica le informazioni per l'elemento modificato. Il **membro** elemento di questa struttura è una struttura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) che contiene informazioni sull'elemento modificato. Il **membro pszText** dell'elemento contiene un valore valido, indipendentemente dal fatto che il flag LVIF TEXT sia impostato nel membro  \_ **mask** di questa struttura.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il ricevitore di notifiche esegue il cast di *lParam* per recuperare la struttura [**NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) . Il parametro *wParam* contiene il codice del messaggio.
+Il ricevitore della notifica esegue il cast *di lParam* per recuperare la [**struttura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) Il *parametro wParam* contiene il codice del messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Il ricevitore di notifiche esegue il cast di *lParam* per recuperare la struttur
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **LVN \_ SETDISPINFOW** (Unicode) e **LVN \_ SETDISPINFOA** (ANSI)<br/>           |
 
 
@@ -72,7 +72,7 @@ Il ricevitore di notifiche esegue il cast di *lParam* per recuperare la struttur
 
 <dl> <dt>
 
-[\_GETDISPINFO LVN](lvn-getdispinfo.md)
+[LVN \_ GETDISPINFO](lvn-getdispinfo.md)
 </dt> </dl>
 
  

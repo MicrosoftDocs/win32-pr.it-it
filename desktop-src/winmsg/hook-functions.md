@@ -4,12 +4,12 @@ ms.assetid: a1ff74b4-c015-4a82-a1fe-f4af1eaee705
 title: Funzioni hook
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9e6e8dd586a04a00bbf6c36311c8a335f4e36c4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bd1fa1de91522f5b547b8dddca2de2dd4041a717e7da7d7523b4d5a2bddc60c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932241"
 ---
 # <a name="hook-functions"></a>Funzioni hook
 

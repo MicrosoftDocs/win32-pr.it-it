@@ -1,34 +1,34 @@
 ---
 description: L'API Print Ticket consente alle applicazioni di gestire e convertire i ticket di stampa.
 ms.assetid: 4f854c1a-f2e1-48c4-9cc1-8a0fcf1bebed
-title: API Print Ticket
+title: Print Ticket API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e19cfd8d624a1390b8afacd625e92fcee2704dd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: ac91cc976addba630bae3f250d244442ba1dd3b61f741575fe21cb250bab4a2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104058478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947796"
 ---
-# <a name="print-ticket-api"></a>API Print Ticket
+# <a name="print-ticket-api"></a>Print Ticket API
 
 L'API Print Ticket consente alle applicazioni di gestire e convertire i ticket di stampa.
 
-Un Print Ticket è un componente del documento XPS che contiene le impostazioni della stampante preferite per una pagina in un documento o per un intero documento o per un processo di stampa che contiene uno o più documenti. Si noti che i ticket di stampa sono disponibili solo nei documenti XPS.
+Un ticket di stampa è un componente di documento XPS che contiene le impostazioni della stampante preferite per una pagina di un documento o per un intero documento o per un processo di stampa che contiene uno o più documenti. Si noti che i ticket di stampa si trovano solo nei documenti XPS.
 
-Prima che la stampante possa utilizzare il ticket di stampa, il ticket di stampa deve essere convalidato in base alle caratteristiche della stampante, definite nelle funzionalità di stampa della stampante. L'applicazione esegue tale convalida chiamando l'API del ticket di stampa.
+Prima che la stampante possa usare il ticket di stampa, il ticket di stampa deve essere convalidato in base alle caratteristiche della stampante, definite nelle funzionalità di stampa della stampante. L'applicazione esegue tale convalida chiamando l'API Print Ticket.
 
-PrintTicket e PrintCapabilities vengono descritti utilizzando gli elementi dello schema di stampa, definito dalla [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+PrintTicket e PrintCapabilities vengono descritti usando gli elementi dello schema di stampa, definiti dalla [specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Questo argomento contiene informazioni sugli elementi API seguenti:
 
--   [Funzioni API del ticket di stampa](print-ticket-api-functions.md)
--   [Enumerazioni API del ticket di stampa](print-ticket-api-enumerations.md)
+-   [Funzioni dell'API Print Ticket](print-ticket-api-functions.md)
+-   [Enumerazioni dell'API Print Ticket](print-ticket-api-enumerations.md)
 
-Il diagramma seguente mostra la relazione tra l'API del ticket di stampa e le altre API di stampa che un'applicazione Windows nativa può usare.
+Il diagramma seguente illustra la relazione dell'API Print Ticket con le altre API di stampa che un'Windows nativa può usare.
 
-![diagramma che mostra la relazione tra l'API del ticket di stampa e le altre API di stampa che possono essere utilizzate da un'applicazione Windows nativa](images/print-apis-pt.png)
+![diagramma che illustra la relazione dell'API print ticket con le altre API di stampa che un'applicazione windows nativa può usare](images/print-apis-pt.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -37,7 +37,7 @@ Il diagramma seguente mostra la relazione tra l'API del ticket di stampa e le al
 [API di stampa XPS](xps-printing.md)
 </dt> <dt>
 
-[API spooler di stampa](print-spooler-api.md)
+[API Spooler di stampa](print-spooler-api.md)
 </dt> <dt>
 
 [API di stampa GDI](gdi-printing.md)

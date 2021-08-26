@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMSecurity GetRevocationDataVersion (wmdrmsdk. h)
-description: Il metodo GetRevocationDataVersion Recupera il numero di versione di un elenco di revoche di certificati nell'archivio locale.
+title: Metodo IWMDRMSecurity GetRevocationDataVersion (Wmdrmsdk.h)
+description: Il metodo GetRevocationDataVersion recupera il numero di versione di un elenco di revoche di certificati nell'archivio locale.
 ms.assetid: 2fa13b38-02c2-4c81-938b-409cadca00fb
 keywords:
-- Metodo GetRevocationDataVersion Windows Media Format
-- Metodo GetRevocationDataVersion Windows Media Format, interfaccia IWMDRMSecurity
-- Interfaccia IWMDRMSecurity-formato Windows Media, metodo GetRevocationDataVersion
+- Metodo GetRevocationDataVersion per Windows Media Format
+- Metodo GetRevocationDataVersion in formato Windows Media, interfaccia IWMDRMSecurity
+- Interfaccia IWMDRMSecurity windows Media Format, metodo GetRevocationDataVersion
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 705f02622b7298134328b513aa038804995eb1c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d139b2daf3f3bc6ad78beaa50e19c0141aecd5e8bedac2dd20582fb1536d9b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930781"
 ---
-# <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>Metodo IWMDRMSecurity:: GetRevocationDataVersion
+# <a name="iwmdrmsecuritygetrevocationdataversion-method"></a>Metodo IWMDRMSecurity::GetRevocationDataVersion
 
-Il metodo **GetRevocationDataVersion** Recupera il numero di versione di un elenco di revoche di certificati nell'archivio locale.
+Il **metodo GetRevocationDataVersion** recupera il numero di versione di un elenco di revoche di certificati nell'archivio locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ HRESULT GetRevocationDataVersion(
 
 <dl> <dt>
 
-*\_ guidRevocationType f* \[\]
+*f \_ guidRevocationType* \[ in\]
 </dt> <dd>
 
 GUID che specifica il tipo di elenco di revoche. Impostare su una delle costanti nella tabella seguente.
@@ -53,9 +53,9 @@ GUID che specifica il tipo di elenco di revoche. Impostare su una delle costanti
 
 | Costante GUID                 | Descrizione                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------|
-| \_app WMDRM REVOCATIONTYPE \_    | Specifica l'elenco di revoche di certificati dell'applicazione.                           |
-| \_dispositivo REVOCATIONTYPE \_ WMDRM | Specifica l'elenco di revoche di certificati del dispositivo.                                |
-| WMDRM \_ REVOCATIONTYPE \_ Cardea | Specifica Windows Media DRM per i dispositivi di rete elenco di revoche di certificati. |
+| WMDRM \_ REVOCATIONTYPE \_ APP    | Specifica l'elenco di revoche di certificati dell'applicazione.                           |
+| DISPOSITIVO WMDRM \_ REVOCATIONTYPE \_ | Specifica l'elenco di revoche di certificati del dispositivo.                                |
+| WMDRM \_ REVOCATIONTYPE \_ CARDEA | Specifica il nome Windows DRM multimediale per l'elenco di revoche di certificati dei dispositivi di rete. |
 
 
 
@@ -63,7 +63,7 @@ GUID che specifica il tipo di elenco di revoche. Impostare su una delle costanti
 
 </dd> <dt>
 
-*f \_ pdwCRLVersion* \[\]
+*f \_ pdwCRLVersion* \[ out\]
 </dt> <dd>
 
 Variabile che riceve il numero di versione.
@@ -72,13 +72,13 @@ Variabile che riceve il numero di versione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -90,8 +90,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

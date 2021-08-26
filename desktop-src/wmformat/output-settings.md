@@ -5,54 +5,54 @@ ms.assetid: effe6c07-e6df-45b0-b865-2a025c466d6f
 keywords:
 - Windows Media Format SDK, costanti globali
 - Advanced Systems Format (ASF), costanti globali
-- ASF (formato avanzato dei sistemi), costanti globali
+- ASF (Advanced Systems Format), costanti globali
 - costanti globali, elenco di
-- Windows Media Format SDK, costanti
+- Windows Media Format SDK,costanti
 - Advanced Systems Format (ASF), costanti
-- ASF (formato avanzato dei sistemi), costanti
+- ASF (Advanced Systems Format), costanti
 - costanti, elenco di
 - Windows Media Format SDK, impostazioni di output
+- Advanced Systems Format (ASF), impostazioni di output
 - ASF (Advanced Systems Format), impostazioni di output
-- ASF (formato avanzato dei sistemi), impostazioni di output
 - impostazioni di output
-- lettori sincroni, impostazioni di output
+- lettori sincroni,impostazioni di output
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f5a02d508f76057dd72e34558a7ca8d29de4847
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 966cd350d379170f9f19c44967ef932bf41a15cb1910b865432ce499b006161e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104117343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929941"
 ---
 # <a name="output-settings"></a>Impostazioni di output
 
-Le costanti globali seguenti vengono utilizzate per identificare le impostazioni di output per il Reader e l'oggetto Reader sincrono.
+Le costanti globali seguenti vengono usate per identificare le impostazioni di output per il lettore e l'oggetto lettore sincrono.
 
 
 
-| Costante globale                | tipo di dati \_ attr WMT \_  | Descrizione di *pValue*                                                                                                                                                                                                                                                                                                    |
+| Costante globale                | TIPO DI \_ DATI WMT ATTR \_  | Descrizione di *pValue*                                                                                                                                                                                                                                                                                                    |
 |--------------------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| g \_ wszAllowInterlacedOutput    | **\_tipo WMT \_ bool**  | Se true, il lettore fornirà frame interlacciati, se supportati dall'output.                                                                                                                                                                                                                                            |
-| g \_ wszDedicatedDeliveryThread  | **\_tipo WMT \_ bool**  | Se true, l'output disporrà di un thread dedicato creato per il recapito degli esempi. Non supportato nel lettore sincrono.                                                                                                                                                                                            |
-| g \_ wszDeliverOnReceive         | **\_tipo WMT \_ bool**  | Se true, gli esempi per questo output verranno recapitati non appena sono disponibili dal reader. Ciò può comportare il recapito degli esempi di questo output in ordine non ordinato e prima dei campioni corrispondenti da altri output.                                                                                            |
-| g \_ wszDynamicRangeControl      | **WMT \_ tipo \_ DWORD** | Specifica il livello di controllo intervallo dinamico da usare per l'output. Impostare su un valore compreso tra 0 e 2, dove 0 indica nessun controllo intervallo dinamico (impostazione predefinita) e 2 è il livello massimo di controllo intervallo dinamico (intervallo dinamico più piccolo).                                                                                |
-| g \_ wszEarlyDataDelivery        | **WMT \_ tipo \_ DWORD** | Tempo, in millisecondi, che specifica la quantità di tempo precedente per il recapito degli esempi. Se maggiore di zero, gli esempi di questo output verranno recuperati e decodificati in modo che gli esempi vengano recapitati prima degli esempi per altri output. In genere, il lettore fornisce esempi in ordine di tempo di presentazione.         |
-| g \_ wszEnableDiscreteOutput     | **\_tipo WMT \_ bool**  | Se true, il lettore Abilita l'output audio multicanale ad alta definizione. Questa impostazione è valida solo per i flussi audio codificati con il codec Windows Media Audio 9 Professional. Se questa impostazione è impostata su true, è necessario specificare anche la configurazione del relatore del computer client impostando g \_ wszSpeakerConfig. |
-| g \_ wszEnableFrameInterpolation | **\_tipo WMT \_ bool**  | Se true, il codec fornirà il flusso video a una [*frequenza di frame*](wmformat-glossary.md)superiore, interpolando i frame algoritmicamente.                                                                                                                                                          |
-| g \_ wszJustInTimeDecode         | **\_tipo WMT \_ bool**  | Se true, i dati devono essere decodificati il più tardi possibile. Non supportato nel lettore sincrono.                                                                                                                                                                                                                            |
-| g \_ wszNeedsPreviousSample      | **\_tipo WMT \_ bool**  | Se true, per l'esempio è necessario decomprimere l'esempio precedente. Questa impostazione si applica solo ai frame Delta nel video compresso ed è di sola lettura.                                                                                                                                                                       |
-| g \_ wszScrambledAudio           | **\_tipo WMT \_ bool**  | Se true, questo output utilizzerà lo schema di occultamento degli errori audio codificati. Questa impostazione è valida solo per gli output audio.                                                                                                                                                                                                |
-| g \_ wszSingleOutputBuffer       | **\_tipo WMT \_ bool**  | Se è true, è necessario usare un singolo buffer di output, ad esempio un buffer video di DirectDraw®. Non supportato nel lettore sincrono.                                                                                                                                                                                           |
-| g \_ wszSoftwareScaling          | **\_tipo WMT \_ bool**  | Se false, il video non viene ridimensionato. (Non è necessario modificare la risoluzione).                                                                                                                                                                                                                                                |
-| g \_ wszSpeakerConfig            | **WMT \_ tipo \_ DWORD** | Se la decodifica audio multicanale è abilitata impostando g \_ wszEnableDiscreteOutput, questa impostazione specifica la configurazione dell'altoparlante del computer client. Impostare su una delle costanti di configurazione dell'altoparlante DirectSound.                                                                                                   |
-| g \_ wszStreamLanguage           | **WMT \_ digitare \_ Word**  | Indice nell'elenco di lingue della lingua da recapitare per questo output. Usato per gli output che rappresentano i flussi che si escludono a vicenda per lingua.                                                                                                                                                                      |
-| g \_ wszVideoSampleDurations     | **\_tipo WMT \_ bool**  | Se true, il lettore fornirà durate di campionamento accurate.                                                                                                                                                                                                                                                                |
-| g \_ wszEnableWMAProSPDIFOutput  | **\_tipo WMT \_ bool**  | Se true, il lettore includerà il formato di interfaccia digitale (S/PDIF) Sony/Phillips nei tipi di output enumerati.                                                                                                                                                                                                       |
+| g \_ wszAllowInterlacedOutput    | **TIPO WMT \_ \_ BOOL**  | Se True, il lettore consegnerà fotogrammi interlacciati, se supportato dall'output.                                                                                                                                                                                                                                            |
+| g \_ wszDedicatedDeliveryThread  | **TIPO WMT \_ \_ BOOL**  | Se True, questo output avrà un thread dedicato creato per il recapito dei relativi esempi. Non supportato nel lettore sincrono.                                                                                                                                                                                            |
+| g \_ wszDeliverOnReceive         | **TIPO WMT \_ \_ BOOL**  | Se True, gli esempi per questo output verranno recapitati non appena saranno disponibili dal lettore. In questo modo, gli esempi di questo output vengono recapitati in ordine e prima degli esempi corrispondenti di altri output.                                                                                            |
+| g \_ wszDynamicRangeControl      | **DWORD \_ DI TIPO \_ WMT** | Specifica il livello di controllo dell'intervallo dinamico da utilizzare per l'output. Impostare su un valore compreso tra 0 e 2, dove 0 indica nessun controllo di intervallo dinamico (impostazione predefinita) e 2 è il livello massimo di controllo dell'intervallo dinamico (l'intervallo dinamico più piccolo).                                                                                |
+| g \_ wszEarlyDataDelivery        | **DWORD \_ DI TIPO \_ WMT** | Tempo, espresso in millisecondi, che specifica quanto prima per distribuire gli esempi. Se è maggiore di zero, gli esempi di questo output verranno recuperati e decodificati in modo che gli esempi siano forniti prima degli esempi per altri output. In genere il lettore fornisce esempi in ordine di tempo di presentazione.         |
+| g \_ wszEnableDiscreteOutput     | **TIPO WMT \_ \_ BOOL**  | Se True, il lettore abiliterà l'output audio multicanale ad alta definizione. Questa impostazione è valida solo per i flussi audio codificati con il codec Windows Media Audio 9 Professional. Se questa impostazione è impostata su true, è necessario specificare anche la configurazione del parlante del computer client impostando g \_ wszSpeakerConfig. |
+| g \_ wszEnableFrameInterpolation | **TIPO WMT \_ \_ BOOL**  | Se True, il codec consegnerà il flusso video a una [*frequenza di fotogrammi*](wmformat-glossary.md)superiore, interpolando i fotogrammi in modo algoritmico.                                                                                                                                                          |
+| g \_ wszJustInTimeDecode         | **TIPO WMT \_ \_ BOOL**  | Se True, i dati devono essere decodificati il più tardi possibile. Non supportato nel lettore sincrono.                                                                                                                                                                                                                            |
+| g \_ wszNeedsPreviousSample      | **TIPO WMT \_ \_ BOOL**  | Se true, l'esempio richiede che l'esempio precedente sia decompresso. Questa impostazione si applica solo ai fotogrammi differenziali nel video compresso ed è di sola lettura.                                                                                                                                                                       |
+| g \_ wszScrambledAudio           | **TIPO WMT \_ \_ BOOL**  | Se True, questo output userà lo schema di mascheramento degli errori audio non codificati. Si tratta di un'impostazione valida solo per gli output audio.                                                                                                                                                                                                |
+| g \_ wszSingleOutputBuffer       | **TIPO WMT \_ \_ BOOL**  | Se True, è necessario usare un singolo buffer di output, ad esempio un buffer video DirectDraw® video. Non supportato nel lettore sincrono.                                                                                                                                                                                           |
+| g \_ wszSoftwareScaling          | **TIPO WMT \_ \_ BOOL**  | Se False, il video non viene ridimensionato. Non deve essere apportata alcuna modifica alla risoluzione.                                                                                                                                                                                                                                                |
+| g \_ wszSpeakerConfig            | **DWORD \_ DI TIPO \_ WMT** | Se la decodifica audio multicanale è abilitata impostando g wszEnableDiscreteOutput, questa impostazione specifica la configurazione del parlante \_ del computer client. Impostare su una delle costanti di configurazione della voce DirectSound.                                                                                                   |
+| g \_ wszStreamLanguage           | **WMT \_ TYPE \_ WORD**  | Indice nell'elenco di lingue della lingua da recapitare per questo output. Usato per gli output che rappresentano flussi che si escludono a vicenda in base al linguaggio.                                                                                                                                                                      |
+| g \_ wszVideoSampleDurations     | **TIPO WMT \_ \_ BOOL**  | Se True, il lettore consegnerà durate di campionamento accurate.                                                                                                                                                                                                                                                                |
+| g \_ wszEnableWMAProSPDIFOutput  | **TIPO WMT \_ \_ BOOL**  | Se True, il lettore includerà il formato S/PDIF (Digital Interface Format) di Sony/Philips nei tipi di output enumerati.                                                                                                                                                                                                       |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -70,9 +70,9 @@ Le costanti globali seguenti vengono utilizzate per identificare le impostazioni
 [**IWMSyncReader::SetOutputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setoutputsetting)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

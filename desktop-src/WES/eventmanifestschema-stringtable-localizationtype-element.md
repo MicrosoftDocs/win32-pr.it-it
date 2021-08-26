@@ -1,9 +1,9 @@
 ---
-title: Elemento un'StringTable (LocalizationType)
-description: Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto. | Elemento un'StringTable (LocalizationType)
+title: Elemento stringTable (LocalizationType)
+description: Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto. | Elemento stringTable (LocalizationType)
 ms.assetid: 00144c76-c8de-448a-9884-2c95c4b73f53
 keywords:
-- EventLog elemento un'STRINGTABLE
+- Elemento stringTable EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1cbaca6e0d496e248a5c870ef7e51c9553a58f56
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 66dd0bedca88909efed3f2a6b1968a34df774ac78bc4929894a3b8708d80919d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958241"
 ---
-# <a name="stringtable-localizationtype-element"></a>Elemento un'StringTable (LocalizationType)
+# <a name="stringtable-localizationtype-element"></a>Elemento stringTable (LocalizationType)
 
 Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento nel manifesto.
 
@@ -30,7 +30,7 @@ Definisce un elenco di stringhe localizzate a cui è possibile fare riferimento 
  />
 ```
 
-L'elemento **un'STRINGTABLE** è definito dal tipo complesso [**LocalizationType**](eventmanifestschema-localizationtype-complextype.md) .
+**L'elemento stringTable** è definito dal [**tipo complesso LocalizationType.**](eventmanifestschema-localizationtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **un'STRINGTABLE** è definito dal tipo complesso [**LocalizationType
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **un'STRINGTABLE** è definito dal tipo complesso [**LocalizationType
 **Elemento padre**
 </dt> <dt>
 
-[**localizzazione (instrumentationManifest)**](eventmanifestschema-localization-instrumentationmanifest-element.md)
+[**localizzazione (strumentazioneManifest)**](eventmanifestschema-localization-instrumentationmanifest-element.md)
 </dt> </dl>
 
  

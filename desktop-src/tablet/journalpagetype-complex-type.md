@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che contiene una singola pagina in una nota del journal.
+description: Definisce il tipo che contiene una singola pagina in una nota journal.
 ms.assetid: 4de57b5f-51a5-4250-85b3-16f7ca435c62
 title: Tipo complesso JournalPageType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c26eb6ef60874b8787cc30e21ef333b6b124e90e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eba46e18e36a7909541bb18106d6582e866b3d319e2843adce7758c9ad766546
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883421"
 ---
 # <a name="journalpagetype-complex-type"></a>Tipo complesso JournalPageType
 
-Definisce il tipo che contiene una singola pagina in una nota del journal.
+Definisce il tipo che contiene una singola pagina in una nota journal.
 
 ``` syntax
 <xs:complexType name="JournalPageType" />
@@ -33,7 +33,7 @@ Definisce il tipo che contiene una singola pagina in una nota del journal.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

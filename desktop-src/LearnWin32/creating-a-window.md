@@ -4,12 +4,12 @@ description: Creazione di una finestra
 ms.assetid: e036519f-26b5-436c-b909-bb280d758e81
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eea5ec39187b389405d3c6d8eca475944278a3d5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 253eb68747ce7511c11aeeba27343d7dd56c7d0a6f78f316d72aab83d11ddd92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870031"
 ---
 # <a name="creating-a-window"></a>Creazione di una finestra
 
@@ -36,11 +36,11 @@ wc.lpszClassName = CLASS_NAME;
 - **hInstance è** l'handle per l'istanza dell'applicazione. Ottenere questo valore dal *parametro hInstance* di **wWinMain**.
 - **lpszClassName** è una stringa che identifica la classe della finestra.
 
-I nomi delle classi sono locali per il processo corrente, quindi il nome deve essere univoco solo all'interno del processo. Tuttavia, anche i controlli Windows standard hanno classi . Se si usa uno di questi controlli, è necessario selezionare i nomi delle classi che non sono in conflitto con i nomi delle classi del controllo. Ad esempio, la classe della finestra per il controllo pulsante è denominata "Button".
+I nomi delle classi sono locali per il processo corrente, quindi il nome deve essere univoco solo all'interno del processo. Tuttavia, anche i controlli Windows standard dispongono di classi. Se si usa uno di questi controlli, è necessario selezionare i nomi delle classi che non sono in conflitto con i nomi delle classi dei controlli. Ad esempio, la classe finestra per il controllo pulsante è denominata "Button".
 
-La [**struttura WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) ha altri membri non illustrati qui. È possibile impostarli su zero, come illustrato in questo esempio, o compilarli. La documentazione MSDN descrive la struttura in dettaglio.
+La [**struttura WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) include altri membri non visualizzati qui. È possibile impostarli su zero, come illustrato in questo esempio, o compilarli. La documentazione MSDN descrive la struttura in dettaglio.
 
-Passare quindi l'indirizzo della [**struttura WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) alla [**funzione RegisterClass.**](/windows/desktop/api/winuser/nf-winuser-registerclassa) Questa funzione registra la classe della finestra con il sistema operativo.
+Passare quindi l'indirizzo della [**struttura WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) alla [**funzione RegisterClass.**](/windows/desktop/api/winuser/nf-winuser-registerclassa) Questa funzione registra la classe window con il sistema operativo.
 
 ```C++
 RegisterClass(&wc);
@@ -72,25 +72,25 @@ if (hwnd == NULL)
 }
 ```
 
-È possibile leggere le descrizioni dettagliate dei parametri in MSDN, ma di seguito è disponibile un breve riepilogo:
+È possibile leggere descrizioni dettagliate dei parametri in MSDN, ma di seguito è disponibile un riepilogo rapido:
 
 - Il primo parametro consente di specificare alcuni comportamenti facoltativi per la finestra, ad esempio le finestre trasparenti. Impostare questo parametro su zero per i comportamenti predefiniti.
 - `CLASS_NAME` è il nome della classe della finestra. Definisce il tipo di finestra che si sta creando.
 - Il testo della finestra viene usato in modi diversi da tipi diversi di finestre. Se la finestra ha una barra del titolo, il testo viene visualizzato nella barra del titolo.
-- Lo stile della finestra è un set di flag che definiscono parte dell'aspetto di una finestra. La costante **WS \_ OVERLAPPEDWINDOW è** in realtà di diversi flag combinati con or bit per **bit.** Insieme, questi flag forniscono alla finestra una barra del titolo, un bordo, un menu di sistema e **i pulsanti Riduci** a icona e **Ingrandisci.** Questo set di flag è lo stile più comune per una finestra dell'applicazione di primo livello.
-- Per posizione e dimensioni, la costante **CW \_ USEDEFAULT indica** l'uso dei valori predefiniti.
-- Il parametro successivo imposta una finestra padre o una finestra proprietaria per la nuova finestra. Impostare l'elemento padre se si sta creando una finestra figlio. Per una finestra di primo livello, impostare su **NULL.**
+- Lo stile della finestra è un set di flag che definiscono l'aspetto di una finestra. La costante **WS \_ OVERLAPPEDWINDOW** è in realtà più flag combinati con or bit per **bit.** Insieme, questi flag assegnano alla finestra una barra del titolo, un bordo, un menu di sistema e **i pulsanti Riduci** a icona e **Ingrandisci.** Questo set di flag è lo stile più comune per una finestra dell'applicazione di primo livello.
+- Per posizione e dimensioni, la costante **CW \_ USEDEFAULT** indica l'uso dei valori predefiniti.
+- Il parametro successivo imposta una finestra padre o una finestra proprietaria per la nuova finestra. Impostare l'elemento padre se si crea una finestra figlio. Per una finestra di primo livello, impostare questa proprietà su **NULL.**
 - Per una finestra dell'applicazione, il parametro successivo definisce il menu per la finestra. In questo esempio non viene utilizzato un menu, quindi il valore è **NULL.**
-- *hInstance è* l'handle di istanza, descritto in precedenza. Vedere [WinMain: punto di ingresso dell'applicazione.](winmain--the-application-entry-point.md)
-- L'ultimo parametro è un puntatore a dati arbitrari di tipo **void \***. È possibile usare questo valore per passare una struttura di dati alla routine della finestra. Verrà illustrato un modo possibile per usare questo parametro nella sezione Gestione [dello stato dell'applicazione.](managing-application-state-.md)
+- *hInstance è* l'handle dell'istanza, descritto in precedenza. Vedere [WinMain: Punto di ingresso dell'applicazione.](winmain--the-application-entry-point.md)
+- L'ultimo parametro è un puntatore a dati arbitrari di tipo **void \***. È possibile usare questo valore per passare una struttura di dati alla routine della finestra. Verrà illustrato un modo possibile per usare questo parametro nella sezione [Gestione dello stato dell'applicazione](managing-application-state-.md).
 
-[**CreateWindowEx restituisce**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) un handle per la nuova finestra oppure zero se la funzione non riesce. Per visualizzare la finestra, ovvero renderla visibile, passare l'handle della finestra alla [**funzione ShowWindow:**](/windows/desktop/api/winuser/nf-winuser-showwindow)
+[**CreateWindowEx restituisce**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) un handle per la nuova finestra oppure zero se la funzione ha esito negativo. Per visualizzare la finestra, ovvero renderla visibile, passare l'handle della finestra alla [**funzione ShowWindow:**](/windows/desktop/api/winuser/nf-winuser-showwindow)
 
 ```C++
 ShowWindow(hwnd, nCmdShow);
 ```
 
-Il *parametro hwnd* è l'handle di finestra restituito [**da CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Il *parametro nCmdShow* può essere usato per ridurre a icona o ingrandire una finestra. Il sistema operativo passa questo valore al programma tramite la **funzione wWinMain.**
+Il *parametro hwnd* è l'handle di finestra restituito [**da CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Il *parametro nCmdShow* può essere usato per ridurre a icona o ingrandire una finestra. Il sistema operativo passa questo valore al programma tramite **la funzione wWinMain.**
 
 Ecco il codice completo per creare la finestra. Tenere presente `WindowProc` che è ancora solo una dichiarazione con inoltro di una funzione.
 

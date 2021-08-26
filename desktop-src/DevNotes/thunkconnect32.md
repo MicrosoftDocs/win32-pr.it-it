@@ -1,7 +1,7 @@
 ---
-description: La funzione ThunkConnect32 viene usata dai driver di dispositivo a 16 bit (per MS-DOS) che effettuano chiamate nel kernel a 32 bit.
+description: La funzione ThunkConnect32 viene usata dai driver di dispositivo a 16 bit (per MS-DOS) che chiamano nel kernel a 32 bit.
 ms.assetid: 3376ca67-04ea-4765-a2f4-15a84d5c84d4
-title: ThunkConnect32 (funzione)
+title: Funzione ThunkConnect32
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Kernel32.dll
-ms.openlocfilehash: 7f22d7ceb59732e986c23c873133b11f358364cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f754d4c0e88ee860d112a6fb99d15c2690af0014951e77425d425b65ad16e39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929111"
 ---
-# <a name="thunkconnect32-function"></a>ThunkConnect32 (funzione)
+# <a name="thunkconnect32-function"></a>Funzione ThunkConnect32
 
-\[Questa funzione è supportata per compatibilità con le versioni precedenti, ma non è presente nelle versioni correnti di Windows. I nuovi driver di dispositivo dovrebbero essere 32 o 64 bit e non richiedono questa funzione.\]
+\[Questa funzione è supportata per la compatibilità con le versioni precedenti, ma non è presente nelle versioni correnti di Windows. I nuovi driver di dispositivo devono essere a 32 o 64 bit e non necessitano di questa funzione.\]
 
-La funzione **ThunkConnect32** viene usata dai driver di dispositivo a 16 bit (per MS-DOS) che effettuano chiamate nel kernel a 32 bit.
+La **funzione ThunkConnect32** viene usata dai driver di dispositivo a 16 bit (per MS-DOS) che chiamano nel kernel a 32 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -90,7 +90,7 @@ Ignorato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce sempre **false**.
+Restituisce sempre **FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 

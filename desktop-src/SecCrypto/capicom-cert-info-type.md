@@ -1,7 +1,7 @@
 ---
-description: Definisce quali informazioni devono essere sottoposte a query da un certificato.
+description: Definisce le informazioni su cui eseguire query da un certificato.
 ms.assetid: b603c06b-e6d4-4d5d-92b2-3b4f5b93478a
-title: Enumerazione CAPICOM_CERT_INFO_TYPE (CAPICOM. h)
+title: CAPICOM_CERT_INFO_TYPE di controllo (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 8e38bb8940645bbefecb3822bce8de8c2e0eb902
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 480238556fce0470c51f00c394dd8566160686561342ec91da2e136c44a43cfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879421"
 ---
-# <a name="capicom_cert_info_type-enumeration"></a>\_Enumerazione del tipo di informazioni del certificato CApicol \_ \_
+# <a name="capicom_cert_info_type-enumeration"></a>Enumerazione CAPICOM \_ CERT \_ INFO \_ TYPE
 
-Il tipo di enumerazione **CApicol \_ CERT \_ info \_ Type** definisce quali informazioni devono essere sottoposte a query da un certificato.
+Il **tipo di enumerazione CAPICOM \_ CERT INFO \_ \_ TYPE** definisce le informazioni su cui eseguire query da un certificato.
 
 ## <a name="members"></a>Membri
 
@@ -30,20 +30,20 @@ Il tipo di enumerazione **CApicol \_ CERT \_ info \_ Type** definisce quali info
 
 | Membro                                         | Descrizione                                                                                  | Valore |
 |------------------------------------------------|----------------------------------------------------------------------------------------------|-------|
-| **\_ \_ \_ \_ nome semplice soggetto informazioni sul certificato capicot \_** | Restituisce il nome visualizzato dell'oggetto del certificato.<br/>                              | 0     |
-| **\_ \_ \_ nome semplice dell'emittente informazioni \_ sul certificato capicot \_**  | Restituisce il nome visualizzato dell'emittente del certificato.<br/>                        | 1     |
-| **\_ \_ \_ nome di \_ posta elettronica dell'oggetto \_ del certificato di capicol**  | Restituisce l'indirizzo di posta elettronica del soggetto del certificato.<br/>                             | 2     |
-| **\_ \_ \_ nome di \_ posta elettronica dell'autorità emittente informazioni sul certificato CAPICOM \_**   | Restituisce l'indirizzo di posta elettronica dell'emittente del certificato.<br/>                       | 3     |
-| **nome \_ \_ \_ UPN oggetto informazioni del certificato \_ CAPICOM**          | Restituisce l'UPN dell'oggetto del certificato. Introdotta in capicol 2,0.<br/>            | 4     |
-| **nome UPN dell' \_ \_ \_ autorità emittente informazioni sul certificato capicot \_**           | Restituisce l'UPN dell'emittente del certificato. Introdotta in capicol 2,0.<br/>      | 5     |
-| **\_ \_ \_ nome DNS dell'oggetto informazioni \_ sul certificato capicol \_**    | Restituisce il nome DNS del soggetto del certificato. Introdotta in capicol 2,0.<br/>       | 6     |
-| **\_ \_ \_ nome DNS dell'autorità emittente informazioni sul \_ certificato \_ CAPICOM**     | Restituisce il nome DNS dell'emittente del certificato. Introdotta in capicol 2,0.<br/> | 7     |
+| **CAPICOM \_ CERT \_ INFO \_ SUBJECT \_ SIMPLE \_ NAME** | Restituisce il nome visualizzato del soggetto del certificato.<br/>                              | 0     |
+| **CAPICOM \_ CERT \_ INFO \_ ISSUER \_ SIMPLE \_ NAME**  | Restituisce il nome visualizzato dell'autorità emittente del certificato.<br/>                        | 1     |
+| **CAPICOM \_ CERT \_ INFO \_ SUBJECT \_ EMAIL \_ NAME**  | Restituisce l'indirizzo di posta elettronica del soggetto del certificato.<br/>                             | 2     |
+| **CAPICOM \_ CERT \_ INFO \_ ISSUER \_ EMAIL \_ NAME**   | Restituisce l'indirizzo di posta elettronica dell'autorità emittente del certificato.<br/>                       | 3     |
+| **CAPICOM \_ CERT \_ INFO \_ SUBJECT \_ UPN**          | Restituisce l'UPN del soggetto del certificato. Introdotto in CAPICOM 2.0.<br/>            | 4     |
+| **CAPICOM \_ CERT \_ INFO \_ ISSUER \_ UPN**           | Restituisce l'UPN dell'autorità emittente del certificato. Introdotto in CAPICOM 2.0.<br/>      | 5     |
+| **CAPICOM \_ CERT \_ INFO \_ SUBJECT \_ DNS \_ NAME**    | Restituisce il nome DNS del soggetto del certificato. Introdotto in CAPICOM 2.0.<br/>       | 6     |
+| **CAPICOM \_ CERT \_ INFO \_ ISSUER \_ DNS \_ NAME**     | Restituisce il nome DNS dell'autorità emittente del certificato. Introdotto in CAPICOM 2.0.<br/> | 7     |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di enumerazione **CApicol \_ CERT \_ info \_ Type** viene utilizzato dal metodo [**Certificate. GetInfo**](certificate-getinfo.md) .
+Il **tipo di enumerazione CAPICOM \_ CERT INFO \_ \_ TYPE** viene usato dal [**metodo Certificate.GetInfo.**](certificate-getinfo.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,8 +51,8 @@ Il tipo di enumerazione **CApicol \_ CERT \_ info \_ Type** viene utilizzato dal
 
 | Requisito | Valore |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
-| Intestazione<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
+| Intestazione<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

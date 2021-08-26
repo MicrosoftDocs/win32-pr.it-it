@@ -4,25 +4,25 @@ description: Animazione di una tavolozza
 ms.assetid: 89493cc3-eca9-407f-99c2-903fba16992c
 keywords:
 - DrawDib, tavolozze
-- DrawDibRealize (funzione)
-- DrawDibDraw (funzione)
-- DrawDibChangePalette (funzione)
+- Funzione DrawDibRealize
+- Funzione DrawDibDraw
+- Funzione DrawDibChangePalette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e023ba8ee2c4791ebc8c3f2ac7ebf9a198f4a5ae
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4be9613e4e648fad0b1fafe5d48d091ab13c9b6c358eda4a858c1d5517ab8fc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103726727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808421"
 ---
 # <a name="animating-a-palette"></a>Animazione di una tavolozza
 
-Nell'esempio seguente viene animata una tavolozza utilizzando le funzioni [**DrawDibRealize**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize), [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette)e [**DrawDibDraw**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw) .
+Nell'esempio seguente viene animata una tavolozza usando le funzioni [**DrawDibRealize**](/windows/desktop/api/Vfw/nf-vfw-drawdibrealize), [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette)e [**DrawDibDraw**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw) .
 
-È possibile modificare i colori di una bitmap usando la funzione [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) in combinazione con [**DrawDibChangePalette**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette). Per consentire le modifiche della tavolozza, specificare prima di tutto il \_ flag DDF animate nella chiamata a **DrawDibBegin**. In secondo luogo, impostare i valori della tabella dei colori dalle voci della tavolozza usando **DrawDibChangePalette**.
+È possibile modificare i colori di una bitmap usando la [**funzione DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) in combinazione con [**DrawDibChangePalette.**](/windows/desktop/api/Vfw/nf-vfw-drawdibchangepalette) Prima di tutto, per consentire le modifiche alla tavolozza, specificare il flag DDF \_ ANIMATE nella chiamata a **DrawDibBegin.** Impostare quindi i valori della tabella dei colori dalle voci della tavolozza usando **DrawDibChangePalette.**
 
-Ad esempio, se *lppe* è un indirizzo della matrice [PaletteEntry](/previous-versions//ms532623(v=vs.85)) contenente i nuovi colori e *lpbi* è la struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) utilizzata in [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) o [**DRAWDIBDRAW**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw), il frammento seguente aggiorna la tabella dei colori DIB.
+Ad esempio, se *lppe* è un indirizzo della matrice [PALETTEENTRY](/previous-versions//ms532623(v=vs.85)) contenente i nuovi colori e *lpbi* è la struttura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) usata in [**DrawDibBegin**](/windows/desktop/api/Vfw/nf-vfw-drawdibbegin) o [**DrawDibDraw**](/windows/desktop/api/Vfw/nf-vfw-drawdibdraw), il frammento seguente aggiorna la tabella dei colori DIB.
 
 
 ```C++
@@ -49,6 +49,6 @@ ReleaseDC(hwnd, hdc);
 [Uso di DrawDib](using-drawdib.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

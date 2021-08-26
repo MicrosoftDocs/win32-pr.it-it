@@ -1,21 +1,21 @@
 ---
-title: Caricamento dei dati di tipo carattere e animazione
-description: Caricamento dei dati di tipo carattere e animazione
+title: Caricamento di dati di animazione e caratteri
+description: Caricamento di dati di animazione e caratteri
 ms.assetid: cd674513-fd68-49bb-a43f-12b07adddf3d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed77524c4e3cbbcae725b87c3671914f2261fa1c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0e387a6122ab08513763878678d99941ef65d8ed11822eed8639fccd6e3815d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961431"
 ---
-# <a name="loading-character-and-animation-data"></a>Caricamento dei dati di tipo carattere e animazione
+# <a name="loading-character-and-animation-data"></a>Caricamento di dati di animazione e caratteri
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Dopo avere un puntatore all'interfaccia [**IAgentEx**](iagentex.md) , è possibile usare il metodo [**Load**](load-method.md) per caricare un carattere e recuperare la relativa interfaccia [**IAgentCharacterEx**](iagentcharacterex.md) . Sono disponibili tre diverse possibilità per il percorso di caricamento di un carattere. Il primo è compatibile con Microsoft Agent 1,5, dove il percorso specificato è il percorso completo e il nome file di un file di caratteri. La seconda possibilità è specificare solo il nome del file. in questo caso, Agent Cerca nella directory chars. L'ultima possibilità è fornire un parametro VARIANT vuoto che causa il caricamento del carattere predefinito.
+Dopo aver creato un puntatore [**all'interfaccia IAgentEx,**](iagentex.md) è possibile usare il metodo [**Load**](load-method.md) per caricare un carattere e recuperarne [**l'interfaccia IAgentCharacterEx.**](iagentcharacterex.md) Esistono tre diverse possibilità per il percorso di caricamento di un carattere. Il primo è compatibile con Microsoft Agent 1.5, dove il percorso specificato è il percorso completo e il nome file di un file di caratteri. La seconda possibilità è specificare solo il nome del file. In tal caso, Agent cerca nella directory Chars. L'ultima possibilità è fornire un parametro Variant vuoto che causa il caricamento del carattere predefinito.
 
 
 ```
@@ -39,7 +39,7 @@ Dopo avere un puntatore all'interfaccia [**IAgentEx**](iagentex.md) , è possibi
 
 
 
-È possibile utilizzare questa interfaccia per accedere ai metodi del carattere:
+È possibile usare questa interfaccia per accedere ai metodi del carattere:
 
 
 ```
@@ -59,7 +59,7 @@ Dopo avere un puntatore all'interfaccia [**IAgentEx**](iagentex.md) , è possibi
 
 
 
-Quando i servizi di Microsoft Agent non sono più necessari, ad esempio quando l'applicazione client viene arrestata, rilascia le interfacce. Si noti che il rilascio dell'interfaccia dei caratteri non Scarica il carattere. Per eseguire questa operazione, chiamare il metodo [**unload**](unload-method.md) prima di rilasciare l'interfaccia [**IAgentEx**](iagentex.md) :
+Quando i servizi di Microsoft Agent non sono più necessari, ad esempio quando l'applicazione client viene arrestata, rilasciare le relative interfacce. Si noti che il rilascio dell'interfaccia dei caratteri non scarica il carattere. Chiamare il [**metodo Unload**](unload-method.md) per eseguire questa operazione prima di rilasciare [**l'interfaccia IAgentEx:**](iagentex.md)
 
 
 ```
@@ -87,9 +87,9 @@ VariantClear(&vPath);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

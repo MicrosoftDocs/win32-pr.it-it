@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TCN_SELCHANGE (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo struttura a schede che la scheda attualmente selezionata è stata modificata. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TCN_SELCHANGE di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo struttura a schede che la scheda attualmente selezionata è stata modificata. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: f40e30f6-169b-4381-a300-12c3befb5fc5
 keywords:
-- Controlli di Windows per il codice di notifica TCN_SELCHANGE
+- TCN_SELCHANGE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8578ac9fee7754b1ae27c05c6ec1b15636090040
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e54ad012e98005e8fbf5148af58aab10d90e3127afeab6311cc8b8f3f84e2988
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876181"
 ---
-# <a name="tcn_selchange-notification-code"></a>\_Codice di notifica SelChange di TCN
+# <a name="tcn_selchange-notification-code"></a>Codice di notifica \_ TCN SELCHANGE
 
-Notifica alla finestra padre di un controllo struttura a schede che la scheda attualmente selezionata è stata modificata. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo struttura a schede che la scheda attualmente selezionata è stata modificata. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TCN_SELCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Per determinare la scheda attualmente selezionata, usare la macro [**TabCtrl \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel) .
+Per determinare la scheda attualmente selezionata, usare la macro [**TabCtrl \_ GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Per determinare la scheda attualmente selezionata, usare la macro [**TabCtrl \_ 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Per determinare la scheda attualmente selezionata, usare la macro [**TabCtrl \_ 
 
 <dl> <dt>
 
-[\_SELCHANGING TCN](tcn-selchanging.md)
+[TCN \_ SELCHANGING](tcn-selchanging.md)
 </dt> </dl>
 
  

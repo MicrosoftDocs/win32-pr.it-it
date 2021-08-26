@@ -4,16 +4,16 @@ description: Il codice di esempio seguente usa la funzione EnumDeviceDrivers per
 ms.assetid: 047d8541-e17e-4738-8453-674db69365df
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7b02345f5d59979fe3576fd952c056ca808e6ad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83c2d6629738e0668d2c0e95ec19f10ae0f3cabcb7b842747ae6dc97937c590f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884971"
 ---
 # <a name="enumerating-all-device-drivers-in-the-system"></a>Enumerazione di tutti i driver di dispositivo nel sistema
 
-Il codice di esempio seguente usa la funzione [**EnumDeviceDrivers**](/windows/desktop/api/Psapi/nf-psapi-enumdevicedrivers) per enumerare i driver di dispositivo correnti nel sistema. Passa gli indirizzi di caricamento recuperati da questa chiamata di funzione alla funzione [**GetDeviceDriverBaseName**](/windows/desktop/api/Psapi/nf-psapi-getdevicedriverbasenamea) per recuperare un nome che può essere visualizzato.
+Il codice di esempio seguente usa [**la funzione EnumDeviceDrivers**](/windows/desktop/api/Psapi/nf-psapi-enumdevicedrivers) per enumerare i driver di dispositivo correnti nel sistema. Passa gli indirizzi di carico recuperati da questa chiamata di funzione alla [**funzione GetDeviceDriverBaseName**](/windows/desktop/api/Psapi/nf-psapi-getdevicedriverbasenamea) per recuperare un nome che può essere visualizzato.
 
 
 ```C++
@@ -60,9 +60,9 @@ return 0;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

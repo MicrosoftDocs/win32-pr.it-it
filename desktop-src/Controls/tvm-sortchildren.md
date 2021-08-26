@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SORTCHILDREN (COMmctrl. h)
-description: Ordina gli elementi figlio dell'elemento padre specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SortChildren di TreeView.
+title: TVM_SORTCHILDREN messaggio (Commctrl.h)
+description: Ordina gli elementi figlio dell'elemento padre specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro SortChildren di TreeView.
 ms.assetid: c18bcd5f-c083-46ee-873b-d3100b0d7b04
 keywords:
-- Controlli di Windows Message TVM_SORTCHILDREN
+- TVM_SORTCHILDREN di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341591c31accb4aab0b49f611359a93ec99c0cab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f975814fadc5271c562e4e8e420c35dbb3450142bed797af83af73fdf81a55d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913801"
 ---
-# <a name="tvm_sortchildren-message"></a>\_Messaggio SORTCHILDREN TVM
+# <a name="tvm_sortchildren-message"></a>Messaggio \_ TVM SORTCHILDREN
 
-Ordina gli elementi figlio dell'elemento padre specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SortChildren di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sortchildren) .
+Ordina gli elementi figlio dell'elemento padre specificato in un controllo di visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ SortChildren di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_sortchildren)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Ordina gli elementi figlio dell'elemento padre specificato in un controllo di vi
 *wParam* 
 </dt> <dd>
 
-Valore che specifica se l'ordinamento è ricorsivo. Impostare *wParam* su **true** per ordinare tutti i livelli degli elementi figlio sotto l'elemento padre. In caso contrario, vengono ordinati solo gli elementi figlio immediati dell'elemento padre.
+Valore che specifica se l'ordinamento è ricorsivo. Impostare *wParam* su **TRUE per** ordinare tutti i livelli di elementi figlio sotto l'elemento padre. In caso contrario, vengono ordinati solo gli elementi figlio immediati dell'elemento padre.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Handle per l'elemento padre i cui elementi figlio devono essere ordinati.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio dispone gli elementi della struttura ad albero utilizzando [**due**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) sul nome dell'elemento. È possibile usare il messaggio [**TVM \_ SORTCHILDRENCB**](tvm-sortchildrencb.md) per personalizzare il comportamento di ordinamento.
+Questo messaggio consente di alfabeticizzare gli elementi della struttura ad albero [**usando lstrcmpi**](/windows/desktop/api/winbase/nf-winbase-lstrcmpia) sul nome dell'elemento. È possibile usare il [**messaggio TVM \_ SORTCHILDRENCB**](tvm-sortchildrencb.md) per personalizzare il comportamento di ordinamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Questo messaggio dispone gli elementi della struttura ad albero utilizzando [**d
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: tronca (Corecrt \_ Math. h)
-description: Tronca un valore a virgola mobile nel componente intero.
+title: trunc (Corecrt \_ math.h)
+description: Tronca un valore a virgola mobile nel componente integer.
 ms.assetid: a0978fa2-71f8-4257-8c90-96224c2ec953
 keywords:
-- tronca HLSL
+- trunc HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34493f60e60bc0dce35f5f9db50360265191c742
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0845e619e8674d729735da1b639802df256d9c210615d71578a4e1effd777e39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845771"
 ---
 # <a name="trunc"></a>trunc
 
-Tronca un valore a virgola mobile nel componente intero.
+Tronca un valore a virgola mobile nel componente integer.
 
 
 
-| troncamento RET (*x*) |
+| ret trunc(*x*) |
 |----------------|
 
 
@@ -40,7 +40,7 @@ Tronca un valore a virgola mobile nel componente intero.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nell' \] input specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Input specificato.<br/> |
 
 
 
@@ -48,11 +48,11 @@ Tronca un valore a virgola mobile nel componente intero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore di input troncato a un componente intero.
+Valore di input troncato in un componente integer.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione tronca un valore a virgola mobile nel componente intero. Dato un valore a virgola mobile 1,6, la funzione tronca restituirà 1,0, dove la funzione [**round (DirectX HLSL)**](dx-graphics-hlsl-round.md) restituirà 2,0.
+Questa funzione tronca un valore a virgola mobile al componente integer. Dato un valore a virgola mobile 1,6, la funzione trunc restituirebbe 1.0, dove come funzione round [**(DirectX HLSL)**](dx-graphics-hlsl-round.md) restituirebbe 2.0.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -60,14 +60,14 @@ Questa funzione tronca un valore a virgola mobile nel componente intero. Dato un
 
 | Nome | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                         |
 |------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|------------------------------|
-| *x*  | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                          |
-| RET  | Stesso tipo di input x                                                                                           | [**float**](/windows/desktop/WinProg/windows-data-types)                        | Le stesse dimensioni di input x |
+| *x*  | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                          |
+| Ret  | Stesso tipo dell'input x                                                                                           | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | Stesse dimensioni dell'input x |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato |
 |------------------------------------------------------------------------------------|-----------|
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader più elevati | sì       |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelli shader superiori | sì       |
 
 
 
@@ -87,7 +87,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

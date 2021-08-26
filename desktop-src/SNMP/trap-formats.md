@@ -1,45 +1,45 @@
 ---
 title: Formati trap
-description: Il formato di Trap PDU è diverso da quello di altre PDU. Anche il formato di trap SNMPv1 e trap SNMPv2C è diverso.
+description: Il formato delle PDU trap è diverso da quello degli altri PDU. Anche il formato delle trap SNMPv1 e delle trap SNMPv2C è diverso.
 ms.assetid: 2d2b4520-28b7-4a2e-8dee-456e17d9d6f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e87adc3222808fcc7e81904ade07c09afa13bc6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b73e9cd2a5396bbe258fcb67c88cc207ea0243a9e8aff9f31e4866b9ee8adcc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885681"
 ---
 # <a name="trap-formats"></a>Formati trap
 
-Il formato di Trap PDU è diverso da quello di altre PDU. Anche il formato di trap SNMPv1 e trap SNMPv2C è diverso.
+Il formato delle PDU trap è diverso da quello degli altri PDU. Anche il formato delle trap SNMPv1 e delle trap SNMPv2C è diverso.
 
-In SNMPv2C Framework il formato di Trap PDU è un elenco di associazioni variabili di *n* voci di binding variabili organizzate nel modo seguente:
+Nel framework SNMPv2C, il formato trap PDU è un elenco di associazione di variabili *di n* voci di associazione di variabili organizzate nel modo seguente:
 
--   La prima voce di associazione variabile contiene un timestamp.
--   La seconda voce di associazione variabile è un identificatore di oggetto che identifica la trap.
--   Le terze e *n* voci di associazione variabili, se presenti, contengono informazioni aggiuntive associate al trap.
+-   La prima voce di associazione di variabili contiene un timestamp.
+-   La seconda voce di associazione di variabili è un identificatore di oggetto che identifica il trap.
+-   Le voci di associazione da terza a *n* variabili, se presenti, contengono informazioni aggiuntive associate al trap.
 
-In SNMPv1 Framework il formato di Trap PDU è il seguente.
+Nel framework SNMPv1 il formato trap PDU è il seguente.
 
 | Campo                      | Descrizione                                                      |
 |----------------------------|------------------------------------------------------------------|
 | Connettori                 | Identifica il tipo di dispositivo che ha generato la trap.           |
-| Agent-addr                 | Identifica l'indirizzo IP del dispositivo che ha generato la trap. |
-| Trap/Trap generico | Identifica un tipo trap predefinito.                               |
-| timestamp                 | Identifica il momento in cui è stata generata la trap.                          |
-| associazioni di variabili          | Contiene informazioni aggiuntive associate al trap.        |
+| agent-addr                 | Identifica l'indirizzo IP del dispositivo che ha generato il trap. |
+| generic-trap/specific-trap | Identifica un tipo di trap predefinito.                               |
+| timestamp                 | Identifica quando è stata generata la trap.                          |
+| associazioni di variabili          | Contiene informazioni aggiuntive associate alla trap.        |
 
 
 
- 
+ 
 
-La funzione [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) restituisce sempre un messaggio nel formato SNMPv2C. Se il messaggio contiene il tipo di **operazione \_ \_ trap SNMP PDU**, l'applicazione può leggere le voci di associazione variabili del messaggio e recuperare le informazioni associate alla trap.
+La [**funzione SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) restituisce sempre un messaggio nel formato SNMPv2C. Se il messaggio contiene il tipo di **operazione SNMP \_ PDU \_ TRAP,** l'applicazione può leggere le voci di associazione delle variabili del messaggio e recuperare le informazioni associate al trap.
 
- 
+ 
 
- 
+ 
 
 
 

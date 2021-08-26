@@ -4,18 +4,18 @@ ms.assetid: F7937402-1173-4647-B9FF-856C0925C1C3
 title: Uso del contesto XState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca58a8fadb4404e2f6fc431b7b7d2a9d7f583f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6300049f96ff6e7c1fb51759978f84e6c93c305de559a527c9791f2d33f87150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912221"
 ---
 # <a name="working-with-xstate-context"></a>Uso del contesto XState
 
-Questo documento contiene un esempio che illustra come usare le funzioni di contesto XState per recuperare e impostare le funzionalità estese in un thread. Negli esempi seguenti viene modificato lo stato di Intel Advanced Vector Extensions (AVX), definito da FeatureId 2 (feature Mask 4). Intel AVX è definito in "Guida di riferimento alla programmazione di Intel Advanced Vector Extensions" disponibile in <https://go.microsoft.com/fwlink/p/?linkid=212716> .
+Questo documento contiene un esempio che illustra come usare le funzioni di contesto XState per recuperare e impostare le funzionalità estese in un thread. Gli esempi seguenti modificano lo stato di Intel Advanced Vector Extensions (AVX), definito da FeatureId 2 (Feature Mask 4). Intel AVX è definito in "Intel Advanced Vector Extensions Programming Reference" disponibile in <https://go.microsoft.com/fwlink/p/?linkid=212716> .
 
-**Windows 7 con SP1:** L' [API AVX](avx-support-portal.md) viene implementata per la prima volta in Windows 7 con SP1. Poiché non esiste un SDK per Windows 7 con SP1, significa che non sono disponibili intestazioni e file di libreria da usare. In questa situazione, un chiamante deve dichiarare le funzioni necessarie da questa documentazione e ottenere i puntatori utilizzando [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) su "Kernel32.dll", seguito da chiamate a [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
+**Windows 7 con SP1:** [L'API AVX](avx-support-portal.md) viene implementata per la Windows 7 con SP1. Poiché non è disponibile alcun SDK per Windows 7 con SP1, non sono disponibili intestazioni e file di libreria da usare. In questo caso, un chiamante deve dichiarare le funzioni necessarie da questa documentazione e ottenere i relativi puntatori usando [**GetModuleHandle**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea) su "Kernel32.dll", seguito da chiamate a [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 
 ```C++

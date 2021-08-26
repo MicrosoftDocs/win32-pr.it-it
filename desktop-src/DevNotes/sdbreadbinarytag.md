@@ -1,7 +1,7 @@
 ---
 Description: Recupera i dati binari per il TAGID specificato.
 ms.assetid: b349f2af-2505-4efc-bd59-203f7666ce61
-title: SdbReadBinaryTag (funzione)
+title: Funzione SdbReadBinaryTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 024b432c3210b98721a0cf3058bad0f765287fde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92d63182273c96707bb155071164a6b6838378615f603d8ef6d332d6c65be460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911571"
 ---
-# <a name="sdbreadbinarytag-function"></a>SdbReadBinaryTag (funzione)
+# <a name="sdbreadbinarytag-function"></a>Funzione SdbReadBinaryTag
 
-Recupera i dati binari per il **TagId** specificato.
+Recupera i dati binari per **l'ELEMENTO TAGID specificato.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbReadBinaryTag(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiWhich* \[ in\]
+*tiWhich* \[ Pollici\]
 </dt> <dd>
 
-**TagId** che corrisponde ai dati da recuperare.
+**TAGID** che corrisponde ai dati da recuperare.
 
 </dd> <dt>
 
-*pbuffer* \[ out\]
+*pBuffer* \[ Cambio\]
 </dt> <dd>
 
-Buffer che riceve i dati binari. Questo parametro non può essere **null**.
+Buffer che riceve i dati binari. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*dwBufferSize* \[ in\]
+*dwBufferSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *pbuffer* .
+Dimensioni del buffer *pBuffer,* in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

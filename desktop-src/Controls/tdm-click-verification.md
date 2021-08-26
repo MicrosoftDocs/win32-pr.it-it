@@ -1,9 +1,9 @@
 ---
-title: Messaggio TDM_CLICK_VERIFICATION (COMmctrl. h)
-description: Simula un clic della casella di controllo verifica di una finestra di dialogo attività, se esistente.
+title: TDM_CLICK_VERIFICATION messaggio (Commctrl.h)
+description: Simula un clic sulla casella di controllo di verifica di una finestra di dialogo attività, se esistente.
 ms.assetid: 1c6c135e-4e39-4f1a-88f4-5e9f7181a2dd
 keywords:
-- Controlli di Windows Message TDM_CLICK_VERIFICATION
+- TDM_CLICK_VERIFICATION dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df61676104169e3084e7cde09439c218f2237e60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b3cda5e85b138225d69e159792cbe641122e91bf9602b3e0f5edafa419edc3c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876091"
 ---
-# <a name="tdm_click_verification-message"></a>TDM- \_ Seleziona \_ messaggio di verifica
+# <a name="tdm_click_verification-message"></a>Messaggio DI VERIFICA \_ TDM CLICK \_
 
-Simula un clic della casella di controllo verifica di una finestra di dialogo attività, se esistente.
+Simula un clic sulla casella di controllo di verifica di una finestra di dialogo attività, se esistente.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-**True** per impostare lo stato della casella di controllo da controllare; **False** per impostarlo come deselezionato.
+**TRUE** per impostare lo stato della casella di controllo da controllare. **FALSE** per impostarlo in modo che sia deselezionato.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-**True** per impostare lo stato attivo della tastiera sulla casella di controllo; In caso contrario, **false** .
+**TRUE** per impostare lo stato attivo della tastiera sulla casella di controllo. **FALSE in** caso contrario.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

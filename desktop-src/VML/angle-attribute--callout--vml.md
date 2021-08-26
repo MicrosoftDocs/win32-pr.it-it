@@ -1,47 +1,47 @@
 ---
-title: Attributo Angle (callout) (la)
-description: Attributo Angle (callout) (la)
+title: Attributo Angle (Callout)(VML)
+description: Attributo Angle (Callout)(VML)
 ms.assetid: e7743bcc-890d-46c9-b6de-c998d031a925
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d7b8434092c4786b1fac1672219463fce4de920
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4c8c00fc173f0475c1de1655f69db4bfa472c45020d0bcf0e96f6c1171bc5238
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864301"
 ---
-# <a name="angle-attribute-calloutvml"></a>Attributo Angle (callout) (la)
+# <a name="angle-attribute-calloutvml"></a>Attributo Angle (Callout)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce l'angolo che il callout fa rispetto al rettangolo di delimitazione della forma. Proprietà di lettura/scrittura. **Stringa**.
+Definisce l'angolo del callout rispetto al rettangolo di selezione della forma. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
 [Callout](msdn-online-vml-callout-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* Angle = " *Expression* " >
+<o: *element* angle=" *expression* ">
 
 **Osservazioni:**
 
 I possibili valori sono:
 
--   **qualsiasi**
+-   **Qualsiasi**
 -   **30**
 -   **45**
 -   **60**
 -   **90**
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

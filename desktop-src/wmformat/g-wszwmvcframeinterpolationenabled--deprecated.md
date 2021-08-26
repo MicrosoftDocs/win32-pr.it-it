@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCFrameInterpolationEnabled (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMVCFrameInterpolationEnabled (Wmcodecdsp. h)
+title: g_wszWMVCFrameInterpolationEnabled (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | g_wszWMVCFrameInterpolationEnabled (Wmcodecdsp.h)
 ms.assetid: 0bd26606-a73a-4c94-84a1-a05c258ba1e4
 keywords:
-- g_wszWMVCFrameInterpolationEnabled formato Windows Media
+- g_wszWMVCFrameInterpolationEnabled Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6a711b3c7fa7467ce48fc301dab08c56d15ea7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a4f38a97686ca439e8f1ad739ae007a83dca7a9335dd8635e92d7518a3ee88c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930981"
 ---
 # <a name="g_wszwmvcframeinterpolationenabled"></a>g \_ wszWMVCFrameInterpolationEnabled
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e API DSP).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

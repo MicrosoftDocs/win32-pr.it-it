@@ -1,9 +1,9 @@
 ---
-title: Message (messageTable)-elemento
-description: Contiene un riferimento a una stringa nella sezione localizzazione del manifesto. | Message (messageTable)-elemento
+title: Elemento message (messageTable)
+description: Contiene un riferimento a una stringa nella sezione di localizzazione del manifesto. | Elemento message (messageTable)
 ms.assetid: 0988cf99-c7e1-446b-869e-9ac4a0976ac5
 keywords:
-- EventLog elemento messaggio
+- Elemento message EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e1165e3a613434fb76befb87cd1a83ed3af95d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79020fa18717a3a2338a8ac243bb95e0fa14de47f0e434fb52c475c956afa101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865671"
 ---
-# <a name="message-messagetable-element"></a>Message (messageTable)-elemento
+# <a name="message-messagetable-element"></a>Elemento message (messageTable)
 
-Contiene un riferimento a una stringa nella sezione localizzazione del manifesto.
+Contiene un riferimento a una stringa nella sezione di localizzazione del manifesto.
 
 ``` syntax
 <xs:element name="message">
@@ -47,7 +47,7 @@ Contiene un riferimento a una stringa nella sezione localizzazione del manifesto
 </xs:element>
 ```
 
-L'elemento **Message** è definito dall'elemento [**messageTable**](eventmanifestschema-messagetable-instrumentationtype-element.md) .
+**L'elemento** message è definito dall'elemento [**messageTable.**](eventmanifestschema-messagetable-instrumentationtype-element.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -57,8 +57,8 @@ L'elemento **Message** è definito dall'elemento [**messageTable**](eventmanifes
 |---------|--------|----------------------------------------------------------------------------------------------------|
 | message | string | Riferimento alla stringa localizzata nella tabella di stringhe.<br/>                                |
 | mid     | string | Non usato.<br/>                                                                               |
-| simbolo  | string | Nome simbolico che si desidera venga creato dal compilatore di messaggi per questa stringa di messaggio.<br/> |
-| Valore   | string | Numero da utilizzare come identificatore del messaggio per questo messaggio.<br/>                           |
+| simbolo  | string | Nome simbolico che si desidera che il compilatore di messaggi crei per questa stringa di messaggio.<br/> |
+| Valore   | string | Numero da utilizzare come identificatore del messaggio.<br/>                           |
 
 
 
@@ -68,8 +68,8 @@ L'elemento **Message** è definito dall'elemento [**messageTable**](eventmanifes
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
