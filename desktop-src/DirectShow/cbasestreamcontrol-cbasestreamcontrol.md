@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4c6521bec65e0182b8eb48eb5d3efe9ea609c6a7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f5a6f00fbe3e6a1b230935a208e47497a7e64d508e3cca8228df6471172a7bd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983391"
 ---
 # <a name="cbasestreamcontrolcbasestreamcontrol-constructor"></a>Costruttore CBaseStreamControl.CBaseStreamControl
 
@@ -45,7 +45,7 @@ CBaseStreamControl(
 *Phr* 
 </dt> <dd>
 
-Puntatore a **un valore HRESULT.** Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In questo caso, l'oggetto non è in uno stato valido.
+Puntatore a un **valore HRESULT.** Se il costruttore ha esito negativo, questo parametro riceve un codice di errore. In questo caso, l'oggetto non è in uno stato valido.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Puntatore a **un valore HRESULT.** Se il costruttore ha esito negativo, questo p
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Strmctl.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Strmctl.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

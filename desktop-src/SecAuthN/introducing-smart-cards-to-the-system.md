@@ -1,28 +1,28 @@
 ---
-description: Prima che il sottosistema smart card possa trovare una smart card, la smart card deve essere introdotta nel sistema.
+description: Prima che smart card sottosistema possa trovare un smart card, è necessario smart card il sottosistema.
 ms.assetid: 5b331d7d-9440-4e0d-a73b-48a2a556c31c
-title: Introduzione di smart card al sistema
+title: Introduzione delle smart card al sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9134dd9efce17b60f3495bf7bfc36b03c34ed3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07cd65135e1580792135a1042729f2002f4437697fa0548a4f6cd776650485b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015711"
 ---
-# <a name="introducing-smart-cards-to-the-system"></a>Introduzione di smart card al sistema
+# <a name="introducing-smart-cards-to-the-system"></a>Introduzione delle smart card al sistema
 
-Prima che il [*sottosistema Smart Card*](../secgloss/s-gly.md) possa trovare una [*Smart Card*](../secgloss/s-gly.md), la smart card deve essere introdotta nel sistema. Questa operazione viene in genere eseguita con uno strumento di configurazione della smart card fornito dal produttore della scheda. Lo strumento può essere un programma su un disco floppy (con la smart card), un controllo ActiveX disponibile in un sito Web e così via.
+Prima che [*smart card sottosistema possa*](../secgloss/s-gly.md) trovare un [*smart card*](../secgloss/s-gly.md), smart card deve essere introdotto nel sistema. Questa operazione viene in genere eseguita con smart card strumento di configurazione fornito dal produttore della scheda. Lo strumento può essere disponibile come programma su un disco floppy (con smart card), un controllo ActiveX disponibile in un sito Web e così via.
 
-Lo strumento di installazione di deve fornire le seguenti informazioni sulla scheda:
+Lo strumento di installazione deve fornire le informazioni seguenti sulla scheda:
 
--   La relativa [*stringa ATR*](../secgloss/a-gly.md)e una maschera facoltativa da usare come supporto per l'identificazione della scheda.
--   Elenco di interfacce di smart card supportate dalla scheda.
--   Nome visualizzato per la scheda da utilizzare per l'identificazione della scheda per l'utente. Nella maggior parte dei casi, l'utente lo fornirà allo strumento di configurazione di.
--   [*Provider di servizi primario*](../secgloss/p-gly.md) associato alla scheda (facoltativo), da utilizzare per l'accesso alla scheda tramite interfacce com.
+-   La [*relativa stringa ATR*](../secgloss/a-gly.md)e una maschera facoltativa da usare come supporto per l'identificazione della scheda.
+-   Elenco di smart card supportate dalla scheda.
+-   Nome visualizzato per la scheda da usare per identificare la scheda per l'utente. Nella maggior parte dei casi, l'utente lo fornirà al programma di installazione.
+-   Provider [*di servizi primario*](../secgloss/p-gly.md) associato alla scheda (facoltativo), da usare quando si accede alla scheda tramite interfacce COM.
 
-Per semplificare gli strumenti di configurazione e per garantire l'integrità del [*database delle smart card*](../secgloss/s-gly.md), il sottosistema smart card fornisce le due funzioni seguenti. [**SCardIntroduceCardType**](/windows/desktop/api/Winscard/nf-winscard-scardintroducecardtypea) introduce una smart card nel database e [**SCardForgetCardType**](/windows/desktop/api/Winscard/nf-winscard-scardforgetcardtypea) la rimuove dal database.
+Per semplificare gli strumenti di installazione e garantire l'integrità del [*database smart card*](../secgloss/s-gly.md), il sottosistema smart card fornisce le due funzioni seguenti. [**SCardIntroduceCardType**](/windows/desktop/api/Winscard/nf-winscard-scardintroducecardtypea) introduce un smart card nel database e [**SCardForgetCardType**](/windows/desktop/api/Winscard/nf-winscard-scardforgetcardtypea) lo rimuove dal database.
 
  
 

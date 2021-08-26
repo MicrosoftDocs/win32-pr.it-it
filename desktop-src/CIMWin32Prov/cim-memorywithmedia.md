@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM MemoryWithMedia associa la memoria fisica a un supporto fisico e alla relativa cartuccia. La memoria fornisce l'identificazione dei supporti e archivia i dati specifici dell'utente.
+description: La classe CIM \_ MemoryWithMedia associa la memoria fisica a un supporto fisico e alla relativa cartuccia. La memoria fornisce l'identificazione dei supporti e archivia i dati specifici dell'utente.
 ms.assetid: 99806d2d-6575-431d-9149-dc8ea767146c
 ms.tgt_platform: multiple
-title: Classe CIM_MemoryWithMedia
+title: CIM_MemoryWithMedia classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3b990f8ba842f313449b6f24f4e2ce59787f7841
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eff54c8ac48c9e6e998e720815a9a3529f5484f8a089e8ea510559d2e7cfa488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104351636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921411"
 ---
-# <a name="cim_memorywithmedia-class"></a>CIM \_ MemoryWithMedia (classe)
+# <a name="cim_memorywithmedia-class"></a>Classe CIM \_ MemoryWithMedia
 
-La classe **CIM \_ MemoryWithMedia** associa la memoria fisica a un supporto fisico e alla relativa cartuccia. La memoria fornisce l'identificazione dei supporti e archivia i dati specifici dell'utente.
+La **classe CIM \_ MemoryWithMedia** associa la memoria fisica a un supporto fisico e alla relativa cartuccia. La memoria fornisce l'identificazione dei supporti e archivia i dati specifici dell'utente.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_MemoryWithMedia : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ MemoryWithMedia** presenta questi tipi di membri:
+La **classe CIM \_ MemoryWithMedia** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ MemoryWithMedia** dispone di queste proprietà.
+La **classe CIM \_ MemoryWithMedia** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,10 +66,10 @@ Tipo di dati: **CIM \_ PhysicalMemory**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ PhysicalMemory CIM**](cim-physicalmemory.md) che descrive la memoria associata ai supporti fisici.
+Oggetto [**CIM \_ PhysicalMemory**](cim-physicalmemory.md) che descrive la memoria associata ai supporti fisici.
 
 </dd> <dt>
 
@@ -82,20 +82,20 @@ Tipo di dati: **CIM \_ PhysicalMedia**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ PhysicalMedia CIM**](cim-physicalmedia.md) che descrive i supporti fisici.
+[**CiM \_ PhysicalMedia che**](cim-physicalmedia.md) descrive i supporti fisici.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**CIM \_ MemoryWithMedia** viene ereditato dalla [**\_ dipendenza CIM**](cim-dependency.md).
+**CIM \_ MemoryWithMedia** viene ereditato dalla [**dipendenza CIM. \_**](cim-dependency.md)
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

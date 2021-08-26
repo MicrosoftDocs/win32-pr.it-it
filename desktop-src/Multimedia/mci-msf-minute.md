@@ -1,6 +1,6 @@
 ---
-title: MCI_MSF_MINUTE macro (Mciapi. h)
-description: La \_ macro del \_ momento MSF di MCI Recupera il componente minuti da un parametro contenente le informazioni relative a minuti/secondi/frame (MSF) compressi.
+title: MCI_MSF_MINUTE macro (Mciapi.h)
+description: La macro MCI MSF MINUTE recupera il componente minuti da un parametro contenente informazioni di \_ \_ minuti/secondi/fotogrammi (MSF) di tipo pack.
 ms.assetid: 60ac6662-d828-4635-a019-2603199523c5
 keywords:
 - MCI_MSF_MINUTE macro Windows Multimedia
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f65f978c13fc1b3fbf86266c35786b21612c4e7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8423e63c7e155c072b496a9bf13c332619f96e8c6780cac6fae266f6a924c9f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039141"
 ---
-# <a name="mci_msf_minute-macro"></a>\_Macro del minuto MSF di MCI \_
+# <a name="mci_msf_minute-macro"></a>Macro \_ MCI MSF \_ MINUTE
 
-La macro del **\_ \_ momento MSF di MCI** Recupera il componente minuti da un parametro contenente le informazioni relative a minuti/secondi/frame (MSF) compressi.
+La macro **\_ MCI MSF \_ MINUTE** recupera il componente minuti da un parametro contenente informazioni di minuti/secondi/fotogrammi (MSF) di tipo pack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ BYTE MCI_MSF_MINUTE(
 *dwMSF* 
 </dt> <dd>
 
-Tempo in formato MSF.
+Ora in formato MSF.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Restituisce il componente minuti delle informazioni MSF specificate.
 
 ## <a name="remarks"></a>Commenti
 
-L'ora nel formato MSF è espressa come valore **DWORD** con il byte meno significativo che contiene minuti, il successivo byte meno significativo contenente i secondi e il successivo byte meno significativo contenente i frame. Il byte più significativo è inutilizzato.
+L'ora in formato MSF è espressa come valore **DWORD** con il byte meno significativo contenente minuti, il byte meno significativo successivo contenente i secondi e il byte meno significativo successivo contenente frame. Il byte più significativo è inutilizzato.
 
-La macro del **\_ \_ minuto MSF di MCI** è definita come segue:
+La macro **\_ MCI MSF \_ MINUTE** è definita come segue:
 
 
 ```C++
@@ -72,7 +72,7 @@ La macro del **\_ \_ minuto MSF di MCI** è definita come segue:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ La macro del **\_ \_ minuto MSF di MCI** è definita come segue:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Macro MCI](mci-macros.md)

@@ -1,23 +1,23 @@
 ---
 title: Famiglia di indirizzi
-description: Le famiglie di indirizzi includono Internet Packet Exchange (IPX), protocollo IP versione 4 (IPv4) e IPv6 (Internet Protocol Version 6). Le famiglie di indirizzi possono anche essere definite gruppi di protocolli. Queste famiglie di indirizzi sono definite nella specifica RFC 1700.
+description: Le famiglie di indirizzi includono Internet Packet Exchange (IPX), Internet Protocol versione 4 (IPv4) e Internet Protocol versione 6 (IPv6). Le famiglie di indirizzi possono anche essere definite famiglie di protocolli. Queste famiglie di indirizzi sono definite in RFC 1700.
 ms.assetid: 30550fd7-4342-4df6-b7d0-edb8d069794c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80f84edd2c0380130d955e6e38d9ef1dc59c0f4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 576939949d927becab0a36a0f016ba455ea73c68604f43480b5c8597ea501316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030571"
 ---
 # <a name="address-family"></a>Famiglia di indirizzi
 
-Le famiglie di indirizzi includono Internet Packet Exchange (IPX), protocollo IP versione 4 (IPv4) e IPv6 (Internet Protocol Version 6). Le famiglie di indirizzi possono anche essere definite gruppi di protocolli. Queste famiglie di indirizzi sono definite nella [specifica RFC 1700](routing-protocols-request-for-comments.md).
+Le famiglie di indirizzi includono Internet Packet Exchange (IPX), Internet Protocol versione 4 (IPv4) e Internet Protocol versione 6 (IPv6). Le famiglie di indirizzi possono anche essere definite famiglie di protocolli. Queste famiglie di indirizzi sono definite in [RFC 1700](routing-protocols-request-for-comments.md).
 
- 
+ 
 
- 
+ 
 
 
 

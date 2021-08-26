@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà EsentResource. HasResource'
-title: Proprietà EsentResource. HasResource
+description: Altre informazioni sulla proprietà EsentResource.HasResource
+title: Proprietà EsentResource.HasResource
 TOCTitle: 'HasResource property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentResource.HasResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.hasresource(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5f69afdacff576636781fa01957ee2540793a1a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6f41ee7c8ead90084e64c0ed3067c68339d4310d7dace88728b4c75dbccf3b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970781"
 ---
-# <a name="esentresourcehasresource-property"></a>Proprietà EsentResource. HasResource
+# <a name="esentresourcehasresource-property"></a>Proprietà EsentResource.HasResource
 
 Ottiene un valore che indica se la risorsa sottostante è attualmente allocata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ protected bool HasResource { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -67,4 +67,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Membri di EsentResource](./esentresource-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

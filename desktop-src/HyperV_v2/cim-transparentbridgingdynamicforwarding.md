@@ -1,7 +1,7 @@
 ---
-description: Associa un servizio di bridging trasparente a una voce del database di inoltri.
+description: Associa un servizio di bridging trasparente a una voce del relativo database di inoltro.
 ms.assetid: 6db93e71-c9b7-4710-a9ee-99a1055cfd82
-title: Classe CIM_TransparentBridgingDynamicForwarding
+title: CIM_TransparentBridgingDynamicForwarding classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d089ca662880ad269cb9d9c63cb0935ff6de0b5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 931b556cad32a7e83f82798c277e65995aa4318156a3f423a9fe2d7e057c252f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980791"
 ---
-# <a name="cim_transparentbridgingdynamicforwarding-class"></a>CIM \_ TransparentBridgingDynamicForwarding (classe)
+# <a name="cim_transparentbridgingdynamicforwarding-class"></a>Classe CIM \_ TransparentBridgingDynamicForwarding
 
-Associa un servizio di bridging trasparente a una voce del database di inoltri.
+Associa un servizio di bridging trasparente a una voce del relativo database di inoltro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_TransparentBridgingDynamicForwarding : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ TransparentBridgingDynamicForwarding** presenta questi tipi di membri:
+La **classe CIM \_ TransparentBridgingDynamicForwarding** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ TransparentBridgingDynamicForwarding** dispone di queste proprietà.
+La **classe CIM \_ TransparentBridgingDynamicForwarding** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo di dati: **CIM \_ TransparentBridgingService**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Riferimento [**CIM \_ TransparentBridgingService**](cim-transparentbridgingservice.md) al servizio bridging trasparente.
+Riferimento [**CIM \_ TransparentBridgingService**](cim-transparentbridgingservice.md) al servizio di bridging trasparente.
 
 </dd> <dt>
 
@@ -74,10 +74,10 @@ Tipo di dati: **CIM \_ DynamicForwardingEntry**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**debole**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Weak**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Riferimento [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) alla voce del database di inoltri.
+Riferimento [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) alla voce del database di inoltro.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Riferimento [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) a
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Riferimento [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) a
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

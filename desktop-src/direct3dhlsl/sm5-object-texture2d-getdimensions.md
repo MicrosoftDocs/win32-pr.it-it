@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2D:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione Texture2D:: GetDimensions'
+title: Funzione Texture2D::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione Texture2D::GetDimensions
 ms.assetid: 921e425d-c0dd-4b8d-b590-0599fabfe606
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ba1fa832b51e86b5df3193895caa293bb006d82a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 46eb5101dc119d2779f60d2e2b39a42c695933a5bffd477b407fea56c930038c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067701"
 ---
-# <a name="texture2dgetdimensions-function"></a>Funzione Texture2D:: GetDimensions
+# <a name="texture2dgetdimensions-function"></a>Funzione Texture2D::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -42,39 +42,39 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ in\]
+*MipLevel* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
 
-facoltativo. Il livello mipmap (deve essere specificato se si usa *NumberOfLevels* ).
+facoltativo. Livello mipmap (deve essere specificato se *si usa NumberOfLevels).*
 
 </dd> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Altezza* \[ out\]
+*Altezza* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Altezza della risorsa, in Texel.
+Altezza della risorsa, in texel.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ out\]
+*NumberOfLevels* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Il numero di livelli di mipmap (richiede anche *MipLevel* ).
+Numero di livelli mipmap (richiede *anche MipLevel).*
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Nothing
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -111,7 +111,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -126,7 +126,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2D](sm5-object-texture2d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

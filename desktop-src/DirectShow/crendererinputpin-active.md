@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bdca1b9342e6e79b2975da38efa00f03c5ea8107
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fd54753cd2acc84972c2f8150d4894d29bc02a4039b854426e7a031a157af6cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054661"
 ---
 # <a name="crendererinputpinactive-method"></a>Metodo CRendererInputPin.Active
 
-Il `Active` metodo notifica al pin che il filtro è ora attivo. Questo metodo esegue l'override [**del metodo CBasePin::Active.**](cbasepin-active.md)
+Il `Active` metodo notifica al segnaposto che il filtro è ora attivo. Questo metodo esegue l'override [**del metodo CBasePin::Active.**](cbasepin-active.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Restituisce un **valore HRESULT.**
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWStructuredBuffer:: Load (int)'
-description: 'Legge i dati del buffer. | Funzione RWStructuredBuffer:: Load (int)'
+title: Funzione RWStructuredBuffer::Load(int)
+description: Legge i dati del buffer. | Funzione RWStructuredBuffer::Load(int)
 ms.assetid: 9CB40579-6BF8-468C-81B8-936D9940458E
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c20998faef8f5a018aaf95571be3c9d64730c436
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e3cc8fbd0cfa18f2ac6c5d7109e8690d829bbde2175e8808865e68e29e63c955
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067757"
 ---
-# <a name="rwstructuredbufferloadint-function"></a>Funzione RWStructuredBuffer:: Load (int)
+# <a name="rwstructuredbufferloadint-function"></a>Funzione RWStructuredBuffer::Load(int)
 
 Legge i dati del buffer.
 
@@ -39,7 +39,7 @@ Legge i dati del buffer.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,7 +52,7 @@ Posizione del buffer.
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWStructuredBuffer.**](sm5-object-rwstructuredbuffer.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,7 +60,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwstructuredbuffer-load.md)
+[Metodi di caricamento](rwstructuredbuffer-load.md)
 </dt> </dl>
 
  

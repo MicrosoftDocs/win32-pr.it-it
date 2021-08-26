@@ -1,10 +1,10 @@
 ---
-title: Enumerazione D3DX11_CHANNEL_FLAG (D3DX11tex. h)
-description: Nota la libreria dell'utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Questi flag vengono usati da funzioni che operano su uno o più canali in una trama.
+title: D3DX11_CHANNEL_FLAG enumerazione (D3DX11tex.h)
+description: Nota La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store. Questi flag vengono usati dalle funzioni che operano su uno o più canali in una trama.
 ms.assetid: 058a0a1e-3c1b-4397-a41a-2e47d878cd92
 keywords:
-- Enumerazione D3DX11_CHANNEL_FLAG Direct3D 11
-- Puntatore di enumerazione LPD3DX11_CHANNEL_FLAG Direct3D 11
+- D3DX11_CHANNEL_FLAG enumerazione Direct3D 11
+- LPD3DX11_CHANNEL_FLAG puntatore di enumerazione Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -15,21 +15,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e3097552637ce96663671dda443684ebda2b65
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 45f8142d34235a151638e1043928521666f2d1751319ee785d22b92004a14421
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104402026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028311"
 ---
-# <a name="d3dx11_channel_flag-enumeration"></a>\_Enumerazione flag del canale D3DX11 \_
+# <a name="d3dx11_channel_flag-enumeration"></a>Enumerazione CHANNEL FLAG D3DX11 \_ \_
 
 > [!Note]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app di Windows Store.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Windows Store.
 
  
 
-Questi flag vengono usati da funzioni che operano su uno o più canali in una trama.
+Questi flag vengono usati dalle funzioni che operano su uno o più canali in una trama.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,38 +50,38 @@ typedef enum D3DX11_CHANNEL_FLAG {
 
 <dl> <dt>
 
-<span id="D3DX11_CHANNEL_RED"></span><span id="d3dx11_channel_red"></span>**\_Canale D3DX11 \_ rosso**
+<span id="D3DX11_CHANNEL_RED"></span><span id="d3dx11_channel_red"></span>**D3DX11 \_ CHANNEL \_ RED**
 </dt> <dd>
 
-Indica che deve essere utilizzato il canale rosso.
+Indica che deve essere usato il canale rosso.
 
 </dd> <dt>
 
-<span id="D3DX11_CHANNEL_BLUE"></span><span id="d3dx11_channel_blue"></span>**\_Blu canale \_ D3DX11**
+<span id="D3DX11_CHANNEL_BLUE"></span><span id="d3dx11_channel_blue"></span>**D3DX11 \_ CHANNEL \_ BLUE**
 </dt> <dd>
 
 Indica che deve essere utilizzato il canale blu.
 
 </dd> <dt>
 
-<span id="D3DX11_CHANNEL_GREEN"></span><span id="d3dx11_channel_green"></span>**\_Canale D3DX11 \_ verde**
+<span id="D3DX11_CHANNEL_GREEN"></span><span id="d3dx11_channel_green"></span>**VERDE CANALE D3DX11 \_ \_**
 </dt> <dd>
 
-Indica che deve essere utilizzato il canale verde.
+Indica che deve essere usato il canale verde.
 
 </dd> <dt>
 
-<span id="D3DX11_CHANNEL_ALPHA"></span><span id="d3dx11_channel_alpha"></span>**\_Alfa canale \_ D3DX11**
+<span id="D3DX11_CHANNEL_ALPHA"></span><span id="d3dx11_channel_alpha"></span>**D3DX11 \_ CHANNEL \_ ALPHA**
 </dt> <dd>
 
-Indica che deve essere utilizzato il canale alfa.
+Indica che deve essere usato il canale alfa.
 
 </dd> <dt>
 
-<span id="D3DX11_CHANNEL_LUMINANCE"></span><span id="d3dx11_channel_luminance"></span>**\_ \_ Luminanza canale D3DX11**
+<span id="D3DX11_CHANNEL_LUMINANCE"></span><span id="d3dx11_channel_luminance"></span>**LUMINANCE DEL CANALE D3DX11 \_ \_**
 </dt> <dd>
 
-Indica che deve essere utilizzato il luminaces dei canali rosso, verde e blu.
+Indica che devono essere usate le luminesi dei canali rosso, verde e blu.
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ Indica che deve essere utilizzato il luminaces dei canali rosso, verde e blu.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
 
 
 

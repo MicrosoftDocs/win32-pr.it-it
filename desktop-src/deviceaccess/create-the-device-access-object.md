@@ -4,12 +4,12 @@ description: Questo argomento illustra come creare un'istanza dell'oggetto di ac
 ms.assetid: 26619A25-67FE-44DC-82DD-36076326748D
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: 9fee82f84a9325472928de69513e5f8e1c3ea1d1
-ms.sourcegitcommit: 1f917afc149b5cc449a4a25a87de311e4842734b
+ms.openlocfilehash: c90252e2a906928706fa8577e133a019482976b4d5dd8e4a7cb1ebd4fb245ec8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113689214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029099"
 ---
 # <a name="implement-the-device-access-object"></a>Implementare l'oggetto Device Access
 
@@ -135,4 +135,4 @@ Return Value:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Esempio di accesso ai driver personalizzati,](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample) [app per dispositivi UWP per dispositivi interni,](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) [Hardware Dev Center](/windows-hardware/drivers/)
+[Esempio di accesso ai driver](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample)personalizzati, app per dispositivi [UWP per dispositivi interni,](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) [Hardware Dev Center](/windows-hardware/drivers/)

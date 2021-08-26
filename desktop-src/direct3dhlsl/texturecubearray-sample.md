@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di esempio TextureCubeArray:: TextureCubeArray'
-description: 'Campiona una trama. | Metodi di esempio TextureCubeArray:: TextureCubeArray'
+title: Metodi di esempio TextureCubeArray::TextureCubeArray
+description: Campio una trama. | Metodi di esempio TextureCubeArray::TextureCubeArray
 ms.assetid: D63751DB-68AB-4F62-8719-9232FA35F649
 keywords:
 - Metodi di esempio HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 1e1adccbb98cc3f4f32471e86bbee45fec51d3b4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a9276efc08fbc313f145957319f737f979005e47d1b8aa7ebcb0f0687910103e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067291"
 ---
-# <a name="texturecubearraysample-methods"></a>Metodi TextureCubeArray:: Sample
+# <a name="texturecubearraysample-methods"></a>Metodi TextureCubeArray::Sample
 
-Campiona una trama.
+Campio una trama.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Campiona una trama.
 
 | Metodo                                                                      | Descrizione                                                                                                                               |
 |:----------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Esempio (S, float)**](dx-graphics-hlsl-to-sample.md)                       | Campiona una trama.<br/>                                                                                                             |
-| [**Esempio (S, float, float)**](tcubearray-sample-s-float-float-.md)           | Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.<br/>                                      |
-| [**Esempio (S, float, float, uint)**](tcubearray-sample-s-float-float-uint-.md) | Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in e restituisce lo stato dell'operazione.<br/> |
+| [**Sample(S,float)**](dx-graphics-hlsl-to-sample.md)                       | Campio una trama.<br/>                                                                                                             |
+| [**Sample(S,float,float)**](tcubearray-sample-s-float-float-.md)           | Campionare una trama con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione.<br/>                                      |
+| [**Sample(S,float,float,uint)**](tcubearray-sample-s-float-float-uint-.md) | Campionare una trama con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione e restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Campiona una trama.
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto Texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

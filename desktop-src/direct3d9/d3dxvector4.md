@@ -1,5 +1,5 @@
 ---
-description: 'Struttura D3DXVECTOR4 (D3dx9math.h): descrive un vettore a quattro componenti che include overload degli operatori e cast di tipo.'
+description: "Struttura D3DXVECTOR4 (D3dx9math.h): descrive un vettore a quattro componenti che include overload dell'operatore e cast di tipi."
 ms.assetid: fbfe7851-7bec-4fa0-b4dc-52f5cb83d0a4
 title: Struttura D3DXVECTOR4 (D3dx9math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: d053c6d26df600fdf09d54eb66866014478845be
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0ffb6a440e58221edc272a919522b3d4f44b68cf3ac49102185e0759bb11b89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952241"
 ---
 # <a name="d3dxvector4-structure-d3dx9mathh"></a>Struttura D3DXVECTOR4 (D3dx9math.h)
 
-Descrive un vettore a quattro componenti che include gli overload degli operatori e i cast di tipo.
+Descrive un vettore a quattro componenti che include overload dell'operatore e cast di tipi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ Componente y.
 
 </dd> <dt>
 
-**Z**
+**z**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**

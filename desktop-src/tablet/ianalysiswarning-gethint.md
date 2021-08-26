@@ -1,7 +1,7 @@
 ---
-description: Recupera l'hint di analisi che ha generato l'avviso.
+description: Recupera l'hint di analisi che ha causato l'avviso.
 ms.assetid: 715aa4b2-6c45-414b-96f2-44c73a073213
-title: 'Metodo IAnalysisWarning:: GetHint (IACom. h)'
+title: Metodo IAnalysisWarning::GetHint (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 2c38a22b799eb6836a85a42748f60207ee7e997e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51eb76839b157c2ac9611ef9be978ea967c8e9b3506513a23b0ca70906dd32b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940511"
 ---
-# <a name="ianalysiswarninggethint-method"></a>Metodo IAnalysisWarning:: GetHint
+# <a name="ianalysiswarninggethint-method"></a>Metodo IAnalysisWarning::GetHint
 
-Recupera l'hint di analisi che ha generato l'avviso.
+Recupera l'hint di analisi che ha causato l'avviso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,25 +39,25 @@ HRESULT GetHint(
 
 <dl> <dt>
 
-*pAnalysisHint* \[ out\]
+*pAnalysisHint* \[ Cambio\]
 </dt> <dd>
 
-Nodo di contesto dell'hint di analisi che ha causato questo avviso o **null** se un hint di analisi non ha causato questo avviso.
+Nodo di contesto dell'hint di analisi che ha causato l'avviso oppure **NULL se** un hint di analisi non ha generato questo avviso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su \* *pAnalysisHint* quando non è più necessario usare il nodo di contesto dell'hint di analisi.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su \* *pAnalysisHint* quando non è più necessario usare il nodo di contesto dell'hint di analisi.
 
  
 
-Un esempio di hint di analisi che genera un [**IAnalysisWarning**](ianalysiswarning.md) è un hint di analisi che contiene un controllo del controllo ortografico digitato in modo errato. In questo caso, l'analisi dell'input penna restituisce un [**IAnalysisStatus**](ianalysisstatus.md) contenente un **IAnalysisWarning** che fa riferimento al nodo di contesto dell'hint di analisi con il controllo ortografico errato. Inoltre, in questo caso, il metodo [**IAnalysisWarning:: GetWarningCode**](ianalysiswarning-getwarningcode.md) dell'avviso di analisi restituisce un valore [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) di **AnalysisWarningCode \_ FactoidNotSupported**.
+Un esempio di hint di analisi che genera [**un IAnalysisWarning**](ianalysiswarning.md) è un hint di analisi che contiene un factoid digitato in modo non corretto. In questo caso, l'analisi input penna restituisce un [**oggetto IAnalysisStatus**](ianalysisstatus.md) che contiene **un elemento IAnalysisWarning** che fa riferimento al nodo di contesto dell'hint di analisi con il factoid con errori di ortografia. In questo caso, il metodo [**IAnalysisWarning::GetWarningCode**](ianalysiswarning-getwarningcode.md) dell'avviso di analisi restituisce un valore [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) di **AnalysisWarningCode \_ FactoidNotSupported.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,9 +65,9 @@ Un esempio di hint di analisi che genera un [**IAnalysisWarning**](ianalysiswarn
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,16 +82,16 @@ Un esempio di hint di analisi che genera un [**IAnalysisWarning**](ianalysiswarn
 [**IAnalysisStatus**](ianalysisstatus.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
 [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

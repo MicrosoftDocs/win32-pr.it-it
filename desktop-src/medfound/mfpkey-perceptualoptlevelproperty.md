@@ -1,17 +1,17 @@
 ---
 description: Specifica se il codec deve usare l'ottimizzazione percettiva conservativa durante la codifica.
 ms.assetid: f44fd932-d8f8-46c7-b17c-27e6141408ab
-title: Proprietà MFPKEY_PERCEPTUALOPTLEVEL (Wmcodecdsp. h)
+title: MFPKEY_PERCEPTUALOPTLEVEL proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d86857ca9d7e4205afc0baf9c212e92606511ffc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f9eb74ae025dbddbdea7f76c2af8b15e912cf80ebd06e810a5214bf9798d1bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953851"
 ---
-# <a name="mfpkey_perceptualoptlevel-property"></a>\_Proprietà PERCEPTUALOPTLEVEL di MFPKEY
+# <a name="mfpkey_perceptualoptlevel-property"></a>Proprietà MFPKEY \_ PERCEPTUALOPTLEVEL
 
 Specifica se il codec deve usare l'ottimizzazione percettiva conservativa durante la codifica.
 
@@ -29,11 +29,11 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-L'ottimizzazione percettiva conservativa è un processo mediante il quale il codec tenta di identificare le aree "importanti" e "non importanti" nel frame del video. Dopo aver identificato queste aree del frame, il codec fornirà una priorità più elevata alla qualità delle aree importanti, a scapito della qualità delle aree non importanti.
+L'ottimizzazione percettiva conservativa è un processo tramite il quale il codec tenta di identificare le aree "importanti" e "non importanti" nel fotogramma video. Dopo aver identificato queste aree del frame, il codec assegna una priorità più alta alla qualità delle aree importanti, a scapito della qualità delle aree non importanti.
 
-L'ottimizzazione percettiva enfatizza l'aspetto dell'immagine come corretta per gli occhi umani, anziché insistere su una rigorosa precisione matematica.
+L'ottimizzazione percettiva evidenzia la correttezza dell'immagine all'occhio umano, invece di fare in modo che la precisione matematica sia rigorosa.
 
-I risultati dell'ottimizzazione variano notevolmente a seconda del tipo di video da codificare. Questa funzionalità può essere adatta per la codifica a bassa velocità di bit e bassa risoluzione (ad esempio, lo streaming web), ma dovrebbe essere evitata quando si mira alla qualità del video di archiviazione.
+I risultati dell'ottimizzazione variano notevolmente a seconda del tipo di video da codificare. Questa funzionalità potrebbe essere particolarmente adatta per la codifica a bassa velocità in bit e a bassa risoluzione (ad esempio, lo streaming Web), ma probabilmente dovrebbe essere evitata quando si punta alla qualità video di archiviazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ I risultati dell'ottimizzazione variano notevolmente a seconda del tipo di video
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ I risultati dell'ottimizzazione variano notevolmente a seconda del tipo di video
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

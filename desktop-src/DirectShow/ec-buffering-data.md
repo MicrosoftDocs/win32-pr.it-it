@@ -1,19 +1,19 @@
 ---
-description: Il grafico memorizza nel buffer i dati o ha interrotto il buffering dei dati.
+description: Il grafico sta buffering dei dati o ha interrotto la memorizzazione nel buffer dei dati.
 ms.assetid: 39e8b151-0323-42b3-99f0-3dcd230925c8
-title: EC_BUFFERING_DATA (dshow. h)
+title: EC_BUFFERING_DATA (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1395a10458abd7a29fdb65e7ab55fba62328d6d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dc937973db8435657d131ff4adea83892bf87681bb3db9b7d016565f5c38670
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965971"
 ---
-# <a name="ec_buffering_data"></a>\_dati di buffering EC \_
+# <a name="ec_buffering_data"></a>EC \_ BUFFERING \_ DATA
 
-Il grafico memorizza nel buffer i dati o ha interrotto il buffering dei dati.
+Il grafico sta buffering dei dati o ha interrotto la memorizzazione nel buffer dei dati.
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,7 +22,7 @@ Il grafico memorizza nel buffer i dati o ha interrotto il buffering dei dati.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**Bool**) **True** se il grafico sta iniziando a memorizzare nel buffer oppure **false** se il grafico ha interrotto il buffering.
+(**BOOL**) **TRUE** se il grafico inizia a eseguire il buffering oppure **FALSE** se il grafico ha interrotto la memorizzazione nel buffer.
 
 </dd> <dt>
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Un filtro può inviare questo evento se è necessario che i dati vengano memorizzati nel buffer da un'origine esterna. È possibile, ad esempio, caricare i dati da una rete. L'applicazione può utilizzare questo evento per modificare l'interfaccia utente.
+Un filtro può inviare questo evento se deve eseguire il buffer dei dati da un'origine esterna. Ad esempio, potrebbe caricare dati da una rete. L'applicazione può usare questo evento per modificare l'interfaccia utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Un filtro può inviare questo evento se è necessario che i dati vengano memoriz
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

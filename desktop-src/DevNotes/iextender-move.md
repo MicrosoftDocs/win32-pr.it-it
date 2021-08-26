@@ -1,7 +1,7 @@
 ---
-description: Sposta un MDIForm, un form o un controllo.
+description: Sposta un oggetto MDIForm, un form o un controllo.
 ms.assetid: 963e6533-f571-4043-bdd8-2596df6b5b35
-title: 'Metodo IExtender:: Move'
+title: Metodo IExtender::Move
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ole2disp.dll
 - Oleaut32.dll
-ms.openlocfilehash: 2c7ed806629f0e5e1bb0cdee5c76910728fd651d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13002457952490588fa9e9ad40e7f66e7d31465b74f9757a3193ccaed1e8bf7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002101"
 ---
-# <a name="iextendermove-method"></a>Metodo IExtender:: Move
+# <a name="iextendermove-method"></a>Metodo IExtender::Move
 
-Sposta un MDIForm, un form o un controllo.
+Sposta un oggetto MDIForm, un form o un controllo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ void Move(
 
 <dl> <dt>
 
-a *sinistra* \[ in\]
+*left* \[ Pollici\]
 </dt> <dd>
 
 Bordo sinistro del form o del controllo.
 
 </dd> <dt>
 
-in *alto* \[ in\]
+*top* \[ Pollici\]
 </dt> <dd>
 
 Bordo superiore del form o del controllo.
 
 </dd> <dt>
 
-*larghezza* \[ in\]
+*width* \[ Pollici\]
 </dt> <dd>
 
 Larghezza del form o del controllo.
 
 </dd> <dt>
 
-*altezza* \[ in\]
+*height* \[ Pollici\]
 </dt> <dd>
 
 Altezza del form o del controllo.

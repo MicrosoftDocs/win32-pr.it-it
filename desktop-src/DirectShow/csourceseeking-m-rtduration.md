@@ -1,7 +1,7 @@
 ---
-description: 'Durata del flusso. Per impostazione predefinita, il valore viene impostato sul valore della variabile membro CSourceSeeking:: m \_ rtStop.'
+description: Durata del flusso. Per impostazione predefinita, il valore è impostato sul valore della variabile membro CSourceSeeking::m \_ rtStop.
 ms.assetid: a87b321e-3179-4485-969b-bf12cb634b43
-title: 'Membro CSourceSeeking:: m_rtDuration (Ctlutil. h)'
+title: Membro CSourceSeeking::m_rtDuration (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e188a29689a6dd1a54ef401f8bd2677e30989972
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6aa62a3cdf906a4e9666b7786c08e49fca250ef042d187902132410cc2f0abaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053971"
 ---
-# <a name="csourceseekingm_rtduration-member"></a>Membro rtDuration di CSourceSeeking:: m \_
+# <a name="csourceseekingm_rtduration-member"></a>Membro CSourceSeeking::m \_ rtDuration
 
-Durata del flusso. Per impostazione predefinita, il valore viene impostato sul valore della variabile membro [**CSourceSeeking:: m \_ rtStop**](csourceseeking-m-rtstop.md) .
+Durata del flusso. Per impostazione predefinita, il valore è impostato sul valore della variabile membro [**CSourceSeeking::m \_ rtStop.**](csourceseeking-m-rtstop.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ CRefTime m_rtDuration;
 
 ## <a name="remarks"></a>Osservazioni
 
-Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m** .
+Mantenere la **sezione \_ critica m pLock** prima di accedere a questa variabile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

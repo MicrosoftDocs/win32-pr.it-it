@@ -1,19 +1,19 @@
 ---
-description: Si verifica in seguito alla modifica della selezione dell'input penna all'interno del controllo InkPicture, ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di selezione.
+description: Si verifica quando la selezione dell'input penna all'interno del controllo InkPicture viene modificata, ad esempio tramite modifiche all'interfaccia utente, procedure di taglia e incolla o la proprietà Selection.
 ms.assetid: e300ec91-e8f3-473f-b526-efeafafaa32a
-title: Evento InkPicture. SelectionChanged (Msinkaut. h)
+title: Evento InkPicture.SelectionChanged (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14594efe4e5ecda64167ec9a0e075fc60d8e9a19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a1fce27d9aa0dd043c5e474d790c1bd9737a9c10bffbed3eff6a287be67030f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939001"
 ---
-# <a name="inkpictureselectionchanged-event"></a>Evento InkPicture. SelectionChanged
+# <a name="inkpictureselectionchanged-event"></a>Evento InkPicture.SelectionChanged
 
-Si verifica in seguito alla modifica della selezione dell'input penna all'interno del controllo [InkPicture](inkpicture-control-reference.md) , ad esempio tramite le modifiche all'interfaccia utente, le procedure taglia e incolla o la proprietà di [**selezione**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection) .
+Si verifica quando la selezione dell'input penna all'interno del controllo [InkPicture](inkpicture-control-reference.md) viene modificata, ad esempio tramite modifiche all'interfaccia utente, procedure di taglia e incolla o la [**proprietà Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -26,7 +26,7 @@ void SelectionChanged();
 
 ## <a name="parameters"></a>Parametri
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -34,7 +34,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su questo evento, vedere l'evento [**SelectionChanged**](inkoverlay-selectionchanged.md) dell'oggetto [**InkOverlay**](inkoverlay-class.md) , che ha la stessa funzionalità.
+Per altri dettagli su questo evento, fare riferimento all'evento [**SelectionChanged**](inkoverlay-selectionchanged.md) dell'oggetto [**InkOverlay,**](inkoverlay-class.md) che ha la stessa funzionalità.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,9 +42,9 @@ Per ulteriori informazioni su questo evento, vedere l'evento [**SelectionChanged
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -53,10 +53,10 @@ Per ulteriori informazioni su questo evento, vedere l'evento [**SelectionChanged
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**Controllo InkPicture della proprietà Selection \[\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+[**Controllo \[ InkPicture della proprietà Selection\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 </dt> </dl>
 
  

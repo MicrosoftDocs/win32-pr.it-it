@@ -3,35 +3,35 @@ title: Associazioni di sicurezza
 description: Un'associazione di sicurezza è la specifica di un token di sicurezza e indica al runtime come ottenere e usare un token di sicurezza per la sicurezza del canale.
 ms.assetid: 3e50e0fb-a7ca-4615-ac4c-5d93988e6460
 keywords:
-- Associazioni di sicurezza servizi Web per Windows
+- Servizi Web di associazioni di sicurezza per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a263c1a79212f3438e77c3dca519f6493cf40e
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 4afc668e6dc6ab42e2d57066ecfb47ce337603bcadeccfb6b12a14a0e0550381
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104118670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054541"
 ---
 # <a name="security-bindings"></a>Associazioni di sicurezza
 
-Un'associazione di sicurezza è la specifica di un token di sicurezza e indica al runtime come ottenere e usare un token di sicurezza per la sicurezza del canale. Il token di sicurezza contiene informazioni che giustificano il diritto di accesso alle risorse. Potrebbe inoltre disporre di una chiave crittografica associata per eseguire le firme e la crittografia.
+Un'associazione di sicurezza è la specifica di un token di sicurezza e indica al runtime come ottenere e usare un token di sicurezza per la sicurezza del canale. Il token di sicurezza contiene informazioni che garantisce il diritto di accedere alle risorse. Può anche avere una chiave crittografica associata per l'esecuzione di firme e crittografia.
 
 
-Ogni associazione di sicurezza contiene una raccolta specifica di [impostazioni di associazione di sicurezza](security-binding-settings.md) facoltative che hanno come ambito il token di sicurezza definito. Contiene anche le [credenziali di sicurezza](security-credentials.md), che rappresentano l'evidenza di sicurezza, ad esempio nome utente e password o certificati, necessari per creare i token di sicurezza.
+Ogni associazione di sicurezza contiene la propria raccolta di impostazioni di [associazione di](security-binding-settings.md) sicurezza facoltative che hanno come ambito il token di sicurezza definito. Contiene anche le [credenziali di sicurezza](security-credentials.md), che rappresentano l'evidenza di sicurezza (ad esempio nome utente e password o certificati) necessaria per creare i token di sicurezza.
 
 I callback seguenti fanno parte dell'associazione di sicurezza:
 
--   [**\_ \_ callback SAML WS \_ Validate**](/windows/desktop/api/WebServices/nc-webservices-ws_validate_saml_callback)
+-   [**WS \_ VALIDATE \_ SAML \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_validate_saml_callback)
 
 Le enumerazioni seguenti fanno parte dell'associazione di sicurezza:
 
--   [**\_utilizzo della \_ sicurezza del messaggio WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_message_security_usage)
--   [**\_tipo di \_ autenticatore WS SAML \_**](/windows/desktop/api/WebServices/ne-webservices-ws_saml_authenticator_type)
--   [**\_tipo di \_ associazione di sicurezza WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_type)
--   [**\_tipo di \_ handle della chiave di sicurezza WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_handle_type)
+-   [**UTILIZZO DELLA SICUREZZA \_ DEI \_ MESSAGGI WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_message_security_usage)
+-   [**TIPO DI \_ \_ AUTENTICATORE SAML WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_saml_authenticator_type)
+-   [**TIPO DI \_ ASSOCIAZIONE DI \_ SICUREZZA WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_security_binding_type)
+-   [**TIPO DI \_ HANDLE DELLA CHIAVE DI SICUREZZA \_ \_ \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_security_key_handle_type)
 
 Le funzioni seguenti fanno parte dell'associazione di sicurezza:
 
@@ -41,22 +41,22 @@ Le funzioni seguenti fanno parte dell'associazione di sicurezza:
 
 Le strutture seguenti fanno parte dell'associazione di sicurezza:
 
--   [**\_handle della \_ \_ chiave di sicurezza asimmetrica \_ \_ di WS capi**](/windows/desktop/api/WebServices/ns-webservices-ws_capi_asymmetric_security_key_handle)
--   [**\_ \_ \_ autenticatore SAML firmato da WS CERT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_signed_saml_authenticator)
--   [**\_binding di \_ sicurezza di autenticazione dell'intestazione WS http \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding)
--   [**\_binding di \_ \_ sicurezza del messaggio WS Kerberos APREQ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding)
--   [**BINDING di sicurezza del trasporto di WS \_ NAMEDPIPE \_ SSPI \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_namedpipe_sspi_transport_security_binding)
--   [**\_handle della \_ \_ chiave di sicurezza asimmetrica WS NCRYPT \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ncrypt_asymmetric_security_key_handle)
--   [**\_handle di \_ \_ chiave di sicurezza simmetrica WS RAW \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_raw_symmetric_security_key_handle)
--   [**\_ \_ autenticatore WS SAML**](/windows/desktop/api/WebServices/ns-webservices-ws_saml_authenticator)
--   [**\_binding di \_ sicurezza del messaggio WS SAML \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_saml_message_security_binding)
--   [**\_binding di sicurezza WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_binding)
--   [**\_associazione di \_ sicurezza del messaggio del contesto di sicurezza WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_context_message_security_binding)
--   [**\_handle della \_ chiave di sicurezza WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_key_handle)
--   [**\_binding di \_ sicurezza del trasporto \_ \_ di WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
--   [**\_binding di \_ \_ sicurezza del trasporto SSPI \_ \_ di WS TCP**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding)
--   [**\_binding di \_ \_ sicurezza messaggio WS nomeutente \_**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
--   [**\_associazione di \_ sicurezza del messaggio del token WS XML \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
+-   [**HANDLE DELLA CHIAVE DI \_ SICUREZZA \_ \_ \_ ASIMMETRICA WS CAPI \_**](/windows/desktop/api/WebServices/ns-webservices-ws_capi_asymmetric_security_key_handle)
+-   [**AUTENTICATORE SAML FIRMATO DA WS \_ CERT \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_signed_saml_authenticator)
+-   [**WS \_ HTTP \_ HEADER \_ AUTH \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_http_header_auth_security_binding)
+-   [**WS \_ KERBEROS \_ APREQ \_ MESSAGE \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_kerberos_apreq_message_security_binding)
+-   [**WS \_ NAMEDPIPE \_ SSPI \_ TRANSPORT \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_namedpipe_sspi_transport_security_binding)
+-   [**HANDLE DELLA CHIAVE \_ DI SICUREZZA \_ \_ ASIMMETRICA \_ WS NCRYPT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ncrypt_asymmetric_security_key_handle)
+-   [**HANDLE DI \_ CHIAVE DI \_ SICUREZZA \_ SIMMETRICA WS RAW \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_raw_symmetric_security_key_handle)
+-   [**AUTENTICATORE \_ SAML WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_saml_authenticator)
+-   [**WS \_ SAML \_ MESSAGE \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_saml_message_security_binding)
+-   [**ASSOCIAZIONE DI \_ SICUREZZA WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_binding)
+-   [**WS \_ SECURITY \_ CONTEXT \_ MESSAGE \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_security_context_message_security_binding)
+-   [**HANDLE DELLA \_ CHIAVE DI SICUREZZA \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_key_handle)
+-   [**WS \_ SSL \_ TRANSPORT \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
+-   [**ASSOCIAZIONE DI \_ SICUREZZA \_ DEL TRASPORTO SSPI TCP WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_tcp_sspi_transport_security_binding)
+-   [**WS \_ USERNAME \_ MESSAGE \_ SECURITY \_ BINDING**](/windows/desktop/api/WebServices/ns-webservices-ws_username_message_security_binding)
+-   [**ASSOCIAZIONE DI \_ SICUREZZA WS XML \_ TOKEN \_ \_ MESSAGE \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
 
  
 

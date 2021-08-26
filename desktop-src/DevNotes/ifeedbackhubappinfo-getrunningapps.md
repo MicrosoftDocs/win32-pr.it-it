@@ -1,5 +1,5 @@
 ---
-description: "Metodo IFeedbackHubAppInfo::GetRunningApps: questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
+description: "Metodo IFeedbackHubAppInfo::GetRunningApps: questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione."
 ms.assetid: 2BD60D22-38AD-4027-B733-0B62F33AA4B3
 title: Metodo IFeedbackHubAppInfo::GetRunningApps
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3bb7565d75948fe951d87da49fe00cd4ff565115
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b0c27c672c7f65a524a0c8042281b1fee17ed113e8a75f77435151b685ef3199
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001991"
 ---
 # <a name="ifeedbackhubappinfogetrunningapps-method"></a>Metodo IFeedbackHubAppInfo::GetRunningApps
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,10 +38,10 @@ virtual void GetRunningApps(
 
 <dl> <dt>
 
-*risultato* \[ out, facoltativo\]
+*result* \[ out, facoltativo\]
 </dt> <dd>
 
-Questa API non è disponibile per tutte le app. A meno che l'app non sia stata appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
+Questa API non è disponibile per tutte le app. A meno che l'app non sia appositamente predisposta da Microsoft, le chiamate a queste API avranno esito negativo in fase di esecuzione.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2016 \[\]<br/> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>          |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: È possibile creare lo sfondo della finestra, anziché fare in che il sistema lo disegni.
+description: È possibile disegnare uno sfondo della finestra personalizzato anziché fare in modo che il sistema la dise disegna per conto dell'utente.
 ms.assetid: 72a342dc-2766-4ec9-b4c6-5ac3c550ea25
-title: Disegno di uno sfondo personalizzato della finestra
+title: Disegno di uno sfondo di finestra personalizzato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 437a88bec680a6f35e84f5444fc90a45f98da533
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4248f7d7a1ae27ae09c93e95734fd72285028e1185b6d35110e5141fcbf88c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966011"
 ---
-# <a name="drawing-a-custom-window-background"></a>Disegno di uno sfondo personalizzato della finestra
+# <a name="drawing-a-custom-window-background"></a>Disegno di uno sfondo di finestra personalizzato
 
-È possibile creare lo sfondo della finestra, anziché fare in che il sistema lo disegni. La maggior parte delle applicazioni specifica un handle di pennello o un valore di colore di sistema per il pennello di sfondo della classe durante la registrazione della classe della finestra; il sistema usa il pennello o il colore per creare lo sfondo. Se si imposta il pennello per lo sfondo della classe su **null**, tuttavia, il sistema invia un messaggio [**WM \_ ERASEBKGND**](../winmsg/wm-erasebkgnd.md) alla routine della finestra ogni volta che è necessario disegnare lo sfondo della finestra, consentendo di disegnare uno sfondo personalizzato.
+È possibile disegnare uno sfondo della finestra personalizzato anziché fare in modo che il sistema la dise disegna per conto dell'utente. La maggior parte delle applicazioni specifica un handle di pennello o un valore di colore di sistema per il pennello di sfondo della classe durante la registrazione della classe della finestra; il sistema usa il pennello o il colore per disegnare lo sfondo. Se tuttavia si imposta il pennello di sfondo della classe su **NULL,** il sistema invia un messaggio [**WM \_ ERASEBKGND**](../winmsg/wm-erasebkgnd.md) alla routine della finestra ogni volta che è necessario disegnare lo sfondo della finestra, consentendo di disegnare uno sfondo personalizzato.
 
-Nell'esempio seguente, la routine della finestra Disegna un modello a scacchi di grandi dimensioni che si adegua perfettamente alla finestra. La procedura riempie l'area client con un pennello bianco, quindi disegna rettangoli 13 20 per 20 utilizzando un pennello grigio. Il contesto del dispositivo di visualizzazione da utilizzare per il disegno dello sfondo viene specificato nel parametro *wParam* per il messaggio.
+Nell'esempio seguente la routine della finestra disegna un modello a scacchiera di grandi dimensioni che si adatta perfettamente alla finestra. La procedura riempie l'area client con un pennello bianco e quindi disegna tre rettangoli 20 per 20 usando un pennello grigio. Il contesto di dispositivo di visualizzazione da utilizzare per disegnare lo sfondo è specificato nel *parametro wParam* per il messaggio.
 
 
 ```C++
@@ -50,7 +50,7 @@ case WM_ERASEBKGND:
 
 
 
-Se l'applicazione disegna la propria finestra ridotta a icona, il sistema invia anche il messaggio [**WM \_ ERASEBKGND**](../winmsg/wm-erasebkgnd.md) alla routine della finestra per disegnare lo sfondo della finestra ridotta a icona. È possibile usare la stessa tecnica usata da [**WM \_ Paint**](wm-paint.md) per determinare se la finestra è ridotta [**a icona, chiamare la funzione**](/windows/win32/api/winuser/nf-winuser-isiconic) IsTrue e verificare la presenza del valore restituito **true**.
+Se l'applicazione disegna una finestra ridotta a icona, il sistema invia anche il messaggio [**WM \_ ERASEBKGND**](../winmsg/wm-erasebkgnd.md) alla routine della finestra per disegnare lo sfondo per la finestra ridotta a icona. È possibile usare la stessa tecnica usata da [**WM \_ PAINT**](wm-paint.md) per determinare se la finestra è ridotta a icona, vale a dire chiamare la funzione [**IsIconic**](/windows/win32/api/winuser/nf-winuser-isiconic) e verificare la presenza del valore restituito **TRUE.**
 
  
 

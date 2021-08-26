@@ -1,33 +1,33 @@
 ---
-description: Specifica se il codificatore utilizza vettori di movimento di occultamento. Questa proprietà si applica ai codificatori video MPEG.
+description: Specifica se il codificatore usa vettori di movimento di mascheramento. Questa proprietà si applica ai codificatori video MPEG.
 ms.assetid: 8b47a007-525c-4d02-8723-d6217600041e
-title: Proprietà AVEncMPVUseConcealmentMotionVectors (codecapis. h)
+title: Proprietà AVEncMPVUseConcealmentMotionVectors (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d5a9316e257ebbbb8ba72ce027fe4c8c84db92b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f2335eaf57e0fdcddcd52a66f9645d3467e8feea1d866e199b10a030728b793a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999891"
 ---
-# <a name="avencmpvuseconcealmentmotionvectors-property"></a>Proprietà AVEncMPVUseConcealmentMotionVectors
+# <a name="avencmpvuseconcealmentmotionvectors-property"></a>AVEncMPVUseConcealmentMotionVectors - proprietà
 
-Specifica se il codificatore utilizza vettori di movimento di occultamento. Questa proprietà si applica ai codificatori video MPEG.
+Specifica se il codificatore usa vettori di movimento di mascheramento. Questa proprietà si applica ai codificatori video MPEG.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMPVUseConcealmentMotionVectors**
+**CODECAPI \_ AVEncMPVUseConcealmentMotionVectors**
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore è **Variant \_ true**, il codificatore usa i vettori di movimento di occultamento.
+Se il valore è **VARIANT \_ TRUE,** il codificatore usa vettori di movimento di mascheramento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Se il valore è **Variant \_ true**, il codificatore usa i vettori di movimento 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows app desktop di Windows 2000 Server \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Se il valore è **Variant \_ true**, il codificatore usa i vettori di movimento 
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

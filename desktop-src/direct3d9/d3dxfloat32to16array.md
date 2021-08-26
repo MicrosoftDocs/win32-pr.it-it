@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc00df150c48e285d5478eb9b11df6c5203d6bcc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d4b02a85a22d8490b36ad32511af0d85294045502d4e32ba82b757ac34e21ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027731"
 ---
 # <a name="d3dxfloat32to16array-function-d3dx9mathh"></a>Funzione D3DXFloat32To16Array (D3dx9math.h)
 
-Converte una matrice di valori float a 32 bit in valori float a 16 bit.
+Converte una matrice di valori float a 32 bit in float a 16 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ D3DXFLOAT16* D3DXFloat32To16Array(
 
 Tipo: **[ **D3DXFLOAT16**](d3dxfloat16.md)\***
 
-Puntatore alla matrice di valori float a 16 bit.
+Puntatore alla matrice di float a 16 bit.
 
 </dd> <dt>
 

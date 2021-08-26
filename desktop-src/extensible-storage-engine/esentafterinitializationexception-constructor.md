@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentAfterInitializationException'
+description: Altre informazioni sul costruttore EsentAfterInitializationException
 title: Costruttore EsentAfterInitializationException
 TOCTitle: 'EsentAfterInitializationException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentAfterInitializationException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14faf4af15d04a02c80f10a86b310a47b799640
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e18d834c6e0623ade2f19e8494c5cb90dbe01d05b76701c5c4addcb6635b9390
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066741"
 ---
 # <a name="esentafterinitializationexception-constructor"></a>Costruttore EsentAfterInitializationException
 
 Inizializza una nuova istanza della classe EsentAfterInitializationException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentAfterInitializationException()
 
 [Membri di EsentAfterInitializationException](./esentafterinitializationexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

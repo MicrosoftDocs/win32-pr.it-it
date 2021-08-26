@@ -1,19 +1,19 @@
 ---
-title: Panoramica sul controllo pager
-description: Panoramica sul controllo pager
+title: Cenni preliminari sul controllo Pager
+description: Cenni preliminari sul controllo Pager
 ms.assetid: 858c50b7-d707-4e2c-ab49-1e8d247ce82b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39e1de647c9a43978870c74574966bc6eae4df4d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c995fbf96b3b1bff8190e327ed5b3889a5aac3778a0b20f2b4deb5480c738016
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970811"
 ---
-# <a name="pager-control-overviews"></a>Panoramica sul controllo pager
+# <a name="pager-control-overviews"></a>Cenni preliminari sul controllo Pager
 
--   [Controlli cercapersone](pager-controls.md)
+-   [Controlli pager](pager-controls.md)
 
  
 

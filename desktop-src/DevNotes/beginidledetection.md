@@ -1,7 +1,7 @@
 ---
-description: Inizia il monitoraggio dell'inattività.
+description: Avvia il monitoraggio dell'inattività.
 ms.assetid: fed5e4ae-2c2b-4b00-9230-b71aec9335c8
-title: BeginIdleDetection (funzione)
+title: Funzione BeginIdleDetection
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Msidle.dll
-ms.openlocfilehash: 06cd016dc4102ef2f5b0f351aa4836a7f9980645
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1bbb27114177a6f64f471b0122832bc09180988019bc23a63343920eb76221f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002321"
 ---
-# <a name="beginidledetection-function"></a>BeginIdleDetection (funzione)
+# <a name="beginidledetection-function"></a>Funzione BeginIdleDetection
 
-\[Questa funzione non è supportata e può essere modificata o non disponibile in futuro. Usare invece la funzione **GetLastInputInfo** .\]
+\[Questa funzione non è supportata e potrebbe essere modificata o non disponibile in futuro. Usare invece la **funzione GetLastInputInfo.**\]
 
-Inizia il monitoraggio dell'inattività.
+Avvia il monitoraggio dell'inattività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ DWORD WINAPI BeginIdleDetection(
 *pfnCallback* 
 </dt> <dd>
 
-Funzione chiamata quando lo stato di inattività viene modificato. Questo callback viene definito come segue:
+Funzione chiamata quando cambia lo stato di inattività. Questo callback viene definito come segue:
 
 ``` syntax
 typedef void (WINAPI* _IDLECALLBACK) (DWORD dwState);
@@ -73,11 +73,11 @@ Questo parametro deve essere impostato su zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 se la funzione ha esito positivo; in caso contrario, restituisce un codice di errore. Se, ad esempio, il valore di *dwReserved* è diverso da 0, vengono restituiti **\_ \_ dati non validi** .
+Restituisce 0 se la funzione ha esito positivo. In caso contrario, restituisce un codice di errore. Ad esempio, se *dwReserved* è diverso da 0, **viene restituito ERROR \_ INVALID \_ DATA.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) . Questa funzione non viene esportata per nome; specificare il numero ordinale 3 quando si chiama **GetProcAddress**.
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Questa funzione non viene esportata in base al nome. specificare l'ordinale 3 quando si **chiama GetProcAddress**.
 
 ## <a name="requirements"></a>Requisiti
 

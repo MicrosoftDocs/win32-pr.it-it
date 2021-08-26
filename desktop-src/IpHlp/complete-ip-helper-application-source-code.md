@@ -1,19 +1,19 @@
 ---
-description: Di seguito è riportato il codice sorgente completo per l'applicazione helper IP. Il controllo degli errori aggiuntivo è stato aggiunto al codice sorgente.
+description: Di seguito è riportato il codice sorgente completo per l'applicazione helper IP. È stato aggiunto un controllo degli errori aggiuntivo al codice sorgente.
 ms.assetid: c0290660-8a18-4d5c-8f0a-df15da1a9167
-title: Codice sorgente completo dell'applicazione helper IP
+title: Codice sorgente dell'applicazione helper IP completo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 964f32d99642f026a55b2cc0667daf56a7bd4077
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5baa4770abac979ae10285b9911de6a4f37a92cc01471adb4d9a08da3548eb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040381"
 ---
-# <a name="complete-ip-helper-application-source-code"></a>Codice sorgente completo dell'applicazione helper IP
+# <a name="complete-ip-helper-application-source-code"></a>Codice sorgente dell'applicazione helper IP completo
 
-Di seguito è riportato il codice sorgente completo per l'applicazione helper IP. Il controllo degli errori aggiuntivo è stato aggiunto al codice sorgente.
+Di seguito è riportato il codice sorgente completo per l'applicazione helper IP. È stato aggiunto un controllo degli errori aggiuntivo al codice sorgente.
 
 
 ```C++

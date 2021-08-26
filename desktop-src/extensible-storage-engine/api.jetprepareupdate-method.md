@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetPrepareUpdate'
-title: API. JetPrepareUpdate, metodo
+description: Altre informazioni sul metodo Api.JetPrepareUpdate
+title: Metodo Api.JetPrepareUpdate
 TOCTitle: 'JetPrepareUpdate method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetPrepareUpdate(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_prep)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetprepareupdate(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e8094fef5fcf008dd5f6eb6f2bfd05a0be1bf077
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8803768a1046afe535c6183757e44e0a00d0593ea970f75a1ef130db0e47e3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067141"
 ---
-# <a name="apijetprepareupdate-method"></a>API. JetPrepareUpdate, metodo
+# <a name="apijetprepareupdate-method"></a>Metodo Api.JetPrepareUpdate
 
 Preparare un cursore per l'aggiornamento.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,21 +65,21 @@ public static void JetPrepareUpdate(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione che avvia l'aggiornamento.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursore per il quale avviare l'aggiornamento.
+    Cursore per cui avviare l'aggiornamento.
 
 <!-- end list -->
 
-  - Prep  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_prep](./jet-prep-enumeration.md)  
+  - Preparazione  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_prep](./jet-prep-enumeration.md)  
     
     Tipo di aggiornamento da preparare.
 
@@ -89,6 +89,6 @@ public static void JetPrepareUpdate(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

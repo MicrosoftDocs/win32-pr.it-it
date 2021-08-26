@@ -1,24 +1,24 @@
 ---
-title: Attributo from (curve) (la)
-description: Attributo from (curve) (la)
+title: From Attribute (Curve)(VML)
+description: From Attribute (Curve)(VML)
 ms.assetid: 70e940c1-3fa8-4a30-9ca8-584483cea485
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d5f78dee46192efed48172a7d1f4d9cc77582f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4df431e9239f185ce83771f7822fe98e5bf491bd84a1deb7b869df7d3d2f235e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905499"
 ---
-# <a name="from-attribute-curvevml"></a>Attributo from (curve) (la)
+# <a name="from-attribute-curvevml"></a>From Attribute (Curve)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il punto iniziale di una curva. Proprietà di lettura/scrittura. **VgVector2D**.
 
@@ -26,25 +26,25 @@ Definisce il punto iniziale di una curva. Proprietà di lettura/scrittura. **VgV
 
 [Curva](msdn-online-vml-curve-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* da = " *Expression* " >
+<v: *element* from=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . from = "*Expression*"
+*element* .from="*expression*"
 
-*espressione* = *elemento*. from
+*expression* = *Elemento*.from
 
 **Osservazioni:**
 
-Definisce il punto iniziale di una curva di Bezier cubica nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è un elemento la, l' [unità](msdn-online-vml-units.md) predefinita è un pixel, ma è possibile specificare anche in cm, mm, PT, PC. Il valore predefinito è 0, 0.
+Definisce il punto iniziale di una curva di Bézier cubica nello spazio delle coordinate dell'elemento padre. Se l'elemento padre non è [](msdn-online-vml-units.md) un elemento VML, l'unità predefinita è un pixel (ma è possibile specificare anche in, cm, mm, pt, pc). Il valore predefinito è 0,0.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La curva è sorridente. Inizia a sinistra e termina a destra. I due punti di controllo si trovano lungo il modo in cui è possibile estrarre la curva per dare l'impressione di sorridere.
+La curva è sorridente. Inizia a sinistra e termina a destra. I due punti di controllo si trovano lungo il percorso in modo da strarre la curva verso il basso per dare l'aspetto di uno smile.
 
 
 ```HTML
@@ -56,6 +56,6 @@ La curva è sorridente. Inizia a sinistra e termina a destra. I due punti di con
 
 
 
- 
+ 
 
- 
+ 

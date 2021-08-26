@@ -1,7 +1,7 @@
 ---
 description: Restituisce lo stato vuoto verticale del dispositivo.
 ms.assetid: d09b684b-3482-424d-8a60-d123a65f9053
-title: Funzione NtGdiDdWaitForVerticalBlank (Ntgdi. h)
+title: Funzione NtGdiDdWaitForVerticalBlank (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: d138480e4a45a2b2cb67ece44ab8ceb67efae72d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4880dad9763372f01ba1bb91def46806fe077f0a115c98f850355853c70f1d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104125916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053331"
 ---
-# <a name="ntgdiddwaitforverticalblank-function"></a>NtGdiDdWaitForVerticalBlank (funzione)
+# <a name="ntgdiddwaitforverticalblank-function"></a>Funzione NtGdiDdWaitForVerticalBlank
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Restituisce lo stato vuoto verticale del dispositivo.
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdWaitForVerticalBlank(
 
 <dl> <dt>
 
-*hDirectDraw* \[ in\]
+*hDirectDraw* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto DirectDraw in modalità kernel creato in precedenza.
+Handle all'oggetto DirectDraw in modalità kernel creato in precedenza.
 
 </dd> <dt>
 
-*puWaitForVerticalBlankData* \[ in uscita\]
+*puWaitForVerticalBlankData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**DD \_ WAITFORVERTICALBLANKDATA**](/windows/win32/api/ddrawi/ns-ddrawi-ddhal_waitforverticalblankdata) che contiene le informazioni necessarie per ottenere lo stato vuoto verticale.
+Puntatore a [**una struttura \_ WAITFORVERTICALBLANKDATA DD**](/windows/win32/api/ddrawi/ns-ddrawi-ddhal_waitforverticalblankdata) che contiene le informazioni necessarie per ottenere lo stato vuoto verticale.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntatore a una struttura [**DD \_ WAITFORVERTICALBLANKDATA**](/windows/win32/ap
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Puntatore a una struttura [**DD \_ WAITFORVERTICALBLANKDATA**](/windows/win32/ap
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Puntatore a una struttura [**DD \_ WAITFORVERTICALBLANKDATA**](/windows/win32/ap
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Metodi FillOpacityMask di ID2D1DeviceContext
-description: Compilare utilizzando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. È necessario impostare la modalità di anti-aliasing della destinazione di rendering su alias.
+title: Metodi di ID2D1DeviceContext FillOpacityMask
+description: Riempire usando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. La modalità di antialiasing della destinazione di rendering deve essere impostata su con alias.
 ms.assetid: 79844FCE-BD42-4F57-B51B-A0ECC490A471
 keywords:
-- Metodo FillOpacityMask Direct2D
+- Metodi FillOpacityMask Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: bed73db9efdb2ee1a284a8ca151b7b1f5d1c2759
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 377fc9f87117f34893a07c8a302875001e9e91efb3ff74d967519fa98cfec52c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103872709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967021"
 ---
-# <a name="id2d1devicecontextfillopacitymask-methods"></a>Metodi ID2D1DeviceContext:: FillOpacityMask
+# <a name="id2d1devicecontextfillopacitymask-methods"></a>Metodi ID2D1DeviceContext::FillOpacityMask
 
-Compilare utilizzando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. È necessario impostare la modalità di anti-aliasing della destinazione di rendering su alias.
+Riempire usando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. La modalità di antialiasing della destinazione di rendering deve essere impostata su con alias.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Compilare utilizzando il canale alfa della bitmap della maschera di opacità for
 
 | Metodo                                                                                                                        | Descrizione                                                                                                                                                                               |
 |:------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**FillOpacityMask (ID2D1Bitmap \* , ID2D1Brush \* , d2d1 \_ Rect \_ f \* , d2d1 \_ Rect \_ f \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) | Compilare utilizzando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. È necessario impostare la modalità di anti-aliasing della destinazione di rendering su alias.<br/> |
-| [**FillOpacityMask (ID2D1Bitmap \* , ID2D1Brush \* , d2d1 \_ Rect \_ f&, d2d1 \_ Rect \_ f&)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f_))  | Compilare utilizzando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. È necessario impostare la modalità di anti-aliasing della destinazione di rendering su alias.<br/> |
-| [**FillOpacityMask (ID2D1Bitmap \* , ID2D1Brush \* , d2d1 \_ Rect \_ f&, d2d1 \_ Rect \_ f \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f)) | Compilare utilizzando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. È necessario impostare la modalità di anti-aliasing della destinazione di rendering su alias.<br/> |
+| [**FillOpacityMask (ID2D1Bitmap, \* ID2D1Brush, \* D2D1 \_ RECT \_ \* F, D2D1 \_ RECT \_ \* F)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f_constd2d1_rect_f)) | Riempire usando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. La modalità di antialiasing della destinazione di rendering deve essere impostata su con alias.<br/> |
+| [**FillOpacityMask (ID2D1Bitmap, \* ID2D1Brush, \* D2D1 \_ RECT F \_&, D2D1 \_ RECT F \_&)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f_))  | Riempire usando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. La modalità di antialiasing della destinazione di rendering deve essere impostata su con alias.<br/> |
+| [**FillOpacityMask (ID2D1Bitmap, \* ID2D1Brush, \* D2D1 \_ RECT F \_&, D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f)) | Riempire usando il canale alfa della bitmap della maschera di opacità fornita. L'opacità del pennello verrà modulata dalla maschera. La modalità di antialiasing della destinazione di rendering deve essere impostata su con alias.<br/> |
 
 
 

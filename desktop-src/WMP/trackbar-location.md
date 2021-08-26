@@ -1,24 +1,24 @@
 ---
-title: Posizione TrackBar
-description: Posizione TrackBar
+title: Posizione dell'oggetto Trackbar
+description: Posizione dell'oggetto Trackbar
 ms.assetid: 2384a87a-a263-4d47-a935-ee1b41851617
 keywords:
-- Windows Media Player Mobile Skins, trackbars
-- interfacce, TrackBar
-- riferimento per Skin, trackbars
-- TrackBar in interfacce, posizione
+- Windows Media Player Interfaccia per dispositivi mobili, trackbar
+- interfaccia, trackbar
+- informazioni di riferimento per le interfaccia, trackbar
+- trackbar nelle interfaccia, posizione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb195d24e56606dfe49a78f75b6357bbdd094473
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 375f3226010813dbdec9f690b9baa80b614147a2fb0bcd76989a78e0d0d34bd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001711"
 ---
-# <a name="trackbar-location"></a>Posizione TrackBar
+# <a name="trackbar-location"></a>Posizione dell'oggetto Trackbar
 
-È necessario definire la posizione del TrackBar che si desidera utilizzare. È necessario fornire quattro numeri interi positivi, separati da virgole, che definiscono la sinistra, la parte superiore, la larghezza e l'altezza dell'oggetto TrackBar, in pixel, rispetto all'immagine di sfondo.
+È necessario definire la posizione del trackbar da usare. È necessario specificare quattro numeri interi positivi, separati da virgole, che definiscono la sinistra, la parte superiore, la larghezza e l'altezza del trackbar, in pixel, rispetto all'immagine di sfondo.
 
 
 ```C++
@@ -32,12 +32,12 @@ ms.locfileid: "106298409"
 
 <dl> <dt>
 
-[**TrackBar**](trackbars.md)
+[**Trackbar**](trackbars.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,41 +1,41 @@
 ---
 title: Come creare una casella combinata semplice
-description: In questo argomento viene descritto come creare, aggiungere e recuperare elementi da una semplice casella combinata.
+description: Questo argomento descrive come creare, aggiungere e recuperare elementi da una casella combinata semplice.
 ms.assetid: E432AEC0-6C06-40C7-BBFE-B66C21DB8ACA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4175d435ac78795e7020fd84099d512cc65be20
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: eb1ab672e0beea90d07eadf05f14ffdc4a8181a4da7bf7940af50b00ddc69cde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920811"
 ---
 # <a name="how-to-create-a-simple-combo-box"></a>Come creare una casella combinata semplice
 
-In questo argomento viene descritto come creare, aggiungere e recuperare elementi da una semplice casella combinata. In particolare, gli esempi di codice associati dimostrano come eseguire le funzioni seguenti:
+Questo argomento descrive come creare, aggiungere e recuperare elementi da una casella combinata semplice. In particolare, gli esempi di codice che seguono illustrano come eseguire le funzioni seguenti:
 
--   Crea dinamicamente una casella combinata semplice in una finestra padre.
+-   Creare dinamicamente una casella combinata semplice in una finestra padre.
 -   Aggiungere un elenco di elementi alla casella combinata e visualizzare un elemento iniziale nel campo di selezione della casella combinata.
--   Rileva quando l'utente ha selezionato un elemento dalla casella combinata.
+-   Rilevare quando l'utente ha selezionato un elemento dalla casella combinata.
 -   Recupera l'elemento selezionato dalla casella combinata.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="step-1-create-an-instance-of-the-combo-box"></a>Passaggio 1: creare un'istanza della casella combinata.
+### <a name="step-1-create-an-instance-of-the-combo-box"></a>Passaggio 1: Creare un'istanza della casella combinata.
 
-L'applicazione di esempio chiama la funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) per creare una finestra figlio della finestra dell'applicazione. Lo stile della finestra [**\_ ComboBox WC**](common-control-window-classes.md) specifica che si tratta di una casella combinata.
+L'applicazione di esempio [**chiama la funzione CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) per creare una finestra figlio della finestra dell'applicazione. Lo [**stile della finestra \_ COMBOBOX WC**](common-control-window-classes.md) specifica che si tratta di una casella combinata.
 
 
 ```C++
@@ -60,9 +60,9 @@ L'applicazione di esempio chiama la funzione [**CreateWindow**](/windows/desktop
 
 
 
-### <a name="step-2-load-the-combo-box-with-the-item-list"></a>Passaggio 2: caricare la casella combinata con l'elenco di elementi.
+### <a name="step-2-load-the-combo-box-with-the-item-list"></a>Passaggio 2: Caricare la casella combinata con l'elenco di elementi.
 
-L'applicazione invia un messaggio [**CB \_ ADDSTRING**](cb-addstring.md) per ogni elemento nell'elenco. Dopo il caricamento dell'elenco, l'applicazione invia il messaggio di errore [**CB \_**](cb-setcursel.md) per visualizzare un elemento iniziale nel campo di selezione della casella combinata.
+L'applicazione invia un [**messaggio \_ ADDSTRING CB**](cb-addstring.md) per ogni elemento nell'elenco. Dopo il caricamento dell'elenco, l'applicazione invia il messaggio [**\_ CB SETCURSEL**](cb-setcursel.md) per visualizzare un elemento iniziale nel campo di selezione della casella combinata.
 
 
 ```C++
@@ -95,14 +95,14 @@ SendMessage(hWndComboBox, CB_SETCURSEL, (WPARAM)2, (LPARAM)0);
 
 
 
-### <a name="step-3-detect-when-the-user-selects-an-item-and-retrieve-it-from-the-combo-box"></a>Passaggio 3: rilevare quando l'utente seleziona un elemento e lo recupera dalla casella combinata.
+### <a name="step-3-detect-when-the-user-selects-an-item-and-retrieve-it-from-the-combo-box"></a>Passaggio 3: Rilevare quando l'utente seleziona un elemento e recuperarlo dalla casella combinata.
 
-Quando l'utente effettua una selezione dall'elenco, la casella combinata invia una notifica [ \_ selChange CBN](cbn-selchange.md) alla finestra padre tramite un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) . L'applicazione recupera il punto di controllo per la casella combinata dal campo *lParam* del messaggio di notifica e invia un messaggio di richiesta [**\_ GetCurSel CB**](cb-getcursel.md) alla casella combinata per recuperare l'indice dell'elemento di elenco selezionato. Dopo aver ottenuto l'indice dell'elemento, l'applicazione invia un messaggio [**CB \_ GETLBTEXT**](cb-getlbtext.md) per ottenere l'elemento. Viene quindi visualizzato l'elemento in una finestra di messaggio.
+Quando l'utente effettua una selezione dall'elenco, la casella combinata invia una notifica [CBN \_ SELCHANGE](cbn-selchange.md) alla finestra padre tramite un [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) L'applicazione recupera l'handle per la casella combinata dal campo *lParam* del messaggio di notifica e invia un messaggio [**\_ GETCURSEL CB**](cb-getcursel.md) alla casella combinata per recuperare l'indice dell'elemento dell'elenco selezionato. Dopo aver ottenuto l'indice dell'elemento, l'applicazione invia un [**messaggio \_ CB GETLBTEXT**](cb-getlbtext.md) per ottenere l'elemento. Visualizza quindi l'elemento in una finestra di messaggio.
 
 > [!Note]  
-> La [notifica \_ selChange di CBN](cbn-selchange.md) viene inviata ed elaborata prima che l'elemento venga inserito nel campo di selezione della casella combinata. Come risultato, in questo esempio l'elemento selezionato non verrà visualizzato nel campo di selezione fino alla chiusura della finestra di messaggio.
+> La [notifica CBN \_ SELCHANGE](cbn-selchange.md) viene inviata ed elaborata prima che l'elemento venga inserito nel campo di selezione della casella combinata. Di conseguenza, in questo esempio l'elemento selezionato non verrà visualizzato nel campo di selezione fino alla chiusura della finestra di messaggio.
 
- 
+ 
 
 
 ```C++
@@ -489,15 +489,15 @@ LRESULT CALLBACK DemoApp::WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM
 [Informazioni sulle caselle combinate](about-combo-boxes.md)
 </dt> <dt>
 
-[Riferimento al controllo ComboBox](bumper-combobox-combobox-control-reference.md)
+[Informazioni di riferimento sul controllo ComboBox](bumper-combobox-combobox-control-reference.md)
 </dt> <dt>
 
-[Uso di caselle combinate](using-combo-boxes.md)
+[Uso delle caselle combinate](using-combo-boxes.md)
 </dt> <dt>
 
 [ComboBox](combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

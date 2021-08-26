@@ -1,8 +1,8 @@
 ---
-description: La \_ classe Win32 VideoConfiguration non è attiva. Non verrà restituita alcuna istanza perché non è presente alcun provider sottostante.
+description: La classe \_ Win32 VideoConfiguration non è attiva. Non restituirà alcuna istanza perché non è presente alcun provider che la supporta.
 ms.assetid: 8dd15e8a-ff9b-4e75-bae9-8c80548301ab
 ms.tgt_platform: multiple
-title: Classe Win32_VideoConfiguration
+title: Win32_VideoConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96ad4206cc50953a135b23257526ffb5cdc59b6e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7d951a8927458fa12398682ce63963dd71949d70e4db3a426dfc93ad14c78bf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922621"
 ---
-# <a name="win32_videoconfiguration-class"></a>Win32 \_ VideoConfiguration (classe)
+# <a name="win32_videoconfiguration-class"></a>Classe VideoConfiguration Win32 \_
 
-La classe **Win32 \_ VideoConfiguration** non è attiva. Non verrà restituita alcuna istanza perché non è presente alcun provider sottostante.
+La **classe \_ Win32 VideoConfiguration** non è attiva. Non restituirà alcuna istanza perché non è presente alcun provider che la supporta.
 
-La classe **Win32 \_ VideoConfiguration** rappresenta una configurazione di un sottosistema video. Questa classe è stata deprecata a favore delle proprietà contenute nelle classi [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md)
+La **classe \_ Win32 VideoConfiguration** rappresenta una configurazione di un sottosistema video. Questa classe è stata deprecata a favore delle proprietà contenute nelle classi [**\_ Win32 VideoController,**](win32-videocontroller.md) [**\_ Win32 DesktopMonitor**](win32-desktopmonitor.md)e [**\_ CIM VideoControllerResolution**](cim-videocontrollerresolution.md)
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -100,230 +100,230 @@ class Win32_VideoConfiguration : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ VideoConfiguration** presenta questi tipi di membri:
+La **classe \_ Win32 VideoConfiguration** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ VideoConfiguration** dispone di queste proprietà.
+La **classe Win32 \_ VideoConfiguration** ha queste proprietà.
 
 <dl> <dt>
 
 **ActualColorResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**unità**](../wmisdk/standard-qualifiers.md) ("bits per pixel")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| COLORRES"), [**unità**](../wmisdk/standard-qualifiers.md) ("bit per pixel")
 </dt> </dl>
 
 Indica la profondità di colore corrente della visualizzazione video.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterChipType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| ChipType")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| ChipType")
 </dt> </dl>
 
-Contiene il nome del chip dell'adapter.
+Contiene il nome del chip dell'adattatore.
 
-Esempio: S3
+Esempio: s3
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterCompatibility**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**Key**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**chiave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Specifica il nome del produttore dell'adapter. Questo nome può essere utilizzato per confrontare la compatibilità del dispositivo con le esigenze del computer.
+Specifica il nome del produttore dell'adattatore. Questo nome può essere usato per confrontare la compatibilità del dispositivo con le esigenze del computer.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterDACType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| DACType")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| DACType")
 </dt> </dl>
 
-Indica il nome del chip da digitale a analogico (DAC) utilizzato nell'adapter.
+Indica il nome del chip da digitale ad analogico (DAC) utilizzato nell'adattatore.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Contiene una descrizione o un nome descrittivo della scheda video.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ info \| VideoMemory"), [**unità**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Info \| VideoMemory"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Indica le dimensioni della memoria della scheda video.
 
 Esempio: 16777216
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **AdapterType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| hardware \\ \\ Description \\ \\ System \\ \\ DisplayController \\ \\ 0 \\ \\ Identifier")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HARDWARE Description System \\ \\ \\ \\ \\ \\ DisplayController \\ \\ 0 \\ \\ Identifier")
 </dt> </dl>
 
 Indica il tipo di scheda video.
 
 Set di caratteri: alfanumerico
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **BitsPerPixel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| BITSPIXEL")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| BITSPIXEL")
 </dt> </dl>
 
-Indica il numero effettivo di bit per pixel che rappresenta la visualizzazione. Questo può essere ridimensionato in base all'impostazione video corrente (rappresentata dalla proprietà ActualColorResolution) dell'utente.
+Indica il numero effettivo di bit per pixel che rappresentano la visualizzazione. Questo valore può essere ridimensionato in base all'impostazione video corrente (rappresentata dalla proprietà ActualColorResolution) dell'utente.
 
 Esempio: 8
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **ColorPlanes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| Planes")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| PLANES")
 </dt> </dl>
 
-Indica il numero corrente di piani di colore utilizzati nella visualizzazione video. Un piano colori rappresenta un altro modo per rappresentare i colori del pixel; anziché assegnare un singolo valore RGB a ogni pixel, i piani dei colori separano il grafico in ogni componente del colore principale (blu verde) e li archiviano nei propri piani. In questo modo è possibile ottenere una profondità di colore maggiore nei sistemi video a 8 e 16 bit. I sistemi grafici presenti hanno bitwidth dimensioni sufficienti per archiviare le informazioni relative alla profondità dei colori, rendendo necessario solo un piano di colore.
+Indica il numero corrente di piani colori usati nella visualizzazione video. Un piano colori è un altro modo per rappresentare i colori in pixel. Invece di assegnare un singolo valore RGB a ogni pixel, i piani colori separano l'elemento grafico in ognuno dei componenti principali del colore (blu verde rosso) e li archiviano nei propri piani. Ciò consente una maggiore profondità dei colori nei sistemi video a 8 e 16 bit. I sistemi grafici presenti hanno la larghezza in bit sufficiente per archiviare le informazioni sulla profondità del colore, rendendo necessario un solo piano colori.
 
 Esempio: 1
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **ColorTableEntries**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMCOLORS")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMCOLORS")
 </dt> </dl>
 
-Indica il numero di indici di colore in una tabella dei colori per una visualizzazione video. Questa proprietà viene usata se il dispositivo ha una profondità di colore non superiore a 8 bit per pixel. Per i dispositivi con profondità dei colori maggiori, viene restituito-1.
+Indica il numero di indici dei colori in una tabella dei colori per una visualizzazione video. Questa proprietà viene usata se la profondità del colore del dispositivo non è superiore a 8 bit per pixel. Per i dispositivi con maggiori intensità di colore, viene restituito -1.
 
 Esempio: 256
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -331,266 +331,266 @@ Tipo di accesso: sola lettura
 
 Descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **DeviceSpecificPens**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMPENS")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| NUMPENS")
 </dt> </dl>
 
-Indica il numero corrente di penne specifiche del dispositivo. Il valore 0xFFFFFFFF indica che il dispositivo non supporta le penne. Le penne vengono utilizzate per creare linee e theborders di oggetti poligonali.
+Indica il numero corrente di penna specifiche del dispositivo. Il valore 0xFFFFFFFF indica che il dispositivo non supporta le penna. Le penne vengono usate per disegnare linee e gli ordini degli oggetti poligonali.
 
 Esempio: 3
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **DriverDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ AdapterDescription \| DriverDate")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ AdapterDescription \| DriverDate")
 </dt> </dl>
 
-Indica la data e l'ora in cui è stato installato il driver video corrente.
+Indica la data e l'ora di installazione del driver video corrente.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **HorizontalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| HORZRES")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| HORZRES")
 </dt> </dl>
 
-Indica il numero corrente di pixel nella direzione orizzontale (asse X) dello schermo.
+Indica il numero corrente di pixel nella direzione orizzontale (asse X) della visualizzazione.
 
 Esempio: 1024
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **InfFilename**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \| InfPath")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \| InfPath")
 </dt> </dl>
 
-Specifica il percorso del file. inf del driver video.
+Specifica il percorso del file inf del driver video.
 
-Esempio: C: \\ Windows \\ system32 \\ drivers
+Esempio: C: \\ Windows \\ driver System32 \\
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **InfSection**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \| InfSection")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \| InfSection")
 </dt> </dl>
 
-Indica la sezione del file con estensione inf in cui si trovano le informazioni sul video Win32.
+Indica la sezione del file inf in cui si trovano le informazioni video Win32.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **InstalledDisplayDrivers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \\ \\ Class \\ \\ Defaule \| drv")
+Qualificatori: [**DEPRECATED,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services Class \\ \\ \\ \\ Defaule \| drv")
 </dt> </dl>
 
 Indica il nome del driver video installato.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **MonitorManufacturer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Indica il nome del produttore del dispositivo di visualizzazione.
 
 Esempio: NEC
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
-**Monitoraggio**
+**MonitorType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| hardware \\ \\ Description \\ \\ System \\ \\ MonitorPeripheral \\ \\ 0 \| Identifier")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| HARDWARE Description System \\ \\ \\ \\ \\ \\ MonitorPeripheral \\ \\ 0 \| Identifier")
 </dt> </dl>
 
 Indica il nome del modello del dispositivo di visualizzazione.
 
 Esempio: NEC 5FGp
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**Key**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificatori: [**DEPRECATED,**](../wmisdk/standard-wmi-qualifiers.md) [**key,**](../wmisdk/key-qualifier.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Contiene un nome identificativo per la classe di configurazione video.
+Contiene un nome di identificazione per la classe di configurazione video.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
-**PixelsPerXLogicalInch**
+**PixelPerXLogicalInch**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| LOGPIXELSX")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| LOGPIXELSX")
 </dt> </dl>
 
-Indica il numero di pixel per pollice logico lungo l'asse X (direzione orizzontale) dello schermo.
+Indica il numero di pixel per pollice logico lungo l'asse X (direzione orizzontale) della visualizzazione.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **PixelsPerYLogicalInch**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| LOGPIXELSY")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| LOGPIXELSY")
 </dt> </dl>
 
-Indica il numero di pixel per pollice logico lungo l'asse Y (direzione verticale) dello schermo.
+Indica il numero di pixel per pollice logico lungo l'asse Y (direzione verticale) della visualizzazione.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **RefreshRate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VREFRESH")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VREFRESH")
 </dt> </dl>
 
-Indica la frequenza di aggiornamento della configurazione video. Il valore 0 o 1 indica che è in uso una frequenza predefinita.
+Indica la frequenza di aggiornamento della configurazione video. Il valore 0 o 1 indica che viene usata una frequenza predefinita.
 
 Esempio: 72
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **ScanMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Device0 \| DefaultSettings. Interlaced")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Services \| Device0 \| DefaultSettings.Interlaced")
 </dt> </dl>
 
 Indica se il dispositivo di visualizzazione è interlacciato.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 <dt>
 
 <span id="Non_Interlaced"></span><span id="non_interlaced"></span><span id="NON_INTERLACED"></span>
 
-**Non interlacciato** ("non interlacciato")
+**Non interlacciato** ("Non interlacciato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interlaced"></span><span id="interlaced"></span><span id="INTERLACED"></span>
 
-**Interlacciato** ("interlacciato")
+**Interlacciato** ("Interlacciato")
 
 
 </dt> <dd></dd> </dl>
@@ -600,94 +600,94 @@ Questa proprietà è stata deprecata a favore di una o più proprietà corrispon
 **ScreenHeight**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTSIZE"), [**unità**](../wmisdk/standard-qualifiers.md) ("millimetri")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTSIZE"), [**Unità**](../wmisdk/standard-qualifiers.md) ("millimetri")
 </dt> </dl>
 
-Specifica l'altezza della schermata fisica.
+Specifica l'altezza dello schermo fisico.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **ScreenWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| HORZSIZE"), [**unità**](../wmisdk/standard-qualifiers.md) ("millimetri")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| HORZSIZE"), [**Unità**](../wmisdk/standard-qualifiers.md) ("millimetri")
 </dt> </dl>
 
-Specifica la larghezza della schermata fisica.
+Specifica la larghezza dello schermo fisico.
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificatore con cui è noto l'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **SystemPaletteEntries**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| SIZEPALETTE")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| SIZEPALETTE")
 </dt> </dl>
 
-Indicates il numero corrente di voci di indice dei colori riservate per l'utilizzo da parte del sistema. Questo valore è valido solo per le impostazioni di visualizzazione che usano una tavolozza indicizzata. Le tavolozze indicizzate non vengono usate per le profondità dei colori maggiori di 8 bit per pixel. Se la profondità del colore è maggiore di 8 bit per pixel, questo valore viene impostato su **null**.
+Indica il numero corrente di voci dell'indice colori riservate per l'uso del sistema. Questo valore è valido solo per le impostazioni di visualizzazione che usano un riquadro indicizzato. Le tavolozze indicizzate non vengono usate per profondità di colore maggiori di 8 bit per pixel. Se la profondità del colore è superiore a 8 bit per pixel, questo valore viene impostato su **NULL.**
 
 Esempio: 20
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> <dt>
 
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](../wmisdk/standard-wmi-qualifiers.md), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Device Context Functions \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTRES")
+Qualificatori: [**DEPRECATO,**](../wmisdk/standard-wmi-qualifiers.md) [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funzioni del contesto di dispositivo Win32API \| \| [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) \| VERTRES")
 </dt> </dl>
 
-Indica il numero corrente di pixel nella direzione verticale (asse Y) dello schermo.
+Indica il numero corrente di pixel nella direzione verticale (asse Y) della visualizzazione.
 
 Esempio: 768
 
-Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution**](cim-videocontrollerresolution.md).
+Questa proprietà è stata deprecata a favore di una o più proprietà corrispondenti contenute in [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md) e//o [**CIM \_ VideoControllerResolution.**](cim-videocontrollerresolution.md)
 
 </dd> </dl>
 
@@ -700,7 +700,7 @@ Questa proprietà è stata deprecata a favore di una o più proprietà corrispon
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -709,7 +709,7 @@ Questa proprietà è stata deprecata a favore di una o più proprietà corrispon
 
 <dl> <dt>
 
-[**\_Impostazione CIM**](cim-setting.md)
+[**Impostazione \_ CIM**](cim-setting.md)
 </dt> </dl>
 
  
