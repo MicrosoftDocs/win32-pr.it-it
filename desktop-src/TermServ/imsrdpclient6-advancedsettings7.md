@@ -1,22 +1,22 @@
 ---
-title: Proprietà AdvancedSettings7 di IMsRdpClient6
+title: Proprietà AdvancedSettings7 IMsRdpClient6
 description: Recupera l'interfaccia IMsRdpClientAdvancedSettings6.
 ms.assetid: 64b05c66-ac6a-4190-9df8-4a88dbc46c3f
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà AdvancedSettings7
-- Servizi Desktop remoto proprietà AdvancedSettings7, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto
+- Proprietà AdvancedSettings7 Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto proprietà , AdvancedSettings7
+- Proprietà AdvancedSettings7 Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà , AdvancedSettings7
 topic_type:
 - apiref
 api_name:
@@ -37,16 +37,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51d364c14be3311272455e040d55f277f3fb136
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 57c268263ac775dd9e6c7ba9a22fadb0d192d9809aeb4b0ce0b9cc3756e91ce5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033501"
 ---
-# <a name="imsrdpclient6advancedsettings7-property"></a>Proprietà IMsRdpClient6:: AdvancedSettings7
+# <a name="imsrdpclient6advancedsettings7-property"></a>Proprietà IMsRdpClient6::AdvancedSettings7
 
-Recupera l'interfaccia [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings5.md) .
+Recupera [**l'interfaccia IMsRdpClientAdvancedSettings6.**](imsrdpclientadvancedsettings5.md)
 
 Questa proprietà è di sola lettura.
 
@@ -63,7 +63,7 @@ HRESULT get_AdvancedSettings7(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore di interfaccia [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md) .
+Puntatore [**a interfaccia IMsRdpClientAdvancedSettings6.**](imsrdpclientadvancedsettings6.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Puntatore di interfaccia [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvance
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient6 è definito come d43b7d80-8517-4B6D-9EAC-96ad6800d7f2<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient6 è definito come d43b7d80-8517-4b6d-9eac-96ad6800d7f2<br/>       |
 
 
 

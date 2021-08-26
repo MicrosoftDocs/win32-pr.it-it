@@ -1,5 +1,5 @@
 ---
-title: attributo documentAuthor
+title: Attributo documentAuthor
 description: Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un documento.
 ms.assetid: 52d25349-ef79-44d0-a892-65984898fa1c
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0abd07ce87dbc341e3392a91156021e2b603e71f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f3e55720c57f3543e3ddab13d0bc61aa793894d701ed0bb0f7980374123d0bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077851"
 ---
-# <a name="documentauthor-attribute"></a>attributo documentAuthor
+# <a name="documentauthor-attribute"></a>Attributo documentAuthor
 
 Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un documento.
 
@@ -29,12 +29,12 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | documentAuthor                          |
-| LDAP-Display-Name | documentAuthor                          |
+| Ldap-Display-Name | documentAuthor                          |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 0.9.2342.19200300.100.1.14              |
-| System-ID-GUID    | f18a8e19-af5f-4478-b096-6f35c27eb83f    |
+| System-Id-Guid    | f18a8e19-af5f-4478-b096-6f35c27eb83f    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -56,15 +56,15 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Il tipo di attributo documentAuthor specifica il nome distinto dell'autore di un
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Falso                                     |
+| Is-Single-Valued       | Falso                                     |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Classi utilizzate in        | [**documento**](c-document.md)<br/> |
+| Classi usate in        | [**Documento**](c-document.md)<br/> |
 
 
 

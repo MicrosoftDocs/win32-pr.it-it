@@ -1,9 +1,9 @@
 ---
-title: Elemento Channel (ChannelListType)
-description: Definisce un canale a cui è possibile registrare gli eventi.
+title: Elemento channel (ChannelListType)
+description: Definisce un canale in cui è possibile eseguire la registrazione degli eventi.
 ms.assetid: 4af740d7-2ab8-4f3e-86b3-501e5a6a60f6
 keywords:
-- EventLog elemento canale
+- Elemento channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c90d1f831157d2a4a2d4f3519b4e1baa07d6af2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f19e90f3f66aa017ecb7183e1ad3dc5c614832b8ec2f832d4ec6656674f0ea7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032311"
 ---
-# <a name="channel-channellisttype-element"></a>Elemento Channel (ChannelListType)
+# <a name="channel-channellisttype-element"></a>Elemento channel (ChannelListType)
 
-Definisce un canale a cui è possibile registrare gli eventi.
+Definisce un canale in cui è possibile eseguire la registrazione degli eventi.
 
 ``` syntax
 <xs:element name="channel"
@@ -30,7 +30,7 @@ Definisce un canale a cui è possibile registrare gli eventi.
  />
 ```
 
-L'elemento **Channel** viene definito dal tipo complesso [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) .
+**L'elemento** channel è definito dal [**tipo complesso ChannelListType.**](eventmanifestschema-channellisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Channel** viene definito dal tipo complesso [**ChannelListType**](e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Classe base per le classi del contatore delle prestazioni Win32 \_ PerfRawData e Win32 \_ PerfFormattedData.
+description: Classe di base per le classi dei contatori delle prestazioni Win32 \_ PerfRawData e Win32 \_ PerfFormattedData.
 ms.assetid: c754b619-a70f-4a56-8a43-2b36c8f8370b
 ms.tgt_platform: multiple
-title: Classe Win32_Perf
+title: Win32_Perf classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,20 +23,20 @@ api_type:
 - DllExport
 api_location:
 - WmiPerfInst.dll
-ms.openlocfilehash: 13b339e95e175e4d2dff50c0a9674f8002933c1a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 356fdba0e2ebb7fb202f4996daa6b1929cd61fc67b028f67e8b041748306c0ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972241"
 ---
-# <a name="win32_perf-class"></a>\_Classe Perf Win32
+# <a name="win32_perf-class"></a>Classe \_ Win32 Perf
 
-Classe base per le classi del contatore delle prestazioni [**Win32 \_ PerfRawData**](win32-perfrawdata.md) e [**Win32 \_ PerfFormattedData**](win32-perfformatteddata.md).
+Classe di base per le classi dei contatori delle [**prestazioni Win32 \_ PerfRawData**](win32-perfrawdata.md) e [**Win32 \_ PerfFormattedData.**](win32-perfformatteddata.md)
 
-**Win32 \_ Perf** definisce le proprietà timestamp e Frequency richieste usate negli algoritmi [**CounterType**](../wmisdk/countertype-qualifier.md) per le classi del contatore delle prestazioni.
+**Win32 \_ Perf** definisce le proprietà obbligatorie di timestamp e frequenza usate negli algoritmi [**CounterType**](../wmisdk/countertype-qualifier.md) per le classi dei contatori delle prestazioni.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,38 +58,38 @@ class Win32_Perf : CIM_StatisticalInformation
 
 ## <a name="members"></a>Members
 
-La **classe \_ Perf Win32** presenta questi tipi di membri:
+La **classe \_ Win32 Perf** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ Perf Win32** dispone di queste proprietà.
+La **classe \_ Win32 Perf** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
 Breve descrizione testuale per la statistica o la metrica.
 
-Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
+Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -97,121 +97,121 @@ Tipo di accesso: sola lettura
 
 Descrizione testuale della statistica o della metrica.
 
-Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
+Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 </dd> <dt>
 
-**Frequency ( \_ oggetto)**
+**Oggetto \_ Frequency**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Frequenza in cicli al secondo della proprietà dell' **\_ oggetto timestamp** . Se sottoclassato, il provider definisce questa proprietà.
+Frequenza in tick al secondo della **proprietà Timestamp \_ Object.** In caso di sottoclasse, il provider definisce questa proprietà.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
-**Frequenza \_ PerfTime**
+**Frequency \_ PerfTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Frequenza in cicli al secondo della proprietà **Frequency \_ PerfTime** . È possibile ottenere un valore chiamando la funzione [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)di Windows.
+Frequenza in tick al secondo della **proprietà Frequency \_ PerfTime.** È possibile ottenere un valore chiamando la funzione Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
 **Frequenza \_ Sys100NS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Frequenza in cicli al secondo della proprietà **timestamp \_ Sys100NS** (10 milioni).
+Frequenza in tick al secondo della **proprietà \_ Timestamp Sys100NS** (10000000).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Etichetta con la quale è nota la statistica o la metrica. Quando è sottoclassata, è possibile eseguire l'override di questa proprietà in modo che sia una proprietà chiave.
+Etichetta con cui è nota la statistica o la metrica. Quando è sottoclassata, questa proprietà può essere sottoposta a override come proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
+Questa proprietà viene ereditata da [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 </dd> <dt>
 
-**Timestamp ( \_ oggetto)**
+**Oggetto \_ Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Timestamp definito dall'oggetto. Il provider definisce la proprietà.
+Timestamp definito dall'oggetto. Il provider definisce la proprietà .
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
 **Timestamp \_ PerfTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Timestamp elevato del contatore delle prestazioni. È possibile ottenere un valore chiamando la funzione [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)di Windows.
+Timestamp del contatore prestazioni elevate. È possibile ottenere un valore chiamando la funzione Windows [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> <dt>
 
 **Timestamp \_ Sys100NS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore timestamp in unità di 100 nanosecondi.
+Valore di timestamp in unità di 100 nanosecondi.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La **classe \_ Perf Win32** deriva da [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
+La **classe \_ Win32 Perf** deriva da [**CIM \_ StatisticalInformation.**](cim-statisticalinformation.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -230,16 +230,16 @@ La **classe \_ Perf Win32** deriva da [**CIM \_ StatisticalInformation**](cim-st
 
 <dl> <dt>
 
-[**\_STATISTICALINFORMATION CIM**](cim-statisticalinformation.md)
+[**CIM \_ StatisticalInformation**](cim-statisticalinformation.md)
 </dt> <dt>
 
-[Classi del contatore delle prestazioni](performance-counter-classes.md)
+[Classi dei contatori delle prestazioni](performance-counter-classes.md)
 </dt> <dt>
 
 [Accesso alle classi di prestazioni preinstallate WMI](../wmisdk/accessing-wmi-preinstalled-performance-classes.md)
 </dt> <dt>
 
-[Attività WMI: monitoraggio delle prestazioni](../wmisdk/wmi-tasks--performance-monitoring.md)
+[Attività WMI: Monitoraggio delle prestazioni](../wmisdk/wmi-tasks--performance-monitoring.md)
 </dt> <dt>
 
 [Accesso ai dati sulle prestazioni nello script](../wmisdk/accessing-performance-data-in-script.md)

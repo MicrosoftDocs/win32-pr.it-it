@@ -1,10 +1,10 @@
 ---
-title: Attributo DNS-Tombstoned
-description: True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo attributo esiste per semplificare e velocizzare la ricerca dei record contrassegnati per la rimozione definitiva. Gli oggetti contrassegnati per la rimozione definitiva sono oggetti eliminati, ma non ancora rimossi dalla directory.
+title: DNS-Tombstoned attributo
+description: True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo attributo è disponibile per semplificare e velocizzare la ricerca dei record contrassegnati per la rimozione definitiva. Gli oggetti contrassegnati per la rimozione definitiva sono oggetti che sono stati eliminati ma non ancora rimossi dalla directory.
 ms.assetid: d876a6d7-d5bc-4fe2-af03-1fff3381708f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD DNS-Tombstoned attribute
+- DNS-Tombstoned schema AD dell'attributo
 - Schema AD dell'attributo dNSTombstoned
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0dba61706861b808f28d7f6874a9bfd93d4152c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ef8f1b61d8d12fc1725fd695467058ac93277a7aab0977ccaed128a74da79d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077861"
 ---
-# <a name="dns-tombstoned-attribute"></a>Attributo DNS-Tombstoned
+# <a name="dns-tombstoned-attribute"></a>DNS-Tombstoned attributo
 
-True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo attributo esiste per semplificare e velocizzare la ricerca dei record contrassegnati per la rimozione definitiva. Gli oggetti contrassegnati per la rimozione definitiva sono oggetti eliminati, ma non ancora rimossi dalla directory.
+True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo attributo è disponibile per semplificare e velocizzare la ricerca dei record contrassegnati per la rimozione definitiva. Gli oggetti contrassegnati per la rimozione definitiva sono oggetti che sono stati eliminati ma non ancora rimossi dalla directory.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | DNS-Tombstoned                       |
-| LDAP-Display-Name | dNSTombstoned                        |
+| Ldap-Display-Name | dNSTombstoned                        |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
-| Frequenza di aggiornamento  | Ogni volta che un oggetto viene eliminato.       |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
+| Frequenza di aggiornamento  | Ogni volta che viene eliminato un oggetto.       |
 | Attribute-Id      | 1.2.840.113556.1.4.1414              |
-| System-ID-GUID    | d5eb2eb7-be4e-463b-a214-634a44d7392e |
+| System-Id-Guid    | d5eb2eb7-be4e-463b-a214-634a44d7392e |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| Is-Single-Valued       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| A valore singolo       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| A valore singolo       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ True se l'oggetto è stato contrassegnato per la rimozione definitiva. Questo at
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| A valore singolo       | Vero                                     |
 | Indicizzato             | Vero                                     |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000001                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**DNS-nodo**](c-dnsnode.md)<br/> |
+| Classi usate in        | [**Nodo DNS**](c-dnsnode.md)<br/> |
 
 
 

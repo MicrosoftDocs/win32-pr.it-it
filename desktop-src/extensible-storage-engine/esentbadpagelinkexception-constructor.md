@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadPageLinkException'
+description: Altre informazioni sul costruttore EsentBadPageLinkException
 title: Costruttore EsentBadPageLinkException
 TOCTitle: 'EsentBadPageLinkException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadPageLinkException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df3d5e45ca9cd72e5914c62475c1bddfb4ac1c61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bc325091ed2530e3e0689d0d63324581f8f7e450b3bd809583e175b95f0e24a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975878"
 ---
 # <a name="esentbadpagelinkexception-constructor"></a>Costruttore EsentBadPageLinkException
 
 Inizializza una nuova istanza della classe EsentBadPageLinkException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentBadPageLinkException()
 
 [Membri di EsentBadPageLinkException](./esentbadpagelinkexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

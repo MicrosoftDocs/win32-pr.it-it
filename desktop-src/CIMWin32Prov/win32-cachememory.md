@@ -1,5 +1,5 @@
 ---
-description: Win32 \_ CacheMemory&\# 32; La classe WMI rappresenta la memoria cache interna ed esterna in un sistema di computer.
+description: CacheMemory Win32 \_&\# 32; La classe WMI rappresenta la memoria cache interna ed esterna in un computer.
 ms.assetid: 9cfb992d-fbac-4e56-b4f3-61c0c93f5852
 ms.tgt_platform: multiple
 title: Classe Win32_CacheMemory
@@ -69,18 +69,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 83a8fefbe1104f24f208d232b8f6bc134efefd83
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a16a0723ecad2723952bafa77b8a8945475073c5b1330103cc4a7e4b456ea0e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986351"
 ---
-# <a name="win32_cachememory-class"></a>Win32 \_ CacheMemory (classe)
+# <a name="win32_cachememory-class"></a>Classe \_ CacheMemory Win32
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ CacheMemory Win32** rappresenta la memoria cache interna ed esterna in un sistema di computer.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ CacheMemory Win32** rappresenta la memoria cache interna ed esterna in un computer.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -146,21 +146,21 @@ class Win32_CacheMemory : CIM_CacheMemory
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ CacheMemory** presenta questi tipi di membri:
+La **classe \_ CacheMemory Win32** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ CacheMemory** presenta questi metodi.
+La **classe \_ CacheMemory Win32** include questi metodi.
 
 
 
 | Metodo            | Descrizione                                                                                                                                                                                                  |
 |:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Reimpostazione**         | Non implementato. Per implementare questo metodo, vedere il metodo [**Reset**](reset-method-in-class-cim-controller.md) in [**CIM \_ CacheMemory**](cim-cachememory.md) per la documentazione.<br/>                 |
-| **SetPowerState** | Non implementato. Per implementare questo metodo, vedere il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) in [**CIM \_ CacheMemory**](cim-cachememory.md) per la documentazione.<br/> |
+| **Reimpostazione**         | Non implementato. Per implementare questo metodo, vedere il [**metodo Reset**](reset-method-in-class-cim-controller.md) in [**\_ CIM CacheMemory**](cim-cachememory.md) per la documentazione.<br/>                 |
+| **SetPowerState** | Non implementato. Per implementare questo metodo, vedere il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) in [**\_ CIM CacheMemory**](cim-cachememory.md) per la documentazione.<br/> |
 
 
 
@@ -168,14 +168,14 @@ La classe **Win32 \_ CacheMemory** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ CacheMemory** dispone di queste proprietà.
+La **classe \_ CacheMemory Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **Accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -183,7 +183,7 @@ Tipo di accesso: sola lettura
 
 Tipo di accesso.
 
-Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](cim-storageextent.md).
+Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
 <dt>
 
@@ -221,7 +221,7 @@ Scrivibile
 
 <span id="Write_Once"></span><span id="write_once"></span><span id="WRITE_ONCE"></span>
 
-<span id="Write_Once"></span><span id="write_once"></span><span id="WRITE_ONCE"></span>**Scrivi una sola volta** (4)
+<span id="Write_Once"></span><span id="write_once"></span><span id="WRITE_ONCE"></span>**Write Once** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -231,38 +231,38 @@ Scrivibile
 **AdditionalErrorData**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,18 "," MIF. DMTF \| array di memoria fisica \| 001,13 "), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.18", "MIF. DMTF \| Physical Memory Array \| 001.13"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Matrice di ottetti che contengono informazioni aggiuntive sull'errore. Un esempio è la sindrome ECC o il ritorno dei bit di controllo se viene usata una metodologia di errore basata su CRC. Nel secondo caso, se viene riconosciuto un errore a bit singolo e l'algoritmo CRC è noto, è possibile determinare il bit esatto che ha avuto esito negativo. Questo tipo di dati (sindrome ECC, bit check, dati bit di parità o altre informazioni fornite dal fornitore) è incluso in questo campo. Se la proprietà **errorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
+Matrice di ottetti che contengono informazioni aggiuntive sull'errore. Ad esempio, ECC Esemplete o la restituzione dei bit di controllo se viene usata una metodologia di errore basata su CRC. Nel secondo caso, se viene riconosciuto un errore a bit singolo e l'algoritmo CRC è noto, è possibile determinare il bit esatto che ha avuto esito negativo. In questo campo è incluso questo tipo di dati (ECC Evaso, Bit di controllo, Bit di parità o altre informazioni fornite dal fornitore). Se la **proprietà ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **Associatività**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,15 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.15")
 </dt> </dl>
 
-Enumerazione Integer che definisce l'associatività della cache di sistema.
+Enumerazione integer che definisce l'associatività della cache di sistema.
 
-Questo valore deriva dal membro di **associatività** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal membro **Associatività** della struttura **delle informazioni della cache** nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -282,21 +282,21 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 <span id="Direct_Mapped"></span><span id="direct_mapped"></span><span id="DIRECT_MAPPED"></span>
 
-Con **mapping diretto** (3)
+**Mappato diretto** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="2-way_Set-Associative"></span><span id="2-way_set-associative"></span><span id="2-WAY_SET-ASSOCIATIVE"></span>
 
-**set bidirezionale-associativo** (4)
+**Set associativo a 2 way** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="4-way_Set-Associative"></span><span id="4-way_set-associative"></span><span id="4-WAY_SET-ASSOCIATIVE"></span>
 
-**set-associativo a 4 vie** (5)
+**Set associativo a 4 way** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -310,14 +310,14 @@ Con **mapping diretto** (3)
 
 <span id="8-way_Set-Associative"></span><span id="8-way_set-associative"></span><span id="8-WAY_SET-ASSOCIATIVE"></span>
 
-**set a 8 vie-associativo** (7)
+**Set associativo a 8 way** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="16-way_Set-Associative"></span><span id="16-way_set-associative"></span><span id="16-WAY_SET-ASSOCIATIVE"></span>
 
-**set-associativo a 16 vie** (8)
+**Set associativo a 16 modalità** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -327,20 +327,20 @@ Con **mapping diretto** (3)
 **Disponibilità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Stato operativo DMTF \| 003,5 "," MIB. \|Host IETF-risorse-MIB. hrDeviceStatus ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilità e stato del dispositivo.
 
-Questo valore deriva dal membro di **configurazione** della cache della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore proviene dal membro **Configurazione cache** della struttura Delle informazioni **della cache** nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -360,7 +360,7 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevic
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Esecuzione/potenza completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Running/Full Power** (3)
 
 
 </dt> <dd>
@@ -392,21 +392,21 @@ Esecuzione o alimentazione completa
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Spegnimento (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Power Off** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Offline (8** )
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Off Duty** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fuori servizio** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -434,34 +434,34 @@ Esecuzione o alimentazione completa
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Risparmio energia-sconosciuto** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Risparmio energia - Sconosciuto** (13)
 
 
 </dt> <dd>
 
-Il dispositivo è noto come modalità di risparmio energia, ma lo stato esatto è sconosciuto.
+È noto che il dispositivo è in modalità di risparmio energia, ma lo stato esatto è sconosciuto.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Risparmio energia-modalità a basso consumo** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Risparmio energia - Modalità a basso consumo** (14)
 
 
 </dt> <dd>
 
-Il dispositivo è in uno stato di risparmio energia ma funziona ancora e può presentare prestazioni ridotte.
+Il dispositivo è in stato di risparmio energia, ma continua a funzionare e può presentare prestazioni ridotte.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Risparmio energia-standby** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Risparmio energia - Standby** (15)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona, ma potrebbe essere portato a una potenza completa rapidamente.
+Il dispositivo non funziona, ma può essere alimentato rapidamente.
 
 </dd> <dt>
 
@@ -474,23 +474,23 @@ Il dispositivo non funziona, ma potrebbe essere portato a una potenza completa r
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Risparmio energia-avviso** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Risparmio energia - Avviso** (17)
 
 
 </dt> <dd>
 
-Il dispositivo è in uno stato di avviso, anche in modalità di risparmio energia.
+Il dispositivo è in uno stato di avviso, anche se in modalità di risparmio energia.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>In **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**In pausa** (18)
 
 
 </dt> <dd>
 
-Il dispositivo è sospeso.
+Il dispositivo è in pausa.
 
 </dd> <dt>
 
@@ -507,7 +507,7 @@ Il dispositivo non è pronto.
 
 <span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>
 
-<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Non configurata** (20)
+<span id="Not_Configured"></span><span id="not_configured"></span><span id="NOT_CONFIGURED"></span>**Non configurato** (20)
 
 
 </dt> <dd>
@@ -518,7 +518,7 @@ Il dispositivo non è configurato.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattivo** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Inattiva** (21)
 
 
 </dt> <dd>
@@ -529,61 +529,61 @@ Il dispositivo è silenzioso.
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-Resources-MIB. hrStorageAllocationUnits "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Dimensioni in byte dei blocchi che formano questo extent di archiviazione. Se è sconosciuto o se un concetto di blocco non è valido, ad esempio per extent di aggregazione, memoria o dischi logici, immettere 1.
+Dimensione in byte dei blocchi che formano questo extent di archiviazione. Se sconosciuto o se un concetto di blocco non è valido (ad esempio, per extent aggregati, memoria o dischi logici), immettere 1.
 
-Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](cim-storageextent.md).
+Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **CacheSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| velocità della cache di tipo SMBIOS 7"), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("nanosecondi")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("velocità cache SMBIOS \| di tipo 7"), \| [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("nanosecondi")
 </dt> </dl>
 
 Velocità della cache.
 
-Questo valore deriva dal membro della **velocità della cache** della struttura delle informazioni della **cache** nelle informazioni SMBIOS.
+Questo valore proviene dal membro **Velocità cache** della struttura delle informazioni **della cache** nelle informazioni SMBIOS.
 
 </dd> <dt>
 
 **CacheType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,9 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.9")
 </dt> </dl>
 
 Tipo di cache.
 
-Questo valore deriva dal membro di **tipo cache di sistema** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore proviene dal membro **System Cache Type** della struttura Cache **Information** nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -617,7 +617,7 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 <span id="Unified"></span><span id="unified"></span><span id="UNIFIED"></span>
 
-**Unificato** (5)
+**Unified** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -627,25 +627,25 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
-Breve descrizione dell'oggetto stringa a una riga.
+Breve descrizione dell'oggetto, una stringa di una riga.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -654,15 +654,15 @@ Tipo di accesso: sola lettura
 Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Codice di errore Win32 Configuration Manager.
+Codice di errore Gestione configurazione Win32.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="This_device_is_working_properly."></span><span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>
 
-<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Il dispositivo funziona correttamente.**  (0)
+<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Questo dispositivo funziona correttamente.**  (0)
 
 
 </dt> <dd>
@@ -684,41 +684,41 @@ Il dispositivo non è configurato correttamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows non è in grado di caricare il driver per questo dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows possibile caricare il driver per questo dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="The_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>
 
-<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**Il driver per questo dispositivo potrebbe essere danneggiato oppure è possibile che la memoria del sistema sia insufficiente o che altre risorse.** (3)
+<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**Il driver per questo dispositivo potrebbe essere danneggiato o il sistema potrebbe avere memoria insufficiente o altre risorse.** (3)
 
 
 </dt> <dd>
 
-Il driver per questo dispositivo potrebbe essere danneggiato oppure la memoria o altre risorse del sistema potrebbero essere insufficienti.
+Il driver per questo dispositivo potrebbe essere danneggiato o la memoria del sistema potrebbe essere insufficiente o altre risorse.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il dispositivo non funziona correttamente. Uno dei driver o del registro di sistema potrebbe essere danneggiato.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro di sistema potrebbe essere danneggiato.** (4)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente. Uno dei suoi driver o il registro di sistema potrebbe essere danneggiato.
+Il dispositivo non funziona correttamente. Uno dei relativi driver o il Registro di sistema potrebbe essere danneggiato.
 
 </dd> <dt>
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che Windows non è in grado di gestire.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**Il driver per questo dispositivo richiede una risorsa che non Windows gestire.** (5)
 
 
 </dt> <dd>
 
-Il driver per il dispositivo richiede una risorsa che Windows non è in grado di gestire.
+Il driver per il dispositivo richiede una risorsa che Windows non può gestire.
 
 </dd> <dt>
 
@@ -742,12 +742,12 @@ La configurazione di avvio per il dispositivo è in conflitto con altri disposit
 
 <span id="The_driver_loader_for_the_device_is_missing."></span><span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>
 
-<span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>**Il caricatore driver del dispositivo è mancante.** (8)
+<span id="the_driver_loader_for_the_device_is_missing."></span><span id="THE_DRIVER_LOADER_FOR_THE_DEVICE_IS_MISSING."></span>**Il caricatore del driver per il dispositivo è mancante.** (8)
 
 
 </dt> <dd>
 
-Il caricatore driver del dispositivo è mancante.
+Il caricatore del driver per il dispositivo è mancante.
 
 </dd> <dt>
 
@@ -769,46 +769,46 @@ Il dispositivo non funziona correttamente. Il firmware di controllo segnala erro
 
 </dt> <dd>
 
-Non è possibile avviare il dispositivo.
+Impossibile avviare il dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_failed."></span><span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>
 
-<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Errore del dispositivo.** (11)
+<span id="this_device_failed."></span><span id="THIS_DEVICE_FAILED."></span>**Il dispositivo non è riuscito.** (11)
 
 
 </dt> <dd>
 
-Errore del dispositivo.
+Dispositivo non riuscito.
 
 </dd> <dt>
 
 <span id="This_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>
 
-<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Questo dispositivo non è in grado di trovare sufficienti risorse gratuite da usare.** 12
+<span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>**Questo dispositivo non riesce a trovare risorse gratuite sufficienti da usare.** (12)
 
 
 </dt> <dd>
 
-Il dispositivo non riesce a trovare risorse disponibili sufficienti da usare.
+Il dispositivo non riesce a trovare risorse gratuite sufficienti da usare.
 
 </dd> <dt>
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows non è in grado di verificare le risorse del dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows possibile verificare le risorse del dispositivo.** (13)
 
 
 </dt> <dd>
 
-Windows non è in grado di verificare le risorse del dispositivo.
+Windows possibile verificare le risorse del dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>
 
-<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non funziona correttamente finché non si riavvia il computer.** (14)
+<span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>**Questo dispositivo non funziona correttamente fino a quando non si riavvia il computer.** (14)
 
 
 </dt> <dd>
@@ -819,18 +819,18 @@ Il dispositivo non funziona correttamente finché il computer non viene riavviat
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Il dispositivo non funziona correttamente perché è probabile che si verifichi un problema di rienumerazione.** (15)
+<span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>**Questo dispositivo non funziona correttamente perché è probabile che si sia verificato un problema di enumerazione.** (15)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente a causa di un possibile problema di rienumerazione.
+Il dispositivo non funziona correttamente a causa di un possibile problema di enumerazione.
 
 </dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows non è in grado di identificare tutte le risorse utilizzate dal dispositivo.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows non è in grado di identificare tutte le risorse utilizzate da questo dispositivo.** (16)
 
 
 </dt> <dd>
@@ -841,7 +841,7 @@ Windows non è in grado di identificare tutte le risorse utilizzate dal disposit
 
 <span id="This_device_is_asking_for_an_unknown_resource_type."></span><span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>
 
-<span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>**Il dispositivo richiede un tipo di risorsa sconosciuto.** (17)
+<span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>**Questo dispositivo richiede un tipo di risorsa sconosciuto.** (17)
 
 
 </dt> <dd>
@@ -857,42 +857,42 @@ Il dispositivo richiede un tipo di risorsa sconosciuto.
 
 </dt> <dd>
 
-È necessario reinstallare i driver di dispositivo.
+I driver di dispositivo devono essere reinstallati.
 
 </dd> <dt>
 
 <span id="Failure_using_the_VxD_loader."></span><span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>
 
-<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Errore durante l'utilizzo del caricatore VxD.** (19)
+<span id="failure_using_the_vxd_loader."></span><span id="FAILURE_USING_THE_VXD_LOADER."></span>**Errore durante l'uso del caricatore VxD.** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Your_registry_might_be_corrupted."></span><span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il registro di sistema potrebbe essere danneggiato.** (20)
+<span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Il registro potrebbe essere danneggiato.** (20)
 
 
 </dt> <dd>
 
-Il registro di sistema potrebbe essere danneggiato.
+Il Registro di sistema potrebbe essere danneggiato.
 
 </dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware. Windows sta rimuovendo questo dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.** (21)
 
 
 </dt> <dd>
 
-Errore di sistema. Se la modifica del driver di dispositivo non è efficace, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.
+Errore di sistema. Se la modifica del driver di dispositivo è inefficace, vedere la documentazione dell'hardware. Windows sta rimuovendo il dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_disabled."></span><span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>
 
-<span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>**Il dispositivo è disabilitato.** (22)
+<span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>**Questo dispositivo è disabilitato.** (22)
 
 
 </dt> <dd>
@@ -903,7 +903,7 @@ Il dispositivo è disabilitato.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se questa operazione non funziona, vedere la documentazione dell'hardware.** (23)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>**Errore di sistema: provare a modificare il driver per questo dispositivo. Se non funziona, vedere la documentazione dell'hardware.** (23)
 
 
 </dt> <dd>
@@ -914,34 +914,34 @@ Errore di sistema. Se la modifica del driver di dispositivo non è efficace, ved
 
 <span id="This_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>
 
-<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Questo dispositivo non è presente, non funziona correttamente o non sono installati tutti i driver.** (24)
+<span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>**Questo dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.** (24)
 
 
 </dt> <dd>
 
-Il dispositivo non è presente, non funziona correttamente o non sono installati tutti i driver.
+Il dispositivo non è presente, non funziona correttamente o non dispone di tutti i relativi driver installati.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora impostando questo dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (25)
 
 
 </dt> <dd>
 
-Windows sta ancora impostando il dispositivo.
+Windows sta ancora configurando il dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora impostando questo dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows sta ancora configurando questo dispositivo.** (26)
 
 
 </dt> <dd>
 
-Windows sta ancora impostando il dispositivo.
+Windows sta ancora configurando il dispositivo.
 
 </dd> <dt>
 
@@ -952,7 +952,7 @@ Windows sta ancora impostando il dispositivo.
 
 </dt> <dd>
 
-La configurazione del log del dispositivo non è valida.
+Il dispositivo non ha una configurazione di log valida.
 
 </dd> <dt>
 
@@ -969,7 +969,7 @@ I driver di dispositivo non sono installati.
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Questo dispositivo è disabilitato perché il firmware del dispositivo non ha fornito le risorse necessarie.** (29)
+<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Questo dispositivo è disabilitato perché il firmware del dispositivo non ha dato le risorse necessarie.** (29)
 
 
 </dt> <dd>
@@ -980,23 +980,23 @@ Il dispositivo è disabilitato. Il firmware del dispositivo non ha fornito le ri
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa di richiesta di interrupt (IRQ) usata da un altro dispositivo.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Questo dispositivo usa una risorsa richiesta di interruzione (IRQ) in uso da un altro dispositivo.** (30)
 
 
 </dt> <dd>
 
-Il dispositivo usa una risorsa IRQ usata da un altro dispositivo.
+Il dispositivo usa una risorsa IRQ in uso da un altro dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Questo dispositivo non funziona correttamente perché Windows non è in grado di caricare i driver necessari per questo dispositivo.** 31
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Questo dispositivo non funziona correttamente perché non Windows caricare i driver necessari per questo dispositivo.** (31)
 
 
 </dt> <dd>
 
-Il dispositivo non funziona correttamente. Windows non è in grado di caricare i driver di dispositivo necessari.
+Il dispositivo non funziona correttamente. Windows non è possibile caricare i driver di dispositivo necessari.
 
 </dd> </dl>
 
@@ -1005,72 +1005,72 @@ Il dispositivo non funziona correttamente. Windows non è in grado di caricare i
 **ConfigManagerUserConfig**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Se **true**, il dispositivo usa una configurazione definita dall'utente.
+Se **True,** il dispositivo usa una configurazione definita dall'utente.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **CorrectableError**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,12 "," MIF. DMTF \| matrice di memoria fisica \| 001,8 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.12", "MIF. DMTF \| Physical Memory Array \| 001.8")
 </dt> </dl>
 
-Se **true**, l'errore più recente è correggibile. Se la proprietà **errorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
+Se **True,** l'errore più recente è stato corretto. Se la **proprietà ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [ **chiave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata per la creazione di un'istanza. Se utilizzata con le altre proprietà chiave della classe, la proprietà consente di identificare in modo univoco tutte le istanze di questa classe e le relative sottoclassi.
+Nome della prima classe concreta da visualizzare nella catena di ereditarietà utilizzata nella creazione di un'istanza. Se usata con le altre proprietà chiave della classe , la proprietà consente l'identificazione univoca di tutte le istanze di questa classe e delle relative sottoclassi.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **CurrentSRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 7 \| Current SRAM Type")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SmBIOS \| Type 7 Current \| SRAM Type")
 </dt> </dl>
 
-Matrice di tipi di memoria statica ad accesso casuale (SRAM) utilizzata per la memoria cache.
+Matrice di tipi di SRAM (Static Random Access Memory) in uso per la memoria cache.
 
-Questo valore deriva dal membro di **tipo SRAM corrente** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal **membro Current SRAM Type** della struttura Cache **Information** nelle informazioni SMBIOS.
 
 <dt>
 
@@ -1090,28 +1090,28 @@ Questo valore deriva dal membro di **tipo SRAM corrente** della struttura di **i
 
 <span id="Non-Burst"></span><span id="non-burst"></span><span id="NON-BURST"></span>
 
-**Non in sequenza** (2)
+**Non burst** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Burst"></span><span id="burst"></span><span id="BURST"></span>
 
-**Sequenza** di espansione (3)
+**Burst** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pipeline_Burst"></span><span id="pipeline_burst"></span><span id="PIPELINE_BURST"></span>
 
-**Impulso della pipeline** (4)
+**Burst di pipeline** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Synchronous"></span><span id="synchronous"></span><span id="SYNCHRONOUS"></span>
 
-**Sincrona** (5)
+**Sincrono** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -1128,7 +1128,7 @@ Questo valore deriva dal membro di **tipo SRAM corrente** della struttura di **i
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1139,65 +1139,65 @@ Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("
 
 Descrizione dell'oggetto.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceID"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("DeviceId"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI")
 </dt> </dl>
 
-Identificatore univoco della cache rappresentata da un'istanza di **Win32 \_ CacheMemory**.
+Identificatore univoco della cache rappresentata da un'istanza di **Win32 \_ CacheMemory.**
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Esempio: "cache memory 1"
+Esempio: "Cache Memory 1"
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Array con mapping degli indirizzi \| 001,4 "," MIF. \|Indirizzi con mapping del dispositivo \| di memoria DMTF 001,5 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" kilobyte ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Memory Array Mapped Addresses \| 001.4", "MIF. DmTF \| Memory Device Mapped Addresses \| 001.5"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Indirizzo finale, a cui viene fatto riferimento da un'applicazione o da un sistema operativo e mappato da un controller di memoria, per questo oggetto memoria. L'indirizzo finale è specificato in kilobyte.
+Indirizzo finale, a cui fa riferimento un'applicazione o un sistema operativo e mappato da un controller di memoria, per questo oggetto di memoria. L'indirizzo finale è specificato in kilobyte.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ErrorAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,15 "," MIF. DMTF \| matrice di memoria fisica \| 001,10 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.15", "MIF. DMTF \| Physical Memory Array \| 001.10")
 </dt> </dl>
 
-Operazione di accesso alla memoria che ha causato l'ultimo errore. Il tipo di errore è descritto dalla proprietà **errorInfo** . Se **errorInfo** è uguale a 3 (OK), questa proprietà non ha significato.
+Operazione di accesso alla memoria che ha causato l'ultimo errore. Il tipo di errore è descritto dalla **proprietà ErrorInfo.** Se **ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 <dt>
 
@@ -1241,53 +1241,53 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 **ErrorAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,19 "," MIF. DMTF \| Memory Device \| 002,20 "," MIF. DMTF \| matrice di memoria fisica \| 001,14 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.19", "MIF. DMTF \| Memory Device \| 002.20", "MIF. DMTF \| Physical Memory Array \| 001.14")
 </dt> </dl>
 
-Indirizzo dell'ultimo errore di memoria. Il tipo di errore è descritto dalla proprietà **errorInfo** . Se **errorInfo** è uguale a 3 (OK), questa proprietà non ha significato.
+Indirizzo dell'ultimo errore di memoria. Il tipo di errore è descritto dalla **proprietà ErrorInfo.** Se **ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, l'errore segnalato in **LastErrorCode** è ora cancellato.
+Se **True,** l'errore segnalato in **LastErrorCode** viene ora cancellato.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorCorrectType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo di \| correzione degli errori di tipo 7 SMBIOS \| ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo SMBIOS \| 7 \| di correzione degli errori")
 </dt> </dl>
 
 Metodo di correzione degli errori utilizzato dalla memoria cache.
 
-Questo valore deriva dal membro del **tipo di correzione degli errori** della struttura di informazioni della **cache** nelle informazioni SMBIOS.
+Questo valore proviene dal membro **Error Correction Type** della struttura Cache **Information** nelle informazioni SMBIOS.
 
 <dt>
 
@@ -1328,50 +1328,50 @@ Questo valore deriva dal membro del **tipo di correzione degli errori** della st
 
 <span id="Single-bit_ECC"></span><span id="single-bit_ecc"></span><span id="SINGLE-BIT_ECC"></span>
 
-**Ecc a bit singolo** (5)
+**ECC a bit singolo** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Multi-bit_ECC"></span><span id="multi-bit_ecc"></span><span id="MULTI-BIT_ECC"></span>
 
-**Ecc a più bit** (6)
+**ECC multi-bit** (6)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ErrorData**
+**Errordata**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,17 "," MIF. DMTF \| array di memoria fisica \| 001,12 "), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.17", "MIF. DMTF \| Physical Memory Array \| 001.12"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Matrice di dati acquisiti durante l'ultimo accesso errato alla memoria. I dati occupano i primi *n* ottetti della matrice necessari per conservare il numero di bit specificato dalla proprietà **ErrorTransferSize** . Se **ErrorTransferSize** è 0 (zero), questa proprietà non ha significato.
+Matrice di dati acquisiti durante l'ultimo accesso erro alla memoria. I dati occupano i primi *n ottetti* della matrice necessari per contenere il numero di bit specificato dalla **proprietà ErrorTransferSize.** Se **ErrorTransferSize** è 0 (zero), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **ErrorDataOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ordinamento dei dati archiviati nella proprietà **ErrorData** . Se **ErrorTransferSize** è 0 (zero), questa proprietà non ha significato.
+Ordinamento dei dati archiviati nella **proprietà ErrorData.** Se **ErrorTransferSize** è 0 (zero), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 <dt>
 
@@ -1384,14 +1384,14 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 
 <span id="Least_Significant_Byte_First"></span><span id="least_significant_byte_first"></span><span id="LEAST_SIGNIFICANT_BYTE_FIRST"></span>
 
-**Byte meno significativi prima** (1)
+**Byte meno significativo per primo** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Most_Significant_Byte_First"></span><span id="most_significant_byte_first"></span><span id="MOST_SIGNIFICANT_BYTE_FIRST"></span>
 
-**Primo byte significativo** (2)
+**Byte first più significativo** (2)
 
 
 </dt> <dd></dd> </dl>
@@ -1401,33 +1401,33 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 **ErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Altre informazioni sull'errore registrato in **LastErrorCode** e informazioni sulle azioni correttive che possono essere eseguite.
+Altre informazioni sull'errore registrato in **LastErrorCode** e informazioni su eventuali azioni correttive che possono essere eseguite.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**ErrorInfo**
+**Errorinfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,12 "," MIF. \|Matrice di memoria fisica DMTF \| 001,8 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Memory**](cim-memory.md).**OtherErrorDescription**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.12", "MIF. DMTF \| Physical Memory Array \| 001.8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Memory**](cim-memory.md).**OtherErrorDescription**")
 </dt> </dl>
 
-Tipo di errore che si è verificato più di recente. I valori 12-14 non sono definiti nello schema CIM perché in DMI combinano la semantica del tipo di errore e se sono stati corretti o meno. Quest'ultimo è indicato nella proprietà **CorrectableError**.
+Tipo di errore che si è verificato più di recente. I valori da 12 a 14 non sono definiti nello schema CIM perché in DMI combinano la semantica del tipo di errore e se è stato corretto o meno. Quest'ultimo è indicato nella proprietà **CorrectableError.**
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 <dt>
 
@@ -1454,7 +1454,7 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 
 <span id="Bad_Read"></span><span id="bad_read"></span><span id="BAD_READ"></span>
 
-**Lettura non valida** (4)
+**Lettura non erta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -1475,7 +1475,7 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 
 <span id="Double-Bit_Error"></span><span id="double-bit_error"></span><span id="DOUBLE-BIT_ERROR"></span>
 
-**Errore a doppio bit** (7)
+**Errore a due bit** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -1489,7 +1489,7 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 
 <span id="Nibble_Error"></span><span id="nibble_error"></span><span id="NIBBLE_ERROR"></span>
 
-**Errore di roditura** (9)
+**Errore Nibble** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -1510,21 +1510,21 @@ Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
 
 <span id="Undefined"></span><span id="undefined"></span><span id="UNDEFINED"></span>
 
-Non **definito** (12)
+**Non definito** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Undefined"></span><span id="undefined"></span><span id="UNDEFINED"></span>
 
-Non **definito** (13)
+**Non definito** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Undefined"></span><span id="undefined"></span><span id="UNDEFINED"></span>
 
-Non **definito** (14)
+**Non definito** (14)
 
 
 </dt> <dd></dd> </dl>
@@ -1534,132 +1534,132 @@ Non **definito** (14)
 **ErrorMethodology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| matrice di memoria fisica \| 001,7 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Physical Memory Array \| 001.7")
 </dt> </dl>
 
-Informazioni dettagliate sugli algoritmi di parità o CRC, ECC o altri meccanismi utilizzati.
+Informazioni dettagliate sugli algoritmi di parità o CRC, ECC o altri meccanismi usati.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **ErrorResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,21 "," MIF. DMTF \| array di memoria fisica \| 001,15 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.21", "MIF. DMTF \| Physical Memory Array \| 001.15"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Intervallo, in byte, in cui è possibile risolvere l'ultimo errore. Se, ad esempio, gli indirizzi di errore vengono risolti in bit 11, ovvero in base a una tipica pagina, gli errori possono essere risolti in limiti di 4 KB e questa proprietà è impostata su 4000. Se la proprietà **errorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
+Intervallo, in byte, in cui è possibile risolvere l'ultimo errore. Ad esempio, se gli indirizzi di errore vengono risolti nel bit 11 ,ovvero in base a una pagina tipica, gli errori possono essere risolti fino a limiti di 4 KB e questa proprietà è impostata su 4000. Se la **proprietà ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
 **ErrorTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora in cui si è verificato l'ultimo errore di memoria. Il tipo di errore è descritto dalla proprietà **errorInfo** . Se la proprietà **errorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
+Ora dell'ultimo errore di memoria. Il tipo di errore è descritto dalla **proprietà ErrorInfo.** Se la **proprietà ErrorInfo** è uguale a 3 (OK), questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
-**ErrorTransferSize**
+**Errortransfersize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002,16 "," MIF. DMTF \| array di memoria fisica \| 001,11 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bits ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Device \| 002.16", "MIF. DMTF \| Physical Memory Array \| 001.11"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
-Dimensioni del trasferimento dei dati in bit che hanno causato l'ultimo errore. 0 (zero) indica che non è presente alcun errore. Se la proprietà **errorInfo** è uguale a 3 (OK), questa proprietà deve essere impostata su 0 (zero).
+Dimensione del trasferimento dei dati in bit che ha causato l'ultimo errore. 0 (zero) indica nessun errore. Se la **proprietà ErrorInfo** è uguale a 3 (OK), questa proprietà deve essere impostata su 0 (zero).
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **FlushTimer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache \| di sistema 003,14 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" secondi ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.14"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("seconds")
 </dt> </dl>
 
-Quantità massima di tempo, in secondi, per cui è possibile che le righe o i bucket sporchi rimangano nella cache prima che vengano scaricati. Il valore 0 (zero) indica che uno scaricamento della cache non è controllato da un timer di scaricamento.
+Quantità massima di tempo, in secondi, le righe dirty o i bucket possono rimanere nella cache prima di essere scaricati. Il valore 0 (zero) indica che uno scaricamento della cache non è controllato da un timer di scaricamento.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data di installazione ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Install Date")
 </dt> </dl>
 
 Data e ora di installazione dell'oggetto. Questa proprietà non richiede un valore per indicare che l'oggetto è installato.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstalledSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 7 \| installato size"), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dimensioni installate del tipo SMBIOS \| \| 7"), [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobyte")
 </dt> </dl>
 
 Dimensioni correnti della memoria cache installata.
 
-Questo valore deriva dal membro **size installato** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal **membro Installed Size** della struttura Cache **Information** nelle informazioni SMBIOS.
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1667,27 +1667,27 @@ Tipo di accesso: sola lettura
 
 Ultimo codice di errore segnalato dal dispositivo logico.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **Level**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,2 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.2")
 </dt> </dl>
 
 Livello della cache.
 
-Questo valore deriva dal membro di **configurazione** della cache della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal membro **Configurazione cache** della struttura **Informazioni** cache nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -1738,36 +1738,36 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 **LineSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003,10 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" bytes ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.10"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
-Dimensione, in byte, di un singolo bucket o riga della cache.
+Dimensioni, in byte, di un singolo bucket o riga della cache.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 </dd> <dt>
 
 **Posizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| tipo 7 \| location")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percorso del tipo SMBIOS \| \| 7")
 </dt> </dl>
 
 Posizione fisica della memoria cache.
 
-Questo valore deriva dal membro di **configurazione** della cache della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal membro **Configurazione cache** della struttura **Informazioni** cache nelle informazioni SMBIOS.
 
 <dt>
 
@@ -1804,25 +1804,25 @@ Questo valore deriva dal membro di **configurazione** della cache della struttur
 **MaxCacheSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| tipo 7 \| dimensione massima cache"), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobyte")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dimensioni massime cache di tipo SMBIOS \| \| 7"), [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobyte")
 </dt> </dl>
 
-Dimensioni massime della cache installabili in questa particolare memoria cache.
+Dimensioni massime della cache installabili per questa particolare memoria cache.
 
-Questo valore deriva dal membro **dimensione massima della cache** della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal **membro Maximum Cache Size** della struttura Cache **Information** nelle informazioni SMBIOS.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1831,36 +1831,36 @@ Tipo di accesso: sola lettura
 Qualificatori: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
 </dt> </dl>
 
-Etichetta con cui l'oggetto è noto. Quando è sottoclassata, è possibile eseguire l'override della proprietà in modo che sia una proprietà chiave.
+Etichetta con cui l'oggetto è noto. Quando è sottoclassata, la proprietà può essere sottoposta a override per essere una proprietà chiave.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. \|Host IETF-risorse-MIB. hrStorageSize ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Numero totale di blocchi consecutivi, ciascuno dei quali blocca la dimensione del valore contenuto nella proprietà **blockSize** , che costituisce questo extent di archiviazione. Le dimensioni totali dell'extent di archiviazione possono essere calcolate moltiplicando il valore della proprietà **blockSize** in base al valore di questa proprietà. Se il valore di **blockSize** è 1, questa proprietà corrisponde alla dimensione totale dell'extent di archiviazione.
+Numero totale di blocchi consecutivi, ognuno dei quali blocca le dimensioni del valore contenuto nella **proprietà BlockSize,** che formano questo extent di archiviazione. Le dimensioni totali dell'extent di archiviazione possono essere calcolate moltiplicando il valore della **proprietà BlockSize** per il valore di questa proprietà. Se il valore di **BlockSize** è 1, questa proprietà rappresenta la dimensione totale dell'extent di archiviazione.
 
-Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](cim-storageextent.md).
+Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **OtherErrorDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -1869,44 +1869,44 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Memory**](cim-memory.md).**ErrorInfo**")
 </dt> </dl>
 
-Stringa in formato libero che fornisce ulteriori informazioni se la proprietà **ErrorType** è impostata su 1, other. In caso contrario, questa stringa non ha alcun significato.
+Stringa in formato libero che fornisce altre informazioni se la **proprietà ErrorType** è impostata su 1, Other. In caso contrario, questa stringa non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
 **PNPDeviceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
+Qualificatori: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Identificatore del dispositivo Windows Plug and Play del dispositivo logico.
+Windows Plug and Play identificatore di dispositivo del dispositivo logico.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Esempio: " \* PNP030b"
+Esempio: \* "PNP030b"
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice delle funzionalità specifiche relative al risparmio di energia di un dispositivo logico.
+Matrice delle funzionalità specifiche correlate all'alimentazione di un dispositivo logico.
 
-Questa proprietà viene ereditata da **CIM \_ LogicalDevice**.
+Questa proprietà viene ereditata da **CIM \_ LogicalDevice.**
 
 <dt>
 
@@ -1938,13 +1938,13 @@ Questa proprietà viene ereditata da **CIM \_ LogicalDevice**.
 
 </dt> <dd>
 
-Le funzionalità di risparmio energia sono attualmente abilitate, ma il set di funzionalità esatto è sconosciuto oppure le informazioni non sono disponibili.
+Le funzionalità di risparmio energia sono attualmente abilitate, ma il set di funzionalità esatto è sconosciuto o le informazioni non sono disponibili.
 
 </dd> <dt>
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità di risparmio energia immesse automaticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modalità risparmio energia immesse automaticamente** (4)
 
 
 </dt> <dd>
@@ -1955,36 +1955,36 @@ Il dispositivo può modificare lo stato di alimentazione in base all'utilizzo o 
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Stato di alimentazione impostabile** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo è disponibile nella classe **\_ LogicalDevice CIM** padre e può essere implementato. Per ulteriori informazioni, vedere [progettazione di classi Managed Object Format (MOF)](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) è supportato. Questo metodo si trova nella classe **CIM \_ LogicalDevice** padre e può essere implementato. Per altre informazioni, vedere [Progettazione di Managed Object Format (MOF).](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling supportato** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Alimentazione supportata** (6)
 
 
 </dt> <dd>
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (ciclo di alimentazione).
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il *parametro PowerState* impostato su 5 (Ciclo di alimentazione).
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Alimentazione temporizzata supportata** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Accensione a tempo supportata** (7)
 
 
 </dt> <dd>
 
-Tempo Power-On supportato
+Tempor Power-On supportato
 
-Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (ciclo di alimentazione) e *ora* impostato su una data e un'ora specifiche, o su un intervallo, per l'accensione.
+Il [**metodo SetPowerState**](setpowerstate-method-in-class-cim-controller.md) può essere richiamato con il parametro *PowerState* impostato su 5 (Power Cycle) e *Time* impostato su una data e un'ora o un intervallo specifici per l'accensione.
 
 </dd> </dl>
 
@@ -1993,50 +1993,50 @@ Il metodo [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) p
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, il dispositivo può essere gestito dal risparmio di energia (può essere impostato in modalità di sospensione e così via). La proprietà non indica che le funzionalità di risparmio energia sono attualmente abilitate, solo che il dispositivo logico è in grado di gestire il risparmio di energia.
+Se **True,** il dispositivo può essere gestito dall'alimentazione (può essere messo in modalità di sospensione e così via). La proprietà non indica che le funzionalità di risparmio energia sono attualmente abilitate, ma solo che il dispositivo logico è in grado di eseguire il risparmio energia.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **Scopo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che descrive i supporti e il relativo utilizzo.
+Stringa in formato libero che descrive il supporto e il relativo utilizzo.
 
-Questo valore deriva dal membro della **designazione del socket** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal **membro Socket Designation** della struttura **Cache Information** nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ StorageExtent**](cim-storageextent.md).
+Questa proprietà viene ereditata da [**CIM \_ StorageExtent.**](cim-storageextent.md)
 
 </dd> <dt>
 
-**Disporre**
+**ReadPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,13 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.13")
 </dt> </dl>
 
-Criteri che verranno utilizzati dalla cache per gestire le richieste di lettura.
+Criteri che devono essere utilizzati dalla cache per la gestione delle richieste di lettura.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -2070,7 +2070,7 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 <span id="Read_and_Read-Ahead"></span><span id="read_and_read-ahead"></span><span id="READ_AND_READ-AHEAD"></span>
 
-**Lettura e Read-Ahead** (5)
+**Lettura e lettura in lettura** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -2087,18 +2087,18 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 **ReplacementPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,12 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.12")
 </dt> </dl>
 
-Algoritmo per determinare le righe o i bucket della cache da riutilizzare.
+Algoritmo per determinare quali righe o bucket della cache devono essere riutilizzati.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -2118,83 +2118,83 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 <span id="Least_Recently_Used__LRU_"></span><span id="least_recently_used__lru_"></span><span id="LEAST_RECENTLY_USED__LRU_"></span>
 
-**Utilizzato meno di recente (LRU)** (3)
+**Usato meno di recente (LRU)** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="First_In_First_Out__FIFO_"></span><span id="first_in_first_out__fifo_"></span><span id="FIRST_IN_FIRST_OUT__FIFO_"></span>
 
-**FIFO (First in First out)** (4)
+**FIFO (First In First Out)** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Last_In_First_Out__LIFO_"></span><span id="last_in_first_out__lifo_"></span><span id="LAST_IN_FIRST_OUT__LIFO_"></span>
 
-**LIFO (Last in First out)** (5)
+**LAST In First Out (LIFO)** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Least_Frequently_Used__LFU_"></span><span id="least_frequently_used__lfu_"></span><span id="LEAST_FREQUENTLY_USED__LFU_"></span>
 
-**Uso meno frequente (LFU)** (6)
+**Meno frequentemente usato (LFU)** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Most_Frequently_Used__MFU_"></span><span id="most_frequently_used__mfu_"></span><span id="MOST_FREQUENTLY_USED__MFU_"></span>
 
-**Uso più frequente (MFU)** (7)
+**Utilizzo più frequente (MFU)** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Data_Dependent_Multiple_Algorithms"></span><span id="data_dependent_multiple_algorithms"></span><span id="DATA_DEPENDENT_MULTIPLE_ALGORITHMS"></span>
 
-**Più algoritmi dipendenti dai dati** (8)
+**Algoritmi multipli dipendenti dai dati** (8)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Memory Array con mapping degli indirizzi \| 001,3 "," MIF. \|Indirizzi con mapping del dispositivo \| di memoria DMTF 001,4 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" kilobyte ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Memory Array Mapped Addresses \| 001.3", "MIF. DmTF \| Memory Device Mapped Addresses \| 001.4"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Indirizzo iniziale, a cui viene fatto riferimento da un'applicazione o da un sistema operativo e mappato da un controller di memoria, per questo oggetto memoria. L'indirizzo iniziale è specificato in kilobyte.
+Indirizzo iniziale, a cui fa riferimento un'applicazione o un sistema operativo e mappato da un controller di memoria, per questo oggetto memoria. L'indirizzo iniziale è specificato in kilobyte.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **Status**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Stato corrente dell'oggetto. È possibile definire diversi stati operativi e non operativi. Gli stati operativi includono: "OK", "degradato" e "errore Predator" (un elemento, ad esempio un'unità disco rigido abilitata per SMART, potrebbe funzionare correttamente, ma prevedere un errore nel prossimo futuro). Gli Stati non operativi includono: "Error", "starting", "stoping" e "Service". Il secondo "servizio" può essere applicato durante il mirroring di un disco, il ricaricamento di un elenco di autorizzazioni utente o altre attività amministrative. Non tutto questo lavoro è online, ma l'elemento gestito non è né "OK" né in uno degli altri Stati.
+Stato corrente dell'oggetto. È possibile definire vari stati operativi e non operativi. Gli stati operativi includono: "OK", "Degraded" e "Pred Fail" (un elemento, ad esempio un disco rigido abilitato per SMART, potrebbe funzionare correttamente ma prevedere un errore nel prossimo futuro). Gli stati non di operazione includono: "Error", "Starting", "Stopping" e "Service". Quest'ultimo, "Servizio", può essere applicato durante il ridimensionamento del mirror di un disco, il ricaricamento di un elenco di autorizzazioni utente o altro lavoro amministrativo. Non tutte queste operazioni sono online, ma l'elemento gestito non è né "OK" né in uno degli altri stati.
 
-Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Sono inclusi i valori seguenti:
 
@@ -2209,77 +2209,77 @@ Sono inclusi i valori seguenti:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Errore** ("errore")
+**Errore** ("Errore")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-Ridotto **("danneggiato"** )
+**Degradato** ("Degraded")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Sconosciuto** ("sconosciuto")
+**Sconosciuto** ("Sconosciuto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Errore di predazione** ("Predator fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Avvio** di ("avvio")
+**Avvio** ("Avvio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Arresto** in corso ("arresto")
+**Arresto** ("Arresto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servizio** ("servizio")
+**Servizio** ("Servizio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sottolineato** (sottolineato)
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Noncover** ("noncover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Nessun contatto** ("nessun contatto")
+**Nessun contatto** ("Nessun contatto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicazione persa** ("comunicazione persa")
+**Lost Comm** ("Lost Comm")
 
 
 </dt> <dd></dd> </dl>
@@ -2289,20 +2289,20 @@ Ridotto **("danneggiato"** )
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Stato operativo DMTF \| 003,3 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Operational State \| 003.3")
 </dt> </dl>
 
-Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, è necessario utilizzare il valore 5 (non applicabile).
+Stato del dispositivo logico. Se questa proprietà non si applica al dispositivo logico, deve essere usato il valore 5 (Non applicabile).
 
-Questo valore deriva dal membro di **configurazione** della cache della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore deriva dal membro **Configurazione cache** della struttura **Informazioni** cache nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -2346,18 +2346,18 @@ Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevic
 **SupportedSRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 7 \| supported SRAM Type")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo SMBIOS \| 7 \| SRAM supportato")
 </dt> </dl>
 
-Matrice di tipi supportati di memoria statica ad accesso casuale (SRAM) che possono essere usati per la memoria cache.
+Matrice di tipi supportati di memoria SRAM (Static Random Access Memory) che può essere usata per la memoria cache.
 
-Questo valore deriva dal membro di **tipo SRAM supportato** della struttura di **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore proviene dal **membro Supported SRAM Type** della struttura Cache **Information** nelle informazioni SMBIOS.
 
 <dt>
 
@@ -2377,28 +2377,28 @@ Questo valore deriva dal membro di **tipo SRAM supportato** della struttura di *
 
 <span id="Non-Burst"></span><span id="non-burst"></span><span id="NON-BURST"></span>
 
-**Non in sequenza** (2)
+**Non burst** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Burst"></span><span id="burst"></span><span id="BURST"></span>
 
-**Sequenza** di espansione (3)
+**Burst** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pipeline_Burst"></span><span id="pipeline_burst"></span><span id="PIPELINE_BURST"></span>
 
-**Impulso della pipeline** (4)
+**Burst della pipeline** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Synchronous"></span><span id="synchronous"></span><span id="SYNCHRONOUS"></span>
 
-**Sincrona** (5)
+**Sincrono** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -2415,71 +2415,71 @@ Questo valore deriva dal membro di **tipo SRAM supportato** della struttura di *
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CHIAVE \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Valore della proprietà **CreationClassName** del computer di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **SystemLevelAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, le informazioni sull'indirizzo nella proprietà **ErrorAddress** sono un indirizzo a livello di sistema. Se **false**, si tratta di un indirizzo fisico. Se la proprietà **errorInfo** è uguale a 3, questa proprietà non ha alcun significato.
+Se **True**, le informazioni sull'indirizzo nella **proprietà ErrorAddress** sono un indirizzo a livello di sistema. Se **False,** è un indirizzo fisico. Se la **proprietà ErrorInfo** è uguale a 3, questa proprietà non ha alcun significato.
 
-Questa proprietà viene ereditata [**dalla \_ memoria CIM**](cim-memory.md).
+Questa proprietà viene ereditata dalla [**memoria CIM. \_**](cim-memory.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**propagato**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ sistema CIM**](cim-system.md).**Nome**"), [**\_ chiave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificatori: [**propagati**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Nome del sistema di ambito.
 
-Questa proprietà viene ereditata da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Questa proprietà viene ereditata da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **WritePolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| cache di sistema \| 003,5 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Cache \| 003.5")
 </dt> </dl>
 
-Definizione dei criteri di scrittura.
+Scrivere la definizione dei criteri.
 
-Questo valore deriva dal membro di **configurazione** della cache della struttura delle **informazioni della cache** nelle informazioni SMBIOS.
+Questo valore proviene dal membro **Configurazione cache** della struttura Delle informazioni **della cache** nelle informazioni SMBIOS.
 
-Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+Questa proprietà viene ereditata da [**CIM \_ CacheMemory.**](cim-cachememory.md)
 
 <dt>
 
@@ -2506,7 +2506,7 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 <span id="Write_Through"></span><span id="write_through"></span><span id="WRITE_THROUGH"></span>
 
-**Scrivi fino** a (4)
+**Write-through** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -2529,7 +2529,7 @@ Questa proprietà viene ereditata da [**CIM \_ CacheMemory**](cim-cachememory.md
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ CacheMemory** è derivata da [**CIM \_ CacheMemory**](cim-cachememory.md).
+La **classe \_ CacheMemory Win32** è derivata da [**\_ CIM CacheMemory.**](cim-cachememory.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -2540,7 +2540,7 @@ La classe **Win32 \_ CacheMemory** è derivata da [**CIM \_ CacheMemory**](cim-c
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -2549,10 +2549,10 @@ La classe **Win32 \_ CacheMemory** è derivata da [**CIM \_ CacheMemory**](cim-c
 
 <dl> <dt>
 
-[**\_CACHEMEMORY CIM**](cim-cachememory.md)
+[**CIM \_ CacheMemory**](cim-cachememory.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

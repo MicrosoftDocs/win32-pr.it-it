@@ -1,7 +1,7 @@
 ---
-description: Evento utilizzato per pianificare il rendering.
+description: Evento usato per pianificare il rendering.
 ms.assetid: c1fe0d3b-b9b1-48d1-bc54-6d2e9f03e4cd
-title: 'Membro CBaseRenderer:: m_RenderEvent (Renbase. h)'
+title: Membro CBaseRenderer::m_RenderEvent (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 55e341bde6653c05277f01ae6c7df81a62282132
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be688003009d99919495702883cbe7d87501d08fc28b4b60fbf5f502ba00083b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043751"
 ---
-# <a name="cbaserendererm_renderevent-member"></a>Membro RenderEvent di CBaseRenderer:: m \_
+# <a name="cbaserendererm_renderevent-member"></a>Membro CBaseRenderer::m \_ RenderEvent
 
-Evento utilizzato per pianificare il rendering.
+Evento usato per pianificare il rendering.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CAMEvent m_RenderEvent;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

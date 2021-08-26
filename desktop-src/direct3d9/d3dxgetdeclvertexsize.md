@@ -1,7 +1,7 @@
 ---
-description: Restituisce la dimensione di un vertice dalla dichiarazione del vertice.
+description: Restituisce le dimensioni di un vertice dalla dichiarazione del vertice.
 ms.assetid: a2524f96-103e-43ab-bdcb-b99e7402fd89
-title: Funzione D3DXGetDeclVertexSize (D3DX9Mesh. h)
+title: Funzione D3DXGetDeclVertexSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c962064faa61dc7045b0111c5efbf1d1bea9fd40
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1c120e0089c350133372526f1b030eb1a94ede5a511ba44fb21b5ae320aa7090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986861"
 ---
-# <a name="d3dxgetdeclvertexsize-function"></a>D3DXGetDeclVertexSize (funzione)
+# <a name="d3dxgetdeclvertexsize-function"></a>Funzione D3DXGetDeclVertexSize
 
-Restituisce la dimensione di un vertice dalla dichiarazione del vertice.
+Restituisce le dimensioni di un vertice dalla dichiarazione del vertice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,16 +41,16 @@ UINT D3DXGetDeclVertexSize(
 
 <dl> <dt>
 
-*pDecl* \[ in\]
+*pDecl* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Puntatore alla dichiarazione del vertice. Vedere [**D3DVERTEXELEMENT9**](d3dvertexelement9.md).
+Puntatore alla dichiarazione del vertice. Vedere [**D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 </dd> <dt>
 
-*Flusso* \[ di in\]
+*Flusso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -61,9 +61,9 @@ Indice del flusso in base zero.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Dimensioni della dichiarazione dei vertici, in byte.
+Dimensioni della dichiarazione del vertice, in byte.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Dimensioni della dichiarazione dei vertici, in byte.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Determina se è possibile eseguire la migrazione del sistema virtuale specificato.
 ms.assetid: 1bf1b385-162e-41c9-a408-f7ee755a9646
-title: Metodo CheckVirtualSystemIsMigratable della classe Msvm_VirtualSystemMigrationService
+title: Metodo CheckVirtualSystemIsMigratable della Msvm_VirtualSystemMigrationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1aed843f3f0f4c6c30eb6125cdd5859cdba902d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7da99fc5fe2eb69ff93ce85fa2335ca63a36291975b1349097e1586fe15e2cf1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041931"
 ---
-# <a name="checkvirtualsystemismigratable-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo CheckVirtualSystemIsMigratable della classe MSVM \_ VirtualSystemMigrationService
+# <a name="checkvirtualsystemismigratable-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo CheckVirtualSystemIsMigratable della classe Msvm \_ VirtualSystemMigrationService
 
 Determina se è possibile eseguire la migrazione del sistema virtuale specificato.
 
@@ -44,42 +44,42 @@ uint32 CheckVirtualSystemIsMigratable(
 
 <dl> <dt>
 
-*ComputerSystem* \[ in\]
+*ComputerSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza della classe [**CIM \_ ComputerSystem**](cim-computersystem.md) che rappresenta la macchina virtuale di cui verificare la capacità di migrazione.
+Riferimento a un'istanza della classe [**\_ ComputerSystem CIM**](cim-computersystem.md) che rappresenta la macchina virtuale di cui testare la capacità di migrazione.
 
 </dd> <dt>
 
-*DestinationHost* \[ in\]
+*Host di destinazione* \[ Pollici\]
 </dt> <dd>
 
-Nome del sistema host per la migrazione. Il formato di questo nome è specificato dalla proprietà **DestinationHostFormatsSupported** della classe [**MSVM \_ VirtualSystemMigrationCapabilities**](msvm-virtualsystemmigrationcapabilities.md) associata a questa classe.
+Nome del sistema host per la migrazione. Il formato di questo nome viene specificato dalla **proprietà DestinationHostFormatsSupported** della [**classe Msvm \_ VirtualSystemMigrationCapabilities**](msvm-virtualsystemmigrationcapabilities.md) associata a questa classe.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ in\]
+*MigrationSettingData* \[ Pollici\]
 </dt> <dd>
 
-Istanza incorporata della classe [**\_ VirtualSystemMigrationSettingData MSVM**](msvm-virtualsystemmigrationsettingdata.md) che rappresenta le impostazioni per l'operazione di migrazione.
+Istanza incorporata della classe [**Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) che rappresenta le impostazioni per l'operazione di migrazione.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ in\]
+*NewSystemSettingData* \[ Pollici\]
 </dt> <dd>
 
-Istanza incorporata della classe [**\_ VirtualSystemSettingData MSVM**](msvm-virtualsystemsettingdata.md) che rappresenta le nuove proprietà applicabili al sistema virtuale dopo la migrazione.
+Istanza incorporata della [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) che rappresenta le nuove proprietà applicabili al sistema virtuale dopo la migrazione.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ in\]
+*NewResourceSettingData* \[ Pollici\]
 </dt> <dd>
 
-Matrice di stringhe che contengono un'istanza incorporata della classe [**\_ ResourceAllocationSettingData MSVM**](msvm-resourceallocationsettingdata.md) che rappresenta le nuove proprietà applicabili alle risorse virtuali del sistema virtuale dopo la migrazione.
+Matrice di stringhe che contengono un'istanza incorporata della classe [**Msvm \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) che rappresenta le nuove proprietà applicabili alle risorse virtuali del sistema virtuale dopo la migrazione.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -92,7 +92,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -104,25 +104,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -134,10 +134,10 @@ Questo metodo restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -146,7 +146,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-[**\_VirtualSystemMigrationService MSVM**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

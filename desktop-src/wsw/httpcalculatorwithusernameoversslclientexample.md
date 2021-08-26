@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithUsernameOverSslClientExample
-description: Questo esempio mostra un client HTTP che usa il proxy del servizio per comunicare con un servizio di calcolatrice, con nome utente sulla sicurezza in modalità mista SSL.
+description: Questo esempio mostra un client HTTP che usa il proxy del servizio per parlare con un servizio calcolatrice, con nome utente su sicurezza in modalità mista SSL.
 ms.assetid: 82f27502-0f18-4b30-9da1-9191e34366c6
 keywords:
-- HttpCalculatorWithUsernameOverSslClientExample native-servizi Web
+- HttpCalculatorWithUsernameOverSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f344278b5ef72748f5cea375c931dbded47b5970
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: caac29f9cca33d439d65ec6745f3dd108db11355839d644a64f914279a3f9bdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054691"
 ---
 # <a name="httpcalculatorwithusernameoversslclientexample"></a>HttpCalculatorWithUsernameOverSslClientExample
 
-Questo esempio mostra un client HTTP che usa il proxy del servizio per comunicare con un servizio di calcolatrice, con nome utente sulla sicurezza in modalità mista SSL. In questa configurazione, la connessione di trasporto è protetta (con firma, crittografata) tramite SSL che fornisce anche l'autenticazione server. L'autenticazione client viene fornita da una coppia nome utente/password in un'intestazione WS-Security nel messaggio.
+Questo esempio mostra un client HTTP che usa il proxy del servizio per parlare con un servizio calcolatrice, con nome utente su sicurezza in modalità mista SSL. In questa configurazione la connessione di trasporto è protetta (firmata, crittografata) da SSL, che fornisce anche l'autenticazione del server. L'autenticazione client viene fornita da una coppia nome utente/password in un'intestazione WS-Security nel messaggio.
 
--   [CalculatorClientUserNameOverSsl. cpp](#calculatorclientusernameoversslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [CalculatorClientUserNameOverSsl.cpp](#calculatorclientusernameoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="calculatorclientusernameoversslcpp"></a>CalculatorClientUserNameOverSsl. cpp
+## <a name="calculatorclientusernameoversslcpp"></a>CalculatorClientUserNameOverSsl.cpp
 
 
 ```C++
@@ -230,7 +230,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -355,9 +355,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

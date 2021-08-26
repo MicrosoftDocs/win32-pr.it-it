@@ -1,10 +1,10 @@
 ---
-title: Evento Player. OpenStateChange
-description: L'evento OpenStateChange si verifica in seguito alla modifica del valore della proprietà openState. | Evento Player. OpenStateChange
+title: Evento Player.OpenStateChange
+description: L'evento OpenStateChange si verifica quando il valore della proprietà openState cambia. | Evento Player.OpenStateChange
 ms.assetid: b6b840ab-72c7-4150-a259-1e7d8afcec81
 keywords:
-- Media Player di Windows Event OpenStateChange
-- Windows Event OpenStateChange Media Player, classe Player
+- Evento OpenStateChange Windows Media Player
+- Classe di evento OpenStateChange Windows Media Player , Player
 - Classe Player Windows Media Player, evento OpenStateChange
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 020a25a811623b9f7d7dd8f316c470cada6a142b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b65436dee60a5207e09a57a39c32dc479ce110e1dafb07a7dbd7cab86e4f0a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003221"
 ---
-# <a name="playeropenstatechange-event"></a>Evento Player. OpenStateChange
+# <a name="playeropenstatechange-event"></a>Evento Player.OpenStateChange
 
-L'evento **OpenStateChange** si verifica in seguito alla modifica del valore della proprietà **openState** .
+**L'evento OpenStateChange** si verifica quando il valore della **proprietà openState** cambia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ Player.OpenStateChange(
 
 <dl> <dt>
 
-*NewState* 
+*Newstate* 
 </dt> <dd>
 
-**Numero** (**Long**) che specifica il nuovo stato aperto. Per una tabella di valori, vedere [openState](player-openstate.md) .
+**Numero** (**long**) che specifica il nuovo stato aperto. Vedere [openState](player-openstate.md) per una tabella di valori.
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Windows Media Player può passare attraverso diversi stati aperti mentre tenta di aprire un file di rete, ad esempio l'individuazione del server, la connessione al server e infine l'apertura del file. Questo evento verrà generato ogni volta che viene modificato lo stato di apertura.
+Windows Media Player possibile passare attraverso diversi stati aperti mentre tenta di aprire un file di rete, ad esempio l'individuazione del server, la connessione al server e infine l'apertura del file. Questo evento verrà generato ogni volta che lo stato di apertura cambia.
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player e può essere accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
-Non è garantito che gli Stati di Windows Media Player vengano eseguiti in un ordine particolare. Inoltre, non tutti gli Stati si verificano necessariamente durante una sequenza di eventi. Non è necessario scrivere codice che si basa sull'ordine di stato.
+Windows Media Player non è garantito che gli stati si verifichino in un ordine particolare. Inoltre, non tutti gli stati si verificano necessariamente durante una sequenza di eventi. È consigliabile non scrivere codice che si basa sull'ordine di stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Non è garantito che gli Stati di Windows Media Player vengano eseguiti in un or
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Non è garantito che gli Stati di Windows Media Player vengano eseguiti in un or
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. openState**](player-openstate.md)
+[**Player.openState**](player-openstate.md)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: Attributo DNS-Notify-Secondaries
-description: L'attributo DNS-Notify-Secondaries non è attualmente in uso.
+title: Attributo Dns-Notify-Secondaries
+description: L'attributo Dns-Notify-Secondaries non è attualmente usato.
 ms.assetid: 4230cc77-6f58-4cf8-ad3e-7a3234c99540
 ms.tgt_platform: multiple
 keywords:
-- DNS-notifica-Secondaries attributo AD schema
+- Schema AD dell'attributo Dns-Notify-Secondaries
 - Schema AD dell'attributo dnsNotifySecondaries
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9106ce3a83cee835f2c8ef4cd837728e34975f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e64a82ac12932b6b79914970ba1e1a847e4fac4c90bfd07cbb8be596c88c5a8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077922"
 ---
-# <a name="dns-notify-secondaries-attribute"></a>Attributo DNS-Notify-Secondaries
+# <a name="dns-notify-secondaries-attribute"></a>Attributo Dns-Notify-Secondaries
 
-L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
+**L'attributo Dns-Notify-Secondaries** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | DNS-Notify-secondari               |
-| LDAP-Display-Name | dnsNotifySecondaries                 |
+| CN                | Dns-Notify-Secondaries               |
+| Ldap-Display-Name | dnsNotifySecondaries                 |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.381               |
-| System-ID-GUID    | e0fa1e68-9b45-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | e0fa1e68-9b45-11d0-afdd-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **DNS-Notify-Secondaries** non è attualmente in uso.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Falso                                    |
+| Is-Single-Valued       | Falso                                    |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

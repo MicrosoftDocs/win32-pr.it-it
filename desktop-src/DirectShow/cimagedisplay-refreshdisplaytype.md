@@ -1,7 +1,7 @@
 ---
 description: Il metodo RefreshDisplayType aggiorna il formato video dell'oggetto in modo che corrisponda alla visualizzazione specificata.
 ms.assetid: cc2bdfeb-80f1-4fb6-859d-977d644a5e08
-title: Metodo CImageDisplay. RefreshDisplayType (Winutil. h)
+title: Metodo CImageDisplay.RefreshDisplayType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9f8010dcfe490363903ff455bedb61254b69b825
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9184d5e8a0e0ad6c0242ec1dc4b7590f1bc0d39a0a9cd6a09b2676563a2796e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055471"
 ---
-# <a name="cimagedisplayrefreshdisplaytype-method"></a>CImageDisplay. RefreshDisplayType, metodo
+# <a name="cimagedisplayrefreshdisplaytype-method"></a>Metodo CImageDisplay.RefreshDisplayType
 
 Il `RefreshDisplayType` metodo aggiorna il formato video dell'oggetto in modo che corrisponda alla visualizzazione specificata.
 
@@ -45,19 +45,19 @@ HRESULT RefreshDisplayType(
 *szDeviceName* 
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome del dispositivo di visualizzazione, come restituito dalla funzione **ENUMDISPLAYDEVICES** GDI. Per usare il dispositivo di visualizzazione principale, impostare questo parametro su **null**.
+Puntatore a una stringa che contiene il nome del dispositivo di visualizzazione, come restituito dalla funzione **GDI EnumDisplayDevices.** Per usare il dispositivo di visualizzazione principale, impostare questo parametro su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se ha esito positivo o se l'operazione ha \_ esito negativo.
+Restituisce S \_ OK in caso di esito positivo oppure E FAIL in caso di esito \_ negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo inizializza il membro di **\_ visualizzazione m** in un tipo video che corrisponde alla modalità di visualizzazione sul dispositivo specificato.
+Questo metodo inizializza il **membro \_ m Display** su un tipo di video che corrisponde alla modalità di visualizzazione nel dispositivo specificato.
 
-Chiamare questo metodo ogni volta che \_ viene ricevuto un messaggio WM DISPLAYCHANGED o per specificare un dispositivo di visualizzazione secondario.
+Chiamare questo metodo ogni volta che viene ricevuto un messaggio WM \_ DISPLAYCHANGED o per specificare un dispositivo di visualizzazione secondario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Chiamare questo metodo ogni volta che \_ viene ricevuto un messaggio WM DISPLAYC
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

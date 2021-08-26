@@ -1,7 +1,7 @@
 ---
-description: Il metodo FindPin Recupera il pin con l'identificatore specificato.
+description: Il metodo FindPin recupera il pin con l'identificatore specificato.
 ms.assetid: d07a298f-ddb0-44eb-85ca-81735875cdf3
-title: Metodo CBaseRenderer. FindPin (Renbase. h)
+title: Metodo CBaseRenderer.FindPin (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6e6789a91f34d95933ae7869e1588eeb14b6006
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f639e5d68b11b6a7a65ccfe0d0c6465f822d591b0c4dfd0f4916072fde40856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043771"
 ---
-# <a name="cbaserendererfindpin-method"></a>CBaseRenderer. FindPin, metodo
+# <a name="cbaserendererfindpin-method"></a>Metodo CBaseRenderer.FindPin
 
 Il `FindPin` metodo recupera il pin con l'identificatore specificato.
 
@@ -46,28 +46,28 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Puntatore a una stringa di caratteri wide a terminazione null che identifica il PIN. Deve essere L "in".
+Puntatore a una stringa di caratteri wide con terminazione Null costante che identifica il pin. Deve essere L"In".
 
 </dd> <dt>
 
 *ppPin* 
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN. Se il metodo ha esito negativo, *\* ppPin* è impostato su **null**.
+Indirizzo di una variabile che riceve un puntatore [**all'interfaccia IPin del**](/windows/desktop/api/Strmif/nn-strmif-ipin) pin. Se il metodo ha esito negativo, *\* ppPin* è impostato su **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                       | Descrizione                           |
 |---------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>              | Esito positivo.<br/>                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>         | Argomento puntatore **null** .<br/> |
-| <dl> <dt>**VFW \_ E \_ non \_ trovato**</dt> </dl> | Non trovato.<br/>                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Operazione completata.<br/>                   |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl>         | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**VFW \_ E \_ NON \_ TROVATO**</dt> </dl> | Non trovato.<br/>                 |
 
 
 
@@ -75,7 +75,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo esegue l'override del metodo [**CBaseFilter:: FindPin**](cbasefilter-findpin.md) . Il solo pin del filtro (il pin di input) è denominato "in".
+Questo metodo esegue l'override [**del metodo CBaseFilter::FindPin.**](cbasefilter-findpin.md) L'unico pin del filtro (il pin di input) è denominato "In".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Questo metodo esegue l'override del metodo [**CBaseFilter:: FindPin**](cbasefilt
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

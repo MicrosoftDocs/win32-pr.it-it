@@ -4,28 +4,28 @@ description: Crea un socket per le connessioni in ingresso o in uscita.
 ms.assetid: 21b9cf1f-1a85-4a4b-9557-faa4f32c3696
 keywords:
 - Bluetooth Bluetooth
-- connettore Bluetooth
-- Bluetooth e connettore Bluetooth
+- Socket Bluetooth
+- Bluetooth e socket Bluetooth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2c2085ee0c61941bab93ed25dd86f5c102d0d0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5afaf61e307ce8d5001c2ba5402607b63b1ad6d19317aee044d7a2cac31259b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004301"
 ---
 # <a name="bluetooth-and-socket"></a>Bluetooth e socket
 
-La funzione [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) crea un socket per le connessioni in ingresso o in uscita.:
+La [**funzione socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) crea un socket per le connessioni in ingresso o in uscita:
 
 Per creare un socket usando Bluetooth, usare le impostazioni seguenti:
 
--   Il parametro *AF* della funzione [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) è sempre impostato su **AF \_ BTH** per i Socket Bluetooth.
--   Il parametro di *tipo* della funzione [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) è sempre **\_ Stream Sock**; **Calzino \_** I socket DGRAM non sono supportati da Bluetooth.
--   Per il parametro del *protocollo* , **BTHPROTO \_ rfcomm** è il protocollo supportato.
+-   Il *parametro af* della funzione [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) è sempre impostato su AF **\_ BTH** per Bluetooth socket.
+-   Il *parametro di* tipo della funzione [**socket**](/windows/desktop/api/winsock2/nf-winsock2-socket) è sempre **SOCK \_ STREAM;** **SOCK \_ I** socket DGRAM non sono supportati da Bluetooth.
+-   Per il *parametro* del protocollo, **BTHPROTO \_ RFCOMM** è il protocollo supportato.
 
-Per ulteriori informazioni, vedere [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2).
+Per altre informazioni, [vedere Windows Socket.](/windows/desktop/WinSock/windows-sockets-start-page-2)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -34,9 +34,9 @@ Per ulteriori informazioni, vedere [Windows Sockets](/windows/desktop/WinSock/wi
 [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
-[**presa**](/windows/desktop/api/winsock2/nf-winsock2-socket)
+[**Socket**](/windows/desktop/api/winsock2/nf-winsock2-socket)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

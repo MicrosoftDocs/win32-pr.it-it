@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentBadColumnIdException'
+description: Altre informazioni sul costruttore EsentBadColumnIdException
 title: Costruttore EsentBadColumnIdException
 TOCTitle: 'EsentBadColumnIdException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBadColumnIdException.#ctor

@@ -1,11 +1,11 @@
 ---
-title: Metodo Click IVMMouse (VPCCOMInterfaces. h)
-description: Simula un clic del pulsante del mouse.
+title: Metodo IVMMouse Click (VPCCOMInterfaces.h)
+description: Simula il clic di un pulsante del mouse.
 ms.assetid: f16e36d6-34ca-4d65-95e4-1a6660d0abd0
 keywords:
-- Fare clic su metodo Virtual PC
-- Fare clic su metodo Virtual PC, interfaccia IVMMouse
-- Interfaccia IVMMouse Virtual PC, metodo click
+- Fare clic sul metodo Virtual PC
+- Fare clic sul metodo Virtual PC , interfaccia IVMMouse
+- Interfaccia IVMMouse Virtual PC, metodo Click
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3ea1b861db0a92ad92e689770182d225778aee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 53d1d1aaf538ac6b30a27df904729f2ad3187ebde29cb915c3d7ef35d1e9cf57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974250"
 ---
-# <a name="ivmmouseclick-method"></a>Metodo IVMMouse:: click
+# <a name="ivmmouseclick-method"></a>Metodo IVMMouse::Click
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Simula un clic del pulsante del mouse.
+Simula il clic di un pulsante del mouse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,10 +44,10 @@ HRESULT Click(
 
 <dl> <dt>
 
-*ButtonIndex* \[ in\]
+*buttonIndex* \[ Pollici\]
 </dt> <dd>
 
-Indice del pulsante su cui si fa clic. Per un elenco di valori, vedere [**VMMouseButton**](vmmousebutton.md).
+Indice del pulsante selezionato. Per un elenco di valori, vedere [**VMMouseButton.**](vmmousebutton.md)
 
 </dd> </dl>
 
@@ -60,10 +60,10 @@ Questo metodo può restituire uno di questi valori.
 | Codice/valore restituito                                                                                                                                                        | Descrizione                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                              | L'operazione è stata completata.<br/>                                                                                                          |
-| <dl> <dt>**E \_**</dt> <dt>0x80000003</dt> INVALIDARG </dl>             | Il parametro è **null**.<br/>                                                                                                             |
-| <dl> <dt>**Macchina virtuale \_ \_VM E \_ non \_ in esecuzione**</dt> <dt>0xA0040206</dt> </dl>   | La macchina virtuale a cui questo dispositivo mouse è collegato non è attualmente in esecuzione.<br/>                                                   |
-| <dl> <dt>**Macchina virtuale \_ E \_ mouse \_ non \_ attivo**</dt> <dt>0xA0040800</dt> </dl> | Non è stato possibile completare l'operazione perché il dispositivo mouse non è acceso o non è attualmente attivo nella macchina virtuale.<br/> |
-| <dl> <dt>**Disp \_ 0x80020009 \_ eccezione E**</dt> <dt></dt> </dl>        | Si è verificato un errore imprevisto.<br/>                                                                                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>             | Il parametro è **NULL.**<br/>                                                                                                             |
+| <dl> <dt>**Macchina virtuale \_ E \_ MACCHINA VIRTUALE NON IN \_ \_ ESECUZIONE**</dt> <dt>0xA0040206</dt> </dl>   | La macchina virtuale a cui è collegato il dispositivo mouse non è attualmente in esecuzione.<br/>                                                   |
+| <dl> <dt>**Macchina virtuale \_ E \_ MOUSE \_ NOT \_ ACTIVE**</dt> <dt>0xA0040800</dt> </dl> | Non è stato possibile completare l'operazione perché il dispositivo mouse non è acceso o non è attualmente attivo nella macchina virtuale.<br/> |
+| <dl> <dt>**DISP \_ E \_ ECCEZIONE**</dt> <dt>0x80020009</dt> </dl>        | Si è verificato un errore imprevisto.<br/>                                                                                                      |
 
 
 
@@ -75,12 +75,12 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMmouse è definito come ac903f6d-6346-4F29-8875-5d511a13895e<br/>                   |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMmouse è definito come ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
 
 
 

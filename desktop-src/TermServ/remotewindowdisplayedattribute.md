@@ -1,10 +1,10 @@
 ---
 title: Enumerazione RemoteWindowDisplayedAttribute
-description: Utilizzato con il metodo per specificare le informazioni sull'evento.
+description: Utilizzato con il metodo per specificare informazioni sull'evento.
 ms.assetid: 22549063-6979-48F2-AEA5-94BFC848C707
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto enumerazione RemoteWindowDisplayedAttribute
+- Enumerazione RemoteWindowDisplayedAttribute Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a137d0ba0b6b692c949ab6c2a0c7b59b0d1fb341
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d249e088028f7b8b8238dcc2aa65410931bf0d359037cbb9e637dc5f84a6473
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988531"
 ---
 # <a name="remotewindowdisplayedattribute-enumeration"></a>Enumerazione RemoteWindowDisplayedAttribute
 
-Utilizzato con il metodo per specificare le informazioni sull'evento.
+Utilizzato con il metodo per specificare informazioni sull'evento.
 
 ## <a name="syntax"></a>Sintassi
 
