@@ -1,23 +1,23 @@
 ---
 title: GLX e WGL/Windows
-description: Alcune funzioni di WGL e le funzioni di Windows sono più o meno analoghe alle funzioni finestra di GLX X. Nell'elenco seguente vengono illustrate le funzioni GLX e le funzioni WGL/Windows corrispondenti, se disponibili.
+description: Alcune delle funzioni WGL e Windows funzioni sono più o meno analoghe alle funzioni della finestra GLX X. L'elenco seguente mostra le funzioni GLX e le corrispondenti funzioni WGL/Windows, se disponibili.
 ms.assetid: 428c0fdc-a541-4720-908f-99f0539d9f4b
 keywords:
-- OpenGL per Windows, funzioni GLX
+- Funzioni OpenGL Windows,GLX
 - Funzioni GLX OpenGL
 - Funzioni WGL, rispetto alle funzioni GLX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eaa2c0ce28bd22e8b6efee4edc395223be2bf11
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c24b88caeed9aea7bae8e38f73818ac180aad9117806508f40550b02eb8a4e76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035385"
 ---
 # <a name="glx-and-wglwindows"></a>GLX e WGL/Windows
 
-Alcune funzioni di WGL e le funzioni di Windows sono più o meno analoghe alle funzioni finestra di GLX X. Nell'elenco seguente vengono illustrate le funzioni GLX e le funzioni WGL/Windows corrispondenti, se disponibili.
+Alcune delle funzioni WGL e Windows funzioni sono più o meno analoghe alle funzioni della finestra GLX X. L'elenco seguente mostra le funzioni GLX e le corrispondenti funzioni WGL/Windows, se disponibili.
 
 
 
@@ -49,10 +49,10 @@ Alcune funzioni di WGL e le funzioni di Windows sono più o meno analoghe alle f
 
 
 
- 
+ 
 
-Per ulteriori informazioni, vedere la *Guida al porting*.
+Per altre informazioni, fare riferimento alla *Guida alla portabilità*.
 
- 
+ 
 
- 
+ 

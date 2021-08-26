@@ -4,16 +4,16 @@ description: IAgentCharacter GetSize
 ms.assetid: bc2d6fe4-5945-4a35-b603-409c66f8aa2a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e40c219cd0a1dc1d11738149ca7cfd9869fe682e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5af078eb9980399793e00f8bd3deaefef7f048a900423c1ee50ac8d4f4a310b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962231"
 ---
-# <a name="iagentcharactergetsize"></a>IAgentCharacter:: GetSize
+# <a name="iagentcharactergetsize"></a>IAgentCharacter::GetSize
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetSize(
@@ -22,36 +22,36 @@ HRESULT GetSize(
 );
 ```
 
-Recupera la dimensione del frame di animazione del carattere.
+Recupera le dimensioni del frame di animazione del carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="plWidth"></span><span id="plwidth"></span><span id="PLWIDTH"></span>*plWidth*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve la larghezza del fotogramma di animazione dei caratteri in pixel rispetto all'origine della schermata (in alto a sinistra).
+Indirizzo di una variabile che riceve la larghezza del fotogramma dell'animazione del carattere in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> <dt>
 
 <span id="plHeight"></span><span id="plheight"></span><span id="PLHEIGHT"></span>*plHeight*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve l'altezza del frame di animazione dei caratteri in pixel rispetto all'origine della schermata (in alto a sinistra).
+Indirizzo di una variabile che riceve l'altezza del fotogramma dell'animazione del carattere in pixel, rispetto all'origine dello schermo (in alto a sinistra).
 
 </dd> </dl>
 
-Anche se il carattere viene visualizzato in una finestra dell'area a forma irregolare, la posizione del carattere è basata sul relativo frame di animazione rettangolare.
+Anche se il carattere viene visualizzato in una finestra di area irregolare, la posizione del carattere è basata sul relativo frame di animazione rettangolare.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCharacter:: sesize**](iagentcharacter--setsize.md)
+[**IAgentCharacter::SetSize**](iagentcharacter--setsize.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

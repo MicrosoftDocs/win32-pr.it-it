@@ -1,21 +1,21 @@
 ---
-description: 'Enumerazione StreamQualityProperty usata dai metodi ITStreamQualityControl:: GetRange, ITStreamQualityControl:: Get e ITStreamQualityControl:: set per indicare la proprietà della qualità del flusso da risolvere.'
+description: Enumerazione StreamQualityProperty usata dai metodi ITStreamQualityControl::GetRange, ITStreamQualityControl::Get e ITStreamQualityControl::Set per indicare la proprietà di qualità del flusso da risolvere.
 ms.assetid: 28c9257f-6fbb-440f-9b84-c15a74229b5b
-title: Enumerazione StreamQualityProperty (Ipmsp. h)
+title: Enumerazione StreamQualityProperty (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f552641cd0847bb3ff8eec9d528a03171a78c2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea006b614522ffcab6f96e630df03087b78864ff7d7af6ddcd5c515bc090e821
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905751"
 ---
 # <a name="streamqualityproperty-enumeration"></a>Enumerazione StreamQualityProperty
 
-\[ Questa enumerazione non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questa enumerazione non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Enumerazione **StreamQualityProperty** usata dai metodi [**ITStreamQualityControl:: GetRange**](itstreamqualitycontrol-getrange.md), [**ITStreamQualityControl:: Get**](itstreamqualitycontrol-get.md)e [**ITStreamQualityControl:: set**](itstreamqualitycontrol-set.md) per indicare la proprietà della qualità del flusso da risolvere.
+Enumerazione **StreamQualityProperty** usata dai metodi [**ITStreamQualityControl::GetRange**](itstreamqualitycontrol-getrange.md), [**ITStreamQualityControl::Get**](itstreamqualitycontrol-get.md)e [**ITStreamQualityControl::Set**](itstreamqualitycontrol-set.md) per indicare la proprietà di qualità del flusso da risolvere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,31 +30,31 @@ Enumerazione **StreamQualityProperty** usata dai metodi [**ITStreamQualityContro
 
 <dl> <dt>
 
-<span id="StreamQuality_MaxBitrate"></span><span id="streamquality_maxbitrate"></span><span id="STREAMQUALITY_MAXBITRATE"></span>**\_MaxBitrate StreamQuality**
+<span id="StreamQuality_MaxBitrate"></span><span id="streamquality_maxbitrate"></span><span id="STREAMQUALITY_MAXBITRATE"></span>**StreamQuality \_ MaxBitrate**
 </dt> <dd>
 
 Velocità in bit massima.
 
 </dd> <dt>
 
-<span id="StreamQuality_CurrBitrate"></span><span id="streamquality_currbitrate"></span><span id="STREAMQUALITY_CURRBITRATE"></span>**\_CurrBitrate StreamQuality**
+<span id="StreamQuality_CurrBitrate"></span><span id="streamquality_currbitrate"></span><span id="STREAMQUALITY_CURRBITRATE"></span>**\_CurrBitrate di StreamQuality**
 </dt> <dd>
 
 Velocità in bit minima.
 
 </dd> <dt>
 
-<span id="StreamQuality_MinFrameInterval"></span><span id="streamquality_minframeinterval"></span><span id="STREAMQUALITY_MINFRAMEINTERVAL"></span>**\_MinFrameInterval StreamQuality**
+<span id="StreamQuality_MinFrameInterval"></span><span id="streamquality_minframeinterval"></span><span id="STREAMQUALITY_MINFRAMEINTERVAL"></span>**StreamQuality \_ MinFrameInterval**
 </dt> <dd>
 
-Intervallo massimo di frame.
+Intervallo massimo di fotogrammi.
 
 </dd> <dt>
 
-<span id="StreamQuality_AvgFrameInterval"></span><span id="streamquality_avgframeinterval"></span><span id="STREAMQUALITY_AVGFRAMEINTERVAL"></span>**\_AvgFrameInterval StreamQuality**
+<span id="StreamQuality_AvgFrameInterval"></span><span id="streamquality_avgframeinterval"></span><span id="STREAMQUALITY_AVGFRAMEINTERVAL"></span>**\_AvgFrameInterval di StreamQuality**
 </dt> <dd>
 
-Intervallo minimo frame.
+Intervallo di fotogrammi minimo.
 
 </dd> </dl>
 
@@ -64,8 +64,8 @@ Intervallo minimo frame.
 
 | Requisito | Valore |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                       |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                       |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ Intervallo minimo frame.
 
 <dl> <dt>
 
-[**ITStreamQualityControl:: GetRange**](itstreamqualitycontrol-getrange.md)
+[**ITStreamQualityControl::GetRange**](itstreamqualitycontrol-getrange.md)
 </dt> <dt>
 
-[**ITStreamQualityControl:: Get**](itstreamqualitycontrol-get.md)
+[**ITStreamQualityControl::Get**](itstreamqualitycontrol-get.md)
 </dt> <dt>
 
-[**ITStreamQualityControl:: set**](itstreamqualitycontrol-set.md)
+[**ITStreamQualityControl::Set**](itstreamqualitycontrol-set.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Descrizione di una costante in una tabella di costanti.
+description: Descrizione di una costante in una tabella costante.
 ms.assetid: d1970536-7195-4270-a1b9-b082ebe4f17f
-title: Struttura D3DXCONSTANT_DESC (D3dx9shader. h)
+title: D3DXCONSTANT_DESC struttura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: d737fa1d95a119668602aeb056e15bc4248200aa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bdb3b8276711f3165c0c138155eb6e628c19a124d6f9301de7638e5be24d1c1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952451"
 ---
-# <a name="d3dxconstant_desc-structure"></a>\_Struttura D3DXCONSTANT DESC
+# <a name="d3dxconstant_desc-structure"></a>Struttura DESC D3DXCONSTANT \_
 
-Descrizione di una costante in una tabella di costanti.
+Descrizione di una costante in una tabella costante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,21 +61,21 @@ Nome della costante.
 
 </dd> <dt>
 
-**Registro**
+**RegisterSet**
 </dt> <dd>
 
-Tipo: **[ **D3DXREGISTER \_ impostato**](./d3dxregister-set.md)**
+Tipo: **[ **D3DXREGISTER \_ SET**](./d3dxregister-set.md)**
 
 </dd> <dd>
 
-Tipo di dati Constant. Vedere [**D3DXREGISTER \_ set**](./d3dxregister-set.md).
+Tipo di dati costante. Vedere [**D3DXREGISTER \_ SET**](./d3dxregister-set.md).
 
 </dd> <dt>
 
 **RegisterIndex**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -86,7 +86,7 @@ Indice in base zero della costante nella tabella.
 **RegisterCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -97,29 +97,29 @@ Numero di registri che contengono dati.
 **Classe**
 </dt> <dd>
 
-Tipo: **[ **\_ classe D3DXPARAMETER**](./d3dxparameter-class.md)**
+Tipo: **[ **CLASSE D3DXPARAMETER \_**](./d3dxparameter-class.md)**
 
 </dd> <dd>
 
-Classe Parameter. Vedere [**la \_ classe D3DXPARAMETER**](./d3dxparameter-class.md).
+Classe di parametri. Vedere [**CLASSE D3DXPARAMETER \_**](./d3dxparameter-class.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **D3DXPARAMETER \_**](./d3dxparameter-type.md)**
+Tipo: **[ **D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md)**
 
 </dd> <dd>
 
-Tipo di parametro. Vedere [**D3DXPARAMETER \_ Type**](./d3dxparameter-type.md).
+Tipo di parametro. Vedere [**D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md).
 
 </dd> <dt>
 
 **prime righe**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -130,7 +130,7 @@ Numero di righe.
 **Colonne**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -141,7 +141,7 @@ Numero di colonne.
 **Elementi**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -152,18 +152,18 @@ Numero di elementi nella matrice.
 **StructMembers**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di sottoparametri dei membri della struttura.
+Numero di sotto parameters dei membri della struttura.
 
 </dd> <dt>
 
 **Byte**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -188,7 +188,7 @@ Puntatore al valore predefinito.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 

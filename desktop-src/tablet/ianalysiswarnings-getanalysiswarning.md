@@ -1,7 +1,7 @@
 ---
 description: Recupera l'oggetto IAnalysisWarning in corrispondenza dell'indice specificato.
 ms.assetid: 8f5d5642-73ec-496e-bad7-9f636fc00217
-title: 'Metodo IAnalysisWarnings:: GetAnalysisWarning (IACom. h)'
+title: Metodo IAnalysisWarnings::GetAnalysisWarning (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 88ed3686ecf3861a2b097ebfc005214ab0cdd1c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16a2f59482f7fb2250bf60c052ccd3963fd86f1daba8d25acc9b342a5d2c984c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935451"
 ---
-# <a name="ianalysiswarningsgetanalysiswarning-method"></a>Metodo IAnalysisWarnings:: GetAnalysisWarning
+# <a name="ianalysiswarningsgetanalysiswarning-method"></a>Metodo IAnalysisWarnings::GetAnalysisWarning
 
-Recupera l'oggetto [**IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.
+Recupera [**l'oggetto IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,34 +40,34 @@ HRESULT GetAnalysisWarning(
 
 <dl> <dt>
 
-*ulIndex* \[ in\]
+*ulIndex* \[ Pollici\]
 </dt> <dd>
 
-Indice in base zero dell'oggetto [**IAnalysisWarning**](ianalysiswarning.md) da ottenere.
+Indice in base zero [**dell'oggetto IAnalysisWarning**](ianalysiswarning.md) da ottenere.
 
 </dd> <dt>
 
-*ppWarning* \[ out\]
+*ppWarning* \[ Cambio\]
 </dt> <dd>
 
-Puntatore all'oggetto [**IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.
+Puntatore [**all'oggetto IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, chiamare [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) su \* *ppWarning* quando non è più necessario usare l'avviso.
+> Per evitare una perdita di memoria, chiamare [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) in ppWarning quando non è \*  più necessario usare l'avviso.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una struttura di un gestore eventi per l'evento [**\_ IAnalysisEvents:: results**](-ianalysisevents-results.md) . Il gestore verifica [**IAnalysisStatus:: con esito positivo**](ianalysisstatus-issuccessful.md). Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di oggetti [**IAnalysisWarning**](ianalysiswarning.md) .
+L'esempio seguente mostra una struttura di un gestore eventi per [**\_ l'evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) Il gestore controlla [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Se l'operazione di analisi genera avvisi, il gestore scorre la raccolta di [**oggetti IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -154,9 +154,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -168,7 +168,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisWarnings**](ianalysiswarnings.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

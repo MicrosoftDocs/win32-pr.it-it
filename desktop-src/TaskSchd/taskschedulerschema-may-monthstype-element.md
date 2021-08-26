@@ -1,9 +1,9 @@
 ---
 title: Elemento May (monthsType)
-description: Specifica che l'attività viene eseguita in May.
+description: Specifica che l'attività viene eseguita nel maggio.
 ms.assetid: 1fcc3eb7-6500-4ba3-b146-14d169d9b445
 keywords:
-- Utilità di pianificazione dell'elemento May
+- Elemento May Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d3f0c107124aa2c87672f63a469857f3795e13c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d8a7edc0429b77042a5ef7bbb6e16bf69bda8a4c6ed889bbf8c1b981b912ab1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905611"
 ---
 # <a name="may-monthstype-element"></a>Elemento May (monthsType)
 
-Specifica che l'attività viene eseguita in May.
+Specifica che l'attività viene eseguita nel maggio.
 
 ``` syntax
 <xs:element name="May">
@@ -30,7 +30,7 @@ Specifica che l'attività viene eseguita in May.
 </xs:element>
 ```
 
-L'elemento **può** essere definito dal tipo complesso [**monthsType**](taskschedulerschema-monthstype-complextype.md) .
+**L'elemento** May è definito dal [**tipo complesso monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,14 +38,14 @@ L'elemento **può** essere definito dal tipo complesso [**monthsType**](tasksche
 
 | Elemento                                                                                                          | Derivato da                                                     | Descrizione                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Mesi (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile del giorno della settimana.<br/> |
-| [**Mesi (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile.<br/>             |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali viene eseguita l'attività per una pianificazione mensile del giorno della settimana.<br/> |
+| [**Months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Specifica i mesi dell'anno durante i quali l'attività viene eseguita per una pianificazione mensile.<br/>             |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un calendario dei mesi che esegue l'attività in May.
+Nel codice XML seguente viene definito un calendario dei mesi che esegue l'attività nel mese di maggio.
 
 
 ```XML
@@ -62,8 +62,8 @@ Il codice XML seguente definisce un calendario dei mesi che esegue l'attività i
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il codice XML seguente definisce un calendario dei mesi che esegue l'attività i
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

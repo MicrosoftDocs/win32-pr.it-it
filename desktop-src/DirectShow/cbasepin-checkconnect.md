@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 314d3e1ce0e73e60ea07bb4f7270fa04f69750c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0a91e936f13c76ed4d99d7c5048820777afa47c9a52c260bb7f34acb702cb777
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916851"
 ---
 # <a name="cbasepincheckconnect-method"></a>Metodo CBasePin.CheckConnect
 
@@ -58,7 +58,7 @@ Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 | Codice restituito                                                                                               | Descrizione                                   |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                      | Operazione completata.<br/>                           |
-| <dl> <dt>**DIREZIONE VFW \_ E \_ NON \_ VALIDA**</dt> </dl> | Le direzioni dei pin non sono compatibili.<br/> |
+| <dl> <dt>**DIREZIONE VFW \_ E \_ NON \_ VALIDA**</dt> </dl> | Le direzioni del pin non sono compatibili.<br/> |
 
 
 
@@ -66,11 +66,11 @@ Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato su entrambi i pin all'inizio del processo di connessione. Il pin di connessione lo chiama dall'interno del metodo [**CBasePin::Connect**](cbasepin-connect.md) e il pin ricevente lo chiama dall'interno del [**metodo CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
+Questo metodo viene chiamato su entrambi i pin all'inizio del processo di connessione. Il pin di connessione lo chiama dall'interno del metodo [**CBasePin::Connessione e**](cbasepin-connect.md) il pin ricevente lo chiama dall'interno del metodo [**CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
-Usare questo metodo per determinare se il pin specificato dal *parametro pPin* è adatto per una connessione. La classe di base restituisce un errore se entrambi i segnaposto hanno la stessa direzione (input o output entrambi). Le classi derivate possono eseguire l'override di questo metodo per verificare altre funzionalità nella puntina. Ad esempio, la [**classe CBaseOutputPin**](cbaseoutputpin.md) esegue una query sul pin di input per la relativa [**interfaccia IMemInputPin.**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)
+Usare questo metodo per determinare se il pin specificato dal *parametro pPin* è adatto per una connessione. La classe base restituisce un errore se entrambi i pin hanno la stessa direzione (input o entrambi gli output). Le classi derivate possono eseguire l'override di questo metodo per verificare altre funzionalità nel pin. Ad esempio, la [**classe CBaseOutputPin**](cbaseoutputpin.md) esegue una query sul pin di input per l'interfaccia [**IMemInputPin.**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)
 
-Se questo metodo ha esito negativo, la connessione non riesce e il pin chiama il [**metodo CBasePin::BreakConnect.**](cbasepin-breakconnect.md) Usare **BreakConnect** per liberare tutte le risorse ottenute in `CheckConnect` . Ad esempio, se `CheckConnect` chiama il **metodo QueryInterface,** **BreakConnect** deve rilasciare l'interfaccia .
+Se questo metodo ha esito negativo, la connessione ha esito negativo e il pin chiama il metodo [**CBasePin::BreakConnect.**](cbasepin-breakconnect.md) Usare **BreakConnect** per liberare tutte le risorse ottenute in `CheckConnect` . Ad esempio, se `CheckConnect` chiama il **metodo QueryInterface,** **BreakConnect** deve rilasciare l'interfaccia .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Se questo metodo ha esito negativo, la connessione non riesce e il pin chiama il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

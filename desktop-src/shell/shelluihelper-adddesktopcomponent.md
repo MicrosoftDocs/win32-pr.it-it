@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41634a89-15b9-41c8-ba3f-4bf19b786f6f
-ms.openlocfilehash: 2edaa79bd62dcee40e4f197700d2128cb0b2070d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5141b35b9fb71b09b9b269016d0b38cdb0b9f01ec88a02070a0f936934159930
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941501"
 ---
 # <a name="shelluihelperadddesktopcomponent-method"></a>Metodo ShellUIHelper.AddDesktopComponent
 
@@ -58,7 +58,7 @@ Valore **String** che specifica l'URL del nuovo elemento preferito.
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valore **String** che specifica il tipo di elemento aggiunto. Può essere uno dei valori seguenti.
+Valore **String** che specifica il tipo di elemento da aggiungere. Può essere uno dei valori seguenti.
 
 <dt>
 
@@ -105,7 +105,7 @@ Posizione del bordo superiore del componente, in coordinate dello schermo.
 *Larghezza* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Larghezza del componente, in unità dello schermo.
 
@@ -114,7 +114,7 @@ Larghezza del componente, in unità dello schermo.
 *Altezza* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Altezza del componente, in unità dello schermo.
 
@@ -122,9 +122,9 @@ Altezza del componente, in unità dello schermo.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript incorporato in HTML e Visual Basic.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo JScript incorporati in HTML e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -175,7 +175,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |

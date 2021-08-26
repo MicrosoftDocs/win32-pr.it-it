@@ -4,12 +4,12 @@ ms.assetid: 75504cf2-e656-440d-a2dc-16e9ca801565
 title: Messaggi MDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96cbae2388e81f4848d9a8d1acfcd337ef0e5dd6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5a7cb41007e16d638370cfc4ca5296073c3760e60d319db4325c18bdb3b34f7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932161"
 ---
 # <a name="mdi-messages"></a>Messaggi MDI
 

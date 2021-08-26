@@ -1,7 +1,7 @@
 ---
-description: La funzione VarLenSmallIntToDword converte un valore integer di lunghezza variabile, piccolo, in un valore DWORD.
+description: La funzione VarLenSmallIntToDword converte un small integer a lunghezza variabile in un valore DWORD.
 ms.assetid: e26dc206-ac85-4346-9fcf-93ebc8948ced
-title: Funzione VarLenSmallIntToDword (Netmon. h)
+title: Funzione VarLenSmallIntToDword (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 4b0e2fa0813c4b384b17ea45af45f9938bcd85c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffec440adc903ddb9a5157e8e5f36037e092f0c4bf0cd52da79b0839220366ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962731"
 ---
-# <a name="varlensmallinttodword-function"></a>VarLenSmallIntToDword (funzione)
+# <a name="varlensmallinttodword-function"></a>Funzione VarLenSmallIntToDword
 
-La funzione **VarLenSmallIntToDword** converte un valore integer di lunghezza variabile, piccolo, in un valore **DWORD**.
+La **funzione VarLenSmallIntToDword** converte un small integer a lunghezza variabile in **un valore DWORD**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ LPDWORD WINAPI VarLenSmallIntToDword(
 *pValue* 
 </dt> <dd>
 
-Puntatore al valore integer a lunghezza variabile, piccolo.
+Puntatore all'intero piccolo a lunghezza variabile.
 
 </dd> <dt>
 
@@ -59,20 +59,20 @@ Lunghezza (in byte) dell'intero piccolo a lunghezza variabile.
 *fIsByteswapped* 
 </dt> <dd>
 
-Flag che indica se la lunghezza della variabile Small Integer è scambio di byte.
+Flag che indica se l'intero piccolo a lunghezza variabile viene scambiato con byte.
 
 </dd> <dt>
 
 *lpDword* 
 </dt> <dd>
 
-**DWORD** in cui viene convertito il valore integer.
+Valore **DWORD in** cui viene convertito l'intero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un puntatore a **DWORD**.
+Il valore restituito è un puntatore al **valore DWORD**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ Il valore restituito è un puntatore a **DWORD**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Parser. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

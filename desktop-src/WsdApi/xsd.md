@@ -4,12 +4,12 @@ ms.assetid: 6fe40e77-d23f-4ae9-a4d6-1f567a0fffe7
 title: Elemento xsd
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 851ce31230ff88ea2465040c33dc131e0902392c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3f790375c34a4d5afc3dc345691c8e26e5f95cebe0bbde283e2986e838cce554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995091"
 ---
 # <a name="xsd-element"></a>Elemento xsd
 
@@ -68,7 +68,7 @@ La stringa del nome file deve includere anche informazioni complete sul percorso
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

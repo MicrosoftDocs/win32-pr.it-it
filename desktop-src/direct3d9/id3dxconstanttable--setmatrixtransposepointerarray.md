@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::SetMatrixTransposePointerArray: imposta una matrice di puntatori alle matrici trasposte.'
+description: 'Metodo ID3DXConstantTable::SetMatrixTransposePointerArray : imposta una matrice di puntatori alle matrici trasposte.'
 ms.assetid: f2db10cb-a146-412d-8de8-f093253470fd
 title: Metodo ID3DXConstantTable::SetMatrixTransposePointerArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6fefb5a0b62174499a4631f2fe8020c25a3a8efa
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: aa21e6a19fe3ebb8ea1ee9dfecaa9e7370c5dd412d9dea8599987a55dc1858d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951851"
 ---
 # <a name="id3dxconstanttablesetmatrixtransposepointerarray-method"></a>Metodo ID3DXConstantTable::SetMatrixTransposePointerArray
 
-Imposta una matrice di puntatori alle matrici trasposte.
+Imposta una matrice di puntatori a matrici trasposte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT SetMatrixTransposePointerArray(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 

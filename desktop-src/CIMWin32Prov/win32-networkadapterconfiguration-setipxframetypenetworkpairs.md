@@ -1,8 +1,8 @@
 ---
-description: Imposta le coppie di frame/numero di rete IPX (Internetworking Packet Exchange) per questa scheda di rete.
+description: Imposta le coppie numero di rete/frame IPX (Internetworking Packet Exchange) per questa scheda di rete.
 ms.assetid: 8190564f-7d9f-4b05-9949-2e732ce36dba
 ms.tgt_platform: multiple
-title: Metodo SetIPXFrameTypeNetworkPairs della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetIPXFrameTypeNetworkPairs Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: e4d53ec7b5600a767505e517a02fbf87b5a43d13
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f914f996e26d64ae66c0be2acf1dee3988ccc2015109c6e7d3b340b406c0c23e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973026"
 ---
-# <a name="setipxframetypenetworkpairs-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetIPXFrameTypeNetworkPairs della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setipxframetypenetworkpairs-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetIPXFrameTypeNetworkPairs della classe NetworkAdapterConfiguration Win32 \_
 
-Imposta le coppie di frame/numero di rete IPX (Internetworking Packet Exchange) per questa scheda di rete.
+Imposta le coppie numero di rete/frame IPX (Internetworking Packet Exchange) per questa scheda di rete.
 
-Windows 2000 e Windows NT 3,51 e versioni successive utilizzano un numero di rete IPX a scopo di routing. Viene assegnato a ogni combinazione di tipo di frame/scheda di rete configurata nel sistema del computer. Questo numero viene talvolta definito "numero di rete esterna". Deve essere univoco per ogni segmento di rete. Se il tipo di frame è impostato su automatico, il numero di rete deve essere pari a zero.
+Windows 2000 e Windows NT 3.51 e versioni successive usano un numero di rete IPX a scopo di routing. Viene assegnato a ogni combinazione di tipo di frame/scheda di rete configurata nel sistema del computer. Questo numero viene talvolta definito "numero di rete esterno". Deve essere univoco per ogni segmento di rete. Se il tipo di frame è impostato su AUTO, il numero di rete deve essere zero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ uint32 SetIPXFrameTypeNetworkPairs(
 
 <dl> <dt>
 
-*IPXNetworkNumber* \[ in\]
+*IPXNetworkNumber* \[ Pollici\]
 </dt> <dd>
 
-Matrice di caratteri che identifica in modo univoco un adapter nel computer. Il trasporto con connessione NetWare (NWLink) compatibile con IPX/SPX in Windows 2000 e Windows NT 3,51 o versione successiva usa due tipi diversi di numeri di rete. Questo numero viene talvolta definito numero di rete esterna. Deve essere univoco per ogni segmento di rete. I valori in questo elenco di stringhe devono avere un valore corrispondente nel parametro IPXFrameType che identifica il tipo di frame del pacchetto usato per la rete.
+Matrice di caratteri che identificano in modo univoco una scheda nel sistema del computer. Il trasporto compatibile con NetWare Link (NWLink) IPX/SPX in Windows 2000 e Windows NT 3.51 o versione successiva usa due tipi diversi di numeri di rete. Questo numero viene talvolta definito numero di rete esterna. Deve essere univoco per ogni segmento di rete. I valori in questo elenco di stringhe devono avere un valore corrispondente nel parametro IPXFrameType che identifica il tipo di frame del pacchetto usato per la rete.
 
 </dd> <dt>
 
-*IPXFrameType* \[ in\]
+*IPXFrameType* \[ Pollici\]
 </dt> <dd>
 
-Matrice di Integer di identificatori del tipo di frame. I valori in questa matrice corrispondono agli elementi nel parametro *IPXNetworkNumber* .
+Matrice integer di identificatori di tipo frame. I valori in questa matrice corrispondono agli elementi nel *parametro IPXNetworkNumber.*
 
 <dt>
 
@@ -66,28 +66,28 @@ Matrice di Integer di identificatori del tipo di frame. I valori in questa matri
 
 <span id="Ethernet_802.3"></span><span id="ethernet_802.3"></span><span id="ETHERNET_802.3"></span>
 
-**Ethernet 802,3** (1)
+**Ethernet 802.3** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_802.2"></span><span id="ethernet_802.2"></span><span id="ETHERNET_802.2"></span>
 
-**Ethernet 802,2** (2)
+**Ethernet 802.2** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_SNAP"></span><span id="ethernet_snap"></span><span id="ETHERNET_SNAP"></span>
 
-**Snap** -in Ethernet (3)
+**SNAP Ethernet** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUTO"></span><span id="auto"></span>
 
-**Automatico** (255)
+**AUTO** (255)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
@@ -96,10 +96,10 @@ Matrice di Integer di identificatori del tipo di frame. I valori in questa matri
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare** il computer (0)
+**Completamento riuscito, nessun riavvio necessario** (0)
 </dt> <dt>
 
-**Operazione completata, riavvio richiesto** (1)
+**Completamento riuscito, riavvio necessario** (1)
 </dt> <dt>
 
 **Metodo non supportato in questa piattaforma** (64)
@@ -108,25 +108,25 @@ Matrice di Integer di identificatori del tipo di frame. I valori in questa matri
 **Errore sconosciuto** (65)
 </dt> <dt>
 
-**Subnet mask non valido** (66)
+**Non subnet mask** (66)
 </dt> <dt>
 
 **Si è verificato un errore durante l'elaborazione di un'istanza restituita** (67)
 </dt> <dt>
 
-**Parametro di input non valido** (68)
+**Parametro di input non** valido (68)
 </dt> <dt>
 
-Sono stati **specificati più di 5 gateway** (69)
+**Più di 5 gateway specificati** (69)
 </dt> <dt>
 
 **Indirizzo IP non valido** (70)
 </dt> <dt>
 
-**Indirizzo IP gateway non valido** (71)
+**Indirizzo IP del gateway non** valido (71)
 </dt> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste** (72)
+**Si è verificato un errore durante l'accesso** al Registro di sistema per le informazioni richieste (72)
 </dt> <dt>
 
 **Nome di dominio non valido** (73)
@@ -141,13 +141,13 @@ Sono stati **specificati più di 5 gateway** (69)
 **File non valido** (76)
 </dt> <dt>
 
-**Percorso di sistema non valido** (77)
+**Percorso di sistema non** valido (77)
 </dt> <dt>
 
-**Copia del file non riuscita** (78)
+**Copia file non riuscita** (78)
 </dt> <dt>
 
-**Parametro di sicurezza non valido** (79)
+**Parametro di sicurezza non** valido (79)
 </dt> <dt>
 
 **Impossibile configurare il servizio TCP/IP** (80)
@@ -156,7 +156,7 @@ Sono stati **specificati più di 5 gateway** (69)
 **Impossibile configurare il servizio DHCP** (81)
 </dt> <dt>
 
-**Non è possibile rinnovare il lease DHCP** (82)
+**Impossibile rinnovare il lease DHCP** (82)
 </dt> <dt>
 
 **Impossibile rilasciare il lease DHCP** (83)
@@ -168,10 +168,10 @@ Sono stati **specificati più di 5 gateway** (69)
 **IPX non abilitato sulla scheda** (85)
 </dt> <dt>
 
-**Errore limite numero frame/rete** (86)
+**Errore di limiti del numero di frame/rete** (86)
 </dt> <dt>
 
-**Tipo di frame non valido** (87)
+**Tipo di frame non** valido (87)
 </dt> <dt>
 
 **Numero di rete non valido** (88)
@@ -180,7 +180,7 @@ Sono stati **specificati più di 5 gateway** (69)
 **Numero di rete duplicato** (89)
 </dt> <dt>
 
-**Parametro fuori limite** (90)
+**Parametro fuori dai limiti** (90)
 </dt> <dt>
 
 **Accesso negato** (91)
@@ -189,13 +189,13 @@ Sono stati **specificati più di 5 gateway** (69)
 **Memoria insufficiente** (92)
 </dt> <dt>
 
-**Già esistente** (93)
+**Esiste già** (93)
 </dt> <dt>
 
 **Percorso, file o oggetto non trovato** (94)
 </dt> <dt>
 
-**Non è possibile inviare una notifica al servizio** (95)
+**Impossibile inviare una notifica al** servizio (95)
 </dt> <dt>
 
 **Impossibile inviare una notifica al servizio DNS** (96)
@@ -222,7 +222,7 @@ Sono stati **specificati più di 5 gateway** (69)
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -231,7 +231,7 @@ Sono stati **specificati più di 5 gateway** (69)
 
 <dl> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> </dl>
 
  

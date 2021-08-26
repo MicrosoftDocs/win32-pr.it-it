@@ -1,7 +1,7 @@
 ---
-description: Restituisce il numero di tipi di crittografia che è possibile usare per crittografare il contenuto prima che diventi accessibile alla CPU o al bus.
+description: Restituisce il numero di tipi di crittografia che possono essere usati per crittografare il contenuto prima che diventi accessibile alla CPU o al bus.
 ms.assetid: 442b80f5-8467-427d-a01e-5d22f6ddafea
-title: D3DAUTHENTICATEDQUERY_ENCRYPTIONWHENACCESSIBLEGUIDCOUNT (D3d9types. h)
+title: D3DAUTHENTICATEDQUERY_ENCRYPTIONWHENACCESSIBLEGUIDCOUNT (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 9cd281836436c1d11fe07f7a43ecceebc8e3b12e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f47074947cc2f758d35691e05dda9b39f2f823feb6d647a7d77c0a3cc0030c75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942761"
 ---
-# <a name="d3dauthenticatedquery_encryptionwhenaccessibleguidcount"></a>\_ENCRYPTIONWHENACCESSIBLEGUIDCOUNT D3DAUTHENTICATEDQUERY
+# <a name="d3dauthenticatedquery_encryptionwhenaccessibleguidcount"></a>CRITTOGRAFIA D3DAUTHENTICATEDQUERYWHENACCESSIBLEGUIDCOUNT \_
 
-Restituisce il numero di tipi di crittografia che è possibile usare per crittografare il contenuto prima che diventi accessibile alla CPU o al bus.
+Restituisce il numero di tipi di crittografia che possono essere usati per crittografare il contenuto prima che diventi accessibile alla CPU o al bus.
 
 
 
 | Requisito | Valore |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| GUID query  | **\_ENCRYPTIONWHENACCESSIBLEGUIDCOUNT D3DAUTHENTICATEDQUERY**                                                                                 |
-| Dati di input  | [**\_Input query \_ D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-input.md)                                                         |
-| Restituisce i dati | [**\_Output QUERYEVICTIONENCRYPTIONGUIDCOUNT \_ D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-queryevictionencryptionguidcount-output.md) |
+| Query GUID  | **CRITTOGRAFIA D3DAUTHENTICATEDQUERYWHENACCESSIBLEGUIDCOUNT \_**                                                                                 |
+| Dati di input  | [**INPUT DI QUERY D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                                                         |
+| Restituisce i dati | [**D3DAUTHENTICATEDCHANNEL \_ QUERYEVICTIONENCRYPTIONGUIDCOUNT \_ OUTPUT**](d3dauthenticatedchannel-queryevictionencryptionguidcount-output.md) |
 
 
 
@@ -40,8 +40,8 @@ Restituisce il numero di tipi di crittografia che è possibile usare per crittog
 
 I tipi di canale seguenti supportano questa query:
 
--   **\_Hardware driver \_ D3DAUTHENTICATEDCHANNEL**
--   **\_Software driver \_ D3DAUTHENTICATEDCHANNEL**
+-   **HARDWARE DEL DRIVER D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DEL DRIVER D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ I tipi di canale seguenti supportano questa query:
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ I tipi di canale seguenti supportano questa query:
 
 <dl> <dt>
 
-[Query di protezione del contenuto](content-protection-queries.md)
+[protezione del contenuto query](content-protection-queries.md)
 </dt> <dt>
 
-[protezione del contenuto basate su GPU](gpu-based-content-protection.md)
+[Impostazioni basate su GPU protezione del contenuto](gpu-based-content-protection.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

@@ -1,10 +1,10 @@
 ---
-title: TLSDisconnectFromServer (funzione)
-description: Chiude un handle aperto per un server licenze Desktop remoto.
+title: Funzione TLSDisconnectFromServer
+description: Chiude un handle aperto per un server Desktop remoto licenze.
 ms.assetid: b4b001ec-823b-4514-bbec-839a83a9a189
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto funzione TLSDisconnectFromServer
+- Funzione TLSDisconnectFromServer Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 265a6b04186bd640943cf2b348dda7afcf8f712a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95911536eda4bd87e45fd034626cf83d88f4d9fc768e4837316ee93abfe3c3d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869411"
 ---
-# <a name="tlsdisconnectfromserver-function"></a>TLSDisconnectFromServer (funzione)
+# <a name="tlsdisconnectfromserver-function"></a>Funzione TLSDisconnectFromServer
 
-Chiude un handle aperto per un server licenze Desktop remoto.
+Chiude un handle aperto per un server Desktop remoto licenze.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mstlsapi.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Mstlsapi.dll.
 
  
 
@@ -46,10 +46,10 @@ void WINAPI TLSDisconnectFromServer(
 
 <dl> <dt>
 
-*hHandle* \[ in\]
+*hHandle* \[ Pollici\]
 </dt> <dd>
 
-Handle per un server licenze Desktop remoto aperto da una chiamata alla funzione [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Handle a un Desktop remoto licenze aperto da una chiamata alla [**funzione TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Chiamare la funzione **TLSDisconnectFromServer** come parte della routine di pulizia del programma per chiudere tutti gli handle del server aperti dalle chiamate alla funzione [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Chiamare la **funzione TLSDisconnectFromServer** come parte della routine di pulizia del programma per chiudere tutti gli handle del server aperti dalle chiamate alla [**funzione TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Chiamare la funzione **TLSDisconnectFromServer** come parte della routine di pul
 
 <dl> <dt>
 
-[**\_handle TLS**](tls-handle.md)
+[**TLS \_ HANDLE**](tls-handle.md)
 </dt> <dt>
 
 [**TLSConnectToLsServer**](tlsconnecttolsserver.md)

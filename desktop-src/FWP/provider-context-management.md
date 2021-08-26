@@ -4,18 +4,18 @@ description: Gestione del contesto del provider
 ms.assetid: A73A6171-C81B-48EF-A689-3219E0B6B7C3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc7970cdd6f3a69760a74ba4f0419ecb5022a339
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 565c393d64213c1ec3f16267e354e05a6f8d1f69509c55c95088851eb3f041fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900781"
 ---
 # <a name="provider-context-management"></a>Gestione del contesto del provider
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_Modifica del contesto del provider FWPM \_ \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_context_change_callback0)
+-   [**CALLBACK DI MODIFICA DEL \_ CONTESTO DEL PROVIDER FWPM0 \_ \_ \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_context_change_callback0)
 -   [**FwpmProviderContextAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextadd0)
 -   [**FwpmProviderContextAdd1**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextadd1)
 -   [**FwpmProviderContextAdd2**](/windows/desktop/api/fwpmu/nf-fwpmu-fwpmprovidercontextadd2)
@@ -38,6 +38,6 @@ ms.locfileid: "103725871"
 -   [**FwpmProviderContextSubscriptionsGet0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextsubscriptionsget0)
 -   [**FwpmProviderContextUnsubscribeChanges0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercontextunsubscribechanges0)
 
- 
+ 
 
- 
+ 

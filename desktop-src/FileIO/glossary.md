@@ -1,53 +1,53 @@
 ---
-description: Terminologia utilizzata per descrivere Transactional NTFS (TxF).
+description: Terminologia usata per descrivere Transactional NTFS (TxF).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 44cb060c-e6a6-48d6-bbcf-d8dc1ae8ceb2
 title: Glossario TxF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee17e9c53b804995e7ef3491b68e963e9311a37f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06e6e296319dc1a9ccd02834fe6144c28d15d61a0fe0c1ec449a07d81f96dbe2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900651"
 ---
 # <a name="txf-glossary"></a>Glossario TxF
 
 <dl> <dt>
 
-<span id="fs.availability"></span><span id="FS.AVAILABILITY"></span>**disponibilità**
+<span id="fs.availability"></span><span id="FS.AVAILABILITY"></span>**Disponibilità**
 </dt> <dd>
 
-La disponibilità indica che un gestore di risorse interrompe le transazioni anche se la coerenza viene interrotta in modo che il sistema possa continuare a eseguire nuove attività. Il gestore di risorse predefinito impone la disponibilità nel volume di sistema. Se, ad esempio, il log delle transazioni è pieno, non è possibile aggiungere nuovi spazi di log delle transazioni e una transazione precedente che verrebbe interrotta richiede il recapito di un risultato da un gestore di risorse superiore per il completamento di una transazione distribuita, il gestore di risorse non attenderà la gestione transazioni superiore e interromperà la transazione, anche se ciò potrebbe interrompere la coerenza.
+Disponibilità significa che un gestore delle risorse interromperà le transazioni anche se ciò interrompe la coerenza in modo che il sistema possa continuare a eseguire nuove operazioni. Il gestore delle risorse predefinito forza la disponibilità nel volume di sistema. Ad esempio, se il log delle transazioni è pieno, non è possibile aggiungere nuovo spazio del log delle transazioni e una transazione precedente che verrebbe interrotta richiede il recapito di un risultato da un gestore di risorse superiore per il completamento di una transazione distribuita, il gestore delle risorse non attenderà il gestore delle transazioni superiore e interromperà tale transazione anche se potenzialmente causa un'interruzione della coerenza.
 
 </dd> <dt>
 
-<span id="fs.consistency"></span><span id="FS.CONSISTENCY"></span>**coerenza**
+<span id="fs.consistency"></span><span id="FS.CONSISTENCY"></span>**Coerenza**
 </dt> <dd>
 
-La coerenza indica che un gestore di risorse non riuscirà a eseguire nuove transazioni se non è in grado di avanzare. Se, ad esempio, il log delle transazioni è pieno, non è possibile aggiungere nuovi spazi di log delle transazioni e una transazione meno recente che verrebbe interrotta richiede il recapito di un risultato da un gestore di risorse superiore affinché una transazione distribuita venga completata, il gestore di risorse attenderà tale risultato.
+Coerenza significa che un gestore delle risorse avrà esito negativo per le nuove transazioni se non è in grado di procedere in avanti. Ad esempio, se il log delle transazioni è pieno, non è possibile aggiungere nuovo spazio del log delle transazioni e una transazione precedente che verrebbe interrotta richiede che un risultato sia recapitato da un gestore delle risorse superiore per il completamento di una transazione distribuita, il gestore delle risorse attenderà tale risultato.
 
 </dd> <dt>
 
 <span id="fs.miniversion"></span><span id="FS.MINIVERSION"></span>**miniversione**
 </dt> <dd>
 
-Un miniversione è una versione di un file creato da un writer transazionale durante una transazione. Miniversione può essere aperto in un secondo momento nella transazione con accesso in sola lettura.
+Una miniversione è una versione di un file creata da un writer transazionale durante una transazione. La miniversione può essere aperta in un secondo momento nella transazione con accesso in sola lettura.
 
 </dd> <dt>
 
-<span id="fs.transacted_reader"></span><span id="FS.TRANSACTED_READER"></span>**lettore sottoposto a transazione**
+<span id="fs.transacted_reader"></span><span id="FS.TRANSACTED_READER"></span>**lettore transazione**
 </dt> <dd>
 
-Un reader transazionale è un handle di file transazionale aperto con qualsiasi autorizzazione che fa parte di un accesso in lettura generico, ma non fa parte di un accesso in scrittura generico.
+Un lettore transazione è un handle di file transazionato aperto con qualsiasi autorizzazione che fa parte dell'accesso in lettura generico, ma non fa parte dell'accesso in scrittura generico.
 
 </dd> <dt>
 
-<span id="fs.transacted_writer"></span><span id="FS.TRANSACTED_WRITER"></span>**Writer transazionale**
+<span id="fs.transacted_writer"></span><span id="FS.TRANSACTED_WRITER"></span>**writer transazione**
 </dt> <dd>
 
-Un writer transazionale è un handle di file transazionale aperto con qualsiasi autorizzazione che non fa parte di un accesso in lettura generico, ma fa parte di un accesso in scrittura generico.
+Un writer transazione è un handle di file transazione aperto con qualsiasi autorizzazione che non fa parte dell'accesso in lettura generico, ma fa parte dell'accesso in scrittura generico.
 
 </dd> </dl>
 

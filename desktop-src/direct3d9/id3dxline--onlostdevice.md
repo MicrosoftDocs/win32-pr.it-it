@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9f3845e40e4ece115704c38904a61dbca3c24443
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f67327a9582c959cc74d6bd2efb7f8d76dd6fac1e6de06d86aca28dfde5e3634
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951411"
 ---
 # <a name="id3dxlineonlostdevice-method"></a>Metodo ID3DXLine::OnLostDevice
 
@@ -46,7 +46,7 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset.**](/windows/desktop/api) Anche se il dispositivo non è stato effettivamente perso, **ID3DXLine::OnLostDevice** è responsabile del rilascio di blocchi di stato e di altre risorse che potrebbero essere necessarie per essere rilasciate prima di reimpostare il dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e [**quindi ID3DXLine::OnResetDevice**](id3dxline--onresetdevice.md).
+Questo metodo deve essere chiamato ogni volta che il dispositivo viene perso o prima che l'utente [**chiami IDirect3DDevice9::Reset.**](/windows/desktop/api) Anche se il dispositivo non è stato effettivamente perso, **ID3DXLine::OnLostDevice** è responsabile dello sblocco degli blocchi di stato e di altre risorse che potrebbero dover essere rilasciate prima della reimpostazione del dispositivo. Di conseguenza, l'oggetto tipo di carattere non può essere usato di nuovo prima di chiamare **IDirect3DDevice9::Reset** e [**quindi ID3DXLine::OnResetDevice**](id3dxline--onresetdevice.md).
 
 ## <a name="requirements"></a>Requisiti
 

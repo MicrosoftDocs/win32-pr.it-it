@@ -1,7 +1,7 @@
 ---
 description: Rappresenta lo stato configurato del dispositivo TPM.
 ms.assetid: 948ccb47-3626-48f1-b18f-ef1d05978b21
-title: Classe Msvm_TPMSettingData
+title: Msvm_TPMSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8a14f50f01212129ed34cc7e45ee28facbdb991f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f25cd57e1f3cd6ebf015009af176b3bcc68c1d271836c5bb548b9358e9007086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899121"
 ---
-# <a name="msvm_tpmsettingdata-class"></a>\_Classe MSVM TPMSettingData
+# <a name="msvm_tpmsettingdata-class"></a>Classe Msvm \_ TPMSettingData
 
 Rappresenta lo stato configurato del dispositivo TPM.
 
@@ -47,20 +47,20 @@ class Msvm_TPMSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ TPMSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ TPMSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ TPMSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ TPMSettingData** ha queste proprietà.
 
 <dl> <dt>
 
-**Dataprotected**
+**DataProtected**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -69,14 +69,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** per impostare un criterio per proteggere i dati di una macchina virtuale. in caso contrario, **false**. Un TPM appena creato è disabilitato, quindi lo stato di protezione dati iniziale è **false**.
+**true** per impostare un criterio per proteggere i dati di una macchina virtuale; in caso contrario, **false.** Un TPM appena creato è disabilitato, quindi lo stato iniziale della protezione dei dati è **false.**
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -85,7 +85,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Stati abilitati e disabilitati di un elemento. Il valore predefinito è **disabled**.
+Stati abilitati e disabilitati di un elemento. Il valore predefinito è **Disabled.**
 
 <dt>
 
@@ -105,35 +105,35 @@ Stati abilitati e disabilitati di un elemento. Il valore predefinito è **disabl
 
 </dd> <dt>
 
-**Protector**
+**KeyProtector**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), **OctetString**
+Qualificatori: [**obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) **OctetString**
 </dt> </dl>
 
-La protezione con chiave dal client del servizio sorveglianza host.
+Protezione con chiave dal client del servizio Guardiano host.
 
 </dd> <dt>
 
 **LastKnownGoodKeyProtector**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers), **OctetString**
+Qualificatori: [**obbligatorio,**](/windows/desktop/WmiSdk/standard-qualifiers) **OctetString**
 </dt> </dl>
 
-L'ultima protezione con chiave valida nota ha crittografato correttamente lo stato del dispositivo TPM nell'ultimo avvio della macchina virtuale.
+L'ultima protezione con chiave corretta nota ha crittografato correttamente lo stato del dispositivo TPM nell'ultimo avvio della macchina virtuale.
 
 Questa proprietà è di sola lettura per il client WMI e può essere modificata solo dal dispositivo TPM della macchina virtuale.
 
@@ -142,7 +142,7 @@ Questa proprietà è di sola lettura per il client WMI e può essere modificata 
 **Schermato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -151,7 +151,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-**true** per definire un criterio per la schermatura di una macchina virtuale. in caso contrario, **false**. Un TPM appena creato è disabilitato, quindi lo stato di schermatura iniziale è **false**.
+**true** per definire un criterio che protegge una macchina virtuale; in caso contrario, **false.** Un TPM appena creato è disabilitato, quindi lo stato di schermatura iniziale è **false.**
 
 </dd> </dl>
 
@@ -161,12 +161,12 @@ Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Fine del supporto client<br/>    | Windows 10<br/>                                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -175,7 +175,7 @@ Qualificatori: [ **obbligatorio**](/windows/desktop/WmiSdk/standard-qualifiers)
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

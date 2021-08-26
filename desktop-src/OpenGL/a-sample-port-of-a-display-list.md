@@ -1,27 +1,27 @@
 ---
 title: Una porta di esempio di un elenco di visualizzazione
-description: Questo argomento fornisce un esempio di codice IRIS GL che definisce tre elenchi di visualizzazione. uno degli elenchi di visualizzazione fa riferimento agli altri nella relativa definizione. L'esempio IRIS GL è un esempio dell'aspetto del codice quando viene trasferito a OpenGL.
+description: In questo argomento viene fornito un esempio di codice IRIS GL che definisce tre elenchi di visualizzazione. uno degli elenchi di visualizzazione fa riferimento agli altri nella relativa definizione. L'esempio IRIS GL seguente è un esempio dell'aspetto del codice quando viene portato in OpenGL.
 ms.assetid: 03283b00-fb5b-4e89-9384-171b38f141ee
 keywords:
-- Porting di IRIS GL, elenchi di visualizzazione
-- porting da IRIS GL, elenchi di visualizzazione
-- porting in OpenGL da IRIS GL, elenchi di visualizzazione
-- Porting OpenGL da IRIS GL, elenchi di visualizzazione
-- visualizzare elenchi, porting da IRIS GL
+- Porting IRIS GL, elenchi di visualizzazione
+- porting da IRIS GL,visualizzare elenchi
+- porting a OpenGL da IRIS GL, visualizzazione di elenchi
+- Porting OpenGL da IRIS GL, visualizzazione di elenchi
+- elenchi di visualizzazione, porting da IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77a856350a0a248bf7dcac51c36b9d35cf114956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5fbb696673da7f4dc83abd625bb616b67449de64a40df1cfc99bd429a2a980e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103710432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962431"
 ---
 # <a name="a-sample-port-of-a-display-list"></a>Una porta di esempio di un elenco di visualizzazione
 
-Questo argomento fornisce un esempio di codice IRIS GL che definisce tre elenchi di visualizzazione. uno degli elenchi di visualizzazione fa riferimento agli altri nella relativa definizione. L'esempio IRIS GL è un esempio dell'aspetto del codice quando viene trasferito a OpenGL.
+In questo argomento viene fornito un esempio di codice IRIS GL che definisce tre elenchi di visualizzazione. uno degli elenchi di visualizzazione fa riferimento agli altri nella relativa definizione. L'esempio IRIS GL seguente è un esempio dell'aspetto del codice quando viene portato in OpenGL.
 
-## <a name="iris-gl-sample-display-list-code"></a>Codice dell'elenco di visualizzazione dell'esempio IRIS GL
+## <a name="iris-gl-sample-display-list-code"></a>Codice elenco di visualizzazione di esempio IRIS GL
 
 
 ```C++
@@ -49,9 +49,9 @@ call(30);
 
 
 
-## <a name="opengl-sample-display-list-code"></a>Codice dell'elenco di visualizzazione di esempio OpenGL
+## <a name="opengl-sample-display-list-code"></a>Codice elenco di visualizzazione di esempio OpenGL
 
-Ecco il codice di IRIS GL precedente tradotto in OpenGL:
+Ecco il codice GL IRIS precedente tradotto in OpenGL:
 
 
 ```C++
@@ -92,9 +92,9 @@ glCallList(30);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

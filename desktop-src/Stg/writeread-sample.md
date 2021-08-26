@@ -1,21 +1,21 @@
 ---
-title: Esempio WriteRead
-description: WriteRead. cpp crea un set di proprietà, scrive una proprietà, chiude e riapre il set di proprietà e legge nuovamente la proprietà.
+title: Esempio di WriteRead
+description: WriteRead.cpp crea un set di proprietà, scrive una proprietà, chiude e riapre il set di proprietà e legge nuovamente la proprietà.
 ms.assetid: c5807dd9-2928-497b-9446-729dcaeebc8a
 keywords:
-- Archiviazione strutturata Strctd STG, esempi, WriteRead
+- Struttura Archiviazione Strctd Stg , esempi, WriteRead
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 362af8665f56e1dc8d7909fb1363e3e0ee7a8136
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8d869076635904ab61dcf3f210cf5e3cb96308a3e6ce20090dbd227e1f4e34d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034741"
 ---
-# <a name="writeread-sample"></a>Esempio WriteRead
+# <a name="writeread-sample"></a>Esempio di WriteRead
 
-WriteRead. cpp crea un set di proprietà, scrive una proprietà, chiude e riapre il set di proprietà e legge nuovamente la proprietà. Questa applicazione di esempio crea il file "WriteRead. STG" nella directory corrente. Crea set di proprietà in un file di archiviazione della struttura, ma una modifica di una riga comporta la creazione di set di proprietà NTFS file system.
+WriteRead.cpp crea un set di proprietà, scrive una proprietà, chiude e riapre il set di proprietà e legge nuovamente la proprietà. Questa applicazione di esempio crea il file "WriteRead.stg" nella directory corrente. Crea set di proprietà in un file di archiviazione della struttura, ma una modifica di una riga determina la creazione di set di file system NTFS.
 
 
 ```C++
@@ -168,9 +168,9 @@ EXTERN_C void wmain()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

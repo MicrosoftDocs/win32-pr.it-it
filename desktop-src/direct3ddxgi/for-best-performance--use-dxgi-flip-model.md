@@ -1,92 +1,92 @@
 ---
 description: Questo argomento fornisce indicazioni per gli sviluppatori su come ottimizzare le prestazioni e l'efficienza nello stack di presentazione nelle versioni moderne di Windows.
 ms.assetid: B6B92F4F-B1D0-40B9-987D-F0C0F2CC7AD1
-title: Per ottenere prestazioni ottimali, usare DXGI flip model
+title: Per prestazioni ottimali, usare il modello flip DXGI
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: RS5
-ms.openlocfilehash: 2a1e671c03f468fd62b0b5bad0f008f84e62ca3c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ce999bc735042132902158cfd6bd6d41296d29a3afc98ab27d9480dc6bd8b3b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951221"
 ---
-# <a name="for-best-performance-use-dxgi-flip-model"></a>Per ottenere prestazioni ottimali, usare DXGI flip model
+# <a name="for-best-performance-use-dxgi-flip-model"></a>Per prestazioni ottimali, usare il modello flip DXGI
 
-Questo argomento fornisce indicazioni per gli sviluppatori su come ottimizzare le prestazioni e l'efficienza nello stack di presentazione nelle versioni moderne di Windows. Viene rilevata la posizione in cui [DXGI flip model](dxgi-flip-model.md), [DirectX 12: Presentation Modes in Windows 10 (video)](https://www.youtube.com/watch?v=E3wTajGZOsA)e i [miglioramenti della presentazione in Windows 10: un primo aspetto (video)](https://www.youtube.com/watch?v=nUZVV_mssWQ) interrotto.
+Questo argomento fornisce indicazioni per gli sviluppatori su come ottimizzare le prestazioni e l'efficienza nello stack di presentazione nelle versioni moderne di Windows. Consente di riprendere il punto in cui il modello di inversione [DXGI,](dxgi-flip-model.md) [DirectX 12: Modalità](https://www.youtube.com/watch?v=E3wTajGZOsA)di presentazione in Windows 10 (video) e Miglioramenti alla presentazione in Windows 10: Un aspetto iniziale [(video)](https://www.youtube.com/watch?v=nUZVV_mssWQ) è stato lasciato.
 
 ## <a name="call-to-action"></a>Invito all'azione
 
-Se si sta ancora usando **DXGI \_ swap \_ Effect \_ scarto** o **DXGI \_ swap \_ Effect \_ sequenziale** (noto anche come il modello present "BLT"), è giunto il momento di arrestarsi.
+Se si usa ancora **DXGI \_ SWAP \_ EFFECT \_ DISCARD** o **DXGI \_ SWAP EFFECT \_ \_ SEQUENTIAL** (ovvero il modello attuale "blt"), è il momento di arrestarsi.
 
-Passare a **DXGI \_ swap \_ Effect \_ Flip \_ sequenziale** o **DXGI \_ swap \_ Effect \_ Flip \_ ignorate** (noto anche come il modello Flip) offrirà prestazioni migliori, una riduzione dell'utilizzo di energia e un set più completo di funzionalità. Per ulteriori informazioni su questi valori, vedere [ \_ enumerazione DXGI swap \_ Effect](/windows/desktop/api/DXGI/ne-dxgi-dxgi_swap_effect) .
+Passaggio a **DXGI \_ SWAP EFFECT FLIP \_ \_ \_ SEQUENTIAL** o **DXGI \_ SWAP EFFECT FLIP \_ \_ \_ DISCARD** il modello flip) offrirà prestazioni migliori, un minore utilizzo di energia e fornirà un set più avanzato di funzionalità. Per altre informazioni su questi valori, vedere Enumerazione [DXGI \_ SWAP \_ EFFECT.](/windows/desktop/api/DXGI/ne-dxgi-dxgi_swap_effect)
 
-Flip model Presents Go per quanto riguarda la modalità finestra in modo efficace equivalente o migliore rispetto alla modalità classica "esclusiva a schermo intero". In realtà, può essere utile riconsiderare se l'applicazione necessita effettivamente di una modalità esclusiva a schermo intero, perché i vantaggi di una finestra senza bordi del modello sono più veloci Alt-Tab il cambio e una migliore integrazione con le funzionalità di visualizzazione moderne.
+Il modello flip presenta una modalità a finestra equivalente o migliore rispetto alla modalità classica "esclusiva a schermo intero". In effetti, può essere necessario riconsiderare se l'applicazione necessita effettivamente di una modalità esclusiva a schermo intero, poiché i vantaggi di una finestra senza bordi di un modello di inversione includono un cambio di Alt-Tab più veloce e una migliore integrazione con le moderne funzionalità di visualizzazione.
 
-Perché ora? Prima dell'aggiornamento del 2018 aprile, il modello BLT presentava un effetto di strappo visibile se usato nelle configurazioni GPU ibride, spesso disponibile nei portatili di fascia alta (vedere [KB 3158621](https://support.microsoft.com/help/3158621/hybrid-graphics-and-vsync-results-in-graphic-tearing-in-some-games-and)). Nell'aggiornamento di aprile 2018, questo strappo è stato risolto, a scapito di alcune operazioni aggiuntive. Se si esegue BLT presenta un framerate elevato tra GPU ibride, soprattutto a risoluzioni elevate, ad esempio 4K, questo lavoro aggiuntivo può influire sulle prestazioni complessive. Per garantire prestazioni ottimali in questi sistemi, passare dal BLT al modello Flip present. Inoltre, è consigliabile ridurre la risoluzione dei presentazione catena, soprattutto se non è il punto principale di interazione dell'utente (come spesso accade con le finestre di anteprima di VR).
+Perché ora? Prima dell'aggiornamento di aprile 2018, la visualizzazione del modello blt potrebbe causare un'operazione di rimozione visibile se usata nelle configurazioni gpu ibride, spesso presente nei portatili di fascia alta (vedere [KB 3158621](https://support.microsoft.com/help/3158621/hybrid-graphics-and-vsync-results-in-graphic-tearing-in-some-games-and)). Nell'aggiornamento di aprile 2018 questo tearing è stato risolto, a costo di un lavoro aggiuntivo. Se si sta eseguendo blt presenta a framerate elevati tra GPU ibride, in particolare a risoluzioni elevate, ad esempio 4K, questo lavoro aggiuntivo può influire sulle prestazioni complessive. Per garantire prestazioni ottimali in questi sistemi, passare dal modello blt al modello flip present. È anche consigliabile ridurre la risoluzione del swapchain, soprattutto se non è il punto principale di interazione dell'utente(come spesso accade con le finestre di anteprima VR).
 
-## <a name="a-brief-history"></a>Una breve cronologia
+## <a name="a-brief-history"></a>Breve cronologia
 
-Che cos'è il modello Flip? Qual è l'alternativa?
+Che cos'è il modello flip? Qual è l'alternativa?
 
-Prima di Windows 7, l'unico modo per presentare il contenuto da D3D era "BLT" o copiarlo in una superficie di proprietà della finestra o dello schermo. A partire dall'effetto di swap FLIPEX di D3D9's e passando a DXGI tramite l' \_ effetto di scambio sequenziale Flip in Windows 8, abbiamo sviluppato un modo più efficiente per inserire il contenuto sullo schermo condividendo il contenuto direttamente con il compositor desktop, con copie minime. Vedere [DXGI flip model](dxgi-flip-model.md) per una panoramica di alto livello della tecnologia.
+Prima di Windows 7, l'unico modo per presentare il contenuto da D3D era "blt" o copiarlo in una superficie di proprietà della finestra o dello schermo. A partire dall'effetto flipex swap di D3D9 e passando a DXGI tramite l'effetto di scambio FLIP SEQUENTIAL in Windows 8, è stato sviluppato un modo più efficiente per inserire il contenuto sullo schermo condividendo il contenuto direttamente con il \_ compositore desktop, con copie minime. Per una panoramica generale della tecnologia, vedere Modello flip [DXGI.](dxgi-flip-model.md)
 
-Questa ottimizzazione è possibile grazie a DWM (Gestione finestre desktop), ovvero il compositor che guida il desktop di Windows.
+Questa ottimizzazione è possibile grazie al DWM (Gestione finestre desktop), che è il compositore che guida il Windows desktop.
 
-## <a name="when-should-i-use-the-blt-model"></a>Quando è consigliabile utilizzare il modello BLT?
+## <a name="when-should-i-use-the-blt-model"></a>Quando usare il modello blt?
 
-Esiste una delle funzionalità che il modello Flip non fornisce: la possibilità di avere più API che producono contenuto, che tutti i livelli nello stesso **HWND**, su base attuale. Un esempio di questo approccio consiste nell'usare D3D per creare uno sfondo della finestra, quindi [Windows GDI](/windows/desktop/gdi/windows-gdi) per creare un elemento in primo piano o per usare due API grafiche diverse o due le catene dalla stessa API, per produrre frame alternativi. Se non è necessaria l'interoperabilità a livello di **HWND** tra i componenti grafici, non è necessario il modello BLT.
+C'è una funzionalità che il modello flip non offre: la possibilità di avere più API diverse che producono contenuto, che tutti stratno insieme nello stesso **HWND,** in base a una base attuale. Un esempio di questo potrebbe essere l'uso di D3D per disegnare uno sfondo della finestra e quindi Windows [GDI per](/windows/desktop/gdi/windows-gdi) disegnare qualcosa sopra o usando due API grafiche diverse, o due swapchain della stessa API, per produrre fotogrammi alternati. Se non è necessaria l'interoperabilità a livello **di HWND** tra i componenti grafici, non è necessario un modello blt.
 
-Esiste una seconda funzionalità che non è stata fornita nella progettazione del modello Flip originale, ma è ora disponibile, che è la possibilità di presentare un framerate non limitato. Per un'applicazione che usa l'intervallo di sincronizzazione 0, non è consigliabile passare a capovolgere il modello a meno che non sia disponibile l'API [IDXGIFactory5:: CheckFeatureSupport](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) e il supporto dei report per la **\_ funzionalità DXGI \_ \_ consenta lo \_ strappo**. Questa funzionalità è quasi onnipresente nelle versioni recenti di Windows 10 e nell'hardware moderno.
+Esiste un secondo componente di funzionalità che non è stato fornito nella progettazione originale del modello flip, ma è ora disponibile, ovvero la possibilità di presentare a una velocità di fotogramma non impostata. Per un'applicazione che usa l'intervallo di sincronizzazione 0, non è consigliabile passare al modello di inversione a meno che non sia disponibile l'API [IDXGIFactory5::CheckFeatureSupport](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) e non venga restituito il supporto per LA FUNZIONALITÀ **DXGI \_ PRESENT ALLOW \_ \_ \_ TEARING**. Questa funzionalità è quasi onnipresente nelle versioni recenti di Windows 10 e nell'hardware moderno.
 
 ## <a name="directflip"></a>DirectFlip
 
-Se sono state osservate le [modalità di presentazione di DirectX 12 in Windows 10](https://www.youtube.com/watch?v=E3wTajGZOsA), verrà visualizzato il discorso "Direct Flip" e "Independent Flip". Si tratta di ottimizzazioni abilitate per le applicazioni che usano il modello Flip le catene. A seconda della configurazione della finestra e del buffer, è possibile ignorare completamente la composizione del desktop e inviare direttamente i frame dell'applicazione allo schermo, nello stesso modo in cui viene utilizzato lo schermo a schermo intero esclusivo.
+Se si è visto [DirectX 12: Modalità](https://www.youtube.com/watch?v=E3wTajGZOsA)di presentazione in Windows 10 , verrà visualizzato "Direct Flip" e "Independent Flip". Si tratta di ottimizzazioni abilitate per le applicazioni che usano swapchain di modelli flip. A seconda della configurazione della finestra e del buffer, è possibile ignorare completamente la composizione del desktop e inviare direttamente i fotogrammi dell'applicazione allo schermo, come fa l'esclusivo schermo intero.
 
-Questi giorni, queste ottimizzazioni possono impegnarsi in uno dei tre scenari, per aumentare le funzionalità:
+Queste ottimizzazioni possono essere in questi giorni in uno dei tre scenari seguenti, in ordine di funzionalità crescente:
 
-1.  **DirectFlip**: i buffer presentazione catena corrispondono alle dimensioni dello schermo e l'area client della finestra copre la schermata. Anziché utilizzare DWM presentazione catena per visualizzare sullo schermo, viene utilizzata l'applicazione presentazione catena.
-2.  **DirectFlip con** gli adattatori del pannello: l'area client della finestra copre lo schermo e i buffer presentazione catena rientrano in un fattore di scala dipendente dall'hardware (ad esempio, 0,25 x a 4x) dello schermo. L'hardware di analisi GPU viene usato per ridimensionare il buffer mentre lo si invia alla visualizzazione.
-3.  **DirectFlip con sovrapposizione multipiano (MPO)**: i buffer presentazione catena sono all'interno di un fattore di scala dipendente dall'hardware delle dimensioni della finestra. DWM è in grado di riservare un piano dedicato di analisi dell'hardware per l'applicazione, che viene quindi sottoposta a scansione e potenzialmente allungata a un'area secondaria con Alpha Blend dello schermo.
+1.  **DirectFlip:** i buffer swapchain corrispondono alle dimensioni dello schermo e l'area client della finestra copre lo schermo. Invece di usare lo swapchain DWM da visualizzare sullo schermo, viene usato lo swapchain dell'applicazione.
+2.  **DirectFlip con** pannelli infitter: l'area client della finestra copre lo schermo e i buffer swapchain si trova all'interno di un fattore di ridimensionamento dipendente dall'hardware (ad esempio, da 0,25 x a 4x) dello schermo. L'hardware di analisi GPU viene usato per ridimensionare il buffer durante l'invio allo schermo.
+3.  **DirectFlip con sovrapposizione multi-piano (MPO):** i buffer swapchain si trova all'interno di un fattore di scala dipendente dall'hardware delle dimensioni della finestra. DWM è in grado di riservare un piano di analisi hardware dedicato per l'applicazione, che viene quindi analizzato e potenzialmente allungato in una sottoarea dello schermo con alpha blended.
 
-Con il modello Flip a finestra, l'applicazione può eseguire query sul supporto hardware per diversi scenari DirectFlip e implementare tipi diversi di scalabilità dinamica tramite l'uso di [IDXGIOutput6:: CheckHardwareCompositionSupport](/windows/desktop/api/DXGI1_6/nf-dxgi1_6-idxgioutput6-checkhardwarecompositionsupport). Un avvertimento da tenere presente è che se gli installatori di pannelli vengono utilizzati, è possibile che il cursore soffra degli effetti collaterali, che è indicato tramite il **cursore del \_ flag di supporto della composizione hardware DXGI \_ \_ \_ \_ \_ esteso**.
+Con il modello di capovolgimento finestra, l'applicazione può eseguire query sul supporto hardware per diversi scenari DirectFlip e implementare diversi tipi di ridimensionamento dinamico tramite l'uso di [IDXGIOutput6::CheckHardwareCompositionSupport](/windows/desktop/api/DXGI1_6/nf-dxgi1_6-idxgioutput6-checkhardwarecompositionsupport). Un'avvertenza da tenere presente è che se vengono utilizzati pannelli infitter, è possibile che il cursore subisca effetti collaterali di stretching, indicato tramite **DXGI \_ HARDWARE COMPOSITION SUPPORT FLAG CURSOR \_ \_ \_ \_ \_ STRETCHED**.
 
-Una volta che il presentazione catena è stato "DirectFlipped", lo strumento DWM può passare alla modalità di sospensione e riattivarsi solo quando vengono apportate modifiche all'esterno dell'applicazione. I frame dell'applicazione vengono inviati direttamente allo schermo, in modo indipendente, con la stessa efficienza dell'esclusiva a schermo intero. Si tratta di un "Flip indipendente" e può interagire con tutti gli scenari descritti in precedenza. Se sono disponibili altri contenuti desktop, DWM può eseguire facilmente la transizione alla modalità composta, "invertire la composizione" del contenuto sopra l'applicazione prima di ingrandirla o utilizzare MPO per gestire la modalità Flip indipendente.
+Dopo che lo swapchain è stato "DirectFlipped", il DWM può passare alla sospensione e riattivarsi solo quando qualcosa cambia all'esterno dell'applicazione. I frame dell'applicazione vengono inviati direttamente allo schermo, in modo indipendente, con la stessa efficienza dell'esclusiva a schermo intero. Si tratta di "Independent Flip" e può essere utilizzato in tutti gli scenari precedenti. Se si verificano altri contenuti desktop, il DWM può tornare facilmente alla modalità composta, "invertire" in modo efficiente il contenuto sopra l'applicazione prima di capovolgerlo o sfruttare MPO per mantenere la modalità di capovolgimento indipendente.
 
-Vedere lo strumento [PresentMon](https://github.com/GameTechDev/PresentMon) per ottenere informazioni dettagliate su come è stato usato.
+Vedere lo strumento [PresentMon](https://github.com/GameTechDev/PresentMon) per ottenere informazioni dettagliate su quale degli elementi precedenti è stato usato.
 
-## <a name="what-else-is-new-in-the-flip-model"></a>Quali sono le altre novità del modello Flip?
+## <a name="what-else-is-new-in-the-flip-model"></a>Quali altre novità del modello flip?
 
-Oltre ai miglioramenti descritti in precedenza, che si applicano a le catene standard senza alcuna operazione speciale, sono disponibili diverse funzionalità per l'uso delle applicazioni flip model:
+Oltre ai miglioramenti precedenti, che si applicano agli swapchain standard senza alcuna particolarità, sono disponibili diverse funzionalità per l'uso da parte delle applicazioni modello flip:
 
--   Riduzione della latenza utilizzando l' **\_ \_ \_ \_ \_ \_ \_ oggetto waitable frame flag della catena di scambio DXGI**. In modalità Flip indipendente, è possibile arrivare fino a 1 frame di latenza nelle versioni recenti di Windows, con il fallback normale al minimo possibile quando composto.
-    -   Avvertenza: si è verificato un problema che ha fornito almeno due fotogrammi di latenza nell'aggiornamento dell'anniversario di Windows 10 e versioni precedenti. Per ulteriori informazioni, vedere [questo argomento del forum](https://www.gamedev.net/forums/topic/686507-windows-10-dx12-low-latency-tearing-free-rendering/) . Questo problema è stato risolto nell'aggiornamento del creatore della ricadenza.
--   **DXGI \_ SWAP \_ Effect \_ Flip \_ Ignora** consente la modalità "composizione inversa" del flip diretto, il che comporta un minor lavoro complessivo per la visualizzazione del desktop. DWM può scarabocchiare sui buffer dell'applicazione e inviarli allo schermo, anziché eseguire una copia completa nella propria le catene.
--   **DXGI \_ Il \_ flag chain di scambio \_ \_ consente lo \_ strappo** può consentire una latenza ancora inferiore rispetto all'oggetto waitable, anche in una finestra nei sistemi con supporto di sovrimpressione a più livelli.
--   Le applicazioni hanno il controllo sulla scalabilità del contenuto che si verifica durante il ridimensionamento della finestra, usando la proprietà [DXGI \_ scaling](/windows/desktop/api/DXGI1_2/ne-dxgi1_2-dxgi_scaling) impostata durante la creazione del presentazione catena
--   Il contenuto in formati HDR (R10G10B10A2 \_ UNORM o R16G16B16A16 \_ float) non viene bloccato a meno che non sia composto da un desktop SDR.
+-   Riduzione della latenza tramite **DXGI \_ SWAP CHAIN FLAG FRAME \_ \_ \_ \_ LATENCY \_ WAITABLE \_ OBJECT**. In modalità Flip indipendente è possibile ottenere fino a 1 fotogramma di latenza nelle versioni recenti di Windows, con fallback normale al minimo possibile quando composto.
+    -   Avvertenza: si è verificato un problema che ha fornito almeno due fotogrammi di latenza nell'aggiornamento Windows 10'anniversario e versioni precedenti. Per [altre informazioni, vedere](https://www.gamedev.net/forums/topic/686507-windows-10-dx12-low-latency-tearing-free-rendering/) questo argomento del forum. Questo problema è stato risolto in Fall Creator's Update.
+-   **DXGI \_ SWAP \_ EFFECT FLIP DISCARD \_ \_ abilita** una modalità di "composizione inversa" di capovolgimento diretto, che comporta un lavoro meno complessivo per visualizzare il desktop. DWM può eseguire lo scribble nei buffer dell'applicazione e inviarli alla schermata, anziché eseguire una copia completa nei propri swapchain.
+-   **DXGI \_ SWAP \_ CHAIN FLAG ALLOW \_ \_ \_ TEARING** può abilitare una latenza ancora più bassa rispetto all'oggetto waitable, anche in una finestra nei sistemi con supporto della sovrapposizione su più piani.
+-   Le applicazioni hanno il controllo sul ridimensionamento del contenuto che si verifica durante il ridimensionamento della finestra, usando la proprietà [DXGI \_ SCALING](/windows/desktop/api/DXGI1_2/ne-dxgi1_2-dxgi_scaling) impostata durante la creazione dello swapchain.
+-   Il contenuto nei formati HDR (R10G10B10A2 UNORM o \_ R16G16B16A16 FLOAT) non viene ancorato a meno che non sia composto da un \_ desktop SDR.
 -   Le statistiche presenti sono disponibili in modalità finestra.
--   Esiste una maggiore compatibilità con il modello di applicazione UWP (piattaforma UWP (Universal Windows Platform)) e DX12, poiché sono compatibili solo con il modello flip.
+-   È disponibile una maggiore compatibilità con il modello di applicazione UWP (Universal Windows Platform) e DX12 perché sono compatibili solo con il modello flip.
 
-## <a name="what-do-i-have-to-do-to-use-the-flip-model"></a>Cosa devo fare per usare il modello Flip?
+## <a name="what-do-i-have-to-do-to-use-the-flip-model"></a>Cosa è necessario fare per usare il modello flip?
 
-Capovolgere il modello le catene presenta alcuni requisiti aggiuntivi oltre al le catene BLT:
+Gli swapchain del modello flip hanno alcuni requisiti aggiuntivi per gli swapchain blt:
 
 1.  Il numero di buffer deve essere almeno 2.
-2.  Dopo [le](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) chiamate a, il buffer nascosto deve essere riassociato in modo esplicito al contesto immediato d3d11 prima di poterlo usare nuovamente.
-3.  Dopo la chiamata a [SetFullscreenState](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate), l'applicazione deve chiamare [ResizeBuffers](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) prima di essere **presente**.
-4.  MSAA (anti-aliasing di multicampionamento) le catene non sono supportati direttamente nel modello Flip, quindi l'applicazione deve eseguire una risoluzione MSAA prima di emettere il **presente**.
+2.  Dopo [le chiamate](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) present, il buffer nascosto deve essere associato in modo esplicito al contesto immediato D3D11 prima di poterlo usare di nuovo.
+3.  Dopo aver chiamato [SetFullscreenState,](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-setfullscreenstate)l'applicazione deve chiamare [ResizeBuffers](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) prima di **Present**.
+4.  Gli swapchain MSAA (multisample anti-aliasing) non sono supportati direttamente nel modello flip, quindi l'applicazione dovrà eseguire una risoluzione MSAA prima di rilasciare **present**.
 
-## <a name="how-to-choose-the-right-rendering-and-presentation-resolutions"></a>Come scegliere le risoluzioni per il rendering e la presentazione corrette
+## <a name="how-to-choose-the-right-rendering-and-presentation-resolutions"></a>Come scegliere le risoluzioni di rendering e presentazione giuste
 
-Il modello tradizionale per le applicazioni in passato è stato quello di fornire all'utente un elenco di risoluzioni da scegliere quando l'utente seleziona la modalità a schermo intero esclusivo. Con la possibilità di visualizzare i moderni per iniziare a ridimensionare facilmente il contenuto, è consigliabile fornire agli utenti la possibilità di scegliere una risoluzione per il rendering per il ridimensionamento delle prestazioni, indipendente dalla risoluzione dell'output e persino in modalità finestra. Inoltre, le applicazioni devono utilizzare **IDXGIOutput6:: CheckHardwareCompositionSupport** per determinare se è necessario ridimensionare il contenuto prima di presentarlo o se devono consentire all'hardware di eseguire il ridimensionamento.
+Il modello tradizionale per le applicazioni in passato è stato quello di fornire all'utente un elenco di risoluzioni tra cui scegliere quando l'utente seleziona la modalità schermo intero esclusiva. Con la possibilità degli schermi moderni di iniziare facilmente il ridimensionamento del contenuto, è consigliabile offrire agli utenti la possibilità di scegliere una risoluzione di rendering per il ridimensionamento delle prestazioni, indipendente da una risoluzione di output e anche in modalità a finestre. Inoltre, le applicazioni devono sfruttare **IDXGIOutput6::CheckHardwareCompositionSupport** per determinare se è necessario ridimensionare il contenuto prima di presentarlo o se devono consentire all'hardware di eseguire il ridimensionamento.
 
-Potrebbe essere necessario eseguire la migrazione del contenuto da una GPU a un'altra come parte dell'operazione presente o di composizione. Questo problema si verifica spesso nei computer portatili con più GPU oppure nei sistemi con GPU esterne collegate. Man mano che queste configurazioni diventano più comuni e, poiché i display ad alta risoluzione diventano più comuni, aumenta il costo della presentazione di un presentazione catena di risoluzione completa. Se la destinazione del presentazione catena non è il punto principale di interazione dell'utente, come spesso accade con i titoli VR che presentano un'anteprima 2D della scena VR in una finestra secondaria, provare a usare un presentazione catena di risoluzione inferiore per ridurre al minimo la quantità di larghezza di banda che deve essere trasferita tra GPU diverse.
+Potrebbe essere necessario eseguire la migrazione del contenuto da una GPU a un'altra come parte dell'operazione di composizione o presente. Questo vale spesso nei computer portatili multi-GPU o nei sistemi con GPU esterne collegate. Con l'aumentare delle dimensioni di queste configurazioni e con l'aumentare del numero di schermi ad alta risoluzione, aumenta il costo della presentazione di uno swapchain con risoluzione completa. Se la destinazione del swapchain non è il punto principale di interazione dell'utente, come spesso accade con i titoli VR che presentano un'anteprima 2D della scena VR in una finestra secondaria, è consigliabile usare uno swapchain a risoluzione inferiore per ridurre al minimo la quantità di larghezza di banda che deve essere trasferita tra GPU diverse.
 
 ## <a name="other-considerations"></a>Altre considerazioni
 
-La prima volta che si chiede alla GPU di scrivere nel buffer nascosto presentazione catena è il momento in cui la GPU resterà in attesa che il buffer diventi disponibile. Quando possibile, ritardare questo punto fino al frame possibile.
+La prima volta che si chiede alla GPU di scrivere nel buffer nascosto dello swapchain è il momento in cui la GPU si blocca in attesa che il buffer diventi disponibile. Quando possibile, ritardare questo punto il più lontano possibile nel frame.
 
  
 

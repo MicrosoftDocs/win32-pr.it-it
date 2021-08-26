@@ -1,26 +1,26 @@
 ---
-description: Questa sezione contiene il riferimento per i messaggi del dispositivo TSPI Phone.
+description: Questa sezione contiene informazioni di riferimento per i messaggi del dispositivo telefonico TSPI.
 ms.assetid: 69ec084b-e1b5-4417-8584-deb22ff5d893
-title: Messaggi di TSPI Phone Device
+title: Messaggi del dispositivo Telefono TSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43ba8a7b50ad234d486cbddc4d4af80d6ffdecb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5db994472f83787f737f99664e278a88d217c0a1e1b7be2849d3e9edcab2e498
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991661"
 ---
-# <a name="tspi-phone-device-messages"></a>Messaggi di TSPI Phone Device
+# <a name="tspi-phone-device-messages"></a>Messaggi del dispositivo Telefono TSPI
 
-Questa sezione contiene il riferimento per i messaggi seguenti del dispositivo TSPI Phone:
+Questa sezione contiene informazioni di riferimento per i messaggi del dispositivo telefonico TSPI seguenti:
 
--   [**pulsante del telefono \_**](/previous-versions/windows/desktop/legacy/ms725254(v=vs.85))
--   [**\_chiusura telefono**](/previous-versions/windows/desktop/legacy/ms725255(v=vs.85))
--   [**\_creazione telefono**](/previous-versions/windows/desktop/legacy/ms725256(v=vs.85))
--   [**\_DEVSPECIFIC telefono**](/previous-versions/windows/desktop/legacy/ms725258(v=vs.85))
--   [**\_rimozione telefono**](/previous-versions/windows/desktop/legacy/ms725260(v=vs.85))
--   [**\_stato telefono**](/previous-versions/windows/desktop/legacy/ms725262(v=vs.85))
+-   [**PULSANTE \_ TELEFONO**](/previous-versions/windows/desktop/legacy/ms725254(v=vs.85))
+-   [**CHIUSURA \_ TELEFONO**](/previous-versions/windows/desktop/legacy/ms725255(v=vs.85))
+-   [**CREAZIONE \_ TELEFONO**](/previous-versions/windows/desktop/legacy/ms725256(v=vs.85))
+-   [**PHONE \_ DEVSPECIFIC**](/previous-versions/windows/desktop/legacy/ms725258(v=vs.85))
+-   [**RIMOZIONE \_ TELEFONO**](/previous-versions/windows/desktop/legacy/ms725260(v=vs.85))
+-   [**STATO \_ DEL TELEFONO**](/previous-versions/windows/desktop/legacy/ms725262(v=vs.85))
 
  
 

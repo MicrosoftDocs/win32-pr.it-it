@@ -1,32 +1,32 @@
 ---
-description: I controlli Call Center estendono il modello a oggetti TAPI 3 per supportare i requisiti dei sistemi di distribuzione automatica delle chiamate (ACD).
+description: I controlli call center estendono il modello a oggetti TAPI 3 per supportare i requisiti dei sistemi di distribuzione automatica delle chiamate (ACD).
 ms.assetid: cb7a4231-6249-4ab9-9de7-243768a18775
-title: Uso di controlli Call Center
+title: Uso dei controlli call center
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdc01cac4b068c5ec17ff5794e2e7ffff46dbf95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04f166658cce86faa0003b762ec697286a434a06b36b18ae92a861d1f6757fa6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991541"
 ---
-# <a name="using-call-center-controls"></a>Uso di controlli Call Center
+# <a name="using-call-center-controls"></a>Uso dei controlli call center
 
-I controlli Call Center estendono il modello a oggetti TAPI 3 per supportare i requisiti dei sistemi di distribuzione automatica delle chiamate (ACD). Un Call Center è una località con agenti o operatori presso le banche dei telefoni, che effettuano chiamate telefoniche in uscita o che invadono in campo. Ad esempio, una società banca o una carta di credito utilizzerà un Call Center per elaborare le richieste di account.
+I controlli call center estendono il modello a oggetti TAPI 3 per supportare i requisiti dei sistemi di distribuzione automatica delle chiamate (ACD). Un call center è una posizione con agenti o operatori presso banche telefoniche che effettuano chiamate telefoniche in uscita o che effettuano chiamate in ingresso sul campo. Ad esempio, una banca o una società di carte di credito userà un call center per elaborare le richieste di account.
 
-Le applicazioni del Call Center sono divise in tre tipi di base:
+Le applicazioni call center sono suddivise in tre tipi di base:
 
--   [Proxy ACD](acd-proxy.md): gestisce le sessioni in ingresso o in uscita nel server, che può essere qualsiasi elemento da un telefono proprietario a un gateway Internet.
--   [Client agente ACD](acd-agent-client.md): Servizi di un singolo agente che riceve o chiama.
--   Client Supervisor ACD: fornisce una panoramica generale delle operazioni di Agent e ACD.
+-   [Proxy ACD:](acd-proxy.md)gestisce le sessioni in ingresso o in uscita nel server, che possono essere qualsiasi cosa, da un commutatore telefonico proprietario a un gateway Internet.
+-   [Client agente ACD:](acd-agent-client.md)servizi a un singolo agente che riceve o effettua chiamate.
+-   ACD Supervisor Client: offre una visualizzazione generale delle operazioni di agente e ACD.
 
 > [!Note]  
-> Per Windows 2000, la funzionalità proxy è disponibile tramite TAPI 2,2 e le funzioni di Supervisore non sono implementate.
+> Per Windows 2000, la funzionalità proxy è disponibile tramite TAPI 2.2 e le funzioni supervisore non sono implementate.
 
  
 
-La sezione Samples del Windows SDK contiene esempi di codice ACD in Netds \\ TAPI \\ Tapi2 \\ ACD e Netds \\ TAPI \\ Tapi3 \\ ACD.
+La sezione degli esempi di Windows SDK contiene esempi di codice ACD in Netds \\ \\ Tapi Tapi2 \\ Acd e Netds \\ \\ Tapi Tapi3 \\ Acd.
 
  
 

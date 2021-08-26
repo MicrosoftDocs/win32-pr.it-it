@@ -1,19 +1,19 @@
 ---
-description: Evento per utente generato da un client di posta elettronica che registra quando viene aggiunto, modificato o eliminato un contatto nei controlli padre.
+description: Evento per utente generato da un client di posta elettronica che registra quando un contatto viene aggiunto, modificato o eliminato in Controllo genitori.
 ms.assetid: 9d1f52ef-ff49-4c0d-a48a-93aeccbe7f2b
-title: Evento WPCEVENT_EMAIL_CONTACT (Wpcevent. h)
+title: WPCEVENT_EMAIL_CONTACT eventi (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0974030e53756b44f2be2e8550707161f2d6d461
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d84a450c53705dae2db777081f7177f43505e0481ae38a67c1b90e507fa4a5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951571"
 ---
-# <a name="wpcevent_email_contact-event"></a>\_Evento di contatto di posta elettronica WPCEVENT \_
+# <a name="wpcevent_email_contact-event"></a>Evento CONTACT \_ WPCEVENT EMAIL \_
 
-Evento per utente generato da un client di posta elettronica che registra quando viene aggiunto, modificato o eliminato un contatto nei controlli padre.
+Evento per utente generato da un client di posta elettronica che registra quando un contatto viene aggiunto, modificato o eliminato in Controllo genitori.
 
 
 ```C++
@@ -40,38 +40,38 @@ Versione dell'applicazione di posta elettronica che genera l'evento.
 
 </dd> <dt>
 
-*OldName* 
+*Oldname* 
 </dt> <dd>
 
 Nome dell'account di posta elettronica precedente, se eliminato o modificato.
 
 </dd> <dt>
 
-*OldID* 
+*Oldid* 
 </dt> <dd>
 
 ID associato al nome dell'account di posta elettronica precedente.
 
 </dd> <dt>
 
-*NewName* 
+*Newname* 
 </dt> <dd>
 
 Nome del nuovo account di posta elettronica, se aggiunto o modificato.
 
 </dd> <dt>
 
-*NewID* 
+*Newid* 
 </dt> <dd>
 
-ID associato al nuovo nome dell'account di posta elettronica.
+ID associato al nome del nuovo account di posta elettronica.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) indica le informazioni sugli eventi che vengono bloccati dall'utilizzo e sui controlli.
+Valore [**dell'enumerazione WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) che indica informazioni sugli eventi che non possono essere utilizzati e sui controlli presenti.
 
 </dd> <dt>
 
@@ -88,9 +88,9 @@ Nome dell'account di posta elettronica per l'utente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Nome dell'account di posta elettronica per l'utente.
 
 <dl> <dt>
 
-[Uso delle API di registrazione per i controlli padre](using-logging-apis-for-parental-controls.md)
+[Uso delle API di registrazione per il controllo genitori](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

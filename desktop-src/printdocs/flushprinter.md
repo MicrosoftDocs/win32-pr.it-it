@@ -1,7 +1,7 @@
 ---
-description: La funzione FlushPrinter Invia un buffer alla stampante per cancellarla da uno stato temporaneo.
+description: La funzione FlushPrinter invia un buffer alla stampante per cancellarlo da uno stato temporaneo.
 ms.assetid: 08e54175-da68-4ebd-91ec-8f4525f49d30
-title: Funzione FlushPrinter (winspool. h)
+title: Funzione FlushPrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: d46a4a8d7143e10fc13722d278ca21a0602b7f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78bd5b6ccc86651a717c29db8b938508c857f83dbd3bdf5364fb1596b8a2c956
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949301"
 ---
-# <a name="flushprinter-function"></a>FlushPrinter (funzione)
+# <a name="flushprinter-function"></a>Funzione FlushPrinter
 
-La funzione **FlushPrinter** Invia un buffer alla stampante per cancellarla da uno stato temporaneo.
+La **funzione FlushPrinter** invia un buffer alla stampante per cancellarlo da uno stato temporaneo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,38 +43,38 @@ BOOL FlushPrinter(
 
 <dl> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto Printer. Deve corrispondere allo stesso handle utilizzato, in una chiamata [**WritePrinter**](writeprinter.md) precedente, dal driver della stampante.
+Handle per l'oggetto stampante. Deve essere lo stesso handle usato, in una chiamata [**WritePrinter**](writeprinter.md) precedente, dal driver della stampante.
 
 </dd> <dt>
 
-*pbuf* \[ in\]
+*pBuf* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una matrice di byte che contiene i dati da scrivere sulla stampante.
+Puntatore a una matrice di byte contenente i dati da scrivere nella stampante.
 
 </dd> <dt>
 
-*cbBuf* \[ in\]
+*cbBuf* \[ Pollici\]
 </dt> <dd>
 
-Dimensione, in byte, della matrice a cui punta *pbuf*.
+Dimensione, in byte, della matrice a cui punta *pBuf*.
 
 </dd> <dt>
 
-*pcWritten* \[ out\]
+*pcWritten* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un valore che riceve il numero di byte di dati scritti nella stampante.
 
 </dd> <dt>
 
-*cSleep* \[ in\]
+*cSleep* \[ Pollici\]
 </dt> <dd>
 
-Tempo, in millisecondi, per il quale la riga di I/O nella porta della stampante deve rimanere inattiva.
+Tempo, in millisecondi, durante il quale la riga di I/O sulla porta della stampante deve essere mantenuta inattiva.
 
 </dd> </dl>
 
@@ -87,13 +87,13 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-**FlushPrinter** deve essere chiamato solo se [**WritePrinter**](writeprinter.md) ha avuto esito negativo, lasciando la stampante in uno stato temporaneo. Ad esempio, la stampante potrebbe entrare in uno stato temporaneo quando il processo viene interrotto e il driver della stampante ha inviato parzialmente dati non elaborati alla stampante.
+**FlushPrinter** deve essere chiamato solo in caso [**di errore di WritePrinter,**](writeprinter.md) lasciando la stampante in uno stato temporaneo. Ad esempio, la stampante potrebbe entrare in uno stato temporaneo quando il processo viene interrotto e il driver della stampante ha inviato parzialmente alcuni dati non elaborati alla stampante.
 
-**FlushPrinter** può inoltre specificare un periodo di inattività durante il quale lo spooler di stampa non pianifica alcun processo nella porta stampante corrispondente.
+**FlushPrinter può** inoltre specificare un periodo di inattività durante il quale lo spooler di stampa non pianifica alcun processo sulla porta della stampante corrispondente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,9 +103,9 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 
 
 

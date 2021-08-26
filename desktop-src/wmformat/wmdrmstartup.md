@@ -1,9 +1,9 @@
 ---
-title: Funzione WMDRMStartup (wmdrmsdk. h)
-description: La funzione WMDRMStartup Inizializza le risorse usate dalle API estese del client Windows Media DRM.
+title: Funzione WMDRMStartup (Wmdrmsdk.h)
+description: La funzione WMDRMStartup inizializza le risorse usate Windows API estese del client DRM multimediale.
 ms.assetid: 2fd26bcc-8106-4356-933a-d4cf3536f4fb
 keywords:
-- Formato Windows Media della funzione WMDRMStartup
+- WMDRMStartup function windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c152a5160750f3c1943b455a8877b4615781b6ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c194a8c060ad1626fde796510c25c83e3e163dafffe9c17df17a7dcec890be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928743"
 ---
-# <a name="wmdrmstartup-function"></a>WMDRMStartup (funzione)
+# <a name="wmdrmstartup-function"></a>Funzione WMDRMStartup
 
-La funzione **WMDRMStartup** Inizializza le risorse usate dalle API estese del client Windows Media DRM.
+La **funzione WMDRMStartup** inizializza le risorse usate dalle API estese del client Windows Media DRM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ Questa funzione non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -54,7 +54,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Per ogni chiamata di questa funzione, è necessario chiamare [**WMDRMShutdown**](wmdrmshutdown.md) per rilasciare le risorse utilizzate.
+Per ogni chiamata di questa funzione, è necessario chiamare [**WMDRMShutdown**](wmdrmshutdown.md) per rilasciare le risorse usate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Per ogni chiamata di questa funzione, è necessario chiamare [**WMDRMShutdown**]
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Wmdrmsdk.dll</dt> </dl> |
 
 
