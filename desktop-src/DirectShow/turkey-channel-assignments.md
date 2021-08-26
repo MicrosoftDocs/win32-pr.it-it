@@ -1,29 +1,29 @@
 ---
-description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Turchia.
+description: In questo argomento vengono elencate le tabelle relative alla frequenza utilizzate per l'ottimizzazione della TV analoga per IlVare.
 ms.assetid: 840dbd02-a500-47fe-b8ce-5ed2e902b4a6
-title: Assegnazioni canale Turchia
+title: Assegnazioni di canale per la rescisa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c68b24b6226572877c007e67e03502192bd0f1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c621e2e73bbf850adec34f9f65f847d9b1f688b6bd86b5d9bf92d96430190ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903681"
 ---
-# <a name="turkey-channel-assignments"></a>Assegnazioni canale Turchia
+# <a name="turkey-channel-assignments"></a>Assegnazioni di canale per la rescisa
 
-Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Turchia.
+In questo argomento vengono elencate le tabelle relative alla frequenza utilizzate per l'ottimizzazione della TV analoga per IlVare.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era usata la tabella di frequenza](unicable-frequency-table.md) unicable.
 
--   [Assegnazioni broadcast](#broadcast-assignments)
+-   [Assegnazioni di trasmissione](#broadcast-assignments)
 -   [Assegnazioni di cavi](#cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="broadcast-assignments"></a>Assegnazioni broadcast
+## <a name="broadcast-assignments"></a>Assegnazioni di trasmissione
 
 ``` syntax
         1L,             // Lowest channel
@@ -251,7 +251,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

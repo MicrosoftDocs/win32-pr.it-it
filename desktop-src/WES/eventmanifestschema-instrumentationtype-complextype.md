@@ -3,7 +3,7 @@ title: Tipo complesso InstrumentationType
 description: Definisce il contenuto della sezione di strumentazione del manifesto.
 ms.assetid: dbbb978d-50dd-44c0-8bd1-3e48b41afb88
 keywords:
-- Log eventi di tipo complesso InstrumentationType
+- EventLog di tipo complesso InstrumentationType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1679ae310a996458aad3e25aba74955036094e00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21462782ad14dfd977c87ab0898b7b9d2211e730bae42ed6281207fc557a4101
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119905001"
 ---
 # <a name="instrumentationtype-complex-type"></a>Tipo complesso InstrumentationType
 
@@ -50,7 +50,7 @@ Definisce il contenuto della sezione di strumentazione del manifesto.
 
 | Elemento                                                                  | Tipo                                                             | Descrizione                                                        |
 |--------------------------------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------------------|
-| [**eventi**](eventmanifestschema-events-instrumentationtype-element.md) | [**EventsType**](eventmanifestschema-eventstype-complextype.md) | Contiene un elenco di provider definiti dal manifesto.<br/> |
+| [**Eventi**](eventmanifestschema-events-instrumentationtype-element.md) | [**EventsType**](eventmanifestschema-eventstype-complextype.md) | Contiene un elenco di provider definiti dal manifesto.<br/> |
 
 
 
@@ -60,8 +60,8 @@ Definisce il contenuto della sezione di strumentazione del manifesto.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 9fd78517-ba1f-4832-9c1c-31acb16548f7
 title: System.RecordedTV.IsSAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72a9035b2162caf68de92c029af7ad563d5abe2b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5a44307fa46f290ff76636dd6f075e01a3f3ddaaf8614c7077e5a73bca0b85b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938181"
 ---
 # <a name="systemrecordedtvissap"></a>System.RecordedTV.IsSAP
 
@@ -50,7 +50,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -80,7 +80,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

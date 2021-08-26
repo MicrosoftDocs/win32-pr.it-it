@@ -1,10 +1,10 @@
 ---
 title: Interfaccia IWMDRMNetReceiver
-description: L'interfaccia IWMDRMNetReceiver fornisce i metodi necessari per utilizzare DRM di Microsoft Windows Media per i dispositivi di rete come ricevitore. Per ottenere un'istanza di questa interfaccia, chiamare IWMDRMProvider CreateObject. Passare IID \_ IWMDRMNetReceiver come parametro riid.
+description: L'interfaccia IWMDRMNetReceiver fornisce i metodi necessari per usare Microsoft Windows Media DRM per dispositivi di rete come ricevitore. Per ottenere un'istanza di questa interfaccia, chiamare IWMDRMProvider CreateObject. Passare \_ IWMDRMNetReceiver IWMDRMNetReceiver come parametro riid.
 ms.assetid: 29966260-c0aa-4e7e-b827-a872c7429333
 keywords:
-- Formato Windows Media Interface IWMDRMNetReceiver
-- Interfaccia IWMDRMNetReceiver-formato Windows Media, descritto
+- Interfaccia IWMDRMNetReceiver windows Media Format
+- Interfaccia IWMDRMNetReceiver windows Media Format , descritta
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a85ae1525a81e97984e29a5dd28763d934dba2b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5cb917d7d229b81a6792461c506b2a6b50aaee2af3bd5f133e44273077924f86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104398042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930111"
 ---
 # <a name="iwmdrmnetreceiver-interface"></a>Interfaccia IWMDRMNetReceiver
 
-L'interfaccia **IWMDRMNetReceiver** fornisce i metodi necessari per utilizzare DRM di Microsoft Windows Media per i dispositivi di rete come ricevitore.
+**L'interfaccia IWMDRMNetReceiver** fornisce i metodi necessari per usare Microsoft Windows Media DRM per dispositivi di rete come ricevitore.
 
-Per ottenere un'istanza di questa interfaccia, chiamare [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md). Passare **IID \_ IWMDRMNetReceiver** come parametro *riid* .
+Per ottenere un'istanza di questa interfaccia, chiamare [**IWMDRMProvider::CreateObject**](iwmdrmprovider-createobject.md). Passare **\_ IWMDRMNetReceiver IWMDRMNetReceiver** come *parametro riid.*
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMDRMNetReceiver** eredita da [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md). **IWMDRMNetReceiver** dispone anche di questi tipi di membri:
+**L'interfaccia IWMDRMNetReceiver** eredita da [**IWMDRMEventGenerator**](iwmdrmeventgenerator.md). **IWMDRMNetReceiver** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMDRMNetReceiver** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IWMDRMNetReceiver.**
 
 
 
 | Metodo                                                                               | Descrizione                                                                                                                     |
 |:-------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
-| [**GetLicenseChallenge**](iwmdrmnetreceiver-getlicensechallenge.md)                 | Genera un problema di licenza inviato al trasmettitore quando richiede contenuto protetto.<br/>                     |
-| [**GetRegistrationChallenge**](iwmdrmnetreceiver-getregistrationchallenge.md)       | Genera una richiesta di registrazione inviata al trasmettitore quando il ricevitore si registra o si riconvalida.<br/> |
-| [**ProcessLicenseResponse**](iwmdrmnetreceiver-processlicenseresponse.md)           | Elabora la risposta di licenza inviata dalla trasmittente in risposta a una richiesta di licenza.<br/>                              |
+| [**GetLicenseChallenge**](iwmdrmnetreceiver-getlicensechallenge.md)                 | Genera una richiesta di licenza inviata al trasmettitore quando si richiede contenuto protetto.<br/>                     |
+| [**GetRegistrationChallenge**](iwmdrmnetreceiver-getregistrationchallenge.md)       | Genera una richiesta di registrazione inviata al trasmettitore quando il ricevitore esegue la registrazione o la riconvalida.<br/> |
+| [**ProcessLicenseResponse**](iwmdrmnetreceiver-processlicenseresponse.md)           | Elabora la risposta di licenza inviata dal trasmettitore in risposta a una richiesta di licenza.<br/>                              |
 | [**ProcessRegistrationResponse**](iwmdrmnetreceiver-processregistrationresponse.md) | Elabora la risposta di registrazione inviata dal trasmettitore in risposta a una richiesta di registrazione.<br/>                    |
 
 

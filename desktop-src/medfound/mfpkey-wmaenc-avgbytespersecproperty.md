@@ -1,19 +1,19 @@
 ---
-description: Specifica il numero medio di byte al secondo in un flusso audio in bit di variabile in base al livello di qualità (VBR).
+description: Specifica i byte medi al secondo in un flusso audio VBR (Variable-Bit Rate) basato sulla qualità.
 ms.assetid: dcee969a-617e-4045-a468-8158afb06356
-title: Proprietà MFPKEY_WMAENC_AVGBYTESPERSEC (Wmcodecdsp. h)
+title: MFPKEY_WMAENC_AVGBYTESPERSEC proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ef88b9ea0cf46829a33cb7b9901c7c9f844c1e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfadc41e9f2c9f4410bc84c6d8bf23f30c559b96c83abba80beb719e8ccb8eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953301"
 ---
-# <a name="mfpkey_wmaenc_avgbytespersec-property"></a>MFPKEY \_ WMAENC- \_ Proprietà AVGBYTESPERSEC
+# <a name="mfpkey_wmaenc_avgbytespersec-property"></a>Proprietà MFPKEY \_ WMAENC \_ AVGBYTESPERSEC
 
-Specifica il numero medio di byte al secondo in un flusso audio in bit di variabile in base al livello di qualità (VBR).
+Specifica i byte medi al secondo in un flusso audio VBR (Variable-Bit Rate) basato sulla qualità.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -35,9 +35,9 @@ Questo valore è richiesto dal decodificatore audio per decomprimere correttamen
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Questo valore è richiesto dal decodificatore audio per decomprimere correttamen
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

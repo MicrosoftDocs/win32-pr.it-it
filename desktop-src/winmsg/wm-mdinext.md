@@ -1,19 +1,19 @@
 ---
-description: Un'applicazione invia il \_ messaggio WM MDINEXT a una finestra del client di interfaccia a documenti multipli (MDI) per attivare la finestra figlio precedente o successiva.
+description: Un'applicazione invia il messaggio WM MDINEXT a una finestra \_ client MDI (Multiple Document Interface) per attivare la finestra figlio successiva o precedente.
 ms.assetid: a4822b99-330a-4094-bad9-b9a5923e02a8
-title: Messaggio WM_MDINEXT (winuser. h)
+title: WM_MDINEXT messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e0af031c11ea37129e1405e31b07b18f023b7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8aa2b88e5368db2a6b700e0b4d469d1ba680d3caa4d2c1e1c208c5143660396f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931241"
 ---
-# <a name="wm_mdinext-message"></a>\_Messaggio MDINEXT WM
+# <a name="wm_mdinext-message"></a>Messaggio \_ WM MDINEXT
 
-Un'applicazione invia il messaggio **WM \_ MDINEXT** a una finestra del client di interfaccia a documenti multipli (MDI) per attivare la finestra figlio precedente o successiva.
+Un'applicazione invia il **messaggio \_ WM MDINEXT** a una finestra client MDI (Multiple Document Interface) per attivare la finestra figlio successiva o precedente.
 
 
 ```C++
@@ -29,14 +29,14 @@ Un'applicazione invia il messaggio **WM \_ MDINEXT** a una finestra del client d
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra figlio MDI. Il sistema attiva la finestra figlio immediatamente prima o dopo la finestra figlio specificata, a seconda del valore del parametro *lParam* . Se il parametro *wParam* è **null**, il sistema attiva la finestra figlio immediatamente prima o dopo la finestra figlio attualmente attiva.
+Handle per la finestra figlio MDI. Il sistema attiva la finestra figlio immediatamente prima o dopo la finestra figlio specificata, a seconda del valore del *parametro lParam.* Se il *parametro wParam* è **NULL,** il sistema attiva la finestra figlio immediatamente prima o dopo la finestra figlio attualmente attiva.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Se questo parametro è zero, il sistema attiva la finestra figlio MDI successiva e posiziona la finestra figlio identificata dal parametro *wParam* dietro tutte le altre finestre figlio. Se questo parametro è diverso da zero, il sistema attiva la finestra figlio precedente, inserendola davanti alla finestra figlio identificata da *wParam*.
+Se questo parametro è zero, il sistema attiva la finestra figlio MDI successiva e posiziona la finestra figlio identificata dal *parametro wParam* dietro tutte le altre finestre figlio. Se questo parametro è diverso da zero, il sistema attiva la finestra figlio precedente, posizionandola davanti alla finestra figlio identificata da *wParam*.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Se una finestra client MDI riceve un messaggio che modifica l'attivazione delle 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -69,10 +69,10 @@ Se una finestra client MDI riceve un messaggio che modifica l'attivazione delle 
 **Riferimento**
 </dt> <dt>
 
-[**\_MDIACTIVATE WM**](wm-mdiactivate.md)
+[**WM \_ MDIACTIVATE**](wm-mdiactivate.md)
 </dt> <dt>
 
-[**\_MDIGETACTIVE WM**](wm-mdigetactive.md)
+[**WM \_ MDIGETACTIVE**](wm-mdigetactive.md)
 </dt> <dt>
 
 **Informazioni concettuali**

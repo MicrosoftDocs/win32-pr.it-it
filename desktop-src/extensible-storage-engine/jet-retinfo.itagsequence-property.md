@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RETINFO. itagSequence'
-title: Proprietà JET_RETINFO. itagSequence
+description: 'Altre informazioni su: JET_RETINFO.itagSequence'
+title: JET_RETINFO.itagSequence
 TOCTitle: 'itagSequence property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETINFO.itagSequence
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo.itagsequence(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df42b6a52b34ec265aceb5b069b06f39c0663b44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4ae56fff26b826198b9289fecf8edfc054d6c67f58135788260d24bce1c0b3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945711"
 ---
-# <a name="jet_retinfoitagsequence-property"></a>Proprietà JET_RETINFO. itagSequence
+# <a name="jet_retinfoitagsequence-property"></a>JET_RETINFO.itagSequence
 
-Ottiene o imposta il numero di sequenza del valore in una colonna multivalore. La matrice di valori è in base uno. Il primo valore è Sequence 1, not 0. Se la colonna record ha un solo valore, è necessario passare 1 come itagSequence.
+Ottiene o imposta il numero di sequenza del valore in una colonna multivalore. La matrice di valori è in base uno. Il primo valore è la sequenza 1, non 0. Se la colonna del record ha un solo valore, è necessario passare 1 come itagSequence.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public int itagSequence { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RETINFO](./jet-retinfo-class.md)
+[JET_RETINFO classe](./jet-retinfo-class.md)
 
-[Membri JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO membri](./jet-retinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

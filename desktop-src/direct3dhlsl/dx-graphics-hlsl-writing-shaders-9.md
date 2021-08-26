@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 64a64d08518cb987850c87da3fb19c264519a7f7
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 67e6fec265682dcdbe8ffa967ba757382eda2e17d55aff8b8a1ae168a96df3c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950111"
 ---
 # <a name="writing-hlsl-shaders-in-direct3d-9"></a>Scrittura di shader HLSL in Direct3D 9
 
@@ -29,38 +29,38 @@ ms.locfileid: "110335385"
     -   [Variazione di input e semantica di shader](#varying-shader-inputs-and-semantics)
     -   [Campionatori e oggetti Texture](#samplers-and-texture-objects)
 -   [Scrittura di funzioni](#writing-functions)
--   [Controllo di flusso](#flow-control)
+-   [Flow Controllo](#flow-control)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="vertex-shader-basics"></a>Vertex-Shader di base
 
 Quando è in funzione, un vertex shader programmabile sostituisce l'elaborazione dei vertici eseguita dalla pipeline grafica Microsoft Direct3D. Quando si usa un vertex shader, le informazioni sullo stato relative alle operazioni di trasformazione e illuminazione vengono ignorate dalla pipeline di funzioni fisse. Quando il vertex shader è disabilitato e viene restituita l'elaborazione di funzioni fisse, vengono applicate tutte le impostazioni dello stato corrente.
 
-Prima dell'esecuzione del vertex shader, è necessario eseguire il tessellamento delle primitive di ordine elevato. Le implementazioni che eseguono la tessellazione della superficie dopo l'elaborazione dello shader devono eseguire questa operazione in modo non evidente per il codice dell'applicazione e dello shader.
+Prima dell'esecuzione del vertex shader, è necessario eseguire il tessellamento delle primitive di ordine elevato. Le implementazioni che eseguono la schella della superficie dopo l'elaborazione dello shader devono eseguire questa operazione in modo non evidente per il codice dell'applicazione e dello shader.
 
-Come minimo, un vertex shader deve eseguire l'output della posizione del vertice nello spazio di ritaglio omogeneo. Facoltativamente, il vertex shader può eseguire l'output delle coordinate della trama, del colore dei vertici, dell'illuminazione dei vertici, dei fattori del vertice e così via.
+Come minimo, un vertex shader deve eseguire l'output della posizione del vertice nello spazio di ritaglio omogeneo. Facoltativamente, il vertex shader può eseguire l'output di coordinate di trama, colore dei vertici, illuminazione dei vertici, fattori di colore e così via.
 
 ## <a name="pixel-shader-basics"></a>Pixel-Shader di base
 
-L'elaborazione dei pixel viene eseguita dai pixel shader su singoli pixel. I pixel shader funzionano insieme ai vertex shader; l'output di un vertex shader fornisce gli input per un pixel shader. Altre operazioni sui pixel (fusione della nebbia, operazioni di stencil e fusione della destinazione di rendering) si verificano dopo l'esecuzione dello shader.
+L'elaborazione dei pixel viene eseguita da pixel shader su singoli pixel. I pixel shader funzionano insieme ai vertex shader; L'output di un vertex shader fornisce gli input per un pixel shader. Altre operazioni sui pixel (fusione delle sfumature, operazioni di stencil e fusione della destinazione di rendering) si verificano dopo l'esecuzione dello shader.
 
-### <a name="texture-stage-and-sampler-states"></a>Stati della fase di trama e del campionatore
+### <a name="texture-stage-and-sampler-states"></a>Stati della fase della trama e del campionatore
 
-Un pixel shader sostituisce completamente la funzionalità di fusione dei pixel specificata dal blender a più trame, incluse le operazioni definite in precedenza dagli stati della fase di trama. Le operazioni di campionamento e filtro trame controllate dagli stati della fase di trama standard per la minificazione, l'ingrandimento, il filtro mip e le modalità di indirizzamento del wrapping, possono essere inizializzate negli shader. L'applicazione è libera di modificare questi stati senza richiedere la rigenerazione dello shader attualmente associato. L'impostazione dello stato può essere resa ancora più semplice se gli shader sono progettati all'interno di un effetto.
+Un pixel shader sostituisce completamente la funzionalità di fusione dei pixel specificata dal blender a più trame, incluse le operazioni definite in precedenza dagli stati della fase della trama. Le operazioni di campionamento e filtro delle trame controllate dagli stati della fase di trama standard per la minimiizzazione, l'ingrandimento, il filtro mip e le modalità di indirizzamento a capo, possono essere inizializzate negli shader. L'applicazione può modificare questi stati senza richiedere la rigenerazione dello shader attualmente associato. L'impostazione dello stato può essere resa ancora più semplice se gli shader sono progettati all'interno di un effetto.
 
 ### <a name="pixel-shader-inputs"></a>Input pixel shader
 
-Per pixel shader versioni ps 1 - ps 2 0, i colori diffusi e \_ \_ speculari vengono \_ saturati (con chiusura) nell'intervallo da 0 a 1 prima dell'uso da parte dello \_ shader.
+Per pixel shader versioni ps 1 1 - ps 2 0, i colori diffusi e \_ \_ speculari sono \_ saturati (con chiusura) nell'intervallo da 0 a 1 prima dell'uso da parte dello \_ shader.
 
-Si presuppone che i valori dei pixel shader siano corretti dal punto di vista, ma questo non è garantito (per tutto l'hardware). I colori campionati dalle coordinate della trama vengono iterati in modo corretto dal punto di vista e sono ancorati all'intervallo da 0 a 1 durante l'iterazione.
+Si presuppone che i valori di colore pixel shader siano corretti dal punto di vista, ma questo non è garantito (per tutto l'hardware). I colori campionati dalle coordinate della trama vengono iterato in modo corretto dal punto di vista della prospettiva e vengono definiti nell'intervallo da 0 a 1 durante l'iterazione.
 
 ### <a name="pixel-shader-outputs"></a>Output pixel shader
 
-Per pixel shader versioni ps \_ \_ 1 1 - ps 1 4, il risultato generato dal pixel shader è il contenuto del \_ \_ registro r0. Tutto ciò che contiene al termine dell'elaborazione dello shader viene inviato alla fase della nebbia e al blender di destinazione di rendering.
+Per pixel shader versioni ps \_ \_ 1 1 - ps 1 4, il risultato generato dal pixel shader è il contenuto del \_ \_ registro r0. Qualsiasi elemento in esso contenuto al termine dell'elaborazione dello shader viene inviato alla fase finale e al blender di destinazione di rendering.
 
 Per pixel shader versioni ps 2 0 e successive, il colore di output viene generato da \_ \_ oC0 - oC4.
 
-## <a name="shader-inputs-and-shader-variables"></a>Input shader e variabili shader
+## <a name="shader-inputs-and-shader-variables"></a>Input e variabili shader
 
 -   [Dichiarazione di variabili shader](#declaring-shader-variables)
 -   [Input uniform shader](#uniform-shader-inputs)
@@ -153,7 +153,7 @@ Le variabili di primo livello vengono dichiarate all'esterno di tutte le funzion
 
 ### <a name="uniform-shader-inputs"></a>Input uniform shader
 
-I vertex shader e i pixel shader accettano due tipi di dati di input: variabili e uniformi. L'input variabile è dato da dati univoci per ogni esecuzione dello shader. Per un vertex shader, i dati variabili (ad esempio posizione, normale e così via) provengono dai flussi dei vertici. I dati uniformi ,ad esempio il colore del materiale, la trasformazione del mondo e così via, sono costanti per più esecuzioni di uno shader. Per gli utenti che hanno familiarità con i modelli di shader dell'assembly, i dati uniformi vengono specificati da registri costanti e dati variabili dai registri v e t.
+I vertex shader e i pixel shader accettano due tipi di dati di input: variabili e uniformi. L'input variabile è dato da dati univoci per ogni esecuzione dello shader. Per un vertex shader, i dati variabili (ad esempio posizione, normale e così via) provengono dai flussi dei vertici. I dati uniformi ,ad esempio il colore del materiale, la trasformazione del mondo e così via, sono costanti per più esecuzioni di uno shader. Per chi ha familiarità con i modelli di shader dell'assembly, i dati uniformi vengono specificati da registri costanti e dati variabili dai registri v e t.
 
 I dati uniformi possono essere specificati da due metodi. Il metodo più comune è dichiarare le variabili globali e usarle all'interno di uno shader. Qualsiasi uso di variabili globali all'interno di uno shader comporta l'aggiunta di tale variabile all'elenco di variabili uniformi richieste dallo shader. Il secondo metodo è contrassegnare un parametro di input della funzione shader di primo livello come uniforme. Questo contrassegno specifica che la variabile specificata deve essere aggiunta all'elenco di variabili uniformi.
 
@@ -167,24 +167,24 @@ I parametri di input variabili (di una funzione shader di primo livello) devono 
 
 La semantica di input è un nome usato per collegare l'input specificato a un output della parte precedente della pipeline grafica. Ad esempio, la semantica di input POSITION0 viene usata dai vertex shader per specificare dove devono essere collegati i dati di posizione dal vertex buffer.
 
-I pixel shader e i vertex shader hanno set diversi di semantica di input a causa delle diverse parti della pipeline grafica che si inserire in ogni unità shader. La semantica di input del vertex shader descrive le informazioni per vertice (ad esempio: posizione, normale, coordinate della trama, colore, tangente, binormale e così via) da caricare da un buffer dei vertici in un modulo che può essere utilizzato dal vertex shader. La semantica di input esegue direttamente il mapping all'utilizzo della dichiarazione dei vertici e all'indice di utilizzo.
+I pixel shader e i vertex shader hanno set diversi di semantica di input a causa delle diverse parti della pipeline grafica che si inserirono in ogni unità shader. La semantica di input del vertex shader descrive le informazioni per vertice (ad esempio: posizione, normale, coordinate della trama, colore, tangente, binormale e così via) da caricare da un buffer dei vertici in un modulo che può essere utilizzato dal vertex shader. La semantica di input esegue direttamente il mapping all'utilizzo della dichiarazione dei vertici e all'indice di utilizzo.
 
 La semantica di input del pixel shader descrive le informazioni fornite per pixel dall'unità di rasterizzazione. I dati vengono generati interpolando tra gli output del vertex shader per ogni vertice della primitiva corrente. La semantica pixel shader input di base collega le informazioni sul colore di output e sulle coordinate della trama ai parametri di input.
 
-La semantica di input può essere assegnata all'input dello shader tramite due metodi:
+La semantica di input può essere assegnata all'input dello shader con due metodi:
 
 -   Aggiunta di due punti e del nome semantico alla dichiarazione del parametro.
 -   Definizione di una struttura di input con semantica di input assegnata a ogni membro della struttura.
 
-I vertex shader e i pixel shader forniscono dati di output alla fase successiva della pipeline grafica. La semantica di output viene usata per specificare il modo in cui i dati generati dallo shader devono essere collegati agli input della fase successiva. Ad esempio, la semantica di output per un vertex shader viene usata per collegare gli output degli interpolatori nel rasterizzatore per generare i dati di input per l'pixel shader. Gli pixel shader output sono i valori forniti all'unità di fusione alfa per ognuna delle destinazioni di rendering o il valore di profondità scritto nel buffer di profondità.
+I vertex shader e i pixel shader forniscono dati di output alla fase successiva della pipeline grafica. La semantica di output viene usata per specificare il modo in cui i dati generati dallo shader devono essere collegati agli input della fase successiva. Ad esempio, la semantica di output per un vertex shader viene usata per collegare gli output degli interpolatori nel rasterizzatore per generare i dati di input per il pixel shader. Gli pixel shader output sono i valori forniti all'unità di fusione alfa per ognuna delle destinazioni di rendering o il valore di profondità scritto nel buffer di profondità.
 
-La semantica di output del vertex shader viene usata per collegare lo shader sia al pixel shader che alla fase di rasterizzazione. Un vertex shader utilizzato dal rasterizzatore e non esposto al pixel shader deve generare almeno i dati di posizione. I vertex shader che generano dati di coordinate e colori della trama forniscono i dati a un pixel shader al termine dell'interpolazione.
+La semantica di output del vertex shader viene usata per collegare lo shader sia al pixel shader che alla fase di rasterizzazione. Un vertex shader utilizzato dal rasterizzatore e non esposto al pixel shader deve generare i dati di posizione come minimo. I vertex shader che generano coordinate di trama e dati di colore forniscono i dati a un pixel shader dopo l'interpolazione.
 
-La semantica di output del pixel shader associa i colori di output di un pixel shader alla destinazione di rendering corretta. Il pixel shader di output è collegato alla fase di alpha blend, che determina come vengono modificate le destinazioni di rendering di destinazione. L pixel shader di profondità può essere usato per modificare i valori di profondità di destinazione nella posizione raster corrente. L'output di profondità e più destinazioni di rendering sono supportati solo con alcuni modelli di shader.
+La semantica di output del pixel shader associa i colori di output di un pixel shader alla destinazione di rendering corretta. Il pixel shader di output è collegato alla fase di fusione alfa, che determina la modalità di modifica delle destinazioni di rendering di destinazione. L pixel shader output di profondità può essere usato per modificare i valori di profondità di destinazione nella posizione raster corrente. L'output di profondità e più destinazioni di rendering sono supportati solo con alcuni modelli shader.
 
 La sintassi per la semantica di output è identica alla sintassi per specificare la semantica di input. La semantica può essere specificata direttamente nei parametri dichiarati come parametri "out" o assegnata durante la definizione di una struttura restituita come parametro "out" o come valore restituito di una funzione.
 
-La semantica identifica la origine dei dati. La semantica è un identificatore facoltativo che identifica gli input e gli output dello shader. La semantica viene visualizzata in una delle tre posizioni seguenti:
+La semantica identifica da dove provengono i dati. La semantica è un identificatore facoltativo che identifica gli input e gli output dello shader. La semantica viene visualizzata in una delle tre posizioni seguenti:
 
 -   Dopo un membro della struttura.
 -   Dopo un argomento nell'elenco di argomenti di input di una funzione.
@@ -247,7 +247,7 @@ VS_OUTPUT VS_Skinning_Example(const VS_INPUT v, uniform float len=100)
 
 
 
-La struttura di input identifica i dati del vertex buffer che fornirà gli input dello shader. Questo shader esegue il mapping dei dati degli elementi position, normal e blendweight del buffer dei vertici nei registri vertex shader. Il tipo di dati di input non deve corrispondere esattamente al tipo di dati della dichiarazione del vertice. Se non corrisponde esattamente, i dati dei vertici verranno convertiti automaticamente nel tipo di dati HLSL quando vengono scritti nei registri shader. Ad esempio, se i dati normali fossero definiti come di tipo UINT dall'applicazione, verrebbero convertiti in float3 quando vengono letti dallo shader.
+La struttura di input identifica i dati del vertex buffer che fornirà gli input dello shader. Questo shader esegue il mapping dei dati degli elementi position, normal e blendweight del vertex buffer nei registri vertex shader. Il tipo di dati di input non deve corrispondere esattamente al tipo di dati della dichiarazione dei vertici. Se non corrisponde esattamente, i dati dei vertici verranno convertiti automaticamente nel tipo di dati HLSL quando vengono scritti nei registri shader. Ad esempio, se i dati normali fossero definiti come di tipo UINT dall'applicazione, verrebbero convertiti in float3 quando vengono letti dallo shader.
 
 Se i dati nel flusso dei vertici contengono meno componenti del tipo di dati shader corrispondente, i componenti mancanti verranno inizializzati su 0 (ad eccezione di w, che viene inizializzato su 1).
 
@@ -255,15 +255,15 @@ La semantica di input è simile ai valori in [**D3DDECLUSAGE**](/windows/desktop
 
 La struttura di output identifica i parametri di output del vertex shader di posizione e colore. Questi output verranno usati dalla pipeline per la rasterizzazione del triangolo (nell'elaborazione primitiva). L'output contrassegnato come dati di posizione indica la posizione di un vertice nello spazio omogeneo. Come minimo, un vertex shader deve generare dati di posizione. La posizione dello spazio dello schermo viene calcolata dopo il completamento del vertex shader dividendo la coordinata (x, y, z) per w. Nello spazio dello schermo , -1 e 1 sono i valori minimo e massimo x e y dei limiti del viewport, mentre z viene usato per il test z-buffer.
 
-La semantica di output è simile ai valori in [**D3DDECLUSAGE.**](/windows/desktop/direct3d9/d3ddeclusage) In generale, una struttura di output per un vertex shader può essere usata anche come struttura di input per un pixel shader, a condizione che il pixel shader non letta da alcuna variabile contrassegnata con la semantica di posizione, dimensione del punto o osa. Questa semantica è associata a valori scalari per vertice che non vengono usati da un pixel shader. Se questi valori sono necessari per il pixel shader, possono essere copiati in un'altra variabile di output che usa una pixel shader semantica.
+La semantica di output è simile ai valori in [**D3DDECLUSAGE.**](/windows/desktop/direct3d9/d3ddeclusage) In generale, una struttura di output per un vertex shader può essere usata anche come struttura di input per un pixel shader, a condizione che il pixel shader non letta da alcuna variabile contrassegnata con la semantica di posizione, dimensione del punto o osa. Questa semantica è associata a valori scalari per vertice che non vengono usati da un pixel shader. Se questi valori sono necessari per la pixel shader, possono essere copiati in un'altra variabile di output che usa una pixel shader semantica.
 
-Le variabili globali vengono assegnate automaticamente ai registri dal compilatore. Le variabili globali sono chiamate anche parametri uniformi perché il contenuto della variabile è lo stesso per tutti i pixel elaborati ogni volta che viene chiamato lo shader. I registri sono contenuti nella tabella delle costanti, che può essere letta usando [**l'interfaccia ID3DXConstantTable.**](/windows/desktop/direct3d9/id3dxconstanttable)
+Le variabili globali vengono assegnate automaticamente ai registri dal compilatore. Le variabili globali vengono chiamate anche parametri uniformi perché il contenuto della variabile è lo stesso per tutti i pixel elaborati ogni volta che viene chiamato lo shader. I registri sono contenuti nella tabella delle costanti, che può essere letta usando [**l'interfaccia ID3DXConstantTable.**](/windows/desktop/direct3d9/id3dxconstanttable)
 
-La semantica di input per i pixel shader esegue il mapping dei valori in registri hardware specifici per il trasporto tra vertex shader e pixel shader. Ogni tipo di registro ha proprietà specifiche. Poiché attualmente esistono solo due semantiche per le coordinate di colore e trama, è comune che la maggior parte dei dati sia contrassegnata come coordinata di trama anche quando non lo è.
+La semantica di input per i pixel shader esegue il mapping dei valori in registri hardware specifici per il trasporto tra vertex shader e pixel shader. Ogni tipo di registro ha proprietà specifiche. Poiché attualmente sono presenti solo due semantiche per le coordinate di colore e trama, è comune che la maggior parte dei dati sia contrassegnata come coordinata di trama anche quando non lo è.
 
-Si noti che la struttura di output del vertex shader ha usato un input con dati di posizione, che non viene usato dal pixel shader. HLSL consente dati di output validi di un vertex shader che non sono dati di input validi per un pixel shader, purché non vi sia riferimento nel pixel shader.
+Si noti che la struttura di output vertex shader ha usato un input con dati di posizione, che non vengono usati dal pixel shader. HLSL consente dati di output validi di un vertex shader che non sono dati di input validi per un pixel shader, purché non vi sia fatto riferimento nel pixel shader.
 
-Gli argomenti di input possono anche essere matrici. La semantica viene incrementata automaticamente dal compilatore per ogni elemento della matrice. Si consideri, ad esempio, la dichiarazione esplicita seguente:
+Gli argomenti di input possono anche essere matrici. La semantica viene incrementata automaticamente dal compilatore per ogni elemento della matrice. Si consideri ad esempio la dichiarazione esplicita seguente:
 
 
 ```
@@ -283,7 +283,7 @@ float4 Sparkle(VS_OUTPUT In) : COLOR
 
 
 
-La dichiarazione esplicita specificata in precedenza equivale alla dichiarazione seguente che avrà una semantica incrementata automaticamente dal compilatore:
+La dichiarazione esplicita specificata in precedenza equivale alla dichiarazione seguente che avrà la semantica incrementata automaticamente dal compilatore:
 
 
 ```
@@ -297,7 +297,7 @@ float4 Sparkle(float4 Position : POSITION,
 
 
 
-Proprio come la semantica di input, la semantica di output identifica l'utilizzo dei pixel shader di output. Molti pixel shader scrivono in un solo colore di output. I pixel shader possono anche scrivere un valore di profondità in una o più destinazioni di rendering contemporaneamente (fino a quattro). Analogamente ai vertex shader, i pixel shader usano una struttura per restituire più di un output. Questo shader scrive 0 nei componenti di colore e nel componente di profondità.
+Analogamente alla semantica di input, la semantica di output identifica l'utilizzo dei pixel shader di output. Molti pixel shader scrivono in un solo colore di output. I pixel shader possono anche scrivere un valore di profondità in una o più destinazioni di rendering contemporaneamente (fino a quattro). Come i vertex shader, i pixel shader usano una struttura per restituire più di un output. Questo shader scrive 0 nei componenti di colore, nonché nel componente di profondità.
 
 
 ```
@@ -329,9 +329,9 @@ PS_OUTPUT main(void)
 
 
 
-I colori di output del pixel shader devono essere di tipo float4. Quando si scrivono più colori, tutti i colori di output devono essere utilizzati in modo contiguo. In altre parole, [COLOR1 non può](dx-graphics-hlsl-semantics.md) essere un output a meno [che COLOR0](dx-graphics-hlsl-semantics.md) non sia già stato scritto. L'output della profondità del pixel shader deve essere di tipo float1.
+I colori di output del pixel shader devono essere di tipo float4. Quando si scrivono più colori, tutti i colori di output devono essere usati in modo contiguo. In altre parole, [COLOR1 non](dx-graphics-hlsl-semantics.md) può essere un output a meno che [COLOR0](dx-graphics-hlsl-semantics.md) non sia già stato scritto. L'output della profondità del pixel shader deve essere di tipo float1.
 
-### <a name="samplers-and-texture-objects"></a>Campionatori e oggetti Texture
+### <a name="samplers-and-texture-objects"></a>Campionatori e oggetti trama
 
 Un campionatore contiene lo stato del campionatore. Lo stato del campionatore specifica la trama da campionare e controlla il filtro eseguito durante il campionamento. Per campionare una trama sono necessari tre elementi:
 
@@ -369,7 +369,7 @@ float2 sample_2D(float2 tex : TEXCOORD0) : COLOR
 
 La trama viene dichiarata con una variabile di trama tex0.
 
-In questo esempio viene dichiarata una variabile sampler denominata s \_ 2D. Il campionatore contiene lo stato del campionatore all'interno delle parentesi graffe. Include la trama che verrà campionata e, facoltativamente, lo stato del filtro, ovvero le modalità di ritorno a capo, le modalità di filtro e così via. Se lo stato del campionatore viene omesso, viene applicato uno stato del campionatore predefinito che specifica un filtro lineare e una modalità di ritorno a capo per le coordinate della trama. La funzione sampler accetta una coordinata di trama a virgola mobile a due componenti e restituisce un colore a due componenti. Viene rappresentato con il tipo restituito float2 e rappresenta i dati nei componenti rosso e verde.
+In questo esempio viene dichiarata una variabile sampler denominata s \_ 2D. Il campionatore contiene lo stato del campionatore all'interno delle parentesi graffe. Include la trama che verrà campionata e, facoltativamente, lo stato del filtro, ovvero le modalità di ritorno a capo, le modalità di filtro e così via. Se lo stato del campionatore viene omesso, viene applicato uno stato del campionatore predefinito specificando un filtro lineare e una modalità di ritorno a capo per le coordinate della trama. La funzione sampler accetta una coordinata di trama a virgola mobile a due componenti e restituisce un colore a due componenti. È rappresentato con il tipo restituito float2 e rappresenta i dati nei componenti rosso e verde.
 
 Sono definiti quattro tipi di campionatori (vedere Parole chiave [)](dx-graphics-hlsl-appendix.md)e le ricerche trame vengono eseguite dalle funzioni intrinseche: [**tex1D(s, t) (DirectX HLSL),**](dx-graphics-hlsl-tex1d.md) [**tex2D(s, t) (DirectX HLSL),**](dx-graphics-hlsl-tex2d.md) [**tex3D(s, t) (DirectX HLSL)**](dx-graphics-hlsl-tex3d.md), [**texCUBE(s, t) (DirectX HLSL).**](dx-graphics-hlsl-texcube.md) Ecco un esempio di campionamento 3D:
 
@@ -497,9 +497,9 @@ float4 main(float4 tex[4] : TEXCOORD) : COLOR
 
 ## <a name="writing-functions"></a>Scrittura di funzioni
 
-Le funzioni suddivideno le attività di grandi dimensioni in attività più piccole. Piccole attività sono più facili da eseguire il debug e possono essere riutilizzate, una volta dimostrate. Le funzioni possono essere usate per nascondere i dettagli di altre funzioni, in modo da semplificare l'esecuzione di un programma composto da funzioni.
+Le funzioni suddivideno le attività di grandi dimensioni in attività più piccole. Piccole attività sono più facili da eseguire il debug e possono essere riutilizzate, una volta dimostrate. Le funzioni possono essere usate per nascondere i dettagli di altre funzioni, in modo da semplificare l'esecuzione di un programma costituito da funzioni.
 
-Le funzioni HLSL sono simili alle funzioni C in diversi modi: entrambe contengono una definizione e un corpo di funzione ed entrambi dichiarano tipi restituiti ed elenchi di argomenti. Analogamente alle funzioni C, la convalida HLSL esegue il controllo dei tipi per gli argomenti, i tipi di argomento e il valore restituito durante la compilazione dello shader.
+Le funzioni HLSL sono simili alle funzioni C in diversi modi: entrambe contengono una definizione e un corpo di funzione ed entrambe dichiarano tipi restituiti ed elenchi di argomenti. Analogamente alle funzioni C, la convalida HLSL esegue il controllo dei tipi sugli argomenti, sui tipi di argomento e sul valore restituito durante la compilazione dello shader.
 
 A differenza delle funzioni C, le funzioni del punto di ingresso HLSL usano la semantica per associare gli argomenti della funzione agli input e agli output dello shader (le funzioni HLSL chiamate internamente ignorano la semantica). In questo modo è più semplice associare i dati del buffer a uno shader e associare gli output dello shader agli input dello shader.
 
@@ -515,7 +515,7 @@ float4 VertexShader_Tutorial_1(float4 inPos : POSITION ) : POSITION
 
 
 
-La dichiarazione di funzione include tutti gli elementi prima delle parentesi graffe:
+La dichiarazione di funzione include tutti gli elementi davanti alle parentesi graffe:
 
 
 ```
@@ -529,10 +529,10 @@ Una dichiarazione di funzione contiene:
 -   Tipo restituito
 -   Nome di una funzione
 -   Elenco di argomenti (facoltativo)
--   Semantica di output (facoltativa)
--   Annotazione (facoltativa)
+-   Semantica di output (facoltativo)
+-   Annotazione (facoltativo)
 
-Il tipo restituito può essere uno qualsiasi dei tipi di dati di base HLSL, ad esempio float4:
+Il tipo restituito può essere uno dei tipi di dati di base HLSL, ad esempio float4:
 
 
 ```
@@ -583,7 +583,7 @@ float4 VertexShader_Tutorial_1(float4 inPos : POSITION ) : POSITION
 
 
 
-Un elenco di argomenti dichiara gli argomenti di input per una funzione. Può anche dichiarare i valori che verranno restituiti. Alcuni argomenti sono sia argomenti di input che di output. Di seguito è riportato un esempio di shader che accetta quattro argomenti di input.
+Un elenco di argomenti dichiara gli argomenti di input in una funzione. Può anche dichiarare i valori che verranno restituiti. Alcuni argomenti sono sia argomenti di input che di output. Ecco un esempio di shader che accetta quattro argomenti di input.
 
 
 ```
@@ -600,9 +600,9 @@ float4 Light(float3 LightDir : TEXCOORD1,
 
 
 
-Questa funzione restituisce un colore finale, che è una combinazione di un campione di trama e del colore chiaro. La funzione accetta quattro input. Due input hanno semantica: LightDir ha la semantica [TEXCOORD1](dx-graphics-hlsl-semantics.md) e texcrd ha la [semantica TEXCOORD0.](dx-graphics-hlsl-semantics.md) La semantica indica che i dati per queste variabili provengono dal vertex buffer. Anche se la variabile LightDir ha una semantica [TEXCOORD1,](dx-graphics-hlsl-semantics.md) è probabile che il parametro non sia una coordinata di trama. Il tipo semantico TEXCOORDn viene spesso usato per fornire una semantica per un tipo non predefinito (non esiste una semantica di input vertex shader per una direzione di luce).
+Questa funzione restituisce un colore finale, che è una combinazione di un campione di trama e del colore chiaro. La funzione accetta quattro input. Due input hanno semantica: LightDir ha la semantica [TEXCOORD1](dx-graphics-hlsl-semantics.md) e texcrd ha la [semantica TEXCOORD0.](dx-graphics-hlsl-semantics.md) La semantica indica che i dati per queste variabili provengono dal vertex buffer. Anche se la variabile LightDir ha una semantica [TEXCOORD1,](dx-graphics-hlsl-semantics.md) il parametro probabilmente non è una coordinata di trama. Il tipo semantico TEXCOORDn viene spesso usato per fornire una semantica per un tipo non predefinito (non esiste una semantica di input vertex shader per una direzione di luce).
 
-Gli altri due input LightColor e samp sono etichettati con la [parola chiave uniform.](dx-graphics-hlsl-appendix.md) Si tratta di costanti uniformi che non cambieranno tra le chiamate di disegno. I valori per questi parametri provengono da variabili globali dello shader.
+Gli altri due input LightColor e samp sono etichettati con la [parola chiave uniform.](dx-graphics-hlsl-appendix.md) Si tratta di costanti uniformi che non cambieranno tra le chiamate di disegno. I valori per questi parametri provengono da variabili globali shader.
 
 Gli argomenti possono essere etichettati come input con la parola chiave in e gli argomenti di output con la parola chiave out. Gli argomenti non possono essere passati per riferimento. Tuttavia, un argomento può essere sia un input che un output se viene dichiarato con la parola chiave inout. Gli argomenti passati a una funzione contrassegnati con la parola chiave inout vengono considerati copie dell'originale fino a quando la funzione non viene restituita e vengono copiati nuovamente. Di seguito è riportato un esempio di uso di inout:
 
@@ -698,7 +698,7 @@ return  light.enabled;
 
 
 
-Questo esempio restituisce un valore float4 costruito da una variabile locale e un valore letterale:
+Questo esempio restituisce un float4 costruito da una variabile locale e un valore letterale:
 
 
 ```
@@ -707,7 +707,7 @@ return  float4(color.rgb, 1) ;
 
 
 
-Questo esempio restituisce un valore float4 costruito dal risultato restituito da una funzione intrinseca e alcuni valori letterali:
+In questo esempio viene restituito un valore float4 costruito dal risultato restituito da una funzione intrinseca e alcuni valori letterali:
 
 
 ```
@@ -719,7 +719,7 @@ float4 func(float2 a: POSITION): COLOR
 
 
 
-Questo esempio restituisce una struttura che contiene uno o più membri:
+In questo esempio viene restituita una struttura che contiene uno o più membri:
 
 
 ```
@@ -742,9 +742,9 @@ VS_OUTPUT VertexShader_Tutorial_1(float4 inPos : POSITION )
 
 ## <a name="flow-control"></a>Controllo di flusso
 
-La maggior parte dei vertici e pixel shader hardware è progettata per eseguire uno shader riga per riga, eseguendo ogni istruzione una sola volta. HLSL supporta il controllo di flusso, che include la diramazione statica, le istruzioni predicate, il ciclo statico, la diramazione dinamica e il ciclo dinamico.
+La maggior parte dei vertici e pixel shader hardware è progettata per eseguire uno shader riga per riga, eseguendo ogni istruzione una sola volta. HLSL supporta il controllo di flusso, che include rami statici, istruzioni predicate, ciclo statico, diramazione dinamica e ciclo dinamico.
 
-In precedenza, l'uso di un'istruzione if generava codice shader in linguaggio assembly che implementava sia il lato if che il lato else del flusso di codice. Di seguito è riportato un esempio di nel codice HLSL compilato per vs \_ 1 \_ 1:
+In precedenza, l'uso di un'istruzione if generava codice shader in linguaggio assembly che implementa sia il lato if che il lato else del flusso di codice. Di seguito è riportato un esempio del codice HLSL compilato per vs \_ 1 \_ 1:
 
 
 ```
@@ -756,7 +756,7 @@ else
 
 
 
-Di seguito è riportato il codice assembly risultante:
+Ed ecco il codice dell'assembly risultante:
 
 
 ```
@@ -771,7 +771,7 @@ mad oPos, r0.w, r2, c1
 
 
 
-Alcuni componenti hardware consentono il ciclo statico o dinamico, ma la maggior parte richiede l'esecuzione lineare. Nei modelli che non supportano il ciclo, è necessario annullare la registrazione di tutti i cicli. Un esempio è [l'esempio DepthOfField](https://msdn.microsoft.com/library/Ee416592(v=VS.85).aspx) che usa cicli non srotodati anche per shader ps \_ \_ 1 1.
+Alcuni componenti hardware consentono il ciclo statico o dinamico, ma la maggior parte richiede l'esecuzione lineare. Nei modelli che non supportano il ciclo, è necessario annullare la registrazione di tutti i cicli. Un esempio è [l'esempio DepthOfField](https://msdn.microsoft.com/library/Ee416592(v=VS.85).aspx) che usa cicli non di cui è stata esemplata la registrazione anche per gli shader ps \_ \_ 1 1.
 
 HLSL include ora il supporto per ognuno di questi tipi di controllo di flusso:
 
@@ -781,7 +781,7 @@ HLSL include ora il supporto per ognuno di questi tipi di controllo di flusso:
 -   diramazione dinamica
 -   ciclo dinamico
 
-La diramazione statica consente di attivare o disattivare i blocchi di codice shader in base a una costante shader booleana. Si tratta di un metodo pratico per abilitare o disabilitare i percorsi del codice in base al tipo di oggetto di cui è in corso il rendering. Tra le chiamate di disegno, è possibile decidere quali funzionalità si vuole supportare con lo shader corrente e quindi impostare i flag booleani necessari per ottenere tale comportamento. Tutte le istruzioni disabilitate da una costante booleana vengono ignorate durante l'esecuzione dello shader.
+La diramazione statica consente di attivare o disattivare blocchi di codice shader in base a una costante shader booleana. Si tratta di un metodo pratico per abilitare o disabilitare i percorsi di codice in base al tipo di oggetto attualmente sottoposto a rendering. Tra le chiamate di disegno, è possibile decidere quali funzionalità supportare con lo shader corrente e quindi impostare i flag booleani necessari per ottenere tale comportamento. Tutte le istruzioni disabilitate da una costante booleana vengono ignorate durante l'esecuzione dello shader.
 
 Il supporto di diramazione più familiare è la diramazione dinamica. Con la diramazione dinamica, la condizione di confronto si trova in una variabile, il che significa che il confronto viene eseguito per ogni vertice o ogni pixel in fase di esecuzione (a differenza del confronto che si verifica in fase di compilazione o tra due chiamate di disegno). L'effetto sulle prestazioni è il costo del ramo più il costo delle istruzioni sul lato del ramo assunto. La diramazione dinamica viene implementata nel modello shader 3 o versione successiva. L'ottimizzazione degli shader che funzionano con questi modelli è simile all'ottimizzazione del codice eseguito in una CPU.
 

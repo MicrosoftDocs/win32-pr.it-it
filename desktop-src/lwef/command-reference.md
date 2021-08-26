@@ -1,19 +1,19 @@
 ---
-title: Informazioni di riferimento sui comandi (Strumento linguistic information sound editing)
-description: Questo riferimento al comando descrive lo strumento linguistico per la modifica del suono delle informazioni. Microsoft Agent è deprecato a livello di Windows 7.
+title: Informazioni di riferimento sui comandi (Strumento di modifica audio per informazioni linguistiche)
+description: Questo riferimento al comando descrive lo strumento linguistico per la modifica del suono delle informazioni. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: 084f14ee-6774-46e2-a4ec-92f480f2f74a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a929691a96cfa62417785e1348448d78cc227be
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7d942bccfc8d995b716902b3569eb05ddcd4cad5b12dc9e5fa2a781d692b6ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963231"
 ---
-# <a name="command-reference-linguistic-information-sound-editing-tool"></a>Informazioni di riferimento sui comandi (Strumento linguistic information sound editing)
+# <a name="command-reference-linguistic-information-sound-editing-tool"></a>Informazioni di riferimento sui comandi (Strumento di modifica audio per informazioni linguistiche)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ### <a name="the-file-menu"></a>The File Menu
 
@@ -22,14 +22,14 @@ ms.locfileid: "112405714"
 <span id="New"></span><span id="new"></span><span id="NEW"></span>**Nuovo**
 </dt> <dd>
 
-Reimposta l'editor audio per la creazione di un nuovo file audio avanzato. Se viene caricato un file audio esistente con modifiche non salvate, l'editor audio visualizza un messaggio per determinare se salvare o rimuovere le modifiche non salvate.
+Reimposta l'editor audio per la creazione di un nuovo file audio avanzato. Se un file audio esistente viene caricato e contiene modifiche non salvate, l'editor dei suoni visualizza un messaggio per determinare se salvare o annullare le modifiche non salvate.
 
 </dd> <dt>
 
 <span id="Open"></span><span id="open"></span><span id="OPEN"></span>**Aperto**
 </dt> <dd>
 
-Visualizza la finestra di dialogo Apri, che consente di aprire un file audio esistente. Se viene caricato un file audio esistente con modifiche non salvate, l'editor audio visualizza un messaggio per determinare se salvare o rimuovere le modifiche non salvate.
+Visualizza la finestra di dialogo Apri , che consente di aprire un file audio esistente. Se un file audio esistente viene caricato e contiene modifiche non salvate, l'editor dei suoni visualizza un messaggio per determinare se salvare o annullare le modifiche non salvate.
 
 </dd> <dt>
 
@@ -50,21 +50,21 @@ Visualizza la finestra di dialogo Salva con nome, che consente di immettere un n
 <span id="Save_Selection_As"></span><span id="save_selection_as"></span><span id="SAVE_SELECTION_AS"></span>**Salva selezione con nome**
 </dt> <dd>
 
-Visualizza la finestra di dialogo Salva selezione con nome, che consente di immettere un nome per la parte selezionata del file audio.
+Visualizza la finestra di dialogo Salva selezione con nome che consente di immettere un nome per la parte selezionata del file audio.
 
 </dd> <dt>
 
 <span id="Most_Recently_Open_Files"></span><span id="most_recently_open_files"></span><span id="MOST_RECENTLY_OPEN_FILES"></span>**File aperti più di recente**
 </dt> <dd>
 
-Tiene traccia dei file di definizione dei caratteri recenti aperti. La scelta di un file consente di aprire automaticamente il file per la modifica. Se un carattere esistente viene caricato e contiene modifiche non salvate in un file, l'editor audio visualizza un messaggio per determinare se salvare o rimuovere le modifiche non salvate.
+Tiene traccia dei file di definizione dei caratteri recenti aperti. La scelta di un file apre automaticamente il file per la modifica. Se viene caricato un carattere esistente e sono state apportate modifiche non salvate a un file, l'editor audio visualizza un messaggio per determinare se salvare o annullare le modifiche non salvate.
 
 </dd> <dt>
 
 <span id="Exit"></span><span id="exit"></span><span id="EXIT"></span>**Uscita**
 </dt> <dd>
 
-Esce dall'editor audio. Se un file esistente viene caricato e contiene modifiche non salvate, l'editor audio visualizza un messaggio per determinare se salvare o rimuovere le modifiche non salvate.
+Esce dall'editor audio. Se un file esistente viene caricato e contiene modifiche non salvate, l'editor audio visualizza un messaggio per determinare se salvare o annullare le modifiche non salvate.
 
 </dd> </dl>
 
@@ -117,14 +117,14 @@ Rimuove il testo selezionato.
 <span id="Select_All"></span><span id="select_all"></span><span id="SELECT_ALL"></span>**Seleziona tutto**
 </dt> <dd>
 
-Seleziona il testo nella casella di testo Rappresentazione testo.
+Seleziona il testo nella casella di testo Rappresentazione testo .
 
 </dd> <dt>
 
 <span id="Generate_Linguistic_Info"></span><span id="generate_linguistic_info"></span><span id="GENERATE_LINGUISTIC_INFO"></span>**Generare informazioni linguistiche**
 </dt> <dd>
 
-Inizia a generare le informazioni di word break e phoneme per un file audio.
+Inizia a generare informazioni su word break e fonemi per un file audio.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Visualizza la finestra di dialogo Inserisci fonema che consente di inserire un'e
 <span id="Replace_Phoneme"></span><span id="replace_phoneme"></span><span id="REPLACE_PHONEME"></span>**Sostituire Phoneme**
 </dt> <dd>
 
-Visualizza la finestra di dialogo Sostituisci fonema che consente di sostituire l'etichetta fonetica selezionata.
+Visualizza la finestra di dialogo Sostituisci fonema che consente di sostituire l'etichetta fonema selezionata.
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Visualizza la finestra di dialogo Inserisci parola che consente di inserire un'e
 
 </dd> <dt>
 
-<span id="Replace_Word"></span><span id="replace_word"></span><span id="REPLACE_WORD"></span>**Sostituire Word**
+<span id="Replace_Word"></span><span id="replace_word"></span><span id="REPLACE_WORD"></span>**Sostituisci parola**
 </dt> <dd>
 
 Visualizza la finestra di dialogo Sostituisci parola che consente di sostituire l'etichetta di parola selezionata nella rappresentazione audio.
@@ -173,14 +173,14 @@ Elimina l'etichetta di parola selezionata nella rappresentazione audio.
 <span id="Phoneme_Label_Display"></span><span id="phoneme_label_display"></span><span id="PHONEME_LABEL_DISPLAY"></span>**Visualizzazione etichetta fonema**
 </dt> <dd>
 
-Modifica la visualizzazione dell'etichetta phoneme tra i nomi descrittivi e i valori di byte IPA.
+Modifica la visualizzazione dell'etichetta fonema tra nomi descrittivi e valori byte IPA.
 
 </dd> <dt>
 
 <span id="Speech_Engine"></span><span id="speech_engine"></span><span id="SPEECH_ENGINE"></span>**Motore di riconoscimento vocale**
 </dt> <dd>
 
-Consente di modificare il motore di riconoscimento vocale utilizzato per generare le informazioni sull'interruzione di parola e sul fonema.
+Consente di modificare il motore di riconoscimento vocale utilizzato per generare le informazioni sui word break e sul fonema.
 
 </dd> </dl>
 
@@ -212,7 +212,7 @@ Sospende la riproduzione del file audio o della parte selezionata del file audio
 <span id="Stop"></span><span id="stop"></span><span id="STOP"></span>**Fermare**
 </dt> <dd>
 
-Interrompe la registrazione o la riproduzione del file audio o della parte selezionata del file audio.
+Arresta la registrazione o la riproduzione del file audio o della parte selezionata del file audio.
 
 </dd> </dl>
 
@@ -223,7 +223,7 @@ Interrompe la registrazione o la riproduzione del file audio o della parte selez
 <span id="Help_Topics"></span><span id="help_topics"></span><span id="HELP_TOPICS"></span>**Argomenti della Guida**
 </dt> <dd>
 
-Visualizza la finestra di dialogo Argomenti della Guida, che consente di selezionare un argomento della Guida dell'editor audio.
+Visualizza la finestra di dialogo Argomenti della Guida che consente di selezionare un argomento della Guida dell'editor audio.
 
 </dd> <dt>
 

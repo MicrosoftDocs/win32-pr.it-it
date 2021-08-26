@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETHOTITEM (COMmctrl. h)
-description: Recupera l'indice dell'elemento attivo in una barra degli strumenti.
+title: TB_GETHOTITEM messaggio (Commctrl.h)
+description: Recupera l'indice dell'elemento di accesso rapido in una barra degli strumenti.
 ms.assetid: a87dbfc3-c6be-4a0a-9b6a-301b900d7929
 keywords:
-- Controlli di Windows Message TB_GETHOTITEM
+- TB_GETHOTITEM dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829864cc9223ba15b49b1ecc623f294fd4a6b4fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c22f33566a586ceaa524f720a9d688897f132ee227950f1f786093150955eafa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918831"
 ---
-# <a name="tb_gethotitem-message"></a>TB \_ GETHOTITEM messaggio
+# <a name="tb_gethotitem-message"></a>TB \_ GETHOTITEM message
 
-Recupera l'indice dell'elemento attivo in una barra degli strumenti.
+Recupera l'indice dell'elemento di accesso rapido in una barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera l'indice dell'elemento attivo in una barra degli strumenti.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice dell'elemento attivo oppure-1 se non è impostato alcun elemento attivo. I controlli della barra degli strumenti che non hanno lo stile [**TBSTYLE \_ Flat**](toolbar-control-and-button-styles.md) non hanno elementi sensibili.
+Restituisce l'indice dell'elemento a caldo oppure -1 se non è impostato alcun elemento a caldo. I controlli barra degli strumenti che non hanno lo stile [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) non hanno elementi hot.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'indice dell'elemento attivo oppure-1 se non è impostato alcun ele
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

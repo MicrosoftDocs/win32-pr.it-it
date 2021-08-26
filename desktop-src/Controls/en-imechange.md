@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_IMECHANGE (RichEdit. h)
+title: EN_IMECHANGE di notifica (Richedit.h)
 description: Notifica all'elemento padre di un controllo Rich Edit che lo stato di conversione IME è stato modificato.
 ms.assetid: 2893e4ef-5904-4a57-95c5-3f6cfbb60d90
 keywords:
-- Controlli di Windows per il codice di notifica EN_IMECHANGE
+- EN_IMECHANGE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fa0e0c8fe4e7d6d8de876a5d1a1fb7a10754096
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4974c4126606b8ed95ffa645778469b6fc897488533b81498347de1c1995e7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047681"
 ---
-# <a name="en_imechange-notification-code"></a>\_Codice di notifica en IMECHANGE
+# <a name="en_imechange-notification-code"></a>Codice \_ di notifica EN IMECHANGE
 
-Notifica all'elemento padre di un controllo Rich Edit che lo stato di conversione IME è stato modificato. Questo codice di notifica è disponibile *solo* per le versioni in lingua asiatica del sistema operativo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Notifica all'elemento padre di un controllo Rich Edit che lo stato di conversione IME è stato modificato. Questo codice di notifica è *disponibile solo* per le versioni in lingua asia del sistema operativo. Un controllo Rich Edit invia questo codice di notifica sotto forma di [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_IMECHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo Rich Edit. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore del controllo Rich Edit. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -59,10 +59,10 @@ Questo codice di notifica restituisce zero.
 
 ## <a name="remarks"></a>Commenti
 
-Per ricevere \_ i codici di notifica en IMECHANGE, specificare [**ENM \_ IMECHANGE**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere i codici di notifica EN \_ IMECHANGE, specificare [**ENM \_ IMECHANGE**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 > [!Note]  
-> Questo codice di notifica è supportato solo nella versione asiatica di Rich Edit 1,0. Non è supportata nelle versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+> Questo codice di notifica è supportato solo nella versione asia orientale di Rich Edit 1.0. Non è supportato nelle versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
  
 
@@ -72,9 +72,9 @@ Per ricevere \_ i codici di notifica en IMECHANGE, specificare [**ENM \_ IMECHAN
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Per ricevere \_ i codici di notifica en IMECHANGE, specificare [**ENM \_ IMECHAN
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

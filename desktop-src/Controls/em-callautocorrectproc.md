@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_CALLAUTOCORRECTPROC (RichEdit. h)
-description: Chiama la funzione di callback di correzione automatica archiviata dal \_ messaggio SETAUTOCORRECTPROC em, purché il testo che precede il punto di inserimento sia candidato per la correzione automatica.
+title: EM_CALLAUTOCORRECTPROC messaggio (Richedit.h)
+description: Chiama la funzione di callback di correzione automatica archiviata dal messaggio EM SETAUTOCORRECTPROC, a condizione che il testo che precede il punto di inserimento sia un candidato per la \_ correzione automatica.
 ms.assetid: 93116467-B345-4FD9-9162-3E01CF3C6F20
 keywords:
-- Controlli di Windows Message EM_CALLAUTOCORRECTPROC
+- EM_CALLAUTOCORRECTPROC dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73109d2499fc01a1d811066dc6059593c7ed5e0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ad76ec66018b4e673913c433ce16a1294944f69c9d33a5dbaedb85ba21f985a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916081"
 ---
-# <a name="em_callautocorrectproc-message"></a>\_Messaggio CALLAUTOCORRECTPROC em
+# <a name="em_callautocorrectproc-message"></a>Messaggio \_ EM CALLAUTOCORRECTPROC
 
-Chiama la funzione di callback di correzione automatica archiviata dal [**messaggio \_ SETAUTOCORRECTPROC em**](em-setautocorrectproc.md) , purché il testo che precede il punto di inserimento sia candidato per la correzione automatica.
+Chiama la funzione di callback di correzione automatica archiviata dal messaggio [**EM \_ SETAUTOCORRECTPROC,**](em-setautocorrectproc.md) a condizione che il testo che precede il punto di inserimento sia un candidato per la correzione automatica.
 
 
 ```C++
@@ -39,20 +39,20 @@ Chiama la funzione di callback di correzione automatica archiviata dal [**messag
 *wParam* 
 </dt> <dd>
 
-Carattere di tipo **WCHAR**. Se il carattere è una tabulazione (U + 0009) e il carattere che precede il punto di inserimento è t a Tab, il carattere che precede il punto di inserimento viene considerato come parte della stringa candidata di correzione automatica anziché come delimitatore di stringa. in caso contrario, *wParam* non ha alcun effetto.
+Carattere di tipo **WCHAR.** Se questo carattere è una tabulazione (U+0009) e il carattere che precede il punto di inserimento non è una tabulazione, il carattere che precede il punto di inserimento viene considerato come parte della stringa candidata per la correzione automatica anziché come delimitatore di stringa. in caso contrario, *wParam* non ha alcun effetto.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è zero se il messaggio riesce oppure un valore diverso da zero se si verifica un errore.
+Il valore restituito è zero se il messaggio ha esito positivo o diverso da zero se si verifica un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ Il valore restituito è zero se il messaggio riesce oppure un valore diverso da 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -73,10 +73,10 @@ Il valore restituito è zero se il messaggio riesce oppure un valore diverso da 
 [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc)
 </dt> <dt>
 
-[**\_GETAUTOCORRECTPROC em**](em-getautocorrectproc.md)
+[**EM \_ GETAUTOCORRECTPROC**](em-getautocorrectproc.md)
 </dt> <dt>
 
-[**\_SETAUTOCORRECTPROC em**](em-setautocorrectproc.md)
+[**EM \_ SETAUTOCORRECTPROC**](em-setautocorrectproc.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: ftod (SM5-ASM)
-description: Conversione per componente da dati a virgola mobile a precisione singola a dati a virgola mobile a precisione doppia.
+title: ftod (sm5 - asm)
+description: Conversione a livello di componente da dati a virgola mobile e precisione singola a dati a virgola mobile a precisione doppia.
 ms.assetid: 95297556-41ED-4ED0-8F9A-16B7A440AF25
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6790735745805426d32aefcc5d5d771ade644e43
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: d31396aa0f2b82dc4ea366bbdde704d55fa850d0d0a9f2f1f3de539a763facb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982431"
 ---
-# <a name="ftod-sm5---asm"></a>ftod (SM5-ASM)
+# <a name="ftod-sm5---asm"></a>ftod (sm5 - asm)
 
-Conversione per componente da dati a virgola mobile a precisione singola a dati a virgola mobile a precisione doppia.
+Conversione a livello di componente da dati a virgola mobile e precisione singola a dati a virgola mobile a precisione doppia.
 
 
 
-| ftod dest \[ . mask \] , \[ - \] src \[ . Swizzle \] , |
+| ftod dest \[ \] .mask, \[ - \] src \[ .swizzle \] , |
 |-------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Conversione per componente da dati a virgola mobile a precisione singola a dati 
 
 | Elemento                                                            | Descrizione                                          |
 |-----------------------------------------------------------------|------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo dei dati convertiti.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] dati da convertire.<br/>          |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo dei dati convertiti.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] I dati da convertire.<br/>          |
 
 
 
@@ -37,21 +37,21 @@ Conversione per componente da dati a virgola mobile a precisione singola a dati 
 
 ## <a name="remarks"></a>Commenti
 
-Ogni componente dell'origine viene convertito dalla rappresentazione con precisione singola alla rappresentazione a precisione doppia.
+Ogni componente dell'origine viene convertito dalla rappresentazione a precisione singola alla rappresentazione a precisione doppia.
 
-Le maschere *dest* valide sono. XY,. ZW e. xyzw. . XY riceve il risultato della prima conversione e. ZW riceve il risultato della seconda conversione.
+Le maschere *dest* valide sono xy, zw e xyzw. .xy riceve il risultato della prima conversione e .zw riceve il risultato della seconda conversione.
 
-*dest* è un doppio vec2 tra (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+*dest* è un doppio vec2 attraverso (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 
-*src* è un vec2 float tra x e y (ZW ignorato) (post swizzle).
+*src* è un vec2 float tra x e y (zw ignorato) (post swizzle).
 
-Per le conversioni float32<->doppie, le implementazioni possono rispettare le denormazioni di float32 o scaricarle.
+Per le conversioni double float32<->, le implementazioni possono rispettare le denorme float32 o scaricarle.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -59,7 +59,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -67,12 +67,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -82,7 +82,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

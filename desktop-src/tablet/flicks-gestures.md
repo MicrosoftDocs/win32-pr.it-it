@@ -1,99 +1,99 @@
 ---
-description: Windows Vista include un set di otto movimenti di scorrimento di base. I gesti rapidi sono movimenti di penna veloci e lineari associati a comandi e azioni di scorrimento.
+description: Windows Vista include un set di otto movimenti di sfarfallio di base. I gesti rapidi sono movimenti rapidi e lineari della penna associati ad azioni e comandi di scorrimento.
 ms.assetid: 004c7d76-90a9-4506-a70b-dbf8f9e1c616
-title: Movimenti rapidi
+title: Gesti sfarfallio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f85d519f47b265779741b2f98fcb1b2f5d69df5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37e7d53c42eb178900ce22b7890febcfd1c6aca95f2257b0c5ed06eb20173b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104570155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936516"
 ---
-# <a name="flicks-gestures"></a>Movimenti rapidi
+# <a name="flicks-gestures"></a>Gesti sfarfallio
 
-Windows Vista include un set di otto *movimenti di scorrimento* di base. I gesti rapidi sono movimenti di penna veloci e lineari associati a comandi e azioni di scorrimento.
+Windows Vista include un set di otto movimenti di *sfarfallio di base.* I gesti rapidi sono movimenti rapidi e lineari della penna associati ad azioni e comandi di scorrimento.
 
-## <a name="flick-details"></a>Dettagli tocco
+## <a name="flick-details"></a>Dettagli di Un gesto rapido
 
-La funzionalità gesti rapidi fornisce all'utente un nuovo modo per interagire con il Tablet PC consentendo l'esecuzione di azioni comuni mediante la creazione di movimenti rapidi con la penna. I gesti rapidi coesisteranno con e non interferiscono con le normali azioni dell'utente, ad esempio i rubinetti sinistro e destro, lo scorrimento e l'Inking.
+La funzionalità dei gesti rapidi offre all'utente un nuovo modo di interagire con il Tablet PC consentendo l'esecuzione di azioni comuni tramite movimenti rapidi con la penna. I gesti rapidi coesistono e non interrompono le normali azioni dell'utente, ad esempio i tocchi sinistro e destro, lo scorrimento e l'input penna.
 
-Un *gesto rapido è un* gesto di penna unidirezionale che richiede all'utente di contattare il digitalizzatore in un rapido movimento di scorrimento. Un gesto rapido è caratterizzato da alta velocità e da un elevato grado di unidritità. Un gesto rapido viene identificato in base alla direzione. I gesti rapidi possono essere eseguiti in otto direzioni corrispondenti alle direzioni Cardinal e secondaria della bussola.
+Un *gesto rapido* è un movimento di penna unidirezionale che richiede all'utente di contattare il digitalizzatore con un rapido movimento di sfarfallio. Un gesto rapido è caratterizzato da velocità elevata e un elevato grado di rettezza. Un gesto rapido è identificato dalla direzione. È possibile eseguire i gesti rapidi in otto direzioni corrispondenti alle direzioni della bussola cardinale e secondaria.
 
-Un' *azione o un gesto* *rapido* è l'azione o il collegamento eseguito in risposta a un gesto rapido. Viene eseguito il mapping di gesti rapidi alle azioni. Nella figura seguente viene illustrato un diagramma di otto gesti rapidi penna che corrispondono alle azioni rapide.
+*Un'azione* o *un'azione di sfarfallio* è l'azione o il tasto di scelta rapida eseguito in risposta a un gesto rapido. I gesti rapidi vengono mappati alle azioni. La figura seguente mostra un diagramma di otto gesti rapidi con penna che corrispondono alle azioni di sfarfallio.
 
-![illustrazione che mostra la mappa movimenti](images/2647eb2d-36d0-4610-b923-fa3530d1e640.jpg)
+![illustrazione che mostra la mappa dei movimenti](images/2647eb2d-36d0-4610-b923-fa3530d1e640.jpg)
 
-Quando l'utente sposta la penna sul digitalizzatore di un Tablet PC, l'hardware genera pacchetti penna che vengono indirizzati al sottosistema di input penna della piattaforma Tablet PC. In genere, se la penna viene usata come sostituto del mouse, il sottosistema di input penna accetta questi pacchetti penna e li invia, possibilmente con modifiche, a User32, il componente di Windows responsabile dell'elaborazione dell'input del mouse. Se la penna viene utilizzata su una superficie di Inking, viene eseguito il rendering dell'input penna anziché i pacchetti del mouse generati.
+Quando l'utente sposta la penna sul digitalizzatore di un Tablet PC, l'hardware genera pacchetti di penna che vengono indirizzati al sottosistema di input penna della piattaforma Tablet PC. In genere, se la penna viene usata in sostituzione del mouse, il sottosistema di input della penna accetta questi pacchetti di penna e li invia, possibilmente con modifiche, a User32, il componente Windows responsabile dell'elaborazione dell'input del mouse. Se la penna viene usata su una superficie di input penna, viene eseguito il rendering dell'input penna anziché dei pacchetti del mouse generati.
 
-La routine di rilevamento rapido è implementata nel sottosistema di input penna. Il rilevamento rapido inizia alla penna e continua fino a:
+La routine di rilevamento dei gesti rapidi viene implementata nel sottosistema di input penna. Il rilevamento dei gesti rapidi inizia dalla pressione della penna verso il basso e continua fino a quando:
 
-1) la sequenza di pacchetti ricevuti viene determinata in modo da non essere un gesto rapido o
+1) la sequenza di pacchetti ricevuti viene determinata come non un gesto rapido o
 
-2) si verifica la penna.
+2) Si verifica un pen-up.
 
-Mentre è in corso il rilevamento rapido, i pacchetti di penna vengono mantenuti e non inviati al sistema. Questa operazione deve essere eseguita perché l'invio di pacchetti può interferire con l'azione di scorrimento rapido eseguita. Se, ad esempio, si inviano pacchetti durante un gesto rapido che esegue il mapping a un'azione di copia, si ignora ciò che è stato selezionato, ovvero non ci sono elementi da copiare nel momento in cui l'azione è stata inviata.
+Durante il rilevamento dei gesti rapidi, i pacchetti penna vengono mantenuti e non inviati al sistema. Questa operazione deve essere eseguita perché l'invio di pacchetti può interferire con l'azione di sfarfallio eseguita. Ad esempio, l'invio di pacchetti durante un gesto rapido che esegue il mapping a un'azione di copia ignora ciò che è stato selezionato, vale a dire che non ci sarebbe nulla da copiare al momento dell'invio dell'azione.
 
-Quando i pacchetti vengono propagati nel sottosistema di input penna, la routine di rilevamento rapido calcola le metriche relative alla lunghezza, alla velocità, al tempo e alla curvatura del movimento eseguito. Con ogni pacchetto che arriva, la routine di rilevamento aggiorna ogni metrica. Non appena una delle metriche si trova al di fuori di quello che costituirebbe un gesto rapido, il rilevamento del gesto rapido termina e i pacchetti vengono inviati tramite.
+Man mano che i pacchetti scorrono nel sottosistema di input penna, la routine di rilevamento dei sfarfallii calcola le metriche relative a lunghezza, velocità, tempo e curvatura del movimento in esecuzione. Con ogni pacchetto che arriva, la routine di rilevamento aggiorna ognuna di queste metriche. Non appena una delle metriche non rientra in ciò che costituisce un gesto rapido, il rilevamento dei gesti rapidi termina e i pacchetti vengono inviati.
 
 ## <a name="where-flicks-are-detected"></a>Dove vengono rilevati i gesti rapidi
 
-I movimenti rapidi sono resi possibili dal fatto che i trascinamenti vengono in genere eseguiti piuttosto lentamente. L'utente deve prima avere come destinazione il punto iniziale del trascinamento, eseguire il trascinamento e quindi definire come destinazione il punto finale. Normalmente questa operazione richiederà troppo tempo per essere qualificata come un gesto rapido. Tuttavia, in caso di Inking, i tratti rapidi che sarebbero idonei ai gesti rapidi si verificano di frequente; il passaggio a' t'è un esempio comune. Pertanto, per impostazione predefinita, il rilevamento rapido viene disattivato sulle superfici di Inking e attivato a livello di sistema.
+I movimenti di sfarfallio sono resi possibili dal fatto che i trascinamenti vengono in genere eseguiti piuttosto lentamente. L'utente deve prima impostare come destinazione il punto iniziale del trascinamento, eseguire il trascinamento e quindi puntare al punto finale. In genere questa operazione potrebbe richiedere troppo tempo per essere qualificata come un gesto rapido. Tuttavia, nelle superfici di input penna i tratti rapidi che si qualificano come gesti rapidi si verificano di frequente; L'attraversamento di una 't' è un esempio comune. Di conseguenza, per impostazione predefinita, il rilevamento dei gesti rapidi viene disattivato sulle superfici di input penna e attivato a livello di sistema.
 
-## <a name="focus-issues"></a>Problemi di stato attivo
+## <a name="focus-issues"></a>Problemi di messa a fuoco
 
-Una volta rilevato un gesto rapido, viene avviata una sequenza di eventi che in definitiva conduce al sistema che esegue una determinata azione in risposta al Flick che si è verificato. In primo luogo, la routine di rilevamento all'interno del sottosistema di input penna determina la finestra a cui deve essere inviato il gesto rapido. Si tratta in genere della finestra con lo stato attivo, ma vi sono eccezioni. Per scorrere i gesti rapidi, il flick viene inviato alla finestra su cui si è verificato il movimento. Si noti che questo non è necessariamente la finestra con lo stato attivo. Quando viene inviato un gesto rapido a una finestra che non ha lo stato attivo, lo stato attivo non cambia in tale finestra.
+Dopo che è stato rilevato un gesto rapido, inizia una sequenza di eventi che alla fine porta il sistema a eseguire una determinata azione in risposta al gesto rapido che si è verificato. In primo luogo, la routine di rilevamento all'interno del sottosistema di input penna determina a quale finestra deve essere inviato il gesto rapido. Questa è in genere la finestra con lo stato attivo, ma esistono eccezioni. Per i gesti rapidi di scorrimento, il gesto rapido viene inviato alla finestra su cui si è verificato il gesto. Si noti che questa non è necessariamente la finestra con lo stato attivo. Quando viene inviato un gesto rapido a una finestra che non ha lo stato attivo, lo stato attivo non cambia in tale finestra.
 
-## <a name="flick-actions"></a>Azioni di gesto rapido
+## <a name="flick-actions"></a>Azioni di sfarfallio
 
-Una volta determinata la finestra di destinazione, la finestra potrebbe gestire il flick a seconda del comportamento predefinito o programmato dell'evento. Le applicazioni possono rispondere all'azione più appropriata in base all'applicazione e alla direzione e alla posizione del gesto rapido. Ad esempio, in un'applicazione di mapping, i gesti rapidi verso l'alto e verso il basso possono eseguire lo zoom avanti o indietro anziché scorrere verticalmente, come previsto dal comportamento predefinito.
+Una volta determinata la finestra di destinazione, tale finestra può gestire il gesto rapido a seconda del comportamento predefinito o programmato dell'evento. Le applicazioni possono rispondere all'azione più appropriata in base all'applicazione e alla direzione e alla posizione del gesto rapido. In un'applicazione di mapping, ad esempio, i gesti rapidi verso l'alto e verso il basso potrebbero fare zoom avanti o indietro anziché scorrere verticalmente, come previsto dal comportamento predefinito.
 
-Per avvertire un'applicazione che si è verificato un gesto rapido, viene inviato un messaggio di finestra. Questo messaggio di finestra contiene sia il punto iniziale del gesto rapido che la direzione del movimento rapido. Se l'applicazione gestisce questo messaggio della finestra, non viene eseguita alcuna azione ulteriore da parte del sottosistema di input penna.
+Per avvisare un'applicazione che si è verificato un gesto rapido, viene inviato un messaggio di finestra. Questo messaggio della finestra contiene sia il punto iniziale del gesto rapido che la direzione del gesto. Se l'applicazione gestisce questo messaggio della finestra, il sottosistema di input penna non intraprese altre azioni.
 
-Dopo aver rilevato un gesto rapido, viene visualizzato un feedback visivo che rappresenta l'azione di scorrimento rapido sullo schermo. Questo feedback ha due scopi. Prima di tutto, conferma che l'utente ha avuto esito positivo. In secondo luogo, ricorda all'utente quale azione è stata eseguita, consentendo all'utente di connettere la direzione di scorrimento con l'azione associata.
+Dopo aver rilevato un gesto rapido, sullo schermo viene visualizzato un feedback visivo che rappresenta l'azione di sfarfallio. Questo feedback ha due scopi. In primo luogo, conferma all'utente che il gesto rapido ha avuto esito positivo. In secondo momento, ricorda all'utente quale azione è stata eseguita, consentendo all'utente di connettere la direzione del gesto rapido all'azione associata.
 
-Il feedback rapido è costituito da due parti: icona che rappresenta l'azione e un'etichetta contenente il nome dell'azione. L'etichetta viene visualizzata sotto l'icona. Il feedback viene visualizzato immediatamente dopo che è stato rilevato il gesto rapido. Sebbene le applicazioni possano personalizzare il proprio comportamento in risposta ai gesti rapidi gestendo il messaggio della finestra di scorrimento rapido, l'applicazione non può disabilitare o modificare il feedback rapido.
+Il feedback sui gesti rapidi è costituito da due parti: un'icona che rappresenta l'azione e un'etichetta contenente il nome dell'azione. L'etichetta viene visualizzata sotto l'icona. Il feedback viene visualizzato immediatamente dopo che è stato rilevato il gesto rapido. Anche se le applicazioni possono personalizzare il comportamento in risposta ai gesti rapidi gestendo il messaggio della finestra di gestibilità, l'applicazione non può disabilitare o modificare il feedback dei gesti rapidi.
 
-Si prevede che la maggior parte delle applicazioni non sarà in grado di riconoscere il tocco e pertanto non gestirà il messaggio della finestra descritto in precedenza. Se il messaggio non viene gestito, il sottosistema di input penna eseguirà ulteriori azioni. Prima di tutto, Cerca l'azione associata alla direzione del movimento rapido rilevato. Successivamente, verrà eseguita la procedura descritta nella tabella seguente per fare in modo che la finestra di destinazione esegua l'azione. Per molte delle azioni rapide, questo comporta l'invio di un comando dell'applicazione, ma non alcune azioni implementate.
+È previsto che la maggior parte delle applicazioni non sia in grado di riconoscere lo sfarfallio e quindi non gestirà il messaggio della finestra descritto in precedenza. Se il messaggio non viene gestito, il sottosistema di input penna deve eseguire altre azioni. In primo luogo, cerca l'azione associata alla direzione del gesto rapido rilevato. Successivamente, eseguirà i passaggi descritti nella tabella seguente per fare in modo che la finestra di destinazione esecriva questa azione. Per molte delle azioni di scorrimento rapido ciò comporta l'invio di un comando dell'applicazione, ma alcune azioni implementate non lo fanno.
 
 ## <a name="processing-application-commands"></a>Elaborazione dei comandi dell'applicazione
 
-L'applicazione deve rispondere a tutti i comandi dell'applicazione che potrebbero essere potenzialmente assegnati a un gesto rapido. Se un'applicazione non riesce a rispondere al [**\_ messaggio di \_ scorrimento rapido del Tablet WM**](wm-tablet-flick-message.md), Windows Vista viene seguito inviando la notifica [**\_ APPCOMMAND di WM**](/windows/desktop/inputdev/wm-appcommand) applicabile, seguito da una notifica di [**WM \_ KeyDown**](/windows/desktop/inputdev/wm-keydown) .
+L'applicazione deve rispondere a uno qualsiasi dei comandi dell'applicazione che potrebbero essere potenzialmente assegnati a un movimento di sfarfallio. Se un'applicazione non risponde al messaggio [**WM \_ TABLET \_ FLICK,**](wm-tablet-flick-message.md)Windows Vista segue inviando la notifica [**\_ APPCOMMAND WM**](/windows/desktop/inputdev/wm-appcommand) applicabile, seguita da una notifica WM [**\_ KEYDOWN.**](/windows/desktop/inputdev/wm-keydown)
 
-Di seguito è riportato un elenco di comandi dell'applicazione che possono essere assegnati ai gesti rapidi, con il messaggio di sequenza di tasti di backup che può essere inviato.
+Di seguito è riportato un elenco di comandi dell'applicazione che possono essere assegnati ai gesti rapidi, con il messaggio di sequenza di tasti di backup che potrebbe essere inviato.
 
 
 
 | Comando                                  | Sequenza di tasti di backup  |
 |------------------------------------------|-------------------|
-| \_browser APPCOMMAND \_ indietro<br/> | nessuno<br/>   |
-| APPCOMMAND \_ browser \_ in futuro<br/>  | nessuno<br/>   |
-| copia di APPCOMMAND \_<br/>              | CTRL+C<br/> |
-| \_Incolla APPCOMMAND<br/>             | CTRL+V<br/> |
-| \_Annulla APPCOMMAND<br/>              | CTRL+Z<br/> |
-| eliminazione di APPCOMMAND \_<br/>            | CANC<br/>    |
-| \_taglia APPCOMMAND<br/>               | CTRL+X<br/> |
-| APPCOMMAND \_ aperto<br/>              | CTRL+O<br/> |
-| \_stampa APPCOMMAND<br/>             | Ctrl+P<br/> |
-| \_Salva APPCOMMAND<br/>              | CTRL+S<br/> |
-| \_ripetizione APPCOMMAND<br/>              | CTRL+Y<br/> |
-| chiusura di APPCOMMAND \_<br/>             |                   |
+| APPCOMMAND \_ BROWSER \_ BACKWARD<br/> | Nessuno<br/>   |
+| APPCOMMAND \_ BROWSER \_ FORWARD<br/>  | Nessuno<br/>   |
+| COPIA \_ DI APPCOMMAND<br/>              | CTRL+C<br/> |
+| INCOLLA \_ DI APPCOMMAND<br/>             | CTRL+V<br/> |
+| APPCOMMAND \_ UNDO<br/>              | CTRL+Z<br/> |
+| APPCOMMAND \_ DELETE<br/>            | CANC<br/>    |
+| APPCOMMAND \_ CUT<br/>               | CTRL+X<br/> |
+| APPCOMMAND \_ OPEN<br/>              | CTRL+O<br/> |
+| APPCOMMAND \_ PRINT<br/>             | Ctrl+P<br/> |
+| APPCOMMAND \_ SAVE<br/>              | CTRL+S<br/> |
+| APPCOMMAND \_ REDO<br/>              | CTRL+Y<br/> |
+| CHIUSURA \_ DI APPCOMMAND<br/>             |                   |
 
 
 
  
 
-La modifica di comandi quali copy, paste, Cut ed delete può essere indirizzata a una selezione o all'oggetto posizionato alla base del movimento di scorrimento rapido. Se non è presente alcuna selezione, è possibile usare i dati nella [**\_ struttura del punto di scorrimento**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_point) per determinare l'eventuale oggetto che potrebbe essere stato la destinazione del comando di modifica.
+I comandi di modifica, ad esempio Copia, Incolla, Taglia e Elimina, possono essere indirizzati a una selezione o all'oggetto posizionato alla base del movimento di tocco. Se non è presente alcuna selezione, è possibile usare i dati nella struttura [**FLICK \_ POINT**](/windows/desktop/api/tabflicks/ns-tabflicks-flick_point) per determinare quale, se presente, oggetto potrebbe essere stato la destinazione del comando di modifica.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni di riferimento sulle API](flicks-api-reference.md)
+[Informazioni di riferimento sulle API di gesti rapidi](flicks-api-reference.md)
 </dt> <dt>
 
-[Risposta a movimenti rapidi](/previous-versions//dd356077(v=vs.85))
+[Risposta ai movimenti di sfarfallio](/previous-versions//dd356077(v=vs.85))
 </dt> </dl>
 
  

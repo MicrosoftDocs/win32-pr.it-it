@@ -1,7 +1,7 @@
 ---
-description: L' \_ enumerazione del tipo KEYSVC definisce se una chiave viene applicata a un computer o a un servizio.
+description: L'enumerazione \_ KEYSVC TYPE definisce se una chiave viene applicata a un computer o a un servizio.
 ms.assetid: 573a412a-1e9d-47ac-bd09-2319d4b9712b
-title: Enumerazione KEYSVC_TYPE (Rkeysvcc. h)
+title: KEYSVC_TYPE enumerazione (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 71d6724f7bae78a3c1ac4da83289c151b7ec1a73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c23cc259029cf76fcb1590e6261623827d59b48c9a0728e21c8250ca3e858f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976095"
 ---
-# <a name="keysvc_type-enumeration"></a>\_Enumerazione del tipo KEYSVC
+# <a name="keysvc_type-enumeration"></a>Enumerazione KEYSVC \_ TYPE
 
-L'enumerazione del **\_ tipo KEYSVC** definisce se una chiave viene applicata a un computer o a un servizio.
+**L'enumerazione \_ KEYSVC TYPE** definisce se una chiave viene applicata a un computer o a un servizio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,8 +61,8 @@ La chiave è per un servizio.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

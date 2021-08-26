@@ -3,29 +3,29 @@ title: Impostazione e recupero delle proprietà di un processo
 description: Il proprietario del processo o un utente con privilegi di amministratore può impostare e recuperare le proprietà del processo in qualsiasi momento.
 ms.assetid: 5d0ab96b-b818-4b41-8317-cf50ad17c12d
 keywords:
-- trasferimento di bit del processo, proprietà
+- transfer job BITS , properties
 - impostazione delle proprietà del processo BITS
-- recupero dei bit delle proprietà del processo
+- recupero delle proprietà del processo BITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 609299e3e7bdee477e2008f3f4ce83ae24583ffd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3ded532d3c99c8f8063a5c372c60086f35320d321860b056b60f2cb5a9a4003
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004831"
 ---
 # <a name="setting-and-retrieving-the-properties-of-a-job"></a>Impostazione e recupero delle proprietà di un processo
 
-Il proprietario del processo o un utente con privilegi di amministratore può impostare e recuperare le proprietà del processo in qualsiasi momento. Per un elenco completo delle proprietà che è possibile impostare e recuperare, vedere le interfacce [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob), [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2), [**IBackgroundCopyJob3**](/windows/desktop/api/Bits2_0/nn-bits2_0-ibackgroundcopyjob3)e [**IBackgroundCopyJob4**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopyjob4) .
+Il proprietario del processo o un utente con privilegi di amministratore può impostare e recuperare le proprietà del processo in qualsiasi momento. Per un elenco completo delle proprietà che è possibile impostare e recuperare, vedere le interfacce [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob), [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2), [**IBackgroundCopyJob3**](/windows/desktop/api/Bits2_0/nn-bits2_0-ibackgroundcopyjob3)e [**IBackgroundCopyJob4.**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibackgroundcopyjob4)
 
-I file contengono anche proprietà. Per informazioni su come recuperare un file e le relative proprietà da un processo, vedere [enumerazione di file in un processo](enumerating-files-in-a-job.md).
+I file contengono anche proprietà. Per informazioni su come recuperare un file e le relative proprietà da un processo, vedere [Enumerazione di file in un processo.](enumerating-files-in-a-job.md)
 
-Per trasferire i file, non è necessario modificare i valori predefiniti delle proprietà del processo, mentre BITS usa i valori predefiniti appropriati per l'applicazione tipica.
+Per trasferire i file, non è necessario modificare i valori predefiniti delle proprietà del processo. BITS usa i valori predefiniti appropriati per l'applicazione tipica.
 
 ## <a name="setting-the-properties-of-a-job"></a>Impostazione delle proprietà di un processo
 
-Nell'esempio seguente viene illustrato come impostare le proprietà che è più probabile che l'applicazione modifichi: [Priority](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setpriority), [Notify Interface](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface), [Notify Flags](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags)e il [nome del file di risposta](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setreplyfilename). Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) , pJob, sia valido.
+Nell'esempio seguente viene illustrato come impostare le proprietà che l'applicazione è più probabile [modificare:](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setreplyfilename) [priorità](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setpriority) [,](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface)interfaccia di notifica, [flag](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags)di notifica e nome del file di risposta . Nell'esempio si presuppone che il puntatore a interfaccia [**IBackgroundCopyJob,**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) pJob, sia valido.
 
 
 ```C++
@@ -76,13 +76,13 @@ pJob4->Release();
 
 
 
-Per impostazione predefinita, BITS scarica contenuto dal server di origine. Per scaricare il contenuto da un peer, sia il computer che il processo devono abilitare la memorizzazione nella cache peer. Per abilitare il peer caching nel computer, impostare l'impostazione di criteri di gruppo EnablePeerCaching. È anche possibile chiamare il metodo [**IBitsPeerCacheAdministration:: SetConfigurationFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-setconfigurationflags) per abilitare la memorizzazione nella cache peer sul computer; Tuttavia, l'impostazione preferenza viene sottoposta a override dal criterio, se impostato. Per abilitare la memorizzazione nella cache peer per il processo, è necessario chiamare il metodo [**IBackgroundCopyJob4:: SetPeerCachingFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopyjob4-setpeercachingflags) .
+Per impostazione predefinita, BITS scarica il contenuto dal server di origine. Per scaricare contenuto da un peer, sia il computer che il processo devono abilitare il peer caching. Per abilitare il peer caching nel computer, impostare l'impostazione di Criteri di gruppo EnablePeerCaching. È anche possibile chiamare il [**metodo IBitsPeerCacheAdministration::SetConfigurationFlags**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-setconfigurationflags) per abilitare il peer caching nel computer. Tuttavia, l'impostazione della preferenza viene sostituita dai criteri, se impostata. Per abilitare il peer caching per il processo, è necessario chiamare il metodo [**IBackgroundCopyJob4::SetPeerCachingFlags.**](/windows/desktop/api/Bits3_0/nf-bits3_0-ibackgroundcopyjob4-setpeercachingflags)
 
-Per specificare intestazioni personalizzate, un certificato client per l'autenticazione client e opzioni HTTP come i criteri di reindirizzamento, il controllo CRL e l'indicazione degli errori del certificato da ignorare, utilizzare l'interfaccia [**IBackgroundCopyJobHttpOptions**](/windows/desktop/api/Bits2_5/nn-bits2_5-ibackgroundcopyjobhttpoptions) . Per ottenere l'interfaccia **IBackgroundCopyJobHttpOptions** , eseguire una query su qualsiasi interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) .
+Per specificare intestazioni personalizzate, un certificato client per l'autenticazione client e opzioni HTTP come i criteri di reindirizzamento, il controllo CRL e la specifica degli errori del certificato da ignorare, usare [**l'interfaccia IBackgroundCopyJobHttpOptions.**](/windows/desktop/api/Bits2_5/nn-bits2_5-ibackgroundcopyjobhttpoptions) Per ottenere **l'interfaccia IBackgroundCopyJobHttpOptions,** eseguire una query su qualsiasi [**interfaccia IBackgroundCopyJob.**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob)
 
 ## <a name="retrieving-the-properties-of-a-job"></a>Recupero delle proprietà di un processo
 
-Nell'esempio seguente viene illustrato come recuperare i valori di [nome visualizzato](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getdisplayname), [](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress) [proprietario](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getowner), [stato e stato](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) di un processo. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) , pJob, sia valido.
+Nell'esempio seguente viene illustrato come recuperare il [nome](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getdisplayname)visualizzato, [il proprietario,](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getowner) [lo](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getprogress)stato di avanzamento e [i](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-getstate) valori delle proprietà di stato di un processo. Nell'esempio si presuppone che il puntatore a interfaccia [**IBackgroundCopyJob,**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) pJob, sia valido.
 
 
 ```C++
@@ -189,9 +189,9 @@ if (SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

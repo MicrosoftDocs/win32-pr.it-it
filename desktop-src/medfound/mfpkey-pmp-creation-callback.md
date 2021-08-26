@@ -1,56 +1,56 @@
 ---
 description: Imposta un callback che crea la sessione multimediale PMP durante la risoluzione dell'origine.
 ms.assetid: 7277C5E0-BB91-4EEA-9529-64E66D179CDC
-title: Proprietà MFPKEY_PMP_Creation_Callback (Mfidl. h)
+title: MFPKEY_PMP_Creation_Callback proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2b18e04a15e035a9e4dc04a4039ce230342031a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 655d61865eaecd89fa84664fc5c25f89762180ac9007e21cc7cbc98f7a68b056
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953861"
 ---
-# <a name="mfpkey_pmp_creation_callback-property"></a>Proprietà di callback per la \_ creazione di MFPKEY PMP \_ \_
+# <a name="mfpkey_pmp_creation_callback-property"></a>Proprietà di callback di \_ creazione PMP MFPKEY \_ \_
 
-Imposta un callback che crea la [sessione multimediale PMP](pmp-media-session.md) durante la risoluzione dell'origine.
+Imposta un callback che crea la sessione [multimediale PMP durante](pmp-media-session.md) la risoluzione dell'origine.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**IUnknown \** _
+**IUnknown\***
 
-VT \_ sconosciuto
+VT \_ UNKNOWN
 
-_ *punkVal**
+**valvalore**
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Alcuni contenuti protetti potrebbero richiedere l'uso di questa proprietà. In tal caso, il processo di risoluzione dell'origine ha esito negativo con il codice di errore **MF \_ E la \_ risoluzione \_ richiede il \_ \_ \_ callback di creazione PMP**.
+Alcuni contenuti protetti potrebbero richiedere l'uso di questa proprietà. In tal caso, il processo di risoluzione del codice sorgente ha esito negativo con codice di **errore MF \_ E RESOLUTION \_ REQUIRES \_ \_ PMP CREATION \_ \_ CALLBACK**.
 
-Per usare questa proprietà, eseguire le operazioni seguenti.
+Per utilizzare questa proprietà, eseguire le operazioni seguenti.
 
-1.  Chiamare [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) per creare un archivio delle proprietà.
-2.  Implementare l'interfaccia di callback [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
-3.  Impostare la \_ \_ \_ proprietà di callback per la creazione di MFPKEY PMP nell'archivio delle proprietà. Il valore è un puntatore all'implementazione di [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
-4.  Chiamare [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl). Passare un puntatore all'archivio delle proprietà nel parametro *pProps* .
+1.  Chiamare [**PSCreateMemoryPropertyStore per**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) creare un archivio delle proprietà.
+2.  Implementare l'interfaccia di callback [**IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
+3.  Impostare la proprietà MFPKEY \_ PMP \_ Creation Callback \_ nell'archivio delle proprietà. Il valore è un puntatore [**all'implementazione di IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
+4.  Chiamare [**IMFSourceResolver::BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl). Passare un puntatore all'archivio delle proprietà nel *parametro pProps.*
 
-Nel metodo [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) dell'interfaccia di callback eseguire le operazioni seguenti.
+Nel metodo [**IMFAsyncCallback::Invoke dell'interfaccia**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) di callback eseguire le operazioni seguenti.
 
-1.  Chiamare [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) per creare la [sessione multimediale PMP](pmp-media-session.md).
-2.  Chiamare [**IMFGetService:: GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) sulla sessione multimediale PMP in un puntatore all'interfaccia [**IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) .
-3.  Chiamare [**IMFAsyncResult:: GetState**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstate) sull'oggetto risultato passato nel parametro *pAsyncResult* di [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). Eseguire una query sul puntatore [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) restituito per l'interfaccia [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) .
+1.  Chiamare [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) per creare la [sessione multimediale PMP.](pmp-media-session.md)
+2.  Chiamare [**IMFGetService::GetService nella**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) sessione del supporto PMP a un puntatore [**all'interfaccia IMFPMPHost.**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost)
+3.  Chiamare [**IMFAsyncResult::GetState**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstate) sull'oggetto risultato passato nel *parametro pAsyncResult* [**di IMFAsyncCallback::Invoke.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) Eseguire una query sul [**puntatore IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) restituito per [**l'interfaccia IMFAsyncCallback.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback)
 4.  Chiamare [**MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) con i parametri seguenti:
-    -   *dwQueue*: **MFASYNC \_ coda di callback \_ \_ standard**
-    -   *pCallback*: puntatore [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) ottenuto nel passaggio 3.
-    -   *pState*: puntatore [**IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) ottenuto nel passaggio 2.
+    -   *dwQueue:* **MFASYNC \_ CALLBACK QUEUE \_ \_ STANDARD**
+    -   *pCallback:* [**puntatore IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) ottenuto nel passaggio 3.
+    -   *pState:* [**puntatore IMFPMPHost**](/windows/desktop/api/mfidl/nn-mfidl-imfpmphost) ottenuto nel passaggio 2.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,9 +58,9 @@ Nel metodo [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfo
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ Nel metodo [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfo
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Sessione multimediale PMP](pmp-media-session.md)
 </dt> <dt>
 
-[Percorso supporto protetto](protected-media-path.md)
+[Percorso del supporto protetto](protected-media-path.md)
 </dt> <dt>
 
 [Resolver di origine](source-resolver.md)

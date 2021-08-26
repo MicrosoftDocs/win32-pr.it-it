@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9fa79884324fdfa06629140e71104b06477a078a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c48ae33a1c12d5793b9c66b3fd9010f2d052ca4d8e25b14069b8cca36957c26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945641"
 ---
 # <a name="jet_rstinfodeepclone-method"></a>JET_RSTINFO. Metodo DeepClone
 
-Restituisce una copia completa dell'oggetto.
+Restituisce una copia completa dell'oggetto .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,19 +56,19 @@ public JET_RSTINFO DeepClone()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
-Copia completa dell'oggetto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_RSTINFO](./jet-rstinfo-class.md)  
+Copia completa dell'oggetto .  
 
 #### <a name="implements"></a>Implementazioni
 
-[IDeepCloneable \<T\> . DeepClone ()](./ideepcloneable-t-.deepclone-method.md)  
+[IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RSTINFO](./jet-rstinfo-class.md)
+[JET_RSTINFO classe](./jet-rstinfo-class.md)
 
-[Membri JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO membri](./jet-rstinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

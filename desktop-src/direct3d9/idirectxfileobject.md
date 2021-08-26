@@ -1,7 +1,7 @@
 ---
-description: Le applicazioni utilizzano i metodi dell'interfaccia IDirectXFileObject per recuperare informazioni sugli oggetti file Microsoft DirectX. Deprecato.
+description: Le applicazioni usano i metodi dell'interfaccia IDirectXFileObject per recuperare informazioni sugli oggetti file Microsoft DirectX. Deprecato.
 ms.assetid: 015d2c4e-4a25-40da-b88a-bad0c4e20e09
-title: Interfaccia IDirectXFileObject (DXFile. h)
+title: Interfaccia IDirectXFileObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,26 +14,26 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: e03f4a80c0cff25fa9416d35c20f2d60d17b206b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3aa0ffffb8766707841fa0a4a5ec54fe0db9caf1d86b885afc36bffa5f8352d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951301"
 ---
 # <a name="idirectxfileobject-interface"></a>Interfaccia IDirectXFileObject
 
-Le applicazioni utilizzano i metodi dell'interfaccia IDirectXFileObject per recuperare informazioni sugli oggetti file Microsoft DirectX. Deprecato.
+Le applicazioni usano i metodi dell'interfaccia IDirectXFileObject per recuperare informazioni sugli oggetti file Microsoft DirectX. Deprecato.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDirectXFileObject** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IDirectXFileObject** dispone anche di questi tipi di membri:
+**L'interfaccia IDirectXFileObject** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IDirectXFileObject** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDirectXFileObject** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IDirectXFileObject.**
 
 
 
@@ -65,8 +65,8 @@ typedef interface IDirectXFileObject *LPDIRECTXFILEOBJECT;
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ typedef interface IDirectXFileObject *LPDIRECTXFILEOBJECT;
 
 <dl> <dt>
 
-[Interfacce di file X](dx9-graphics-reference-x-file-interfaces.md)
+[X Interfacce di file](dx9-graphics-reference-x-file-interfaces.md)
 </dt> </dl>
 
  

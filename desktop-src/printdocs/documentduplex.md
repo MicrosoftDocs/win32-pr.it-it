@@ -4,18 +4,18 @@ ms.assetid: dadc52e8-1733-4267-85aa-33d0ddd3dfa2
 title: DocumentDuplex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c2ad8521835213594f10507ab6fd4b9cca24040
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ef2face0a337bb1f5b2f6f6bd1de8ef0281869a3fcaba0ac4080c0b81f79fedf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939071"
 ---
 # <a name="documentduplex"></a>DocumentDuplex
 
 Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Ogni documento viene duplexato separatamente. DocumentDuplex e JobDuplexAllDocumentsContiguously si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
+Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Ogni documento viene duplexato separatamente. DocumentDuplex e JobDuplexAllDocumentsContiguous si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)

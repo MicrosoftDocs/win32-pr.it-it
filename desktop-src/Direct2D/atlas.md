@@ -1,31 +1,31 @@
 ---
 title: Effetto Atlas
-description: È possibile usare questo effetto per restituire una parte di un'immagine ma mantenere l'area esterna alla parte da usare nelle operazioni successive.
+description: È possibile usare questo effetto per l'output di una parte di un'immagine, ma mantenere l'area al di fuori della parte per l'uso nelle operazioni successive.
 ms.assetid: D35E32CB-4DF7-408F-A717-1E421DDC8763
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f9e1d4c6df0698d47a35eb2cbdaf670b98ed125
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 71b0d55e7751ef73d8f6bdff65a6ae5d5933695600a1003b9c4a010231628019
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929052"
 ---
 # <a name="atlas-effect"></a>Effetto Atlas
 
-È possibile usare questo effetto per restituire una parte di un'immagine ma mantenere l'area esterna alla parte da usare nelle operazioni successive.
+È possibile usare questo effetto per l'output di una parte di un'immagine, ma mantenere l'area al di fuori della parte per l'uso nelle operazioni successive.
 
 Il CLSID per questo effetto è CLSID \_ D2D1Atlas.
 
-L'effetto Atlas è utile se si desidera caricare un'immagine di grandi dimensioni costituita da molte immagini più piccole, ad esempio vari frame di uno sprite.
+L'effetto Atlas è utile se si vuole caricare un'immagine di grandi dimensioni che è costituito da molte immagini più piccole, ad esempio vari fotogrammi di uno sprite.
 
-Per creare l'output, effettuare le operazioni seguenti:
+Per creare l'output, l'effetto è il seguente:
 
-1.  Ritaglia l'input nella proprietà *InputRect* specificata.
+1.  Ritaglia l'input per la *proprietà InputRect* specificata.
 2.  Converte l'origine del risultato in (0,0).
 
 > [!Note]  
-> La proprietà *InputPaddingRect* deve essere maggiore solo se e solo se i pixel tra i due rettangoli sono di colore nero trasparente nell'input. Questo può comportare l'esecuzione di Direct2D del grafo in modo più ottimale.
+> La *proprietà InputPaddingRect* deve essere maggiore solo se e solo se i pixel tra i due rettangoli sono di colore nero trasparente nell'input. Ciò può comportare l'esecuzione ottimale del grafo da parte di Direct2D.
 
  
 
@@ -33,7 +33,7 @@ Di seguito è riportato un esempio dell'effetto. Questa immagine è piccola e se
 
 ![immagine di input.](images/atlas.png)
 
-L'immagine precedente è l'input dell'effetto. Il codice qui crea un effetto Atlas, imposta l'input, imposta il rettangolo di input, quindi disegna l'output.
+L'immagine precedente è l'input per l'effetto. Il codice crea un effetto Atlas, imposta l'input, imposta il rettangolo di input e quindi disegna l'output.
 
 
 ```C++
@@ -62,23 +62,23 @@ m_d2dContext->DrawImage(atlasEffect.Get());
 
 
 
-Il codice precedente seleziona un rettangolo intorno al secondo triangolo. La spaziatura interna viene ignorata. Di seguito è illustrata l'immagine risultante.
+Il codice precedente seleziona un rettangolo intorno al secondo triangolo. La spaziatura interna intorno a esso viene ignorata. Ecco l'immagine risultante.
 
 ![immagine di output.](images/atlas2.png)
 
 > [!Note]  
-> Si tratta di una situazione in cui è possibile scegliere di specificare un *InputPaddingRect* perché il riempimento è nero trasparente. Il rettangolo sarà `D2D1::Vector4F(size + (padding * 2), 0, size + padding, size + padding);` .
+> Si tratta di una situazione in cui è possibile scegliere di specificare *un inputPaddingRect* perché il riempimento è nero trasparente. Il rettangolo sarebbe `D2D1::Vector4F(size + (padding * 2), 0, size + padding, size + padding);` .
 
  
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                             | Descrizione                                                                                                                                                                  |
+| Enumerazione del nome visualizzato e dell'indice                                             | Descrizione                                                                                                                                                                  |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| InputRect<br/> D2D1 \_ Atlas \_ prop \_ input \_ Rect<br/>                 | Parte dell'immagine passata all'effetto successivo.<br/> Il tipo è D2D1 \_ vector \_ 4F.<br/> Il valore predefinito è (-FLT \_ Max,-flt \_ Max, flt \_ Max, flt \_ max). <br/> |
-| InputPaddingRect<br/> \_Rettangolo di \_ \_ riempimento input \_ d2d1 Atlas Prop \_<br/> | Dimensioni massime campionate per il rettangolo di output.<br/> Il tipo è D2D1 \_ vector \_ 4F.<br/> Il valore predefinito è (-FLT \_ Max,-flt \_ Max, flt \_ Max, flt \_ max).<br/>   |
+| InputRect<br/> D2D1 \_ ATLAS \_ PROP \_ INPUT \_ RECT<br/>                 | Parte dell'immagine passata all'effetto successivo.<br/> Il tipo è D2D1 \_ VECTOR \_ 4F.<br/> Il valore predefinito è (-FLT \_ MAX, -FLT \_ MAX, FLT \_ MAX, FLT \_ MAX). <br/> |
+| InputPaddingRect<br/> D2D1 \_ ATLAS \_ PROP \_ INPUT \_ PADDING \_ RECT<br/> | Dimensione massima campionata per il rettangolo di output.<br/> Il tipo è D2D1 \_ VECTOR \_ 4F.<br/> Il valore predefinito è (-FLT \_ MAX, -FLT \_ MAX, FLT \_ MAX, FLT \_ MAX).<br/>   |
 
 
 
@@ -90,10 +90,10 @@ Il codice precedente seleziona un rettangolo intorno al secondo triangolo. La sp
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

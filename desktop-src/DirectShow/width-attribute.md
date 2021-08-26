@@ -1,36 +1,36 @@
 ---
-description: L'attributo Width specifica la larghezza del video di output in pixel.
+description: L'attributo width specifica la larghezza del video di output, in pixel.
 ms.assetid: 3fcc28d8-b7ef-474b-8594-b31422974998
-title: Attributo Width
+title: Attributo width
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b7480f80fdd1f862f1018a2e1909e68c68526bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8249888c2016993879d3c27460efa035531a1ed1e7f7fcee3bf3aa94a3b584cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982271"
 ---
-# <a name="width-attribute"></a>Attributo Width
+# <a name="width-attribute"></a>Attributo width
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `width` attributo specifica la larghezza del video di output in pixel.
+`width`L'attributo specifica la larghezza del video di output, in pixel.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Valore a virgola mobile. Il valore deve includere lo zero iniziali prima della posizione decimale. Ad esempio, 0,3, not. 3. Non usare più di sette cifre decimali.
+Valore a virgola mobile. Il valore deve includere lo zero iniziale prima della posizione decimale. Ad esempio, 0.3, non .3. Non usare più di sette cifre decimali.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**gruppo**](group-element.md)
+[**Gruppo**](group-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questo attributo solo se l'attributo **Type** è `video` .
+Impostare questo attributo solo se **l'attributo di** tipo è `video` .
 
 ## <a name="see-also"></a>Vedi anche
 

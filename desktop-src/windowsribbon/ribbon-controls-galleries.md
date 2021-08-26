@@ -1,119 +1,119 @@
 ---
 title: Uso delle raccolte
-description: Il Framework della barra multifunzione di Windows offre agli sviluppatori un modello affidabile e coerente per la gestione di contenuto dinamico in diversi controlli basati su raccolte.
+description: Il framework Windows ribbon offre agli sviluppatori un modello affidabile e coerente per la gestione del contenuto dinamico in un'ampia gamma di controlli basati su raccolta.
 ms.assetid: 447039f3-1428-4b6f-94cf-78cf81974041
 keywords:
-- Barra multifunzione di Windows, raccolte
+- Windows Barra multifunzione, raccolte
 - Barra multifunzione, raccolte
-- Barra multifunzione di Windows, controllo DropDownGallery
+- Windows Barra multifunzione, controllo DropDownGallery
 - Barra multifunzione, controllo DropDownGallery
-- Barra multifunzione di Windows, controllo SplitButtonGallery
+- Windows Barra multifunzione, controllo SplitButtonGallery
 - Barra multifunzione, controllo SplitButtonGallery
 - Controllo DropDownGallery
 - Controllo SplitButtonGallery
-- raccolte per la barra multifunzione di Windows
+- raccolte per la barra multifunzione Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 784c69b0cf23edad906fbb35ee9a2a45454eacea
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ce142c1159d7a7c4129f402716ed7e394ebb4829f043d7c58dd23221b1479720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933447"
 ---
 # <a name="working-with-galleries"></a>Uso delle raccolte
 
-Il Framework della barra multifunzione di Windows offre agli sviluppatori un modello affidabile e coerente per la gestione di contenuto dinamico in diversi controlli basati su raccolte. Grazie all'adattamento e alla riconfigurazione dell'interfaccia utente della barra multifunzione, questi controlli dinamici consentono al Framework di rispondere all'interazione dell'utente sia nell'applicazione host che nella barra multifunzione e offrono la flessibilità necessaria per gestire diversi ambienti di Runtime.
+Il framework Windows ribbon offre agli sviluppatori un modello affidabile e coerente per la gestione del contenuto dinamico in un'ampia gamma di controlli basati su raccolta. Adattando e riconfigurando l'interfaccia utente della barra multifunzione, questi controlli dinamici consentono al framework di rispondere all'interazione dell'utente sia nell'applicazione host che nella barra multifunzione stessa e offrono la flessibilità necessaria per gestire vari ambienti di run-time.
 
 -   [Introduzione](#introduction)
 -   [Raccolte](#working-with-galleries)
     -   [Raccolte di elementi](#item-galleries)
-    -   [Raccolte comandi](#command-galleries)
+    -   [Raccolte di comandi](#command-galleries)
     -   [Controlli della raccolta](#working-with-galleries)
 -   [Come implementare una raccolta](#how-to-implement-a-gallery)
     -   [Componenti di base](#the-basic-components)
     -   [Dichiarare i controlli nel markup](#declare-the-controls-in-markup)
-    -   [Creazione di un gestore di comandi](#create-a-command-handler)
-    -   [Associare il gestore di comandi](#bind-the-command-handler)
+    -   [Creare un gestore comandi](#create-a-command-handler)
+    -   [Associare il gestore comandi](#bind-the-command-handler)
     -   [Inizializzare una raccolta](#initialize-a-collection)
-    -   [Gestisci eventi raccolta](#handle-collection-events)
+    -   [Gestire gli eventi di raccolta](#handle-collection-events)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="introduction"></a>Introduzione
 
-Questa capacità del Framework della barra multifunzione di adattarsi dinamicamente alle condizioni di runtime, ai requisiti delle applicazioni e all'input dell'utente finale evidenzia le funzionalità avanzate dell'interfaccia utente del Framework e offre agli sviluppatori la flessibilità necessaria per soddisfare un'ampia gamma di esigenze dei clienti.
+Questa capacità del framework della barra multifunzione di adattarsi in modo dinamico alle condizioni di esecuzione, ai requisiti dell'applicazione e all'input dell'utente finale evidenzia le funzionalità avanzate dell'interfaccia utente del framework e offre agli sviluppatori la flessibilità necessaria per soddisfare un'ampia gamma di esigenze dei clienti.
 
-Questa guida descrive i controlli della raccolta dinamica supportati dal Framework, ne spiega le differenze, discute quando e dove possono essere usati meglio e illustra come possono essere incorporati in un'applicazione Ribbon.
+L'obiettivo di questa guida è descrivere i controlli della raccolta dinamica supportati dal framework, illustrarne le differenze, illustrare quando e dove possono essere usati al meglio e illustrare come possono essere incorporati in un'applicazione barra multifunzione.
 
 ## <a name="galleries"></a>Raccolte
 
-Le raccolte sono controlli casella di riepilogo funzionalmente e graficamente avanzati. La raccolta di elementi di una raccolta può essere organizzata in base a categorie, visualizzate in layout flessibili basati su righe e colonne, rappresentate con immagini e testo e a seconda del tipo di raccolta, supporta l'anteprima in tempo reale.
+Le raccolte sono controlli casella di riepilogo dal punto di vista funzionale e grafico. La raccolta di elementi di una raccolta può essere organizzata per categorie, visualizzate in layout flessibili basati su colonne e righe, rappresentate con immagini e testo e, a seconda del tipo di raccolta, supportano l'anteprima live.
 
-Le raccolte sono separate dal punto di vista funzionale da altri controlli della barra multifunzione dinamici per i motivi seguenti:
+Le raccolte sono funzionalmente distinte dagli altri controlli dinamici della barra multifunzione per i motivi seguenti:
 
--   Le raccolte implementano l'interfaccia [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) che definisce i vari metodi per la modifica delle raccolte di elementi della raccolta.
--   Le raccolte possono essere aggiornate in fase di esecuzione, in base alle attività che si verificano direttamente nella barra multifunzione, ad esempio quando un utente aggiunge un comando alla barra di accesso rapido (QAT).
--   Le raccolte possono essere aggiornate in fase di esecuzione, in base all'attività che si verifica indirettamente dall'ambiente di runtime, ad esempio quando un driver della stampante supporta solo layout di pagine verticale.
+-   Le raccolte implementano [**l'interfaccia IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) che definisce i vari metodi per la modifica delle raccolte di elementi della raccolta.
+-   Le raccolte possono essere aggiornate in fase di esecuzione, in base all'attività che si verifica direttamente nella barra multifunzione, ad esempio quando un utente aggiunge un comando alla barra di accesso rapido.
+-   Le raccolte possono essere aggiornate in fase di esecuzione, in base all'attività che si verifica indirettamente dall'ambiente di esecuzione, ad esempio quando un driver della stampante supporta solo layout di pagina verticale.
 -   Le raccolte possono essere aggiornate in fase di esecuzione, in base all'attività che si verifica indirettamente nell'applicazione host, ad esempio quando un utente seleziona un elemento in un documento.
 
-Il Framework della barra multifunzione espone due tipi di raccolte: raccolte di elementi e raccolte di comandi.
+Il framework della barra multifunzione espone due tipi di raccolte: raccolte di elementi e raccolte di comandi.
 
 ### <a name="item-galleries"></a>Raccolte di elementi
 
-Le raccolte di elementi contengono una raccolta basata su indici di elementi correlati in cui ogni elemento è rappresentato da un'immagine, da una stringa o da entrambi. Il controllo è associato a un singolo gestore di comando che si basa sul valore di indice identificato dalla proprietà [ \_ \_ SelectedItem pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-selecteditem.md) .
+Le raccolte di elementi contengono una raccolta basata su indice di elementi correlati in cui ogni elemento è rappresentato da un'immagine, una stringa o entrambi. Il controllo è associato a un singolo gestore command che si basa sul valore di indice identificato dalla proprietà [ \_ PKEY \_ SelectedItem](windowsribbon-reference-properties-uipkey-selecteditem.md) dell'interfaccia utente.
 
-Le raccolte di elementi supportano l'anteprima in tempo reale, ovvero la visualizzazione del risultato di un comando, in base al passaggio del mouse o allo stato attivo, senza eseguire il commit o richiamare effettivamente il comando.
+Le raccolte di elementi supportano l'anteprima dinamica, ovvero la visualizzazione di un risultato del comando, in base al passaggio del mouse o dello stato attivo, senza eseguire il commit o richiamare effettivamente il comando.
 
 > [!IMPORTANT]
-> Il Framework non supporta l'hosting di raccolte di elementi nel menu dell'applicazione.
+> Il framework non supporta l'hosting di raccolte di elementi nel menu dell'applicazione.
 
- 
+ 
 
-### <a name="command-galleries"></a>Raccolte comandi
+### <a name="command-galleries"></a>Raccolte di comandi
 
-Le raccolte di comandi contengono una raccolta di elementi distinti e non indicizzati. Ogni elemento è rappresentato da un singolo controllo associato a un gestore di comandi tramite un ID di comando. Analogamente ai controlli autonomi, ogni elemento in una raccolta di comandi indirizza gli eventi di input a un gestore di comandi associato: la raccolta di comandi non è in ascolto degli eventi.
+Le raccolte di comandi contengono una raccolta di elementi distinti non indicizzati. Ogni elemento è rappresentato da un singolo controllo associato a un gestore command tramite un ID comando. Analogamente ai controlli autonomi, ogni elemento in una raccolta di comandi indirizza gli eventi di input a un gestore command associato. La raccolta comandi stessa non è in ascolto degli eventi.
 
-Le raccolte comandi non supportano l'anteprima in tempo reale.
+Le raccolte di comandi non supportano l'anteprima live.
 
 ### <a name="gallery-controls"></a>Controlli della raccolta
 
-Sono disponibili quattro controlli della raccolta nel framework della barra multifunzione: [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md), [**inribbongallery**](windowsribbon-element-inribbongallery.md)e [**ComboBox**](windowsribbon-element-combobox.md). All eccetto **ComboBox** può essere implementato come raccolta di elementi o come raccolta di comandi.
+Nel framework della barra multifunzione sono disponibili quattro controlli della raccolta: [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)e [**ComboBox**](windowsribbon-element-combobox.md). Tutti, ad **eccezione di ComboBox,** possono essere implementati come raccolta di elementi o raccolta di comandi.
 
 ### <a name="dropdowngallery"></a>DropDownGallery
 
-Un [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) è un pulsante che visualizza un elenco a discesa che contiene una raccolta di elementi o comandi che si escludono a vicenda.
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) è un pulsante che visualizza un elenco a discesa contenente una raccolta di elementi o comandi che si escludono a vicenda.
 
-Lo screenshot seguente illustra il controllo raccolta a [discesa](windowsribbon-controls-dropdowngallery.md) della barra multifunzione in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo [Raccolta](windowsribbon-controls-dropdowngallery.md) a discesa della barra multifunzione in Microsoft Paint per Windows 7.
 
 ![Screenshot di un controllo raccolta a discesa in Microsoft Paint per Windows 7.](images/controls/dropdowngallery.png)
 
 ### <a name="splitbuttongallery"></a>SplitButtonGallery
 
-Un [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) è un controllo composito che espone un singolo elemento o comando predefinito dalla raccolta in un pulsante principale e visualizza altri elementi o comandi in un elenco a discesa che viene escluso a vicenda quando si fa clic su un pulsante secondario.
+[**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) è un controllo composito che espone un singolo elemento predefinito o command dalla raccolta in un pulsante primario e visualizza altri elementi o comandi in un elenco a discesa che si escludono a vicenda che viene visualizzato quando si fa clic su un pulsante secondario.
 
-Lo screenshot seguente illustra il controllo raccolta dei [pulsanti di suddivisione](windowsribbon-controls-splitbuttongallery.md) della barra multifunzione in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo [Raccolta](windowsribbon-controls-splitbuttongallery.md) pulsanti di divisione della barra multifunzione in Microsoft Paint per Windows 7.
 
-![Screenshot di un controllo raccolta di pulsanti di suddivisione in Microsoft Paint per Windows 7.](images/controls/splitbuttongallery.png)
+![Screenshot di un controllo della raccolta di pulsanti di divisione in Microsoft Paint per Windows 7.](images/controls/splitbuttongallery.png)
 
-### <a name="inribbongallery"></a>Inribbongallery
+### <a name="inribbongallery"></a>InRibbonGallery
 
-Un [**inribbongallery**](windowsribbon-element-inribbongallery.md) è una raccolta che visualizza una raccolta di elementi o comandi correlati nella barra multifunzione. Se la raccolta contiene troppi elementi, viene fornita una freccia di espansione per visualizzare il resto della raccolta in un riquadro espanso.
+[**InRibbonGallery**](windowsribbon-element-inribbongallery.md) è una raccolta che visualizza una raccolta di elementi o comandi correlati nella barra multifunzione. Se nella raccolta sono presenti troppi elementi, viene fornita una freccia di espansione per visualizzare il resto della raccolta in un riquadro espanso.
 
-Lo screenshot seguente illustra il controllo della raccolta della barra [multifunzione](windowsribbon-controls-inribbongallery.md) in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo Raccolta barra multifunzione [in](windowsribbon-controls-inribbongallery.md) Microsoft Paint per Windows 7.
 
-![Screenshot di un controllo della raccolta nella barra multifunzione nella barra multifunzione di Microsoft Paint.](images/controls/inribbongallery.png)
+![Screenshot di un controllo della raccolta nella barra multifunzione di Microsoft Paint.](images/controls/inribbongallery.png)
 
 ### <a name="combobox"></a>ComboBox
 
-[**ComboBox**](windowsribbon-element-combobox.md) è una casella di riepilogo a colonna singola che contiene una raccolta di elementi con un controllo statico o un controllo di modifica e una freccia a discesa. La parte della casella di riepilogo del controllo viene visualizzata quando l'utente fa clic sulla freccia a discesa.
+Un [**controllo ComboBox**](windowsribbon-element-combobox.md) è una casella di riepilogo a colonna singola che contiene una raccolta di elementi con un controllo statico o un controllo di modifica e una freccia a discesa. La parte della casella di riepilogo del controllo viene visualizzata quando l'utente fa clic sulla freccia a discesa.
 
-Lo screenshot seguente illustra un controllo [casella combinata](windowsribbon-controls-combobox.md) della barra multifunzione di Windows Live Movie Maker.
+La schermata seguente illustra un controllo Casella [combinata](windowsribbon-controls-combobox.md) della barra multifunzione Windows Live Movie Maker.
 
-![Screenshot di un controllo ComboBox sulla barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
+![Screenshot di un controllo casella combinata nella barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
 
-Poiché [**ComboBox**](windowsribbon-element-combobox.md) è esclusivamente una raccolta di elementi, non supporta gli elementi di comando. È anche l'unico controllo raccolta che non supporta uno spazio dei comandi. Uno spazio di comando è una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi.
+Poiché [**ComboBox è**](windowsribbon-element-combobox.md) esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo della raccolta che non supporta uno spazio dei comandi. Uno spazio dei comandi è una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi.
 
-Nell'esempio di codice seguente viene illustrato il markup necessario per dichiarare uno spazio dei comandi a tre pulsanti in un [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
+Nell'esempio di codice seguente viene illustrato il markup necessario per dichiarare uno spazio dei comandi a tre pulsanti in [**un controllo DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 
 ```C++
@@ -134,46 +134,46 @@ Nell'esempio di codice seguente viene illustrato il markup necessario per dichia
 
 
 
-Lo screenshot seguente illustra lo spazio dei comandi a tre pulsanti dell'esempio di codice precedente.
+La schermata seguente illustra lo spazio dei comandi a tre pulsanti dell'esempio di codice precedente.
 
-![Screenshot di uno spazio dei comandi a tre pulsanti in un dropdowngallery.](images/markup/gallerysample-commandspace.png)
+![Screenshot di uno spazio dei comandi a tre pulsanti in un elenco a discesa.](images/markup/gallerysample-commandspace.png)
 
 ## <a name="how-to-implement-a-gallery"></a>Come implementare una raccolta
 
-In questa sezione vengono illustrati i dettagli di implementazione delle raccolte della barra multifunzione e viene illustrato come incorporarli in un'applicazione Ribbon.
+Questa sezione illustra i dettagli di implementazione delle raccolte della barra multifunzione e illustra come incorporarle in un'applicazione barra multifunzione.
 
 ### <a name="the-basic-components"></a>Componenti di base
 
-In questa sezione viene descritto il set di proprietà e metodi che costituiscono la struttura di contenuto dinamico nel framework della barra multifunzione e il supporto per l'aggiunta, l'eliminazione, l'aggiornamento e la modifica del contenuto e il layout visivo delle raccolte della barra multifunzione in fase di esecuzione.
+Questa sezione descrive il set di proprietà e metodi che formano la colonna portante del contenuto dinamico nel framework della barra multifunzione e supportano l'aggiunta, l'eliminazione, l'aggiornamento e la modifica del contenuto e del layout visivo delle raccolte della barra multifunzione in fase di esecuzione.
 
 ### <a name="iuicollection"></a>IUICollection
 
-Le raccolte richiedono un set di base di metodi per accedere e modificare i singoli elementi nelle raccolte.
+Le raccolte richiedono un set di metodi di base per accedere e modificare i singoli elementi nelle raccolte.
 
-L'interfaccia [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) definisce questi metodi e il Framework integra le funzionalità con metodi aggiuntivi definiti nell'interfaccia [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) . **IUICollection** viene implementato dal Framework per ogni dichiarazione della raccolta nel markup della barra multifunzione.
+[L'interfaccia IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) definisce questi metodi e il framework integra le funzionalità con metodi aggiuntivi definiti nell'interfaccia [**IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) **IUICollection viene** implementato dal framework per ogni dichiarazione della raccolta nel markup della barra multifunzione.
 
-Se è necessaria una funzionalità aggiuntiva non fornita dall'interfaccia [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) , è possibile sostituire un oggetto raccolta personalizzato implementato dall'applicazione host e derivato da [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) per la raccolta di Framework.
+Se sono necessarie funzionalità aggiuntive non fornite dall'interfaccia [**IUICollection,**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) un oggetto raccolta personalizzato implementato dall'applicazione host e derivato da [IEnumUnknown](/windows/win32/api/objidlbase/nn-objidlbase-ienumunknown) può essere sostituito con la raccolta del framework.
 
 ### <a name="iuicollectionchangedevent"></a>IUICollectionChangedEvent
 
-Affinché un'applicazione risponda alle modifiche in una raccolta di raccolta, deve implementare l'interfaccia [**IUICollectionChangedEvent**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) . Le applicazioni possono sottoscrivere le notifiche da un oggetto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) tramite il listener di eventi [**IUICollectionChangedEvent:: OnChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicollectionchangedevent-onchanged) .
+Perché un'applicazione risponda alle modifiche in una raccolta di raccolta, deve implementare [**l'interfaccia IUICollectionChangedEvent.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) Le applicazioni possono sottoscrivere le notifiche [**da un oggetto IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) tramite il listener di [**eventi IUICollectionChangedEvent::OnChanged.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicollectionchangedevent-onchanged)
 
-Quando l'applicazione sostituisce la raccolta di raccolta fornita dal Framework con una raccolta personalizzata, l'applicazione deve implementare l'interfaccia [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) . Se [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) non è implementato, l'applicazione non è in grado di notificare al Framework le modifiche apportate alla raccolta personalizzata che richiedono aggiornamenti dinamici per il controllo raccolta.
+Quando l'applicazione sostituisce la raccolta fornita dal framework con una raccolta personalizzata, l'applicazione deve implementare [l'interfaccia IConnectionPointContainer.](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) Se [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) non è implementato, l'applicazione non è in grado di notificare al framework le modifiche nella raccolta personalizzata che richiedono aggiornamenti dinamici al controllo raccolta.
 
-Nei casi in cui [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) non è implementato, il controllo raccolta può essere aggiornato solo tramite invalidazione tramite [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) e [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)oppure chiamando [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty).
+Nei casi in cui [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) non è implementato, il controllo della raccolta può essere aggiornato solo tramite [**IUIFramework::InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) e [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)o chiamando [**IUIFramework::SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty).
 
 ### <a name="iuisimplepropertyset"></a>IUISimplePropertySet
 
-Le applicazioni devono implementare IUISimplePropertySet per ogni elemento o comando in una raccolta di raccolta. Tuttavia, le proprietà che possono essere richieste con [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue) variano.
+Le applicazioni devono implementare IUISimplePropertySet per ogni elemento o comando in una raccolta. Tuttavia, le proprietà che possono essere richieste con [**IUISimplePropertySet::GetValue variano.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue)
 
-Gli elementi vengono definiti e associati a una raccolta tramite la chiave della proprietà [ \_ \_ ItemsSource dell'interfaccia utente pkey](windowsribbon-reference-properties-uipkey-itemssource.md) ed espongono le proprietà con un oggetto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) .
+Gli elementi vengono definiti e associati a una raccolta tramite la chiave della proprietà [ \_ \_ ItemsSource PKEY dell'interfaccia](windowsribbon-reference-properties-uipkey-itemssource.md) utente ed espongono le proprietà con un [**oggetto IUICollection.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)
 
-Nella tabella seguente sono descritte le proprietà valide per gli elementi nelle raccolte di elementi ([**\_ \_ raccolta COMMANDTYPE dell'interfaccia utente**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)).
+Le proprietà valide per gli elementi nelle raccolte di elementi ([**UI \_ COMMANDTYPE \_ COLLECTION**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)) sono descritte nella tabella seguente.
 
 > [!Note]  
-> Alcune proprietà dell'elemento, ad esempio l' [ \_ \_ etichetta pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-label.md), possono essere definite nel markup. Per informazioni dettagliate, vedere la documentazione di riferimento per le [chiavi di proprietà](windowsribbon-reference-properties.md) .
+> Alcune proprietà dell'elemento, ad [esempio \_ L'etichetta PKEY \_ dell'interfaccia](windowsribbon-reference-properties-uipkey-label.md)utente, possono essere definite nel markup. Per altre informazioni, vedere la documentazione [di riferimento sulle chiavi](windowsribbon-reference-properties.md) di proprietà.
 
- 
+ 
 
 
 
@@ -183,64 +183,64 @@ Proprietà
 
 [**ComboBox**](windowsribbon-element-combobox.md)
 
-[Interfaccia utente \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md), [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)
+[Interfaccia utente \_ Etichetta \_ PKEY,](windowsribbon-reference-properties-uipkey-label.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)
 
 [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)
 
-[Interfaccia utente \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md), [UI \_ pkey \_ ItemImage](windowsribbon-reference-properties-uipkey-itemimage.md) , [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)
+[Interfaccia utente \_ Etichetta \_ PKEY,](windowsribbon-reference-properties-uipkey-label.md) [UI \_ PKEY \_ ItemImage,](windowsribbon-reference-properties-uipkey-itemimage.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)
 
-[**Inribbongallery**](windowsribbon-element-inribbongallery.md)
+[**InRibbonGallery**](windowsribbon-element-inribbongallery.md)
 
-[Interfaccia utente \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md), [UI \_ pkey \_ ItemImage](windowsribbon-reference-properties-uipkey-itemimage.md) , [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)
+[Interfaccia utente \_ Etichetta \_ PKEY,](windowsribbon-reference-properties-uipkey-label.md) [UI \_ PKEY \_ ItemImage,](windowsribbon-reference-properties-uipkey-itemimage.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)
 
 [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)
 
-[Interfaccia utente \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md), [UI \_ pkey \_ ItemImage](windowsribbon-reference-properties-uipkey-itemimage.md), [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)
+[Interfaccia utente \_ Etichetta \_ PKEY,](windowsribbon-reference-properties-uipkey-label.md) [UI \_ PKEY \_ ItemImage,](windowsribbon-reference-properties-uipkey-itemimage.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)
 
 [Interfaccia utente \_ PKEY \_ SelectedItem](windowsribbon-reference-properties-uipkey-selecteditem.md) è una proprietà della raccolta di elementi.
 
 
 
- 
+ 
 
-Nella tabella seguente sono descritte le proprietà degli elementi valide per le raccolte di comandi ([**UI \_ COMMANDTYPE \_ CommandCollection**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)).
+Le proprietà dell'elemento valide per le raccolte Command ([**UI \_ COMMANDTYPE \_ COMMANDCOLLECTION**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)) sono descritte nella tabella seguente.
 
 
 
 | Control                                                                | Proprietà                                                                                                                                                                                                                                            |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)       | [Interfaccia utente \_ PKEY \_ CommandID](windowsribbon-reference-properties-uipkey-commandid.md), [UI \_ pkey \_ CommandType](windowsribbon-reference-properties-uipkey-commandtype.md) , [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md) |
-| [**Inribbongallery**](windowsribbon-element-inribbongallery.md)       | [Interfaccia utente \_ PKEY \_ CommandID](windowsribbon-reference-properties-uipkey-commandid.md), [UI \_ pkey \_ CommandType](windowsribbon-reference-properties-uipkey-commandtype.md) , [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md) |
-| [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) | [Interfaccia utente \_ PKEY \_ CommandID](windowsribbon-reference-properties-uipkey-commandid.md), [UI \_ pkey \_ CommandType](windowsribbon-reference-properties-uipkey-commandtype.md), [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md)  |
+| [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)       | [Interfaccia utente \_ PKEY \_ CommandId,](windowsribbon-reference-properties-uipkey-commandid.md) [UI \_ PKEY \_ CommandType,](windowsribbon-reference-properties-uipkey-commandtype.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md) |
+| [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)       | [Interfaccia utente \_ PKEY \_ CommandId,](windowsribbon-reference-properties-uipkey-commandid.md) [UI \_ PKEY \_ CommandType,](windowsribbon-reference-properties-uipkey-commandtype.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md) |
+| [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) | [Interfaccia utente \_ PKEY \_ CommandId,](windowsribbon-reference-properties-uipkey-commandid.md) [UI \_ PKEY \_ CommandType,](windowsribbon-reference-properties-uipkey-commandtype.md) [UI \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md)  |
 
 
 
- 
+ 
 
-Le categorie vengono usate per organizzare gli elementi e i comandi nelle raccolte. Le categorie vengono definite e associate a una raccolta tramite la chiave della proprietà [ \_ \_ categorie pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-categories.md) ed espongono le proprietà con un oggetto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) specifico per la categoria.
+Le categorie vengono usate per organizzare gli elementi e i comandi nelle raccolte. Le categorie vengono definite e associate a una raccolta tramite la chiave della proprietà [Ui \_ PKEY \_ Categories](windowsribbon-reference-properties-uipkey-categories.md) ed espongono le proprietà con un oggetto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) specifico della categoria.
 
-Le categorie non hanno un CommandType e non supportano l'interazione dell'utente. Le categorie, ad esempio, non possono diventare SelectedItem in una raccolta di elementi e non sono associate a un comando in una raccolta di comandi. Analogamente ad altre proprietà degli elementi della raccolta, è possibile recuperare le proprietà di categoria, ad esempio [UI \_ pkey \_ Label](windowsribbon-reference-properties-uipkey-label.md) e [UI \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md) , chiamando [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue).
+Le categorie non hanno commandtype e non supportano l'interazione dell'utente. Ad esempio, le categorie non possono diventare SelectedItem in una raccolta di elementi e non sono associate a un comando in una raccolta di comandi. Analogamente ad altre proprietà dell'elemento della raccolta, le proprietà di categoria, ad esempio [l'etichetta \_ PKEY \_](windowsribbon-reference-properties-uipkey-label.md) dell'interfaccia utente e [l'ID categoria \_ PKEY \_](windowsribbon-reference-properties-uipkey-categoryid.md) dell'interfaccia utente, possono essere recuperate chiamando [**IUISimplePropertySet::GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue).
 
 > [!IMPORTANT]
-> [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue) deve restituire [**la \_ raccolta \_ di interfaccia utente INVALIDINDEX**](/windows/desktop/windowsribbon/windowsribbon-ui-collection-invalidindex) quando è richiesto l' [interfaccia utente \_ pkey \_ CategoryID](windowsribbon-reference-properties-uipkey-categoryid.md) per un elemento a cui non è associata una categoria.
+> [**IUISimplePropertySet::GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue) deve restituire [**UI \_ COLLECTION \_ INVALIDINDEX**](/windows/desktop/windowsribbon/windowsribbon-ui-collection-invalidindex) quando l'interfaccia utente [ \_ PKEY \_ CategoryId](windowsribbon-reference-properties-uipkey-categoryid.md) viene richiesta per un elemento a cui non è associata una categoria.
 
- 
+ 
 
 ### <a name="declare-the-controls-in-markup"></a>Dichiarare i controlli nel markup
 
-Le raccolte, come tutti i controlli della barra multifunzione, devono essere dichiarate nel markup. Una raccolta viene identificata nel markup come raccolta di elementi o raccolta di comandi e vengono dichiarati diversi dettagli di presentazione. A differenza di altri controlli, le raccolte richiedono che il controllo di base o il contenitore della raccolta vengano dichiarati nel markup. Le raccolte effettive vengono popolate in fase di esecuzione. Quando una raccolta viene dichiarata nel markup, l'attributo *Type* viene usato per specificare se la raccolta è una raccolta di elementi di una raccolta di comandi.
+Le raccolte, come tutti i controlli barra multifunzione, devono essere dichiarate nel markup. Una raccolta viene identificata nel markup come raccolta di elementi o raccolta di comandi e vengono dichiarati vari dettagli della presentazione. A differenza di altri controlli, le raccolte richiedono che solo il controllo di base, o contenitore di raccolta, sia dichiarato nel markup. Le raccolte effettive vengono popolate in fase di esecuzione. Quando una raccolta viene dichiarata nel markup, *l'attributo Type* viene usato per specificare se la raccolta è una raccolta di elementi di una raccolta di comandi.
 
-Sono disponibili diversi attributi di layout facoltativi per ognuno dei controlli descritti qui. Questi attributi forniscono preferenze per gli sviluppatori per il Framework da seguire che influiscono direttamente sulla modalità di popolamento e visualizzazione di un controllo in una barra multifunzione. Le preferenze applicabili al markup sono correlate ai modelli di visualizzazione e di layout e ai comportamenti descritti in [personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md).
+Per ognuno dei controlli illustrati di seguito sono disponibili diversi attributi di layout facoltativi. Questi attributi forniscono preferenze per gli sviluppatori da seguire per il framework che influiscono direttamente sul modo in cui un controllo viene popolato e visualizzato in una barra multifunzione. Le preferenze applicabili nel markup sono correlate ai modelli di visualizzazione e layout e ai comportamenti descritti in Personalizzazione di una barra multifunzione tramite definizioni [di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md).
 
-Se un particolare controllo non consente le preferenze di layout direttamente nel markup oppure le preferenze di layout non sono specificate, il Framework definisce le convenzioni di visualizzazione specifiche del controllo in base alla quantità di spazio disponibile sullo schermo.
+Se un determinato controllo non consente preferenze di layout direttamente nel markup o non vengono specificate, il framework definisce convenzioni di visualizzazione specifiche del controllo in base alla quantità di spazio disponibile sullo schermo.
 
 Gli esempi seguenti illustrano come incorporare un set di raccolte in una barra multifunzione.
 
 ### <a name="command-declarations"></a>Dichiarazioni di comando
 
-I comandi devono essere dichiarati con un attributo *CommandName* usato per associare un controllo o un set di controlli con il comando.
+I comandi devono essere dichiarati con un *attributo CommandName* usato per associare un controllo o un set di controlli al comando .
 
-Qui è anche possibile specificare un attributo *CommandID* usato per associare un comando a un gestore di comandi quando il markup viene compilato. Se non viene fornito alcun ID, ne viene generato uno dal Framework.
+Qui è possibile specificare anche un attributo *CommandId* usato per associare un oggetto Command a un gestore command quando il markup viene compilato. Se non viene specificato alcun ID, ne viene generato uno dal framework.
 
 
 ```XML
@@ -304,9 +304,9 @@ Qui è anche possibile specificare un attributo *CommandID* usato per associare 
 
 ### <a name="control-declarations"></a>Dichiarazioni di controllo
 
-Questa sezione contiene esempi che illustrano il markup di base del controllo necessario per i vari tipi di raccolta. Illustrano come dichiarare i controlli della raccolta e associarli a un comando tramite l'attributo *CommandName* .
+Questa sezione contiene esempi che illustrano il markup di controllo di base necessario per i vari tipi di raccolta. Illustrano come dichiarare i controlli della raccolta e associarli a un oggetto Command tramite *l'attributo CommandName.*
 
-Nell'esempio seguente viene illustrata una dichiarazione di controllo per [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) in cui viene usato l'attributo *Type* per specificare che si tratta di una raccolta di comandi.
+Nell'esempio seguente viene illustrata una dichiarazione di controllo [**per DropDownGallery**](windowsribbon-element-dropdowngallery.md) in cui viene usato l'attributo *Type* per specificare che si tratta di una raccolta di comandi.
 
 
 ```XML
@@ -337,7 +337,7 @@ Nell'esempio seguente viene illustrata una dichiarazione di controllo per [**Dro
 
 
 
-Nell'esempio seguente viene illustrata una dichiarazione di controllo per [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md).
+Nell'esempio seguente viene illustrata una dichiarazione di controllo [**per SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md).
 
 
 ```XML
@@ -364,12 +364,12 @@ Nell'esempio seguente viene illustrata una dichiarazione di controllo per [**Spl
 
 
 
-Nell'esempio seguente viene illustrata una dichiarazione di controllo per l'oggetto [**inribbongallery**](windowsribbon-element-inribbongallery.md).
+Nell'esempio seguente viene illustrata una dichiarazione di controllo [**per InRibbonGallery**](windowsribbon-element-inribbongallery.md).
 
 > [!Note]  
-> Poiché l' [**inribbongallery**](windowsribbon-element-inribbongallery.md) è progettato per visualizzare un subset della relativa raccolta di elementi nella barra multifunzione senza attivare un menu a discesa, fornisce un numero di attributi facoltativi che ne regolano la dimensione e il layout dell'elemento nell'inizializzazione della barra multifunzione. Questi attributi sono univoci per gli **inribbongallery** e non sono disponibili dagli altri controlli dinamici.
+> Poiché [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) è progettato per visualizzare un subset della raccolta di elementi nella barra multifunzione senza attivare un menu a discesa, fornisce una serie di attributi facoltativi che ne regolano le dimensioni e il layout degli elementi durante l'inizializzazione della barra multifunzione. Questi attributi sono univoci per **InRibbonGallery** e non sono disponibili dagli altri controlli dinamici.
 
- 
+ 
 
 
 ```XML
@@ -413,22 +413,22 @@ Nell'esempio seguente viene illustrata una dichiarazione di controllo per [**Com
 
 
 
-### <a name="create-a-command-handler"></a>Creazione di un gestore di comandi
+### <a name="create-a-command-handler"></a>Creare un gestore comandi
 
-Per ogni comando, il Framework della barra multifunzione richiede un gestore di comando corrispondente nell'applicazione host. I gestori di comandi sono implementati dall'applicazione host della barra multifunzione e derivano dall'interfaccia [**IUICommandHandler**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler) .
+Per ogni comando, il framework della barra multifunzione richiede un gestore command corrispondente nell'applicazione host. I gestori dei comandi vengono implementati dall'applicazione host della barra multifunzione e derivano [**dall'interfaccia IUICommandHandler.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler)
 
 > [!Note]  
-> È possibile associare più comandi a un singolo gestore di comandi.
+> Più comandi possono essere associati a un singolo gestore di comandi.
 
- 
+ 
 
-Un gestore di comando svolge due finalità:
+Un gestore comandi ha due scopi:
 
--   [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) risponde alle richieste di aggiornamento delle proprietà. I valori delle proprietà del comando, ad esempio [interfaccia utente \_ pkey \_ abilitata](windowsribbon-reference-properties-uipkey-enabled.md) o [ \_ \_ etichetta pkey interfaccia utente](windowsribbon-reference-properties-uipkey-label.md), vengono impostati tramite chiamate a [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) o [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand).
--   [**IUICommandHandler:: Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) risponde per eseguire gli eventi. Questo metodo supporta i tre stati di esecuzione seguenti specificati dal parametro [**\_ EXECUTIONVERB dell'interfaccia utente**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_executionverb) .
-    -   Lo stato Execute esegue o esegue il commit in tutti i comandi a cui è associato il gestore.
-    -   Lo stato di anteprima Visualizza in anteprima tutti i comandi a cui è associato il gestore. Questa operazione esegue essenzialmente i comandi senza commit nel risultato.
-    -   Lo stato CancelPreview Annulla tutti i comandi visualizzati in anteprima. Questa operazione è necessaria per supportare l'attraversamento tramite un menu o un elenco ed eseguire l'anteprima sequenziale e annullare i risultati secondo le esigenze.
+-   [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) risponde alle richieste di aggiornamento delle proprietà. I valori delle proprietà Command, ad esempio [UI \_ PKEY \_ Enabled](windowsribbon-reference-properties-uipkey-enabled.md) o [UI \_ PKEY \_ Label,](windowsribbon-reference-properties-uipkey-label.md)vengono impostati tramite chiamate a [**IUIFramework::SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) o [**IUIFramework::InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand).
+-   [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) risponde all'esecuzione di eventi. Questo metodo supporta i tre stati di esecuzione seguenti specificati dal parametro [**\_ EXECUTIONVERB**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_executionverb) dell'interfaccia utente.
+    -   Lo stato Execute esegue o esegue il commit di tutti i comandi a cui è associato il gestore.
+    -   Lo stato Anteprima visualizza in anteprima tutti i comandi a cui è associato il gestore. In questo modo vengono essenzialmente eseguiti i comandi senza eseguire il commit nel risultato.
+    -   Lo stato CancelPreview annulla tutti i comandi in anteprima. Questa operazione è necessaria per supportare l'attraversamento attraverso un menu o un elenco e visualizzare in anteprima in sequenza e annullare i risultati in base alle esigenze.
 
 Nell'esempio seguente viene illustrato un gestore di comandi della raccolta.
 
@@ -568,11 +568,11 @@ public:
 
 
 
-### <a name="bind-the-command-handler"></a>Associare il gestore di comandi
+### <a name="bind-the-command-handler"></a>Associare il gestore comandi
 
-Dopo aver definito un gestore di comandi, il comando deve essere associato al gestore.
+Dopo aver definito un gestore command, il comando deve essere associato al gestore.
 
-Nell'esempio seguente viene illustrato come associare un comando della raccolta a un gestore di comandi specifico. In questo caso, entrambi i controlli [**ComboBox**](windowsribbon-element-combobox.md) e Gallery sono associati ai rispettivi gestori di comandi.
+L'esempio seguente illustra come associare un oggetto Command della raccolta a un gestore command specifico. In questo caso, entrambi i [**controlli ComboBox**](windowsribbon-element-combobox.md) e gallery sono associati ai rispettivi gestori Command.
 
 
 ```C++
@@ -605,9 +605,9 @@ STDMETHOD(OnCreateUICommand)(UINT32 nCmdID,
 
 ### <a name="initialize-a-collection"></a>Inizializzare una raccolta
 
-Nell'esempio seguente viene illustrata un'implementazione personalizzata di [**IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) per le raccolte di elementi e comandi.
+L'esempio seguente illustra un'implementazione personalizzata [**di IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) per raccolte di elementi e comandi.
 
-La classe CItemProperties in questo esempio è derivata da [**IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset). Oltre al metodo [**IUISimplePropertySet:: GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue)necessario, la classe CItemProperties implementa un set di funzioni di supporto per l'inizializzazione e il rilevamento degli indici.
+La classe CItemProperties in questo esempio è derivata da [**IUISimplePropertySet**](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset). Oltre al metodo [**obbligatorio IUISimplePropertySet::GetValue**](/windows/desktop/api/uiribbon/nf-uiribbon-iuisimplepropertyset-getvalue), la classe CItemProperties implementa un set di funzioni helper per l'inizializzazione e il rilevamento degli indici.
 
 
 ```C++
@@ -701,9 +701,9 @@ private:
 
 
 
-### <a name="handle-collection-events"></a>Gestisci eventi raccolta
+### <a name="handle-collection-events"></a>Gestire gli eventi di raccolta
 
-Nell'esempio seguente viene illustrata un'implementazione di IUICollectionChangedEvent.
+L'esempio seguente illustra un'implementazione di IUICollectionChangedEvent.
 
 
 ```C++
@@ -838,16 +838,16 @@ HRESULT CQATHandler::OnCollectionChanged(
 
 <dl> <dt>
 
-[Proprietà della raccolta](windowsribbon-reference-properties-collection.md)
+[Proprietà raccolta](windowsribbon-reference-properties-collection.md)
 </dt> <dt>
 
-[Creazione di un'applicazione Ribbon](windowsribbon-stepbystep.md)
+[Creazione di un'applicazione barra multifunzione](windowsribbon-stepbystep.md)
 </dt> <dt>
 
-[Informazioni sui comandi e sui controlli](windowsribbon-commandscontrols.md)
+[Informazioni su comandi e controlli](windowsribbon-commandscontrols.md)
 </dt> <dt>
 
-[Linee guida sull'esperienza utente della barra multifunzione](https://msdn.microsoft.com/library/cc872782.aspx)
+[Linee guida per l'esperienza utente della barra multifunzione](https://msdn.microsoft.com/library/cc872782.aspx)
 </dt> <dt>
 
 [Processo di progettazione della barra multifunzione](https://msdn.microsoft.com/library/cc872781.aspx)
@@ -856,6 +856,6 @@ HRESULT CQATHandler::OnCollectionChanged(
 [Esempio di raccolta](windowsribbon-gallerysample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

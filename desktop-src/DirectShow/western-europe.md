@@ -4,20 +4,20 @@ ms.assetid: 3af46a07-027f-4b31-9958-4a16971c81f8
 title: Europa occidentale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 552d2fc92b8a3c8433e863e7a69f63859b7efab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8238078aa5b5c8fc0776fa0e604b09a1255823a6c348b2e9701087755afeadc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982361"
 ---
 # <a name="western-europe"></a>Europa occidentale
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
 Gli indici di frequenza nelle tabelle dell'Europa occidentale non sono adatti per l'uso come numeri di canale.
 
-### <a name="western-europe-broadcast-assignments"></a>Assegnazioni broadcast dell'Europa occidentale
+### <a name="western-europe-broadcast-assignments"></a>Assegnazioni di trasmissioni in Europa occidentale
 
 
 ```C++
@@ -101,7 +101,7 @@ Gli indici di frequenza nelle tabelle dell'Europa occidentale non sono adatti pe
 
 ### <a name="western-europe-cable-assignments"></a>Assegnazioni di cavi in Europa occidentale
 
-Sono disponibili dati per supportare una linea di cavi standardizzata per alcuni paesi/aree geografiche. Per i paesi/aree geografiche che non segnalano i dati della lineup del canale, viene utilizzata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Erano disponibili dati per supportare una linea di cavi standardizzata per alcuni paesi/aree geografiche. Per i paesi o le aree geografiche che non hanno report sui dati di lineup dei canali, viene usata la tabella [di frequenza](unicable-frequency-table.md) unicable.
 
 ``` syntax
          1L,            // Lowest channel
@@ -221,7 +221,7 @@ Sono disponibili dati per supportare una linea di cavi standardizzata per alcuni
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

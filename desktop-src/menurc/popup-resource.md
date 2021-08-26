@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41c7a1af3bd8ed9aae8908aa7ff926a3f4799ee5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f134b2d5801bc5003be6f45b42d13f1668c2e684b5f63fe0aed1f2c9c0400860
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104117061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952341"
 ---
 # <a name="popup-resource"></a>Risorsa POPUP
 
@@ -31,40 +31,40 @@ POPUP text, [optionlist] {item-definitions ...}
 
 <dl> <dt>
 
-<span id="text"></span><span id="TEXT"></span>*testo*
+<span id="text"></span><span id="TEXT"></span>*Testo*
 </dt> <dd>
 
-Stringa che contiene il nome del menu. Questa stringa deve essere racchiusa tra virgolette doppie (**"**).
+Stringa contenente il nome del menu. Questa stringa deve essere racchiusa tra virgolette doppie (**"**).
 
 </dd> <dt>
 
-<span id="optionlist"></span><span id="OPTIONLIST"></span>*opzione*
+<span id="optionlist"></span><span id="OPTIONLIST"></span>*elenco di opzioni*
 </dt> <dd>
 
-Questo parametro specifica le opzioni di menu ridefinite che specificano l'aspetto della voce di menu. Questo parametro facoltativo può essere uno o più degli elementi seguenti.
+Questo parametro specifica opzioni di menu ridefinite che specificano l'aspetto della voce di menu. Questo parametro facoltativo può essere uno o più degli elementi seguenti.
 
 
 
 | Opzione           | Descrizione                                                                                                                                                           |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **SELEZIONATA**      | Accanto alla voce di menu è presente un segno di spunta. Questa opzione non è valida per un menu di primo livello.                                                                                 |
-| **IN grigio**       | La voce di menu inizialmente è inattiva e viene visualizzata nel menu in grigio o in una sfumatura schiarita del colore del testo del menu. Questa opzione non può essere usata con l'opzione **inactive** . |
-| **Guida**         | Identifica un elemento della guida. La voce di menu è posizionata in corrispondenza della posizione più a destra nella barra dei menu.                                                                            |
-| **INATTIVO**     | La voce di menu viene visualizzata, ma non è possibile selezionarla. Questa opzione non può essere usata con l'opzione **grigio** .                                                              |
-| **MENUBARBREAK** | Analogamente a **MENUBREAK** , ad eccezione del fatto che per i menu popup, separa la nuova colonna dalla colonna precedente con una linea verticale.                                             |
-| **MENUBREAK**    | Inserisce la voce di menu in una nuova riga per gli elementi statici della barra dei menu. Per i menu, inserisce la voce di menu in una nuova colonna senza linea di separazione tra le colonne.           |
+| **Controllato**      | Accanto alla voce di menu è visualizzato un segno di spunta. Questa opzione non è valida per un menu di primo livello.                                                                                 |
+| **Grigio**       | La voce di menu è inizialmente inattiva e viene visualizzata nel menu in grigio o in una sfumatura chiara del colore del testo del menu. Questa opzione non può essere usata con **l'opzione INACTIVE.** |
+| **Guida**         | Identifica un elemento della Guida. La voce di menu si trova nella posizione più a destra della barra dei menu.                                                                            |
+| **Inattivo**     | La voce di menu viene visualizzata ma non può essere selezionata. Questa opzione non può essere usata con **l'opzione GRAYED.**                                                              |
+| **MENUBARBREAK** | Come **MENUBREAK,** ad eccezione del fatto che per i menu popup, separa la nuova colonna dalla colonna precedente con una linea verticale.                                             |
+| **MENUBREAK**    | Inserisce la voce di menu in una nuova riga per le voci della barra dei menu statiche. Per i menu, inserisce la voce di menu in una nuova colonna senza alcuna linea di divisione tra le colonne.           |
 
 
 
- 
+ 
 
 </dd> </dl>
 
-Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [attributi di risorse comuni](common-resource-attributes.md).
+Alcuni attributi sono supportati anche per la compatibilità con le versioni precedenti. Per altre informazioni, vedere [Attributi comuni delle risorse](common-resource-attributes.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo dell'istruzione **popup** :
+L'esempio seguente illustra l'uso **dell'istruzione POPUP:**
 
 ``` syntax
 chem MENU
@@ -100,15 +100,15 @@ chem MENU
 
 <dl> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menu**](menu-resource.md)
 </dt> <dt>
 
-[**MENUITEM**](menuitem-statement.md)
+[**Menuitem**](menuitem-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

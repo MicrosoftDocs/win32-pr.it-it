@@ -1,10 +1,10 @@
 ---
-title: TLSConnectToLsServer (funzione)
+title: Funzione TLSConnectToLsServer
 description: Apre un handle per il server licenze Desktop remoto specificato.
 ms.assetid: 9e90a8e8-9319-42ee-b541-a1d028b6ed4d
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto funzione TLSConnectToLsServer
+- Funzione TLSConnectToLsServer Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc7f36b519399f0a8c1627fad7c7768f36ece57f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbfc3c1e365a97b8199df34c2e55a8362f48b7f6a2a43e524e3c6e937de5cb0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986971"
 ---
-# <a name="tlsconnecttolsserver-function"></a>TLSConnectToLsServer (funzione)
+# <a name="tlsconnecttolsserver-function"></a>Funzione TLSConnectToLsServer
 
 Apre un handle per il server licenze Desktop remoto specificato.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mstlsapi.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mstlsapi.dll.
 
  
 
@@ -46,10 +46,10 @@ TLS_HANDLE WINAPI TLSConnectToLsServer(
 
 <dl> <dt>
 
-*pszLsServer* \[ in\]
+*pszLsServer* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione **null** che specifica il nome NetBIOS del server licenze Desktop remoto. Se il valore di questo parametro è **null**, il server specificato è il computer locale.
+Puntatore a **una stringa** con terminazione Null che specifica il nome NetBIOS del server Desktop remoto licenze. Se il valore di questo parametro è **NULL,** il server specificato è il computer locale.
 
 </dd> </dl>
 
@@ -57,11 +57,11 @@ Puntatore a una stringa con terminazione **null** che specifica il nome NetBIOS 
 
 Se la funzione ha esito positivo, il valore restituito è un handle per il server specificato.
 
-Se la funzione ha esito negativo, il valore restituito è **null**. Per ottenere informazioni estese sull'errore, chiamare la funzione [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Se la funzione ha esito negativo, il valore restituito è **NULL.** Per ottenere informazioni estese sull'errore, chiamare [**la funzione GetLastError.**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 
 ## <a name="remarks"></a>Commenti
 
-Al termine dell'utilizzo dell'handle restituito dalla funzione **TLSConnectToLsServer** , rilasciarlo chiamando la funzione [**TLSDisconnectFromServer**](tlsdisconnectfromserver.md) .
+Dopo aver terminato di usare l'handle restituito dalla funzione **TLSConnectToLsServer,** rilasciarlo chiamando la [**funzione TLSDisconnectFromServer.**](tlsdisconnectfromserver.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,7 +79,7 @@ Al termine dell'utilizzo dell'handle restituito dalla funzione **TLSConnectToLsS
 
 <dl> <dt>
 
-[**\_handle TLS**](tls-handle.md)
+[**TLS \_ HANDLE**](tls-handle.md)
 </dt> <dt>
 
 [**TLSDisconnectFromServer**](tlsdisconnectfromserver.md)

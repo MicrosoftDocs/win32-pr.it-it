@@ -1,42 +1,42 @@
 ---
-description: Utilizzare un manifesto XML per definire i contatori delle prestazioni forniti dal provider.
+description: Usare un manifesto XML per definire i contatori delle prestazioni forniti dal provider.
 ms.assetid: fa13d13a-f2e2-4732-8bf7-cb0a0f1d4ed7
 title: Schema dei contatori delle prestazioni
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 5c41e9d54e259d6e53453a55cc97f7734ce793fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e31aa6e42d185f95b142fac864dbaf725bbba456161c3484aba157c8afd6557
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103756584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962371"
 ---
 # <a name="performance-counters-schema"></a>Schema dei contatori delle prestazioni
 
-V2 i provider di dati sulle prestazioni sono supportati in Windows Vista o versioni successive. Usano un. File MAN (manifesto di strumentazione XML) per definire il provider, il CounterSet e i contatori.
+I provider di dati delle prestazioni V2 sono supportati Windows Vista o versioni successive. Usano un oggetto . File MAN (manifesto della strumentazione XML) per definire il provider, i contatori e i contatori.
 
 > [!NOTE]
-> I manifesti di strumentazione possono contenere informazioni sui provider di Event Tracing for Windows (ETW) e sui provider dei contatori delle prestazioni. Per informazioni dettagliate sui manifesti di strumentazione, vedere [schema EventManifest](/windows/desktop/WES/eventmanifestschema-schema) e [scrittura di un manifesto di strumentazione](/windows/desktop/WES/writing-an-instrumentation-manifest).
+> I manifesti di strumentazione possono contenere informazioni sia sui provider event tracing for Windows (ETW) che sui provider dei contatori delle prestazioni. Per informazioni dettagliate sui manifesti di strumentazione, vedere [Schema EventManifest](/windows/desktop/WES/eventmanifestschema-schema) e [Scrittura di un manifesto di strumentazione](/windows/desktop/WES/writing-an-instrumentation-manifest).
 
-Questa sezione descrive gli elementi e i tipi seguenti usati nella `counters` sezione di un manifesto di strumentazione:
+In questa sezione vengono descritti gli elementi e i tipi seguenti utilizzati nella sezione `counters` di un manifesto di strumentazione:
 
 - [Elementi dei contatori delle prestazioni](performance-counters-elements.md)
-- [Contatori delle prestazioni tipi semplici](performance-counters-simple-types.md)
-- [Contatori delle prestazioni tipi complessi](performance-counters-complex-types.md)
+- [Tipi semplici dei contatori delle prestazioni](performance-counters-simple-types.md)
+- [Tipi complessi dei contatori delle prestazioni](performance-counters-complex-types.md)
 
-Non usare le `localization` sezioni o `stringTable` del manifesto di strumentazione per le stringhe di dati sulle prestazioni. Specificare invece le stringhe come valori dell'attributo che si sta impostando.
+Non usare le sezioni `localization` o del manifesto della `stringTable` strumentazione per le stringhe di dati sulle prestazioni. Specificare invece le stringhe come valori dell'attributo che si sta impostando.
 
-Dopo aver creato il manifesto, usare lo strumento [CTRPP](ctrpp.md) per convalidare il manifesto e generare `.h` i file di codice () e di risorse ( `.rc` ) da usare per la compilazione del provider.
+Dopo aver creato il manifesto, usare lo strumento [CTRPP](ctrpp.md) per convalidare il manifesto e generare il codice ( ) e i file di risorsa ( ) da usare nella compilazione `.h` `.rc` del provider.
 
-Quando si installa l'applicazione, eseguire lo [ strumento diLodCtr.exe](/windows-server/administration/windows-commands/lodctr) con il `/M:` parametro per installare i contatori delle prestazioni. Lo strumento LodCtr.exe registrerà le informazioni necessarie nel registro di sistema in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\_V2Providers\{ProviderGuid}` , incluso il percorso completo del file binario contenente le risorse di tipo stringa per il provider (come specificato nell' `applicationIdentity` attributo del manifesto). Per eseguire LodCtr.exe, è necessario disporre dei privilegi di amministratore. Esempio di comando di installazione:
+Quando si installa l'applicazione, eseguire lo [ strumentoLodCtr.exe con](/windows-server/administration/windows-commands/lodctr) il parametro per installare i `/M:` contatori delle prestazioni. Lo LodCtr.exe registra le informazioni necessarie nel Registro di sistema in , incluso il percorso completo del file binario contenente le risorse stringa per il provider , come specificato nell'attributo `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Perflib\_V2Providers\{ProviderGuid}` `applicationIdentity` del manifesto. È necessario disporre dei privilegi di amministratore per eseguire LodCtr.exe. Esempio di comando di installazione:
 
-**LodCtr.exe** /m: "*manifesto*" \[ "*ApplicationIdentityDirectory*"\]
+**LodCtr.exe** manifesto /M:" \[ "*ApplicationIdentityDirectory*"\]
 
-Se è necessario aggiornare un contatore, assicurarsi di disinstallare il vecchio contatore usando lo [ strumentoUnlodCtr.exe](/windows-server/administration/windows-commands/unlodctr_1) con i `/G:` `/P:` parametri o. Dopo la disinstallazione del vecchio contatore, è possibile installare il contatore dei contatori aggiornato.
+Se è necessario aggiornare un counterset, assicurarsi di disinstallare il vecchio counterset usando lo strumentoUnlodCtr.exe [ con](/windows-server/administration/windows-commands/unlodctr_1) i `/G:` parametri o `/P:` . Dopo aver disinstallato il set di contatori precedente, è possibile installare l'insieme di contatori aggiornato.
 
-## <a name="schema"></a>SCHEMA
+## <a name="schema"></a>Schema
 
-Di seguito è riportato lo schema dei contatori delle prestazioni che è possibile usare per convalidare la `counters` sezione del manifesto. Questo schema si trova nel Windows SDK come `counterman.xsd` . Per informazioni dettagliate sullo schema usato per convalidare la sezione Strumentazione del manifesto, vedere [schema EventManifest](/windows/desktop/WES/eventmanifestschema-schema).
+Di seguito è riportato lo schema dei contatori delle prestazioni che è possibile usare per convalidare `counters` la sezione del manifesto. Questo schema è disponibile in Windows SDK come `counterman.xsd` . Per informazioni dettagliate sullo schema utilizzato per convalidare la sezione di strumentazione del manifesto, vedere [Schema EventManifest](/windows/desktop/WES/eventmanifestschema-schema).
 
 ``` syntax
 <xs:schema
@@ -376,7 +376,7 @@ Di seguito è riportato lo schema dei contatori delle prestazioni che è possibi
 </xs:schema>
 ```
 
-## <a name="example-user-mode-manifest"></a>Manifesto User-Mode di esempio
+## <a name="example-user-mode-manifest"></a>Esempio User-Mode manifesto
 
 Di seguito viene illustrato un manifesto di esempio che definisce i contatori delle prestazioni per un provider in modalità utente.
 
@@ -538,7 +538,7 @@ Di seguito viene illustrato un manifesto di esempio che definisce i contatori de
 </instrumentationManifest>
 ```
 
-## <a name="example-kernel-mode-manifest"></a>Manifesto Kernel-Mode di esempio
+## <a name="example-kernel-mode-manifest"></a>Esempio Kernel-Mode manifesto
 
 Di seguito viene illustrato un manifesto di esempio che definisce i contatori delle prestazioni per un provider in modalità kernel.
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione OperatingSystemQFE Win32 mette in correlazione un sistema operativo e gli aggiornamenti del prodotto applicati come rappresentati in Win32 \_ QuickFixEngineering.
+description: La classe WMI di associazione Win32 OperatingSystemQFE mette in relazione un sistema operativo e gli aggiornamenti del prodotto applicati come \_ rappresentato in Win32 \_ QuickFixEngineering.
 ms.assetid: 71985759-7e45-44df-82a9-f9a93e3b923e
 ms.tgt_platform: multiple
-title: Classe Win32_OperatingSystemQFE
+title: Win32_OperatingSystemQFE classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a3b357e3c6efb62217c137bc6c785185154ed984
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 60fa11faaf7b6d85ce7d3494e1081afc4742b65e27f11fc2cebcd94949373745
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972351"
 ---
-# <a name="win32_operatingsystemqfe-class"></a>Win32 \_ OperatingSystemQFE (classe)
+# <a name="win32_operatingsystemqfe-class"></a>Classe \_ OperatingSystemQFE Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ OperatingSystemQFE Win32** mette in correlazione un sistema operativo e gli aggiornamenti del prodotto applicati come rappresentati in [**Win32 \_ QuickFixEngineering**](win32-quickfixengineering.md).
+La classe [WMI](../wmisdk/retrieving-a-class.md) di associazione **\_ Win32 OperatingSystemQFE** mette in relazione un sistema operativo e gli aggiornamenti del prodotto applicati come rappresentato in [**Win32 \_ QuickFixEngineering**](win32-quickfixengineering.md).
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ class Win32_OperatingSystemQFE : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ OperatingSystemQFE** presenta questi tipi di membri:
+La **classe \_ OperatingSystemQFE Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ OperatingSystemQFE** dispone di queste proprietà.
+La **classe Win32 \_ OperatingSystemQFE** ha queste proprietà.
 
 <dl> <dt>
 
@@ -61,10 +61,10 @@ Tipo di dati: **Win32 \_ OperatingSystem**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("antecedente"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| WMI \_ Win32 OperatingSystem")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("Antecedent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ OperatingSystem")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta il sistema interessato dall'aggiornamento del prodotto nell'associazione.
+Riferimento all'istanza che rappresenta il sistema interessato dall'aggiornamento del prodotto in questa associazione.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo di dati: **Win32 \_ QuickFixEngineering**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**debole**](../wmisdk/standard-qualifiers.md), [**override**](../wmisdk/standard-qualifiers.md) ("dipendente"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ QuickFixEngineering")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**Weak,**](../wmisdk/standard-qualifiers.md) [**Override**](../wmisdk/standard-qualifiers.md) ("Dependent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ QuickFixEngineering")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta l'istanza dell'oggetto applicata al sistema operativo in questa associazione.
+Riferimento all'istanza che rappresenta l'istanza dell'oggetto applicata al sistema operativo in questa associazione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ OperatingSystemQFE** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe \_ OperatingSystemQFE Win32** deriva dalla [**dipendenza CIM \_**](cim-dependency.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ OperatingSystemQFE** è derivata dalla [**\_ dipendenza CIM
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ OperatingSystemQFE** è derivata dalla [**\_ dipendenza CIM
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

@@ -3,7 +3,7 @@ title: Attributo WM/OriginalArtist
 description: L'attributo WM/OriginalArtist è il nome dell'artista che ha originariamente prodotto il contenuto.
 ms.assetid: b00e8a1f-0f6a-4ef4-b1bc-01a4d0a28c19
 keywords:
-- Media Player Windows per gli attributi WM/OriginalArtist
+- Attributi WM/OriginalArtist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,28 +12,28 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e7b78bb8b36db22dca1a616c1bdeffc3186b1f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 898c30412edff861ba327e1907b3b38329e762bb814495f3282816d7dc459ad1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900391"
 ---
 # <a name="wmoriginalartist-attribute"></a>Attributo WM/OriginalArtist
 
-L'attributo **WM/OriginalArtist** è il nome dell'artista che ha originariamente prodotto il contenuto.
+**L'attributo WM/OriginalArtist** è il nome dell'artista che ha originariamente prodotto il contenuto.
 
 ## <a name="applies-to"></a>Si applica a
 
--   [File musicali](music-file-attributes.md)
+-   [Musica File](music-file-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo in un file musicale non presente nella libreria.
+Questo attributo viene archiviato solo in un file musicale che non si trova nella libreria.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMOriginalArtist.
+La Windows Media Format SDK per questo attributo è g \_ wszWMOriginalArtist.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

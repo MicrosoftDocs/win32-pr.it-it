@@ -1,21 +1,21 @@
 ---
-title: WS_HEAP (WebServices. h)
+title: WS_HEAP (WebServices.h)
 description: Tipo opaco utilizzato per fare riferimento a un oggetto heap.
 ms.assetid: 1866f54f-26fc-4889-a88f-0d298a418bdc
 keywords:
 - WS_HEAP
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05d996d3a3905a7f247cfc84840e5aae4baa781f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79ca6f8eb745fa53b035cdb79d068099e96d2e037c87c139f4b19c30f933ecac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926801"
 ---
-# <a name="ws_heap"></a>\_heap WS
+# <a name="ws_heap"></a>WS \_ HEAP
 
-Tipo opaco utilizzato per fare riferimento a un oggetto [heap](heap.md) .
+Tipo opaco utilizzato per fare riferimento a un [oggetto heap.](heap.md)
 
 
 ```C++
@@ -26,7 +26,7 @@ typedef struct _WS_HEAP WS_HEAP;
 
 ## <a name="remarks"></a>Commenti
 
-Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread safety](thread-safety.md).
+Questo oggetto non è thread-safe. Per altre informazioni, vedere [thread safety](thread-safety.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,9 +34,9 @@ Questo oggetto non è thread-safe. Per ulteriori informazioni, vedere [thread sa
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

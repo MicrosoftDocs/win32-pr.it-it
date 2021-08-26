@@ -1,7 +1,7 @@
 ---
 description: Restituisce il quaternione di identità.
 ms.assetid: 8088897b-5755-4ea0-afef-bd49d1921f5c
-title: Funzione D3DXQuaternionIdentity (D3dx9math. h)
+title: Funzione D3DXQuaternionIdentity (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e2db9dd0638f5ba67b2dc2e8b8c248889225aaca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ca40cf6e600d63d7f50403821b39d41ff88104c68587416370202d0bfc66ef5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986431"
 ---
-# <a name="d3dxquaternionidentity-function"></a>D3DXQuaternionIdentity (funzione)
+# <a name="d3dxquaternionidentity-function"></a>Funzione D3DXQuaternionIdentity
 
 Restituisce il quaternione di identità.
 
@@ -40,12 +40,12 @@ D3DXQUATERNION* D3DXQuaternionIdentity(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che è il risultato dell'operazione.
 
 </dd> </dl>
 
@@ -53,13 +53,13 @@ Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Puntatore alla struttura [**D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il quaternione di identità.
+Puntatore alla [**struttura D3DXQUATERNION**](d3dxquaternion.md) che rappresenta il quaternione di identità.
 
 ## <a name="remarks"></a>Commenti
 
 Dato un quaternione (x, y, z, w), la funzione **D3DXQuaternionIdentity** restituirà il quaternione (0, 0, 0, 1).
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXQuaternionIdentity** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXQuaternionIdentity** può essere usata come parametro per un'altra funzione.
 
 Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi input quaternione non ancora normalizzato.
 
@@ -69,8 +69,8 @@ Usare [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) per qualsiasi in
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

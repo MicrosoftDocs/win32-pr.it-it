@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement CreateLicenseEnumeration (wmdrmsdk. h)
-description: Il metodo CreateLicenseEnumeration crea un oggetto enumeratore di licenze con il quale è possibile ottenere informazioni sulle licenze nell'archivio licenze locale.
+title: Metodo IWMDRMLicenseManagement CreateLicenseEnumeration (Wmdrmsdk.h)
+description: Il metodo CreateLicenseEnumeration crea un oggetto enumeratore licenze con cui è possibile ottenere informazioni sulle licenze nell'archivio licenze locale.
 ms.assetid: 48da1ef4-89bc-4cba-b5c9-0e202eb2986f
 keywords:
-- Metodo CreateLicenseEnumeration Windows Media Format
-- Metodo CreateLicenseEnumeration Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo CreateLicenseEnumeration
+- Metodo CreateLicenseEnumeration windows Media Format
+- Metodo CreateLicenseEnumeration windows Media Format , interfaccia IWMDRMLicenseManagement
+- Metodo CreateLicenseEnumeration dell'interfaccia IWMDRMLicenseManagement windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb75d21cc640da39c3679ac118ead629b24f719
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e442870961735d09c786a21ed1ea8be765e8f0c59b3f760278be9316daa0bb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881081"
 ---
-# <a name="iwmdrmlicensemanagementcreatelicenseenumeration-method"></a>Metodo IWMDRMLicenseManagement:: CreateLicenseEnumeration
+# <a name="iwmdrmlicensemanagementcreatelicenseenumeration-method"></a>Metodo IWMDRMLicenseManagement::CreateLicenseEnumeration
 
-Il metodo **CreateLicenseEnumeration** crea un oggetto enumeratore di licenze con il quale è possibile ottenere informazioni sulle licenze nell'archivio licenze locale.
+Il **metodo CreateLicenseEnumeration** crea un oggetto enumeratore licenze con cui è possibile ottenere informazioni sulle licenze nell'archivio licenze locale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,30 +44,30 @@ HRESULT CreateLicenseEnumeration(
 
 <dl> <dt>
 
-*pLicenseFilter* \[ in\]
+*pLicenseFilter* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ \_ filtro delle licenze WMDRM**](wmdrm-license-filter.md) contenente i parametri di filtro per l'elenco di licenze nell'enumeratore.
+Puntatore a una [**struttura WMDRM \_ LICENSE \_ FILTER**](wmdrm-license-filter.md) contenente i parametri di filtro per l'elenco di licenze nell'enumeratore.
 
 </dd> <dt>
 
-*pEnumerator* \[ out\]
+*pEnumerator* \[ Cambio\]
 </dt> <dd>
 
-Puntatore che riceve l'indirizzo dell'interfaccia [**IWMDRMLicense**](iwmdrmlicense.md) dell'oggetto enumeratore licenze appena creato.
+Puntatore che riceve l'indirizzo [**dell'interfaccia IWMDRMLicense**](iwmdrmlicense.md) dell'oggetto enumeratore di licenza appena creato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                | Descrizione                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM di DRM \_ \_ troppo \_ piccoli**</dt> </dl> | È necessario un elenco di revoche di contenuti aggiornato.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
+| <dl> <dt>**NS \_ E \_ DRM RIV TROPPO \_ \_ \_ PICCOLO**</dt> </dl> | È necessario un elenco di revoche di contenuto aggiornato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                       | Il metodo è riuscito.<br/>                         |
 
 
 
@@ -75,7 +75,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

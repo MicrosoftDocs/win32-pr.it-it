@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0d3b5b1fa209be7fd472a87aec25a5e590d93c5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cb62c9d90d5ac6346e25eaa3c254e0c6dd595805ec6901376ce9dccdf648289
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996291"
 ---
 # <a name="pragma-deleteclass"></a>pragma deleteclass
 
-Il comando per il preprocessore **pragma deleteclass** Elimina una classe esistente e le relative istanze dal repository.
+Il comando del preprocessore **pragma deleteclass** elimina una classe esistente e le relative istanze dal repository.
 
 Di seguito viene descritta la sintassi:
 
@@ -33,16 +33,16 @@ Di seguito viene descritta la sintassi:
 
 
 
-*NomeClasse* è il nome della classe che il compilatore MOF Elimina dallo spazio dei nomi corrente.
+*ClassName* è il nome della classe che il compilatore MOF elimina dallo spazio dei nomi corrente.
 
-Il *\[ flag \]* deve essere uno degli argomenti seguenti.
+*\[ Il \]* flag deve essere uno degli argomenti seguenti.
 
 
 
 | Flag   | Descrizione                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|
 | fail   | Causa la chiusura del compilatore MOF con un messaggio di errore se la classe non esiste già nel repository. |
-| nofail | Determina la continuazione del compilatore MOF anche se la classe non esiste già.                                |
+| nofail | Fa sì che il compilatore MOF continui anche se la classe non esiste già.                                |
 
 
 
@@ -50,7 +50,7 @@ Il *\[ flag \]* deve essere uno degli argomenti seguenti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare questo comando.
+L'esempio seguente illustra come usare questo comando.
 
 
 ```mof

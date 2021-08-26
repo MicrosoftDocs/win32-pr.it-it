@@ -4,18 +4,18 @@ ms.assetid: b9a3c919-87a2-4913-bf21-b08bb7d4e98c
 title: TemplateFolder - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ecf30f5f0103c0a289b01431dcbdf52c9644355a336527293289ea941ccf3cc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80cc85c00e34d18e94683152452625fe52562e1e
+ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119626431"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122400984"
 ---
 # <a name="templatefolder-property"></a>TemplateFolder - proprietà
 
 Il programma di installazione **imposta la proprietà TemplateFolder** sul percorso completo della cartella Template per l'utente corrente.
 
-Solo Windows 2000, se la proprietà [**ALLUSERS**](allusers.md) è impostata, questa proprietà punta a una directory file system che contiene i modelli disponibili per tutti gli utenti.
+Se la [**proprietà ALLUSERS**](allusers.md) è impostata, questa proprietà punta a una directory file system che contiene i modelli disponibili per tutti gli utenti.
 
 ## <a name="requirements"></a>Requisiti
 

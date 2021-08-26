@@ -1,17 +1,17 @@
 ---
 description: Numero di canali audio in un tipo di supporto audio.
 ms.assetid: 524283fb-d046-4f8c-a30f-4fe7ddb43174
-title: Attributo MF_MT_AUDIO_NUM_CHANNELS (Mfapi. h)
+title: MF_MT_AUDIO_NUM_CHANNELS attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09020ef540b6a3b02eecc6a6d788c18d07358ce4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ede561fbfe178d4086d1d7f7232d831d5133d6b368c1205fa2e8c1280fbeba29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955911"
 ---
-# <a name="mf_mt_audio_num_channels-attribute"></a>\_Attributo MF mt \_ audio \_ num \_ Channels
+# <a name="mf_mt_audio_num_channels-attribute"></a>Attributo MF \_ MT \_ AUDIO NUM \_ \_ CHANNELS
 
 Numero di canali audio in un tipo di supporto audio.
 
@@ -21,9 +21,9 @@ Numero di canali audio in un tipo di supporto audio.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo corrisponde al membro **nChannels** della struttura [WAVEFORMATEX](mf-mt-audio-prefer-waveformatex-attribute.md) .
+Questo attributo corrisponde al **membro nChannels** della [struttura WAVEFORMATEX.](mf-mt-audio-prefer-waveformatex-attribute.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

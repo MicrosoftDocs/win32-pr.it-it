@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica DL_BEGINDRAG (COMmctrl. h)
-description: Notifica alla finestra padre della casella di riepilogo di trascinamento che l'utente ha fatto clic con il pulsante sinistro del mouse su un elemento. Una casella di riepilogo di trascinamento Invia questo codice di notifica sotto forma di messaggio elenco di trascinamento. Per ulteriori informazioni, vedere trascinare i messaggi della casella di riepilogo.
+title: DL_BEGINDRAG di notifica (Commctrl.h)
+description: Notifica alla finestra padre della casella di riepilogo di trascinamento che l'utente ha fatto clic con il pulsante sinistro del mouse su un elemento. Una casella di riepilogo di trascinamento invia questo codice di notifica sotto forma di messaggio di elenco di trascinamento. Per altre informazioni, vedere Trascinare i messaggi della casella di riepilogo.
 ms.assetid: ccf66818-e5f7-4165-8d0d-4d279944f70e
 keywords:
-- Controlli di Windows per il codice di notifica DL_BEGINDRAG
+- DL_BEGINDRAG del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f2d3ee211641c5b5e02482f914145fdf2e119f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e2c843398b21ad51df51ae706a515c2e6f9831b89d32092b87148598b4bed5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968331"
 ---
-# <a name="dl_begindrag-notification-code"></a>\_Codice di notifica BEGINDRAG DL
+# <a name="dl_begindrag-notification-code"></a>Codice di notifica DL \_ BEGINDRAG
 
-Notifica alla finestra padre della casella di riepilogo di trascinamento che l'utente ha fatto clic con il pulsante sinistro del mouse su un elemento. Una casella di riepilogo di trascinamento Invia questo codice di notifica sotto forma di messaggio elenco di trascinamento. Per ulteriori informazioni, vedere [trascinare i messaggi della casella di riepilogo](about-list-boxes.md).
+Notifica alla finestra padre della casella di riepilogo di trascinamento che l'utente ha fatto clic con il pulsante sinistro del mouse su un elemento. Una casella di riepilogo di trascinamento invia questo codice di notifica sotto forma di messaggio di elenco di trascinamento. Per altre informazioni, vedere [Trascinare messaggi della casella di riepilogo.](about-list-boxes.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ DL_BEGINDRAG
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commctrl-draglistinfo) che contiene il \_ codice di notifica BEGINDRAG DL, l'handle per la casella di riepilogo di trascinamento e la posizione del cursore.
+Puntatore a una [**struttura DRAGLISTINFO**](/windows/win32/api/commctrl/ns-commctrl-draglistinfo) che contiene il codice di notifica DL BEGINDRAG, l'handle per la casella di riepilogo di trascinamento \_ e la posizione del cursore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** per avviare l'operazione di trascinamento oppure **false** per impedire l'operazione di trascinamento.
+Restituire **TRUE per** avviare l'operazione di trascinamento oppure FALSE **per** impedire l'operazione di trascinamento.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si elabora questo codice di notifica, una routine della finestra determina in genere l'elemento dell'elenco in corrispondenza della posizione del cursore specificata tramite la funzione [**LBItemFromPt**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) . Restituisce quindi **true** o **false**, a seconda che l'elemento debba essere trascinato. Prima di restituire **true**, la routine della finestra deve salvare l'indice dell'elemento di elenco in modo che l'applicazione conosca quale elemento spostare o copiare al termine dell'operazione di trascinamento.
+Quando si elabora questo codice di notifica, una routine della finestra determina in genere l'elemento dell'elenco in corrispondenza della posizione del cursore specificata usando [**la funzione LBItemFromPt.**](/windows/desktop/api/Commctrl/nf-commctrl-lbitemfrompt) Restituisce quindi **TRUE** o **FALSE,** a seconda che l'elemento debba essere trascinato. Prima di restituire **TRUE,** la routine della finestra deve salvare l'indice dell'elemento dell'elenco in modo che l'applicazione sappia quale elemento spostare o copiare al termine dell'operazione di trascinamento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Quando si elabora questo codice di notifica, una routine della finestra determin
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

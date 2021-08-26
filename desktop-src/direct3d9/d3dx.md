@@ -4,17 +4,17 @@ ms.assetid: d7b8c6ba-5c4f-494c-a24f-3b81a176725f
 title: D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 397a2164349b761cd7ff2ccca5e2158abc22bd64
-ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
+ms.openlocfilehash: 556d1f7dfe7f8d841220af4f5dbe650bd74e4c8dff86812650545a07129af644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111910243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986911"
 ---
 # <a name="d3dx-direct3d-9"></a>D3DX (Direct3D 9)
 
 > [!NOTE]
-> La libreria D3DX è deprecata. Se l'aggiornamento a una versione più recente di Direct3D e al codice di utilità associato non è un'opzione, è possibile usare il pacchetto NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) invece di basarsi su DirectX SDK o DirectSetup legacy.
+> La libreria D3DX è deprecata. Se l'aggiornamento a una versione più recente di Direct3D e al codice di utilità associato non è un'opzione, è possibile usare il pacchetto di NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) invece di basarsi su DirectX SDK o DirectSetup legacy.
 
 D3DX è una libreria di strumenti progettati per fornire funzionalità grafiche aggiuntive su Direct3D. D3DX viene fornito come libreria a collegamento dinamico (DLL).
 

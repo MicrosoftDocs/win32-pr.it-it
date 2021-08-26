@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2048ba9dac91b139888f27c037d64849de8a4ee8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c1331ce9dfa3309c1cfbd0ba0ddc3b4a0c96d431d524d8f0e74f7937c8cdb332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918471"
 ---
-# <a name="delete-method-of-the-win32_share-class"></a>Metodo Delete della \_ classe Share Win32
+# <a name="delete-method-of-the-win32_share-class"></a>Metodo Delete della classe Win32 \_ Share
 
-Il metodo **Delete** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) Elimina un nome di condivisione dall'elenco di risorse condivise di un server, disconnettendo le connessioni alla risorsa condivisa.
+Il **metodo Elimina** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) elimina un nome di condivisione dall'elenco di risorse condivise di un server, disconnettendo le connessioni alla risorsa condivisa.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per ulteriori codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Accesso negato** (2)
@@ -61,7 +61,7 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Livello non valido** (10)
 </dt> <dt>
 
-**Parametro non valido** (21)
+**Parametro non** valido (21)
 </dt> <dt>
 
 **Condivisione duplicata** (22)
@@ -70,10 +70,10 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 **Percorso reindirizzato** (23)
 </dt> <dt>
 
-**Dispositivo o directory sconosciuta** (24)
+**Dispositivo o directory sconosciuto** (24)
 </dt> <dt>
 
-**Nome NET non trovato** (25)
+**Nome di rete non trovato** (25)
 </dt> <dt>
 
 **Altro** (26 4294967295)
@@ -81,13 +81,13 @@ Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valor
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo **Delete** è un metodo oggetto e viene utilizzato in un'istanza di una classe.
+Il **metodo Delete** è un metodo oggetto e viene usato in un'istanza di una classe.
 
-Per eseguire correttamente il metodo, solo i membri del gruppo locale Administrators o account Operators o quelli con appartenenza a gruppi di operatori di comunicazione, stampa o server possono eseguire correttamente il metodo. L'operatore Print può eliminare solo le code di stampa. L'operatore di comunicazione può eliminare solo le code del dispositivo di comunicazione.
+Solo i membri del gruppo locale Administrators o Account Operators o quelli con appartenenza al gruppo operatore Communication, Print o Server possono eseguire correttamente il metodo . L'operatore Print può eliminare solo le code della stampante. L'operatore Communication può eliminare solo le code dei dispositivi di comunicazione.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript seguente viene eliminata la condivisione specificata.
+L'esempio di codice VBScript seguente elimina la condivisione specificata.
 
 
 ```VB
@@ -111,7 +111,7 @@ Next
 
 
 
-L'esempio di codice PowerShell seguente elimina le condivisioni vuote.
+L'esempio di codice di PowerShell seguente elimina le condivisioni vuote.
 
 
 ```PowerShell
@@ -134,7 +134,7 @@ Foreach ($Share in $Shares) {
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -146,7 +146,7 @@ Foreach ($Share in $Shares) {
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Condivisione Win32**](win32-share.md)
+[**Condivisione \_ Win32**](win32-share.md)
 </dt> </dl>
 
  
