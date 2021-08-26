@@ -1,27 +1,27 @@
 ---
 title: Registrazione per il riavvio dell'applicazione
-description: Per registrare l'applicazione per il riavvio, chiamare la funzione RegisterApplicationRestart.
+description: Per registrare l'applicazione da riavviare, chiamare la funzione RegisterApplicationRestart.
 ms.assetid: 4dfbced7-77db-4042-823f-b4b81b2b27a6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 717f8984f26570284a70b40eef70a9d6f753d66a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fe5777d3ed6b99d421f7eba6b5b104b92a1c2c71462c675b2573f18da0ba69f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104224010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024571"
 ---
 # <a name="registering-for-application-restart"></a>Registrazione per il riavvio dell'applicazione
 
-Per registrare l'applicazione per il riavvio, chiamare la funzione [**RegisterApplicationRestart**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) . [Segnalazione errori Windows (WER)](/windows/desktop/wer/windows-error-reporting) riavvierà l'applicazione se è in esecuzione per almeno 60 secondi prima di rimanere non risponde o di un'eccezione non gestita.
+Per registrare l'applicazione da riavviare, chiamare la [**funzione RegisterApplicationRestart.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrestart) [Segnalazione errori Windows (WER)](/windows/desktop/wer/windows-error-reporting) riavvierà l'applicazione se è in esecuzione da almeno 60 secondi prima di non rispondere o di riscontrare un'eccezione non gestita.
 
-È necessario prendere in considerazione anche la [registrazione per il ripristino](registering-for-application-recovery.md), che consente di salvare i dati e le informazioni sullo stato che possono essere utili quando l'applicazione viene riavviata. L'applicazione viene riavviata dopo il completamento del processo di ripristino, se si esegue anche la registrazione per il ripristino.
+È consigliabile anche eseguire [la registrazione](registering-for-application-recovery.md)per il ripristino , che consente di salvare i dati e le informazioni sullo stato che possono essere utili quando WER riavvia l'applicazione. WeR riavvierà l'applicazione al termine del processo di ripristino, se si registra anche per il ripristino.
 
-Al termine del processo di ripristino, WER interrompe l'applicazione e la riavvia. Per le applicazioni console, l'applicazione viene avviata in una finestra della console separata che viene chiusa al termine dell'applicazione.
+Al termine del processo di ripristino, WER termina l'applicazione e quindi la riavvia. Per le applicazioni console, l'applicazione viene avviata in una finestra della console separata che viene chiusa alla chiusura dell'applicazione.
 
-**Nota per gli autori del programma di installazione dell'applicazione:** Se si effettua la registrazione per il riavvio dell'applicazione, Windows riavvia automaticamente l'applicazione dopo il riavvio del computer nei casi in cui il computer viene riavviato a causa di un aggiornamento software. Per funzionare, è necessario che il programma di installazione dell'applicazione chiami la funzione [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) con il \_ flag EWX RESTARTAPPS o la funzione [**INITIATESHUTDOWN**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) con il flag Shutdown \_ RESTARTAPPS impostato.
+**Nota per gli autori del programma di installazione dell'applicazione:** La registrazione per il riavvio dell'applicazione Windows riavvio automatico dell'applicazione dopo il riavvio del computer nei casi in cui il computer viene riavviato a causa di un aggiornamento software. Per il funzionamento, il programma di installazione dell'applicazione deve chiamare la funzione [**ExitWindowsEx**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) con il flag RESTARTAPPS EWX impostato o la funzione \_ [**InitiateShutdown**](/windows/desktop/api/winreg/nf-winreg-initiateshutdowna) con il flag SHUTDOWN \_ RESTARTAPPS impostato.
 
-Nell'esempio seguente viene illustrato come eseguire la registrazione per fare in modo che il riavvii l'applicazione. L'esempio causa una violazione di accesso dopo la registrazione per il riavvio dell'applicazione. La violazione dell'accesso verrà prelevata da Segnalazione errori Windows e mostrerà l'esperienza utente di segnalazione errori, incluso il riavvio dell'applicazione. Deve essere eseguita da una finestra della console senza argomenti della riga di comando.
+L'esempio seguente illustra come eseguire la registrazione per fare in modo che WER riavvii l'applicazione. L'esempio causa una violazione di accesso dopo la registrazione per il riavvio dell'applicazione. La violazione di accesso verrà prelevata dal Segnalazione errori Windows e verrà illustrata l'esperienza utente di segnalazione degli errori, incluso il riavvio dell'applicazione. Deve essere eseguito da una finestra della console senza argomenti della riga di comando.
 
 
 ```C++
@@ -240,6 +240,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

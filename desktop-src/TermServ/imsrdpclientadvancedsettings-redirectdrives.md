@@ -1,26 +1,26 @@
 ---
-title: Proprietà RedirectDrives di IMsRdpClientAdvancedSettings
+title: Proprietà RedirectDrives IMsRdpClientAdvancedSettings
 description: Specifica se è consentito il reindirizzamento delle unità disco.
 ms.assetid: 5ed4cd28-4a1f-4d3b-9f9d-bf44a8483209
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RedirectDrives
-- Servizi Desktop remoto proprietà RedirectDrives, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , RedirectDrives
+- Proprietà RedirectDrives Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , RedirectDrives
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c83d24ae4ea4dae2760c1e468f4fa8b326a94c38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f2cca4aece1da6d609ab90e306252346c9fea54e9960d70efb0bd3c7adaad012
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125701"
 ---
-# <a name="imsrdpclientadvancedsettingsredirectdrives-property"></a>Proprietà IMsRdpClientAdvancedSettings:: RedirectDrives
+# <a name="imsrdpclientadvancedsettingsredirectdrives-property"></a>Proprietà IMsRdpClientAdvancedSettings::RedirectDrives
 
 Specifica se è consentito il reindirizzamento delle unità disco.
 
@@ -84,15 +84,15 @@ HRESULT get_RedirectDrives(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ true** per consentire il reindirizzamento o la **variante \_ false** in caso contrario. **Variante \_ TRUE** chiede all'utente di confermare la concessione del reindirizzamento al momento della connessione, per motivi di sicurezza.
+Impostare questo parametro su **VARIANT \_ TRUE per consentire** il reindirizzamento o VARIANT FALSE in **\_ caso** contrario. **VARIANT \_ TRUE** richiede all'utente di confermare il reindirizzamento in fase di connessione, per motivi di sicurezza.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: funzione glPopMatrix (GL. h)
-description: Le funzioni glPushMatrix e glPopMatrix effettuano il push e lo schiocco dello stack della matrice corrente. | funzione glPopMatrix (GL. h)
+title: Funzione glPopMatrix (Gl.h)
+description: Le funzioni glPushMatrix e glPopMatrix esegono il push e il pop dello stack di matrici corrente. | Funzione glPopMatrix (Gl.h)
 ms.assetid: 7b4fc26e-36c8-4252-aba7-2e8ec6b34f91
 keywords:
-- funzione glPopMatrix OpenGL
+- Funzione glPopMatrix OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41424a8af3ca6599edc7a66f9e498632640022c5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d1c0f10456c1038da46d9070689713a8237f876bec7ce7da40acf3d81d89ad15
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128021"
 ---
-# <a name="glpopmatrix-function"></a>glPopMatrix (funzione)
+# <a name="glpopmatrix-function"></a>Funzione glPopMatrix
 
-Le funzioni [**glPushMatrix**](glpushmatrix.md) e **glPopMatrix** effettuano il push e lo schiocco dello stack della matrice corrente.
+Le [**funzioni glPushMatrix**](glpushmatrix.md) e **glPopMatrix** esegono il push e il pop dello stack di matrici corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,46 +44,46 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Non è possibile eseguire il push di uno stack di matrici completo oppure per estrarre uno stack della matrice che contiene una sola matrice. In entrambi i casi, viene impostato il flag di errore e non viene apportata alcuna modifica allo stato OpenGL.
+È un errore eseguire il push di uno stack di matrici completo o inserire uno stack di matrici che contiene una sola matrice. In entrambi i casi, il flag di errore viene impostato e non vengono apportate altre modifiche allo stato OpenGL.
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_underflow dello stack GL \_**</dt> </dl>   | La funzione è stata chiamata mentre lo stack della matrice corrente contiene una sola matrice.<br/>                                     |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ STACK \_ UNDERFLOW**</dt> </dl>   | La funzione è stata chiamata mentre lo stack di matrici corrente conteneva una sola matrice.<br/>                                     |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-È disponibile una pila di matrici per ogni modalità della matrice. In \_ modalità GL MODELVIEW, la profondità dello stack è almeno 32. Nelle altre due modalità, proiezione GL \_ e trama GL \_ , la profondità è almeno 2. La matrice corrente in qualsiasi modalità è la matrice nella parte superiore dello stack per tale modalità.
+È disponibile uno stack di matrici per ognuna delle modalità di matrice. In modalità \_ GL MODELVIEW la profondità dello stack è almeno 32. Nelle altre due modalità, GL \_ PROJECTION e GL \_ TEXTURE, la profondità è almeno 2. La matrice corrente in qualsiasi modalità è la matrice all'inizio dello stack per tale modalità.
 
-La funzione [**glPushMatrix**](glpushmatrix.md) esegue il push dello stack della matrice corrente verso il basso di uno, duplicando la matrice corrente. Ovvero, dopo una chiamata a **glPushMatrix** , la matrice nella parte superiore dello stack è identica a quella sotto. La funzione **glPopMatrix** estrae lo stack della matrice corrente, sostituendo la matrice corrente con quella sotto di essa nello stack. Inizialmente, ogni stack contiene una matrice, una matrice di identità.
+La [**funzione glPushMatrix**](glpushmatrix.md) inserisce di uno verso il basso lo stack di matrici corrente, duplicando la matrice corrente. Ciò significa che, dopo una chiamata **glPushMatrix,** la matrice all'inizio dello stack è identica a quella sottostante. La **funzione glPopMatrix** popola lo stack di matrici corrente, sostituendo la matrice corrente con quella sottostante nello stack. Inizialmente, ognuno degli stack contiene una matrice, una matrice di identità.
 
-Le funzioni seguenti recuperano informazioni relative a [**glPushMatrix**](glpushmatrix.md) e **glPopMatrix**:
+Le funzioni seguenti recuperano informazioni correlate [**a glPushMatrix**](glpushmatrix.md) e **glPopMatrix:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ modalità matrice GL \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MATRIX \_ MODE
 
-**glGet** con argomento GL \_ MODELVIEW \_ Matrix
+**glGet** con argomento GL \_ MODELVIEW \_ MATRIX
 
-**glGet** con matrice di \_ proiezione GL argomento \_
+**glGet con** argomento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con argomento della \_ matrice di trama GL \_
+**glGet** con argomento GL \_ TEXTURE \_ MATRIX
 
-**glGet** con argomento \_ MODELVIEW \_ Stack \_ Depth
+**glGet con** argomento GL \_ MODELVIEW \_ STACK \_ DEPTH
 
-**glGet** con \_ \_ profondità dello stack di proiezione GL argomento \_
+**glGet con** argomento GL \_ PROJECTION STACK \_ \_ DEPTH
 
-**glGet** con argomento \_ \_ profondità dello stack di trama GL \_
+**glGet con** argomento GL \_ TEXTURE STACK \_ \_ DEPTH
 
-**glGet** con argomento con \_ \_ profondità massima \_ dello stack MODELVIEW \_
+**glGet con** argomento GL \_ MAX \_ MODELVIEW STACK \_ \_ DEPTH
 
-**glGet** con argomento \_ \_ \_ profondità dello stack di proiezione max \_
+**glGet con** argomento GL \_ MAX PROJECTION STACK \_ \_ \_ DEPTH
 
-**glGet** con argomento di \_ \_ profondità max trama \_ Stack \_
+**glGet con** argomento GL \_ MAX TEXTURE STACK \_ \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisiti
 
@@ -93,8 +93,8 @@ Le funzioni seguenti recuperano informazioni relative a [**glPushMatrix**](glpus
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ Le funzioni seguenti recuperano informazioni relative a [**glPushMatrix**](glpus
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glFrustum**](glfrustum.md)

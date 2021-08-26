@@ -1,17 +1,17 @@
 ---
-description: TAPI supporta le funzioni del dispositivo telefonico per configurare e inizializzare il dispositivo telefonico.
+description: TAPI supporta le funzioni del dispositivo telefonico per configurare e inizializzare il dispositivo.
 ms.assetid: 04914c9c-ec23-4a04-af6a-8e31bec20595
-title: Funzioni del dispositivo telefonico
+title: Telefono Funzioni del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b50d10f308576920be6d343590f313930ac96141
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a2380769269d0bd6b128931babdfaf37827a0cc066323dfdf58ad5592b8f03d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034501"
 ---
-# <a name="phone-device-functions"></a>Funzioni del dispositivo telefonico
+# <a name="phone-device-functions"></a>Telefono Funzioni del dispositivo
 
 TAPI supporta le funzioni del dispositivo telefonico seguenti:
 
@@ -49,7 +49,7 @@ TAPI supporta le funzioni del dispositivo telefonico seguenti:
 -   [**phoneSetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonesetvolume)
 -   [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)
 
-    Per una categorizzazione delle funzioni TAPI per livello di servizio e attività, vedere Guida di riferimento alle funzioni [rapide TAPI](tapi-quick-function-reference.md).
+    Per una categorizzazione delle funzioni TAPI in base al livello di servizio e all'attività, vedere Riferimento [rapido alle funzioni TAPI.](tapi-quick-function-reference.md)
 
  
 

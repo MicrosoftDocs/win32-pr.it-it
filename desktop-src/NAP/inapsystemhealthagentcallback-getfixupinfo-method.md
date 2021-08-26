@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentCallback GetFixupInfo (NapSystemHealthAgent. h)
-description: Viene chiamato da NapAgent per determinare lo stato dell'agente integrità sistema durante l'elaborazione di un SoHResponse.
+title: Metodo INapSystemHealthAgentCallback GetFixupInfo (NapSystemHealthAgent.h)
+description: Viene chiamato da NapAgent per determinare lo stato dell'agente di integrità del sistema, durante l'elaborazione di soHResponse.
 ms.assetid: cf919b56-3d40-4c49-9c91-25c20ae5ccda
 keywords:
-- NAP metodo GetFixupInfo
+- Metodo GetFixupInfo nap
 - Metodo GetFixupInfo NAP, interfaccia INapSystemHealthAgentCallback
 - Interfaccia INapSystemHealthAgentCallback NAP, metodo GetFixupInfo
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1227cbe870c722189c995bff0c967eb187548cd1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d82f84acbc759f8459c7eeb904ab4f08a108093fa30c3b27c033fbfef1dcf15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037751"
 ---
-# <a name="inapsystemhealthagentcallbackgetfixupinfo-method"></a>Metodo INapSystemHealthAgentCallback:: GetFixupInfo
+# <a name="inapsystemhealthagentcallbackgetfixupinfo-method"></a>Metodo INapSystemHealthAgentCallback::GetFixupInfo
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentCallback:: GetFixupInfo** viene chiamato da napagent per determinare lo stato dell'agente integrità sistema durante l'elaborazione di un [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh).
+Il **metodo INapSystemHealthAgentCallback::GetFixupInfo** viene chiamato da NapAgent per determinare lo stato dell'agente di integrità del sistema, durante l'elaborazione di [**un oggetto SoHResponse.**](/windows/win32/api/naptypes/ns-naptypes-soh)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,10 +47,10 @@ HRESULT GetFixupInfo(
 
 <dl> <dt>
 
-*informazioni* \[ su out\]
+*info* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un puntatore a una struttura [**FixupInfo**](/windows/win32/api/naptypes/ns-naptypes-fixupinfo) che contiene lo stato di correzione dell'agente.
+Puntatore a un puntatore a [**una struttura FixupInfo**](/windows/win32/api/naptypes/ns-naptypes-fixupinfo) che contiene lo stato di correzione dell'agente.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                          | Descrizione                   |
 |--------------------------------------------------------------------------------------|-------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Indica l'esito positivo dell'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Indica l'esito positivo dell'operazione.<br/> |
 
 
 
@@ -70,9 +70,9 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di callback viene dichiarato dal sistema NAP e deve essere implementato dal writer SHA.
+Questo metodo di callback viene dichiarato dal sistema di Protezione accesso alla rete e deve essere implementato dal writer SHA.
 
-L'agente integrità sistema deve restituire immediatamente **S \_ OK** senza bloccarsi.
+L'agente di integrità del sistema deve restituire **immediatamente S \_ OK** senza bloccarsi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,10 +80,10 @@ L'agente integrità sistema deve restituire immediatamente **S \_ OK** senza blo
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

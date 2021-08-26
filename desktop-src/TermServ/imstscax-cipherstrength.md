@@ -1,30 +1,30 @@
 ---
-title: Proprietà CipherStrength di IMsTscAx
-description: Recupera l'attendibilità massima della crittografia del controllo corrente.
+title: Proprietà IMsTscAx CipherStrength
+description: Recupera il livello massimo di crittografia del controllo corrente.
 ms.assetid: 94efe3e5-4074-4187-b58a-b812f37f3622
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsTscAx
-- Interfaccia IMsTscAx Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient
-- Interfaccia IMsRdpClient Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient2
-- Interfaccia IMsRdpClient2 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà CipherStrength
-- Servizi Desktop remoto proprietà CipherStrength, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsTscAx
+- Interfaccia IMsTscAx Servizi Desktop remoto , proprietà CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient
+- Interfaccia IMsRdpClient Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient2
+- Interfaccia IMsRdpClient2 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà CipherStrength
+- Proprietà CipherStrength Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , CipherStrength
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 401cf3796d349aaa6764eae46a371a9d485f763c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b66418f2e956afcf6c5b9f1f9a0d5971119e7fddae1c1d46d115f4bbe0e6391
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125441"
 ---
-# <a name="imstscaxcipherstrength-property"></a>Proprietà IMsTscAx:: CipherStrength
+# <a name="imstscaxcipherstrength-property"></a>Proprietà IMsTscAx::CipherStrength
 
-Recupera l'attendibilità massima della crittografia del controllo corrente.
+Recupera il livello massimo di crittografia del controllo corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -84,13 +84,13 @@ Livello di crittografia.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se l'operazione ha esito positivo, restituire **S \_ OK** .
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per Connessione Web Desktop remoto, il livello di codifica è sempre 128 perché il controllo ActiveX Desktop remoto supporta la crittografia fino a 128 bit compresi. Il controllo a 128 bit può comunque connettersi 56 ai server host sessione Desktop remoto crittografia di bit (host sessione Desktop remoto).
+Ad Connessione Web Desktop remoto, il livello di codifica è sempre 128 perché il controllo Desktop remoto ActiveX supporta la crittografia fino a 128 bit inclusi. Il controllo a 128 bit può comunque connettersi a server host sessione Desktop remoto a 56 bit.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,25 +1,25 @@
 ---
-title: Callback di join locali
-description: Quando il gestore del gruppo multicast riceve una notifica da IGMP che sono presenti nuovi ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama \_ il \_ \_ callback di callback di PMGM local join al protocollo di routing che possiede l'interfaccia, se esistente.
+title: Callback di join locale
+description: Dopo che il gestore del gruppo multicast riceve una notifica da IGMP che sono presenti nuovi ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama il callback DI JOIN LOCALE PMGM al protocollo di routing proprietario dell'interfaccia, se \_ \_ \_ presente.
 ms.assetid: 136f86e0-380d-4158-a9dd-c6de1c7f6689
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c97f0e16e08bc3781b946a51f69d2b0d65b3272
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17b3464aa645a6ab110acef09f238ffca97f781a38cc6c2602a39e7c66316490
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074071"
 ---
-# <a name="local-join-callbacks"></a>Callback di join locali
+# <a name="local-join-callbacks"></a>Callback di join locale
 
-Quando il gestore del gruppo multicast riceve una notifica da IGMP che sono presenti nuovi ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama il callback di [**callback di PMGM \_ Local \_ join \_**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_join_callback) al protocollo di routing che possiede l'interfaccia, se esistente. Questo callback notifica il protocollo di routing della modifica.
+Dopo che il gestore del gruppo multicast riceve una notifica da IGMP che sono presenti nuovi ricevitori per un gruppo in un'interfaccia, il gestore del gruppo multicast richiama il callback DI JOIN [**\_ LOCALE \_ \_ PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_join_callback) al protocollo di routing proprietario dell'interfaccia, se presente. Questo callback notifica al protocollo di routing la modifica.
 
-Questo callback e il callback di [**\_ \_ \_ callback di uscita locale PMGM**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback) vengono usati per sincronizzare l'inoltro tra i protocolli IGMP e di routing.
+Questo callback e il callback [**PMGM \_ LOCAL LEAVE \_ \_ CALLBACK**](/windows/desktop/api/Mgm/nc-mgm-pmgm_local_leave_callback) vengono usati per sincronizzare l'inoltro tra IGMP e i protocolli di routing.
 
- 
+ 
 
- 
+ 
 
 
 

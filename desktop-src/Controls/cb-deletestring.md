@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_DELETESTRING (winuser. h)
+title: CB_DELETESTRING messaggio (Winuser.h)
 description: Elimina una stringa nella casella di riepilogo di una casella combinata.
 ms.assetid: 8d526796-04ef-4c01-94d6-fb50e6fef27b
 keywords:
-- Controlli di Windows Message CB_DELETESTRING
+- CB_DELETESTRING del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0d3900c86874db1113c219fd9f7967c5f6bb6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0bed1d654b86ffeb4a02c780678822e1999847ef0e163e35ecba081af099f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063581"
 ---
-# <a name="cb_deletestring-message"></a>\_Messaggio DELETESTRING CB
+# <a name="cb_deletestring-message"></a>CB \_ DELETESTRING message
 
 Elimina una stringa nella casella di riepilogo di una casella combinata.
 
@@ -45,11 +45,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un conteggio delle stringhe rimaste nell'elenco. Se il parametro *wParam* specifica un indice maggiore del numero di elementi nell'elenco, il valore restituito è CB \_ Err.
+Il valore restituito è un conteggio delle stringhe rimanenti nell'elenco. Se il *parametro wParam* specifica un indice maggiore del numero di elementi nell'elenco, il valore restituito è CB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Se si crea la casella combinata con uno stile disegnato dal proprietario ma senza lo [**stile \_ HASSTRINGS CBS**](combo-box-styles.md) , il sistema invia un [**messaggio \_ WM DeleteItem**](wm-deleteitem.md) al proprietario della casella combinata in modo che l'applicazione possa liberare i dati aggiuntivi associati all'elemento.
+Se si crea la casella combinata con uno stile creato dal proprietario ma senza lo stile [**\_ HASSTRINGS di CBS,**](combo-box-styles.md) il sistema invia un messaggio [**WM \_ DELETEITEM**](wm-deleteitem.md) al proprietario della casella combinata in modo che l'applicazione possa liberare eventuali dati aggiuntivi associati all'elemento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 **Riferimento**
 </dt> <dt>
 
-[**CB \_ ResetContent**](cb-resetcontent.md)
+[**CB \_ RESETCONTENT**](cb-resetcontent.md)
 </dt> <dt>
 
-[**\_DeleteItem WM**](wm-deleteitem.md)
+[**WM \_ DELETEITEM**](wm-deleteitem.md)
 </dt> </dl>
 
  

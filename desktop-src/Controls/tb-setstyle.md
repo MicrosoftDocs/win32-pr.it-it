@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_SETSTYLE (COMmctrl. h)
-description: Imposta lo stile per un controllo della barra degli strumenti.
+title: TB_SETSTYLE messaggio (Commctrl.h)
+description: Imposta lo stile per un controllo barra degli strumenti.
 ms.assetid: a1056136-e027-4ce4-b348-2d912a3ab467
 keywords:
-- Controlli di Windows Message TB_SETSTYLE
+- TB_SETSTYLE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00c49a4239d131f1fe54a73e79beea8f32108681
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70974f6ae4291da3b6a4b93b66b14f46a7933dd49a2594b935c15f93c80e4cbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061241"
 ---
-# <a name="tb_setstyle-message"></a>TB- \_ messaggio in stile
+# <a name="tb_setstyle-message"></a>Tb \_ SETSTYLE message (MESSAGGIO SETSTYLE TB)
 
-Imposta lo stile per un controllo della barra degli strumenti.
+Imposta lo stile per un controllo barra degli strumenti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Imposta lo stile per un controllo della barra degli strumenti.
 *lParam* 
 </dt> <dd>
 
-Valore che specifica gli stili da impostare per il controllo. Questo valore può essere una combinazione di [stili di controllo Toolbar](toolbar-control-and-button-styles.md).
+Valore che specifica gli stili da impostare per il controllo. Questo valore può essere una combinazione di stili di [controllo della barra degli strumenti](toolbar-control-and-button-styles.md).
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

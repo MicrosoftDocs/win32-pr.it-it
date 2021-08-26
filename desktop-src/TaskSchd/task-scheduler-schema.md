@@ -1,9 +1,9 @@
 ---
-title: Schema Utilità di pianificazione
-description: Lo schema Utilità di pianificazione definisce il codice XML valido usato per registrare le attività con il servizio Utilità di pianificazione. Gli sviluppatori possono creare il proprio codice XML, convalidarlo rispetto a questo schema e registrare le attività usando il metodo ITaskFolder l'RegisterTask.
+title: Utilità di pianificazione schema
+description: Lo schema Utilità di pianificazione definisce il codice XML valido utilizzato per registrare le attività con il Utilità di pianificazione servizio. Gli sviluppatori possono creare il proprio codice XML, convalidarlo in base a questo schema e registrare le attività usando il metodo ITaskFolder RegisterTask.
 ms.assetid: 9b1b8e34-c635-413a-a230-79a58017cf21
 keywords:
-- Utilità di pianificazione Utilità di pianificazione, riferimento XML Schema
+- Utilità di pianificazione Utilità di pianificazione , riferimento, XML Schema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -11,25 +11,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 143633fbc983a4ff828c3406b5015995b4bc7842
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 7b03744b864aea8903cb77482d2ce377186266be5ad160c2c037f996d7b5ed91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104117291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080371"
 ---
-# <a name="task-scheduler-schema"></a>Schema Utilità di pianificazione
+# <a name="task-scheduler-schema"></a>Utilità di pianificazione schema
 
-Lo schema Utilità di pianificazione definisce il codice XML valido usato per registrare le attività con il servizio Utilità di pianificazione. Gli sviluppatori possono creare il proprio codice XML, convalidarlo rispetto a questo schema e registrare le attività usando il metodo [**ITaskFolder:: l'RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) .
+Lo schema Utilità di pianificazione definisce il codice XML valido utilizzato per registrare le attività con il Utilità di pianificazione servizio. Gli sviluppatori possono creare il proprio codice XML, convalidarlo in base a questo schema e registrare le attività usando [**il metodo ITaskFolder::RegisterTask.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask)
 
-I tipi e gli elementi dello schema Utilità di pianificazione sono documentati singolarmente nelle sezioni seguenti.
+I tipi e gli elementi dello Utilità di pianificazione schema sono documentati singolarmente nelle sezioni seguenti.
 
--   [Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
--   [Tipi semplici dello schema Utilità di pianificazione](task-scheduler-schema-simple-types.md)
--   [Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
--   [Gruppi di schemi Utilità di pianificazione](task-scheduler-schema-groups.md)
+-   [Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
+-   [Utilità di pianificazione semplici dello schema](task-scheduler-schema-simple-types.md)
+-   [Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
+-   [Utilità di pianificazione schema](task-scheduler-schema-groups.md)
 
-L'intero schema di Utilità di pianificazione viene definito dal seguente file XSD.
+L'Utilità di pianificazione schema è definito dal file XSD seguente.
 
 
 ```XML
@@ -695,9 +695,9 @@ L'intero schema di Utilità di pianificazione viene definito dal seguente file X
 
 
 
- 
+ 
 
- 
+ 
 
 
 

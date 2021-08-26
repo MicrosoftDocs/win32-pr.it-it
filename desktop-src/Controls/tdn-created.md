@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TDN_CREATED (COMmctrl. h)
-description: Inviato dalla finestra di dialogo attività dopo che la finestra di dialogo è stata creata e prima che venga visualizzata. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo TaskDialogIndirect.
+title: TDN_CREATED codice di notifica (Commctrl.h)
+description: Inviato dalla finestra di dialogo dell'attività dopo che la finestra di dialogo è stata creata e prima che venga visualizzata. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il metodo TaskDialogIndirect.
 ms.assetid: cfe13db3-9c3c-425c-a6ef-17c5cb33eeb6
 keywords:
-- Controlli di Windows per il codice di notifica TDN_CREATED
+- TDN_CREATED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a25aa40af6b2cb002f2da7aab7c71fd68702ae65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a66541d60923b19ae70519919fd3d8217d99ff95515bb30c98efaf8c02afd93
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104481"
 ---
-# <a name="tdn_created-notification-code"></a>\_Codice di notifica creato da TDN
+# <a name="tdn_created-notification-code"></a>Codice di notifica TDN \_ CREATED
 
-Inviato dalla finestra di dialogo attività dopo che la finestra di dialogo è stata creata e prima che venga visualizzata. Questo codice di notifica viene ricevuto solo tramite la funzione di callback della finestra di dialogo attività, che può essere registrata tramite il metodo [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Inviato dalla finestra di dialogo dell'attività dopo che la finestra di dialogo è stata creata e prima che venga visualizzata. Questo codice di notifica viene ricevuto solo tramite la funzione di callback del dialogo attività, che può essere registrata usando il [**metodo TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -63,9 +63,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

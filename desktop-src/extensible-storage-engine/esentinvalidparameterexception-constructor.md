@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidParameterException'
+description: Altre informazioni sul costruttore EsentInvalidParameterException
 title: Costruttore EsentInvalidParameterException
 TOCTitle: 'EsentInvalidParameterException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidParameterException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ff0cdd14738d1571c1a5e9b45ebbde5f4a349c93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50bda9a630ea89c603c7ce9a7ea9e88aaaa3f962ba14096414b6294d2571105f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064531"
 ---
 # <a name="esentinvalidparameterexception-constructor"></a>Costruttore EsentInvalidParameterException
 
 Inizializza una nuova istanza della classe EsentInvalidParameterException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidParameterException()
 
 [Membri di EsentInvalidParameterException](./esentinvalidparameterexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,36 +1,36 @@
 ---
-description: La tabella DisplayToID correla la stringa descrittiva visualizzata da monitoraggio di sistema al GUID archiviato nelle altre tabelle.
+description: La tabella DisplayToID mette in relazione la stringa descrittiva visualizzata da Monitoraggio di sistema con il GUID archiviato nelle altre tabelle.
 ms.assetid: 414d16f1-ab6f-45f0-9287-154810543a6d
 title: DisplayToID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b71ae8c4ebaafc80d98580a13a83e3cc7cff815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 485eab24a2c758b36e190e035a9442a032ebd683f3f5ea052bd37992ad14c85f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033911"
 ---
 # <a name="displaytoid"></a>DisplayToID
 
-La tabella **DisplayToID** correla la stringa descrittiva visualizzata da monitoraggio di sistema al GUID archiviato nelle altre tabelle.
+La **tabella DisplayToID** mette in relazione la stringa descrittiva visualizzata da Monitoraggio di sistema con il GUID archiviato nelle altre tabelle.
 
-La tabella **DisplayToID** definisce i campi seguenti:
+La **tabella DisplayToID** definisce i campi seguenti:
 
--   **GUID:** Identificatore univoco generato per un log. Questo campo è la chiave primaria della tabella.
--   **RunId:** Riservato per uso interno.
--   **DisplayString:** Nome del file di log visualizzato in Monitor di sistema.
--   **LogStartTime:** Ora di inizio del processo di registrazione nel formato aaaa-mm-gg hh: mm: SS: nnn.
--   **LogStopTime:** Ora di arresto del processo di registrazione nel formato aaaa-mm-gg hh: mm: SS: nnn. È possibile differenziare più file di log con lo stesso valore **displayString** usando il valore in questo e i campi **LogStartTime** . I valori nei campi **LogStartTime** e **LogStopTime** consentono inoltre di accedere rapidamente al tempo totale di raccolta.
--   **NumberOfRecords:** Numero di campioni archiviati nella tabella per ogni raccolta di log.
--   **MinutesToUTC:** Valore utilizzato per convertire i dati della riga archiviati nell'ora UTC nell'ora locale.
--   **TimeZoneName:** Nome del fuso orario in cui sono stati raccolti i dati. Se si raccolgono o si riregistrano dati da un file raccolto nei sistemi nel proprio fuso orario, questo campo dimostrerà il percorso.
+-   **GUID:** Identificatore univoco generato per un log. Questo campo è la chiave primaria di questa tabella.
+-   **RunID:** Riservato per uso interno.
+-   **DisplayString:** Nome del file di log visualizzato in Monitoraggio di sistema.
+-   **LogStartTime:** Ora di inizio del processo di registrazione nel formato aaaa-mm-gg hh:mm:ss:nnn.
+-   **LogStopTime:** Ora di arresto del processo di registrazione nel formato aaaa-mm-gg hh:mm:ss:nnn. È possibile differenziare più file di log con lo stesso valore **DisplayString** usando il valore in questo campo e nei **campi LogStartTime.** I valori nei campi **LogStartTime** e **LogStopTime** consentono anche di accedere rapidamente al tempo totale di raccolta.
+-   **NumberOfRecords:** Numero di esempi archiviati nella tabella per ogni raccolta di log.
+-   **MinutesToUTC:** Valore utilizzato per convertire i dati di riga archiviati nell'ora UTC nell'ora locale.
+-   **TimeZoneName:** Nome del fuso orario in cui sono stati raccolti i dati. Se si raccolgono o si dispone di dati di un file raccolto nei sistemi nel proprio fuso orario, questo campo indica la posizione.
 
-**Nota**  Prima di Windows Vista, gli insiemi agenti di raccolta dati venivano archiviati nel registro di sistema
+**Nota**  Prima di Windows Vista, gli insiemi agenti di raccolta dati venivano archiviati nel Registro di sistema in
 
-**HKEY \_ Local \_ computer \\ System \\ CurrentControlSet \\ Services \\ SysmonLog \\ log queries**
+**HKEY \_ LOCAL \_ MACHINE \\ SYSTEM \\ CurrentControlSet \\ Services \\ SysmonLog \\ Log Queries**
 
-. I campi elencati sopra non corrispondono ai valori nel registro di sistema. Per Windows Vista, gli insiemi agenti di raccolta dati non vengono archiviati nel registro di sistema.
+. I campi elencati in precedenza non corrispondono ai valori nel Registro di sistema. Per Windows Vista, gli insiemi agenti di raccolta dati non vengono archiviati nel Registro di sistema.
 
  
 

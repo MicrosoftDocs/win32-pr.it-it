@@ -1,29 +1,29 @@
 ---
 description: Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Russia.
 ms.assetid: 7585ce79-39ef-4174-833a-c314289fec43
-title: Assegnazioni di canale in Russia
+title: Assegnazioni di canali per la Russia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 099e1f6929077a9370b543e1725d700ccdd24229
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9e336b3b6c5b0e8afba56625014a6798284c7a16fcef5a147d381f916a178ba3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078921"
 ---
-# <a name="russia-channel-assignments"></a>Assegnazioni di canale in Russia
+# <a name="russia-channel-assignments"></a>Assegnazioni di canali per la Russia
 
 Questo argomento elenca le tabelle di frequenza usate per l'ottimizzazione della TV analoga per la Russia.
 
-Per una spiegazione delle tabelle seguenti, vedere [tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
 
-Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In precedenza, veniva usata la [tabella della frequenza Unicable](unicable-frequency-table.md) .
+Le assegnazioni di canale seguenti sono state introdotte nella Windows 7. In precedenza, [era stata usata la tabella di frequenza unicable.](unicable-frequency-table.md)
 
--   [Assegnazioni broadcast](#broadcast-assignments)
+-   [Assegnazioni di trasmissione](#broadcast-assignments)
 -   [Assegnazioni di cavi](#cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="broadcast-assignments"></a>Assegnazioni broadcast
+## <a name="broadcast-assignments"></a>Assegnazioni di trasmissione
 
 ``` syntax
         1L,             // Lowest channel
@@ -242,7 +242,7 @@ Le seguenti assegnazioni di canale sono state introdotte in Windows 7. In preced
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analoga internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

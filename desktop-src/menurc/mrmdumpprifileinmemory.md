@@ -1,9 +1,9 @@
 ---
-title: Funzione MrmDumpPriFileInMemory (MrmResourceIndexer. h)
-description: Consente di eseguire il dump di un file PRI (binario) al relativo equivalente XML (come dati in memoria), in modo da renderlo più facilmente leggibile.
+title: Funzione MrmDumpPriFileInMemory (MrmResourceIndexer.h)
+description: Esegue il dump di un file PRI (binario) nell'equivalente XML (come dati in memoria), per renderlo più leggibile.
 ms.assetid: 04FD048F-1473-47B1-9CAB-03FEF98A9B48
 keywords:
-- Menu della funzione MrmDumpPriFileInMemory e altre risorse
+- Menu e altre risorse della funzione MrmDumpPriFileInMemory
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 253db38bf1e272f21ff66210bdbd07d5a33f4c60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 17c591f95b772d71fd0ce614598bbf793d84dff70a0c29664da460c8be33569d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092151"
 ---
-# <a name="mrmdumpprifileinmemory-function"></a>MrmDumpPriFileInMemory (funzione)
+# <a name="mrmdumpprifileinmemory-function"></a>Funzione MrmDumpPriFileInMemory
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Consente di eseguire il dump di un file PRI (binario) al relativo equivalente XML (come dati in memoria), in modo da renderlo più facilmente leggibile. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Esegue il dump di un file PRI (binario) nell'equivalente XML (come dati in memoria), per renderlo più leggibile. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData.* Chiamare [**MrmFreeMemory con**](mrmfreememory.md) lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,12 +46,12 @@ HRESULT HRESULT MrmDumpPriFileInMemory(
 
 <dl> <dt>
 
-*indexFileName* \[ in\]
+*indexFileName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-Percorso di file completo di un file PRI. Si tratta del file PRI di cui verrà eseguito il dump in XML.
+Percorso completo di un file PRI. Si tratta del file PRI che verrà scaricato in XML.
 
 </dd> <dt>
 
@@ -60,34 +60,34 @@ Percorso di file completo di un file PRI. Si tratta del file PRI di cui verrà e
 
 Tipo: **PCWSTR**
 
-Percorso file completo facoltativo di un file di schema o di un file PRI che rappresenta uno schema. vedere la sezione Osservazioni.
+Percorso completo facoltativo di un file di schema (o di un file PRI che rappresenta uno schema; vedere la sezione Osservazioni).
 
 </dd> <dt>
 
-*dumpType* \[ in\]
+*dumpType* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmDumpType**](mrmdumptype.md)**
 
-Specifica il modo in cui il dump XML deve essere dettagliato o se deve essere eseguito il dump di uno schema.
+Specifica il livello di dettaglio del dump XML o se è necessario eseguire il dump di uno schema.
 
 </dd> <dt>
 
-*outputXmlData* \[ out\]
+*outputXmlData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
-Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con il puntatore a byte per liberare la memoria.
+Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputXmlData.* Chiamare [**MrmFreeMemory con**](mrmfreememory.md) il puntatore a BYTE per liberare la memoria.
 
 </dd> <dt>
 
-*outputXmlSize* \[ out\]
+*outputXmlSize* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Indirizzo di ULONG. In _outputXmlSize *, la funzione restituisce le dimensioni della memoria allocata a cui punta *outputXmlData*.
+Indirizzo di un ULONG. In *outputXmlSize* la funzione restituisce le dimensioni della memoria allocata a cui punta *outputXmlData.*
 
 </dd> </dl>
 
@@ -95,11 +95,11 @@ Indirizzo di ULONG. In _outputXmlSize *, la funzione restituisce le dimensioni d
 
 Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Un pacchetto di risorse senza schema è uno creato con l'argomento [**MrmPackagingOptionsOmitSchemaFromResourcePacks**](mrmpackagingoptions.md) passato a [**MrmCreateResourceFile**](mrmcreateresourcefile.md) o [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md) (oppure con l'opzione *omitSchemaFromResourcePacks* nel file di configurazione pri). Per eseguire il dump di un pacchetto di risorse senza schema, passare il percorso ai dati PRI del pacchetto principale come argomento per il parametro *schemaPriFile* .
+Un pacchetto di risorse senza schema è quello creato con l'argomento [**MrmPackagingOptionsOmitSchemaFromResourcePacks**](mrmpackagingoptions.md) passato a [**MrmCreateResourceFile**](mrmcreateresourcefile.md) o [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md) (o con l'opzione *omitSchemaFromResourcePacks* nel file di configurazione PRI). Per eseguire il dump di un pacchetto di risorse senza schema, passare il percorso ai dati PRI del pacchetto principale come argomento per il *parametro schemaPriFile.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -107,10 +107,10 @@ Un pacchetto di risorse senza schema è uno creato con l'argomento [**MrmPackagi
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

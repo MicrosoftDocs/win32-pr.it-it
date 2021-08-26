@@ -1,19 +1,19 @@
 ---
-description: Forma intuitiva di System. Photo. saturation. Non concepito per essere analizzato a livello di codice.
+description: Forma descrittiva di System.Photo.Saturation. Non deve essere analizzato a livello di codice.
 ms.assetid: 2d6a524c-515a-439a-a57d-d0506cfddcca
-title: System. Photo. SaturationText
+title: System.Photo.SaturationText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5973a95fa9300066b1c1c787a938cb9e4898e056
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe40f17e784633d74656dd9cdb79ddc80200e0eb01f16e08ac0568cbacd71518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058451"
 ---
-# <a name="systemphotosaturationtext"></a>System. Photo. SaturationText
+# <a name="systemphotosaturationtext"></a>System.Photo.SaturationText
 
-Forma intuitiva di [System. Photo. Saturation](./props-system-photo-saturation.md). Non concepito per essere analizzato a livello di codice.
+Forma descrittiva di [System.Photo.Saturation.](./props-system-photo-saturation.md) Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

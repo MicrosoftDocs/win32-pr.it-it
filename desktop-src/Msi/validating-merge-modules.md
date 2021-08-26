@@ -1,23 +1,23 @@
 ---
-description: Gli autori devono eseguire la convalida in ogni nuovo modulo unione, o appena modificato, prima di tentare di unire il modulo in un database di installazione per la prima volta.
+description: Gli autori devono eseguire la convalida in ogni modulo unione nuovo o modificato prima di tentare di unire il modulo in un database di installazione per la prima volta.
 ms.assetid: 8d6794af-403a-416e-8ace-1af3f193414b
-title: Convalida di moduli merge
+title: Convalida dei moduli unione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d8bbe7f1c1ea32baa39cadd7c729f3a8ca3ac17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af5a226f72e35ce4ee76599444e86ef80bd71a8866ca80eef2a5da04a87fb79a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995800"
 ---
-# <a name="validating-merge-modules"></a>Convalida di moduli merge
+# <a name="validating-merge-modules"></a>Convalida dei moduli unione
 
-Gli autori devono eseguire la convalida in ogni nuovo modulo unione, o appena modificato, prima di tentare di unire il modulo in un database di installazione per la prima volta. La convalida del modulo merge funziona allo stesso modo della [convalida dei pacchetti](package-validation.md) , ma usa un set diverso di [analizzatori di coerenza interni](internal-consistency-evaluators-ices.md) specifici dei moduli unione. Per ulteriori informazioni su questi moduli di merge, vedere la pagina relativa al [riferimento ghiaccio del modulo merge](merge-module-ice-reference.md).
+Gli autori devono eseguire la convalida in ogni modulo unione nuovo o modificato prima di tentare di unire il modulo in un database di installazione per la prima volta. La convalida dei moduli di [](package-validation.md) merge funziona come la convalida dei pacchetti, ma usa un set diverso di analizzatori di coerenza [interna](internal-consistency-evaluators-ices.md) specifici per i moduli di merge. Per altre informazioni su queste ICE del modulo di merge, vedere [Merge Module ICE Reference](merge-module-ice-reference.md).
 
-I moduli CIEM di tipo merge vengono archiviati nel file con estensione cub del modulo merge, Mergemod. cub. L'installazione dello strumento Orca o MSIVal2 fornisce anche i file logo. cub, Darice. cub e Mergemod. cub.
+Le ICE del modulo unione vengono archiviate nel file con estensione cub del modulo unione Mergemod.cub. L'installazione dello strumento Orca o msival2 fornisce anche i file Logo.cub, Darice.cub e Mergemod.cub.
 
-Per ulteriori informazioni, vedere la pagina relativa al [riferimento ghiaccio del modulo merge](merge-module-ice-reference.md).
+Per altre informazioni, vedere [Informazioni di riferimento su ICE del modulo di merge](merge-module-ice-reference.md).
 
  
 

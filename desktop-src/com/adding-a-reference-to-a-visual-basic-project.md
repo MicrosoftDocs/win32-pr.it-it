@@ -1,43 +1,43 @@
 ---
-title: Aggiunta di un riferimento a un progetto Visual Basic
-description: Aggiunta di un riferimento a un progetto Visual Basic
+title: Aggiunta di un riferimento a un Visual Basic Project
+description: Aggiunta di un riferimento a un Visual Basic Project
 ms.assetid: 635b1fe9-e592-42d7-a0ee-34fea205f412
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b29b99610464287f34e9c78e44319c16b4d47c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: deba6030e57839e0f436239790aaa6f02e2fb29981ce021b0de2d09af2acdff6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097071"
 ---
-# <a name="adding-a-reference-to-a-visual-basic-project"></a>Aggiunta di un riferimento a un progetto Visual Basic
+# <a name="adding-a-reference-to-a-visual-basic-project"></a>Aggiunta di un riferimento a un Visual Basic Project
 
-Nella procedura riportata di seguito viene descritto come aggiungere un riferimento a un oggetto COM a un progetto Visual Basic. L'applicazione può quindi usare le classi di tale oggetto.
+La procedura seguente descrive come aggiungere un riferimento a un oggetto COM a un Visual Basic progetto. L'applicazione può quindi usare le classi di tale oggetto.
 
-Quando si aggiunge un oggetto come riferimento, è possibile utilizzare solo la libreria dei tipi fornita dal controllo o la libreria dei tipi "Raw". Al contrario, l'aggiunta di un controllo come componente espone anche le proprietà e i metodi del Visual Basic Extender come se facessero parte del controllo.
+Quando si aggiunge un oggetto come riferimento, è possibile usare solo la libreria dei tipi fornita dal controllo o la libreria dei tipi "non elaborata". Al contrario, l'aggiunta di un controllo come componente espone anche le proprietà e i metodi dell Visual Basic extender come se fossero parte del controllo.
 
-**Per creare un riferimento Visual Basic a un componente**
+**Per creare un Visual Basic riferimento a un componente**
 
 1.  Nel menu **Progetto**, fare clic su **Riferimenti**.
-2.  Fare clic per selezionare la casella di controllo accanto al componente che si desidera aggiungere. Se il componente non è elencato, individuare il file con estensione dll o ocx utilizzando **Sfoglia**.
+2.  Fare clic per selezionare la casella di controllo accanto al componente da aggiungere. Se il componente non è elencato, individuare il file .dll o ocx usando **Sfoglia**.
 3.  Fare clic su **OK**.
 
-Il componente fa ora parte del progetto. L'applicazione può creare istanze di classe usando la parola chiave **New** .
+Il componente fa ora parte del progetto. L'applicazione può creare istanze di classe usando la **parola chiave New.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Aggiunta di un componente a un progetto Visual Basic](adding-a-component-to-a-visual-basic-project.md)
+[Aggiunta di un componente a un Visual Basic Project](adding-a-component-to-a-visual-basic-project.md)
 </dt> <dt>
 
-[Conversione in Visual Basic](translating-to-visual-basic.md)
+[Traduzione in Visual Basic](translating-to-visual-basic.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

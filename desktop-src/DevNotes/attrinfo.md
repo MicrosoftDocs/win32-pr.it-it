@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 01c061330db3e97989e0700452fd4a205488a9fc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 090f2ab58d8bf1eb4e379166086d31389b533712a3df23f987bba1331f990891
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103731"
 ---
 # <a name="attrinfo-structure"></a>Struttura ATTRINFO
 
@@ -47,7 +47,7 @@ typedef struct tagATTRINFO {
 **tAttrID**
 </dt> <dd>
 
-Tipo di attributo. Vedere [tipi di tag](tag-types.md).
+Tipo di attributo. Vedere [Tipi DI TAG.](tag-types.md)
 
 </dd> <dt>
 
@@ -60,8 +60,8 @@ Flag per questo attributo.
 
 | Valore                                                                                                                                                                                                                                           | Significato                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="ATTRIBUTE_AVAILABLE"></span><span id="attribute_available"></span><dl> <dt>**Attributo \_**</dt> <dt>0x00000001</dt> disponibili </dl> | L'attributo è disponibile.<br/>                             |
-| <span id="ATTRIBUTE_FAILED"></span><span id="attribute_failed"></span><dl> <dt>**Attributo \_ 0x00000002 non riuscito**</dt> <dt></dt> </dl>          | La chiamata non è riuscita perché l'attributo non è disponibile.<br/> |
+| <span id="ATTRIBUTE_AVAILABLE"></span><span id="attribute_available"></span><dl> <dt>**ATTRIBUTE \_ AVAILABLE**</dt> <dt>0x00000001</dt> </dl> | L'attributo è disponibile.<br/>                             |
+| <span id="ATTRIBUTE_FAILED"></span><span id="attribute_failed"></span><dl> <dt>**ATTRIBUTE \_ ERRORE**</dt> <dt>0x00000002</dt> </dl>          | La chiamata non è riuscita perché l'attributo non è disponibile.<br/> |
 
 
 
@@ -72,21 +72,21 @@ Flag per questo attributo.
 **ullAttr**
 </dt> <dd>
 
-Valore **QWORD** (se il tipo di tag è **il \_ tipo \_ di tag QWORD**).
+Un **valore QWORD** (se il tipo di tag è **TAG TYPE \_ \_ QWORD).**
 
 </dd> <dt>
 
 **dwAttr**
 </dt> <dd>
 
-Valore **DWORD** (se il tipo di tag è **il \_ tipo \_ di tag DWORD**).
+Valore **DWORD** (se il tipo di tag è **TAG TYPE \_ \_ DWORD).**
 
 </dd> <dt>
 
 **lpAttr**
 </dt> <dd>
 
-Puntatore a una stringa (se il tipo di tag è **il \_ tipo \_ di tag STRINGREF**).
+Puntatore a una stringa (se il tipo di tag è **TAG \_ TYPE \_ STRINGREF).**
 
 </dd> </dl>
 
@@ -96,8 +96,8 @@ Puntatore a una stringa (se il tipo di tag è **il \_ tipo \_ di tag STRINGREF**
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

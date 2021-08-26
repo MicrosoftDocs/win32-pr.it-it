@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX (wmdrmsdk. h)
-description: La \_ \_ struttura ex restrizioni video WMDRM analoghe \_ \_ include informazioni estese su una restrizione per la riproduzione di contenuto come video analogico.
+title: WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX struttura (Wmdrmsdk.h)
+description: La struttura WMDRM ANALOG VIDEO RESTRICTIONS EX contiene informazioni estese su una restrizione per la riproduzione \_ di contenuto come video \_ \_ \_ analogico.
 ms.assetid: fe9092fe-a717-4377-9653-1cc07795319f
 keywords:
-- Formato di Windows Media per la struttura WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX
-- struttura Windows Media Format
+- WMDRM_ANALOG_VIDEO_RESTRICTIONS_EX struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59c9ca5f58cf2adadeb5a6a0618457472cde976c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e9cbacff2d330c869c35eb7a3d1ca46ae6c80a030495ffec42eabc3726436c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006541"
 ---
-# <a name="wmdrm_analog_video_restrictions_ex-structure"></a>WMDRM \_ la \_ \_ struttura ex restrizione del video analogico \_
+# <a name="wmdrm_analog_video_restrictions_ex-structure"></a>Struttura EX DELLE \_ \_ RESTRIZIONI VIDEO \_ ANALOGICHE WMDRM \_
 
-La **struttura \_ \_ \_ \_ ex restrizioni video WMDRM analoghe** include informazioni estese su una restrizione per la riproduzione di contenuto come video analogico.
+La **struttura WMDRM \_ ANALOG VIDEO \_ \_ RESTRICTIONS \_ EX** contiene informazioni estese su una restrizione per la riproduzione di contenuto come video analogico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ ID restrizione.
 **cbRestrictionData**
 </dt> <dd>
 
-Dimensioni in byte dei dati di restrizione.
+Dimensioni dei dati di restrizione in byte.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Dati di restrizione.
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Nessuna.
 [**Strutture**](drm-structures.md)
 </dt> <dt>
 
-[**\_restrizioni video analogiche WMDRM \_ \_**](wmdrm-analog-video-restrictions.md)
+[**RESTRIZIONI VIDEO \_ \_ ANALOGICO WMDRM \_**](wmdrm-analog-video-restrictions.md)
 </dt> </dl>
 
  

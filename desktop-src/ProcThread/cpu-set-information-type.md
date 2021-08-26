@@ -1,7 +1,7 @@
 ---
-description: Rappresenta il tipo di informazioni nella struttura delle \_ informazioni del set di CPU di sistema \_ \_ .
+description: Rappresenta il tipo di informazioni nella struttura SYSTEM \_ CPU \_ SET \_ INFORMATION.
 ms.assetid: B42CB8E8-0010-4B11-AB0D-6D196DCCC90A
-title: Enumerazione CPU_SET_INFORMATION_TYPE (Processthreadapi. h)
+title: CPU_SET_INFORMATION_TYPE enumerazione (Processthreadapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Processthreadapi.h
-ms.openlocfilehash: 0283275856e8e68bf983aaeb9a7660a5a0a6bf59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c932a143553c1101d6a81bac86ba54e21603eaf80ed5d2613484bff22a7e625
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101931"
 ---
-# <a name="cpu_set_information_type-enumeration"></a>\_Enumerazione del \_ tipo di informazioni set CPU \_
+# <a name="cpu_set_information_type-enumeration"></a>Enumerazione \_ CPU SET INFORMATION \_ \_ TYPE
 
-Rappresenta il tipo di informazioni nella struttura [**delle \_ \_ \_ informazioni del set di CPU di sistema**](/windows/desktop/api/winnt/ns-winnt-system_cpu_set_information) .
+Rappresenta il tipo di informazioni nella struttura [**SYSTEM \_ CPU SET \_ \_ INFORMATION.**](/windows/desktop/api/winnt/ns-winnt-system_cpu_set_information)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,9 +52,9 @@ La struttura contiene informazioni sul set di CPU.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>Processthreadsapi. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                       |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Processthreadsapi.h (includere Windows.h)</dt> </dl> |
 
 
 

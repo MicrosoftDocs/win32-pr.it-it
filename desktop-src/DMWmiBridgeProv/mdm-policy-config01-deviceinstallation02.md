@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_DeviceInstallation02
-description: La \_ \_ classe Config01 DeviceInstallation02 dei criteri MDM \_ Configura i criteri di installazione del dispositivo disponibili.
+title: MDM_Policy_Config01_DeviceInstallation02 classe
+description: La classe Mdm \_ Policy \_ Config01 \_ DeviceInstallation02 configura i criteri di installazione dei dispositivi disponibili.
 ms.assetid: 6aa60809-d6c7-4dfb-9144-e5d69466f454
 keywords:
-- Classe MDM_Policy_Config01_DeviceInstallation02
-- Classe MDM_Policy_Config01_DeviceInstallation02, descritta
+- MDM_Policy_Config01_DeviceInstallation02 classe
+- MDM_Policy_Config01_DeviceInstallation02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79df6829f05a49ff5f16e3d8e0cd3dfabfc7bbf7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a1046372bb9af844e287370de9fe8c0f982c5b98d08a5963ca17cfc3b1278e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104231"
 ---
-# <a name="mdm_policy_config01_deviceinstallation02-class"></a>\_ \_ Classe Config01 DeviceInstallation02 di criteri \_ MDM
+# <a name="mdm_policy_config01_deviceinstallation02-class"></a>Classe \_ \_ \_ DeviceInstallation02 di Mdm Policy Config01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ \_ classe Config01 DeviceInstallation02 dei criteri MDM \_ Configura i criteri di installazione del dispositivo disponibili.
+La classe Mdm \_ Policy \_ Config01 \_ DeviceInstallation02 configura i criteri di installazione dei dispositivi disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,20 +47,20 @@ class MDM_Policy_Config01_DeviceInstallation02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ DeviceInstallation02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ DeviceInstallation02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ DeviceInstallation02 dei criteri MDM Config01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Config01 \_ DeviceInstallation02** ha queste proprietà.
 
 <dl> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -71,10 +71,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,10 +88,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [PreventInstallationOfMatchingDeviceIDs](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -99,10 +99,10 @@ Tipo di accesso: lettura/scrittura
 [PreventInstallationOfMatchingDeviceSetupClasses](/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -113,10 +113,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

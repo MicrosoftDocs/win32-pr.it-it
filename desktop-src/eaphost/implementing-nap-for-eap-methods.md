@@ -4,20 +4,20 @@ description: Informazioni su come implementare il supporto di Protezione accesso
 ms.assetid: c25e4f03-759a-47a7-8b35-bbe669501c5c
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cff84c24aeb475b83146f2c56e9e139fd930eac27656349c594f05d91c1036fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00860057baeedbfdbae1939ab402db6f28fd74bd
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118273315"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812382"
 ---
 # <a name="implementing-nap-support-for-eap-methods"></a>Implementazione del supporto di Protezione accesso alla rete per i metodi EAP
 
-In questo argomento viene illustrato come implementare Protezione accesso alla rete per una supplica EAPHost. In Windows Vista e Windows Server 2008 è disponibile un client di imposizione Protezione accesso alla rete (NAP EC) per le connessioni [autenticate 802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10))
+In questo argomento viene illustrato come implementare Protezione accesso alla rete per una supplica EAPHost. In Windows Vista e Windows Server 2008 è disponibile un client di imposizione protezione accesso alla rete (NAP EC) per le connessioni autenticate [802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10))
 
 ## <a name="implementing-network-access-protection-nap"></a>Implementazione di Protezione accesso alla rete
 
-Per supportare Protezione accesso alla rete, un supplicante EAPHost implementa una funzione di callback corrispondente al prototipo di callback [**NotificationHandler**](/previous-versions/windows/desktop/api) e deve fornire un puntatore a questa funzione di callback quando si [**chiama EapHostPeerBeginSession.**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
+Per supportare Protezione accesso alla rete, un supplicante EAPHost implementa una funzione di callback corrispondente al prototipo di callback [**NotificationHandler**](/previous-versions/windows/desktop/api) e deve fornire un puntatore a questa funzione di callback quando si [**chiama EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession).
 
 La funzione di callback accetta due parametri.
 
@@ -36,7 +36,7 @@ Per informazioni su Protezione accesso alla rete relative all'API EAPHost, veder
 
 -   [**TIPO DI \_ ATTRIBUTO \_ EAP**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_attribute_type)
 -   [**ERRORE \_ EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_error)
--   [Domande frequenti su EAPHost Supplicant](eaphost-supplicant-frequently-asked-questions.md)
+-   [Domande frequenti su EAPHost Supplicant](eaphost-supplicant-frequently-asked-questions.yml)
 -   [**Proprietà del metodo EAP**](eap-method-properties.md)
 -   [**EapHostPeerBeginSession**](/previous-versions/windows/desktop/api/eappapis/nf-eappapis-eaphostpeerbeginsession)
 -   [**Costanti relative a errori e informazioni EAP**](eap-related-error-and-information-constants.md)
@@ -48,7 +48,7 @@ Per informazioni su Protezione accesso alla rete relative all'API EAPHost, veder
 
 -   Per un elenco delle risorse di Protezione accesso alla rete, vedere [Protezione accesso alla rete.](https://go.microsoft.com/fwlink/p/?linkid=84107)
 -   Per informazioni sull'informativa sull'integrità, vedere [Network Access Protection (NAP) Statement of Health (SoH) Messages](https://go.microsoft.com/fwlink/p/?linkid=83918).
--   Per la pagina Enterprise web e il blog del gruppo di rete, vedere Protezione accesso [alla rete](https://go.microsoft.com/fwlink/p/?linkid=83845).
+-   Per la pagina Enterprise e il blog del gruppo di rete, vedere Protezione accesso [alla rete](https://go.microsoft.com/fwlink/p/?linkid=83845).
 -   Per informazioni sull'API protezione accesso alla rete, vedere [Protezione accesso alla rete.](/windows/desktop/NAP/network-access-protection-start-page)
 
 

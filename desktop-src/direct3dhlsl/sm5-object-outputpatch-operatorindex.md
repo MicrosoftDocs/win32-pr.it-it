@@ -1,9 +1,9 @@
 ---
-title: 'Funzione OutputPatch:: operator'
-description: "Restituisce l'ennesimo punto di controllo nella patch. | Funzione OutputPatch:: operator"
+title: Funzione OutputPatch::Operator
+description: Restituisce l'eesimo punto di controllo nella patch. | Funzione OutputPatch::Operator
 ms.assetid: 3ac15fe8-8bab-46a2-8826-61ade927c99e
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8194713dc4967151991fab95000fa70c40122f26
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 684925491ce7b5ac50cb293b3c8a0270557c9b9e65fcfcde63e9699127bc7ed0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023471"
 ---
-# <a name="outputpatchoperator--function"></a>Funzione OutputPatch:: operator
+# <a name="outputpatchoperator--function"></a>Funzione OutputPatch::Operator
 
-Restituisce il punto <sup>di controllo</sup> *n* nella patch.
+Restituisce *l'eesimo*<sup></sup> punto di controllo nella patch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Indice di input.
 
 Tipo: **T**
 
-Il punto <sup>di controllo</sup> *n*.
+N *punto*<sup>di</sup> controllo.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [OutputPatch](sm5-object-outputpatch.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

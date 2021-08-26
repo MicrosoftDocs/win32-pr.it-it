@@ -1,23 +1,23 @@
 ---
-title: dcl_output_control_point_count (SM5-ASM)
-description: Dichiara il conteggio dei punti di controllo dell'output di Hull shader.
+title: dcl_output_control_point_count (sm5 - asm)
+description: Dichiara il conteggio dei punti di controllo dell'output dello hull shader.
 ms.assetid: 51E8117F-1802-413B-9820-04D5CEBE2DB6
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 147f8f7021252f07cdb6dd0f225555ff0f23d54b
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 93dc28a2af3ac50c835fa7ec38d7d344029af76a11cb2b84945dbf5009d68473
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024701"
 ---
-# <a name="dcl_output_control_point_count-sm5---asm"></a>\_ \_ \_ conteggio punti di controllo output DCL \_ (SM5-ASM)
+# <a name="dcl_output_control_point_count-sm5---asm"></a>Conteggio punti di controllo di output dcl \_ \_ \_ \_ (sm5 - asm)
 
-Dichiara il conteggio dei punti di controllo dell'output di Hull shader.
+Dichiara il conteggio dei punti di controllo dell'output dello hull shader.
 
 
 
-| \_ \_ conteggio punti di controllo output DCL \_ \_ N |
+| dcl \_ output control point count \_ \_ \_ N |
 |--------------------------------------|
 
 
@@ -28,7 +28,7 @@ Dichiara il conteggio dei punti di controllo dell'output di Hull shader.
 
 | Elemento                                                   | Descrizione                                                                                    |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| <span id="N"></span><span id="n"></span>*N*<br/> | \[in \] un valore intero compreso tra 0 e 32 che specifica il conteggio dei punti di controllo di output.<br/> |
+| <span id="N"></span><span id="n"></span>*N*<br/> | \[in \] Valore intero compreso tra 0 e 32 che specifica il conteggio dei punti di controllo di output.<br/> |
 
 
 
@@ -36,21 +36,21 @@ Dichiara il conteggio dei punti di controllo dell'output di Hull shader.
 
 ## <a name="remarks"></a>Commenti
 
-Se non sono necessari, Hull shader può restituire 0 punti di controllo.
+Lo hull shader può ottenere 0 punti di controllo se non sono necessari.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull                 | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo                 | Dominio | Geometria | Pixel | Calcolo |
 |--------|----------------------|--------|----------|-------|---------|
-|        | Sezione delle dichiarazioni |        |          |       |         |
+|        | Sezione Dichiarazioni |        |          |       |         |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -58,12 +58,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -73,7 +73,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_SETCURSEL (COMmctrl. h)
-description: Imposta la data attualmente selezionata per un controllo di calendario mensile. Se la data specificata non è visualizzata, il controllo Aggiorna la visualizzazione per visualizzarla. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro MonthCal.
+title: MCM_SETCURSEL messaggio (Commctrl.h)
+description: Imposta la data attualmente selezionata per un controllo calendario mensile. Se la data specificata non è visualizzata, il controllo aggiorna la visualizzazione per visualizzarla. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro MonthCal SetCurSel.
 ms.assetid: 2a9f82a1-66d9-44dd-b60f-b588b4688316
 keywords:
-- Controlli di Windows Message MCM_SETCURSEL
+- MCM_SETCURSEL di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cceff48fbc4ffdb7446277d506c369e1bd89c92b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e63238f11f93e56c18e1897fcdd3cb96977f23fe16bde19123b5c063f99c0ff0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061891"
 ---
-# <a name="mcm_setcursel-message"></a>Messaggio in MCM \_
+# <a name="mcm_setcursel-message"></a>Messaggio \_ DI MCM SETCURSEL
 
-Imposta la data attualmente selezionata per un controllo di calendario mensile. Se la data specificata non è visualizzata, il controllo Aggiorna la visualizzazione per visualizzarla. È possibile inviare questo messaggio in modo esplicito o utilizzando [**la \_ macro MonthCal**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcursel) .
+Imposta la data attualmente selezionata per un controllo calendario mensile. Se la data specificata non è visualizzata, il controllo aggiorna la visualizzazione per visualizzarla. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ MonthCal SetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcursel)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta la data attualmente selezionata per un controllo di calendario mensile. 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che contiene la data da impostare come selezione corrente.
+Puntatore a [**una struttura SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) contenente la data da impostare come selezione corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso contrario. Questo messaggio avrà esito negativo se applicato a un controllo calendario mensile che usa lo stile [**\_ MultiSelect MCS**](month-calendar-control-styles.md) .
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario. Questo messaggio avrà esito negativo se applicato a un controllo calendario mensile che usa lo [**stile MCS \_ MULTISELECT.**](month-calendar-control-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Restituisce un valore diverso da zero se ha esito positivo oppure zero in caso c
 
 <dl> <dt>
 
-[Orari del controllo calendario mensile](month-calendar-controls.md)
+[Ore nel controllo Calendario mensile](month-calendar-controls.md)
 </dt> </dl>
 
  

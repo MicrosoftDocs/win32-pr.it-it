@@ -1,19 +1,19 @@
 ---
 title: Funzioni di configurazione del router
-description: Usare le funzioni seguenti quando si sviluppa il software per configurare i router Windows.
+description: Usare le funzioni seguenti durante lo sviluppo di software per configurare Windows router.
 ms.assetid: fb65885c-7c3b-4c90-9516-388f09703c90
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09ccc9ffafc257112a4692d20a47dd37a43c4204
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf242f28fd7e398d05076dbdb7f023be9d4b1b1f9d540117efea5917a2c43b90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104043985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081201"
 ---
 # <a name="router-configuration-functions"></a>Funzioni di configurazione del router
 
-Usare le funzioni seguenti quando si sviluppa il software per configurare i router Windows.
+Usare le funzioni seguenti durante lo sviluppo di software per configurare Windows router.
 
 -   [**MprConfigBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigbufferfree)
 -   [**MprConfigFilterGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigfiltergetinfo)
@@ -50,9 +50,9 @@ Usare le funzioni seguenti quando si sviluppa il software per configurare i rout
 -   [**MprConfigTransportGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigtransportgetinfo)
 -   [**MprConfigTransportSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mprconfigtransportsetinfo)
 
- 
+ 
 
- 
+ 
 
 
 

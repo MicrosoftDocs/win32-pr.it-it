@@ -1,9 +1,9 @@
 ---
 title: Elemento Exclusive
-description: Indica se l'utilità di pianificazione deve avviare l'attività durante la manutenzione automatica in modalità esclusiva.
+description: Indica se l'Utilità di pianificazione deve avviare l'attività durante la manutenzione automatica in modalità esclusiva.
 ms.assetid: F690FD8F-BCCB-456D-92E3-25A262D6DCF1
 keywords:
-- Elemento esclusivo Utilità di pianificazione
+- Elementi esclusivi Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e0cd7cf5b2a5ce3aa68f92834aa45563000945d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aab796abfdcad67a348b6d42186732d402bbe8eeeb359ac772588fe809dbf73c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991331"
 ---
 # <a name="exclusive-element"></a>Elemento Exclusive
 
-Indica se l'utilità di pianificazione deve avviare l'attività durante la manutenzione automatica in modalità esclusiva.
+Indica se l'Utilità di pianificazione deve avviare l'attività durante la manutenzione automatica in modalità esclusiva.
 
 L'esclusività è garantita solo tra altre attività di manutenzione e non concede alcuna priorità di ordinamento dell'attività. Se l'esclusività non è specificata, l'attività viene avviata in parallelo con altre attività di manutenzione.
 
@@ -34,7 +34,7 @@ L'esclusività è garantita solo tra altre attività di manutenzione e non conce
  />
 ```
 
-L'elemento **Exclusive** è definito dal tipo complesso [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) .
+**L'elemento Exclusive** è definito dal [**tipo complesso maintenanceSettingsType.**](taskschedulerschema-maintenancesettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -42,17 +42,17 @@ L'elemento **Exclusive** è definito dal tipo complesso [**maintenanceSettingsTy
 
 | Elemento                                                                                                                          | Derivato da                                                                               | Descrizione                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**MaintenanceSettings (maintenanceSettingsType)**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) | Specifica le impostazioni dell'attività che l'utilità di pianificazione utilizzerà per avviare l'attività durante la manutenzione automatica.<br/> |
+| [**MaintenanceSettings (maintenanceSettingsType)**](taskschedulerschema-maintenancesettings-maintenancesettingstype-element.md) | [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) | Specifica le impostazioni dell'attività che verranno usate dall'Utilità di pianificazione per avviare l'attività durante la manutenzione automatica.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per la programmazione in C++, questa impostazione di inattività viene specificata tramite la proprietà [**IMaintenanceSettings:: Exclusive**](/windows/desktop/api/Taskschd/nf-taskschd-imaintenancesettings-get_exclusive) .
+Per la programmazione C++, questa impostazione inattiva viene specificata usando la [**proprietà IMaintenanceSettings::Exclusive.**](/windows/desktop/api/Taskschd/nf-taskschd-imaintenancesettings-get_exclusive)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce l'attività di manutenzione con requisito di scadenza impostato su 15 giorni.
+Nel codice XML seguente viene definita l'attività di manutenzione con un requisito di scadenza impostato su 15 giorni.
 
 
 ```XML
@@ -71,8 +71,8 @@ Il codice XML seguente definisce l'attività di manutenzione con requisito di sc
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/> |
 
 
 
@@ -80,7 +80,7 @@ Il codice XML seguente definisce l'attività di manutenzione con requisito di sc
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

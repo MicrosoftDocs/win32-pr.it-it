@@ -1,6 +1,6 @@
 ---
-title: dcl_immediateConstantBuffer (SM4-ASM)
-description: '\_immediateConstantBuffer DCL (SM4-ASM)'
+title: dcl_immediateConstantBuffer (sm4 - asm)
+description: dcl \_ immediateConstantBuffer (sm4 - asm)
 ms.assetid: 55e21ab1-0749-4200-8e68-bb098e935dac
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,40 +9,40 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6f4b4868f3b07285465abb9080688adf6129e1bf
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
-ms.translationtype: HT
+ms.openlocfilehash: 781a792257b23a3d89cfa432ccc1ead9e5d756159beb428defc3404ba32df47c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104335652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024801"
 ---
-# <a name="dcl_immediateconstantbuffer-sm4---asm"></a>\_immediateConstantBuffer DCL (SM4-ASM)
+# <a name="dcl_immediateconstantbuffer-sm4---asm"></a>dcl \_ immediateConstantBuffer (sm4 - asm)
 
-Dichiara un buffer di costante (immediate) dello shader.
+Dichiara un buffer costante immediato dello shader.
 
 
 
-| \_ *valori* immediateConstantBuffer di DCL |
+| dcl \_ immediateConstantBuffer *value(s)* |
 |-----------------------------------------|
 
 
 
- 
+ 
 
 <dl> <dt>
 
-<span id="value_s_"></span><span id="VALUE_S_"></span>*valore/i*
+<span id="value_s_"></span><span id="VALUE_S_"></span>*Valori*
 </dt> <dd>
 
-\[nel \] buffer deve contenere almeno un valore, ma non più di 4096 valori.
+\[in \] Il buffer deve contenere almeno un valore, ma non più di 4096 valori.
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Commenti
 
-Uno shader è consentito un buffer di costante immediata. Viene eseguito l'accesso a un buffer di costanti immediate come un buffer costante con indicizzazione dinamica.
+A uno shader è consentito un buffer costante immediato. L'accesso a un buffer costante immediato è simile a un buffer costante con indicizzazione dinamica.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -52,39 +52,39 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
- 
+ 
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader in linguaggio assembly usando il modello di Shader 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. Non è possibile creare uno shader in linguaggio assembly usando il modello shader 4.
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

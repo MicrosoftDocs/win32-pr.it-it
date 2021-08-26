@@ -1,7 +1,7 @@
 ---
-description: Accetta un flusso in un file di nota Journal e restituisce un flusso XML che rappresenta il contenuto del documento.
+description: Accetta un flusso in un file journal note e restituisce un flusso XML che rappresenta il contenuto del documento.
 ms.assetid: 5a169dfe-b102-4aef-9efe-5db2cd2fb96f
-title: 'Metodo IJournalReader:: ReadFromStream (Journal. h)'
+title: Metodo IJournalReader::ReadFromStream (Journal.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Journal.dll
-ms.openlocfilehash: 258ac30b8857fa4ef24bd86a08c7e402229f4bff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dbe9d7929f616914d06cad237f486677cd8e5616cb04bf28a5836751ca0a3c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057851"
 ---
-# <a name="ijournalreaderreadfromstream-method"></a>Metodo IJournalReader:: ReadFromStream
+# <a name="ijournalreaderreadfromstream-method"></a>Metodo IJournalReader::ReadFromStream
 
-Accetta un flusso in un file di nota Journal e restituisce un flusso XML che rappresenta il contenuto del documento.
+Accetta un flusso in un file journal note e restituisce un flusso XML che rappresenta il contenuto del documento.
 
 > [!Note]  
-> Il componente Reader Journal non è in grado di leggere i file journal di Windows creati da computer che eseguono Windows 7 o versioni successive. L'interfaccia IJournalReader deve essere considerata deprecata o obsoleta e non deve essere utilizzata.
+> Il componente Lettore journal non è in grado Windows file Journal creati da computer che eseguono Windows 7 o versioni successive. L'interfaccia IJournalReader deve essere considerata deprecata o obsoleta e non deve essere usata.
 
  
 
@@ -45,31 +45,31 @@ HRESULT ReadFromStream(
 
 <dl> <dt>
 
-*pJournalFileStream* \[ in\]
+*pJournalFileStream* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) che rappresenta il file journal da leggere.
+Oggetto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) che rappresenta il file Journal da leggere.
 
 </dd> <dt>
 
 *ppXmlStream* \[ out, retval\]
 </dt> <dd>
 
-Puntatore all'indirizzo di un oggetto [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) che riceverà il flusso XML creato leggendo il file journal.
+Puntatore all'indirizzo di un [**oggetto IStream**](/windows/desktop/api/objidl/nn-objidl-istream) che riceverà il flusso XML creato leggendo il file Journal.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-I flussi vengono usati per evitare l'accesso diretto al file system e per consentire la scelta del metodo di analisi XML da usare.
+Flussi vengono usati per evitare l'accesso diretto al file system e per consentire la scelta del metodo di analisi XML da usare.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente di un gestore per l'evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) di un pulsante Crea un'istanza dell'interfaccia dell' [**interfaccia IJournalReader**](ijournalreader.md) e la usa per leggere un file journal esistente.
+L'esempio seguente di un gestore per l'evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) di un pulsante crea un'istanza dell'interfaccia [**IJournalReader e**](ijournalreader.md) la usa per leggere un file Journal esistente.
 
 
 ```C++
@@ -154,9 +154,9 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                         |
-| Intestazione<br/>                   | <dl> <dt>Journal. h (richiede anche journal \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Journal.h (richiede anche journal \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Journal.dll</dt> </dl>                            |
 
 
@@ -168,7 +168,7 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 [**Interfaccia IJournalReader**](ijournalreader.md)
 </dt> <dt>
 
-[Riferimento allo schema del lettore Journal](journal-reader-schema-reference.md)
+[Informazioni di riferimento sullo schema del lettore journal](journal-reader-schema-reference.md)
 </dt> </dl>
 
  

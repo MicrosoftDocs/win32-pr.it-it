@@ -1,24 +1,24 @@
 ---
-description: L'attributo mlength specifica la durata di un file di origine. Questo valore deve corrispondere alla durata effettiva oppure è possibile che si verifichino errori di rendering.
+description: L'attributo mlength specifica la durata di un file di origine. Questo valore deve essere la durata effettiva o possono verificarsi errori di rendering.
 ms.assetid: f33ce85c-df61-4248-8dea-677162fa1a07
 title: Attributo mlength
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35eadc288e29d99df0e6af7f06e1404d86f6a938
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b2aac65cd917fe99e296298bac425e0ff76ca18fc51c82e9294eaedf0ef1c23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051151"
 ---
 # <a name="mlength-attribute"></a>Attributo mlength
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `mlength` attributo specifica la durata di un file di origine. Questo valore deve corrispondere alla durata effettiva oppure è possibile che si verifichino errori di rendering.
+`mlength`L'attributo specifica la durata di un file di origine. Questo valore deve essere la durata effettiva o possono verificarsi errori di rendering.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -26,7 +26,7 @@ L' `mlength` attributo specifica la durata di un file di origine. Questo valore 
 
 ## <a name="possible-values"></a>Valori possibili
 
-Deve essere una stringa con formato *hh: mm: SS. FF* , dove *HH* = hours, *mm* = minutes, *SS* = seconds e *FF* = frazioni di secondi. Esempio: 1:04:30.512. È possibile omettere le unità iniziali. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
+Deve essere una stringa nel formato *hh:mm:ss.ff,* dove *hh* = ore, mm = *minuti,* *ss* = secondi e *ff* = frazioni di secondi. Esempio: 1:04:30.512. Le unità iniziali possono essere omesse. Ad esempio, 3:00 (tre minuti) e 45 (45 secondi) sono entrambi validi.
 
 ## <a name="see-also"></a>Vedi anche
 

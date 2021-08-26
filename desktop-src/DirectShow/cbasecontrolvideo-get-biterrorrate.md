@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get BitErrorRate recupera una frequenza degli errori di bit approssimativa per il video.
+description: Il metodo get \_ BitErrorRate recupera una frequenza di errore in bit approssimativa per il video.
 ms.assetid: 4078611c-6e09-47c8-8e1c-f33bc6ddca79
-title: Metodo CBaseControlVideo.get_BitErrorRate (Ctlutil. h)
+title: CBaseControlVideo.get_BitErrorRate metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ae15a882f6dcd8840519f9067223dde3e925f6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2602d203ca5a418dcc889d26932cd28be78d984390e71cff996e6fd3938030a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057291"
 ---
-# <a name="cbasecontrolvideoget_biterrorrate-method"></a>Metodo CBaseControlVideo. Get \_ BitErrorRate
+# <a name="cbasecontrolvideoget_biterrorrate-method"></a>Metodo CBaseControlVideo.get \_ BitErrorRate
 
-Il `get_BitErrorRate` metodo recupera una frequenza degli errori di bit approssimativa per il video.
+Il `get_BitErrorRate` metodo recupera una frequenza di errore in bit approssimativa per il video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ HRESULT get_BitErrorRate(
 *pBitErrorRate* 
 </dt> <dd>
 
-Puntatore alla frequenza degli errori di bit (un errore per approssimativamente questo numero di bit).
+Puntatore alla frequenza di errore in bit (un errore per circa questo numero di bit).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce NOERROR se ha esito positivo o E \_ OutOfMemory se la memoria disponibile non è sufficiente.
+Restituisce NOERROR in caso di esito positivo o E \_ OUTOFMEMORY se la memoria disponibile non è sufficiente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IBasicVideo:: Get \_ BitErrorRate**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_biterrorrate) . Chiama il metodo [**CBaseControlVideo:: GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) virtuale pure per recuperare la struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) dalla classe derivata.
+Questa funzione membro implementa il [**metodo IBasicVideo::get \_ BitErrorRate.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_biterrorrate) Chiama il metodo [**CBaseControlVideo::GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) virtuale puro per recuperare la [**struttura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) dalla classe derivata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro implementa il metodo [**IBasicVideo:: Get \_ BitErrorRate
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

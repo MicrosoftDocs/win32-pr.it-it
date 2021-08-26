@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetCutPoint imposta l'ora in cui la transizione passa da un'origine all'altra, se viene eseguito il rendering della transizione come taglia.
+description: Il metodo SetCutPoint imposta l'ora in cui la transizione passa da un'origine a quella successiva, se il rendering della transizione viene eseguito come taglio.
 ms.assetid: 2660f4a8-e249-45d7-8866-02a9f2ef52b8
-title: 'Metodo IAMTimelineTrans:: SetCutPoint (qedit. h)'
+title: Metodo IAMTimelineTrans::SetCutPoint (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c1dad934d373a52b7e6c076c8c20dc8e1c6809ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c411925ebe10ad35641e38ae2332605d7691ae24f0cc96ff716bd7d00e6603f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052071"
 ---
-# <a name="iamtimelinetranssetcutpoint-method"></a>Metodo IAMTimelineTrans:: SetCutPoint
+# <a name="iamtimelinetranssetcutpoint-method"></a>Metodo IAMTimelineTrans::SetCutPoint
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `SetCutPoint` metodo imposta l'ora in cui la transizione passa da un'origine all'altra, se viene eseguito il rendering della transizione come taglia.
+Il metodo imposta l'ora in cui la transizione passa da un'origine a quella successiva, se il rendering della transizione viene `SetCutPoint` eseguito come taglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,19 +54,19 @@ Punto di taglio relativo all'inizio della transizione, in unità di 100 nanoseco
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il punto di taglio è il centro della transizione. Ad esempio, in una transizione che si estende su un secondo, il punto di taglio predefinito è di 0,5 secondi nella transizione.
+Per impostazione predefinita, il punto di taglio è il centro della transizione. Ad esempio, in una transizione che si estende su un secondo, il punto di taglio predefinito è 0,5 secondi nella transizione.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Per impostazione predefinita, il punto di taglio è il centro della transizione.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

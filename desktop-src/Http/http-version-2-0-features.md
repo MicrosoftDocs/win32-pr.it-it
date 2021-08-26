@@ -1,42 +1,42 @@
 ---
-title: Funzionalità HTTP versione 2,0
-description: Per l'API HTTP Server versione 2,0 sono supportate le funzionalità seguenti.
+title: Funzionalità http versione 2.0
+description: La funzionalità seguente è supportata per l'API del server HTTP versione 2.0.
 ms.assetid: 1c8d0c44-ee46-4873-a081-05b77227f40f
 keywords:
-- Funzionalità dell'API versione 2,0 del server HTTP
-- funzionalità, server HTTP versione 2,0 API
+- Funzionalità api del server HTTP versione 2.0
+- funzionalità, API server HTTP versione 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62320ffa4a8ca4609ad0235196b3d20c47d83075
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b51d728bc9b5b685c079321f493ed1391fa22d206961d5fcd817598caa5289e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047241"
 ---
-# <a name="http-version-20-features"></a>Funzionalità HTTP versione 2,0
+# <a name="http-version-20-features"></a>Funzionalità http versione 2.0
 
-Per l'API HTTP Server versione 2,0 sono supportate le funzionalità seguenti.
+La funzionalità seguente è supportata per l'API del server HTTP versione 2.0.
 
--   Oggetti di configurazione del gruppo URL e sessione server
+-   Oggetti di configurazione della sessione del server e del gruppo di URL
 -   Proprietà di configurazione esposte sugli oggetti di configurazione
--   Gestione e configurazione della coda di richieste avanzate
--   SSL in modalità kernel completa
--   Cache di risposta in modalità kernel
+-   Gestione e configurazione avanzate delle code di richieste
+-   SSL in modalità kernel completo
+-   Cache delle risposte in modalità kernel
 -   Autenticazione lato server
 -   Controllo delle versioni con ambito di oggetto
 -   Registrazione lato server
 -   Arresto normale della coda di richieste
--   Avvio della richiesta nella coda di richieste
+-   Avvio della richiesta nella coda delle richieste
 -   Condivisione delle porte
--   Supporto Event Tracing for Windows
+-   Event Tracing for Windows support
 -   Contatori delle prestazioni
--   Supporto per il nome di dominio internazionale (IDN)
--   Utilità di configurazione di NET Shell
+-   Supporto IDN (Internationalized Domain Name)
+-   Utilità di configurazione di Net Shell
 
- 
+ 
 
- 
+ 
 
 
 
