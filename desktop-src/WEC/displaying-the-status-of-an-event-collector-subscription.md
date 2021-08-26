@@ -1,45 +1,45 @@
 ---
 title: Visualizzazione dello stato di una sottoscrizione dell'agente di raccolta eventi
-description: È possibile visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi. Lo stato include la disponibilità della sottoscrizione, l'ultimo errore che si è verificato per la sottoscrizione, l'ora dell'ultimo errore e la prossima volta che la sottoscrizione verrà ritentata.
+description: È possibile visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi. Lo stato include la disponibilità della sottoscrizione, l'ultimo errore che si è verificato per la sottoscrizione, l'ora dell'ultimo errore e il successivo tentativo della sottoscrizione.
 ms.assetid: e1c3c3ed-2f7c-433d-a51d-66c2abd2e961
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7c806d72d4945e2e45384b91bc94fbef3ed08b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a6efd0268ef571d8f9ad984bb70a9e69e489e6349f8af0ee9e47e9aa18a1cc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032651"
 ---
 # <a name="displaying-the-status-of-an-event-collector-subscription"></a>Visualizzazione dello stato di una sottoscrizione dell'agente di raccolta eventi
 
-È possibile visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi. Lo stato include la disponibilità della sottoscrizione, l'ultimo errore che si è verificato per la sottoscrizione, l'ora dell'ultimo errore e la prossima volta che la sottoscrizione verrà ritentata.
+È possibile visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi. Lo stato include la disponibilità della sottoscrizione, l'ultimo errore che si è verificato per la sottoscrizione, l'ora dell'ultimo errore e il successivo tentativo della sottoscrizione.
 
 > [!Note]
 >
-> È possibile usare questo esempio per visualizzare lo stato di una sottoscrizione oppure è possibile digitare il comando seguente al prompt dei comandi:
+> È possibile usare questo esempio per visualizzare lo stato di una sottoscrizione oppure digitare il comando seguente al prompt dei comandi:
 >
-> **wecutil gr** *subscriptionname*
+> **wecutil gr** *SubscriptionName*
 
- 
+ 
 
-Per visualizzarne lo stato, sarà necessario il nome di una sottoscrizione. Per elencare i nomi delle sottoscrizioni correnti in un computer locale, è possibile usare l'esempio C++ illustrato in [elenco delle sottoscrizioni](listing-event-collector-subscriptions.md)degli agenti di raccolta eventi oppure è possibile digitare il comando seguente al prompt dei comandi:
+Sarà necessario il nome di una sottoscrizione per visualizzarne lo stato. Per elencare i nomi delle sottoscrizioni correnti in un computer locale, è possibile usare l'esempio C++ illustrato in [Elenco](listing-event-collector-subscriptions.md)sottoscrizioni agente di raccolta eventi oppure digitare il comando seguente al prompt dei comandi:
 
 **wecutil es**
 
-Nell'esempio seguente viene seguita una procedura per visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi:
+L'esempio seguente segue una procedura per visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi:
 
 **Per visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi**
 
-1.  Aprire la sottoscrizione fornendo il nome della sottoscrizione e i diritti di accesso come parametri della funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Per ulteriori informazioni sui diritti di accesso, vedere [**costanti dell'agente di raccolta eventi di Windows**](windows-event-collector-constants.md).
-2.  Ottenere lo stato della sottoscrizione chiamando la funzione [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (non specificare un'origine evento quando si chiama la funzione).
-3.  Ottenere la matrice di origini eventi della sottoscrizione chiamando la funzione [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando il flag EcSubscriptionRunTimeStatusEventSources.
-4.  Ottenere le informazioni sullo stato per ogni origine evento chiamando la funzione [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando il nome dell'origine evento. Per ulteriori informazioni sulle informazioni sullo stato che possono essere recuperate, vedere l'enumerazione dell' [**\_ \_ \_ \_ \_ ID informazioni sullo stato del runtime di sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
+1.  Aprire la sottoscrizione specificando il nome della sottoscrizione e i diritti di accesso come parametri per la [**funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere [**Costanti dell'agente Windows eventi**](windows-event-collector-constants.md).
+2.  Ottenere lo stato della sottoscrizione chiamando la [**funzione EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) (non specificare un'origine evento quando si chiama la funzione).
+3.  Ottenere la matrice di origini eventi della sottoscrizione chiamando la [**funzione EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando il flag EcSubscriptionRunTimeStatusEventSources.
+4.  Ottenere le informazioni sullo stato per ogni origine evento chiamando la [**funzione EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus) e passando il nome dell'origine evento. Per altre informazioni sulle informazioni sullo stato che è possibile recuperare, vedere l'enumerazione [**EC SUBSCRIPTION RUNTIME STATUS INFO \_ \_ \_ \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_runtime_status_info_id) .
 5.  Stampare le informazioni sullo stato per la sottoscrizione.
-6.  Chiudere la sottoscrizione chiamando la funzione [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+6.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi.
+Nell'esempio di codice C++ seguente viene illustrato come visualizzare lo stato di una sottoscrizione dell'agente di raccolta eventi.
 
 
 ```C++
@@ -429,15 +429,15 @@ std::wstring ConvertEcDateTime( ULONGLONG code )
 
 <dl> <dt>
 
-[Elenco delle sottoscrizioni degli agenti di raccolta eventi](listing-event-collector-subscriptions.md)
+[Elenco delle sottoscrizioni dell'agente di raccolta eventi](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

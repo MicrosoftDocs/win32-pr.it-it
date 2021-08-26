@@ -31,7 +31,7 @@ ms.locfileid: "120002071"
 ---
 # <a name="support-for-multiple-languages"></a>Supporto per più lingue
 
-Windows Media Player 9 Series o versioni successive supporta Windows metafile multimediali creati usando il set di caratteri Unicode. In questo modo è possibile includere metadati multilingue nella playlist del metafile. Le regole seguenti regolano l'uso di metadati multilingue Windows metafile multimediali:
+Windows Media Player 9 Series o versioni successive supporta Windows metafile multimediali creati usando il set di caratteri Unicode. In questo modo è possibile includere metadati multilingue nella playlist del metafile. Le regole seguenti regolano l'uso di metadati multilingue nei metafile Windows multimediali:
 
 -   I caratteri devono essere codificati usando lo schema di codifica UTF-8.
 -   La playlist del metafile deve includere il **parametro PARAM** seguente a livello di playlist:

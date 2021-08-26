@@ -1,6 +1,6 @@
 ---
 title: Attributo ReleaseDateYearMonth
-description: L'attributo ReleaseDateYearMonth è la parte relativa all'anno e al mese della data della versione originale dell'elemento.
+description: L'attributo ReleaseDateYearMonth è la parte anno e mese della data della versione originale dell'elemento.
 ms.assetid: 193377fb-9dbe-4a77-8c34-44f920fb38ba
 keywords:
 - Attributo ReleaseDateYearMonth Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899f35db6d826997047b0d8cf878e41794606baf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79f99191035925756876fbf3e25d8220a34f8eaf9b50bc069f86d08af9047071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002761"
 ---
 # <a name="releasedateyearmonth-attribute"></a>Attributo ReleaseDateYearMonth
 
-L'attributo **ReleaseDateYearMonth** è la parte relativa all'anno e al mese della data della versione originale dell'elemento.
+**L'attributo ReleaseDateYearMonth** è la parte anno e mese della data della versione originale dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **ReleaseDateYearMonth** è la parte relativa all'anno e al mese del
 
 Questo attributo viene archiviato solo nel database di libreria (o nella cache).
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 228ddf777217e9e61369b0a7fc3b3eb1ca012b1d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf3aa2eeb3e908a76e05588940927fff53dd1583c937d95a1c862f6021bd630f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989521"
 ---
 # <a name="d3dx10_image_info-structure"></a>Struttura D3DX10 \_ IMAGE \_ INFO
 
@@ -109,7 +109,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Proprietà delle risorse varie (vedere [**D3D10 \_ RESOURCE \_ MISC \_ FLAG**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)).
+Proprietà varie delle risorse (vedere [**D3D10 \_ RESOURCE \_ MISC \_ FLAG).**](/windows/desktop/api/D3D10/ne-d3d10-d3d10_resource_misc_flag)
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Tipo: **[ **D3DX10 \_ IMAGE \_ FILE \_ FORMAT**](d3dx10-image-file-format.md)**
 
 </dd> <dd>
 
-Rappresenta il formato del file di immagine. Vedere [**D3DX10 \_ IMAGE FILE \_ \_ FORMAT**](d3dx10-image-file-format.md).
+Rappresenta il formato del file di immagine. Vedere FORMATO DEL FILE DI IMMAGINE [**D3DX10 \_ \_ \_**](d3dx10-image-file-format.md).
 
 </dd> </dl>
 

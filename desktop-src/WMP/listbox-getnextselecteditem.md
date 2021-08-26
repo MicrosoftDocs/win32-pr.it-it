@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. getNextSelectedItem
-description: Il metodo getNextSelectedItem Recupera il successivo elemento selezionato nel controllo casella di riepilogo a partire dall'elemento dopo quello con l'indice specificato.
+title: LISTBOX.getNextSelectedItem
+description: Il metodo getNextSelectedItem recupera l'elemento selezionato successivo nel controllo casella di riepilogo a partire dall'elemento successivo a quello con l'indice specificato.
 ms.assetid: 060d196d-2b14-4386-ba01-34256c137db5
 keywords:
-- Media Player di Windows LISTBOX. getNextSelectedItem
+- LISTBOX.getNextSelectedItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8afb3df1f1b6a6adc528e02dd6531ac4fc1a9a3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f4a5d95880b1300ebfb7f1732e7c20b6975ad82cf2d15514c58e68b9f9c42cc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003401"
 ---
-# <a name="listboxgetnextselecteditem"></a>LISTBOX. getNextSelectedItem
+# <a name="listboxgetnextselecteditem"></a>LISTBOX.getNextSelectedItem
 
-Il metodo **getNextSelectedItem** Recupera il successivo elemento selezionato nel controllo casella di riepilogo a partire dall'elemento dopo quello con l'indice specificato.
+Il **metodo getNextSelectedItem** recupera l'elemento selezionato successivo nel controllo casella di riepilogo a partire dall'elemento successivo a quello con l'indice specificato.
 
 ``` syntax
         elementID.getNextSelectedItem(startIndex)
@@ -32,20 +32,20 @@ Il metodo **getNextSelectedItem** Recupera il successivo elemento selezionato ne
 
 <dl> <dt>
 
-<span id="startIndex"></span><span id="startindex"></span><span id="STARTINDEX"></span>*startIndex*
+<span id="startIndex"></span><span id="startindex"></span><span id="STARTINDEX"></span>*Startindex*
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice dell'elemento che precede l'elemento recuperato.
+**Numero** (**long**) contenente l'indice dell'elemento che precede l'elemento recuperato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**) che contiene l'indice del successivo elemento selezionato.
+Questo metodo restituisce un **valore Number** (**long**) contenente l'indice dell'elemento selezionato successivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per avviare la ricerca dall'inizio, utilizzare 1 per l'indice iniziale.
+Per avviare la ricerca dall'inizio, usare 1 per l'indice iniziale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Per avviare la ricerca dall'inizio, utilizzare 1 per l'indice iniziale.
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> </dl>
 
  

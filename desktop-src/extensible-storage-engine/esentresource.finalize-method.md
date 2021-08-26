@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: EsentResource. Finalize (metodo)'
-title: Metodo EsentResource. Finalize
+description: Altre informazioni sul metodo EsentResource.Finalize
+title: Metodo EsentResource.Finalize
 TOCTitle: 'Finalize method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Finalize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.finalize(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f64e7ef69e74e276a051acaa7b772445699b922
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e2d21d1e2f8115b2f61835ae9ff43f0197c27a975c99ccfd32f71b9598be656
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018721"
 ---
-# <a name="esentresourcefinalize-method"></a>Metodo EsentResource. Finalize
+# <a name="esentresourcefinalize-method"></a>Metodo EsentResource.Finalize
 
 Finalizza un'istanza della classe EsentResource.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ protected override void Finalize()
 
 [Membri di EsentResource](./esentresource-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

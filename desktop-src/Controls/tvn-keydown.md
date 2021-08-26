@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TVN_KEYDOWN (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione albero che l'utente ha premuto una chiave e che il controllo di visualizzazione albero ha lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TVN_KEYDOWN di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione albero che l'utente ha premuto un tasto e che il controllo visualizzazione albero ha lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: da0d2b62-2295-4dce-9b37-a250f3be087f
 keywords:
-- Controlli di Windows per il codice di notifica TVN_KEYDOWN
+- TVN_KEYDOWN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ccb18c3bf7dc03056abb55575850821e11eb9bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dadd3386e83e541288249b83028119111a42855a111f7ecb398571a1d46ab356
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002471"
 ---
-# <a name="tvn_keydown-notification-code"></a>Codice di notifica di TVN \_ KeyDown
+# <a name="tvn_keydown-notification-code"></a>Codice di notifica \_ TVN KEYDOWN
 
-Notifica alla finestra padre di un controllo di visualizzazione albero che l'utente ha premuto una chiave e che il controllo di visualizzazione albero ha lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione albero che l'utente ha premuto un tasto e che il controllo visualizzazione albero ha lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ TVN_KEYDOWN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTVKEYDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmtvkeydown) . Il membro **wVKey** specifica il codice della chiave virtuale.
+Puntatore a [**una struttura NMTVKEYDOWN.**](/windows/win32/api/commctrl/ns-commctrl-nmtvkeydown) Il **membro wVKey** specifica il codice della chiave virtuale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il membro **wVKey** di *lParam* è un codice del tasto carattere, il carattere verrà utilizzato come parte di una ricerca incrementale. Restituisce un valore diverso da zero per escludere il carattere dalla ricerca incrementale oppure zero per includere il carattere nella ricerca. Per tutte le altre chiavi, il valore restituito viene ignorato.
+Se il **membro wVKey** di *lParam* è un codice chiave carattere, il carattere verrà usato come parte di una ricerca incrementale. Restituisce un valore diverso da zero per escludere il carattere dalla ricerca incrementale oppure zero per includere il carattere nella ricerca. Per tutte le altre chiavi, il valore restituito viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se il membro **wVKey** di *lParam* è un codice del tasto carattere, il caratter
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

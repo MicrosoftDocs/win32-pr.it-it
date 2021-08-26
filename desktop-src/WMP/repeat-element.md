@@ -1,9 +1,9 @@
 ---
 title: Elemento REPEAT
-description: L'elemento REPEAT definisce il numero di volte in cui Windows Media Player ripete uno o più elementi ENTRY o ENTRYREF.
+description: L'elemento REPEAT definisce il numero di Windows Media Player ripete uno o più elementi ENTRY o ENTRYREF.
 ms.assetid: 1a825f2b-29a7-4180-93df-51b3b5dd14e5
 keywords:
-- Ripeti finestre elementi Media Player
+- Elemento REPEAT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aff7d5eaa9594882b029f0b02f4888d93fff01d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 330eda0757acb29b48ed10636d8f479b6ebb1395d088020876c717a78f41ae6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002541"
 ---
 # <a name="repeat-element"></a>Elemento REPEAT
 
-L'elemento **Repeat** definisce il numero di volte in cui Windows Media Player ripete uno o più elementi **entry** o **ENTRYREF** .
+**L'elemento REPEAT** definisce il numero di Windows Media Player ripete uno o più **elementi ENTRY** **o ENTRYREF.**
 
 ``` syntax
 <REPEAT   
@@ -35,7 +35,7 @@ L'elemento **Repeat** definisce il numero di volte in cui Windows Media Player r
 
 **COUNT**
 
-Integer che rappresenta il numero di volte in cui Windows Media Player ripete gli elementi **entry** e **ENTRYREF** all'interno dell'ambito di questo elemento.
+Intero che rappresenta il numero di volte Windows Media Player ripete gli elementi **ENTRY** e **ENTRYREF** all'interno dell'ambito di questo elemento.
 
 ## <a name="parentchild-elements"></a>Elementi padre/figlio
 
@@ -43,8 +43,8 @@ Integer che rappresenta il numero di volte in cui Windows Media Player ripete gl
 
 | Gerarchia       | Elementi                |
 |-----------------|-------------------------|
-| Elementi padre | **ASX**                 |
-| Elementi figlio  | **voce**, **ENTRYREF** |
+| Elementi padre | **Asx**                 |
+| Elementi figlio  | **ENTRY,** **ENTRYREF** |
 
 
 
@@ -52,9 +52,9 @@ Integer che rappresenta il numero di volte in cui Windows Media Player ripete gl
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento definisce il numero di volte in cui Windows Media Player ripete o scorre i clip definiti dalla **voce** e **ENTRYREF** gli elementi all'interno dell'ambito di questo elemento. Solo il primo elemento **Repeat** in un metafile è valido. gli elementi **ripetuti** successivi vengono ignorati.
+Questo elemento definisce il numero di volte in cui Windows Media Player ripetute o scorre in ciclo le clip definite dagli elementi **ENTRY** e **ENTRYREF** all'interno dell'ambito di questo elemento. È valido solo **il primo** elemento REPEAT in un metafile. gli **elementi REPEAT** successivi vengono ignorati.
 
-Se non è definito alcun attributo **count** , il contenuto negli elementi **entry** e **ENTRYREF** associati si ripete un numero infinito di volte. Il valore zero fa in modo che Windows Media Player ignori l'elemento **Repeat** e riproduca il contenuto una volta.
+Se non è definito alcun attributo **COUNT,** il contenuto negli elementi **ENTRY** e **ENTRYREF** associati si ripete un numero infinito di volte. Se il valore è zero, Windows Media Player ignora **l'elemento REPEAT** e riproduce il contenuto una sola volta.
 
 ## <a name="examples"></a>Esempio
 
@@ -92,10 +92,10 @@ Se non è definito alcun attributo **count** , il contenuto negli elementi **ent
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentRecoveredWithoutUndoException'
+description: Altre informazioni sul costruttore EsentRecoveredWithoutUndoException
 title: Costruttore EsentRecoveredWithoutUndoException
 TOCTitle: 'EsentRecoveredWithoutUndoException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecoveredWithoutUndoException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: edc0246562ced7978d3a5f6c9bf5b6e7ea4341d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83c74bf158c62d1a197167a9f31c650f5d996fcaf403038bd0aad3a1269da867
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018771"
 ---
 # <a name="esentrecoveredwithoutundoexception-constructor"></a>Costruttore EsentRecoveredWithoutUndoException
 
 Inizializza una nuova istanza della classe EsentRecoveredWithoutUndoException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentRecoveredWithoutUndoException()
 
 [Membri di EsentRecoveredWithoutUndoException](./esentrecoveredwithoutundoexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

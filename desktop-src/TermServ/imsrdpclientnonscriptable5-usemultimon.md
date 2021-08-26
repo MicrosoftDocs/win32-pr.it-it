@@ -1,12 +1,12 @@
 ---
-title: Proprietà UseMultimon di IMsRdpClientNonScriptable5
-description: Specifica se il controllo ActiveX Desktop remoto deve usare più monitor.
+title: Proprietà IMsRdpClientNonScriptable5 UseMultimon
+description: Specifica se il Desktop remoto ActiveX deve usare più monitor.
 ms.assetid: 7832E025-80F6-4B4B-9829-C2D2EF2D8C37
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà UseMultimon
-- Servizi Desktop remoto proprietà UseMultimon, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà UseMultimon
+- Proprietà UseMultimon Servizi Desktop remoto
+- Interfaccia UseMultimon Servizi Desktop remoto , IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà UseMultimon
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 941a2991ef5591176cd2508bbb6a097fecabebf0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8335d4424931b38d5d967e3ad910785e68184668eceda79011ff2c213517a8eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033281"
 ---
-# <a name="imsrdpclientnonscriptable5usemultimon-property"></a>Proprietà IMsRdpClientNonScriptable5:: UseMultimon
+# <a name="imsrdpclientnonscriptable5usemultimon-property"></a>Proprietà IMsRdpClientNonScriptable5::UseMultimon
 
-Specifica se il controllo ActiveX Desktop remoto deve usare più monitor. Se questa proprietà contiene la **variante \_ true**, il controllo utilizzerà più monitoraggi. Se questa proprietà contiene la **variante \_ false**, il controllo non utilizzerà più monitoraggi.
+Specifica se il Desktop remoto ActiveX deve usare più monitor. Se questa proprietà contiene **VARIANT \_ TRUE,** il controllo userà più monitor. Se questa proprietà contiene **VARIANT \_ FALSE,** il controllo non userà più monitor.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -61,7 +61,7 @@ Specifica il nuovo valore della proprietà.
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                             |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 è definito come 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 è definito come 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

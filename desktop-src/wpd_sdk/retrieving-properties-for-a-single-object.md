@@ -4,38 +4,38 @@ ms.assetid: e4e3b286-6330-4147-a367-57accf5beae6
 title: Recupero di proprietà per un singolo oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5851b31256659c2ca036bac504a53fa51a20ee14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e0806de3da9cd3f0674057d413a071996f86f5d74a364c0f5db707965fc2220
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054721"
 ---
 # <a name="retrieving-properties-for-a-single-object"></a>Recupero di proprietà per un singolo oggetto
 
-Dopo che l'applicazione ha recuperato un identificatore di oggetto (vedere l'argomento relativo all' [enumerazione del contenuto](enumerating-content.md) ) per un determinato oggetto, può recuperare informazioni descrittive sull'oggetto chiamando i metodi nell' [**interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) e l' [**interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md).
+Dopo che l'applicazione recupera un [](enumerating-content.md) identificatore di oggetto (vedere l'argomento Enumerazione del contenuto) per un determinato oggetto, può recuperare informazioni descrittive su tale oggetto chiamando i metodi nell'interfaccia [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) e nell'interfaccia [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md).
 
-Il metodo [**IPortableDeviceProperties:: GetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) recupera un elenco di proprietà specificate per un oggetto specificato. L'applicazione può anche chiamare il metodo GetValues e specificare un valore **null** per il parametro pKeys per recuperare tutte le proprietà per un determinato oggetto. Tuttavia, le prestazioni di questo metodo possono risultare significativamente più lente durante il recupero di tutte le proprietà.
+Il [**metodo IPortableDeviceProperties::GetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) recupera un elenco di proprietà specificate per un determinato oggetto. L'applicazione può anche chiamare il metodo GetValues e specificare un valore **NULL** per il parametro pKeys per recuperare tutte le proprietà per un determinato oggetto. Tuttavia, le prestazioni di questo metodo potrebbero essere notevolmente più lente durante il recupero di tutte le proprietà.
 
-Prima che l'applicazione chiami GetValues, tuttavia, deve identificare le proprietà da recuperare impostando le chiavi corrispondenti in un [**oggetto IPortableDeviceKeyCollection**](iportabledevicekeycollection.md). L'applicazione identificherà le proprietà di interesse chiamando il metodo [**IPortableDeviceKeyCollection:: Add**](iportabledevicekeycollection-add.md) e specificando un valore PropertyKey che identifichi ogni proprietà che verrà recuperata.
+Prima che l'applicazione chiami GetValues, tuttavia, deve identificare le proprietà da recuperare impostando le chiavi corrispondenti in un [**oggetto IPortableDeviceKeyCollection**](iportabledevicekeycollection.md). L'applicazione identificherà le proprietà di interesse chiamando il metodo [**IPortableDeviceKeyCollection::Add**](iportabledevicekeycollection-add.md) e fornendo un valore PROPERTYKEY che identifica ogni proprietà che recupererà.
 
-La funzione ReadContentProperties nel modulo ContentProperties. cpp dell'applicazione di esempio illustra come sono state recuperate le cinque proprietà per un oggetto selezionato. Nella tabella seguente vengono descritte le proprietà e il valore REFPROPERTYKEY corrispondente.
+La funzione ReadContentProperties nel modulo ContentProperties.cpp dell'applicazione di esempio illustra come sono state recuperate le cinque proprietà per un oggetto selezionato. Nella tabella seguente vengono descritte ognuna di queste proprietà e il valore REFPROPERTYKEY corrispondente.
 
 
 
 | Proprietà                     | Descrizione                                                                                                                                      | PROPERTYKEY                         |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| Identificatore oggetto padre     | Stringa che specifica l'identificatore per l'elemento padre dell'oggetto specificato.                                                                            | \_ \_ ID padre dell'oggetto WPD \_             |
-| Nome dell'oggetto                  | Stringa che specifica il nome dell'oggetto specificato.                                                                                            | \_nome dell'oggetto WPD \_                   |
-| Identificatore univoco permanente | Stringa che specifica un identificatore univoco per l'oggetto specificato. (Questo identificatore è persistente tra le sessioni, a differenza dell'identificatore dell'oggetto). | \_ \_ \_ ID univoco permanente dell'oggetto WPD \_ |
-| Formato oggetto                | Identificatore univoco globale (GUID) che specifica il formato del file corrispondente a un oggetto specificato.                                       | \_formato oggetto \_ WPD                 |
-| Tipo di contenuto Object          | GUID che specifica il tipo di contenuto associato a un oggetto specificato.                                                                        | \_tipo di \_ contenuto dell'oggetto WPD \_          |
+| Identificatore dell'oggetto padre     | Stringa che specifica l'identificatore per l'elemento padre dell'oggetto specificato.                                                                            | ID PADRE \_ DELL'OGGETTO WPD \_ \_             |
+| Nome dell'oggetto                  | Stringa che specifica il nome dell'oggetto specificato.                                                                                            | NOME OGGETTO \_ WPD \_                   |
+| Identificatore univoco permanente | Stringa che specifica un identificatore univoco per l'oggetto specificato. Questo identificatore è persistente tra le sessioni, a differenza dell'identificatore di oggetto. | \_ID UNIVOCO PERMANENTE DELL'OGGETTO WPD \_ \_ \_ |
+| Formato oggetto                | Identificatore univoco globale (GUID) che specifica il formato del file corrispondente a un oggetto specificato.                                       | FORMATO \_ DELL'OGGETTO WPD \_                 |
+| Tipo di contenuto dell'oggetto          | GUID che specifica il tipo di contenuto associato a un oggetto specificato.                                                                        | TIPO DI CONTENUTO \_ \_ DELL'OGGETTO \_ WPD          |
 
 
 
  
 
-Nell'estratto seguente della funzione ReadContentProperties viene illustrato il modo in cui l'applicazione di esempio utilizza l' [**interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) e il metodo [**IPortableDeviceKeyCollection:: Add**](iportabledevicekeycollection-add.md) per identificare le proprietà recuperate.
+L'estratto seguente della funzione ReadContentProperties illustra come l'applicazione di esempio ha usato [**l'interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) e il metodo [**IPortableDeviceKeyCollection::Add**](iportabledevicekeycollection-add.md) per identificare le proprietà recuperate.
 
 
 ```C++
@@ -86,7 +86,7 @@ if (SUCCEEDED(hr))
 
 
 
-Una volta che l'applicazione di esempio ha impostato le chiavi appropriate, ha chiamato il metodo [**IPortableDeviceProperties:: GetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) per recuperare i valori specificati per l'oggetto specificato.
+Dopo che l'applicazione di esempio ha impostato le chiavi appropriate, ha chiamato il metodo [**IPortableDeviceProperties::GetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) per recuperare i valori specificati per l'oggetto specificato.
 
 
 ```C++

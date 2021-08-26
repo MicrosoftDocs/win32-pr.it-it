@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione PhysicalMemoryLocation Win32 mette in correlazione una matrice di memoria fisica e la relativa memoria fisica.
+description: La classe WMI di associazione PhysicalMemoryLocation Win32 mette in relazione una matrice di memoria \_ fisica e la relativa memoria fisica.
 ms.assetid: 40252428-77ca-4dfb-8048-c05096a114d8
 ms.tgt_platform: multiple
-title: Classe Win32_PhysicalMemoryLocation
+title: Win32_PhysicalMemoryLocation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: daa6d47b13cb5caa74a10f28ab5fcd6e66e1524f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 10f4822312619b5b7fb811a998d82527b6e8bd0bd604e0d2095dae5103935e41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972061"
 ---
-# <a name="win32_physicalmemorylocation-class"></a>Win32 \_ PhysicalMemoryLocation (classe)
+# <a name="win32_physicalmemorylocation-class"></a>Classe \_ PhysicalMemoryLocation Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ PhysicalMemoryLocation Win32** mette in correlazione una matrice di memoria fisica e la relativa memoria fisica.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **di associazione \_ PhysicalMemoryLocation Win32** mette in relazione una matrice di memoria fisica e la relativa memoria fisica.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,44 +44,44 @@ class Win32_PhysicalMemoryLocation : CIM_PackagedComponent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ PhysicalMemoryLocation** presenta questi tipi di membri:
+La **classe \_ PhysicalMemoryLocation Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ PhysicalMemoryLocation** dispone di queste proprietà.
+La **classe \_ PhysicalMemoryLocation Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ PhysicalMemoryArray**
+Tipo di dati: **\_ PhysicalMemoryArray Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemoryArray")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemoryArray")
 </dt> </dl>
 
-[**\_ PhysicalMemoryArray Win32**](win32-physicalmemoryarray.md) che rappresenta la matrice di memoria fisica che contiene la memoria fisica.
+Oggetto [**\_ PhysicalMemoryArray Win32**](win32-physicalmemoryarray.md) che rappresenta la matrice di memoria fisica che contiene la memoria fisica.
 
 </dd> <dt>
 
 **LocationWithinContainer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che rappresenta il posizionamento dell'elemento fisico all'interno del pacchetto fisico. Le informazioni relative agli elementi stazionari del contenitore (ad esempio, "seconda Bay Drive dalla parte superiore"), angoli, altezze e altri dati possono essere registrate in questa proprietà. Questa stringa può essere aggiunta o utilizzata al posto della creazione di un'istanza dell'oggetto [**\_ percorso CIM**](cim-location.md) .
+Stringa in formato libero che rappresenta il posizionamento dell'elemento fisico all'interno del pacchetto fisico. In questa proprietà è possibile registrare informazioni relative agli elementi stazionari nel contenitore ,ad esempio "second drive bay from the top", angolazioni, altitudini e altri dati. Questa stringa può integrare o essere usata al posto della creazione di un'istanza [**dell'oggetto \_ Location CIM.**](cim-location.md)
 
-Questa proprietà viene ereditata [**dal \_ contenitore CIM**](cim-container.md).
+Questa proprietà viene ereditata dal [**contenitore CIM. \_**](cim-container.md)
 
 </dd> <dt>
 
@@ -94,16 +94,16 @@ Tipo di dati: **Win32 \_ PhysicalMemory**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemory")
+Qualificatori: [**Key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ PhysicalMemory")
 </dt> </dl>
 
-[**\_ PhysicalMemory Win32**](win32-physicalmemory.md) che rappresenta la memoria fisica contenuta nella matrice di memoria fisica.
+Oggetto [**\_ PhysicalMemory Win32**](win32-physicalmemory.md) che rappresenta la memoria fisica contenuta nella matrice di memoria fisica.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ PhysicalMemoryLocation** è derivata da [**CIM \_ PackagedComponent**](cim-packagedcomponent.md).
+La **classe \_ PhysicalMemoryLocation Win32** deriva da [**CIM \_ PackagedComponent**](cim-packagedcomponent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -114,7 +114,7 @@ La classe **Win32 \_ PhysicalMemoryLocation** è derivata da [**CIM \_ PackagedC
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -123,10 +123,10 @@ La classe **Win32 \_ PhysicalMemoryLocation** è derivata da [**CIM \_ PackagedC
 
 <dl> <dt>
 
-[**\_PACKAGEDCOMPONENT CIM**](cim-packagedcomponent.md)
+[**CIM \_ PackagedComponent**](cim-packagedcomponent.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

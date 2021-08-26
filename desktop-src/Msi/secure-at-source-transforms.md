@@ -1,21 +1,21 @@
 ---
-description: Le trasformazioni sicure all'origine devono disporre di un'origine che si trova nella radice dell'origine per il pacchetto.
+description: Le trasformazioni secure-at-source devono avere un'origine che si trova nella radice dell'origine per il pacchetto.
 ms.assetid: b5355053-9922-444f-a117-f6af461ef9e9
-title: Trasformazioni protette a livello di origine
+title: Trasformazioni secure-at-source
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec59d551489fa1699c20c24d09b7ecbff99f8ca4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f591e6f30c11ec9fa7edf2f943ef1f660a0a3b12ff87c3c1de0984328652565b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041001"
 ---
-# <a name="secure-at-source-transforms"></a>Trasformazioni protette a livello di origine
+# <a name="secure-at-source-transforms"></a>Trasformazioni secure-at-source
 
-Le trasformazioni sicure all'origine devono disporre di un'origine che si trova nella radice dell'origine per il pacchetto. Quando il pacchetto viene installato o annunciato, il programma di installazione salva le trasformazioni in una cache in cui, in un file system protetto, l'utente non dispone dell'accesso in scrittura. Se la copia locale della trasformazione diventa non disponibile, il programma di installazione cerca un'origine per ripristinare la cache. Il metodo è identico a quello di ricerca nell'elenco di origine di un file con estensione msi. Per altre informazioni, vedere [resilienza dell'origine](source-resiliency.md). La rimozione di un prodotto da parte di qualsiasi utente rimuove tutte le trasformazioni sicure per il prodotto dal computer dell'utente.
+Le trasformazioni secure-at-source devono avere un'origine che si trova nella radice dell'origine per il pacchetto. Quando il pacchetto viene installato o annunciato, il programma di installazione salva le trasformazioni in una cache in cui, in un file system sicuro, l'utente non ha accesso in scrittura. Se la copia locale della trasformazione non è più disponibile, il programma di installazione cerca un'origine per ripristinare la cache. Il metodo è identico alla ricerca di un file .msi di origine nell'elenco di origine. Per altre informazioni, vedere [Resilienza dell'origine.](source-resiliency.md) La rimozione di un prodotto da parte di qualsiasi utente rimuove tutte le trasformazioni sicure per tale prodotto dal computer dell'utente.
 
-Per applicare le trasformazioni sicure all'origine durante l'installazione di un pacchetto, impostare il [criterio TRANSFORMSSECURE](transformssecure-policy.md) o la proprietà [**TRANSFORMSSECURE**](transformssecure.md) oppure fare in modo che @ il primo carattere passato nell'elenco di trasformazione. Ogni trasformazione deve essere indicata da un nome di file e deve trovarsi nella radice dell'origine del pacchetto. Se una delle trasformazioni non si trova nella radice dell'origine del pacchetto, l'installazione non riesce. Per ulteriori informazioni, vedere [applicazione delle trasformazioni](applying-transforms.md).
+Per applicare trasformazioni secure-at-source all'installazione di un pacchetto, impostare il criterio [TransformsSecure](transformssecure-policy.md) o la [**proprietà TRANSFORMSSECURE**](transformssecure.md) oppure impostare @ come primo carattere passato nell'elenco delle trasformazioni. Ogni trasformazione deve essere indicata da un nome file e deve trovarsi nella radice dell'origine per il pacchetto. Se una delle trasformazioni non si trova nella radice dell'origine del pacchetto, l'installazione non riesce. Per altre informazioni, vedere [Applicazione di trasformazioni](applying-transforms.md).
 
  
 

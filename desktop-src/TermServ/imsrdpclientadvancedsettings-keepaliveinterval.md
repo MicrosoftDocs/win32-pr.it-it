@@ -4,23 +4,23 @@ description: Specifica un intervallo, in millisecondi, in cui il client invia me
 ms.assetid: 0d1b7d8f-f81c-4591-bb08-adab307e87fe
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà keepAliveInterval
-- Servizi Desktop remoto proprietà keepAliveInterval, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto
+- Proprietà keepAliveInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , keepAliveInterval
+- Proprietà keepAliveInterval Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà keepAliveInterval
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d15412b5b1803aadcffa08a8617742e0c90b1a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1dad34455d1203fb353672b8ef3797866b8ad2aa8b5686f71f769eccc5f3c9ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033301"
 ---
-# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>Proprietà IMsRdpClientAdvancedSettings:: keepAliveInterval
+# <a name="imsrdpclientadvancedsettingskeepaliveinterval-property"></a>Proprietà IMsRdpClientAdvancedSettings::keepAliveInterval
 
 Specifica un intervallo, in millisecondi, in cui il client invia messaggi keep-alive al server.
 
-Impostazione di criteri di gruppo che specifica se le connessioni client permanenti al server sono consentite e possono eseguire l'override di questa impostazione della proprietà.
+Un'impostazione di Criteri di gruppo che specifica se sono consentite connessioni client permanenti al server può eseguire l'override di questa impostazione di proprietà.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -86,15 +86,15 @@ HRESULT get_keepAliveInterval(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nuovo intervallo, in millisecondi. Il valore predefinito della proprietà è zero, che Disabilita i messaggi keep-alive. Il valore minimo valido di questa proprietà è 10.000, che rappresenta 10 secondi.
+Nuovo intervallo, espresso in millisecondi. Il valore predefinito della proprietà è zero, che disabilita i messaggi keep-alive. Il valore minimo valido di questa proprietà è 10.000, che rappresenta 10 secondi.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

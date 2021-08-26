@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9a1e5f4dc71d5af2e7973ef180c919a49e65ef81
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 95be6d9b6c4cbf70aed059399af0892a3c75f0a3462b6ef2b0732e8180f4e123
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068111"
 ---
 # <a name="getsampleposition-directx-hlsl-texture-object"></a>GetSamplePosition (oggetto trama DirectX HLSL)
 
@@ -32,7 +32,7 @@ ret Object.GetSamplePosition( int s );
 
 | Elemento                                                                                           | Descrizione                                                                                         |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Oggetto*<br/> | Tipo [texture-object](dx-graphics-hlsl-to-type.md) Texture2DMS o Texture2DMSArray.<br/> |
+| <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Oggetto*<br/> | Un tipo texture2DMS o Texture2DMSArray [texture-object.](dx-graphics-hlsl-to-type.md)<br/> |
 | <span id="s"></span><span id="S"></span>*s*<br/>                                         | \[\]nell'indice di esempio in base zero.<br/>                                                      |
 
 
@@ -61,7 +61,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Un pixel shader può essere valutato alla frequenza di campionamento (eseguire un'pixel shader una volta per campione) o alla frequenza dei pixel (eseguire una pixel shader una volta per pixel). Collegare la semantica SV SampleIndex a un input pixel shader per richiamare un pixel shader alla frequenza di campionamento, il valore di input viene quindi usato come indice di esempio durante il campionamento della \_ destinazione di rendering.
+Un pixel shader può essere valutato alla frequenza di campionamento (eseguire un pixel shader una volta per campione) o alla frequenza dei pixel (eseguire una pixel shader una volta per pixel). Collegare la semantica SV SampleIndex a un input pixel shader per richiamare un pixel shader alla frequenza di campionamento, il valore di input viene quindi usato come indice di esempio durante il campionamento della destinazione \_ di rendering.
 
 È possibile eseguire l'interpolazione pixel shader'input in diversi modi. Per eseguire l'interpolazione in:
 

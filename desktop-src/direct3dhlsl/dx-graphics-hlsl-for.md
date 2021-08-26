@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0cbcf06f28a327e18aa9f31b417dc1911411d0c9
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 001683c612aefb56d8257977ce7efe99d162a0919d39c678ee4074128a019a31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068191"
 ---
 # <a name="for-statement"></a>Istruzione for
 
@@ -43,7 +43,7 @@ Parametro facoltativo che controlla la modalità di compilazione dell'istruzione
 
 | Attributo             | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| annullamento della registrazione(x)             | Annullare la registrazione del ciclo fino a quando non viene interrotta l'esecuzione. Facoltativamente, è possibile specificare il numero massimo di volte in cui il ciclo deve essere eseguito. Non compatibile con **\[ l'attributo del \]** ciclo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| annullamento della registrazione(x)             | Annullare la registrazione del ciclo fino all'arresto dell'esecuzione. Facoltativamente, è possibile specificare il numero massimo di volte in cui il ciclo deve essere eseguito. Non compatibile con **\[ l'attributo del \]** ciclo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | loop                  | Generare codice che usa il controllo di flusso per eseguire ogni iterazione del ciclo. Non compatibile con **\[ l'attributo di \] annullamento** della registrazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | fastopt               | Riduce il tempo di compilazione, ma produce ottimizzazioni meno aggressive. Se si usa questo attributo, il compilatore non annulla la registrazione dei cicli.<br/> Questo attributo influisce solo sulle destinazioni del modello shader che supportano [le istruzioni di](dx-graphics-hlsl-break.md) interruzione. Questo attributo è disponibile nel modello shader [rispetto a \_ 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e nel modello [shader 3](dx-graphics-hlsl-sm3.md) e versioni successive. È particolarmente utile nel modello [shader 4 e](dx-graphics-hlsl-sm4.md) versioni successive quando il compilatore compila i cicli. Il compilatore simula i cicli per impostazione predefinita per valutare se è possibile annullarne la registrazione. Se non si vuole che il compilatore srotoli i cicli, usare questo attributo per ridurre il tempo di compilazione. <br/> |
 | consenti \_ condizione \_ uav | Consente a una condizione di terminazione del ciclo compute shader di basarsi su una lettura UAV. Il ciclo non deve contenere intrinseci di sincronizzazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -88,11 +88,11 @@ Gli **\[ attributi \] unroll** **\[ e loop \]** si escludono a vicenda e generan
 
 Gli **\[ attributi \] della condizione fastopt** **\[ e allow \_ uav \_ \]** vengono ignorati se **\[ si specifica unroll. \]**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Controllo di flusso](dx-graphics-hlsl-flow-control.md)
+[Flow Controllo](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

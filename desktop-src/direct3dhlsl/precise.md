@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 03f288fb5dafee0e29c8c11cab72156f7ad3d569
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3c7929a7ebab01b17aca3e11cb98de8796bf568cd08a3a7b04d8f3395f531d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104516477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067911"
 ---
 # <a name="precise"></a>Preciso
 
@@ -22,46 +22,46 @@ Disabilitazione per istruzione del refactoring aritmetico.
 
 
 
-| preciso (maschera componenti) |
+| precise (maschera componente) |
 |--------------------------|
 
 
 
- 
+ 
 
-Questo modificatore richiede il flag di shader globale "refactoring \_ allowed". Quando è presente il refactoring \_ consentito, i risultati dei singoli componenti delle singole istruzioni possono essere costretti a rimanere precisi o non sottoposti a refactoring dai compilatori o dai driver. Se i componenti di un'istruzione [**MAD**](mad--sm4---asm-.md) sono contrassegnati come **precisi**, l'hardware deve eseguire un'istruzione **MAD** o l'equivalente esatto e non può suddividerlo in una moltiplicazione seguita da un Add. Viceversa, un valore Multiply seguito da un oggetto Add, in cui uno o entrambi i flag sono contrassegnati come **precisi**, non possono essere Uniti in un oggetto **MAD** con fusibile.
+Questo modificatore richiede il flag di shader globale "REFACTORING \_ ALLOWED". Quando è presente REFACTORING ALLOWED, è possibile forzare i risultati dei singoli componenti delle singole istruzioni a rimanere precisi o non refactoring da parte di compilatori \_ o driver. Se i [](mad--sm4---asm-.md) componenti di un'istruzione vengono contrassegnati come **precisi,** l'hardware deve eseguire un'istruzione di tipo **"matto"** o l'equivalente esatto e non può dividerlo in una moltiplicazione seguita da un'aggiunta. Al contrario, una moltiplicazione seguita da un elemento add, in cui uno o entrambi sono contrassegnati come **precisi,** non può essere unito in un oggetto **fuso.**
 
-Se il refactoring \_ consentito non è stato specificato, il modificatore **preciso** non è consentito. Non è necessario perché tutto è preciso. Il modificatore **preciso** influiscono su qualsiasi operazione, non solo aritmetica.
+Se reFACTORING \_ ALLOWED non è stato specificato, il **modificatore precise** non è consentito. Non è necessario perché tutto è preciso. Il **modificatore precise** influisce su qualsiasi operazione, non solo aritmetica.
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questo modificatore è supportato nei modelli shader seguenti.
+Questo modificatore è supportato nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Modificatori di istruzioni Model 5 shader](shader-model-5-instruction-modifiers.md)
+[Modificatori di istruzione del modello shader 5](shader-model-5-instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

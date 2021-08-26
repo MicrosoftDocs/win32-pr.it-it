@@ -1,9 +1,9 @@
 ---
-title: THEME. logString
+title: THEME.logString
 description: Il metodo logString registra una stringa definita dall'utente nel file degli errori, se la registrazione è abilitata.
 ms.assetid: ce187ac9-170f-41b0-8a86-18fc6a1b22b5
 keywords:
-- THEME. logString Windows Media Player
+- Theme.logString Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 273cd08d41d0ce3302f64719d67155cff963e6a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bec56c84f857f715c41a8000eccd195db0b6123fb636a52956adb7c3e66bcfc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001781"
 ---
-# <a name="themelogstring"></a>THEME. logString
+# <a name="themelogstring"></a>THEME.logString
 
-Il metodo **logString** registra una stringa definita dall'utente nel file degli errori, se la registrazione è abilitata.
+Il **metodo logString** registra una stringa definita dall'utente nel file degli errori, se la registrazione è abilitata.
 
 ``` syntax
         theme.logString(message)
@@ -35,7 +35,7 @@ Il metodo **logString** registra una stringa definita dall'utente nel file degli
 <span id="message"></span><span id="MESSAGE"></span>*Messaggio*
 </dt> <dd>
 
-**Stringa** che specifica il messaggio da registrare.
+Valore **String** che specifica il messaggio da registrare.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

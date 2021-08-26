@@ -1,23 +1,23 @@
 ---
-description: Durante un'installazione di Windows Installer, il programma di installazione può cercare una directory e un file in tale directory.
+description: Durante un Windows installazione del programma di installazione, il programma di installazione può cercare una directory e un file in tale directory.
 ms.assetid: ddf624f9-6f85-4ef6-8dfc-8635a25915d0
 title: Ricerca di una directory e di un file nella directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4821a53ef0c3f063e943f1f5821b043791dd44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e857460dc58fa5fded802cb53b9ae6a558e5a27426baef87be9f561fa35fe6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041181"
 ---
 # <a name="searching-for-a-directory-and-a-file-in-the-directory"></a>Ricerca di una directory e di un file nella directory
 
-**Per cercare una directory e quindi un file nella directory**
+**Per cercare una directory e quindi un file in tale directory**
 
-1.  Eseguire prima la ricerca della directory.
+1.  Cercare prima di tutto la directory.
 
-    AppDir deve essere definito come la firma valida della directory. Se AppDir non è definito come una firma valida, AppSearch non dispone di una posizione per trovare il file, ad esempio, se la ricerca è per c: \\ MyDir \\MyApp.exe, appdir deve essere definito come c: \\ mydir. AppDir può essere definito includendo un record nella [tabella DrLocator](drlocator-table.md)o con un altro metodo. Nessun record è incluso nella [tabella delle firme](signature-table.md) per la ricerca nella directory. Per la ricerca di file, elencare la firma e il nome del file nella tabella della firma. I campi rimanenti di questo record possono essere null per cercare qualsiasi versione di MyApp.exe.
+    AppDir deve essere definito come firma valida della directory. Se AppDir non è definito come firma valida, AppSearch non ha una posizione in cui trovare il file, ad esempio, se la ricerca è per c: MyDirMyApp.exe, AppDir deve essere definito come \\ \\ c: \\ MyDir. AppDir può essere definito includendo un record nella [tabella DrLocator](drlocator-table.md)o con un altro metodo. Nella tabella delle firme non è incluso [alcun](signature-table.md) record per la ricerca nella directory. Per la ricerca di file, elencare la firma e il nome del file nella tabella delle firme. I campi rimanenti in questo record possono essere Null per cercare qualsiasi versione di MyApp.exe.
 
     [Tabella delle firme](signature-table.md) (parziale)
 
@@ -33,7 +33,7 @@ ms.locfileid: "106313790"
 
 2.  Usare la [tabella AppSearch](appsearch-table.md).
 
-    Immettere la proprietà che verrà impostata dal programma di installazione se è installata la directory con la firma AppDir. Se il programma di installazione rileva che questa directory è installata, imposta MYDIR sul percorso della directory. Immettere la proprietà che verrà impostata dal programma di installazione se MyApp.exe è installato.
+    Immettere la proprietà che il programma di installazione deve impostare se è installata la directory con la firma AppDir. Se il programma di installazione rileva che questa directory è installata, imposta MYDIR sul percorso della directory. Immettere la proprietà che il programma di installazione deve impostare se MyApp.exe installato.
 
     [Tabella AppSearch](appsearch-table.md) (parziale)
 
@@ -41,8 +41,8 @@ ms.locfileid: "106313790"
 
     | Proprietà         | Firma          |
     |------------------|--------------------|
-    | MYDIR<br/> | AppDir<br/>  |
-    | MYAPP<br/> | AppFile<br/> |
+    | MYDIR<br/> | Appdir<br/>  |
+    | Myapp<br/> | AppFile<br/> |
 
     
 
@@ -50,7 +50,7 @@ ms.locfileid: "106313790"
 
 3.  Usare la [tabella DrLocator](drlocator-table.md).
 
-    Immettere nella colonna padre la firma, AppDir, definita come percorso della directory. Specificare nella colonna profondità il numero di livelli di sottodirectory in cui eseguire la ricerca in questa directory. AppDir deve essere definito come firma di directory. AppDir può essere definito includendo un record, come illustrato qui o da un altro metodo.
+    Immettere nella colonna Padre la firma AppDir, definita come percorso della directory. Specificare nella colonna Profondità il numero di livelli di sottodirectory in cui eseguire la ricerca in questa directory. AppDir deve essere definito come firma della directory. AppDir può essere definito includendo un record come illustrato qui o con un altro metodo.
 
     [Tabella DrLocator](drlocator-table.md)
 
@@ -58,22 +58,22 @@ ms.locfileid: "106313790"
 
     | Firma | Padre | Percorso      | Profondità |
     |-----------|--------|-----------|-------|
-    | AppDir    |        | C: \\ mydir | 0     |
-    | AppFile   | AppDir |           | 0     |
+    | Appdir    |        | C: \\ MyDir | 0     |
+    | AppFile   | Appdir |           | 0     |
 
     
 
      
 
-4.  Includere l'azione AppSearch nella sequenza di azione.
+4.  Includere l'azione AppSearch nella sequenza di azioni.
 
-    Se viene trovato MyApp.exe da installare in AppDir, il programma di installazione imposta la proprietà MYAPP sul percorso del file.
+    Se MyApp.exe viene trovato installato in AppDir, il programma di installazione imposta la proprietà MYAPP sul percorso del file.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Ricerca di applicazioni, file, voci del registro di sistema o voci di file ini esistenti](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
+[Ricerca di applicazioni, file, voci del Registro di sistema o .ini file esistenti](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
 </dt> </dl>
 
  

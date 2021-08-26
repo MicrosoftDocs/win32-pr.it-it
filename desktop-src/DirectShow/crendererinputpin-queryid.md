@@ -1,7 +1,7 @@
 ---
-description: "Il metodo QueryId recupera l'identificatore del PIN. Questo metodo esegue l'override del Metodo CBasePin:: QueryId."
+description: Il metodo QueryId recupera l'identificatore pin. Questo metodo esegue l'override del metodo CBasePin::QueryId.
 ms.assetid: 9543234c-5349-49d0-b410-1c461ee4eabe
-title: Metodo CRendererInputPin. QueryId (Renbase. h)
+title: Metodo CRendererInputPin.QueryId (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b56ae2a846b4d89da4c6a9d4c8f88bd3094c5cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 732bf7aa6d0d247c93c0334db48b86bccd2ac15715dd2da9a4d60a0d315966bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054573"
 ---
-# <a name="crendererinputpinqueryid-method"></a>CRendererInputPin. QueryId, metodo
+# <a name="crendererinputpinqueryid-method"></a>Metodo CRendererInputPin.QueryId
 
-Il `QueryId` metodo recupera l'identificatore del PIN. Questo metodo esegue l'override del metodo [**CBasePin:: QueryId**](cbasepin-queryid.md) .
+Il `QueryId` metodo recupera l'identificatore pin. Questo metodo esegue l'override [**del metodo CBasePin::QueryId.**](cbasepin-queryid.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT QueryId(
 *Id* 
 </dt> <dd>
 
-Riceve una stringa che contiene l'identificatore del PIN.
+Riceve una stringa contenente l'identificatore pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                   | Descrizione                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione riuscita<br/>                   |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente<br/>       |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Argomento puntatore **null**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione riuscita<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente<br/>       |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | **Argomento puntatore NULL**<br/> |
 
 
 
@@ -67,7 +67,7 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo alloca la stringa di caratteri wide "in" e la assegna al parametro *ID* . Il chiamante deve liberare la memoria allocata tramite la funzione **CoTaskMemFree** .
+Questo metodo alloca la stringa di caratteri wide "In" e la assegna al *parametro Id.* Il chiamante deve liberare la memoria allocata usando la **funzione CoTaskMemFree.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questo metodo alloca la stringa di caratteri wide "in" e la assegna al parametro
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

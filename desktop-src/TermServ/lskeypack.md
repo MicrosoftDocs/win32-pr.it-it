@@ -1,11 +1,11 @@
 ---
 title: Struttura LSKeyPack
-description: Contiene informazioni su un Key Pack di gestione licenze Servizi Desktop remoto specifico.
+description: Contiene informazioni su un key pack specifico Servizi Desktop remoto licenze.
 ms.assetid: c26d27ee-7dd3-49f0-a79c-752d23693a2a
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto della struttura LSKeyPack
-- Servizi Desktop remoto puntatore alla struttura LPLSKeyPack
+- Struttura LSKeyPack Servizi Desktop remoto
+- Puntatore alla struttura LPLSKeyPack Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b1ac1f51e66a0a3c15c33f2535bc02f1fd3528f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a8b2c7c8b6c42464e273008f9de2730b41ea64981e44583eb48f4125da3ba9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989090"
 ---
 # <a name="lskeypack-structure"></a>Struttura LSKeyPack
 
-Contiene informazioni su un Key Pack di gestione licenze Servizi Desktop remoto specifico.
+Contiene informazioni su un key pack specifico Servizi Desktop remoto licenze.
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -69,28 +69,28 @@ typedef struct _LSKeyPack {
 **dwVersion**
 </dt> <dd>
 
-Versione del Key Pack.
+Versione del key pack.
 
 </dd> <dt>
 
 **ucKeyPackType**
 </dt> <dd>
 
-Tipo di Key Pack.
+Tipo di key pack.
 
 </dd> <dt>
 
 **szCompanyName**
 </dt> <dd>
 
-Nome della società che ha emesso il Key Pack.
+Nome della società che ha emesso il key pack.
 
 </dd> <dt>
 
 **szKeyPackId**
 </dt> <dd>
 
-ID del Key Pack.
+ID del key pack.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Nome del prodotto a cui appartiene questo Key Pack.
 **szProductId**
 </dt> <dd>
 
-ID del prodotto a cui appartiene questo Key Pack.
+ID del prodotto a cui appartiene questo key pack.
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Numero di serie per la prima licenza.
 **dwTotalLicenseInKeyPack**
 </dt> <dd>
 
-Numero totale di licenze nel Key Pack.
+Numero totale di licenze nel key pack.
 
 </dd> <dt>
 
@@ -181,28 +181,28 @@ Bandiere.
 **dwKeyPackId**
 </dt> <dd>
 
-ID del Key Pack.
+ID del key pack.
 
 </dd> <dt>
 
 **ucKeyPackStatus**
 </dt> <dd>
 
-Stato del Key Pack.
+Stato del key pack.
 
 </dd> <dt>
 
 **dwActivateDate**
 </dt> <dd>
 
-Data di attivazione per il Key Pack.
+Data di attivazione per il key pack.
 
 </dd> <dt>
 
 **dwExpirationDate**
 </dt> <dd>
 
-Data di scadenza per il Key Pack.
+Data di scadenza del key pack.
 
 </dd> <dt>
 

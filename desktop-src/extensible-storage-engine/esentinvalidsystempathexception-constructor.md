@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidSystemPathException'
+description: Altre informazioni sul costruttore EsentInvalidSystemPathException
 title: Costruttore EsentInvalidSystemPathException
 TOCTitle: 'EsentInvalidSystemPathException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidSystemPathException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 237570ab2c0ce2f06a3957652a9313e0069d1500
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7136dbcc04dbc06e07765f52ec2ca64f9dc1a020809a90595eeda68bf244a6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971941"
 ---
 # <a name="esentinvalidsystempathexception-constructor"></a>Costruttore EsentInvalidSystemPathException
 
 Inizializza una nuova istanza della classe EsentInvalidSystemPathException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidSystemPathException()
 
 [Membri di EsentInvalidSystemPathException](./esentinvalidsystempathexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

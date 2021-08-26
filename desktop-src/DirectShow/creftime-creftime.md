@@ -1,7 +1,7 @@
 ---
-description: Il metodo del costruttore CRefTime. CRefTime (Reftime. h) non ha parametri.
+description: Il metodo CRefTime.CRefTime constructor (Reftime.h) non ha parametri.
 ms.assetid: 009ade28-0788-48d7-a037-4835736f77da
-title: Costruttore CRefTime. CRefTime (Reftime. h)-nessun parametro
+title: Costruttore CRefTime.CRefTime (Reftime.h) - Nessun parametro
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71b0ab9ae84c2995062979f6c2821903189b56cf
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 4f967d940fb8a117c58e85e951eeaa355d8d3dcc6cc97df432d7ce245744ca83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054751"
 ---
-# <a name="creftimecreftime-constructor-reftimeh---no-parameters"></a>Costruttore CRefTime. CRefTime (Reftime. h)-nessun parametro
+# <a name="creftimecreftime-constructor-reftimeh---no-parameters"></a>Costruttore CRefTime.CRefTime (Reftime.h) - Nessun parametro
 
 Metodo del costruttore.
 
@@ -50,8 +50,8 @@ Il valore predefinito dell'ora di riferimento è zero.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione  | Reftime. h (include Streams. h)                                                                                   |
-| Libreria | Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione  | Reftime.h (include Flussi.h)                                                                                   |
+| Libreria | Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 
 

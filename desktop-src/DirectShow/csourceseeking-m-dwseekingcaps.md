@@ -1,7 +1,7 @@
 ---
-description: Funzionalità di ricerca.
+description: Ricerca di funzionalità.
 ms.assetid: c849db20-7567-41e0-9a57-85070a6e6a3a
-title: 'Membro CSourceSeeking:: m_dwSeekingCaps (Ctlutil. h)'
+title: Membro CSourceSeeking::m_dwSeekingCaps (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e4addb06b120801b0d5e697c7df93ab8ba620bbd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98044f8a05c22022f66e6014be591d99ec57451e33e8f2d7d464e6793bec19e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054031"
 ---
-# <a name="csourceseekingm_dwseekingcaps-member"></a>Membro dwSeekingCaps di CSourceSeeking:: m \_
+# <a name="csourceseekingm_dwseekingcaps-member"></a>Membro CSourceSeeking::m \_ dwSeekingCaps
 
-Funzionalità di ricerca.
+Ricerca di funzionalità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,13 +40,13 @@ DWORD m_dwSeekingCaps;
 
 Per impostazione predefinita, il valore è impostato sulla combinazione bit per bit dei flag seguenti:
 
--   \_Ricerca di \_ CanSeekForwards
--   \_Ricerca di \_ CanSeekBackwards
--   \_Ricerca di \_ CanSeekAbsolute
--   \_Ricerca di \_ CanGetStopPos
--   \_Ricerca di \_ CanGetDuration
+-   AM \_ SEEKING \_ CanSeekForwards
+-   AM \_ SEEKING \_ CanSeekBackwards
+-   AM \_ SEEKING \_ CanSeekAbsolute
+-   AM \_ SEEKING \_ CanGetStopPos
+-   AM \_ SEEKING \_ CanGetDuration
 
-Se il filtro supporta un set di funzionalità diverso, eseguire l'override di questo valore.
+Se il filtro supporta un set diverso di funzionalità, eseguire l'override di questo valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Se il filtro supporta un set di funzionalità diverso, eseguire l'override di qu
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

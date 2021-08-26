@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà IndexSegment. Ascending'
-title: Proprietà IndexSegment. Ascending
+description: Altre informazioni sulla proprietà IndexSegment.IsAscending
+title: IndexSegment.IsAscending - proprietà
 TOCTitle: 'IsAscending property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexSegment.IsAscending
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.isascending(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 374e7566471948e945e21b5b0a4a0641c671361d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00081ca3ea6cfc6a981dd3d23c4f223b6a500ee1a143a456260a7cea4f182645
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017741"
 ---
-# <a name="indexsegmentisascending-property"></a>Proprietà IndexSegment. Ascending
+# <a name="indexsegmentisascending-property"></a>IndexSegment.IsAscending - proprietà
 
 Ottiene un valore che indica se il segmento di indice è crescente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ public bool IsAscending { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -66,6 +66,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Membri di IndexSegment](./indexsegment-members.md)
+[Membri indexSegment](./indexsegment-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Definisce una connessione attualmente attivata e configurata per fornire la comunicazione tra due \_ oggetti CIM ServiceAccessPoint.
+description: Definisce una connessione attualmente attivata e configurata per fornire la comunicazione tra due oggetti \_ ServiceAccessPoint CIM.
 ms.assetid: 03f8e43f-a77b-46e2-bb7d-c29758c65aee
-title: Classe CIM_ActiveConnection
+title: CIM_ActiveConnection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 644e8aaae1368e4164ceca7f7db29e343116c93c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2961779744e90d0e4281e53c3d78c92081993027deb6c435846abbffb41b110
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041761"
 ---
-# <a name="cim_activeconnection-class"></a>CIM \_ ActiveConnection (classe)
+# <a name="cim_activeconnection-class"></a>Classe \_ CIM ActiveConnection
 
-Definisce una connessione attualmente attivata e configurata per fornire la comunicazione tra due oggetti **CIM \_ serviceAccessPoint** . **CIM \_ ActiveConnection** viene usato quando la connessione non viene trattata come un oggetto **CIM \_ managementelement** . I punti di accesso al servizio connessi tramite una connessione attiva si trovano in genere nello stesso livello di rete o di applicazione.
+Definisce una connessione attualmente attivata e configurata per fornire la comunicazione tra due **oggetti \_ ServiceAccessPoint CIM.** **CIM \_ ActiveConnection** viene usato quando la connessione non viene considerata come **un oggetto CIM \_ ManagedElement.** I punti di accesso del servizio connessi da una connessione attiva si trovano in genere allo stesso livello di rete o applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,71 +45,71 @@ class CIM_ActiveConnection : CIM_SAPSAPDependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ActiveConnection** presenta questi tipi di membri:
+La **classe \_ CIM ActiveConnection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ActiveConnection** dispone di queste proprietà.
+La **classe \_ CIM ActiveConnection** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Il punto di accesso al servizio connesso all'altro punto di accesso al servizio tramite la connessione attiva. **CIM \_ Oggetto ServiceAccessPoint** . In una connessione unidirezionale, questo punto di accesso è quello che trasmette i dati.
+Punto di accesso del servizio connesso all'altro punto di accesso del servizio tramite la connessione attiva. **CIM \_ Oggetto ServiceAccessPoint.** In una connessione unidirezionale, questo punto di accesso è quello che trasmette i dati.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Il punto di accesso al servizio configurato per comunicare o sta comunicando attivamente con il punto di accesso al servizio specificato nella proprietà **precedente** . In una connessione unidirezionale, questo punto di accesso è quello che riceve i dati.
+Punto di accesso al servizio configurato per comunicare o che comunica attivamente con il punto di accesso del servizio specificato nella **proprietà Antecedent.** In una connessione unidirezionale, questo punto di accesso è quello che riceve i dati.
 
 </dd> <dt>
 
 **IsUnidirectional**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-True se la connessione è unidirezionale. false se la connessione è bidirezionale. Quando la connessione è unidirezionale, la proprietà **antecedente** specifica il punto di accesso che trasmette i dati. In una connessione bidirezionale, l'attività **precedente** può specificare uno dei punti di accesso assegnati alla connessione.
+True se la connessione è unidirezionale. false se la connessione è bidirezionale. Quando la connessione è unidirezionale, la **proprietà Antecedent** specifica il punto di accesso che trasmette i dati. In una connessione bidirezionale, **Antecedent** può specificare uno dei due punti di accesso assegnati alla connessione.
 
 </dd> <dt>
 
 **OtherTrafficDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ActiveConnection**.**TrafficType**")
+Qualificatori: [**Deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ActiveConnection**.**TrafficType**")
 </dt> </dl>
 
 > [!Note]  
@@ -117,20 +117,20 @@ Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) 
 
  
 
-Descrizione del tipo di traffico specificato quando la proprietà **TrafficType** è impostata su "1" (other).
+Descrizione del tipo di traffico specificato quando la **proprietà TrafficType** è impostata su "1" (Altro).
 
 </dd> <dt>
 
 **TrafficType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("nessun valore"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ActiveConnection**.**OtherTrafficDescription**")
+Qualificatori: [**Deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Nessun valore"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ActiveConnection**.**OtherTrafficDescription**")
 </dt> </dl>
 
 > [!Note]  
@@ -138,7 +138,7 @@ Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) 
 
  
 
-Tipo di traffico trasmesso sulla connessione.
+Tipo di traffico trasmesso tramite questa connessione.
 
 <dt>
 
@@ -165,7 +165,7 @@ Tipo di traffico trasmesso sulla connessione.
 
 <span id="Broadcast"></span><span id="broadcast"></span><span id="BROADCAST"></span>
 
-**Broadcast** (3)
+**Trasmissione** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -194,8 +194,8 @@ Tipo di traffico trasmesso sulla connessione.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -204,7 +204,7 @@ Tipo di traffico trasmesso sulla connessione.
 
 <dl> <dt>
 
-[**\_SAPSAPDEPENDENCY CIM**](cim-sapsapdependency.md)
+[**CIM \_ SAPSAPDependency**](cim-sapsapdependency.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetReader restituisce un puntatore all'interfaccia IAsyncReader del PIN di output.
+description: Il metodo GetReader restituisce un puntatore all'interfaccia IAsyncReader del pin di output.
 ms.assetid: bb7ed3f2-a5bc-496c-8a52-f9915a75105e
-title: Metodo CPullPin. GetReader (Pullpin. h)
+title: Metodo CPullPin.GetReader (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3a20bbb689c4ee5e3ac12c510098163d9fbb224e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7880cba8e910c3da8ade049e18ae22e403c0c616246e4dfde94e587a1fcdeab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055001"
 ---
-# <a name="cpullpingetreader-method"></a>CPullPin. GetReader, metodo
+# <a name="cpullpingetreader-method"></a>Metodo CPullPin.GetReader
 
-Il `GetReader` metodo restituisce un puntatore all'interfaccia [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) del PIN di output.
+Il `GetReader` metodo restituisce un puntatore all'interfaccia [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) del pin di output.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore all'interfaccia [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) .
+Restituisce un puntatore [**all'interfaccia IAsyncReader.**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader)
 
 ## <a name="remarks"></a>Commenti
 
-Il conteggio dei riferimenti dell'interfaccia restituita è in attesa. Il chiamante deve rilasciare l'interfaccia.
+L'interfaccia restituita ha un conteggio dei riferimenti in sospeso. Il chiamante deve rilasciare l'interfaccia .
 
-Il metodo non verifica il valore del puntatore a interfaccia prima di chiamare **AddRef**, quindi non chiamarlo finché il metodo [**CPullPin:: Connect**](cpullpin-connect.md) non è stato chiamato correttamente. In caso contrario, il puntatore a interfaccia potrebbe essere **null** e la chiamata a **AddRef** genererà un'eccezione.
+Il metodo non controlla il valore del puntatore a interfaccia prima di chiamare **AddRef,** quindi non chiamare questo metodo fino a quando non viene chiamato correttamente il metodo [**CPullPin::Connessione.**](cpullpin-connect.md) In caso contrario, il puntatore a interfaccia **potrebbe essere NULL** e la chiamata di **AddRef** genererà un'eccezione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Il metodo non verifica il valore del puntatore a interfaccia prima di chiamare *
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri IJET_LOGTIME'
-title: Membri IJET_LOGTIME
+description: 'Altre informazioni su: IJET_LOGTIME membri'
+title: IJET_LOGTIME membri
 TOCTitle: IJET_LOGTIME members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IJET_LOGTIME
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.ijet_logtime_members(v=EXCHG.10)
 ms:contentKeyID: 39511372
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c41d9282458d4603da8073140e467bbe07152786
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6d49bf17bec14b7b93307b9de04897a4a53e57ffe72db9d40374405f48f74e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017951"
 ---
-# <a name="ijet_logtime-members"></a>Membri IJET_LOGTIME
+# <a name="ijet_logtime-members"></a>IJET_LOGTIME membri
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 Interfaccia per i metodi comuni tra JET_LOGTIME e JET_BKLOGTIME.
 
-Il tipo di [IJET_LOGTIME](./ijet-logtime-interface.md) espone i membri seguenti.
+Il [IJET_LOGTIME](./ijet-logtime-interface.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -36,8 +36,8 @@ Il tipo di [IJET_LOGTIME](./ijet-logtime-interface.md) espone i membri seguenti.
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="hh577833(v=exchg.10).md">HasValue</a></td>
-<td>Ottiene un valore che indica se la struttura ha un valore null. Ereditato da <a href="hh578599(v=exchg.10).md">INullableJetStruct</a>.</td>
+<td><a href="hh577833(v=exchg.10).md">Hasvalue</a></td>
+<td>Ottiene un valore che indica se la struttura ha un valore Null. Ereditato da <a href="hh578599(v=exchg.10).md">INullableStruct.</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,6 +71,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Interfaccia IJET_LOGTIME](./ijet-logtime-interface.md)
+[IJET_LOGTIME interfaccia](./ijet-logtime-interface.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

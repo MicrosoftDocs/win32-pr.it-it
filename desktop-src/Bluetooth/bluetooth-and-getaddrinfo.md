@@ -1,6 +1,6 @@
 ---
 title: Bluetooth e getaddrinfo
-description: La funzione getaddrinfo fornisce la conversione dal nome host all'indirizzo per i trasporti basati su IP. Poiché la funzione getaddrinfo è specifica per i trasporti basati su IP, ha esito negativo Bluetooth socket.
+description: La funzione getaddrinfo fornisce la conversione dal nome host all'indirizzo per i trasporti basati su IP. Poiché la funzione getaddrinfo è specifica per i trasporti basati su IP, non riesce Bluetooth socket.
 ms.assetid: e17d8542-d4bc-499c-bae4-1f41bff493c3
 keywords:
 - Bluetooth e getaddrinfo Bluetooth
@@ -15,9 +15,9 @@ ms.locfileid: "120004531"
 ---
 # <a name="bluetooth-and-getaddrinfo"></a>Bluetooth e getaddrinfo
 
-La [**funzione getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) fornisce la conversione dal nome host all'indirizzo per i trasporti basati su IP. Poiché la **funzione getaddrinfo** è specifica per i trasporti basati su IP, ha esito negativo Bluetooth socket.
+La [**funzione getaddrinfo**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) fornisce la conversione dal nome host all'indirizzo per i trasporti basati su IP. Poiché la **funzione getaddrinfo** è specifica per i trasporti basati su IP, non riesce Bluetooth socket.
 
-Per eseguire la conversione dal nome host all'indirizzo per i socket Bluetooth, usare la funzione [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **contenitori LUP \_** per eseguire query sui dispositivi remoti, quindi cercare un nome remoto e l'indirizzo corrispondenti.
+Per eseguire la conversione dal nome host all'indirizzo per i socket Bluetooth, usare la funzione [**WSALookupServiceBegin**](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md) con **CONTENITORI LUP \_** per eseguire query sui dispositivi remoti, quindi cercare un nome remoto e un indirizzo corrispondenti corrispondenti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

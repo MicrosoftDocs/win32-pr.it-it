@@ -1,6 +1,6 @@
 ---
 title: Struttura XMUINT2
-description: Descrive un vettore integer senza segno 2D.
+description: Descrive un vettore di interi senza segno 2D.
 ms.assetid: 8622eca1-fc8f-4129-a375-142b4f4018b0
 keywords:
 - Struttura XMUINT2 HLSL
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71168d08b8a91e09429a6f4e004c48c699635414
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 39ec30fd4966e46bd511729671c39653640fe3f8f858d74db96e59fa1f09d242
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067271"
 ---
 # <a name="xmuint2-structure"></a>Struttura XMUINT2
 
-Descrive un vettore integer senza segno 2D.
+Descrive un vettore di interi senza segno 2D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Componente y del vettore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione in DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione nel pacchetto NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) non la definisce più e si basa invece su [DirectX::XMUINT2](/windows/win32/api/directxmath/ns-directxmath-xmuint2) in DirectXMath.
+Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione di DirectX SDK (giugno 2010) per l'uso da C++. La versione più recente di questa intestazione in [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) NuGet Package non la definisce più e si basa invece su [DirectX::XMUINT2](/windows/win32/api/directxmath/ns-directxmath-xmuint2) in DirectXMath.
 
 
 
@@ -80,5 +80,5 @@ Questa struttura è definita ``D3DX\_DXGIFormatConvert.inl`` nell'intestazione i
 [Strutture](format-conversion-structures.md)
 </dt> <dt>
 
-[Decompressione e impacchettamento del formato DXGI \_ per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>

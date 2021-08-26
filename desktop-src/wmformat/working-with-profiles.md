@@ -1,40 +1,40 @@
 ---
-title: Utilizzo dei profili
-description: Utilizzo dei profili
+title: Uso dei profili
+description: Uso dei profili
 ms.assetid: e1e31632-0db7-47db-a992-f5db9d8824c1
 keywords:
-- Windows Media Format SDK, profili
+- Windows MEDIA Format SDK, profili
 - Windows Media Format SDK, interfaccia IWMCodecInfo3
 - profili, informazioni
 - profili, Windows Media Format SDK
-- profili, IWMCodecInfo3
-- IWMCodecInfo3, informazioni
+- profiles,IWMCodecInfo3
+- IWMCodecInfo3,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 664bbafd6c628588aa3b45b0a62a216db7bd7749
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 68982a47b743aaa12397e937ad9bd213fbd7ac0a78b41087d01929c1d42bb622
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055431"
 ---
-# <a name="working-with-profiles"></a>Utilizzo dei profili
+# <a name="working-with-profiles"></a>Uso dei profili
 
-In questa sezione viene descritto come progettare, creare e modificare i profili. Ogni profilo descrive i flussi che compongono un file e le relazioni tra loro. Un oggetto profilo contiene le informazioni di configurazione del flusso per ogni flusso, le informazioni di esclusione reciproca per i flussi che non possono essere recapitati simultaneamente, le informazioni di condivisione della larghezza di banda e le informazioni
+Questa sezione descrive come progettare, creare e modificare i profili. Ogni profilo descrive i flussi che costituiscono un file e le relative relazioni tra loro. Un oggetto profilo contiene informazioni di configurazione del flusso per ogni flusso, informazioni di esclusione reciproca per i flussi che non possono essere recapitati contemporaneamente, informazioni sulla condivisione della larghezza di banda e informazioni sulla priorità dei flussi.
 
-Lo scopo principale dei profili è fornire informazioni di configurazione del flusso all'oggetto writer. Il writer usa le informazioni contenute in un profilo per coordinare con i codec il processo di compressione degli input. Quando si configura un flusso multimediale compresso, si specifica il codec usato per comprimere i dati e le impostazioni utilizzate dal codec. È anche possibile creare profili per i flussi non compressi. Sono supportati diversi tipi di flusso non compressi. Sebbene non richiedano un codec, questi tipi presentano requisiti specifici per la configurazione del flusso. Per altre informazioni, vedere [configurazione di flussi](configuring-streams.md) e [uso di flussi audio e video non compressi](using-uncompressed-audio-and-video-streams.md).
+Lo scopo principale dei profili è fornire informazioni di configurazione del flusso all'oggetto writer. Il writer usa le informazioni in un profilo per coordinare con i codec il processo di compressione degli input. Quando si configura un flusso multimediale compresso, si specifica il codec usato per comprimere i dati e le impostazioni usate dal codec. È anche possibile creare profili per i flussi non compressi. Sono supportati diversi tipi di flusso non compressi. Anche se non richiedono un codec, questi tipi hanno requisiti specifici per la configurazione del flusso. Per altre informazioni, vedere [Configuring Flussi](configuring-streams.md) and [Using Uncompressed Audio and Video Flussi](using-uncompressed-audio-and-video-streams.md).
 
-È necessario ottenere le informazioni di configurazione del flusso per un flusso usando uno dei codec di Windows Media dal codec usando i metodi dell'interfaccia [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) . La procedura per l'uso di formati di flusso è diversa per i codec video rispetto ai codec audio, ma in entrambi i casi è necessario iniziare ottenendo il formato dal codec. Non provare mai a configurare manualmente un flusso usando uno dei codec di Windows Media, perché piccoli errori nel profilo possono avere un effetto significativo sul file ASF.
+Le informazioni di configurazione del flusso per un flusso che usano uno dei codec Windows Media devono essere ottenute dal codec usando i metodi [**dell'interfaccia IWMCodecInfo3.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) La procedura per l'uso dei formati di flusso è diversa per i codec video rispetto ai codec audio, ma in entrambi i casi è necessario iniziare ottenendo il formato dal codec. Non provare mai a configurare manualmente un flusso usando uno dei codec di Windows Media, perché piccoli errori nel profilo possono avere un effetto negativo sul file ASF.
 
-I passaggi di base per la creazione e/o la modifica di profili sono:
+I passaggi di base per la creazione e/o la modifica dei profili sono:
 
 1.  Creare un profilo vuoto o caricare un profilo esistente da modificare.
-2.  Configurare ognuno dei flussi, se necessario, in base ai dati del profilo supportati recuperati dal codec che verrà usato per codificare il flusso.
-3.  Se necessario, configurare l'esclusione reciproca.
+2.  Configurare ogni flusso, se necessario, in base ai dati di profilo supportati recuperati dal codec che verrà usato per codificare il flusso.
+3.  Configurare l'esclusione reciproca, se necessario.
 4.  Configurare la condivisione della larghezza di banda, se necessario.
 5.  Impostare la priorità dei flussi nel file, se necessario.
 
-Le sezioni seguenti illustrano il processo di creazione e modifica di profili.
+Le sezioni seguenti illustrano il processo di creazione e modifica dei profili.
 
 
 
@@ -42,33 +42,33 @@ Le sezioni seguenti illustrano il processo di creazione e modifica di profili.
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | [Progettazione di profili](designing-profiles.md)                   | Viene descritto come progettare un profilo.                                                                 |
 | [Creazione di profili](creating-profiles.md)                     | Viene descritto come creare un profilo vuoto.                                                          |
-| [Configurazione di flussi](configuring-streams.md)                 | Viene descritto come configurare i flussi e includerli in un profilo.                                  |
+| [Configurazione di Flussi](configuring-streams.md)                 | Viene descritto come configurare i flussi e includerli in un profilo.                                  |
 | [Uso dell'esclusione reciproca](using-mutual-exclusion.md)           | Viene descritto come creare oggetti di esclusione reciproca e includerli in un profilo.                    |
-| [Uso della condivisione della larghezza di banda](using-bandwidth-sharing.md)         | Viene descritto come usare la condivisione della larghezza di banda in un profilo.                                               |
-| [Uso della priorità di flusso](using-stream-prioritization.md) | Viene descritto come usare la definizione di priorità del flusso in un profilo.                                           |
-| [Salvataggio di profili](saving-profiles.md)                         | Viene descritto come salvare i profili personalizzati in un file.                                              |
-| [Uso dei profili di sistema](using-system-profiles.md)             | Viene descritto come utilizzare i profili di sistema per risparmiare tempo e impegno nella creazione di profili.           |
-| [Gestione delle dimensioni dei pacchetti](managing-packet-size.md)               | Viene descritto come controllare le dimensioni dei pacchetti nei flussi di dati dei file creati usando il profilo. |
+| [Uso della condivisione della larghezza di banda](using-bandwidth-sharing.md)         | Descrive come usare la condivisione della larghezza di banda in un profilo.                                               |
+| [Uso della definizione delle priorità dei flussi](using-stream-prioritization.md) | Viene descritto come usare l'assegnazione delle priorità dei flussi in un profilo.                                           |
+| [Salvataggio dei profili](saving-profiles.md)                         | Viene descritto come salvare i profili personalizzati in un file.                                              |
+| [Uso dei profili di sistema](using-system-profiles.md)             | Descrive come usare i profili di sistema per risparmiare tempo e impegno nella creazione dei profili.           |
+| [Gestione delle dimensioni dei pacchetti](managing-packet-size.md)               | Viene illustrato come controllare le dimensioni dei pacchetti nei flussi di dati dei file effettuati usando il profilo. |
 
 
 
- 
+ 
 
-**Nota** È possibile che gli utenti delle versioni precedenti di Windows Media Format SDK siano abituati a usare i profili di sistema senza modifiche per creare i file. Windows Media Format 9 Series SDK o versioni successive non include i nuovi profili di sistema che usano la serie Windows Media 9 o i codec successivi. Questo è dovuto all'aumento del numero di profili necessari per coprire le varie funzionalità ora offerte dai codec. È comunque possibile usare i profili di sistema versione 8 come punto di partenza per i profili. Per ulteriori informazioni, vedere [utilizzo dei profili di sistema](using-system-profiles.md). Per informazioni sul nuovo meccanismo per indirizzare i profili a specifici dispositivi di recapito, vedere [utilizzo dei modelli di conformità dei dispositivi](working-with-device-conformance-templates.md).
+**Nota** Gli utenti delle versioni precedenti di Windows Media Format SDK possono essere abituati a usare i profili di sistema senza apportare modifiche per creare i file. In Windows Media Format 9 Series SDK o versioni successive non sono inclusi nuovi profili di sistema che usano i codec Windows Media 9 Series o versioni successive. Ciò è dovuto al numero crescente di profili necessari per coprire le varie funzionalità ora offerte dai codec. È comunque possibile usare i profili di sistema versione 8 come punto di partenza per i profili. Per altre informazioni, vedere [Uso dei profili di sistema.](using-system-profiles.md) Per informazioni sul nuovo meccanismo per la destinazione dei profili a dispositivi di recapito specifici, vedere [Uso dei modelli di conformità dei dispositivi.](working-with-device-conformance-templates.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità file ASF**](asf-file-features.md)
+[**Funzionalità dei file ASF**](asf-file-features.md)
 </dt> <dt>
 
 [**Guida per programmatori**](programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

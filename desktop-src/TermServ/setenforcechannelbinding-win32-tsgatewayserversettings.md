@@ -1,12 +1,12 @@
 ---
-title: Metodo SetEnforceChannelBinding della Win32_TSGatewayServerSettings classe
+title: Metodo SetEnforceChannelBinding della classe Win32_TSGatewayServerSettings
 description: Imposta la proprietà EnforceChannelBinding.
 ms.assetid: 8bd64fe7-bad5-44e6-a309-10802d9a8bd4
 ms.tgt_platform: multiple
 keywords:
 - Metodo SetEnforceChannelBinding Servizi Desktop remoto
 - Metodo SetEnforceChannelBinding Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
-- Win32_TSGatewayServerSettings classe Servizi Desktop remoto, metodo SetEnforceChannelBinding
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto metodo SetEnforceChannelBinding
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119988031"
 ---
-# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetEnforceChannelBinding della classe \_ Win32 TSGatewayServerSettings
+# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetEnforceChannelBinding della classe \_ TSGatewayServerSettings Win32
 
 Imposta la **proprietà EnforceChannelBinding.**
 
@@ -52,7 +52,7 @@ Specifica il nuovo valore **della proprietà EnforceChannelBinding.**
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

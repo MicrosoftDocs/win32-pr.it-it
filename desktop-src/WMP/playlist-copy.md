@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. Copy
-description: Il metodo Copy avvia un'operazione di copia dal CD.
+title: PLAYLIST.copy
+description: Il metodo copy avvia un'operazione di copia dal CD.
 ms.assetid: 7d919ae5-456b-4cb9-ad52-9396f5c867d6
 keywords:
-- PLAYLIST. copiare Media Player Windows
+- Playlist.copy Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f1c24de6af571eec948a92f666a76df6b65187c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07b897d22c1aa8e666c5de40aecb8ef63d17384957e82eee8dc7d569f0e71f57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003191"
 ---
-# <a name="playlistcopy"></a>PLAYLIST. Copy
+# <a name="playlistcopy"></a>PLAYLIST.copy
 
-Il metodo **Copy** avvia un'operazione di copia dal CD.
+Il **metodo copy** avvia un'operazione di copia dal CD.
 
 ``` syntax
         elementID.copy()
@@ -38,7 +38,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo copia solo gli elementi selezionati nella playlist e funziona allo stesso modo del riquadro **copia da CD** nella modalità completa di Windows Media Player. Per il corretto funzionamento di questo metodo, è necessario che sia presente un CD nell'unità CD. Impostare l'attributo **checkboxesVisible** su true per consentire agli utenti di selezionare singoli elementi in un CD prima della copia.
+Questo metodo copia solo gli elementi selezionati nella playlist e funziona allo stesso modo del riquadro Copia da **CD** nella modalità completa di Windows Media Player. Per il funzionamento di questo metodo, è necessario che nell'unità CD sia presente un CD. Impostare **l'attributo checkboxesVisible** su true per consentire agli utenti di selezionare singoli elementi in un CD prima della copia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Questo metodo copia solo gli elementi selezionati nella playlist e funziona allo
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,13 +54,13 @@ Questo metodo copia solo gli elementi selezionati nella playlist e funziona allo
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. abortCopy**](playlist-abortcopy.md)
+[**PLAYLIST.abortCopy**](playlist-abortcopy.md)
 </dt> <dt>
 
-[**PLAYLIST. copia**](playlist-copying.md)
+[**PLAYLIST.copying**](playlist-copying.md)
 </dt> </dl>
 
  
