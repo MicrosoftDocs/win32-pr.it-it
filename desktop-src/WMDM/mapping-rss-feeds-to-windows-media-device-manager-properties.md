@@ -1,26 +1,26 @@
 ---
-title: Mapping di feed RSS a Windows Media Gestione dispositivi proprietà
-description: Mapping di feed RSS a Windows Media Gestione dispositivi proprietà
+title: Mapping dei feed RSS alle Windows di Gestione dispositivi multimediali
+description: Mapping dei feed RSS alle Windows di Gestione dispositivi multimediali
 ms.assetid: 354c98ab-1392-476f-a650-75b948dc971a
 keywords:
-- Windows Media Gestione dispositivi, feed RSS
+- Windows Gestione dispositivi multimediali, feed RSS
 - Gestione dispositivi, feed RSS
-- Guida per programmatori, feed RSS
+- guida per programmatori,feed RSS
 - applicazioni desktop, feed RSS
-- creazione di applicazioni Windows Media Gestione dispositivi, feed RSS
+- creazione Windows applicazioni di Gestione dispositivi multimediali,feed RSS
 - Feed RSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3a81d52b4099d77542963d2e87ae5b7dc26b034
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 355515217db31740603d5c6323ef8455da4b29ee80bec508897d2d4df5d59bde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031681"
 ---
-# <a name="mapping-rss-feeds-to-windows-media-device-manager-properties"></a>Mapping di feed RSS a Windows Media Gestione dispositivi proprietà
+# <a name="mapping-rss-feeds-to-windows-media-device-manager-properties"></a>Mapping dei feed RSS alle Windows di Gestione dispositivi multimediali
 
-Windows Media Player 11 fornisce una funzionalità di aggregatore RSS che consente agli utenti di archiviare contenuti ottenuti da podcast nei propri computer. In questo argomento vengono descritti gli elementi XML disponibili in un feed RSS. Inoltre, esegue il mapping di questi elementi RSS a Windows Media Gestione dispositivi proprietà.
+Windows Media Player 11 offre una funzionalità di aggregatore RSS che consente agli utenti di archiviare il contenuto ottenuto dai podcast nei propri computer. Questo argomento descrive gli elementi XML presenti in un feed RSS. Esegue inoltre il mapping di questi elementi RSS Windows proprietà di Gestione dispositivi multimediali.
 
 Gli elementi in un feed RSS hanno la gerarchia e gli attributi seguenti:
 
@@ -80,11 +80,11 @@ Gli elementi in un feed RSS hanno la gerarchia e gli attributi seguenti:
 
 
 
-La tabella seguente elenca gli elementi del canale in un feed RSS e le proprietà Windows Media Gestione dispositivi corrispondenti.
+Nella tabella seguente sono elencati gli elementi del canale in un feed RSS e le proprietà Windows gestione dispositivi multimediali.
 
 
 
-| Elemento Channel | Stato         | Proprietà Gestione dispositivi Windows Media corrispondente   |
+| Elemento Channel | Stato         | Proprietà Windows Gestione dispositivi multimediali corrispondente   |
 |-----------------|----------------|-------------------------------------------------------|
 | category        | Facoltativo       | [g \_ wszWMDMGenre](metadata-constants.md)             |
 | cloud           | Non applicabile | Non applicabile                                        |
@@ -100,23 +100,23 @@ La tabella seguente elenca gli elementi del canale in un feed RSS e le propriet�
 | rating          | Non applicabile | Non applicabile                                        |
 | skipDays        | Non applicabile | Non applicabile                                        |
 | skipHours       | Non applicabile | Non applicabile                                        |
-| textInput       | Non applicabile | Non applicabile                                        |
+| Textinput       | Non applicabile | Non applicabile                                        |
 | title           | Necessario       | [g \_ wszWMDMTitle](metadata-constants.md)             |
 | ttl             | Facoltativo       | [g \_ wszWMDMTimeToLive](metadata-constants.md)        |
-| webMaster       | Facoltativo       | [g \_ wszWMDMWebMaster](metadata-constants.md)         |
+| Webmaster       | Facoltativo       | [g \_ wszWMDMWebMaster](metadata-constants.md)         |
 
 
 
- 
+ 
 
-La tabella seguente elenca gli elementi immagine in un feed RSS e le proprietà WMDM corrispondenti.
+Nella tabella seguente sono elencati gli elementi immagine in un feed RSS e le proprietà WMDM corrispondenti.
 
 
 
-| Elemento Image | Stato   | Proprietà Gestione dispositivi Windows Media corrispondente |
+| Elemento Image | Stato   | Proprietà Windows Gestione dispositivi multimediali corrispondente |
 |---------------|----------|-----------------------------------------------------|
 | description   | Facoltativo | [g \_ wszWMDMDescription](metadata-constants.md)     |
-| altezza        | Facoltativo | [g \_ wszWMDMHeight](metadata-constants.md)          |
+| altezza        | Facoltativo | [g \_ wszWMDMMHeight](metadata-constants.md)          |
 | link          | Facoltativo | [g \_ wszWMDMDestinationURL](metadata-constants.md)  |
 | title         | Facoltativo | [g \_ wszWMDMTitle](metadata-constants.md)           |
 | url           | Facoltativo | [g \_ wszWMDMSourceURL](metadata-constants.md)       |
@@ -124,24 +124,24 @@ La tabella seguente elenca gli elementi immagine in un feed RSS e le proprietà 
 
 
 
- 
+ 
 
-Nella tabella seguente sono elencati gli elementi elemento in un feed RSS e le proprietà corrispondenti di Windows Media Gestione dispositivi.
+Nella tabella seguente sono elencati gli elementi dell'elemento in un feed RSS e le proprietà Windows gestione dispositivi multimediali.
 
 
 
-| Elemento Item | Attributo   | Stato         | Proprietà Gestione dispositivi Windows Media corrispondente            |
+| Elemento Item | Attributo   | Stato         | Proprietà Windows Gestione dispositivi multimediali corrispondente            |
 |--------------|-------------|----------------|----------------------------------------------------------------|
 | author       |             | Facoltativo       | [g \_ wszWMDMAuthor](metadata-constants.md)                     |
 | category     |             | Facoltativo       | [g \_ wszWMDMGenre](metadata-constants.md)                      |
 |              | dominio      | Non applicabile | Non applicabile                                                 |
 | description  |             | Facoltativo       | [g \_ wszWMDMDescription](metadata-constants.md)                |
-| recinto    |             | Facoltativo       | Non applicabile                                                 |
+| Recinto    |             | Facoltativo       | Non applicabile                                                 |
 |              | length      | Necessario       | [g \_ wszWMDMFileSize](metadata-constants.md)                   |
-|              | type        | Obbligatoria       | (Il tipo MIME deve essere mappato al tipo di contenuto della proprietà). |
+|              | type        | Obbligatoria       | Il tipo MIME deve essere mappato al tipo di contenuto della proprietà. |
 |              | url         | Necessario       | [g \_ wszWMDMSourceURL](metadata-constants.md)                  |
 | guid         |             | Facoltativo       | [g \_ wszWMDMediaGuid](metadata-constants.md)                   |
-|              | PermaLink | Non applicabile | Non applicabile                                                 |
+|              | isPermaLink | Non applicabile | Non applicabile                                                 |
 | link         |             | Facoltativo       | [g \_ wszWMDMDestinationURL](metadata-constants.md)             |
 | pubDate      |             | Facoltativo       | [g \_ wszWMDMYear](metadata-constants.md)                       |
 | source       |             | Non applicabile | Non applicabile                                                 |
@@ -149,11 +149,11 @@ Nella tabella seguente sono elencati gli elementi elemento in un feed RSS e le p
 
 
 
- 
+ 
 
 Esempio
 
-Nell'esempio seguente viene illustrato un feed RSS completo per un podcast fittizio fornito dal CEO di una società di pubblicazione.
+L'esempio seguente mostra un feed RSS completo per un podcast fittizio fornito dal CEO di una società di pubblicazione.
 
 
 ```C++
@@ -204,82 +204,82 @@ Nell'esempio seguente viene illustrato un feed RSS completo per un podcast fitti
 
 
 
-Mapping di elementi del canale RSS a Windows Media Gestione dispositivi valori delle proprietà
+Mapping degli elementi del canale RSS ai Windows proprietà di Gestione dispositivi multimediali
 
-Nella tabella seguente viene descritto in che modo i valori negli elementi del canale RSS nell'esempio precedente vengono mappati a specifiche proprietà di Windows Media Gestione dispositivi.
+Nella tabella seguente viene descritto il mapping dei valori negli elementi del canale RSS nell'esempio precedente a determinate Windows di Gestione dispositivi multimediali.
 
 
 
-| Windows Media Gestione dispositivi proprietà                    | Valore                                                                                         |
+| Windows Proprietà di Gestione dispositivi multimediali                    | Valore                                                                                         |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [g \_ wszWMDMAuthorDate](metadata-constants.md)           | Venerdì, 9 giugno 2006 14:00:28 EDT                                                                 |
-| [g \_ wszWMDMDESCRIPTION](metadata-constants.md)          | Il CEO della pubblicazione di Lucerne Peter Bankov esamina le tendenze più recenti nelle pubblicazioni online. |
-| [\_URL wszWMDMDESTINATION \_ g](metadata-constants.md)     | https://www.lucernepublishing/services/podcasting                                              |
+| [g \_ wszWMDMAuthorDate](metadata-constants.md)           | ven, 9 giugno 2006 14:00:28 EDT                                                                 |
+| [g \_ wszWMDMDESCRIPTION](metadata-constants.md)          | Il CEO di Lucerne Publishing, Peter Bankov, osserva le ultime tendenze nelle pubblicazioni online. |
+| [g \_ wszWMDMDESTINATION \_ URL](metadata-constants.md)     | https://www.lucernepublishing/services/podcasting                                              |
 | [g \_ wszWMDMEDITOR](metadata-constants.md)               | someone@example.com                                                                           |
-| [g \_ wszWMDMFileCreationDate](metadata-constants.md)     | Venerdì, 9 giugno 2006 14:00:28 EDT                                                                 |
+| [g \_ wszWMDMFileCreationDate](metadata-constants.md)     | ven, 9 giugno 2006 14:00:28 EDT                                                                 |
 | [g \_ wszWMDMFileName](metadata-constants.md)             | Pubblicazione digitale                                                                       |
-| [g \_ wszWMDMFileSize](metadata-constants.md)             | 13.790                                                                                        |
-| [g \_ wszWMDMFormatCode](metadata-constants.md)           | \_ \_ cast multimediale WMDM \_ FORMATCODE                                                                 |
+| [g \_ wszWMDMFileSize](metadata-constants.md)             | 13,790                                                                                        |
+| [g \_ wszWMDMFormatCode](metadata-constants.md)           | WMDM \_ FORMATCODE \_ MEDIA \_ CAST                                                                 |
 | [g \_ wszWMDMGENRE](metadata-constants.md)                | Notizie                                                                                          |
-| [g \_ wszWMDMLAST \_ Data di modifica \_](metadata-constants.md) | Venerdì, 9 giugno 2006 14:00:28 EDT                                                                 |
-| [g \_ wszWMDMLastModifiedDate](metadata-constants.md)     | Venerdì, 9 giugno 2006 14:00:28 EDT                                                                 |
+| [g \_ wszWMDMLAST \_ MODIFIED \_ DATE](metadata-constants.md) | ven, 9 giugno 2006 14:00:28 EDT                                                                 |
+| [g \_ wszWMDMLastModifiedDate](metadata-constants.md)     | ven, 9 giugno 2006 14:00:28 EDT                                                                 |
 | [g \_ wszWMDMProviderCopyright](metadata-constants.md)    | 2006 Lucerne Publishing LP, LLLP. All Rights Reserved.                                        |
 | [g \_ wszWMDMTimeToLive](metadata-constants.md)           | 240                                                                                           |
 | [g \_ wszWMDMTitle](metadata-constants.md)                | Pubblicazione digitale                                                                       |
 | [g \_ wszWMDMWEBMASTER](metadata-constants.md)            | someone@example.com                                                                           |
-| [g \_ wszWMDMYear](metadata-constants.md)                 | Venerdì, 9 giugno 2006 14:00:28 EDT                                                                 |
+| [g \_ wszWMDMYear](metadata-constants.md)                 | ven, 9 giugno 2006 14:00:28 EDT                                                                 |
 
 
 
- 
+ 
 
-Mapping di elementi immagine RSS a Windows Media Gestione dispositivi valori delle proprietà
+Mapping degli elementi immagine RSS ai Windows proprietà di Gestione dispositivi multimediali
 
-Nella tabella seguente viene descritto in che modo i valori negli elementi immagine RSS nell'esempio precedente vengono mappati a specifiche proprietà di Windows Media Gestione dispositivi.
+Nella tabella seguente viene descritto il mapping dei valori negli elementi immagine RSS dell'esempio precedente a determinate Windows di Gestione dispositivi multimediali.
 
 
 
-| Windows Media Gestione dispositivi proprietà                | Valore                                            |
+| Windows Proprietà di Gestione dispositivi multimediali                | Valore                                            |
 |------------------------------------------------------|--------------------------------------------------|
-| [g \_ wszWMDMAlbumCoverFormat](metadata-constants.md) | \_ \_ GIF formato oggetto \_ WPD                         |
+| [g \_ wszWMDMAlbumCoverFormat](metadata-constants.md) | GIF FORMATO OGGETTO WPD \_ \_ \_                         |
 | [g \_ wszWMDMAlbumCoverSize](metadata-constants.md)   | 512                                              |
-| [g \_ wszWMDMDescription](metadata-constants.md)      | Logo Lucerne                                     |
+| [g \_ wszWMDMDescription](metadata-constants.md)      | Lucerne Logo                                     |
 | [g \_ wszWMDMDestinationURL](metadata-constants.md)   | www.lucernepublishing.com/community/podcasts   |
-| [g \_ wszWMDMHeight](metadata-constants.md)           | 300                                              |
+| [g \_ wszWMDMMHeight](metadata-constants.md)           | 300                                              |
 | [g \_ wszWMDMSourceURL](metadata-constants.md)        | https://www.lucernepublishing.com/images/logo.gif |
-| [g \_ wszWMDMTitle](metadata-constants.md)            | Pubblicazione di Lucerne                               |
-| [g \_ wszWMDMWidth](metadata-constants.md)            | 300                                              |
+| [g \_ wszWMDMTitle](metadata-constants.md)            | Lucerne Publishing                               |
+| [g \_ wszWMDMMWidth](metadata-constants.md)            | 300                                              |
 
 
 
- 
+ 
 
-Mapping di elementi elemento RSS a Windows Media Gestione dispositivi valori delle proprietà
+Mapping degli elementi elemento RSS ai Windows proprietà di Gestione dispositivi multimediali
 
-Nella tabella seguente viene descritto in che modo i valori negli elementi RSS dell'esempio precedente vengono mappati a specifiche proprietà di Windows Media Gestione dispositivi.
+Nella tabella seguente viene descritto il mapping dei valori negli elementi elemento RSS nell'esempio precedente a determinate Windows di Gestione dispositivi multimediali.
 
 
 
-| Windows Media Gestione dispositivi proprietà                | Valore                                                                                                                               |
+| Windows Proprietà di Gestione dispositivi multimediali                | Valore                                                                                                                               |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | [g \_ wszWMDMAuthor](metadata-constants.md)           | Lucerna                                                                                                                             |
-| [g \_ wszWMDMAuthorDate](metadata-constants.md)       | Gio, 1 giugno 2006 14:00:28 EDT                                                                                                      |
-| [g \_ wszWMDMDescription](metadata-constants.md)      | Le pubblicazioni online sono in rapida evoluzione. Un CEO della casa di pubblicazione esamina le tendenze degli ultimi cinque anni e le loro implicazioni. |
+| [g \_ wszWMDMAuthorDate](metadata-constants.md)       | Thur, 1 giugno 2006 14:00:28 EDT                                                                                                      |
+| [g \_ wszWMDMDescription](metadata-constants.md)      | Le pubblicazioni online cambiano rapidamente. Un amministratore delegato della casa editrice esamina le tendenze degli ultimi cinque anni e le relative implicazioni. |
 | [g \_ wszWMDMDestinationURL](metadata-constants.md)   | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                   |
 | [g \_ wszWMDMDuration](metadata-constants.md)         | 120325445                                                                                                                           |
-| [g \_ wszWMDMFileCreationDate](metadata-constants.md) | Gio, 1 giugno 2006 14:00:28 EDT                                                                                                      |
+| [g \_ wszWMDMFileCreationDate](metadata-constants.md) | Thur, 1 giugno 2006 14:00:28 EDT                                                                                                      |
 | [g \_ wszWMDMFileSize](metadata-constants.md)         | 10329011                                                                                                                            |
 | [g \_ wszWMDMFormatCode](metadata-constants.md)       | WMDM \_ FORMATCODE \_ MP3                                                                                                               |
 | [g \_ wszWMDMGenre](metadata-constants.md)            | Notizie                                                                                                                                |
-| [g \_ wszWMDMLastModifiedDate](metadata-constants.md) | Gio, 1 giugno 2006 14:00:28 EDT                                                                                                      |
+| [g \_ wszWMDMLastModifiedDate](metadata-constants.md) | Thur, 1 giugno 2006 14:00:28 EDT                                                                                                      |
 | [g \_ wszWMDMMediaGuid](metadata-constants.md)        | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                   |
 | [g \_ wszWMDMSourceURL](metadata-constants.md)        | https://www.lucernepublishing/services/podcasting/digital.publishing/audio/2006/06/digital0601.mp3                                   |
 | [g \_ wszWMDMTitle](metadata-constants.md)            | Pubblicazione digitale                                                                                                             |
-| [g \_ wszWMDMYear](metadata-constants.md)             | Gio, 1 giugno 2006 14:00:28 EDT                                                                                                      |
+| [g \_ wszWMDMYear](metadata-constants.md)             | Thur, 1 giugno 2006 14:00:28 EDT                                                                                                      |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -288,9 +288,9 @@ Nella tabella seguente viene descritto in che modo i valori negli elementi RSS d
 [**Costanti dei metadati**](metadata-constants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: Creazione di una finestra di dialogo per la selezione di un tipo specifico di formato
-description: Creazione di una finestra di dialogo per la selezione di un tipo specifico di formato
+title: Creazione di una finestra di dialogo per la selezione di un tipo di formato specifico
+description: Creazione di una finestra di dialogo per la selezione di un tipo di formato specifico
 ms.assetid: e454f9d6-5cbf-4e1b-937e-771cf1dd38ba
 keywords:
-- Gestione compressione audio (ACM), creazione di finestre di dialogo
-- ACM (Gestione compressione audio), creazione di finestre di dialogo
+- Gestione compressione audio,creazione di finestre di dialogo
+- ACM (Audio Compression Manager), creazione di finestre di dialogo
 - Esempi di ACM, creazione di finestre di dialogo
 - creazione di finestre di dialogo
-- acmFormatChoose (funzione)
-- Gestione compressione audio (ACM), selezione dei tipi di formato
-- ACM (Gestione compressione audio), selezione dei tipi di formato
-- Esempi di ACM, selezione di tipi di formato
-- selezione di tipi di formato
+- Funzione acmFormatChoose
+- Gestione compressione audio,selezione dei tipi di formato
+- ACM (Audio Compression Manager), selezione dei tipi di formato
+- Esempi di ACM, selezione dei tipi di formato
+- selezione dei tipi di formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc5d73d1b03f22923e6001d65898c05e2bd853e
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: 06f25f7b196fcb9462a3b61dd8e351ed75276c7df7bf46cec233dd8eac7deda5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "104336538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037651"
 ---
-# <a name="producing-a-dialog-box-for-selecting-a-specific-type-of-format"></a>Creazione di una finestra di dialogo per la selezione di un tipo specifico di formato
+# <a name="producing-a-dialog-box-for-selecting-a-specific-type-of-format"></a>Creazione di una finestra di dialogo per la selezione di un tipo di formato specifico
 
-Potrebbe essere necessario che un'applicazione consenta all'utente di selezionare un formato da un elenco di formati limitato in una finestra di dialogo. Le restrizioni potrebbero limitare il numero di canali, la frequenza di campionamento, il tag del formato audio e la forma d'onda o il numero di bit per campione. In tutti questi casi, è possibile generare l'elenco usando la funzione [**acmFormatChoose**](/windows/desktop/api/Msacm/nf-msacm-acmformatchoose) , impostando i membri **fdwEnum** e **pwfxEnum** della struttura [**acmFormatChoose**](/windows/win32/api/msacm/ns-msacm-acmformatchoose) . Nell'esempio che segue viene illustrato questo processo.
+È possibile che un'applicazione consenta all'utente di selezionare un formato da un elenco con restrizioni di formati in una finestra di dialogo. Le restrizioni potrebbero limitare il numero di canali, la frequenza di campionamento, il tag di formato audio-forma d'onda o il numero di bit per campione. In tutti questi casi, è possibile generare l'elenco usando la funzione [**acmFormatChoose,**](/windows/desktop/api/Msacm/nf-msacm-acmformatchoose) impostando i membri **fdwEnum** e **pwfxEnum** della [**struttura ACMFORMATCHOOSE.**](/windows/win32/api/msacm/ns-msacm-acmformatchoose) Nell'esempio che segue viene illustrato questo processo.
 
 
 ```C++
@@ -61,9 +61,9 @@ if ((MMSYSERR_NOERROR != mmr) && (ACMERR_CANCELED != mmr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

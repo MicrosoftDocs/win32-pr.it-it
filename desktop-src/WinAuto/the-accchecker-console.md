@@ -8,12 +8,12 @@ keywords:
 - riga di comando, AccChecker
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d370f1b4ba5c3d9752015425e12f48311c66dfd8928c6b9fe0f011c48ee6c8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 272447e2513f109206af6fedaaf6adffe665e8b8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118994036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887034"
 ---
 # <a name="the-accchecker-console"></a>The AccChecker Console
 
@@ -30,7 +30,7 @@ AccChecker Console (AccCheckConsole.exe) è uno strumento da riga di comando per
 
 AccChecker Console ha la sintassi della riga di comando seguente.
 
-**Opzioni di AccCheckConsole \[ \] (-hwnd <hwnd> \| -process <name> ) \[<dlls>\]**
+**Opzioni accCheckConsole \[ \] (-hwnd &lt; hwnd &gt; \| -nome &lt; processo ) &gt; \[ &lt; DLL&gt;\]**
 
 Le opzioni della riga di comando sono le seguenti.
 
@@ -38,15 +38,15 @@ Le opzioni della riga di comando sono le seguenti.
 
 | Opzioni                                                                                                                                                         | Descrizione                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| <span id="-hwnd__hwnd_"></span><span id="-HWND__HWND_"></span>-hwnd <hwnd><br/>                                                                     | Convalida la finestra con l'handle (HWND) specificato. L'handle può essere specificato in formato esadecimale o decimale.<br/> |
-| <span id="-window__title_"></span><span id="-WINDOW__TITLE_"></span>-window <title><br/>                                                            | Convalida la finestra con il titolo specificato.<br/>                                                                |
-| <span id="__________________-process__name_"></span><span id="__________________-PROCESS__NAME_"></span> -process <name><br/>                       | Convalida la finestra principale del processo con il nome specificato.<br/>                                             |
+| <span id="-hwnd__hwnd_"></span><span id="-HWND__HWND_"></span>-hwnd &lt; hwnd&gt;<br/>                                                                     | Convalida la finestra con l'handle (HWND) specificato. L'handle può essere specificato in formato esadecimale o decimale.<br/> |
+| <span id="-window__title_"></span><span id="-WINDOW__TITLE_"></span>-window &lt; title&gt;<br/>                                                            | Convalida la finestra con il titolo specificato.<br/>                                                                |
+| <span id="__________________-process__name_"></span><span id="__________________-PROCESS__NAME_"></span> -process &lt; name&gt;<br/>                       | Convalida la finestra principale del processo con il nome specificato.<br/>                                             |
 | <span id="____________________________-list"></span><span id="____________________________-LIST"></span> -list<br/>                                       | Elenca tutte le routine di verifica disponibili.<br/>                                                                 |
-| <span id="__________________-enable__name_"></span><span id="__________________-ENABLE__NAME_"></span> -enable <name><br/>                          | Esegue la routine di verifica specificata. Questa opzione può essere specificata più volte.<br/>                             |
-| <span id="_____________________________-disable__name_"></span><span id="_____________________________-DISABLE__NAME_"></span> -disable <name><br/> | Esegue tutte le routine di verifica, ad esempio la routine di verifica specificata. Questa opzione può essere specificata più volte.<br/>                     |
+| <span id="__________________-enable__name_"></span><span id="__________________-ENABLE__NAME_"></span> -enable &lt; name&gt;<br/>                          | Esegue la routine di verifica specificata. Questa opzione può essere specificata più volte.<br/>                             |
+| <span id="_____________________________-disable__name_"></span><span id="_____________________________-DISABLE__NAME_"></span> -disable &lt; name&gt;<br/> | Esegue tutte le routine di verifica, ad esempio la routine di verifica specificata. Questa opzione può essere specificata più volte.<br/>                     |
 | <span id="___________-log__info_warn_err_"></span><span id="___________-LOG__INFO_WARN_ERR_"></span> -log (info \| warn \| err)<br/>                          | Classificazione dell'evento più bassa che verrà registrata.<br/>                                                                      |
-| <span id="__________________-logfile__file_"></span><span id="__________________-LOGFILE__FILE_"></span> -logfile <file><br/>                       | Scrive l'output nel file di log specificato. Questa opzione può essere specificata più volte.<br/>                          |
-| <span id="-suppress__file_"></span><span id="-SUPPRESS__FILE_"></span>-suppress <file><br/>                                                         | Utilizzare il file XML specificato per eliminare gli errori. <br/>                                                                   |
+| <span id="__________________-logfile__file_"></span><span id="__________________-LOGFILE__FILE_"></span> -logfile &lt; file&gt;<br/>                       | Scrive l'output nel file di log specificato. Questa opzione può essere specificata più volte.<br/>                          |
+| <span id="-suppress__file_"></span><span id="-SUPPRESS__FILE_"></span>-suppress &lt; file&gt;<br/>                                                         | Utilizzare il file XML specificato per eliminare gli errori. <br/>                                                                   |
 | <span id="-quiet"></span><span id="-QUIET"></span>-quiet<br/>                                                                                             | Non scrivere l'output di registrazione in stdout.<br/>                                                                            |
 | <span id="-help__________________________________"></span><span id="-HELP__________________________________"></span>-help <br/>                           | Visualizza la Guida rapida. <br/>                                                                                             |
 

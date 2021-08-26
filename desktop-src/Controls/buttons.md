@@ -4,12 +4,12 @@ description: Questa sezione contiene informazioni sugli elementi di programmazio
 ms.assetid: vs|controls|~\controls\buttons\buttons.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd1fd8a8c03fddee97e8a768cc712a45921d3e274e21c514fe584911c173d07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d50b9bf5875bc063d8b74626c528d5ec057492c4
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089342"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471297"
 ---
 # <a name="button-windows-controls"></a>Pulsante (controlli di Windows)
 
@@ -85,16 +85,16 @@ Questa sezione contiene informazioni sugli elementi di programmazione utilizzati
 | [**BCM \_ GETIDEALSIZE**](bcm-getidealsize.md)         | Ottiene le dimensioni del pulsante più adatto al testo e all'immagine, se è presente un elenco di immagini. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetIdealSize.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getidealsize)<br/>                                                                                   |
 | [**BCM \_ GETIMAGELIST**](bcm-getimagelist.md)         | Ottiene la [**struttura BUTTON \_ IMAGELIST**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) che descrive l'elenco di immagini assegnato a un controllo pulsante. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getimagelist)<br/>                                                  |
 | [**BCM \_ GETNOTE**](bcm-getnote.md)                   | Ottiene il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnote)<br/>                                                                                                                        |
-| [**BCM \_ GETNOTELENGTH**](bcm-getnotelength.md)       | Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento di comando. Inviare questo messaggio in modo esplicito o usando la macro [**\_ Button GetNoteLength.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnotelength)<br/>                                                                           |
-| [**BCM \_ GETSPLITINFO**](bcm-getsplitinfo.md)         | Ottiene informazioni per un controllo pulsante di menu suddiviso. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button GetSplitInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getsplitinfo) <br/>                                                                                                                                    |
+| [**BCM \_ GETNOTELENGTH**](bcm-getnotelength.md)       | Ottiene la lunghezza del testo della nota che può essere visualizzato nella descrizione di un pulsante di collegamento di comando. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button GetNoteLength.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnotelength)<br/>                                                                           |
+| [**BCM \_ GETSPLITINFO**](bcm-getsplitinfo.md)         | Ottiene informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button GetSplitInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getsplitinfo) <br/>                                                                                                                                    |
 | [**BCM \_ GETTEXTMARGIN**](bcm-gettextmargin.md)       | Ottiene i margini utilizzati per disegnare testo in un controllo pulsante. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetTextMargin.**](/windows/desktop/api/Commctrl/nf-commctrl-button_gettextmargin)<br/>                                                                                                                     |
-| [**BCM \_ SETDROPDOWNSTATE**](bcm-setdropdownstate.md) | Imposta lo stato a discesa per un pulsante con stile [**TBSTYLE \_ DROPDOWN.**](toolbar-control-and-button-styles.md) Inviare questo messaggio in modo esplicito o usando la macro [**\_ Button SetDropDownState.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setdropdownstate)<br/>                                        |
+| [**BCM \_ SETDROPDOWNSTATE**](bcm-setdropdownstate.md) | Imposta lo stato a discesa per un pulsante con stile [**TBSTYLE \_ DROPDOWN**](toolbar-control-and-button-styles.md). Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetDropDownState.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setdropdownstate)<br/>                                        |
 | [**BCM \_ SETIMAGELIST**](bcm-setimagelist.md)         | Assegna un elenco di immagini a un controllo pulsante. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button SetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setimagelist)<br/>                                                                                                                                    |
-| [**BCM \_ SETNOTE**](bcm-setnote.md)                   | Imposta il testo della nota associata a un pulsante di collegamento di comando. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button SetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setnote)<br/>                                                                                                                        |
+| [**BCM \_ SETNOTE**](bcm-setnote.md)                   | Imposta il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button SetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setnote)<br/>                                                                                                                        |
 | [**BCM \_ SETSHIELD**](bcm-setshield.md)               | Imposta lo stato di elevazione dei privilegi richiesto per un pulsante o un collegamento di comando specificato per visualizzare un'icona con privilegi elevati. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetElevationRequiredState.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setelevationrequiredstate)<br/>                                                  |
-| [**BCM \_ SETSPLITINFO**](bcm-setsplitinfo.md)         | Imposta le informazioni per un controllo pulsante di menu suddiviso. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetSplitInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setsplitinfo)<br/>                                                                                                                                     |
-| [**BCM \_ SETTEXTMARGIN**](bcm-settextmargin.md)       | Il [**messaggio BCM \_ SETTEXTMARGIN**](bcm-settextmargin.md) imposta i margini per il disegno di testo in un controllo pulsante. <br/>                                                                                                                                                                      |
-| [**CLIC SUL \_ BARE**](bm-click.md)                         | Simula la selezione di un pulsante da parte dell'utente. Questo messaggio fa sì che il pulsante riceva i messaggi [**\_ WM LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) e [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) e la finestra padre del pulsante riceva un codice di notifica [BN \_ CLICKED.](bn-clicked.md)<br/> |
+| [**SETSPLITINFO di BCM \_**](bcm-setsplitinfo.md)         | Imposta le informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetSplitInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setsplitinfo)<br/>                                                                                                                                     |
+| [**BCM \_ SETTEXTMARGIN**](bcm-settextmargin.md)       | Il [**messaggio BCM \_ SETTEXTMARGIN**](bcm-settextmargin.md) imposta i margini per disegnare testo in un controllo pulsante. <br/>                                                                                                                                                                      |
+| [**BM \_ CLICK**](bm-click.md)                         | Simula l'utente che fa clic su un pulsante. Questo messaggio fa in modo che il pulsante riceva i messaggi [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) e [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) e la finestra padre del pulsante riceva un codice di notifica [BN \_ CLICKED.](bn-clicked.md)<br/> |
 | [**BM \_ GETCHECK**](bm-getcheck.md)                   | Ottiene lo stato di controllo di un pulsante di opzione o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetCheck.**](/windows/desktop/api/Windowsx/nf-windowsx-button_getcheck)<br/>                                                                                                                                  |
 | [**BM \_ GETIMAGE**](bm-getimage.md)                   | Recupera un handle per l'immagine (icona o bitmap) associata al pulsante.<br/>                                                                                                                                                                                                             |
 | [**BM \_ GETSTATE**](bm-getstate.md)                   | Recupera lo stato di un pulsante o di una casella di controllo. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetState.**](/windows/desktop/api/Windowsx/nf-windowsx-button_getstate)<br/>                                                                                                                                         |
@@ -112,110 +112,25 @@ Questa sezione contiene informazioni sugli elementi di programmazione utilizzati
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Argomento</th>
-<th>Contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="bcn-dropdown.md">BCN_DROPDOWN</a></td>
-<td>Inviato quando l'utente fa clic su una freccia a discesa su un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di <a href="wm-notify.md"><strong>WM_NOTIFY</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="bcn-hotitemchange.md">BCN_HOTITEMCHANGE</a></td>
-<td>Notifica al proprietario del controllo pulsante che il mouse sta per entrare o uscire dall'area client del controllo pulsante. Il controllo pulsante invia questo codice di notifica sotto forma di <a href="wm-notify.md"><strong>WM_NOTIFY</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-clicked.md">Bn_clicked</a></td>
-<td>Inviato quando l'utente fa clic su un pulsante. <br/> La finestra padre del pulsante riceve il codice <a href="bn-clicked.md">BN_CLICKED</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="bn-dblclk.md">BN_DBLCLK</a></td>
-<td>Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente <a href="button-styles.md"><strong>per BS_USERBUTTON,</strong></a> <a href="button-styles.md"><strong>BS_RADIOBUTTON</strong></a>e <a href="button-styles.md"><strong>BS_OWNERDRAW</strong></a> pulsanti. Gli altri tipi di <a href="bn-dblclk.md">pulsante BN_DBLCLK</a> solo se hanno lo <a href="button-styles.md"><strong>BS_NOTIFY</strong></a> personalizzato.<br/> La finestra padre del pulsante riceve il codice <a href="bn-dblclk.md">BN_DBLCLK</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-disable.md">BN_DISABLE</a></td>
-<td>Inviato quando un pulsante è disabilitato.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-disable.md">BN_DISABLE</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="bn-doubleclicked.md">BN_DOUBLECLICKED</a></td>
-<td>Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente <a href="button-styles.md"><strong>per BS_USERBUTTON,</strong></a> <a href="button-styles.md"><strong>BS_RADIOBUTTON</strong></a>e <a href="button-styles.md"><strong>BS_OWNERDRAW</strong></a> pulsanti. Gli altri tipi di <a href="bn-doubleclicked.md">pulsante BN_DOUBLECLICKED</a> solo se hanno lo <a href="button-styles.md"><strong>BS_NOTIFY</strong></a> personalizzato.<br/> La finestra padre del pulsante riceve il codice <a href="bn-doubleclicked.md">BN_DOUBLECLICKED</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-hilite.md">BN_HILITE</a></td>
-<td>Inviato quando l'utente seleziona un pulsante.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-hilite.md">BN_HILITE</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="bn-killfocus.md">BN_KILLFOCUS</a></td>
-<td>Inviato quando un pulsante perde lo stato attivo della tastiera. Il pulsante deve avere lo <a href="button-styles.md"><strong>stile BS_NOTIFY</strong></a> per inviare questo codice di notifica. <br/> La finestra padre del pulsante riceve il codice <a href="bn-killfocus.md">BN_KILLFOCUS</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-paint.md">BN_PAINT</a></td>
-<td>Inviato quando deve essere di colore un pulsante.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-paint.md">BN_PAINT</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br/></td>
-</tr>
-<tr class="even">
-<td><a href="bn-pushed.md">BN_PUSHED</a></td>
-<td>Inviato quando lo stato di push di un pulsante è impostato su push.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-pushed.md">BN_PUSHED</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-setfocus.md">BN_SETFOCUS</a></td>
-<td>Inviato quando un pulsante riceve lo stato attivo della tastiera. Il pulsante deve avere lo <a href="button-styles.md"><strong>stile BS_NOTIFY</strong></a> per inviare questo codice di notifica. <br/> La finestra padre del pulsante riceve il codice <a href="bn-setfocus.md">BN_SETFOCUS</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="bn-unhilite.md">BN_UNHILITE</a></td>
-<td>Inviato quando l'evidenziazione deve essere rimossa da un pulsante.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-unhilite.md">BN_UNHILITE</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="bn-unpushed.md">BN_UNPUSHED</a></td>
-<td>Inviato quando lo stato di push di un pulsante è impostato su unpushed.
-<blockquote>
-[!Note]<br />
-Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit di Windows precedenti alla versione 3.0. Le applicazioni devono usare <a href="button-styles.md"><strong>lo stile BS_OWNERDRAW</strong></a> pulsante e la struttura <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>DRAWITEMSTRUCT</strong></a> per questa attività.
-</blockquote>
-<br/> <br/> La finestra padre del pulsante riceve il codice <a href="bn-unpushed.md">BN_UNPUSHED</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="nm-customdraw-button.md">NM_CUSTOMDRAW (pulsante)</a></td>
-<td>Notifica alla finestra padre di un controllo pulsante le operazioni di disegno personalizzate sul pulsante. <br/> Il controllo pulsante invia questo codice di notifica sotto forma di <a href="wm-notify.md"><strong>WM_NOTIFY</strong></a> messaggio.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="wm-ctlcolorbtn.md"><strong>WM_CTLCOLORBTN</strong></a></td>
-<td>Il <a href="wm-ctlcolorbtn.md"><strong>WM_CTLCOLORBTN</strong></a> viene inviato alla finestra padre di un pulsante prima di disegnare il pulsante. La finestra padre può modificare il testo e i colori di sfondo del pulsante. Tuttavia, solo i pulsanti disegnati dal proprietario rispondono alla finestra padre che elabora questo messaggio. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Argomento | Contenuto | 
+|-------|----------|
+| <a href="bcn-dropdown.md">BCN_DROPDOWN</a> | Inviato quando l'utente fa clic su una freccia a discesa su un pulsante. La finestra padre del controllo riceve questo codice di notifica sotto forma di WM_NOTIFY <a href="wm-notify.md"><strong>messaggio.</strong></a><br /> | 
+| <a href="bcn-hotitemchange.md">BCN_HOTITEMCHANGE</a> | Notifica al proprietario del controllo pulsante che il mouse sta per entrare o uscire dall'area client del controllo pulsante. Il controllo pulsante invia questo codice di notifica sotto forma di <a href="wm-notify.md"><strong>WM_NOTIFY</strong></a> messaggio.<br /> | 
+| <a href="bn-clicked.md">BN_CLICKED</a> | Inviato quando l'utente fa clic su un pulsante. <br /> La finestra padre del pulsante riceve il codice BN_CLICKED <a href="bn-clicked.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br /> | 
+| <a href="bn-dblclk.md">BN_DBLCLK</a> | Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente <a href="button-styles.md"><strong>BS_USERBUTTON,</strong></a> <a href="button-styles.md"><strong>BS_RADIOBUTTON</strong></a> <a href="button-styles.md"><strong>e</strong></a> BS_OWNERDRAW pulsanti. Gli altri tipi di <a href="bn-dblclk.md">pulsante BN_DBLCLK</a> solo se hanno lo <a href="button-styles.md"><strong>stile BS_NOTIFY</strong></a> personalizzato.<br /> La finestra padre del pulsante riceve il codice BN_DBLCLK <a href="bn-dblclk.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br /> | 
+| <a href="bn-disable.md">BN_DISABLE</a> | Inviato quando un pulsante è disabilitato.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_DISABLE <a href="bn-disable.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="bn-doubleclicked.md">BN_DOUBLECLICKED</a> | Inviato quando l'utente fa doppio clic su un pulsante. Questo codice di notifica viene inviato automaticamente <a href="button-styles.md"><strong>BS_USERBUTTON,</strong></a> <a href="button-styles.md"><strong>BS_RADIOBUTTON</strong></a> <a href="button-styles.md"><strong>e</strong></a> BS_OWNERDRAW pulsanti. Gli altri tipi di <a href="bn-doubleclicked.md">pulsante BN_DOUBLECLICKED</a> solo se hanno lo <a href="button-styles.md"><strong>BS_NOTIFY</strong></a> predefinito.<br /> La finestra padre del pulsante riceve il codice BN_DOUBLECLICKED <a href="bn-doubleclicked.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br /> | 
+| <a href="bn-hilite.md">BN_HILITE</a> | Inviato quando l'utente seleziona un pulsante.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_HILITE <a href="bn-hilite.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="bn-killfocus.md">BN_KILLFOCUS</a> | Inviato quando un pulsante perde lo stato attivo della tastiera. Il pulsante deve avere lo <a href="button-styles.md"><strong>stile BS_NOTIFY</strong></a> per inviare questo codice di notifica. <br /> La finestra padre del pulsante riceve il codice BN_KILLFOCUS <a href="bn-killfocus.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br /> | 
+| <a href="bn-paint.md">BN_PAINT</a> | Inviato quando deve essere di colore un pulsante.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_PAINT <a href="bn-paint.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio. <br /> | 
+| <a href="bn-pushed.md">BN_PUSHED</a> | Inviato quando lo stato push di un pulsante è impostato su push.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_PUSHED <a href="bn-pushed.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="bn-setfocus.md">BN_SETFOCUS</a> | Inviato quando un pulsante riceve lo stato attivo della tastiera. Il pulsante deve avere lo <a href="button-styles.md"><strong>stile BS_NOTIFY</strong></a> per inviare questo codice di notifica. <br /> La finestra padre del pulsante riceve il codice BN_SETFOCUS <a href="bn-setfocus.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="bn-unhilite.md">BN_UNHILITE</a> | Inviato quando l'evidenziazione deve essere rimossa da un pulsante.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_UNHILITE <a href="bn-unhilite.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="bn-unpushed.md">BN_UNPUSHED</a> | Inviato quando lo stato push di un pulsante è impostato su unpushed.<blockquote>[!Note]<br />Questo codice di notifica viene fornito solo per la compatibilità con le versioni a 16 bit Windows precedente alla versione 3.0. Le applicazioni devono usare lo <a href="button-styles.md"><strong>stile BS_OWNERDRAW</strong></a> pulsante e la <a href="/windows/win32/api/winuser/ns-winuser-drawitemstruct"><strong>struttura DRAWITEMSTRUCT</strong></a> per questa attività.</blockquote><br /><br /> La finestra padre del pulsante riceve il codice BN_UNPUSHED <a href="bn-unpushed.md">di</a> notifica tramite il <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggio.<br /> | 
+| <a href="nm-customdraw-button.md">NM_CUSTOMDRAW (pulsante)</a> | Notifica alla finestra padre di un controllo pulsante le operazioni di disegno personalizzate sul pulsante. <br /> Il controllo pulsante invia questo codice di notifica sotto forma di <a href="wm-notify.md"><strong>WM_NOTIFY</strong></a> messaggio.<br /> | 
+| <a href="wm-ctlcolorbtn.md"><strong>WM_CTLCOLORBTN</strong></a> | Il <a href="wm-ctlcolorbtn.md"><strong>WM_CTLCOLORBTN</strong></a> messaggio viene inviato alla finestra padre di un pulsante prima di disegnare il pulsante. La finestra padre può modificare i colori del testo e dello sfondo del pulsante. Tuttavia, solo i pulsanti disegnati dal proprietario rispondono alla finestra padre che elabora questo messaggio. <br /> | 
+
 
 
 
@@ -227,8 +142,8 @@ Questo codice di notifica viene fornito solo per la compatibilità con le versio
 
 | Argomento                                         | Contenuto                                                                                                                                                                                                                                                                                                                |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BUTTON \_ IMAGELIST**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) | Contiene informazioni su un elenco di immagini utilizzato con un controllo pulsante.<br/>                                                                                                                                                                                                                                 |
-| [**INFORMAZIONI \_ SU SPLITINFO DEI PULSANTI**](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) | Contiene informazioni che definiscono un pulsante di menu suddiviso (stili [**BS \_ SPLITBUTTON**](button-styles.md) e [**BS \_ DEFSPLITBUTTON).**](button-styles.md) Usato con i [**messaggi \_ BCM GETSPLITINFO**](bcm-getsplitinfo.md) [**e BCM \_ SETSPLITINFO.**](bcm-setsplitinfo.md)<br/> |
+| [**ELENCO \_ IMMAGINI PULSANTE**](/windows/desktop/api/Commctrl/ns-commctrl-button_imagelist) | Contiene informazioni su un elenco di immagini utilizzato con un controllo pulsante.<br/>                                                                                                                                                                                                                                 |
+| [**SPLITINFO \_ DEL PULSANTE**](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) | Contiene informazioni che definiscono un pulsante di divisione [**(stili BS \_ SPLITBUTTON**](button-styles.md) e [**BS \_ DEFSPLITBUTTON).**](button-styles.md) Usato con i [**messaggi BCM \_ GETSPLITINFO**](bcm-getsplitinfo.md) e [**BCM \_ SETSPLITINFO.**](bcm-setsplitinfo.md)<br/> |
 | [**NMBCDROPDOWN**](/windows/win32/api/commctrl/ns-commctrl-nmbcdropdown)          | Contiene informazioni su una notifica [BCN \_ DROPDOWN.](bcn-dropdown.md)<br/>                                                                                                                                                                                                                                 |
 | [**NMBCHOTITEM**](/windows/win32/api/commctrl/ns-commctrl-nmbchotitem)            | Contiene informazioni sullo spostamento del mouse su un controllo pulsante.<br/>                                                                                                                                                                                                                                  |
 
@@ -242,7 +157,7 @@ Questo codice di notifica viene fornito solo per la compatibilità con le versio
 
 | Argomento                              | Contenuto                                                                                                                                                                                                                                                            |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Stili dei pulsanti](button-styles.md) | Specifica una combinazione di stili dei pulsanti. Se crei un pulsante usando la classe BUTTON con la [**funzione CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) puoi specificare uno degli stili del pulsante elencati di seguito.<br/> |
+| [Stili dei pulsanti](button-styles.md) | Specifica una combinazione di stili dei pulsanti. Se si crea un pulsante usando la classe BUTTON con la [**funzione CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) è possibile specificare uno degli stili del pulsante elencati di seguito.<br/> |
 
 
 

@@ -4,18 +4,18 @@ ms.assetid: 9bab0e43-6e9f-4cdb-bfd0-cdafcc12d526
 title: Importazione della chiave pubblica dei driver
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 222b9c62bd9babe0a01a0e6a9b3a50747ab3b039
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eebaa4d2d6b5de54eec5ef40070c5ecfb805494a2e937cbbc709f4e44656f55f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042847"
 ---
 # <a name="importing-the-drivers-public-key"></a>Importazione della chiave pubblica dei driver
 
-La chiave pubblica RSA del driver è contenuta nei tag modulo ed esponente del nodo foglia del certificato. Entrambi i valori sono con codifica Base64 e devono essere decodificati. Se si usa CryptoAPI di Microsoft, è necessario importare la chiave in un provider del servizio di crittografia (CSP), ovvero il modulo che implementa gli algoritmi di crittografia.
+La chiave pubblica RSA del driver è contenuta nei tag Modulo ed Esponente del nodo foglia del certificato. Entrambi i valori sono codificati in base 64 e devono essere decodificati. Se si usa CryptoAPI di Microsoft, è necessario importare la chiave in un provider del servizio di crittografia (CSP), ovvero il modulo che implementa gli algoritmi di crittografia.
 
-Per convertire il modulo e gli esponenti dalla codifica Base64 in matrici binarie, usare la funzione **CryptStringToBinary** , come illustrato nel codice seguente. Chiamare la funzione una volta per ottenere la dimensione della matrice di byte. Quindi allocare il buffer e chiamare di nuovo la funzione.
+Per convertire il modulo e gli esponenti dalla codifica Base64 a matrici binarie, usare la funzione **CryptStringToBinary,** come illustrato nel codice seguente. Chiamare la funzione una volta per ottenere le dimensioni della matrice di byte. Allocare quindi il buffer e chiamare di nuovo la funzione .
 
 
 ```C++
@@ -40,9 +40,9 @@ BYTE *pbBuffer = new BYTE [cbLen];
 
 
 
-La matrice con codifica Base64 è in ordine big endian, mentre CryptoAPI prevede il numero in ordine little-endian, quindi è necessario scambiare l'ordine dei byte della matrice restituita da **CryptStringToBinary**. Il modulo è 256 byte, ma la matrice di byte decodificata potrebbe essere inferiore a 256 byte. In tal caso, sarà necessario allocare una nuova matrice di 256 byte, copiare i dati nella nuova matrice e riempire la parte anteriore della matrice con zeri. L'esponente è un valore DWORD (4 byte).
+La matrice con codifica Base64 è in ordine big-endian, mentre CryptoAPI prevede il numero in ordine little-endian, quindi è necessario scambiare l'ordine dei byte della matrice restituita da **CryptStringToBinary.** Il modulo è di 256 byte, ma la matrice di byte decodificata potrebbe essere inferiore a 256 byte. In questo caso, sarà necessario allocare una nuova matrice di 256 byte, copiare i dati nella nuova matrice e riempire l'inizio della matrice con zeri. L'esponente è un valore DWORD (4 byte).
 
-Una volta che si dispone dei valori di modulo ed esponente, è possibile importare la chiave nel provider del servizio di crittografia (CSP) predefinito, come illustrato nel codice seguente:
+Dopo aver creato i valori modulo ed esponente, è possibile importare la chiave nel provider del servizio di crittografia (CSP) predefinito, come illustrato nel codice seguente:
 
 
 ```C++
@@ -90,13 +90,13 @@ CryptImportKey(hCSP, pBlob, cbKeyBlob, 0, 0, &hRSAKey)
 
 
 
-A questo punto è possibile usare CryptoAPI per crittografare i comandi e le richieste di stato con la chiave pubblica del driver.
+È ora possibile usare CryptoAPI per crittografare i comandi e le richieste di stato con la chiave pubblica del driver.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso di COPP (Certified Output Protocol)](using-certified-output-protection-protocol--copp.md)
+[Uso del protocollo COPP (Certified Output Protection Protocol)](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

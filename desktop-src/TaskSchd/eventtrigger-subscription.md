@@ -1,11 +1,11 @@
 ---
-title: EventTrigger. Subscription (proprietà)
-description: Per gli script, ottiene o imposta una stringa di query che identifica l'evento che attiva il trigger.
+title: EventTrigger.Subscription - proprietà
+description: Per lo scripting, ottiene o imposta una stringa di query che identifica l'evento che attiva il trigger.
 ms.assetid: 31d32426-3dd7-41f9-89cc-b13767871b74
 keywords:
-- Utilità di pianificazione proprietà sottoscrizione
-- Utilità di pianificazione proprietà di sottoscrizione, oggetto EventTrigger
-- Utilità di pianificazione oggetto EventTrigger, Proprietà Subscription
+- Proprietà di sottoscrizione Utilità di pianificazione
+- Proprietà Subscription Utilità di pianificazione , oggetto EventTrigger
+- EventTrigger object Utilità di pianificazione , Subscription property
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ad05576e248d3ad6c2551a8654a9198ca3c0f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d83225faa022de6e4a0823be3db971c71da503a885a46c1941fc1e5578f711b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100231"
 ---
-# <a name="eventtriggersubscription-property"></a>EventTrigger. Subscription (proprietà)
+# <a name="eventtriggersubscription-property"></a>EventTrigger.Subscription - proprietà
 
-Per gli script, ottiene o imposta una stringa di query che identifica l'evento che attiva il trigger.
+Per lo scripting, ottiene o imposta una stringa di query che identifica l'evento che attiva il trigger.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,9 +42,9 @@ Stringa di query che identifica l'evento che attiva il trigger.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, la sottoscrizione dell'evento viene specificata utilizzando l'elemento [**Subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML personalizzato per un'attività, la sottoscrizione di eventi viene specificata usando l'elemento [**Subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) dello schema Utilità di pianificazione dati.
 
-Per ulteriori informazioni sulla scrittura di una stringa di query per determinati eventi, vedere [selezione](/previous-versions//aa385231(v=vs.85)) di eventi e [sottoscrizione degli eventi](../wes/subscribing-to-events.md).
+Per altre informazioni sulla scrittura di una stringa di query per determinati eventi, vedere [Selezione](/previous-versions//aa385231(v=vs.85)) e sottoscrizione di eventi [.](../wes/subscribing-to-events.md)
 
 ## <a name="examples"></a>Esempio
 
@@ -67,9 +67,9 @@ La stringa di query seguente definisce una sottoscrizione a tutti gli eventi di 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

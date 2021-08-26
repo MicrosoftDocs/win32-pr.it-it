@@ -1,30 +1,30 @@
 ---
-title: File composti asincroni
-description: I file composti asincroni, l'implementazione fornita dal sistema di archiviazione asincrona, consentono il download efficiente di file composti da Internet in generale e il Web in particolare.
+title: File compositi asincroni
+description: File compositi asincroni, l'implementazione fornita dal sistema di archiviazione asincrona, consente il download efficiente di file composti da Internet in generale e dal Web in particolare.
 ms.assetid: 6cad074e-07a8-434f-a402-e29cb66a1a18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04de2162b50283b12bc8deed6ec908d92e7584d7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d15404f33041fb52f5baa5230f69434ce390b985c41374235c1f3979ef6c2f4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034987"
 ---
-# <a name="asynchronous-compound-files"></a>File composti asincroni
+# <a name="asynchronous-compound-files"></a>File compositi asincroni
 
-I file composti asincroni, l'implementazione fornita dal sistema di archiviazione asincrona, consentono il download efficiente di file composti da Internet in generale e il Web in particolare. Il diagramma seguente illustra l'architettura di base dei file composti asincroni.
+File compositi asincroni, l'implementazione fornita dal sistema di archiviazione asincrona, consente il download efficiente di file composti da Internet in generale e dal Web in particolare. L'architettura di base dei file compositi asincroni è illustrata nel diagramma seguente.
 
-![architettura di base dei file composti asincroni](images/asy-stor.png)
+![Architettura di base dei file compositi asincroni](images/asy-stor.png)
 
-L'implementazione asincrona dei file composti può funzionare con nuovi tipi di moniker asincroni che conoscono i protocolli Internet e possono essere associati a un oggetto identificato da un URL. Tale moniker restituisce un puntatore [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) o [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) asincrono dalla chiamata del client a [**IMoniker:: BindToStorage**](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage).
+L'implementazione di file compositi asincroni può funzionare con nuovi tipi di moniker asincroni che comprendono i protocolli Internet e possono essere associati a un oggetto identificato da un URL. Tale moniker restituirebbe un puntatore [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) o [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) asincrono dalla chiamata del client a [**IMoniker::BindToStorage**](/windows/win32/api/objidl/nf-objidl-imoniker-bindtostorage).
 
-I file composti in generale vengono implementati sopra un oggetto matrice di byte, un'astrazione di un file che rappresenta i dati di un oggetto come matrice di byte flat. L'oggetto matrice di byte ne espone la funzionalità tramite l'interfaccia [**ILockBytes**](/windows/desktop/api/Objidl/nn-objidl-ilockbytes) . Se una matrice di byte supporta l'archiviazione asincrona non bloccata, restituisce E in \_ sospeso all'implementazione del file composto, che a sua volta propaga di nuovo l'errore al chiamante.
+I file compositi in generale vengono implementati su un oggetto matrice di byte, un'astrazione di un file che rappresenta i dati di un oggetto come matrice di byte flat. L'oggetto matrice di byte espone le funzionalità tramite [**l'interfaccia ILockBytes.**](/windows/desktop/api/Objidl/nn-objidl-ilockbytes) Se una matrice di byte supporta l'archiviazione asincrona non bloccante, restituisce E PENDING all'implementazione del file composto, che a sua volta propaga l'errore \_ al chiamante.
 
-Per tenere traccia dei dati disponibili durante il download, una matrice di byte che supporta l'archiviazione asincrona espone l'interfaccia [**IFillLockBytes**](/windows/desktop/api/Objidl/nn-objidl-ifilllockbytes) su un oggetto wrapper fornito dal sistema in modo specifico per questo scopo. Il codice di download fornito da un moniker asincrono chiama questa interfaccia per riempire la matrice di byte in modo asincrono, perché i dati sono disponibili. L'oggetto wrapper espone anche un'interfaccia **ILockBytes** , che viene usata dall'implementazione asincrona dei file composti per leggere e scrivere dati da e verso la matrice.
+Per tenere traccia dei dati disponibili durante un download, una matrice di byte che supporta l'archiviazione asincrona espone [**l'interfaccia IFillLockBytes**](/windows/desktop/api/Objidl/nn-objidl-ifilllockbytes) su un oggetto wrapper fornito dal sistema specificamente a questo scopo. Il codice di download fornito da un moniker asincrono chiama questa interfaccia per riempire la matrice di byte in modo asincrono, in quanto i dati sono disponibili. L'oggetto wrapper espone anche **un'interfaccia ILockBytes,** utilizzata dall'implementazione asynchronous compound files per leggere e scrivere dati da e nella matrice.
 
-Gli oggetti di archiviazione e di flusso asincroni forniscono un punto di connessione per l'interfaccia [**IProgressNotify**](/windows/win32/api/objidl/nn-objidl-iprogressnotify) , implementata dal codice di download del moniker asincrono. L'implementazione asincrona dei file composti chiama **IProgressNotify** per fornire al Downloader informazioni sullo stato dell'operazione di download.
+Gli oggetti di flusso e di archiviazione asincroni forniscono un punto di connessione per [**l'interfaccia IProgressNotify,**](/windows/win32/api/objidl/nn-objidl-iprogressnotify) implementata dal codice di download del moniker asincrono. L'implementazione asynchronous compound files chiama **IProgressNotify** per fornire al downloader informazioni sullo stato dell'operazione di download.
 
- 
+ 
 
- 
+ 

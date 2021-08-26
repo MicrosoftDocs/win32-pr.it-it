@@ -1,19 +1,19 @@
 ---
-description: Specifica se il codificatore usa la ricerca MV dei sottopixel basata su desktop remoto.
+description: Specifica se il codificatore usa la ricerca MV sub pixel basata su RD.
 ms.assetid: 1359c001-d0a1-4b7d-b142-1e85e6a0b570
-title: Proprietà MFPKEY_RDSUBPIXELSEARCH (Wmcodecdsp. h)
+title: MFPKEY_RDSUBPIXELSEARCH proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2d4a6a0fca6156b4e659bd32530e520b7451ada
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b12b90731491cd3dfa460a109dafa99e2955ac12f5a21608236a776dea827de8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939801"
 ---
-# <a name="mfpkey_rdsubpixelsearch-property"></a>\_Proprietà RDSUBPIXELSEARCH di MFPKEY
+# <a name="mfpkey_rdsubpixelsearch-property"></a>Proprietà MFPKEY \_ RDSUBPIXELSEARCH
 
-Specifica se il codificatore usa la ricerca MV dei sottopixel basata su desktop remoto.
+Specifica se il codificatore usa la ricerca MV sub pixel basata su RD.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -21,7 +21,7 @@ g \_ wszWMVCRDSubpixelSearch
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -30,7 +30,7 @@ g \_ wszWMVCRDSubpixelSearch
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -38,7 +38,7 @@ g \_ wszWMVCRDSubpixelSearch
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -21,20 +21,20 @@ keywords:
 - tipi di controllo, finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a70ae728ded97bb68f3984b6fba323710d3582e984610ad6dec248d8509ea97f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59486f12545c0dbe6b38e20e29f6df5397cbca21
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118824576"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466418"
 ---
 # <a name="window-control-type"></a>Tipo di controllo Finestra
 
-In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente microsoft per il **tipo di controllo** Window.
+In questo argomento vengono fornite informazioni sul supporto Automazione interfaccia utente Microsoft per il **tipo di controllo** Window.
 
 Il controllo finestra è costituito dalla cornice della finestra, che contiene oggetti figlio, ad esempio barra del titolo, oggetti client e altri oggetti.
 
-Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo** Window. I Automazione interfaccia utente si applicano a tutti i controlli finestra in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo** Window. I Automazione interfaccia utente si applicano a tutti i controlli finestra in cui il framework/piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -46,32 +46,15 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli finestra e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Panoramica [Automazione interfaccia utente albero di .](uiauto-treeoverview.md)
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli finestra e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere Automazione interfaccia utente [Tree Overview](uiauto-treeoverview.md).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Visualizzazione controlli</th>
-<th>Visualizzazione contenuto</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Finestra</li>
-</ul></td>
-<td><ul>
-<li>Finestra</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Visualizzazione controlli | Visualizzazione contenuto | 
+|--------------|--------------|
+| <ul><li>Finestra</li></ul> | <ul><li>Finestra</li></ul> | 
+
 
 
 
@@ -83,14 +66,14 @@ La tabella seguente elenca le proprietà Automazione interfaccia utente il cui v
 
 
 
-| Proprietà di automazione interfaccia utente                                                                                              | Valore      | Note                                                                                                                                                   |
+| Proprietà di automazione interfaccia utente                                                                                              | valore      | Note                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note. | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                            |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note. | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note. | Il controllo finestra deve avere un punto selezionabile che fa sì che la finestra diventi selezionata o deselezionata.                                                 |
 | [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **Window** | Questo valore è uguale per tutti i framework dell'interfaccia utente.                                                                                                           |
 | [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true       | Il controllo finestra è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente struttura ad albero.                                                                    |
-| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true       | Il controllo finestra è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                    |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true       | Il controllo finestra è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente struttura ad albero.                                                                    |
 | [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note. | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                               |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL       | I controlli finestra non hanno un'etichetta di finestra statica.                                                                                                      |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note. | Stringa localizzata corrispondente al **tipo di controllo** Window. Il valore predefinito è "window" per en-US o english (Stati Uniti).                      |
@@ -102,15 +85,15 @@ La tabella seguente elenca le proprietà Automazione interfaccia utente il cui v
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-Nella tabella seguente sono elencati Automazione interfaccia utente i pattern di controllo che devono essere supportati dai controlli finestra. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente che devono essere supportati dai controlli finestra. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo/proprietà del pattern                        | Supporto/valore | Note                                                                                                                                                                        |
 |---------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)           | Condizionale   | Il pattern di controllo [Dock](uiauto-implementingdock.md) deve essere supportato se la finestra può essere ancorata.                                                                       |
-| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Necessario      | Il [pattern](uiauto-implementingtransform.md) di controllo Transform consente di spostare, ridimensionare o ruotare la finestra sullo schermo. Non si applica alle app Windows Store. |
-| [**IWindowProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider)       | Necessario      | Il [pattern di](uiauto-implementingwindow.md) controllo Window abilita operazioni specifiche per la finestra.                                                                      |
+| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Obbligatoria      | Il [pattern](uiauto-implementingtransform.md) di controllo Transform consente di spostare, ridimensionare o ruotare la finestra sullo schermo. Non si applica alle app Windows Store. |
+| [**IWindowProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider)       | Obbligatoria      | Il [pattern di](uiauto-implementingwindow.md) controllo Window abilita operazioni specifiche per la finestra.                                                                      |
 
 
 
@@ -129,7 +112,7 @@ La tabella seguente elenca gli Automazione interfaccia utente che **i controlli 
 | [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                      |                                                                                                                                                                                                                           |
 | [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                      | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.                                                                                                  |
 | [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                  | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento.                                                                                                |
-| [**UIA \_ LayoutInvalidatedEventId**](uiauto-event-ids.md)                                                                     |                                                                                                                                                                                                                           |
+| [**Layout \_ dell'interfaccia utenteInvalidatedEventId**](uiauto-event-ids.md)                                                                     |                                                                                                                                                                                                                           |
 | [**Interfaccia \_ utente Evento di modifica**](uiauto-automation-element-propids.md) della proprietà NamePropertyId.                                                |                                                                                                                                                                                                                           |
 | [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)   | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                                                                                          |
 | [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md) | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.                                                                                                          |
@@ -140,7 +123,7 @@ La tabella seguente elenca gli Automazione interfaccia utente che **i controlli 
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                                                                                                                           |
 | [**UIA \_ Window \_ WindowClosedEventId**](uiauto-event-ids.md)                                                                |                                                                                                                                                                                                                           |
 | [**UIA \_ Window \_ WindowOpenedEventId**](uiauto-event-ids.md)                                                                |                                                                                                                                                                                                                           |
-| [**Interfaccia \_ utente Evento di modifica della proprietà WindowWindowVisualStatePropertyId.**](uiauto-control-pattern-propids.md)             | Se il controllo supporta la [**proprietà WindowVisualState**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedwindowvisualstate) del pattern di controllo [Window,](uiauto-implementingwindow.md) questo evento deve essere supportato. |
+| [**Interfaccia \_ utente Evento di modifica della proprietà WindowWindowVisualStatePropertyId.**](uiauto-control-pattern-propids.md)             | Se il controllo supporta la [**proprietà WindowVisualState**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-get_cachedwindowvisualstate) del pattern [di controllo Window,](uiauto-implementingwindow.md) questo evento deve essere supportato. |
 
 
 

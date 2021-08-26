@@ -1,21 +1,21 @@
 ---
-description: Il sistema trasmette l'evento DBT \_ DEVICEARRIVAL Device quando un dispositivo o un elemento multimediale è stato inserito e diventa disponibile.
+description: Il sistema trasmette l'evento del dispositivo DBT DEVICEARRIVAL quando un dispositivo o un elemento multimediale è stato inserito \_ e diventa disponibile.
 ms.assetid: 8e44cb02-cf79-4b19-807e-20cea07362af
-title: Evento DBT_DEVICEARRIVAL (DBT. h)
+title: DBT_DEVICEARRIVAL evento (Dbt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f69c2feec996b4306c271454767ca4e75d1ff855
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 826d0b510ca76b829eb683396c99579c14a512a6773b76a2049ae7963ede54a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088151"
 ---
-# <a name="dbt_devicearrival-event"></a>\_Evento DEVICEARRIVAL DBT
+# <a name="dbt_devicearrival-event"></a>EVENTO DBT \_ DEVICEARRIVAL
 
-Il sistema trasmette l'evento DBT \_ DEVICEARRIVAL Device quando un dispositivo o un elemento multimediale è stato inserito e diventa disponibile.
+Il sistema trasmette l'evento del dispositivo DBT DEVICEARRIVAL quando un dispositivo o un elemento multimediale è stato inserito \_ e diventa disponibile.
 
-Per trasmettere questo evento del dispositivo, il sistema usa il messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) con *wParam* impostato su DBT \_ DEVICEARRIVAL e *lParam* impostati come descritto di seguito.
+Per trasmettere questo evento del dispositivo, il sistema usa il messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) con *wParam* impostato su DBT \_ DEVICEARRIVAL e *lParam* impostato come descritto di seguito.
 
 
 ```C++
@@ -33,17 +33,17 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle di una finestra.
 
 </dd> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
-Identificatore del messaggio [**WM \_ DEVICECHANGE**](wm-devicechange.md) .
+Identificatore [**del \_ messaggio DEVICECHANGE WM.**](wm-devicechange.md)
 
 </dd> <dt>
 
@@ -57,21 +57,21 @@ Impostare su DBT \_ DEVICEARRIVAL.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura che identifica il dispositivo inserito. La struttura è costituita da un'intestazione indipendente dall'evento, seguita da membri dipendenti dall'evento che descrivono il dispositivo. Per usare questa struttura, considerare la struttura come una [**struttura \_ \_ HDR di sviluppo broadcast**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) , quindi controllare il membro **dbch \_ DeviceType** per determinare il tipo di dispositivo.
+Puntatore a una struttura che identifica il dispositivo inserito. La struttura è costituita da un'intestazione indipendente dagli eventi, seguita da membri dipendenti dall'evento che descrivono il dispositivo. Per usare questa struttura, considerare la struttura come una struttura [**DEV \_ BROADCAST \_ HDR,**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr) quindi controllare il relativo membro **dbch \_ devicetype** per determinare il tipo di dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true**.
+Restituisce **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Se è in corso l'inserimento del supporto, il tipo di dispositivo in arrivo è un volume (il membro **dbch \_ DeviceType** è DBT \_ DEVTYP \_ volume) e la modifica ha effetto sui supporti (il membro dei **\_ flag dbcv** è DBTF \_ ).
+Se vengono inseriti supporti, il tipo di dispositivo in arrivo è un volume (il membro **\_ dbch devicetype** è DBT DEVTYP VOLUME) e la modifica ha effetto sul supporto (il membro dei flag \_ \_ **dbcv \_** è DBTF \_ MEDIA).
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio, vedere [rilevamento dell'inserimento o della rimozione dei supporti](detecting-media-insertion-or-removal.md).
+Per un esempio, vedere [Rilevamento dell'inserimento o della rimozione di supporti.](detecting-media-insertion-or-removal.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,7 +81,7 @@ Per un esempio, vedere [rilevamento dell'inserimento o della rimozione dei suppo
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                            |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Dbt.h</dt> </dl> |
 
 
 
@@ -89,16 +89,16 @@ Per un esempio, vedere [rilevamento dell'inserimento o della rimozione dei suppo
 
 <dl> <dt>
 
-[Eventi dispositivo](device-events.md)
+[Eventi del dispositivo](device-events.md)
 </dt> <dt>
 
 [Eventi di gestione dei dispositivi](device-management-events.md)
 </dt> <dt>
 
-[**SVILUPPO \_ broadcast \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
+[**DEV \_ BROADCAST \_ HDR**](/windows/desktop/api/Dbt/ns-dbt-dev_broadcast_hdr)
 </dt> <dt>
 
-[**\_DEVICECHANGE WM**](wm-devicechange.md)
+[**WM \_ DEVICECHANGE**](wm-devicechange.md)
 </dt> </dl>
 
  

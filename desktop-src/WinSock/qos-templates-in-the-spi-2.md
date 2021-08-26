@@ -1,19 +1,19 @@
 ---
-description: I dettagli di implementazione di qualità del servizio (QoS) sono disponibili in una sezione QoS dedicata separata in Microsoft Windows Software Development Kit (SDK).
+description: I dettagli dell'implementazione QoS (Quality of Service) sono disponibili in una sezione QoS dedicata separata in Microsoft Windows Software Development Kit (SDK).
 ms.assetid: 58cb384d-a830-4e9f-a8d0-f4b64a64328f
-title: Modelli QoS in SPI
+title: Modelli QoS nell'spi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 559536a730eec5245d2d7772ab77b90318043522
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a24d458c450ffb1cdd7826479ef7ef6a637f015cc9fb84045dceefbdaee63d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097681"
 ---
-# <a name="qos-templates-in-the-spi"></a>Modelli QoS in SPI
+# <a name="qos-templates-in-the-spi"></a>Modelli QoS nell'spi
 
-I dettagli di implementazione di qualità del servizio (QoS) sono disponibili in una sezione QoS dedicata separata in Microsoft Windows Software Development Kit (SDK). Per informazioni sulle linee guida di utilizzo di QoS, inclusi i modelli QoS disponibili e i valori [**FLOWSPEC**](/windows/win32/api/qos/ns-qos-flowspec) associati, vedere la sezione relativa alla [qualità del servizio](/previous-versions/windows/desktop/qos/qos-start-page) del Windows SDK.
+I dettagli dell'implementazione QoS (Quality of Service) sono disponibili in una sezione QoS dedicata separata in Microsoft Windows Software Development Kit (SDK). Per informazioni sulle linee guida sull'utilizzo di QoS, inclusi i modelli QoS disponibili e i valori [**FLOWSPEC**](/windows/win32/api/qos/ns-qos-flowspec) associati, vedere la sezione Quality [of Service](/previous-versions/windows/desktop/qos/qos-start-page) di Windows SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,26 +1,26 @@
 ---
-title: Proprietà RedirectPorts di IMsRdpClientAdvancedSettings
-description: Specifica se è consentito il reindirizzamento delle porte locali (ad esempio, COM e LPT).
+title: Proprietà RedirectPorts IMsRdpClientAdvancedSettings
+description: Specifica se è consentito il reindirizzamento delle porte locali, ad esempio COM e LPT.
 ms.assetid: 85e1e40d-8da7-4333-ae96-2bfa44479267
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RedirectPorts
-- Servizi Desktop remoto proprietà RedirectPorts, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RedirectPorts
+- Proprietà RedirectPorts Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RedirectPorts
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 714b26081bb4caadface283553b1dd3ebd91192d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 95b4747aa5e2663bf98dcac86ba2f928efe1b715ad41ea6f4470610712eaa202
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033271"
 ---
-# <a name="imsrdpclientadvancedsettingsredirectports-property"></a>Proprietà IMsRdpClientAdvancedSettings:: RedirectPorts
+# <a name="imsrdpclientadvancedsettingsredirectports-property"></a>Proprietà IMsRdpClientAdvancedSettings::RedirectPorts
 
-Specifica se è consentito il reindirizzamento delle porte locali (ad esempio, COM e LPT).
+Specifica se è consentito il reindirizzamento delle porte locali, ad esempio COM e LPT.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -84,15 +84,15 @@ HRESULT get_RedirectPorts(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ true** per consentire il reindirizzamento o la **variante \_ false** in caso contrario. **Variante \_ TRUE** chiede all'utente di confermare la concessione del reindirizzamento al momento della connessione, per motivi di sicurezza.
+Impostare questo parametro su **VARIANT \_ TRUE per** consentire il reindirizzamento o VARIANT **\_ FALSE** in caso contrario. **VARIANT \_ TRUE** richiede all'utente di confermare l'autorizzazione per il reindirizzamento in fase di connessione, per motivi di sicurezza.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

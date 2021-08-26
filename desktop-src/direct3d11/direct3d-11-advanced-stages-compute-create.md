@@ -1,23 +1,23 @@
 ---
-title: Come creare un compute shader
-description: In questo argomento viene illustrato come creare un compute shader.
+title: Come creare uno shader di calcolo
+description: Questo argomento illustra come creare uno shader di calcolo.
 ms.assetid: 6114dd90-626b-4c9e-9da5-7d2d33153e79
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e6dc39476b83a9bd810cc7bb85231174ec1b18
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: eea5e0ab6309dd441d33fc20b13d0ef31642b62f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104339618"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884467"
 ---
-# <a name="how-to-create-a-compute-shader"></a>Procedura: creare un compute shader
+# <a name="how-to-create-a-compute-shader"></a>Procedura: Creare uno shader di calcolo
 
-Compute shader è uno shader programmabile Microsoft High Level Shader Language (HLSL) che usa l'accesso generalizzato alla memoria di input e output per supportare praticamente qualsiasi tipo di calcolo. In questo argomento viene illustrato come creare un compute shader. La tecnologia compute shader è nota anche come tecnologia DirectCompute.
+Uno shader di calcolo è uno shader programmabile HLSL (Microsoft High Level Shader Language) che usa l'accesso generalizzato alla memoria di input e output per supportare praticamente qualsiasi tipo di calcolo. Questo argomento illustra come creare uno shader di calcolo. La tecnologia compute shader è nota anche come tecnologia DirectCompute.
 
-**Per creare un compute shader:**
+**Per creare uno shader di calcolo:**
 
-1.  Compilare il codice dello shader HLSL chiamando [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
+1.  Compilare il codice shader HLSL chiamando [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
     ```
         UINT flags = D3DCOMPILE_ENABLE_STRICTNESS;
     #if defined( DEBUG ) || defined( _DEBUG )
@@ -39,7 +39,7 @@ Compute shader è uno shader programmabile Microsoft High Level Shader Language 
 
     
 
-2.  Creare un compute shader usando [**ID3D11Device:: CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader).
+2.  Creare uno shader di calcolo [**usando ID3D11Device::CreateComputeShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createcomputeshader).
     ```
     ID3D11ComputeShader* g_pFinalPassCS = NULL;
     pd3dDevice->CreateComputeShader( pBlobFinalPassCS->GetBufferPointer(), 
@@ -49,12 +49,12 @@ Compute shader è uno shader programmabile Microsoft High Level Shader Language 
 
     
 
-Nell'esempio di codice seguente viene illustrato come compilare e creare un compute shader.
+L'esempio di codice seguente illustra come compilare e creare uno shader di calcolo.
 
 > [!Note]  
-> Per questo esempio di codice sono necessari il Windows SDK 8,0 e il \_ file di44.dll d3dcompiler dalla cartella% Program \_ file% \\ Windows Kit \\ 8,0 \\ Redist \\ D3D \\ <arch> nel percorso.
+> Per questo codice di esempio sono necessari Windows SDK 8.0 e il file44.dll del compilatore d3d dalla cartella \_ %PROGRAM \_ FILE% \\ Windows Kits \\ 8.0 \\ Redist \\ D3D \\ &lt; arch nel &gt; percorso.
 
- 
+ 
 
 
 ```cpp
@@ -188,7 +188,7 @@ int main()
 
 
 
-L'esempio di codice precedente compila il codice compute shader nel file ExampleCompute. HLSL. Ecco il codice in ExampleCompute. HLSL:
+L'esempio di codice precedente compila il codice compute shader nel file ExampleCompute.hlsl. Ecco il codice in ExampleCompute.hlsl:
 
 
 ```hlsl
@@ -268,6 +268,6 @@ void CSMain( uint3 DTid : SV_DispatchThreadID )
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [Panoramica di Compute Shader](direct3d-11-advanced-stages-compute-shader.md)
+* [Panoramica dello shader di calcolo](direct3d-11-advanced-stages-compute-shader.md)
 * [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 * [Applicazione di esempio BasicCompute11](https://github.com/walbourn/directx-sdk-samples/tree/master/BasicCompute11)

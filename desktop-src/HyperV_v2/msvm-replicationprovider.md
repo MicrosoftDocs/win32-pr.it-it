@@ -1,7 +1,7 @@
 ---
 description: Rappresenta i provider disponibili per la replica.
 ms.assetid: CAAD1CFC-6473-4642-8366-0A5625AE1F70
-title: Classe Msvm_ReplicationProvider
+title: Msvm_ReplicationProvider classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8cc821b6bdd5d6f5d1c1085a804799c662f9d62e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b64ec1462d9d3cb487cac807891d57c219de7f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882165"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885694"
 ---
-# <a name="msvm_replicationprovider-class"></a>\_Classe MSVM ReplicationProvider
+# <a name="msvm_replicationprovider-class"></a>Classe Msvm \_ ReplicationProvider
 
 Rappresenta i provider disponibili per la replica.
 
@@ -49,29 +49,29 @@ class Msvm_ReplicationProvider : CIM_ManagedSystemElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ ReplicationProvider di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ReplicationProvider** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ReplicationProvider di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ReplicationProvider** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **maxlen** (64)
+Qualificatori: **MaxLen** (64)
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement). Per questo oggetto, il valore è:
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) Per questo oggetto, il valore è:
 
 "Provider di replica"
 
@@ -80,66 +80,66 @@ Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ m
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement). Per i provider esterni, il valore viene fornito da tali provider. Per ospitare un provider incorporato, il valore è:
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) Per i provider esterni, il valore viene fornito da essi. Per il provider predefinito da host a host, il valore è:
 
-"Provider di replica della macchina virtuale nell'host Hyper-V"
+"Provider di replica di macchine virtuali nell'host Hyper-V"
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per il provider di endpoint. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nome visualizzato per il provider di endpoint. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
-Per ospitare un provider incorporato, questa proprietà è sempre impostata su:
+Per il provider predefinito da host a host, questa proprietà è sempre impostata su:
 
-"Provider di replica della macchina virtuale nell'host Hyper-V"
+"Provider di replica di macchine virtuali nell'host Hyper-V"
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: **Key**, **maxlen** (256)
+Qualificatori: **Key,** **MaxLen** (256)
 </dt> </dl>
 
-ID dell'istanza WMI, che identifica il provider. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement). Il formato di questa proprietà è "Microsoft: <host-computer-name>\\ ReplicationProvider \\<provider-name>".
+ID dell'istanza WMI, che identifica il provider. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) Il formato di questa proprietà è "Microsoft: &lt; host-machine-name &gt; \\ ReplicationProvider \\ &lt; provider-Name &gt; ".
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificatore univoco globale (GUID) del provider che identifica il provider dell'endpoint. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Identificatore univoco globale (GUID) del provider che identifica il provider di endpoint. Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
-Nel caso di un provider esterno, questa proprietà è il CLSID dell'oggetto classe COM del provider. Per ospitare un provider incorporato, questa proprietà viene fissata come segue:
+Nel caso di un provider esterno, questa proprietà è il CLSID dell'oggetto classe COM del provider. Per il provider predefinito da host a host, questa proprietà è fissa come:
 
 "22391CDC-272C-4DDF-BA88-9BEFB1A0975C"
 
@@ -148,7 +148,7 @@ Nel caso di un provider esterno, questa proprietà è il CLSID dell'oggetto clas
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -165,7 +165,7 @@ Stati correnti dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ Mana
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare una relazione di replica, è possibile usare uno dei provider disponibili e la classe [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md) . Per impostazione predefinita, Hyper-V sceglie l'host incorporato nel provider host, che può essere modificato durante la creazione della replica. Il servizio di gestione Hyper-V comunica con un provider esterno utilizzando COM.
+È possibile usare uno dei provider disponibili e la [**classe Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) per abilitare una relazione di replica. Hyper-V per impostazione predefinita sceglie l'host predefinito per il provider host, che può essere modificato durante la creazione della replica. Il servizio di gestione di Hyper-V comunica con un provider esterno tramite COM.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -173,10 +173,10 @@ Per abilitare una relazione di replica, è possibile usare uno dei provider disp
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                                 |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -185,10 +185,10 @@ Per abilitare una relazione di replica, è possibile usare uno dei provider disp
 
 <dl> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](cim-managedsystemelement.md)
+[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md)
 </dt> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+[**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 </dt> </dl>
 
  

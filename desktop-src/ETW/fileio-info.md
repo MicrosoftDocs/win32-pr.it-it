@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per l'evento di informazioni sul file. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per l'evento di informazioni sui file. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 41ae1f8a-a90f-43d0-a848-a2c095f046d4
-title: Classe FileIo_Info
+title: FileIo_Info classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 985986132abe432e1adefb51939b8ace1aa48c8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a77d135fa5140f5d8d51a26164cd96009f06bacee654d13bec8dbaa9dcd76a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042001"
 ---
-# <a name="fileio_info-class"></a>\_Classe info FileIO
+# <a name="fileio_info-class"></a>Classe FileIo \_ Info
 
-Questa classe è la classe del tipo di evento per l'evento di informazioni sul file.
+Questa classe è la classe del tipo di evento per l'evento di informazioni sui file.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -48,115 +48,115 @@ class FileIo_Info : FileIo
 
 ## <a name="members"></a>Members
 
-La **classe \_ info di FileIO** include questi tipi di membri:
+La **classe FileIo \_ Info** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ info del FileIO** contiene queste proprietà.
+La **classe FileIo \_ Info** ha queste proprietà.
 
 <dl> <dt>
 
 **ExtraInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), puntatore
+Qualificatori: WmiDataId(5), Puntatore
 </dt> </dl>
 
-Per le richieste FileDispositionInformation, questo campo contiene la disposizione richiesta. Per le richieste FileEndOfFileInformation e FileAllocationInformation, questo campo contiene le dimensioni del file specificato.
+Per le richieste FileDispositionInformation, questo campo contiene la disposizione richiesta. Per le richieste FileEndOfFileInformation e FileAllocationInformation, questo campo contiene le dimensioni del file specificate.
 
 </dd> <dt>
 
 **FileKey**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Puntatore
 </dt> </dl>
 
-Per determinare il nome del file, trovare la corrispondenza con il valore di questa proprietà con la proprietà **FileObject** di un evento del [**\_ nome**](fileio-name.md) del FileIO.
+Per determinare il nome del file, associare il valore di questa proprietà alla **proprietà FileObject** di un [**evento FileIo \_ Name.**](fileio-name.md)
 
 </dd> <dt>
 
-**FileObject**
+**Oggetto FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), puntatore
+Qualificatori: WmiDataId(3), Puntatore
 </dt> </dl>
 
-Identificatore che può essere usato per correlare le operazioni alla stessa istanza dell'oggetto file aperto tra gli eventi di creazione e chiusura di file.
+Identificatore che può essere utilizzato per correlare le operazioni alla stessa istanza dell'oggetto file aperto tra gli eventi di creazione e chiusura di file.
 
 </dd> <dt>
 
 **InfoClass**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
-Classe di informazioni sui file richiesta.
+Classe di informazioni sul file richiesta.
 
 </dd> <dt>
 
 **IrpPtr**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), puntatore
+Qualificatori: WmiDataId(1), Pointer
 </dt> </dl>
 
-Pacchetto di richiesta IO. Questa proprietà identifica l'attività IO.
+Pacchetto di richiesta I/O. Questa proprietà identifica l'attività di I/O.
 
 </dd> <dt>
 
 **TTID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), puntatore
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
-Identificatore del thread che sta eseguendo l'operazione.
+Identificatore di thread del thread che esegue l'operazione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Set information and query Information Events indica che gli attributi di file sono stati impostati o sottoposti a query. Quando viene emesso un comando FSCTL, viene registrato un evento di controllo file system (FSControl).
+Le informazioni sui set e gli eventi relativi alle query indicano che gli attributi del file sono stati impostati o sottoposti a query. Quando viene eseguito un comando FSCTL, viene registrato un evento di controllo file system (FSControl).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -164,8 +164,8 @@ Set information and query Information Events indica che gli attributi di file so
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -173,7 +173,7 @@ Set information and query Information Events indica che gli attributi di file so
 
 <dl> <dt>
 
-[**FileIo**](fileio.md)
+[**Fileio**](fileio.md)
 </dt> </dl>
 
  

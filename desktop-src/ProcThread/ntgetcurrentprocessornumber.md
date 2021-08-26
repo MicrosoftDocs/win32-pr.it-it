@@ -1,7 +1,7 @@
 ---
-description: Recupera il numero del processore sul quale era in esecuzione il thread corrente durante la chiamata a questa funzione.
+description: Recupera il numero del processore su cui era in esecuzione il thread corrente durante la chiamata a questa funzione.
 ms.assetid: f0141550-58e2-421a-934d-9a6c488d2b81
-title: NtGetCurrentProcessorNumber (funzione)
+title: Funzione NtGetCurrentProcessorNumber
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 96862836d3f9c16034ce1c2e751aebea2884d114
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f45ee39e9599e2d77d77131eb64c2a9037de1f4ba31f907ac5c9ea562a706c27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032191"
 ---
-# <a name="ntgetcurrentprocessornumber-function"></a>NtGetCurrentProcessorNumber (funzione)
+# <a name="ntgetcurrentprocessornumber-function"></a>Funzione NtGetCurrentProcessorNumber
 
-\[**NtGetCurrentProcessorNumber** può essere modificato o non disponibile nelle versioni future di Windows. Le applicazioni devono invece usare la funzione [**GetCurrentProcessorNumber**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumber) .\]
+\[**NtGetCurrentProcessorNumber** può essere modificato o non disponibile nelle versioni future di Windows. Le applicazioni devono invece [**usare la funzione GetCurrentProcessorNumber.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentprocessornumber)\]
 
-Recupera il numero del processore sul quale era in esecuzione il thread corrente durante la chiamata a questa funzione.
+Recupera il numero del processore su cui era in esecuzione il thread corrente durante la chiamata a questa funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,9 +45,9 @@ La funzione restituisce il numero del processore corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione viene utilizzata per fornire informazioni per stimare le prestazioni del processo.
+Questa funzione viene usata per fornire informazioni per stimare le prestazioni del processo.
 
-A questa funzione non è associata alcuna libreria di importazione. È necessario utilizzare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Ntdll.dll.
+A questa funzione non è associata alcuna libreria di importazione. È necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico Ntdll.dll.
 
 ## <a name="requirements"></a>Requisiti
 

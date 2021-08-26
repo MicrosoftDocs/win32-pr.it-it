@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0fd99178edaa23f2cdf32672a746f79c368b4265
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e42e991fc7e288fc36dafcd167fe21ffb4983baeeb34bbb80e1bf67981e24779
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083701"
 ---
 # <a name="impeg2psiparsergetrecordprogramnumber-method"></a>Metodo IMpeg2PsiParser::GetRecordProgramNumber
 
@@ -57,7 +57,7 @@ Puntatore a una variabile che riceve il campo del \_ numero di programma da PAT.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati, i valori illustrati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non solo, i valori illustrati nella tabella seguente.
 
 
 

@@ -1,157 +1,157 @@
 ---
-description: Uso delle API delle impostazioni dei controlli padre
+description: Uso del controllo genitori Impostazioni API
 ms.assetid: 77a239e9-1cec-4710-b673-7d0cebd502e9
-title: Uso delle API delle impostazioni dei controlli padre
+title: Uso del controllo genitori Impostazioni API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dde4827dfe3ed5ee7eec6787744e6ff92f18775
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c9dd75565559e8fe52413280e35abf076a57ad6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757754"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885821"
 ---
-# <a name="using-parental-controls-settings-apis"></a>Uso delle API delle impostazioni dei controlli padre
+# <a name="using-parental-controls-settings-apis"></a>Uso del controllo genitori Impostazioni API
 
-Le impostazioni vengono discusse prima della registrazione, perché la registrazione è condizionale nelle impostazioni dell'utente.
+Impostazioni vengono discussi prima della registrazione perché la registrazione è condizionale in base alle impostazioni dell'utente.
 
-## <a name="wmi-api-settings-writeread"></a>Lettura/scrittura delle impostazioni dell'API WMI
+## <a name="wmi-api-settings-writeread"></a>API WMI Impostazioni scrittura/lettura
 
-L'API WMI fornisce accesso non astratto (non elaborato) a tutte le impostazioni di cui è stata creata un'istanza dall'infrastruttura dei controlli padre come definito nel file di schema Wpcsprov. mof. L'archivio impostazioni esiste nello \\ \\ \\ \\ spazio dei nomi WindowsParentalControls applicazioni CIMV2 radice, con le seguenti definizioni di classe che definiscono uno schema. Sono indicati gli elementi di estendibilità.
+L'API WMI fornisce l'accesso non astratto (non elaborato) a tutte le impostazioni di cui è stata creata un'istanza dall'infrastruttura di controllo genitori, come definito nel file di schema Wpcsprov.mof. L'archivio delle impostazioni è presente nello spazio dei nomi \\ \\ radice CIMV2 \\ Applications WindowsParentalControls, con le definizioni di classe \\ seguenti che definiscono uno schema. Vengono notati gli elementi di estendibilità.
 
 Per computer:
 
 -   WpcSystemSettings (un'istanza)
-    -   Metodi AddUser () e RemoveUser () per creare ed eliminare le impostazioni dei controlli padre per un determinato SID, rispettivamente.
-    -   Proprietà per il sistema di classificazione dei giochi correnti, nonché rilevamento e notifiche relative al controllo amministrativo dei log.
-    -   Estensibilità: proprietà per le applicazioni HTTP di sola lettura e di lettura/scrittura e di esenzione URL per il filtro di contenuti Web, l'ID di sostituzione del filtro del contenuto Web e l'ID e il percorso della DLL della risorsa del nome e il numero di eventi di log personalizzato e la registrazione del nome dell'intestazione
--   WpcRatingsSystem (un'istanza per ogni sistema di classificazione installato)
+    -   Metodi AddUser() e RemoveUser() per creare ed eliminare rispettivamente le impostazioni di controllo genitori per un SID specificato.
+    -   Proprietà per il sistema di classificazione dei giochi corrente in vigore e rilevamento e notifica correlati al controllo amministrativo dei log.
+    -   Estendibilità: proprietà per elenchi di esenzioni URL e applicazioni HTTP di sola lettura e di lettura/scrittura per il filtro del contenuto Web, ID di sostituzione e ID DLL risorsa nome e numero di eventi di log personalizzato per i campi e la registrazione del nome dell'intestazione.
+-   WpcRatingsSystem (un'istanza per ogni sistema ratings installato)
     -   WpcRating (un'istanza per ogni livello di classificazione).
     -   WpcRatingDescriptor (un'istanza per ogni descrittore di classificazione).
--   Estensibilità: WpcExtension (un'istanza per ogni collegamento di estensibilità del pannello dei controlli padre).
-    -   Proprietà per GUID, sottosistema, ID, percorso risorse immagine, percorso risorsa immagine stato disabilitato, percorso eseguibile, percorso DLL risorse nome visualizzato e ID, percorso e ID DLL risorse sottotitolo e ID.
+-   Estendibilità: WpcExtension (un'istanza per ogni collegamento di estendibilità del pannello di controllo genitori aggiunto).
+    -   Proprietà per GUID, sottosistema, ID, percorso della risorsa immagine, percorso della risorsa immagine di stato disabilitato, percorso eseguibile, percorso DELLA DLL della risorsa nome visualizzato e ID, percorso DLL risorsa sottotitolo e ID.
 
-Utente per controllo:
+Per utente controllato:
 
--   WpcUserSettings (un'istanza per ogni utente controllato)
-    -   Proprietà per il SID proprietario, il flag di attivazione/disattivazione dei controlli padre, il flag di accesso/disattivazione, il flag per i limiti di tempo di attivazione/disattivazione, il flag di abilitazione delle sostituzioni, la maschera degli orari di accesso e il flag generale
+-   WpcUserSettings (un'istanza per utente controllato)
+    -   Proprietà per IL SID proprietario, flag di controllo genitori on/off, flag di accesso/off, flag di attivazione/disasamento dei limiti di tempo, sostituzioni del flag abilitato, maschera dell'orario di accesso e flag di attivazione/disconnessione delle restrizioni generali dell'applicazione.
     -   In Windows 8 la proprietà esistente rappresenta la prima mezz'ora per ogni ora. È stata aggiunta una nuova proprietà di mezz'ora per rappresentare la seconda metà di ogni ora. È stata introdotta una nuova proprietà aggiuntiva per rappresentare il limite di tempo giornaliero.
 
         **Windows 7 e Windows Vista:** Le restrizioni del timer supportano la granularità di 1 ora.
 
--   WpcWebSettings (un'istanza per ogni utente controllato)
-    -   Proprietà per SID proprietario, flag on/off filtro, livello filtro, flag bloccato download file, flag bloccato siti non classificati.
--   WpcUrlOverride (un'istanza per URL consentita o negata in modo esplicito nell'elenco di override URL usato come elenco Consenti/blocca per il filtraggio del contenuto Web)
+-   WpcWebSettings (un'istanza per utente controllato)
+    -   Proprietà per SID proprietario, flag di filtro on/off, livello di filtro, flag bloccato per download di file, flag bloccato di siti nonrate.
+-   WpcUrlOverride (un'istanza per URL consentito o negato in modo esplicito nell'elenco di override dell'URL usato come elenco di elementi consentiti/bloccati per il filtro del contenuto Web)
     -   Proprietà per il SID proprietario, l'URL interessato, lo stato consentito/bloccato.
--   WpcAppOverride (un'istanza per percorso è consentita in modo esplicito nell'elenco di override delle applicazioni per restrizioni applicazione generali)
-    -   Proprietà per il SID proprietario. ID regola più sicuro, percorso dell'applicazione.
--   WpcGamesSettings (un'istanza per ogni utente controllato)
-    -   Proprietà per il SID proprietario, il flag dei giochi consentiti, il GUID del sistema di classificazione per queste impostazioni, Consenti flag giochi senza classificazione, ID della classificazione massima consentita nel sistema corrente, raccolta di descrittori negati.
--   WpcGameOverride (un'istanza per ogni ID applicazione consentita o negata in modo esplicito)
+-   WpcAppOverride (un'istanza per ogni percorso consentita in modo esplicito nell'elenco di override dell'applicazione Restrizioni generali applicazione)
+    -   Proprietà per il SID proprietario. ID regola SAFER, percorso dell'applicazione.
+-   WpcGamesSettings (un'istanza per utente controllato)
+    -   Le proprietà per il SID proprietario, il flag consentito per i giochi, il GUID del sistema ratings per queste impostazioni, consentono il flag di giochi non classificati, l'ID della classificazione massima consentita nel sistema corrente, la raccolta di descrittori negati.
+-   WpcGameOverride (un'istanza per ID applicazione consentita o negata in modo esplicito)
     -   Proprietà per il SID proprietario, ID applicazione che identifica il gioco, stato consentito/negato.
 
 ## <a name="data-representation-notes"></a>Note sulla rappresentazione dei dati
 
-Diverse impostazioni nello schema sono vincolate dal file con estensione MOF con attributo non \_ null. Non possono essere impostati su una variante null. Per tutti i tipi non matrice, il codice dei controlli padre Inizializza i valori. Per le matrici, è possibile scrivere stati vuoti utilizzando una variante null, una variante vuota o una matrice Variant con dimensione zero. Il provider WMI normalizza tutti questi in una rappresentazione di stato variant null durante la lettura.
+Diverse impostazioni all'interno dello schema sono vincolate dal file mof con attributo non \_ Null. Non possono essere impostate su una variante Null. Per tutti i tipi non di matrice, il codice di Controllo genitori inizializza i valori. Per le matrici, gli stati vuoti possono essere scritti usando una variante Null, una variante vuota o una matrice di varianti di dimensioni zero. Il provider WMI normalizzerà tutti questi elementi in una rappresentazione dello stato di variante Null in lettura.
 
-## <a name="user-interface-extensibility-link-notes"></a>Note sul collegamento di estendibilità dell'interfaccia utente
+## <a name="user-interface-extensibility-link-notes"></a>Interfaccia utente note sul collegamento di estendibilità
 
-Per registrare un collegamento di estendibilità dell'interfaccia utente, è necessario specificare le informazioni seguenti:
+L'uso di WMI per registrare un collegamento di estendibilità dell'interfaccia utente richiede la specifica delle informazioni seguenti:
 
--   GUID: più collegamenti possono condividere lo stesso GUID se fanno parte di un pacchetto o di un gruppo comune.
--   Sottosistema: progettato per indicare le classificazioni dei tipi di collegamento, ad esempio gruppi o applicazioni compatibili autonome
--   Nome percorso della DLL della risorsa e ID: specifica la risorsa per il nome visualizzato da visualizzare per il collegamento.
--   ID e percorso della DLL della risorsa del sottotitolo: specifica la risorsa per il testo aggiuntivo sotto il nome.
--   Percorso immagine: percorso completo di una bitmap di 24 × 24 pixel (BMP) con 8 bit per pixel profondità di colore e preferibilmente un canale alfa. Questa operazione viene specificata in modo coerente con le estensioni della shell: <file system path> , <negative resource ID> . Ad esempio: C: \\ Windows \\ system32 \\Wpccpl.dll,-20.
--   Percorso immagine disabilitato: uguale al percorso dell'immagine precedente, ad eccezione della variante della bitmap che mostra lo stato disabilitato. Questa immagine viene visualizzata quando il controllo parentale è disattivato.
--   Percorso exe: percorso completo di un file eseguibile da richiamare tramite ShellExecute (). Questo percorso deve essere specificato con barre rovesciate oppure il collegamento non richiamerà il file eseguibile. L'aggiunta di un token% SID% dopo il percorso exe determinerà l'esecuzione del collegamento che sostituisce la stringa SID per l'utente per cui è attualmente in corso la visualizzazione della pagina Hub. Il file eseguibile può quindi utilizzare la stringa SID per gestire la funzionalità per l'utente specificato.
+-   GUID: più collegamenti possono condividere lo stesso GUID se fanno parte di un pacchetto o di una suite comune.
+-   Sottosistema: destinato a indicare le classificazioni dei tipi di collegamento, ad esempio suite o applicazioni autonome conformi
+-   Name resource DLL path and ID :specifica la risorsa per il nome visualizzato da visualizzare per il collegamento.
+-   Percorso DLL risorsa sottotitolo e ID: specifica la risorsa per il testo aggiuntivo sotto il nome.
+-   Percorso immagine: percorso completo di una bitmap da 24 × 24 pixel (BMP), con una profondità di colore di 8 bit per pixel e preferibilmente un canale alfa. Questo valore viene specificato in modo coerente con le estensioni della shell: <file system path> , <negative resource ID> . Ad esempio: C: \\ Windows \\ System32 \\Wpccpl.dll,-20.
+-   Percorso immagine disabilitato: uguale al percorso dell'immagine precedente, ad eccezione della variante della bitmap che mostra lo stato disabilitato. Questa immagine viene visualizzata quando il controllo genitori è disattivato.
+-   Percorso exe: percorso completo di un eseguibile da richiamare tramite ShellExecute(). Questo percorso deve essere specificato con barre rovesciate, in caso contrario il collegamento non richiama l'eseguibile. L'aggiunta di un token %SID% dopo il percorso exe comporta l'esecuzione del collegamento sostituendo la stringa SID per l'utente per cui è attualmente visualizzata la pagina dell'hub. Il file eseguibile può quindi usare la stringa SID per gestire le funzionalità per l'utente specificato.
 
-La disinstallazione dell'applicazione deve rimuovere una registrazione del collegamento di estensibilità.
+La disinstallazione dell'applicazione deve rimuovere la registrazione di un collegamento di estendibilità.
 
-## <a name="web-extensibility-link-and-web-content-filter-override-notes"></a>Note sull'override del filtro del contenuto Web e del collegamento di estendibilità Web
+## <a name="web-extensibility-link-and-web-content-filter-override-notes"></a>Note sull'override del collegamento all'estendibilità Web e del filtro del contenuto Web
 
-Impostando la proprietà FilterID sullo stesso GUID di un collegamento di estendibilità dell'interfaccia utente registrato esistente, il collegamento visualizzato verrà innalzato di livello da un collegamento generico in altre impostazioni al collegamento per le restrizioni Web esclusive. Si tratta di un'impostazione a livello di computer, quindi il filtro del contenuto Web incluso in LSP ignorerà tutti i filtri per tutti gli utenti controllati. È necessario impostare un nome descrittivo anche nella proprietà FilterName, specificata da un percorso alla DLL della risorsa e all'ID.
+Impostando la proprietà FilterID sullo stesso GUID di un collegamento di estendibilità dell'interfaccia utente registrato esistente, il collegamento visualizzato verrà promosso da un collegamento generico in Altro Impostazioni al collegamento Restrizioni Web esclusivo. Si tratta di un'impostazione a livello di computer e pertanto l'LSP filtro contenuto Web predefinito ignora tutti i filtri per tutti gli utenti controllati. Un nome descrittivo deve essere impostato anche nella proprietà FilterName, specificata da un percorso alla DLL e all'ID della risorsa.
 
-Il sistema di controlli padre consiglia quanto segue da qualsiasi filtro Web che esegue l'override:
+Il sistema di controllo genitori consiglia quanto segue da qualsiasi filtro Web che esegue l'override:
 
--   Rispettare lo stato generale dei controlli padre per un utente.
--   Rispettare le impostazioni di report attività per un utente.
--   Monitorare la proprietà FilterID. Se viene modificato dal GUID specificato dal fornitore, un altro filtro ha assunto la proprietà e il filtro del fornitore dovrebbe disabilitarsi. È stata aggiunta un'interfaccia COM per ridurre l'overhead del controllo periodico di questa modifica rispetto a una chiamata WMI.
--   Si consiglia vivamente di rispettare le voci dell'elenco di esenzioni per l'applicazione HTTP di sola lettura e di lettura/scrittura e di URL.
--   È consigliabile rispettare l'elenco di override URL per utente (Consenti/blocca elenco).
--   Essere affidabili per il cambio rapido degli utenti.
+-   Rispettare lo stato generale di on/off di Controllo genitori per un utente.
+-   Rispettare le Rapporto attività per un utente.
+-   Monitorare la proprietà FilterID. Se viene modificato dal GUID specificato del fornitore, un altro filtro è diventato proprietario e il filtro del fornitore deve disabilitare se stesso. È stata aggiunta un'interfaccia COM per ridurre il sovraccarico dovuto al controllo periodico di questa modifica rispetto a una chiamata WMI.
+-   È consigliabile rispettare le voci dell'elenco di esenzioni URL e applicazione HTTP di sola lettura e di lettura/scrittura.
+-   È consigliabile rispettare l'elenco di override dell'URL per utente (elenco di elementi consentiti/bloccati).
+-   Essere affidabili per passare rapidamente da un utente all'altro.
 
-I controlli padre non inseriscono alcuna limitazione sulla modalità di collegamento di un filtro di contenuto Web o di altro a Windows per l'implementazione del filtro. I fornitori possono sfruttare gli investimenti correnti o le tecnologie preferite (LSP, TDI, other).
+Il controllo genitori non presenta alcuna limitazione al modo in cui un filtro del contenuto Web o di altro tipo si collega Windows l'implementazione del filtro. I fornitori possono sfruttare gli investimenti correnti o le tecnologie preferite (LSP, TDI, altro).
 
-La disinstallazione del filtro del fornitore deve annullare la registrazione delle voci FilterID e FilterName. Questa operazione viene eseguita impostando FilterID su GUID \_ null e FilterName su una variante null. Il filtro contenuto Web interno verrà quindi riabilitato.
+La disinstallazione del filtro del fornitore deve annullare la registrazione delle voci FilterID e FilterName. Questa operazione viene eseguita impostando FilterID su GUID \_ NULL e FilterName su una variante Null. Il filtro del contenuto Web in-box verrà quindi ri-abilitato.
 
-Si noti che la riabilitazione del filtro Web in-box filtra solo le nuove sessioni e non le sessioni attive da prima del Commuter.
+Si noti che la ri abilitazione del filtro Web predefinito filtra solo le nuove sessioni e non le sessioni attive da prima del passaggio.
 
-## <a name="web-content-filter-allowblock-list-exportimport-format"></a>Formato di esportazione/importazione dell'elenco di contenuti Web consentiti/bloccati
+## <a name="web-content-filter-allowblock-list-exportimport-format"></a>Formato di esportazione/importazione dell'elenco di elementi consentiti/bloccati del filtro contenuto Web
 
 Questa funzionalità non è supportata in Windows 8.
 
 **Windows 7 e Windows Vista:** Questa funzionalità è supportata.
 
-<WebAddresses>
+&lt;Indirizzi Web&gt;
 
-<URL AllowBlock="1">https://alloweddomain.com/</URL>
+<URL AllowBlock="1">https://alloweddomain.com/&lt;/URL&gt;
 
-<URL AllowBlock="1">https://allowedurl.com/allowed/default.html</URL>
+<URL AllowBlock="1">https://allowedurl.com/allowed/default.html&lt;/URL&gt;
 
-<URL AllowBlock="2">https://blockeddomain.com/</URL>
+<URL AllowBlock="2">https://blockeddomain.com/&lt;/URL&gt;
 
-<URL AllowBlock="2">https://blockedurl.com/blocked/default.html</URL>
+<URL AllowBlock="2">https://blockedurl.com/blocked/default.html&lt;/URL&gt;
 
-</WebAddresses>
+&lt;/WebAddresses&gt;
 
-## <a name="application-restrictions-override-notes"></a>Note sulle limitazioni dell'applicazione override
+## <a name="application-restrictions-override-notes"></a>Note sull'override delle restrizioni dell'applicazione
 
-Le limitazioni dell'applicazione vengono impostate in base ai singoli utenti per consentire binari o percorsi specifici. Se è stato configurato un nuovo utente controllato dal padre e le restrizioni dell'applicazione sono necessarie per l'utente, è consigliabile usare la chiave di esecuzione di Windows nel registro di sistema con una piccola applicazione contrassegnata come richiesta di elevazione delle richieste distribuita per scrivere le sostituzioni. Questo comporterà una richiesta di credenziali monouso per configurare le sostituzioni per l'utente, dopo le quali i file binari di destinazione per le sostituzioni non saranno più fastidiosi per gli utenti a causa dell'ulteriore richiesta di override da parte dell'amministratore.
+Le sostituzioni delle restrizioni dell'applicazione vengono impostate in base all'utente per consentire percorsi o file binari specifici. Se viene configurato un nuovo utente con controllo genitori e sono necessarie sostituzioni delle restrizioni dell'applicazione per tale utente, è consigliabile usare la chiave run di Windows nel Registro di sistema con una piccola applicazione contrassegnata come che richiede la distribuzione dell'elevazione dei privilegi per scrivere le sostituzioni. Verrà visualizzata una richiesta di credenziali una sola volta per configurare le sostituzioni per l'utente, dopo di che i file binari di destinazione per le sostituzioni non saranno un problema per gli utenti a causa di ulteriori richieste di sostituzione dell'amministratore.
 
-## <a name="actions-required-for-settings-changes-to-become-effective"></a>Le azioni necessarie per modificare le impostazioni diventano effettive
+## <a name="actions-required-for-settings-changes-to-become-effective"></a>Azioni necessarie per Impostazioni le modifiche per diventare effettive
 
-Se un amministratore modifica le impostazioni per un utente standard connesso, viene generato un messaggio di avviso. Indica che le modifiche apportate alle impostazioni potrebbero non essere effettive fino a quando l'utente controllato non si disconnette e si torna nuovamente. Si tratta di una progettazione conservativa. La maggior parte delle impostazioni avrà effetto quasi immediatamente mentre l'utente controllato è connesso. Un'eccezione è relativa ai giochi, in cui le impostazioni diverranno effettive al successivo avvio di Esplora giochi o alla chiamata del gioco.
+Se un amministratore modifica le impostazioni per un utente standard connesso, viene generato un messaggio di avviso. Indica che le modifiche alle impostazioni potrebbero non essere effettive fino a quando l'utente controllato non si disconnette e torna a eseguire di nuovo l'accesso. Si tratta di una progettazione conservativa. La maggior parte delle impostazioni avrà effetto quasi immediatamente mentre l'utente controllato è connesso. Un'eccezione è per i giochi, in cui le impostazioni saranno effettive alla successiva esecuzione Games Explorer o al tentativo di richiamare il gioco.
 
 ## <a name="sample-code"></a>Codice di esempio
 
-Gli esempi di C++ sono disponibili nell'SDK che illustra l'uso delle funzionalità di estensibilità delle impostazioni. Vedere la sezione Esempi di controlli padre.
+Gli esempi C++ sono disponibili nell'SDK che illustra l'uso delle funzionalità di estendibilità delle impostazioni. Vedere la sezione Esempi di controllo genitori.
 
-## <a name="independent-test-tools"></a>Strumenti di test indipendenti
+## <a name="independent-test-tools"></a>Proprietà Strumenti di test
 
-L'ispezione di classi e istanze è facilitata dal plug-in wmimgmt. msc e dallo strumento Wbemtest.exe.
+L'ispezione di classi e istanze è facilitata dal plug-in Wmimgmt.msc e dallo Wbemtest.exe strumenti.
 
-## <a name="64-bit-considerations"></a>Considerazioni su 64 bit
+## <a name="64-bit-considerations"></a>Considerazioni a 64 bit
 
-le versioni del sistema operativo Windows a 64 bit includono attualmente sia un provider WMI a 32 bit che un provider 64 bit.
+Nelle versioni del sistema Windows a 64 bit sono attualmente installati sia un provider WMI a 32 bit che un provider a 64 bit.
 
-## <a name="general-code-development-and-debugging"></a>Sviluppo e debug di codice generale
+## <a name="general-code-development-and-debugging"></a>Sviluppo e debug di codice generali
 
-Se si usa Visual Studio per lo sviluppo del codice di gestione delle impostazioni, il debug locale richiederà l'esecuzione di Visual Studio con diritti di amministratore (richiamando con Esegui come amministratore usando la riga di comando o con il pulsante destro del mouse). Ciò è dovuto all'isolamento dei processi e dei messaggi implementato da UAC.
+Se Visual Studio viene usato per lo sviluppo di codice di gestione delle impostazioni, il debug locale richiederà l'esecuzione di Visual Studio con diritti di amministratore (richiamando con Esegui come amministratore tramite la riga di comando o l'opzione di clic con il pulsante destro del mouse). Ciò è dovuto all'isolamento dei processi e dei messaggi implementato dal controllo dell'account utente.
 
-## <a name="minimum-compliance-api-settings-read"></a>Lettura impostazioni API di conformità minime
+## <a name="minimum-compliance-api-settings-read"></a>Lettura dell'API di conformità Impostazioni minima
 
 ### <a name="interfaces-and-methods"></a>Interfacce e metodi
 
-L'API di conformità controllata dal file di intestazione Wpcapi. h fornisce un accesso semplificato in sola lettura alle seguenti impostazioni usando le interfacce COM.
+L'API conformità controllata dal file di intestazione Wpcapi.h fornisce un accesso semplificato in sola lettura alle impostazioni seguenti usando le interfacce COM.
 
-I metodi dell'interfaccia radice di [**IWindowsParentalControls**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwindowsparentalcontrols) forniscono l'accesso a:
+[**I metodi dell'interfaccia radice IWindowsParentalControls**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwindowsparentalcontrols) consentono di accedere a:
 
--   Metodi di IWPCSettings:
-    -   IsLoggingRequired (): la creazione di report attività è configurata su on per l'utente?
-    -   GetLastSettingsChangeTime (): l'applicazione può essere a conoscenza se sono stati modificati i criteri di impostazione rispetto a un controllo precedente.
-    -   Getrestrictions (): consente di leggere se le restrizioni Web, i limiti di tempo, le restrizioni del gioco o le restrizioni dell'applicazione sono impostate su on.
--   Metodi di IWPCWebSettings:
-    -   GetSettings (): recupera i flag per i filtri on o off e i download bloccati.
-    -   RequestURLOverride (): inserisce una richiesta nel meccanismo di sostituzione dell'amministratore (approvazione over the Shoulder) che presenterà una finestra di dialogo contenente gli URL da approvare.
--   Metodi di IWPCGamesSettings:
-    -   Blocked (): per un determinato ID applicazione del gioco, è il gioco bloccato dai controlli padre e per quale motivo.
--   GetVisibility (): fornisce informazioni sul fatto che l'interfaccia utente dei controlli padre sia attualmente nascosta.
--   GetWebFilterInfo (): fornisce un'interfaccia per ottenere l'ID del filtro del contenuto Web attualmente attivo.
+-   Metodi IWPCSettings:
+    -   IsLoggingRequired(): la creazione di report attività è configurata come on per l'utente?
+    -   GetLastSettingsChangeTime(): l'applicazione può essere a conoscenza se i criteri delle impostazioni sono stati modificati dopo un controllo precedente.
+    -   GetRestrictions(): indica se le restrizioni Web, i limiti di tempo, le restrizioni di gioco o le restrizioni dell'applicazione sono impostate su on.
+-   Metodi IWPCWebSettings:
+    -   GetSettings(): recupera i flag per filtrare o disattivare e i download sono bloccati.
+    -   RequestURLOverride(): immettere una richiesta nel meccanismo di override dell'amministratore (approvazione over-the-shoulder) che presenterà una finestra di dialogo contenente gli URL da approvato.
+-   Metodi IWPCGamesSettings:
+    -   IsBlocked(): per un ID applicazione di gioco specificato, è il gioco bloccato dai controlli genitori e per quale motivo.
+-   GetVisibility(): fornisce informazioni sul fatto che l'interfaccia utente di Controllo genitori sia attualmente nascosta.
+-   GetWebFilterInfo(): fornisce un'interfaccia per ottenere l'ID del filtro contenuto Web attualmente attivo.
 
 ### <a name="sample-code"></a>Codice di esempio
 
-Gli esempi di C++ sono disponibili nell'SDK che illustra l'uso dell'API di conformità. Vedere la sezione Esempi di controlli padre.
+Gli esempi C++ vengono forniti nell'SDK che illustra l'uso dell'API conformità. Vedere la sezione Esempi di Controllo genitori.
 
  
 

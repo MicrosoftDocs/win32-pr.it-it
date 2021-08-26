@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INDEXLIST. columnidcColumn'
-title: Proprietà JET_INDEXLIST. columnidcColumn
+description: Altre informazioni sulla proprietà JET_INDEXLIST.columnidcColumn
+title: JET_INDEXLIST.columnidcColumn
 TOCTitle: 'columnidcColumn property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidcColumn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidccolumn(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d1c6ca59424680b050ce2480645bb6eb922534a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a144a9c28cdfb50e1bdc6cc61b324e04dd833b2a0e5a54c8fa30b3ae48e416c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116051"
 ---
-# <a name="jet_indexlistcolumnidccolumn-property"></a>Proprietà JET_INDEXLIST. columnidcColumn
+# <a name="jet_indexlistcolumnidccolumn-property"></a>JET_INDEXLIST.columnidcColumn
 
-Ottiene l'ColumnID della colonna nella tabella temporanea in cui è archiviato il numero di colonne nella chiave di indice. La colonna è di tipo [Long](./jet-coltyp-enumeration.md).
+Ottiene l'id colonna della colonna nella tabella temporanea in cui è archiviato il numero di colonne nella chiave dell'indice. La colonna è di tipo [Long](./jet-coltyp-enumeration.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidcColumn { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXLIST](./jet-indexlist-class.md)
+[JET_INDEXLIST classe](./jet-indexlist-class.md)
 
-[Membri JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST membri](./jet-indexlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

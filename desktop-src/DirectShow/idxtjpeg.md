@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IDxtJpeg imposta le proprietà della transizione di cancellazione SMPTE. Questa interfaccia viene utilizzata internamente da DirectShow editing Services (DES) quando esegue il rendering della transizione di cancellazione SMPTE.
+description: L'interfaccia IDxtJpeg imposta le proprietà per la transizione di cancellazione SMPTE. Questa interfaccia viene usata internamente da DirectShow Editing Services (DES) quando esegue il rendering della transizione di cancellazione SMPTE.
 ms.assetid: ce1920d4-ebe5-42d1-a2eb-d71ddeaf14fe
-title: Interfaccia IDxtJpeg (qedit. h)
+title: Interfaccia IDxtJpeg (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,62 +14,62 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e9c32bee3f4041abaa9529036b7bc78250ac2487
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1f48ff04c087c0c0c391eaf1a64ae8e7768505a5ba8d108ab49c54ffc7b17f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997501"
 ---
 # <a name="idxtjpeg-interface"></a>Interfaccia IDxtJpeg
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-L' `IDxtJpeg` interfaccia imposta le proprietà della transizione di [cancellazione SMPTE](smpte-wipe-transition.md) .
+`IDxtJpeg`L'interfaccia imposta le proprietà nella transizione di [cancellazione SMPTE.](smpte-wipe-transition.md)
 
-Questa interfaccia viene utilizzata internamente da DirectShow editing Services (DES) quando esegue il rendering della transizione di cancellazione SMPTE. Non è necessario che le applicazioni DES usino questa interfaccia. Per impostare le proprietà di una transizione in DES, utilizzare l'interfaccia [**IPropertySetter**](ipropertysetter.md) .
+Questa interfaccia viene usata internamente da DirectShow Editing Services (DES) quando esegue il rendering della transizione di cancellazione SMPTE. Le applicazioni DES non devono usare questa interfaccia. Per impostare le proprietà in una transizione in DES, usare [**l'interfaccia IPropertySetter.**](ipropertysetter.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDxtJpeg** eredita da **IDXEffect**. **IDxtJpeg** dispone anche di questi tipi di membri:
+**L'interfaccia IDxtJpeg** eredita da **IDXEffect**. **IDxtJpeg** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDxtJpeg** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IDxtJpeg.**
 
 
 
 | Metodo                                                     | Descrizione                                                                               |
 |:-----------------------------------------------------------|:------------------------------------------------------------------------------------------|
-| [**ApplyChanges**](idxtjpeg-applychanges.md)              | Applica le proprietà che sono state modificate.<br/>                                      |
-| [**ottenere \_ BorderColor**](idxtjpeg-get-bordercolor.md)       | Recupera il colore del bordo intorno ai bordi del pattern di cancellazione.<br/>        |
-| [**ottenere \_ BorderSoftness**](idxtjpeg-get-bordersoftness.md) | Recupera la larghezza dell'area sfocata intorno ai bordi del pattern di cancellazione.<br/> |
-| [**ottenere \_ BorderWidth**](idxtjpeg-get-borderwidth.md)       | Recupera la larghezza del bordo solido lungo i bordi del pattern di cancellazione.<br/>   |
-| [**Ottieni \_ maskName**](idxtjpeg-get-maskname.md)             | Recupera il nome di un file JPEG da utilizzare come maschera di cancellazione.<br/>                 |
-| [**ottenere \_ MaskNum**](idxtjpeg-get-masknum.md)               | Recupera il codice di cancellazione SMPTE della cancellazione.<br/>                                     |
-| [**ottenere \_ offsetX**](idxtjpeg-get-offsetx.md)               | Recupera l'offset orizzontale dell'origine della cancellazione.<br/>                            |
-| [**Ottieni \_ offset**](idxtjpeg-get-offsety.md)               | Recupera l'offset verticale dell'origine della cancellazione.<br/>                              |
+| [**Applychanges**](idxtjpeg-applychanges.md)              | Applica tutte le proprietà modificate.<br/>                                      |
+| [**get \_ BorderColor**](idxtjpeg-get-bordercolor.md)       | Recupera il colore del bordo intorno ai bordi del modello di cancellazione.<br/>        |
+| [**ottenere \_ BorderSoftness**](idxtjpeg-get-bordersoftness.md) | Recupera la larghezza dell'area sfocata intorno ai bordi del modello di cancellazione.<br/> |
+| [**get \_ BorderWidth**](idxtjpeg-get-borderwidth.md)       | Recupera la larghezza del bordo a tinta unita lungo i bordi del modello di cancellazione.<br/>   |
+| [**get \_ MaskName**](idxtjpeg-get-maskname.md)             | Recupera il nome di un file JPEG da usare come maschera di cancellazione.<br/>                 |
+| [**get \_ MaskNum**](idxtjpeg-get-masknum.md)               | Recupera il codice di cancellazione SMPTE della cancellazione.<br/>                                     |
+| [**get \_ OffsetX**](idxtjpeg-get-offsetx.md)               | Recupera l'offset orizzontale dell'origine di cancellazione.<br/>                            |
+| [**get \_ OffsetY**](idxtjpeg-get-offsety.md)               | Recupera l'offset verticale dell'origine di cancellazione.<br/>                              |
 | [**ottenere \_ ReplicateX**](idxtjpeg-get-replicatex.md)         | Recupera il numero di volte in cui il modello di cancellazione viene replicato orizzontalmente.<br/>     |
-| [**ottenere la \_ replica**](idxtjpeg-get-replicatey.md)         | Recupera il numero di volte in cui il modello di cancellazione viene replicato verticalmente.<br/>       |
-| [**Ottieni \_ ScaleX**](idxtjpeg-get-scalex.md)                 | Recupera il valore in base al quale la cancellazione viene allungata orizzontalmente.<br/>              |
-| [**Ottieni \_ scalabilità**](idxtjpeg-get-scaley.md)                 | Recupera il valore in base al quale la cancellazione viene allungata verticalmente.<br/>                |
-| [**LoadDefSettings**](idxtjpeg-loaddefsettings.md)        | Ripristina le impostazioni predefinite della transizione di cancellazione.<br/>                          |
-| [**Inserisci \_ BorderColor**](idxtjpeg-put-bordercolor.md)       | Specifica il colore del bordo intorno ai bordi del pattern di cancellazione.<br/>        |
-| [**Inserisci \_ BorderSoftness**](idxtjpeg-put-bordersoftness.md) | Specifica la larghezza dell'area sfocata intorno ai bordi del pattern di cancellazione.<br/> |
-| [**Inserisci \_ BorderWidth**](idxtjpeg-put-borderwidth.md)       | Specifica lo spessore del bordo a tinta unita lungo i bordi del pattern di cancellazione.<br/>   |
-| [**Inserisci \_ maskName**](idxtjpeg-put-maskname.md)             | Specifica il nome di un file JPEG da usare come maschera di cancellazione.<br/>                     |
-| [**Inserisci \_ MaskNum**](idxtjpeg-put-masknum.md)               | Specifica il codice di cancellazione SMPTE della cancellazione.<br/>                                     |
-| [**Inserisci \_ offsetX**](idxtjpeg-put-offsetx.md)               | Specifica l'offset orizzontale dell'origine della cancellazione.<br/>                            |
-| [**Inserisci \_ offset**](idxtjpeg-put-offsety.md)               | Specifica l'offset verticale dell'origine della cancellazione.<br/>                              |
-| [**Inserisci \_ ReplicateX**](idxtjpeg-put-replicatex.md)         | Specifica il numero di volte in cui il modello di cancellazione viene replicato orizzontalmente.<br/>     |
-| [**Inserisci \_ replica**](idxtjpeg-put-replicatey.md)         | Specifica il numero di volte in cui il modello di cancellazione viene replicato verticalmente.<br/>       |
-| [**Inserisci \_ ScaleX**](idxtjpeg-put-scalex.md)                 | Specifica la quantità in base alla quale la cancellazione viene allungata orizzontalmente.<br/>              |
-| [**\_scalabilità orizzontale**](idxtjpeg-put-scaley.md)                 | Specifica la quantità in base alla quale la cancellazione viene allungata verticalmente.<br/>                |
+| [**get \_ ReplicateY**](idxtjpeg-get-replicatey.md)         | Recupera il numero di volte in cui il modello di cancellazione viene replicato verticalmente.<br/>       |
+| [**ottenere \_ ScaleX**](idxtjpeg-get-scalex.md)                 | Recupera la quantità di estensione orizzontale della cancellazione.<br/>              |
+| [**ottenere \_ ScaleY**](idxtjpeg-get-scaley.md)                 | Recupera la quantità di estensione verticale della cancellazione.<br/>                |
+| [**LoadDefSettings**](idxtjpeg-loaddefsettings.md)        | Ripristina le impostazioni predefinite della transizione Cancellazione dati.<br/>                          |
+| [**put \_ BorderColor**](idxtjpeg-put-bordercolor.md)       | Specifica il colore del bordo intorno ai bordi del modello di cancellazione.<br/>        |
+| [**put \_ BorderSoftness**](idxtjpeg-put-bordersoftness.md) | Specifica la larghezza dell'area sfocata intorno ai bordi del modello di cancellazione.<br/> |
+| [**put \_ BorderWidth**](idxtjpeg-put-borderwidth.md)       | Specifica la larghezza del bordo a tinta unita lungo i bordi del modello di cancellazione.<br/>   |
+| [**put \_ MaskName**](idxtjpeg-put-maskname.md)             | Specifica il nome di un file JPEG da usare come maschera di cancellazione.<br/>                     |
+| [**put \_ MaskNum**](idxtjpeg-put-masknum.md)               | Specifica il codice di cancellazione SMPTE della cancellazione.<br/>                                     |
+| [**put \_ OffsetX**](idxtjpeg-put-offsetx.md)               | Specifica l'offset orizzontale dell'origine di cancellazione.<br/>                            |
+| [**put \_ OffsetY**](idxtjpeg-put-offsety.md)               | Specifica l'offset verticale dell'origine di cancellazione.<br/>                              |
+| [**put \_ ReplicateX**](idxtjpeg-put-replicatex.md)         | Specifica il numero di volte in cui il modello di cancellazione viene replicato orizzontalmente.<br/>     |
+| [**put \_ ReplicateY**](idxtjpeg-put-replicatey.md)         | Specifica il numero di volte in cui il modello di cancellazione viene replicato verticalmente.<br/>       |
+| [**put \_ ScaleX**](idxtjpeg-put-scalex.md)                 | Specifica la quantità di estensione orizzontale della cancellazione.<br/>              |
+| [**put \_ ScaleY**](idxtjpeg-put-scaley.md)                 | Specifica la quantità di estensione verticale della cancellazione.<br/>                |
 
 
 
@@ -78,12 +78,12 @@ L'interfaccia **IDxtJpeg** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -93,8 +93,8 @@ L'interfaccia **IDxtJpeg** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

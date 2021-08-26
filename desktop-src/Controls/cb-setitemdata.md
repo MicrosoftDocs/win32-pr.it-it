@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_SETITEMDATA (winuser. h)
-description: Un'applicazione invia un \_ messaggio SETITEMDATA CB per impostare il valore associato all'elemento specificato in una casella combinata.
+title: CB_SETITEMDATA messaggio (Winuser.h)
+description: Un'applicazione invia un messaggio \_ CB SETITEMDATA per impostare il valore associato all'elemento specificato in una casella combinata.
 ms.assetid: 8be9eb57-a635-4c52-9838-556368813c74
 keywords:
-- Controlli di Windows Message CB_SETITEMDATA
+- CB_SETITEMDATA dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbb1603f9906ebf30a391b57bd812dc2002136c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7abd50db9050178bc5d8d3b8ff556bce90f340fdb8d6692a514b0348aceeeab3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089011"
 ---
-# <a name="cb_setitemdata-message"></a>\_Messaggio SETITEMDATA CB
+# <a name="cb_setitemdata-message"></a>CB \_ SETITEMDATA message
 
-Un'applicazione invia un **messaggio \_ SETITEMDATA CB** per impostare il valore associato all'elemento specificato in una casella combinata.
+Un'applicazione invia un **messaggio \_ CB SETITEMDATA** per impostare il valore associato all'elemento specificato in una casella combinata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,11 +45,11 @@ Specifica il nuovo valore da associare all'elemento.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si verifica un errore, il valore restituito è CB \_ Err.
+Se si verifica un errore, il valore restituito è CB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento specificato si trova in una casella combinata creata dal proprietario creata senza lo stile [**\_ HASSTRINGS CBS**](combo-box-styles.md) , questo messaggio sostituisce il valore nel parametro *lParam* del messaggio [**CB \_ ADDSTRING**](cb-addstring.md) o [**CB \_ INSERTSTRING**](cb-insertstring.md) che ha aggiunto l'elemento alla casella combinata.
+Se l'elemento specificato si trova in una casella combinata creata dal proprietario senza lo stile [**\_ HASSTRINGS di CBS,**](combo-box-styles.md) questo messaggio sostituisce il valore nel *parametro lParam* del messaggio [**CB \_ ADDSTRING**](cb-addstring.md) o [**CB \_ INSERTSTRING**](cb-insertstring.md) che ha aggiunto l'elemento alla casella combinata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Se l'elemento specificato si trova in una casella combinata creata dal proprieta
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: Trovare informazioni sull'elemento PrintTicket. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Trovare informazioni sull'elemento PrintTicket. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: fe6bd921-cbf3-4cca-afae-82d3822206ba
 title: PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b279ff681704a63f6547738c73fb9192d6f8a65d
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 0a38638083f6a6aabd0290fa3466a30fd50f7375
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884892"
 ---
 # <a name="printticket"></a>PrintTicket
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento PrintTicket è l'elemento radice del documento PrintTicket. Un elemento PrintTicket contiene tutte le informazioni di formattazione del processo necessarie per l'output di un processo.
 
-## <a name="element-tag"></a>Element Tag
+## <a name="element-tag"></a>Tag di elemento
 
-<PrintTicket>
+&lt;PrintTicket&gt;
 
 ## <a name="xml-attributes"></a>Attributi XML
 
@@ -29,13 +29,13 @@ Nella tabella seguente sono elencati gli attributi XML che possono essere relati
 
 | Attributo XML      | Dettagli                                                                                                                                                                                   |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| version<br/> | Specifica la versione dello schema che definisce i tipi di elemento e la relativa struttura, un valore letterale di tipo integer. La versione corrente dello schema è "1". Questo attributo è obbligatorio. <br/> |
+| version<br/> | Specifica la versione dello schema che definisce i tipi di elemento e la relativa struttura, un valore letterale di tipo Integer. La versione corrente dello schema è "1". Questo attributo è obbligatorio. <br/> |
 
 
 
  
 
-Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
+Per altre informazioni, vedere la [sezione Attributi XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 
 
-| Categoria                   | Dettagli                                                                                                            |
+| Category                   | Dettagli                                                                                                            |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | Solo radice del documento.<br/>                                                                                     |
 | Elementi figlio<br/>  | *Funzionalità* (zero o più)<br/> *ParameterInit* (zero o più)<br/> *Proprietà* (zero o più)<br/> |
@@ -55,11 +55,11 @@ Nella tabella seguente sono elencati gli elementi che possono essere elementi pa
 
 ## <a name="configuration-dependencies"></a>Dipendenze di configurazione
 
-Le dipendenze di configurazione sono applicabili solo agli elementi in un documento PrintCapabilities.
+Le dipendenze di configurazione sono applicabili solo agli elementi di un documento PrintCapabilities.
 
 ## <a name="example"></a>Esempio
 
-Vedere [Esempio di PrintTicket.](printticket-example.md)
+Vedere [Esempio di PrintTicket](printticket-example.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento Event (DefinitionType)
-description: Definisce un evento che il provider è in grado di registrare.
+title: Elemento event (DefinitionType)
+description: Definisce un evento che il provider può registrare.
 ms.assetid: 61b49e91-afcf-4312-9511-97bf9ceb84df
 keywords:
-- EventLog elemento evento
+- EventLog dell'elemento event
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 395eca721239f1867a7b87999b5e6fefd8a510c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdc640db90200ebf19f80e04794683c90bd0ac596bebe7fe0a4e6e72acc448ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032141"
 ---
-# <a name="event-definitiontype-element"></a>Elemento Event (DefinitionType)
+# <a name="event-definitiontype-element"></a>Elemento event (DefinitionType)
 
-Definisce un evento che il provider è in grado di registrare.
+Definisce un evento che il provider può registrare.
 
 ``` syntax
 <xs:element name="event"
@@ -30,7 +30,7 @@ Definisce un evento che il provider è in grado di registrare.
  />
 ```
 
-L'elemento **Event** viene definito dal tipo complesso [**DefinitionType**](eventmanifestschema-definitiontype-complextype.md) .
+**L'elemento** event è definito dal [**tipo complesso DefinitionType.**](eventmanifestschema-definitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Event** viene definito dal tipo complesso [**DefinitionType**](even
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

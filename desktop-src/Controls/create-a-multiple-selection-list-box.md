@@ -1,19 +1,19 @@
 ---
-title: Come creare una casella di riepilogo Multiple-Selection
+title: Come creare una casella Multiple-Selection dati
 description: In questo argomento viene illustrato come visualizzare e accedere al contenuto di una directory in una casella di riepilogo a selezione multipla.
 ms.assetid: 5192E171-8CEF-4921-9378-A7C3A52A9024
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abd47b1d582d53a66bc77284927aef4230043e92
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 3f375ca2df82f851401baec79683a54ff28cf14e7a004d08cb0885e60fb036d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920861"
 ---
-# <a name="how-to-create-a-multiple-selection-list-box"></a>Come creare una casella di riepilogo Multiple-Selection
+# <a name="how-to-create-a-multiple-selection-list-box"></a>Come creare una casella Multiple-Selection dati
 
-In questo argomento viene illustrato come visualizzare e accedere al contenuto di una directory in una casella di riepilogo a selezione multipla. In una casella di riepilogo a selezione multipla, l'utente può selezionare più di un elemento alla volta.
+In questo argomento viene illustrato come visualizzare e accedere al contenuto di una directory in una casella di riepilogo a selezione multipla. In una casella di riepilogo a selezione multipla l'utente può selezionare più di un elemento alla volta.
 
 L'esempio di codice C++ in questo argomento consente a un utente di visualizzare un elenco di file nella directory corrente, selezionare un gruppo di file dall'elenco ed eliminarli.
 
@@ -21,25 +21,25 @@ L'esempio di codice C++ in questo argomento consente a un utente di visualizzare
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-L'applicazione elenco directory deve eseguire le seguenti attività correlate alla casella di riepilogo:
+L'applicazione elenco directory deve eseguire le attività correlate alla casella di riepilogo seguenti:
 
 -   Inizializzare la casella di riepilogo.
 -   Recuperare le selezioni dell'utente dalla casella di riepilogo.
--   Rimuovere i nomi file dalla casella di riepilogo dopo l'eliminazione dei file selezionati.
+-   Rimuovere i nomi dei file dalla casella di riepilogo dopo l'eliminazione dei file selezionati.
 
-Nell'esempio di codice C++ riportato di seguito, la routine della finestra di dialogo Inizializza la casella di riepilogo a selezione multipla ( \_ file IDC) utilizzando la funzione [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) per riempire la casella di riepilogo con i nomi di tutti i file nella directory corrente.
+Nell'esempio di codice C++ seguente la routine della finestra di dialogo inizializza la casella di riepilogo a selezione multipla (IDC FILELIST) usando la funzione \_ [**DlgDirList**](/windows/desktop/api/Winuser/nf-winuser-dlgdirlista) per compilare la casella di riepilogo con i nomi di tutti i file nella directory corrente.
 
-Quando l'utente seleziona un gruppo di file e sceglie il pulsante **Elimina** , la routine della finestra di dialogo Invia il messaggio [**\_ GETSELCOUNT lb**](lb-getselcount.md) per recuperare il numero di file selezionati e il messaggio [**lb \_ GETSELITEMS**](lb-getselitems.md) per recuperare una matrice di elementi selezionati della casella di riepilogo. Dopo l'eliminazione di un file, la routine della finestra di dialogo rimuove l'elemento corrispondente dalla casella di riepilogo inviando il messaggio [**\_ DELETESTRING lb**](lb-deletestring.md) .
+Quando l'utente seleziona un gruppo di  file e sceglie il pulsante Elimina, la procedura della finestra di dialogo invia il messaggio [**\_ LB GETSELCOUNT,**](lb-getselcount.md) per recuperare il numero di file selezionati e il messaggio [**LB \_ GETSELITEMS,**](lb-getselitems.md) per recuperare una matrice di elementi della casella di riepilogo selezionati. Dopo l'eliminazione di un file, la routine della finestra di dialogo rimuove l'elemento corrispondente dalla casella di riepilogo inviando il [**messaggio \_ LB DELETESTRING.**](lb-deletestring.md)
 
 
 
@@ -152,13 +152,13 @@ INT_PTR CALLBACK DlgDelFilesProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Riferimento al controllo casella di riepilogo](bumper-list-box-list-box-control-reference.md)
+[Informazioni di riferimento sul controllo Casella di riepilogo](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Informazioni sulle caselle di riepilogo](about-list-boxes.md)
 </dt> <dt>
 
-[Uso di caselle di riepilogo](using-list-boxes.md)
+[Uso delle caselle di riepilogo](using-list-boxes.md)
 </dt> </dl>
 
  

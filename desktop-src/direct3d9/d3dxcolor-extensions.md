@@ -1,7 +1,7 @@
 ---
-description: Fornisce i seguenti overload di operatore e cast di tipo per le strutture D3DXCOLOR.
+description: Fornisce gli overload dell'operatore e i cast di tipo seguenti per le strutture D3DXCOLOR.
 ms.assetid: 89780c6f-c78b-4ebe-876a-6dbc37b598ef
-title: Estensioni D3DXCOLOR (D3dx9math. h)
+title: Estensioni D3DXCOLOR (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 7f457332f371b2c452a465c5b831774488301c6f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7a07d697192d838298f76205aeb3010fda7bf6a08f58f39fe58893444f604231
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096291"
 ---
 # <a name="d3dxcolor-extensions"></a>Estensioni D3DXCOLOR
 
-Fornisce i seguenti overload di operatore e cast di tipo per le strutture [**D3DXCOLOR**](d3dxcolor.md) .
+Fornisce gli overload dell'operatore e i cast di tipo seguenti per [**le strutture D3DXCOLOR.**](d3dxcolor.md)
 
 ``` syntax
 typedef struct D3DXCOLOR
@@ -78,14 +78,14 @@ Tipi derivati: \* LPD3DXCOLOR
 
 ## <a name="members"></a>Membri
 
-Per ulteriori informazioni sui membri della struttura, fare riferimento a [**D3DXCOLOR**](d3dxcolor.md).
+Per altre informazioni sui membri della struttura, vedere [**D3DXCOLOR**](d3dxcolor.md).
 
 ## <a name="remarks"></a>Commenti
 
-Gli overload degli operatori e i cast di tipo per questa struttura sono implementati in d3dx9math. inl.
+Gli overload degli operatori e i cast di tipo per questa struttura vengono implementati in d3dx9math.inl.
 
 > [!Note]  
-> Il costruttore D3DXCOLOR () si arresta in modo anomalo in fase di esecuzione quando viene eseguito in modalità di debug in Microsoft Visual Studio 2010 con l'opzione del compilatore [/RTCc (run-time error Checks)](/previous-versions/visualstudio/visual-studio-2010/8wtf2dfz(v=vs.100)) .
+> Il costruttore D3DXCOLOR() si arresta in modo anomalo in fase di esecuzione quando viene eseguito in modalità di debug in Microsoft Visual Studio 2010 con l'opzione del compilatore [Run-Time Error Checks (/RTCc).](/previous-versions/visualstudio/visual-studio-2010/8wtf2dfz(v=vs.100))
 
  
 
@@ -95,7 +95,7 @@ Gli overload degli operatori e i cast di tipo per questa struttura sono implemen
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

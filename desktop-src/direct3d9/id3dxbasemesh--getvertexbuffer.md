@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9533188e3e2effe1759b58f70c9f033cc491844c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc0fc1f47ba3ed27af8f06d1a1f5ea83b884cdbe645d8597cd9513e7ad5c0387
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118851"
 ---
 # <a name="id3dxbasemeshgetvertexbuffer-method"></a>Metodo ID3DXBaseMesh::GetVertexBuffer
 
@@ -45,7 +45,7 @@ HRESULT GetVertexBuffer(
 
 Tipo: **[ **LPDIRECT3DVERTEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9)\***
 
-Indirizzo di un puntatore a [**un'interfaccia IDirect3DVertexBuffer9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) che rappresenta l'oggetto vertex buffer associato alla mesh.
+Indirizzo di un puntatore a [**un'interfaccia IDirect3DVertexBuffer9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) che rappresenta l'oggetto buffer dei vertici associato alla mesh.
 
 </dd> </dl>
 

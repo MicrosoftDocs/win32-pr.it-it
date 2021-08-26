@@ -3,28 +3,28 @@ title: Aggiunta di una playlist
 description: Aggiunta di una playlist
 ms.assetid: be0c2cac-245d-4435-87d9-4f17076e005a
 keywords:
-- creazione di interfacce, playlist
-- Interfacce di Media Player Windows, playlist
-- interfacce, playlist
-- playlist, interfacce
-- playlist di metafile, interfacce
-- Playlist Windows Media Metafile, interfacce
+- creazione di skin, playlist
+- Windows Media Player, playlist
+- skins, playlist
+- playlist, skin
+- playlist di metafile, skin
+- Windows playlist metafile multimediali, skin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c42a4bc253d4b1a3ba9b8fe0f31ca16b0d522956
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e23d9198f1f913b83cef40cea9f6ec47976f9f1e08a5e54257ab16df63e538b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031591"
 ---
 # <a name="adding-a-playlist"></a>Aggiunta di una playlist
 
 È possibile usare le playlist per scegliere tra raccolte di audio e video.
 
-Usando l'immagine dalla prima interfaccia, è possibile apportare alcune modifiche al file di definizione dell'interfaccia.
+Usando il disegno della prima interfaccia, è possibile apportare alcune modifiche al file di definizione dell'interfaccia.
 
-Il primo passaggio consiste nell'usare la shell che verrà usata per la maggior parte delle interfacce:
+Il primo passaggio consiste nell'usare la shell che verrà utilizzata per la maggior parte delle skin:
 
 
 ```C++
@@ -47,7 +47,7 @@ Il primo passaggio consiste nell'usare la shell che verrà usata per la maggior 
 
 
 
-Aggiungere ora una seconda **visualizzazione** che contiene una playlist. Inserire il codice seguente dopo il </VIEW> del codice della shell.
+Aggiungere ora una seconda **vista**, che contiene una playlist. Inserire il codice seguente dopo </VIEW> il del codice della shell.
 
 
 ```C++
@@ -60,7 +60,7 @@ Aggiungere ora una seconda **visualizzazione** che contiene una playlist. Inseri
 
 
 
-È necessario assegnare a questa seconda visualizzazione un ID per potervi fare riferimento in un secondo momento. Aggiungere un oggetto PLAYelement e un oggetto STOPelement. Questi pulsanti predefiniti semplificano la vita.
+È necessario assegnare a questa seconda visualizzazione un ID in modo che sia possibile fare riferimento ad essa in un secondo momento. Aggiungere un ELEMENTO PLAYELEMENT e un ELEMENTO STOPELEMENT. Questi pulsanti predefiniti semplificano la vita.
 
 
 ```C++
@@ -74,7 +74,7 @@ Aggiungere ora una seconda **visualizzazione** che contiene una playlist. Inseri
 
 
 
-Infine, aggiungere un evento OnClick all'oggetto PLAYelement per visualizzare una playlist nella seconda visualizzazione:
+Infine, aggiungere un evento onClick a PLAYELEMENT per visualizzare una playlist nella seconda visualizzazione:
 
 
 ```C++
@@ -84,7 +84,7 @@ Infine, aggiungere un evento OnClick all'oggetto PLAYelement per visualizzare un
 
 
 
-Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia della playlist di lavoro simile.
+È possibile visualizzare un'interfaccia di playlist funzionante simile nella sezione di esempio dell'SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -93,9 +93,9 @@ Nella sezione di esempio dell'SDK è possibile visualizzare un'interfaccia della
 [**Guida alla creazione dell'interfaccia**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

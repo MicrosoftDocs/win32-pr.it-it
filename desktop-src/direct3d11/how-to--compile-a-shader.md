@@ -1,23 +1,23 @@
 ---
 title: Come compilare uno shader
-description: In questo argomento viene illustrato come utilizzare la funzione D3DCompileFromFile in fase di esecuzione per compilare il codice dello shader.
+description: Questo argomento illustra come usare la funzione D3DCompileFromFile in fase di esecuzione per compilare il codice dello shader.
 ms.assetid: A2CE368F-E72A-453D-BA4D-3D1D53DDDEE0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb5eadb1d6627f553a9d769e6a0f43ab3ebe3a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0ccda5ee552ed1c7cb40802d92a4562b85c7f36
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728735"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880657"
 ---
-# <a name="how-to-compile-a-shader"></a>Procedura: compilare uno shader
+# <a name="how-to-compile-a-shader"></a>Procedura: Compilare uno shader
 
-In genere si usa il [fxc.exe](/windows/desktop/direct3dtools/fxc) compilatore di codice HLSL come parte del processo di compilazione per compilare il codice dello shader. Per altre informazioni, vedere compilazione di [shader](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-part1). In questo argomento viene illustrato come utilizzare la funzione [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) in fase di esecuzione per compilare il codice dello shader.
+In genere si usa il [fxc.exe](/windows/desktop/direct3dtools/fxc) di codice HLSL come parte del processo di compilazione per compilare il codice dello shader. Per altre informazioni, vedere [Compilazione di shader.](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-part1) Questo argomento illustra come usare la funzione [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) in fase di esecuzione per compilare il codice dello shader.
 
 **Per compilare uno shader:**
 
--   Compilare il codice dello shader HLSL chiamando [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile).
+-   Compilare il codice dello shader HLSL chiamando [**D3DCompileFromFile.**](/windows/desktop/direct3dhlsl/d3dcompilefromfile)
     ```C++
         UINT flags = D3DCOMPILE_ENABLE_STRICTNESS;
     #if defined( DEBUG ) || defined( _DEBUG )
@@ -39,12 +39,12 @@ In genere si usa il [fxc.exe](/windows/desktop/direct3dtools/fxc) compilatore di
 
     
 
-Nell'esempio di codice seguente viene illustrato come compilare diversi shader.
+L'esempio di codice seguente illustra come compilare vari shader.
 
 > [!Note]  
-> Per questo esempio di codice sono necessari il Windows SDK 8,0 e il \_ file di44.dll d3dcompiler dalla cartella% Program \_ file% \\ Windows Kit \\ 8,0 \\ Redist \\ D3D \\ <arch> nel percorso. Le app di Windows Store supportano la compilazione in fase di esecuzione per lo sviluppo ma non per la distribuzione.
+> Per questo codice di esempio, sono necessari gli strumenti Windows SDK 8.0 e d3dcompiler44.dll nella cartella \_ %PROGRAM \_ FILE% \\ Windows Kits \\ 8.0 \\ Redist \\ D3D nel \\ &lt; &gt; percorso. Windows Le app dello Store supportano la compilazione in fase di esecuzione per lo sviluppo, ma non per la distribuzione.
 
- 
+ 
 
 
 ```C++
@@ -131,7 +131,7 @@ int main()
 
 
 
-Nell'esempio di codice precedente vengono compilati i blocchi di codice pixel e vertex shader nei \_ file BasicHLSL11 PS. HLSL e BasicHLSL11 e \_ HLSL. Ecco il codice in BasicHLSL11 \_ PS. HLSL:
+L'esempio di codice precedente compila i blocchi di codice pixel e vertex shader nei file PS.hlsl BasicHLSL11 \_ PS.hlsl e BasicHLSL11 \_ VS.hlsl. Ecco il codice in BasicHLSL11 \_ PS.hlsl:
 
 
 ```hlsl
@@ -188,7 +188,7 @@ float4 PSMain( PS_INPUT Input ) : SV_TARGET
 
 
 
-Ecco il codice in BasicHLSL11 e \_ HLSL:
+Ecco il codice in BasicHLSL11 \_ VS.hlsl:
 
 
 ```hlsl
@@ -250,6 +250,6 @@ VS_OUTPUT VSMain( VS_INPUT Input )
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

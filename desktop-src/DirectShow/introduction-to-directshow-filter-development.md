@@ -1,25 +1,25 @@
 ---
-description: Introduzione allo sviluppo di filtri DirectShow
+description: Introduzione allo sviluppo DirectShow filtro
 ms.assetid: d5162ea4-ef37-4993-a82c-782f03b08c64
-title: Introduzione allo sviluppo di filtri DirectShow
+title: Introduzione allo sviluppo DirectShow filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a42c5d2437b32f521b0efc39775f186267d3c99
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f2769cfe3bd4f046c117c0567104094bcad0eed730c388b551593dde6b41df25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083691"
 ---
-# <a name="introduction-to-directshow-filter-development"></a>Introduzione allo sviluppo di filtri DirectShow
+# <a name="introduction-to-directshow-filter-development"></a>Introduzione allo sviluppo DirectShow filtro
 
-Questa sezione fornisce una breve descrizione delle attività necessarie per lo sviluppo di un filtro DirectShow personalizzato. Vengono inoltre forniti collegamenti ad argomenti che illustrano queste attività in modo più dettagliato. Prima di leggere questa sezione, leggere gli argomenti [relativi a DirectShow](about-directshow.md), che descrivono l'architettura complessiva di DirectShow.
+In questa sezione viene fornita una breve descrizione delle attività necessarie per lo sviluppo di un filtro DirectShow personalizzato. Vengono inoltre forniti collegamenti ad argomenti che illustrano queste attività in modo più dettagliato. Prima di leggere questa sezione, leggere gli argomenti in [Informazioni](about-directshow.md)DirectShow , che descrivono l'architettura DirectShow generale.
 
-**Libreria di classi base DirectShow**
+**DirectShow Libreria di classi di base**
 
-DirectShow SDK include un set di classi C++ per la scrittura dei filtri. Sebbene non siano necessari, queste classi rappresentano la modalità consigliata per scrivere un nuovo filtro. Per usare le classi base, compilarle in una libreria statica e collegare il file con estensione LIB al progetto, come descritto in [creazione di filtri DirectShow](building-directshow-filters.md).
+L DirectShow SDK include un set di classi C++ per la scrittura di filtri. Anche se non sono obbligatorie, queste classi sono il modo consigliato per scrivere un nuovo filtro. Per usare le classi di base, compilarle in una libreria statica e collegare il file lib al progetto, come descritto in Compilazione di DirectShow [filtri](building-directshow-filters.md).
 
-La libreria di classi di base definisce una classe radice per i filtri, la classe [**CBaseFilter**](cbasefilter.md) . Diverse altre classi derivano da **CBaseFilter** e sono specializzate per determinati tipi di filtri. Ad esempio, la classe [**CTransformFilter**](ctransformfilter.md) è progettata per i filtri di trasformazione. Per creare un nuovo filtro, implementare una classe che eredita da una delle classi di filtro. Ad esempio, la dichiarazione di classe potrebbe essere la seguente:
+La libreria di classi di base definisce una classe radice per i filtri, la [**classe CBaseFilter.**](cbasefilter.md) Diverse altre classi derivano **da CBaseFilter** e sono specializzate per particolari tipi di filtri. Ad esempio, la [**classe CTransformFilter**](ctransformfilter.md) è progettata per i filtri di trasformazione. Per creare un nuovo filtro, implementare una classe che eredita da una delle classi di filtro. Ad esempio, la dichiarazione di classe potrebbe essere la seguente:
 
 
 ```C++
@@ -34,49 +34,49 @@ public:
 
 
 
-Per ulteriori informazioni sulle classi base di DirectShow, vedere gli argomenti seguenti:
+Per altre informazioni sulle classi DirectShow di base, vedere gli argomenti seguenti:
 
--   [Classi base di DirectShow](directshow-base-classes.md)
--   [Creazione di filtri DirectShow](building-directshow-filters.md)
+-   [DirectShow Classi di base](directshow-base-classes.md)
+-   [Creazione DirectShow filtri](building-directshow-filters.md)
 
 **Creazione di pin**
 
-Un filtro deve creare uno o più pin. Il numero di pin può essere corretto in fase di progettazione oppure il filtro può creare nuovi PIN in base alle esigenze. I pin derivano in genere dalla classe [**CBasePin**](cbasepin.md) o da una classe che eredita **CBasePin**, ad esempio [**CBaseInputPin**](cbaseinputpin.md). I pin del filtro devono essere dichiarati come variabili membro nella classe filter. Alcune classi di filtro definiscono già i pin, ma se il filtro eredita direttamente da **CBaseFilter**, è necessario dichiarare i pin nella classe derivata.
+Un filtro deve creare uno o più pin. Il numero di pin può essere corretto in fase di progettazione oppure il filtro può creare nuovi pin in base alle esigenze. I pin in genere derivano dalla [**classe CBasePin**](cbasepin.md) o da una classe che eredita **CBasePin**, ad esempio [**CBaseInputPin**](cbaseinputpin.md). I pin del filtro devono essere dichiarati come variabili membro nella classe di filtro. Alcune classi di filtro definiscono già i pin, ma se il filtro eredita direttamente da **CBaseFilter**, è necessario dichiarare i pin nella classe derivata.
 
-**Negoziazione di connessioni pin**
+**Negoziazione delle connessioni pin**
 
-Quando il gestore del grafico dei filtri tenta di connettere due filtri, i pin devono concordare su vari aspetti. In caso affermativo, il tentativo di connessione ha esito negativo. In genere, i pin negoziano quanto segue:
+Quando Gestione filtri Graph tenta di connettere due filtri, i pin devono essere d'accordo su vari aspetti. In caso contrario, il tentativo di connessione ha esito negativo. In genere, i pin negoziano quanto segue:
 
--   Transport. Il trasporto è il meccanismo che i filtri utilizzeranno per spostare gli esempi di supporti dal pin di output al pin di input. Ad esempio, è possibile usare l'interfaccia [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) ("modello push") o l'interfaccia [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) ("modello pull").
--   Tipo di supporto. Quasi tutti i pin utilizzano i tipi di supporto per descrivere il formato dei dati che verranno recapitati.
--   Allocatore. L'allocatore è l'oggetto che crea i buffer che contengono i dati. I pin devono accettare quale pin fornirà l'allocatore. Devono inoltre accettare le dimensioni dei buffer, il numero di buffer da creare e altre proprietà del buffer.
+-   Transport. Il trasporto è il meccanismo che i filtri useranno per spostare campioni multimediali dal pin di output al pin di input. Ad esempio, possono usare [**l'interfaccia IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) ("modello push") o l'interfaccia [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) ("modello pull").
+-   Tipo di supporto. Quasi tutti i pin usano tipi di supporti per descrivere il formato dei dati che verranno recapitati.
+-   Allocatore. L'allocatore è l'oggetto che crea i buffer che contengono i dati. I pin devono accettare quale pin fornirà l'allocatore. Devono anche concordare le dimensioni dei buffer, il numero di buffer da creare e altre proprietà del buffer.
 
-Le classi base implementano un Framework per queste negoziazioni. Per completare i dettagli, è necessario eseguire l'override di diversi metodi della classe di base. Il set di metodi di cui è necessario eseguire l'override dipende dalla classe e dalla funzionalità del filtro. Per ulteriori informazioni, vedere [la](how-filters-connect.md)pagina relativa alla modalità di connessione dei filtri.
+Le classi di base implementano un framework per queste negoziazioni. È necessario completare i dettagli eseguendo l'override di vari metodi nella classe di base. Il set di metodi di cui è necessario eseguire l'override dipende dalla classe e dalla funzionalità del filtro. Per altre informazioni, vedere [How Filters Connessione](how-filters-connect.md).
 
 **Elaborazione e distribuzione di dati**
 
-La funzione principale della maggior parte dei filtri consiste nell'elaborare e distribuire i dati multimediali. Il modo in cui si verifica dipende dal tipo di filtro:
+La funzione principale della maggior parte dei filtri è elaborare e distribuire i dati multimediali. Il modo in cui si verifica dipende dal tipo di filtro:
 
--   Un'origine push dispone di un thread di lavoro che compila continuamente campioni con dati e li recapita a valle.
--   Un'origine pull Attende che l'elemento adiacente downstream richieda un campione. Risponde scrivendo i dati in un esempio e recapitando l'esempio al filtro downstream. Il filtro downstream crea il thread che guida il flusso di dati.
--   A un filtro di trasformazione sono stati recapitati esempi dal rispettivo Neighbor upstream. Quando riceve un esempio, elabora i dati e li recapita a valle.
--   Un filtro renderer riceve esempi da upstream e li pianifica per il rendering in base agli indicatori temporali.
+-   Un'origine push ha un thread di lavoro che riempie continuamente gli esempi di dati e li recapita a valle.
+-   Un'origine pull attende che il vicino downstream richiedi un esempio. Risponde scrivendo dati in un esempio e fornendo l'esempio al filtro downstream. Il filtro downstream crea il thread che guida il flusso di dati.
+-   Un filtro di trasformazione contiene campioni recapitati dal relativo vicino a monte. Quando riceve un esempio, elabora i dati e lo recapita a valle.
+-   Un filtro renderer riceve campioni da upstream e li pianifica per il rendering in base ai timestamp.
 
-Altre attività correlate al flusso includono lo scaricamento dei dati dal grafico, la gestione della fine del flusso e la risposta alle richieste di ricerca. Per ulteriori informazioni su questi problemi, vedere gli argomenti seguenti:
+Altre attività correlate allo streaming includono lo scaricamento dei dati dal grafo, la gestione della fine del flusso e la risposta alle richieste di ricerca. Per altre informazioni su questi problemi, vedere gli argomenti seguenti:
 
--   [Flusso di dati per sviluppatori di filtri](data-flow-for-filter-developers.md)
--   [Gestione controllo qualità](quality-control-management.md)
+-   [Dati Flow per sviluppatori di filtri](data-flow-for-filter-developers.md)
+-   [Gestione del controllo di qualità](quality-control-management.md)
 -   [Thread e sezioni critiche](threads-and-critical-sections.md)
 
 **Supporto di COM**
 
-I filtri DirectShow sono oggetti COM, in genere inclusi in una dll. La libreria di classi di base implementa un Framework per supportare COM. Viene descritta nella sezione [DirectShow e com](directshow-and-com.md).
+DirectShow filtri sono oggetti COM, in genere in pacchetto nelle DLL. La libreria di classi di base implementa un framework per il supporto di COM. È descritto nella sezione DirectShow [e COM](directshow-and-com.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Scrittura di filtri DirectShow](writing-directshow-filters.md)
+[Scrittura DirectShow filtri](writing-directshow-filters.md)
 </dt> </dl>
 
  

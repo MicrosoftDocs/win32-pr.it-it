@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni su un esperimento (acquisizione).
+description: Rappresenta informazioni su un esperimento (acquisizione).
 MS-HAID: vspixengine.Experiment
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e932d2f2b60a72ca167f3f6edd7f4ddae9b68710
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1ebe9ab0232104886078256effdfaf5534144dc30421dab2ac2359ef390c0a69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118151"
 ---
 # <a name="span-idvspixengineexperimentspanexperiment-structure"></a><span id="vspixengine.experiment"></span>Struttura dell'esperimento
 
-Rappresenta le informazioni su un esperimento (acquisizione).
+Rappresenta informazioni su un esperimento (acquisizione).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,7 +37,7 @@ Rappresenta le informazioni su un esperimento (acquisizione).
 
 ## <a name="members"></a>Members
 
-**processId**  
+**Processid**  
 ID del processo associato.
 
 **applicationName**  
@@ -46,11 +46,11 @@ Stringa COM contenente il nome dell'applicazione in cui eseguire l'esperimento.
 **commandLineArguments**  
 Stringa COM contenente gli argomenti della riga di comando.
 
-**workingDirectory**  
+**Workingdirectory**  
 Stringa COM contenente il percorso della directory di lavoro.
 
 **tempPixRunFile**  
-Stringa COM contenente il FilePath del file temporaneo usato per eseguire l'esperimento.
+Stringa COM contenente il percorso del file temporaneo usato per eseguire l'esperimento.
 
 **startOption**  
 Opzione di avvio associata all'esperimento.
@@ -59,14 +59,14 @@ Opzione di avvio associata all'esperimento.
 Tipo di esperimento (acquisizione).
 
 **uiLocale**  
-ID delle impostazioni locali utilizzate per gli elementi di sovrapposizione dell'interfaccia utente durante il experiement (acquisizione). Viene passato dall'host (ad esempio Visual Studio Diagnostica della grafica) al motore di acquisizione.
+ID delle impostazioni locali usate per gli elementi di sovrimpressione dell'interfaccia utente durante l'esposizione (acquisizione). Viene passato dall'host (ad esempio, Visual Studio Diagnostica della grafica) al motore di acquisizione.
 
 **registryRoot**  
-Stringa COM contenente la radice del registro di sistema. Viene passato dall'host (ad esempio Visual Studio Diagnostica della grafica) al motore di acquisizione.
+Stringa COM contenente la radice del Registro di sistema. Viene passato dall'host (ad esempio, Visual Studio Diagnostica della grafica) al motore di acquisizione.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura delle \_ informazioni di notifica della stampante contiene informazioni sulle stampanti restituite dalla funzione FindNextPrinterChangeNotification. La funzione restituisce queste informazioni dopo che è stata soddisfatta un'operazione di attesa su un oggetto notifica di modifica della stampante.
+description: La struttura PRINTER \_ NOTIFY INFO contiene le informazioni sulla stampante \_ restituite dalla funzione FindNextPrinterChangeNotification. La funzione restituisce queste informazioni dopo che è stata soddisfatta un'operazione di attesa su un oggetto notifica di modifica della stampante.
 ms.assetid: c104fabe-edf5-426e-859b-694811975623
-title: Struttura PRINTER_NOTIFY_INFO (winspool. h)
+title: PRINTER_NOTIFY_INFO (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 631169cfcdabd6a87459ebb777adb6842d09089b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26c7fca07eda8638bf657055691d72c78bccdbec6ef2b9a8c76ee7cf830bc767
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091851"
 ---
-# <a name="printer_notify_info-structure"></a>\_ \_ Struttura info notifica stampanti
+# <a name="printer_notify_info-structure"></a>Struttura PRINTER \_ NOTIFY \_ INFO
 
-La struttura delle **\_ \_ informazioni di notifica della stampante** contiene informazioni sulle stampanti restituite dalla funzione [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) . La funzione restituisce queste informazioni dopo che è stata soddisfatta un'operazione di attesa su un oggetto notifica di modifica della stampante.
+La **struttura PRINTER NOTIFY \_ \_ INFO** contiene le informazioni sulla stampante restituite [**dalla funzione FindNextPrinterChangeNotification.**](findnextprinterchangenotification.md) La funzione restituisce queste informazioni dopo che è stata soddisfatta un'operazione di attesa su un oggetto notifica di modifica della stampante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ typedef struct _PRINTER_NOTIFY_INFO {
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
-Versione della struttura. Impostare questo membro su 2.
+Versione di questa struttura . Impostare questo membro su 2.
 
 </dd> <dt>
 
 **Flag**
 </dt> <dd>
 
-Flag di bit che indica lo stato della struttura di notifica. Se il bit delle informazioni di notifica della stampante \_ \_ \_ non è impostato, viene indicato che alcune notifiche devono essere eliminate.
+Flag di bit che indica lo stato della struttura di notifica. Se il bit PRINTER NOTIFY INFO DISCARDED è impostato, significa che alcune notifiche \_ \_ devono essere \_ rimosse.
 
 </dd> <dt>
 
 **Count**
 </dt> <dd>
 
-Il numero di [**elementi \_ \_ \_ dati relativi alle informazioni di notifica della stampante**](printer-notify-info-data.md) nella matrice **ADATA** .
+Numero di [**elementi PRINTER NOTIFY INFO \_ \_ \_ DATA**](printer-notify-info-data.md) nella **matrice aData.**
 
 </dd> <dt>
 
-**aData**
+**Adata**
 </dt> <dd>
 
-Matrice di strutture [**di \_ \_ \_ dati**](printer-notify-info-data.md) per le informazioni di notifica delle stampanti. Ogni elemento della matrice identifica un singolo campo di informazioni relative a processi o stampanti e fornisce i dati correnti per quel campo.
+Matrice di strutture [**PRINTER \_ NOTIFY INFO \_ \_ DATA.**](printer-notify-info-data.md) Ogni elemento della matrice identifica un singolo campo di informazioni su processo o stampante e fornisce i dati correnti per tale campo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se il membro **Flags** dispone del \_ set di bit della stampante Notify \_ info \_ scartato, indica che si è verificato un overflow o un errore e le notifiche potrebbero essere andate perse. In questo caso, è necessario chiamare [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) e specificare il \_ \_ flag di aggiornamento delle opzioni di notifica della stampante \_ per recuperare tutte le informazioni correnti. Fino a quando non verrà richiesta questa operazione di aggiornamento, il sistema non invierà altre notifiche per questo oggetto notifica di modifica.
+Se per **il membro Flags** è impostato il bit PRINTER NOTIFY INFO \_ \_ DISCARDED, significa che si è verificato un overflow o un errore e che le notifiche \_ potrebbero essere state perse. In questo caso, è necessario chiamare [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) e specificare il flag PRINTER \_ NOTIFY OPTIONS REFRESH per recuperare tutte le informazioni \_ \_ correnti. Fino a quando non si richiede questa operazione di aggiornamento, il sistema non invierà notifiche aggiuntive per questo oggetto notifica di modifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Se il membro **Flags** dispone del \_ set di bit della stampante Notify \_ info 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -93,13 +93,13 @@ Se il membro **Flags** dispone del \_ set di bit della stampante Notify \_ info 
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md)
 </dt> <dt>
 
-[**\_dati delle \_ informazioni di notifica della stampante \_**](printer-notify-info-data.md)
+[**DATI \_ INFORMARE \_ LA \_ STAMPANTE**](printer-notify-info-data.md)
 </dt> </dl>
 
  

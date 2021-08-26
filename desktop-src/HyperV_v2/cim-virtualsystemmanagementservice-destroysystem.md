@@ -20,11 +20,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119980551"
 ---
-# <a name="destroysystem-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo DestroySystem della classe \_ CIM VirtualSystemManagementService
+# <a name="destroysystem-method-of-the-cim_virtualsystemmanagementservice-class"></a>Metodo DestroySystem della classe CIM \_ VirtualSystemManagementService
 
 Elimina un sistema virtuale.
 
-Il sistema virtuale a cui si fa riferimento viene eliminato, inclusi gli eventuali elementi con ambito. Le risorse virtuali vengono restituite ai pool di risorse, il che può implicare la distruzione di tali risorse (dipendente dall'implementazione). Se il sistema virtuale è attivo quando l'operazione viene richiamata, viene prima disattivata e quindi distrutta. Se sono stati creati snapshot dal sistema virtuale, anche questi vengono distrutti.
+Il sistema virtuale a cui si fa riferimento viene eliminato, inclusi gli eventuali elementi con ambito. Le risorse virtuali vengono restituite ai pool di risorse, il che può implicare la distruzione di tali risorse (dipendente dall'implementazione). Se il sistema virtuale è attivo quando viene richiamata l'operazione, viene prima disattivato e poi eliminato. Se sono stati creati snapshot dal sistema virtuale, anche questi vengono distrutti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,24 +45,24 @@ uint32 DestroySystem(
 *AffectedSystem* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza della [**classe CIM \_ ComputerSystem**](cim-computersystem.md) che rappresenta il sistema di computer virtuali da eliminare.
+Riferimento a un'istanza della [**classe CIM \_ ComputerSystem**](cim-computersystem.md) che rappresenta il sistema di computer virtuale da eliminare.
 
 </dd> <dt>
 
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito [**un processo CIM \_ ConcreteJob**](cim-concretejob.md) che rappresenta il processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un [**processo \_ ConcreteJob CIM**](cim-concretejob.md) che rappresenta il processo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -74,16 +74,16 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non** valido (4)
+**Parametro non valido** (4)
 </dt> <dt>
 
 **Stato non valido** (5)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati - Processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
 **Metodo riservato** (4097..32767)

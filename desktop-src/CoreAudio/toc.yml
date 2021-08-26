@@ -1,14 +1,14 @@
-- name: API audio Core
+- name: API audio di base
   href: core-audio-apis-in-windows-vista.md
   items:
-    - name: Informazioni sulle API audio di Windows Core
+    - name: Informazioni sulle WINDOWS Core Audio
       href: about-the-windows-core-audio-apis.md
       items:
-        - name: Novità relative alle API audio di base in Windows 7
+        - name: Novità delle API Core Audio in Windows 7
           href: what-s-new-for-core-audio-apis-in-windows-7.md
         - name: File di intestazione e componenti di sistema
           href: header-files-and-system-components.md
-        - name: Esempi di SDK che usano le API audio principali
+        - name: Esempi di SDK che usano le API audio di base
           href: sdk-samples-that-use-the-core-audio-apis.md
           items:
             - name: AECMicArray
@@ -23,7 +23,7 @@
               href: duckingmediaplayer.md
             - name: EndpointVolume
               href: endpointvolume.md
-            - name: OSD
+            - name: Osd
               href: osd.md
             - name: RenderExclusiveEventDriven
               href: renderexclusiveeventdriven.md
@@ -36,67 +36,67 @@
     - name: Guida per programmatori
       href: programming-guide.md
       items:
-        - name: Componenti audio User-Mode
+        - name: User-Mode componenti audio
           href: user-mode-audio-components.md
-        - name: Audio modalità utente protetto (PUMA)
+        - name: PuMA (Protected User Mode Audio)
           href: protected-user-mode-audio--puma-.md
         - name: Dispositivi endpoint audio
           href: audio-endpoint-devices.md
           items:
             - name: Informazioni sull'API MMDevice
               href: mmdevice-api.md
-            - name: Enumerazione dei dispositivi audio
+            - name: Enumerazione di dispositivi audio
               href: enumerating-audio-devices.md
-            - name: Stringhe ID endpoint
+            - name: Stringhe di ID endpoint
               href: endpoint-id-strings.md
-            - name: Proprietà endpoint audio
+            - name: Proprietà dell'endpoint audio
               href: audio-endpoint-properties.md
             - name: Proprietà dispositivo
               href: device-properties.md
-            - name: Eventi dispositivo
+            - name: Eventi del dispositivo
               href: device-events.md
             - name: Ruoli del dispositivo
               href: device-roles.md
               items:
-                - name: Utilizzo dei ruoli del dispositivo
+                - name: Uso dei ruoli del dispositivo
                   href: device-roles-in-windows-vista.md
-                - name: Interoperabilità con le API audio legacy
+                - name: Interoperabilità con LE API audio legacy
                   href: interoperability-with-legacy-audio-apis.md
                   items:
-                    - name: Ruoli del dispositivo per le applicazioni DirectSound
+                    - name: Ruoli del dispositivo per applicazioni DirectSound
                       href: device-roles-for-directsound-applications.md
-                    - name: Ruoli del dispositivo per le applicazioni DirectShow
+                    - name: Ruoli del dispositivo per DirectShow applicazioni
                       href: device-roles-for-directshow-applications.md
                     - name: Ruoli del dispositivo per applicazioni multimediali Windows legacy
                       href: device-roles-for-legacy-windows-multimedia-applications.md
                     - name: Eventi audio per applicazioni audio legacy
                       href: audio-events-for-legacy-audio-applications.md
-                    - name: Suoni di notifica per le applicazioni audio legacy
+                    - name: Suoni di notifica per applicazioni audio legacy
                       href: notification-sounds-for-legacy-audio-applications.md
-            - name: Formati di dispositivo
+            - name: Formati dei dispositivi
               href: device-formats.md
               items:
-                - name: Rappresentazione di formati per trasmissioni IEC 61937
+                - name: Rappresentazione dei formati per le trasmissioni IEC 61937
                   href: representing-formats-for-iec-61937-transmissions.md
         - name: Sessioni audio
           href: audio-sessions.md
           items:
-            - name: Eventi della sessione audio
+            - name: Eventi sessione audio
               href: audio-session-events.md
-            - name: Raggruppamento di parametri
+            - name: Parametri di raggruppamento
               href: grouping-parameters.md
         - name: Controlli del volume
           href: volume-controls.md
           items:
-            - name: Controlli volume sessione
+            - name: Controlli del volume di sessione
               href: session-volume-controls.md
-            - name: Controlli volume endpoint
+            - name: Controlli del volume dell'endpoint
               href: endpoint-volume-controls.md
-            - name: API EndpointVolume
+            - name: EndpointVolume API
               href: endpointvolume-api.md
-            - name: Controlli del volume Audio-Tapered
+            - name: Audio-Tapered di volume
               href: audio-tapered-volume-controls.md
-            - name: Contatori di picco
+            - name: Metri di picco
               href: peak-meters.md
         - name: Gestione dei flussi
           href: stream-management.md
@@ -109,38 +109,38 @@
               href: capturing-a-stream.md
             - name: Registrazione loopback
               href: loopback-recording.md
-            - name: Flussi di Exclusive-Mode
+            - name: Exclusive-Mode Flussi
               href: exclusive-mode-streams.md
-            - name: Ripristino da un errore di Invalid-Device
+            - name: Ripristino da un errore Invalid-Device errore
               href: recovering-from-an-invalid-device-error.md
             - name: Uso di un dispositivo di comunicazione
               href: using-the-communication-device.md
               items:
-                - name: Esperienza di ducking predefinita
+                - name: Esperienza di paperino predefinita
                   href: stream-attenuation.md
                 - name: Disabilitazione dell'esperienza di ducking predefinita
                   href: disabling-the-ducking-experience.md
-                - name: Fornire un comportamento di ducking personalizzato
+                - name: Fornire un comportamento di papera personalizzato
                   href: providing-a-custom-ducking-experience.md
-                - name: Considerazioni sull'implementazione per le notifiche di ducking
+                - name: Considerazioni sull'implementazione per l'abbassamento delle notifiche
                   href: handling-audio-ducking-events-from-communication-devices.md
-                - name: Recupero di eventi ducking
+                - name: Recupero di eventi di ducking
                   href: getting-ducking-events-from-a-communication-device.md
-            - name: Routing del flusso
+            - name: Routing di flusso
               href: stream-routing.md
               items:
-                - name: Recupero dell'endpoint del dispositivo per il routing del flusso
+                - name: Recupero dell'endpoint del dispositivo per il routing di flusso
                   href: getting-the-default-device-endpoint-for-stream-routing.md
-                - name: Notifiche rilevanti per il routing dei flussi
+                - name: Notifiche pertinenti per il routing di flusso
                   href: relevant-device-notifications-for-stream-routing.md
-                - name: Considerazioni sull'implementazione del routing del flusso
+                - name: Considerazioni sull'implementazione del routing di flusso
                   href: stream-routing-implementation-considerations.md
-                - name: Routing automatico del flusso
+                - name: Routing automatico dei flussi
                   href: automatic-stream-routing.md
-        - name: Topologie del dispositivo
+        - name: Topologie dei dispositivi
           href: device-topologies.md
           items:
-            - name: API DeviceTopology
+            - name: DeviceTopology API
               href: devicetopology-api.md
         - name: Uso dell'interfaccia IKsControl per accedere alle proprietà audio
           href: using-the-ikscontrol-interface-to-access-audio-properties.md
@@ -149,17 +149,17 @@
           items:
             - name: Eseguire il rendering del suono spaziale usando oggetti audio spaziali
               href: render-spatial-sound-using-spatial-audio-objects.md
-            - name: Ripristino da un errore di Invalid-Device (audio spaziale)
+            - name: Ripristino da un errore Invalid-Device (suono spaziale)
               href: recovering-from-an-invalid-device-error-spatial-sound.md
     - name: Guida di riferimento alla programmazione
       href: programming-reference.md
       items:
-        - name: Tipi di database audio Core
+        - name: Tipi di dati audio di base
           href: core-audio-datatypes.md
           items:
             - name: SpatialAudioHrtfOrientation
               href: spatialaudiohrtforientation.md
-        - name: Interfacce audio principali
+        - name: Interfacce audio di base
           href: core-audio-interfaces.md
           items:
             - name: IAudioEndpointFormatControl
@@ -184,7 +184,7 @@
             - name: IAudioSystemEffects2
               href: /windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects2
               items:
-                - name: Geteffects (metodo)
+                - name: Metodo GetEffectsList
                   href: /windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudiosystemeffects2-geteffectslist
             - name: IActivateAudioInterfaceAsyncOperation
               href: /windows/desktop/api/mmdeviceapi/nn-mmdeviceapi-iactivateaudiointerfaceasyncoperation
@@ -199,7 +199,7 @@
             - name: IAudioAutoGainControl
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudioautogaincontrol
               items:
-                - name: GetEnabled
+                - name: Getenabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioautogaincontrol-getenabled
                 - name: SetEnabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioautogaincontrol-setenabled
@@ -212,7 +212,7 @@
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer
                 - name: GetNextPacketSize
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getnextpacketsize
-                - name: ReleaseBuffer
+                - name: Releasebuffer
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer
             - name: IAudioChannelConfig
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiochannelconfig
@@ -269,16 +269,16 @@
             - name: IAudioClock
               href: /windows/desktop/api/Audioclient/nn-audioclient-iaudioclock
               items:
-                - name: Getcaratteristiche
+                - name: GetCharacteristics
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getcharacteristics
-                - name: Getfrequency
+                - name: GetFrequency
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getfrequency
-                - name: GetPosition
+                - name: Getposition
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudioclock-getposition
             - name: IAudioClockAdjustment
               href: /windows/desktop/api/audioclient/nn-audioclient-iaudioclockadjustment
               items:
-                - name: Sesamplerate
+                - name: SetSampleRate
                   href: /windows/desktop/api/audioclient/nf-audioclient-iaudioclockadjustment-setsamplerate
             - name: IAudioClock2
               href: /windows/desktop/api/audioclient/nn-audioclient-iaudioclock2
@@ -295,9 +295,9 @@
             - name: IAudioEndpointOffloadStreamMute
               href: /windows/desktop/api/audioengineendpoint/nn-audioengineendpoint-iaudioendpointoffloadstreammute
               items:
-                - name: Getmute
+                - name: GetMute
                   href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointoffloadstreammute-getmute
-                - name: Silenziamento
+                - name: SetMute
                   href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpointoffloadstreammute-setmute
             - name: IAudioEndpointOffloadStreamVolume
               href: /windows/desktop/api/audioengineendpoint/nn-audioengineendpoint-iaudioendpointoffloadstreamvolume
@@ -321,7 +321,7 @@
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmastervolumelevel
                 - name: GetMasterVolumeLevelScalar
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmastervolumelevelscalar
-                - name: Getmute
+                - name: GetMute
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getmute
                 - name: GetVolumeRange
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-getvolumerange
@@ -339,7 +339,7 @@
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmastervolumelevel
                 - name: SetMasterVolumeLevelScalar
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmastervolumelevelscalar
-                - name: Silenziamento
+                - name: SetMute
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-setmute
                 - name: UnregisterControlChangeNotify
                   href: /windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudioendpointvolume-unregistercontrolchangenotify
@@ -374,7 +374,7 @@
             - name: IAudioLoudness
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudioloudness
               items:
-                - name: GetEnabled
+                - name: Getenabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioloudness-getenabled
                 - name: SetEnabled
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudioloudness-setenabled
@@ -394,9 +394,9 @@
             - name: IAudioMute
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiomute
               items:
-                - name: Getmute
+                - name: GetMute
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiomute-getmute
-                - name: Silenziamento
+                - name: SetMute
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iaudiomute-setmute
             - name: IAudioOutputSelector
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-iaudiooutputselector
@@ -417,7 +417,7 @@
               items:
                 - name: GetBuffer
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-getbuffer
-                - name: ReleaseBuffer
+                - name: Releasebuffer
                   href: /windows/desktop/api/Audioclient/nf-audioclient-iaudiorenderclient-releasebuffer
             - name: IAudioSessionControl
               href: /windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol
@@ -563,7 +563,7 @@
               items:
                 - name: OnNotify
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-icontrolchangenotify-onnotify
-            - name: IControlInterface
+            - name: Interfaccia IControlInterface
               href: /windows/desktop/api/Devicetopology/nn-devicetopology-icontrolinterface
               items:
                 - name: GetIID
@@ -678,7 +678,7 @@
               items:
                 - name: OnDefaultDeviceChanged
                   href: /windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immnotificationclient-ondefaultdevicechanged
-                - name: Gli
+                - name: OnDeviceAdded
                   href: /windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immnotificationclient-ondeviceadded
                 - name: OnDeviceRemoved
                   href: /windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immnotificationclient-ondeviceremoved
@@ -691,11 +691,11 @@
               items:
                 - name: GetMasterVolume
                   href: /windows/desktop/api/Audioclient/nf-audioclient-isimpleaudiovolume-getmastervolume
-                - name: Getmute
+                - name: GetMute
                   href: /windows/desktop/api/Audioclient/nf-audioclient-isimpleaudiovolume-getmute
                 - name: SetMasterVolume
                   href: /windows/desktop/api/Audioclient/nf-audioclient-isimpleaudiovolume-setmastervolume
-                - name: Silenziamento
+                - name: SetMute
                   href: /windows/desktop/api/Audioclient/nf-audioclient-isimpleaudiovolume-setmute
             - name: ISpatialAudioClient
               href: /windows/desktop/api/spatialaudioclient/nn-spatialaudioclient-ispatialaudioclient
@@ -795,9 +795,9 @@
                   href: /windows/desktop/api/spatialaudioclient/nf-spatialaudioclient-ispatialaudioobjectbase-isactive
                 - name: Metodo SetEndOfStream
                   href: /windows/desktop/api/spatialaudioclient/nf-spatialaudioclient-ispatialaudioobjectbase-setendofstream
-                - name: Metodo seposition
+                - name: Metodo SetPosition
                   href: /windows/desktop/api/spatialaudioclient/nf-spatialaudioclient-ispatialaudioobject-setposition
-                - name: Metodo sevolume
+                - name: Metodo SetVolume
                   href: /windows/desktop/api/spatialaudioclient/nf-spatialaudioclient-ispatialaudioobject-setvolume
             - name: ISpatialAudioObjectForHrtf
               href: /windows/desktop/api/spatialaudiohrtf/nn-spatialaudiohrtf-ispatialaudioobjectforhrtf
@@ -814,13 +814,13 @@
                   href: /windows/desktop/api/spatialaudiohrtf/nf-spatialaudiohrtf-ispatialaudioobjectforhrtf-setdistancedecay
                 - name: Metodo SetEndOfStream
                   href: /previous-versions/windows/desktop/legacy/mt779275(v=vs.85)
-                - name: Metodo seenvironment
+                - name: Metodo SetEnvironment
                   href: /windows/desktop/api/spatialaudiohrtf/nf-spatialaudiohrtf-ispatialaudioobjectforhrtf-setenvironment
-                - name: Metodo Segain
+                - name: Metodo SetGain
                   href: /windows/desktop/api/spatialaudiohrtf/nf-spatialaudiohrtf-ispatialaudioobjectforhrtf-setgain
-                - name: Metodo seorientation
+                - name: Metodo SetOrientation
                   href: /windows/desktop/api/spatialaudiohrtf/nf-spatialaudiohrtf-ispatialaudioobjectforhrtf-setorientation
-                - name: Metodo seposition
+                - name: Metodo SetPosition
                   href: /windows/desktop/api/spatialaudiohrtf/nf-spatialaudiohrtf-ispatialaudioobjectforhrtf-setposition
             - name: ISpatialAudioObjectForMetadataCommands
               href: /windows/desktop/api/spatialaudiometadata/nn-spatialaudiometadata-ispatialaudioobjectformetadatacommands
@@ -930,7 +930,7 @@
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-ipart-getcontrolinterfacecount
                 - name: GetGlobalId
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-ipart-getglobalid
-                - name: Getlocalid
+                - name: GetLocalId
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-ipart-getlocalid
                 - name: GetName
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-ipart-getname
@@ -960,7 +960,7 @@
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iperchanneldblevel-getlevel
                 - name: GetLevelRange
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iperchanneldblevel-getlevelrange
-                - name: Selevel
+                - name: SetLevel
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iperchanneldblevel-setlevel
                 - name: SetLevelAllChannels
                   href: /windows/desktop/api/Devicetopology/nf-devicetopology-iperchanneldblevel-setlevelallchannels
@@ -987,7 +987,7 @@
               href: /windows/desktop/api/Devicetopology/ns-devicetopology-ksjack_description2
             - name: KSJACK_SINK_INFORMATION
               href: /windows/desktop/api/Devicetopology/ns-devicetopology-ksjack_sink_information
-            - name: LUID
+            - name: Luid
               href: /windows/win32/api/Devicetopology/ns-devicetopology-luid
             - name: SpatialAudioClientActivationParams
               href: /windows/desktop/api/spatialaudioclient/ns-spatialaudioclient-spatialaudioclientactivationparams
@@ -1014,7 +1014,7 @@
           items:
             - name: SpatialAudioHrtfDirectivityUnion
               href: /windows/desktop/api/spatialaudiohrtf/ns-spatialaudiohrtf-spatialaudiohrtfdirectivityunion
-        - name: Enumerazioni audio principali
+        - name: Enumerazioni audio di base
           href: core-audio-enumerations.md
           items:
             - name: _AUDCLNT_BUFFERFLAGS
@@ -1029,9 +1029,9 @@
               href: /windows/desktop/api/spatialaudioclient/ne-spatialaudioclient-audioobjecttype
             - name: AudioSessionState
               href: /windows/win32/api/Audiosessiontypes/ne-audiosessiontypes-audiosessionstate
-            - name: ConnectorType
+            - name: Connectortype
               href: /windows/win32/api/Devicetopology/ne-devicetopology-connectortype
-            - name: DataFlow
+            - name: Flusso
               href: /windows/win32/api/Devicetopology/ne-devicetopology-dataflow
             - name: EDataFlow
               href: /windows/win32/api/Mmdeviceapi/ne-mmdeviceapi-edataflow
@@ -1053,20 +1053,20 @@
               href: /windows/desktop/api/SpatialAudioMetadata/ne-spatialaudiometadata-spatialaudiometadatawriteroverflowmode
             - name: SpatialAudioMetadataCopyMode
               href: /windows/desktop/api/SpatialAudioMetadata/ne-spatialaudiometadata-spatialaudiometadatacopymode
-        - name: Costanti audio Core
+        - name: Costanti audio di base
           href: core-audio-constants.md
           items:
-            - name: Costanti AUDCLNT_SESSIONFLAGS_XXX
+            - name: AUDCLNT_SESSIONFLAGS_XXX costanti
               href: audclnt-sessionflags-xxx-constants.md
-            - name: Costanti AUDCLNT_STREAMFLAGS_XXX
+            - name: AUDCLNT_STREAMFLAGS_XXX costanti
               href: audclnt-streamflags-xxx-constants.md
-            - name: Costanti DEVICE_STATE_XXX
+            - name: DEVICE_STATE_XXX costanti
               href: device-state-xxx-constants.md
-            - name: Costanti ENDPOINT_HARDWARE_SUPPORT_XXX
+            - name: ENDPOINT_HARDWARE_SUPPORT_XXX costanti
               href: endpoint-hardware-support-xxx-constants.md
-            - name: Costanti SPATIAL_AUDIO_XXX
+            - name: SPATIAL_AUDIO_XXX costanti
               href: spatial-audio-xxx-constants.md
-        - name: Proprietà audio principali
+        - name: Proprietà audio di base
           href: core-audio-properties.md
           items:
             - name: PKEY_AudioEndpoint_Association
@@ -1103,13 +1103,13 @@
               href: pkey-mfx-processingmodes-supported-for-streaming.md
             - name: PKEY_SFX_ProcessingModes_Supported_For_Streaming
               href: pkey-sfx-processingmodes-supported-for-streaming.md
-        - name: Funzioni audio principali
+        - name: Funzioni audio di base
           href: core-audio-functions.md
           items:
             - name: ActivateAudioInterfaceAsync
               href: /windows/desktop/api/mmdeviceapi/nf-mmdeviceapi-activateaudiointerfaceasync
-        - name: GUID audio principali
+        - name: GUID audio di base
           href: core-audio-guids.md
           items:
-            - name: GUID di DEVINTERFACE_XXX
+            - name: DEVINTERFACE_XXX GUID
               href: devinterface-xxx-guids.md

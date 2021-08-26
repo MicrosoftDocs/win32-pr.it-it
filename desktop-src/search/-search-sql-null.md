@@ -1,21 +1,21 @@
 ---
-description: Il predicato NULL indica se il documento contiene un valore per la colonna indicata.
+description: Il predicato NULL indica se il documento ha un valore per la colonna indicata.
 ms.assetid: 078ffd99-2020-4da2-8968-301dba8cc436
 title: Predicato NULL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea02a04313ac2b86afe809633bee5ad2cbcf764e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bd80ea6cba2009b398c8cdd0a2926240e3ce78309ca3f8511fb6ba286f44a64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058121"
 ---
 # <a name="null-predicate"></a>Predicato NULL
 
-Il predicato **null** indica se il documento contiene un valore per la colonna indicata.
+Il predicato **NULL** indica se il documento ha un valore per la colonna indicata.
 
-Il predicato **null** presenta la sintassi seguente:
+Il predicato **NULL** ha la sintassi seguente:
 
 
 ```
@@ -24,16 +24,16 @@ Il predicato **null** presenta la sintassi seguente:
 
 
 
-La parola chiave NOT facoltativa nega il risultato. La colonna può essere un [identificatore](-search-sql-identifiers.md)regolare o delimitato.
+La parola chiave NOT facoltativa nega il risultato. La colonna può essere un identificatore regolare o [delimitato.](-search-sql-identifiers.md)
 
 > [!IMPORTANT]
-> Per verificare se una colonna ha il valore **null** , è necessario utilizzare il predicato **null** . L'utilizzo del valore **null** in un predicato di confronto non è valido. "WHERE column IS **null**" è corretto. "WHERE Column = **null**" non è valido.
+> Per verificare se una colonna ha il **valore NULL,** è necessario usare il **predicato NULL.** Non è valido usare il valore **NULL** in un predicato di confronto. "WHERE column IS **NULL"** è corretto. "WHERE column = **NULL**" non è valido.
 
  
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono restituiti i documenti privi di un valore System. video. Director.
+Nell'esempio seguente vengono restituiti documenti che non hanno un valore System.Video.Director.
 
 
 ```
@@ -52,10 +52,10 @@ Nell'esempio seguente vengono restituiti i documenti privi di un valore System. 
 [Predicato LIKE](-search-sql-like.md)
 </dt> <dt>
 
-[Confronto di valori letterali](-search-sql-literalvaluecomparison.md)
+[Confronto tra valori letterali](-search-sql-literalvaluecomparison.md)
 </dt> <dt>
 
-[Confronti multivalore (matrice)](-search-sql-multivaluedcomparisons.md)
+[Confronti multivalore (ARRAY)](-search-sql-multivaluedcomparisons.md)
 </dt> <dt>
 
 **Informazioni concettuali**

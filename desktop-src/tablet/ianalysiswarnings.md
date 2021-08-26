@@ -1,7 +1,7 @@
 ---
 description: Contiene una raccolta di oggetti che implementano l'interfaccia IAnalysisWarning e che sono il risultato di un'operazione di analisi dell'input penna.
 ms.assetid: 2118c18b-d316-4e91-8652-62969115e8b5
-title: Interfaccia IAnalysisWarnings (IACom. h)
+title: Interfaccia IAnalysisWarnings (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 938d406ea90d86cc05ac84b69304b7a85e0e54fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a14e11400c6af564ccab86fc08746b8185fefba98aa472544981534b902f8ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057951"
 ---
 # <a name="ianalysiswarnings-interface"></a>Interfaccia IAnalysisWarnings
 
-Contiene una raccolta di oggetti che implementano l'interfaccia [**IAnalysisWarning**](ianalysiswarning.md) e che sono il risultato di un'operazione di analisi dell'input penna.
+Contiene una raccolta di oggetti che implementano [**l'interfaccia IAnalysisWarning**](ianalysiswarning.md) e che sono il risultato di un'operazione di analisi dell'input penna.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IAnalysisWarnings** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IAnalysisWarnings** dispone anche di questi tipi di membri:
+**L'interfaccia IAnalysisWarnings** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisWarnings** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IAnalysisWarnings** dispone di questi metodi.
+**L'interfaccia IAnalysisWarnings** include questi metodi.
 
 
 
 | Metodo                                                             | Descrizione                                                                                                                                |
 |:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetAnalysisWarning**](ianalysiswarnings-getanalysiswarning.md) | Recupera l'oggetto [**IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.<br/>                                       |
-| [**GetCount**](ianalysiswarnings-getcount.md)                     | Recupera il numero di oggetti [**IAnalysisWarning**](ianalysiswarning.md) contenuti nella raccolta **IAnalysisWarnings** .<br/> |
+| [**GetAnalysisWarning**](ianalysiswarnings-getanalysiswarning.md) | Recupera [**l'oggetto IAnalysisWarning**](ianalysiswarning.md) in corrispondenza dell'indice specificato.<br/>                                       |
+| [**GetCount**](ianalysiswarnings-getcount.md)                     | Recupera il numero di [**oggetti IAnalysisWarning**](ianalysiswarning.md) contenuti nella **raccolta IAnalysisWarnings.**<br/> |
 
 
 
@@ -47,7 +47,7 @@ L'interfaccia **IAnalysisWarnings** dispone di questi metodi.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una struttura di un gestore eventi per l'evento [**\_ IAnalysisEvents:: results**](-ianalysisevents-results.md) . Il gestore verifica [**IAnalysisStatus:: con esito positivo**](ianalysisstatus-issuccessful.md). Se l'operazione di analisi ha generato avvisi, il gestore scorre la raccolta di oggetti [**IAnalysisWarning**](ianalysiswarning.md) .
+L'esempio seguente mostra una struttura di un gestore eventi per [**\_ l'evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) Il gestore controlla [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Se l'operazione di analisi ha generato avvisi, il gestore scorre la raccolta di [**oggetti IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -134,9 +134,9 @@ STDMETHODIMP CMyClass::Results(
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -151,7 +151,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisWarning**](ianalysiswarning.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

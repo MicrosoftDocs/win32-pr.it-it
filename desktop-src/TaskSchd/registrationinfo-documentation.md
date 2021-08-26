@@ -1,11 +1,11 @@
 ---
-title: RegistrationInfo.Docproprietà umentation
-description: Per la creazione di script, ottiene o imposta qualsiasi documentazione aggiuntiva per l'attività.
+title: RegistrationInfo.Documentation
+description: Per lo scripting, ottiene o imposta qualsiasi documentazione aggiuntiva per l'attività.
 ms.assetid: 12ce9461-0cc7-49d0-8c57-7ff3ca32850a
 keywords:
-- Utilità di pianificazione proprietà documentazione
-- Utilità di pianificazione proprietà della documentazione, oggetto RegistrationInfo
-- Utilità di pianificazione oggetto RegistrationInfo, Proprietà Documentation
+- Proprietà documentation Utilità di pianificazione
+- Proprietà Documentation Utilità di pianificazione , oggetto RegistrationInfo
+- Oggetto RegistrationInfo Utilità di pianificazione proprietà , Documentation
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5832c78fae5c0ee9629077693db7e283369cc8af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31878417d6a225c5fa7c67569d557a4c6d7a716a24bffd94dfe58a84e3809a37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100181"
 ---
-# <a name="registrationinfodocumentation-property"></a>RegistrationInfo.Docproprietà umentation
+# <a name="registrationinfodocumentation-property"></a>RegistrationInfo.Documentation
 
-Per la creazione di script, ottiene o imposta qualsiasi documentazione aggiuntiva per l'attività.
+Per lo scripting, ottiene o imposta qualsiasi documentazione aggiuntiva per l'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,13 +38,13 @@ RegistrationInfo.Documentation As String
 
 ## <a name="property-value"></a>Valore proprietà
 
-Documentazione aggiuntiva associata all'attività.
+Qualsiasi documentazione aggiuntiva associata all'attività.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, la documentazione aggiuntiva per l'attività viene specificata utilizzando l'elemento [**Documentation**](taskschedulerschema-documentation-registrationinfotype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, la documentazione aggiuntiva per l'attività viene specificata usando l'elemento [**Documentation**](taskschedulerschema-documentation-registrationinfotype-element.md) dello schema Utilità di pianificazione attività.
 
-Quando si imposta il valore di questa proprietà, il valore può essere un testo recuperato da un file Resource. dll. Una stringa specializzata viene utilizzata per fare riferimento al testo dal file di risorse. Il formato della stringa è $ (@ \[ dll \] , \[ resourceId \] ) in cui \[ dll \] è il percorso del file con estensione dll che contiene la risorsa e \[ resourceId \] è l'identificatore per il testo della risorsa. Se ad esempio si imposta il valore di questa proprietà su $ (@% SystemRoot% \\ system32 \\ResourceName.dll,-101), la proprietà verrà impostata sul valore del testo della risorsa con un identificatore uguale a-101 nel file% SystemRoot% \\ system32 \\ResourceName.dll.
+Quando si imposta il valore di questa proprietà, il valore può essere testo recuperato da una risorsa .dll file. Viene usata una stringa specializzata per fare riferimento al testo del file di risorse. Il formato della stringa è $(@ Dll , ResourceID ) dove Dll è il percorso del file .dll che contiene la risorsa e ResourceID è l'identificatore per il testo \[ \] della \[ \] \[ \] \[ \] risorsa. Ad esempio, l'impostazione di questo valore della proprietà su $(@ %SystemRoot% System32ResourceName.dll, -101) imposta la proprietà sul valore del testo della risorsa con un identificatore uguale a \\ \\ -101 nel file diResourceName.dll %SystemRoot% \\ System32. \\
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Quando si imposta il valore di questa proprietà, il valore può essere un testo
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

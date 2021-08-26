@@ -5,12 +5,12 @@ ms.assetid: 1b063a56-f59f-4b02-949f-c8b6bbf45a13
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 11/19/2020
-ms.openlocfilehash: 2ca04c3c28f3de289bad6f06feaab0aff9ef2909
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: f9149c4bd2f9f931a506dc35d05b5e1c641dc87445fbf88fd73ff9ad20ac514b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040371"
 ---
 # <a name="mdm-registration-functions"></a>Funzioni di registrazione MDM
 
@@ -24,7 +24,7 @@ Le funzioni seguenti vengono dichiarate in `mdmregistration.h` e vengono usate d
 | [**DiscoverManagementServiceEx**](/windows/win32/api/MDMRegistration/nf-mdmregistration-discovermanagementserviceex) | Individua il servizio MDM usando un server candidato. |
 | [**GetDeviceManagementConfigInfo**](/windows/win32/api/mdmregistration/nf-mdmregistration-getdevicemanagementconfiginfo) | Ottiene le informazioni di configurazione associate all'ID provider. |
 | [**GetDeviceRegistrationInfo**](/windows/win32/api/MDMRegistration/nf-mdmregistration-getdeviceregistrationinfo) | Recupera le informazioni di registrazione del dispositivo. |
-| [**GetManagementAppHyperlink**](/windows/win32/api/MDMRegistration/nf-mdmregistration-getmanagementapphyperlink) | Recupera il collegamento ipertestuale dell'app di gestione associato al servizio MDM. |
+| [**GetManagementAppHyperlink**](/windows/win32/api/MDMRegistration/nf-mdmregistration-getmanagementapphyperlink) | Recupera il collegamento ipertestuale dell'app di gestione associata al servizio MDM. |
 | [**IsDeviceRegisteredWithManagement**](/windows/win32/api/MDMRegistration/nf-mdmregistration-isdeviceregisteredwithmanagement) | Controlla se il dispositivo è registrato con un servizio MDM. |
 | [**IsManagementRegistrationAllowed**](/windows/win32/api/MDMRegistration/nf-mdmregistration-ismanagementregistrationallowed) | Controlla se la registrazione MDM è consentita dai criteri locali. |
 | [**RegisterDeviceWithManagement**](/windows/win32/api/MDMRegistration/nf-mdmregistration-registerdevicewithmanagement) | Registra un dispositivo con un servizio MDM usando [ \[ MS-MDE: \] Mobile Device Enrollment Protocol.](/openspecs/windows_protocols/ms-mde/5c841535-042e-489e-913c-9d783d741267) |
