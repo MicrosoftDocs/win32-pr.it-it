@@ -1,5 +1,5 @@
 ---
-description: Contiene un oggetto per ogni sottoscrizione temporanea. Le sottoscrizioni temporanee possono essere create in tempo reale per l'esecuzione di istanze di oggetti e scompaiono quando l'oggetto viene eliminato.
+description: Contiene un oggetto per ogni sottoscrizione temporanea. Le sottoscrizioni temporanee possono essere create in tempo reale per le istanze di oggetti in esecuzione e scompaiono quando l'oggetto viene eliminato.
 ms.assetid: beee291c-e03f-4ee0-b1f2-99dcf113c46e
 title: Raccolta TransientSubscriptions
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 5053a4fd488ed38a637b4296f94caf20887f3ed924ae6d11b8f6a242669eccad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68ccdd222f4fe205e58adf5195df694ec1256804
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853931"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879931"
 ---
 # <a name="transientsubscriptions-collection"></a>Raccolta TransientSubscriptions
 
-Contiene un oggetto per ogni sottoscrizione temporanea. Le sottoscrizioni temporanee possono essere create in tempo reale per l'esecuzione di istanze di oggetti e scompaiono quando l'oggetto viene eliminato.
+Contiene un oggetto per ogni sottoscrizione temporanea. Le sottoscrizioni temporanee possono essere create in tempo reale per le istanze di oggetti in esecuzione e scompaiono quando l'oggetto viene eliminato.
 
 Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
@@ -36,7 +36,7 @@ La **raccolta TransientSubscriptions** eredita dall'interfaccia [**IUnknown,**](
 -   [**Errorinfo**](errorinfo.md)
 -   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
--   [**Proprietà transientPublisher**](transientpublisherproperties.md)
+-   [**Proprietà del server di pubblicazione temporaneo**](transientpublisherproperties.md)
 -   [**TransientSubscriberProperties**](transientsubscriberproperties.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -57,8 +57,8 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 -   [MethodName](#methodname)
 -   [Nome](#methodname)
 -   [PerUser](#peruser)
--   [PublisherID](#publisherid)
--   [SubscriberInterface](#subscriberinterface)
+-   [PUBLISHERID](#publisherid)
+-   [Interfaccia del sottoscrittore](#subscriberinterface)
 -   [SubscriberPartitionID](#subscriberpartitionid)
 -   [UserName](#username)
 
@@ -68,9 +68,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|-------------------------------------|
-| Descrizione    | Descrizione per la sottoscrizione. |
+| Descrizione    | Descrizione della sottoscrizione. |
 | Access         | ReadWrite                           |
-| Type           | string                              |
+| Type           | Stringa                              |
 | Predefinito        | ""                                  |
 | Sistema minimo | Windows 2000                        |
 
@@ -100,9 +100,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Quando si esegue la sottoscrizione a una classe di evento, usata per rappresentare il GUID dell'ID di partizione contenente la classe di evento. Quando si esegue la sottoscrizione alle classi di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
+| Descrizione    | Quando si sottoscrive una classe di evento, utilizzata per rappresentare il GUID dell'ID di partizione contenente la classe di evento. Quando si sottoscrive una classe di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
 | Access         | ReadWrite                                                                                                                                                                                                                                          |
-| Type           | string                                                                                                                                                                                                                                             |
+| Type           | Stringa                                                                                                                                                                                                                                             |
 | Predefinito        | NULL                                                                                                                                                                                                                                               |
 | Sistema minimo | Windows Server 2003                                                                                                                                                                                                                                |
 
@@ -118,7 +118,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------------------------------------------------------------------|
 | Descrizione    | CLSID per la classe di evento. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
 | Access         | WriteOnce                                                                                    |
-| Type           | string                                                                                       |
+| Type           | Stringa                                                                                       |
 | Predefinito        | N/A                                                                                          |
 | Sistema minimo | Windows 2000                                                                                 |
 
@@ -134,7 +134,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Descrizione    | Stringa che indica i criteri di filtro. Può essere un CLSID per una [**classe PublisherFilter.**](/windows/desktop/api/EventSys/nn-eventsys-ipublisherfilter) |
 | Access         | ReadWrite                                                                                                            |
-| Type           | string                                                                                                               |
+| Type           | Stringa                                                                                                               |
 | Predefinito        | N/A                                                                                                                  |
 | Sistema minimo | Windows 2000                                                                                                         |
 
@@ -148,10 +148,10 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Identificatore della sottoscrizione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Identificatore per la sottoscrizione. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | WriteOnce                                                                                                                                                        |
-| Type           | string                                                                                                                                                           |
-| Predefinito        | <Generated>                                                                                                                                                |
+| Type           | Stringa                                                                                                                                                           |
+| Predefinito        | &lt;Generato&gt;                                                                                                                                                |
 | Sistema minimo | Windows 2000                                                                                                                                                     |
 
 
@@ -166,7 +166,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|----------------------------------|
 | Descrizione    | IID per l'interfaccia sottoscritta. |
 | Access         | WriteOnce                        |
-| Type           | string                           |
+| Type           | Stringa                           |
 | Predefinito        | N/A                              |
 | Sistema minimo | Windows 2000                     |
 
@@ -180,9 +180,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|----------------------------------------------|
-| Descrizione    | Metodo sull'interfaccia da sottoscrivere. |
+| Descrizione    | Metodo nell'interfaccia a cui viene effettuata la sottoscrizione. |
 | Access         | ReadWrite                                    |
-| Type           | string                                       |
+| Type           | Stringa                                       |
 | Predefinito        | N/A                                          |
 | Sistema minimo | Windows 2000                                 |
 
@@ -196,9 +196,9 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome della sottoscrizione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono spogliati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome della sottoscrizione. Gli spazi aggiuntivi all'inizio e alla fine della stringa vengono privati. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadWrite                                                                                                                                                                                                                              |
-| Type           | string                                                                                                                                                                                                                                 |
+| Type           | Stringa                                                                                                                                                                                                                                 |
 | Predefinito        | "Nuova sottoscrizione"                                                                                                                                                                                                                     |
 | Sistema minimo | Windows 2000                                                                                                                                                                                                                           |
 
@@ -222,15 +222,15 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
  
 
-### <a name="publisherid"></a>PUBLISHERID
+### <a name="publisherid"></a>PublisherID
 
 
 
 | Voce | Valore |
 |----------------|-------------------------------------------------------------------------------------|
-| Descrizione    | ID del server di pubblicazione. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
+| Descrizione    | ID per il server di pubblicazione. È possibile indicare un EventCLSID o un PublisherID, ma non entrambi. |
 | Access         | WriteOnce                                                                           |
-| Type           | string                                                                              |
+| Type           | Stringa                                                                              |
 | Predefinito        | ""                                                                                  |
 | Sistema minimo | Windows 2000                                                                        |
 
@@ -238,7 +238,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
  
 
-### <a name="subscriberinterface"></a>Interfaccia del sottoscrittore
+### <a name="subscriberinterface"></a>SubscriberInterface
 
 
 
@@ -260,10 +260,10 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Quando si sottoscrive una classe di evento nella stessa partizione, utilizzata per rappresentare il GUID dell'ID di partizione del Sottoscrittore. Quando si sottoscrive una classe di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
+| Descrizione    | Quando si esegue la sottoscrizione a una classe di evento nella stessa partizione, usata per rappresentare il GUID dell'ID di partizione del sottoscrittore. Quando si esegue la sottoscrizione alle classi di evento, il sottoscrittore ha la possibilità di sottoscrivere una classe di evento nella stessa partizione o in una partizione diversa. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                       |
-| Type           | string                                                                                                                                                                                                                                                          |
-| Predefinito        | <Generated>                                                                                                                                                                                                                                               |
+| Type           | Stringa                                                                                                                                                                                                                                                          |
+| Predefinito        | &lt;Generato&gt;                                                                                                                                                                                                                                               |
 | Sistema minimo | Windows Server 2003                                                                                                                                                                                                                                             |
 
 
@@ -278,7 +278,7 @@ Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all
 |----------------|-------------------------------------------------------------------------|
 | Descrizione    | Nome dell'utente a cui si applica la sottoscrizione quando PerUser è True. |
 | Access         | ReadWrite                                                               |
-| Type           | string                                                                  |
+| Type           | Stringa                                                                  |
 | Predefinito        | N/A                                                                     |
 | Sistema minimo | Windows 2000                                                            |
 

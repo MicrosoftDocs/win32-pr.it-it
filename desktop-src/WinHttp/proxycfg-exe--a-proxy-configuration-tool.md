@@ -1,29 +1,29 @@
 ---
-description: In questo argomento viene illustrato l'utilizzo dello strumento di configurazione proxy di Microsoft Windows HTTP Services (WinHTTP), &\# 0034; ProxyCfg.exe&\# 0034;.
+description: Questo argomento illustra l'uso dello strumento di configurazione proxy servizi HTTP di Microsoft Windows (WinHTTP), &\# 0034;ProxyCfg.exe&\# 0034;.
 ms.assetid: f96adf59-59be-414e-ad6f-9eac05f4b975
-title: Netsh.exe e ProxyCfg.exe proxy Strumenti di configurazione
+title: Netsh.exe proxy ProxyCfg.exe e Strumenti di configurazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a33e832d324a5863652673b8e25725fba72e88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef64c952db59fb4709614c498b4d9c732403798e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524828"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885830"
 ---
-# <a name="netshexe-and-proxycfgexe-proxy-configuration-tools"></a>Netsh.exe e ProxyCfg.exe proxy Strumenti di configurazione
+# <a name="netshexe-and-proxycfgexe-proxy-configuration-tools"></a>Netsh.exe proxy ProxyCfg.exe e Strumenti di configurazione
 
-* * Windows Vista e Windows Server 2008: * *
+**Windows Vista e Windows Server 2008: **
 
-ProxyCfg.exe è stato deprecato. Viene sostituito daNetsh.exe comandi [ WinHTTP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731131(v=ws.10)) .
+ProxyCfg.exe è stato deprecato. Viene sostituito dai comandi [Netsh.exe winhttp.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731131(v=ws.10))
 
-In questo argomento viene illustrato l'utilizzo dello strumento di configurazione proxy di [Microsoft Windows HTTP Services (WinHTTP)](about-winhttp.md) , "ProxyCfg.exe".
+Questo argomento illustra l'uso dello strumento di configurazione proxy di Servizi HTTP di [Microsoft Windows (WinHTTP),](about-winhttp.md) "ProxyCfg.exe".
 
-Esistono due modi per accedere ai server HTTP e Secure Hypertext Transfer Protocol (HTTPS) tramite un proxy usando i servizi HTTP di Microsoft Windows (WinHTTP). In primo luogo, è possibile specificare le impostazioni del proxy all'interno dell'applicazione WinHTTP. In secondo luogo, è possibile specificare le impostazioni proxy predefinite dall'esterno dell'applicazione utilizzando l'utilità di configurazione proxy presente nella directory% windir% \\ system32.
+Esistono due modi per accedere ai server HTTP e Secure Hypertext Transfer Protocol (HTTPS) tramite un proxy usando Microsoft Windows HTTP Services (WinHTTP). In primo luogo, è possibile specificare le impostazioni proxy dall'interno dell'applicazione WinHTTP. In secondo momento, è possibile specificare le impostazioni proxy predefinite dall'esterno dell'applicazione usando l'utilità di configurazione del proxy disponibile nella directory %windir% \\ system32.
 
-È possibile impostare a livello di codice i dati del proxy all'interno dell'applicazione o dello script. Se si sta scrivendo un'applicazione utilizzando l'API WinHTTP, utilizzare una delle due tecniche seguenti per modificare le impostazioni del proxy.
+È possibile impostare a livello di codice i dati del proxy dall'interno dell'applicazione o dello script. Se si scrive un'applicazione usando l'API WinHTTP, usare una delle due tecniche seguenti per modificare le impostazioni proxy.
 
--   Usare la funzione [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) . Specificare il tipo di accesso nel secondo parametro, il nome del proxy nel terzo parametro e un elenco di bypass nel quarto parametro. Nell'esempio seguente viene illustrato come è possibile utilizzare la funzione [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) per impostare i dati del proxy.
+-   Usare la [**funzione WinHttpOpen.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) Specificare il tipo di accesso nel secondo parametro, il nome del proxy nel terzo parametro e un elenco di bypass nel quarto parametro. L'esempio seguente illustra come usare [**la funzione WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) per impostare i dati proxy.
 
     ``` syntax
     hSession = WinHttpOpen( L"WinHTTP Example/1.0",  
@@ -33,7 +33,7 @@ Esistono due modi per accedere ai server HTTP e Secure Hypertext Transfer Protoc
                             0);
     ```
 
--   Usare la funzione [**WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) . Il flag del [**\_ \_ proxy dell'opzione WinHTTP**](option-flags.md) consente di specificare le impostazioni proxy con una struttura di [**\_ \_ informazioni proxy WinHTTP**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) . Nell'esempio di codice seguente viene illustrato come utilizzare la funzione [**WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) per impostare i dati del proxy.
+-   Usare la [**funzione WinHttpSetOption.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) Il flag [**\_ \_ PROXY OPTION WINHTTP**](option-flags.md) consente di specificare le impostazioni proxy con una [**struttura WINHTTP \_ PROXY \_ INFO.**](/windows/win32/api/winhttp/ns-winhttp-winhttp_proxy_info) Il codice di esempio seguente illustra come usare [**la funzione WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) per impostare i dati proxy.
 
     ``` syntax
     WINHTTP_PROXY_INFO proxyInfo;
@@ -48,9 +48,9 @@ Esistono due modi per accedere ai server HTTP e Secure Hypertext Transfer Protoc
                       sizeof(proxyInfo));
     ```
 
-Se si scrive uno script o un'applicazione utilizzando l'oggetto [**WinHttpRequest**](winhttprequest.md) , utilizzare la tecnica seguente per modificare le impostazioni del proxy.
+Se stai scrivendo uno script o un'applicazione usando [**l'oggetto WinHttpRequest,**](winhttprequest.md) usa la tecnica seguente per modificare le impostazioni proxy.
 
--   Usare il metodo [**seproxy**](iwinhttprequest-setproxy.md) . Specificare il tipo di accesso nel primo parametro, il nome del proxy nel secondo parametro e un elenco di bypass nel terzo parametro. Nell'esempio seguente viene illustrato come utilizzare il metodo [**seproxy**](iwinhttprequest-setproxy.md) nello script per impostare i dati del proxy.
+-   Usare il [**metodo SetProxy.**](iwinhttprequest-setproxy.md) Specificare il tipo di accesso nel primo parametro, il nome del proxy nel secondo parametro e un elenco di bypass nel terzo parametro. L'esempio seguente illustra come usare [**il metodo SetProxy**](iwinhttprequest-setproxy.md) nello script per impostare i dati del proxy.
 
     ``` syntax
     WinHttpReq.SetProxy( HTTPREQUEST_PROXYSETTING_PROXY, 
@@ -58,80 +58,80 @@ Se si scrive uno script o un'applicazione utilizzando l'oggetto [**WinHttpReques
                          "*.microsoft.com");
     ```
 
-Per specificare le impostazioni predefinite ed eliminare la necessità di utilizzare il metodo [**seproxy**](iwinhttprequest-setproxy.md) o la funzione [**WinHttpSetOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) , utilizzare l'utilità di configurazione del proxy. Utilizzando questa utilità, è possibile specificare che l'applicazione acceda direttamente a una rete, tramite un proxy o tramite una combinazione di accesso diretto e proxy specificando un elenco di bypass. Quando si usa l'API WinHTTP, lo strumento di configurazione del proxy determina solo le impostazioni quando si passa il flag **predefinito del tipo di \_ accesso \_ \_ WinHTTP** all'API [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) . Per impostazione predefinita, l'oggetto [**WinHttpRequest**](winhttprequest.md) utilizza le impostazioni dello strumento di configurazione del proxy.
+Per specificare le impostazioni predefinite ed eliminare la necessità di usare il [**metodo SetProxy**](iwinhttprequest-setproxy.md) o la [**funzione WinHttpSetOption,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetoption) usare l'utilità di configurazione del proxy. Questa utilità consente di specificare che l'applicazione deve accedere a una rete direttamente, tramite un proxy o tramite una combinazione di accesso diretto e proxy specificando un elenco di bypass. Quando si usa l'API WinHTTP, lo strumento di configurazione del proxy determina le impostazioni solo quando si passa il flag **WINHTTP \_ ACCESS TYPE \_ \_ DEFAULT** all'API [**WinHttpOpen.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) [**L'oggetto WinHttpRequest**](winhttprequest.md) usa le impostazioni dello strumento di configurazione proxy per impostazione predefinita.
 
-Le impostazioni proxy per WinHTTP non sono le impostazioni proxy per Microsoft Internet Explorer. Non è possibile configurare le impostazioni proxy per WinHTTP nel pannello di controllo di Microsoft Windows. L'utilizzo dell'utilità di configurazione proxy WinHTTP non modifica le impostazioni utilizzate per Internet Explorer.
+Le impostazioni proxy per WinHTTP non sono le impostazioni proxy per Microsoft Internet Explorer. Non è possibile configurare le impostazioni proxy per WinHTTP nel Windows Pannello di controllo Microsoft. L'uso dell'utilità di configurazione del proxy WinHTTP non modifica le impostazioni usate per Internet Explorer.
 
 > [!Note]  
-> Se si tenta di aprire e inviare una richiesta HTTP utilizzando WinHTTP e le impostazioni del proxy non sono corrette, si verificherà un errore.
+> Se si tenta di aprire e inviare una richiesta HTTP usando WinHTTP e le impostazioni proxy non sono corrette, si verifica un errore.
 
  
 
 ## <a name="command-line-parameters"></a>Parametri della riga di comando
 
-Nella tabella seguente sono elencati i parametri della riga di comando disponibili per l'utilizzo con lo strumento ProxyCfg.exe.
+Nella tabella seguente sono elencati i parametri della riga di comando disponibili per l'uso con lo ProxyCfg.exe seguente.
 
 
 
 | Parametro | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nessuno      | Quando non viene specificato alcun parametro, vengono visualizzate le impostazioni proxy WinHTTP correnti.                                                                                                                                                                                                                                                                                                                                               |
-| ?         | Vengono visualizzate le informazioni della guida.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ?         | Vengono visualizzate le informazioni della Guida.                                                                                                                                                                                                                                                                                                                                                                                                    |
 | d         | Specifica che le applicazioni WinHTTP accedono direttamente alla rete, senza un proxy.                                                                                                                                                                                                                                                                                                                                                 |
 | p         | Specifica il server proxy. È anche possibile specificare un elenco facoltativo di server a cui si accede senza un proxy.                                                                                                                                                                                                                                                                                                                   |
-| u         | Specifica che le applicazioni WinHTTP utilizzano le impostazioni proxy dell'utente corrente per Internet Explorer. Questo parametro non funziona se Internet Explorer rileva automaticamente le impostazioni proxy oppure se usa un URL di configurazione automatico per impostare le informazioni sul proxy.                                                                                                                                                      |
-| i         | Specifica che le applicazioni WinHTTP utilizzano le impostazioni proxy dell'utente corrente per Internet Explorer. Questa operazione funziona solo quando non è stato usato in precedenza ProxyCfg.exe. Se ProxyCfg.exe è installato, specificare che il parametro della riga di comando "u" utilizza le impostazioni manuali. Questo parametro non funziona se Internet Explorer rileva automaticamente le impostazioni proxy oppure se usa un URL di configurazione automatico per impostare le informazioni sul proxy. |
+| u         | Specifica che le applicazioni WinHTTP usano le impostazioni proxy dell'utente corrente per Internet Explorer. Questo parametro non funziona se Internet Explorer rileva automaticamente le impostazioni proxy o se usa un URL di configurazione automatica per impostare le informazioni del proxy.                                                                                                                                                      |
+| i         | Specifica che le applicazioni WinHTTP usano le impostazioni proxy dell'utente corrente per Internet Explorer. Questa operazione funziona solo quando ProxyCfg.exe non è stato usato in precedenza. Se ProxyCfg.exe installato, specificare che il parametro della riga di comando "u" userà le impostazioni manuali. Questo parametro non funziona se Internet Explorer rileva automaticamente le impostazioni proxy o se usa un URL di configurazione automatica per impostare le informazioni del proxy. |
 
 
 
  
 
-È possibile specificare proxy in una stringa delimitata da spazi. Gli elenchi proxy possono contenere il numero di porta utilizzato per accedere al proxy. Per elencare un proxy per un protocollo specifico, la stringa deve seguire il formato, <protocol> = https://<\_ nome proxy>. I protocolli validi sono HTTP e HTTPS. Ad esempio, per elencare un proxy HTTP, una stringa valida è http = https://http\_proxy\_name:80 , dove \_ il \_ nome del proxy HTTP è il nome del server proxy e 80 è il numero di porta che è necessario usare per accedere al proxy. Se il proxy usa il numero di porta predefinito per quel protocollo, è possibile omettere il numero di porta. Se un nome proxy è elencato da solo, è possibile utilizzarlo come proxy predefinito per tutti i protocolli che non dispongono di un proxy specificato. Ad esempio, http = https://http\_proxy altro \_ proxy usa \_ il proxy HTTP per qualsiasi operazione http, mentre il protocollo HTTPS usa il proxy denominato altro \_ proxy.
+È possibile specificare proxy in una stringa delimitata da spazi. Gli elenchi di proxy possono contenere il numero di porta usato per accedere al proxy. Per elencare un proxy per un protocollo specifico, la stringa deve seguire il formato &lt; protocollo &gt; =https://<nome proxy \_>. I protocolli validi sono HTTP e HTTPS. Ad esempio, per elencare un proxy HTTP, una stringa valida è http= , dove nome proxy HTTP è il nome del server proxy e https://http\_proxy\_name:80 80 è il numero di porta che è necessario usare per accedere al \_ \_ proxy. Se il proxy usa il numero di porta predefinito per tale protocollo, è possibile omettere il numero di porta. Se un nome proxy è elencato da solo, è possibile usarlo come proxy predefinito per tutti i protocolli che non dispongono di un proxy specificato. Ad esempio, http= altro proxy usa il proxy HTTP per qualsiasi operazione HTTP, mentre il https://http\_proxy protocollo HTTPS usa il proxy denominato altro \_ \_ \_ proxy.
 
-Nell'elenco proxy bypass è possibile elencare nomi host o indirizzi IP locali noti localmente. Questo elenco può contenere caratteri jolly, ad esempio " \* ", che fanno sì che l'applicazione ignori il server proxy per gli indirizzi che soddisfano il criterio specificato, ad esempio " \* . Microsoft.com" o " \* . org". I caratteri jolly devono essere i caratteri più a sinistra nell'elenco. Ad esempio \* , "AAA". non è supportato. Per elencare più indirizzi e nomi host, separarli con spazi vuoti o punti e virgola nella stringa di bypass del proxy. Se si specifica la <local> macro, la funzione ignora qualsiasi nome host che non contiene un punto.
+È possibile elencare i nomi host o gli indirizzi IP noti in locale nell'elenco di bypass del proxy. Questo elenco può contenere caratteri jolly, ad esempio " ", che causano il bypass del server proxy da parte dell'applicazione per gli indirizzi che rientrano nel modello specificato, ad esempio \* " \* .microsoft.com" o " \* .org". I caratteri jolly devono essere i caratteri più a sinistra nell'elenco. Ad esempio, "aaa. \* " non è supportato. Per elencare più indirizzi e nomi host, separarli con spazi vuoti o punti e virgola nella stringa proxy bypass. Se si specifica la &lt; &gt; macro locale, la funzione ignora qualsiasi nome host che non contiene un punto.
 
 > [!WARNING]
-> Dopo l'esecuzione di Proxycfg.exe, non è possibile ripristinare le impostazioni proxy precedenti. Tuttavia, è possibile rimuovere completamente le impostazioni del proxy.
+> Dopo Proxycfg.exe, non è possibile ripristinare le impostazioni proxy precedenti. Tuttavia, è possibile rimuovere completamente le impostazioni proxy.
 
  
 
 ## <a name="usage"></a>Utilizzo
 
-Per utilizzare lo strumento di configurazione del proxy, aprire una finestra del prompt dei comandi ed eseguire l'utilità di configurazione del proxy con i parametri della riga di comando appropriati. Nella sezione seguente vengono forniti esempi di sintassi.
+Per usare lo strumento di configurazione del proxy, aprire una finestra del prompt dei comandi ed eseguire l'utilità di configurazione del proxy con i parametri della riga di comando appropriati. Nella sezione seguente vengono forniti esempi di sintassi.
 
 ## <a name="example-syntax"></a>Sintassi di esempio
 
-### <a name="example-1-use-a-proxy-only-for-external-resources"></a>Esempio 1: usare un proxy solo per le risorse esterne
+### <a name="example-1-use-a-proxy-only-for-external-resources"></a>Esempio 1: Usare un proxy solo per le risorse esterne
 
-Di seguito è riportato l'utilizzo più comune per Proxycfg.exe. Questo comando specifica che è possibile accedere ai server HTTP e HTTPS tramite il server proxy denominato " \_ server proxy", ad eccezione dei nomi host che non contengono un punto.
+Di seguito è riportato l'uso più comune per Proxycfg.exe. Questo comando specifica che l'accesso ai server HTTP e HTTPS avviene tramite il server proxy denominato "server proxy", ad eccezione dei nomi host che non \_ contengono un punto.
 
-**server proxy proxycfg-p \_ " <local> "**
+**proxycfg -p server proxy \_ " &lt; local &gt; "**
 
-### <a name="example-2-use-a-proxy-for-all-resources"></a>Esempio 2: usare un proxy per tutte le risorse
+### <a name="example-2-use-a-proxy-for-all-resources"></a>Esempio 2: Usare un proxy per tutte le risorse
 
-Nell'esempio seguente viene specificato che è possibile accedere ai server HTTP e HTTPS tramite il server proxy denominato " \_ server proxy". Non è specificato alcun elenco di bypass.
+Nell'esempio seguente viene specificato che l'accesso ai server HTTP e HTTPS viene eseguito tramite il server proxy denominato "server \_ proxy". Non è specificato alcun elenco di bypass.
 
-**server proxy proxycfg-p \_**
+**proxycfg -p server proxy \_**
 
-### <a name="example-3-use-a-different-proxy-for-secure-resources"></a>Esempio 3: usare un proxy diverso per le risorse protette
+### <a name="example-3-use-a-different-proxy-for-secure-resources"></a>Esempio 3: Usare un proxy diverso per proteggere le risorse
 
-Nell'esempio seguente viene specificato che è possibile accedere ai server HTTP tramite il proxy \_ proxy http ed è possibile accedere ai server HTTPS tramite il \_ proxy HTTPS. Il proxy viene ignorato dai siti Intranet locali e da qualsiasi sito nel \* dominio. Microsoft.com.
+L'esempio seguente specifica che l'accesso ai server HTTP avviene tramite il proxy HTTP e ai \_ server HTTPS tramite il proxy \_ HTTPS. I siti Intranet locali e qualsiasi sito nel dominio \* .microsoft.com ignorano il proxy.
 
-**proxycfg-p "http = \_ proxy HTTP HTTPS = \_ proxy HTTPS" " <local> ; \* . microsoft.com "**
+**proxycfg -p "http=http \_ proxy https=https \_ proxy" " local &lt; ; &gt; \* . microsoft.com"**
 
 ## <a name="removing-proxycfgexe"></a>Rimozione di ProxyCfg.exe
 
-Dopo aver utilizzato lo strumento di configurazione del proxy, non è possibile ripristinare le impostazioni proxy originali. Tuttavia, se necessario, è possibile rimuovere le impostazioni del registro di sistema create dall'utilità. Per rimuovere le voci del registro di sistema create da ProxyCfg.exe, è necessario eliminare il valore **WinHttpSettings** dalla seguente chiave del registro di sistema.
+Dopo aver utilizzato lo strumento di configurazione del proxy, non è possibile ripristinare le impostazioni proxy originali. Se necessario, tuttavia, è possibile rimuovere le impostazioni del Registro di sistema create dall'utilità. Per rimuovere le voci del Registro di sistema ProxyCfg.exe, è necessario eliminare il **valore WinHttpSettings** dalla chiave del Registro di sistema seguente.
 
-**HKEY \_ \_Computer locale** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Internet Settings** \\ **Connections** \\ **WinHttpSettings**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Internet Impostazioni** \\ **Connections** \\ **WinHttpSettings**
 
-Se si elimina il valore *WinHttpSettings* , verranno rimosse tutte le configurazioni del proxy.
+L'eliminazione *del valore WinHttpSettings* rimuove tutte le configurazioni proxy.
 
 ## <a name="proxycfgexe-and-authentication"></a>ProxyCfg.exe e autenticazione
 
-L'utilità di configurazione del proxy imposta i criteri di autenticazione predefiniti. Poiché non è consigliabile eseguire l'autenticazione NTLM con host non attendibili, per impostazione predefinita l'autenticazione NTLM si verifica solo automaticamente con gli host nell'elenco proxy bypass. Se non è presente alcun proxy, è comunque possibile utilizzare ProxyCfg.exe per specificare un elenco di host da ignorare che si considera attendibile per eseguire l'autenticazione NTLM. Un nome proxy è obbligatorio quando si usa ProxyCfg.exe a questo scopo, ma è possibile usare qualsiasi stringa valida al posto di un nome di proxy reale.
+L'utilità di configurazione del proxy imposta i criteri di autenticazione predefiniti. Poiché non è consigliabile eseguire l'autenticazione NTLM con host non attendibili, per impostazione predefinita l'autenticazione NTLM viene eseguita automaticamente solo con gli host nell'elenco di bypass del proxy. Se non è presente alcun proxy, è comunque possibile usare ProxyCfg.exe per specificare un elenco di host che si considera attendibili per eseguire l'autenticazione NTLM. Un nome proxy è obbligatorio quando ProxyCfg.exe a questo scopo, ma è possibile usare qualsiasi stringa valida al posto di un nome proxy reale.
 
-Per ulteriori informazioni sui criteri di accesso automatico, vedere [criteri di accesso automatico](authentication-in-winhttp.md).
+Per altre informazioni sui criteri di accesso automatico, vedere [Criteri di accesso automatico.](authentication-in-winhttp.md)
 
  
 

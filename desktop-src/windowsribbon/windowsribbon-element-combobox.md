@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60ee7a03d25508df45469577f4d4159b5db5f5190f188ca594b71f176d037526
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62cebc67a0666caad88722b934e4891e01d32bab
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117851191"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632109"
 ---
 # <a name="combobox-element"></a>Elemento ComboBox
 
@@ -40,10 +40,10 @@ Rappresenta un [controllo Casella](windowsribbon-controls-combobox.md) combinata
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -96,8 +96,8 @@ Non ci sono elementi figlio.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -151,7 +151,7 @@ Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsri
 
 Poiché **ComboBox è** esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo della raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per altre informazioni, vedere [Uso delle raccolte.](ribbon-controls-galleries.md)
 
-Lo screenshot seguente illustra un controllo [Casella](windowsribbon-controls-combobox.md) combinata della barra multifunzione Windows Live Movie Maker.
+Lo screenshot seguente illustra un controllo Casella combinata [della](windowsribbon-controls-combobox.md) barra multifunzione Windows Live Movie Maker.
 
 ![Screenshot di un controllo casella combinata nella barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
 

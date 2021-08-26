@@ -1,7 +1,7 @@
 ---
-description: La funzione AddPort aggiunge il nome di una porta all'elenco delle porte supportate. La funzione AddPort viene esportata dal monitor di porta.
+description: La funzione AddPort aggiunge il nome di una porta all'elenco delle porte supportate. La funzione AddPort viene esportata dal monitoraggio delle porte.
 ms.assetid: 9191d507-9167-4488-a4b4-286590a8a62a
-title: Funzione AddPort (winspool. h)
+title: Funzione AddPort (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 00e589b59b15c898887090b12348f23fac57fda3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abbb2e4b836c64ddff47c92681e32bd0d5f9f0c38224d6c710fb10bc3435ac96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112691"
 ---
-# <a name="addport-function"></a>AddPort (funzione)
+# <a name="addport-function"></a>Funzione AddPort
 
-La funzione **addport** aggiunge il nome di una porta all'elenco delle porte supportate. La funzione **addport** viene esportata dal monitor di porta.
+La **funzione AddPort** aggiunge il nome di una porta all'elenco delle porte supportate. La **funzione AddPort** viene esportata dal monitoraggio delle porte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,21 +43,21 @@ BOOL AddPort(
 
 <dl> <dt>
 
-*pname* \[ in\]
+*pName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione zero che specifica il nome del server a cui è connessa la porta. Se questo parametro è **null**, la porta è locale.
+Puntatore a una stringa con terminazione zero che specifica il nome del server a cui è connessa la porta. Se questo parametro è **NULL,** la porta è locale.
 
 </dd> <dt>
 
-*HWND* \[ in\]
+*hWnd* \[ Pollici\]
 </dt> <dd>
 
-Handle per la finestra padre della finestra di dialogo **addport** .
+Handle per la finestra padre della **finestra di dialogo AddPort.**
 
 </dd> <dt>
 
-*pMonitorName* \[ in\]
+*pMonitorName* \[ Pollici\]
 </dt> <dd>
 
 Puntatore a una stringa con terminazione zero che specifica il monitoraggio associato alla porta.
@@ -73,15 +73,15 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona che potrebbe non essere restituita immediatamente. La velocità di ritorno di questa funzione dipende da fattori di run-time, ad esempio lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante, difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
-La funzione **addport** Esplora la rete per individuare le porte esistenti e visualizza una finestra di dialogo per l'utente. La funzione **addport** deve convalidare il nome della porta immesso dall'utente chiamando [**EnumPorts**](enumports.md) per assicurarsi che non esistano nomi duplicati.
+La **funzione AddPort** esplora la rete per trovare le porte esistenti e visualizza una finestra di dialogo per l'utente. La **funzione AddPort** deve convalidare il nome della porta immesso dall'utente chiamando [**EnumPorts**](enumports.md) per assicurarsi che non esistano nomi duplicati.
 
-Il chiamante della funzione **addport** deve avere \_ accesso al server \_ per amministrare l'accesso al server a cui è connessa la porta.
+Il chiamante della **funzione AddPort** deve disporre dell'accesso SERVER \_ ACCESS ADMINISTER al server a cui è \_ connessa la porta.
 
-Per aggiungere una porta senza visualizzare una finestra di dialogo, chiamare la funzione **XcvData** anziché **addport**. Per ulteriori informazioni su **XcvData**, vedere Microsoft Windows Driver Development Kit (DDK).
+Per aggiungere una porta senza visualizzare una finestra di dialogo, chiamare la **funzione XcvData** anziché **AddPort**. Per altre informazioni su **XcvData,** vedere Microsoft Windows Driver Development Kit (DDK).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Per aggiungere una porta senza visualizzare una finestra di dialogo, chiamare la
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomi Unicode e ANSI<br/>   | **AddPortW** (Unicode) e **AddPortA** (ANSI)<br/>                                                 |
 
@@ -114,7 +114,7 @@ Per aggiungere una porta senza visualizzare una finestra di dialogo, chiamare la
 [**EnumPorts**](enumports.md)
 </dt> <dt>
 
-[**Porta**](setport.md)
+[**SetPort**](setport.md)
 </dt> </dl>
 
  

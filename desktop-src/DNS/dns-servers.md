@@ -6,16 +6,16 @@ keywords:
 - Server DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fe2415c50cdd2472b20e8f14123afa2aa919d26
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: b3f1eb0391d588431e082c69bcd19768c4047b1e4e24c64fbda251c11703a7eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131831"
 ---
 # <a name="dns-servers"></a>Server DNS
 
-Un *server DNS* è un computer che completa il processo di risoluzione dei nomi in DNS. I server DNS [*contengono file di*](z-gly.md) zona che consentono di risolvere i nomi in indirizzi IP e indirizzi IP in nomi. Quando viene eseguita una query, un server DNS risponderà in uno dei tre modi seguenti:
+Un *server DNS* è un computer che completa il processo di risoluzione dei nomi in DNS. I server DNS [*contengono file di zona*](z-gly.md) che consentono di risolvere i nomi in indirizzi IP e indirizzi IP in nomi. Quando viene eseguita una query, un server DNS risponde in uno dei tre modi seguenti:
 
 -   Il server restituisce i dati di risoluzione dei nomi o IP richiesti.
 -   Il server restituisce un puntatore a un altro server DNS in grado di eseguire la richiesta.
@@ -27,17 +27,17 @@ Esistono tre tipi principali di server DNS: server primari, server secondari e s
 
 ## <a name="primary-server"></a>Server primario
 
-Il *server primario* è il server autorevole per la zona. Tutte le attività amministrative associate alla zona, ad esempio la creazione di sottodomini all'interno della zona o altre attività amministrative simili, devono essere eseguite nel server primario. Inoltre, tutte le modifiche associate alla zona o eventuali modifiche o aggiunte alle richiesteri nei file di zona devono essere apportate nel server primario. Per ogni zona è presente un server primario, tranne quando si integrano i servizi Active Directory e il server DNS Microsoft.
+Il *server primario* è il server autorevole per la zona. Tutte le attività amministrative associate alla zona, ad esempio la creazione di sottodomini all'interno della zona o altre attività amministrative simili, devono essere eseguite nel server primario. Inoltre, tutte le modifiche associate alla zona o eventuali modifiche o aggiunte alle richieste di replica nei file di zona devono essere apportate nel server primario. Per qualsiasi zona, esiste un server primario, tranne quando si integrano i servizi Active Directory e il server DNS Microsoft.
 
 ## <a name="secondary-servers"></a>Server secondari
 
-*I server secondari* sono server DNS di backup. I server secondari ricevono tutti i relativi file di zona dai file di zona del server primario in un trasferimento di zona. Per qualsiasi zona possono esistere più server secondari, tutti necessari per garantire il bilanciamento del [*carico,*](l-gly.md)la tolleranza di [*errore*](f-gly.md)e la riduzione del traffico. Inoltre, qualsiasi server DNS specificato può essere un server secondario per più zone.
+*I server secondari* sono server DNS di backup. I server secondari ricevono tutti i file di zona dai file di zona del server primario in un trasferimento di zona. Per una determinata zona possono esistere più server secondari, quanti ne sono necessari per garantire bilanciamento del [*carico,*](l-gly.md)tolleranza [*di*](f-gly.md)errore e riduzione del traffico. Inoltre, qualsiasi server DNS specificato può essere un server secondario per più zone.
 
-Oltre ai server DNS primari e secondari, è possibile usare ruoli server DNS aggiuntivi quando tali server sono appropriati per un'infrastruttura DNS. Questi server aggiuntivi memorizzano nella cache server e [*server d'inoltro*](f-gly.md).
+Oltre ai server DNS primario e secondario, è possibile usare ruoli aggiuntivi del server DNS quando questi server sono appropriati per un'infrastruttura DNS. Questi server aggiuntivi memorizzano nella cache server e [*server d'inoltro*](f-gly.md).
 
-## <a name="caching-servers"></a>Memorizzazione nella cache dei server
+## <a name="caching-servers"></a>Caching Server
 
-[*I server di memorizzazione*](c-gly.md)nella cache, noti anche come server di sola memorizzazione nella cache, vengono eseguono come suggerisce il nome; forniscono solo il servizio query memorizzate nella cache per le risposte DNS. Invece di gestire i file di zona come fanno altri server secondari, la memorizzazione nella cache dei server DNS esegue query, memorizza nella cache le risposte e restituisce i risultati al client che esegue le query. La differenza principale tra i server di memorizzazione nella cache e gli altri server secondari è che altri server secondari gestiscono i file di zona (e, se appropriato, e, se appropriato, generano traffico di rete associato al trasferimento), i server di memorizzazione nella cache non lo fanno.
+[*Caching server,*](c-gly.md)noti anche come server di sola memorizzazione nella cache, vengono eseguono come suggerisce il nome; forniscono solo il servizio query memorizzate nella cache per le risposte DNS. Anziché gestire i file di zona come fanno altri server secondari, la memorizzazione nella cache dei server DNS esegue query, memorizza nella cache le risposte e restituisce i risultati al client di query. La differenza principale tra la memorizzazione nella cache dei server e gli altri server secondari è che altri server secondari gestiscono i file di zona (e, se appropriato, e esere trasferimenti di zona, generando così traffico di rete associato al trasferimento), i server di memorizzazione nella cache non lo fanno.
 
  
 

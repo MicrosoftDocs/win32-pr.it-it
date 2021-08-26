@@ -1,17 +1,17 @@
 ---
 description: Si è verificato un errore del dispositivo in un filtro di acquisizione audio.
 ms.assetid: 13f8641b-7881-4f1c-816c-77c140e48ed4
-title: EC_SNDDEV_IN_ERROR (dshow. h)
+title: EC_SNDDEV_IN_ERROR (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26f9b95055483b1bda812179f1a1bf132d12de7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2bfc65b751010288ed37fc1596e020887e6ea901c451dcdac729fe05ea33f93a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102811"
 ---
-# <a name="ec_snddev_in_error"></a>EC \_ SNDDEV \_ in \_ errore
+# <a name="ec_snddev_in_error"></a>EC \_ SNDDEV \_ IN \_ ERRORE
 
 Si è verificato un errore del dispositivo in un filtro di acquisizione audio.
 
@@ -22,20 +22,20 @@ Si è verificato un errore del dispositivo in un filtro di acquisizione audio.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore DWORD dal tipo enumerato [**SNDDEV \_ Err**](/previous-versions/windows/desktop/api/audevcod/ne-audevcod-snddev_err) , che indica il modo in cui è stato eseguito l'accesso al dispositivo quando si è verificato l'errore.
+Valore DWORD del [**tipo enumerato SNDDEV \_ ERR,**](/previous-versions/windows/desktop/api/audevcod/ne-audevcod-snddev_err) che indica come è stato eseguito l'accesso al dispositivo quando si è verificato l'errore.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Valore DWORD che indica l'errore restituito dalla chiamata al dispositivo audio.
+Valore DWORD che indica l'errore restituito dalla chiamata del dispositivo audio.
 
 </dd> </dl>
 
 ## <a name="default-action"></a>Azione predefinita
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

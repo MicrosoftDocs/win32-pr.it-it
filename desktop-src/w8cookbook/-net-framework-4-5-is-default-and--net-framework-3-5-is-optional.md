@@ -4,12 +4,12 @@ description: .NET Framework 4.5 è l'impostazione predefinita e .NET Framework 3
 ms.assetid: 19B53C82-812A-49AC-87C6-C08E7C199208
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e875f7508bc0940689afde5eb9b3f00407dd2c7dd70e35de52fe580717c8ad53
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18b45aef294e035f5fb7e647c49b22206ac8aadd
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883127"
 ---
 # <a name="net-framework-45-is-default-and-net-framework-35-is-optional"></a>.NET Framework 4.5 è l'impostazione predefinita e .NET Framework 3.5 è facoltativa
 
@@ -32,7 +32,7 @@ Se l'utente esegue un'installazione pulita di Windows 8 e quindi installa le app
 
 Per abilitare .NET Framework 3.5 solo in computer di test con installazioni pulite di Windows 8:
 
-1.  Copiare i file SX di origine dall'immagine ISO di compilazione del sistema \\ \\ operativo \\ montata in dotnet35 o in una cartella simile. Esempio:
+1.  Copiare i file SX di origine dall'immagine ISO di compilazione del sistema \\ \\ operativo \\ montata in dotnet35 o in una cartella simile. Ad esempio:
     ```
     xcopy e:\sources\sxs\*.* c:\dotnet35 /s
     ```
@@ -78,7 +78,7 @@ Gli amministratori IT possono configurare le app .NET 3.5 per l'esecuzione in .N
 
 Per abilitare .NET Framework 3.5 per le build EEAP e per le applicazioni che non hanno accesso a Windows Update:
 
-1.  Copiare \\ i \\ file SX di origine dall'immagine ISO di compilazione del sistema operativo \\ montata nella cartella dotnet35 o simile. Esempio:
+1.  Copiare \\ i \\ file SX di origine dall'immagine ISO di compilazione del sistema operativo \\ montata nella cartella dotnet35 o simile. Ad esempio:
     ```
     xcopy e:\sources\sxs\*.* c:\dotnet35 /s
     ```
@@ -104,7 +104,7 @@ Per i computer configurati per l'uso di WSUS per la manutenzione, è possibile i
 
 
 
-Questa voce del Registro di sistema può essere impostata anche tramite Criteri di gruppo (Criteri del computer locale -> Configurazione computer -> Modelli amministrativi -> Sistema. Selezionare l'impostazione Specificare le impostazioni per l'installazione e il ripristino dei componenti facoltativi.
+Questa voce del Registro di sistema può essere impostata anche tramite Criteri di gruppo (Criteri del computer locale -> Configurazione computer -> Modelli amministrativi -> sistema. Selezionare l'impostazione Specificare le impostazioni per l'installazione e il ripristino dei componenti facoltativi.
 
 Se si seleziona Contatta Windows Update direttamente per scaricare il contenuto di ripristino anziché Windows Server Update Services (WSUS), qualsiasi tentativo di aggiungere funzionalità di Windows (ad esempio, .NET Framework 3.5) o funzionalità di ripristino attiverà i download di file da Windows Update. I computer di destinazione richiedono l'accesso a Internet e WU per questa opzione. Le normali operazioni di manutenzione continuano a usare WSUS se è stato configurato come origine.
 
@@ -129,7 +129,7 @@ Questa voce del Registro di sistema è supportata:
 <td>Percorso di origine locale</td>
 <td>REG_EXPAND_SZ</td>
 <td>Percorsi di origine locali da usare per impostazione predefinita. È possibile specificare più percorsi. devono essere separati da ; . Le posizioni verranno ricercate nell'ordine in cui sono specificate. <br/> I percorsi di origine locali specificati nella riga di comando di Gestione e manutenzione immagini distribuzione hanno la precedenza sui percorsi specificati in questa voce del Registro di sistema. I percorsi delle cartelle possono essere specificati in questa voce del Registro di sistema. <br/> È possibile usare wim, ma il percorso deve essere il file WIM. non è necessario montarlo, ad esempio: <br/> <dl> wim: \\ machine\share\file.wim:1<br />
-</dl> Si noti il valore 1 alla fine. È necessario specificare l'indice numerico dell'immagine da usare nel file WIM. <br/> Per un file WIM montato, il percorso di origine deve fare riferimento alla directory windows dell'immagine montata, anziché al punto di montaggio (ad esempio: /source: <mount_point> \windows anziché /source: <mount_point> ). <br/></td>
+</dl> Si noti il valore 1 alla fine. È necessario specificare l'indice numerico dell'immagine da usare nel file WIM. <br/> Per un file WIM montato, il percorso di origine deve fare riferimento alla directory windows dell'immagine montata, anziché al punto di montaggio (ad esempio: /source: &lt; mount_point &gt; \windows anziché /source: &lt; mount_point &gt; ). <br/></td>
 </tr>
 </tbody>
 </table>

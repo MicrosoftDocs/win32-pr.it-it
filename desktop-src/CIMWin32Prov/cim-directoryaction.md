@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c197e419db97d4d602ef6710fdb668d9af3dcb9802414285d73d9fe66234691e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 90ef11615fe520ffe11c818df5491fb7adae6f1e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119321441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881820"
 ---
 # <a name="cim_directoryaction-class"></a>Classe CIM \_ DirectoryAction
 
 La **classe astratta CIM \_ DirectoryAction** gestisce le directory. La creazione della directory viene gestita dalla [**classe \_ CIM CreateDirectoryAction**](cim-createdirectoryaction.md) e la rimozione della directory viene gestita dalla [**classe CIM \_ RemoveDirectoryAction.**](cim-removedirectoryaction.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -76,7 +76,7 @@ La **classe CIM \_ DirectoryAction** include questi metodi.
 
 | Metodo                                                       | Descrizione                                                                  |
 |:-------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**evocare**](invoke-method-in-class-cim-directoryaction.md) | Consente di eseguire un'azione specifica. Questo metodo non viene implementato da WMI.<br/> |
+| [**Evocare**](invoke-method-in-class-cim-directoryaction.md) | Consente di eseguire un'azione specifica. Questo metodo non viene implementato da WMI.<br/> |
 
 
 
@@ -828,8 +828,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;oggetto &gt; principale. &lt; &gt;secondario. &lt; Revisione&gt;
+-   &lt;oggetto &gt; principale. &lt; revisione &gt; &lt; lettera &gt; &lt; secondaria&gt;
 
 Questa proprietà viene ereditata [**dall'azione CIM \_**](cim-action.md).
 

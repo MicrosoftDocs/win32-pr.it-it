@@ -6,12 +6,12 @@ ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 4222e9637d87f5c2a6df7a296465c8b9d148dde87a6698f8296fb0a1ed646345
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5dd546055c22711ecd9a3796e520ad034e9e46c6
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119608551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812682"
 ---
 # <a name="core-structures"></a>Strutture di base
 
@@ -42,7 +42,7 @@ Le strutture seguenti sono dichiarate in d3d12.h.
 | [**D3D12_DESCRIPTOR_HEAP_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_descriptor_heap_desc). Descrive l'heap del descrittore. |
 | [**D3D12_DESCRIPTOR_RANGE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_descriptor_range). Descrive un intervallo di descrittori. |
 | [**D3D12_DESCRIPTOR_RANGE1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_descriptor_range1). Descrive un intervallo di descrittori, con flag per determinarne la volatilità. |
-| [**D3D12_DEVICE_REMOVED_EXTENDED_DATA**](/windows/win32/api/d3d12/ns-d3d12-d3d12_device_removed_extended_data). Rappresenta i dati drED (Device Removed Extended Data) versione 1.0. |
+| [**D3D12_DEVICE_REMOVED_EXTENDED_DATA**](/windows/win32/api/d3d12/ns-d3d12-d3d12_device_removed_extended_data). Rappresenta i dati DRED (Device Removed Extended Data) versione 1.0. |
 | [**D3D12_DEVICE_REMOVED_EXTENDED_DATA1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_device_removed_extended_data1). Rappresenta i dati di rimozione dei dispositivi drED (Device Removed Extended Data) versione 1.1, in modo che i debugger e le estensioni del debugger possano accedere ai dati DRED. |
 | [**D3D12_DISCARD_REGION**](/windows/win32/api/d3d12/ns-d3d12-d3d12_discard_region). Descrive i dettagli per l'operazione discard-resource. |
 | [**D3D12_DISPATCH_ARGUMENTS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_dispatch_arguments). Descrive i parametri di invio, per l'uso da parte dello shader di calcolo. |
@@ -53,20 +53,20 @@ Le strutture seguenti sono dichiarate in d3d12.h.
 | [**D3D12_DRED_PAGE_FAULT_OUTPUT**](/windows/win32/api/d3d12/ns-d3d12-d3d12_dred_page_fault_output). Descrive i dati di allocazione correlati a un errore di pagina GPU in un determinato indirizzo virtuale (VA). |
 | [**D3D12_FEATURE_DATA_ARCHITECTURE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_architecture). Fornire informazioni dettagliate sull'architettura dell'adapter, consentendo alle applicazioni di ottimizzare meglio determinate proprietà dell'adapter. |
 | [**D3D12_FEATURE_DATA_ARCHITECTURE1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_architecture1). Fornire informazioni dettagliate sull'architettura dell'adapter, consentendo alle applicazioni di ottimizzare meglio determinate proprietà dell'adapter. |
-| [**D3D12_FEATURE_DATA_COMMAND_QUEUE_PRIORITY**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_command_queue_priority). Informazioni dettagliate sul supporto dell'adapter per la definizione delle priorità dei diversi tipi di code di comandi. |
+| [**D3D12_FEATURE_DATA_COMMAND_QUEUE_PRIORITY**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_command_queue_priority). Informazioni dettagliate sul supporto dell'adapter per la definizione delle priorità dei diversi tipi di coda di comandi. |
 | [**D3D12_FEATURE_DATA_CROSS_NODE**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_cross_node). Indica il livello di supporto per la condivisione di risorse tra schede diverse. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options). Descrive le opzioni delle funzionalità direct3D 12 nel driver di grafica corrente. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS1**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options1). Descrive il livello di supporto per le operazioni wave HLSL 6.0. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS2**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options2). Informazioni dettagliate sul supporto dell'adapter per alcune funzionalità facoltative di Direct3D 12. |
-| [**D3D12_FEATURE_DATA_D3D12_OPTIONS3**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options3). Usato per indicare il livello di supporto fornito dall'adapter per le funzionalità facoltative di Direct3D 12. |
+| [**D3D12_FEATURE_DATA_D3D12_OPTIONS3**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options3). Usato per indicare il livello di supporto fornito dall'adattatore per le funzionalità facoltative di Direct3D 12. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS4**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options4). Indica il livello di supporto per trame MSAA allineate a 64 KB, condivisione tra API e operazioni shader native a 16 bit. |
-| [**D3D12_FEATURE_DATA_D3D12_OPTIONS5**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options5). Indica il livello di supporto fornito dall'adattatore per i passaggi di rendering, la traccia dei raggi e le risorse affiancate di livello 3 della visualizzazione di risorse shader. |
+| [**D3D12_FEATURE_DATA_D3D12_OPTIONS5**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options5). Indica il livello di supporto fornito dall'adattatore per i passaggi di rendering, la traccia dei raggi e le risorse affiancate di livello 3 della visualizzazione delle risorse shader. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS6**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6). Indica il livello di supporto fornito dall'adattatore per l'ombreggiatura a velocità variabile e indica se è supportata o meno l'elaborazione in background. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS7**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options7). Indica il livello di supporto fornito dall'adattatore per gli shader mesh e di amplificazione e per il feedback del campionatore. |
 | [**D3D12_FEATURE_DATA_D3D12_OPTIONS8**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options8). Indica se sono supportate o meno trame non allineate compresse a blocchi. |
-| [**D3D12_FEATURE_DATA_D3D12_OPTIONS9**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options9). Indica se esiste o meno il supporto per gli shader mesh, i valori di SV_RenderTargetArrayIndex che sono 8 o *superiori,* atomici di interi a 64 bit di risorsa tipidata, operazioni di esempio di trama derivata e dipendente da derivati e il livello di supporto per le operazioni WaveMMA (wave_matrix). |
-| [**D3D12_FEATURE_DATA_D3D12_OPTIONS10**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options10). Indica se è possibile usare o meno il combinatore SUM e se è possibile SV_ShadingRate da uno shader mesh.  |
-| [**D3D12_FEATURE_DATA_D3D12_OPTIONS11**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options11). Indica se sono supportati o meno atomici interi a 64 bit nelle risorse negli heap dei descrittori. |
+| [**D3D12_FEATURE_DATA_D3D12_OPTIONS9**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options9). Indica se esiste o meno il supporto per gli shader mesh, i valori di SV_RenderTargetArrayIndex che sono 8 o *superiori,* atomici di interi a 64 bit della risorsa tipidata, operazioni di esempio di trama derivata e dipendente da derivati e il livello di supporto per le operazioni WaveMMA (wave_matrix). |
+| [**D3D12_FEATURE_DATA_D3D12_OPTIONS10**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options10). Indica se è possibile usare o meno il combinatore SUM e se SV_ShadingRate può essere impostato da uno shader mesh.  |
+| [**D3D12_FEATURE_DATA_D3D12_OPTIONS11**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options11). Indica se sono supportati o meno atomici integer a 64 bit sulle risorse negli heap dei descrittori. |
 | [**D3D12_FEATURE_DATA_EXISTING_HEAPS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_existing_heaps). Utilizzato per determinare se l'adattatore supporta la creazione di heap dalla memoria di sistema esistente. Questi heap non sono destinati all'uso generale, ma sono estremamente utili a scopo diagnostico perché sono garantiti per la persistenza anche dopo gli errori dell'adattatore o quando si verifica un evento di rimozione del dispositivo. |
 | [**D3D12_FEATURE_DATA_FEATURE_LEVELS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_feature_levels). Descrive le informazioni sui [livelli di funzionalità](/windows/win32/direct3d11/overviews-direct3d-11-devices-downlevel-intro) supportati dal driver di grafica corrente. |
 | [**D3D12_FEATURE_DATA_FORMAT_INFO**](/windows/win32/api/d3d12/ns-d3d12-d3d12_feature_data_format_info). Descrive il formato dati DXGI. |
@@ -85,7 +85,7 @@ Le strutture seguenti sono dichiarate in d3d12.h.
 | [**D3D12_GRAPHICS_PIPELINE_STATE_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc). Descrive un oggetto stato della pipeline grafica. |
 | [**D3D12_HEAP_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_heap_desc). Descrive un heap. |
 | [**D3D12_HEAP_PROPERTIES**](/windows/win32/api/d3d12/ns-d3d12-d3d12_heap_properties). Vengono descritte le proprietà dell'heap. |
-| [**D3D12_INDEX_BUFFER_VIEW**](/windows/win32/api/d3d12/ns-d3d12-d3d12_index_buffer_view). Descrive la index buffer da visualizzare. |
+| [**D3D12_INDEX_BUFFER_VIEW**](/windows/win32/api/d3d12/ns-d3d12-d3d12_index_buffer_view). Descrive l'index buffer da visualizzare. |
 | [**D3D12_INDIRECT_ARGUMENT_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc). Descrive un argomento indiretto (un parametro indiretto) da usare con una firma di comando. |
 | [**D3D12_INPUT_ELEMENT_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_input_element_desc). Descrive un singolo elemento per la fase input-assembler della pipeline grafica. |
 | [**D3D12_INPUT_LAYOUT_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_input_layout_desc). Descrive i dati del buffer di input per la fase input-assembler. |
@@ -110,7 +110,7 @@ Le strutture seguenti sono dichiarate in d3d12.h.
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TOOLS_VISUALIZATION_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_acceleration_structure_postbuild_info_tools_visualization_desc). Descrive il requisito di spazio per la decodifica di una struttura di accelerazione in un modulo che può essere visualizzato dagli strumenti. |
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_acceleration_structure_prebuild_info). Rappresenta le informazioni di pre-compilazione su una struttura di accelerazione raytracing. Ottenere un'istanza di questo stucture chiamando [**GetRaytracingAccelerationStructurePrebuildInfo**](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-getraytracingaccelerationstructureprebuildinfo). |
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_SRV**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_acceleration_structure_srv). Struttura di visualizzazione delle risorse shader (SRV) per l'archiviazione di una struttura di accelerazione raytracing. |
-| [**D3D12_RAYTRACING_GEOMETRY_AABBS_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_aabbs_desc). Descrive un set di rettanci di delimitazione allineati all'asse usati nella [**struttura D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_inputs) per fornire dati di input a un'operazione di compilazione della struttura di accelerazione del raggio. |
+| [**D3D12_RAYTRACING_GEOMETRY_AABBS_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_aabbs_desc). Descrive un set di rettanci di selezione allineati all'asse usati nella [**struttura D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_inputs) per fornire dati di input a un'operazione di compilazione della struttura di accelerazione del raggio. |
 | [**D3D12_RAYTRACING_GEOMETRY_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_desc). Descrive un set di geometria usato nella struttura D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS [**per**](/windows/win32/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_inputs) fornire dati di input a un'operazione di compilazione della struttura di accelerazione raytracing. |
 | [**D3D12_RAYTRACING_GEOMETRY_TRIANGLES_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_triangles_desc). Descrive un set di triangoli usati come geometria di raytracing. La geometria a cui punta questo struct è sempre in forma di elenco triangolare, indicizzata o non indicizzata. Le strisce triangolare non sono supportate. |
 | [**D3D12_RAYTRACING_INSTANCE_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_instance_desc). Descrive un'istanza di una struttura di accelerazione raytracing usata nella memoria GPU durante il processo di compilazione della struttura di accelerazione. |

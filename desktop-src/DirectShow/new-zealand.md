@@ -4,25 +4,25 @@ ms.assetid: a314d0b1-9e4f-42dd-914a-65a8f3610300
 title: Nuova Zelanda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9879e89f6460ab25aa93594001068526404dcd84
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 63f8f95412f4c8038708ddfde068fd1ddb27aca78bc50206484640ffb552a700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102391"
 ---
 # <a name="new-zealand"></a>Nuova Zelanda
 
-Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
-Gli indici di frequenza nella tabella di trasmissione nuova zelanda sono adatti per l'uso come numeri di canale. gli indici di frequenza dei cavi non sono adatti per l'uso come numeri di canale.
+Gli indici di frequenza nella tabella di trasmissione della Nuova Zelanda sono adatti per l'uso come numeri di canale. Gli indici della frequenza dei cavi non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
     -   [Assegnazioni di trasmissioni in Nuova Zelanda](#new-zealand-broadcast-assignments)
-    -   [Assegnazioni di cavi in Nuova Zelanda](#new-zealand-cable-assignments)
--   [Assegnazioni di canali precedenti](#earlier-channel-assignments)
+    -   [Nuove assegnazioni di cavi per la Zelanda](#new-zealand-cable-assignments)
+-   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
     -   [Assegnazioni di trasmissioni in Nuova Zelanda](#new-zealand-broadcast-assignments)
-    -   [Assegnazioni di cavi in Nuova Zelanda](#new-zealand-cable-assignments)
+    -   [Nuove assegnazioni di cavi per la Zelanda](#new-zealand-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
@@ -84,7 +84,7 @@ Gli indici di frequenza nella tabella di trasmissione nuova zelanda sono adatti 
        815000000L,      // 49 TV63_Cable
 ```
 
-### <a name="new-zealand-cable-assignments"></a>Assegnazioni di cavi in Nuova Zelanda
+### <a name="new-zealand-cable-assignments"></a>Nuove assegnazioni di cavi per la Zelanda
 
 ``` syntax
          1L,            // Lowest channel
@@ -142,7 +142,7 @@ Gli indici di frequenza nella tabella di trasmissione nuova zelanda sono adatti 
        799250000L,      // 49   E62 
 ```
 
-## <a name="earlier-channel-assignments"></a>Assegnazioni di canali precedenti
+## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
 
 ### <a name="new-zealand-broadcast-assignments"></a>Assegnazioni di trasmissioni in Nuova Zelanda
 
@@ -164,7 +164,7 @@ Gli indici di frequenza nella tabella di trasmissione nuova zelanda sono adatti 
        224250000L,      // 11
 ```
 
-### <a name="new-zealand-cable-assignments"></a>Assegnazioni di cavi in Nuova Zelanda
+### <a name="new-zealand-cable-assignments"></a>Nuove assegnazioni di cavi per la Zelanda
 
 ``` syntax
          1L,            // Lowest channel
@@ -226,7 +226,7 @@ Gli indici di frequenza nella tabella di trasmissione nuova zelanda sono adatti 
 
 <dl> <dt>
 
-[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

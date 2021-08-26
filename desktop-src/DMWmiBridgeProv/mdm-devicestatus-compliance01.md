@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_Compliance01
-description: La \_ classe MDM DeviceStatus \_ Compliance01 consente di eseguire una query per verificare se i dispositivi sono conformi ai criteri di crittografia dell'organizzazione.
+title: MDM_DeviceStatus_Compliance01 classe
+description: La classe MDM DeviceStatus Compliance01 consente di verificare se il \_ dispositivo è conforme ai criteri di crittografia \_ aziendali.
 ms.assetid: 99c4cb9b-ae53-432c-b970-d61fb8496123
 keywords:
-- Classe MDM_DeviceStatus_Compliance01
-- Classe MDM_DeviceStatus_Compliance01, descritta
+- MDM_DeviceStatus_Compliance01 classe
+- MDM_DeviceStatus_Compliance01 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf606b7f10fbe7abc196622ee54b271e5285f2c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d00e74ee245f763207cd01581bb20c87b5bd064399d0454680acbf6e8868285
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109391"
 ---
-# <a name="mdm_devicestatus_compliance01-class"></a>\_Classe MDM DeviceStatus \_ Compliance01
+# <a name="mdm_devicestatus_compliance01-class"></a>Classe \_ Mdm DeviceStatus \_ Compliance01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ DeviceStatus \_ Compliance01** consente di eseguire una query per verificare se i dispositivi sono conformi ai criteri di crittografia dell'organizzazione.
+La **classe \_ MDM DeviceStatus \_ Compliance01** consente di verificare se il dispositivo è conforme ai criteri di crittografia aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,23 +46,23 @@ class MDM_DeviceStatus_Compliance01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ DeviceStatus \_ Compliance01** presenta questi tipi di membri:
+La **classe \_ MDM DeviceStatus \_ Compliance01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ DeviceStatus \_ Compliance01** dispone di queste proprietà.
+La **classe \_ MDM DeviceStatus \_ Compliance01** ha queste proprietà.
 
 <dl> <dt>
 
-[EncryptionCompliance](/windows/client-management/mdm/devicestatus-csp#devicestatus-compliance-encryptioncompliance)
+[CrittografiaCompliance](/windows/client-management/mdm/devicestatus-csp#devicestatus-compliance-encryptioncompliance)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -70,32 +70,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nodo per le query sulla conformità.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/DeviceStatus"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/DeviceStatus"
 
 </dd> </dl>
 
@@ -105,10 +105,10 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

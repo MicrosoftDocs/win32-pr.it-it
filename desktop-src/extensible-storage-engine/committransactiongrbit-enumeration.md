@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec61d29a2bfc3fc502b532b83dbb02640a600a0a5034c9751caab7185f1b037c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: efe052fc01014d3ebb624dbd4183bc8f0584b145
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716650"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481787"
 ---
 # <a name="committransactiongrbit-enumeration"></a>Enumerazione CommitTransactionGrbit
 
@@ -43,7 +43,7 @@ Opzioni per JetCommitTransaction.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -63,38 +63,13 @@ public enum CommitTransactionGrbit
 
 ## <a name="members"></a>Members
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nome del membro</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>nessuno</td>
-<td>Opzioni predefinite.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>LazyFlush</td>
-<td>Il commit della transazione viene eseguito normalmente, ma questa API non attende lo scaricamento della transazione nel file di log delle transazioni prima di tornare al chiamante. In questo modo si riduce drasticamente la durata di un'operazione di commit a costo della durabilità. Qualsiasi transazione non scaricata nel log prima di un arresto anomalo del sistema verrà automaticamente interrotta durante il ripristino dell'arresto anomalo durante la chiamata successiva a JetInit. Se si specifica WaitLastLevel0Commit o WaitAllLevel0Commit, questa opzione viene ignorata.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>WaitLastLevel0Commit</td>
-<td>Se in precedenza la sessione ha eseguito il commit di transazioni e non sono ancora state scaricate nel file di log delle transazioni, devono essere scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante. Ciò è utile se in precedenza l'applicazione ha eseguito il commit di diverse transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.
-<p>Questa opzione può essere usata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nome del membro | Descrizione | 
+|--|-------------|-------------|
+|  | nessuno | Opzioni predefinite. | 
+|  | LazyFlush | Il commit della transazione viene eseguito normalmente, ma questa API non attende che la transazione venga scaricata nel file di log delle transazioni prima di tornare al chiamante. In questo modo si riduce drasticamente la durata di un'operazione di commit a s costo della durabilità. Qualsiasi transazione che non viene scaricata nel log prima di un arresto anomalo del sistema verrà interrotta automaticamente durante il recupero dall'arresto anomalo del sistema durante la chiamata successiva a JetInit. Se si specifica WaitLastLevel0Commit o WaitAllLevel0Commit, questa opzione viene ignorata. | 
+|  | WaitLastLevel0Commit | Se in precedenza la sessione ha eseguito il commit di transazioni e non sono ancora state scaricate nel file di log delle transazioni, devono essere scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante. Ciò è utile se in precedenza l'applicazione ha eseguito il commit di più transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.<p>Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.</p> | 
+
 
 
 ## <a name="see-also"></a>Vedi anche

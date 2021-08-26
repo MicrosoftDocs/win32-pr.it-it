@@ -1,23 +1,23 @@
 ---
-title: Uso di ripristino configurazione di sistema
-description: Gli esempi seguenti illustrano come creare e annullare i punti di ripristino usando la funzione SRSetRestorePoint.
+title: Uso di Ripristino configurazione di sistema
+description: Gli esempi seguenti illustrano come creare e annullare punti di ripristino usando la funzione SRSetRestorePoint.
 ms.assetid: 98c79305-3659-4d1a-8165-bb6e451e2d1e
 keywords:
-- Ripristino configurazione di sistema, utilizzo
+- Ripristino configurazione di sistema, uso di
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd19e3a90cfdc766a62bdf20e2e4027e1e4c5ba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2f707609dd844941402c282b52430eb56ee7ff481f23b8dc9aedbae04d6e3b12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111261"
 ---
-# <a name="using-system-restore"></a>Uso di ripristino configurazione di sistema
+# <a name="using-system-restore"></a>Uso di Ripristino configurazione di sistema
 
-Gli esempi seguenti illustrano come creare e annullare i punti di ripristino usando la funzione [**SRSetRestorePoint**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) .
+Gli esempi seguenti illustrano come creare e annullare punti di ripristino usando la [**funzione SRSetRestorePoint.**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa)
 
-Il primo passaggio per l'uso di ripristino configurazione di sistema è la configurazione delle chiamate COM a [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). Questa operazione è necessaria per tutti i processi che usano la funzione [**SRSetRestorePoint**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) . È necessario consentire a NetworkService, LocalService e System di effettuare chiamate al processo. La funzione **InitializeCOMSecurity** seguente è un esempio di come inizializzare la sicurezza com. Potrebbe essere necessario modificare i parametri per la funzione **CoInitializeSecurity** per l'applicazione.
+Il primo passaggio per usare Ripristino configurazione di sistema è la configurazione delle chiamate COM a [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) e [**CoInitializeSecurity.**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) Questa operazione è necessaria per qualsiasi processo che usa la [**funzione SRSetRestorePoint.**](/windows/desktop/api/SRRestorePtAPI/nf-srrestoreptapi-srsetrestorepointa) NetworkService, LocalService e System devono essere autorizzati a effettuare chiamate al processo. La funzione **InitializeCOMSecurity seguente** è un esempio di come inizializzare la sicurezza COM. Potrebbe essere necessario modificare i parametri per la **funzione CoInitializeSecurity** per l'applicazione.
 
 
 ```C++
@@ -217,7 +217,7 @@ BOOL InitializeCOMSecurity()
 
 
 
-## <a name="example-1-create-a-restore-point"></a>Esempio 1: creare un punto di ripristino.
+## <a name="example-1-create-a-restore-point"></a>Esempio 1: Creare un punto di ripristino.
 
 
 ```C++
@@ -349,7 +349,7 @@ exit:
 
 
 
-## <a name="example-2-create-and-cancel-a-restore-point"></a>Esempio 2: creare e annullare un punto di ripristino.
+## <a name="example-2-create-and-cancel-a-restore-point"></a>Esempio 2: Creare e annullare un punto di ripristino.
 
 
 ```C++
@@ -470,6 +470,6 @@ exit:
 
 
 
- 
+ 
 
- 
+ 

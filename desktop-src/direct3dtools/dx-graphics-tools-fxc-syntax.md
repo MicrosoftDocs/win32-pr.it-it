@@ -1,21 +1,21 @@
 ---
 title: Sintassi
-description: Ecco la sintassi per chiamare FXC.exe, lo strumento di compilazione degli effetti. Per un esempio, vedere Compilazione offline.
+description: Ecco la sintassi per chiamare FXC.exe, lo strumento effect-compiler. Per un esempio, vedere Compilazione offline.
 ms.assetid: 3aee89bd-02e1-4de1-8552-ba36814f8464
 keywords:
 - fxc, sintassi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb39d261b239c44a02ee784f9b8c65483bbe70c1a5e9fbaf5c9c360c8272b2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9cae0305a8fdca5c9fd419cf610b0ebbb547331
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880770"
 ---
 # <a name="syntax"></a>Sintassi
 
-Ecco la sintassi per chiamare FXC.exe, lo strumento di compilazione degli effetti. Per un esempio, vedere [Compilazione offline.](dx-graphics-tools-fxc-using.md)
+Ecco la sintassi per chiamare FXC.exe, lo strumento effect-compiler. Per un esempio, vedere [Compilazione offline.](dx-graphics-tools-fxc-using.md)
 
 -   [Utilizzo](#usage)
 -   [Argomenti](#arguments)
@@ -48,13 +48,13 @@ File che contiene opzioni di compilazione aggiuntive. Questa opzione può essere
 ##### <a name="all_resources_bound"></a>/all_resources_bound
 Abilitare l'appiattimento aggressivo in SM5.1+. Novità di Direct3D 12.
 
-##### <a name="cc"></a>/cc
+##### <a name="cc"></a>/Cc
 Assembly con codifica a colori di output.
 
 ##### <a name="compress"></a>/compress
 Comprimere il bytecode dello shader DX10 dai file.
 
-##### <a name="d-idtext"></a>/D <*testo* >=< *ID*>
+##### <a name="d-idtext"></a>/D <*id* >=< *testo*>
 Definire la macro.
 
 ##### <a name="decompress"></a>/decompress
@@ -63,7 +63,7 @@ Decomprimere il bytecode dello shader DX10 dal primo file. I file di output devo
 ##### <a name="dumpbin"></a>/dumpbin
 Carica un file binario anziché compilare uno shader.
 
-##### <a name="e-name"></a>/e <name>
+##### <a name="e-ltnamegt"></a>/E &lt; name&gt;
 Punto di ingresso dello shader. Se non viene specificato alcun punto di ingresso, **main** viene considerato il nome della voce dello shader.
 
 ##### <a name="enable_unbounded_descriptor_tables"></a>/enable_unbounded_descriptor_tables
@@ -75,16 +75,16 @@ Estrarre la firma radice dal bytecode dello shader. Novità di Direct3D 12.
 ##### <a name="fc-file"></a>/Fc <*file*>
 File di listato di codice dell'assembly di output.
 
-##### <a name="fd-file"></a>File di < /Fd>
+##### <a name="fd-file"></a>File di </Fd >
 Estrarre le informazioni del database del programma shader (PDB) e scrivere nel file specificato. Quando si compila lo shader, usare /Fd per generare un file PDB con informazioni di debug dello shader.
 
 ##### <a name="fe-file"></a>File di <*/Fe*>
 Genera avvisi ed errori nel file specificato.
 
-##### <a name="fh-file"></a>File di </Fh >
+##### <a name="fh-file"></a>File di <*/Fh*>
 File di intestazione di output contenente il codice oggetto.
 
-##### <a name="fl-file"></a>File di </Fl 
+##### <a name="fl-file"></a>/Fl <*file*
 Restituisce una libreria. Richiede il compilatore D3d \_47.dll o una versione successiva della DLL.
 
 ##### <a name="fo-file"></a>File di <*/Fo*>
@@ -94,7 +94,7 @@ File oggetto di output. Spesso data l'estensione .fxc , anche se vengono usate a
 File di listato esadecimale e codice assembly di output.
 
 ##### <a name="gch"></a>/Gch
-Compilare come effetto figlio per fx_4_x profili.
+Compilare come effetto figlio per i fx_4_x personalizzati.
 
 > [!NOTE]
 > Il supporto per i profili effetti legacy è deprecato.
@@ -111,7 +111,7 @@ Abilitare la modalità strict.
 ##### <a name="getprivate-file"></a>/getprivate <*file*>
 Salvare i dati privati dal BLOB dello shader (file binario dello shader compilato) nel file specificato. Estrae i dati privati, incorporati in precedenza da /setprivate, dal BLOB dello shader.
 
-È necessario specificare l'opzione /dumpbin con /getprivate. Esempio:
+È necessario specificare l'opzione /dumpbin con /getprivate. Ad esempio:
 
 ```console
 fxc /getprivate ps01.private.data 
@@ -137,16 +137,16 @@ Percorso di inclusione aggiuntivo.
 Output di valori letterali esadecimali. Richiede il compilatore D3d \_47.dll o una versione successiva della DLL.
 
 ##### <a name="matchuavs"></a>/matchUAVs
-Trova la corrispondenza con allocazioni di slot UAV dello shader modello nello shader corrente. Per altre informazioni, <a href="#remarks">vedere La sezione Osservazioni.</a>
+Trova la corrispondenza delle allocazioni di slot UAV dello shader modello nello shader corrente. Per altre informazioni, vedere <a href="#remarks">Note.</a>
 
 ##### <a name="mergeuavs"></a>/mergeUAVs
-Unire le allocazioni di slot UAV dello shader modello e dello shader corrente. Per altre informazioni, <a href=""></a> <a href="#remarks">vedere La sezione Osservazioni.</a>
+Unire allocazioni di slot UAV dello shader modello e dello shader corrente. Per altre informazioni, vedere <a href=""></a> <a href="#remarks">Note.</a>
 
 ##### <a name="ni"></a>/Ni
 Numeri di istruzioni di output negli elenchi di assembly.
 
 ##### <a name="no"></a>/No
-Offset dei byte dell'istruzione di output negli elenchi di assembly. Quando si genera l'assembly, usare /No per annotarlo con l'offset di byte per ogni istruzione.
+Offset del byte dell'istruzione di output negli elenchi di assembly. Quando si produce un assembly, usare /No per annotarlo con l'offset di byte per ogni istruzione.
 
 ##### <a name="nologo"></a>/nologo
 Non visualizza le informazioni sul copyright.
@@ -155,25 +155,25 @@ Non visualizza le informazioni sul copyright.
 Disabilita le ottimizzazioni. /Od implica /Gfp, anche se l'output potrebbe non essere identico a /Od /Gfp.
 
 ##### <a name="op"></a>/Op
-Disabilitare i premodelli (deprecati).
+Disabilitare i preshader (deprecati).
 
 ##### <a name="o0-o1-o2-o3"></a>/O0 /O1, /O2, /O3
 Livelli di ottimizzazione. O1 è l'impostazione predefinita.
-- O0 : disabilita il riordinamento delle istruzioni. Ciò consente di ridurre il carico del registro e di velocizzare la simulazione del ciclo.
+- O0: disabilita il riordinamento delle istruzioni. Ciò consente di ridurre il carico dei registri e di velocizzare la simulazione del ciclo.
 - O1: disabilita il riordinamento delle istruzioni per ps_3_0 e verso l'alto.
-- O2: uguale a O1. Riservato per utilizzi futuri.
-- O3: uguale a O1. Riservato per utilizzi futuri.
+- O2 : uguale a O1. Riservato per utilizzi futuri.
+- O3 : uguale a O1. Riservato per utilizzi futuri.
 
 ##### <a name="p-file"></a>/P <*file*>
-Pre-elaborare in un file (deve essere usato da solo).
+Eseguire la pre-elaborazione in un file (deve essere usato da solo).
 
 ##### <a name="qstrip_debug"></a>/Qstrip_debug
 Rimuovere i dati di debug dal bytecode shader per i profili 4_0+.
 
 ##### <a name="qstrip_priv"></a>/Qstrip_priv
-Rimuovere i dati privati dal bytecode dello shader 4_0+. Rimuove i dati privati (sequenza arbitraria di byte) dal BLOB dello shader (file binario dello shader compilato) incorporato in precedenza con `/setprivate <file>` l'opzione .
+Rimuovere i dati privati dal bytecode shader 4_0+. Rimuove i dati privati (sequenza arbitraria di byte) dal BLOB shader (file binario dello shader compilato) precedentemente incorporato con `/setprivate <file>` l'opzione .
 
-È necessario specificare l'opzione /dumpbin con /Qstrip_priv. Esempio:
+È necessario specificare l'opzione /dumpbin con /Qstrip_priv. Ad esempio:
 
 ```console
 fxc /Qstrip_priv /dumpbin /Fo ps01.no.private.obj 
@@ -184,13 +184,13 @@ fxc /Qstrip_priv /dumpbin /Fo ps01.no.private.obj
 Rimuovere i dati di reflection dal bytecode shader per i profili 4_0+.
 
 ##### <a name="qstrip_rootsignature"></a>/Qstrip_rootsignature
-Rimuove la firma radice dal bytecode dello shader. Novità di Direct3D 12.
+Rimuovere la firma radice dal bytecode dello shader. Novità di Direct3D 12.
 
 ##### <a name="res_may_alias"></a>/res_may_alias
-Si supponga che UAVs/SRV possa essere un alias per cs_5_0+. Richiede il compilatore D3d \_47.dll o una versione successiva della DLL.
+Si supponga che UAV/SRV possano essere alias per cs_5_0+. Richiede il compilatore D3d \_47.dll o una versione successiva della DLL.
 
 ##### <a name="setprivate-file"></a>/setprivate <*file*>
-Aggiungere i dati privati nel file specificato al BLOB dello shader compilato. Incorpora il file specificato, che viene considerato come un buffer non elaborato, nel BLOB dello shader. Usare /setprivate per aggiungere dati privati quando si compila uno shader. In caso contrario, usare l'opzione /dumpbin con /setprivate per caricare un oggetto shader esistente e quindi, dopo che l'oggetto è in memoria, aggiungere il BLOB di dati privato. Ad esempio, usare un singolo comando con /setprivate per aggiungere dati privati a un BLOB shader compilato:
+Aggiungere dati privati nel file specificato al BLOB dello shader compilato. Incorpora il file specificato, che viene considerato come buffer non elaborato, nel BLOB shader. Usare /setprivate per aggiungere dati privati quando si compila uno shader. In caso contrario, usare l'opzione /dumpbin con /setprivate per caricare un oggetto shader esistente e quindi dopo che l'oggetto è in memoria, per aggiungere il BLOB di dati privato. Ad esempio, usare un singolo comando con /setprivate per aggiungere dati privati a un BLOB shader compilato:
 
 ```console
 fxc /T ps_4_0 /Fo ps01.with.private.obj ps01.fx 
@@ -208,8 +208,8 @@ fxc /dumpbin /Fo ps01.with.private.obj ps01.no.private.obj
 ##### <a name="setrootsignature-file"></a>/setrootsignature <*file*>
 Associa la firma radice al bytecode dello shader. Novità di Direct3D 12.
 
-##### <a name="shtemplate-file"></a>File di </shtemplate >
-Usare il file shader modello specificato per unire (/mergeUAVs) e le risorse corrispondenti (/matchUAVs). Per altre informazioni, <a href="#remarks">vedere La sezione Osservazioni.</a>
+##### <a name="shtemplate-file"></a>/shtemplate <*file*>
+Usare il file shader del modello specificato per unire (/mergeUAVs) e le risorse corrispondenti (/matchUAVs). Per altre informazioni, vedere <a href="#remarks">Note.</a>
 
 ##### <a name="vd"></a>/Vd
 Disabilitare la convalida.
@@ -221,7 +221,7 @@ Verificare il bytecode dello shader rispetto alla firma radice. Novità di Direc
 Visualizzare i dettagli sul processo di inclusione.
 
 ##### <a name="vn-name"></a>/Vn <*nome*>
-Usare name come nome della variabile nel file di intestazione.
+Usare name come nome di variabile nel file di intestazione.
 
 ##### <a name="wx"></a>/WX
 Considerare gli avvisi come errori.
@@ -230,10 +230,10 @@ Considerare gli avvisi come errori.
 Abilita le informazioni di debug.
 
 ##### <a name="zpc"></a>/Zpc
-Matrici di tipo pack in ordine di colonna principale.
+Eseguire il pack delle matrici nell'ordine delle colonne principali.
 
 ##### <a name="zpr"></a>/Zpr
-Matrici di tipo pack nell'ordine principale della riga.
+Eseguire il pack delle matrici in ordine principale di riga.
 
 ### <a name="filenames"></a>*Nomi file*
 
@@ -241,17 +241,17 @@ Matrici di tipo pack nell'ordine principale della riga.
 
 ## <a name="remarks"></a>Commenti
 
-Usare le opzioni , e per allineare gli slot di `/mergeUAVs` associazione `/matchUAVs` `/shtemplate` UAV per una catena di shader.
+Usare le `/mergeUAVs` opzioni , e per `/matchUAVs` `/shtemplate` allineare gli slot di associazione UAV per una catena di shader.
 
 Si supponga di avere shader A.fx, B.fx e C.fx. Per allineare gli slot di associazione UAV per questa catena di shader, sono necessari due passaggi di compilazione:
 
 **Per allineare gli slot di associazione UAV per una catena di shader**
 
-1.  Usare /mergeUAVs per compilare gli shader e specificare un BLOB di shader compilato in precedenza con /shtemplate. Esempio:
+1.  Usare /mergeUAVs per compilare shader e specificare un BLOB shader compilato in precedenza con /shtemplate. Ad esempio:
     ```
     fxc.exe /T cs_5_0 C.fx /Fo C.o /mergeUAVs /shtemplate Btmp.o
     ```
-2.  Usare /matchUAVs per compilare gli shader e specificare l'ultimo BLOB shader dal primo passaggio con /shtemplate. È possibile eseguire la compilazione in qualsiasi ordine. Esempio:
+2.  Usare /matchUAVs per compilare gli shader e specificare l'ultimo BLOB shader del primo passaggio con /shtemplate. È possibile eseguire la compilazione in qualsiasi ordine. Ad esempio:
     ```
     fxc.exe /T cs_5_0 A.fx /Fo A.o /matchUAVs /shtemplate C.o
     ```
@@ -261,9 +261,9 @@ Dopo aver eseguito i due passaggi di compilazione precedenti, è possibile usare
 
 ## <a name="profiles"></a>Profiles
 
-Ogni modello di shader è etichettato con un profilo HLSL. Per compilare uno shader in base a un modello di shader specifico, scegliere il profilo di shader appropriato nella tabella seguente.
+Ogni modello shader è etichettato con un profilo HLSL. Per compilare uno shader in base a un particolare modello shader, scegliere il profilo shader appropriato nella tabella seguente.
 
-<table><thead><tr class="header"><th>Tipo shader</th><th>Profiles</th></tr></thead><tbody><tr class="odd"><td>Compute Shader</td><td><dl> cs_4_0<br />
+<table><thead><tr class="header"><th>Tipo shader</th><th>Profiles</th></tr></thead><tbody><tr class="odd"><td>Shader di calcolo</td><td><dl> cs_4_0<br />
 cs_4_1<br />
 cs_5_0<br />
 cs_5_1<br />
@@ -273,7 +273,7 @@ ds_5_1<br />
 gs_4_1<br />
 gs_5_0<br />
 gs_5_1<br />
-</dl></td></tr><tr class="even"><td>Collegamento di shader HLSL </td><td><dl> lib_4_0<br />
+</dl></td></tr><tr class="even"><td>Collegamento dello shader HLSL </td><td><dl> lib_4_0<br />
 lib_4_1<br />
 lib_4_0_level_9_1<br />
 lib_4_0_level_9_1_vs_only<br />
@@ -282,7 +282,7 @@ lib_4_0_level_9_3<br />
 lib_4_0_level_9_3_vs_only<br />
 lib_4_0_level_9_3_ps_only<br />
 lib_5_0<br />
-</dl> Per altre informazioni sul collegamento dello shader, vedi <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker"><strong>ID3D11Linker</strong></a> e <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph"><strong>ID3D11FunctionLinkingGraph.</strong></a> <br/></td></tr><tr class="odd"><td>Hull shader</td><td><dl> hs_5_0<br />
+</dl> Per altre informazioni sul collegamento dello shader, vedere <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker"><strong>ID3D11Linker</strong></a> e <a href="/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph"><strong>ID3D11FunctionLinkingGraph.</strong></a> <br/></td></tr><tr class="odd"><td>Hull shader</td><td><dl> hs_5_0<br />
 hs_5_1<br />
 </dl></td></tr><tr class="even"><td>Pixel shader</td><td><dl> ps_2_0<br />
 ps_2_a<br />
@@ -298,7 +298,7 @@ ps_4_1<br />
 ps_5_0<br />
 ps_5_1<br />
 </dl></td></tr><tr class="odd"><td>Firma radice</td><td><dl> rootsig_1_0<br />
-</dl></td></tr><tr class="even"><td>Shader con trama</td><td><dl> tx_1_0<br />
+</dl></td></tr><tr class="even"><td>Shader di trama</td><td><dl> tx_1_0<br />
 </dl></td></tr><tr class="odd"><td>Vertex shader</td><td><dl> vs_1_1<br />
 vs_2_0<br />
 vs_2_a<br />
@@ -316,14 +316,14 @@ vs_5_1<br />
 
 ## <a name="version-notes"></a>Note sulla versione
 
-Per Direct3D 12, vedere [Specifying Root Signatures in HLSL](/windows/desktop/direct3d12/specifying-root-signatures-in-hlsl)(Specifica delle firme radice in HLSL), Resource Binding in HLSL (Associazione di risorse [in HLSL)](/windows/desktop/direct3d12/resource-binding-in-hlsl) e [Dynamic Indexing using HLSL 5.1](/windows/desktop/direct3d12/dynamic-indexing-using-hlsl-5-1)(Associazione di risorse in HLSL e indicizzazione dinamica tramite HLSL 5.1).
+Per Direct3D 12, vedere Specifica delle firme radice [in HLSL,](/windows/desktop/direct3d12/specifying-root-signatures-in-hlsl)Associazione di risorse [in HLSL](/windows/desktop/direct3d12/resource-binding-in-hlsl) e Indicizzazione dinamica [tramite HLSL 5.1.](/windows/desktop/direct3d12/dynamic-indexing-using-hlsl-5-1)
 
-In Direct3D 10 usare l'API per ottenere il profilo vertice, geometria e pixel shader più adatto a un determinato dispositivo chiamando queste funzioni: [**D3D10GetVertexShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getvertexshaderprofile), [**D3D10GetPixelShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getpixelshaderprofile) [**e D3D10GetGeometryShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getgeometryshaderprofile).
+In Direct3D 10 usare l'API per ottenere il profilo vertice, geometria e pixel shader più adatto a un determinato dispositivo chiamando queste funzioni: [**D3D10GetVertexShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getvertexshaderprofile), [**D3D10GetPixelShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getpixelshaderprofile)e [**D3D10GetGeometryShaderProfile**](/windows/desktop/api/d3d10shader/nf-d3d10shader-d3d10getgeometryshaderprofile).
 
-In Direct3D 9 usare i [**metodi GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps) o [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdevicecaps) per recuperare i profili vertice e pixel shader supportati da un dispositivo. La [**struttura D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) restituita da questi metodi indica i profili vertice e pixel shader supportati da un dispositivo nei relativi **membri VertexShaderVersion** e **PixelShaderVersion.**
+In Direct3D 9 usare i [**metodi GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps) o [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdevicecaps) per recuperare i profili vertice e pixel shader supportati da un dispositivo. La [**struttura D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) restituita da questi metodi indica i profili vertice e pixel shader supportati da un dispositivo nei relativi membri **VertexShaderVersion** e **PixelShaderVersion.**
 
-Per esempi, vedere [Compilazione con il compilatore corrente.](dx-graphics-tools-fxc-using.md)
+Per esempi, vedere [Compilazione con il compilatore corrente](dx-graphics-tools-fxc-using.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [Strumento compilatore effetti](fxc.md)
+* [Strumento effect-compiler](fxc.md)

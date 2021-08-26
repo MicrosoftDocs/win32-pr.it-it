@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_ENUMCOLUMNID'
-title: Struttura JET_ENUMCOLUMNID
+description: 'Altre informazioni su: JET_ENUMCOLUMNID Structure'
+title: JET_ENUMCOLUMNID struttura
 TOCTitle: JET_ENUMCOLUMNID Structure
 ms:assetid: 5480ebf1-4fc9-49b5-bbb3-12542b86c8f1
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269251(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 356b2a31c682a6ed0392a875c606cfaf20f1aeea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21f28e160f1c31dac909e02bf64acba0ae230305
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526083"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479644"
 ---
-# <a name="jet_enumcolumnid-structure"></a>Struttura JET_ENUMCOLUMNID
+# <a name="jet_enumcolumnid-structure"></a>JET_ENUMCOLUMNID struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_enumcolumnid-structure"></a>Struttura JET_ENUMCOLUMNID
+## <a name="jet_enumcolumnid-structure"></a>JET_ENUMCOLUMNID struttura
 
-La struttura **JET_ENUMCOLUMNID** enumera un set specifico di colonne e, facoltativamente, un set specifico di più valori per tali colonne quando viene utilizzata la funzione [JetEnumerateColumns](./jetenumeratecolumns-function.md) . [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice di strutture di **JET_ENUMCOLUMNID** .
+La **JET_ENUMCOLUMNID** enumera un set specifico di colonne e, facoltativamente, un set specifico di più valori per tali colonne quando viene usata la funzione [JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice **di** JET_ENUMCOLUMNID strutture.
 
 ```cpp
     typedef struct {
@@ -41,46 +41,29 @@ La struttura **JET_ENUMCOLUMNID** enumera un set specifico di colonne e, facolta
 
 ### <a name="members"></a>Membri
 
-**ColumnID**
+**columnid**
 
 ID di colonna da enumerare.
 
-Se l'ID di colonna è 0 (zero), l'enumerazione di questa colonna verrà ignorata e verrà generato uno slot corrispondente nella matrice di output di [JET_ENUMCOLUMN](./jet-enumcolumn-structure.md) strutture con lo stato della colonna JET_wrnColumnSkipped.
+Se l'ID colonna è 0 (zero), l'enumerazione di questa colonna viene ignorata e viene generato uno slot corrispondente nella matrice di output delle strutture [JET_ENUMCOLUMN](./jet-enumcolumn-structure.md) con stato di colonna JET_wrnColumnSkipped.
 
 **ctagSequence**
 
-Identifica facoltativamente una matrice di valori di colonna (in base a un indice in base 1) da enumerare per l'ID di colonna specificato.
+Identifica facoltativamente una matrice di valori di colonna (in base all'indice in base uno) da enumerare per l'ID di colonna specificato.
 
 Se **ctagSequence** è 0 (zero), **rgtagSequence** viene ignorato e verranno enumerati tutti i valori di colonna per l'ID di colonna specificato.
 
-Se un elemento di **rgtagSequence** è 0 (zero), l'enumerazione del valore della colonna (in base a un indice in base 1) verrà ignorata. Uno slot corrispondente nella matrice di output della struttura **JET_ENUMCOLUMNID** verrà generato con un valore di stato della colonna pari a JET_wrnColumnSkipped.
+Se un elemento **di rgtagSequence** è 0 (zero), l'enumerazione di tale valore di colonna (in base all'indice in base uno) verrà ignorata. Uno slot corrispondente nella matrice di output della **struttura JET_ENUMCOLUMNID** verrà generato con un valore di stato della colonna JET_wrnColumnSkipped.
 
 **rgtagSequence**
 
-Matrice di indici in base uno nella matrice di valori di colonna per una colonna specificata. Un singolo elemento è un **itagSequence** definito in [JET_RETRIEVECOLUMN](./jet-retrievecolumn-structure.md). Un **itagSequence** di 0 (zero) indica "Skip". Un **itagSequence** di 1 indica che restituisce il primo valore della colonna, 2 indica il secondo e così via.
+Matrice di indici in base uno nella matrice di valori di colonna per una determinata colonna. Un singolo elemento è **un elemento itagSequence** definito [in](./jet-retrievecolumn-structure.md)JET_RETRIEVECOLUMN . Un **valore itagSequence** pari a 0 (zero) indica "skip". Un **valore itagSequence** pari a 1 indica che restituisce il valore della prima colonna della colonna, 2 indica la seconda e così via.
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

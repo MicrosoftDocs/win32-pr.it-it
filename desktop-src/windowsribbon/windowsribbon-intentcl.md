@@ -1,6 +1,6 @@
 ---
 title: Compilazione del markup della barra multifunzione
-description: Per l Windows framework della barra multifunzione per utilizzare il file di markup della barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario.
+description: Perché il framework Windows barra multifunzione per utilizzare il file di markup della barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario.
 ms.assetid: ef9fea92-8c67-461d-9d74-2e259e407fb0
 keywords:
 - Windows Barra multifunzione, compilazione di markup
@@ -14,16 +14,16 @@ keywords:
 - compilazione di markup Windows barra multifunzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85534a05b3bde59cc2ec0eec482d8c3b47e898d39ad988c595fbac33eb5e9f36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cefd64103ceb501e8f4d23e937a242e910b0cad5
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932566"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884903"
 ---
 # <a name="compiling-ribbon-markup"></a>Compilazione del markup della barra multifunzione
 
-Per l Windows framework della barra multifunzione per utilizzare il file di [markup](windowsribbon-schema.md) della barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario. Un compilatore di markup dedicato, UICC (UICC), è incluso in Windows Software Development Kit (SDK) (7.0 o versione successiva) a questo scopo. Oltre a compilare la versione binaria del markup, UICC genera un file di intestazione di definizione ID (con estensione h) che espone tutti gli elementi di markup all'applicazione host della barra multifunzione e un file di risorse (RC) usato per collegare le risorse immagine e stringa all'applicazione host in fase di compilazione.
+Perché il framework Windows barra multifunzione sia in grado di utilizzare il file di [markup della](windowsribbon-schema.md) barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario. Un compilatore di markup dedicato, UICC (UI Command Compiler), è incluso in Windows Software Development Kit (SDK) (7.0 o versione successiva) a questo scopo. Oltre a compilare la versione binaria del markup, UICC genera un file di intestazione di definizione ID (con estensione h) che espone tutti gli elementi di markup all'applicazione host della barra multifunzione e un file di risorse (RC) usato per collegare le risorse immagine e stringa all'applicazione host in fase di compilazione.
 
 -   [Flusso di lavoro del compilatore](#compiler-workflow)
 -   [Sintassi della riga di comando](#command-line-syntax)
@@ -35,7 +35,7 @@ Per l Windows framework della barra multifunzione per utilizzare il file di [mar
 
 Il flusso di lavoro del compilatore di markup della barra multifunzione è illustrato nel diagramma seguente.
 
-![diagramma che mostra il flusso di lavoro del compilatore di markup della barra multifunzione.](images/overviews/overviews-intentcl.png)
+![Diagramma che mostra il flusso di lavoro del compilatore di markup della barra multifunzione.](images/overviews/overviews-intentcl.png)
 
 ## <a name="command-line-syntax"></a>Sintassi della riga di comando
 
@@ -61,8 +61,8 @@ Gli argomenti e le opzioni per questo strumento sono descritti nella tabella seg
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,8 +72,8 @@ Gli argomenti e le opzioni per questo strumento sono descritti nella tabella seg
 </thead>
 <tbody>
 <tr class="odd">
-<td>/header:<headerFile></td>
-<td>Generare un file di intestazione denominato <headerFile> che contiene i simboli di risorsa ID comando di markup. Se omesso, non viene generato un file di intestazione.</td>
+<td>/header: &lt; headerFile&gt;</td>
+<td>Generare un file di intestazione denominato &lt; headerFile &gt; che contiene i simboli della risorsa ID comando di markup. Se omesso, non viene generato un file di intestazione.</td>
 </tr>
 <tr class="even">
 <td>/res:<resourceFile></td>
@@ -98,7 +98,7 @@ Gli argomenti e le opzioni per questo strumento sono descritti nella tabella seg
 </tr>
 <tr class="odd">
 <td><strong>2</strong><br/></td>
-<td>Valore predefinito. <br/> Messaggi informativi, di avviso e di errore.<br/></td>
+<td>Valore predefinito. <br/> Messaggi di errore, di avviso e informativi.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ Gli argomenti e le opzioni per questo strumento sono descritti nella tabella seg
 
 ### <a name="example"></a>Esempio
 
-L'esempio seguente illustra come usare il compilatore di markup della barra multifunzione per generare un tipico set di file di risorse per un'applicazione barra multifunzione.
+L'esempio seguente illustra come usare il compilatore di markup della barra multifunzione per generare un set tipico di file di risorse per un'applicazione della barra multifunzione.
 
 `UICC.exe RibbonMarkup.xml RibbonMarkup.bml /header:RibbonIds.h /res:RibbonUI.rc`
 

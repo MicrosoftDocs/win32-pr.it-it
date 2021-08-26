@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo EndOfStream notifica al pin che non sono previsti dati aggiuntivi, fino a quando non viene emesso un nuovo comando Run nel filtro. Questo metodo implementa il metodo IPin:: EndOfStream.'
+description: Il metodo EndOfStream notifica al pin che non sono previsti dati aggiuntivi, fino a quando non viene eseguito un nuovo comando run per il filtro. Questo metodo implementa il metodo IPin::EndOfStream.
 ms.assetid: 915beab4-2fc3-4acd-bb30-c0851df058db
-title: Metodo CRenderedInputPin. EndOfStream (Amextra. h)
+title: Metodo CRenderedInputPin.EndOfStream (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c836b1098c92a69fa720fb7b87e4a63b3c05a526
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26f7a5075e06a3943978a8e938f034fbabcaddfa31c9ffa2a2b37d33a0120640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107991"
 ---
-# <a name="crenderedinputpinendofstream-method"></a>CRenderedInputPin. EndOfStream, metodo
+# <a name="crenderedinputpinendofstream-method"></a>Metodo CRenderedInputPin.EndOfStream
 
-Il `EndOfStream` metodo notifica al pin che non sono previsti dati aggiuntivi, fino a quando non viene emesso un nuovo comando Run nel filtro. Questo metodo implementa il metodo [**Ipin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) .
+Il metodo notifica al pin che non sono previsti dati aggiuntivi, fino a quando non viene eseguito un nuovo comando `EndOfStream` run per il filtro. Questo metodo implementa il [**metodo IPin::EndOfStream.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,13 +42,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se l'esito è positivo o un codice di errore.
+Restituisce S \_ OK in caso di esito positivo oppure un codice di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se il filtro è in esecuzione, questo metodo invia un evento [**EC \_ complete**](ec-complete.md) al gestore del grafico dei filtri. In caso contrario, viene impostato un flag in modo che l' \_ evento di completamento EC venga inviato al successivo esecuzione del filtro. Lo svuotamento del filtro Cancella il flag.
+Se il filtro è in esecuzione, questo metodo invia un evento [**EC \_ COMPLETE**](ec-complete.md) a Filter Graph Manager. In caso contrario, viene impostato un flag in modo che l'evento EC \_ COMPLETE venga inviato alla successiva esecuzione del filtro. Lo scaricamento del filtro cancella il flag.
 
-È necessario eseguire l'override di questo metodo per mantenere il blocco di streaming del PIN:
+È necessario eseguire l'override di questo metodo per contenere il blocco di streaming del pin:
 
 
 ```C++
@@ -71,7 +71,7 @@ STDMETHODIMP CMyInputPin::EndOfStream(void)
 
 
 
-Se, inoltre, il filtro elabora **le chiamate in** modo asincrono, il PIN deve attendere l'invio dell'evento di completamento EC fino a \_ quando il filtro non ha elaborato tutti gli esempi in sospeso.
+Inoltre, se il filtro elabora le chiamate **Receive** in modo asincrono, il pin deve attendere l'invio dell'evento EC COMPLETE fino a quando il filtro \_ non ha elaborato tutti i campioni in sospeso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se, inoltre, il filtro elabora **le chiamate in** modo asincrono, il PIN deve at
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amextra. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amextra.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Tipi di dati dell'API del componente del protocollo WebSocket (WebSocket. h)
+title: Tipi di dati dell'API del componente del protocollo WebSocket (Websocket.h)
 description: L'API del componente del protocollo WebSocket definisce questi tipi di dati.
 ms.assetid: D5D42785-CFAC-4324-9194-1BA8056FBAA1
 keywords:
 - WEB_SOCKET_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5111817b5bee202474b45f7a4280cf3c0e2d8703
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ead8fc6cb6e79a78001b1106345203996a07f27158a26df8e7f42516937b29a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071991"
 ---
 # <a name="websocket-protocol-component-api-data-types"></a>Tipi di dati dell'API del componente del protocollo WebSocket
 
@@ -30,9 +30,9 @@ typedef PVOID WEB_SOCKET_HANDLE;
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WebSocket. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Websocket.h</dt> </dl> |
 
 
 

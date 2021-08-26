@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 536ef3bba465f6d152e3483436c1dc1e82277339
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca4478684e79dfb698dd30bb21132f597129fdac
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315647"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479337"
 ---
 # <a name="jet_pwstr"></a>JET_PWSTR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_pwstr"></a>JET_PWSTR
 
-Il tipo di dati **JET_PWSTR** contiene una stringa **Unicode** con terminazione null (char \* ).
+Il **JET_PWSTR** dati contiene una stringa Unicode con terminazione **Null** (char \* ).
 
 **Windows Vista: JET_PWSTR** è stato introdotto in Windows Vista.
 
@@ -41,28 +41,11 @@ Il tipo di dati **JET_PWSTR** contiene una stringa **Unicode** con terminazione 
 
 JET_PWSTR
 
-Con terminazione null, stringa Unicode (char \* ).
+Stringa Unicode con terminazione Null (char \* ).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 

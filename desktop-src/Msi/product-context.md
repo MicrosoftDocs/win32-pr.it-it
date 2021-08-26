@@ -1,7 +1,7 @@
 ---
-description: La proprietà di contesto restituisce il contesto di questo prodotto.
+description: La proprietà Context restituisce il contesto di questo prodotto.
 ms.assetid: aa772a95-eb4e-45af-9788-9833d62139e8
-title: Proprietà Product. Context
+title: Product.Context - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 8334ca57d552681afeb77d0b213eca8b92bc1234
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21fb23a595b1f479f2468f0006cca7cd9218de03fc2cc76b794caae79ea45a24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129121"
 ---
-# <a name="productcontext-property"></a>Proprietà Product. Context
+# <a name="productcontext-property"></a>Product.Context - proprietà
 
-La proprietà di **contesto** restituisce il contesto di questo prodotto.
+La **proprietà Context** restituisce il contesto di questo prodotto.
 
 Questa proprietà è di sola lettura.
 
@@ -45,9 +45,9 @@ Questa proprietà può restituire uno dei valori seguenti.
 
 | Context                        | Valore | Significato                           |
 |--------------------------------|-------|-----------------------------------|
-| \_USERMANAGED MSIINSTALLCONTEXT | 1     | Prodotti in contesto gestito.   |
-| \_utente MSIINSTALLCONTEXT        | 2     | Prodotti in contesto non gestito. |
-| \_computer MSIINSTALLCONTEXT     | 4     | Prodotti in contesto computer.   |
+| MSIINSTALLCONTEXT \_ USERMANAGED | 1     | Prodotti nel contesto gestito.   |
+| UTENTE \_ MSIINSTALLCONTEXT        | 2     | Prodotti nel contesto non gestito. |
+| COMPUTER \_ MSIINSTALLCONTEXT     | 4     | Prodotti nel contesto del computer.   |
 
 
 
@@ -59,7 +59,7 @@ Questa proprietà può restituire uno dei valori seguenti.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
@@ -72,7 +72,7 @@ Questa proprietà può restituire uno dei valori seguenti.
 [**Prodotto**](product-object.md)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

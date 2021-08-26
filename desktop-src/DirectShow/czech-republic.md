@@ -4,12 +4,12 @@ ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: Repubblica Ceca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: cadcc51becba548bcbd59421866bebaf52c624bfe1913bf01f4b87af15d287bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998438"
 ---
 # <a name="czech-republic"></a>Repubblica Ceca
 

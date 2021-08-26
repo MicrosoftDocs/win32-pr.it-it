@@ -7,18 +7,18 @@ MSHAttr:
 title: PurposeGroups
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370cf6b0dc13848ca21a2a06e0b9806d753878c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3b158938e1a41f6ab8d3f1df0cae6a2166bc21c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306788"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630937"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupsspanpurposegroups"></a><span id="WWAN_profile_v4.element_PurposeGroups"></span>PurposeGroups
 
-Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili utilizzati per uno scopo comune.
+Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili usati per uno scopo comune.
 
-Questo elemento è nuovo per la V4 dello schema.
+Questo elemento è nuovo per la versione 4 dello schema.
 
 Un profilo può essere elencato in più gruppi.
 
@@ -46,14 +46,14 @@ Un profilo può essere elencato in più gruppi.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,12 +65,12 @@ Nessuna.
 <tr class="odd">
 <td><a href="element-purposegroupguid.md">PurposeGroupGuid</a></td>
 <td><p>Rappresenta un profilo in un PurposeGroup di profili.</p>
-<p>I profili sono specificati dal relativo valore <a href="simpletype-guidtype.md"><strong>guidType</strong></a> .</p>
-<p>Sono definiti quattro valori GUID, elencati nella tabella seguente.</p>
+<p>I profili vengono specificati dal relativo <a href="simpletype-guidtype.md"><strong>valore guidType.</strong></a></p>
+<p>Vengono definiti quattro valori GUID, come elencato nella tabella seguente.</p>
 <table>
 <thead>
 <tr class="header">
-<th>Gruppo scopo</th>
+<th>Gruppo di scopi</th>
 <th>GUID</th>
 </tr>
 </thead>
@@ -104,8 +104,8 @@ Nessuna.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -116,8 +116,8 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>L'elemento <strong>MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo a banda larga mobile con un set di opzioni più completo rispetto all'elemento MBNProfile.</p>
-<p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare l'elemento figlio <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono il profilo attivo un profilo specifico.</p></td>
+<td><p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set più ricco di opzioni rispetto all'elemento MBNProfile.</p>
+<p>In un profilo possono essere presenti più elementi MbnProfileExt che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -128,8 +128,8 @@ Nessuna.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

@@ -189,7 +189,7 @@
           items:
             - name: D2D con D3D11on12
               href: d2d-using-d3d11on12.md
-            - name: Simulazione della gravità n-corpo a più motori
+            - name: Simulazione della gravità n-corpo multimotore
               href: multi-engine-n-body-gravity-simulation.md
             - name: Query di predicazione
               href: predication-queries.md
@@ -569,7 +569,7 @@
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker
                     - name: SetPipelineState
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate
-                    - name: Impostazione della predicazione
+                    - name: SetPredication
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication
                     - name: SOSetTargets
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-sosettargets
@@ -655,7 +655,7 @@
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12object-setname
                     - name: SetPrivateData
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12object-setprivatedata
-                    - name: Interfaccia SetPrivateDataInterface
+                    - name: SetPrivateDataInterface
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12object-setprivatedatainterface
                 - name: ID3D12Pageable
                   href: /windows/win32/api/d3d12/nn-d3d12-id3d12pageable
@@ -720,6 +720,11 @@
                   items:
                     - name: GetRootSignatureDesc
                       href: /windows/win32/api/d3d12/nf-d3d12-id3d12rootsignaturedeserializer-getrootsignaturedesc
+                - name: ID3D12SDKConfiguration
+                  href: /windows/win32/api/d3d12/nn-d3d12-id3d12sdkconfiguration
+                  items:
+                    - name: SetSDKVersion
+                      href: /windows/win32/api/d3d12/nf-d3d12-id3d12sdkconfiguration-setsdkversion
                 - name: ID3D12ShaderCacheSession
                   href: /windows/win32/api/d3d12/nn-d3d12-id3d12shadercachesession
                   items:
@@ -771,6 +776,8 @@
                   href: /windows/win32/api/d3d12/nf-d3d12-d3d12enableexperimentalfeatures
                 - name: D3D12GetDebugInterface
                   href: /windows/win32/api/d3d12/nf-d3d12-d3d12getdebuginterface
+                - name: D3D12GetInterface
+                  href: /windows/win32/api/d3d12/nf-d3d12-d3d12getinterface
                 - name: D3D12SerializeRootSignature
                   href: /windows/win32/api/d3d12/nf-d3d12-d3d12serializerootsignature
                 - name: D3D12SerializeVersionedRootSignature
@@ -1572,9 +1579,9 @@
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-getstoragefilter
                     - name: GetStorageFilterStackSize
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-getstoragefilterstacksize
-                    - name: Filtro PopRetrieval
+                    - name: PopRetrievalFilter
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-popretrievalfilter
-                    - name: Filtro di archiviazione popstorage
+                    - name: PopStorageFilter
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-popstoragefilter
                     - name: PushCopyOfRetrievalFilter
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12infoqueue-pushcopyofretrievalfilter
@@ -1605,7 +1612,7 @@
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12sharingcontract-present
                     - name: Metodo SharedFenceSignal
                       href: /windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12sharingcontract-sharedfencesignal
-            - name: Eseguire il debug delle strutture dei livelli
+            - name: Eseguire il debug delle strutture del livello
               href: direct3d-12-sdklayers-structures.md
               items:
                 - name: D3D12_DEBUG_COMMAND_LIST_GPU_BASED_VALIDATION_SETTINGS
@@ -1643,7 +1650,7 @@
                   href: /windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_message_severity
                 - name: D3D12_RLDO_FLAGS
                   href: /windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_rldo_flags
-        - name: Informazioni di riferimento per lo shader
+        - name: Informazioni di riferimento su shader
           href: d3d12-graphics-reference-shader-reference.md
           items:
             - name: Interfacce shader
@@ -1840,7 +1847,7 @@
                   items:
                     - name: BlendStateCb
                       href: id3dx12pipelineparsercallbacks-blendstatecb.md
-                    - name: CSCb
+                    - name: CSCB
                       href: id3dx12pipelineparsercallbacks-cscb.md
                     - name: CachedPSOCb
                       href: id3dx12pipelineparsercallbacks-cachedpsocb.md
@@ -1870,7 +1877,7 @@
                       href: id3dx12pipelineparsercallbacks-inputlayoutcb.md
                     - name: NodeMaskCb
                       href: id3dx12pipelineparsercallbacks-nodemaskcb.md
-                    - name: PSCb
+                    - name: PSCB
                       href: id3dx12pipelineparsercallbacks-pscb.md
                     - name: PrimitiveTopologyTypeCb
                       href: id3dx12pipelineparsercallbacks-primitivetopologytypecb.md
@@ -2101,7 +2108,7 @@
                   items:
                     - name: RAY_FLAG
                       href: ray_flag.md
-                - name: Intrinseci HLSL direct3D 12 Raytracing
+                - name: Oggetti intrinseci HLSL raytracing di Direct3D 12
                   href: direct3d-12-raytracing-hlsl-intrinsics.md
                   items:
                     - name: Funzione AcceptHitAndEndSearch
@@ -2114,27 +2121,27 @@
                       href: reporthit-function.md
                     - name: Funzione TraceRay
                       href: traceray-function.md
-                - name: Tipi di risorse HLSL Direct3D 12 Raytracing
+                - name: Tipi di risorse HLSL Di Direct3D 12 Raytracing
                   href: direct3d-12-raytracing-hlsl-resource-types.md
                   items:
                     - name: RaytracingAccelerationStructure
                       href: raytracingaccelerationstructure.md
-                - name: Shader HLSL Direct3D 12 Raytracing
+                - name: Shader HLSL Raytracing Direct3D 12
                   href: direct3d-12-raytracing-hlsl-shaders.md
                   items:
                     - name: Qualsiasi hit shader
                       href: any-hit-shader.md
                     - name: Shader chiamabile
                       href: callable-shader.md
-                    - name: Hit Shader più vicino
+                    - name: Hit shader più vicino
                       href: closest-hit-shader.md
-                    - name: Shader di intersezione
+                    - name: Intersection Shader
                       href: intersection-shader.md
                     - name: Miss Shader
                       href: miss-shader.md
-                    - name: Shader di generazione di raggi
+                    - name: Ray Generation Shader
                       href: ray-generation-shader.md
-                - name: Strutture HLSL Direct3D 12 Raytracing
+                - name: Strutture HLSL di Raytracing Direct3D 12
                   href: direct3d-12-raytracing-hlsl-structures.md
                   items:
                     - name: Struttura dei parametri di chiamata
@@ -2145,12 +2152,12 @@
                       href: ray-payload.md
                     - name: Struttura RayDesc
                       href: raydesc.md
-                - name: Intrinseci del valore di sistema HLSL raytracing direct3D 12
+                - name: Oggetti intrinseci dei valori di sistema HLSL raytracing di Direct3D 12
                   href: direct3d-12-raytracing-hlsl-system-value-intrinsics.md
         - name: Direct3D 12 in Windows 7
           href: direct3d-12on7-reference.md
           items:
-            - name: Direct3D 12 Windows 7 interfacce
+            - name: Interfacce Direct3D 12 Windows 7
               href: direct3d-12on7-interfaces.md
               items:
                 - name: ID3D12CommandQueueDownlevel
@@ -2163,7 +2170,7 @@
                   items:
                     - name: 'ID3D12DeviceDownlevel::QueryVideoMemoryInfo'
                       href: id3d12devicedownlevel-queryvideomemoryinfo.md
-            - name: Direct3D 12 Windows 7 enumerazioni
+            - name: Enumerazioni Direct3D 12 Windows 7
               href: direct3d-12on7-enumerations.md
               items:
                 - name: D3D12_DOWNLEVEL_PRESENT_FLAGS
@@ -2209,5 +2216,5 @@
               items:
                 - name: CommitDirect3D12Resource
                   href: /windows/win32/api/windows.graphics.holographic.interop/nf-windows-graphics-holographic-interop-iholographicquadlayerupdateparametersinterop-commitdirect3d12resource
-    - name: Glossario Direct3D 12
+    - name: Glossario di Direct3D 12
       href: directx-12-glossary.md

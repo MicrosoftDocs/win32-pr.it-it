@@ -1,25 +1,25 @@
 ---
-description: L' <searchConnectorDescriptionType> elemento è il contenitore di livello principale per la definizione del connettore di ricerca.
+description: "&lt;L'elemento searchConnectorDescriptionType &gt; è il contenitore di primo livello per la definizione del connettore di ricerca."
 ms.assetid: a6b45864-210d-4099-804d-7548fd8eb562
 title: Elemento searchConnectorDescriptionType (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7edb69647567b7e18e25e11dcd0fc773d0be7902
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f89621ab34f65fb3c3b1f8e88bbdc8dca246b8d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306071"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885079"
 ---
 # <a name="searchconnectordescriptiontype-element-search-connector-schema"></a>Elemento searchConnectorDescriptionType (schema del connettore di ricerca)
 
-L' <searchConnectorDescriptionType> elemento è il contenitore di livello principale per la definizione del connettore di ricerca.
+&lt;L'elemento searchConnectorDescriptionType &gt; è il contenitore di primo livello per la definizione del connettore di ricerca.
 
 -   [Sintassi](#syntax)
 -   [Informazioni sull'elemento](#element-information)
 -   [Attributes (Attributi)](#attributes)
 -   [Osservazioni:](#remarks)
--   [Esempio di un file di descrizione del connettore di ricerca](#example-of-a-search-connector-description-file)
+-   [Esempio di file di descrizione del connettore di ricerca](#example-of-a-search-connector-description-file)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="syntax"></a>Sintassi
@@ -114,19 +114,19 @@ L' <searchConnectorDescriptionType> elemento è il contenitore di livello princi
 |                | [Elemento isSearchOnlyItem (schema del connettore di ricerca)](search-schema-sconn-issearchonlyitem.md)                           |
 |                | [Elemento isDefaultSaveLocation (schema del connettore di ricerca)](search-schema-sconn-isdefaultsavelocation.md)                 |
 |                | [Elemento isDefaultNonOwnerSaveLocation (schema del connettore di ricerca)](search-schema-sconn-isdefaultnonownersavelocation.md) |
-|                | [Elemento Description (schema del connettore di ricerca)](search-schema-sconn-description.md)                                     |
+|                | [Elemento description (schema del connettore di ricerca)](search-schema-sconn-description.md)                                     |
 |                | [Elemento iconReference (schema del connettore di ricerca)](search-schema-sconn-iconreference.md)                                 |
-|                | [Elemento Collegamentoimmagine (schema del connettore di ricerca)](search-schema-sconn-imagelink.md)                                         |
-|                | [Elemento Author (Schema connettore di ricerca)](search-schema-sconn-author.md)                                               |
+|                | [Elemento imageLink (schema del connettore di ricerca)](search-schema-sconn-imagelink.md)                                         |
+|                | [Elemento author (schema del connettore di ricerca)](search-schema-sconn-author.md)                                               |
 |                | [Elemento dateCreated (schema del connettore di ricerca)](search-schema-sconn-datecreated.md)                                     |
 |                | [Elemento templateInfo (schema del connettore di ricerca)](search-schema-sconn-templateinfo.md)                                   |
 |                | [Elemento locationProvider (schema del connettore di ricerca)](search-schema-sconn-locationprovider.md)                           |
-|                | [Elemento Scope (Schema connettore di ricerca)](search-schema-sconn-scope.md)                                                 |
+|                | [Elemento scope (schema del connettore di ricerca)](search-schema-sconn-scope.md)                                                 |
 |                | [Elemento propertyStore (schema del connettore di ricerca)](search-schema-sconn-propertystore.md)                                 |
 |                | [Elemento includeInStartMenuScope (schema del connettore di ricerca)](search-schema-sconn-includeinstartmenuscope.md)             |
-|                | [Elemento Domain (Schema connettore di ricerca)](search-schema-sconn-domain.md)                                               |
+|                | [Elemento domain (schema del connettore di ricerca)](search-schema-sconn-domain.md)                                               |
 |                | [Elemento supportsAdvancedQuerySyntax (schema del connettore di ricerca)](search-schema-sconn-supportsadvancedquerysyntax.md)     |
-|                | [Elemento SetIndex (schema del connettore di ricerca)](search-schema-sconn-isindexed.md)                                         |
+|                | [Elemento isIndexed (schema del connettore di ricerca)](search-schema-sconn-isindexed.md)                                         |
 
 
 
@@ -138,7 +138,7 @@ L' <searchConnectorDescriptionType> elemento è il contenitore di livello princi
 
 | Attributo | Descrizione                                                                      |
 |-----------|----------------------------------------------------------------------------------|
-| publisher | facoltativo. Nome visualizzato del server di pubblicazione che fornisce il connettore di ricerca.      |
+| publisher | facoltativo. Nome visualizzato dell'editore che fornisce il connettore di ricerca.      |
 | product   | facoltativo. Nome visualizzato del prodotto a cui si applica il connettore di ricerca. |
 
 
@@ -147,9 +147,9 @@ L' <searchConnectorDescriptionType> elemento è il contenitore di livello princi
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile usare i connettori di ricerca per la ricerca federata nelle librerie. Lo schema per i connettori di ricerca della libreria è un'estensione dello schema descritto qui e include informazioni specifiche per le librerie.
+I connettori di ricerca per la ricerca federata non possono essere usati nelle librerie. Lo schema per i connettori di ricerca delle librerie è un'estensione dello schema descritto qui e include informazioni specifiche per le librerie.
 
-## <a name="example-of-a-search-connector-description-file"></a>Esempio di un file di descrizione del connettore di ricerca
+## <a name="example-of-a-search-connector-description-file"></a>Esempio di file di descrizione del connettore di ricerca
 
 Di seguito è riportato un esempio di un file di descrizione del connettore di ricerca per un servizio Web di ricerca federata.
 

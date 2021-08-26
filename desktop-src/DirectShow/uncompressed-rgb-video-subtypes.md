@@ -4,12 +4,12 @@ ms.assetid: 49c91c8c-6889-48c6-8fa5-84929c03d951
 title: Sottotipi video RGB non compressi (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f149786c32c0734492179e2d3e75e5a7d7df969
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a8fc35faaa5b6a58a597bf8d563ded4a920b0a112f61a4858f32c1b61fa29966
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130981"
 ---
 # <a name="uncompressed-rgb-video-subtypes"></a>Sottotipi video RGB non compressi
 
@@ -19,9 +19,9 @@ I sottotipi seguenti definiscono formati RGB non compressi senza canale alfa.
 
 | Costante                                                                                                                                                                        | Descrizione                                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|
-| <span id="MEDIASUBTYPE_RGB1"></span><span id="mediasubtype_rgb1"></span><dl> <dt>**MEDIASUBTYPE \_ RGB1**</dt> </dl>       | RGB, 1 bit per pixel (bpp), satittizzato<br/> |
-| <span id="MEDIASUBTYPE_RGB4"></span><span id="mediasubtype_rgb4"></span><dl> <dt>**MEDIASUBTYPE \_ RGB4**</dt> </dl>       | RGB, 4 bpp, satittizzato<br/>                 |
-| <span id="MEDIASUBTYPE_RGB8"></span><span id="mediasubtype_rgb8"></span><dl> <dt>**MEDIASUBTYPE \_ RGB8**</dt> </dl>       | RGB, 8 bpp, in modalità bttized<br/>                 |
+| <span id="MEDIASUBTYPE_RGB1"></span><span id="mediasubtype_rgb1"></span><dl> <dt>**MEDIASUBTYPE \_ RGB1**</dt> </dl>       | RGB, 1 bit per pixel (bpp), palettizzato<br/> |
+| <span id="MEDIASUBTYPE_RGB4"></span><span id="mediasubtype_rgb4"></span><dl> <dt>**MEDIASUBTYPE \_ RGB4**</dt> </dl>       | RGB, 4 bpp, palettized<br/>                 |
+| <span id="MEDIASUBTYPE_RGB8"></span><span id="mediasubtype_rgb8"></span><dl> <dt>**MEDIASUBTYPE \_ RGB8**</dt> </dl>       | RGB, 8 bpp, palettized<br/>                 |
 | <span id="MEDIASUBTYPE_RGB555"></span><span id="mediasubtype_rgb555"></span><dl> <dt>**MEDIASUBTYPE \_ RGB555**</dt> </dl> | RGB 555, 16 bpp<br/>                        |
 | <span id="MEDIASUBTYPE_RGB565"></span><span id="mediasubtype_rgb565"></span><dl> <dt>**MEDIASUBTYPE \_ RGB565**</dt> </dl> | RGB 565, 16 bpp<br/>                        |
 | <span id="MEDIASUBTYPE_RGB24"></span><span id="mediasubtype_rgb24"></span><dl> <dt>**MEDIASUBTYPE \_ RGB24**</dt> </dl>    | RGB, 24 bpp<br/>                            |
@@ -45,7 +45,7 @@ I sottotipi seguenti definiscono formati RGB non compressi con canale alfa.
 
 ## <a name="remarks"></a>Commenti
 
-Per i formati svasati, il colore di ogni pixel viene specificato come indice in una tavolozza. La tavolozza deve essere inclusa nel blocco di formato, in base alla [**struttura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Per i formati non svasati, il colore di ogni pixel viene specificato direttamente. Il layout della memoria dipende dalla profondità in bit:
+Per i formati in chiaro, il colore di ogni pixel viene specificato come indice in una tavolozza. Il riquadro deve essere incluso nel blocco di formato, seguendo la [**struttura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) Per i formati non palettizzati, il colore di ogni pixel viene specificato direttamente; il layout della memoria dipende dalla profondità in bit:
 
 -   RGB 555 usa il layout di memoria seguente:
     ```C++
@@ -65,7 +65,7 @@ Per i formati svasati, il colore di ogni pixel viene specificato come indice in 
 
     
 
--   Per RGB 24, ogni pixel è un [**RGBTRIPLE.**](/windows/win32/api/wingdi/ns-wingdi-rgbtriple) Ogni colore è di un byte, con un valore compreso tra 0 e 255 inclusi. Il layout della memoria è:
+-   Per RGB 24, ogni pixel è un [**RGBTRIPLE**](/windows/win32/api/wingdi/ns-wingdi-rgbtriple). Ogni colore è di un byte, con un valore compreso tra 0 e 255 inclusi. Il layout della memoria è:
 
     |       | Layout     | Layout      | Layout     |
     |-------|------|-------|-----|
@@ -76,12 +76,12 @@ Per i formati svasati, il colore di ogni pixel viene specificato come indice in 
 
      
 
--   Per RGB 32, ogni pixel è un **RGBQUAD.** Ogni colore è di un byte, con un valore compreso tra 0 e 255 inclusi. Il layout della memoria è: 
+-   Per RGB 32, ogni pixel è **RGBQUAD.** Ogni colore è di un byte, con un valore compreso tra 0 e 255 inclusi. Il layout della memoria è: 
 
     |       | Layout     | Layout      | Layout     | Layout |
     |-------|------|-------|-----|---------------------|
     | **Byte**  | 0    | 1     | 2   | 3                   |
-    | **Valore** | Blu | Green | Red | Alfa o non importa |
+    | **Valore** | Blu | Green | Red | Alpha o Don't Care |
 
     
 
@@ -121,7 +121,7 @@ Per i formati svasati, il colore di ogni pixel viene specificato come indice in 
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

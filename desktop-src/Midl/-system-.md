@@ -1,5 +1,5 @@
 ---
-title: /opzione di sistema
+title: / opzione di sistema
 description: L'opzione /system indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
 ms.assetid: 0fb69ffc-5ab4-49f3-b34d-859da776ce9e
 keywords:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31def6297a1a91f6ed28943290a66b544dc368d5a00a91932035a338af50bac5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01b6455807aedb99d7bd525c69fffc524dbe25d4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118643779"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882782"
 ---
-# <a name="system-switch"></a>/<system> Interruttore
+# <a name="ltsystemgt-switch"></a>/&lt;commutatore &gt; di sistema
 
-**/<system>** L'opzione indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
+**/ &lt; L'opzione &gt;** di sistema indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
 
 ``` syntax
 midl /{win32 | ia64 | amd64}
@@ -71,7 +71,7 @@ Un ambiente Windows a 64 bit basato su micro dispositivi statunitensi, ad esempi
 
 ## <a name="remarks"></a>Commenti
 
-L'opzione è funzionalmente uguale all'opzione MIDL /env ed è riconosciuta dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti **/<system>** con MkTypLib. [](-env.md) Se si genera un nuovo makefile, usare **l'opzione /env.**
+**/ &lt; L'opzione &gt;** di sistema è funzionalmente uguale all'opzione MIDL [**/env**](-env.md) ed è riconosciuta dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti con MkTypLib. Se si genera un nuovo makefile, usare **l'opzione /env.**
 
 ## <a name="examples"></a>Esempio
 

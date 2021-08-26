@@ -1,7 +1,7 @@
 ---
 description: Rimuove un pacchetto di eccezioni.
 ms.assetid: d590d0f8-c9b2-4973-999b-99bbf94d4928
-title: UninstallComponent (funzione)
+title: Funzione UninstallComponent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Msoobci.dll
-ms.openlocfilehash: a541f51b030c9be7a26d573794e4df3a7cfc6f47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6b4ce8e447bc884d1b3ee64505d230b2e069ce6cda1630b027b8a48da68beda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001111"
 ---
-# <a name="uninstallcomponent-function"></a>UninstallComponent (funzione)
+# <a name="uninstallcomponent-function"></a>Funzione UninstallComponent
 
 Rimuove un pacchetto di eccezioni.
 
@@ -44,14 +44,14 @@ void UninstallComponent(
 
 <dl> <dt>
 
-*CompGuid* \[ in, facoltativo\]
+*Guida alla compilazione* \[ in, facoltativo\]
 </dt> <dd>
 
 GUID del componente eccezione da disinstallare.
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
 Flag utilizzati per controllare i comportamenti di installazione. Questo parametro può essere una combinazione dei valori seguenti.
@@ -60,9 +60,9 @@ Flag utilizzati per controllare i comportamenti di installazione. Questo paramet
 
 | Valore                                                                                                                                                                                                         | Significato                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**\_flag comp \_ NOUI**</dt> </dl>                                          | Disattiva tutta l'interfaccia utente.<br/>                                                                |
-| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**\_dllcache di \_ aggiornamento \_ flag comp**</dt> </dl>        | Forza l'aggiornamento della directory DLLCACHE quando viene aggiornato un file di sistema.<br/>        |
-| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**i \_ flag comp \_ usano la \_ \_ cache svcpack**</dt> </dl> | USA i file memorizzati nella cache da un'installazione di Windows Service Pack per sostituire i file di cui è stato eseguito il backup.<br/> |
+| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**COMP \_ FLAGS \_ NOUI**</dt> </dl>                                          | Elimina tutta l'interfaccia utente.<br/>                                                                |
+| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**AGGIORNAMENTO \_ DEI FLAG COMP \_ \_ DLLCACHE**</dt> </dl>        | Forza l'aggiornamento della directory DLLCACHE quando viene aggiornato un file di sistema.<br/>        |
+| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**I \_ FLAG COMP USANO LA \_ CACHE \_ SVCPACK \_**</dt> </dl> | Usa i file memorizzati nella cache da Windows'installazione del Service Pack per sostituisce i file di cui è stato eseguito il backup.<br/> |
 
 
 
@@ -73,28 +73,28 @@ Flag utilizzati per controllare i comportamenti di installazione. Questo paramet
 *VerMajor* \[ in, facoltativo\]
 </dt> <dd>
 
-Versione principale del componente eccezione da disinstallare.
+Versione principale del componente Eccezione da disinstallare.
 
 </dd> <dt>
 
-*VersioneSecondaria* \[ in, facoltativo\]
+*VerMinor* \[ in, facoltativo\]
 </dt> <dd>
 
-Versione secondaria del componente eccezione da disinstallare.
+Versione secondaria del componente Eccezione da disinstallare.
 
 </dd> <dt>
 
 *VerBuild* \[ in, facoltativo\]
 </dt> <dd>
 
-Versione di build del componente eccezione da disinstallare.
+Versione build del componente Eccezione da disinstallare.
 
 </dd> <dt>
 
 *VerQFE* \[ in, facoltativo\]
 </dt> <dd>
 
-Revisione dell'hotfix del componente eccezione da disinstallare.
+Revisione dell'hotfix del componente Eccezione da disinstallare.
 
 </dd> </dl>
 
@@ -104,11 +104,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I pacchetti di eccezioni sono file di sistema Windows rilasciati al di fuori di una versione completa di Windows del pacchetto e che aggiornano i file del sistema operativo. I pacchetti di eccezioni vengono creati solo dai team del sistema operativo a cui è stata concessa l'autorizzazione per aggiornare i file di sistema di Windows.
+I pacchetti di Windows sono file di sistema che vengono rilasciati al di fuori di un pacchetto completo Windows versione e che aggiornano i file del sistema operativo. I pacchetti di eccezioni vengono creati solo dai team del sistema operativo a cui è stata concessa l'autorizzazione per aggiornare Windows di sistema.
 
-Per installare e disinstallare i file non protetti dalla protezione dei file di Windows, utilizzare le funzioni descritte in [funzioni di installazione generali](https://msdn.microsoft.com/library/ms794585.aspx). Per installare i driver di dispositivo, è necessario che i venditori usino funzioni documentate in [funzioni di installazione del dispositivo](https://msdn.microsoft.com/library/ms792954.aspx) e [funzioni Configuration Manager PNP](https://msdn.microsoft.com/library/ms790838.aspx).
+Per installare e disinstallare i file che non sono protetti Windows Protezione file, usare le funzioni documentate in [Funzioni di installazione generali](https://msdn.microsoft.com/library/ms794585.aspx). Per installare i driver di dispositivo, i venditori devono usare le funzioni documentate in [Device Installation Functions](https://msdn.microsoft.com/library/ms792954.aspx) e [PnP Gestione configurazione Functions](https://msdn.microsoft.com/library/ms790838.aspx).
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

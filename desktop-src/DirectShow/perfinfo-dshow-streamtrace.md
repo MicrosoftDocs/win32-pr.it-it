@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura PERFINFO dshow \_ STREAMTRACE contiene i dati per un evento di traccia DirectShow di tipo GUID \_ STREAMTRACE.
+description: La struttura PERFINFO DSHOW STREAMTRACE contiene i dati per un evento \_ DirectShow di traccia di tipo GUID \_ \_ STREAMTRACE.
 ms.assetid: 41fbf95c-e86c-4c64-898f-01fbf5f8839c
-title: Struttura PERFINFO_DSHOW_STREAMTRACE (Perfstruct. h)
+title: PERFINFO_DSHOW_STREAMTRACE struttura (Perfstruct.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Perfstruct.h
-ms.openlocfilehash: 2bee4f3c11cf8462c8292cc412a6da5d9f9bfa78
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e17d013d90b133f9c6819b8d9ddf4b5970582cae
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325914"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477006"
 ---
-# <a name="perfinfo_dshow_streamtrace-structure"></a>\_Struttura PERFINFO dshow \_ STREAMTRACE
+# <a name="perfinfo_dshow_streamtrace-structure"></a>Struttura PERFINFO \_ DSHOW \_ STREAMTRACE
 
-La `PERFINFO_DSHOW_STREAMTRACE` struttura contiene dati per un evento di traccia DirectShow di tipo GUID \_ STREAMTRACE.
+La `PERFINFO_DSHOW_STREAMTRACE` struttura contiene dati per un evento DirectShow di traccia di tipo GUID \_ STREAMTRACE.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ Identificatore dell'evento. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-**riservati**
+**Riservati**
 </dt> <dd>
 
 Riservato. Imposta su zero.
@@ -59,115 +59,52 @@ Riservato. Imposta su zero.
 **dshowClock**
 </dt> <dd>
 
-Tempo di flusso per questo evento, in unità di 100 nanosecondi. Questo valore è facoltativo e può essere zero.
+Tempo di streaming per questo evento, in unità di 100 nanosecondi. Questo valore è facoltativo e può essere zero.
 
 </dd> <dt>
 
 **data**
 </dt> <dd>
 
-Dati di evento facoltativi costituiti da quattro valori **ULONGLONG** . Il significato di questi dati dipende dall'identificatore dell'evento.
+Dati di evento facoltativi costituiti da **quattro valori ULONGLONG.** Il significato di questi dati dipende dall'identificatore dell'evento.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Sono definiti i seguenti identificatori di evento.
+Vengono definiti gli identificatori di evento seguenti.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Identificatore evento</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_MPEG2DEMUX_PTS_TRANSLATION</td>
-<td>Registrato quando il filtro del <a href="mpeg-2-demultiplexer.md">Demultiplexer MPEG-2</a> converte un timestamp di presentazione (PTS) in flusso temporale.
-<ul>
-<li><strong>dati</strong>[0]: Converted start time.</li>
-<li><strong>dati</strong>[1]: Converted stop time.</li>
-<li><strong>dati</strong>[2]. Identificatore di flusso per il pin di input.</li>
-<li><strong>dati</strong>[3]: PTS that was converted.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>PERFINFO_STREAMTRACE_MPEG2DEMUX_SAMPLE_RECEIVE</td>
-<td>Registrato quando il Demultiplexer MPEG-2 riceve un campione.
-<ul>
-<li><strong>dati</strong> [0]: Current time returned by  di <a href="/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter"><strong>QueryPerformanceCounter</strong></a>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_VMR_BEGIN_ADVISE</td>
-<td>Registrato quando VMR pianifica un esempio per il rendering, immediatamente prima che VMR chiami <a href="/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime"><strong>IReferenceClock:: AdviseTime</strong></a>.
-<ul>
-<li><strong>dati</strong>[0]: Reference time when streaming began, which corresponds to stream time zero.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>PERFINFO_STREAMTRACE_VMR_BEGIN_DECODE</td>
-<td>Registrato quando VMR avvia un'operazione di decodifica, ovvero quando il decodificatore chiama <a href="/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-beginframe"><strong>IAMVideoAccelerator:: BeginFrame</strong></a>. Nessun dato dell'evento.</td>
-</tr>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_VMR_BEGIN_DEINTERLACE</td>
-<td>Registrato quando VMR avvia un'operazione di deinterlacciamento o di composizione video. Nessun dato dell'evento.</td>
-</tr>
-<tr class="even">
-<td>PERFINFO_STREAMTRACE_VMR_DROPPED_FRAME</td>
-<td>Registrato quando il VMR Elimina un frame; Se ad esempio un campione è in ritardo.
-<ul>
-<li><strong>dati</strong>[0]: Sample start time.</li>
-<li><strong>dati</strong>[1]: Sample end time.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_VMR_END_ADVISE</td>
-<td>Registrato quando VMR riceve una notifica di avviso dall'orologio di riferimento. Nessun dato dell'evento.</td>
-</tr>
-<tr class="even">
-<td>PERFINFO_STREAMTRACE_VMR_END_DECODE</td>
-<td>Registrato quando VMR termina un'operazione di decodifica, ovvero quando il decodificatore chiama <a href="/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-endframe"><strong>IAMVideoAccelerator:: EndFrame</strong></a>. Nessun dato dell'evento.</td>
-</tr>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_VMR_END_DEINTERLACE</td>
-<td>Registrato quando VMR completa un'operazione di deinterlacciamento o composizione video. Nessun dato dell'evento.</td>
-</tr>
-<tr class="even">
-<td>PERFINFO_STREAMTRACE_VMR_RECEIVE</td>
-<td>Registrato quando VMR riceve un nuovo campione. Nessun dato dell'evento.</td>
-</tr>
-<tr class="odd">
-<td>PERFINFO_STREAMTRACE_VMR_RENDER_TIME</td>
-<td>Registrato quando il VMR completa il rendering di un frame.
-<ul>
-<li><strong>dati</strong>[0]: Time that it took to render this frame.</li>
-<li><strong>dati</strong>[1]: Running average of frame rendering times.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Identificatore evento | Descrizione | 
+|------------------|-------------|
+| PERFINFO_STREAMTRACE_MPEG2DEMUX_PTS_TRANSLATION | Registrato quando il <a href="mpeg-2-demultiplexer.md">filtro MPEG-2 Demultiplexer</a> converte un timestamp di presentazione (PTS) in ora di flusso.<ul><li><strong>data</strong>[0]: ora di inizio convertita.</li><li><strong>data</strong>[1]: ora di arresto convertita.</li><li><strong>data</strong>[2]. Identificatore del flusso per il pin di input.</li><li><strong>data</strong>[3]: PTS convertito.</li></ul> | 
+| PERFINFO_STREAMTRACE_MPEG2DEMUX_SAMPLE_RECEIVE | Registrato quando MPEG-2 Demultiplexer riceve un esempio.<ul><li><strong>data</strong>[0]: ora corrente restituita da <a href="/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter"><strong>QueryPerformanceCounter</strong></a>.</li></ul> | 
+| PERFINFO_STREAMTRACE_VMR_BEGIN_ADVISE | Registrato quando la macchina virtuale pianifica un esempio per il rendering, immediatamente prima che la macchina virtuale <a href="/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime"><strong>chiami IReferenceClock::AdviseTime</strong></a>.<ul><li><strong>data</strong>[0]: ora di riferimento dell'inizio del flusso, che corrisponde all'ora del flusso zero.</li></ul> | 
+| PERFINFO_STREAMTRACE_VMR_BEGIN_DECODE | Registrato quando il vmr inizia un'operazione di decodifica, ovvero quando il decodificatore chiama <a href="/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-beginframe"><strong>IAMVideoAccelerator::BeginFrame</strong></a>. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_BEGIN_DEINTERLACE | Registrato quando il vmr inizia un'operazione di dinterlacing o composizione video. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_DROPPED_FRAME | Registrato quando la macchina virtuale elimina un frame; ad esempio se un campione è in ritardo.<ul><li><strong>data</strong>[0]: ora di inizio di esempio.</li><li><strong>data</strong>[1]: ora di fine del campione.</li></ul> | 
+| PERFINFO_STREAMTRACE_VMR_END_ADVISE | Registrato quando il vmr riceve una notifica di avviso dall'orologio di riferimento. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_END_DECODE | Registrato quando la macchina virtuale termina un'operazione di decodifica, ovvero quando il decodificatore chiama <a href="/previous-versions/windows/desktop/api/videoacc/nf-videoacc-iamvideoaccelerator-endframe"><strong>IAMVideoAccelerator::EndFrame</strong></a>. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_END_DEINTERLACE | Registrato quando la macchina virtuale completa un'operazione di composizione video o di dinterlacciamento. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_RECEIVE | Registrato quando la macchina virtuale riceve un nuovo esempio. Nessun dato dell'evento. | 
+| PERFINFO_STREAMTRACE_VMR_RENDER_TIME | Registrato al termine del rendering di un frame da parte della macchina virtuale.<ul><li><strong>data</strong>[0]: tempo impiegato per il rendering di questo frame.</li><li><strong>data</strong>[1]: media dei tempi di rendering dei fotogrammi in esecuzione.</li></ul> | 
+
 
 
 
  
 
-Per registrare questo evento da un filtro DirectShow, usare la funzione **PERFLOG \_ STREAMTRACE** , definita nel file di intestazione Dxmperf. h. Questa intestazione è inclusa nelle classi base di DirectShow.
+Per registrare questo evento da un filtro DirectShow, usare la funzione **\_ PERFLOG STREAMTRACE,** definita nel file di intestazione Dxmperf.h. Questa intestazione è inclusa nelle classi DirectShow base.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Perfstruct. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Perfstruct.h</dt> </dl> |
 
 
 
@@ -175,13 +112,13 @@ Per registrare questo evento da un filtro DirectShow, usare la funzione **PERFLO
 
 <dl> <dt>
 
-[Strutture DirectShow](directshow-structures.md)
+[DirectShow Strutture](directshow-structures.md)
 </dt> <dt>
 
-[Traccia eventi in DirectShow](event-tracing-in-directshow.md)
+[Event Tracing in DirectShow](event-tracing-in-directshow.md)
 </dt> <dt>
 
-[GUID dell'evento di traccia](trace-guids.md)
+[GUID degli eventi di traccia](trace-guids.md)
 </dt> </dl>
 
  

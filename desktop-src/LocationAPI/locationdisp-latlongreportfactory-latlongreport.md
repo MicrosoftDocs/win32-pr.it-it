@@ -1,7 +1,7 @@
 ---
-description: Rapporto Latitudine/Longitudine corrente.
+description: Report di latitudine/longitudine corrente.
 ms.assetid: d2bb305f-911e-46f7-abde-56e9fba9182b
-title: Proprietà LocationDisp. LatLongReportFactory. LatLongReport (LocationApi. h)
+title: Proprietà LocationDisp.LatLongReportFactory.LatLongReport (Locationapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - locationapi.h
-ms.openlocfilehash: c44582c01685431e9b5dfa4820735728dd2a9cbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f9e28b9b452c335fa4d549b1c979584f2e02c438957e4c7283ad8044def644
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120129841"
 ---
-# <a name="locationdisplatlongreportfactorylatlongreport-property"></a>Proprietà LocationDisp. LatLongReportFactory. LatLongReport
+# <a name="locationdisplatlongreportfactorylatlongreport-property"></a>Proprietà LocationDisp.LatLongReportFactory.LatLongReport
 
-\[Il modello a oggetti dell'API location è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere al percorso da un sito Web, usare invece l' [API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
-Rapporto Latitudine/Longitudine corrente.
+Report di latitudine/longitudine corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -39,11 +39,11 @@ objLatLongReport = LocationDisp.LatLongReportFactory.LatLongReport
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà è di sola lettura [**LocationDisp. DispLatLongReport**](locationdisp-displatlongreport.md).
+Questa proprietà è un oggetto [**LocationDisp.DispLatLongReport di sola lettura.**](locationdisp-displatlongreport.md)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questa proprietà, vedere [un semplice esempio di report LatLong](/uwp/api/Windows.Devices.Geolocation).
+Per un esempio di come usare questa proprietà, vedere [A Simple LatLong Report Example](/uwp/api/Windows.Devices.Geolocation).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Per un esempio di come usare questa proprietà, vedere [un semplice esempio di r
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                |
-| Intestazione<br/>                   | <dl> <dt>LocationApi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Locationapi.h</dt> </dl> |
 
 
 

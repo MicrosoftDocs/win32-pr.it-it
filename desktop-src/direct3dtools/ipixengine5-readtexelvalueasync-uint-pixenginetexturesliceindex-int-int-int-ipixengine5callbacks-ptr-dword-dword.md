@@ -1,10 +1,10 @@
 ---
-description: Legge un valore Texel e restituisce il risultato al asynchrnously host.
+description: Legge un valore texel e restituisce il risultato all'host in modo asincrono.
 MS-HAID: vspixengine.IPixEngine5\_ReadTexelValueAsync\_UINT\_PixEngineTextureSliceIndex\_int\_int\_int\_IPixEngine5Callbacks\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine5:: ReadTexelValueAsync'
+title: Metodo IPixEngine5::ReadTexelValueAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 28C44D12-383D-4E91-8BB1-12869782533C
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ca3510b01038df3b07b3033364902f76f2e05b4e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c8b7a5db59da4160f870e9e2c7bc1ac3701432e5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304306"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627417"
 ---
-# <a name="span-idvspixengineipixengine5_readtexelvalueasync_uint_pixenginetexturesliceindex_int_int_int_ipixengine5callbacks_ptr_dword_dwordspanipixengine5readtexelvalueasync-method"></a><span id="vspixengine.ipixengine5_readtexelvalueasync_uint_pixenginetexturesliceindex_int_int_int_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5:: ReadTexelValueAsync
+# <a name="span-idvspixengineipixengine5_readtexelvalueasync_uint_pixenginetexturesliceindex_int_int_int_ipixengine5callbacks_ptr_dword_dwordspanipixengine5readtexelvalueasync-method"></a><span id="vspixengine.ipixengine5_readtexelvalueasync_uint_pixenginetexturesliceindex_int_int_int_ipixengine5callbacks_ptr_dword_dword"></span>Metodo IPixEngine5::ReadTexelValueAsync
 
-Legge un valore Texel e restituisce il risultato al asynchrnously host.
+Legge un valore texel e restituisce il risultato all'host in modo asincrono.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,36 +47,36 @@ HRESULT ReadTexelValueAsync(
 ## <a name="parameters"></a>Parametri
 
 *textureId*   
-ID della trama da cui leggere il valore Texel.
+ID della trama da cui leggere il valore texel.
 
 *sliceIndex*   
-Indice della sezione all'interno della trama da cui leggere il valore di Texel.
+Indice della sezione all'interno della trama da cui leggere il valore texel.
 
-*x*   
-Coordinata x Texel da leggere.
+*X*   
+Coordinata texel x da leggere.
 
-*y*   
-Coordinata del Texel y da leggere.
+*Y*   
+Coordinata y texel da leggere.
 
 *formatOverride*   
-Sostituzione del formato colori.
+Override del formato del colore.
 
-*callback*   
+*Callback*   
 Indirizzo di un oggetto che fornisce l'interfaccia di callback IPixEngine5.
 
 *requestCookie*   
-Un cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
+Cookie che identifica in modo univoco la richiesta e può essere usato per segnalare l'annullamento.
 
 *progressIntervalMsecs*   
 Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

@@ -1,9 +1,9 @@
 ---
-title: Visualizza timerInterval
-description: L'attributo timerInterval specifica o recupera l'intervallo, in millisecondi, in cui il timer genera eventi nel gestore eventi OnTimer.
+title: VIEW.timerInterval
+description: L'attributo timerInterval specifica o recupera l'intervallo, in millisecondi, in corrispondenza del quale il timer genera eventi al gestore eventi di avvio.
 ms.assetid: 1a69890f-5ea4-493a-8a9e-04fe60a41804
 keywords:
-- Visualizza Media Player Windows timerInterval
+- View.timerInterval Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790c95fbb2cded134222271d04c4c37dae412b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f43b2b7bbd87663a35c43db733d3e11ff0dca5bc3ddfd00e57022b4df7122c3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001311"
 ---
-# <a name="viewtimerinterval"></a>Visualizza timerInterval
+# <a name="viewtimerinterval"></a>VIEW.timerInterval
 
-L'attributo **timerInterval** specifica o recupera l'intervallo, in millisecondi, in cui il timer genera eventi nel gestore eventi **OnTimer** .
+**L'attributo timerInterval** specifica o recupera l'intervallo, in millisecondi, in corrispondenza del quale il timer genera eventi al gestore **eventi** di avvio.
 
 ``` syntax
         elementID.timerInterval
@@ -29,24 +29,24 @@ L'attributo **timerInterval** specifica o recupera l'intervallo, in millisecondi
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) con un valore predefinito di 1000.
+Questo attributo è un numero **di** lettura/scrittura (**long**) con un valore predefinito di 1000.
 
 
 
 | Valore        | Descrizione                    |
 |--------------|--------------------------------|
-| 0            | L'evento timer non viene attivato. |
-| 50 e versioni successive | Intervallo in millisecondi.  |
+| 0            | L'evento timer non viene generato. |
+| 50 e successive | Intervallo in millisecondi.  |
 
 
 
  
 
-Qualsiasi valore inferiore a 50 (inclusi i numeri negativi, ma non incluso zero) genera un errore e viene mantenuto il valore precedente.
+Qualsiasi valore inferiore a 50 (inclusi i numeri negativi, ma senza zero) genera un errore e il valore precedente viene mantenuto.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione non viene eseguita automaticamente se non viene implementato alcun gestore eventi **OnTimer** . In questo modo non si verifica alcun calo delle prestazioni, anche se il valore predefinito è diverso da zero.
+Questa operazione non viene attivata automaticamente se **non viene** implementato alcun gestore eventi di avvio. Non si verifica quindi alcuna riduzione delle prestazioni anche se il valore predefinito è diverso da zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Questa operazione non viene eseguita automaticamente se non viene implementato a
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -65,7 +65,7 @@ Questa operazione non viene eseguita automaticamente se non viene implementato a
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Visualizza. OnTimer**](view-ontimer.md)
+[**VIEW.ontimer**](view-ontimer.md)
 </dt> </dl>
 
  

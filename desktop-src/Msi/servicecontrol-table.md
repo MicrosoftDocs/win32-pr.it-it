@@ -4,12 +4,12 @@ ms.assetid: c51cd9bd-3c55-4eec-ab67-172765adc51c
 title: Tabella ServiceControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b8531fb70c1887d77ae9b09bf3fe7e59de0c7878dfac44707df942e838f4f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b0c360991ce4a72698ac1b667d82a98ba64b7a0
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120039981"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885685"
 ---
 # <a name="servicecontrol-table"></a>Tabella ServiceControl
 
@@ -28,7 +28,7 @@ La tabella ServiceControl include le colonne seguenti.
 |----------------|------------------------------|-----|----------|
 | ServiceControl | [Identificatore](identifier.md) | S   | N        |
 | Nome           | [Formattato](formatted.md)   | N   | N        |
-| Event          | [Integer](integer.md)       | N   | N        |
+| Evento          | [Integer](integer.md)       | N   | N        |
 | Argomenti      | [Formattato](formatted.md)   | N   | S        |
 | Attesa           | [Integer](integer.md)       | N   | S        |
 | Componente\_    | [Identificatore](identifier.md) | N   | N        |
@@ -70,7 +70,7 @@ I valori seguenti vengono usati solo durante un'installazione di .
 |------------------------------------|-------------|---------|------------------------------------------------------------------------------------|
 | **msidbServiceControlEventStart**  | 0x001       | 1       | Avvia il servizio durante [l'azione StartServices](startservices-action.md).    |
 | **msidbServiceControlEventStop**   | 0x002       | 2       | Arresta il servizio durante [l'azione StopServices](stopservices-action.md).       |
-| (nessuna)                             | 0x004       | 4       | <reserved>                                                                   |
+| (nessuna)                             | 0x004       | 4       | &lt;reserved&gt;                                                                   |
 | **msidbServiceControlEventDelete** | 0x008       | 8       | Elimina il servizio durante [l'azione DeleteServices](deleteservices-action.md). |
 
 
@@ -85,7 +85,7 @@ I valori seguenti vengono usati solo durante una disinstallazione.
 |---------------------------------------------|-------------|---------|------------------------------------------------------------------------------------|
 | **msidbServiceControlEventUninstallStart**  | 0x010       | 16      | Avvia il servizio durante [l'azione StartServices](startservices-action.md).    |
 | **msidbServiceControlEventUninstallStop**   | 0x020       | 32      | Arresta il servizio durante [l'azione StopServices](stopservices-action.md).       |
-| (nessuna)                                      | 0x040       | 64      | <reserved>                                                                   |
+| (nessuna)                                      | 0x040       | 64      | &lt;reserved&gt;                                                                   |
 | **msidbServiceControlEventUninstallDelete** | 0x080       | 128     | Elimina il servizio durante [l'azione DeleteServices](deleteservices-action.md). |
 
 

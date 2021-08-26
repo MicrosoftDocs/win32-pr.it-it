@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2a6c49b305b3c6638aeaaee1480d0b561fd8c99a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec75218f43edcf6c3c2c6298eba7c886cdd04879485bf41f20951cba1f9c4935
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108321"
 ---
 # <a name="cpospassthrucpospassthru-constructor"></a>Costruttore CPosPassThru.CPosPassThru
 
@@ -52,7 +52,7 @@ Puntatore al nome dell'oggetto, a scopo di debug. Allocare questo parametro nell
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario dell'oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia **IUnknown dell'oggetto** di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Scrive un valore DWORD nel database specificato.
 ms.assetid: 2ecbfcac-5bb1-4129-9501-79210672aa1b
-title: SdbWriteDWORDTag (funzione)
+title: Funzione SdbWriteDWORDTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 5b549a91037aa308b5b88d0e3e2a51e153002bd5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 730d171f964205638b44d5676e39abc20fb40426f7721fa6a5060d80c58805a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044791"
 ---
-# <a name="sdbwritedwordtag-function"></a>SdbWriteDWORDTag (funzione)
+# <a name="sdbwritedwordtag-function"></a>Funzione SdbWriteDWORDTag
 
-Scrive un valore **DWORD** nel database specificato.
+Scrive un **valore DWORD** nel database specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ BOOL WINAPI SdbWriteDWORDTag(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tTag* \[ in\]
+*tTag* \[ Pollici\]
 </dt> <dd>
 
-TAG per la voce. Questo TAG deve essere di tipo **tag \_ \_ DWORD**.
+TAG per la voce. Questo TAG deve essere di tipo **TAG \_ TYPE \_ DWORD**.
 
 </dd> <dt>
 
-*dwData* \[ in\]
+*dwData* \[ Pollici\]
 </dt> <dd>
 
 Valore.
@@ -64,7 +64,7 @@ Valore.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

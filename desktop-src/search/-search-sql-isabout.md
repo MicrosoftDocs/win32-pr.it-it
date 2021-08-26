@@ -4,12 +4,12 @@ ms.assetid: e2629c4c-4b44-4427-ac1d-17f55fd969e3
 title: Termine ISABOUT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5665e7bf62da4858cf2e7d68e65d0f42771903d55e3189db12f19cdd5414530d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee772bbd3be1f9ef3924989dfbaa2a9afd77d4a6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118969610"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627357"
 ---
 # <a name="isabout-term"></a>Termine ISABOUT
 
@@ -26,9 +26,9 @@ ISABOUT(<components>) [RANKMETHOD <method>]
 
 
 
-Il termine RANKMETHOD facoltativo specifica il metodo di calcolo usato per classificare i documenti che corrispondono a uno o più componenti. Se non viene specificato alcun RANKMETHOD, viene usato il metodo di rango predefinito Coefficiente Diffi.
+Il termine RANKMETHOD facoltativo specifica il metodo di calcolo usato per classificare i documenti che corrispondono a uno o più componenti. Se non viene specificato ALCUN RANKMETHOD, viene usato il metodo di classificazione predefinito Coefficiente Jaccard.
 
-Il termine ISABOUT può avere uno o più componenti. Le colonne specificate nel [predicato CONTAINS](-search-sql-contains.md) vengono testate in base a ogni componente. Il documento viene incluso nei risultati se almeno uno dei componenti corrisponde. Le virgole separano più componenti.
+Il termine ISABOUT può avere uno o più componenti. Le colonne specificate nel predicato [CONTAINS](-search-sql-contains.md) vengono testate in base a ogni componente. Il documento viene incluso nei risultati se almeno uno dei componenti corrisponde. Le virgole separano più componenti.
 
 La parte del componente ha la sintassi seguente:
 
@@ -47,9 +47,9 @@ Nella tabella seguente vengono descritti i possibili tipi di termini di corrispo
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,7 +65,7 @@ Nella tabella seguente vengono descritti i possibili tipi di termini di corrispo
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -83,7 +83,7 @@ Nella tabella seguente vengono descritti i possibili tipi di termini di corrispo
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -97,12 +97,12 @@ Nella tabella seguente vengono descritti i possibili tipi di termini di corrispo
 </tr>
 <tr class="odd">
 <td>Wildcard (Carattere jolly)</td>
-<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per altre informazioni, vedere <a href="-search-sql-wildcards.md">Uso dei caratteri jolly nel predicato CONTAINS.</a></td>
+<td>Parole o frasi con l'asterisco (*) aggiunto alla fine. Per altre informazioni, vedere <a href="-search-sql-wildcards.md">Uso di caratteri jolly nel predicato CONTAINS</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -126,7 +126,7 @@ and &quot;compulsory&quot;</code></pre></td>
 
 ## <a name="isabout-column-weighting"></a>Ponderazione delle colonne ISABOUT
 
-Il termine ISABOUT classifica i documenti corrispondenti in base al livello di corrispondenza tra ogni documento e il set di termini di corrispondenza nella query. È possibile usare la ponderazione delle colonne per mettere più importanza nella corrispondenza di alcuni termini di corrispondenza rispetto ad altri. A ogni termine di corrispondenza nel termine ISABOUT può essere applicato un valore di peso. Il peso viene applicato a un singolo termine di corrispondenza ed è indicato dalla parola chiave "WEIGHT". Il termine WEIGHT ha due sintassi alternative:
+Il termine ISABOUT classifica i documenti corrispondenti in base alla corrispondenza tra ogni documento e il set di termini di corrispondenza nella query. È possibile usare la ponderazione delle colonne per inserire maggiore importanza nella corrispondenza di alcuni termini di corrispondenza rispetto ad altri. A ogni termine di corrispondenza nel termine ISABOUT può essere applicato un valore di peso. Il peso viene applicato a un singolo termine di corrispondenza ed è indicato dalla parola chiave "WEIGHT". Il termine WEIGHT ha due sintassi alternative:
 
 
 ```
@@ -136,7 +136,7 @@ Il termine ISABOUT classifica i documenti corrispondenti in base al livello di c
 
 
 
-Il valore di peso deve essere compreso tra 0 e 1,0, senza più di tre cifre decimali. Se si specifica un valore di peso non compreso in questo intervallo, viene visualizzato un messaggio di errore. Il valore di rango non ponderato per un termine viene moltiplicato per il valore di peso per il termine.
+Il valore del peso deve essere compreso tra 0 e 1,0, senza più di tre cifre decimali. Se si specifica un valore di peso esterno a questo intervallo, viene visualizzato un messaggio di errore. Il valore di classificazione non ponderato per un termine viene moltiplicato per il valore del peso per il termine.
 
 Se non viene specificato alcun peso per un termine di corrispondenza, il valore predefinito, 1.0, è implicito.
 

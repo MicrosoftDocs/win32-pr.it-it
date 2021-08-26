@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a194067fd8a5bb34569723245b68996163d0cd9a2eef332e6f42fceb8187eecb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d2a3bfe94e001c6a65256facd5484a015d00f245
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119590651"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475757"
 ---
 # <a name="wmt_videoimage_transition_flip"></a>CAPOVOLGIMENTO \_ TRANSIZIONE \_ WMT VIDEOIMAGE \_
 
@@ -31,36 +31,12 @@ La tabella seguente descrive i parametri usati da questa transizione ed elenca i
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parametro</th>
-<th>Membro della struttura</th>
-<th>Descrizione</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Angle</td>
-<td><strong>fEffectPara0</strong></td>
-<td>Angolo della rotazione, da 0,0 a 180,0 gradi.</td>
-</tr>
-<tr class="even">
-<td>Composizione</td>
-<td><strong>fEffectPara1</strong></td>
-<td>Impostare su uno dei valori seguenti:
-<ul>
-<li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li>
-<li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Parametro | Membro della struttura | Descrizione | 
+|-----------|------------------|-------------|
+| Angle | <strong>fEffectPara0</strong> | Angolo della rotazione, da 0,0 a 180,0 gradi. | 
+| Composizione | <strong>fEffectPara1</strong> | Impostare su uno dei valori seguenti:<ul><li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li><li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano</li></ul> | 
+
 
 
 
@@ -74,7 +50,7 @@ La tabella seguente descrive i parametri usati da questa transizione ed elenca i
 
 
 
-| Requisito | Valore |
+| Requisito | valore |
 |-------------------|---------------------------------------------------------------------------------------|
 | Intestazione<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 

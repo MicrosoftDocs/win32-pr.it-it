@@ -5,12 +5,12 @@ title: KNOWNFOLDERID (Knownfolders.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: eb4b6ef46179abbe515edfcd323a349c7d091ac9
-ms.sourcegitcommit: c8f1dc81483739b697c96ae97ca533028efc3b2c
+ms.openlocfilehash: 3d27f8831e4a68b6fb5bb95d7f4a6c34fe361db5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114656879"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626377"
 ---
 # <a name="knownfolderid"></a>KNOWNFOLDERID
 
@@ -64,19 +64,19 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Costante</th>
-<th style="text-align: left;">Descrizione</th>
+<th >Costante</th>
+<th >Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AccountPictures"></span><span id="folderid_accountpictures"></span><span id="FOLDERID_ACCOUNTPICTURES"></span><dl> <dt><strong>FOLDERID_AccountPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AccountPictures"></span><span id="folderid_accountpictures"></span><span id="FOLDERID_ACCOUNTPICTURES"></span><dl> <dt><strong>FOLDERID_AccountPictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -113,8 +113,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AddNewPrograms"></span><span id="folderid_addnewprograms"></span><span id="FOLDERID_ADDNEWPROGRAMS"></span><dl> <dt><strong>FOLDERID_AddNewPrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AddNewPrograms"></span><span id="folderid_addnewprograms"></span><span id="FOLDERID_ADDNEWPROGRAMS"></span><dl> <dt><strong>FOLDERID_AddNewPrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -127,7 +127,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -139,7 +139,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Aggiungi nuovi programmi (disponibile <strong>nell'elemento</strong> Installazione applicazioni nella Pannello di controllo)</td>
+<td>Aggiungi nuovi programmi (disponibile <strong>nell'elemento</strong> Installazione applicazioni nel Pannello di controllo)</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -151,8 +151,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AdminTools"></span><span id="folderid_admintools"></span><span id="FOLDERID_ADMINTOOLS"></span><dl> <dt><strong>FOLDERID_AdminTools</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AdminTools"></span><span id="folderid_admintools"></span><span id="FOLDERID_ADMINTOOLS"></span><dl> <dt><strong>FOLDERID_AdminTools</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -189,8 +189,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppDataDesktop"></span><span id="folderid_appdatadesktop"></span><span id="FOLDERID_APPDATADESKTOP"></span><dl> <dt><strong>FOLDERID_AppDataDesktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataDesktop"></span><span id="folderid_appdatadesktop"></span><span id="FOLDERID_APPDATADESKTOP"></span><dl> <dt><strong>FOLDERID_AppDataDesktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -225,11 +225,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppDataDocuments"></span><span id="folderid_appdatadocuments"></span><span id="FOLDERID_APPDATADOCUMENTS"></span><dl> <dt><strong>FOLDERID_AppDataDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataDocuments"></span><span id="folderid_appdatadocuments"></span><span id="FOLDERID_APPDATADOCUMENTS"></span><dl> <dt><strong>FOLDERID_AppDataDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -264,11 +264,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </table>
 
 <p> </p>
-<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non è destinato a essere usato direttamente da un'applicazione.</p></td>
+<p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppDataFavorites"></span><span id="folderid_appdatafavorites"></span><span id="FOLDERID_APPDATAFAVORITES"></span><dl> <dt><strong>FOLDERID_AppDataFavorites</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataFavorites"></span><span id="folderid_appdatafavorites"></span><span id="FOLDERID_APPDATAFAVORITES"></span><dl> <dt><strong>FOLDERID_AppDataFavorites</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -289,7 +289,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 10, versione 1709</td>
+<td>None, valore introdotto in Windows 10, versione 1709</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -306,8 +306,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppDataProgramData"></span><span id="folderid_appdataprogramdata"></span><span id="FOLDERID_APPDATAPROGRAMDATA"></span><dl> <dt><strong>FOLDERID_AppDataProgramData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppDataProgramData"></span><span id="folderid_appdataprogramdata"></span><span id="FOLDERID_APPDATAPROGRAMDATA"></span><dl> <dt><strong>FOLDERID_AppDataProgramData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -328,7 +328,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 10, versione 1709</td>
+<td>None, valore introdotto in Windows 10, versione 1709</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -345,8 +345,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p>Questo FOLDERID viene usato internamente dalle applicazioni .NET per abilitare la funzionalità delle app multipiattaforma. Non deve essere usato direttamente da un'applicazione.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ApplicationShortcuts"></span><span id="folderid_applicationshortcuts"></span><span id="FOLDERID_APPLICATIONSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ApplicationShortcuts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ApplicationShortcuts"></span><span id="folderid_applicationshortcuts"></span><span id="FOLDERID_APPLICATIONSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ApplicationShortcuts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -363,11 +363,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows\Collegamenti all'applicazione</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Application Shortcuts</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 8</td>
+<td>None, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -383,8 +383,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_AppsFolder"></span><span id="folderid_appsfolder"></span><span id="FOLDERID_APPSFOLDER"></span><dl> <dt><strong>FOLDERID_AppsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppsFolder"></span><span id="folderid_appsfolder"></span><span id="FOLDERID_APPSFOLDER"></span><dl> <dt><strong>FOLDERID_AppsFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -397,7 +397,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -405,7 +405,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 8</td>
+<td>None, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -421,8 +421,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_AppUpdates"></span><span id="folderid_appupdates"></span><span id="FOLDERID_APPUPDATES"></span><dl> <dt><strong>FOLDERID_AppUpdates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_AppUpdates"></span><span id="folderid_appupdates"></span><span id="FOLDERID_APPUPDATES"></span><dl> <dt><strong>FOLDERID_AppUpdates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -435,7 +435,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -447,7 +447,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Nessuno, valore introdotto in Windows Vista. Nelle versioni precedenti di Windows, le informazioni in questa pagina erano incluse <strong>in</strong> Installazione applicazioni se la <strong>casella</strong> Mostra aggiornamenti era selezionata.</td>
+<td>None, valore introdotto in Windows Vista. Nelle versioni precedenti di Windows, le informazioni in questa pagina erano incluse <strong>in</strong> Installazione applicazioni se la <strong>casella</strong> Mostra aggiornamenti era selezionata.</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -459,8 +459,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CameraRoll"></span><span id="folderid_cameraroll"></span><span id="FOLDERID_CAMERAROLL"></span><dl> <dt><strong>FOLDERID_CameraRoll</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CameraRoll"></span><span id="folderid_cameraroll"></span><span id="FOLDERID_CAMERAROLL"></span><dl> <dt><strong>FOLDERID_CameraRoll</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -469,7 +469,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Rullino</td>
+<td>Rullo della fotocamera</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -481,7 +481,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 8.1</td>
+<td>None, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -497,8 +497,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CDBurning"></span><span id="folderid_cdburning"></span><span id="FOLDERID_CDBURNING"></span><dl> <dt><strong>FOLDERID_CDBurning</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CDBurning"></span><span id="folderid_cdburning"></span><span id="FOLDERID_CDBURNING"></span><dl> <dt><strong>FOLDERID_CDBurning</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -507,7 +507,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Cartella di masterizzazione temporanea</td>
+<td>Cartella masterizzazione temporanea</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -523,11 +523,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Masterizzazione CD</td>
+<td>Cd Incisa</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%USERPROFILE%\Local Impostazioni\Application Data\Microsoft\CD Burning</td>
+<td>%USERPROFILE%\Local Impostazioni\Application Data\Microsoft\CD Più</td>
 </tr>
 </tbody>
 </table>
@@ -535,8 +535,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ChangeRemovePrograms"></span><span id="folderid_changeremoveprograms"></span><span id="FOLDERID_CHANGEREMOVEPROGRAMS"></span><dl> <dt><strong>FOLDERID_ChangeRemovePrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ChangeRemovePrograms"></span><span id="folderid_changeremoveprograms"></span><span id="FOLDERID_CHANGEREMOVEPROGRAMS"></span><dl> <dt><strong>FOLDERID_ChangeRemovePrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -549,7 +549,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -573,8 +573,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonAdminTools"></span><span id="folderid_commonadmintools"></span><span id="FOLDERID_COMMONADMINTOOLS"></span><dl> <dt><strong>FOLDERID_CommonAdminTools</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonAdminTools"></span><span id="folderid_commonadmintools"></span><span id="FOLDERID_COMMONADMINTOOLS"></span><dl> <dt><strong>FOLDERID_CommonAdminTools</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -587,11 +587,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Menu Start\Programmi\Strumenti di amministrazione</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -611,13 +611,13 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonOEMLinks"></span><span id="folderid_commonoemlinks"></span><span id="FOLDERID_COMMONOEMLINKS"></span><dl> <dt><strong>FOLDERID_CommonOEMLinks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonOEMLinks"></span><span id="folderid_commonoemlinks"></span><span id="FOLDERID_COMMONOEMLINKS"></span><dl> <dt><strong>FOLDERID_CommonOEMLinks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{C1BAE2D0-10DF-4334-TBD-7AA20B227A9D}</td>
+<td>{C1BAE2D0-10DF-4334-BEDD-7AA20B227A9D}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -625,7 +625,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -649,8 +649,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonPrograms"></span><span id="folderid_commonprograms"></span><span id="FOLDERID_COMMONPROGRAMS"></span><dl> <dt><strong>FOLDERID_CommonPrograms</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonPrograms"></span><span id="folderid_commonprograms"></span><span id="FOLDERID_COMMONPROGRAMS"></span><dl> <dt><strong>FOLDERID_CommonPrograms</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -663,11 +663,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Menu Start\Programmi</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -687,8 +687,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonStartMenu"></span><span id="folderid_commonstartmenu"></span><span id="FOLDERID_COMMONSTARTMENU"></span><dl> <dt><strong>FOLDERID_CommonStartMenu</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonStartMenu"></span><span id="folderid_commonstartmenu"></span><span id="FOLDERID_COMMONSTARTMENU"></span><dl> <dt><strong>FOLDERID_CommonStartMenu</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -701,11 +701,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Menu Start</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -725,8 +725,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_CommonStartup"></span><span id="folderid_commonstartup"></span><span id="FOLDERID_COMMONSTARTUP"></span><dl> <dt><strong>FOLDERID_CommonStartup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonStartup"></span><span id="folderid_commonstartup"></span><span id="FOLDERID_COMMONSTARTUP"></span><dl> <dt><strong>FOLDERID_CommonStartup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -739,11 +739,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Menu Start\Programmi\Avvio</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -755,7 +755,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%ALLUSERSPROFILE%\Start Menu\Programmi\StartUp</td>
+<td>%ALLUSERSPROFILE%\Menu Start\Programmi\Avvio</td>
 </tr>
 </tbody>
 </table>
@@ -763,8 +763,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_CommonTemplates"></span><span id="folderid_commontemplates"></span><span id="FOLDERID_COMMONTEMPLATES"></span><dl> <dt><strong>FOLDERID_CommonTemplates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_CommonTemplates"></span><span id="folderid_commontemplates"></span><span id="FOLDERID_COMMONTEMPLATES"></span><dl> <dt><strong>FOLDERID_CommonTemplates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -777,7 +777,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -801,8 +801,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ComputerFolder"></span><span id="folderid_computerfolder"></span><span id="FOLDERID_COMPUTERFOLDER"></span><dl> <dt><strong>FOLDERID_ComputerFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ComputerFolder"></span><span id="folderid_computerfolder"></span><span id="FOLDERID_COMPUTERFOLDER"></span><dl> <dt><strong>FOLDERID_ComputerFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -815,7 +815,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -839,8 +839,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ConflictFolder"></span><span id="folderid_conflictfolder"></span><span id="FOLDERID_CONFLICTFOLDER"></span><dl> <dt><strong>FOLDERID_ConflictFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ConflictFolder"></span><span id="folderid_conflictfolder"></span><span id="FOLDERID_CONFLICTFOLDER"></span><dl> <dt><strong>FOLDERID_ConflictFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -853,7 +853,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -861,11 +861,11 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows Vista</td>
+<td>None, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Non applicabile. Questo <strong>KNOWNFOLDERID fa</strong> riferimento alla Windows di sincronizzazione di Vista. Non è la cartella a cui fa riferimento la cartella <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>precedente ISyncMgrConflictFolder</strong></a>.</td>
+<td>Non applicabile. Questo <strong>KNOWNFOLDERID fa</strong> riferimento alla Windows di sincronizzazione di Vista. Non è la cartella a cui fa riferimento la cartella <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder precedente.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -877,8 +877,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ConnectionsFolder"></span><span id="folderid_connectionsfolder"></span><span id="FOLDERID_CONNECTIONSFOLDER"></span><dl> <dt><strong>FOLDERID_ConnectionsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ConnectionsFolder"></span><span id="folderid_connectionsfolder"></span><span id="FOLDERID_CONNECTIONSFOLDER"></span><dl> <dt><strong>FOLDERID_ConnectionsFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -891,7 +891,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -915,8 +915,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Contacts"></span><span id="folderid_contacts"></span><span id="FOLDERID_CONTACTS"></span><dl> <dt><strong>FOLDERID_Contacts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Contacts"></span><span id="folderid_contacts"></span><span id="FOLDERID_CONTACTS"></span><dl> <dt><strong>FOLDERID_Contacts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -937,7 +937,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows Vista</td>
+<td>None, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -953,13 +953,13 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ControlPanelFolder"></span><span id="folderid_controlpanelfolder"></span><span id="FOLDERID_CONTROLPANELFOLDER"></span><dl> <dt><strong>FOLDERID_ControlPanelFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ControlPanelFolder"></span><span id="folderid_controlpanelfolder"></span><span id="FOLDERID_CONTROLPANELFOLDER"></span><dl> <dt><strong>FOLDERID_ControlPanelFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
 <td>GUID</td>
-<td>{82A74AEB-AEB4-465C-A014-D097EE346D63}</td>
+<td>{82A74AEB-AEB4-465C-A014-D097EEE346D63}</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
@@ -967,7 +967,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -991,8 +991,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Cookies"></span><span id="folderid_cookies"></span><span id="FOLDERID_COOKIES"></span><dl> <dt><strong>FOLDERID_Cookies</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Cookies"></span><span id="folderid_cookies"></span><span id="FOLDERID_COOKIES"></span><dl> <dt><strong>FOLDERID_Cookies</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1029,8 +1029,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Desktop"></span><span id="folderid_desktop"></span><span id="FOLDERID_DESKTOP"></span><dl> <dt><strong>FOLDERID_Desktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Desktop"></span><span id="folderid_desktop"></span><span id="FOLDERID_DESKTOP"></span><dl> <dt><strong>FOLDERID_Desktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1067,8 +1067,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_DeviceMetadataStore"></span><span id="folderid_devicemetadatastore"></span><span id="FOLDERID_DEVICEMETADATASTORE"></span><dl> <dt><strong>FOLDERID_DeviceMetadataStore</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_DeviceMetadataStore"></span><span id="folderid_devicemetadatastore"></span><span id="FOLDERID_DEVICEMETADATASTORE"></span><dl> <dt><strong>FOLDERID_DeviceMetadataStore</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1081,7 +1081,7 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1105,8 +1105,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Documents"></span><span id="folderid_documents"></span><span id="FOLDERID_DOCUMENTS"></span><dl> <dt><strong>FOLDERID_Documents</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Documents"></span><span id="folderid_documents"></span><span id="FOLDERID_DOCUMENTS"></span><dl> <dt><strong>FOLDERID_Documents</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1143,8 +1143,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_DocumentsLibrary"></span><span id="folderid_documentslibrary"></span><span id="FOLDERID_DOCUMENTSLIBRARY"></span><dl> <dt><strong>FOLDERID_DocumentsLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_DocumentsLibrary"></span><span id="folderid_documentslibrary"></span><span id="FOLDERID_DOCUMENTSLIBRARY"></span><dl> <dt><strong>FOLDERID_DocumentsLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1181,8 +1181,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Downloads"></span><span id="folderid_downloads"></span><span id="FOLDERID_DOWNLOADS"></span><dl> <dt><strong>FOLDERID_Downloads</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Downloads"></span><span id="folderid_downloads"></span><span id="FOLDERID_DOWNLOADS"></span><dl> <dt><strong>FOLDERID_Downloads</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1219,8 +1219,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Favorites"></span><span id="folderid_favorites"></span><span id="FOLDERID_FAVORITES"></span><dl> <dt><strong>FOLDERID_Favorites</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Favorites"></span><span id="folderid_favorites"></span><span id="FOLDERID_FAVORITES"></span><dl> <dt><strong>FOLDERID_Favorites</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1257,8 +1257,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Fonts"></span><span id="folderid_fonts"></span><span id="FOLDERID_FONTS"></span><dl> <dt><strong>FOLDERID_Fonts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Fonts"></span><span id="folderid_fonts"></span><span id="FOLDERID_FONTS"></span><dl> <dt><strong>FOLDERID_Fonts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1295,8 +1295,8 @@ Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classi
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Games"></span><span id="folderid_games"></span><span id="FOLDERID_GAMES"></span><dl> <dt><strong>FOLDERID_Games</strong></dt> </dl></td>
-<td style="text-align: left;"><div class="alert">
+<td ><span id="FOLDERID_Games"></span><span id="folderid_games"></span><span id="FOLDERID_GAMES"></span><dl> <dt><strong>FOLDERID_Games</strong></dt> </dl></td>
+<td ><div class="alert">
 <blockquote>
 [!Note]<br />
 Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste versioni restituisce 0x80070057 <strong>- E_INVALIDARG</strong>
@@ -1318,7 +1318,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1342,8 +1342,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_GameTasks"></span><span id="folderid_gametasks"></span><span id="FOLDERID_GAMETASKS"></span><dl> <dt><strong>FOLDERID_GameTasks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_GameTasks"></span><span id="folderid_gametasks"></span><span id="FOLDERID_GAMETASKS"></span><dl> <dt><strong>FOLDERID_GameTasks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1380,8 +1380,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_History"></span><span id="folderid_history"></span><span id="FOLDERID_HISTORY"></span><dl> <dt><strong>FOLDERID_History</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_History"></span><span id="folderid_history"></span><span id="FOLDERID_HISTORY"></span><dl> <dt><strong>FOLDERID_History</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1418,8 +1418,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_HomeGroup"></span><span id="folderid_homegroup"></span><span id="FOLDERID_HOMEGROUP"></span><dl> <dt><strong>FOLDERID_HomeGroup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_HomeGroup"></span><span id="folderid_homegroup"></span><span id="FOLDERID_HOMEGROUP"></span><dl> <dt><strong>FOLDERID_HomeGroup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1432,7 +1432,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1456,8 +1456,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_HomeGroupCurrentUser"></span><span id="folderid_homegroupcurrentuser"></span><span id="FOLDERID_HOMEGROUPCURRENTUSER"></span><dl> <dt><strong>FOLDERID_HomeGroupCurrentUser</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_HomeGroupCurrentUser"></span><span id="folderid_homegroupcurrentuser"></span><span id="FOLDERID_HOMEGROUPCURRENTUSER"></span><dl> <dt><strong>FOLDERID_HomeGroupCurrentUser</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1470,7 +1470,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1494,8 +1494,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ImplicitAppShortcuts"></span><span id="folderid_implicitappshortcuts"></span><span id="FOLDERID_IMPLICITAPPSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ImplicitAppShortcuts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ImplicitAppShortcuts"></span><span id="folderid_implicitappshortcuts"></span><span id="FOLDERID_IMPLICITAPPSHORTCUTS"></span><dl> <dt><strong>FOLDERID_ImplicitAppShortcuts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1532,8 +1532,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_InternetCache"></span><span id="folderid_internetcache"></span><span id="FOLDERID_INTERNETCACHE"></span><dl> <dt><strong>FOLDERID_InternetCache</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_InternetCache"></span><span id="folderid_internetcache"></span><span id="FOLDERID_INTERNETCACHE"></span><dl> <dt><strong>FOLDERID_InternetCache</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1570,8 +1570,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_InternetFolder"></span><span id="folderid_internetfolder"></span><span id="FOLDERID_INTERNETFOLDER"></span><dl> <dt><strong>FOLDERID_InternetFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_InternetFolder"></span><span id="folderid_internetfolder"></span><span id="FOLDERID_INTERNETFOLDER"></span><dl> <dt><strong>FOLDERID_InternetFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1584,7 +1584,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1608,8 +1608,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Libraries"></span><span id="folderid_libraries"></span><span id="FOLDERID_LIBRARIES"></span><dl> <dt><strong>FOLDERID_Libraries</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Libraries"></span><span id="folderid_libraries"></span><span id="FOLDERID_LIBRARIES"></span><dl> <dt><strong>FOLDERID_Libraries</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1646,8 +1646,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Links"></span><span id="folderid_links"></span><span id="FOLDERID_LINKS"></span><dl> <dt><strong>FOLDERID_Links</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Links"></span><span id="folderid_links"></span><span id="FOLDERID_LINKS"></span><dl> <dt><strong>FOLDERID_Links</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1684,8 +1684,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_LocalAppData"></span><span id="folderid_localappdata"></span><span id="FOLDERID_LOCALAPPDATA"></span><dl> <dt><strong>FOLDERID_LocalAppData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalAppData"></span><span id="folderid_localappdata"></span><span id="FOLDERID_LOCALAPPDATA"></span><dl> <dt><strong>FOLDERID_LocalAppData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1722,8 +1722,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_LocalAppDataLow"></span><span id="folderid_localappdatalow"></span><span id="FOLDERID_LOCALAPPDATALOW"></span><dl> <dt><strong>FOLDERID_LocalAppDataLow</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalAppDataLow"></span><span id="folderid_localappdatalow"></span><span id="FOLDERID_LOCALAPPDATALOW"></span><dl> <dt><strong>FOLDERID_LocalAppDataLow</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1760,8 +1760,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_LocalizedResourcesDir"></span><span id="folderid_localizedresourcesdir"></span><span id="FOLDERID_LOCALIZEDRESOURCESDIR"></span><dl> <dt><strong>FOLDERID_LocalizedResourcesDir</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_LocalizedResourcesDir"></span><span id="folderid_localizedresourcesdir"></span><span id="FOLDERID_LOCALIZEDRESOURCESDIR"></span><dl> <dt><strong>FOLDERID_LocalizedResourcesDir</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1798,8 +1798,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Music"></span><span id="folderid_music"></span><span id="FOLDERID_MUSIC"></span><dl> <dt><strong>FOLDERID_Music</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Music"></span><span id="folderid_music"></span><span id="FOLDERID_MUSIC"></span><dl> <dt><strong>FOLDERID_Music</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1836,8 +1836,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_MusicLibrary"></span><span id="folderid_musiclibrary"></span><span id="FOLDERID_MUSICLIBRARY"></span><dl> <dt><strong>FOLDERID_MusicLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_MusicLibrary"></span><span id="folderid_musiclibrary"></span><span id="FOLDERID_MUSICLIBRARY"></span><dl> <dt><strong>FOLDERID_MusicLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1874,8 +1874,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_NetHood"></span><span id="folderid_nethood"></span><span id="FOLDERID_NETHOOD"></span><dl> <dt><strong>FOLDERID_NetHood</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_NetHood"></span><span id="folderid_nethood"></span><span id="FOLDERID_NETHOOD"></span><dl> <dt><strong>FOLDERID_NetHood</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1892,7 +1892,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Windows\Collegamenti di rete</td>
+<td>%APPDATA%\Microsoft\Windows\Network Shortcuts</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -1900,11 +1900,11 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>NetHood</td>
+<td>Net 1000</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%USERPROFILE%\NetHood</td>
+<td>%USERPROFILE%\Net Sistema</td>
 </tr>
 </tbody>
 </table>
@@ -1912,8 +1912,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_NetworkFolder"></span><span id="folderid_networkfolder"></span><span id="FOLDERID_NETWORKFOLDER"></span><dl> <dt><strong>FOLDERID_NetworkFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_NetworkFolder"></span><span id="folderid_networkfolder"></span><span id="FOLDERID_NETWORKFOLDER"></span><dl> <dt><strong>FOLDERID_NetworkFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1926,7 +1926,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -1950,8 +1950,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Objects3D"></span><span id="folderid_objects3d"></span><span id="FOLDERID_OBJECTS3D"></span><dl> <dt><strong>FOLDERID_Objects3D</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Objects3D"></span><span id="folderid_objects3d"></span><span id="FOLDERID_OBJECTS3D"></span><dl> <dt><strong>FOLDERID_Objects3D</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -1972,7 +1972,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 10, versione 1703</td>
+<td>None, valore introdotto in Windows 10, versione 1703</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -1988,8 +1988,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_OriginalImages"></span><span id="folderid_originalimages"></span><span id="FOLDERID_ORIGINALIMAGES"></span><dl> <dt><strong>FOLDERID_OriginalImages</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_OriginalImages"></span><span id="folderid_originalimages"></span><span id="FOLDERID_ORIGINALIMAGES"></span><dl> <dt><strong>FOLDERID_OriginalImages</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2010,7 +2010,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows Vista</td>
+<td>None, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2026,8 +2026,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PhotoAlbums"></span><span id="folderid_photoalbums"></span><span id="FOLDERID_PHOTOALBUMS"></span><dl> <dt><strong>FOLDERID_PhotoAlbums</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PhotoAlbums"></span><span id="folderid_photoalbums"></span><span id="FOLDERID_PHOTOALBUMS"></span><dl> <dt><strong>FOLDERID_PhotoAlbums</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2048,7 +2048,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows Vista</td>
+<td>None, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2064,8 +2064,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PicturesLibrary"></span><span id="folderid_pictureslibrary"></span><span id="FOLDERID_PICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_PicturesLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PicturesLibrary"></span><span id="folderid_pictureslibrary"></span><span id="FOLDERID_PICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_PicturesLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2102,8 +2102,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Pictures"></span><span id="folderid_pictures"></span><span id="FOLDERID_PICTURES"></span><dl> <dt><strong>FOLDERID_Pictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Pictures"></span><span id="folderid_pictures"></span><span id="FOLDERID_PICTURES"></span><dl> <dt><strong>FOLDERID_Pictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2140,8 +2140,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Playlists"></span><span id="folderid_playlists"></span><span id="FOLDERID_PLAYLISTS"></span><dl> <dt><strong>FOLDERID_Playlists</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Playlists"></span><span id="folderid_playlists"></span><span id="FOLDERID_PLAYLISTS"></span><dl> <dt><strong>FOLDERID_Playlists</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2178,8 +2178,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PrintersFolder"></span><span id="folderid_printersfolder"></span><span id="FOLDERID_PRINTERSFOLDER"></span><dl> <dt><strong>FOLDERID_PrintersFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PrintersFolder"></span><span id="folderid_printersfolder"></span><span id="FOLDERID_PRINTERSFOLDER"></span><dl> <dt><strong>FOLDERID_PrintersFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2192,7 +2192,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2216,8 +2216,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PrintHood"></span><span id="folderid_printhood"></span><span id="FOLDERID_PRINTHOOD"></span><dl> <dt><strong>FOLDERID_PrintHood</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PrintHood"></span><span id="folderid_printhood"></span><span id="FOLDERID_PRINTHOOD"></span><dl> <dt><strong>FOLDERID_PrintHood</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2254,8 +2254,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Profile"></span><span id="folderid_profile"></span><span id="FOLDERID_PROFILE"></span><dl> <dt><strong>FOLDERID_Profile</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Profile"></span><span id="folderid_profile"></span><span id="FOLDERID_PROFILE"></span><dl> <dt><strong>FOLDERID_Profile</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2292,8 +2292,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramData"></span><span id="folderid_programdata"></span><span id="FOLDERID_PROGRAMDATA"></span><dl> <dt><strong>FOLDERID_ProgramData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ProgramData"></span><span id="folderid_programdata"></span><span id="FOLDERID_PROGRAMDATA"></span><dl> <dt><strong>FOLDERID_ProgramData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2330,8 +2330,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFiles"></span><span id="folderid_programfiles"></span><span id="FOLDERID_PROGRAMFILES"></span><dl> <dt><strong>FOLDERID_ProgramFiles</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFiles"></span><span id="folderid_programfiles"></span><span id="FOLDERID_PROGRAMFILES"></span><dl> <dt><strong>FOLDERID_ProgramFiles</strong></dt> </dl></td>
+<td ><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2349,7 +2349,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2361,7 +2361,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2369,8 +2369,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesX64"></span><span id="folderid_programfilesx64"></span><span id="FOLDERID_PROGRAMFILESX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesX64</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Questo valore non è supportato nei sistemi operativi a 32 bit. Non è inoltre supportato per le applicazioni a 32 bit in esecuzione in sistemi operativi a 64 bit. Il tentativo di usare FOLDERID_ProgramFilesX64 in entrambe le situazioni comporta un errore. Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFilesX64"></span><span id="folderid_programfilesx64"></span><span id="FOLDERID_PROGRAMFILESX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesX64</strong></dt> </dl></td>
+<td ><p>Questo valore non è supportato nei sistemi operativi a 32 bit. Non è supportato anche per le applicazioni a 32 bit in esecuzione in sistemi operativi a 64 bit. Il tentativo di usare FOLDERID_ProgramFilesX64 in una delle due situazioni comporta un errore. Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2388,7 +2388,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2400,7 +2400,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2408,8 +2408,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesX86"></span><span id="folderid_programfilesx86"></span><span id="FOLDERID_PROGRAMFILESX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesX86</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFilesX86"></span><span id="folderid_programfilesx86"></span><span id="FOLDERID_PROGRAMFILESX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesX86</strong></dt> </dl></td>
+<td ><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2427,7 +2427,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2439,7 +2439,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%Programmi% (%SystemDrive%\Programmi)</td>
+<td>%ProgramFiles% (%SystemDrive%\Programmi)</td>
 </tr>
 </tbody>
 </table>
@@ -2447,8 +2447,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommon"></span><span id="folderid_programfilescommon"></span><span id="FOLDERID_PROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommon</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFilesCommon"></span><span id="folderid_programfilescommon"></span><span id="FOLDERID_PROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommon</strong></dt> </dl></td>
+<td ><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2466,7 +2466,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2478,7 +2478,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 </tbody>
 </table>
@@ -2486,8 +2486,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommonX64"></span><span id="folderid_programfilescommonx64"></span><span id="FOLDERID_PROGRAMFILESCOMMONX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX64</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFilesCommonX64"></span><span id="folderid_programfilescommonx64"></span><span id="FOLDERID_PROGRAMFILESCOMMONX64"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX64</strong></dt> </dl></td>
+<td ><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2505,7 +2505,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2517,7 +2517,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 </tbody>
 </table>
@@ -2525,8 +2525,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ProgramFilesCommonX86"></span><span id="folderid_programfilescommonx86"></span><span id="FOLDERID_PROGRAMFILESCOMMONX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX86</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
+<td ><span id="FOLDERID_ProgramFilesCommonX86"></span><span id="folderid_programfilescommonx86"></span><span id="FOLDERID_PROGRAMFILESCOMMONX86"></span><dl> <dt><strong>FOLDERID_ProgramFilesCommonX86</strong></dt> </dl></td>
+<td ><p>Per ulteriori informazioni, vedere la sezione Osservazioni.</p>
 
 <table>
 <tbody>
@@ -2544,7 +2544,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2556,7 +2556,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
-<td>%ProgramFiles%\Common Files</td>
+<td>%Programmi%\File comuni</td>
 </tr>
 </tbody>
 </table>
@@ -2564,8 +2564,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Programs"></span><span id="folderid_programs"></span><span id="FOLDERID_PROGRAMS"></span><dl> <dt><strong>FOLDERID_Programs</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Programs"></span><span id="folderid_programs"></span><span id="FOLDERID_PROGRAMS"></span><dl> <dt><strong>FOLDERID_Programs</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2582,7 +2582,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%APPDATA%\Microsoft\Windows\Start Menu\Programs</td>
+<td>%APPDATA%\Microsoft\Windows\Menu Start\Programmi</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
@@ -2602,8 +2602,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Public"></span><span id="folderid_public"></span><span id="FOLDERID_PUBLIC"></span><dl> <dt><strong>FOLDERID_Public</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Public"></span><span id="folderid_public"></span><span id="FOLDERID_PUBLIC"></span><dl> <dt><strong>FOLDERID_Public</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2612,7 +2612,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Nome visualizzato</td>
-<td>Blockchain pubblica</td>
+<td>Pubblico</td>
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
@@ -2624,7 +2624,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, novità per Windows Vista</td>
+<td>Nessuno, nuovo per Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2640,8 +2640,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicDesktop"></span><span id="folderid_publicdesktop"></span><span id="FOLDERID_PUBLICDESKTOP"></span><dl> <dt><strong>FOLDERID_PublicDesktop</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDesktop"></span><span id="folderid_publicdesktop"></span><span id="FOLDERID_PUBLICDESKTOP"></span><dl> <dt><strong>FOLDERID_PublicDesktop</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2654,7 +2654,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2678,8 +2678,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicDocuments"></span><span id="folderid_publicdocuments"></span><span id="FOLDERID_PUBLICDOCUMENTS"></span><dl> <dt><strong>FOLDERID_PublicDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDocuments"></span><span id="folderid_publicdocuments"></span><span id="FOLDERID_PUBLICDOCUMENTS"></span><dl> <dt><strong>FOLDERID_PublicDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2692,7 +2692,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2716,8 +2716,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicDownloads"></span><span id="folderid_publicdownloads"></span><span id="FOLDERID_PUBLICDOWNLOADS"></span><dl> <dt><strong>FOLDERID_PublicDownloads</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicDownloads"></span><span id="folderid_publicdownloads"></span><span id="FOLDERID_PUBLICDOWNLOADS"></span><dl> <dt><strong>FOLDERID_PublicDownloads</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2730,7 +2730,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2738,7 +2738,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2754,8 +2754,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicGameTasks"></span><span id="folderid_publicgametasks"></span><span id="FOLDERID_PUBLICGAMETASKS"></span><dl> <dt><strong>FOLDERID_PublicGameTasks</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicGameTasks"></span><span id="folderid_publicgametasks"></span><span id="FOLDERID_PUBLICGAMETASKS"></span><dl> <dt><strong>FOLDERID_PublicGameTasks</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2768,7 +2768,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2776,7 +2776,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -2792,8 +2792,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicLibraries"></span><span id="folderid_publiclibraries"></span><span id="FOLDERID_PUBLICLIBRARIES"></span><dl> <dt><strong>FOLDERID_PublicLibraries</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicLibraries"></span><span id="folderid_publiclibraries"></span><span id="FOLDERID_PUBLICLIBRARIES"></span><dl> <dt><strong>FOLDERID_PublicLibraries</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2806,7 +2806,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2830,8 +2830,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicMusic"></span><span id="folderid_publicmusic"></span><span id="FOLDERID_PUBLICMUSIC"></span><dl> <dt><strong>FOLDERID_PublicMusic</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicMusic"></span><span id="folderid_publicmusic"></span><span id="FOLDERID_PUBLICMUSIC"></span><dl> <dt><strong>FOLDERID_PublicMusic</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2844,7 +2844,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2856,7 +2856,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
-<td>Condivisione Musica</td>
+<td>Musica</td>
 </tr>
 <tr class="odd">
 <td>Percorso predefinito legacy</td>
@@ -2868,8 +2868,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicPictures"></span><span id="folderid_publicpictures"></span><span id="FOLDERID_PUBLICPICTURES"></span><dl> <dt><strong>FOLDERID_PublicPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicPictures"></span><span id="folderid_publicpictures"></span><span id="FOLDERID_PUBLICPICTURES"></span><dl> <dt><strong>FOLDERID_PublicPictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2882,7 +2882,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2906,8 +2906,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicRingtones"></span><span id="folderid_publicringtones"></span><span id="FOLDERID_PUBLICRINGTONES"></span><dl> <dt><strong>FOLDERID_PublicRingtones</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicRingtones"></span><span id="folderid_publicringtones"></span><span id="FOLDERID_PUBLICRINGTONES"></span><dl> <dt><strong>FOLDERID_PublicRingtones</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2920,7 +2920,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2944,8 +2944,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_PublicUserTiles"></span><span id="folderid_publicusertiles"></span><span id="FOLDERID_PUBLICUSERTILES"></span><dl> <dt><strong>FOLDERID_PublicUserTiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicUserTiles"></span><span id="folderid_publicusertiles"></span><span id="FOLDERID_PUBLICUSERTILES"></span><dl> <dt><strong>FOLDERID_PublicUserTiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2958,7 +2958,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -2982,8 +2982,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_PublicVideos"></span><span id="folderid_publicvideos"></span><span id="FOLDERID_PUBLICVIDEOS"></span><dl> <dt><strong>FOLDERID_PublicVideos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_PublicVideos"></span><span id="folderid_publicvideos"></span><span id="FOLDERID_PUBLICVIDEOS"></span><dl> <dt><strong>FOLDERID_PublicVideos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -2996,7 +2996,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3020,8 +3020,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_QuickLaunch"></span><span id="folderid_quicklaunch"></span><span id="FOLDERID_QUICKLAUNCH"></span><dl> <dt><strong>FOLDERID_QuickLaunch</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_QuickLaunch"></span><span id="folderid_quicklaunch"></span><span id="FOLDERID_QUICKLAUNCH"></span><dl> <dt><strong>FOLDERID_QuickLaunch</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3058,8 +3058,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_Recent"></span><span id="folderid_recent"></span><span id="FOLDERID_RECENT"></span><dl> <dt><strong>FOLDERID_Recent</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Recent"></span><span id="folderid_recent"></span><span id="FOLDERID_RECENT"></span><dl> <dt><strong>FOLDERID_Recent</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3096,12 +3096,12 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Non usato. Questo valore non è definito a Windows 7.</p></td>
+<td ><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
+<td ><p>Non usato. Questo valore non è definito a Windows 7.</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3114,7 +3114,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3138,8 +3138,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RecycleBinFolder"></span><span id="folderid_recyclebinfolder"></span><span id="FOLDERID_RECYCLEBINFOLDER"></span><dl> <dt><strong>FOLDERID_RecycleBinFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RecycleBinFolder"></span><span id="folderid_recyclebinfolder"></span><span id="FOLDERID_RECYCLEBINFOLDER"></span><dl> <dt><strong>FOLDERID_RecycleBinFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3152,7 +3152,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3176,8 +3176,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_ResourceDir"></span><span id="folderid_resourcedir"></span><span id="FOLDERID_RESOURCEDIR"></span><dl> <dt><strong>FOLDERID_ResourceDir</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_ResourceDir"></span><span id="folderid_resourcedir"></span><span id="FOLDERID_RESOURCEDIR"></span><dl> <dt><strong>FOLDERID_ResourceDir</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3214,8 +3214,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Ringtones"></span><span id="folderid_ringtones"></span><span id="FOLDERID_RINGTONES"></span><dl> <dt><strong>FOLDERID_Ringtones</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Ringtones"></span><span id="folderid_ringtones"></span><span id="FOLDERID_RINGTONES"></span><dl> <dt><strong>FOLDERID_Ringtones</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3252,8 +3252,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RoamingAppData"></span><span id="folderid_roamingappdata"></span><span id="FOLDERID_ROAMINGAPPDATA"></span><dl> <dt><strong>FOLDERID_RoamingAppData</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamingAppData"></span><span id="folderid_roamingappdata"></span><span id="FOLDERID_ROAMINGAPPDATA"></span><dl> <dt><strong>FOLDERID_RoamingAppData</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3290,8 +3290,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_RoamedTileImages"></span><span id="folderid_roamedtileimages"></span><span id="FOLDERID_ROAMEDTILEIMAGES"></span><dl> <dt><strong>FOLDERID_RoamedTileImages</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamedTileImages"></span><span id="folderid_roamedtileimages"></span><span id="FOLDERID_ROAMEDTILEIMAGES"></span><dl> <dt><strong>FOLDERID_RoamedTileImages</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3312,7 +3312,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3328,8 +3328,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_RoamingTiles"></span><span id="folderid_roamingtiles"></span><span id="FOLDERID_ROAMINGTILES"></span><dl> <dt><strong>FOLDERID_RoamingTiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_RoamingTiles"></span><span id="folderid_roamingtiles"></span><span id="FOLDERID_ROAMINGTILES"></span><dl> <dt><strong>FOLDERID_RoamingTiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3350,7 +3350,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3366,8 +3366,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SampleMusic"></span><span id="folderid_samplemusic"></span><span id="FOLDERID_SAMPLEMUSIC"></span><dl> <dt><strong>FOLDERID_SampleMusic</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SampleMusic"></span><span id="folderid_samplemusic"></span><span id="FOLDERID_SAMPLEMUSIC"></span><dl> <dt><strong>FOLDERID_SampleMusic</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3380,7 +3380,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3404,8 +3404,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SamplePictures"></span><span id="folderid_samplepictures"></span><span id="FOLDERID_SAMPLEPICTURES"></span><dl> <dt><strong>FOLDERID_SamplePictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SamplePictures"></span><span id="folderid_samplepictures"></span><span id="FOLDERID_SAMPLEPICTURES"></span><dl> <dt><strong>FOLDERID_SamplePictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3418,7 +3418,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3442,8 +3442,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SamplePlaylists"></span><span id="folderid_sampleplaylists"></span><span id="FOLDERID_SAMPLEPLAYLISTS"></span><dl> <dt><strong>FOLDERID_SamplePlaylists</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SamplePlaylists"></span><span id="folderid_sampleplaylists"></span><span id="FOLDERID_SAMPLEPLAYLISTS"></span><dl> <dt><strong>FOLDERID_SamplePlaylists</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3456,15 +3456,15 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%PUBLIC%\Musica\Sample Playlists</td>
+<td>%PUBLIC%\Musica\Playlist di esempio</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3480,8 +3480,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SampleVideos"></span><span id="folderid_samplevideos"></span><span id="FOLDERID_SAMPLEVIDEOS"></span><dl> <dt><strong>FOLDERID_SampleVideos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SampleVideos"></span><span id="folderid_samplevideos"></span><span id="FOLDERID_SAMPLEVIDEOS"></span><dl> <dt><strong>FOLDERID_SampleVideos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3494,7 +3494,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3518,8 +3518,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SavedGames"></span><span id="folderid_savedgames"></span><span id="FOLDERID_SAVEDGAMES"></span><dl> <dt><strong>FOLDERID_SavedGames</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedGames"></span><span id="folderid_savedgames"></span><span id="FOLDERID_SAVEDGAMES"></span><dl> <dt><strong>FOLDERID_SavedGames</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3540,7 +3540,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3556,8 +3556,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SavedPictures"></span><span id="folderid_savedpictures"></span><span id="FOLDERID_SAVEDPICTURES"></span><dl> <dt><strong>FOLDERID_SavedPictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedPictures"></span><span id="folderid_savedpictures"></span><span id="FOLDERID_SAVEDPICTURES"></span><dl> <dt><strong>FOLDERID_SavedPictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3594,8 +3594,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SavedPicturesLibrary"></span><span id="folderid_savedpictureslibrary"></span><span id="FOLDERID_SAVEDPICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_SavedPicturesLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedPicturesLibrary"></span><span id="folderid_savedpictureslibrary"></span><span id="FOLDERID_SAVEDPICTURESLIBRARY"></span><dl> <dt><strong>FOLDERID_SavedPicturesLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3632,8 +3632,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SavedSearches"></span><span id="folderid_savedsearches"></span><span id="FOLDERID_SAVEDSEARCHES"></span><dl> <dt><strong>FOLDERID_SavedSearches</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SavedSearches"></span><span id="folderid_savedsearches"></span><span id="FOLDERID_SAVEDSEARCHES"></span><dl> <dt><strong>FOLDERID_SavedSearches</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3670,8 +3670,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Screenshots"></span><span id="folderid_screenshots"></span><span id="FOLDERID_SCREENSHOTS"></span><dl> <dt><strong>FOLDERID_Screenshots</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Screenshots"></span><span id="folderid_screenshots"></span><span id="FOLDERID_SCREENSHOTS"></span><dl> <dt><strong>FOLDERID_Screenshots</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3692,7 +3692,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8</td>
+<td>Nessuno, valore introdotto in Windows 8</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3708,8 +3708,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SEARCH_CSC"></span><span id="folderid_search_csc"></span><dl> <dt><strong>FOLDERID_SEARCH_CSC</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SEARCH_CSC"></span><span id="folderid_search_csc"></span><dl> <dt><strong>FOLDERID_SEARCH_CSC</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3722,7 +3722,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3746,8 +3746,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SearchHistory"></span><span id="folderid_searchhistory"></span><span id="FOLDERID_SEARCHHISTORY"></span><dl> <dt><strong>FOLDERID_SearchHistory</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SearchHistory"></span><span id="folderid_searchhistory"></span><span id="FOLDERID_SEARCHHISTORY"></span><dl> <dt><strong>FOLDERID_SearchHistory</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3768,7 +3768,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows 8.1</td>
+<td>Nessuno, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3784,8 +3784,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SearchHome"></span><span id="folderid_searchhome"></span><span id="FOLDERID_SEARCHHOME"></span><dl> <dt><strong>FOLDERID_SearchHome</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SearchHome"></span><span id="folderid_searchhome"></span><span id="FOLDERID_SEARCHHOME"></span><dl> <dt><strong>FOLDERID_SearchHome</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3798,7 +3798,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3822,8 +3822,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SEARCH_MAPI"></span><span id="folderid_search_mapi"></span><dl> <dt><strong>FOLDERID_SEARCH_MAPI</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SEARCH_MAPI"></span><span id="folderid_search_mapi"></span><dl> <dt><strong>FOLDERID_SEARCH_MAPI</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3836,7 +3836,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -3860,8 +3860,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SearchTemplates"></span><span id="folderid_searchtemplates"></span><span id="FOLDERID_SEARCHTEMPLATES"></span><dl> <dt><strong>FOLDERID_SearchTemplates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SearchTemplates"></span><span id="folderid_searchtemplates"></span><span id="FOLDERID_SEARCHTEMPLATES"></span><dl> <dt><strong>FOLDERID_SearchTemplates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3882,7 +3882,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 8.1</td>
+<td>None, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3898,8 +3898,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SendTo"></span><span id="folderid_sendto"></span><span id="FOLDERID_SENDTO"></span><dl> <dt><strong>FOLDERID_SendTo</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SendTo"></span><span id="folderid_sendto"></span><span id="FOLDERID_SENDTO"></span><dl> <dt><strong>FOLDERID_SendTo</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3936,8 +3936,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SidebarDefaultParts"></span><span id="folderid_sidebardefaultparts"></span><span id="FOLDERID_SIDEBARDEFAULTPARTS"></span><dl> <dt><strong>FOLDERID_SidebarDefaultParts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SidebarDefaultParts"></span><span id="folderid_sidebardefaultparts"></span><span id="FOLDERID_SIDEBARDEFAULTPARTS"></span><dl> <dt><strong>FOLDERID_SidebarDefaultParts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3950,15 +3950,15 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Comune</td>
+<td>COMUNE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%ProgramFiles%\Windows Sidebar\Gadgets</td>
+<td>%ProgramFiles%\Windows Sidebar\Programmi</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, nuovo per Windows 7</td>
+<td>Nessuno, novità per Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -3974,8 +3974,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SidebarParts"></span><span id="folderid_sidebarparts"></span><span id="FOLDERID_SIDEBARPARTS"></span><dl> <dt><strong>FOLDERID_SidebarParts</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SidebarParts"></span><span id="folderid_sidebarparts"></span><span id="FOLDERID_SIDEBARPARTS"></span><dl> <dt><strong>FOLDERID_SidebarParts</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -3992,11 +3992,11 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows Sidebar\Gadgets</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows Sidebar\Programmi</td>
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, nuovo per Windows 7</td>
+<td>Nessuno, novità per Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4012,8 +4012,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SkyDrive"></span><span id="folderid_skydrive"></span><span id="FOLDERID_SKYDRIVE"></span><dl> <dt><strong>FOLDERID_SkyDrive</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDrive"></span><span id="folderid_skydrive"></span><span id="FOLDERID_SKYDRIVE"></span><dl> <dt><strong>FOLDERID_SkyDrive</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4034,7 +4034,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 8.1</td>
+<td>None, valore introdotto in Windows 8.1</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4050,8 +4050,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SkyDriveCameraRoll"></span><span id="folderid_skydrivecameraroll"></span><span id="FOLDERID_SKYDRIVECAMERAROLL"></span><dl> <dt><strong>FOLDERID_SkyDriveCameraRoll</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDriveCameraRoll"></span><span id="folderid_skydrivecameraroll"></span><span id="FOLDERID_SKYDRIVECAMERAROLL"></span><dl> <dt><strong>FOLDERID_SkyDriveCameraRoll</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4088,8 +4088,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SkyDriveDocuments"></span><span id="folderid_skydrivedocuments"></span><span id="FOLDERID_SKYDRIVEDOCUMENTS"></span><dl> <dt><strong>FOLDERID_SkyDriveDocuments</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDriveDocuments"></span><span id="folderid_skydrivedocuments"></span><span id="FOLDERID_SKYDRIVEDOCUMENTS"></span><dl> <dt><strong>FOLDERID_SkyDriveDocuments</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4126,8 +4126,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SkyDrivePictures"></span><span id="folderid_skydrivepictures"></span><span id="FOLDERID_SKYDRIVEPICTURES"></span><dl> <dt><strong>FOLDERID_SkyDrivePictures</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SkyDrivePictures"></span><span id="folderid_skydrivepictures"></span><span id="FOLDERID_SKYDRIVEPICTURES"></span><dl> <dt><strong>FOLDERID_SkyDrivePictures</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4164,8 +4164,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_StartMenu"></span><span id="folderid_startmenu"></span><span id="FOLDERID_STARTMENU"></span><dl> <dt><strong>FOLDERID_StartMenu</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_StartMenu"></span><span id="folderid_startmenu"></span><span id="FOLDERID_STARTMENU"></span><dl> <dt><strong>FOLDERID_StartMenu</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4202,8 +4202,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Startup"></span><span id="folderid_startup"></span><span id="FOLDERID_STARTUP"></span><dl> <dt><strong>FOLDERID_Startup</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Startup"></span><span id="folderid_startup"></span><span id="FOLDERID_STARTUP"></span><dl> <dt><strong>FOLDERID_Startup</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4240,8 +4240,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SyncManagerFolder"></span><span id="folderid_syncmanagerfolder"></span><span id="FOLDERID_SYNCMANAGERFOLDER"></span><dl> <dt><strong>FOLDERID_SyncManagerFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SyncManagerFolder"></span><span id="folderid_syncmanagerfolder"></span><span id="FOLDERID_SYNCMANAGERFOLDER"></span><dl> <dt><strong>FOLDERID_SyncManagerFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4254,7 +4254,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4278,8 +4278,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_SyncResultsFolder"></span><span id="folderid_syncresultsfolder"></span><span id="FOLDERID_SYNCRESULTSFOLDER"></span><dl> <dt><strong>FOLDERID_SyncResultsFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SyncResultsFolder"></span><span id="folderid_syncresultsfolder"></span><span id="FOLDERID_SYNCRESULTSFOLDER"></span><dl> <dt><strong>FOLDERID_SyncResultsFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4292,7 +4292,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4316,8 +4316,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SyncSetupFolder"></span><span id="folderid_syncsetupfolder"></span><span id="FOLDERID_SYNCSETUPFOLDER"></span><dl> <dt><strong>FOLDERID_SyncSetupFolder</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SyncSetupFolder"></span><span id="folderid_syncsetupfolder"></span><span id="FOLDERID_SYNCSETUPFOLDER"></span><dl> <dt><strong>FOLDERID_SyncSetupFolder</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4330,7 +4330,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4338,7 +4338,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, valore introdotto in Windows Vista</td>
+<td>Nessuno, valore introdotto in Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4354,8 +4354,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_System"></span><span id="folderid_system"></span><span id="FOLDERID_SYSTEM"></span><dl> <dt><strong>FOLDERID_System</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_System"></span><span id="folderid_system"></span><span id="FOLDERID_SYSTEM"></span><dl> <dt><strong>FOLDERID_System</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4392,8 +4392,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_SystemX86"></span><span id="folderid_systemx86"></span><span id="FOLDERID_SYSTEMX86"></span><dl> <dt><strong>FOLDERID_SystemX86</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_SystemX86"></span><span id="folderid_systemx86"></span><span id="FOLDERID_SYSTEMX86"></span><dl> <dt><strong>FOLDERID_SystemX86</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4430,8 +4430,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Templates"></span><span id="folderid_templates"></span><span id="FOLDERID_TEMPLATES"></span><dl> <dt><strong>FOLDERID_Templates</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Templates"></span><span id="folderid_templates"></span><span id="FOLDERID_TEMPLATES"></span><dl> <dt><strong>FOLDERID_Templates</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4468,12 +4468,12 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_TreeProperties"></span><span id="folderid_treeproperties"></span><span id="FOLDERID_TREEPROPERTIES"></span><dl> <dt><strong>FOLDERID_TreeProperties</strong></dt> </dl></td>
-<td style="text-align: left;"><p>Non usato in Windows Vista. Non supportato a Windows 7.</p></td>
+<td ><span id="FOLDERID_TreeProperties"></span><span id="folderid_treeproperties"></span><span id="FOLDERID_TREEPROPERTIES"></span><dl> <dt><strong>FOLDERID_TreeProperties</strong></dt> </dl></td>
+<td ><p>Non usato in Windows Vista. Non supportato a Windows 7.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UserPinned"></span><span id="folderid_userpinned"></span><span id="FOLDERID_USERPINNED"></span><dl> <dt><strong>FOLDERID_UserPinned</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserPinned"></span><span id="folderid_userpinned"></span><span id="FOLDERID_USERPINNED"></span><dl> <dt><strong>FOLDERID_UserPinned</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4494,7 +4494,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>Nessuno, valore introdotto in Windows 7</td>
+<td>Nessuno, valore introdotto nella Windows 7</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4510,8 +4510,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UserProfiles"></span><span id="folderid_userprofiles"></span><span id="FOLDERID_USERPROFILES"></span><dl> <dt><strong>FOLDERID_UserProfiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProfiles"></span><span id="folderid_userprofiles"></span><span id="FOLDERID_USERPROFILES"></span><dl> <dt><strong>FOLDERID_UserProfiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4532,7 +4532,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Equivalente CSIDL</td>
-<td>None, novità per Windows Vista</td>
+<td>Nessuno, nuovo per Windows Vista</td>
 </tr>
 <tr class="even">
 <td>Nome visualizzato legacy</td>
@@ -4548,8 +4548,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UserProgramFiles"></span><span id="folderid_userprogramfiles"></span><span id="FOLDERID_USERPROGRAMFILES"></span><dl> <dt><strong>FOLDERID_UserProgramFiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProgramFiles"></span><span id="folderid_userprogramfiles"></span><span id="FOLDERID_USERPROGRAMFILES"></span><dl> <dt><strong>FOLDERID_UserProgramFiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4586,8 +4586,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UserProgramFilesCommon"></span><span id="folderid_userprogramfilescommon"></span><span id="FOLDERID_USERPROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_UserProgramFilesCommon</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UserProgramFilesCommon"></span><span id="folderid_userprogramfilescommon"></span><span id="FOLDERID_USERPROGRAMFILESCOMMON"></span><dl> <dt><strong>FOLDERID_UserProgramFilesCommon</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4624,8 +4624,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_UsersFiles"></span><span id="folderid_usersfiles"></span><span id="FOLDERID_USERSFILES"></span><dl> <dt><strong>FOLDERID_UsersFiles</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UsersFiles"></span><span id="folderid_usersfiles"></span><span id="FOLDERID_USERSFILES"></span><dl> <dt><strong>FOLDERID_UsersFiles</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4638,7 +4638,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4662,8 +4662,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_UsersLibraries"></span><span id="folderid_userslibraries"></span><span id="FOLDERID_USERSLIBRARIES"></span><dl> <dt><strong>FOLDERID_UsersLibraries</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_UsersLibraries"></span><span id="folderid_userslibraries"></span><span id="FOLDERID_USERSLIBRARIES"></span><dl> <dt><strong>FOLDERID_UsersLibraries</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4676,7 +4676,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 </tr>
 <tr class="odd">
 <td>Tipo di cartella</td>
-<td>Virtuale</td>
+<td>VIRTUALE</td>
 </tr>
 <tr class="even">
 <td>Predefinito Path</td>
@@ -4700,8 +4700,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Videos"></span><span id="folderid_videos"></span><span id="FOLDERID_VIDEOS"></span><dl> <dt><strong>FOLDERID_Videos</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Videos"></span><span id="folderid_videos"></span><span id="FOLDERID_VIDEOS"></span><dl> <dt><strong>FOLDERID_Videos</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4738,8 +4738,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span id="FOLDERID_VideosLibrary"></span><span id="folderid_videoslibrary"></span><span id="FOLDERID_VIDEOSLIBRARY"></span><dl> <dt><strong>FOLDERID_VideosLibrary</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_VideosLibrary"></span><span id="folderid_videoslibrary"></span><span id="FOLDERID_VIDEOSLIBRARY"></span><dl> <dt><strong>FOLDERID_VideosLibrary</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4776,8 +4776,8 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 <p> </p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span id="FOLDERID_Windows"></span><span id="folderid_windows"></span><span id="FOLDERID_WINDOWS"></span><dl> <dt><strong>FOLDERID_Windows</strong></dt> </dl></td>
-<td style="text-align: left;">
+<td ><span id="FOLDERID_Windows"></span><span id="folderid_windows"></span><span id="FOLDERID_WINDOWS"></span><dl> <dt><strong>FOLDERID_Windows</strong></dt> </dl></td>
+<td >
 <table>
 <tbody>
 <tr class="odd">
@@ -4820,7 +4820,7 @@ Questo FOLDERID è deprecato in Windows 10 versione 1803 e successive. In queste
 
 ## <a name="remarks"></a>Commenti
 
-L'interpretazione di determinati valori **KNOWNFOLDERID** dipende dal fatto che la cartella fa parte di un'applicazione a 32 o 64 bit e se l'applicazione è in esecuzione in un sistema operativo a 32 o 64 bit. Se l'applicazione deve distinguere, ad **esempio,** programmi e file di programma **(x86),** è necessario usare **il valore KNOWNFOLDERID** giusto per la situazione.
+L'interpretazione di alcuni valori **KNOWNFOLDERID** dipende dal fatto che la cartella sia parte di un'applicazione a 32 bit o a 64 bit e che l'applicazione sia in esecuzione in un sistema operativo a 32 bit o a 64 bit. Se l'applicazione deve distinguere, ad **esempio,** programmi e programmi **(x86),** è necessario usare il **valore KNOWNFOLDERID per** la situazione.
 
 Nelle tabelle seguenti viene riepilogato **l'utilizzo di KNOWNFOLDERID** in questi casi.
 
@@ -4845,29 +4845,29 @@ Nelle tabelle seguenti viene riepilogato **l'utilizzo di KNOWNFOLDERID** in ques
 | Sistema operativo | Applicazione | KNOWNFOLDERID | Predefinito Path | Equivalente CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
 | 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
-| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA \_ \_ CSIDL \_ COMMONX86 |
 | 32 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX64 (non definito) | Non applicabile | Non applicabile |
 | 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
-| 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA \_ \_ CSIDL \_ COMMONX86 |
 | 64 bit | 64 bit | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ File comuni | Nessuno |
 | 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommon | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMUNI |
-| 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA CSIDL \_ \_ \_ COMMONX86 |
+| 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ File comuni | FILE DI PROGRAMMA \_ \_ CSIDL \_ COMMONX86 |
 | 64 bit | 32 bit | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ File comuni | Nessuno |
 
 
-**FOLDERID \_ System**
+**Sistema \_ FOLDERID**
 
 | Sistema operativo | Applicazione | KNOWNFOLDERID | Predefinito Path | Equivalente CSIDL |
 |------------------|-------------|---------------|--------------|------------------|  
-| 32 bit | 32 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 32 bit | 32 bit | Sistema \_ FOLDERID | %windir% \\ system32 | SISTEMA \_ CSIDL |
 | 32 bit | 32 bit | FOLDERID \_ SystemX86 | %windir% \\ system32 | CSIDL \_ SYSTEMX86 |
-| 64 bit | 64 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 64 bit | 64 bit | Sistema \_ FOLDERID | %windir% \\ system32 | SISTEMA \_ CSIDL |
 | 64 bit | 64 bit | FOLDERID \_ SystemX86 | %windir% \\ syswow64 | CSIDL \_ SYSTEMX86 |
-| 64 bit | 32 bit | FOLDERID \_ System | %windir% \\ system32 | SISTEMA \_ CSIDL |
+| 64 bit | 32 bit | Sistema \_ FOLDERID | %windir% \\ system32 | SISTEMA \_ CSIDL |
 | 64 bit | 32 bit | FOLDERID \_ SystemX86 | %windir% \\ syswow64 | CSIDL \_ SYSTEMX86 |
 
 
-In questo argomento sono state usate stringhe di ambiente per fornire percorsi generici. Le tabelle seguenti forniscono esempi dei percorsi che rappresentano tali stringhe di ambiente. In alcuni casi, questi percorsi potrebbero non corrispondere a quelli in un determinato computer a causa delle scelte effettuate durante l'installazione o il reindirizzamento delle cartelle successivo. Si noti che alcuni percorsi sono stati modificati per Windows Vista.
+In questo argomento sono state usate stringhe di ambiente per fornire percorsi generici. Le tabelle seguenti forniscono esempi dei percorsi che rappresentano le stringhe di ambiente. In alcuni casi, questi percorsi potrebbero non corrispondere a quelli di un computer specifico a causa delle scelte effettuate durante l'installazione o il reindirizzamento delle cartelle successivo. Si noti che alcuni percorsi sono stati modificati per Windows Vista.
 
 
 **Windows Vista e versioni successive**
@@ -4876,7 +4876,7 @@ In questo argomento sono state usate stringhe di ambiente per fornire percorsi g
 |--------------------|--------------|
 | %ALLUSERSPROFILE% | C: \\ ProgramData |
 | %APPDATA% | C: \\ Nome utente \\ *utenti* \\ AppData \\ Roaming |
-| %LOCALAPPDATA% | C: \\ Users \\ *username* \\ AppData \\ Local |
+| %LOCALAPPDATA% | C: \\ Nome utente \\ *utenti* \\ AppData \\ Local |
 | %ProgramData% | C: \\ ProgramData |
 | %ProgramFiles% | C: \\ Programmi |
 | %ProgramFiles(x86)% | C: \\ Programmi (x86) |
@@ -4891,7 +4891,7 @@ In questo argomento sono state usate stringhe di ambiente per fornire percorsi g
 | Stringa di ambiente | Percorso di esempio |
 |--------------------|--------------|
 | %ALLUSERSPROFILE% | C: \\ Documenti e Impostazioni tutti gli \\ utenti |
-| %APPDATA% | C: \\ Documents and Impostazioni \\ *username* \\ Application Data |
+| %APPDATA% | C: Documenti \\ e nome utente Impostazioni dati \\ *dell'applicazione* \\ |
 | %ProgramFiles% | C: \\ Programmi |
 | %SystemDrive% | C: |
 | %USERPROFILE% | C: \\ Documenti e nome Impostazioni utente \\  |

@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni sull'heap del descrittore.
+description: Rappresenta le informazioni sull'heap dei descrittori.
 MS-HAID: vspixengine.DescriptorHeapRecord
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 370d4ad2dac0af41e65292819f97a688e2a68a1e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 945d730538eb225c2e932ac9018dcd0fc6594970
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124737"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627617"
 ---
 # <a name="span-idvspixenginedescriptorheaprecordspandescriptorheaprecord-structure"></a><span id="vspixengine.descriptorheaprecord"></span>Struttura DescriptorHeapRecord
 
-Rappresenta le informazioni sull'heap del descrittore.
+Rappresenta le informazioni sull'heap dei descrittori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,12 +37,12 @@ Rappresenta le informazioni sull'heap del descrittore.
 
 ## <a name="members"></a>Members
 
-**ColumnValues**  
-Matrice di informazioni sull'heap del descrittore indicizzate tramite l'enumerazione delle colonne heap del descrittore \_ \_ .
+**Valori di colonna**  
+Matrice di informazioni sull'heap dei descrittori indicizzata tramite l'enumerazione DESCRIPTOR \_ HEAP \_ COLUMNS.
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

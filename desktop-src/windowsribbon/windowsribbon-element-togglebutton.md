@@ -3,7 +3,7 @@ title: Elemento ToggleButton
 description: Rappresenta un controllo Toggle Button.
 ms.assetid: f26a90e6-9e9a-4fde-8753-50b8b1d09f80
 keywords:
-- Elemento ToggleButton Windows ribbon
+- Elemento ToggleButton Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e17c4f9ea6aa557db6c1f9b98aca60b6da351936a70b783a0618217c03ba7b1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c92a5985b560738d7119a6c5de354ad703f58894
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119441591"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626967"
 ---
 # <a name="togglebutton-element"></a>Elemento ToggleButton
 
@@ -38,10 +38,10 @@ Rappresenta un [controllo Toggle Button.](windowsribbon-controls-togglebutton.md
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -63,8 +63,8 @@ Rappresenta un [controllo Toggle Button.](windowsribbon-controls-togglebutton.md
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -103,9 +103,9 @@ Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsri
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per **l'elemento ToggleButton.**
+L'esempio seguente illustra il markup di base per **l'elemento ToggleButton.**
 
-Questa sezione di codice illustra una dichiarazione **di elemento ToggleButton** all'interno dell'elemento [**QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
+Questa sezione di codice mostra una dichiarazione di **elemento ToggleButton** all'interno [**dell'elemento QuickAccessToolbar.ApplicationDefaults.**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)
 
 
 ```XML

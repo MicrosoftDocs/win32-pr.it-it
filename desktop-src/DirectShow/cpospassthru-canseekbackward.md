@@ -1,7 +1,7 @@
 ---
-description: "Il metodo CanSeekBackward determina se è possibile cercare il flusso all'indietro. Questo metodo implementa il metodo IMediaPosition:: CanSeekBackward."
+description: Il metodo CanSeekBackward determina se il flusso può essere cercato all'indietro. Questo metodo implementa il metodo IMediaPosition::CanSeekBackward.
 ms.assetid: 6443980f-6863-4941-b2dd-4a31257b5810
-title: Metodo CPosPassThru. CanSeekBackward (Ctlutil. h)
+title: Metodo CPosPassThru.CanSeekBackward (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6a016f5cfeea7ca1e63bb4d0e603784b8f95a85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1d989acf074eb20e6ea3387c37129700320ce782e3c5d7c8bd4320641839ca1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108431"
 ---
-# <a name="cpospassthrucanseekbackward-method"></a>CPosPassThru. CanSeekBackward, metodo
+# <a name="cpospassthrucanseekbackward-method"></a>Metodo CPosPassThru.CanSeekBackward
 
-Il `CanSeekBackward` metodo determina se è possibile cercare il flusso all'indietro. Questo metodo implementa il metodo [**IMediaPosition:: CanSeekBackward**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward) .
+Il `CanSeekBackward` metodo determina se il flusso può essere cercato all'indietro. Questo metodo implementa il [**metodo IMediaPosition::CanSeekBackward.**](/windows/desktop/api/Control/nf-control-imediaposition-canseekbackward)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT CanSeekBackward(
 *pCanSeekBackward* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve il valore OATRUE se il filtro può cercare indietro o OAFALSE in caso contrario.
+Puntatore a una variabile che riceve il valore OATRUE se il filtro può eseguire la ricerca all'indietro oppure OAFALSE in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

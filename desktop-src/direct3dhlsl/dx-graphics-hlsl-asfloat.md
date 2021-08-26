@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d85f6010a8c82f8ae66d5fa56a979a9e946316a5e2737fe2c7257570499055d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 901b64099547060305bab6db43cbe75b3fdb8d9c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119043849"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886267"
 ---
 # <a name="asfloat"></a>asfloat
 
@@ -64,9 +64,9 @@ Input interpretato come numero a virgola mobile.
 
 ## <a name="function-overloads"></a>Overload di funzioni
 
-<dl> 'float <x> asfloat(float <x> value); `  
-` float <x> asfloat(int <x> value); `  
-` float <x> asfloat(uint <x> value);'
+<dl> `float&lt;x&gt; asfloat(float&lt;x&gt; value);`  
+`float&lt;x&gt; asfloat(int&lt;x&gt; value);`  
+`float&lt;x&gt; asfloat(uint&lt;x&gt; value);`  
 </dl>
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
@@ -77,7 +77,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                        | Supportato |
 |---------------------------------------------------------------------|-----------|
-| [Modelli shader modello 4](dx-graphics-hlsl-sm4.md) e versioni successive | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md) e modelli shader superiori | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
 | [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | no        |

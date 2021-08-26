@@ -1,5 +1,5 @@
 ---
-description: La classe CIM VideoBIOSElement rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un sistema \_ di computer.
+description: La classe CIM VideoBIOSElement rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un \_ computer.
 ms.assetid: f23d411f-4781-4727-abd1-61fe1a366bf0
 ms.tgt_platform: multiple
 title: CIM_VideoBIOSElement classe
@@ -31,19 +31,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4864e3787b00ca72f90d0c6d15c35049abd58acd04c3d221aa29436d8885a652
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 317bbf71b166ea51e665ad96c58657927412cbab
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080255"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882028"
 ---
 # <a name="cim_videobioselement-class"></a>Classe CIM \_ VideoBIOSElement
 
-La **classe CIM \_ VideoBIOSElement** rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un sistema di computer.
+La **classe CIM \_ VideoBIOSElement** rappresenta il software di basso livello caricato nell'archiviazione non volatile e usato per configurare e accedere al controller video e alla visualizzazione di un computer.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -83,14 +83,14 @@ La **classe CIM \_ VideoBIOSElement** ha questi tipi di membri:
 
 ### <a name="properties"></a>Proprietà
 
-La **classe CIM \_ VideoBIOSElement** ha queste proprietà.
+La **classe CIM \_ VideoBIOSElement** dispone di queste proprietà.
 
 <dl> <dt>
 
 **BuildNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -108,7 +108,7 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwaree
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -126,7 +126,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **CodeSet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -144,7 +144,7 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwaree
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -162,7 +162,7 @@ Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-mana
 **Codice di identificazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -214,7 +214,7 @@ Se **TRUE,** il BIOS video viene ombreggiato.
 **LanguageEdition**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -223,7 +223,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.6")
 </dt> </dl>
 
-Edizione del linguaggio dell'elemento software. È necessario usare i codici lingua definiti in ISO 639. Quando l'elemento software rappresenta una versione multilingue o internazionale di un prodotto, deve essere usata la stringa "Multilingual".
+Edizione del linguaggio dell'elemento software. È consigliabile usare i codici di lingua definiti in ISO 639. Quando l'elemento software rappresenta una versione multilingue o internazionale di un prodotto, è necessario usare la stringa "Multilingual".
 
 Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
@@ -232,7 +232,7 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwaree
 **Produttore**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -248,23 +248,23 @@ Produttore dell'elemento software Questa proprietà viene ereditata da [**CIM \_
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome utilizzato per identificare l'elemento software Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Nome usato per identificare l'elemento software Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **OtherTargetOS**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -273,14 +273,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Produttore e tipo di sistema operativo per un elemento software quando il valore della **proprietà TargetOperatingSystem** è 1 ("Altro"). Quando il valore della proprietà **TargetOperatingSystem** è 1, questa proprietà deve avere un valore diverso da Null. Per tutti gli **altri valori TargetOperatingSystem,** questa proprietà è Null. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
+Produttore e tipo di sistema operativo per un elemento software quando il valore della **proprietà TargetOperatingSystem** è 1 ("Altro"). Quando il valore della proprietà **TargetOperatingSystem** è 1, questa proprietà deve avere un valore non Null. Per tutti gli **altri valori TargetOperatingSystem,** questa proprietà è Null. Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -298,16 +298,16 @@ Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwaree
 **SoftwareElementID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificatore dell'elemento software progettato per essere usato insieme ad altre chiavi per creare una rappresentazione univoca della [**classe CIM \_ SoftwareElement.**](cim-softwareelement.md)
+Identificatore dell'elemento software progettato per essere usato insieme ad altre chiavi per creare una rappresentazione univoca della [**classe \_ CiM SoftwareElement.**](cim-softwareelement.md)
 
 Questa proprietà viene ereditata da [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
@@ -322,7 +322,7 @@ Tipo di dati: **uint16**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Stato di un elemento software.
@@ -1023,8 +1023,8 @@ Versione dell'operazione.
 
 La versione dell'operazione deve essere in uno dei formati seguenti:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;oggetto &gt; principale. &lt; &gt;secondario. &lt; Revisione&gt;
+-   &lt;oggetto &gt; principale. &lt; revisione &gt; &lt; lettera &gt; &lt; secondaria&gt;
 
 Questa proprietà viene ereditata dalla [**classe CIM \_ SoftwareElement.**](cim-softwareelement.md)
 

@@ -1,9 +1,9 @@
 ---
-title: Funzione MrmCreateResourceFileInMemory (MrmResourceIndexer. h)
+title: Funzione MrmCreateResourceFileInMemory (MrmResourceIndexer.h)
 description: Crea informazioni PRI come BLOB in memoria, non come file su disco.
 ms.assetid: 68BDAD27-545A-4DC6-B909-4242A0863690
 keywords:
-- Menu della funzione MrmCreateResourceFileInMemory e altre risorse
+- Menu e altre risorse della funzione MrmCreateResourceFileInMemory
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17bbe36a55b5be18f9f4005b4e0ae24d3d610bd5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff34ddaab25f47f537c1270ad3a70719a43e2e1efa978fbad19cbe9ae77ba937
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886751"
 ---
-# <a name="mrmcreateresourcefileinmemory-function"></a>MrmCreateResourceFileInMemory (funzione)
+# <a name="mrmcreateresourcefileinmemory-function"></a>Funzione MrmCreateResourceFileInMemory
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Crea informazioni PRI come BLOB in memoria, non come file su disco. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputPriData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Crea informazioni PRI come BLOB in memoria, non come file su disco. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputPriData*. Chiamare [**MrmFreeMemory con**](mrmfreememory.md) lo stesso puntatore per liberare la memoria. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT HRESULT MrmCreateResourceFileInMemory(
 
 <dl> <dt>
 
-*indicizzatore* \[ in\]
+*indicizzatore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
@@ -55,7 +55,7 @@ Handle che identifica l'indicizzatore di risorse da cui creare le informazioni P
 
 </dd> <dt>
 
-*packagingMode* \[ in\]
+*packagingMode* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmPackagingMode**](mrmpackagingmode.md)**
@@ -64,30 +64,30 @@ Specifica se le informazioni PRI devono essere autonome o essere un pacchetto di
 
 </dd> <dt>
 
-*packagingOptions* \[ in\]
+*packagingOptions* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmPackagingOptions**](mrmpackagingoptions.md)**
 
-Specifica opzioni aggiuntive per le informazioni sul PRI.
+Specifica opzioni aggiuntive sulle informazioni PRI.
 
 </dd> <dt>
 
-*outputPriData* \[ out\]
+*outputPriData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
-Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputPriData*. Chiamare [**MrmFreeMemory**](mrmfreememory.md) con il puntatore a byte per liberare la memoria.
+Indirizzo di un puntatore a BYTE. La funzione alloca memoria e restituisce un puntatore a tale memoria in *outputPriData*. Chiamare [**MrmFreeMemory con**](mrmfreememory.md) il puntatore a BYTE per liberare la memoria.
 
 </dd> <dt>
 
-*outputPriSize* \[ out\]
+*outputPriSize* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Indirizzo di ULONG. In _outputPriSize *, la funzione restituisce le dimensioni della memoria allocata a cui punta *outputPriData*.
+Indirizzo di un ULONG. In *outputPriSize* la funzione restituisce le dimensioni della memoria allocata a cui punta *outputPriData.*
 
 </dd> </dl>
 
@@ -95,11 +95,11 @@ Indirizzo di ULONG. In _outputPriSize *, la funzione restituisce le dimensioni d
 
 Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Se si passa *outputPriData* a [**MrmCreateResourceIndexerFromPreviousPriData**](mrmcreateresourceindexerfrompreviouspridata-.md), non liberare la memoria fino a quando non viene terminato di usare l'indicizzatore di risorse.
+Se si passa *outputPriData* a [**MrmCreateResourceIndexerFromPreviousPriData,**](mrmcreateresourceindexerfrompreviouspridata-.md)non liberare la memoria fino a quando non si è terminato di usare l'indicizzatore di risorse.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -107,10 +107,10 @@ Se si passa *outputPriData* a [**MrmCreateResourceIndexerFromPreviousPriData**](
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

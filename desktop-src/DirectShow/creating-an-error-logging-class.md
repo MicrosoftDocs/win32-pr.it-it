@@ -1,23 +1,23 @@
 ---
-description: Questo argomento descrive come implementare la registrazione degli errori nei servizi di modifica DirectShow.
+description: Questo argomento descrive come implementare la registrazione degli errori nei DirectShow di modifica.
 ms.assetid: c0b3b25c-ed03-4f78-9c53-0c0bcff1c60c
 title: Creazione di una classe di registrazione degli errori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db08971c7bf1a0024669935079b7a9403c429327
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 194d927b2e4eae73f75a326ed03363d96f6121634e46b606ba87409e3bf07f9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108201"
 ---
 # <a name="creating-an-error-logging-class"></a>Creazione di una classe di registrazione degli errori
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Questo argomento descrive come implementare la registrazione degli errori nei [servizi di modifica DirectShow](directshow-editing-services.md).
+In questo argomento viene descritto come implementare la registrazione degli errori in [DirectShow Servizi di modifica](directshow-editing-services.md).
 
-Dichiarare prima di tutto una classe che implementerà la registrazione degli errori. La classe eredita l'interfaccia [**IAMErrorLog**](iamerrorlog.md) . Contiene le dichiarazioni per i tre metodi **IUnknown** e per il singolo metodo in [IAMErrorLog](implementing-iamerrorlog.md). La dichiarazione di classe è la seguente:
+Dichiarare prima di tutto una classe che implementerà la registrazione degli errori. La classe eredita [**l'interfaccia IAMErrorLog.**](iamerrorlog.md) Contiene dichiarazioni per i tre **metodi IUnknown** e per il singolo metodo in [IAMErrorLog](implementing-iamerrorlog.md). La dichiarazione di classe è la seguente:
 
 
 ```C++
@@ -41,9 +41,9 @@ public:
 
 
 
-L'unica variabile membro nella classe è m \_ lRef, che include il conteggio dei riferimenti dell'oggetto.
+L'unica variabile membro nella classe è m \_ lRef, che contiene il conteggio dei riferimenti dell'oggetto.
 
-Definire quindi i metodi in **IUnknown**. Nell'esempio seguente viene illustrata un'implementazione standard per questi metodi:
+Definire quindi i metodi in **IUnknown**. L'esempio seguente illustra un'implementazione standard per questi metodi:
 
 
 ```C++
@@ -86,7 +86,7 @@ STDMETHODIMP_(ULONG) CErrReporter::Release()
 
 
 
-Con il Framework COM sul posto, è ora possibile implementare l'interfaccia **IAMErrorLog** . La sezione successiva descrive come eseguire questa operazione.
+Dopo aver implementato il framework COM, è ora possibile implementare **l'interfaccia IAMErrorLog.** La sezione successiva descrive come eseguire questa operazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
