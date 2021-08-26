@@ -14,17 +14,17 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 3eae18ed5788add4962930f124394bbf0bd52be8
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 624e1e829ca2f5ed1e525d2d2cc49872c91e51b205775bd0af18fffffc6076cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016791"
 ---
 # <a name="jet_instancetostring-method-overload-list"></a>JET_INSTANCE. Elenco di overload del metodo ToString
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 
@@ -40,11 +40,11 @@ Includi membri ereditati
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="hh577403(v=exchg.10).md">ToString()</a></td>
-<td>Genera una rappresentazione di stringa della struttura. Esegue l'override di <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">ValueType. ToString ()</a>.</td>
+<td>Generare una rappresentazione di stringa della struttura . Esegue l'override <a href="/dotnet/api/system.valuetype.tostring#System_ValueType_ToString">di ValueType.ToString()</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="hh578011(v=exchg.10).md">ToString (String, IFormatProvider)</a></td>
+<td><a href="hh578011(v=exchg.10).md">ToString(String, IFormatProvider)</a></td>
 <td>Formatta il valore dell'istanza corrente usando il formato specificato.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_INSTANCE](./jet-instance-structure.md)
+[JET_INSTANCE struttura](./jet-instance-structure.md)
 
-[Membri JET_INSTANCE](./jet-instance-members.md)
+[JET_INSTANCE membri](./jet-instance-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

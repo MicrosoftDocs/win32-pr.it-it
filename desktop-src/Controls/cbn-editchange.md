@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_EDITCHANGE (winuser. h)
-description: Inviato dopo che l'utente ha eseguito un'azione che potrebbe aver modificato il testo nella parte del controllo di modifica di una casella combinata.
+title: CBN_EDITCHANGE codice di notifica (Winuser.h)
+description: Inviato dopo che l'utente ha intrapreso un'azione che potrebbe aver modificato il testo nella parte di controllo di modifica di una casella combinata.
 ms.assetid: 2c5de5cd-24d3-4198-906e-b520369e0f61
 keywords:
-- Controlli di Windows per il codice di notifica CBN_EDITCHANGE
+- CBN_EDITCHANGE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29a661d647d0879b93675563777d77bba2dfe8c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0897c8e2de2417d304a1b8737a7358322a42073ec87442d75c21e954fa6ac805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054121"
 ---
-# <a name="cbn_editchange-notification-code"></a>\_Codice di notifica EDITCHANGE CBN
+# <a name="cbn_editchange-notification-code"></a>Codice di notifica \_ CBN EDITCHANGE
 
-Inviato dopo che l'utente ha eseguito un'azione che potrebbe aver modificato il testo nella parte del controllo di modifica di una casella combinata. A differenza del codice di notifica di [CBN \_ EDITUPDATE](cbn-editupdate.md) , questo codice di notifica viene inviato dopo che il sistema ha aggiornato la schermata. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato dopo che l'utente ha intrapreso un'azione che potrebbe aver modificato il testo nella parte di controllo di modifica di una casella combinata. A differenza del [codice di notifica CBN \_ EDITUPDATE,](cbn-editupdate.md) questo codice di notifica viene inviato dopo l'aggiornamento dello schermo da parte del sistema. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_EDITCHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-styles.md) , questo codice di notifica non viene inviato.
+Se la casella combinata ha lo [**stile CBS \_ DROPDOWNLIST,**](combo-box-styles.md) questo codice di notifica non viene inviato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 **Riferimento**
 </dt> <dt>
 
-[\_EDITUPDATE CBN](cbn-editupdate.md)
+[CBN \_ EDITUPDATE](cbn-editupdate.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -88,7 +88,7 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

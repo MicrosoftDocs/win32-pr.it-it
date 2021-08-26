@@ -1,6 +1,6 @@
 ---
 description: 'Altre informazioni su: ColumnValueOfStruct <T> . Metodo CheckDataCount'
-title: ColumnValueOfStruct (T). Metodo CheckDataCount
+title: ColumnValueOfStruct(T). Metodo CheckDataCount
 TOCTitle: 'CheckDataCount method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnValueOfStruct`1.CheckDataCount(System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn334178(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fda3fcabe1bb8ff462c37f823d6441720e02c414
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9f70d2e26c8ee56e88f0405af19f17476612bd9a5f51ba624088ed9d58380d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066941"
 ---
 # <a name="columnvalueofstructtcheckdatacount-method"></a>ColumnValueOfStruct \<T\> . Metodo CheckDataCount
 
-Assicurarsi che i dati recuperati siano esattamente le dimensioni necessarie per la struttura. Viene generata un'eccezione in caso di mancata corrispondenza.
+Assicurarsi che i dati recuperati corrispondano esattamente alle dimensioni necessarie per la struttura. In caso di mancata corrispondenza, viene generata un'eccezione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,16 +60,16 @@ protected void CheckDataCount(
 #### <a name="parameters"></a>Parametri
 
   - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensione dei dati recuperati.
+    Dimensioni dei dati recuperati.
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[\<T\>Classe ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
+[Classe \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
 
-[Membri di ColumnValueOfStruct \<T\>](./columnvalueofstruct-t-members.md)
+[Membri \<T\> columnValueOfStruct](./columnvalueofstruct-t-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Funzione D3DX_R16G16_SNORM_to_FLOAT2
-description: Decomprime \_ \_ \_ i dati di DXGI Format R16G16 russar shader in un XMFLOAT2.
+title: D3DX_R16G16_SNORM_to_FLOAT2 funzione
+description: Decomprime i dati dello \_ shader DXGI FORMAT \_ R16G16 \_ SNORM in XMFLOAT2.
 ms.assetid: b54df555-b71f-46cd-8be7-34de785d15e2
 keywords:
-- Funzione D3DX_R16G16_SNORM_to_FLOAT2 HLSL
+- D3DX_R16G16_SNORM_to_FLOAT2 funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d3d45f486d2c44e2cbe319e920ab4bdec764fd8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 589954208886b7dccf4f48d2724c98ab4404d5394b73d894a8eb4924e152cdcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104995900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983241"
 ---
-# <a name="d3dx_r16g16_snorm_to_float2-function"></a>D3DX \_ R16G16 \_ russa \_ to \_ FLOAT2 Function
+# <a name="d3dx_r16g16_snorm_to_float2-function"></a>Da D3DX \_ R16G16 \_ SNORM \_ a funzione \_ FLOAT2
 
-Decomprime \_ \_ \_ i dati di DXGI Format R16G16 russar shader in un XMFLOAT2.
+Decomprime i dati dello \_ shader DXGI FORMAT \_ R16G16 \_ SNORM in XMFLOAT2.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ XMFLOAT2 D3DX_R16G16_SNORM_to_FLOAT2(
 *packedInput* 
 </dt> <dd>
 
-Dati dello shader compressi.
+Dati dello shader di cui è stato effettuato il pacchetto.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Dati dello shader decompressi.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Dati dello shader decompressi.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e compressione \_ del formato DXGI per la modifica dell'immagine In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

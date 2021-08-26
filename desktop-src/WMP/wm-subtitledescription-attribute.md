@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/SubTitleDescription
-description: L'attributo WM/SubTitleDescription specifica informazioni aggiuntive sui sottotitoli.
+description: L'attributo WM/SubTitleDescription specifica informazioni aggiuntive sul sottotitolo.
 ms.assetid: ece56ccf-63d1-4edf-a349-0ac2f4ce468a
 keywords:
-- Media Player Windows per gli attributi WM/SubTitleDescription
+- Attributo WM/SubTitleDescription Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05815ea31cd58a55123ddadc9483b5caf48b9ced
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2911be40b6260a73a20541e3a7ab7458317d4872a90aea0525933d87303ff59d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000811"
 ---
 # <a name="wmsubtitledescription-attribute"></a>Attributo WM/SubTitleDescription
 
-L'attributo **WM/SubTitleDescription** specifica informazioni aggiuntive sui sottotitoli.
+**L'attributo WM/SubTitleDescription** specifica informazioni aggiuntive sul sottotitolo.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -29,9 +29,9 @@ L'attributo **WM/SubTitleDescription** specifica informazioni aggiuntive sui sot
 
 ## <a name="remarks"></a>Commenti
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMSubTitleDescription.
+La Windows Media Format SDK per questo attributo è g \_ wszWMSubTitleDescription.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

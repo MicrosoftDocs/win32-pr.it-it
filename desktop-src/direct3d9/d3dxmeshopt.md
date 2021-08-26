@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: db7c2a2411d1c846c7369fc1d925a8e5569df3b1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d4d26538832a698909ace59da42b13ae51aef93d2d4d622b687f324a62d8361e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986491"
 ---
 # <a name="d3dxmeshopt-enumeration"></a>Enumerazione D3DXMESHOPT
 
@@ -99,7 +99,7 @@ Influisce sulle dimensioni della cache dei vertici. L'uso di questo flag specifi
 
 I flag di ottimizzazione D3DXMESHOPT \_ STRIPREORDER e D3DXMESHOPT \_ VERTEXCACHE si escludono a vicenda.
 
-Il flag SHAREVB D3DXMESHOPT \_ è stato rimosso da questa enumerazione. In alternativa, usare D3DXMESH \_ VB \_ SHARE, in [**D3DXMESH.**](./d3dxmesh.md)
+Il flag D3DXMESHOPT \_ SHAREVB è stato rimosso da questa enumerazione. Usare D3DXMESH \_ VB \_ SHARE, in [**D3DXMESH**](./d3dxmesh.md).
 
 ## <a name="requirements"></a>Requisiti
 

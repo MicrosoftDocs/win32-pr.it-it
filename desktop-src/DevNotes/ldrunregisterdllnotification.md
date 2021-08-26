@@ -1,7 +1,7 @@
 ---
-description: Annulla la notifica di caricamento DLL precedentemente registrata chiamando la funzione LdrRegisterDllNotification.
+description: Annulla la notifica di caricamento dll registrata in precedenza chiamando la funzione LdrRegisterDllNotification.
 ms.assetid: 18c3a027-e3cb-4083-afdc-00f416a70d8c
-title: LdrUnregisterDllNotification (funzione)
+title: Funzione LdrUnregisterDllNotification
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: 1fee03b4a06d274b495070eb40833b270a795158
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c70a732f1e1d1dd71db8d89489066547ee5238e89cf992fca9f2b04759b4c9ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001301"
 ---
-# <a name="ldrunregisterdllnotification-function"></a>LdrUnregisterDllNotification (funzione)
+# <a name="ldrunregisterdllnotification-function"></a>Funzione LdrUnregisterDllNotification
 
-\[Questa funzione può essere modificata o rimossa da Windows senza ulteriore preavviso.\]
+\[Questa funzione può essere modificata o rimossa da Windows senza preavviso.\]
 
-Annulla la notifica di caricamento DLL precedentemente registrata chiamando la funzione [**LdrRegisterDllNotification**](ldrregisterdllnotification.md) .
+Annulla la notifica di caricamento dll registrata in precedenza chiamando la [**funzione LdrRegisterDllNotification.**](ldrregisterdllnotification.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,7 +41,7 @@ NTSTATUS NTAPI LdrUnregisterDllNotification(
 
 <dl> <dt>
 
-*Cookie* \[ in\]
+*Cookie* \[ Pollici\]
 </dt> <dd>
 
 Puntatore all'identificatore di callback ricevuto dalla chiamata [**LdrRegisterDllNotification**](ldrregisterdllnotification.md) registrata per la notifica.
@@ -50,17 +50,17 @@ Puntatore all'identificatore di callback ricevuto dalla chiamata [**LdrRegisterD
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un codice **NTSTATUS** o Error.
+Restituisce un **CODICE NTSTATUS** o di errore.
 
-Se la funzione ha esito positivo, viene restituito **lo stato \_ Success**.
+Se la funzione ha esito positivo, restituisce **STATUS \_ SUCCESS**.
 
-Se la funzione di callback non viene trovata, la funzione restituisce la **dll di stato \_ \_ non \_ trovata**.
+Se la funzione di callback non viene trovata, la funzione restituisce **STATUS \_ DLL NOT \_ \_ FOUND**.
 
-I moduli e il significato dei codici di errore **NTSTATUS** sono elencati nel file di intestazione Ntstatus. h disponibile in WDK e sono descritti nella documentazione di WDK.
+I moduli e il significato dei codici di errore **NTSTATUS** sono elencati nel file di intestazione Ntstatus.h disponibile in WDK e sono descritti nella documentazione di WDK.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll. lib, è disponibile in WDK. È anche possibile usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire un collegamento dinamico a Ntdll.dll.
+A questa funzione non è associato alcun file di intestazione. La libreria di importazione associata, Ntdll.lib, è disponibile in WDK. È anche possibile usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente Ntdll.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ A questa funzione non è associato alcun file di intestazione. La libreria di im
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 
 

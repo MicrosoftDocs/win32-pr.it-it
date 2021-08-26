@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_INDEXCREATE. cConditionalColumn'
-title: Proprietà JET_INDEXCREATE. cConditionalColumn
+description: 'Altre informazioni su: JET_INDEXCREATE.cConditionalColumn'
+title: JET_INDEXCREATE.cConditionalColumn
 TOCTitle: 'cConditionalColumn property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.cConditionalColumn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.cconditionalcolumn(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25563e90427b67e1b1462be9c8b364aefeda2fd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b1b2d8facb9a8eb13f6982c45a17e87e780c3379365996d2b51917f1dc94e63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017111"
 ---
-# <a name="jet_indexcreatecconditionalcolumn-property"></a>Proprietà JET_INDEXCREATE. cConditionalColumn
+# <a name="jet_indexcreatecconditionalcolumn-property"></a>JET_INDEXCREATE.cConditionalColumn
 
 Ottiene o imposta il numero di colonne condizionali.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public int cConditionalColumn { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membri JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membri](./jet-indexcreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Il metodo ReadOnly indica se il flusso di input è di sola lettura.
 ms.assetid: 25b8230d-be2b-4129-a1aa-f6b36e95199e
-title: Metodo CTransInPlaceInputPin. ReadOnly (Transip. h)
+title: Metodo CTransInPlaceInputPin.ReadOnly (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33e71f8fd0aa7bf37f76ed6446fb5132c1808fb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0dd3ae23da6832911b58e50cba67bcf8e6ec6092c3a31a193bd5a027c5566c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999091"
 ---
-# <a name="ctransinplaceinputpinreadonly-method"></a>CTransInPlaceInputPin. ReadOnly, metodo
+# <a name="ctransinplaceinputpinreadonly-method"></a>Metodo CTransInPlaceInputPin.ReadOnly
 
 Il `ReadOnly` metodo indica se il flusso di input è di sola lettura.
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore della variabile [**membro \_ bReadOnly m**](ctransinplaceinputpin-m-breadonly.md) .
+Restituisce il valore della variabile [**\_ membro m bReadOnly.**](ctransinplaceinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce il valore della variabile [**membro \_ bReadOnly m**](ctransinplacei
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

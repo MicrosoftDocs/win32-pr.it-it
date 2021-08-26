@@ -1,7 +1,7 @@
 ---
-description: Esegue un'operazione di scrittura e lettura sull'oggetto comando della smart card (unità dati del protocollo dell'applicazione).
+description: Esegue un'operazione di scrittura e lettura sull'oggetto smart card (application protocol data unit).
 ms.assetid: 4dc8ed56-97e0-4c05-a70a-ea2ffd976d47
-title: 'Metodo IsValid:: Transaction (Scardmgr. h)'
+title: Metodo ISCard::Transaction (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 2abe9d4acd4d59019fe0c8ce122baa12fde06f2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60f5be785da0cca6aac4fdf1c098d49548696420042ce60a97a46de73edde9bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015561"
 ---
-# <a name="iscardtransaction-method"></a>Metodo IsValid:: Transaction
+# <a name="iscardtransaction-method"></a>Metodo ISCard::Transaction
 
-\[Il metodo di **transazione** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo** Transaction è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo di **transazione** esegue un'operazione di scrittura e lettura nell'oggetto comando della [*Smart Card*](../secgloss/s-gly.md) ([*unità dati del protocollo dell'applicazione*](../secgloss/a-gly.md)). La stringa di risposta dalla smart card per la stringa di comando definita nella scheda inviata alla smart card sarà accessibile dopo la restituzione di questa funzione.
+Il **metodo Transaction** esegue un'operazione di scrittura e lettura sull'oggetto [*smart card*](../secgloss/s-gly.md) comando ( unità dati del [*protocollo applicativo).*](../secgloss/a-gly.md) La stringa di risposta smart card per la stringa di comando definita nella scheda inviata al smart card sarà accessibile dopo la fine della funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ HRESULT Transaction(
 
 <dl> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-Puntatore all'oggetto comando della smart card.
+Puntatore all'oggetto smart card comando.
 
 </dd> </dl>
 
@@ -56,10 +56,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                              |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione riuscita.<br/>         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il parametro *ppCmd* non è valido.<br/>           |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | Un puntatore errato è stato passato in *ppCmd*.<br/>          |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria per soddisfare la richiesta non è disponibile.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione riuscita.<br/>         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Il *parametro ppCmd* non è valido.<br/>           |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido in *ppCmd*.<br/>          |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | La memoria per soddisfare la richiesta non è disponibile.<br/> |
 
 
 
@@ -67,11 +67,11 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata l'esecuzione di un'operazione di scrittura e lettura sull'oggetto comando della smart card.
+Nell'esempio seguente viene illustrata l'esecuzione di un'operazione di scrittura e lettura nell smart card comando.
 
 
 ```C++
@@ -96,14 +96,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID \_ ISCard è definito come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -117,25 +117,25 @@ if (FAILED(hr))
 [**AttachByReader**](iscard-attachbyreader.md)
 </dt> <dt>
 
-[**Scollegare**](iscard-detach.md)
+[**Detach**](iscard-detach.md)
 </dt> <dt>
 
-[**Ottieni \_ ATR**](iscard-get-atr.md)
+[**get \_ Atr**](iscard-get-atr.md)
 </dt> <dt>
 
-[**ottenere \_ CardHandle**](iscard-get-cardhandle.md)
+[**get \_ CardHandle**](iscard-get-cardhandle.md)
 </dt> <dt>
 
-[**ottenere il \_ contesto**](iscard-get-context.md)
+[**Get \_ Context**](iscard-get-context.md)
 </dt> <dt>
 
-[**ottenere il \_ protocollo**](iscard-get-protocol.md)
+[**Get \_ Protocol**](iscard-get-protocol.md)
 </dt> <dt>
 
-[**ottenere \_ lo stato**](iscard-get-status.md)
+[**get \_ Status**](iscard-get-status.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> <dt>
 
 [**LockSCard**](iscard-lockscard.md)

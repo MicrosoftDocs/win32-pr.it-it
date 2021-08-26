@@ -1,17 +1,17 @@
-- name: Rete Windows (WNet)
+- name: Windows Rete (WNet)
   href: windows-networking-wnet-.md
   items:
-    - name: Informazioni sulla rete di Windows
+    - name: Informazioni Windows rete
       href: about-windows-networking.md
       items:
         - name: Funzioni WNet
           href: wnet-functions.md
-        - name: Operazioni di rete di Windows
+        - name: Windows Operazioni di rete
           href: windows-networking-operations.md
-    - name: Uso della rete di Windows
+    - name: Uso Windows rete
       href: using-windows-networking.md
       items:
-        - name: Utilizzo della finestra di dialogo connessioni
+        - name: Utilizzo della finestra di dialogo Connessioni
           href: using-the-connections-dialog-box.md
         - name: Enumerazione delle risorse di rete
           href: enumerating-network-resources.md
@@ -19,7 +19,7 @@
           href: adding-a-network-connection.md
         - name: Assegnazione di un'unità a una condivisione
           href: assigning-a-drive-to-a-share.md
-        - name: Determinazione del percorso di una condivisione
+        - name: Determinazione della posizione di una condivisione
           href: determining-the-location-of-a-share.md
         - name: Recupero del nome della connessione
           href: retrieving-the-connection-name.md
@@ -31,10 +31,10 @@
           href: retrieving-information-about-a-network-resource.md
         - name: Recupero degli errori di rete
           href: retrieving-network-errors.md
-    - name: Riferimenti per la rete Windows
+    - name: Windows Informazioni di riferimento sulla rete
       href: windows-networking-reference.md
       items:
-        - name: Callback di rete di Windows
+        - name: Windows Callback di rete
           href: windows-networking-callbacks.md
           items:
             - name: PFNGETPROFILEPATH
@@ -43,7 +43,7 @@
               href: /previous-versions/windows/desktop/legacy/aa385360(v=vs.85)
             - name: PFNRECONCILEPROFILE
               href: /previous-versions/windows/desktop/legacy/aa385364(v=vs.85)
-        - name: Funzioni di rete di Windows
+        - name: Windows Funzioni di rete
           href: windows-networking-functions.md
           items:
             - name: MultinetGetConnectionPerformance
@@ -90,9 +90,9 @@
               href: /windows/desktop/api/winnetwk/nf-winnetwk-wnetopenenuma
             - name: WNetRestoreConnectionW
               href: /windows/desktop/api/winnetwk/nf-winnetwk-wnetrestoreconnectionw
-            - name: WNetUseConnection
+            - name: Connessione WNetUseConnection
               href: /windows/desktop/api/winnetwk/nf-winnetwk-wnetuseconnectiona
-        - name: Strutture di rete di Windows
+        - name: Windows Strutture di rete
           href: windows-networking-structures.md
           items:
             - name: CONNECTDLGSTRUCT

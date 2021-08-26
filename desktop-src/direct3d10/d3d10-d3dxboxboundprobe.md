@@ -1,7 +1,7 @@
 ---
-description: La funzione D3DXBoxBoundProbe (D3DX10math. h) determina se un raggio interseca il volume del rettangolo di delimitazione di una casella.
+description: La funzione D3DXBoxBoundProbe (D3DX10math.h) determina se un raggio interseca il volume del rettangolo di selezione di un rettangolo.
 ms.assetid: d3cdcf89-461b-44b0-b5d0-ca2e3869a5ad
-title: Funzione D3DXBoxBoundProbe (D3DX10math. h)
+title: Funzione D3DXBoxBoundProbe (D3DX10math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e1a8d1a7b879814cff43e31b060cc2af53167818
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: ae06fa2e42e99dc64a0684844e341f26e30d797e75d3a822aa0b1ddee690703d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028811"
 ---
-# <a name="d3dxboxboundprobe-function-d3dx10mathh"></a>Funzione D3DXBoxBoundProbe (D3DX10math. h)
+# <a name="d3dxboxboundprobe-function-d3dx10mathh"></a>Funzione D3DXBoxBoundProbe (D3DX10math.h)
 
-Determina se un raggio interseca il volume del rettangolo di delimitazione di una casella.
+Determina se un raggio interseca il volume del rettangolo di selezione di un rettangolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,25 +43,25 @@ BOOL D3DXBoxBoundProbe(
 
 <dl> <dt>
 
-*pMin* \[ in\]
+*pMin* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a un [**D3DXVECTOR3**](d3d10-d3dxvector3.md)che descrive l'angolo inferiore sinistro del rettangolo di delimitazione. Vedere la sezione Osservazioni.
+Puntatore a [**un oggetto D3DXVECTOR3**](d3d10-d3dxvector3.md)che descrive l'angolo inferiore sinistro del rettangolo di selezione. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pMax* \[ in\]
+*pMax* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) che descrive l'angolo superiore destro del rettangolo di delimitazione. Vedere la sezione Osservazioni.
+Puntatore a [**una struttura D3DXVECTOR3**](d3d10-d3dxvector3.md) che descrive l'angolo superiore destro del rettangolo di selezione. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*pRayPosition* \[ in\]
+*pRayPosition* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
@@ -70,26 +70,26 @@ Puntatore a una struttura D3DXVECTOR3, che specifica la coordinata di origine de
 
 </dd> <dt>
 
-*pRayDirection* \[ in\]
+*pRayDirection* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntatore a una struttura D3DXVECTOR3, che specifica la direzione del raggio. Questo vettore non deve essere (0, 0, 0) ma non deve essere normalizzato.
+Puntatore a una struttura D3DXVECTOR3, che specifica la direzione del raggio. Questo vettore non deve essere (0,0,0), ma non deve essere normalizzato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **true** se il raggio interseca il volume del rettangolo di delimitazione della casella. In caso contrario, restituisce **false**.
+Restituisce **TRUE** se il raggio interseca il volume del rettangolo di selezione del rettangolo. In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-**D3DXBoxBoundProbe** determina se il raggio interseca il volume del rettangolo di delimitazione della casella, non solo la superficie della casella.
+**D3DXBoxBoundProbe** determina se il raggio interseca il volume del rettangolo di selezione del rettangolo, non solo la superficie del rettangolo.
 
-I valori passati a **D3DXBoxBoundProbe** sono xmin, Xmax, ymin, ymax, zmin e Zmax. Pertanto, di seguito vengono definiti gli angoli del rettangolo di delimitazione.
+I valori passati **a D3DXBoxBoundProbe** sono xmin, xmax, ymin, ymax, zmin e zmax. Di conseguenza, di seguito vengono definiti gli angoli del rettangolo di selezione.
 
 
 ```
@@ -105,7 +105,7 @@ xmin, ymin, zmin
 
 
 
-La profondità del rettangolo di delimitazione nella direzione z è zmax-zmin, nella direzione y è ymax-ymin e nella direzione x è xmax-xmin. Con i vettori minimi e massimi seguenti, ad esempio, min (-1,-1,-1) e Max (1, 1, 1), il rettangolo di delimitazione viene definito nel modo seguente.
+La profondità del rettangolo di selezione nella direzione z è zmax - zmin, nella direzione y è ymax - ymin e nella direzione x è xmax - xmin. Ad esempio, con i vettori minimo e massimo seguenti, min (-1, -1, -1) e max (1, 1, 1), il rettangolo di selezione viene definito nel modo seguente.
 
 
 ```
@@ -127,8 +127,8 @@ La profondità del rettangolo di delimitazione nella direzione z è zmax-zmin, n
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione  | D3DX10math. h |
-| Libreria | D3DX10. lib  |
+| Intestazione  | D3DX10math.h |
+| Libreria | D3DX10.lib  |
 
 
 

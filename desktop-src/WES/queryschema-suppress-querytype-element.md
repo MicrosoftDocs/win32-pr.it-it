@@ -1,9 +1,9 @@
 ---
-title: Elemento di eliminazione (QueryType)
+title: Elemento Suppress (QueryType)
 description: Query XPath che identifica gli eventi da escludere dal set di risultati della query.
 ms.assetid: 41304a3c-bde1-49c3-8cb3-e95fc428bd96
 keywords:
-- Non visualizzare l'elemento EventLog
+- Eliminare l'elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3a1d7fcec98d32167155ebcafc4f13d2a727d59a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2612a98c282627154a9107f2f9f77a3ddb52c191e00dbcb394c8db4d7c796b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032011"
 ---
-# <a name="suppress-querytype-element"></a>Elemento di eliminazione (QueryType)
+# <a name="suppress-querytype-element"></a>Elemento Suppress (QueryType)
 
 Query XPath che identifica gli eventi da escludere dal set di risultati della query.
 
@@ -36,7 +36,7 @@ Query XPath che identifica gli eventi da escludere dal set di risultati della qu
 </xs:element>
 ```
 
-L'elemento di **eliminazione** viene definito dal tipo complesso [**QueryType**](queryschema-querytype-complextype.md) .
+**L'elemento Suppress** è definito dal [**tipo complesso QueryType.**](queryschema-querytype-complextype.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -54,8 +54,8 @@ L'elemento di **eliminazione** viene definito dal tipo complesso [**QueryType**]
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

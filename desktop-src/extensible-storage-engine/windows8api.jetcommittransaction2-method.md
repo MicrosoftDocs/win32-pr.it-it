@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Windows8Api. JetCommitTransaction2, metodo'
-title: Metodo Windows8Api. JetCommitTransaction2 (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul metodo Windows8Api.JetCommitTransaction2
+title: Metodo Windows8Api.JetCommitTransaction2 (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetCommitTransaction2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetCommitTransaction2(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.CommitTransactionGrbit,System.TimeSpan,Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetcommittransaction2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 80ddc0670b60a3f2a280ff2aca3f051242c453ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7daf80ffae87469c5bd6ad49ddd3092efdad4f8c95f5c2f27239a38328cbdd00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967031"
 ---
-# <a name="windows8apijetcommittransaction2-method"></a>Windows8Api. JetCommitTransaction2, metodo
+# <a name="windows8apijetcommittransaction2-method"></a>Metodo Windows8Api.JetCommitTransaction2
 
-Esegue il commit delle modifiche apportate allo stato del database durante il punto di salvataggio corrente e ne esegue la migrazione al punto di salvataggio precedente. Se viene eseguito il commit del punto di salvataggio più esterno, verrà eseguito il commit delle modifiche apportate durante tale punto di salvataggio nello stato del database e la sessione uscirà dalla transazione.
+Esegue il commit delle modifiche apportate allo stato del database durante il punto di salvataggio corrente ed esegue la migrazione al punto di salvataggio precedente. Se viene eseguito il commit del punto di salvataggio più esterno, verrà eseguito il commit delle modifiche apportate durante tale punto di salvataggio allo stato del database e la sessione chiuderà la transazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,30 +68,30 @@ public static void JetCommitTransaction2(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione per la quale eseguire il commit della transazione.
+    Sessione per cui eseguire il commit della transazione.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
     
     Opzioni di commit.
 
 <!-- end list -->
 
   - durableCommit  
-    Tipo: [System. TimeSpan](/dotnet/api/system.timespan)  
+    Tipo: [System.TimeSpan](/dotnet/api/system.timespan)  
     
-    Durata per eseguire il commit della transazione Lazy.
+    Durata del commit della transazione lazy.
 
 <!-- end list -->
 
   - commitId  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID](./jet-commit-id-class.md)  
     
-    Commit-ID associato al record di commit.
+    ID commit associato a questo record di commit.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -101,4 +101,4 @@ public static void JetCommitTransaction2(
 
 [Membri di Windows8Api](./windows8api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

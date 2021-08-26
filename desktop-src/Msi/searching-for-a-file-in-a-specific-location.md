@@ -1,23 +1,23 @@
 ---
-description: Durante un'installazione di Windows Installer, il programma di installazione può cercare un file in un percorso specifico nel sistema dell'utente.
+description: Durante un Windows installazione del programma di installazione, il programma di installazione può cercare un file in un percorso specifico nel sistema dell'utente.
 ms.assetid: 127d83a2-b651-42ef-ac7c-a7fa1b15cf27
 title: Ricerca di un file in un percorso specifico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72ad4e456d331119b698d8e6e696e86b953006eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92b131708e5f9ff37474864aa5d6ef13abcab8f0d162563ca810c7e31fe2c41c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041151"
 ---
 # <a name="searching-for-a-file-in-a-specific-location"></a>Ricerca di un file in un percorso specifico
 
 **Per cercare un file in un percorso specifico in un sistema utente**
 
-1.  Elencare la firma e il nome del file nella [tabella della firma](signature-table.md). I campi rimanenti di questo record possono essere null per cercare qualsiasi versione di MyApp.exe.
+1.  Elencare la firma e il nome del file nella [tabella delle firme](signature-table.md). I campi rimanenti in questo record possono essere Null per cercare qualsiasi versione di MyApp.exe.
 
-    [Tabella di firma](signature-table.md)
+    [Tabella delle firme](signature-table.md)
 
     
 
@@ -29,7 +29,7 @@ ms.locfileid: "104529497"
 
      
 
-2.  Immettere la proprietà che verrà impostata dal programma di installazione se MyApp.exe è installato.
+2.  Immettere la proprietà che il programma di installazione deve impostare se MyApp.exe installato.
 
     [Tabella AppSearch](appsearch-table.md) (parziale)
 
@@ -37,13 +37,13 @@ ms.locfileid: "104529497"
 
     | Proprietà         | Firma          |
     |------------------|--------------------|
-    | MYAPP<br/> | AppFile<br/> |
+    | Myapp<br/> | AppFile<br/> |
 
     
 
      
 
-3.  Usare la [tabella DrLocator](drlocator-table.md). Immettere il percorso completo del file nel sistema utente nel campo percorso. Immettere il valore 0 nella colonna profondità per eseguire la ricerca nella cartella bin.
+3.  Usare la [tabella DrLocator](drlocator-table.md). Immettere il percorso completo del file nel sistema utente nel campo Percorso. Immettere il valore 0 nella colonna Profondità per eseguire la ricerca nella cartella bin.
 
     [Tabella DrLocator](drlocator-table.md)
 
@@ -51,13 +51,13 @@ ms.locfileid: "104529497"
 
     | Firma          | Padre | Percorso                                                    | Profondità        |
     |--------------------|--------|---------------------------------------------------------|--------------|
-    | AppFile<br/> |        | C: \\ programmi programmi per \\ prodotti \\ software \\ bin<br/> | 0<br/> |
+    | AppFile<br/> |        | C: \\ Program Files \\ MyProducts \\ Projects \\ bin<br/> | 0<br/> |
 
     
 
      
 
-4.  Includere l'azione AppSearch nella sequenza di azione. Se MyApp.exe è installato in C: \\ Program Files \\ prodotti prodotti \\ \\ bin, il programma di installazione imposta la proprietà MyApp sul percorso del file.
+4.  Includere l'azione AppSearch nella sequenza di azioni. Se MyApp.exe è installato nel bin C: Programmi MyProducts Projects, il programma di installazione imposta la proprietà \\ \\ \\ \\ MYAPP sul percorso del file.
 
  
 

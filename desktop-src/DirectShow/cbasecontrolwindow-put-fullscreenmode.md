@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put FullScreenMode imposta la modalità a schermo intero del renderer.
+description: Il metodo \_ put FullScreenMode imposta la modalità schermo intero del renderer.
 ms.assetid: 25e2a12e-a327-4aab-b4ab-54db0dfc950a
-title: Metodo CBaseControlWindow.put_FullScreenMode (Ctlutil. h)
+title: CBaseControlWindow.put_FullScreenMode metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4d1af1a6a4e4b77521d3f27ff5c94651048d6d75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e7aa121ce78198fe6b2ca0b88109183665f0cd93dd95294a848a2b2d0c03548
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983681"
 ---
-# <a name="cbasecontrolwindowput_fullscreenmode-method"></a>CBaseControlWindow. put \_ FullScreenMode (metodo)
+# <a name="cbasecontrolwindowput_fullscreenmode-method"></a>Metodo CBaseControlWindow.put \_ FullScreenMode
 
-Il `put_FullScreenMode` metodo imposta la modalità a schermo intero del renderer.
+Il `put_FullScreenMode` metodo imposta la modalità schermo intero del renderer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT put_FullScreenMode(
 
 <dl> <dt>
 
-*FullScreenMode* 
+*Modalità schermo intero* 
 </dt> <dd>
 
 Modalità schermo intero da applicare.
@@ -51,11 +51,11 @@ Modalità schermo intero da applicare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . L'implementazione corrente restituisce E \_ NOTIMPL.
+Restituisce un **valore HRESULT.** L'implementazione corrente restituisce E \_ NOTIMPL.
 
 ## <a name="remarks"></a>Commenti
 
-Un renderer video che implementa una modalità a schermo intero deve eseguire l'override di questa funzione membro e implementare qualsiasi modalità supportata.
+Un renderer video che implementa una modalità schermo intero deve eseguire l'override di questa funzione membro e implementare le modalità supportate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Un renderer video che implementa una modalità a schermo intero deve eseguire l'
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

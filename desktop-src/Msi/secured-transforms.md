@@ -4,25 +4,25 @@ ms.assetid: c6019b28-b0a7-4104-9d78-b4b4228635b8
 title: Trasformazioni protette
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e498d6049a2c913ca78f12b6a8700a104af37c4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e07c36b70827c301117bff7d98b30aae2990efb80f892bda24b0be35cbba5316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040841"
 ---
 # <a name="secured-transforms"></a>Trasformazioni protette
 
-Le trasformazioni protette sono talvolta necessarie per motivi di sicurezza. Le trasformazioni protette vengono archiviate localmente nel computer dell'utente in una posizione in cui, in un file system protetto, l'utente non dispone dell'accesso in scrittura. Tali trasformazioni vengono memorizzate nella cache in questa posizione durante l'installazione o l'annuncio del pacchetto. Solo gli amministratori e il sistema locale hanno accesso in scrittura a questo percorso. Un utente non amministratore non sarà in grado di modificare il file di trasformazione. Durante le installazioni successive di [installazione su richiesta](installation-on-demand.md) o [manutenzione](maintenance-installation.md) del pacchetto, il programma di installazione usa le trasformazioni memorizzate nella cache.
+Le trasformazioni protette sono talvolta necessarie per motivi di sicurezza. Le trasformazioni protette vengono archiviate localmente nel computer dell'utente in una posizione in cui, in un file system sicuro, l'utente non ha accesso in scrittura. Tali trasformazioni vengono memorizzate nella cache in questo percorso durante l'installazione o l'annuncio del pacchetto. Solo gli amministratori e il sistema locale hanno accesso in scrittura a questo percorso. Un utente non amministratore non sarebbe in grado di modificare il file di trasformazione. Durante le [successive installazioni su richiesta](installation-on-demand.md) [o](maintenance-installation.md) di manutenzione del pacchetto, il programma di installazione usa le trasformazioni memorizzate nella cache.
 
-Per specificare l'archiviazione di trasformazione protetta, impostare il [criterio TRANSFORMSSECURE](transformssecure-policy.md), impostare la proprietà [**TRANSFORMSSECURE**](transformssecure.md) oppure passare il simbolo @ o \| nell'elenco trasformazioni. Si noti che non è possibile includere trasformazioni protette e non protette nello stesso elenco di trasformazioni. Vedere [applicazione di trasformazioni](applying-transforms.md).
+Per specificare l'archiviazione protetta delle trasformazioni, impostare il criterio [TransformsSecure](transformssecure-policy.md), impostare la [**proprietà TRANSFORMSSECURE**](transformssecure.md) o passare il simbolo @ o \| nell'elenco delle trasformazioni. Si noti che non è possibile includere trasformazioni protette e non protette nello stesso elenco di trasformazioni. Vedere [Applicazione di trasformazioni.](applying-transforms.md)
 
-La rimozione del prodotto da parte di qualsiasi utente rimuove tutte le trasformazioni protette per il prodotto dal computer dell'utente.
+La rimozione del prodotto da parte di qualsiasi utente rimuove tutte le trasformazioni protette per tale prodotto dal computer dell'utente.
 
-Se il programma di installazione rileva che una trasformazione protetta non è disponibile localmente, tenta di ripristinare la cache di trasformazione da un'origine. Le trasformazioni protette possono essere sicure all'origine o protette-Full-Path:
+Se il programma di installazione rileva che una trasformazione protetta non è disponibile in locale, tenta di ripristinare la cache delle trasformazioni da un'origine. Le trasformazioni sicure possono essere secure-at-source o secure-full-path:
 
--   Le [trasformazioni protette a livello di origine](secure-at-source-transforms.md) mancanti dalla cache di trasformazione locale vengono ripristinate dalla radice dell'origine del file con estensione msi.
--   Le [trasformazioni protette con percorso completo](secure-full-path-transforms.md) mancanti dalla cache di trasformazione locale vengono ripristinate dal percorso completo originale specificato dall'elenco Transforms.
+-   [Le trasformazioni secure-at-source](secure-at-source-transforms.md) mancanti nella cache delle trasformazioni locali vengono ripristinate dalla radice dell'origine del file .msi.
+-   [Le trasformazioni secure-full-path](secure-full-path-transforms.md) mancanti nella cache delle trasformazioni locali vengono ripristinate dal percorso completo originale specificato dall'elenco delle trasformazioni.
 
  
 

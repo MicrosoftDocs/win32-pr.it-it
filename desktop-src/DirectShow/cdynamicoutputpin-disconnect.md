@@ -1,5 +1,5 @@
 ---
-description: 'Metodo CDynamicOutputPin.Disconnect: il metodo Disconnect interrompe la connessione pin corrente. Questo metodo implementa il metodo IPin::D isconnect.'
+description: 'Metodo CDynamicOutputPin.Disconnect: il metodo Disconnect interrompe la connessione del pin corrente. Questo metodo implementa il metodo IPin::D isconnect.'
 ms.assetid: 8d92a504-98ad-4f8f-89a4-f0c80763db44
 title: Metodo CDynamicOutputPin.Disconnect (Amfilter.h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5a775146973b353413fa2e74584a6c763b721e7b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 000bbdc0400a84f41cf370beca92b96d898b57ddb62ab7dc72319557fbe18a77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983061"
 ---
 # <a name="cdynamicoutputpindisconnect-method"></a>Metodo CDynamicOutputPin.Disconnect
 
-Il `Disconnect` metodo interrompe la connessione pin corrente. Questo metodo implementa il [**metodo IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect)
+Il `Disconnect` metodo interrompe la connessione del pin corrente. Questo metodo implementa il [**metodo IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,7 +65,7 @@ Questo metodo esegue l'override del metodo [**CBasePin::D isconnect**](cbasepin-
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

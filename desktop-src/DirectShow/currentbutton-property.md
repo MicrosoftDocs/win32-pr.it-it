@@ -1,15 +1,15 @@
 ---
-description: La proprietà CurrentButton Recupera il numero del pulsante di menu selezionato.
+description: La proprietà CurrentButton recupera il numero del pulsante di menu selezionato.
 ms.assetid: bd9720bc-068a-4f29-aa2d-1c6b550f789c
 title: Proprietà CurrentButton
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c12def9f9a73c9538781bde6940b03bfb376fcc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d85b246b77283a2632f2feac4c2b374075ef9d9a205bcb71813856b9847df21b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104341861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053141"
 ---
 # <a name="currentbutton-property"></a>Proprietà CurrentButton
 
@@ -30,7 +30,7 @@ Restituisce un valore intero che rappresenta il pulsante.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito. Utilizzare questo metodo quando si implementa la gestione personalizzata del mouse dopo l'impostazione di [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true**.
+Questa proprietà è di sola lettura senza alcun valore predefinito. Usare questo metodo quando si implementa la gestione personalizzata del mouse dopo [**l'impostazione di DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) su **true.**
 
 ## <a name="see-also"></a>Vedi anche
 

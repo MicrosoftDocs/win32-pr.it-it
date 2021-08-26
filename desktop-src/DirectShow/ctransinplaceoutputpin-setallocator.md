@@ -1,7 +1,7 @@
 ---
-description: Il metodo seallocator specifica un allocatore per la connessione.
+description: Il metodo SetAllocator specifica un allocatore per la connessione.
 ms.assetid: 6b8e80f9-3b0d-498f-b1b0-bae491c25e81
-title: Metodo CTransInPlaceOutputPin. seallocator (Transip. h)
+title: Metodo CTransInPlaceOutputPin.SetAllocator (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aacc2680bebcdd7de74f6f357380066a8fd37f1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 568a95df0d0cee39245c268fa1c49505531ddc84e1fd1542a1eae170e5c7d0da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053181"
 ---
-# <a name="ctransinplaceoutputpinsetallocator-method"></a>Metodo CTransInPlaceOutputPin. seallocator
+# <a name="ctransinplaceoutputpinsetallocator-method"></a>Metodo CTransInPlaceOutputPin.SetAllocator
 
 Il `SetAllocator` metodo specifica un allocatore per la connessione.
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il pin di output per questo filtro non fornisce mai un allocatore. Questo metodo specifica l'allocatore per il pin di output. Viene impostato il valore della variabile membro [**CBaseOutputPin:: m \_ pAllocator**](cbaseoutputpin-m-pallocator.md) .
+Il pin di output per questo filtro non fornisce mai un allocatore. Questo metodo specifica l'allocatore per il pin di output. Imposta il valore della variabile [**membro CBaseOutputPin::m \_ pAllocator.**](cbaseoutputpin-m-pallocator.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Il pin di output per questo filtro non fornisce mai un allocatore. Questo metodo
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

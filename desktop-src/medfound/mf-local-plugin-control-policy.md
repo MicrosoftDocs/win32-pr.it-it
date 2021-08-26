@@ -1,19 +1,19 @@
 ---
-description: Specifica i criteri di controllo di un plug-in locale.
+description: Specifica un criterio di controllo del plug-in locale.
 ms.assetid: 2936F3C9-3BCB-452A-8C03-35D73A200CE2
-title: Attributo MF_LOCAL_PLUGIN_CONTROL_POLICY (Mfidl. h)
+title: MF_LOCAL_PLUGIN_CONTROL_POLICY attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd1bdaee17651cebfdc844bb5b6998907b1cd295
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83f32280f48895b9b6a0633613d63f787836573fe13f046126639c28467abe02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956461"
 ---
-# <a name="mf_local_plugin_control_policy-attribute"></a>\_Attributo dei \_ criteri di controllo del plug-in locale MF \_ \_
+# <a name="mf_local_plugin_control_policy-attribute"></a>Attributo MF \_ LOCAL \_ PLUGIN CONTROL \_ \_ POLICY
 
-Specifica i criteri di controllo di un plug-in locale.
+Specifica un criterio di controllo del plug-in locale.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica i criteri di controllo di un plug-in locale.
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questo attributo su uno dei valori [**dei \_ \_ \_ criteri di controllo del plug**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_plugin_control_policy) -in MF.
+Impostare questo attributo su uno dei valori [**di MF \_ PLUGIN CONTROL \_ \_ POLICY.**](/windows/desktop/api/mfobjects/ne-mfobjects-mf_plugin_control_policy)
 
-Questo attributo consente all'app di specificare un criterio locale più restrittivo rispetto ai criteri a livello di processo configurati da [**IMFPluginControl**](/windows/desktop/api/mfobjects/nn-mfobjects-imfplugincontrol).
+Questi attributi consentono all'app di specificare criteri locali più restrittivi rispetto ai criteri a livello di processo configurati [**da IMFPluginControl.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfplugincontrol)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Questo attributo consente all'app di specificare un criterio locale più restrit
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Questo attributo consente all'app di specificare un criterio locale più restrit
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

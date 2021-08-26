@@ -1,11 +1,11 @@
 ---
-title: Proprietà Label IWMPCdromBurn
-description: La proprietà Label ottiene la stringa dell'etichetta del volume CD.
+title: Proprietà etichetta IWMPCdromBurn
+description: La proprietà label ottiene la stringa dell'etichetta del volume CD.
 ms.assetid: 46e7741c-59c5-46d8-b9ca-09892d907cd7
 keywords:
-- Proprietà etichetta Windows Media Player
-- Proprietà Label Media Player Windows, interfaccia IWMPCdromBurn
-- Interfaccia IWMPCdromBurn Windows Media Player, proprietà Label
+- proprietà label Windows Media Player
+- proprietà label Windows Media Player, interfaccia IWMPCdromBurn
+- Interfaccia IWMPCdromBurn Windows Media Player , proprietà label
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05da344f1148de7e79cb605135964c6ab8225ac0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8b8917706e20b5d1361054ac5f6fd209c0026837c428ecba715727e3d828a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000550"
 ---
-# <a name="iwmpcdromburnlabel-property"></a>Proprietà IWMPCdromBurn:: Label
+# <a name="iwmpcdromburnlabel-property"></a>Proprietà IWMPCdromBurn::label
 
-La proprietà *Label* ottiene la stringa dell'etichetta del volume CD.
+La *proprietà label* ottiene la stringa dell'etichetta del volume CD.
 
 Questa proprietà è di sola lettura.
 
@@ -49,11 +49,11 @@ Public ReadOnly Property label As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che è la stringa dell'etichetta del volume.
+Oggetto **System.String che** rappresenta la stringa dell'etichetta di volume.
 
 ## <a name="remarks"></a>Commenti
 
-A causa del modo in cui vengono archiviate le etichette CD, l'etichetta del CD potrebbe essere inferiore alla lunghezza della stringa dell'etichetta di volume specificata. Se la stringa supera la lunghezza massima consentita per un'etichetta CD, il testo verrà troncato.
+A causa della modalità di archiviazione delle etichette CD, l'etichetta del CD può essere più breve della lunghezza della stringa di etichetta di volume specificata. Se la stringa è più lunga della lunghezza massima di un'etichetta CD, il testo verrà troncato.
 
 ## <a name="requirements"></a>Requisiti
 

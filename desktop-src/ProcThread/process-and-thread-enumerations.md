@@ -1,27 +1,27 @@
 ---
-description: 'Con le funzioni di processo e thread vengono usate le enumerazioni seguenti:'
+description: 'Le enumerazioni seguenti vengono usate con le funzioni di processo e thread:'
 ms.assetid: c79352c1-d9c5-4eeb-8d53-ba4063fc208d
 title: Enumerazioni di processi e thread
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b3068585a54ba6042eeb7ee99b33eb003938522
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 509c6a7a995a93829706c0d2549cf170f64eeb830fa9abf8caf538a573874b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "106300664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031911"
 ---
 # <a name="process-and-thread-enumerations"></a>Enumerazioni di processi e thread
 
-Con le funzioni di processo e thread vengono usate le enumerazioni seguenti:
+Le enumerazioni seguenti vengono usate con le funzioni di processo e thread:
 
-- [**\_tipo di \_ informazioni \_ set CPU**](cpu-set-information-type.md)
-- [**\_APARTMENTTYPE thread \_ DISPATCHERQUEUE**](/windows/desktop/api/DispatcherQueue/ne-dispatcherqueue-dispatcherqueue_thread_apartmenttype)
-- [**\_tipo di thread DISPATCHERQUEUE \_**](/windows/desktop/api/DispatcherQueue/ne-dispatcherqueue-dispatcherqueue_thread_type)
-- [**\_relazione tra processori logici \_**](/windows/desktop/api/WinNT/ne-winnt-logical_processor_relationship)
-- [**\_flag di \_ controllo della velocità di rete dell'oggetto processo \_ \_ \_**](/windows/desktop/api/Winnt/ne-winnt-job_object_net_rate_control_flags)
-- [**\_classe informazioni \_ processo**](/windows/win32/api/processthreadsapi/ne-processthreadsapi-process_information_class)
-- [**\_tipo di \_ esaurimento della memoria del processo \_**](/windows/win32/api/processthreadsapi/ne-processthreadsapi-process_memory_exhaustion_type)
-- [**\_criteri di mitigazione dei processi \_**](/windows/desktop/api/WinNT/ne-winnt-process_mitigation_policy)
-- [**\_tipo di cache del processore \_**](/windows/desktop/api/WinNT/ne-winnt-processor_cache_type)
-- [**\_ \_ classe informazioni thread \_ UMS**](/windows/win32/api/winbase/ns-winbase-ums_system_thread_information)
+- [**TIPO \_ DI INFORMAZIONI SUL SET DI \_ \_ CPU**](cpu-set-information-type.md)
+- [**DISPATCHERQUEUE \_ THREAD \_ APARTMENTTYPE**](/windows/desktop/api/DispatcherQueue/ne-dispatcherqueue-dispatcherqueue_thread_apartmenttype)
+- [**TIPO DI THREAD DISPATCHERQUEUE \_ \_**](/windows/desktop/api/DispatcherQueue/ne-dispatcherqueue-dispatcherqueue_thread_type)
+- [**RELAZIONE \_ PROCESSORE \_ LOGICO**](/windows/desktop/api/WinNT/ne-winnt-logical_processor_relationship)
+- [**FLAG DI \_ CONTROLLO \_ NET RATE \_ \_ DELL'OGGETTO \_ PROCESSO**](/windows/desktop/api/Winnt/ne-winnt-job_object_net_rate_control_flags)
+- [**CLASSE \_ DI INFORMAZIONI SUL \_ PROCESSO**](/windows/win32/api/processthreadsapi/ne-processthreadsapi-process_information_class)
+- [**TIPO DI \_ \_ ESAURIMENTO DELLA MEMORIA DEL \_ PROCESSO**](/windows/win32/api/processthreadsapi/ne-processthreadsapi-process_memory_exhaustion_type)
+- [**CRITERI DI \_ MITIGAZIONE DEI \_ PROCESSI**](/windows/desktop/api/WinNT/ne-winnt-process_mitigation_policy)
+- [**TIPO \_ DI CACHE DEL \_ PROCESSORE**](/windows/desktop/api/WinNT/ne-winnt-processor_cache_type)
+- [**CLASSE UMS \_ THREAD \_ INFO \_**](/windows/win32/api/winbase/ns-winbase-ums_system_thread_information)

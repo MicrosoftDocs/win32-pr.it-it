@@ -1,6 +1,6 @@
 ---
 title: Attributo EFSPolicy
-description: Criteri di Encrypting File System.
+description: Oggetto Encrypting File System criteri.
 ms.assetid: e5d5e0f8-5bce-4ada-a2ec-734532a968e9
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b00e1b589567f945861fe34055a8aa3f0be3e5bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee6ae775e74ffd72009d9ac45e9c8926a37186362533cdb478ffb11f694d0ca0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054171"
 ---
 # <a name="efspolicy-attribute"></a>Attributo EFSPolicy
 
-Criteri di Encrypting File System.
+Oggetto Encrypting File System criteri.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | EFSPolicy                                             |
-| LDAP-Display-Name | eFSPolicy                                             |
+| Ldap-Display-Name | eFSPolicy                                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.268                                |
-| System-ID-GUID    | 8e4eb2ec-4712-11d0-a1a0-00c04fd930c9                  |
+| System-Id-Guid    | 8e4eb2ec-4712-11d0-a1a0-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Criteri di Encrypting File System.
 | ID collegamento                | \-                                                                                              |
 | MAPI-Id                | \-                                                                                              |
 | System-Only            | Falso                                                                                           |
-| È a valore singolo       | Falso                                                                                           |
+| Is-Single-Valued       | Falso                                                                                           |
 | Indicizzato             | Falso                                                                                           |
 | Nel catalogo globale      | Falso                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                    |
 | Range-Lower            | \-                                                                                              |
 | Range-Upper            | \-                                                                                              |
 | Search-Flags           | 0x00000000                                                                                      |
 | System-Flags           | 0x00000010                                                                                      |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

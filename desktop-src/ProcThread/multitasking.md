@@ -1,21 +1,21 @@
 ---
-description: Un sistema operativo multitasking divide il tempo di elaborazione disponibile tra i processi o i thread che lo richiedono.
+description: Un sistema operativo multitasking divide il tempo del processore disponibile tra i processi o i thread che ne hanno bisogno.
 ms.assetid: ac45bef6-f078-40ac-95f4-06bd61ff46c4
 title: Multitasking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d06c1d8d44f397f06923c793971bcb20f35b2b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee7826ca79d6095715c722b4b5c3da479e276444825343ac096cd9822d9e365a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032181"
 ---
 # <a name="multitasking"></a>Multitasking
 
-Un sistema operativo multitasking divide il tempo di elaborazione disponibile tra i processi o i thread che lo richiedono. Il sistema è progettato per il multitasking preemptive. alloca un *intervallo di tempo* del processore a ogni thread che esegue. Il thread attualmente in esecuzione viene sospeso al termine del periodo di tempo specificato, consentendo l'esecuzione di un altro thread. Quando il sistema passa da un thread a un altro, Salva il contesto del thread con precedenza e ripristina il contesto salvato del thread successivo nella coda.
+Un sistema operativo multitasking divide il tempo del processore disponibile tra i processi o i thread che ne hanno bisogno. Il sistema è progettato per il multitasking preemptive; alloca un intervallo di *tempo del* processore a ogni thread eseguito. Il thread attualmente in esecuzione viene sospeso al termine dell'intervallo di tempo, consentendo l'esecuzione di un altro thread. Quando il sistema passa da un thread a un altro, salva il contesto del thread preempted e ripristina il contesto salvato del thread successivo nella coda.
 
-L'entità della porzione di tempo dipende dal sistema operativo e dal processore. Poiché ogni intervallo di tempo è ridotto (circa 20 millisecondi), più thread sembrano essere in esecuzione nello stesso momento. Questa situazione si verifica essenzialmente nei sistemi a più processori, in cui i thread eseguibili vengono distribuiti tra i vari processori disponibili. Tuttavia, è necessario prestare attenzione quando si usano più thread in un'applicazione, perché le prestazioni del sistema possono diminuire se sono presenti troppi thread.
+L'entità della porzione di tempo dipende dal sistema operativo e dal processore. Poiché ogni intervallo di tempo è piccolo (circa 20 millisecondi), più thread sembrano essere in esecuzione contemporaneamente. Questa situazione si verifica essenzialmente nei sistemi a più processori, in cui i thread eseguibili vengono distribuiti tra i vari processori disponibili. Tuttavia, è necessario prestare attenzione quando si usano più thread in un'applicazione, perché le prestazioni del sistema possono diminuire se sono presenti troppi thread.
 
 Per altre informazioni, vedere i seguenti argomenti:
 

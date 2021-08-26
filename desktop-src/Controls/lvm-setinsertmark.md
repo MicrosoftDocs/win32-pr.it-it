@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETINSERTMARK (COMmctrl. h)
+title: LVM_SETINSERTMARK messaggio (Commctrl.h)
 description: Imposta il punto di inserimento sulla posizione definita.
 ms.assetid: 32cf5a11-918a-4dc4-bf10-88b3c26f26cc
 keywords:
-- Controlli di Windows Message LVM_SETINSERTMARK
+- LVM_SETINSERTMARK controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dab80b1b73b620ce94b75aecab90f6bdd69bf228
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fae1cad35bd20605c4cb229dac69eb7461add8b7240b495cc48fb809d39aa098
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919861"
 ---
-# <a name="lvm_setinsertmark-message"></a>\_Messaggio SETINSERTMARK LVM
+# <a name="lvm_setinsertmark-message"></a>Messaggio LVM \_ SETINSERTMARK
 
 Imposta il punto di inserimento sulla posizione definita.
 
@@ -33,18 +33,18 @@ Imposta il punto di inserimento sulla posizione definita.
 </dt> <dd>Deve essere zero.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntatore a una struttura <a href="/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark">LVINSERTMARK</a> che specifica la posizione in cui impostare il punto di inserimento.</dd> </dl>
+</dt> <dd>Puntatore a una <a href="/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark">struttura LVINSERTMARK</a> che specifica dove impostare il punto di inserimento.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario. Viene restituito **false** se la dimensione nel membro **cbSize** della struttura [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark) non è uguale alla dimensione effettiva della struttura o quando un punto di inserimento non è applicabile nella visualizzazione corrente.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario. **False** viene restituito se le dimensioni nel membro **cbSize** della struttura [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark) non sono uguali alle dimensioni effettive della struttura o quando un punto di inserimento non è applicabile nella visualizzazione corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Un punto di inserimento può essere visualizzato solo se il controllo elenco-visualizzazione si trova nella visualizzazione icone, nella visualizzazione icone piccole o nella visualizzazione affiancata e non è in modalità di visualizzazione gruppo.
+Un punto di inserimento può essere visualizzato solo se il controllo visualizzazione elenco si trova nella visualizzazione icone, nella visualizzazione icone piccola o nella visualizzazione affiancata e non è in modalità di visualizzazione gruppo.
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -54,9 +54,9 @@ Un punto di inserimento può essere visualizzato solo se il controllo elenco-vis
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

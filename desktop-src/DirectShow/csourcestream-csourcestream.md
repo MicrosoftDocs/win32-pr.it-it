@@ -1,5 +1,5 @@
 ---
-description: 'Costruttore CSourceStream.CSourceStream : metodo costruttore.'
+description: 'Costruttore CSourceStream.CSourceStream : metodo del costruttore.'
 ms.assetid: 9078b2f5-b11e-4780-8143-6738e9df4f4b
 title: Costruttore CSourceStream.CSourceStream (Source.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75d94bb89ca109c2a7974c294153d46235f92f23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e02827c74ef4c5461a5777221e1839846b855a4b2f4cd27d97ce913399787ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053851"
 ---
 # <a name="csourcestreamcsourcestream-constructor"></a>Costruttore CSourceStream.CSourceStream
 
@@ -48,7 +48,7 @@ CSourceStream(
 *pObjectName* 
 </dt> <dd>
 
-Puntatore a una stringa contenente il nome di debug del segnaposto.
+Puntatore a una stringa contenente il nome di debug del pin.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Puntatore a una variabile che riceve un **valore HRESULT** che indica l'esito po
 *Pms* 
 </dt> <dd>
 
-Puntatore al [**filtro CSource**](csource.md) che ha creato questo segnaposto.
+Puntatore al [**filtro CSource**](csource.md) che ha creato questo pin.
 
 </dd> <dt>
 
@@ -75,9 +75,9 @@ Puntatore a una stringa che contiene il nome del segnaposto.
 
 ## <a name="remarks"></a>Commenti
 
-La stringa specificata nel *parametro pObjectName* viene usata solo a scopo di debug. Per altre informazioni, vedere [**CBaseObject.**](cbaseobject.md)
+La stringa specificata nel *parametro pObjectName* viene usata solo a scopo di debug. Per altre informazioni, vedere [**CBaseObject**](cbaseobject.md).
 
-La stringa specificata nel *parametro pName* è il nome restituito dal [**metodo IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) La `CSourceStream` classe non usa questo nome per l'identificatore pin restituito dal metodo [**CSourceStream::QueryId.**](csourcestream-queryid.md) QueryId calcola **invece** un identificatore pin in base al numero di pin. Gli identificatori pin supportano la persistenza del grafo. Per altre informazioni, vedere [**IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)
+La stringa specificata nel *parametro pName* è il nome restituito dal [**metodo IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) La `CSourceStream` classe non usa questo nome per l'identificatore pin restituito dal metodo [**CSourceStream::QueryId.**](csourcestream-queryid.md) QueryId  calcola invece un identificatore pin in base al numero pin. Gli identificatori pin supportano la persistenza del grafo. Per altre informazioni, vedere [**IPin::QueryId.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)
 
 Il costruttore aggiunge automaticamente il pin al filtro proprietario chiamando [**CSource::AddPin**](csource-addpin.md).
 
@@ -87,7 +87,7 @@ Il costruttore aggiunge automaticamente il pin al filtro proprietario chiamando 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source.h (include Streams.h)</dt> </dl>                                                                                    |
+| Intestazione<br/>  | <dl> <dt>Source.h (include Flussi.h)</dt> </dl>                                                                                    |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

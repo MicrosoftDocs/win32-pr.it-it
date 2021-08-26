@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ VolumeChangeEvent rappresenta un evento di unità locale risultante dall'aggiunta di una lettera di unità o di un'unità montata nel computer.
+description: Win32 VolumeChangeEvent rappresenta un evento di unità locale derivato dall'aggiunta di una lettera di unità o di un'unità \_ montata nel sistema del computer.
 ms.assetid: 38595319-d7a1-4dcd-9ad8-a27cc484b699
 ms.tgt_platform: multiple
-title: Classe Win32_VolumeChangeEvent
+title: Win32_VolumeChangeEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e7610cae8d0cc746774b99a101e3c6aaf1f8a64d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e5e8b43c3b04c9a8fcb747bc3963259c3b991c82d0d85a0c0b3b19c5c10f4489
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922591"
 ---
-# <a name="win32_volumechangeevent-class"></a>Win32 \_ VolumeChangeEvent (classe)
+# <a name="win32_volumechangeevent-class"></a>Classe VolumeChangeEvent Win32 \_
 
-La  [classe WMI](../wmisdk/retrieving-a-class.md) **\_ VolumeChangeEvent Win32** rappresenta un evento di unità locale risultante dall'aggiunta di una lettera di unità o di un'unità montata nel computer. Le unità di rete non sono attualmente supportate.
+La classe  [WMI](../wmisdk/retrieving-a-class.md) **\_ Win32 VolumeChangeEvent** rappresenta un evento di unità locale derivato dall'aggiunta di una lettera di unità o di un'unità montata nel sistema del computer. Le unità di rete non sono attualmente supportate.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,42 +46,42 @@ class Win32_VolumeChangeEvent : Win32_DeviceChangeEvent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ VolumeChangeEvent** presenta questi tipi di membri:
+La **classe Win32 \_ VolumeChangeEvent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ VolumeChangeEvent** dispone di queste proprietà.
+La **classe Win32 \_ VolumeChangeEvent** ha queste proprietà.
 
 <dl> <dt>
 
 **DriveName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome dell'unità (lettera) che è stato aggiunto o rimosso dal sistema.
+Nome unità (lettera) aggiunto o rimosso dal sistema.
 
 </dd> <dt>
 
 **EventType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32APIDevice Management Messages \| WM \_ DEVICECHANGE \| wParam", "Win32APIDevice Management Messages \| WM \_ SETTINGCHANGE")
+Qualificatori: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32APIDevice Management \| Messages WM \_ DEVICECHANGE \| wParam", "Win32APIDevice Management Messages \| WM \_ SETTINGCHANGE")
 </dt> </dl>
 
-Tipo di notifica di modifica dell'evento che si è verificato.
+Tipo di notifica di modifica dell'evento che si è verificata.
 
 Questa proprietà viene ereditata da [**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md).
 
@@ -96,7 +96,7 @@ Questa proprietà viene ereditata da [**Win32 \_ DeviceChangeEvent**](win32-devi
 
 <span id="Device_Arrival"></span><span id="device_arrival"></span><span id="DEVICE_ARRIVAL"></span>
 
-**Arrivo del dispositivo** (2)
+**Arrivo del** dispositivo (2)
 
 
 </dt> <dd></dd> <dt>
@@ -117,39 +117,39 @@ Questa proprietà viene ereditata da [**Win32 \_ DeviceChangeEvent**](win32-devi
 
 </dd> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Questa proprietà viene ereditata dall' [**\_ \_ evento**](../wmisdk/--event.md). Per ulteriori informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere la pagina relativa alle [costanti di sicurezza WMI](../wmisdk/wmi-security-constants.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Questa proprietà viene ereditata [**\_ \_ dall'evento**](../wmisdk/--event.md). Per altre informazioni sulle costanti utilizzate per impostare questo descrittore di sicurezza, vedere [Costanti di sicurezza WMI](../wmisdk/wmi-security-constants.md).
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui è stato generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time).
+Valore univoco che indica l'ora in cui è stato generato l'evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Times).
 
-Questa proprietà viene ereditata dall' [**\_ \_ evento**](../wmisdk/--event.md).
+Questa proprietà viene ereditata [**\_ \_ dall'evento**](../wmisdk/--event.md).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](../wmisdk/creating-a-wmi-script.md).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ VolumeChangeEvent** è derivata da [**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md).
+La **classe Win32 \_ VolumeChangeEvent** è derivata da [**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -160,7 +160,7 @@ La classe **Win32 \_ VolumeChangeEvent** è derivata da [**Win32 \_ DeviceChange
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ La classe **Win32 \_ VolumeChangeEvent** è derivata da [**Win32 \_ DeviceChange
 
 <dl> <dt>
 
-[**\_DeviceChangeEvent Win32**](win32-devicechangeevent.md)
+[**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

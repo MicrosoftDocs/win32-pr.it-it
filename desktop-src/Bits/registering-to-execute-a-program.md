@@ -1,37 +1,37 @@
 ---
 title: Registrazione per l'esecuzione di un programma
-description: È possibile eseguire la registrazione in modo che BITS esegua un programma basato su eventi trasferiti ed errori di processo, ma non eventi modificati dal processo. BITS esegue il programma nel contesto dell'utente.
+description: È possibile eseguire la registrazione per fare in modo che BITS eserviti un programma in base agli eventi di processo trasferito ed errore, ma non agli eventi di modifica del processo. BITS esegue il programma nel contesto dell'utente.
 ms.assetid: f1996d08-0e35-403b-9cdb-dae9e1c42e05
 keywords:
-- BIT di notifica degli eventi, riga di comando
-- registrazione per i bit di notifica della riga di comando
+- bits di notifica degli eventi, riga di comando
+- registrazione per bits di notifica della riga di comando
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 7831a959a73112b21bdf3e0fbc2b7d3dd4f6a447
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db86f67ad899d190b24d74bfb04c501ca7881351cfb2f37ef53300666622c317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922031"
 ---
 # <a name="registering-to-execute-a-program"></a>Registrazione per l'esecuzione di un programma
 
-È possibile eseguire la registrazione in modo che BITS esegua un programma basato su eventi trasferiti ed errori di processo, ma non eventi modificati dal processo. BITS esegue il programma nel contesto dell'utente.
+È possibile eseguire la registrazione per fare in modo che BITS eserviti un programma in base agli eventi di processo trasferito ed errore, ma non agli eventi di modifica del processo. BITS esegue il programma nel contesto dell'utente.
 
-**Per eseguire la registrazione per eseguire un programma**
+**Per eseguire la registrazione per l'esecuzione di un programma**
 
-1.  Chiamare il metodo **Metodo ibackgroundcopyjob:: QueryInterface** per recuperare un puntatore all'interfaccia [**IBackgroundCopyJob2**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) . Specificare \_ \_ uuidof (IBackgroundCopyJob2) come identificatore di interfaccia.
-2.  Chiamare il metodo [**IBackgroundCopyJob2:: SetNotifyCmdLine**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) per specificare il programma da eseguire e gli eventuali argomenti richiesti dal programma, ad esempio l'identificatore del processo.
+1.  Chiamare il **metodo IBackgroundCopyJob::QueryInterface** per recuperare un puntatore a [**interfaccia IBackgroundCopyJob2.**](/windows/desktop/api/Bits1_5/nn-bits1_5-ibackgroundcopyjob2) Specificare \_ \_ uuidof(IBackgroundCopyJob2) come identificatore di interfaccia.
+2.  Chiamare il [**metodo IBackgroundCopyJob2::SetNotifyCmdLine**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline) per specificare il programma da eseguire ed eventuali argomenti richiesti dal programma, ad esempio l'identificatore del processo.
 
-3.  Chiamare il metodo [**Metodo ibackgroundcopyjob:: SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per specificare quando viene eseguita la riga di comando.
+3.  Chiamare il [**metodo IBackgroundCopyJob::SetNotifyFlags**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags) per specificare quando viene eseguita la riga di comando.
 
-    È possibile specificare solo i flag per gli eventi di errore del processo BG \_ Notify \_ \_ trasferiti e BG \_ Notify \_ Job \_ . Il \_ flag di modifica del processo di notifica BG \_ \_ viene ignorato.
+    È possibile specificare solo i flag di evento BG \_ NOTIFY JOB TRANSFERRED e \_ \_ BG NOTIFY JOB \_ \_ \_ ERROR. Il flag BG \_ NOTIFY JOB MODIFICATION viene \_ \_ ignorato.
 
-Si noti che BITS non eseguirà il programma se è stata registrata anche la [ricezione di callback com](registering-a-com-callback.md) e il puntatore all'interfaccia di callback è valido o se il metodo di notifica chiamato da BITS restituisce un codice di esito positivo. Tuttavia, se il metodo di notifica restituisce un codice di errore, ad esempio E ha \_ esito negativo, BITS eseguirà la riga di comando.
+Si noti che BITS non eseguirà il programma se è stata eseguita la registrazione anche per ricevere [callback COM](registering-a-com-callback.md) e il puntatore dell'interfaccia di callback è valido o se il metodo di notifica chiamato da BITS restituisce un codice di esito positivo. Tuttavia, se il metodo di notifica restituisce un codice di errore, ad esempio E \_ FAIL, BITS eseguirà la riga di comando.
 
-BITS chiama la funzione [**CreateProcessAsUser ha**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) per avviare il programma. Se si specifica una stringa di parametro, il primo parametro deve essere il nome del programma.
+BITS chiama la [**funzione CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) per avviare il programma. Se si specifica una stringa di parametro, il primo parametro deve essere il nome del programma.
 
-Nell'esempio seguente viene illustrato come eseguire la registrazione per eseguire un programma quando si verifica l'evento trasferito dal processo. Nell'esempio si presuppone che il puntatore all'interfaccia [**Metodo ibackgroundcopyjob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
+Nell'esempio seguente viene illustrato come eseguire la registrazione per eseguire un programma quando si verifica l'evento di trasferimento del processo. Nell'esempio si presuppone che il [**puntatore a interfaccia IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) sia valido.
 
 
 ```C++
@@ -70,7 +70,7 @@ if (SUCCEEDED(hr))
 
 
 
-Quando lo stato del processo diventa lo \_ stato del processo BG \_ \_ trasferito, BITS esegue il programma specificato in pProgram. L'esempio seguente è un'implementazione semplice di un programma che accetta come argomento un identificatore di processo. Il programma presuppone che venga passato il numero corretto di argomenti.
+Quando lo stato del processo diventa BG \_ JOB \_ STATE \_ TRANSFERRED, BITS esegue il programma specificato in pProgram. L'esempio seguente è una semplice implementazione di un programma che accetta un identificatore di processo come argomento. Il programma presuppone che al programma sia stato passato il numero corretto di argomenti.
 
 
 ```C++
@@ -133,6 +133,6 @@ int wmain(int argc, wchar_t *argv[])
 
 
 
- 
+ 
 
- 
+ 

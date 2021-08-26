@@ -1,10 +1,10 @@
 ---
-title: Attributo msSFU-30-netgroup-host-at-domain-attributo
-description: Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad esempio \ 0034; dominio host \ 0034;.
+title: Attributo msSFU-30-Netgroup-Host-At-Domain
+description: Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad esempio \ 0034;dominio host \ 0034;.
 ms.assetid: 14578c46-ca3e-428c-bc63-9d8a2c6251c3
 ms.tgt_platform: multiple
 keywords:
-- Attributo msSFU-30-netgroup-host-at-Domain-schema AD
+- Schema AD dell'attributo msSFU-30-Netgroup-Host-At-Domain
 - Schema AD dell'attributo msSFU30NetgroupHostAtDomain
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56937fcea63ae811d238d14255f1fd46cbfb92e9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7fa878ff7ca319b58aa56bfd94bf5eb82d0446206fab03d90a5f19807c52c9c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066391"
 ---
-# <a name="mssfu-30-netgroup-host-at-domain-attribute"></a>Attributo msSFU-30-netgroup-host-at-domain-attributo
+# <a name="mssfu-30-netgroup-host-at-domain-attribute"></a>Attributo msSFU-30-Netgroup-Host-At-Domain
 
 Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad esempio " host@domain ".
 
@@ -29,13 +29,13 @@ Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad es
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Attributo msSFU-30-netgroup-host-at-Domain     |
-| LDAP-Display-Name | msSFU30NetgroupHostAtDomain          |
+| CN                | msSFU-30-Netgroup-Host-At-Domain     |
+| Ldap-Display-Name | msSFU30NetgroupHostAtDomain          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.348          |
-| System-ID-GUID    | 97d2bf65-0466-4852-a25a-ec20f57ee36c |
+| System-Id-Guid    | 97d2bf65-0466-4852-a25a-ec20f57ee36c |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -56,15 +56,15 @@ Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad es
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Vero                                            |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad es
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Vero                                            |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad es
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| Is-Single-Valued       | Falso                                           |
 | Indicizzato             | Vero                                            |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene parte della mappa netgroup che rappresenta le stringhe calcolate, ad es
 | ID collegamento                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| È a valore singolo       | Falso                                           |
+| A valore singolo       | Falso                                           |
 | Indicizzato             | Vero                                            |
 | Nel catalogo globale      | Falso                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000001                                      |
 | System-Flags           | 0x00000000                                      |
-| Classi utilizzate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
+| Classi usate in        | [**nisNetgroup**](c-nisnetgroup.md)<br/> |
 
 
 

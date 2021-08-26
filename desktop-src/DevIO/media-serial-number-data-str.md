@@ -1,7 +1,7 @@
 ---
-description: Contiene il numero di serie di un dispositivo USB. Viene usato dal codice di controllo del numero di serie del supporto per l' \_ archiviazione IOCTL \_ \_ \_ \_ .
+description: Contiene il numero di serie di un dispositivo USB. Viene usato dal codice di controllo IOCTL \_ STORAGE GET MEDIA SERIAL \_ \_ \_ \_ NUMBER.
 ms.assetid: a7df4528-a3b7-4ffa-b595-7ac918371582
-title: Struttura MEDIA_SERIAL_NUMBER_DATA
+title: MEDIA_SERIAL_NUMBER_DATA struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 843c445a29bcce9e6dc26b66b0c6738831e9b79c
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: cbb007769238f0e6a4239366e8fe9956e61f892f7d3c98f2b638dc425dc9359f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053481"
 ---
-# <a name="media_serial_number_data-structure"></a>\_ \_ Struttura dei dati del numero di serie dei supporti \_
+# <a name="media_serial_number_data-structure"></a>Struttura MEDIA \_ SERIAL \_ NUMBER \_ DATA
 
-Contiene il numero di serie di un dispositivo USB. Viene usato dal codice di controllo del [**\_ numero di \_ \_ \_ serie \_ del supporto per l'archiviazione IOCTL**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_get_media_serial_number) .
+Contiene il numero di serie di un dispositivo USB. Viene usato dal codice di controllo [**IOCTL \_ STORAGE GET MEDIA SERIAL \_ \_ \_ \_ NUMBER.**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_get_media_serial_number)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct _MEDIA_SERIAL_NUMBER_DATA {
 **SerialNumberLength**
 </dt> <dd>
 
-Dimensioni in byte della stringa **SerialNumberData** .
+Dimensione in byte della stringa **SerialNumberData.**
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Numero di serie del dispositivo.
 
 ## <a name="remarks"></a>Commenti
 
-Non è disponibile alcun file di intestazione per la struttura **\_ \_ \_ dei dati del numero di serie dei supporti** . Includere la definizione della struttura nella parte superiore di questa pagina nel codice sorgente.
+Non è disponibile alcun file di intestazione per la **struttura MEDIA SERIAL NUMBER \_ \_ \_ DATA.** Includere la definizione della struttura nella parte superiore di questa pagina nel codice sorgente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,7 +88,7 @@ Non è disponibile alcun file di intestazione per la struttura **\_ \_ \_ dei da
 
 <dl> <dt>
 
-[**\_numero di \_ \_ serie supporti \_ \_ per archiviazione IOCTL**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_get_media_serial_number)
+[**IOCTL \_ STORAGE \_ GET \_ MEDIA \_ SERIAL \_ NUMBER**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_get_media_serial_number)
 </dt> </dl>
 
  

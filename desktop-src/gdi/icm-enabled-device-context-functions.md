@@ -1,28 +1,28 @@
 ---
-description: Microsoft Image Color Management (ICM) assicura che un'immagine di colore, un elemento grafico o un oggetto testo venga sottoposto a rendering il più vicino possibile alla finalità originale su qualsiasi dispositivo, nonostante le differenze nelle tecnologie di imaging e nelle funzionalità cromatiche tra i dispositivi.
+description: Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più possibile simile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi.
 ms.assetid: eced18cf-be5a-4c61-b0e5-36d607daa6ff
-title: Funzioni di contesto del dispositivo ICM-Enabled
+title: ICM-Enabled del contesto di dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a0b49e62d0b4d05e0690d2aee0d3c5f0f530cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f33337aeea32f1ca84b74e3fc45e9bd67dbfe1ce1a5300a502a5303f55cab357
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944201"
 ---
-# <a name="icm-enabled-device-context-functions"></a>Funzioni di contesto del dispositivo ICM-Enabled
+# <a name="icm-enabled-device-context-functions"></a>ICM-Enabled del contesto di dispositivo
 
-Microsoft Image Color Management (ICM) assicura che un'immagine di colore, un elemento grafico o un oggetto testo venga sottoposto a rendering il più vicino possibile alla finalità originale su qualsiasi dispositivo, nonostante le differenze nelle tecnologie di imaging e nelle funzionalità cromatiche tra i dispositivi. Per ulteriori informazioni, vedere [Windows Color System](/previous-versions//dd372446(v=vs.85)).
+Gestione colori immagini Microsoft (ICM) garantisce che il rendering di un'immagine a colori, un elemento grafico o un oggetto di testo sia il più possibile simile alla finalità originale in qualsiasi dispositivo, nonostante le differenze nelle tecnologie di creazione dell'immagine e nelle funzionalità di colore tra i dispositivi. Per altre informazioni, vedere Windows [Color System.](/previous-versions//dd372446(v=vs.85))
 
-Sono disponibili varie funzioni nell'interfaccia GDI (Graphics Device Interface) che usano o operano sui dati di colore. Le funzioni di contesto del dispositivo seguenti sono abilitate per l'uso con ICM:
+Nell'interfaccia GDI (Graphics Device Interface) sono disponibili varie funzioni che usano o operano sui dati di colore. Le funzioni del contesto di dispositivo seguenti sono abilitate per l'uso con ICM:
 
 -   [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc)
 -   [**CreateDC**](/windows/desktop/api/Wingdi/nf-wingdi-createdca)
 -   [**GetDCBrushColor**](/windows/desktop/api/WinGdi/nf-wingdi-getdcbrushcolor)
 -   [**GetDCPenColor**](/windows/desktop/api/WinGdi/nf-wingdi-getdcpencolor)
 -   [**ResetDC**](/windows/desktop/api/Wingdi/nf-wingdi-resetdca)
--   [**SelezionaOggetto**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)
+-   [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)
 -   [**SetDCBrushColor**](/windows/desktop/api/Wingdi/nf-wingdi-setdcbrushcolor)
 -   [**SetDCPenColor**](/windows/desktop/api/Wingdi/nf-wingdi-setdcpencolor)
 

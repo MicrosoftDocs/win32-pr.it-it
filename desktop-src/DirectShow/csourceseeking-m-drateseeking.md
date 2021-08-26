@@ -1,7 +1,7 @@
 ---
-description: Velocità di riproduzione. Per impostazione predefinita, il valore è impostato su 1,0.
+description: Velocità di riproduzione. Per impostazione predefinita, il valore è impostato su 1.0.
 ms.assetid: 835ddbe8-2017-4a4a-8f10-b3f33a8215a7
-title: 'Membro CSourceSeeking:: m_dRateSeeking (Ctlutil. h)'
+title: Membro CSourceSeeking::m_dRateSeeking (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1055a420316868db6374798c0295339dd74ac172
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65a21cbae87c25e0f37791129f1699349ea4bb4a8591097978e04010a925962b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054211"
 ---
-# <a name="csourceseekingm_drateseeking-member"></a>Membro dRateSeeking di CSourceSeeking:: m \_
+# <a name="csourceseekingm_drateseeking-member"></a>Membro DRateSeeking CSourceSeeking::m \_
 
-Velocità di riproduzione. Per impostazione predefinita, il valore è impostato su 1,0.
+Velocità di riproduzione. Per impostazione predefinita, il valore è impostato su 1.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ double m_dRateSeeking;
 
 ## <a name="remarks"></a>Osservazioni
 
-Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m** .
+Mantenere la **sezione \_ critica m pLock** prima di accedere a questa variabile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Prima di accedere a questa variabile, mantenere la sezione **\_ pLock critico m*
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

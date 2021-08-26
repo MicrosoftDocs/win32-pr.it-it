@@ -1,28 +1,28 @@
 ---
 title: Routine di verifica personalizzate
-description: In questa sezione viene descritto come creare una routine di verifica personalizzata per lo strumento AccChecker (UI Accessibility Checker).
+description: Questa sezione descrive come creare una routine di verifica personalizzata per lo strumento Verifica accessibilità interfaccia utente (AccChecker).
 ms.assetid: 56F3EA1F-39C3-4DD9-8F2B-0C3608DD8737
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d66ad2fe0e27d16b55dd2d50d367250aadd15c4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 245865a0ab4aa6848d4a4361a30febbb341742208586ebf4ec5b35c34fa30534
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030886"
 ---
 # <a name="custom-verification-routines"></a>Routine di verifica personalizzate
 
-In questa sezione viene descritto come creare una routine di verifica personalizzata per lo strumento AccChecker (UI Accessibility Checker).
+Questa sezione descrive come creare una routine di verifica personalizzata per lo strumento Verifica accessibilità interfaccia utente (AccChecker).
 
 -   [Creazione di una verifica personalizzata](#creating-a-custom-verification)
     -   [Verifica personalizzata di esempio](#sample-custom-verification)
 -   [Uso di una verifica personalizzata](#using-a-custom-verification)
-    -   [Interfaccia utente grafica (GUI) di AccChecker](#the-accchecker-graphical-user-interface-gui)
-    -   [Automazione AccChecker](#accchecker-automation)
+    -   [Interfaccia grafica AccChecker Interfaccia utente (GUI)](#the-accchecker-graphical-user-interface-gui)
+    -   [Automazione di AccChecker](#accchecker-automation)
 -   [Argomenti correlati](#related-topics)
 
-UI Accessibility Checker (AccChecker) è uno strumento di test di accessibilità progettato per verificare l'implementazione di Microsoft Active Accessibility (MSAA) in un'interfaccia utente di controllo o di applicazione. Problemi di accessibilità a elevato utilizzo che potrebbero essere esposti dall'implementazione di MSAA sono testati con un set di routine di verifica automatizzate predefinite. Queste routine di verifica nativa possono essere ampliate con routine personalizzate usando la piattaforma AccChecker estensibile.
+Ui Accessibility Checker (AccChecker) è uno strumento di test di accessibilità progettato per verificare l'implementazione di Microsoft Active Accessibility (MSAA) in un controllo o nell'interfaccia utente dell'applicazione. I problemi di accessibilità ad alto impatto che potrebbero essere esposti dall'implementazione MSAA vengono testati con un set di routine di verifica automatizzate incorporate. Queste routine di verifica native possono essere ottimizzate con routine personalizzate usando la piattaforma AccChecker estendibile.
 
 ## <a name="creating-a-custom-verification"></a>Creazione di una verifica personalizzata
 
@@ -42,33 +42,33 @@ void Execute(
 
 **Parametri**
 
-*HWND*
+*Hwnd*
 
-Tipo: **System. IntPtr**
+Tipo: **System.IntPtr**
 
 HWND dell'elemento da verificare.
 
-*logger*
+*Logger*
 
-Tipo: **AccCheck. Logging. ILogger**
+Tipo: **AccCheck.Logging.ILogger**
 
-Metodo di registrazione selezionato. I tipi possibili includono **AccumulatingLogger** (usato da AccChecker per memorizzare nella cache tutte le voci di log fino al completamento delle verifiche), **ConsoleLogger**, **TextFileLogger** e **XMLSerializingLogger**.
+Metodo di registrazione selezionato. I tipi possibili **includono AccumulatingLogger** (usato da AccChecker per memorizzare nella cache tutte le voci di log fino al completamento delle verifiche), **ConsoleLogger**, **TextFileLogger** e **XMLSerializingLogger**.
 
 *AllowUI*
 
 Tipo: **bool**
 
-Indica se la routine di verifica Visualizza l'interfaccia utente che sta testando. Generalmente impostata su false negli scenari di test automatizzato.
+Indica se la routine di verifica visualizza l'interfaccia utente che sta testando. In genere è impostato su false negli scenari di test automatizzati.
 
-*grafica*
+*Grafica*
 
-Tipo: **AccCheck. GraphicsHelper**
+Tipo: **AccCheck.GraphicsHelper**
 
-Usato per schermate e altre visualizzazioni all'interno di AccChecker.
+Usato per screenshot e altre visualizzazioni all'interno di AccChecker.
 
 ### <a name="sample-custom-verification"></a>Verifica personalizzata di esempio
 
-L'esempio seguente è una verifica personalizzata C# che esegue una semplice verifica della profondità dell'albero degli elementi. Viene registrato un errore se la struttura ad albero degli elementi è maggiore di 50 livelli di profondità, viene registrato un avviso se l'albero degli elementi è profondo da 20 a 50 e in caso contrario viene registrato un messaggio informativo.
+L'esempio seguente è una verifica personalizzata C# che esegue un semplice controllo della profondità dell'albero degli elementi. Viene registrato un errore se l'albero degli elementi ha una profondità superiore a 50 livelli, viene registrato un avviso se l'albero degli elementi ha una profondità di 20-50 livelli e viene registrato un messaggio informativo in caso contrario.
 
 
 ```CSharp
@@ -164,32 +164,32 @@ namespace VerificationRoutines
 
 
 > [!Note]  
-> Una soluzione Microsoft Visual Studio che contiene il codice di esempio di verifica è inclusa nella documentazione della guida. I file si trovano nel percorso di installazione di AccChecker.
+> Una Microsoft Visual Studio che contiene il codice di esempio di verifica è inclusa nella documentazione della Guida. I file si trovano nel percorso di installazione di AccChecker.
 
- 
+ 
 
 ## <a name="using-a-custom-verification"></a>Uso di una verifica personalizzata
 
 Questa sezione descrive come incorporare una verifica personalizzata negli scenari di test di AccChecker.
 
-### <a name="the-accchecker-graphical-user-interface-gui"></a>Interfaccia utente grafica (GUI) di AccChecker
+### <a name="the-accchecker-graphical-user-interface-gui"></a>Interfaccia grafica AccChecker Interfaccia utente (GUI)
 
-Per includere una routine di verifica personalizzata nell'applicazione AccChecker, è sufficiente fare clic su Apri DLL dal menu file e individuare la DLL per la routine. La routine personalizzata verrà aggiunta nella parte inferiore dell'elenco di verifiche nel riquadro Seleziona routine di verifica.
+Per includere una routine di verifica personalizzata nell'applicazione AccChecker, è sufficiente scegliere Apri DLL dal menu File e individuare la DLL per la routine. La routine personalizzata verrà aggiunta alla fine dell'elenco delle verifiche nel riquadro Seleziona routine di verifica.
 
-Lo screenshot seguente mostra la verifica personalizzata della profondità dell'albero di controllo di esempio aggiunta a AccChecker.
+Lo screenshot seguente mostra la verifica personalizzata Sample Check Tree Depth aggiunta ad AccChecker.
 
-![esempio di profondità dell'albero di controllo, routine di verifica personalizzata aggiunta all'interfaccia utente di AccChecker](images/accchecker-sample-custom-verification.png)
+![Esempio di routine di verifica personalizzata della profondità dell'albero di controllo aggiunta all'interfaccia utente di accchecker](images/accchecker-sample-custom-verification.png)
 
 > [!Note]  
-> Se i valori dell'attributo di verifica non sono specificati nella routine di verifica personalizzata, la verifica viene comunque caricata in AccChecker anche se non viene visualizzata nell'interfaccia utente. Poiché non viene visualizzato nell'interfaccia utente, non può essere deselezionato ed escluso dalle esecuzioni successive della verifica.
+> Se i valori dell'attributo di verifica non sono specificati nella routine di verifica personalizzata, la verifica viene comunque caricata in AccChecker anche se non viene visualizzata nell'interfaccia utente. Poiché non viene visualizzato nell'interfaccia utente, non può essere deselezionato ed escluso dalle esecuzioni di verifica successive.
 
- 
+ 
 
-### <a name="accchecker-automation"></a>Automazione AccChecker
+### <a name="accchecker-automation"></a>Automazione di AccChecker
 
-L'integrazione di una routine di verifica personalizzata in un Framework AccChecker automatizzato è semplice quanto l'aggiunta della DLL di verifica e l'abilitazione delle routine di verifica desiderate.
+Incorporare una routine di verifica personalizzata in un framework AccChecker automatizzato è semplice quanto aggiungere la DLL di verifica e abilitare le routine di verifica desiderate.
 
-Il frammento di codice seguente illustra come usare l'API AccChecker per testare la funzionalità di tabulazione nell'applicazione del pannello di controllo Windows Firewall.
+Il frammento di codice seguente illustra come usare l'API AccChecker per testare la funzionalità di tabulazione nell'Windows del pannello di controllo firewall.
 
 
 ```CSharp
@@ -243,9 +243,9 @@ public class TestCases : TestBase
 
 
 > [!Note]  
-> Una soluzione Microsoft Visual Studio 2008 che contiene il codice di esempio di verifica è inclusa nella documentazione della guida. I file si trovano nel percorso di installazione di AccChecker.
+> Una Microsoft Visual Studio 2008 che contiene il codice di esempio di verifica è inclusa nella documentazione della Guida. I file si trovano nel percorso di installazione di AccChecker.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -254,9 +254,9 @@ public class TestCases : TestBase
 [Verifica dell'accessibilità dell'interfaccia utente](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
