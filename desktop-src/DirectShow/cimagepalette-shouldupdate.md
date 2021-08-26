@@ -1,7 +1,7 @@
 ---
 description: Il metodo ShouldUpdate determina se è necessario creare una nuova tavolozza.
 ms.assetid: 50886277-189b-4102-ade9-0366f64fdbcb
-title: Metodo CImagePalette. ShouldUpdate (Winutil. h)
+title: Metodo CImagePalette.ShouldUpdate (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f8cf27548487ad0338f0c4773c66df8f7d03c2f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7897e14aec690ec67451fe868b5352e99c9bd513c8c182a47556fe075cffb2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916031"
 ---
-# <a name="cimagepaletteshouldupdate-method"></a>CImagePalette. ShouldUpdate, metodo
+# <a name="cimagepaletteshouldupdate-method"></a>Metodo CImagePalette.ShouldUpdate
 
 Il `ShouldUpdate` metodo determina se è necessario creare una nuova tavolozza.
 
@@ -46,27 +46,27 @@ BOOL ShouldUpdate(
 *pNewInfo* 
 </dt> <dd>
 
-Puntatore a una struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) contenente la nuova tabella dei colori.
+Puntatore a una [**struttura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) contenente la nuova tabella dei colori.
 
 </dd> <dt>
 
 *pOldInfo* 
 </dt> <dd>
 
-Puntatore a una struttura **VIDEOINFOHEADER** contenente la tabella dei colori obsoleta. Questo parametro può essere **NULL**.
+Puntatore a una **struttura VIDEOINFOHEADER** contenente la tabella dei colori precedente. Questo parametro può essere **NULL**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se è necessario aggiornare la tavolozza; in caso contrario, **false** .
+Restituisce **TRUE se** è necessario aggiornare la tavolozza oppure FALSE in **caso** contrario.
 
 ## <a name="remarks"></a>Commenti
 
--   Se nessuna delle due strutture **VIDEOINFOHEADER** contiene una tabella dei colori, il metodo restituisce **false**.
--   Se una sola struttura contiene una tabella dei colori o se *pOldInfo* è **null**, il metodo restituisce **true**.
--   Se entrambe le strutture contengono tabelle dei colori e le voci di colore corrispondono, il metodo restituisce **false**.
--   Se entrambe le strutture contengono tabelle dei colori, ma le voci di colore non corrispondono, il metodo restituisce **true**.
+-   Se nessuna **delle due strutture VIDEOINFOHEADER** contiene una tabella dei colori, il metodo restituisce **FALSE.**
+-   Se una sola struttura contiene una tabella dei colori o *se pOldInfo* è **NULL,** il metodo restituisce **TRUE.**
+-   Se entrambe le strutture contengono tabelle dei colori e le voci di colore corrispondono, il metodo restituisce **FALSE.**
+-   Se entrambe le strutture contengono tabelle dei colori, ma le voci di colore non corrispondono, il metodo restituisce **TRUE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Restituisce **true** se è necessario aggiornare la tavolozza; in caso contrario
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

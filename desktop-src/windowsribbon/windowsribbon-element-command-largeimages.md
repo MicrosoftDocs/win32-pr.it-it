@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. LargeImages
-description: Rappresenta un contenitore di immagini; in questo caso, le immagini di grandi dimensioni.
+title: Proprietà Command.LargeImages
+description: Rappresenta un contenitore di immagini. in questo caso, immagini di grandi dimensioni.
 ms.assetid: 9fcd3694-7847-43e2-9877-47daf47aae9a
 keywords:
-- Barra multifunzione di Windows Command. LargeImages
+- Proprietà Command.LargeImages Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf71557506d4b9cced21069473d1a6db9b208b8c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 66214eb05910296b2c03a749d88134bef68f86badc2ffd7f7b69d0ba6adfdd5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931617"
 ---
-# <a name="commandlargeimages-property"></a>Proprietà Command. LargeImages
+# <a name="commandlargeimages-property"></a>Proprietà Command.LargeImages
 
-Rappresenta un contenitore di immagini; in questo caso, le immagini di grandi dimensioni.
+Rappresenta un contenitore di immagini. in questo caso, immagini di grandi dimensioni.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                 | Descrizione                                        |
 |---------------------------------------------------------|----------------------------------------------------|
-| [**Immagine**](windowsribbon-element-image.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**Immagine**](windowsribbon-element-image.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -61,13 +61,13 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-Le risorse di immagine devono essere conformi al formato grafico bitmap standard (BMP) usato in Windows.
+Le risorse immagine devono essere conformi al formato grafico BMP (Standard Bitmap) usato Windows.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [**SplitButton**](windowsribbon-element-splitbutton.md) con un elemento [**MenuGroup**](windowsribbon-element-menugroup.md) .
+L'esempio seguente illustra il markup di base per [**SplitButton**](windowsribbon-element-splitbutton.md) con un [**elemento MenuGroup.**](windowsribbon-element-menugroup.md)
 
-Questa sezione di codice mostra le dichiarazioni dei comandi [**SplitButton**](windowsribbon-element-splitbutton.md) e [**MenuGroup**](windowsribbon-element-menugroup.md) con una risorsa immagine grande e una piccola. Viene anche dichiarato un [**gruppo**](windowsribbon-element-group.md) associato che funge da contenitore padre per l'elemento **SplitButton** .
+Questa sezione di codice illustra le [**dichiarazioni di comando SplitButton**](windowsribbon-element-splitbutton.md) e [**MenuGroup**](windowsribbon-element-menugroup.md) con una risorsa immagine di grandi dimensioni e una piccola. Viene dichiarato [**anche un**](windowsribbon-element-group.md) gruppo associato che funge da contenitore padre per **l'elemento SplitButton.**
 
 
 ```XML
@@ -117,8 +117,8 @@ Questa sezione di codice mostra le dichiarazioni dei comandi [**SplitButton**](w
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -126,10 +126,10 @@ Questa sezione di codice mostra le dichiarazioni dei comandi [**SplitButton**](w
 
 <dl> <dt>
 
-[Specifica delle risorse dell'immagine della barra multifunzione](windowsribbon-imageformats.md)
+[Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)
 </dt> <dt>
 
-[Interfaccia utente \_ pkey \_ largeImage](windowsribbon-reference-properties-uipkey-largeimage.md)
+[UI \_ PKEY \_ LargeImage](windowsribbon-reference-properties-uipkey-largeimage.md)
 </dt> </dl>
 
  

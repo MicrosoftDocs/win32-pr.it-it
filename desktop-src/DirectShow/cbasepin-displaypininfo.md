@@ -1,7 +1,7 @@
 ---
 description: Il metodo DisplayPinInfo traccia una connessione pin durante il debug.
 ms.assetid: 3c1aa5ab-7f6b-4518-abf3-b5138f6267ee
-title: Metodo CBasePin. DisplayPinInfo (Amfilter. h)
+title: Metodo CBasePin.DisplayPinInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea563ca07eaea6b6974a831726918866414a33b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98930ec48d3daa13d6ae463b38ce1ae62d745de9fae65915dcabcedf3cd673aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916471"
 ---
-# <a name="cbasepindisplaypininfo-method"></a>CBasePin. DisplayPinInfo, metodo
+# <a name="cbasepindisplaypininfo-method"></a>Metodo CBasePin.DisplayPinInfo
 
-Il `DisplayPinInfo` Metodo traccia una connessione pin durante il debug.
+Il `DisplayPinInfo` metodo traccia una connessione pin durante il debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ void DisplayPinInfo(
 *pReceivePin* 
 </dt> <dd>
 
-Puntatore al pin di ricezione.
+Puntatore al pin ricevente.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle compilazioni di debug questo metodo chiama la funzione [**DbgLog**](dbglog.md) per tracciare un tentativo di connessione. Nelle compilazioni finali, questo metodo non esegue alcuna operazione.
+Nelle build di debug, questo metodo chiama la [**funzione DbgLog**](dbglog.md) per tracciare un tentativo di connessione. Nelle build di vendita al dettaglio questo metodo non esegue alcuna operazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Nelle compilazioni di debug questo metodo chiama la funzione [**DbgLog**](dbglog
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

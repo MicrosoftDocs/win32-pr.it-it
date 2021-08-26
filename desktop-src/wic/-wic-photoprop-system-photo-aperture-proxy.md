@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per il criterio dei metadati Photo System. Photo. aperture.
+description: Proxy di proprietà per i criteri dei metadati della foto System.Photo.Aperture.
 ms.assetid: 1917cf0e-28e3-466a-84d0-a849f39b8354
-title: Proxy System. Photo. aperture
+title: System.Photo.Aperture Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1eef67d906c8664fccaf32a00c62b3da8e6262e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b52d5cef031da13c1dd048ddc5b8f10d6c7ec51dfd822f9b508fc531e976ccb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882141"
 ---
-# <a name="systemphotoaperture-proxy"></a>Proxy System. Photo. aperture
+# <a name="systemphotoaperture-proxy"></a>System.Photo.Aperture Proxy
 
-Il proxy di proprietà per il criterio dei metadati Photo System. Photo. aperture.
+Proxy di proprietà per i criteri dei metadati della foto System.Photo.Aperture.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy di proprietà restituisce una coppia razionale tramite il membro [propVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. Photo. aperture](../properties/props-system-photo-aperture.md)
+[System.Photo.Aperture](../properties/props-system-photo-aperture.md)
 </dt> </dl>
 
  

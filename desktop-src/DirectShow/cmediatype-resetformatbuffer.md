@@ -1,7 +1,7 @@
 ---
-description: Il metodo ResetFormatBuffer Elimina il blocco di formato. Il metodo imposta i membri cbFormat e pbFormat della struttura del \_ tipo di supporto am \_ su null.
+description: Il metodo ResetFormatBuffer elimina il blocco di formato. Il metodo imposta i membri cbFormat e pbFormat della struttura AM \_ MEDIA \_ TYPE su NULL.
 ms.assetid: 5eb6dfc8-cfba-41dd-b422-8fe93ca904c1
-title: Metodo CMediaType. ResetFormatBuffer (mtype. h)
+title: Metodo CMediaType.ResetFormatBuffer (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25047060b956e2374964c1620c010dbdf458307c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90175600cf46c09de173c321a0db3f4f9b9466c0416014fcbb08433f57a1ca91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916001"
 ---
-# <a name="cmediatyperesetformatbuffer-method"></a>CMediaType. ResetFormatBuffer, metodo
+# <a name="cmediatyperesetformatbuffer-method"></a>Metodo CMediaType.ResetFormatBuffer
 
-Il `ResetFormatBuffer` metodo elimina il blocco di formato. Il metodo imposta i membri **cbFormat** e **pbFormat** della struttura **del \_ \_ tipo di supporto am** su **null**.
+Il `ResetFormatBuffer` metodo elimina il blocco di formato. Il metodo imposta i **membri cbFormat** **e pbFormat** della struttura **AM MEDIA \_ \_ TYPE** su **NULL.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,8 +50,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: a773c7b3-a1a2-4cce-ae5f-b54217ea06f4
 title: Informazioni sui gestori di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b44d0a3a6d0a1b6c929eb151551155d0b5435a0
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 42139a869551f0f4dc786f02c66c673a49495ba01f5258aeeff12051bd3f60b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946971"
 ---
 # <a name="understanding-property-handlers"></a>Informazioni sui gestori di proprietà
 
@@ -32,7 +32,7 @@ Questo argomento è organizzato come segue:
 
 In Windows Vista e versioni successive, un nuovo sistema di proprietà basato sui metadati è fondamentale per organizzare elementi quali file, messaggi di posta elettronica e contatti. In questo nuovo sistema di proprietà è possibile cercare gli elementi in base ai relativi metadati e gli utenti possono leggere o scrivere tali metadati. I metadati in questo sistema sono rappresentati da un set estendibile di *proprietà* implementate come coppie nome/valore.
 
-In Windows Vista e versioni successive, un set completo di proprietà illustra le specifiche di elementi come foto, musica, documenti, messaggi, contatti e file. I fornitori di software indipendenti (ISV) possono introdurre le proprie proprietà nella piattaforma se nessuna proprietà esistente soddisfa le proprie esigenze.
+In Windows Vista e versioni successive, un set completo di proprietà include le specifiche di elementi come foto, musica, documenti, messaggi, contatti e file. I fornitori di software indipendenti (ISV) possono introdurre le proprie proprietà nella piattaforma se nessuna proprietà esistente soddisfa le proprie esigenze.
 
 ### <a name="open-metadata"></a>Aprire i metadati
 
@@ -45,7 +45,7 @@ Il sistema di proprietà in Windows Vista e versioni successive è un sistema di
 
 ## <a name="about-property-handlers"></a>Informazioni sui gestori di proprietà
 
-In Windows Vista e versioni successive, Windows dispone di un sistema di proprietà estendibile per l'archiviazione e il recupero di metadati nei file e negli elementi di dati a cui si accede. Windows Explorer e il Windows di ricerca, insieme ad altre applicazioni, usano gestori di proprietà per leggere e modificare questi metadati. Gli sviluppatori proprietari di un tipo di file specifico devono registrare un gestore delle proprietà per concedere al sistema di proprietà l'accesso ai metadati nei file. In alcuni casi, potrebbe essere possibile usare un gestore di proprietà esistente in grado di leggere e comprendere il formato di file e le relative proprietà. In altri casi, potrebbe essere necessario sviluppare un nuovo gestore delle proprietà per il tipo di file.
+In Windows Vista e versioni successive, Windows dispone di un sistema di proprietà estendibile per l'archiviazione e il recupero di metadati nei file e negli elementi di dati a cui si accede. Windows Explorer e il Windows di ricerca, insieme ad altre applicazioni, usano gestori di proprietà per leggere e modificare questi metadati. Gli sviluppatori proprietari di un tipo di file specifico devono registrare un gestore delle proprietà per concedere al sistema di proprietà l'accesso ai metadati nei file. In alcuni casi, potrebbe essere possibile usare un gestore delle proprietà esistente in grado di leggere e comprendere il formato di file e le relative proprietà. In altri casi, potrebbe essere necessario sviluppare un nuovo gestore delle proprietà per il tipo di file.
 
 Il primo passaggio per scrivere un gestore delle proprietà consiste nel considerare le proprietà supportate dal tipo di file. I valori delle proprietà vengono archiviati nel flusso di file, principalmente per abilitare il trasporto. Quando i valori delle proprietà vengono archiviati nel file stesso, così come sono in questo sistema, un utente può copiare un file in un altro computer, in un'unità flash USB o in un altro file system oppure invia il file come allegato di posta elettronica, le proprietà si spostano con il file e non vengono mai sincronizzate o perse. Pertanto, se il formato di file supporta l'archiviazione di informazioni aggiuntive, è meglio archiviare le proprietà nel file stesso.
 
@@ -61,7 +61,7 @@ I flussi secondari non offrono una soluzione affidabile in cui le proprietà pos
 
 <dl> <dt>
 
-[Uso dei nomi dei tipi](./building-property-handlers-user-friendly-kind-names.md)
+[Uso di nomi di tipi](./building-property-handlers-user-friendly-kind-names.md)
 </dt> <dt>
 
 [Uso degli elenchi di proprietà](./building-property-handlers-property-lists.md)

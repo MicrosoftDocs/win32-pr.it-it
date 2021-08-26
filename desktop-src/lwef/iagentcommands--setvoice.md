@@ -1,19 +1,19 @@
 ---
-title: IAgentCommands
-description: IAgentCommands
+title: IAgentCommands SetVoice
+description: IAgentCommands SetVoice
 ms.assetid: dfb3b58a-7f24-4366-8f04-93a9e956fdc8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a8e29936dbca65ffded5f8a5e5ea5297b28362e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d02fb124b51a3be1796258fdcb8ffa31d8b81b59636027f3d99497b27cd2bd00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961901"
 ---
-# <a name="iagentcommandssetvoice"></a>IAgentCommands:: sevoice
+# <a name="iagentcommandssetvoice"></a>IAgentCommands::SetVoice
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetVoice(
@@ -21,78 +21,78 @@ HRESULT SetVoice(
 );
 ```
 
-Imposta la proprietà del testo [**vocale**](voice-property.md) per un [**comando**](/windows/desktop/lwef/the-command-object).
+Imposta la [**proprietà Voice**](voice-property.md) text per un [**oggetto Command.**](/windows/desktop/lwef/the-command-object)
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="bszVoice"></span><span id="bszvoice"></span><span id="BSZVOICE"></span>*bszVoice*
 </dt> <dd>
 
-BSTR che specifica il valore per la proprietà del testo [**vocale**](voice-property.md) di una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) .
+Oggetto BSTR che specifica il valore della proprietà [**Voice**](voice-property.md) text di una [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
-Una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) deve avere la proprietà testo [**vocale**](voice-property.md) impostata per essere accessibile tramite voce. È necessario che la proprietà [**VoiceCaption**](voicecaption-property.md) o [**Caption**](caption-property.md) impostata su venga visualizzata nella finestra comandi vocali e che la relativa proprietà [**Visible**](visible-property.md) sia impostata su **true** per essere visualizzata nel menu di scelta rapida del carattere.
+Una [**raccolta Commands**](/windows/desktop/lwef/the-commands-collection-object) deve avere la proprietà [**Voice**](voice-property.md) text impostata per essere accessibile dalla voce. Deve anche avere la proprietà [**VoiceCaption**](voicecaption-property.md) o [**Caption**](caption-property.md) impostata per essere visualizzata nella finestra Comandi vocali e la relativa proprietà [**Visible**](visible-property.md) impostata su **True** per essere visualizzata nel menu a comparsa del carattere.
 
-L'espressione BSTR fornita può includere caratteri di parentesi quadre ( \[ \] ) per indicare parole facoltative e caratteri barra verticale ( \| ) per indicare stringhe alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(Hello \[ There \] \| HI)" indica al motore di riconoscimento vocale di accettare "Hello", "Hello there" o "Hi" per il comando. Ricordarsi di includere spazi appropriati tra le parole incluse tra parentesi quadre o tra parentesi e altro testo. Ricordarsi di includere spazi appropriati tra il testo racchiuso tra parentesi quadre o le parentesi e il testo che non è racchiuso tra parentesi quadre.
+L'espressione BSTR specificata può includere parentesi quadre ( ) per indicare parole facoltative e caratteri barra verticale ( ) per \[ \] indicare stringhe \| alternative. Le alternative devono essere racchiuse tra parentesi. Ad esempio, "(hello there hi)" indica al motore di riconoscimento vocale di accettare \[ \] \| "hello", "hello there" o "hi" per il comando. Ricordarsi di includere gli spazi appropriati tra le parole incluse tra parentesi o tra parentesi e altro testo. Ricordarsi di includere gli spazi appropriati tra il testo tra parentesi quadre o tra parentesi e il testo che non è tra parentesi o parentesi.
 
-È possibile usare l'operatore Star ( \* ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una o più istanze. Ad esempio, di seguito viene riportata una grammatica che supporta "try this", "try this" e "try this", with Unlimited iteraziones of "Please":
+È possibile usare l'operatore star ( ) per specificare zero o più istanze delle parole incluse nel gruppo o l'operatore più (+) per specificare una \* o più istanze. Ad esempio, i risultati seguenti in una grammatica che supporta "prova questo", "prova questo" e "prova questo", con iterazioni illimitate di "please":
 
 ``` syntax
    "please* try this"
 ```
 
-Il formato di grammatica seguente esclude "try this" perché l'operatore + definisce almeno un'istanza di "Please":
+Il formato grammaticale seguente esclude "try this" perché l'operatore + definisce almeno un'istanza di "please":
 
 ``` syntax
    "please+ try this"
 ```
 
-Gli operatori di ripetizione seguono le normali regole di precedenza e si applicano all'elemento di testo immediatamente precedente. Ad esempio, la grammatica seguente restituisce "New York" e "New York York", ma non "New York New York":
+Gli operatori di ripetizione seguono le normali regole di precedenza e si applicano all'elemento di testo immediatamente precedente. Ad esempio, la grammatica seguente determina "New York" e "New York York", ma non "New York New York":
 
 ``` syntax
    "New York+"
 ```
 
-Pertanto, in genere si desidera utilizzare questi operatori con i caratteri di raggruppamento. Ad esempio, la grammatica seguente include sia "New York" sia "New York New York":
+Pertanto, in genere si vogliono usare questi operatori con i caratteri di raggruppamento. Ad esempio, la grammatica seguente include sia "New York" che "New York New York":
 
 ``` syntax
    "(New York)+"
 ```
 
-Gli operatori di ripetizione sono utili quando si desidera comporre una grammatica che includa una sequenza ripetuta, ad esempio un numero di telefono o una specifica di un elenco di elementi:
+Gli operatori di ripetizione sono utili quando si vuole comporre una grammatica che include una sequenza ripetuta, ad esempio un numero di telefono o la specifica di un elenco di elementi:
 
 ``` syntax
    "call (one|two|three|four|five|six|seven|eight|nine|zero|oh)*"
    "I'd like (cheese|pepperoni|pineapple|canadian bacon|mushrooms|and)+"
 ```
 
-Sebbene gli operatori possano essere utilizzati anche con le parentesi quadre (un carattere di raggruppamento facoltativo), in questo modo è possibile ridurre l'efficienza dell'elaborazione della grammatica da parte dell'agente.
+Anche se gli operatori possono essere usati anche con parentesi quadre (un carattere di raggruppamento facoltativo), questa operazione può ridurre l'efficienza dell'elaborazione della grammatica da parte di Agent.
 
-È anche possibile usare i puntini di sospensione (...) per supportare l' *individuazione* di parole, ovvero indicare al motore di riconoscimento vocale di ignorare le parole pronunciate in questa posizione nella frase (talvolta denominata *Garbage* Word). Quando si usano i puntini di sospensione, il motore di riconoscimento vocale riconosce solo parole specifiche nella stringa, indipendentemente dal fatto che vengano pronunciate parole o frasi adiacenti. Se ad esempio si imposta questa proprietà su " \[ ... \] controllare la posta elettronica \[ ... \] "il motore di riconoscimento vocale corrisponde a frasi come" controllare la posta elettronica "o" selezionare la posta elettronica "per questo comando. I puntini di sospensione possono essere usati in qualsiasi punto all'interno di una stringa. Tuttavia, prestare attenzione all'uso di questa tecnica poiché le impostazioni vocali con ellissi possono aumentare il rischio di corrispondenze indesiderate.
+È anche possibile usare i puntini di sospensione (...) per supportare l'avvistamento di parole, ovvero  indicando al motore di riconoscimento vocale di ignorare le parole pronunciate in questa posizione nella frase (talvolta dette parole non usate). Quando si usano i puntini di sospensione, il motore di riconoscimento vocale riconosce solo parole specifiche nella stringa indipendentemente da quando vengono pronunciate con parole o frasi adiacenti. Ad esempio, se si imposta questa proprietà su " \[ ... \] check mail ... " il motore di riconoscimento vocale corrisponderà a frasi come \[ \] "controlla posta" o "controlla la posta per favore" a questo comando. I puntini di sospensione possono essere usati in qualsiasi punto all'interno di una stringa. Tuttavia, prestare attenzione a usare questa tecnica perché le impostazioni vocali con i puntini di sospensione possono aumentare il potenziale di corrispondenze indesiderate.
 
-Quando si definiscono le parole e la grammatica del comando, includere almeno una parola richiesta; ovvero evitare di fornire solo parole facoltative. Assicurarsi inoltre che la parola includa solo parole e lettere pronunciabili. Per i numeri, è preferibile scrivere la parola anziché usare una rappresentazione ambigua. Ad esempio, "345" non è un formato di grammatica valido. Analogamente, anziché "IEEE", utilizzare "I triple E". Omettere anche segni di punteggiatura o simboli. Ad esempio, invece di "The \# $1 10 pizza!", usare "The number 1 10 Dollar pizza". L'inclusione di caratteri o simboli non pronunciabili per un comando può causare la mancata compilazione della grammatica da parte del motore vocale per tutti i comandi. Infine, impostare il parametro Voice come più ragionevolmente possibile da altri comandi vocali definiti dall'utente. Maggiore è la somiglianza tra la grammatica vocale per i comandi, più probabile verrà creato un errore di riconoscimento da parte del motore di riconoscimento vocale. È anche possibile usare i punteggi di confidenza per distinguere meglio tra due comandi che possono avere una grammatica vocale simile o simile.
+Quando si definiscono le parole e la grammatica per il comando, includere almeno una parola necessaria. in altre parole, evitare di specificare solo parole facoltative. Assicurarsi inoltre che la parola includa solo parole e lettere pronunciabili. Per i numeri, è meglio scrivere la parola anziché usare una rappresentazione ambigua. Ad esempio, "345" non è una forma grammaticale buona. Analogamente, invece di "IEEE", usare "I triple E". Omettere anche eventuali segni di punteggiatura o simboli. Ad esempio, anziché "la \# pizza da 1$10!", usare "la pizza numero 10 dollari". Se si includono caratteri o simboli non pronunciabili per un comando, il motore di riconoscimento vocale potrebbe non compilare la grammatica per tutti i comandi. Infine, rendere il parametro voce il più possibile distinto dagli altri comandi vocali definiti. Maggiore è la somiglianza tra la grammatica vocale per i comandi, maggiore è la probabilità che il motore di riconoscimento vocale restituirà un errore di riconoscimento. È anche possibile usare i punteggi di attendibilità per distinguere meglio tra due comandi che possono avere grammatica vocale simile o simile.
 
-È possibile includere nelle parole grammaticali sotto forma di "*\\ pronuncia del testo*", dove "testo" è il testo visualizzato e "Pronuncia" è un testo che chiarisce la pronuncia. Ad esempio, la grammatica "1st \\ First" viene riconosciuta quando l'utente dice "First", ma l'evento del [**comando**](/windows/desktop/lwef/the-command-object) restituirà il testo "1st \\ First". È anche possibile usare IPA (alfabeto fonetico internazionale) per specificare una pronuncia iniziando la pronuncia con un carattere di cancelletto (" \# "), quindi il testo che rappresenta la pronuncia IPA.
+È possibile includere nelle parole grammaticali sotto forma di "*\\ pronuncia* del testo ", dove "testo" è il testo visualizzato e "pronuncia" è il testo che chiarisce la pronuncia. Ad esempio, la grammatica "1st first", verrebbe riconosciuta quando l'utente dice "first", ma l'evento Command restituirà il testo \\ "1st [](/windows/desktop/lwef/the-command-object) \\ first". È anche possibile usare IPA (Alfabeto fonetico internazionale) per specificare una pronuncia iniziando la pronuncia con un carattere cancelletto (" "), quindi il testo che rappresenta la \# pronuncia IPA.
 
-Per i motori di riconoscimento vocale giapponese è possibile definire la grammatica nel formato "*Kana \\ kanji*", riducendo le pronunce alternative e aumentando la precisione. L'ordine è invertito per compatibilità con le versioni precedenti. Questa operazione è particolarmente importante per la pronuncia dei nomi appropriati in kanji. Tuttavia, è possibile passare solo "kanji" senza il kana, nel qual caso il motore deve restare in ascolto di tutte le pronunce accettabili per il kanji. È anche possibile passare solo Kana.
+Per i motori di riconoscimento vocale giapponese, è possibile definire la grammatica nel formato *"kana \\ kanji",* riducendo le pronunce alternative e aumentando l'accuratezza. L'ordinamento viene invertito per garantire la compatibilità con le versioni precedenti. Ciò è particolarmente importante per la pronuncia dei nomi propri in Kanji. Tuttavia, è possibile passare semplicemente "kanji", senza Kana, nel qual caso il motore deve restare in ascolto di tutte le pronunce accettabili per kanji. È anche possibile passare solo Kana.
 
-Ad eccezione degli errori che utilizzano i caratteri di raggruppamento o di ripetizione, l'agente Microsoft non riporterà errori nella grammatica, a meno che il motore non segnali l'errore. Se si passa un testo nella grammatica che non riesce a compilare il motore, ma il motore non viene gestito e restituito come errore, Agent non è in grado di segnalare l'errore. Pertanto, l'applicazione client deve prestare particolare attenzione alla definizione della grammatica per la proprietà [**Voice**](voice-property.md) .
+Fatta eccezione per gli errori che usano i caratteri di formattazione di raggruppamento o ripetizione, Microsoft Agent non segnala errori nella grammatica, a meno che il motore non ne restituirà l'errore. Se si passa testo nella grammatica che il motore non riesce a compilare, ma il motore non gestisce e restituisce come errore, Agent non può segnalare l'errore. Pertanto, l'applicazione client deve prestare attenzione a definire la grammatica per la [**proprietà**](voice-property.md) Voice.
 
 > [!Note]  
-> Le funzionalità di grammatica disponibili possono dipendere dal motore di riconoscimento vocale. Si consiglia di verificare con il fornitore del motore di determinare quali opzioni di grammatica sono supportate. Usare [**SRModeID**](srmodeid-property.md) per usare un motore specifico.
+> Le funzionalità grammaticali disponibili possono dipendere dal motore di riconoscimento vocale. È possibile rivolgersi al fornitore del motore per determinare le opzioni grammaticali supportate. Usare [**SRModeID**](srmodeid-property.md) per usare un motore specifico.
 
- 
+ 
 
-Il funzionamento di questa proprietà dipende dallo stato di riconoscimento vocale del server di Microsoft Agent. Se, ad esempio, il riconoscimento vocale è disabilitato o non è installato, questa funzione non ha alcun effetto immediato. Se il riconoscimento vocale è abilitato durante una sessione, tuttavia, il comando diventerà accessibile quando la relativa applicazione client è di input-attivo.
+Il funzionamento di questa proprietà dipende dallo stato del riconoscimento vocale del server Microsoft Agent. Ad esempio, se il riconoscimento vocale è disabilitato o non installato, questa funzione non ha alcun effetto immediato. Se il riconoscimento vocale è abilitato durante una sessione, tuttavia, il comando diventerà accessibile quando l'applicazione client è attiva per l'input.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommands:: getvoice**](iagentcommands--getvoice.md), [**IAgentCommands:: Caption**](iagentcommands--setcaption.md), [**IAgentCommands:: sevisible**](iagentcommands--setvisible.md)
+[**IAgentCommands::GetVoice**](iagentcommands--getvoice.md), [**IAgentCommands::SetCaption**](iagentcommands--setcaption.md), [**IAgentCommands::SetVisible**](iagentcommands--setvisible.md)
 
 
- 
+ 
 
- 
+ 

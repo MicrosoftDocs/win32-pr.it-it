@@ -1,43 +1,43 @@
 ---
-title: Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento
+title: Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento
 description: I controlli ospitati nella barra dei comandi della barra multifunzione sono soggetti alle regole di layout applicate dal framework della barra multifunzione di Windows e basate su una combinazione di comportamenti predefiniti e modelli di layout (sia definiti dal framework che personalizzati) come dichiarati nel markup della barra multifunzione. Queste regole definiscono i comportamenti di layout adattivi del framework della barra multifunzione che influenzano il modo in cui i controlli nella barra dei comandi si adattano alle varie dimensioni della barra multifunzione in fase di esecuzione.
 ms.assetid: b5869394-3fa9-4817-add9-54487434fc4f
 keywords:
-- Barra multifunzione di Windows, personalizzazione
+- Windows Barra multifunzione, personalizzazione
 - Barra multifunzione, personalizzazione
-- Barra multifunzione di Windows, modelli SizeDefinition
+- Windows Barra multifunzione, modelli SizeDefinition
 - Barra multifunzione, modelli SizeDefinition
-- Barra multifunzione di Windows, modelli personalizzati
+- Windows Barra multifunzione, modelli personalizzati
 - Barra multifunzione, modelli personalizzati
-- personalizzazione della barra multifunzione di Windows
+- personalizzazione della Windows barra multifunzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6576a672aa8c3d328a341370a7568595e988908
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2eff1a9d1b2582d5386ce6ea0e02e20cfb5a806e1aaa4a98529474a756b5a8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933796"
 ---
-# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento
+# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento
 
 I controlli ospitati nella barra dei comandi della barra multifunzione sono soggetti alle regole di layout applicate dal framework della barra multifunzione di Windows e basate su una combinazione di comportamenti predefiniti e modelli di layout (sia definiti dal framework che personalizzati) come dichiarati nel markup della barra multifunzione. Queste regole definiscono i comportamenti di layout adattivi del framework della barra multifunzione che influenzano il modo in cui i controlli nella barra dei comandi si adattano alle varie dimensioni della barra multifunzione in fase di esecuzione.
 
 -   [Introduzione](#introduction)
-    -   [Modelli sizedefinition della barra multifunzione](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
+    -   [Modelli sizeDefinition della barra multifunzione](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
     -   [Modelli personalizzati](#custom-templates)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="introduction"></a>Introduzione
 
-Il layout adattivo, come definito dal framework della barra multifunzione, è la possibilità di tutti i controlli all'interno dell'interfaccia utente della barra multifunzione di modificare dinamicamente l'organizzazione, le dimensioni, il formato e la scala relativa in base alle modifiche apportate alle dimensioni della barra multifunzione in fase di esecuzione.
+Il layout adattivo, come definito dal framework della barra multifunzione, è la possibilità di tutti i controlli all'interno dell'interfaccia utente della barra multifunzione di modificare dinamicamente l'organizzazione, le dimensioni, il formato e la scala relativa in base alle modifiche alle dimensioni della barra multifunzione in fase di esecuzione.
 
-Il framework espone la funzionalità di layout adattivo tramite un set di elementi di markup dedicati alla specifica e alla personalizzazione di vari comportamenti di layout. Una raccolta di modelli, denominata [**SizeDefinitions,**](windowsribbon-element-sizedefinition.md)è definita dal framework, ognuno dei quali supporta vari scenari di controllo e layout. Tuttavia, il framework supporta anche modelli personalizzati se i modelli predefiniti non forniscono l'esperienza dell'interfaccia utente o i layout richiesti da un'applicazione.
+Il framework espone la funzionalità di layout adattivo tramite un set di elementi di markup dedicati alla specifica e alla personalizzazione di vari comportamenti di layout. Una raccolta di modelli, denominata [**SizeDefinitions,**](windowsribbon-element-sizedefinition.md)è definita dal framework, ognuno dei quali supporta vari scenari di controllo e layout. Tuttavia, il framework supporta anche modelli personalizzati se i modelli predefiniti non forniscono l'esperienza o i layout dell'interfaccia utente richiesti da un'applicazione.
 
-Per visualizzare i controlli in un layout preferito con una determinata dimensione della barra multifunzione, sia i modelli predefiniti che i modelli personalizzati funzionano in combinazione con [**l'elemento ScalingPolicy.**](windowsribbon-element-scalingpolicy.md) Questo elemento contiene un manifesto delle preferenze di dimensioni che il framework usa come guida per il rendering della barra multifunzione.
+Per visualizzare i controlli in un layout preferito con una determinata dimensione della barra multifunzione, sia i modelli predefiniti che i modelli personalizzati funzionano in combinazione con [**l'elemento ScalingPolicy.**](windowsribbon-element-scalingpolicy.md) Questo elemento contiene un manifesto delle preferenze di dimensione che il framework usa come guida per il rendering della barra multifunzione.
 
 > [!Note]  
-> Il framework della barra multifunzione fornisce comportamenti di layout predefiniti basati su un set di euristica predefinita per l'organizzazione e la presentazione dei controlli in fase di esecuzione senza la necessità di modelli [**SizeDefinition**](windowsribbon-element-sizedefinition.md) predefiniti. Tuttavia, questa funzionalità è destinata solo a scopo di prototipazione.
+> Il framework della barra multifunzione fornisce comportamenti di layout predefiniti basati su un set di euristiche predefinite per l'organizzazione e la presentazione dei controlli in fase di esecuzione senza la necessità di modelli [**SizeDefinition**](windowsribbon-element-sizedefinition.md) predefiniti. Tuttavia, questa funzionalità è destinata solo a scopo di prototipazione.
 
  
 
@@ -77,13 +77,13 @@ OneButton
 
 Un controllo famiglia di pulsanti.<br/> Sono supportate solo le dimensioni del gruppo large.<br/>
 
-![immagine del modello di definizione delle dimensioni di un pulsante.](images/overviews/sizedefinition-onebutton.png)
+![immagine del modello onebutton sizedefinition.](images/overviews/sizedefinition-onebutton.png)
 
 TwoButtons
 
 Due controlli della famiglia di pulsanti.<br/> Sono supportate solo le dimensioni dei gruppi Large e Medium.<br/>
 
-![immagine del modello di definizione delle dimensioni di grandi dimensioni a due pulsanti.](images/overviews/sizedefinition-twobuttons-large.png)
+![immagine di un modello di definizione delle dimensioni di grandi dimensioni a due pulsanti.](images/overviews/sizedefinition-twobuttons-large.png)
 
 ![Immagine del modello twobuttons medium sizedefinition.](images/overviews/sizedefinition-twobuttons-medium.png)
 
@@ -91,7 +91,7 @@ ThreeButtons
 
 Tre controlli della famiglia di pulsanti.<br/> Sono supportate solo le dimensioni dei gruppi Large e Medium.<br/>
 
-![Immagine di un modello di definizione di dimensioni di grandi dimensioni a tre pulsanti.](images/overviews/sizedefinition-threebuttons-large.png)
+![immagine del modello di definizione di dimensioni di grandi dimensioni a tre pulsanti.](images/overviews/sizedefinition-threebuttons-large.png)
 
 ![Immagine del modello di definizione a tre pulsanti di dimensioni medie.](images/overviews/sizedefinition-threebuttons-medium.png)
 
@@ -121,13 +121,13 @@ Quattro controlli della famiglia di pulsanti.<br/>
 
 ![Immagine del modello fourbuttons medium sizedefinition.](images/overviews/sizedefinition-fourbuttons-medium.png)
 
-![Immagine del modello small sizedefinition a quattro pulsanti.](images/overviews/sizedefinition-fourbuttons-small.png)
+![immagine del modello small sizedefinition a quattro pulsanti.](images/overviews/sizedefinition-fourbuttons-small.png)
 
 FiveButtons
 
 Cinque controlli della famiglia di pulsanti.<br/>
 
-![Immagine di un modello di definizione di dimensioni di grandi dimensioni a cinque pulsanti.](images/overviews/sizedefinition-fivebuttons-large.png)
+![Immagine di un modello di definizione delle dimensioni di dimensioni di cinque pulsanti.](images/overviews/sizedefinition-fivebuttons-large.png)
 
 ![Immagine del modello di definizione di dimensioni medie dei cinque pulsanti.](images/overviews/sizedefinition-fivebuttons-medium.png)
 
@@ -147,9 +147,9 @@ SixButtons
 
 Sei controlli della famiglia di pulsanti.<br/>
 
-![immagine del modello di definizione di dimensioni di grandi dimensioni a sei pulsanti.](images/overviews/sizedefinition-sixbuttons-large.png)
+![immagine del modello di definizione delle dimensioni large di sei pulsanti.](images/overviews/sizedefinition-sixbuttons-large.png)
 
-![immagine del modello sixbuttons medium sizedefinition.](images/overviews/sizedefinition-sixbuttons-medium.png)
+![Immagine del modello sixbuttons medium sizedefinition.](images/overviews/sizedefinition-sixbuttons-medium.png)
 
 ![Immagine del modello small sizedefinition a sei pulsanti.](images/overviews/sizedefinition-sixbuttons-small.png)
 
@@ -161,7 +161,7 @@ Sei controlli della famiglia di pulsanti (presentazione alternativa).<br/>
 
 ![modello sixbuttons-twocolumns medium sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-medium.png)
 
-![Immagine del modello small sizedefinition a sei pulsanti a due colonne.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
+![immagine del modello small sizedefinition a sei pulsanti-due colonne.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
 
 SevenButtons
 
@@ -222,7 +222,7 @@ NineButtons
 
 Nove controlli della famiglia di pulsanti.
 
-![Immagine del modello ninebuttons large sizedefinition.](images/overviews/sizedefinition-ninebuttons-large.png)
+![immagine del modello ninebuttons large sizedefinition.](images/overviews/sizedefinition-ninebuttons-large.png)
 
 ![Immagine del modello ninebuttons medium sizedefinition.](images/overviews/sizedefinition-ninebuttons-medium.png)
 
@@ -375,7 +375,7 @@ L'esempio seguente illustra il markup necessario per visualizzare tutti e 32 gli
 
 ![Immagine del modello buttongroups medium sizedefinition.](images/overviews/sizedefinition-buttongroups-medium.png)
 
-![immagine del modello buttongroups small sizedefinition.](images/overviews/sizedefinition-buttongroups-small.png)
+![Immagine del modello buttongroups small sizedefinition.](images/overviews/sizedefinition-buttongroups-small.png)
 
 ButtonGroupsAndInputs
 
@@ -388,7 +388,7 @@ Sono supportate solo le dimensioni dei gruppi Large e Medium.
 
  
 
-Nell'esempio seguente viene illustrato il markup necessario per visualizzare tutti gli elementi del controllo (obbligatori e facoltativi) con questo modello.
+L'esempio seguente illustra il markup necessario per visualizzare tutti gli elementi del controllo (obbligatori e facoltativi) con questo modello.
 
 
 ```
@@ -621,7 +621,7 @@ L'esempio di codice seguente illustra un modello personalizzato di base riutiliz
 
 Gli esempi di codice seguenti illustrano un modello personalizzato inline di base per un gruppo di quattro pulsanti.
 
-Questa sezione di codice illustra le dichiarazioni command per un gruppo di pulsanti. Qui vengono specificate anche risorse di immagini di grandi e piccole dimensioni.
+Questa sezione di codice illustra le dichiarazioni command per un gruppo di pulsanti. Qui vengono specificate anche le risorse per immagini di grandi e piccole dimensioni.
 
 
 ```XML
@@ -832,7 +832,7 @@ Le immagini seguenti illustrano come vengono applicati i modelli dell'esempio pr
 [**Scalabilità**](windowsribbon-element-scale.md)
 </dt> <dt>
 
-[**Gruppo**](windowsribbon-element-group.md)
+[**Group**](windowsribbon-element-group.md)
 </dt> </dl>
 
  

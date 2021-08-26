@@ -1,7 +1,7 @@
 ---
-description: Carica una risorsa di stringa.
+description: Carica una risorsa stringa.
 ms.assetid: b6606f7a-6fc7-4772-9971-7a7e8c145e6c
-title: Funzione _LoadString
+title: _LoadString funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: 361740a4c900e4aedceea4429e549ea8730a1366
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a4333aa8267a137a7a4ebf7ca0c94d4f4ee7198062ddfb560d2231b30c2d0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911721"
 ---
-# <a name="_loadstring-function"></a>\_LoadString (funzione)
+# <a name="_loadstring-function"></a>\_Funzione LoadString
 
-\[Questa funzione è un wrapper per la funzione **LoadString** . Questa funzione può essere modificata o non disponibile in futuro. Le applicazioni devono chiamare direttamente **LoadString** .\]
+\[Questa funzione è un wrapper sulla **funzione LoadString.** Questa funzione potrebbe essere modificata o non disponibile in futuro. Le applicazioni devono chiamare **direttamente LoadString.**\]
 
-Carica una risorsa di stringa. Vedere [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa).
+Carica una risorsa stringa. Vedere [**LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa).
 
 ## <a name="syntax"></a>Sintassi
 

@@ -1,25 +1,25 @@
 ---
 description: Gli oggetti prestazioni possono definire uno o più contatori.
 ms.assetid: a3a598b2-5623-4472-a814-620c6a003a7e
-title: Recupero dei dati del contatore
+title: Recupero dei dati dei contatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f932408471b23dd413a3b8cece63d533b1ba5426
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19109aac1a4b661e08be7f70418d19355649a0b4fb04e4a9d39fac610068cea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962301"
 ---
-# <a name="retrieving-counter-data"></a>Recupero dei dati del contatore
+# <a name="retrieving-counter-data"></a>Recupero dei dati dei contatori
 
-Gli oggetti prestazioni possono definire uno o più contatori. I dati del contatore per i contatori si trovano nel blocco di memoria del [**\_ \_ blocco del contatore delle prestazioni**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_block) . Il percorso del blocco del contatore all'interno del blocco di oggetti varia a seconda che l'oggetto contenga contatori a istanza singola o più contatori di istanza. Per informazioni dettagliate, vedere [formato dei dati sulle prestazioni](performance-data-format.md).
+Gli oggetti prestazioni possono definire uno o più contatori. I dati dei contatori per i contatori si trovano nel blocco [**di \_ memoria PERF COUNTER \_ BLOCK.**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_block) La posizione del blocco di contatori all'interno del blocco di oggetti dipende dal fatto che l'oggetto contenga contatori a istanza singola o a più istanze. Per informazioni dettagliate, vedere [Formato dei dati sulle prestazioni.](performance-data-format.md)
 
-Usare i membri **CounterOffset** e **CounterSize** della [**definizione del \_ contatore \_ delle prestazioni**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) per accedere ai dati del contatore all'interno del blocco del contatore. Attualmente, i dati del contatore sono limitati ai tipi di dati **DWORD** e **ULONGLONG** (sono gli unici tipi supportati dallo strumento per le prestazioni).
+Usare i membri **CounterOffset** e **CounterSize** di [**PERF \_ COUNTER \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) per accedere ai dati del contatore all'interno del blocco counter. Attualmente, i dati dei contatori sono limitati ai tipi di dati **DWORD** e **ULONGLONG** (questi sono gli unici tipi supportati da Performance Tool).
 
-Il membro **CounterType** della [**\_ \_ definizione del contatore Perf**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) indica le altre informazioni necessarie dall'oggetto prestazioni per poter usare i dati del contatore. Per alcuni contatori, è possibile utilizzare direttamente i dati del contatore, ma per altri potrebbero essere necessarie informazioni di base sul tempo o dati di un altro contatore per calcolare un valore visualizzabile.
+Il **membro CounterType** di [**PERF COUNTER \_ \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) indica quali altre informazioni sono necessarie dall'oggetto prestazioni per usare i dati del contatore. Per alcuni contatori, è possibile utilizzare direttamente i dati del contatore, mentre per altri potrebbero essere necessari dati di base tempo da un altro contatore per calcolare un valore visualizzabile.
 
-Nell'esempio seguente viene illustrato come utilizzare il tipo di contatore per determinare le informazioni necessarie per recuperare i dati sulle prestazioni per un contatore al fine di calcolare un valore del contatore visualizzabile. Per un esempio in cui viene calcolato un valore visualizzabile basato sul tipo di contatore, vedere [calcolo dei valori del contatore](calculating-counter-values.md).
+Nell'esempio seguente viene illustrato come utilizzare il tipo di contatore per determinare le informazioni che è necessario recuperare dai dati sulle prestazioni per un contatore per calcolare un valore del contatore visualizzabile. Per un esempio che calcola un valore visualizzabile in base al tipo di contatore, vedere [Calcolo dei valori del contatore.](calculating-counter-values.md)
 
 
 ```C++

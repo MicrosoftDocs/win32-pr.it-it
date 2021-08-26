@@ -1,17 +1,17 @@
 ---
 description: Genera definizioni C per le tabelle dello spazio dei nomi.
 ms.assetid: 0de06ee1-1291-4f18-9514-cca443a3e300
-title: elemento namespaceDefinitions
+title: Elemento namespaceDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59ff40fb7d0d7209a85c46b50435cb3702e3a59a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e8bbcf13dae671f9a6ddd03f254b601f8cdc77f19d243007e3e2387ab46c724b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897401"
 ---
-# <a name="namespacedefinitions-element"></a>elemento namespaceDefinitions
+# <a name="namespacedefinitions-element"></a>Elemento namespaceDefinitions
 
 Genera definizioni C per le tabelle dello spazio dei nomi.
 
@@ -35,19 +35,19 @@ Non ci sono elementi figlio.
 
 | Elemento                         | Descrizione                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**ﬁle**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
+| [**File**](file.md)<br/> | Restituisce un file dal generatore di codice.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento viene in genere usato nei file di origine C per fornire le tabelle dello spazio dei nomi dichiarate da [**namespaceDeclarations.**](namespacedeclarations.md)
+Questo elemento viene in genere usato nei file di origine C per fornire le tabelle dello spazio dei nomi dichiarate da [**namespaceDeclarations**](namespacedeclarations.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

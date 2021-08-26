@@ -1,19 +1,19 @@
 ---
 description: La proprietà RESUME viene impostata quando si riprende un'installazione sospesa.
 ms.assetid: 79eeadfd-6079-401b-a360-1ce09786e647
-title: RESUME (proprietà)
+title: RESUME - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c41b57bb92b252ebe37e4d631c155f28a86e596
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65e3c17116558a346fe91e2c9c98bba99cd759b4d382488a7b8f08c946dfa053
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979261"
 ---
-# <a name="resume-property"></a>RESUME (proprietà)
+# <a name="resume-property"></a>RESUME - proprietà
 
-La proprietà **Resume** viene impostata quando si riprende un'installazione sospesa. Questa proprietà può determinare il testo da visualizzare nell'interfaccia utente. Ad esempio, quando non è in modalità ripresa, è possibile che venga richiesto all'utente di installare? in modalità ripresa è possibile che all'utente venga richiesto di completare l'installazione.
+La **proprietà RESUME** viene impostata quando si riprende un'installazione sospesa. Questa proprietà può determinare il testo da visualizzare nell'interfaccia utente. Ad esempio, quando non è in modalità di ripresa, all'utente potrebbe essere chiesto "Sei pronto per l'installazione?" mentre è in modalità di ripresa, all'utente potrebbe essere chiesto "Sei pronto per completare l'installazione?".
 
 ## <a name="remarks"></a>Commenti
 
@@ -25,7 +25,7 @@ Per la compatibilità con le versioni precedenti, il programma di installazione 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

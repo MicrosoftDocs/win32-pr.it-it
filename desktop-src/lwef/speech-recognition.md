@@ -4,36 +4,36 @@ description: Riconoscimento vocale
 ms.assetid: cb5ac509-12a4-4ca4-8776-424568cf780d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d5c037ced96c386a5e0baf18eeba258422e0193
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9dd36ea5754d53ceda2761635ecb838fdfb0328617827ca90fc969af915b4ea6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960851"
 ---
 # <a name="speech-recognition"></a>Riconoscimento vocale
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Il riconoscimento vocale fornisce un'interfaccia molto naturale e familiare per interagire con i caratteri. Tuttavia, l'input vocale presenta anche molti problemi. I motori di riconoscimento vocale attualmente funzionano senza parti sostanziali del repertorio di comunicazione vocale umana, ad esempio movimenti, intonazione ed espressioni facciali. Inoltre, la sintesi vocale naturale è in genere non vincolata. È facile per il relatore superare il vocabolario o la *grammatica* corrente del motore. Analogamente, l'ordine di parole o parole può variare in base a qualsiasi richiesta o risposta. Inoltre, i motori di riconoscimento vocale devono spesso occuparsi di grandi variazioni nell'ambiente del relatore. Ad esempio, i rumori di fondo, la qualità del microfono e la posizione possono influenzare la qualità dell'input. Analogamente, le pronunce del relatore diverse o anche le varianti dello stesso altoparlante, ad esempio quando il relatore è a freddo, rendono difficile la conversione dei dati acustici in informazioni di presentazione. Infine, i motori di riconoscimento vocale devono gestire anche parole o frasi simili in un linguaggio, ad esempio "nuovo", "conoscente" e "GNU" o "relitto di una spiaggia interessante" e "riconoscimento vocale".
+Il riconoscimento vocale offre un'interfaccia molto naturale e familiare per l'interazione con i caratteri. Tuttavia, l'input vocale presenta anche molte sfide. I motori vocali attualmente operano senza parti sostanziali del linguaggio di comunicazione vocale umano, ad esempio movimenti, intonazione ed espressioni facciali. Inoltre, la sintesi vocale naturale è in genere illimitata. È facile che il parlante superi il vocabolario corrente, o *grammatica,* del motore. Analogamente, la formulazione o l'ordine delle parole può variare per qualsiasi richiesta o risposta specificata. Inoltre, i motori di riconoscimento vocale devono spesso gestire grandi variazioni nell'ambiente del parlante. Ad esempio, il rumore di fondo, la qualità del microfono e la posizione possono influire sulla qualità dell'input. Analogamente, diverse pronunce del parlante o anche variazioni dello stesso parlante, ad esempio quando il parlante ha un freddo, rendono difficile convertire i dati acustici in comprensione rappresentativa. Infine, i motori di riconoscimento vocale devono anche gestire parole o frasi simili in una lingua, ad esempio "nuovo", "noto" e "gnu" o "distruggere una buona marea" e "riconoscere il parlato".
 
-Il riconoscimento vocale non è sempre il tipo di input migliore per un'attività. A causa della natura del riconoscimento vocale, spesso può essere più lenta rispetto ad altre forme di input. Analogamente alla tastiera, l'input vocale è un'interfaccia insufficiente per puntare, a meno che non venga fornito un tipo di rappresentazione mnemonico. Pertanto, valutare sempre se la voce è l'input più appropriato per un'attività. È consigliabile evitare di usare il riconoscimento vocale come interfaccia esclusiva per qualsiasi attività. Fornire altri modi per accedere a qualsiasi funzionalità di base utilizzando metodi quali il mouse o la tastiera. Inoltre, è possibile sfruttare la natura multimodale dell'uso del riconoscimento vocale nell'interfaccia visiva combinando l'input vocale con informazioni visive che consentono di specificare il contesto e le opzioni.
+Il riconoscimento vocale non è sempre la forma migliore di input per un'attività. A causa della natura del riconoscimento vocale, spesso può essere più lento rispetto ad altre forme di input. Come la tastiera, l'input vocale è un'interfaccia scadente per il puntamento, a meno che non venga fornito un tipo di rappresentazione mnemoica. Pertanto, valutare sempre se la voce è l'input più appropriato per un'attività. È meglio evitare di usare il parlato come interfaccia esclusiva per qualsiasi attività. Fornire altri modi per accedere a qualsiasi funzionalità di base usando metodi come il mouse o la tastiera. Inoltre, sfruttare la natura multimodale dell'uso della voce nell'interfaccia visiva combinando l'input vocale con le informazioni visive che consentono di specificare il contesto e le opzioni.
 
-Infine, il corretto utilizzo dell'input vocale è dovuto solo in parte alla qualità della tecnologia. Anche il riconoscimento umano, che supera qualsiasi tecnologia di riconoscimento corrente, a volte non riesce. Tuttavia, nella comunicazione umana vengono usate strategie che migliorano la probabilità di successo e che forniscono il ripristino degli errori quando si verifica un problema. Pertanto, l'efficacia dell'input vocale dipende anche dalla qualità dell'interfaccia utente che la presenta.
+Infine, l'uso corretto dell'input vocale è dovuto solo in parte alla qualità della tecnologia. Anche il riconoscimento umano, che supera qualsiasi tecnologia di riconoscimento corrente, talvolta non riesce. Tuttavia, nella comunicazione umana vengono usate strategie che migliorano la probabilità di successo e forniscono il ripristino degli errori in caso di problemi. Di conseguenza, l'efficacia dell'input vocale dipende anche dalla qualità dell'interfaccia utente che lo presenta.
 
-Studiare i modelli umani di interazione vocale può essere utile quando si progettano interfacce di sintesi vocale più naturali. La registrazione dei dialoghi vocali umani effettivi per determinati scenari può aiutarti a comprendere meglio i costrutti e i modelli usati, oltre a forme efficaci di feedback e ripristino degli errori. Può aiutare a determinare il vocabolario appropriato da usare (per l'input e l'output). È preferibile progettare un'interfaccia vocale basata sul modo in cui le persone parlano effettivamente di derivarlo semplicemente dall'interfaccia grafica in cui opera.
+Lo studio dei modelli umani di interazione vocale può essere utile quando si progettano interfacce vocali più naturali. La registrazione dei dialoghi vocali umani effettivi per scenari specifici può aiutare a comprendere meglio i costrutti e i modelli usati, nonché le forme efficaci di feedback e ripristino degli errori. Può essere utile per determinare il vocabolario appropriato da usare (per input e output). È meglio progettare un'interfaccia vocale in base al modo in cui le persone parlano piuttosto che derivarla semplicemente dall'interfaccia grafica in cui opera.
 
-Si noti che Microsoft Agent USA Microsoft Speech API (SAPI) per supportare il riconoscimento vocale. Questo consente l'uso di Microsoft Agent con diversi motori compatibili. Sebbene l'agente Microsoft specifichi determinate interfacce di base, i requisiti di prestazioni e la qualità di un motore possono variare.
+Si noti che Microsoft Agent usa Microsoft Speech API (SAPI) per supportare il riconoscimento vocale. In questo modo Microsoft Agent può essere usato con un'ampia gamma di motori compatibili. Anche se Microsoft Agent specifica determinate interfacce di base, i requisiti di prestazioni e la qualità di un motore possono variare.
 
-Il riconoscimento vocale non è l'unico mezzo per supportare interfacce di conversazione. È anche possibile usare l'elaborazione in linguaggio naturale dell'input da tastiera al posto di o in aggiunta alla voce. In tali situazioni, è comunque possibile applicare in genere linee guida per l'input vocale.
+Il riconoscimento vocale non è l'unico mezzo per supportare le interfacce di conversazione. È anche possibile usare l'elaborazione in linguaggio naturale dell'input da tastiera al posto di o in aggiunta alla voce. In queste situazioni, è comunque possibile applicare in genere linee guida per l'input vocale.
 
--   [Ascolta, non solo riconosci](listen--dont-just-recognize.md)
+-   [Ascolto, non solo riconoscimento](listen--dont-just-recognize.md)
 -   [Chiarire e limitare le scelte](clarify-and-limit-choices.md)
--   [Fornire un ripristino corretto degli errori](provide-good-error-recovery.md)
+-   [Fornire un buon ripristino degli errori](provide-good-error-recovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

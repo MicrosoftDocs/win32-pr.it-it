@@ -1,23 +1,23 @@
 ---
-description: Il programma di installazione imposta la proprietà RedirectedDLLSupport se la piattaforma di sistema che esegue l'installazione supporta componenti isolati.
+description: Il programma di installazione imposta la proprietà RedirectedDLLSupport se la piattaforma di sistema che esegue l'installazione supporta Componenti isolati.
 ms.assetid: 703489c4-cac4-442c-bd96-d3927491a864
 title: Proprietà RedirectedDLLSupport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bed308eaf022ada5c6c8697ba47f55605f1fecbd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24da5990645d4c27120c3a010cc517475ba6e706c2fb41d69a024d15ca524549
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119979321"
 ---
 # <a name="redirecteddllsupport-property"></a>Proprietà RedirectedDLLSupport
 
-Il programma di installazione imposta la proprietà **RedirectedDLLSupport** se la piattaforma di sistema che esegue l'installazione supporta [componenti isolati](isolated-components.md).
+Il programma di installazione imposta **la proprietà RedirectedDLLSupport** se la piattaforma di sistema che esegue l'installazione supporta [Componenti isolati](isolated-components.md).
 
-Il programma di installazione imposta la proprietà **RedirectedDLLSupport** su un valore pari a 1 se il sistema che esegue l'installazione supporta [componenti isolati](isolated-components.md) basati su. File locali. Il programma di installazione imposta la proprietà **RedirectedDLLSupport** su un valore pari a 2 Se il sistema che esegue l'installazione supporta l'isolamento tramite. File locali o assembly side-by-side Win32.
+Il programma di installazione imposta la **proprietà RedirectedDLLSupport** su un valore pari a 1 se il sistema che esegue l'installazione supporta [componenti](isolated-components.md) isolati basati su . File LOCAL. Il programma di installazione imposta la **proprietà RedirectedDLLSupport** su un valore pari a 2 se il sistema che esegue l'installazione supporta l'isolamento tramite . File LOCAL o assembly side-by-side Win32.
 
-È possibile utilizzare la proprietà **RedirectedDLLSupport** per condizionare l' [azione IsolateComponents](isolatecomponents-action.md) nella tabella [InstallUISequence](installuisequence-table.md) o [InstallExecuteSequence](installexecutesequence-table.md).
+La **proprietà RedirectedDLLSupport** può essere usata per condizionare l'azione [IsolateComponents](isolatecomponents-action.md) nella tabella [InstallUISequence](installuisequence-table.md) o [InstallExecuteSequence](installexecutesequence-table.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -25,7 +25,7 @@ Il programma di installazione imposta la proprietà **RedirectedDLLSupport** su 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

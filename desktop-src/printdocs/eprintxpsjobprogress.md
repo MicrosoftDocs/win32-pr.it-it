@@ -1,7 +1,7 @@
 ---
-description: Specifica lo spooler attualmente in corso durante l'elaborazione di un processo di stampa XPS.
+description: Specifica le attività attualmente in corso dello spooler durante l'elaborazione di un processo di stampa XPS.
 ms.assetid: 4fa5b749-e4f9-4f08-97b5-e58f82d0b485
-title: Enumerazione EPrintXPSJobProgress (winspool. h)
+title: Enumerazione EPrintXPSJobProgress (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 2a09b55ed72a6276a1a9d224cc08e03546f887d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef3d72d983388c022afbb0e914f87a17587f70b8e175dd57dabcd61d224e93bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949641"
 ---
 # <a name="eprintxpsjobprogress-enumeration"></a>Enumerazione EPrintXPSJobProgress
 
-Specifica lo spooler attualmente in corso durante l'elaborazione di un processo di stampa XPS.
+Specifica le attività attualmente in corso dello spooler durante l'elaborazione di un processo di stampa XPS.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -72,7 +72,7 @@ Un documento fisso sta per essere aggiunto al processo XPS.
 <span id="kFixedDocumentAdded"></span><span id="kfixeddocumentadded"></span><span id="KFIXEDDOCUMENTADDED"></span>**kFixedDocumentAdded**
 </dt> <dd>
 
-Un documento fisso è stato aggiunto al processo XPS.
+È stato aggiunto un documento fisso al processo XPS.
 
 </dd> <dt>
 
@@ -93,14 +93,14 @@ Una pagina sta per essere aggiunta al processo XPS.
 <span id="kResourceAdded"></span><span id="kresourceadded"></span><span id="KRESOURCEADDED"></span>**kResourceAdded**
 </dt> <dd>
 
-Una risorsa è stata aggiunta al processo XPS.
+È stata aggiunta una risorsa al processo XPS.
 
 </dd> <dt>
 
 <span id="kFontAdded"></span><span id="kfontadded"></span><span id="KFONTADDED"></span>**kFontAdded**
 </dt> <dd>
 
-Al processo XPS è stato aggiunto un tipo di carattere.
+È stato aggiunto un tipo di carattere al processo XPS.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Un'immagine è stata aggiunta al processo XPS.
 
 ## <a name="remarks"></a>Commenti
 
-Questa enumerazione viene utilizzata principalmente come parametro per la funzione [**ReportJobProcessingProgress**](reportjobprocessingprogress.md) .
+Questa enumerazione viene utilizzata principalmente come parametro per la [**funzione ReportJobProcessingProgress.**](reportjobprocessingprogress.md)
 
 Questi valori possono fare riferimento alla fase di spooling o di rendering di un processo di stampa.
 
@@ -130,9 +130,9 @@ Questi valori possono fare riferimento alla fase di spooling o di rendering di u
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
 
 
 

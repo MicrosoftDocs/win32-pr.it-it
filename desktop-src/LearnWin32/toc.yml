@@ -7,7 +7,7 @@
           href: introduction-to-windows-programming-in-c--.md
         - name: Preparare l'ambiente di sviluppo
           href: prepare-your-development-environment.md
-        - name: Convenzioni di codifica Windows
+        - name: Windows Convenzioni di scrittura del codice
           href: windows-coding-conventions.md
         - name: Uso delle stringhe
           href: working-with-strings.md
@@ -15,7 +15,7 @@
           href: what-is-a-window-.md
         - name: 'WinMain: punto di ingresso dell''applicazione'
           href: winmain--the-application-entry-point.md
-    - name: Modulo 1. Il primo programma Windows
+    - name: Modulo 1. Il primo Windows programma
       items:
         - name: Panoramica
           href: your-first-windows-program.md
@@ -51,21 +51,21 @@
           href: asking-an-object-for-an-interface.md
         - name: Allocazione di memoria in COM
           href: memory-allocation-in-com.md
-        - name: Procedure di codifica COM
+        - name: Procedure di scrittura del codice COM
           href: com-coding-practices.md
         - name: Gestione degli errori in COM
           href: error-handling-in-com.md
-    - name: Modulo 3. Grafica di Windows
+    - name: Modulo 3. Windows Grafica
       items:
         - name: Panoramica
           href: module-3---windows-graphics.md
-        - name: Panoramica dell'architettura grafica di Windows
+        - name: Panoramica dell'architettura Windows grafica
           href: overview-of-the-windows-graphics-architecture.md
-        - name: Gestione finestre desktop
+        - name: Oggetto Gestione finestre desktop
           href: the-desktop-window-manager.md
-        - name: Modalità mantenuta rispetto alla modalità immediata
+        - name: Modalità mantenuta e modalità immediata
           href: retained-mode-versus-immediate-mode.md
-        - name: Primo programma Direct2D
+        - name: Il primo programma Direct2D
           href: your-first-direct2d-program.md
         - name: 'Destinazioni di rendering, dispositivi e risorse'
           href: render-targets--devices--and-resources.md
@@ -77,19 +77,19 @@
           href: using-color-in-direct2d.md
         - name: Applicazione di trasformazioni in Direct2D
           href: applying-transforms-in-direct2d.md
-        - name: 'Appendice: trasformazioni matrice'
+        - name: 'Appendice: Trasformazioni di matrice'
           href: appendix--matrix-transforms.md
     - name: Modulo 4. Input utente
       items:
         - name: Panoramica
           href: module-4--user-input.md
-        - name: Input del mouse
+        - name: Mouse Input
           href: mouse-input.md
         - name: Risposta ai clic del mouse
           href: mouse-clicks.md
         - name: Spostamento del mouse
           href: mouse-movement.md
-        - name: Operazioni del mouse varie
+        - name: Operazioni varie del mouse
           href: other-mouse-operations.md
         - name: Input da tastiera
           href: keyboard-input.md
@@ -99,21 +99,21 @@
           href: setting-the-cursor-image.md
         - name: 'Input utente: esempio esteso'
           href: user-input--extended-example.md
-    - name: 'Introduzione a Win32: codice di esempio'
+    - name: 'Informazioni di base con Win32: Codice di esempio'
       items:
         - name: Panoramica
           href: learn-to-program-for-windows--sample-code.md
-        - name: Esempio di Hello World Windows
+        - name: Windows Hello Esempio mondiale
           href: windows-hello-world-sample.md
-        - name: Esempio BaseWindow
+        - name: Esempio di BaseWindow
           href: basewindow-sample.md
-        - name: Apri esempio di finestra di dialogo
+        - name: Esempio di finestra di dialogo Apri
           href: open-dialog-box-sample.md
         - name: Esempio di cerchio Direct2D
           href: direct2d-circle-sample.md
-        - name: Esempio di clock Direct2D
+        - name: Esempio di orologio Direct2D
           href: direct2d-clock-sample.md
-        - name: Esempio di cerchio di disegni
+        - name: Esempio di disegno di un cerchio
           href: draw-circle-sample.md
         - name: Esempio di disegno semplice
           href: simple-drawing-sample.md

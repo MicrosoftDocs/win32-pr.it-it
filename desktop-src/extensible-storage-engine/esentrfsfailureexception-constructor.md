@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentRfsFailureException'
+description: Altre informazioni sul costruttore EsentRfsFailureException
 title: Costruttore EsentRfsFailureException
 TOCTitle: 'EsentRfsFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRfsFailureException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 262abf623b34a1e3e640adb588cbe754c4247f79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f43403186e38a96498c69b2a1e264a74f17263fb439043c62b53372a54cae610
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851319"
 ---
 # <a name="esentrfsfailureexception-constructor"></a>Costruttore EsentRfsFailureException
 
 Inizializza una nuova istanza della classe EsentRfsFailureException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentRfsFailureException()
 
 [Membri di EsentRfsFailureException](./esentrfsfailureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

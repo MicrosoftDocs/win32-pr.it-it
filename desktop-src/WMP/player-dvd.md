@@ -1,9 +1,9 @@
 ---
-title: Player. DVD
-description: La proprietà DVD recupera l'oggetto DVD.
+title: Player.dvd
+description: La proprietà dvd recupera l'oggetto DVD.
 ms.assetid: beff9b42-d002-48a9-9345-07eb76dbfb63
 keywords:
-- Windows Player. DVD Media Player
+- Player.dvd Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee4dbec18a83a5716f3ff0923a08d0c8f58cb5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52904e6e495c9546384bffb80d98fd8a9795e2bfc53d007c19a68999478f2a46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901231"
 ---
-# <a name="playerdvd"></a>Player. DVD
+# <a name="playerdvd"></a>Player.dvd
 
-La proprietà **DVD** recupera l'oggetto DVD.
+La **proprietà dvd** recupera l'oggetto DVD.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player* . **DVD** di
+*lettore* . **dvd**
 
 ## <a name="possible-values"></a>Valori possibili
 
@@ -39,7 +39,7 @@ Questa proprietà è un oggetto DVD di sola lettura.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

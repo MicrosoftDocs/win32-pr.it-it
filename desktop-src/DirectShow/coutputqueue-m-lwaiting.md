@@ -1,7 +1,7 @@
 ---
-description: Flag che ha un valore diverso da zero quando il thread è in attesa di un campione.
+description: Flag con valore diverso da zero quando il thread è in attesa di un esempio.
 ms.assetid: bc628f47-fa5b-4742-aed4-351081a61c13
-title: 'Membro COutputQueue:: m_lWaiting (Outputq. h)'
+title: Membro COutputQueue::m_lWaiting (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 854f83901a7f2fce03ffb04dc8417e850cb9bda3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a04feda58a7c4f317ed6bd2112d5a563c5222d7dedbdf34114e6dea5ce04b86b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871542"
 ---
-# <a name="coutputqueuem_lwaiting-member"></a>Membro lWaiting di COutputQueue:: m \_
+# <a name="coutputqueuem_lwaiting-member"></a>Membro COutputQueue::m \_ lWaiting
 
-Flag che ha un valore diverso da zero quando il thread è in attesa di un campione.
+Flag con valore diverso da zero quando il thread è in attesa di un esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ LONG m_lWaiting;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Outputq. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Outputq.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

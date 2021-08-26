@@ -1,9 +1,9 @@
 ---
-title: Metodi TrimCache di ID2D1ImageSourceFromWic (D2d1 \_ 3. h)
+title: Metodi di TrimCache ID2D1ImageSourceFromWic (D2d1 \_ 3.h)
 description: Taglia le aree popolate della cache di origine dell'immagine solo nel rettangolo specificato.
 ms.assetid: 04e6e010-3642-6775-8a95-f20ff0461b09
 keywords:
-- Metodo TrimCache Direct2D
+- Metodi TrimCache Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7555d82ba07af58a4823a14fb67a770b16c8ccbd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c4182804ff65abf4312c377fa513a3cca8b33bd67d617aa71d1cdebe060127c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917521"
 ---
-# <a name="id2d1imagesourcefromwictrimcache-methods"></a>Metodi ID2D1ImageSourceFromWic:: TrimCache
+# <a name="id2d1imagesourcefromwictrimcache-methods"></a>Metodi ID2D1ImageSourceFromWic::TrimCache
 
 Taglia le aree popolate della cache di origine dell'immagine solo nel rettangolo specificato.
 
@@ -29,8 +29,8 @@ Taglia le aree popolate della cache di origine dell'immagine solo nel rettangolo
 
 | Metodo                                                                    | Descrizione                                                                                                   |
 |:--------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| [**TrimCache (D2D1 \_ Rect \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u))  | Questo metodo consente di tagliare le aree popolate della cache di origine dell'immagine solo al rettangolo specificato.<br/> |
-| [**TrimCache (D2D1 \_ Rect \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)) | Questo metodo consente di tagliare le aree popolate della cache di origine dell'immagine solo al rettangolo specificato.<br/> |
+| [**TrimCache (D2D1 \_ RECT \_ U \* )**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u))  | Questo metodo consente di ridurre le aree popolate della cache di origine dell'immagine solo al rettangolo specificato.<br/> |
+| [**TrimCache (D2D1 \_ RECT \_ U&)**](/windows/win32/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)) | Questo metodo consente di ridurre le aree popolate della cache di origine dell'immagine solo al rettangolo specificato.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Taglia le aree popolate della cache di origine dell'immagine solo nel rettangolo
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1 \_ 3. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1 \_ 3.h</dt> </dl> |
 
 
 

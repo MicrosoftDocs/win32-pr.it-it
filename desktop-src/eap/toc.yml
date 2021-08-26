@@ -1,24 +1,24 @@
 - name: Extensible Authentication Protocol
   href: eap-start-page.md
   items:
-    - name: Informazioni su EAP e EAPHost
+    - name: Informazioni su EAP ed EAPHost
       href: about-extenstible-authentication-protocol-and-eaphhost.md
       items:
         - name: Informazioni su EAP
           href: about-extensible-authentication-protocol.md
         - name: Informazioni su EAPHost
           href: about-eaphost.md
-    - name: Uso del protocollo di autenticazione estendibile
+    - name: Uso di Extensible Authentication Protocol
       href: using-extenstible-authentication-protocol.md
       items:
-        - name: Domande frequenti sul protocollo EAP
+        - name: Domande frequenti su EAP
           href: eap-frequently-asked-questions.md
         - name: Installazione EAP
           href: eap-installation.md
           items:
-            - name: Valori del registro di sistema del protocollo di autenticazione
+            - name: Valori del Registro di sistema del protocollo di autenticazione
               href: authentication-protocol-registry-values.md
-            - name: Esempio di valori del registro di sistema
+            - name: Esempio di valori del Registro di sistema
               href: registry-values-example.md
         - name: Autenticazione degli utenti
           href: user-authentication.md
@@ -33,22 +33,22 @@
               href: ras-and-authentication-protocol-interaction-during-authentication.md
             - name: Completamento della sessione di autenticazione
               href: completion-of-the-authentication-session.md
-        - name: Interfaccia utente di configurazione
+        - name: Configurazione Interfaccia utente
           href: configuration-user-interface.md
           items:
-            - name: Interfaccia utente di configurazione di Server-Side
+            - name: Server-Side configuration Interfaccia utente
               href: server-side-configuration-user-interface.md
-            - name: Interfaccia utente di configurazione di Client-Side
+            - name: Client-Side configuration Interfaccia utente
               href: client-side-configuration-user-interface.md
-        - name: Recupero delle informazioni sull'identità
+        - name: Recupero di informazioni di identità
           href: obtaining-identity-information.md
-        - name: Interfaccia utente interattiva
+        - name: Interfaccia Interfaccia utente
           href: interactive-user-interface.md
-        - name: Connessioni a collegamento multiplo e callback
+        - name: Connessioni multilink e callback
           href: multilink-and-callback-connections.md
         - name: Linee guida per la scrittura di DLL EAP
           href: guidelines-for-writing-eap-plug-ins.md
-    - name: Informazioni di riferimento sul protocollo Extensible Authentication
+    - name: Informazioni di riferimento su Extensible Authentication Protocol
       href: extensible-authentication-protocol-reference.md
       items:
         - name: Enumerazioni EAP
@@ -93,7 +93,7 @@
                   href: /windows/desktop/api/Rrascfg/nf-rrascfg-ieapproviderconfig-routerinvokecredentialsui
                 - name: Metodo ServerInvokeConfigUI
                   href: /windows/desktop/api/Rrascfg/nf-rrascfg-ieapproviderconfig-serverinvokeconfigui
-                - name: Uninitialize (metodo)
+                - name: Metodo Uninitialize
                   href: /windows/desktop/api/Rrascfg/nf-rrascfg-ieapproviderconfig-uninitialize
         - name: Strutture EAP
           href: eap-structures.md

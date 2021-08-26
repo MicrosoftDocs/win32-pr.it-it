@@ -4,12 +4,12 @@ description: XInput è un'API che consente alle applicazioni di ricevere input d
 ms.assetid: 0f29a47b-24ed-c0fa-e9e9-8a061619845c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58339616f1e9e3a43529b6853bfc193d359ef11e
-ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
+ms.openlocfilehash: b01484e7c1419dea097ddf440d82a92edb527327f8696afa5f5864fb1b12453b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114373189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926221"
 ---
 # <a name="xinput-and-directinput"></a>XInput e DirectInput
 
@@ -28,7 +28,7 @@ L'uso di XInput rispetto a DirectInput presenta [diversi vantaggi:](/previous-ve
 -   Sia xbox che Windows programmazione useranno gli stessi set di API di base, consentendo alla programmazione di tradurre in modo molto più semplice multipiattaforma
 -   Sarà disponibile un'ampia base installata di controller Xbox
 -   I dispositivi XInput (ovvero i controller Xbox) avranno funzionalità di vibrazione solo quando si usano LE API XInput
--   I controller futuri rilasciati per la console Xbox (ovvero le ruote sterzanti) funzionano anche su Windows
+-   Anche i controller futuri rilasciati per la console Xbox (ovvero le ruote sterzanti) Windows
 
 ### <a name="using-the-xbox-controller-with-directinput"></a>Uso del controller Xbox con DirectInput
 
@@ -36,7 +36,7 @@ Il controller Xbox viene enumerato correttamente in [DirectInput](/previous-vers
 
 -   I pulsanti trigger sinistro e destro fungeranno da singolo pulsante, non in modo indipendente
 -   Gli effetti di vibrazione non saranno disponibili
--   L'esecuzione di query per i dispositivi visori non sarà disponibile
+-   L'esecuzione di query per i dispositivi headset non sarà disponibile
 
 La combinazione dei trigger sinistro e destro in [DirectInput](/previous-versions/windows/desktop/ee416842(v=vs.85)) è di progettazione. I giochi hanno sempre assunto che gli assi del dispositivo DirectInput siano centrati quando non è presente alcuna interazione dell'utente con il dispositivo. Tuttavia, il controller Xbox è stato progettato per registrare il valore minimo, non il centro, quando i trigger non vengono mantenuti. I giochi meno recenti presuppongono quindi l'interazione dell'utente.
 

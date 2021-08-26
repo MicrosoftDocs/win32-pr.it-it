@@ -1,6 +1,6 @@
 ---
-title: Registro float costante (HLSL VS Reference)
-description: Registro di input vertex shader per una costante a virgola mobile a quattro componenti. Impostare un registro costante con def-vs o SetVertexShaderConstantF.
+title: Registro float costante (informazioni di riferimento su Visual Studio HLSL)
+description: Registro di input vertex shader per una costante a virgola mobile a quattro componenti. Impostare un registro costante con def - vs o SetVertexShaderConstantF.
 ms.assetid: 45a14258-52d5-4c22-885f-5af20ae36251
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 856c9567070a071a123b28279342fd9cbbb0f6af
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c81cc05a40ebb7ede53fb14c957584f289a14a15045a2b69f557072c6885c9ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949931"
 ---
-# <a name="constant-float-register-hlsl-vs-reference"></a>Registro float costante (HLSL VS Reference)
+# <a name="constant-float-register-hlsl-vs-reference"></a>Registro float costante (informazioni di riferimento su Visual Studio HLSL)
 
-Registro di input vertex shader per una costante a virgola mobile a quattro componenti. Impostare un registro costante con [def-vs](def---vs.md) o [**SetVertexShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshaderconstantf).
+Registro di input vertex shader per una costante a virgola mobile a quattro componenti. Impostare un registro costante con [def - o](def---vs.md) [**SetVertexShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshaderconstantf).
 
-Il file di registro delle costanti è di sola lettura dal punto di vista del vertex shader. Ogni singola istruzione può accedere a un solo registro costante. Tuttavia, ogni origine in tale istruzione può swizzle in modo indipendente e negare il vettore mentre viene letto.
+Il file di registro costante è di sola lettura dal punto di vista del vertex shader. Qualsiasi istruzione singola può accedere a un solo registro costante. Tuttavia, ogni origine in tale istruzione può swizzle in modo indipendente e negare tale vettore durante la lettura.
 
 Il comportamento delle costanti shader è cambiato tra Direct3D 8 e Direct3D 9.
 
--   Per Direct3D 9, le costanti impostate con DeFX assegnano valori allo spazio costante dello shader. Il ciclo di vita di una costante dichiarata con DeFX è limitato solo all'esecuzione di tale shader. Viceversa, le costanti impostate utilizzando le API SetXXXShaderConstantX inizializzano costanti nello spazio globale. Le costanti nello spazio globale non vengono copiate nello spazio locale (visibile allo shader) finché non viene chiamato SetxxxShaderConstants.
--   Per Direct3D 8, le costanti impostate con DeFX o le API assegnano entrambi valori allo spazio costante dello shader. Ogni volta che viene eseguito lo shader, le costanti vengono utilizzate dallo shader corrente indipendentemente dalla tecnica utilizzata per impostarle.
+-   Per Direct3D 9, le costanti impostate con defx assegnano valori allo spazio costante dello shader. La durata di una costante dichiarata con defx è limitata solo all'esecuzione di tale shader. Al contrario, le costanti impostate usando le API SetXXXShaderConstantX inizializzano le costanti nello spazio globale. Le costanti nello spazio globale non vengono copiate nello spazio locale (visibile allo shader) fino a quando non viene chiamato SetxxxShaderConstants.
+-   Per Direct3D 8, le costanti impostate con defx o le API assegnano entrambi valori allo spazio costante dello shader. Ogni volta che viene eseguito lo shader, le costanti vengono usate dallo shader corrente indipendentemente dalla tecnica usata per impostarli.
 
 Un registro costante viene designato come assoluto o relativo:
 
@@ -37,11 +37,11 @@ c[a0.x + n]    ; relative - supported only in version 1_1
 
 
 
-Il registro costante può essere letto, quindi, usando un indice assoluto o un indice relativo da un registro indirizzi. Le letture dei registri fuori intervallo restituiscono (0,0, 0,0, 0,0, 0,0).
+Il registro costante può essere letto, pertanto, usando un indice assoluto o con un indice relativo da un registro indirizzi. Le operazioni di lettura dai registri non in intervallo restituiscono (0.0, 0.0, 0.0, 0.0).
 
 ## <a name="examples"></a>Esempio
 
-Di seguito è riportato un esempio che dichiara due costanti a virgola mobile all'interno di uno shader.
+Di seguito è riportato un esempio di dichiarazione di due costanti a virgola mobile all'interno di uno shader.
 
 
 ```
@@ -50,9 +50,9 @@ def c40, 0.0f,0.0f,0.0f,0.0f;
 
 
 
-Queste costanti vengono caricate ogni volta che viene chiamato [**SetVertexShader**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader) .
+Queste costanti vengono caricate ogni volta che [**viene chiamato SetVertexShader.**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshader)
 
-Di seguito è riportato un esempio di utilizzo dell'API.
+Di seguito è riportato un esempio di uso dell'API .
 
 
 ```
@@ -79,17 +79,17 @@ Di seguito è riportato un esempio di utilizzo dell'API.
 
 
 
-Se si impostano valori costanti con l'API, non è necessaria alcuna dichiarazione dello shader.
+Se si impostano valori costanti con l'API, non è necessaria alcuna dichiarazione di shader.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
 | Registro costanti      | x    | x    | x     | x    | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -98,6 +98,6 @@ Se si impostano valori costanti con l'API, non è necessaria alcuna dichiarazion
 [Registri vertex shader](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

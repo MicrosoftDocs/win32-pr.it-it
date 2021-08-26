@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo ConnectedTo recupera un puntatore al pin connesso, se disponibile. Questo metodo implementa il metodo IPin:: ConnectedTo.'
+description: Il metodo ConnectedTo recupera un puntatore al pin connesso, se presente. Questo metodo implementa il metodo IPin::ConnectedTo.
 ms.assetid: d8978c9a-e498-4411-a052-f3c2fca570ef
-title: Metodo CBasePin. ConnectedTo (Amfilter. h)
+title: Metodo CBasePin.ConnectedTo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5003154011f93b2b70ddd49dab00dcc1659eb2f5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a37eafe9abf226be20cf5d573abc91bc52ee070e7667dbab3a8799f74022c92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916761"
 ---
-# <a name="cbasepinconnectedto-method"></a>CBasePin. ConnectedTo, metodo
+# <a name="cbasepinconnectedto-method"></a>Metodo CBasePin.ConnectedTo
 
-Il `ConnectedTo` metodo recupera un puntatore al pin connesso, se disponibile. Questo metodo implementa il metodo [**Ipin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) .
+Il `ConnectedTo` metodo recupera un puntatore al pin connesso, se presente. Questo metodo implementa il [**metodo IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,21 +45,21 @@ HRESULT ConnectedTo(
 *ppPin* 
 </dt> <dd>
 
-Indirizzo di una variabile che riceve un puntatore all'interfaccia [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin) dell'altro pin.
+Indirizzo di una variabile che riceve un puntatore [**all'interfaccia IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) dell'altro pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** . I valori possibili includono quelli nella tabella seguente.
+Restituisce un **valore HRESULT.** I valori possibili sono quelli riportati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                           | Descrizione                           |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>             | Argomento puntatore **null** .<br/> |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il PIN non è connesso.<br/>      |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                   |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>             | Argomento del puntatore **NULL.**<br/> |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il pin non è connesso.<br/>      |
 
 
 
@@ -67,7 +67,7 @@ Restituisce un valore **HRESULT** . I valori possibili includono quelli nella ta
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo ha esito positivo, l'interfaccia **Ipin** restituita presenta un conteggio dei riferimenti in attesa. Assicurarsi di rilasciarlo al termine dell'operazione.
+Se il metodo ha esito positivo, **l'interfaccia IPin** restituita ha un conteggio dei riferimenti in sospeso. Al termine, assicurarsi di rilasciarlo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Se il metodo ha esito positivo, l'interfaccia **Ipin** restituita presenta un co
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

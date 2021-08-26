@@ -1,23 +1,23 @@
 ---
-description: Per accedere ad automazione, è necessario che la DLL sia registrata autonomamente. Il ProgId COM utilizzato per creare l'oggetto del programma di installazione è WindowsInstaller. Installer.
+description: Per accedere all'automazione, la DLL deve essere registrata automaticamente. Il ProgId COM usato per creare l'oggetto installer è WindowsInstaller.Installer.
 ms.assetid: 6825c852-6123-4d44-9491-3488cf18db03
 title: Uso dell'interfaccia di automazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f145736a13d0e7c1d0df8bf5560441921b2e472
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95e624b38544f78670e48c8abb389768cdb9c3cdab8745c87f2bfd0f190f3466
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996111"
 ---
 # <a name="using-the-automation-interface"></a>Uso dell'interfaccia di automazione
 
-Per accedere ad automazione, è necessario che la DLL sia registrata autonomamente. Il ProgId COM utilizzato per creare l' [**oggetto del programma di installazione**](installer-object.md) è **WindowsInstaller. Installer**.
+Per accedere all'automazione, la DLL deve essere registrata automaticamente. Il ProgId COM usato per creare l'oggetto [**del programma di**](installer-object.md) installazione è **WindowsInstaller.Installer**.
 
-Per informazioni sull'automazione e sull'accesso alle librerie C++, vedere [informazioni sull'interfaccia di automazione](about-the-automation-interface.md).
+Per informazioni sull'automazione e sull'accesso alle librerie C++, vedere [Informazioni sull'interfaccia di automazione](about-the-automation-interface.md).
 
-Per materiale di riferimento per gli oggetti Windows Installer, vedere informazioni di [riferimento sull'interfaccia di automazione](automation-interface-reference.md).
+Per materiale di riferimento per gli oggetti Windows Installer, vedere Informazioni di riferimento [sull'interfaccia di automazione](automation-interface-reference.md).
 
  
 

@@ -1,19 +1,19 @@
 ---
 description: Si verifica quando uno o più tratti vengono eliminati dalla raccolta InkStrokes.
 ms.assetid: 58d78143-c733-45dc-ae5f-fe13136010db
-title: Evento InkStrokes. StrokesRemoved (Msinkaut. h)
+title: Evento InkStrokes.StrokesRemoved (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86448f9676e07a11effe683ecd883874791ff3b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69a5c4f7d53f88c50efd77e537cfa311f08ab168abdb4a05392286fb6c0b6b4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934861"
 ---
-# <a name="inkstrokesstrokesremoved-event"></a>Evento InkStrokes. StrokesRemoved
+# <a name="inkstrokesstrokesremoved-event"></a>Evento InkStrokes.StrokesRemoved
 
-Si verifica quando uno o più tratti vengono eliminati dalla raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) .
+Si verifica quando uno o più tratti vengono eliminati dalla [raccolta InkStrokes.](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,12 +30,12 @@ void StrokesRemoved(
 
 <dl> <dt>
 
-*StrokeIds* \[ in\]
+*StrokeIds* \[ Pollici\]
 </dt> <dd>
 
-Matrice di interi degli identificatori per ogni oggetto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) eliminato quando si verifica questo evento.
+Matrice di identificatori interi per ogni [**oggetto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) eliminato quando si verifica questo evento.
 
-Per ulteriori informazioni sulla struttura VARIANT, vedere [utilizzo della libreria com](using-the-com-library.md).
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ interfaccia IInkEvents implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ SEStrokesRemoved.
+Questo metodo di evento è definito \_ nell'interfaccia IInkEvents. \_L'interfaccia IInkEvents implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di \_ DISPID SEStrokesRemoved.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ inter
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -67,7 +67,7 @@ Questo metodo di evento è definito nell' \_ interfaccia IInkEvents. L' \_ inter
 [Raccolta InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 </dt> <dt>
 
-[**Rimuovere il metodo \[ InkStrokes collection\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-remove)
+[**Raccolta \[ InkStrokes del metodo Remove\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-remove)
 </dt> <dt>
 
 [**Classe InkDisp**](inkdisp-class.md)

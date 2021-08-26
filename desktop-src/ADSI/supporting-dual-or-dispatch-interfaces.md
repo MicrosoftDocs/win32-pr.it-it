@@ -1,28 +1,28 @@
 ---
 title: Supporto di interfacce duali o dispatch
-description: Analogamente all'interfaccia dispatch, tutte le interfacce duali devono ereditare da IDispatch, che delega tutte le relative funzioni IDispatch (GetIDsOfNames, Invoke, GetTypeInfo, GetTypeInfoCount) al IDispatch di Aggregator (ADSI).
+description: Analogamente all'interfaccia dispatch, tutte le interfacce duali devono ereditare da IDispatch, che delega tutte le funzioni IDispatch (GetIDsOfNames, Invoke, GetTypeInfo, GetTypeInfoCount) a IDispatch dell'aggregatore (ADSI).
 ms.assetid: abd0fcfc-f45c-4022-af95-60615be0adcc
 ms.tgt_platform: multiple
 keywords:
-- Supporto delle interfacce dual o dispatch ADSI
-- estensioni ADSI, dual o dispatch Interface
-- ADSI ADSI, esempio di codice C/C++, delega di metodi IDispatch a aggregator
+- Supporto di interfacce duali o dispatch ADSI
+- estensioni ADSI, interfacce duali o dispatch
+- ADSI ADSI , codice di esempio C/C++, delega dei metodi IDispatch all'aggregatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 435a4552b364afbf909d04a759e3713ce69befab
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b783e9448926d6d29a27e5fb0db519175f82a9af1935e9f13655db743a946bcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930011"
 ---
 # <a name="supporting-dual-or-dispatch-interfaces"></a>Supporto di interfacce duali o dispatch
 
-Analogamente all'interfaccia dispatch, tutte le interfacce duali devono ereditare da [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch), che delega tutte le relative funzioni **IDispatch** ([**GetIDsOfNames**](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames), [**Invoke**](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke), [**GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo), [**GetTypeInfoCount**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount)) al **IDispatch** di Aggregator (ADSI). Per delegare, un oggetto estensione deve eseguire una query per il **IDispatch** di aggregator, chiamare il metodo aggregator appropriato e rilasciare il puntatore dopo l'utilizzo.
+Analogamente all'interfaccia dispatch, tutte le interfacce duali devono ereditare da [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch), che delega tutte le relative funzioni **IDispatch** ([**GetIDsOfNames**](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames), [**Invoke**](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke), [**GetTypeInfo**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo), [**GetTypeInfoCount**](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount)) a **IDispatch** dell'aggregatore (ADSI). Per delegare, un oggetto di estensione deve eseguire una query **per IDispatch** dell'aggregatore, chiamare il metodo dell'aggregatore appropriato e rilasciare il puntatore dopo l'uso.
 
-Se l'estensione può essere un componente autonomo, verificarne l'aggregazione. In tal caso, reindirizzare le funzioni di invio al [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) di aggregator. in caso contrario, è possibile chiamare l'implementazione interna di **IDispatch** oppure è possibile chiamare l'implementazione di [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
+Se l'estensione può essere un componente autonomo, verificare che sia aggregata. In tal caso, reindirizzare le funzioni di invio [**all'oggetto IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) dell'aggregatore, in caso contrario è possibile chiamare l'implementazione interna di **IDispatch** oppure è possibile chiamare l'implementazione di [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension).
 
-Nell'esempio di codice riportato di seguito viene illustrato come reindirizzare la chiamata [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) a **IDispatch** di aggregator. Questo esempio di codice presuppone che la variabile membro **\_ pOuterUnknown** sia stata inizializzata al puntatore **IUnknown** di aggregator.
+Nell'esempio di codice seguente viene illustrato come reindirizzare la chiamata [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **all'oggetto IDispatch** dell'aggregatore. Questo esempio di codice presuppone che la variabile membro **m \_ pOuterUnknown** sia stata inizializzata sul puntatore **IUnknown** dell'aggregatore.
 
 
 ```C++
@@ -93,8 +93,8 @@ STDMETHODIMP MyExtension::Invoke(DISPID dispidMember, REFIID riid,
 
 
 
-I writer di estensione sono vivamente invitati a supportare interfacce duali anziché interfacce dispatch negli oggetti di estensione. Una doppia interfaccia consente a un client di avere un accesso più veloce, purché l'accesso vtable sia abilitato nel client. Per ulteriori informazioni, vedere [associazione tardiva rispetto all'accesso vtable nel modello di estensione ADSI](late-binding-vs--vtable-access-in-the-adsi-extension-model.md). In base al modello corrente, l'implementazione di interfacce duali non dovrebbe essere più difficile rispetto all'implementazione di interfacce dispatch.
+I writer di estensioni sono fortemente invitati a supportare le interfacce duali anziché le interfacce dispatch nei relativi oggetti di estensione. Una doppia interfaccia consente a un client di avere un accesso più rapido, purché l'accesso vtable sia abilitato nel client. Per altre informazioni, vedere [Associazione tardiva e Accesso Vtable nel modello di estensione ADSI.](late-binding-vs--vtable-access-in-the-adsi-extension-model.md) In base al modello corrente, l'implementazione di interfacce duali non deve essere più difficile rispetto all'implementazione di interfacce dispatch.
 
- 
+ 
 
- 
+ 

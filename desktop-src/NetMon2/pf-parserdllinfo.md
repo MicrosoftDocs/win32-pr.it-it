@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura PF PARSERDLLINFO definisce i parser presenti nella dll del parser.
+description: La struttura PF \_ PARSERDLLINFO definisce i parser che si trovano nella DLL del parser.
 ms.assetid: a7473b58-7767-4224-be3b-e96132d98adf
-title: Struttura PF_PARSERDLLINFO (Netmon. h)
+title: PF_PARSERDLLINFO struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: ab4a3673c567a72cb5d0284a07d5603913e77550
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caaafeb9883ad514366f91f3834354fbd5ac0850400e61594a5307c4533e0960
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962851"
 ---
-# <a name="pf_parserdllinfo-structure"></a>\_Struttura PF PARSERDLLINFO
+# <a name="pf_parserdllinfo-structure"></a>Struttura PF \_ PARSERDLLINFO
 
-La struttura **PF \_ PARSERDLLINFO** definisce i parser presenti nella dll del parser.
+La **struttura PF \_ PARSERDLLINFO** definisce i parser che si trovano nella DLL del parser.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ typedef struct _PF_PARSERDLLINFO {
 
 <dl> <dt>
 
-**nParsers**
+**nParser**
 </dt> <dd>
 
 Numero di parser nella DLL del parser.
@@ -50,23 +50,23 @@ Numero di parser nella DLL del parser.
 **ParserInfo**
 </dt> <dd>
 
-Matrice di strutture [PF \_ PARSERINFO](pf-parserinfo.md) che descrivono ogni parser nella dll del parser.
+Matrice di [strutture PF \_ PARSERINFO](pf-parserinfo.md) che descrivono ogni parser nella DLL del parser.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura **PF \_ PARSERDLLINFO** viene restituita dalla funzione di esportazione [PARSERAUTOINSTALLINFO](parserautoinstallinfo.md) implementata nella dll del parser. La funzione **ParserAutoInstallInfo** identifica il numero di parser nella dll e usa una matrice di strutture [PF \_ PARSERINFO](pf-parserinfo.md) per descrivere ogni parser.
+La **struttura PF \_ PARSERDLLINFO** viene restituita dalla funzione di esportazione [ParserAutoInstallInfo](parserautoinstallinfo.md) implementata nella DLL del parser. La **funzione ParserAutoInstallInfo** identifica il numero di parser nella DLL e usa una matrice di [strutture PF \_ PARSERINFO](pf-parserinfo.md) per descrivere ogni parser.
 
-\_È necessario allocare la struttura PF PARSERDLLINFO usando **HeapAlloc**.
+La struttura PF \_ PARSERDLLINFO deve essere allocata usando **HeapAlloc**.
 
 
 
 | Per informazioni su                                               | Vedere                                                                         |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Quali sono i parser e come funzionano con Network Monitor.        | [Parser](parsers.md)                                                      |
-| I punti di ingresso inclusi nella DLL del parser.               | [Architettura DLL parser](parser-dll-architecture.md)                      |
-| L'implementazione di **ParserAutoInstallInfo**  include un esempio. | [Implementazione di ParserAutoIstallInfo](implementing-parserautoinstallinfo.md) |
+| Che cosa sono i parser e come funzionano con Network Monitor.        | [Parser](parsers.md)                                                      |
+| Punti di ingresso inclusi nella DLL del parser.               | [Architettura della DLL del parser](parser-dll-architecture.md)                      |
+| Come implementare **ParserAutoInstallInfo**  include un esempio. | [Implementazione di ParserAutoIstallInfo](implementing-parserautoinstallinfo.md) |
 
 
 
@@ -80,7 +80,7 @@ La struttura **PF \_ PARSERDLLINFO** viene restituita dalla funzione di esportaz
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

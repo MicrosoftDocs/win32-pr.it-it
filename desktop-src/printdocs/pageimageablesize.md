@@ -4,12 +4,12 @@ ms.assetid: 6b81814f-2d9e-4862-8633-6ba016c11dac
 title: PageImageableSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4e44bc9afe33b87d32b43c93eafc3b6d4ba4b0
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 924c89f304c75863246f266e2c64818ee7ab21c173009a096d32c3d1ac6e178b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948267"
 ---
 # <a name="pageimageablesize"></a>PageImageableSize
 
@@ -84,7 +84,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Property name="psk:PageImageableSize">

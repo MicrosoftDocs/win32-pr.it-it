@@ -1,27 +1,27 @@
 ---
-title: Le API di input Method Manager non sono supportate dall'IME cinese semplificato
-description: Le API di input Method Manager non sono supportate dall'IME cinese semplificato
+title: Le API di Gestione metodi di input non sono supportate dall'IME cinese semplificato
+description: Le API di Gestione metodi di input non sono supportate dall'IME cinese semplificato
 ms.assetid: 829E1920-8A5C-4DBB-A844-72DA75D58B92
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d01d79d569ee7c72508bc217b68bcdf784f0d61
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9d0454df8df722992e321fd7fc6bd745382ea215116b2fd5a7797f2032a9c7e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935411"
 ---
-# <a name="input-method-manager-apis-are-not-supported-by-simplified-chinese-ime"></a>Le API di input Method Manager non sono supportate dall'IME cinese semplificato
+# <a name="input-method-manager-apis-are-not-supported-by-simplified-chinese-ime"></a>Le API di Gestione metodi di input non sono supportate dall'IME cinese semplificato
 
 ## <a name="platforms"></a>Piattaforme
 
-<dl> Client-Windows 8.1  
-Windows Server 2012 R2  
+<dl> Client - Windows 8.1  
+R2 per Windows Server 2012  
 </dl>
 
 ## <a name="description"></a>Descrizione
 
-Le seguenti API del gestore del metodo di input non sono supportate dagli IME cinese semplificato in Windows 8.1:
+Le API di gestione dei metodi di input seguenti non sono supportate dagli IME in cinese semplificato Windows 8.1:
 
 -   Interfaccia IFECommon
 -   Interfaccia IFEDictionary
@@ -32,7 +32,7 @@ Le seguenti API del gestore del metodo di input non sono supportate dagli IME ci
 
 ## <a name="manifestations"></a>Manifestazioni
 
-Le funzioni che usano tali API non funzionano con l'IME cinese semplificato.
+Le funzioni che usano queste API non funzionano con l'IME cinese semplificato.
 
 ## <a name="solution"></a>Soluzione
 
@@ -40,7 +40,7 @@ Le applicazioni devono essere progettate in modo che gli utenti possano completa
 
 ## <a name="resources"></a>Risorse
 
--   [Interfacce di gestione metodi di input](../intl/input-method-manager-interfaces.md)
+-   [Interfacce di Gestione metodi di input](../intl/input-method-manager-interfaces.md)
 -   [IFECommon](/windows/win32/api/msime/nn-msime-ifecommon)
 -   [Interfaccia IFECommon](/windows/win32/api/msime/nn-msime-ifecommon)
 -   [Interfaccia IFEDictionary](/windows/win32/api/msime/nn-msime-ifedictionary)
@@ -50,6 +50,6 @@ Le applicazioni devono essere progettate in modo che gli utenti possano completa
 -   [IimePlugInDictDictionaryList](/windows/win32/api/msimeapi/nn-msimeapi-iimeplugindictdictionarylist)
 -   [IImeSpecifyApplets](/windows/win32/api/imepad/nn-imepad-iimespecifyapplets)
 
- 
+ 
 
- 
+ 

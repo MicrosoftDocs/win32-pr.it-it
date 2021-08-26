@@ -1,27 +1,27 @@
 ---
-description: Impostazione del tipo di supporto di gruppo
+description: Impostazione del tipo di supporto del gruppo
 ms.assetid: 05f0fdcb-74a4-441e-ac3c-d3d2c1dfee80
-title: Impostazione del tipo di supporto di gruppo
+title: Impostazione del tipo di supporto del gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365bd2171100a9d4bcfc48d70dbeb94d8a6639dd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c758e089a4f1240debb14c8159d039380b3473991860fef54470c12c1c00b1e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928181"
 ---
-# <a name="setting-the-group-media-type"></a>Impostazione del tipo di supporto di gruppo
+# <a name="setting-the-group-media-type"></a>Impostazione del tipo di supporto del gruppo
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Tutti i gruppi devono definire un tipo di supporto non compresso, ovvero audio o video. Il tipo di supporto non compresso è il formato che i visualizzatori visualizzano o sentono durante la riproduzione. In genere, l'output finale sarà in formato compresso. Per ulteriori informazioni, vedere [rendering di un progetto](rendering-a-project.md).
+Tutti i gruppi devono definire un tipo di supporto non compresso, audio o video. Il tipo di contenuto multimediale non compresso è il formato visualizzato o riprodotto dai visualizzatori durante la riproduzione. In genere, l'output finale sarà in un formato compresso. Per altre informazioni, vedere [Rendering di un Project](rendering-a-project.md).
 
-Per impostare il formato non compresso, creare una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) e riempirla con il tipo principale, il sottotipo e l'intestazione di formato appropriati. Per video, allocare una struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) per il blocco di formato e impostare la larghezza, l'altezza e la profondità del bit. Per audio, allocare una struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) per il blocco di formato e impostare la frequenza di campionamento, la profondità dei bit e il numero di canali. Se si imposta solo il tipo principale, DES fornisce impostazioni predefinite ragionevoli per gli altri valori. In pratica, è necessario impostare i valori in modo esplicito per controllare l'output.
+Per impostare il formato non compresso, creare una struttura [**AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) e compilarla con il tipo principale, il sottotipo e l'intestazione del formato appropriati. Per i video, allocare [**una struttura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) per il blocco di formato e impostare larghezza, altezza e profondità in bit. Per l'audio, allocare una struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) per il blocco di formato e impostare la frequenza di campionamento, la profondità in bit e il numero di canali. Se si imposta solo il tipo principale, DES fornisce valori predefiniti ragionevoli per gli altri valori. In pratica, è necessario impostare i valori in modo esplicito per controllare l'output.
 
-Dopo aver inizializzato la struttura del tipo di supporto, chiamare il metodo [**IAMTimelineGroup:: SetMediaType**](iamtimelinegroup-setmediatype.md) per impostare il tipo di supporto per il gruppo.
+Dopo aver inizializzato la struttura del tipo di supporto, chiamare il metodo [**IAMTimelineGroup::SetMediaType**](iamtimelinegroup-setmediatype.md) per impostare il tipo di supporto per il gruppo.
 
-Nell'esempio seguente vengono specificati i video RGB a 16 bit, 320 pixel in larghezza per 240 pixel di altezza:
+L'esempio seguente specifica un video RGB a 16 bit, con una larghezza di 320 pixel per 240 pixel di altezza:
 
 
 ```C++
@@ -62,7 +62,7 @@ CoTaskMemFree(mtGroup.pbFormat);
 
 
 
-Nell'esempio seguente viene specificato un gruppo audio, impostando il tipo di supporto di gruppo su stereo a 16 bit, 44100 campioni al secondo:
+L'esempio seguente specifica un gruppo audio, impostando il tipo di supporto del gruppo su stereo a 16 bit, 44100 campioni al secondo:
 
 
 ```C++
@@ -97,16 +97,16 @@ CoTaskMemFree(mt.pbFormat);
 
 
 
-È anche possibile usare la classe [**CMediaType**](cmediatype.md) nelle [classi base di DirectShow](directshow-base-classes.md) per gestire i tipi di supporto. Contiene alcuni metodi helper utili e rilascia automaticamente il blocco di formato.
+È anche possibile usare la [**classe CMediaType**](cmediatype.md) nella classe [DirectShow base per](directshow-base-classes.md) gestire i tipi di supporti. Contiene alcuni metodi helper utili e rilascia automaticamente il blocco di formato.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni sui tipi di supporto](about-media-types.md)
+[Informazioni sui tipi di supporti](about-media-types.md)
 </dt> <dt>
 
-[Creazione di una sequenza temporale](constructing-a-timeline.md)
+[Costruzione di una sequenza temporale](constructing-a-timeline.md)
 </dt> </dl>
 
  

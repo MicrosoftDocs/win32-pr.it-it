@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d6775f41a6e2ae7e45bac642fcd32b8deaec3fda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8d6d4427ca2419660cb7faa82ea197e1bdd2a5e0c2ade1935a7d79abd3ebdfaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870371"
 ---
 # <a name="msvm_collectedvirtualsystems-class"></a>Classe Msvm \_ CollectedVirtualSystems
 
@@ -89,7 +89,7 @@ Oggetto [**Msvm \_ ComputerSystem**](msvm-computersystem.md) contenente i membri
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

@@ -1,6 +1,6 @@
 ---
-title: WaveReadLaneFirst (funzione)
-description: Restituisce il valore dell'espressione per la corsia attiva dell'onda corrente con l'indice più piccolo.
+title: Funzione WaveReadLaneFirst
+description: Restituisce il valore dell'espressione per la corsia attiva dell'ondata corrente con l'indice più piccolo.
 ms.assetid: 89CA4FD5-4573-42ED-88D3-01C79C69FF6F
 keywords:
 - Funzione WaveReadLaneFirst HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 04d10e5439b8cd653f7c0a37d3a951167561f964
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 7b7b8e22cb17db4bdb2d692dc003baf63a6c6836c7d1a05a67444d254940e342
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104976887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948911"
 ---
-# <a name="wavereadlanefirst-function"></a>WaveReadLaneFirst (funzione)
+# <a name="wavereadlanefirst-function"></a>Funzione WaveReadLaneFirst
 
-Restituisce il valore dell'espressione per la corsia attiva dell'onda corrente con l'indice più piccolo.
+Restituisce il valore dell'espressione per la corsia attiva dell'ondata corrente con l'indice più piccolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Restituisce il valore dell'espressione per la corsia attiva dell'onda corrente c
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione da valutare.
@@ -45,11 +45,11 @@ Espressione da valutare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore risultante è uniforme nell'onda.
+Il valore risultante è uniforme sull'onda.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -59,7 +59,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

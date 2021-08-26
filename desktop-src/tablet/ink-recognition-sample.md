@@ -1,21 +1,21 @@
 ---
-description: Questa applicazione illustra come è possibile compilare un'applicazione di riconoscimento della grafia. Windows Vista SDK fornisce anche le versioni di questo esempio in C \# e Visual Basic .NET.
+description: Questa applicazione illustra come creare un'applicazione di riconoscimento della grafia. L Windows Vista SDK fornisce anche le versioni di questo esempio in C \# e Visual Basic .NET.
 ms.assetid: 4b3fc078-731e-4263-8e95-2c273d69a457
-title: Esempio di riconoscimento dell'input penna
+title: Esempio di riconoscimento input penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30d97d9d15ef64a3d7a1fe1fc5d45b3cb0454ba7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c151c92c9f407461c34ecffb015af179e57b5c9ed4735b36f70c9a4d26c78088
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119935121"
 ---
-# <a name="ink-recognition-sample"></a>Esempio di riconoscimento dell'input penna
+# <a name="ink-recognition-sample"></a>Esempio di riconoscimento input penna
 
-Questa applicazione illustra come è possibile compilare un'applicazione di riconoscimento della grafia. Windows Vista SDK fornisce anche le versioni di questo esempio in C \# e Visual Basic .NET. Questo argomento si riferisce all'esempio Visual Basic .NET, ma i concetti sono gli stessi tra le versioni.
+Questa applicazione illustra come creare un'applicazione di riconoscimento della grafia. L Windows Vista SDK fornisce anche le versioni di questo esempio in C \# e Visual Basic .NET. In questo argomento si fa riferimento Visual Basic'esempio .NET, ma i concetti sono gli stessi tra le versioni.
 
-## <a name="access-the-tablet-pc-interfaces"></a>Accedere alle interfacce di Tablet PC
+## <a name="access-the-tablet-pc-interfaces"></a>Accedere alle interfacce tablet PC
 
 Per prima cosa, fare riferimento all'API Tablet PC, che viene installata con l'SDK.
 
@@ -27,9 +27,9 @@ Imports Microsoft.Ink
 
 
 
-## <a name="initialize-the-inkcollector"></a>Inizializzare l'oggetto InkCollector
+## <a name="initialize-the-inkcollector"></a>Inizializzare InkCollector
 
-Nell'esempio viene aggiunto il codice al gestore dell'evento [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del form che consente di associare l'oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)), InkCollector, alla finestra di gruppo e di abilitare l'oggetto InkCollector.
+L'esempio aggiunge codice al gestore dell'evento [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del form che consente di [associare InkCollector](/previous-versions/ms583683(v=vs.100)), myInkCollector, alla finestra della casella di gruppo e abilitare InkCollector.
 
 
 ```VB
@@ -51,9 +51,9 @@ End Sub
 
 ## <a name="recognize-the-strokes"></a>Riconoscere i tratti
 
-Il gestore dell'evento [Click](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) dell'oggetto [Button](/dotnet/api/system.windows.forms.button?view=netcore-3.1) verifica che l'utente disponga di almeno un riconoscimento installato esaminando la proprietà [count](/previous-versions/ms828521(v=msdn.10)) della raccolta [Recognizers](/previous-versions/ms828520(v=msdn.10)) .
+Il [gestore](/dotnet/api/system.windows.forms.button?view=netcore-3.1) dell'evento Click dell'oggetto [Button](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) verifica che l'utente abbia installato almeno un sistema di riconoscimento esaminando la [proprietà Count](/previous-versions/ms828521(v=msdn.10)) della raccolta [Recognizers.](/previous-versions/ms828520(v=msdn.10))
 
-La proprietà [SelectedText](/previous-versions/windows/) della casella di testo è impostata sulla corrispondenza migliore per i tratti usando il metodo [ToString](/previous-versions/ms827836(v=msdn.10)) nella raccolta [Strokes](/previous-versions/ms552701(v=vs.100)) . Dopo essere stati riconosciuti, i tratti vengono eliminati. Infine, il codice forza il ridisegno dell'area di disegno, deselezionando il codice per un ulteriore utilizzo di input penna.
+La [proprietà SelectedText](/previous-versions/windows/) della casella di testo viene impostata sulla corrispondenza migliore per i tratti usando il [metodo ToString](/previous-versions/ms827836(v=msdn.10)) nella [raccolta Strokes.](/previous-versions/ms552701(v=vs.100)) Dopo che i tratti sono stati riconosciuti, vengono eliminati. Infine, il codice forza il ridisegno dell'area di disegno, cancellando l'area per un ulteriore uso dell'input penna.
 
 
 ```VB
@@ -87,7 +87,7 @@ End Sub
 
 ## <a name="closing-the-form"></a>Chiusura del modulo
 
-Il metodo [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del modulo Elimina l'oggetto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
+Il metodo [Dispose del](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) form elimina l'oggetto [InkCollector.](/previous-versions/ms583683(v=vs.100))
 
  
 

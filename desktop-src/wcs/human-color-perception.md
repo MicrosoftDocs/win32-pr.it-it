@@ -1,11 +1,11 @@
 ---
 title: Percezione del colore umano
-description: La visione umana è resa possibile dalla presenza di celle riservate nell'occhio denominate barre e coni.
+description: La visione umana è resa possibile dalla presenza di celle sensibili alla luce nell'occhio chiamate barre e coni.
 ms.assetid: 41fa627d-8f33-4d55-9856-85d9920a479f
 keywords:
-- Sistema di colori Windows (WCS), visione umana
-- WCS (sistema di colori Windows), visione umana
-- Gestione colori immagine, visione umana
+- Windows Sistema colori (WCS), visione umana
+- WCS (Windows Color System),visione umana
+- gestione dei colori delle immagini, visione umana
 - gestione dei colori, visione umana
 - colori, visione umana
 - percezione del colore umano
@@ -15,18 +15,18 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82270fe50d9e8da3a79b3b187bbc1f010d547736
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 44429efc5d14d6500bc7e098b3bed050d2d9433278d465cea8c2349a54972f4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "106320139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934951"
 ---
 # <a name="human-color-perception"></a>Percezione del colore umano
 
-La visione umana è resa possibile dalla presenza di celle riservate nell'occhio denominate *barre* e *coni*. La ricerca ha dimostrato che le barre non sembrano essere incluse nella percezione del colore negli esseri umani. Nella retina sono disponibili tre tipi diversi di coni. Ogni tipo di cono rileva rosso, verde o blu. Tutti gli altri colori visualizzati dagli utenti sono miscele di questi tre colori. Ad esempio, il bianco viene percepito quando vengono visualizzati approssimativamente gli equivalenti di rosso, verde e blu. Il nero viene visualizzato quando il colore rosso, verde o blu (pochissimo o nessuna luce) viene rilevato dall'occhio. La quantità di colori visualizzati dagli utenti dipende anche dalla forza, dalla concentrazione e dalla posizione della sorgente di luce. Le condizioni di illuminazione possono avere un effetto profondo sulla percezione del colore.
+La visione umana è resa possibile dalla presenza di celle sensibili alla luce nell'occhio *denominate* barre e *coni.* La ricerca ha dimostrato che le barre non sembrano essere coinvolte nella percezione del colore negli esseri umani. Esistono tre diversi tipi di coni nella retina. Ogni tipo di cono rileva il rosso, il verde o il blu. Tutti gli altri colori che gli esseri umani vedono sono combinazioni di questi tre colori. Il bianco, ad esempio, viene percepito quando vengono osservate quantità approssimativamente uguali di rosso, verde e blu. Il nero viene visualizzato quando l'occhio non rileva alcun colore rosso, verde o blu (luce molto piccola o nessuna luce). La quantità di colore visibile agli esseri umani dipende anche dalla forza, dalla concentrazione e dalla posizione della sorgente di luce. Le condizioni di illuminazione possono avere un effetto positivo sulla percezione del colore.
 
-Nei sistemi di imaging, i colori possono essere combinati in modi diversi per produrre un risultato desiderato per l'occhio. I metodi di combinazione usati più di frequente sono basati sui *colori primari additivi* e sui *colori primari sottrattivi*. Tutti i colori possono essere riprodotti usando uno di questi metodi.
+Nei sistemi di creazione dell'immagine i colori possono essere misti in modi diversi per produrre un risultato desiderato per l'occhio. I metodi di combinazione usati più di frequente si basano sui *colori primari additivi* e sui colori *primari sottrattivi.* Tutti i colori possono essere riprodotti usando entrambi i metodi.
 
  
 

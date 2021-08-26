@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione 1394ControllerDevice Win32 mette in correlazione il controller di bus seriale (IEEE 1394 FireWire) ad alta velocità e l' \_ istanza CIM LogicalDevice connessa.
+description: La classe WMI di associazione Win32 1394ControllerDevice mette in relazione il controller del bus seriale ad alta velocità \_ (IEEE 1394 Firewire) e l'istanza CIM \_ LogicalDevice connessa.
 ms.assetid: 327fbced-4637-4402-a06f-6ac352da920c
 ms.tgt_platform: multiple
-title: Classe Win32_1394ControllerDevice
+title: Win32_1394ControllerDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: af3a54db81a388184da148cd411895ebb910de7d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4877c5e1088e2cf801987d2729d02f64075fc73d1d48daba1fc83b20041c1758
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918111"
 ---
-# <a name="win32_1394controllerdevice-class"></a>Win32 \_ 1394ControllerDevice (classe)
+# <a name="win32_1394controllerdevice-class"></a>Classe Win32 \_ 1394ControllerDevice
 
-La [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) dell'associazione **\_ 1394ControllerDevice Win32** mette in correlazione il controller di bus seriale (IEEE 1394 FireWire) ad alta velocità e l'istanza [**CIM \_ LogicalDevice**](cim-logicaldevice.md) connessa. Questo bus seriale offre una connettività migliorata per un'ampia gamma di dispositivi, inclusi i componenti audio o video del consumer, le periferiche di archiviazione, altri computer e dispositivi portatili. IEEE 1394 è stato adottato dal settore dell'elettronica consumer e fornisce un'interfaccia di espansione compatibile con Plug and Play.
+La classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) di associazione **Win32 \_ 1394ControllerDevice** mette in relazione il controller del bus seriale ad alta velocità (IEEE 1394 Firewire) e l'istanza [**CIM \_ LogicalDevice**](cim-logicaldevice.md) connessa. Questo bus seriale offre connettività avanzata per un'ampia gamma di dispositivi, inclusi componenti audio o video consumer, periferiche di archiviazione, altri computer e dispositivi portatili. IEEE 1394 è stato adottato dal settore dell'elettronica di consumo e offre un'Plug and Play di espansione compatibile.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,28 +52,28 @@ class Win32_1394ControllerDevice : CIM_ControlledBy
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ 1394ControllerDevice** presenta questi tipi di membri:
+La **classe Win32 \_ 1394ControllerDevice** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ 1394ControllerDevice** dispone di queste proprietà.
+La **classe Win32 \_ 1394ControllerDevice** ha queste proprietà.
 
 <dl> <dt>
 
 **AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il controller sta attivando o accedendo attivamente al dispositivo. Queste informazioni sono necessarie quando è possibile eseguire il comando o l'accesso a un dispositivo logico tramite più controller.
+Indica se il controller sta attivando o accedendo al dispositivo. Queste informazioni sono necessarie quando un dispositivo logico può essere eseguito da più controller o accedervi.
 
-Questa proprietà viene ereditata da [**CIM \_ ControlledBy**](cim-controlledby.md).
+Questa proprietà viene ereditata da [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 <dt>
 
@@ -109,10 +109,10 @@ Tipo di dati: **Win32 \_ 1394Controller**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| WMI \_ Win32 1394Controller")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ 1394Controller")
 </dt> </dl>
 
-Il riferimento all'attività \_ precedente Win32 1394Controller rappresenta il controller 1394 associato a questo dispositivo.
+Il riferimento precedente a Win32 \_ 1394Controller rappresenta il controller 1394 associato a questo dispositivo.
 
 </dd> <dt>
 
@@ -125,35 +125,35 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| CIM \_ LogicalDevice")
+Qualificatori: [**key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) \| ("CIM CIM \_ LogicalDevice")
 </dt> </dl>
 
-Il \_ riferimento dipendente CIM LogicalDevice rappresenta il \_ LogicalDevice CIM connesso al controller 1394.
+Il riferimento dipendente \_ CIM LogicalDevice rappresenta il dispositivo logico CIM \_ connesso al controller 1394.
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit")
 </dt> </dl>
 
-Quando sono possibili più larghezze di dati del bus o della connessione, questa proprietà definisce quella in uso tra i dispositivi. La larghezza dei dati è specificata in bit. Se la larghezza dei dati non è negoziata o se queste informazioni non sono disponibili o sono importanti per la gestione dei dispositivi, la proprietà deve essere impostata su 0 (zero).
+Quando sono possibili diverse larghezze di bus o dati di connessione, questa proprietà definisce quella in uso tra i dispositivi. La larghezza dei dati è specificata in bit. Se la larghezza dei dati non viene negoziata o se queste informazioni non sono disponibili o importanti per la gestione dei dispositivi, la proprietà deve essere impostata su 0 (zero).
 
-Questa proprietà viene ereditata da [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Questa proprietà viene ereditata da [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -162,51 +162,51 @@ Tipo di accesso: sola lettura
 Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("bit al secondo")
 </dt> </dl>
 
-Quando sono possibili più velocità di connessione o bus, questa proprietà definisce quella usata tra i dispositivi. La velocità è specificata in bit al secondo. Se le velocità di connessione o di bus non vengono negoziate o se queste informazioni non sono disponibili o sono importanti per la gestione dei dispositivi, la proprietà deve essere impostata su 0 (zero).
+Quando sono possibili diverse velocità del bus o della connessione, questa proprietà definisce quella usata tra i dispositivi. La velocità è specificata in bit al secondo. Se la velocità di connessione o bus non viene negoziata o se queste informazioni non sono disponibili o importanti per la gestione dei dispositivi, la proprietà deve essere impostata su 0 (zero).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
-Questa proprietà viene ereditata da [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Questa proprietà viene ereditata da [**CIM \_ DeviceConnection.**](cim-deviceconnection.md)
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di reimpostazioni rigide rilasciate dal controller. Una reimpostazione hardware restituisce il dispositivo alla relativa inizializzazione o allo stato di avvio. Tutte le informazioni sullo stato del dispositivo interno e i dati vengono persi.
+Numero di hard reset emessi dal controller. Un hard reset riporta il dispositivo allo stato di inizializzazione o avvio. Tutte le informazioni e i dati interni sullo stato del dispositivo andranno persi.
 
-Questa proprietà viene ereditata da [**CIM \_ ControlledBy**](cim-controlledby.md).
+Questa proprietà viene ereditata da [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> <dt>
 
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero di reimpostazioni software rilasciate dal controller. Un ripristino soft non cancella completamente i dati e lo stato corrente del dispositivo. La semantica esatta dipende dal dispositivo e dai protocolli e dai meccanismi usati per comunicare con esso.
+Numero di soft reset emessi dal controller. Un soft reset non cancella completamente lo stato e i dati correnti del dispositivo. La semantica esatta dipende dal dispositivo e dai protocolli e dai meccanismi usati per comunicare con esso.
 
-Questa proprietà viene ereditata da [**CIM \_ ControlledBy**](cim-controlledby.md).
+Questa proprietà viene ereditata da [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ 1394ControllerDevice** è derivata da [**CIM \_ ControlledBy**](cim-controlledby.md).
+La **classe Win32 \_ 1394ControllerDevice** è derivata da [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice PowerShell seguente recupera le informazioni sul dispositivo del controller 1394.
+L'esempio di codice di PowerShell seguente recupera le informazioni sul dispositivo controller 1394.
 
 
 ```PowerShell
@@ -253,7 +253,7 @@ foreach ($device in $1394Cont) {
 
 
 
-Nell'esempio di codice precedente vengono restituite le informazioni seguenti:
+L'esempio di codice precedente restituisce le informazioni seguenti:
 
 ``` syntax
 # Win32_1394ControllerDevice WMI Information
@@ -277,7 +277,7 @@ Number of Soft Resets :
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -286,10 +286,10 @@ Number of Soft Resets :
 
 <dl> <dt>
 
-[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+[**CIM \_ ControlledBy**](cim-controlledby.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema informatico](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

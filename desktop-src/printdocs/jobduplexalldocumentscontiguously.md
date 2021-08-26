@@ -4,18 +4,18 @@ ms.assetid: dd24166c-d5e2-420e-8a8c-e1a25728ab2f
 title: JobDuplexAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a8911a4c62644bfc073a2a9c1dcfd67dad536a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ffd5dbb115cf6a8e1775f2d8e74195ff3c1a228a773b94a60d234d0f1c4ff4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948661"
 ---
 # <a name="jobduplexalldocumentscontiguously"></a>JobDuplexAllDocumentsContiguously
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Tutti i documenti nel processo vengono duplex in modo contiguo. JobDuplexAllDocumentsContiguously e DocumentDuplex si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra queste parole chiave.
+Descrive le caratteristiche duplex dell'output. La funzionalità duplex consente la stampa su entrambi i lati del supporto. Tutti i documenti nel processo vengono duplex in modo contiguo. JobDuplexAllDocumentsContiguously e DocumentDuplex si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra queste parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -65,7 +65,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 |------------------------------------|-------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                      | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                           |
-| \_DuplexModeValue\_<br/>     | string<br/> | n/d<br/>        | Automatico, Manuale.<br/>                                                                                                                                                | Definisce la modalità duplex. Il duplex automatico viene eseguito dall'hardware. Il duplex manuale viene eseguito dal software e dall'utente.<br/> |
+| \_DuplexModeValue\_<br/>     | string<br/> | n/d<br/>        | Automatico, Manuale.<br/>                                                                                                                                                | Definisce la modalità duplex. L'esecuzione duplex automatica viene eseguita dall'hardware. Il duplex manuale viene eseguito dal software e dall'utente.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:JobDuplexAllDocumentsContiguously">

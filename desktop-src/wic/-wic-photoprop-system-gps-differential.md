@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. differenziale.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.Differential.
 ms.assetid: 330d1f88-5f54-4e29-b57f-eb7112203e04
-title: Criteri di metadati della foto System. GPS. differenziale
+title: System.GPS.Differential Photo Metadata Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dc3f114683d324a067fe4ce4034e2de5cfc88da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 728df47fd8e6e9748b7208b79444ba8fa257fa49c92587df199441de941f4fdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931801"
 ---
-# <a name="systemgpsdifferential-photo-metadata-policy"></a>Criteri di metadati della foto System. GPS. differenziale
+# <a name="systemgpsdifferential-photo-metadata-policy"></a>System.GPS.Differential Photo Metadata Policy
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. differenziale](../properties/props-system-gps-differential.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.Differential.](../properties/props-system-gps-differential.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_ \_ Differenziale GPS pkey
+Differenziale \_ GPS \_ PKEY
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI2 VT
+Interfaccia utente \_ VT2
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-VT \_ Ui1, VT \_ UI2 e VT \_ UI4 sono tutti accettati.
+VT \_ UI1, VT \_ UI2 e VT \_ UI4 sono tutti accettati.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 30} | ushort      |
+| 1     | /app1/ifd/gps/{ushort=30} | ushort      |
 | 2     | /xmp/exif:GPSDifferential | unicode     |
 
 
@@ -60,7 +60,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 30} | ushort      |
+| 1     | /app1/ifd/gps/{ushort=30} | ushort      |
 | 2     | /xmp/exif:GPSDifferential | unicode     |
 
 
@@ -73,7 +73,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      |
 |-------|---------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 30} |
+| 1     | /app1/ifd/gps/{ushort=30} |
 | 2     | /xmp/exif:gpsdifferential |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 30}          | ushort      |
+| 1     | /ifd/gps/{ushort=30}          | ushort      |
 | 2     | /ifd/xmp/exif:GPSDifferential | unicode     |
 
 
@@ -101,7 +101,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 30}          | ushort      |
+| 1     | /ifd/gps/{ushort=30}          | ushort      |
 | 2     | /ifd/xmp/exif:GPSDifferential | unicode     |
 
 
@@ -114,7 +114,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /IFD/GPS/{ushort = 30}          |
+| 1     | /ifd/gps/{ushort=30}          |
 | 2     | /ifd/xmp/exif:gpsdifferential |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. differenziale](../properties/props-system-gps-differential.md)
+[System.GPS.Differential](../properties/props-system-gps-differential.md)
 </dt> </dl>
 
  

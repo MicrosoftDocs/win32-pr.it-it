@@ -1,9 +1,9 @@
 ---
-title: Metodi AddBezier di ID2D1GeometrySink (D2d1. h)
-description: Crea una curva di Bezier cubica tra il punto corrente e il punto finale specificato e la aggiunge al sink di geometria.
+title: Metodi AddBezier ID2D1GeometrySink (D2d1.h)
+description: Crea una curva di Bézier cubica tra il punto corrente e il punto finale specificato e la aggiunge al sink della geometria.
 ms.assetid: d1e228eb-dac6-485d-b3c9-69b2bd45e531
 keywords:
-- Metodo AddBezier Direct2D
+- Metodi AddBezier Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: b470129350463920583c34bec5f886f60b16485e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5dff3f4a59b592b4820bf6e91f9415da98a0960cf333afc48115f894111d423b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917821"
 ---
-# <a name="id2d1geometrysinkaddbezier-methods"></a>Metodi ID2D1GeometrySink:: AddBezier
+# <a name="id2d1geometrysinkaddbezier-methods"></a>Metodi ID2D1GeometrySink::AddBezier
 
-Crea una curva di Bezier cubica tra il punto corrente e il punto finale specificato e la aggiunge al sink di geometria.
+Crea una curva di Bézier cubica tra il punto corrente e il punto finale specificato e la aggiunge al sink della geometria.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,14 +29,14 @@ Crea una curva di Bezier cubica tra il punto corrente e il punto finale specific
 
 | Metodo                                                                                            | Descrizione                                                                                    |
 |:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**AddBezier ( \_ segmento Bezier D2D1 \_&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Crea una curva di Bézier cubica tra il punto corrente e il punto finale specificato.<br/> |
-| [**AddBezier ( \_ segmento Bezier \_ d2d1 \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Crea una curva di Bezier cubica tra il punto corrente e l'endpoint specificato.<br/>  |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_))  | Crea una curva di Bézier cubica tra il punto corrente e il punto finale specificato.<br/> |
+| [**AddBezier(D2D1 \_ BEZIER \_ SEGMENT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)) | Crea una curva di Bézier cubica tra il punto corrente e l'endpoint specificato.<br/>  |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry), viene recuperato un sink e utilizzato per definire una forma di clessidra. Per l'esempio completo, vedere [How to disegnare and Fill an Complex Shape](how-to-draw-and-fill-a-complex-shape.md).
+L'esempio seguente crea [**un id2D1PathGeometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry)recupera un sink e lo usa per definire una forma a forma di clessidra. Per l'esempio completo, vedere [Come disegnare e riempire una forma complessa.](how-to-draw-and-fill-a-complex-shape.md)
 
 
 ```C++
@@ -98,8 +98,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -1,35 +1,35 @@
 ---
 title: UI_PKEY_CommandType
-description: Identifica la \_ proprietà CommandType pkey dell'interfaccia utente \_ .
+description: Identifica la proprietà \_ CommandType PKEY \_ dell'interfaccia utente.
 ms.assetid: e56d942e-d210-41f9-b603-40d188a2afbb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f283529e93a21751a9e5f77fa42671507a2cf1a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3b30a9ad93623cb4884f16e193618dbc60f1303f664b7f6343dc816db83bd0f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932522"
 ---
-# <a name="ui_pkey_commandtype"></a>Interfaccia utente \_ pkey \_ CommandType
+# <a name="ui_pkey_commandtype"></a>UI \_ PKEY \_ CommandType
 
-Identifica la \_ proprietà CommandType pkey dell'interfaccia utente \_ .
+Identifica la proprietà \_ CommandType PKEY \_ dell'interfaccia utente.
 
 ```
 propertyDescription
-   name = UI_PKEY_CommandType
-   shellPKey = UI_PKEY_CommandType
-   formatID = 00000105-7363-696e-8441798acf5aebb7
-   propID = 105
-   typeInfo
-      type = VT_UI4
+   name = UI_PKEY_CommandType
+   shellPKey = UI_PKEY_CommandType
+   formatID = 00000105-7363-696e-8441798acf5aebb7
+   propID = 105
+   typeInfo
+      type = VT_UI4
 ```
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente \_ pkey \_ CommandType viene utilizzata da un'applicazione per eseguire una query sui tipi di comando in un controllo raccolta.
+Ui \_ PKEY \_ CommandType viene usato da un'applicazione per eseguire query dei tipi di comando in un controllo raccolta.
 
-Il valore della proprietà è dell' [**enumerazione \_ COMMANDTYPE dell'interfaccia utente**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype) .
+Il valore della proprietà deriva [**dall'enumerazione \_ COMMANDTYPE dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype) utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -38,6 +38,6 @@ Il valore della proprietà è dell' [**enumerazione \_ COMMANDTYPE dell'interfac
 [Proprietà della raccolta](windowsribbon-reference-properties-collection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
