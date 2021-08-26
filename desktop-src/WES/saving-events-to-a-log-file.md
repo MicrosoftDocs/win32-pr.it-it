@@ -4,22 +4,22 @@ description: Per salvare gli eventi da un canale in un file di log, chiamare la 
 ms.assetid: 6d71ed15-97e3-4888-b161-c7e31bf3fc6d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3295d8a7a235fbb5fd5857d1b7283e9ca1fbb773
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72a9bfafe5d1d9f75c85db4a0cc21fc3b9ae8d660aa08b542973b5e38b069158
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031961"
 ---
 # <a name="saving-events-to-a-log-file"></a>Salvataggio di eventi in un file di log
 
-Per salvare gli eventi da un canale in un file di log, chiamare la funzione [**EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) o [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) . La funzione [**EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) copia gli eventi nel file di log e li elimina dal canale. La funzione [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) copia inoltre gli eventi nel file di log, ma non li elimina dal canale. Per cancellare un canale, l'utente deve disporre delle autorizzazioni di lettura e cancellazione.
+Per salvare gli eventi da un canale in un file di log, chiamare la [**funzione EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) [**o EvtExportLog.**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) La [**funzione EvtClearLog**](/windows/desktop/api/WinEvt/nf-winevt-evtclearlog) copia gli eventi nel file di log e li elimina dal canale. La [**funzione EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) copia anche gli eventi nel file di log, ma non li elimina dal canale. Per cancellare un canale, l'utente deve disporre delle autorizzazioni lettura e cancellazione.
 
-È possibile eseguire query sugli eventi dal file di log creato. Tuttavia, per eseguire il rendering degli eventi, il provider deve essere registrato nel computer. Per eseguire il rendering degli eventi da un file di log quando il provider non è registrato nel computer, è necessario chiamare [**EvtArchiveExportedLog**](/windows/desktop/api/WinEvt/nf-winevt-evtarchiveexportedlog), che copia le risorse dal provider e le aggiunge al file di log. È quindi possibile copiare il file di log in qualsiasi computer ed eseguire correttamente query ed eseguire il rendering dei relativi eventi.
+È possibile eseguire query sugli eventi dal file di log creato. Tuttavia, per eseguire il rendering degli eventi, il provider deve essere registrato nel computer. Per eseguire il rendering degli eventi da un file di log quando il provider non è registrato nel computer, è necessario chiamare [**EvtArchiveExportedLog**](/windows/desktop/api/WinEvt/nf-winevt-evtarchiveexportedlog), che copia le risorse dal provider e le aggiunge al file di log. È quindi possibile copiare il file di log in qualsiasi computer ed eseguire correttamente query ed eseguire il rendering degli eventi.
 
-Oltre a usare [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) per copiare gli eventi da un canale, è possibile usarlo anche per relog gli eventi da un file di log a un altro file di log. È anche possibile usarlo per unire eventi da più canali se si usa una query XML strutturata, ma non è possibile usarla per unire eventi da più file di log.
+Oltre a usare [**EvtExportLog**](/windows/desktop/api/WinEvt/nf-winevt-evtexportlog) per copiare eventi da un canale, è anche possibile usarlo per registrare nuovamente gli eventi da un file di log a un altro file di log. È inoltre possibile usarlo per unire eventi da più canali se si utilizza una query XML strutturata, ma non è possibile usarla per unire eventi da più file di log.
 
-Nell'esempio seguente viene illustrato come copiare gli eventi da un canale in un file di log. Nell'esempio vengono quindi registrati gli eventi specifici dal file di log appena creato a un nuovo file di log.
+Nell'esempio seguente viene illustrato come copiare eventi da un canale a un file di log. Nell'esempio vengono quindi registrati nuovamente eventi specifici dal file di log appena creato in un nuovo file di log.
 
 
 ```C++
@@ -198,7 +198,7 @@ cleanup:
 
 
 
-Nell'esempio seguente viene illustrato come unire eventi da più canali utilizzando una query XML strutturata. Nell'esempio viene sostituita la routine Main dell'esempio precedente.
+Nell'esempio seguente viene illustrato come unire un evento da più canali usando una query XML strutturata. Nell'esempio viene sostituita la routine principale dell'esempio precedente.
 
 
 ```C++
@@ -232,9 +232,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

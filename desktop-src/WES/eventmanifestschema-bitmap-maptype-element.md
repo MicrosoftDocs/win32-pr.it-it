@@ -1,9 +1,9 @@
 ---
 title: Elemento bitMap (MapType)
-description: Definisce un elenco di coppie nome/valore che mappano valori di bit e valori di stringa.
+description: Definisce un elenco di coppie nome/valore per il mapping di valori di bit e valori stringa.
 ms.assetid: 23e636a1-4945-4515-941a-6a2403167da9
 keywords:
-- EventLog (elemento bitMap)
+- Elemento bitMap EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d06910f3064fd8b51d090dd33e6735e35bd6177
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe64dde4074cd8cab2d091d582a88552eb9c1377a632dc7692a0ab959fe11bff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032381"
 ---
 # <a name="bitmap-maptype-element"></a>Elemento bitMap (MapType)
 
-Definisce un elenco di coppie nome/valore che mappano valori di bit e valori di stringa.
+Definisce un elenco di coppie nome/valore per il mapping di valori di bit e valori stringa.
 
 ``` syntax
 <xs:element name="bitMap"
@@ -30,7 +30,7 @@ Definisce un elenco di coppie nome/valore che mappano valori di bit e valori di 
  />
 ```
 
-L'elemento **bitMap** è definito dal tipo complesso [**MapType**](eventmanifestschema-maptype-complextype.md) .
+**L'elemento bitMap** è definito dal [**tipo complesso MapType.**](eventmanifestschema-maptype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **bitMap** è definito dal tipo complesso [**MapType**](eventmanifest
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **bitMap** è definito dal tipo complesso [**MapType**](eventmanifest
 **Elemento padre**
 </dt> <dt>
 
-[**Mappe (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
+[**maps (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
 </dt> </dl>
 
  

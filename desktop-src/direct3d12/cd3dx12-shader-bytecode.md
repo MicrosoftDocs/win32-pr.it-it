@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_SHADER_BYTECODE (D3dx12. h)
-description: Struttura helper per consentire l'inizializzazione semplificata di una \_ struttura BYTECODE dello shader D3D12 \_ .
+title: CD3DX12_SHADER_BYTECODE struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura BYTECODE D3D12 \_ \_ SHADER.
 ms.assetid: 09CEFCCE-C499-493D-ACDE-806E09995315
 keywords:
-- Struttura CD3DX12_SHADER_BYTECODE
+- CD3DX12_SHADER_BYTECODE struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1227c18913492d6533b08f49f5761fab1b93e97b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5bd984268a8dcd083b2d42573c6fa0028d2b73e7a3daacecd3fefe41c68150db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988370"
 ---
-# <a name="cd3dx12_shader_bytecode-structure"></a>\_ \_ Struttura BYTECODE shader CD3DX12
+# <a name="cd3dx12_shader_bytecode-structure"></a>Struttura CD3DX12 \_ SHADER \_ BYTECODE
 
-Struttura helper per consentire l'inizializzazione semplificata di una struttura [**\_ \_ BYTECODE dello shader D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura \_ \_ BYTECODE D3D12 SHADER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,44 +45,44 @@ struct CD3DX12_SHADER_BYTECODE  : public D3D12_SHADER_BYTECODE{
 
 <dl> <dt>
 
-**\_BYTECODE shader CD3DX12 \_ ()**
+**BYTECODE() DELLO SHADER CD3DX12() \_ \_**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ BYTECODE dello shader CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di un BYTECODE SHADER CD3DX12. \_ \_
 
 </dd> <dt>
 
-**bytecode CD3DX12 \_ shader esplicito \_ (const D3D12 \_ shader \_ bytecode &o)**
+**BYTECODE DELLO SHADER CD3DX12 \_ \_ esplicito(const D3D12 \_ SHADER \_ BYTECODE &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ bytecode dello shader CD3DX12 \_ , inizializzato con il contenuto di un'altra struttura [**\_ \_ bytecode dello shader D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode) .
+Crea una nuova istanza di un BYTECODE CD3DX12 SHADER, inizializzato con il contenuto di un'altra struttura \_ \_ [**\_ \_ BYTECODE D3D12 SHADER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 </dd> <dt>
 
-**\_BYTECODE shader CD3DX12 \_ (ID3DBlob \* pShaderBlob)**
+**CD3DX12 \_ SHADER \_ BYTECODE(ID3DBlob \* pShaderBlob)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ BYTECODE dello shader CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di un BYTECODE SHADER CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
 [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) \* pShaderBlob
 
 </dd> <dt>
 
-**\_BYTECODE shader CD3DX12 \_ (const void \* \_ PShaderBytecode, Size \_ T bytecodeLength)**
+**CD3DX12 \_ SHADER \_ BYTECODE(const void \* \_ pShaderBytecode, SIZE \_ T bytecodeLength)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ BYTECODE dello shader CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di un BYTECODE SHADER CD3DX12, \_ \_ inizializzando i parametri seguenti:
 
 void \* \_ pShaderBytecode
 
-DIMENSIONI \_ T bytecodeLength
+SIZE \_ T bytecodeLength
 
 </dd> <dt>
 
-**operator const D3D12 \_ BYTECODE dello shader \_& () const**
+**operator const D3D12 \_ SHADER \_ BYTECODE&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -100,7 +100,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_BYTECODE shader D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
+[**D3D12 \_ SHADER \_ BYTECODE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

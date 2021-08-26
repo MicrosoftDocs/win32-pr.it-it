@@ -3,9 +3,9 @@ title: Metodo ISearchDesktop ExecuteSQLQuery
 description: Accetta un puntatore a una stringa che contiene una query Structured Query Language (SQL) e i relativi attributi e restituisce un puntatore al set restituito.
 ms.assetid: df3f473b-0bee-4035-abf8-dbe5249ef0ed
 keywords:
-- Funzionalità dell'ambiente Windows legacy del metodo ExecuteSQLQuery
-- Funzionalità dell'ambiente Windows legacy del metodo ExecuteSQLQuery, interfaccia ISearchDesktop
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia ISearchDesktop, metodo ExecuteSQLQuery
+- Metodo ExecuteSQLQuery Funzionalità dell'Windows legacy
+- Metodo ExecuteSQLQuery Legacy Windows Environment Features , interfaccia ISearchDesktop
+- Interfaccia ISearchDesktop Legacy Windows Environment Features , metodo ExecuteSQLQuery
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f0b13ff361d07f99efe1366e2201d610eac10523
-ms.sourcegitcommit: b9a94cea8f83153214af4c09509e1cc61a1bb616
+ms.openlocfilehash: ec436a427958988e7605673b12b3fd8dc6fd3e1a54ab61cc5f542f0494c34923
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "103724012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014291"
 ---
-# <a name="isearchdesktopexecutesqlquery-method"></a>Metodo ISearchDesktop:: ExecuteSQLQuery
+# <a name="isearchdesktopexecutesqlquery-method"></a>Metodo ISearchDesktop::ExecuteSQLQuery
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 Accetta un puntatore a una stringa che contiene una query Structured Query Language (SQL) e i relativi attributi e restituisce un puntatore al set restituito.
 
@@ -34,9 +34,9 @@ Accetta un puntatore a una stringa che contiene una query Structured Query Langu
 
 ```C++
 HRESULT ExecuteSQLQuery(
-  [in]  LPCWSTR *pdwAttributes,
-  [in]  LPCWSTR pwszURL,
-  [out] ppidUrl *ppidUrl
+  [in]  LPCWSTR *pdwAttributes,
+  [in]  LPCWSTR pwszURL,
+  [out] ppidUrl *ppidUrl
 );
 ```
 
@@ -46,25 +46,25 @@ HRESULT ExecuteSQLQuery(
 
 <dl> <dt>
 
-*pdwAttributes* \[ in\]
+*pdwAttributes* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR \***
 
-Stringa contenente gli altri attributi per la query.
+Stringa che contiene gli altri attributi per la query.
 
 </dd> <dt>
 
-*pwszURL* \[ in\]
+*pwszURL* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Stringa che contiene la query SQL.
+Stringa che contiene la SQL query.
 
 </dd> <dt>
 
-*ppidUrl* \[ out\]
+*ppidUrl* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **ppidUrl \***
@@ -77,11 +77,11 @@ Quando questo metodo viene restituito correttamente, contiene un puntatore al re
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
- 
+ 
 
- 
+ 
 
 
 

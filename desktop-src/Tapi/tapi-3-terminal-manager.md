@@ -1,21 +1,21 @@
 ---
-description: TAPI 3 Terminal Manager viene creato da Tapi3.dll su richiesta di un MSP e viene usato dal MSP per attività come la creazione e l'eliminazione di terminali dinamici.
+description: TapI 3 Terminal Manager viene creato da Tapi3.dll su richiesta di un msp e viene usato da MSP per attività quali la creazione e l'eliminazione di terminali dinamici.
 ms.assetid: 4fecbdc3-490d-44dc-bdbc-61a8e2b82d3d
-title: Gestione terminal di TAPI 3
+title: TAPI 3 Terminal Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61735058c4166dfd0d0ff414ad2c49ac41267baa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 767dfbda139c1ed0ffba9c590267a88aeeb5caa2fbf53c3c31ecd51dc5f4bebc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103884797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975511"
 ---
-# <a name="tapi-3-terminal-manager"></a>Gestione terminal di TAPI 3
+# <a name="tapi-3-terminal-manager"></a>TAPI 3 Terminal Manager
 
-TAPI 3 Terminal Manager viene creato da Tapi3.dll su richiesta di un MSP e viene usato dal MSP per attività come la creazione e l'eliminazione di terminali dinamici.
+TapI 3 Terminal Manager viene creato da Tapi3.dll su richiesta di un msp e viene usato da MSP per attività quali la creazione e l'eliminazione di terminali dinamici.
 
-I dettagli di implementazione precisi per i terminali dinamici di un MSP esulano dall'ambito di questa documentazione. Tuttavia, molti autori possono scegliere di usare alcune delle funzionalità di media streaming Terminal (MST). Questo terminale si basa su DirectShow e i filtri specifici per un determinato protocollo possono essere scritti e usati insieme all'MST.
+I dettagli di implementazione precisi per i terminali dinamici di un msp non sono nell'ambito di questa documentazione. Tuttavia, molti autori possono scegliere di usare alcune delle funzionalità del terminale di streaming multimediale (MST). Questo terminale è basato su DirectShow e i filtri specifici di un determinato protocollo possono essere scritti e usati insieme all'MST.
 
  
 

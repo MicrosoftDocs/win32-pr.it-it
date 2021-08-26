@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_GETRANGE (COMmctrl. h)
-description: Recupera le informazioni sui limiti massimo e minimo correnti di un determinato controllo indicatore di stato.
+title: PBM_GETRANGE messaggio (Commctrl.h)
+description: Recupera informazioni sui limiti massimo e minimo correnti di un determinato controllo indicatore di stato.
 ms.assetid: 676b7a37-bdde-4307-9888-9a0cf40db2db
 keywords:
-- Controlli di Windows Message PBM_GETRANGE
+- PBM_GETRANGE controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0c4ffe9365686432a5e78cb1540055f41a838fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 007a62386180e7b47edca201236cd1dacc86df696b5705d02ec1da0acb89761c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986401"
 ---
-# <a name="pbm_getrange-message"></a>Messaggio della gestione della serie di Criteri PBM \_
+# <a name="pbm_getrange-message"></a>Messaggio \_ GETRANGE PBM
 
-Recupera le informazioni sui limiti massimo e minimo correnti di un determinato controllo indicatore di stato.
+Recupera informazioni sui limiti massimo e minimo correnti di un determinato controllo indicatore di stato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Recupera le informazioni sui limiti massimo e minimo correnti di un determinato 
 *wParam* 
 </dt> <dd>
 
-Valore del flag che specifica il valore del limite da utilizzare come valore restituito del messaggio. Questo parametro può essere uno dei valori seguenti:
+Valore del flag che specifica il valore limite da usare come valore restituito del messaggio. Questo parametro può essere uno dei valori seguenti:
 
 
 
 | Valore                                                                                                                                    | Significato                           |
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE * * * *</dt> </dl>    | Restituisce il limite minimo.<br/>  |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE * * * *</dt> </dl> | Restituisce il limite massimo.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE****</dt> </dl>    | Restituisce il limite basso.<br/>  |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE****</dt> </dl> | Restituisce il limite massimo.<br/> |
 
 
 
@@ -50,13 +50,13 @@ Valore del flag che specifica il valore del limite da utilizzare come valore res
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) che deve essere riempita con i limiti massimo e minimo del controllo indicatore di stato. Se questo parametro è impostato su **null**, il controllo restituirà solo il limite specificato da *wParam*.
+Puntatore a [**una struttura PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) che deve essere riempita con i limiti massimo e minimo del controllo indicatore di stato. Se questo parametro è impostato su **NULL,** il controllo restituirà solo il limite specificato da *wParam*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore INT che rappresenta il valore limite specificato da *wParam*. Se *lParam* non è **null**, *lParam* deve puntare a una struttura [**PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) che deve essere riempita con entrambi i valori limite.
+Restituisce un valore INT che rappresenta il valore limite specificato da *wParam.* Se *lParam* non è **NULL,** *lParam* deve puntare a una struttura [**PBRANGE**](/windows/desktop/api/Commctrl/ns-commctrl-pbrange) che deve essere riempita con entrambi i valori limite.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Restituisce un valore INT che rappresenta il valore limite specificato da *wPara
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

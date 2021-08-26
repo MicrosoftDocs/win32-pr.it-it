@@ -1,7 +1,7 @@
 ---
 description: Struttura D3DXSHPRTSPLITMESHVERTDATA
 ms.assetid: 8799a680-bf5f-42cc-91aa-1a6aed164ca5
-title: Struttura D3DXSHPRTSPLITMESHVERTDATA (D3dx9mesh. h)
+title: Struttura D3DXSHPRTSPLITMESHVERTDATA (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 55424929a3d415fc1b89f7a1af53be849cf90185
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc32ee70cd1685351f8cca8860d9d45ab4ea597affed2fbe7cf078d44a8ed437
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027061"
 ---
 # <a name="d3dxshprtsplitmeshvertdata-structure"></a>Struttura D3DXSHPRTSPLITMESHVERTDATA
 
@@ -42,7 +42,7 @@ typedef struct D3DXSHPRTSPLITMESHVERTDATA {
 **uVertRemap**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -53,22 +53,22 @@ Vertice nella mesh originale a cui corrisponde.
 **uSubCluster**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indice del cluster, relativo al Supercluster.
+Indice cluster, relativo al supercluster.
 
 </dd> <dt>
 
 **ucVertStatus**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-1 se il vertice contiene dati validi, 0 se è "full".
+1 se il vertice contiene dati validi, 0 se è "completo".
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Allocato in [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md).
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

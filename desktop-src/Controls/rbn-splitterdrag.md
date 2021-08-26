@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica RBN_SPLITTERDRAG (COMmctrl. h)
-description: Inviato da un controllo Rebar quando l'utente trascina una barra di divisione. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: RBN_SPLITTERDRAG di notifica (Commctrl.h)
+description: Inviato da un controllo Rebar quando l'utente trascina una barra di divisione. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 7827c971-6a92-452f-b961-1abe6ae66d2a
 keywords:
-- Controlli di Windows per il codice di notifica RBN_SPLITTERDRAG
+- RBN_SPLITTERDRAG del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe0b2d3fc00433be9cd3011f2f2b24d515b8cbd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e3de913b5815acbdf8b0a98d8131d0a6f071f157fd5bb78040422b6892d7fe09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984941"
 ---
-# <a name="rbn_splitterdrag-notification-code"></a>\_Codice di notifica SPLITTERDRAG di RBN
+# <a name="rbn_splitterdrag-notification-code"></a>Codice di \_ notifica RBN SPLITTERDRAG
 
-Inviato da un controllo Rebar quando l'utente trascina una barra di divisione. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo Rebar quando l'utente trascina una barra di divisione. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ RBN_SPLITTERDRAG
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMREBARSPLITTER**](/windows/win32/api/commctrl/ns-commctrl-nmrebarsplitter) contenente informazioni sul codice di notifica.
+Puntatore a [**una struttura NMREBARSPLITTER**](/windows/win32/api/commctrl/ns-commctrl-nmrebarsplitter) che contiene informazioni sul codice di notifica.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

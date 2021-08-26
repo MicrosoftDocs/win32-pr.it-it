@@ -1,19 +1,19 @@
 ---
-description: Specifica se un gestore del flusso di byte può utilizzare un flusso di byte aperto per la scrittura da un altro thread.
+description: Specifica se un gestore del flusso di byte può utilizzare un flusso di byte aperto per la scrittura da parte di un altro thread.
 ms.assetid: d9d97880-a563-420c-b598-c3ebd1ae8b74
-title: Attributo MF_BYTESTREAMHANDLER_ACCEPTS_SHARE_WRITE (Mfidl. h)
+title: MF_BYTESTREAMHANDLER_ACCEPTS_SHARE_WRITE attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b46a3402585cbce9c1d1464ceb9fb161527673c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89ea9b6cf1d126fca44066e7d3292227ecf0ce01f3419b377b6d66b67845f990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941031"
 ---
-# <a name="mf_bytestreamhandler_accepts_share_write-attribute"></a>MF \_ BYTESTREAMHANDLER \_ accetta \_ l' \_ attributo Share Write
+# <a name="mf_bytestreamhandler_accepts_share_write-attribute"></a>MF \_ BYTESTREAMHANDLER \_ ACCETTA \_ L'attributo SHARE \_ WRITE
 
-Specifica se un gestore del flusso di byte può utilizzare un flusso di byte aperto per la scrittura da un altro thread.
+Specifica se un gestore del flusso di byte può utilizzare un flusso di byte aperto per la scrittura da parte di un altro thread.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,21 +21,21 @@ Specifica se un gestore del flusso di byte può utilizzare un flusso di byte ape
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-I gestori del flusso di byte possono supportare questo attributo. Per ottenere o impostare l'attributo, eseguire prima una query sul gestore del flusso di byte per l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Chiamare quindi [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) o [**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+I gestori di flussi di byte possono supportare questo attributo. Per ottenere o impostare l'attributo, eseguire prima una query sul gestore del flusso di byte per [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Chiamare quindi [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) o [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 
-Se questo attributo è **true**, significa che il gestore del flusso di byte può leggere da un flusso mentre un altro thread scrive nello stesso flusso. Quando un flusso viene aperto per la scrittura da parte di un altro thread, il metodo [**IMFByteStream:: GetCapabilities**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-getcapabilities) restituisce il flag di **\_ \_ scrittura della condivisione MFBYTESTREAM** .
+Se questo attributo è **TRUE,** significa che il gestore del flusso di byte può leggere da un flusso mentre un altro thread scrive nello stesso flusso. Quando un flusso viene aperto per la scrittura da un altro thread, il metodo [**IMFByteStream::GetCapabilities**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-getcapabilities) restituisce il flag **MFBYTESTREAM \_ SHARE \_ WRITE.**
 
-Questo attributo influiscono sulla risoluzione dell'origine. Se per un flusso di byte è impostato il flag di **\_ \_ scrittura della condivisione MFBYTESTREAM** , il [resolver di origine](source-resolver.md) non passerà il flusso a un gestore del flusso di byte, a meno che il gestore non abbia l' \_ attributo MF BYTESTREAMHANDLER \_ accepts \_ per la scrittura della condivisione \_ impostata su **true**.
+Questo attributo influisce sulla risoluzione dell'origine. Se per un flusso di byte è impostato il flag **MFBYTESTREAM \_ SHARE \_ WRITE,** il [resolver](source-resolver.md) di origine non passerà tale flusso a un gestore del flusso di byte, a meno che il gestore non abbia l'attributo MF \_ BYTESTREAMHANDLER ACCEPTS SHARE WRITE impostato \_ su \_ \_ **TRUE.**
 
-Il flag di **\_ \_ scrittura della condivisione MFBYTESTREAM** è un suggerimento che la lunghezza del flusso potrebbe cambiare durante la lettura da parte del gestore.
+Il flag **MFBYTESTREAM \_ SHARE \_ WRITE** è un hint che indica che la lunghezza del flusso potrebbe cambiare durante la lettura da parte del gestore.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Gestori di schemi e gestori di Byte-Stream](scheme-handlers-and-byte-stream-handlers.md)
+[Gestori di schemi e Byte-Stream schema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> </dl>
 
  

@@ -1,34 +1,34 @@
 ---
-description: Di seguito è riportato un esempio di una tabella di sequenza.
+description: Di seguito è riportato un esempio di tabella di sequenza.
 ms.assetid: 25b3667a-1478-48c4-9c41-4defd25a0103
-title: Esempio dettagliato della tabella Sequence
+title: Esempio dettagliato della tabella sequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4698d5270f2f246fe6e676799ea239e47a950c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bc6e9715850d05231080cd8cd832ac7f39c1e3044628bb307afb51bf92c2210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040191"
 ---
-# <a name="sequence-table-detailed-example"></a>Esempio dettagliato della tabella Sequence
+# <a name="sequence-table-detailed-example"></a>Esempio dettagliato della tabella sequence
 
-Di seguito è riportato un esempio di una tabella di sequenza.
+Di seguito è riportato un esempio di tabella di sequenza.
 
 
 
-| Azione                                          | Condizione                                                       | Sequenza |
+| Azione                                          | Condition                                                       | Sequenza |
 |-------------------------------------------------|-----------------------------------------------------------------|----------|
 | [LaunchConditions](launchconditions-action.md) |                                                                 |          |
-| [AppSearch](appsearch-action.md)               |                                                                 | 200      |
-| [CCPSearch](ccpsearch-action.md)               | \_test CCP                                                       | 300      |
-| CCPDialog                                       | \_ \_ esito negativo del CCP                                               | 400      |
+| [Appsearch](appsearch-action.md)               |                                                                 | 200      |
+| [CCPSearch](ccpsearch-action.md)               | CCP \_ TEST                                                       | 300      |
+| CCPDialog                                       | NOT \_ CCP \_ SUCCESS                                               | 400      |
 | MyCustomConfig                                  | NON [ **installato**](installed.md)                              | 500      |
 | [CostInitialize](costinitialize-action.md)     |                                                                 | 600      |
-| [Filecost](filecost-action.md)                 |                                                                 | 700      |
-| [CostFinalize secondo](costfinalize-action.md)         |                                                                 | 800      |
+| [FileCost](filecost-action.md)                 |                                                                 | 700      |
+| [CostFinalize](costfinalize-action.md)         |                                                                 | 800      |
 | InstallDialog                                   | NON [ **installato**](installed.md)                              | 900      |
-| MaintenanceDialog                               | [**Installazione**](installed.md) completata E non [ **riprendere**](resume.md) | 1000     |
+| Finestra di dialogo Manutenzione                               | [**Installato**](installed.md) AND NOT [ **Resume**](resume.md) | 1000     |
 | ActionDialog                                    |                                                                 | 1100     |
 | [RegisterProduct](registerproduct-action.md)   |                                                                 | 1200     |
 | [InstallValidate](installvalidate-action.md)   |                                                                 | 1300     |
@@ -46,7 +46,7 @@ Le azioni seguenti in questa tabella di sequenza sono definite dal programma di 
 
  
 
-[AppSearch](appsearch-action.md)
+[Appsearch](appsearch-action.md)
 
  
 
@@ -58,11 +58,11 @@ Le azioni seguenti in questa tabella di sequenza sono definite dal programma di 
 
  
 
-[Filecost](filecost-action.md)
+[FileCost](filecost-action.md)
 
  
 
-[CostFinalize secondo](costfinalize-action.md)
+[CostFinalize](costfinalize-action.md)
 
  
 
@@ -80,7 +80,7 @@ Le azioni seguenti in questa tabella di sequenza sono definite dal programma di 
 
 [InstallValidate](installvalidate-action.md)
 
-Le azioni seguenti sono state definite dall'autore della tabella e sono esempi di [azioni personalizzate](custom-actions.md) e devono essere elencate nella [tabella CustomAction](customaction-table.md):
+Le azioni seguenti sono state definite dall'autore [](custom-actions.md) della tabella e sono esempi di azioni personalizzate e devono essere elencate nella [tabella CustomAction](customaction-table.md):
 
 MyCustomConfig
 
@@ -88,7 +88,7 @@ MyCustomConfig
 
 MyCustomAction
 
-Le voci rimanenti nel campo azione sono chiavi esterne nella [tabella della finestra di dialogo](dialog-table.md). Specificano i nomi delle finestre di dialogo che verranno visualizzate se il campo condizione restituisce true.
+Le voci rimanenti nel campo Azione sono chiavi esterne nella [tabella Dialog](dialog-table.md). Specificano i nomi delle finestre di dialogo che verranno visualizzate se il campo della condizione restituisce True.
 
 CCPDialog
 
@@ -98,20 +98,20 @@ InstallDialog
 
  
 
-MaintenanceDialog
+Finestra di dialogo Manutenzione
 
  
 
 ActionDialog
 
-La colonna Condition impedisce al programma di installazione di ignorare l'azione se la proprietà o l'espressione in questo campo è false. La proprietà [**installata**](installed.md) e la proprietà [**Resume**](resume.md) sono esempi di proprietà impostate dal programma di installazione. La proprietà [**installata**](installed.md) è impostata su true se il prodotto è già installato e la proprietà [**Resume**](resume.md) viene impostata in caso di ripresa di un'installazione sospesa. Il \_ test CCP e le \_ proprietà non \_ riuscite CCP sono esempi di proprietà che possono essere impostate dalla riga di comando dall'utente che installa l'applicazione.
+La colonna Condizione fa in modo che il programma di installazione salti l'azione se la proprietà o l'espressione in questo campo è False. La [**proprietà Installed**](installed.md) e la proprietà [**RESUME**](resume.md) sono esempi di proprietà impostate dal programma di installazione. La [**proprietà Installed**](installed.md) è impostata su true se il prodotto è già installato e la proprietà [**RESUME**](resume.md) viene impostata se si riprende un'installazione sospesa. Le proprietà CCP TEST e NOT CCP SUCCESS sono esempi di proprietà che possono essere impostate dalla riga di comando dall'utente che \_ \_ installa \_ l'applicazione.
 
 Tutte le azioni vengono eseguite in sequenza con i passaggi condizionali seguenti:
 
--   CPPSearch viene eseguito solo se \_ è impostato il test CCP.
--   CCPDialog viene eseguito solo se non \_ \_ è stata impostata la funzione CCP riuscita.
--   MaintenanceDialog viene eseguito solo se questo prodotto è già installato e se non si tratta di un'installazione che verrà ripresa dopo essere stata sospesa.
--   MyCustomAction viene eseguito solo se l'espressione nella colonna condizione è true. L'espressione $MyComponent > 2 fa riferimento allo stato dell'azione del componente denominato "componente". Questa condizione indica che MyCustomAction deve essere eseguito solo se il componente è impostato per l'installazione. Per altre informazioni sugli Stati delle azioni e sugli stati di selezione, vedere la proprietà [**FeatureRequestState**](session-featurerequeststate.md) , la [tabella delle funzionalità](feature-table.md)e l' [azione InstallFiles](installfiles-action.md).
+-   CPPSearch viene eseguito solo se CCP \_ TEST è impostato.
+-   CCPDialog viene eseguito solo se l'opzione NOT \_ CCP \_ SUCCESS è impostata.
+-   MaintenanceDialog viene eseguito solo se il prodotto è già installato e se non si tratta di un'installazione ripresa dopo la sospensione.
+-   MyCustomAction viene eseguito solo se l'espressione nella colonna Condizione è True. L'espressione $MyComponent > 2 fa riferimento allo stato dell'azione del componente denominato MyComponent. Questa condizione indica che MyCustomAction deve essere eseguito solo se MyComponent è impostato per l'installazione. Per altre informazioni sugli stati Azione e Selezione, vedere la [**proprietà FeatureRequestState,**](session-featurerequeststate.md) la [tabella Feature](feature-table.md)e l'azione [InstallFiles](installfiles-action.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -120,7 +120,7 @@ Tutte le azioni vengono eseguite in sequenza con i passaggi condizionali seguent
 [Utilizzo delle proprietà](using-properties.md)
 </dt> <dt>
 
-[Sintassi dell'istruzione condizionale](conditional-statement-syntax.md)
+[Sintassi di istruzioni condizionali](conditional-statement-syntax.md)
 </dt> </dl>
 
  

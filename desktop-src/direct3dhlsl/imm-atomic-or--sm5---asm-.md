@@ -1,23 +1,23 @@
 ---
-title: imm_atomic_or (SM5-ASM)
-description: Or atomico immediato bit per bit alla memoria. Restituisce il valore in memoria prima di o.
+title: imm_atomic_or (sm5 - asm)
+description: OR atomico immediato bit per bit in memoria. Restituisce il valore in memoria prima dell'or.
 ms.assetid: 0ACE977D-5D0E-4E9C-A49F-B81D789B0D43
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2bc3b9afd2ba9f4dc63a8fb5c5818c1121c7ec6
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4e4188e8b79cdf4d782ebc926645a4279d08c9682fd0ae254c2ce37c5fbcf46a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982101"
 ---
-# <a name="imm_atomic_or-sm5---asm"></a>IMM \_ Atomic \_ o (SM5-ASM)
+# <a name="imm_atomic_or-sm5---asm"></a>imm \_ atomic \_ o (sm5 - asm)
 
-Or atomico immediato bit per bit alla memoria. Restituisce il valore in memoria prima di o.
+OR atomico immediato bit per bit in memoria. Restituisce il valore in memoria prima dell'or.
 
 
 
-| IMM \_ Atomic \_ o dst0 \[ . Single \_ Component \_ mask \] , DST1, dstAddress \[ . Swizzle \] , src0 \[ . Select \_ Component\] |
+| imm \_ atomic \_ o dst0 \[ .single component mask , \_ \_ \] dst1, dstAddress \[ .swizzle \] , src0 \[ .select \_ component\] |
 |------------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Or atomico immediato bit per bit alla memoria. Restituisce il valore in memoria 
 
 | Elemento                                                                                                           | Descrizione                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                | \[in \] contiene il valore di *DST1* prima di o.<br/>                                                                   |
-| <span id="dst1"></span><span id="DST1"></span>*dst1*<br/>                                                | \[in \] una visualizzazione di accesso non ordinato (UAV) (u \# ). In compute shader questo può essere anche la memoria condivisa del gruppo di thread (g \# ). <br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[nell' \] indirizzo di memoria.<br/>                                                                                             |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | Valore di o con *DST1*.<br/>                                                                                           |
+| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                                | \[in \] Contiene il valore di *dst1* prima di OR.<br/>                                                                   |
+| <span id="dst1"></span><span id="DST1"></span>*dst1*<br/>                                                | \[in \] Una visualizzazione di accesso non ordinato (UAV) (u \# ). Nel compute shader può anche trattarsi di memoria condivisa del gruppo di thread (g \# ). <br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[in \] Indirizzo di memoria.<br/>                                                                                             |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | Valore di OR con *dst1.*<br/>                                                                                           |
 
 
 
@@ -39,29 +39,29 @@ Or atomico immediato bit per bit alla memoria. Restituisce il valore in memoria 
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un singolo componente bit per bit a 32 bit dell'operando *src0* con *DST1* a 32 bit per indirizzo componente *dstAddress*.
+Questa istruzione esegue un singolo componente OR bit per bit dell'operando *src0* con *dst1* a 32 bit per indirizzo componente *dstAddress*.
 
-Se *DST1* è un u \# , potrebbe essere stato dichiarato come RAW, tipizzato o strutturato. Se tipizzata, deve essere dichiarata come UINT/SINT con il formato di risorsa associato R32 \_ uint/ \_ Sint.
+Se *dst1* è un u \# , potrebbe essere stato dichiarato come raw, typed o structured. Se digitato, deve essere dichiarato come UINT/SINT con il formato di risorsa associato R32 \_ \_ UINT/SINT.
 
-Se *DST1* è g \# , deve essere dichiarato come RAW o Structured.
+Se *dst1* è g \# , deve essere dichiarato come non elaborato o strutturato.
 
-Il valore nella memoria *DST1* prima che venga restituito o a *dst0*.
+Valore nella memoria *dst1* prima che OR venga restituito *a dst0*.
 
 L'intera operazione viene eseguita in modo atomico.
 
-Il numero di componenti presi dall'indirizzo è determinato dalla dimensionalità della risorsa dichiarata in *DST1*.
+Il numero di componenti prelevati dall'indirizzo è determinato dalla dimensionalità della risorsa dichiarata in *dst1*.
 
-Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato scartato in precedenza nell'esecuzione o se una chiamata di pixel/campione esiste solo per fungere da helper per un pixel/campione reale per i derivati, questa istruzione non modifica la memoria *DST1* e il valore restituito non è definito.
+Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato eliminato in precedenza durante l'esecuzione o se esiste solo una chiamata pixel/campione per fungere da helper per un pixel/campione reale per i derivati, questa istruzione non modifica affatto la memoria *dst1* e il valore restituito non è definito.
 
-L'indirizzamento fuori dall'indirizzamento su u \# non comporta la scrittura in memoria, tranne nel caso in cui l'u \# sia strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) provochi l'accesso fuori limite, quindi l'intero contenuto del UAV diventa non definito.
+All'interno dei limiti che si indirizzano su u non viene scritto nulla in memoria, tranne se u è strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) causa l'accesso fuori dai limiti, quindi l'intero contenuto dell'UAV diventa \# \# indefinito.
 
-L'indirizzamento fuori limite su u \# o g \# causa la restituzione di un risultato non definito allo shader in *dst0*.
+Se non sono presenti limiti per l'indirizzamento in u o g, viene restituito un risultato non definito \# \# allo shader in *dst0*.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -69,11 +69,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -81,20 +81,20 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -104,7 +104,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

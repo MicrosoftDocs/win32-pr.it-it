@@ -1,52 +1,52 @@
 ---
 title: Thread safety
-description: Tutte le funzioni in questa API sono sicure da chiamare simultaneamente da thread diversi. Tuttavia, ogni oggetto passato come parametro alle funzioni ha un comportamento di threading specifico, come descritto di seguito.
+description: Tutte le funzioni in questa API sono sicure da chiamare contemporaneamente da thread diversi. Tuttavia, ogni oggetto passato come parametro alle funzioni ha un comportamento di threading specifico, come descritto di seguito.
 ms.assetid: 712d6750-884e-421a-8ecf-efcd4ec9b21d
 keywords:
-- Servizi Web di thread safety per Windows
+- Servizi Web thread safety per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fed84cac9634148742c92f1b0d4b4ecdb905ac42
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 25528f3315fcfae95d07d973d4743548eb35ec84bf754fdaafe067bcaccc56f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103734850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054461"
 ---
 # <a name="thread-safety"></a>Thread safety
 
-Tutte le funzioni in questa API sono sicure da chiamare simultaneamente da thread diversi. Tuttavia, ogni oggetto passato come parametro alle funzioni ha un comportamento di threading specifico, come descritto di seguito.
+Tutte le funzioni in questa API sono sicure da chiamare contemporaneamente da thread diversi. Tuttavia, ogni oggetto passato come parametro alle funzioni ha un comportamento di threading specifico, come descritto di seguito.
 
 
-Gli handle seguenti sono a thread singolo e non supportano operazioni simultanee per una particolare istanza:
+Gli handle seguenti sono a thread singolo e non supportano operazioni simultanee per una determinata istanza:
 
--   [\_heap WS](ws-heap.md)
--   [\_messaggio WS](ws-message.md)
--   [\_buffer WS XML \_](ws-xml-buffer.md)
--   [\_lettore XML \_ WS](ws-xml-reader.md)
--   [\_writer XML \_ WS](ws-xml-writer.md)
--   [\_errore WS](ws-error.md)
--   [\_contesto dell'operazione WS \_](ws-operation-context.md)
--   [\_criteri WS](ws-policy.md)
--   [\_metadati WS](ws-metadata.md)
--   [\_token di sicurezza WS \_](ws-security-token.md)
--   [\_contesto di sicurezza WS \_](ws-security-context.md)
+-   [WS \_ HEAP](ws-heap.md)
+-   [MESSAGGIO \_ WS](ws-message.md)
+-   [WS \_ XML \_ BUFFER](ws-xml-buffer.md)
+-   [LETTORE \_ XML WS \_](ws-xml-reader.md)
+-   [WS \_ XML \_ WRITER](ws-xml-writer.md)
+-   [ERRORE \_ WS](ws-error.md)
+-   [CONTESTO \_ DELL'OPERAZIONE WS \_](ws-operation-context.md)
+-   [CRITERI \_ WS](ws-policy.md)
+-   [METADATI \_ WS](ws-metadata.md)
+-   [TOKEN DI SICUREZZA WS \_ \_](ws-security-token.md)
+-   [CONTESTO DI \_ SICUREZZA WS \_](ws-security-context.md)
 
-Gli handle seguenti sono a thread libero e supportano operazioni simultanee per una particolare istanza:
+Gli handle seguenti sono a thread libero e supportano operazioni simultanee per una determinata istanza:
 
--   [\_canale WS](ws-channel.md)
--   [\_listener WS](ws-listener.md)
--   [\_host del servizio WS \_](ws-service-host.md)
--   [\_proxy servizio \_ WS](ws-service-proxy.md)
+-   [CANALE \_ WS](ws-channel.md)
+-   [WS \_ LISTENER](ws-listener.md)
+-   [HOST DEL SERVIZIO WS \_ \_](ws-service-host.md)
+-   [PROXY DEL SERVIZIO WS \_ \_](ws-service-proxy.md)
 
-Per tutti questi handle, il Threading viene definito in termini di operazioni (non chiamate di funzione). Un'operazione è definita diversamente per le funzioni richiamate in modo sincrono rispetto alle funzioni richiamate in modo asincrono
+Per tutti questi handle, il threading è definito in termini di operazioni (non chiamate di funzione). Un'operazione viene definita in modo diverso per le funzioni richiamate in modo sincrono rispetto alle funzioni richiamate in modo asincrono:
 
 -   Per le funzioni richiamate in modo sincrono, l'operazione è in sospeso durante l'esecuzione della funzione.
--   Per le funzioni richiamate in modo asincrono, se la funzione restituisce un codice restituito diverso da **WS \_ S \_ Async** , l'operazione è in sospeso durante l'esecuzione della funzione. Se la funzione restituisce **WS \_ S \_ Async** , tuttavia, l'operazione è in sospeso fino a quando non viene richiamato il [**\_ \_ callback di WS asincrono**](/windows/desktop/api/WebServices/nc-webservices-ws_async_callback) . Per ulteriori informazioni sulla chiamata di funzioni in modo asincrono, vedere l'argomento relativo al [modello asincrono](asynchronous-model.md) . Per i codici di errore, vedere [valori restituiti dei servizi Web Windows](windows-web-services-return-values.md).
+-   Per le funzioni richiamate in modo asincrono, se la funzione restituisce un codice restituito diverso da **WS \_ S \_ ASYNC,** l'operazione è in sospeso durante l'esecuzione della funzione. Se la funzione restituisce **WS \_ S \_ ASYNC,** tuttavia, l'operazione è in sospeso fino a quando non viene richiamato [**WS \_ ASYNC \_ CALLBACK.**](/windows/desktop/api/WebServices/nc-webservices-ws_async_callback) Per altre informazioni sulla chiamata asincrona delle funzioni, vedere [l'argomento Modello asincrono.](asynchronous-model.md) Per i codici di errore, [vedere Windows valori restituiti dei servizi Web.](windows-web-services-return-values.md)
 
-Il mancato completamento del contratto di threading per un oggetto comporterà un comportamento indefinito.
+La mancata esecuzione del contratto di threading per un oggetto comporta un comportamento non definito.
 
  
 

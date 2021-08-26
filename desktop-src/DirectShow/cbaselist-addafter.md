@@ -1,7 +1,7 @@
 ---
 description: Il metodo AddAfter inserisce un elenco dopo la posizione specificata.
 ms.assetid: c2a2e599-0a83-4eb0-aceb-c483f153ba7e
-title: Metodo CBaseList. AddAfter (Wxlist. h)
+title: Metodo CBaseList.AddAfter (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4fdab54a124986b462e0ef592bba888e27c09b53
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28351e1e0762b8e45bc9bf2ba1fe3624c67339e9b8bcf59ec5a919850a853061
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983502"
 ---
-# <a name="cbaselistaddafter-method"></a>CBaseList. AddAfter, metodo
+# <a name="cbaselistaddafter-method"></a>Metodo CBaseList.AddAfter
 
 Il `AddAfter` metodo inserisce un elenco dopo la posizione specificata.
 
@@ -50,7 +50,7 @@ Posizione dopo la quale inserire l'elenco.
 
 </dd> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
 Puntatore all'elenco da inserire.
@@ -59,11 +59,11 @@ Puntatore all'elenco da inserire.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Gli indicatori di posizione esistenti, incluso quello specificato nel parametro *pos* , rimangono validi. Se il metodo ha esito negativo, è possibile che alcuni elementi siano stati aggiunti.
+Gli indicatori di posizione esistenti, incluso quello specificato nel *parametro pos,* rimangono validi. Se il metodo ha esito negativo, alcuni elementi potrebbero essere stati aggiunti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Gli indicatori di posizione esistenti, incluso quello specificato nel parametro 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxlist. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxlist.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

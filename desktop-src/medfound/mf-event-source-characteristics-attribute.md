@@ -1,17 +1,17 @@
 ---
 description: Specifica le caratteristiche correnti dell'origine multimediale.
 ms.assetid: af2a2b75-cd4e-453c-876e-3be2db695e4e
-title: Attributo MF_EVENT_SOURCE_CHARACTERISTICS (Mfapi. h)
+title: MF_EVENT_SOURCE_CHARACTERISTICS attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8c775c0d3471d3d3442e565879ba8b42e07a61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5a9b72adaa5869d806ab0a3c8afcddff7892f93872e86aa6dfe96bde1b8348b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956591"
 ---
-# <a name="mf_event_source_characteristics-attribute"></a>\_ \_ Attributo caratteristiche origine evento MF \_
+# <a name="mf_event_source_characteristics-attribute"></a>Attributo MF \_ EVENT \_ SOURCE \_ CHARACTERISTICS
 
 Specifica le caratteristiche correnti dell'origine multimediale.
 
@@ -21,11 +21,11 @@ Specifica le caratteristiche correnti dell'origine multimediale.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è **un operatore OR** bit per bit di flag dell'enumerazione delle [**\_ caratteristiche MFMEDIASOURCE**](/windows/desktop/api/mfidl/ne-mfidl-mfmediasource_characteristics) .
+Il valore di questo attributo è **un'operazione OR** bit per bit di flag dell'enumerazione [**MFMEDIASOURCE \_ CHARACTERISTICS.**](/windows/desktop/api/mfidl/ne-mfidl-mfmediasource_characteristics)
 
-Questo attributo viene utilizzato con l'evento [MESourceCharacteristicsChanged](mesourcecharacteristicschanged.md) .
+Questo attributo viene usato con [l'evento MESourceCharacteristicsChanged.](mesourcecharacteristicschanged.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,16 +43,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi dell'evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

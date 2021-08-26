@@ -3,78 +3,78 @@ title: Stringhe di comando multimediali
 description: Stringhe di comando multimediali
 ms.assetid: f8edfdbd-1334-4323-aec5-73c0a56f9b4d
 keywords:
-- Windows Multimedia, stringhe di comando
-- Multimedia, stringhe di comando
-- riferimenti multimediali, stringhe di comando
-- informazioni di riferimento per Multimedia, stringhe di comando
+- Windows multimediali, stringhe di comando
+- multimediali, stringhe di comando
+- informazioni di riferimento sul contenuto multimediale, stringhe di comando
+- informazioni di riferimento per elementi multimediali, stringhe di comando
 - stringhe di comando multimediali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4ec8f9b0efa783028850a6cd03cbc0bed20caf
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 986a1fc9e2a97671b04d8ba8a4a5cd033e176a94f6a8e898b4f899b7a9c707a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103963040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038771"
 ---
 # <a name="multimedia-command-strings"></a>Stringhe di comando multimediali
 
-Le stringhe di comando seguenti vengono usate con i contenuti multimediali.
+Le stringhe di comando seguenti vengono usate con i dati multimediali.
 
 -   [break](break.md)
 -   [capability](capability.md)
--   [catturare](capture.md)
+-   [Catturare](capture.md)
 -   [close](close.md)
--   [configurare](configure.md)
+-   [Configurare](configure.md)
 -   [copy](copy.md)
 -   [segnale](cue.md)
--   [tagliare](cut.md)
+-   [Tagliare](cut.md)
 -   [delete](delete.md)
--   [fuga](escape.md)
--   [congelare](freeze.md)
+-   [Fuga](escape.md)
+-   [Congelare](freeze.md)
 -   [index](./windows-multimedia-start-page.md)
--   [informazioni](info.md)
+-   [Informazioni](info.md)
 -   [list](list.md)
 -   [carico](load.md)
--   [contrassegnare](mark.md)
--   [monitoraggio](monitor.md)
+-   [Segno](mark.md)
+-   [Monitor](monitor.md)
 -   [open](open.md)
--   [Incolla](paste.md)
+-   [Incollare](paste.md)
 -   [pause](pause.md)
--   [Play](play.md)
--   [mettere](put.md)
--   [qualità](quality.md)
--   [tenere presente](realize.md)
--   [record](record.md)
--   [riserva](reserve.md)
+-   [Giocare](play.md)
+-   [Mettere](put.md)
+-   [Qualità](quality.md)
+-   [Realizzare](realize.md)
+-   [Registrazione](record.md)
+-   [Riserva](reserve.md)
 -   [restore](restore.md)
--   [riprendere](resume.md)
+-   [riassumere](resume.md)
 -   [salvataggio](save.md)
--   [cercare](seek.md)
+-   [Cercare](seek.md)
 -   [set](set.md)
--   [SetAudio](setaudio.md)
--   [codice temporale](settimecode.md)
--   [setuner](settuner.md)
--   [video](setvideo.md)
+-   [setaudio](setaudio.md)
+-   [settimecode](settimecode.md)
+-   [settuner](settuner.md)
+-   [setvideo](setvideo.md)
 -   [signal](signal.md)
--   [selezione](spin.md)
+-   [giro](spin.md)
 -   [Stato](status.md)
--   [passo](step.md)
+-   [Passo](step.md)
 -   [stop](stop.md)
--   [sysinfo](sysinfo.md)
+-   [Sysinfo](sysinfo.md)
 -   [cancella](undo.md)
--   [Sblocca](unfreeze.md)
+-   [Sbloccare](unfreeze.md)
 -   [update](update.md)
 -   [where](where.md)
--   [finestra](window.md)
+-   [Finestra](window.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimenti multimediali](multimedia-reference.md)
+[Informazioni di riferimento sul contenuto multimediale](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

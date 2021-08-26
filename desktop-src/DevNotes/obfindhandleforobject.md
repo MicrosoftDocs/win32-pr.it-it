@@ -1,7 +1,7 @@
 ---
 description: Recupera un handle di oggetto per l'oggetto specificato associato al processo specificato.
 ms.assetid: c7b371c3-02c0-4137-ad9d-dd07a74fe2a5
-title: Funzione ObFindHandleForObject (Ntosp. h)
+title: Funzione ObFindHandleForObject (Ntosp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Ntoskrnl.lib
 - Ntoskrnl.dll
-ms.openlocfilehash: 7ba87d05d4264f3bb160bae16053a338e38e2145
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 481def34e3e8656205eefe96058fe3c7558d2c898c7e05ddc78f9a67435c507e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984151"
 ---
-# <a name="obfindhandleforobject-function"></a>ObFindHandleForObject (funzione)
+# <a name="obfindhandleforobject-function"></a>Funzione ObFindHandleForObject
 
 \[Questa funzione è obsoleta e può essere modificata o non disponibile nelle versioni future di Windows. Evitare di usare questa funzione.\]
 
@@ -46,35 +46,35 @@ BOOLEAN WINAPI ObFindHandleForObject(
 
 <dl> <dt>
 
-*Processo* \[ di in\]
+*Processo* \[ Pollici\]
 </dt> <dd>
 
-Processo. Questo handle viene restituito dalla funzione **IoGetCurrentProcess** o **PsGetCurrentProcess** .
+Processo. Questo handle viene restituito dalla **funzione IoGetCurrentProcess** **o PsGetCurrentProcess.**
 
 </dd> <dt>
 
-*Oggetto* \[ di in\]
+*Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Puntatore all'oggetto.
+Puntatore all'oggetto .
 
 </dd> <dt>
 
-*Reserved1* \[ in, facoltativo\]
-</dt> <dd>
-
-Riservato.
-
-</dd> <dt>
-
-*Reserved2* \[ in, facoltativo\]
+*Riservato1* \[ in, facoltativo\]
 </dt> <dd>
 
 Riservato.
 
 </dd> <dt>
 
-*Gestisci* \[ out\]
+*Riservato2* \[ in, facoltativo\]
+</dt> <dd>
+
+Riservato.
+
+</dd> <dt>
+
+*Handle* \[ Cambio\]
 </dt> <dd>
 
 Handle dell'oggetto.
@@ -83,7 +83,7 @@ Handle dell'oggetto.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** se viene trovata una corrispondenza e **false** in caso contrario.
+La funzione restituisce **TRUE se** viene trovata una corrispondenza e FALSE in **caso contrario.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -95,10 +95,10 @@ Questa funzione è disponibile in Ntoskrnl.exe e può essere chiamata solo dalla
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Ntosp. h</dt> </dl>      |
-| Libreria<br/>                  | <dl> <dt>Ntoskrnl. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Ntosp.h</dt> </dl>      |
+| Libreria<br/>                  | <dl> <dt>Ntoskrnl.lib</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Carica una versione specificata di una DLL della libreria .NET Framework.
+description: Carica una versione specificata di una DLL .NET Framework libreria.
 ms.assetid: f001774d-ea9a-4820-aec0-99ce958b1e1d
-title: LoadLibraryShim (funzione)
+title: Funzione LoadLibraryShim
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Mscoree.dll
-ms.openlocfilehash: 3a2fd8ab6aef8d0309748cbbf37d56ccd032b050
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 123d4036713d6c1c5b7f7a08026d29d7d34126c28c5c2c1fceb94eb01baf9609
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001241"
 ---
-# <a name="loadlibraryshim-function"></a>LoadLibraryShim (funzione)
+# <a name="loadlibraryshim-function"></a>Funzione LoadLibraryShim
 
-Carica una versione specificata di una DLL della libreria .NET Framework.
+Carica una versione specificata di una DLL .NET Framework libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ HRESULT LoadLibraryShim(
 
 <dl> <dt>
 
-*szDllName* \[ in\]
+*szDllName* \[ Pollici\]
 </dt> <dd>
 
 Nome della DLL da caricare dal .NET Framework.
 
 </dd> <dt>
 
-*szVersion* \[ in\]
+*szVersion* \[ Pollici\]
 </dt> <dd>
 
-Versione della DLL da caricare. Se *szVersion* è **null**, viene caricata la versione più recente della DLL specificata.
+Versione della DLL da caricare. Se *szVersion* è **NULL,** viene caricata la versione più recente della DLL specificata.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Riservato.
 
 </dd> <dt>
 
-*phModDll* \[ out\]
+*phModDll* \[ Cambio\]
 </dt> <dd>
 
 Handle per il modulo.
@@ -72,13 +72,13 @@ Handle per il modulo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione viene utilizzata per caricare le dll della libreria incluse nel pacchetto ridistribuibile .NET Framework, non nelle DLL generate dall'utente.
+Questa funzione viene usata per caricare le DLL della libreria incluse nel pacchetto .NET Framework, non le DLL generate dall'utente.
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -3,25 +3,25 @@ title: Metodo OnPaint
 description: Metodo OnPaint
 ms.assetid: 4b335362-4430-4b05-8aea-7de8df9cc91f
 keywords:
-- Plug-in di Windows Media Player, metodo OnPaint
+- Windows Media Player plug-in, metodo OnPaint
 - plug-in, metodo OnPaint
 - plug-in dell'interfaccia utente, metodo OnPaint
 - Plug-in dell'interfaccia utente, metodo OnPaint
 - Metodo OnPaint
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22641c34bb2edab30c1bf97011e893bc1d9d44a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa5e121cdaeac1c7589e58b1613a8d25bdff4f44f6db2375bcbdc34da20929e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001951"
 ---
 # <a name="the-onpaint-method"></a>Metodo OnPaint
 
-Il metodo OnPaint viene chiamato ogni volta che la finestra del plug-in deve essere disegnata automaticamente. Questo errore si verifica quando la finestra del plug-in riceve un \_ messaggio di disegno WM, mappato al metodo OnPaint nella mappa messaggi descritta in precedenza. La procedura guidata fornisce un'implementazione di questo metodo che dipinge il nero di sfondo e inserisce il nome del plug-in nella finestra del plug-in. L'unica modifica necessaria per il plug-in di ricerca dell'interfaccia utente è la rimozione del codice che Visualizza il testo.
+Il metodo OnPaint viene chiamato ogni volta che la finestra del plug-in deve disegnare se stessa. Ciò si verifica quando la finestra del plug-in riceve un messaggio WM PAINT, mappato al metodo OnPaint nella mappa messaggi \_ descritta in precedenza. La procedura guidata fornisce un'implementazione di questo metodo che dipinge lo sfondo nero e inserisce il nome del plug-in nella finestra del plug-in. L'unica modifica necessaria per il plug-in dell'interfaccia utente di ricerca è la rimozione del codice che visualizza il testo.
 
-Il codice seguente viene usato per implementare questo metodo:
+Per implementare questo metodo viene usato il codice seguente:
 
 
 ```C++
@@ -58,9 +58,9 @@ LRESULT OnPaint(UINT nMsg, WPARAM wParam,
 [**Implementazione di CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Modelli di privacy (WinInet. h)
-description: Di seguito sono riportati i livelli di privacy che equivalgono alle regole per accettare, accettare in modo condizionale o non accettare cookie.
+title: Modelli di privacy (Wininet.h)
+description: Di seguito sono riportati i livelli di privacy che equi equitono alle regole per l'accettazione, l'accettazione condizionale o la non accettazione dei cookie.
 ms.assetid: d8dd9c12-b159-4f95-820e-521aeb1526bf
 topic_type:
 - apiref
@@ -20,20 +20,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9394068721920836f61871ca42471469fd4c592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 481aa3e9b6b5b5519bac6e458de1acba90f2cfa20dd0a5babac016d0003c70b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955561"
 ---
 # <a name="privacy-templates"></a>Modelli di privacy
 
-Di seguito sono riportati i livelli di privacy che equivalgono alle regole per accettare, accettare in modo condizionale o non accettare cookie. Questi livelli corrispondono ai livelli di preferenza sulla privacy impostati nella scheda privacy in Opzioni Internet. Per le definizioni dettagliate, vedere [privacy in Internet Explorer 6](https://www.bing.com/search?q=Privacy+in+Internet+Explorer+6) .
+Di seguito sono riportati i livelli di privacy che equi equitono alle regole per l'accettazione, l'accettazione condizionale o la non accettazione dei cookie. Questi livelli corrispondono ai livelli di preferenza di privacy impostati nella scheda Privacy in Opzioni Internet. Vedere [Privacy in Internet Explorer 6 per](https://www.bing.com/search?q=Privacy+in+Internet+Explorer+6) definizioni dettagliate.
 
 <dl> <dt>
 
-<span id="PRIVACY_TEMPLATE_NO_COOKIES"></span><span id="privacy_template_no_cookies"></span>**\_modello privacy \_ senza \_ cookie**
+<span id="PRIVACY_TEMPLATE_NO_COOKIES"></span><span id="privacy_template_no_cookies"></span>**MODELLO \_ DI PRIVACY SENZA \_ \_ COOKIE**
 </dt> <dd> <dl> <dt>
 
 0
@@ -41,12 +41,12 @@ Di seguito sono riportati i livelli di privacy che equivalgono alle regole per a
 
 
 
-Equivale a **blocca tutti i cookie** sulla barra del dispositivo di scorrimento delle preferenze sulla privacy in **Opzioni Internet**.
+Corrisponde a Blocca tutti i **cookie sulla** barra del dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_HIGH"></span><span id="privacy_template_high"></span>**\_modello privacy \_ alto**
+<span id="PRIVACY_TEMPLATE_HIGH"></span><span id="privacy_template_high"></span>**PRIVACY \_ TEMPLATE \_ HIGH**
 </dt> <dd> <dl> <dt>
 
 1
@@ -54,12 +54,12 @@ Equivale a **blocca tutti i cookie** sulla barra del dispositivo di scorrimento 
 
 
 
-Questa operazione è identica alla barra del dispositivo di scorrimento **Preferenze per la** privacy in **Opzioni Internet**.
+Corrisponde a Alta sulla **barra del** dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM_HIGH"></span><span id="privacy_template_medium_high"></span>**modello di PRIVACY \_ \_ medio \_ alto**
+<span id="PRIVACY_TEMPLATE_MEDIUM_HIGH"></span><span id="privacy_template_medium_high"></span>**MODELLO \_ DI PRIVACY \_ \_ MEDIO-ALTO**
 </dt> <dd> <dl> <dt>
 
 2
@@ -67,12 +67,12 @@ Questa operazione è identica alla barra del dispositivo di scorrimento **Prefer
 
 
 
-Equivale a **media \_ High** sulla barra del dispositivo di scorrimento delle preferenze sulla privacy in **Opzioni Internet**.
+Corrisponde a Medio alto sulla **barra \_** del dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM"></span><span id="privacy_template_medium"></span>**modello di PRIVACY \_ \_ medio**
+<span id="PRIVACY_TEMPLATE_MEDIUM"></span><span id="privacy_template_medium"></span>**MODELLO \_ DI PRIVACY \_ MEDIUM**
 </dt> <dd> <dl> <dt>
 
 3
@@ -80,12 +80,12 @@ Equivale a **media \_ High** sulla barra del dispositivo di scorrimento delle pr
 
 
 
-Equivale a **media** sulla barra del dispositivo di scorrimento delle preferenze sulla privacy in **Opzioni Internet**.
+Corrisponde a Medio sulla **barra del** dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MEDIUM_LOW_"></span><span id="privacy_template_medium_low_"></span>**modello di PRIVACY \_ \_ medio \_ basso** 
+<span id="PRIVACY_TEMPLATE_MEDIUM_LOW_"></span><span id="privacy_template_medium_low_"></span>**MODELLO \_ DI PRIVACY MEDIO \_ \_ BASSO** 
 </dt> <dd> <dl> <dt>
 
 4
@@ -93,12 +93,12 @@ Equivale a **media** sulla barra del dispositivo di scorrimento delle preferenze
 
 
 
-È uguale a **low** sulla barra del dispositivo di scorrimento delle preferenze sulla privacy in **Opzioni Internet**.
+Corrisponde a Basso sulla **barra del** dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_LOW"></span><span id="privacy_template_low"></span>**modello di PRIVACY \_ \_ basso**
+<span id="PRIVACY_TEMPLATE_LOW"></span><span id="privacy_template_low"></span>**MODELLO \_ DI PRIVACY \_ BASSO**
 </dt> <dd> <dl> <dt>
 
 5
@@ -106,12 +106,12 @@ Equivale a **media** sulla barra del dispositivo di scorrimento delle preferenze
 
 
 
-Questo equivale a **accettare tutti i cookie** sulla barra del dispositivo di scorrimento delle preferenze per la privacy in **Opzioni Internet**.
+Corrisponde a Accetta tutti i cookie sulla barra **del** dispositivo di scorrimento Preferenze privacy in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_CUSTOM"></span><span id="privacy_template_custom"></span>**modello di PRIVACY \_ \_ personalizzato**
+<span id="PRIVACY_TEMPLATE_CUSTOM"></span><span id="privacy_template_custom"></span>**MODELLO \_ DI PRIVACY \_ PERSONALIZZATO**
 </dt> <dd> <dl> <dt>
 
 100
@@ -119,12 +119,12 @@ Questo equivale a **accettare tutti i cookie** sulla barra del dispositivo di sc
 
 
 
-Definito dall'utente. Per informazioni su come impostare le impostazioni di privacy personalizzate, vedere [come creare un file di importazione della privacy personalizzato](https://www.bing.com/search?q=How+to+Create+a+Customized+Privacy+Import+File) .
+Definito dall'utente. Per [informazioni su come configurare le impostazioni di privacy personalizzate,](https://www.bing.com/search?q=How+to+Create+a+Customized+Privacy+Import+File) vedere How to Create a Customized Privacy Import File (Come creare un file di importazione della privacy personalizzato).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_ADVANCED"></span><span id="privacy_template_advanced"></span>**modello di PRIVACY \_ \_ avanzato**
+<span id="PRIVACY_TEMPLATE_ADVANCED"></span><span id="privacy_template_advanced"></span>**MODELLO \_ DI PRIVACY \_ AVANZATO**
 </dt> <dd> <dl> <dt>
 
 101
@@ -132,20 +132,20 @@ Definito dall'utente. Per informazioni su come impostare le impostazioni di priv
 
 
 
-Definito dall'utente. Le opzioni avanzate sono impostate nella finestra di dialogo **Impostazioni avanzate** per la privacy raggiungibili dalla scheda **privacy** in **Opzioni Internet**.
+Definito dall'utente. Le opzioni avanzate vengono impostate nella **finestra di dialogo** Impostazioni privacy avanzata raggiungibile dalla scheda **Privacy** in **Opzioni Internet.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PRIVACY_TEMPLATE_MAX"></span><span id="privacy_template_max"></span>**\_modello privacy \_ Max**
+<span id="PRIVACY_TEMPLATE_MAX"></span><span id="privacy_template_max"></span>**PRIVACY \_ TEMPLATE \_ MAX**
 </dt> <dd> <dl> <dt>
 
-modello di PRIVACY \_ \_ basso
+MODELLO \_ DI PRIVACY \_ BASSO
 </dt> <dt>
 
 
 
-Uguale al **modello di privacy \_ \_ basso**.
+Uguale a **PRIVACY \_ TEMPLATE \_ LOW**.
 
 
 </dt> </dl> </dd> </dl>
@@ -153,7 +153,7 @@ Uguale al **modello di privacy \_ \_ basso**.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> WinINet non supporta le implementazioni del server. Inoltre, non deve essere utilizzato da un servizio. Per le implementazioni o i servizi del server, usare i [Servizi http di Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet non supporta le implementazioni del server. Inoltre, non deve essere usato da un servizio. Per le implementazioni o i servizi server, [usare Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 
@@ -165,7 +165,7 @@ Uguale al **modello di privacy \_ \_ basso**.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>WinInet. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

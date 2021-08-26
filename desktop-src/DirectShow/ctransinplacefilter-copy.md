@@ -1,7 +1,7 @@
 ---
 description: Il metodo Copy copia un esempio di supporto.
 ms.assetid: 3fbc6925-6e9c-4419-ab0d-0bbdbdf9bb8e
-title: Metodo CTransInPlaceFilter. Copy (Transip. h)
+title: Metodo CTransInPlaceFilter.Copy (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3063427611cd3a5aae74fecf6be273c07fdb917c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10a7a2927789ffe49d37912862580222f0ed06d9648b6312cbb044e357d6e61c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053521"
 ---
-# <a name="ctransinplacefiltercopy-method"></a>Metodo CTransInPlaceFilter. Copy
+# <a name="ctransinplacefiltercopy-method"></a>Metodo CTransInPlaceFilter.Copy
 
-Il `Copy` metodo copia un esempio di supporto.
+Il `Copy` metodo copia un campione di supporti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ IMediaSample* Copy(
 *pSource* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio.
+Puntatore [**all'interfaccia IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) dell'esempio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore all'interfaccia **IMediaSample** del nuovo campione.
+Restituisce un puntatore **all'interfaccia IMediaSample** nel nuovo esempio.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo recupera un buffer vuoto dall'allocatore downstream. Copia tutte le proprietà di esempio da *pSource* al nuovo esempio, insieme ai dati effettivi nell'esempio. Se il filtro usa due allocatori, chiama questo metodo per copiare i dati tra i buffer.
+Questo metodo recupera un buffer vuoto dall'allocatore downstream. Copia tutte le proprietà di esempio da *pSource* nel nuovo esempio, insieme ai dati effettivi nell'esempio. Se il filtro usa due allocatori, chiama questo metodo per copiare i dati tra buffer.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questo metodo recupera un buffer vuoto dall'allocatore downstream. Copia tutte l
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Transip. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Transip.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
