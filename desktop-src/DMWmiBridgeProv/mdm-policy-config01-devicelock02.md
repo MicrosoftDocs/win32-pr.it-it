@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_DeviceLock02
-description: La \_ \_ classe Config01 DeviceLock02 dei criteri MDM \_ rappresenta i criteri di blocco del dispositivo disponibili.
+title: MDM_Policy_Config01_DeviceLock02 classe
+description: La classe Mdm \_ Policy \_ Config01 \_ DeviceLock02 rappresenta i criteri di blocco del dispositivo disponibili.
 ms.assetid: 222081ec-c38f-481d-ae38-941fd1317197
 keywords:
-- Classe MDM_Policy_Config01_DeviceLock02
-- Classe MDM_Policy_Config01_DeviceLock02, descritta
+- MDM_Policy_Config01_DeviceLock02 classe
+- MDM_Policy_Config01_DeviceLock02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c5926912d276fbe04f75c161196c47d0f0dd384
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 80bfd2f08b048ef16aaa03de2e9a0c1c809e493b00f5ff84e7c24e1b9edb4f83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967521"
 ---
-# <a name="mdm_policy_config01_devicelock02-class"></a>\_ \_ Classe Config01 DeviceLock02 di criteri \_ MDM
+# <a name="mdm_policy_config01_devicelock02-class"></a>Classe \_ \_ \_ DeviceLock02 di Mdm Policy Config01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ Config01 \_ DeviceLock02 dei criteri MDM** rappresenta i criteri di blocco del dispositivo disponibili.
+La **classe Mdm Policy \_ \_ Config01 \_ DeviceLock02** rappresenta i criteri di blocco del dispositivo disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -60,13 +60,13 @@ class MDM_Policy_Config01_DeviceLock02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Config01 \_ DeviceLock02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Config01 \_ DeviceLock02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ DeviceLock02 dei criteri MDM Config01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Config01 \_ DeviceLock02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ AllowScreenTimeoutWhileLockedUserConfig
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -87,7 +87,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -98,7 +98,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -109,16 +109,16 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-DevicePasswordEnabled non deve essere impostato su Enabled (0) quando WMI viene usato per impostare i criteri di DeviceLock EAS, dato che è abilitato per impostazione predefinita nei criteri CSP per back compat con Windows 8. x. Se DevicePasswordEnabled è impostato su Enabled (0), i criteri CSP restituiranno un errore che informa che DevicePasswordEnabled esiste già. Windows 8. x non supporta i criteri di DevicePassword. Quando si disabilita DevicePasswordEnabled (1), questo deve essere l'unico set di criteri del gruppo DeviceLock di criteri riportato di seguito. I criteri sono elencati di seguito: >-DevicePasswordEnabled è il criterio padre dei seguenti elementi:
+DevicePasswordEnabled non deve essere impostato su Abilitato (0) quando WMI viene usato per impostare i criteri DeviceLock EAS, dato che è abilitato per impostazione predefinita in Policy CSP per il back compat con Windows 8.x. Se DevicePasswordEnabled è impostato su Enabled(0), Policy CSP restituirà un errore che indica che DevicePasswordEnabled esiste già. Windows 8.x non supporta i criteri DevicePassword. Quando si disabilita DevicePasswordEnabled (1), questo dovrebbe essere l'unico set di criteri del gruppo di criteri DeviceLock riportato di seguito. I criteri sono elencati di seguito: > - DevicePasswordEnabled è il criterio padre degli elementi seguenti:
 
--   DevicePasswordEnabled è il criterio padre dei seguenti elementi:
+-   DevicePasswordEnabled è il criterio padre degli elementi seguenti:
     -   AllowSimpleDevicePassword
     -   MinDevicePasswordLength
     -   AlphanumericDevicePasswordRequired è il criterio padre di:
-        -   MinDevicePasswordComplexCharacters consente 
+        -   MinDevicePasswordComplexCharacters 
     -   MaxDevicePasswordFailedAttempts
     -   MaxInactivityTimeDeviceLock
 
@@ -130,7 +130,7 @@ DevicePasswordEnabled non deve essere impostato su Enabled (0) quando WMI viene 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -141,7 +141,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -149,10 +149,10 @@ Tipo di accesso: lettura/scrittura
 [EnforceLockScreenAndLogonImage](/windows/client-management/mdm/policy-csp-devicelock#devicelock-enforcelockscreenandlogonimage)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -160,10 +160,10 @@ Tipo di accesso: lettura/scrittura
 EnforceLockScreenProvider
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -171,7 +171,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -180,7 +180,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "DeviceLock".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "DeviceLock".
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Identifica il nome del nodo padre. Per questa classe la stringa è "DeviceLock".
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -201,18 +201,18 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[MinDevicePasswordComplexCharacters consente](/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
+[MinDevicePasswordComplexCharacters](/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -223,7 +223,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -234,15 +234,15 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -251,17 +251,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Config"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Config"
 
 </dd> <dt>
 
 [PreventLockScreenSlideShow](/windows/client-management/mdm/policy-csp-devicelock#devicelock-preventlockscreenslideshow)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -272,7 +272,7 @@ ScreenTimeoutWhileLocked
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -283,10 +283,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -295,7 +295,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

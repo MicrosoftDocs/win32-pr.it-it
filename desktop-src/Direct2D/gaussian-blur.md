@@ -1,30 +1,30 @@
 ---
-title: Effetto sfocatura gaussiana
-description: Utilizzare l'effetto di sfocatura gaussiana per creare una sfocatura basata sulla funzione gaussiana sull'intera immagine di input.
+title: Effetto sfocatura gaussiano
+description: Usare l'effetto sfocatura gaussiano per creare una sfocatura basata sulla funzione Gaussian sull'intera immagine di input.
 ms.assetid: 6B8C9A0A-81D6-4CC2-B30B-995D4C2E59FC
 keywords:
 - Sfocatura gaussiana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfbe8b309a498315e389be45d382eca3ee1b98ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b759ed0f5f70c4fc11ad902c7a45db3b3059847ce6895d25c3dbb9c9eee8330
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104570870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967086"
 ---
-# <a name="gaussian-blur-effect"></a>Effetto sfocatura gaussiana
+# <a name="gaussian-blur-effect"></a>Effetto sfocatura gaussiano
 
-Utilizzare l'effetto di sfocatura gaussiana per creare una sfocatura basata sulla funzione gaussiana sull'intera immagine di input.
+Usare l'effetto sfocatura gaussiano per creare una sfocatura basata sulla funzione Gaussian sull'intera immagine di input.
 
-È possibile utilizzare questo effetto per creare bagliori e ombreggiature e utilizzare l'effetto [composito](composite.md) per applicare il risultato all'immagine originale. È utile nell'elaborazione di foto per filtri come evidenziazioni e ombre. È possibile usare l'output di questo effetto per l'input in effetti di illuminazione, ad esempio l' [illuminazione speculare](specular-lighting.md) o gli effetti di [illuminazione diffusa](diffuse-lighting.md) , perché il canale alfa è sfocato e gli effetti di illuminazione usano il canale alfa per determinare la geometria della superficie come mappa di altezza.
+È possibile usare questo effetto per creare alone e ombreggiature e usare [l'effetto](composite.md) composito per applicare il risultato all'immagine originale. È utile nell'elaborazione di foto per filtri come evidenziazioni e ombreggiature. È possibile usare l'output di questo effetto [](specular-lighting.md) per l'input negli effetti di illuminazione, ad esempio gli effetti Illuminazione speculare o Illuminazione diffusa, perché anche il canale alfa è sfocato e gli effetti di illuminazione usano il canale alfa per determinare la geometria della superficie come mappa di altezza. [](diffuse-lighting.md)
 
-Questo effetto viene usato dall'effetto di [ombreggiatura](drop-shadow.md) incorporato.
+Questo effetto viene usato dall'effetto [Ombreggiatura](drop-shadow.md) predefinito.
 
 Il CLSID per questo effetto è CLSID \_ D2D1GaussianBlur.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Modalità di ottimizzazione](#optimization-modes)
 -   [Modalità bordo](#border-modes)
 -   [Bitmap di output](#output-bitmap)
@@ -37,9 +37,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1GaussianBlur.
 
 | Prima                                                       |
 |--------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)   |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)   |
 | After                                                        |
-| ![immagine dopo la trasformazione.](images/1-gaussianblur.png) |
+| ![l'immagine dopo la trasformazione.](images/1-gaussianblur.png) |
 
 
 
@@ -60,15 +60,15 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                                    | Descrizione                                                                                                                                                                                                                                                                                                                         |
+| Enumerazione del nome visualizzato e dell'indice                                                    | Descrizione                                                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| StandardDeviation<br/> D2D1 \_ GAUSSIANBLUR \_ prop \_ \_ deviazione standard<br/> | Quantità di sfocatura da applicare all'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard di 3. Le unità della deviazione standard e del raggio di sfocatura sono dip. Il valore zero DIP Disabilita interamente questo effetto. Il tipo è FLOAT.<br/> Il valore predefinito è 3.0 f.<br/> |
-| Optimization<br/> \_Ottimizzazione della \_ prop \_ GAUSSIANBLUR d2d1<br/>             | Modalità di ottimizzazione. Per altre informazioni, vedere [modalità di ottimizzazione](#optimization-modes) . Il tipo è D2D1 \_ GAUSSIANBLUR \_ Optimization.<br/> Il valore predefinito è D2D1 \_ GAUSSIANBLUR \_ Optimization \_ Balanced.<br/>                                                                                                            |
-| BorderMode<br/> \_ \_ \_ Modalità bordo prop GAUSSIANBLUR \_ d2d1<br/>               | Modalità utilizzata per calcolare il bordo dell'immagine, soft o hard. Per altre informazioni, vedere [Border modes](#border-modes) . <br/> Il tipo è D2D1 \_ GAUSSIANBLUR \_ Border \_ mode.<br/> Il valore predefinito è D2D1 \_ Border \_ mode \_ .<br/>                                                                                   |
+| StandardDeviation<br/> DEVIAZIONE STANDARD DELLA PROPRIETÀ D2D1 \_ GAUSSIANBLUR \_ \_ \_<br/> | Quantità di sfocatura da applicare all'immagine. È possibile calcolare il raggio di sfocatura del kernel moltiplicando la deviazione standard per 3. Le unità della deviazione standard e del raggio della sfocatura sono DIP. Il valore zero DIP disabilita completamente questo effetto. Il tipo è FLOAT.<br/> Il valore predefinito è 3,0f.<br/> |
+| Optimization<br/> OTTIMIZZAZIONE DELLA PROPRIETÀ D2D1 \_ GAUSSIANBLUR \_ \_<br/>             | Modalità di ottimizzazione. Per [altre informazioni, vedi](#optimization-modes) Modalità di ottimizzazione. Il tipo è D2D1 \_ GAUSSIANBLUR \_ OPTIMIZATION.<br/> Il valore predefinito è D2D1 \_ GAUSSIANBLUR \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                            |
+| BorderMode<br/> MODALITÀ BORDO DELLA PROPRIETÀ D2D1 \_ GAUSSIANBLUR \_ \_ \_<br/>               | Modalità utilizzata per calcolare il bordo dell'immagine, soft o hard. Per [altre informazioni, vedi](#border-modes) Modalità bordo. <br/> Il tipo è D2D1 \_ GAUSSIANBLUR \_ BORDER \_ MODE.<br/> Il valore predefinito è D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                                                   |
 
 
 
@@ -80,9 +80,9 @@ m_d2dContext->EndDraw();
 
 | Nome                                          | Descrizione                                                                                                                           |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| \_Velocità di \_ ottimizzazione \_ DIRECTIONALBLUR di d2d1    | Applica le ottimizzazioni interne, ad esempio la pre-scalabilità a raggi relativamente piccoli. Usa il filtro lineare.                                  |
-| \_Ottimizzazione d2d1 \_ DIRECTIONALBLUR \_ | Usa le stesse soglie di ottimizzazione della modalità velocità, ma usa il filtro trilineare.                                                    |
-| \_ \_ Qualità ottimizzazione DIRECTIONALBLUR \_ d2d1  | USA solo le ottimizzazioni interne con raggi di sfocatura grandi, in cui è meno probabile che le approssimazioni siano visibili. Usa il filtro trilineare. |
+| D2D1 \_ DIRECTIONALBLUR \_ OPTIMIZATION \_ SPEED    | Applica le ottimizzazioni interne, ad esempio il pre-ridimensionamento a raggi relativamente piccoli. Usa il filtro lineare.                                  |
+| OTTIMIZZAZIONE DI D2D1 \_ DIRECTIONALBLUR \_ \_ BILANCIATA | Usa le stesse soglie di ottimizzazione della modalità velocità, ma usa il filtro trilineare.                                                    |
+| QUALITÀ DI OTTIMIZZAZIONE D2D1 \_ DIRECTIONALBLUR \_ \_  | Usa solo le ottimizzazioni interne con raggi di sfocatura di grandi dimensioni, in cui le approssimazioni hanno meno probabilità di essere visibili. Usa il filtro trilineare. |
 
 
 
@@ -94,8 +94,8 @@ m_d2dContext->EndDraw();
 
 | Nome                     | Descrizione                                                                                                                                                                                                              |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_Modalità bordo \_ d2d1 \_ Soft | L'effetto Ritaglia l'immagine con i pixel neri trasparenti quando applica il kernel di sfocatura, ottenendo un bordo flessibile. <br/>                                                                                             |
-| \_Modalità bordo \_ d2d1 \_ | L'effetto fissa l'output alla dimensione dell'immagine di input. Quando l'effetto applica il kernel di sfocatura, estende l'immagine di input con una trasformazione del bordo di tipo mirror per i campioni all'esterno dei limiti di input.<br/> |
+| MODALITÀ BORDO D2D1 \_ \_ \_ SOFT | L'effetto riempire l'immagine con pixel neri trasparenti quando applica il kernel sfocatura, determinando un bordo sfuocato. <br/>                                                                                             |
+| MODALITÀ BORDO D2D1 \_ \_ \_ HARD | L'effetto stringe l'output alle dimensioni dell'immagine di input. Quando l'effetto applica il kernel di sfocatura, estende l'immagine di input con una trasformazione del bordo di tipo speculare per i campioni al di fuori dei limiti di input.<br/> |
 
 
 
@@ -103,11 +103,11 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap di output
 
-L'output di questo effetto può essere maggiore della bitmap di input in base al raggio di sfocatura e alla modalità bordo. Se la modalità bordo è impostata su D2D1 \_ bordo \_ modalità \_ soft il ize della bitmap di output aumenta in base alle dimensioni del kernel di sfocatura, rappresentato in pixel. Questa tabella fornisce un'equazione che è possibile usare per calcolare la bitmap di output.
+L'output di questo effetto può essere maggiore della bitmap di input in base al raggio di sfocatura e alla modalità bordo. Se la modalità bordo è impostata su D2D1 BORDER MODE SOFT, le dimensioni della bitmap di output aumentano in base alle dimensioni del \_ kernel di sfocatura, \_ \_ rappresentate in pixel. Questa tabella fornisce un'equazione che è possibile usare per calcolare la bitmap di output.
 
 `Output bitmap growth (X and Y) = StandardDeviation  (DIPs)*6*((User DPI)/96)`
 
-Quindi, se le dimensioni dell'immagine aumentano di 10 pixel in ogni direzione, l'angolo superiore sinistro dell'immagine si troverà in corrispondenza di (-5,-5) mentre la parte inferiore destra si trova in corrispondenza di (105, 105).
+Pertanto, se le dimensioni dell'immagine aumentano di 10 pixel in ogni direzione, l'angolo superiore sinistro dell'immagine si trova in corrispondenza di (-5, -5) mentre l'angolo inferiore destro si trova in corrispondenza di (105, 105).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,10 +115,10 @@ Quindi, se le dimensioni dell'immagine aumentano di 10 pixel in ogni direzione, 
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

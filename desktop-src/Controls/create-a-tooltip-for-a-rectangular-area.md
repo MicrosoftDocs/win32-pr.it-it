@@ -1,40 +1,40 @@
 ---
 title: Come creare una descrizione comando per un'area rettangolare
-description: Nell'esempio seguente viene illustrato come creare un controllo ToolTip standard per l'intera area client di una finestra.
+description: Nell'esempio seguente viene illustrato come creare un controllo descrizione comando standard per l'intera area client di una finestra.
 ms.assetid: 6AF1CE6E-AD63-4F84-9759-14FE4F16092B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f8daf62bf2ba85c8750fd07a1b9122b0360fc11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9be19be187e8c09b3aeb618e1c3518c7c15ca66816cbbb751abe43aa0b9172a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103708653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920696"
 ---
 # <a name="how-to-create-a-tooltip-for-a-rectangular-area"></a>Come creare una descrizione comando per un'area rettangolare
 
-Nell'esempio seguente viene illustrato come creare un controllo ToolTip standard per l'intera area client di una finestra.
+Nell'esempio seguente viene illustrato come creare un controllo descrizione comando standard per l'intera area client di una finestra.
 
-Nella figura seguente viene illustrata la descrizione comando visualizzata quando il puntatore del mouse si trova all'interno della finestra client di una finestra di dialogo. L'handle della finestra di dialogo è stato passato alla funzione illustrata nell'esempio precedente.
+La figura seguente mostra la descrizione comando visualizzata quando il puntatore del mouse si trova all'interno della finestra client di una finestra di dialogo. L'handle della finestra di dialogo è stato passato alla funzione illustrata nell'esempio precedente.
 
-![Screenshot di una finestra di dialogo; il puntatore del mouse si trova all'interno della finestra client e una descrizione comando è visibile](images/tt-rectangle.png)
+![screenshot di una finestra di dialogo; il puntatore del mouse si trova all'interno della finestra client ed è visibile una descrizione comando](images/tt-rectangle.png)
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="create-a-tooltip-for-a-rectangular-area"></a>Creare una descrizione comando per un'area rettangolare
 
-Nell'esempio seguente viene illustrato come creare un controllo ToolTip standard per l'intera area client di una finestra.
+Nell'esempio seguente viene illustrato come creare un controllo descrizione comando standard per l'intera area client di una finestra.
 
 
 ```C++
@@ -71,12 +71,12 @@ void CreateToolTipForRect(HWND hwndParent)
 
 <dl> <dt>
 
-[Uso di controlli ToolTip](using-tooltip-contro.md)
+[Uso dei controlli descrizione comando](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

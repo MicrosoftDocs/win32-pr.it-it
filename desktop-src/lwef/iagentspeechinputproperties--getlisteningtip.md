@@ -4,16 +4,16 @@ description: IAgentSpeechInputProperties GetListeningTip
 ms.assetid: b0488a54-03f8-43ce-935c-dd49c6ed5dbc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91218fb7935edb68458d540a8f35fe5402b317ea
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0199e75ad56cee2c299ce53be3aa94376104af5ead40004e8dbbd8fd4dcfec9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014181"
 ---
 # <a name="iagentspeechinputpropertiesgetlisteningtip"></a>IAgentSpeechInputProperties::GetListeningTip
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetListeningTip(
@@ -21,29 +21,29 @@ long * pbListeningTip  // address of variable for listening tip flag
 );                       
 ```
 
-Recupera un valore che indica se il suggerimento di ascolto è abilitato per la visualizzazione.
+Recupera un valore che indica se il suggerimento in ascolto è abilitato per la visualizzazione.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="pbListeningTip"></span><span id="pblisteningtip"></span><span id="PBLISTENINGTIP"></span>*pbListeningTip*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve **true** se il suggerimento di ascolto è abilitato per la visualizzazione oppure **false** se il suggerimento di ascolto è disabilitato.
+Indirizzo di una variabile che riceve **True se** il suggerimento in ascolto è abilitato per la visualizzazione oppure **False se** il suggerimento in ascolto è disabilitato.
 
 </dd> </dl>
 
-Se [**GetEnabled**](iagentspeechinputproperties--getenabled.md) restituisce **false**, l'esecuzione di una query su qualsiasi altra proprietà di input vocale restituisce un errore.
+Se [**GetEnabled restituisce**](iagentspeechinputproperties--getenabled.md) **False,** l'esecuzione di query su qualsiasi altra proprietà di input vocale restituisce un errore.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentSpeechInputProperties:: GetEnabled**](iagentspeechinputproperties--getenabled.md)
+[**IAgentSpeechInputProperties::GetEnabled**](iagentspeechinputproperties--getenabled.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Aggiungi-vs
-description: Aggiunge due vettori. | Aggiungi-vs
+title: add - vs
+description: Aggiunge due vettori. | add - vs
 ms.assetid: f66d3264-68be-4a4f-84fc-cc0f6c4245c9
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 678e7f815a819be2abf1d985516fe081d3c09c94
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b2a8b38a0858a4410c18fead1d0123b97c041bf8368be40a08fed4220f8fee3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983561"
 ---
-# <a name="add---vs"></a>Aggiungi-vs
+# <a name="add---vs"></a>add - vs
 
 Aggiunge due vettori.
 
@@ -24,7 +24,7 @@ Aggiunge due vettori.
 
 
 
-| aggiungere DST, src0, src1 |
+| add dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Aggiunge due vettori.
 
 dove
 
--   DST è il registro di destinazione.
+-   dst è il registro di destinazione.
 -   src0 è un registro di origine.
 -   src1 è un registro di origine.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | add                    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
+Il frammento di codice seguente illustra le operazioni eseguite.
 
 
 ```
@@ -65,7 +65,7 @@ dest.w = src0.w + src1.w;
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-stringDefault
-description: Impostazione della stringa predefinita per un set di oggetti parametro di stringa.
+title: Attributo ms-WMI-stringDefault
+description: Impostazione di stringa predefinita per un set di oggetti parametro stringa.
 ms.assetid: d467905a-b361-4689-8c1f-abb0f2f58766
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-WMI-stringDefault
-- msWMI-schema AD attributo StringDefault
+- Schema AD dell'attributo msWMI-StringDefault
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffe21c17ec1abd64081991e9f50293417910beb1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2f647894443f1795542603fd1d811a74cdf01bb7e04cf9dc74a3c7b3ca2d345b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066031"
 ---
-# <a name="ms-wmi-stringdefault-attribute"></a>attributo ms-WMI-stringDefault
+# <a name="ms-wmi-stringdefault-attribute"></a>Attributo ms-WMI-stringDefault
 
-Impostazione della stringa predefinita per un set di oggetti parametro di stringa.
+Impostazione di stringa predefinita per un set di oggetti parametro stringa.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-stringDefault                        |
-| LDAP-Display-Name | msWMI-StringDefault                         |
+| CN                | ms-WMI-stringDefault                        |
+| Ldap-Display-Name | msWMI-StringDefault                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1636                     |
-| System-ID-GUID    | 152e42b6-37c5-4f55-ab48-1606384a9aea        |
+| System-Id-Guid    | 152e42b6-37c5-4f55-ab48-1606384a9aea        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Impostazione della stringa predefinita per un set di oggetti parametro di string
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Impostazione della stringa predefinita per un set di oggetti parametro di string
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Impostazione della stringa predefinita per un set di oggetti parametro di string
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Impostazione della stringa predefinita per un set di oggetti parametro di string
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Impostazione della stringa predefinita per un set di oggetti parametro di string
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

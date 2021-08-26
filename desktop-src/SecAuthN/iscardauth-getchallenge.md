@@ -1,7 +1,7 @@
 ---
-description: Il metodo getchallenge restituisce una richiesta di verifica da parte della smart card.
+description: Il metodo GetChallenge restituisce una richiesta dal smart card.
 ms.assetid: a114ebfd-831f-4c6b-8156-ce631a732c9b
-title: 'Metodo ISCardAuth:: getchallenge'
+title: Metodo ISCardAuth::GetChallenge
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 9282c0a922a1f8c8daff07c31dcafa7e47e923a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0132ab8b4b3b2f646639c1618a9f2ca7e67fad1ce2c2fcec38590c7608802091
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015421"
 ---
-# <a name="iscardauthgetchallenge-method"></a>Metodo ISCardAuth:: getchallenge
+# <a name="iscardauthgetchallenge-method"></a>Metodo ISCardAuth::GetChallenge
 
-\[Il metodo **getchallenge** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo GetChallenge** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **getchallenge** restituisce una richiesta di verifica da parte della [*Smart Card*](../secgloss/s-gly.md).
+Il **metodo GetChallenge** restituisce una richiesta dal [*smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,30 +46,30 @@ HRESULT GetChallenge(
 *lAlgoID* \[ in, facoltativo\]
 </dt> <dd>
 
-Algoritmo da usare nel processo di autenticazione.
+Algoritmo da utilizzare nel processo di autenticazione.
 
 </dd> <dt>
 
-*lLengthOfChallenge* \[ in\]
+*lLengthOfChallenge* \[ Pollici\]
 </dt> <dd>
 
 Lunghezza massima della risposta prevista.
 
 </dd> <dt>
 
-*pParam* \[ in\]
+*pParam* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**IByteBuffer**](ibytebuffer.md) che contiene i parametri specifici del fornitore del processo di autenticazione.
+Oggetto [**IByteBuffer**](ibytebuffer.md) contenente i parametri specifici del fornitore del processo di autenticazione.
 
 </dd> <dt>
 
-*pbuffer* \[ in uscita\]
+*pBuffer* \[ in, out\]
 </dt> <dd>
 
-In input punta al buffer.
+Nell'input punta al buffer.
 
-Nell'output, contiene i dati di richiesta della scheda.
+Nell'output contiene i dati della richiesta dalla scheda.
 
 </dd> </dl>
 
@@ -81,10 +81,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -92,9 +92,9 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardAuth**](iscardauth.md).
+Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardAuth.**](iscardauth.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,8 +102,8 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 | Fine del supporto client<br/>    | Windows XP<br/>                                |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                       |
 

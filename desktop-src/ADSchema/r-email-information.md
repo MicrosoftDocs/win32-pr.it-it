@@ -1,10 +1,10 @@
 ---
-title: Set di proprietà Email-Information
-description: Set di proprietà contenente gli attributi utente che descrivono le informazioni relative alla posta elettronica dell'utente.
+title: Email-Information proprietà impostate
+description: Set di proprietà contenente gli attributi utente che descrivono le informazioni correlate alla posta elettronica dell'utente.
 ms.assetid: 9effd519-5226-4f40-8149-32aa1d0941cf
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD Email-Information set di proprietà
+- Email-Information set di proprietà ad Active Directory Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 310279b6f7dd7481b904542440c076c2006a8462
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e502dcdb1f2420ba238747c400d35ad2c6773d9ad28b8c37fb8d6d2d302a4bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922331"
 ---
-# <a name="email-information-property-set"></a>Set di proprietà Email-Information
+# <a name="email-information-property-set"></a>Email-Information proprietà impostate
 
-Set di proprietà contenente gli attributi utente che descrivono le informazioni relative alla posta elettronica dell'utente.
+Set di proprietà contenente gli attributi utente che descrivono le informazioni correlate alla posta elettronica dell'utente.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
 | CN           | Email-Information                    |
-| Display-Name | Opzioni per telefono e posta elettronica               |
+| Display-Name | Telefono e Opzioni di posta elettronica               |
 | Rights-GUID  | e45795b2-9455-11d1-aebd-0000f80367c1 |
 
 
@@ -38,7 +38,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -51,7 +51,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|-----------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> |
-| Localization-display-ID | 22                                                                    |
+| Localization-Display-ID | 22                                                                    |
 | Membri del set di proprietà    | \-                                                                    |
 
 
@@ -63,19 +63,19 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 22                                                                                                                        |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membri del set di proprietà    | \-                                                                                                                        |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
 | Voce | Valore |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group**](c-group.md)<br/> |
-| Localization-display-ID | 22                                  |
+| Localization-Display-ID | 22                                  |
 | Membri del set di proprietà    | \-                                  |
 
 
@@ -87,7 +87,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 22                                                                                                                        |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membri del set di proprietà    | \-                                                                                                                        |
 
 
@@ -99,7 +99,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 22                                                                                                                        |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membri del set di proprietà    | \-                                                                                                                        |
 
 
@@ -111,7 +111,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 22                                                                                                                        |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membri del set di proprietà    | \-                                                                                                                        |
 
 
@@ -123,7 +123,7 @@ Set di proprietà contenente gli attributi utente che descrivono le informazioni
 | Voce | Valore |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | [**Utente**](c-user.md)<br/> [**Group**](c-group.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localization-display-ID | 22                                                                                                                        |
+| Localization-Display-ID | 22                                                                                                                        |
 | Membri del set di proprietà    | \-                                                                                                                        |
 
 

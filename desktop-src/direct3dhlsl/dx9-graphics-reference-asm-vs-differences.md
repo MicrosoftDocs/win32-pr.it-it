@@ -1,6 +1,6 @@
 ---
-title: Differenze di vertex shader
-description: Differenze di vertex shader
+title: Differenze tra vertex shader
+description: Differenze tra vertex shader
 ms.assetid: 94fe4033-94c0-4561-b0fd-1fb85d8f796b
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1c74603f9eab4ea91e9220bbaa172c0262aeda99
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 411a3a742fca508839651d56912fa00b2a6d8b82908b159694a3b1eff88f2318
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982821"
 ---
-# <a name="vertex-shader-differences"></a>Differenze di vertex shader
+# <a name="vertex-shader-differences"></a>Differenze tra vertex shader
 
 ## <a name="instruction-slots"></a>Slot di istruzioni
 
-Ogni versione supporta un numero diverso di slot di istruzioni massime.
+Ogni versione supporta un numero diverso di slot di istruzioni massimi.
 
 
 
@@ -29,80 +29,80 @@ Ogni versione supporta un numero diverso di slot di istruzioni massime.
 | vs \_ 1 \_ 1 | 128                                                                                                                               |
 | vs \_ 2 \_ 0 | 256                                                                                                                               |
 | vs \_ 2 \_ x | 256                                                                                                                               |
-| vs \_ 3 \_ 0 | 512 minimo e fino al numero di slot in D3DCAPS9. MaxVertexShader30InstructionSlots. Vedere [**D3DCAPS9**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9). |
+| vs \_ 3 \_ 0 | Almeno 512 e fino al numero di slot in D3DCAPS9. MaxVertexShader30InstructionSlots. Vedere [**D3DCAPS9.**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9) |
 
 
 
- 
+ 
 
-Per informazioni sulle limitazioni degli shader software, vedere [software shaders](dx9-graphics-reference-asm-software-shaders.md).
+Per informazioni sulle limitazioni degli shader software, vedere [Software Shader.](dx9-graphics-reference-asm-software-shaders.md)
 
-## <a name="flow-control-nesting-limits"></a>Limiti di nidificazione del controllo di flusso
+## <a name="flow-control-nesting-limits"></a>Flow Limiti di annidamento dei controlli
 
--   Vedere [limiti di nidificazione del controllo di flusso](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
+-   Vedere [Flow limiti di annidamento dei controlli.](dx9-graphics-reference-asm-vs-instructions-flow-control.md)
 
-## <a name="vs_1_1-features"></a>funzionalità di Visual Studio \_ 1 \_ 1
+## <a name="vs_1_1-features"></a>Vs 1 1 1 Features (Funzionalità di vs \_ \_ 1 1)
 
 Nuove istruzioni:
 
-Vedere [le istruzioni-vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md).
+Vedere [Instructions - vs 1 1 ( Istruzioni - vs \_ \_ 1 1).](dx9-graphics-reference-asm-vs-instructions-vs-1-1.md)
 
 Nuovi registri:
 
-Vedere [Registers-vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md).
+Vedere [Registri - vs \_ 1 \_ 1](dx9-graphics-reference-asm-vs-registers-vs-1-1.md).
 
-## <a name="vs_2_0-features"></a>Funzionalità di vs \_ 2 \_ 0
+## <a name="vs_2_0-features"></a>Vs 2 0 Features (Funzionalità di vs \_ \_ 2 0)
 
 Nuove funzionalità:
 
 -   Controllo di flusso statico
--   Sono disponibili tutti e quattro i componenti del [Registro indirizzi](dx9-graphics-reference-asm-vs-registers-address.md) (a0).
+-   Sono disponibili tutti e quattro [i componenti](dx9-graphics-reference-asm-vs-registers-address.md) del registro indirizzi (a0).
 
 Nuove istruzioni:
 
--   Istruzioni di installazione- [defb-vs](defb---vs.md), [defi-vs](defi---vs.md)
--   Istruzioni aritmetiche- [ABS-vs](abs---vs.md), [CRS-vs](crs---vs.md), [LRP-vs](lrp---vs.md), [mova-vs](mova---vs.md), [NRM-vs](nrm---vs.md), [POW-vs](pow---vs.md), [SGN-vs](sgn---vs.md), [SinCos-vs](sincos---vs.md)
--   Istruzioni per il controllo di flusso statico- [Call-vs](call---vs.md), [callnz bool-vs](callnz-bool---vs.md), [else-vs](else---vs.md), [endif-vs](endif---vs.md), [EndLoop-vs](endloop---vs.md), [endrep-vs](endrep---vs.md), [if bool-vs](if-bool---vs.md), [Label-vs](label---vs.md), [loop-vs](loop---vs.md), [Rep-vs](rep---vs.md), [ret-vs](ret---vs.md)
+-   Istruzioni di installazione - [defb - vs](defb---vs.md), [defi - vs](defi---vs.md)
+-   Istruzioni aritmetiche - [abs -](abs---vs.md)vs , [crs - vs](crs---vs.md), [lrp - vs](lrp---vs.md), [mova - vs](mova---vs.md), [nrm - vs](nrm---vs.md), [pow - vs](pow---vs.md), [sgn - vs](sgn---vs.md), [sincos - vs](sincos---vs.md)
+-   Istruzioni per il controllo di flusso statico - call [- vs](call---vs.md), [callnz bool - vs](callnz-bool---vs.md), else [-](else---vs.md)vs , [endif - vs](endif---vs.md), [endloop - vs](endloop---vs.md), [endrep - vs](endrep---vs.md), if [bool - vs](if-bool---vs.md), label - [vs](label---vs.md), loop [- vs](loop---vs.md), rep - [vs](rep---vs.md), [ret - vs](ret---vs.md)
 
 Nuovi registri:
 
 -   [Registro booleano costante](dx9-graphics-reference-asm-vs-registers-constant-boolean.md) (b \# )
--   [Registro Integer costante](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (i \# )
--   [Registro contatore cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al)
+-   [Constant Integer Register](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (i \# )
+-   [Registro contatori cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL)
 
-## <a name="vs_2_x-features"></a>Funzionalità di vs \_ 2 \_ x
+## <a name="vs_2_x-features"></a>Vs \_ 2 \_ x Features
 
 Nuove funzionalità (D3DCAPS9. VS20Caps):
 
--   Controllo dinamico di flusso
--   Annidamento per istruzioni di controllo di flusso statiche e dinamiche
--   Il numero di [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)(r \# ) è aumentato
+-   Controllo dinamico del flusso
+-   Annidamento per istruzioni di controllo dinamico e statico del flusso
+-   Numero di [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)(r \# ) aumentati
 -   Predicazione
 
 Nuove istruzioni:
 
--   Istruzioni per il controllo dinamico del flusso- [Break-vs](break---vs.md), [break \_ comp-vs](break-comp---vs.md), [Breakp-vs](breakp---vs.md), [callnz Predator-vs](callnz-pred---vs.md), [if \_ comp-vs](if-comp---vs.md), [if prede-vs](if-pred---vs.md), [setp \_ comp-vs](setp-comp---vs.md)
+-   Istruzioni per il controllo dinamico del flusso - break [- vs](break---vs.md), break comp [- \_ vs](break-comp---vs.md), [breakp - vs](breakp---vs.md), [callnz pred - vs](callnz-pred---vs.md), if comp - [ \_ vs](if-comp---vs.md), [if pred - vs](if-pred---vs.md), [setp comp - \_ vs](setp-comp---vs.md)
 
 Nuovi registri:
 
--   [Registro predicato](dx9-graphics-reference-asm-vs-registers-predicate.md) (P0)
+-   [Registro predicati](dx9-graphics-reference-asm-vs-registers-predicate.md) (p0)
 
-## <a name="vs_3_0-features"></a>Funzionalità di vs \_ 3 \_ 0
+## <a name="vs_3_0-features"></a>Vs 3 0 Features (Funzionalità di vs \_ \_ 3 0)
 
 Nuove funzionalità:
 
--   Ricerca trama
--   Registri di [output](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) indicizzabili (o \# )
--   Il numero di [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)(r \# ) è aumentato a 32
+-   Ricerca trame
+-   Registri di [output indicizzabili](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o \# )
+-   Numero di [registri temporanei](dx9-graphics-reference-asm-vs-registers-temporary.md)(r \# ) aumentati a 32
 
 Nuove istruzioni:
 
--   Istruzioni di installazione- [DCL \_ samplerType (SM3-vs ASM)](dcl-samplertype---vs.md)
--   Istruzione di trama- [texldl-vs](texldl---vs.md)
+-   Istruzione di installazione - [dcl \_ samplerType (sm3 - vs asm)](dcl-samplertype---vs.md)
+-   Istruzione texture - [texldl - vs](texldl---vs.md)
 
 Nuovi registri:
 
--   [Campionatore (Direct3D 9 ASM-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md) / \# i
+-   [Campionatore (Direct3D 9 asm-vs)](dx9-graphics-reference-asm-vs-registers-sampler.md) (s \# )
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -111,6 +111,6 @@ Nuovi registri:
 [Vertex shader](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

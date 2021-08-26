@@ -1,31 +1,31 @@
 ---
-description: Il valore della prima parte del \# campo &0034; CS (User-Agent) &\# 0034; che l'origine di rete usa per la registrazione.
+description: Valore della prima parte del campo &\# 0034;cs(User-Agent)&0034; utilizzato dall'origine di rete per \# la registrazione.
 ms.assetid: b6c33cc8-ff43-4a19-a333-51a7f9b265a9
-title: Proprietà MFNETSOURCE_BROWSERUSERAGENT (Mfidl. h)
+title: MFNETSOURCE_BROWSERUSERAGENT proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f8cbb4dcd5558c59da20e75209529c16fc0c147
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf46fde925dbe2d94643a0843d105726f0976ba7a84f47773ef35e32ae8dfde7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954861"
 ---
-# <a name="mfnetsource_browseruseragent-property"></a>\_Proprietà BROWSERUSERAGENT di MFNETSOURCE
+# <a name="mfnetsource_browseruseragent-property"></a>MFNETSOURCE \_ BROWSERUSERAGENT - proprietà
 
-Il valore della prima parte del campo "CS (User-Agent)" usato dall'origine di rete per la registrazione. Le applicazioni possono impostare questa proprietà su qualsiasi valore stringa.
+Valore della prima parte del campo "cs(User-Agent)" utilizzato dall'origine di rete per la registrazione. Le applicazioni possono impostare questa proprietà su qualsiasi valore stringa.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
 Stringa di caratteri wide (**WCHAR** \* )
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 **pwszVal**
 
@@ -33,9 +33,9 @@ Stringa di caratteri wide (**WCHAR** \* )
 
 ## <a name="remarks"></a>Commenti
 
-La costante **MFNETSOURCE \_ BROWSERUSERAGENT** definisce il GUID per la chiave della proprietà. L'identificatore di proprietà (PID) è zero.
+La costante **MFNETSOURCE \_ BROWSERUSERAGENT** definisce il GUID per questa chiave di proprietà. L'identificatore di proprietà (PID) è zero.
 
-Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Le applicazioni possono usare questa proprietà per configurare l'origine di rete. Per impostare la proprietà, passare un **puntatore IPropertyStore** al sistema di risoluzione di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -56,13 +56,13 @@ Le applicazioni possono usare questa proprietà per configurare l'origine di ret
 [Registrazione client](client-logging.md)
 </dt> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
 [Rete in Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
-[**\_PLAYERUSERAGENT MFNETSOURCE**](mfnetsource-playeruseragent-property.md)
+[**MFNETSOURCE \_ PLAYERUSERAGENT**](mfnetsource-playeruseragent-property.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: La proprietà WindowlessActivation Inizializza l'oggetto MSWebDVD in fase di progettazione per la modalità finestra o senza finestra.
+description: La proprietà WindowlessActivation inizializza l'oggetto MSWebDVD in fase di progettazione per la modalità finestra o senza finestra.
 ms.assetid: 290a9459-154a-4ec7-a013-d696e6b27341
 title: Proprietà WindowlessActivation
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 427fdcb265d60200bfe8716cd1ece384861fbdf7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6915dbf2ddcfe1b8925ccc1dc3c163799563d137e39e6d6260ad75f5496a0b1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982251"
 ---
 # <a name="windowlessactivation-property"></a>Proprietà WindowlessActivation
 
@@ -18,7 +18,7 @@ ms.locfileid: "106317828"
 
  
 
-La `WindowlessActivation` Proprietà Inizializza l'oggetto **mswebdvd** in fase di progettazione per la modalità finestra o senza finestra.
+La `WindowlessActivation` proprietà inizializza **l'oggetto MSWebDVD** in fase di progettazione per la modalità finestra o senza finestra.
 
 ``` syntax
 [ bWindowless = ] MSWebDVD.WindowlessActivation
@@ -30,7 +30,7 @@ Restituisce un valore che indica se l'oggetto è in modalità finestra come valo
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di lettura/scrittura e il valore predefinito è true. Pertanto, è necessario impostare questa proprietà solo se si esegue l'oggetto **mswebdvd** in un contenitore a finestra. Quando è contenuto in una pagina Web di Microsoft® Internet Explorer, **mswebdvd** è sempre in modalità senza finestra e non è necessario impostare questa proprietà.
+Questa proprietà è di lettura/scrittura con il valore predefinito true. Pertanto, è necessario impostare questa proprietà solo se si esegue **l'oggetto MSWebDVD** in un contenitore con finestre. Quando è contenuto in una pagina Web in Microsoft® Internet Explorer, **MSWebDVD** è sempre in modalità senza finestra e non è necessario impostare questa proprietà.
 
  
 

@@ -1,24 +1,24 @@
 ---
-title: Funzioni di Routing Table Manager versione 1
-description: Usare le funzioni seguenti per accedere alle tabelle di routing gestite da Gestione tabelle di routing
+title: Funzioni di Gestione tabelle di routing versione 1
+description: Usare le funzioni seguenti per accedere alle tabelle di routing gestite dal gestore tabelle di routing
 ms.assetid: 65ba03b2-5a30-43a5-86dd-73b1d4642a22
 keywords:
-- Servizio Routing e accesso remoto RRAS, gestione tabelle di routing versione 1, funzioni
-- Routing Table Manager versione 1 RRAS, funzioni
+- Servizio Routing e Accesso remoto RRAS, Gestione tabelle di routing versione 1, funzioni
+- Routing Table Manager version 1 RRAS ,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2337ea09b4dd116f9db90c37e0a1ea3ea2a62b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2d7d898a180499cafb2f3a128ed81a72e0fea783b8b3620192034694a59a6709
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027221"
 ---
-# <a name="routing-table-manager-version-1-functions"></a>Funzioni di Routing Table Manager versione 1
+# <a name="routing-table-manager-version-1-functions"></a>Funzioni di Gestione tabelle di routing versione 1
 
-**Windows Server 2003:** Questa API è stata sostituita dall'API di [Gestione tabelle di routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le nuove applicazioni devono usare l'API di Routing Table Manager versione 2.
+**Windows Server 2003:** Questa API è stata sostituita dall'API di Gestione tabelle di routing versione [2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le nuove applicazioni devono usare l'API gestione tabelle di routing versione 2.
 
-Utilizzare le seguenti funzioni per accedere alle tabelle di routing gestite da Gestione tabelle di routing:
+Usare le funzioni seguenti per accedere alle tabelle di routing gestite dal gestore tabelle di routing:
 
 [**RtmAddRoute**](rtmaddroute.md)
 
@@ -48,9 +48,9 @@ Utilizzare le seguenti funzioni per accedere alle tabelle di routing gestite da 
 
 [**RtmRegisterClient**](rtmregisterclient.md)
 
- 
+ 
 
- 
+ 
 
 
 

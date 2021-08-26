@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetWindowPosition recupera le coordinate correnti per la finestra.
 ms.assetid: a2f46a87-b2cd-450f-8d2b-0f8695432fda
-title: Metodo CBaseControlWindow. GetWindowPosition (Ctlutil. h)
+title: Metodo CBaseControlWindow.GetWindowPosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: af2b1bdb8b2c839644e8c0629e3e272c123d3c21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d576f065e807c2af47621d43940d7e48c54f36f0617d20590953a5e83ab2fc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966731"
 ---
-# <a name="cbasecontrolwindowgetwindowposition-method"></a>CBaseControlWindow. GetWindowPosition, metodo
+# <a name="cbasecontrolwindowgetwindowposition-method"></a>Metodo CBaseControlWindow.GetWindowPosition
 
 Il `GetWindowPosition` metodo recupera le coordinate correnti per la finestra.
 
@@ -48,14 +48,14 @@ HRESULT GetWindowPosition(
 *pLeft* 
 </dt> <dd>
 
-Puntatore alla coordinata sinistra, espressa in coordinate dello schermo.
+Puntatore alla coordinata sinistra, in coordinate dello schermo.
 
 </dd> <dt>
 
 *pTop* 
 </dt> <dd>
 
-Puntatore alla coordinata superiore, espressa in coordinate dello schermo.
+Puntatore alla coordinata superiore, in coordinate dello schermo.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore all'altezza della finestra, in coordinate dello schermo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,8 +83,8 @@ Restituisce un valore **HRESULT** .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

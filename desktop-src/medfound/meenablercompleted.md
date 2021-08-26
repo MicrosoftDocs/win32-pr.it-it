@@ -1,19 +1,19 @@
 ---
-description: Generato da un oggetto di abilitazione del contenuto quando l'azione di abilitazione degli oggetti viene completata.
+description: Generato da un oggetto content enabler quando l'azione di abilitazione degli oggetti viene completata.
 ms.assetid: 5162800c-9c55-40de-be66-a98765324f76
 title: Evento MEEnablerCompleted (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f05459a648f6b357fd483baa9fc56809540e64a1
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 2983cbcf3927626da88432c0cc04f28e2fc5d3e866d161b514dcbe5108bcf92a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013801"
 ---
 # <a name="meenablercompleted-event"></a>Evento MEEnablerCompleted
 
-Generato da un oggetto content enabler quando viene completata l'azione di abilitazione dell'oggetto. Gli oggetti che espongono [**l'interfaccia IMFContentEnabler**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentenabler) possono generare questo evento. L'evento viene generato se si verifica una delle condizioni seguenti:
+Generato da un oggetto content enabler quando viene completata l'azione di abilitazione dell'oggetto. Gli oggetti che [**espongono l'interfaccia IMFContentEnabler**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentenabler) possono generare questo evento. L'evento viene generato se si verifica una delle condizioni seguenti:
 
 -   Il [**metodo IMFContentEnabler::AutomaticEnable**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-automaticenable) viene completato in modo asincrono.
 -   L'applicazione chiama [**IMFContentEnabler::MonitorEnable**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-monitorenable)e quindi l'applicazione completa la richiesta HTTP POST, come descritto nel **metodo MonitorEnable.**
@@ -54,13 +54,13 @@ Per ricevere questo evento, eseguire una query [**sull'interfaccia IMFContentEna
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                                           |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

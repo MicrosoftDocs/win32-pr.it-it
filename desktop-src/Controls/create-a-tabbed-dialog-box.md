@@ -1,43 +1,43 @@
 ---
 title: Come creare una finestra di dialogo a schede
-description: Nell'esempio riportato in questa sezione viene illustrato come creare una finestra di dialogo in cui vengono utilizzate schede per fornire più pagine di controlli.
+description: L'esempio in questa sezione illustra come creare una finestra di dialogo che usa schede per fornire più pagine di controlli.
 ms.assetid: DBF7FBDF-AADC-45CE-833E-F893C1129FC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0b84a8a77d18903ddbdb29687cc2b97b88872b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 8fa2ad8ba22c2972c6bdd502728af413d4800dabf0ab5c9196a4033a52267115
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103873017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920711"
 ---
 # <a name="how-to-create-a-tabbed-dialog-box"></a>Come creare una finestra di dialogo a schede
 
-Nell'esempio riportato in questa sezione viene illustrato come creare una finestra di dialogo in cui vengono utilizzate schede per fornire più pagine di controlli. La finestra di dialogo principale è una finestra di dialogo modale. Ogni pagina di controlli è definita da un modello di finestra di dialogo con lo stile [**WS \_ figlio**](/windows/desktop/winmsg/window-styles) . Quando si seleziona una scheda, viene creata una finestra di dialogo non modale per la pagina in ingresso e la finestra di dialogo per la pagina in uscita viene distrutta.
+L'esempio in questa sezione illustra come creare una finestra di dialogo che usa schede per fornire più pagine di controlli. La finestra di dialogo principale è una finestra di dialogo modale. Ogni pagina di controlli è definita da un modello di finestra di dialogo con lo [**stile \_ WS CHILD.**](/windows/desktop/winmsg/window-styles) Quando si seleziona una scheda, viene creata una finestra di dialogo non modabile per la pagina in ingresso e la finestra di dialogo per la pagina in uscita viene distrutta.
 
 > [!Note]  
-> In molti casi, è possibile implementare più facilmente le finestre di dialogo a più pagine tramite le finestre delle proprietà. Per ulteriori informazioni sulle finestre delle proprietà, vedere [informazioni sulle finestre delle proprietà](property-sheets.md).
+> In molti casi, è possibile implementare più facilmente finestre di dialogo a più pagine usando le finestre delle proprietà. Per altre informazioni sulle finestre delle proprietà, vedere [Informazioni sulle finestre delle proprietà](property-sheets.md).
 
- 
+ 
 
-Il modello per la finestra di dialogo principale definisce semplicemente due controlli Button. Quando si elabora il messaggio [**WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) , la routine della finestra di dialogo consente di creare un controllo struttura a schede e di caricare le risorse del modello della finestra di dialogo per ognuna delle finestre di dialogo figlio.
+Il modello per la finestra di dialogo principale definisce semplicemente due controlli pulsante. Quando si elabora [**il messaggio WM \_ INITDIALOG,**](/windows/desktop/dlgbox/wm-initdialog) la procedura della finestra di dialogo crea un controllo Struttura a schede e carica le risorse del modello di finestra di dialogo per ognuna delle finestre di dialogo figlio.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 ### <a name="create-a-tabbed-dialog-box"></a>Creare una finestra di dialogo a schede
 
-Le informazioni vengono salvate in una struttura definita dall'applicazione denominata DLGHDR. Un puntatore a questa struttura è associato alla finestra di dialogo tramite la funzione [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) . La struttura viene definita nel file di intestazione dell'applicazione, come indicato di seguito.
+Le informazioni vengono salvate in una struttura definita dall'applicazione denominata DLGHDR. Un puntatore a questa struttura è associato alla finestra di dialogo usando la [**funzione SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) La struttura è definita nel file di intestazione dell'applicazione, come indicato di seguito.
 
 
 ```C++
@@ -53,9 +53,9 @@ typedef struct tag_dlghdr {
 
 
 
-La funzione seguente elabora il messaggio [**WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) per la finestra di dialogo principale. La funzione alloca la `DLGHDR` struttura, carica le risorse del modello della finestra di dialogo per le finestre di dialogo figlio e crea il controllo Tab.
+La funzione seguente elabora il [**messaggio WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) per la finestra di dialogo principale. La funzione alloca la struttura , carica le risorse del modello di finestra di dialogo per le finestre di dialogo figlio `DLGHDR` e crea il controllo Struttura a schede.
 
-La dimensione di ogni finestra di dialogo figlio viene specificata dalla struttura [**DLGTEMPLATEEX**](/windows/desktop/dlgbox/dlgtemplateex) . La funzione esamina le dimensioni di ogni finestra di dialogo e usa la macro per il messaggio [**TCM \_ ADJUSTRECT**](tcm-adjustrect.md) per calcolare le dimensioni appropriate per il controllo struttura a schede. Quindi ridimensiona la finestra di dialogo e posiziona i due pulsanti di conseguenza. Questo esempio Invia **TCM \_ ADJUSTRECT** usando la macro [**TabCtrl \_ ADJUSTRECT**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect) .
+Le dimensioni di ogni finestra di dialogo figlio vengono specificate dalla [**struttura DLGTEMPLATEEX.**](/windows/desktop/dlgbox/dlgtemplateex) La funzione esamina le dimensioni di ogni finestra di dialogo e usa la macro per il messaggio [**TCM \_ ADJUSTRECT**](tcm-adjustrect.md) per calcolare le dimensioni appropriate per il controllo Struttura a schede. Ridimensiona quindi la finestra di dialogo e posiziona i due pulsanti di conseguenza. Questo esempio invia **TCM \_ ADJUSTRECT** usando la macro [**TabCtrl \_ AdjustRect.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_adjustrect)
 
 
 ```C++
@@ -195,7 +195,7 @@ DLGTEMPLATEEX* DoLockDlgRes(LPCTSTR lpszResName)
 
 
 
-La funzione seguente elabora il codice di notifica [ \_ selChange di TCN](tcn-selchange.md) per la finestra di dialogo principale. La funzione Elimina la finestra di dialogo per la pagina in uscita, se disponibile. USA quindi la funzione [**CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) per creare una finestra di dialogo non modale per la pagina in arrivo.
+La funzione seguente elabora il [codice di notifica TCN \_ SELCHANGE](tcn-selchange.md) per la finestra di dialogo principale. La funzione elimina la finestra di dialogo per la pagina in uscita, se presente. Usa quindi la [**funzione CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) per creare una finestra di dialogo non modala per la pagina in ingresso.
 
 
 ```C++
@@ -226,7 +226,7 @@ VOID OnSelChanged(HWND hwndDlg)
 
 
 
-La funzione seguente elabora il messaggio [**WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) per ogni finestra di dialogo figlio. Non è possibile specificare la posizione di una finestra di dialogo creata utilizzando la funzione [**CreateDialogIndirect**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) . Questa funzione utilizza la funzione [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) per posizionare la finestra di dialogo figlio all'interno dell'area di visualizzazione del controllo scheda.
+La funzione seguente elabora il [**messaggio WM \_ INITDIALOG**](/windows/desktop/dlgbox/wm-initdialog) per ognuna delle finestre di dialogo figlio. Non è possibile specificare la posizione di una finestra di dialogo creata usando la [**funzione CreateDialogIndirect.**](/windows/desktop/api/winuser/nf-winuser-createdialogindirecta) Questa funzione usa la [**funzione SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) per posizionare la finestra di dialogo figlio all'interno dell'area di visualizzazione del controllo Struttura a schede.
 
 
 ```C++
@@ -255,12 +255,12 @@ VOID WINAPI OnChildDialogInit(HWND hwndDlg)
 
 <dl> <dt>
 
-[Uso di controlli struttura a schede](using-tab-controls.md)
+[Uso dei controlli Struttura a schede](using-tab-controls.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

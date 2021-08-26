@@ -1,11 +1,11 @@
 ---
-title: IWMPPlaylistCollection (metodo getByName)
-description: Il metodo getByName restituisce un'interfaccia IWMPPlaylistArray che consente di accedere alle playlist con il nome specificato, se presenti.
+title: Metodo IWMPPlaylistCollection getByName
+description: Il metodo getByName restituisce un'interfaccia IWMPPlaylistArray che fornisce l'accesso alle playlist con il nome specificato, se presente.
 ms.assetid: d41afab1-4103-4f59-a432-21a502499444
 keywords:
-- metodo getByName Media Player Windows
-- metodo getByName Media Player Windows, interfaccia IWMPPlaylistCollection
-- Interfaccia IWMPPlaylistCollection Windows Media Player, metodo getByName
+- Metodo getByName Windows Media Player
+- Metodo getByName Windows Media Player, interfaccia IWMPPlaylistCollection
+- Interfaccia IWMPPlaylistCollection Windows Media Player metodo , getByName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e51f83b4db019286c04762a081e649fec282135e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fcee45af3ef55d53a05bab290fa92d3e6842fbb097358235b6720cbb1b54e0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999741"
 ---
-# <a name="iwmpplaylistcollectiongetbyname-method"></a>Metodo IWMPPlaylistCollection:: getByName
+# <a name="iwmpplaylistcollectiongetbyname-method"></a>Metodo IWMPPlaylistCollection::getByName
 
-Il metodo **GetByName** restituisce un'interfaccia **IWMPPlaylistArray** che consente di accedere alle playlist con il nome specificato, se presenti.
+Il **metodo getByName** restituisce **un'interfaccia IWMPPlaylistArray** che fornisce l'accesso alle playlist con il nome specificato, se presente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ Implements IWMPPlaylistCollection.getByName
 
 <dl> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome della playlist.
+Oggetto **System.String** che rappresenta il nome della playlist.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPPlaylistArray** per la matrice di playlist recuperata.
+Interfaccia **WMPLib.IWMPPlaylistArray** per la matrice recuperata di playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Usare **IWMPPlaylistArray. Count** per determinare se esiste una playlist. Se **count** è zero, la matrice è vuota.
+Usare **IWMPPlaylistArray.count per** determinare se esiste una playlist. Se **count** è zero, la matrice è vuota.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato il comando **GetByName** per controllare la raccolta di playlist per una playlist denominata "Preferiti--4 e 5 stelle con classificazione". Se esiste una playlist con lo stesso nome, **GetByName** la imposta come playlist corrente. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene utilizzato **getByName** per controllare la raccolta di playlist per una playlist denominata "Favorites -- 4 e 5 star rated". Se esiste una playlist con tale nome, **getByName** la imposta come playlist corrente. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -118,7 +118,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -131,7 +131,7 @@ End If
 [**Interfaccia IWMPPlaylistArray (VB e C#)**](iwmpplaylistarray--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistArray. Count (VB e C#)**](wmplibiwmpplaylistarray-iwmpplaylistarray-count--vb-and-c.md)
+[**IWMPPlaylistArray.count (VB e C#)**](wmplibiwmpplaylistarray-iwmpplaylistarray-count--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPPlaylistCollection (VB e C#)**](iwmpplaylistcollection--vb-and-c.md)

@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_PIPELINE_STATE_STREAM_HS (D3dx12. h)
-description: Struttura di supporto utilizzata per descrivere un Hull shader come singolo oggetto adatto per la descrizione di un flusso.
+title: CD3DX12_PIPELINE_STATE_STREAM_HS struttura (D3dx12.h)
+description: Struttura helper usata per descrivere uno hull shader come un singolo oggetto adatto per una descrizione del flusso.
 ms.assetid: 4958161D-3E79-4227-ADD7-7F53E34B2175
 keywords:
-- Struttura CD3DX12_PIPELINE_STATE_STREAM_HS
+- CD3DX12_PIPELINE_STATE_STREAM_HS struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba94fa272a670a83547775a582c8be967eeb907e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5c5b13c32c9da13a3cfce03605494bc8608a233f5979cb7b2757f203571c7901
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028361"
 ---
-# <a name="cd3dx12_pipeline_state_stream_hs-structure"></a>\_ \_ \_ Struttura HS del flusso di stato della pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_hs-structure"></a>Struttura \_ \_ \_ \_ HS FLUSSO STATO PIPELINE CD3DX12
 
-Struttura di supporto utilizzata per descrivere un Hull shader come singolo oggetto adatto per la descrizione di un flusso.
+Struttura helper usata per descrivere uno hull shader come un singolo oggetto adatto per una descrizione del flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_HS {
 
 <dl> <dt>
 
-**\_ \_ Sa flusso di stato della pipeline CD3DX12 \_ \_**
+**HS FLUSSO STATO PIPELINE CD3DX12 \_ \_ \_ \_**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ flusso di stato della pipeline CD3DX12 \_ \_ \_ .
+Crea una nuova istanza non inizializzata di un flusso HS FLUSSO STATO PIPELINE CD3DX12. \_ \_ \_ \_
 
 </dd> <dt>
 
-**\_Flusso di stato della pipeline CD3DX12 \_ \_ \_ HS (D3D12 di \_ \_ BYTECODE shader const &i)**
+**HS FLUSSO STATO \_ PIPELINE \_ \_ \_ CD3DX12 (D3D12 \_ SHADER \_ BYTECODE const &i)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ flusso di stato della pipeline CD3DX12 \_ \_ \_ , inizializzato con un tipo di sottooggetto del **tipo di oggetto di stato della pipeline D3D12 \_ \_ \_ \_ \_ HS** e dati di oggetti suboggetto copiati da *i*, una struttura [**\_ \_ BYTECODE dello shader D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode) .
+Crea una nuova istanza di HS FLUSSO STATO PIPELINE CD3DX12, inizializzata con un tipo di oggetto secondario \_ \_ \_ \_ **D3D12 \_ PIPELINE \_ STATE \_ SUBOBJECT TYPE \_ \_ HS** e dati di oggetto secondari copiati da i , una struttura [**\_ \_ BYTECODE D3D12 SHADER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 </dd> <dt>
 
-**operator = ( \_ BYTECODE D3D12 shader \_ const& i)**
+**operator=(D3D12 \_ SHADER \_ BYTECODE const& i)**
 </dt> <dd>
 
 Operatore di assegnazione di copia.
 
 </dd> <dt>
 
-**operatore D3D12 \_ shader \_ byte () const**
+**Operatore D3D12 \_ SHADER \_ BYTECODE() const**
 </dt> <dd>
 
-Conversione implicita in una struttura [**\_ \_ BYTECODE dello shader D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode) .
+Conversione implicita in [**una struttura \_ \_ BYTECODE D3D12 SHADER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-\_ \_ \_ Il flusso di stato \_ della pipeline CD3DX12 HS è una specializzazione typedef del modello di [**\_ \_ \_ \_ sottooggetto flusso di stato della pipeline CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e viene definito come segue:
+CD3DX12 PIPELINE STATE STREAM HS è una specializzazione typedef del modello \_ \_ \_ \_ [**\_ \_ \_ \_ SUBOBJECT PIPELINE STATE STREAM CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e viene definita come segue:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_SHADER_BYTECODE, D3D12_PIP
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_SHADER_BYTECODE, D3D12_PIP
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Sottooggetto \_ flusso di stato della pipeline CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**OGGETTO SECONDARIO FLUSSO DI STATO DELLA PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo di \_ \_ sottooggetto stato della pipeline D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DI OGGETTO SECONDARIO STATO PIPELINE D3D12 \_ \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un'associazione tra un controller di protocollo e un'unità logica esposta.
 ms.assetid: e8bf2b32-b4a6-4963-8a50-2b06776965e8
-title: Classe CIM_ProtocolControllerForUnit
+title: CIM_ProtocolControllerForUnit classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 26020745057d5963ed4a892ba8639ac078aaa20b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2722bca49dbac3996295c2937003877321d5c58eb8394b4405d9ce9afce65b48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981171"
 ---
-# <a name="cim_protocolcontrollerforunit-class"></a>CIM \_ ProtocolControllerForUnit (classe)
+# <a name="cim_protocolcontrollerforunit-class"></a>Classe CIM \_ ProtocolControllerForUnit
 
 Rappresenta un'associazione tra un controller di protocollo e un'unità logica esposta.
 
@@ -41,13 +41,13 @@ class CIM_ProtocolControllerForUnit : CIM_ProtocolControllerForDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ProtocolControllerForUnit** presenta questi tipi di membri:
+La **classe CIM \_ ProtocolControllerForUnit** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ProtocolControllerForUnit** dispone di queste proprietà.
+La **classe CIM \_ ProtocolControllerForUnit** ha queste proprietà.
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Tipo di dati: **CIM \_ ProtocolController**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
 Controller del protocollo.
@@ -76,7 +76,7 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Unità logica associata al controller del protocollo.
@@ -86,13 +86,13 @@ Unità logica associata al controller del protocollo.
 **DeviceAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Diritti di accesso concessi all'unità logica tramite il controller di protocollo.
+Diritti di accesso concessi all'unità logica tramite il controller del protocollo.
 
 <dt>
 
@@ -105,14 +105,14 @@ Diritti di accesso concessi all'unità logica tramite il controller di protocoll
 
 <span id="Read_Write"></span><span id="read_write"></span><span id="READ_WRITE"></span>
 
-**Lettura/scrittura** (2)
+**Lettura /Scrittura** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Read-Only"></span><span id="read-only"></span><span id="READ-ONLY"></span>
 
-Sola **lettura** (3)
+**Sola lettura** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -126,14 +126,14 @@ Sola **lettura** (3)
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (5.. 15999)
+**DmTF Reserved** (5..15999)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (16000...)
+**Fornitore riservato** (16000. . )
 
 
 </dt> <dd></dd> </dl>
@@ -148,8 +148,8 @@ Sola **lettura** (3)
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -158,7 +158,7 @@ Sola **lettura** (3)
 
 <dl> <dt>
 
-[**\_PROTOCOLCONTROLLERFORDEVICE CIM**](cim-protocolcontrollerfordevice.md)
+[**Protocollo \_ CIMControllerForDevice**](cim-protocolcontrollerfordevice.md)
 </dt> </dl>
 
  

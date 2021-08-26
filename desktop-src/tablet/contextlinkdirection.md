@@ -1,7 +1,7 @@
 ---
 description: Specifica la direzione di un oggetto IContextLink.
 ms.assetid: 4ba7dca7-6801-45bf-bbf1-1dd3172fbfa2
-title: Enumerazione ContextLinkDirection (IACom. h)
+title: Enumerazione ContextLinkDirection (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: 82e10c7e908b4cc4035d8bfdde55d863f7b6ecf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cd187b2a6efed6de5e6ee866cbd2e75ad67defc67b4b6d2250eb9117c62d89e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941181"
 ---
 # <a name="contextlinkdirection-enumeration"></a>Enumerazione ContextLinkDirection
 
-Specifica la direzione di un oggetto [**IContextLink**](icontextlink.md) .
+Specifica la direzione di un [**oggetto IContextLink.**](icontextlink.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ typedef enum ContextLinkDirection {
 
 <dl> <dt>
 
-<span id="ContextLinkDirection_LinksWith"></span><span id="contextlinkdirection_linkswith"></span><span id="CONTEXTLINKDIRECTION_LINKSWITH"></span>**\_LinksWith ContextLinkDirection**
+<span id="ContextLinkDirection_LinksWith"></span><span id="contextlinkdirection_linkswith"></span><span id="CONTEXTLINKDIRECTION_LINKSWITH"></span>**Collegamenti \_ ContextLinkDirectionWith**
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) è un disegno direzionale che punta lontano da [**IContextLink**](icontextlink.md).
+[**IContextNode è**](icontextnode.md) un disegno direzionale che punta [**all'oggetto IContextLink.**](icontextlink.md)
 
 </dd> <dt>
 
-<span id="ContextLinkDirection_LinksFrom"></span><span id="contextlinkdirection_linksfrom"></span><span id="CONTEXTLINKDIRECTION_LINKSFROM"></span>**\_LinksFrom ContextLinkDirection**
+<span id="ContextLinkDirection_LinksFrom"></span><span id="contextlinkdirection_linksfrom"></span><span id="CONTEXTLINKDIRECTION_LINKSFROM"></span>**Collegamenti \_ ContextLinkDirectionFrom**
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) è un disegno direzionale che punta al [**IContextLink**](icontextlink.md).
+[**IContextNode è**](icontextnode.md) un disegno direzionale che punta a [**IContextLink.**](icontextlink.md)
 
 </dd> <dt>
 
-<span id="ContextLinkDirection_LinksTo"></span><span id="contextlinkdirection_linksto"></span><span id="CONTEXTLINKDIRECTION_LINKSTO"></span>**\_CollegamentiPer ContextLinkDirection**
+<span id="ContextLinkDirection_LinksTo"></span><span id="contextlinkdirection_linksto"></span><span id="CONTEXTLINKDIRECTION_LINKSTO"></span>**Collegamenti \_ ContextLinkDirectionTo**
 </dt> <dd>
 
-Nessun disegno direzionale nel collegamento. Un disegno Ink può ad esempio sottolineare una parola di input penna. Non esiste alcuna direzione dedotta dalla sottolineatura.
+Non sono presenti disegni direzionali nel collegamento. Ad esempio, un disegno a penna può sottolineare una parola input penna. Non è presente alcuna direzione dedotto dalla sottolineatura.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzato un oggetto [**IContextNode**](icontextnode.md) , `m_pSelectedNode` , e vengono salvati tutti gli oggetti **IContextNode** a cui si collegano spostando l'albero predecessore e aggiungendo gli oggetti in un `CArray` oggetto `linkedToNodes` . `CheckHResult` è una funzione che accetta un oggetto `HRESULT` e una stringa e genera un'eccezione creata con la stringa se `HRESULT` non ha **esito positivo**.
+L'esempio seguente accetta un oggetto [**IContextNode,**](icontextnode.md) e salva tutti gli oggetti `m_pSelectedNode` **IContextNode** a cui si collega, percorrendo l'albero predecessore e aggiungendo gli oggetti in un `CArray` oggetto , `linkedToNodes` . `CheckHResult` è una funzione che accetta e una stringa e genera un'eccezione creata con `HRESULT` la stringa se non è `HRESULT` **SUCCESS**.
 
 
 ```C++
@@ -116,9 +116,9 @@ while (pAncestor != NULL)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 
 
 

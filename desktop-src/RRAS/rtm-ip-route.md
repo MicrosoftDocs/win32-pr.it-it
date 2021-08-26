@@ -1,10 +1,10 @@
 ---
-title: Struttura RTM_IP_ROUTE (RTM. h)
-description: La \_ struttura della \_ route IP RTM contiene informazioni che descrivono una route di proprietà della famiglia di protocolli IP.
+title: RTM_IP_ROUTE struttura (Rtm.h)
+description: La struttura RTM \_ IP ROUTE contiene informazioni che \_ descrivono una route di proprietà della famiglia di protocolli IP.
 ms.assetid: e752a4ae-a6bf-4cd3-9638-7615ff3901b7
 keywords:
-- RAS struttura RTM_IP_ROUTE
-- RAS puntatore alla struttura PRTM_IP_ROUTE
+- RTM_IP_ROUTE struttura RAS
+- PRTM_IP_ROUTE puntatore alla struttura RAS
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1978503a3ec37e0c39716569030d5ea6599e19d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0fd854864dcc61397fa52df7af9419a38ac829a81382be6b6190e4cb3db41d7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026731"
 ---
-# <a name="rtm_ip_route-structure"></a>\_Struttura della \_ route IP RTM
+# <a name="rtm_ip_route-structure"></a>Struttura DI \_ ROUTE IP \_ RTM
 
-\[Questa API è stata sostituita dall'API di [Gestione tabelle di routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API di Routing Table Manager versione 2.\]
+\[Questa API è stata sostituita dall'API Gestione tabelle di [routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API Gestione tabelle di routing versione 2.\]
 
-La struttura della **\_ \_ route IP RTM** contiene informazioni che descrivono una route di proprietà della famiglia di protocolli IP.
+La **struttura RTM \_ IP \_ ROUTE** contiene informazioni che descrivono una route di proprietà della famiglia di protocolli IP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,58 +49,58 @@ typedef struct _RTM_IP_ROUTE {
 
 <dl> <dt>
 
-**\_Timestamp RR**
+**RR \_ TimeStamp**
 </dt> <dd>
 
-Specifica l'ora di creazione o dell'ultimo aggiornamento della voce della route. Questo membro viene impostato da Gestione tabelle di routing. Il tempo viene espresso come una struttura FILETIME.
+Specifica l'ora di creazione o ultimo aggiornamento della voce di route. Questo membro viene impostato dal gestore tabelle di routing. L'ora viene espressa come struttura FILETIME.
 
 </dd> <dt>
 
-**\_ROUTINGPROTOCOL RR**
+**Routing \_ RRProtocol**
 </dt> <dd>
 
 Specifica il protocollo di routing che ha aggiunto la route.
 
 </dd> <dt>
 
-**\_INTERFACEID RR**
+**RR \_ InterfaceID**
 </dt> <dd>
 
-Specifica l'interfaccia tramite la quale è stata ottenuta la route.
+Specifica l'interfaccia tramite cui è stata ottenuta la route.
 
 </dd> <dt>
 
-**\_PROTOCOLSPECIFICDATA RR**
+**Protocollo \_ RRSpecificData**
 </dt> <dd>
 
-Specifica una struttura di [**\_ \_ dati specifica del protocollo**](protocol-specific-data.md) che contiene memoria riservata per i dati specifici del protocollo di routing.
+Specifica una struttura [**PROTOCOL \_ SPECIFIC \_ DATA**](protocol-specific-data.md) che contiene memoria riservata ai dati specifici del protocollo di routing.
 
 </dd> <dt>
 
-**\_Rete RR**
+**Rete \_ RR**
 </dt> <dd>
 
-Specifica una struttura di [**\_ rete IP**](ip-network.md) che contiene un indirizzo di rete IP.
+Specifica una struttura [**DI \_ RETE IP**](ip-network.md) che contiene un indirizzo di rete IP.
 
 </dd> <dt>
 
-**\_NEXTHOPADDRESS RR**
+**RR \_ NextHopAddress**
 </dt> <dd>
 
-Specifica una struttura dell' [**\_ \_ \_ indirizzo di hop successivo IP**](ip-next-hop-address.md) che contiene l'indirizzo del router di hop successivo.
+Specifica una struttura [**IP \_ NEXT HOP \_ \_ ADDRESS**](ip-next-hop-address.md) che contiene l'indirizzo del router dell'hop successivo.
 
 </dd> <dt>
 
-**\_FAMILYSPECIFICDATA RR**
+**RR \_ FamilySpecificData**
 </dt> <dd>
 
-Specifica una struttura di [**\_ \_ dati specifica dell'IP**](ip-specific-data.md) che contiene dati specifici della famiglia di protocolli IP.
+Specifica una struttura [**IP \_ SPECIFIC \_ DATA**](ip-specific-data.md) che contiene dati specifici del protocollo IP.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I membri della struttura **della \_ \_ route IP RTM** sono tutti allineati a **DWORD** .
+I membri della struttura **RTM \_ IP \_ ROUTE** sono tutti **allineati con DWORD.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -111,7 +111,7 @@ I membri della struttura **della \_ \_ route IP RTM** sono tutti allineati a **D
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                        |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -119,19 +119,19 @@ I membri della struttura **della \_ \_ route IP RTM** sono tutti allineati a **D
 
 <dl> <dt>
 
-[Riferimento di gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
+[Informazioni di riferimento su Gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Strutture di gestione tabelle di routing versione 1](routing-table-manager-version-1-structures.md)
+[Strutture di Gestione tabelle di routing versione 1](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_rete IP**](ip-network.md)
+[**RETE \_ IP**](ip-network.md)
 </dt> <dt>
 
-[**\_ \_ indirizzo hop successivo \_ IP**](ip-next-hop-address.md)
+[**INDIRIZZO \_ \_ HOP SUCCESSIVO \_ IP**](ip-next-hop-address.md)
 </dt> <dt>
 
-[**\_dati specifici \_ IP**](ip-specific-data.md)
+[**DATI \_ SPECIFICI \_ DELL'INDIRIZZO IP**](ip-specific-data.md)
 </dt> </dl>
 
  

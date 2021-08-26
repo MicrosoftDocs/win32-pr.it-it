@@ -1,10 +1,10 @@
 ---
-title: MSMQ-ricezione-messaggi non recapitabili-diritto esteso
-description: Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
+title: msmq-Receive-Dead-Letter extended right
+description: Consente la ricezione di messaggi dalla coda dei messaggi non recapitati.
 ms.assetid: e7e37e6b-8f2a-4ca6-bfeb-0e74d7a80785
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Receive-messaggio non recapitabile-schema AD con diritti estesi
+- msmq-Receive-Dead-Letter extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee68beb0afc7b9bcbb38157ffd1de82fc447dd4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b10155964a22c129cc614c8a3a898c654a0d8d8eb8dfae462f265c90010452d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922111"
 ---
-# <a name="msmq-receive-dead-letter-extended-right"></a>MSMQ-ricezione-messaggi non recapitabili-diritto esteso
+# <a name="msmq-receive-dead-letter-extended-right"></a>msmq-Receive-Dead-Letter extended right
 
-Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
+Consente la ricezione di messaggi dalla coda dei messaggi non recapitati.
 
 
 
 | Voce | Valore |
 |--------------|--------------------------------------|
-| CN           | MSMQ-ricezione-messaggio non recapitabile             |
-| Display-Name | Ricevi lettera non recapitabile                  |
+| CN           | msmq-Receive-Dead-Letter             |
+| Display-Name | Ricevere messaggi non recapitati                  |
 | Rights-GUID  | 4b6e08c0-df3c-11d1-9c86-006008764d0e |
 
 
@@ -50,7 +50,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -61,7 +61,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -72,7 +72,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -83,7 +83,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -94,7 +94,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 
@@ -105,7 +105,7 @@ Consente di ricevere messaggi dalla coda dei messaggi non recapitabili.
 | Voce | Valore |
 |-------------------------|--------------------------------------------------------------|
 | Applies-To              | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localization-display-ID | 38                                                           |
+| Localization-Display-ID | 38                                                           |
 
 
 

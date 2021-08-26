@@ -3,9 +3,9 @@ title: Proprietà URL IWMPMetadataPicture
 description: Questa proprietà è solo per uso interno. | Proprietà URL IWMPMetadataPicture
 ms.assetid: 34e01c7b-cac2-4c16-8ed7-0f62652ac5be
 keywords:
-- Proprietà URL Media Player Windows
-- Proprietà URL Media Player Windows, interfaccia IWMPMetadataPicture
-- Interfaccia IWMPMetadataPicture Windows Media Player, proprietà URL
+- Proprietà URL Windows Media Player
+- Proprietà URL Windows Media Player, interfaccia IWMPMetadataPicture
+- Interfaccia IWMPMetadataPicture Windows Media Player , proprietà URL
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d781748cde0a5067a830280316700c63e4004d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e563822cd442add8bc1c169a887ee67b93669e22d8924a403b42a120ca532556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000101"
 ---
-# <a name="iwmpmetadatapictureurl-property"></a>Proprietà IWMPMetadataPicture:: URL
+# <a name="iwmpmetadatapictureurl-property"></a>Proprietà IWMPMetadataPicture::URL
 
 Questa proprietà è solo per uso interno.
 
@@ -52,7 +52,7 @@ Public ReadOnly Property URL As System.String
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

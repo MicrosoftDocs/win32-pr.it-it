@@ -1,7 +1,7 @@
 ---
-description: Verifica se un puntatore è NULL. Se il puntatore è NULL, la funzione o il metodo in cui viene visualizzata la macro restituisce il valore specificato.
+description: Controlla se un puntatore è NULL. Se il puntatore è NULL, la funzione o il metodo in cui viene visualizzata la macro restituisce il valore specificato.
 ms.assetid: eca73fbf-5fd8-4b76-af06-ca0c22510b55
-title: Macro CheckPoint (Wxdebug. h)
+title: Macro CheckPointer (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 04f442303e520ef758a3576d21c2df810ef26fb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef1fa2370def45321958862ebaf3ded341b13f45ddae1ecafdc4a17e937aca08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999291"
 ---
-# <a name="checkpointer-macro"></a>CheckPoint (macro)
+# <a name="checkpointer-macro"></a>Macro CheckPointer
 
-Verifica se un puntatore è **null**. Se il puntatore è **null**, la funzione o il metodo in cui viene visualizzata la macro restituisce il valore specificato.
+Controlla se un puntatore è **NULL.** Se il puntatore è **NULL,** la funzione o il metodo in cui viene visualizzata la macro restituisce il valore specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ HRESULT CheckPointer(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
-Puntatore da verificare.
+Puntatore da controllare.
 
 </dd> <dt>
 
-*RET* 
+*Ret* 
 </dt> <dd>
 
-Valore restituito dalla funzione o dal metodo se *p* è **null**.
+Valore restituito dalla funzione o dal metodo se *p* è **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione circostante restituisce *ret* se *p* è **null**. In caso contrario, la macro non determina la restituzione della funzione circostante.
+La funzione circostante restituisce *ret* se *p* è **NULL.** In caso contrario, la macro non causa la restituzione della funzione circostante.
 
 ## <a name="examples"></a>Esempio
 
@@ -79,7 +79,7 @@ HRESULT MyFunction(VOID *pSomeParameter)
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ HRESULT MyFunction(VOID *pSomeParameter)
 
 <dl> <dt>
 
-[Macro di convalida del puntatore](pointer-validation-macros.md)
+[Macro di convalida dei puntatori](pointer-validation-macros.md)
 </dt> </dl>
 
  

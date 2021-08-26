@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM RealizesAggregatePExtent rappresenta la relazione in cui la \_ classe CIM AggregatePExtent è realizzata su un supporto fisico.
+description: L'associazione CIM RealizesAggregatePExtent rappresenta la relazione in cui viene realizzata la classe \_ CIM \_ AggregatePExtent su un supporto fisico.
 ms.assetid: 420dde1d-daa8-4cd3-b3fd-c2aefdc1e217
 ms.tgt_platform: multiple
-title: Classe CIM_RealizesAggregatePExtent
+title: CIM_RealizesAggregatePExtent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: eb80414134534d09a4030e2e87003a660e69fd9f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1c5eaf7e53fc7972795d0502c156e753bae60c777987e7304ef27a3a3fde54e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920941"
 ---
-# <a name="cim_realizesaggregatepextent-class"></a>CIM \_ RealizesAggregatePExtent (classe)
+# <a name="cim_realizesaggregatepextent-class"></a>Classe CIM \_ RealizesAggregatePExtent
 
-L'associazione **CIM \_ RealizesAggregatePExtent** rappresenta la relazione in cui la classe [**CIM \_ AggregatePExtent**](cim-aggregatepextent.md) è realizzata su un supporto fisico.
+**L'associazione CIM \_ RealizesAggregatePExtent** rappresenta la relazione in cui viene realizzata la classe [**CIM \_ AggregatePExtent**](cim-aggregatepextent.md) su un supporto fisico.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_RealizesAggregatePExtent : CIM_Realizes
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ RealizesAggregatePExtent** presenta questi tipi di membri:
+La **classe CIM \_ RealizesAggregatePExtent** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ RealizesAggregatePExtent** dispone di queste proprietà.
+La **classe CIM \_ RealizesAggregatePExtent** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,10 +66,10 @@ Tipo di dati: **CIM \_ PhysicalMedia**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ PhysicalMedia CIM**](cim-physicalmedia.md) che descrive il supporto fisico in cui si realizza l'extent.
+Oggetto [**CIM \_ PhysicalMedia**](cim-physicalmedia.md) che descrive i supporti fisici in cui viene realizzato l'extent.
 
 </dd> <dt>
 
@@ -82,20 +82,20 @@ Tipo di dati: **CIM \_ AggregatePExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-[**\_ AggregatePExtent CIM**](cim-aggregatepextent.md) disponibile sul supporto.
+[**CiM \_ AggregatePExtent**](cim-aggregatepextent.md) che si trova nel supporto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ RealizesAggregatePExtent** è derivata da [**CIM \_ realizzi**](cim-realizes.md).
+La **classe CIM \_ RealizesAggregatePExtent** è derivata da [**CIM \_ Realizes.**](cim-realizes.md)
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**CIM \_ realizza**](cim-realizes.md)
+[**CIM \_ Realizes**](cim-realizes.md)
 </dt> </dl>
 
  

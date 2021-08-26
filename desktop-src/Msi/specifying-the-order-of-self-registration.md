@@ -1,23 +1,23 @@
 ---
-description: Si noti che non è possibile specificare l'ordine in cui il programma di installazione registra o Annulla la registrazione delle dll autoregistrate usando le azioni SelfRegModules e SelfUnRegModules.
+description: Si noti che non è possibile specificare l'ordine in cui il programma di installazione registra o annulla la registrazione delle DLL autoregistrate usando le azioni SelfRegModules e SelfUnRegModules.
 ms.assetid: 46ee5ea2-35fd-4352-8a45-572d6fb5e080
 title: Specifica dell'ordine di registrazione automatica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d99587f6e6bdd8726f2cdc584fc2f399d81ae91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bb26fbebad3167fbea95679a1ea7a29c28946ae6fa2dd2b014be6ade986e28f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039681"
 ---
 # <a name="specifying-the-order-of-self-registration"></a>Specifica dell'ordine di registrazione automatica
 
-Si noti che non è possibile specificare l'ordine in cui il programma di installazione registra o Annulla la registrazione delle dll autoregistrate usando le azioni [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules](selfunregmodules-action.md) . Queste azioni registrano tutti i moduli elencati nella [tabella SelfReg](selfreg-table.md). Il programma di installazione non registra autonomamente i file exe.
+Si noti che non è possibile specificare l'ordine in cui il programma di installazione registra o annulla la registrazione delle DLL autoregistrate usando le azioni [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules.](selfunregmodules-action.md) Queste azioni registrano tutti i moduli elencati nella [tabella SelfReg](selfreg-table.md). Il programma di installazione non esegue la registrazione .exe file.
 
-Per specificare l'ordine in cui il programma di installazione registra o Annulla la registrazione dei moduli, è necessario usare due [azioni personalizzate](custom-actions.md) per ogni modulo. Un'azione personalizzata per DllRegisterServer e una seconda per DllUnregisterServer. Queste azioni personalizzate devono quindi essere create nella [tabella InstallExecuteSequence](installexecutesequence-table.md) in corrispondenza del punto della sequenza in cui deve essere registrata o annullata la registrazione della dll.
+Per specificare l'ordine in cui il programma di installazione registra o annulla la registrazione dei moduli, è necessario usare due [azioni personalizzate](custom-actions.md) per ogni modulo. Un'azione personalizzata per DllRegisterServer e una seconda per DllUnregisterServer. Queste azioni personalizzate devono quindi essere scritte nella tabella [InstallExecuteSequence](installexecutesequence-table.md) nel punto della sequenza in cui la DLL deve essere registrata o annullata.
 
-Nell'esempio seguente viene illustrato come creare il database per pianificare la registrazione automatica di una DLL in un determinato punto della sequenza di azione.
+L'esempio seguente illustra come creare il database per pianificare la registrazione automatica di una DLL in un determinato punto della sequenza di azioni.
 
 [Tabella file](file-table.md) (parziale)
 
@@ -31,13 +31,13 @@ Nell'esempio seguente viene illustrato come creare il database per pianificare l
 
  
 
-[Tabella componenti](component-table.md) (parziale)
+[Tabella dei componenti](component-table.md) (parziale)
 
 
 
-| Componente   | ComponentId | Directory\_ | KeyPath |
+| Componente   | Componentid | Directory\_ | KeyPath |
 |-------------|-------------|-------------|---------|
-| myComponent | {*GUID*}  | myFolder    | mydll   |
+| myComponent | {*a GUID*}  | myFolder    | mydll   |
 
 
 
@@ -47,10 +47,10 @@ Nell'esempio seguente viene illustrato come creare il database per pianificare l
 
 
 
-| Directory | \_Padre directory | DefaultDir          |
+| Directory | Padre \_ della directory | DefaultDir          |
 |-----------|-------------------|---------------------|
-| TARGETDIR |                   | SourceDir           |
-| myFolder  | TARGETDIR         | cartella \| My |
+| Targetdir |                   | SourceDir           |
+| myFolder  | Targetdir         | Cartella \| myFolder My Folder |
 
 
 
@@ -62,8 +62,8 @@ Nell'esempio seguente viene illustrato come creare il database per pianificare l
 
 | Azione     | Tipo | Source (Sorgente)   | Destinazione                                     |
 |------------|------|----------|--------------------------------------------|
-| mydllREG   | 3170 | myFolder | " \[ SystemFolder \] msiexec"/y " \[ \# myDll \] " |
-| mydllUNREG | 3170 | myFolder | " \[ SystemFolder \] msiexec"/z " \[ \# myDll \] " |
+| mydllREG   | 3170 | myFolder | " \[ SystemFolder \] msiexec" /y " \[ \# mydll \] " |
+| mydllUNREG | 3170 | myFolder | " \[ SystemFolder \] msiexec" /z " \[ \# mydll \] " |
 
 
 
@@ -73,10 +73,10 @@ Nell'esempio seguente viene illustrato come creare il database per pianificare l
 
 
 
-| Azione           | Condizione         | Sequenza |
+| Azione           | Condition         | Sequenza |
 |------------------|-------------------|----------|
 | SelfUnregModules |                   | 2200     |
-| mydllUNREG       | $myComponent = 2    | 2201     |
+| mydllUNREG       | $myComponent=2    | 2201     |
 | RemoveFiles      |                   | 3500     |
 | InstallFiles     |                   | 4000     |
 | SelfRegModules   |                   | 6500     |

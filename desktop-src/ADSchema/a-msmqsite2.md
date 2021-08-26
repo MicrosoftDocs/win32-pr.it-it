@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-site-2
+title: Attributo MSMQ-Site-2
 description: DN del secondo sito di una coppia connessa.
 ms.assetid: 41d8246e-c713-41c3-a570-f906ba0ab857
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSMQ-site-2
+- Schema AD dell'attributo MSMQ-Site-2
 - Schema AD dell'attributo mSMQSite2
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4f852750cf7d7566e3106e24062ec1234ba0ac
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d98f97eabf9d218dc3ecf46bd1fd14cd88ac796fb02c05bb188267fd7d21d4e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066466"
 ---
-# <a name="msmq-site-2-attribute"></a>Attributo MSMQ-site-2
+# <a name="msmq-site-2-attribute"></a>Attributo MSMQ-Site-2
 
 DN del secondo sito di una coppia connessa.
 
@@ -29,13 +29,13 @@ DN del secondo sito di una coppia connessa.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-sito 2                             |
-| LDAP-Display-Name | mSMQSite2                               |
+| CN                | MSMQ-Site-2                             |
+| Ldap-Display-Name | mSMQSite2                               |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
-| Frequenza di aggiornamento  | Ogni volta che viene creata una riga di sito MSMQ. |
+| Privilegio di aggiornamento  | \-                                      |
+| Frequenza di aggiornamento  | Ogni volta che viene creato un oggetto MSMQ-Site-Line. |
 | Attribute-Id      | 1.2.840.113556.1.4.944                  |
-| System-ID-GUID    | 9a0dc338-c100-11d1-bbc5-0080c76670c0    |
+| System-Id-Guid    | 9a0dc338-c100-11d1-bbc5-0080c76670c0    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ DN del secondo sito di una coppia connessa.
 | ID collegamento                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| È a valore singolo       | Vero                                                |
+| Is-Single-Valued       | Vero                                                |
 | Indicizzato             | Falso                                               |
 | Nel catalogo globale      | Falso                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classi utilizzate in        | [**MSMQ-sito-collegamento**](c-msmqsitelink.md)<br/> |
+| Classi usate in        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

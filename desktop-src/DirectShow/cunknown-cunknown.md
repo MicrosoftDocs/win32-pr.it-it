@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 32859871f8ef69ce357fe204f0741356314fbb06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f7d2f1b70202200c705394790bb4b1e8d81349b71f534cc36fba9a8baed65f03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998931"
 ---
 # <a name="cunknowncunknown-constructor"></a>Costruttore CUnknown.CUnknown
 
@@ -46,14 +46,14 @@ CUnknown(
 *Pname* 
 </dt> <dd>
 
-Stringa contenente il nome dell'oggetto. utilizzato nel costruttore [**CBaseObject per**](cbaseobject.md) il debug.
+Stringa contenente il nome dell'oggetto. usato nel costruttore [**CBaseObject**](cbaseobject.md) per il debug.
 
 </dd> <dt>
 
 *Punk* 
 </dt> <dd>
 
-Puntatore al proprietario dell'oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto di aggregazione. In caso contrario, impostare questo parametro su **NULL.**
+Puntatore al proprietario di questo oggetto. Se l'oggetto è aggregato, passare un puntatore all'interfaccia IUnknown dell'oggetto aggregatore. In caso contrario, impostare questo parametro su **NULL.**
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ L'oggetto viene inizializzato con un conteggio dei riferimenti pari a zero.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Combase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Combase.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
