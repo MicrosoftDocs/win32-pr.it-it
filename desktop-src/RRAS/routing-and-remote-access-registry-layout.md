@@ -1,21 +1,21 @@
 ---
-title: Layout del registro di sistema routing e accesso remoto
-description: Nella sintassi seguente viene illustrato un layout di esempio del registro di sistema per il servizio router.
+title: Layout del Registro di sistema di Routing e Accesso remoto
+description: La sintassi seguente illustra un esempio di layout del Registro di sistema per il servizio router.
 ms.assetid: 5464c2f7-6bb8-4838-939d-d58508715505
 keywords:
-- Servizio Routing e accesso remoto routing RRAS, routing e accesso remoto layout registro di sistema
+- Routing e Accesso remoto RRAS, Layout del Registro di sistema di Routing e Accesso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f6ed72b569a8fe2efe1423ce2429c31cd0a0a65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd3388c2a11f69a473a334105d2872872b98b17b4956f12f886e50ada89f406f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027401"
 ---
-# <a name="routing-and-remote-access-registry-layout"></a>Layout del registro di sistema routing e accesso remoto
+# <a name="routing-and-remote-access-registry-layout"></a>Layout del Registro di sistema di Routing e Accesso remoto
 
-Nella sintassi seguente viene illustrato un layout di esempio del registro di sistema per il servizio router.
+La sintassi seguente illustra un esempio di layout del Registro di sistema per il servizio router.
 
 ``` syntax
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasMan 
@@ -132,13 +132,13 @@ HKEY_LOCAL_MACHINE\Software\Microsoft
                 <guid4>: REG_SZ: ddmadmin.dll
 ```
 
-Ogni gestore router installato nel sistema dispone di una chiave del registro di sistema creata nella chiave del router. La variabile DLLPath specifica il percorso della DLL che corrisponde alla gestione router e la variabile ProtocolID specifica l'identificatore della famiglia di protocolli per gestione router.
+Ogni gestore di router installato nel sistema ha una chiave del Registro di sistema creata sotto la chiave del router. La variabile DLLPath specifica il percorso della DLL corrispondente al gestore router e la variabile ProtocolID specifica l'identificatore della famiglia di protocolli per il gestore router.
 
-La chiave delle interfacce viene popolata con le interfacce che sono state aggiunte al sistema locale dalla configurazione del router. Ogni interfaccia dispone di un tipo associato (interno, dedicato o dinamico) e di sottochiavi per ogni gestore router (ad esempio, IP e IPX).
+La chiave Interfaces viene popolata con le interfacce aggiunte al sistema locale dalla configurazione del router. A ogni interfaccia è associato un tipo (interno, dedicato o dinamico) e sottochiavi per ogni gestore di router ,ad esempio IP e IPX.
 
- 
+ 
 
- 
+ 
 
 
 

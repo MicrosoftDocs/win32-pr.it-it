@@ -1,7 +1,7 @@
 ---
-description: Determina se un nome di condivisione utilizza la sintassi corretta.
+description: Determina se un nome di condivisione usa la sintassi corretta.
 ms.assetid: 4ffcff5d-0db5-4761-a31a-acefd2b8d9e2
-title: Funzione NDdeIsValidShareName (nddeapi. h)
+title: Funzione NDdeIsValidShareName (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: cbe1b7ead2d6f8e2d315833c44b354c50cc8b62c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e289429047d8d1cee4f525a9f45a9abe1dd8eb51bcf57e83e39876fba9a5a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964001"
 ---
-# <a name="nddeisvalidsharename-function"></a>NDdeIsValidShareName (funzione)
+# <a name="nddeisvalidsharename-function"></a>Funzione NDdeIsValidShareName
 
-\[Il DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ non \_ implementate.\]
+\[DDE di rete non è più supportato. Nddeapi.dll è presente in Windows Vista, ma tutte le chiamate di funzione restituiscono NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Determina se un nome di condivisione utilizza la sintassi corretta.
+Determina se un nome di condivisione usa la sintassi corretta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ BOOL NDdeIsValidShareName(
 
 <dl> <dt>
 
-*ShareName* \[ in\]
+*shareName* \[ Pollici\]
 </dt> <dd>
 
-Nome della condivisione da convalidare. Questo parametro non può essere **null**.
+Nome della condivisione da convalidare. Questo parametro non può essere **NULL.**
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Se il nome della condivisione non ha una sintassi valida, il valore restituito �
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quando crea la condivisione DDE.
+Questa funzione viene chiamata anche da [**NDdeShareAdd**](nddeshareadd.md) quando crea la condivisione DDE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,8 +68,8 @@ Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quan
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **NDdeIsValidShareNameW** (Unicode) e **NDdeIsValidShareNameA** (ANSI)<br/>    |
 
@@ -79,7 +79,7 @@ Questa funzione viene chiamata anche da [**NDDEShareAdd**](nddeshareadd.md) quan
 
 <dl> <dt>
 
-[Panoramica di Dynamic Data Exchange di rete](network-dynamic-data-exchange.md)
+[Panoramica Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funzioni DDE di rete](network-dde-functions.md)

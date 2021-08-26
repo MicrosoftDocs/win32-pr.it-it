@@ -1,9 +1,9 @@
 ---
-title: Metodi AddQuadraticBezier di ID2D1GeometrySink (D2d1. h)
-description: Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato e la aggiunge al sink di geometria.
+title: Metodi ID2D1GeometrySink AddQuadraticBezier (D2d1.h)
+description: Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato e la aggiunge al sink della geometria.
 ms.assetid: 142f0823-0d8d-4216-8f40-9dec7f48032e
 keywords:
-- Metodo AddQuadraticBezier Direct2D
+- Metodi AddQuadraticBezier Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: cc66782a9042df43f90a40863f53e36834f48ce2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 323c8fe1128aae915746f5f23dc060225901e1dc8435be8390953490438628ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917801"
 ---
-# <a name="id2d1geometrysinkaddquadraticbezier-methods"></a>Metodi ID2D1GeometrySink:: AddQuadraticBezier
+# <a name="id2d1geometrysinkaddquadraticbezier-methods"></a>Metodi ID2D1GeometrySink::AddQuadraticBezier
 
-Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato e la aggiunge al sink di geometria.
+Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato e la aggiunge al sink della geometria.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Crea una curva di Bézier quadratica tra il punto corrente e il punto finale spe
 
 | Metodo                                                                                                                                   | Descrizione                                                                                        |
 |:-----------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**AddQuadraticBezier (D2D1 del \_ segmento di Bézier quadratico \_ \_&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_))  | Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato.<br/> |
-| [**AddQuadraticBezier ( \_ segmento di Bézier quadratico d2d1 \_ \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)) | Crea una curva di Bézier quadratica tra il punto corrente e l'endpoint specificato.<br/>  |
+| [**AddQuadraticBezier(D2D1 \_ QUADRATIC \_ BEZIER \_ SEGMENT&)**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_))  | Crea una curva di Bézier quadratica tra il punto corrente e il punto finale specificato.<br/> |
+| [**AddQuadraticBezier(D2D1 \_ QUADRATIC \_ BEZIER \_ SEGMENT \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)) | Crea una curva di Bézier quadratica tra il punto corrente e l'endpoint specificato.<br/>  |
 
 
 
@@ -40,8 +40,8 @@ Crea una curva di Bézier quadratica tra il punto corrente e il punto finale spe
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

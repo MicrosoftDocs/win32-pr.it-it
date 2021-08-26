@@ -1,43 +1,43 @@
 ---
-description: Uso di WDDM Capture in DirectShow
+description: Uso dell'acquisizione WDDM in DirectShow
 ms.assetid: 57ee86b0-50bc-4992-94d4-f290f83d2afc
-title: Uso di WDDM Capture in DirectShow
+title: Uso dell'acquisizione WDDM in DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7926af70a3b7f1c4ba67c791d98c9928c3809b89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2e0a442c6929ef2435b05268035bb0b39b196a958440cd7ce5cfe44ea4b4c55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903591"
 ---
-# <a name="using-wddm-capture-in-directshow"></a>Uso di WDDM Capture in DirectShow
+# <a name="using-wddm-capture-in-directshow"></a>Uso dell'acquisizione WDDM in DirectShow
 
 Questo argomento si applica a Windows Vista e versioni successive.
 
-Alcune schede video hanno funzionalità di acquisizione video integrate. In queste schede i frame video acquisiti vengono inseriti in memoria video (VRAM). Prima di Windows Vista, non era disponibile un meccanismo standard per l'elaborazione dei frame mentre rimanevano in VRAM. Al contrario, i dati devono essere copiati nella memoria di sistema, elaborati e quindi copiati di nuovo in VRAM per la visualizzazione. In Windows Vista, DirectShow supporta ora un meccanismo per mantenere i frame video in VRAM nell'intera pipeline di elaborazione, dall'acquisizione alla visualizzazione.
+Alcune schede video hanno funzionalità integrate di acquisizione video. In queste schede i fotogrammi video acquisiti vengono inseriti nella memoria video (VRAM). Prima di Windows Vista, non esisteva un meccanismo standard per l'elaborazione dei fotogrammi mentre erano rimasti nella VRAM. I dati dovevano invece essere copiati nella memoria di sistema, elaborati e quindi copiati di nuovo nella VRAM per la visualizzazione. In Windows Vista, DirectShow ora supporta un meccanismo per mantenere i fotogrammi video nella VRAM in tutta la pipeline di elaborazione, dall'acquisizione alla visualizzazione.
 
-Il filtro KsProxy determina se il driver supporta la funzionalità di acquisizione della superficie VRAM eseguendo una query sul driver per la \_ proprietà della superficie di acquisizione preferita di KSPROPERTY \_ \_ . Questa proprietà è documentata nella documentazione di Windows Driver Kit. Se il driver supporta la funzionalità di acquisizione della superficie VRAM, KsProxy alloca un tipo speciale di esempio multimediale che include un puntatore a una superficie Direct3D.
+Il filtro KsProxy determina se il driver supporta l'acquisizione della superficie di VRAM tramite query sul driver per la proprietà KSPROPERTY \_ PREFERRED \_ CAPTURE \_ SURFACE. Questa proprietà è documentata nella documentazione di Windows Driver Kit. Se il driver supporta l'acquisizione della superficie della VRAM, KsProxy alloca un tipo speciale di campione di supporti che contiene un puntatore a una superficie Direct3D.
 
-Successivamente, KsProxy determina se il filtro downstream supporta l'accelerazione video DirectX (DXVA) 2,0, come indicato di seguito:
+Successivamente, KsProxy determina se il filtro downstream supporta DirectX Video Acceleration (DXVA) 2.0, come indicato di seguito:
 
-1.  KsProxy esegue una query sul pin di input downstream per l'interfaccia **IMFGetService** .
-2.  Se il pin espone **IMFGetService**, ksproxy chiama **IMFGetService:: GetService** per l'interfaccia **IDirect3DDeviceManager** . Il servizio identier è il \_ servizio di accelerazione del video \_ \_ .
+1.  KsProxy esegue una query sul pin di input downstream per **l'interfaccia IMFGetService.**
+2.  Se il pin espone **IMFGetService,** KsProxy chiama **IMFGetService::GetService** per l'interfaccia **IDirect3DDeviceManager.** L'identier del servizio è MR \_ VIDEO \_ ACCELERATION \_ SERVICE.
 
-Entrambe le interfacce sono documentate nella documentazione di Media Foundation SDK.
+Entrambe queste interfacce sono documentate nella documentazione Media Foundation SDK.
 
-Se il filtro downstream non supporta DXVA 2,0, KsProxy alloca un buffer di memoria di sistema aggiuntivo. Usa questo buffer per copiare i fotogrammi video da VRAM a memoria di sistema. Il metodo [**IMediaSample:: Getpointer**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer) dell'esempio multimediale restituisce un puntatore a questo buffer di memoria di sistema.
+Se il filtro downstream non supporta DXVA 2.0, KsProxy alloca un buffer di memoria di sistema aggiuntivo. Usa questo buffer per copiare i fotogrammi video dalla VRAM alla memoria di sistema. Il metodo [**IMediaSample::GetPointer**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer) dell'esempio multimediale restituisce un puntatore a questo buffer di memoria di sistema.
 
-Tuttavia, se il filtro downstream supporta DXVA 2,0, KsProxy non alloca un buffer di memoria di sistema. In tal caso, il metodo **Getpointer** restituisce E \_ NOTIMPL. Al contrario, si prevede che il filtro downstream acceda direttamente alla superficie Direct3D dell'esempio. Esistono due modi per il filtro downstream per ottenere un puntatore alla superficie, entrambi equivalenti:
+Tuttavia, se il filtro downstream supporta DXVA 2.0, KsProxy non alloca un buffer di memoria di sistema. In tal caso, il **metodo GetPointer** restituisce E \_ NOTIMPL. È invece previsto che il filtro downstream accedono direttamente alla superficie Direct3D dell'esempio. Esistono due modi per ottenere un puntatore alla superficie dal filtro downstream, entrambi equivalenti:
 
--   Eseguire una query sull'esempio per l'interfaccia **IMFGetService** e chiamare **GetService** per l'interfaccia **IDirect3DSurface9** . L'identificatore del servizio è \_ il \_ servizio buffer di.
--   Eseguire una query sull'esempio per l'interfaccia [**IMediaSample2Config**](/windows/desktop/api/Strmif/nn-strmif-imediasample2config) e chiamare [**IMediaSample2Config:: GetSurface**](/windows/desktop/api/Strmif/nf-strmif-imediasample2config-getsurface).
+-   Eseguire una query **sull'esempio per l'interfaccia IMFGetService** e **chiamare GetService** per **l'interfaccia IDirect3DSurface9.** L'identificatore del servizio è MR \_ BUFFER \_ SERVICE.
+-   Eseguire una query [**sull'esempio per l'interfaccia IMediaSample2Config**](/windows/desktop/api/Strmif/nn-strmif-imediasample2config) e chiamare [**IMediaSample2Config::GetSurface**](/windows/desktop/api/Strmif/nf-strmif-imediasample2config-getsurface).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Argomenti sull'acquisizione avanzata](advanced-capture-topics.md)
+[Argomenti di acquisizione avanzata](advanced-capture-topics.md)
 </dt> </dl>
 
  

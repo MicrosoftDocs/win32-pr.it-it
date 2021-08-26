@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 41c8a7d1608b9c4d5ea629aa9c053e022d59d9ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 370944c9d8b8307a796b425dd4ff611429f59ccc72473a92528ef19b8c2f5910
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980871"
 ---
-# <a name="removeresourcesfromresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo RemoveResourcesFromResourcePool della classe CIM \_ ResourcePoolConfigurationService
+# <a name="removeresourcesfromresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo RemoveResourcesFromResourcePool della classe \_ CIM ResourcePoolConfigurationService
 
 Avvia un processo per rimuovere le risorse da un pool di risorse.
 
@@ -41,30 +41,30 @@ uint32 RemoveResourcesFromResourcePool(
 
 <dl> <dt>
 
-*HostResources* \[ in\]
+*HostResources* \[ Pollici\]
 </dt> <dd>
 
-Matrice di istanze [**CIM \_ LogicalDevice**](cim-logicaldevice.md) da rimuovere dal pool.
+Matrice di [**istanze \_ di CIM LogicalDevice**](cim-logicaldevice.md) da rimuovere dal pool.
 
 </dd> <dt>
 
-*Pool* \[ di in\]
+*Pool* \[ Pollici\]
 </dt> <dd>
 
-[**\_ ResourcePool CIM**](cim-resourcepool.md) che rappresenta il pool da cui rimuovere le risorse.
+Pool [**di risorse CIM \_**](cim-resourcepool.md) che rappresenta il pool da cui rimuovere le risorse.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Un [**\_ ConcreteJob CIM**](cim-concretejob.md) che fa riferimento al processo (può essere **null** se il processo è stato completato).
+[**Cim \_ ConcreteJob che**](cim-concretejob.md) fa riferimento al processo (può essere **Null** se il processo è stato completato).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -80,31 +80,31 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
-**Parametro non valido** (5)
+**Parametro non** valido (5)
 </dt> <dt>
 
 **In uso** (6)
 </dt> <dt>
 
-**ResourceType errato per il pool** (7)
+**ResourceType non corretto per il pool** (7)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Dimensioni non supportate** (4097)
 </dt> <dt>
 
-**Metodo riservato** (4098.. 32767)
+**Metodo riservato** (4098..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -114,9 +114,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -125,7 +125,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::SetFloatArray: imposta una matrice di numeri a virgola mobile.'
+description: 'Metodo ID3DXConstantTable::SetFloatArray : imposta una matrice di numeri a virgola mobile.'
 ms.assetid: 7a622dd5-47ed-4166-a6df-f484b03e0b5a
 title: Metodo ID3DXConstantTable::SetFloatArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 23c96cb2bfc8113fd167c8b57a21a46285b691a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6886bc9d9071f74e2124c460b9ed0504f013ea6fc55fb4e6c32514e2287309d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026431"
 ---
 # <a name="id3dxconstanttablesetfloatarray-method"></a>Metodo ID3DXConstantTable::SetFloatArray
 
@@ -48,7 +48,7 @@ HRESULT SetFloatArray(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
 
 </dd> <dt>
 

@@ -1,21 +1,21 @@
 ---
-title: Verificare che il testo venga visualizzato con la direzione di lettura corretta
-description: Alcuni linguaggi, come l'arabo e l'ebraico, richiedono una direzione di lettura da destra a sinistra.
+title: Assicurarsi che il testo sia visualizzato con la direzione di lettura corretta
+description: Alcune lingue, ad esempio arabo ed ebraico, richiedono una direzione di lettura da destra a sinistra.
 ms.assetid: fa9a3dd6-575a-4877-a488-22845c6726c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d97eee49a830986718c04b4adab7443e488093
-ms.sourcegitcommit: 43b2f5209d67eae96b17c03bac2a2afab1f4d30a
+ms.openlocfilehash: 3774e4d237863a218cadf5206e4dc4921bceaeaa06c00ab81057f80dd8ee6549
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982171"
 ---
-# <a name="ensure-text-is-displayed-with-the-correct-reading-direction"></a>Verificare che il testo venga visualizzato con la direzione di lettura corretta
+# <a name="ensure-text-is-displayed-with-the-correct-reading-direction"></a>Assicurarsi che il testo sia visualizzato con la direzione di lettura corretta
 
-Alcuni linguaggi, come l'arabo e l'ebraico, richiedono una direzione di lettura da destra a sinistra. Per un oggetto in formato testo [DirectWrite](direct-write-portal.md) , la direzione di lettura predefinita è da sinistra a destra. DirectWrite non deduce automaticamente la direzione di lettura dalle impostazioni locali, quindi è necessario eseguire questa operazione manualmente.
+Alcune lingue, ad esempio arabo ed ebraico, richiedono una direzione di lettura da destra a sinistra. Per un [DirectWrite](direct-write-portal.md) formato testo, la direzione di lettura predefinita è da sinistra a destra. DirectWrite non deduce automaticamente la direzione di lettura dalle impostazioni locali, pertanto è necessario eseguire questa operazione manualmente.
 
-Per prima cosa, ottenere i flag di stile estesi per la finestra in cui verrà eseguito il rendering del testo utilizzando la macro GetWindowStyleEx definita in WINDOWSX. h.
+Per prima cosa, ottenere i flag di stile estesi per la finestra in cui verrà eseguito il rendering del testo usando la macro GetWindowStyleEx definita in windowsx.h.
 
 
 ```C++
@@ -25,11 +25,11 @@ DWORD dwStyle = GetWindowExStyle(hwnd_);
 
 
 
-La macro restituisce un valore DWORD costituito da diversi flag combinati con operazioni OR bit per bit. È necessario determinare se i flag specifici che influiscono sulla direzione di lettura sono presenti.
+La macro restituisce un valore DWORD costituito da diversi flag combinati con operazioni OR bit per bit. È necessario determinare se sono presenti flag specifici che influiscono sulla direzione di lettura.
 
-Sono presenti 2 flag diversi correlati alla direzione di lettura: WS \_ ex \_ LAYOUTRTL e WS \_ ex \_ RTLREADING.
+Esistono due flag diversi correlati alla direzione di lettura: WS \_ EX \_ LAYOUTRTL e WS \_ EX \_ RTLREADING.
 
-Utilizzare l'operatore AND bit per bit (&) con la variabile dwStyle e \_ la \_ macro WS ex LAYOUTRTL per archiviare un valore bool che indica se il layout è con mirroring.
+Usare l'operatore AND bit per bit (&) con la variabile dwStyle e la macro WS EX LAYOUTRTL per archiviare un valore BOOL che indica se il layout è \_ \_ speculare.
 
 
 ```C++
@@ -39,7 +39,7 @@ BOOL bWSLayout = dwStyle & WS_EX_LAYOUTRTL;
 
 
 
-Eseguire la stessa operazione per il \_ flag WS es \_ RTLREADING.
+Eseguire la stessa operazione per il flag WS \_ EX \_ RTLREADING.
 
 
 ```C++
@@ -49,12 +49,12 @@ BOOL bWSReading = dwStyle & WS_EX_RTLREADING;
 
 
 
-Impostare la direzione di lettura utilizzando il metodo [**IDWriteTextFormat:: SetReadingDirection**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-setreadingdirection) . Il valore predefinito è da sinistra a destra, quindi è necessario impostare la direzione di lettura solo se è da destra a sinistra.
+Impostare la direzione di lettura usando il [**metodo IDWriteTextFormat::SetReadingDirection.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextformat-setreadingdirection) Il valore predefinito è da sinistra a destra, quindi è necessario impostare la direzione di lettura solo se è da destra a sinistra.
 
 > [!Note]  
-> WS \_ ex \_ LAYOUTRTL rispecchia l'intero layout e implica la direzione di lettura da destra a sinistra, quindi impostare la direzione di lettura solo se è presente uno di questi flag. Se entrambi sono presenti, annullano l'uno all'altro e la direzione di lettura per il formato di testo deve essere da sinistra a destra.
+> WS EX LAYOUTRTL rispecchia l'intero layout e implica la direzione di lettura da destra a sinistra, quindi impostare la direzione di lettura solo se è presente uno \_ \_ di questi flag. Se sono presenti entrambi, si annullano l'un l'altro e la direzione di lettura per il formato del testo deve essere da sinistra a destra.
 
- 
+ 
 
 
 ```C++
@@ -69,6 +69,6 @@ if ((bWSLayout && !bWSReading)
 
 
 
- 
+ 
 
- 
+ 

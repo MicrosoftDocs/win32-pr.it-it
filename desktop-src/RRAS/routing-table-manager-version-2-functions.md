@@ -1,22 +1,22 @@
 ---
-title: Funzioni di Routing Table Manager versione 2
-description: Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di routing.
+title: Funzioni di Gestione tabelle di routing versione 2
+description: Le funzioni seguenti vengono usate per interagire con il gestore tabelle di routing.
 ms.assetid: ac5c6ada-c38e-476a-9896-cdd8c51cc0be
 keywords:
-- Servizio Routing e accesso remoto RRAS, gestione tabelle di routing versione 2, funzioni
-- Gestione tabelle di routing versione 2 RRAS, funzioni
+- Routing e Servizio di accesso remoto RRAS, Gestione tabelle di routing versione 2, funzioni
+- Routing Table Manager versione 2 RRAS, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f59e4a1ad2bf091d8a74672f1f473589c5fa1d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cb7138b54ee0fa747c7d367c54d7a0fb893c3d2d451577932c669650a0fc76e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026921"
 ---
-# <a name="routing-table-manager-version-2-functions"></a>Funzioni di Routing Table Manager versione 2
+# <a name="routing-table-manager-version-2-functions"></a>Funzioni di Gestione tabelle di routing versione 2
 
-Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di routing.
+Le funzioni seguenti vengono usate per interagire con il gestore tabelle di routing.
 
 ## <a name="registration-functions"></a>Funzioni di registrazione
 
@@ -24,11 +24,11 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmDeregisterEntity**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmderegisterentity)
 
-[**RtmGetRegisteredEntities**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetregisteredentities)
+[**Entità RtmGetRegisteredEntities**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetregisteredentities)
 
-[**RtmReleaseEntities**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseentities)
+[**Entità RtmReleaseEntities**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleaseentities)
 
-## <a name="opaque-pointer-functions"></a>Funzioni puntatore opache
+## <a name="opaque-pointer-functions"></a>Funzioni puntatore opaco
 
 [**RtmLockDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlockdestination)
 
@@ -42,7 +42,7 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmBlockMethods**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmblockmethods)
 
-## <a name="handle-to-information-structure-functions"></a>Handle per le funzioni della struttura di informazioni
+## <a name="handle-to-information-structure-functions"></a>Handle alle funzioni della struttura delle informazioni
 
 [**RtmGetEntityInfo**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetentityinfo)
 
@@ -74,7 +74,7 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmUpdateAndUnlockRoute**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmupdateandunlockroute)
 
-## <a name="routing-table-query-functions"></a>Funzioni di query della tabella di routing
+## <a name="routing-table-query-functions"></a>Funzioni di query di tabella di routing
 
 [**RtmGetExactMatchDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetexactmatchdestination)
 
@@ -86,7 +86,7 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmIsBestRoute**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmisbestroute)
 
-## <a name="next-hop-insertion-and-deletion-functions"></a>Funzioni di inserimento ed eliminazione di hop successivo
+## <a name="next-hop-insertion-and-deletion-functions"></a>Funzioni di inserimento ed eliminazione dell'hop successivo
 
 [**RtmAddNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmaddnexthop)
 
@@ -98,7 +98,7 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmLockNextHop**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlocknexthop)
 
-## <a name="routing-table-enumeration-functions"></a>Funzioni di enumerazione tabella di routing
+## <a name="routing-table-enumeration-functions"></a>Funzioni di enumerazione delle tabelle di routing
 
 [**RtmCreateDestEnum**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreatedestenum)
 
@@ -138,7 +138,7 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmDeregisterFromChangeNotification**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmderegisterfromchangenotification)
 
-## <a name="route-list-function"></a>Funzione elenco Route
+## <a name="route-list-function"></a>Funzione Elenco route
 
 [**RtmCreateRouteList**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmcreateroutelist)
 
@@ -154,9 +154,9 @@ Le funzioni seguenti vengono utilizzate per interagire con gestione tabelle di r
 
 [**RtmReferenceHandles**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreferencehandles)
 
- 
+ 
 
- 
+ 
 
 
 

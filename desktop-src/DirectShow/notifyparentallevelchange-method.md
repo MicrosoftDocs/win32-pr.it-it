@@ -1,15 +1,15 @@
 ---
-description: Il metodo NotifyParentalLevelChange Abilita o Disabilita la gestione degli eventi per i comandi temporanei del livello di gestione padre.
+description: Il metodo NotifyParentalLevelChange abilita o disabilita la gestione degli eventi per i comandi temporanei del livello di gestione genitori.
 ms.assetid: c8252cc6-a83f-4cce-ba3e-7db669eeb465
-title: Metodo NotifyParentalLevelChange (Segment. h)
+title: Metodo NotifyParentalLevelChange (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc47b7d78af8cfdd32aa63361411e769c375ddf1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8382b52f64d4196b0ef74e5f3285e9bb047a4e1f77d3b0e5bec4da218ee753b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997361"
 ---
 # <a name="notifyparentallevelchange-method"></a>Metodo NotifyParentalLevelChange
 
@@ -18,7 +18,7 @@ ms.locfileid: "106328073"
 
  
 
-Il `NotifyParentalLevelChange` Metodo Abilita o Disabilita la gestione degli eventi per i comandi temporanei del livello di gestione padre.
+Il metodo abilita o disabilita la gestione degli eventi per i comandi `NotifyParentalLevelChange` temporanei del livello di gestione dei genitori.
 
 ``` syntax
 MSWebDVD.NotifyParentalLevelChange(bNotify)
@@ -31,7 +31,7 @@ MSWebDVD.NotifyParentalLevelChange(bNotify)
 <span id="bNotify"></span><span id="bnotify"></span><span id="BNOTIFY"></span>*bNotify*
 </dt> <dd>
 
-Specifica un valore booleano che indica se l'applicazione riceve una notifica quando l'oggetto MSWebDVD rileva segmenti video con una classificazione più restrittiva rispetto alla valutazione complessiva del disco.
+Specifica un valore booleano che indica se l'applicazione viene notificata quando l'oggetto MSWebDVD rileva segmenti video con una classificazione più restrittiva rispetto alla classificazione complessiva per il disco.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Le notifiche di gestione padre sono disabilitate per impostazione predefinita. Ciò significa che i comandi padre temporanei dal disco sono consentiti, ma ignorati e il disco verrà riprodotto senza interruzioni. Chiamare questo metodo durante l'inizializzazione dell'applicazione se è necessario gestire i comandi temporanei del livello di gestione padre dal disco. Per disabilitare la gestione padre dopo l'abilitazione, chiamare questo metodo con un argomento di false. Per ulteriori informazioni sulla gestione parentale, vedere [**AcceptParentalLevelChange**](acceptparentallevelchange-method.md).
+Le notifiche di Gestione genitori sono disabilitate per impostazione predefinita. Ciò significa che i comandi temporanei dei genitori dal disco sono consentiti, ma ignorati e il disco verrà riprodotto senza interruzioni. Chiamare questo metodo durante l'inizializzazione dell'applicazione se è necessario gestire i comandi temporanei del livello di gestione dei genitori dal disco. Per disabilitare la gestione dei genitori dopo che è stata abilitata, chiamare questo metodo con un argomento false. Per altre informazioni sulla gestione dei genitori, vedere [**AcceptParentalLevelChange.**](acceptparentallevelchange-method.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Le notifiche di gestione padre sono disabilitate per impostazione predefinita. C
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Le notifiche di gestione padre sono disabilitate per impostazione predefinita. C
 [**GetPlayerParentalLevel**](getplayerparentallevel-method.md)
 </dt> <dt>
 
-[**SelectParentalCountry**](selectparentalcountry-method.md)
+[**SelezionareParentalCountry**](selectparentalcountry-method.md)
 </dt> </dl>
 
  

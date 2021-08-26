@@ -4,16 +4,16 @@ ms.assetid: c406a099-4956-46a8-b1f4-6d2e6ab3427a
 title: video.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f24d7bd3f27ce995d69e3f1425b7cae95d8997f3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d594bb850944fde6803d26ec49a547402e3d1a1bcdf5dba2814d4ce8299f7288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964641"
 ---
 # <a name="videocpp"></a>video.cpp
 
-Questo argomento contiene il codice per l'esercitazione [Riproduzione audio/video in DirectShow.](audio-video-playback-in-directshow.md)
+Questo argomento contiene il codice per [l'esercitazione Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++
@@ -657,7 +657,7 @@ done:
 [Riproduzione audio/video in DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Esempio di riproduzione DirectShow](directshow-playback-example.md)
+[DirectShow Esempio di riproduzione](directshow-playback-example.md)
 </dt> </dl>
 
  

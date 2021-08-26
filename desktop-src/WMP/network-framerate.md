@@ -1,9 +1,9 @@
 ---
-title: Rete. frameRate
-description: La proprietà frameRate recupera la frequenza dei fotogrammi video corrente in frame per cento secondi. Ad esempio, il valore 2998 indica 29,98 fotogrammi al secondo.
+title: Network.frameRate
+description: La proprietà frameRate recupera la frequenza dei fotogrammi video corrente in fotogrammi per cento secondi. Ad esempio, un valore pari a 2998 indica 29,98 fotogrammi al secondo.
 ms.assetid: ee30dce5-a42e-4be5-ab4b-0d5f8869d23a
 keywords:
-- Media Player Windows di rete. frameRate
+- Network.frameRate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30ec6e16a3cef86a385525a793d73a50c3124e21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4da4a0f292c4693c263115dc1ad59ea3c71946d81838d427e6d8e043ac499709
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901651"
 ---
-# <a name="networkframerate"></a>Rete. frameRate
+# <a name="networkframerate"></a>Network.frameRate
 
-La proprietà **framerate** recupera la frequenza dei fotogrammi video corrente in frame per cento secondi. Ad esempio, il valore 2998 indica 29,98 fotogrammi al secondo.
+La **proprietà frameRate** recupera la frequenza dei fotogrammi video corrente in fotogrammi per cento secondi. Ad esempio, un valore pari a 2998 indica 29,98 fotogrammi al secondo.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **framerate**
+*lettore*. *rete*. **frameRate**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **framerate** per visualizzare la frequenza dei fotogrammi corrente. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FR". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **frameRate** per visualizzare la frequenza dei fotogrammi corrente. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FR". **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -62,7 +62,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **framerate** per visu
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **framerate** per visu
 
 <dl> <dt>
 
-[**Oggetto di rete**](network-object.md)
+[**Oggetto Di rete**](network-object.md)
 </dt> <dt>
 
-[**Rete. encodedFrameRate**](network-encodedframerate.md)
+[**Network.encodedFrameRate**](network-encodedframerate.md)
 </dt> </dl>
 
  

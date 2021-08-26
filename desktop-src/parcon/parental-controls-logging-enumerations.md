@@ -1,47 +1,47 @@
 ---
-description: Il controllo parentale fornisce le seguenti enumerazioni di registrazione.
+description: Controllo genitori fornisce le enumerazioni di registrazione seguenti.
 ms.assetid: 617e103c-a24f-4576-acde-1ddec0dc7062
-title: Enumerazioni di registrazione dei controlli padre
+title: Enumerazioni di registrazione dei controlli genitori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a13848d7cce1e283b9e6784c64989c6c08e1cd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 047aff3e8bca51a2eba3a1e6b9ffa3b8ab3b36133d714003fd89080f0796fb0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939281"
 ---
-# <a name="parental-controls-logging-enumerations"></a>Enumerazioni di registrazione dei controlli padre
+# <a name="parental-controls-logging-enumerations"></a>Enumerazioni di registrazione dei controlli genitori
 
-Il controllo parentale fornisce le seguenti enumerazioni di registrazione.
+Controllo genitori fornisce le enumerazioni di registrazione seguenti.
 
 Enumerazioni di flag:
 
--   [**funzionalità di WPCFLAG \_ im \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature)
--   [**\_flag di \_ uscita \_ im WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_leave)
--   [**WPCFLAG \_ bloccato**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked)
--   [**\_tipo di disconnessione WPCFLAG \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_logoff_type)
+-   [**FUNZIONALITÀ IM \_ WPCFLAG \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_feature)
+-   [**WPCFLAG \_ IM \_ LEAVE \_ FLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_leave)
+-   [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked)
+-   [**TIPO DI DISCONNESSIONE WPCFLAG \_ \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_logoff_type)
 
-Enumerazioni definite in Wpcevent. h per i parametri da passare all'API di pubblicazione del registro eventi di Windows per ogni tipo di evento:
+Enumerazioni definite in Wpcevent.h per i parametri da passare all'API di pubblicazione del registro eventi di Windows per ogni tipo di evento:
 
--   [**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
--   [**\_argomenti \_ CONVERSATIONJOINEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationjoinevent)
--   [**\_argomenti \_ CONVERSATIONLEAVEEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationleaveevent)
--   [**\_argomenti \_ CUSTOMEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_customevent)
--   [**\_argomenti \_ EMAILCONTACTEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailcontactevent)
--   [**\_argomenti \_ EMAILRECEIVEDEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailreceievedevent)
--   [**\_argomenti \_ EMAILSENTEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailsentevent)
--   [**\_argomenti \_ FILEDOWNLOADEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_filedownloadevent)
--   [**\_argomenti \_ GAMESTARTEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_gamestartevent)
--   [**\_argomenti \_ IMCONTACTEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_imcontactevent)
--   [**\_argomenti \_ IMFEATUREEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_imfeatureevent)
--   [**\_argomenti \_ MEDIADOWNLOADEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_mediadownloadevent)
--   [**\_argomenti \_ MEDIAPLAYBACKEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_mediaplaybackevent)
--   [**\_argomenti \_ SAFERAPPBLOCKED di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_saferappblocked)
--   [**\_argomenti \_ SETTINGSCHANGEEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_settingschangeevent)
--   [**\_argomenti \_ URLVISITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_urlvisitevent)
--   [**\_ \_ tipo esplicito supporto WPC \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_media_explicit)
--   [**\_tipo di supporto WPC \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_media_type)
+-   [**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+-   [**WPC \_ ARGS \_ CONVERSATIONJOINEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationjoinevent)
+-   [**WPC \_ ARGS \_ CONVERSATIONLEAVEEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationleaveevent)
+-   [**WPC \_ ARGS \_ CUSTOMEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_customevent)
+-   [**WPC \_ ARGS \_ EMAILCONTACTEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailcontactevent)
+-   [**WPC \_ ARGS \_ EMAILRECEIVEDEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailreceievedevent)
+-   [**WPC \_ ARGS \_ EMAILSENTEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_emailsentevent)
+-   [**WPC \_ ARGS \_ FILEDOWNLOADEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_filedownloadevent)
+-   [**GAMESTARTEVENT DI WPC \_ ARGS \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_gamestartevent)
+-   [**WPC \_ ARGS \_ IMCONTACTEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_imcontactevent)
+-   [**WPC \_ ARGS \_ IMFEATUREEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_imfeatureevent)
+-   [**WPC \_ ARGS \_ MEDIADOWNLOADEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_mediadownloadevent)
+-   [**WPC \_ ARGS \_ MEDIAPLAYBACKEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_mediaplaybackevent)
+-   [**WPC \_ ARGS \_ SAFERAPPBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_saferappblocked)
+-   [**IMPOSTAZIONI WPC \_ \_ ARGSCHANGEEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_settingschangeevent)
+-   [**URL DI WPC \_ \_ ARGSVISITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_urlvisitevent)
+-   [**TIPO WPC \_ MEDIA \_ \_ EXPLICIT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_media_explicit)
+-   [**TIPO DI \_ SUPPORTO \_ WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_media_type)
 
  
 

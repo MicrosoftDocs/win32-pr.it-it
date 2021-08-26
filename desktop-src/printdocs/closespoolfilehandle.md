@@ -1,7 +1,7 @@
 ---
 description: La funzione CloseSpoolFileHandle chiude un handle a un file di spooling associato al processo di stampa attualmente inviato dall'applicazione.
 ms.assetid: e2c0e68f-b72e-4a97-ba18-8943bc5789c1
-title: Funzione CloseSpoolFileHandle (winspool. h)
+title: Funzione CloseSpoolFileHandle (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: c808bddde5b9b4e4a87a8608c1efb3999ce1f391
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f62173747472820f1642578778b67f3cdc3403523d6ae28453888dae3d6d1a23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950531"
 ---
-# <a name="closespoolfilehandle-function"></a>CloseSpoolFileHandle (funzione)
+# <a name="closespoolfilehandle-function"></a>Funzione CloseSpoolFileHandle
 
-La funzione **CloseSpoolFileHandle** chiude un handle a un file di spooling associato al processo di stampa attualmente inviato dall'applicazione.
+La **funzione CloseSpoolFileHandle** chiude un handle a un file di spooling associato al processo di stampa attualmente inviato dall'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,27 +40,27 @@ BOOL CloseSpoolFileHandle(
 
 <dl> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per la stampante a cui è stato inviato il processo. Deve corrispondere allo stesso handle usato per ottenere *hSpoolFile* con [**GetSpoolFileHandle**](getspoolfilehandle.md).
+Handle per la stampante a cui è stato inviato il processo. Deve essere lo stesso handle usato per ottenere *hSpoolFile* con [**GetSpoolFileHandle.**](getspoolfilehandle.md)
 
 </dd> <dt>
 
-*hSpoolFile* \[ in\]
+*hSpoolFile* \[ Pollici\]
 </dt> <dd>
 
-Handle per il file di spooling da chiudere. Se [**CommitSpoolData**](commitspooldata.md) non è stato chiamato dopo la chiamata di [**GetSpoolFileHandle**](getspoolfilehandle.md) , deve essere lo stesso handle restituito da **GetSpoolFileHandle**. In caso contrario, deve essere l'handle restituito dalla chiamata più recente a **CommitSpoolData**.
+Handle per il file di spooling da chiudere. Se [**CommitSpoolData**](commitspooldata.md) non è stato chiamato dopo la chiamata a [**GetSpoolFileHandle,**](getspoolfilehandle.md) questo deve essere lo stesso handle restituito da **GetSpoolFileHandle.** In caso contrario, deve essere l'handle restituito dalla chiamata più recente a **CommitSpoolData.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**True** se ha esito positivo, **false** in caso contrario.
+**TRUE,** se ha esito positivo, **FALSE in caso** contrario.
 
 ## <a name="remarks"></a>Commenti
 
-L'applicazione non deve chiamare [**ClosePrinter**](closeprinter.md) su *hPrinter* fino a quando non ha eseguito l'accesso al file di spooling per l'ultima volta. Deve quindi chiamare **CloseSpoolFileHandle** seguito da **ClosePrinter**. I tentativi di accesso all'handle di file di spooling dopo la chiusura del *hPrinter* originale avranno esito negativo anche se l'handle di file non è stato chiuso. **CloseSpoolFileHandle** avrà esito negativo se **ClosePrinter** viene chiamato per primo.
+L'applicazione non deve chiamare [**ClosePrinter**](closeprinter.md) su *hPrinter* fino a quando non ha eseguito l'accesso al file di spooling per l'ultima volta. Dovrebbe quindi chiamare **CloseSpoolFileHandle** seguito da **ClosePrinter.** I tentativi di accesso all'handle di file di spooling dopo la chiusura *dell'hPrinter* originale avranno esito negativo anche se l'handle di file stesso non è stato chiuso. **CloseSpoolFileHandle avrà** esito negativo se **ClosePrinter viene** chiamato per primo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,11 +68,11 @@ L'applicazione non deve chiamare [**ClosePrinter**](closeprinter.md) su *hPrinte
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>WinSpool.drv</dt> </dl>                   |
 
 
 

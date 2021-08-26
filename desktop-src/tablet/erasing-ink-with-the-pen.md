@@ -1,24 +1,24 @@
 ---
-description: Oltre ad abilitare la grafia e il disegno, è possibile compilare l'applicazione in modo da supportare l'uso della penna del tablet per cancellare l'input penna. Per eseguire questa operazione, utilizzare l'oggetto InkOverlay.
+description: Oltre ad abilitare la scrittura manuale e il disegno, è possibile compilare l'applicazione per supportare l'uso della penna del tablet per cancellare l'input penna. A tale scopo, usare l'oggetto InkOverlay.
 ms.assetid: 9851c871-4d1c-43b6-9615-5d231cbc01ae
-title: Cancellazione dell'input penna con la penna
+title: Cancellazione dell'input penna con l'oggetto Pen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0c21aa2be85402586984b8dcc1730fcbbcf17e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1bc824dc4bc6194840bd0196d238678527f5812133da36ce0891b3f4d75d7cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119936551"
 ---
-# <a name="erasing-ink-with-the-pen"></a>Cancellazione dell'input penna con la penna
+# <a name="erasing-ink-with-the-pen"></a>Cancellazione dell'input penna con l'oggetto Pen
 
-Oltre ad abilitare la grafia e il disegno, è possibile compilare l'applicazione in modo da supportare l'uso della penna del tablet per cancellare l'input penna. Per eseguire questa operazione, utilizzare l'oggetto [**InkOverlay**](inkoverlay-class.md) .
+Oltre ad abilitare la scrittura manuale e il disegno, è possibile compilare l'applicazione per supportare l'uso della penna del tablet per cancellare l'input penna. A tale scopo, usare l'oggetto [**InkOverlay.**](inkoverlay-class.md)
 
-Nelle sezioni seguenti viene descritto come cancellare l'input penna con la penna del Tablet PC.
+Le sezioni seguenti descrivono la cancellazione dell'input penna con la penna del tablet.
 
 -   [Cancellazione tramite l'oggetto InkOverlay](erasing-by-using-the-inkoverlay-object.md)
--   [Cancellazione tramite penna](erasing-by-using-the-pen.md)
+-   [Cancellazione tramite la penna](erasing-by-using-the-pen.md)
 
  
 

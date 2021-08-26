@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_INITMENU (winuser. h)
+title: WM_INITMENU messaggio (Winuser.h)
 description: Inviato quando un menu sta per diventare attivo.
 ms.assetid: d0fcc6d8-f57c-4d04-b9e7-4cfab6add173
 keywords:
-- Menu del messaggio WM_INITMENU e altre risorse
+- WM_INITMENU messaggio Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94626b99a5016efaa9427d1ae8b3b3122e599965
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fff775849abf6a7e3be4530ce893e1ae8821cb4be6e9fb2888ef9bb0ee6d67d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939571"
 ---
-# <a name="wm_initmenu-message"></a>\_Messaggio INITMENU WM
+# <a name="wm_initmenu-message"></a>Messaggio \_ WM INITMENU
 
-Inviato quando un menu sta per diventare attivo. Si verifica quando l'utente fa clic su un elemento nella barra dei menu o preme un tasto di menu. Questo consente all'applicazione di modificare il menu prima che venga visualizzato.
+Inviato quando un menu sta per diventare attivo. Si verifica quando l'utente fa clic su una voce sulla barra dei menu o preme un tasto di menu. In questo modo l'applicazione può modificare il menu prima che venga visualizzato.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,7 +41,7 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Handle per il menu da inizializzare.
+Handle del menu da inizializzare.
 
 </dd> <dt>
 
@@ -54,11 +54,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Un messaggio **WM \_ INITMENU** viene inviato solo quando si accede per la prima volta a un menu. viene generato un solo messaggio **WM \_ INITMENU** per ogni accesso. Ad esempio, lo spostamento del mouse tra diverse voci di menu tenendo premuto il pulsante non genera nuovi messaggi. **WM \_ INITMENU** non fornisce informazioni sulle voci di menu.
+Un **messaggio WM \_ INITMENU** viene inviato solo quando si accede a un menu per la prima volta. Per ogni accesso viene generato un solo messaggio **WM \_ INITMENU.** Ad esempio, lo spostamento del mouse tra diverse voci di menu tenendo premuto il pulsante non genera nuovi messaggi. **WM \_ INITMENU** non fornisce informazioni sulle voci di menu.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Un messaggio **WM \_ INITMENU** viene inviato solo quando si accede per la prima
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Un messaggio **WM \_ INITMENU** viene inviato solo quando si accede per la prima
 **Riferimento**
 </dt> <dt>
 
-[**\_INITMENUPOPUP WM**](wm-initmenupopup.md)
+[**WM \_ INITMENUPOPUP**](wm-initmenupopup.md)
 </dt> <dt>
 
 **Informazioni concettuali**

@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le informazioni generali su un pulsante in un dispositivo stilo.
+description: Rappresenta informazioni generali su un pulsante in un dispositivo stilo.
 ms.assetid: 20c9f8bb-8f8d-4469-baff-b9001c8adb3b
 title: Interfaccia ITabletCursorButton
 ms.topic: reference
@@ -14,26 +14,26 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c8f13e46699c1bea42bd8f8a7f78313aeba68aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76f5e581a4db81d9e260b388cc129d915121a69f3b360441e4220fd58aa0e623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938601"
 ---
 # <a name="itabletcursorbutton-interface"></a>Interfaccia ITabletCursorButton
 
-Rappresenta le informazioni generali su un pulsante in un dispositivo stilo.
+Rappresenta informazioni generali su un pulsante in un dispositivo stilo.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITabletCursorButton** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletCursorButton** dispone anche di questi tipi di membri:
+**L'interfaccia ITabletCursorButton** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletCursorButton** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITabletCursorButton** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **ITabletCursorButton.**
 
 
 
@@ -48,9 +48,9 @@ L'interfaccia **ITabletCursorButton** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Gli sviluppatori non devono utilizzare questa interfaccia.
+Gli sviluppatori non devono usare questa interfaccia.
 
-Il codice seguente illustra come viene definita l'interfaccia **ITabletCursorButton** .
+Il codice seguente illustra come viene **definita l'interfaccia ITabletCursorButton.**
 
 ``` syntax
 [
@@ -74,7 +74,7 @@ interface ITabletCursorButton : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
-description: Chiamato in risposta alla barricata della visualizzazione Web che viene rilasciata dall'utente.
+description: Chiamato in risposta alla barra della visualizzazione Web ignorata dall'utente.
 ms.assetid: 170893b6-c947-45b1-b717-a93a0b083bda
-title: Metodo Cartella2. DismissedWebViewBarricade (shldisp. h)
+title: Metodo Folder2.DismissedWebViewBarricade (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: cdedc7292b0dd52ca903b944993e32df1ec2c3b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a5380330e807eabe76cf1223811fd06147468e12d0c13244b0e44d391aa6e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937101"
 ---
-# <a name="folder2dismissedwebviewbarricade-method"></a>Cartella2. DismissedWebViewBarricade, metodo
+# <a name="folder2dismissedwebviewbarricade-method"></a>Metodo Folder2.DismissedWebViewBarricade
 
-Chiamato in risposta alla barricata della visualizzazione Web che viene rilasciata dall'utente.
+Chiamato in risposta alla barra della visualizzazione Web ignorata dall'utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione chiama questo metodo dopo che l'utente chiude la barricata di visualizzazione Web.
+Un'applicazione chiama questo metodo dopo che l'utente ha chiuso la barra di visualizzazione Web.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **DismissedWebViewBarricade** per specificare che la barricata della vista web per la \\ cartella C: Windows è stata rilasciata. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente usa **DismissedWebViewBarricade** per specificare che la barra di visualizzazione Web per la cartella C: Windows è \\ stata ignorata. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -70,7 +70,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,11 +122,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

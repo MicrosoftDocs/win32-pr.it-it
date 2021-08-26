@@ -1,7 +1,7 @@
 ---
-description: Un punto di comunicazione utilizzato per inviare e ricevere dati tra sistemi, interfacce computer e reti logiche.
+description: Punto di comunicazione utilizzato per inviare e ricevere dati tra sistemi, interfacce computer e reti logiche.
 ms.assetid: e23ef66b-0bcb-400e-91ff-d6d687d3f0d2
-title: Classe CIM_ProtocolEndpoint
+title: CIM_ProtocolEndpoint classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b3d492c140d443d14583a80985820f55ff9bec8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fa050bd301842b9f8eeb2816420e4f09601e29a0f47cace721f2d56583f3a5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981181"
 ---
-# <a name="cim_protocolendpoint-class"></a>CIM \_ ProtocolEndpoint (classe)
+# <a name="cim_protocolendpoint-class"></a>Classe \_ ProtocolEndpoint CIM
 
-Un punto di comunicazione utilizzato per inviare e ricevere dati tra sistemi, interfacce computer e reti logiche.
+Punto di comunicazione utilizzato per inviare e ricevere dati tra sistemi, interfacce computer e reti logiche.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,128 +53,128 @@ class CIM_ProtocolEndpoint : CIM_ServiceAccessPoint
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ProtocolEndpoint** presenta questi tipi di membri:
+La **classe \_ CiM ProtocolEndpoint** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ProtocolEndpoint** dispone di queste proprietà.
+La **classe \_ CiM ProtocolEndpoint** ha queste proprietà.
 
 <dl> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| if-MIB. ifDescr ")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| IF-MIB.ifDescr")
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("EnabledState"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| if-MIB. ifadminstatus ")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("EnabledState"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| IF-MIB.ifAdminStatus")
 </dt> </dl>
 
-Stato di abilitazione di un elemento.
+Stato abilitato di un elemento.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificatore univoco dell'endpoint del protocollo che indica la funzionalità gestita. La convenzione di denominazione per questa proprietà è definita nella proprietà **NameFormat** .
+Identificatore univoco dell'endpoint del protocollo che indica la funzionalità gestita. La convenzione di denominazione per questa proprietà è definita nella **proprietà NameFormat.**
 
 </dd> <dt>
 
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Convenzione di denominazione utilizzata dalla proprietà **Name** per assicurarsi che i valori dei **nomi** siano univoci. Ad esempio, è possibile aggiungere il valore della proprietà **ProtocolIFType** all'inizio del nome seguito da un carattere di sottolineatura.
+Convenzione di denominazione utilizzata dalla **proprietà Name** per garantire che i **valori Name** siano univoci. Ad esempio, è possibile aggiungere il valore **della proprietà ProtocolIFType** all'inizio del nome seguito da un carattere di sottolineatura.
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| if-MIB. ifOperStatus ")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| IF-MIB.ifOperStatus")
 </dt> </dl>
 
-Matrice che contiene lo stato corrente dell'elemento. Il primo valore della matrice **OperationalStatus** deve contenere lo stato primario per l'elemento.
+Matrice che contiene lo stato corrente dell'elemento. Il primo valore della matrice **OperationalStatus** deve contenere lo stato primario per l'elemento .
 
 </dd> <dt>
 
 **OtherTypeDescription**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ProtocolEndpoint**.**ProtocolType**","**CIM \_ ProtocolEndpoint**.**ProtocolIFType**")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**PROTOCOLLO \_ CIMEndpoint**.**ProtocolType**", "**CIM \_ ProtocolEndpoint**.**ProtocolIFType**")
 </dt> </dl>
 
-Descrizione di un tipo di protocollo di rete utilizzato quando la proprietà **ProtocolIFType** è impostata su "1" (other); in caso contrario, questo valore deve essere impostato su null.
+Descrizione di un tipo di protocollo di rete utilizzato quando la **proprietà ProtocolIFType** è impostata su "1" (Altro); In caso contrario, questo valore deve essere impostato su Null.
 
 </dd> <dt>
 
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| if-MIB. iftype "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ProtocolEndpoint**.**OtherTypeDescription**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| IF-MIB.ifType"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ProtocolEndpoint**.**OtherTypeDescription**")
 </dt> </dl>
 
-Enumerazione utilizzata per suddividere in categorie e classificare istanze diverse di questa classe. I valori possibili per questa proprietà sono sincronizzati con il modulo IANA (Internet Assigned Numbers Authority) ifType MIB-Module (Management Information Base), gestito in https://www.iana.org/assignments/ianaiftype-mib . Sono inclusi valori aggiuntivi definiti da DMTF.
+Enumerazione utilizzata per classificare e classificare istanze diverse di questa classe. I valori possibili per questa proprietà vengono sincronizzati con il modulo MIB ifType ifType (management information base) di IANA (Internet Assigned Numbers Authority), gestito in https://www.iana.org/assignments/ianaiftype-mib . Sono inclusi i valori aggiuntivi definiti da DMTF.
 
 > [!Note]  
-> Se **ProtocolIFType** è impostato su 1 (other), le informazioni sul tipo di protocollo devono essere fornite nella proprietà **OtherTypeDescription** .
+> Se **ProtocolIFType è** impostato su 1 (Altro), le informazioni sul tipo di protocollo devono essere fornite nella **proprietà OtherTypeDescription.**
 
  
 
@@ -210,49 +210,49 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="DDN_X.25"></span><span id="ddn_x.25"></span>
 
-**DDN X. 25** (4)
+**DDN X.25** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="RFC877_X.25"></span><span id="rfc877_x.25"></span>
 
-**RFC877 X. 25** (5)
+**RFC877 X.25** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ethernet_CSMA_CD"></span><span id="ethernet_csma_cd"></span><span id="ETHERNET_CSMA_CD"></span>
 
-**CSMA Ethernet/CD** (6)
+**Ethernet CSMA/CD** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.3_CSMA_CD"></span><span id="iso_802.3_csma_cd"></span>
 
-**ISO 802,3 CSMA/CD** (7)
+**ISO 802.3 CSMA/CD** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.4_Token_Bus"></span><span id="iso_802.4_token_bus"></span><span id="ISO_802.4_TOKEN_BUS"></span>
 
-**Bus token ISO 802,4** (8)
+**Bus di token ISO 802.4** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.5_Token_Ring"></span><span id="iso_802.5_token_ring"></span><span id="ISO_802.5_TOKEN_RING"></span>
 
-**Anello token ISO 802,5** (9)
+**Token ring ISO 802.5** (9)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.6_MAN"></span><span id="iso_802.6_man"></span>
 
-**ISO 802,6 uomo** (10)
+**ISO 802.6 MAN** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -280,7 +280,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="HyperChannel"></span><span id="hyperchannel"></span><span id="HYPERCHANNEL"></span>
 
-**Ipercanale** (14)
+**HyperChannel** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -294,7 +294,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="LAP-B"></span><span id="lap-b"></span>
 
-**Lap-B** (16)
+**LAP-B** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -322,7 +322,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Basic_ISDN"></span><span id="basic_isdn"></span><span id="BASIC_ISDN"></span>
 
-**ISDN Basic** (20)
+**ISDN di** base (20)
 
 
 </dt> <dd></dd> <dt>
@@ -336,7 +336,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Proprietary_Point-to-Point_Serial"></span><span id="proprietary_point-to-point_serial"></span><span id="PROPRIETARY_POINT-TO-POINT_SERIAL"></span>
 
-**Seriale point-to-Point proprietario** (22)
+**Seriale point-to-point proprietaria** (22)
 
 
 </dt> <dd></dd> <dt>
@@ -378,7 +378,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="SLIP"></span><span id="slip"></span>
 
-**Slip** (28)
+**SLIP** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -406,7 +406,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Frame_Relay"></span><span id="frame_relay"></span><span id="FRAME_RELAY"></span>
 
-**Inoltro frame** (32)
+**Frame Relay** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -420,7 +420,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Parallel"></span><span id="parallel"></span><span id="PARALLEL"></span>
 
-**Parallelo** (34)
+**Parallel** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -441,14 +441,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="ATM"></span><span id="atm"></span>
 
-**ATM** (37)
+**Bancomat** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MIO_X.25"></span><span id="mio_x.25"></span>
 
-**Mio X. 25** (38)
+**MIO X.25** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -462,14 +462,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="X.25_PLE"></span><span id="x.25_ple"></span>
 
-**X. 25 PLE** (40)
+**X.25 PLE** (40)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.211c"></span><span id="iso_802.211c"></span><span id="ISO_802.211C"></span>
 
-**802.211 ISO c** (41)
+**ISO 802.211c** (41)
 
 
 </dt> <dd></dd> <dt>
@@ -490,14 +490,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Frame_Relay_Service"></span><span id="frame_relay_service"></span><span id="FRAME_RELAY_SERVICE"></span>
 
-**Servizio frame relay** (44)
+**Servizio Frame Relay** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.35"></span><span id="v.35"></span>
 
-**V. 35** (45)
+**V.35** (45)
 
 
 </dt> <dd></dd> <dt>
@@ -539,7 +539,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="SONET_VT"></span><span id="sonet_vt"></span>
 
-**VT SONET** (51)
+**SONET VT** (51)
 
 
 </dt> <dd></dd> <dt>
@@ -560,14 +560,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Proprietary_Multiplexor"></span><span id="proprietary_multiplexor"></span><span id="PROPRIETARY_MULTIPLEXOR"></span>
 
-**Multiplexer proprietario** (54)
+**Multiplexor proprietario** (54)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.12"></span><span id="ieee_802.12"></span>
 
-**IEEE 802,12** (55)
+**IEEE 802.12** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -595,14 +595,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="ATM_Emulated_LAN_for_802.3"></span><span id="atm_emulated_lan_for_802.3"></span><span id="ATM_EMULATED_LAN_FOR_802.3"></span>
 
-**LAN emulata ATM per 802,3** (59)
+**LAN emulata ATM per 802.3** (59)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_Emulated_LAN_for_802.5"></span><span id="atm_emulated_lan_for_802.5"></span><span id="ATM_EMULATED_LAN_FOR_802.5"></span>
 
-**LAN emulata ATM per 802,5** (60)
+**LAN emulata ATM per 802.5** (60)
 
 
 </dt> <dd></dd> <dt>
@@ -616,7 +616,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Fast_Ethernet__100BaseT_"></span><span id="fast_ethernet__100baset_"></span><span id="FAST_ETHERNET__100BASET_"></span>
 
-**Ethernet veloce (100BaseT)** (62)
+**Fast Ethernet (100BaseT)** (62)
 
 
 </dt> <dd></dd> <dt>
@@ -630,28 +630,28 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="V.11"></span><span id="v.11"></span>
 
-**V. 11** (64)
+**V.11** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.36"></span><span id="v.36"></span>
 
-**V. 36** (65)
+**V.36** (65)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="G703_at_64K"></span><span id="g703_at_64k"></span><span id="G703_AT_64K"></span>
 
-**G703 a 64K** (66)
+**G703 a 64.000** (66)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="G703_at_2Mb"></span><span id="g703_at_2mb"></span><span id="G703_AT_2MB"></span>
 
-**G703 a 2MB** (67)
+**G703 a 2 Mb** (67)
 
 
 </dt> <dd></dd> <dt>
@@ -679,14 +679,14 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="IEEE_802.11"></span><span id="ieee_802.11"></span>
 
-**IEEE 802,11** (71)
+**IEEE 802.11** (71)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IBM_260_370_OEMI_Channel"></span><span id="ibm_260_370_oemi_channel"></span><span id="IBM_260_370_OEMI_CHANNEL"></span>
 
-**Canale OEMI IBM 260/370** (72)
+**Ibm 260/370 OEMI Channel** (72)
 
 
 </dt> <dd></dd> <dt>
@@ -700,7 +700,7 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Data_Link_Switching"></span><span id="data_link_switching"></span><span id="DATA_LINK_SWITCHING"></span>
 
-**Cambio collegamento dati** (74)
+**Cambio di collegamento dati** (74)
 
 
 </dt> <dd></dd> <dt>
@@ -721,28 +721,28 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="LAP-D"></span><span id="lap-d"></span>
 
-**Lap-D** (77)
+**LAP-D** (77)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IP_Switch"></span><span id="ip_switch"></span><span id="IP_SWITCH"></span>
 
-**Opzione IP** (78)
+**Commutatore IP** (78)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Remote_Source_Route_Bridging"></span><span id="remote_source_route_bridging"></span><span id="REMOTE_SOURCE_ROUTE_BRIDGING"></span>
 
-**Bridging Route origine remota** (79)
+**Bridging route di origine remota** (79)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_Logical"></span><span id="atm_logical"></span><span id="ATM_LOGICAL"></span>
 
-**Logica ATM** (80)
+**Atm Logical** (80)
 
 
 </dt> <dd></dd> <dt>
@@ -770,28 +770,28 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Async"></span><span id="async"></span><span id="ASYNC"></span>
 
-**Async** (84)
+**Asincrono** (84)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Combat_Net_Radio"></span><span id="combat_net_radio"></span><span id="COMBAT_NET_RADIO"></span>
 
-**Combat net radio** (85)
+**Combat Net Radio** (85)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISO_802.5r_DTR"></span><span id="iso_802.5r_dtr"></span><span id="ISO_802.5R_DTR"></span>
 
-**802.5 ISO r DTR** (86)
+**ISO 802.5r DTR** (86)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ext_Pos_Loc_Report_System"></span><span id="ext_pos_loc_report_system"></span><span id="EXT_POS_LOC_REPORT_SYSTEM"></span>
 
-**Sistema di segnalazione EXT POS loc** (87)
+**Ext Pos Loc Report System** (87)
 
 
 </dt> <dd></dd> <dt>
@@ -805,35 +805,35 @@ Enumerazione utilizzata per suddividere in categorie e classificare istanze dive
 
 <span id="Proprietary_Connectionless"></span><span id="proprietary_connectionless"></span><span id="PROPRIETARY_CONNECTIONLESS"></span>
 
-Senza **connessione proprietaria** (89)
+**Senza connessione proprietaria** (89)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ITU_X.29_Host_PAD"></span><span id="itu_x.29_host_pad"></span><span id="ITU_X.29_HOST_PAD"></span>
 
-**Pad host ITU X. 29** (90)
+**PAD host X.29 ITU** (90)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ITU_X.3_Terminal_PAD"></span><span id="itu_x.3_terminal_pad"></span><span id="ITU_X.3_TERMINAL_PAD"></span>
 
-**Pad terminale ITU X. 3** (91)
+**PAD del terminale ITU X.3** (91)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Frame_Relay_MPI"></span><span id="frame_relay_mpi"></span><span id="FRAME_RELAY_MPI"></span>
 
-**MPI frame relay** (92)
+**Frame Relay MPI** (92)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ITU_X.213"></span><span id="itu_x.213"></span>
 
-**ITU X. 213** (93)
+**ITU X.213** (93)
 
 
 </dt> <dd></dd> <dt>
@@ -868,7 +868,7 @@ Senza **connessione proprietaria** (89)
 
 <span id="ISO_802.5_CRFP"></span><span id="iso_802.5_crfp"></span>
 
-**ISO 802,5 CRFP** (98)
+**ISO 802.5 CRFP** (98)
 
 
 </dt> <dd></dd> <dt>
@@ -882,21 +882,21 @@ Senza **connessione proprietaria** (89)
 
 <span id="Voice_Receive_and_Transmit"></span><span id="voice_receive_and_transmit"></span><span id="VOICE_RECEIVE_AND_TRANSMIT"></span>
 
-**Ricezione e trasmissione vocale** (100)
+**Ricezione e trasmissione vocali** (100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Voice_Foreign_Exchange_Office"></span><span id="voice_foreign_exchange_office"></span><span id="VOICE_FOREIGN_EXCHANGE_OFFICE"></span>
 
-Segreteria esterna per la **voce di Exchange** (101)
+**Voice Foreign Exchange Office** (101)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Voice_Foreign_Exchange_Service"></span><span id="voice_foreign_exchange_service"></span><span id="VOICE_FOREIGN_EXCHANGE_SERVICE"></span>
 
-**Servizio scambio vocale** (102)
+**Voice Foreign Exchange Service** (102)
 
 
 </dt> <dd></dd> <dt>
@@ -917,14 +917,14 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="ATM_DXI"></span><span id="atm_dxi"></span>
 
-**DXi ATM** (105)
+**ATM DXI** (105)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_FUNI"></span><span id="atm_funi"></span>
 
-**Funi ATM** (106)
+**ATM FUNI** (106)
 
 
 </dt> <dd></dd> <dt>
@@ -938,7 +938,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="PPP_Multilink_Bundle"></span><span id="ppp_multilink_bundle"></span><span id="PPP_MULTILINK_BUNDLE"></span>
 
-**Bundle Multilink PPP** (108)
+**Bundle multilink PPP** (108)
 
 
 </dt> <dd></dd> <dt>
@@ -952,14 +952,14 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="IP_over_CLAW"></span><span id="ip_over_claw"></span><span id="IP_OVER_CLAW"></span>
 
-**IP over Claw** (110)
+**IP su CLAW** (110)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stack_to_Stack"></span><span id="stack_to_stack"></span><span id="STACK_TO_STACK"></span>
 
-**Stack da** stack (111)
+**Stack in stack** (111)
 
 
 </dt> <dd></dd> <dt>
@@ -987,7 +987,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="ISO_802.5j_Fibre_Token_Ring"></span><span id="iso_802.5j_fibre_token_ring"></span><span id="ISO_802.5J_FIBRE_TOKEN_RING"></span>
 
-**Anello di token fibre ISO 802.5 j** (115)
+**Fibre Token Ring ISO 802.5j** (115)
 
 
 </dt> <dd></dd> <dt>
@@ -1001,7 +1001,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Gigabit_Ethernet"></span><span id="gigabit_ethernet"></span><span id="GIGABIT_ETHERNET"></span>
 
-**Ethernet Gigabit** (117)
+**Gigabit Ethernet** (117)
 
 
 </dt> <dd></dd> <dt>
@@ -1015,28 +1015,28 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="LAP-F"></span><span id="lap-f"></span>
 
-**Lap-F** (119)
+**LAP-F** (119)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="V.37"></span><span id="v.37"></span>
 
-**V. 37** (120)
+**V.37** (120)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="X.25_MLP"></span><span id="x.25_mlp"></span>
 
-**X. 25 MLP** (121)
+**X.25 MLP** (121)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="X.25_Hunt_Group"></span><span id="x.25_hunt_group"></span><span id="X.25_HUNT_GROUP"></span>
 
-**Gruppo di caccia X. 25** (122)
+**Gruppo di risposta X.25** (122)
 
 
 </dt> <dd></dd> <dt>
@@ -1057,42 +1057,42 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="FAST_Channel"></span><span id="fast_channel"></span><span id="FAST_CHANNEL"></span>
 
-**Canale rapido** (125)
+**FAST Channel** (125)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IP__for_APPN_HPR_in_IP_Networks_"></span><span id="ip__for_appn_hpr_in_ip_networks_"></span><span id="IP__FOR_APPN_HPR_IN_IP_NETWORKS_"></span>
 
-**IP (per APPN HPR in reti IP)** (126)
+**IP (per HPR APPN nelle reti IP)** (126)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CATV_MAC_Layer"></span><span id="catv_mac_layer"></span><span id="CATV_MAC_LAYER"></span>
 
-**Livello Mac CATV** (127)
+**Livello MAC CATV** (127)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CATV_Downstream"></span><span id="catv_downstream"></span><span id="CATV_DOWNSTREAM"></span>
 
-**CATV downstream** (128)
+**CatV Downstream** (128)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CATV_Upstream"></span><span id="catv_upstream"></span><span id="CATV_UPSTREAM"></span>
 
-**CATV upstream** (129)
+**CATV Upstream** (129)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Avalon_12MPP_Switch"></span><span id="avalon_12mpp_switch"></span><span id="AVALON_12MPP_SWITCH"></span>
 
-**Switch Avalon 12MPP** (130)
+**Interruttore Avalon 12MPP** (130)
 
 
 </dt> <dd></dd> <dt>
@@ -1113,28 +1113,28 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Circuit_Emulation_Service"></span><span id="circuit_emulation_service"></span><span id="CIRCUIT_EMULATION_SERVICE"></span>
 
-**Servizio di emulazione del circuito** (133)
+**Servizio di emulazione dei** circuiti (133)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_SubInterface"></span><span id="atm_subinterface"></span><span id="ATM_SUBINTERFACE"></span>
 
-**Sottointerfaccia ATM** (134)
+**AtM SubInterface** (134)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Layer_2_VLAN_using_802.1Q"></span><span id="layer_2_vlan_using_802.1q"></span><span id="LAYER_2_VLAN_USING_802.1Q"></span>
 
-**VLAN di livello 2 con 802.1 q** (135)
+**VLAN di livello 2 con 802.1Q** (135)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Layer_3_VLAN_using_IP"></span><span id="layer_3_vlan_using_ip"></span><span id="LAYER_3_VLAN_USING_IP"></span>
 
-**VLAN di livello 3 con IP** (136)
+**VLAN di livello 3 tramite IP** (136)
 
 
 </dt> <dd></dd> <dt>
@@ -1148,14 +1148,14 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Digital_Power_Line"></span><span id="digital_power_line"></span><span id="DIGITAL_POWER_LINE"></span>
 
-**Linea di alimentazione digitale** (138)
+**Digital Power Line** (138)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Multimedia_Mail_over_IP"></span><span id="multimedia_mail_over_ip"></span><span id="MULTIMEDIA_MAIL_OVER_IP"></span>
 
-**Posta elettronica multimediale su IP** (139)
+**Posta multimediale su IP** (139)
 
 
 </dt> <dd></dd> <dt>
@@ -1176,7 +1176,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="IP_Forwarding"></span><span id="ip_forwarding"></span><span id="IP_FORWARDING"></span>
 
-**Inoltri IP** (142)
+**Inoltro IP** (142)
 
 
 </dt> <dd></dd> <dt>
@@ -1197,42 +1197,42 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="IF-GSN_HIPPI-6400"></span><span id="if-gsn_hippi-6400"></span>
 
-**If-GSN/HIPPI-6400** (145)
+**IF-GSN/HIPPI-6400** (145)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DVB-RCC_MAC_Layer"></span><span id="dvb-rcc_mac_layer"></span><span id="DVB-RCC_MAC_LAYER"></span>
 
-**Livello Mac DVB-RCC** (146)
+**Livello MAC DVB-RCC** (146)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DVB-RCC_Downstream"></span><span id="dvb-rcc_downstream"></span><span id="DVB-RCC_DOWNSTREAM"></span>
 
-**DVB-RCC downstream** (147)
+**DVB-RCC Downstream** (147)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DVB-RCC_Upstream"></span><span id="dvb-rcc_upstream"></span><span id="DVB-RCC_UPSTREAM"></span>
 
-**DVB-RCC upstream** (148)
+**DVB-RCC Upstream** (148)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_Virtual"></span><span id="atm_virtual"></span><span id="ATM_VIRTUAL"></span>
 
-**ATM virtuale** (149)
+**AtM Virtual** (149)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MPLS_Tunnel"></span><span id="mpls_tunnel"></span><span id="MPLS_TUNNEL"></span>
 
-**Tunnel MPLS** (150)
+**MPLS Tunnel** (150)
 
 
 </dt> <dd></dd> <dt>
@@ -1253,7 +1253,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Voice_over_Frame_Relay"></span><span id="voice_over_frame_relay"></span><span id="VOICE_OVER_FRAME_RELAY"></span>
 
-**Inoltro del frame Voice over** (153)
+**Voice over Frame Relay** (153)
 
 
 </dt> <dd></dd> <dt>
@@ -1281,21 +1281,21 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Proprietary_P2P_Wireless"></span><span id="proprietary_p2p_wireless"></span><span id="PROPRIETARY_P2P_WIRELESS"></span>
 
-**Wireless P2P proprietario** (157)
+**P2P wireless proprietario** (157)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Frame_Forward"></span><span id="frame_forward"></span><span id="FRAME_FORWARD"></span>
 
-**Frame in** poi (158)
+**Fotogramma in avanti** (158)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="RFC1483_Multiprotocol_over_ATM"></span><span id="rfc1483_multiprotocol_over_atm"></span><span id="RFC1483_MULTIPROTOCOL_OVER_ATM"></span>
 
-**RFC1483 Multiprotocol su ATM** (159)
+**RFC1483 Multiprotocol over ATM** (159)
 
 
 </dt> <dd></dd> <dt>
@@ -1309,35 +1309,35 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="IEEE_802.3ad_Link_Aggregate"></span><span id="ieee_802.3ad_link_aggregate"></span><span id="IEEE_802.3AD_LINK_AGGREGATE"></span>
 
-**Aggregazione collegamento ad IEEE 802.3** (161)
+**Aggregazione collegamento IEEE 802.3ad** (161)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="BGP_Policy_Accounting"></span><span id="bgp_policy_accounting"></span><span id="BGP_POLICY_ACCOUNTING"></span>
 
-**Contabilità dei criteri BGP** (162)
+**BGP Policy Accounting** (162)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FRF_.16_Multilink_FR"></span><span id="frf_.16_multilink_fr"></span><span id="FRF_.16_MULTILINK_FR"></span>
 
-**FRF .16 Multilink fr** (163)
+**FRF .16 Multilink FR** (163)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="H.323_Gatekeeper"></span><span id="h.323_gatekeeper"></span><span id="H.323_GATEKEEPER"></span>
 
-**Gatekeeper H. 323** (164)
+**H.323 Gatekeeper** (164)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="H.323_Proxy"></span><span id="h.323_proxy"></span><span id="H.323_PROXY"></span>
 
-**Proxy H. 323** (165)
+**Proxy H.323** (165)
 
 
 </dt> <dd></dd> <dt>
@@ -1351,7 +1351,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Multi-Frequency_Signaling_Link"></span><span id="multi-frequency_signaling_link"></span><span id="MULTI-FREQUENCY_SIGNALING_LINK"></span>
 
-**Collegamento** per la segnalazione a più frequenze (167)
+**Collegamento di segnalazione multifrequenza** (167)
 
 
 </dt> <dd></dd> <dt>
@@ -1372,14 +1372,14 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="DS1_Facility_Data_Link"></span><span id="ds1_facility_data_link"></span><span id="DS1_FACILITY_DATA_LINK"></span>
 
-**Collegamento dati della struttura DS1** (170)
+**DS1 Facility Data Link** (170)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Packet_over_SONET_SDH"></span><span id="packet_over_sonet_sdh"></span><span id="PACKET_OVER_SONET_SDH"></span>
 
-**Packet over SONET/SDH** (171)
+**Pacchetto su SONET/SDH** (171)
 
 
 </dt> <dd></dd> <dt>
@@ -1400,7 +1400,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Power_Line"></span><span id="power_line"></span><span id="POWER_LINE"></span>
 
-**Linea di alimentazione** (174)
+**Power Line** (174)
 
 
 </dt> <dd></dd> <dt>
@@ -1435,77 +1435,77 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="ISUP"></span><span id="isup"></span>
 
-**IsUp** (179)
+**ISUP** (179)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_Wireless_MAC_Layer"></span><span id="proprietary_wireless_mac_layer"></span><span id="PROPRIETARY_WIRELESS_MAC_LAYER"></span>
 
-**Livello MAC wireless proprietario** (180)
+**Wireless MAC Layer proprietario** (180)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_Wireless_Downstream"></span><span id="proprietary_wireless_downstream"></span><span id="PROPRIETARY_WIRELESS_DOWNSTREAM"></span>
 
-**Wireless proprietario a valle** (181)
+**Wireless Downstream proprietario** (181)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_Wireless_Upstream"></span><span id="proprietary_wireless_upstream"></span><span id="PROPRIETARY_WIRELESS_UPSTREAM"></span>
 
-**Upstream senza fili proprietario** (182)
+**Upstream wireless proprietario** (182)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HIPERLAN_Type_2"></span><span id="hiperlan_type_2"></span><span id="HIPERLAN_TYPE_2"></span>
 
-**Hiperlan tipo 2** (183)
+**HIPERLAN Di tipo 2** (183)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_Broadband_Wireless_Access_Point_to_Mulipoint"></span><span id="proprietary_broadband_wireless_access_point_to_mulipoint"></span><span id="PROPRIETARY_BROADBAND_WIRELESS_ACCESS_POINT_TO_MULIPOINT"></span>
 
-**Punto di accesso wireless a banda larga proprietaria a Mulipoint** (184)
+**Proprietario Broadband Wireless Access Point to Mulipoint** (184)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SONET_Overhead_Channel"></span><span id="sonet_overhead_channel"></span><span id="SONET_OVERHEAD_CHANNEL"></span>
 
-**Canale overhead SONET** (185)
+**SoNET Overhead Channel** (185)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Digital_Wrapper_Overhead_Channel"></span><span id="digital_wrapper_overhead_channel"></span><span id="DIGITAL_WRAPPER_OVERHEAD_CHANNEL"></span>
 
-**Canale overhead del wrapper digitale** (186)
+**Digital Wrapper Overhead Channel** (186)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_Adaptation_Layer_2"></span><span id="atm_adaptation_layer_2"></span><span id="ATM_ADAPTATION_LAYER_2"></span>
 
-**Livello 2 di adattamento ATM** (187)
+**Atm Adaptation Layer 2** (187)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Radio_MAC"></span><span id="radio_mac"></span><span id="RADIO_MAC"></span>
 
-**Mac Radio** (188)
+**RADIO MAC** (188)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATM_Radio"></span><span id="atm_radio"></span><span id="ATM_RADIO"></span>
 
-**Radio ATM** (189)
+**ATM Radio** (189)
 
 
 </dt> <dd></dd> <dt>
@@ -1519,21 +1519,21 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="MVL_DSL"></span><span id="mvl_dsl"></span>
 
-**DSL MVL** (191)
+**MVL DSL** (191)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Long_Read_DSL"></span><span id="long_read_dsl"></span><span id="LONG_READ_DSL"></span>
 
-**DSL lungo lettura** (192)
+**DSL con lettura lunga** (192)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Frame_Relay_DLCI_Endpoint"></span><span id="frame_relay_dlci_endpoint"></span><span id="FRAME_RELAY_DLCI_ENDPOINT"></span>
 
-**Endpoint DLCI frame relay** (193)
+**Endpoint DLCI di Frame Relay** (193)
 
 
 </dt> <dd></dd> <dt>
@@ -1561,49 +1561,49 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Proprietary_ATM"></span><span id="proprietary_atm"></span><span id="PROPRIETARY_ATM"></span>
 
-**ATM proprietario** (197)
+**Bancomat proprietario** (197)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Voice_over_Cable"></span><span id="voice_over_cable"></span><span id="VOICE_OVER_CABLE"></span>
 
-**Cavo Voice over** (198)
+**Cavo voice over** (198)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Infiniband"></span><span id="infiniband"></span><span id="INFINIBAND"></span>
 
-**InfiniBand** (199)
+**Infiniband** (199)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TE_Link"></span><span id="te_link"></span><span id="TE_LINK"></span>
 
-**Collegamento te** (200)
+**Collegamento TE** (200)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Q.2931"></span><span id="q.2931"></span>
 
-**D. 2931** (201)
+**Q.2931** (201)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Virtual_Trunk_Group"></span><span id="virtual_trunk_group"></span><span id="VIRTUAL_TRUNK_GROUP"></span>
 
-**Gruppo Trunk virtuale** (202)
+**Virtual Trunk Group** (202)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SIP_Trunk_Group"></span><span id="sip_trunk_group"></span><span id="SIP_TRUNK_GROUP"></span>
 
-**Gruppo Trunk SIP** (203)
+**SIP Trunk Group** (203)
 
 
 </dt> <dd></dd> <dt>
@@ -1624,42 +1624,42 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Econet"></span><span id="econet"></span><span id="ECONET"></span>
 
-**ECONT** (206)
+**Econet** (206)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FSAN_155Mb_PON"></span><span id="fsan_155mb_pon"></span><span id="FSAN_155MB_PON"></span>
 
-**FSAN 155MB pon** (207)
+**FSAN 155 Mb PON** (207)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FSAN_622Mb_PON"></span><span id="fsan_622mb_pon"></span><span id="FSAN_622MB_PON"></span>
 
-**FSAN 622MB pon** (208)
+**FSAN 622Mb PON** (208)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Transparent_Bridge"></span><span id="transparent_bridge"></span><span id="TRANSPARENT_BRIDGE"></span>
 
-**Bridge trasparente** (209)
+**Transparent Bridge** (209)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Line_Group"></span><span id="line_group"></span><span id="LINE_GROUP"></span>
 
-**Gruppo di righe** (210)
+**Gruppo di** linee (210)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Voice_E_M_Feature_Group"></span><span id="voice_e_m_feature_group"></span><span id="VOICE_E_M_FEATURE_GROUP"></span>
 
-**Gruppo di funzionalità voce E&M** (211)
+**Voice E&M Feature Group** (211)
 
 
 </dt> <dd></dd> <dt>
@@ -1673,21 +1673,21 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Voice_DID"></span><span id="voice_did"></span><span id="VOICE_DID"></span>
 
-**Voce did** (213)
+**Voice DID** (213)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MPEG_Transport"></span><span id="mpeg_transport"></span><span id="MPEG_TRANSPORT"></span>
 
-**Trasporto MPEG** (214)
+**MpEG Transport** (214)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="6To4"></span><span id="6to4"></span><span id="6TO4"></span>
 
-**6to4** (215)
+**6To4** (215)
 
 
 </dt> <dd></dd> <dt>
@@ -1715,7 +1715,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Optical_Channel_Group"></span><span id="optical_channel_group"></span><span id="OPTICAL_CHANNEL_GROUP"></span>
 
-**Gruppo canale ottico** (219)
+**Gruppo di canali ottici** (219)
 
 
 </dt> <dd></dd> <dt>
@@ -1750,14 +1750,14 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="Fcip"></span><span id="fcip"></span><span id="FCIP"></span>
 
-**FCIP** (224)
+**Fcip** (224)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IANA_Reserved"></span><span id="iana_reserved"></span><span id="IANA_RESERVED"></span>
 
-**IANA riservato** (225.. 4095)
+**Riservato IANA** (225..4095)
 
 
 </dt> <dd></dd> <dt>
@@ -1820,7 +1820,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="VINES"></span><span id="vines"></span>
 
-**Viti** (4104)
+**VINES** (4104)
 
 
 </dt> <dd></dd> <dt>
@@ -1876,28 +1876,28 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="802.11a"></span><span id="802.11A"></span>
 
-**802.11 a** (4112)
+**802.11a** (4112)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="802.11b"></span><span id="802.11B"></span>
 
-**802.11 b** (4113)
+**802.11b** (4113)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="802.11g"></span><span id="802.11G"></span>
 
-**802.11 g** (4114)
+**802.11g** (4114)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="802.11h"></span><span id="802.11H"></span>
 
-**802.11 h** (4115)
+**802.11h** (4115)
 
 
 </dt> <dd></dd> <dt>
@@ -1932,7 +1932,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="HTTP"></span><span id="http"></span>
 
-**Http** (4204)
+**HTTP** (4204)
 
 
 </dt> <dd></dd> <dt>
@@ -1967,7 +1967,7 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="SM_CLP"></span><span id="sm_clp"></span>
 
-**CLP SM** (4402)
+**SM CLP** (4402)
 
 
 </dt> <dd></dd> <dt>
@@ -1995,45 +1995,45 @@ Segreteria esterna per la **voce di Exchange** (101)
 
 <span id="HTTPS"></span><span id="https"></span>
 
-**Https** (4406)
+**HTTPS** (4406)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768...)
+**Vendor Reserved** (32768.).
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ProtocolType**
+**Protocoltype**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**deprecato**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**CIM \_ ProtocolEndpoint**.**ProtocolIFType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ProtocolEndpoint**.**OtherTypeDescription**")
+Qualificatori: [**deprecati**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**PROTOCOLLO \_ CIMEndpoint**.**ProtocolIFType**"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ProtocolEndpoint**.**OtherTypeDescription**")
 </dt> </dl>
 
 > [!Note]  
-> Descrizione deprecata: enumerazione utilizzata per categorizzare e classificare istanze diverse di questa classe.
+> Descrizione deprecata: enumerazione usata per classificare e classificare istanze diverse di questa classe.
 
  
 
-Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
+Questa proprietà è deprecata. Usare invece la **proprietà ProtocolIFType.**
 
 <dt>
 
@@ -2109,7 +2109,7 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 
 <span id="VINES"></span><span id="vines"></span>
 
-**Viti** (10)
+**VINES** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -2123,7 +2123,7 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 
 <span id="ATM"></span><span id="atm"></span>
 
-**ATM** (12)
+**Bancomat** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -2144,7 +2144,7 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 
 <span id="TokenRing"></span><span id="tokenring"></span><span id="TOKENRING"></span>
 
-**Tokenring** (15)
+**TokenRing** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -2158,7 +2158,7 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 
 <span id="Infiniband"></span><span id="infiniband"></span><span id="INFINIBAND"></span>
 
-**InfiniBand** (17)
+**Infiniband** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -2179,14 +2179,14 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 
 <span id="ISDN_B_Channel_Endpoint"></span><span id="isdn_b_channel_endpoint"></span><span id="ISDN_B_CHANNEL_ENDPOINT"></span>
 
-**Endpoint canale ISDN b** (20)
+**Endpoint canale ISDN B** (20)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISDN_D_Channel_Endpoint"></span><span id="isdn_d_channel_endpoint"></span><span id="ISDN_D_CHANNEL_ENDPOINT"></span>
 
-**Endpoint canale ISDN D** (21)
+**IsDN D Channel Endpoint** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -2238,16 +2238,16 @@ Questa proprietà è deprecata. Usare invece la proprietà **ProtocolIFType** .
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("TimeOfLastStateChange"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| if-MIB. ifLastChange ")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("TimeOfLastStateChange"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| IF-MIB.ifLastChange")
 </dt> </dl>
 
-Data e ora dell'Ultima modifica apportata alla proprietà **EnabledState** . Se **EnabledState** non è stato modificato e questa proprietà è popolata, deve essere impostata su un valore di intervallo zero. Se è stata richiesta una modifica di stato, ma è stata rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata.
+Data e ora dell'ultima modifica della proprietà **EnabledState.** Se **EnabledState** non è stato modificato e questa proprietà viene popolata, deve essere impostata su un valore di intervallo pari a zero. Se una modifica dello stato è stata richiesta, ma rifiutata o non ancora elaborata, la proprietà non deve essere aggiornata.
 
 </dd> </dl>
 
@@ -2259,8 +2259,8 @@ Data e ora dell'Ultima modifica apportata alla proprietà **EnabledState** . Se 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -2269,7 +2269,7 @@ Data e ora dell'Ultima modifica apportata alla proprietà **EnabledState** . Se 
 
 <dl> <dt>
 
-[**\_SERVICEACCESSPOINT CIM**](cim-serviceaccesspoint.md)
+[**CIM \_ ServiceAccessPoint**](cim-serviceaccesspoint.md)
 </dt> </dl>
 
  

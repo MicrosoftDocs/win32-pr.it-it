@@ -1,25 +1,25 @@
 ---
-description: Una transazione named pipe è una comunicazione client/server che combina un'operazione di scrittura e un'operazione di lettura in una singola operazione di rete. Le transazioni migliorano le prestazioni delle comunicazioni di rete tra un client e un server remoto.
+description: Una named pipe transazione è una comunicazione client/server che combina un'operazione di scrittura e un'operazione di lettura in una singola operazione di rete. Le transazioni migliorano le prestazioni delle comunicazioni di rete tra un client e un server remoto.
 ms.assetid: aedce207-7dea-4670-b6dd-0c61b3f6f690
-title: Transazioni su named pipe
+title: Transazioni in named pipe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 489039b92b65f57cefc71c5d78a01b1824b1418a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 524f9ae453eb958efd59d8ef6ee5adfda12dd2701e4c719be51299e2873913dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963901"
 ---
-# <a name="transactions-on-named-pipes"></a>Transazioni su named pipe
+# <a name="transactions-on-named-pipes"></a>Transazioni in named pipe
 
-Una transazione named pipe è una comunicazione client/server che combina un'operazione di scrittura e un'operazione di lettura in una singola operazione di rete. Una transazione può essere utilizzata solo su una pipe duplex di tipo messaggio. Le transazioni migliorano le prestazioni delle comunicazioni di rete tra un client e un server remoto. I processi possono utilizzare le funzioni [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) e [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) per eseguire named pipe transazioni.
+Una named pipe transazione è una comunicazione client/server che combina un'operazione di scrittura e un'operazione di lettura in una singola operazione di rete. Una transazione può essere usata solo su una pipe duplex di tipo messaggio. Le transazioni migliorano le prestazioni delle comunicazioni di rete tra un client e un server remoto. I processi possono usare le [**funzioni TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) e [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) per eseguire named pipe transazioni.
 
-La funzione [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) viene usata più comunemente da un client pipe per scrivere un messaggio di richiesta nel server di named pipe e leggere il messaggio di risposta del server. Il client pipe deve specificare l' \_ \| \_ accesso in scrittura generico di lettura generico quando apre il relativo handle di pipe chiamando la funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) . Quindi, il client pipe imposta l'handle della pipe sulla modalità di lettura del messaggio chiamando la funzione [**SetNamedPipeHandleState**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) . Se il buffer di lettura specificato nella chiamata a **TransactNamedPipe** non è sufficientemente grande da consentire l'inserimento dell'intero messaggio scritto dal server, la funzione restituisce zero e [**GETLASTERROR**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce l'errore di \_ altri \_ dati. Il client può leggere il resto del messaggio chiamando la funzione [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile), [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex)o [**PeekNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-peeknamedpipe) .
+La [**funzione TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) viene in genere usata da un client pipe per scrivere un messaggio di richiesta nel server named pipe e leggere il messaggio di risposta del server. Il client pipe deve specificare l'accesso GENERIC READ GENERIC WRITE quando apre \_ l'handle della pipe chiamando la funzione \| \_ [**CreateFile.**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Il client pipe imposta quindi l'handle della pipe sulla modalità di lettura messaggi chiamando la [**funzione SetNamedPipeHandleState.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-setnamedpipehandlestate) Se il buffer di lettura specificato nella chiamata a **TransactNamedPipe** non è sufficientemente grande da contenere l'intero messaggio scritto dal server, la funzione restituisce zero e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce ERROR \_ MORE \_ DATA. Il client può leggere il resto del messaggio chiamando la [**funzione ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile), [**ReadFileEx**](/windows/desktop/api/fileapi/nf-fileapi-readfileex)o [**PeekNamedPipe.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-peeknamedpipe)
 
-[**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) viene in genere chiamato da client pipe, ma può anche essere usato da un server pipe.
+[**TransactNamedPipe viene**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe) in genere chiamato dai client pipe, ma può essere usato anche da un server pipe.
 
-Nell'esempio seguente viene illustrato un client pipe che usa [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe). Questo client pipe può essere usato con uno qualsiasi dei server pipe elencati in vedere anche.
+Nell'esempio seguente viene illustrato un client pipe che [**usa TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe). Questo client pipe può essere usato con uno dei server pipe elencati in Vedere anche.
 
 
 ```C++
@@ -137,7 +137,7 @@ int _tmain(int argc, TCHAR *argv[])
 
 
 
-Un client pipe USA [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) per combinare le chiamate di funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) (se necessario), [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe)e [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) in un'unica chiamata. Poiché l'handle della pipe viene chiuso prima della restituzione della funzione, eventuali byte aggiuntivi nel messaggio andranno perduti se il messaggio supera la dimensione specificata del buffer di lettura. L'esempio seguente è l'esempio precedente riscritto in modo da usare **CallNamedPipe**.
+Un client pipe usa [**CallNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-callnamedpipea) per combinare le chiamate di funzione [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WaitNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-waitnamedpipea) (se necessario), [**TransactNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-transactnamedpipe)e [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) in una singola chiamata. Poiché l'handle della pipe viene chiuso prima che la funzione restituisca , eventuali byte aggiuntivi nel messaggio vengono persi se il messaggio è maggiore delle dimensioni specificate del buffer di lettura. L'esempio seguente è l'esempio precedente riscritto per usare **CallNamedPipe**.
 
 
 ```C++
@@ -197,7 +197,7 @@ int _tmain(int argc, TCHAR *argv[])
 [Server pipe multithreading](multithreaded-pipe-server.md)
 </dt> <dt>
 
-[Server named pipe con I/O sovrapposti](named-pipe-server-using-overlapped-i-o.md)
+[Server named pipe con I/O sovrapposto](named-pipe-server-using-overlapped-i-o.md)
 </dt> <dt>
 
 [Server named pipe con routine di completamento](named-pipe-server-using-completion-routines.md)

@@ -1,27 +1,27 @@
 ---
-description: Con mailslot è possibile utilizzare le funzioni seguenti.
+description: Le funzioni seguenti possono essere usate con mailslot.
 ms.assetid: 85f89fcc-2ab1-411b-ab3e-f1e9d425433f
-title: Funzioni inserimento/espulsione
+title: Funzioni di Mailslot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22df27841465004a3acb64691f6b0b164da66061
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48ef9a4a715e664c9524a7e8d181dd43689ae8f2ea70e8302137a3a0aadad5cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964201"
 ---
-# <a name="mailslot-functions"></a>Funzioni inserimento/espulsione
+# <a name="mailslot-functions"></a>Funzioni di Mailslot
 
-Con mailslot è possibile utilizzare le funzioni seguenti.
+Le funzioni seguenti possono essere usate con mailslot.
 
 
 
 | Funzione                                   | Descrizione                                                                  |
 |--------------------------------------------|------------------------------------------------------------------------------|
-| [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota)   | Crea un inserimento/espulsione con il nome specificato.                                  |
-| [**GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo) | Recupera le informazioni sul inserimento/espulsione specificato.                          |
-| [**SetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-setmailslotinfo) | Imposta il valore di timeout utilizzato dal inserimento/espulsione specificato per un'operazione di lettura. |
+| [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota)   | Crea un mailslot con il nome specificato.                                  |
+| [**GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo) | Recupera informazioni sul mailslot specificato.                          |
+| [**SetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-setmailslotinfo) | Imposta il valore di timeout utilizzato dal mailslot specificato per un'operazione di lettura. |
 
 
 

@@ -4,30 +4,30 @@ ms.assetid: 2141e465-996c-44e8-a081-38c3e1e0b01b
 title: Esempio senza finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb466b345497c320aba9d381a0a5559fda2e89c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 248d5b877e98c22ff421cb8be86a630990b2b7f1ab66ba17f6cfd13eb659337b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982281"
 ---
 # <a name="windowless-sample"></a>Esempio senza finestra
 
 ## <a name="description"></a>Descrizione
 
-In questo esempio viene illustrata la modalità senza finestra nel filtro del renderer video mixing 9 (VMR-9).
+Questo esempio illustra la modalità senza finestra nel filtro Video Mixing Renderer 9 (VMR-9).
 
-È possibile acquisire l'immagine dalla finestra del video facendo clic con il pulsante destro del mouse sull'immagine oppure selezionando **Acquisisci frame corrente** dal menu **immagine** .
+È possibile acquisire l'immagine dalla finestra del video facendo clic con il pulsante destro del mouse sull'immagine o scegliendo **Acquisisci fotogramma corrente** **dal** menu Immagine.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Per scaricare gli esempi di DirectShow SDK, installare la versione più recente del [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Per scaricare gli esempi DirectShow SDK, installare la versione più recente di [Windows SDK.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esempi di DirectShow](directshow-samples.md)
+[DirectShow Campioni](directshow-samples.md)
 </dt> </dl>
 
  

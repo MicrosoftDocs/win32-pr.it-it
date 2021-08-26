@@ -1,7 +1,7 @@
 ---
-description: Definisce lo stato di output Protection Manager (OPM).
+description: Definisce lo stato di Output Protection Manager (OPM).
 ms.assetid: 7C4D88F6-369B-4364-90C4-6D0F8DD1523B
-title: Enumerazione MF_MEDIA_ENGINE_OPM_STATUS
+title: MF_MEDIA_ENGINE_OPM_STATUS enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 73585bf63bc559f30ce114730274e30518497b05
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 98efb0054402f8bf019e91d639f16322a1378a23dfeee76cd31daea9d12bf6fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013041"
 ---
-# <a name="mf_media_engine_opm_status-enumeration"></a>\_ \_ \_ Enumerazione stato OPM del motore multimediale MF \_
+# <a name="mf_media_engine_opm_status-enumeration"></a>Enumerazione MF \_ MEDIA \_ ENGINE \_ OPM \_ STATUS
 
 Definisce lo stato di [Output Protection Manager](output-protection-manager.md) (OPM).
 
@@ -44,45 +44,45 @@ typedef enum _MF_MEDIA_ENGINE_OPM_STATUS {
 
 <dl> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_NOT_REQUESTED"></span><span id="mf_media_engine_opm_not_requested"></span>**MF \_ media \_ Engine \_ OPM \_ non \_ richiesto**
+<span id="MF_MEDIA_ENGINE_OPM_NOT_REQUESTED"></span><span id="mf_media_engine_opm_not_requested"></span>**MOTORE MULTIMEDIALE MF \_ \_ \_ OPM \_ NON \_ RICHIESTO**
 </dt> <dd>
 
-Stato predefinito. Utilizzato per restituire lo stato corretto quando il contenuto non è protetto.
+Stato predefinito. Usato per restituire lo stato corretto quando il contenuto non è protetto.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_ESTABLISHED"></span><span id="mf_media_engine_opm_established"></span>**MF \_ media \_ Engine \_ OPM \_ stabilito**
+<span id="MF_MEDIA_ENGINE_OPM_ESTABLISHED"></span><span id="mf_media_engine_opm_established"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ ESTABLISHED**
 </dt> <dd>
 
-La creazione di OPM è stata completata.
+OPM è stato stabilito correttamente.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**\_ \_ \_ \_ VM non riuscita del motore multimediale MF \_**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**MACCHINA VIRTUALE \_ OPM DEL MOTORE MULTIMEDIALE MF \_ \_ NON \_ \_ RIUSCITA**
 </dt> <dd>
 
-OPM non riuscito perché è in esecuzione in una macchina virtuale (VM).
+OPM non riuscito perché in esecuzione in una macchina virtuale (VM).
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_BDA"></span><span id="mf_media_engine_opm_failed_bda"></span>**MF \_ media \_ Engine \_ OPM \_ non riuscito \_ BDA**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_BDA"></span><span id="mf_media_engine_opm_failed_bda"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ BDA**
 </dt> <dd>
 
-OPM non riuscito perché non è presente alcun driver grafico e il sistema usa la scheda di visualizzazione di base (BDA).
+OPM non è riuscito perché non è presente alcun driver di grafica e il sistema sta usando BDA (Basic Display Adapter).
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_UNSIGNED_DRIVER"></span><span id="mf_media_engine_opm_failed_unsigned_driver"></span>**\_ \_ \_ \_ \_ driver non firmato \_ per MF Media Engine OPM**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_UNSIGNED_DRIVER"></span><span id="mf_media_engine_opm_failed_unsigned_driver"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ UNSIGNED \_ DRIVER**
 </dt> <dd>
 
-L'accesso ad OPM non è riuscito perché il driver di grafica non è firmato PE e viene eseguito il fallback a WARP.
+OPM non riuscito perché il driver di grafica non è con firma PE, con fall back a WARP.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED"></span><span id="mf_media_engine_opm_failed"></span>**MF \_ media \_ Engine \_ OPM \_ non riuscito**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED"></span><span id="mf_media_engine_opm_failed"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED**
 </dt> <dd>
 
-OPM non riuscito per altri motivi.
+OPM non è riuscito per altri motivi.
 
 </dd> </dl>
 
@@ -92,9 +92,9 @@ OPM non riuscito per altri motivi.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ OPM non riuscito per altri motivi.
 
 <dl> <dt>
 
-[Enumerazioni di Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumerazioni](media-foundation-enumerations.md)
 </dt> </dl>
 
  

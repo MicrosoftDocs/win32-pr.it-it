@@ -1,33 +1,33 @@
 ---
-description: Imposta un handle per una finestra di riproduzione video per il motore multimediale.
+description: Imposta un handle per una finestra di riproduzione video per il motore di contenuti multimediali.
 ms.assetid: 63889D81-12C5-47C1-B52A-6358E68830C3
-title: Attributo MF_MEDIA_ENGINE_PLAYBACK_HWND (Mfmediaengine. h)
+title: MF_MEDIA_ENGINE_PLAYBACK_HWND attributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c6a9d38d40b04b32244f48289d3334199a7e035
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a273702a8a4797c0cf05bd4fe79909dd50a004f313a4caec41c3843dc2bc09b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103968878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013031"
 ---
-# <a name="mf_media_engine_playback_hwnd-attribute"></a>\_ \_ \_ Attributo HWND di riproduzione del motore multimediale MF \_
+# <a name="mf_media_engine_playback_hwnd-attribute"></a>Attributo \_ \_ \_ HWND DI RIPRODUZIONE DEL MOTORE \_ MULTIMEDIALE MF
 
-Imposta un handle per una finestra di riproduzione video per il motore multimediale.
+Imposta un handle per una finestra di riproduzione video per il motore di contenuti multimediali.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**HWND** archiviato come **UInt64**
+**HWND archiviato** come **UINT64**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64).
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale.
+Questo attributo viene usato con il [**metodo IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) per inizializzare il motore multimediale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                          |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                          |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Questo attributo viene usato con il metodo [**IMFMediaEngineClassFactory:: Creat
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  
