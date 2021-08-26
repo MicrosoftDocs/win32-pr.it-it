@@ -1,5 +1,5 @@
 ---
-description: Creare il metodo della Win32_Service (provider WMI CIMWin32) - Crea un nuovo servizio di sistema.
+description: 'Metodo Create della classe Win32_Service (provider WMI CIMWin32): crea un nuovo servizio di sistema.'
 ms.assetid: 164e9065-bb0d-4c93-a9fe-c86db1ea7cb7
 ms.tgt_platform: multiple
 title: Metodo Create della classe Win32_Service (provider WMI CIMWin32)
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 71bc0f4edb879fc4a51a012bc53db67031056f47
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3baa83179ac6c5040aa85a5fcf2af0d932a4c8e9cdc2d10742c5c8aaa66abb5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003801"
 ---
 # <a name="create-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Metodo Create della classe Win32_Service (provider WMI CIMWin32)
 
@@ -65,7 +65,7 @@ Nome del servizio da installare nel **metodo Create.** La lunghezza massima dell
 
 Nome visualizzato del servizio. La lunghezza massima della stringa è di 256 caratteri. Il nome viene mantenuto senza distinzione tra maiuscole e minuscole in Gestione controllo servizi. *Per i confronti displayName* non viene sempre fatto distinzione tra maiuscole e minuscole.
 
-Vincoli: accetta lo stesso valore del *parametro Name.*
+Vincoli: accetta lo stesso valore del *parametro* Name.
 
 Esempio: "Atdisk".
 
@@ -174,7 +174,7 @@ Il sistema tenta di iniziare con una buona configurazione.
 *StartMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
@@ -223,14 +223,14 @@ Se **true,** il servizio può creare o comunicare con le finestre sul desktop.
 *StartName* \[ Pollici\]
 </dt> <dd>
 
-Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato NomeDominioNomeUtente o Nome entità \\ utente (UPN) ( Username@DomainName ). Il processo del servizio viene registrato usando uno di questi due formati durante l'esecuzione. Se l'account appartiene al dominio predefinito, . \\ È possibile specificare il nome utente. Se viene specificato **NULL,** il servizio viene connesso come account LocalSystem. Per un kernel o driver a livello di sistema, *StartName* contiene il nome dell'oggetto driver (ovvero FileSystem Rdr o Driver Xns) che il sistema di input e \\ output \\ \\ (I/O) usa per caricare il driver di \\ dispositivo. Se **viene specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio. Esempio: Amministratore \\ DWDOM.
+Nome dell'account con cui viene eseguito il servizio. A seconda del tipo di servizio, il nome dell'account può essere nel formato NomeDominioNomeUtente o Nome entità \\ utente (UPN) ( Username@DomainName ). Il processo del servizio viene registrato usando uno di questi due moduli durante l'esecuzione. Se l'account appartiene al dominio predefinito, . \\ È possibile specificare il nome utente. Se **viene specificato NULL,** il servizio viene connesso come account LocalSystem. Per un driver a livello di kernel o di sistema, *StartName* contiene il nome dell'oggetto driver ,ovvero FileSystem Rdr o Driver Xns, utilizzato dal sistema di \\ input e output \\ \\ (I/O) per caricare il driver di \\ dispositivo. Se **viene specificato NULL,** il driver viene eseguito con un nome di oggetto predefinito creato dal sistema di I/O in base al nome del servizio. Esempio: Amministratore \\ DWDOM.
 
 </dd> <dt>
 
 *StartPassword* \[ Pollici\]
 </dt> <dd>
 
-Password per il nome dell'account specificato dal *parametro StartName.* Specificare **NULL** se la password non viene cambiata. Specificare una stringa vuota se il servizio non dispone di password.
+Password per il nome dell'account specificato dal *parametro StartName.* Specificare **NULL** se non si modifica la password. Specificare una stringa vuota se il servizio non dispone di password.
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Matrice di gruppi di ordinamento del carico che devono essere avviati prima di q
 *Dipendenze dei servizi* \[ Pollici\]
 </dt> <dd>
 
-Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic script è possibile passare un oggetto vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che il servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
+Matrice contenente i nomi dei servizi che devono essere avviati prima dell'avvio del servizio. Ogni elemento della matrice è delimitato da **NULL** e l'elenco viene terminato da due **valori NULL.** In Visual Basic script è possibile passare un vbArray. Se il puntatore **è NULL** o punta a una stringa vuota, il servizio non ha dipendenze. La dipendenza da un servizio significa che il servizio può essere eseguito solo se il servizio da cui dipende è in esecuzione.
 
 </dd> </dl>
 
@@ -440,13 +440,13 @@ Il servizio è attualmente sospeso nel sistema.
 
 ## <a name="remarks"></a>Commenti
 
-I servizi vengono in genere installati in uno dei due modi seguenti: come parte dell'installazione del sistema operativo o tramite un programma di installazione fornito dallo sviluppatore del servizio. Tuttavia, alcuni servizi, in particolare quelli creati all'interno, potrebbero non avere un programma di installazione. In questi casi, è possibile usare il **metodo Create per** installare i servizi a livello di codice.
+I servizi vengono in genere installati in uno dei due modi seguenti: come parte dell'installazione del sistema operativo o tramite un programma di installazione fornito dallo sviluppatore del servizio. Tuttavia, alcuni servizi, in particolare quelli creati all'interno di , potrebbero non avere un programma di installazione. In questi casi, è possibile usare il metodo **Create** per installare i servizi a livello di codice.
 
-Nonostante il nome, il metodo Create non crea effettivamente un servizio. installa semplicemente un servizio esistente. Per usare questo comando, è necessario copiare il file eseguibile del servizio in un computer e quindi usare **Crea** per installare il servizio.
+Nonostante il nome, il metodo Create non crea effettivamente un servizio. si limita a installare un servizio esistente. Per usare questo comando, è necessario copiare il file eseguibile del servizio in un computer e quindi usare **Crea** per installare il servizio.
 
 Il **metodo Create** è simile al metodo [**Change.**](change-method-in-class-win32-service.md) In entrambi i casi, le proprietà del servizio vengono passate come parametri al metodo . Come per i parametri usati con il **metodo Change,** l'ordine in cui questi parametri vengono passati è molto importante.
 
-Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo di ordini di caricamento, in quanto i servizi dipendono l'uno dall'altro. Questi servizi dipendenti richiedono la presenza dei servizi di riferimento per il corretto funzionamento.
+Il *parametro LoadOrderGroup* rappresenta un raggruppamento di servizi di sistema che definiscono le dipendenze di esecuzione. I servizi devono essere avviati nell'ordine specificato dal gruppo di ordini di carico, in quanto i servizi dipendono l'uno dall'altro. Per il corretto funzionamento di questi servizi dipendenti è necessaria la presenza dei servizi antecenti.
 
 ## <a name="examples"></a>Esempio
 

@@ -1,55 +1,55 @@
 ---
-description: I dati sulle prestazioni contengono valori di indice utilizzati per individuare i nomi e il testo della Guida per ogni oggetto e contatore registrato.
+description: I dati sulle prestazioni contengono i valori di indice utilizzati per individuare i nomi e il testo della Guida per ogni oggetto registrato e contatore.
 ms.assetid: 9ddd1672-61cf-41c2-bec0-0d2b775bf970
-title: Recupero di nomi di contatori e testo della Guida
+title: Recupero dei nomi dei contatori e del testo della Guida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5b49f852e6af22dc2ec31d341ee6176913f98e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5f997d9e9f7a0719b3d71d24a1787c5331ef7ec5f69de1ec20c1332f08ccefb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033331"
 ---
-# <a name="retrieving-counter-names-and-help-text"></a>Recupero di nomi di contatori e testo della Guida
+# <a name="retrieving-counter-names-and-help-text"></a>Recupero dei nomi dei contatori e del testo della Guida
 
-I dati sulle prestazioni contengono valori di indice utilizzati per individuare i nomi e il testo della Guida per ogni oggetto e contatore registrato. I membri **ObjectNameTitleIndex** e **ObjectHelpTitleIndex** della struttura [**del \_ \_ tipo di oggetto Perf**](/windows/desktop/api/Winperf/ns-winperf-perf_object_type) contengono rispettivamente i valori di indice per il nome dell'oggetto e il testo della guida e i membri **CounterNameTitleIndex** e **CounterHelpTitleIndex** della struttura di [**\_ \_ definizione dei contatori delle prestazioni**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) contengono rispettivamente i valori di indice e il nome del contatore e il testo della guida.
+I dati sulle prestazioni contengono i valori di indice utilizzati per individuare i nomi e il testo della Guida per ogni oggetto registrato e contatore. I membri **ObjectNameTitleIndex** e **ObjectHelpTitleIndex** della struttura [**PERF \_ OBJECT \_ TYPE**](/windows/desktop/api/Winperf/ns-winperf-perf_object_type) contengono rispettivamente i valori di indice per il nome dell'oggetto e il testo della Guida e i membri **CounterNameTitleIndex** e **CounterHelpTitleIndex** della struttura COUNTER [**\_ \_ DEFINITION**](/windows/desktop/api/Winperf/ns-winperf-perf_counter_definition) di PERF contengono rispettivamente i valori di indice per il nome del contatore e il testo della Guida.
 
-Per recuperare i nomi o il testo della guida, chiamare la funzione [**RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) . Impostare il parametro *HKEY* su una delle chiavi predefinite seguenti. In genere, si utilizzerà la chiave **\_ \_ NLSTEXT delle prestazioni di HKEY** , pertanto non è necessario determinare l'identificatore di lingua dell'utente.
+Per recuperare i nomi o il testo della Guida, chiamare la [**funzione RegQueryValueEx.**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) Impostare il *parametro hKey* su una delle chiavi predefinite seguenti. In genere, si usa la **chiave HKEY \_ PERFORMANCE \_ NLSTEXT,** quindi non è necessario determinare l'identificatore della lingua dell'utente.
 
 
 
 | Chiave                            | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_dati sulle prestazioni di HKEY \_**    | Eseguire una query sulle stringhe in base al valore dell'identificatore di lingua specificato nel parametro *lpValueName* . Impostare il parametro *lpValueName* su "Counter &lt; LangID &gt; " o "Help &lt; LangID &gt; " per recuperare rispettivamente i nomi o il testo della guida, dove " &lt; LangID &gt; " è l'identificatore della lingua di sistema formattato come **numero esadecimale a 3 cifre** con riempimento zero. L'identificatore di lingua è facoltativo. Se non si specifica un identificatore di lingua, la funzione restituisce le stringhe in lingua inglese. Controllare la `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Perflib` chiave del registro di sistema per l'elenco delle lingue disponibili nel sistema.<br/>Per recuperare il testo nella maggior parte dei linguaggi, specificare solo l'identificatore della lingua primaria. Per recuperare le stringhe in lingua inglese, ad esempio, specificare l'identificatore della lingua come 009, non 1033 per l'inglese (Stati Uniti).<br/>Per recuperare il testo in cinese e portoghese, specificare sia gli identificatori primari che quelli del linguaggio di sottolinguaggio.<br/>**Windows Server 2003 e Windows XP:** Specificare solo l'identificatore della lingua principale per il portoghese.<br/>**Windows 10**: il testo "Help &lt; LangID &gt; " con l'identificatore della lingua personalizzata restituisce sempre le stringhe in inglese, anche se il valore localizzato può comunque essere recuperato dal registro di sistema utilizzando la chiave sopra indicata.<br/><br/> |
-| **\_NLSTEXT prestazioni \_ HKEY** | Esegue una query sulle stringhe basate sulla lingua predefinita dell'interfaccia utente dell'utente corrente. Impostare il parametro *lpValueName* su "Counter" o "Help" per recuperare rispettivamente i nomi o il testo della guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **\_testo prestazioni \_ HKEY**    | Eseguire query sulle stringhe in lingua inglese. Impostare il parametro *lpValueName* su "Counter" o "Help" per recuperare rispettivamente i nomi o il testo della guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **DATI SULLE PRESTAZIONI \_ DI \_ HKEY**    | Eseguire query sulle stringhe in base al valore dell'identificatore di lingua specificato nel *parametro lpValueName.* Impostare il parametro *lpValueName* su "Counter langid " o "Help langid " per recuperare rispettivamente i nomi o il testo della Guida, dove " langid " è l'identificatore della lingua di sistema formattato come numero esadecimale a 3 cifre riempito con &lt; &gt; &lt; &gt; &lt; &gt; **zero.** L'identificatore di lingua è facoltativo. Se non si specifica un identificatore di lingua, la funzione restituisce stringhe in inglese. Controllare la `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Perflib` chiave del Registro di sistema per l'elenco delle lingue disponibili nel sistema.<br/>Per recuperare il testo nella maggior parte delle lingue, specificare solo l'identificatore di lingua principale. Ad esempio, per recuperare le stringhe in lingua inglese, specificare l'identificatore di lingua 009, non 1033 per l'inglese (Stati Uniti).<br/>Per recuperare il testo in cinese e portoghese, specificare gli identificatori di lingua primaria e secondaria.<br/>**Windows Server 2003 e Windows XP:** Specificare solo l'identificatore di lingua principale per il portoghese.<br/>**Windows 10:** il testo "Help langid" con identificatore di lingua personalizzato restituisce sempre stringhe &lt; in inglese, anche se il valore localizzato può comunque essere recuperato dal Registro di sistema usando la chiave cita. &gt;<br/><br/> |
+| **PRESTAZIONI HKEY \_ \_ NLSTEXT** | Eseguire query sulle stringhe in base alla lingua predefinita dell'interfaccia utente dell'utente corrente. Impostare il *parametro lpValueName* su "Counter" o "Help" per recuperare rispettivamente i nomi o il testo della Guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **HKEY \_ PERFORMANCE \_ TEXT**    | Eseguire query su stringhe in inglese. Impostare il *parametro lpValueName* su "Counter" o "Help" per recuperare rispettivamente i nomi o il testo della Guida.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 
 
 
 
-La funzione restituisce i dati come un elenco di stringhe. Ogni stringa è con terminazione null. L'ultima stringa è seguita da un carattere di terminazione null aggiuntivo. Le stringhe sono elencate in coppie. La prima stringa di ogni coppia è l'indice e la seconda stringa è il testo associato all'indice. I dati del contatore utilizzano solo indici con numerazione uniforme, mentre i dati della Guida utilizzano indici dispari. Le coppie vengono restituite in ordine di indice crescente.
+La funzione restituisce i dati come elenco di stringhe. Ogni stringa ha terminazione Null. L'ultima stringa è seguita da un carattere di terminazione Null aggiuntivo. Le stringhe sono elencate in coppie. La prima stringa di ogni coppia è l'indice e la seconda stringa è il testo associato all'indice. I dati del contatore utilizzano solo indici con numeri pari, mentre i dati della Guida utilizzano indici dispari. Le coppie vengono restituite in ordine di indice crescente.
 
-Negli elenchi seguenti vengono illustrati esempi di contatori e dati della guida. L'incremento di un valore di indice di un determinato contatore fornisce l'indice al testo della guida del contatore. 7, ad esempio, è l'indice della Guida associato all'indice del contatore 6.
+Gli elenchi seguenti illustrano esempi di dati del contatore e della Guida. L'incremento del valore di indice di un determinato contatore di uno consente di ottenere l'indice del testo della Guida del contatore. Ad esempio, 7 è l'indice della Guida associato all'indice del contatore 6.
 
-Coppie di dati contatore.
+Coppie di dati dei contatori.
 
-<dl> 2 sistema 4 memoria 6% tempo processore
+<dl> 2 Sistema 4 Memoria 6 % Tempo processore
 </dl>
 
-Coppie di dati della guida.
+Coppie di dati della Guida.
 
-<dl> 3 il tipo di oggetto di sistema include i contatori... 5 il tipo di oggetto Memory include i contatori... 7 il tempo processore è espresso come percentuale del...
+<dl> 3 Il tipo di oggetto System include i contatori che ... 5 Il tipo di oggetto Memory include i contatori che ... 7 Il tempo processore è espresso come percentuale del ...
 </dl>
 
-Si noti che la prima coppia di stringhe nei dati del contatore non identifica un nome di contatore e può essere ignorata. Il numero di indice della prima coppia è 1 e la stringa è una stringa numerica che rappresenta il valore di indice massimo per i contatori di sistema.
+Si noti che la prima coppia di stringhe nei dati del contatore non identifica il nome di un contatore e può essere ignorata. Il numero di indice della prima coppia è 1 e la stringa è una stringa numerica che rappresenta il valore di indice massimo per i contatori di sistema.
 
-Per informazioni sul modo in cui un provider carica il nome e il testo della guida, vedere [aggiunta di nomi di contatori e descrizioni al registro di sistema](adding-counter-names-and-descriptions-to-the-registry.md).
+Per informazioni sul modo in cui un provider carica il nome e il testo della Guida, vedere [Adding Counter Names and Descriptions to the Registry](adding-counter-names-and-descriptions-to-the-registry.md).
 
-Nel testo non sono presenti informazioni che indicano se il testo identifica un contatore o un oggetto prestazioni. L'unico modo per determinare questa operazione o la relazione tra i contatori e gli oggetti consiste nell'eseguire una query sui dati relativi alle prestazioni. Se, ad esempio, si desidera visualizzare un elenco di oggetti e i relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni e quindi utilizzare i valori di indice per analizzare i dati di testo per le stringhe. Per un esempio, vedere [visualizzazione di oggetti, istanze e nomi dei contatori](displaying-object-instance-and-counter-names.md).
+Nel testo non sono presenti informazioni che indicano se il testo identifica un contatore o un oggetto prestazioni. L'unico modo per determinare questo, o la relazione tra contatori e oggetti, è eseguire query sui dati sulle prestazioni stessi. Ad esempio, se si desidera visualizzare un elenco di oggetti e i relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni e quindi utilizzare i valori di indice per analizzare i dati di testo per le stringhe. Per un esempio a tale scopo, vedere Visualizzazione dei nomi di [oggetti, istanze e contatori.](displaying-object-instance-and-counter-names.md)
 
-Nell'esempio seguente viene illustrato come utilizzare **HKEY \_ performance \_ NLSTEXT** per recuperare il contatore e il testo della guida e compilare una tabella per l'accesso successivo.
+L'esempio seguente illustra come usare **HKEY \_ PERFORMANCE \_ NLSTEXT** per recuperare il contatore e il testo della Guida e compilare una tabella per l'accesso successivo.
 
 
 ```C++
@@ -298,7 +298,7 @@ void PrintCounterAndHelpText(LPWSTR pCounterTextHead, LPWSTR pHelpTextHead, LPDW
 
 
 
-Nell'esempio seguente viene illustrato come utilizzare **i \_ \_ dati sulle prestazioni di HKEY** per recuperare il testo del contatore.
+Nell'esempio seguente viene illustrato come utilizzare **HKEY \_ PERFORMANCE DATA \_ per** recuperare il testo del contatore.
 
 
 ```C++

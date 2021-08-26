@@ -1,26 +1,26 @@
 ---
-title: Proprietà AdvancedSettings4 di IMsRdpClient3
+title: Proprietà IMsRdpClient3 AdvancedSettings4
 description: Recupera un puntatore all'interfaccia IMsRdpClientAdvancedSettings3.
 ms.assetid: 30935099-7f33-4745-8a31-f9a28ab78b63
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient3
-- Interfaccia IMsRdpClient3 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient4
-- Interfaccia IMsRdpClient4 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient5
-- Interfaccia IMsRdpClient5 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient6
-- Interfaccia IMsRdpClient6 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà AdvancedSettings4
-- Servizi Desktop remoto proprietà AdvancedSettings4, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient3
+- Interfaccia IMsRdpClient3 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient4
+- Interfaccia IMsRdpClient4 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient5
+- Interfaccia IMsRdpClient5 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient6
+- Interfaccia IMsRdpClient6 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto , proprietà AdvancedSettings4
+- Proprietà AdvancedSettings4 Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto , proprietà AdvancedSettings4
 topic_type:
 - apiref
 api_name:
@@ -46,16 +46,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7a229c28b645e7920212a04cc44ca5a9ce42be3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77e8bd4d5562f5f7b73eac6c580fe7b033a10b8ce7f0471b2d1ca969cd7ae0ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033541"
 ---
-# <a name="imsrdpclient3advancedsettings4-property"></a>Proprietà IMsRdpClient3:: AdvancedSettings4
+# <a name="imsrdpclient3advancedsettings4-property"></a>Proprietà IMsRdpClient3::AdvancedSettings4
 
-Recupera un puntatore all'interfaccia [**IMsRdpClientAdvancedSettings3**](imsrdpclientadvancedsettings3.md) .
+Recupera un puntatore [**all'interfaccia IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md)
 
 Questa proprietà è di sola lettura.
 
@@ -72,17 +72,17 @@ HRESULT get_AdvancedSettings4(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore all'interfaccia [**IMsRdpClientAdvancedSettings3**](imsrdpclientadvancedsettings3.md) . L'interfaccia può essere utilizzata per impostare impostazioni avanzate per il controllo client.
+Puntatore [**all'interfaccia IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md) L'interfaccia può essere usata per impostare le impostazioni avanzate per il controllo client.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se il metodo ha esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="remarks"></a>Commenti
 
-Impossibile impostare questa proprietà quando il controllo è connesso.
+Questa proprietà non può essere impostata quando il controllo è connesso.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient3 è definito come 91b7cbc5-a72e-4fa0-9300-d647d7e897ff<br/>       |
+| IID<br/>                      | IMSRdpClient3 IID è definito come \_ 91b7cbc5-a72e-4fa0-9300-d647d7e897ff<br/>       |
 
 
 

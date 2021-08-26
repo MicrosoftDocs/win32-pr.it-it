@@ -4,12 +4,12 @@ description: Moltiplicazione a precisione doppia per componente.
 ms.assetid: 53AE27BE-2F4B-4C55-B496-D7122C00DC52
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a5d311cb5c958e8b7403197027c9854d1a93a64
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 838b9e2b3ed24dd5a6025c230439ce0719922d88bac723b3aed759c5fa224d8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068381"
 ---
 # <a name="dmul-sm5---asm"></a>dmul (sm5 - asm)
 
@@ -40,7 +40,7 @@ Moltiplicazione a precisione doppia per componente.
 
 Gli swizzle validi per i parametri di origine sono xyzw, xyxy, zwxy, zwzw. Le maschere *dest* valide sono xy, zw e xyzw. I mapping *src* seguenti sono post-swizzle:
 
--   *dest* è un doppio vec2 tra (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *dest* è un doppio vec2 attraverso (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 -   *src0* è un doppio vec2 tra (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 -   *src1* è un doppio vec2 tra (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 
@@ -66,7 +66,7 @@ F indica un numero finito-reale.
 
  
 
-Questa istruzione si applica alle fasi di shader seguenti:
+Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
@@ -78,9 +78,9 @@ Questa istruzione si applica alle fasi di shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello di shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
-Questa istruzione è supportata nei modelli di shader seguenti:
+Questa istruzione è supportata nei modelli shader seguenti:
 
 
 
@@ -89,9 +89,9 @@ Questa istruzione è supportata nei modelli di shader seguenti:
 | [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
 | [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
 | [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
 | [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -101,7 +101,7 @@ Questa istruzione è supportata nei modelli di shader seguenti:
 
 <dl> <dt>
 
-[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

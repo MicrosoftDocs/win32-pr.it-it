@@ -1,19 +1,19 @@
 ---
-description: Il grafico sta eliminando gli esempi per il controllo qualità.
+description: Il grafico sta rilasciando campioni per il controllo di qualità.
 ms.assetid: a21fe766-58a5-4851-a282-883374287e18
-title: EC_QUALITY_CHANGE (dshow. h)
+title: EC_QUALITY_CHANGE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5752db30c8ad6ed85655948cf2adb9ef7ac8078
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a9c2b540a5740812050532d4d4e6e45fb334eaff9927148471aada09ab1a434
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043361"
 ---
-# <a name="ec_quality_change"></a>\_modifica della qualità EC \_
+# <a name="ec_quality_change"></a>EC \_ QUALITY \_ CHANGE
 
-Il grafico sta eliminando gli esempi per il controllo qualità.
+Il grafico sta rilasciando campioni per il controllo di qualità.
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Un filtro Invia questo evento se rilascia esempi in risposta a un messaggio di controllo di qualità. Invia l'evento solo quando regola il livello di qualità, non per ogni campione che rilascia. Per altre informazioni, vedere [gestione del controllo di qualità](quality-control-management.md).
+Un filtro invia questo evento se elimina campioni in risposta a un messaggio di controllo qualità. Invia l'evento solo quando regola il livello di qualità, non per ogni campione che rilascia. Per altre informazioni, vedere [Quality-Control Management](quality-control-management.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Un filtro Invia questo evento se rilascia esempi in risposta a un messaggio di c
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

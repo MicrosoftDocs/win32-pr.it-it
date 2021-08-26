@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ae23a33c2c91dc0a141c6f377daf89708499aae7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b9ea1de5a0b9f7be9598a4011cbb6cd76f49e6d4bcc3d468093be1479ee2b59e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004601"
 ---
 # <a name="writing-a-script-to-configure-the-virtual-directory"></a>Scrittura di uno script per configurare la directory virtuale
 
-Per caricare un file nel server, è possibile utilizzare i valori predefiniti della proprietà IIS BITS. Il file di caricamento viene scritto nell'URL come specificato nel nome file remoto del processo. Per caricare il file in un'applicazione server e ricevere una risposta, modificare la proprietà [BITSServerNotificationType](bits-iis-extension-properties.md) per inviare i dati per riferimento (Invia il nome del file che contiene i dati) o per valore (Invia i dati nel corpo della richiesta).
+È possibile usare i valori predefiniti delle proprietà IIS BITS per caricare un file nel server. Il file di caricamento viene scritto nell'URL come specificato nel nome file remoto del processo. Per caricare il file in un'applicazione server e ricevere una risposta, modificare la proprietà [BITSServerNotificationType](bits-iis-extension-properties.md) per inviare i dati per riferimento (invia il nome del file che contiene i dati) o per valore (invia i dati nel corpo della richiesta).
 
-Per un elenco e una descrizione delle proprietà che è possibile modificare, vedere [proprietà dell'estensione IIS BITS](bits-iis-extension-properties.md). Usare i metodi dell'interfaccia [**IBITSExtensionSetup**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetup) per abilitare e disabilitare la directory virtuale per i caricamenti.
+Per un elenco e una descrizione delle proprietà che è possibile modificare, vedere Proprietà [dell'estensione IIS BITS](bits-iis-extension-properties.md). Usare i metodi [**dell'interfaccia IBITSExtensionSetup**](/windows/desktop/api/Bitscfg/nn-bitscfg-ibitsextensionsetup) per abilitare e disabilitare la directory virtuale per i caricamenti.
 
-Nell'esempio seguente viene illustrato come utilizzare Windows script host per creare, configurare e abilitare una directory virtuale IIS per i caricamenti BITS.
+L'esempio seguente illustra come usare Windows Script Host per creare, configurare e abilitare una directory virtuale IIS per i caricamenti BITS.
 
 
 ```JScript
@@ -57,7 +57,7 @@ WScript.Quit( 0 );
 
 
 
-Per modificare l'esempio precedente in modo da caricare i dati in un'applicazione server, aggiungere il codice seguente prima di **SetInfo**.
+Per modificare l'esempio precedente per caricare i dati in un'applicazione server, aggiungere il codice seguente prima **di SetInfo**.
 
 
 ```JScript
@@ -67,13 +67,13 @@ VirtualDir.BITSServerNotificationURL = "https://myserver/mypath/myasp.asp";
 
 
 
-Il percorso del file di caricamento viene passato all'applicazione server myasp. asp nell'intestazione BITS-request-DataFile-Name. Per ricevere il file di caricamento nel corpo della richiesta, impostare la proprietà [BITSServerNotificationType](bits-iis-extension-properties.md) su 2.
+Il percorso del file di caricamento viene passato all'applicazione server myasp.asp nell'intestazione BITS-Request-DataFile-Name. Per ricevere il file di caricamento nel corpo della richiesta, impostare la [proprietà BITSServerNotificationType](bits-iis-extension-properties.md) su 2.
 
-Per informazioni sulla ricezione dei dati di caricamento nell'applicazione server, vedere [uso delle intestazioni di richiesta/risposta per le notifiche BITS](using-bits-notification-request-response-headers.md).
+Per informazioni sulla ricezione dei dati di caricamento nell'applicazione server, vedere [Using BITS Notification Request/Response Headers](using-bits-notification-request-response-headers.md).
 
- 
+ 
 
- 
+ 
 
 
 

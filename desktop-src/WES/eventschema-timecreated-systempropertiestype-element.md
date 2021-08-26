@@ -1,9 +1,9 @@
 ---
 title: Elemento TimeCreated (SystemPropertiesType)
-description: Timestamp che identifica il momento in cui l'evento è stato registrato.
+description: Timestamp che identifica quando è stato registrato l'evento.
 ms.assetid: 16b2b71b-078e-4862-b1be-ef7cec315bc5
 keywords:
-- EventLog elemento TimeCreated
+- Elemento TimeCreated EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 998bb03601f0ecbe87c571daa94b1f33e307d6af
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5026bed56e3e065a403c0e6076daa0ec478223c4d742db0a35109a41cc98d5c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005301"
 ---
 # <a name="timecreated-systempropertiestype-element"></a>Elemento TimeCreated (SystemPropertiesType)
 
-Timestamp che identifica il momento in cui l'evento è stato registrato.
+Timestamp che identifica quando è stato registrato l'evento.
 
 ``` syntax
 <xs:element name="TimeCreated">
@@ -35,7 +35,7 @@ Timestamp che identifica il momento in cui l'evento è stato registrato.
 </xs:element>
 ```
 
-L'elemento **TimeCreated** è definito dal tipo complesso [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+**L'elemento TimeCreated** è definito dal [**tipo complesso SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="attributes"></a>Attributi
 
@@ -43,7 +43,7 @@ L'elemento **TimeCreated** è definito dal tipo complesso [**SystemPropertiesTyp
 
 | Nome       | Tipo     | Descrizione                                              |
 |------------|----------|----------------------------------------------------------|
-| SystemTime | dateTime | Ora di sistema del momento in cui l'evento è stato registrato.<br/> |
+| SystemTime | dateTime | Ora di sistema in cui è stato registrato l'evento.<br/> |
 
 
 
@@ -53,8 +53,8 @@ L'elemento **TimeCreated** è definito dal tipo complesso [**SystemPropertiesTyp
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -65,7 +65,7 @@ L'elemento **TimeCreated** è definito dal tipo complesso [**SystemPropertiesTyp
 **Elemento padre**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

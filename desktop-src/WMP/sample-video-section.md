@@ -3,23 +3,23 @@ title: Sezione video di esempio
 description: Sezione video di esempio
 ms.assetid: 04ccfb64-886f-4bb7-9505-f0b74092270a
 keywords:
-- Windows Media Player Mobile Skins, video
-- interfacce, video
-- informazioni di riferimento per Skins, video
-- video in Skin, sezione video
-- file di definizione dell'interfaccia, sezione video
+- Windows Media Player Skin per dispositivi mobili, video
+- skins,video
+- informazioni di riferimento per le skin, video
+- video nelle skin, sezione Video
+- file di definizione dell'interfaccia, sezione Video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c46f7412ccb12f01f207fe823781f2d30da0e9c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7929ae3f4179d56e64eaaada25ea0dd0102d275a1c0bf03aa23f5b8ff1f25140
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002521"
 ---
 # <a name="sample-video-section"></a>Sezione video di esempio
 
-Le righe seguenti mostrano una sezione video tipica di un file di definizione dell'interfaccia personalizzata:
+Le righe seguenti mostrano una tipica sezione Video di un file di definizione dell'interfaccia:
 
 
 ```C++
@@ -40,9 +40,9 @@ Le righe seguenti mostrano una sezione video tipica di un file di definizione de
 [**Video**](video.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

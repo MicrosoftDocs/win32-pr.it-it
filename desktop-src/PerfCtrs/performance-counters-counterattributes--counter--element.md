@@ -1,7 +1,7 @@
 ---
-description: Identifica un elenco di attributi che descrive la modalità di visualizzazione del contatore.
+description: Identifica un elenco di attributi che descrive come deve essere visualizzato il contatore.
 ms.assetid: d0935ce8-8182-4c83-97d9-0b44182934e0
-title: Elemento counterAttributes (Counter)
+title: Elemento counterAttributes (counter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 64fb794d5ab38417d0ecd4ddabba9a28b33c28db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 118d144a70c422204f1c2603c6d6d65d13a970d15c676d4a00a090f4aa3f7d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033601"
 ---
-# <a name="counterattributes-counter-element"></a>Elemento counterAttributes (Counter)
+# <a name="counterattributes-counter-element"></a>Elemento counterAttributes (counter)
 
-Identifica un elenco di attributi che descrive la modalità di visualizzazione del contatore.
+Identifica un elenco di attributi che descrive come deve essere visualizzato il contatore.
 
 ``` syntax
 <xs:element name="counterAttributes"
@@ -26,7 +26,7 @@ Identifica un elenco di attributi che descrive la modalità di visualizzazione d
  />
 ```
 
-L'elemento **counterAttributes** è definito dal tipo complesso del [**contatore**](performance-counters-counter-complex-type.md) .
+**L'elemento counterAttributes** è definito dal tipo [**complesso del**](performance-counters-counter-complex-type.md) contatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,8 +34,8 @@ L'elemento **counterAttributes** è definito dal tipo complesso del [**contatore
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -46,7 +46,7 @@ L'elemento **counterAttributes** è definito dal tipo complesso del [**contatore
 **Elementi padre**
 </dt> <dt>
 
-[**contatore (contatori)**](performance-counters-counter--counterset--element.md)
+[**counter (counterSet)**](performance-counters-counter--counterset--element.md)
 </dt> </dl>
 
  

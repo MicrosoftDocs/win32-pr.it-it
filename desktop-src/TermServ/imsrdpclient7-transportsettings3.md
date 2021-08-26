@@ -1,18 +1,18 @@
 ---
-title: Proprietà TransportSettings3 di IMsRdpClient7
+title: Proprietà TransportSettings3 IMsRdpClient7
 description: Recupera un oggetto che supporta l'interfaccia IMsRdpClientTransportSettings3.
 ms.assetid: d11f0943-241e-44cd-a98c-595916ab0718
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà TransportSettings3
-- Servizi Desktop remoto proprietà TransportSettings3, interfaccia IMsRdpClient7
-- Interfaccia IMsRdpClient7 Servizi Desktop remoto, proprietà TransportSettings3
-- Servizi Desktop remoto proprietà TransportSettings3, interfaccia IMsRdpClient8
-- Interfaccia IMsRdpClient8 Servizi Desktop remoto, proprietà TransportSettings3
-- Servizi Desktop remoto proprietà TransportSettings3, interfaccia IMsRdpClient9
-- Interfaccia IMsRdpClient9 Servizi Desktop remoto, proprietà TransportSettings3
-- Servizi Desktop remoto proprietà TransportSettings3, interfaccia IMsRdpClient10
-- Interfaccia IMsRdpClient10 Servizi Desktop remoto, proprietà TransportSettings3
+- Proprietà TransportSettings3 Servizi Desktop remoto
+- Proprietà TransportSettings3 Servizi Desktop remoto, interfaccia IMsRdpClient7
+- Interfaccia IMsRdpClient7 Servizi Desktop remoto proprietà , TransportSettings3
+- Proprietà TransportSettings3 Servizi Desktop remoto, interfaccia IMsRdpClient8
+- Interfaccia IMsRdpClient8 Servizi Desktop remoto proprietà , TransportSettings3
+- Proprietà TransportSettings3 Servizi Desktop remoto, interfaccia IMsRdpClient9
+- Interfaccia IMsRdpClient9 Servizi Desktop remoto proprietà , TransportSettings3
+- Proprietà TransportSettings3 Servizi Desktop remoto, interfaccia IMsRdpClient10
+- Interfaccia IMsRdpClient10 Servizi Desktop remoto proprietà , TransportSettings3
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c60b58f8f2438de0d43f69ce0b3bb73607e7551
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eeff2c3d3427c9c8c5323f3c4cbea9d194c81d223c2a07ee364f87dd1dd2c33d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033341"
 ---
-# <a name="imsrdpclient7transportsettings3-property"></a>Proprietà IMsRdpClient7:: TransportSettings3
+# <a name="imsrdpclient7transportsettings3-property"></a>Proprietà IMsRdpClient7::TransportSettings3
 
-Recupera un oggetto che supporta l'interfaccia [**IMsRdpClientTransportSettings3**](imsrdpclienttransportsettings3.md) .
+Recupera un oggetto che supporta [**l'interfaccia IMsRdpClientTransportSettings3.**](imsrdpclienttransportsettings3.md)
 
 Questa proprietà è di sola lettura.
 
@@ -56,7 +56,7 @@ HRESULT get_TransportSettings3(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Indirizzo di un puntatore a interfaccia [**IMsRdpClientTransportSettings3**](imsrdpclienttransportsettings3.md) che riceve l'oggetto.
+Indirizzo di un [**puntatore a interfaccia IMsRdpClientTransportSettings3**](imsrdpclienttransportsettings3.md) che riceve l'oggetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Indirizzo di un puntatore a interfaccia [**IMsRdpClientTransportSettings3**](ims
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444A-91D4-add26d070638<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444a-91d4-add26d070638<br/>       |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXVec2TransformArray (D3DX10Math.h): trasforma una matrice (x, y, 0, 1) da una determinata matrice.'
+description: 'Funzione D3DXVec2TransformArray (D3DX10Math.h): trasforma una matrice (x, y, 0, 1) in base a una determinata matrice.'
 ms.assetid: 66c8909c-6c20-4b32-9546-fcf2d0e824fa
 title: Funzione D3DXVec2TransformArray (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cec42fcbe53d3a8aa160f6864af70cbf441a19ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a795590530503819ae66d1e17f9a4c8f8236dfb3015af512f4c6e28d084ca778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989901"
 ---
 # <a name="d3dxvec2transformarray-function-d3dx10mathh"></a>Funzione D3DXVec2TransformArray (D3DX10Math.h)
 
-Trasforma una matrice (x, y, 0, 1) in base a una matrice specificata.
+Trasforma una matrice (x, y, 0, 1) in base a una determinata matrice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ Puntatore all'oggetto [**D3DXVECTOR2 di origine.**](d3d10-d3dxvector2.md)
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Stride tra vettori nel flusso di dati di input.
+Stride tra i vettori nel flusso di dati di input.
 
 </dd> <dt>
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 32f8a4bbf00f569ba98dfc031f62717b1afc8734
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 92eafff1be2c1dc924a7041ad45cadfca994d03d776f61a3c866d6c3c2f6f380
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033381"
 ---
 # <a name="uint32type-simple-type-performance-counters"></a>Tipo semplice UInt32Type (contatori delle prestazioni)
 
@@ -38,8 +38,8 @@ Definisce un tipo integer senza segno.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows \[ Vista\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
