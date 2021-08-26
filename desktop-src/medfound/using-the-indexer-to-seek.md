@@ -1,35 +1,35 @@
 ---
-description: L'indicizzatore ASF è un componente di livello WMContainer che viene usato per leggere o scrivere oggetti index in un file di formato Advanced Systems (ASF). In questo argomento vengono fornite informazioni sull'utilizzo dell'indicizzatore ASF per la ricerca all'interno di un file ASF.
+description: L'indicizzatore ASF è un componente del livello WMContainer usato per leggere o scrivere oggetti indice in un file ASF (Advanced Systems Format). In questo argomento vengono fornite informazioni sull'uso dell'indicizzatore ASF per la ricerca all'interno di un file ASF.
 ms.assetid: 9c501d33-847e-448e-a19c-39dfbc7757ca
-title: Utilizzo dell'indicizzatore per la ricerca all'interno di un file ASF
+title: Uso dell'indicizzatore per la ricerca all'interno di un file ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c40c35f876fdc5452c596048d121fb0c2933094a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3c674aa809c858856abf0c0e84c5d854b399c6fbc125ac9210e19b695380bd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887241"
 ---
-# <a name="using-the-indexer-to-seek-within-an-asf-file"></a>Utilizzo dell'indicizzatore per la ricerca all'interno di un file ASF
+# <a name="using-the-indexer-to-seek-within-an-asf-file"></a>Uso dell'indicizzatore per la ricerca all'interno di un file ASF
 
-L' *indicizzatore* ASF è un componente di livello WMContainer che viene usato per leggere o scrivere oggetti index in un file di formato Advanced Systems (ASF). In questo argomento vengono fornite informazioni sull'utilizzo dell'indicizzatore ASF per la ricerca all'interno di un file ASF.
+*L'indicizzatore* ASF è un componente del livello WMContainer usato per leggere o scrivere oggetti indice in un file ASF (Advanced Systems Format). In questo argomento vengono fornite informazioni sull'uso dell'indicizzatore ASF per la ricerca all'interno di un file ASF.
 
 -   [Inizializzazione dell'indicizzatore per la ricerca](#initializing-the-indexer-for-seeking)
--   [Recupero della posizione di ricerca.](#getting-the-seek-position)
+-   [Recupero della posizione seek.](#getting-the-seek-position)
 -   [Argomenti correlati](#related-topics)
 
-Per informazioni sulla struttura di un file ASF, vedere la pagina relativa alla [struttura dei file ASF](asf-file-structure.md).
+Per informazioni sulla struttura di un file ASF, vedere [Struttura del file ASF.](asf-file-structure.md)
 
 ## <a name="initializing-the-indexer-for-seeking"></a>Inizializzazione dell'indicizzatore per la ricerca
 
 Per inizializzare l'indicizzatore ASF per la ricerca:
 
 1.  Chiamare [**MFCreateASFIndexer**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfindexer) per creare una nuova istanza dell'indicizzatore ASF.
-2.  Chiamare [**IMFASFIndexer:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-initialize) per inizializzare l'indicizzatore. Questo metodo ottiene le informazioni dall'intestazione ASF per determinare quali flussi ASF sono indicizzati. Per impostazione predefinita, l'oggetto indicizzatore è configurato per la ricerca.
-3.  Chiamare [**IMFASFIndexer:: GetIndexPosition**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexposition) per trovare l'offset dell'indice all'interno del file ASF.
-4.  Chiamare la funzione [**MFCreateASFIndexerByteStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfindexerbytestream) per creare un flusso di byte per la lettura dell'indice. L'input per questa funzione è un puntatore a un flusso di byte che contiene il file ASF e l'offset dell'indice (dal passaggio precedente).
-5.  Chiamare [**IMFASFIndexer:: SetIndexByteStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setindexbytestreams) per impostare il flusso di byte di indice nell'indicizzatore.
+2.  Chiamare [**IMFASFIndexer::Initialize per**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-initialize) inizializzare l'indicizzatore. Questo metodo ottiene informazioni dall'intestazione ASF per determinare quali flussi asf vengono indicizzati. Per impostazione predefinita, l'oggetto indicizzatore è configurato per la ricerca.
+3.  Chiamare [**IMFASFIndexer::GetIndexPosition**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexposition) per trovare l'offset dell'indice all'interno del file ASF.
+4.  Chiamare la [**funzione MFCreateASFIndexerByteStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfindexerbytestream) per creare un flusso di byte per la lettura dell'indice. L'input per questa funzione è un puntatore a un flusso di byte che contiene il file ASF e l'offset dell'indice (dal passaggio precedente).
+5.  Chiamare [**IMFASFIndexer::SetIndexByteStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setindexbytestreams) per impostare il flusso di byte dell'indice nell'indicizzatore.
 
 Il codice seguente illustra questi passaggi:
 
@@ -117,15 +117,15 @@ done:
 
 
 
-## <a name="getting-the-seek-position"></a>Recupero della posizione di ricerca.
+## <a name="getting-the-seek-position"></a>Recupero della posizione seek.
 
-1.  Per determinare se un determinato flusso è indicizzato, chiamare [**IMFASFIndexer:: GetIndexStatus**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexstatus). Se il flusso è indicizzato, il parametro *pfIsIndexed* riceve il valore **true**; in caso contrario, riceve il valore **false**.
-2.  Per impostazione predefinita, l'indicizzatore usa la ricerca in diretta. Per la ricerca inversa, ovvero la ricerca dalla fine del file, chiamare [**IMFASFIndexer:: Seflags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setflags) e impostare l' **\_ indicizzatore MFASF \_ Read \_ per \_ REVERSEPLAYBACK** flag. In caso contrario, ignorare questo passaggio.
-3.  Se il flusso è indicizzato, ottenere la posizione di ricerca per un'ora di presentazione specificata chiamando [**IMFASFIndexer:: GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue). Questo metodo legge l'indice ASF e trova la voce di indice più vicina al tempo richiesto. Il metodo restituisce l'offset dei byte del pacchetto di dati specificato dalla voce di indice. L'offset dei byte è relativo all'inizio dell'oggetto dati ASF.
+1.  Per scoprire se un determinato flusso è indicizzato, chiamare [**IMFASFIndexer::GetIndexStatus**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexstatus). Se il flusso è indicizzato, il *parametro pfIsIndexed* riceve il valore **TRUE**; in caso contrario riceve il valore **FALSE.**
+2.  Per impostazione predefinita, l'indicizzatore usa la ricerca in avanti. Per la ricerca inversa, ovvero la ricerca dalla fine del file, chiamare [**IMFASFIndexer::SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setflags) e impostare il flag **MFASF \_ INDEXER \_ READ FOR \_ \_ REVERSEPLAYBACK.** In caso contrario, ignorare questo passaggio.
+3.  Se il flusso è indicizzato, ottenere la posizione di ricerca per un'ora di presentazione specificata chiamando [**IMFASFIndexer::GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue). Questo metodo legge l'indice asf e trova la voce di indice più vicina all'ora richiesta. Il metodo restituisce l'offset di byte del pacchetto di dati specificato dalla voce di indice. L'offset dei byte è relativo all'inizio dell'oggetto dati ASF.
 
-Il metodo [**GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue) accetta un puntatore alla struttura [**dell' \_ \_ identificatore di indice ASF**](/windows/desktop/api/wmcontainer/ns-wmcontainer-asf_index_identifier) . Questa struttura specifica un tipo di indice e un identificatore di flusso. Attualmente, il tipo di indice deve essere un GUID \_ null, che specifica l'indicizzazione basata sul tempo.
+Il [**metodo GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue) accetta un puntatore alla [**struttura ASF INDEX \_ \_ IDENTIFIER.**](/windows/desktop/api/wmcontainer/ns-wmcontainer-asf_index_identifier) Questa struttura specifica un tipo di indice e un identificatore di flusso. Attualmente, il tipo di indice deve essere NULL \_ GUID, che specifica l'indicizzazione basata sul tempo.
 
-Il codice seguente ottiene una posizione di ricerca, dati un identificatore del flusso e l'ora di presentazione di destinazione. Se la chiamata ha esito positivo, restituisce l'offset dei dati nel parametro *pcbDataOffset* e il tempo di ricerca effettivo approssimativo in *phnsApproxSeekTime*.
+Il codice seguente ottiene una posizione di ricerca, in base a un identificatore di flusso e all'ora di presentazione di destinazione. Se la chiamata ha esito positivo, restituisce l'offset dei dati nel parametro *pcbDataOffset* e il tempo di ricerca effettivo approssimativo in *phnsApproxSeekTime.*
 
 
 ```C++

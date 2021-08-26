@@ -1,15 +1,15 @@
 ---
-description: Il metodo RegionChange Visualizza una finestra di dialogo di sistema che consente all'utente di modificare l'area associata all'unità DVD.
+description: Il metodo RegionChange visualizza una finestra di dialogo di sistema che consente all'utente di modificare l'area associata all'unità DVD.
 ms.assetid: 67b0ec96-adcb-4d0b-9f8c-38ce67c71cd3
-title: Metodo RegionChange (Segment. h)
+title: Metodo RegionChange (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 349f194d8863545828d3f71e938c302d8b0510cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93e5aa7a1318b3b8abef35193f19983a75814046dbadfbb96b7c70b8d10e51d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904601"
 ---
 # <a name="regionchange-method"></a>Metodo RegionChange
 
@@ -18,7 +18,7 @@ ms.locfileid: "106332180"
 
  
 
-Il `RegionChange` Metodo Visualizza una finestra di dialogo di sistema che consente all'utente di modificare l'area associata all'unità DVD.
+Il `RegionChange` metodo visualizza una finestra di dialogo di sistema che consente all'utente di modificare l'area associata all'unità DVD.
 
 ``` syntax
 MSWebDVD.RegionChange()
@@ -38,7 +38,7 @@ L'area per un'unità DVD può essere modificata solo cinque volte.
 
 | Requisito | Valore |
 |-------------------|--------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: L'attributo Width specifica una larghezza di penna cosmetica in unità dispositivo. Se usato con una penna geometrica, tuttavia, specifica la larghezza della penna nelle unità logiche. Per ulteriori informazioni sulle unità di dispositivo, vedere Coordinate spaces and Transformations.
+description: L'attributo width specifica la larghezza della penna in unità del dispositivo. Se usata con una penna geometrica, tuttavia, specifica la larghezza della penna in unità logiche. Per altre informazioni sulle unità di dispositivo, vedere Spazi di coordinate e trasformazioni.
 ms.assetid: 6f4fd5a4-f066-4fc3-82cd-6ed2c5cdac0d
 title: Larghezza penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abb8ad66a13bbc884062b8639128f1c0fb9d3855
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b9b14081d78b173b2ea97dfa737313feb96f8eb4287762e5127a536423bc8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965361"
 ---
 # <a name="pen-width"></a>Larghezza penna
 
-L'attributo Width specifica una larghezza di penna cosmetica in unità dispositivo. Se usato con una penna geometrica, tuttavia, specifica la larghezza della penna nelle unità logiche. Per ulteriori informazioni sulle unità di dispositivo, vedere [Coordinate spaces and Transformations](coordinate-spaces-and-transformations.md).
+L'attributo width specifica la larghezza della penna in unità del dispositivo. Se usata con una penna geometrica, tuttavia, specifica la larghezza della penna in unità logiche. Per altre informazioni sulle unità di dispositivo, vedere [Spazi di coordinate e trasformazioni](coordinate-spaces-and-transformations.md).
 
-Attualmente, il sistema limita la larghezza delle penne cosmetici a un singolo pixel; Tuttavia, le versioni future potrebbero rimuovere questa limitazione.
+Attualmente, il sistema limita la larghezza delle penne estetiche a un singolo pixel; Tuttavia, le versioni future potrebbero rimuovere questa limitazione.
 
  
 

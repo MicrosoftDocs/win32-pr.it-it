@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. PresentationUrl
+title: BasicDevice.PresentationUrl - proprietà
 description: Ottiene l'URL di presentazione del dispositivo.
 ms.assetid: 106892F9-2F2D-4B44-A6A0-D0CC36E21117
 keywords:
-- API di streaming multimediale della proprietà PresentationUrl
-- API di streaming multimediale della proprietà PresentationUrl, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà PresentationUrl
+- Proprietà PresentationUrl API Streaming multimediale
+- Proprietà PresentationUrl API Streaming multimediale, interfaccia BasicDevice
+- BasicDevice interface Media Streaming API , proprietà PresentationUrl
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 69c1de9a72ae14160b49676daa3ea1afb2425edf
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c392ca16f8c43b4f658e8ac0c07f2b95084aa59e836fac5d32dec0122bc80dcc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011921"
 ---
-# <a name="basicdevicepresentationurl-property"></a>Proprietà BasicDevice. PresentationUrl
+# <a name="basicdevicepresentationurl-property"></a>BasicDevice.PresentationUrl - proprietà
 
 Ottiene l'URL di presentazione del dispositivo.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_PresentationUrl(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -50,6 +50,6 @@ Puntatore all'URL di presentazione del dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,31 +1,31 @@
 ---
-description: Generato dall'origine del sequencer quando un segmento viene completato ed è seguito da un altro segmento. Al termine del segmento finale, l'origine del sequencer genera un evento MEEndOfPresentation.
+description: Generato dall'origine sequencer quando un segmento viene completato ed è seguito da un altro segmento. Quando il segmento finale viene completato, l'origine sequencer genera un evento MEEndOfPresentation.
 ms.assetid: 1be13c9a-d454-4642-b26b-556f2461b705
-title: Evento MEEndOfPresentationSegment (Mfobjects. h)
+title: Evento MEEndOfPresentationSegment (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d3608f51f3ff66e21261cc40d1f8cf690c92c4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b82f646ca76dbb6cc3cd8dc9e95dbaca2c55c504af261924918dbf790411e7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013701"
 ---
-# <a name="meendofpresentationsegment-event"></a>Evento MEEndOfPresentationSegment
+# <a name="meendofpresentationsegment-event"></a>EVENTO MEEndOfPresentationSegment
 
-Generato dall'origine del sequencer quando un segmento viene completato ed è seguito da un altro segmento. Al termine del segmento finale, l'origine del sequencer genera un evento [MEEndOfPresentation](meendofpresentation.md) .
+Generato dall'origine sequencer quando un segmento viene completato ed è seguito da un altro segmento. Quando il segmento finale viene completato, l'origine sequencer genera un [evento MEEndOfPresentation.](meendofpresentation.md)
 
-La sessione multimediale trasmette questo evento all'applicazione.
+La sessione multimediale inoltra questo evento all'applicazione.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -37,7 +37,7 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                                               | Descrizione                                                                          |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**\_ \_ topologia di origine evento MF \_ \_ annullata**](mf-event-source-topology-canceled-attribute.md)<br/> | Specifica se l'origine del sequencer ha annullato il segmento.<br/> <br/> |
+| [**TOPOLOGIA \_ DELL'ORIGINE EVENTO MF \_ \_ \_ ANNULLATA**](mf-event-source-topology-canceled-attribute.md)<br/> | Specifica se l'origine sequencer ha annullato questo segmento.<br/> <br/> |
 
 
 
@@ -47,9 +47,9 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -57,13 +57,13 @@ Per questo evento sono definiti gli attributi seguenti.
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> <dt>
 
-[Informazioni sull'origine del sequencer](about-the-sequencer-source.md)
+[Informazioni sull'origine Sequencer](about-the-sequencer-source.md)
 </dt> <dt>
 
-[Eventi di origine di Sequencer](sequencer-source-events.md)
+[Eventi di origine sequencer](sequencer-source-events.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Evento per utente generato da un client di messaggistica immediata quando le informazioni di contatto vengono aggiunte, modificate o rimosse nei controlli padre.
+description: Evento per utente generato da un client di messaggistica istantanea quando le informazioni di contatto vengono aggiunte, modificate o rimosse in Controllo genitori.
 ms.assetid: 0a016542-306e-48b4-8b0c-b9e4e915513e
-title: Evento WPCEVENT_IM_CONTACT (Wpcevent. h)
+title: WPCEVENT_IM_CONTACT eventi (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9747f7ede57f7a1d77af0f0e8e5425401ee32b36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: baac4bf5648b27f2e8d446a79bb2d90d52f0aac416e30d031d3b81d430a6927b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951449"
 ---
-# <a name="wpcevent_im_contact-event"></a>\_ \_ Evento contatto WPCEVENT im
+# <a name="wpcevent_im_contact-event"></a>Evento WPCEVENT \_ IM \_ CONTACT
 
-Evento per utente generato da un client di messaggistica immediata quando le informazioni di contatto vengono aggiunte, modificate o rimosse nei controlli padre.
+Evento per utente generato da un client di messaggistica istantanea quando le informazioni di contatto vengono aggiunte, modificate o rimosse in Controllo genitori.
 
 
 ```C++
@@ -29,7 +29,7 @@ const EVENT_DESCRIPTOR WPCEVENT_IM_CONTACT = {0xf, 0x0, 0x10, 0x4, 0x16, 0xf, 0x
 *AppName* 
 </dt> <dd>
 
-Nome dell'applicazione di messaggistica immediata che genera l'evento.
+Nome dell'applicazione di messaggistica istantanea che genera l'evento.
 
 </dd> <dt>
 
@@ -43,42 +43,42 @@ Versione dell'applicazione che genera l'evento.
 *AccountName* 
 </dt> <dd>
 
-Nome dell'account di messaggistica immediata per questo utente.
+Nome dell'account di messaggistica istantanea per questo utente.
 
 </dd> <dt>
 
-*OldName* 
+*Oldname* 
 </dt> <dd>
 
 Nome dell'account di messaggistica istantanea precedente, se eliminato o modificato.
 
 </dd> <dt>
 
-*OldID* 
+*Oldid* 
 </dt> <dd>
 
-ID associato al nome dell'account di messaggistica immediata precedente.
+ID associato al nome dell'account di messaggistica istantanea precedente.
 
 </dd> <dt>
 
-*NewName* 
+*Newname* 
 </dt> <dd>
 
-Il nuovo nome dell'account di messaggistica immediata, se aggiunto o modificato.
+Nuovo nome dell'account di messaggistica istantanea, se aggiunto o modificato.
 
 </dd> <dt>
 
-*NewID* 
+*Newid* 
 </dt> <dd>
 
-ID associato al nuovo nome dell'account di messaggistica immediata.
+ID associato al nome del nuovo account di messaggistica istantanea.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) indica le informazioni sugli eventi che vengono bloccati dall'utilizzo e sui controlli.
+Valore [**dell'enumerazione WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) che indica informazioni sugli eventi che non possono essere utilizzati e sui controlli presenti.
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpc
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpc
 
 <dl> <dt>
 
-[Uso delle API di registrazione per i controlli padre](using-logging-apis-for-parental-controls.md)
+[Uso delle API di registrazione per il controllo genitori](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

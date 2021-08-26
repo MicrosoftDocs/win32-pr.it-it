@@ -1,7 +1,7 @@
 ---
-description: Segnala che il lettore DVD ha avviato la riproduzione di un nuovo programma nel \_ dominio del titolo del dominio DVD \_ .
+description: Segnala che il lettore DVD ha avviato la riproduzione di un nuovo programma nel dominio \_ DVD DOMAIN \_ Title.
 ms.assetid: c0745615-d527-4d93-9118-30419c6c811e
-title: EC_DVD_CHAPTER_START (Dvdevcode. h)
+title: EC_DVD_CHAPTER_START (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 87a4408f1631d8a23cf42e790688856d6c246393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9570964efa52380c06034716f0c199cde0498a2c0aeb0502f9db250f87a6ca3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998101"
 ---
-# <a name="ec_dvd_chapter_start"></a>\_inizio del \_ capitolo del DVD EC \_
+# <a name="ec_dvd_chapter_start"></a>AVVIO \_ DEL CAPITOLO EC DVD \_ \_
 
-Segnala che il lettore DVD ha avviato la riproduzione di un nuovo programma nel \_ dominio del titolo del dominio DVD \_ .
+Segnala che il lettore DVD ha avviato la riproduzione di un nuovo programma nel dominio \_ DVD DOMAIN \_ Title.
 
 ## <a name="parameters"></a>Parametri
 
@@ -31,7 +31,7 @@ Segnala che il lettore DVD ha avviato la riproduzione di un nuovo programma nel 
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica il nuovo numero di capitolo (programma).
+**Valore DWORD** che indica il nuovo numero di capitolo (programma).
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Commenti
 
-Solo i film lineari semplici segnalano questo evento.
+Questo evento viene segnalato solo da semplici film lineari.
 
 Questo evento viene generato nel dominio del titolo.
 
@@ -54,7 +54,7 @@ Questo evento viene generato nel dominio del titolo.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Questo evento viene generato nel dominio del titolo.
 [Notifica degli eventi in DirectShow](event-notification-in-directshow.md)
 </dt> <dt>
 
-[**\_Enumerazione del dominio DVD**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
+[**Enumerazione \_ DVD DOMAIN**](/windows/win32/api/strmif/ne-strmif-dvd_domain)
 </dt> </dl>
 
  

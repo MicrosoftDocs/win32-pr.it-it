@@ -1,19 +1,19 @@
 ---
-description: L'elemento booleano facoltativo <includeInStartMenuScope> specifica se questo connettore di ricerca deve essere incluso nell'ambito di ricerca del menu Start.
+description: L'elemento <includeInStartMenuScope> booleano facoltativo specifica se questo connettore di ricerca deve essere incluso nell menu Start di ricerca.
 ms.assetid: 934a3834-9ddc-4c15-b738-68ea74adc24c
 title: Elemento includeInStartMenuScope (schema del connettore di ricerca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 126d10a2b69dcec5057e732679c8531fd6e82bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60941ef06f3f7220c7bbbae652f5e8256c6256660ea8e9ece2ddd330858958b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119937951"
 ---
 # <a name="includeinstartmenuscope-element-search-connector-schema"></a>Elemento includeInStartMenuScope (schema del connettore di ricerca)
 
-L'elemento booleano facoltativo <includeInStartMenuScope> specifica se questo connettore di ricerca deve essere incluso nell'ambito di ricerca del menu Start. Il valore predefinito è true per i connettori di ricerca che usano il file system come origine dati e false per i connettori di ricerca usati dai gestori di proprietà. Questo elemento non ha elementi figlio e nessun attributo.
+L'elemento <includeInStartMenuScope> booleano facoltativo specifica se questo connettore di ricerca deve essere incluso nell menu Start di ricerca. Il valore predefinito è true per i connettori di ricerca che usano il file system come origine dati e false per i connettori di ricerca usati dai gestori delle proprietà. Questo elemento non ha elementi figlio e nessun attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ L'elemento booleano facoltativo <includeInStartMenuScope> specifica se questo co
 
 ## <a name="remarks"></a>Commenti
 
-Se si include il connettore di ricerca nell'ambito del menu Start, gli utenti possono cercare il percorso dalla casella di ricerca nel menu Start.
+Se si include il connettore di ricerca nell'ambito menu Start, gli utenti possono cercare la posizione dalla casella di ricerca nella menu Start.
 
 ## <a name="example"></a>Esempio
 

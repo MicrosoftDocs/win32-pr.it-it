@@ -4,12 +4,12 @@ ms.assetid: 53e4f5b7-c85d-4b44-9a0c-0ad05ca872cc
 title: Passaggio 6. Aggiunta del supporto per COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 097d51fa440812311edde9ce448916c66721a507
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 354299ed9ed2f752e0041b82af712e7a9c5411eb7bb7e16588267183442edf68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964901"
 ---
 # <a name="step-6-add-support-for-com"></a>Passaggio 6. Aggiunta del supporto per COM
 
@@ -25,7 +25,7 @@ Non è necessario implementare [**IUnknown::AddRef**](/windows/win32/api/unknwn/
 
 Tutte le classi di filtro e pin implementano [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per tutte le interfacce COM che ereditano. Ad esempio, [**CTransformFilter**](ctransformfilter.md) eredita [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) (tramite [**CBaseFilter).**](cbasefilter.md) Se il filtro non espone interfacce aggiuntive, non è necessario eseguire altre operazioni.
 
-Per esporre interfacce aggiuntive, eseguire l'override [**del metodo CUnknown::NonDelegatingQueryInterface.**](cunknown-nondelegatingqueryinterface.md) Si supponga, ad esempio, che il filtro implementi un'interfaccia personalizzata denominata IMyCustomInterface. Per esporre questa interfaccia ai client, eseguire le operazioni seguenti:
+Per esporre interfacce aggiuntive, eseguire l'override del [**metodo CUnknown::NonDelegatingQueryInterface.**](cunknown-nondelegatingqueryinterface.md) Si supponga, ad esempio, che il filtro implementi un'interfaccia personalizzata denominata IMyCustomInterface. Per esporre questa interfaccia ai client, eseguire le operazioni seguenti:
 
 -   Derivare la classe di filtro da tale interfaccia.
 -   Inserire la macro [**DECLARE \_ IUNKNOWN**](declare-iunknown.md) nella sezione della dichiarazione pubblica.
@@ -58,7 +58,7 @@ Per altre informazioni, vedere [Come implementare IUnknown.](how-to-implement-iu
 
 Se si prevede di creare un pacchetto del filtro in una DLL e renderlo disponibile ad altri client, è necessario supportare [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e altre funzioni COM correlate. La libreria di classi di base implementa la maggior parte di questo; È sufficiente fornire alcune informazioni sul filtro. Questa sezione offre una breve panoramica delle attività da eseguire. Per informazioni dettagliate, [vedere How to Create a DirectShow Filter DLL](how-to-create-a-dll.md).
 
-Prima di tutto, scrivere un metodo di classe statico che restituisce una nuova istanza del filtro. È possibile assegnare a questo metodo un nome qualsiasi, ma la firma deve corrispondere a quella illustrata nell'esempio seguente:
+Prima di tutto, scrivere un metodo di classe statico che restituisce una nuova istanza del filtro. È possibile assegnare a questo metodo qualsiasi nome, ma la firma deve corrispondere a quella illustrata nell'esempio seguente:
 
 
 ```C++
@@ -123,10 +123,10 @@ STDAPI DllUnregisterServer()
 
 Negli esempi precedenti viene illustrato come registrare il CLSID di un filtro per COM. Per molti filtri, questa operazione è sufficiente. Il client deve quindi creare il filtro usando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e aggiungerlo al grafico dei filtri chiamando [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter). In alcuni casi, tuttavia, potrebbe essere necessario fornire informazioni aggiuntive sul filtro nel Registro di sistema. Questa informazione esegue le operazioni seguenti:
 
--   Consente ai client di individuare il filtro usando [l'enumeratore Filter Mapper](filter-mapper.md) o [System Device Enumerator.](system-device-enumerator.md)
+-   Consente ai client di individuare il filtro usando [Filter Mapper](filter-mapper.md) o [System Device Enumerator.](system-device-enumerator.md)
 -   Consente a Filter Graph Manager di individuare il filtro durante la compilazione automatica del grafo.
 
-Nell'esempio seguente viene registrato il filtro del codificatore RLE nella categoria video. Per informazioni dettagliate, [vedere How to Register DirectShow Filters](how-to-register-directshow-filters.md). Leggere la sezione Linee guida [per la registrazione dei filtri,](guidelines-for-registering-filters.md)che descrive le procedure consigliate per la registrazione dei filtri.
+L'esempio seguente registra il filtro del codificatore RLE nella categoria video category. Per informazioni dettagliate, [vedere How to Register DirectShow Filters](how-to-register-directshow-filters.md). Leggere la sezione Linee guida [per la registrazione dei filtri,](guidelines-for-registering-filters.md)che descrive le procedure consigliate per la registrazione dei filtri.
 
 
 ```C++
@@ -244,10 +244,10 @@ int main()
 
 <dl> <dt>
 
-[Intelligent Connect](intelligent-connect.md)
+[Gestione Connessione](intelligent-connect.md)
 </dt> <dt>
 
-[Scrittura di filtri DirectShow](writing-directshow-filters.md)
+[Scrittura DirectShow filtri](writing-directshow-filters.md)
 </dt> <dt>
 
 [Scrittura di filtri di trasformazione](writing-transform-filters.md)

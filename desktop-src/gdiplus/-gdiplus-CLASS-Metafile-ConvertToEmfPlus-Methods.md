@@ -1,19 +1,19 @@
 ---
-description: In questo argomento vengono elencati i metodi ConvertToEmfPlus della classe Metafile. Per un elenco completo dei metodi per la classe Metafile, vedere Metodi metafile.
+description: Questo argomento elenca i metodi ConvertToEmfPlus della classe Metafile. Per un elenco completo dei metodi per la classe Metafile, vedere Metodi metafile.
 ms.assetid: eee2b7a0-923b-4acd-affc-59063209bcf0
-title: Metodi metafile. ConvertToEmfPlus
+title: Metodi Metafile.ConvertToEmfPlus
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e515ce93a1a85964f062f9537c3935f3c1af91ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19ed93bc96483fa264e4562ecc61f06d431466e9095178b85880142a38e4c41e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888701"
 ---
-# <a name="metafileconverttoemfplus-methods"></a>Metodi metafile. ConvertToEmfPlus
+# <a name="metafileconverttoemfplus-methods"></a>Metodi Metafile.ConvertToEmfPlus
 
-In questo argomento vengono elencati i metodi ConvertToEmfPlus della classe [**metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) . Per un elenco completo dei metodi per la classe **metafile** , vedere [Metodi metafile](-gdiplus-class-metafile-methods.md).
+Questo argomento elenca i metodi ConvertToEmfPlus della [**classe Metafile.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) Per un elenco completo dei metodi per la **classe Metafile,** vedere [Metodi metafile](-gdiplus-class-metafile-methods.md).
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -21,9 +21,9 @@ In questo argomento vengono elencati i metodi ConvertToEmfPlus della classe [**m
 
 | Metodo                                                                                                                                                 | Descrizione                                                                                                                                                                                                                 |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ConvertToEmfPlus (Graphics \* , bool \* , EMFTYPE, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar))                     | Il metodo [**metafile:: ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo oggetto [**metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF +.<br/>  |
-| [**ConvertToEmfPlus (Graphics \* , WCHAR \* , bool \* , EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inconstwchar_inoutint_inemftype_inconstwchar))   | Il metodo [**metafile:: ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo oggetto [**metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF +.<br/>  |
-| [**ConvertToEmfPlus (Graphics \* , IStream \* , bool \* , EmfType, WCHAR \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inistream_inoutint_inemftype_inconstwchar)) | Il metodo [**metafile:: ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo oggetto [**metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF +. <br/> |
+| [**\* \* ConvertToEmfPlus(Graphics,BOOL,EmfType,WCHAR) \***](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar))                     | Il [**metodo Metafile::ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo [**oggetto Metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF+.<br/>  |
+| [**\* \* ConvertToEmfPlus(Graphics,WCHAR,BOOL,EmfType,WCHAR \* \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inconstwchar_inoutint_inemftype_inconstwchar))   | Il [**metodo Metafile::ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo [**oggetto Metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF+.<br/>  |
+| [**\* \* ConvertToEmfPlus(Graphics,IStream,BOOL,EmfType,WCHAR) \* \***](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inistream_inoutint_inemftype_inconstwchar)) | Il [**metodo Metafile::ConvertToEmfPlus**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-metafile-converttoemfplus(inconstgraphics_inoutint_inemftype_inconstwchar)) converte questo [**oggetto Metafile**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-metafile) nel formato EMF+. <br/> |
 
 
 

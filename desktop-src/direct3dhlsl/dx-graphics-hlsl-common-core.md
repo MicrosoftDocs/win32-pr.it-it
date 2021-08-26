@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 66c1f763c4771a8406acd2f3401445d1a29cde79
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 9c2d1851025cb051a21a997f5e3a4987d3b6309e148248b3ea55c6b9ca6ad31c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950481"
 ---
 # <a name="common-shader-core"></a>Common-Shader Core
 
@@ -42,7 +42,7 @@ Differenze tra Direct3D 9 e Direct3D 10:
 
 ## <a name="integer-and-bitwise-support"></a>Supporto di interi e bit per bit
 
-Il nucleo comune dello shader fornisce un set completo di operazioni bit per bit e interi a 32 bit conformi a IEEE. Queste operazioni abilitano una nuova classe di algoritmi negli esempi di hardware grafico, tra cui tecniche di compressione e compressione, FFT e controllo del flusso di programma dei campi di bit.
+Il core dello shader comune fornisce un set completo di operazioni bit per bit e interi a 32 bit conformi a IEEE. Queste operazioni consentono una nuova classe di algoritmi negli esempi di hardware grafico, tra cui tecniche di compressione e compressione, FFT e controllo del flusso di programma dei campi di bit.
 
 I **tipi di** dati int e **uint** in HLSL Direct3D 10 sono mappati a interi a 32 bit nell'hardware.
 
@@ -64,7 +64,7 @@ Il nucleo comune dello shader supporta gli operatori bit per bit seguenti:
 
 | Operatore  | Funzione          |
 |-----------|-------------------|
-| ~         | Not logico       |
+| ~         | NOT logico       |
 | <<  | Spostamento a sinistra        |
 | >>  | Spostamento a destra       |
 | &         | And logico       |

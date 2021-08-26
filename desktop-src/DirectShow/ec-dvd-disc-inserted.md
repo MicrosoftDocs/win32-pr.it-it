@@ -1,7 +1,7 @@
 ---
-description: Segnala che è stato inserito un disco DVD nell'unità.
+description: Segnala che nell'unità è stato inserito un disco DVD.
 ms.assetid: ce233c94-2eae-457c-919b-7c4d8334979a
-title: EC_DVD_DISC_INSERTED (Dvdevcode. h)
+title: EC_DVD_DISC_INSERTED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c98d32960e2ab6a21633899164b3ff84525f2aaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6911d4ad044e0b2080007f9751bd7090b182d8474673da98d35dd91544947e03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997921"
 ---
-# <a name="ec_dvd_disc_inserted"></a>\_disco DVD \_ EC \_ inserito
+# <a name="ec_dvd_disc_inserted"></a>EC \_ DVD \_ DISC \_ INSERTED
 
-Segnala che è stato inserito un disco DVD nell'unità.
+Segnala che nell'unità è stato inserito un disco DVD.
 
 ## <a name="parameters"></a>Parametri
 
@@ -54,7 +54,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

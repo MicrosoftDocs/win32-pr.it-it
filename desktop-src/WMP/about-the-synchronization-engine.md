@@ -4,33 +4,33 @@ description: Informazioni sul motore di sincronizzazione
 ms.assetid: bb57ffb0-3833-463b-b66c-c23224fa2ba7
 keywords:
 - Windows Media Player, motore di sincronizzazione
-- Modello a oggetti di Windows Media Player, motore di sincronizzazione
+- Windows Media Player a oggetti, motore di sincronizzazione
 - modello a oggetti, motore di sincronizzazione
-- Controllo ActiveX di Windows Media Player, motore di sincronizzazione
-- Controllo ActiveX, motore di sincronizzazione
-- Controllo ActiveX Windows Media Player Mobile, motore di sincronizzazione
-- Windows Media Player Mobile, motore di sincronizzazione
+- Windows Media Player ActiveX, motore di sincronizzazione
+- ActiveX, motore di sincronizzazione
+- Windows Media Player Controllo del ActiveX mobile, motore di sincronizzazione
+- Windows Media Player dispositivi mobili, motore di sincronizzazione
 - sincronizzazione di dispositivi, motore di sincronizzazione
 - sincronizzazione dei dispositivi, motore di sincronizzazione
 - motore di sincronizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe0768c4805b074fdaf628a25daf47b9ced97ee
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3ccac14f6416b080ae22407930d720df84bd5b4dc399892b9a2d8678d03eee6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903071"
 ---
 # <a name="about-the-synchronization-engine"></a>Informazioni sul motore di sincronizzazione
 
-Il motore di sincronizzazione è il componente di Windows Media Player che gestisce la copia del contenuto multimediale digitale nei dispositivi portatili. Windows Media Player supporta una singola istanza del motore di sincronizzazione per ogni dispositivo. Per eseguire attività di sincronizzazione a livello di programmazione, è necessario utilizzare un'istanza remota del controllo Media Player di Windows. In effetti, il programma condivide le istanze del motore di sincronizzazione con Windows Media Player e tutti gli altri programmi che usano le interfacce del lettore per la sincronizzazione dei dispositivi.
+Il motore di sincronizzazione è il componente Windows Media Player che gestisce la copia di contenuto multimediale digitale in dispositivi portatili. Windows Media Player supporta una singola istanza del motore di sincronizzazione per ogni dispositivo. È necessario utilizzare un'istanza remota del controllo Windows Media Player per eseguire attività di sincronizzazione a livello di codice. In effetti, il programma condivide le istanze del motore di sincronizzazione con Windows Media Player e tutti gli altri programmi che usano le interfacce del lettore per la sincronizzazione dei dispositivi.
 
-È possibile usare [IWMPSyncDevice:: Start](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-start) e [IWMPSyncDevice:: Stop](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-stop) per controllare il momento in cui il motore di sincronizzazione esegue le operazioni. Nella maggior parte dei casi, non è consigliabile usare questi metodi. Al contrario, è necessario consentire al motore di sincronizzazione di pianificare automaticamente il lavoro. I metodi **Start** e **Stop** esistono per poterli utilizzare se il programma è stato progettato per sostituire l'interfaccia utente di Windows Media Player. In questo caso, è possibile fornire un pulsante di avvio/arresto simile a quello di Windows Media Player disponibile nella scheda **dispositivi** .
+È possibile usare [IWMPSyncDevice::start](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-start) e [IWMPSyncDevice::stop](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-stop) per controllare quando il motore di sincronizzazione esegue il proprio lavoro. Nella maggior parte dei casi, non è consigliabile usare questi metodi. È invece consigliabile consentire al motore di sincronizzazione di pianificare automaticamente il proprio lavoro. I **metodi start** e **stop** sono disponibili in modo che sia possibile usarli se il programma è progettato per sostituire il Windows Media Player'interfaccia utente. In questo caso, è possibile specificare un pulsante di avvio/arresto simile a quello Windows Media Player nella **scheda** Dispositivi.
 
-È possibile monitorare lo stato di avanzamento della sincronizzazione per un dispositivo eseguendo il polling di [IWMPSyncDevice:: Get \_ Progress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_progress). Questo metodo recupera un valore di avanzamento per l'intero processo di sincronizzazione con un dispositivo specifico. Il valore recuperato è un numero che rappresenta la percentuale di completamento della sincronizzazione. Sono disponibili due eventi che è possibile ricevere correlati alla sincronizzazione. L'evento **DeviceSyncError** informa l'utente quando si verifica un problema. L'evento **DeviceSyncStateChange** avvisa l'utente quando il motore di sincronizzazione ha modificato lo stato per il dispositivo corrente.
+È possibile monitorare lo stato di avanzamento della sincronizzazione per un dispositivo effettuando il polling [di IWMPSyncDevice::get \_ progress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice-get_progress). Questo metodo recupera un valore di stato per l'intero processo di sincronizzazione con un particolare dispositivo. Il valore recuperato è un numero che rappresenta la percentuale di completamento della sincronizzazione. È possibile ricevere due eventi correlati alla sincronizzazione. **L'evento DeviceSyncError** invia una notifica quando si verifica un problema. **L'evento DeviceSyncStateChange** avvisa l'utente quando lo stato del motore di sincronizzazione per il dispositivo corrente è cambiato.
 
-È possibile limitare la quantità di archiviazione del dispositivo utilizzata da Windows Media Player per la sincronizzazione chiamando [IWMPSyncDevice2:: setItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice2-setiteminfo) con l'attributo **PercentSpaceReserved** . L'utilizzo di questa interfaccia richiede Windows Media Player 11.
+È possibile limitare la quantità di spazio di archiviazione del dispositivo Windows Media Player per la sincronizzazione chiamando [IWMPSyncDevice2::setItemInfo con](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpsyncdevice2-setiteminfo) l'attributo **PercentSpaceReserved.** L'uso di questa interfaccia richiede Windows Media Player 11.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -45,9 +45,9 @@ Il motore di sincronizzazione è il componente di Windows Media Player che gesti
 [**Visualizzazione dello stato di avanzamento della sincronizzazione**](showing-synchronization-progress.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

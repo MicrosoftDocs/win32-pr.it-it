@@ -1,9 +1,9 @@
 ---
-title: Rete. framesSkipped
-description: La proprietà framesSkipped Recupera il numero totale di frame ignorati durante la riproduzione.
+title: Network.framesSkipped
+description: La proprietà framesSkipped recupera il numero totale di fotogrammi ignorati durante la riproduzione.
 ms.assetid: fc7561a4-1e52-4192-b8df-ed2fb407fb78
 keywords:
-- Media Player di Windows Network. framesSkipped
+- Network.framesSkipped Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f33b778fffce071c47cb455f09e468243abab6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1031585feae5fa2c7fdd9f5fb64bf958e77b8029d502f3e99476024276a652cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901671"
 ---
-# <a name="networkframesskipped"></a>Rete. framesSkipped
+# <a name="networkframesskipped"></a>Network.framesSkipped
 
-La proprietà **framesSkipped** Recupera il numero totale di frame ignorati durante la riproduzione.
+La **proprietà framesSkipped** recupera il numero totale di fotogrammi ignorati durante la riproduzione.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **framesSkipped**
+*lettore*. *network*. **framesSkipped**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **framesSkipped** per visualizzare il numero totale di frame ignorati durante la riproduzione quando l'utente fa clic su un pulsante. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FS". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **framesSkipped** per visualizzare il numero totale di fotogrammi ignorati durante la riproduzione quando l'utente fa clic su un pulsante. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "FS". **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -54,7 +54,7 @@ Nell'esempio JScript seguente viene utilizzata la *rete*. **framesSkipped** per 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

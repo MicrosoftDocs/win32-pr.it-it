@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. mediacollection
-description: La proprietà mediacollection ottiene un'interfaccia IWMPMediaCollection che fornisce un modo per organizzare una raccolta di elementi multimediali di grandi dimensioni.
+title: AxWindowsMediaPlayer.mediaCollection - proprietà
+description: La proprietà mediaCollection ottiene un'interfaccia IWMPMediaCollection che consente di organizzare un'ampia raccolta di elementi multimediali.
 ms.assetid: ec37e1da-a843-4b89-88fc-ec9255baa98a
 keywords:
-- Proprietà di mediacollection Media Player Windows
-- Proprietà mediacollection Media Player Windows, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Windows Media Player, proprietà mediacollection
+- Proprietà mediaCollection Windows Media Player
+- proprietà mediaCollection Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , proprietà mediaCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6501dd5dda8e60b8ba1a5f2667f6b581cbdfd90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86ad0cc720c49926ddbd75fe71d47738a9e8af43fa97670a0b9915a50716ed0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902631"
 ---
-# <a name="axwindowsmediaplayermediacollection-property"></a>Proprietà AxWindowsMediaPlayer. mediacollection
+# <a name="axwindowsmediaplayermediacollection-property"></a>AxWindowsMediaPlayer.mediaCollection - proprietà
 
-La proprietà mediacollection ottiene un'interfaccia **IWMPMediaCollection** che fornisce un modo per organizzare una raccolta di elementi multimediali di grandi dimensioni.
+La proprietà mediaCollection ottiene **un'interfaccia IWMPMediaCollection** che consente di organizzare un'ampia raccolta di elementi multimediali.
 
 Questa proprietà è di sola lettura.
 
@@ -48,11 +48,11 @@ Public ReadOnly Property mediaCollection As IWMPMediaCollection
 
 ## <a name="property-value"></a>Valore proprietà
 
-Interfaccia WMPLib. IWMPMediaCollection per una raccolta di elementi multimediali.
+Interfaccia WMPLib.IWMPMediaCollection per una raccolta di elementi multimediali.
 
 ## <a name="remarks"></a>Commenti
 
-Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per recuperare il valore di questa proprietà, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Per recuperare il valore di questa proprietà, è necessario l'accesso in lettur
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                          |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                          |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -76,10 +76,10 @@ Per recuperare il valore di questa proprietà, è necessario l'accesso in lettur
 [**Interfaccia IWMPMediaCollection (VB e C#)**](iwmpmediacollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

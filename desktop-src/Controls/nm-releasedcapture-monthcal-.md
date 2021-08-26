@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica di NM_RELEASEDCAPTURE (monthcal) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo monthcal che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RELEASEDCAPTURE di notifica (monthcal) (Commctrl.h)
+description: Notifica alla finestra padre di un controllo monthcal che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: c05d3331-26f3-41f4-8032-36ed38d47917
 keywords:
-- NM_RELEASEDCAPTURE (monthcal) (codice di notifica) controlli Windows
+- NM_RELEASEDCAPTURE di notifica (monthcal) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9c743a076c8046aa57ba4306145248ed00f0fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be05fe15740b58c462c4f15edd9070417a9fb7c4580fb0df3767aa4b5d510201
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919571"
 ---
-# <a name="nm_releasedcapture-monthcal-notification-code"></a>Codice di notifica di NM \_ RELEASEDCAPTURE (monthcal)
+# <a name="nm_releasedcapture-monthcal-notification-code"></a>Codice di notifica NM \_ RELEASEDCAPTURE (monthcal)
 
-Notifica alla finestra padre di un controllo monthcal che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo monthcal che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il controllo Ignora il valore restituito da questo codice di notifica.
+Il controllo ignora il valore restituito da questo codice di notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il controllo Ignora il valore restituito da questo codice di notifica.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

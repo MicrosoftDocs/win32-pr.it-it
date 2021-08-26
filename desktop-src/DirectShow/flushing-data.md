@@ -4,16 +4,16 @@ ms.assetid: 528763a2-c0f2-4981-91dc-dd17987f5bd5
 title: Scaricamento dei dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 750ddd052c18928d53511d9e955122d2d66ee59d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c8a435bf40ae9f71b35707935812c3a935a95df1904db00a652634b171f20a10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103745634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965461"
 ---
 # <a name="flushing-data"></a>Scaricamento dei dati
 
-Nello pseudocodice seguente viene illustrato come implementare il metodo [**Ipin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) :
+Lo pseudocodice seguente illustra come implementare il [**metodo IPin::BeginFlush:**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush)
 
 
 ```C++
@@ -49,13 +49,13 @@ HRESULT CMyInputPin::BeginFlush()
 
 
 
-Quando viene avviato lo scaricamento, il metodo **BeginFlush** accetta il blocco del filtro, che serializza la modifica dello stato. Non è ancora possibile eseguire il blocco di streaming perché lo svuotamento avviene nel thread dell'applicazione e il thread di streaming potrebbe trovarsi al centro di una chiamata di **ricezione** . Il PIN deve garantire che la **ricezione** non venga bloccata e che tutte le chiamate successive a **Receive** avranno esito negativo. Il metodo [**CBaseInputPin:: BeginFlush**](cbaseinputpin-beginflush.md) imposta un flag interno, [**CBaseInputPin:: m \_ bFlushing**](cbaseinputpin-m-bflushing.md). Quando il flag è **true**, il metodo **Receive** ha esito negativo.
+All'avvio dello scaricamento, il **metodo BeginFlush** accetta il blocco del filtro, che serializza la modifica dello stato. Non è ancora sicuro prendere il blocco di streaming, perché lo scaricamento avviene nel thread dell'applicazione e il thread di streaming potrebbe essere nel mezzo di una **chiamata Receive.** Il pin deve garantire che **Receive** non sia bloccato e che tutte le chiamate successive a **Receive** avranno esito negativo. Il [**metodo CBaseInputPin::BeginFlush**](cbaseinputpin-beginflush.md) imposta un flag interno, [**CBaseInputPin::m \_ bFlushing**](cbaseinputpin-m-bflushing.md). Quando il flag è **TRUE,** il **metodo Receive ha** esito negativo.
 
-Grazie alla chiamata a downstream di **BeginFlush** , il PIN garantisce che tutti i filtri downstream rilascino gli esempi e restituiscano le chiamate di **ricezione** . Questo garantisce a sua volta che il pin di input non è bloccato in attesa di **GetBuffer** o **Receive**. Se il metodo di **ricezione** del PIN è in attesa di un evento, ad esempio per ottenere le risorse, il metodo **BeginFlush** deve forzare l'attesa per terminare impostando l'evento. A questo punto, viene garantita la restituzione del metodo **Receive** e il flag **m \_ bFlushing** impedisce a nuove chiamate **Receive** di eseguire qualsiasi operazione.
+Recapitare la **chiamata BeginFlush** a valle, il pin garantisce che tutti i filtri downstream rilascino gli esempi e restituisca dalle **chiamate Receive.** Ciò garantisce a sua volta che il pin di input non venga bloccato in attesa di **GetBuffer** o **Receive.** Se il metodo **Receive del** pin attende un evento (ad esempio, per ottenere risorse), il metodo **BeginFlush** deve forzare l'attesa a terminare impostando l'evento . A questo punto, è **garantito** che il metodo Receive restituisca e il flag **m \_ bFlushing** impedisce alle nuove chiamate **Receive** di eseguire qualsiasi operazione.
 
-Per alcuni filtri, questa operazione deve essere eseguita da tutti i **BeginFlush** . Il metodo **EndFlush** segnalerà al filtro che può iniziare a ricevere nuovamente gli esempi. Altri filtri potrebbero dover usare variabili o risorse in **BeginFlush** che vengono usate anche nella **ricezione**. In tal caso, il filtro deve prima tenere il blocco di streaming. Assicurarsi di non eseguire questa operazione prima di uno dei passaggi precedenti, perché potrebbe verificarsi un deadlock.
+Per alcuni filtri, è necessario **eseguire solo BeginFlush.** Il **metodo EndFlush** segnalerà al filtro che può iniziare di nuovo a ricevere campioni. Altri filtri potrebbero dover usare variabili o risorse in **BeginFlush** che vengono usate anche in **Receive**. In tal caso, il filtro deve contenere prima il blocco di streaming. Assicurarsi di non eseguire questa operazione prima di uno dei passaggi precedenti, perché potrebbe verificarsi un deadlock.
 
-Il metodo **EndFlush** include il blocco del filtro e propaga la chiamata downstream:
+Il **metodo EndFlush** contiene il blocco del filtro e propaga la chiamata a valle:
 
 
 ```C++
@@ -70,7 +70,7 @@ HRESULT CMyInputPin::EndFlush()
 
 
 
-Il metodo [**CBaseInputPin:: EndFlush**](cbaseinputpin-endflush.md) Reimposta il flag **m \_ bFlushing** su **false**, che consente al metodo **Receive** di iniziare a ricevere nuovamente gli esempi. Questo deve essere l'ultimo passaggio di **EndFlush**, perché il PIN non deve ricevere alcun campione fino al completamento dello scaricamento e alla notifica di tutti i filtri downstream.
+Il [**metodo CBaseInputPin::EndFlush**](cbaseinputpin-endflush.md) reimposta il flag **m \_ bFlushing** su **FALSE,** che consente al metodo **Receive** di iniziare a ricevere nuovamente gli esempi. Questo deve essere l'ultimo passaggio in **EndFlush,** perché il pin non deve ricevere campioni fino al completamento dello scaricamento e non vengono notificati tutti i filtri downstream.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

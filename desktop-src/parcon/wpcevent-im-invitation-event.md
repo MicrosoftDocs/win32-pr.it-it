@@ -1,19 +1,19 @@
 ---
-description: Evento per utente fornito per la registrazione dell'avvio delle conversazioni da parte dei client di messaggistica immediata.
+description: Evento per utente fornito per la registrazione dell'avvio delle conversazioni da parte dei client di messaggistica istantanea.
 ms.assetid: b2cd1d37-9993-4990-83b7-b147a109e4af
-title: Evento WPCEVENT_IM_INVITATION (Wpcevent. h)
+title: WPCEVENT_IM_INVITATION eventi (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87c9d7e90eaa901b5e18a072e03e3112ee8c2934
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f29b1adc556e29e03f7c8a189567b98055187f80d1574e201c54e3af0c1c0aca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951391"
 ---
-# <a name="wpcevent_im_invitation-event"></a>\_ \_ Evento invito WPCEVENT im
+# <a name="wpcevent_im_invitation-event"></a>Evento WPCEVENT \_ IM \_ INVITATION
 
-Evento per utente fornito per la registrazione dell'avvio delle conversazioni da parte dei client di messaggistica immediata.
+Evento per utente fornito per la registrazione dell'avvio delle conversazioni da parte dei client di messaggistica istantanea.
 
 
 ```C++
@@ -43,14 +43,14 @@ Stringa di versione per l'applicazione che genera l'evento.
 *AccountName* 
 </dt> <dd>
 
-Stringa di identità dell'account di messaggistica immediata.
+Stringa di identità dell'account di messaggistica istantanea.
 
 </dd> <dt>
 
 *ConvID* 
 </dt> <dd>
 
-Identificatore per la conversazione.
+Identificatore della conversazione.
 
 </dd> <dt>
 
@@ -64,28 +64,28 @@ Stringa contenente l'indirizzo IP del computer che invia l'invito.
 *Mittente* 
 </dt> <dd>
 
-Stringa di identità dell'account di messaggistica immediata per l'account che ha emesso l'invito.
+Stringa di identità dell'account di messaggistica istantanea per l'account che emette l'invito.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Valore dell'enumerazione [**WPCFLAG che \_**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) indica le informazioni sugli eventi che vengono bloccati dall'utilizzo e sui controlli.
+Valore [**dell'enumerazione \_ ISBLOCKED WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) che indica quali eventi non possono essere utilizzati e quali controlli sono presenti.
 
 </dd> <dt>
 
 *RecipCount* 
 </dt> <dd>
 
-Numero di destinatari che ricevono l'invito e che hanno identità definite nel campo del destinatario.
+Numero di destinatari che ricevono l'invito e che dispongono di identità definite nel campo destinatario.
 
 </dd> <dt>
 
 *Recipient* 
 </dt> <dd>
 
-Stringa delimitata che contiene le stringhe di identità dell'account di messaggistica immediata per i destinatari dell'invito.
+Stringa delimitata che contiene le stringhe di identità dell'account di messaggistica istantanea per i destinatari dell'invito.
 
 </dd> </dl>
 
@@ -95,9 +95,9 @@ Stringa delimitata che contiene le stringhe di identità dell'account di messagg
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
-| Intestazione<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -105,10 +105,10 @@ Stringa delimitata che contiene le stringhe di identità dell'account di messagg
 
 <dl> <dt>
 
-[Uso delle API di registrazione per i controlli padre](using-logging-apis-for-parental-controls.md)
+[Uso delle API di registrazione per il controllo genitori](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

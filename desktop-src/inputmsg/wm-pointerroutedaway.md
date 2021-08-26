@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_POINTERROUTEDAWAY
+title: WM_POINTERROUTEDAWAY messaggio
 description: Si verifica nel processo che riceve l'input quando l'input del puntatore viene indirizzato a un altro processo. AddContentWithCrossProcessChaining).
 ms.assetid: 06F8152C-0DA0-4820-835E-07AD35B24310
 keywords:
-- Messaggi e notifiche di input del messaggio WM_POINTERROUTEDAWAY
+- WM_POINTERROUTEDAWAY messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 3c099c02338aa70817d75717064e0b99ac13c96b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6df21a5464aa44621c2eca760690806237f9e75a79c5f695d3df5b7604a6878
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964221"
 ---
-# <a name="wm_pointerroutedaway-message"></a>Messaggio WM_POINTERROUTEDAWAY
+# <a name="wm_pointerroutedaway-message"></a>WM_POINTERROUTEDAWAY messaggio
 
 Si verifica nel processo che riceve l'input quando l'input del puntatore viene indirizzato a un altro processo.
 
-Inviato quando l'input del puntatore passa da un processo a un altro tra i contenuti configurati per il concatenamento tra processi ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
+Inviato quando l'input del puntatore passa da un processo a un altro nel contenuto configurato per il concatenamento tra processi ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
 
-Questo messaggio viene inviato al processo che riceve attualmente l'input del puntatore.
+Questo messaggio viene inviato al processo che attualmente riceve l'input del puntatore.
 
 
 ```C++
@@ -60,7 +60,7 @@ NULL
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio non viene inviato con un messaggio di [**WM_POINTERUP**](wm-pointerup.md) o un messaggio di [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md) .
+Questo messaggio non viene inviato con un messaggio [**WM_POINTERUP**](wm-pointerup.md) o [**un**](wm-pointercapturechanged.md) WM_POINTERCAPTURECHANGED messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,9 +68,9 @@ Questo messaggio non viene inviato con un messaggio di [**WM_POINTERUP**](wm-poi
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: 'È possibile abilitare la correzione gamma per un pennello sfumatura passando TRUE al Metodo PathGradientBrush:: SetGammaCorrection del pennello.'
+description: Puoi abilitare la correzione gamma per un pennello sfumato passando TRUE al metodo PathGradientBrush::SetGammaCorrection di tale pennello.
 ms.assetid: 47472e41-f469-44f4-8b39-cf3982b79f9e
 title: Applicazione della correzione gamma a una sfumatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80e51673e8be4fd289286ce5e4e3e8f7c5469724
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eae76306e5c68804d76777d9fc80c65d06904702487a8b60f80659b9d16a96ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888541"
 ---
 # <a name="applying-gamma-correction-to-a-gradient"></a>Applicazione della correzione gamma a una sfumatura
 
-È possibile abilitare la correzione gamma per un pennello sfumatura passando **true** al metodo [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) del pennello. È possibile disabilitare la correzione gamma passando **false** al metodo **PathGradientBrush:: SetGammaCorrection** . Per impostazione predefinita, la correzione gamma è disabilitata.
+Puoi abilitare la correzione gamma per un pennello sfumato passando **TRUE** al [**metodo PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) di tale pennello. Puoi disabilitare la correzione gamma passando **FALSE** al **metodo PathGradientBrush::SetGammaCorrection.** La correzione gamma è disabilitata per impostazione predefinita.
 
-Nell'esempio seguente viene creato un pennello sfumato lineare e tale pennello viene utilizzato per riempire due rettangoli. Il primo rettangolo viene riempito senza correzione gamma e il secondo rettangolo viene riempito con la correzione gamma.
+L'esempio seguente crea un pennello sfumato lineare e lo usa per riempire due rettangoli. Il primo rettangolo viene riempito senza correzione gamma e il secondo rettangolo viene riempito con la correzione gamma.
 
 
 ```
@@ -32,11 +32,11 @@ graphics.FillRectangle(&linGrBrush, 0, 60, 200, 50);
 
 
 
-Nella figura seguente sono illustrati i due rettangoli riempiti. Il rettangolo superiore, che non ha la correzione gamma, appare scuro al centro. Il rettangolo inferiore, con correzione gamma, sembra avere un'intensità più uniforme.
+La figura seguente mostra i due rettangoli riempiti. Il rettangolo superiore, senza correzione gamma, appare scuro al centro. Il rettangolo inferiore, con correzione gamma, sembra avere un'intensità più uniforme.
 
-![illustrazione che mostra due rettangoli: il riempimento colorato del primo varia in intensità, il riempimento del secondo varia in meno](images/gammagradient1.png)
+![illustrazione che mostra due rettangoli: il riempimento colorato del primo varia in intensità, il riempimento del secondo varia meno](images/gammagradient1.png)
 
-Nell'esempio seguente viene creato un pennello sfumatura del percorso basato su un percorso a forma di stella. Il codice usa il pennello sfumatura del percorso con la correzione gamma disabilitata (impostazione predefinita) per riempire il percorso. Quindi il codice passa **true** al metodo [**PathGradientBrush:: SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) per abilitare la correzione gamma per il pennello sfumatura del percorso. La chiamata a [**Graphics:: TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) imposta la trasformazione globale di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) in modo che la chiamata successiva a [**Graphics:: FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) riempia una stella che si trova a destra della prima stella.
+L'esempio seguente crea un pennello sfumato basato su un tracciato a forma di stella. Il codice usa il pennello sfumatura tracciato con la correzione gamma disabilitata (impostazione predefinita) per riempire il tracciato. Il codice passa quindi **TRUE** al [**metodo PathGradientBrush::SetGammaCorrection**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-pathgradientbrush-setgammacorrection) per abilitare la correzione gamma per il pennello sfumatura del tracciato. La chiamata a [**Graphics::TranslateTransform**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-translatetransform) imposta la trasformazione globale di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) in modo che la chiamata successiva a [**Graphics::FillPath**](/windows/desktop/api/Gdiplusgraphics/nf-gdiplusgraphics-graphics-fillpath) riempia una stella a destra della prima stella.
 
 
 ```
@@ -76,9 +76,9 @@ graphics.FillPath(&pthGrBrush, &path);
 
 
 
-Nella figura seguente viene illustrato l'output del codice precedente. La stella a destra ha la correzione gamma. Si noti che la stella a sinistra, che non ha la correzione gamma, presenta aree che appaiono scure.
+La figura seguente mostra l'output del codice precedente. La stella a destra ha una correzione gamma. Si noti che la stella a sinistra, che non ha una correzione gamma, ha aree che appaiono scuri.
 
-![illustrazione di 2 5-puntato inizia con riempimento sfumato colorato; il primo ha aree scure, il secondo non](images/gammagradient2.png)
+![illustrazione di due inizi a cinque punte con riempimento sfumato colorato; il primo ha aree scura, il secondo no](images/gammagradient2.png)
 
  
 

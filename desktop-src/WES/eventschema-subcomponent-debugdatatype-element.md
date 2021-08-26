@@ -3,7 +3,7 @@ title: Elemento SubComponent (DebugDataType)
 description: Nome del sottocomponente che ha registrato il messaggio di traccia.
 ms.assetid: f5fcb721-6e2f-42ea-a2b3-68706028eb88
 keywords:
-- EventLog elemento SubComponent
+- Elemento SubComponent EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2cf13df05dbc00fc3155ffb3f84df6399ddbac07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 770b6bbc8e4292252a41f36bc9a6efdfcb4cfdd5a552c5d5e8716f4750213a98
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904291"
 ---
 # <a name="subcomponent-debugdatatype-element"></a>Elemento SubComponent (DebugDataType)
 
@@ -30,7 +30,7 @@ Nome del sottocomponente che ha registrato il messaggio di traccia.
  />
 ```
 
-L'elemento **SubComponent** è definito dal tipo complesso [**DebugDataType**](eventschema-debugdatatype-complextype.md) .
+**L'elemento SubComponent** è definito dal tipo complesso [**DebugDataType.**](eventschema-debugdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **SubComponent** è definito dal tipo complesso [**DebugDataType**](e
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

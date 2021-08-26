@@ -1,23 +1,23 @@
 ---
-description: Un'applicazione può utilizzare la funzione MsiOpenDatabase per aprire un database di installazione nuovo o esistente (file con estensione msi) o un pacchetto di patch (file con estensione msp). L'applicazione verifica il valore restituito di MsiOpenDatabase prima di usare l'handle di database.
+description: Un'applicazione può usare la funzione MsiOpenDatabase per aprire un database di installazione nuovo o esistente (file .msi) o un pacchetto di patch (file msp). L'applicazione controlla il valore restituito di MsiOpenDatabase prima di usare l'handle del database.
 ms.assetid: 54a8d571-ebc3-42d5-bc34-8f29b245b4d8
 title: Esempio di database e patch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07ff5925fc409352b4c9ed8c1762ba1ad17b261f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7de816e471bbc3df4ec2970202130dba79267a06cb872e74734de322cba2d68d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997031"
 ---
 # <a name="a-database-and-patch-example"></a>Esempio di database e patch
 
-Un'applicazione può utilizzare la funzione [**MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea) per aprire un database di installazione nuovo o esistente (file con estensione msi) o un pacchetto di patch (file con estensione msp). L'applicazione verifica il valore restituito di **MsiOpenDatabase** prima di usare l'handle di database.
+Un'applicazione può usare la [**funzione MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea) per aprire un database di installazione nuovo o esistente (file .msi) o un pacchetto patch (file msp). L'applicazione controlla il valore restituito di **MsiOpenDatabase prima** di usare l'handle del database.
 
-Negli esempi seguenti vengono usate le variabili di tipo **PMSIHANDLE** definite in MSI. h. È consigliabile usare il tipo **PMSIHANDLE** perché il programma di installazione chiude gli oggetti **PMSIHANDLE** mentre escono dall'ambito, mentre l'applicazione deve chiudere gli oggetti **MSIHANDLE** chiamando [**MsiCloseHandle**](/windows/desktop/api/Msi/nf-msi-msiclosehandle). Per ulteriori informazioni, vedere la sezione [utilizzare PMSIHANDLE anziché handle](windows-installer-best-practices.md) nell' [Windows Installer procedure consigliate](windows-installer-best-practices.md).
+Negli esempi seguenti vengono usate le variabili di tipo **PMSIHANDLE** definite in msi.h. È consigliabile usare il tipo **PMSIHANDLE** perché il programma di installazione chiude gli oggetti **PMSIHANDLE** non appena es uscita dall'ambito, mentre l'applicazione deve chiudere gli oggetti **MSIHANDLE** chiamando [**MsiCloseHandle**](/windows/desktop/api/Msi/nf-msi-msiclosehandle). Per altre informazioni, vedere [la sezione Use PMSIHANDLE instead of HANDLE](windows-installer-best-practices.md) in Windows Installer Best [Practices](windows-installer-best-practices.md).
 
-Nell'esempio seguente viene aperto un database, sample.msi, solo per la lettura. [**MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea) ha esito positivo solo se sample.msi esiste nella directory c: \\ test. Al termine dell'operazione, è possibile usare l'handle di database restituito per eseguire query sui dati nel pacchetto di installazione usando [**MsiDatabaseOpenView**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseopenviewa) e [**MsiGetSummaryInformation**](/windows/desktop/api/Msiquery/nf-msiquery-msigetsummaryinformationa).
+Nell'esempio seguente viene aperto un database, sample.msi, per la sola lettura. [**MsiOpenDatabase**](/windows/desktop/api/Msiquery/nf-msiquery-msiopendatabasea) ha esito positivo solo se sample.msi esistente nella directory c: \\ test. In caso di esito positivo, l'handle di database restituito può essere usato per eseguire query sui dati nel pacchetto di installazione usando [**MsiDatabaseOpenView**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseopenviewa) e [**MsiGetSummaryInformation.**](/windows/desktop/api/Msiquery/nf-msiquery-msigetsummaryinformationa)
 
 
 ```C++
@@ -32,7 +32,7 @@ if (ERROR_SUCCESS != uiStatus1)
 
 
 
-Nell'esempio seguente viene aperto il database per la lettura e la scrittura. Se l'applicazione chiama [**MsiDatabaseCommit**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasecommit), vengono salvate tutte le modifiche apportate al database. Se l'applicazione non chiama **MsiDatabaseCommit**, non viene apportata alcuna modifica al database.
+Nell'esempio seguente viene aperto il database per la lettura e la scrittura. Se l'applicazione [**chiama MsiDatabaseCommit**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasecommit), tutte le modifiche apportate al database vengono salvate. Se l'applicazione non chiama **MsiDatabaseCommit**, non vengono apportate modifiche al database.
 
 
 ```C++
@@ -47,7 +47,7 @@ if (ERROR_SUCCESS != uiStatus2)
 
 
 
-Nell'esempio seguente viene preso un database esistente, text.msi e viene creato un nuovo database, newtest.msi. Tutte le modifiche apportate possono essere salvate nel nuovo database chiamando [**MsiDatabaseCommit**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasecommit). Il database esistente specificato nel parametro *szDatabasePath* è invariato.
+Nell'esempio seguente viene creato un database esistente, text.msi e viene creato un nuovo database newtest.msi. Tutte le modifiche apportate possono essere salvate nel nuovo database chiamando [**MsiDatabaseCommit**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasecommit). Il database esistente specificato nel *parametro szDatabasePath* rimane invariato.
 
 
 ```C++
@@ -62,9 +62,9 @@ if (ERROR_SUCCESS != uiStatus3)
 
 
 
-Nell'esempio seguente viene aperto un pacchetto di patch Windows Installer (file con estensione msp) per la sola lettura. L'handle di patch restituito può essere usato per determinare gli armadi e trasformare le sottoarchiviazioni incluse nel pacchetto di patch dalle query sulle tabelle [ \_ Streams](-streams-table.md) e [ \_ Storages](-storages-table.md) .
+Nell'esempio seguente viene aperto un pacchetto Windows di patch del programma di installazione (file msp) per la sola lettura. L'handle di patch restituito può essere usato per determinare i file CAB e trasformare le risorse di archiviazione secondarie incluse nel pacchetto di patch tramite query sulle tabelle [ \_ Flussi](-streams-table.md) [ \_ e Storages.](-storages-table.md)
 
-**Windows Installer 2,0:** Non supportato. A partire da Windows Installer 3,0, l'applicazione può eseguire una query sulla [tabella MsiPatchSequence](msipatchsequence-table.md) presente in un pacchetto di patch che usa le nuove informazioni di sequenziazione delle patch.
+**Windows Installer 2.0:** Non supportato. A partire da Windows Installer 3.0, l'applicazione può eseguire una query sulla tabella [MsiPatchSequence](msipatchsequence-table.md) presente in un pacchetto di patch che usa le nuove informazioni di sequenziazione delle patch.
 
 
 ```C++

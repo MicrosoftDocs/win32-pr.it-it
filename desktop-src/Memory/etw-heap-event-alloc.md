@@ -1,7 +1,7 @@
 ---
 description: Evento di traccia di gestione della memoria per un'operazione di allocazione heap.
 ms.assetid: 572DEC3B-F909-45E5-849F-707AA62F2F5E
-title: Evento ETW_HEAP_EVENT_ALLOC (Ntwmi. h)
+title: ETW_HEAP_EVENT_ALLOC eventi (Ntwmi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - ntwmi.h
-ms.openlocfilehash: 57e09ed1785f31b6203c526f2b6d42cc4815a266
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 111c9268cb6ad174dc79323a9b867923e6264428f939caeae7089685e62f4318
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963201"
 ---
-# <a name="etw_heap_event_alloc-event"></a>\_Evento di \_ allocazione evento heap ETW \_
+# <a name="etw_heap_event_alloc-event"></a>Evento \_ \_ \_ ALLOC DELL'EVENTO HEAP ETW
 
-L'evento di allocazione **\_ \_ evento \_ heap ETW** è un evento di traccia di gestione della memoria per un'operazione di allocazione heap.
+**L'evento ETW \_ HEAP EVENT \_ \_ ALLOC** è un evento di traccia di gestione della memoria per un'operazione di allocazione heap.
 
 
 ```C++
@@ -38,14 +38,14 @@ typedef struct ETW_HEAP_EVENT_ALLOC
 *HeapHandle* 
 </dt> <dd>
 
-Handle dell'heap in cui è stata allocata la memoria. Si tratta dell'heap che consente di gestire un'app passata alla funzione [**AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) quando è stata allocata la memoria.
+Handle dell'heap in cui è stata allocata la memoria. Si tratta dell'handle dell'heap passato a un'app alla [**funzione AllocateHeap**](/previous-versions/windows/desktop/legacy/aa374721(v=vs.85)) quando è stata allocata la memoria.
 
 </dd> <dt>
 
 *Dimensioni* 
 </dt> <dd>
 
-Dimensioni in byte allocate dall'heap.
+Dimensione in byte allocata dall'heap.
 
 </dd> <dt>
 
@@ -61,18 +61,18 @@ Indirizzo della memoria allocata.
 
 Origine della memoria utilizzata dall'allocatore per l'allocazione dell'heap.
 
-Nella tabella seguente sono elencati i valori possibili per il parametro di *origine* , come definito nel file di intestazione *ntetw. h* :
+Nella tabella seguente sono elencati i valori possibili per *il parametro Source* come definito nel file di intestazione *ntetw.h:*
 
 
 
 | Valore                                                                                                                                                                                                                                                                               | Significato                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**Memoria \_ di DA \_ LOOKASIDE**</dt> <dt>1</dt> </dl>                                       | Memoria dall'elenco lookaside.<br/>                                   |
-| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**Memoria \_ di DA \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria dall'heap di frammentazione bassa.<br/>                           |
-| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**Memoria \_ di DA \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria dal percorso del codice principale.<br/>                                       |
-| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **Memoria \_ da \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria da percorso lento.<br/>                                            |
-| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**Memoria \_ di DA \_ 5 non valido**</dt> <dt></dt> </dl>                                             | Memoria non valida.<br/>                                        |
-| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**Memoria \_ di Dall' \_ \_ heap del segmento**</dt> <dt>6</dt> </dl>                             | Questo valore è riservato per un utilizzo futuro e non verrà mai restituito.<br/> |
+| <span id="MEMORY_FROM_LOOKASIDE"></span><span id="memory_from_lookaside"></span><dl> <dt>**MEMORY \_ DA \_ LOOKASIDE**</dt> <dt>1</dt> </dl>                                       | Memoria dall'elenco lookaside.<br/>                                   |
+| <span id="MEMORY_FROM_LOWFRAG"></span><span id="memory_from_lowfrag"></span><dl> <dt>**MEMORY \_ FROM \_ LOWFRAG**</dt> <dt>2</dt> </dl>                                             | Memoria dall'heap a bassa frammentazione.<br/>                           |
+| <span id="MEMORY_FROM_MAINPATH"></span><span id="memory_from_mainpath"></span><dl> <dt>**MEMORY \_ FROM \_ MAINPATH**</dt> <dt>3</dt> </dl>                                          | Memoria dal percorso del codice principale.<br/>                                       |
+| <span id="MEMORY_FROM_SLOWPATH____________________"></span><span id="memory_from_slowpath____________________"></span><dl> <dt> **MEMORIA \_ DA \_ SLOWPATH**</dt> <dt>4</dt> </dl> | Memoria da percorso lento.<br/>                                            |
+| <span id="MEMORY_FROM_INVALID"></span><span id="memory_from_invalid"></span><dl> <dt>**MEMORY \_ FROM \_ INVALID**</dt> <dt>5</dt> </dl>                                             | Memoria non valida.<br/>                                        |
+| <span id="MEMORY_FROM_SEGMENT_HEAP"></span><span id="memory_from_segment_heap"></span><dl> <dt>**MEMORY \_ FROM \_ SEGMENT \_ HEAP**</dt> <dt>6</dt> </dl>                             | Questo valore è riservato per un uso futuro e non verrà mai restituito.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Nella tabella seguente sono elencati i valori possibili per il parametro di *ori
 
 ## <a name="remarks"></a>Commenti
 
-L'evento di allocazione **\_ \_ evento \_ heap ETW** viene registrato per tutte le allocazioni di heap.
+**L'evento ETW \_ HEAP EVENT \_ \_ ALLOC** viene registrato in tutte le allocazioni di heap.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,9 +90,9 @@ L'evento di allocazione **\_ \_ evento \_ heap ETW** viene registrato per tutte 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Ntwmi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Ntwmi.h</dt> </dl> |
 
 
 

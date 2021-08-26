@@ -1,7 +1,7 @@
 ---
 description: Segnala una condizione di avviso DVD.
 ms.assetid: d7221e8a-089f-4eaf-a193-548709c14336
-title: EC_DVD_WARNING (Dvdevcode. h)
+title: EC_DVD_WARNING (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 7f25d4565c2afeb4619f7832f6d5742e07dcca0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2f2d604b46a4c4bc2213fe74210defdf408336b69218589ff42209cebe025e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965561"
 ---
-# <a name="ec_dvd_warning"></a>\_avviso di DVD EC \_
+# <a name="ec_dvd_warning"></a>AVVISO \_ DI EC DVD \_
 
 Segnala una condizione di avviso DVD.
 
@@ -31,14 +31,14 @@ Segnala una condizione di avviso DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica la condizione di avviso. Membro del tipo di dati enumerato [**\_ avviso DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_warning) .
+**Valore DWORD** che indica la condizione di avviso. Membro del tipo [**di dati enumerato \_ DVD WARNING.**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_warning)
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Se *pParam1* è uguale a DVD \_ Warning \_ aperto, DVD \_ Warning \_ Seek o DVD \_ Warning \_ Read, *LParam2* contiene l'ultimo codice di errore restituito da **GetLastError**.
+Se *pParam1 è* uguale a DVD WARNING Open, DVD WARNING Seek o DVD WARNING Read, lParam2 contiene l'ultimo codice di errore \_ \_ \_ \_ \_ \_ restituito da **GetLastError**. 
 
 </dd> </dl>
 
@@ -48,7 +48,7 @@ Se *pParam1* è uguale a DVD \_ Warning \_ aperto, DVD \_ Warning \_ Seek o DVD 
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 
