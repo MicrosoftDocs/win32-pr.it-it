@@ -24,7 +24,7 @@ ms.locfileid: "120129051"
 
 La **proprietà FeatureState** è lo stato di installazione della funzionalità per l'istanza di questo prodotto.
 
-Questa proprietà chiama [**MsiQueryFeatureStateEx**](/windows/desktop/api/Msi/nf-msi-msiqueryfeaturestateexa)con *ProductCode*, *UserSid* *e Context* dell'oggetto . L'ID funzionalità viene fornito come parametro.
+Questa proprietà chiama [**MsiQueryFeatureStateEx**](/windows/desktop/api/Msi/nf-msi-msiqueryfeaturestateexa)con *ProductCode,* *UserSid* *e Context* dell'oggetto. L'ID funzionalità viene fornito come parametro.
 
 ## <a name="syntax"></a>Sintassi
 

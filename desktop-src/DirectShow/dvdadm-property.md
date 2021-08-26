@@ -4,12 +4,12 @@ ms.assetid: eb73a851-7118-42f3-be99-1cf356d2e37a
 title: Proprietà DVDAdm
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c3d81742fc6e643d6ee805a76c14d07d45d1924
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5adedea036393e68456cfd9f035882ae9c335063030518e808c57bced6d5b5b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079161"
 ---
 # <a name="dvdadm-property"></a>Proprietà DVDAdm
 
@@ -18,7 +18,7 @@ ms.locfileid: "104124584"
 
  
 
-La `DVDAdm` proprietà fornisce l'accesso all'oggetto [MSDVDAdm](msdvdadm-object.md) che contiene i metodi e le proprietà per il salvataggio delle informazioni sull'applicazione e sull'utente.
+La `DVDAdm` proprietà fornisce l'accesso [all'oggetto MSDVDAdm](msdvdadm-object.md) che contiene metodi e proprietà per il salvataggio delle informazioni sull'applicazione e sull'utente.
 
 ``` syntax
         MSWebDVD.DVDAdm
@@ -26,7 +26,7 @@ La `DVDAdm` proprietà fornisce l'accesso all'oggetto [MSDVDAdm](msdvdadm-object
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è di sola lettura e non prevede alcun valore predefinito. Non è necessario creare un riferimento separato all'oggetto **MSDVDAdm** . Per accedere ai metodi e alle proprietà dell'oggetto, usare la `DVDAdm` proprietà come illustrato nell'esempio seguente.
+Questa proprietà è di sola lettura senza alcun valore predefinito. Non è necessario creare un riferimento separato **all'oggetto MSDVDAdm.** Per accedere ai metodi e alle proprietà dell'oggetto , usare la `DVDAdm` proprietà come illustrato nell'esempio seguente.
 
 ## <a name="examples"></a>Esempi
 

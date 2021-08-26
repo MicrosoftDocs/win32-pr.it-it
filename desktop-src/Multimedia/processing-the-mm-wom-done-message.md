@@ -1,25 +1,25 @@
 ---
-title: Elaborazione del messaggio di MM_WOM_DONE
-description: Elaborazione del \_ messaggio mm WOM \_ done
+title: Elaborazione del MM_WOM_DONE messaggio
+description: Elaborazione del messaggio \_ MM WOM \_ DONE
 ms.assetid: 215167d0-3020-453d-b6b3-cee5803836c9
 keywords:
-- audio Waveform, messaggi
+- audio waveform, messaggi
 - audio ausiliario, messaggi
-- audio Waveform, messaggio MM_WOM_DONE
-- audio ausiliario, messaggio MM_WOM_DONE
-- Messaggio MM_WOM_DONE
+- audio waveform, MM_WOM_DONE messaggio
+- audio ausiliario, MM_WOM_DONE messaggio
+- MM_WOM_DONE messaggio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e909777c115b6b10500e081a08bde6cfe24b00
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c6aca93f23ed74a4a4974633d8345f2e897535e156ccc03f46eb0da92a2d2fdf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037861"
 ---
-# <a name="processing-the-mm_wom_done-message"></a>Elaborazione del \_ messaggio mm WOM \_ done
+# <a name="processing-the-mm_wom_done-message"></a>Elaborazione del messaggio \_ MM WOM \_ DONE
 
-Nell'esempio seguente viene illustrato come elaborare il messaggio [**mm \_ WOM \_ done**](mm-wom-done.md) . In questo esempio si presuppone che l'applicazione non riproduca più blocchi di dati, quindi può chiudere il dispositivo di output dopo la riproduzione di un singolo blocco di dati.
+L'esempio seguente illustra come elaborare il [**messaggio MM \_ WOM \_ DONE.**](mm-wom-done.md) Questo esempio presuppone che l'applicazione non riproduci più blocchi di dati, quindi può chiudere il dispositivo di output dopo la riproduzione di un singolo blocco di dati.
 
 
 ```C++
@@ -47,9 +47,9 @@ switch (msg)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

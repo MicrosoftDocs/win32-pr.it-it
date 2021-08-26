@@ -1,9 +1,9 @@
 ---
 title: Elemento DisallowStartOnRemoteAppSession (settingsType)
-description: Specifica che l'attività non verrà avviata se attivata per l'esecuzione in una sessione di applicazioni remote integrate localmente (RAIL).
+description: Specifica che l'attività non verrà avviata se attivata per l'esecuzione in una sessione REMOTE Applications Integrated Locally (RAIL).
 ms.assetid: 8323d8d9-fb6a-4876-9967-cc2344c77de3
 keywords:
-- Utilità di pianificazione elemento DisallowStartOnRemoteAppSession
+- Elemento DisallowStartOnRemoteAppSession Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11e3d0a367f2385e78cf1ec56231bbf7632fe05b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2f7834ecd57fa10aaaabfa21945f1e908834d535d50f94b4dd21e6ca45c0a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010801"
 ---
 # <a name="disallowstartonremoteappsession-settingstype-element"></a>Elemento DisallowStartOnRemoteAppSession (settingsType)
 
-Specifica che l'attività non verrà avviata se attivata per l'esecuzione in una sessione di applicazioni remote integrate localmente (RAIL).
+Specifica che l'attività non verrà avviata se attivata per l'esecuzione in una sessione REMOTE Applications Integrated Locally (RAIL).
 
 ``` syntax
 <xs:element name="DisallowStartOnRemoteAppSession"
@@ -32,7 +32,7 @@ Specifica che l'attività non verrà avviata se attivata per l'esecuzione in una
  />
 ```
 
-L'elemento **DisallowStartOnRemoteAppSession** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento DisallowStartOnRemoteAppSession** è definito dal [**tipo complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,13 +46,13 @@ L'elemento **DisallowStartOnRemoteAppSession** è definito dal tipo complesso [*
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione predefinita per questo elemento è false.
+L'impostazione predefinita per questo elemento è False.
 
-Per lo sviluppo in C++, queste informazioni sono accessibili tramite la proprietà [**ITaskSettings2::D isallowstartonremoteappsession**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_disallowstartonremoteappsession) .
+Per lo sviluppo C++, queste informazioni sono accessibili tramite la proprietà [**ITaskSettings2::D isallowStartOnRemoteAppSession.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings2-get_disallowstartonremoteappsession)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che non consente l'avvio dell'attività se l'attività viene attivata per l'esecuzione in una sessione BINARIa.
+Il codice XML seguente definisce un elemento settings che non consente l'avvio dell'attività se l'attività viene attivata per l'esecuzione in una sessione RAIL.
 
 
 ```XML
@@ -70,8 +70,8 @@ Nel codice XML seguente viene definito un elemento Settings che non consente l'a
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ Nel codice XML seguente viene definito un elemento Settings che non consente l'a
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione elementi dello schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

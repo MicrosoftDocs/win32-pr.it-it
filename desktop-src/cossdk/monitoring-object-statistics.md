@@ -1,46 +1,46 @@
 ---
-description: È possibile monitorare le statistiche degli oggetti durante l'esecuzione di un'applicazione. In questo modo, è possibile ottimizzare le caratteristiche del pool di oggetti per ottenere il bilanciamento delle prestazioni e delle risorse che si desidera ottenere.
+description: È possibile monitorare le statistiche degli oggetti durante l'esecuzione di un'applicazione. In questo modo, è possibile ottimizzare le caratteristiche del pool di oggetti per ottenere il bilanciamento delle prestazioni e delle risorse desiderate.
 ms.assetid: 57987cc1-8bb5-4bbd-a425-fda2e5a8b597
 title: Monitoraggio delle statistiche degli oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f438bc7081546083f1930fe31f16a2198b09b48
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1e58946953ef1688dcb44223522cc58ccd1195f07ec0173a0b75413fe441195f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070461"
 ---
 # <a name="monitoring-object-statistics"></a>Monitoraggio delle statistiche degli oggetti
 
-È possibile monitorare le statistiche degli oggetti durante l'esecuzione di un'applicazione. In questo modo, è possibile ottimizzare le caratteristiche del pool di oggetti per ottenere il bilanciamento delle prestazioni e delle risorse che si desidera ottenere.
+È possibile monitorare le statistiche degli oggetti durante l'esecuzione di un'applicazione. In questo modo, è possibile ottimizzare le caratteristiche del pool di oggetti per ottenere il bilanciamento delle prestazioni e delle risorse desiderate.
 
-È possibile monitorare lo stato di tutti gli oggetti configurati per supportare le statistiche degli oggetti e la segnalazione degli eventi. L'abilitazione delle statistiche degli oggetti presenta un lieve sovraccarico delle prestazioni.
+È possibile monitorare lo stato per tutti gli oggetti configurati per supportare le statistiche degli oggetti e la creazione di report di eventi. L'abilitazione delle statistiche degli oggetti presenta un leggero sovraccarico delle prestazioni.
 
 **Per abilitare le statistiche degli oggetti**
 
-1.  Nel riquadro dei dettagli dello strumento di amministrazione Servizi componenti fare clic con il pulsante destro del mouse sul componente che si desidera configurare, quindi scegliere **Proprietà**.
+1.  Nel riquadro dei dettagli dello strumento di amministrazione Servizi componenti fare clic con il pulsante destro del mouse sul componente che si desidera configurare e quindi scegliere **Proprietà.**
 
-2.  Nella finestra di dialogo Proprietà componente fare clic sulla scheda **attivazione** .
+2.  Nella finestra di dialogo delle proprietà del componente fare clic **sulla scheda** Attivazione .
 
-3.  Per abilitare le statistiche degli oggetti per il componente, in **contesto di attivazione** selezionare la casella di controllo **componente supporta eventi e statistiche** .
+3.  Per abilitare le statistiche degli oggetti per il componente, in **Contesto di attivazione** selezionare la casella di controllo Componente che supporta **eventi** e statistiche.
 
-**Per monitorare lo stato di un oggetto**
+**Per monitorare lo stato degli oggetti**
 
-1.  Nell'albero della console dello strumento di amministrazione Servizi componenti aprire la cartella per l'applicazione che include i componenti che si desidera monitorare.
+1.  Nell'albero della console dello strumento di amministrazione Servizi componenti aprire la cartella dell'applicazione che include i componenti da monitorare.
 
-2.  Fare clic con il pulsante destro del mouse sulla cartella **componenti** , scegliere **Visualizza** e quindi fare clic su **visualizzazione stato**. Il riquadro dei dettagli Visualizza ora la visualizzazione stato per tutti i componenti dell'applicazione. Nella tabella seguente vengono descritte le sei colonne della vista di stato.
+2.  Fare clic con il pulsante **destro del mouse** sulla cartella Componenti , scegliere **Visualizza**, quindi fare clic su **Visualizzazione stato**. Nel riquadro dei dettagli viene ora visualizzata la visualizzazione dello stato per tutti i componenti dell'applicazione. Nella tabella seguente vengono descritte le sei colonne della visualizzazione stato.
 
     
 
     | Colonna                        | Descrizione                                                                                                                                                                                                                |
     |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **ProgID**<br/>         | Identifica un componente specifico.<br/>                                                                                                                                                                                |
-    | **Oggetti**<br/>        | Mostra il numero di oggetti attualmente conservati dai riferimenti client.<br/>                                                                                                                                       |
+    | **Oggetti**<br/>        | Mostra il numero di oggetti attualmente utilizzati dai riferimenti client.<br/>                                                                                                                                       |
     | **Attivato**<br/>      | Mostra il numero di oggetti attualmente attivati. <br/>                                                                                                                                                      |
-    | **In pool**<br/>         | Mostra il numero totale di oggetti creati dal pool, inclusi gli oggetti in uso e gli oggetti che sono stati disattivati.<br/>                                                                                      |
-    | **Nella chiamata**<br/>        | Identifica gli oggetti nella chiamata.<br/>                                                                                                                                                                                     |
-    | **Tempo di chiamata (MS)**<br/> | Mostra la durata media della chiamata (in millisecondi) di chiamate al metodo effettuate negli ultimi 20 secondi (fino a 20 chiamate). Il tempo di chiamata viene misurato in corrispondenza dell'oggetto e non include il tempo usato per attraversare la rete.<br/> |
+    | **In pool**<br/>         | Mostra il numero totale di oggetti creati dal pool, inclusi gli oggetti in uso e gli oggetti disattivati.<br/>                                                                                      |
+    | **In chiamata**<br/>        | Identifica gli oggetti nella chiamata.<br/>                                                                                                                                                                                     |
+    | **Ora chiamata (ms)**<br/> | Mostra la durata media delle chiamate al metodo (in millisecondi) effettuate negli ultimi 20 secondi (fino a 20 chiamate). Il tempo di chiamata viene misurato in corrispondenza dell'oggetto e non include il tempo usato per attraversare la rete.<br/> |
 
     
 
@@ -50,7 +50,7 @@ ms.locfileid: "104342201"
 
 <dl> <dt>
 
-[Configurazione di un componente da raggruppare](configuring-a-component-to-be-pooled.md)
+[Configurazione di un componente da creare in pool](configuring-a-component-to-be-pooled.md)
 </dt> </dl>
 
  

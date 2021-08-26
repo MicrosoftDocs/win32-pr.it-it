@@ -1,19 +1,19 @@
 ---
-description: Il seguente file di intestazione deve essere incluso sia nel client che negli esempi SSPI del server come SspiExample. h. Dichiara funzioni che gestiscono la comunicazione con il pacchetto di sicurezza.
+description: Il file di intestazione seguente deve essere incluso con gli esempi SSPI del client e del server come SspiExample.h. Dichiara funzioni che gestiscono la comunicazione con il pacchetto di sicurezza.
 ms.assetid: 358c2cd6-674b-4d70-9657-800b0d1b2fe7
-title: File di intestazione per il client e il server SSPI
+title: File di intestazione per client e server SSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75f2702186f7a0a9def4405890f39f588dbbfa84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ba76283b2686ecde8a6e453c5c376f8589a78dccf9e740b381f89fc5ef4db21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101281"
 ---
-# <a name="header-file-for-sspi-client-and-server"></a>File di intestazione per il client e il server SSPI
+# <a name="header-file-for-sspi-client-and-server"></a>File di intestazione per client e server SSPI
 
-Il seguente file di intestazione deve essere incluso sia nel client che negli esempi SSPI del server come SspiExample. h. Dichiara funzioni che gestiscono la comunicazione con il pacchetto di sicurezza.
+Il file di intestazione seguente deve essere incluso con gli esempi SSPI del client e del server come SspiExample.h. Dichiara funzioni che gestiscono la comunicazione con il pacchetto di sicurezza.
 
 
 ```C++

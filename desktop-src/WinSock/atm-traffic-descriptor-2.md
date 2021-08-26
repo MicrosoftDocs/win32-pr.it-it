@@ -1,7 +1,7 @@
 ---
-description: In questa sezione viene elencato il descrittore del traffico ATM.
+description: Questa sezione elenca il descrittore del traffico del bancomat.
 ms.assetid: 8d15af95-2003-416e-b3b0-a9201972a899
-title: Descrittore del traffico ATM
+title: Descrittore del traffico atm
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 18cd4ec218f8f3a6719bb71a1eb2d6ef11179ca44878641aaf25906e6eae1dc6
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120097921"
 ---
-# <a name="atm-traffic-descriptor"></a>Descrittore del traffico ATM
+# <a name="atm-traffic-descriptor"></a>Descrittore del traffico atm
 
-In questa sezione viene elencato il descrittore del traffico ATM.
+Questa sezione elenca il descrittore del traffico del bancomat.
 
 ``` syntax
 typedef struct {

@@ -1,9 +1,9 @@
 ---
 title: Elemento EndBoundary (triggerBaseType)
-description: Specifica la data e l'ora di disattivazione del trigger. Il trigger non può avviare l'attività dopo che è stata disattivata.
+description: Specifica la data e l'ora di disattivazione del trigger. Il trigger non può avviare l'attività dopo la disattivazione.
 ms.assetid: 84731c0b-3fb8-44dd-be1a-67547add1f9e
 keywords:
-- Utilità di pianificazione elemento EndBoundary
+- Elemento EndBoundary Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d687655498301595c1ab888fcc179ec0694f0aef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8e26eb05b7b9fa15c0667fff7fd0d1eb85e61ed2daa90d6a238cbf9575f6c0e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010741"
 ---
 # <a name="endboundary-triggerbasetype-element"></a>Elemento EndBoundary (triggerBaseType)
 
-Specifica la data e l'ora di disattivazione del trigger. Il trigger non può avviare l'attività dopo che è stata disattivata.
+Specifica la data e l'ora di disattivazione del trigger. Il trigger non può avviare l'attività dopo la disattivazione.
 
 ``` syntax
 <xs:element name="EndBoundary"
@@ -30,7 +30,7 @@ Specifica la data e l'ora di disattivazione del trigger. Il trigger non può avv
  />
 ```
 
-L'elemento **EndBoundary** è definito dal tipo complesso [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) .
+**L'elemento EndBoundary** è definito dal tipo complesso [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -38,25 +38,25 @@ L'elemento **EndBoundary** è definito dal tipo complesso [**triggerBaseType**](
 
 | Elemento                                                                                     | Derivato da                                                                               | Descrizione                                                                                  |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                 | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando viene avviato il sistema.<br/>                 |
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Specifica un trigger giornaliero, settimanale, mensile o mensile (DOW) per il giorno della settimana.<br/>   |
+| [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                 | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività all'avvio del sistema.<br/>                 |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Specifica un trigger giornaliero, settimanale, mensile o mensile.<br/>   |
 | [**EventTrigger**](taskschedulerschema-eventtrigger-triggergroup-element.md)               | [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando si verifica un evento di sistema.<br/>                |
-| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il computer entra in uno stato di inattività.<br/> |
-| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando un utente esegue l'accesso.<br/>                       |
-| [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando l'attività è registrata.<br/>               |
-| [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md)                 | [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando viene attivato il trigger.<br/>             |
+| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il computer passa a uno stato di inattività.<br/> |
+| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Specifica un trigger che avvia un'attività quando un utente accede.<br/>                       |
+| [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando l'attività viene registrata.<br/>               |
+| [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md)                 | [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)                 | Specifica un trigger che avvia un'attività quando il trigger viene attivato.<br/>             |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il limite finale viene specificato utilizzando la proprietà [**trigger. EndBoundary**](trigger-endboundary.md) ereditata dagli oggetti trigger all.
+Per lo sviluppo di script, il limite finale viene specificato usando la [**proprietà Trigger.EndBoundary**](trigger-endboundary.md) ereditata da tutti gli oggetti trigger.
 
-Per lo sviluppo in C++, il limite finale viene specificato usando la proprietà [**ITrigger:: EndBoundary**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_endboundary) ereditata dalle interfacce di trigger all.
+Per lo sviluppo C++, il limite finale viene specificato usando la proprietà [**ITrigger::EndBoundary**](/windows/desktop/api/taskschd/nf-taskschd-itrigger-get_endboundary) ereditata da tutte le interfacce trigger.
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un elemento trigger di avvio che definisce un limite finale del 1 gennaio 2007:8:00 AM.
+Il codice XML seguente definisce un elemento trigger di avvio che definisce un limite finale del 1° gennaio 2007: 8:00 AM.
 
 
 ```XML
@@ -78,8 +78,8 @@ Il codice XML seguente definisce un elemento trigger di avvio che definisce un l
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -87,7 +87,7 @@ Il codice XML seguente definisce un elemento trigger di avvio che definisce un l
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

@@ -1,55 +1,55 @@
 ---
-description: Il metodo consigliato per creare una nuova classe di base WMI per un provider WMI è in un file di Managed Object Format (MOF).
+description: Il modo consigliato per creare una nuova classe di base WMI per un provider WMI è in un file mof (Managed Object Format).
 ms.assetid: d46060aa-77c3-4f51-b4a7-2c3612f2bc5c
 ms.tgt_platform: multiple
 title: Creazione di una classe di base WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdcbe6995a7782d854a4d0950db841f23a30b45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4780279f00eea403b330400c490da75adfa097406796cd0b14f15f9861411bfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071511"
 ---
 # <a name="creating-a-wmi-base-class"></a>Creazione di una classe di base WMI
 
-Il metodo consigliato per creare una nuova classe di base WMI per un provider WMI è in un file di Managed Object Format (MOF). È inoltre possibile creare una classe di base utilizzando l' [API com per WMI](com-api-for-wmi.md). Sebbene sia possibile creare una classe base o derivata nello script, senza che un provider fornisca dati alla classe e alle relative sottoclassi, la classe non è utile.
+Il modo consigliato per creare una nuova classe di base WMI per un provider WMI è in un file mof (Managed Object Format). È anche possibile creare una classe di base usando [l'API COM per WMI.](com-api-for-wmi.md) Sebbene sia possibile creare una classe di base o derivata nello script, senza che un provider fornissi dati alla classe e alle relative sottoclassi, la classe non è utile.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
--   [Creazione di una classe di base utilizzando MOF](#creating-a-base-class-using-mof)
+-   [Creazione di una classe di base tramite MOF](#creating-a-base-class-using-mof)
 -   [Creazione di una classe base con C++](#creating-a-base-class-with-c)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="creating-a-base-class-using-mof"></a>Creazione di una classe di base utilizzando MOF
+## <a name="creating-a-base-class-using-mof"></a>Creazione di una classe di base tramite MOF
 
-Le classi WMI si basano in genere sull'ereditarietà. Prima di creare una classe di base, controllare le classi Common Information Model (CIM) disponibili da Distributed Management Task Force ([DMTF](https://www.dmtf.org/)).
+Le classi WMI in genere si basano sull'ereditarietà. Prima di creare una classe di base, controllare le classi Common Information Model (CIM) disponibili dalla Distributed Management Task Force[(DMTF).](https://www.dmtf.org/)
 
-Se molte classi derivate utilizzeranno le stesse proprietà, inserire queste proprietà e questi metodi nella classe di base. Il numero massimo di proprietà che è possibile definire in una classe WMI è 1024.
+Se molte classi derivate useranno le stesse proprietà, inserire queste proprietà e metodi nella classe di base. Il numero massimo di proprietà che è possibile definire in una classe WMI è 1024.
 
-Quando si crea una classe base, osservare l'elenco seguente di linee guida per i nomi delle classi:
+Quando si crea una classe di base, osservare l'elenco seguente di linee guida per i nomi delle classi:
 
--   Usare lettere maiuscole e minuscole.
--   Inizia un nome di classe con una lettera.
--   Non usare un carattere di sottolineatura iniziali o finali.
+-   Usare sia lettere maiuscole che minuscole.
+-   Iniziare un nome di classe con una lettera.
+-   Non usare un carattere di sottolineatura iniziale o finale.
 -   Definire tutti i caratteri rimanenti come lettere, cifre o caratteri di sottolineatura.
 -   Usare una convenzione di denominazione coerente.
 
-    Sebbene non sia necessario, una convenzione di denominazione corretta per una classe è due componenti Uniti da un carattere di sottolineatura. Quando possibile, un nome di fornitore deve costituire la prima metà del nome e un nome di classe descrittivo deve essere la seconda parte.
+    Anche se non è necessario, una buona convenzione di denominazione per una classe è due componenti uniti da un carattere di sottolineatura. Quando possibile, il nome di un fornitore deve essere la prima metà del nome e un nome di classe descrittivo deve essere la seconda parte.
 
 > [!Note]  
-> Non è possibile modificare le classi durante l'esecuzione dei provider. È necessario arrestare l'attività, modificare la classe e quindi riavviare il servizio di gestione Windows. Il rilevamento di una modifica di classe non è attualmente possibile.
+> Le classi non possono essere modificate durante l'esecuzione dei provider. È necessario arrestare l'attività, modificare la classe e quindi riavviare il Windows Management. Non è attualmente possibile rilevare una modifica della classe.
 
  
 
-In MOF creare una classe base chiamandola con la parola chiave **Class** , ma non indicando una classe padre.
+In MOF creare una classe di base denominarla con la parola chiave **class,** ma non indicando una classe padre.
 
-**Per creare una classe di base utilizzando il codice MOF**
+**Per creare una classe di base usando il codice MOF**
 
-1.  Usare la parola chiave **Class** con il nome della nuova classe, seguita da una coppia di parentesi graffe e da un punto e virgola. Aggiungere le proprietà e i metodi per la classe tra parentesi graffe. Viene fornito l'esempio di codice seguente.
+1.  Usare la parola chiave **class** con il nome della nuova classe, seguita da una coppia di parentesi graffe e un punto e virgola. Aggiungere proprietà e metodi per la classe tra le parentesi graffe. Viene fornito l'esempio di codice seguente.
 
-    Nell'esempio di codice riportato di seguito viene illustrato come definire una classe di base.
+    Nell'esempio di codice seguente viene illustrato come definire una classe di base.
 
     ``` syntax
     class MyClass_BaseDisk
@@ -65,9 +65,9 @@ In MOF creare una classe base chiamandola con la parola chiave **Class** , ma no
     };
     ```
 
-2.  Aggiungere i [*qualificatori*](gloss-q.md) di classe prima della parola chiave Class per modificare la modalità di utilizzo della classe. Posizionare i qualificatori tra parentesi quadre. Per ulteriori informazioni sui qualificatori per la modifica delle classi, vedere [qualificatori WMI](wmi-qualifiers.md). Utilizzare il qualificatore **astratto** per indicare che non è possibile creare direttamente un'istanza di questa classe. Le classi astratte vengono spesso usate per definire le proprietà o i metodi che verranno usati da diverse classi derivate. Per ulteriori informazioni, vedere [creazione di una classe derivata](creating-a-derived-class.md).
+2.  Aggiungere eventuali qualificatori [*di classe*](gloss-q.md) prima della parola chiave class per modificare il modo in cui viene usata la classe. Posizionare i qualificatori tra parentesi quadre. Per altre informazioni sui qualificatori per la modifica delle classi, vedere [Qualificatori WMI](wmi-qualifiers.md). Usare il **qualificatore Abstract** per indicare che non è possibile creare direttamente un'istanza di questa classe. Le classi astratte vengono spesso usate per definire proprietà o metodi che verranno usati da diverse classi derivate. Per altre informazioni, vedere [Creazione di una classe derivata](creating-a-derived-class.md).
 
-    Nell'esempio di codice seguente viene definita la classe come astratta e viene definito il provider che fornirà i dati. La versione del qualificatore **ToClass** indica che le informazioni [*nel qualificatore*](gloss-f.md) del **provider** sono ereditate dalle classi derivate.
+    Nell'esempio di codice seguente la classe viene definita come astratta e viene definito il provider che fornirà i dati. Il **qualificatore ToSubClass** [*indica*](gloss-f.md) che le informazioni nel qualificatore **Provider** vengono ereditate dalle classi derivate.
 
     ``` syntax
     [Abstract, Provider("MyProvider") : ToSubClass]
@@ -76,9 +76,9 @@ In MOF creare una classe base chiamandola con la parola chiave **Class** , ma no
     };
     ```
 
-3.  Aggiungere le proprietà e i metodi della classe all'interno di parentesi quadre prima del nome della proprietà o del metodo. Per ulteriori informazioni, vedere [aggiunta di una proprietà](adding-a-property.md) e [creazione di un metodo](creating-a-method.md). È possibile modificare queste proprietà e metodi usando i qualificatori MOF. Per ulteriori informazioni, vedere [aggiunta di un qualificatore](adding-a-qualifier.md).
+3.  Aggiungere le proprietà e i metodi per la classe tra parentesi quadre prima del nome della proprietà o del metodo. Per altre informazioni, vedere [Aggiunta di una proprietà e](adding-a-property.md) Creazione di un [metodo](creating-a-method.md). È possibile modificare queste proprietà e metodi usando qualificatori MOF. Per altre informazioni, vedere [Aggiunta di un qualificatore](adding-a-qualifier.md).
 
-    Nell'esempio di codice riportato di seguito viene illustrato come modificare proprietà e metodi con qualificatori MOF.
+    Nell'esempio di codice seguente viene illustrato come modificare proprietà e metodi con qualificatori MOF.
 
     ``` syntax
     [read : ToSubClass, key : ToSubClass ] string DeviceID;
@@ -86,14 +86,14 @@ In MOF creare una classe base chiamandola con la parola chiave **Class** , ma no
       [read : ToSubclass, write : ToSubClass] uint64 LimitUsers;
     ```
 
-4.  Salvare il file MOF con estensione MOF.
+4.  Salvare il file MOF con estensione mof.
 5.  Registrare la classe con WMI eseguendo [**Mofcomp.exe**](mofcomp.md) sul file.
 
-    **mofcomp.exe** *newmof. mof*
+    **mofcomp.exe** *newmof.mof*
 
-    Se non si usa l'opzione **-N** o lo \# [**spazio dei nomi pragma**](pragma-namespace.md) del comando per il preprocessore per specificare uno spazio dei nomi, le classi MOF compilate verranno archiviate nello \\ spazio dei nomi predefinito radice nel repository. Per ulteriori informazioni, vedere [**mofcomp**](mofcomp.md).
+    Se non si usa l'opzione **-N** o lo spazio dei nomi pragma del comando del preprocessore per specificare uno spazio dei nomi, le classi MOF compilate verranno archiviate nello spazio dei nomi predefinito radice \# [](pragma-namespace.md) \\ nel repository. Per altre informazioni, vedere [**mofcomp**](mofcomp.md).
 
-Nell'esempio di codice seguente vengono combinati gli esempi di codice MOF descritti nella procedura precedente e viene illustrato come creare una classe di base nello \\ spazio dei nomi CIMV2 radice utilizzando MOF.
+Nell'esempio di codice seguente vengono combinati gli esempi di codice MOF illustrati nella procedura precedente e viene illustrato come creare una classe di base nello spazio dei nomi \\ cimv2 radice usando MOF.
 
 ``` syntax
 #pragma namespace("\\\\.\\Root\\cimv2")
@@ -107,18 +107,18 @@ class MyClass_BaseDisk
 };
 ```
 
-Per ulteriori informazioni, vedere [creazione di una classe derivata](creating-a-derived-class.md) per un esempio di classe dinamica derivata da questa classe di base.
+Per altre informazioni, vedere [Creazione di una classe derivata](creating-a-derived-class.md) per un esempio di classe dinamica derivata da questa classe di base.
 
 ## <a name="creating-a-base-class-with-c"></a>Creazione di una classe base con C++
 
-La creazione di una classe di base tramite l'API WMI è principalmente una serie di comandi put che definiscono la classe e registrano la classe con WMI. Lo scopo principale di questa API è quello di consentire alle applicazioni client di creare classi di base. Tuttavia, è anche possibile fare in modo che un provider usi questa API per creare una classe di base. Se, ad esempio, si ritiene che il codice MOF per il provider non verrà installato correttamente, è possibile indicare al provider di creare automaticamente le classi corrette nel repository WMI. Per ulteriori informazioni sui provider, vedere [scrittura di un provider di classi](writing-a-class-provider.md).
+La creazione di una classe di base tramite l'API WMI è principalmente una serie di comandi Put che definiscono la classe e registrano la classe con WMI. Lo scopo principale di questa API è consentire alle applicazioni client di creare classi di base. Tuttavia, è anche possibile fare in modo che un provider usi questa API per creare una classe di base. Ad esempio, se si ritiene che il codice MOF per il provider non verrà installato correttamente, è possibile indicare al provider di creare automaticamente le classi corrette nel repository WMI. Per altre informazioni sui provider, vedere [Scrittura di un provider di classi](writing-a-class-provider.md).
 
 > [!Note]  
-> Non è possibile modificare le classi durante l'esecuzione dei provider. È necessario arrestare l'attività, modificare la classe e quindi riavviare il servizio di gestione Windows. Il rilevamento di una modifica di classe non è attualmente possibile.
+> Le classi non possono essere modificate durante l'esecuzione dei provider. È necessario arrestare l'attività, modificare la classe e quindi riavviare il Windows Management. Non è attualmente possibile rilevare una modifica della classe.
 
  
 
-Il codice richiede che il riferimento seguente venga compilato correttamente.
+Per la corretta compilazione del codice è necessario il riferimento seguente.
 
 
 ```C++
@@ -127,11 +127,11 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
 
 
-È possibile creare una nuova classe di base a livello di codice usando l' [API com per WMI](com-api-for-wmi.md).
+È possibile creare una nuova classe base a livello di codice usando [l'API COM per WMI.](com-api-for-wmi.md)
 
-**Per creare una nuova classe base con l'API WMI**
+**Per creare una nuova classe di base con l'API WMI**
 
-1.  Recuperare una definizione per la nuova classe chiamando il metodo [**IWbemServices:: GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) con il parametro *strObjectPath* impostato su un valore **null** .
+1.  Recuperare una definizione per la nuova classe chiamando il [**metodo IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) con il *parametro strObjectPath* impostato su un **valore Null.**
 
     Nell'esempio di codice seguente viene illustrato come recuperare una definizione per una nuova classe.
 
@@ -145,9 +145,9 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-2.  Definire un nome per la classe impostando la proprietà di sistema della **\_ \_ classe** con una chiamata al metodo [**IWbemClassObject::P UT**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put) .
+2.  Stabilire un nome per la classe impostando la proprietà di sistema **\_ \_ CLASS** con una chiamata al metodo [**IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
 
-    Nell'esempio di codice seguente viene illustrato come assegnare un nome alla classe impostando la proprietà di sistema della **\_ \_ classe** .
+    Nell'esempio di codice seguente viene illustrato come assegnare un nome alla classe impostando la proprietà di sistema **\_ \_ CLASS.**
 
     ```C++
     VARIANT v;
@@ -163,9 +163,9 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-3.  Creare la proprietà o le proprietà chiave chiamando [**IWbemClassObject::P UT**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
+3.  Creare la proprietà o le proprietà della chiave chiamando [**IWbemClassObject::P ut**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
 
-    Nell'esempio di codice riportato di seguito viene illustrato come creare la proprietà [**index**](swbemrefreshableitem-index.md) , etichettata come proprietà chiave nel passaggio 4.
+    Nell'esempio di codice seguente viene descritto come creare la [**proprietà Index,**](swbemrefreshableitem-index.md) etichettata come proprietà chiave nel passaggio 4.
 
     ```C++
       BSTR KeyProp = SysAllocString(L"Index");
@@ -174,9 +174,9 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-4.  Alleghi il qualificatore standard della [**chiave**](standard-qualifiers.md) alla proprietà chiave chiamando prima il metodo [**IWbemClassObject:: GetPropertyQualifierSet**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getpropertyqualifierset) e quindi il metodo [**IWbemQualifierSet::P UT**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-put) .
+4.  Collegare il qualificatore standard [**Key**](standard-qualifiers.md) alla proprietà key chiamando prima il metodo [**IWbemClassObject::GetPropertyQualifierSet**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-getpropertyqualifierset) e quindi il metodo [**IWbemQualifierSet::P ut.**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemqualifierset-put)
 
-    Nell'esempio di codice seguente viene illustrato come aggiungere il qualificatore standard della [**chiave**](standard-qualifiers.md) alla proprietà della chiave.
+    Nell'esempio di codice seguente viene illustrato come associare il [**qualificatore**](standard-qualifiers.md) standard Key alla proprietà key.
 
     ```C++
       IWbemQualifierSet *pQual = 0;
@@ -197,7 +197,7 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-5.  Creare altre proprietà della classe con [**IWbemClassObject::P UT**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
+5.  Creare altre proprietà della classe con [**IWbemClassObject::P ut**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
 
     Nell'esempio di codice seguente viene descritto come creare proprietà aggiuntive.
 
@@ -216,11 +216,11 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-6.  Registrare la nuova classe chiamando [**IWbemServices::P utclass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
+6.  Registrare la nuova classe chiamando [**IWbemServices::P utClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
 
-    Poiché non è possibile definire chiavi e indici dopo la registrazione di una nuova classe, verificare di aver definito tutte le proprietà prima di chiamare [**PutClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
+    Poiché non è possibile definire chiavi e indici dopo aver registrato una nuova classe, assicurarsi di aver definito tutte le proprietà prima di chiamare [**PutClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
 
-    Nell'esempio di codice seguente viene illustrato come registrare una nuova classe.
+    Nell'esempio di codice seguente viene descritto come registrare una nuova classe .
 
     ```C++
       hRes = pSvc->PutClass(pNewClass, 0, pCtx, &pResult);
@@ -229,7 +229,7 @@ Il codice richiede che il riferimento seguente venga compilato correttamente.
 
     
 
-Nell'esempio di codice seguente vengono combinati gli esempi di codice illustrati nella procedura precedente e viene illustrato come creare una classe di base utilizzando l'API WMI.
+Nell'esempio di codice seguente vengono combinati gli esempi di codice illustrati nella procedura precedente e viene illustrato come creare una classe di base usando l'API WMI.
 
 
 ```C++

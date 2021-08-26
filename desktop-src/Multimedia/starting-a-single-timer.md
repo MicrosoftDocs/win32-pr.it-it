@@ -7,26 +7,26 @@ keywords:
 - timer, eventi
 - timer multimediali, eventi di avvio
 - timer, eventi di avvio
-- Funzione timeSetEvent (funzione)
+- Funzione timeSetEvent
 - avvio di eventi timer
-- eventi timer singolo
+- eventi timer singoli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c9d0024e3dfa9b0bda79f209abd9b81e89ad11c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7dc3a4c69aefe8df3310c8ff974ef7592b435eabccd661bdbeb1ebbf85dc3c9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037171"
 ---
 # <a name="starting-a-single-timer-event"></a>Avvio di un singolo evento timer
 
 > [!Note]  
-> In questo argomento viene descritta una funzione obsoleta. Per creare i timer, le nuove applicazioni devono usare la funzione [**CreateTimerQueueTimer ha provocato**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) .
+> In questo argomento viene descritta una funzione obsoleta. Le nuove applicazioni devono usare [**la funzione CreateTimerQueueTimer**](/windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) per creare timer.
 
- 
+ 
 
-Per avviare un singolo evento del timer, chiamare la funzione [**funzione timeSetEvent**](/previous-versions//dd757634(v=vs.85)) , specificando la quantità di tempo prima che si verifichi il callback, la risoluzione, l'indirizzo della funzione di callback (vedere [**TimeProc**](/previous-versions//dd757631(v=vs.85))) e i dati utente da fornire con la funzione di callback. Un'applicazione può utilizzare una funzione come la seguente per avviare un singolo evento del timer.
+Per avviare un singolo evento timer, chiamare la funzione [**timeSetEvent,**](/previous-versions//dd757634(v=vs.85)) specificando l'intervallo di tempo prima che si verifichi il callback, la risoluzione, l'indirizzo della funzione di callback (vedere [**TimeProc**](/previous-versions//dd757631(v=vs.85))) e i dati utente da fornire con la funzione di callback. Un'applicazione può usare una funzione simile alla seguente per avviare un singolo evento timer.
 
 
 ```C++
@@ -49,7 +49,7 @@ UINT SetTimerCallback(NPSEQ npSeq,  // sequencer data
 
 
 
-Per un esempio della funzione di callback OneShotCallback, vedere [scrittura di una funzione di callback del timer](writing-a-timer-callback-function.md).
+Per un esempio della funzione di callback OneShotCallback, vedere [Scrittura di una funzione di callback del timer.](writing-a-timer-callback-function.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -58,6 +58,6 @@ Per un esempio della funzione di callback OneShotCallback, vedere [scrittura di 
 [Uso di timer multimediali](using-multimedia-timers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

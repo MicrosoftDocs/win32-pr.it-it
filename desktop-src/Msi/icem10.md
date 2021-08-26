@@ -53,7 +53,7 @@ La procedura seguente illustra come correggere gli errori.
 
 **Per correggere gli errori**
 
-1.  Rimuovere la proprietà '[**Manufacturer**](manufacturer.md)' dalla tabella [delle proprietà](property-table.md).
+1.  Rimuovere la [**proprietà ' Manufacturer**](manufacturer.md)' dalla tabella delle [proprietà](property-table.md).
 2.  Rimuovere la proprietà '[**ProductLanguage**](productlanguage.md)' dalla [tabella delle proprietà](property-table.md).
 
 ## <a name="table-used-during-execution"></a>Tabella usata durante l'esecuzione

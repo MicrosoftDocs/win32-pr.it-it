@@ -1,11 +1,11 @@
 ---
-title: Proprietà IWMPNetwork receptionQuality
-description: La proprietà receptionQuality ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
+title: Proprietà IWMPNetwork ricetturaQuality
+description: La proprietà ricettàQuality ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
 ms.assetid: 103e6b8f-e029-4f53-93ac-b516896a7594
 keywords:
-- proprietà receptionQuality Windows Media Player
-- proprietà receptionQuality Windows Media Player , interfaccia IWMPNetwork
-- Interfaccia IWMPNetwork Windows Media Player , proprietà receptionQuality
+- Proprietà Windows Media Player
+- Proprietà di tipo Windows Media Player, interfaccia IWMPNetwork
+- Interfaccia IWMPNetwork Windows Media Player proprietà , ricezioneQuality
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120098721"
 ---
-# <a name="iwmpnetworkreceptionquality-property"></a>Proprietà IWMPNetwork::receptionQuality
+# <a name="iwmpnetworkreceptionquality-property"></a>Proprietà IWMPNetwork::ricetturaQuality
 
-La **proprietà receptionQuality** ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
+La **proprietà ricettàQuality** ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,19 +46,19 @@ Public ReadOnly Property receptionQuality As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-Oggetto **System.Int32** che rappresenta la qualità della ricezione.
+**System.Int32** che rappresenta la qualità della ricezione.
 
 ## <a name="remarks"></a>Commenti
 
-Il numero di pacchetti ricevuti, persi e recuperati durante lo streaming viene monitorato una volta al secondo. La **proprietà receptionQuality** ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
+Il numero di pacchetti ricevuti, persi e recuperati durante lo streaming viene monitorato una volta al secondo. La **proprietà ricettàQuality** ottiene la percentuale di pacchetti non persi negli ultimi 30 secondi.
 
 Ogni volta che la riproduzione viene arrestata e riavviata, questa proprietà viene reimpostata su zero. Il valore non viene reimpostato se la riproduzione è sospesa.
 
-Questa proprietà ottiene informazioni valide solo in fase di esecuzione quando l'URL per la riproduzione viene impostato tramite la **proprietà AxWindowsMediaPlayer.URL.**
+Questa proprietà ottiene informazioni valide solo in fase di esecuzione quando l'URL per la riproduzione viene impostato usando la **proprietà AxWindowsMediaPlayer.URL.**
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente **usa receptionQuality** per visualizzare la percentuale di pacchetti ricevuti in un'etichetta, in risposta all'evento **PlayStateChange.** Nell'esempio viene utilizzato un timer con un intervallo di 1 secondo per aggiornare la visualizzazione. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
+L'esempio seguente **usa ricettàQuality** per visualizzare la percentuale di pacchetti ricevuti in un'etichetta, in risposta all'evento **PlayStateChange.** L'esempio usa un timer con un intervallo di 1 secondo per aggiornare la visualizzazione. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp

@@ -1,7 +1,7 @@
 ---
-description: Il metodo setavolozza installa una tavolozza per la finestra. Questo metodo non presenta parametri.
+description: Il metodo SetPalette installa un riquadro per la finestra. Questo metodo non presenta parametri.
 ms.assetid: 86eb34c6-85ff-4a40-8085-ea55dbc2727e
-title: Metodo CBaseWindow. setavolozze (Winutil. h)-nessun parametro
+title: Metodo CBaseWindow.SetPalette (Winutil.h) - Nessun parametro
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1203b6aeedd39eb82d7188c4e5d5503b01d167fe
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f15df65f6e427e467c14654a0e2745b84d774a5226b9a526193fc546261c5a0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104235234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052151"
 ---
-# <a name="cbasewindowsetpalette-method-winutilh---no-parameters"></a>Metodo CBaseWindow. setavolozze (Winutil. h)-nessun parametro
+# <a name="cbasewindowsetpalette-method-winutilh---no-parameters"></a>Metodo CBaseWindow.SetPalette (Winutil.h) - Nessun parametro
 
-Il `SetPalette` metodo installa una tavolozza per la finestra.
+Il `SetPalette` metodo installa un riquadro per la finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                    |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | Una chiamata interna a **GDIFlush** ha restituito un errore.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                                            |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Una chiamata interna a **GdiFlush ha** restituito un errore.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                                            |
 
 
 
@@ -57,18 +57,18 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Viene selezionata la tavolozza fornita dalla variabile membro [**CBaseWindow:: m \_ hPalette**](cbasewindow-m-hpalette.md) . Il chiamante deve garantire la validità di **m \_ hPalette**.
+La tavolozza specificata dalla variabile membro [**CBaseWindow::m \_ hPalette**](cbasewindow-m-hpalette.md) è selezionata. Il chiamante deve garantire la validità di **m \_ hPalette**.
 
-Se il valore della variabile membro [**\_ BNoRealize di CBaseWindow:: m**](cbasewindow-m-bnorealize.md) è **false** (impostazione predefinita), questo metodo seleziona la tavolozza e la realizza. In caso contrario, seleziona la tavolozza, ma non la realizza. L'oggetto non elimina le tavolozze precedenti utilizzate. Il chiamante è responsabile dell'eliminazione delle tavolozze.
+Se il valore della variabile membro [**CBaseWindow::m \_ bNoRealize**](cbasewindow-m-bnorealize.md) è **FALSE** (impostazione predefinita), questo metodo seleziona il riquadro e lo realizza. In caso contrario, seleziona il riquadro, ma non se ne rende conto. L'oggetto non elimina alcun riquadro precedente in uso. Il chiamante è responsabile dell'eliminazione dei tavolozze.
 
-Qualsiasi thread può chiamare in modo sicuro questo metodo, non solo il thread proprietario della finestra. La finestra Invia un messaggio privato a se stesso, che attiva una chiamata al metodo [**CBaseWindow:: OnPaletteChange**](cbasewindow-onpalettechange.md) .
+Qualsiasi thread può chiamare in modo sicuro questo metodo, non solo il thread proprietario della finestra. La finestra invia un messaggio privato a se stesso, che attiva una chiamata al metodo [**CBaseWindow::OnPaletteChange.**](cbasewindow-onpalettechange.md)
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-|-|
-| Intestazione | WinUtil. h (include Streams. h) |
-| Libreria| Strmbase. lib (compilazioni finali); Strmbasd. lib (build di debug) |
+| Intestazione | Winutil.h (include Flussi.h) |
+| Libreria| Strmbase.lib (build di vendita al dettaglio); Strmbasd.lib (build di debug) |
 
 ## <a name="see-also"></a>Vedi anche
 

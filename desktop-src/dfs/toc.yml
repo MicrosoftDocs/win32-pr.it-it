@@ -1,13 +1,13 @@
 - name: file system distribuito
   href: distributed-file-system.md
   items:
-    - name: funzioni file system distribuito (DFS)
+    - name: file system distribuito (DFS)
       href: distributed-file-system-dfs-functions.md
     - name: Funzioni di sicurezza
       href: security-functions.md
-    - name: Definizione della priorità di destinazione del server DFS
+    - name: Definizione delle priorità di destinazione del server DFS
       href: dfs-server-target-prioritization.md
-    - name: file system distribuito riferimento
+    - name: file system distribuito informazioni di riferimento
       href: distributed-file-system-reference.md
       items:
         - name: file system distribuito di controllo
@@ -15,14 +15,14 @@
           items:
             - name: FSCTL_DFS_GET_PKT_ENTRY_STATE
               href: fsctl-dfs-get-pkt-entry-state.md
-        - name: file system distribuito enumerazioni
+        - name: enumerazioni file system distribuito
           href: distributed-file-system-enumeration-types.md
           items:
             - name: DFS_NAMESPACE_VERSION_ORIGIN
               href: /windows/desktop/api/lmdfs/ne-lmdfs-dfs_namespace_version_origin
             - name: DFS_TARGET_PRIORITY_CLASS
               href: /windows/win32/api/lmdfs/ne-lmdfs-dfs_target_priority_class~r1
-        - name: file system distribuito funzioni
+        - name: File system distribuito funzioni
           href: distributed-file-system-functions.md
           items:
             - name: Funzione NetDfsAdd

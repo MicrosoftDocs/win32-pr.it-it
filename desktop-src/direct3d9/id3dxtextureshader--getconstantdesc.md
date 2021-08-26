@@ -56,7 +56,7 @@ Identificatore univoco di una costante. Vedere [D3DXHANDLE](d3dxfx.md).
 
 Tipo: **[ **D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)\***
 
-Restituisce un puntatore a una matrice di descrizioni. Vedere [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md).
+Restituisce un puntatore a una matrice di descrizioni. Vedere [**D3DXCONSTANT \_ DESC.**](d3dxconstant-desc.md)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Restituisce un puntatore a una matrice di descrizioni. Vedere [**D3DXCONSTANT \_
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-L'input fornito deve essere la dimensione massima della matrice. L'output è il numero di elementi che vengono compilati nella matrice quando la funzione restituisce .
+L'input fornito deve essere la dimensione massima della matrice. L'output è il numero di elementi che vengono compilati nella matrice quando la funzione restituisce un risultato.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-I campionatori possono essere visualizzati più volte in una tabella costante, pertanto questo metodo può restituire una matrice di descrizioni ognuna con un indice di registro diverso.
+I campionatori possono essere visualizzati più di una volta in una tabella costante, pertanto questo metodo può restituire una matrice di descrizioni, ognuna con un indice di registro diverso.
 
 ## <a name="requirements"></a>Requisiti
 

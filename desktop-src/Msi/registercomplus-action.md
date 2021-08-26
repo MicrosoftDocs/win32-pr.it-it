@@ -4,20 +4,20 @@ ms.assetid: e42bb993-7079-4d5b-bb2e-c958e99e705e
 title: Azione RegisterComPlus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb824d67e776a99f8cd05c56f73f171f436c71d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 046d1f40293888d3a1be48a3c55fd5082b6073828c8d5cc7d34c464556986d4f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082641"
 ---
 # <a name="registercomplus-action"></a>Azione RegisterComPlus
 
 L'azione RegisterComPlus registra le applicazioni COM+.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
-L'azione RegisterComPlus deve seguire l'azione [InstallFiles](installfiles-action.md) e l'azione [UnregisterComPlus](unregistercomplus-action.md).
+L'azione RegisterComPlus deve seguire [l'azione InstallFiles](installfiles-action.md) e [l'azione UnregisterComPlus](unregistercomplus-action.md).
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
@@ -35,13 +35,13 @@ L'azione RegisterComPlus deve seguire l'azione [InstallFiles](installfiles-actio
 
 <dl> <dt>
 
-[Tabella ComPlus](complus-table.md)
+[Tabella Complus](complus-table.md)
 </dt> <dt>
 
-[Azione UnregisterComPlus](unregistercomplus-action.md)
+[Azione Annulla registrazioneComPlus](unregistercomplus-action.md)
 </dt> <dt>
 
-[Installazione di un'applicazione COM+ con la Windows Installer](installing-a-com--application-with-the-windows-installer.md)
+[Installazione di un'applicazione COM+ con il Windows di installazione](installing-a-com--application-with-the-windows-installer.md)
 </dt> </dl>
 
  

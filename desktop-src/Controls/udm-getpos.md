@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_GETPOS (COMmctrl. h)
-description: Recupera la posizione corrente di un controllo di scorrimento con precisione a 16 bit.
+title: UDM_GETPOS messaggio (Commctrl.h)
+description: Recupera la posizione corrente di un controllo verso l'alto con precisione a 16 bit.
 ms.assetid: 5f395de0-11b3-44f8-9bf4-42e27ce88a0c
 keywords:
-- Controlli di Windows Message UDM_GETPOS
+- UDM_GETPOS dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e78ad19289d85b93ebcb39a244a896ddb4f33f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e92ca5fe5d902980560b6879ac7c345230056987308a1e390b0af351281eac62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059781"
 ---
-# <a name="udm_getpos-message"></a>\_Messaggio UDM GETPOS
+# <a name="udm_getpos-message"></a>Messaggio GETPOS di UDM \_
 
-Recupera la posizione corrente di un controllo di scorrimento con precisione a 16 bit.
+Recupera la posizione corrente di un controllo verso l'alto con precisione a 16 bit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,13 +37,13 @@ Recupera la posizione corrente di un controllo di scorrimento con precisione a 1
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo, [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) è impostato su zero e [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) è impostato sulla posizione corrente del controllo. Se si verifica un errore, **HIWORD** viene impostato su un valore diverso da zero.
+In caso di esito positivo, [**la parola chiave HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) viene impostata su zero e [**la parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) viene impostata sulla posizione corrente del controllo. Se si verifica un errore, **la parola chiave HIWORD** viene impostata su un valore diverso da zero.
 
 ## <a name="remarks"></a>Commenti
 
-Durante l'elaborazione di questo messaggio, il controllo di scorrimento aggiorna la posizione corrente in base alla didascalia della finestra di Buddy. Il controllo di scorrimento restituisce un errore se non è presente alcuna finestra di Buddy o se la didascalia specifica un valore non valido o non compreso nell'intervallo. Inoltre, un flag di errore viene impostato nel HIWORD della restituzione se il controllo viene creato senza lo [**stile \_ SETBUDDYINT di UDS**](up-down-control-styles.md) , anche se restituisce un valore di posizione valido nel LOWORD della restituzione.
+Durante l'elaborazione di questo messaggio, il controllo up-down aggiorna la posizione corrente in base alla didascalia della finestra dell'amico. Il controllo up-down restituisce un errore se non è presente alcuna finestra di tipo amico o se la didascalia specifica un valore non valido o non compreso nell'intervallo. Inoltre, viene impostato un flag di errore nella parola chiave HIWORD del valore restituito se il controllo viene creato senza lo stile [**\_ SETBUDDYINT UDS,**](up-down-control-styles.md) anche se restituisce un valore di posizione valido nella loWORD del valore restituito.
 
-Se sono stati abilitati i valori a 32 bit per un controllo di scorrimento con [**UDM \_ SETRANGE32**](udm-setrange32.md), questo messaggio restituisce solo i 16 bit inferiori della posizione. Per recuperare la posizione completa a 32 bit, usare [**UDM \_ GETPOS32**](udm-getpos32.md).
+Se sono stati abilitati valori a 32 bit per un controllo up-down con [**UDM \_ SETRANGE32,**](udm-setrange32.md)questo messaggio restituisce solo i 16 bit inferiori della posizione. Per recuperare la posizione completa a 32 bit, usare [**UDM \_ GETPOS32**](udm-getpos32.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Se sono stati abilitati i valori a 32 bit per un controllo di scorrimento con [*
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -64,16 +64,16 @@ Se sono stati abilitati i valori a 32 bit per un controllo di scorrimento con [*
 **Riferimento**
 </dt> <dt>
 
-[**UDM \_ GETrange**](udm-getrange.md)
+[**UDM \_ GETRANGE**](udm-getrange.md)
 </dt> <dt>
 
-[**\_GETRANGE32 UDM**](udm-getrange32.md)
+[**UDM \_ GETRANGE32**](udm-getrange32.md)
 </dt> <dt>
 
-[**\_SETPOS UDM**](udm-setpos.md)
+[**UDM \_ SETPOS**](udm-setpos.md)
 </dt> <dt>
 
-[**\_SETRANGE32 UDM**](udm-setrange32.md)
+[**SETRANGE32 di UDM \_**](udm-setrange32.md)
 </dt> </dl>
 
  

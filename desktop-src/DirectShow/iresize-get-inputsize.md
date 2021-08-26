@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get InputSize restituisce le dimensioni di input correnti del filtro Resizer.
+description: Il metodo get InputSize restituisce le dimensioni di \_ input correnti del filtro di ridimensionamento.
 ms.assetid: 7066a044-52ea-4851-83f2-f1fb323c2251
-title: 'Metodo IResize:: get_InputSize (qedit. h)'
+title: Metodo IResize::get_InputSize (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fab61edf6dc4469f06437483172161fbbe77e76d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b862237f8c51bdf6c22ca9acb667199fadee33b37e425efabfe25bdb8a20dd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078931"
 ---
-# <a name="iresizeget_inputsize-method"></a>Metodo IResize:: Get \_ InputSize
+# <a name="iresizeget_inputsize-method"></a>Metodo IResize::get \_ InputSize
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `get_InputSize` metodo restituisce le dimensioni di input correnti del filtro Resizer.
+Il metodo restituisce le dimensioni di input correnti `get_InputSize` del filtro di ridimensionamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,35 +46,35 @@ HRESULT get_InputSize(
 
 <dl> <dt>
 
-*piHeight* \[ out\]
+*piHeight* \[ Cambio\]
 </dt> <dd>
 
-Riceve l'altezza del video in pixel.
+Riceve l'altezza del video, in pixel.
 
 </dd> <dt>
 
-*piWidth* \[ out\]
+*piWidth* \[ Cambio\]
 </dt> <dd>
 
-Riceve la larghezza del video in pixel.
+Riceve la larghezza del video, in pixel.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Se il pin di input del filtro non è connesso, restituire un codice di errore. In caso contrario, restituire la larghezza e l'altezza del video, come specificato dal tipo di supporto del PIN di input.
+Se il pin di input del filtro non è connesso, restituire un codice di errore. In caso contrario, restituire la larghezza e l'altezza del video, come specificato dal tipo di supporto del segnaposto di input.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,9 +84,9 @@ Se il pin di input del filtro non è connesso, restituire un codice di errore. I
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

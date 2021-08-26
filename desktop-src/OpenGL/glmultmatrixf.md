@@ -23,7 +23,7 @@ ms.locfileid: "120128201"
 ---
 # <a name="glmultmatrixf-function"></a>Funzione glMultMatrixf
 
-Le [**funzioni glMultMatrixd**](glmultmatrixd.md) **e glMultMatrixf** moltiplicano la matrice corrente per una matrice arbitraria.
+Le [**funzioni glMultMatrixd**](glmultmatrixd.md) e **glMultMatrixf** moltiplicano la matrice corrente per una matrice arbitraria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI glMultMatrixf(
 *m* 
 </dt> <dd>
 
-Puntatore a una matrice 4x4 archiviata nell'ordine delle colonne principali come 16 valori consecutivi.
+Puntatore a una matrice 4x4 archiviata nell'ordine principale della colonna come 16 valori consecutivi.
 
 </dd> </dl>
 
@@ -65,23 +65,23 @@ Il codice di errore seguente può essere recuperato dalla [**funzione glGetError
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione glMultMatrix** moltiplica la matrice corrente per quella specificata in *m*. Ciò significa che se M è la matrice corrente e T è la matrice passata **a glMultMatrix,** M viene sostituito con M T.
+La **funzione glMultMatrix** moltiplica la matrice corrente per quella specificata in *m*. In altri punti, se M è la matrice corrente e T è la matrice passata a **glMultMatrix**, M viene sostituito con M T.
 
-La matrice corrente è la matrice di proiezione, la matrice della visualizzazione modello o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode).**](glmatrixmode.md)
+La matrice corrente è la matrice di proiezione, la matrice modelview o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)).
 
 Il *parametro m* punta a una matrice 4x4 di valori a virgola mobile a precisione singola o a precisione doppia archiviati nell'ordine delle colonne principali. In altri modi, la matrice viene archiviata come illustrato nell'immagine seguente.
 
 ![! [Diagramma che mostra la matrice 4x4 a cui punta il parametro m.]](images/multi01.png)
 
-Le funzioni seguenti recuperano informazioni correlate **a glMultMatrix:**
+Le funzioni seguenti recuperano informazioni correlate **a glMultMatrix**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MATRIX \_ MODE
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MATRIX \_ MODE
 
-**glGet** con argomento GL \_ MODELVIEW \_ MATRIX
+**glGet con** argomento GL \_ MODELVIEW \_ MATRIX
 
 **glGet con** argomento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con argomento GL \_ TEXTURE \_ MATRIX
+**glGet con** argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 

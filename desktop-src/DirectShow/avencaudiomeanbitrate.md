@@ -1,33 +1,33 @@
 ---
-description: Specifica la velocità in bit media del flusso audio codificato, in bit al secondo. Questa proprietà si applica solo alle modalità di codifica della velocità in bit costante (CBR) e della velocità in bit variabile (VBR).
+description: Specifica la velocità in bit media del flusso audio codificato, in bit al secondo. Questa proprietà si applica solo alle modalità di codifica CBR (Constant Bit Rate) e VBR (Variable Bit Rate).
 ms.assetid: 9513ad64-2de9-497d-86ce-46cfdf87e0f8
-title: Proprietà AVEncAudioMeanBitRate (codecapis. h)
+title: Proprietà AVEncAudioMeanBitRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75e311686e6113003593c8a6dbe02a9fca1f30b9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ac7b0d1ad6cfde3aee4ec9c747feb8d692c3917332808e40e3d5f76e3d01ce21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104049044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079471"
 ---
-# <a name="avencaudiomeanbitrate-property"></a>Proprietà AVEncAudioMeanBitRate
+# <a name="avencaudiomeanbitrate-property"></a>AVEncAudioMeanBitRate - proprietà
 
-Specifica la velocità in bit media del flusso audio codificato, in bit al secondo. Questa proprietà si applica solo alle modalità di codifica della velocità in bit costante (CBR) e della velocità in bit variabile (VBR).
+Specifica la velocità in bit media del flusso audio codificato, in bit al secondo. Questa proprietà si applica solo alle modalità di codifica CBR (Constant Bit Rate) e VBR (Variable Bit Rate).
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCommonMeanBitRate**
+**CODECAPI \_ AVEncCommonMeanBitRate**
 
 ## <a name="property-value"></a>Valore proprietà
 
-I codificatori possono implementare questa proprietà come un set enumerato o come intervallo lineare.
+I codificatori possono implementare questa proprietà come set enumerato o come intervallo lineare.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ I codificatori possono implementare questa proprietà come un set enumerato o co
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ I codificatori possono implementare questa proprietà come un set enumerato o co
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

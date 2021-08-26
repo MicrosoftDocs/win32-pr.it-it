@@ -1,7 +1,7 @@
 ---
-description: Recupera il TAG associato all'oggetto TAGID specificato.
+description: Recupera il TAG associato al TAGID specificato.
 ms.assetid: 194d2035-fc2c-445d-a730-90db2ccea8af
-title: SdbGetTagFromTagID (funzione)
+title: Funzione SdbGetTagFromTagID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: d81dac026a9b6acc921586aaded54c8c90ad5bdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7e58343cf9a863f6b3cecc7f9b6414414387e2f2b33859de1eb015d65f1a78b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058471"
 ---
-# <a name="sdbgettagfromtagid-function"></a>SdbGetTagFromTagID (funzione)
+# <a name="sdbgettagfromtagid-function"></a>Funzione SdbGetTagFromTagID
 
-Recupera il TAG associato all'oggetto **TagId** specificato.
+Recupera il TAG associato all'elemento **TAGID specificato.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ TAG WINAPI SdbGetTagFromTagID(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiWhich* \[ in\]
+*tiWhich* \[ Pollici\]
 </dt> <dd>
 
-**TagId** per il tag.
+**TAGID per** il TAG.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce il TAG.
+La funzione restituisce IL TAG.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ La funzione restituisce il TAG.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

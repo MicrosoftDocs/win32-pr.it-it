@@ -1,6 +1,6 @@
 ---
 title: Usare il callback di notifica degli eventi
-description: La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura .
+description: La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura.
 ms.assetid: e079c585-6457-4c2c-82bd-e95d233c4aa6
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ ms.locfileid: "120127821"
 ---
 # <a name="use-the-event-notification-callback"></a>Usare il callback di notifica degli eventi
 
-La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura .
+La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura.
 
 **Come recuperare i messaggi di notifica delle modifiche**
 
 1.  Chiamare [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) per recuperare un set di modifiche.
 2.  Elaborare le modifiche.
-3.  Rilasciare le destinazioni [**usando RtmReleaseChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests).
+3.  Rilasciare le destinazioni [**usando RtmReleaseChangedDests.**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests)
 4.  Ripetere i passaggi 1, 2 e 3 finché [**RtmGetChangedDests non**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) restituisce ERROR \_ NO MORE \_ \_ ITEMS.
 
-Il codice di esempio seguente illustra come elaborare un callback [**DI CALLBACK DI \_ EVENTI \_ RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) ricevuto dal gestore tabelle di routing.
+Il codice di esempio seguente illustra come elaborare un callback [**\_ CALLBACK DI EVENTI \_ RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) ricevuto dal gestore tabelle di routing.
 
 
 ```C++

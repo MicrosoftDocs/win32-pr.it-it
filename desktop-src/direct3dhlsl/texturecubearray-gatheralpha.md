@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray GatherAlpha'
-description: "Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare. | Metodi di TextureCubeArray:: TextureCubeArray GatherAlpha"
+title: Metodi GatherAlpha di TextureCubeArray::TextureCubeArray
+description: Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare. | Metodi GatherAlpha di TextureCubeArray::TextureCubeArray
 ms.assetid: C7D4B78D-B756-4ADA-B0EA-3360007C02E1
 keywords:
 - Metodi GatherAlpha HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 4d2c24bed5e73f7d4e1b9588f9baef5bf4a74fe6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d72c5954f0d54bb05406cfa2c9ef3e7e2ddca797aa870643473815308da0b0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022511"
 ---
-# <a name="texturecubearraygatheralpha-methods"></a>Metodi TextureCubeArray:: GatherAlpha
+# <a name="texturecubearraygatheralpha-methods"></a>Metodi TextureCubeArray::GatherAlpha
 
-Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.
+Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in u
 
 | Metodo                                                                    | Descrizione                                                                                                                                      |
 |:--------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherAlpha (S, float, uint)**](tcubearray-gatheralpha-s-float-uint-.md) | Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**GatherAlpha(S,float,uint)**](tcubearray-gatheralpha-s-float-uint-.md) | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

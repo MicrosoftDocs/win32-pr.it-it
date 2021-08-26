@@ -1,15 +1,15 @@
 ---
-description: Il metodo Stop interrompe la riproduzione.
+description: Il metodo Stop arresta la riproduzione.
 ms.assetid: e1ebfacc-4f33-4b4d-8e6c-1d1e1f0a22bd
 title: Metodo Stop (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c8cae45c7f076f2c4e90f1e7f50676bebbd3482
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f9eb216c3ad5c98dd1722ff941131198cfe662d025b20c3f71fe9ea758e0a7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050111"
 ---
 # <a name="stop-method-directshow"></a>Metodo Stop (DirectShow)
 
@@ -18,7 +18,7 @@ ms.locfileid: "103968148"
 
  
 
-Il `Stop` metodo interrompe la riproduzione.
+Il `Stop` metodo arresta la riproduzione.
 
 ``` syntax
 MSWebDVD.Stop()
@@ -30,7 +30,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Se [**EnableResetOnStop**](enableresetonstop-property.md) è impostato su true, la chiamata a `Stop` inserisce lo strumento di navigazione del DVD, insieme al resto del grafico del filtro, nello stato interrotto, il che significa che alla successiva pressione del pulsante **Play** la riproduzione inizia all'inizio del disco. Se **EnableResetOnStop** è impostato su true, la riproduzione riprende dal punto in cui si è interrotta quando l'utente rilascia il comando di **riproduzione** successivo.
+Se [**EnableResetOnStop**](enableresetonstop-property.md) è impostato su true, la chiamata di imposta lo strumento di spostamento dvd, insieme al resto del grafico dei filtri, in uno stato di arresto, il che significa che la volta successiva che l'utente preme il pulsante Riproduci, la riproduzione inizia all'inizio del `Stop` disco.  Se **EnableResetOnStop** è impostato su true, la riproduzione riprende dal punto in cui è stata ancorata quando l'utente esegue il comando **Play** successivo.
 
  
 

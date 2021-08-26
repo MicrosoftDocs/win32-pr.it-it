@@ -1,7 +1,7 @@
 ---
-description: Imposta la quantità di influenza di un dato osso su un vertice specificato.
+description: Consente di impostare la quantità di influenza che ha un'endote su un vertice specificato.
 ms.assetid: adbdc784-c6b4-4e10-85c8-5e0b794d946f
-title: 'Metodo ID3DX10SkinInfo:: SetBoneInfluence (D3DX10. h)'
+title: Metodo ID3DX10SkinInfo::SetBoneInfluence (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d136ddf4491a2a00c029422512c671a5439ba47c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1bf2f2a6ec92a1e4551bdc22d43bd143c9da5c8114c44619c073a838de52c606
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069961"
 ---
-# <a name="id3dx10skininfosetboneinfluence-method"></a>Metodo ID3DX10SkinInfo:: SetBoneInfluence
+# <a name="id3dx10skininfosetboneinfluence-method"></a>Metodo ID3DX10SkinInfo::SetBoneInfluence
 
-Imposta la quantità di influenza di un dato osso su un vertice specificato.
+Consente di impostare la quantità di influenza che ha un'endote su un vertice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT SetBoneInfluence(
 
 <dl> <dt>
 
-*BoneIndex* \[ in\]
+*IndexIndex* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice che specifica un osso esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Indice che specifica un oggetto esistente. Deve essere compreso tra 0 e il valore restituito da [**ID3DX10SkinInfo::GetNumBones**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*InfluenceIndex* \[ in\]
+*Indice di influenza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Indice nell'elenco di vertici dell'osso che influenza.
+Indice nell'elenco dei vertici su cui influisce.
 
 </dd> <dt>
 
-*Peso* \[ in\]
+*Peso* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-La quantità di influenza, tra 0 e 1, che l'osso ha sul vertice.
+La quantità di influenza, compresa tra 0 e 1, che l'abile ha sul vertice.
 
 </dd> </dl>
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

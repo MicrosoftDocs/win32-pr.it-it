@@ -1,5 +1,5 @@
 ---
-description: Specifica un descrittore di buffer registrato utilizzato con le estensioni di I/O registrate di Winsock.
+description: Specifica un descrittore di buffer registrato utilizzato con le estensioni I/O registrate di Winsock.
 ms.assetid: 87D0A3F6-A44C-4D7F-B276-7FD5DC2DE7A3
 title: RIO_BUFFERID (Mswsockdef.h)
 ms.topic: reference
@@ -37,7 +37,7 @@ Le estensioni di I/O registrate di Winsock operano principalmente sui buffer reg
 
 Quando un buffer esistente viene registrato come oggetto **\_ RIO BUFFERID** usando la [**funzione RIORegisterBuffer,**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) alcune risorse interne vengono allocate dalla memoria fisica e il buffer dell'applicazione esistente verrà bloccato nella memoria fisica. La [**funzione RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer) viene chiamata per annullare la registrazione del buffer, liberare queste risorse interne e consentire lo sblocco e il rilascio del buffer dalla memoria fisica.
 
-La registrazione ripetuta e la deregistrazione dei buffer dell'applicazione tramite le estensioni I/O registrate di Winsock possono causare una riduzione significativa delle prestazioni. Quando si progetta un'applicazione usando le estensioni I/O registrate di Winsock per ridurre al minimo la registrazione ripetuta e la deregistrazione dei buffer dell'applicazione, è necessario considerare gli approcci seguenti per la gestione del buffer:
+La registrazione ripetuta e la deserializzazione dei buffer dell'applicazione tramite le estensioni di I/O registrate di Winsock possono causare una riduzione significativa delle prestazioni. Quando si progetta un'applicazione usando le estensioni I/O registrate di Winsock per ridurre al minimo la registrazione ripetuta e la deregistrazione dei buffer dell'applicazione, è necessario considerare gli approcci di gestione del buffer seguenti:
 
 -   • Ottimizzare il riutilizzo dei buffer.
 -   • Mantenere un pool limitato di buffer registrati inutilizzati per l'uso da parte dell'applicazione.

@@ -1,32 +1,32 @@
 ---
 title: Tipi enumerati RPC
-description: Pagina di navigazione per i tipi enumerati RPC (Remote Procedure Call).
+description: Pagina di spostamento per i tipi enumerati RPC (Remote Procedure Call).
 ms.assetid: 5af1d701-51f0-4b47-812a-dbb5539750f7
 keywords:
-- RPC, riferimento, tipi enumerati RPC (Remote Procedure Call)
+- Chiamata di procedura remota RPC, riferimento, tipi enumerati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5cb46ad718082c848524651abfdd9decc98834f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 59bdff5979091c5acecfdd8e5ca5e6d608a8c8dc944c3e99c3017282c89002e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080830"
 ---
 # <a name="rpc-enumerated-types"></a>Tipi enumerati RPC
 
-In questa sezione vengono illustrati in dettaglio i tipi enumerati che fanno parte della libreria di runtime RPC:
+Questa sezione contiene informazioni dettagliate sui tipi enumerati che fanno parte della libreria di runtime RPC:
 
--   [**\_evento asincrono \_ RPC**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event)
--   [**\_tipi di notifica RPC \_**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_notification_types)
--   [**\_notifiche RPC**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_notifications)
+-   [**EVENTO \_ ASINCRONO \_ RPC**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_async_event)
+-   [**TIPI \_ DI NOTIFICA \_ RPC**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_notification_types)
+-   [**NOTIFICHE \_ RPC**](/windows/desktop/api/Rpcasync/ne-rpcasync-rpc_notifications)
 -   [**RpcCallClientLocality**](/windows/win32/api/rpcasync/ne-rpcasync-rpccallclientlocality)
 -   [**RpcCallType**](/windows/win32/api/rpcasync/ne-rpcasync-rpccalltype)
 -   [**RpcLocalAddressFormat**](/windows/win32/api/rpcasync/ne-rpcasync-rpclocaladdressformat)
 
- 
+ 
 
- 
+ 
 
 
 

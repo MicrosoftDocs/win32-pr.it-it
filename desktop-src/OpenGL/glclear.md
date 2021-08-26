@@ -1,9 +1,9 @@
 ---
-title: funzione glClear (GL. h)
-description: La funzione glClear Cancella i buffer sui valori predefiniti.
+title: Funzione glClear (Gl.h)
+description: La funzione glClear cancella i buffer in base ai valori preimpostati.
 ms.assetid: 9818f969-3145-45ea-aa9c-2abed953a8e0
 keywords:
-- funzione glClear OpenGL
+- Funzione glClear OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db935e46c65c42976024a8afbb98028294710c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bb48a1b2832a5f9c046bb450b7cfba9ec4f83a759b093df91f3ec2064f23a3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082101"
 ---
-# <a name="glclear-function"></a>glClear (funzione)
+# <a name="glclear-function"></a>Funzione glClear
 
-La funzione **glClear** Cancella i buffer sui valori predefiniti.
+La **funzione glClear** cancella i buffer in base ai valori preimpostati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,19 +40,19 @@ void WINAPI glClear(
 
 <dl> <dt>
 
-*maschera* 
+*Maschera* 
 </dt> <dd>
 
-Operatori OR bit per bit delle maschere che indicano i buffer da cancellare. Le quattro maschere sono le seguenti:
+Operatori OR bit per bit delle maschere che indicano i buffer da cancellare. Le quattro maschere sono le seguenti.
 
 
 
 | Valore                                                                                                                                                                                   | Significato                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <span id="GL_COLOR_BUFFER_BIT"></span><span id="gl_color_buffer_bit"></span><dl> <dt>**\_bit del \_ buffer dei colori GL \_**</dt> </dl>       | Buffer attualmente abilitati per la scrittura di colori.<br/> |
-| <span id="GL_DEPTH_BUFFER_BIT"></span><span id="gl_depth_buffer_bit"></span><dl> <dt>**\_ \_ bit buffer di profondità GL \_**</dt> </dl>       | Buffer di profondità.<br/>                                |
-| <span id="GL_ACCUM_BUFFER_BIT"></span><span id="gl_accum_buffer_bit"></span><dl> <dt>**\_bit del buffer di accut GL \_ \_**</dt> </dl>       | Buffer di accumulo.<br/>                         |
-| <span id="GL_STENCIL_BUFFER_BIT"></span><span id="gl_stencil_buffer_bit"></span><dl> <dt>**\_ \_ bit buffer dello stencil GL \_**</dt> </dl> | Buffer dello stencil.<br/>                              |
+| <span id="GL_COLOR_BUFFER_BIT"></span><span id="gl_color_buffer_bit"></span><dl> <dt>**BIT BUFFER COLORE GL \_ \_ \_**</dt> </dl>       | Buffer attualmente abilitati per la scrittura dei colori.<br/> |
+| <span id="GL_DEPTH_BUFFER_BIT"></span><span id="gl_depth_buffer_bit"></span><dl> <dt>**BIT \_ BUFFER \_ DI PROFONDITÀ GL \_**</dt> </dl>       | Buffer di profondità.<br/>                                |
+| <span id="GL_ACCUM_BUFFER_BIT"></span><span id="gl_accum_buffer_bit"></span><dl> <dt>**GL \_ ACCUM \_ BUFFER \_ BIT**</dt> </dl>       | Buffer di accumulo.<br/>                         |
+| <span id="GL_STENCIL_BUFFER_BIT"></span><span id="gl_stencil_buffer_bit"></span><dl> <dt>**GL \_ STENCIL \_ BUFFER \_ BIT**</dt> </dl> | Buffer degli stencil.<br/>                              |
 
 
 
@@ -66,40 +66,40 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | Un bit diverso dai quattro bit definiti è stato impostato nella *maschera*.<br/>                                                                |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | Qualsiasi bit diverso da quattro bit definiti è stato impostato nella *maschera*.<br/>                                                                |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glClear** imposta l'area bitplane della finestra sui valori selezionati in precedenza da [**glClearColor**](glclearcolor.md), [**glClearIndex**](glclearindex.md), [**glClearDepth**](glcleardepth.md), [**glClearStencil**](glclearstencil.md)e [**glClearAccum**](glclearaccum.md). È possibile cancellare contemporaneamente più buffer di colori selezionando più di un buffer alla volta usando [**glDrawBuffer**](gldrawbuffer.md).
+La **funzione glClear** imposta l'area di bitplane della finestra su valori selezionati in precedenza da [**glClearColor**](glclearcolor.md), [**glClearIndex**](glclearindex.md), [**glClearDepth**](glcleardepth.md), [**glClearStencil**](glclearstencil.md)e [**glClearAccum**](glclearaccum.md). È possibile cancellare più buffer di colore contemporaneamente selezionando più buffer alla volta usando [**glDrawBuffer.**](gldrawbuffer.md)
 
-Il test di proprietà dei pixel, il test a forbice, il dithering e il buffer writemasks influiscono sul funzionamento di **glClear**. La casella a forbice delimita l'area deselezionata. La funzione **glClear** ignora la funzione Alpha, la funzione Blend, l'operazione logica, lo stencil, il mapping della trama e il buffer *z*.
+Il test di proprietà del pixel, il test di scissor, il dithering e le maschera di scrittura del buffer influiscono sul funzionamento di **glClear.** La casella di forbice delimita l'area cancellata. La **funzione glClear** ignora la funzione alfa, la funzione blend, l'operazione logica, lo stencil, il mapping della trama e *il buffering z.*
 
-La funzione **glClear** accetta un solo argomento (*maschera*) che rappresenta l'operatore OR bit per bit di diversi valori che indicano il buffer da cancellare.
+La **funzione glClear** accetta un singolo argomento (*mask*) che è l'OR bit per bit di diversi valori che indica quale buffer deve essere cancellato.
 
-Il valore a cui viene cancellato ogni buffer dipende dall'impostazione del valore Clear per il buffer.
+Il valore in base al quale viene cancellato ogni buffer dipende dall'impostazione del valore non crittografato per tale buffer.
 
-Se non è presente un buffer, una chiamata **glClear** indirizzata a tale buffer non ha alcun effetto.
+Se non è presente un buffer, una **chiamata glClear** indirizzata a tale buffer non ha alcun effetto.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glClear**:
+Le funzioni seguenti recuperano informazioni correlate **a glClear:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con l'argomento contabilità GL \_ \_ Clear \_ value
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ ACCUM \_ CLEAR \_ VALUE
 
-**glGet** con \_ \_ valore Clear Depth Depth \_
+**glGet** con argomento GL \_ DEPTH \_ CLEAR \_ VALUE
 
-**glGet** con valore di \_ cancellazione dell'indice GL dell'argomento \_ \_
+**glGet** con argomento GL \_ INDEX \_ CLEAR \_ VALUE
 
-**glGet** con valore di \_ cancellazione del colore GL argomento \_ \_
+**glGet con** argomento GL \_ COLOR CLEAR \_ \_ VALUE
 
-**glGet** con il \_ \_ valore Clear dello stencil GL degli argomenti \_
+**glGet** con argomento GL \_ STENCIL \_ CLEAR \_ VALUE
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,8 +109,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glClear
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

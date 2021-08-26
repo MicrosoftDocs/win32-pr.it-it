@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_GETRANGE32 (COMmctrl. h)
-description: Recupera l'intervallo di 32 bit di un controllo di scorrimento.
+title: UDM_GETRANGE32 messaggio (Commctrl.h)
+description: Recupera l'intervallo a 32 bit di un controllo di tipo up-down.
 ms.assetid: a94b50c9-cd2f-430d-875f-720e51f544f1
 keywords:
-- Controlli di Windows Message UDM_GETRANGE32
+- UDM_GETRANGE32 controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca418cd08dc4c81b3ff734d74f3ca9deeef7d848
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72078327b7a580768321f14c1d512e097561ae3441667497a822dc8a8a28b4e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077101"
 ---
-# <a name="udm_getrange32-message"></a>\_Messaggio UDM GETRANGE32
+# <a name="udm_getrange32-message"></a>Messaggio GETRANGE32 di UDM \_
 
-Recupera l'intervallo di 32 bit di un controllo di scorrimento.
+Recupera l'intervallo a 32 bit di un controllo di tipo up-down.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Recupera l'intervallo di 32 bit di un controllo di scorrimento.
 *wParam* 
 </dt> <dd>
 
-Puntatore a un intero con segno che riceve il limite inferiore dell'intervallo di controllo di scorrimento. Questo parametro può essere **null**.
+Puntatore a un intero con segno che riceve il limite inferiore dell'intervallo di controllo verso l'alto verso il basso. Questo parametro può essere **NULL.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a un intero con segno che riceve il limite superiore dell'intervallo di controllo di scorrimento. Questo parametro può essere **null**.
+Puntatore a un intero con segno che riceve il limite superiore dell'intervallo di controllo verso l'alto. Questo parametro può essere **NULL.**
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Il valore restituito per questo messaggio non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

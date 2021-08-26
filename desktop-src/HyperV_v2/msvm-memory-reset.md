@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Reset della classe Msvm_Memory: richiede una reimpostazione.'
+description: 'Metodo Reset della classe Msvm_Memory : richiede una reimpostazione.'
 ms.assetid: c21be284-acb0-46e3-9629-b1d95154f58b
 title: Metodo Reset della classe Msvm_Memory
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8c966296c79a3215eb5b66c8825bb17d19854bd1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f9530594fb72c2186c1e69356e398fe94985f753a50404939b5d1d9367c720ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046521"
 ---
 # <a name="reset-method-of-the-msvm_memory-class"></a>Metodo Reset della classe Msvm \_ Memory
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
@@ -67,7 +67,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-[**Memoria \_ Msvm**](msvm-memory.md)
+[**Memoria \_ msvm**](msvm-memory.md)
 </dt> </dl>
 
  

@@ -1,29 +1,29 @@
 ---
-description: Consente al motore di acquisizione di usare un codificatore con restrizioni di campo per l'utilizzo.
+description: Consente al motore di acquisizione di usare un codificatore con restrizioni sul campo di utilizzo.
 ms.assetid: 28421875-9629-4F14-8159-2D86012F517F
-title: Attributo MF_CAPTURE_ENGINE_ENCODER_MFT_FIELDOFUSE_UNLOCK_Attribute (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_ENCODER_MFT_FIELDOFUSE_UNLOCK_Attribute attributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b29a9466162ff5551ee155343800d938276823ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32f2fb9d85c68adbc726fa4b36f2ea960a33e68c4dff836fac0370c8e9e4e3a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060821"
 ---
-# <a name="mf_capture_engine_encoder_mft_fieldofuse_unlock_attribute-attribute"></a>\_Attributo dell' \_ \_ \_ \_ \_ \_ attributo Unlock del codificatore MFT FIELDOFUSE di MF Capture Engine
+# <a name="mf_capture_engine_encoder_mft_fieldofuse_unlock_attribute-attribute"></a>Attributo MF \_ CAPTURE \_ ENGINE ENCODER \_ \_ MFT \_ FIELDOFUSE \_ UNLOCK \_
 
-Consente al motore di acquisizione di usare un codificatore con restrizioni di campo per l'utilizzo.
+Consente al motore di acquisizione di usare un codificatore con restrizioni sul campo di utilizzo.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di questo attributo è un puntatore all'interfaccia [_ *IMFFieldOfUseMFTUnlock* *](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) , implementata dal chiamante. L'implementazione del chiamante di questa interfaccia è prevista per l'esecuzione di un handshake con il codificatore, come descritto in [campo delle restrizioni di utilizzo](field-of-use-restrictions.md). Microsoft Media Foundation non definisce l'handshake, in genere comporta una sorta di scambio crittografico.
+Il valore di questo attributo è un puntatore [**all'interfaccia IMFFieldOfUseMFTUnlock**](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) implementata dal chiamante. L'implementazione del chiamante di questa interfaccia deve eseguire un handshake con il codificatore, come descritto in [Field of Use Restrictions](field-of-use-restrictions.md). Microsoft Media Foundation definisce l'handshake, in genere comporterebbe uno scambio crittografico.
 
-Internamente, il motore di acquisizione imposta il puntatore [**IMFFieldOfUseMFTUnlock**](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) sul codificatore impostando l'attributo di [sblocco dell' \_ \_ \_ attributo MFT FIELDOFUSE](mft-fieldofuse-unlock-attribute.md) del codificatore.
+Internamente, il motore di acquisizione imposta il puntatore [**IMFFieldOfUseMFTUnlock**](/windows/desktop/api/mfidl/nn-mfidl-imffieldofusemftunlock) sul codificatore impostando l'attributo [MFT \_ FIELDOFUSE \_ UNLOCK \_ del](mft-fieldofuse-unlock-attribute.md) codificatore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Internamente, il motore di acquisizione imposta il puntatore [**IMFFieldOfUseMFT
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                         |
-| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                   |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                         |
+| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ Internamente, il motore di acquisizione imposta il puntatore [**IMFFieldOfUseMFT
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del motore di acquisizione](capture-engine-attributes.md)
 </dt> <dt>
 
-[**IMFCaptureEngine:: Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
+[**IMFCaptureEngine::Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
 </dt> </dl>
 
  

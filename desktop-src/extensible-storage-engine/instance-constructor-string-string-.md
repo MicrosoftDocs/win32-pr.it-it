@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: costruttore di istanze (String, String)'
+description: 'Altre informazioni su: Costruttore di istanza (String, String)'
 title: Costruttore di istanza (String, String)
 TOCTitle: Instance constructor (String, String)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.#ctor(System.String,System.String)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 02cb629cdfaba17ce9a137b52eb1a6d6fdbaa56b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d93a5799a646a90688261bdd55bc9dfe929ef6bd074a51e15cabdcee768ffa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116441"
 ---
 # <a name="instance-constructor-string-string"></a>Costruttore di istanza (String, String)
 
-Inizializza una nuova istanza della classe dell'istanza. Il JET_INSTANCE sottostante viene allocato, ma non inizializzato.
+Inizializza una nuova istanza della classe Instance. L'JET_INSTANCE sottostante viene allocata, ma non inizializzata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,25 +59,25 @@ public Instance(
 #### <a name="parameters"></a>Parametri
 
   - name  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome dell’istanza. Questa stringa deve essere univoca all'interno di un determinato processo che ospita il motore di database.
 
 <!-- end list -->
 
   - displayName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nome visualizzato per l'istanza di. Questa operazione verrà utilizzata nelle voci del registro eventi.
+    Nome visualizzato per l'istanza di . Verrà usato nelle voci del registro eventi.
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe dell'istanza](./instance-class.md)
+[Classe di istanza](./instance-class.md)
 
-[Membri di istanza](./instance-members.md)
+[Membri dell'istanza](./instance-members.md)
 
 [Overload dell'istanza](./instance-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

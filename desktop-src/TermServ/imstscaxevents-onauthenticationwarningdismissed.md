@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnAuthenticationWarningDismissed
-description: Viene chiamato dopo che un controllo ActiveX Visualizza una finestra di dialogo di autenticazione (ad esempio, la finestra di dialogo errore certificato).
+description: Chiamato dopo che un ActiveX visualizza una finestra di dialogo di autenticazione, ad esempio la finestra di dialogo di errore del certificato.
 ms.assetid: bf5dbe4a-9129-47b3-9808-ed09d9010099
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnAuthenticationWarningDismissed
+- Metodo OnAuthenticationWarningDismissed Servizi Desktop remoto
 - Metodo OnAuthenticationWarningDismissed Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnAuthenticationWarningDismissed
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnAuthenticationWarningDismissed
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86bdadfdbc8e0a1387a1f3aaf712188689d0f808
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a55af8450160e271e96c53d4d5a9d4390393ab7880d2c2bb143cf0e6a1cb3bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125231"
 ---
-# <a name="imstscaxeventsonauthenticationwarningdismissed-method"></a>Metodo IMsTscAxEvents:: OnAuthenticationWarningDismissed
+# <a name="imstscaxeventsonauthenticationwarningdismissed-method"></a>Metodo IMsTscAxEvents::OnAuthenticationWarningDismissed
 
-Viene chiamato dopo che un controllo ActiveX Visualizza una finestra di dialogo di autenticazione (ad esempio, la finestra di dialogo errore certificato).
+Chiamato dopo che un ActiveX visualizza una finestra di dialogo di autenticazione, ad esempio la finestra di dialogo di errore del certificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,9 +47,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se necessario, è possibile usare la proprietà [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) dell'interfaccia [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) per ripristinare gli elementi padre che potrebbero essere stati eseguiti nel metodo [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) .
+Se necessario, è possibile usare la proprietà [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md) dell'interfaccia [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) per ripristinare qualsiasi elemento padre che potrebbe essere stato eseguito nel metodo [**OnAuthenticationWarningDisplayed.**](imstscaxevents-onauthenticationwarningdisplayed.md)
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,31 +1,31 @@
 ---
 description: 'Questo filtro decodifica i formati audio seguenti:'
 ms.assetid: 2fd14296-9eed-4e25-b140-6281c707fdb7
-title: Decoder audio Microsoft MPEG-1/gg/AAC (Wmcodecdsp. h)
+title: Decodificatore audio MICROSOFT MPEG-1/DD/AAC (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a685fa2be32dd963cdc7de08ec716117e6a7016e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2dd20bfc2ad8a366b46ac0c0600d8cc7a8bca5abacae621e8ea7d02f5f1cb4d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051251"
 ---
-# <a name="microsoft-mpeg-1ddaac-audio-decoder"></a>Decoder audio Microsoft MPEG-1/gg/AAC
+# <a name="microsoft-mpeg-1ddaac-audio-decoder"></a>Decodificatore audio MPEG-1/DD/AAC Microsoft
 
 Questo filtro decodifica i formati audio seguenti:
 
--   MPEG-1 Audio Layer I e II.
--   Audio MPEG-2 compatibile con le versioni precedenti, livelli I e II (ISO/IEC 13818-3), mono e stereo.
--   Profilo di alta complessità (LC, Advanced Audio Coding).
--   High-Efficiency AAC (HE-AAC) versione 1 e versione 2.
--   Digital Theater Systems (DTS) pass-through per l'output digitale.
--   Solo LPCM, mono e stereo, con o senza intestazioni PE.
+-   Livelli audio MPEG-1 I e II.
+-   Audio MPEG-2 compatibile con le versioni precedenti, livelli I e II (ISO/IEC 13818-3), solo mono e stereo.
+-   Profilo AAC (Advanced Audio Coding) Low Complexity (LC).
+-   High-Efficiency AAC (HE-AAC) versione 1 e 2.
+-   DTS (Digital Theater Systems) pass-through per l'output digitale.
+-   Solo LPCM, mono e stereo, con o senza intestazioni PES.
 -   Dolby Digital.
--   Dolby Digital Plus, inclusa la conversione da Dolby Digital Plus a Dolby Digital for Digital output.
+-   Dolby Digital Plus, inclusa la conversione da Dolby Digital Plus a Dolby Digital per l'output digitale.
 
 > [!Note]  
-> L'implementazione Microsoft della tecnologia Dolby Digital è limitata ai sensi del programma di licenza Dolby Digital per l'uso da parte delle applicazioni Microsoft.
+> L'implementazione Microsoft della tecnologia Dolby Digital è limitata ai termini del programma di licenza Dolby Digital che le applicazioni Microsoft possono usare.
 
  
 
@@ -36,11 +36,11 @@ Questo filtro decodifica i formati audio seguenti:
 
 La decodifica dei formati Dolby Digital Plus, AAC e HE-AAC richiede Windows 7. La decodifica di Dolby Digital o Dolby Digital Plus non è supportata in Windows 7 Home Basic o Windows 7 Starter.
 
-Nel registro di sistema il nome descrittivo di questo filtro è "Microsoft DTV-DVD audio decoder".
+Nel Registro di sistema il nome descrittivo di questo filtro è "Decodificatore audio DTV-DVD Microsoft".
 
 
 
-Informazioni sul filtro
+Filtrare le informazioni
 
 Interfacce di filtro
 
@@ -50,40 +50,40 @@ Tipi di supporti pin di input
 
 In Windows Vista e versioni successive, il filtro supporta i tipi di input seguenti:<br/>
 
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ Dolby \_ AC3** (vedere la nota 1).
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ MPEG1Audio**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ MPEG1Payload**
--   **MEDIATYPE \_ Audio**, **\_ \_ audio MPEG2 MEDIASUBTYPE**
--   **MEDIATYPE \_ DVD \_ Encrypted \_ Pack**, **MEDIASUBTYPE \_ Dolby \_ AC3** (vedere la nota 1).
--   **MEDIATYPE \_ DVD \_ Encrypted \_ Pack**, **MEDIASUBTYPE \_ DTS** (vedere la nota 2).
--   **MEDIATYPE \_ DVD \_ Encrypted \_ Pack**, **MEDIASUBTYPE \_ DVD \_ LPCM \_ audio**
--   **MEDIATYPE \_ DVD \_ Encrypted \_ Pack**, **MEDIASUBTYPE \_ MPEG2 \_ audio**
--   **MEDIATYPE \_ MPEG2 \_ PE**, **MEDIASUBTYPE \_ Dolby \_ AC3** (vedere la nota 1).
--   **MEDIATYPE \_ MPEG2 \_ PE**, **MEDIASUBTYPE \_ DTS** (vedere la nota 2).
--   **MEDIATYPE \_ MPEG2 \_ PE**, **MEDIASUBTYPE \_ DVD \_ LPCM \_ audio**
--   **MEDIATYPE \_ MPEG2 \_ PE**, **\_ \_ audio MPEG2 MEDIASUBTYPE**
--   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ Dolby \_ AC3** (vedere la nota 1).
--   **MEDIATYPE \_ Flusso**, **MEDIASUBTYPE \_ MPEG1Audio**
--   **MEDIATYPE \_ Flusso**, **MEDIASUBTYPE \_ \_ audio MPEG2**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DOLBY \_ AC3** (vedere la nota 1).
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG1Audio**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG1Payload**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**
+-   **MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK,** **MEDIASUBTYPE \_ DOLBY \_ AC3** (vedere la nota 1).
+-   **MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK,** **MEDIASUBTYPE \_ DTS** (vedere la nota 2).
+-   **MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK,** **MEDIASUBTYPE \_ DVD \_ LPCM \_ AUDIO**
+-   **MEDIATYPE \_ DVD \_ ENCRYPTED \_ PACK,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**
+-   **MEDIATYPE \_ MPEG2 \_ PES,** **MEDIASUBTYPE \_ DOLBY \_ AC3** (vedere la nota 1).
+-   **MEDIATYPE \_ MPEG2 \_ PES,** **MEDIASUBTYPE \_ DTS** (vedere la nota 2).
+-   **MEDIATYPE \_ MPEG2 \_ PES,** **MEDIASUBTYPE \_ DVD \_ LPCM \_ AUDIO**
+-   **MEDIATYPE \_ MPEG2 \_ PES,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**
+-   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ DOLBY \_ AC3** (vedere la nota 1).
+-   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG1Audio**
+-   **MEDIATYPE \_ Stream,** **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**
 
-A partire da Windows 7, il filtro supporta anche i tipi di input seguenti:<br/>
+A partire Windows 7, il filtro supporta anche i tipi di input seguenti:<br/>
 
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ Dolby \_ DDPLUS** (vedere la nota 1).
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ DTS2** (vedere la nota 2).
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ DVD \_ LPCM \_ audio**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ DVM** (vedere la nota 1).
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ MPEG \_ LOAS**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ MPEG1AudioPayload**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ RAW \_ AAC1**
--   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ Dolby \_ DDPLUS** (vedere la nota 1).
--   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**
--   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG \_ LOAS**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DOLBY \_ DDPLUS** (vedere la nota 1).
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DTS2** (vedere la nota 2).
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DVD \_ LPCM \_ AUDIO**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DVM** (vedere la nota 1).
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**
+-   **MEDIATYPE \_ AUDIO,** **MEDIASUBTYPE \_ MPEG \_ LOAS**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ MPEG1AudioPayload**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ RAW \_ AAC1**
+-   **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ DOLBY \_ DDPLUS** (vedere la nota 1).
+-   **MEDIATYPE \_ Stream,** **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**
+-   **MEDIATYPE \_ Stream,** **MEDIASUBTYPE \_ MPEG \_ LOAS**
 
-Il tipo di input può variare in modo dinamico durante il flusso.<br/> Per ulteriori informazioni su questi tipi di supporti, vedere [**sottotipi audio**](audio-subtypes.md).<br/>
+Il tipo di input può cambiare dinamicamente durante lo streaming.<br/> Per altre informazioni su questi tipi di supporti, vedere [**Sottotipi audio**](audio-subtypes.md).<br/>
 
 > [!Note]  
-> 1. L'implementazione Microsoft della tecnologia Dolby Digital è limitata ai sensi del programma di licenza Dolby Digital per l'uso da parte delle applicazioni Microsoft.
+> 1. L'implementazione Microsoft della tecnologia Dolby Digital è limitata ai termini del programma di licenza Dolby Digital che le applicazioni Microsoft possono usare.
 
 <br/>
 
@@ -100,21 +100,21 @@ Tipi di supporti pin di output
 
 In Windows Vista e versioni successive, il filtro supporta i tipi di output seguenti:<br/>
 
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ Dolby \_ AC3 \_ SPDIF** (uguale al **\_ sottotipo KSDATAFORMAT \_ IEC61937 \_ Dolby \_ Digital**)
--   **MEDIATYPE \_ Audio**, **\_ PCM MEDIASUBTYPE**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ DOLBY \_ AC3 \_ SPDIF** (uguale a **KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DOLBY \_ DIGITAL**)
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ PCM**
 
-A partire da Windows 7, il filtro supporta anche i tipi di output seguenti:<br/>
+A partire Windows 7, il filtro supporta anche i tipi di output seguenti:<br/>
 
--   **MEDIATYPE \_ Audio**, **\_ sottotipo KSDATAFORMAT \_ IEC61937 \_ DTS**
--   **MEDIATYPE \_ Audio**, **MEDIASUBTYPE \_ IEEE \_ float**
+-   **MEDIATYPE \_ Audio,** **KSDATAFORMAT \_ SUBTYPE \_ IEC61937 \_ DTS**
+-   **MEDIATYPE \_ Audio,** **MEDIASUBTYPE \_ IEEE \_ FLOAT**
 
-Interfacce del PIN di output
+Interfacce pin di output
 
 [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-CLSID filtro
+Filtro CLSID
 
-**CLSID \_ CMPEG2AudDecoderDS** (dichiarata in wmcodecdsp. h)
+**CLSID \_ CMPEG2AudDecoderDS** (dichiarato in wmcodecdsp.h)
 
 File eseguibile
 
@@ -122,62 +122,62 @@ msmpeg2adec.dll
 
 [Merito](merit.md)
 
-Il **merito \_ NORMALE** -1
+**MERITO \_ NORMAL** - 1
 
 [Categoria filtro](filter-categories.md)
 
-**\_LEGACYAMFILTERCATEGORY CLSID**
+**CLSID \_ LegacyAmFilterCategory**
 
 
 
  
 
 > [!Note]  
-> Una versione precedente della documentazione ha dichiarato che questo filtro può decodificare "MPEG-2 audio". Il filtro decodifica solo l'audio MPEG-2 compatibile con le versioni precedenti.
+> Una versione precedente della documentazione ha dichiarato che questo filtro può decodificare "audio MPEG-2". Il filtro decodifica solo l'audio MPEG-2 compatibile con le versioni precedenti.
 
  
 
 ## <a name="remarks"></a>Commenti
 
-I flussi mono sono sempre decodificati in stereo.
+I flussi Mono vengono sempre decodificati in stereo.
 
-Per i flussi con una configurazione di canale di due o più altoparlanti, il decodificatore esegue una delle operazioni seguenti:
+Per i flussi con una configurazione del canale di due o più altoparlanti, il decodificatore esegue una delle operazioni seguenti:
 
--   Si mescola a sei canali, usando la configurazione comune del altoparlante 5,1.
--   Da downmixes a stereo.
+-   Combina fino a sei canali, usando la configurazione comune degli altoparlanti 5.1.
+-   Downmix in stereo.
 
-Per selezionare una delle due opzioni, usare l'interfaccia [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi) per impostare la proprietà [**AVDecCommonOutputFormat**](avdeccommonoutputformat-property.md) , prima di connettere i pin. In alternativa, quando l'applicazione compila il grafico del filtro, può impostare il tipo di supporto desiderato sul pin di output.
+Per selezionare tra queste due opzioni, usare [**l'interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi) per impostare la proprietà [**AVDecCommonOutputFormat**](avdeccommonoutputformat-property.md) prima di connettere i pin. In alternativa, quando l'applicazione compila il grafico dei filtri, può impostare il tipo di supporto desiderato sul segnaposto di output.
 
 ### <a name="aac-decoding"></a>Decodifica AAC
 
-Per AAC, il decodificatore presenta determinati vincoli di formato nell'input AAC compresso. Questi vincoli di formato sono identici a quelli del [**Decodificatore Media Foundation AAC**](../medfound/aac-decoder.md)e sono documentati nella sezione "[**vincoli di formato**](../medfound/aac-decoder.md)".
+Per AAC, il decodificatore ha determinati vincoli di formato sull'input AAC compresso. Questi vincoli di formato sono gli stessi Media Foundation [**decodificatore AAC**](../medfound/aac-decoder.md)e sono documentati nella sezione "[**Vincoli di formato**](../medfound/aac-decoder.md)".
 
-Il decodificatore DirectShow accetta anche tipi di input diversi rispetto al decodificatore Media Foundation. Il decodificatore DirectShow supporta i tipi di input AAC seguenti:
+Il DirectShow decodificatore accetta anche tipi di input diversi rispetto Media Foundation decodificatore. Il DirectShow decodificatore supporta i tipi di input AAC seguenti:
 
--   **MEDIASUBTYPE \_ \_AAC1 RAW**: AAC non elaborato, in genere disponibile in AVI o Matroska (. File MKV).
--   **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC**: AAC in un flusso di trasporto dati audio (ADTS) per lo streaming.
--   **MEDIASUBTYPE \_ MPEG \_ LOAS**: flusso di trasporto con un livello di sincronizzazione (LOAS) e un livello multiplex (latm).
+-   **MEDIASUBTYPE \_ RAW \_ AAC1:** AAC non elaborato, in genere disponibile in AVI o Matroska (. MKV).
+-   **MEDIASUBTYPE \_ MPEG \_ ADTS \_ AAC:** AAC in un flusso di trasporto dati audio (ADTS) per lo streaming.
+-   **MEDIASUBTYPE \_ \_LOAS MPEG:** flusso di trasporto con un livello di sincronizzazione (LOAS) e un livello multiplex (LATM).
 
-Il decodificatore Media Foundation supporta i tipi di input AAC seguenti:
+Il Media Foundation decodificatore supporta i tipi di input AAC seguenti:
 
--   MFAudioFormat \_ AAC (uguale a **MEDIASUBTYPE \_ MPEG \_ HEAAC**) per la riproduzione di file MP4.
--   **MEDIASUBTYPE \_ \_AAC1 non elaborati**.
+-   MFAudioFormat \_ AAC (uguale a **MEDIASUBTYPE \_ MPEG \_ HEAAC)** per la riproduzione di file MP4.
+-   **MEDIASUBTYPE \_ RAW \_ AAC1**.
 
 ### <a name="property-sets"></a>Set di proprietà
 
-Il pin di input del decodificatore supporta i set di proprietà seguenti tramite [**IKsPropertySet**](ikspropertyset.md):
+Il pin di input del decodificatore supporta i seguenti set di proprietà tramite [**IKsPropertySet:**](ikspropertyset.md)
 
--   [**Set di proprietà di protezione copia DVD**](dvd-copy-protection-property-set.md)
--   [**Set di proprietà di modifica della frequenza**](rate-change-property-set.md).
+-   [**Set di proprietà protezione copia DVD**](dvd-copy-protection-property-set.md)
+-   [**Rate-Change Property Set**](rate-change-property-set.md).
 
 > [!Note]  
-> A partire da Windows 7, il decodificatore supporta la modalità Trick tramite il set di proprietà rate-Change. Supporta le frequenze di riproduzione nell'intervallo \[ 0,501 – 2,0 \] , dove 1,0 è la frequenza di riproduzione normale e 2,0 è il doppio della normale frequenza.
+> A partire da Windows 7, il decodificatore supporta la modalità trick tramite il set di proprietà rate-change. Supporta le frequenze di riproduzione nell'intervallo \[ da 0,501 a 2,0, dove 1,0 è la frequenza di riproduzione normale e 2,0 è il doppio della frequenza \] normale.
 
  
 
 ### <a name="codec-properties"></a>Proprietà codec
 
-Il pin di input del decodificatore supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi):
+Il pin di input del decodificatore supporta le proprietà seguenti tramite [**ICodecAPI:**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 
 
 
@@ -186,7 +186,7 @@ Il pin di input del decodificatore supporta le seguenti proprietà tramite [**IC
 | [**AVAudioChannelConfig**](avaudiochannelconfig-property.md)     | Windows Vista                                            |
 | [**AVAudioChannelCount**](avaudiochannelcount-property.md)       | Windows Vista                                            |
 | [**AVAudioSampleRate**](avaudiosamplerate-property.md)           | Windows Vista                                            |
-| [**AVDDSurroundMode**](avddsurroundmode-property.md)             | Solo Windows Vista; non supportato in Windows 7 o versioni successive. |
+| [**AVDDSurroundMode**](avddsurroundmode-property.md)             | Windows Solo Vista; non supportato in Windows 7 o versioni successive. |
 | [**AVDecAudioDualMono**](avdecaudiodualmono-property.md)         | Windows Vista                                            |
 | [**AVDecCommonInputFormat**](avdeccommoninputformat-property.md) | Windows Vista                                            |
 | [**AVDecCommonMeanBitRate**](avdeccommonmeanbitrate.md)          | Windows 7                                                |
@@ -195,7 +195,7 @@ Il pin di input del decodificatore supporta le seguenti proprietà tramite [**IC
 
  
 
-Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi):
+Il filtro supporta le proprietà seguenti tramite [**ICodecAPI:**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 
 
 
@@ -204,8 +204,8 @@ Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/deskt
 | [**AVDecAACDownmixMode**](avdecaacdownmixmode-property.md)                       | Windows 7     |
 | [**AVDecAudioDualMonoReproMode**](avdecaudiodualmonorepromode-property.md)       | Windows Vista |
 | [**AVDecCommonOutputFormat**](avdeccommonoutputformat-property.md) (vedere la nota 3). | Windows Vista |
-| [**AVDecDDDynamicRangeScaleHigh**](avdecdddynamicrangescalehigh-property.md)     | Windows Vista |
-| [**AVDecDDDynamicRangeScaleLow**](avdecdddynamicrangescalelow-property.md)       | Windows Vista |
+| [**AVDecdDDynamicRangeScaleHigh**](avdecdddynamicrangescalehigh-property.md)     | Windows Vista |
+| [**AVDecdDDynamicRangeScaleLow**](avdecdddynamicrangescalelow-property.md)       | Windows Vista |
 | [**AVDecDDOperationalMode**](avdecddoperationalmode-property.md)                 | Windows Vista |
 | [**AVDecMmcssClass**](avdecmmcss-property.md)                                    | Windows Vista |
 | [**AVDSPLoudnessEqualization**](avdsploudnessequalization-property.md)           | Windows 7     |
@@ -216,7 +216,7 @@ Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/deskt
  
 
 > [!Note]  
-> 3. Prima di connettere il pin di output del decodificatore, è necessario impostare la proprietà [**AVDecCommonOutputFormat**](avdeccommonoutputformat-property.md) . In caso contrario, la modifica non ha alcun effetto.
+> 3. La [**proprietà AVDecCommonOutputFormat**](avdeccommonoutputformat-property.md) deve essere impostata prima che il pin di output del decodificatore sia connesso. In caso contrario, la modifica non ha alcun effetto.
 
  
 
@@ -226,9 +226,9 @@ Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/deskt
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, \[ solo app desktop Windows 7\]<br/> |
+| Client minimo supportato<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows solo 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>        |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>        |
 
 
 
@@ -239,7 +239,7 @@ Il filtro supporta le seguenti proprietà tramite [**ICodecAPI**](/windows/deskt
 [**Sottotipi audio**](audio-subtypes.md)
 </dt> <dt>
 
-[Filtri DirectShow](directshow-filters.md)
+[DirectShow Filtri](directshow-filters.md)
 </dt> <dt>
 
 [**Tipi di supporti DVD**](dvd-media-types.md)

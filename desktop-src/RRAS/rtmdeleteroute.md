@@ -1,9 +1,9 @@
 ---
-title: Funzione RtmDeleteRoute (RTM. h)
-description: La funzione RtmDeleteRoute Elimina una voce di route.
+title: Funzione RtmDeleteRoute (Rtm.h)
+description: La funzione RtmDeleteRoute elimina una voce di route.
 ms.assetid: a98026e9-40f5-42e9-943c-dfc561feef6d
 keywords:
-- RAS funzione RtmDeleteRoute
+- Funzione RtmDeleteRoute RAS
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 310364bdb6e6ba7daf285316fcaaf16884e53929
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0efe2e34345cc335b8214b781da4dce608dddcc4c2f77e80d8c86f76007c2855
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073851"
 ---
-# <a name="rtmdeleteroute-function"></a>RtmDeleteRoute (funzione)
+# <a name="rtmdeleteroute-function"></a>Funzione RtmDeleteRoute
 
-\[Questa API è stata sostituita dall'API di [Gestione tabelle di routing versione 2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API di Routing Table Manager versione 2.\]
+\[Questa API è stata sostituita dall'API di Gestione tabelle di routing versione [2](about-routing-table-manager-version-2.md) e non sarà disponibile oltre Windows Server 2003. Le applicazioni devono usare l'API gestione tabelle di routing versione 2.\]
 
-La funzione **RtmDeleteRoute** Elimina una voce di route.
+La **funzione RtmDeleteRoute** elimina una voce di route.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,25 +45,25 @@ DWORD RtmDeleteRoute(
 
 <dl> <dt>
 
-*ClientHandle* \[ in\]
+*ClientHandle* \[ Pollici\]
 </dt> <dd>
 
-Handle che identifica il client e quindi il protocollo di routing della route aggiunta o aggiornata. Ottenere questo handle chiamando [**RtmRegisterClient**](rtmregisterclient.md).
+Handle che identifica il client e quindi il protocollo di routing della route aggiunta o aggiornata. Ottenere questo handle chiamando [**RtmRegisterClient.**](rtmregisterclient.md)
 
 </dd> <dt>
 
-*Route* \[ in\]
+*Route* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura specifica della famiglia di protocolli che specifica la route nuova o aggiornata. I campi seguenti vengono utilizzati da Gestione tabelle di routing per aggiornare la tabella di routing:
+Puntatore a una struttura specifica della famiglia di protocolli che specifica la route nuova o aggiornata. I campi seguenti vengono usati dal gestore tabelle di routing per aggiornare la tabella di routing:
 
 
 
 | Valore                                                                                                                                                                                                         | Significato                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <span id="RR_Network"></span><span id="rr_network"></span><span id="RR_NETWORK"></span><dl> <dt>**\_Rete RR**</dt> </dl>                             | Specifica il numero di rete di destinazione. <br/>                                 |
-| <span id="RR_InterfaceID"></span><span id="rr_interfaceid"></span><span id="RR_INTERFACEID"></span><dl> <dt>**\_INTERFACEID RR**</dt> </dl>             | Specifica l'indice dell'interfaccia tramite la quale è stata ricevuta la route.<br/> |
-| <span id="RR_NextHopAddress"></span><span id="rr_nexthopaddress"></span><span id="RR_NEXTHOPADDRESS"></span><dl> <dt>**\_NEXTHOPADDRESS RR**</dt> </dl> | Specifica l'indirizzo di rete del router di hop successivo.<br/>                      |
+| <span id="RR_Network"></span><span id="rr_network"></span><span id="RR_NETWORK"></span><dl> <dt>**Rete \_ RR**</dt> </dl>                             | Specifica il numero di rete di destinazione. <br/>                                 |
+| <span id="RR_InterfaceID"></span><span id="rr_interfaceid"></span><span id="RR_INTERFACEID"></span><dl> <dt>**RR \_ InterfaceID**</dt> </dl>             | Specifica l'indice dell'interfaccia tramite cui è stata ricevuta la route.<br/> |
+| <span id="RR_NextHopAddress"></span><span id="rr_nexthopaddress"></span><span id="RR_NEXTHOPADDRESS"></span><dl> <dt>**RR \_ NextHopAddress**</dt> </dl> | Specifica l'indirizzo di rete del router dell'hop successivo.<br/>                      |
 
 
 
@@ -71,18 +71,18 @@ Puntatore a una struttura specifica della famiglia di protocolli che specifica l
 
 </dd> <dt>
 
-*Flag* \[ out\]
+*Flag* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un set di flag che indicano il tipo del messaggio di modifica e le informazioni inserite nei buffer specificati. Questo parametro è uno dei valori seguenti.
+Puntatore a un set di flag che indicano il tipo del messaggio di modifica e le informazioni inserite nei buffer forniti. Questo parametro è uno dei valori seguenti.
 
 
 
 | Flags                                                                                                                                                                      | Significato                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RTM_NO_CHANGE"></span><span id="rtm_no_change"></span><dl> <dt>**\_Nessuna \_ modifica RTM**</dt> </dl>             | L'eliminazione della route non influisce sul percorso migliore per qualsiasi rete di destinazione. In altre parole, un'altra voce rappresenta una route per la stessa rete di destinazione e ha una metrica inferiore.<br/> |
-| <span id="RTM_ROUTE_DELETED"></span><span id="rtm_route_deleted"></span><dl> <dt>**\_route RTM \_ eliminata**</dt> </dl> | La route eliminata è l'unica route disponibile per una determinata rete di destinazione.<br/>                                                                                                  |
-| <span id="RTM_ROUTE_CHANGED"></span><span id="rtm_route_changed"></span><dl> <dt>**\_route RTM \_ modificata**</dt> </dl> | Una volta eliminata questa route, un'altra route è stata il percorso migliore a una determinata rete di destinazione. *CurBestRoute* punta alle informazioni per la nuova route migliore.<br/>               |
+| <span id="RTM_NO_CHANGE"></span><span id="rtm_no_change"></span><dl> <dt>**RTM \_ NO \_ CHANGE**</dt> </dl>             | L'eliminazione della route non influisce sulla route migliore verso una rete di destinazione. In altre parole, un'altra voce rappresenta una route alla stessa rete di destinazione e ha una metrica inferiore.<br/> |
+| <span id="RTM_ROUTE_DELETED"></span><span id="rtm_route_deleted"></span><dl> <dt>**ROUTE RTM \_ \_ ELIMINATA**</dt> </dl> | La route eliminata era l'unica route disponibile per una particolare rete di destinazione.<br/>                                                                                                  |
+| <span id="RTM_ROUTE_CHANGED"></span><span id="rtm_route_changed"></span><dl> <dt>**ROUTE RTM \_ \_ MODIFICATA**</dt> </dl> | Dopo l'eliminazione di questa route, un'altra route è diventata la route migliore per una determinata rete di destinazione. *CurBestRoute* punta alle informazioni per la nuova route migliore.<br/>               |
 
 
 
@@ -90,18 +90,18 @@ Puntatore a un set di flag che indicano il tipo del messaggio di modifica e le i
 
 </dd> <dt>
 
-*CurBestRoute* \[ out\]
+*CurBestRoute* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura che riceve le informazioni sulla route migliore correnti, se presenti. Il tipo della struttura è specifico per la famiglia di protocolli, ad esempio, IP o IPX.
+Puntatore a una struttura che riceve le informazioni correnti sulla route migliore, se presenti. Il tipo della struttura è specifico della famiglia di protocolli, ad esempio IP o IPX.
 
-Questo parametro è facoltativo. Se il chiamante specifica **null** per questo parametro, non vengono restituite le informazioni relative alla route più recenti.
+Questo parametro è facoltativo. Se il chiamante specifica **NULL per** questo parametro, le informazioni correnti sulla route migliore non vengono restituite.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito **non è un \_ errore**.
+Se la funzione ha esito positivo, il valore restituito è **NO \_ ERROR.**
 
 Se la funzione ha esito negativo, il valore restituito è uno dei codici di errore seguenti.
 
@@ -109,10 +109,10 @@ Se la funzione ha esito negativo, il valore restituito è uno dei codici di erro
 
 | Valore                                                                                                       | Descrizione                                                                                            |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ERRORE \_ handle non valido \_**</dt> </dl>       | Il parametro dell'handle client non è un handle valido.<br/>                                          |
-| <dl> <dt>**ERRORE \_ parametro non valido \_**</dt> </dl>    | La struttura di route a cui fa riferimento il parametro di *Route* contiene un valore del membro.<br/>            |
-| <dl> <dt>**ERRORE \_ di \_ tale \_ Route**</dt> </dl>       | Non sono presenti voci nella tabella di routing che corrispondono ai parametri della route specificata.<br/> |
-| <dl> <dt>**ERRORE \_ senza \_ risorse di sistema \_**</dt> </dl> | Risorse insufficienti per eseguire l'operazione. <br/>                                 |
+| <dl> <dt>**ERRORE \_ HANDLE NON \_ VALIDO**</dt> </dl>       | Il parametro dell'handle client non è un handle valido.<br/>                                          |
+| <dl> <dt>**ERRORE \_ PARAMETRO NON \_ VALIDO**</dt> </dl>    | La struttura di route a cui punta il *parametro Route* contiene un valore del membro.<br/>            |
+| <dl> <dt>**ERRORE: \_ NESSUNA ROUTE DI QUESTO \_ \_ TIPO**</dt> </dl>       | Nella tabella di routing non sono presenti voci corrispondenti ai parametri della route specificata.<br/> |
+| <dl> <dt>**ERRORE \_ NESSUNA RISORSA DI \_ \_ SISTEMA**</dt> </dl> | Risorse insufficienti per eseguire l'operazione. <br/>                                 |
 
 
 
@@ -120,7 +120,7 @@ Se la funzione ha esito negativo, il valore restituito è uno dei codici di erro
 
 ## <a name="remarks"></a>Commenti
 
-La funzione genera un messaggio di modifica della route se la route migliore a una rete di destinazione è cambiata in seguito all'eliminazione. Tuttavia, il messaggio di modifica della route non viene inviato al client che effettua questa chiamata. Al contrario, le informazioni rilevanti vengono restituite direttamente da questa funzione a tale client.
+La funzione genera un messaggio di modifica della route se la route migliore verso una rete di destinazione è stata modificata in seguito all'eliminazione. Tuttavia, il messaggio di modifica della route non viene inviato al client che effettua questa chiamata. Al contrario, le informazioni rilevanti vengono restituite da questa funzione direttamente a tale client.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -131,8 +131,8 @@ La funzione genera un messaggio di modifica della route se la route migliore a u
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -141,10 +141,10 @@ La funzione genera un messaggio di modifica della route se la route migliore a u
 
 <dl> <dt>
 
-[Riferimento di gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
+[Informazioni di riferimento su Gestione tabelle di routing versione 1](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funzioni di Routing Table Manager versione 1](routing-table-manager-version-1-functions.md)
+[Funzioni di Gestione tabelle di routing versione 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**RtmAddRoute**](rtmaddroute.md)

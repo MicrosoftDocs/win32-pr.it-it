@@ -1,27 +1,27 @@
 ---
-description: La modalità di scrittura degli eventi in una sessione di traccia è determinata dal tipo del provider.
+description: La modalità di scrittura degli eventi in una sessione di traccia è determinata dal tipo di provider.
 ms.assetid: 346f9c96-9ea8-41ea-8953-a1dc23732215
 title: Scrittura di eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ffe7ab0ae1b7e5425527b804cc17a27dac0b20b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: c1b4518cfc7e63b35243674271ec7fc46a5799e8f1799cf03ad412e77cf915f7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078281"
 ---
 # <a name="writing-events"></a>Scrittura di eventi
 
-La modalità di scrittura degli eventi in una sessione di traccia è determinata dal tipo del provider.
+La modalità di scrittura degli eventi in una sessione di traccia è determinata dal tipo di provider.
 
-Per i provider [MOF](about-event-tracing.md) , vedere [scrittura di eventi MOF (classico)](tracing-events.md).
+Per [i provider MOF,](about-event-tracing.md) vedere [Scrittura di eventi MOF (versione classica).](tracing-events.md)
 
-Per i provider [WPP](about-event-tracing.md) , vedere [scrittura di eventi WPP](windows-software-trace-preprocessor.md).
+Per [i provider WPP,](about-event-tracing.md) vedere [Scrittura di eventi WPP](windows-software-trace-preprocessor.md).
 
-Per i provider [basati su manifesto](about-event-tracing.md) , vedere [scrittura di eventi basati su manifesto](writing-manifest-based-events.md).
+Per [i provider basati su manifesto,](about-event-tracing.md) vedere Scrittura di eventi basati su [manifesto](writing-manifest-based-events.md).
 
-Per i provider [TraceLogging](about-event-tracing.md) , vedere [uso di TraceLogging](../tracelogging/tracelogging-using-tracelogging.md).
+Per [i provider TraceLogging,](about-event-tracing.md) vedere [Uso di TraceLogging](../tracelogging/tracelogging-using-tracelogging.md).
 
  
 

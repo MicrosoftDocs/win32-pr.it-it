@@ -1,12 +1,12 @@
 ---
-title: TriggerCollection. Remove (metodo)
-description: Per gli script, rimuove il trigger specificato dalla raccolta di trigger utilizzati dall'attività.
+title: Metodo TriggerCollection.Remove
+description: Per lo scripting, rimuove il trigger specificato dalla raccolta di trigger usati dall'attività.
 ms.assetid: 30dccf16-2b4c-4776-9c19-f82ddd859d45
 keywords:
-- trigger Utilità di pianificazione, rimozione
+- trigger Utilità di pianificazione , rimozione
 - Rimuovere il metodo Utilità di pianificazione
 - Rimuovere il metodo Utilità di pianificazione, oggetto TriggerCollection
-- TriggerCollection, oggetto Utilità di pianificazione, Remove (metodo)
+- Oggetto TriggerCollection Utilità di pianificazione, metodo Remove
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 401e84e57b28db9b08fd7e93e85fb7bc35f60647
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1ff3fda5119f4b487ba7f04546ea94e0a601a4749e1aa6aad7a9120907cd6cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099646"
 ---
-# <a name="triggercollectionremove-method"></a>TriggerCollection. Remove (metodo)
+# <a name="triggercollectionremove-method"></a>Metodo TriggerCollection.Remove
 
-Per gli script, rimuove il trigger specificato dalla raccolta di trigger utilizzati dall'attività.
+Per lo scripting, rimuove il trigger specificato dalla raccolta di trigger usati dall'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ TriggerCollection.Remove( _
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
 Indice del trigger da rimuovere.
@@ -56,7 +56,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella raccolta è 1 e l'indice per l'ultimo elemento è il valore della proprietà [**TriggerCollection. Count**](triggercollection-count.md) .
+Quando si rimuovono elementi, si noti che l'indice per il primo elemento della raccolta è 1 e l'indice per l'ultimo elemento è il valore [**della proprietà TriggerCollection.Count.**](triggercollection-count.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella r
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

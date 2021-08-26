@@ -1,26 +1,26 @@
 ---
-title: Funzioni di joystick multimediali
-description: Funzioni di joystick multimediali
+title: Funzioni di Joystick multimediali
+description: Funzioni di Joystick multimediali
 ms.assetid: 84e47ac3-b40f-48bc-8f59-cc678d7d521e
 keywords:
-- Multimedia di Windows, funzioni joystick
-- Multimedia, funzioni joystick
-- input multimediale, funzioni joystick
-- joystick, funzioni
-- informazioni di riferimento per i joystick, le funzioni
-- riferimento al joystick, funzioni
+- Windows multimediali, funzioni di joystick
+- multimediali, funzioni di joystick
+- input multimediale, funzioni di joystick
+- rossetti, funzioni
+- informazioni di riferimento per i joystick, funzioni
+- informazioni di riferimento sul joystick, funzioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce0a8ac3013a6f8f0f5e409a6886ea1bfe773fd
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 10598942f0ddae03e0ae17b788a5575d93dbfd23e6461c6e946f61e6a150aae0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038711"
 ---
-# <a name="multimedia-joystick-functions"></a>Funzioni di joystick multimediali
+# <a name="multimedia-joystick-functions"></a>Funzioni di Joystick multimediali
 
-Le funzioni seguenti vengono usate con i joystick multimediali.
+Le funzioni seguenti vengono usate con i tasti multimediali.
 
 -   [**joyConfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
 -   [**joyGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
@@ -36,9 +36,9 @@ Le funzioni seguenti vengono usate con i joystick multimediali.
 
 <dl> <dt>
 
-[Riferimento al joystick](joystick-reference.md)
+[Informazioni di riferimento sul rossetto](joystick-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

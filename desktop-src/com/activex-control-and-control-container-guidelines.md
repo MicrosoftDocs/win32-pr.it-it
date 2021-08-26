@@ -1,6 +1,6 @@
 ---
-title: ActiveX Linee guida per i contenitori di controlli e controlli
-description: ActiveX Linee guida per i contenitori di controlli e controlli
+title: ActiveX Linee guida per il controllo e il controllo dei contenitori
+description: ActiveX Linee guida per il controllo e il controllo dei contenitori
 ms.assetid: fffb71bd-fcb3-49b0-9e12-a30d4cf96a00
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,11 +11,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120097091"
 ---
-# <a name="activex-control-and-control-container-guidelines"></a>ActiveX Linee guida per i contenitori di controlli e controlli
+# <a name="activex-control-and-control-container-guidelines"></a>ActiveX Linee guida per il controllo e il controllo dei contenitori
 
-Gli argomenti seguenti forniscono linee guida per l'implementazione ActiveX controlli e contenitori che interagisceranno bene con altri controlli e contenitori. Questa sezione definisce il set minimo di interfacce, metodi e funzionalità necessari per i controlli e i contenitori di ActiveX per ottenere un'interoperabilità semplice e utile.
+Gli argomenti seguenti forniscono linee guida per l'implementazione ActiveX controlli e contenitori che interagisceranno bene con altri controlli e contenitori. Questa sezione definisce il set minimo di interfacce, metodi e funzionalità necessari per ActiveX e contenitori per garantire un'interoperabilità facile e utile.
 
--   [Panoramica delle linee guida per i contenitori di controlli e controlli](overview-of-control-and-control-container-guidelines.md)
+-   [Panoramica delle linee guida per il controllo e il controllo dei contenitori](overview-of-control-and-control-container-guidelines.md)
 -   [Controlli](controls.md)
 -   [Contenitori](containers.md)
 -   [Categorie di componenti](component-categories.md)

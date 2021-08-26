@@ -1,7 +1,7 @@
 ---
-description: Imposta il peso della combinazione di priorità usato dal controller di animazione.
+description: Imposta il peso di fusione della priorità usato dal controller di animazione.
 ms.assetid: b053024b-f219-48b3-906e-161d9cf47556
-title: 'Metodo ID3DXAnimationController:: SetPriorityBlend (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::SetPriorityBlend (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4c820858041c730f971ce2821698f86e6ff2c31
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e52c08d0731bc89135df4547fcfc88e94b56b826d2ccab338576a22651376d94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069111"
 ---
-# <a name="id3dxanimationcontrollersetpriorityblend-method"></a>Metodo ID3DXAnimationController:: SetPriorityBlend
+# <a name="id3dxanimationcontrollersetpriorityblend-method"></a>Metodo ID3DXAnimationController::SetPriorityBlend
 
-Imposta il peso della combinazione di priorità usato dal controller di animazione.
+Imposta il peso di fusione della priorità usato dal controller di animazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT SetPriorityBlend(
 
 <dl> <dt>
 
-*BlendWeight* \[ in\]
+*BlendWeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Peso della combinazione di priorità usato dal controller di animazione.
+Peso di fusione della priorità usato dal controller di animazione.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Peso della combinazione di priorità usato dal controller di animazione.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Commenti
 
-Il peso della Blend viene usato per unire le tracce con priorità alta e bassa.
+Il peso della fusione viene usato per unire le tracce con priorità alta e bassa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Il peso della Blend viene usato per unire le tracce con priorità alta e bassa.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

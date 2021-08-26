@@ -1,9 +1,9 @@
 ---
-title: Messaggio TCM_GETITEMCOUNT (COMmctrl. h)
-description: Recupera il numero di schede nel controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro TabCtrl GetItemCount.
+title: TCM_GETITEMCOUNT messaggio (Commctrl.h)
+description: Recupera il numero di schede nel controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro TabCtrl \_ GetItemCount.
 ms.assetid: a8ec7d66-fe44-45ca-8f6c-4e75752ebe95
 keywords:
-- Controlli di Windows Message TCM_GETITEMCOUNT
+- TCM_GETITEMCOUNT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d638a9be81581605b978695c8504f538967c77f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b9bbb954c75a19f15ecee9f946e338a186b6e9903a405aa1c550fb0ccc31392
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104881"
 ---
-# <a name="tcm_getitemcount-message"></a>\_Messaggio TCM GETITEMCOUNT
+# <a name="tcm_getitemcount-message"></a>Messaggio GETITEMCOUNT di TCM \_
 
-Recupera il numero di schede nel controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**TabCtrl \_ GetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemcount) .
+Recupera il numero di schede nel controllo Struttura a schede. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**TabCtrl \_ GetItemCount.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getitemcount)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce il numero di elementi in caso di esito positivo oppure zero in caso 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Questo argomento definisce gli identificatori di calendario (tipo di dati CALId) usati per specificare calendari diversi.
+description: In questo argomento vengono definiti gli identificatori di calendario (tipo di dati CALID) utilizzati per specificare calendari diversi.
 ms.assetid: ba2e841e-e24e-476a-851e-a29b3af4f04d
-title: Identificatori del calendario
+title: Identificatori di calendario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab9b931aea4a186af0849dfe8f6642c53744d364
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5f9f21aeff1143c4f981e3bfae20214f1b86e86307f7f32b103a19ef99b9803
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083031"
 ---
-# <a name="calendar-identifiers"></a>Identificatori del calendario
+# <a name="calendar-identifiers"></a>Identificatori di calendario
 
-Questo argomento definisce gli identificatori di calendario (tipo di dati CALId) usati per specificare calendari diversi. Le applicazioni possono usare questi identificatori quando usano le funzioni NLS e le funzioni di callback seguenti, che hanno parametri che accettano il tipo di dati CALId:
+In questo argomento vengono definiti gli identificatori di calendario (tipo di dati CALID) utilizzati per specificare calendari diversi. Le applicazioni possono usare questi identificatori quando si usano le funzioni NLS e le funzioni di callback seguenti, che hanno parametri che accettano il tipo di dati CALID:
 
 -   [**ConvertSystemTimeToCalDateTime**](convertsystemtimetocaldatetime.md)
 -   [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa)
@@ -31,106 +31,106 @@ Vengono definiti i valori seguenti. Tutti gli altri valori sono riservati. Quest
 
 
 
-Identificatore calendario
+Identificatore del calendario
 
 Significato
 
 1
 
-\_gregoriano Cal
+GREGORIANO \_ CAL
 
 Gregoriano (localizzato)
 
 2
 
-CAL \_ Gregorian \_ US
+CAL \_ \_ GREGORIANO US
 
-Gregoriano (stringhe inglesi sempre)
+Gregoriano (stringhe in inglese sempre)
 
 3
 
-CAL \_ Giappone
+CAL \_ JAPAN
 
-Era giapponese imperatore
+Japanese Emperor Era
 
 4
 
-CAL \_ Taiwan
+CAL \_ TAIWAN
 
-Calendario di Taiwan
+Calendario taiwanese
 
 5
 
-CAL \_ Corea
+COREA DI \_ CAL
 
-Era Tangun coreano
+Korean Tangun Era
 
 6
 
-\_Hijri Cal
+CAL \_ HIJRI
 
-Hijri (arabo lunare)
+Hijri (lunare arabo)
 
 7
 
-CAL \_ Thai
+CAL \_ THAI
 
 Thai
 
 8
 
-\_inglese Cal
+CAL \_ EBRAICO
 
 Ebraico (lunare)
 
 9
 
-CAL \_ gregoriano \_ \_ francese
+CAL \_ GREGORIAN \_ ME \_ FRENCH
 
 Gregorian Middle East French
 
 10
 
-CAL \_ gregoriano \_ arabo
+CAL \_ \_ GREGORIANO ARABO
 
 Gregorian Arabic
 
 11
 
-CAL \_ gregoriano \_ XLIT \_ inglese
+CAL \_ GREGORIANO \_ XLIT \_ ENGLISH
 
-Lingua inglese (gregoriano) traslitterato
+Inglese traslitterato gregoriano
 
 12
 
-CAL \_ gregoriano \_ XLIT \_ francese
+CAL \_ GREGORIANO \_ XLIT \_ FRANCESE
 
-Gregoriano traslitterato francese
+Francese traslitterato gregoriano
 
 23
 
-\_UMALQURA Cal
+CAL \_ UMALQURA
 
-**Windows Vista e versioni successive:** Calendario Um al Qura (arabo lunare)
+**Windows Vista e versioni successive:** Calendario Um Al Qura (lunare arabo)
 
 
 
  
 
 > [!Note]  
-> Il gap di numerazione tra gli identificatori CAL \_ gregoriano \_ XLIT \_ francese e Cal \_ UMALQURA è intenzionale. L'indicatore per CAL \_ UMALQURA è 23, non 13.
+> Il divario nella numerazione tra gli identificatori CAL \_ GREGORIAN \_ XLIT \_ FRENCH e CAL \_ UMALQURA è intenzionale. L'elemento designato per CAL \_ UMALQURA è 23, non 13.
 
  
 
-Inoltre, [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa) e [**EnumCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa) consentono l'uso del valore enum \_ All \_ Calendars per richiedere un'enumerazione di tutti i calendari applicabili.
+Inoltre, [**EnumCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa) ed [**EnumCalendarInfoEx**](/windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa) consentono l'uso del valore ENUM ALL CALENDARS per richiedere un'enumerazione di tutti i \_ \_ calendari applicabili.
 
 Valore
 
 Significato
 
-0xFFFFFFFF
+0xffffffff
 
-ENUMERA \_ tutti i \_ calendari
+ENUMERAZIONE \_ DI TUTTI \_ I CALENDARI
 
 Tutti i calendari applicabili per le impostazioni locali specificate
 

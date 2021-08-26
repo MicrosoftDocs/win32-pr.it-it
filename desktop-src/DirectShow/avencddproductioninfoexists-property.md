@@ -1,17 +1,17 @@
 ---
 description: Specifica il flag di informazioni di produzione audio in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 ms.assetid: 72f5f988-37c3-40d4-9c1c-07086e60ea51
-title: Proprietà AVEncDDProductionInfoExists (codecapis. h)
+title: Proprietà AVEncDDProductionInfoExists (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5069c8d30f0266b0727f735ede822be491c4a4a2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7d9d0341cf97b4641dc2ece7e93408e527458235620b32b7e25abe583a67c2ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103471"
 ---
-# <a name="avencddproductioninfoexists-property"></a>Proprietà AVEncDDProductionInfoExists
+# <a name="avencddproductioninfoexists-property"></a>AVEncDDProductionInfoExists - proprietà
 
 Specifica il flag di informazioni di produzione audio in un flusso audio Dolby Digital. Questa proprietà si applica ai codificatori audio Dolby Digital.
 
@@ -19,15 +19,15 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncDDProductionInfoExists**
+**CODECAPI \_ AVEncDDProductionInfoExists**
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore è **Variant \_ true**, le impostazioni del livello di combinazione e del tipo di chat sono valide. Specificare queste impostazioni con le proprietà [**AVEncDDProductionRoomType**](avencddproductionroomtype-property.md) e [**AVEncDDProductionMixLevel**](avencddproductionmixlevel-property.md) .
+Se il valore è **VARIANT \_ TRUE,** le impostazioni del livello di combinazione e del tipo di stanza sono valide. Specificare queste impostazioni con le [**proprietà AVEncDDProductionRoomType**](avencddproductionroomtype-property.md) e [**AVEncDDProductionMixLevel.**](avencddproductionmixlevel-property.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ Se il valore è **Variant \_ true**, le impostazioni del livello di combinazione
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Se il valore è **Variant \_ true**, le impostazioni del livello di combinazione
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

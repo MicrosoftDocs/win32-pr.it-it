@@ -4,29 +4,29 @@ ms.assetid: 1d9072dc-4f9b-4111-a747-5eb33ad3ae5b
 title: Acquisizione di un flusso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 371d4b92b97a26e81074edee68216255d576e614
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6dda6fd8527acbfff4072a2b79854eca4c32541f57d462b6073f9f6f39854ddb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059031"
 ---
 # <a name="capturing-a-stream"></a>Acquisizione di un flusso
 
-Il client chiama i metodi nell'interfaccia [**IAudioCaptureClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiocaptureclient) per leggere i dati acquisiti da un buffer dell'endpoint. Il client condivide il buffer dell'endpoint con il motore audio in modalità condivisa e con il dispositivo audio in modalità esclusiva. Per richiedere un buffer dell'endpoint di una determinata dimensione, il client chiama il metodo [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) . Per ottenere le dimensioni del buffer allocato, che potrebbe essere diverso dalla dimensione richiesta, il client chiama il metodo [**IAudioClient:: GetBufferSize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getbuffersize) .
+Il client chiama i metodi [**nell'interfaccia IAudioCaptureClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudiocaptureclient) per leggere i dati acquisiti da un buffer dell'endpoint. Il client condivide il buffer dell'endpoint con il motore audio in modalità condivisa e con il dispositivo audio in modalità esclusiva. Per richiedere un buffer dell'endpoint di una determinata dimensione, il client chiama il [**metodo IAudioClient::Initialize.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) Per ottenere la dimensione del buffer allocato, che potrebbe essere diversa dalla dimensione richiesta, il client chiama il [**metodo IAudioClient::GetBufferSize.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getbuffersize)
 
-Per spostare un flusso di dati acquisiti tramite il buffer dell'endpoint, il client chiama in modo alternativo il metodo [**IAudioCaptureClient:: GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e il metodo [**IAudioCaptureClient:: ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer) . Il client accede ai dati nel buffer dell'endpoint come una serie di pacchetti di dati. La chiamata a **GetBuffer** Recupera il pacchetto successivo di dati acquisiti dal buffer. Dopo aver letto i dati dal pacchetto, il client chiama **ReleaseBuffer** per rilasciare il pacchetto e renderlo disponibile per più dati acquisiti.
+Per spostare un flusso di dati acquisiti tramite il buffer dell'endpoint, il client chiama in alternativa il metodo [**IAudioCaptureClient::GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e il [**metodo IAudioCaptureClient::ReleaseBuffer.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer) Il client accede ai dati nel buffer dell'endpoint come una serie di pacchetti di dati. La **chiamata GetBuffer** recupera il pacchetto successivo di dati acquisiti dal buffer. Dopo aver letto i dati dal pacchetto, il client chiama **ReleaseBuffer** per rilasciare il pacchetto e renderlo disponibile per più dati acquisiti.
 
-Le dimensioni del pacchetto possono variare da una chiamata a [**GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) a quella successiva. Prima di chiamare **GetBuffer**, il client ha la possibilità di chiamare il metodo [**IAudioCaptureClient:: GetNextPacketSize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getnextpacketsize) per ottenere in anticipo le dimensioni del pacchetto successivo. Inoltre, il client può chiamare il metodo [**IAudioClient:: GetCurrentPadding**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getcurrentpadding) per ottenere la quantità totale di dati acquisiti disponibili nel buffer. In qualsiasi istante, le dimensioni del pacchetto sono sempre inferiori o uguali alla quantità totale di dati acquisiti nel buffer.
+Le dimensioni del pacchetto possono variare da [**una chiamata GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) alla successiva. Prima di **chiamare GetBuffer,** il client ha la possibilità di chiamare il metodo [**IAudioCaptureClient::GetNextPacketSize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getnextpacketsize) per ottenere in anticipo le dimensioni del pacchetto successivo. Inoltre, il client può chiamare il metodo [**IAudioClient::GetCurrentPadding**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getcurrentpadding) per ottenere la quantità totale di dati acquisiti disponibili nel buffer. In qualsiasi momento, la dimensione del pacchetto è sempre minore o uguale alla quantità totale di dati acquisiti nel buffer.
 
 Durante ogni passaggio di elaborazione, il client ha la possibilità di elaborare i dati acquisiti in uno dei modi seguenti:
 
--   Il client chiama in alternativa [**GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e [**ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer), leggendo un pacchetto con ogni coppia di chiamate, finché **GetBuffer** restituisce AUDCNT \_ S \_ BUFFEREMPTY, a indicare che il buffer è vuoto.
--   Il client chiama [**GetNextPacketSize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getnextpacketsize) prima di ogni coppia di chiamate a [**GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e [**ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer) fino a quando **GetNextPacketSize** segnala una dimensione del pacchetto pari a 0, che indica che il buffer è vuoto.
+-   In alternativa, il client chiama [**GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e [**ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer)leggendo un pacchetto con ogni coppia di chiamate, fino a quando **GetBuffer** non restituisce AUDCNT \_ S BUFFEREMPTY, a indicare che il buffer è \_ vuoto.
+-   Il client chiama [**GetNextPacketSize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getnextpacketsize) prima di ogni coppia di chiamate a [**GetBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-getbuffer) e [**ReleaseBuffer**](/windows/desktop/api/Audioclient/nf-audioclient-iaudiocaptureclient-releasebuffer) finché **GetNextPacketSize non** segnala una dimensione del pacchetto pari a 0, a indicare che il buffer è vuoto.
 
 Le due tecniche producono risultati equivalenti.
 
-Nell'esempio di codice seguente viene illustrato come registrare un flusso audio dal dispositivo di acquisizione predefinito:
+L'esempio di codice seguente illustra come registrare un flusso audio dal dispositivo di acquisizione predefinito:
 
 
 ```C++
@@ -169,20 +169,20 @@ Exit:
 
 
 
-Nell'esempio precedente, la funzione RecordAudioStream accetta un solo parametro, `pMySink` , che è un puntatore a un oggetto che appartiene a una classe definita dal client, MyAudioSink, con due funzioni, CopyData e Formatter. Il codice di esempio non include l'implementazione di MyAudioSink perché:
+Nell'esempio precedente la funzione RecordAudioStream accetta un solo parametro, , ovvero un puntatore a un oggetto che appartiene a una classe definita dal `pMySink` client, MyAudioSink, con due funzioni, CopyData e SetFormat. Il codice di esempio non include l'implementazione di MyAudioSink perché:
 
--   Nessuno dei membri della classe comunica direttamente con uno dei metodi nelle interfacce in WASAPI.
+-   Nessuno dei membri della classe comunica direttamente con nessuno dei metodi nelle interfacce in WASAPI.
 -   La classe può essere implementata in diversi modi, a seconda dei requisiti del client. Ad esempio, potrebbe scrivere i dati di acquisizione in un file WAV.
 
 Tuttavia, le informazioni sul funzionamento dei due metodi sono utili per comprendere l'esempio.
 
-La funzione CopyData copia un numero specificato di frame audio da una posizione del buffer specificata. La funzione RecordAudioStream usa la funzione CopyData per leggere e salvare i dati audio dal buffer condiviso. La funzione seformatt specifica il formato per la funzione CopyData da utilizzare per i dati.
+La funzione CopyData copia un numero specificato di fotogrammi audio da una posizione del buffer specificata. La funzione RecordAudioStream usa la funzione CopyData per leggere e salvare i dati audio dal buffer condiviso. La funzione SetFormat specifica il formato per la funzione CopyData da usare per i dati.
 
-Finché l'oggetto MyAudioSink richiede dati aggiuntivi, la funzione CopyData restituisce il valore **false** tramite il terzo parametro, che, nell'esempio di codice precedente, è un puntatore alla variabile `bDone` . Quando l'oggetto MyAudioSink dispone di tutti i dati necessari, la funzione CopyData imposta `bDone` su **true**, che fa sì che il programma esca dal ciclo nella funzione RecordAudioStream.
+Se l'oggetto MyAudioSink richiede dati aggiuntivi, la funzione CopyData restituisce il valore **FALSE** tramite il terzo parametro, che, nell'esempio di codice precedente, è un puntatore alla variabile `bDone` . Quando l'oggetto MyAudioSink contiene tutti i dati necessari, la funzione CopyData imposta su TRUE, causando l'uscita del programma dal ciclo nella `bDone` funzione RecordAudioStream. 
 
-La funzione RecordAudioStream alloca un buffer condiviso con una durata di un secondo. Il buffer allocato potrebbe avere una durata leggermente superiore. All'interno del ciclo principale, la chiamata alla funzione di [**sospensione**](/windows/desktop/api/synchapi/nf-synchapi-sleep) di Windows fa sì che il programma attenda un mezzo secondo. All'inizio di ogni chiamata di **sospensione** , il buffer condiviso è vuoto o quasi vuoto. Quando la chiamata di **sospensione** viene restituita, il buffer condiviso è circa la metà dei dati di acquisizione.
+La funzione RecordAudioStream alloca un buffer condiviso con una durata di un secondo. Il buffer allocato potrebbe avere una durata leggermente più lunga. All'interno del ciclo principale, la chiamata alla funzione Windows [**Sospensione**](/windows/desktop/api/synchapi/nf-synchapi-sleep) fa sì che il programma attenda mezzo secondo. All'inizio di ogni **chiamata Sleep,** il buffer condiviso è vuoto o quasi vuoto. Quando la chiamata Sleep viene **restituita,** il buffer condiviso è circa la metà riempito con i dati di acquisizione.
 
-Dopo la chiamata al metodo [**IAudioClient:: Initialize**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) , il flusso rimane aperto finché il client non rilascia tutti i relativi riferimenti all'interfaccia [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) e a tutti i riferimenti alle interfacce del servizio ottenute dal client tramite il metodo [**IAudioClient:: GetService**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getservice) . La chiamata alla [**versione**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) finale chiude il flusso.
+Dopo la chiamata al metodo [**IAudioClient::Initialize,**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-initialize) il flusso rimane aperto fino a quando il client non rilascia tutti i relativi riferimenti [**all'interfaccia IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) e a tutti i riferimenti alle interfacce del servizio ottenute dal client tramite il [**metodo IAudioClient::GetService.**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getservice) La chiamata [**release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) finale chiude il flusso.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
