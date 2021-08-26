@@ -1,9 +1,9 @@
 ---
-title: Elemento Task (DefinitionType)
-description: Definisce un evento specifico dell'attività che il provider è in grado di registrare. | Elemento Task (DefinitionType)
+title: Elemento task (DefinitionType)
+description: Definisce un evento specifico dell'attività che il provider può registrare. | Elemento task (DefinitionType)
 ms.assetid: 0e880720-1896-43cf-b702-cabca8ab1430
 keywords:
-- EventLog elemento attività
+- Elemento task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 35fe629c17b8ede4064de3fb11d05c8e8c84f202
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9cdd0cfbf1cd9295b3ac3ff1cc12c087819974c82c7510c7558519aec471b18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005951"
 ---
-# <a name="task-definitiontype-element"></a>Elemento Task (DefinitionType)
+# <a name="task-definitiontype-element"></a>Elemento task (DefinitionType)
 
-\[A partire dal compilatore di messaggi fornito con la versione di Windows 7 del Windows SDK, questo elemento non è più disponibile.\]
+\[A partire dal compilatore di messaggi fornito con la versione Windows 7 di Windows SDK, questo elemento non è più disponibile.\]
 
-Definisce un evento specifico dell'attività che il provider è in grado di registrare.
+Definisce un evento specifico dell'attività che il provider può registrare.
 
 ``` syntax
 <xs:element name="task"
@@ -32,7 +32,7 @@ Definisce un evento specifico dell'attività che il provider è in grado di regi
  />
 ```
 
-L'elemento **Task** è definito dal tipo complesso [**DefinitionType**](eventmanifestschema-definitiontype-complextype.md) .
+**L'elemento** task è definito dal [**tipo complesso DefinitionType.**](eventmanifestschema-definitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,8 +40,8 @@ L'elemento **Task** è definito dal tipo complesso [**DefinitionType**](eventman
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -52,7 +52,7 @@ L'elemento **Task** è definito dal tipo complesso [**DefinitionType**](eventman
 **Elemento padre**
 </dt> <dt>
 
-[**eventi (ProviderType)**](eventmanifestschema-events-providertype-element.md)
+[**events (ProviderType)**](eventmanifestschema-events-providertype-element.md)
 </dt> </dl>
 
  

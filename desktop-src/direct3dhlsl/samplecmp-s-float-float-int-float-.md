@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleCmp:: SampleCmp (S, float, float, int, float) per Texture2D'
-description: Questa funzione esegue il campionamento di un Texture2D usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+title: Funzione SampleCmp::SampleCmp(S,float,float,int,float) per Texture2D
+description: Questa funzione campionare un oggetto Texture2D usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione.
 ms.assetid: 1B5E6559-2524-4557-8F43-7AF258C39FB2
 keywords:
 - Funzione SampleCmp HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9df6a84fff7c6988ed9333584a7196fa06ad30ec
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0dfd7e15b49eac739c069ea113c8daca996e7eb48e6b769f4b27934f891cbda7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104982782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023491"
 ---
-# <a name="samplecmpsamplecmpsfloatfloatintfloat-function-for-texture2d"></a>Funzione SampleCmp:: SampleCmp (S, float, float, int, float) per Texture2D
+# <a name="samplecmpsamplecmpsfloatfloatintfloat-function-for-texture2d"></a>Funzione SampleCmp::SampleCmp(S,float,float,int,float) per Texture2D
 
-Esegue il campionamento di un [**Texture2D**](sm5-object-texture2d.md), usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+Campionare [**un oggetto Texture2D**](sm5-object-texture2d.md)usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori del livello di dettaglio del campione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,11 +48,11 @@ DXGI_FORMAT SampleCmp(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -61,7 +61,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| tipo Texture-Object                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -74,27 +74,27 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore a virgola mobile da utilizzare come valore di confronto.
+Valore a virgola mobile da usare come valore di confronto.
 
 </dd> <dt>
 
-*Offset* \[ in\]
+*Offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
 
-Offset della coordinata di trama facoltativo che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato al percorso prima del campionamento. Usare un offset solo in un miplevel Integer; in caso contrario, è possibile ottenere risultati che non si traducono correttamente nell'hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applying Integer offsets](dx-graphics-hlsl-to-sample.md).
+Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel; In caso contrario, è possibile che si otterrà un risultato che non si traduce bene in hardware. Il tipo di argomento dipende dal tipo di oggetto trama. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Tipo di Texture-Object           | Tipo di parametro |
+| tipo Texture-Object           | Tipo di parametro |
 |-------------------------------|----------------|
-| Texture1D, Texture1DArray     | INT            |
+| Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
 | Texture3D                     | int3           |
 | TextureCube, TextureCubeArray | non supportato  |
@@ -105,20 +105,20 @@ Offset della coordinata di trama facoltativo che può essere usato per qualsiasi
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo a cui stringere i valori LOD di esempio. Ad esempio, se si passa 2.0f per il valore clamp, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, ovvero uno dei valori tipi di dati elencati in [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Vedi anche
 

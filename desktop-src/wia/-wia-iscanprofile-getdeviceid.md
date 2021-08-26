@@ -1,7 +1,7 @@
 ---
 description: Restituisce l'ID del dispositivo.
 ms.assetid: 72a0843d-36f2-463f-8269-0e91233f1931
-title: 'Metodo IScanProfile:: GetDeviceID (scanprofile. h)'
+title: Metodo IScanProfile::GetDeviceID (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: fb0e2597164cb0a82c15cecf394ce7a9e0bec16d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 484c9a53542b0f7b62c00ca030b4bee9276914dce28bd3034865f308ba80705e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007611"
 ---
-# <a name="iscanprofilegetdeviceid-method"></a>Metodo IScanProfile:: GetDeviceID
+# <a name="iscanprofilegetdeviceid-method"></a>Metodo IScanProfile::GetDeviceID
 
 Restituisce l'ID del dispositivo.
 
@@ -39,20 +39,20 @@ HRESULT GetDeviceID(
 
 <dl> <dt>
 
-*pbstrDeviceID* \[ out\]
+*pbstrDeviceID* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
-Puntatore all'ID del dispositivo.
+Puntatore all'ID dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,10 +60,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

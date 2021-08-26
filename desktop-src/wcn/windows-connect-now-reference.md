@@ -1,35 +1,35 @@
 ---
-title: Informazioni di riferimento su Windows Connect Now
-description: Le sezioni seguenti descrivono gli elementi di programmazione inclusi nell'API di Windows Connect Now (WCNAPI).
+title: Windows Connect Now Riferimento
+description: Le sezioni seguenti descrivono gli elementi di programmazione inclusi nell'API Windows Connect Now (WCNAPI).
 ms.assetid: f67332ec-5c74-4862-b77e-7fa84511ad31
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c65cac4a56ac424010e5f874af285b6dbc7a3839
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ef1c4abc7f3bd927b1b2efbd47ba642d19720aed6ae9f30ed397db3c6edba5c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007761"
 ---
-# <a name="windows-connect-now-reference"></a>Informazioni di riferimento su Windows Connect Now
+# <a name="windows-connect-now-reference"></a>Windows Connect Now Riferimento
 
-Le sezioni seguenti descrivono gli elementi di programmazione inclusi nell' [API di Windows Connect Now](portal.md) (WCNAPI).
+Le sezioni seguenti descrivono gli elementi di programmazione inclusi [nell'API Windows Connect Now](portal.md) (WCNAPI).
 
 
 
 | Sezione                                                                  | Descrizione                                            |
 |--------------------------------------------------------------------------|--------------------------------------------------------|
-| [Enumerazioni di Windows Connect Now](windows-connect-now-enumerations.md) | Enumerazioni definite dall'API di Windows Connect Now.   |
-| [Strutture di Windows Connect Now](windows-connect-now-structures.md)     | Strutture supportate dall'API di Windows Connect Now.   |
-| [Interfacce di Windows Connect Now](windows-connect-now-interfaces.md)     | Interfacce implementate dall'API di Windows Connect Now. |
+| [Windows Connect Now Enumerazioni](windows-connect-now-enumerations.md) | Enumerazioni definite dall'API Windows Connect Now.   |
+| [Windows Connect Now Strutture](windows-connect-now-structures.md)     | Strutture supportate dall'API Windows Connect Now.   |
+| [Windows Connect Now Interfacce](windows-connect-now-interfaces.md)     | Interfacce implementate dall'API Windows Connect Now. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

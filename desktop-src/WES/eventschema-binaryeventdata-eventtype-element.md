@@ -3,7 +3,7 @@ title: Elemento BinaryEventData (EventType)
 description: Contiene i dati dell'evento come BLOB binario.
 ms.assetid: 6b083604-e97e-4fb5-bf98-5897cafc2b68
 keywords:
-- EventLog elemento BinaryEventData
+- Elemento BinaryEventData EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 148d7e42a1600863ad422d689e3b229b7e77ef9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5feab3a41752e132ce503bd293cbef32774272d5739205cb74f126972bcbee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005591"
 ---
 # <a name="binaryeventdata-eventtype-element"></a>Elemento BinaryEventData (EventType)
 
@@ -30,7 +30,7 @@ Contiene i dati dell'evento come BLOB binario.
  />
 ```
 
-L'elemento **BinaryEventData** è definito dal tipo complesso [**eventType**](eventschema-eventtype-complextype.md) .
+**L'elemento BinaryEventData** è definito dal [**tipo complesso EventType.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **BinaryEventData** è definito dal tipo complesso [**eventType**](ev
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

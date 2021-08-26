@@ -1,19 +1,19 @@
 ---
-title: emitThenCut (SM4-ASM)
-description: Equivale a un comando Emit seguito da un comando Cut. | emitThenCut (SM4-ASM)
+title: emitThenCut (sm4 - asm)
+description: Equivale a un comando emit seguito da un comando cut. | emitThenCut (sm4 - asm)
 ms.assetid: 80DE112A-790A-4DDF-A5BE-51F70BD7872C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb5b413ca11e22c7cfc17691fc0a39fe96bf7c0f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ab83fa3eca853a75dca74ef32116e3d13da2dbe76f34fa407f9b0d5f2459d66a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023861"
 ---
-# <a name="emitthencut-sm4---asm"></a>emitThenCut (SM4-ASM)
+# <a name="emitthencut-sm4---asm"></a>emitThenCut (sm4 - asm)
 
-Equivale a un comando [Emit](emit--sm4---asm-.md) seguito da un comando [Cut](cut--sm4---asm-.md) .
+Equivale a un [comando emit](emit--sm4---asm-.md) seguito da un [comando cut.](cut--sm4---asm-.md)
 
 
 
@@ -26,11 +26,11 @@ Equivale a un comando [Emit](emit--sm4---asm-.md) seguito da un comando [Cut](cu
 
 ## <a name="remarks"></a>Commenti
 
-Questo comando è utile in caso di output noto dell'ultimo vertice in una topologia.
+Questo comando è utile quando si restituisce consapevolmente l'ultimo vertice in una topologia.
 
-Se i flussi sono stati dichiarati, è necessario usare il [ \_ flusso emitthencut](emitthencut-stream--sm5---asm-.md).
+Se i flussi sono stati dichiarati, è necessario usare [emitthencut \_ stream](emitthencut-stream--sm5---asm-.md).
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -42,20 +42,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -65,7 +65,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

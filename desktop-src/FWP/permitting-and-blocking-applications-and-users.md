@@ -1,19 +1,19 @@
 ---
-title: Consentire e bloccare applicazioni e utenti
-description: Il codice di esempio seguente illustra come aggiungere un filtro che restituisce l'ID dell'utente o dell'applicazione.
+title: Autorizzazione e blocco di applicazioni e utenti
+description: Il codice di esempio seguente illustra come aggiungere un filtro che valuta in base all'ID utente o all'applicazione.
 ms.assetid: f1ca483e-cf60-499f-8a4a-29656ed9503a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f00ddd6f1d5f7a7515abbdb32047c530dd5c3db4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aa513809b294451235c5e14cf8b7c79bf41ca754b27134e9366ffce77b4c7cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078491"
 ---
-# <a name="permitting-and-blocking-applications-and-users"></a>Consentire e bloccare applicazioni e utenti
+# <a name="permitting-and-blocking-applications-and-users"></a>Autorizzazione e blocco di applicazioni e utenti
 
-Nell'esempio di codice riportato di seguito viene illustrato come aggiungere un filtro che restituisce l'ID dell'utente o dell'applicazione.
+Il codice di esempio seguente illustra come aggiungere un filtro che valuta in base all'ID utente o all'applicazione.
 
 
 ```C++
@@ -155,9 +155,9 @@ CLEANUP:
 [**Condizioni di filtro disponibili a ogni livello di filtro**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

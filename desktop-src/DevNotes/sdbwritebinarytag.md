@@ -1,7 +1,7 @@
 ---
 description: Scrive dati binari nel database specificato.
 ms.assetid: 935321b8-904e-46be-ad11-77d89670a072
-title: SdbWriteBinaryTag (funzione)
+title: Funzione SdbWriteBinaryTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e79de8549eb4c0a0f1b8a914c59d21ccfb3bcf7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06900cf49445b52c519b04f88ffc6d5b3ba539404bf64bd7f820a502f70ec2e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044851"
 ---
-# <a name="sdbwritebinarytag-function"></a>SdbWriteBinaryTag (funzione)
+# <a name="sdbwritebinarytag-function"></a>Funzione SdbWriteBinaryTag
 
 Scrive dati binari nel database specificato.
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbWriteBinaryTag(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tTag* \[ in\]
+*tTag* \[ Pollici\]
 </dt> <dd>
 
-TAG per la voce. Questo TAG deve essere di tipo **tag \_ \_ Binary**.
+TAG per la voce. Questo TAG deve essere di tipo **TAG \_ TYPE \_ BINARY.**
 
 </dd> <dt>
 
-*pbuffer* \[ in\]
+*pBuffer* \[ Pollici\]
 </dt> <dd>
 
-Buffer che contiene i dati. Questo parametro non può essere **null**.
+Buffer che contiene i dati. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*dwSize* \[ in\]
+*dwSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer *pbuffer* .
+Dimensioni del buffer *pBuffer,* in byte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

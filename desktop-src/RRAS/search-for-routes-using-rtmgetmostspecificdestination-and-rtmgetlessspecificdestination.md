@@ -1,19 +1,19 @@
 ---
-title: Cercare le route usando un albero di prefisso
-description: Il codice di esempio seguente illustra come usare RtmGetMostSpecificDestination e RtmGetLessSpecificDestination per esaminare l'albero dei prefissi nella tabella di routing.
+title: Cercare route usando un albero di prefissi
+description: Il codice di esempio seguente illustra come usare RtmGetMostSpecificDestination e RtmGetLessSpecificDestination per visualizzare l'albero dei prefissi nella tabella di routing.
 ms.assetid: 14e8e87f-c76c-48ad-93b5-0d8a711148d6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a4c2f5573718dafa4be4d95e309e95546123027
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa132946812a5f945c1aca31c1e20518348f3b3140030c631a5f0f9c62b2db19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035601"
 ---
-# <a name="search-for-routes-using-a-prefix-tree"></a>Cercare le route usando un albero di prefisso
+# <a name="search-for-routes-using-a-prefix-tree"></a>Cercare route usando un albero di prefissi
 
-Il codice di esempio seguente illustra come usare [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) e [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) per esaminare l'albero dei prefissi nella tabella di routing.
+Il codice di esempio seguente illustra come usare [**RtmGetMostSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetmostspecificdestination) e [**RtmGetLessSpecificDestination**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetlessspecificdestination) per visualizzare l'albero dei prefissi nella tabella di routing.
 
 
 ```C++
@@ -81,9 +81,9 @@ while (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

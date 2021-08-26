@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3648be71cded740a1aae01e325a525d94baa9cec
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: c7aaba2cbfad2385560e195d5b78648294ef97c9c71b98a54b958cc8e0ee8721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022891"
 ---
 # <a name="span-idvspixengineipixelhistoryrequestspanipixelhistoryrequest-interface"></a><span id="vspixengine.ipixelhistoryrequest"></span>Interfaccia IPixelHistoryRequest
 
@@ -36,15 +36,15 @@ Non usato. In precedenza era una richiesta di primitive e intersezioni della cro
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **IPixelHistoryRequest.**
+**L'interfaccia IPixelHistoryRequest** include questi metodi.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest-requestasync-dword-point2d-dword-ipixelhistorycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di risultati della cronologia dei pixel nel pixel specificato, nel rendering di tartget /UAV e nel frame specificati.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixelhistoryrequest-requestasync-dword-point2d-dword-ipixelhistorycallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Richiede un elenco di risultati della cronologia pixel nel pixel specificato, esegue il rendering di tartget /UAV e frame specificati.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -1,47 +1,47 @@
 ---
-title: Attributo Origin (asimmetria) (la)
-description: Attributo Origin (asimmetria) (la)
+title: Attributo origin (Skew)(VML)
+description: Attributo origin (Skew)(VML)
 ms.assetid: 36f77073-7438-41b3-9107-95e27b01b776
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbf0c134ad8e7000e71a4237a6b5aac80e874c12
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8c0706e80a05682fbee7937f06a2d1267c028674536ef64534f6679004a34831
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007581"
 ---
-# <a name="origin-attribute-skewvml"></a>Attributo Origin (asimmetria) (la)
+# <a name="origin-attribute-skewvml"></a>Attributo origin (Skew)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Definisce l'origine dell'asimmetria. Proprietà di lettura/scrittura. **VgVector2D**.
+Definisce l'origine dell'a inclinazione. Proprietà di lettura/scrittura. **VgVector2D**.
 
 **Si applica a**
 
-[Sfasamento](msdn-online-vml-skew-element.md)
+[Inclinazione](msdn-online-vml-skew-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<o: *element* Origin = " *Expression* " >
+<o: *element* origin=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Origin = "*espressione * * *"**
+*element* .origin="*expression***"**
 
-*espressione* = *elemento*. Origin
+*expression* = *elemento*.origin
 
 **Osservazioni:**
 
-I valori sono in genere una percentuale delle dimensioni della forma e variano da-0,5 a + 0,5. Sono consentiti valori maggiori che assegnano offset come multipli della dimensione della forma. Il valore predefinito è 0, 0.
+I valori sono in genere una percentuale delle dimensioni e dell'intervallo della forma da -0,5 a +0,5. Sono consentiti valori più grandi che forniscono offset come multipli delle dimensioni della forma. Il valore predefinito è 0,0.
 
-*Attributo Microsoft Office Extensions*
+*Microsoft Office Attributo Extensions*
 
- 
+ 
 
- 
+ 

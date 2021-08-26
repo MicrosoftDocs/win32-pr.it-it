@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo seproperties specifica il numero di buffer da allocare e le dimensioni di ogni buffer. Questo metodo implementa il metodo IMemAllocator:: SetValue.'
+description: Il metodo SetProperties specifica il numero di buffer da allocare e le dimensioni di ogni buffer. Questo metodo implementa il metodo IMemAllocator::SetProperties.
 ms.assetid: f53c22a4-c01d-4d2f-81f0-bedf8f2ae5f0
-title: Metodo CBaseAllocator. seproperties (Amfilter. h)
+title: Metodo CBaseAllocator.SetProperties (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 000da3ee359ad727e3af972fc4aa6d0dbbb9133e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d81ee1c29f1c9e2cc9927f926144a7427b5e94f72406f94ce65f7d4a20e2ab32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057481"
 ---
-# <a name="cbaseallocatorsetproperties-method"></a>Metodo CBaseAllocator. seproperties
+# <a name="cbaseallocatorsetproperties-method"></a>Metodo CBaseAllocator.SetProperties
 
-Il `SetProperties` metodo specifica il numero di buffer da allocare e le dimensioni di ogni buffer. Questo metodo implementa il metodo [**IMemAllocator::**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties) SetValue.
+Il `SetProperties` metodo specifica il numero di buffer da allocare e le dimensioni di ogni buffer. Questo metodo implementa il [**metodo IMemAllocator::SetProperties.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-setproperties)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,30 +46,30 @@ HRESULT SetProperties(
 *pRequest* 
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ proprietà dell'allocatore**](/windows/win32/api/strmif/ns-strmif-allocator_properties) che contiene i requisiti del buffer.
+Puntatore a una [**struttura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) che contiene i requisiti del buffer.
 
 </dd> <dt>
 
 *pActual* 
 </dt> <dd>
 
-Puntatore a una struttura di **\_ proprietà dell'allocatore** che riceve le proprietà effettive del buffer.
+Puntatore a **una struttura ALLOCATOR \_ PROPERTIES** che riceve le proprietà effettive del buffer.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori **HRESULT** .
+Restituisce uno dei valori **HRESULT** seguenti.
 
 
 
 | Codice restituito                                                                                                 | Descrizione                                                           |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                        | Esito positivo.<br/>                                                   |
-| <dl> <dt>**\_puntatore E**</dt> </dl>                   | Argomento puntatore **null** .<br/>                                 |
-| <dl> <dt>**è \_ \_ già stato \_ eseguito il commit di VFW**</dt> </dl>   | Non è possibile modificare la memoria allocata mentre il filtro è attivo.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                        | Operazione completata.<br/>                                                   |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>                   | Argomento del puntatore **NULL.**<br/>                                 |
+| <dl> <dt>**VFW \_ E \_ ALREADY \_ COMMITTED**</dt> </dl>   | Impossibile modificare la memoria allocata mentre il filtro è attivo.<br/> |
 | <dl> <dt>**VFW \_ E \_ BADALIGN**</dt> </dl>             | È stato specificato un allineamento non valido.<br/>                        |
-| <dl> <dt>**\_buffer VFW E in \_ \_ attesa**</dt> </dl> | Uno o più buffer sono ancora attivi.<br/>                      |
+| <dl> <dt>**BUFFER E VFW \_ \_ IN \_ SOSPESO**</dt> </dl> | Uno o più buffer sono ancora attivi.<br/>                      |
 
 
 
@@ -77,11 +77,11 @@ Restituisce uno dei seguenti valori **HRESULT** .
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo specifica i requisiti del buffer, ma non alloca i buffer. Chiamare il metodo [**CBaseAllocator:: commit**](cbaseallocator-commit.md) per allocare i buffer.
+Questo metodo specifica i requisiti del buffer, ma non alloca alcun buffer. Chiamare il [**metodo CBaseAllocator::Commit**](cbaseallocator-commit.md) per allocare buffer.
 
-Il chiamante alloca due strutture delle proprietà dell'ALLOCAtore \_ . Il parametro *pRequest* contiene i requisiti del buffer del chiamante, inclusi il numero di buffer e le dimensioni di ogni buffer. Quando il metodo viene restituito, il parametro *pActual* contiene le proprietà del buffer effettive, impostate dall'allocatore. Nella classe di base, supponendo che il metodo abbia esito positivo, le proprietà effettive corrispondono sempre alle proprietà richieste. Le classi derivate potrebbero ignorare questo comportamento.
+Il chiamante alloca due strutture \_ ALLOCATOR PROPERTIES. Il *parametro pRequest* contiene i requisiti del buffer del chiamante, inclusi il numero di buffer e le dimensioni di ogni buffer. Quando il metodo viene restituito, *il parametro pActual* contiene le proprietà effettive del buffer, come impostato dall'allocatore. Nella classe di base, supponendo che il metodo abbia esito positivo, le proprietà effettive corrispondono sempre alle proprietà richieste. Le classi derivate potrebbero eseguire l'override di questo comportamento.
 
-L'allocatore non deve essere sottoposta a commit e non deve avere buffer in attesa. Nella classe di base, l'allineamento deve essere uguale a 1. La classe [**CMemAllocator**](cmemallocator.md) esegue l'override di questo requisito.
+Non è necessario eseguire il commit dell'allocatore e non devono essere in attesa di buffer. Nella classe di base l'allineamento deve essere uguale a 1. La [**classe CMemAllocator**](cmemallocator.md) esegue l'override di questo requisito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ L'allocatore non deve essere sottoposta a commit e non deve avere buffer in atte
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

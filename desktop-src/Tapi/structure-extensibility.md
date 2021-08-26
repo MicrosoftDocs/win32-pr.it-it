@@ -4,12 +4,12 @@ ms.assetid: d30f80c3-3535-4d78-b0a1-c9a7389f8fd4
 title: Estendibilità della struttura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ec7e71154ad2550a595e59763bec3a25dd6f20a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 378defd35304f6745d42723a44e21c0aa56a34e1f6c40c2f96d5f6743d61b805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991721"
 ---
 # <a name="structure-extensibility"></a>Estendibilità della struttura
 

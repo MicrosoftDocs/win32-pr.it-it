@@ -1,22 +1,22 @@
 ---
-description: Nell'esempio seguente viene illustrato come codificare un semplice gestore di callback per ricevere messaggi di stato Windows Installer durante un'installazione.
+description: Nell'esempio seguente viene illustrato come codificare un semplice gestore di callback per ricevere Windows di stato del programma di installazione durante un'installazione.
 ms.assetid: ae1589ae-0ad7-4314-8bf1-c8ad51eac5a2
 title: Gestione dei messaggi di stato tramite MsiSetExternalUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30cab15cbbed030ecaa43f7c034df4661555243d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87a0d91a38bc89511a3119a30bdd3b229b1094ce2aa834c17ea84a9cc6aabb59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044221"
 ---
 # <a name="handling-progress-messages-using-msisetexternalui"></a>Gestione dei messaggi di stato tramite MsiSetExternalUI
 
-Nell'esempio seguente viene illustrato come codificare un semplice gestore di callback per ricevere messaggi di stato Windows Installer durante un'installazione.
+Nell'esempio seguente viene illustrato come codificare un semplice gestore di callback per ricevere Windows di stato del programma di installazione durante un'installazione.
 
 > [!Note]  
-> Quando si usa [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) con un tipo di messaggio INSTALLMESSAGE \_ FilesInUse, il messaggio inviato alla funzione del gestore dell'interfaccia utente esterno non contiene informazioni sui file in uso o sui titoli delle finestre usati dalla finestra di dialogo [filesinus](filesinuse-dialog.md) . Per ottenere informazioni, è necessario usare [**MsiSetExternalUIRecord**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) .
+> Quando si usa [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) con un tipo di messaggio INSTALLMESSAGE FILESINUSE, il messaggio inviato alla funzione del gestore dell'interfaccia utente esterna non contiene informazioni sui file in uso o sui titoli delle finestre usati dalla finestra di dialogo \_ [FilesInUse.](filesinuse-dialog.md) È consigliabile [**usare MsiSetExternalUIRecord per**](/windows/desktop/api/Msi/nf-msi-msisetexternaluirecord) ottenere informazioni.
 
  
 

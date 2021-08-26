@@ -1,28 +1,28 @@
 ---
-title: Configurazione del servizio nome per Windows 3. x o MS-DOS
-description: RPC (Remote Procedure Call) e configurazione del servizio nome per Windows 3. x o MS-DOS.
+title: Configurazione del servizio dei nomi per Windows 3.x o MS-DOS
+description: Chiamata di procedura remota (RPC) e configurazione del servizio dei nomi per Windows 3.x o MS-DOS.
 ms.assetid: 7b22a12e-43d0-4e32-a191-d63a56559143
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 533a0d8556f9cc51d0842768d0df1bdd0d553b5d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24884c782913c47806c702ff129594c6524fe7c0e731561de405f3b6a360c7c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022431"
 ---
-# <a name="configuring-the-name-service-for-windows-3x-or-ms-dos"></a>Configurazione del servizio nome per Windows 3. x o MS-DOS
+# <a name="configuring-the-name-service-for-windows-3x-or-ms-dos"></a>Configurazione del servizio dei nomi per Windows 3.x o MS-DOS
 
 Quando si esegue Setup.exe per installare la libreria di runtime RPC a 16 bit, viene richiesto di selezionare un provider di servizi dei nomi:
 
--   Se si sceglie **install default name service provider**, viene installato il valore predefinito NSP, Microsoft Locator.
--   Se si sceglie **Installa provider di servizi nome personalizzato**, completare la finestra di dialogo **Definisci indirizzo di rete** per installare il servizio directory di celle DCE come NSP. Il servizio directory di celle DCE è il NSP usato con i server DCE.
+-   Se si sceglie Installa provider di servizi dei nomi **predefinito,** viene installato il provider di servizi di rete predefinito, Microsoft Locator.
+-   Se si sceglie Installa provider di  servizi di **nomi** personalizzati, completare la finestra di dialogo Definisci indirizzo di rete per installare dce cell directory service come provider di servizi di rete. DcE Cell Directory Service è il provider di servizi di rete usato con i server DCE.
 
-L'indirizzo di rete è il nome del computer host che esegue il daemon NSI (NSID). Questo computer funge da gateway per il servizio directory celle DCE, passando le chiamate di funzione NSI tra computer che eseguono sistemi operativi Microsoft e computer DCE. L'indirizzo di rete non può contenere più di 80 caratteri, ad esempio 11.1.9.169 è un indirizzo valido.
+L'indirizzo di rete è il nome del computer host che esegue il daemon NSI (nsid). Questo computer funge da gateway per dce cell directory service, passando chiamate di funzione NSI tra computer che eseguono sistemi operativi Microsoft e computer DCE. L'indirizzo di rete può contenere al massimo 80 caratteri, ad esempio 11.1.9.169 è un indirizzo valido.
 
- 
+ 
 
- 
+ 
 
 
 

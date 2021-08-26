@@ -1,25 +1,25 @@
 ---
-title: Esempio di codice in formato pixel GLX
-description: Nell'esempio di codice riportato di seguito viene illustrato il modo in cui un programma OpenGL di sistema X Window usa le funzioni di formattazione visiva/pixel GLX.
+title: Esempio di codice per il formato pixel GLX
+description: L'esempio di codice seguente illustra come un programma OpenGL X Window System usa le funzioni di formattazione visiva/pixel GLX.
 ms.assetid: f01193a9-c0ff-4399-a86e-06bb4603b3f1
 keywords:
-- porting in OpenGL, pixel
-- Porting OpenGL, pixel
-- Sistema finestra X, pixel
+- portabilità in OpenGL, pixel
+- Portabilità OpenGL, pixel
+- Sistema finestra X,pixel
 - Funzioni GLX, pixel
 - pixel, esempio GLX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f0ab6464d54e696c136a6c987b94124f52b0ee2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 312b95fb2ff4719c9ecda863b67ac926905b09d0e4b8aecbcc673a03c18c307a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035388"
 ---
-# <a name="glx-pixel-format-code-sample"></a>Esempio di codice in formato pixel GLX
+# <a name="glx-pixel-format-code-sample"></a>Esempio di codice per il formato pixel GLX
 
-Nell'esempio di codice riportato di seguito viene illustrato il modo in cui un programma OpenGL di sistema X Window usa le funzioni di formattazione visiva/pixel GLX.
+L'esempio di codice seguente illustra come un programma OpenGL X Window System usa le funzioni di formattazione visiva/pixel GLX.
 
 
 ```C++
@@ -38,11 +38,11 @@ static int attributes[] = {GLX_DEPTH_SIZE, 16, GLX_DOUBLEBUFFER, None};
 
 
 
-L'oggetto visivo può essere utilizzato per creare una finestra e un contesto di rendering.
+L'oggetto Visivo può essere usato per creare una finestra e un contesto di rendering.
 
- 
+ 
 
- 
+ 
 
 
 

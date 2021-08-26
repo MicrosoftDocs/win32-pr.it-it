@@ -1,9 +1,9 @@
 ---
-title: Elemento xmltypes (TypeListType)
+title: Elemento xmlTypes (TypeListType)
 description: Definisce un elenco di tipi di output utilizzati dal servizio per determinare come eseguire il rendering di un tipo di dati di input.
 ms.assetid: 780f522c-d819-4b74-b7eb-4d154eeddebc
 keywords:
-- elemento EventLog di xmltypes
+- Elemento xmlTypes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76ed163f1c947b7cf0481c7aa2b7e5c125f36b57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdbeff03626903a77ca9eb42b3b47969dbf84b66e0496f90ae2b279b13655141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005671"
 ---
-# <a name="xmltypes-typelisttype-element"></a>Elemento xmltypes (TypeListType)
+# <a name="xmltypes-typelisttype-element"></a>Elemento xmlTypes (TypeListType)
 
 Definisce un elenco di tipi di output utilizzati dal servizio per determinare come eseguire il rendering di un tipo di dati di input.
 
@@ -30,7 +30,7 @@ Definisce un elenco di tipi di output utilizzati dal servizio per determinare co
  />
 ```
 
-L'elemento **Xmltypes** viene definito dal tipo complesso [**TypeListType**](eventmanifestschema-typelisttype-complextype.md) .
+**L'elemento xmlTypes** è definito dal tipo complesso [**TypeListType.**](eventmanifestschema-typelisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Xmltypes** viene definito dal tipo complesso [**TypeListType**](eve
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Xmltypes** viene definito dal tipo complesso [**TypeListType**](eve
 **Elemento padre**
 </dt> <dt>
 
-[**tipi (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
+[**types (MetadataType)**](eventmanifestschema-types-metadatatype-element.md)
 </dt> </dl>
 
  

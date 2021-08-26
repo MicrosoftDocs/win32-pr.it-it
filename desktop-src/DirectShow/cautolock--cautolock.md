@@ -1,7 +1,7 @@
 ---
-description: Metodo del distruttore. Il distruttore Sblocca l'oggetto sezione critica.
+description: Metodo del distruttore. Il distruttore sblocca l'oggetto sezione critica.
 ms.assetid: 1148613e-03de-4c40-b7e5-cf5e9ca80f27
-title: Distruttore CAutoLock. ~ CAutoLock (Wxutil. h)
+title: Distruttore CAutoLock.~CAutoLock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4bace2c4a7c79755249e78fbecd0238e6f5961bd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 81ccad647e47f5805c8cdc7bc070c336864ec455275396631338d8265d5b144c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057531"
 ---
-# <a name="cautolockcautolock-destructor"></a>Distruttore CAutoLock. ~ CAutoLock
+# <a name="cautolockcautolock-destructor"></a>Distruttore CAutoLock.~CAutoLock
 
-Metodo del distruttore. Il distruttore Sblocca l'oggetto sezione critica.
+Metodo del distruttore. Il distruttore sblocca l'oggetto sezione critica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ Metodo del distruttore. Il distruttore Sblocca l'oggetto sezione critica.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

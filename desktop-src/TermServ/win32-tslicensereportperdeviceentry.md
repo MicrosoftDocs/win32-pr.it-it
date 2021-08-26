@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReportPerDeviceEntry
-description: Fornisce informazioni dettagliate sulla licenza di accesso client per dispositivo Servizi Desktop remoto non riuscita (RDS \ 160; Per ogni dispositivo CAL).
+title: Win32_TSLicenseReportPerDeviceEntry classe
+description: Fornisce informazioni dettagliate sull'errore Servizi Desktop remoto licenza di accesso client per dispositivo (Servizi Desktop remoto \ 160; Cal per dispositivo).
 ms.assetid: b26f2518-439c-4562-9492-a0cfa60c457a
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSLicenseReportPerDeviceEntry Servizi Desktop remoto
-- Classe Win32_TSLicenseReportPerDeviceEntry Servizi Desktop remoto, descritta
+- Win32_TSLicenseReportPerDeviceEntry classe Servizi Desktop remoto
+- Win32_TSLicenseReportPerDeviceEntry classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a120d477ff03675f160d94f1506f59cdf1462fa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfbcdad271a346820b318c94bed7ce6b9b9527d3fdd7df9cc3f1dc9d9a97aae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008421"
 ---
-# <a name="win32_tslicensereportperdeviceentry-class"></a>Win32 \_ TSLicenseReportPerDeviceEntry (classe)
+# <a name="win32_tslicensereportperdeviceentry-class"></a>Classe Win32 \_ TSLicenseReportPerDeviceEntry
 
-Fornisce informazioni dettagliate sul Servizi Desktop remoto non riuscito per ogni dispositivo CAL per dispositivo.
+Fornisce informazioni dettagliate sull'errore di Servizi Desktop remoto di accesso client per dispositivo (LICENZA CAL Per dispositivo di Servizi Desktop remoto).
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -52,20 +52,20 @@ class Win32_TSLicenseReportPerDeviceEntry
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSLicenseReportPerDeviceEntry** presenta questi tipi di membri:
+La **classe Win32 \_ TSLicenseReportPerDeviceEntry** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSLicenseReportPerDeviceEntry** dispone di queste proprietà.
+La **classe Win32 \_ TSLicenseReportPerDeviceEntry** ha queste proprietà.
 
 <dl> <dt>
 
 **CALType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -73,32 +73,32 @@ Tipo di accesso: sola lettura
 
 Specifica il tipo di licenza CAL rilasciata. Si tratta di uno dei valori seguenti.
 
-"Licenze CAL per dispositivo predefinite"
+"Licenza CAL TS per dispositivo incorporata"
 
-"Licenze CAL per dispositivo"
+"TS Per Device CAL"
 
-"CAL Internet Connector CAL"
+"TS Internet Connector CAL"
 
-"Licenza CAL per utente di servizi Terminal"
+"TS Per User CAL"
 
-Licenza CAL per dispositivo di Servizi terminal o RDS
+"TS o Servizi Desktop remoto per licenza CAL per dispositivo"
 
-Licenza CAL per utente di Servizi terminal o RDS
+"Licenza CAL Per Utente di Servizi Desktop remoto o Servizi Desktop remoto"
 
-"Licenza abbonamento VDI Standard Suite per dispositivo"
+"Licenza di sottoscrizione di VDI Standard Suite per dispositivo"
 
-"Licenza di sottoscrizione di VDI Premium Suite per dispositivo"
+"Licenza di sottoscrizione Premium Suite per dispositivo VDI"
 
-"RDS per dispositivo CAL"
+"Licenza CAL Servizi Desktop remoto per dispositivo"
 
-"CAL per utente per utente"
+"Licenza CAL Servizi Desktop remoto per utente"
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **DATETIME**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -111,20 +111,20 @@ Data di scadenza della licenza.
 **ProductVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL per utente. Si tratta di uno dei valori seguenti.
+La versione di Servizi Desktop remoto per cui è stata rilasciata la licenza CAL Per Utente di Servizi Desktop remoto. Si tratta di uno dei valori seguenti.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo i server che Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 sono supportati con questa licenza.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 "Windows Server 2008"
 </dt> <dd>
 
-Con questa licenza sono supportati solo i server che eseguono Windows Server 2008.
+Solo i server che Windows Server 2008 sono supportati con questa licenza.
 
 </dd> </dl>
 
@@ -147,13 +147,13 @@ Con questa licenza sono supportati solo i server che eseguono Windows Server 200
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore della versione del prodotto per il Key Pack di Servizi Desktop remoto License.
+Identificatore della versione del prodotto per il key pack Servizi Desktop remoto licenza.
 
 <dt>
 
@@ -197,13 +197,13 @@ Non supportata.
 **sHardwareId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identificatore hardware del computer.
@@ -213,13 +213,13 @@ Identificatore hardware del computer.
 **sIssuedToComputer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome del computer per cui è stato effettuato il tentativo di rilascio della licenza.
+Nome del computer per cui è stata tentata l'emissione della licenza.
 
 </dd> </dl>
 
@@ -232,7 +232,7 @@ Nome del computer per cui è stato effettuato il tentativo di rilascio della lic
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

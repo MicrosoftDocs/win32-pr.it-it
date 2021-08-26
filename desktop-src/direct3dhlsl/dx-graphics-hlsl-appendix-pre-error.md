@@ -1,9 +1,9 @@
 ---
-title: " Error (direttiva)"
-description: Direttiva per il preprocessore che produce messaggi di errore in fase di compilazione.
+title: " Direttiva error"
+description: Direttiva del preprocessore che genera messaggi di errore in fase di compilazione.
 ms.assetid: e32bcd6f-f2c1-43f7-a0bb-2c384b056492
 keywords:
-- Direttiva di errore HLSL
+- Direttiva error HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 362150e494398abbc708416e6bfca6aa83756c52
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5fa1af02a693b5168a2d96e653726fd0a468587bf2b8c1825afbf8e73057f61f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068331"
 ---
-# <a name="error-directive"></a>\#Error (direttiva)
+# <a name="error-directive"></a>\#Direttiva error
 
-Direttiva per il preprocessore che produce messaggi di errore in fase di compilazione.
+Direttiva del preprocessore che genera messaggi di errore in fase di compilazione.
 
 
 
-| \#*stringa di token di* errore |
+| \#*token-string di errore* |
 |------------------------|
 
 
@@ -39,7 +39,7 @@ Direttiva per il preprocessore che produce messaggi di errore in fase di compila
 
 | Elemento                                                                                    | Descrizione                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="token-string"></span><span id="TOKEN-STRING"></span>*stringa di token*<br/> | Messaggio di errore. Questo parametro è costituito da una serie di token, ad esempio parole chiave, costanti o istruzioni complete. La stringa del token è soggetta all'espansione della macro. <br/> |
+| <span id="token-string"></span><span id="TOKEN-STRING"></span>*token-string*<br/> | Messaggio di errore. Questo parametro è costituito da una serie di token, ad esempio parole chiave, costanti o istruzioni complete. La stringa del token è soggetta all'espansione della macro. <br/> |
 
 
 
@@ -47,7 +47,7 @@ Direttiva per il preprocessore che produce messaggi di errore in fase di compila
 
 ## <a name="remarks"></a>Commenti
 
-\#le direttive Error sono particolarmente utili per rilevare le incoerenze del programmatore e la violazione dei vincoli durante la pre-elaborazione. Quando \# viene rilevata una direttiva di errore, la compilazione viene terminata.
+\#Le direttive error sono particolarmente utili per rilevare le incoerenze del programmatore e la violazione dei vincoli durante la pre-elaborazione. Quando viene \# rilevata una direttiva error, la compilazione termina.
 
 ## <a name="examples"></a>Esempio
 

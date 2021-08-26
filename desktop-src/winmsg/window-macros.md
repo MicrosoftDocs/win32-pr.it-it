@@ -4,12 +4,12 @@ ms.assetid: 8b93bf4f-c9da-4edf-8bd8-cf9f39a0b79a
 title: Macro di finestra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc72518a7854c2c0b445e945d7e9eed93c0f745
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: caee078a57cdbd059e9ca30988fa51f3fe182b3331ca908ca3aeaa9387d68a0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056241"
 ---
 # <a name="window-macros"></a>Macro di finestra
 

@@ -1,45 +1,45 @@
 ---
-title: Problemi speciali di porting di IRIS GL
-description: Problemi speciali di porting di IRIS GL
+title: Problemi speciali di porting IRIS GL
+description: Problemi speciali di porting IRIS GL
 ms.assetid: dcf7967a-2867-4443-a1c8-8335c6fe016a
 keywords:
-- OpenGL per Windows, porting di IRIS GL
+- OpenGL in Windows,porting IRIS GL
 - porting in OpenGL, IRIS GL
 - Porting OpenGL, IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1273a873f3a39a5d237f9a5845a72f87156e001c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0ac9a7262bf00681c270cfe085ce8ac75e05b60eb8702a189f7d3ad36d2855f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034701"
 ---
-# <a name="special-iris-gl-porting-issues"></a>Problemi speciali di porting di IRIS GL
+# <a name="special-iris-gl-porting-issues"></a>Problemi speciali di porting IRIS GL
 
-Gli argomenti seguenti descrivono le tecniche per trasferire parti specifiche del codice di IRIS GL al codice OpenGL.
+Negli argomenti seguenti vengono descritte le tecniche per il porting di parti specifiche del codice IRIS GL nel codice OpenGL.
 
--   [Portabilità del porting](porting-greset.md)
--   [Porting delle funzioni "Get" di IRIS GL](porting-iris-gl-get-functions.md)
--   [Porting del codice che richiede una posizione grafica corrente](porting-code-that-requires-a-current-graphics-position.md)
--   [Porting di funzioni di disegno](porting-drawing-functions.md)
--   [Porting di colori, ombreggiatura e codice Writemask](porting-color--shading--and-writemask-code.md)
+-   [Porting greset](porting-greset.md)
+-   [Porting IRIS GL "Get" Functions](porting-iris-gl-get-functions.md)
+-   [Porting di codice che richiede una posizione grafica corrente](porting-code-that-requires-a-current-graphics-position.md)
+-   [Funzioni di disegno di porting](porting-drawing-functions.md)
+-   [Porting color, shading e writemask Code](porting-color--shading--and-writemask-code.md)
 -   [Porting di operazioni pixel](porting-pixel-operations.md)
--   [Porting di profondità e comandi di nebbia](porting-depth-cueing-and-fog-commands.md)
--   [Curva di porting e funzioni di superficie](porting-curve-and-surface-functions.md)
--   [Porting di funzioni di anti-aliasing](porting-antialiasing-functions.md)
--   [Porting di chiamate del buffer di accumulo](porting-accumulation-buffer-calls.md)
--   [Porting di chiamate del piano stencil](porting-stencil-plane-calls.md)
--   [Porting degli elenchi di visualizzazione](porting-display-lists.md)
--   [Porting di defs, binding e set](porting-defs--binds--and-sets.md)
--   [Porting di funzioni di illuminazione e materiali](porting-lighting-and-materials-functions.md)
--   [Porting di funzioni di trama](porting-texture-functions.md)
--   [Funzioni di selezione del porting](porting-picking-functions.md)
--   [Porting di funzioni di feedback](porting-feedback-functions.md)
+-   [Porting Depth Cueing and Fog Commands](porting-depth-cueing-and-fog-commands.md)
+-   [Funzioni curve e surface di porting](porting-curve-and-surface-functions.md)
+-   [Porting Antialiasing Functions](porting-antialiasing-functions.md)
+-   [Porting delle chiamate al buffer di accumulo](porting-accumulation-buffer-calls.md)
+-   [Porting di chiamate al piano di stencil](porting-stencil-plane-calls.md)
+-   [Porting di elenchi di visualizzazione](porting-display-lists.md)
+-   [Porting di def, associazioni e set](porting-defs--binds--and-sets.md)
+-   [Funzioni di porting di illuminazione e materiali](porting-lighting-and-materials-functions.md)
+-   [Funzioni di trame di porting](porting-texture-functions.md)
+-   [Porting delle funzioni di selezione](porting-picking-functions.md)
+-   [Funzioni di porting dei commenti e suggerimenti](porting-feedback-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

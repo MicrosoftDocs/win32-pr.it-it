@@ -1,11 +1,11 @@
 ---
-title: Proprietà DeviceExists di IMsRdpCameraRedirConfig
-description: Specifica se il dispositivo della fotocamera è attualmente esistente (ovvero la fotocamera è connessa).
+title: Proprietà DeviceExists IMsRdpCameraRedirConfig
+description: Specifica se il dispositivo fotocamera esiste attualmente, ovvero se la fotocamera è connessa.
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà DeviceExists
-- Servizi Desktop remoto proprietà DeviceExists, interfaccia IMsRdpCameraRedirConfig
-- Interfaccia IMsRdpCameraRedirConfig Servizi Desktop remoto, proprietà DeviceExists
+- Proprietà DeviceExists Servizi Desktop remoto
+- Proprietà DeviceExists Servizi Desktop remoto, interfaccia IMsRdpCameraRedirConfig
+- Interfaccia IMsRdpCameraRedirConfig Servizi Desktop remoto , proprietà DeviceExists
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 368b2d46e6dfc2c32c0bb294edceda31f8a58f4e
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 617c91491d88736ca60218d71f9dd5aa02ad0f9faeefdda6b872ba9262cec587
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104480564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990661"
 ---
-# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>IMsRdpCameraRedirConfig::D Proprietà eviceExists
+# <a name="imsrdpcameraredirconfigdeviceexists-property"></a>Proprietà IMsRdpCameraRedirConfig::D eviceExists
 
-Specifica se il dispositivo della fotocamera è attualmente esistente (ovvero la fotocamera è connessa).
+Specifica se il dispositivo fotocamera esiste attualmente, ovvero se la fotocamera è connessa.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ HRESULT get_DeviceExists(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore che indica se il dispositivo della fotocamera è attualmente esistente (ovvero la fotocamera è connessa).
+Valore che indica se il dispositivo fotocamera esiste attualmente, ovvero se la fotocamera è connessa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Valore che indica se il dispositivo della fotocamera è attualmente esistente (o
 | Client minimo supportato| Windows 10, versione 1803 (build 17134)      |
 | Libreria dei tipi            | MsTscAx.dll                        |
 | DLL                  | MsTscAx.dll     |
-| IID                      | IID \_ IMsRdpCameraRedirConfig è definito come 09750604-D625-47C1-9FCD-F09F735705D7            |
+| IID                      | IMsRdpCameraRedirConfig IID è definito come \_ 09750604-D625-47C1-9FCD-F09F735705D7            |
 
 ## <a name="see-also"></a>Vedi anche
 

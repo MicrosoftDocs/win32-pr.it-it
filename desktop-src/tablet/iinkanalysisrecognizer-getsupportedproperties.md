@@ -1,7 +1,7 @@
 ---
 description: Recupera gli identificatori univoci globali (GUID) per le proprietà che questo IInkAnalysisRecognizer può generare per i risultati dell'analisi.
 ms.assetid: 3a36bc6c-5067-4291-9119-bc6836d32c21
-title: 'Metodo IInkAnalysisRecognizer:: GetSupportedProperties (IACom. h)'
+title: Metodo IInkAnalysisRecognizer::GetSupportedProperties (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 5507e135241285b8f316d3ff3c2a4ef4d904296f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fce33317a234d82d6045dbefa93ed582d31d92f6ff54abe9ef87949559a5d269
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057861"
 ---
-# <a name="iinkanalysisrecognizergetsupportedproperties-method"></a>Metodo IInkAnalysisRecognizer:: GetSupportedProperties
+# <a name="iinkanalysisrecognizergetsupportedproperties-method"></a>Metodo IInkAnalysisRecognizer::GetSupportedProperties
 
 Recupera gli identificatori univoci globali (GUID) per le proprietà che questo [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) può generare per i risultati dell'analisi.
 
@@ -40,14 +40,14 @@ HRESULT GetSupportedProperties(
 
 <dl> <dt>
 
-*pulPropertiesCount* \[ in uscita\]
+*pulPropertiesCount* \[ in, out\]
 </dt> <dd>
 
-Numero di GUID in *ppProperties*.
+Numero di GUID in *ppProperties.*
 
 </dd> <dt>
 
-*ppProperties* \[ out\]
+*ppProperties* \[ Cambio\]
 </dt> <dd>
 
 Puntatore ai GUID delle proprietà che questo [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) può generare per i risultati dell'analisi.
@@ -56,16 +56,16 @@ Puntatore ai GUID delle proprietà che questo [**IInkAnalysisRecognizer**](iinka
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Caution]  
-> Per evitare una perdita di memoria, usare [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per rilasciare la memoria da \* *ppProperties* quando le informazioni non sono più necessarie.
+> Per evitare una perdita di memoria, usare [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per rilasciare la memoria da ppProperties quando le informazioni non \*  sono più necessarie.
 
  
 
-Un riconoscitore può supportare le metriche delle righe, i numeri di riga, i livelli di confidenza e così via. Per un elenco completo delle proprietà che un riconoscimento può supportare, vedere [costanti RecognitionProperty](recognitionproperty-constants.md).
+Un riconoscitore può supportare metriche di riga, numeri di riga, livelli di confidenza e così via. Per un elenco completo delle proprietà che un sistema di riconoscimento può supportare, vedere [Costanti RecognitionProperty.](recognitionproperty-constants.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Un riconoscitore può supportare le metriche delle righe, i numeri di riga, i li
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -90,7 +90,7 @@ Un riconoscitore può supportare le metriche delle righe, i numeri di riga, i li
 [Costanti RecognitionProperty](recognitionproperty-constants.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

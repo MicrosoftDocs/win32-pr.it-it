@@ -1,48 +1,48 @@
 ---
 title: Strutture di amministrazione RAS
-description: Le funzioni di amministrazione RAS utilizzano le strutture seguenti
+description: Le funzioni di amministrazione RAS usano le strutture seguenti
 ms.assetid: 858fcdd8-6587-41c4-a2d7-c871722562e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94e7b8e1330f5a080d7cef43853c1acb79a4cf28
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03bc6ea00d2d74442a0fb4dc4fa2703b4e9940a21d9a91ee73992f207c94e837
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036291"
 ---
 # <a name="ras-administration-structures"></a>Strutture di amministrazione RAS
 
-Le [funzioni di amministrazione RAS](ras-administration-functions.md) utilizzano le strutture seguenti:
+Le [funzioni di amministrazione RAS](ras-administration-functions.md) usano le strutture seguenti:
 
 <dl>
 
-[**callback di MPRAPI \_ admin \_ dll \_**](/windows/desktop/api/Mprapi/ns-mprapi-mprapi_admin_dll_callbacks)  
-[**\_informazioni ATCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_atcp_info)  
-[**\_informazioni sul CCP PPP \_**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ccp_info)  
-[**\_informazioni PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info)  
-[**\_Informazioni PPP \_ 2**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info_2)  
-[**\_Informazioni PPP \_ 3**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info_3)  
-[**\_informazioni protocollo IPCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipcp_info)  
-[**\_INFO2 protocollo IPCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipcp_info2)  
-[**\_Informazioni sul \_ CP \_ IPv6 PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipv6_cp_info)  
-[**\_informazioni IPXCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipxcp_info)  
-[**\_informazioni LCP per PPP \_**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_lcp_info)  
-[**\_informazioni NBFCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_nbfcp_info)  
-[**\_Connessione RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_0)  
-[**\_Connessione RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_1)  
-[**\_Connessione RAS \_ 2**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_2)  
-[**\_Connessione RAS \_ 3**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_3)  
-[**\_connessione RAS \_ ex**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_ex)  
-[**\_Porta RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0)  
-[**\_Porta RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1)  
-[**\_Utente RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_user_0)  
-[**\_Utente RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_user_1)  
+[**CALLBACK DELLA \_ DLL DI \_ AMMINISTRAZIONE MPRAPI \_**](/windows/desktop/api/Mprapi/ns-mprapi-mprapi_admin_dll_callbacks)  
+[**PPP \_ ATCP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_atcp_info)  
+[**PPP \_ CCP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ccp_info)  
+[**INFORMAZIONI \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info)  
+[**PPP \_ INFO \_ 2**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info_2)  
+[**PPP \_ INFO \_ 3**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_info_3)  
+[**INFORMAZIONI \_ IPCP \_ PPP**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipcp_info)  
+[**PPP \_ IPCP \_ INFO2**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipcp_info2)  
+[**PPP \_ IPV6 \_ CP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipv6_cp_info)  
+[**PPP \_ IPXCP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_ipxcp_info)  
+[**PPP \_ LCP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_lcp_info)  
+[**PPP \_ NBFCP \_ INFO**](/windows/desktop/api/Mprapi/ns-mprapi-ppp_nbfcp_info)  
+[**CONNESSIONE \_ RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_0)  
+[**CONNESSIONE \_ RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_1)  
+[**CONNESSIONE \_ RAS \_ 2**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_2)  
+[**CONNESSIONE \_ RAS \_ 3**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_3)  
+[**CONNESSIONE RAS \_ \_ EX**](/windows/desktop/api/Mprapi/ns-mprapi-ras_connection_ex)  
+[**PORTA \_ RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_0)  
+[**PORTA \_ RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_port_1)  
+[**UTENTE \_ RAS \_ 0**](/windows/desktop/api/Mprapi/ns-mprapi-ras_user_0)  
+[**UTENTE \_ RAS \_ 1**](/windows/desktop/api/Mprapi/ns-mprapi-ras_user_1)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

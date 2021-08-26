@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_SUBRESOURCE_FOOTPRINT (D3dx12. h)
-description: Struttura helper per consentire l'inizializzazione semplificata di una \_ struttura footprint della SOTTORISORSA D3D12 \_ .
+title: CD3DX12_SUBRESOURCE_FOOTPRINT struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura D3D12 \_ SUBRESOURCE \_ FOOTPRINT.
 ms.assetid: 17266FB0-41B5-4A70-A896-206B54F5E76F
 keywords:
-- Struttura CD3DX12_SUBRESOURCE_FOOTPRINT
+- CD3DX12_SUBRESOURCE_FOOTPRINT struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab58e9a007d736222d9525d7a064456a1a9a7f14
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d32c3da3e133a5509543ffaa4fbf80b4c565730f13d3b9e92753658c96efcfcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069731"
 ---
-# <a name="cd3dx12_subresource_footprint-structure"></a>\_Struttura del footprint della SOTTORISORSA CD3DX12 \_
+# <a name="cd3dx12_subresource_footprint-structure"></a>Struttura CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT
 
-Struttura helper per consentire l'inizializzazione semplificata di una struttura [**\_ \_ footprint della sottorisorsa D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura D3D12 \_ SUBRESOURCE \_ FOOTPRINT.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,52 +45,52 @@ struct CD3DX12_SUBRESOURCE_FOOTPRINT  : public D3D12_SUBRESOURCE_FOOTPRINT{
 
 <dl> <dt>
 
-**\_Footprint delle sottorisorse CD3DX12 \_ ()**
+**CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di un \_ footprint della SOTTORISORSA CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di cd3DX12 \_ SUBRESOURCE \_ FOOTPRINT.
 
 </dd> <dt>
 
-**footprint della \_ SOTTORISORSA CD3DX12 esplicita \_ (CONSt D3D12 \_ subresource \_ footprint &o)**
+**EXPLICIT CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT(const D3D12 \_ SUBRESOURCE \_ FOOTPRINT &o)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ footprint della SOTTORISORSA CD3DX12 \_ , inizializzata con il contenuto di un'altra struttura [**\_ \_ footprint della sottorisorsa D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint) .
+Crea una nuova istanza di CD3DX12 SUBRESOURCE FOOTPRINT, inizializzata con il contenuto di un'altra struttura \_ \_ [**D3D12 \_ SUBRESOURCE \_ FOOTPRINT.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
 
 </dd> <dt>
 
-**\_Footprint della SOTTORISORSA CD3DX12 \_ ( \_ formato DXGI, lunghezza UINT, altezza UINT, profondità uint, uint rowPitch)**
+**CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT(formato DXGI, \_ larghezza UINT, altezza UINT, profondità UINT, UINT rowPitch)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ footprint della SOTTORISORSA CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT, inizializzando i parametri seguenti:
 
 [**DXGI \_ Formato formato**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
-Lunghezza UINT
+Larghezza UINT
 
 Altezza UINT
 
 Profondità UINT
 
-RowPitch UINT
+UINT rowPitch
 
 </dd> <dt>
 
-**\_footprint delle sottorisorse CD3DX12 esplicito \_ (const D3D12 \_ Resource \_ desc& resDesc, uint rowPitch)**
+**EXPLICIT CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT(const D3D12 \_ RESOURCE \_ DESC& resDesc, UINT rowPitch)**
 </dt> <dd>
 
-Crea una nuova istanza di un \_ footprint della SOTTORISORSA CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT, inizializzando i parametri seguenti:
 
-[**D3D12 \_ \_Descrizione della risorsa**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)& resDesc
+[**D3D12 \_ RESOURCE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc)& resDesc
 
-RowPitch UINT
+UINT rowPitch
 
 </dd> <dt>
 
-**operatore const D3D12 \_ subresource \_ footprint& () const**
+**operator const D3D12 \_ SUBRESOURCE \_ FOOTPRINT&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Footprint delle sottorisorse D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
+[**FOOTPRINT DELLE SOTTORISORSE D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

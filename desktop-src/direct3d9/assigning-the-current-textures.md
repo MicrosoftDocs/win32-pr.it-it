@@ -1,23 +1,23 @@
 ---
-description: Direct3D mantiene un elenco di un massimo di otto trame correnti. Combina queste trame su tutte le primitive di cui esegue il rendering. Nel set di trame correnti è possibile usare solo trame create come puntatori dell'interfaccia di trama.
+description: Direct3D gestisce un elenco di un massimo di otto trame correnti. Unisce queste trame a tutte le primitive di cui esegue il rendering. Solo le trame create come puntatori all'interfaccia di trama possono essere usate nel set di trame correnti.
 ms.assetid: 5a58c915-7b67-45a7-9493-6657c75aaa10
 title: Assegnazione delle trame correnti (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e7ae6d603d9547841628f9395889095533cf3e2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 22b2a9ac0b61f7a7d0a9b3ee27c7a9b7e6b8cd4d48fda33959462e26ad6958ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069421"
 ---
 # <a name="assigning-the-current-textures-direct3d-9"></a>Assegnazione delle trame correnti (Direct3D 9)
 
-Direct3D mantiene un elenco di un massimo di otto trame correnti. Combina queste trame su tutte le primitive di cui esegue il rendering. Nel set di trame correnti è possibile usare solo trame create come puntatori dell'interfaccia di trama.
+Direct3D gestisce un elenco di un massimo di otto trame correnti. Unisce queste trame a tutte le primitive di cui esegue il rendering. Solo le trame create come puntatori all'interfaccia di trama possono essere usate nel set di trame correnti.
 
-Le applicazioni chiamano il metodo [**IDirect3DDevice9:: setexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) per assegnare trame al set di trame correnti. Il primo parametro deve essere un numero compreso nell'intervallo 0-7, inclusivo. Passare il puntatore all'interfaccia di trama come secondo parametro.
+Le applicazioni chiamano [**il metodo IDirect3DDevice9::SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) per assegnare trame nel set di trame correnti. Il primo parametro deve essere un numero compreso tra 0 e 7 inclusi. Passare il puntatore dell'interfaccia della trama come secondo parametro.
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato il modo in cui una trama può essere assegnata al set di trame correnti.
+L'esempio di codice C++ seguente illustra come assegnare una trama al set di trame correnti.
 
 
 ```
@@ -32,7 +32,7 @@ d3dDevice->SetTexture(2, pTexture);
 
 
 > [!Note]  
-> I dispositivi software non supportano l'assegnazione di una trama a più di una fase di trama alla volta.
+> I dispositivi software non supportano l'assegnazione di una trama a più fasi di trama alla volta.
 
  
 
@@ -40,7 +40,7 @@ d3dDevice->SetTexture(2, pTexture);
 
 <dl> <dt>
 
-[Combinazione di trame](texture-blending.md)
+[Fusione delle trame](texture-blending.md)
 </dt> </dl>
 
  

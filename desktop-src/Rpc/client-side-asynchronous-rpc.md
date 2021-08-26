@@ -1,27 +1,27 @@
 ---
-title: RPC asincrona lato client
-description: Pagina di navigazione per la gestione della funzione asincrona sul lato client con RPC (Remote Procedure Call).
+title: RPC asincrona sul lato client
+description: Pagina di spostamento per la gestione asincrona delle funzioni sul lato client con RPC (Remote Procedure Call).
 ms.assetid: f3e958b6-65c8-4bdb-a5e2-4f47f7beea78
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9dabfc3b434aabfbfdb3a9cef0300b694c7c222
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a7c258daf16f75f55ce33bac005cd6856e91c4ff2467b40997f6a8395448f49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022656"
 ---
-# <a name="client-side-asynchronous-rpc"></a>RPC asincrona lato client
+# <a name="client-side-asynchronous-rpc"></a>RPC asincrona sul lato client
 
-La gestione asincrona del lato client è costituita da tre attività principali:
+La gestione delle funzioni asincrone sul lato client è costituita da tre attività principali:
 
--   [Creazione della chiamata asincrona](making-the-asynchronous-call.md)
+-   [Esecuzione della chiamata asincrona](making-the-asynchronous-call.md)
 -   [In attesa della risposta asincrona](waiting-for-the-asynchronous-reply.md)
 -   [Ricezione della risposta asincrona](receiving-the-asynchronous-reply.md)
 
- 
+ 
 
- 
+ 
 
 
 
