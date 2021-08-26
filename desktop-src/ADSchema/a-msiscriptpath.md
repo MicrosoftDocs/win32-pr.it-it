@@ -1,10 +1,10 @@
 ---
-title: Attributo MSI-script-path
-description: Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazione.
+title: Attributo Msi-Script-Path
+description: Percorso del file di script dell'annuncio del programma di installazione Microsoft per questa applicazione.
 ms.assetid: 6ebe172c-42fc-4a36-940e-a48315d6496c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MSI-script-path
+- Schema AD dell'attributo Msi-Script-Path
 - Schema AD dell'attributo msiScriptPath
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ecce0bb7c082666136e69be8179cf3c5cdf7a6d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 59558f9d17a52f2e1a4f56e98286d90a4ed80c10416cc96a25b0058bd126549b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066731"
 ---
-# <a name="msi-script-path-attribute"></a>Attributo MSI-script-path
+# <a name="msi-script-path-attribute"></a>Attributo Msi-Script-Path
 
-Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazione.
+Percorso del file di script dell'annuncio del programma di installazione Microsoft per questa applicazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MSI-script-percorso                             |
-| LDAP-Display-Name | msiScriptPath                               |
+| CN                | Msi-Script-Path                             |
+| Ldap-Display-Name | msiScriptPath                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.15                       |
-| System-ID-GUID    | bf967937-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967937-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| A valore singolo       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Percorso del file di script dell'annuncio di Microsoft Installer per l'applicazi
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

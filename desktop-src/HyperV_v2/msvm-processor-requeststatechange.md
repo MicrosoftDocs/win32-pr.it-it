@@ -1,7 +1,7 @@
 ---
 description: 'Metodo RequestStateChange della classe Msvm_Processor : richiede una modifica dello stato.'
 ms.assetid: 6885b282-f1f6-40fe-ab28-b1c0dc061777
-title: Metodo RequestStateChange della classe Msvm_Processor
+title: Metodo RequestStateChange della Msvm_Processor classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 231c9c250bb1fbf2025c3c1d5bae70df70ed47d0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ff684c046c30d9f5a323a632804e60c127574190a451ad2786bb863cd2f3b7f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046461"
 ---
-# <a name="requeststatechange-method-of-the-msvm_processor-class"></a>Metodo RequestStateChange della classe Processore Msvm \_
+# <a name="requeststatechange-method-of-the-msvm_processor-class"></a>Metodo RequestStateChange della classe Msvm \_ Processor
 
 Richiede una modifica dello stato.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ Pollici\]
 </dt> <dd>
 
-Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState** dell'istanza se il codice restituito del **metodo RequestStateChange** è 0 o 4096. Per altre informazioni, vedere la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento. Deve essere uno dei valori seguenti.
+Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState** dell'istanza se il codice restituito del **metodo RequestStateChange** è 0 o 4096. Per altre informazioni, vedi la descrizione delle **proprietà EnabledState** e **RequestedState** per l'elemento . Deve essere uno dei valori seguenti.
 
 <dt>
 
@@ -64,7 +64,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Shut_Down"></span><span id="shut_down"></span><span id="SHUT_DOWN"></span>
 
-**Arresto** (4)
+**Arresta** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -85,7 +85,7 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Rinvio** (8)
+**Rinvia** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -106,21 +106,21 @@ Nuovo stato. Le informazioni vengono inserite nella **proprietà RequestedState*
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Reimposta** (11)
+**Reset** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DmTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768..65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -158,7 +158,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

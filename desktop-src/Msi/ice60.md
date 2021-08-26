@@ -1,30 +1,30 @@
 ---
-description: ICE60 convalida la tabella file di un database Windows Installer.
+description: ICE60 convalida la tabella File di un database Windows Installer.
 ms.assetid: 95d9b8b4-0b65-451a-8629-f0b276d6e35d
 title: ICE60
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e26c6f296fd514f582a699a5f839a7e145169e3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce8d2cbf9136ea6195a138c586d4408dc0d2e5ff411b52fd73fec8a569c5d186
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044031"
 ---
 # <a name="ice60"></a>ICE60
 
-ICE60 verifica che i file nella [tabella file](file-table.md) soddisfino la condizione seguente:
+ICE60 verifica che i file nella tabella File soddisfino la condizione seguente: [](file-table.md)
 
--   Se il file non è un tipo di carattere e presenta una versione, è necessario che disponga di una lingua.
--   ICE60 verifica che non siano elencati file con versione nella [tabella MsiFileHash](msifilehash-table.md).
+-   Se il file non è un tipo di carattere e ha una versione, deve avere una lingua.
+-   ICE60 verifica che nessun file con versione sia elencato nella [tabella MsiFileHash](msifilehash-table.md).
 
-Se si verifica un errore durante la correzione di un avviso segnalato da ICE60, in genere il file viene reinstallato inutilmente quando viene eseguito un ripristino del prodotto. Questo problema si verifica perché il file da installare nel ripristino e il file esistente sul disco hanno la stessa versione (si tratta dello stesso file) ma linguaggi diversi. La tabella file elenca la lingua come null, ma il file ha un valore di lingua nella risorsa. In base alle [regole di controllo delle versioni dei file](file-versioning-rules.md), il programma di installazione predilige il file da installare, quindi viene ricopiato inutilmente.
+La mancata correzione di un avviso segnalato da ICE60 comporta in genere la reinstallazione non necessaria di un file al termine di un ripristino del prodotto. Ciò si verifica perché il file da installare nel ripristino e il file esistente su disco hanno la stessa versione (sono lo stesso file) ma lingue diverse. La tabella file elenca la lingua come Null, ma il file stesso ha un valore di lingua nella risorsa. In base alle [regole di controllo delle](file-versioning-rules.md)versioni dei file , il programma di installazione favorisce l'installazione del file, quindi viene ricopiato in modo non necessario.
 
 ## <a name="result"></a>Risultato
 
-ICE60 Invia un avviso o un errore se un file nella [tabella file](file-table.md) che non è un tipo di carattere e ha una versione, non dispone di un linguaggio.
+ICE60 invia un avviso o un errore se un file nella tabella [File](file-table.md) che non è un tipo di carattere e ha una versione, non ha una lingua.
 
-ICE60 invia il seguente errore se un file elencato nella tabella MsiFileHash è sottoposto a controllo delle versioni.
+ICE60 pubblica l'errore seguente se un file elencato nella tabella MsiFileHash ha il controllo delle versioni.
 
 ``` syntax
 ERROR: "The file [1] is Versioned. It cannot be hashed"
@@ -32,27 +32,27 @@ ERROR: "The file [1] is Versioned. It cannot be hashed"
 
 ## <a name="example"></a>Esempio
 
-ICE60 segnala l'errore e l'avviso seguenti per l'esempio illustrato. Il file B è un tipo di carattere. gli altri file non lo sono.
+ICE60 segnala l'errore e l'avviso seguenti per l'esempio illustrato. Il file B è un tipo di carattere, gli altri file no.
 
 ``` syntax
 WARNING: The file FileE is not a Font, and its version is not a companion file reference. It should have a language specified in the Language column.
 ```
 
-Filea ha una versione e un linguaggio; pertanto non viene generato alcun avviso o errore.
+FileA ha sia una versione che una lingua. pertanto non viene generato alcun avviso o errore.
 
-FileB dispone di una versione ma non di un linguaggio. Tuttavia, non viene generato alcun avviso o errore perché è un tipo di carattere.
+FileB ha una versione ma non un linguaggio. Non viene tuttavia generato alcun avviso o errore perché si tratta di un tipo di carattere.
 
-FileC è un riferimento complementare, pertanto non è necessario disporre di un linguaggio. Non viene generato alcun avviso o errore.
+FileC è un riferimento complementare, pertanto non deve avere un linguaggio. Non viene generato alcun avviso o errore.
 
-Il file archiviato non ha una versione, quindi non è necessario disporre di un linguaggio. Non viene generato alcun avviso o errore.
+FileD non ha una versione, quindi non deve avere una lingua. Non viene generato alcun avviso o errore.
 
-Il file ha una versione ma nessuna lingua. Viene pertanto generato un avviso.
+FileE ha una versione ma non un linguaggio. Viene pertanto generato un avviso.
 
-Per correggere il problema, aggiungere una lingua al file.
+Per correggere l'avviso, aggiungere una lingua a FileE.
 
-I file devono avere i valori della lingua archiviati nella risorsa di versione laddove possibile. Se un file è indipendente dalla lingua, usare [LangID](column-data-types.md) 0.
+I file devono avere valori di lingua archiviati nella risorsa della versione quando possibile. Se un file è indipendente dalla lingua, usare [LANGID](column-data-types.md) 0.
 
-[File table](file-table.md) (fileB è un tipo di carattere; gli altri file non lo sono).
+[Tabella file](file-table.md) (FileB è un tipo di carattere, gli altri file non lo sono).
 
 
 
@@ -61,8 +61,8 @@ I file devono avere i valori della lingua archiviati nella risorsa di versione l
 | FileA | 1.0     | 1033     |
 | FileB | 1.0     |          |
 | FileC | FileA   |          |
-| Campo |         |          |
-| File | 1.0     |          |
+| Archiviato |         |          |
+| FileE | 1.0     |          |
 
 
 
@@ -84,7 +84,7 @@ I file devono avere i valori della lingua archiviati nella risorsa di versione l
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

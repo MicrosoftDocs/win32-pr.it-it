@@ -1,9 +1,9 @@
 ---
 title: Attributo WM/MediaClassSecondaryID
-description: L'attributo WM/MediaClassSecondaryID è un GUID che specifica la classe multimediale secondaria, che è una sottoclasse della classe multimediale primaria.
+description: L'attributo WM/MediaClassSecondaryID è un GUID che specifica la classe multimediale secondaria, ovvero una sottoclasse della classe di supporti primaria.
 ms.assetid: 8112513a-b73a-497a-9c24-24ccef31cffc
 keywords:
-- Media Player Windows per gli attributi WM/MediaClassSecondaryID
+- Attributo WM/MediaClassSecondaryID Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb88ea03e565df649088366e13b20332256b374d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9582fc3db713b8db945ec17534f1dc9c951402eea88489285526d6a3cfbdf147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000991"
 ---
 # <a name="wmmediaclasssecondaryid-attribute"></a>Attributo WM/MediaClassSecondaryID
 
-L'attributo **WM/MediaClassSecondaryID** è un GUID che specifica la classe multimediale secondaria, che è una sottoclasse della classe multimediale primaria.
+**L'attributo WM/MediaClassSecondaryID** è un GUID che specifica la classe multimediale secondaria, ovvero una sottoclasse della classe di supporti primaria.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [Elementi audio](audio-item-attributes.md)
--   [Attributi di file di Windows Media usati di frequente](commonly-used-windows-media-file-attributes.md)
+-   [Attributi dei file multimediali Windows comunemente usati](commonly-used-windows-media-file-attributes.md)
 -   [Altri elementi](other-item-attributes.md)
 -   [Elementi foto](photo-item-attributes.md)
 -   [Playlist](playlist-attributes-ref.md)
@@ -37,7 +37,7 @@ L'attributo **WM/MediaClassSecondaryID** è un GUID che specifica la classe mult
 
 Questo attributo viene archiviato sia nella libreria che nel file multimediale digitale.
 
-La tabella seguente elenca i GUID supportati e le relative descrizioni.
+Nella tabella seguente sono elencati i GUID supportati e le relative descrizioni.
 
 
 
@@ -50,11 +50,11 @@ La tabella seguente elenca i GUID supportati e le relative descrizioni.
 
  
 
-**MediaClassSecondaryID** è un alias per questo attributo.
+**MediaClassSecondaryID è** un alias per questo attributo.
 
-La costante Windows Media Format SDK per questo attributo è g \_ wszWMMediaClassSecondaryID.
+La Windows Media Format SDK per questo attributo è g \_ wszWMMediaClassSecondaryID.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | L'elemento Photo è supportato solo in Windows Media Player 10 o versioni successive l'elemento radio è supportato solo in Windows Media Player 9 Series tutti gli altri elementi sono supportati in Windows Media Player 9 Series e versioni successive<br/> |
+| Versione<br/> | L'elemento foto è supportato solo in Windows Media Player 10 o versioni successive L'elemento radio è supportato solo nella serie Windows Media Player 9 Tutti gli altri elementi sono supportati nella serie Windows Media Player 9 e versioni successive<br/> |
 
 
 
@@ -70,7 +70,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

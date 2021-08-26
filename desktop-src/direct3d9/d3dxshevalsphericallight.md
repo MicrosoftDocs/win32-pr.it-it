@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: db671d58806d999e07b1aac1e8e4da2fb38acc6f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b6618747659c62b6ce954725690a6d707cead489db56788850bbe8eca216acf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027271"
 ---
 # <a name="d3dxshevalsphericallight-function-d3dx9mathh"></a>Funzione D3DXSHEvalSphericalLight (D3dx9math.h)
 

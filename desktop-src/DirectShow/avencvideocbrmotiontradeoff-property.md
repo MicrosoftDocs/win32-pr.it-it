@@ -1,40 +1,40 @@
 ---
-description: Specifica il compromesso tra movimento e immagini fisse. Questa proprietà si applica solo alla modalità di controllo della velocità in bit costante (CBR).
+description: Specifica il compromesso tra movimento e immagini fisse. Questa proprietà si applica solo alla modalità di controllo CBR (Constant Bit Rate).
 ms.assetid: e657e971-4624-4c87-ad51-6bf0cd1f9246
-title: Proprietà AVEncVideoCBRMotionTradeoff (codecapis. h)
+title: Proprietà AVEncVideoCBRMotionOff (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b746559f48858f995cbd87184a2f13ada33db7c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 21d3db1f310de6468b57d469fbf699919ab86429e7242344622ca498b9e59f39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103965785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057941"
 ---
-# <a name="avencvideocbrmotiontradeoff-property"></a>Proprietà AVEncVideoCBRMotionTradeoff
+# <a name="avencvideocbrmotiontradeoff-property"></a>AVEncVideoCBRMotionOff - proprietà
 
-Specifica il compromesso tra movimento e immagini fisse. Questa proprietà si applica solo alla modalità di controllo della velocità in bit costante (CBR).
+Specifica il compromesso tra movimento e immagini fisse. Questa proprietà si applica solo alla modalità di controllo CBR (Constant Bit Rate).
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoCBRMotionTradeoff**
+**CODECAPI \_ AVEncVideoCBRMotionOff**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà presenta l'intervallo seguente.
+Il valore di questa proprietà ha l'intervallo seguente.
 
 
 
 | Valore | Descrizione               |
 |-------|---------------------------|
-| 0     | Ottimizza per immagini ancora |
-| 100   | Ottimizza per il movimento.      |
+| 0     | Ottimizzare le immagini fisse |
+| 100   | Ottimizzare il movimento.      |
 
 
 
@@ -46,9 +46,9 @@ Il valore di questa proprietà presenta l'intervallo seguente.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ Il valore di questa proprietà presenta l'intervallo seguente.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

@@ -1,33 +1,33 @@
 ---
 description: Un'applicazione può monitorare il contenuto di una directory e delle relative sottodirectory usando le notifiche di modifica.
 ms.assetid: ad884b15-e040-478b-aa99-d8622198f62a
-title: Acquisizione delle notifiche di modifica della directory
+title: Recupero delle notifiche di modifica della directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c44375c334c3630aee09bf4a13fc23f87cc91e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d94bd2b86aacaf7b32191fd68208bd1400a4b56cf4c55b13102210ffb50f7ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048001"
 ---
-# <a name="obtaining-directory-change-notifications"></a>Acquisizione delle notifiche di modifica della directory
+# <a name="obtaining-directory-change-notifications"></a>Recupero delle notifiche di modifica della directory
 
-Un'applicazione può monitorare il contenuto di una directory e delle relative sottodirectory usando le notifiche di modifica. L'attesa di una notifica di modifica è simile alla presenza di un'operazione di lettura in sospeso in una directory e, se necessario, delle relative sottodirectory. Quando viene apportata una modifica all'interno della directory, l'operazione di lettura viene completata. Ad esempio, un'applicazione può usare queste funzioni per aggiornare un elenco di directory ogni volta che viene modificato un nome di file all'interno della directory monitorata.
+Un'applicazione può monitorare il contenuto di una directory e delle relative sottodirectory usando le notifiche di modifica. L'attesa di una notifica di modifica è simile alla presenza di un'operazione di lettura in sospeso in una directory e, se necessario, nelle relative sottodirectory. Quando cambia qualcosa all'interno della directory da controllare, l'operazione di lettura viene completata. Ad esempio, un'applicazione può usare queste funzioni per aggiornare un elenco di directory ogni volta che un nome file all'interno della directory monitorata cambia.
 
-Un'applicazione può specificare un set di condizioni che attivano una notifica di modifica tramite la funzione [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) . Le condizioni includono modifiche ai nomi di file, nomi di directory, attributi, dimensioni del file, ora dell'ultima scrittura e sicurezza. Questa funzione restituisce anche un handle che può essere atteso tramite le [funzioni di attesa](/windows/desktop/Sync/wait-functions). Se la condizione di attesa viene soddisfatta, è possibile utilizzare [**FindNextChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findnextchangenotification) per fornire un handle di notifica per attendere le modifiche successive. Tuttavia, queste funzioni non indicano la modifica effettiva che soddisfa la condizione di attesa.
+Un'applicazione può specificare un set di condizioni che attivano una notifica di modifica usando la [**funzione FindFirstChangeNotification.**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) Le condizioni includono modifiche ai nomi di file, ai nomi di directory, agli attributi, alle dimensioni del file, all'ora dell'ultima scrittura e alla sicurezza. Questa funzione restituisce anche un handle che può essere atteso usando le [funzioni di attesa](/windows/desktop/Sync/wait-functions). Se la condizione di attesa viene soddisfatta, [**è possibile usare FindNextChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findnextchangenotification) per fornire un handle di notifica per attendere le modifiche successive. Tuttavia, queste funzioni non indicano la modifica effettiva che ha soddisfatto la condizione di attesa.
 
-Usare [**FindCloseChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) per chiudere l'handle di notifica.
+Usare [**FindCloseChangeNotification per**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) chiudere l'handle di notifica.
 
-Per recuperare informazioni sulla modifica specifica come parte della notifica, usare la funzione [**ReadDirectoryChangesW**](/windows/desktop/api/WinBase/nf-winbase-readdirectorychangesw) . Questa funzione consente inoltre di fornire una routine di completamento.
+Per recuperare informazioni sulla modifica specifica come parte della notifica, usare la [**funzione ReadDirectoryChangesW.**](/windows/desktop/api/WinBase/nf-winbase-readdirectorychangesw) Questa funzione consente anche di fornire una routine di completamento.
 
-Per tenere traccia delle modifiche apportate a un volume, vedere [Journal](change-journals.md)delle modifiche.
+Per tenere traccia delle modifiche in un volume, vedere [Journal delle modifiche](change-journals.md).
 
-Nell'esempio seguente viene monitorato l'albero di directory per le modifiche al nome della directory. Monitora inoltre una directory per le modifiche del nome file. Nell'esempio viene utilizzata la funzione [**FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) per creare due handle di notifica e la funzione [**WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) per attendere gli handle. Ogni volta che viene creata o eliminata una directory nella struttura ad albero, l'esempio deve aggiornare l'intero albero di directory. Ogni volta che un file viene creato o eliminato nella directory, l'esempio dovrebbe aggiornare la directory.
+Nell'esempio seguente viene monitorato l'albero della directory per le modifiche al nome della directory. Esegue anche il monitoraggio di una directory per le modifiche al nome file. Nell'esempio viene utilizzata la [**funzione FindFirstChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa) per creare due handle di notifica e la [**funzione WaitForMultipleObjects**](/windows/desktop/api/synchapi/nf-synchapi-waitformultipleobjects) per attendere gli handle. Ogni volta che una directory viene creata o eliminata nell'albero, l'esempio deve aggiornare l'intero albero di directory. Ogni volta che un file viene creato o eliminato nella directory, l'esempio deve aggiornare la directory.
 
 > [!Note]
 >
-> Questo esempio semplicistico usa la funzione [**ExitProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) per la terminazione e la pulizia, ma le applicazioni più complesse devono usare sempre la gestione delle risorse appropriata, ad esempio [**FindCloseChangeNotification**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) , laddove appropriato.
+> Questo esempio semplicistico usa la funzione [**ExitProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitprocess) per la terminazione e la pulizia, ma le applicazioni più complesse devono sempre usare una gestione delle risorse appropriata, ad esempio [**FindCloseChangeNotification,**](/windows/desktop/api/FileAPI/nf-fileapi-findclosechangenotification) dove appropriato.
 
  
 

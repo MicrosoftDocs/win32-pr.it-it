@@ -1,7 +1,7 @@
 ---
-description: Cerca il TAG figlio successivo all'interno dell'elemento padre specificato e restituisce il TAGID dell'elemento figlio successivo.
+description: Cerca il TAG figlio successivo all'interno dell'elemento padre specificato e restituisce il TAGID del successivo elemento figlio.
 ms.assetid: c7311f20-15ca-4b2d-a08d-8bb992a3a0cd
-title: SdbGetNextChild (funzione)
+title: Funzione SdbGetNextChild
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 4f2943eaf0baec84a9473b679743b9eafad3b7fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 210e0aab8cb5e43bfc649e8abb72cf565c4d4f892f651708286f7a3f87d11ce2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103877693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045314"
 ---
-# <a name="sdbgetnextchild-function"></a>SdbGetNextChild (funzione)
+# <a name="sdbgetnextchild-function"></a>Funzione SdbGetNextChild
 
-Cerca il TAG figlio successivo all'interno dell'elemento padre specificato e restituisce il **TagId** dell'elemento figlio successivo.
+Cerca il TAG figlio successivo all'interno dell'elemento padre specificato e restituisce **il TAGID** del successivo elemento figlio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,34 +41,34 @@ TAGID WINAPI SdbGetNextChild(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiParent* \[ in\]
+*tiParent* \[ Pollici\]
 </dt> <dd>
 
-**TagId** di inizio della ricerca. Questo parametro può essere un **\_ \_ elenco di tipi di tag** o **\_ radice TagId** .
+**TAGID dell'inizio** della ricerca. Questo parametro può essere **TAGID \_ ROOT o** **TAG TYPE \_ \_ LIST.**
 
 </dd> <dt>
 
-*tiPrev* \[ in\]
+*tiPrev* \[ Pollici\]
 </dt> <dd>
 
-**TagId** del figlio precedente.
+**TAGID dell'elemento** figlio precedente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**TagId** dell'elemento figlio o **TagId \_ null** se non viene trovato alcun elemento figlio.
+**TAGID dell'elemento** figlio o **TAGID \_ NULL** se non viene trovato alcun elemento figlio.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questa funzione, chiamare la funzione [**SdbGetFirstChild**](sdbgetfirstchild.md) .
+Prima di chiamare questa funzione, chiamare la [**funzione SdbGetFirstChild.**](sdbgetfirstchild.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Prima di chiamare questa funzione, chiamare la funzione [**SdbGetFirstChild**](s
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

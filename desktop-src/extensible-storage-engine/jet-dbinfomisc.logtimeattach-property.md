@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC. logtimeAttach'
-title: Proprietà JET_DBINFOMISC. logtimeAttach
+description: 'Altre informazioni su: JET_DBINFOMISC.logtimeAttach'
+title: JET_DBINFOMISC.logtimeAttach
 TOCTitle: 'logtimeAttach property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeAttach
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.logtimeattach(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16092189104500f152c69197b598c0ef4a03d7b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fccc93caa1537f607673bf848b90ea6ac8045e7c0158f565cbcdec1c12275c79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017186"
 ---
-# <a name="jet_dbinfomisclogtimeattach-property"></a>Proprietà JET_DBINFOMISC. logtimeAttach
+# <a name="jet_dbinfomisclogtimeattach-property"></a>JET_DBINFOMISC.logtimeAttach
 
-Ottiene l'ora in cui è stato collegato il database.
+Ottiene l'ora in cui il database è stato collegato.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public JET_LOGTIME logtimeAttach { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

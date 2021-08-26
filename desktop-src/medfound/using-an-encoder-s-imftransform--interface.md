@@ -1,19 +1,19 @@
 ---
-description: Per convertire i file multimediali in formato ASF, è possibile usare codificatori Windows Media. Informazioni sulla creazione di un codificatore tramite CoCreateInstance.
+description: Per convertire i file multimediali in formato ASF, è possibile usare Windows codificatori multimediali. Informazioni sulla creazione di un codificatore con CoCreateInstance.
 ms.assetid: 96f19dfb-a328-41db-8fa8-77f052b1a192
 title: Creazione di un codificatore tramite CoCreateInstance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c4cdf7b72bbfee97031088502113d085738981
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: cbd48931b7bc8e0b449ee8ffaa0141a6413f2699ebaae6e1ba01fdd1f4b38a0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092321"
 ---
 # <a name="creating-an-encoder-by-using-cocreateinstance"></a>Creazione di un codificatore tramite CoCreateInstance
 
-Per convertire i file multimediali in formato ASF, è possibile usare codificatori Windows Media. Per usare questi codificatori, è necessario che siano registrati nel sistema. I codificatori vengono implementati [Media Foundation trasformazioni](media-foundation-transforms.md) (MFT) e devono esporre l'interfaccia IMFTransform. Questo argomento descrive come un'applicazione può ottenere un puntatore all'interfaccia IMFTransform del codificatore MFT richiesto e crearne un'istanza per l'uso.
+Per convertire i file multimediali in formato ASF, è possibile usare Windows codificatori multimediali. Per usare questi codificatori, è necessario registrarli con il sistema. I codificatori vengono implementati [Media Foundation e](media-foundation-transforms.md) devono esporre l'interfaccia IMFTransform. Questo argomento descrive come un'applicazione può ottenere un puntatore all'interfaccia IMFTransform del codificatore MFT richiesto e crearne un'istanza per l'uso.
 
 Per informazioni sulla registrazione del codificatore, vedere [Creazione di un'istanza di un codificatore MFT.](instantiating-the-encoder-mft.md)
 
@@ -23,14 +23,14 @@ Per informazioni sulla registrazione del codificatore, vedere [Creazione di un'i
 
 ## <a name="using-an-encoders-imftransform-interface"></a>Uso dell'interfaccia IMFTransform di un codificatore
 
-Al completamento della registrazione dei codificatori Windows Media con il sistema, un'applicazione può enumerare i codificatori chiamando [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Per cercare il codificatore giusto, è necessario specificare quanto segue:
+Al completamento della registrazione Windows codificatori multimediali con il sistema, un'applicazione può enumerare i codificatori chiamando [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Per cercare il codificatore giusto, è necessario specificare quanto segue:
 
 -   GUID che rappresenta la categoria, ovvero **MFT \_ CATEGORY AUDIO \_ \_ ENCODER** o **MFT CATEGORY VIDEO \_ \_ \_ ENCODER.**
 
--   Formato di cui trovare la corrispondenza. Questa proprietà viene impostata nella struttura [**MFT \_ REGISTER TYPE \_ \_ INFO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) che specifica il tipo principale e il sottotipo del tipo di supporto in cui il codificatore genererà esempi. Questa struttura viene passata nel *parametro pOutputType.* Per informazioni sui tipi supportati, vedere [GUID dei tipi di supporti](media-type-guids.md).
+-   Formato di cui trovare la corrispondenza. Questa proprietà viene impostata nella [**struttura MFT \_ REGISTER TYPE \_ \_ INFO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) che specifica il tipo principale e il sottotipo del tipo di supporto in cui il codificatore genererà campioni. Questa struttura viene passata nel *parametro pOutputType.* Per informazioni sui tipi supportati, vedere [GUID dei tipi di supporti.](media-type-guids.md)
 
     > [!Note]  
-    > Le informazioni sul tipo di input nel *parametro pInputType* non sono necessarie. Questo perché il tipo di input è noto all'applicazione e il codificatore prevede che il flusso di input sia in un formato non compresso.
+    > Le informazioni sul tipo di input *nel parametro pInputType* non sono necessarie. Questo perché il tipo di input è noto all'applicazione e il codificatore prevede che il flusso di input sia in un formato non compresso.
 
      
 
@@ -95,7 +95,7 @@ HRESULT FindEncoder(
 [Creazione di un'istanza di un codificatore MFT](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
-[Codificatori Windows Media](windows-media-encoders.md)
+[Windows Codificatori multimediali](windows-media-encoders.md)
 </dt> </dl>
 
  

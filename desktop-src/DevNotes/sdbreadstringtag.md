@@ -1,7 +1,7 @@
 ---
 Description: Recupera la stringa per il TAGID specificato.
 ms.assetid: d67d386d-a2c5-46e2-8887-9ee20ea427f9
-title: SdbReadStringTag (funzione)
+title: Funzione SdbReadStringTag
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 3f368d66e0fbc144a46683a04655cd7f650c3bce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f8652e944328298b7cd3888fa93c41d3551ba913f4acd848f60fa053ed0067e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044941"
 ---
-# <a name="sdbreadstringtag-function"></a>SdbReadStringTag (funzione)
+# <a name="sdbreadstringtag-function"></a>Funzione SdbReadStringTag
 
-Recupera la stringa per il **TagId** specificato.
+Recupera la stringa per **l'ELEMENTO TAGID specificato.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbReadStringTag(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiWhich* \[ in\]
+*tiWhich* \[ Pollici\]
 </dt> <dd>
 
-**TagId** che corrisponde ai dati da recuperare.
+**TAGID** che corrisponde ai dati da recuperare.
 
 </dd> <dt>
 
-*pwszBuffer* \[ out\]
+*pwszBuffer* \[ Cambio\]
 </dt> <dd>
 
-Buffer che riceve la stringa. Questo parametro non può essere **null**.
+Buffer che riceve la stringa. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*cchBufferSize* \[ in\]
+*cchBufferSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni del buffer *pwszBuffer* , in caratteri.
+Dimensione del buffer *pwszBuffer,* in caratteri.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ La funzione restituisce **true** in caso di esito positivo o **false** in caso d
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

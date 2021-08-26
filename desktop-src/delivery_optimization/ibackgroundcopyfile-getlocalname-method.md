@@ -1,9 +1,9 @@
 ---
-title: Metodo GetLocalName IBackgroundCopyFile (Deliveryoptimization. h)
+title: Metodo IBackgroundCopyFile GetLocalName (Deliveryoptimization.h)
 description: Recupera il nome locale del file.
 ms.assetid: 9AA57EB7-5C29-4E5E-972B-DD34B130E6E4
 keywords:
-- GetLocalName (metodo)
+- Metodo GetLocalName
 - Metodo GetLocalName, interfaccia IBackgroundCopyFile
 - Interfaccia IBackgroundCopyFile, metodo GetLocalName
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1c3a957e64701242d9c698a014ec2ab4028cd85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d8c3f3e6a722c7d98fffd5904b398a9573b7a809225e35ae89b5910eb965f5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953601"
 ---
-# <a name="ibackgroundcopyfilegetlocalname-method"></a>Metodo IBackgroundCopyFile:: GetLocalName
+# <a name="ibackgroundcopyfilegetlocalname-method"></a>Metodo IBackgroundCopyFile::GetLocalName
 
 Recupera il nome locale del file.
 
@@ -43,16 +43,16 @@ HRESULT GetLocalName(
 
 <dl> <dt>
 
-*ppName* \[ out\]
+*ppName* \[ Cambio\]
 </dt> <dd>
 
-Stringa con terminazione null che contiene il nome del file nel client. Il nome è completo. Chiamare la funzione [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) per liberare *ppName* al termine.
+Stringa con terminazione Null che contiene il nome del file nel client. Il nome è completo. Al [**termine, chiamare la funzione CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) per *liberare ppName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce **S_OK** in esito positivo o uno dei valori **HRESULT** com standard in errore.
+Questo metodo **restituisce** S_OK in caso di esito positivo o uno dei valori **HRESULT** COM standard in caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,13 +60,13 @@ Questo metodo restituisce **S_OK** in esito positivo o uno dei valori **HRESULT*
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyFile viene definito come 01B7BD23-FB88-4A77-8490-5891D3E4653A<br/>              |
+| IID<br/>                      | IID_IBackgroundCopyFile è definito come 01B7BD23-FB88-4A77-8490-5891D3E4653A<br/>              |
 
 
 
@@ -77,7 +77,7 @@ Questo metodo restituisce **S_OK** in esito positivo o uno dei valori **HRESULT*
 [**IBackgroundCopyFile**](ibackgroundcopyfile.md)
 </dt> <dt>
 
-[**IBackgroundCopyFile:: GetRemoteName**](ibackgroundcopyfile-getremotename-method.md)
+[**IBackgroundCopyFile::GetRemoteName**](ibackgroundcopyfile-getremotename-method.md)
 </dt> </dl>
 
  

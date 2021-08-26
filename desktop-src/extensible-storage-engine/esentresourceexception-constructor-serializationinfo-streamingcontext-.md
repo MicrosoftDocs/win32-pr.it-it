@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4f7b52e211d155b92a9917670682af735eedf9fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67714d720cf559d66b2f253e2b13c630877d4421462cb4c1e5de59e574687c61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018486"
 ---
 # <a name="esentresourceexception-constructor-serializationinfo-streamingcontext"></a>Costruttore EsentResourceException (SerializationInfo, StreamingContext)
 
 Inizializza una nuova istanza della classe EsentResourceException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,14 +59,14 @@ protected EsentResourceException(
 #### <a name="parameters"></a>Parametri
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
     Dati necessari per deserializzare l'oggetto.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contesto di deserializzazione.
 
@@ -78,6 +78,6 @@ protected EsentResourceException(
 
 [Membri di EsentResourceException](./esentresourceexception-members.md)
 
-[Overload EsentResourceException](./esentresourceexception-constructor.md)
+[Overload di EsentResourceException](./esentresourceexception-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

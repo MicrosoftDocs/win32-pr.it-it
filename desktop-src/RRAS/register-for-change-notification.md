@@ -1,19 +1,19 @@
 ---
-title: Registra per notifica modifiche
-description: Nell'esempio di codice seguente viene illustrato come eseguire la registrazione per le notifiche di modifica nella tabella di routing. Argomento \ 0034; Usare il callback di notifica degli eventi \ 0034; viene illustrato come utilizzare le notifiche di modifica.
+title: Registrarsi per la notifica di modifica
+description: Il codice di esempio seguente illustra come eseguire la registrazione per le notifiche di modifica nella tabella di routing. Argomento \ 0034; Usare il callback di notifica degli eventi \ 0034; illustra come usare tali notifiche di modifica.
 ms.assetid: a311759a-e337-4297-af3d-55e969162b0f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1491a2e0ceed448459adaec7df8e67e650aebb15
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aebc8bfffd7efcbe5992fccc965435294510bdfa16c03bfe050a211d9b26d704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028417"
 ---
-# <a name="register-for-change-notification"></a>Registra per notifica modifiche
+# <a name="register-for-change-notification"></a>Registrarsi per la notifica di modifica
 
-Nell'esempio di codice seguente viene illustrato come eseguire la registrazione per le notifiche di modifica nella tabella di routing. Nell'argomento "[use the Event Notification callback](use-the-event-notification-callback.md)" viene illustrato come utilizzare le notifiche di modifica.
+Il codice di esempio seguente illustra come eseguire la registrazione per le notifiche di modifica nella tabella di routing. L'argomento "[Usare il callback di notifica degli](use-the-event-notification-callback.md)eventi " illustra come usare tali notifiche di modifica.
 
 
 ```C++
@@ -105,9 +105,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

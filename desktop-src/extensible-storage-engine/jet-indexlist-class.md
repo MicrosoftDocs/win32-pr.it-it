@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_INDEXLIST Class'
-title: Classe JET_INDEXLIST
+description: 'Altre informazioni su: JET_INDEXLIST classe'
+title: JET_INDEXLIST classe
 TOCTitle: JET_INDEXLIST class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_INDEXLIST
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6849d05f254bc4c9e5903332ce99792ec934088a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e6d0958b0165bf1e73403a67f71ab0d074b8353a91299233ec5280837c1ef4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120016811"
 ---
-# <a name="jet_indexlist-class"></a>Classe JET_INDEXLIST
+# <a name="jet_indexlist-class"></a>JET_INDEXLIST classe
 
-Informazioni su una tabella temporanea contenente informazioni su tutti gli indici per una tabella specifica.
+Informazioni su una tabella temporanea contenente informazioni su tutti gli indici per una determinata tabella.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_INDEXLIST  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST membri](./jet-indexlist-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

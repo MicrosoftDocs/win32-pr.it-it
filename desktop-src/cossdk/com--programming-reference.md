@@ -1,19 +1,19 @@
 ---
-description: Le sezioni seguenti contengono i riferimenti alla programmazione COM+.
+description: Le sezioni seguenti contengono informazioni di riferimento sulla programmazione COM+.
 ms.assetid: 32835bcd-e0b6-4156-ac1b-05d5bfc3116c
-title: Guida di riferimento alla programmazione COM+
+title: Informazioni di riferimento sulla programmazione COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fba749c6b0c4952e2c35c5e97a8751b9c1613332
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a607974a25558fdbecbcb0d7630045751bfcd7503033142312d9a1e7db60f2dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029531"
 ---
-# <a name="com-programming-reference"></a>Guida di riferimento alla programmazione COM+
+# <a name="com-programming-reference"></a>Informazioni di riferimento sulla programmazione COM+
 
-Le sezioni seguenti contengono i riferimenti alla programmazione COM+.
+Le sezioni seguenti contengono informazioni di riferimento sulla programmazione COM+.
 
 -   [Classi COM+](com--classes.md)
 -   [Enumerazioni COM+](com--enumerations.md)

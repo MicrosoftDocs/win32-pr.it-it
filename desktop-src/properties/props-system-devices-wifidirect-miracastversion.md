@@ -1,19 +1,19 @@
 ---
-description: Indica la versione del protocollo Miracast se Wi-Fi dispositivo diretto è Miracast in grado di supportare.
+description: Indica la versione del Miracast se Wi-Fi dispositivo diretto è Miracast supportato.
 ms.assetid: c888120e-a8c8-4e64-8c38-ce6b74dd1718
-title: System. Devices. WiFiDirect. MiracastVersion
+title: System.Devices.WiFiDirect.MiracastVersion
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06ee7d126173030484c7a3f8d723baa5f72a9fd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7c8eb009d4e06b8c1511259c860296e36b3de2a34cf3c7a0bb7406cc7139014
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059351"
 ---
-# <a name="systemdeviceswifidirectmiracastversion"></a>System. Devices. WiFiDirect. MiracastVersion
+# <a name="systemdeviceswifidirectmiracastversion"></a>System.Devices.WiFiDirect.MiracastVersion
 
-Indica la versione del protocollo Miracast se Wi-Fi dispositivo diretto è Miracast in grado di supportare
+Indica la versione del protocollo Miracast se Wi-Fi dispositivo diretto è Miracast supportato
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2895f773721f7c900003cbaa0f070c277a0e260
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 747ed7c19817757570d6517c68a987c2c75aa340c74ecfbac9fe258b1091f00e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082511"
 ---
 # <a name="evaluator-state-variables"></a>Variabili di stato dell'analizzatore
 
-<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> <dd> 
+<dl> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ DI CONTABILITÀ GENERALE</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | Ordine mappa 1D                  |
+| Descrizione:     | Ordine delle mappe 1D                  |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   | 1                              |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
@@ -34,11 +34,11 @@ ms.locfileid: "107909259"
 
  
 
-</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_ORDER"></span><span id="gl_order"></span>ORDINE \_ DI CONTABILITÀ GENERALE</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------|
-| Descrizione:     | Ordini mappa 2D                 |
+| Descrizione:     | Ordini di mappe 2D                 |
 | Gruppo di attributi: |                                |
 | Valore iniziale:   | 1,1                            |
 | Comando Get:     | [**glGetMapiv**](glgetmap.md) |
@@ -125,7 +125,7 @@ ms.locfileid: "107909259"
 
  
 
-</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO \_ DELLA GRIGLIA GL MAP1 \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_MAP1_GRID_DOMAIN"></span><span id="gl_map1_grid_domain"></span>DOMINIO \_ GRIGLIA GL MAP1 \_ \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|--------------------------------------------------------------------------------|

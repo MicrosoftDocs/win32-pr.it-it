@@ -1,7 +1,7 @@
 ---
 description: Registra il database specificato.
 ms.assetid: 65eceb1a-9ce1-4b97-98d7-731932797794
-title: SdbRegisterDatabaseEx (funzione)
+title: Funzione SdbRegisterDatabaseEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 74872f8895032abe02b024396fda12c43dc1611d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 512e180549c246a5504bc14675d61082c68904aa767d98deca5111d9a275dc60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984101"
 ---
-# <a name="sdbregisterdatabaseex-function"></a>SdbRegisterDatabaseEx (funzione)
+# <a name="sdbregisterdatabaseex-function"></a>Funzione SdbRegisterDatabaseEx
 
 Registra il database specificato.
 
@@ -41,34 +41,34 @@ BOOL WINAPI SdbRegisterDatabaseEx(
 
 <dl> <dt>
 
-*pszDatabasePath* \[ in\]
+*pszDatabasePath* \[ Pollici\]
 </dt> <dd>
 
-Percorso del database. Questo parametro non può essere **null**.
+Percorso del database. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
-*dwDatabaseType* \[ in\]
+*dwDatabaseType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di database. Vedere [tipi di database shim](shim-database-types.md) per un elenco di valori.
+Tipo di database. Per [un elenco di valori, vedere Tipi di database Shim.](shim-database-types.md)
 
 </dd> <dt>
 
 *pTimeStamp* \[ in, facoltativo\]
 </dt> <dd>
 
-Timestamp del database. Se questo parametro è **null**, viene utilizzata l'ora di sistema.
+Timestamp per il database. Se questo parametro è **NULL,** viene usata l'ora di sistema.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce **true** in caso di esito positivo o **false** in caso di errore.
+La funzione restituisce **TRUE in caso** di esito positivo o FALSE **in** caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di poter utilizzare qualsiasi altra funzione SDB, è necessario registrare un database.
+Un database deve essere registrato prima di poter usare qualsiasi altra funzione SDB.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ Prima di poter utilizzare qualsiasi altra funzione SDB, è necessario registrare
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

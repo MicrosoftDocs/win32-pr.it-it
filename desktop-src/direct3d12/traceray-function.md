@@ -1,7 +1,7 @@
 ---
-description: Invia un raggio in una ricerca di riscontri in una struttura di accelerazione.
+description: Invia un raggio a una ricerca di riscontri in una struttura di accelerazione.
 ms.assetid: ''
-title: TraceRay (funzione)
+title: Funzione TraceRay
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,19 +12,19 @@ api_name:
 - TraceRay
 api_type:
 - NA
-ms.openlocfilehash: faeed928b25acb4dac95e47a46a103daf87124e0
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 4e22a26d7bd2fd91029c106133667bce98c163d90d99f0700dac7f2bdf0796fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "106320821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027981"
 ---
-# <a name="traceray-function"></a>TraceRay (funzione)
+# <a name="traceray-function"></a>Funzione TraceRay
 
-Invia un raggio in una ricerca di riscontri in una struttura di accelerazione.
+Invia un raggio a una ricerca di riscontri in una struttura di accelerazione.
 
 ## <a name="syntax"></a>Sintassi
-Questa definizione di funzione intrinseca è equivalente al modello di funzione seguente:
+Questa definizione di funzione intrinseca equivale al modello di funzione seguente:
 
 ```
 Template<payload_t>
@@ -45,30 +45,30 @@ void TraceRay(RaytracingAccelerationStructure AccelerationStructure,
 
 `AccelerationStructure`
 
-Struttura di accelerazione di primo livello da usare. La definizione di una struttura di accelerazione NULL impone un mancato riscontro.
+Struttura di accelerazione di primo livello da utilizzare. Se si specifica una struttura di accelerazione NULL, viene forzata una mancata esecuzione.
 
 `RayFlags`
 
-Combinazione valida di valori di [ray_flag](ray_flag.md) . Solo i flag raggio definiti vengono propagati dal sistema, ovvero sono visibili alla funzione intrinseca shader [RayFlags](rayflags.md) .
+Combinazione valida [di ray_flag](ray_flag.md) valori. Solo i flag di raggio definiti vengono propagati dal sistema, ad esempio sono visibili alla funzione intrinseca dello shader [RayFlags.](rayflags.md)
 
 `InstanceInclusionMask`
 
-Un Unsigned Integer, gli 8 bit ultimi, usati per includere o rifiutare istanze geometry basate su InstanceMask in ogni istanza. Ad esempio:
+Intero senza segno, i cui ultimi 8 bit vengono usati per includere o rifiutare istanze geometry in base a InstanceMask in ogni istanza. Esempio:
 ```
 if(!((InstanceInclusionMask & InstanceMask) & 0xff)) { //ignore intersection }
 ```
 
 `RayContributionToHitGroupIndex`
 
-Unsigned Integer che specifica l'offset da aggiungere ai calcoli di indirizzamento nelle tabelle dello shader per l'indicizzazione del gruppo di hit.  Vengono utilizzati solo i 4 bit inferiori di questo valore.
+Intero senza segno che specifica l'offset da aggiungere ai calcoli di indirizzamento all'interno delle tabelle shader per l'indicizzazione dei gruppi di hit.  Vengono usati solo i 4 bit più in basso di questo valore.
 
 `MultiplierForGeometryContributionToHitGroupIndex`
 
-Un Unsigned Integer che specifica lo stride da moltiplicare per *GeometryContributionToHitGroupIndex*, che è solo l'indice in base 0, che la geometria è stata fornita dall'app nella struttura di accelerazione di livello inferiore. Vengono utilizzati solo i 16 bit inferiori del valore del moltiplicatore.
+Intero senza segno che specifica lo stride da moltiplicare per *GeometryContributionToHitGroupIndex,* che è solo l'indice in base 0 fornito dall'app nella struttura di accelerazione di livello inferiore. Vengono usati solo i 16 bit più in basso di questo valore del moltiplicatore.
 
 `MissShaderIndex`
 
-Unsigned Integer che specifica l'indice dello shader di mancato utilizzo in una tabella shader.
+Intero senza segno che specifica l'indice del miss shader all'interno di una tabella shader.
 
 `Ray`
 
@@ -76,7 +76,7 @@ Oggetto [**RayDesc**](raydesc.md) che rappresenta il raggio da tracciare.
 
 `Payload`
 
-Payload con raggio definito dall'utente a cui si accede sia per l'input che per l'output da shader richiamati durante raytracing.  Al termine dell'esecuzione di [**TraceRay**](traceray-function.md) , il chiamante può accedere anche al payload.
+Un payload di raggi definito dall'utente accede sia per l'input che per l'output dagli shader richiamati durante il raytracing.  Al [**termine di TraceRay,**](traceray-function.md) il chiamante può accedere anche al payload.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -84,11 +84,11 @@ Payload con raggio definito dall'utente a cui si accede sia per l'input che per 
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
-* [**Hit shader più vicino**](closest-hit-shader.md)
-* [**Lo shader manca**](miss-shader.md)
-* [**Shader di generazione del Ray**](ray-generation-shader.md)
+* [**Hit Shader più vicino**](closest-hit-shader.md)
+* [**Miss Shader**](miss-shader.md)
+* [**Shader di generazione di raggi**](ray-generation-shader.md)
 
 
 
@@ -96,7 +96,7 @@ Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
 
 <dl> <dt>
 
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su Direct3D 12 Raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

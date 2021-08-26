@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_DROPFILES (RichEdit. h)
-description: Notifica a una finestra padre del controllo Rich Edit che l'utente sta tentando di rilasciare i file nel controllo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un \_ messaggio di notifica WM quando riceve il \_ messaggio WM DROPFILES.
+title: EN_DROPFILES codice di notifica (Richedit.h)
+description: Notifica a una finestra padre del controllo Rich Edit che l'utente sta tentando di rilasciare file nel controllo. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio WM NOTIFY quando \_ riceve il messaggio WM \_ DROPFILES.
 ms.assetid: fcae0ff8-ce37-4c71-b14c-cbd6429b4ab3
 keywords:
-- Controlli di Windows per il codice di notifica EN_DROPFILES
+- EN_DROPFILES codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c0ed1a4a9b95348b1de20e54fcf3b167df19f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8813d3d62883ab607bb898f4aa34a664cbab47b2c8214fbd83fc8cc7913e26ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047781"
 ---
-# <a name="en_dropfiles-notification-code"></a>\_Codice di notifica en DropFiles
+# <a name="en_dropfiles-notification-code"></a>Codice \_ di notifica EN DROPFILES
 
-Notifica a una finestra padre del controllo Rich Edit che l'utente sta tentando di rilasciare i file nel controllo. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) quando riceve il messaggio [**WM \_ DropFiles**](/windows/desktop/shell/wm-dropfiles) .
+Notifica a una finestra padre del controllo Rich Edit che l'utente sta tentando di rilasciare file nel controllo. Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio [**WM \_ NOTIFY**](wm-notify.md) quando riceve il [**messaggio WM \_ DROPFILES.**](/windows/desktop/shell/wm-dropfiles)
 
 
 ```C++
@@ -49,13 +49,13 @@ Struttura [**ENDROPFILES**](/windows/desktop/api/Richedit/ns-richedit-endropfile
 
 Restituisce un valore diverso da zero per consentire l'operazione di rilascio.
 
-Restituisce zero per ignorare l'operazione DROP.
+Restituisce zero per ignorare l'operazione di rilascio.
 
 ## <a name="remarks"></a>Commenti
 
-Per un controllo Rich Edit per la ricezione di messaggi [**WM \_ DropFiles**](/windows/desktop/shell/wm-dropfiles) , è necessario che la finestra padre registri il controllo come destinazione di rilascio tramite la funzione [**DragAcceptFiles**](/windows/desktop/api/shellapi/nf-shellapi-dragacceptfiles) . Il controllo non registra se stesso.
+Perché un controllo Rich Edit riceva [**messaggi WM \_ DROPFILES,**](/windows/desktop/shell/wm-dropfiles) la finestra padre deve registrare il controllo come destinazione di rilascio usando la [**funzione DragAcceptFiles.**](/windows/desktop/api/shellapi/nf-shellapi-dragacceptfiles) Il controllo non esegue la registrazione.
 
-Per ricevere \_ i codici di notifica en DropFiles, specificare [**ENM \_ DropFiles**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**\_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere i codici di notifica EN \_ DROPFILES, specificare [**ENM \_ DROPFILES**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il messaggio [**EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Per ricevere \_ i codici di notifica en DropFiles, specificare [**ENM \_ DropFil
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

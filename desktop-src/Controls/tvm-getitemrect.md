@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_GETITEMRECT (COMmctrl. h)
-description: Recupera il rettangolo di delimitazione per un elemento della visualizzazione struttura ad albero e indica se l'elemento è visibile. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetItemRect di TreeView.
+title: TVM_GETITEMRECT messaggio (Commctrl.h)
+description: Recupera il rettangolo di delimitazione per un elemento della visualizzazione albero e indica se l'elemento è visibile. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro TreeView GetItemRect.
 ms.assetid: f2d7d7b1-cfe7-4361-bd90-e3e99dbcd99c
 keywords:
-- Controlli di Windows Message TVM_GETITEMRECT
+- TVM_GETITEMRECT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdf4d73fb83ddbd8e9e682f11ee1f5ecfbd5153
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c6b58ff7d2ce88fd4257ce7db84fa8bd9b4fa2b2d223af03a3f1d57a83c9b9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054001"
 ---
-# <a name="tvm_getitemrect-message"></a>\_Messaggio GETITEMRECT TVM
+# <a name="tvm_getitemrect-message"></a>Messaggio TVM \_ GETITEMRECT
 
-Recupera il rettangolo di delimitazione per un elemento della visualizzazione struttura ad albero e indica se l'elemento è visibile. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetItemRect di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemrect) .
+Recupera il rettangolo di delimitazione per un elemento della visualizzazione albero e indica se l'elemento è visibile. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ TreeView GetItemRect.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemrect)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,24 +32,24 @@ Recupera il rettangolo di delimitazione per un elemento della visualizzazione st
 *wParam* 
 </dt> <dd>
 
-Valore che specifica la parte dell'elemento per la quale recuperare il rettangolo di delimitazione. Se questo parametro è **true**, il rettangolo di delimitazione include solo il testo dell'elemento. In caso contrario, include l'intera riga occupata dall'elemento nel controllo di visualizzazione albero.
+Valore che specifica la parte dell'elemento per cui recuperare il rettangolo di delimitazione. Se questo parametro è **TRUE,** il rettangolo di delimitazione include solo il testo dell'elemento. In caso contrario, include l'intera riga che l'elemento occupa nel controllo di visualizzazione albero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) che, quando invia il messaggio, contiene l'handle dell'elemento per il quale recuperare il rettangolo. Vedere l'esempio seguente per altre informazioni su come inserire l'handle di elemento in questo parametro. Dopo la restituzione dal messaggio, questo parametro contiene il rettangolo di delimitazione. Le coordinate sono relative all'angolo superiore sinistro del controllo di visualizzazione ad albero.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) che, quando si invia il messaggio, contiene l'handle dell'elemento per il quale recuperare il rettangolo. Per altre informazioni su come inserire l'handle dell'elemento in questo parametro, vedere l'esempio seguente. Dopo la restituzione dal messaggio, questo parametro contiene il rettangolo di delimitazione. Le coordinate sono relative all'angolo superiore sinistro del controllo visualizzazione albero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'elemento è visibile e il rettangolo di delimitazione è stato recuperato correttamente, il valore restituito è **true**. In caso contrario, il messaggio restituisce **false** e non recupera il rettangolo di delimitazione.
+Se l'elemento è visibile e il rettangolo di delimitazione è stato recuperato correttamente, il valore restituito è **TRUE.** In caso contrario, il messaggio restituisce **FALSE** e non recupera il rettangolo di delimitazione.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si invia questo messaggio, il parametro *lParam* contiene l'handle dell'elemento per il quale viene recuperato il rettangolo. L'handle viene inserito in *lParam* come illustrato nell'esempio seguente:
+Quando si invia questo messaggio, il *parametro lParam* contiene l'handle dell'elemento per cui viene recuperato il rettangolo. L'handle viene inserito in *lParam,* come illustrato nell'esempio seguente:
 
 
 ```
@@ -68,9 +68,9 @@ SendMessage(hwndTreeView, TVM_GETITEMRECT, FALSE, (LPARAM)&rc);
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

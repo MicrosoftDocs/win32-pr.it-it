@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 89e103d441648643be0176ca34f72f6175c11213
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ed9cf5e6e85e65da69dee1998c8d75241f775fdc212e2e86687bb380271c898a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028691"
 ---
 # <a name="d3dxmatrixmultiply-function-d3dx10mathh"></a>Funzione D3DXMatrixMultiply (D3DX10Math.h)
 
@@ -47,7 +47,7 @@ D3DXMATRIX* D3DXMatrixMultiply(
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 

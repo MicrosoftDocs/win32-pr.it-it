@@ -1,7 +1,7 @@
 ---
 description: Copia i file dall'host Hyper-V alla macchina virtuale.
 ms.assetid: 76667557-13B2-4286-BC6B-E32FADE62A7A
-title: 'Metodo Msvm_GuestFileService:: CopyFilesToGuest'
+title: Msvm_GuestFileService::CopyFilesToGuest
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9424dee6d28e0bd9cd6ac43c15ad27cdebdb7017
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e027d71faf8dda5769962d3c71d1fcfb5958c61c91993cf17fbf472d93aff50f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980481"
 ---
-# <a name="msvm_guestfileservicecopyfilestoguest-method"></a>\_Metodo MSVM GuestFileService:: CopyFilesToGuest
+# <a name="msvm_guestfileservicecopyfilestoguest-method"></a>Metodo Msvm \_ GuestFileService::CopyFilesToGuest
 
 Copia i file dall'host Hyper-V alla macchina virtuale.
 
@@ -41,17 +41,17 @@ uint32 CopyFilesToGuest(
 
 <dl> <dt>
 
-*CopyFileToGuestSettings* \[ in\]
+*CopyFileToGuestSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di istanze della classe [**\_ CopyFileToGuestSettingData MSVM**](msvm-copyfiletoguestsettingdata.md) che rappresenta un processo di operazione del servizio file Guest.
+Matrice di istanze della [**classe Msvm \_ CopyFileToGuestSettingData**](msvm-copyfiletoguestsettingdata.md) che rappresenta un processo operativo del servizio file guest.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operazione, che viene utilizzato se non è stato possibile eseguire in modo sincrono il metodo. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Parametro facoltativo per il monitoraggio dello stato dell'operazione, che viene utilizzato se non è stato possibile eseguire il metodo in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 > [!Note]  
 > Questo parametro è stato aggiunto in Windows 10.
@@ -60,10 +60,10 @@ Parametro facoltativo per il monitoraggio dello stato di avanzamento dell'operaz
 
 </dd> <dt>
 
-*ParentPools* \[ out, facoltativo\]
+*Pool padre* \[ out, facoltativo\]
 </dt> <dd>
 
-Matrice facoltativa di riferimenti [**MSVM \_ CopyFileToGuestJob**](msvm-copyfiletoguestjob.md) utilizzati per il monitoraggio dello stato di avanzamento dell'operazione. **CopyFilesToGuest** utilizza *ParentPools* se non può essere eseguito in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
+Matrice facoltativa di [**riferimenti Msvm \_ CopyFileToGuestJob**](msvm-copyfiletoguestjob.md) usati per monitorare lo stato dell'operazione. **CopyFilesToGuest** usa *ParentPools* se non può essere eseguito in modo sincrono. Se l'operazione viene eseguita in modo asincrono, il valore restituito è 4096.
 
 > [!Note]  
 > Questo parametro è stato rimosso in Windows 10.
@@ -74,17 +74,17 @@ Matrice facoltativa di riferimenti [**MSVM \_ CopyFileToGuestJob**](msvm-copyfil
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0; in caso contrario, restituisce un valore di errore.
+In caso di esito positivo, restituisce 0. In caso contrario, restituisce un valore di errore.
 
 <dl> <dt>
 
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -93,25 +93,25 @@ In caso di esito positivo, restituisce 0; in caso contrario, restituisce un valo
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -123,10 +123,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                                 |
-| Spazio dei nomi<br/>                | \\\\\\Virtualizzazione radice \\ v2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                                 |
+| Spazio dei nomi<br/>                | \\\\Virtualizzazione \\ radice \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -135,7 +135,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_GuestFileService MSVM**](msvm-guestfileservice.md)
+[**Msvm \_ GuestFileService**](msvm-guestfileservice.md)
 </dt> </dl>
 
  

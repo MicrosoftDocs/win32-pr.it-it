@@ -1,25 +1,25 @@
 ---
 title: RequestReplyNamedPipesClientWithWindowsTransportSecurityExample
-description: Questo esempio mostra un client named pipe che invia messaggi request/reply con sicurezza fornita dalla sicurezza del trasporto SSPI di Windows. Viene illustrato il client usando le proprietà del token di sicurezza per modificare il livello di rappresentazione consentito rispetto all'impostazione predefinita.
+description: In questo esempio viene illustrato un client named pipe che invia messaggi di richiesta-risposta con sicurezza fornita Windows sicurezza del trasporto SSPI. Illustra il client che usa le proprietà del token di sicurezza per modificare il livello di rappresentazione consentito dal valore predefinito.
 ms.assetid: 50BA8F67-95F4-414A-952C-8AF91C511753
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f81eb77680b161a121be68d1e4f00a3d87c9dcb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d46dda53ceeff5a8bbe1b649c65b294fb190224491c9b90a144be35c4123f42b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089461"
 ---
 # <a name="requestreplynamedpipesclientwithwindowstransportsecurityexample"></a>RequestReplyNamedPipesClientWithWindowsTransportSecurityExample
 
-Questo esempio mostra un client named pipe che invia messaggi request/reply con sicurezza fornita dalla sicurezza del trasporto SSPI di Windows. Viene illustrato il client usando le proprietà del token di sicurezza per modificare il livello di rappresentazione consentito rispetto all'impostazione predefinita.
+In questo esempio viene illustrato un client named pipe che invia messaggi di richiesta-risposta con sicurezza fornita Windows sicurezza del trasporto SSPI. Illustra il client che usa le proprietà del token di sicurezza per modificare il livello di rappresentazione consentito dal valore predefinito.
 
--   [RequestReplyNamedPipesClientWithWindowsTransportSecurity. cpp](#requestreplynamedpipesclientwithwindowstransportsecuritycpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [RequestReplyNamedPipesClientWithWindowsTransportSecurity.cpp](#requestreplynamedpipesclientwithwindowstransportsecuritycpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="requestreplynamedpipesclientwithwindowstransportsecuritycpp"></a>RequestReplyNamedPipesClientWithWindowsTransportSecurity. cpp
+## <a name="requestreplynamedpipesclientwithwindowstransportsecuritycpp"></a>RequestReplyNamedPipesClientWithWindowsTransportSecurity.cpp
 
 
 ```C++
@@ -440,7 +440,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -584,9 +584,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

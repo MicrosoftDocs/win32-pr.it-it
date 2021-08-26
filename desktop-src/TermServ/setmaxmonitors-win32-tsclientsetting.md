@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119987911"
 ---
-# <a name="setmaxmonitors-method-of-the-win32_tsclientsetting-class"></a>Metodo SetMaxMonitors della classe \_ TSClientSetting Win32
+# <a name="setmaxmonitors-method-of-the-win32_tsclientsetting-class"></a>Metodo SetMaxMonitors della classe \_ Win32 TSClientSetting
 
 Imposta la **proprietà MaxMonitors.**
 
@@ -52,7 +52,7 @@ Specifica il nuovo numero massimo di monitoraggi supportati dal server. Il valor
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se le impostazioni di connessione dell'utente vengono sostituite dal server.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se le impostazioni di connessione dell'utente vengono sostituite dal server.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
-| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

@@ -4,12 +4,12 @@ ms.assetid: 2682e7ba-dabd-497e-aea4-6d3f837f4f10
 title: Evento InkCollector.NewPackets (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bab9d13dd2f33689700ef4a9aee2ed5059403e8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 375884363f06558639505077482b13a431c39b51d874fd391d0086446becae69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939401"
 ---
 # <a name="inkcollectornewpackets-event"></a>Evento InkCollector.NewPackets
 
@@ -57,9 +57,9 @@ Numero di pacchetti ricevuti per un [**oggetto IInkStrokeDisp.**](/windows/deskt
 *PacketData* \[ in, out\]
 </dt> <dd>
 
-Quando questo metodo viene restituito, contiene una matrice che contiene i dati selezionati per il pacchetto.
+Quando questo metodo viene restituito, contiene una matrice contenente i dati selezionati per il pacchetto.
 
-Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -69,13 +69,13 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi di pacchetto si verificano rapidamente e un gestore eventi **NewPackets** deve essere veloce o le prestazioni ne risentiranno.
+I pacchetti vengono ricevuti durante la raccolta di un tratto. Gli eventi dei pacchetti si verificano rapidamente e un gestore eventi **NewPackets** deve essere veloce o le prestazioni ne risentiranno.
 
-Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICENewPackets.
+Il metodo di evento TThis è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (dispatchinterfaces) con ID \_ ICENewPackets DISPID.
 
 Questo evento deve essere usato con attenzione perché potrebbe avere un effetto negativo sulle prestazioni dell'input penna se viene eseguita una quantità troppo grande di codice nei gestori eventi.
 
-Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice restituita *dal parametro PacketData* contiene i dati per tali proprietà.
+Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice *restituita dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
 > Anche se è possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o usate.
@@ -88,7 +88,7 @@ Per impostare le proprietà contenute in questa matrice, usare la [**proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

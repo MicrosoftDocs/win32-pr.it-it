@@ -27,7 +27,7 @@ ms.locfileid: "119986801"
 Continua da una chiamata precedente alla funzione [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e restituisce la licenza successiva installata in un server licenze Desktop remoto che corrisponde ai criteri di ricerca.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Mstlsapi.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mstlsapi.dll.
 
  
 
@@ -137,7 +137,7 @@ Impossibile elaborare la richiesta a causa di memoria insufficiente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce i possibili valori restituiti seguenti.
+Questa funzione restituisce i valori restituiti possibili seguenti.
 
 <dl> <dt>
 

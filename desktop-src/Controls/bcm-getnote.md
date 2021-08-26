@@ -1,9 +1,9 @@
 ---
-title: Messaggio BCM_GETNOTE (COMmctrl. h)
-description: Ottiene il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la macro del pulsante \_ getnote.
+title: BCM_GETNOTE messaggio (Commctrl.h)
+description: Ottiene il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Button GetNote.
 ms.assetid: ddaf4227-1316-49b5-abf0-00215472c46c
 keywords:
-- Controlli di Windows Message BCM_GETNOTE
+- BCM_GETNOTE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,47 +14,47 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 758dac90ba4c0f3087a6df90d9acf2c1321b1d73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55b552f79e1d6c7bda2808b99701ff11e45deb169232b8bb52c4ecf231cdcbfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921701"
 ---
-# <a name="bcm_getnote-message"></a>\_Messaggio GETNOTE BCM
+# <a name="bcm_getnote-message"></a>Messaggio GETNOTE di BCM \_
 
-Ottiene il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la macro del [**pulsante \_ getnote**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnote) .
+Ottiene il testo della nota associata a un pulsante di collegamento al comando. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Button GetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_getnote)
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in uscita\]
+*wParam* \[ in, out\]
 </dt> <dd>
 
-**Valore DWORD** che specifica la dimensione del buffer a cui punta *lParam*, in caratteri.
+Valore **DWORD** che specifica le dimensioni del buffer a cui punta *lParam,* in caratteri.
 
 </dd> <dt>
 
-*lParam* \[ out\]
+*lParam* \[ Cambio\]
 </dt> <dd>
 
-Buffer di stringa per ricevere il testo. Il buffer deve essere sufficientemente grande da contenere il carattere NULL di terminazione.
+Buffer di stringhe per ricevere il testo. Le dimensioni del buffer devono essere sufficienti per contenere il carattere NULL di terminazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il messaggio ha esito positivo, restituisce **true**. In caso contrario, restituisce **false**.
+Se il messaggio ha esito positivo, restituisce **TRUE.** In caso contrario, **restituisce FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **BCM \_ getnote** funziona solo con i pulsanti con lo stile del pulsante [**BS \_ COMMANDLINK**](button-styles.md) o [**BS \_ DEFCOMMANDLINK**](button-styles.md) .
+Il **messaggio \_ BCM GETNOTE** funziona solo con i pulsanti con lo stile [**BS \_ COMMANDLINK**](button-styles.md) o [**BS \_ DEFCOMMANDLINK.**](button-styles.md)
 
 [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) conterrà:
 
--   ERRORE \_ non \_ supportato, se il pulsante non ha lo stile [**BS \_ DEFCOMMANDLINK**](button-styles.md) o [**BS \_ COMMANDLINK**](button-styles.md) .
--   ERRORE \_ nel \_ buffer insufficiente, se il buffer *lParam* è troppo piccolo. Il parametro *wParam* conterrà le dimensioni del buffer richieste in caratteri.
+-   ERRORE NON SUPPORTATO, se il pulsante non ha lo stile \_ \_ [**\_ BS DEFCOMMANDLINK**](button-styles.md) o [**BS \_ COMMANDLINK.**](button-styles.md)
+-   ERRORE \_ INSUFFICIENT \_ BUFFER, se il buffer *lParam* è troppo piccolo. Il *parametro wParam* conterrà le dimensioni del buffer richieste, in caratteri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Il messaggio **BCM \_ getnote** funziona solo con i pulsanti con lo stile del pu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

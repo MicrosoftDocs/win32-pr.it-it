@@ -1,9 +1,9 @@
 ---
-title: Messaggio BCM_SETSPLITINFO (COMmctrl. h)
-description: Imposta le informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite il pulsante \_ SetSplitInfo macro.
+title: BCM_SETSPLITINFO messaggio (Commctrl.h)
+description: Imposta le informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite la \_ macro Button SetSplitInfo.
 ms.assetid: 609b8972-9616-4850-a72c-2f87ce19f563
 keywords:
-- Controlli di Windows Message BCM_SETSPLITINFO
+- BCM_SETSPLITINFO dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac40f2d1ef016ee76ab21ccf2dc4733d0ff427f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 17332ce5f10fa612d739598222e4973000961435fa525190a650adaa9aa9fc4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921421"
 ---
-# <a name="bcm_setsplitinfo-message"></a>\_Messaggio SETSPLITINFO BCM
+# <a name="bcm_setsplitinfo-message"></a>Messaggio di BCM \_ SETSPLITINFO
 
-Imposta le informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite il [**pulsante \_ SetSplitInfo**](/windows/desktop/api/Commctrl/nf-commctrl-button_setsplitinfo) macro.
+Imposta le informazioni per un controllo pulsante di divisione. Inviare questo messaggio in modo esplicito o tramite la macro [**\_ Button SetSplitInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setsplitinfo)
 
 ## <a name="parameters"></a>Parametri
 
@@ -36,20 +36,20 @@ Deve essere zero.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**\_ SPLITINFO Button**](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) che contiene informazioni sul pulsante di suddivisione.
+Puntatore a una [**struttura BUTTON \_ SPLITINFO**](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) contenente informazioni sul pulsante di divisione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo messaggio solo con gli stili del pulsante [**BS \_ SPLITBUTTON**](button-styles.md) e [**BS \_ DEFSPLITBUTTON**](button-styles.md) .
+Usare questo messaggio solo con gli stili dei pulsanti [**\_ BS SPLITBUTTON**](button-styles.md) e [**\_ BS DEFSPLITBUTTON.**](button-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Utilizzare questo messaggio solo con gli stili del pulsante [**BS \_ SPLITBUTTON
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

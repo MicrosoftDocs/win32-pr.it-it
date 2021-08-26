@@ -1,36 +1,36 @@
 ---
-description: Il filtro Grabber di esempio è un filtro di trasformazione che può essere usato per estrarre gli esempi di supporti da un flusso mentre passano attraverso il grafico dei filtri.
+description: Il filtro Sample Grabber è un filtro di trasformazione che può essere usato per acquisire campioni multimediali da un flusso mentre passano attraverso il grafico dei filtri.
 ms.assetid: ec0e367e-9ef9-4de6-9132-b462c233bc98
 title: Uso del grabber di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4886c796691e83e02b58ddea129d60d5004c9f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47318b7bd4dbbad57fb82bec11e0a1293a0284c906c78fc7175d8a758ad477f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083561"
 ---
 # <a name="using-the-sample-grabber"></a>Uso del grabber di esempio
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Il filtro [**grabber di esempio**](sample-grabber-filter.md) è un filtro di trasformazione che può essere usato per estrarre gli esempi di supporti da un flusso mentre passano attraverso il grafico dei filtri.
+Il [**filtro Sample Grabber**](sample-grabber-filter.md) è un filtro di trasformazione che può essere usato per acquisire campioni multimediali da un flusso mentre passano attraverso il grafico dei filtri.
 
-Se si vuole semplicemente estrarre una bitmap da un file video, è più semplice usare l'oggetto [mediadet (Media Detector)](media-detector--mediadet.md) . Per informazioni dettagliate, vedere [acquisizione di un frame di poster](grabbing-a-poster-frame.md) . Il grabber di esempio è più flessibile, tuttavia, perché funziona con quasi tutti i tipi di supporto (vedere [**ISampleGrabber:: SetMediaType**](isamplegrabber-setmediatype.md) per le poche eccezioni) e offre un maggiore controllo per l'applicazione.
+Se si vuole semplicemente acquisire una bitmap da un file video, è più facile usare l'oggetto [Media Detector (MediaDet).](media-detector--mediadet.md) Per [informazioni dettagliate, vedere Grabbing a Poster Frame](grabbing-a-poster-frame.md) (Afferrare una cornice poster). Il grabber di esempio è tuttavia più flessibile, perché funziona con quasi tutti i tipi di supporti (vedere [**ISampleGrabber::SetMediaType**](isamplegrabber-setmediatype.md) per le poche eccezioni) e offre maggiore controllo all'applicazione.
 
--   [Creare il gestore del grafico del filtro](#create-the-filter-graph-manager)
--   [Aggiungere il grabber di esempio al grafico di filtro](#add-the-sample-grabber-to-the-filter-graph)
--   [Imposta il tipo di supporto](#set-the-media-type)
--   [Creare il grafico di filtro](#build-the-filter-graph)
--   [Eseguire il grafo](#run-the-graph)
--   [Acquisire l'esempio](#grab-the-sample)
+-   [Creare la gestione Graph filtri](#create-the-filter-graph-manager)
+-   [Aggiungere Sample Grabber al filtro Graph](#add-the-sample-grabber-to-the-filter-graph)
+-   [Impostare il tipo di supporto](#set-the-media-type)
+-   [Compilare il Graph](#build-the-filter-graph)
+-   [Eseguire il Graph](#run-the-graph)
+-   [Afferrare l'esempio](#grab-the-sample)
 -   [Codice di esempio](#example-code)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="create-the-filter-graph-manager"></a>Creare il gestore del grafico del filtro
+## <a name="create-the-filter-graph-manager"></a>Creare la gestione Graph filtri
 
-Per iniziare, creare la [gestione del grafo del filtro](filter-graph-manager.md) e la query per le interfacce [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
+Per iniziare, creare [filter Graph Manager](filter-graph-manager.md) ed eseguire una query per le interfacce [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx.**](/windows/desktop/api/Control/nn-control-imediaeventex)
 
 
 ```C++
@@ -63,9 +63,9 @@ Per iniziare, creare la [gestione del grafo del filtro](filter-graph-manager.md)
 
 
 
-## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Aggiungere il grabber di esempio al grafico di filtro
+## <a name="add-the-sample-grabber-to-the-filter-graph"></a>Aggiungere Sample Grabber al filtro Graph
 
-Creare un'istanza del filtro Grabber di esempio e addit al grafico dei filtri. Eseguire una query sul filtro Grabber di esempio per l'interfaccia [**ISampleGrabber**](isamplegrabber.md) .
+Creare un'istanza del filtro Sample Grabber e aggiungerla al grafico dei filtri. Eseguire una query sul filtro Grabber di esempio per [**l'interfaccia ISampleGrabber.**](isamplegrabber.md)
 
 
 ```C++
@@ -98,11 +98,11 @@ Creare un'istanza del filtro Grabber di esempio e addit al grafico dei filtri. E
 
 
 
-## <a name="set-the-media-type"></a>Imposta il tipo di supporto
+## <a name="set-the-media-type"></a>Impostare il tipo di supporto
 
-Quando si crea il grabber di esempio per la prima volta, non è disponibile alcun tipo di supporto preferito. Ciò significa che è possibile connettersi praticamente a qualsiasi filtro nel grafico, ma non si avrà alcun controllo sul tipo di dati ricevuti. Prima di creare il resto del grafo, è necessario impostare un tipo di supporto per il grabber di esempio, chiamando il metodo [**ISampleGrabber:: SetMediaType**](isamplegrabber-setmediatype.md) .
+Quando si crea per la prima volta Sample Grabber, non ha un tipo di supporto preferito. Ciò significa che è possibile connettersi a quasi tutti i filtri nel grafico, ma non si avrebbe alcun controllo sul tipo di dati ricevuti. Prima di compilare il resto del grafico, è quindi necessario impostare un tipo di supporto per Sample Grabber chiamando il metodo [**ISampleGrabber::SetMediaType.**](isamplegrabber-setmediatype.md)
 
-Quando si connette il grabber di esempio, questo tipo di supporto viene confrontato con il tipo di supporto offerto dall'altro filtro. Gli unici campi che controlla sono il tipo principale, il sottotipo e il tipo di formato. Per uno di questi valori, il valore \_ null del GUID indica che "accetta qualsiasi valore". Nella maggior parte dei casi, è preferibile impostare il tipo e il sottotipo principali. Il codice seguente, ad esempio, specifica un video RGB a 24 bit non compresso:
+Quando il grabber di esempio si connette, confronta questo tipo di supporto con il tipo di supporto offerto dall'altro filtro. Gli unici campi che controlla sono il tipo principale, il sottotipo e il tipo di formato. Per uno di questi valori, il valore GUID \_ NULL significa "accettare qualsiasi valore". Nella maggior parte dei casi è necessario impostare il tipo principale e il sottotipo. Ad esempio, il codice seguente specifica un video RGB a 24 bit non compresso:
 
 
 ```C++
@@ -120,11 +120,11 @@ Quando si connette il grabber di esempio, questo tipo di supporto viene confront
 
 
 
-## <a name="build-the-filter-graph"></a>Creare il grafico di filtro
+## <a name="build-the-filter-graph"></a>Compilare l'Graph
 
-A questo punto è possibile compilare il resto del grafico del filtro. Poiché il grabber di esempio si connetterà solo usando il tipo di supporto specificato, questo consente di sfruttare i meccanismi di [connessione intelligente](intelligent-connect.md) del gestore del grafico dei filtri quando si compila il grafo.
+A questo punto è possibile compilare il resto del grafico dei filtri. [Poiché](intelligent-connect.md) Il grabber di esempio si connetterà solo usando il tipo di supporto specificato, ciò consente di sfruttare i meccanismi di Connessione intelligenti di Filter Graph Manager quando si compila il grafo.
 
-Se, ad esempio, è stato specificato un video non compresso, è possibile connettere un filtro di origine al grabber di esempio e il componente di gestione del filtro del grafico aggiungerà automaticamente il parser di file e il decodificatore. Nell'esempio seguente viene usata la funzione helper ConnectFilters, elencata in [Connect Two filters](connect-two-filters.md):
+Ad esempio, se è stato specificato un video non compresso, è possibile connettere un filtro di origine a Sample Grabber e Filter Graph Manager aggiungerà automaticamente il parser di file e il decodificatore. L'esempio seguente usa la funzione helper ConnectFilters, elencata Connessione [due filtri](connect-two-filters.md):
 
 
 ```C++
@@ -165,9 +165,9 @@ Se, ad esempio, è stato specificato un video non compresso, è possibile connet
 
 
 
-Il grabber di esempio è un filtro di trasformazione, quindi il pin di output deve essere connesso a un altro filtro. Spesso è possibile semplicemente rimuovere gli esempi una volta completata l'operazione. In tal caso, connettere il grabber di esempio al [**filtro renderer null**](null-renderer-filter.md), che elimina i dati ricevuti.
+Sample Grabber è un filtro di trasformazione, quindi il pin di output deve essere connesso a un altro filtro. Spesso, è possibile rimuovere semplicemente gli esempi dopo averli utilizzati. In tal caso, connettere Sample Grabber al filtro [**renderer Null,**](null-renderer-filter.md)che elimina i dati ricevuti.
 
-Nell'esempio seguente viene connesso il grabber di esempio al filtro renderer null:
+L'esempio seguente connette Sample Grabber al filtro Del renderer Null:
 
 
 ```C++
@@ -198,22 +198,22 @@ Nell'esempio seguente viene connesso il grabber di esempio al filtro renderer nu
 
 
 
-Tenere presente che l'inserimento del grabber di esempio tra un decodificatore video e il renderer video può danneggiare significativamente le prestazioni di rendering. Il grabber di esempio è un filtro Trans-on-Place, che indica che il buffer di output è uguale al buffer di input. Per il rendering video, è probabile che il buffer di output si trovi nella scheda grafica, in cui le operazioni di lettura sono molto più lente, rispetto alle operazioni di lettura nella memoria principale.
+Tenere presente che il posizionamento di Sample Grabber tra un decodificatore video e il renderer video può danneggiare significativamente le prestazioni di rendering. Sample Grabber è un filtro trans-in-place, il che significa che il buffer di output è lo stesso del buffer di input. Per il rendering video, è probabile che il buffer di output si trovi nella scheda grafica, dove le operazioni di lettura sono molto più lente rispetto alle operazioni di lettura nella memoria principale.
 
-## <a name="run-the-graph"></a>Eseguire il grafo
+## <a name="run-the-graph"></a>Eseguire il Graph
 
-Il grabber di esempio opera in una delle due modalità seguenti:
+Sample Grabber funziona in una delle due modalità seguenti:
 
--   La modalità di buffering esegue una copia di ogni esempio prima di consegnare l'esempio downstream.
--   La modalità di callback richiama una funzione di callback definita dall'applicazione su ogni esempio.
+-   La modalità di memorizzazione nel buffer crea una copia di ogni campione prima di recapitare l'esempio a valle.
+-   La modalità di callback richiama una funzione di callback definita dall'applicazione in ogni esempio.
 
-Questo articolo descrive la modalità di buffering. Prima di utilizzare la modalità di callback, tenere presente che la funzione di callback deve essere piuttosto limitata. In caso contrario, può ridurre drasticamente le prestazioni o anche causare deadlock. Per ulteriori informazioni, vedere [**ISampleGrabber:: secallback**](isamplegrabber-setcallback.md). Per attivare la modalità di buffering, chiamare il metodo [**ISampleGrabber:: SetBufferSamples**](isamplegrabber-setbuffersamples.md) con il valore **true**.
+Questo articolo descrive la modalità di memorizzazione nel buffer. Prima di usare la modalità di callback, tenere presente che la funzione di callback deve essere piuttosto limitata. In caso contrario, può ridurre drasticamente le prestazioni o persino causare deadlock. Per altre informazioni, vedere [**ISampleGrabber::SetCallback.**](isamplegrabber-setcallback.md) Per attivare la modalità di memorizzazione nel buffer, chiamare il metodo [**ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md) con il valore **TRUE.**
 
-Facoltativamente, chiamare il metodo [**ISampleGrabber:: SetOneShot**](isamplegrabber-setoneshot.md) con il valore **true**. In questo modo, l'grabber di esempio si arresta dopo la ricezione del primo esempio multimediale, che risulta utile se si desidera acquisire un singolo frame dal flusso. Cercare l'ora desiderata, eseguire il grafo e attendere l'evento di [**\_ completamento della EC**](ec-complete.md) . Si noti che il livello di accuratezza del frame dipende dall'origine. Ad esempio, la ricerca di un file MPEG spesso non è accurata per i frame.
+Facoltativamente, chiamare il [**metodo ISampleGrabber::SetOneShot**](isamplegrabber-setoneshot.md) con il valore **TRUE.** Ciò causa l'arresto di Sample Grabber dopo la ricezione del primo campione multimediale, che è utile se si vuole afferrare un singolo fotogramma dal flusso. Cercare l'ora desiderata, eseguire il grafico e attendere [**l'evento EC \_ COMPLETE.**](ec-complete.md) Si noti che il livello di accuratezza dei fotogrammi dipende dall'origine. Ad esempio, la ricerca di un file MPEG spesso non è precisa per i frame.
 
-Per eseguire il grafico il più rapidamente possibile, attivare il clock del grafico come descritto in [impostazione del clock del grafico](setting-the-graph-clock.md).
+Per eseguire il grafico il più rapidamente possibile, ruotare l'orologio del grafo come descritto in [Impostazione dell'Graph clock](setting-the-graph-clock.md).
 
-Nell'esempio seguente viene abilitata la modalità monofase e la modalità di memorizzazione nel buffer, viene eseguito il grafico del filtro e viene atteso il completamento.
+L'esempio seguente abilita la modalità one-shot e la modalità di buffering, esegue il grafico dei filtri e attende il completamento.
 
 
 ```C++
@@ -241,9 +241,9 @@ Nell'esempio seguente viene abilitata la modalità monofase e la modalità di me
 
 
 
-## <a name="grab-the-sample"></a>Acquisire l'esempio
+## <a name="grab-the-sample"></a>Afferrare l'esempio
 
-In modalità di memorizzazione nel buffer, il grabber di esempio archivia una copia di ogni esempio. Il metodo [**ISampleGrabber:: GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia il buffer in una matrice allocata dal chiamante. Per determinare le dimensioni della matrice necessaria, chiamare prima **GetCurrentBuffer** con un puntatore **null** per l'indirizzo di matrice. Quindi allocare la matrice e chiamare il metodo una seconda volta per copiare il buffer. Nell'esempio seguente sono illustrati i passaggi per l'operazione.
+In modalità di buffering, Sample Grabber archivia una copia di ogni esempio. Il [**metodo ISampleGrabber::GetCurrentBuffer**](isamplegrabber-getcurrentbuffer.md) copia il buffer in una matrice allocata dal chiamante. Per determinare le dimensioni della matrice necessarie, chiamare prima **GetCurrentBuffer** con un **puntatore NULL** per l'indirizzo della matrice. Allocare quindi la matrice e chiamare il metodo una seconda volta per copiare il buffer. Nell'esempio seguente sono illustrati i passaggi per l'operazione.
 
 
 ```C++
@@ -271,9 +271,9 @@ In modalità di memorizzazione nel buffer, il grabber di esempio archivia una co
 
 
 
-È necessario avere a disposizione il formato esatto dei dati nel buffer. Per ottenere queste informazioni, chiamare il metodo [**ISampleGrabber:: GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md) . Questo metodo compila una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) con il formato.
+Sarà necessario conoscere il formato esatto dei dati nel buffer. Per ottenere queste informazioni, chiamare il [**metodo ISampleGrabber::GetConnectedMediaType.**](isamplegrabber-getconnectedmediatype.md) Questo metodo inserisce in una [**struttura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) il formato .
 
-Per un flusso video non compresso, le informazioni sul formato sono contenute in una struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) . Nell'esempio seguente viene illustrato come ottenere le informazioni sul formato per un flusso video non compresso.
+Per un flusso video non compresso, le informazioni sul formato sono contenute in una [**struttura VIDEOINFOHEADER.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) L'esempio seguente illustra come ottenere le informazioni sul formato per un flusso video non compresso.
 
 
 ```C++
@@ -297,7 +297,7 @@ Per un flusso video non compresso, le informazioni sul formato sono contenute in
 
 
 > [!Note]  
-> Il grabber di esempio non supporta [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2).
+> Il grabber di esempio non supporta [**VIDEOINFOHEADER2.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2)
 
  
 
@@ -306,7 +306,7 @@ Per un flusso video non compresso, le informazioni sul formato sono contenute in
 Ecco il codice completo per gli esempi precedenti.
 
 > [!Note]  
-> Questo esempio usa la funzione [SafeRelease](../medfound/saferelease.md) per rilasciare i puntatori a interfaccia.
+> Questo esempio usa la [funzione SafeRelease](../medfound/saferelease.md) per rilasciare i puntatori a interfaccia.
 
  
 
@@ -569,7 +569,7 @@ HRESULT WriteBitmap(PCWSTR pszFileName, BITMAPINFOHEADER *pBMI, size_t cbBMI,
 
 <dl> <dt>
 
-[Uso dei servizi di modifica DirectShow](using-directshow-editing-services.md)
+[Uso di DirectShow di modifica](using-directshow-editing-services.md)
 </dt> </dl>
 
  

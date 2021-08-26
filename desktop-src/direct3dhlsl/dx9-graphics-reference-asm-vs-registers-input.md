@@ -9,41 +9,41 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 983f0520ccc50fa1683d4b8254ac436fff7491a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b6682d8987f2df3ba3fb06427d41b722abb5eb003a4226a155c104cc3239d0f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982761"
 ---
 # <a name="input-register"></a>Registro di input
 
 Registro di input vertex shader.
 
-I dati di ogni vertice (usando uno o più flussi di vertici di input) vengono caricati nei registri di input dei vertici prima dell'esecuzione del vertex shader. I registri di input sono costituiti da vettori a virgola mobile a 16 4 componenti, designati come V0 tramite versione 15. Questi registri sono di sola lettura. Un registro di input è associato ai dati dei vertici tramite una dichiarazione di vertice.
+I dati di ogni vertice (usando uno o più flussi dei vertici di input) vengono caricati nei registri di input dei vertici prima dell'esecuzione del vertex shader. I registri di input sono costituiti da 16 vettori a virgola mobile a quattro componenti, designati da v0 a v15. Questi registri sono di sola lettura. Un registro di input viene associato ai dati dei vertici tramite una dichiarazione di vertice.
 
-Le proprietà Register seguenti controllano il comportamento di ogni registro:
+Le proprietà del registro seguenti controllano il comportamento di ogni registro:
 
 
 
 | Proprietà        | Descrizione                                                                                   |
 |-----------------|-----------------------------------------------------------------------------------------------|
-| Nome            | v \[ n \] -n è un numero di registro facoltativo. 0 è il valore predefinito usato, se viene omesso.     |
-| Conteggio           | Un massimo di 16 registri, V0-versione 15.                                                          |
-| Autorizzazioni di I/O | Di sola lettura. Questo registro non può essere scritto dall'API o nello shader.                   |
-| Leggere le porte      | 1. indica il numero di volte in cui è possibile leggere un registro all'interno di un'unica istruzione. Vedere qui di seguito. |
+| Nome            | v \[ n - n è un numero di registro \] facoltativo. 0 è il valore predefinito utilizzato, se viene omesso.     |
+| Conteggio           | Un massimo di 16 registri, v0 - v15.                                                          |
+| Autorizzazioni di I/O | Di sola lettura. Questo registro non può essere scritto dall'API o all'interno dello shader.                   |
+| Leggere le porte      | 1. Numero di volte in cui un registro può essere letto all'interno di una singola istruzione. Vedere qui di seguito. |
 
 
 
- 
+ 
 
-Ogni singola istruzione può accedere a un solo registro di input del vertice. Tuttavia, ogni origine nell'istruzione può swizzle in modo indipendente e negare il vettore mentre viene letto.
+Qualsiasi singola istruzione può accedere a un solo registro di input dei vertici. Tuttavia, ogni origine nell'istruzione può eseguire lo swizzle in modo indipendente e negare tale vettore durante la lettura.
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio di utilizzo di una dichiarazione vertex per associare i dati della posizione del vertice 2D al registro V0.
+Di seguito è riportato un esempio dell'uso di una dichiarazione di vertice per associare i dati della posizione dei vertici 2D per registrare v0.
 
-La dichiarazione di vertice appartiene all'applicazione:
+La dichiarazione del vertice appartiene all'applicazione:
 
 
 ```
@@ -56,7 +56,7 @@ D3DVERTEXELEMENT9 decl[] =
 
 
 
-Di seguito è illustrata la dichiarazione vertex shader corrispondente:
+Ecco la dichiarazione di vertex shader corrispondente:
 
 
 ```
@@ -67,13 +67,13 @@ dcl_position v0
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Posizione registro      | x    | x    | x     | x    | x    | x     |
+| Registro delle posizioni      | x    | x    | x     | x    | x    | x     |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -82,9 +82,9 @@ dcl_position v0
 [Registri vertex shader](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

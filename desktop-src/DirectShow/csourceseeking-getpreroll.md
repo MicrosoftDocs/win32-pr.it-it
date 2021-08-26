@@ -1,7 +1,7 @@
 ---
-description: "Il metodo GetPreroll recupera l'ora di preroll. Questo metodo implementa il metodo IMediaSeeking:: GetPreroll."
+description: Il metodo GetPreroll recupera l'ora di preroll. Questo metodo implementa il metodo IMediaSeeking::GetPreroll.
 ms.assetid: 2395d5b2-8c1f-40cd-8d4a-48620debe7a7
-title: Metodo CSourceSeeking. GetPreroll (Ctlutil. h)
+title: Metodo CSourceSeeking.GetPreroll (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 097af089a7221f005cf7f3aac74953166af3cb2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e2d20c4487f0969a5abaf689f7c5c712e6fbb7fd83ceb7484694a3eec8599698
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083961"
 ---
-# <a name="csourceseekinggetpreroll-method"></a>CSourceSeeking. GetPreroll, metodo
+# <a name="csourceseekinggetpreroll-method"></a>Metodo CSourceSeeking.GetPreroll
 
-Il `GetPreroll` metodo recupera l'ora di preregistrazione. Questo metodo implementa il metodo [**IMediaSeeking:: GetPreroll**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getpreroll) .
+Il `GetPreroll` metodo recupera l'ora di pre-registrazione. Questo metodo implementa il [**metodo IMediaSeeking::GetPreroll.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getpreroll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,20 +45,20 @@ HRESULT GetPreroll(
 *pPreroll* 
 </dt> <dd>
 
-Puntatore a una variabile che riceve l'ora di preregistrazione. Il valore è impostato su zero.
+Puntatore a una variabile che riceve l'ora di pre-registrazione. Il valore è impostato su zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>      | Operazione riuscita<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Valore del puntatore **null**<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Operazione riuscita<br/>                |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | **Valore del** puntatore NULL<br/> |
 
 
 
@@ -70,8 +70,8 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

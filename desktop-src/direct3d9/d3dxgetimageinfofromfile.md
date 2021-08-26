@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bb03b6482d140a3b78e43d8b99c60499ae6c8b16
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1726fae1697a48d8e4aa406f5eb5cec03f6071fed4b36a199b10e385a24e6249
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027631"
 ---
 # <a name="d3dxgetimageinfofromfile-function"></a>Funzione D3DXGetImageInfoFromFile
 
-Recupera informazioni su un determinato file di immagine.
+Recupera informazioni su un file di immagine specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT D3DXGetImageInfoFromFile(
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome file dell'immagine su cui recuperare le informazioni. Se sono definiti \_ unicode o UNICODE, questo tipo di parametro è LPCWSTR. In caso contrario, il tipo è LPCSTR.
+Nome file dell'immagine su cui recuperare le informazioni. Se sono definiti unicode o UNICODE, questo tipo \_ di parametro è LPCWSTR; in caso contrario, il tipo è LPCSTR.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione supporta sia stringhe Unicode che ANSI.
+Questa funzione supporta entrambe le stringhe Unicode e ANSI.
 
 ## <a name="requirements"></a>Requisiti
 

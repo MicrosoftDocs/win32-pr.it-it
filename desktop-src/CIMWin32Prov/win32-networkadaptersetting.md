@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione NetworkAdapterSetting Win32 mette in correlazione una scheda di rete e le relative impostazioni di configurazione.
+description: La classe WMI di associazione NetworkAdapterSetting Win32 \_ mette in relazione una scheda di rete e le relative impostazioni di configurazione.
 ms.assetid: 6fc646c3-05f9-4c92-8598-07ea20fffaca
 ms.tgt_platform: multiple
-title: Classe Win32_NetworkAdapterSetting
+title: Win32_NetworkAdapterSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c51ef9ed790c902a6a662dc3ebc45df97fa29721
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f7330e5b6a2b86508528bb1136acd58b308ca4b9c44b31b9b6e0777f4eccd19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972672"
 ---
-# <a name="win32_networkadaptersetting-class"></a>Win32 \_ NetworkAdapterSetting (classe)
+# <a name="win32_networkadaptersetting-class"></a>Classe NetworkAdapterSetting Win32 \_
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ NetworkAdapterSetting Win32** mette in correlazione una scheda di rete e le relative impostazioni di configurazione.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **di associazione \_ NetworkAdapterSetting Win32** mette in relazione una scheda di rete e le relative impostazioni di configurazione.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,57 +42,57 @@ class Win32_NetworkAdapterSetting : Win32_DeviceSettings
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ NetworkAdapterSetting** presenta questi tipi di membri:
+La **classe \_ NetworkAdapterSetting Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ NetworkAdapterSetting** dispone di queste proprietà.
+La **classe \_ NetworkAdapterSetting Win32** dispone di queste proprietà.
 
 <dl> <dt>
 
 **elemento**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ NetworkAdapter**
+Tipo di dati: **\_ NetworkAdapter Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapter")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("NetworkAdapter \| WMI Win32") \_
 </dt> </dl>
 
-[**\_ NetworkAdapter Win32**](win32-networkadapter.md) che descrive le proprietà della scheda di rete che utilizza una particolare impostazione della scheda di rete.
+Oggetto [**\_ NetworkAdapter Win32**](win32-networkadapter.md) che descrive le proprietà della scheda di rete che utilizza una particolare impostazione della scheda di rete.
 
 </dd> <dt>
 
 **Impostazione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ NetworkAdapterConfiguration**
+Tipo di dati: **\_ NetworkAdapterConfiguration Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](../wmisdk/standard-qualifiers.md) ("setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapterConfiguration")
+Qualificatori: [**Override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkAdapterConfiguration")
 </dt> </dl>
 
-[**\_ NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md) che descrive le impostazioni di configurazione utilizzate nella scheda di rete.
+Oggetto [**\_ NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md) che descrive le impostazioni di configurazione usate nella scheda di rete.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ NetworkAdapterSetting** è derivata da [**Win32 \_ DeviceSettings**](win32-devicesettings.md).
+La **classe \_ NetworkAdapterSetting Win32** deriva da [**Win32 \_ DeviceSettings.**](win32-devicesettings.md)
 
-Per informazioni sull'utilizzo delle classi di associazione, vedere [ASSOCIATORS of Statement](../wmisdk/associators-of-statement.md).
+Per informazioni su come usare le classi di associazione, vedere [AssociatoRS OF Statement](../wmisdk/associators-of-statement.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio VBScript seguente viene usato **Win32 \_ NetworkAdapterSetting** per identificare l'indirizzo IP nella connessione alla rete locale.
+Nell'esempio VBScript seguente viene **utilizzato \_ NetworkAdapterSetting Win32** per identificare l'indirizzo IP nella connessione alla rete locale.
 
 
 ```VB
@@ -129,7 +129,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -138,13 +138,13 @@ Next
 
 <dl> <dt>
 
-[**\_DeviceSettings Win32**](win32-devicesettings.md)
+[**Impostazioni dispositivo \_ Win32**](win32-devicesettings.md)
 </dt> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[Attività WMI: rete](../wmisdk/wmi-tasks--networking.md)
+[Attività WMI: Rete](../wmisdk/wmi-tasks--networking.md)
 </dt> </dl>
 
  

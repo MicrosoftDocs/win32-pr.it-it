@@ -1,28 +1,28 @@
 ---
-description: Didascalie e televideo chiusi
+description: Sottotitoli codificati e teletext
 ms.assetid: faa34cdc-bee0-44c4-bd1c-84a688a27b9e
-title: Didascalie e televideo chiusi
+title: Sottotitoli codificati e teletext
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97a197d2029e69851dfd3ec3c7f8a2e6e0498c3d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 39250522a0f68e9e8315f98c72f8d67a1bdcebe6f21745bc6bf1845a9a0463b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055211"
 ---
-# <a name="closed-captions-and-teletext"></a>Didascalie e televideo chiusi
+# <a name="closed-captions-and-teletext"></a>Sottotitoli codificati e teletext
 
-I segnali televisivi analoghi possono contenere informazioni aggiuntive nell'intervallo di spaziatura verticale (VBI), inclusi i sottotitoli codificati e il televideo standard mondiale (WST). DirectShow fornisce un set di filtri per la decodifica e la visualizzazione di testo sia CC che WST.
+I segnali televisivi analogici possono contenere informazioni aggiuntive nell'intervallo di blanking verticale (VBI), inclusi i sottotitoli codificati e il teletesto WST (World Standard Teletext). DirectShow un set di filtri per la decodifica e la visualizzazione di testo CC e WST.
 
--   [Visualizzazione di didascalie chiuse](viewing-closed-captions.md)
--   [Visualizzazione del televideo standard internazionale](viewing-world-standard-teletext.md)
+-   [Visualizzazione di sottotitoli codificati](viewing-closed-captions.md)
+-   [Visualizzazione del teletesto standard mondiale](viewing-world-standard-teletext.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Televisione analoga](analog-television.md)
+[Tv analogica](analog-television.md)
 </dt> </dl>
 
  

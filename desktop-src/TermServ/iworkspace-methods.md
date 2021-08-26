@@ -1,5 +1,5 @@
 ---
-title: Metodi di IWorkspace
+title: Metodi IWorkspace
 description: L'interfaccia IWorkspace espone i metodi seguenti.
 ms.assetid: 10189F81-84BF-45EF-B43F-9F19A2DEF1AB
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119989601"
 ---
-# <a name="iworkspace-methods"></a>Metodi di IWorkspace
+# <a name="iworkspace-methods"></a>Metodi IWorkspace
 
 [**L'interfaccia IWorkspace**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspace) espone i metodi seguenti.
 

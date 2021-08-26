@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7aed732cb92ea7e0f2fb3c2ebdd615f643bc3107
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fd90e4702045200e4f2766f6dcdd661ff83b6cd3370970a22e3211eebfa13c90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055261"
 ---
 # <a name="iportabledevicepropvariantcollectionadd-method"></a>Metodo IPortableDevicePropVariantCollection::Add
 
-Il **metodo Add** aggiunge un elemento alla raccolta .
+Il **metodo Add** aggiunge un elemento alla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,13 +43,13 @@ HRESULT Add(
 *pValue* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un **nuovo oggetto PROPVARIANT** da aggiungere alla raccolta. Questo metodo copia **PROPVARIANT** nella raccolta, pertanto è necessario rilasciare la copia locale della variabile chiamando **PropVariantClear** dopo aver chiamato questo metodo.
+Puntatore a un **nuovo oggetto PROPVARIANT** da aggiungere alla raccolta. Questo metodo copia **PROPVARIANT** nella raccolta, quindi è necessario rilasciare la copia locale della variabile chiamando **PropVariantClear** dopo aver chiamato questo metodo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -63,13 +63,13 @@ Il metodo restituisce un **HRESULT.** I valori possibili includono, ma non sono 
 
 ## <a name="remarks"></a>Commenti
 
-Quando VARTYPE per *pValue* è VT VECTOR o \_ VT UI1, l'impostazione e il recupero di un buffer NULL o di dimensioni \_ zero non sono supportati.  Ad esempio, né pValue.caub.pElems = **NULL** né pValue.caub.cElems = 0 sono consentiti.
+Quando VARTYPE per *pValue* è VT VECTOR o \_ VT UI1, l'impostazione e il recupero di un buffer NULL o di dimensioni \_ zero non sono supportati.  Ad esempio, non sono consentiti pValue.caub.pElems = **NULL** o pValue.caub.cElems = 0.
 
-Se un chiamante tenta di aggiungere un elemento di un tipo VARTYPE diverso contenuto nella raccolta e il valore PROPVARIANT non può essere modificato automaticamente da questa interfaccia, questo metodo avrà esito negativo. Per modificare manualmente il tipo di raccolta, chiamare [**IPortableDevicePropVariantCollection::ChangeType**](iportabledevicepropvariantcollection-changetype.md).
+Se un chiamante tenta di aggiungere un elemento di un VARTYPE diverso contenuto nella raccolta e il valore PROPVARIANT non può essere modificato automaticamente da questa interfaccia, questo metodo avrà esito negativo. Per modificare manualmente il tipo di raccolta, chiamare [**IPortableDevicePropVariantCollection::ChangeType**](iportabledevicepropvariantcollection-changetype.md).
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere Recupero di un identificatore di [oggetto da un identificatore univoco persistente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
+Per un esempio di come usare questo metodo, vedere Recupero di un identificatore di [oggetto da un identificatore univoco permanente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,7 +89,7 @@ Per un esempio di come usare questo metodo, vedere Recupero di un identificatore
 [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
-[Spostamento del contenuto nel dispositivo](moving-content-on-the-device.md)
+[Spostamento di contenuto nel dispositivo](moving-content-on-the-device.md)
 </dt> <dt>
 
 [Recupero di un identificatore di oggetto da un identificatore univoco permanente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)

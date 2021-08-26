@@ -1,5 +1,5 @@
 ---
-description: 'STORAGE_HW_FIRMWARE_INFO: questa struttura contiene informazioni sul firmware del dispositivo.'
+description: 'STORAGE_HW_FIRMWARE_INFO struttura : questa struttura contiene informazioni sul firmware del dispositivo.'
 ms.assetid: 7BDACD50-0FD1-4F00-BAE5-884D8C1485BC
 title: STORAGE_HW_FIRMWARE_INFO struttura (Winioctl.h)
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: e7aa3d33f744b00fc742a2862add83149cb265b4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1b9aa008e108f1282f8f61aaeacdce11eba7016632fa9643ae3db5550efb1e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047911"
 ---
-# <a name="storage_hw_firmware_info-structure"></a>Struttura DELLE \_ INFORMAZIONI \_ DEL FIRMWARE HW DI \_ ARCHIVIAZIONE
+# <a name="storage_hw_firmware_info-structure"></a>Struttura DELLE \_ INFORMAZIONI DEL FIRMWARE HW DI \_ \_ ARCHIVIAZIONE
 
 Questa struttura contiene informazioni sul firmware del dispositivo.
 
@@ -50,17 +50,17 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO {
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
-Versione di questa struttura . Deve essere impostato su sizeof(STORAGE \_ HW \_ FIRMWARE \_ INFO)
+Versione di questa struttura. Deve essere impostato su sizeof(STORAGE \_ HW \_ FIRMWARE \_ INFO)
 
 </dd> <dt>
 
-**Size**
+**Dimensioni**
 </dt> <dd>
 
-Dimensione di questa struttura come buffer che include lo slot.
+Dimensioni di questa struttura come buffer, incluso lo slot.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Riservato per utilizzi futuri.
 Numero di slot del firmware nel dispositivo. Si tratta della dimensione della matrice Slot.
 
 > [!Note]  
-> Alcuni dispositivi possono archiviare più di un'immagine del firmware, se hanno più di uno slot del firmware.
+> Alcuni dispositivi possono archiviare più di 1 immagine del firmware, se hanno più di 1 slot del firmware.
 
  
 
@@ -104,10 +104,10 @@ Slot del firmware in attesa di attivazione.
 
 </dd> <dt>
 
-**Firmware Condiviso**
+**FirmwareCondiviso**
 </dt> <dd>
 
-Indica che il firmware si applica sia al dispositivo che al controller/adattatore, ad esempio alle unità SSD NVMe.
+Indica che il firmware si applica sia al dispositivo che al controller/adattatore, ad esempio NVMe SSD.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Dimensione massima del payload dell'immagine, usata per un singolo comando.
 **Slot**
 </dt> <dd>
 
-Contiene le informazioni sullo slot per ogni slot nel dispositivo, di tipo [**STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO**](storage-hw-firmware-slot-info.md).
+Contiene le informazioni sullo slot per ogni slot del dispositivo, di tipo [**STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO**](storage-hw-firmware-slot-info.md).
 
 </dd> </dl>
 
@@ -145,8 +145,8 @@ Contiene le informazioni sullo slot per ogni slot nel dispositivo, di tipo [**ST
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                                 |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2016 \[\]<br/>                                                        |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                        |
 | Intestazione<br/>                   | <dl> <dt>Winioctl.h.h (includere Windows.h)</dt> </dl> |
 
 

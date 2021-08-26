@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETRANGEMIN (COMmctrl. h)
-description: Recupera la posizione minima del dispositivo di scorrimento in un TrackBar.
+title: TBM_GETRANGEMIN messaggio (Commctrl.h)
+description: Recupera la posizione minima per il dispositivo di scorrimento in un trackbar.
 ms.assetid: 64334aed-0403-4785-829e-693292734d10
 keywords:
-- Controlli di Windows Message TBM_GETRANGEMIN
+- TBM_GETRANGEMIN dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fddef597f7b129f8334f75136f56404a8ef117fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92b79cfcf589dcd246699e0eb79c30368a3cad0e72eb74a76528967d3a0683d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046541"
 ---
-# <a name="tbm_getrangemin-message"></a>\_Messaggio GETRANGEMIN TBM
+# <a name="tbm_getrangemin-message"></a>Messaggio \_ TBM GETRANGEMIN
 
-Recupera la posizione minima del dispositivo di scorrimento in un TrackBar.
+Recupera la posizione minima per il dispositivo di scorrimento in un trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera la posizione minima del dispositivo di scorrimento in un TrackBar.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore a 32 bit che specifica la posizione minima nell'intervallo compreso tra le posizioni minime e massime del dispositivo di scorrimento.
+Restituisce un valore a 32 bit che specifica la posizione minima nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un valore a 32 bit che specifica la posizione minima nell'intervallo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Restituisce un valore a 32 bit che specifica la posizione minima nell'intervallo
 [**TBM \_ GETRANGEMAX**](tbm-getrangemax.md)
 </dt> <dt>
 
-[**\_SEtrange TBM**](tbm-setrange.md)
+[**TBM \_ SETRANGE**](tbm-setrange.md)
 </dt> <dt>
 
 [**TBM \_ SETRANGEMAX**](tbm-setrangemax.md)

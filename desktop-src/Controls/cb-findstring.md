@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_FINDSTRING (winuser. h)
+title: CB_FINDSTRING messaggio (Winuser.h)
 description: Cerca nella casella di riepilogo di una casella combinata un elemento che inizia con i caratteri in una stringa specificata.
 ms.assetid: 872a72d5-4d8e-41c7-ac6b-eeb571403623
 keywords:
-- Controlli di Windows Message CB_FINDSTRING
+- CB_FINDSTRING di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 295300790a27a956bce953e4e293c07c22ec0d81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1af584e04a108c39a76a54c05c311d26e107c132d0c132e7b8fcc99a7cd7321b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089355"
 ---
-# <a name="cb_findstring-message"></a>\_Messaggio FindString CB
+# <a name="cb_findstring-message"></a>CB \_ FINDSTRING message
 
 Cerca nella casella di riepilogo di una casella combinata un elemento che inizia con i caratteri in una stringa specificata.
 
@@ -32,24 +32,24 @@ Cerca nella casella di riepilogo di una casella combinata un elemento che inizia
 *wParam* 
 </dt> <dd>
 
-Indice in base zero dell'elemento che precede il primo elemento da cercare. Quando la ricerca raggiunge la fine della casella di riepilogo, continua dalla parte superiore della casella di riepilogo all'elemento specificato dal parametro *wParam* . Se *wParam* è-1, viene eseguita la ricerca dell'intera casella di riepilogo dall'inizio.
+Indice in base zero dell'elemento che precede il primo elemento in cui eseguire la ricerca. Quando la ricerca raggiunge la fine della casella di riepilogo, continua dalla parte superiore della casella di riepilogo fino all'elemento specificato dal *parametro wParam.* Se *wParam* è -1, l'intera casella di riepilogo viene cercata dall'inizio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore alla stringa con terminazione null che contiene i caratteri da cercare. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole, pertanto questa stringa può contenere qualsiasi combinazione di lettere maiuscole e minuscole.
+Puntatore alla stringa con terminazione Null che contiene i caratteri da cercare. La ricerca non fa distinzione tra maiuscole e minuscole, pertanto questa stringa può contenere qualsiasi combinazione di lettere maiuscole e minuscole.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è l'indice in base zero dell'elemento corrispondente. Se la ricerca ha esito negativo, è CB \_ Err.
+Il valore restituito è l'indice in base zero dell'elemento corrispondente. Se la ricerca ha esito negativo, si tratta di CB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Se si crea la casella combinata con uno stile disegnato dal proprietario ma senza lo stile [**CBS \_ HASSTRINGS**](combo-box-styles.md) , il messaggio **\_ FindString di CB** dipende dal fatto che l'applicazione usi lo stile di [**\_ ordinamento CBS**](combo-box-styles.md) . Se si usa lo stile di **\_ ordinamento CBS** , i messaggi [**WM \_ COMPAREITEM**](wm-compareitem.md) vengono inviati al proprietario della casella combinata per determinare l'elemento corrispondente alla stringa specificata. Se non si usa lo stile **di \_ ordinamento CBS** , il messaggio **CB \_ FindString** Cerca un elemento elenco che corrisponda al valore del parametro *lParam* .
+Se si crea la casella combinata con uno stile creato dal proprietario ma senza lo stile [**\_ HASSTRINGS di CBS,**](combo-box-styles.md) le attività del messaggio **\_ CB FINDSTRING** dipendono dal fatto che l'applicazione usi lo stile [**CBS \_ SORT.**](combo-box-styles.md) Se si usa lo **stile SORT di CBS, \_** i messaggi [**WM \_ COMPAREITEM**](wm-compareitem.md) vengono inviati al proprietario della casella combinata per determinare quale elemento corrisponde alla stringa specificata. Se non si usa lo stile **CBS \_ SORT,** il messaggio **\_ CB FINDSTRING** cerca un elemento dell'elenco che corrisponda al valore del *parametro lParam.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -70,16 +70,16 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 **Riferimento**
 </dt> <dt>
 
-[**CB \_ FindExactString**](cb-findstringexact.md)
+[**CB \_ FINDSTRINGEXACT**](cb-findstringexact.md)
 </dt> <dt>
 
 [**CB \_ SELECTSTRING**](cb-selectstring.md)
 </dt> <dt>
 
-[**\_CAcursel CB**](cb-setcursel.md)
+[**CB \_ SETCURSEL**](cb-setcursel.md)
 </dt> <dt>
 
-[**\_COMPAREITEM WM**](wm-compareitem.md)
+[**WM \_ COMPAREITEM**](wm-compareitem.md)
 </dt> </dl>
 
  

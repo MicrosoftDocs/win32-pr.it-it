@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DArray:: GatherCmpGreen (S, float, float, int)'
-description: "Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente verde e un valore di confronto. | Funzione Texture2DArray:: GatherCmpGreen (S, float, float, int)"
+title: Funzione Texture2DArray::GatherCmpGreen(S,float,float,int)
+description: Per quattro valori di texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il componente verde e un valore di confronto. | Funzione Texture2DArray::GatherCmpGreen(S,float,float,int)
 ms.assetid: baf14de9-5237-42a5-bffc-848e55cbc28f
 keywords:
 - Funzione GatherCmpGreen HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4f29da331d71c1fa8a2ceff783e4daec4a886d06
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 50251f83a0aae7e066ae1e586aa31eb74a002ad20c2843e2a0e22168ccf8e8c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067581"
 ---
-# <a name="texture2darraygathercmpgreensfloatfloatint-function"></a>Funzione Texture2DArray:: GatherCmpGreen (S, float, float, int)
+# <a name="texture2darraygathercmpgreensfloatfloatint-function"></a>Funzione Texture2DArray::GatherCmpGreen(S,float,float,int)
 
-Per quattro valori Texel che verrebbero usati in un'operazione di filtro bi-lineare, restituisce un confronto tra il relativo componente verde e un valore di confronto.
+Per quattro valori di texel che verrebbero usati in un'operazione di filtro bi lineare, restituisce un confronto tra il componente verde e un valore di confronto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,16 +48,16 @@ Indice del campionatore in base zero.
 
 </dd> <dt>
 
-*posizione* \[ in\]
+*location* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float3**
 
-Coordinate di esempio (u, v).
+Coordinate di esempio (u,v).
 
 </dd> <dt>
 
-*Confronta \_ valore* \[ in\]
+*confrontare \_ il valore* \[ in\]
 </dt> <dd>
 
 Tipo: **float**
@@ -66,12 +66,12 @@ Valore da confrontare con ogni valore campionato.
 
 </dd> <dt>
 
-*offset* \[ in\]
+*offset* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Offset applicato alla coordinata di trama prima del campionamento.
+Offset applicato alla coordinata della trama prima del campionamento.
 
 </dd> </dl>
 
@@ -79,17 +79,17 @@ Offset applicato alla coordinata di trama prima del campionamento.
 
 Tipo: **float4**
 
-Un valore a quattro componenti, ogni componente è il risultato di un confronto per ogni componente.
+Valore a quattro componenti, ogni componente è il risultato di un confronto per componente.
 
 ## <a name="remarks"></a>Commenti
 
-Gli esempi di trama possono essere usati per l'interpolazione bilineare.
+I campioni di trama possono essere usati per l'interpolazione bilineare.
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -104,7 +104,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi GatherCmpGreen](texture2darray-gathercmpgreen.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

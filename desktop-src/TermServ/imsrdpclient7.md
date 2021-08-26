@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IMsRdpClient7
-description: Fornisce i metodi e le proprietà necessari per configurare e usare il controllo client. Deriva dall'interfaccia IMsRdpClient6.
+description: Fornisce i metodi e le proprietà necessari per configurare e utilizzare il controllo client. Deriva dall'interfaccia IMsRdpClient6.
 ms.assetid: f6bc5d50-f16a-44be-8244-5aec13c52066
 ms.tgt_platform: multiple
 keywords:
@@ -25,7 +25,7 @@ ms.locfileid: "119990531"
 ---
 # <a name="imsrdpclient7-interface"></a>Interfaccia IMsRdpClient7
 
-Fornisce i metodi e le proprietà necessari per configurare e usare il controllo client. Deriva [**dall'interfaccia IMsRdpClient6.**](imsrdpclient6.md)
+Fornisce i metodi e le proprietà necessari per configurare e utilizzare il controllo client. Deriva [**dall'interfaccia IMsRdpClient6.**](imsrdpclient6.md)
 
 ## <a name="members"></a>Membri
 
@@ -36,7 +36,7 @@ Fornisce i metodi e le proprietà necessari per configurare e usare il controllo
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **IMsRdpClient7.**
+**L'interfaccia IMsRdpClient7** include questi metodi.
 
 
 
@@ -59,7 +59,7 @@ Queste proprietà sono disponibili nell'interfaccia **IMsRdpClient7.**
 | [**Impostazioni avanzate8**](imsrdpclient7-advancedsettings8.md)<br/>   | Sola lettura<br/> | Oggetto che supporta [**l'interfaccia IMsRdpClientAdvancedSettings7.**](imsrdpclientadvancedsettings7.md)<br/>   |
 | [**RemoteProgram2**](imsrdpclient7-remoteprogram2.md)<br/>         | Sola lettura<br/> | Oggetto che supporta [**l'interfaccia ITSRemoteProgram2.**](itsremoteprogram2.md)<br/>                           |
 | [**Impostazioni protette3**](imsrdpclient7-securedsettings3.md)<br/>     | Sola lettura<br/> | Oggetto che supporta [**l'interfaccia IMsRdpClientSecuredSettings2.**](imsrdpclientsecuredsettings2.md)<br/>     |
-| [**TransportSettings3**](imsrdpclient7-transportsettings3.md)<br/> | Sola lettura<br/> | Oggetto che supporta [**l'interfaccia IMsRdpClientTransportSettings3.**](imsrdpclienttransportsettings3.md)<br/> |
+| [**Impostazioni di trasporto3**](imsrdpclient7-transportsettings3.md)<br/> | Sola lettura<br/> | Oggetto che supporta [**l'interfaccia IMsRdpClientTransportSettings3.**](imsrdpclienttransportsettings3.md)<br/> |
 
 
 
@@ -85,8 +85,8 @@ Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| CLSID<br/>                    | CLSID \_ MsRdpClient10 è definito come C0EFA91A-EEB7-41C7-97FA-F0ED645EFB24<br/> CLSID \_ MsRdpClient10NotSafeForScripting è definito come A0C63C30-F08D-4AB4-907C-34905D770C7D<br/> CLSID \_ MsRdpClient7 è definito come A9D7038D-B5ED-472E-9C47-94BEA90A5910<br/> CLSID \_ MsRdpClient7NotSafeForScripting è definito come 54D38BF7-B1EF-4479-9674-1BD6EA465258<br/> CLSID MsRdpClient8 è definito come \_ 5F681803-2900-4C43-A1CC-CF405404A676<br/> CLSID \_ MsRdpClient8NotSafeForScripting è definito come A3BC03A0-041D-42E3-AD22-882B7865C9C5<br/> CLSID MsRdpClient9 è definito come \_ 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting è definito come 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> |
-| IID<br/>                      | IMsRdpClient7 IID è definito come \_ b2a5b5ce-3461-444a-91d4-add26d070638<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| CLSID<br/>                    | CLSID \_ MsRdpClient10 è definito come C0EFA91A-EEB7-41C7-97FA-F0ED645EFB24<br/> CLSID \_ MsRdpClient10NotSafeForScripting è definito come A0C63C30-F08D-4AB4-907C-34905D770C7D<br/> CLSID \_ MsRdpClient7 è definito come A9D7038D-B5ED-472E-9C47-94BEA90A5910<br/> CLSID \_ MsRdpClient7NotSafeForScripting è definito come 54D38BF7-B1EF-4479-9674-1BD6EA465258<br/> CLSID \_ MsRdpClient8 è definito come 5F681803-2900-4C43-A1CC-CF405404A676<br/> CLSID \_ MsRdpClient8NotSafeForScripting è definito come A3BC03A0-041D-42E3-AD22-882B7865C9C5<br/> CLSID \_ MsRdpClient9 è definito come 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting è definito come 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> |
+| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444a-91d4-add26d070638<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 
 
@@ -115,7 +115,7 @@ Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per
 [**IMsTscAx**](imstscax-interface.md)
 </dt> <dt>
 
-[Connessione Web Desktop remoto riferimento](remote-desktop-web-connection-reference.md)
+[Connessione Web Desktop remoto di riferimento](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

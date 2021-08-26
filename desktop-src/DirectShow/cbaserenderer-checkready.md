@@ -1,7 +1,7 @@
 ---
-description: Il metodo CheckReady esegue una query per determinare se una transizione di stato è stata completata.
+description: Il metodo CheckReady esegue una query sul completamento di una transizione di stato.
 ms.assetid: dfa669ed-a5ab-498e-9fc2-ff15d6ddbc13
-title: Metodo CBaseRenderer. CheckReady (Renbase. h)
+title: Metodo CBaseRenderer.CheckReady (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 28c0c8bcb6efb0e3cbd648c1e45d36e8b18d4b74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a1fac55eba92141ac8174b30ed2dcbc4685ba250b7bb21236432bb998b3b5e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043951"
 ---
-# <a name="cbaserenderercheckready-method"></a>CBaseRenderer. CheckReady, metodo
+# <a name="cbaserenderercheckready-method"></a>Metodo CBaseRenderer.CheckReady
 
-Il `CheckReady` metodo esegue una query per determinare se una transizione di stato è stata completata.
+Il `CheckReady` metodo esegue una query sul completamento di una transizione di stato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la transizione di stato è completa oppure **false** se il filtro è ancora in fase di transizione a un nuovo stato.
+Restituisce **TRUE** se la transizione dello stato è completa oppure **FALSE** se il filtro è ancora in fase di transizione a un nuovo stato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se la transizione di stato è completa oppure **false** se 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
@@ -62,10 +62,10 @@ Restituisce **true** se la transizione di stato è completa oppure **false** se 
 [**Classe CBaseRenderer**](cbaserenderer.md)
 </dt> <dt>
 
-[**CBaseRenderer:: nobattistrada**](cbaserenderer-notready.md)
+[**CBaseRenderer::NotReady**](cbaserenderer-notready.md)
 </dt> <dt>
 
-[**CBaseRenderer:: Ready**](cbaserenderer-ready.md)
+[**CBaseRenderer::Ready**](cbaserenderer-ready.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETEDITSTYLE (RichEdit. h)
+title: EM_SETEDITSTYLE messaggio (Richedit.h)
 description: Imposta i flag di stile di modifica correnti per un controllo Rich Edit.
 ms.assetid: e48de6b3-0fd2-4791-9863-a6dcdafa3642
 keywords:
-- Controlli di Windows Message EM_SETEDITSTYLE
+- EM_SETEDITSTYLE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14c7b7e1d3990a00fb6931ed39bbd28aa6f8c2ce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06789b1d1fedfc76af205ac46aac7d3ea4bb882f2460676df96cd018d5a216b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048591"
 ---
-# <a name="em_seteditstyle-message"></a>\_Messaggio SETEDITSTYLE em
+# <a name="em_seteditstyle-message"></a>Messaggio EM \_ SETEDITSTYLE
 
 Imposta i flag di stile di modifica correnti per un controllo Rich Edit.
 
@@ -32,14 +32,14 @@ Imposta i flag di stile di modifica correnti per un controllo Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Specifica uno o più flag di stile di modifica. Per un elenco di valori possibili, vedere [**em \_ geteditname**](em-geteditstyle.md).
+Specifica uno o più flag di stile di modifica. Per un elenco dei valori possibili, vedere [**EM \_ GETEDITSTYLE**](em-geteditstyle.md).
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Maschera costituita da uno o più valori *wParam* . Verranno impostati o cancellati solo i valori specificati in questa maschera. In questo modo è possibile impostare o cancellare un flag singolo senza leggere gli Stati del flag corrente.
+Maschera costituita da uno o più valori *wParam.* Verranno impostati o cancellati solo i valori specificati in questa maschera. In questo modo è possibile impostare o cancellare un singolo flag senza leggere gli stati del flag corrente.
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Il valore restituito è lo stato dei flag di stile di modifica dopo che il contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Il valore restituito è lo stato dei flag di stile di modifica dopo che il contr
 
 <dl> <dt>
 
-[**\_geteditin em**](em-geteditstyle.md)
+[**EM \_ GETEDITSTYLE**](em-geteditstyle.md)
 </dt> </dl>
 
  

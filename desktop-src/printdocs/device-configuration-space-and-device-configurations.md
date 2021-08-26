@@ -4,12 +4,12 @@ description: Lo spazio di configurazione di un dispositivo è il set di tutti i 
 ms.assetid: 598299c3-159f-4cad-b6a5-d282cd5bb4a1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4871da3695e81168d43504456c357b0cf566b7f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e09eabf7c84e1990e0aaf6b2d9fab1d9043f788fef32c3863a71d9ca1e6b61a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092116"
 ---
 # <a name="device-configuration-space-and-device-configurations"></a>Spazio di configurazione del dispositivo e configurazioni dei dispositivi
 
@@ -19,7 +19,7 @@ Lo spazio di *configurazione di un* dispositivo è il set di tutti i valori poss
 
 1.  Le informazioni contribuiscono in modo significativo a una maggiore comprensione delle funzionalità del dispositivo. Queste informazioni semplificano la generazione di elementi dell'interfaccia utente (UI) da parte di un client di PrintCapabilities, semplificando la selezione di una configurazione specifica per l'elaborazione di un processo da parte dell'utente finale. Fornendo più dettagli delle funzionalità del dispositivo all'applicazione e infine all'utente finale, la finalità di stampa dell'utente può essere soddisfatta in modo più efficace.
 
-2.  Alcune proprietà del dispositivo presentate in PrintCapabilities potrebbero dipendere dalla particolare configurazione selezionata dal client.
+2.  Alcune proprietà del dispositivo presentate in PrintCapabilities potrebbero dipendere dalla configurazione specifica selezionata dal client.
 
 Alcune informazioni non devono essere incorporate in PrintCapabilities. Sono incluse informazioni che non influiscono sulla modalità di creazione di un processo, non impongono vincoli sulla modalità di creazione di un processo né influiscono in altro modo sulle proprietà del dispositivo. Ad esempio, un dispositivo potrebbe essere in grado di segnalare informazioni sullo stato, ad esempio il set di processi in attesa di elaborazione. Queste informazioni non influisce sulle informazioni necessarie per formattare il processo, né forniscono alcuna indicazione delle funzionalità disponibili nel dispositivo. Per questo motivo, questo tipo di informazioni non deve essere presente in PrintCapabilities.
 

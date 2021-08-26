@@ -63,7 +63,7 @@ Questa interfaccia fa parte della tecnologia di collegamento dello shader HLSL c
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/D3D11Shader/nn-d3d11shader-id3d11functionreflection"><strong>ID3D11FunctionReflection</strong></a><br/></td>
-<td>Un'interfaccia di reflection di funzione accede alle informazioni sulla funzione. <br/>
+<td>Un'interfaccia function-reflection accede alle informazioni sulla funzione. <br/>
 <blockquote>
 [!Note]<br />
 Questa interfaccia fa parte della tecnologia di collegamento dello shader HLSL che è possibile usare in tutte le piattaforme Direct3D 11 per creare funzioni HLSL precompilate, crearne il pacchetto in librerie e collegarle a shader completi in fase di esecuzione.

@@ -4,12 +4,12 @@ ms.assetid: 559e73bf-91c2-4dbf-a667-e5c0431aaffa
 title: INDEXID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79b6ef6b79dd19183f575930e9793a6ab2f1f5cb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c5711f2927462325b2a6479dd9506099da4bd50f9a9a99b68152e5c0030a47d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001891"
 ---
 # <a name="indexid"></a>INDEXID
 
@@ -24,14 +24,14 @@ typedef DWORD INDEXID;
 
 ## <a name="remarks"></a>Commenti
 
-Un **INDEXID** può essere un valore intero che rappresenta l'indice oppure il valore seguente:
+Un **INDEXID** può essere un valore intero che rappresenta l'indice o il valore seguente:
 
 <dl> <dt>
 
-<span id="INDEXID_NULL___INDEXID_-1_"></span><span id="indexid_null___indexid_-1_"></span>INDEXID \_ null ((INDEXID)-1)
+<span id="INDEXID_NULL___INDEXID_-1_"></span><span id="indexid_null___indexid_-1_"></span>INDEXID \_ NULL ((INDEXID)-1)
 </dt> <dd>
 
-**INDEXID** non valido.
+INDEXID **non valido.**
 
 </dd> </dl>
 
@@ -41,8 +41,8 @@ Un **INDEXID** può essere un valore intero che rappresenta l'indice oppure il v
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

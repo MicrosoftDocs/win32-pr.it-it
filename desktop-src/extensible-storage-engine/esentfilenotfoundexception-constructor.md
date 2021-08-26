@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentFileNotFoundException'
+description: Altre informazioni sul costruttore EsentFileNotFoundException
 title: Costruttore EsentFileNotFoundException
 TOCTitle: 'EsentFileNotFoundException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFileNotFoundException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e8b15076cba5e3d0c0ecfff84a76e8a5f4d4234c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92e1afcc398a642d27b5b82228970cdc0f87196218dd9f8d374e034c8b027b6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020431"
 ---
 # <a name="esentfilenotfoundexception-constructor"></a>Costruttore EsentFileNotFoundException
 
 Inizializza una nuova istanza della classe EsentFileNotFoundException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentFileNotFoundException()
 
 [Membri di EsentFileNotFoundException](./esentfilenotfoundexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

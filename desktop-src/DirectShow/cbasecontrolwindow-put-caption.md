@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put Caption Imposta il titolo o la didascalia della finestra.
+description: Il metodo put \_ Caption imposta il titolo o la didascalia della finestra.
 ms.assetid: 6671805a-e1ef-40f1-bc3f-bf7954ff9851
-title: Metodo CBaseControlWindow.put_Caption (Ctlutil. h)
+title: CBaseControlWindow.put_Caption metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aca8e5e7ad04acae9fab1cfe2d44f982266805e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7f0c9da5ad2c3ae409e14a1ca9918a0c1aa7ef04615ab4d647ce1a3467c7311
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983701"
 ---
-# <a name="cbasecontrolwindowput_caption-method"></a>CBaseControlWindow. Put, \_ Metodo didascalia
+# <a name="cbasecontrolwindowput_caption-method"></a>Metodo CBaseControlWindow.put \_ Caption
 
 Il `put_Caption` metodo imposta il titolo o la didascalia della finestra.
 
@@ -51,11 +51,11 @@ Nuova didascalia della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Per la maggior parte delle finestre di primo livello in un desktop basato su Windows è associato un titolo (didascalia). Questa proprietà può essere sottoposta a query e impostata tramite l'interfaccia [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Qualsiasi set di didascalie sarà visibile solo se nella finestra è \_ applicato lo stile di didascalia WS. In caso contrario, è comunque possibile impostare (e recuperare) la didascalia, anche se non sarà visibile all'utente.
+La maggior parte delle finestre di primo livello in Windows desktop basato su Windows è associata a un titolo (didascalia). È possibile eseguire query su questa proprietà e impostata tramite [**l'interfaccia IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Qualsiasi didascalia impostata sarà visibile solo se alla finestra è applicato lo stile WS \_ CAPTION. In caso contrario, la didascalia può comunque essere impostata (e recuperata), anche se non sarà visibile all'utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Per la maggior parte delle finestre di primo livello in un desktop basato su Win
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

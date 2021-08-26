@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: informazioni di riferimento sul motore di archiviazione estendibile'
-title: Informazioni di riferimento sul motore di archiviazione estendibile
+description: 'Altre informazioni su: Extensible Archiviazione Engine Reference (Informazioni di riferimento su Extensible Archiviazione Engine)'
+title: Informazioni di riferimento su Extensible Archiviazione Engine
 TOCTitle: Extensible Storage Engine Reference
 ms:assetid: 5033f53b-72f1-4a28-926e-242461863071
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269245(v=EXCHG.10)
@@ -15,44 +15,44 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0fa0c26a99b5dcf640173d4720fa59954a25a049
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61efc6587d080e4afd99c54a72963a1a7afea2b77859097fb919920d85a19382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968851"
 ---
-# <a name="extensible-storage-engine-reference"></a>Informazioni di riferimento sul motore di archiviazione estendibile
+# <a name="extensible-storage-engine-reference"></a>Informazioni di riferimento su Extensible Archiviazione Engine
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="extensible-storage-engine-reference"></a>Informazioni di riferimento sul motore di archiviazione estendibile
+## <a name="extensible-storage-engine-reference"></a>Informazioni di riferimento su Extensible Archiviazione Engine
 
-Il riferimento al motore di archiviazione estendibile contiene le sezioni seguenti:
+In Extensible Archiviazione Engine Reference (Informazioni di riferimento su Extensible Archiviazione Engine) sono contenute le sezioni seguenti:
 
-  - [Funzioni di callback Extensible Storage Engine](./extensible-storage-engine-callback-functions.md)
-
-<!-- end list -->
-
-  - [Costanti del motore di archiviazione estendibile](./extensible-storage-engine-constants.md)
+  - [Funzioni di callback del motore Archiviazione estendibile](./extensible-storage-engine-callback-functions.md)
 
 <!-- end list -->
 
-  - [Tipi di dati del motore di archiviazione estendibile](./extensible-storage-engine-data-types.md)
+  - [Costanti del motore Archiviazione estendibile](./extensible-storage-engine-constants.md)
 
 <!-- end list -->
 
-  - [Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)
+  - [Tipi di dati extensible Archiviazione Engine](./extensible-storage-engine-data-types.md)
 
 <!-- end list -->
 
-  - [File del motore di archiviazione estendibile](./extensible-storage-engine-files.md)
+  - [Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)
 
 <!-- end list -->
 
-  - [Funzioni del motore di archiviazione estendibile](./extensible-storage-engine-functions.md)
+  - [File extensible Archiviazione Engine](./extensible-storage-engine-files.md)
 
 <!-- end list -->
 
-  - [Strutture Extensible Storage Engine](./extensible-storage-engine-structures.md)
+  - [Funzioni extensible Archiviazione Engine](./extensible-storage-engine-functions.md)
+
+<!-- end list -->
+
+  - [Strutture del motore Archiviazione estendibile](./extensible-storage-engine-structures.md)
