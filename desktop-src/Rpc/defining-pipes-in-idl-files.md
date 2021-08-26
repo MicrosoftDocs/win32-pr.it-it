@@ -1,23 +1,23 @@
 ---
 title: Definizione di pipe nei file IDL
-description: Quando si definisce una pipe in un file IDL, il compilatore MIDL genera una struttura di controllo pipe i cui membri sono puntatori alle procedure push, pull e Alloc, oltre a una variabile di stato che coordina queste procedure.
+description: Quando una pipe viene definita in un file IDL, il compilatore MIDL genera una struttura di controllo della pipe i cui membri sono puntatori a routine push, pull e alloc, nonché una variabile di stato che coordina queste procedure.
 ms.assetid: f6c282e4-3056-48c4-bd12-dfcae6d238d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 115be7fc5d00458d13df102afebe9ba5b55de070
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bbd237690f45fd6ca73d62f54a5dccf0409f4424e1e96407c116b39ef5d882a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022071"
 ---
 # <a name="defining-pipes-in-idl-files"></a>Definizione di pipe nei file IDL
 
-Quando si definisce una pipe in un file IDL, il compilatore MIDL genera una struttura di controllo pipe i cui membri sono puntatori alle procedure push, pull e Alloc, oltre a una variabile di stato che coordina queste procedure. L'applicazione client Inizializza i campi nella struttura del controllo pipe, gestisce la variabile di stato e gestisce il trasferimento dei dati con le proprie funzioni push, pull e allocazione. Il codice stub client chiama queste funzioni dell'applicazione nei cicli durante il trasferimento dei dati. Per una pipe di input, lo stub client esegue il marshalling dei dati di trasferimento e li trasmette allo stub del server. Per una pipe di output, lo stub client esegue l'unmarshalling dei dati in un buffer e passa un puntatore a tale buffer all'applicazione client.
+Quando una pipe viene definita in un file IDL, il compilatore MIDL genera una struttura di controllo della pipe i cui membri sono puntatori a routine push, pull e alloc, nonché una variabile di stato che coordina queste procedure. L'applicazione client inizializza i campi nella struttura di controllo della pipe, mantiene la variabile di stato e gestisce il trasferimento dei dati con le proprie funzioni di push, pull e allocazione. Il codice stub del client chiama queste funzioni dell'applicazione in cicli durante il trasferimento dei dati. Per una pipe di input, lo stub del client effettua il marshalling dei dati di trasferimento e la trasmette al server stub. Per una pipe di output, lo stub del client unmarshals i dati in un buffer e passa un puntatore a tale buffer all'applicazione client.
 
-Il codice stub del server Inizializza i campi della struttura del controllo pipe su una variabile di stato, nonché i puntatori alle routine push e pull. Lo stub del server gestisce lo stato e gestisce la propria archiviazione privata per i dati di trasferimento. L'applicazione server chiama le routine pull e push nei cicli durante la chiamata di procedura remota mentre riceve ed esegue l'unmarshalling dei dati dallo stub client oppure effettua il marshalling e trasmette i dati allo stub client.
+Il codice stub del server inizializza i campi della struttura di controllo della pipe su una variabile di stato, nonché i puntatori alle routine push e pull. Lo stub del server mantiene lo stato e gestisce l'archiviazione privata per i dati di trasferimento. L'applicazione server chiama le routine pull e push nei cicli durante la chiamata di procedura remota durante la ricezione e l'unmarshaling dei dati dallo stub client oppure effettua il marshalling e la trasmissione di dati al stub client.
 
-Il file IDL di esempio seguente definisce una pipe di tipo LONG \_ pipe, le cui dimensioni degli elementi sono definite come **Long**. Dichiara inoltre i prototipi di funzione per le chiamate di procedura remota inpipe e outpipe, per inviare e ricevere dati, rispettivamente. Quando il compilatore MIDL elabora il file IDL, genera il file di intestazione illustrato nell'esempio.
+Il file IDL di esempio seguente definisce un tipo di pipe LONG PIPE, la cui dimensione \_ dell'elemento è definita come **long**. Dichiara inoltre prototipi di funzione per le chiamate di procedura remota rispettivamente in InPipe e OutPipe, per inviare e ricevere dati. Quando il compilatore MIDL elabora il file IDL, genera il file di intestazione illustrato nell'esempio.
 
 ## <a name="example"></a>Esempio
 
@@ -63,9 +63,9 @@ void OutPipe(
 [inviare tramite pipe](/windows/desktop/Midl/pipe)
 </dt> <dt>
 
-[**/OI**](/windows/desktop/Midl/-oi)
+[**/oi**](/windows/desktop/Midl/-oi)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

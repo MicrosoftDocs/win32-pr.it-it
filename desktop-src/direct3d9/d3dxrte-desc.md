@@ -1,7 +1,7 @@
 ---
-description: Descrive una destinazione di rendering fuori schermo utilizzata da un'istanza di ID3DXRenderToEnvMap.
+description: Descrive una destinazione di rendering fuori schermo usata da un'istanza di ID3DXRenderToEnvMap.
 ms.assetid: 805df4da-e882-4d54-bf2c-49cfcbc59ac6
-title: Struttura D3DXRTE_DESC (D3dx9core. h)
+title: D3DXRTE_DESC struttura (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9core.h
-ms.openlocfilehash: 69a5957bc9338abac4441f65066a43efb7dabead
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 91efe4dff2b392310ed2fd6bdc30db12c883c5d08e6b2cf110c2cb29d73c54ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027281"
 ---
-# <a name="d3dxrte_desc-structure"></a>\_Struttura D3DXRTE DESC
+# <a name="d3dxrte_desc-structure"></a>Struttura D3DXRTE \_ DESC
 
-Descrive una destinazione di rendering fuori schermo utilizzata da un'istanza di [**ID3DXRenderToEnvMap**](id3dxrendertoenvmap.md).
+Descrive una destinazione di rendering fuori schermo usata da un'istanza di [**ID3DXRenderToEnvMap.**](id3dxrendertoenvmap.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef struct D3DXRTE_DESC {
 **Dimensioni**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -57,7 +57,7 @@ Larghezza e altezza in pixel.
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -79,11 +79,11 @@ Formato del buffer dei colori.
 **DepthStencil**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indica se il buffer z è necessario.
+Indica se è necessario z-buffer.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Formato del buffer di profondità.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene utilizzato per restituire i parametri di creazione utilizzati durante la creazione di un oggetto [**ID3DXRenderToEnvMap**](id3dxrendertoenvmap.md) .
+Questo metodo viene usato per restituire i parametri di creazione usati durante la creazione di un [**oggetto ID3DXRenderToEnvMap.**](id3dxrendertoenvmap.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,7 +108,7 @@ Questo metodo viene utilizzato per restituire i parametri di creazione utilizzat
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9core. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9core.h</dt> </dl> |
 
 
 

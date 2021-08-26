@@ -1,49 +1,49 @@
 ---
-title: Utilizzo di Dynamic Data Exchange
-description: In questo argomento vengono forniti esempi di codice relativi a Dynamic Data Exchange.
+title: Uso di Dynamic Data Exchange
+description: In questo argomento vengono forniti esempi di codice riguardanti lo scambio dinamico di dati.
 ms.assetid: 6d94403b-64b4-4763-868a-3b94431dab79
 keywords:
 - Dynamic Data Exchange (DDE), conversazioni
 - DDE (Dynamic Data Exchange), conversazioni
-- scambio di dati, Dynamic Data Exchange (DDE)
+- scambio di dati,Dynamic Data Exchange (DDE)
 - Dynamic Data Exchange (DDE), esempi
-- DDE (Dynamic Data Exchange), esempi
+- DDE (Dynamic Data Exchange),esempi
 - Dynamic Data Exchange (DDE), comandi nelle applicazioni server
-- DDE (Dynamic Data Exchange), comandi nelle applicazioni server
-- Dynamic Data Exchange (DDE), collegamenti dati
-- DDE (Dynamic Data Exchange), collegamenti dati
-- Dynamic Data Exchange (DDE), elementi
-- DDE (Dynamic Data Exchange), elementi
+- DDE (Dynamic Data Exchange),comandi nelle applicazioni server
+- Dynamic Data Exchange (DDE), collegamenti ai dati
+- DDE (Dynamic Data Exchange),collegamenti dati
+- Dynamic Data Exchange (DDE), items
+- DDE (Dynamic Data Exchange),items
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fe20c4dedc38303fe9bcb9c4b0fae42d03ee536
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ad3a279e02b65d5540e5494512a44eefdfecdb18607cb12731cf7daa0d8569de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953667"
 ---
-# <a name="using-dynamic-data-exchange"></a>Utilizzo di Dynamic Data Exchange
+# <a name="using-dynamic-data-exchange"></a>Uso di Dynamic Data Exchange
 
-Questa sezione contiene esempi di codice sulle attività seguenti:
+In questa sezione sono disponibili esempi di codice per le attività seguenti:
 
 -   [Avvio di una conversazione](#initiating-a-conversation)
 -   [Trasferimento di un singolo elemento](#transferring-a-single-item)
     -   [Recupero di un elemento dal server](#retrieving-an-item-from-the-server)
     -   [Invio di un elemento al server](#submitting-an-item-to-the-server)
--   [Creazione di un collegamento dati permanente](#establishing-a-permanent-data-link)
+-   [Definizione di un collegamento dati permanente](#establishing-a-permanent-data-link)
     -   [Avvio di un collegamento dati](#initiating-a-data-link)
     -   [Avvio di un collegamento dati con il comando Incolla collegamento](#initiating-a-data-link-with-the-paste-link-command)
     -   [Notifica al client che i dati sono stati modificati](#notifying-the-client-that-data-has-changed)
-    -   [Terminazione di un collegamento dati](#terminating-a-data-link)
+    -   [Chiusura di un collegamento dati](#terminating-a-data-link)
 -   [Esecuzione di comandi in un'applicazione server](#carrying-out-commands-in-a-server-application)
 -   [Terminazione di una conversazione](#terminating-a-conversation)
 
 ## <a name="initiating-a-conversation"></a>Avvio di una conversazione
 
-Per avviare una conversazione di Dynamic Data Exchange (DDE), il client invia un messaggio di [**\_ \_ inizializzazione di WM DDE**](wm-dde-initiate.md) . In genere, il client trasmette questo messaggio chiamando [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage), con-1 come primo parametro. Se l'applicazione dispone già dell'handle di finestra per l'applicazione server, il messaggio può essere inviato direttamente a tale finestra. Il client prepara gli atomi per il nome dell'applicazione e il nome dell'argomento chiamando [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma). Il client può richiedere conversazioni con qualsiasi applicazione server potenziale e per qualsiasi potenziale argomento fornendo atomi **null** (carattere jolly) per l'applicazione e l'argomento.
+Per avviare una Dynamic Data Exchange (DDE), il client invia un messaggio [**WM \_ DDE \_ INITIATE.**](wm-dde-initiate.md) In genere, il client trasmette questo messaggio chiamando [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage), con –1 come primo parametro. Se l'applicazione dispone già dell'handle di finestra all'applicazione server, può inviare il messaggio direttamente a tale finestra. Il client prepara gli atom per il nome dell'applicazione e il nome dell'argomento chiamando [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma). Il client può richiedere conversazioni con qualsiasi potenziale applicazione server e per qualsiasi argomento potenziale fornendo atomi **NULL** (caratteri jolly) per l'applicazione e l'argomento.
 
-Nell'esempio seguente viene illustrata la modalità di avvio di una conversazione da parte del client, in cui vengono specificati sia l'applicazione che l'argomento.
+L'esempio seguente illustra come il client avvia una conversazione, in cui vengono specificati sia l'applicazione che l'argomento.
 
 
 ```
@@ -71,19 +71,19 @@ Nell'esempio seguente viene illustrata la modalità di avvio di una conversazion
 
 
 > [!Note]  
-> Se l'applicazione usa atomi **null** , non è necessario usare le funzioni [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) e [**GlobalDeleteAtom**](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) . In questo esempio, l'applicazione client crea due atomi globali che contengono rispettivamente il nome del server e il nome dell'argomento.
+> Se l'applicazione usa atomi **NULL,** non è necessario usare le [**funzioni GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) [**e GlobalDeleteAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaldeleteatom) In questo esempio l'applicazione client crea due atomi globali contenenti rispettivamente il nome del server e il nome dell'argomento.
 
- 
+ 
 
-L'applicazione client invia un messaggio di [**\_ \_ inizializzazione del DDE WM**](wm-dde-initiate.md) con questi due atomi nel parametro *lParam* del messaggio. Nella chiamata alla funzione [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) , l'handle di finestra speciale – 1 indica al sistema di inviare il messaggio a tutte le altre applicazioni attive. **SendMessage** non torna all'applicazione client fino a quando tutte le applicazioni che ricevono il messaggio non hanno a sua volta restituito il controllo al sistema. Ciò significa che tutti i messaggi di [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) inviati in risposta dalle applicazioni server vengono elaborati dal client nel momento in cui la chiamata **SendMessage** ha restituito.
+L'applicazione client invia un [**messaggio WM \_ DDE \_ INITIATE**](wm-dde-initiate.md) con questi due atomi nel *parametro lParam* del messaggio. Nella chiamata alla funzione [**SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) l'handle di finestra speciale –1 indica al sistema di inviare questo messaggio a tutte le altre applicazioni attive. **SendMessage** non torna all'applicazione client finché tutte le applicazioni che ricevono il messaggio non hanno restituito il controllo al sistema. Ciò significa che tutti i messaggi [**\_ WM DDE \_ ACK**](wm-dde-ack.md) inviati in risposta dalle applicazioni server sono garantiti che siano stati elaborati dal client nel momento in cui la **chiamata SendMessage** è stata restituita.
 
-Dopo la restituzione di [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) , l'applicazione client elimina gli atomi globali.
+Al [**termine di SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) l'applicazione client elimina gli atomi globali.
 
-Le applicazioni server rispondono secondo la logica illustrata nel diagramma seguente.
+Le applicazioni server rispondono in base alla logica illustrata nel diagramma seguente.
 
 ![logica di risposta dell'applicazione server](images/csdde-01.png)
 
-Per confermare uno o più argomenti, il server deve creare atomi per ogni conversazione (richiedendo atomi di nome applicazione duplicati se sono presenti più argomenti) e inviare un messaggio di [**\_ \_ ACK DDE WM**](wm-dde-ack.md) per ogni conversazione, come illustrato nell'esempio seguente.
+Per riconoscere uno o più argomenti, il server deve creare atom per ogni conversazione (che richiedono atomi di nome applicazione duplicati se sono presenti più argomenti) e inviare un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) per ogni conversazione, come illustrato nell'esempio seguente.
 
 
 ```
@@ -109,20 +109,20 @@ if ((atomApplication == 0) || (atomTopic == 0))
 
 
 
-Quando un server risponde con un messaggio [**\_ \_ ACK DDE WM**](wm-dde-ack.md) , l'applicazione client deve salvare un handle per la finestra del server. Il client che riceve l'handle come parametro *wParam* del messaggio **\_ \_ ACK DDE WM** invia quindi tutti i messaggi DDE successivi alla finestra del server identificata da questo handle.
+Quando un server risponde con un [**messaggio WM \_ DDE \_ ACK,**](wm-dde-ack.md) l'applicazione client deve salvare un handle nella finestra del server. Il client che riceve l'handle come *parametro wParam* del messaggio **WM \_ DDE \_ ACK** invia quindi tutti i messaggi DDE successivi alla finestra del server identificata da questo handle.
 
-Se l'applicazione client utilizza un Atom **null** per il nome dell'applicazione o dell'argomento, si prevede che l'applicazione riceva i riconoscimenti da più di un'applicazione server. Più riconoscimenti possono provenire da più istanze di un server DDE, anche se l'applicazione client non **utilizza gli** atomi. Un server deve sempre usare una finestra univoca per ogni conversazione. La routine della finestra nell'applicazione client può utilizzare un handle per la finestra del server (fornito come parametro *lParam* dell' [**\_ \_ avvio di WM DDE**](wm-dde-initiate.md)) per tenere traccia di più conversazioni. Ciò consente a una singola finestra client di elaborare diverse conversazioni senza dover terminare e riconnettersi a una nuova finestra del client per ogni conversazione.
+Se l'applicazione client usa un atom **NULL** per il nome dell'applicazione o il nome dell'argomento, prevedere che l'applicazione riceva i riconoscimenti da più applicazioni server. Più acknowledgement possono anche derivare da più istanze di un server DDE, anche se l'applicazione client non **usa atomi NULL.** Un server deve sempre usare una finestra univoca per ogni conversazione. La routine window nell'applicazione client può usare un handle per la finestra del server (fornito come *parametro lParam* di [**WM \_ DDE \_ INITIATE)**](wm-dde-initiate.md)per tenere traccia di più conversazioni. Ciò consente a una singola finestra client di elaborare diverse conversazioni senza dover terminare e riconnettersi a una nuova finestra client per ogni conversazione.
 
 ## <a name="transferring-a-single-item"></a>Trasferimento di un singolo elemento
 
-Una volta stabilita una conversazione DDE, il client può recuperare il valore di un elemento di dati dal server inviando il messaggio di [**\_ \_ richiesta DDE di WM**](wm-dde-request.md) oppure inviare un valore dell'elemento di dati al server eseguendo il [**\_ \_ poke DDE di WM**](wm-dde-poke.md).
+Dopo aver stabilito una conversazione [**\_ DDE, \_**](wm-dde-request.md) il client può recuperare il valore di un elemento di dati dal server inviando il messaggio WM DDE REQUEST o inviare un valore di elemento di dati al server emettendo [**WM \_ DDE \_ POKE**](wm-dde-poke.md).
 
 -   [Recupero di un elemento dal server](#retrieving-an-item-from-the-server)
 -   [Invio di un elemento al server](#submitting-an-item-to-the-server)
 
 ### <a name="retrieving-an-item-from-the-server"></a>Recupero di un elemento dal server
 
-Per recuperare un elemento dal server, il client invia al server un messaggio [**di \_ \_ richiesta DDE WM**](wm-dde-request.md) che specifica l'elemento e il formato da recuperare, come illustrato nell'esempio seguente.
+Per recuperare un elemento dal server, il client invia al server un messaggio [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) che specifica l'elemento e il formato da recuperare, come illustrato nell'esempio seguente.
 
 
 ```
@@ -145,11 +145,11 @@ if (atomItem == 0)
 
 
 
-In questo esempio, il client specifica il formato degli Appunti del **\_ testo CF** come formato preferito per l'elemento di dati richiesto.
+In questo esempio il client specifica il formato **CF \_ TEXT** degli Appunti come formato preferito per l'elemento di dati richiesto.
 
-Il ricevitore (Server) del messaggio [**di \_ \_ richiesta DDE di WM**](wm-dde-request.md) deve in genere eliminare il Atom dell'elemento, ma se la chiamata al [**messaggio**](/windows/desktop/api/winuser/nf-winuser-postmessagea) non riesce, il client deve eliminare il formato Atom.
+Il ricevitore (server) del messaggio [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) deve in genere eliminare l'elemento atom, ma se la [**chiamata PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) ha esito negativo, il client deve eliminare l'atom.
 
-Se il server ha accesso all'elemento richiesto ed è in grado di eseguirne il rendering nel formato richiesto, il server copia il valore dell'elemento come oggetto Shared Memory e invia al client un messaggio di [**\_ \_ dati DDE di WM**](wm-dde-data.md) , come illustrato nell'esempio seguente.
+Se il server ha accesso all'elemento richiesto e può eseguirne il rendering nel formato richiesto, il server copia il valore dell'elemento come oggetto di memoria condivisa e invia al client un messaggio [**WM \_ DDE \_ DATA,**](wm-dde-data.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -216,15 +216,15 @@ if (atomItem == 0)
 
 
 
-In questo esempio, l'applicazione server alloca un oggetto memoria per contenere l'elemento dati. L'oggetto dati viene inizializzato come struttura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) .
+In questo esempio l'applicazione server alloca un oggetto di memoria per contenere l'elemento di dati. L'oggetto dati viene inizializzato come [**struttura DDEDATA.**](/windows/desktop/api/Dde/ns-dde-ddedata)
 
-L'applicazione server imposta quindi il membro **cfFormat** della struttura su testo CF \_ per informare l'applicazione client che i dati sono in formato testo. Il client risponde copiando il valore dei dati richiesti nel membro del **valore** della struttura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) . Dopo che il server ha riempito l'oggetto dati, il server Sblocca i dati e crea un Atom globale contenente il nome dell'elemento di dati.
+L'applicazione server imposta quindi il **membro cfFormat** della struttura su CF TEXT per informare l'applicazione client che i dati \_ sono in formato testo. Il client risponde copiando il valore dei dati richiesti nel membro **Value** della [**struttura DDEDATA.**](/windows/desktop/api/Dde/ns-dde-ddedata) Dopo che il server ha riempito l'oggetto dati, il server sblocca i dati e crea un atom globale contenente il nome dell'elemento dati.
 
-Infine, il server emette il messaggio di [**\_ \_ dati DDE di WM**](wm-dde-data.md) chiamando [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea). L'handle per l'oggetto dati e il formato Atom contenente il nome dell'elemento vengono compressi nel parametro *lParam* del messaggio tramite la funzione [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) .
+Infine, il server emessa il [**messaggio WM \_ DDE \_ DATA**](wm-dde-data.md) chiamando [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea). L'handle per l'oggetto dati e l'atom contenente il nome dell'elemento vengono imballati nel *parametro lParam* del messaggio dalla [**funzione PackDDElParam.**](/windows/desktop/api/Dde/nf-dde-packddelparam)
 
-Se [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) ha esito negativo, il server deve usare la funzione [**FreeDDElParam**](/windows/desktop/api/Dde/nf-dde-freeddelparam) per liberare il parametro *lParam* compresso. Il server deve inoltre liberare il parametro *lParam* compresso per il messaggio di [**\_ \_ richiesta DDE WM**](wm-dde-request.md) ricevuto.
+Se [**PostMessage ha**](/windows/desktop/api/winuser/nf-winuser-postmessagea) esito negativo, il server deve usare la [**funzione FreeDDElParam**](/windows/desktop/api/Dde/nf-dde-freeddelparam) per liberare il parametro *lParam imballato.* Il server deve anche liberare il parametro *lParam* packed per il messaggio [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) ricevuto.
 
-Se il server non è in grado di soddisfare la richiesta, invia un messaggio [**\_ \_ ACK DDE**](wm-dde-ack.md) negativo al client, come illustrato nell'esempio seguente.
+Se il server non soddisfa la richiesta, invia un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) negativo al client, come illustrato nell'esempio seguente.
 
 
 ```
@@ -238,7 +238,7 @@ PostMessage(hwndClientDDE,
 
 
 
-Al momento della ricezione di un messaggio di [**\_ \_ dati DDE di WM**](wm-dde-data.md) , il client elabora il valore dell'elemento di dati in base alle esigenze. Se quindi il membro **fAckReq** a cui puntava il messaggio di **\_ \_ dati DDE di WM** è 1, il client deve inviare al server un messaggio [**\_ \_ ACK DDE positivo WM**](wm-dde-ack.md) , come illustrato nell'esempio seguente.
+Alla ricezione di [**un messaggio WM \_ DDE \_ DATA,**](wm-dde-data.md) il client elabora il valore dell'elemento di dati in base alle esigenze. Quindi, se il membro **fAckReq** a cui punta il messaggio **WM \_ DDE \_ DATA** è 1, il client deve inviare al server un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo, come illustrato nell'esempio seguente.
 
 
 ```
@@ -272,21 +272,21 @@ if (bRelease)
 
 
 
-In questo esempio, il client esamina il formato dei dati. Se il formato non è **un \_ testo CF** (o se il client non è in grado di bloccare la memoria per i dati), il client invia un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) negativo per indicare che non è in grado di elaborare i dati. Se il client non è in grado di bloccare un handle di dati perché l'handle contiene il membro **fAckReq** , il client non deve inviare un messaggio **\_ \_ ACK DDE di WM** negativo. Al contrario, il client deve terminare la conversazione.
+In questo esempio il client esamina il formato dei dati. Se il formato non è **CF \_ TEXT** (o se il client non riesce a bloccare la memoria per i dati), il client invia un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) negativo per indicare che non è in grado di elaborare i dati. Se il client non riesce a bloccare un handle di dati perché l'handle contiene il membro **fAckReq,** il client non deve inviare un messaggio **\_ \_ ACK WM DDE** negativo. Al contrario, il client deve terminare la conversazione.
 
-Se un client invia un riconoscimento negativo in risposta a un messaggio [**di \_ \_ dati DDE di WM**](wm-dde-data.md) , il server è responsabile della liberazione della memoria (ma non del parametro *lParam* ) a cui fa riferimento il messaggio di **\_ \_ dati DDE di WM** associato al riconoscimento negativo.
+Se un client invia un riconoscimento negativo in risposta a un messaggio [**WM \_ DDE \_ DATA,**](wm-dde-data.md) il server è responsabile di liberare la memoria (ma non il parametro *lParam)* a cui fa riferimento il messaggio **WM \_ DDE \_ DATA** associato al riconoscimento negativo.
 
-Se è in grado di elaborare i dati, il client esamina il membro **fAckReq** della struttura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) per determinare se il server ha richiesto di essere informato che il client ha ricevuto ed elaborato correttamente i dati. Se il server ha richiesto queste informazioni, il client invia al server un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) positivo.
+Se è in grado di elaborare i dati, il client esamina il membro **fAckReq** della struttura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) per determinare se il server ha richiesto di essere informato che il client ha ricevuto ed elaborato correttamente i dati. Se il server ha richiesto queste informazioni, il client invia al server un messaggio [**\_ \_ ACK WM DDE**](wm-dde-ack.md) positivo.
 
 Poiché lo sblocco dei dati invalida il puntatore ai dati, il client salva il valore del membro **fRelease** prima di sbloccare l'oggetto dati. Dopo aver salvato il valore, il client lo esamina per determinare se l'applicazione server ha richiesto al client di liberare la memoria contenente i dati. il client agisce di conseguenza.
 
-Al momento della ricezione di un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) negativo, il client può richiedere di nuovo lo stesso valore dell'elemento, specificando un formato degli Appunti diverso. In genere, un client richiederà per prima cosa il formato più complesso che può supportare, quindi eseguire un'istruzione per difetto con formati progressivamente più semplici fino a quando non ne troverà uno che il server è in grado di fornire.
+Quando si riceve un [**messaggio WM \_ DDE \_ ACK**](wm-dde-ack.md) negativo, il client può richiedere nuovamente lo stesso valore dell'elemento, specificando un formato diverso degli Appunti. In genere, un client richiede prima il formato più complesso che può supportare, quindi, se necessario, eseguire un'istruzione verso il basso attraverso formati progressivamente più semplici fino a quando non ne trova uno che il server può fornire.
 
-Se il server supporta l'elemento formats dell'argomento System, il client può determinare una volta il formato degli appunti supportato dal server, anziché determinarli ogni volta che il client richiede un elemento.
+Se il server supporta l'elemento Formats dell'argomento di sistema, il client può determinare una volta che i formati degli Appunti supportati dal server, invece di determinarli ogni volta che il client richiede un elemento.
 
 ### <a name="submitting-an-item-to-the-server"></a>Invio di un elemento al server
 
-Il client può inviare un valore dell'elemento al server tramite il messaggio [**di \_ \_ poke DDE di WM**](wm-dde-poke.md) . Il client esegue il rendering dell'elemento da inviare e invia il messaggio di **\_ \_ poke DDE di WM** , come illustrato nell'esempio seguente.
+Il client può inviare un valore di elemento al server usando il messaggio [**\_ \_ POKE WM DDE.**](wm-dde-poke.md) Il client esegue il rendering dell'elemento da inviare e invia il messaggio **\_ \_ POKE WM DDE,** come illustrato nell'esempio seguente.
 
 
 ```
@@ -351,11 +351,11 @@ if (atomItem == 0)
 
 
 > [!Note]  
-> L'invio di dati tramite un messaggio [**\_ \_ poke DDE di WM**](wm-dde-poke.md) è essenzialmente analogo all'invio tramite [**\_ \_ dati DDE**](wm-dde-data.md)di WM, ad eccezione del fatto che **WM \_ DDE \_ poke** viene inviato dal client al server.
+> L'invio di dati tramite un messaggio POKE WM DDE è essenzialmente uguale all'invio tramite [**WM \_ DDE \_ DATA,**](wm-dde-data.md)ad eccezione del fatto che **WM \_ DDE \_** [**\_ \_ POKE**](wm-dde-poke.md) viene inviato dal client al server.
 
- 
+ 
 
-Se il server è in grado di accettare il valore dell'elemento di dati nel formato di cui è stato eseguito il rendering dal client, il server elabora il valore dell'elemento in base alle esigenze e invia al client un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) positivo. Se non è in grado di elaborare il valore dell'elemento, a causa del formato o per altri motivi, il server invia al client un messaggio **\_ \_ ACK DDE di WM** negativo.
+Se il server è in grado di accettare il valore dell'elemento di dati nel formato sottoposto a rendering dal client, il server elabora il valore dell'elemento nel modo appropriato e invia al client un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo. Se non è in grado di elaborare il valore dell'elemento, a causa del formato o per altri motivi, il server invia al client un messaggio **WM \_ DDE \_ ACK** negativo.
 
 
 ```
@@ -399,17 +399,17 @@ PostMessage(hwndClientDDE,
 
 
 
-In questo esempio, il server chiama [**GlobalGetAtomName**](/windows/desktop/api/Winbase/nf-winbase-globalgetatomnamea) per recuperare il nome dell'elemento inviato dal client. Il server determina quindi se supporta l'elemento e se viene eseguito il rendering dell'elemento nel formato corretto (ovvero il testo CF \_ ). Se l'elemento non è supportato e non viene sottoposto a rendering nel formato corretto o se il server non è in grado di bloccare la memoria per i dati, il server invia un riconoscimento negativo all'applicazione client. Si noti che in questo caso, l'invio di un riconoscimento negativo è corretto perché per i messaggi [**\_ \_ poke DDE di WM**](wm-dde-poke.md) si presuppone sempre che sia impostato il membro **fAckReq** . Il server deve ignorare il membro.
+In questo esempio il server chiama [**GlobalGetAtomName**](/windows/desktop/api/Winbase/nf-winbase-globalgetatomnamea) per recuperare il nome dell'elemento inviato dal client. Il server determina quindi se supporta l'elemento e se viene eseguito il rendering dell'elemento nel formato corretto, ovvero CF \_ TEXT. Se l'elemento non è supportato e non ne viene eseguito il rendering nel formato corretto o se il server non riesce a bloccare la memoria per i dati, il server invia un riconoscimento negativo all'applicazione client. Si noti che in questo caso, l'invio di un riconoscimento negativo è corretto perché si presuppone che per i messaggi [**\_ \_ POKE WM DDE**](wm-dde-poke.md) sia sempre impostato il membro **fAckReq.** Il server deve ignorare il membro.
 
-Se un server invia un riconoscimento negativo in risposta a un messaggio [**\_ \_ poke DDE WM**](wm-dde-poke.md) , il client è responsabile della liberazione della memoria (ma non del parametro *lParam* ) a cui fa riferimento il messaggio **di \_ \_ poke DDE di WM** associato al riconoscimento negativo.
+Se un server invia un riconoscimento negativo in risposta a un messaggio [**\_ \_ POKE WM DDE,**](wm-dde-poke.md) il client è responsabile di liberare la memoria (ma non il parametro *lParam)* a cui fa riferimento il messaggio **\_ \_ POKE WM DDE** associato al riconoscimento negativo.
 
-## <a name="establishing-a-permanent-data-link"></a>Creazione di un collegamento dati permanente
+## <a name="establishing-a-permanent-data-link"></a>Definizione di un collegamento dati permanente
 
-Un'applicazione client può utilizzare DDE per stabilire un collegamento a un elemento in un'applicazione server. Dopo aver stabilito un collegamento di questo tipo, il server invia aggiornamenti periodici dell'elemento collegato al client, in genere ogni volta che viene modificato il valore dell'elemento. Viene pertanto stabilito un flusso di dati permanente tra le due applicazioni; Questo flusso di dati rimane attivo fino a quando non viene disconnesso in modo esplicito.
+Un'applicazione client può usare DDE per stabilire un collegamento a un elemento in un'applicazione server. Dopo aver stabilito un collegamento di questo tipo, il server invia aggiornamenti periodici dell'elemento collegato al client, in genere ogni volta che il valore dell'elemento cambia. Viene quindi stabilito un flusso di dati permanente tra le due applicazioni. questo flusso di dati rimane attivo fino a quando non viene disconnesso in modo esplicito.
 
 ### <a name="initiating-a-data-link"></a>Avvio di un collegamento dati
 
-Il client avvia un collegamento dati pubblicando un messaggio [**di \_ \_ notifica DDE di WM**](wm-dde-advise.md) , come illustrato nell'esempio seguente.
+Il client avvia un collegamento dati pubblicando un [**messaggio WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -449,25 +449,25 @@ if (atomItem == 0)
 
 
 
-In questo esempio, l'applicazione client imposta il flag **FDeferUpd** del messaggio [**di \_ \_ avviso DDE di WM**](wm-dde-advise.md) su **false**. In questo modo l'applicazione server invia i dati al client ogni volta che i dati vengono modificati.
+In questo esempio, l'applicazione client imposta il flag **fDeferUpd** del messaggio [**WM \_ DDE \_ ADVISE**](wm-dde-advise.md) su **FALSE.** In questo modo l'applicazione server invierà i dati al client ogni volta che i dati cambiano.
 
-Se il server non è in grado di servire la richiesta di [**\_ \_ notifica DDE di WM**](wm-dde-advise.md) , invia al client un messaggio di [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) negativo. Tuttavia, se il server ha accesso all'elemento e può eseguirne il rendering nel formato richiesto, il server annota il nuovo collegamento, chiamando i flag specificati nel parametro *hOptions* , e invia al client un messaggio **\_ \_ ACK DDE** positivo. Da quel momento in poi, fino a quando il client non emette un messaggio di avviso [**\_ \_ DDE di WM**](wm-dde-unadvise.md) corrispondente, il server invia i nuovi dati al client ogni volta che il valore dell'elemento viene modificato nel server.
+Se il server non è in grado di eseguire la richiesta [**WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) invia al client un messaggio [**\_ \_ ACK WM DDE**](wm-dde-ack.md) negativo. Tuttavia, se il server ha accesso all'elemento e può eseguirne il rendering nel formato richiesto, il server annota il nuovo collegamento (richiamando i flag specificati nel *parametro hOptions)* e invia al client un messaggio **WM \_ DDE \_ ACK** positivo. Da quel momento in poi, fino a quando il client non invia un messaggio [**WM \_ DDE \_ UNADVISE**](wm-dde-unadvise.md) corrispondente, il server invia i nuovi dati al client ogni volta che il valore dell'elemento cambia nel server.
 
-Il messaggio di [**\_ \_ notifica DDE di WM**](wm-dde-advise.md) stabilisce il formato dei dati da scambiare durante il collegamento. Se il client tenta di stabilire un altro collegamento con lo stesso elemento, ma usa un formato dati diverso, il server può scegliere di rifiutare il secondo formato dati o tentare di supportarlo. Se è stato stabilito un collegamento a caldo per qualsiasi elemento di dati, il server può supportare un solo formato dati alla volta. Questo è dovuto al fatto che il messaggio di [**\_ \_ dati DDE di WM**](wm-dde-data.md) per un collegamento a caldo ha un handle di dati **null** , che altrimenti contiene le informazioni sul formato. Pertanto, un server deve rifiutare tutti i collegamenti caldi per un elemento già collegato e deve rifiutare tutti i collegamenti per un elemento con collegamenti caldi. Un'altra interpretazione potrebbe essere che il server modifica il formato e lo stato attivo o caldo di un collegamento quando viene richiesto un secondo collegamento per lo stesso elemento di dati.
+Il [**messaggio WM \_ DDE \_ ADVISE**](wm-dde-advise.md) stabilisce il formato dei dati da scambiare durante il collegamento. Se il client tenta di stabilire un altro collegamento con lo stesso elemento ma usa un formato dati diverso, il server può scegliere di rifiutare il secondo formato di dati o tentare di supportarlo. Se è stato stabilito un collegamento a caldo per qualsiasi elemento di dati, il server può supportare un solo formato dati alla volta. Questo perché il [**messaggio WM \_ DDE \_ DATA**](wm-dde-data.md) per un collegamento a caldo ha un handle di dati **NULL,** che in caso contrario contiene le informazioni sul formato. Pertanto, un server deve rifiutare tutti i collegamenti a caldo per un elemento già collegato e deve rifiutare tutti i collegamenti per un elemento con collegamenti a caldo. Un'altra interpretazione può essere che il server modifica il formato e lo stato attivo o caldo di un collegamento quando viene richiesto un secondo collegamento per lo stesso elemento di dati.
 
 In generale, le applicazioni client non devono tentare di stabilire più di un collegamento alla volta per un elemento di dati.
 
 ### <a name="initiating-a-data-link-with-the-paste-link-command"></a>Avvio di un collegamento dati con il comando Incolla collegamento
 
-Le applicazioni che supportano i collegamenti dati ad accesso frequente o caldo in genere supportano un formato degli Appunti registrato denominato collegamento. Quando è associato ai comandi copia e Incolla collegamento dell'applicazione, questo formato degli Appunti consente all'utente di stabilire conversazioni DDE tra le applicazioni semplicemente copiando un elemento di dati nell'applicazione server e incollarlo nell'applicazione client.
+Le applicazioni che supportano collegamenti dati ad accesso caldo o a caldo supportano in genere un formato degli Appunti registrato denominato Collegamento. Se associato ai comandi Copia e Incolla collegamento dell'applicazione, questo formato degli Appunti consente all'utente di stabilire conversazioni DDE tra applicazioni semplicemente copiando un elemento di dati nell'applicazione server e incollarlo nell'applicazione client.
 
-Un'applicazione server supporta il formato degli Appunti di collegamento inserendo negli Appunti una stringa contenente i nomi dell'applicazione, dell'argomento e dell'elemento quando l'utente sceglie il comando **Copy** dal menu **modifica** . Di seguito è riportato il formato di collegamento standard:
+Un'applicazione server supporta il formato Collega Appunti inserendo negli Appunti una stringa contenente i nomi  dell'applicazione, dell'argomento e dell'elemento quando l'utente sceglie il comando Copia **dal** menu Modifica. Di seguito è riportato il formato collegamento standard:
 
-*applicazione ***\\ 0*** argomento ***\\ 0*** elemento * * \\ 0 0 \\**
+*application***\\ 0**_argomento_*_\\ 0_*_elemento_*_\\ 0 \\ 0_*
 
-Un singolo carattere null separa i nomi e due caratteri null terminano l'intera stringa.
+Un singolo carattere Null separa i nomi e due caratteri Null terminano l'intera stringa.
 
-Le applicazioni client e server devono registrare il formato degli Appunti di collegamento, come illustrato:
+Sia le applicazioni client che le applicazioni server devono registrare il formato degli Appunti collegamento, come illustrato di seguito:
 
 
 ```
@@ -476,7 +476,7 @@ cfLink = RegisterClipboardFormat("Link");
 
 
 
-Un'applicazione client supporta il formato degli Appunti di collegamento per mezzo di un comando Incolla collegamento nel menu Modifica. Quando l'utente sceglie questo comando, l'applicazione client analizza i nomi dell'applicazione, dell'argomento e degli elementi dai dati degli Appunti in formato di collegamento. Usando questi nomi, l'applicazione client avvia una conversazione per l'applicazione e l'argomento, se tale conversazione non esiste già. L'applicazione client invia quindi un messaggio di [**\_ \_ notifica DDE di WM**](wm-dde-advise.md) all'applicazione server, specificando il nome dell'elemento contenuto nei dati degli Appunti in formato collegamento.
+Un'applicazione client supporta il formato degli Appunti Collegamento tramite un comando Incolla collegamento nel menu Modifica. Quando l'utente sceglie questo comando, l'applicazione client analizza i nomi dell'applicazione, dell'argomento e dell'elemento dai dati degli Appunti in formato collegamento. Usando questi nomi, l'applicazione client avvia una conversazione per l'applicazione e l'argomento, se tale conversazione non esiste già. L'applicazione client invia quindi un [**messaggio WM \_ DDE \_ ADVISE**](wm-dde-advise.md) all'applicazione server, specificando il nome dell'elemento contenuto nei dati degli Appunti in formato collegamento.
 
 Di seguito è riportato un esempio di risposta di un'applicazione client quando l'utente sceglie il comando Incolla collegamento.
 
@@ -595,17 +595,17 @@ HWND hwndClientDDE;
 
 
 
-In questo esempio, l'applicazione client apre gli appunti e determina se contiene dati nel formato di collegamento (ovvero cfLink) precedentemente registrato. In caso contrario, o se non è in grado di bloccare i dati negli Appunti, il client restituisce.
+In questo esempio l'applicazione client apre gli Appunti e determina se contiene dati nel formato Collegamento (ovvero cfLink) registrato in precedenza. In caso contrario, o se non è possibile bloccare i dati negli Appunti, il client restituisce .
 
-Quando l'applicazione client recupera un puntatore ai dati degli Appunti, analizza i dati per estrarre i nomi dell'applicazione, dell'argomento e dell'elemento.
+Dopo che l'applicazione client recupera un puntatore ai dati degli Appunti, analizza i dati per estrarre i nomi dell'applicazione, dell'argomento e dell'elemento.
 
-L'applicazione client determina se una conversazione nell'argomento esiste già tra l'applicazione e l'applicazione server. Se esiste una conversazione, il client verifica se esiste già un collegamento per l'elemento dati. Se esiste un collegamento di questo tipo, il client visualizza una finestra di messaggio all'utente; in caso contrario, chiama la propria funzione *SendAdvise* per inviare un messaggio di [**\_ \_ notifica DDE di WM**](wm-dde-advise.md) al server per l'elemento.
+L'applicazione client determina se esiste già una conversazione sull'argomento tra l'argomento e l'applicazione server. Se esiste una conversazione, il client verifica se esiste già un collegamento per l'elemento dati. Se esiste un collegamento di questo tipo, il client visualizza una finestra di messaggio all'utente. in caso contrario, chiama la propria *funzione SendAdvise* per inviare un messaggio [**WM \_ DDE \_ ADVISE**](wm-dde-advise.md) al server per l'elemento.
 
-Se una conversazione nell'argomento non esiste già tra il client e il server, il client chiama prima la propria funzione *SendInitiate* per trasmettere il messaggio di [**\_ \_ inizializzazione di WM DDE**](wm-dde-initiate.md) per richiedere una conversazione e, in secondo luogo, chiama la propria funzione *FindServerGivenAppTopic* per stabilire la conversazione con la finestra che risponde per conto dell'applicazione server. Una volta iniziata la conversazione, l'applicazione client chiama *SendAdvise* per richiedere il collegamento.
+Se non esiste già una conversazione sull'argomento tra il client e il server, il client chiama prima la propria funzione *SendInitiate* per trasmettere il messaggio [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md) per richiedere una conversazione e, in secondo luogo, chiama la propria funzione *FindServerGivenAppTopic* per stabilire la conversazione con la finestra che risponde per conto dell'applicazione server. Dopo l'inizio della conversazione, l'applicazione client *chiama SendAdvise* per richiedere il collegamento.
 
 ### <a name="notifying-the-client-that-data-has-changed"></a>Notifica al client che i dati sono stati modificati
 
-Quando il client stabilisce un collegamento usando il messaggio [**di \_ \_ notifica DDE di WM**](wm-dde-advise.md) , con il membro **FDeferUpd** non impostato (ovvero uguale a zero) nella struttura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) , il client ha richiesto al server di inviare l'elemento dati ogni volta che il valore dell'elemento cambia. In questi casi, il server esegue il rendering del nuovo valore dell'elemento di dati nel formato specificato in precedenza e invia al client un messaggio di [**\_ \_ dati DDE WM**](wm-dde-data.md) , come illustrato nell'esempio seguente.
+Quando il client stabilisce un collegamento usando il messaggio [**WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) con il membro **fDeferUpd** non impostato (ovvero uguale a zero) nella struttura [**DDEDATA,**](/windows/desktop/api/Dde/ns-dde-ddedata) il client ha richiesto al server di inviare l'elemento di dati ogni volta che il valore dell'elemento cambia. In questi casi, il server esegue il rendering del nuovo valore dell'elemento di dati nel formato specificato in precedenza e invia al client un messaggio [**WM \_ DDE \_ DATA,**](wm-dde-data.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -669,9 +669,9 @@ if (atomItem == 0)
 
 
 
-In questo esempio, il client elabora il valore dell'elemento in base alle esigenze. Se viene impostato il flag **fAckReq** per l'elemento, il client invia al server un messaggio [**\_ \_ ACK DDE positivo WM**](wm-dde-ack.md) .
+In questo esempio il client elabora il valore dell'elemento nel modo appropriato. Se il flag **fAckReq** per l'elemento è impostato, il client invia al server un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo.
 
-Quando il client stabilisce il collegamento con il set di membri **FDeferUpd** (ovvero, uguale a 1), il client ha richiesto che solo una notifica, non i dati stessi, venga inviata ogni volta che i dati cambiano. In questi casi, quando il valore dell'elemento viene modificato, il server non esegue il rendering del valore ma invia semplicemente al client un messaggio di [**\_ \_ dati DDE WM**](wm-dde-data.md) con un handle di dati null, come illustrato nell'esempio seguente.
+Quando il client stabilisce il collegamento, con il set di membri **fDeferUpd** (ovvero uguale a 1), il client ha richiesto l'invio di una notifica, non dei dati stessi, ogni volta che i dati cambiano. In questi casi, quando il valore dell'elemento cambia, il server non esegue il rendering del valore, ma invia semplicemente al client un messaggio [**WM \_ DDE \_ DATA**](wm-dde-data.md) con un handle di dati Null, come illustrato nell'esempio seguente.
 
 
 ```
@@ -699,11 +699,11 @@ if (atomItem == 0)
 
 
 
-Se necessario, il client può richiedere il valore più recente dell'elemento di dati emettendo un normale messaggio [**di \_ \_ richiesta DDE di WM**](wm-dde-request.md) oppure ignorare semplicemente l'avviso dal server in cui sono stati modificati i dati. In entrambi i casi, se **fAckReq** è uguale a 1, il client deve inviare al server un messaggio di [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) positivo.
+Se necessario, il client può richiedere il valore più recente dell'elemento di dati emettendo un normale messaggio [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) oppure può semplicemente ignorare l'avviso del server che i dati sono stati modificati. In entrambi i casi, se **fAckReq** è uguale a 1, è previsto che il client invii un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo al server.
 
-### <a name="terminating-a-data-link"></a>Terminazione di un collegamento dati
+### <a name="terminating-a-data-link"></a>Chiusura di un collegamento dati
 
-Se il client richiede la terminazione di un collegamento dati specifico, il client invia al server un messaggio di [**\_ \_ Unadvise DDE di WM**](wm-dde-unadvise.md) , come illustrato nell'esempio seguente.
+Se il client richiede che un collegamento dati specifico venga terminato, il client invia al server un messaggio [**WM \_ DDE \_ UNADVISE,**](wm-dde-unadvise.md) come illustrato nell'esempio seguente.
 
 
 ```
@@ -727,15 +727,15 @@ if (atomItem == 0)
 
 
 
-Il server verifica se il client dispone attualmente di un collegamento all'elemento specifico di questa conversazione. Se esiste un collegamento, il server invia al client un messaggio [**\_ \_ ACK DDE**](wm-dde-ack.md) positivo. il server non è più necessario per inviare aggiornamenti sull'elemento. Se non esiste alcun collegamento, il server invia al client un **messaggio \_ \_ ACK DDE di WM** negativo.
+Il server verifica se il client ha attualmente un collegamento all'elemento specifico in questa conversazione. Se esiste un collegamento, il server invia al client un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo. Il server non è più necessario per inviare aggiornamenti sull'elemento. Se non esiste alcun collegamento, il server invia al client un messaggio **WM \_ DDE \_ ACK** negativo.
 
-Il messaggio di [**\_ \_ Unadvise DDE WM**](wm-dde-unadvise.md) specifica un formato dati. Il formato zero indica al server di arrestare tutti i collegamenti per l'elemento specificato, anche se vengono stabiliti diversi collegamenti sensibili e ognuno usa un formato diverso.
+Il [**messaggio WM \_ DDE \_ UNADVISE**](wm-dde-unadvise.md) specifica un formato dati. Un formato pari a zero indica al server di arrestare tutti i collegamenti per l'elemento specificato, anche se vengono stabiliti diversi collegamenti rapidi e ognuno usa un formato diverso.
 
-Per terminare tutti i collegamenti per una conversazione, l'applicazione client invia al server un messaggio di annullamento dell' [**\_ \_ avviso DDE di WM**](wm-dde-unadvise.md) con un Atom elemento null. Il server determina se per la conversazione è attualmente stabilito almeno un collegamento. Se esiste un collegamento, il server invia al client un messaggio [**\_ \_ ACK DDE**](wm-dde-ack.md) positivo. il server non deve più inviare aggiornamenti nella conversazione. Se non esiste alcun collegamento, il server invia al client un **messaggio \_ \_ ACK DDE di WM** negativo.
+Per terminare tutti i collegamenti per una conversazione, l'applicazione client invia al server un messaggio [**WM \_ DDE \_ UNADVISE**](wm-dde-unadvise.md) con un atom di elemento Null. Il server determina se nella conversazione è attualmente stabilito almeno un collegamento. Se esiste un collegamento, il server invia al client un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo. Il server non deve più inviare aggiornamenti nella conversazione. Se non esiste alcun collegamento, il server invia al client un messaggio **WM \_ DDE \_ ACK** negativo.
 
 ## <a name="carrying-out-commands-in-a-server-application"></a>Esecuzione di comandi in un'applicazione server
 
-Le applicazioni possono utilizzare il messaggio di [**\_ \_ esecuzione DDE di WM**](wm-dde-execute.md) per fare in modo che venga eseguito un determinato comando o una serie di comandi in un'altra applicazione. A tale scopo, il client invia al server un messaggio di **\_ \_ esecuzione DDE WM** contenente un handle a una stringa di comando, come illustrato nell'esempio seguente.
+Le applicazioni possono usare [**il messaggio EXECUTE di WM \_ DDE \_**](wm-dde-execute.md) per eseguire un determinato comando o una serie di comandi in un'altra applicazione. A tale scopo, il client invia al server un messaggio **WM \_ DDE \_ EXECUTE** contenente un handle a una stringa di comando, come illustrato nell'esempio seguente.
 
 
 ```
@@ -772,15 +772,15 @@ if (!PostMessage(hwndServerDDE,
 
 
 
-In questo esempio, il server tenta di eseguire la stringa di comando specificata. Se ha esito positivo, il server invia al client un [**messaggio \_ \_ ACK DDE**](wm-dde-ack.md) positivo. in caso contrario, invia un messaggio di **\_ \_ ACK DDE WM** negativo. Questo messaggio di **\_ \_ ACK DDE WM** riutilizza l'handle *hCommand* passato nel messaggio [**\_ \_ Execute DDE**](wm-dde-execute.md) originale di WM.
+In questo esempio il server tenta di eseguire la stringa di comando specificata. Se ha esito positivo, il server invia al client un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) positivo; in caso contrario, invia un messaggio **\_ \_ ACK WM DDE** negativo. Questo **messaggio WM \_ DDE \_ ACK** riutilizza l'handle *hCommand* passato nel messaggio [**EXECUTE WM \_ DDE \_**](wm-dde-execute.md) originale.
 
-Se la stringa di esecuzione dei comandi del client richiede che il server termini, il server deve rispondere inviando un messaggio [**\_ \_ ACK DDE positivo WM**](wm-dde-ack.md) e quindi inviare un messaggio di [**\_ \_ terminazione DDE WM**](wm-dde-terminate.md) prima di terminare. Tutti gli altri comandi inviati con un messaggio di [**\_ \_ esecuzione DDE di WM**](wm-dde-execute.md) devono essere eseguiti in modo sincrono, ovvero il server deve inviare un messaggio **\_ \_ ACK DDE WM** solo dopo aver completato correttamente il comando.
+Se la stringa di esecuzione dei comandi del client richiede che il server termini, il server deve rispondere inviando un messaggio [**\_ \_ ACK WM DDE**](wm-dde-ack.md) positivo e quindi pubblicare un messaggio [**WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md) prima della chiusura. Tutti gli altri comandi inviati con un messaggio [**WM \_ DDE \_ EXECUTE**](wm-dde-execute.md) devono essere eseguiti in modo sincrono, in altre parole, il server deve inviare un messaggio **WM \_ DDE \_ ACK** solo dopo aver completato correttamente il comando.
 
 ## <a name="terminating-a-conversation"></a>Terminazione di una conversazione
 
-Il client o il server può emettere un messaggio [**di \_ \_ terminazione DDE di WM**](wm-dde-terminate.md) per terminare una conversazione in qualsiasi momento. Analogamente, entrambe le applicazioni client e server devono essere preparate a ricevere questo messaggio in qualsiasi momento. Un'applicazione deve terminare tutte le conversazioni prima di arrestarsi.
+Il client o il server può inviare un [**messaggio WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md) per terminare una conversazione in qualsiasi momento. Analogamente, le applicazioni client e server devono essere preparate a ricevere questo messaggio in qualsiasi momento. Un'applicazione deve terminare tutte le conversazioni prima dell'arresto.
 
-Nell'esempio seguente, l'applicazione che termina la conversazione invia un messaggio [**di \_ \_ terminazione DDE di WM**](wm-dde-terminate.md) .
+Nell'esempio seguente l'applicazione che termina la conversazione invia un [**messaggio WM \_ DDE \_ TERMINATE.**](wm-dde-terminate.md)
 
 
 ```
@@ -790,13 +790,13 @@ PostMessage(hwndServerDDE, WM_DDE_TERMINATE,
 
 
 
-In questo modo si informa l'altra applicazione che l'applicazione mittente non invierà altri messaggi e il destinatario potrà chiudere la finestra. Il destinatario è previsto in tutti i casi per rispondere tempestivamente inviando un messaggio di [**\_ \_ terminazione del DDE WM**](wm-dde-terminate.md) . Il destinatario non deve inviare un messaggio [**\_ \_ ACK DDE di WM**](wm-dde-ack.md) negativo, occupato o positivo.
+Ciò informa l'altra applicazione che l'applicazione mittente non invierà altri messaggi e che il destinatario può chiudere la finestra. È previsto che il destinatario risponda tempestivamente inviando un messaggio [**WM \_ DDE \_ TERMINATE.**](wm-dde-terminate.md) Il destinatario non deve inviare un messaggio [**WM \_ DDE \_ ACK**](wm-dde-ack.md) negativo, occupato o positivo.
 
-Dopo che un'applicazione ha inviato il messaggio di [**\_ \_ terminazione del DDE WM**](wm-dde-terminate.md) al partner in una conversazione DDE, non deve rispondere ai messaggi provenienti da tale partner, perché il partner potrebbe avere eliminato definitivamente la finestra a cui verrebbe inviata la risposta.
+Dopo che un'applicazione ha inviato il messaggio [**WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md) al partner in una conversazione DDE, non deve rispondere ai messaggi provenienti da tale partner, perché il partner potrebbe aver eliminato la finestra a cui verrebbe inviata la risposta.
 
-Se un'applicazione riceve un messaggio DDE diverso da [**WM \_ DDE \_ Terminate**](wm-dde-terminate.md) dopo la pubblicazione **di \_ WM DDE \_ Terminate**, deve liberare tutti gli oggetti associati ai messaggi ricevuti, ad eccezione degli handle di dati per i [**\_ \_ dati DDE WM**](wm-dde-data.md) o i messaggi [**\_ \_ poke DDE di WM**](wm-dde-poke.md) per i quali **non** è impostato il membro **fRelease** .
+Se un'applicazione riceve un messaggio DDE diverso da WM DDE  TERMINATE dopo aver pubblicato **WM \_ DDE \_ TERMINATE,** deve liberare tutti gli oggetti associati ai messaggi ricevuti, ad eccezione degli handle di dati per i messaggi POKE WM [**\_ \_ DDE**](wm-dde-terminate.md) [**\_ \_ DATA**](wm-dde-data.md) o [**WM \_ DDE \_**](wm-dde-poke.md) che non hanno il set di membri **fRelease.**
 
-Quando un'applicazione sta per terminare, deve terminare tutte le conversazioni DDE attive prima di completare l'elaborazione del messaggio [**WM \_ Destroy**](/windows/desktop/winmsg/wm-destroy) . Tuttavia, se un'applicazione non termina le conversazioni DDE attive, il sistema interromperà tutte le conversazioni DDE associate a una finestra quando la finestra viene distrutta. Nell'esempio seguente viene illustrato il modo in cui un'applicazione server termina tutte le conversazioni DDE.
+Quando un'applicazione sta per terminare, deve terminare tutte le conversazioni DDE attive prima di completare l'elaborazione del [**messaggio WM \_ DESTROY.**](/windows/desktop/winmsg/wm-destroy) Tuttavia, se un'applicazione non termina le conversazioni DDE attive, il sistema terminerà tutte le conversazioni DDE associate a una finestra quando la finestra viene distrutta. L'esempio seguente illustra come un'applicazione server termina tutte le conversazioni DDE.
 
 
 ```
@@ -833,6 +833,6 @@ VOID SendTerminate(HWND hwndServerDDE, HWND hwndClientDDE)
 
 
 
- 
+ 
 
- 
+ 

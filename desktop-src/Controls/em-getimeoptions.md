@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETIMEOPTIONS (RichEdit. h)
+title: EM_GETIMEOPTIONS messaggio (Richedit.h)
 description: Recupera le opzioni IME (Input Method Editor) correnti.
 ms.assetid: 81ec89b9-dabd-487e-805e-e3c2e58e3068
 keywords:
-- Controlli di Windows Message EM_GETIMEOPTIONS
+- EM_GETIMEOPTIONS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bd805f2407fbe9e055df3d9174f106d33991aca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aea4513189014969dbfdf69a0ad257cbfde6a4ff99c2499f478c4865100a23c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049061"
 ---
-# <a name="em_getimeoptions-message"></a>\_Messaggio GETIMEOPTIONS em
+# <a name="em_getimeoptions-message"></a>Messaggio \_ EM GETIMEOPTIONS
 
 Recupera le opzioni IME (Input Method Editor) correnti.
 
 > [!Note]  
-> Questo messaggio è supportato solo nelle versioni in lingua asiatica di Microsoft Rich Edit 1,0. Non è supportata nelle versioni successive di Rich Edit.
+> Questo messaggio è supportato solo nelle versioni in lingua asia di Microsoft Rich Edit 1.0. Non è supportato nelle versioni successive di Rich Edit.
 
  
 
@@ -37,20 +37,20 @@ Recupera le opzioni IME (Input Method Editor) correnti.
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio restituisce uno o più valori del flag di opzione IME descritti nel messaggio [**\_ SETIMEOPTIONS em**](em-setimeoptions.md) .
+Questo messaggio restituisce uno o più valori del flag di opzione IME descritti nel [**messaggio EM \_ SETIMEOPTIONS.**](em-setimeoptions.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,9 +58,9 @@ Questo messaggio restituisce uno o più valori del flag di opzione IME descritti
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Questo messaggio restituisce uno o più valori del flag di opzione IME descritti
 
 <dl> <dt>
 
-[**\_SETIMEOPTIONS em**](em-setimeoptions.md)
+[**EM \_ SETIMEOPTIONS**](em-setimeoptions.md)
 </dt> </dl>
 
  

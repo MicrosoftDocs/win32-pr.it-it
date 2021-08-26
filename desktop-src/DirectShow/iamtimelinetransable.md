@@ -1,7 +1,7 @@
 ---
-description: L'interfaccia IAMTimelineTransable aggiunge transizioni a un oggetto in DirectShow editing Services (DES).
+description: L'interfaccia IAMTimelineTransable aggiunge transizioni a un oggetto in DirectShow Editing Services (DES).
 ms.assetid: 1be9adaa-4145-447c-b307-dabb4419c86c
-title: Interfaccia IAMTimelineTransable (qedit. h)
+title: Interfaccia IAMTimelineTransable (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,47 +14,47 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d083b768e8dcf54236945755f4b26ecf13409b40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6228b836f85251dda7f43d6c3b421d486b727c6bdc6c319b9cf7ca1e37d34a91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052031"
 ---
 # <a name="iamtimelinetransable-interface"></a>Interfaccia IAMTimelineTransable
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `IAMTimelineTransable` interfaccia aggiunge transizioni a un oggetto in [DirectShow editing Services](directshow-editing-services.md) (des). Questa interfaccia è esposta da qualsiasi oggetto a cui possono essere applicate transizioni, tra cui tracce, composizioni e gruppi. Un oggetto che implementa questa interfaccia può avere un numero qualsiasi di transizioni, ma le transizioni non devono sovrapporsi nel tempo.
+`IAMTimelineTransable`L'interfaccia aggiunge transizioni a un oggetto in [DirectShow Editing Services](directshow-editing-services.md) (DES). Questa interfaccia viene esposta da qualsiasi oggetto a cui possono essere applicate transizioni, tra cui tracce, composizione e gruppi. Un oggetto che implementa questa interfaccia può avere un numero qualsiasi di transizioni, ma le transizioni non devono sovrapporsi nel tempo.
 
 > [!Note]  
-> L'audio non supporta le transizioni. Gli oggetti all'interno di gruppi audio possono esporre l' `IAMTimelineTransable` interfaccia, ma l'applicazione non deve aggiungere transizioni.
+> L'audio non supporta le transizioni. Gli oggetti all'interno di gruppi audio possono esporre l'interfaccia , ma l'applicazione non deve `IAMTimelineTransable` aggiungervi transizioni.
 
  
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IAMTimelineTransable** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IAMTimelineTransable** dispone anche di questi tipi di membri:
+**L'interfaccia IAMTimelineTransable** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineTransable** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IAMTimelineTransable** dispone di questi metodi.
+**L'interfaccia IAMTimelineTransable** include questi metodi.
 
 
 
 | Metodo                                                          | Descrizione                                                                                                                        |
 |:----------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| [**GetNextTrans**](iamtimelinetransable-getnexttrans.md)       | Recupera la prima transizione visualizzata all'ora specificata o successiva.<br/>                                             |
-| [**GetNextTrans2**](iamtimelinetransable-getnexttrans2.md)     | Recupera la prima transizione visualizzata all'ora specificata o in una versione successiva, con l'ora specificata come valore **REFTIME** .<br/> |
+| [**GetNextTrans**](iamtimelinetransable-getnexttrans.md)       | Recupera la prima transizione visualizzata all'ora specificata o in un secondo momento.<br/>                                             |
+| [**GetNextTrans2**](iamtimelinetransable-getnexttrans2.md)     | Recupera la prima transizione visualizzata all'ora specificata o successiva, con l'ora specificata come **valore REFTIME.**<br/> |
 | [**GetTransAtTime**](iamtimelinetransable-gettransattime.md)   | Recupera la transizione più vicina all'ora specificata.<br/>                                                                 |
-| [**GetTransAtTime2**](iamtimelinetransable-gettransattime2.md) | Recupera la transizione più vicina all'ora specificata, specificata come valore **REFTIME** .<br/>                                   |
-| [**TransAdd**](iamtimelinetransable-transadd.md)               | Aggiunge una transizione all'oggetto.<br/>                                                                                        |
-| [**TransGetCount**](iamtimelinetransable-transgetcount.md)     | Recupera il numero di transizioni in questo oggetto.<br/>                                                                     |
+| [**GetTransAtTime2**](iamtimelinetransable-gettransattime2.md) | Recupera la transizione più vicina all'ora specificata, specificata come **valore REFTIME.**<br/>                                   |
+| [**TransAdd**](iamtimelinetransable-transadd.md)               | Aggiunge una transizione all'oggetto .<br/>                                                                                        |
+| [**TransGetCount**](iamtimelinetransable-transgetcount.md)     | Recupera il numero di transizioni su questo oggetto .<br/>                                                                     |
 
 
 
@@ -63,12 +63,12 @@ L'interfaccia **IAMTimelineTransable** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ L'interfaccia **IAMTimelineTransable** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

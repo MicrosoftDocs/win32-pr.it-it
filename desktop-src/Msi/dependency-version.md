@@ -1,7 +1,7 @@
 ---
-description: La proprietà di sola lettura della versione restituisce la versione del modulo richiesta dall'unione corrente.
+description: La proprietà Version di sola lettura restituisce la versione del modulo richiesta dal merge corrente.
 ms.assetid: 784fb75c-2ed2-411a-b441-9c81297b487d
-title: Proprietà Dependency. Version (Mergemod. h)
+title: Proprietà Dependency.Version (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: aa3f95d73bdd6bda0c0f9a71fd3f4d9292e8c5fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0de11edff94fb41e98696e1e2b16cc397f3bf05b599ad0740fb07de2c72cac37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074981"
 ---
-# <a name="dependencyversion-property"></a>Dipendenza. Version (proprietà)
+# <a name="dependencyversion-property"></a>Dependency.Version - proprietà
 
-La proprietà di sola lettura della **versione** restituisce la versione del modulo richiesta dall'unione corrente.
+La proprietà **Version** di sola lettura restituisce la versione del modulo richiesta dal merge corrente.
 
 Questa proprietà è di sola lettura.
 
@@ -40,7 +40,7 @@ propVal = Dependency.Version
 
 ## <a name="c"></a>C++
 
-Vedere [**ottenere \_**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_version) la funzione Version.
+Vedere [**la funzione get \_ Version.**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_version)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ Vedere [**ottenere \_**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

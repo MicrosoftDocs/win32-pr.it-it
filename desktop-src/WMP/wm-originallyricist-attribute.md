@@ -1,6 +1,6 @@
 ---
 title: Attributo WM/OriginalLyricist
-description: L'attributo WM/Lyricist è il nome della persona che ha scritto il testo originale.
+description: L'attributo WM/Lyricist è il nome della persona che ha scritto i testi originali.
 ms.assetid: 8b8d8f7d-fb1a-4f29-b015-c6d0fff4fb81
 keywords:
 - Attributo WM/OriginalLyricist Windows Media Player
@@ -29,9 +29,9 @@ ms.locfileid: "120000921"
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo in un file musicale non presente nella libreria.
+Questo attributo viene archiviato solo in un file musicale che non si trova nella libreria.
 
-La Windows Media Format SDK per questo attributo è g \_ wszWMOriginalLyricist.
+La Windows media format SDK per questo attributo è g \_ wszWMOriginalLyricist.
 
 Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento all'attributo**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

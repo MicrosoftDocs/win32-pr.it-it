@@ -1,8 +1,8 @@
 ---
-description: L' \_ associazione CIM ChassisInRack rappresenta il &\# 0034, che contiene \# 0034&relazione tra un rack e uno chassis che contiene.
+description: L'associazione CIM ChassisInRack rappresenta la relazione \_ &\# 0034;che contiene&0034; tra un rack e uno chassis in esso \# contenuto.
 ms.assetid: 1c8a5058-58fe-42e0-b337-7e1a05120789
 ms.tgt_platform: multiple
-title: Classe CIM_ChassisInRack
+title: CIM_ChassisInRack classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,23 +18,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fd582991df30bc36cd71c4c3fa08d9a5a5153819
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 765b5e36fcb5f2cfe400d9dec9ba86d37cd29af8c756ae8416f7aece803f9052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065211"
 ---
-# <a name="cim_chassisinrack-class"></a>CIM \_ ChassisInRack (classe)
+# <a name="cim_chassisinrack-class"></a>Classe CIM \_ ChassisInRack
 
-L'associazione **CIM \_ ChassisInRack** rappresenta la relazione "containing" tra un rack e uno chassis che contiene.
+**L'associazione CIM \_ ChassisInRack** rappresenta la relazione "contenitore" tra un rack e uno chassis in esso contenuto.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,67 +51,67 @@ class CIM_ChassisInRack : CIM_Container
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ChassisInRack** presenta questi tipi di membri:
+La **classe CIM \_ ChassisInRack** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ChassisInRack** dispone di queste proprietà.
+La **classe CIM \_ ChassisInRack** ha queste proprietà.
 
 <dl> <dt>
 
-**In basso**
+**BottomU**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("US")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Us")
 </dt> </dl>
 
-Integer che indica la "U" più bassa o inferiore in cui è montato lo chassis. Un "U" è un'unità di misura standard per l'altezza di un rack o un componente montabile su rack ed è uguale a 1,75 centimetri o 4,445 centimetri.
+Numero intero che indica la "U" più bassa o inferiore in cui è montato lo chassis. Una "U" è un'unità di misura standard per l'altezza di un rack o un componente montabile su rack ed è uguale a 1,75 pollici o 4,445 centimetri.
 
 </dd> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ rack CIM**
+Tipo di dati: **RACK CIM \_**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Un [**\_ rack CIM**](cim-rack.md) che descrive il rack che contiene lo chassis.
+Rack [**CIM \_ che**](cim-rack.md) descrive il rack che contiene lo chassis.
 
 </dd> <dt>
 
 **LocationWithinContainer**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa in formato libero che rappresenta il posizionamento dell'elemento fisico all'interno del pacchetto fisico. Le informazioni relative agli elementi stazionari del contenitore (ad esempio, "seconda Bay Drive dalla parte superiore"), angoli, altezze e altri dati possono essere registrate in questa proprietà. Questa stringa può essere aggiunta o utilizzata al posto della creazione di un'istanza dell'oggetto [**\_ percorso CIM**](cim-location.md) .
+Stringa in formato libero che rappresenta il posizionamento dell'elemento fisico all'interno del pacchetto fisico. In questa proprietà è possibile registrare informazioni relative a elementi stazionari nel contenitore ,ad esempio "second drive bay from the top", angolazioni, altitudini e altri dati. Questa stringa può integrare o usare al posto della creazione di un'istanza [**dell'oggetto \_ Location CIM.**](cim-location.md)
 
-Questa proprietà viene ereditata [**dal \_ contenitore CIM**](cim-container.md).
+Questa proprietà viene ereditata dal [**contenitore CIM. \_**](cim-container.md)
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ chassis CIM**
+Tipo di dati: **\_ Chassis CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -120,17 +120,17 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-[**\_ Chassis CIM**](cim-chassis.md) che descrive lo chassis montato nel rack.
+Chassis [**CIM \_**](cim-chassis.md) che descrive lo chassis montato nel rack.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ ChassisInRack** è derivata dal [**\_ contenitore CIM**](cim-container.md).
+La **classe CIM \_ ChassisInRack** è derivata dal [**contenitore CIM \_**](cim-container.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -141,7 +141,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -150,7 +150,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Contenitore CIM**](cim-container.md)
+[**Contenitore \_ CIM**](cim-container.md)
 </dt> </dl>
 
  

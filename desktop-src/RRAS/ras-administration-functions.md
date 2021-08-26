@@ -1,19 +1,19 @@
 ---
 title: Funzioni di amministrazione RAS
-description: In questa documentazione vengono descritte le funzioni RRAS utilizzate per sviluppare software per amministrare le connessioni remote RAS.
+description: Questa documentazione descrive le funzioni di RRAS usate per sviluppare software per amministrare connessioni remote RAS.
 ms.assetid: 27cf63e2-9dd3-4bc1-98af-e93055d89492
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec0a18f6c49964d89c308b065289dd4de9fc22c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ec2013305f1e37cdc90a1e331c93813520ff20aaafc6b32ffd2471f1f2cb7074
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036281"
 ---
 # <a name="ras-administration-functions"></a>Funzioni di amministrazione RAS
 
-In questa documentazione vengono descritte le funzioni RRAS utilizzate per sviluppare software per amministrare le connessioni remote RAS. Queste funzioni includono:
+Questa documentazione descrive le funzioni di RRAS usate per sviluppare software per amministrare connessioni remote RAS. Queste funzioni includono:
 
 -   [**MprAdminConnectionClearStats**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminconnectionclearstats)
 -   [**MprAdminConnectionEnum**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminconnectionenum)
@@ -27,7 +27,7 @@ In questa documentazione vengono descritte le funzioni RRAS utilizzate per svilu
 -   [**MprAdminPortGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportgetinfo)
 -   [**MprAdminPortReset**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportreset)
 
-Funzioni aggiuntive vengono usate per l'amministrazione RAS e il router. Le funzioni seguenti sono documentate nelle informazioni di riferimento sulle [funzioni di amministrazione del router](router-administration-functions.md) :
+Le funzioni aggiuntive vengono usate sia per l'amministrazione RAS che per l'amministrazione del router. Le funzioni seguenti sono documentate nelle informazioni [di riferimento su Router Administration Functions:](router-administration-functions.md)
 
 -   [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree)
 -   [**MprAdminGetErrorString**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmingeterrorstring)
@@ -35,17 +35,17 @@ Funzioni aggiuntive vengono usate per l'amministrazione RAS e il router. Le funz
 -   [**MprAdminServerConnect**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminserverconnect)
 -   [**MprAdminServerDisconnect**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminserverdisconnect)
 
-Per implementare una DLL di amministrazione RAS, utilizzare le funzioni descritte nell'argomento seguente:
+Per implementare una DLL di amministrazione RAS, usare le funzioni descritte nell'argomento seguente:
 
--   [Funzioni DLL amministratore RAS](ras-admin-dll-functions.md)
+-   [Funzioni DLL di amministrazione RAS](ras-admin-dll-functions.md)
 
-Per gestire gli utenti di un server RAS, utilizzare le funzioni descritte nell'argomento seguente:
+Per gestire gli utenti di un server RAS, usare le funzioni descritte nell'argomento seguente:
 
--   [Funzioni di amministrazione utenti RAS](ras-user-administration-functions.md)
+-   [Funzioni di amministrazione utente RAS](ras-user-administration-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

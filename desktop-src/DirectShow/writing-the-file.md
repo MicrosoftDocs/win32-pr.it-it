@@ -4,25 +4,25 @@ ms.assetid: d3dbe6ab-810c-4798-a769-c3f00c52a93a
 title: Scrittura del file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bda23b144956ab5afca9dd733b29a6f9d639cddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cabb5575f371c6525e58cc8ede7d05c2701acc31be325af46e3b00e6e2d8d20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051400"
 ---
 # <a name="writing-the-file"></a>Scrittura del file
 
-Per scrivere il file, è sufficiente eseguire il grafico del filtro chiamando il metodo [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run) . Attendere il completamento della riproduzione e arrestare in modo esplicito il grafo chiamando [**IMediaControl:: Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop); in caso contrario, il file non viene scritto correttamente.
+Per scrivere il file, è sufficiente eseguire il grafico dei filtri chiamando il [**metodo IMediaControl::Run.**](/windows/desktop/api/Control/nf-control-imediacontrol-run) Attendere il completamento della riproduzione e arrestare in modo esplicito il grafo chiamando [**IMediaControl::Stop**](/windows/desktop/api/Control/nf-control-imediacontrol-stop); in caso contrario, il file non viene scritto correttamente.
 
-Per visualizzare lo stato di avanzamento dell'operazione di scrittura di file, eseguire una query sul filtro MUX per l'interfaccia [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) . Chiamare il metodo [**IMediaSeeking:: GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) per recuperare la durata del file. Periodicamente durante l'esecuzione del grafo, chiamare il metodo [**IMediaSeeking:: getCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) per recuperare la posizione corrente del grafico nel flusso. La posizione corrente divisa per durata consente di completare la percentuale.
+Per visualizzare lo stato dell'operazione di scrittura di file, eseguire una query sul filtro Mux per [**l'interfaccia IMediaSeeking.**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) Chiamare il [**metodo IMediaSeeking::GetDuration**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getduration) per recuperare la durata del file. Periodicamente mentre il grafo è in esecuzione, chiamare il metodo [**IMediaSeeking::GetCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) per recuperare la posizione corrente del grafo nel flusso. La posizione corrente divisa per durata indica la percentuale di completamento.
 
 > [!Note]  
-> Un'applicazione in genere esegue una query su Filter Graph Manager per **IMediaSeeking**, ma la scrittura di file è un'eccezione a questa regola. Filter Graph Manager calcola la posizione corrente dalla posizione iniziale e la durata dell'esecuzione del grafo, che risulta accurata per la riproduzione di file ma non per la scrittura di file. Pertanto, per ottenere un risultato accurato, è necessario recuperare la posizione dal filtro MUX.
+> Un'applicazione esegue in genere una query su Filter Graph Manager per **IMediaSeeking,** ma la scrittura di file è un'eccezione a questa regola. Filter Graph Manager calcola la posizione corrente dalla posizione iniziale e la durata dell'esecuzione del grafo, che è accurata per la riproduzione di file ma non per la scrittura di file. Pertanto, per ottenere un risultato accurato, è necessario recuperare la posizione dal filtro MUX.
 
  
 
-Il codice seguente ottiene la durata del file, avvia un timer per aggiornare l'interfaccia utente dell'applicazione ed esegue il grafico del filtro. Per maggiore chiarezza, viene omesso il controllo degli errori.
+Il codice seguente ottiene la durata del file, avvia un timer per aggiornare l'interfaccia utente dell'applicazione ed esegue il grafico dei filtri. Il controllo degli errori viene omesso per maggiore chiarezza.
 
 
 ```C++
@@ -70,7 +70,7 @@ void OnTimer(HWND hDlg, IMediaSeeking *pSeek)
 
 
 
-Quando l'applicazione riceve un evento di completamento DirectShow, deve arrestare il grafo, come illustrato nel codice seguente:
+Quando l'applicazione riceve un DirectShow di completamento, deve arrestare il grafo, come illustrato nel codice seguente:
 
 
 ```C++

@@ -114,7 +114,7 @@
           href: sdbwritestringtag.md
         - name: SdbWriteWORDTag
           href: sdbwritewordtag.md
-        - name: Tipi di database shim
+        - name: Tipi di database Shim
           href: shim-database-types.md
         - name: ShimFlushCache
           href: shimflushcache.md
@@ -507,7 +507,7 @@
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhscopeiterator-getitem
             - name: Metodo MoveToNextItem
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhscopeiterator-movetonextitem
-        - name: IFhTarget
+        - name: Destinazione IFh
           href: /windows/desktop/api/Fhcfg/nn-fhcfg-ifhtarget
           items:
             - name: Metodo GetNumericalProperty
@@ -620,11 +620,11 @@
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddcreatedibsection
         - name: DdCreateDirectDrawObject
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddcreatedirectdrawobject
-        - name: DdCreateSurfaceObject
+        - name: Oggetto DdCreateSurfaceObject
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddcreatesurfaceobject
         - name: DdDeleteDirectDrawObject
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-dddeletedirectdrawobject
-        - name: DdDeleteSurfaceObject
+        - name: Oggetto DdDeleteSurfaceObject
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-dddeletesurfaceobject
         - name: DdGetDC
           href: /windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddgetdc
@@ -851,7 +851,7 @@
           items:
             - name: HWND - proprietà
               href: /previous-versions//mt725310(v=vs.85)
-            - name: Proprietà TheaterMode
+            - name: ProprietàSizeMode
               href: /windows/desktop/api/Exdisp/nf-exdisp-iwebbrowser2-get_theatermode
             - name: ToolBar - proprietà
               href: /previous-versions//mt725312(v=vs.85)
@@ -930,7 +930,7 @@
           href: notifybrowsershutdown.md
         - name: ShowJavaConsole
           href: showjavaconsole.md
-    - name: Debug di Jet
+    - name: Debug jet
       href: jet-debugging.md
       items:
         - name: CchLszOfId2
@@ -953,7 +953,7 @@
     - name: MSN
       href: msn.md
       items:
-        - name: Determinare se MSN è nello stato di accesso
+        - name: Determinazione dello stato di accesso di MSN
           href: determining-if-msn-is-in-the-signin-state.md
     - name: MSXML 1.0 (obsoleto)
       href: msxml-1-0.md
@@ -963,7 +963,7 @@
           items:
             - name: Metodo item
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-item
-            - name: metodo get_length
+            - name: get_length metodo
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-get_length
     - name: Rete
       href: networking.md
@@ -1123,7 +1123,7 @@
               href: ienumpstoretypes-reset.md
             - name: Metodo Skip
               href: ienumpstoretypes-skip.md
-        - name: Archivio IP
+        - name: IPStore
           href: ipstore.md
           items:
             - name: Metodo CloseItem
@@ -1192,9 +1192,9 @@
       items:
         - name: AddHijriDate
           href: addhijridate.md
-        - name: CeipEnable
+        - name: Analisi utilizzo softwareAbilita
           href: ceipenable.md
-        - name: ConnectTo
+        - name: Connetti a
           href: connectto.md
         - name: Exec
           href: exec.md
@@ -1213,9 +1213,9 @@
         - name: Componenti aggiuntivi IPassportManager3
           href: ipassportmanager3-add-ons.md
           items:
-            - name: metodo get_Option
+            - name: Get_Option metodo
               href: ipassportmanager3-get-option.md
-            - name: metodo put_Option
+            - name: put_Option metodo
               href: ipassportmanager3-put-option.md
         - name: Ntsecpkg
           href: ntsecpkg.md
@@ -1232,7 +1232,7 @@
         - name: Sicurezza di Windows Centro
           href: windows-security-center.md
           items:
-            - name: Sicurezza di Windows Enumerazioni del centro
+            - name: Sicurezza di Windows Enumerazioni al centro
               href: windows-security-center-enumerations.md
               items:
                 - name: WSC_SECURITY_PRODUCT_STATE
@@ -1268,7 +1268,7 @@
                       href: /windows/desktop/api/Iwscapi/nf-iwscapi-iwscproductlist-initialize
                     - name: Item (metodo)
                       href: /windows/desktop/api/Iwscapi/nf-iwscapi-iwscproductlist-get_item
-            - name: Sicurezza di Windows Funzioni del centro
+            - name: Sicurezza di Windows Funzioni di centro
               href: windows-security-center-functions.md
               items:
                 - name: WscGetSecurityProviderHealth

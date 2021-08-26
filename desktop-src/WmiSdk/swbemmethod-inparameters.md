@@ -2,7 +2,7 @@
 description: La proprietà InParameters dell'oggetto SWbemMethod è un oggetto SWbemObject le cui proprietà definiscono i parametri di input per questo metodo.
 ms.assetid: fba1bb97-29f9-41d3-8ecc-f283989118c1
 ms.tgt_platform: multiple
-title: Proprietà SWbemMethod. InParameters (wbemdisp. h)
+title: Proprietà SWbemMethod.InParameters (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: c8df897f876673f6b4afe875e718401ae4c217e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa6407ab3da424852b7896f5e4a60490efea140da6e45287991b0d9e96dd9cbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955161"
 ---
-# <a name="swbemmethodinparameters-property"></a>SWbemMethod. InParameters (proprietà)
+# <a name="swbemmethodinparameters-property"></a>SWbemMethod.InParameters - proprietà
 
-La proprietà **InParameters** dell'oggetto [**SWbemMethod**](swbemmethod.md) è un oggetto [**SWbemObject**](swbemobject.md) le cui proprietà definiscono i parametri di input per questo metodo. Questa proprietà è di sola lettura. Si noti che tutte le modifiche apportate a questo oggetto non vengono riflesse nella definizione del metodo sottostante.
+La **proprietà InParameters** dell'oggetto [**SWbemMethod**](swbemmethod.md) è un [**oggetto SWbemObject**](swbemobject.md) le cui proprietà definiscono i parametri di input per questo metodo. Questa proprietà è di sola lettura. Si noti che tutte le modifiche apportate a questo oggetto non vengono riflesse nella definizione del metodo sottostante.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,7 +44,7 @@ SWbemMethod.InParameters As Object
 
 ## <a name="remarks"></a>Commenti
 
-Per altre informazioni, vedere [creazione di oggetti InParameters e analisi di oggetti OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Per altre informazioni, vedere [Costruzione di oggetti InParameters e Analisi di oggetti OutParameters.](constructing-inparameters-objects-and-parsing-outparameters-objects.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,11 +54,11 @@ Per altre informazioni, vedere [creazione di oggetti InParameters e analisi di o
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMMETHOD CLSID<br/>                                                           |
-| IID<br/>                      | \_ISWBEMMETHOD IID<br/>                                                            |
+| CLSID<br/>                    | CLSID \_ SWbemMethod<br/>                                                           |
+| IID<br/>                      | IID \_ ISWbemMethod<br/>                                                            |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica LVN_INSERTITEM (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che è stato inserito un nuovo elemento. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: LVN_INSERTITEM codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che è stato inserito un nuovo elemento. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 8d368fb2-e4fc-4dc4-a89e-872ba1278b75
 keywords:
-- Controlli di Windows per il codice di notifica LVN_INSERTITEM
+- LVN_INSERTITEM del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba70ba806dea2725385badee4b5c57e927a9d42b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee1c706c7329e192559cb307962e293f0bbf02109c81fcde177eb36d8d39e37e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062151"
 ---
-# <a name="lvn_insertitem-notification-code"></a>Codice di notifica di LVN \_ INSERTITEM
+# <a name="lvn_insertitem-notification-code"></a>Codice di notifica INSERTITEM LVN \_
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che è stato inserito un nuovo elemento. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che è stato inserito un nuovo elemento. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_INSERTITEM
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) . Il membro **iItem** identifica il nuovo elemento e gli altri membri sono pari a zero.
+Puntatore a [**una struttura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmlistview) Il **membro iItem** identifica il nuovo elemento e gli altri membri sono zero.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

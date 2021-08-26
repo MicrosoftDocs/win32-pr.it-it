@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9091cdbd7620baf6ec5dc893bd2100b2f04585ec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29508121a9724a52df19038b82d97576a924c3c8bab49ac6801c1de51ec71919
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067301"
 ---
 # <a name="vendorid-eapmethodtype-element"></a>Elemento VendorId (EapMethodType)
 
-L'elemento **VendorID (EapMethodType)** fa riferimento al fornitore che ha definito il metodo se l'elemento [**Type (EapMethodType)**](eapcommonschema-type-eapmethodtype-element.md) è 254 (un metodo EAP espanso).
+**L'elemento VendorId (EapMethodType)** fa riferimento al fornitore che ha definito il metodo se l'elemento [**Type (EapMethodType)**](eapcommonschema-type-eapmethodtype-element.md) è 254 (un metodo EAP espanso).
 
-**VendorID** è facoltativo. Se usato, **VendorID** è un numero univoco emesso da IANA (Internet Assigned Numbers Authority).
+**VendorId è** facoltativo. Se usato, **VendorId è** un numero univoco emesso da Internet Assigned Numbers Authority (IANA).
 
 ``` syntax
 <xs:element name="VendorId"
@@ -33,11 +33,11 @@ L'elemento **VendorID (EapMethodType)** fa riferimento al fornitore che ha defin
  />
 ```
 
-L'elemento **VendorID** è definito dal tipo complesso [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) .
+**L'elemento VendorId** è definito dal tipo complesso [**EapMethodType.**](eapcommonschema-eapmethodtype-complextype.md)
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi [**autorizzazioned**](eapcommonschema-authorid-eapmethodtype-element.md) e **VendorID** non devono essere uguali per un metodo specifico.
+Gli [**elementi AuthorId**](eapcommonschema-authorid-eapmethodtype-element.md) **e VendorId** non devono essere uguali per un metodo specifico.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,8 +45,8 @@ Gli elementi [**autorizzazioned**](eapcommonschema-authorid-eapmethodtype-elemen
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

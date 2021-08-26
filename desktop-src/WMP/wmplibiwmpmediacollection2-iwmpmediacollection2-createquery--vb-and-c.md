@@ -5,7 +5,7 @@ ms.assetid: a12da325-e77e-4e44-93d1-5e9c5733ea44
 keywords:
 - Metodo createQuery Windows Media Player
 - Metodo createQuery Windows Media Player, interfaccia IWMPMediaCollection2
-- Interfaccia IWMPMediaCollection2 Windows Media Player , metodo createQuery
+- Interfaccia IWMPMediaCollection2 Windows Media Player metodo createQuery
 topic_type:
 - apiref
 api_name:

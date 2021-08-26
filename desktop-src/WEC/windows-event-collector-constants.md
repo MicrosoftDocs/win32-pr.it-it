@@ -1,6 +1,6 @@
 ---
-title: Costanti dell'agente di raccolta eventi Windows (Evcoll. h)
-description: Windows Event Collector SDK contiene le costanti seguenti.
+title: Windows Costanti dell'agente di raccolta eventi (Evcoll.h)
+description: Il Windows Event Collector SDK contiene le costanti seguenti.
 ms.assetid: 2ba862f9-6849-43b3-8914-e18ede1d63c0
 ms.tgt_platform: multiple
 topic_type:
@@ -19,33 +19,33 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf6e7e99186e2148bf6ec3400aadf760a79a2331
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d168ecb16c293c524c4dffcb16aee7db2924e23219e42d402939ab26b4bbecf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005981"
 ---
-# <a name="windows-event-collector-constants"></a>Costanti dell'agente di raccolta eventi Windows
+# <a name="windows-event-collector-constants"></a>Windows Costanti dell'agente di raccolta eventi
 
-Windows Event Collector SDK contiene le costanti seguenti.
+Il Windows Event Collector SDK contiene le costanti seguenti.
 
 <dl> <dt>
 
-<span id="EC_VARIANT_TYPE_MASK"></span><span id="ec_variant_type_mask"></span>**\_maschera di \_ tipo \_ variante EC**
+<span id="EC_VARIANT_TYPE_MASK"></span><span id="ec_variant_type_mask"></span>**EC \_ VARIANT \_ TYPE \_ MASK**
 </dt> <dd> <dl> <dt>
 
-0x7F
+0x7f
 </dt> <dt>
 
 
 
-Utilizzato per mascherare il bit della matrice dalla proprietà **Type** di una [**\_ variante EC**](/windows/desktop/api/Evcoll/ns-evcoll-ec_variant) per estrarre il tipo del valore Variant.
+Usato per mascherare il bit di matrice dalla **proprietà Type** di un elemento [**EC \_ VARIANT**](/windows/desktop/api/Evcoll/ns-evcoll-ec_variant) per estrarre il tipo del valore variant.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_VARIANT_TYPE_ARRAY"></span><span id="ec_variant_type_array"></span>**\_matrice di \_ tipi \_ Variant EC**
+<span id="EC_VARIANT_TYPE_ARRAY"></span><span id="ec_variant_type_array"></span>**EC \_ VARIANT \_ TYPE \_ ARRAY**
 </dt> <dd> <dl> <dt>
 
 128 (0x80)
@@ -53,12 +53,12 @@ Utilizzato per mascherare il bit della matrice dalla proprietà **Type** di una 
 
 
 
-Quando questo bit viene impostato nella proprietà **Type** di una [**\_ variante EC**](/windows/desktop/api/Evcoll/ns-evcoll-ec_variant), la variante contiene un puntatore a una matrice di valori, anziché il valore stesso.
+Quando questo bit è impostato nella proprietà **Type** di [**un'istruzione EC \_ VARIANT,**](/windows/desktop/api/Evcoll/ns-evcoll-ec_variant)la variante contiene un puntatore a una matrice di valori, anziché il valore stesso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_READ_ACCESS"></span><span id="ec_read_access"></span>**\_accesso in lettura EC \_**
+<span id="EC_READ_ACCESS"></span><span id="ec_read_access"></span>**EC \_ READ \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 1
@@ -66,12 +66,12 @@ Quando questo bit viene impostato nella proprietà **Type** di una [**\_ variant
 
 
 
-Autorizzazione di controllo di accesso in lettura che consente di leggere le informazioni dall'agente di raccolta eventi.
+Autorizzazione di controllo di accesso in lettura che consente la lettura delle informazioni dall'agente di raccolta eventi.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_WRITE_ACCESS"></span><span id="ec_write_access"></span>**\_accesso in scrittura EC \_**
+<span id="EC_WRITE_ACCESS"></span><span id="ec_write_access"></span>**EC \_ WRITE \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 2
@@ -79,12 +79,12 @@ Autorizzazione di controllo di accesso in lettura che consente di leggere le inf
 
 
 
-Autorizzazione di controllo di accesso in scrittura che consente la scrittura di informazioni nell'agente di raccolta eventi.
+Autorizzazione di controllo di accesso in scrittura che consente di scrivere informazioni nell'agente di raccolta eventi.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_OPEN_ALWAYS"></span><span id="ec_open_always"></span>**EC \_ aperto \_ sempre**
+<span id="EC_OPEN_ALWAYS"></span><span id="ec_open_always"></span>**EC \_ OPEN \_ ALWAYS**
 </dt> <dd> <dl> <dt>
 
 0
@@ -92,12 +92,12 @@ Autorizzazione di controllo di accesso in scrittura che consente la scrittura di
 
 
 
-Apre una sottoscrizione esistente o crea la sottoscrizione, se non esiste. Utilizzato dal metodo [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) .
+Apre una sottoscrizione esistente o crea la sottoscrizione se non esiste. Usato dal [**metodo EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_CREATE_NEW"></span><span id="ec_create_new"></span>**EC \_ Crea \_ nuovo**
+<span id="EC_CREATE_NEW"></span><span id="ec_create_new"></span>**EC \_ CREATE \_ NEW**
 </dt> <dd> <dl> <dt>
 
 1
@@ -110,7 +110,7 @@ Flag passato alla funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/
 
 </dt> </dl> </dd> <dt>
 
-<span id="EC_OPEN_EXISTING"></span><span id="ec_open_existing"></span>**EC \_ aperto \_ esistente**
+<span id="EC_OPEN_EXISTING"></span><span id="ec_open_existing"></span>**EC \_ OPEN \_ EXISTING**
 </dt> <dd> <dl> <dt>
 
 2
@@ -131,7 +131,7 @@ Flag passato alla funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                            |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Evcoll. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Evcoll.h</dt> </dl> |
 
 
 

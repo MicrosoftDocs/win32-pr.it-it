@@ -1,23 +1,23 @@
 ---
-title: Metodo Load-CPapFile
-description: Quando queste operazioni hanno esito positivo, viene rilasciata l'interfaccia IStorage ottenuta. Questa operazione chiude il file e indica che il file non viene mantenuto aperto durante le altre operazioni client. Verrà riaperto quando richiesto.
+title: Metodo Load - CPapFile
+description: Quando queste operazioni hanno esito positivo, viene rilasciata l'interfaccia IStorage ottenuta. In questo modo il file viene chiuso e viene indicato che il file non viene mantenuto aperto durante altre operazioni client. Verrà riaperto quando necessario.
 ms.assetid: 40f79adb-87f3-4b0e-9cfe-927a4bc9ada5
 keywords:
-- Metodo Load-CPapFile
+- Metodo Load - CPapFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fe70be7241fe1e1eaeb779317e11a76fb479f76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 49eac23bcb79738a30b18eb87a4d8ef4598aba89de0748c58b433df28d614886
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103857005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034891"
 ---
-# <a name="load-method---cpapfile"></a>Metodo Load-CPapFile
+# <a name="load-method---cpapfile"></a>Metodo Load - CPapFile
 
-Quando queste operazioni hanno esito positivo, viene rilasciata l'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) ottenuta. Questa operazione chiude il file e indica che il file non viene mantenuto aperto durante le altre operazioni client. Verrà riaperto quando richiesto.
+Quando queste operazioni hanno esito positivo, viene rilasciata [**l'interfaccia IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) ottenuta. In questo modo il file viene chiuso e viene indicato che il file non viene mantenuto aperto durante altre operazioni client. Verrà riaperto quando necessario.
 
-Questo esempio è il metodo  **Load** di **CPapFile** da Papfile. cpp.
+Questo esempio è il **metodo CPapFile** **Load** di Papfile.cpp.
 
 
 ```C++
@@ -83,29 +83,29 @@ HRESULT CPapFile::Load(
 
 ### <a name="remarks"></a>Commenti
 
-Come nel caso del metodo [**Save**](save-method---cpapfile.md) , se viene passato **null** per il parametro *pszFileName* , per il nome file viene usato il contenuto archiviato del membro **m \_ szCurFileName** . Poiché è possibile che venga aperto un file esistente, la funzione **Fileexist** APPUTIL viene innanzitutto utilizzata per verificare che il file esista. Se esiste, viene chiamata la funzione del servizio [**StgIsStorageFile**](/windows/desktop/api/coml2api/nf-coml2api-stgisstoragefile) standard per verificare il formato del file per determinare se si tratta di un file composto valido.
+Come per il [**metodo Save,**](save-method---cpapfile.md) se viene passato **NULL** per il parametro *pszFileName,* per il nome file viene usato il contenuto archiviato del membro **m \_ szCurFileName.** Poiché è possibile aprire un file esistente, la funzione APPUTIL **FileExist** viene prima usata per verificare l'esistenza del file. Se esiste, viene chiamata la funzione del servizio [**StgIsStorageFile**](/windows/desktop/api/coml2api/nf-coml2api-stgisstoragefile) standard per verificare il formato del file per determinare se si tratta di un file composto valido.
 
-Se il file è valido, viene chiamata la funzione di servizio [**StgOpenStorage**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage) standard per aprire il file e restituire un puntatore a un'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) .
+Se il file è valido, viene chiamata la funzione del servizio [**StgOpenStorage**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage) standard per aprire il file e restituire un puntatore a [**un'interfaccia IStorage.**](/windows/desktop/api/Objidl/nn-objidl-istorage)
 
-Il primo parametro è il nome del file composto da aprire. Come per la chiamata a [**StgCreateDocFile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) , questa stringa è prevista nel formato Unicode e durante la compilazione ANSI viene usata una macro APPUTIL per assicurarsi che il parametro ANSI venga convertito nel formato Unicode previsto.
+Il primo parametro è il nome del file composto da aprire. Come per la chiamata [**StgCreateDocfile,**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) questa stringa è prevista nel formato Unicode e durante la compilazione ANSI viene usata una macro APPUTIL per assicurarsi che il parametro ANSI sia convertito nel formato Unicode previsto.
 
-Il secondo parametro di archiviazione Priority è **null**, a indicare che non viene usato in questo esempio.
+Il secondo parametro di archiviazione con priorità **è NULL,** a indicare che non viene usato in questo esempio.
 
-I flag della modalità di accesso vengono passati come terzo parametro per specificare le modalità di accesso consentite nel file aperto. [**STGM \_ READ**](stgm-constants.md) apre il file con l'autorizzazione di sola lettura. [**STGM \_ DIRECT**](stgm-constants.md) apre il file per l'accesso diretto, anziché l'accesso transazionale. [**STGM \_ SHARE \_ Exclusive**](stgm-constants.md) apre il file per l'uso esclusivo e non condiviso da parte del chiamante.
+I flag della modalità di accesso vengono passati come terzo parametro per specificare le modalità di accesso consentite nel file aperto. [**STGM \_ READ**](stgm-constants.md) apre il file con autorizzazione di sola lettura. [**STGM \_ DIRECT**](stgm-constants.md) apre il file per l'accesso diretto, anziché per l'accesso transazione. [**STGM \_ SHARE \_ EXCLUSIVE**](stgm-constants.md) apre il file per l'uso esclusivo e non condiviso da parte del chiamante.
 
-Il quarto parametro di esclusione di elementi in **null**, che indica che non viene utilizzato in questo esempio.
+Quarto parametro di esclusione dell'elemento in **NULL,** che indica che non viene usato in questo esempio.
 
-Il quinto parametro è riservato per utilizzi futuri e deve essere zero.
+Il quinto parametro è riservato per un uso futuro e deve essere zero.
 
-L'indirizzo della variabile puntatore **m \_ pIStorage** viene passato come sesto parametro. Quando la chiamata restituisce correttamente, **m \_ pIStorage** contiene un puntatore a un'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) . Si tratta dell'interfaccia utilizzata per tutte le operazioni successive sul file aperto.
+L'indirizzo della variabile **puntatore m \_ pIStorage** viene passato come sesto parametro. Quando la chiamata viene restituita correttamente, **m \_ pIStorage** contiene un puntatore a [**un'interfaccia IStorage.**](/windows/desktop/api/Objidl/nn-objidl-istorage) Si tratta dell'interfaccia utilizzata per tutte le operazioni successive sul file aperto.
 
-L'operazione importante in questo caso consiste nel fare in modo che l'oggetto Copaper carichi i dati di disegno dal file. Questa operazione viene eseguita in precedenza utilizzando il metodo **Load** dell'interfaccia [**iPaper**](ipaper-methods.md) di Copaper. Se il Copaper riesce a caricare i dati usando il [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) specificato, il nome del file composto viene copiato in **m \_ szCurFileName** come nuovo nome file corrente.
+L'operazione importante in questo caso è fare in modo che l'oggetto COPaper carichi i dati di disegno dal file. Questa operazione viene eseguita in precedenza **usando il metodo Load** dell'interfaccia IPaper di [**COPaper.**](ipaper-methods.md) Se COPaper riesce a caricare i dati usando [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) fornito, il nome del file composto viene copiato in **m \_ szCurFileName** come nuovo nome file corrente.
 
-Quando queste operazioni vengono completate correttamente, viene rilasciata l'interfaccia [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) ottenuta. Questa operazione chiude il file e indica che il file non viene mantenuto aperto durante le altre operazioni client. Verrà riaperto quando richiesto.
+Al termine di queste operazioni, viene rilasciata [**l'interfaccia IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) ottenuta. In questo modo il file viene chiuso e significa che il file non viene mantenuto aperto durante altre operazioni client. Verrà riaperto quando necessario.
 
- 
+ 
 
- 
+ 
 
 
 

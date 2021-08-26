@@ -1,7 +1,7 @@
 ---
 description: Il metodo IsUsingTimeFormat determina se un formato di ora specificato è il formato attualmente in uso.
 ms.assetid: 86965bfc-fc9f-42d3-bcaa-2049195b98bd
-title: Metodo CSourceSeeking. IsUsingTimeFormat (Ctlutil. h)
+title: Metodo CSourceSeeking.IsUsingTimeFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8229387364a061febc7bd825e7bc76ee5d9b4a2d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b930746102bc43e3549b4565a7591f4ac5fee8cc6503d9fb6aadcbe1659a52f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054241"
 ---
-# <a name="csourceseekingisusingtimeformat-method"></a>CSourceSeeking. IsUsingTimeFormat, metodo
+# <a name="csourceseekingisusingtimeformat-method"></a>Metodo CSourceSeeking.IsUsingTimeFormat
 
 Il `IsUsingTimeFormat` metodo determina se un formato di ora specificato è il formato attualmente in uso.
 
@@ -45,21 +45,21 @@ HRESULT IsUsingTimeFormat(
 *pFormat* 
 </dt> <dd>
 
-Puntatore a un GUID del formato ora. Vedere [**GUID del formato ora**](time-format-guids.md).
+Puntatore a un GUID di formato ora. Vedere [**GUID di formato dell'ora.**](time-format-guids.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** elencati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                                                |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>   | Il formato specificato non è quello corrente.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>      | Il formato specificato è il formato corrente.<br/>     |
-| <dl> <dt>**\_puntatore E**</dt> </dl> | Argomento puntatore **null** .<br/>                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | Il formato specificato non è il formato corrente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Il formato specificato è il formato corrente.<br/>     |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Argomento del puntatore **NULL.**<br/>                      |
 
 
 
@@ -67,7 +67,7 @@ Restituisce uno dei valori **HRESULT** elencati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-L'unico formato di ora supportato dalla classe base è il \_ tempo medio di formato dell'ora \_ \_ (unità 100-nanosecondi).
+L'unico formato di ora supportato dalla classe di base è TIME \_ FORMAT \_ MEDIA TIME \_ (unità di 100 nanosecondi).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ L'unico formato di ora supportato dalla classe base è il \_ tempo medio di form
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Personalization
-description: La \_ classe di personalizzazione MDM viene utilizzata per impostare la schermata di blocco e le immagini di sfondo del desktop. L'impostazione di questi criteri impedisce inoltre all'utente di modificare l'immagine.
+title: MDM_Personalization classe
+description: La classe Personalizzazione MDM \_ viene usata per impostare la schermata di blocco e le immagini di sfondo del desktop. L'impostazione di questi criteri impedisce inoltre all'utente di modificare l'immagine.
 ms.assetid: 99b60767-b321-4ec6-9802-76221d26c830
 keywords:
-- Classe MDM_Personalization
-- Classe MDM_Personalization, descritta
+- MDM_Personalization classe
+- MDM_Personalization classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f78986422cce15d750e1ae678aef352bbb369bfc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0039021d8c05599f91513344d4cbee010944e0944f08f0b258294d91e9714f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967511"
 ---
-# <a name="mdm_personalization-class"></a>\_Classe di personalizzazione MDM
+# <a name="mdm_personalization-class"></a>Classe \_ di personalizzazione MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La \_ classe di personalizzazione MDM viene utilizzata per impostare la schermata di blocco e le immagini di sfondo del desktop. L'impostazione di questi criteri impedisce inoltre all'utente di modificare l'immagine.
+La classe Personalizzazione MDM \_ viene usata per impostare la schermata di blocco e le immagini di sfondo del desktop. L'impostazione di questi criteri impedisce inoltre all'utente di modificare l'immagine.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -49,13 +49,13 @@ class MDM_Personalization
 
 ## <a name="members"></a>Members
 
-La classe di **\_ personalizzazione MDM** presenta questi tipi di membri:
+La **classe \_ Mdm Personalization** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ personalizzazione MDM** presenta queste proprietà.
+La **classe \_ Mdm Personalization** ha queste proprietà.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ La classe di **\_ personalizzazione MDM** presenta queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -73,10 +73,10 @@ Tipo di accesso: lettura/scrittura
 [DesktopImageUrl](/windows/client-management/mdm/personalization-csp#desktopimageurl)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -84,13 +84,13 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -101,7 +101,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -109,24 +109,24 @@ Tipo di accesso: lettura/scrittura
 [LockScreenImageUrl](/windows/client-management/mdm/personalization-csp#lockscreenimageurl)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> </dl>
@@ -137,10 +137,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                     |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                     |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

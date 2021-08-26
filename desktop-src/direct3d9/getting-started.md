@@ -1,19 +1,19 @@
 ---
-description: Questa sezione fornisce una breve introduzione alla funzionalità grafica Direct3D nell'API Direct3D. In questa sezione viene presentata una panoramica della pipeline grafica e delle esercitazioni che consentono di ottenere rapidamente le funzionalità di base di Direct3D.
+description: Questa sezione fornisce una breve introduzione alla funzionalità grafica Direct3D nell'API Direct3D. Qui è disponibile una panoramica della pipeline grafica e delle esercitazioni che consentono di ottenere rapidamente le funzionalità di base di Direct3D.
 ms.assetid: e0859675-9b8a-460e-8adb-818b9db6661b
-title: Introduzione (Direct3D 9)
+title: Attività iniziali (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4801e7fc881089db4fc65f6a751d5a2f7586fc6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bb0ee2b852ea668b14f72fd977fca164a190121b36e7ef8a4afe971ad26ba08b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026901"
 ---
-# <a name="getting-started-direct3d-9"></a>Introduzione (Direct3D 9)
+# <a name="getting-started-direct3d-9"></a>Attività iniziali (Direct3D 9)
 
-Questa sezione fornisce una breve introduzione alla funzionalità grafica Direct3D nell'API Direct3D. In questa sezione viene presentata una panoramica della pipeline grafica e delle esercitazioni che consentono di ottenere rapidamente le funzionalità di base di Direct3D.
+Questa sezione fornisce una breve introduzione alla funzionalità grafica Direct3D nell'API Direct3D. Qui è disponibile una panoramica della pipeline grafica e delle esercitazioni che consentono di ottenere rapidamente le funzionalità di base di Direct3D.
 
 -   [Architettura](direct3d-architecture.md)
 -   [Dispositivi](direct3d-devices.md)
@@ -32,7 +32,7 @@ Questa sezione fornisce una breve introduzione alla funzionalità grafica Direct
 
 <dl> <dt>
 
-[Guida per programmatori per Direct3D 9](dx9-graphics-programming-guide.md)
+[Guida alla programmazione per Direct3D 9](dx9-graphics-programming-guide.md)
 </dt> </dl>
 
  

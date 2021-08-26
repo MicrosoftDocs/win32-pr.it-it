@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7f5d27de884f72b46db900487e26f1099bf30949
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4933c3e15faee28448a653c5479be0d976abfd7bd913a7b50ef34acf4b52f6f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026501"
 ---
 # <a name="id3dxbasemeshgetattributetable-method"></a>Metodo ID3DXBaseMesh::GetAttributeTable
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella degli attributi viene creata da [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) e passa D3DXMESHOPT \_ ATTRSORT per il parametro Flags.
+Una tabella di attributi viene creata da [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) e passa D3DXMESHOPT \_ ATTRSORT per il parametro Flags.
 
 Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un identificatore di attributo specificato durante il disegno del frame.
 

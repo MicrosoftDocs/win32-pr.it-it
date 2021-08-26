@@ -4,29 +4,29 @@ ms.assetid: 94579bca-d519-47fa-a8b7-d3349a78d4b7
 title: Attributo defaulttrans
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9c6545efdec88e996e066c5724093ffd53ce14c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5a7c813feadd15e16303869fc492cdb61fde0d274a13d08f37bacec11def11e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104048888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086851"
 ---
 # <a name="defaulttrans-attribute"></a>Attributo defaulttrans
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `defaulttrans` attributo specifica l'identificatore di classe (CLSID) di una transizione predefinita per la sequenza temporale.
+`defaulttrans`L'attributo specifica l'identificatore di classe (CLSID) di una transizione predefinita per la sequenza temporale.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Deve essere una stringa con il formato {00000000-0000-0000-0000-000000000000} .
+Deve essere una stringa nel formato {00000000-0000-0000-0000-000000000000} .
 
 ## <a name="applies-to"></a>Si applica a
 
-[**sequenza temporale**](timeline-element.md)
+[**linea temporale**](timeline-element.md)
 
 ## <a name="see-also"></a>Vedi anche
 

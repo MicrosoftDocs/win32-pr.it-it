@@ -1,7 +1,7 @@
 ---
 description: Funzione di callback che deve essere implementata da un utente per impostare un codice FVF.
 ms.assetid: 701a4333-a71e-4d84-a06c-1c86312ee4ff
-title: 'Metodo ID3DXEffectStateManager:: SetFVF (D3DX9Effect. h)'
+title: Metodo ID3DXEffectStateManager::SetFVF (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: a68ab07e4f486a8df80ecde5844739a6a010c2dc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 828f6873ed9bf48de6a02d4195fdd1fa9d2bc39f99da1f8906fd8a2c53075cf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026411"
 ---
-# <a name="id3dxeffectstatemanagersetfvf-method"></a>Metodo ID3DXEffectStateManager:: SetFVF
+# <a name="id3dxeffectstatemanagersetfvf-method"></a>Metodo ID3DXEffectStateManager::SetFVF
 
 Funzione di callback che deve essere implementata da un utente per impostare un codice FVF.
 
@@ -40,12 +40,12 @@ HRESULT SetFVF(
 
 <dl> <dt>
 
-*FVF* \[ in\]
+*FVF* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Costante FVF, che determina come interpretare i dati dei vertici. Vedere [D3DFVF](d3dfvf.md).
+Costante FVF che determina come interpretare i dati dei vertici. Vedere [D3DFVF](d3dfvf.md).
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Costante FVF, che determina come interpretare i dati dei vertici. Vedere [D3DFVF
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo quando si imposta lo stato del dispositivo, si verificherà una delle condizioni seguenti:
+Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha esito negativo durante l'impostazione dello stato del dispositivo, si verificherà una delle condizioni seguenti:
 
--   L'effetto avrà esito negativo durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   La chiamata allo stato dell'effetto dinamico, ad esempio [**IDirect3DDevice9:: SetFVF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setfvf), avrà esito negativo.
+-   L'effetto avrà esito negativo durante [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   La chiamata allo stato dell'effetto dinamico ( ad [**esempio IDirect3DDevice9::SetFVF**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setfvf)) avrà esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Il metodo implementato dall'utente deve restituire S \_ OK. Se il callback ha es
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

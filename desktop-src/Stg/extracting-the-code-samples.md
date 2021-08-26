@@ -1,21 +1,21 @@
 ---
 title: Estrazione degli esempi di codice
-description: Sebbene gli esempi di codice siano divisi in una serie di lezioni di esercitazione, è possibile estrarre facilmente i raggruppamenti di esempio appropriati dalla raccolta.
+description: Anche se gli esempi di codice sono suddivisi in una serie di lezioni di esercitazione, i raggruppamenti di esempio appropriati possono essere facilmente estratti dalla raccolta.
 ms.assetid: f8e20e40-cfef-4844-8b28-5a11fdcd691a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a593cf36b2fa235813c291eb35307153b28a2aa4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67093f4cfbbfab2a3c1681462627f02b504124ed15d1483b9f9d91ec5551d0e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034951"
 ---
 # <a name="extracting-the-code-samples"></a>Estrazione degli esempi di codice
 
-Sebbene gli esempi di codice siano divisi in una serie di lezioni di esercitazione, è possibile estrarre facilmente i raggruppamenti di esempio appropriati dalla raccolta. La maggior parte delle singole directory di esempio è concepita per funzionare insieme ad almeno un'altra directory di esempio. Gli esempi correlati ai componenti sono costituiti da una coppia client e server, con il server che richiede l'uso dell'utilità di registrazione di esempio. Ecco un riepilogo dei raggruppamenti di esempio e come estrarre ogni gruppo come unità compilabile. Per ogni raggruppamento di esempio, copiare il contenuto delle directory visualizzate. La \[ \] directory di destinazione padre visualizzata non richiede alcun contenuto dal branch degli esempi. Tuttavia, i menu della guida negli esempi in esecuzione presuppongono che l'esercitazione appropriata. I file della Guida HTM si trovano in questa \[ directory di destinazione padre \] .
+Anche se gli esempi di codice sono suddivisi in una serie di lezioni di esercitazione, i raggruppamenti di esempio appropriati possono essere facilmente estratti dalla raccolta. La maggior parte delle singole directory di esempio è destinata a funzionare in combinazione con almeno un'altra directory di esempio. Gli esempi relativi ai componenti sono costituiti da una coppia client e server, con il server che richiede l'uso dell'utilità di esempio REGISTER. Ecco un riepilogo dei raggruppamenti di esempio e come estrarre ogni gruppo come unità compilabile. Per ogni raggruppamento di esempio, copiare il contenuto delle directory visualizzate. La \[ directory di \] destinazione padre visualizzata non richiede contenuto dal ramo degli esempi. Tuttavia, i menu della Guida negli esempi in esecuzione presuppongono che l'esercitazione appropriata .HTM file della Guida si trovi in questa directory di \[ destinazione \] padre.
 
-Per l'applicazione Win32 READTUT:
+Per l'applicazione READTUT Win32:
 
 ``` syntax
 [destination]
@@ -25,7 +25,7 @@ Per l'applicazione Win32 READTUT:
     READTUT
 ```
 
-Per l'applicazione Win32 EXE Skeleton:
+Per lo scheletro dell'applicazione EXE Win32:
 
 ``` syntax
 [destination]
@@ -35,7 +35,7 @@ Per l'applicazione Win32 EXE Skeleton:
     EXESKEL
 ```
 
-Per lo scheletro della DLL Win32:
+Per lo scheletro di DLL Win32:
 
 ``` syntax
 [destination]
@@ -57,7 +57,7 @@ Per gli esempi di oggetti COM di base:
     COMUSER
 ```
 
-Per gli esempi client/server del componente DLL di base in-process:
+Per gli esempi client/server del componente DLL in-process di base:
 
 ``` syntax
 [destination]
@@ -69,7 +69,7 @@ Per gli esempi client/server del componente DLL di base in-process:
     DLLCLIEN
 ```
 
-Per gli esempi client/server del componente con licenza:
+Per gli esempi client/server del componente concesso in licenza:
 
 ``` syntax
 [destination]
@@ -93,7 +93,7 @@ Per gli esempi di marshalling standard:
     MARSHAL2
 ```
 
-Per gli esempi client/server locali out-of-process:
+Per gli esempi di client/server locali out-of-process:
 
 ``` syntax
 [destination]
@@ -106,7 +106,7 @@ Per gli esempi client/server locali out-of-process:
     LOCCLIEN
 ```
 
-Per gli esempi client/server del modello di Apartment:
+Per gli esempi client/server del modello di apartment:
 
 ``` syntax
 [destination]
@@ -119,7 +119,7 @@ Per gli esempi client/server del modello di Apartment:
     APTCLIEN
 ```
 
-Per gli esempi client/server DCOM (Distributed COM):
+Per gli esempi di client/server DCOM (Distributed COM):
 
 ``` syntax
 [destination]
@@ -132,7 +132,7 @@ Per gli esempi client/server DCOM (Distributed COM):
     REMCLIEN
 ```
 
-Per gli esempi client/server di threading gratuiti:
+Per gli esempi di client/server per il threading libero:
 
 ``` syntax
 [destination]
@@ -144,7 +144,7 @@ Per gli esempi client/server di threading gratuiti:
     FRECLIEN
 ```
 
-Per gli esempi client/server di oggetti COM collegabili:
+Per gli esempi di client/server dell'oggetto COM collegabile:
 
 ``` syntax
 [destination]
@@ -156,7 +156,7 @@ Per gli esempi client/server di oggetti COM collegabili:
     CONCLIEN
 ```
 
-Per gli esempi client/server di archiviazione strutturata:
+Per gli esempi di client/server di archiviazione strutturata:
 
 ``` syntax
 [destination]
@@ -168,7 +168,7 @@ Per gli esempi client/server di archiviazione strutturata:
     STOCLIEN
 ```
 
-Per gli esempi client/server di oggetti permanenti:
+Per gli esempi di client/server dell'oggetto persistente:
 
 ``` syntax
 [destination]
@@ -195,9 +195,9 @@ Per gli esempi client/server di sicurezza DCOM:
     DCOMDRAW
 ```
 
- 
+ 
 
- 
+ 
 
 
 

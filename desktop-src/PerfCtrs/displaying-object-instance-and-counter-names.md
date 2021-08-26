@@ -1,23 +1,23 @@
 ---
-description: Se si desidera visualizzare un elenco di oggetti e i relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni.
+description: Se si desidera visualizzare un elenco di oggetti e dei relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni.
 ms.assetid: 0d122fa8-2ed8-4bd8-a52e-6cb20fe81741
-title: Visualizzazione di nomi di oggetti, istanze e contatori
+title: Visualizzazione dei nomi di oggetti, istanze e contatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c0b7808ede82110d28b80c371d5f88ced03912
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 1b31251b9efd9624b63543d0690e4ee7eadfb638995d3b0f265f6d059b83ef20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103963546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033921"
 ---
-# <a name="displaying-object-instance-and-counter-names"></a>Visualizzazione di nomi di oggetti, istanze e contatori
+# <a name="displaying-object-instance-and-counter-names"></a>Visualizzazione dei nomi di oggetti, istanze e contatori
 
-Se si desidera visualizzare un elenco di oggetti e i relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni. I dati sulle prestazioni contengono un numero variabile di oggetti prestazioni e le relative istanze e contatori. Per informazioni sul formato dei dati sulle prestazioni, vedere [formato dei dati sulle prestazioni](performance-data-format.md).
+Se si desidera visualizzare un elenco di oggetti e dei relativi contatori in un'interfaccia utente, è necessario recuperare i dati sulle prestazioni. I dati sulle prestazioni contengono un numero variabile di oggetti prestazioni e le relative istanze e contatori. Per informazioni sul formato dei dati sulle prestazioni, vedere [Formato dei dati sulle prestazioni](performance-data-format.md).
 
-I dati sulle prestazioni non contengono i nomi dell'oggetto e del contatore. I dati contengono invece i valori di indice utilizzati per recuperare i nomi degli oggetti e dei contatori, archiviati nelle risorse note all'infrastruttura dei contatori delle prestazioni. Tuttavia, i nomi delle istanze vengono archiviati nei dati sulle prestazioni. Per un esempio in cui vengono letti i nomi degli oggetti e dei contatori dal registro di sistema e viene creata una tabella dell'indice per l'accesso ai nomi in un secondo momento, vedere [recupero dei nomi dei contatori e del testo della Guida](retrieving-counter-names-and-help-text.md).
+I dati sulle prestazioni non contengono i nomi degli oggetti e dei contatori. I dati contengono invece valori di indice utilizzati per recuperare i nomi degli oggetti e dei contatori, archiviati in risorse note all'infrastruttura dei contatori delle prestazioni. Tuttavia, i nomi delle istanze vengono archiviati nei dati sulle prestazioni. Per un esempio che legge i nomi degli oggetti e dei contatori dal Registro di sistema e crea una tabella di indice per l'accesso ai nomi in un secondo momento, vedere Recupero dei nomi dei contatori e del testo [della Guida](retrieving-counter-names-and-help-text.md).
 
-Nell'esempio seguente viene illustrato come recuperare i blocchi dell'oggetto, dell'istanza e del contatore dai dati sulle prestazioni. Dopo aver recuperato i nomi degli oggetti, le istanze e i nomi dei contatori, nell'esempio gli oggetti vengono ordinati in base al nome e per ogni oggetto, Ordina le istanze e i contatori in base al nome. Nell'esempio vengono quindi stampati gli elenchi ordinati.
+Nell'esempio seguente viene illustrato come recuperare i blocchi di oggetto, istanza e contatore dai dati sulle prestazioni. Dopo il recupero dei nomi degli oggetti, dei nomi delle istanze e dei contatori, l'esempio ordina gli oggetti in base al nome e per ogni oggetto ordina le istanze e i contatori in base al nome. Nell'esempio vengono quindi stampati gli elenchi ordinati.
 
 
 ```C++
@@ -819,9 +819,9 @@ void FreePerfObjects(PPERF_OBJECT pObjects, DWORD dwNumberOfObjects)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

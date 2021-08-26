@@ -1,37 +1,37 @@
 ---
 title: Come aggiungere List-View colonne
-description: In questo argomento viene illustrato come aggiungere colonne a un controllo visualizzazione elenco.
+description: Questo argomento illustra come aggiungere colonne a un controllo visualizzazione elenco.
 ms.assetid: 9DBDFF56-7CD6-467C-AD2E-64213615E241
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75e478c57a31fdd7ad91e0089106e93c24c47d5c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ee71065729502410d189493527af0e3e37663a4a2aaf541852454af7fa4a5aac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922081"
 ---
 # <a name="how-to-add-list-view-columns"></a>Come aggiungere List-View colonne
 
-In questo argomento viene illustrato come aggiungere colonne a un controllo visualizzazione elenco. Le colonne vengono utilizzate per visualizzare gli elementi e gli elementi secondari quando un controllo visualizzazione elenco è nella visualizzazione report (Dettagli). Il testo delle colonne selezionate può essere visualizzato anche nella visualizzazione affiancata.
+Questo argomento illustra come aggiungere colonne a un controllo visualizzazione elenco. Le colonne vengono usate per visualizzare gli elementi e gli elementi secondari quando un controllo visualizzazione elenco si trova nella visualizzazione report (dettagli). Il testo delle colonne selezionate può essere visualizzato anche nella visualizzazione affiancata.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Per aggiungere una colonna a un controllo visualizzazione elenco, inviare il messaggio [**LVM \_ INSERTCOLUMN**](lvm-insertcolumn.md) o usare la macro [**\_ INSERTCOLUMN di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) . Per eliminare una colonna, usare il messaggio [**LVM \_ DELETECOLUMN**](lvm-deletecolumn.md) .
+Per aggiungere una colonna a un controllo visualizzazione elenco, inviare il messaggio [**LVM \_ INSERTCOLUMN**](lvm-insertcolumn.md) o usare la macro [**\_ ListView InsertColumn.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) Per eliminare una colonna, usare il [**messaggio LVM \_ DELETECOLUMN.**](lvm-deletecolumn.md)
 
-Nell'esempio di codice C++ riportato di seguito viene chiamata la macro [**\_ InsertColumn di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) per aggiungere colonne a un controllo visualizzazione elenco. Le intestazioni di colonna vengono definite nel file di intestazione dell'applicazione come risorse di stringa, numerate consecutivamente iniziando con ID \_ FIRSTCOLUMN. Il numero di colonne è definito nel file di intestazione come **\_ colonne C**.
+Nell'esempio di codice C++ seguente viene chiamata la macro [**\_ ListView InsertColumn**](/windows/desktop/api/Commctrl/nf-commctrl-listview_insertcolumn) per aggiungere colonne a un controllo visualizzazione elenco. Le intestazioni di colonna sono definite nel file di intestazione dell'applicazione come risorse stringa, numerate consecutivamente a partire da IDS \_ FIRSTCOLUMN. Il numero di colonne è definito nel file di intestazione come **C \_ COLUMNS**.
 
 
 ```C++
@@ -82,13 +82,13 @@ BOOL InitListViewColumns(HWND hWndListView)
 
 <dl> <dt>
 
-[Riferimento al controllo visualizzazione elenco](bumper-list-view-list-view-control-reference.md)
+[Informazioni di riferimento sul controllo List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Informazioni sui controlli List-View](list-view-controls-overview.md)
+[Informazioni List-View controllo](list-view-controls-overview.md)
 </dt> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso dei List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

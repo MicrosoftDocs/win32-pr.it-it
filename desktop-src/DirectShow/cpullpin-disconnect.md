@@ -1,7 +1,7 @@
 ---
 description: Il metodo Disconnect interrompe la connessione con il pin di output.
 ms.assetid: 6e362e32-7b74-4392-b46f-1ab47a30a07b
-title: Metodo CPullPin. Disconnect (Pullpin. h)
+title: Metodo CPullPin.Disconnect (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec13a7f29a06bab4f79ddb58932796f8363adadc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0491bfba7e5b739a2b46674cc2f6506017810d4f1e51693d4478720c67a4a4da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055071"
 ---
-# <a name="cpullpindisconnect-method"></a>Metodo CPullPin. Disconnect
+# <a name="cpullpindisconnect-method"></a>Metodo CPullPin.Disconnect
 
 Il `Disconnect` metodo interrompe la connessione con il pin di output.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo interrompe qualsiasi connessione eseguita nel metodo [**CPullPin:: Connect**](cpullpin-connect.md) . Chiamare questo metodo all'interno del metodo [**Ipin::D la connessione**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) . Se il pin deriva da [**CBasePin**](cbasepin.md), eseguire l'override di [**CBasePin:: BreakConnect**](cbasepin-breakconnect.md) per chiamare questo metodo.
+Questo metodo interrompe qualsiasi connessione effettuata nel [**metodo CPullPin::Connessione.**](cpullpin-connect.md) Chiamare questo metodo all'interno [**del metodo IPin::D isconnect.**](/windows/desktop/api/Strmif/nf-strmif-ipin-disconnect) Se il pin deriva da [**CBasePin,**](cbasepin.md)eseguire l'override di [**CBasePin::BreakConnect**](cbasepin-breakconnect.md) per chiamare questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo interrompe qualsiasi connessione eseguita nel metodo [**CPullPin::
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

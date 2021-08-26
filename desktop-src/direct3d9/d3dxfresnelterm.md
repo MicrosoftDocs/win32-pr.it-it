@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5472f9839928fd3b4c1830bc309c7f610d487864
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 15f0c5bac66d0c1b43bf3938e4ecb1f2fffd8dd235532b5dddc27eb5923ef5f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027651"
 ---
 # <a name="d3dxfresnelterm-function-d3dx9mathh"></a>Funzione D3DXFresnelTerm (D3dx9math.h)
 

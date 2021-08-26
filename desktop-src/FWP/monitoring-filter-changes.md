@@ -1,24 +1,24 @@
 ---
-title: Monitoraggio delle modifiche al filtro
-description: Nell'esempio di codice riportato di seguito viene illustrato come monitorare l'aggiunta e l'eliminazione di filtri che potrebbero influire su un'applicazione server.
+title: Monitoraggio delle modifiche ai filtri
+description: Il codice di esempio seguente illustra come monitorare l'aggiunta e l'eliminazione di filtri che potrebbero influire su un'applicazione server.
 ms.assetid: 7ca527e1-217a-4e97-86e9-23b484ffc25d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1d3793aa191f4723e99be69156ba88485500087
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c2187b75f2eb864a893e7878f594b1462c7c1e87234da605cd8299f151912653
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075401"
 ---
-# <a name="monitoring-filter-changes"></a>Monitoraggio delle modifiche al filtro
+# <a name="monitoring-filter-changes"></a>Monitoraggio delle modifiche ai filtri
 
-Nell'esempio di codice seguente viene illustrato come monitorare l'aggiunta e l'eliminazione di filtri che potrebbero influire su un'applicazione server.
+Il codice di esempio seguente illustra come monitorare l'aggiunta e l'eliminazione di filtri che potrebbero influire su un'applicazione server.
 
 > [!Note]  
 > Le condizioni di filtro sono le stesse supportate dall'API **IsPortAllowed** di livello inferiore.
 
- 
+ 
 
 
 ```C++
@@ -198,9 +198,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

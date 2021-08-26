@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Put StopTime imposta l'ora in cui la riproduzione viene arrestata rispetto alla durata del flusso. Questo metodo implementa il metodo IMediaPosition::p UT \_ StopTime.
+description: Il metodo put \_ StopTime imposta l'ora in cui la riproduzione verrà interrotta, in relazione alla durata del flusso. Questo metodo implementa il metodo IMediaPosition::p ut \_ StopTime.
 ms.assetid: 0a344cad-df93-47f1-8c7f-5d5ef775b850
-title: Metodo CPosPassThru.put_StopTime (Ctlutil. h)
+title: CPosPassThru.put_StopTime metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4f5763700947596a0fb437ba3840df058d4d3239
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d91d49f2517a3d3b9efc50d70ace1b75562b50df8acda7c48826e7c088439928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120055091"
 ---
-# <a name="cpospassthruput_stoptime-method"></a>CPosPassThru. put \_ StopTime (metodo)
+# <a name="cpospassthruput_stoptime-method"></a>Metodo CPosPassThru.put \_ StopTime
 
-Il `put_StopTime` metodo imposta l'ora in cui la riproduzione viene arrestata rispetto alla durata del flusso. Questo metodo implementa il metodo [**IMediaPosition::p UT \_ StopTime**](/windows/desktop/api/Control/nf-control-imediaposition-put_stoptime) .
+Il `put_StopTime` metodo imposta l'ora in cui la riproduzione verrà interrotta, in relazione alla durata del flusso. Questo metodo implementa il [**metodo IMediaPosition::p ut \_ StopTime.**](/windows/desktop/api/Control/nf-control-imediaposition-put_stoptime)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT put_StopTime(
 *llTime* 
 </dt> <dd>
 
-Arrestare l'ora come valore **doppio** , in secondi.
+Ora di arresto come **valore doppio,** in secondi.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore **HRESULT** dal pin connesso.
+Restituisce il **valore HRESULT** dal pin connesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore **HRESULT** dal pin connesso.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

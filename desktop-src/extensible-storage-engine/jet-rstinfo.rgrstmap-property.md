@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_RSTINFO. rgrstmap'
-title: Proprietà JET_RSTINFO. rgrstmap
+description: 'Altre informazioni su: JET_RSTINFO.rgrstmap'
+title: JET_RSTINFO.rgrstmap
 TOCTitle: 'rgrstmap property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RSTINFO.rgrstmap
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo.rgrstmap(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a5ed9a44b4f38fc5b468db20a8f7657d625ef13a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39b49cd465fe76a4bbd9a2da23fcf9a885f41c9cb5672169d359bd6099b204ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967587"
 ---
-# <a name="jet_rstinforgrstmap-property"></a>Proprietà JET_RSTINFO. rgrstmap
+# <a name="jet_rstinforgrstmap-property"></a>JET_RSTINFO.rgrstmap
 
-Ottiene o imposta la matrice di strutture di [JET_RSTMAP](./jet-rstmap-class.md) .
+Ottiene o imposta la matrice di [JET_RSTMAP](./jet-rstmap-class.md) struttura .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public JET_RSTMAP[] rgrstmap { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo \[\]  
+digitare: \[\]  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_RSTINFO](./jet-rstinfo-class.md)
+[JET_RSTINFO classe](./jet-rstinfo-class.md)
 
-[Membri JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO membri](./jet-rstinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

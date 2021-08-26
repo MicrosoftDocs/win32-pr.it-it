@@ -1,17 +1,17 @@
 ---
 description: Regola la saturazione.
 ms.assetid: bd71f542-36d9-4dfc-b402-35ee8e574731
-title: Proprietà MFPKEY_COLOR_SATURATION (Wmcodecdsp. h)
+title: MFPKEY_COLOR_SATURATION proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 496b1f017ceff6ab4bd01ce01ccfd5da0759befc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b357521327bc913a0ace6b630cb9f2a27b553c3dfc8303e1a6bd9af218c5b743
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954401"
 ---
-# <a name="mfpkey_color_saturation-property"></a>\_ \_ Proprietà saturazione colore MFPKEY
+# <a name="mfpkey_color_saturation-property"></a>MFPKEY \_ COLOR \_ SATURATION - Proprietà
 
 Regola la saturazione.
 
@@ -29,13 +29,13 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Trasformazione controllo colori DSP](colorcontroltransform.md)
+-   [DSP trasformazione controllo colore](colorcontroltransform.md)
 
 ## <a name="remarks"></a>Commenti
 
-La regolazione della saturazione viene eseguita moltiplicando i valori CB e CR per una costante.
+La regolazione della saturazione viene eseguita moltiplicando i valori Cb e Cr per una costante.
 
-Questa proprietà ha un intervallo compreso tra-127 e 127. Zero indica che non sono state apportate modifiche alla saturazione.
+Questa proprietà ha un intervallo compreso tra -127 e 127. Zero indica nessuna modifica nella saturazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ Questa proprietà ha un intervallo compreso tra-127 e 127. Zero indica che non s
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Questa proprietà ha un intervallo compreso tra-127 e 127. Zero indica che non s
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

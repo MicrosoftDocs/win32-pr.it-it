@@ -1,50 +1,50 @@
 ---
-title: Strutture di gestione tabelle di routing versione 2
-description: Le funzioni RTMv2 utilizzano le strutture seguenti.
+title: Strutture di Gestione tabelle di routing versione 2
+description: Le funzioni RTMv2 usano le strutture seguenti.
 ms.assetid: 565e74d1-1622-4a44-8e9d-35f73c1aa6f3
 keywords:
-- Servizio Routing e accesso remoto RRAS, gestione tabelle di routing versione 2, strutture
-- Gestione tabelle di routing versione 2 RRAS, strutture
+- Routing and Remote Access Service RRAS , Routing Table Manager version 2, structures
+- Routing Table Manager version 2 RRAS ,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de227d8957d3b0ca64f8c7d8cbdc3eb3af390c01
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3905614ca0e8a16ac85d986e04fe450ce4c2e23ee6b11a4b7a4c64f65568d9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035981"
 ---
-# <a name="routing-table-manager-version-2-structures"></a>Strutture di gestione tabelle di routing versione 2
+# <a name="routing-table-manager-version-2-structures"></a>Strutture di Gestione tabelle di routing versione 2
 
-Le funzioni RTMv2 utilizzano le strutture seguenti.
+Le funzioni RTMv2 usano le strutture seguenti.
 
-[**\_informazioni dest \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_dest_info)
+[**RTM \_ DEST \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_dest_info)
 
-[**\_metodi di \_ esportazione \_ entità RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_export_methods)
+[**METODI DI ESPORTAZIONE DI ENTITÀ RTM \_ \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_export_methods)
 
-[**\_ID entità \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_id)
+[**ID ENTITÀ RTM \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_id)
 
-[**\_Informazioni entità \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_info)
+[**INFORMAZIONI SULL'ENTITÀ RTM \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_info)
 
-[**\_input del \_ metodo di entità RTM \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_method_input)
+[**INPUT DEL METODO DI ENTITÀ RTM \_ \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_method_input)
 
-[**\_output del \_ metodo di entità RTM \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_method_output)
+[**OUTPUT DEL METODO DI ENTITÀ RTM \_ \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_entity_method_output)
 
-[**\_Indirizzo rete \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_net_address)
+[**INDIRIZZO \_ DI RETE \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_net_address)
 
-[**\_informazioni NEXTHOP \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info)
+[**INFORMAZIONI \_ NEXTHOP RTM \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_info)
 
-[**\_elenco NEXTHOP \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_list)
+[**RTM \_ NEXTHOP \_ LIST**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_nexthop_list)
 
-[**\_informazioni pref \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_pref_info)
+[**INFORMAZIONI \_ SUL PREF \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_pref_info)
 
-[**\_profilo regN \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_regn_profile)
+[**RTM \_ REGN \_ PROFILE**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_regn_profile)
 
-[**\_informazioni route \_ RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
+[**INFORMAZIONI SULLA ROUTE RTM \_ \_**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info)
 
- 
+ 
 
- 
+ 
 
 
 

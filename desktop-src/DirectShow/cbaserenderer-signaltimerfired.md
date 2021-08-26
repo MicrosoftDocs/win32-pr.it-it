@@ -1,7 +1,7 @@
 ---
-description: Il metodo SignalTimerFired cancella l'identificatore del timer utilizzato per pianificare il rendering.
+description: Il metodo SignalTimerFired cancella l'identificatore del timer usato per pianificare il rendering.
 ms.assetid: b8ae362e-fcda-4888-be32-8fb910d0f0db
-title: Metodo CBaseRenderer. SignalTimerFired (Renbase. h)
+title: Metodo CBaseRenderer.SignalTimerFired (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4dd29b37869fc6f07c2d876dfa0d1d306b04b111
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f08ed0e8348648d5d1af1127159b414b0ddbc40cfd470ff0834b7bc2b0723e9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052361"
 ---
-# <a name="cbaserenderersignaltimerfired-method"></a>CBaseRenderer. SignalTimerFired, metodo
+# <a name="cbaserenderersignaltimerfired-method"></a>Metodo CBaseRenderer.SignalTimerFired
 
-Il `SignalTimerFired` metodo cancella l'identificatore del timer utilizzato per pianificare il rendering.
+Il `SignalTimerFired` metodo cancella l'identificatore del timer usato per pianificare il rendering.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il filtro chiama questo metodo quando il timer di rendering viene attivato (vedere [**CBaseRenderer:: WaitForRenderTime**](cbaserenderer-waitforrendertime.md)) o quando il timer viene annullato (vedere [**CBaseRenderer:: CancelNotification**](cbaserenderer-cancelnotification.md)). Il metodo reimposta la variabile membro [**CBaseRenderer:: m \_ dwAdvise**](cbaserenderer-m-dwadvise.md) su zero.
+Il filtro chiama questo metodo quando viene attivato il timer di rendering (vedere [**CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md)) o quando il timer viene annullato (vedere [**CBaseRenderer::CancelNotification**](cbaserenderer-cancelnotification.md)). Il metodo reimposta la variabile membro [**CBaseRenderer::m \_ dwAdvise**](cbaserenderer-m-dwadvise.md) su zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il filtro chiama questo metodo quando il timer di rendering viene attivato (vede
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

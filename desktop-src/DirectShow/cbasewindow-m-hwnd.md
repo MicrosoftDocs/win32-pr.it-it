@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119999641"
 ---
-# <a name="cbasewindowm_hwnd-member"></a>Membro Hwnd CBaseWindow::m \_
+# <a name="cbasewindowm_hwnd-member"></a>Membro CBaseWindow::m \_ hwnd
 
 Handle per la finestra dell'oggetto.
 
@@ -42,7 +42,7 @@ HWND m_hwnd;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (include Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

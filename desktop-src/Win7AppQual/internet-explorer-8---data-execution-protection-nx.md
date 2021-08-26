@@ -66,9 +66,9 @@ Compilare applicazioni usando le versioni più recenti dei framework compatibili
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Test di compatibilità, prestazioni, affidabilità e usabilità
 
--   Testare il codice con DEP/NX abilitato usando la versione più recente Internet Explorer versione Windows Vista SP1 o versione successiva.
+-   Testare il codice con DEP/NX abilitato usando l'Internet Explorer versione più recente Windows Vista SP1 o versione successiva.
 -   Testare con Internet Explorer 7 in Windows Vista dopo aver abilitato l'opzione DEP/NX. Per abilitare DEP/NX per Internet Explorer 7, eseguire Internet Explorer come amministratore, quindi impostare la casella di controllo appropriata nella scheda Strumenti > Opzioni Internet > Avanzate.
--   Eseguire lo Internet Explorer Compatibility Test Tool (IECTT), fornito con Application Compatibility Toolkit (ACT) per individuare eventuali problemi potenziali dovuti alle modifiche DEP/NX.
+-   Eseguire lo Internet Explorer Compatibility Test Tool (IECTT), fornito con Application Compatibility Toolkit (ACT) per individuare eventuali problemi potenziali a causa delle modifiche DEP/NX.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
@@ -76,7 +76,7 @@ Compilare applicazioni usando le versioni più recenti dei framework compatibili
 -   [Protezione esecuzione programmi](../memory/data-execution-prevention.md)
 -   [Nuove API NX aggiunte a Windows Vista SP1, Windows XP SP3 e Windows Server 2008 R2](/archive/blogs/michael_howard/)
 -   [Compatibilità delle applicazioni Toolkit download](/windows-hardware/get-started/adk-install)
--   [Problemi noti Internet Explorer funzionalità di sicurezza](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
+-   [Problemi Internet Explorer funzionalità di sicurezza](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo ActionCollection. Remove
-description: Per la creazione di script, rimuove l'azione specificata dalla raccolta.
+title: Metodo ActionCollection.Remove
+description: Per lo scripting, rimuove l'azione specificata dalla raccolta.
 ms.assetid: ae1da6a9-5851-4ccb-80dc-75d7a99e7c6a
 keywords:
 - Rimuovere il metodo Utilità di pianificazione
-- Remove Method Utilità di pianificazione, oggetto ActionCollection
-- Utilità di pianificazione oggetto ActionCollection, metodo Remove
+- Rimuovere il metodo Utilità di pianificazione, oggetto ActionCollection
+- Oggetto ActionCollection Utilità di pianificazione , metodo Remove
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e110f870f4f192051b47cb3b65f0ebb41a490708
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0c176f41c59bd473e25e82082ada1934a25641e6144f4187e7f25075779b25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011741"
 ---
-# <a name="actioncollectionremove-method"></a>Metodo ActionCollection. Remove
+# <a name="actioncollectionremove-method"></a>Metodo ActionCollection.Remove
 
-Per la creazione di script, rimuove l'azione specificata dalla raccolta.
+Per lo scripting, rimuove l'azione specificata dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ ActionCollection.Remove( _
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
 Indice dell'azione da rimuovere.
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella raccolta è 1 e l'indice per l'ultimo elemento è il valore della proprietà [**ActionCollection. Count**](actioncollection-count.md) .
+Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella raccolta è 1 e l'indice per l'ultimo elemento è il valore [**della proprietà ActionCollection.Count.**](actioncollection-count.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella r
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Quando si rimuovono elementi, si noti che l'indice per il primo elemento nella r
 [Utilità di pianificazione](task-scheduler-start-page.md)
 </dt> <dt>
 
-[**ActionCollection**](actioncollection.md)
+[**Actioncollection**](actioncollection.md)
 </dt> </dl>
 
  

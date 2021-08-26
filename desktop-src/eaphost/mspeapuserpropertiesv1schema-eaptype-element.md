@@ -1,6 +1,6 @@
 ---
 title: Elemento EapType (mspeapuserpropertiesv1schema)
-description: Questo elemento è un tipo derivato dell'elemento EapType dello schema baseeapuserpropertiesv1. Per mspeapuserpropertiesv1schema.
+description: Questo elemento è un tipo derivato dell'elemento EapType dallo schema baseeapuserpropertiesv1. Per lo schema mspeapuserpropertiesv1schema.
 ms.assetid: 921c1f95-900a-4fd2-bb42-341e5ba39b23
 keywords:
 - Elemento EapType EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ccedc72baf3a677acc3a318895defbc97bb26287
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: e27923d77a36b917b3356b7c5c79d408bc0a99d49d70967677b56a9047ed0b63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067181"
 ---
 # <a name="eaptype-element-mspeapuserpropertiesv1schema"></a>Elemento EapType (mspeapuserpropertiesv1schema)
 
-L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) dello schema [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) .
+**L'elemento EapType** è un tipo derivato dell'elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) dallo schema [baseeapuserpropertiesv1.](baseeapuserpropertiesv1schema-schema.md)
 
 ``` syntax
 <xs:element name="EapType
@@ -58,8 +58,8 @@ L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapus
 
 | Elemento                                                                               | Tipo                                                                                      | Descrizione                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**EAP**](baseeapuserpropertiesv1schema-eap-element.md)                              |                                                                                           | L'elemento [**EAP**](baseeapuserpropertiesv1schema-eap-element.md) identifica il metodo interno e le credenziali da utilizzare con il metodo. Quando la configurazione PEAP è configurata per l'accesso Guest PEAP, questo elemento è assente.<br/>                                  |
-| [**PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) | [**PeapExtensionsType**](mspeapuserpropertiesv1schema-peapextensionstype-complextype.md) | L'elemento [**PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) consente miglioramenti futuri allo schema. <br/> L'elemento [**PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) è facoltativo.<br/> |
+| [**Eap**](baseeapuserpropertiesv1schema-eap-element.md)                              |                                                                                           | [**L'elemento Eap**](baseeapuserpropertiesv1schema-eap-element.md) identifica il metodo interno e le credenziali da usare con tale metodo. Quando la configurazione PEAP è configurata per l'accesso guest PEAP, questo elemento è assente.<br/>                                  |
+| [**PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) | [**PeapExtensionsType**](mspeapuserpropertiesv1schema-peapextensionstype-complextype.md) | [**L'elemento PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) consente miglioramenti futuri dello schema. <br/> [**L'elemento PeapExtensions**](mspeapuserpropertiesv1schema-peapextensions-eaptype-element.md) è facoltativo.<br/> |
 
 
 
@@ -69,8 +69,8 @@ L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapus
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapus
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md)
