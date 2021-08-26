@@ -1,23 +1,23 @@
 ---
-description: Impostazione del clock del grafico
+description: Impostazione dell Graph clock
 ms.assetid: 23deab26-6c9a-4f94-b750-11c9b1a14ce3
-title: Impostazione del clock del grafico
+title: Impostazione dell Graph clock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfe98c8dce1ab5f94664fbe1406c682e5d4e50b8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7ab93fcefe4ba88aa7724bf59b775c493313783b2f4ad3801925e16b9a1818c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904141"
 ---
-# <a name="setting-the-graph-clock"></a>Impostazione del clock del grafico
+# <a name="setting-the-graph-clock"></a>Impostazione dell Graph clock
 
-Quando si compila un grafico di filtro, il gestore del grafico del filtro sceglie automaticamente un orologio di riferimento per il grafico. Tutti i filtri nel grafico vengono sincronizzati con l'orologio di riferimento. In particolare, i filtri renderer utilizzano l'orologio di riferimento per determinare l'ora di presentazione di ogni campione.
+Quando si crea un grafo di filtro, Gestione filtri Graph sceglie automaticamente un orologio di riferimento per il grafico. Tutti i filtri nel grafico vengono sincronizzati con l'orologio di riferimento. In particolare, i filtri del renderer usano l'orologio di riferimento per determinare l'ora di presentazione di ogni esempio.
 
-In genere non esiste alcun motivo per cui un'applicazione esegua l'override della scelta dell'orologio di riferimento del gestore del grafico dei filtri. Tuttavia, è possibile eseguire questa operazione chiamando il metodo [**IMediaFilter:: SetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) su Filter Graph Manager. Questo metodo accetta un puntatore all'interfaccia **IReferenceClock** del clock. Chiamare il metodo mentre il grafo viene arrestato.
+In genere, un'applicazione non deve eseguire l'override dell'orologio di riferimento Graph filtro di Manager. È tuttavia possibile eseguire questa operazione chiamando il [**metodo IMediaFilter::SetSyncSource**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) in Filter Graph Manager. Questo metodo accetta un puntatore **all'interfaccia IReferenceClock del** clock. Chiamare il metodo mentre il grafo viene arrestato.
 
-Se un filtro fornisce un clock, è possibile ottenere il puntatore **IReferenceClock** chiamando **QueryInterface** sul filtro. In alternativa, è possibile implementare un clock di riferimento esterno che non viene fornito da un filtro, purché il clock esterno implementi **IReferenceClock**. Nell'esempio seguente viene illustrato come specificare un clock:
+Se un filtro fornisce un clock, è possibile ottenere il puntatore **IReferenceClock** chiamando **QueryInterface** sul filtro. In alternativa, è possibile implementare un clock di riferimento esterno non fornito da un filtro, purché l'orologio esterno **implementi IReferenceClock**. L'esempio seguente illustra come specificare un orologio:
 
 
 ```C++
@@ -45,9 +45,9 @@ if (SUCCEEDED(hr))
 
 
 
-Questo esempio si basa sul presupposto che CreateMyPrivateClock sia una funzione definita dall'applicazione che crea un clock e restituisce un puntatore **IReferenceClock** .
+Questo esempio presuppone che CreateMyPrivateClock sia una funzione definita dall'applicazione che crea un orologio e restituisce un **puntatore IReferenceClock.**
 
-È anche possibile impostare il grafo del filtro per l'esecuzione senza clock, chiamando **SetSyncSource** con il valore **null**. Se non è presente alcun clock, il grafico viene eseguito il più rapidamente possibile. Senza clock, i filtri renderer non attendono l'ora di presentazione di un campione. Ma eseguono il rendering di ogni campione non appena arriva. L'impostazione del grafico per l'esecuzione senza un clock è utile se si desidera elaborare i dati in modo rapido, invece di visualizzarne l'anteprima in tempo reale.
+È anche possibile impostare l'esecuzione del grafico dei filtri senza clock chiamando **SetSyncSource** con il valore **NULL.** Se non è presente alcun orologio, il grafico viene eseguito il più rapidamente possibile. Senza clock, i filtri del renderer non attendono l'ora di presentazione di un esempio. Esegue invece il rendering di ogni campione non appena arriva. L'impostazione del grafico per l'esecuzione senza orologio è utile se si vuole elaborare i dati rapidamente, anziché visualizzarne l'anteprima in tempo reale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -59,7 +59,7 @@ Questo esempio si basa sul presupposto che CreateMyPrivateClock sia una funzione
 [**Classe CBaseReferenceClock**](cbasereferenceclock.md)
 </dt> <dt>
 
-[Time and Clocks in DirectShow](time-and-clocks-in-directshow.md)
+[Ora e orologi in DirectShow](time-and-clocks-in-directshow.md)
 </dt> </dl>
 
  

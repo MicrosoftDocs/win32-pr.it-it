@@ -1,9 +1,9 @@
 ---
 title: PBM_SETMARQUEE messaggio (Commctrl.h)
-description: Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato viene spostato come un rettangolo di selezione.
+description: Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato si sposta come un rettangolo di selezione.
 ms.assetid: 6501bcb9-a711-470f-874f-f3484d3613b6
 keywords:
-- PBM_SETMARQUEE dei messaggi Windows controllo
+- PBM_SETMARQUEE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119986141"
 ---
-# <a name="pbm_setmarquee-message"></a>Messaggio PBM \_ SETMARQUEE
+# <a name="pbm_setmarquee-message"></a>PBM \_ SETMARQUEE message
 
-Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato viene spostato come un rettangolo di selezione.
+Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato si sposta come un rettangolo di selezione.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Indica se attivare o disattivare la modalità di selezione.
 </dd> <dt>
 
 *lParam* 
-</dt> <dd>Tempo, in millisecondi, tra gli aggiornamenti dell'animazione del rettangolo di selezione. Se questo parametro è zero, l'animazione del rettangolo di selezione viene aggiornata ogni 30 millisecondi.</dd> </dl>
+</dt> <dd>Tempo, in millisecondi, tra gli aggiornamenti dell'animazione con sequenza temporale. Se questo parametro è zero, l'animazione del rettangolo di selezione viene aggiornata ogni 30 millisecondi.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -47,7 +47,7 @@ Restituisce sempre **TRUE.**
 
 Usare questo messaggio quando non si conosce la quantità di avanzamento verso il completamento, ma si vuole indicare che lo stato di avanzamento è in corso.
 
-Inviare il **messaggio PBM \_ SETMARQUEE** per avviare o arrestare l'animazione.
+Inviare il **messaggio \_ SETMARQUEE PBM** per avviare o arrestare l'animazione.
 
 > [!Note]  
 > È necessario impostare lo stile del controllo [**su PBS \_ MARQUEE**](progress-bar-control-styles.md) prima di tentare di avviare l'animazione.
@@ -65,8 +65,8 @@ Inviare il **messaggio PBM \_ SETMARQUEE** per avviare o arrestare l'animazione.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

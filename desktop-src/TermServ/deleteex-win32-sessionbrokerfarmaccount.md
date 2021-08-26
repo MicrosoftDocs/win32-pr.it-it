@@ -1,12 +1,12 @@
 ---
 title: Metodo DeleteEx della classe Win32_SessionBrokerFarmAccount
-description: La \_ classe Win32 SessionBrokerFarmAccount non è più disponibile per l'uso in Windows Server 2012. | Metodo DeleteEx della classe Win32_SessionBrokerFarmAccount
+description: La classe \_ Win32 SessionBrokerFarmAccount non è più disponibile per l'uso a Windows Server 2012. | Metodo DeleteEx della classe Win32_SessionBrokerFarmAccount
 ms.assetid: d30c5d3e-f63c-4b21-85ae-a0b8d5868d64
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo DeleteEx
-- Metodo DeleteEx Servizi Desktop remoto, classe Win32_SessionBrokerFarmAccount
-- Classe Win32_SessionBrokerFarmAccount Servizi Desktop remoto, metodo DeleteEx
+- Metodo DeleteEx Servizi Desktop remoto
+- Metodo DeleteEx Servizi Desktop remoto , Win32_SessionBrokerFarmAccount classe
+- Win32_SessionBrokerFarmAccount classe Servizi Desktop remoto , metodo DeleteEx
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdad7b1c7af85337ace59690bb44f4309254eb76
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: aa891c874c9592ed11b2aa0840913e67daa7226a93f6f746cf74c45a0454a476
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080221"
 ---
-# <a name="deleteex-method-of-the-win32_sessionbrokerfarmaccount-class"></a>Metodo DeleteEx della \_ classe SessionBrokerFarmAccount Win32
+# <a name="deleteex-method-of-the-win32_sessionbrokerfarmaccount-class"></a>Metodo DeleteEx della classe \_ SessionBrokerFarmAccount Win32
 
-\[La classe [**Win32 \_ SessionBrokerFarmAccount**](win32-sessionbrokerfarmaccount.md) non è più disponibile per l'uso in Windows Server 2012.\]
+\[La [**classe \_ Win32 SessionBrokerFarmAccount**](win32-sessionbrokerfarmaccount.md) non è più disponibile per l'uso a Windows Server 2012.\]
 
-Elimina l'account farm.
+Elimina l'account della farm.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,16 +45,16 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*DeleteComputerObject* \[ in\]
+*DeleteComputerObject* \[ Pollici\]
 </dt> <dd>
 
-Indica se l'oggetto computer associato alla farm deve essere rimosso dal Active Directory.
+Indica se l'oggetto computer associato alla farm deve essere rimosso da Active Directory.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto di questi valori,](terminal-services-wmi-provider-error-codes.md) fare riferimento Servizi Desktop remoto di errore del provider WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Fine del supporto client<br/>    | Nessuno supportato<br/>                                                              |
 | Fine del supporto server<br/>    | Windows Server 2008 R2<br/>                                                      |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -76,7 +76,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_SessionBrokerFarmAccount Win32**](win32-sessionbrokerfarmaccount.md)
+[**Win32 \_ SessionBrokerFarmAccount**](win32-sessionbrokerfarmaccount.md)
 </dt> </dl>
 
  

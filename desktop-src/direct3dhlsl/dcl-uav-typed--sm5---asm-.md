@@ -1,23 +1,23 @@
 ---
-title: dcl_uav_typed (SM5-ASM)
-description: Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader. | dcl_uav_typed (SM5-ASM)
+title: dcl_uav_typed (sm5 - asm)
+description: Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'uso da parte di uno shader. | dcl_uav_typed (sm5 - asm)
 ms.assetid: F9F5583F-E3D0-447F-9227-BBB1B4E71934
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b789714c7ec825620b73e387fa8a4dd73e1a590d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3ec321389f8c8296bda8ccd1eba947b5ba38adc80c94b3c8c0685b069fcdafbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950581"
 ---
-# <a name="dcl_uav_typed-sm5---asm"></a>DCL \_ UAV \_ tipizzato (SM5-ASM)
+# <a name="dcl_uav_typed-sm5---asm"></a>dcl \_ uav \_ typed (sm5 - asm)
 
-Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader.
+Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'uso da parte di uno shader.
 
 
 
-| \_ \_ \[ \_ GLC \] dstUAV, dimensione, tipo di DCL UAV |
+| dcl \_ uav \_ typed \[ \_ glc \] dstUAV, dimension, type |
 |--------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da u
 
 | Elemento                                                                                           | Descrizione                                                                                       |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/> | \[nel \] UAV.<br/>                                                                        |
-| <span id="dimension"></span><span id="DIMENSION"></span>*dimensione*<br/>                 | \[in \] specifica il numero di dimensioni fornite dalle istruzioni che accedono al UAV.<br/> |
-| <span id="type"></span><span id="TYPE"></span>*tipo*<br/>                                | \[nel \] tipo di UAV.<br/>                                                            |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/> | \[\]nell'UAV.<br/>                                                                        |
+| <span id="dimension"></span><span id="DIMENSION"></span>*Dimensione*<br/>                 | \[in \] specifica il numero di dimensioni fornite nelle istruzioni che accedono all'UAV.<br/> |
+| <span id="type"></span><span id="TYPE"></span>*digitare*<br/>                                | \[in \] Tipo dell'UAV.<br/>                                                            |
 
 
 
@@ -38,19 +38,19 @@ Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da u
 
 ## <a name="remarks"></a>Commenti
 
-*dstUAV* è un \# registro u dichiarato come riferimento a un UnorderedAccessView che deve essere associato allo slot UAV nell' \# API.
+*dstUAV è* un registro u dichiarato come riferimento a un oggetto UnorderedAccessView che deve essere associato allo \# slot UAV \# nell'API.
 
-La dimensione deve essere buffer, Texture1D, Texture1DArray, Texture2D, Texture2DArray o Texture3D. Questo indica il numero di dimensioni delle istruzioni che accedono al UAV che forniscono: 1 (Texture1D, buffer), 2 (Texture1DArray, Texture2D) o 3 (Texture2DArray, Texture3D).
+La dimensione deve essere buffer, Texture1D, Texture1DArray, Texture2D, Texture2DArray o Texture3D. Indica il numero di dimensioni fornite da qualsiasi istruzione che accede all'UAV: 1 (Texture1D, Buffer), 2 (Texture1DArray, Texture2D) o 3 (Texture2DArray, Texture3D).
 
-Il tipo è {UNORM, RUSSAr, UINT, SINT, FLOAT}. Le operazioni eseguite con l'u dichiarata \# devono essere compatibili con il tipo dichiarato qui e l'UAV associato allo slot \# deve avere lo stesso tipo.
+Il tipo è {UNORM,SNORM,UINT,SINT,FLOAT}. Le operazioni eseguite con l'u dichiarato devono essere compatibili con il tipo dichiarato qui e anche l'UAV associato allo \# slot deve avere lo stesso \# tipo.
 
-Il \_ flag GLC si basa su "globalmente coerente". L'assenza di \_ GLC significa che il UAV viene dichiarato solo come "gruppo coerente" nel compute shader o "coerente localmente" in una singola chiamata di pixel shader.
+Il \_ flag glc è l'acronimo di "globally coherent". L'assenza di glc indica che l'UAV viene dichiarato solo come "coerente del gruppo" nello shader di calcolo o "coerente localmente" in una singola pixel shader \_ chiamata.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -58,11 +58,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -71,11 +71,11 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
  
 
 > [!Note]  
-> Questa istruzione non è supportata in Compute Shader 4. x.
+> Questa istruzione non è supportata in compute shader 4.x.
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -83,12 +83,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -98,7 +98,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Elemento DropDownButton
-description: Rappresenta un controllo pulsante Drop-Down standard.
+description: Rappresenta un controllo Pulsante Drop-Down standard.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
 - Elemento DropDownButton Windows ribbon
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3275e6de398c42d29424b2a1f9b0c750989357ef21c10d5db1e1680e7adb0836
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08353f4d6c743d92eff08f83e90babb9cc9d075f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118707269"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623927"
 ---
 # <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
@@ -40,10 +40,10 @@ Rappresenta un [controllo Pulsante a discesa](windowsribbon-controls-dropdownbut
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,23 +1,23 @@
 ---
-description: Quando illuminato da una sorgente di luce, oggetti lucidi, quelli che usano materiali altamente riflettenti, ricevono evidenziazioni speculari.
+description: Quando sono illuminati da una sorgente di luce, gli oggetti luminosi, quelli che usano materiali altamente riflettenti, ricevono evidenziazioni speculari.
 ms.assetid: cea53131-1e2e-4389-80fd-ef5a0d068703
-title: Mappe chiare speculari (Direct3D 9)
+title: Luce speculare Mappe (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d55b4bf34baae0e73c2d072d62470533fc99827a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 05362eb4c0b79ebb980a6c0acb1607713765a446c0ef27823ae0e648cef88d68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026101"
 ---
-# <a name="specular-light-maps-direct3d-9"></a>Mappe chiare speculari (Direct3D 9)
+# <a name="specular-light-maps-direct3d-9"></a>Luce speculare Mappe (Direct3D 9)
 
-Quando illuminato da una sorgente di luce, oggetti lucidi, quelli che usano materiali altamente riflettenti, ricevono evidenziazioni speculari. In alcuni casi, le evidenziazioni speculari prodotte dal modulo illuminazione non sono accurate. Per produrre un'evidenziazione più accattivante, molte applicazioni Direct3D applicano mappe chiare speculari alle primitive.
+Quando sono illuminati da una sorgente di luce, gli oggetti luminosi, quelli che usano materiali altamente riflettenti, ricevono evidenziazioni speculari. In alcuni casi, le evidenziazioni speculari prodotte dal modulo di illuminazione non sono accurate. Per produrre un'evidenziazione più accattivante, molte applicazioni Direct3D applicano mappe di luce speculare alle primitive.
 
-Per eseguire il mapping della luce speculare, aggiungere la mappa a luce speculare alla trama della primitiva, quindi modulare (moltiplicare il risultato per) la mappa chiara RGB.
+Per eseguire il mapping della luce speculare, aggiungere la mappa di luce speculare alla trama della primitiva, quindi modulare (moltiplicare il risultato per) la mappa di luce RGB.
 
-Nell'esempio di codice seguente viene illustrato questo processo in C++.
+L'esempio di codice seguente illustra questo processo in C++.
 
 
 ```
@@ -60,7 +60,7 @@ d3dDevice->SetTextureStageState(2,D3DTSS_COLORARG2, D3DTA_CURRENT );
 
 <dl> <dt>
 
-[Mapping chiaro con trame](light-mapping-with-textures.md)
+[Mapping di luce con trame](light-mapping-with-textures.md)
 </dt> </dl>
 
  

@@ -49,7 +49,7 @@ HRESULT D3DXSaveSurfaceToFileInMemory(
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un [**OGGETTO ID3DXBuffer in**](id3dxbuffer.md) cui verrà archiviata l'immagine.
+Indirizzo di un puntatore a [**un oggetto ID3DXBuffer**](id3dxbuffer.md) che archivierà l'immagine.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Indirizzo di un puntatore a un [**OGGETTO ID3DXBuffer in**](id3dxbuffer.md) cui 
 
 Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ FILEFORMAT che**](./d3dximage-fileformat.md) specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (con estensione ppm) e Dell'adattatore grafico Bitmap/Truevision (TGA).
+[**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md) che specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (.ppm) e Dell'adattatore grafico Persica/Truevision (.tga).
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntatore [**all'interfaccia IDirect3DSurface9**](/windows/win32/api/d3d9helper/
 
 Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a [**una struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
+Puntatore a una [**struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 

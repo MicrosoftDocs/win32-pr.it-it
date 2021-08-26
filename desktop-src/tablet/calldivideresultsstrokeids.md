@@ -1,7 +1,7 @@
 ---
-description: Recupera le proprietà ID per gli oggetti IInkStrokeDisp della parola, della riga, del paragrafo o del disegno corrispondente determinati dall'analisi dell'input penna.
+description: Recupera le proprietà Id per gli oggetti IInkStrokeDisp della parola, della riga, del paragrafo o del disegno corrispondenti determinati dall'analisi dell'input penna.
 ms.assetid: f05ffa3b-2a47-46fe-bb8f-e682aa094b69
-title: CallDivideResultsStrokeIds (funzione)
+title: Funzione CallDivideResultsStrokeIds
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: ee690c9564df3b8c75eca6eec8eeb88b7531f4ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64b3e4180a34c45890408f8ba92cc79465fffa7f1028152e27f8d5c0aa40e3e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009131"
 ---
-# <a name="calldivideresultsstrokeids-function"></a>CallDivideResultsStrokeIds (funzione)
+# <a name="calldivideresultsstrokeids-function"></a>Funzione CallDivideResultsStrokeIds
 
-Recupera le proprietà [**ID**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) per gli oggetti [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) della parola, della riga, del paragrafo o del disegno corrispondente determinati dall'analisi dell'input penna.
+Recupera le proprietà [**Id**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) per gli [**oggetti IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) della parola, della riga, del paragrafo o del disegno corrispondenti determinati dall'analisi dell'input penna.
 
 Questa funzione non deve essere usata dal codice dell'applicazione.
 
@@ -46,35 +46,35 @@ HRESULT WINAPI CallDivideResultsStrokeIds(
 
 <dl> <dt>
 
-*hDivider* \[ in\]
+*hDivider* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto [divisore](the-divider-object.md) .
+Handle per [l'oggetto Divider.](the-divider-object.md)
 
 </dd> <dt>
 
-*\[ aWordStrokeIds \]* in \[ uscita\]
+*aWordStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
 Matrice degli ID tratto dell'input penna nella parola.
 
 </dd> <dt>
 
-*\[ aLineStrokeIds \]* in \[ uscita\]
+*aLineStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
 Matrice degli ID tratto dell'input penna nella riga.
 
 </dd> <dt>
 
-*\[ aParagraphStrokeIds \]* in \[ uscita\]
+*aParagraphStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
 Matrice degli ID tratto dell'input penna nel paragrafo.
 
 </dd> <dt>
 
-*\[ aDrawingStrokeIds \]* in \[ uscita\]
+*aDrawingStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
 Matrice degli ID tratto dell'input penna nel disegno.
@@ -89,8 +89,8 @@ Questa funzione può restituire uno di questi valori.
 
 | Codice restituito                                                                                  | Descrizione                                     |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Funzione completata.<br/>              |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il parametro *hDivider* non è valido.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Funzione completata.<br/>              |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Il *parametro hDivider* non è valido.<br/> |
 
 
 
@@ -102,7 +102,7 @@ Questa funzione può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                         |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                         |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                             |
 | Libreria<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

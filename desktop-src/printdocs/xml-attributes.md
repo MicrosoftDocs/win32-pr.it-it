@@ -4,12 +4,12 @@ ms.assetid: 41bc10fe-6c00-44c5-ba9a-10414b31cbdf
 title: Attributi XML
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5312137328de0bf5c2fa8609b53cdf39b7eb15fde9dc1517ae6cc0394d8c12f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7bf76889fdf38c6636b4beb5ba566b18af69e34c
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886291"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622977"
 ---
 # <a name="xml-attributes"></a>Attributi XML
 
@@ -23,10 +23,10 @@ Anche se le parti private non sono autorizzate a introdurre nuove definizioni ne
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -76,7 +76,7 @@ Nell'esempio seguente viene illustrato come identificare un'istanza di Option us
 <li>DeviceSettings <br/></li>
 </ul></td>
 <td>Indica se l'opzione è disponibile per la selezione o per l'uso. <br/></td>
-<td>I valori consentiti dell'attributo vincolato hanno i significati seguenti. Si noti che questi valori sono elencati in ordine, dal meno restrittivo (Nessuno) al più restrittivo (DeviceSettings).<br/> Nessuno <br/>
+<td>I valori consentiti dell'attributo vincolato hanno i significati seguenti. Si noti che questi valori sono elencati nell'ordine, dal meno restrittivo (Nessuno) al più restrittivo (DeviceSettings).<br/> Nessuno <br/>
 <ul>
 <li>L'opzione non è vincolata. <br/></li>
 </ul>

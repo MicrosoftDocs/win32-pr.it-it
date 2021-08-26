@@ -3,7 +3,7 @@ title: NM_RELEASEDCAPTURE codice di notifica (Commctrl.h)
 description: Notifica alla finestra padre di un controllo che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 222a3be1-20f1-43c6-b982-852512209a45
 keywords:
-- NM_RELEASEDCAPTURE del codice di notifica Windows controlli
+- NM_RELEASEDCAPTURE codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:

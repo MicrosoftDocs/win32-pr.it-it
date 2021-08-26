@@ -1,5 +1,5 @@
 ---
-description: Definisce costanti che descrivono i valori dello stato di trasformazione.
+description: Definisce le costanti che descrivono i valori dello stato di trasformazione.
 ms.assetid: 53535d9f-246a-42cf-82a2-fb3cf6d4ebac
 title: Enumerazione D3DTRANSFORMSTATETYPE (D3D9Types.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119986991"
 ---
 # <a name="d3dtransformstatetype-enumeration"></a>Enumerazione D3DTRANSFORMSTATETYPE
 
-Definisce costanti che descrivono i valori dello stato di trasformazione.
+Definisce le costanti che descrivono i valori dello stato di trasformazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -122,20 +122,20 @@ Identifica la matrice di trasformazione impostata per la fase di trama specifica
 <span id="D3DTS_FORCE_DWORD"></span><span id="d3dts_force_dword"></span>**D3DTS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbero la compilazione di questa enumerazione a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Gli stati di trasformazione nell'intervallo da 256 a 511 sono riservati per archiviare fino a 256 matrici mondiali che possono essere indicizzate usando le macro D3DTS \_ WORLDMATRIX e D3DTS \_ WORLD.
+Gli stati di trasformazione nell'intervallo da 256 a 511 sono riservati per archiviare fino a 256 matrici del mondo che possono essere indicizzate usando le macro D3DTS \_ WORLDMATRIX e D3DTS \_ WORLD.
 
 
 
 | Macro                                                  | Descrizione                                                                                                                                                                      |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**MONDO D3DTS \_**](d3dts-world.md)                     | Equivalente a D3DTS \_ WORLDMATRIX(0).                                                                                                                                  |
-| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (indice) | Identifica la matrice di trasformazione da impostare per la matrice globale in corrispondenza dell'indice. Più matrici world vengono usate solo per la fusione dei vertici. In caso contrario, viene usato solo D3DTS \_ WORLD. |
+| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (indice) | Identifica la matrice di trasformazione da impostare per la matrice globale in corrispondenza dell'indice. Più matrici di mondo vengono usate solo per la fusione dei vertici. In caso contrario, viene usato solo D3DTS \_ WORLD. |
 
 
 

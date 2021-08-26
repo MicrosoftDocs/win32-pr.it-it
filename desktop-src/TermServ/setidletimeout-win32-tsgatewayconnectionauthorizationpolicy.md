@@ -1,12 +1,12 @@
 ---
-title: Metodo SetIdleTimeout della Win32_TSGatewayConnectionAuthorizationPolicy classe
+title: Metodo SetIdleTimeout della classe Win32_TSGatewayConnectionAuthorizationPolicy
 description: Imposta la proprietà IdleTimeout.
 ms.assetid: 162224dd-e4d4-483f-9ec4-b87731bc5014
 ms.tgt_platform: multiple
 keywords:
 - Metodo SetIdleTimeout Servizi Desktop remoto
 - Metodo SetIdleTimeout Servizi Desktop remoto , Win32_TSGatewayConnectionAuthorizationPolicy classe
-- Win32_TSGatewayConnectionAuthorizationPolicy classe Servizi Desktop remoto, metodo SetIdleTimeout
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Servizi Desktop remoto metodo SetIdleTimeout
 topic_type:
 - apiref
 api_name:
@@ -56,13 +56,13 @@ Nuovo valore di timeout, in minuti. Il valore 0 indica che non è presente alcun
 
 Tipo: **uint32**
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
 
-Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Manage
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 

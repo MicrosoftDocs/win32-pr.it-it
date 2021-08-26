@@ -1,33 +1,33 @@
 ---
 title: Identificatori di trasporto
-description: In mprapi. h sono elencati anche gli identificatori di trasporto (o della famiglia di protocolli) seguenti.
+description: Anche gli identificatori di trasporto (o famiglia di protocolli) seguenti sono elencati in Mprapi.h.
 ms.assetid: 7720c34f-0558-49de-8f82-13a67e2c8c69
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb09684ebb56834cbe642c422ad611a8fb331a36
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b512feb0dfdf19a4c7cc198fbd13fa8d3bfbbd7d39f4247944a957c1bf6a19f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025491"
 ---
 # <a name="transport-identifiers"></a>Identificatori di trasporto
 
-In mprapi. h sono elencati anche gli identificatori di trasporto (o della famiglia di protocolli) seguenti.
+Anche gli identificatori di trasporto (o famiglia di protocolli) seguenti sono elencati in Mprapi.h.
 
 
 
 | Valore      | Trasporto (famiglia di protocolli)                               |
 |------------|-----------------------------------------------------------|
-| \_ATALK PID | AppleTalk                                                 |
-| \_IP PID    | Protocollo Internet versione 4                               |
-| PID \_ IPX   | Scambio di pacchetti Internet                                  |
-| \_NBF PID   | Protocollo frame NetBIOS                                   |
-| \_IPv6 PID  | Windows Server 2008 o versioni successive: protocollo Internet versione 6 |
+| PID \_ ATALK | Appletalk                                                 |
+| PID \_ IP    | protocollo IP versione 4                               |
+| PID \_ IPX   | Internet Packet Exchange                                  |
+| PID \_ NBF   | Protocollo frame NetBIOS                                   |
+| PID \_ IPV6  | Windows Server 2008 o versione successiva: Protocollo Internet versione 6 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -39,12 +39,12 @@ In mprapi. h sono elencati anche gli identificatori di trasporto (o della famigl
 [Informazioni su Gestione router e MIB](/windows/desktop/RRAS/about-router-management-with-mib)
 </dt> <dt>
 
-[Riferimento MIB di gestione router](router-management-mib-reference.md)
+[Riferimento MIB gestione router](router-management-mib-reference.md)
 </dt> <dt>
 
-[Costanti di trasporto e di protocollo](transport-and-protocol-constants.md)
+[Costanti di trasporto e protocollo](transport-and-protocol-constants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

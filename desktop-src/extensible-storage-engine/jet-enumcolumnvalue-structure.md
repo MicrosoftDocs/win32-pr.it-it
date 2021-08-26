@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_ENUMCOLUMNVALUE'
-title: Struttura JET_ENUMCOLUMNVALUE
+description: 'Altre informazioni su: JET_ENUMCOLUMNVALUE Structure'
+title: JET_ENUMCOLUMNVALUE struttura
 TOCTitle: JET_ENUMCOLUMNVALUE Structure
 ms:assetid: a9882d7b-0c53-4a5d-bc98-0979e6e68c88
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294052(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bc95c6b8403a64432451ea29dbb66868fad25264
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86905d49bb798d37bad48087c48e77349ec10f57
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316487"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482287"
 ---
-# <a name="jet_enumcolumnvalue-structure"></a>Struttura JET_ENUMCOLUMNVALUE
+# <a name="jet_enumcolumnvalue-structure"></a>JET_ENUMCOLUMNVALUE struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_enumcolumnvalue-structure"></a>Struttura JET_ENUMCOLUMNVALUE
+## <a name="jet_enumcolumnvalue-structure"></a>JET_ENUMCOLUMNVALUE struttura
 
-La struttura **JET_ENUMCOLUMNVALUE** enumera i valori di colonna di un record utilizzando la funzione [JetEnumerateColumns](./jetenumeratecolumns-function.md) . [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice di strutture di **JET_ENUMCOLUMNVALUE** . La matrice viene restituita nella memoria allocata utilizzando il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a tale funzione.
+La **JET_ENUMCOLUMNVALUE** enumera i valori di colonna di un record usando la [funzione JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice **di** JET_ENUMCOLUMNVALUE struttura. La matrice viene restituita in memoria allocata usando il callback compatibile di [riallocare](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a tale funzione.
 
 ```cpp
     typedef struct {
@@ -44,75 +44,38 @@ La struttura **JET_ENUMCOLUMNVALUE** enumera i valori di colonna di un record ut
 
 **itagSequence**
 
-Valore della colonna (in base a un indice in base 1) enumerato.
+Valore della colonna (in base all'indice in base uno) enumerato.
 
 **Err**
 
 Codice di stato della colonna risultante dall'enumerazione del valore della colonna.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valore</p></th>
-<th><p>Significato</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_wrnColumnNull</p></td>
-<td><p>Il valore della colonna richiesto è NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnColumnSkipped</p></td>
-<td><p>Il <em>itagSequence</em> specificato nell'elemento della matrice <em>rgtagSequence</em> nello struct <a href="gg294138(v=exchg.10).md">JET_ENUMCOLUMN</a> corrispondente a questo struct di <strong>JET_ENUMCOLUMNVALUE</strong> è zero.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnColumnTruncated</p></td>
-<td><p>Il valore della colonna richiesta è stato troncato alla dimensione specificata prima di essere restituito.</p>
-<p>Questo troncamento si verifica solo per il testo lungo e per le colonne binarie lunghe che contengono grandi quantità di dati.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>valore</p> | <p>Significato</p> | 
+|--------------|----------------|
+| <p>JET_wrnColumnNull</p> | <p>Il valore della colonna richiesta è NULL.</p> | 
+| <p>JET_wrnColumnSkipped</p> | <p><em>L'elemento itagSequence</em> specificato nell'elemento della matrice <em>rgtagSequence</em> nello struct <a href="gg294138(v=exchg.10).md">JET_ENUMCOLUMN</a> corrispondente JET_ENUMCOLUMNVALUE <strong>struct</strong> era zero.</p> | 
+| <p>JET_wrnColumnTruncated</p> | <p>Il valore della colonna richiesta è stato troncato alle dimensioni specificate prima di essere restituito.</p><p>Questo troncamento si verifica solo per le colonne di testo lungo e binarie lunghe che contengono grandi quantità di dati.</p> | 
+
 
 
 **cbData**
 
-Valore di colonna enumerato per la colonna.
+Valore della colonna enumerata per la colonna.
 
-Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Il buffer di output viene restituito in memoria allocata usando il callback compatibile di [riallocare](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito [a JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 **pvData**
 
-Valore di colonna enumerato per la colonna.
+Valore della colonna enumerata per la colonna.
 
-Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Il buffer di output viene restituito in memoria allocata usando il callback compatibile di [riallocare](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito [a JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche

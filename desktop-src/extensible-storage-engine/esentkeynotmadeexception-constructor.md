@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentKeyNotMadeException'
-title: Costruttore EsentKeyNotMadeException
+description: 'Altre informazioni su: Costruttore EsentKeyNotException'
+title: Costruttore EsentKeyNotException
 TOCTitle: 'EsentKeyNotMadeException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentKeyNotMadeException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeynotmadeexception.esentkeynotmadeexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca8f0a82e0d7974536fc72be5acce867c8925f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4b8865bdfb7d8f017db4e55fdb2978b1d4c8107958737e89155d7835ad62b37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064351"
 ---
-# <a name="esentkeynotmadeexception-constructor"></a>Costruttore EsentKeyNotMadeException
+# <a name="esentkeynotmadeexception-constructor"></a>Costruttore EsentKeyNotException
 
-Inizializza una nuova istanza della classe EsentKeyNotMadeException.
+Inizializza una nuova istanza della classe EsentKeyNotException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,8 +56,8 @@ public EsentKeyNotMadeException()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe EsentKeyNotMadeException](./esentkeynotmadeexception-class.md)
+[Classe EsentKeyNotException](./esentkeynotmadeexception-class.md)
 
-[Membri di EsentKeyNotMadeException](./esentkeynotmadeexception-members.md)
+[Membri di EsentKeyNotException](./esentkeynotmadeexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

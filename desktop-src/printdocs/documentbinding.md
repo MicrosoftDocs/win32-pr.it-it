@@ -1,21 +1,21 @@
 ---
 description: Informazioni sull'elemento DocumentBinding, che descrive il metodo di associazione. DocumentBinding e JobBindAllDocuments si escludono a vicenda.
 ms.assetid: 36a7c360-2d26-46b9-b829-0fb35b36c79c
-title: DocumentBinding
+title: Associazione documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2b8f44c90cdef37a6599bf25904949748c82ba
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e8d7b3ed43aed1111d39e02e09f9f4ee658938b45053d64bec3beda4490f87b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949871"
 ---
-# <a name="documentbinding"></a>DocumentBinding
+# <a name="documentbinding"></a>Associazione documento
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive il metodo di associazione. Ogni documento viene associato separatamente. DocumentBinding e JobBindAllDocuments si escludono a vicenda. Il driver deve determinare la gestione dei vincoli tra le parole chiave.
+Descrive il metodo di associazione. Ogni documento è associato separatamente. DocumentBinding e JobBindAllDocuments si escludono a vicenda. È responsabilità del driver determinare la gestione dei vincoli tra parole chiave.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto strutturale](#structural-content)
@@ -63,9 +63,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                                |
 |------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
+| \_OptionName\_<br/>          | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                                                                                                                     |
 | \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                           |
-| \_BindingGutterValue\_<br/>  | Intero<br/> | Micron<br/>    | Maggiore o uguale a 0.<br/>                                                                                                                                                | Definisce la distanza minima dell'associazione per l'associazione finale specificata. La grondaia viene misurata in micron rispetto al bordo della dimensione dei supporti fisici.<br/> |
+| \_BindingGutterValue\_<br/>  | Intero<br/> | Micron<br/>    | Maggiore o uguale a 0.<br/>                                                                                                                                                | Definisce la barra di associazione minima per l'associazione finale specificata. La barra di margine viene misurata in micron rispetto al bordo della dimensione fisica dei supporti.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentBinding">

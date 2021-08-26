@@ -1,17 +1,17 @@
 ---
 description: Specifica il formato di input corrente per il decodificatore.
 ms.assetid: 8fddf8c3-268e-4706-9003-e4bfb03d5278
-title: Proprietà AVDecCommonInputFormat (codecapis. h)
+title: Proprietà AVDecCommonInputFormat (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7432d2a48727ec144d4206d4a11bfe65ce2c5d2a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 187e923be9c53cebbb55663d55ec6351be38f84c33f8c03277f587d61a4db719
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079491"
 ---
-# <a name="avdeccommoninputformat-property"></a>Proprietà AVDecCommonInputFormat
+# <a name="avdeccommoninputformat-property"></a>AVDecCommonInputFormat - proprietà
 
 Specifica il formato di input corrente per il decodificatore.
 
@@ -23,25 +23,25 @@ Questa proprietà è di sola lettura.
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVDecCommonInputFormat**
+**CODECAPI \_ AVDecCommonInputFormat**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione di stringa di un GUID. Sono definiti i seguenti GUID.
+Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione di stringa di un GUID. Sono definiti i GUID seguenti.
 
 
 
 | **GUID**                                            | Descrizione                                    |
 |-----------------------------------------------------|------------------------------------------------|
-| **\_GUID AVDecAudioInputAAC di CODEcapi \_**              | Codifica audio avanzata (AAC)                    |
-| **\_GUID AVDecAudioInputDolbyDigitalPlus di CODEcapi \_** | Audio Dolby Digital Plus                       |
-| **\_GUID AVDecAudioInputDolby di CODEcapi \_**            | Audio Dolby                                    |
-| **\_GUID AVDecAudioInputDTS di CODEcapi \_**              | Audio DTS                                      |
-| **\_GUID AVDecAudioInputHEAAC di CODEcapi \_**            | High-Efficiency codifica audio avanzata (HE-AAC) |
-| **\_GUID AVDecAudioInputMPEG di CODEcapi \_**             | Audio MPEG                                     |
-| **\_GUID AVDecAudioInputPCM di CODEcapi \_**              | Audio PCM                                      |
-| **\_GUID AVDecAudioInputWMA di CODEcapi \_**              | Windows Media Audio                            |
-| **\_GUID AVDecAudioInputWMAPro di CODEcapi \_**           | Windows Media Audio 9 Professional (WMA Pro)   |
+| **CODECAPI \_ GUID \_ AVDecAudioInputAAC**              | Codifica audio avanzata (AAC)                    |
+| **CODECAPI \_ GUID \_ AVDecAudioInputDolbyDigitalPlus** | Dolby Digital Plus audio                       |
+| **CODECAPI \_ GUID \_ AVDecAudioInputDolby**            | Audio Dolby                                    |
+| **CODECAPI \_ GUID \_ AVDecAudioInputDTS**              | Audio DTS                                      |
+| **CODECAPI \_ GUID \_ AVDecAudioInputHEAAC**            | High-Efficiency codifica audio avanzata (HE-AAC) |
+| **CODECAPI \_ GUID \_ AVDecAudioInputMPEG**             | Audio MPEG                                     |
+| **CODECAPI \_ GUID \_ AVDecAudioInputPCM**              | Audio PCM                                      |
+| **CODECAPI \_ GUID \_ AVDecAudioInputWMA**              | Windows Media Audio                            |
+| **CODECAPI \_ GUID \_ AVDecAudioInputWMAPro**           | Windows Audio multimediale 9 Professional (WMA Pro)   |
 
 
 
@@ -53,9 +53,9 @@ Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione d
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Il valore di questa proprietà è un **BSTR** che contiene la rappresentazione d
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

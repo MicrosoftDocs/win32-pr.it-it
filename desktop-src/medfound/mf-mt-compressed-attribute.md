@@ -1,19 +1,19 @@
 ---
-description: Specifica se i dati multimediali sono compressi per un tipo di supporto.
+description: Specifica per un tipo di supporto se i dati multimediali sono compressi.
 ms.assetid: b44fb757-4390-4392-b1cb-37772b4ae3fb
-title: Attributo MF_MT_COMPRESSED (Mfapi. h)
+title: MF_MT_COMPRESSED attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d049795f09845b5d32daf29ef033ab2e4b23007f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afea99ffb0c9f7f9f53fb6edd0b4b87b2ecd4ff4f451e5fd0e56d47a70aee994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060691"
 ---
-# <a name="mf_mt_compressed-attribute"></a>\_ \_ Attributo compresso MF mt
+# <a name="mf_mt_compressed-attribute"></a>Attributo \_ MT COMPRESSED di MF \_
 
-Specifica se i dati multimediali sono compressi per un tipo di supporto.
+Specifica per un tipo di supporto se i dati multimediali sono compressi.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,13 +23,13 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Se questo attributo è **true**, il tipo di supporto è un formato compresso. In caso contrario, il tipo di supporto non è compresso o il tipo di compressione non è noto.
+Se questo attributo è **TRUE,** il tipo di supporto è un formato compresso. In caso contrario, il tipo di supporto non è compresso o il tipo di compressione non è noto.
 
-Non è garantito che l'attributo sia impostato su **true** per tutti i formati compressi, quindi le applicazioni in genere non si basano su questo attributo. Il modo più affidabile per determinare se un formato è compresso consiste nel mantenere un elenco di formati noti. Se un'applicazione non riconosce un formato, come specificato nell'attributo del [**\_ \_ sottotipo MF mt**](mf-mt-subtype-attribute.md) , non dovrebbe presupporre nulla sulla compressione del formato.
+Non è garantito che questo attributo sia impostato su **TRUE** per tutti i formati compressi, pertanto le applicazioni in genere non devono basarsi su questo attributo. Il modo più affidabile per determinare se un formato è compresso è mantenere un elenco di formati noti. Se un'applicazione non riconosce un formato, come specificato nell'attributo [**\_ MF MT \_ SUBTYPE,**](mf-mt-subtype-attribute.md) non deve presupporre nulla sulla compressione del formato.
 
-Per determinare se un formato usa la compressione temporale (ad esempio, alcuni esempi vengono calcolati come Delta degli esempi precedenti), controllare l'attributo [**indipendente da tutti i campioni di MF \_ mt \_ All \_ \_**](mf-mt-all-samples-independent-attribute.md) .
+Per determinare se un formato usa la compressione temporale (ovvero alcuni campioni vengono calcolati come delta da esempi precedenti), controllare l'attributo [**\_ MF MT \_ ALL SAMPLES \_ \_ INDEPENDENT.**](mf-mt-all-samples-independent-attribute.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,13 +47,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

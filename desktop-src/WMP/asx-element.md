@@ -3,7 +3,7 @@ title: Elemento ASX
 description: L'elemento ASX definisce un file come metafile.
 ms.assetid: 130220a0-959c-4c13-aa7d-06b6bbebc9cc
 keywords:
-- Windows elemento ASX Media Player
+- Elemento ASX Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b77cb6c379319c97377b2a3953a9f8fd86b65938
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 509cdbc25c57c6d0b556433c3bee8b1e68083248c8356769a31529b83c2df1f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902830"
 ---
 # <a name="asx-element"></a>Elemento ASX
 
-L'elemento **ASX** definisce un file come metafile.
+**L'elemento ASX** definisce un file come metafile.
 
 ``` syntax
 <ASX
@@ -37,11 +37,11 @@ L'elemento **ASX** definisce un file come metafile.
 
 `VERSION` (obbligatorio)
 
-Numero decimale che rappresenta il numero di versione della sintassi per il metafile. Impostare su 3 o 3,0.
+Numero decimale che rappresenta il numero di versione della sintassi per il metafile. Impostare su 3 o 3.0.
 
 **PREVIEWMODE** (facoltativo)
 
-Valore che indica se Windows Media Player passa alla modalità di anteprima prima di riprodurre il primo clip.
+Valore che indica se Windows Media Player attiva la modalità di anteprima prima di riprodurre il primo clip.
 
 Deve essere uno dei valori seguenti.
 
@@ -49,8 +49,8 @@ Deve essere uno dei valori seguenti.
 
 | Valore | Descrizione                                                                                        |
 |-------|----------------------------------------------------------------------------------------------------|
-| YES   | Windows Media Player passa alla modalità di anteprima prima di riprodurre il primo clip.                            |
-| NO    | Il valore predefinito. Windows Media Player non entra in modalità di anteprima prima di riprodurre il primo clip. |
+| YES   | Windows Media Player la modalità di anteprima prima di riprodurre il primo clip.                            |
+| NO    | Il valore predefinito. Windows Media Player non entra nella modalità di anteprima prima di riprodurre il primo clip. |
 
 
 
@@ -58,7 +58,7 @@ Deve essere uno dei valori seguenti.
 
 **BANNERBAR** (facoltativo)
 
-Valore che indica se Windows Media Player riserva spazio per una rappresentazione grafica del banner.
+Valore che indica se Windows Media Player spazio per un'immagine del banner.
 
 Deve essere uno dei valori seguenti.
 
@@ -66,8 +66,8 @@ Deve essere uno dei valori seguenti.
 
 | Valore | Descrizione                                                                                                                                |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| AUTO  | Il valore predefinito. Windows Media Player riserva spazio per la barra del banner solo quando una parte di contenuto ne include una.                       |
-| FIXED | Windows Media Player riserva uno spazio fisso per un grafico banner per ogni parte di contenuto riprodotta, a prescindere dal fatto che sia presente un banner associato. |
+| AUTO  | Il valore predefinito. Windows Media Player spazio per la barra del banner solo quando una parte di contenuto ne include una.                       |
+| FIXED | Windows Media Player riserva uno spazio fisso per un'immagine del banner per ogni contenuto riprodotto, indipendentemente dal fatto che sia presente un banner associato. |
 
 
 
@@ -79,8 +79,8 @@ Deve essere uno dei valori seguenti.
 
 | Gerarchia       | Elementi                                                                                                                                                               |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Elementi padre | Nessuna. L'elemento **ASX** deve essere il primo elemento di ogni metafile.                                                                                                 |
-| Elementi figlio  | **abstract**, **Author**, **banner**, **base**, **Copyright**, **entry**, **ENTRYREF**, **Event**, **moreinfo**, **PREVIEWDURATION**, **param**, **Repeat**, **title** |
+| Elementi padre | Nessuno. **L'elemento ASX** deve essere il primo elemento in ogni metafile.                                                                                                 |
+| Elementi figlio  | **ABSTRACT,** **AUTHOR,** **BANNER,** **BASE,** **COPYRIGHT,** **ENTRY,** **ENTRYREF,** **EVENT,** **MOREINFO,** **PREVIEWDURATION,** **PARAM,** **REPEAT,** **TITLE** |
 
 
 
@@ -88,19 +88,19 @@ Deve essere uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-I primi quattro caratteri di una playlist di metafile devono essere "<ASX". Gli altri elementi definiti nell'ambito dell'elemento **ASX** , ad esempio **titolo** e **autore**, sono associati alle informazioni di visualizzazione visualizzate da Windows Media Player.
+I primi quattro caratteri di una playlist di metafile devono essere "<ASX". Altri elementi definiti nell'ambito dell'elemento **ASX,** ad esempio **TITLE** e **AUTHOR,** sono associati alle informazioni di visualizzazione visualizzate da Windows Media Player.
 
-Per Windows Media Player, il numero di versione della sintassi è 3,0. Windows Media Player supporta tutte le versioni precedenti della sintassi del metafile. I valori accettabili per l'attributo **Version** includono sia 3,0 che 3 (senza virgola decimale).
+Ad Windows Media Player, il numero di versione della sintassi è 3.0. Windows Media Player supporta tutte le versioni precedenti della sintassi dei metafile. I valori accettabili per **l'attributo VERSION** includono sia 3.0 che 3 (senza separatore decimale).
 
-Se il valore dell'attributo **PREVIEWMODE** è sì, Windows Media Player passa immediatamente alla modalità di anteprima prima di riprodurre il primo clip. Quando Windows Media Player passa alla modalità di anteprima, Visualizza in anteprima ogni clip a cui viene fatto riferimento nel metafile. L'elemento **PREVIEWDURATION** determina la durata di ogni anteprima.
+Se il valore **dell'attributo PREVIEWMODE** è YES, Windows Media Player attiva immediatamente la modalità di anteprima prima di riprodurre il primo clip. Quando Windows Media Player attiva la modalità di anteprima, visualizza in anteprima ogni clip a cui viene fatto riferimento nel metafile. **L'elemento PREVIEWDURATION** determina la durata di ogni anteprima.
 
-L'attributo **BANNERBAR** definisce se Windows Media Player riserva spazio per una rappresentazione grafica del banner. Un banner è un grafico che viene visualizzato nell'area di visualizzazione del video mentre viene riprodotto il contenuto multimediale. (Usare l'elemento **banner** per aggiungere un banner al contenuto). Se il valore di **BANNERBAR** è fisso, Windows Media Player riserva lo spazio del banner per ogni contenuto multimediale, indipendentemente dal fatto che il contenuto multimediale includa un banner. Se a un contenuto multimediale non è associato alcun banner, lo spazio riservato per uno è nero. Se il valore dell'attributo **BANNERBAR** è auto, Windows Media Player riserva spazio per il banner solo quando il contenuto multimediale ne include uno.
+**L'attributo BANNERBAR** definisce se Windows Media Player riserva spazio per un'immagine banner. Un banner è un elemento grafico visualizzato nell'area di visualizzazione video durante la riproduzione del contenuto multimediale. Usare **l'elemento BANNER** per aggiungere un banner al contenuto. Se il valore di **BANNERBAR** è FIXED, Windows Media Player spazio del banner per ogni contenuto multimediale, indipendentemente dal fatto che il contenuto multimediale abbia un banner. Se a una parte di contenuto multimediale non è associato un banner, lo spazio riservato per uno è nero. Se il valore **dell'attributo BANNERBAR** è AUTO, Windows Media Player spazio per il banner solo quando il contenuto multimediale ne include uno.
 
-Se si crea un metafile con più clip (elementi **entry** o **ENTRYREF** ) e si imposta il valore dell'attributo **BANNERBAR** su auto, Windows Media Player potrebbe essere ridimensionato in modo da consentire lo spazio per un'immagine del banner per un clip e quindi ridimensionarlo nuovamente se il clip successivo non contiene una rappresentazione grafica del banner. Se si desidera che la dimensione della finestra resti invariata (tranne quando le dimensioni del video cambiano), utilizzare il valore fisso per l'attributo **BANNERBAR** .
+Se si crea un metafile con più clip (elementi **ENTRY** o **ENTRYREF)** e si imposta il valore dell'attributo **BANNERBAR** su AUTO, Windows Media Player potrebbe ridimensionare per consentire lo spazio per un'immagine banner per un clip e quindi ridimensionare di nuovo se il clip successivo non contiene un'immagine banner. Se si vuole che le dimensioni della finestra rimangano le stesse (tranne quando le dimensioni del video cambiano), usare il valore FIXED per **l'attributo BANNERBAR.**
 
-Lo spazio riservato per una rappresentazione grafica del banner è 32 pixel di altezza di 194 pixel di larghezza. Lo spazio riservato viene visualizzato al di sotto di qualsiasi contenuto video di cui è stato eseguito il rendering e 6 pixel sopra il bordo inferiore dell'area video, consentendo lo spazio per il bordo dell'area video a 6 pixel. Lo spazio del banner riservato viene centrato orizzontalmente.
+Lo spazio riservato per un'immagine banner è alto 32 pixel per 194 pixel. Lo spazio riservato viene visualizzato sotto qualsiasi contenuto video sottoposto a rendering e 6 pixel sopra il bordo inferiore dell'area video, consentendo lo spazio per il bordo dell'area video di 6 pixel. Lo spazio del banner riservato è centrato orizzontalmente.
 
-Windows Media Player esegue il rendering dell'elemento grafico a partire dal pixel più a sinistra dello spazio del banner. Se il grafico riempie l'intero spazio, verrà visualizzato al centro orizzontalmente. In caso contrario, sarà presente uno spazio finale. Si noti che la larghezza minima di Windows Media Player è sempre più ampia della dimensione del clip video, indipendentemente dal valore dell'attributo **BANNERBAR** .
+Windows Media Player esegue il rendering dell'elemento grafico a partire dal pixel più a sinistra dello spazio del banner. Se l'immagine riempie l'intero spazio, verrà visualizzata al centro orizzontalmente. In caso contrario, sarà presente spazio finale. Si noti che la larghezza minima Windows Media Player è sempre più ampia delle dimensioni del clip video, indipendentemente dal valore **dell'attributo BANNERBAR.**
 
 ## <a name="examples"></a>Esempio
 
@@ -128,10 +128,10 @@ Windows Media Player esegue il rendering dell'elemento grafico a partire dal pix
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento su elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

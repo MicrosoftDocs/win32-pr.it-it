@@ -4,12 +4,12 @@ ms.assetid: 7912c682-c179-453b-8a34-e87958217500
 title: D3DPMISCCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4ace0b9070d158769e22e02a759545b1bf7785
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: ee88ba03b3c0a6d51c0100b20768df4cbf632d46
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343136"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624537"
 ---
 # <a name="d3dpmisccaps"></a>D3DPMISCCAPS
 
@@ -19,9 +19,9 @@ Flag di funzionalità primitive del driver vari.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -37,17 +37,17 @@ Flag di funzionalità primitive del driver vari.
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLNONE</td>
 <td>0x00000010L</td>
-<td>Il driver non esegue il culling del triangolo. Corrisponde al membro D3DCULL_NONE del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
+<td>Il driver non esegue l'culling del triangolo. Corrisponde al membro D3DCULL_NONE del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_CULLCW</td>
 <td>0x00000020L</td>
-<td>Il driver supporta l'culling triangolare in senso orario attraverso D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CW del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
+<td>Il driver supporta l'culling del triangolo in senso orario attraverso lo D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CW membro del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>D3DPMISCCAPS_CULLCCW</td>
 <td>0x00000040L</td>
-<td>Il driver supporta l'culling in senso antiorario attraverso lo D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CCW del tipo <a href="/windows/desktop/direct3d9/d3dcull"><strong>enumerato D3DCULL.</strong></a></td>
+<td>Il driver supporta l'culling in senso antiorario attraverso lo D3DRS_CULLMODE stato. Si applica solo alle primitive di triangolo. Questo flag corrisponde al D3DCULL_CCW membro del <a href="/windows/desktop/direct3d9/d3dcull"><strong>tipo enumerato D3DCULL.</strong></a></td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_COLORWRITEENABLE</td>
@@ -106,7 +106,7 @@ Flag di funzionalità primitive del driver vari.
 <tr class="odd">
 <td>D3DPMISCCAPS_FOGANDSPECULARALPHA</td>
 <td>0x00010000L</td>
-<td>Il dispositivo supporta alfa separati e speculari. Molti dispositivi usano il canale alfa speculare per archiviare il fattore di rischio.</td>
+<td>Il dispositivo supporta osa separata e alfa speculare. Molti dispositivi usano il canale alfa speculare per archiviare il fattore di nebbia.</td>
 </tr>
 <tr class="even">
 <td>D3DPMISCCAPS_SEPARATEALPHABLEND</td>

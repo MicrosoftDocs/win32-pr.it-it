@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per ALPC in attesa di nuovi eventi del messaggio. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per l'attesa alPC per nuovi eventi di messaggio. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 7f7fa4b8-ed12-49a0-a84e-37f66af4f5f1
-title: Classe ALPC_Wait_For_New_Message
+title: ALPC_Wait_For_New_Message classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 75cbda11a2a27eec811f8ff47966d12c6a86cf07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67b3e52e59345eea95db7485e0764f31f88669241159ffc857d46cf230a5e8b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901551"
 ---
-# <a name="alpc_wait_for_new_message-class"></a>ALPC \_ attendere \_ la \_ nuova \_ classe Message
+# <a name="alpc_wait_for_new_message-class"></a>AlPC \_ Wait for New Message \_ \_ \_ class
 
-Questa classe è la classe del tipo di evento per ALPC in attesa di nuovi eventi del messaggio.
+Questa classe è la classe del tipo di evento per l'attesa alPC per nuovi eventi di messaggio.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -40,20 +40,20 @@ class ALPC_Wait_For_New_Message : ALPC
 
 ## <a name="members"></a>Members
 
-Il **ALPC di \_ attesa \_ per la nuova classe \_ \_ Message** presenta questi tipi di membri:
+La **classe WAIT For New \_ \_ \_ \_ Message** di ALPC ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-L' **\_ attesa ALPC \_ per la nuova classe \_ \_ Message** presenta queste proprietà.
+La **classe WAIT For New \_ \_ \_ \_ Message** di ALPC ha queste proprietà.
 
 <dl> <dt>
 
 **IsServerPort**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -66,13 +66,13 @@ Indica se la porta è una porta del server.
 **PortName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stringa che contiene il nome della porta su cui ALPC è in attesa.
+Stringa contenente il nome della porta su cui è in attesa ALPC.
 
 </dd> </dl>
 
@@ -82,8 +82,8 @@ Stringa che contiene il nome della porta su cui ALPC è in attesa.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

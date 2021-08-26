@@ -1,6 +1,6 @@
 ---
 title: TVM_GETITEM messaggio (Commctrl.h)
-description: Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro GetItem di \_ TreeView.
+description: Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro GetItem di TreeView.
 ms.assetid: e26ec000-967d-46de-8f71-6ebc36fefe5e
 keywords:
 - TVM_GETITEM di controllo Windows messaggio
@@ -25,7 +25,7 @@ ms.locfileid: "119984891"
 ---
 # <a name="tvm_getitem-message"></a>Messaggio TVM \_ GETITEM
 
-Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ GetItem di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem)
+Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ GetItem di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera alcuni o tutti gli attributi di un elemento della visualizzazione alber
 *lParam* 
 </dt> <dd>
 
-Puntatore a [**una struttura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che specifica le informazioni da recuperare e riceve informazioni sull'elemento. Con [la versione 4.71](common-control-versions.md) e successive è invece possibile usare una [**struttura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
+Puntatore a [**una struttura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che specifica le informazioni da recuperare e ricevere informazioni sull'elemento. Con [la versione 4.71 e](common-control-versions.md) successive, è invece possibile usare una struttura [**TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ Se il flag TVIF TEXT è impostato nel membro mask della struttura \_ [**TVITEM**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ GETITEMA** (ANSI)<br/>                   |
 

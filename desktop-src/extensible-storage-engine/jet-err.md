@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 35120be9a26dcbdc8d012cd12c871ddcf8f71555
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f341f88a192fee6de55e0077778abde83493e35e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323780"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482277"
 ---
 # <a name="jet_err"></a>JET_ERR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_err"></a>JET_ERR
 
-Il tipo di dati **JET_ERR** contiene un [codice di errore del motore di archiviazione estensibile](./extensible-storage-engine-error-codes.md).
+Il **JET_ERR** di dati contiene un codice di [errore extensible Archiviazione Engine](./extensible-storage-engine-error-codes.md).
 
 ```cpp
 typedef long JET_ERR;
@@ -39,38 +39,21 @@ typedef long JET_ERR;
 
 JET_ERR
 
-Un valore zero (corrispondente a JET_errSuccess) indica che la chiamata ha avuto esito positivo. Un valore positivo avverte una condizione non irreversibile che si è verificata durante una chiamata altrimenti riuscita. Un valore negativo indica che la chiamata non è riuscita.
+Un valore zero (corrispondente a JET_errSuccess) indica che la chiamata ha avuto esito positivo. Un valore positivo avvisa di una condizione non irreversibile che si è verificata durante una chiamata altrimenti riuscita. Un valore negativo indica che la chiamata non è riuscita.
 
 ### <a name="remarks"></a>Commenti
 
-Per informazioni sulla restituzione di errori come HRESULT, vedere [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md). Per informazioni sui flag per la configurazione del database per la gestione degli errori, vedere la pagina relativa ai [parametri di gestione degli](./error-handling-parameters.md)errori.
+Per informazioni sulla restituzione di errori come HRESULT, vedere Errori del motore di [Archiviazione estendibile](./extensible-storage-engine-errors.md). Per informazioni sui flag per la configurazione del database per la gestione degli errori, vedere [Parametri di gestione degli errori](./error-handling-parameters.md).
 
 ### <a name="requirements"></a>Requisiti
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Client</strong></p></td>
-<td><p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Client</strong></p> | <p>Richiede Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Server</strong></p> | <p>Richiede Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Intestazione</strong></p> | <p>Dichiarato in Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Vedere anche
 
-[Errori del motore di archiviazione estendibile](./extensible-storage-engine-errors.md)  
-[Codici di errore di Extensible Storage Engine](./extensible-storage-engine-error-codes.md)  
+[Errori del motore Archiviazione estendibile](./extensible-storage-engine-errors.md)  
+[Codici di errore del motore Archiviazione estendibile](./extensible-storage-engine-error-codes.md)  
 [Parametri di gestione degli errori](./error-handling-parameters.md)

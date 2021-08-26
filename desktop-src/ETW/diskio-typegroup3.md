@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di scaricamento I/O del disco. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di scaricamento di I/O su disco. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 7f0c9bd4-e4d3-49c1-ae72-f6bdf938099f
-title: Classe DiskIo_TypeGroup3
+title: DiskIo_TypeGroup3 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 63ca227269dab249be755da22288ce41696a19e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e421a8bd596869ac06af61f05ed1af8c633fb23b95e576398de6418620249c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050661"
 ---
-# <a name="diskio_typegroup3-class"></a>\_Classe DiskIo TypeGroup3
+# <a name="diskio_typegroup3-class"></a>Classe DiskIo \_ TypeGroup3
 
-Questa classe è la classe del tipo di evento per gli eventi di scaricamento I/O del disco.
+Questa classe è la classe del tipo di evento per gli eventi di scaricamento di I/O su disco.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -46,20 +46,20 @@ class DiskIo_TypeGroup3 : DiskIo
 
 ## <a name="members"></a>Members
 
-La **classe \_ TypeGroup3 di DiskIo** dispone di questi tipi di membri:
+La **classe DiskIo \_ TypeGroup3** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ TypeGroup3 di DiskIo** dispone di queste proprietà.
+La **classe DiskIo \_ TypeGroup3** ha queste proprietà.
 
 <dl> <dt>
 
-**Numerodisco**
+**DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -75,7 +75,7 @@ Numero che identifica il disco fisico.
 **HighResResponseTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -84,30 +84,30 @@ Tipo di accesso: sola lettura
 Qualificatori: [**WmiDataId**](event-tracing-mof-qualifiers.md) (3)
 </dt> </dl>
 
-Numero di cicli della CPU dall'inizio dell'operazione alla fine dell'operazione.
+Conteggio tick CPU dall'inizio dell'operazione alla fine dell'operazione.
 
 </dd> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**WmiDataId**](event-tracing-mof-qualifiers.md) (4), [**puntatore**](event-tracing-mof-qualifiers.md)
+Qualificatori: [**WmiDataId**](event-tracing-mof-qualifiers.md) (4), [**Puntatore**](event-tracing-mof-qualifiers.md)
 </dt> </dl>
 
-Pacchetto della richiesta di I/O. Questa proprietà identifica l'attività di I/O.
+Pacchetto di richiesta di I/O. Questa proprietà identifica l'attività di I/O.
 
 </dd> <dt>
 
 **IrpFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -116,50 +116,50 @@ Tipo di accesso: sola lettura
 Qualificatori: [**WmiDataId**](event-tracing-mof-qualifiers.md) (2), [**Format**](event-tracing-mof-qualifiers.md) ("x")
 </dt> </dl>
 
-Può contenere uno o più dei seguenti flag di pacchetti di richieste di I/O (definiti in ntddk. h, ovvero un file di intestazione DDK):
+Può contenere uno o più dei flag di pacchetto della richiesta di I/O seguenti (definiti in Ntddk.h, ovvero un file di intestazione DDK):
 
 <dl><span id="__IRP_NOCACHE"></span><span id="__irp_nocache"></span><dt>
 
- **NoCache IRP \_**
+ **IRP \_ NOCACHE**
 </dt><span id="__IRP_PAGING_IO"></span><span id="__irp_paging_io"></span><dt>
 
- **\_io paging \_ IRP**
+ **IRP \_ PAGING \_ IO**
 </dt><span id="__IRP_MOUNT_COMPLETION"></span><span id="__irp_mount_completion"></span><dt>
 
- **\_completamento montaggio \_ IRP**
+ **COMPLETAMENTO \_ DEL MONTAGGIO IRP \_**
 </dt><span id="__IRP_SYNCHRONOUS_API"></span><span id="__irp_synchronous_api"></span><dt>
 
- **\_API sincrona IRP \_**
+ **API \_ SINCRONA IRP \_**
 </dt><span id="__IRP_ASSOCIATED_IRP"></span><span id="__irp_associated_irp"></span><dt>
 
- **\_IRP associato a IRP \_**
+ **IRP \_ ASSOCIATO \_ A IRP**
 </dt><span id="__IRP_BUFFERED_IO"></span><span id="__irp_buffered_io"></span><dt>
 
- **\_io memorizzato nel buffer IRP \_**
+ **IRP \_ MEMORIZZATO NEL \_ BUFFER**
 </dt><span id="IRP_DEALLOCATE_BUFFER"></span><span id="irp_deallocate_buffer"></span><dt>
 
-**\_buffer di DEallocazione IRP \_**
+**BUFFER \_ DEALLOCATO IRP \_**
 </dt><span id="__IRP_INPUT_OPERATION"></span><span id="__irp_input_operation"></span><dt>
 
- **\_operazione di input IRP \_**
+ **OPERAZIONE DI \_ INPUT \_ IRP**
 </dt><span id="__IRP_SYNCHRONOUS_PAGING_IO"></span><span id="__irp_synchronous_paging_io"></span><dt>
 
- **\_io paging sincrono IRP \_ \_**
+ **I/O \_ DI PAGING SINCRONO IRP \_ \_**
 </dt><span id="__IRP_CREATE_OPERATION"></span><span id="__irp_create_operation"></span><dt>
 
- **\_operazione di creazione IRP \_**
+ **OPERAZIONE DI \_ CREAZIONE \_ IRP**
 </dt><span id="IRP_READ_OPERATION"></span><span id="irp_read_operation"></span><dt>
 
-**\_operazione di lettura IRP \_**
+**OPERAZIONE DI \_ LETTURA \_ IRP**
 </dt><span id="__IRP_WRITE_OPERATION"></span><span id="__irp_write_operation"></span><dt>
 
- **\_operazione di scrittura IRP \_**
+ **OPERAZIONE DI \_ SCRITTURA \_ IRP**
 </dt><span id="__IRP_CLOSE_OPERATION"></span><span id="__irp_close_operation"></span><dt>
 
- **\_operazione di chiusura IRP \_**
+ **OPERAZIONE DI \_ CHIUSURA \_ IRP**
 </dt><span id="__IRP_DEFER_IO_COMPLETION"></span><span id="__irp_defer_io_completion"></span><dt>
 
- **completamento i/o \_ posticipato IRP \_ \_**
+ **IRP \_ DEFER \_ \_ I/O COMPLETAMENTO I/O**
 </dt> </dl>
 
 </dd> <dt>
@@ -167,7 +167,7 @@ Può contenere uno o più dei seguenti flag di pacchetti di richieste di I/O (de
 **IssuingThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -178,7 +178,7 @@ Qualificatori: [**WmiDataId**](event-tracing-mof-qualifiers.md) (5)
 
 Identificatore del thread emittente.
 
-**Windows server 2008 R2, Windows server 2008, Windows 7 e Windows Vista:** Questa proprietà non è supportata.
+**Windows Server 2008 R2, Windows Server 2008, Windows 7 e Windows Vista:** Questa proprietà non è supportata.
 
 </dd> </dl>
 
@@ -188,8 +188,8 @@ Identificatore del thread emittente.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

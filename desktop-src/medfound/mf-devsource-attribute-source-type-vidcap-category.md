@@ -1,19 +1,19 @@
 ---
-description: Specifica la categoria del dispositivo per un dispositivo di acquisizione video.
+description: Specifica la categoria di dispositivi per un dispositivo di acquisizione video.
 ms.assetid: 008ff9df-ebe0-4efd-a62c-24f4a4239ebd
-title: Attributo MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_CATEGORY (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_CATEGORY attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc65af267df38486f6ad7859d16aff4de5973a27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 140a9055bdc8081d5cdea1931b199dcd00f537e73051f30790f036be4af57fb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060791"
 ---
-# <a name="mf_devsource_attribute_source_type_vidcap_category-attribute"></a>\_Attributo di \_ tipo Source dell'attributo MF DEVSOURCE \_ \_ \_ VidCap \_ Category
+# <a name="mf_devsource_attribute_source_type_vidcap_category-attribute"></a>Attributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP \_ CATEGORY
 
-Specifica la categoria del dispositivo per un dispositivo di acquisizione video.
+Specifica la categoria di dispositivi per un dispositivo di acquisizione video.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,7 +25,7 @@ Viene definito il valore seguente.
 
 | Valore                                                                                                                                                                                                                                                             | Significato                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="CLSID_VideoInputDeviceCategory"></span><span id="clsid_videoinputdevicecategory"></span><span id="CLSID_VIDEOINPUTDEVICECATEGORY"></span><dl> <dt>**\_VIDEOINPUTDEVICECATEGORY CLSID**</dt> </dl> | Dispositivo di acquisizione video.<br/> |
+| <span id="CLSID_VideoInputDeviceCategory"></span><span id="clsid_videoinputdevicecategory"></span><span id="CLSID_VIDEOINPUTDEVICECATEGORY"></span><dl> <dt>**CLSID \_ VideoInputDeviceCategory**</dt> </dl> | Dispositivo di acquisizione video.<br/> |
 
 
 
@@ -33,13 +33,13 @@ Viene definito il valore seguente.
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: Seguid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
 
 ## <a name="remarks"></a>Commenti
 
-Usare questo attributo come input per la funzione [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) durante l'enumerazione dei dispositivi di acquisizione video.
+Usare questo attributo come input per la [**funzione MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) durante l'enumerazione dei dispositivi di acquisizione video.
 
 Inoltre, questo attributo viene impostato sugli oggetti di attivazione restituiti dalle funzioni seguenti:
 
@@ -48,7 +48,7 @@ Inoltre, questo attributo viene impostato sugli oggetti di attivazione restituit
 
 L'attributo si applica solo ai dispositivi di acquisizione video.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,9 +56,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -66,13 +66,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Acquisizione di audio/video](audio-video-capture.md)
 </dt> <dt>
 
-[Acquisisci attributi del dispositivo](capture-device-attributes.md)
+[Acquisire gli attributi del dispositivo](capture-device-attributes.md)
 </dt> </dl>
 
  

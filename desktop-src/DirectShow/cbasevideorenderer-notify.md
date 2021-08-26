@@ -1,7 +1,7 @@
 ---
-description: Il metodo Notify riceve una notifica di richiesta di modifica della qualità.
+description: Il metodo Notify riceve una notifica che indica che è richiesta una modifica della qualità.
 ms.assetid: bb9aa1c3-caef-42fb-87d2-75cc3691f64f
-title: Metodo CBaseVideoRenderer. Notify (Renbase. h)
+title: Metodo CBaseVideoRenderer.Notify (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd2b894bf78163a7b2d2387e43ecb5cec76ffdf4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8674ecbf7951ca0c208f9ffb50c0e5d9591b16552fda266c7d641905edd09a4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052191"
 ---
-# <a name="cbasevideorenderernotify-method"></a>Metodo CBaseVideoRenderer. Notify
+# <a name="cbasevideorenderernotify-method"></a>Metodo CBaseVideoRenderer.Notify
 
-Il `Notify` metodo riceve una notifica che viene richiesta una modifica di qualità.
+Il `Notify` metodo riceve una notifica che indica che è richiesta una modifica di qualità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,29 +43,29 @@ HRESULT Notify(
 
 <dl> <dt>
 
-*pSelf* \[ in\]
+*pSelf* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al filtro che invia la notifica di qualità.
+Puntatore al filtro che invia la notifica sulla qualità.
 
 </dd> <dt>
 
-*domande* e risposte \[\]
+*q* \[ in\]
 </dt> <dd>
 
-Struttura delle notifiche di qualità.
+Struttura di notifica della qualità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro implementa il metodo [**IQualityControl:: Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) nel renderer video. Questo metodo viene chiamato, in genere da Filter Graph Manager, quando è necessario tagliare la qualità. Questo problema può verificarsi quando la qualità della riproduzione audio è stata aumentata fino a quando la qualità della riproduzione video deve essere ridotta.
+Questa funzione membro implementa il [**metodo IQualityControl::Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) nel renderer video. Questa operazione viene chiamata, in genere dal gestore del grafico dei filtri, quando è necessario ridurre la qualità. Ciò può verificarsi quando la qualità della riproduzione audio è stata aumentata fino a ridurre la qualità di riproduzione del video.
 
-`Notify` imposta il membro dati **\_ trThrottle m** su un valore delay da inserire tra i frame da [**ThrottleWait**](cbasevideorenderer-throttlewait.md).
+`Notify`imposta il **membro \_ dati m trThrottle** su un valore di ritardo che deve essere inserito tra i frame da [**ThrottleWait.**](cbasevideorenderer-throttlewait.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Questa funzione membro implementa il metodo [**IQualityControl:: Notify**](/wind
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

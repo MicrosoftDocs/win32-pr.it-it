@@ -1,7 +1,7 @@
 ---
-description: La \_ struttura doc info \_ 1 descrive un documento che verrà stampato.
+description: La struttura DOC \_ INFO \_ 1 descrive un documento che verrà stampato.
 ms.assetid: 142d988b-dd74-4312-8b27-331a7ec70344
-title: Struttura DOC_INFO_1 (winspool. h)
+title: DOC_INFO_1 struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 6f905a89163b46743a92c8616ee0fa3d0564590c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f534031da1c8f8f50309d4a2db0bfa39fe272ac34f59d1b490c24026d8fee261
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950001"
 ---
-# <a name="doc_info_1-structure"></a>Struttura del documento \_ info \_ 1
+# <a name="doc_info_1-structure"></a>Struttura DOC \_ INFO \_ 1
 
-La struttura **doc \_ info \_ 1** descrive un documento che verrà stampato.
+La **struttura DOC INFO \_ \_ 1** descrive un documento che verrà stampato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,21 +46,21 @@ typedef struct _DOC_INFO_1 {
 **pDocName**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome del documento.
+Puntatore a una stringa con terminazione Null che specifica il nome del documento.
 
 </dd> <dt>
 
 **pOutputFile**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che specifica il nome di un file di output. Per stampare su una stampante, impostarla su **null**.
+Puntatore a una stringa con terminazione Null che specifica il nome di un file di output. Per stampare su una stampante, impostare questo valore su **NULL.**
 
 </dd> <dt>
 
 **pDatatype**
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che identifica il tipo di dati utilizzati per registrare il documento.
+Puntatore a una stringa con terminazione Null che identifica il tipo di dati utilizzato per registrare il documento.
 
 </dd> </dl>
 
@@ -72,8 +72,8 @@ Puntatore a una stringa con terminazione null che identifica il tipo di dati uti
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **\_ \_ Info doc \_ 1W** (Unicode) e **\_ doc \_ info \_ 1a** (ANSI)<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **\_ DOC \_ INFO \_ 1W** (Unicode) e **\_ DOC INFO \_ \_ 1A** (ANSI)<br/>                                   |
 
 
 
@@ -84,7 +84,7 @@ Puntatore a una stringa con terminazione null che identifica il tipo di dati uti
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**StartDocPrinter**](startdocprinter.md)

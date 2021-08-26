@@ -1,6 +1,6 @@
 ---
 title: Elemento EapType (eaptlsuserpropertiesv1schema)
-description: Questo elemento è un tipo derivato dell'elemento EapType dello schema baseeapuserpropertiesv1. Per eaptlsuserpropertiesv1schema.
+description: Questo elemento è un tipo derivato dell'elemento EapType dallo schema baseeapuserpropertiesv1. Per lo schema eaptlsuserpropertiesv1schema.
 ms.assetid: c9117803-dbf0-498d-8f86-f44ac2e6b2dc
 keywords:
 - Elemento EapType EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53e5c1404c70542f3604b94aa6cae9c8fc39fd21
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: fbc58ab640b7993d274abdb134de4648d51c495c07f70a4468460de1d920bd76
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106334319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120021631"
 ---
 # <a name="eaptype-element-eaptlsuserpropertiesv1schema"></a>Elemento EapType (eaptlsuserpropertiesv1schema)
 
-L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) dello schema [baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) .
+**L'elemento EapType** è un tipo derivato dell'elemento [**EapType**](baseeapuserpropertiesv1schema-eaptype-element.md) dallo schema [baseeapuserpropertiesv1.](baseeapuserpropertiesv1schema-schema.md)
 
 ``` syntax
 <xs:element name="EapType"
@@ -60,14 +60,14 @@ L'elemento **EapType** è un tipo derivato dell'elemento [**EapType**](baseeapus
 
 | Elemento                                                                   | Tipo      | Descrizione                                                                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Nome utente**](eaptlsuserpropertiesv1schema-username-element.md)         |           | Acquisisce il nome utente da inviare nella risposta EAP-Identity. Se l'elemento [**username**](eaptlsuserpropertiesv1schema-username-element.md) è assente, EAP-TLS usa il nome nel certificato a cui si fa riferimento nell'elemento [**userCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) .<br/> |
-| [**UserCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) | hexBinary | Si riferisce all'hash SHA-1 del certificato che deve essere utilizzato per l'autenticazione.<br/>                                                                                                                                                                                                                             |
+| [**Nome utente**](eaptlsuserpropertiesv1schema-username-element.md)         |           | Acquisisce il nome utente da inviare nella EAP-Identity risposta. Se [**l'elemento Username**](eaptlsuserpropertiesv1schema-username-element.md) è assente, EAP-TLS usa il nome nel certificato a cui si fa riferimento [**nell'elemento UserCert.**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md)<br/> |
+| [**UserCert**](eaptlsuserpropertiesv1schema-usercert-eaptype-element.md) | Hexbinary | Fa riferimento all'hash SHA-1 del certificato che deve essere usato per l'autenticazione.<br/>                                                                                                                                                                                                                             |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **processContents** consente miglioramenti futuri allo schema. L'elemento **processContents** è facoltativo.
+**L'elemento processContents** consente miglioramenti futuri allo schema. **L'elemento processContents** è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ L'elemento **processContents** consente miglioramenti futuri allo schema. L'elem
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -84,7 +84,7 @@ L'elemento **processContents** consente miglioramenti futuri allo schema. L'elem
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md)

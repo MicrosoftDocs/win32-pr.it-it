@@ -1,7 +1,7 @@
 ---
 description: Questo operatore moltiplica un'ora di riferimento per un valore.
 ms.assetid: f575fd41-1d3e-43a6-abf8-8e64093e408e
-title: Metodo COARefTime. Operator * (Ctlutil. h)
+title: Metodo COARefTime.operator* (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c62a4282f7a43ba3d7ba35daf81530f8b246be32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57060f3b0436422c34ba947c0025cc6796d534e16ff64be029e68ab140faa4af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079351"
 ---
-# <a name="coareftimeoperator-method"></a>Metodo COARefTime. Operator \*
+# <a name="coareftimeoperator-method"></a>Metodo COARefTime.operator \*
 
 Questo operatore moltiplica un'ora di riferimento per un valore.
 
@@ -51,7 +51,7 @@ Moltiplicatore.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un nuovo oggetto **COARefTime** uguale al prodotto di questo oggetto e **l**.
+Restituisce un nuovo **oggetto COARefTime** uguale al prodotto di questo oggetto e **a l**.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce un nuovo oggetto **COARefTime** uguale al prodotto di questo oggetto
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

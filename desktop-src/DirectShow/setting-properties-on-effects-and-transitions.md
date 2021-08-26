@@ -1,52 +1,52 @@
 ---
-description: Impostazione delle proprietà per effetti e transizioni
+description: Impostazione delle proprietà su effetti e transizioni
 ms.assetid: ce773140-7e50-4b72-8cb5-e34cba51644d
-title: Impostazione delle proprietà per effetti e transizioni
+title: Impostazione delle proprietà su effetti e transizioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ddd129eb9d4ab24ebef6f5c760a4211f26c9a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1305eb7860b5519b14cfeebc349643c2662db3f133c0bf3424d1d71ccf85753c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904261"
 ---
-# <a name="setting-properties-on-effects-and-transitions"></a>Impostazione delle proprietà per effetti e transizioni
+# <a name="setting-properties-on-effects-and-transitions"></a>Impostazione delle proprietà su effetti e transizioni
 
-\[Questa API non è supportata e può essere modificata o non disponibile in futuro.\]
+\[Questa API non è supportata e potrebbe essere modificata o non disponibile in futuro.\]
 
-Molti effetti e transizioni di [servizi di modifica DirectShow](directshow-editing-services.md) supportano le proprietà che ne controllano il comportamento. Un'applicazione può impostare il valore di una proprietà usando l'interfaccia [**IPropertySetter**](ipropertysetter.md) . L'oggetto Effect o Transition sottostante deve supportare **IDispatch** per l'impostazione delle proprietà. Con gli effetti video e le transizioni, l'applicazione può impostare un intervallo di valori che cambiano nel tempo. (Ad esempio, è possibile impostare una transizione di cancellazione per spostarsi avanti e indietro nel frame). Con gli effetti audio, il valore della proprietà è statico e non può essere modificato nel tempo. L'unica eccezione è l'effetto della [busta del volume](volume-envelope-effect.md) , che supporta una proprietà dinamica per il livello del volume.
+Molti [DirectShow effetti e](directshow-editing-services.md) transizioni di Servizi di modifica supportano proprietà che ne controllano il comportamento. Un'applicazione può impostare il valore di una proprietà usando [**l'interfaccia IPropertySetter.**](ipropertysetter.md) L'effetto o l'oggetto transizione sottostante deve **supportare IDispatch per** l'impostazione delle proprietà. Con gli effetti video e le transizioni, l'applicazione può impostare un intervallo di valori che cambiano nel tempo. Ad esempio, è possibile impostare una transizione di cancellazione per spostarsi avanti e indietro nel frame. Con gli effetti audio, il valore della proprietà è statico e non può cambiare nel tempo. L'unica eccezione è [l'effetto Volume Envelope,](volume-envelope-effect.md) che supporta una proprietà dinamica per il livello di volume.
 
 Per impostare una proprietà, seguire questa procedura.
 
-1.  Creare un'istanza del setter della proprietà (CLSID \_ PropertySetter).
-2.  Riempire le strutture del [**\_ valore**](dexter-value.md) Dexter [**\_ param**](dexter-param.md) e Dexter con i dati della proprietà. Queste strutture sono descritte di seguito.
-3.  Passare le strutture del [**\_ valore**](dexter-value.md) [**Dexter \_ param**](dexter-param.md) e Dexter al metodo [**IPropertySetter:: AddProp**](ipropertysetter-addprop.md) .
-4.  Ripetere i passaggi 2 e 3 per ogni proprietà che si desidera impostare.
-5.  Passare il puntatore all'interfaccia [**IPropertySetter**](ipropertysetter.md) al metodo [**IAMTimelineObj:: SetPropertySetter**](iamtimelineobj-setpropertysetter.md) .
+1.  Creare un'istanza del setter di proprietà (CLSID \_ PropertySetter).
+2.  Inserire i dati delle proprietà nelle strutture [**\_ PARAM**](dexter-param.md) [**e FILL \_ VALUE.**](dexter-value.md) Queste strutture sono illustrate di seguito.
+3.  Passare le [**\_ strutture PARAM e**](dexter-param.md) [**\_ UNEMETE AL**](dexter-value.md) metodo [**IPropertySetter::AddProp.**](ipropertysetter-addprop.md)
+4.  Ripetere i passaggi 2 e 3 per ogni proprietà che si vuole impostare.
+5.  Passare il puntatore di interfaccia [**IPropertySetter**](ipropertysetter.md) al [**metodo IAMTimelineObj::SetPropertySetter.**](iamtimelineobj-setpropertysetter.md)
 
-La struttura del [**\_ param Dexter**](dexter-param.md) specifica quale proprietà viene impostata. Contiene i membri seguenti.
+La [**struttura \_ PARAM DELL'ARGOMENTO**](dexter-param.md) SPECIFICA la proprietà da impostare. Contiene i membri seguenti.
 
--   **Nome**: nome della proprietà
--   **DISPID**: riservato, deve essere zero
--   **nValori**: numero di valori
+-   **Name:** nome della proprietà
+-   **dispID:** Riservato, deve essere zero
+-   **nValues:** numero di valori
 
-La \_ struttura del valore Dexter specifica il valore di una proprietà in un determinato momento. Contiene i membri seguenti.
+La struttura DI \_ TIPO VALUE specifica il valore di una proprietà in un determinato momento. Contiene i membri seguenti.
 
--   **v**: tipo Variant che specifica un nuovo valore per la proprietà. Il membro **VT** di questa variante definisce il tipo di dati della proprietà. Per ulteriori informazioni sul tipo **Variant** , vedere la Windows SDK.
--   **RT**: ora di riferimento quando la proprietà presuppone questo valore, in relazione all'ora di inizio dell'effetto o della transizione. L'ora di inizio dell'effetto o della transizione è relativa all'ora di inizio dell'oggetto padre.
--   **dwInterp**: flag che specifica il modo in cui la proprietà cambia dal valore precedente al nuovo valore. Con il \_ flag jump DEXTERF, la proprietà passa immediatamente al nuovo valore all'ora specificata. Con il flag DEXTERF interpolate \_ , la proprietà viene interpolata in modo lineare rispetto al valore precedente.
+-   **v:** tipo VARIANT che specifica un nuovo valore per la proprietà. Il **membro vt** di questa variante definisce il tipo di dati della proprietà. Per altre informazioni sul tipo **VARIANT,** vedere Windows SDK.
+-   **rt**: ora di riferimento in cui la proprietà assume questo valore, rispetto all'ora di inizio dell'effetto o della transizione. L'ora di inizio dell'effetto o della transizione è relativa all'ora di inizio dell'oggetto padre.
+-   **dwInterp:** flag che specifica il modo in cui la proprietà viene modificata dal valore precedente al nuovo valore. Con il flag JUMP DI TIPO JUMP, la proprietà passa immediatamente \_ al nuovo valore all'ora specificata. Con il flag INTERPOLATE DELLA FUNZIONE DI \_ INTERPOLAZIONE, la proprietà viene interpolata in modo lineare rispetto al valore precedente.
 
-Se si imposta il membro **VT** su VT \_ BSTR, il setter della proprietà esegue le conversioni necessarie. Per i valori a virgola mobile, includere lo zero iniziali prima della posizione decimale. Ad esempio, 0,3, not. 3.
+Se si imposta il **membro vt** su VT BSTR, il setter di proprietà \_ esegue le conversioni necessarie. Per i valori a virgola mobile, includere lo zero iniziale prima della posizione decimale. Ad esempio, 0.3, non .3.
 
 > [!Note]  
-> Le applicazioni devono evitare di basarsi sulla conversione da **BSTR** s a valori numerici. Se la proprietà ha un valore numerico, è possibile usare il tipo **Variant** numerico appropriato.
+> Le applicazioni devono evitare di basarsi sulla conversione **da BSTR** a valori numerici. Se la proprietà ha un valore numerico, è possibile usare il tipo **VARIANT** numerico appropriato.
 
  
 
-Il valore di una proprietà può variare nel tempo, quindi il metodo [**IPropertySetter:: AddProp**](ipropertysetter-addprop.md) accetta un'unica struttura di [**\_ parametri Dexter**](dexter-param.md) e un puntatore a una matrice di strutture di [**\_ valori Dexter**](dexter-value.md) . La matrice definisce un set di valori basati sul tempo per la proprietà. I membri della matrice devono essere in ordine di tempo crescente e il membro **nValori** della struttura del parametro Dexter \_ deve essere uguale alla lunghezza della matrice.
+Il valore di una proprietà può cambiare nel tempo, quindi il metodo [**IPropertySetter::AddProp**](ipropertysetter-addprop.md) accetta una singola struttura [**\_ PARAM DELL'istruzione e**](dexter-param.md) un puntatore a una matrice di strutture DI TIPO [**VALUE. \_**](dexter-value.md) La matrice definisce un set di valori basati sul tempo per la proprietà . I membri della matrice devono essere in ordine di tempo crescente e il membro **nValues** della struttura PARAM DELL'ARGOMENTO DEVE essere uguale alla \_ lunghezza della matrice.
 
-Nell'esempio di codice seguente vengono creati i dati delle proprietà per la transizione di [cancellazione SMPTE](smpte-wipe-transition.md) . Imposta il codice di cancellazione su 120, che crea una cancellazione ovale. Imposta la durata di riferimento su zero, che indica l'inizio della transizione.
+Nell'esempio di codice seguente vengono creati i dati delle proprietà per [la transizione di cancellazione SMPTE.](smpte-wipe-transition.md) Imposta il codice di cancellazione su 120, che crea una cancellazione ovale. Imposta l'ora di riferimento su zero, che indica l'inizio della transizione.
 
 
 ```C++
@@ -89,15 +89,15 @@ pProp->Release();
 
 **Modifica dinamica delle proprietà**
 
-Dopo aver eseguito il rendering di un progetto di modifica video, è possibile modificare le proprietà di un oggetto o di un effetto di transizione durante l'esecuzione del grafo. Questa operazione è tuttavia possibile solo se si impostano le proprietà di tale oggetto prima dell'applicazione denominata [**IRenderEngine:: ConnectFrontEnd**](irenderengine-connectfrontend.md). In tal caso, è possibile chiamare [**IAMTimelineObj:: GetPropertySetter**](iamtimelineobj-getpropertysetter.md) per effetto o transizione, cancellare o modificare le proprietà e le modifiche vengono eseguite in modo dinamico durante l'esecuzione del grafo. È possibile che si verifichino anomalie visive durante la modifica, quindi questa operazione è consigliata solo per l'anteprima. Non modificare le proprietà durante la scrittura del progetto in un file.
+Dopo aver eseguito il rendering di un progetto di modifica video, è possibile modificare le proprietà di un oggetto effetto o transizione mentre il grafico è in esecuzione. Tuttavia, ciò è possibile solo se si impostano le proprietà su tale oggetto prima che l'applicazione chiama [**IRenderEngine::ConnectFrontEnd.**](irenderengine-connectfrontend.md) In questo caso, è possibile chiamare [**IAMTimelineObj::GetPropertySetter**](iamtimelineobj-getpropertysetter.md) per l'effetto o la transizione, cancellare o modificare le proprietà e le modifiche verranno apportate dinamicamente durante l'esecuzione del grafico. Potrebbero verificarsi anomalie visive durante la modifica, quindi questa opzione è consigliata solo per l'anteprima. Non modificare le proprietà durante la scrittura del progetto in un file.
 
-Se non sono state impostate proprietà nell'oggetto Effect o Transition prima di chiamare **ConnectFrontEnd**, non è possibile aggiungervi proprietà durante l'esecuzione del grafo.
+Se non è stata impostata alcuna proprietà sull'oggetto effetto o transizione prima di **chiamare ConnectFrontEnd,** non è possibile aggiungervi proprietà mentre il grafico è in esecuzione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Utilizzo degli effetti e delle transizioni](working-with-effects-and-transitions.md)
+[Uso di effetti e transizioni](working-with-effects-and-transitions.md)
 </dt> </dl>
 
  

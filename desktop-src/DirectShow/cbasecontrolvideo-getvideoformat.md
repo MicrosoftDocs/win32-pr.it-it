@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetVideoFormat recupera un esempio video che rappresenta il formato video corrente.
 ms.assetid: f7457c5b-037c-4a63-963e-0fc6086609a4
-title: Metodo CBaseControlVideo. GetVideoFormat (Ctlutil. h)
+title: Metodo CBaseControlVideo.GetVideoFormat (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d84b64818a02a60073fc21411e4a99bde07a6e00
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e37a59b8d002a9c081de74c4974dca1f86d1c9d0a5f7f7b0caca11be6c026d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052771"
 ---
-# <a name="cbasecontrolvideogetvideoformat-method"></a>CBaseControlVideo. GetVideoFormat, metodo
+# <a name="cbasecontrolvideogetvideoformat-method"></a>Metodo CBaseControlVideo.GetVideoFormat
 
 Il `GetVideoFormat` metodo recupera un esempio video che rappresenta il formato video corrente.
 
@@ -42,18 +42,18 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un puntatore a una struttura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) che contiene il formato video corrente.
+Restituisce un puntatore a una [**struttura VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) che contiene il formato video corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Per restituire e controllare determinate informazioni tramite [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo), è necessario che l'oggetto conosca il formato video corrente. Ottiene queste informazioni chiamando il metodo virtuale pure che le classi derivate devono eseguire l'override. Questa funzione membro viene chiamata dalle funzioni membro [**CBaseControlVideo**](cbasecontrolvideo.md) seguenti.
+Per restituire e controllare determinate informazioni tramite [**IBasicVideo,**](/windows/desktop/api/Control/nn-control-ibasicvideo)l'oggetto deve conoscere il formato video corrente. Ottiene queste informazioni chiamando questo metodo virtuale puro di cui le classi derivate devono eseguire l'override. Questa funzione membro viene chiamata dalle funzioni membro [**CBaseControlVideo**](cbasecontrolvideo.md) seguenti.
 
 -   [**CBaseControlVideo::OnVideoSizeChange**](cbasecontrolvideo-onvideosizechange.md)
--   [**CBaseControlVideo:: Get \_ AvgTimePerFrame**](cbasecontrolvideo-get-avgtimeperframe.md)
--   [**CBaseControlVideo:: Get \_ bitrate**](cbasecontrolvideo-get-bitrate.md)
--   [**CBaseControlVideo:: Get \_ BitErrorRate**](cbasecontrolvideo-get-biterrorrate.md)
--   [**CBaseControlVideo:: Get \_ VideoWidth**](cbasecontrolvideo-get-videowidth.md)
--   [**CBaseControlVideo:: Get \_ VideoHeight**](cbasecontrolvideo-get-videoheight.md)
+-   [**CBaseControlVideo::get \_ AvgTimePerFrame**](cbasecontrolvideo-get-avgtimeperframe.md)
+-   [**CBaseControlVideo::get \_ BitRate**](cbasecontrolvideo-get-bitrate.md)
+-   [**CBaseControlVideo::get \_ BitErrorRate**](cbasecontrolvideo-get-biterrorrate.md)
+-   [**CBaseControlVideo::get \_ VideoWidth**](cbasecontrolvideo-get-videowidth.md)
+-   [**CBaseControlVideo::get \_ VideoHeight**](cbasecontrolvideo-get-videoheight.md)
 -   [**CBaseControlVideo::GetVideoPaletteEntries**](cbasecontrolvideo-getvideopaletteentries.md)
 -   [**CBaseControlVideo::GetVideoSize**](cbasecontrolvideo-getvideosize.md)
 
@@ -63,8 +63,8 @@ Per restituire e controllare determinate informazioni tramite [**IBasicVideo**](
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

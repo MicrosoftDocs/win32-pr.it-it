@@ -3,34 +3,34 @@ title: Gestione dati
 description: In questo argomento viene illustrato come gli oggetti memoria passano i dati da un'applicazione a un'altra.
 ms.assetid: 32919f27-4699-4831-8837-c5160b1daf4e
 keywords:
-- Interfaccia utente di Windows, Dynamic Data Exchange (DDE)
-- Dynamic Data Exchange (DDE), gestione dati
-- DDE (Dynamic Data Exchange), gestione dati
+- Windows Interfaccia utente,Dynamic Data Exchange (DDE)
+- Dynamic Data Exchange (DDE), gestione dei dati
+- DDE (Dynamic Data Exchange),gestione dei dati
 - scambio di dati, Dynamic Data Exchange (DDE)
-- Interfaccia utente di Windows, libreria di gestione Dynamic Data Exchange (DDEML)
-- Libreria di gestione Dynamic Data Exchange (DDEML), gestione dati
-- DDEML (libreria di gestione Dynamic Data Exchange), gestione dati
-- scambio di dati, libreria di gestione Dynamic Data Exchange (DDEML)
+- Windows Interfaccia utente,Dynamic Data Exchange Management Library (DDEML)
+- Dynamic Data Exchange Management Library (DDEML), gestione dei dati
+- DDEML (Dynamic Data Exchange Management Library),gestione dati
+- scambio di dati, Dynamic Data Exchange Management Library (DDEML)
 - Dynamic Data Exchange (DDE), oggetti
-- DDE (Dynamic Data Exchange), oggetti
-- Libreria di gestione Dynamic Data Exchange (DDEML), oggetti
-- DDEML (libreria di gestione Dynamic Data Exchange), oggetti
+- DDE (Dynamic Data Exchange),oggetti
+- Dynamic Data Exchange Management Library (DDEML), oggetti
+- DDEML (Dynamic Data Exchange Management Library),oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc5178f636cf4b75111d4fc48e17fd144400a91
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 85dc9b8ccd82d184866ac9ed28f15bdeac424ec0bf9bd7767a520dea69bc4d11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953741"
 ---
 # <a name="data-management"></a>Gestione dati
 
-Poiché Dynamic Data Exchange (DDE) utilizza oggetti memoria per passare dati da un'applicazione a un'altra, la libreria di gestione Dynamic Data Exchange (DDEML) fornisce un set di funzioni che le applicazioni DDE possono utilizzare per creare e gestire oggetti DDE.
+Poiché Dynamic Data Exchange (DDE) usa oggetti di memoria per passare dati da un'applicazione a un'altra, la libreria DDEML (Dynamic Data Exchange Management Library) fornisce un set di funzioni che le applicazioni DDE possono usare per creare e gestire oggetti DDE.
 
-Per tutte le transazioni che comportano lo scambio di dati, è necessario che l'applicazione fornisca i dati per creare un buffer locale contenente i dati e quindi chiamare la funzione [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) . Questa funzione alloca un oggetto DDE, copia i dati dal buffer nell'oggetto e restituisce un handle di dati. Un handle di dati è un valore **DWORD** utilizzato dal DDEML per fornire l'accesso ai dati nell'oggetto DDE. Per condividere i dati in un oggetto DDE, un'applicazione passa l'handle di dati a DDEML e DDEML passa l'handle alla funzione di callback DDE dell'applicazione che riceve la transazione di dati.
+Tutte le transazioni che comportano lo scambio di dati richiedono all'applicazione di fornire i dati per creare un buffer locale contenente i dati e quindi chiamare la [**funzione DdeCreateDataHandle.**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) Questa funzione alloca un oggetto DDE, copia i dati dal buffer all'oggetto e restituisce un handle di dati. Un handle di dati è **un valore DWORD** utilizzato da DDEML per fornire l'accesso ai dati nell'oggetto DDE. Per condividere i dati in un oggetto DDE, un'applicazione passa l'handle di dati a DDEML e DDEML passa l'handle alla funzione di callback DDE dell'applicazione che riceve la transazione di dati.
 
-Nell'esempio seguente viene illustrato come creare un oggetto DDE e ottenere un handle per l'oggetto. Durante la transazione [**XTYP \_ ADVREQ**](xtyp-advreq.md) , la funzione di callback converte l'ora corrente in una stringa ASCII, copia la stringa in un buffer locale e quindi crea un oggetto DDE che contiene la stringa. La funzione di callback restituisce l'handle per l'oggetto DDE (HDDEDATA) a DDEML, che passa l'handle all'applicazione client.
+Nell'esempio seguente viene illustrato come creare un oggetto DDE e ottenere un handle per l'oggetto . Durante la [**transazione \_ XTYP ADVREQ,**](xtyp-advreq.md) la funzione di callback converte l'ora corrente in una stringa ASCII, copia la stringa in un buffer locale e quindi crea un oggetto DDE contenente la stringa. La funzione di callback restituisce l'handle all'oggetto DDE (HDDEDATA) a DDEML, che passa l'handle all'applicazione client.
 
 
 ```
@@ -142,9 +142,9 @@ DWORD dwData2;
 
 
 
-L'applicazione ricevente ottiene un puntatore all'oggetto DDE passando l'handle di dati alla funzione [**DdeAccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata) . Il puntatore restituito da **DdeAccessData** fornisce l'accesso in sola lettura. L'applicazione deve usare il puntatore per esaminare i dati e quindi chiamare la funzione [**DdeUnaccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata) per invalidare il puntatore. L'applicazione può copiare i dati in un buffer locale usando la funzione [**DdeGetData**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata) .
+L'applicazione ricevente ottiene un puntatore all'oggetto DDE passando l'handle di dati alla [**funzione DdeAccessData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata) Il puntatore restituito **da DdeAccessData fornisce** l'accesso in sola lettura. L'applicazione deve usare il puntatore per esaminare i dati e quindi chiamare la [**funzione DdeUnaccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata) per invalidare il puntatore. L'applicazione può copiare i dati in un buffer locale usando la [**funzione DdeGetData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddegetdata)
 
-Nell'esempio seguente viene ottenuto un puntatore all'oggetto DDE identificato dal parametro *hData* , viene copiato il contenuto in un buffer locale e quindi viene invalidato il puntatore.
+L'esempio seguente ottiene un puntatore all'oggetto DDE identificato dal parametro *hData,* copia il contenuto in un buffer locale e quindi invalida il puntatore.
 
 
 ```
@@ -166,15 +166,15 @@ case XTYP_ADVDATA:
 
 
 
-In genere, quando un'applicazione che ha creato un handle di dati passa tale handle a DDEML, l'handle diventa non valido nell'applicazione di creazione. Questa situazione non costituisce un problema se l'applicazione deve condividere i dati con una sola applicazione. Se un'applicazione deve condividere gli stessi dati con più applicazioni, tuttavia, l'applicazione di creazione deve specificare il \_ flag HDATA APPOWNED in [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle). In questo modo, la proprietà dell'oggetto DDE viene assegnata all'applicazione di creazione e impedisce a DDEML di invalidare l'handle di dati. L'applicazione può quindi passare l'handle di dati un numero qualsiasi di volte dopo la chiamata di **DdeCreateDataHandle** una sola volta.
+In genere, quando un'applicazione che ha creato un handle di dati passa tale handle a DDEML, l'handle non è più valido nell'applicazione di creazione. Questa situazione non rappresenta un problema se l'applicazione deve condividere i dati con una sola applicazione. Se un'applicazione deve condividere gli stessi dati con più applicazioni, tuttavia, l'applicazione che crea deve specificare il flag HDATA \_ APPOWNED in [**DdeCreateDataHandle.**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) In questo modo viene data la proprietà dell'oggetto DDE all'applicazione di creazione e si impedisce a DDEML di invalidare l'handle di dati. L'applicazione può quindi passare l'handle di dati un numero qualsiasi di volte dopo aver **chiamato DdeCreateDataHandle una** sola volta.
 
-Se un'applicazione specifica il \_ flag HDATA APPOWNED nel parametro *AfCmd* di [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle), deve chiamare la funzione [**DdeFreeDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddefreedatahandle) per liberare l'handle di memoria, indipendentemente dal fatto che abbia passato l'handle a DDEML. Prima di terminare, un'applicazione deve chiamare **DdeFreeDataHandle** per liberare qualsiasi handle di dati creato ma non passato a DDEML.
+Se un'applicazione specifica il flag HDATA APPOWNED nel parametro \_ *afCmd* di [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle), deve chiamare la funzione [**DdeFreeDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddefreedatahandle) per liberare l'handle di memoria, indipendentemente dal fatto che l'handle sia passato a DDEML. Prima del termine, un'applicazione deve chiamare **DdeFreeDataHandle** per liberare qualsiasi handle di dati creato ma non passato a DDEML.
 
-Un'applicazione che non ha ancora passato l'handle a un oggetto DDE a DDEML può aggiungere dati all'oggetto o sovrascrivere i dati nell'oggetto tramite la funzione [**DdeAddData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeadddata) . In genere, un'applicazione utilizza **DdeAddData** per riempire un oggetto DDE non inizializzato. Quando un'applicazione passa un handle di dati a DDEML, l'oggetto DDE identificato dall'handle non può essere modificato. può essere liberata.
+Un'applicazione che non ha ancora passato l'handle a un oggetto DDE a DDEML può aggiungere dati all'oggetto o sovrascrivere i dati nell'oggetto usando la [**funzione DdeAddData.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeadddata) In genere, **un'applicazione usa DdeAddData** per riempire un oggetto DDE non inizializzato. Dopo che un'applicazione passa un handle di dati a DDEML, l'oggetto DDE identificato dall'handle non può essere modificato. può essere liberato solo.
 
- 
+ 
 
- 
+ 
 
 
 

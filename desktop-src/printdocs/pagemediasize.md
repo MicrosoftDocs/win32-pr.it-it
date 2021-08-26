@@ -1,21 +1,21 @@
 ---
-description: Informazioni sull'elemento PageMediaSize configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Informazioni sull'elemento pageMediaSize configurabile dall'utente. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: 6f99f54b-c401-42ea-8715-95a2aad73042
 title: Pagemediasize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 907f6a76932e17b6d60a67a65c3cfa657282b60c
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 075e6e683d9de419ea115c2873aff09698b784a19a86b6d0969a094c4f0636bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948246"
 ---
 # <a name="pagemediasize"></a>Pagemediasize
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descrive le dimensioni fisiche dei supporti utilizzate per l'output.
+Descrive le dimensioni dei supporti fisici usati per l'output.
 
 Il diagramma seguente illustra l'utilizzo della variabile PageMediaSize (come esempio viene usata l'opzione ISOA4).
 
@@ -65,10 +65,10 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                                | Tipo di dati          | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                                                                                                                   |
 |-------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>           | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Specifica il nome del supporto. La denominazione deve usare la convenzione seguente: " \_ OptionNameStandard \_ "" \_ OptionNameCommonName \_ "" \_ OptionNameDescriptor \_ ".<br/> |
+| \_OptionName\_<br/>           | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Specifica il nome del supporto. La denominazione deve usare la convenzione seguente: " \_ OptionNameStandard \_ "" \_ OptionNameCommonName \_ "" \_ OptionNameDescriptor \_ ".<br/> |
 | \_IdentityOptionValue\_<br/>  | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/>                                                                                              |
 | \_OptionNameStandard\_<br/>   | string<br/>  | caratteri<br/> | 'ISO', 'JIS', 'Japan', 'NorthAmerica', 'OtherMetric', 'PRC', none.<br/>                                                                                                         | Indica se le dimensioni del supporto sono definite da uno standard specifico.<br/>                                                                                               |
-| \_OptionNameCommonName\_<br/> | string<br/>  | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome comune per le dimensioni del supporto.<br/>                                                                                                                                |
+| \_OptionNameCommonName\_<br/> | string<br/>  | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome comune per le dimensioni del supporto.<br/>                                                                                                                                |
 | \_OptionNameDescriptor\_<br/> | string<br/>  | caratteri<br/> | Big, Envelope, Extra, Plus, Postcard, Rotated, Sheet, 'none'.<br/>                                                                                                              | Big, Envelope, Extra, Plus, Postcard, Rotated, Sheet, 'none'.<br/>                                                                                                  |
 | \_MediaSizeWidth\_<br/>       | numero intero<br/> | Micron<br/>    | Maggiore di 0, minore delle dimensioni massime del supporto per il dispositivo.<br/>                                                                                                           | Specifica la larghezza del supporto fisico.<br/>                                                                                                                     |
 | \_MediaSizeHeight\_<br/>      | numero intero<br/> | Micron<br/>    | Maggiore di 0, minore delle dimensioni massime del supporto per il dispositivo.<br/>                                                                                                           | Specifica l'altezza del supporto fisico.<br/>                                                                                                                    |
@@ -79,7 +79,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio `https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords` dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:PageMediaSize">

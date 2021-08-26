@@ -1,9 +1,9 @@
 ---
-title: Messaggio di ICM_DRAW_STOP (VFW. h)
-description: Il messaggio di arresto del disegno ICM \_ \_ notifica a un driver di rendering di arrestare il clock interno per la tempistica di disegno dei frame. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro ICDrawStop.
+title: ICM_DRAW_STOP messaggio (Vfw.h)
+description: Il ICM DRAW STOP notifica a un driver di rendering di arrestare il clock interno per \_ \_ l'intervallo di disegno dei frame. È possibile inviare questo messaggio in modo esplicito o tramite la macro ICDrawStop.
 ms.assetid: 9ffda595-e3d6-48f0-9487-69f7e95979c2
 keywords:
-- ICM_DRAW_STOP messaggi multimediali di Windows
+- ICM_DRAW_STOP messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3bde99dfcf483e67aa6a601de2718814cc22439
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41bdb8fbc9a0cddf470733fa35b2f25dc62675175cbb40c427d0b160074c5409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038791"
 ---
-# <a name="icm_draw_stop-message"></a>Messaggio di arresto del \_ progetto ICM \_
+# <a name="icm_draw_stop-message"></a>\_ICM Messaggio DRAW \_ STOP
 
-Il messaggio di **\_ \_ arresto** del disegno ICM notifica a un driver di rendering di arrestare il clock interno per la tempistica di disegno dei frame. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**ICDrawStop**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop) .
+Il **ICM \_ DRAW \_ STOP** notifica a un driver di rendering di arrestare il clock interno per l'intervallo di disegno dei frame. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**ICDrawStop.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstop)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene usato dall'hardware che esegue la decompressione, la temporizzazione e il disegno asincroni.
+Questo messaggio viene utilizzato dall'hardware che esegue la decompressione asincrona, l'intervallo e il disegno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Questo messaggio viene usato dall'hardware che esegue la decompressione, la temp
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
