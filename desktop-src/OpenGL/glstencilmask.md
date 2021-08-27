@@ -1,9 +1,9 @@
 ---
-title: funzione glStencilMask (GL. h)
-description: La funzione glStencilMask controlla la scrittura di singoli bit nei piani dello stencil.
+title: Funzione glStencilMask (Gl.h)
+description: La funzione glStencilMask controlla la scrittura di singoli bit nei piani di stencil.
 ms.assetid: c586f9db-bad5-4f06-a194-a8d979842d0c
 keywords:
-- funzione glStencilMask OpenGL
+- Funzione glStencilMask OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e63790fa30e88abbde6e1ba47e624c6caf2dcfc4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9eb2e0af89bf2c66e7fa73cf6e4ace8bc8272e8ea581e17bab17754164d3f068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036521"
 ---
-# <a name="glstencilmask-function"></a>glStencilMask (funzione)
+# <a name="glstencilmask-function"></a>Funzione glStencilMask
 
-La funzione **glStencilMask** controlla la scrittura di singoli bit nei piani dello stencil.
+La **funzione glStencilMask** controlla la scrittura di singoli bit nei piani di stencil.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,10 +40,10 @@ void WINAPI glStencilMask(
 
 <dl> <dt>
 
-*maschera* 
+*Maschera* 
 </dt> <dd>
 
-Maschera di bit per abilitare e disabilitare la scrittura di singoli bit nei piani dello stencil. Inizialmente, la maschera corrisponde a tutti gli altri.
+Maschera di bit per abilitare e disabilitare la scrittura di singoli bit nei piani di stencil. Inizialmente, la maschera è tutta uno.
 
 </dd> </dl>
 
@@ -53,25 +53,25 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glStencilMask** controlla la scrittura di singoli bit nei piani dello stencil. I *n* bit meno significativi della *maschera*, dove *n* è il numero di bit nel buffer dello stencil, specificare una maschera. Ogni volta che viene visualizzato un oggetto nella maschera, il bit corrispondente nel buffer dello stencil viene reso scrivibile. Quando viene visualizzato uno zero, il bit è protetto da scrittura. Inizialmente, tutti i bit sono abilitati per la scrittura.
+La **funzione glStencilMask** controlla la scrittura di singoli bit nei piani di stencil. Gli n bit *meno* significativi della *maschera*, dove *n* è il numero di bit nel buffer dello stencil, specificano una maschera. Ogni volta che viene visualizzato un oggetto nella maschera, il bit corrispondente nel buffer dello stencil viene reso scrivibile. Se viene visualizzato uno zero, il bit è protetto da scrittura. Inizialmente, tutti i bit sono abilitati per la scrittura.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glStencilMask**:
+Le funzioni seguenti recuperano informazioni correlate **a glStencilMask**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con l'argomento GL \_ stencil \_ WRITEMASK
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ STENCIL \_ WRITEMASK
 
-glGet con \_ bit stencil GL \_ argomento
+glGet con argomento GL \_ STENCIL \_ BITS
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ glGet con \_ bit stencil GL \_ argomento
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -100,7 +100,7 @@ glGet con \_ bit stencil GL \_ argomento
 [**glDepthMask**](gldepthmask.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glIndexMask**](glindexmask.md)

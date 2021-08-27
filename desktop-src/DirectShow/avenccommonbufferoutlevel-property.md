@@ -1,39 +1,39 @@
 ---
-description: Specifica il livello finale del buffer di codifica, in bit, alla fine del processo di codifica. Questa proprietà si applica solo alle modalità di codifica della velocità in bit costante (CBR) e della velocità in bit variabile (VBR).
+description: Specifica il livello finale del buffer di codifica, in bit, alla fine del processo di codifica. Questa proprietà si applica solo alle modalità di codifica CBR (Constant Bit Rate) e VBR (Variable Bit Rate).
 ms.assetid: d5bcdf54-061a-436b-8b1a-61ef7d7c90bf
-title: Proprietà AVEncCommonBufferOutLevel (codecapis. h)
+title: Proprietà AVEncCommonBufferOutLevel (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90d99cdea909a1fd1c3777aac4868a570161c3fc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 77159af0f328dcc6003c21bfa91544070d121e9aad4f8f42caf02853c218926e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103501"
 ---
-# <a name="avenccommonbufferoutlevel-property"></a>Proprietà AVEncCommonBufferOutLevel
+# <a name="avenccommonbufferoutlevel-property"></a>AVEncCommonBufferOutLevel - proprietà
 
-Specifica il livello finale del buffer di codifica, in bit, alla fine del processo di codifica. Questa proprietà si applica solo alle modalità di codifica della velocità in bit costante (CBR) e della velocità in bit variabile (VBR).
+Specifica il livello finale del buffer di codifica, in bit, alla fine del processo di codifica. Questa proprietà si applica solo alle modalità di codifica CBR (Constant Bit Rate) e VBR (Variable Bit Rate).
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncCommonBufferOutLevel**
+**CODECAPI \_ AVEncCommonBufferOutLevel**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Questa proprietà ha un intervallo lineare di valori. Per ottenere l'intervallo supportato, chiamare [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="remarks"></a>Commenti
 
-La proprietà è disponibile solo se la durata della codifica è definita in anticipo, usando la proprietà [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md) o la proprietà [**AVEncAudioIntervalToEncode**](avencaudiointervaltoencode-property.md) .
+La proprietà è disponibile solo se la durata della codifica è definita in anticipo, usando la proprietà [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md) o [**AVEncAudioIntervalToEncode.**](avencaudiointervaltoencode-property.md)
 
-Per il video MPEG questa proprietà definisce la completezza del VBV (video buffer Verifier) al termine del processo di codifica. Supporta la concatenazione dei flussi durante la codifica.
+Per i video MPEG, questa proprietà definisce la completezza del verificatore del buffer video (VBV) alla fine del processo di codifica. Supporta la concatenazione dei flussi durante la codifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ Per il video MPEG questa proprietà definisce la completezza del VBV (video buff
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Per il video MPEG questa proprietà definisce la completezza del VBV (video buff
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

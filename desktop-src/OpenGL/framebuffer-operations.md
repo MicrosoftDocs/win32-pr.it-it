@@ -1,33 +1,33 @@
 ---
 title: Operazioni framebuffer
-description: Per selezionare il buffer in cui vengono scritti i valori dei colori, utilizzare glDrawBuffer.
+description: Per selezionare il buffer in cui vengono scritti i valori dei colori, usare glDrawBuffer.
 ms.assetid: 5469a183-1dc0-4ec2-bd7e-54060b5a2876
 keywords:
 - Pipeline di elaborazione OpenGL, operazioni framebuffer
-- framebuffer, operazioni
+- framebuffers, operazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6199700d00a6628548404870dd6ef6ce3e2c825
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83ad9d3bb04d9c063ecd9ec588843577cc577bbe62f686f136a40cdaddcbfc77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082331"
 ---
 # <a name="framebuffer-operations"></a>Operazioni framebuffer
 
-Per selezionare il buffer in cui vengono scritti i valori dei colori, utilizzare [**glDrawBuffer**](gldrawbuffer.md). È possibile utilizzare quattro funzioni diverse per mascherare la scrittura di bit in ogni framebuffer logico dopo che sono state eseguite tutte le operazioni per frammento:
+Per selezionare il buffer in cui vengono scritti i valori dei colori, usare [**glDrawBuffer**](gldrawbuffer.md). Si usano quattro diverse funzioni per mascherare la scrittura di bit in ognuno dei buffer di frame logici dopo l'esecuzione di tutte le operazioni per frammento:
 
 -   [**glIndexMask**](glindexmask.md)
 -   [**glColorMask**](glcolormask.md)
 -   [**glDepthMask**](gldepthmask.md)
 -   [**glStencilMask**](glstencilmask.md)
 
-La funzione [**glAccum**](glaccum.md) controlla l'operazione del buffer di accumulo. Infine, [**glClear**](glclear.md) imposta ogni pixel in un subset specificato di buffer sul valore specificato con [**glClearColor**](glclearcolor.md), [**glClearIndex**](glclearindex.md), [**glClearDepth**](glcleardepth.md), [**glClearStencil**](glclearstencil.md)o [**glClearAccum**](glclearaccum.md).
+La [**funzione glAccum**](glaccum.md) controlla il funzionamento del buffer di accumulo. Infine, [**glClear**](glclear.md) imposta ogni pixel in un subset specificato dei buffer sul valore specificato con [**glClearColor**](glclearcolor.md), [**glClearIndex**](glclearindex.md), [**glClearDepth**](glcleardepth.md), [**glClearStencil**](glclearstencil.md)o [**glClearAccum**](glclearaccum.md).
 
- 
+ 
 
- 
+ 
 
 
 

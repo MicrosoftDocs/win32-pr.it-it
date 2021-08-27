@@ -1,11 +1,11 @@
 ---
-title: Proprietà WeeklyTrigger. WeeksInterval
+title: WeeklyTrigger.WeeksInterval - proprietà
 description: Per lo scripting, ottiene o imposta l'intervallo tra le settimane nella pianificazione.
 ms.assetid: 7992dee2-1725-4325-9fe9-eaff84fa5adc
 keywords:
-- Utilità di pianificazione proprietà WeeksInterval
-- Utilità di pianificazione proprietà WeeksInterval, oggetto WeeklyTrigger
-- Oggetto WeeklyTrigger Utilità di pianificazione, proprietà WeeksInterval
+- Proprietà WeeksInterval Utilità di pianificazione
+- Proprietà WeeksInterval Utilità di pianificazione, oggetto WeeklyTrigger
+- Proprietà WeeklyTrigger Utilità di pianificazione , WeeksInterval
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4668b68d0b3f83e096284db35df799a63eb677b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 547ebc8617d625df3dd0e8dba167bb60682185dfb13897c49524d1894789c933
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080261"
 ---
-# <a name="weeklytriggerweeksinterval-property"></a>Proprietà WeeklyTrigger. WeeksInterval
+# <a name="weeklytriggerweeksinterval-property"></a>WeeklyTrigger.WeeksInterval - proprietà
 
 Per lo scripting, ottiene o imposta l'intervallo tra le settimane nella pianificazione.
 
@@ -42,9 +42,9 @@ Intervallo tra le settimane nella pianificazione.
 
 ## <a name="remarks"></a>Commenti
 
-Un intervallo di 1 produce una pianificazione settimanale. Un intervallo di 2 produce una pianificazione di ogni settimana.
+Un intervallo di 1 produce una pianificazione settimanale. Un intervallo di 2 produce una pianificazione ogni due settimane.
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, l'intervallo per una pianificazione settimanale viene specificato utilizzando l'elemento [**WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML personalizzato per un'attività, l'intervallo per una pianificazione settimanale viene specificato usando l'elemento [**WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di un codice XML personalizzato per un'attivit
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

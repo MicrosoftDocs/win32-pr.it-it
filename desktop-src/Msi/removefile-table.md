@@ -1,19 +1,19 @@
 ---
-description: La tabella RemoveFile contiene un elenco di file che devono essere rimossi dall'azione RemoveFiles. L'impostazione della colonna FileName della tabella su null supporta la rimozione di cartelle vuote.
+description: La tabella RemoveFile contiene un elenco di file che devono essere rimossi dall'azione RemoveFiles. L'impostazione della colonna FileName di questa tabella su Null supporta la rimozione di cartelle vuote.
 ms.assetid: 8b3cb0e3-ccc0-4030-8f57-aa124c3b5588
 title: Tabella RemoveFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723e42582821d79842686678c5b310e95cd1e944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12cf63e9b7616eb033a696da2ad29cb4310e6dc0dc56279ef465c3c549cb5437
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082601"
 ---
 # <a name="removefile-table"></a>Tabella RemoveFile
 
-La tabella RemoveFile contiene un elenco di file che devono essere rimossi dall' [azione RemoveFiles](removefiles-action.md). L'impostazione della colonna FileName della tabella su null supporta la rimozione di cartelle vuote.
+La tabella RemoveFile contiene un elenco di file che devono essere rimossi [dall'azione RemoveFiles](removefiles-action.md). L'impostazione della colonna FileName di questa tabella su Null supporta la rimozione di cartelle vuote.
 
 La tabella RemoveFile include le colonne seguenti.
 
@@ -38,28 +38,28 @@ La tabella RemoveFile include le colonne seguenti.
 <span id="FileKey"></span><span id="filekey"></span><span id="FILEKEY"></span>FileKey
 </dt> <dd>
 
-Chiave primaria utilizzata per identificare questa particolare voce di tabella.
+Chiave primaria usata per identificare questa voce di tabella specifica.
 
 </dd> <dt>
 
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chiave esterna la prima colonna della [tabella dei componenti](component-table.md). Questo campo fa riferimento al componente che controlla il file da rimuovere.
+Chiave esterna della prima colonna della [tabella Component](component-table.md). Questo campo fa riferimento al componente che controlla il file da rimuovere.
 
 </dd> <dt>
 
-<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>FileName
+<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Filename
 </dt> <dd>
 
-Questa colonna contiene il nome localizzabile del file da rimuovere. Se questa colonna è null, la cartella specificata verrà rimossa se è vuota. Tutti i file che corrispondono al carattere jolly verranno rimossi dalla directory specificata.
+Questa colonna contiene il nome localizzabile del file da rimuovere. Se questa colonna è Null, la cartella specificata verrà rimossa se è vuota. Tutti i file che corrispondono al carattere jolly verranno rimossi dalla directory specificata.
 
 </dd> <dt>
 
 <span id="DirProperty"></span><span id="dirproperty"></span><span id="DIRPROPERTY"></span>DirProperty
 </dt> <dd>
 
-Nome di una proprietà il cui valore si presuppone venga risolto nel percorso completo della cartella del file da rimuovere. La proprietà può essere il nome di una directory nella [tabella di directory](directory-table.md), una proprietà impostata dalla [tabella AppSearch](appsearch-table.md)o qualsiasi altra proprietà che rappresenta un percorso completo.
+Nome di una proprietà il cui valore viene risolto nel percorso completo della cartella del file da rimuovere. La proprietà può essere il nome di una directory nella tabella [Directory](directory-table.md), una proprietà impostata dalla tabella [AppSearch](appsearch-table.md)o qualsiasi altra proprietà che rappresenta un percorso completo.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Deve essere uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-I riferimenti ai file in questa tabella vengono elaborati dall' [azione RemoveFiles](removefiles-action.md).
+I riferimenti ai file in questa tabella vengono elaborati [dall'azione RemoveFiles](removefiles-action.md).
 
 ## <a name="validation"></a>Convalida
 

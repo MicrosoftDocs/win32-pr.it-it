@@ -1,7 +1,7 @@
 ---
-description: Abilita nuovamente un oggetto dispositivo in modalità kernel di Microsoft DirectDraw dopo un'opzione di modalità.
+description: Ri abilita un oggetto dispositivo in modalità kernel Microsoft DirectDraw dopo un cambio di modalità.
 ms.assetid: 26451881-cebf-4db1-aeed-365f0dae6704
-title: Funzione NtGdiDdReenableDirectDrawObject (Ntgdi. h)
+title: Funzione NtGdiDdReenableDirectDrawObject (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: afd736317ecdf802cb418e81063b622db43f0651
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 808e2e74492b9a3e828e09389e04f0e1e4b09fef9a63fdd7a22d81521b3df30d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045571"
 ---
-# <a name="ntgdiddreenabledirectdrawobject-function"></a>NtGdiDdReenableDirectDrawObject (funzione)
+# <a name="ntgdiddreenabledirectdrawobject-function"></a>Funzione NtGdiDdReenableDirectDrawObject
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece il DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Abilita nuovamente un oggetto dispositivo in modalità kernel di Microsoft DirectDraw dopo un'opzione di modalità.
+Ri abilita un oggetto dispositivo in modalità kernel Microsoft DirectDraw dopo un cambio di modalità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,29 +45,29 @@ BOOL APIENTRY NtGdiDdReenableDirectDrawObject(
 
 <dl> <dt>
 
-*hDirectDrawLocal* \[ in\]
+*hDirectDrawLocal* \[ Pollici\]
 </dt> <dd>
 
-Oggetto DirectDraw che deve essere riabilitato.
+Oggetto DirectDraw che deve essere ri-abilitato.
 
 </dd> <dt>
 
-*pubNewMode* \[ in uscita\]
+*pubNewMode* \[ in, out\]
 </dt> <dd>
 
-Puntatore a un BOOL che verrà riempito con un valore che indica se la modalità di visualizzazione è cambiata.
+Puntatore a un oggetto BOOL che verrà riempito con un valore che indica se la modalità di visualizzazione è stata modificata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo (il dispositivo può essere riabilitato), questa funzione restituisce **true**. In caso contrario (ad esempio, il driver di visualizzazione è stato modificato), restituisce **false**.
+Se ha esito positivo (il dispositivo può essere ri-abilitato), questa funzione restituisce **TRUE.** In caso contrario( ad esempio, il driver di visualizzazione è stato modificato), restituisce **FALSE**.
 
 ## <a name="remarks"></a>Commenti
 
-Una volta che l'oggetto è stato riabilitato, è possibile eseguire una nuova query sulle funzionalità del dispositivo tramite una chiamata a [**NtGdiDdQueryDirectDrawObject**](-dxgkernel-ntgdiddquerydirectdrawobject.md).
+Dopo che l'oggetto è stato ri-abilitato, è possibile rieseguire query sulle funzionalità del dispositivo tramite una chiamata a [**NtGdiDdQueryDirectDrawObject.**](-dxgkernel-ntgdiddquerydirectdrawobject.md)
 
-Per le applicazioni è consigliabile usare le API DirectDraw o [Direct3D](../direct3d10/d3d10-graphics-reference.md) versione 8, che automatizzano ed astraggono questo processo in modo indipendente dal sistema operativo.
+Si consiglia alle applicazioni di usare le API DirectDraw o [Direct3D](../direct3d10/d3d10-graphics-reference.md) versione 8, che automatizzano e astrarno questo processo in modo indipendente dal sistema operativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,7 +77,7 @@ Per le applicazioni è consigliabile usare le API DirectDraw o [Direct3D](../dir
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Per le applicazioni è consigliabile usare le API DirectDraw o [Direct3D](../dir
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> <dt>
 
 [**DdReenableDirectDrawObject**](/windows/desktop/api/Ddrawgdi/nf-ddrawgdi-ddreenabledirectdrawobject)

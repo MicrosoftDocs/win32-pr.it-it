@@ -1,9 +1,9 @@
 ---
-title: Messaggio TDM_SET_PROGRESS_BAR_MARQUEE (COMmctrl. h)
-description: Avvia e arresta la visualizzazione Marquee dell'indicatore di stato in una finestra di dialogo attività e imposta la velocità del Marquee.
+title: TDM_SET_PROGRESS_BAR_MARQUEE messaggio (Commctrl.h)
+description: Avvia e arresta la visualizzazione del riquadro di selezione dell'indicatore di stato in una finestra di dialogo attività e imposta la velocità del rettangolo di selezione.
 ms.assetid: df947171-a916-4db9-abe0-57a3bf11037f
 keywords:
-- Controlli di Windows Message TDM_SET_PROGRESS_BAR_MARQUEE
+- TDM_SET_PROGRESS_BAR_MARQUEE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f73d3d4308d2e3f963c015b6e36f385902bea6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b92816b70e683b9f58e0de2247b2710da38bee891caa39d9026fc342168c6be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060651"
 ---
-# <a name="tdm_set_progress_bar_marquee-message"></a>Messaggio del Marquee indicatore di \_ stato set TDM \_ \_ \_
+# <a name="tdm_set_progress_bar_marquee-message"></a>TDM \_ SET PROGRESS BAR \_ \_ \_ MARQUEE message
 
-Avvia e arresta la visualizzazione Marquee dell'indicatore di stato in una finestra di dialogo attività e imposta la velocità del Marquee.
+Avvia e arresta la visualizzazione del riquadro di selezione dell'indicatore di stato in una finestra di dialogo attività e imposta la velocità del rettangolo di selezione.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-Valore **bool** che indica se attivare o disattivare la visualizzazione Marquee. Utilizzare **true** per attivare la visualizzazione Marquee oppure **false** per disattivarla.
+Valore **BOOL** che indica se attivare o disattivare la visualizzazione del riquadro di selezione. Usare **TRUE** per attivare la visualizzazione del riquadro di selezione o **FALSE** per disattivarlo.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-**Uint** che specifica il tempo, in millisecondi, tra gli aggiornamenti dell'animazione Marquee. Se questo parametro è zero, l'animazione Marquee viene aggiornata ogni 30 millisecondi.
+UINT **che** specifica il tempo, in millisecondi, tra gli aggiornamenti dell'animazione del rettangolo di selezione. Se questo parametro è zero, l'animazione del rettangolo di selezione viene aggiornata ogni 30 millisecondi.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sulla modalità Marquee, vedere [controllo indicatore di stato](progress-bar-control.md).
+Per informazioni sulla modalità di selezione, vedere Controllo indicatore [di stato](progress-bar-control.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Per informazioni sulla modalità Marquee, vedere [controllo indicatore di stato]
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Posizione registro
-description: Questo registro di output del vertex shader contiene dati di posizione per vertice.
+title: Registro delle posizioni
+description: Questo registro di output del vertex shader contiene dati sulla posizione per vertice.
 ms.assetid: 98f71027-d94b-4dd0-a6b6-4b263954eff9
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89470bb920db7c612b21cefb2c44c2c89d48ce28
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cda82431990ed3ea545adfcc5e6eb2801be0607d8bac45aa1bcd8c0e121f3d68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023901"
 ---
-# <a name="position-register"></a>Posizione registro
+# <a name="position-register"></a>Registro delle posizioni
 
-Questo registro di output del vertex shader contiene dati di posizione per vertice.
+Questo registro di output del vertex shader contiene dati sulla posizione per vertice.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Posizione registro      | x    | x    | x     | x    | x    | x     |
+| Registro delle posizioni      | x    | x    | x     | x    | x    | x     |
 
 
 
- 
+ 
 
 Un registro è costituito da proprietà che determinano il comportamento di ogni registro.
 
@@ -36,13 +36,13 @@ Un registro è costituito da proprietà che determinano il comportamento di ogni
 
 | Proprietà        | Descrizione |
 |-----------------|-------------|
-| Nome            | oPos        |
+| Nome            | Opos        |
 | Conteggio           | 1 vettore    |
 | Autorizzazioni di I/O | Sola scrittura. |
 
 
 
- 
+ 
 
 Il valore è la posizione nello spazio di ritaglio omogeneo. Questo valore deve essere scritto dal vertex shader.
 
@@ -69,9 +69,9 @@ Esempio
 [Registri vertex shader](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

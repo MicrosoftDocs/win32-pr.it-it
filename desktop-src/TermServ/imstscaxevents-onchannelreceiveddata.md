@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnChannelReceivedData
-description: Chiamato quando il client riceve i dati su un canale virtuale con script.
+description: Chiamato quando il client riceve i dati in un canale virtuale che può essere eseguito da script.
 ms.assetid: 38e6c33c-6a79-4760-818e-445e33d8e0ec
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnChannelReceivedData
-- Metodo OnChannelReceivedData Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnChannelReceivedData
+- Metodo OnChannelReceivedData Servizi Desktop remoto
+- Metodo OnChannelReceivedData Servizi Desktop remoto , interfaccia IMsTscAxEvents
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnChannelReceivedData
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d1cae4f35435138e219c628dd504c595939adfe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72f411eae7e03f134f4adfd6fdc6108634e4e58c06bb8645e9f97f27e8489a3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125191"
 ---
-# <a name="imstscaxeventsonchannelreceiveddata-method"></a>Metodo IMsTscAxEvents:: OnChannelReceivedData
+# <a name="imstscaxeventsonchannelreceiveddata-method"></a>Metodo IMsTscAxEvents::OnChannelReceivedData
 
-Chiamato quando il client riceve i dati su un canale virtuale con script.
+Chiamato quando il client riceve i dati in un canale virtuale che può essere eseguito da script.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,17 +44,17 @@ void OnChannelReceivedData(
 
 <dl> <dt>
 
-*channame* \[ in\]
+*chanName* \[ Pollici\]
 </dt> <dd>
 
-Nome del canale virtuale in cui sono stati ricevuti i dati. Questo nome corrisponde a uno dei canali creati dalla chiamata a [**IMsTscAx:: CreateVirtualChannels**](imstscax-createvirtualchannels.md).
+Nome del canale virtuale in cui sono stati ricevuti i dati. Questo nome corrisponde a uno dei canali creati dalla chiamata a [**IMsTscAx::CreateVirtualChannels**](imstscax-createvirtualchannels.md).
 
 </dd> <dt>
 
-*dati* \[ di in\]
+*dati* \[ Pollici\]
 </dt> <dd>
 
-Dati ricevuti sul canale virtuale con script.
+Dati ricevuti nel canale virtuale che può essere eseguito tramite script.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su questo evento, vedere l'articolo relativo all' [implementazione di canali virtuali utilizzabili tramite script con connessione Web Desktop remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md) .
+Per altre [informazioni su questo evento, vedere Implementing Scriptable Virtual Channels using Connessione Web Desktop remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md) (Implementazione di canali virtuali Connessione Web Desktop remoto script).
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

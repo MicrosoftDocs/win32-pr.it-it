@@ -1,27 +1,27 @@
 ---
-title: Macro (input di Windows Touch)
-description: Le macro seguenti vengono usate per l'input di Windows Touch.
+title: Macro (Windows Input tocco)
+description: Le macro seguenti vengono usate per l'input Windows tocco.
 ms.assetid: 3f10887f-5679-43b6-8bd0-f30e3bf715a1
 keywords:
-- Windows Touch, macro
+- Windows Tocco, macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c00d7352f7f04a86556fb2769ce41d7fba2793cb
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d201b432698b4c9aafe04fa69251d4b3fb2c35048be067dd1905fd600c300d6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089871"
 ---
-# <a name="macros-windows-touch-input"></a>Macro (input di Windows Touch)
+# <a name="macros-windows-touch-input"></a>Macro (Windows Input tocco)
 
-Le macro seguenti vengono usate per l'input di Windows Touch.
+Le macro seguenti vengono usate per l'input Windows tocco.
 
 
 
 | Macro                                                   | Descrizione                                      |
 |---------------------------------------------------------|--------------------------------------------------|
-| [**Toccare \_ Coord \_ in \_ pixel**](/windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel) | Converte le coordinate tocco in coordinate pixel. |
+| [**TOCCARE \_ COORD \_ IN \_ PIXEL**](/windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel) | Converte le coordinate del tocco in coordinate pixel. |
 
 
 
@@ -31,10 +31,10 @@ Le macro seguenti vengono usate per l'input di Windows Touch.
 
 <dl> <dt>
 
-[Input Windows Touch](multi-touch-input.md)
+[Windows Input tocco](multi-touch-input.md)
 </dt> <dt>
 
-[Guida alla programmazione di input per Windows Touch](guide-multi-touch-input.md)
+[Windows Guida alla programmazione dell'input tocco](guide-multi-touch-input.md)
 </dt> </dl>
 
  

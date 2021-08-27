@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Metodi StringColumnValue'
-title: Metodi StringColumnValue
+description: Altre informazioni sui metodi StringColumnValue
+title: Metodi di StringColumnValue
 TOCTitle: StringColumnValue methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.StringColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.stringcolumnvalue_methods(v=EXCHG.10)
 ms:contentKeyID: 55104022
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1fd2d9a2bea357bd3acdafeab1cfb4b9f4eef2f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f7a0d1989f34cb4bf0bf52c6b42997beb92663928620e9fab71d5d6186a00e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115571"
 ---
-# <a name="stringcolumnvalue-methods"></a>Metodi StringColumnValue
+# <a name="stringcolumnvalue-methods"></a>Metodi di StringColumnValue
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo [StringColumnValue](./stringcolumnvalue-class.md) espone i membri seguenti.
+Il [tipo StringColumnValue](./stringcolumnvalue-class.md) espone i membri seguenti.
 
 ## <a name="methods"></a>Metodi
 
@@ -35,37 +35,37 @@ Il tipo [StringColumnValue](./stringcolumnvalue-class.md) espone i membri seguen
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">È uguale a</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">GetHashCode</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn351134(v=exchg.10).md">GetValueFromBytes</a></td>
-<td>Dato che i dati sono stati recuperati da ESENT, decodificano i dati e impostano il valore nell'oggetto ColumnValue. Esegue l'override di <a href="dn334208(v=exchg.10).md">columnValue. GetValueFromBytes ([], Int32, Int32, Int32)</a>.</td>
+<td>Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue. (Esegue <a href="dn334208(v=exchg.10).md">l'override di ColumnValue.GetValueFromBytes([], Int32, Int32, Int32)</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.object">Object</a>.</td>
+<td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn351194(v=exchg.10).md">ToString</a></td>
-<td>Ottiene una rappresentazione di stringa di questo oggetto. Esegue l'override di <a href="dn334163(v=exchg.10).md">columnValue. ToString ()</a>.</td>
+<td>Ottiene una rappresentazione di stringa di questo oggetto . Esegue l'override <a href="dn334163(v=exchg.10).md">di ColumnValue.ToString()</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -79,4 +79,4 @@ Inizio
 
 [Classe StringColumnValue](./stringcolumnvalue-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

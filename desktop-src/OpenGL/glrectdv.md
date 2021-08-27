@@ -1,9 +1,9 @@
 ---
-title: funzione glRectdv (GL. h)
+title: Funzione glRectdv (Gl.h)
 description: La funzione glRectdv disegna un rettangolo.
 ms.assetid: 53000734-bfc3-42c3-aa80-0a54e3dd36ec
 keywords:
-- funzione glRectdv OpenGL
+- Funzione glRectdv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de2956a1f658101a384ae69b05ed50418492d264
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 814638997c62b0248bae834f2acd1cd04f0723593533c2fc9237f84c1a4fcd11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036661"
 ---
-# <a name="glrectdv-function"></a>glRectdv (funzione)
+# <a name="glrectdv-function"></a>Funzione glRectdv
 
-La funzione **glRectdv** disegna un rettangolo.
+La **funzione glRectdv** disegna un rettangolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Puntatore a un vertice di un rettangolo.
 *v2* 
 </dt> <dd>
 
-puntatore al vertice opposto del rettangolo.
+Puntatore al vertice opposto del rettangolo.
 
 </dd> </dl>
 
@@ -61,35 +61,35 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glRectd** supporta una specifica efficiente di rettangoli come due punti d'angolo. Ogni comando Rectangle accetta quattro argomenti, organizzati come due coppie consecutive di coordinate (*x*, *y*) o come due puntatori a matrici, ognuna contenente una coppia (*x*, *y*). Il rettangolo risultante è definito nel piano *z* = 0.
+La **funzione glRectd** supporta una specifica efficiente dei rettangoli come due punti d'angolo. Ogni comando rettangolo accetta quattro argomenti, organizzati come due coppie consecutive di coordinate (*x*, *y*) o come due puntatori alle matrici, ognuno contenente una coppia (*x*, *y*). Il rettangolo risultante è definito nel *piano z* = 0.
 
-La funzione **glRectd**(*x1,* *Y1,* *X2,* *Y2*) è esattamente equivalente alla sequenza seguente:
+La **funzione glRectd**(*x1,* *y1,* *x2,* *y2*) è esattamente equivalente alla sequenza seguente:
 
-**glBegin**( \_ poligono GL);
+**glBegin**(GL \_ POLYGON);
 
-**glVertex2**( *x1,* *Y1* );
+**glVertex2**( *x1,* *y1* );
 
-**glVertex2**( *X2,* *Y1* );
+**glVertex2**( *x2,* *y1* );
 
-**glVertex2**( *X2,* *Y2* );
+**glVertex2**( *x2,* *y2* );
 
-**glVertex2**( *x1,* *Y2* );
+**glVertex2**( *x1,* *y2* );
 
-**glEnd**();
+**glEnd**( );
 
-Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rettangolo viene costruito con una bobina in senso antiorario.
+Si noti che se il secondo vertice si trova sopra e a destra del primo vertice, il rettangolo viene costruito con una avvolgimento in senso antiorario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -99,8 +99,8 @@ Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rett
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -112,7 +112,7 @@ Si noti che se il secondo vertice è sopra e a destra del primo vertice, il rett
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glVertex**](glvertex-functions.md)

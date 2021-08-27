@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TVN_ASYNCDRAW (COMmctrl. h)
-description: Inviato da un controllo di visualizzazione albero al relativo elemento padre quando il disegno di un'icona o di una sovrapposizione non riesce. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TVN_ASYNCDRAW di notifica (Commctrl.h)
+description: Inviato da un controllo di visualizzazione albero al relativo elemento padre quando il disegno di un'icona o di una sovrimpressione non è riuscito. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 209bfffb-e57d-435d-98a1-8b117c4969b1
 keywords:
-- Controlli di Windows per il codice di notifica TVN_ASYNCDRAW
+- TVN_ASYNCDRAW del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a8b04db2e4efbd78d6176214ecd9088f1bc30c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e4d929977e1a14a5ada96232fa054c2689d27f1eaa026b64c974d51f5a2c38c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060101"
 ---
-# <a name="tvn_asyncdraw-notification-code"></a>\_Codice di notifica ASYNCDRAW di TVN
+# <a name="tvn_asyncdraw-notification-code"></a>Codice di notifica \_ TVN ASYNCDRAW
 
-Inviato da un controllo di visualizzazione albero al relativo elemento padre quando il disegno di un'icona o di una sovrapposizione non riesce. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo di visualizzazione albero al relativo elemento padre quando il disegno di un'icona o di una sovrimpressione non è riuscito. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ TVN_ASYNCDRAW
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTVASYNCDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmtvasyncdraw) . La struttura **NMTVASYNCDRAW** contiene il motivo per cui il progetto non è riuscito.
+Puntatore a [**una struttura NMTVASYNCDRAW.**](/windows/win32/api/commctrl/ns-commctrl-nmtvasyncdraw) La **struttura NMTVASYNCDRAW** contiene il motivo per cui il disegno non è riuscito.
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Il controllo di visualizzazione albero deve avere lo stile esteso [**\_ \_ DRAWIMAGEASYNC TV ex**](tree-view-control-window-extended-styles.md) . Si noti che questa operazione equivale al flag ASYNCDRAWN LVN di visualizzazione elenco \_ e allo stile corrispondente.
+Il controllo visualizzazione albero deve avere lo stile [**esteso TVS \_ EX \_ DRAWIMAGEASYNC.**](tree-view-control-window-extended-styles.md) Si noti che è equivalente al flag LVN ASYNCDRAWN della visualizzazione elenco e \_ al relativo stile corrispondente.
 
-Questo controllo non viene disegnato in modo asincrono. Il valore asincrono viene usato nel contesto in cui il controllo di visualizzazione albero non estrae in modo sincrono un'immagine se non è disponibile. Ad esempio, l'immagine potrebbe non essere disponibile se il controllo di visualizzazione albero utilizza un elenco di immagini di tipo sparse, poiché l'immagine potrebbe essere scaricata. Al contrario, quando un'immagine non è disponibile, il controllo chiede in modo sincrono all'elemento padre quale azione intraprendere inviando al padre una \_ notifica ASYNCDRAW di TVN con una struttura [**NMTVASYNCDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmtvasyncdraw) . Il membro **HR** di questa struttura descrive il motivo per cui il progetto del controllo ha avuto esito negativo. Un risultato **HR** di E \_ in sospeso indica che l'immagine non è presente (l'immagine deve essere estratta). Success indica che l'immagine è presente ma non con la qualità dell'immagine richiesta.
+Questo controllo non disegna in modo asincrono. L'oggetto asincrono viene utilizzato nel contesto in cui il controllo visualizzazione albero non estrae in modo sincrono un'immagine se non è disponibile. Ad esempio, l'immagine potrebbe non essere disponibile se il controllo visualizzazione albero usa un elenco di immagini di tipo sparse, poiché l'immagine potrebbe essere scaricata. Quando invece un'immagine non è disponibile, il controllo chiede in modo sincrono all'elemento padre quale azione eseguire inviando all'elemento padre una notifica TVN ASYNCDRAW con una struttura \_ [**NMTVASYNCDRAW.**](/windows/win32/api/commctrl/ns-commctrl-nmtvasyncdraw) Il **membro hr** di questa struttura descrive il motivo per cui il disegno del controllo non è riuscito. Un **risultato hr** di E PENDING indica che l'immagine non è presente \_ (l'immagine deve essere estratta). Esito positivo indica che l'immagine è presente ma non alla qualità dell'immagine richiesta.
 
-Il padre imposta il membro **dwRetFlags** della struttura per informare il controllo come procedere. Ad esempio, l'elemento padre può restituire un'altra immagine, nel membro **iRetImageIndex** , per il controllo da creare. In questo caso, l'elemento padre imposta il membro **dwRetFlags** su ADRF \_ DRAWIMAGE. Se il controllo rileva che l'immagine restituita non è stata estratta, è \_ possibile che il controllo invii un'altra notifica ASYNCDRAW di TVN.
+L'elemento padre **imposta il membro dwRetFlags** della struttura per informare il controllo su come procedere. Ad esempio, l'elemento padre può restituire un'altra immagine, nel membro **iRetImageIndex,** per il controllo da disegnare. In questo caso, l'elemento padre imposta **il membro dwRetFlags** su ADRF \_ DRAWIMAGE. Se il controllo rileva che l'immagine restituita non è stata estratta, è possibile che il controllo invii un'altra \_ notifica TVN ASYNCDRAW.
 
-Se un'immagine non è disponibile, l'idea dietro asincrona consiste nel consentire all'elemento padre di eseguire l'estrazione in background, in modo che l'estrazione non blocchi il thread dell'interfaccia utente, ovvero il thread su cui si trova il controllo. L'elemento padre può restituire ADRF \_ DRAWNOTHING al controllo, quindi avviare un thread in background per estrarre l'icona. Una volta estratto, l'elemento padre può impostare l'icona nel controllo TreeView con la macro [**TreeView \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitem). In questo modo, la visualizzazione albero non invalida l'elemento e infine lo ridisegna con l'immagine estratta nell'elenco immagini.
+Se un'immagine non è disponibile, l'idea alla base dell'operazione asincrona è quella di consentire all'elemento padre di eseguire l'estrazione in background in modo che l'estrazione non blocchi il thread dell'interfaccia utente, ad esempio il thread su cui si trova il controllo. L'elemento padre può restituire ADRF \_ DRAWNOTHING al controllo, quindi avviare un thread in background per estrarre l'icona. Dopo l'estrazione, l'elemento padre può impostare l'icona nel controllo treeview con la macro [**TreeView \_ SetItem.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setitem) In questo modo la visualizzazione albero invalida l'elemento e infine lo ridisegna con l'immagine estratta nell'elenco di immagini.
 
-L'esempio di codice seguente, da usare come parte di un programma più ampio, Mostra come un elemento padre può elaborare due possibili codici restituiti in questa notifica da un controllo e decidere quale azione deve assumere il controllo. L'impostazione di **dwRetFlags** non viene visualizzata.
+Nell'esempio di codice seguente, da utilizzare come parte di un programma più ampio, viene illustrato come un elemento padre può elaborare due possibili codici restituiti in questa notifica da un controllo e decidere quale azione deve eseguire il controllo. **L'impostazione di dwRetFlags** non viene visualizzata.
 
 
 ```
@@ -87,9 +87,9 @@ case TVN_ASYNCDRAW:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

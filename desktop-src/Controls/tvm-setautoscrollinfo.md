@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_SETAUTOSCROLLINFO (COMmctrl. h)
-description: Imposta le informazioni utilizzate per determinare le caratteristiche di scorrimento automatico. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetAutoScrollInfo di TreeView.
+title: TVM_SETAUTOSCROLLINFO messaggio (Commctrl.h)
+description: Imposta le informazioni utilizzate per determinare le caratteristiche di scorrimento automatico. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro TreeView SetAutoScrollInfo.
 ms.assetid: de55933f-1caa-4193-84de-0486c41e8f1f
 keywords:
-- Controlli di Windows Message TVM_SETAUTOSCROLLINFO
+- TVM_SETAUTOSCROLLINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,42 +14,42 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faa1f7920d2ec8c443b2ec5f1ff9189c22c5f21e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8840045900fdbd63930219d199889cde018406779426cd767b49ab41a399efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060161"
 ---
-# <a name="tvm_setautoscrollinfo-message"></a>\_Messaggio SETAUTOSCROLLINFO TVM
+# <a name="tvm_setautoscrollinfo-message"></a>Messaggio \_ TVM SETAUTOSCROLLINFO
 
-Imposta le informazioni utilizzate per determinare le caratteristiche di scorrimento automatico. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetAutoScrollInfo di TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setautoscrollinfo) .
+Imposta le informazioni utilizzate per determinare le caratteristiche di scorrimento automatico. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ TreeView SetAutoScrollInfo.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setautoscrollinfo)
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-Specifica i pixel al secondo. L'offset da scorrere è diviso per il *wParam* per determinare la durata totale dello scorrimento automatico.
+Specifica i pixel al secondo. L'offset per lo scorrimento è diviso per *wParam* per determinare la durata totale dello scorrimento automatico.
 
 </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
-Specifica l'intervallo di tempo di ridisegnato. Ricreare ogni intervallo di elasped fino a quando l'elemento non viene spostato nella visualizzazione. Dato *wParam*, viene calcolata la posizione dell'elemento e si verifica un ridisegno. Impostare questo valore per creare lo scorrimento uniforme.
+Specifica l'intervallo di tempo di ridisegno. Ridisegna a ogni intervallo di tempo, fino a quando non viene fatto scorrere l'elemento nella visualizzazione. Dato *wParam*, la posizione dell'elemento viene calcolata e viene eseguito un ridisegno. Impostare questo valore per creare uno scorrimento uniforme.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true**.
+Restituisce **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni di scorrimento automatico vengono utilizzate per scorrere un elemento non visibile nella visualizzazione. Il controllo deve avere lo stile esteso [**\_ \_ AUTOHSCROLL TV ex**](tree-view-control-window-extended-styles.md) . Per informazioni sugli stili estesi, vedere Tree-View controllare gli stili estesi.
+Le informazioni di scorrimento automatico vengono usate per scorrere un elemento non visibile nella visualizzazione. Il controllo deve avere lo [**stile esteso TVS \_ EX \_ AUTOHSCROLL.**](tree-view-control-window-extended-styles.md) Per informazioni sugli stili estesi, vedere Tree-View degli stili estesi del controllo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Le informazioni di scorrimento automatico vengono utilizzate per scorrere un ele
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

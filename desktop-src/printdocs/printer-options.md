@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le opzioni della stampante.
 ms.assetid: 7cc3d10c-8bc2-4899-b083-63d802ee16e7
-title: Struttura PRINTER_OPTIONS (winspool. h)
+title: PRINTER_OPTIONS struttura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 37c45277f0a7e30bc94b2d23ffa27de0092a7164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7eb7be8443c6a49c670e0573a79831a7aacfd88087f6ab19de632223b8588c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091751"
 ---
-# <a name="printer_options-structure"></a>\_Struttura opzioni stampante
+# <a name="printer_options-structure"></a>Struttura PRINTER \_ OPTIONS
 
 Rappresenta le opzioni della stampante.
 
@@ -43,14 +43,14 @@ typedef struct _PRINTER_OPTIONS {
 **cbSize**
 </dt> <dd>
 
-Dimensione della struttura delle **\_ Opzioni di stampa** .
+Dimensioni della struttura **PRINTER \_ OPTIONS.**
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Set di [**flag di \_ Opzioni \_ della stampante**](printer-option-flags.md) che specifica il modo in cui l'handle per una stampante restituita da [**OpenPrinter2**](openprinter2.md) verrà usato da altre funzioni.
+Set di [**FLAG PRINTER OPTION \_ \_ che**](printer-option-flags.md) specifica come l'handle per una stampante restituita da [**OpenPrinter2**](openprinter2.md) verrà utilizzato da altre funzioni.
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Set di [**flag di \_ Opzioni \_ della stampante**](printer-option-flags.md) che 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                      |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ Set di [**flag di \_ Opzioni \_ della stampante**](printer-option-flags.md) che 
 [Stampa](printdocs-printing.md)
 </dt> <dt>
 
-[Strutture dell'API spooler di stampa](printing-and-print-spooler-structures.md)
+[Strutture dell'API Spooler di stampa](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**OpenPrinter2**](openprinter2.md)
 </dt> <dt>
 
-[**\_flag di opzione stampante \_**](printer-option-flags.md)
+[**FLAG DI \_ OPZIONE \_ DELLA STAMPANTE**](printer-option-flags.md)
 </dt> </dl>
 
  

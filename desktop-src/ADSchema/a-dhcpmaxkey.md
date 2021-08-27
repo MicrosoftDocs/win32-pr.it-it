@@ -1,10 +1,10 @@
 ---
-title: attributo DHCP-MaxKey
-description: L'attributo DHCP-MaxKey non è attualmente in uso.
+title: Attributo dhcp-MaxKey
+description: L'attributo dhcp-MaxKey non è attualmente usato.
 ms.assetid: 9b13aa25-c0ad-426e-84fe-85739f77ecd4
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo DHCP-MaxKey
+- Schema AD dell'attributo dhcp-MaxKey
 - Schema AD dell'attributo dhcpMaxKey
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fccbbe3620c57fabb3221338cbb192d91138138
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5328baea0bbb824e8bded237dc078dfa18d8fc44685fa634374e1dcad55468a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050131"
 ---
-# <a name="dhcp-maxkey-attribute"></a>attributo DHCP-MaxKey
+# <a name="dhcp-maxkey-attribute"></a>Attributo dhcp-MaxKey
 
-L'attributo **DHCP-MaxKey** non è attualmente in uso.
+**L'attributo dhcp-MaxKey** non è attualmente usato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | DHCP-MaxKey                          |
-| LDAP-Display-Name | dhcpMaxKey                           |
+| CN                | dhcp-MaxKey                          |
+| Ldap-Display-Name | dhcpMaxKey                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.719               |
-| System-ID-GUID    | 963d2754-48be-11d1-a9c3-0000f80367c1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 963d2754-48be-11d1-a9c3-0000f80367c1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **DHCP-MaxKey** non è attualmente in uso.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
+| Classi usate in        | [**Classe DHCP**](c-dhcpclass.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La proprietà EXECUTEMODE specifica il modo in cui il programma di installazione esegue gli aggiornamenti del sistema.
+description: La proprietà EXECUTEMODE specifica la modalità di esecuzione degli aggiornamenti di sistema da parte del programma di installazione.
 ms.assetid: 7b90d2e6-d661-412b-b054-2c218c95c02a
-title: Proprietà EXECUTEMODE
+title: EXECUTEMODE - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ebf1de2fb7538ece838e674b62847f0c526842e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 750b6c3a20ab05388fcd6926463dde8259440bd6087306b1bf0cc1a6c387cd2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082871"
 ---
-# <a name="executemode-property"></a>Proprietà EXECUTEMODE
+# <a name="executemode-property"></a>EXECUTEMODE - proprietà
 
-La proprietà **EXECUTEMODE** specifica il modo in cui il programma di installazione esegue gli aggiornamenti del sistema. Questa proprietà può essere utile quando è necessario eseguire un'installazione senza modificare effettivamente il sistema. La proprietà può essere impostata su None per disabilitare le operazioni di aggiornamento, ad esempio l'installazione di file e i valori del registro di sistema.
+La **proprietà EXECUTEMODE** specifica la modalità di esecuzione degli aggiornamenti di sistema da parte del programma di installazione. Questa proprietà può essere utile quando è necessario eseguire un'installazione senza modificare effettivamente il sistema. La proprietà può essere impostata su None per disabilitare le operazioni di aggiornamento, ad esempio l'installazione di file e valori del Registro di sistema.
 
 Questa proprietà può avere uno dei due valori seguenti. Il programma di installazione esamina solo la prima lettera del valore e non fa distinzione tra maiuscole e minuscole.
 
@@ -22,20 +22,20 @@ Questa proprietà può avere uno dei due valori seguenti. Il programma di instal
 <span id="None"></span><span id="none"></span><span id="NONE"></span>Nessuno
 </dt> <dd>
 
-Non viene apportata alcuna modifica al sistema. Il programma di installazione esegue l'interfaccia utente e quindi esegue una query sul database.
+Non vengono apportate modifiche al sistema. Il programma di installazione esegue l'interfaccia utente e quindi esegue una query sul database.
 
 </dd> <dt>
 
-<span id="Script"></span><span id="script"></span><span id="SCRIPT"></span>Script
+<span id="Script"></span><span id="script"></span><span id="SCRIPT"></span>copione
 </dt> <dd>
 
-Tutte le modifiche apportate al sistema vengono eseguite tramite l'esecuzione dello script. Si tratta della modalità predefinita.
+Tutte le modifiche al sistema vengono apportate tramite l'esecuzione di script. Si tratta della modalità predefinita.
 
 </dd> </dl>
 
 ## <a name="default-value"></a>Valore predefinito
 
-Se questa proprietà non è definita, il valore predefinito della modalità di esecuzione è script.
+Se questa proprietà non è definita, per impostazione predefinita la modalità di esecuzione è Script.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Se questa proprietà non è definita, il valore predefinito della modalità di e
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP. Vedere i [Windows di installazione Run-Time](windows-installer-portal.md) per informazioni sul Service Pack Windows minimo richiesto da una versione Windows Installer.<br/> |
 
 
 

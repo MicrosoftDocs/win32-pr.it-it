@@ -1,9 +1,9 @@
 ---
-title: funzione glCallList (GL. h)
+title: Funzione glCallList (Gl.h)
 description: La funzione glCallList esegue un elenco di visualizzazione.
 ms.assetid: 9373d32e-b11e-4a80-8713-da2c1d8d9368
 keywords:
-- funzione glCallList OpenGL
+- Funzione glCallList OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d356adc5d16ceb0ea10e3834d8dbb98abed2b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67805ff50eb4566e8a2a186c10229f944f4003baaef1274e9d4f52dd3b9c2a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082121"
 ---
-# <a name="glcalllist-function"></a>glCallList (funzione)
+# <a name="glcalllist-function"></a>Funzione glCallList
 
-La funzione **glCallList** esegue un elenco di visualizzazione.
+La **funzione glCallList** esegue un elenco di visualizzazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,19 +53,19 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si richiama la funzione **glCallList** , viene avviata l'esecuzione dell'elenco di visualizzazione denominato. Le funzioni salvate nell'elenco di visualizzazione vengono eseguite in ordine, come se fossero state chiamate senza usare un elenco di visualizzazione. Se l' *elenco* non è stato definito come elenco di visualizzazione, **glCallList** viene ignorato.
+La chiamata della **funzione glCallList** avvia l'esecuzione dell'elenco di visualizzazione denominato. Le funzioni salvate nell'elenco di visualizzazione vengono eseguite in ordine, proprio come se le si chiamava senza usare un elenco di visualizzazione. Se *list* non è stato definito come elenco di visualizzazione, **glCallList viene** ignorato.
 
-La funzione **glCallList** può essere visualizzata all'interno di un elenco di visualizzazione. Per evitare la possibilità di una ricorsione infinita risultante da elenchi di visualizzazione che si richiamano, viene applicato un limite al livello di annidamento degli elenchi di visualizzazione durante l'esecuzione dell'elenco di visualizzazione. Questo limite è almeno 64, ma dipende dall'implementazione di.
+La **funzione glCallList** può essere visualizzata all'interno di un elenco di visualizzazione. Per evitare la possibilità di ricorsione infinita risultante da elenchi di visualizzazione che si chiamano tra loro, viene inserito un limite al livello di annidamento degli elenchi di visualizzazione durante l'esecuzione dell'elenco di visualizzazione. Questo limite è almeno 64, ma dipende dall'implementazione.
 
-Lo stato OpenGL non viene salvato e ripristinato tramite una chiamata a **glCallList**. Pertanto, le modifiche apportate allo stato OpenGL durante l'esecuzione di un elenco di visualizzazione rimangono al termine dell'esecuzione dell'elenco di visualizzazione. Per mantenere lo stato OpenGL tra le chiamate a **glCallList** , usare [**glPushAttrib**](glpushattrib.md), [**glPopAttrib**](glpopattrib.md), [**glPushMatrix**](glpushmatrix.md)e [**glPopMatrix**](glpopmatrix.md).
+Lo stato OpenGL non viene salvato e ripristinato in una chiamata a **glCallList**. Di conseguenza, le modifiche apportate allo stato OpenGL durante l'esecuzione di un elenco di visualizzazione rimangono dopo il completamento dell'esecuzione dell'elenco di visualizzazione. Per mantenere lo stato OpenGL tra **le chiamate glCallList,** usare [**glPushAttrib**](glpushattrib.md), [**glPopAttrib**](glpopattrib.md), [**glPushMatrix**](glpushmatrix.md)e [**glPopMatrix**](glpopmatrix.md).
 
-È possibile eseguire gli elenchi di visualizzazione tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md), purché nell'elenco di visualizzazione siano incluse solo le funzioni consentite in questo intervallo.
+È possibile eseguire elenchi di visualizzazione tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md), purché l'elenco di visualizzazione includa solo le funzioni consentite in questo intervallo.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glCallList**:
+Le funzioni seguenti recuperano informazioni correlate a **glCallList**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con elenco di \_ \_ \_ nidificazione elenco massimo argomenti
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) l'argomento GL \_ MAX LIST \_ \_ NESTING
 
-[**Pagina di**](glislist.md)
+[**glIsList**](glislist.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glCallL
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -94,7 +94,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glCallL
 [**glDeleteLists**](gldeletelists.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glGenLists**](glgenlists.md)
@@ -103,7 +103,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glCallL
 [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 </dt> <dt>
 
-[**Pagina di**](glislist.md)
+[**glIsList**](glislist.md)
 </dt> <dt>
 
 [**glNewList**](glnewlist.md)

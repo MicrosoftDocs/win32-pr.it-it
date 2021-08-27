@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETSTORYTYPE (RichEdit. h)
+title: EM_GETSTORYTYPE messaggio (Richedit.h)
 description: Ottiene il tipo di storia.
 ms.assetid: 06D87AA1-5AA3-4235-AC1D-045CE9975384
 keywords:
-- Controlli di Windows Message EM_GETSTORYTYPE
+- EM_GETSTORYTYPE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fed85183f292bd1c69e3bbebdadb4b38f9f3bdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4e6d501fffca857e1e283f2678c1b42e5d3d12e587e51a3a58585041489f8b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048781"
 ---
-# <a name="em_getstorytype-message"></a>\_Messaggio GETSTORYTYPE em
+# <a name="em_getstorytype-message"></a>Messaggio \_ EM GETSTORYTYPE
 
 Ottiene il tipo di storia.
 
@@ -46,7 +46,7 @@ Indice della storia.
 *lParam* 
 </dt> <dd>
 
-Riservati deve essere 0.
+Riservato; deve essere 0.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Restituisce il tipo di storia, che può essere un valore personalizzato definito
 **[**tomEndnotesStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
 </dt> <dt>
 
-**[**tomEvenPagesFooterStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
+**[**tomEvenPages BrainerStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
 </dt> <dt>
 
 **[**tomEvenPagesHeaderStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
@@ -92,7 +92,7 @@ Restituisce il tipo di storia, che può essere un valore personalizzato definito
 **[**tomReplaceStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
 </dt> <dt>
 
-**[**tomScratchStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
+**[**tomSratachStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
 </dt> <dt>
 
 **[**tomTextFrameStory**](/windows/win32/api/tom/ne-tom-tomconstants)**
@@ -107,9 +107,9 @@ Restituisce il tipo di storia, che può essere un valore personalizzato definito
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -117,10 +117,10 @@ Restituisce il tipo di storia, che può essere un valore personalizzato definito
 
 <dl> <dt>
 
-[**\_SETSTORYTYPE em**](em-setstorytype.md)
+[**EM \_ SETSTORYTYPE**](em-setstorytype.md)
 </dt> <dt>
 
-[**ITextStoryRanges:: Item**](/windows/desktop/api/Tom/nf-tom-itextstoryranges-item)
+[**ITextStoryRanges::Item**](/windows/desktop/api/Tom/nf-tom-itextstoryranges-item)
 </dt> </dl>
 
  

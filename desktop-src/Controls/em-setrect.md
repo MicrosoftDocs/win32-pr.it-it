@@ -1,9 +1,9 @@
 ---
 title: EM_SETRECT messaggio (Winuser.h)
-description: 'EM_SETRECT messaggio: imposta il rettangolo di formattazione di un controllo di modifica su più righe.'
+description: 'EM_SETRECT: imposta il rettangolo di formattazione di un controllo di modifica su più righe.'
 ms.assetid: 4f576e94-3bd3-4416-a960-b7f22da963ea
 keywords:
-- EM_SETRECT messaggio Controlli Windows
+- EM_SETRECT controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 042428a236b8e9a23f03cdcceaf5d76eb977efd8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ea68ba0fd599b39f0344a423e86a87d097dc2df389fd8370e30a573a05d3013
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048201"
 ---
 # <a name="em_setrect-message"></a>Messaggio \_ EM SETRECT
 
-Imposta il [rettangolo di formattazione](about-edit-controls.md) di un controllo di modifica su più righe. Il rettangolo di formattazione è il rettangolo di limitazione in cui il controllo disegna il testo. Il rettangolo di limitazione è indipendente dalle dimensioni della finestra del controllo di modifica.
+Imposta il rettangolo [di formattazione](about-edit-controls.md) di un controllo di modifica su più righe. Il rettangolo di formattazione è il rettangolo di limitazione in cui il controllo disegna il testo. Il rettangolo di limitazione è indipendente dalle dimensioni della finestra del controllo di modifica.
 
-Questo messaggio viene elaborato solo dai controlli di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
+Questo messaggio viene elaborato solo da controlli di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,7 +34,7 @@ Questo messaggio viene elaborato solo dai controlli di modifica su più righe. �
 *wParam* 
 </dt> <dd>
 
-**Rich Edit 2.0 e versioni successive:** Indica se *lParam specifica* coordinate assolute o relative. Il valore zero indica le coordinate assolute. Il valore 1 indica gli offset relativi al rettangolo di formattazione corrente. Gli offset possono essere positivi o negativi.
+**Rich Edit 2.0 e versioni successive:** Indica se *lParam* specifica coordinate assolute o relative. Il valore zero indica coordinate assolute. Il valore 1 indica gli offset rispetto al rettangolo di formattazione corrente. Gli offset possono essere positivi o negativi.
 
 **Controlli di modifica e Rich Edit 1.0:** Questo parametro non viene usato e deve essere zero.
 
@@ -53,9 +53,9 @@ Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione di *lParam* su **NULL** non ha alcun effetto se è installato un dispositivo touch o se **EM \_ SETRECT** viene inviato da un thread in cui è installato un hook (vedere [**SetWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa)). In questi casi, *lParam* deve contenere un puntatore valido a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85))
+L'impostazione di *lParam* su **NULL** non ha alcun effetto se è installato un dispositivo a tocco o se **EM \_ SETRECT** viene inviato da un thread in cui è installato un hook (vedere [**SetWindowsHookEx).**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa) In questi casi, *lParam deve* contenere un puntatore valido a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85))
 
-Il **messaggio EM \_ SETRECT** fa sì che il testo del controllo di modifica venga ridisegnato. Per modificare le dimensioni del rettangolo di formattazione senza ridisegnare il testo, usare il [**messaggio EM \_ SETRECTNP.**](em-setrectnp.md)
+Il **messaggio \_ EM SETRECT** fa sì che il testo del controllo di modifica venga ridisegnato. Per modificare le dimensioni del rettangolo di formattazione senza ridisegnare il testo, usare il [**messaggio EM \_ SETRECTNP.**](em-setrectnp.md)
 
 Quando viene creato un controllo di modifica per la prima volta, il rettangolo di formattazione viene impostato su una dimensione predefinita. È possibile usare il **messaggio EM \_ SETRECT per** rendere il rettangolo di formattazione più grande o più piccolo della finestra di controllo di modifica.
 
@@ -71,8 +71,8 @@ Se il controllo di modifica contiene un bordo, il rettangolo di formattazione vi
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                                           |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_GETSTATE (COMmctrl. h)
+title: PBM_GETSTATE messaggio (Commctrl.h)
 description: Ottiene lo stato dell'indicatore di stato.
 ms.assetid: ff240160-7db6-4711-8d4e-25a77dfba118
 keywords:
-- Controlli di Windows Message PBM_GETSTATE
+- PBM_GETSTATE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07d4f7029fca46a046545efd1cea8e0eab99c757
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cd157ccb6ab8a1fe4cd4a31bf1f8a033f0e591288338e21cc322a8ac10bfc41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047011"
 ---
-# <a name="pbm_getstate-message"></a>\_Messaggio GETstate di PBM
+# <a name="pbm_getstate-message"></a>Messaggio \_ GETSTATE PBM
 
 Ottiene lo stato dell'indicatore di stato.
 
@@ -43,9 +43,9 @@ Restituisce lo stato corrente dell'indicatore di stato. Uno dei valori seguenti.
 
 | Codice restituito                                                                                 | Descrizione             |
 |---------------------------------------------------------------------------------------------|-------------------------|
-| <dl> <dt>**PBST \_ normale**</dt> </dl> | Operazione in corso.<br/> |
-| <dl> <dt>**\_errore PBST**</dt> </dl>  | Errore.<br/>       |
-| <dl> <dt>**PBST \_ sospeso**</dt> </dl> | (sospeso)<br/>      |
+| <dl> <dt>**PBST \_ NORMAL**</dt> </dl> | Operazione in corso.<br/> |
+| <dl> <dt>**ERRORE \_ PBST**</dt> </dl>  | Errore.<br/>       |
+| <dl> <dt>**PBST \_ IN PAUSA**</dt> </dl> | (sospeso)<br/>      |
 
 
 
@@ -57,9 +57,9 @@ Restituisce lo stato corrente dell'indicatore di stato. Uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

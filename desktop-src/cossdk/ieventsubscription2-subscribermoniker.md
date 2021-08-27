@@ -14,16 +14,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 9496a3046b4bb0e99a88322892e557588a92aab8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cdd783a4e3f8d29d3ffc4ae279602db71c3ee16247ad58c6f23aa10bb3ba5350
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070671"
 ---
-# <a name="ieventsubscription2subscribermoniker-property"></a>Proprietà IEventSubscription2:: SubscriberMoniker
+# <a name="ieventsubscription2subscribermoniker-property"></a>Proprietà IEventSubscription2::SubscriberMoniker
 
-Moniker del Sottoscrittore.
+Moniker del sottoscrittore.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -44,11 +44,11 @@ HRESULT get_SubscriberMoniker(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa del moniker che specifica il Sottoscrittore.
+Stringa del moniker che specifica il sottoscrittore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, e \_ OutOfMemory, e \_ imprevisto, e ha \_ esito negativo e S \_ OK.
+Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL e S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 

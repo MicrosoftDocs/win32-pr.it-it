@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio riportato in questo argomento viene illustrato come creare un processo figlio utilizzando la funzione CreateProcess da un processo della console.
+description: L'esempio in questo argomento illustra come creare un processo figlio usando la funzione CreateProcess da un processo console.
 ms.assetid: a4e37069-2b3a-4b6d-9cfd-eb1700ab3bc6
 title: Creazione di un processo figlio con input e output reindirizzati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af3a8e922c37baf20dae2d3a26b8cd0705e4c1a5
-ms.sourcegitcommit: 005593a756bad634e35a57e4fea9167566d4a550
+ms.openlocfilehash: 5ec7c7761bd73386285a4e911be13ff3ab46a479cb78442b1d8b14ac9e1b1368
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "104234399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081441"
 ---
 # <a name="creating-a-child-process-with-redirected-input-and-output"></a>Creazione di un processo figlio con input e output reindirizzati
 
-Nell'esempio riportato in questo argomento viene illustrato come creare un processo figlio utilizzando la funzione [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) da un processo della console. Viene inoltre illustrata una tecnica per l'utilizzo di pipe anonime per reindirizzare gli handle di input e output standard del processo figlio. Si noti che le named pipe possono essere utilizzate anche per reindirizzare l'I/O del processo.
+L'esempio in questo argomento illustra come creare un processo figlio usando la [**funzione CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) da un processo console. Illustra anche una tecnica per l'uso di pipe anonime per reindirizzare gli handle di input e output standard del processo figlio. Si noti che le named pipe possono essere usate anche per reindirizzare l'I/O del processo.
 
-La funzione [**non**](/windows/desktop/api/namedpipeapi/nf-namedpipeapi-createpipe) usa la struttura degli [**\_ attributi di sicurezza**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) per creare handle ereditabili alle estremità di lettura e scrittura di due pipe. L'estremità di lettura di una pipe funge da input standard per il processo figlio e l'estremità di scrittura dell'altra pipe è l'output standard per il processo figlio. Questi handle di pipe sono specificati nella struttura [**STARTUPINFO**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) , che li rende gli handle standard ereditati dal processo figlio.
+La [**funzione CreatePipe**](/windows/desktop/api/namedpipeapi/nf-namedpipeapi-createpipe) usa la [**struttura SECURITY \_ ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) per creare handle ereditabili alle estremità di lettura e scrittura di due pipe. La fine di lettura di una pipe funge da input standard per il processo figlio e la fine di scrittura dell'altra pipe è l'output standard per il processo figlio. Questi handle di pipe vengono specificati nella [**struttura STARTUPINFO,**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfoa) che li rende gli handle standard ereditati dal processo figlio.
 
-Il processo padre usa le estremità opposte di queste due pipe per scrivere nell'input del processo figlio e leggere dall'output del processo figlio. Come specificato nella struttura [**degli \_ attributi di sicurezza**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) , questi handle sono anch ' essi ereditabili. Tuttavia, questi handle non devono essere ereditati. Pertanto, prima di creare il processo figlio, il processo padre utilizza la funzione [**SetHandleInformation**](/windows/desktop/api/handleapi/nf-handleapi-sethandleinformation) per garantire che l'handle di scrittura per l'input standard del processo figlio e l'handle di lettura per l'output standard del processo figlio non possano essere ereditati. Per altre informazioni, vedere [Pipes](/windows/desktop/ipc/pipes).
+Il processo padre usa le estremità opposte di queste due pipe per scrivere nell'input del processo figlio e leggere dall'output del processo figlio. Come specificato nella struttura [**SECURITY \_ ATTRIBUTES,**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) anche questi handle sono ereditabili. Tuttavia, questi handle non devono essere ereditati. Pertanto, prima di creare il processo figlio, il processo padre usa la funzione [**SetHandleInformation**](/windows/desktop/api/handleapi/nf-handleapi-sethandleinformation) per garantire che l'handle di scrittura per l'input standard del processo figlio e l'handle di lettura per l'output standard del processo figlio non siano ereditati. Per altre informazioni, vedere [Pipe.](/windows/desktop/ipc/pipes)
 
-Di seguito è riportato il codice per il processo padre. Accetta un solo argomento della riga di comando: il nome di un file di testo.
+Di seguito è riportato il codice per il processo padre. Accetta un singolo argomento della riga di comando: il nome di un file di testo.
 
 
 ```C++
@@ -252,7 +252,7 @@ void ErrorExit(PTSTR lpszFunction)
 
 
 
-Di seguito è riportato il codice per il processo figlio. USA gli handle ereditati per STDIN e STDOUT per accedere alla pipe creata dall'elemento padre. Il processo padre legge dal file di input e scrive le informazioni in una pipe. L'elemento figlio riceve il testo attraverso la pipe usando STDIN e scrive sulla pipe usando STDOUT. L'elemento padre legge dall'estremità di lettura della pipe e visualizza le informazioni in STDOUT.
+Di seguito è riportato il codice per il processo figlio. Usa gli handle ereditati per STDIN e STDOUT per accedere alla pipe creata dall'elemento padre. Il processo padre legge dal file di input e scrive le informazioni in una pipe. L'elemento figlio riceve testo tramite la pipe usando STDIN e scrive nella pipe tramite STDOUT. L'elemento padre legge dall'estremità di lettura della pipe e visualizza le informazioni nel relativo STDOUT.
 
 
 ```C++

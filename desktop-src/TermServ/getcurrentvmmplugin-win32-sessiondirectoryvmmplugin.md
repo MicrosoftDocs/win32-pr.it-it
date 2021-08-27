@@ -1,12 +1,12 @@
 ---
-title: Metodo GetCurrentVMMPlugin della classe Win32_SessionDirectoryVMMPlugin
-description: Ottiene il plug-in con priorità più elevata attivato.
+title: Metodo GetCurrentVMMPlugin della Win32_SessionDirectoryVMMPlugin classe
+description: Ottiene il plug-in con priorità più alta abilitato.
 ms.assetid: 7712573f-2252-4a3c-820c-b679be5dfd46
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetCurrentVMMPlugin
-- Metodo GetCurrentVMMPlugin Servizi Desktop remoto, classe Win32_SessionDirectoryVMMPlugin
-- Classe Win32_SessionDirectoryVMMPlugin Servizi Desktop remoto, metodo GetCurrentVMMPlugin
+- Metodo GetCurrentVMMPlugin Servizi Desktop remoto
+- Metodo GetCurrentVMMPlugin Servizi Desktop remoto , Win32_SessionDirectoryVMMPlugin classe
+- Win32_SessionDirectoryVMMPlugin classe Servizi Desktop remoto metodo , GetCurrentVMMPlugin
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7162322f4e5e3939309d64e27c93cf8d20da540c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4cc683275581aeb00c654a30e8c5aba7fd920f58248b480fc39caa96c885bb7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080111"
 ---
-# <a name="getcurrentvmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo GetCurrentVMMPlugin della \_ classe SessionDirectoryVMMPlugin Win32
+# <a name="getcurrentvmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Metodo GetCurrentVMMPlugin della classe \_ Win32 SessionDirectoryVMMPlugin
 
-Ottiene il plug-in con priorità più elevata attivato.
+Ottiene il plug-in con priorità più alta abilitato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,51 +48,51 @@ uint32 GetCurrentVMMPlugin(
 
 <dl> <dt>
 
-*sName* \[ out\]
+*sName* \[ Cambio\]
 </dt> <dd>
 
 Nome del plug-in.
 
 </dd> <dt>
 
-*sProvider* \[ out\]
+*sProvider* \[ Cambio\]
 </dt> <dd>
 
 Nome del provider del plug-in.
 
 </dd> <dt>
 
-*sServiceLocation* \[ out\]
+*sServiceLocation* \[ Cambio\]
 </dt> <dd>
 
-Posizione del servizio che il plug-in deve contattare.
+Percorso del servizio che il plug-in deve contattare.
 
 </dd> <dt>
 
-*sClassID* \[ out\]
+*sClassID* \[ Cambio\]
 </dt> <dd>
 
 Identificatore di classe del plug-in.
 
 </dd> <dt>
 
-*Priorità* \[ di out\]
+*Priorità* \[ Cambio\]
 </dt> <dd>
 
-Priorità del plug-in. Maggiore è il valore, maggiore è la priorità del plug-in.
+Priorità del plug-in. Maggiore è il valore, maggiore sarà la priorità del plug-in.
 
 </dd> <dt>
 
-*Abilitato* \[ out\]
+*Abilitato* \[ Cambio\]
 </dt> <dd>
 
-Indica se il plug-in è abilitato o disabilitato. **True** se il plug-in è abilitato o **false** in caso contrario.
+Indica se il plug-in è abilitato o disabilitato. **True** se il plug-in è abilitato o false in **caso** contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) .
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,7 +103,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                      |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -112,7 +112,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
+[**Win32 \_ SessionDirectoryVMMPlugin**](win32-sessiondirectoryvmmplugin.md)
 </dt> </dl>
 
  

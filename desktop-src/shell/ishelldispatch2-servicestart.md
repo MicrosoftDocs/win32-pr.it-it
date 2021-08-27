@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c0f4fa218c4def993025ff18bffd0cc54def9818
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f48d13e593898b7b4f91fc9246745b183b928ffaa0a799100990a327a3f670ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090341"
 ---
 # <a name="ishelldispatch2servicestart-method"></a>Metodo IShellDispatch2.ServiceStart
 
@@ -63,9 +63,9 @@ Valore **String** contenente il nome del servizio.
 *vPersistent* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variante**
+Tipo: **Variant**
 
-Impostare su **true per** fare in modo che il servizio sia avviato automaticamente da Gestione controllo servizi durante l'avvio del sistema. Impostare su **false per** lasciare invariata la configurazione del servizio.
+Impostare su **true per fare** in modo che il servizio sia avviato automaticamente da Gestione controllo servizi durante l'avvio del sistema. Impostare su **false per** lasciare invariata la configurazione del servizio.
 
 </dd> </dl>
 
@@ -75,13 +75,13 @@ Impostare su **true per** fare in modo che il servizio sia avviato automaticamen
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'operazione ha esito positivo. in caso contrario, **false**.
+Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -95,7 +95,7 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 Gli esempi seguenti illustrano l'uso **di ServiceStart** per avviare il servizio Messenger. L'utilizzo viene visualizzato per JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -138,8 +138,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

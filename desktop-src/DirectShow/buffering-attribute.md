@@ -1,24 +1,24 @@
 ---
-description: L'attributo buffering specifica il numero di frame di cui eseguire il rendering in anticipo durante l'anteprima.
+description: L'attributo di memorizzazione nel buffer specifica il numero di frame di cui eseguire il rendering in anticipo durante l'anteprima.
 ms.assetid: c00fd24d-5c3c-44cf-93dd-9750f614d2af
-title: Attributo buffering (WMP. h)
+title: Attributo buffering (Wmp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60cc5b9b7e8aad810e2cc7aa7e91e874f0b27436
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d314792f82ed1e5111d601e865baacdf18fb702549a7f1518e8026f82b89802
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103351"
 ---
-# <a name="buffering-attribute"></a>buffering (attributo)
+# <a name="buffering-attribute"></a>Attributo buffering
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `buffering` attributo specifica il numero di frame di cui eseguire il rendering in anticipo durante l'anteprima.
+`buffering`L'attributo specifica il numero di fotogrammi di cui eseguire il rendering in anticipo durante l'anteprima.
 
 ## <a name="possible-values"></a>Valori possibili
 
@@ -26,7 +26,7 @@ Il valore deve essere un numero maggiore di 1. Il valore predefinito è 30.
 
 ## <a name="applies-to"></a>Si applica a
 
-[**gruppo**](group-element.md)
+[**Gruppo**](group-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,7 +34,7 @@ Il valore deve essere un numero maggiore di 1. Il valore predefinito è 30.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta l'opzione impostazioni gruppo NIC.
+description: Rappresenta le impostazioni del gruppo Switch Nic.
 ms.assetid: 7a48bdae-1953-4011-aaa8-1e3ca73494ff
-title: Classe Msvm_VirtualEthernetSwitchNicTeamingSettingData
+title: Msvm_VirtualEthernetSwitchNicTeamingSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 45f306f9ddb388ef4e8124d7ab2c8dd125a62e01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c1c6294ecca73448c58b48d54c7f23504921e5ef520a53092649d0be362b27f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050691"
 ---
-# <a name="msvm_virtualethernetswitchnicteamingsettingdata-class"></a>\_Classe MSVM VirtualEthernetSwitchNicTeamingSettingData
+# <a name="msvm_virtualethernetswitchnicteamingsettingdata-class"></a>Classe Msvm \_ VirtualEthernetSwitchNicTeamingSettingData
 
-Rappresenta l'opzione impostazioni gruppo NIC.
+Rappresenta le impostazioni del gruppo Switch Nic.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -41,23 +41,23 @@ class Msvm_VirtualEthernetSwitchNicTeamingSettingData : Msvm_EthernetSwitchFeatu
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualEthernetSwitchNicTeamingSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualEthernetSwitchNicTeamingSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualEthernetSwitchNicTeamingSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualEthernetSwitchNicTeamingSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **LoadBalancingAlgorithm**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **UINT32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -70,16 +70,16 @@ Algoritmo di bilanciamento del carico.
 **TeamingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **UINT32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Qualificatori: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modalità gruppo.
+Modalità di gruppo.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Modalità gruppo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Modalità gruppo.
 
 <dl> <dt>
 
-[**\_EthernetSwitchFeatureSettingData MSVM**](msvm-ethernetswitchfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md)
 </dt> </dl>
 
  

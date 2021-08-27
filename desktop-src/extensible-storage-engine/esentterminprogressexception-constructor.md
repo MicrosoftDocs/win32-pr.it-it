@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentTermInProgressException'
+description: Altre informazioni sul costruttore EsentTermInProgressException
 title: Costruttore EsentTermInProgressException
 TOCTitle: 'EsentTermInProgressException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTermInProgressException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5bdb07b79b052045158c260fd0a476933e19f1f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54138169cd9be398b7466f681f055128235567274bd103c16d343149addae8b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093871"
 ---
 # <a name="esentterminprogressexception-constructor"></a>Costruttore EsentTermInProgressException
 
 Inizializza una nuova istanza della classe EsentTermInProgressException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentTermInProgressException()
 
 [Membri di EsentTermInProgressException](./esentterminprogressexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

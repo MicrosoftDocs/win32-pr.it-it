@@ -1,28 +1,28 @@
 ---
-title: Come usare i controlli di List-View virtuali
-description: In questo argomento viene illustrato come utilizzare i controlli visualizzazione elenco virtuale.
+title: Come usare i controlli List-View virtuali
+description: Questo argomento illustra come usare i controlli di visualizzazione elenco virtuali.
 ms.assetid: DA32D7B3-5FDB-4D73-9A72-0D4EEB2A0C4F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3baf5e37d0d4f6da0cdf596dd8ba3c71e852a99
-ms.sourcegitcommit: e584514ced7396dde55e58501c8c8a872229acc4
+ms.openlocfilehash: f6ed847d7cb8a41e4cb1c255290ff660eb278bcd99126605a2874c52b279e694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "106321169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059701"
 ---
-# <a name="how-to-use-virtual-list-view-controls"></a>Come usare i controlli di List-View virtuali
+# <a name="how-to-use-virtual-list-view-controls"></a>Come usare i controlli List-View virtuali
 
-In questo argomento viene illustrato come utilizzare i controlli visualizzazione elenco virtuale. Gli esempi di codice C++ allegati illustrano come elaborare i messaggi di notifica del controllo visualizzazione elenco virtuale, come ottimizzare la cache e come recuperare un elemento dalla cache.
+Questo argomento illustra come usare i controlli di visualizzazione elenco virtuali. Gli esempi di codice C++ che seguono illustrano come elaborare i messaggi di notifica del controllo visualizzazione elenco virtuale, come ottimizzare la cache e come recuperare un elemento dalla cache.
 
 -   [Informazioni importanti](#what-you-need-to-know)
--   [Elaborare i codici di notifica del controllo List-View virtuale](#process-virtual-list-view-control-notification-codes)
+-   [Elaborare codici di notifica di List-View virtuali](#process-virtual-list-view-control-notification-codes)
 -   [Ottimizzare la cache](#optimize-the-cache)
 -   [Recuperare un elemento dalla cache](#retrieve-an-item-from-the-cache)
 -   [Argomenti correlati](#related-topics)
 
 > [!Note]  
-> Il codice di esempio di questa sezione presuppone che la cache sia una matrice allocata in modo dinamico di strutture definite dall'applicazione. La struttura viene definita nel seguente esempio di codice C++.
+> Il codice di esempio in questa sezione presuppone che la cache sia una matrice allocata dinamicamente di strutture definite dall'applicazione. La struttura è definita nell'esempio di codice C++ seguente.
 
  
 
@@ -45,20 +45,20 @@ struct RndItem
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
-### <a name="process-virtual-list-view-control-notification-codes"></a>Elaborare i codici di notifica del controllo List-View virtuale
+### <a name="process-virtual-list-view-control-notification-codes"></a>Elaborare codici di notifica di List-View virtuali
 
-Oltre ai codici di notifica inviati da altri controlli visualizzazione elenco, i controlli di visualizzazione elenco virtuale possono anche inviare i codici di notifica [LVN \_ ODCACHEHINT](lvn-odcachehint.md) e [**LVN \_ ODFINDITEM**](lvn-odfinditem.md) .
+Oltre ai codici di notifica inviati da altri controlli visualizzazione elenco, i controlli visualizzazione elenco virtuale possono anche inviare i codici di notifica [ \_ ODCACHEHINT](lvn-odcachehint.md) e [**LVN \_ ODFINDITEM.**](lvn-odfinditem.md)
 
-Questa funzione definita dall'applicazione gestisce i messaggi di notifica comunemente inviati da un controllo di visualizzazione elenco virtuale.
+Questa funzione definita dall'applicazione gestisce i messaggi di notifica comunemente inviati da un controllo visualizzazione elenco virtuale.
 
 
 ```C++
@@ -185,9 +185,9 @@ LRESULT OnNotify(HWND hwnd, NMHDR* pnmhdr)
 
 ### <a name="optimize-the-cache"></a>Ottimizzare la cache
 
-Un controllo di visualizzazione elenco virtuale Invia un messaggio di notifica [LVN \_ ODCACHEHINT](lvn-odcachehint.md) quando il contenuto dell'area di visualizzazione è stato modificato. Il messaggio contiene informazioni sull'intervallo di elementi da memorizzare nella cache. Al momento della ricezione del messaggio di notifica, l'applicazione deve essere preparata a caricare la cache con le informazioni relative all'intervallo richiesto, in modo che le informazioni saranno immediatamente disponibili quando viene inviato un messaggio di notifica [ \_ GETDISPINFO LVN](lvn-getdispinfo.md) .
+Un controllo visualizzazione elenco virtuale invia un messaggio di notifica [ \_ ODCACHEHINT LVN](lvn-odcachehint.md) quando il contenuto della relativa area di visualizzazione è stato modificato. Il messaggio contiene informazioni sull'intervallo di elementi da memorizzare nella cache. Quando si riceve il messaggio di notifica, l'applicazione deve essere pronta a caricare la cache con le informazioni sull'elemento per l'intervallo richiesto in modo che le informazioni siano immediatamente disponibili quando viene inviato un messaggio di notifica [ \_ LVN GETDISPINFO.](lvn-getdispinfo.md)
 
-Nell'esempio di codice C++ riportato di seguito, la funzione definita dall'applicazione accetta l'intervallo di elementi per la cache inviata da un controllo di visualizzazione elenco virtuale. Esegue una verifica per determinare che l'intervallo di elementi richiesto non è già memorizzato nella cache, quindi alloca la memoria globale richiesta e riempie la cache, se necessario.
+Nell'esempio di codice C++ seguente la funzione definita dall'applicazione accetta l'intervallo di elementi per la cache inviato da un controllo visualizzazione elenco virtuale. Esegue una verifica per determinare che l'intervallo di elementi richiesto non è già memorizzato nella cache e quindi alloca la memoria globale necessaria e riempie la cache, se necessario.
 
 
 ```C++
@@ -294,7 +294,7 @@ void PrepCache(int iFrom, int iTo)
 
 ### <a name="retrieve-an-item-from-the-cache"></a>Recuperare un elemento dalla cache
 
-Questa funzione di esempio accetta due parametri, l'indirizzo della struttura definita dall'applicazione e un valore integer che rappresenta l'indice dell'elemento nell'elenco. Verifica il valore di indice per individuare se l'elemento desiderato è memorizzato nella cache. In caso contrario, il puntatore passato alla funzione viene impostato su una posizione nella cache. Se l'elemento non si trova nella cache principale o finale, le informazioni sull'elemento devono essere individuate manualmente.
+Questa funzione di esempio accetta due parametri, l'indirizzo della struttura definita dall'applicazione e un valore intero che rappresenta l'indice dell'elemento nell'elenco. Controlla il valore dell'indice per individuare se l'elemento desiderato viene memorizzato nella cache. In caso contrario, il puntatore passato alla funzione viene impostato su una posizione nella cache. Se l'elemento non si trova nella cache principale o finale, le informazioni sull'elemento devono essere posizionate manualmente.
 
 
 ```C++
@@ -332,7 +332,7 @@ void RetrieveItem( RndItem * prndItem, int index )
 
 ## <a name="remarks"></a>Commenti
 
-Per un elenco dei messaggi della finestra elaborati da un controllo visualizzazione elenco, vedere [Default List-View Message Processing](listview-message-processing.md).
+Per un elenco dei messaggi della finestra elaborati da un controllo di visualizzazione elenco, vedere [Default List-View Message Processing](listview-message-processing.md).
 
 ## <a name="complete-example"></a>Esempio completo
 
@@ -340,13 +340,13 @@ Per un elenco dei messaggi della finestra elaborati da un controllo visualizzazi
 
 <dl> <dt>
 
-[Riferimento al controllo visualizzazione elenco](bumper-list-view-list-view-control-reference.md)
+[Informazioni di riferimento sul controllo List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Informazioni sui controlli List-View](list-view-controls-overview.md)
+[Informazioni List-View controllo](list-view-controls-overview.md)
 </dt> <dt>
 
-[Uso di controlli List-View](using-list-view-controls.md)
+[Uso dei List-View personalizzati](using-list-view-controls.md)
 </dt> </dl>
 
  

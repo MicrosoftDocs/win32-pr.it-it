@@ -1,19 +1,19 @@
 ---
 title: Funzioni di amministrazione del router
-description: Usare le funzioni seguenti quando si sviluppa il software per amministrare i router in Windows 2000 e versioni successive.
+description: Usare le funzioni seguenti durante lo sviluppo di software per amministrare i router in Windows 2000 e versioni successive.
 ms.assetid: a61734a7-b171-4e38-8dec-46be9a9c08ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c07b1b875b3faebf830327291008b437f3d8564f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 31e498dbf55f1723e950003a848c9d8362aa5efc45b2fd709797cb60103c38e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104473302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081231"
 ---
 # <a name="router-administration-functions"></a>Funzioni di amministrazione del router
 
-Usare le funzioni seguenti quando si sviluppa il software per amministrare i router in Windows 2000 e versioni successive.
+Usare le funzioni seguenti durante lo sviluppo di software per amministrare i router in Windows 2000 e versioni successive.
 
 -   [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree)
 -   [**MprAdminDeregisterConnectionNotification**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminderegisterconnectionnotification)
@@ -59,6 +59,6 @@ Usare le funzioni seguenti quando si sviluppa il software per amministrare i rou
 -   [**MprAdminTransportGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportgetinfo)
 -   [**MprAdminTransportSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmintransportsetinfo)
 
- 
+ 
 
- 
+ 

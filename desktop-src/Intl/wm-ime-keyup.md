@@ -1,19 +1,19 @@
 ---
-description: Inviato a un'applicazione dall'IME per notificare all'applicazione una versione della chiave e per Mantenete l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+description: Inviato a un'applicazione dall'IME per notificare all'applicazione una versione chiave e mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: 652f951f-4e9f-407c-844c-b250b6a9e6f5
-title: Messaggio WM_IME_KEYUP (winuser. h)
+title: WM_IME_KEYUP messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0eb6c6701510a373573ff6d85d5b50a8541b4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f65d80876643cc27136223c112c1e045bc797adbd0bf160adda1c3cea894767e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102071"
 ---
-# <a name="wm_ime_keyup-message"></a>\_ \_ Messaggio KEYUP di WM IME
+# <a name="wm_ime_keyup-message"></a>Messaggio \_ KEYUP IME \_ WM
 
-Inviato a un'applicazione dall'IME per notificare all'applicazione una versione della chiave e per Mantenete l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Inviato a un'applicazione dall'IME per notificare all'applicazione una versione chiave e mantenere l'ordine dei messaggi. Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -41,14 +41,14 @@ Handle per la finestra.
 *wParam* 
 </dt> <dd>
 
-Codice chiave virtuale della chiave.
+Codice della chiave virtuale della chiave.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Numero di ripetizioni, codice di analisi, flag di chiave estesa, codice del contesto, flag di stato della chiave precedente e flag di stato di transizione, come illustrato di seguito.
+Numero di ripetizioni, codice di analisi, flag della chiave estesa, codice di contesto, flag di stato della chiave precedente e flag dello stato di transizione, come illustrato di seguito.
 
 
 
@@ -58,7 +58,7 @@ Numero di ripetizioni, codice di analisi, flag di chiave estesa, codice del cont
 | 16-23 | Analizzare il codice.                                                                  |
 | 24    | Chiave estesa. Questo valore è 1 se è una chiave estesa. Negli altri casi è 0. |
 | 25-28 | Non usato.                                                                   |
-| 29    | Codice del contesto. Il valore è sempre 0 .                                       |
+| 29    | Codice di contesto. Il valore è sempre 0 .                                       |
 | 30    | Stato precedente della chiave. Il valore è sempre 1.                                 |
 | 31    | Stato di transizione. Il valore è sempre 1.                                   |
 
@@ -84,7 +84,7 @@ Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefW
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -92,10 +92,10 @@ Un'applicazione può elaborare questo messaggio o passarlo alla funzione [**DefW
 
 <dl> <dt>
 
-[Gestione metodo di input](input-method-manager.md)
+[Gestione metodi di input](input-method-manager.md)
 </dt> <dt>
 
-[Messaggi di gestione metodo di input](input-method-manager-messages.md)
+[Messaggi di Gestione metodi di input](input-method-manager-messages.md)
 </dt> </dl>
 
  
